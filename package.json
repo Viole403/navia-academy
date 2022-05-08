@@ -1,0 +1,39 @@
+{
+  "name": "huanyu-academy",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Open-source Mandarin Chinese Learning Platform",
+  "license": "MIT",
+  "scripts": {
+    "dev": "make -C apps/backend dev & turbo dev",
+    "build": "turbo build",
+    "lint": "turbo lint",
+    "clean": "turbo clean",
+    "format": "prettier --write \"**/*.{ts,tsx,js,json,md}\"",
+    "data:generate-manifest": "pnpm --filter @navia/media generate-manifest",
+    "data:generate-audio": "pnpm --filter @navia/media generate-audio",
+    "data:generate-images": "pnpm --filter @navia/media generate-images",
+    "data:validate-images": "pnpm --filter @navia/media validate-images",
+    "data:regenerate-images": "pnpm --filter @navia/media regenerate-images",
+    "data:import-anki": "pnpm --filter @navia/media import-anki",
+    "data:publish": "pnpm --filter @navia/media publish-data",
+    "backend:dev": "make -C apps/backend dev",
+    "backend:build": "make -C apps/backend build",
+    "backend:typecheck": "cd apps/backend && go vet ./cmd/... ./internal/... ./pkg/..."
+  },
+  "devDependencies": {
+    "turbo": "^2.3.0",
+    "prettier": "^3.4.0"
+  },
+  "engines": {
+    "node": ">=20",
+    "pnpm": ">=9"
+  },
+  "packageManager": "pnpm@9.15.0",
+  "workspaces": [
+    "apps/web",
+    "apps/mobile",
+    "apps/media",
+    "packages/*"
+  ]
+}

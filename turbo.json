@@ -1,0 +1,31 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "globalDependencies": ["**/.env.*local"],
+  "tasks": {
+    "build": {
+      "dependsOn": ["^build"],
+      "outputs": [".next/**", "!.next/cache/**", "dist/**", "bin/**"]
+    },
+    "dev": {
+      "cache": false,
+      "persistent": true
+    },
+    "lint": {},
+    "test": {
+      "dependsOn": ["^build"]
+    },
+    "clean": {
+      "cache": false
+    },
+    "copy-data": {
+      "cache": false
+    },
+    "generate-manifest": {
+      "cache": false
+    },
+    "generate-audio": {
+      "cache": false,
+      "dependsOn": ["generate-manifest"]
+    }
+  }
+}
