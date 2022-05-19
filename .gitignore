@@ -1,0 +1,19 @@
+node_modules/
+.next/
+.turbo/
+.vercel/
+*.tsbuildinfo
+graphify-out/
+.output/
+.memory/
+
+# Env files — never commit secrets
+.env
+.env.local
+.env.*.local
+.envsitter/
+tmp/
+
+# tools
+.impeccable/
+.vscode/
