@@ -1,0 +1,16 @@
+{
+  "name": "@navia/eslint-config",
+  "version": "1.0.0",
+  "private": true,
+  "main": "index.mjs",
+  "exports": {
+    ".": "./index.mjs",
+    "./next": "./next.mjs"
+  },
+  "dependencies": {
+    "eslint": "^9.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.0"
+  }
+}
