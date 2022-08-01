@@ -1,0 +1,29 @@
+root = "."
+tmp_dir = "tmp"
+
+[build]
+  cmd = "go build -o ./tmp/server ./cmd/server"
+  entrypoint = "./tmp/server"
+  full_bin = ""
+  include_ext = ["go", "html"]
+  exclude_dir = ["tmp", "bin", "docs", "data"]
+  exclude_regex = ["_test.go"]
+  exclude_unchanged = false
+  follow_symlink = false
+  log = "build-errors.log"
+  poll = false
+  poll_interval = 0
+  kill_delay = "1s"
+  delay = 1000
+  stop_on_error = true
+  send_interrupt = true
+  kill_after = 5000
+  pre_cmd = []
+  post_cmd = []
+
+[log]
+  time = true
+  main_only = true
+
+[misc]
+  clean_on_exit = false
