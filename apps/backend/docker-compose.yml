@@ -1,0 +1,69 @@
+# Navia backend API only.
+#
+# Postgres and Redis are EXTERNAL managed cloud services in production,
+# reached via DATABASE_URL / REDIS_URL from .env — they are intentionally NOT
+# defined here. Database migrations must be applied manually against the
+# managed Postgres (psql -f migrations/*.sql); this file never ran them.
+#
+# Semua nilai runtime mengalir dari .env (folder ini) — tidak ada lagi
+# secret/URL/port yang di-hardcode. Var tanpa default (":?") WAJIB ada di
+# .env supaya salah konfigurasi gagal cepat, bukan jalan pakai nilai dev.
+#
+# Resource caps are SPEC-AGNOSTIC: scripts/compute-resource-limits.sh detects
+# host vCPU/RAM and writes *_CPU_LIMIT / *_MEM_LIMIT into .env so totals stay
+# <=90% of CPU and ~62% of RAM on ANY VPS size (provider auto-suspend triggers
+# at >95% sustained CPU). The ${VAR:-default} values below mirror the
+# confirmed 1 vCPU / 2 GB baseline and apply only when .env has no computed
+# values yet. Re-run the script after any VPS plan change, then restart.
+services:
+  api:
+    container_name: navia-api
+    # Sized to the FULL budget because api and apps/media batch jobs never run
+    # concurrently (sequential operational model): whichever is active gets the
+    # whole envelope, so live traffic can never be under-provisioned by a
+    # hypothetical media reservation.
+    deploy:
+      resources:
+        limits:
+          cpus: "${API_CPU_LIMIT:-0.90}"
+          memory: "${API_MEM_LIMIT:-1269M}"
+    # Port mapping: kiri = port publik host (API_PUBLISH_PORT), kanan = port
+    # listen di dalam container (SERVER_PORT). Keduanya satu sumber dengan
+    # EXPOSE + healthcheck image via Dockerfile ARG APP_PORT.
+    ports:
+      - "${API_PUBLISH_PORT:-8080}:${SERVER_PORT:-8080}"
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        APP_PORT: "${SERVER_PORT:-8080}"
+    environment:
+      DATABASE_URL: "${DATABASE_URL:?set DATABASE_URL in .env (managed Postgres)}"
+      REDIS_URL: "${REDIS_URL:?set REDIS_URL in .env (managed Redis)}"
+      # Secret produksi WAJIB dari .env — tanpa fallback dev, supaya salah
+      # konfigurasi gagal cepat (fail-fast), bukan jalan dengan secret dev.
+      JWT_ACCESS_SECRET: "${JWT_ACCESS_SECRET:?set JWT_ACCESS_SECRET in .env (min 32 chars)}"
+      JWT_REFRESH_SECRET: "${JWT_REFRESH_SECRET:?set JWT_REFRESH_SECRET in .env (min 32 chars)}"
+      SITE_URL: "${SITE_URL:-http://localhost:3000}"
+      CORS_ORIGINS: "${CORS_ORIGINS:-http://localhost:3000}"
+      # Storage: pkg/storage hanya butuh kredensial (kosong = local fallback);
+      # STORAGE_PROVIDER tidak pernah dibaca kode — sengaja tidak dilewatkan.
+      STORAGE_BUCKET: "${STORAGE_BUCKET:-navia-data}"
+      STORAGE_REGION: "${STORAGE_REGION:-auto}"
+      STORAGE_ENDPOINT: "${STORAGE_ENDPOINT:-}"
+      STORAGE_ACCESS_KEY: "${STORAGE_ACCESS_KEY:-}"
+      STORAGE_SECRET_KEY: "${STORAGE_SECRET_KEY:-}"
+      STORAGE_PUBLIC_URL: "${STORAGE_PUBLIC_URL:-}"
+      TTS_ENGINE: "${TTS_ENGINE:-edge}"
+      AUTH_GOOGLE_ID: "${AUTH_GOOGLE_ID:-}"
+      AUTH_GOOGLE_SECRET: "${AUTH_GOOGLE_SECRET:-}"
+      AUTH_GOOGLE_REDIRECT_URL: "${AUTH_GOOGLE_REDIRECT_URL:-}"
+      KOFI_VERIFICATION_TOKEN: "${KOFI_VERIFICATION_TOKEN:-}"
+      TRAKTEER_WEBHOOK_SECRET: "${TRAKTEER_WEBHOOK_SECRET:-}"
+      CONTENT_EXPORT_TOKEN: "${CONTENT_EXPORT_TOKEN:-}"
+      CONTENT_LEVELS_URL: "${CONTENT_LEVELS_URL:-}"
+      # Byte-precision form of the hard memory cap above; main.go sets the Go
+      # GC soft limit (GOMEMLIMIT) at 90% of it. Empty until
+      # compute-resource-limits.sh runs -> Go keeps its default (fail open).
+      API_MEM_LIMIT_BYTES: "${API_MEM_LIMIT_BYTES:-}"
+    restart: unless-stopped
