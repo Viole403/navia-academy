@@ -1,0 +1,24 @@
+{
+  "id": "zh-core",
+  "language": "zh",
+  "title": "Mandarin Chinese — Complete Program",
+  "description": "Intensive curriculum from absolute zero to professional mastery, structured around official HSK levels and other major Chinese proficiency exams.",
+  "levelIds": [
+    "lv-hsk1",
+    "lv-hsk2",
+    "lv-hsk3",
+    "lv-hsk4",
+    "lv-hsk5",
+    "lv-hsk6",
+    "lv-hsk79",
+    "lv-tocfl-novice1",
+    "lv-tocfl-novice2"
+  ],
+  "status": "published",
+  "title_en": "Mandarin Chinese — Complete Program",
+  "title_id": "Program Mandarin — Kurikulum Lengkap",
+  "subtitle_en": "",
+  "subtitle_id": "",
+  "description_en": "Intensive curriculum from absolute zero to professional mastery, structured around official HSK levels and other major Chinese proficiency exams.",
+  "description_id": "Kurikulum intensif dari nol total hingga penguasaan profesional, tersusun berdasarkan ujian resmi."
+}

@@ -1,0 +1,231 @@
+[
+  {
+    "id": "lv-hsk1",
+    "courseId": "zh-core",
+    "examType": "hsk",
+    "hsk": 1,
+    "title": "HSK 1 · Foundations",
+    "subtitle": "Beginner",
+    "description": "The starting point: pinyin, tones, first characters, and essential structures to introduce yourself and handle basic situations.",
+    "objectives": [
+      "Master the pinyin system: initials, finals, and syllables",
+      "Distinguish and produce the four tones and the neutral tone",
+      "Introduce yourself and greet naturally",
+      "Count, say dates, and ask prices",
+      "Talk about your family and your routine",
+      "Read and write your first 50 characters",
+      "Understand the basic Chinese sentence order"
+    ],
+    "unitIds": [
+      "u-pinyin",
+      "u-greetings",
+      "u-numbers",
+      "u-family",
+      "u-routines"
+    ],
+    "estimatedHours": 60
+  },
+  {
+    "id": "lv-hsk2",
+    "courseId": "zh-core",
+    "examType": "hsk",
+    "hsk": 2,
+    "title": "HSK 2 · Daily Communication",
+    "subtitle": "Basic",
+    "description": "Expand your conversation skills: past and experience, comparisons, shopping, transportation, and plans.",
+    "objectives": [
+      "Narrate past actions with 了 and 过",
+      "Compare with 比 and express preferences",
+      "Shop, order in restaurants, and get around the city",
+      "Talk about plans, weather, and climate",
+      "Reach 300 words and 150 characters"
+    ],
+    "unitIds": [],
+    "estimatedHours": 80
+  },
+  {
+    "id": "lv-hsk3",
+    "courseId": "zh-core",
+    "examType": "hsk",
+    "hsk": 3,
+    "title": "HSK 3 · Autonomy",
+    "subtitle": "Intermediate",
+    "description": "Complex structures (把, resultative and directional complements), extended conversations, and first readings without pinyin.",
+    "objectives": [
+      "Master 把, 是…的, and resultative complements",
+      "Hold conversations lasting several minutes",
+      "Read adapted texts without pinyin",
+      "Write short connected texts",
+      "Reach 600 words and 300 characters"
+    ],
+    "unitIds": [],
+    "estimatedHours": 110
+  },
+  {
+    "id": "lv-hsk4",
+    "courseId": "zh-core",
+    "examType": "hsk",
+    "hsk": 4,
+    "title": "HSK 4 · Functional Fluency",
+    "subtitle": "Upper Intermediate",
+    "description": "Professional vocabulary, formal and informal register nuances, video comprehension, and structured written expression.",
+    "objectives": [
+      "Discuss abstract topics with advanced connectors",
+      "Understand audio at near-native speed",
+      "Distinguish formal and informal registers",
+      "Write emails and simple argumentative texts",
+      "Reach 1,200 words"
+    ],
+    "unitIds": [],
+    "estimatedHours": 150
+  },
+  {
+    "id": "lv-hsk5",
+    "courseId": "zh-core",
+    "examType": "hsk",
+    "hsk": 5,
+    "title": "HSK 5 · Advanced Competence",
+    "subtitle": "Advanced",
+    "description": "Adapted press reading, debates, presentations, and first chengyu. Chinese is no longer an obstacle.",
+    "objectives": [
+      "Read adapted newspaper articles",
+      "Debate and argue with fluency",
+      "Use chengyu and common idiomatic expressions",
+      "Write texts of 400+ characters",
+      "Reach 2,500 words"
+    ],
+    "unitIds": [],
+    "estimatedHours": 220
+  },
+  {
+    "id": "lv-hsk6",
+    "courseId": "zh-core",
+    "examType": "hsk",
+    "hsk": 6,
+    "title": "HSK 6 · Mastery",
+    "subtitle": "Upper Advanced",
+    "description": "Adapted literature, academic and business language, understanding native speakers at real speed.",
+    "objectives": [
+      "Understand natives at natural speed",
+      "Read literature and general press",
+      "Negotiate and present in professional settings",
+      "Write complex formal texts",
+      "Reach 5,000 words"
+    ],
+    "unitIds": [],
+    "estimatedHours": 300
+  },
+  {
+    "id": "lv-hsk79",
+    "courseId": "zh-core",
+    "examType": "hsk",
+    "hsk": 7,
+    "title": "HSK 7-9 · Professional Mastery",
+    "subtitle": "Mastery",
+    "description": "The level for those who work, research, or fully live in Chinese: nuance, rhetoric, deep culture, and native precision.",
+    "objectives": [
+      "Express yourself with precision and nuance in any context",
+      "Master academic, technical, and literary language",
+      "Understand standard dialects and regional variants of the standard",
+      "Produce high-level professional texts"
+    ],
+    "unitIds": [],
+    "estimatedHours": 500
+  },
+  {
+    "id": "lv-tocfl-novice1",
+    "courseId": "zh-core",
+    "examType": "tocfl",
+    "hsk": 1,
+    "title": "TOCFL Novice 1 · Getting Started",
+    "subtitle": "Taiwan Mandarin Beginner",
+    "description": "Begin your journey with Taiwan's official Chinese proficiency test. Learn greetings, numbers, and basic expressions in Traditional characters.",
+    "objectives": [
+      "Greet and introduce yourself in Taiwan Mandarin",
+      "Use basic numbers and time expressions",
+      "Understand and use common Taiwan-specific vocabulary",
+      "Introduce family members and occupations",
+      "Read and write basic Traditional Chinese characters",
+      "Order food and ask simple prices"
+    ],
+    "unitIds": [
+      "u-tocfl-n1-intro"
+    ],
+    "estimatedHours": 40
+  },
+  {
+    "id": "lv-tocfl-novice2",
+    "courseId": "zh-core",
+    "examType": "tocfl",
+    "hsk": 2,
+    "title": "TOCFL Novice 2 · Daily Life in Taiwan",
+    "subtitle": "Taiwan Mandarin Elementary",
+    "description": "Navigate daily situations in Taiwan: transportation, weather, shopping, and dining with appropriate politeness levels.",
+    "objectives": [
+      "Ask for and give directions using Taiwan place names",
+      "Talk about weather and seasons in Taiwan",
+      "Shop at night markets and traditional markets",
+      "Order food and make simple requests politely",
+      "Use Taiwan-specific measure words and particles",
+      "Describe daily routines and simple plans"
+    ],
+    "unitIds": [
+      "u-tocfl-n2-life"
+    ],
+    "estimatedHours": 45
+  },
+  {
+    "id": "lv-tocfl-level5",
+    "courseId": "zh-core",
+    "examType": "tocfl",
+    "hsk": 7,
+    "title": "TOCFL Level 5",
+    "subtitle": "Taiwan Mandarin",
+    "description": "Practice exam-level content for TOCFL Level 5: readings, dialogues, and summaries."
+  },
+  {
+    "id": "lv-tocfl-level3",
+    "courseId": "zh-core",
+    "examType": "tocfl",
+    "hsk": 5,
+    "title": "TOCFL Level 3",
+    "subtitle": "Taiwan Mandarin",
+    "description": "Practice exam-level content for TOCFL Level 3: readings, dialogues, and summaries."
+  },
+  {
+    "id": "lv-tocfl-level2",
+    "courseId": "zh-core",
+    "examType": "tocfl",
+    "hsk": 4,
+    "title": "TOCFL Level 2",
+    "subtitle": "Taiwan Mandarin",
+    "description": "Practice exam-level content for TOCFL Level 2: readings, dialogues, and summaries."
+  },
+  {
+    "id": "lv-tocfl-level1",
+    "courseId": "zh-core",
+    "examType": "tocfl",
+    "hsk": 3,
+    "title": "TOCFL Level 1",
+    "subtitle": "Taiwan Mandarin",
+    "description": "Practice exam-level content for TOCFL Level 1: readings, dialogues, and summaries."
+  },
+  {
+    "id": "lv-tocfl-level4",
+    "courseId": "zh-core",
+    "examType": "tocfl",
+    "hsk": 6,
+    "title": "TOCFL Level 4",
+    "subtitle": "Taiwan Mandarin",
+    "description": "Practice exam-level content for TOCFL Level 4: readings, dialogues, and summaries."
+  },
+  {
+    "id": "lv-hsk7",
+    "courseId": "zh-core",
+    "examType": "hsk",
+    "hsk": "7",
+    "title": "HSK 7",
+    "subtitle": "Young Learner",
+    "description": "Practice exam-level content for HSK 7: readings, dialogues, and summaries."
+  }
+]
