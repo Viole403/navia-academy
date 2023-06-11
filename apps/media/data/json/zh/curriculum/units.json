@@ -1,0 +1,237 @@
+[
+  {
+    "id": "u-pinyin",
+    "levelId": "lv-hsk1",
+    "order": 1,
+    "title": "The Sound System",
+    "subtitle": "Pinyin and Tones",
+    "description": "Before the first word: how Chinese sounds. Pinyin, initials, finals, the four tones, and the neutral tone.",
+    "lessonIds": [
+      "l-pinyin-intro",
+      "l-initials-finals",
+      "l-tones"
+    ],
+    "skills": [
+      "pronunciation",
+      "listening"
+    ]
+  },
+  {
+    "id": "u-greetings",
+    "levelId": "lv-hsk1",
+    "order": 2,
+    "title": "First Words",
+    "subtitle": "Greetings and Introductions",
+    "description": "Greet, introduce yourself, ask for names, and say goodbye. Your first real conversations.",
+    "lessonIds": [
+      "l-nihao",
+      "l-introductions",
+      "l-politeness"
+    ],
+    "skills": [
+      "speaking",
+      "vocabulary",
+      "characters"
+    ]
+  },
+  {
+    "id": "u-numbers",
+    "levelId": "lv-hsk1",
+    "order": 3,
+    "title": "Numbers and Time",
+    "subtitle": "Counting, Dates, and Prices",
+    "description": "Numbers from 1 to 99, telling time, dates, and how much things cost.",
+    "lessonIds": [
+      "l-numbers",
+      "l-dates",
+      "l-prices"
+    ],
+    "skills": [
+      "vocabulary",
+      "listening",
+      "grammar"
+    ]
+  },
+  {
+    "id": "u-family",
+    "levelId": "lv-hsk1",
+    "order": 4,
+    "title": "People and Family",
+    "subtitle": "Talking About Yours",
+    "description": "Family, friends, professions, and possession with 的. Classifiers for counting people and things.",
+    "lessonIds": [
+      "l-familia",
+      "l-professions",
+      "l-classifiers"
+    ],
+    "skills": [
+      "vocabulary",
+      "grammar",
+      "characters"
+    ]
+  },
+  {
+    "id": "u-routines",
+    "levelId": "lv-hsk1",
+    "order": 5,
+    "title": "My Daily Life",
+    "subtitle": "Routines and Basic Verbs",
+    "description": "Eat, drink, go, come, study, and work: verbs in action and Chinese sentence order.",
+    "lessonIds": [
+      "l-verbs",
+      "l-daily-routine",
+      "l-hsk1-review"
+    ],
+    "skills": [
+      "grammar",
+      "speaking",
+      "reading"
+    ]
+  },
+  {
+    "id": "u-tocfl-n1-intro",
+    "levelId": "lv-tocfl-novice1",
+    "order": 1,
+    "title": "First Steps in Taiwan",
+    "subtitle": "Greetings and Introductions",
+    "description": "Learn common greetings and self-introductions used in Taiwan, with attention to Traditional characters and Taiwanese politeness norms.",
+    "lessonIds": [
+      "l-tocfl-n1-greetings",
+      "l-tocfl-n1-food"
+    ],
+    "skills": [
+      "vocabulary",
+      "speaking",
+      "characters"
+    ]
+  },
+  {
+    "id": "u-tocfl-n2-life",
+    "levelId": "lv-tocfl-novice2",
+    "order": 1,
+    "title": "Everyday Taiwan",
+    "subtitle": "Dining, Transport, and Shopping",
+    "description": "Master practical language for daily life in Taiwan: ordering at restaurants, riding the MRT, and bargaining at night markets.",
+    "lessonIds": [
+      "l-tocfl-n2-dining",
+      "l-tocfl-n2-transport"
+    ],
+    "skills": [
+      "vocabulary",
+      "speaking",
+      "listening"
+    ]
+  },
+  {
+    "id": "u-tocfl-tocfl-l5-read",
+    "levelId": "lv-tocfl-level5",
+    "order": 1,
+    "title": "TOCFL Taiwan Reading",
+    "subtitle": "Graded Readings & Dialogues",
+    "description": "Short passages and everyday dialogues built from the vocabulary of this level."
+  },
+  {
+    "id": "u-tocfl-tocfl-l3-read",
+    "levelId": "lv-tocfl-level3",
+    "order": 1,
+    "title": "TOCFL Taiwan Reading",
+    "subtitle": "Graded Readings & Dialogues",
+    "description": "Short passages and everyday dialogues built from the vocabulary of this level."
+  },
+  {
+    "id": "u-tocfl-tocfl-l2-read",
+    "levelId": "lv-tocfl-level2",
+    "order": 1,
+    "title": "TOCFL Taiwan Reading",
+    "subtitle": "Graded Readings & Dialogues",
+    "description": "Short passages and everyday dialogues built from the vocabulary of this level."
+  },
+  {
+    "id": "u-tocfl-tocfl-n1-read",
+    "levelId": "lv-tocfl-novice1",
+    "order": 2,
+    "title": "TOCFL Taiwan Reading",
+    "subtitle": "Graded Readings & Dialogues",
+    "description": "Short passages and everyday dialogues built from the vocabulary of this level."
+  },
+  {
+    "id": "u-tocfl-tocfl-n2-read",
+    "levelId": "lv-tocfl-novice2",
+    "order": 2,
+    "title": "TOCFL Taiwan Reading",
+    "subtitle": "Graded Readings & Dialogues",
+    "description": "Short passages and everyday dialogues built from the vocabulary of this level."
+  },
+  {
+    "id": "u-tocfl-tocfl-l1-read",
+    "levelId": "lv-tocfl-level1",
+    "order": 1,
+    "title": "TOCFL Taiwan Reading",
+    "subtitle": "Graded Readings & Dialogues",
+    "description": "Short passages and everyday dialogues built from the vocabulary of this level."
+  },
+  {
+    "id": "u-tocfl-tocfl-l4-read",
+    "levelId": "lv-tocfl-level4",
+    "order": 1,
+    "title": "TOCFL Taiwan Reading",
+    "subtitle": "Graded Readings & Dialogues",
+    "description": "Short passages and everyday dialogues built from the vocabulary of this level."
+  },
+  {
+    "id": "u-hsk-hsk2-read",
+    "levelId": "lv-hsk2",
+    "order": 1,
+    "title": "HSK 2 in Practice",
+    "subtitle": "Graded Readings & Dialogues",
+    "description": "Short passages and everyday dialogues built from the vocabulary of this level."
+  },
+  {
+    "id": "u-hsk-hsk4-read",
+    "levelId": "lv-hsk4",
+    "order": 1,
+    "title": "HSK 4 in Practice",
+    "subtitle": "Graded Readings & Dialogues",
+    "description": "Short passages and everyday dialogues built from the vocabulary of this level."
+  },
+  {
+    "id": "u-hsk-hsk5-read",
+    "levelId": "lv-hsk5",
+    "order": 1,
+    "title": "HSK 5 in Practice",
+    "subtitle": "Graded Readings & Dialogues",
+    "description": "Short passages and everyday dialogues built from the vocabulary of this level."
+  },
+  {
+    "id": "u-hsk-hsk6-read",
+    "levelId": "lv-hsk6",
+    "order": 1,
+    "title": "HSK 6 in Practice",
+    "subtitle": "Graded Readings & Dialogues",
+    "description": "Short passages and everyday dialogues built from the vocabulary of this level."
+  },
+  {
+    "id": "u-hsk-hsk3-read",
+    "levelId": "lv-hsk3",
+    "order": 1,
+    "title": "HSK 3 in Practice",
+    "subtitle": "Graded Readings & Dialogues",
+    "description": "Short passages and everyday dialogues built from the vocabulary of this level."
+  },
+  {
+    "id": "u-hsk-hsk1-read",
+    "levelId": "lv-hsk1",
+    "order": 6,
+    "title": "HSK 1 in Practice",
+    "subtitle": "Graded Readings & Dialogues",
+    "description": "Short passages and everyday dialogues built from the vocabulary of this level."
+  },
+  {
+    "id": "u-hsk-hsk7-read",
+    "levelId": "lv-hsk7",
+    "order": 1,
+    "title": "HSK 7 in Practice",
+    "subtitle": "Graded Readings & Dialogues",
+    "description": "Short passages and everyday dialogues built from the vocabulary of this level."
+  }
+]
