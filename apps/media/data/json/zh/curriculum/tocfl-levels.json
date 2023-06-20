@@ -1,0 +1,46 @@
+[
+  {
+    "id": "lv-tocfl-novice1",
+    "courseId": "zh-core",
+    "examType": "tocfl",
+    "hsk": 1,
+    "title": "TOCFL Novice 1 · Getting Started",
+    "subtitle": "Taiwan Mandarin Beginner",
+    "description": "Begin your journey with Taiwan's official Chinese proficiency test. Learn greetings, numbers, and basic expressions in Traditional characters.",
+    "objectives": [
+      "Greet and introduce yourself in Taiwan Mandarin",
+      "Use basic numbers and time expressions",
+      "Understand and use common Taiwan-specific vocabulary",
+      "Introduce family members and occupations",
+      "Read and write basic Traditional Chinese characters",
+      "Order food and ask simple prices"
+    ],
+    "unitIds": [
+      "u-tocfl-n1-intro"
+    ],
+    "estimatedHours": 40,
+    "language": "zh"
+  },
+  {
+    "id": "lv-tocfl-novice2",
+    "courseId": "zh-core",
+    "examType": "tocfl",
+    "hsk": 2,
+    "title": "TOCFL Novice 2 · Daily Life in Taiwan",
+    "subtitle": "Taiwan Mandarin Elementary",
+    "description": "Navigate daily situations in Taiwan: transportation, weather, shopping, and dining with appropriate politeness levels.",
+    "objectives": [
+      "Ask for and give directions using Taiwan place names",
+      "Talk about weather and seasons in Taiwan",
+      "Shop at night markets and traditional markets",
+      "Order food and make simple requests politely",
+      "Use Taiwan-specific measure words and particles",
+      "Describe daily routines and simple plans"
+    ],
+    "unitIds": [
+      "u-tocfl-n2-life"
+    ],
+    "estimatedHours": 45,
+    "language": "zh"
+  }
+]

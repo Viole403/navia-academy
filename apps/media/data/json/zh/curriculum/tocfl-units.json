@@ -1,0 +1,38 @@
+[
+  {
+    "id": "u-tocfl-n1-intro",
+    "levelId": "lv-tocfl-novice1",
+    "order": 1,
+    "title": "First Steps in Taiwan",
+    "subtitle": "Greetings and Introductions",
+    "description": "Learn common greetings and self-introductions used in Taiwan, with attention to Traditional characters and Taiwanese politeness norms.",
+    "lessonIds": [
+      "l-tocfl-n1-greetings",
+      "l-tocfl-n1-food"
+    ],
+    "skills": [
+      "vocabulary",
+      "speaking",
+      "characters"
+    ],
+    "language": "zh"
+  },
+  {
+    "id": "u-tocfl-n2-life",
+    "levelId": "lv-tocfl-novice2",
+    "order": 1,
+    "title": "Everyday Taiwan",
+    "subtitle": "Dining, Transport, and Shopping",
+    "description": "Master practical language for daily life in Taiwan: ordering at restaurants, riding the MRT, and bargaining at night markets.",
+    "lessonIds": [
+      "l-tocfl-n2-dining",
+      "l-tocfl-n2-transport"
+    ],
+    "skills": [
+      "vocabulary",
+      "speaking",
+      "listening"
+    ],
+    "language": "zh"
+  }
+]
