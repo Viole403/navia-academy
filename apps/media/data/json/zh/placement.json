@@ -1,0 +1,750 @@
+[
+  {
+    "id": "p1-1",
+    "band": 1,
+    "type": "multiple-choice",
+    "prompt": "What does 你好 mean?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "Hello"
+      },
+      {
+        "id": "o1",
+        "label": "Goodbye"
+      },
+      {
+        "id": "o2",
+        "label": "Thanks"
+      },
+      {
+        "id": "o3",
+        "label": "Sorry"
+      }
+    ],
+    "correct": "o0",
+    "skill": "vocabulary",
+    "hsk": 1,
+    "audio": "placement:p1-1",
+    "language": "zh",
+    "prompt_en": "What does 你好 mean?",
+    "prompt_id": "Apa arti 你好?"
+  },
+  {
+    "id": "p1-2",
+    "band": 1,
+    "type": "multiple-choice",
+    "prompt": "In pinyin, the mark «ǎ» indicates…",
+    "options": [
+      {
+        "id": "o0",
+        "label": "third tone (falls then rises)"
+      },
+      {
+        "id": "o1",
+        "label": "first tone (flat)"
+      },
+      {
+        "id": "o2",
+        "label": "fourth tone (falls)"
+      },
+      {
+        "id": "o3",
+        "label": "neutral tone"
+      }
+    ],
+    "correct": "o0",
+    "skill": "pronunciation",
+    "hsk": 1,
+    "audio": "placement:p1-2",
+    "language": "zh",
+    "prompt_en": "In pinyin, the mark «ǎ» indicates…",
+    "prompt_id": "Dalam pinyin, tanda «ǎ» menunjukkan…"
+  },
+  {
+    "id": "p1-3",
+    "band": 1,
+    "type": "multiple-choice",
+    "prompt": "What character means «person»?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "人"
+      },
+      {
+        "id": "o1",
+        "label": "大"
+      },
+      {
+        "id": "o2",
+        "label": "山"
+      },
+      {
+        "id": "o3",
+        "label": "口"
+      }
+    ],
+    "correct": "o0",
+    "skill": "characters",
+    "hsk": 1,
+    "audio": "placement:p1-3",
+    "language": "zh",
+    "prompt_en": "What character means «person»?",
+    "prompt_id": "Karakter apa yang berarti «orang»?"
+  },
+  {
+    "id": "p1-4",
+    "band": 1,
+    "type": "listening-choice",
+    "prompt": "Listen and choose what you hear.",
+    "options": [
+      {
+        "id": "o0",
+        "label": "你好"
+      },
+      {
+        "id": "o1",
+        "label": "谢谢"
+      },
+      {
+        "id": "o2",
+        "label": "再见"
+      },
+      {
+        "id": "o3",
+        "label": "请"
+      }
+    ],
+    "correct": "o0",
+    "skill": "listening",
+    "hsk": 1,
+    "audioText": "你好",
+    "audio": "placement:p1-4",
+    "language": "zh",
+    "prompt_en": "Listen and choose what you hear.",
+    "prompt_id": "Dengarkan dan pilih apa yang kamu dengar."
+  },
+  {
+    "id": "p2-1",
+    "band": 2,
+    "type": "multiple-choice",
+    "prompt": "Choose the correct sentence:",
+    "options": [
+      {
+        "id": "o0",
+        "label": "我很累。"
+      },
+      {
+        "id": "o1",
+        "label": "我是累。"
+      },
+      {
+        "id": "o2",
+        "label": "累我很。"
+      },
+      {
+        "id": "o3",
+        "label": "我累是。"
+      }
+    ],
+    "correct": "o0",
+    "skill": "grammar",
+    "hsk": 1,
+    "audio": "placement:p2-1",
+    "language": "zh",
+    "prompt_en": "Choose the correct sentence:",
+    "prompt_id": "Pilih kalimat yang benar:"
+  },
+  {
+    "id": "p2-2",
+    "band": 2,
+    "type": "multiple-choice",
+    "prompt": "«teacher/professor» is…",
+    "options": [
+      {
+        "id": "o0",
+        "label": "老师"
+      },
+      {
+        "id": "o1",
+        "label": "学生"
+      },
+      {
+        "id": "o2",
+        "label": "朋友"
+      },
+      {
+        "id": "o3",
+        "label": "医生"
+      }
+    ],
+    "correct": "o0",
+    "skill": "vocabulary",
+    "hsk": 1,
+    "audio": "placement:p2-2",
+    "language": "zh",
+    "prompt_en": "«teacher/professor» is…",
+    "prompt_id": "«guru/dosen» adalah…"
+  },
+  {
+    "id": "p2-3",
+    "band": 2,
+    "type": "multiple-choice",
+    "prompt": "Read: 我有三本书。How many books?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "3"
+      },
+      {
+        "id": "o1",
+        "label": "2"
+      },
+      {
+        "id": "o2",
+        "label": "13"
+      },
+      {
+        "id": "o3",
+        "label": "30"
+      }
+    ],
+    "correct": "o0",
+    "skill": "reading",
+    "hsk": 1,
+    "audio": "placement:p2-3",
+    "language": "zh",
+    "prompt_en": "Read: 我有三本书。How many books?",
+    "prompt_id": "Baca: 我有三本书. Berapa buku?"
+  },
+  {
+    "id": "p2-4",
+    "band": 2,
+    "type": "listening-choice",
+    "prompt": "Listen to the number.",
+    "options": [
+      {
+        "id": "o0",
+        "label": "47"
+      },
+      {
+        "id": "o1",
+        "label": "74"
+      },
+      {
+        "id": "o2",
+        "label": "17"
+      },
+      {
+        "id": "o3",
+        "label": "40"
+      }
+    ],
+    "correct": "o0",
+    "skill": "listening",
+    "hsk": 1,
+    "audioText": "四十七",
+    "audio": "placement:p2-4",
+    "language": "zh",
+    "prompt_en": "Listen to the number.",
+    "prompt_id": "Dengarkan angkanya."
+  },
+  {
+    "id": "p2-5",
+    "band": 2,
+    "type": "multiple-choice",
+    "prompt": "«Are you a teacher?» is…",
+    "options": [
+      {
+        "id": "o0",
+        "label": "你是老师吗？"
+      },
+      {
+        "id": "o1",
+        "label": "你是吗老师？"
+      },
+      {
+        "id": "o2",
+        "label": "吗你是老师？"
+      },
+      {
+        "id": "o3",
+        "label": "你老师是？"
+      }
+    ],
+    "correct": "o0",
+    "skill": "grammar",
+    "hsk": 1,
+    "audio": "placement:p2-5",
+    "language": "zh",
+    "prompt_en": "«Are you a teacher?» is…",
+    "prompt_id": "«Apakah kamu seorang guru?» adalah…"
+  },
+  {
+    "id": "p3-1",
+    "band": 3,
+    "type": "multiple-choice",
+    "prompt": "«I have been to China» is…",
+    "options": [
+      {
+        "id": "o0",
+        "label": "我去过中国。"
+      },
+      {
+        "id": "o1",
+        "label": "我去了中国吗。"
+      },
+      {
+        "id": "o2",
+        "label": "我过去中国。"
+      },
+      {
+        "id": "o3",
+        "label": "我中国去过吗。"
+      }
+    ],
+    "correct": "o0",
+    "skill": "grammar",
+    "hsk": 2,
+    "audio": "placement:p3-1",
+    "language": "zh",
+    "prompt_en": "«I have been to China» is…",
+    "prompt_id": "«Saya sudah ke Tiongkok» adalah…"
+  },
+  {
+    "id": "p3-2",
+    "band": 3,
+    "type": "multiple-choice",
+    "prompt": "Complete: 今天___昨天热。",
+    "options": [
+      {
+        "id": "o0",
+        "label": "比"
+      },
+      {
+        "id": "o1",
+        "label": "跟"
+      },
+      {
+        "id": "o2",
+        "label": "和"
+      },
+      {
+        "id": "o3",
+        "label": "从"
+      }
+    ],
+    "correct": "o0",
+    "skill": "grammar",
+    "hsk": 2,
+    "audio": "placement:p3-2",
+    "language": "zh",
+    "prompt_en": "Complete: 今天___昨天热。",
+    "prompt_id": "Lengkapi: 今天___昨天热。"
+  },
+  {
+    "id": "p3-3",
+    "band": 3,
+    "type": "multiple-choice",
+    "prompt": "What does 因为…所以… mean?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "because… therefore…"
+      },
+      {
+        "id": "o1",
+        "label": "although… but…"
+      },
+      {
+        "id": "o2",
+        "label": "if… then…"
+      },
+      {
+        "id": "o3",
+        "label": "neither… nor…"
+      }
+    ],
+    "correct": "o0",
+    "skill": "vocabulary",
+    "hsk": 2,
+    "audio": "placement:p3-3",
+    "language": "zh",
+    "prompt_en": "What does 因为…所以… mean?",
+    "prompt_id": "Apa arti 因为…所以…?"
+  },
+  {
+    "id": "p3-4",
+    "band": 3,
+    "type": "listening-choice",
+    "prompt": "Listen: what does he/she want to do?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "sleep"
+      },
+      {
+        "id": "o1",
+        "label": "eat"
+      },
+      {
+        "id": "o2",
+        "label": "work"
+      },
+      {
+        "id": "o3",
+        "label": "study"
+      }
+    ],
+    "correct": "o0",
+    "skill": "listening",
+    "hsk": 2,
+    "audioText": "我很累，想睡觉",
+    "audio": "placement:p3-4",
+    "language": "zh",
+    "prompt_en": "Listen: what does he/she want to do?",
+    "prompt_id": "Dengarkan: apa yang dia ingin lakukan?"
+  },
+  {
+    "id": "p3-5",
+    "band": 3,
+    "type": "multiple-choice",
+    "prompt": "Read: 他会说一点儿汉语。He…",
+    "options": [
+      {
+        "id": "o0",
+        "label": "speaks a little Chinese"
+      },
+      {
+        "id": "o1",
+        "label": "doesn't speak Chinese"
+      },
+      {
+        "id": "o2",
+        "label": "teaches Chinese"
+      },
+      {
+        "id": "o3",
+        "label": "wants to learn Chinese"
+      }
+    ],
+    "correct": "o0",
+    "skill": "reading",
+    "hsk": 2,
+    "audio": "placement:p3-5",
+    "language": "zh",
+    "prompt_en": "Read: 他会说一点儿汉语。He…",
+    "prompt_id": "Baca: 他会说一点儿汉语. Dia…"
+  },
+  {
+    "id": "p4-1",
+    "band": 4,
+    "type": "multiple-choice",
+    "prompt": "Choose the correct sentence with 把:",
+    "options": [
+      {
+        "id": "o0",
+        "label": "请把门关上。"
+      },
+      {
+        "id": "o1",
+        "label": "请关把门上。"
+      },
+      {
+        "id": "o2",
+        "label": "把请门关上。"
+      },
+      {
+        "id": "o3",
+        "label": "请门把关上。"
+      }
+    ],
+    "correct": "o0",
+    "skill": "grammar",
+    "hsk": 3,
+    "audio": "placement:p4-1",
+    "language": "zh",
+    "prompt_en": "Choose the correct sentence with 把:",
+    "prompt_id": "Pilih kalimat yang benar dengan 把:"
+  },
+  {
+    "id": "p4-2",
+    "band": 4,
+    "type": "multiple-choice",
+    "prompt": "«I don't understand (when listening)» is…",
+    "options": [
+      {
+        "id": "o0",
+        "label": "我听不懂。"
+      },
+      {
+        "id": "o1",
+        "label": "我不能听懂。"
+      },
+      {
+        "id": "o2",
+        "label": "我没听懂吗。"
+      },
+      {
+        "id": "o3",
+        "label": "我不听得懂。"
+      }
+    ],
+    "correct": "o0",
+    "skill": "grammar",
+    "hsk": 3,
+    "audio": "placement:p4-2",
+    "language": "zh",
+    "prompt_en": "«I don't understand (when listening)» is…",
+    "prompt_id": "«Saya tidak mengerti (saat mendengar)» adalah…"
+  },
+  {
+    "id": "p4-3",
+    "band": 4,
+    "type": "multiple-choice",
+    "prompt": "What does 解决问题 mean?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "solve a problem"
+      },
+      {
+        "id": "o1",
+        "label": "create a problem"
+      },
+      {
+        "id": "o2",
+        "label": "explain a question"
+      },
+      {
+        "id": "o3",
+        "label": "avoid an argument"
+      }
+    ],
+    "correct": "o0",
+    "skill": "vocabulary",
+    "hsk": 3,
+    "audio": "placement:p4-3",
+    "language": "zh",
+    "prompt_en": "What does 解决问题 mean?",
+    "prompt_id": "Apa arti 解决问题?"
+  },
+  {
+    "id": "p4-4",
+    "band": 4,
+    "type": "listening-choice",
+    "prompt": "Listen: where did he/she learn Chinese?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "in Beijing"
+      },
+      {
+        "id": "o1",
+        "label": "in Spain"
+      },
+      {
+        "id": "o2",
+        "label": "at school"
+      },
+      {
+        "id": "o3",
+        "label": "at home"
+      }
+    ],
+    "correct": "o0",
+    "skill": "listening",
+    "hsk": 3,
+    "audioText": "我是在北京学的汉语",
+    "audio": "placement:p4-4",
+    "language": "zh",
+    "prompt_en": "Listen: where did he/she learn Chinese?",
+    "prompt_id": "Dengarkan: di mana dia belajar bahasa Mandarin?"
+  },
+  {
+    "id": "p5-1",
+    "band": 5,
+    "type": "multiple-choice",
+    "prompt": "«随着经济的发展» means…",
+    "options": [
+      {
+        "id": "o0",
+        "label": "with economic development"
+      },
+      {
+        "id": "o1",
+        "label": "despite the economy"
+      },
+      {
+        "id": "o2",
+        "label": "before development"
+      },
+      {
+        "id": "o3",
+        "label": "without economic development"
+      }
+    ],
+    "correct": "o0",
+    "skill": "reading",
+    "hsk": 4,
+    "audio": "placement:p5-1",
+    "language": "zh",
+    "prompt_en": "«随着经济的发展» means…",
+    "prompt_id": "«随着经济的发展» berarti…"
+  },
+  {
+    "id": "p5-2",
+    "band": 5,
+    "type": "multiple-choice",
+    "prompt": "Complete: 他___忙，___没时间吃饭。",
+    "options": [
+      {
+        "id": "o0",
+        "label": "越来越 / 甚至"
+      },
+      {
+        "id": "o1",
+        "label": "虽然 / 但是"
+      },
+      {
+        "id": "o2",
+        "label": "因为 / 所以"
+      },
+      {
+        "id": "o3",
+        "label": "不但 / 而且"
+      }
+    ],
+    "correct": "o0",
+    "skill": "grammar",
+    "hsk": 4,
+    "audio": "placement:p5-2",
+    "language": "zh",
+    "prompt_en": "Complete: 他___忙，___没时间吃饭。",
+    "prompt_id": "Lengkapi: 他___忙，___没时间吃饭。"
+  },
+  {
+    "id": "p5-3",
+    "band": 5,
+    "type": "multiple-choice",
+    "prompt": "What does 印象 mean?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "impression"
+      },
+      {
+        "id": "o1",
+        "label": "printing press"
+      },
+      {
+        "id": "o2",
+        "label": "image"
+      },
+      {
+        "id": "o3",
+        "label": "memory"
+      }
+    ],
+    "correct": "o0",
+    "skill": "vocabulary",
+    "hsk": 4,
+    "audio": "placement:p5-3",
+    "language": "zh",
+    "prompt_en": "What does 印象 mean?",
+    "prompt_id": "Apa arti 印象?"
+  },
+  {
+    "id": "p6-1",
+    "band": 6,
+    "type": "multiple-choice",
+    "prompt": "The chengyu 半途而废 means…",
+    "options": [
+      {
+        "id": "o0",
+        "label": "give up halfway"
+      },
+      {
+        "id": "o1",
+        "label": "give maximum effort"
+      },
+      {
+        "id": "o2",
+        "label": "arrive first"
+      },
+      {
+        "id": "o3",
+        "label": "start over"
+      }
+    ],
+    "correct": "o0",
+    "skill": "reading",
+    "hsk": 5,
+    "audio": "placement:p6-1",
+    "language": "zh",
+    "prompt_en": "The chengyu 半途而废 means…",
+    "prompt_id": "Chengyu 半途而废 berarti…"
+  },
+  {
+    "id": "p6-2",
+    "band": 6,
+    "type": "multiple-choice",
+    "prompt": "What is the register of 鄙人?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "humble and archaic (I/me)"
+      },
+      {
+        "id": "o1",
+        "label": "insult"
+      },
+      {
+        "id": "o2",
+        "label": "youth slang"
+      },
+      {
+        "id": "o3",
+        "label": "technical"
+      }
+    ],
+    "correct": "o0",
+    "skill": "vocabulary",
+    "hsk": 5,
+    "audio": "placement:p6-2",
+    "language": "zh",
+    "prompt_en": "What is the register of 鄙人?",
+    "prompt_id": "Apa ragam bahasa 鄙人?"
+  },
+  {
+    "id": "p6-3",
+    "band": 6,
+    "type": "multiple-choice",
+    "prompt": "«宁可…也不…» expresses…",
+    "options": [
+      {
+        "id": "o0",
+        "label": "prefer A over B"
+      },
+      {
+        "id": "o1",
+        "label": "neither A nor B"
+      },
+      {
+        "id": "o2",
+        "label": "both A and B"
+      },
+      {
+        "id": "o3",
+        "label": "first A then B"
+      }
+    ],
+    "correct": "o0",
+    "skill": "grammar",
+    "hsk": 5,
+    "audio": "placement:p6-3",
+    "language": "zh",
+    "prompt_en": "«宁可…也不…» expresses…",
+    "prompt_id": "«宁可…也不…» menyatakan…"
+  }
+]
