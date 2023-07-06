@@ -1,0 +1,1219 @@
+[
+  {
+    "id": "a-quick-hsk1",
+    "title": "Quick Test · Fundamentals",
+    "description": "Ten questions to check HSK 1 fundamentals: greetings, numbers, and basic structures.",
+    "kind": "quick",
+    "hsk": 1,
+    "durationMin": 5,
+    "passScore": 60,
+    "exercises": [
+      {
+        "id": "aq1",
+        "type": "multiple-choice",
+        "prompt": "How do you say «hello»?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "你好"
+          },
+          {
+            "id": "o1",
+            "label": "再见"
+          },
+          {
+            "id": "o2",
+            "label": "谢谢"
+          },
+          {
+            "id": "o3",
+            "label": "对不起"
+          }
+        ],
+        "correct": "o0",
+        "skill": "vocabulary",
+        "hsk": 1
+      },
+      {
+        "id": "aq2",
+        "type": "multiple-choice",
+        "prompt": "«我是学生» means…",
+        "options": [
+          {
+            "id": "o0",
+            "label": "I am a student"
+          },
+          {
+            "id": "o1",
+            "label": "I am a teacher"
+          },
+          {
+            "id": "o2",
+            "label": "I am fine"
+          },
+          {
+            "id": "o3",
+            "label": "I have a book"
+          }
+        ],
+        "correct": "o0",
+        "skill": "reading",
+        "hsk": 1
+      },
+      {
+        "id": "aq3",
+        "type": "multiple-choice",
+        "prompt": "What number is 二十五?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "25"
+          },
+          {
+            "id": "o1",
+            "label": "52"
+          },
+          {
+            "id": "o2",
+            "label": "205"
+          },
+          {
+            "id": "o3",
+            "label": "15"
+          }
+        ],
+        "correct": "o0",
+        "skill": "reading",
+        "hsk": 1
+      },
+      {
+        "id": "aq4",
+        "type": "multiple-choice",
+        "prompt": "Choose the correct sentence:",
+        "options": [
+          {
+            "id": "o0",
+            "label": "我很忙。"
+          },
+          {
+            "id": "o1",
+            "label": "我是忙。"
+          },
+          {
+            "id": "o2",
+            "label": "很我忙。"
+          },
+          {
+            "id": "o3",
+            "label": "忙我很。"
+          }
+        ],
+        "correct": "o0",
+        "skill": "grammar",
+        "hsk": 1
+      },
+      {
+        "id": "aq5",
+        "type": "multiple-choice",
+        "prompt": "How do you ask the price?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "多少钱？"
+          },
+          {
+            "id": "o1",
+            "label": "什么名字？"
+          },
+          {
+            "id": "o2",
+            "label": "你好吗？"
+          },
+          {
+            "id": "o3",
+            "label": "哪儿？"
+          }
+        ],
+        "correct": "o0",
+        "skill": "vocabulary",
+        "hsk": 1
+      },
+      {
+        "id": "aq6",
+        "type": "multiple-choice",
+        "prompt": "«I don't have time» is said…",
+        "options": [
+          {
+            "id": "o0",
+            "label": "我没有时间。"
+          },
+          {
+            "id": "o1",
+            "label": "我不有时间。"
+          },
+          {
+            "id": "o2",
+            "label": "我没是时间。"
+          },
+          {
+            "id": "o3",
+            "label": "时间没有我。"
+          }
+        ],
+        "correct": "o0",
+        "skill": "grammar",
+        "hsk": 1
+      },
+      {
+        "id": "aq7",
+        "type": "multiple-choice",
+        "prompt": "The classifier for books is…",
+        "options": [
+          {
+            "id": "o0",
+            "label": "本"
+          },
+          {
+            "id": "o1",
+            "label": "个"
+          },
+          {
+            "id": "o2",
+            "label": "杯"
+          },
+          {
+            "id": "o3",
+            "label": "位"
+          }
+        ],
+        "correct": "o0",
+        "skill": "grammar",
+        "hsk": 1
+      },
+      {
+        "id": "aq8",
+        "type": "multiple-choice",
+        "prompt": "What does 妈妈 mean?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "mom"
+          },
+          {
+            "id": "o1",
+            "label": "horse"
+          },
+          {
+            "id": "o2",
+            "label": "scold"
+          },
+          {
+            "id": "o3",
+            "label": "hemp"
+          }
+        ],
+        "correct": "o0",
+        "skill": "vocabulary",
+        "hsk": 1
+      },
+      {
+        "id": "aq9",
+        "type": "multiple-choice",
+        "prompt": "«And you?» is said…",
+        "options": [
+          {
+            "id": "o0",
+            "label": "你呢？"
+          },
+          {
+            "id": "o1",
+            "label": "你吗？"
+          },
+          {
+            "id": "o2",
+            "label": "你的？"
+          },
+          {
+            "id": "o3",
+            "label": "你了？"
+          }
+        ],
+        "correct": "o0",
+        "skill": "grammar",
+        "hsk": 1
+      },
+      {
+        "id": "aq10",
+        "type": "multiple-choice",
+        "prompt": "The third tone…",
+        "options": [
+          {
+            "id": "o0",
+            "label": "falls then rises"
+          },
+          {
+            "id": "o1",
+            "label": "is high and level"
+          },
+          {
+            "id": "o2",
+            "label": "rises"
+          },
+          {
+            "id": "o3",
+            "label": "falls sharply"
+          }
+        ],
+        "correct": "o0",
+        "skill": "pronunciation",
+        "hsk": 1
+      }
+    ],
+    "language": "zh",
+    "description_en": "Ten questions to check HSK 1 fundamentals: greetings, numbers, and basic structures.",
+    "description_id": "Sepuluh soal untuk menguji dasar HSK 1: sapaan, angka, dan struktur dasar."
+  },
+  {
+    "id": "a-unit-greetings",
+    "title": "Unit Assessment · First Words",
+    "description": "Assess the greetings and introductions unit: dialogue, vocabulary, and grammar.",
+    "kind": "unit",
+    "hsk": 1,
+    "durationMin": 10,
+    "passScore": 70,
+    "exercises": [
+      {
+        "id": "au1",
+        "type": "multiple-choice",
+        "prompt": "Someone introduces themselves to you. What do you say?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "很高兴认识你！"
+          },
+          {
+            "id": "o1",
+            "label": "再见！"
+          },
+          {
+            "id": "o2",
+            "label": "没关系。"
+          },
+          {
+            "id": "o3",
+            "label": "不客气。"
+          }
+        ],
+        "correct": "o0",
+        "skill": "vocabulary",
+        "hsk": 1
+      },
+      {
+        "id": "au2",
+        "type": "multiple-choice",
+        "prompt": "«你叫什么名字？» asks about…",
+        "options": [
+          {
+            "id": "o0",
+            "label": "your name"
+          },
+          {
+            "id": "o1",
+            "label": "your age"
+          },
+          {
+            "id": "o2",
+            "label": "your country"
+          },
+          {
+            "id": "o3",
+            "label": "your job"
+          }
+        ],
+        "correct": "o0",
+        "skill": "reading",
+        "hsk": 1
+      },
+      {
+        "id": "au3",
+        "type": "multiple-choice",
+        "prompt": "«I am Spanish» (female) is said…",
+        "options": [
+          {
+            "id": "o0",
+            "label": "我是西班牙人。"
+          },
+          {
+            "id": "o1",
+            "label": "我在西班牙人。"
+          },
+          {
+            "id": "o2",
+            "label": "我有西班牙。"
+          },
+          {
+            "id": "o3",
+            "label": "西班牙是我。"
+          }
+        ],
+        "correct": "o0",
+        "skill": "grammar",
+        "hsk": 1
+      },
+      {
+        "id": "au4",
+        "type": "multiple-choice",
+        "prompt": "To 谢谢 you respond…",
+        "options": [
+          {
+            "id": "o0",
+            "label": "不客气"
+          },
+          {
+            "id": "o1",
+            "label": "没关系"
+          },
+          {
+            "id": "o2",
+            "label": "再见"
+          },
+          {
+            "id": "o3",
+            "label": "请"
+          }
+        ],
+        "correct": "o0",
+        "skill": "vocabulary",
+        "hsk": 1
+      },
+      {
+        "id": "au5",
+        "type": "multiple-choice",
+        "prompt": "To 对不起 you respond…",
+        "options": [
+          {
+            "id": "o0",
+            "label": "没关系"
+          },
+          {
+            "id": "o1",
+            "label": "不客气"
+          },
+          {
+            "id": "o2",
+            "label": "你好"
+          },
+          {
+            "id": "o3",
+            "label": "谢谢你"
+          }
+        ],
+        "correct": "o0",
+        "skill": "vocabulary",
+        "hsk": 1
+      },
+      {
+        "id": "au6",
+        "type": "multiple-choice",
+        "prompt": "Which one uses 吗?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "你是老师吗？"
+          },
+          {
+            "id": "o1",
+            "label": "你叫什么吗？"
+          },
+          {
+            "id": "o2",
+            "label": "哪儿吗？"
+          },
+          {
+            "id": "o3",
+            "label": "为什么吗？"
+          }
+        ],
+        "correct": "o0",
+        "skill": "grammar",
+        "hsk": 1
+      },
+      {
+        "id": "au7",
+        "type": "multiple-choice",
+        "prompt": "你好吗 is answered with…",
+        "options": [
+          {
+            "id": "o0",
+            "label": "我很好。"
+          },
+          {
+            "id": "o1",
+            "label": "我叫李明。"
+          },
+          {
+            "id": "o2",
+            "label": "我是学生。"
+          },
+          {
+            "id": "o3",
+            "label": "再见。"
+          }
+        ],
+        "correct": "o0",
+        "skill": "reading",
+        "hsk": 1
+      },
+      {
+        "id": "au8",
+        "type": "multiple-choice",
+        "prompt": "«也» in 我也很好 means…",
+        "options": [
+          {
+            "id": "o0",
+            "label": "also"
+          },
+          {
+            "id": "o1",
+            "label": "very"
+          },
+          {
+            "id": "o2",
+            "label": "no"
+          },
+          {
+            "id": "o3",
+            "label": "and"
+          }
+        ],
+        "correct": "o0",
+        "skill": "vocabulary",
+        "hsk": 1
+      }
+    ],
+    "language": "zh",
+    "description_en": "Assess the greetings and introductions unit: dialogue, vocabulary, and grammar.",
+    "description_id": "Menilai unit sapaan dan perkenalan: dialog, kosakata, dan tata bahasa."
+  },
+  {
+    "id": "a-vocab-hsk1",
+    "title": "Vocabulary Test · HSK 1",
+    "description": "Essential vocabulary for the level: food, family, verbs and time.",
+    "kind": "vocabulary",
+    "hsk": 1,
+    "durationMin": 8,
+    "passScore": 70,
+    "exercises": [
+      {
+        "id": "av1",
+        "type": "multiple-choice",
+        "prompt": "What does 喝 mean?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "drink"
+          },
+          {
+            "id": "o1",
+            "label": "eat"
+          },
+          {
+            "id": "o2",
+            "label": "go"
+          },
+          {
+            "id": "o3",
+            "label": "look"
+          }
+        ],
+        "correct": "o0",
+        "skill": "vocabulary",
+        "hsk": 1
+      },
+      {
+        "id": "av2",
+        "type": "multiple-choice",
+        "prompt": "«book» is said…",
+        "options": [
+          {
+            "id": "o0",
+            "label": "书"
+          },
+          {
+            "id": "o1",
+            "label": "水"
+          },
+          {
+            "id": "o2",
+            "label": "茶"
+          },
+          {
+            "id": "o3",
+            "label": "家"
+          }
+        ],
+        "correct": "o0",
+        "skill": "vocabulary",
+        "hsk": 1
+      },
+      {
+        "id": "av3",
+        "type": "multiple-choice",
+        "prompt": "What does 明天 mean?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "tomorrow"
+          },
+          {
+            "id": "o1",
+            "label": "today"
+          },
+          {
+            "id": "o2",
+            "label": "yesterday"
+          },
+          {
+            "id": "o3",
+            "label": "now"
+          }
+        ],
+        "correct": "o0",
+        "skill": "vocabulary",
+        "hsk": 1
+      },
+      {
+        "id": "av4",
+        "type": "multiple-choice",
+        "prompt": "«buy» is said…",
+        "options": [
+          {
+            "id": "o0",
+            "label": "买"
+          },
+          {
+            "id": "o1",
+            "label": "卖"
+          },
+          {
+            "id": "o2",
+            "label": "钱"
+          },
+          {
+            "id": "o3",
+            "label": "块"
+          }
+        ],
+        "correct": "o0",
+        "skill": "vocabulary",
+        "hsk": 1
+      },
+      {
+        "id": "av5",
+        "type": "multiple-choice",
+        "prompt": "What does 朋友 mean?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "friend"
+          },
+          {
+            "id": "o1",
+            "label": "family"
+          },
+          {
+            "id": "o2",
+            "label": "teacher"
+          },
+          {
+            "id": "o3",
+            "label": "student"
+          }
+        ],
+        "correct": "o0",
+        "skill": "vocabulary",
+        "hsk": 1
+      },
+      {
+        "id": "av6",
+        "type": "multiple-choice",
+        "prompt": "«like» is said…",
+        "options": [
+          {
+            "id": "o0",
+            "label": "喜欢"
+          },
+          {
+            "id": "o1",
+            "label": "爱"
+          },
+          {
+            "id": "o2",
+            "label": "要"
+          },
+          {
+            "id": "o3",
+            "label": "想"
+          }
+        ],
+        "correct": "o0",
+        "skill": "vocabulary",
+        "hsk": 1
+      },
+      {
+        "id": "av7",
+        "type": "multiple-choice",
+        "prompt": "What does 学校 mean?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "school"
+          },
+          {
+            "id": "o1",
+            "label": "house"
+          },
+          {
+            "id": "o2",
+            "label": "hospital"
+          },
+          {
+            "id": "o3",
+            "label": "restaurant"
+          }
+        ],
+        "correct": "o0",
+        "skill": "vocabulary",
+        "hsk": 1
+      },
+      {
+        "id": "av8",
+        "type": "multiple-choice",
+        "prompt": "«water» is said…",
+        "options": [
+          {
+            "id": "o0",
+            "label": "水"
+          },
+          {
+            "id": "o1",
+            "label": "茶"
+          },
+          {
+            "id": "o2",
+            "label": "咖啡"
+          },
+          {
+            "id": "o3",
+            "label": "牛奶"
+          }
+        ],
+        "correct": "o0",
+        "skill": "vocabulary",
+        "hsk": 1
+      },
+      {
+        "id": "av9",
+        "type": "multiple-choice",
+        "prompt": "What does 都 mean?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "all"
+          },
+          {
+            "id": "o1",
+            "label": "very"
+          },
+          {
+            "id": "o2",
+            "label": "also"
+          },
+          {
+            "id": "o3",
+            "label": "a little"
+          }
+        ],
+        "correct": "o0",
+        "skill": "vocabulary",
+        "hsk": 1
+      },
+      {
+        "id": "av10",
+        "type": "multiple-choice",
+        "prompt": "«busy» is said…",
+        "options": [
+          {
+            "id": "o0",
+            "label": "忙"
+          },
+          {
+            "id": "o1",
+            "label": "累"
+          },
+          {
+            "id": "o2",
+            "label": "好"
+          },
+          {
+            "id": "o3",
+            "label": "大"
+          }
+        ],
+        "correct": "o0",
+        "skill": "vocabulary",
+        "hsk": 1
+      }
+    ],
+    "language": "zh",
+    "description_en": "Essential vocabulary for the level: food, family, verbs and time.",
+    "description_id": "Kosakata penting untuk level: makanan, keluarga, kata kerja, dan waktu."
+  },
+  {
+    "id": "a-grammar-hsk1",
+    "title": "Grammar Test · HSK 1-2",
+    "description": "Essential structures: 是, 很, 的, negation, classifiers and particles.",
+    "kind": "grammar",
+    "hsk": 1,
+    "durationMin": 10,
+    "passScore": 70,
+    "exercises": [
+      {
+        "id": "ag1",
+        "type": "multiple-choice",
+        "prompt": "Complete: 我___学生。",
+        "options": [
+          {
+            "id": "o0",
+            "label": "是"
+          },
+          {
+            "id": "o1",
+            "label": "很"
+          },
+          {
+            "id": "o2",
+            "label": "在"
+          },
+          {
+            "id": "o3",
+            "label": "有"
+          }
+        ],
+        "correct": "o0",
+        "skill": "grammar",
+        "hsk": 1
+      },
+      {
+        "id": "ag2",
+        "type": "multiple-choice",
+        "prompt": "Complete: 今天天气___好。",
+        "options": [
+          {
+            "id": "o0",
+            "label": "很"
+          },
+          {
+            "id": "o1",
+            "label": "是"
+          },
+          {
+            "id": "o2",
+            "label": "的"
+          },
+          {
+            "id": "o3",
+            "label": "吗"
+          }
+        ],
+        "correct": "o0",
+        "skill": "grammar",
+        "hsk": 1
+      },
+      {
+        "id": "ag3",
+        "type": "multiple-choice",
+        "prompt": "«The teacher's book»:",
+        "options": [
+          {
+            "id": "o0",
+            "label": "老师的书"
+          },
+          {
+            "id": "o1",
+            "label": "书的老师"
+          },
+          {
+            "id": "o2",
+            "label": "老师书的"
+          },
+          {
+            "id": "o3",
+            "label": "的老师书"
+          }
+        ],
+        "correct": "o0",
+        "skill": "grammar",
+        "hsk": 1
+      },
+      {
+        "id": "ag4",
+        "type": "multiple-choice",
+        "prompt": "«He didn't come» (yesterday):",
+        "options": [
+          {
+            "id": "o0",
+            "label": "他没来。"
+          },
+          {
+            "id": "o1",
+            "label": "他不来。"
+          },
+          {
+            "id": "o2",
+            "label": "他没有来吗。"
+          },
+          {
+            "id": "o3",
+            "label": "不他来。"
+          }
+        ],
+        "correct": "o0",
+        "skill": "grammar",
+        "hsk": 1
+      },
+      {
+        "id": "ag5",
+        "type": "multiple-choice",
+        "prompt": "Choose the correct one:",
+        "options": [
+          {
+            "id": "o0",
+            "label": "我有两个弟弟。"
+          },
+          {
+            "id": "o1",
+            "label": "我有二个弟弟。"
+          },
+          {
+            "id": "o2",
+            "label": "我有两弟弟。"
+          },
+          {
+            "id": "o3",
+            "label": "我两有个弟弟。"
+          }
+        ],
+        "correct": "o0",
+        "skill": "grammar",
+        "hsk": 1
+      },
+      {
+        "id": "ag6",
+        "type": "multiple-choice",
+        "prompt": "«I am reading»:",
+        "options": [
+          {
+            "id": "o0",
+            "label": "我在看书。"
+          },
+          {
+            "id": "o1",
+            "label": "我看在书。"
+          },
+          {
+            "id": "o2",
+            "label": "在我看书。"
+          },
+          {
+            "id": "o3",
+            "label": "我看书在。"
+          }
+        ],
+        "correct": "o0",
+        "skill": "grammar",
+        "hsk": 1
+      },
+      {
+        "id": "ag7",
+        "type": "multiple-choice",
+        "prompt": "«Do you know how to swim?»:",
+        "options": [
+          {
+            "id": "o0",
+            "label": "你会游泳吗？"
+          },
+          {
+            "id": "o1",
+            "label": "你可以游泳吗？"
+          },
+          {
+            "id": "o2",
+            "label": "你要游泳吗？"
+          },
+          {
+            "id": "o3",
+            "label": "你游泳会吗？"
+          }
+        ],
+        "correct": "o0",
+        "skill": "grammar",
+        "hsk": 1
+      },
+      {
+        "id": "ag8",
+        "type": "multiple-choice",
+        "prompt": "Time expressions go…",
+        "options": [
+          {
+            "id": "o0",
+            "label": "before the verb"
+          },
+          {
+            "id": "o1",
+            "label": "after the verb"
+          },
+          {
+            "id": "o2",
+            "label": "at the end"
+          },
+          {
+            "id": "o3",
+            "label": "anywhere"
+          }
+        ],
+        "correct": "o0",
+        "skill": "grammar",
+        "hsk": 1
+      }
+    ],
+    "language": "zh",
+    "description_en": "Essential structures: 是, 很, 的, negation, classifiers and particles.",
+    "description_id": "Struktur penting: 是, 很, 的, negasi, kata bantu bilangan, dan partikel."
+  },
+  {
+    "id": "a-mock-hsk1",
+    "title": "Mock HSK 1",
+    "description": "Short mock test of the official HSK 1 exam: listening and reading comprehension.",
+    "kind": "hsk-mock",
+    "hsk": 1,
+    "durationMin": 15,
+    "passScore": 60,
+    "exercises": [
+      {
+        "id": "am1",
+        "type": "listening-choice",
+        "prompt": "Listen and choose the correct translation.",
+        "audioText": "我很喜欢喝中国茶",
+        "options": [
+          {
+            "id": "a",
+            "label": "I really like Chinese tea"
+          },
+          {
+            "id": "b",
+            "label": "I don't like coffee"
+          },
+          {
+            "id": "c",
+            "label": "I drink water every day"
+          },
+          {
+            "id": "d",
+            "label": "The tea is hot"
+          }
+        ],
+        "correct": "a",
+        "skill": "listening",
+        "hsk": 1
+      },
+      {
+        "id": "am2",
+        "type": "listening-choice",
+        "prompt": "Listen: what is being asked?",
+        "audioText": "你爸爸做什么工作",
+        "options": [
+          {
+            "id": "a",
+            "label": "The father's job"
+          },
+          {
+            "id": "b",
+            "label": "The father's age"
+          },
+          {
+            "id": "c",
+            "label": "Where the father lives"
+          },
+          {
+            "id": "d",
+            "label": "The father's name"
+          }
+        ],
+        "correct": "a",
+        "skill": "listening",
+        "hsk": 1
+      },
+      {
+        "id": "am3",
+        "type": "multiple-choice",
+        "prompt": "Read: 我家有五个人。How many are there?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "5"
+          },
+          {
+            "id": "o1",
+            "label": "4"
+          },
+          {
+            "id": "o2",
+            "label": "3"
+          },
+          {
+            "id": "o3",
+            "label": "50"
+          }
+        ],
+        "correct": "o0",
+        "skill": "reading",
+        "hsk": 1
+      },
+      {
+        "id": "am4",
+        "type": "multiple-choice",
+        "prompt": "Read: 他明天不来学校。When doesn't he come?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "tomorrow"
+          },
+          {
+            "id": "o1",
+            "label": "today"
+          },
+          {
+            "id": "o2",
+            "label": "yesterday"
+          },
+          {
+            "id": "o3",
+            "label": "never"
+          }
+        ],
+        "correct": "o0",
+        "skill": "reading",
+        "hsk": 1
+      },
+      {
+        "id": "am5",
+        "type": "multiple-choice",
+        "prompt": "Complete: 你___哪国人？",
+        "options": [
+          {
+            "id": "o0",
+            "label": "是"
+          },
+          {
+            "id": "o1",
+            "label": "很"
+          },
+          {
+            "id": "o2",
+            "label": "在"
+          },
+          {
+            "id": "o3",
+            "label": "叫"
+          }
+        ],
+        "correct": "o0",
+        "skill": "grammar",
+        "hsk": 1
+      },
+      {
+        "id": "am6",
+        "type": "multiple-choice",
+        "prompt": "«Where is my book?»:",
+        "options": [
+          {
+            "id": "o0",
+            "label": "我的书在哪儿？"
+          },
+          {
+            "id": "o1",
+            "label": "哪儿是我的书吗？"
+          },
+          {
+            "id": "o2",
+            "label": "我的书是哪儿？"
+          },
+          {
+            "id": "o3",
+            "label": "书哪儿我的在？"
+          }
+        ],
+        "correct": "o0",
+        "skill": "grammar",
+        "hsk": 1
+      },
+      {
+        "id": "am7",
+        "type": "listening-choice",
+        "prompt": "Listen to the number.",
+        "audioText": "九十二",
+        "options": [
+          {
+            "id": "a",
+            "label": "92"
+          },
+          {
+            "id": "b",
+            "label": "29"
+          },
+          {
+            "id": "c",
+            "label": "912"
+          },
+          {
+            "id": "d",
+            "label": "20"
+          }
+        ],
+        "correct": "a",
+        "skill": "listening",
+        "hsk": 1
+      },
+      {
+        "id": "am8",
+        "type": "multiple-choice",
+        "prompt": "Read: 现在十点。What time is it?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "10 o'clock"
+          },
+          {
+            "id": "o1",
+            "label": "4 o'clock"
+          },
+          {
+            "id": "o2",
+            "label": "12 o'clock"
+          },
+          {
+            "id": "o3",
+            "label": "2 o'clock"
+          }
+        ],
+        "correct": "o0",
+        "skill": "reading",
+        "hsk": 1
+      }
+    ],
+    "language": "zh",
+    "description_en": "Short mock test of the official HSK 1 exam: listening and reading comprehension.",
+    "description_id": "Tes tiruan singkat ujian resmi HSK 1: pemahaman menyimak dan membaca."
+  }
+]
