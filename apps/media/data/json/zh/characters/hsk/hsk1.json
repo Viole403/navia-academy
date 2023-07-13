@@ -1,0 +1,7156 @@
+[
+  {
+    "id": "c-bian4",
+    "char": "便",
+    "pinyin": "biàn",
+    "tone": 4,
+    "meaning": "plain",
+    "strokes": 9,
+    "radical": "人",
+    "radicalMeaning": "man",
+    "components": [
+      "亻",
+      "更"
+    ],
+    "words": [
+      "bian"
+    ],
+    "zhuyin": "ㄅㄧㄢˋ",
+    "mnemonic": "便 = 亻、更; the man radical (人) anchors the meaning \"plain\". 亻、更 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-bian4",
+    "language": "zh",
+    "text": "便",
+    "romanization": "biàn",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-bian",
+    "char": "边",
+    "pinyin": "biān",
+    "tone": 1,
+    "meaning": "side",
+    "strokes": 5,
+    "radical": "邑",
+    "radicalMeaning": "town",
+    "components": [
+      "力",
+      "辶"
+    ],
+    "words": [
+      "bian12"
+    ],
+    "zhuyin": "ㄅㄧㄢ",
+    "mnemonic": "边 = 力、辶; the town radical (邑) anchors the meaning \"side\". 力、辶 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-bian",
+    "language": "zh",
+    "text": "边",
+    "romanization": "biān",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-ba4",
+    "char": "爸",
+    "pinyin": "bà",
+    "tone": 4,
+    "meaning": "father",
+    "strokes": 8,
+    "radical": "父",
+    "radicalMeaning": "father",
+    "components": [
+      "巴",
+      "父"
+    ],
+    "words": [],
+    "zhuyin": "ㄅㄚˋ",
+    "mnemonic": "爸 = 巴、父; the father radical (父) anchors the meaning \"father\". 巴 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-ba4",
+    "language": "zh",
+    "text": "爸",
+    "romanization": "bà",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-ban4",
+    "char": "半",
+    "pinyin": "bàn",
+    "tone": 4,
+    "meaning": "half",
+    "strokes": 5,
+    "radical": "十",
+    "radicalMeaning": "ten",
+    "components": [
+      "丨",
+      "丷",
+      "二"
+    ],
+    "words": [
+      "ban4"
+    ],
+    "zhuyin": "ㄅㄢˋ",
+    "mnemonic": "半 = 丨、丷、二; the ten radical (十) anchors the meaning \"half\". 丨、丷 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-ban4",
+    "language": "zh",
+    "text": "半",
+    "romanization": "bàn",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-bai",
+    "char": "白",
+    "pinyin": "bái",
+    "tone": 2,
+    "meaning": "white",
+    "strokes": 5,
+    "radical": "白",
+    "radicalMeaning": "white",
+    "components": [
+      "白"
+    ],
+    "words": [
+      "bai"
+    ],
+    "zhuyin": "ㄅㄞˊ",
+    "mnemonic": "白 = 白; the white radical (白) anchors the meaning \"white\".",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-bai",
+    "language": "zh",
+    "text": "白",
+    "romanization": "bái",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-bing",
+    "char": "病",
+    "pinyin": "bìng",
+    "tone": 4,
+    "meaning": "illness",
+    "strokes": 10,
+    "radical": "疒",
+    "radicalMeaning": "sickness",
+    "components": [
+      "丙",
+      "疒"
+    ],
+    "words": [
+      "bing4"
+    ],
+    "zhuyin": "ㄅㄧㄥˋ",
+    "mnemonic": "病 = 丙、疒; the sickness radical (疒) anchors the meaning \"illness\". 丙 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-bing",
+    "language": "zh",
+    "text": "病",
+    "romanization": "bìng",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-bu",
+    "char": "不",
+    "pinyin": "bù",
+    "tone": 4,
+    "meaning": "no, not",
+    "strokes": 4,
+    "radical": "一",
+    "radicalMeaning": "one",
+    "components": [
+      "不"
+    ],
+    "hsk": 1,
+    "words": [
+      "bu4"
+    ],
+    "zhuyin": "ㄅㄨˋ",
+    "mnemonic": "A bird that cannot fly to the sky: negation.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-bu",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-ba",
+    "char": "八",
+    "pinyin": "bā",
+    "tone": 1,
+    "meaning": "eight",
+    "strokes": 2,
+    "radical": "八",
+    "radicalMeaning": "eight",
+    "components": [
+      "八"
+    ],
+    "words": [
+      "ba1"
+    ],
+    "zhuyin": "ㄅㄚ",
+    "mnemonic": "八 = 八; the eight radical (八) anchors the meaning \"eight\".",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-ba",
+    "language": "zh",
+    "text": "八",
+    "romanization": "bā",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-ba1",
+    "char": "吧",
+    "pinyin": "bā",
+    "tone": 1,
+    "meaning": "bar (loanword) (serving drinks, or providing Internet access etc)",
+    "strokes": 7,
+    "radical": "口",
+    "radicalMeaning": "mouth",
+    "components": [
+      "口",
+      "巴"
+    ],
+    "words": [
+      "ba5"
+    ],
+    "zhuyin": "ㄅㄚ",
+    "mnemonic": "吧 = 口、巴; the mouth radical (口) anchors the meaning \"bar (loanword) (serving \". 巴 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-ba1",
+    "language": "zh",
+    "text": "吧",
+    "romanization": "bā",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-ban",
+    "char": "班",
+    "pinyin": "bān",
+    "tone": 1,
+    "meaning": "team",
+    "strokes": 10,
+    "radical": "玉",
+    "radicalMeaning": "jade",
+    "components": [
+      "②",
+      "王"
+    ],
+    "words": [
+      "ban12"
+    ],
+    "zhuyin": "ㄅㄢ",
+    "mnemonic": "班 = ②、王; the jade radical (玉) anchors the meaning \"team\". ②、王 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-ban",
+    "language": "zh",
+    "text": "班",
+    "romanization": "bān",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-bao",
+    "char": "包",
+    "pinyin": "bāo",
+    "tone": 1,
+    "meaning": "to cover",
+    "strokes": 5,
+    "radical": "勹",
+    "radicalMeaning": "wrap",
+    "components": [
+      "勹",
+      "巳"
+    ],
+    "words": [
+      "bao12"
+    ],
+    "zhuyin": "ㄅㄠ",
+    "mnemonic": "包 = 勹、巳; the wrap radical (勹) anchors the meaning \"to cover\". 巳 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-bao",
+    "language": "zh",
+    "text": "包",
+    "romanization": "bāo",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-bei",
+    "char": "杯",
+    "pinyin": "bēi",
+    "tone": 1,
+    "meaning": "cup",
+    "strokes": 8,
+    "radical": "木",
+    "radicalMeaning": "tree",
+    "components": [
+      "不",
+      "木"
+    ],
+    "words": [],
+    "zhuyin": "ㄅㄟ",
+    "mnemonic": "杯 = 不、木; the tree radical (木) anchors the meaning \"cup\". 不 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-bei",
+    "language": "zh",
+    "text": "杯",
+    "romanization": "bēi",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-ben",
+    "char": "本",
+    "pinyin": "běn",
+    "tone": 3,
+    "meaning": "(bound form) root",
+    "strokes": 5,
+    "radical": "木",
+    "radicalMeaning": "tree",
+    "components": [
+      "本"
+    ],
+    "words": [
+      "ben"
+    ],
+    "zhuyin": "ㄅㄣˇ",
+    "mnemonic": "本 = 本; the tree radical (木) anchors the meaning \"(bound form) root\". 本 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-ben",
+    "language": "zh",
+    "text": "本",
+    "romanization": "běn",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-bai3",
+    "char": "百",
+    "pinyin": "bǎi",
+    "tone": 3,
+    "meaning": "hundred",
+    "strokes": 6,
+    "radical": "白",
+    "radicalMeaning": "white",
+    "components": [
+      "一",
+      "白"
+    ],
+    "words": [
+      "bai3"
+    ],
+    "zhuyin": "ㄅㄞˇ",
+    "mnemonic": "百 = 一、白; the white radical (白) anchors the meaning \"hundred\". 一 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-bai3",
+    "language": "zh",
+    "text": "百",
+    "romanization": "bǎi",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-chuang",
+    "char": "床",
+    "pinyin": "chuáng",
+    "tone": 2,
+    "meaning": "bed",
+    "strokes": 7,
+    "radical": "广",
+    "radicalMeaning": "dotted_cliff",
+    "components": [
+      "广",
+      "木"
+    ],
+    "words": [
+      "chuang22"
+    ],
+    "zhuyin": "ㄔㄨㄤˊ",
+    "mnemonic": "床 = 广、木; the dotted_cliff radical (广) anchors the meaning \"bed\". 木 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-chuang",
+    "language": "zh",
+    "text": "床",
+    "romanization": "chuáng",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-chuan",
+    "char": "穿",
+    "pinyin": "chuān",
+    "tone": 1,
+    "meaning": "to wear",
+    "strokes": 9,
+    "radical": "穴",
+    "radicalMeaning": "cave",
+    "components": [
+      "牙",
+      "穴"
+    ],
+    "words": [
+      "chuan1"
+    ],
+    "zhuyin": "ㄔㄨㄢ",
+    "mnemonic": "穿 = 牙、穴; the cave radical (穴) anchors the meaning \"to wear\". 牙 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-chuan",
+    "language": "zh",
+    "text": "穿",
+    "romanization": "chuān",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-chang4",
+    "char": "唱",
+    "pinyin": "chàng",
+    "tone": 4,
+    "meaning": "to sing",
+    "strokes": 11,
+    "radical": "口",
+    "radicalMeaning": "mouth",
+    "components": [
+      "口",
+      "昌"
+    ],
+    "words": [
+      "chang4"
+    ],
+    "zhuyin": "ㄔㄤˋ",
+    "mnemonic": "唱 = 口、昌; the mouth radical (口) anchors the meaning \"to sing\". 昌 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-chang4",
+    "language": "zh",
+    "text": "唱",
+    "romanization": "chàng",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-cha",
+    "char": "茶",
+    "pinyin": "chá",
+    "tone": 2,
+    "meaning": "tea",
+    "strokes": 9,
+    "radical": "艹",
+    "radicalMeaning": "grass",
+    "components": [
+      "艹",
+      "人",
+      "木"
+    ],
+    "hsk": 1,
+    "words": [
+      "cha2"
+    ],
+    "zhuyin": "ㄔㄚˊ",
+    "mnemonic": "A person among grasses and trees: picking tea.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-cha",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-chang",
+    "char": "常",
+    "pinyin": "cháng",
+    "tone": 2,
+    "meaning": "always",
+    "strokes": 11,
+    "radical": "巾",
+    "radicalMeaning": "turban",
+    "components": [
+      "巾",
+      "𫩠"
+    ],
+    "words": [
+      "chang23"
+    ],
+    "zhuyin": "ㄔㄤˊ",
+    "mnemonic": "常 = 巾、𫩠; the turban radical (巾) anchors the meaning \"always\". 𫩠 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-chang",
+    "language": "zh",
+    "text": "常",
+    "romanization": "cháng",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-chao",
+    "char": "超",
+    "pinyin": "chāo",
+    "tone": 1,
+    "meaning": "to exceed",
+    "strokes": 12,
+    "radical": "足",
+    "radicalMeaning": "foot",
+    "components": [
+      "召",
+      "走"
+    ],
+    "words": [
+      "chao1"
+    ],
+    "zhuyin": "ㄔㄠ",
+    "mnemonic": "超 = 召、走; the foot radical (足) anchors the meaning \"to exceed\". 召、走 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-chao",
+    "language": "zh",
+    "text": "超",
+    "romanization": "chāo",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-che",
+    "char": "车",
+    "pinyin": "chē",
+    "tone": 1,
+    "meaning": "car",
+    "strokes": 4,
+    "radical": "辛",
+    "radicalMeaning": "bitter",
+    "components": [
+      "车"
+    ],
+    "words": [
+      "che1"
+    ],
+    "zhuyin": "ㄔㄜ",
+    "mnemonic": "车 = 车; the bitter radical (辛) anchors the meaning \"car\". 车 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-che",
+    "language": "zh",
+    "text": "车",
+    "romanization": "chē",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-chi",
+    "char": "吃",
+    "pinyin": "chī",
+    "tone": 1,
+    "meaning": "to eat",
+    "strokes": 6,
+    "radical": "口",
+    "radicalMeaning": "mouth",
+    "components": [
+      "口",
+      "乞"
+    ],
+    "hsk": 1,
+    "words": [
+      "chi1"
+    ],
+    "zhuyin": "ㄔ",
+    "mnemonic": "A mouth that begs: to eat.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-chi",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-chu",
+    "char": "出",
+    "pinyin": "chū",
+    "tone": 1,
+    "meaning": "to go out",
+    "strokes": 5,
+    "radical": "凵",
+    "radicalMeaning": "receptacle",
+    "components": [
+      "凵",
+      "屮"
+    ],
+    "words": [
+      "chu1"
+    ],
+    "zhuyin": "ㄔㄨ",
+    "mnemonic": "出 = 凵、屮; the receptacle radical (凵) anchors the meaning \"to go out\". 屮 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-chu",
+    "language": "zh",
+    "text": "出",
+    "romanization": "chū",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-cai",
+    "char": "菜",
+    "pinyin": "cài",
+    "tone": 4,
+    "meaning": "vegetable",
+    "strokes": 11,
+    "radical": "艸",
+    "radicalMeaning": "grass",
+    "components": [
+      "艹",
+      "采"
+    ],
+    "words": [
+      "cai4"
+    ],
+    "zhuyin": "ㄘㄞˋ",
+    "mnemonic": "菜 = 艹、采; the grass radical (艸) anchors the meaning \"vegetable\". 艹、采 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-cai",
+    "language": "zh",
+    "text": "菜",
+    "romanization": "cài",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-de",
+    "char": "得",
+    "pinyin": "de",
+    "tone": 5,
+    "meaning": "to obtain",
+    "strokes": 11,
+    "radical": "彳",
+    "radicalMeaning": "step",
+    "components": [
+      "㝵",
+      "彳"
+    ],
+    "words": [
+      "de"
+    ],
+    "zhuyin": "ㄉㄜ˙",
+    "mnemonic": "得 = 㝵、彳; the step radical (彳) anchors the meaning \"to obtain\". 㝵 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-de",
+    "language": "zh",
+    "text": "得",
+    "romanization": "de",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-de5x",
+    "char": "的",
+    "pinyin": "de",
+    "tone": 5,
+    "meaning": "really and truly",
+    "strokes": 8,
+    "radical": "白",
+    "radicalMeaning": "white",
+    "components": [
+      "勺",
+      "白"
+    ],
+    "words": [
+      "de5"
+    ],
+    "zhuyin": "ㄉㄜ˙",
+    "mnemonic": "的 = 勺、白; the white radical (白) anchors the meaning \"really and truly\". 勺 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-de5x",
+    "language": "zh",
+    "text": "的",
+    "romanization": "de",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-dian",
+    "char": "电",
+    "pinyin": "diàn",
+    "tone": 4,
+    "meaning": "electricity",
+    "strokes": 5,
+    "radical": "田",
+    "radicalMeaning": "field",
+    "components": [
+      "电"
+    ],
+    "hsk": 1,
+    "words": [
+      "dianhua"
+    ],
+    "zhuyin": "ㄉㄧㄢˋ",
+    "traditional": "電",
+    "mnemonic": "A lightning bolt falling on a field.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-dian",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-dian3",
+    "char": "点",
+    "pinyin": "diǎn",
+    "tone": 3,
+    "meaning": "to touch briefly",
+    "strokes": 9,
+    "radical": "火",
+    "radicalMeaning": "fire",
+    "components": [
+      "占",
+      "灬"
+    ],
+    "words": [
+      "dian3"
+    ],
+    "zhuyin": "ㄉㄧㄢˇ",
+    "mnemonic": "点 = 占、灬; the fire radical (火) anchors the meaning \"to touch briefly\". 占、灬 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-dian3",
+    "language": "zh",
+    "text": "点",
+    "romanization": "diǎn",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-dui",
+    "char": "对",
+    "pinyin": "duì",
+    "tone": 4,
+    "meaning": "right",
+    "strokes": 5,
+    "radical": "寸",
+    "radicalMeaning": "thumb",
+    "components": [
+      "又",
+      "寸"
+    ],
+    "words": [
+      "dui4"
+    ],
+    "zhuyin": "ㄉㄨㄟˋ",
+    "mnemonic": "对 = 又、寸; the thumb radical (寸) anchors the meaning \"right\". 又 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-dui",
+    "language": "zh",
+    "text": "对",
+    "romanization": "duì",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-duo",
+    "char": "多",
+    "pinyin": "duō",
+    "tone": 1,
+    "meaning": "many",
+    "strokes": 6,
+    "radical": "夕",
+    "radicalMeaning": "evening",
+    "components": [
+      "夕"
+    ],
+    "words": [
+      "duo1"
+    ],
+    "zhuyin": "ㄉㄨㄛ",
+    "mnemonic": "多 = 夕; the evening radical (夕) anchors the meaning \"many\".",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-duo",
+    "language": "zh",
+    "text": "多",
+    "romanization": "duō",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-da",
+    "char": "大",
+    "pinyin": "dà",
+    "tone": 4,
+    "meaning": "big",
+    "strokes": 3,
+    "radical": "大",
+    "radicalMeaning": "big",
+    "components": [
+      "人",
+      "一"
+    ],
+    "hsk": 1,
+    "words": [
+      "da4"
+    ],
+    "zhuyin": "ㄉㄚˋ",
+    "mnemonic": "A person with arms extended: something big.",
+    "similar": [
+      "太",
+      "天"
+    ],
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-da",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-dan",
+    "char": "蛋",
+    "pinyin": "dàn",
+    "tone": 4,
+    "meaning": "egg",
+    "strokes": 11,
+    "radical": "虫",
+    "radicalMeaning": "insect",
+    "components": [
+      "疋",
+      "虫"
+    ],
+    "words": [],
+    "zhuyin": "ㄉㄢˋ",
+    "mnemonic": "蛋 = 疋、虫; the insect radical (虫) anchors the meaning \"egg\". 疋 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-dan",
+    "language": "zh",
+    "text": "蛋",
+    "romanization": "dàn",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-dao",
+    "char": "到",
+    "pinyin": "dào",
+    "tone": 4,
+    "meaning": "to reach",
+    "strokes": 8,
+    "radical": "刀",
+    "radicalMeaning": "knife",
+    "components": [
+      "刂",
+      "至"
+    ],
+    "words": [
+      "dao42"
+    ],
+    "zhuyin": "ㄉㄠˋ",
+    "mnemonic": "到 = 刂、至; the knife radical (刀) anchors the meaning \"to reach\". 刂、至 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-dao",
+    "language": "zh",
+    "text": "到",
+    "romanization": "dào",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-dao4",
+    "char": "道",
+    "pinyin": "dào",
+    "tone": 4,
+    "meaning": "road",
+    "strokes": 12,
+    "radical": "邑",
+    "radicalMeaning": "town",
+    "components": [
+      "辶",
+      "首"
+    ],
+    "words": [
+      "dao43"
+    ],
+    "zhuyin": "ㄉㄠˋ",
+    "mnemonic": "道 = 辶、首; the town radical (邑) anchors the meaning \"road\". 辶、首 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-dao4",
+    "language": "zh",
+    "text": "道",
+    "romanization": "dào",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-di",
+    "char": "弟",
+    "pinyin": "dì",
+    "tone": 4,
+    "meaning": "younger brother",
+    "strokes": 7,
+    "radical": "弓",
+    "radicalMeaning": "bow",
+    "components": [
+      "丷",
+      "𢎨"
+    ],
+    "words": [],
+    "zhuyin": "ㄉㄧˋ",
+    "mnemonic": "弟 = 丷、𢎨; the bow radical (弓) anchors the meaning \"younger brother\". 丷、𢎨 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-di",
+    "language": "zh",
+    "text": "弟",
+    "romanization": "dì",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-di4",
+    "char": "第",
+    "pinyin": "dì",
+    "tone": 4,
+    "meaning": "(prefix indicating ordinal number, as in 第六[di4 liu4] 'sixth')",
+    "strokes": 11,
+    "radical": "竹",
+    "radicalMeaning": "bamboo",
+    "components": [
+      "竹",
+      "𢎨"
+    ],
+    "words": [
+      "di4"
+    ],
+    "zhuyin": "ㄉㄧˋ",
+    "mnemonic": "第 = 竹、𢎨; the bamboo radical (竹) anchors the meaning \"(prefix indicating ordin\". 𢎨 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-di4",
+    "language": "zh",
+    "text": "第",
+    "romanization": "dì",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-du",
+    "char": "读",
+    "pinyin": "dú",
+    "tone": 2,
+    "meaning": "comma",
+    "strokes": 10,
+    "radical": "谷",
+    "radicalMeaning": "valley",
+    "components": [
+      "卖",
+      "讠"
+    ],
+    "words": [
+      "du2"
+    ],
+    "zhuyin": "ㄉㄨˊ",
+    "mnemonic": "读 = 卖、讠; the valley radical (谷) anchors the meaning \"comma\". 卖、讠 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-du",
+    "language": "zh",
+    "text": "读",
+    "romanization": "dú",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-dong",
+    "char": "东",
+    "pinyin": "dōng",
+    "tone": 1,
+    "meaning": "east",
+    "strokes": 5,
+    "radical": "一",
+    "radicalMeaning": "one",
+    "components": [
+      "东"
+    ],
+    "words": [
+      "dong1"
+    ],
+    "zhuyin": "ㄉㄨㄥ",
+    "mnemonic": "东 = 东; the one radical (一) anchors the meaning \"east\". 东 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-dong",
+    "language": "zh",
+    "text": "东",
+    "romanization": "dōng",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-dou",
+    "char": "都",
+    "pinyin": "dōu",
+    "tone": 1,
+    "meaning": "capital city",
+    "strokes": 10,
+    "radical": "酉",
+    "radicalMeaning": "wine",
+    "components": [
+      "者",
+      "阝"
+    ],
+    "words": [
+      "dou1"
+    ],
+    "zhuyin": "ㄉㄡ",
+    "mnemonic": "都 = 者、阝; the wine radical (酉) anchors the meaning \"capital city\". 者、阝 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-dou",
+    "language": "zh",
+    "text": "都",
+    "romanization": "dōu",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-da3",
+    "char": "打",
+    "pinyin": "dǎ",
+    "tone": 3,
+    "meaning": "a semantically light, transitive verb that is combined with various gr",
+    "strokes": 5,
+    "radical": "手",
+    "radicalMeaning": "hand",
+    "components": [
+      "丁",
+      "扌"
+    ],
+    "words": [
+      "da3"
+    ],
+    "zhuyin": "ㄉㄚˇ",
+    "mnemonic": "打 = 丁、扌; the hand radical (手) anchors the meaning \"a semantically light, tr\". 丁、扌 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-da3",
+    "language": "zh",
+    "text": "打",
+    "romanization": "dǎ",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-fan",
+    "char": "饭",
+    "pinyin": "fàn",
+    "tone": 4,
+    "meaning": "cooked rice",
+    "strokes": 7,
+    "radical": "首",
+    "radicalMeaning": "head",
+    "components": [
+      "反",
+      "饣"
+    ],
+    "words": [
+      "fan42"
+    ],
+    "zhuyin": "ㄈㄢˋ",
+    "mnemonic": "饭 = 反、饣; the head radical (首) anchors the meaning \"cooked rice\". 反、饣 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-fan",
+    "language": "zh",
+    "text": "饭",
+    "romanization": "fàn",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-fang",
+    "char": "房",
+    "pinyin": "fáng",
+    "tone": 2,
+    "meaning": "house",
+    "strokes": 8,
+    "radical": "戶",
+    "radicalMeaning": "door",
+    "components": [
+      "户",
+      "方"
+    ],
+    "words": [],
+    "zhuyin": "ㄈㄤˊ",
+    "mnemonic": "房 = 户、方; the door radical (戶) anchors the meaning \"house\". 户、方 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-fang",
+    "language": "zh",
+    "text": "房",
+    "romanization": "fáng",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-fu",
+    "char": "服",
+    "pinyin": "fù",
+    "tone": 4,
+    "meaning": "classifier for medicine: dose",
+    "strokes": 8,
+    "radical": "月",
+    "radicalMeaning": "moon",
+    "components": [
+      "月",
+      "𠬝"
+    ],
+    "words": [
+      "fu2xx"
+    ],
+    "zhuyin": "ㄈㄨˋ",
+    "mnemonic": "服 = 月、𠬝; the moon radical (月) anchors the meaning \"classifier for medicine:\". 𠬝 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-fu",
+    "language": "zh",
+    "text": "服",
+    "romanization": "fù",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-fei1x",
+    "char": "非",
+    "pinyin": "fēi",
+    "tone": 1,
+    "meaning": "to not be",
+    "strokes": 8,
+    "radical": "面",
+    "radicalMeaning": "face",
+    "components": [
+      "非"
+    ],
+    "words": [
+      "fei1"
+    ],
+    "zhuyin": "ㄈㄟ",
+    "mnemonic": "非 = 非; the face radical (面) anchors the meaning \"to not be\". 非 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-fei1x",
+    "language": "zh",
+    "text": "非",
+    "romanization": "fēi",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-fei",
+    "char": "飞",
+    "pinyin": "fēi",
+    "tone": 1,
+    "meaning": "to fly",
+    "strokes": 3,
+    "radical": "食",
+    "radicalMeaning": "eat",
+    "components": [
+      "飞"
+    ],
+    "words": [
+      "fei12"
+    ],
+    "zhuyin": "ㄈㄟ",
+    "mnemonic": "飞 = 飞; the eat radical (食) anchors the meaning \"to fly\". 飞 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-fei",
+    "language": "zh",
+    "text": "飞",
+    "romanization": "fēi",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-fen",
+    "char": "分",
+    "pinyin": "fēn",
+    "tone": 1,
+    "meaning": "part",
+    "strokes": 4,
+    "radical": "刀",
+    "radicalMeaning": "knife",
+    "components": [
+      "八",
+      "刀"
+    ],
+    "words": [
+      "fen1"
+    ],
+    "zhuyin": "ㄈㄣ",
+    "mnemonic": "分 = 八、刀; the knife radical (刀) anchors the meaning \"part\". 八 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-fen",
+    "language": "zh",
+    "text": "分",
+    "romanization": "fēn",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-gui",
+    "char": "贵",
+    "pinyin": "guì",
+    "tone": 4,
+    "meaning": "expensive",
+    "strokes": 9,
+    "radical": "赤",
+    "radicalMeaning": "red",
+    "components": [
+      "贝",
+      "𠀐"
+    ],
+    "words": [
+      "gui4"
+    ],
+    "zhuyin": "ㄍㄨㄟˋ",
+    "mnemonic": "贵 = 贝、𠀐; the red radical (赤) anchors the meaning \"expensive\". 贝、𠀐 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-gui",
+    "language": "zh",
+    "text": "贵",
+    "romanization": "guì",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-guo",
+    "char": "国",
+    "pinyin": "guó",
+    "tone": 2,
+    "meaning": "country",
+    "strokes": 8,
+    "radical": "囗",
+    "radicalMeaning": "enclosure",
+    "components": [
+      "囗",
+      "玉"
+    ],
+    "hsk": 1,
+    "words": [
+      "zhongguo"
+    ],
+    "zhuyin": "ㄍㄨㄛˊ",
+    "traditional": "國",
+    "mnemonic": "Jade (wealth) within a wall: a country.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-guo",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-guan",
+    "char": "关",
+    "pinyin": "guān",
+    "tone": 1,
+    "meaning": "mountain pass",
+    "strokes": 6,
+    "radical": "八",
+    "radicalMeaning": "eight",
+    "components": [
+      "丷",
+      "天"
+    ],
+    "words": [
+      "guan1"
+    ],
+    "zhuyin": "ㄍㄨㄢ",
+    "mnemonic": "关 = 丷、天; the eight radical (八) anchors the meaning \"mountain pass\". 丷、天 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-guan",
+    "language": "zh",
+    "text": "关",
+    "romanization": "guān",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-guo3",
+    "char": "果",
+    "pinyin": "guǒ",
+    "tone": 3,
+    "meaning": "fruit",
+    "strokes": 8,
+    "radical": "木",
+    "radicalMeaning": "tree",
+    "components": [
+      "日",
+      "木"
+    ],
+    "words": [],
+    "zhuyin": "ㄍㄨㄛˇ",
+    "mnemonic": "果 = 日、木; the tree radical (木) anchors the meaning \"fruit\". 日 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-guo3",
+    "language": "zh",
+    "text": "果",
+    "romanization": "guǒ",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-ge4",
+    "char": "个",
+    "pinyin": "gè",
+    "tone": 4,
+    "meaning": "(classifier used before a noun that has no specific classifier)",
+    "strokes": 3,
+    "radical": "丨",
+    "radicalMeaning": "line",
+    "components": [
+      "丨",
+      "人"
+    ],
+    "words": [
+      "ge4"
+    ],
+    "zhuyin": "ㄍㄜˋ",
+    "mnemonic": "个 = 丨、人; the line radical (丨) anchors the meaning \"(classifier used before \". 人 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-ge4",
+    "language": "zh",
+    "text": "个",
+    "romanization": "gè",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-gao",
+    "char": "高",
+    "pinyin": "gāo",
+    "tone": 1,
+    "meaning": "high",
+    "strokes": 10,
+    "radical": "髟",
+    "radicalMeaning": "hair",
+    "components": [
+      "亠",
+      "冋",
+      "口"
+    ],
+    "words": [
+      "gao1"
+    ],
+    "zhuyin": "ㄍㄠ",
+    "mnemonic": "高 = 亠、冋、口; the hair radical (髟) anchors the meaning \"high\". 亠、冋 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-gao",
+    "language": "zh",
+    "text": "高",
+    "romanization": "gāo",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-ge",
+    "char": "哥",
+    "pinyin": "gē",
+    "tone": 1,
+    "meaning": "elder brother",
+    "strokes": 10,
+    "radical": "口",
+    "radicalMeaning": "mouth",
+    "components": [
+      "可"
+    ],
+    "words": [],
+    "zhuyin": "ㄍㄜ",
+    "mnemonic": "哥 = 可; the mouth radical (口) anchors the meaning \"elder brother\". 可 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-ge",
+    "language": "zh",
+    "text": "哥",
+    "romanization": "gē",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-ge1",
+    "char": "歌",
+    "pinyin": "gē",
+    "tone": 1,
+    "meaning": "song (CL:首[shou3],支[zhi1])",
+    "strokes": 14,
+    "radical": "欠",
+    "radicalMeaning": "lack",
+    "components": [
+      "哥",
+      "欠"
+    ],
+    "words": [
+      "ge12"
+    ],
+    "zhuyin": "ㄍㄜ",
+    "mnemonic": "歌 = 哥、欠; the lack radical (欠) anchors the meaning \"song (CL:首[shou3],支[zhi1\". 哥 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-ge1",
+    "language": "zh",
+    "text": "歌",
+    "romanization": "gē",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-gei",
+    "char": "给",
+    "pinyin": "gěi",
+    "tone": 3,
+    "meaning": "to supply",
+    "strokes": 9,
+    "radical": "糸",
+    "radicalMeaning": "silk",
+    "components": [
+      "合",
+      "纟"
+    ],
+    "words": [
+      "gei3"
+    ],
+    "zhuyin": "ㄍㄟˇ",
+    "mnemonic": "给 = 合、纟; the silk radical (糸) anchors the meaning \"to supply\". 合、纟 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-gei",
+    "language": "zh",
+    "text": "给",
+    "romanization": "gěi",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-gong1",
+    "char": "公",
+    "pinyin": "gōng",
+    "tone": 1,
+    "meaning": "public",
+    "strokes": 4,
+    "radical": "八",
+    "radicalMeaning": "eight",
+    "components": [
+      "八",
+      "厶"
+    ],
+    "words": [
+      "gong12"
+    ],
+    "zhuyin": "ㄍㄨㄥ",
+    "mnemonic": "公 = 八、厶; the eight radical (八) anchors the meaning \"public\". 厶 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-gong1",
+    "language": "zh",
+    "text": "公",
+    "romanization": "gōng",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-gong",
+    "char": "工",
+    "pinyin": "gōng",
+    "tone": 1,
+    "meaning": "work",
+    "strokes": 3,
+    "radical": "工",
+    "radicalMeaning": "work",
+    "components": [
+      "工"
+    ],
+    "words": [],
+    "zhuyin": "ㄍㄨㄥ",
+    "mnemonic": "工 = 工; the work radical (工) anchors the meaning \"work\".",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-gong",
+    "language": "zh",
+    "text": "工",
+    "romanization": "gōng",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-gou",
+    "char": "狗",
+    "pinyin": "gǒu",
+    "tone": 3,
+    "meaning": "dog",
+    "strokes": 8,
+    "radical": "犬",
+    "radicalMeaning": "dog",
+    "components": [
+      "句",
+      "犭"
+    ],
+    "words": [
+      "gou3"
+    ],
+    "zhuyin": "ㄍㄡˇ",
+    "mnemonic": "狗 = 句、犭; the dog radical (犬) anchors the meaning \"dog\". 句、犭 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-gou",
+    "language": "zh",
+    "text": "狗",
+    "romanization": "gǒu",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-hua",
+    "char": "话",
+    "pinyin": "huà",
+    "tone": 4,
+    "meaning": "word, speech",
+    "strokes": 8,
+    "radical": "讠",
+    "radicalMeaning": "speech",
+    "components": [
+      "讠",
+      "舌"
+    ],
+    "hsk": 1,
+    "words": [
+      "dianhua"
+    ],
+    "zhuyin": "ㄏㄨㄚˋ",
+    "traditional": "話",
+    "mnemonic": "Word + tongue: speech.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-hua",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-hui4",
+    "char": "会",
+    "pinyin": "huì",
+    "tone": 4,
+    "meaning": "(bound form) to reckon accounts",
+    "strokes": 6,
+    "radical": "人",
+    "radicalMeaning": "man",
+    "components": [
+      "云",
+      "人"
+    ],
+    "words": [
+      "hui42"
+    ],
+    "zhuyin": "ㄏㄨㄟˋ",
+    "mnemonic": "会 = 云、人; the man radical (人) anchors the meaning \"(bound form) to reckon a\". 云 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-hui4",
+    "language": "zh",
+    "text": "会",
+    "romanization": "huì",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-hui",
+    "char": "回",
+    "pinyin": "huí",
+    "tone": 2,
+    "meaning": "to circle",
+    "strokes": 6,
+    "radical": "囗",
+    "radicalMeaning": "enclosure",
+    "components": [
+      "口",
+      "囗"
+    ],
+    "words": [
+      "hui2"
+    ],
+    "zhuyin": "ㄏㄨㄟˊ",
+    "mnemonic": "回 = 口、囗; the enclosure radical (囗) anchors the meaning \"to circle\". 口 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-hui",
+    "language": "zh",
+    "text": "回",
+    "romanization": "huí",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-huan",
+    "char": "欢",
+    "pinyin": "huān",
+    "tone": 1,
+    "meaning": "joyous",
+    "strokes": 6,
+    "radical": "欠",
+    "radicalMeaning": "lack",
+    "components": [
+      "又",
+      "欠"
+    ],
+    "words": [],
+    "zhuyin": "ㄏㄨㄢ",
+    "mnemonic": "欢 = 又、欠; the lack radical (欠) anchors the meaning \"joyous\". 又 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-huan",
+    "language": "zh",
+    "text": "欢",
+    "romanization": "huān",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-huo",
+    "char": "火",
+    "pinyin": "huǒ",
+    "tone": 3,
+    "meaning": "fire",
+    "strokes": 4,
+    "radical": "火",
+    "radicalMeaning": "fire",
+    "components": [
+      "火"
+    ],
+    "hsk": 1,
+    "words": [],
+    "zhuyin": "ㄏㄨㄛˇ",
+    "mnemonic": "A flame with sparks on the sides.",
+    "similar": [
+      "人"
+    ],
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-huo",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-han",
+    "char": "汉",
+    "pinyin": "hàn",
+    "tone": 4,
+    "meaning": "man",
+    "strokes": 5,
+    "radical": "水",
+    "radicalMeaning": "water",
+    "components": [
+      "又",
+      "氵"
+    ],
+    "words": [],
+    "zhuyin": "ㄏㄢˋ",
+    "mnemonic": "汉 = 又、氵; the water radical (水) anchors the meaning \"man\". 又、氵 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-han",
+    "language": "zh",
+    "text": "汉",
+    "romanization": "hàn",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-hao4",
+    "char": "号",
+    "pinyin": "hào",
+    "tone": 4,
+    "meaning": "roar",
+    "strokes": 5,
+    "radical": "口",
+    "radicalMeaning": "mouth",
+    "components": [
+      "丂",
+      "口"
+    ],
+    "words": [
+      "hao4"
+    ],
+    "zhuyin": "ㄏㄠˋ",
+    "mnemonic": "号 = 丂、口; the mouth radical (口) anchors the meaning \"roar\". 丂 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-hao4",
+    "language": "zh",
+    "text": "号",
+    "romanization": "hào",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-hai2",
+    "char": "孩",
+    "pinyin": "hái",
+    "tone": 2,
+    "meaning": "(bound form) child",
+    "strokes": 9,
+    "radical": "子",
+    "radicalMeaning": "child",
+    "components": [
+      "亥",
+      "子"
+    ],
+    "words": [],
+    "zhuyin": "ㄏㄞˊ",
+    "mnemonic": "孩 = 亥、子; the child radical (子) anchors the meaning \"(bound form) child\". 亥 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-hai2",
+    "language": "zh",
+    "text": "孩",
+    "romanization": "hái",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-hai",
+    "char": "还",
+    "pinyin": "hái",
+    "tone": 2,
+    "meaning": "still",
+    "strokes": 7,
+    "radical": "邑",
+    "radicalMeaning": "town",
+    "components": [
+      "不",
+      "辶"
+    ],
+    "words": [
+      "hai2"
+    ],
+    "zhuyin": "ㄏㄞˊ",
+    "mnemonic": "还 = 不、辶; the town radical (邑) anchors the meaning \"still\". 不、辶 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-hai",
+    "language": "zh",
+    "text": "还",
+    "romanization": "hái",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-he2",
+    "char": "和",
+    "pinyin": "hé",
+    "tone": 2,
+    "meaning": "to compose a poem in reply (to sb's poem) using the same rhyme sequenc",
+    "strokes": 8,
+    "radical": "口",
+    "radicalMeaning": "mouth",
+    "components": [
+      "口",
+      "禾"
+    ],
+    "words": [
+      "he2"
+    ],
+    "zhuyin": "ㄏㄜˊ",
+    "mnemonic": "和 = 口、禾; the mouth radical (口) anchors the meaning \"to compose a poem in rep\". 禾 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-he2",
+    "language": "zh",
+    "text": "和",
+    "romanization": "hé",
+    "traditional": "龢",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-hou4",
+    "char": "候",
+    "pinyin": "hòu",
+    "tone": 4,
+    "meaning": "to wait",
+    "strokes": 10,
+    "radical": "人",
+    "radicalMeaning": "man",
+    "components": [
+      "ユ",
+      "丨",
+      "亻",
+      "矢"
+    ],
+    "words": [],
+    "zhuyin": "ㄏㄡˋ",
+    "mnemonic": "候 = ユ、丨、亻、矢; the man radical (人) anchors the meaning \"to wait\". ユ、丨 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-hou4",
+    "language": "zh",
+    "text": "候",
+    "romanization": "hòu",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-hou",
+    "char": "后",
+    "pinyin": "hòu",
+    "tone": 4,
+    "meaning": "empress",
+    "strokes": 6,
+    "radical": "口",
+    "radicalMeaning": "mouth",
+    "components": [
+      "口",
+      "𠂋"
+    ],
+    "words": [
+      "hou4"
+    ],
+    "zhuyin": "ㄏㄡˋ",
+    "mnemonic": "后 = 口、𠂋; the mouth radical (口) anchors the meaning \"empress\". 𠂋 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-hou",
+    "language": "zh",
+    "text": "后",
+    "romanization": "hòu",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-he",
+    "char": "喝",
+    "pinyin": "hē",
+    "tone": 1,
+    "meaning": "to drink",
+    "strokes": 12,
+    "radical": "口",
+    "radicalMeaning": "mouth",
+    "components": [
+      "口",
+      "曷"
+    ],
+    "hsk": 1,
+    "words": [
+      "he1"
+    ],
+    "zhuyin": "ㄏㄜ",
+    "mnemonic": "The mouth next to 曷: to drink.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-he",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-hen",
+    "char": "很",
+    "pinyin": "hěn",
+    "tone": 3,
+    "meaning": "very",
+    "strokes": 9,
+    "radical": "彳",
+    "radicalMeaning": "step",
+    "components": [
+      "彳",
+      "艮"
+    ],
+    "words": [
+      "hen3"
+    ],
+    "zhuyin": "ㄏㄣˇ",
+    "mnemonic": "很 = 彳、艮; the step radical (彳) anchors the meaning \"very\". 艮 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-hen",
+    "language": "zh",
+    "text": "很",
+    "romanization": "hěn",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-hao",
+    "char": "好",
+    "pinyin": "hǎo",
+    "tone": 3,
+    "meaning": "good",
+    "strokes": 6,
+    "radical": "女",
+    "radicalMeaning": "woman",
+    "components": [
+      "女",
+      "子"
+    ],
+    "hsk": 1,
+    "words": [
+      "hao3"
+    ],
+    "zhuyin": "ㄏㄠˇ",
+    "mnemonic": "A mother with her child: goodness.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-hao",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-jian4x",
+    "char": "件",
+    "pinyin": "jiàn",
+    "tone": 4,
+    "meaning": "item",
+    "strokes": 6,
+    "radical": "人",
+    "radicalMeaning": "man",
+    "components": [
+      "亻",
+      "牛"
+    ],
+    "words": [
+      "jian43"
+    ],
+    "zhuyin": "ㄐㄧㄢˋ",
+    "mnemonic": "件 = 亻、牛; the man radical (人) anchors the meaning \"item\". 亻、牛 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-jian4x",
+    "language": "zh",
+    "text": "件",
+    "romanization": "jiàn",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-jian4",
+    "char": "见",
+    "pinyin": "jiàn",
+    "tone": 4,
+    "meaning": "to appear",
+    "strokes": 4,
+    "radical": "見",
+    "radicalMeaning": "see",
+    "components": [
+      "见"
+    ],
+    "words": [
+      "jian42"
+    ],
+    "zhuyin": "ㄐㄧㄢˋ",
+    "mnemonic": "见 = 见; the see radical (見) anchors the meaning \"to appear\". 见 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-jian4",
+    "language": "zh",
+    "text": "见",
+    "romanization": "jiàn",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-jiao",
+    "char": "叫",
+    "pinyin": "jiào",
+    "tone": 4,
+    "meaning": "to shout",
+    "strokes": 5,
+    "radical": "口",
+    "radicalMeaning": "mouth",
+    "components": [
+      "丩",
+      "口"
+    ],
+    "words": [
+      "jiao42"
+    ],
+    "zhuyin": "ㄐㄧㄠˋ",
+    "mnemonic": "叫 = 丩、口; the mouth radical (口) anchors the meaning \"to shout\". 丩 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-jiao",
+    "language": "zh",
+    "text": "叫",
+    "romanization": "jiào",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-xiao4x",
+    "char": "校",
+    "pinyin": "jiào",
+    "tone": 4,
+    "meaning": "to check",
+    "strokes": 10,
+    "radical": "木",
+    "radicalMeaning": "tree",
+    "components": [
+      "交",
+      "木"
+    ],
+    "words": [],
+    "zhuyin": "ㄐㄧㄠˋ",
+    "mnemonic": "校 = 交、木; the tree radical (木) anchors the meaning \"to check\". 交 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-xiao4x",
+    "language": "zh",
+    "text": "校",
+    "romanization": "jiào",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-jia",
+    "char": "家",
+    "pinyin": "jiā",
+    "tone": 1,
+    "meaning": "home, house",
+    "strokes": 10,
+    "radical": "宀",
+    "radicalMeaning": "roof",
+    "components": [
+      "宀",
+      "豕"
+    ],
+    "hsk": 1,
+    "words": [
+      "jia1"
+    ],
+    "zhuyin": "ㄐㄧㄚ",
+    "mnemonic": "A pig under a roof: the traditional home.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-jia",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-jian",
+    "char": "间",
+    "pinyin": "jiān",
+    "tone": 1,
+    "meaning": "between",
+    "strokes": 7,
+    "radical": "阜",
+    "radicalMeaning": "mound",
+    "components": [
+      "日",
+      "门"
+    ],
+    "words": [
+      "jian12"
+    ],
+    "zhuyin": "ㄐㄧㄢ",
+    "mnemonic": "间 = 日、门; the mound radical (阜) anchors the meaning \"between\". 日、门 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-jian",
+    "language": "zh",
+    "text": "间",
+    "romanization": "jiān",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-jie",
+    "char": "姐",
+    "pinyin": "jiě",
+    "tone": 3,
+    "meaning": "older sister",
+    "strokes": 8,
+    "radical": "女",
+    "radicalMeaning": "woman",
+    "components": [
+      "且",
+      "女"
+    ],
+    "words": [],
+    "zhuyin": "ㄐㄧㄝˇ",
+    "mnemonic": "姐 = 且、女; the woman radical (女) anchors the meaning \"older sister\". 且 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-jie",
+    "language": "zh",
+    "text": "姐",
+    "romanization": "jiě",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-jiu",
+    "char": "九",
+    "pinyin": "jiǔ",
+    "tone": 3,
+    "meaning": "nine",
+    "strokes": 2,
+    "radical": "乙",
+    "radicalMeaning": "second",
+    "components": [
+      "九"
+    ],
+    "words": [
+      "jiu3"
+    ],
+    "zhuyin": "ㄐㄧㄡˇ",
+    "mnemonic": "九 = 九; the second radical (乙) anchors the meaning \"nine\". 九 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-jiu",
+    "language": "zh",
+    "text": "九",
+    "romanization": "jiǔ",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-jue",
+    "char": "觉",
+    "pinyin": "jué",
+    "tone": 2,
+    "meaning": "a nap",
+    "strokes": 9,
+    "radical": "見",
+    "radicalMeaning": "see",
+    "components": [
+      "冖",
+      "见",
+      "𭕄"
+    ],
+    "words": [],
+    "zhuyin": "ㄐㄩㄝˊ",
+    "mnemonic": "觉 = 冖、见、𭕄; the see radical (見) anchors the meaning \"a nap\". 冖、见 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-jue",
+    "language": "zh",
+    "text": "觉",
+    "romanization": "jué",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-xi4",
+    "char": "系",
+    "pinyin": "jì",
+    "tone": 4,
+    "meaning": "to tie",
+    "strokes": 7,
+    "radical": "糸",
+    "radicalMeaning": "silk",
+    "components": [
+      "丿",
+      "糸"
+    ],
+    "words": [
+      "xi4"
+    ],
+    "zhuyin": "ㄐㄧˋ",
+    "mnemonic": "系 = 丿、糸; the silk radical (糸) anchors the meaning \"to tie\". 丿 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-xi4",
+    "language": "zh",
+    "text": "系",
+    "romanization": "jì",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-ji",
+    "char": "机",
+    "pinyin": "jī",
+    "tone": 1,
+    "meaning": "(bound form) machine",
+    "strokes": 6,
+    "radical": "木",
+    "radicalMeaning": "tree",
+    "components": [
+      "几",
+      "木"
+    ],
+    "words": [],
+    "zhuyin": "ㄐㄧ",
+    "mnemonic": "机 = 几、木; the tree radical (木) anchors the meaning \"(bound form) machine\". 几 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-ji",
+    "language": "zh",
+    "text": "机",
+    "romanization": "jī",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-ji1",
+    "char": "鸡",
+    "pinyin": "jī",
+    "tone": 1,
+    "meaning": "fowl",
+    "strokes": 7,
+    "radical": "鹵",
+    "radicalMeaning": "salt",
+    "components": [
+      "又",
+      "鸟"
+    ],
+    "words": [
+      "ji12"
+    ],
+    "zhuyin": "ㄐㄧ",
+    "mnemonic": "鸡 = 又、鸟; the salt radical (鹵) anchors the meaning \"fowl\". 又、鸟 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-ji1",
+    "language": "zh",
+    "text": "鸡",
+    "romanization": "jī",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-jin",
+    "char": "今",
+    "pinyin": "jīn",
+    "tone": 1,
+    "meaning": "now",
+    "strokes": 4,
+    "radical": "人",
+    "radicalMeaning": "man",
+    "components": [
+      "㇇",
+      "亽"
+    ],
+    "words": [],
+    "zhuyin": "ㄐㄧㄣ",
+    "mnemonic": "今 = ㇇、亽; the man radical (人) anchors the meaning \"now\". ㇇、亽 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-jin",
+    "language": "zh",
+    "text": "今",
+    "romanization": "jīn",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-ji3x",
+    "char": "几",
+    "pinyin": "jǐ",
+    "tone": 3,
+    "meaning": "how much",
+    "strokes": 2,
+    "radical": "几",
+    "radicalMeaning": "table",
+    "components": [
+      "几"
+    ],
+    "words": [
+      "ji3"
+    ],
+    "zhuyin": "ㄐㄧˇ",
+    "mnemonic": "几 = 几; the table radical (几) anchors the meaning \"how much\".",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-ji3x",
+    "language": "zh",
+    "text": "几",
+    "romanization": "jǐ",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-kuai",
+    "char": "块",
+    "pinyin": "kuài",
+    "tone": 4,
+    "meaning": "lump",
+    "strokes": 7,
+    "radical": "土",
+    "radicalMeaning": "earth",
+    "components": [
+      "土",
+      "夬"
+    ],
+    "words": [
+      "kuai4"
+    ],
+    "zhuyin": "ㄎㄨㄞˋ",
+    "mnemonic": "块 = 土、夬; the earth radical (土) anchors the meaning \"lump\". 夬 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-kuai",
+    "language": "zh",
+    "text": "块",
+    "romanization": "kuài",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-kan",
+    "char": "看",
+    "pinyin": "kàn",
+    "tone": 4,
+    "meaning": "to look",
+    "strokes": 9,
+    "radical": "目",
+    "radicalMeaning": "eye",
+    "components": [
+      "手",
+      "目"
+    ],
+    "hsk": 1,
+    "words": [
+      "kan4"
+    ],
+    "zhuyin": "ㄎㄢˋ",
+    "mnemonic": "A hand over the eye, like a visor: to look into the distance.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-kan",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-ke4",
+    "char": "客",
+    "pinyin": "kè",
+    "tone": 4,
+    "meaning": "customer",
+    "strokes": 9,
+    "radical": "宀",
+    "radicalMeaning": "roof",
+    "components": [
+      "各",
+      "宀"
+    ],
+    "words": [],
+    "zhuyin": "ㄎㄜˋ",
+    "mnemonic": "客 = 各、宀; the roof radical (宀) anchors the meaning \"customer\". 各 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-ke4",
+    "language": "zh",
+    "text": "客",
+    "romanization": "kè",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-ke4x",
+    "char": "课",
+    "pinyin": "kè",
+    "tone": 4,
+    "meaning": "subject",
+    "strokes": 10,
+    "radical": "谷",
+    "radicalMeaning": "valley",
+    "components": [
+      "果",
+      "讠"
+    ],
+    "words": [
+      "ke4"
+    ],
+    "zhuyin": "ㄎㄜˋ",
+    "mnemonic": "课 = 果、讠; the valley radical (谷) anchors the meaning \"subject\". 果、讠 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-ke4x",
+    "language": "zh",
+    "text": "课",
+    "romanization": "kè",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-kai",
+    "char": "开",
+    "pinyin": "kāi",
+    "tone": 1,
+    "meaning": "to open (transitive or intransitive)",
+    "strokes": 4,
+    "radical": "廾",
+    "radicalMeaning": "two_hands",
+    "components": [
+      "一",
+      "廾"
+    ],
+    "words": [
+      "kai1"
+    ],
+    "zhuyin": "ㄎㄞ",
+    "mnemonic": "开 = 一、廾; the two_hands radical (廾) anchors the meaning \"to open (transitive or i\". 一 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-kai",
+    "language": "zh",
+    "text": "开",
+    "romanization": "kāi",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-ke",
+    "char": "可",
+    "pinyin": "kě",
+    "tone": 3,
+    "meaning": "(prefix) can",
+    "strokes": 5,
+    "radical": "口",
+    "radicalMeaning": "mouth",
+    "components": [
+      "丁",
+      "口"
+    ],
+    "words": [
+      "ke3"
+    ],
+    "zhuyin": "ㄎㄜˇ",
+    "mnemonic": "可 = 丁、口; the mouth radical (口) anchors the meaning \"(prefix) can\". 丁 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-ke",
+    "language": "zh",
+    "text": "可",
+    "romanization": "kě",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-kou",
+    "char": "口",
+    "pinyin": "kǒu",
+    "tone": 3,
+    "meaning": "mouth",
+    "strokes": 3,
+    "radical": "口",
+    "radicalMeaning": "mouth",
+    "components": [
+      "口"
+    ],
+    "hsk": 1,
+    "words": [],
+    "zhuyin": "ㄎㄡˇ",
+    "mnemonic": "An open mouth, square and simple.",
+    "similar": [
+      "日",
+      "囗"
+    ],
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-kou",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-le",
+    "char": "了",
+    "pinyin": "le",
+    "tone": 5,
+    "meaning": "(completed action marker)",
+    "strokes": 2,
+    "radical": "亅",
+    "radicalMeaning": "hook",
+    "components": [
+      "乛",
+      "亅"
+    ],
+    "words": [
+      "le5"
+    ],
+    "zhuyin": "ㄌㄜ˙",
+    "mnemonic": "了 = 乛、亅; the hook radical (亅) anchors the meaning \"(completed action marker\". 乛 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-le",
+    "language": "zh",
+    "text": "了",
+    "romanization": "le",
+    "traditional": "瞭",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-liang4",
+    "char": "亮",
+    "pinyin": "liàng",
+    "tone": 4,
+    "meaning": "bright",
+    "strokes": 9,
+    "radical": "亠",
+    "radicalMeaning": "lid",
+    "components": [
+      "亠",
+      "冖",
+      "几",
+      "口"
+    ],
+    "words": [
+      "liang43"
+    ],
+    "zhuyin": "ㄌㄧㄤˋ",
+    "mnemonic": "亮 = 亠、冖、几、口; the lid radical (亠) anchors the meaning \"bright\". 冖、几 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-liang4",
+    "language": "zh",
+    "text": "亮",
+    "romanization": "liàng",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-liu",
+    "char": "六",
+    "pinyin": "liù",
+    "tone": 4,
+    "meaning": "six",
+    "strokes": 4,
+    "radical": "八",
+    "radicalMeaning": "eight",
+    "components": [
+      "亠",
+      "八"
+    ],
+    "words": [
+      "liu4"
+    ],
+    "zhuyin": "ㄌㄧㄡˋ",
+    "mnemonic": "六 = 亠、八; the eight radical (八) anchors the meaning \"six\". 亠 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-liu",
+    "language": "zh",
+    "text": "六",
+    "romanization": "liù",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-liang",
+    "char": "两",
+    "pinyin": "liǎng",
+    "tone": 3,
+    "meaning": "two",
+    "strokes": 7,
+    "radical": "一",
+    "radicalMeaning": "one",
+    "components": [
+      "一",
+      "从",
+      "冂"
+    ],
+    "words": [
+      "liang3"
+    ],
+    "zhuyin": "ㄌㄧㄤˇ",
+    "mnemonic": "两 = 一、从、冂; the one radical (一) anchors the meaning \"two\". 从、冂 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-liang",
+    "language": "zh",
+    "text": "两",
+    "romanization": "liǎng",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-lai",
+    "char": "来",
+    "pinyin": "lái",
+    "tone": 2,
+    "meaning": "to come",
+    "strokes": 7,
+    "radical": "木",
+    "radicalMeaning": "tree",
+    "components": [
+      "来"
+    ],
+    "hsk": 1,
+    "words": [
+      "lai2"
+    ],
+    "zhuyin": "ㄌㄞˊ",
+    "traditional": "來",
+    "mnemonic": "The wheat that arrives: to come.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-lai",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-ling",
+    "char": "零",
+    "pinyin": "líng",
+    "tone": 2,
+    "meaning": "zero",
+    "strokes": 13,
+    "radical": "靑",
+    "radicalMeaning": "blue",
+    "components": [
+      "令",
+      "雨"
+    ],
+    "words": [
+      "ling2"
+    ],
+    "zhuyin": "ㄌㄧㄥˊ",
+    "mnemonic": "零 = 令、雨; the blue radical (靑) anchors the meaning \"zero\". 令、雨 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-ling",
+    "language": "zh",
+    "text": "零",
+    "romanization": "líng",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-leng",
+    "char": "冷",
+    "pinyin": "lěng",
+    "tone": 3,
+    "meaning": "cold",
+    "strokes": 7,
+    "radical": "冫",
+    "radicalMeaning": "ice",
+    "components": [
+      "令",
+      "冫"
+    ],
+    "words": [
+      "leng3"
+    ],
+    "zhuyin": "ㄌㄥˇ",
+    "mnemonic": "冷 = 令、冫; the ice radical (冫) anchors the meaning \"cold\". 令 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-leng",
+    "language": "zh",
+    "text": "冷",
+    "romanization": "lěng",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-lao",
+    "char": "老",
+    "pinyin": "lǎo",
+    "tone": 3,
+    "meaning": "old",
+    "strokes": 6,
+    "radical": "老",
+    "radicalMeaning": "old",
+    "components": [
+      "老"
+    ],
+    "hsk": 1,
+    "words": [
+      "laoshi"
+    ],
+    "zhuyin": "ㄌㄠˇ",
+    "mnemonic": "An old man with a cane.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-lao",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-li",
+    "char": "里",
+    "pinyin": "lǐ",
+    "tone": 3,
+    "meaning": "Li (surname)",
+    "strokes": 7,
+    "radical": "金",
+    "radicalMeaning": "gold",
+    "components": [
+      "一",
+      "甲"
+    ],
+    "words": [
+      "li32"
+    ],
+    "zhuyin": "ㄌㄧˇ",
+    "mnemonic": "里 = 一、甲; the gold radical (金) anchors the meaning \"Li (surname)\". 一、甲 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-li",
+    "language": "zh",
+    "text": "里",
+    "romanization": "lǐ",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-men5",
+    "char": "们",
+    "pinyin": "men",
+    "tone": 5,
+    "meaning": "plural marker for pronouns, and nouns referring to individuals",
+    "strokes": 5,
+    "radical": "人",
+    "radicalMeaning": "man",
+    "components": [
+      "亻",
+      "门"
+    ],
+    "words": [
+      "men2"
+    ],
+    "zhuyin": "ㄇㄣ˙",
+    "mnemonic": "们 = 亻、门; the man radical (人) anchors the meaning \"plural marker for pronou\". 亻、门 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-men5",
+    "language": "zh",
+    "text": "们",
+    "romanization": "men",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-mian",
+    "char": "面",
+    "pinyin": "miàn",
+    "tone": 4,
+    "meaning": "face",
+    "strokes": 9,
+    "radical": "革",
+    "radicalMeaning": "leather",
+    "components": [
+      "丆",
+      "囬"
+    ],
+    "words": [
+      "mian"
+    ],
+    "zhuyin": "ㄇㄧㄢˋ",
+    "mnemonic": "面 = 丆、囬; the leather radical (革) anchors the meaning \"face\". 丆、囬 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-mian",
+    "language": "zh",
+    "text": "面",
+    "romanization": "miàn",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-mai4",
+    "char": "卖",
+    "pinyin": "mài",
+    "tone": 4,
+    "meaning": "to sell",
+    "strokes": 8,
+    "radical": "十",
+    "radicalMeaning": "ten",
+    "components": [
+      "十",
+      "买"
+    ],
+    "hsk": 1,
+    "words": [],
+    "zhuyin": "ㄇㄞˋ",
+    "traditional": "賣",
+    "mnemonic": "The opposite of 买: what is left to hand out.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-mai4",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-me",
+    "char": "么",
+    "pinyin": "má",
+    "tone": 2,
+    "meaning": "exclamatory final particle",
+    "strokes": 3,
+    "radical": "丿",
+    "radicalMeaning": "slash",
+    "components": [
+      "丿",
+      "厶"
+    ],
+    "words": [],
+    "zhuyin": "ㄇㄚˊ",
+    "mnemonic": "么 = 丿、厶; the slash radical (丿) anchors the meaning \"exclamatory final partic\". 厶 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-me",
+    "language": "zh",
+    "text": "么",
+    "romanization": "má",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-ma2",
+    "char": "吗",
+    "pinyin": "má",
+    "tone": 2,
+    "meaning": "(coll.) what?",
+    "strokes": 6,
+    "radical": "口",
+    "radicalMeaning": "mouth",
+    "components": [
+      "口",
+      "马"
+    ],
+    "words": [
+      "ma5"
+    ],
+    "zhuyin": "ㄇㄚˊ",
+    "mnemonic": "吗 = 口、马; the mouth radical (口) anchors the meaning \"(coll.) what?\". 马 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-ma2",
+    "language": "zh",
+    "text": "吗",
+    "romanization": "má",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-mang",
+    "char": "忙",
+    "pinyin": "máng",
+    "tone": 2,
+    "meaning": "busy",
+    "strokes": 6,
+    "radical": "心",
+    "radicalMeaning": "heart",
+    "components": [
+      "亡",
+      "忄"
+    ],
+    "words": [
+      "mang2"
+    ],
+    "zhuyin": "ㄇㄤˊ",
+    "mnemonic": "忙 = 亡、忄; the heart radical (心) anchors the meaning \"busy\". 亡、忄 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-mang",
+    "language": "zh",
+    "text": "忙",
+    "romanization": "máng",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-mei4",
+    "char": "妹",
+    "pinyin": "mèi",
+    "tone": 4,
+    "meaning": "younger sister",
+    "strokes": 8,
+    "radical": "女",
+    "radicalMeaning": "woman",
+    "components": [
+      "女",
+      "未"
+    ],
+    "words": [],
+    "zhuyin": "ㄇㄟˋ",
+    "mnemonic": "妹 = 女、未; the woman radical (女) anchors the meaning \"younger sister\". 未 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-mei4",
+    "language": "zh",
+    "text": "妹",
+    "romanization": "mèi",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-mei",
+    "char": "没",
+    "pinyin": "méi",
+    "tone": 2,
+    "meaning": "drowned",
+    "strokes": 7,
+    "radical": "水",
+    "radicalMeaning": "water",
+    "components": [
+      "殳",
+      "氵"
+    ],
+    "words": [
+      "mei2"
+    ],
+    "zhuyin": "ㄇㄟˊ",
+    "mnemonic": "没 = 殳、氵; the water radical (水) anchors the meaning \"drowned\". 殳、氵 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-mei",
+    "language": "zh",
+    "text": "没",
+    "romanization": "méi",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-men",
+    "char": "门",
+    "pinyin": "mén",
+    "tone": 2,
+    "meaning": "door",
+    "strokes": 3,
+    "radical": "门",
+    "radicalMeaning": "door",
+    "components": [
+      "门"
+    ],
+    "hsk": 1,
+    "words": [],
+    "zhuyin": "ㄇㄣˊ",
+    "traditional": "門",
+    "mnemonic": "The frame of a double-leaf door.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-men",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-ming",
+    "char": "名",
+    "pinyin": "míng",
+    "tone": 2,
+    "meaning": "name",
+    "strokes": 6,
+    "radical": "口",
+    "radicalMeaning": "mouth",
+    "components": [
+      "口",
+      "夕"
+    ],
+    "words": [
+      "ming22"
+    ],
+    "zhuyin": "ㄇㄧㄥˊ",
+    "mnemonic": "名 = 口、夕; the mouth radical (口) anchors the meaning \"name\". 夕 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-ming",
+    "language": "zh",
+    "text": "名",
+    "romanization": "míng",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-ming2",
+    "char": "明",
+    "pinyin": "míng",
+    "tone": 2,
+    "meaning": "Ming Dynasty (1368–1644)",
+    "strokes": 8,
+    "radical": "日",
+    "radicalMeaning": "sun",
+    "components": [
+      "日",
+      "月"
+    ],
+    "words": [],
+    "zhuyin": "ㄇㄧㄥˊ",
+    "mnemonic": "明 = 日、月; the sun radical (日) anchors the meaning \"Ming Dynasty (1368–1644)\". 月 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-ming2",
+    "language": "zh",
+    "text": "明",
+    "romanization": "míng",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-mu",
+    "char": "木",
+    "pinyin": "mù",
+    "tone": 4,
+    "meaning": "tree, wood",
+    "strokes": 4,
+    "radical": "木",
+    "radicalMeaning": "tree",
+    "components": [
+      "木"
+    ],
+    "hsk": 1,
+    "words": [],
+    "zhuyin": "ㄇㄨˋ",
+    "mnemonic": "A tree with a trunk, branches, and roots.",
+    "similar": [
+      "本",
+      "术"
+    ],
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-mu",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-ma",
+    "char": "妈",
+    "pinyin": "mā",
+    "tone": 1,
+    "meaning": "mom",
+    "strokes": 6,
+    "radical": "女",
+    "radicalMeaning": "woman",
+    "components": [
+      "女",
+      "马"
+    ],
+    "hsk": 1,
+    "words": [
+      "mama"
+    ],
+    "zhuyin": "ㄇㄚ",
+    "traditional": "媽",
+    "mnemonic": "Woman + horse (mǎ, which gives the sound): mom.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-ma",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-mao",
+    "char": "猫",
+    "pinyin": "māo",
+    "tone": 1,
+    "meaning": "cat (CL:隻|只[zhi1])",
+    "strokes": 11,
+    "radical": "犬",
+    "radicalMeaning": "dog",
+    "components": [
+      "犭",
+      "苗"
+    ],
+    "words": [
+      "mao1"
+    ],
+    "zhuyin": "ㄇㄠ",
+    "mnemonic": "猫 = 犭、苗; the dog radical (犬) anchors the meaning \"cat (CL:隻|只[zhi1])\". 犭、苗 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-mao",
+    "language": "zh",
+    "text": "猫",
+    "romanization": "māo",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-ma3",
+    "char": "马",
+    "pinyin": "mǎ",
+    "tone": 3,
+    "meaning": "horse",
+    "strokes": 3,
+    "radical": "马",
+    "radicalMeaning": "horse",
+    "components": [
+      "马"
+    ],
+    "hsk": 1,
+    "words": [],
+    "zhuyin": "ㄇㄚˇ",
+    "traditional": "馬",
+    "mnemonic": "A horse with its legs: 马.",
+    "similar": [
+      "鸟"
+    ],
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-ma3",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-mai",
+    "char": "买",
+    "pinyin": "mǎi",
+    "tone": 3,
+    "meaning": "to buy",
+    "strokes": 6,
+    "radical": "乙",
+    "radicalMeaning": "second",
+    "components": [
+      "买"
+    ],
+    "hsk": 1,
+    "words": [
+      "mai3"
+    ],
+    "zhuyin": "ㄇㄞˇ",
+    "traditional": "買",
+    "mnemonic": "Gathering things with a head full of beads: to buy.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-mai",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-mi",
+    "char": "米",
+    "pinyin": "mǐ",
+    "tone": 3,
+    "meaning": "uncooked rice",
+    "strokes": 6,
+    "radical": "米",
+    "radicalMeaning": "rice",
+    "components": [
+      "米"
+    ],
+    "words": [
+      "mi3"
+    ],
+    "zhuyin": "ㄇㄧˇ",
+    "mnemonic": "米 = 米; the rice radical (米) anchors the meaning \"uncooked rice\".",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-mi",
+    "language": "zh",
+    "text": "米",
+    "romanization": "mǐ",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-ne",
+    "char": "呢",
+    "pinyin": "ne",
+    "tone": 5,
+    "meaning": "particle indicating that a previously asked question is to be applied ",
+    "strokes": 8,
+    "radical": "口",
+    "radicalMeaning": "mouth",
+    "components": [
+      "口",
+      "尼"
+    ],
+    "words": [
+      "ne5"
+    ],
+    "zhuyin": "ㄋㄜ˙",
+    "mnemonic": "呢 = 口、尼; the mouth radical (口) anchors the meaning \"particle indicating that\". 尼 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-ne",
+    "language": "zh",
+    "text": "呢",
+    "romanization": "ne",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-nian",
+    "char": "年",
+    "pinyin": "nián",
+    "tone": 2,
+    "meaning": "year",
+    "strokes": 6,
+    "radical": "干",
+    "radicalMeaning": "dry",
+    "components": [
+      "年"
+    ],
+    "words": [
+      "nian2"
+    ],
+    "zhuyin": "ㄋㄧㄢˊ",
+    "mnemonic": "年 = 年; the dry radical (干) anchors the meaning \"year\". 年 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-nian",
+    "language": "zh",
+    "text": "年",
+    "romanization": "nián",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-niu",
+    "char": "牛",
+    "pinyin": "niú",
+    "tone": 2,
+    "meaning": "cow",
+    "strokes": 4,
+    "radical": "牛",
+    "radicalMeaning": "cow",
+    "components": [
+      "牛"
+    ],
+    "words": [
+      "niu2"
+    ],
+    "zhuyin": "ㄋㄧㄡˊ",
+    "mnemonic": "牛 = 牛; the cow radical (牛) anchors the meaning \"cow\".",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-niu",
+    "language": "zh",
+    "text": "牛",
+    "romanization": "niú",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-na4",
+    "char": "那",
+    "pinyin": "nà",
+    "tone": 4,
+    "meaning": "(specifier) that",
+    "strokes": 6,
+    "radical": "酉",
+    "radicalMeaning": "wine",
+    "components": [
+      "二",
+      "刀",
+      "阝"
+    ],
+    "words": [
+      "na4"
+    ],
+    "zhuyin": "ㄋㄚˋ",
+    "mnemonic": "那 = 二、刀、阝; the wine radical (酉) anchors the meaning \"(specifier) that\". 二、刀 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-na4",
+    "language": "zh",
+    "text": "那",
+    "romanization": "nà",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-nan",
+    "char": "男",
+    "pinyin": "nán",
+    "tone": 2,
+    "meaning": "(bound form) male",
+    "strokes": 7,
+    "radical": "田",
+    "radicalMeaning": "field",
+    "components": [
+      "力",
+      "田"
+    ],
+    "words": [
+      "nan2"
+    ],
+    "zhuyin": "ㄋㄢˊ",
+    "mnemonic": "男 = 力、田; the field radical (田) anchors the meaning \"(bound form) male\". 力 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-nan",
+    "language": "zh",
+    "text": "男",
+    "romanization": "nán",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-neng",
+    "char": "能",
+    "pinyin": "néng",
+    "tone": 2,
+    "meaning": "can",
+    "strokes": 10,
+    "radical": "肉",
+    "radicalMeaning": "meat",
+    "components": [
+      "䏍",
+      "𫧇"
+    ],
+    "words": [
+      "neng2"
+    ],
+    "zhuyin": "ㄋㄥˊ",
+    "mnemonic": "能 = 䏍、𫧇; the meat radical (肉) anchors the meaning \"can\". 䏍、𫧇 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-neng",
+    "language": "zh",
+    "text": "能",
+    "romanization": "néng",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-nin",
+    "char": "您",
+    "pinyin": "nín",
+    "tone": 2,
+    "meaning": "you (courteous, as opposed to informal 你[ni3])",
+    "strokes": 11,
+    "radical": "心",
+    "radicalMeaning": "heart",
+    "components": [
+      "你",
+      "心"
+    ],
+    "words": [
+      "nin2"
+    ],
+    "zhuyin": "ㄋㄧㄣˊ",
+    "mnemonic": "您 = 你、心; the heart radical (心) anchors the meaning \"you (courteous, as oppos\". 你 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-nin",
+    "language": "zh",
+    "text": "您",
+    "romanization": "nín",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-na",
+    "char": "哪",
+    "pinyin": "nǎ",
+    "tone": 3,
+    "meaning": "which? (interrogative, followed by classifier or numeral-classifier)",
+    "strokes": 9,
+    "radical": "口",
+    "radicalMeaning": "mouth",
+    "components": [
+      "口",
+      "那"
+    ],
+    "words": [
+      "na3"
+    ],
+    "zhuyin": "ㄋㄚˇ",
+    "mnemonic": "哪 = 口、那; the mouth radical (口) anchors the meaning \"which? (interrogative, f\". 那 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-na",
+    "language": "zh",
+    "text": "哪",
+    "romanization": "nǎ",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-nai",
+    "char": "奶",
+    "pinyin": "nǎi",
+    "tone": 3,
+    "meaning": "breast",
+    "strokes": 5,
+    "radical": "女",
+    "radicalMeaning": "woman",
+    "components": [
+      "乃",
+      "女"
+    ],
+    "words": [],
+    "zhuyin": "ㄋㄞˇ",
+    "mnemonic": "奶 = 乃、女; the woman radical (女) anchors the meaning \"breast\". 乃 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-nai",
+    "language": "zh",
+    "text": "奶",
+    "romanization": "nǎi",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-nao",
+    "char": "脑",
+    "pinyin": "nǎo",
+    "tone": 3,
+    "meaning": "brain",
+    "strokes": 10,
+    "radical": "肉",
+    "radicalMeaning": "meat",
+    "components": [
+      "㐫",
+      "月"
+    ],
+    "words": [],
+    "zhuyin": "ㄋㄠˇ",
+    "mnemonic": "脑 = 㐫、月; the meat radical (肉) anchors the meaning \"brain\". 㐫、月 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-nao",
+    "language": "zh",
+    "text": "脑",
+    "romanization": "nǎo",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-ni",
+    "char": "你",
+    "pinyin": "nǐ",
+    "tone": 3,
+    "meaning": "you",
+    "strokes": 7,
+    "radical": "亻",
+    "radicalMeaning": "person",
+    "components": [
+      "亻",
+      "尔"
+    ],
+    "hsk": 1,
+    "words": [
+      "ni3"
+    ],
+    "zhuyin": "ㄋㄧˇ",
+    "mnemonic": "The person radical next to 尔: the person you are speaking to.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-ni",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-nv",
+    "char": "女",
+    "pinyin": "nǚ",
+    "tone": 3,
+    "meaning": "woman",
+    "strokes": 3,
+    "radical": "女",
+    "radicalMeaning": "woman",
+    "components": [
+      "女"
+    ],
+    "hsk": 1,
+    "words": [],
+    "zhuyin": "ㄋㄩˇ",
+    "mnemonic": "Figure of a seated woman.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-nv",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-piao",
+    "char": "漂",
+    "pinyin": "piāo",
+    "tone": 1,
+    "meaning": "to float",
+    "strokes": 14,
+    "radical": "水",
+    "radicalMeaning": "water",
+    "components": [
+      "氵",
+      "票"
+    ],
+    "words": [
+      "piao1"
+    ],
+    "zhuyin": "ㄆㄧㄠ",
+    "mnemonic": "漂 = 氵、票; the water radical (水) anchors the meaning \"to float\". 氵、票 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-piao",
+    "language": "zh",
+    "text": "漂",
+    "romanization": "piāo",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-peng",
+    "char": "朋",
+    "pinyin": "péng",
+    "tone": 2,
+    "meaning": "friend",
+    "strokes": 8,
+    "radical": "月",
+    "radicalMeaning": "moon",
+    "components": [
+      "月"
+    ],
+    "words": [],
+    "zhuyin": "ㄆㄥˊ",
+    "mnemonic": "朋 = 月; the moon radical (月) anchors the meaning \"friend\".",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-peng",
+    "language": "zh",
+    "text": "朋",
+    "romanization": "péng",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-ping",
+    "char": "苹",
+    "pinyin": "píng",
+    "tone": 2,
+    "meaning": "(artemisia)",
+    "strokes": 8,
+    "radical": "艸",
+    "radicalMeaning": "grass",
+    "components": [
+      "平",
+      "艹"
+    ],
+    "words": [],
+    "zhuyin": "ㄆㄧㄥˊ",
+    "mnemonic": "苹 = 平、艹; the grass radical (艸) anchors the meaning \"(artemisia)\". 平、艹 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-ping",
+    "language": "zh",
+    "text": "苹",
+    "romanization": "píng",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-qian2",
+    "char": "前",
+    "pinyin": "qián",
+    "tone": 2,
+    "meaning": "front",
+    "strokes": 9,
+    "radical": "刀",
+    "radicalMeaning": "knife",
+    "components": [
+      "䒑",
+      "刖"
+    ],
+    "words": [
+      "qian2"
+    ],
+    "zhuyin": "ㄑㄧㄢˊ",
+    "mnemonic": "前 = 䒑、刖; the knife radical (刀) anchors the meaning \"front\". 䒑、刖 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-qian2",
+    "language": "zh",
+    "text": "前",
+    "romanization": "qián",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-qian",
+    "char": "钱",
+    "pinyin": "qián",
+    "tone": 2,
+    "meaning": "money",
+    "strokes": 10,
+    "radical": "钅",
+    "radicalMeaning": "metal",
+    "components": [
+      "钅",
+      "戋"
+    ],
+    "hsk": 1,
+    "words": [
+      "qian2"
+    ],
+    "zhuyin": "ㄑㄧㄢˊ",
+    "traditional": "錢",
+    "mnemonic": "Metal + 戋: the coins.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-qian",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-qian1",
+    "char": "千",
+    "pinyin": "qiān",
+    "tone": 1,
+    "meaning": "thousand",
+    "strokes": 3,
+    "radical": "十",
+    "radicalMeaning": "ten",
+    "components": [
+      "丿",
+      "十"
+    ],
+    "words": [
+      "qian1"
+    ],
+    "zhuyin": "ㄑㄧㄢ",
+    "mnemonic": "千 = 丿、十; the ten radical (十) anchors the meaning \"thousand\". 丿 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-qian1",
+    "language": "zh",
+    "text": "千",
+    "romanization": "qiān",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-qi4",
+    "char": "气",
+    "pinyin": "qì",
+    "tone": 4,
+    "meaning": "gas",
+    "strokes": 4,
+    "radical": "气",
+    "radicalMeaning": "steam",
+    "components": [
+      "一",
+      "乁",
+      "𠂉"
+    ],
+    "words": [
+      "qi4"
+    ],
+    "zhuyin": "ㄑㄧˋ",
+    "mnemonic": "气 = 一、乁、𠂉; the steam radical (气) anchors the meaning \"gas\". 一、乁 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-qi4",
+    "language": "zh",
+    "text": "气",
+    "romanization": "qì",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-qu",
+    "char": "去",
+    "pinyin": "qù",
+    "tone": 4,
+    "meaning": "to go",
+    "strokes": 5,
+    "radical": "厶",
+    "radicalMeaning": "private",
+    "components": [
+      "土",
+      "厶"
+    ],
+    "hsk": 1,
+    "words": [
+      "qu4"
+    ],
+    "zhuyin": "ㄑㄩˋ",
+    "mnemonic": "To leave a place: to go.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-qu",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-qi",
+    "char": "七",
+    "pinyin": "qī",
+    "tone": 1,
+    "meaning": "seven",
+    "strokes": 2,
+    "radical": "一",
+    "radicalMeaning": "one",
+    "components": [
+      "㇀",
+      "乚"
+    ],
+    "words": [
+      "qi1"
+    ],
+    "zhuyin": "ㄑㄧ",
+    "mnemonic": "七 = ㇀、乚; the one radical (一) anchors the meaning \"seven\". ㇀、乚 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-qi",
+    "language": "zh",
+    "text": "七",
+    "romanization": "qī",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-qi1x",
+    "char": "期",
+    "pinyin": "qī",
+    "tone": 1,
+    "meaning": "period",
+    "strokes": 12,
+    "radical": "月",
+    "radicalMeaning": "moon",
+    "components": [
+      "其",
+      "月"
+    ],
+    "words": [
+      "qi12"
+    ],
+    "zhuyin": "ㄑㄧ",
+    "mnemonic": "期 = 其、月; the moon radical (月) anchors the meaning \"period\". 其 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-qi1x",
+    "language": "zh",
+    "text": "期",
+    "romanization": "qī",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-qi3",
+    "char": "起",
+    "pinyin": "qǐ",
+    "tone": 3,
+    "meaning": "to rise",
+    "strokes": 10,
+    "radical": "足",
+    "radicalMeaning": "foot",
+    "components": [
+      "巳",
+      "走"
+    ],
+    "words": [
+      "qi3"
+    ],
+    "zhuyin": "ㄑㄧˇ",
+    "mnemonic": "起 = 巳、走; the foot radical (足) anchors the meaning \"to rise\". 巳、走 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-qi3",
+    "language": "zh",
+    "text": "起",
+    "romanization": "qǐ",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-qing",
+    "char": "请",
+    "pinyin": "qǐng",
+    "tone": 3,
+    "meaning": "to ask",
+    "strokes": 10,
+    "radical": "谷",
+    "radicalMeaning": "valley",
+    "components": [
+      "讠",
+      "青"
+    ],
+    "words": [
+      "qing3"
+    ],
+    "zhuyin": "ㄑㄧㄥˇ",
+    "mnemonic": "请 = 讠、青; the valley radical (谷) anchors the meaning \"to ask\". 讠、青 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-qing",
+    "language": "zh",
+    "text": "请",
+    "romanization": "qǐng",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-re",
+    "char": "热",
+    "pinyin": "rè",
+    "tone": 4,
+    "meaning": "to warm up",
+    "strokes": 10,
+    "radical": "火",
+    "radicalMeaning": "fire",
+    "components": [
+      "执",
+      "灬"
+    ],
+    "words": [
+      "re4"
+    ],
+    "zhuyin": "ㄖㄜˋ",
+    "mnemonic": "热 = 执、灬; the fire radical (火) anchors the meaning \"to warm up\". 执、灬 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-re",
+    "language": "zh",
+    "text": "热",
+    "romanization": "rè",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-ren4",
+    "char": "认",
+    "pinyin": "rèn",
+    "tone": 4,
+    "meaning": "to recognize",
+    "strokes": 4,
+    "radical": "谷",
+    "radicalMeaning": "valley",
+    "components": [
+      "人",
+      "讠"
+    ],
+    "words": [
+      "ren4"
+    ],
+    "zhuyin": "ㄖㄣˋ",
+    "mnemonic": "认 = 人、讠; the valley radical (谷) anchors the meaning \"to recognize\". 人、讠 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-ren4",
+    "language": "zh",
+    "text": "认",
+    "romanization": "rèn",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-ren",
+    "char": "人",
+    "pinyin": "rén",
+    "tone": 2,
+    "meaning": "person",
+    "strokes": 2,
+    "radical": "人",
+    "radicalMeaning": "person",
+    "components": [
+      "人"
+    ],
+    "hsk": 1,
+    "words": [
+      "ren2"
+    ],
+    "zhuyin": "ㄖㄣˊ",
+    "mnemonic": "A person walking with legs apart.",
+    "similar": [
+      "入",
+      "八"
+    ],
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-ren",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-ri",
+    "char": "日",
+    "pinyin": "rì",
+    "tone": 4,
+    "meaning": "sun, day",
+    "strokes": 4,
+    "radical": "日",
+    "radicalMeaning": "sun",
+    "components": [
+      "日"
+    ],
+    "hsk": 1,
+    "words": [
+      "shengri"
+    ],
+    "zhuyin": "ㄖˋ",
+    "mnemonic": "A stylized sun: a circle that became a rectangle.",
+    "similar": [
+      "曰",
+      "目"
+    ],
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-ri",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-shui4",
+    "char": "睡",
+    "pinyin": "shuì",
+    "tone": 4,
+    "meaning": "to sleep",
+    "strokes": 13,
+    "radical": "目",
+    "radicalMeaning": "eye",
+    "components": [
+      "垂",
+      "目"
+    ],
+    "words": [
+      "shui4"
+    ],
+    "zhuyin": "ㄕㄨㄟˋ",
+    "mnemonic": "睡 = 垂、目; the eye radical (目) anchors the meaning \"to sleep\". 垂 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-shui4",
+    "language": "zh",
+    "text": "睡",
+    "romanization": "shuì",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-shuo",
+    "char": "说",
+    "pinyin": "shuō",
+    "tone": 1,
+    "meaning": "to speak",
+    "strokes": 9,
+    "radical": "讠",
+    "radicalMeaning": "speech",
+    "components": [
+      "讠",
+      "兑"
+    ],
+    "hsk": 1,
+    "words": [
+      "shuo1"
+    ],
+    "zhuyin": "ㄕㄨㄛ",
+    "traditional": "說",
+    "mnemonic": "The speech radical + 兑: to speak.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-shuo",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-shui",
+    "char": "水",
+    "pinyin": "shuǐ",
+    "tone": 3,
+    "meaning": "water",
+    "strokes": 4,
+    "radical": "水",
+    "radicalMeaning": "water",
+    "components": [
+      "水"
+    ],
+    "hsk": 1,
+    "words": [
+      "shui3"
+    ],
+    "zhuyin": "ㄕㄨㄟˇ",
+    "mnemonic": "A central current with splashes on the sides.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-shui",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-shang4",
+    "char": "上",
+    "pinyin": "shàng",
+    "tone": 4,
+    "meaning": "(bound form) up",
+    "strokes": 3,
+    "radical": "一",
+    "radicalMeaning": "one",
+    "components": [
+      "⺊",
+      "一"
+    ],
+    "words": [
+      "shang42"
+    ],
+    "zhuyin": "ㄕㄤˋ",
+    "mnemonic": "上 = ⺊、一; the one radical (一) anchors the meaning \"(bound form) up\". ⺊ hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-shang4",
+    "language": "zh",
+    "text": "上",
+    "romanization": "shàng",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-shui2",
+    "char": "谁",
+    "pinyin": "shéi/shuí",
+    "tone": 2,
+    "meaning": "who",
+    "strokes": 10,
+    "radical": "谷",
+    "radicalMeaning": "valley",
+    "components": [
+      "讠",
+      "隹"
+    ],
+    "words": [
+      "shei2"
+    ],
+    "zhuyin": "ㄕㄟˊ/ㄕㄨㄟˊ",
+    "mnemonic": "谁 = 讠、隹; the valley radical (谷) anchors the meaning \"who\". 讠、隹 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-shui2",
+    "language": "zh",
+    "text": "谁",
+    "romanization": "shéi/shuí",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-shi4xxx",
+    "char": "事",
+    "pinyin": "shì",
+    "tone": 4,
+    "meaning": "matter",
+    "strokes": 8,
+    "radical": "亅",
+    "radicalMeaning": "hook",
+    "components": [
+      "事"
+    ],
+    "words": [
+      "shi42"
+    ],
+    "zhuyin": "ㄕˋ",
+    "mnemonic": "事 = 事; the hook radical (亅) anchors the meaning \"matter\". 事 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-shi4xxx",
+    "language": "zh",
+    "text": "事",
+    "romanization": "shì",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-shi4x",
+    "char": "士",
+    "pinyin": "shì",
+    "tone": 4,
+    "meaning": "member of the senior ministerial class (old)",
+    "strokes": 3,
+    "radical": "士",
+    "radicalMeaning": "scholar",
+    "components": [
+      "一",
+      "十"
+    ],
+    "words": [],
+    "zhuyin": "ㄕˋ",
+    "mnemonic": "士 = 一、十; the scholar radical (士) anchors the meaning \"member of the senior min\". 一、十 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-shi4x",
+    "language": "zh",
+    "text": "士",
+    "romanization": "shì",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-shi4xx",
+    "char": "市",
+    "pinyin": "shì",
+    "tone": 4,
+    "meaning": "market",
+    "strokes": 5,
+    "radical": "巾",
+    "radicalMeaning": "turban",
+    "components": [
+      "亠",
+      "巾"
+    ],
+    "words": [
+      "shi43"
+    ],
+    "zhuyin": "ㄕˋ",
+    "mnemonic": "市 = 亠、巾; the turban radical (巾) anchors the meaning \"market\". 亠 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-shi4xx",
+    "language": "zh",
+    "text": "市",
+    "romanization": "shì",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-shide",
+    "char": "是",
+    "pinyin": "shì",
+    "tone": 4,
+    "meaning": "to be",
+    "strokes": 9,
+    "radical": "日",
+    "radicalMeaning": "sun",
+    "components": [
+      "日",
+      "正"
+    ],
+    "hsk": 1,
+    "words": [
+      "shi4"
+    ],
+    "zhuyin": "ㄕˋ",
+    "mnemonic": "The sun over what is right: that which is.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-shide",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-shi4xxxx",
+    "char": "视",
+    "pinyin": "shì",
+    "tone": 4,
+    "meaning": "(literary, or bound form) to look at",
+    "strokes": 8,
+    "radical": "示",
+    "radicalMeaning": "spirit",
+    "components": [
+      "礻",
+      "见"
+    ],
+    "words": [],
+    "zhuyin": "ㄕˋ",
+    "mnemonic": "视 = 礻、见; the spirit radical (示) anchors the meaning \"(literary, or bound form\". 礻、见 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-shi4xxxx",
+    "language": "zh",
+    "text": "视",
+    "romanization": "shì",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-shen",
+    "char": "什",
+    "pinyin": "shí",
+    "tone": 2,
+    "meaning": "ten (used in fractions, writing checks etc)",
+    "strokes": 4,
+    "radical": "人",
+    "radicalMeaning": "man",
+    "components": [
+      "亻",
+      "十"
+    ],
+    "words": [],
+    "zhuyin": "ㄕˊ",
+    "mnemonic": "什 = 亻、十; the man radical (人) anchors the meaning \"ten (used in fractions, \". 亻、十 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-shen",
+    "language": "zh",
+    "text": "什",
+    "romanization": "shí",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-shi",
+    "char": "十",
+    "pinyin": "shí",
+    "tone": 2,
+    "meaning": "ten",
+    "strokes": 2,
+    "radical": "十",
+    "radicalMeaning": "ten",
+    "components": [
+      "一",
+      "丨"
+    ],
+    "hsk": 1,
+    "words": [
+      "shi2"
+    ],
+    "zhuyin": "ㄕˊ",
+    "mnemonic": "A cross: two full hands, ten fingers.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-shi",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-shi2",
+    "char": "时",
+    "pinyin": "shí",
+    "tone": 2,
+    "meaning": "o'clock",
+    "strokes": 7,
+    "radical": "日",
+    "radicalMeaning": "sun",
+    "components": [
+      "寸",
+      "日"
+    ],
+    "words": [
+      "shi23"
+    ],
+    "zhuyin": "ㄕˊ",
+    "mnemonic": "时 = 寸、日; the sun radical (日) anchors the meaning \"o'clock\". 寸 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-shi2",
+    "language": "zh",
+    "text": "时",
+    "romanization": "shí",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-shi2x",
+    "char": "识",
+    "pinyin": "shí",
+    "tone": 2,
+    "meaning": "to know",
+    "strokes": 7,
+    "radical": "谷",
+    "radicalMeaning": "valley",
+    "components": [
+      "只",
+      "讠"
+    ],
+    "words": [
+      "shi2x"
+    ],
+    "zhuyin": "ㄕˊ",
+    "mnemonic": "识 = 只、讠; the valley radical (谷) anchors the meaning \"to know\". 只、讠 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-shi2x",
+    "language": "zh",
+    "text": "识",
+    "romanization": "shí",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-shan",
+    "char": "山",
+    "pinyin": "shān",
+    "tone": 1,
+    "meaning": "mountain",
+    "strokes": 3,
+    "radical": "山",
+    "radicalMeaning": "mountain",
+    "components": [
+      "山"
+    ],
+    "hsk": 1,
+    "words": [],
+    "zhuyin": "ㄕㄢ",
+    "mnemonic": "Three peaks of a mountain.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-shan",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-shang",
+    "char": "商",
+    "pinyin": "shāng",
+    "tone": 1,
+    "meaning": "Shang Dynasty (c. 1600–1046 BC)",
+    "strokes": 11,
+    "radical": "口",
+    "radicalMeaning": "mouth",
+    "components": [
+      "丷",
+      "亠",
+      "冏"
+    ],
+    "words": [],
+    "zhuyin": "ㄕㄤ",
+    "mnemonic": "商 = 丷、亠、冏; the mouth radical (口) anchors the meaning \"Shang Dynasty (c. 1600–1\". 丷、亠 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-shang",
+    "language": "zh",
+    "text": "商",
+    "romanization": "shāng",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-sheng",
+    "char": "生",
+    "pinyin": "shēng",
+    "tone": 1,
+    "meaning": "to be born, life",
+    "strokes": 5,
+    "radical": "生",
+    "radicalMeaning": "life",
+    "components": [
+      "生"
+    ],
+    "hsk": 1,
+    "words": [
+      "xuesheng",
+      "shengri"
+    ],
+    "zhuyin": "ㄕㄥ",
+    "mnemonic": "A plant sprouting from the earth: life.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-sheng",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-shi4",
+    "char": "师",
+    "pinyin": "shī",
+    "tone": 1,
+    "meaning": "teacher",
+    "strokes": 6,
+    "radical": "巾",
+    "radicalMeaning": "cloth",
+    "components": [
+      "刂",
+      "师"
+    ],
+    "hsk": 1,
+    "words": [
+      "laoshi"
+    ],
+    "zhuyin": "ㄕ",
+    "traditional": "師",
+    "mnemonic": "The one who guides many: teacher.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-shi4",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-shu",
+    "char": "书",
+    "pinyin": "shū",
+    "tone": 1,
+    "meaning": "book",
+    "strokes": 4,
+    "radical": "乙",
+    "radicalMeaning": "second",
+    "components": [
+      "书"
+    ],
+    "hsk": 1,
+    "words": [
+      "shu1"
+    ],
+    "zhuyin": "ㄕㄨ",
+    "traditional": "書",
+    "mnemonic": "A brush writing: the book.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-shu",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-shao",
+    "char": "少",
+    "pinyin": "shǎo",
+    "tone": 3,
+    "meaning": "few",
+    "strokes": 4,
+    "radical": "小",
+    "radicalMeaning": "small",
+    "components": [
+      "丿",
+      "小"
+    ],
+    "words": [
+      "shao3"
+    ],
+    "zhuyin": "ㄕㄠˇ",
+    "mnemonic": "少 = 丿、小; the small radical (小) anchors the meaning \"few\". 丿 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-shao",
+    "language": "zh",
+    "text": "少",
+    "romanization": "shǎo",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-shou",
+    "char": "手",
+    "pinyin": "shǒu",
+    "tone": 3,
+    "meaning": "hand",
+    "strokes": 4,
+    "radical": "手",
+    "radicalMeaning": "hand",
+    "components": [
+      "手"
+    ],
+    "hsk": 1,
+    "words": [],
+    "zhuyin": "ㄕㄡˇ",
+    "mnemonic": "A hand with fingers extended.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-shou",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-sui",
+    "char": "岁",
+    "pinyin": "suì",
+    "tone": 4,
+    "meaning": "years old",
+    "strokes": 6,
+    "radical": "山",
+    "radicalMeaning": "mountain",
+    "components": [
+      "夕",
+      "山"
+    ],
+    "words": [
+      "sui4"
+    ],
+    "zhuyin": "ㄙㄨㄟˋ",
+    "mnemonic": "岁 = 夕、山; the mountain radical (山) anchors the meaning \"years old\". 夕 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-sui",
+    "language": "zh",
+    "text": "岁",
+    "romanization": "suì",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-si4",
+    "char": "四",
+    "pinyin": "sì",
+    "tone": 4,
+    "meaning": "four",
+    "strokes": 5,
+    "radical": "囗",
+    "radicalMeaning": "enclosure",
+    "components": [
+      "囗",
+      "儿"
+    ],
+    "hsk": 1,
+    "words": [],
+    "zhuyin": "ㄙˋ",
+    "mnemonic": "The number four inside a frame.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-si4",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-san",
+    "char": "三",
+    "pinyin": "sān",
+    "tone": 1,
+    "meaning": "three",
+    "strokes": 3,
+    "radical": "一",
+    "radicalMeaning": "one",
+    "components": [
+      "一",
+      "二"
+    ],
+    "hsk": 1,
+    "words": [
+      "san1"
+    ],
+    "zhuyin": "ㄙㄢ",
+    "mnemonic": "Three horizontal strokes.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-san",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-si",
+    "char": "司",
+    "pinyin": "sī",
+    "tone": 1,
+    "meaning": "to take charge of",
+    "strokes": 5,
+    "radical": "口",
+    "radicalMeaning": "mouth",
+    "components": [
+      "𠃌",
+      "𠮛"
+    ],
+    "words": [],
+    "zhuyin": "ㄙ",
+    "mnemonic": "司 = 𠃌、𠮛; the mouth radical (口) anchors the meaning \"to take charge of\". 𠃌、𠮛 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-si",
+    "language": "zh",
+    "text": "司",
+    "romanization": "sī",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-tiao",
+    "char": "条",
+    "pinyin": "tiáo",
+    "tone": 2,
+    "meaning": "strip",
+    "strokes": 7,
+    "radical": "木",
+    "radicalMeaning": "tree",
+    "components": [
+      "夂",
+      "朩"
+    ],
+    "words": [
+      "tiao2"
+    ],
+    "zhuyin": "ㄊㄧㄠˊ",
+    "mnemonic": "条 = 夂、朩; the tree radical (木) anchors the meaning \"strip\". 夂、朩 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-tiao",
+    "language": "zh",
+    "text": "条",
+    "romanization": "tiáo",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-tian",
+    "char": "天",
+    "pinyin": "tiān",
+    "tone": 1,
+    "meaning": "sky, day",
+    "strokes": 4,
+    "radical": "大",
+    "radicalMeaning": "big",
+    "components": [
+      "一",
+      "大"
+    ],
+    "hsk": 1,
+    "words": [
+      "jintian",
+      "mingtian",
+      "tianqi"
+    ],
+    "zhuyin": "ㄊㄧㄢ",
+    "mnemonic": "What is above what is big: the sky.",
+    "similar": [
+      "大",
+      "夫"
+    ],
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-tian",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-tai",
+    "char": "太",
+    "pinyin": "tài",
+    "tone": 4,
+    "meaning": "highest",
+    "strokes": 4,
+    "radical": "大",
+    "radicalMeaning": "big",
+    "components": [
+      "丶",
+      "大"
+    ],
+    "words": [
+      "tai4"
+    ],
+    "zhuyin": "ㄊㄞˋ",
+    "mnemonic": "太 = 丶、大; the big radical (大) anchors the meaning \"highest\". 丶 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-tai",
+    "language": "zh",
+    "text": "太",
+    "romanization": "tài",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-tang2",
+    "char": "糖",
+    "pinyin": "táng",
+    "tone": 2,
+    "meaning": "sugar, candy",
+    "strokes": 16,
+    "radical": "米",
+    "radicalMeaning": "rice",
+    "components": [
+      "米",
+      "唐"
+    ],
+    "hsk": 1,
+    "words": [],
+    "zhuyin": "ㄊㄤˊ",
+    "mnemonic": "Rice + 唐: sweet grains.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-tang2",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-ti",
+    "char": "题",
+    "pinyin": "tí",
+    "tone": 2,
+    "meaning": "topic",
+    "strokes": 15,
+    "radical": "風",
+    "radicalMeaning": "wind",
+    "components": [
+      "是",
+      "页"
+    ],
+    "words": [
+      "ti2"
+    ],
+    "zhuyin": "ㄊㄧˊ",
+    "mnemonic": "题 = 是、页; the wind radical (風) anchors the meaning \"topic\". 是、页 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-ti",
+    "language": "zh",
+    "text": "题",
+    "romanization": "tí",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-tong",
+    "char": "同",
+    "pinyin": "tóng",
+    "tone": 2,
+    "meaning": "like",
+    "strokes": 6,
+    "radical": "口",
+    "radicalMeaning": "mouth",
+    "components": [
+      "口",
+      "𠔼"
+    ],
+    "words": [
+      "tong2"
+    ],
+    "zhuyin": "ㄊㄨㄥˊ",
+    "mnemonic": "同 = 口、𠔼; the mouth radical (口) anchors the meaning \"like\". 𠔼 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-tong",
+    "language": "zh",
+    "text": "同",
+    "romanization": "tóng",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-ta",
+    "char": "他",
+    "pinyin": "tā",
+    "tone": 1,
+    "meaning": "he",
+    "strokes": 5,
+    "radical": "亻",
+    "radicalMeaning": "person",
+    "components": [
+      "亻",
+      "也"
+    ],
+    "hsk": 1,
+    "words": [
+      "ta1"
+    ],
+    "zhuyin": "ㄊㄚ",
+    "similar": [
+      "她",
+      "地"
+    ],
+    "mnemonic": "Person + 也: another person, he.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-ta",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-tanv",
+    "char": "她",
+    "pinyin": "tā",
+    "tone": 1,
+    "meaning": "she",
+    "strokes": 6,
+    "radical": "女",
+    "radicalMeaning": "woman",
+    "components": [
+      "女",
+      "也"
+    ],
+    "hsk": 1,
+    "words": [
+      "ta1f"
+    ],
+    "zhuyin": "ㄊㄚ",
+    "similar": [
+      "他"
+    ],
+    "mnemonic": "Woman + 也: she.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-tanv",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-ta1",
+    "char": "它",
+    "pinyin": "tā",
+    "tone": 1,
+    "meaning": "it (pronoun for an animal)",
+    "strokes": 5,
+    "radical": "宀",
+    "radicalMeaning": "roof",
+    "components": [
+      "匕",
+      "宀"
+    ],
+    "words": [
+      "ta1a"
+    ],
+    "zhuyin": "ㄊㄚ",
+    "mnemonic": "它 = 匕、宀; the roof radical (宀) anchors the meaning \"it (pronoun for an anima\". 匕 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-ta1",
+    "language": "zh",
+    "text": "它",
+    "romanization": "tā",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-tang1",
+    "char": "汤",
+    "pinyin": "tāng",
+    "tone": 1,
+    "meaning": "soup",
+    "strokes": 6,
+    "radical": "氵",
+    "radicalMeaning": "water",
+    "components": [
+      "氵",
+      "𠃓"
+    ],
+    "hsk": 1,
+    "words": [],
+    "zhuyin": "ㄊㄤ",
+    "traditional": "湯",
+    "mnemonic": "Water with something floating in it: soup.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-tang1",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-ting",
+    "char": "听",
+    "pinyin": "tīng",
+    "tone": 1,
+    "meaning": "smile (archaic)",
+    "strokes": 7,
+    "radical": "口",
+    "radicalMeaning": "mouth",
+    "components": [
+      "口",
+      "斤"
+    ],
+    "words": [
+      "ting1"
+    ],
+    "zhuyin": "ㄊㄧㄥ",
+    "mnemonic": "听 = 口、斤; the mouth radical (口) anchors the meaning \"smile (archaic)\". 斤 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-ting",
+    "language": "zh",
+    "text": "听",
+    "romanization": "tīng",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-wai",
+    "char": "外",
+    "pinyin": "wài",
+    "tone": 4,
+    "meaning": "outside",
+    "strokes": 5,
+    "radical": "夕",
+    "radicalMeaning": "evening",
+    "components": [
+      "卜",
+      "夕"
+    ],
+    "words": [
+      "wai4"
+    ],
+    "zhuyin": "ㄨㄞˋ",
+    "mnemonic": "外 = 卜、夕; the evening radical (夕) anchors the meaning \"outside\". 卜 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-wai",
+    "language": "zh",
+    "text": "外",
+    "romanization": "wài",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-wan",
+    "char": "玩",
+    "pinyin": "wán",
+    "tone": 2,
+    "meaning": "to play",
+    "strokes": 8,
+    "radical": "玉",
+    "radicalMeaning": "jade",
+    "components": [
+      "元",
+      "王"
+    ],
+    "words": [
+      "wan22"
+    ],
+    "zhuyin": "ㄨㄢˊ",
+    "mnemonic": "玩 = 元、王; the jade radical (玉) anchors the meaning \"to play\". 元、王 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-wan",
+    "language": "zh",
+    "text": "玩",
+    "romanization": "wán",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-wei",
+    "char": "喂",
+    "pinyin": "wèi",
+    "tone": 4,
+    "meaning": "hey",
+    "strokes": 12,
+    "radical": "口",
+    "radicalMeaning": "mouth",
+    "components": [
+      "口",
+      "畏"
+    ],
+    "words": [
+      "wei4"
+    ],
+    "zhuyin": "ㄨㄟˋ",
+    "mnemonic": "喂 = 口、畏; the mouth radical (口) anchors the meaning \"hey\". 畏 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-wei",
+    "language": "zh",
+    "text": "喂",
+    "romanization": "wèi",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-wen4",
+    "char": "问",
+    "pinyin": "wèn",
+    "tone": 4,
+    "meaning": "to ask",
+    "strokes": 6,
+    "radical": "阜",
+    "radicalMeaning": "mound",
+    "components": [
+      "口",
+      "门"
+    ],
+    "words": [
+      "wen4"
+    ],
+    "zhuyin": "ㄨㄣˋ",
+    "mnemonic": "问 = 口、门; the mound radical (阜) anchors the meaning \"to ask\". 口、门 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-wen4",
+    "language": "zh",
+    "text": "问",
+    "romanization": "wèn",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-wen",
+    "char": "文",
+    "pinyin": "wén",
+    "tone": 2,
+    "meaning": "language",
+    "strokes": 4,
+    "radical": "文",
+    "radicalMeaning": "script",
+    "components": [
+      "乂",
+      "亠"
+    ],
+    "words": [
+      "wen"
+    ],
+    "zhuyin": "ㄨㄣˊ",
+    "mnemonic": "文 = 乂、亠; the script radical (文) anchors the meaning \"language\". 乂、亠 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-wen",
+    "language": "zh",
+    "text": "文",
+    "romanization": "wén",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-wen3",
+    "char": "吻",
+    "pinyin": "wěn",
+    "tone": 3,
+    "meaning": "to kiss",
+    "strokes": 7,
+    "radical": "口",
+    "radicalMeaning": "mouth",
+    "components": [
+      "口",
+      "勿"
+    ],
+    "hsk": 1,
+    "words": [],
+    "zhuyin": "ㄨㄣˇ",
+    "mnemonic": "Mouth + 勿: a quick peck.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-wen3",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-wan3",
+    "char": "晚",
+    "pinyin": "wǎn",
+    "tone": 3,
+    "meaning": "evening",
+    "strokes": 11,
+    "radical": "日",
+    "radicalMeaning": "sun",
+    "components": [
+      "免",
+      "日"
+    ],
+    "words": [
+      "wan3"
+    ],
+    "zhuyin": "ㄨㄢˇ",
+    "mnemonic": "晚 = 免、日; the sun radical (日) anchors the meaning \"evening\". 免 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-wan3",
+    "language": "zh",
+    "text": "晚",
+    "romanization": "wǎn",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-wo",
+    "char": "我",
+    "pinyin": "wǒ",
+    "tone": 3,
+    "meaning": "I, me",
+    "strokes": 7,
+    "radical": "戈",
+    "radicalMeaning": "spear",
+    "components": [
+      "手",
+      "戈"
+    ],
+    "hsk": 1,
+    "words": [
+      "wo3"
+    ],
+    "zhuyin": "ㄨㄛˇ",
+    "mnemonic": "A hand holding a spear: I defend what is mine, me.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-wo",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-wu",
+    "char": "五",
+    "pinyin": "wǔ",
+    "tone": 3,
+    "meaning": "five",
+    "strokes": 4,
+    "radical": "二",
+    "radicalMeaning": "two",
+    "components": [
+      "一",
+      "𫝀"
+    ],
+    "words": [
+      "wu3"
+    ],
+    "zhuyin": "ㄨˇ",
+    "mnemonic": "五 = 一、𫝀; the two radical (二) anchors the meaning \"five\". 一、𫝀 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-wu",
+    "language": "zh",
+    "text": "五",
+    "romanization": "wǔ",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-wu3x",
+    "char": "午",
+    "pinyin": "wǔ",
+    "tone": 3,
+    "meaning": "7th earthly branch: 11 a.m.-1 p.m., noon, 5th solar month (6th June-6t",
+    "strokes": 4,
+    "radical": "十",
+    "radicalMeaning": "ten",
+    "components": [
+      "十",
+      "𠂉"
+    ],
+    "words": [],
+    "zhuyin": "ㄨˇ",
+    "mnemonic": "午 = 十、𠂉; the ten radical (十) anchors the meaning \"7th earthly branch: 11 a\". 𠂉 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-wu3x",
+    "language": "zh",
+    "text": "午",
+    "romanization": "wǔ",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-xia",
+    "char": "下",
+    "pinyin": "xià",
+    "tone": 4,
+    "meaning": "down",
+    "strokes": 3,
+    "radical": "一",
+    "radicalMeaning": "one",
+    "components": [
+      "一",
+      "卜"
+    ],
+    "words": [
+      "xia4"
+    ],
+    "zhuyin": "ㄒㄧㄚˋ",
+    "mnemonic": "下 = 一、卜; the one radical (一) anchors the meaning \"down\". 卜 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-xia",
+    "language": "zh",
+    "text": "下",
+    "romanization": "xià",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-xian4",
+    "char": "现",
+    "pinyin": "xiàn",
+    "tone": 4,
+    "meaning": "to appear",
+    "strokes": 8,
+    "radical": "玉",
+    "radicalMeaning": "jade",
+    "components": [
+      "王",
+      "见"
+    ],
+    "words": [],
+    "zhuyin": "ㄒㄧㄢˋ",
+    "mnemonic": "现 = 王、见; the jade radical (玉) anchors the meaning \"to appear\". 王、见 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-xian4",
+    "language": "zh",
+    "text": "现",
+    "romanization": "xiàn",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-xie4",
+    "char": "谢",
+    "pinyin": "xiè",
+    "tone": 4,
+    "meaning": "to thank",
+    "strokes": 12,
+    "radical": "谷",
+    "radicalMeaning": "valley",
+    "components": [
+      "射",
+      "讠"
+    ],
+    "words": [],
+    "zhuyin": "ㄒㄧㄝˋ",
+    "mnemonic": "谢 = 射、讠; the valley radical (谷) anchors the meaning \"to thank\". 射、讠 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-xie4",
+    "language": "zh",
+    "text": "谢",
+    "romanization": "xiè",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-xian",
+    "char": "先",
+    "pinyin": "xiān",
+    "tone": 1,
+    "meaning": "beforehand",
+    "strokes": 6,
+    "radical": "儿",
+    "radicalMeaning": "legs",
+    "components": [
+      "儿",
+      "𠂒"
+    ],
+    "words": [
+      "xian12"
+    ],
+    "zhuyin": "ㄒㄧㄢ",
+    "mnemonic": "先 = 儿、𠂒; the legs radical (儿) anchors the meaning \"beforehand\". 𠂒 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-xian",
+    "language": "zh",
+    "text": "先",
+    "romanization": "xiān",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-xie",
+    "char": "些",
+    "pinyin": "xiē",
+    "tone": 1,
+    "meaning": "classifier indicating a small amount or small number greater than 1: s",
+    "strokes": 8,
+    "radical": "二",
+    "radicalMeaning": "two",
+    "components": [
+      "二",
+      "此"
+    ],
+    "words": [
+      "xie12"
+    ],
+    "zhuyin": "ㄒㄧㄝ",
+    "mnemonic": "些 = 二、此; the two radical (二) anchors the meaning \"classifier indicating a \". 此 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-xie",
+    "language": "zh",
+    "text": "些",
+    "romanization": "xiē",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-xie3",
+    "char": "写",
+    "pinyin": "xiě",
+    "tone": 3,
+    "meaning": "to write",
+    "strokes": 5,
+    "radical": "冖",
+    "radicalMeaning": "cover",
+    "components": [
+      "与",
+      "冖"
+    ],
+    "words": [
+      "xie3"
+    ],
+    "zhuyin": "ㄒㄧㄝˇ",
+    "mnemonic": "写 = 与、冖; the cover radical (冖) anchors the meaning \"to write\". 与 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-xie3",
+    "language": "zh",
+    "text": "写",
+    "romanization": "xiě",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-xiu",
+    "char": "休",
+    "pinyin": "xiū",
+    "tone": 1,
+    "meaning": "to rest",
+    "strokes": 6,
+    "radical": "人",
+    "radicalMeaning": "man",
+    "components": [
+      "亻",
+      "木"
+    ],
+    "words": [],
+    "zhuyin": "ㄒㄧㄡ",
+    "mnemonic": "休 = 亻、木; the man radical (人) anchors the meaning \"to rest\". 亻、木 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-xiu",
+    "language": "zh",
+    "text": "休",
+    "romanization": "xiū",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-xiang",
+    "char": "想",
+    "pinyin": "xiǎng",
+    "tone": 3,
+    "meaning": "to think (about)",
+    "strokes": 13,
+    "radical": "心",
+    "radicalMeaning": "heart",
+    "components": [
+      "心",
+      "相"
+    ],
+    "words": [
+      "xiang3"
+    ],
+    "zhuyin": "ㄒㄧㄤˇ",
+    "mnemonic": "想 = 心、相; the heart radical (心) anchors the meaning \"to think (about)\". 相 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-xiang",
+    "language": "zh",
+    "text": "想",
+    "romanization": "xiǎng",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-xiao",
+    "char": "小",
+    "pinyin": "xiǎo",
+    "tone": 3,
+    "meaning": "small",
+    "strokes": 3,
+    "radical": "小",
+    "radicalMeaning": "small",
+    "components": [
+      "小"
+    ],
+    "hsk": 1,
+    "words": [
+      "xiao3"
+    ],
+    "zhuyin": "ㄒㄧㄠˇ",
+    "mnemonic": "Three small strokes that separate.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-xiao",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-xue",
+    "char": "学",
+    "pinyin": "xué",
+    "tone": 2,
+    "meaning": "to study",
+    "strokes": 8,
+    "radical": "子",
+    "radicalMeaning": "child",
+    "components": [
+      "⺍",
+      "冖",
+      "子"
+    ],
+    "hsk": 1,
+    "words": [
+      "xue2",
+      "xuesheng",
+      "xuexiao"
+    ],
+    "zhuyin": "ㄒㄩㄝˊ",
+    "traditional": "學",
+    "mnemonic": "A child under a roof learning.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-xue",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-xue3",
+    "char": "雪",
+    "pinyin": "xuě",
+    "tone": 3,
+    "meaning": "snow",
+    "strokes": 11,
+    "radical": "靑",
+    "radicalMeaning": "blue",
+    "components": [
+      "彐",
+      "雨"
+    ],
+    "words": [
+      "xue3"
+    ],
+    "zhuyin": "ㄒㄩㄝˇ",
+    "mnemonic": "雪 = 彐、雨; the blue radical (靑) anchors the meaning \"snow\". 彐、雨 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-xue3",
+    "language": "zh",
+    "text": "雪",
+    "romanization": "xuě",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-xing4x",
+    "char": "兴",
+    "pinyin": "xìng",
+    "tone": 4,
+    "meaning": "feeling or desire to do sth",
+    "strokes": 6,
+    "radical": "八",
+    "radicalMeaning": "eight",
+    "components": [
+      "一",
+      "八",
+      "𭕄"
+    ],
+    "words": [],
+    "zhuyin": "ㄒㄧㄥˋ",
+    "mnemonic": "兴 = 一、八、𭕄; the eight radical (八) anchors the meaning \"feeling or desire to do \". 一、𭕄 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-xing4x",
+    "language": "zh",
+    "text": "兴",
+    "romanization": "xìng",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-xi2",
+    "char": "习",
+    "pinyin": "xí",
+    "tone": 2,
+    "meaning": "(bound form) to practice",
+    "strokes": 3,
+    "radical": "乙",
+    "radicalMeaning": "second",
+    "components": [
+      "冫",
+      "𠃌"
+    ],
+    "words": [],
+    "zhuyin": "ㄒㄧˊ",
+    "mnemonic": "习 = 冫、𠃌; the second radical (乙) anchors the meaning \"(bound form) to practice\". 冫、𠃌 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-xi2",
+    "language": "zh",
+    "text": "习",
+    "romanization": "xí",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-xi1x",
+    "char": "息",
+    "pinyin": "xī",
+    "tone": 1,
+    "meaning": "breath",
+    "strokes": 10,
+    "radical": "心",
+    "radicalMeaning": "heart",
+    "components": [
+      "心",
+      "自"
+    ],
+    "words": [],
+    "zhuyin": "ㄒㄧ",
+    "mnemonic": "息 = 心、自; the heart radical (心) anchors the meaning \"breath\". 自 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-xi1x",
+    "language": "zh",
+    "text": "息",
+    "romanization": "xī",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-xi",
+    "char": "西",
+    "pinyin": "xī",
+    "tone": 1,
+    "meaning": "the West",
+    "strokes": 6,
+    "radical": "襾",
+    "radicalMeaning": "cover",
+    "components": [
+      "一",
+      "𠁤"
+    ],
+    "words": [
+      "xi12"
+    ],
+    "zhuyin": "ㄒㄧ",
+    "mnemonic": "西 = 一、𠁤; the cover radical (襾) anchors the meaning \"the West\". 一、𠁤 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-xi",
+    "language": "zh",
+    "text": "西",
+    "romanization": "xī",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-xin",
+    "char": "心",
+    "pinyin": "xīn",
+    "tone": 1,
+    "meaning": "heart",
+    "strokes": 4,
+    "radical": "心",
+    "radicalMeaning": "heart",
+    "components": [
+      "心"
+    ],
+    "hsk": 1,
+    "words": [],
+    "zhuyin": "ㄒㄧㄣ",
+    "mnemonic": "A heart with three drops of blood.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-xin",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-xin1",
+    "char": "新",
+    "pinyin": "xīn",
+    "tone": 1,
+    "meaning": "new",
+    "strokes": 13,
+    "radical": "斤",
+    "radicalMeaning": "axe",
+    "components": [
+      "亲",
+      "斤"
+    ],
+    "words": [
+      "xin1"
+    ],
+    "zhuyin": "ㄒㄧㄣ",
+    "mnemonic": "新 = 亲、斤; the axe radical (斤) anchors the meaning \"new\". 亲 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-xin1",
+    "language": "zh",
+    "text": "新",
+    "romanization": "xīn",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-xing",
+    "char": "星",
+    "pinyin": "xīng",
+    "tone": 1,
+    "meaning": "star",
+    "strokes": 9,
+    "radical": "日",
+    "radicalMeaning": "sun",
+    "components": [
+      "日",
+      "生"
+    ],
+    "words": [],
+    "zhuyin": "ㄒㄧㄥ",
+    "mnemonic": "星 = 日、生; the sun radical (日) anchors the meaning \"star\". 生 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-xing",
+    "language": "zh",
+    "text": "星",
+    "romanization": "xīng",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-xi3x",
+    "char": "喜",
+    "pinyin": "xǐ",
+    "tone": 3,
+    "meaning": "to be fond of",
+    "strokes": 12,
+    "radical": "口",
+    "radicalMeaning": "mouth",
+    "components": [
+      "口",
+      "壴"
+    ],
+    "words": [],
+    "zhuyin": "ㄒㄧˇ",
+    "mnemonic": "喜 = 口、壴; the mouth radical (口) anchors the meaning \"to be fond of\". 壴 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-xi3x",
+    "language": "zh",
+    "text": "喜",
+    "romanization": "xǐ",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-yuan4",
+    "char": "院",
+    "pinyin": "yuàn",
+    "tone": 4,
+    "meaning": "courtyard",
+    "strokes": 9,
+    "radical": "隶",
+    "radicalMeaning": "slave",
+    "components": [
+      "完",
+      "阝"
+    ],
+    "words": [],
+    "zhuyin": "ㄩㄢˋ",
+    "mnemonic": "院 = 完、阝; the slave radical (隶) anchors the meaning \"courtyard\". 完、阝 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-yuan4",
+    "language": "zh",
+    "text": "院",
+    "romanization": "yuàn",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-yuan",
+    "char": "元",
+    "pinyin": "yuán",
+    "tone": 2,
+    "meaning": "Yuan dynasty (1279–1368)",
+    "strokes": 4,
+    "radical": "儿",
+    "radicalMeaning": "legs",
+    "components": [
+      "一",
+      "兀"
+    ],
+    "words": [
+      "yuan2"
+    ],
+    "zhuyin": "ㄩㄢˊ",
+    "mnemonic": "元 = 一、兀; the legs radical (儿) anchors the meaning \"Yuan dynasty (1279–1368)\". 一、兀 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-yuan",
+    "language": "zh",
+    "text": "元",
+    "romanization": "yuán",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-yue",
+    "char": "月",
+    "pinyin": "yuè",
+    "tone": 4,
+    "meaning": "moon, month",
+    "strokes": 4,
+    "radical": "月",
+    "radicalMeaning": "moon",
+    "components": [
+      "月"
+    ],
+    "hsk": 1,
+    "words": [
+      "liu4"
+    ],
+    "zhuyin": "ㄩㄝˋ",
+    "mnemonic": "A crescent moon with two inner strokes.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-yue",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-yang",
+    "char": "样",
+    "pinyin": "yàng",
+    "tone": 4,
+    "meaning": "manner",
+    "strokes": 10,
+    "radical": "木",
+    "radicalMeaning": "tree",
+    "components": [
+      "木",
+      "羊"
+    ],
+    "words": [
+      "yang4"
+    ],
+    "zhuyin": "ㄧㄤˋ",
+    "mnemonic": "样 = 木、羊; the tree radical (木) anchors the meaning \"manner\". 羊 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-yang",
+    "language": "zh",
+    "text": "样",
+    "romanization": "yàng",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-yao",
+    "char": "要",
+    "pinyin": "yào",
+    "tone": 4,
+    "meaning": "(bound form) to demand",
+    "strokes": 9,
+    "radical": "襾",
+    "radicalMeaning": "cover",
+    "components": [
+      "女",
+      "覀"
+    ],
+    "words": [
+      "yao4"
+    ],
+    "zhuyin": "ㄧㄠˋ",
+    "mnemonic": "要 = 女、覀; the cover radical (襾) anchors the meaning \"(bound form) to demand\". 女、覀 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-yao",
+    "language": "zh",
+    "text": "要",
+    "romanization": "yào",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-yi4x",
+    "char": "衣",
+    "pinyin": "yì",
+    "tone": 4,
+    "meaning": "to dress",
+    "strokes": 6,
+    "radical": "衣",
+    "radicalMeaning": "clothes",
+    "components": [
+      "亠",
+      "𧘇"
+    ],
+    "words": [],
+    "zhuyin": "ㄧˋ",
+    "mnemonic": "衣 = 亠、𧘇; the clothes radical (衣) anchors the meaning \"to dress\". 亠、𧘇 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-yi4x",
+    "language": "zh",
+    "text": "衣",
+    "romanization": "yì",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-yi2",
+    "char": "宜",
+    "pinyin": "yí",
+    "tone": 2,
+    "meaning": "proper",
+    "strokes": 8,
+    "radical": "宀",
+    "radicalMeaning": "roof",
+    "components": [
+      "且",
+      "宀"
+    ],
+    "words": [],
+    "zhuyin": "ㄧˊ",
+    "mnemonic": "宜 = 且、宀; the roof radical (宀) anchors the meaning \"proper\". 且 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-yi2",
+    "language": "zh",
+    "text": "宜",
+    "romanization": "yí",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-ye",
+    "char": "也",
+    "pinyin": "yě",
+    "tone": 3,
+    "meaning": "also",
+    "strokes": 3,
+    "radical": "乙",
+    "radicalMeaning": "second",
+    "components": [
+      "也"
+    ],
+    "words": [
+      "ye3"
+    ],
+    "zhuyin": "ㄧㄝˇ",
+    "mnemonic": "也 = 也; the second radical (乙) anchors the meaning \"also\". 也 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-ye",
+    "language": "zh",
+    "text": "也",
+    "romanization": "yě",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-yi",
+    "char": "一",
+    "pinyin": "yī",
+    "tone": 1,
+    "meaning": "one",
+    "strokes": 1,
+    "radical": "一",
+    "radicalMeaning": "one",
+    "components": [
+      "一"
+    ],
+    "hsk": 1,
+    "words": [
+      "yi1"
+    ],
+    "zhuyin": "ㄧ",
+    "mnemonic": "A single horizontal stroke: the number one.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-yi",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-yi1",
+    "char": "医",
+    "pinyin": "yī",
+    "tone": 1,
+    "meaning": "medical",
+    "strokes": 7,
+    "radical": "匸",
+    "radicalMeaning": "hiding_enclose",
+    "components": [
+      "匚",
+      "矢"
+    ],
+    "words": [],
+    "zhuyin": "ㄧ",
+    "mnemonic": "医 = 匚、矢; the hiding_enclose radical (匸) anchors the meaning \"medical\". 匚、矢 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-yi1",
+    "language": "zh",
+    "text": "医",
+    "romanization": "yī",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-yi3x",
+    "char": "以",
+    "pinyin": "yǐ",
+    "tone": 3,
+    "meaning": "to use",
+    "strokes": 4,
+    "radical": "人",
+    "radicalMeaning": "man",
+    "components": [
+      "以"
+    ],
+    "words": [
+      "yi3"
+    ],
+    "zhuyin": "ㄧˇ",
+    "mnemonic": "以 = 以; the man radical (人) anchors the meaning \"to use\". 以 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-yi3x",
+    "language": "zh",
+    "text": "以",
+    "romanization": "yǐ",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-yi3xx",
+    "char": "椅",
+    "pinyin": "yǐ",
+    "tone": 3,
+    "meaning": "chair",
+    "strokes": 12,
+    "radical": "木",
+    "radicalMeaning": "tree",
+    "components": [
+      "奇",
+      "木"
+    ],
+    "words": [],
+    "zhuyin": "ㄧˇ",
+    "mnemonic": "椅 = 奇、木; the tree radical (木) anchors the meaning \"chair\". 奇 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-yi3xx",
+    "language": "zh",
+    "text": "椅",
+    "romanization": "yǐ",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-ying",
+    "char": "影",
+    "pinyin": "yǐng",
+    "tone": 3,
+    "meaning": "picture",
+    "strokes": 15,
+    "radical": "彡",
+    "radicalMeaning": "bristle",
+    "components": [
+      "彡",
+      "景"
+    ],
+    "words": [],
+    "zhuyin": "ㄧㄥˇ",
+    "mnemonic": "影 = 彡、景; the bristle radical (彡) anchors the meaning \"picture\". 景 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-ying",
+    "language": "zh",
+    "text": "影",
+    "romanization": "yǐng",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-you3",
+    "char": "友",
+    "pinyin": "yǒu",
+    "tone": 3,
+    "meaning": "friend",
+    "strokes": 4,
+    "radical": "又",
+    "radicalMeaning": "again",
+    "components": [
+      "又",
+      "𠂇"
+    ],
+    "words": [],
+    "zhuyin": "ㄧㄡˇ",
+    "mnemonic": "友 = 又、𠂇; the again radical (又) anchors the meaning \"friend\". 𠂇 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-you3",
+    "language": "zh",
+    "text": "友",
+    "romanization": "yǒu",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-you",
+    "char": "有",
+    "pinyin": "yǒu",
+    "tone": 3,
+    "meaning": "to have",
+    "strokes": 6,
+    "radical": "月",
+    "radicalMeaning": "moon",
+    "components": [
+      "𠂇",
+      "月"
+    ],
+    "hsk": 1,
+    "words": [
+      "you3"
+    ],
+    "zhuyin": "ㄧㄡˇ",
+    "mnemonic": "A hand holding meat: to possess.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-you",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-yu3",
+    "char": "语",
+    "pinyin": "yǔ",
+    "tone": 3,
+    "meaning": "dialect",
+    "strokes": 9,
+    "radical": "谷",
+    "radicalMeaning": "valley",
+    "components": [
+      "吾",
+      "讠"
+    ],
+    "words": [],
+    "zhuyin": "ㄩˇ",
+    "mnemonic": "语 = 吾、讠; the valley radical (谷) anchors the meaning \"dialect\". 吾、讠 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-yu3",
+    "language": "zh",
+    "text": "语",
+    "romanization": "yǔ",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-yu",
+    "char": "雨",
+    "pinyin": "yǔ",
+    "tone": 3,
+    "meaning": "rain",
+    "strokes": 8,
+    "radical": "靑",
+    "radicalMeaning": "blue",
+    "components": [
+      "一",
+      "𠕒"
+    ],
+    "words": [
+      "yu3"
+    ],
+    "zhuyin": "ㄩˇ",
+    "mnemonic": "雨 = 一、𠕒; the blue radical (靑) anchors the meaning \"rain\". 一、𠕒 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-yu",
+    "language": "zh",
+    "text": "雨",
+    "romanization": "yǔ",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-zhuo",
+    "char": "桌",
+    "pinyin": "zhuō",
+    "tone": 1,
+    "meaning": "table",
+    "strokes": 10,
+    "radical": "木",
+    "radicalMeaning": "tree",
+    "components": [
+      "⺊",
+      "杲"
+    ],
+    "words": [],
+    "zhuyin": "ㄓㄨㄛ",
+    "mnemonic": "桌 = ⺊、杲; the tree radical (木) anchors the meaning \"table\". ⺊、杲 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-zhuo",
+    "language": "zh",
+    "text": "桌",
+    "romanization": "zhuō",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-zhe",
+    "char": "这",
+    "pinyin": "zhè",
+    "tone": 4,
+    "meaning": "(coll.) this",
+    "strokes": 7,
+    "radical": "邑",
+    "radicalMeaning": "town",
+    "components": [
+      "文",
+      "辶"
+    ],
+    "words": [
+      "zhe4"
+    ],
+    "zhuyin": "ㄓㄜˋ",
+    "mnemonic": "这 = 文、辶; the town radical (邑) anchors the meaning \"(coll.) this\". 文、辶 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-zhe",
+    "language": "zh",
+    "text": "这",
+    "romanization": "zhè",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-zhu",
+    "char": "住",
+    "pinyin": "zhù",
+    "tone": 4,
+    "meaning": "to live",
+    "strokes": 7,
+    "radical": "人",
+    "radicalMeaning": "man",
+    "components": [
+      "主",
+      "亻"
+    ],
+    "words": [
+      "zhu4"
+    ],
+    "zhuyin": "ㄓㄨˋ",
+    "mnemonic": "住 = 主、亻; the man radical (人) anchors the meaning \"to live\". 主、亻 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-zhu",
+    "language": "zh",
+    "text": "住",
+    "romanization": "zhù",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-zhen",
+    "char": "真",
+    "pinyin": "zhēn",
+    "tone": 1,
+    "meaning": "really",
+    "strokes": 10,
+    "radical": "目",
+    "radicalMeaning": "eye",
+    "components": [
+      "具",
+      "十"
+    ],
+    "words": [
+      "zhen12"
+    ],
+    "zhuyin": "ㄓㄣ",
+    "mnemonic": "真 = 具、十; the eye radical (目) anchors the meaning \"really\". 具、十 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-zhen",
+    "language": "zh",
+    "text": "真",
+    "romanization": "zhēn",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-zheng",
+    "char": "正",
+    "pinyin": "zhēng",
+    "tone": 1,
+    "meaning": "first month of the lunar year",
+    "strokes": 5,
+    "radical": "止",
+    "radicalMeaning": "stop",
+    "components": [
+      "一",
+      "止"
+    ],
+    "words": [
+      "zheng4"
+    ],
+    "zhuyin": "ㄓㄥ",
+    "mnemonic": "正 = 一、止; the stop radical (止) anchors the meaning \"first month of the lunar\". 一 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-zheng",
+    "language": "zh",
+    "text": "正",
+    "romanization": "zhēng",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-zhi",
+    "char": "知",
+    "pinyin": "zhī",
+    "tone": 1,
+    "meaning": "to know",
+    "strokes": 8,
+    "radical": "矢",
+    "radicalMeaning": "arrow",
+    "components": [
+      "口",
+      "矢"
+    ],
+    "words": [],
+    "zhuyin": "ㄓ",
+    "mnemonic": "知 = 口、矢; the arrow radical (矢) anchors the meaning \"to know\". 口 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-zhi",
+    "language": "zh",
+    "text": "知",
+    "romanization": "zhī",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-zhong",
+    "char": "中",
+    "pinyin": "zhōng",
+    "tone": 1,
+    "meaning": "center",
+    "strokes": 4,
+    "radical": "丨",
+    "radicalMeaning": "line",
+    "components": [
+      "口",
+      "丨"
+    ],
+    "hsk": 1,
+    "words": [
+      "zhongguo"
+    ],
+    "zhuyin": "ㄓㄨㄥ",
+    "mnemonic": "An arrow piercing the center of a target.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-zhong",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-zhong1",
+    "char": "钟",
+    "pinyin": "zhōng",
+    "tone": 1,
+    "meaning": "handleless cup",
+    "strokes": 9,
+    "radical": "長",
+    "radicalMeaning": "long",
+    "components": [
+      "中",
+      "钅"
+    ],
+    "words": [
+      "zhong1"
+    ],
+    "zhuyin": "ㄓㄨㄥ",
+    "mnemonic": "钟 = 中、钅; the long radical (長) anchors the meaning \"handleless cup\". 中、钅 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-zhong1",
+    "language": "zh",
+    "text": "钟",
+    "romanization": "zhōng",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-zhao",
+    "char": "找",
+    "pinyin": "zhǎo",
+    "tone": 3,
+    "meaning": "to try to find",
+    "strokes": 7,
+    "radical": "手",
+    "radicalMeaning": "hand",
+    "components": [
+      "戈",
+      "扌"
+    ],
+    "words": [
+      "zhao3"
+    ],
+    "zhuyin": "ㄓㄠˇ",
+    "mnemonic": "找 = 戈、扌; the hand radical (手) anchors the meaning \"to try to find\". 戈、扌 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-zhao",
+    "language": "zh",
+    "text": "找",
+    "romanization": "zhǎo",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-zhi3",
+    "char": "只",
+    "pinyin": "zhǐ",
+    "tone": 3,
+    "meaning": "grain that has begun to ripen",
+    "strokes": 5,
+    "radical": "口",
+    "radicalMeaning": "mouth",
+    "components": [
+      "八",
+      "口"
+    ],
+    "words": [
+      "zhi3"
+    ],
+    "zhuyin": "ㄓˇ",
+    "mnemonic": "只 = 八、口; the mouth radical (口) anchors the meaning \"grain that has begun to \". 八 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-zhi3",
+    "language": "zh",
+    "text": "只",
+    "romanization": "zhǐ",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-zuo4",
+    "char": "作",
+    "pinyin": "zuò",
+    "tone": 4,
+    "meaning": "to do",
+    "strokes": 7,
+    "radical": "人",
+    "radicalMeaning": "man",
+    "components": [
+      "乍",
+      "亻"
+    ],
+    "words": [],
+    "zhuyin": "ㄗㄨㄛˋ",
+    "mnemonic": "作 = 乍、亻; the man radical (人) anchors the meaning \"to do\". 乍、亻 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-zuo4",
+    "language": "zh",
+    "text": "作",
+    "romanization": "zuò",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-zuo4xx",
+    "char": "做",
+    "pinyin": "zuò",
+    "tone": 4,
+    "meaning": "to make",
+    "strokes": 11,
+    "radical": "人",
+    "radicalMeaning": "man",
+    "components": [
+      "亻",
+      "故"
+    ],
+    "words": [
+      "zuo4"
+    ],
+    "zhuyin": "ㄗㄨㄛˋ",
+    "mnemonic": "做 = 亻、故; the man radical (人) anchors the meaning \"to make\". 亻、故 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-zuo4xx",
+    "language": "zh",
+    "text": "做",
+    "romanization": "zuò",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-zuo4x",
+    "char": "坐",
+    "pinyin": "zuò",
+    "tone": 4,
+    "meaning": "to sit",
+    "strokes": 7,
+    "radical": "土",
+    "radicalMeaning": "earth",
+    "components": [
+      "从",
+      "土"
+    ],
+    "words": [
+      "zuo42"
+    ],
+    "zhuyin": "ㄗㄨㄛˋ",
+    "mnemonic": "坐 = 从、土; the earth radical (土) anchors the meaning \"to sit\". 从 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-zuo4x",
+    "language": "zh",
+    "text": "坐",
+    "romanization": "zuò",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-zuo",
+    "char": "昨",
+    "pinyin": "zuó",
+    "tone": 2,
+    "meaning": "yesterday",
+    "strokes": 9,
+    "radical": "日",
+    "radicalMeaning": "sun",
+    "components": [
+      "乍",
+      "日"
+    ],
+    "words": [],
+    "zhuyin": "ㄗㄨㄛˊ",
+    "mnemonic": "昨 = 乍、日; the sun radical (日) anchors the meaning \"yesterday\". 乍 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-zuo",
+    "language": "zh",
+    "text": "昨",
+    "romanization": "zuó",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-zai4",
+    "char": "再",
+    "pinyin": "zài",
+    "tone": 4,
+    "meaning": "again",
+    "strokes": 6,
+    "radical": "冂",
+    "radicalMeaning": "enclosure",
+    "components": [
+      "一",
+      "冉"
+    ],
+    "words": [
+      "zai4"
+    ],
+    "zhuyin": "ㄗㄞˋ",
+    "mnemonic": "再 = 一、冉; the enclosure radical (冂) anchors the meaning \"again\". 一、冉 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-zai4",
+    "language": "zh",
+    "text": "再",
+    "romanization": "zài",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-zai",
+    "char": "在",
+    "pinyin": "zài",
+    "tone": 4,
+    "meaning": "to be at",
+    "strokes": 6,
+    "radical": "土",
+    "radicalMeaning": "earth",
+    "components": [
+      "才",
+      "土"
+    ],
+    "hsk": 1,
+    "words": [
+      "zai4",
+      "xianzai",
+      "zaijian"
+    ],
+    "zhuyin": "ㄗㄞˋ",
+    "mnemonic": "A sprout on the earth: to exist in a place.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-zai",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-zi4x",
+    "char": "字",
+    "pinyin": "zì",
+    "tone": 4,
+    "meaning": "letter",
+    "strokes": 6,
+    "radical": "子",
+    "radicalMeaning": "child",
+    "components": [
+      "子",
+      "宀"
+    ],
+    "words": [
+      "zi4"
+    ],
+    "zhuyin": "ㄗˋ",
+    "mnemonic": "字 = 子、宀; the child radical (子) anchors the meaning \"letter\". 宀 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-zi4x",
+    "language": "zh",
+    "text": "字",
+    "romanization": "zì",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-zen",
+    "char": "怎",
+    "pinyin": "zěn",
+    "tone": 3,
+    "meaning": "how",
+    "strokes": 9,
+    "radical": "心",
+    "radicalMeaning": "heart",
+    "components": [
+      "乍",
+      "心"
+    ],
+    "words": [],
+    "zhuyin": "ㄗㄣˇ",
+    "mnemonic": "怎 = 乍、心; the heart radical (心) anchors the meaning \"how\". 乍 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-zen",
+    "language": "zh",
+    "text": "怎",
+    "romanization": "zěn",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-zu",
+    "char": "租",
+    "pinyin": "zū",
+    "tone": 1,
+    "meaning": "to hire",
+    "strokes": 10,
+    "radical": "禾",
+    "radicalMeaning": "grain",
+    "components": [
+      "且",
+      "禾"
+    ],
+    "words": [
+      "zu1"
+    ],
+    "zhuyin": "ㄗㄨ",
+    "mnemonic": "租 = 且、禾; the grain radical (禾) anchors the meaning \"to hire\". 且 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-zu",
+    "language": "zh",
+    "text": "租",
+    "romanization": "zū",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-zao",
+    "char": "早",
+    "pinyin": "zǎo",
+    "tone": 3,
+    "meaning": "early",
+    "strokes": 6,
+    "radical": "日",
+    "radicalMeaning": "sun",
+    "components": [
+      "十",
+      "日"
+    ],
+    "words": [
+      "zao3"
+    ],
+    "zhuyin": "ㄗㄠˇ",
+    "mnemonic": "早 = 十、日; the sun radical (日) anchors the meaning \"early\". 十 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-zao",
+    "language": "zh",
+    "text": "早",
+    "romanization": "zǎo",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-zi",
+    "char": "子",
+    "pinyin": "zǐ",
+    "tone": 3,
+    "meaning": "son, child",
+    "strokes": 3,
+    "radical": "子",
+    "radicalMeaning": "child",
+    "components": [
+      "子"
+    ],
+    "hsk": 1,
+    "words": [
+      "mingzi"
+    ],
+    "zhuyin": "ㄗˇ",
+    "mnemonic": "A baby wrapped up with open arms.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-zi",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-ai",
+    "char": "爱",
+    "pinyin": "ài",
+    "tone": 4,
+    "meaning": "to love",
+    "strokes": 10,
+    "radical": "爪",
+    "radicalMeaning": "claw",
+    "components": [
+      "爪",
+      "冖",
+      "友"
+    ],
+    "hsk": 1,
+    "words": [
+      "ai4"
+    ],
+    "zhuyin": "ㄞˋ",
+    "traditional": "愛",
+    "mnemonic": "A hand that cares and offers friendship: to love.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-ai",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-er",
+    "char": "二",
+    "pinyin": "èr",
+    "tone": 4,
+    "meaning": "two",
+    "strokes": 2,
+    "radical": "二",
+    "radicalMeaning": "two",
+    "components": [
+      "一",
+      "一"
+    ],
+    "hsk": 1,
+    "words": [
+      "er4"
+    ],
+    "zhuyin": "ㄦˋ",
+    "mnemonic": "Two horizontal strokes: the number two.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-er",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-er2",
+    "char": "儿",
+    "pinyin": "ér",
+    "tone": 2,
+    "meaning": "child",
+    "strokes": 2,
+    "radical": "儿",
+    "radicalMeaning": "legs",
+    "components": [
+      "丿",
+      "乚"
+    ],
+    "words": [],
+    "zhuyin": "ㄦˊ",
+    "mnemonic": "儿 = 丿、乚; the legs radical (儿) anchors the meaning \"child\". 丿、乚 hints the sound.",
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "char:c-er2",
+    "language": "zh",
+    "text": "儿",
+    "romanization": "ér",
+    "tags": [
+      "approximation"
+    ]
+  }
+]
