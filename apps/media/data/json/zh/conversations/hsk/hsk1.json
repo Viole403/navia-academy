@@ -1,0 +1,554 @@
+[
+  {
+    "id": "conv-introduce-self",
+    "title": "Introduce yourself",
+    "context": "You meet a Chinese classmate on your first day of class.",
+    "hsk": 1,
+    "formality": "neutral",
+    "turns": [
+      {
+        "speaker": "tutor",
+        "hanzi": "你好！我叫李明。你叫什么名字？",
+        "pinyin": "nǐ hǎo! wǒ jiào lǐ míng. nǐ jiào shénme míngzi?",
+        "zhuyin": "ㄋㄧˇ ㄏㄠˇ! ㄨㄛˇ ㄐㄧㄠˋ ㄌㄧˇ ㄇㄧㄥˊ. ㄋㄧˇ ㄐㄧㄠˋ ㄕㄣˊㄇㄜ˙ ㄇㄧㄥˊㄗ˙?",
+        "translation": "Hi! My name is Li Ming. What's your name?",
+        "text": "你好！我叫李明。你叫什么名字？",
+        "romanization": "nǐ hǎo! wǒ jiào lǐ míng. nǐ jiào shénme míngzi?",
+        "translation_en": "Hi! My name is Li Ming. What's your name?",
+        "translation_id": "Halo! Nama saya Li Ming. Siapa namamu?"
+      },
+      {
+        "speaker": "user",
+        "hanzi": "",
+        "pinyin": "",
+        "zhuyin": "",
+        "translation": "",
+        "choices": [
+          {
+            "hanzi": "你好！我叫安娜。",
+            "pinyin": "nǐ hǎo! wǒ jiào ānnà.",
+            "zhuyin": "ㄋㄧˇ ㄏㄠˇ! ㄨㄛˇ ㄐㄧㄠˋ ㄢㄋㄚˋ.",
+            "translation": "Hi! My name is Ana.",
+            "natural": true,
+            "feedback": "Perfect: you greet and respond with 我叫 + name."
+          },
+          {
+            "hanzi": "我很好。",
+            "pinyin": "wǒ hěn hǎo.",
+            "zhuyin": "ㄨㄛˇ ㄏㄣˇ ㄏㄠˇ.",
+            "translation": "I'm very well.",
+            "natural": false,
+            "feedback": "That answers 你好吗, not the question about your name."
+          },
+          {
+            "hanzi": "再见！",
+            "pinyin": "zàijiàn!",
+            "zhuyin": "ㄗㄞˋㄐㄧㄢˋ!",
+            "translation": "Goodbye!",
+            "natural": false,
+            "feedback": "Ending the conversation here would cut it short."
+          }
+        ],
+        "text": "",
+        "romanization": ""
+      },
+      {
+        "speaker": "tutor",
+        "hanzi": "很高兴认识你！你是哪国人？",
+        "pinyin": "hěn gāoxìng rènshi nǐ! nǐ shì nǎ guó rén?",
+        "zhuyin": "ㄏㄣˇ ㄍㄠㄒㄧㄥˋ ㄖㄣˋㄕ˙ ㄋㄧˇ! ㄋㄧˇ ㄕˋ ㄋㄚˇ ㄍㄨㄛˊ ㄖㄣˊ?",
+        "translation": "Nice to meet you! What country are you from?",
+        "text": "很高兴认识你！你是哪国人？",
+        "romanization": "hěn gāoxìng rènshi nǐ! nǐ shì nǎ guó rén?",
+        "translation_en": "Nice to meet you! What country are you from?",
+        "translation_id": "Senang berkenalan! Kamu dari negara mana?"
+      },
+      {
+        "speaker": "user",
+        "hanzi": "",
+        "pinyin": "",
+        "zhuyin": "",
+        "translation": "",
+        "choices": [
+          {
+            "hanzi": "我是西班牙人。",
+            "pinyin": "wǒ shì xībānyárén.",
+            "zhuyin": "ㄨㄛˇ ㄕˋ ㄒㄧㄅㄢㄧㄚˊㄖㄣˊ.",
+            "translation": "I'm Spanish.",
+            "natural": true,
+            "feedback": "Correct: 我是 + country + 人."
+          },
+          {
+            "hanzi": "我是学生。",
+            "pinyin": "wǒ shì xuésheng.",
+            "zhuyin": "ㄨㄛˇ ㄕˋ ㄒㄩㄝˊㄕㄥ˙.",
+            "translation": "I'm a student.",
+            "natural": false,
+            "feedback": "Answers the profession, not nationality."
+          },
+          {
+            "hanzi": "我不知道。",
+            "pinyin": "wǒ bù zhīdào.",
+            "zhuyin": "ㄨㄛˇ ㄅㄨˋ ㄓㄉㄠˋ.",
+            "translation": "I don't know.",
+            "natural": false,
+            "feedback": "Grammatically correct, but not a credible answer."
+          }
+        ],
+        "text": "",
+        "romanization": ""
+      },
+      {
+        "speaker": "tutor",
+        "hanzi": "太好了！我们一起学习吧。",
+        "pinyin": "tài hǎo le! wǒmen yìqǐ xuéxí ba.",
+        "zhuyin": "ㄊㄞˋ ㄏㄠˇ ㄌㄜ˙! ㄨㄛˇㄇㄣ˙ ㄧˋㄑㄧˇ ㄒㄩㄝˊㄒㄧˊ ㄅㄚ˙.",
+        "translation": "That's great! Let's study together.",
+        "text": "太好了！我们一起学习吧。",
+        "romanization": "tài hǎo le! wǒmen yìqǐ xuéxí ba.",
+        "translation_en": "That's great! Let's study together.",
+        "translation_id": "Bagus sekali! Ayo belajar bersama."
+      }
+    ],
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "conv:conv-introduce-self",
+    "language": "zh",
+    "level": 1,
+    "context_en": "You meet a Chinese classmate on your first day of class.",
+    "context_id": "Kamu bertemu teman sekelas asal Tiongkok di hari pertama.",
+    "title_en": "Introduce yourself",
+    "title_id": "Perkenalan diri"
+  },
+  {
+    "id": "conv-order-food",
+    "title": "Ordering food",
+    "context": "You enter a small restaurant in Beijing at meal time.",
+    "hsk": 1,
+    "formality": "neutral",
+    "turns": [
+      {
+        "speaker": "tutor",
+        "hanzi": "欢迎！你要什么？",
+        "pinyin": "huānyíng! ní yáo shénme?",
+        "zhuyin": "ㄏㄨㄢㄧㄥˊ! ㄋㄧˊ ㄧㄠˊ ㄕㄣˊㄇㄜ˙?",
+        "translation": "Welcome! What would you like?",
+        "text": "欢迎！你要什么？",
+        "romanization": "huānyíng! ní yáo shénme?",
+        "translation_en": "Welcome! What would you like?",
+        "translation_id": "Selamat datang! Mau pesan apa?"
+      },
+      {
+        "speaker": "user",
+        "hanzi": "",
+        "pinyin": "",
+        "zhuyin": "",
+        "translation": "",
+        "choices": [
+          {
+            "hanzi": "我要米饭和茶。",
+            "pinyin": "wǒ yào mǐfàn hé chá.",
+            "zhuyin": "ㄨㄛˇ ㄧㄠˋ ㄇㄧˇㄈㄢˋ ㄏㄜˊ ㄔㄚˊ.",
+            "translation": "I'd like rice and tea.",
+            "natural": true,
+            "feedback": "Perfect: 我要 + what you order."
+          },
+          {
+            "hanzi": "我是米饭。",
+            "pinyin": "wǒ shì mǐfàn.",
+            "zhuyin": "ㄨㄛˇ ㄕˋ ㄇㄧˇㄈㄢˋ.",
+            "translation": "I am rice.",
+            "natural": false,
+            "feedback": "是 identifies, which doesn't work for ordering. Use 我要."
+          },
+          {
+            "hanzi": "米饭喜欢我。",
+            "pinyin": "mǐfàn xǐhuan wǒ.",
+            "zhuyin": "ㄇㄧˇㄈㄢˋ ㄒㄧˇㄏㄨㄢ˙ ㄨㄛˇ.",
+            "translation": "Rice likes me.",
+            "natural": false,
+            "feedback": "Word order is inverted: you would instead say you would like the rice."
+          }
+        ],
+        "text": "",
+        "romanization": ""
+      },
+      {
+        "speaker": "tutor",
+        "hanzi": "好的。要喝水吗？",
+        "pinyin": "hǎo de. yào hē shuǐ ma?",
+        "zhuyin": "ㄏㄠˇ ㄉㄜ˙. ㄧㄠˋ ㄏㄜ ㄕㄨㄟˇ ㄇㄚ˙?",
+        "translation": "Okay. Would you like water?",
+        "text": "好的。要喝水吗？",
+        "romanization": "hǎo de. yào hē shuǐ ma?",
+        "translation_en": "Okay. Would you like water?",
+        "translation_id": "Baik. Mau minum air?"
+      },
+      {
+        "speaker": "user",
+        "hanzi": "",
+        "pinyin": "",
+        "zhuyin": "",
+        "translation": "",
+        "choices": [
+          {
+            "hanzi": "不用，谢谢。有茶就好。",
+            "pinyin": "búyòng, xièxie. yǒu chá jiù hǎo.",
+            "zhuyin": "ㄅㄨˊㄩㄥˋ, ㄒㄧㄝˋㄒㄧㄝ˙. ㄧㄡˇ ㄔㄚˊ ㄐㄧㄡˋ ㄏㄠˇ.",
+            "translation": "No need, thanks. Tea will do.",
+            "natural": true,
+            "feedback": "Natural and polite response."
+          },
+          {
+            "hanzi": "我不是水。",
+            "pinyin": "wǒ bú shì shuǐ.",
+            "zhuyin": "ㄨㄛˇ ㄅㄨˊ ㄕˋ ㄕㄨㄟˇ.",
+            "translation": "I'm not water.",
+            "natural": false,
+            "feedback": "Again: 是 doesn't work here."
+          },
+          {
+            "hanzi": "多少钱？",
+            "pinyin": "duōshao qián?",
+            "zhuyin": "ㄉㄨㄛㄕㄠ˙ ㄑㄧㄢˊ?",
+            "translation": "How much is it?",
+            "natural": false,
+            "feedback": "Valid, but doesn't answer the waiter's question."
+          }
+        ],
+        "text": "",
+        "romanization": ""
+      },
+      {
+        "speaker": "tutor",
+        "hanzi": "好，请等一下。",
+        "pinyin": "hǎo, qǐng děng yíxià.",
+        "zhuyin": "ㄏㄠˇ, ㄑㄧㄥˇ ㄉㄥˇ ㄧˊㄒㄧㄚˋ.",
+        "translation": "Okay, please wait a moment.",
+        "text": "好，请等一下。",
+        "romanization": "hǎo, qǐng děng yíxià.",
+        "translation_en": "Okay, please wait a moment.",
+        "translation_id": "Baik, mohon tunggu sebentar."
+      }
+    ],
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "conv:conv-order-food",
+    "language": "zh",
+    "level": 1,
+    "context_en": "You enter a small restaurant in Beijing at meal time.",
+    "context_id": "Kamu masuk restoran kecil di Beijing saat jam makan.",
+    "title_en": "Ordering food",
+    "title_id": "Memesan makanan"
+  },
+  {
+    "id": "conv-buying",
+    "title": "Buying at the market",
+    "context": "You want to buy fruit at a market stall.",
+    "hsk": 1,
+    "formality": "informal",
+    "turns": [
+      {
+        "speaker": "tutor",
+        "hanzi": "你好！要买什么？",
+        "pinyin": "nǐ hǎo! yào mǎi shénme?",
+        "zhuyin": "ㄋㄧˇ ㄏㄠˇ! ㄧㄠˋ ㄇㄞˇ ㄕㄣˊㄇㄜ˙?",
+        "translation": "Hello! What would you like to buy?",
+        "text": "你好！要买什么？",
+        "romanization": "nǐ hǎo! yào mǎi shénme?",
+        "translation_en": "Hello! What would you like to buy?",
+        "translation_id": "Halo! Mau beli apa?"
+      },
+      {
+        "speaker": "user",
+        "hanzi": "",
+        "pinyin": "",
+        "zhuyin": "",
+        "translation": "",
+        "choices": [
+          {
+            "hanzi": "这个多少钱？",
+            "pinyin": "zhè ge duōshao qián?",
+            "zhuyin": "ㄓㄜˋ ㄍㄜ˙ ㄉㄨㄛㄕㄠ˙ ㄑㄧㄢˊ?",
+            "translation": "How much is this?",
+            "natural": true,
+            "feedback": "The key question for any purchase."
+          },
+          {
+            "hanzi": "你多少钱？",
+            "pinyin": "nǐ duōshao qián?",
+            "zhuyin": "ㄋㄧˇ ㄉㄨㄛㄕㄠ˙ ㄑㄧㄢˊ?",
+            "translation": "How much are you?",
+            "natural": false,
+            "feedback": "Careful! Ask about the object: 这个多少钱."
+          },
+          {
+            "hanzi": "我是钱。",
+            "pinyin": "wǒ shì qián.",
+            "zhuyin": "ㄨㄛˇ ㄕˋ ㄑㄧㄢˊ.",
+            "translation": "I'm money.",
+            "natural": false,
+            "feedback": "That doesn't make sense here."
+          }
+        ],
+        "text": "",
+        "romanization": ""
+      },
+      {
+        "speaker": "tutor",
+        "hanzi": "八块钱。很好吃！",
+        "pinyin": "bā kuài qián. hěn hǎochī!",
+        "zhuyin": "ㄅㄚ ㄎㄨㄞˋ ㄑㄧㄢˊ. ㄏㄣˇ ㄏㄠˇㄔ!",
+        "translation": "Eight yuan. It's delicious!",
+        "text": "八块钱。很好吃！",
+        "romanization": "bā kuài qián. hěn hǎochī!",
+        "translation_en": "Eight yuan. It's delicious!",
+        "translation_id": "Delapan yuan. Enak!"
+      },
+      {
+        "speaker": "user",
+        "hanzi": "",
+        "pinyin": "",
+        "zhuyin": "",
+        "translation": "",
+        "choices": [
+          {
+            "hanzi": "好，我买两个。",
+            "pinyin": "hǎo, wǒ mǎi liǎng ge.",
+            "zhuyin": "ㄏㄠˇ, ㄨㄛˇ ㄇㄞˇ ㄌㄧㄤˇ ㄍㄜ˙.",
+            "translation": "Okay, I'll take two.",
+            "natural": true,
+            "feedback": "Remember: 两, not 二, before a measure word."
+          },
+          {
+            "hanzi": "好，我买二个。",
+            "pinyin": "hǎo, wǒ mǎi èr ge.",
+            "zhuyin": "ㄏㄠˇ, ㄨㄛˇ ㄇㄞˇ ㄦˋ ㄍㄜ˙.",
+            "translation": "Okay, I'll take two.",
+            "natural": false,
+            "feedback": "Almost: before a measure word use 两, not 二."
+          },
+          {
+            "hanzi": "再见。",
+            "pinyin": "zàijiàn.",
+            "zhuyin": "ㄗㄞˋㄐㄧㄢˋ.",
+            "translation": "Goodbye.",
+            "natural": false,
+            "feedback": "You would leave without buying."
+          }
+        ],
+        "text": "",
+        "romanization": ""
+      },
+      {
+        "speaker": "tutor",
+        "hanzi": "十六块。谢谢！",
+        "pinyin": "shíliù kuài. xièxie!",
+        "zhuyin": "ㄕˊㄌㄧㄡˋ ㄎㄨㄞˋ. ㄒㄧㄝˋㄒㄧㄝ˙!",
+        "translation": "Sixteen yuan. Thanks!",
+        "text": "十六块。谢谢！",
+        "romanization": "shíliù kuài. xièxie!",
+        "translation_en": "Sixteen yuan. Thanks!",
+        "translation_id": "Enam belas yuan. Terima kasih!"
+      }
+    ],
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "conv:conv-buying",
+    "language": "zh",
+    "level": 1,
+    "context_en": "You want to buy fruit at a market stall.",
+    "context_id": "Kamu ingin membeli buah di kios pasar.",
+    "title_en": "Buying at the market",
+    "title_id": "Beli di pasar"
+  },
+  {
+    "id": "conv-hsk-hsk1-gongsi",
+    "title": "公司",
+    "title_en": "Talking about company; firm; corporation; CL:家[jia1]",
+    "title_id": "Ngobrol tentang perusahaan",
+    "context": "You chat about company; firm; corporation; CL:家[jia1].",
+    "context_en": "You chat about company; firm; corporation; CL:家[jia1].",
+    "context_id": "Kamu mengobrol tentang perusahaan.",
+    "formality": "neutral",
+    "level": 1,
+    "turns": [
+      {
+        "speaker": "tutor",
+        "text": "我八点起床。",
+        "hanzi": "我八点起床。",
+        "pinyin": "wǒ bā diǎn qǐ chuáng 。",
+        "zhuyin": "ㄨㄛˇ ㄅㄚ ㄉㄧㄢˇ ㄑㄧˇ ㄔㄨㄤˊ 。",
+        "romanization": "Wǒ bā diǎn qǐchuáng.",
+        "translation": "I get up at eight.",
+        "translation_en": "I get up at eight.",
+        "translation_id": "Saya bangun jam delapan."
+      },
+      {
+        "speaker": "user",
+        "text": "我不是老师。",
+        "hanzi": "我不是老师。",
+        "pinyin": "wǒ bú shì lǎo shī 。",
+        "zhuyin": "ㄨㄛˇ ㄅㄨˊ ㄕˋ ㄌㄠˇ ㄕ 。",
+        "romanization": "wǒ bú shì lǎoshī.",
+        "translation": "I am not a teacher.",
+        "translation_en": "I am not a teacher.",
+        "translation_id": "Saya bukan guru."
+      },
+      {
+        "speaker": "tutor",
+        "text": "我弟弟五岁。",
+        "hanzi": "我弟弟五岁。",
+        "pinyin": "wǒ dì di wǔ suì 。",
+        "zhuyin": "ㄨㄛˇ ㄉㄧˋ ㄉㄧ˙ ㄨˇ ㄙㄨㄟˋ 。",
+        "romanization": "Wǒ dìdi wǔ suì.",
+        "translation": "My younger brother is five.",
+        "translation_en": "My younger brother is five.",
+        "translation_id": "Adik laki-laki saya lima tahun."
+      },
+      {
+        "speaker": "user",
+        "text": "我们都是学生。",
+        "hanzi": "我们都是学生。",
+        "pinyin": "wǒ men dōu shì xué shēng 。",
+        "zhuyin": "ㄨㄛˇ ㄇㄣ˙ ㄉㄡ ㄕˋ ㄒㄩㄝˊ ㄕㄥ 。",
+        "romanization": "Wǒmen dōu shì xuésheng.",
+        "translation": "We are all students.",
+        "translation_en": "We are all students.",
+        "translation_id": "Kami semua pelajar."
+      }
+    ],
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "conv:conv-hsk-hsk1-gongsi",
+    "language": "zh"
+  },
+  {
+    "id": "conv-hsk-hsk1-haizi1",
+    "title": "孩子",
+    "title_en": "Talking about child",
+    "title_id": "Ngobrol tentang anak",
+    "context": "You chat about child.",
+    "context_en": "You chat about child.",
+    "context_id": "Kamu mengobrol tentang anak.",
+    "formality": "neutral",
+    "level": 1,
+    "turns": [
+      {
+        "speaker": "tutor",
+        "text": "天气太热了，孩子们都想吃雪糕。",
+        "hanzi": "天气太热了，孩子们都想吃雪糕。",
+        "pinyin": "tiān qì tài rè le ， hái zi men dōu xiǎng chī xuě gāo 。",
+        "zhuyin": "ㄊㄧㄢ ㄑㄧˋ ㄊㄞˋ ㄖㄜˋ ㄌㄜ˙ ， ㄏㄞˊ ㄗ˙ ㄇㄣ˙ ㄉㄡ ㄒㄧㄤˇ ㄔ ㄒㄩㄝˇ ㄍㄠ 。",
+        "romanization": "Tiānqì tài rè le, háizimen dōu xiǎng chī xuěgāo.",
+        "translation": "The weather is so hot that the children all want to eat ice cream.",
+        "translation_en": "The weather is so hot that the children all want to eat ice cream.",
+        "translation_id": "Cuacanya panas sekali sehingga anak-anak semua ingin makan es krim."
+      },
+      {
+        "speaker": "user",
+        "text": "孩子已经能认很多汉字了。",
+        "hanzi": "孩子已经能认很多汉字了。",
+        "pinyin": "hái zi yǐ jīng néng rèn hěn duō hàn zì le 。",
+        "zhuyin": "ㄏㄞˊ ㄗ˙ ㄧˇ ㄐㄧㄥ ㄋㄥˊ ㄖㄣˋ ㄏㄣˇ ㄉㄨㄛ ㄏㄢˋ ㄗˋ ㄌㄜ˙ 。",
+        "romanization": "Háizi yǐjīng néng rèn hěn duō Hànzì le.",
+        "translation": "The child can already recognise many Chinese characters.",
+        "translation_en": "The child can already recognise many Chinese characters.",
+        "translation_id": "Anak sudah bisa mengenali banyak karakter Cina."
+      },
+      {
+        "speaker": "tutor",
+        "text": "我们在这家饭店吃饭。",
+        "hanzi": "我们在这家饭店吃饭。",
+        "pinyin": "wǒ men zài zhè jiā fàn diàn chī fàn 。",
+        "zhuyin": "ㄨㄛˇ ㄇㄣ˙ ㄗㄞˋ ㄓㄜˋ ㄐㄧㄚ ㄈㄢˋ ㄉㄧㄢˋ ㄔ ㄈㄢˋ 。",
+        "romanization": "Wǒmen zài zhè jiā fàndiàn chīfàn.",
+        "translation": "We eat at this restaurant.",
+        "translation_en": "We eat at this restaurant.",
+        "translation_id": "Kami makan di restoran ini."
+      },
+      {
+        "speaker": "user",
+        "text": "我哥哥很高。",
+        "hanzi": "我哥哥很高。",
+        "pinyin": "wǒ gē gē hěn gāo 。",
+        "zhuyin": "ㄨㄛˇ ㄍㄜ ㄍㄜ ㄏㄣˇ ㄍㄠ 。",
+        "romanization": "Wǒ gēge hěn gāo.",
+        "translation": "My older brother is tall.",
+        "translation_en": "My older brother is tall.",
+        "translation_id": "Kakak saya tinggi."
+      }
+    ],
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "conv:conv-hsk-hsk1-haizi1",
+    "language": "zh"
+  },
+  {
+    "id": "conv-hsk-hsk1-xuesheng2",
+    "title": "学生",
+    "title_en": "Talking about student",
+    "title_id": "Ngobrol tentang pelajar",
+    "context": "You chat about student.",
+    "context_en": "You chat about student.",
+    "context_id": "Kamu mengobrol tentang pelajar.",
+    "formality": "neutral",
+    "level": 1,
+    "turns": [
+      {
+        "speaker": "tutor",
+        "text": "听说老师住院后，学生们一起去医院看望她。",
+        "hanzi": "听说老师住院后，学生们一起去医院看望她。",
+        "pinyin": "tīng shuō lǎo shī zhù yuàn hòu ， xué shēng men yì qǐ qù yī yuàn kàn wàng tā 。",
+        "zhuyin": "ㄊㄧㄥ ㄕㄨㄛ ㄌㄠˇ ㄕ ㄓㄨˋ ㄩㄢˋ ㄏㄡˋ ， ㄒㄩㄝˊ ㄕㄥ ㄇㄣ˙ ㄧˋ ㄑㄧˇ ㄑㄩˋ ㄧ ㄩㄢˋ ㄎㄢˋ ㄨㄤˋ ㄊㄚ 。",
+        "romanization": "Tīngshuō lǎoshī zhùyuàn hòu, xuésheng men yìqǐ qù yīyuàn kànwàng tā.",
+        "translation": "After hearing that the teacher had been hospitalised, the students went to the hospital together to visit her.",
+        "translation_en": "After hearing that the teacher had been hospitalised, the students went to the hospital together to visit her.",
+        "translation_id": "Setelah mendengar bahwa gurunya dirawat di rumah sakit, para siswa pergi ke rumah sakit bersama untuk menjenguknya."
+      },
+      {
+        "speaker": "user",
+        "text": "很好。",
+        "hanzi": "很好。",
+        "pinyin": "hěn hǎo 。",
+        "zhuyin": "ㄏㄣˇ ㄏㄠˇ 。",
+        "romanization": "hěn hǎo.",
+        "translation": "Very good.",
+        "translation_en": "Very good.",
+        "translation_id": "Sangat baik."
+      },
+      {
+        "speaker": "tutor",
+        "text": "今天是五月一号。",
+        "hanzi": "今天是五月一号。",
+        "pinyin": "jīn tiān shì wǔ yuè yī hào 。",
+        "zhuyin": "ㄐㄧㄣ ㄊㄧㄢ ㄕˋ ㄨˇ ㄩㄝˋ ㄧ ㄏㄠˋ 。",
+        "romanization": "Jīntiān shì wǔ yuè yī hào.",
+        "translation": "Today is the first of May.",
+        "translation_en": "Today is the first of May.",
+        "translation_id": "Hari ini tanggal satu Mei."
+      },
+      {
+        "speaker": "user",
+        "text": "这个菜很好吃。",
+        "hanzi": "这个菜很好吃。",
+        "pinyin": "zhè ge cài hěn hǎo chī 。",
+        "zhuyin": "ㄓㄜˋ ㄍㄜ˙ ㄘㄞˋ ㄏㄣˇ ㄏㄠˇ ㄔ 。",
+        "romanization": "Zhè ge cài hěn hǎochī.",
+        "translation": "This dish is delicious.",
+        "translation_en": "This dish is delicious.",
+        "translation_id": "Masakan ini sangat enak."
+      }
+    ],
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "conv:conv-hsk-hsk1-xuesheng2",
+    "language": "zh"
+  }
+]
