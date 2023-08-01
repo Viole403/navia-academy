@@ -1,0 +1,542 @@
+[
+  {
+    "id": "first-lesson",
+    "title": "First Steps",
+    "description": "Complete your first lesson",
+    "seal": "一",
+    "category": "start",
+    "condition": {
+      "type": "lessons",
+      "value": 1
+    },
+    "xp": 50
+  },
+  {
+    "id": "five-lessons",
+    "title": "Getting Started",
+    "description": "Complete 5 lessons",
+    "seal": "二",
+    "category": "start",
+    "condition": {
+      "type": "lessons",
+      "value": 5
+    },
+    "xp": 100
+  },
+  {
+    "id": "ten-lessons",
+    "title": "Dedicated Learner",
+    "description": "Complete 10 lessons",
+    "seal": "三",
+    "category": "start",
+    "condition": {
+      "type": "lessons",
+      "value": 10
+    },
+    "xp": 150
+  },
+  {
+    "id": "twenty-five-lessons",
+    "title": "Classroom Regular",
+    "description": "Complete 25 lessons",
+    "seal": "四",
+    "category": "start",
+    "condition": {
+      "type": "lessons",
+      "value": 25
+    },
+    "xp": 300
+  },
+  {
+    "id": "fifty-lessons",
+    "title": "Course Complete",
+    "description": "Complete 50 lessons",
+    "seal": "五",
+    "category": "start",
+    "condition": {
+      "type": "lessons",
+      "value": 50
+    },
+    "xp": 600
+  },
+  {
+    "id": "hundred-lessons",
+    "title": "Century of Learning",
+    "description": "Complete 100 lessons",
+    "seal": "百",
+    "category": "start",
+    "condition": {
+      "type": "lessons",
+      "value": 100
+    },
+    "xp": 1500
+  },
+  {
+    "id": "streak-3",
+    "title": "Three-Day Streak",
+    "description": "Study 3 days in a row",
+    "seal": "日",
+    "category": "consistency",
+    "condition": {
+      "type": "streak",
+      "value": 3
+    },
+    "xp": 50
+  },
+  {
+    "id": "streak-7",
+    "title": "Weekly Warrior",
+    "description": "Study 7 days in a row",
+    "seal": "週",
+    "category": "consistency",
+    "condition": {
+      "type": "streak",
+      "value": 7
+    },
+    "xp": 150
+  },
+  {
+    "id": "streak-30",
+    "title": "Monthly Master",
+    "description": "Study 30 days in a row",
+    "seal": "月",
+    "category": "consistency",
+    "condition": {
+      "type": "streak",
+      "value": 30
+    },
+    "xp": 500
+  },
+  {
+    "id": "streak-100",
+    "title": "Seasoned Scholar",
+    "description": "Study 100 days in a row",
+    "seal": "季",
+    "category": "consistency",
+    "condition": {
+      "type": "streak",
+      "value": 100
+    },
+    "xp": 1000
+  },
+  {
+    "id": "streak-365",
+    "title": "Year Long",
+    "description": "Study 365 days in a row",
+    "seal": "年",
+    "category": "consistency",
+    "condition": {
+      "type": "streak",
+      "value": 365
+    },
+    "xp": 5000
+  },
+  {
+    "id": "words-10",
+    "title": "Vocab Starter",
+    "description": "Learn 10 words",
+    "seal": "語",
+    "category": "vocabulary",
+    "condition": {
+      "type": "words",
+      "value": 10
+    },
+    "xp": 50
+  },
+  {
+    "id": "words-50",
+    "title": "Word Collector",
+    "description": "Learn 50 words",
+    "seal": "詞",
+    "category": "vocabulary",
+    "condition": {
+      "type": "words",
+      "value": 50
+    },
+    "xp": 150
+  },
+  {
+    "id": "words-100",
+    "title": "Vocabulary Builder",
+    "description": "Learn 100 words",
+    "seal": "彙",
+    "category": "vocabulary",
+    "condition": {
+      "type": "words",
+      "value": 100
+    },
+    "xp": 300
+  },
+  {
+    "id": "words-500",
+    "title": "Lexicon Explorer",
+    "description": "Learn 500 words",
+    "seal": "庫",
+    "category": "vocabulary",
+    "condition": {
+      "type": "words",
+      "value": 500
+    },
+    "xp": 1000
+  },
+  {
+    "id": "words-1000",
+    "title": "Lexicon Master",
+    "description": "Learn 1000 words",
+    "seal": "豊",
+    "category": "vocabulary",
+    "condition": {
+      "type": "words",
+      "value": 1000
+    },
+    "xp": 2000
+  },
+  {
+    "id": "words-2000",
+    "title": "Polyglot's Vocabulary",
+    "description": "Learn 2000 words",
+    "seal": "富",
+    "category": "vocabulary",
+    "condition": {
+      "type": "words",
+      "value": 2000
+    },
+    "xp": 5000
+  },
+  {
+    "id": "chars-10",
+    "title": "Character Apprentice",
+    "description": "Learn 10 characters",
+    "seal": "字",
+    "category": "characters",
+    "condition": {
+      "type": "characters",
+      "value": 10
+    },
+    "xp": 50
+  },
+  {
+    "id": "chars-50",
+    "title": "Character Reader",
+    "description": "Learn 50 characters",
+    "seal": "文",
+    "category": "characters",
+    "condition": {
+      "type": "characters",
+      "value": 50
+    },
+    "xp": 200
+  },
+  {
+    "id": "chars-100",
+    "title": "Literacy Seeker",
+    "description": "Learn 100 characters",
+    "seal": "書",
+    "category": "characters",
+    "condition": {
+      "type": "characters",
+      "value": 100
+    },
+    "xp": 500
+  },
+  {
+    "id": "chars-250",
+    "title": "Character Scholar",
+    "description": "Learn 250 characters",
+    "seal": "典",
+    "category": "characters",
+    "condition": {
+      "type": "characters",
+      "value": 250
+    },
+    "xp": 1000
+  },
+  {
+    "id": "chars-500",
+    "title": "Hanzi Expert",
+    "description": "Learn 500 characters",
+    "seal": "經",
+    "category": "characters",
+    "condition": {
+      "type": "characters",
+      "value": 500
+    },
+    "xp": 2500
+  },
+  {
+    "id": "chars-1000",
+    "title": "Literacy Master",
+    "description": "Learn 1000 characters",
+    "seal": "聖",
+    "category": "characters",
+    "condition": {
+      "type": "characters",
+      "value": 1000
+    },
+    "xp": 5000
+  },
+  {
+    "id": "hsk-1-pass",
+    "title": "Pass Assessment",
+    "description": "Pass an assessment for the first time",
+    "seal": "初",
+    "category": "hsk",
+    "condition": {
+      "type": "exams",
+      "value": 1
+    },
+    "xp": 200
+  },
+  {
+    "id": "hsk-2-pass",
+    "title": "Starter Climb",
+    "description": "Pass 3 assessments",
+    "seal": "中",
+    "category": "hsk",
+    "condition": {
+      "type": "exams",
+      "value": 3
+    },
+    "xp": 400
+  },
+  {
+    "id": "hsk-3-pass",
+    "title": "On a Roll",
+    "description": "Pass 10 assessments",
+    "seal": "上",
+    "category": "hsk",
+    "condition": {
+      "type": "exams",
+      "value": 10
+    },
+    "xp": 800
+  },
+  {
+    "id": "hsk-5-pass",
+    "title": "Exam Taker",
+    "description": "Pass 25 assessments",
+    "seal": "試",
+    "category": "hsk",
+    "condition": {
+      "type": "exams",
+      "value": 25
+    },
+    "xp": 1500
+  },
+  {
+    "id": "hsk-6-pass",
+    "title": "Exam Veteran",
+    "description": "Pass 50 assessments",
+    "seal": "験",
+    "category": "hsk",
+    "condition": {
+      "type": "exams",
+      "value": 50
+    },
+    "xp": 3000
+  },
+  {
+    "id": "hsk-all-types",
+    "title": "Omnibus",
+    "description": "Pass all exam types",
+    "seal": "全",
+    "category": "hsk",
+    "condition": {
+      "type": "examTypes",
+      "value": 12
+    },
+    "xp": 3000
+  },
+  {
+    "id": "exam-three-types",
+    "title": "Versatile",
+    "description": "Pass exams of 3 different types",
+    "seal": "多",
+    "category": "hsk",
+    "condition": {
+      "type": "examTypes",
+      "value": 3
+    },
+    "xp": 500
+  },
+  {
+    "id": "exam-five-types",
+    "title": "Renaissance",
+    "description": "Pass exams of 5 different types",
+    "seal": "広",
+    "category": "hsk",
+    "condition": {
+      "type": "examTypes",
+      "value": 5
+    },
+    "xp": 1500
+  },
+  {
+    "id": "hours-5",
+    "title": "Five Hours In",
+    "description": "Study for 5 hours total",
+    "seal": "時",
+    "category": "skill",
+    "condition": {
+      "type": "hours",
+      "value": 5
+    },
+    "xp": 100
+  },
+  {
+    "id": "hours-20",
+    "title": "Twenty Hours In",
+    "description": "Study for 20 hours total",
+    "seal": "間",
+    "category": "skill",
+    "condition": {
+      "type": "hours",
+      "value": 20
+    },
+    "xp": 300
+  },
+  {
+    "id": "hours-100",
+    "title": "Century Mark",
+    "description": "Study for 100 hours total",
+    "seal": "千",
+    "category": "skill",
+    "condition": {
+      "type": "hours",
+      "value": 100
+    },
+    "xp": 1000
+  },
+  {
+    "id": "hours-200",
+    "title": "Dedicated Scholar",
+    "description": "Study for 200 hours total",
+    "seal": "万",
+    "category": "skill",
+    "condition": {
+      "type": "hours",
+      "value": 200
+    },
+    "xp": 2000
+  },
+  {
+    "id": "hours-500",
+    "title": "Study Marathon",
+    "description": "Study for 500 hours total",
+    "seal": "永",
+    "category": "skill",
+    "condition": {
+      "type": "hours",
+      "value": 500
+    },
+    "xp": 5000
+  },
+  {
+    "id": "perfect-exam",
+    "title": "Perfect Score",
+    "description": "Get 100% on any assessment",
+    "seal": "満",
+    "category": "skill",
+    "condition": {
+      "type": "perfectExams",
+      "value": 1
+    },
+    "xp": 500
+  },
+  {
+    "id": "perfect-exams-3",
+    "title": "Trifecta",
+    "description": "Get 100% on 3 assessments",
+    "seal": "三",
+    "category": "skill",
+    "condition": {
+      "type": "perfectExams",
+      "value": 3
+    },
+    "xp": 1500
+  },
+  {
+    "id": "perfect-exams-10",
+    "title": "Perfectionist",
+    "description": "Get 100% on 10 assessments",
+    "seal": "完",
+    "category": "skill",
+    "condition": {
+      "type": "perfectExams",
+      "value": 10
+    },
+    "xp": 4000
+  },
+  {
+    "id": "xp-500",
+    "title": "XP Hunter",
+    "description": "Earn 500 XP",
+    "seal": "力",
+    "category": "dedication",
+    "condition": {
+      "type": "xp",
+      "value": 500
+    },
+    "xp": 100
+  },
+  {
+    "id": "xp-2000",
+    "title": "XP Champion",
+    "description": "Earn 2000 XP",
+    "seal": "勳",
+    "category": "dedication",
+    "condition": {
+      "type": "xp",
+      "value": 2000
+    },
+    "xp": 500
+  },
+  {
+    "id": "xp-10000",
+    "title": "Legendary Scholar",
+    "description": "Earn 10000 XP",
+    "seal": "冠",
+    "category": "dedication",
+    "condition": {
+      "type": "xp",
+      "value": 10000
+    },
+    "xp": 2000
+  },
+  {
+    "id": "xp-25000",
+    "title": "Unstoppable",
+    "description": "Earn 25000 XP",
+    "seal": "極",
+    "category": "dedication",
+    "condition": {
+      "type": "xp",
+      "value": 25000
+    },
+    "xp": 5000
+  },
+  {
+    "id": "xp-50000",
+    "title": "Chinese Master",
+    "description": "Earn 50000 XP",
+    "seal": "神",
+    "category": "dedication",
+    "condition": {
+      "type": "xp",
+      "value": 50000
+    },
+    "xp": 10000
+  },
+  {
+    "id": "xp-100000",
+    "title": "Living Legend",
+    "description": "Earn 100000 XP",
+    "seal": "仙",
+    "category": "dedication",
+    "condition": {
+      "type": "xp",
+      "value": 100000
+    },
+    "xp": 25000
+  }
+]
