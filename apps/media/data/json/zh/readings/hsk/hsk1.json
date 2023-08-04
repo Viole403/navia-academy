@@ -1,0 +1,685 @@
+[
+  {
+    "id": "r-wo-de-yitian",
+    "title": "我的一天 — My Day",
+    "type": "story",
+    "hsk": 1,
+    "wordCount": 58,
+    "summary": "A student describes her daily routine: getting up, studying Chinese, and resting.",
+    "paragraphs": [
+      {
+        "hanzi": "我叫安娜，我是学生。",
+        "pinyin": "wǒ jiào ānnà, wǒ shì xuésheng.",
+        "zhuyin": "ㄨㄛˇ ㄐㄧㄠˋ ㄢㄋㄚˋ, ㄨㄛˇ ㄕˋ ㄒㄩㄝˊㄕㄥ˙.",
+        "translation": "My name is Ana, I'm a student.",
+        "text": "我叫安娜，我是学生。",
+        "romanization": "wǒ jiào ānnà, wǒ shì xuésheng.",
+        "translation_en": "My name is Ana, I'm a student.",
+        "translation_id": "Nama saya Ana, saya seorang pelajar."
+      },
+      {
+        "hanzi": "我七点起床，喝一杯咖啡。",
+        "pinyin": "wǒ qī diǎn qǐchuáng, hē yì bēi kāfēi.",
+        "zhuyin": "ㄨㄛˇ ㄑㄧ ㄉㄧㄢˇ ㄑㄧˇㄔㄨㄤˊ, ㄏㄜ ㄧˋ ㄅㄟ ㄎㄚㄈㄟ.",
+        "translation": "I get up at seven and have a coffee.",
+        "text": "我七点起床，喝一杯咖啡。",
+        "romanization": "wǒ qī diǎn qǐchuáng, hē yì bēi kāfēi.",
+        "translation_en": "I get up at seven and have a coffee.",
+        "translation_id": "Saya bangun jam tujuh dan minum kopi."
+      },
+      {
+        "hanzi": "我很喜欢学汉语。",
+        "pinyin": "wǒ hěn xǐhuan xué hànyǔ.",
+        "zhuyin": "ㄨㄛˇ ㄏㄣˇ ㄒㄧˇㄏㄨㄢ˙ ㄒㄩㄝˊ ㄏㄢˋㄩˇ.",
+        "translation": "I really like studying Chinese.",
+        "text": "我很喜欢学汉语。",
+        "romanization": "wǒ hěn xǐhuan xué hànyǔ.",
+        "translation_en": "I really like studying Chinese.",
+        "translation_id": "Saya sangat suka belajar bahasa Mandarin."
+      },
+      {
+        "hanzi": "晚上我看书，十一点睡觉。",
+        "pinyin": "wǎnshang wǒ kàn shū, shíyī diǎn shuìjiào.",
+        "zhuyin": "ㄨㄢˇㄕㄤ˙ ㄨㄛˇ ㄎㄢˋ ㄕㄨ, ㄕˊㄧ ㄉㄧㄢˇ ㄕㄨㄟˋㄐㄧㄠˋ.",
+        "translation": "At night I read and go to bed at eleven.",
+        "text": "晚上我看书，十一点睡觉。",
+        "romanization": "wǎnshang wǒ kàn shū, shíyī diǎn shuìjiào.",
+        "translation_en": "At night I read and go to bed at eleven.",
+        "translation_id": "Malam hari saya membaca dan tidur jam sebelas."
+      }
+    ],
+    "questions": [
+      {
+        "id": "rq-1",
+        "type": "multiple-choice",
+        "prompt": "What time does Ana get up?",
+        "options": [
+          {
+            "id": "a",
+            "label": "At seven"
+          },
+          {
+            "id": "b",
+            "label": "At eleven"
+          },
+          {
+            "id": "c",
+            "label": "At eight"
+          },
+          {
+            "id": "d",
+            "label": "It doesn't say"
+          }
+        ],
+        "correct": "a",
+        "skill": "reading",
+        "hsk": 1
+      }
+    ],
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "reading:r-wo-de-yitian",
+    "language": "zh",
+    "level": 1,
+    "summary_en": "A student describes her daily routine: getting up, studying Chinese, and resting.",
+    "summary_id": "Seorang pelajar mendeskripsikan rutinitas hariannya: bangun, belajar bahasa Mandarin, dan istirahat.",
+    "title_en": "我的一天 — My Day",
+    "title_id": "我的一天 — Hari Saya"
+  },
+  {
+    "id": "r-zai-fandian",
+    "title": "在饭店 — At the restaurant",
+    "type": "conversation",
+    "hsk": 1,
+    "wordCount": 52,
+    "summary": "A simple conversation ordering food in a restaurant.",
+    "paragraphs": [
+      {
+        "hanzi": "服务员：你好！你要什么？",
+        "pinyin": "fúwùyuán: nǐ hǎo! nǐ yào shénme?",
+        "zhuyin": "ㄈㄨˊㄨˋㄩㄢˊ: ㄋㄧˇ ㄏㄠˇ! ㄋㄧˇ ㄧㄠˋ ㄕㄣˊㄇㄜ˙?",
+        "translation": "Waiter: Hello! What would you like?",
+        "text": "服务员：你好！你要什么？",
+        "romanization": "fúwùyuán: nǐ hǎo! nǐ yào shénme?",
+        "translation_en": "Waiter: Hello! What would you like?",
+        "translation_id": "Pelayan: Halo! Mau pesan apa?"
+      },
+      {
+        "hanzi": "客人：我要米饭和茶。",
+        "pinyin": "kèrén: wǒ yào mǐfàn hé chá.",
+        "zhuyin": "ㄎㄦˋㄣˊ: ㄨㄛˇ ㄧㄠˋ ㄇㄧˇㄈㄢˋ ㄏㄜˊ ㄔㄚˊ.",
+        "translation": "Customer: I'd like rice and tea.",
+        "text": "客人：我要米饭和茶。",
+        "romanization": "kèrén: wǒ yào mǐfàn hé chá.",
+        "translation_en": "Customer: I'd like rice and tea.",
+        "translation_id": "Pelanggan: Saya mau nasi dan teh."
+      },
+      {
+        "hanzi": "服务员：好的。一共十五块。",
+        "pinyin": "fúwùyuán: hǎo de. yígòng shíwǔ kuài.",
+        "zhuyin": "ㄈㄨˊㄨˋㄩㄢˊ: ㄏㄠˇ ㄉㄜ˙. ㄧˊㄍㄨㄥˋ ㄕˊㄨˇ ㄎㄨㄞˋ.",
+        "translation": "Waiter: Very well. Fifteen yuan total.",
+        "text": "服务员：好的。一共十五块。",
+        "romanization": "fúwùyuán: hǎo de. yígòng shíwǔ kuài.",
+        "translation_en": "Waiter: Very well. Fifteen yuan total.",
+        "translation_id": "Pelayan: Baik. Totalnya lima belas yuan."
+      },
+      {
+        "hanzi": "客人：谢谢！",
+        "pinyin": "kèrén: xièxie!",
+        "zhuyin": "ㄎㄦˋㄣˊ: ㄒㄧㄝˋㄒㄧㄝ˙!",
+        "translation": "Customer: Thank you!",
+        "text": "客人：谢谢！",
+        "romanization": "kèrén: xièxie!",
+        "translation_en": "Customer: Thank you!",
+        "translation_id": "Pelanggan: Terima kasih!"
+      }
+    ],
+    "questions": [
+      {
+        "id": "rq-2",
+        "type": "multiple-choice",
+        "prompt": "How much does the food cost?",
+        "options": [
+          {
+            "id": "a",
+            "label": "15 yuan"
+          },
+          {
+            "id": "b",
+            "label": "5 yuan"
+          },
+          {
+            "id": "c",
+            "label": "50 yuan"
+          },
+          {
+            "id": "d",
+            "label": "10 yuan"
+          }
+        ],
+        "correct": "a",
+        "skill": "reading",
+        "hsk": 1
+      }
+    ],
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "reading:r-zai-fandian",
+    "language": "zh",
+    "level": 1,
+    "summary_en": "A simple conversation ordering food in a restaurant.",
+    "summary_id": "Percakapan sederhana memesan makanan di restoran.",
+    "title_en": "在饭店 — At the restaurant",
+    "title_id": "在饭店 — Di Restoran"
+  },
+  {
+    "id": "r-wo-de-jia",
+    "title": "我的家 — My family",
+    "type": "story",
+    "hsk": 1,
+    "wordCount": 55,
+    "summary": "Introduction of a family: parents, brother, and the pet.",
+    "paragraphs": [
+      {
+        "hanzi": "我家有四个人：爸爸、妈妈、弟弟和我。",
+        "pinyin": "wǒ jiā yǒu sì ge rén: bàba, māma, dìdi hé wǒ.",
+        "zhuyin": "ㄨㄛˇ ㄐㄧㄚ ㄧㄡˇ ㄙˋ ㄍㄜ˙ ㄖㄣˊ: ㄅㄚˋㄅㄚ˙, ㄇㄚㄇㄚ˙, ㄉㄧˋㄉㄧ˙ ㄏㄜˊ ㄨㄛˇ.",
+        "translation": "There are four people in my family: dad, mom, my younger brother, and me.",
+        "text": "我家有四个人：爸爸、妈妈、弟弟和我。",
+        "romanization": "wǒ jiā yǒu sì ge rén: bàba, māma, dìdi hé wǒ.",
+        "translation_en": "There are four people in my family: dad, mom, my younger brother, and me.",
+        "translation_id": "Keluarga saya ada empat orang: ayah, ibu, adik laki-laki, dan saya."
+      },
+      {
+        "hanzi": "爸爸是老师，妈妈是医生。",
+        "pinyin": "bàba shì lǎoshī, māma shì yīshēng.",
+        "zhuyin": "ㄅㄚˋㄅㄚ˙ ㄕˋ ㄌㄠˇㄕ, ㄇㄚㄇㄚ˙ ㄕˋ ㄧㄕㄥ.",
+        "translation": "Dad is a teacher and mom is a doctor.",
+        "text": "爸爸是老师，妈妈是医生。",
+        "romanization": "bàba shì lǎoshī, māma shì yīshēng.",
+        "translation_en": "Dad is a teacher and mom is a doctor.",
+        "translation_id": "Ayah seorang guru dan ibu seorang dokter."
+      },
+      {
+        "hanzi": "弟弟很小，他六岁。",
+        "pinyin": "dìdi hěn xiǎo, tā liù suì.",
+        "zhuyin": "ㄉㄧˋㄉㄧ˙ ㄏㄣˇ ㄒㄧㄠˇ, ㄊㄚ ㄌㄧㄡˋ ㄙㄨㄟˋ.",
+        "translation": "My brother is little, he's six years old.",
+        "text": "弟弟很小，他六岁。",
+        "romanization": "dìdi hěn xiǎo, tā liù suì.",
+        "translation_en": "My brother is little, he's six years old.",
+        "translation_id": "Adik saya masih kecil, umurnya enam tahun."
+      },
+      {
+        "hanzi": "我们都很爱我们的家。",
+        "pinyin": "wǒmen dōu hěn ài wǒmen de jiā.",
+        "zhuyin": "ㄨㄛˇㄇㄣ˙ ㄉㄡ ㄏㄣˇ ㄞˋ ㄨㄛˇㄇㄣ˙ ㄉㄜ˙ ㄐㄧㄚ.",
+        "translation": "We all love our family very much.",
+        "text": "我们都很爱我们的家。",
+        "romanization": "wǒmen dōu hěn ài wǒmen de jiā.",
+        "translation_en": "We all love our family very much.",
+        "translation_id": "Kami semua sangat sayang keluarga kami."
+      }
+    ],
+    "questions": [
+      {
+        "id": "rq-3",
+        "type": "multiple-choice",
+        "prompt": "How many people are in the family?",
+        "options": [
+          {
+            "id": "a",
+            "label": "Four"
+          },
+          {
+            "id": "b",
+            "label": "Three"
+          },
+          {
+            "id": "c",
+            "label": "Five"
+          },
+          {
+            "id": "d",
+            "label": "Six"
+          }
+        ],
+        "correct": "a",
+        "skill": "reading",
+        "hsk": 1
+      }
+    ],
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "reading:r-wo-de-jia",
+    "language": "zh",
+    "level": 1,
+    "summary_en": "Introduction of a family: parents, brother, and the pet.",
+    "summary_id": "Pengenalan keluarga: orang tua, saudara, dan hewan peliharaan.",
+    "title_en": "我的家 — My family",
+    "title_id": "我的家 — Keluarga Saya"
+  },
+  {
+    "id": "r-hsk-hsk1-gongsi",
+    "title": "公司 — company; firm; corporation; CL:家[jia1]",
+    "title_en": "公司 — company; firm; corporation; CL:家[jia1]",
+    "title_id": "公司 — perusahaan",
+    "type": "story",
+    "level": 1,
+    "wordCount": 10,
+    "summary": "A short passage about company; firm; corporation; CL:家[jia1].",
+    "summary_en": "A short passage about company; firm; corporation; CL:家[jia1].",
+    "summary_id": "Bacaan singkat tentang perusahaan.",
+    "paragraphs": [
+      {
+        "text": "我在一家外国公司工作。",
+        "hanzi": "我在一家外国公司工作。",
+        "pinyin": "wǒ zài yī jiā wài guó gōng sī gōng zuò 。",
+        "zhuyin": "ㄨㄛˇ ㄗㄞˋ ㄧ ㄐㄧㄚ ㄨㄞˋ ㄍㄨㄛˊ ㄍㄨㄥ ㄙ ㄍㄨㄥ ㄗㄨㄛˋ 。",
+        "romanization": "wǒ zài yì jiā wàiguó gōngsī gōngzuò.",
+        "translation": "I work at a foreign company.",
+        "translation_en": "I work at a foreign company.",
+        "translation_id": "Saya bekerja di perusahaan asing."
+      }
+    ],
+    "questions": [
+      {
+        "id": "rq-1",
+        "type": "multiple-choice",
+        "prompt": "What is the passage mainly about?",
+        "options": [
+          {
+            "id": "a",
+            "label": "company; firm; corporation; CL:家[jia1]"
+          },
+          {
+            "id": "b",
+            "label": "to go to school; to attend school"
+          },
+          {
+            "id": "c",
+            "label": "to go to work; to be on duty; to start work; to go to the office"
+          },
+          {
+            "id": "d",
+            "label": "who"
+          }
+        ],
+        "correct": "a"
+      },
+      {
+        "id": "rq-2",
+        "type": "multiple-choice",
+        "prompt": "Which sentence appears in the passage?",
+        "options": [
+          {
+            "id": "a",
+            "label": "I work at a foreign company."
+          },
+          {
+            "id": "b",
+            "label": "Spring Festival is the most important traditional holiday in China."
+          },
+          {
+            "id": "c",
+            "label": "Chinese culture has a long history."
+          }
+        ],
+        "correct": "a"
+      },
+      {
+        "id": "rq-3",
+        "type": "multiple-choice",
+        "prompt": "What does “公司” mean here?",
+        "options": [
+          {
+            "id": "a",
+            "label": "company; firm; corporation; CL:家[jia1]"
+          },
+          {
+            "id": "b",
+            "label": "eight"
+          },
+          {
+            "id": "c",
+            "label": "particle (suggestion)"
+          },
+          {
+            "id": "d",
+            "label": "father, dad"
+          }
+        ],
+        "correct": "a"
+      }
+    ],
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "reading:r-hsk-hsk1-gongsi",
+    "language": "zh",
+    "romanization": [
+      "wo",
+      "zai",
+      "yi",
+      "jia",
+      "wai",
+      "guo",
+      "gong",
+      "si",
+      "gong",
+      "zuo",
+      "。"
+    ]
+  },
+  {
+    "id": "r-hsk-hsk1-haizi1",
+    "title": "孩子 — child",
+    "title_en": "孩子 — child",
+    "title_id": "孩子 — anak",
+    "type": "story",
+    "level": 1,
+    "wordCount": 5,
+    "summary": "A short passage about child.",
+    "summary_en": "A short passage about child.",
+    "summary_id": "Bacaan singkat tentang anak.",
+    "paragraphs": [
+      {
+        "text": "孩子们在玩。",
+        "hanzi": "孩子们在玩。",
+        "pinyin": "hái zi men zài wán 。",
+        "zhuyin": "ㄏㄞˊ ㄗ˙ ㄇㄣ˙ ㄗㄞˋ ㄨㄢˊ 。",
+        "romanization": "Háizimen zài wán.",
+        "translation": "The children are playing.",
+        "translation_en": "The children are playing.",
+        "translation_id": "Anak-anak sedang bermain."
+      }
+    ],
+    "questions": [
+      {
+        "id": "rq-1",
+        "type": "multiple-choice",
+        "prompt": "What is the passage mainly about?",
+        "options": [
+          {
+            "id": "a",
+            "label": "child"
+          },
+          {
+            "id": "b",
+            "label": "not (have), did not"
+          },
+          {
+            "id": "c",
+            "label": "which"
+          },
+          {
+            "id": "d",
+            "label": "to write"
+          }
+        ],
+        "correct": "a"
+      },
+      {
+        "id": "rq-2",
+        "type": "multiple-choice",
+        "prompt": "Which sentence appears in the passage?",
+        "options": [
+          {
+            "id": "a",
+            "label": "The children are playing."
+          },
+          {
+            "id": "b",
+            "label": "Spring Festival is the most important traditional holiday in China."
+          },
+          {
+            "id": "c",
+            "label": "Chinese culture has a long history."
+          }
+        ],
+        "correct": "a"
+      },
+      {
+        "id": "rq-3",
+        "type": "multiple-choice",
+        "prompt": "What does “孩子” mean here?",
+        "options": [
+          {
+            "id": "a",
+            "label": "child"
+          },
+          {
+            "id": "b",
+            "label": "eight"
+          },
+          {
+            "id": "c",
+            "label": "particle (suggestion)"
+          },
+          {
+            "id": "d",
+            "label": "father, dad"
+          }
+        ],
+        "correct": "a"
+      }
+    ],
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "reading:r-hsk-hsk1-haizi1",
+    "language": "zh",
+    "romanization": [
+      "hai",
+      "zi",
+      "men",
+      "zai",
+      "wan",
+      "。"
+    ]
+  },
+  {
+    "id": "r-hsk-hsk1-xuesheng2",
+    "title": "学生 — student",
+    "title_en": "学生 — student",
+    "title_id": "学生 — pelajar",
+    "type": "story",
+    "level": 1,
+    "wordCount": 39,
+    "summary": "A short passage about student.",
+    "summary_en": "A short passage about student.",
+    "summary_id": "Bacaan singkat tentang pelajar.",
+    "paragraphs": [
+      {
+        "text": "你是学生吗？",
+        "hanzi": "你是学生吗？",
+        "pinyin": "nǐ shì xué shēng ma ？",
+        "zhuyin": "ㄋㄧˇ ㄕˋ ㄒㄩㄝˊ ㄕㄥ ㄇㄚ˙ ？",
+        "romanization": "nǐ shì xuésheng ma?",
+        "translation": "Are you a student?",
+        "translation_en": "Are you a student?",
+        "translation_id": "Apakah kamu seorang pelajar?"
+      },
+      {
+        "text": "你是哪个学校的学生？",
+        "hanzi": "你是哪个学校的学生？",
+        "pinyin": "nǐ shì nǎ ge xué xiào de xué shēng ？",
+        "zhuyin": "ㄋㄧˇ ㄕˋ ㄋㄚˇ ㄍㄜ˙ ㄒㄩㄝˊ ㄒㄧㄠˋ ㄉㄜ˙ ㄒㄩㄝˊ ㄕㄥ ？",
+        "romanization": "Nǐ shì nǎ ge xuéxiào de xuésheng?",
+        "translation": "Which school's student are you?",
+        "translation_en": "Which school's student are you?",
+        "translation_id": "Kamu murid sekolah yang mana?"
+      },
+      {
+        "text": "我是学生。",
+        "hanzi": "我是学生。",
+        "pinyin": "wǒ shì xué shēng 。",
+        "zhuyin": "ㄨㄛˇ ㄕˋ ㄒㄩㄝˊ ㄕㄥ 。",
+        "romanization": "wǒ shì xuésheng.",
+        "translation": "I am a student.",
+        "translation_en": "I am a student.",
+        "translation_id": "Saya seorang pelajar."
+      },
+      {
+        "text": "我也是学生。",
+        "hanzi": "我也是学生。",
+        "pinyin": "wǒ yě shì xué shēng 。",
+        "zhuyin": "ㄨㄛˇ ㄧㄝˇ ㄕˋ ㄒㄩㄝˊ ㄕㄥ 。",
+        "romanization": "Wǒ yě shì xuésheng.",
+        "translation": "I am also a student.",
+        "translation_en": "I am also a student.",
+        "translation_id": "Saya juga pelajar."
+      },
+      {
+        "text": "我以前是学生。",
+        "hanzi": "我以前是学生。",
+        "pinyin": "wǒ yǐ qián shì xué shēng 。",
+        "zhuyin": "ㄨㄛˇ ㄧˇ ㄑㄧㄢˊ ㄕˋ ㄒㄩㄝˊ ㄕㄥ 。",
+        "romanization": "Wǒ yǐqián shì xuésheng.",
+        "translation": "I was a student before.",
+        "translation_en": "I was a student before.",
+        "translation_id": "Dulu saya adalah pelajar."
+      },
+      {
+        "text": "这所学校有一千个学生。",
+        "hanzi": "这所学校有一千个学生。",
+        "pinyin": "zhè suǒ xué xiào yǒu yī qiān gè xué shēng 。",
+        "zhuyin": "ㄓㄜˋ ㄙㄨㄛˇ ㄒㄩㄝˊ ㄒㄧㄠˋ ㄧㄡˇ ㄧ ㄑㄧㄢ ㄍㄜˋ ㄒㄩㄝˊ ㄕㄥ 。",
+        "romanization": "Zhè suǒ xuéxiào yǒu yì qiān ge xuésheng.",
+        "translation": "This school has one thousand students.",
+        "translation_en": "This school has one thousand students.",
+        "translation_id": "Sekolah ini punya seribu murid."
+      }
+    ],
+    "questions": [
+      {
+        "id": "rq-1",
+        "type": "multiple-choice",
+        "prompt": "What is the passage mainly about?",
+        "options": [
+          {
+            "id": "a",
+            "label": "student"
+          },
+          {
+            "id": "b",
+            "label": "work; to work"
+          },
+          {
+            "id": "c",
+            "label": "son"
+          },
+          {
+            "id": "d",
+            "label": "to go to class, to have class"
+          }
+        ],
+        "correct": "a"
+      },
+      {
+        "id": "rq-2",
+        "type": "multiple-choice",
+        "prompt": "Which sentence appears in the passage?",
+        "options": [
+          {
+            "id": "a",
+            "label": "Chinese culture has a long history."
+          },
+          {
+            "id": "b",
+            "label": "Spring Festival is the most important traditional holiday in China."
+          },
+          {
+            "id": "c",
+            "label": "Are you a student?"
+          },
+          {
+            "id": "d",
+            "label": "Which school's student are you?"
+          }
+        ],
+        "correct": "c"
+      },
+      {
+        "id": "rq-3",
+        "type": "multiple-choice",
+        "prompt": "What does “学生” mean here?",
+        "options": [
+          {
+            "id": "a",
+            "label": "student"
+          },
+          {
+            "id": "b",
+            "label": "eight"
+          },
+          {
+            "id": "c",
+            "label": "particle (suggestion)"
+          },
+          {
+            "id": "d",
+            "label": "father, dad"
+          }
+        ],
+        "correct": "a"
+      }
+    ],
+    "examMappings": {
+      "hsk": 1
+    },
+    "audio": "reading:r-hsk-hsk1-xuesheng2",
+    "language": "zh",
+    "romanization": [
+      "ni",
+      "shi",
+      "xue",
+      "sheng",
+      "ma",
+      "？",
+      "ni",
+      "shi",
+      "na",
+      "ge",
+      "xue",
+      "xiao",
+      "de",
+      "xue",
+      "sheng",
+      "？",
+      "wo",
+      "shi",
+      "xue",
+      "sheng",
+      "。",
+      "wo",
+      "ye",
+      "shi",
+      "xue",
+      "sheng",
+      "。",
+      "wo",
+      "yi",
+      "qian",
+      "shi",
+      "xue",
+      "sheng",
+      "。",
+      "zhe",
+      "suo",
+      "xue",
+      "xiao",
+      "you",
+      "yi",
+      "qian",
+      "ge",
+      "xue",
+      "sheng",
+      "。"
+    ]
+  }
+]
