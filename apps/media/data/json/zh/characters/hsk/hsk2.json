@@ -1,0 +1,4079 @@
+[
+  {
+    "id": "c-a5",
+    "char": "啊",
+    "pinyin": "a",
+    "tone": 5,
+    "meaning": "interjection of surprise; Ah!",
+    "strokes": 10,
+    "radical": "口",
+    "radicalMeaning": "mouth",
+    "components": [
+      "口",
+      "阿"
+    ],
+    "hsk": 2,
+    "words": [
+      "a5"
+    ],
+    "zhuyin": "ㄚ˙",
+    "mnemonic": "A mouth (口) and a roof (阿 is a phonetic): a cry of surprise.",
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "char:c-a5",
+    "language": "zh",
+    "text": "啊",
+    "romanization": "a",
+    "mnemonic_en": "A mouth (口) and a roof (阿 is a phonetic): a cry of surprise.",
+    "mnemonic_id": "Sebuah mulut (口) dan suara \"a\": teriakan terkejut.",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-bie2",
+    "char": "别",
+    "pinyin": "bié",
+    "tone": 2,
+    "meaning": "to leave; to part (from)",
+    "strokes": 7,
+    "radical": "刂",
+    "radicalMeaning": "knife",
+    "components": [
+      "刂",
+      "另"
+    ],
+    "hsk": 2,
+    "words": [
+      "bie2"
+    ],
+    "zhuyin": "ㄅㄧㄝˊ",
+    "mnemonic": "A blade (刂) cuts apart another (另): to separate, do not.",
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "char:c-bie2",
+    "language": "zh",
+    "text": "别",
+    "romanization": "bié",
+    "mnemonic_en": "A blade (刂) cuts apart another (另): to separate, do not.",
+    "mnemonic_id": "Sebilah pisau (刂) memisahkan yang lain (另): berpisah, jangan.",
+    "traditional": "彆",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-biao3",
+    "char": "表",
+    "pinyin": "biǎo",
+    "tone": 3,
+    "meaning": "watch; clock; surface",
+    "strokes": 8,
+    "radical": "衣",
+    "radicalMeaning": "clothes",
+    "components": [
+      "龶",
+      "𧘇"
+    ],
+    "hsk": 2,
+    "words": [],
+    "zhuyin": "ㄅㄧㄠˇ",
+    "mnemonic": "Clothes (衣) wrapped: a surface or a watch worn on it.",
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "char:c-biao3",
+    "language": "zh",
+    "text": "表",
+    "romanization": "biǎo",
+    "mnemonic_en": "Clothes (衣) wrapped: a surface or a watch worn on it.",
+    "mnemonic_id": "Pakaian (衣) terbungkus: permukaan atau jam tangan di atasnya.",
+    "traditional": "錶",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-bei4",
+    "char": "备",
+    "pinyin": "bèi",
+    "tone": 4,
+    "meaning": "(bound form) to prepare; to equip",
+    "strokes": 8,
+    "radical": "夂",
+    "radicalMeaning": "legs",
+    "components": [
+      "夂",
+      "田"
+    ],
+    "hsk": 2,
+    "words": [],
+    "zhuyin": "ㄅㄟˋ",
+    "mnemonic": "A person prepares against a wind (夂) and a roof: be ready.",
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "char:c-bei4",
+    "language": "zh",
+    "text": "备",
+    "romanization": "bèi",
+    "mnemonic_en": "A person prepares against a wind (夂) and a roof: be ready.",
+    "mnemonic_id": "Seseorang bersiap di bawah atap: siap siaga.",
+    "traditional": "備",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-bu4",
+    "char": "步",
+    "pinyin": "bù",
+    "tone": 4,
+    "meaning": "a step; a pace",
+    "strokes": 7,
+    "radical": "止",
+    "radicalMeaning": "stop",
+    "components": [
+      "止",
+      "𣥂"
+    ],
+    "hsk": 2,
+    "words": [],
+    "zhuyin": "ㄅㄨˋ",
+    "mnemonic": "A step: the foot moves forward over ground.",
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "char:c-bu4",
+    "language": "zh",
+    "text": "步",
+    "romanization": "bù",
+    "mnemonic_en": "A step: the foot moves forward over ground.",
+    "mnemonic_id": "Langkah: kaki melangkah maju di atas tanah.",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-bang1",
+    "char": "帮",
+    "pinyin": "bāng",
+    "tone": 1,
+    "meaning": "to help; to assist",
+    "strokes": 9,
+    "radical": "巾",
+    "radicalMeaning": "cloth",
+    "components": [
+      "巾",
+      "邦"
+    ],
+    "hsk": 2,
+    "words": [
+      "bang1",
+      "bangzhu"
+    ],
+    "zhuyin": "ㄅㄤ",
+    "mnemonic": "A strip of cloth (巾) tied on (邦): to help, a gang.",
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "char:c-bang1",
+    "language": "zh",
+    "text": "帮",
+    "romanization": "bāng",
+    "mnemonic_en": "A strip of cloth (巾) tied on (邦): to help, a gang.",
+    "mnemonic_id": "Selembar kain (巾) diikatkan: menolong, kelompok.",
+    "traditional": "幫",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-bi3",
+    "char": "比",
+    "pinyin": "bǐ",
+    "tone": 3,
+    "meaning": "to compare; more (adj. than)",
+    "strokes": 4,
+    "radical": "比",
+    "radicalMeaning": "compare",
+    "components": [
+      "比"
+    ],
+    "hsk": 2,
+    "words": [],
+    "zhuyin": "ㄅㄧˇ",
+    "mnemonic": "Two people (匕) side by side: to compare.",
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "char:c-bi3",
+    "language": "zh",
+    "text": "比",
+    "romanization": "bǐ",
+    "mnemonic_en": "Two people (匕) side by side: to compare.",
+    "mnemonic_id": "Dua orang (匕) berdampingan: membandingkan.",
+    "similar": [
+      "北"
+    ],
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-bi33",
+    "char": "笔",
+    "pinyin": "bǐ",
+    "tone": 3,
+    "meaning": "writing brush; writing implement (pen, pencil etc) (CL:支[zhi1],枝[zhi1])",
+    "strokes": 10,
+    "radical": "⺮",
+    "radicalMeaning": "bamboo",
+    "components": [
+      "毛",
+      "竹"
+    ],
+    "hsk": 2,
+    "words": [],
+    "zhuyin": "ㄅㄧˇ",
+    "mnemonic": "A bamboo (⺮) writing brush on a hair (毛) tip.",
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "char:c-bi33",
+    "language": "zh",
+    "text": "笔",
+    "romanization": "bǐ",
+    "mnemonic_en": "A bamboo (⺮) writing brush on a hair (毛) tip.",
+    "mnemonic_id": "Kuas tulis bambu (⺮) dengan ujung bulu (毛).",
+    "traditional": "筆",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-chang2",
+    "char": "长",
+    "pinyin": "cháng",
+    "tone": 2,
+    "meaning": "long; length",
+    "strokes": 4,
+    "radical": "长",
+    "radicalMeaning": "long",
+    "components": [
+      "长"
+    ],
+    "hsk": 2,
+    "words": [
+      "chang2"
+    ],
+    "zhuyin": "ㄔㄤˊ",
+    "mnemonic": "A long beard of hair flowing down.",
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "char:c-chang2",
+    "language": "zh",
+    "text": "长",
+    "romanization": "cháng",
+    "mnemonic_en": "A long beard of hair flowing down.",
+    "mnemonic_id": "Janggut panjang yang mengalir ke bawah.",
+    "traditional": "長",
+    "similar": [
+      "张"
+    ],
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-chang3",
+    "char": "场",
+    "pinyin": "chǎng",
+    "tone": 3,
+    "meaning": "place; field; market",
+    "strokes": 6,
+    "radical": "土",
+    "radicalMeaning": "earth",
+    "components": [
+      "土",
+      "𠃓"
+    ],
+    "hsk": 2,
+    "words": [],
+    "zhuyin": "ㄔㄤˇ",
+    "mnemonic": "An earthen (土) open place where people gather.",
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "char:c-chang3",
+    "language": "zh",
+    "text": "场",
+    "romanization": "chǎng",
+    "mnemonic_en": "An earthen (土) open place where people gather.",
+    "mnemonic_id": "Lapangan terbuka dari tanah (土) tempat orang berkumpul.",
+    "traditional": "塲",
+    "similar": [
+      "地"
+    ],
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-cuo4",
+    "char": "错",
+    "pinyin": "cuò",
+    "tone": 4,
+    "meaning": "mistake; wrong",
+    "strokes": 13,
+    "radical": "钅",
+    "radicalMeaning": "metal",
+    "components": [
+      "昔",
+      "钅"
+    ],
+    "hsk": 2,
+    "words": [
+      "cuo4"
+    ],
+    "zhuyin": "ㄘㄨㄛˋ",
+    "mnemonic": "A metal (钅) file marks a wrong (昔) piece.",
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "char:c-cuo4",
+    "language": "zh",
+    "text": "错",
+    "romanization": "cuò",
+    "mnemonic_en": "A metal (钅) file marks a wrong (昔) piece.",
+    "mnemonic_id": "Kikir logam (钅) menandai bagian yang salah (昔).",
+    "traditional": "錯",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-ci4",
+    "char": "次",
+    "pinyin": "cì",
+    "tone": 4,
+    "meaning": "next in sequence; second",
+    "strokes": 6,
+    "radical": "欠",
+    "radicalMeaning": "owe",
+    "components": [
+      "冫",
+      "欠"
+    ],
+    "hsk": 2,
+    "words": [],
+    "zhuyin": "ㄘˋ",
+    "mnemonic": "A person (欠) waiting in turn: next, second.",
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "char:c-ci4",
+    "language": "zh",
+    "text": "次",
+    "romanization": "cì",
+    "mnemonic_en": "A person (欠) waiting in turn: next, second.",
+    "mnemonic_id": "Seseorang (欠) menunggu giliran: berikutnya, kedua.",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-ci2",
+    "char": "词",
+    "pinyin": "cí",
+    "tone": 2,
+    "meaning": "word; statement",
+    "strokes": 7,
+    "radical": "讠",
+    "radicalMeaning": "speech",
+    "components": [
+      "司",
+      "讠"
+    ],
+    "hsk": 2,
+    "words": [],
+    "zhuyin": "ㄘˊ",
+    "mnemonic": "Words (讠) within a shell: speech, a word.",
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "char:c-ci2",
+    "language": "zh",
+    "text": "词",
+    "romanization": "cí",
+    "mnemonic_en": "Words (讠) within a shell: speech, a word.",
+    "mnemonic_id": "Kata-kata (讠) di dalam cangkang: perkataan.",
+    "traditional": "詞",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-cong2",
+    "char": "从",
+    "pinyin": "cóng",
+    "tone": 2,
+    "meaning": "from; through",
+    "strokes": 4,
+    "radical": "人",
+    "radicalMeaning": "person",
+    "components": [
+      "人"
+    ],
+    "hsk": 2,
+    "words": [],
+    "zhuyin": "ㄘㄨㄥˊ",
+    "mnemonic": "Two persons following each other: from, to follow.",
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "char:c-cong2",
+    "language": "zh",
+    "text": "从",
+    "romanization": "cóng",
+    "mnemonic_en": "Two persons following each other: from, to follow.",
+    "mnemonic_id": "Dua orang saling mengikuti: dari, mengikuti.",
+    "traditional": "從",
+    "similar": [
+      "人",
+      "众"
+    ],
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-de5",
+    "char": "地",
+    "pinyin": "de",
+    "tone": 5,
+    "meaning": "-ly; structural particle: used before a verb or adjective, linking it to preceding modifying adverbial adjunct",
+    "strokes": 6,
+    "radical": "土",
+    "radicalMeaning": "earth",
+    "components": [
+      "也",
+      "土"
+    ],
+    "hsk": 2,
+    "words": [],
+    "zhuyin": "ㄉㄜ˙",
+    "mnemonic": "Soil (土) beneath: the ground, also a -ly particle.",
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "char:c-de5",
+    "language": "zh",
+    "text": "地",
+    "romanization": "de",
+    "mnemonic_en": "Soil (土) beneath: the ground, also a -ly particle.",
+    "mnemonic_id": "Tanah (土) di bawah: permukaan bumi, juga partikel -lah.",
+    "similar": [
+      "场",
+      "也"
+    ],
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-dian4",
+    "char": "店",
+    "pinyin": "diàn",
+    "tone": 4,
+    "meaning": "shop; store",
+    "strokes": 8,
+    "radical": "广",
+    "radicalMeaning": "shelter",
+    "components": [
+      "占",
+      "广"
+    ],
+    "hsk": 2,
+    "words": [
+      "fandian4",
+      "shangdian4"
+    ],
+    "zhuyin": "ㄉㄧㄢˋ",
+    "mnemonic": "A shop under a roof (广): a store or inn.",
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "char:c-dian4",
+    "language": "zh",
+    "text": "店",
+    "romanization": "diàn",
+    "mnemonic_en": "A shop under a roof (广): a store or inn.",
+    "mnemonic_id": "Toko di bawah atap (广): pertokoan atau penginapan.",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-dan4",
+    "char": "但",
+    "pinyin": "dàn",
+    "tone": 4,
+    "meaning": "but; yet",
+    "strokes": 7,
+    "radical": "亻",
+    "radicalMeaning": "person",
+    "components": [
+      "亻",
+      "旦"
+    ],
+    "hsk": 2,
+    "words": [
+      "danshi4"
+    ],
+    "zhuyin": "ㄉㄢˋ",
+    "mnemonic": "A person (亻) standing at sunrise (旦): but, yet.",
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "char:c-dan4",
+    "language": "zh",
+    "text": "但",
+    "romanization": "dàn",
+    "mnemonic_en": "A person (亻) standing at sunrise (旦): but, yet.",
+    "mnemonic_id": "Seseorang (亻) berdiri saat matahari terbit (旦): tetapi.",
+    "similar": [
+      "旦"
+    ],
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-dong4",
+    "char": "动",
+    "pinyin": "dòng",
+    "tone": 4,
+    "meaning": "(of sth) to move; to set in movement",
+    "strokes": 6,
+    "radical": "力",
+    "radicalMeaning": "power",
+    "components": [
+      "云",
+      "力"
+    ],
+    "hsk": 2,
+    "words": [],
+    "zhuyin": "ㄉㄨㄥˋ",
+    "mnemonic": "Strength (力) sets a heavy thing in motion: to move.",
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "char:c-dong4",
+    "language": "zh",
+    "text": "动",
+    "romanization": "dòng",
+    "mnemonic_en": "Strength (力) sets a heavy thing in motion: to move.",
+    "mnemonic_id": "Kekuatan (力) menggerakkan benda berat: bergerak.",
+    "traditional": "動",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-deng3",
+    "char": "等",
+    "pinyin": "děng",
+    "tone": 3,
+    "meaning": "to wait for; to await",
+    "strokes": 12,
+    "radical": "⺮",
+    "radicalMeaning": "bamboo",
+    "components": [
+      "寺",
+      "竹"
+    ],
+    "hsk": 2,
+    "words": [
+      "deng3"
+    ],
+    "zhuyin": "ㄉㄥˇ",
+    "mnemonic": "Bamboo (⺮) slips in a temple (寺): to wait, equal.",
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "char:c-deng3",
+    "language": "zh",
+    "text": "等",
+    "romanization": "děng",
+    "mnemonic_en": "Bamboo (⺮) slips in a temple (寺): to wait, equal.",
+    "mnemonic_id": "Guling bambu (⺮) di kuil (寺): menunggu, sama.",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-dong3",
+    "char": "懂",
+    "pinyin": "dǒng",
+    "tone": 3,
+    "meaning": "to understand; to comprehend",
+    "strokes": 15,
+    "radical": "忄",
+    "radicalMeaning": "heart",
+    "components": [
+      "忄",
+      "董"
+    ],
+    "hsk": 2,
+    "words": [],
+    "zhuyin": "ㄉㄨㄥˇ",
+    "mnemonic": "A heart (忄) that grasps grass (董): to understand.",
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "char:c-dong3",
+    "language": "zh",
+    "text": "懂",
+    "romanization": "dǒng",
+    "mnemonic_en": "A heart (忄) that grasps grass (董): to understand.",
+    "mnemonic_id": "Hati (忄) yang menggenggam rumput (董): mengerti.",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-fei1",
+    "char": "啡",
+    "pinyin": "fēi",
+    "tone": 1,
+    "meaning": "(used in loanwords for its phonetic value)",
+    "strokes": 11,
+    "radical": "口",
+    "radicalMeaning": "mouth",
+    "components": [
+      "口",
+      "非"
+    ],
+    "hsk": 2,
+    "words": [],
+    "zhuyin": "ㄈㄟ",
+    "mnemonic": "A mouth (口) siphoned for its sound: coffee.",
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "char:c-fei1",
+    "language": "zh",
+    "text": "啡",
+    "romanization": "fēi",
+    "mnemonic_en": "A mouth (口) siphoned for its sound: coffee.",
+    "mnemonic_id": "Mulut (口) menyerap bunyinya: kopi.",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-fu1",
+    "char": "夫",
+    "pinyin": "fū",
+    "tone": 1,
+    "meaning": "husband; man",
+    "strokes": 4,
+    "radical": "大",
+    "radicalMeaning": "big",
+    "components": [
+      "二",
+      "人"
+    ],
+    "hsk": 2,
+    "words": [],
+    "zhuyin": "ㄈㄨ",
+    "mnemonic": "A big (大) man with a pin through his hair: husband.",
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "char:c-fu1",
+    "language": "zh",
+    "text": "夫",
+    "romanization": "fū",
+    "mnemonic_en": "A big (大) man with a pin through his hair: husband.",
+    "mnemonic_id": "Pria besar (大) dengan tusuk rambut: suami.",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-guo4",
+    "char": "过",
+    "pinyin": "guò",
+    "tone": 4,
+    "meaning": "to cross; to go over",
+    "strokes": 6,
+    "radical": "辶",
+    "radicalMeaning": "walk",
+    "components": [
+      "寸",
+      "辶"
+    ],
+    "hsk": 2,
+    "words": [
+      "guo5"
+    ],
+    "zhuyin": "ㄍㄨㄛˋ",
+    "mnemonic": "To cross an inch (寸) of road (辶): to pass by.",
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "char:c-guo4",
+    "language": "zh",
+    "text": "过",
+    "romanization": "guò",
+    "mnemonic_en": "To cross an inch (寸) of road (辶): to pass by.",
+    "mnemonic_id": "Menyeberangi jalan seinci (寸): melewati.",
+    "traditional": "過",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-guan3",
+    "char": "馆",
+    "pinyin": "guǎn",
+    "tone": 3,
+    "meaning": "building; shop",
+    "strokes": 11,
+    "radical": "食",
+    "radicalMeaning": "food",
+    "components": [
+      "官",
+      "饣"
+    ],
+    "hsk": 2,
+    "words": [],
+    "zhuyin": "ㄍㄨㄢˇ",
+    "mnemonic": "A meal (食) under a roof (馆): a restaurant or hall.",
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "char:c-guan3",
+    "language": "zh",
+    "text": "馆",
+    "romanization": "guǎn",
+    "mnemonic_en": "A meal (食) under a roof (馆): a restaurant or hall.",
+    "mnemonic_id": "Makanan (食) di bawah atap: rumah makan atau aula.",
+    "traditional": "館",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-gao4",
+    "char": "告",
+    "pinyin": "gào",
+    "tone": 4,
+    "meaning": "(bound form) to say; to tell",
+    "strokes": 7,
+    "radical": "口",
+    "radicalMeaning": "mouth",
+    "components": [
+      "口",
+      "𠂒"
+    ],
+    "hsk": 2,
+    "words": [
+      "tocfl-l4-guang-gao"
+    ],
+    "zhuyin": "ㄍㄠˋ",
+    "mnemonic": "A mouth (口) raised on a staff: to announce, to tell.",
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "char:c-gao4",
+    "language": "zh",
+    "text": "告",
+    "romanization": "gào",
+    "mnemonic_en": "A mouth (口) raised on a staff: to announce, to tell.",
+    "mnemonic_id": "Mulut (口) di atas tongkat: mengumumkan.",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-gen1",
+    "char": "跟",
+    "pinyin": "gēn",
+    "tone": 1,
+    "meaning": "heel; to follow closely",
+    "strokes": 13,
+    "radical": "足",
+    "radicalMeaning": "foot",
+    "components": [
+      "艮",
+      "𧾷"
+    ],
+    "hsk": 2,
+    "words": [
+      "gen1"
+    ],
+    "zhuyin": "ㄍㄣ",
+    "mnemonic": "A foot (足) and a root (艮): to follow closely behind.",
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "char:c-gen1",
+    "language": "zh",
+    "text": "跟",
+    "romanization": "gēn",
+    "mnemonic_en": "A foot (足) and a root (艮): to follow closely behind.",
+    "mnemonic_id": "Kaki (足) dan akar (艮): mengikuti di belakang.",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-hua4",
+    "char": "画",
+    "pinyin": "huà",
+    "tone": 4,
+    "meaning": "to draw; to paint",
+    "strokes": 8,
+    "radical": "田",
+    "radicalMeaning": "field",
+    "components": [
+      "一",
+      "凵",
+      "田"
+    ],
+    "hsk": 2,
+    "words": [],
+    "zhuyin": "ㄏㄨㄚˋ",
+    "mnemonic": "A field (田) drawn inside a frame: a picture.",
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "char:c-hua4",
+    "language": "zh",
+    "text": "画",
+    "romanization": "huà",
+    "mnemonic_en": "A field (田) drawn inside a frame: a picture.",
+    "mnemonic_id": "Sawah (田) digambar dalam bingkai: lukisan.",
+    "traditional": "畫",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-huai4",
+    "char": "坏",
+    "pinyin": "huài",
+    "tone": 4,
+    "meaning": "bad; spoiled",
+    "strokes": 7,
+    "radical": "土",
+    "radicalMeaning": "earth",
+    "components": [
+      "不",
+      "土"
+    ],
+    "hsk": 2,
+    "words": [
+      "huai4"
+    ],
+    "zhuyin": "ㄏㄨㄞˋ",
+    "mnemonic": "Earth (土) that is not (不) good: bad, spoiled.",
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "char:c-huai4",
+    "language": "zh",
+    "text": "坏",
+    "romanization": "huài",
+    "mnemonic_en": "Earth (土) that is not (不) good: bad, spoiled.",
+    "mnemonic_id": "Tanah (土) yang tidak (不) baik: buruk.",
+    "traditional": "壞",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-hua1",
+    "char": "花",
+    "pinyin": "huā",
+    "tone": 1,
+    "meaning": "flower; blossom",
+    "strokes": 7,
+    "radical": "艹",
+    "radicalMeaning": "grass",
+    "components": [
+      "化",
+      "艹"
+    ],
+    "hsk": 2,
+    "words": [],
+    "zhuyin": "ㄏㄨㄚ",
+    "mnemonic": "A plant (艹) that changes (化): a flower.",
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "char:c-hua1",
+    "language": "zh",
+    "text": "花",
+    "romanization": "huā",
+    "mnemonic_en": "A plant (艹) that changes (化): a flower.",
+    "mnemonic_id": "Tanaman (艹) yang berubah (化): bunga.",
+    "traditional": "蘤",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-hong2",
+    "char": "红",
+    "pinyin": "hóng",
+    "tone": 2,
+    "meaning": "red; popular",
+    "strokes": 6,
+    "radical": "纟",
+    "radicalMeaning": "silk",
+    "components": [
+      "工",
+      "纟"
+    ],
+    "hsk": 2,
+    "words": [],
+    "zhuyin": "ㄏㄨㄥˊ",
+    "mnemonic": "Red silk (纟) thread: the color red.",
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "char:c-hong2",
+    "language": "zh",
+    "text": "红",
+    "romanization": "hóng",
+    "mnemonic_en": "Red silk (纟) thread: the color red.",
+    "mnemonic_id": "Benang sutra (纟) merah: warna merah.",
+    "traditional": "紅",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-hei1",
+    "char": "黑",
+    "pinyin": "hēi",
+    "tone": 1,
+    "meaning": "black; dark",
+    "strokes": 12,
+    "radical": "黑",
+    "radicalMeaning": "black",
+    "components": [
+      "⑧",
+      "灬"
+    ],
+    "hsk": 2,
+    "words": [],
+    "zhuyin": "ㄏㄟ",
+    "mnemonic": "A stove dark with soot: black.",
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "char:c-hei1",
+    "language": "zh",
+    "text": "黑",
+    "romanization": "hēi",
+    "mnemonic_en": "A stove dark with soot: black.",
+    "mnemonic_id": "Tungku menghitam oleh jelaga: hitam.",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-jie4",
+    "char": "介",
+    "pinyin": "jiè",
+    "tone": 4,
+    "meaning": "to introduce; to lie between",
+    "strokes": 4,
+    "radical": "人",
+    "radicalMeaning": "person",
+    "components": [
+      "丨",
+      "丿",
+      "人"
+    ],
+    "hsk": 2,
+    "words": [],
+    "zhuyin": "ㄐㄧㄝˋ",
+    "mnemonic": "A person (人) between two lines: to introduce.",
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "char:c-jie4",
+    "language": "zh",
+    "text": "介",
+    "romanization": "jiè",
+    "mnemonic_en": "A person (人) between two lines: to introduce.",
+    "mnemonic_id": "Seseorang (人) di antara dua garis: memperkenalkan.",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-jiu4",
+    "char": "就",
+    "pinyin": "jiù",
+    "tone": 4,
+    "meaning": "(after a suppositional clause) in that case; then",
+    "strokes": 12,
+    "radical": "尢",
+    "radicalMeaning": "lame",
+    "components": [
+      "京",
+      "尤"
+    ],
+    "hsk": 2,
+    "words": [
+      "jiu4a"
+    ],
+    "zhuyin": "ㄐㄧㄡˋ",
+    "mnemonic": "A stand for an axe (京): then, right away, just.",
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "char:c-jiu4",
+    "language": "zh",
+    "text": "就",
+    "romanization": "jiù",
+    "mnemonic_en": "A stand for an axe (京): then, right away, just.",
+    "mnemonic_id": "Tiang penyangga kapak (京): maka, segera.",
+    "similar": [
+      "京"
+    ],
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-jiao1",
+    "char": "交",
+    "pinyin": "jiāo",
+    "tone": 1,
+    "meaning": "to hand over; to deliver",
+    "strokes": 6,
+    "radical": "亠",
+    "radicalMeaning": "lid",
+    "components": [
+      "亠",
+      "父"
+    ],
+    "hsk": 2,
+    "words": [
+      "tocfl-l5-wai-jiao"
+    ],
+    "zhuyin": "ㄐㄧㄠ",
+    "mnemonic": "A person with crossed legs: to hand over, to exchange.",
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "char:c-jiao1",
+    "language": "zh",
+    "text": "交",
+    "romanization": "jiāo",
+    "mnemonic_en": "A person with crossed legs: to hand over, to exchange.",
+    "mnemonic_id": "Seseorang dengan kaki bersilang: menyerahkan.",
+    "similar": [
+      "郊"
+    ],
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-jiao11",
+    "char": "教",
+    "pinyin": "jiāo",
+    "tone": 1,
+    "meaning": "to teach; to instruct",
+    "strokes": 11,
+    "radical": "攵",
+    "radicalMeaning": "tap",
+    "components": [
+      "孝",
+      "攵"
+    ],
+    "hsk": 2,
+    "words": [],
+    "zhuyin": "ㄐㄧㄠ",
+    "mnemonic": "An old man (耂) teaching children (子) with a staff: to teach.",
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "char:c-jiao11",
+    "language": "zh",
+    "text": "教",
+    "romanization": "jiāo",
+    "mnemonic_en": "An old man (耂) teaching children (子) with a staff: to teach.",
+    "mnemonic_id": "Orang tua (耂) mengajar anak-anak (子) dengan tongkat: mengajar.",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-jiu3",
+    "char": "酒",
+    "pinyin": "jiǔ",
+    "tone": 3,
+    "meaning": "wine (esp. rice wine); liquor",
+    "strokes": 10,
+    "radical": "酉",
+    "radicalMeaning": "wine",
+    "components": [
+      "氵",
+      "酉"
+    ],
+    "hsk": 2,
+    "words": [],
+    "zhuyin": "ㄐㄧㄡˇ",
+    "mnemonic": "A jar of wine (酉) in water (氵): liquor.",
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "char:c-jiu3",
+    "language": "zh",
+    "text": "酒",
+    "romanization": "jiǔ",
+    "mnemonic_en": "A jar of wine (酉) in water (氵): liquor.",
+    "mnemonic_id": "Kendi arak (酉) dalam air (氵): minuman keras.",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-ji4",
+    "char": "记",
+    "pinyin": "jì",
+    "tone": 4,
+    "meaning": "to record; to note",
+    "strokes": 5,
+    "radical": "讠",
+    "radicalMeaning": "speech",
+    "components": [
+      "己",
+      "讠"
+    ],
+    "hsk": 2,
+    "words": [],
+    "zhuyin": "ㄐㄧˋ",
+    "mnemonic": "Words (讠) that keep one remembering (己): to record.",
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "char:c-ji4",
+    "language": "zh",
+    "text": "记",
+    "romanization": "jì",
+    "mnemonic_en": "Words (讠) that keep one remembering (己): to record.",
+    "mnemonic_id": "Kata (讠) yang membuat ingat (己): mencatat.",
+    "traditional": "記",
+    "similar": [
+      "己",
+      "纪"
+    ],
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-jin44",
+    "char": "近",
+    "pinyin": "jìn",
+    "tone": 4,
+    "meaning": "near; close to",
+    "strokes": 7,
+    "radical": "辶",
+    "radicalMeaning": "walk",
+    "components": [
+      "斤",
+      "辶"
+    ],
+    "hsk": 2,
+    "words": [],
+    "zhuyin": "ㄐㄧㄣˋ",
+    "mnemonic": "A road (辶) cut with an axe (斤): near, close.",
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "char:c-jin44",
+    "language": "zh",
+    "text": "近",
+    "romanization": "jìn",
+    "mnemonic_en": "A road (辶) cut with an axe (斤): near, close.",
+    "mnemonic_id": "Jalan (辶) yang ditebas kapak (斤): dekat.",
+    "similar": [
+      "进",
+      "斤"
+    ],
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-jin4",
+    "char": "进",
+    "pinyin": "jìn",
+    "tone": 4,
+    "meaning": "to go forward; to advance",
+    "strokes": 7,
+    "radical": "辶",
+    "radicalMeaning": "walk",
+    "components": [
+      "井",
+      "辶"
+    ],
+    "hsk": 2,
+    "words": [],
+    "zhuyin": "ㄐㄧㄣˋ",
+    "mnemonic": "To advance along a road (辶) with an ability (井): to enter.",
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "char:c-jin4",
+    "language": "zh",
+    "text": "进",
+    "romanization": "jìn",
+    "mnemonic_en": "To advance along a road (辶) with an ability (井): to enter.",
+    "mnemonic_id": "Maju di jalan (辶) menuju sumur (井): masuk.",
+    "traditional": "進",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-jing11",
+    "char": "睛",
+    "pinyin": "jīng",
+    "tone": 1,
+    "meaning": "eye; eyeball",
+    "strokes": 13,
+    "radical": "目",
+    "radicalMeaning": "eye",
+    "components": [
+      "目",
+      "青"
+    ],
+    "hsk": 2,
+    "words": [],
+    "zhuyin": "ㄐㄧㄥ",
+    "mnemonic": "An eye (目) by the blue sky (青): the eyeball.",
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "char:c-jing11",
+    "language": "zh",
+    "text": "睛",
+    "romanization": "jīng",
+    "mnemonic_en": "An eye (目) by the blue sky (青): the eyeball.",
+    "mnemonic_id": "Mata (目) dekat langit biru (青): bola mata.",
+    "similar": [
+      "晴",
+      "情"
+    ],
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-jing1",
+    "char": "经",
+    "pinyin": "jīng",
+    "tone": 1,
+    "meaning": "classics; sacred book",
+    "strokes": 8,
+    "radical": "纟",
+    "radicalMeaning": "silk",
+    "components": [
+      "纟",
+      "𢀖"
+    ],
+    "hsk": 2,
+    "words": [],
+    "zhuyin": "ㄐㄧㄥ",
+    "mnemonic": "Silk (纟) that runs through: to pass through, classics.",
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "char:c-jing1",
+    "language": "zh",
+    "text": "经",
+    "romanization": "jīng",
+    "mnemonic_en": "Silk (纟) that runs through: to pass through, classics.",
+    "mnemonic_id": "Sutra (纟) yang menembus: melewati, kitab.",
+    "traditional": "經",
+    "similar": [
+      "轻",
+      "径"
+    ],
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-ji3",
+    "char": "己",
+    "pinyin": "jǐ",
+    "tone": 3,
+    "meaning": "self; oneself",
+    "strokes": 3,
+    "radical": "己",
+    "radicalMeaning": "self",
+    "components": [
+      "己"
+    ],
+    "hsk": 2,
+    "words": [],
+    "zhuyin": "ㄐㄧˇ",
+    "mnemonic": "A folded thread: oneself.",
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "char:c-ji3",
+    "language": "zh",
+    "text": "己",
+    "romanization": "jǐ",
+    "mnemonic_en": "A folded thread: oneself.",
+    "mnemonic_id": "Benang melingkar: diri sendiri.",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-kuai4",
+    "char": "快",
+    "pinyin": "kuài",
+    "tone": 4,
+    "meaning": "rapid; quick",
+    "strokes": 7,
+    "radical": "忄",
+    "radicalMeaning": "heart",
+    "components": [
+      "夬",
+      "忄"
+    ],
+    "hsk": 2,
+    "words": [
+      "kuai4a",
+      "kuaile4"
+    ],
+    "zhuyin": "ㄎㄨㄞˋ",
+    "mnemonic": "A heart (忄) that is decisive (夬): fast, quick.",
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "char:c-kuai4",
+    "language": "zh",
+    "text": "快",
+    "romanization": "kuài",
+    "mnemonic_en": "A heart (忄) that is decisive (夬): fast, quick.",
+    "mnemonic_id": "Hati (忄) yang tegas: cepat.",
+    "similar": [
+      "块"
+    ],
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-ku4",
+    "char": "裤",
+    "pinyin": "kù",
+    "tone": 4,
+    "meaning": "underpants; trousers",
+    "strokes": 12,
+    "radical": "衣",
+    "radicalMeaning": "clothes",
+    "components": [
+      "库",
+      "衤"
+    ],
+    "hsk": 2,
+    "words": [],
+    "zhuyin": "ㄎㄨˋ",
+    "mnemonic": "Clothes (衤) for the hips (库): trousers.",
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "char:c-ku4",
+    "language": "zh",
+    "text": "裤",
+    "romanization": "kù",
+    "mnemonic_en": "Clothes (衤) for the hips (库): trousers.",
+    "mnemonic_id": "Pakaian (衤) untuk pinggul: celana.",
+    "traditional": "褲",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-ka1",
+    "char": "咖",
+    "pinyin": "kā",
+    "tone": 1,
+    "meaning": "coffee",
+    "strokes": 8,
+    "radical": "口",
+    "radicalMeaning": "mouth",
+    "components": [
+      "加",
+      "口"
+    ],
+    "hsk": 2,
+    "words": [],
+    "zhuyin": "ㄎㄚ",
+    "mnemonic": "A mouth (口) and its sound: coffee.",
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "char:c-ka1",
+    "language": "zh",
+    "text": "咖",
+    "romanization": "kā",
+    "mnemonic_en": "A mouth (口) and its sound: coffee.",
+    "mnemonic_id": "Mulut (口) dan bunyinya: kopi.",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-kao3",
+    "char": "考",
+    "pinyin": "kǎo",
+    "tone": 3,
+    "meaning": "to take an exam; to test",
+    "strokes": 6,
+    "radical": "耂",
+    "radicalMeaning": "old",
+    "components": [
+      "丂",
+      "耂"
+    ],
+    "hsk": 2,
+    "words": [
+      "kaoshi4"
+    ],
+    "zhuyin": "ㄎㄠˇ",
+    "mnemonic": "An old man (耂) leaning on a staff: to test.",
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "char:c-kao3",
+    "language": "zh",
+    "text": "考",
+    "romanization": "kǎo",
+    "mnemonic_en": "An old man (耂) leaning on a staff: to test.",
+    "mnemonic_id": "Orang tua (耂) bersandar pada tongkat: menguji.",
+    "similar": [
+      "老"
+    ],
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-liu2",
+    "char": "留",
+    "pinyin": "liú",
+    "tone": 2,
+    "meaning": "to leave (a message etc); to retain",
+    "strokes": 10,
+    "radical": "田",
+    "radicalMeaning": "field",
+    "components": [
+      "③",
+      "刀",
+      "田"
+    ],
+    "hsk": 2,
+    "words": [],
+    "zhuyin": "ㄌㄧㄡˊ",
+    "mnemonic": "To plant a field (田): to stay, to keep.",
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "char:c-liu2",
+    "language": "zh",
+    "text": "留",
+    "romanization": "liú",
+    "mnemonic_en": "To plant a field (田): to stay, to keep.",
+    "mnemonic_id": "Menanam di sawah (田): tinggal, menyimpan.",
+    "traditional": "畱",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-lan2",
+    "char": "篮",
+    "pinyin": "lán",
+    "tone": 2,
+    "meaning": "basket (receptacle); basket (in basketball)",
+    "strokes": 16,
+    "radical": "竹",
+    "radicalMeaning": "bamboo",
+    "components": [
+      "监",
+      "竹"
+    ],
+    "hsk": 2,
+    "words": [],
+    "zhuyin": "ㄌㄢˊ",
+    "mnemonic": "A bamboo (⺮) basket: a basket.",
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "char:c-lan2",
+    "language": "zh",
+    "text": "篮",
+    "romanization": "lán",
+    "mnemonic_en": "A bamboo (⺮) basket: a basket.",
+    "mnemonic_id": "Keranjang bambu (⺮): keranjang.",
+    "traditional": "籃",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-le4",
+    "char": "乐",
+    "pinyin": "lè",
+    "tone": 4,
+    "meaning": "happy; joy",
+    "strokes": 5,
+    "radical": "丿",
+    "radicalMeaning": "slash",
+    "components": [
+      "乐"
+    ],
+    "hsk": 2,
+    "words": [
+      "kuaile4"
+    ],
+    "zhuyin": "ㄌㄜˋ",
+    "mnemonic": "A musical instrument on a stand: music, joy.",
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "char:c-le4",
+    "language": "zh",
+    "text": "乐",
+    "romanization": "lè",
+    "mnemonic_en": "A musical instrument on a stand: music, joy.",
+    "mnemonic_id": "Alat musik di atas penyangga: musik, sukacita.",
+    "traditional": "樂",
+    "similar": [
+      "东"
+    ],
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-lei4",
+    "char": "累",
+    "pinyin": "lèi",
+    "tone": 4,
+    "meaning": "tired; to be tired",
+    "strokes": 11,
+    "radical": "糸",
+    "radicalMeaning": "silk",
+    "components": [
+      "田",
+      "糸"
+    ],
+    "hsk": 2,
+    "words": [
+      "lei4"
+    ],
+    "zhuyin": "ㄌㄟˋ",
+    "mnemonic": "Thread (糸) tied to a field (田): tired, to accumulate.",
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "char:c-lei4",
+    "language": "zh",
+    "text": "累",
+    "romanization": "lèi",
+    "mnemonic_en": "Thread (糸) tied to a field (田): tired, to accumulate.",
+    "mnemonic_id": "Benang (糸) terikat di sawah (田): lelah, menumpuk.",
+    "traditional": "纍",
+    "similar": [
+      "果"
+    ],
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-li2",
+    "char": "离",
+    "pinyin": "lí",
+    "tone": 2,
+    "meaning": "to leave; to part from",
+    "strokes": 10,
+    "radical": "禸",
+    "radicalMeaning": "tracks",
+    "components": [
+      "㐫",
+      "禸"
+    ],
+    "hsk": 2,
+    "words": [],
+    "zhuyin": "ㄌㄧˊ",
+    "mnemonic": "A bird leaving its net (网): to leave, apart.",
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "char:c-li2",
+    "language": "zh",
+    "text": "离",
+    "romanization": "lí",
+    "mnemonic_en": "A bird leaving its net (网): to leave, apart.",
+    "mnemonic_id": "Burung meninggalkan jaringnya (网): pergi, berpisah.",
+    "traditional": "離",
+    "similar": [
+      "禽"
+    ],
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-lou2",
+    "char": "楼",
+    "pinyin": "lóu",
+    "tone": 2,
+    "meaning": "house with more than 1 story; storied building",
+    "strokes": 13,
+    "radical": "木",
+    "radicalMeaning": "tree",
+    "components": [
+      "娄",
+      "木"
+    ],
+    "hsk": 2,
+    "words": [],
+    "zhuyin": "ㄌㄡˊ",
+    "mnemonic": "A wooden (木) building: a storied building.",
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "char:c-lou2",
+    "language": "zh",
+    "text": "楼",
+    "romanization": "lóu",
+    "mnemonic_en": "A wooden (木) building: a storied building.",
+    "mnemonic_id": "Bangunan kayu (木): gedung bertingkat.",
+    "traditional": "樓",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-lu4",
+    "char": "路",
+    "pinyin": "lù",
+    "tone": 4,
+    "meaning": "road (CL:條|条[tiao2]); journey",
+    "strokes": 13,
+    "radical": "足",
+    "radicalMeaning": "foot",
+    "components": [
+      "各",
+      "𧾷"
+    ],
+    "hsk": 2,
+    "words": [
+      "tocfl-l4-wang-lu"
+    ],
+    "zhuyin": "ㄌㄨˋ",
+    "mnemonic": "A foot (足) on the road (路): a road.",
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "char:c-lu4",
+    "language": "zh",
+    "text": "路",
+    "romanization": "lù",
+    "mnemonic_en": "A foot (足) on the road (路): a road.",
+    "mnemonic_id": "Kaki (足) di atas jalan: jalan.",
+    "similar": [
+      "跟",
+      "跑"
+    ],
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-lv3",
+    "char": "旅",
+    "pinyin": "lǚ",
+    "tone": 3,
+    "meaning": "trip; travel",
+    "strokes": 10,
+    "radical": "方",
+    "radicalMeaning": "square",
+    "components": [
+      "④",
+      "方",
+      "𠂉"
+    ],
+    "hsk": 2,
+    "words": [],
+    "zhuyin": "ㄌㄩˇ",
+    "mnemonic": "A flag (方) with people: to travel, a trip.",
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "char:c-lv3",
+    "language": "zh",
+    "text": "旅",
+    "romanization": "lǚ",
+    "mnemonic_en": "A flag (方) with people: to travel, a trip.",
+    "mnemonic_id": "Bendera (方) dengan orang-orang: bepergian.",
+    "similar": [
+      "族"
+    ],
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-lv4",
+    "char": "绿",
+    "pinyin": "lǜ",
+    "tone": 4,
+    "meaning": "green",
+    "strokes": 11,
+    "radical": "纟",
+    "radicalMeaning": "silk",
+    "components": [
+      "录",
+      "纟"
+    ],
+    "hsk": 2,
+    "words": [],
+    "zhuyin": "ㄌㄩˋ",
+    "mnemonic": "Green silk (纟) of green grass: the color green.",
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "char:c-lv4",
+    "language": "zh",
+    "text": "绿",
+    "romanization": "lǜ",
+    "mnemonic_en": "Green silk (纟) of green grass: the color green.",
+    "mnemonic_id": "Sutra (纟) hijau seperti rumput: warna hijau.",
+    "traditional": "綠",
+    "similar": [
+      "缘"
+    ],
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-man4",
+    "char": "慢",
+    "pinyin": "màn",
+    "tone": 4,
+    "meaning": "slow",
+    "strokes": 14,
+    "radical": "忄",
+    "radicalMeaning": "heart",
+    "components": [
+      "忄",
+      "曼"
+    ],
+    "hsk": 2,
+    "words": [
+      "man4"
+    ],
+    "zhuyin": "ㄇㄢˋ",
+    "mnemonic": "A heart (忄) that is careless (曼): slow.",
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "char:c-man4",
+    "language": "zh",
+    "text": "慢",
+    "romanization": "màn",
+    "mnemonic_en": "A heart (忄) that is careless (曼): slow.",
+    "mnemonic_id": "Hati (忄) yang teledor (曼): lambat.",
+    "similar": [
+      "漫"
+    ],
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-mei3",
+    "char": "每",
+    "pinyin": "měi",
+    "tone": 3,
+    "meaning": "each; every",
+    "strokes": 7,
+    "radical": "母",
+    "radicalMeaning": "mother",
+    "components": [
+      "母",
+      "𠂉"
+    ],
+    "hsk": 2,
+    "words": [
+      "mei ge5"
+    ],
+    "zhuyin": "ㄇㄟˇ",
+    "mnemonic": "A mother (母) with her hair: every, each.",
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "char:c-mei3",
+    "language": "zh",
+    "text": "每",
+    "romanization": "měi",
+    "mnemonic_en": "A mother (母) with her hair: every, each.",
+    "mnemonic_id": "Seorang ibu (母) dengan rambutnya: setiap.",
+    "similar": [
+      "母"
+    ],
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-niao3",
+    "char": "鸟",
+    "pinyin": "niǎo",
+    "tone": 3,
+    "meaning": "bird",
+    "strokes": 5,
+    "radical": "鸟",
+    "radicalMeaning": "bird",
+    "components": [
+      "④",
+      "一"
+    ],
+    "hsk": 2,
+    "words": [],
+    "zhuyin": "ㄋㄧㄠˇ",
+    "mnemonic": "A bird with a head, body, and tail.",
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "char:c-niao3",
+    "language": "zh",
+    "text": "鸟",
+    "romanization": "niǎo",
+    "mnemonic_en": "A bird with a head, body, and tail.",
+    "mnemonic_id": "Burung dengan kepala, badan, dan ekor.",
+    "traditional": "鳥",
+    "similar": [
+      "乌"
+    ],
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-na2",
+    "char": "拿",
+    "pinyin": "ná",
+    "tone": 2,
+    "meaning": "to hold; to seize",
+    "strokes": 10,
+    "radical": "手",
+    "radicalMeaning": "hand",
+    "components": [
+      "合",
+      "手"
+    ],
+    "hsk": 2,
+    "words": [],
+    "zhuyin": "ㄋㄚˊ",
+    "mnemonic": "To join (合) hands (手): to take, to hold.",
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "char:c-na2",
+    "language": "zh",
+    "text": "拿",
+    "romanization": "ná",
+    "mnemonic_en": "To join (合) hands (手): to take, to hold.",
+    "mnemonic_id": "Menyatukan (合) tangan (手): mengambil, memegang.",
+    "similar": [
+      "合"
+    ],
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-piao4",
+    "char": "票",
+    "pinyin": "piào",
+    "tone": 4,
+    "meaning": "ticket; ballot",
+    "strokes": 11,
+    "radical": "示",
+    "radicalMeaning": "altar",
+    "components": [
+      "示",
+      "覀"
+    ],
+    "hsk": 2,
+    "words": [],
+    "zhuyin": "ㄆㄧㄠˋ",
+    "mnemonic": "A ticket of paper in a frame: a ticket.",
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "char:c-piao4",
+    "language": "zh",
+    "text": "票",
+    "romanization": "piào",
+    "mnemonic_en": "A ticket of paper in a frame: a ticket.",
+    "mnemonic_id": "Tiket kertas dalam bingkai: tiket.",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-pang2",
+    "char": "旁",
+    "pinyin": "páng",
+    "tone": 2,
+    "meaning": "one side; other",
+    "strokes": 10,
+    "radical": "方",
+    "radicalMeaning": "square",
+    "components": [
+      "丷",
+      "亠",
+      "冖",
+      "方"
+    ],
+    "hsk": 2,
+    "words": [],
+    "zhuyin": "ㄆㄤˊ",
+    "mnemonic": "A side, half (旁) of a building: beside.",
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "char:c-pang2",
+    "language": "zh",
+    "text": "旁",
+    "romanization": "páng",
+    "mnemonic_en": "A side, half (旁) of a building: beside.",
+    "mnemonic_id": "Sisi, separuh bangunan: di samping.",
+    "similar": [
+      "方"
+    ],
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-pao3",
+    "char": "跑",
+    "pinyin": "pǎo",
+    "tone": 3,
+    "meaning": "(of an animal) to paw (the ground); to run",
+    "strokes": 12,
+    "radical": "足",
+    "radicalMeaning": "foot",
+    "components": [
+      "包",
+      "𧾷"
+    ],
+    "hsk": 2,
+    "words": [],
+    "zhuyin": "ㄆㄠˇ",
+    "mnemonic": "A foot (足) wrapped (包): to run.",
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "char:c-pao3",
+    "language": "zh",
+    "text": "跑",
+    "romanization": "pǎo",
+    "mnemonic_en": "A foot (足) wrapped (包): to run.",
+    "mnemonic_id": "Kaki (足) terbungkus (包): berlari.",
+    "similar": [
+      "包",
+      "炮"
+    ],
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-qiu2",
+    "char": "球",
+    "pinyin": "qiú",
+    "tone": 2,
+    "meaning": "ball",
+    "strokes": 11,
+    "radical": "王",
+    "radicalMeaning": "king",
+    "components": [
+      "求",
+      "王"
+    ],
+    "hsk": 2,
+    "words": [
+      "tocfl-l5-quan-qiu-hua"
+    ],
+    "zhuyin": "ㄑㄧㄡˊ",
+    "mnemonic": "A jade (王) ball: a ball.",
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "char:c-qiu2",
+    "language": "zh",
+    "text": "球",
+    "romanization": "qiú",
+    "mnemonic_en": "A jade (王) ball: a ball.",
+    "mnemonic_id": "Bola batu giok (王): bola.",
+    "similar": [
+      "求"
+    ],
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-qing22",
+    "char": "情",
+    "pinyin": "qíng",
+    "tone": 2,
+    "meaning": "(bound form) feelings; emotion",
+    "strokes": 11,
+    "radical": "忄",
+    "radicalMeaning": "heart",
+    "components": [
+      "忄",
+      "青"
+    ],
+    "hsk": 2,
+    "words": [],
+    "zhuyin": "ㄑㄧㄥˊ",
+    "mnemonic": "The feelings (忄) of the blue (青) sky: emotion.",
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "char:c-qing22",
+    "language": "zh",
+    "text": "情",
+    "romanization": "qíng",
+    "mnemonic_en": "The feelings (忄) of the blue (青) sky: emotion.",
+    "mnemonic_id": "Perasaan (忄) langit biru (青): emosi.",
+    "similar": [
+      "晴",
+      "清"
+    ],
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-qing2",
+    "char": "晴",
+    "pinyin": "qíng",
+    "tone": 2,
+    "meaning": "clear; fine (weather)",
+    "strokes": 12,
+    "radical": "日",
+    "radicalMeaning": "sun",
+    "components": [
+      "日",
+      "青"
+    ],
+    "hsk": 2,
+    "words": [],
+    "zhuyin": "ㄑㄧㄥˊ",
+    "mnemonic": "The sun (日) and clear blue (青) sky: clear weather.",
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "char:c-qing2",
+    "language": "zh",
+    "text": "晴",
+    "romanization": "qíng",
+    "mnemonic_en": "The sun (日) and clear blue (青) sky: clear weather.",
+    "mnemonic_id": "Matahari (日) dan langit biru (青) cerah: cuaca cerah.",
+    "similar": [
+      "睛",
+      "清"
+    ],
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-qi1",
+    "char": "妻",
+    "pinyin": "qī",
+    "tone": 1,
+    "meaning": "(bound form) wife; to marry off (a daughter)",
+    "strokes": 8,
+    "radical": "女",
+    "radicalMeaning": "woman",
+    "components": [
+      "コ",
+      "一",
+      "十",
+      "女"
+    ],
+    "hsk": 2,
+    "words": [],
+    "zhuyin": "ㄑㄧ",
+    "mnemonic": "A woman (女) with a comb in her hair: a wife.",
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "char:c-qi1",
+    "language": "zh",
+    "text": "妻",
+    "romanization": "qī",
+    "mnemonic_en": "A woman (女) with a comb in her hair: a wife.",
+    "mnemonic_id": "Seorang wanita (女) dengan sisir di rambut: istri.",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-rang4",
+    "char": "让",
+    "pinyin": "ràng",
+    "tone": 4,
+    "meaning": "to yield; to permit",
+    "strokes": 5,
+    "radical": "讠",
+    "radicalMeaning": "speech",
+    "components": [
+      "上",
+      "讠"
+    ],
+    "hsk": 2,
+    "words": [],
+    "zhuyin": "ㄖㄤˋ",
+    "mnemonic": "Words (讠) that yield: to let, to allow.",
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "char:c-rang4",
+    "language": "zh",
+    "text": "让",
+    "romanization": "ràng",
+    "mnemonic_en": "Words (讠) that yield: to let, to allow.",
+    "mnemonic_id": "Kata (讠) yang mengalah: mengizinkan.",
+    "traditional": "讓",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-ran2",
+    "char": "然",
+    "pinyin": "rán",
+    "tone": 2,
+    "meaning": "so; thus",
+    "strokes": 12,
+    "radical": "火",
+    "radicalMeaning": "fire",
+    "components": [
+      "冫",
+      "灬",
+      "犬",
+      "𠂊"
+    ],
+    "hsk": 2,
+    "words": [],
+    "zhuyin": "ㄖㄢˊ",
+    "mnemonic": "A dog (犬) roasting on fire (火): natural, so.",
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "char:c-ran2",
+    "language": "zh",
+    "text": "然",
+    "romanization": "rán",
+    "mnemonic_en": "A dog (犬) roasting on fire (火): natural, so.",
+    "mnemonic_id": "Anjing (犬) dipanggang di api (火): alamiah.",
+    "similar": [
+      "燃"
+    ],
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-rou4",
+    "char": "肉",
+    "pinyin": "ròu",
+    "tone": 4,
+    "meaning": "meat; flesh",
+    "strokes": 6,
+    "radical": "肉",
+    "radicalMeaning": "meat",
+    "components": [
+      "肉"
+    ],
+    "hsk": 2,
+    "words": [],
+    "zhuyin": "ㄖㄡˋ",
+    "mnemonic": "A slab of meat with a bone: meat.",
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "char:c-rou4",
+    "language": "zh",
+    "text": "肉",
+    "romanization": "ròu",
+    "mnemonic_en": "A slab of meat with a bone: meat.",
+    "mnemonic_id": "Sepotong daging dengan tulang: daging.",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-shao4",
+    "char": "绍",
+    "pinyin": "shào",
+    "tone": 4,
+    "meaning": "to continue; to carry on",
+    "strokes": 8,
+    "radical": "糸",
+    "radicalMeaning": "silk",
+    "components": [
+      "召",
+      "纟"
+    ],
+    "hsk": 2,
+    "words": [],
+    "zhuyin": "ㄕㄠˋ",
+    "mnemonic": "Silk (纟) threads joined at a sound: to continue.",
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "char:c-shao4",
+    "language": "zh",
+    "text": "绍",
+    "romanization": "shào",
+    "mnemonic_en": "Silk (纟) threads joined at a sound: to continue.",
+    "mnemonic_id": "Benang (纟) yang disambung: melanjutkan.",
+    "traditional": "紹",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-shi44b",
+    "char": "室",
+    "pinyin": "shì",
+    "tone": 4,
+    "meaning": "room; work unit",
+    "strokes": 9,
+    "radical": "宀",
+    "radicalMeaning": "roof",
+    "components": [
+      "宀",
+      "至"
+    ],
+    "hsk": 2,
+    "words": [],
+    "zhuyin": "ㄕˋ",
+    "mnemonic": "A room under a roof (宀): a room.",
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "char:c-shi44b",
+    "language": "zh",
+    "text": "室",
+    "romanization": "shì",
+    "mnemonic_en": "A room under a roof (宀): a room.",
+    "mnemonic_id": "Ruang di bawah atap (宀): ruangan.",
+    "similar": [
+      "屋"
+    ],
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-shi44",
+    "char": "试",
+    "pinyin": "shì",
+    "tone": 4,
+    "meaning": "to test; to try",
+    "strokes": 8,
+    "radical": "讠",
+    "radicalMeaning": "speech",
+    "components": [
+      "式",
+      "讠"
+    ],
+    "hsk": 2,
+    "words": [
+      "kaoshi4"
+    ],
+    "zhuyin": "ㄕˋ",
+    "mnemonic": "To test with words (讠) and a formula (式): to try.",
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "char:c-shi44",
+    "language": "zh",
+    "text": "试",
+    "romanization": "shì",
+    "mnemonic_en": "To test with words (讠) and a formula (式): to try.",
+    "mnemonic_id": "Menguji dengan kata (讠) dan rumus (式): mencoba.",
+    "traditional": "試",
+    "similar": [
+      "式",
+      "考"
+    ],
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-shen1",
+    "char": "身",
+    "pinyin": "shēn",
+    "tone": 1,
+    "meaning": "body; life",
+    "strokes": 7,
+    "radical": "身",
+    "radicalMeaning": "body",
+    "components": [
+      "身"
+    ],
+    "hsk": 2,
+    "words": [],
+    "zhuyin": "ㄕㄣ",
+    "mnemonic": "A pregnant body: body, life.",
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "char:c-shen1",
+    "language": "zh",
+    "text": "身",
+    "romanization": "shēn",
+    "mnemonic_en": "A pregnant body: body, life.",
+    "mnemonic_id": "Tubuh yang mengandung: badan, jiwa.",
+    "similar": [
+      "射"
+    ],
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-shu1",
+    "char": "舒",
+    "pinyin": "shū",
+    "tone": 1,
+    "meaning": "to stretch; to unfold",
+    "strokes": 12,
+    "radical": "舌",
+    "radicalMeaning": "tongue",
+    "components": [
+      "予",
+      "舍"
+    ],
+    "hsk": 2,
+    "words": [],
+    "zhuyin": "ㄕㄨ",
+    "mnemonic": "To stretch (舍) and unfold: comfortable.",
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "char:c-shu1",
+    "language": "zh",
+    "text": "舒",
+    "romanization": "shū",
+    "mnemonic_en": "To stretch (舍) and unfold: comfortable.",
+    "mnemonic_id": "Meregangkan dan membuka: nyaman.",
+    "similar": [
+      "舍"
+    ],
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-shi3",
+    "char": "始",
+    "pinyin": "shǐ",
+    "tone": 3,
+    "meaning": "to begin; to start",
+    "strokes": 8,
+    "radical": "女",
+    "radicalMeaning": "woman",
+    "components": [
+      "台",
+      "女"
+    ],
+    "hsk": 2,
+    "words": [
+      "kaishi3"
+    ],
+    "zhuyin": "ㄕˇ",
+    "mnemonic": "A woman (女) at the start of a platform (台): to begin.",
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "char:c-shi3",
+    "language": "zh",
+    "text": "始",
+    "romanization": "shǐ",
+    "mnemonic_en": "A woman (女) at the start of a platform (台): to begin.",
+    "mnemonic_id": "Seorang wanita (女) di awal peron (台): memulai.",
+    "similar": [
+      "台"
+    ],
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-sui1",
+    "char": "虽",
+    "pinyin": "suī",
+    "tone": 1,
+    "meaning": "although; even though",
+    "strokes": 9,
+    "radical": "虫",
+    "radicalMeaning": "insect",
+    "components": [
+      "口",
+      "虫"
+    ],
+    "hsk": 2,
+    "words": [],
+    "zhuyin": "ㄙㄨㄟ",
+    "mnemonic": "A worm (虫) still (虽) speaking: although.",
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "char:c-sui1",
+    "language": "zh",
+    "text": "虽",
+    "romanization": "suī",
+    "mnemonic_en": "A worm (虫) still (虽) speaking: although.",
+    "mnemonic_id": "Seekor ulat (虫) masih berbicara: meskipun.",
+    "traditional": "雖",
+    "similar": [
+      "虫"
+    ],
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-suo3",
+    "char": "所",
+    "pinyin": "suǒ",
+    "tone": 3,
+    "meaning": "actually; place",
+    "strokes": 8,
+    "radical": "户",
+    "radicalMeaning": "door",
+    "components": [
+      "戶",
+      "斤"
+    ],
+    "hsk": 2,
+    "words": [
+      "suoyi3"
+    ],
+    "zhuyin": "ㄙㄨㄛˇ",
+    "mnemonic": "A door (户) with an axe (斤): a place.",
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "char:c-suo3",
+    "language": "zh",
+    "text": "所",
+    "romanization": "suǒ",
+    "mnemonic_en": "A door (户) with an axe (斤): a place.",
+    "mnemonic_id": "Pintu (户) dengan kapak (斤): tempat.",
+    "similar": [
+      "户"
+    ],
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-se4",
+    "char": "色",
+    "pinyin": "sè",
+    "tone": 4,
+    "meaning": "color; CL:種|种[zhong3]",
+    "strokes": 6,
+    "radical": "色",
+    "radicalMeaning": "color",
+    "components": [
+      "巴",
+      "𠂊"
+    ],
+    "hsk": 2,
+    "words": [],
+    "zhuyin": "ㄙㄜˋ",
+    "mnemonic": "A person and a knife: color, appearance.",
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "char:c-se4",
+    "language": "zh",
+    "text": "色",
+    "romanization": "sè",
+    "mnemonic_en": "A person and a knife: color, appearance.",
+    "mnemonic_id": "Seseorang dan pisau: warna, rupa.",
+    "similar": [
+      "巴"
+    ],
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-song4",
+    "char": "送",
+    "pinyin": "sòng",
+    "tone": 4,
+    "meaning": "to send; to deliver",
+    "strokes": 9,
+    "radical": "辶",
+    "radicalMeaning": "walk",
+    "components": [
+      "关",
+      "辶"
+    ],
+    "hsk": 2,
+    "words": [],
+    "zhuyin": "ㄙㄨㄥˋ",
+    "mnemonic": "To see off on the road (辶) with a head (送): to send.",
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "char:c-song4",
+    "language": "zh",
+    "text": "送",
+    "romanization": "sòng",
+    "mnemonic_en": "To see off on the road (辶) with a head (送): to send.",
+    "mnemonic_id": "Mengantar di jalan (辶): mengirim.",
+    "similar": [
+      "关"
+    ],
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-su4",
+    "char": "诉",
+    "pinyin": "sù",
+    "tone": 4,
+    "meaning": "to complain; to sue",
+    "strokes": 7,
+    "radical": "言",
+    "radicalMeaning": "speech",
+    "components": [
+      "斥",
+      "讠"
+    ],
+    "hsk": 2,
+    "words": [],
+    "zhuyin": "ㄙㄨˋ",
+    "mnemonic": "Words (讠) that complain about a ruler (斥): to tell.",
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "char:c-su4",
+    "language": "zh",
+    "text": "诉",
+    "romanization": "sù",
+    "mnemonic_en": "Words (讠) that complain about a ruler (斥): to tell.",
+    "mnemonic_id": "Kata (讠) yang mengeluh: menceritakan.",
+    "traditional": "訴",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-si1",
+    "char": "思",
+    "pinyin": "sī",
+    "tone": 1,
+    "meaning": "to think; to consider",
+    "strokes": 9,
+    "radical": "心",
+    "radicalMeaning": "heart",
+    "components": [
+      "心",
+      "田"
+    ],
+    "hsk": 2,
+    "words": [],
+    "zhuyin": "ㄙ",
+    "mnemonic": "To plant thoughts (田) in the heart (心): to think.",
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "char:c-si1",
+    "language": "zh",
+    "text": "思",
+    "romanization": "sī",
+    "mnemonic_en": "To plant thoughts (田) in the heart (心): to think.",
+    "mnemonic_id": "Menanam pikiran (田) di hati (心): berpikir.",
+    "similar": [
+      "想"
+    ],
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-tiao4",
+    "char": "跳",
+    "pinyin": "tiào",
+    "tone": 4,
+    "meaning": "to jump; to hop",
+    "strokes": 13,
+    "radical": "足",
+    "radicalMeaning": "foot",
+    "components": [
+      "兆",
+      "𧾷"
+    ],
+    "hsk": 2,
+    "words": [],
+    "zhuyin": "ㄊㄧㄠˋ",
+    "mnemonic": "A foot (足) leaping over a sign (兆): to jump.",
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "char:c-tiao4",
+    "language": "zh",
+    "text": "跳",
+    "romanization": "tiào",
+    "mnemonic_en": "A foot (足) leaping over a sign (兆): to jump.",
+    "mnemonic_id": "Kaki (足) melompati tanda (兆): melompat.",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-tie3",
+    "char": "铁",
+    "pinyin": "tiě",
+    "tone": 3,
+    "meaning": "iron (metal); arms",
+    "strokes": 10,
+    "radical": "钅",
+    "radicalMeaning": "metal",
+    "components": [
+      "失",
+      "钅"
+    ],
+    "hsk": 2,
+    "words": [],
+    "zhuyin": "ㄊㄧㄝˇ",
+    "mnemonic": "Metal (钅) that is big and strong: iron.",
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "char:c-tie3",
+    "language": "zh",
+    "text": "铁",
+    "romanization": "tiě",
+    "mnemonic_en": "Metal (钅) that is big and strong: iron.",
+    "mnemonic_id": "Logam (钅) yang besar dan kuat: besi.",
+    "traditional": "鐵",
+    "similar": [
+      "失"
+    ],
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-teng2",
+    "char": "疼",
+    "pinyin": "téng",
+    "tone": 2,
+    "meaning": "(it) hurts; sore",
+    "strokes": 10,
+    "radical": "疒",
+    "radicalMeaning": "sickness",
+    "components": [
+      "冬",
+      "疒"
+    ],
+    "hsk": 2,
+    "words": [],
+    "zhuyin": "ㄊㄥˊ",
+    "mnemonic": "A sickness (疒) that aches with winter (冬): pain.",
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "char:c-teng2",
+    "language": "zh",
+    "text": "疼",
+    "romanization": "téng",
+    "mnemonic_en": "A sickness (疒) that aches with winter (冬): pain.",
+    "mnemonic_id": "Penyakit (疒) yang sakit di musim dingin (冬): nyeri.",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-tou2",
+    "char": "头",
+    "pinyin": "tóu",
+    "tone": 2,
+    "meaning": "head; hair style",
+    "strokes": 5,
+    "radical": "大",
+    "radicalMeaning": "big",
+    "components": [
+      "头"
+    ],
+    "hsk": 2,
+    "words": [],
+    "zhuyin": "ㄊㄡˊ",
+    "mnemonic": "A big (大) head: the head.",
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "char:c-tou2",
+    "language": "zh",
+    "text": "头",
+    "romanization": "tóu",
+    "mnemonic_en": "A big (大) head: the head.",
+    "mnemonic_id": "Kepala besar (大): kepala.",
+    "traditional": "頭",
+    "similar": [
+      "买"
+    ],
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-ti11",
+    "char": "体",
+    "pinyin": "tī",
+    "tone": 1,
+    "meaning": "body; form",
+    "strokes": 7,
+    "radical": "人",
+    "radicalMeaning": "person",
+    "components": [
+      "亻",
+      "本"
+    ],
+    "hsk": 2,
+    "words": [],
+    "zhuyin": "ㄊㄧ",
+    "mnemonic": "A person (亻) and a foundation (本): the body.",
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "char:c-ti11",
+    "language": "zh",
+    "text": "体",
+    "romanization": "tī",
+    "mnemonic_en": "A person (亻) and a foundation (本): the body.",
+    "mnemonic_id": "Seseorang (亻) dan landasan (本): badan.",
+    "traditional": "體",
+    "similar": [
+      "休"
+    ],
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-ti1",
+    "char": "踢",
+    "pinyin": "tī",
+    "tone": 1,
+    "meaning": "to kick; to play (e.g. soccer)",
+    "strokes": 15,
+    "radical": "足",
+    "radicalMeaning": "foot",
+    "components": [
+      "易",
+      "𧾷"
+    ],
+    "hsk": 2,
+    "words": [],
+    "zhuyin": "ㄊㄧ",
+    "mnemonic": "A foot (足) that is easy (易): to kick.",
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "char:c-ti1",
+    "language": "zh",
+    "text": "踢",
+    "romanization": "tī",
+    "mnemonic_en": "A foot (足) that is easy (易): to kick.",
+    "mnemonic_id": "Kaki (足) yang mudah: menendang.",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-wan4",
+    "char": "万",
+    "pinyin": "wàn",
+    "tone": 4,
+    "meaning": "ten thousand; a great number",
+    "strokes": 3,
+    "radical": "一",
+    "radicalMeaning": "one",
+    "components": [
+      "一",
+      "丿",
+      "𠃌"
+    ],
+    "hsk": 2,
+    "words": [],
+    "zhuyin": "ㄨㄢˋ",
+    "mnemonic": "A swastika of ten thousand: ten thousand.",
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "char:c-wan4",
+    "language": "zh",
+    "text": "万",
+    "romanization": "wàn",
+    "mnemonic_en": "A swastika of ten thousand: ten thousand.",
+    "mnemonic_id": "Swastika dari sepuluh ribu: sepuluh ribu.",
+    "traditional": "萬",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-wang4",
+    "char": "忘",
+    "pinyin": "wàng",
+    "tone": 4,
+    "meaning": "to forget; to overlook",
+    "strokes": 7,
+    "radical": "心",
+    "radicalMeaning": "heart",
+    "components": [
+      "亡",
+      "心"
+    ],
+    "hsk": 2,
+    "words": [],
+    "zhuyin": "ㄨㄤˋ",
+    "mnemonic": "The heart (心) that dies (亡): to forget.",
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "char:c-wang4",
+    "language": "zh",
+    "text": "忘",
+    "romanization": "wàng",
+    "mnemonic_en": "The heart (心) that dies (亡): to forget.",
+    "mnemonic_id": "Hati (心) yang mati (亡): melupakan.",
+    "similar": [
+      "忙",
+      "望"
+    ],
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-wang44",
+    "char": "望",
+    "pinyin": "wàng",
+    "tone": 4,
+    "meaning": "to hope; to look at",
+    "strokes": 11,
+    "radical": "月",
+    "radicalMeaning": "moon",
+    "components": [
+      "亡",
+      "月",
+      "王"
+    ],
+    "hsk": 2,
+    "words": [],
+    "zhuyin": "ㄨㄤˋ",
+    "mnemonic": "A king (王) watching the moon (月): to hope, to gaze.",
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "char:c-wang44",
+    "language": "zh",
+    "text": "望",
+    "romanization": "wàng",
+    "mnemonic_en": "A king (王) watching the moon (月): to hope, to gaze.",
+    "mnemonic_id": "Seorang raja (王) memandang bulan (月): berharap.",
+    "traditional": "朢",
+    "similar": [
+      "忘",
+      "王"
+    ],
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-wan2",
+    "char": "完",
+    "pinyin": "wán",
+    "tone": 2,
+    "meaning": "to finish; to be over",
+    "strokes": 7,
+    "radical": "宀",
+    "radicalMeaning": "roof",
+    "components": [
+      "元",
+      "宀"
+    ],
+    "hsk": 2,
+    "words": [],
+    "zhuyin": "ㄨㄢˊ",
+    "mnemonic": "A roof (宀) and a yuan (元): to finish, complete.",
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "char:c-wan2",
+    "language": "zh",
+    "text": "完",
+    "romanization": "wán",
+    "mnemonic_en": "A roof (宀) and a yuan (元): to finish, complete.",
+    "mnemonic_id": "Atap (宀) dan yuan (元): selesai.",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-wei4",
+    "char": "为",
+    "pinyin": "wèi",
+    "tone": 4,
+    "meaning": "as (in the capacity of); to take sth as",
+    "strokes": 4,
+    "radical": "丶",
+    "radicalMeaning": "dot",
+    "components": [
+      "为"
+    ],
+    "hsk": 2,
+    "words": [
+      "weishenme5",
+      "yinwei4"
+    ],
+    "zhuyin": "ㄨㄟˋ",
+    "mnemonic": "A hand guiding an elephant: to do, to act as.",
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "char:c-wei4",
+    "language": "zh",
+    "text": "为",
+    "romanization": "wèi",
+    "mnemonic_en": "A hand guiding an elephant: to do, to act as.",
+    "mnemonic_id": "Tangan menuntun gajah: melakukan, menjadi.",
+    "traditional": "爲",
+    "similar": [
+      "办"
+    ],
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-wei44",
+    "char": "位",
+    "pinyin": "wèi",
+    "tone": 4,
+    "meaning": "position; location",
+    "strokes": 7,
+    "radical": "亻",
+    "radicalMeaning": "person",
+    "components": [
+      "亻",
+      "立"
+    ],
+    "hsk": 2,
+    "words": [],
+    "zhuyin": "ㄨㄟˋ",
+    "mnemonic": "A person (亻) standing at his post (立): a position.",
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "char:c-wei44",
+    "language": "zh",
+    "text": "位",
+    "romanization": "wèi",
+    "mnemonic_en": "A person (亻) standing at his post (立): a position.",
+    "mnemonic_id": "Seseorang (亻) berdiri di posnya (立): kedudukan.",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-wang33",
+    "char": "往",
+    "pinyin": "wǎng",
+    "tone": 3,
+    "meaning": "to go (in a direction); to",
+    "strokes": 8,
+    "radical": "彳",
+    "radicalMeaning": "step",
+    "components": [
+      "主",
+      "彳"
+    ],
+    "hsk": 2,
+    "words": [],
+    "zhuyin": "ㄨㄤˇ",
+    "mnemonic": "A step (彳) toward the king (王): to go, toward.",
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "char:c-wang33",
+    "language": "zh",
+    "text": "往",
+    "romanization": "wǎng",
+    "mnemonic_en": "A step (彳) toward the king (王): to go, toward.",
+    "mnemonic_id": "Langkah (彳) menuju raja (王): pergi, menuju.",
+    "traditional": "徃",
+    "similar": [
+      "住"
+    ],
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-wang3",
+    "char": "网",
+    "pinyin": "wǎng",
+    "tone": 3,
+    "meaning": "net; network",
+    "strokes": 6,
+    "radical": "网",
+    "radicalMeaning": "net",
+    "components": [
+      "㐅",
+      "冂"
+    ],
+    "hsk": 2,
+    "words": [],
+    "zhuyin": "ㄨㄤˇ",
+    "mnemonic": "A net with crossed meshes: a net.",
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "char:c-wang3",
+    "language": "zh",
+    "text": "网",
+    "romanization": "wǎng",
+    "mnemonic_en": "A net with crossed meshes: a net.",
+    "mnemonic_id": "Jaring dengan anyaman silang: jaring.",
+    "traditional": "網",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-wu3",
+    "char": "舞",
+    "pinyin": "wǔ",
+    "tone": 3,
+    "meaning": "to dance; to wield",
+    "strokes": 14,
+    "radical": "舛",
+    "radicalMeaning": "oppose",
+    "components": [
+      "一",
+      "卌",
+      "舛",
+      "𠂉"
+    ],
+    "hsk": 2,
+    "words": [],
+    "zhuyin": "ㄨˇ",
+    "mnemonic": "A person dancing with the feet in midair.",
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "char:c-wu3",
+    "language": "zh",
+    "text": "舞",
+    "romanization": "wǔ",
+    "mnemonic_en": "A person dancing with the feet in midair.",
+    "mnemonic_id": "Seseorang menari dengan kaki melayang.",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-xiao4",
+    "char": "笑",
+    "pinyin": "xiào",
+    "tone": 4,
+    "meaning": "to laugh; to smile",
+    "strokes": 10,
+    "radical": "⺮",
+    "radicalMeaning": "bamboo",
+    "components": [
+      "夭",
+      "竹"
+    ],
+    "hsk": 2,
+    "words": [],
+    "zhuyin": "ㄒㄧㄠˋ",
+    "mnemonic": "Bamboo (⺮) and a shaking head: to laugh.",
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "char:c-xiao4",
+    "language": "zh",
+    "text": "笑",
+    "romanization": "xiào",
+    "mnemonic_en": "Bamboo (⺮) and a shaking head: to laugh.",
+    "mnemonic_id": "Bambu (⺮) dan kepala berguncang: tertawa.",
+    "similar": [
+      "笔"
+    ],
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-xing4",
+    "char": "姓",
+    "pinyin": "xìng",
+    "tone": 4,
+    "meaning": "family name; to be surnamed ...",
+    "strokes": 8,
+    "radical": "女",
+    "radicalMeaning": "woman",
+    "components": [
+      "女",
+      "生"
+    ],
+    "hsk": 2,
+    "words": [],
+    "zhuyin": "ㄒㄧㄥˋ",
+    "mnemonic": "A woman (女) born (生): family name.",
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "char:c-xing4",
+    "language": "zh",
+    "text": "姓",
+    "romanization": "xìng",
+    "mnemonic_en": "A woman (女) born (生): family name.",
+    "mnemonic_id": "Seorang wanita (女) lahir (生): nama keluarga.",
+    "similar": [
+      "生",
+      "性"
+    ],
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-xi1",
+    "char": "希",
+    "pinyin": "xī",
+    "tone": 1,
+    "meaning": "to hope; to admire",
+    "strokes": 7,
+    "radical": "巾",
+    "radicalMeaning": "cloth",
+    "components": [
+      "㐅",
+      "布"
+    ],
+    "hsk": 2,
+    "words": [],
+    "zhuyin": "ㄒㄧ",
+    "mnemonic": "To hope, threads (巾) of a fine weave: rare, hope.",
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "char:c-xi1",
+    "language": "zh",
+    "text": "希",
+    "romanization": "xī",
+    "mnemonic_en": "To hope, threads (巾) of a fine weave: rare, hope.",
+    "mnemonic_id": "Berharap, kain (巾) tenunan halus: langka.",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-xi3",
+    "char": "洗",
+    "pinyin": "xǐ",
+    "tone": 3,
+    "meaning": "to wash; to bathe",
+    "strokes": 9,
+    "radical": "氵",
+    "radicalMeaning": "water",
+    "components": [
+      "先",
+      "氵"
+    ],
+    "hsk": 2,
+    "words": [],
+    "zhuyin": "ㄒㄧˇ",
+    "mnemonic": "To wash feet (先) in water (氵): to wash.",
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "char:c-xi3",
+    "language": "zh",
+    "text": "洗",
+    "romanization": "xǐ",
+    "mnemonic_en": "To wash feet (先) in water (氵): to wash.",
+    "mnemonic_id": "Mencuci kaki (先) dengan air (氵): mencuci.",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-yuan3",
+    "char": "远",
+    "pinyin": "yuǎn",
+    "tone": 3,
+    "meaning": "far; distant",
+    "strokes": 7,
+    "radical": "辶",
+    "radicalMeaning": "walk",
+    "components": [
+      "元",
+      "辶"
+    ],
+    "hsk": 2,
+    "words": [],
+    "zhuyin": "ㄩㄢˇ",
+    "mnemonic": "A road (辶) that is far (远): far, distant.",
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "char:c-yuan3",
+    "language": "zh",
+    "text": "远",
+    "romanization": "yuǎn",
+    "mnemonic_en": "A road (辶) that is far (远): far, distant.",
+    "mnemonic_id": "Jalan (辶) yang jauh: jauh.",
+    "traditional": "遠",
+    "similar": [
+      "运"
+    ],
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-yao4",
+    "char": "药",
+    "pinyin": "yào",
+    "tone": 4,
+    "meaning": "medicine; drug",
+    "strokes": 9,
+    "radical": "艹",
+    "radicalMeaning": "grass",
+    "components": [
+      "约",
+      "艹"
+    ],
+    "hsk": 2,
+    "words": [],
+    "zhuyin": "ㄧㄠˋ",
+    "mnemonic": "A plant (艹) that is medicine (约): medicine.",
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "char:c-yao4",
+    "language": "zh",
+    "text": "药",
+    "romanization": "yào",
+    "mnemonic_en": "A plant (艹) that is medicine (约): medicine.",
+    "mnemonic_id": "Tanaman (艹) yang menjadi obat: obat.",
+    "traditional": "藥",
+    "similar": [
+      "约"
+    ],
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-yan2",
+    "char": "颜",
+    "pinyin": "yán",
+    "tone": 2,
+    "meaning": "color; face",
+    "strokes": 15,
+    "radical": "頁",
+    "radicalMeaning": "page",
+    "components": [
+      "彦",
+      "页"
+    ],
+    "hsk": 2,
+    "words": [],
+    "zhuyin": "ㄧㄢˊ",
+    "mnemonic": "Color on a face (頁): color, face.",
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "char:c-yan2",
+    "language": "zh",
+    "text": "颜",
+    "romanization": "yán",
+    "mnemonic_en": "Color on a face (頁): color, face.",
+    "mnemonic_id": "Warna di wajah (頁): warna, rupa.",
+    "traditional": "顔",
+    "similar": [
+      "页",
+      "顾"
+    ],
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-ye2",
+    "char": "爷",
+    "pinyin": "yé",
+    "tone": 2,
+    "meaning": "grandpa; old gentleman",
+    "strokes": 6,
+    "radical": "父",
+    "radicalMeaning": "father",
+    "components": [
+      "卩",
+      "父"
+    ],
+    "hsk": 2,
+    "words": [],
+    "zhuyin": "ㄧㄝˊ",
+    "mnemonic": "A father (父) on a knoll (卩): grandpa.",
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "char:c-ye2",
+    "language": "zh",
+    "text": "爷",
+    "romanization": "yé",
+    "mnemonic_en": "A father (父) on a knoll (卩): grandpa.",
+    "mnemonic_id": "Seorang ayah (父) di bukit kecil: kakek.",
+    "traditional": "爺",
+    "similar": [
+      "爸"
+    ],
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-yi4",
+    "char": "意",
+    "pinyin": "yì",
+    "tone": 4,
+    "meaning": "meaning; idea; intention",
+    "strokes": 13,
+    "radical": "心",
+    "radicalMeaning": "heart",
+    "components": [
+      "心",
+      "音"
+    ],
+    "hsk": 2,
+    "words": [
+      "tocfl-l5-yi-shi-xing-tai"
+    ],
+    "zhuyin": "ㄧˋ",
+    "mnemonic": "The sound (音) in the heart (心): meaning.",
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "char:c-yi4",
+    "language": "zh",
+    "text": "意",
+    "romanization": "yì",
+    "mnemonic_en": "The sound (音) in the heart (心): meaning.",
+    "mnemonic_id": "Bunyi (音) di dalam hati (心): makna.",
+    "similar": [
+      "音",
+      "思"
+    ],
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-you4",
+    "char": "右",
+    "pinyin": "yòu",
+    "tone": 4,
+    "meaning": "(bound form) right; right-hand side",
+    "strokes": 5,
+    "radical": "口",
+    "radicalMeaning": "mouth",
+    "components": [
+      "口",
+      "𠂇"
+    ],
+    "hsk": 2,
+    "words": [],
+    "zhuyin": "ㄧㄡˋ",
+    "mnemonic": "A hand (又) and a mouth (口): the right side.",
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "char:c-you4",
+    "language": "zh",
+    "text": "右",
+    "romanization": "yòu",
+    "mnemonic_en": "A hand (又) and a mouth (口): the right side.",
+    "mnemonic_id": "Tangan (又) dan mulut (口): sisi kanan.",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-you2",
+    "char": "游",
+    "pinyin": "yóu",
+    "tone": 2,
+    "meaning": "to swim; to walk",
+    "strokes": 12,
+    "radical": "氵",
+    "radicalMeaning": "water",
+    "components": [
+      "斿",
+      "氵"
+    ],
+    "hsk": 2,
+    "words": [],
+    "zhuyin": "ㄧㄡˊ",
+    "mnemonic": "To travel through water (氵): to swim, to roam.",
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "char:c-you2",
+    "language": "zh",
+    "text": "游",
+    "romanization": "yóu",
+    "mnemonic_en": "To travel through water (氵): to swim, to roam.",
+    "mnemonic_id": "Berjalan di air (氵): berenang, berkelana.",
+    "traditional": "遊",
+    "similar": [
+      "泳",
+      "放"
+    ],
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-yun4",
+    "char": "运",
+    "pinyin": "yùn",
+    "tone": 4,
+    "meaning": "to move; to transport",
+    "strokes": 7,
+    "radical": "辶",
+    "radicalMeaning": "walk",
+    "components": [
+      "云",
+      "辶"
+    ],
+    "hsk": 2,
+    "words": [],
+    "zhuyin": "ㄩㄣˋ",
+    "mnemonic": "A road (辶) with an army (云): to transport.",
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "char:c-yun4",
+    "language": "zh",
+    "text": "运",
+    "romanization": "yùn",
+    "mnemonic_en": "A road (辶) with an army (云): to transport.",
+    "mnemonic_id": "Jalan (辶) dengan awan (云): mengangkut.",
+    "traditional": "運",
+    "similar": [
+      "远"
+    ],
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-yu2",
+    "char": "鱼",
+    "pinyin": "yú",
+    "tone": 2,
+    "meaning": "fish (CL:條|条[tiao2],尾[wei3])",
+    "strokes": 8,
+    "radical": "鱼",
+    "radicalMeaning": "fish",
+    "components": [
+      "一",
+      "田",
+      "𠂊"
+    ],
+    "hsk": 2,
+    "words": [],
+    "zhuyin": "ㄩˊ",
+    "mnemonic": "A fish with scales and a tail.",
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "char:c-yu2",
+    "language": "zh",
+    "text": "鱼",
+    "romanization": "yú",
+    "mnemonic_en": "A fish with scales and a tail.",
+    "mnemonic_id": "Ikan dengan sisik dan ekor.",
+    "traditional": "魚",
+    "similar": [
+      "鲁"
+    ],
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-yin1",
+    "char": "因",
+    "pinyin": "yīn",
+    "tone": 1,
+    "meaning": "cause; reason",
+    "strokes": 6,
+    "radical": "囗",
+    "radicalMeaning": "enclosure",
+    "components": [
+      "囗",
+      "大"
+    ],
+    "hsk": 2,
+    "words": [
+      "yinwei4"
+    ],
+    "zhuyin": "ㄧㄣ",
+    "mnemonic": "A person in an enclosure (囗): because, cause.",
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "char:c-yin1",
+    "language": "zh",
+    "text": "因",
+    "romanization": "yīn",
+    "mnemonic_en": "A person in an enclosure (囗): because, cause.",
+    "mnemonic_id": "Seseorang di dalam pagar (囗): karena.",
+    "similar": [
+      "回"
+    ],
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-yin11",
+    "char": "阴",
+    "pinyin": "yīn",
+    "tone": 1,
+    "meaning": "overcast (weather); cloudy",
+    "strokes": 6,
+    "radical": "阝",
+    "radicalMeaning": "mound",
+    "components": [
+      "月",
+      "阝"
+    ],
+    "hsk": 2,
+    "words": [],
+    "zhuyin": "ㄧㄣ",
+    "mnemonic": "The shady side of a hill (阝): overcast, shade.",
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "char:c-yin11",
+    "language": "zh",
+    "text": "阴",
+    "romanization": "yīn",
+    "mnemonic_en": "The shady side of a hill (阝): overcast, shade.",
+    "mnemonic_id": "Sisi gelap bukit (阝): mendung, teduh.",
+    "traditional": "隂",
+    "similar": [
+      "阳"
+    ],
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-yan3",
+    "char": "眼",
+    "pinyin": "yǎn",
+    "tone": 3,
+    "meaning": "eye (CL:隻|只[zhi1],雙|双[shuang1]); (often used with 一[yi1]) a look",
+    "strokes": 11,
+    "radical": "目",
+    "radicalMeaning": "eye",
+    "components": [
+      "目",
+      "艮"
+    ],
+    "hsk": 2,
+    "words": [],
+    "zhuyin": "ㄧㄢˇ",
+    "mnemonic": "An eye (目) and a root (艮): the eye.",
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "char:c-yan3",
+    "language": "zh",
+    "text": "眼",
+    "romanization": "yǎn",
+    "mnemonic_en": "An eye (目) and a root (艮): the eye.",
+    "mnemonic_id": "Mata (目) dan akar (艮): mata.",
+    "similar": [
+      "根"
+    ],
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-yi3",
+    "char": "已",
+    "pinyin": "yǐ",
+    "tone": 3,
+    "meaning": "already; to stop",
+    "strokes": 3,
+    "radical": "己",
+    "radicalMeaning": "self",
+    "components": [
+      "已"
+    ],
+    "hsk": 2,
+    "words": [],
+    "zhuyin": "ㄧˇ",
+    "mnemonic": "A coiled thread: already.",
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "char:c-yi3",
+    "language": "zh",
+    "text": "已",
+    "romanization": "yǐ",
+    "mnemonic_en": "A coiled thread: already.",
+    "mnemonic_id": "Benang melingkar: sudah.",
+    "similar": [
+      "己",
+      "已"
+    ],
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-yong3",
+    "char": "泳",
+    "pinyin": "yǒng",
+    "tone": 3,
+    "meaning": "swimming; to swim",
+    "strokes": 8,
+    "radical": "水",
+    "radicalMeaning": "water",
+    "components": [
+      "氵",
+      "永"
+    ],
+    "hsk": 2,
+    "words": [],
+    "zhuyin": "ㄩㄥˇ",
+    "mnemonic": "To swim in water (氵) forever (永): to swim.",
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "char:c-yong3",
+    "language": "zh",
+    "text": "泳",
+    "romanization": "yǒng",
+    "mnemonic_en": "To swim in water (氵) forever (永): to swim.",
+    "mnemonic_id": "Berenang di air (氵) selamanya (永): berenang.",
+    "similar": [
+      "永"
+    ],
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-zhe5",
+    "char": "着",
+    "pinyin": "zhe",
+    "tone": 5,
+    "meaning": "aspect particle indicating action in progress",
+    "strokes": 11,
+    "radical": "目",
+    "radicalMeaning": "eye",
+    "components": [
+      "目",
+      "羊"
+    ],
+    "hsk": 2,
+    "words": [
+      "zhe5"
+    ],
+    "zhuyin": "ㄓㄜ˙",
+    "mnemonic": "A sheep (羊) with an eye (目): aspect particle.",
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "char:c-zhe5",
+    "language": "zh",
+    "text": "着",
+    "romanization": "zhe",
+    "mnemonic_en": "A sheep (羊) with an eye (目): aspect particle.",
+    "mnemonic_id": "Domba (羊) dengan mata (目): partikel aspek.",
+    "traditional": "著",
+    "similar": [
+      "看"
+    ],
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-zhan4",
+    "char": "站",
+    "pinyin": "zhàn",
+    "tone": 4,
+    "meaning": "station; to stand",
+    "strokes": 10,
+    "radical": "立",
+    "radicalMeaning": "stand",
+    "components": [
+      "占",
+      "立"
+    ],
+    "hsk": 2,
+    "words": [],
+    "zhuyin": "ㄓㄢˋ",
+    "mnemonic": "To stand (立) while occupying (占) a spot: a station.",
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "char:c-zhan4",
+    "language": "zh",
+    "text": "站",
+    "romanization": "zhàn",
+    "mnemonic_en": "To stand (立) while occupying (占) a spot: a station.",
+    "mnemonic_id": "Berdiri (立) menempati (占): stasiun.",
+    "similar": [
+      "占",
+      "战"
+    ],
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-zhang4",
+    "char": "丈",
+    "pinyin": "zhàng",
+    "tone": 4,
+    "meaning": "measure of length, ten Chinese feet (3.3 m); to measure",
+    "strokes": 3,
+    "radical": "一",
+    "radicalMeaning": "one",
+    "components": [
+      "丈"
+    ],
+    "hsk": 2,
+    "words": [],
+    "zhuyin": "ㄓㄤˋ",
+    "mnemonic": "A big (大) man with a staff: a measure, ten feet.",
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "char:c-zhang4",
+    "language": "zh",
+    "text": "丈",
+    "romanization": "zhàng",
+    "mnemonic_en": "A big (大) man with a staff: a measure, ten feet.",
+    "mnemonic_id": "Pria besar (大) dengan tongkat: ukuran.",
+    "similar": [
+      "大",
+      "夫"
+    ],
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-zhou1",
+    "char": "周",
+    "pinyin": "zhōu",
+    "tone": 1,
+    "meaning": "week; to surround; circumference",
+    "strokes": 8,
+    "radical": "口",
+    "radicalMeaning": "mouth",
+    "components": [
+      "⺆",
+      "𠮷"
+    ],
+    "hsk": 2,
+    "words": [],
+    "zhuyin": "ㄓㄡ",
+    "mnemonic": "A week around a frame: to surround, week.",
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "char:c-zhou1",
+    "language": "zh",
+    "text": "周",
+    "romanization": "zhōu",
+    "mnemonic_en": "A week around a frame: to surround, week.",
+    "mnemonic_id": "Sekitar bingkai: mengelilingi, minggu.",
+    "traditional": "週",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-zhun3",
+    "char": "准",
+    "pinyin": "zhǔn",
+    "tone": 3,
+    "meaning": "to allow; to grant",
+    "strokes": 10,
+    "radical": "冫",
+    "radicalMeaning": "ice",
+    "components": [
+      "冫",
+      "隹"
+    ],
+    "hsk": 2,
+    "words": [],
+    "zhuyin": "ㄓㄨㄣˇ",
+    "mnemonic": "Ice (冫) that is exact: accurate, to allow.",
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "char:c-zhun3",
+    "language": "zh",
+    "text": "准",
+    "romanization": "zhǔn",
+    "mnemonic_en": "Ice (冫) that is exact: accurate, to allow.",
+    "mnemonic_id": "Es (冫) yang tepat: akurat.",
+    "traditional": "準",
+    "similar": [
+      "难"
+    ],
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-zui4",
+    "char": "最",
+    "pinyin": "zuì",
+    "tone": 4,
+    "meaning": "(before an adjective or verb) to the highest degree; (the) most ...",
+    "strokes": 12,
+    "radical": "曰",
+    "radicalMeaning": "say",
+    "components": [
+      "取",
+      "日"
+    ],
+    "hsk": 2,
+    "words": [
+      "zui4"
+    ],
+    "zhuyin": "ㄗㄨㄟˋ",
+    "mnemonic": "A sun (日) that takes (取) all: the most.",
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "char:c-zui4",
+    "language": "zh",
+    "text": "最",
+    "romanization": "zuì",
+    "mnemonic_en": "A sun (日) that takes (取) all: the most.",
+    "mnemonic_id": "Matahari (日) yang mengambil semua: paling.",
+    "similar": [
+      "取"
+    ],
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-zuo3",
+    "char": "左",
+    "pinyin": "zuǒ",
+    "tone": 3,
+    "meaning": "left; the Left (politics)",
+    "strokes": 5,
+    "radical": "工",
+    "radicalMeaning": "work",
+    "components": [
+      "工",
+      "𠂇"
+    ],
+    "hsk": 2,
+    "words": [],
+    "zhuyin": "ㄗㄨㄛˇ",
+    "mnemonic": "A hand (𠂇) and work (工): the left side.",
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "char:c-zuo3",
+    "language": "zh",
+    "text": "左",
+    "romanization": "zuǒ",
+    "mnemonic_en": "A hand (𠂇) and work (工): the left side.",
+    "mnemonic_id": "Tangan (𠂇) dan kerja (工): sisi kiri.",
+    "similar": [
+      "右"
+    ],
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-zi4",
+    "char": "自",
+    "pinyin": "zì",
+    "tone": 4,
+    "meaning": "(bound form) self; oneself",
+    "strokes": 6,
+    "radical": "自",
+    "radicalMeaning": "self",
+    "components": [
+      "自"
+    ],
+    "hsk": 2,
+    "words": [],
+    "zhuyin": "ㄗˋ",
+    "mnemonic": "A nose: self, oneself.",
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "char:c-zi4",
+    "language": "zh",
+    "text": "自",
+    "romanization": "zì",
+    "mnemonic_en": "A nose: self, oneself.",
+    "mnemonic_id": "Hidung: diri sendiri.",
+    "similar": [
+      "白",
+      "目"
+    ],
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-zu2",
+    "char": "足",
+    "pinyin": "zú",
+    "tone": 2,
+    "meaning": "foot; leg",
+    "strokes": 7,
+    "radical": "足",
+    "radicalMeaning": "foot",
+    "components": [
+      "口",
+      "龰"
+    ],
+    "hsk": 2,
+    "words": [],
+    "zhuyin": "ㄗㄨˊ",
+    "mnemonic": "A foot with its toes on top and a heel below.",
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "char:c-zu2",
+    "language": "zh",
+    "text": "足",
+    "romanization": "zú",
+    "mnemonic_en": "A foot with its toes on top and a heel below.",
+    "mnemonic_id": "Kaki dengan jari di atas dan tumit di bawah.",
+    "similar": [
+      "走"
+    ],
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "c-zou3",
+    "char": "走",
+    "pinyin": "zǒu",
+    "tone": 3,
+    "meaning": "to walk; to go",
+    "strokes": 7,
+    "radical": "走",
+    "radicalMeaning": "run",
+    "components": [
+      "土",
+      "龰"
+    ],
+    "hsk": 2,
+    "words": [
+      "zou3"
+    ],
+    "zhuyin": "ㄗㄡˇ",
+    "mnemonic": "A person (土) running on legs (辶): to walk.",
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "char:c-zou3",
+    "language": "zh",
+    "text": "走",
+    "romanization": "zǒu",
+    "mnemonic_en": "A person (土) running on legs (辶): to walk.",
+    "mnemonic_id": "Seseorang (土) berlari dengan kaki: berjalan.",
+    "similar": [
+      "足",
+      "去"
+    ],
+    "tags": [
+      "approximation"
+    ]
+  }
+]
