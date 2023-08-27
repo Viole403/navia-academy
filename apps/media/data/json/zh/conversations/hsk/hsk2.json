@@ -1,0 +1,543 @@
+[
+  {
+    "id": "conv-directions",
+    "title": "Asking for directions",
+    "context": "You're lost and looking for the metro station.",
+    "hsk": 2,
+    "formality": "neutral",
+    "turns": [
+      {
+        "speaker": "tutor",
+        "hanzi": "你好，需要帮助吗？",
+        "pinyin": "nǐ hǎo, xūyào bāngzhù ma?",
+        "zhuyin": "ㄋㄧˇ ㄏㄠˇ, ㄒㄩㄧㄠˋ ㄅㄤㄓㄨˋ ㄇㄚ˙?",
+        "translation": "Hello, do you need help?",
+        "text": "你好，需要帮助吗？",
+        "romanization": "nǐ hǎo, xūyào bāngzhù ma?",
+        "translation_en": "Hello, do you need help?",
+        "translation_id": "Halo, butuh bantuan?"
+      },
+      {
+        "speaker": "user",
+        "hanzi": "",
+        "pinyin": "",
+        "zhuyin": "",
+        "translation": "",
+        "choices": [
+          {
+            "hanzi": "请问，地铁站在哪儿？",
+            "pinyin": "qǐngwèn, dìtiězhàn zài nǎr?",
+            "zhuyin": "ㄑㄧㄥˇㄨㄣˋ, ㄉㄧˋㄊㄧㄝˇㄓㄢˋ ㄗㄞˋ ㄋㄚˇㄦ˙?",
+            "translation": "Excuse me, where is the metro station?",
+            "natural": true,
+            "feedback": "请问 opens the question politely; 在哪儿 asks for the place."
+          },
+          {
+            "hanzi": "地铁站是哪儿？",
+            "pinyin": "dìtiězhàn shì nǎr?",
+            "zhuyin": "ㄉㄧˋㄊㄧㄝˇㄓㄢˋ ㄕˋ ㄋㄚˇㄦ˙?",
+            "translation": "The station is where?",
+            "natural": false,
+            "feedback": "For locations use 在, not 是."
+          },
+          {
+            "hanzi": "我在地铁站。",
+            "pinyin": "wǒ zài dìtiězhàn.",
+            "zhuyin": "ㄨㄛˇ ㄗㄞˋ ㄉㄧˋㄊㄧㄝˇㄓㄢˋ.",
+            "translation": "I'm at the station.",
+            "natural": false,
+            "feedback": "That states, doesn't ask."
+          }
+        ],
+        "text": "",
+        "romanization": ""
+      },
+      {
+        "speaker": "tutor",
+        "hanzi": "地铁站不远，一直走，五分钟就到。",
+        "pinyin": "dìtiězhàn bù yuǎn, yìzhí zǒu, wǔ fēnzhōng jiù dào.",
+        "zhuyin": "ㄉㄧˋㄊㄧㄝˇㄓㄢˋ ㄅㄨˋ ㄩㄢˇ, ㄧˋㄓˊ ㄗㄡˇ, ㄨˇ ㄈㄣㄓㄨㄥ ㄐㄧㄡˋ ㄉㄠˋ.",
+        "translation": "It's not far: go straight and you'll get there in five minutes.",
+        "text": "地铁站不远，一直走，五分钟就到。",
+        "romanization": "dìtiězhàn bù yuǎn, yìzhí zǒu, wǔ fēnzhōng jiù dào.",
+        "translation_en": "It's not far: go straight and you'll get there in five minutes.",
+        "translation_id": "Tidak jauh: lurus terus dan sampai dalam lima menit."
+      },
+      {
+        "speaker": "user",
+        "hanzi": "",
+        "pinyin": "",
+        "zhuyin": "",
+        "translation": "",
+        "choices": [
+          {
+            "hanzi": "太好了，谢谢你！",
+            "pinyin": "tài hǎo le, xièxie nǐ!",
+            "zhuyin": "ㄊㄞˋ ㄏㄠˇ ㄌㄜ˙, ㄒㄧㄝˋㄒㄧㄝ˙ ㄋㄧˇ!",
+            "translation": "Great, thanks!",
+            "natural": true,
+            "feedback": "Perfect closing."
+          },
+          {
+            "hanzi": "不客气。",
+            "pinyin": "bú kèqi.",
+            "zhuyin": "ㄅㄨˊ ㄎㄜˋㄑㄧ˙.",
+            "translation": "You're welcome.",
+            "natural": false,
+            "feedback": "不客气 is said by the person receiving thanks, not the one giving them."
+          },
+          {
+            "hanzi": "多少钱？",
+            "pinyin": "duōshao qián?",
+            "zhuyin": "ㄉㄨㄛㄕㄠ˙ ㄑㄧㄢˊ?",
+            "translation": "How much does it cost?",
+            "natural": false,
+            "feedback": "Directions are free."
+          }
+        ],
+        "text": "",
+        "romanization": ""
+      }
+    ],
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "conv:conv-directions",
+    "language": "zh",
+    "level": 2,
+    "context_en": "You're lost and looking for the metro station.",
+    "context_id": "Kamu tersesat dan mencari stasiun metro.",
+    "title_en": "Asking for directions",
+    "title_id": "Bertanya arah"
+  },
+  {
+    "id": "conv-hotel",
+    "title": "At the hotel",
+    "context": "You arrive at a hotel in Shanghai with a reservation in your name.",
+    "hsk": 2,
+    "formality": "formal",
+    "turns": [
+      {
+        "speaker": "tutor",
+        "hanzi": "晚上好！欢迎光临。",
+        "pinyin": "wǎnshang hǎo! huānyíng guānglín.",
+        "zhuyin": "ㄨㄢˇㄕㄤ˙ ㄏㄠˇ! ㄏㄨㄢㄧㄥˊ ㄍㄨㄤㄌㄧㄣˊ.",
+        "translation": "Good evening! Welcome.",
+        "text": "晚上好！欢迎光临。",
+        "romanization": "wǎnshang hǎo! huānyíng guānglín.",
+        "translation_en": "Good evening! Welcome.",
+        "translation_id": "Selamat malam! Selamat datang."
+      },
+      {
+        "speaker": "user",
+        "hanzi": "",
+        "pinyin": "",
+        "zhuyin": "",
+        "translation": "",
+        "choices": [
+          {
+            "hanzi": "你好，我有预订，我叫安娜。",
+            "pinyin": "nǐ hǎo, wǒ yǒu yùdìng, wǒ jiào ānnà.",
+            "zhuyin": "ㄋㄧˇ ㄏㄠˇ, ㄨㄛˇ ㄧㄡˇ ㄩˋㄉㄧㄥˋ, ㄨㄛˇ ㄐㄧㄠˋ ㄢㄋㄚˋ.",
+            "translation": "Hello, I have a reservation. My name is Ana.",
+            "natural": true,
+            "feedback": "Clear and complete: reservation + name."
+          },
+          {
+            "hanzi": "我要睡觉。",
+            "pinyin": "wǒ yào shuìjiào.",
+            "zhuyin": "ㄨㄛˇ ㄧㄠˋ ㄕㄨㄟˋㄐㄧㄠˋ.",
+            "translation": "I want to sleep.",
+            "natural": false,
+            "feedback": "Too direct: first identify yourself."
+          },
+          {
+            "hanzi": "这个多少钱？",
+            "pinyin": "zhè ge duōshao qián?",
+            "zhuyin": "ㄓㄜˋ ㄍㄜ˙ ㄉㄨㄛㄕㄠ˙ ㄑㄧㄢˊ?",
+            "translation": "How much is this?",
+            "natural": false,
+            "feedback": "With a reservation made, first confirm your name."
+          }
+        ],
+        "text": "",
+        "romanization": ""
+      },
+      {
+        "speaker": "tutor",
+        "hanzi": "好的，安娜女士。您的房间是三零五。",
+        "pinyin": "hǎo de, ānnà nǚshì. nín de fángjiān shì sān líng wǔ.",
+        "zhuyin": "ㄏㄠˇ ㄉㄜ˙, ㄢㄋㄚˋ ㄋㄩˇㄕˋ. ㄋㄧㄣˊ ㄉㄜ˙ ㄈㄤˊㄐㄧㄢ ㄕˋ ㄙㄢ ㄌㄧㄥˊ ㄨˇ.",
+        "translation": "Very well, Ms. Ana. Your room is 305.",
+        "text": "好的，安娜女士。您的房间是三零五。",
+        "romanization": "hǎo de, ānnà nǚshì. nín de fángjiān shì sān líng wǔ.",
+        "translation_en": "Very well, Ms. Ana. Your room is 305.",
+        "translation_id": "Baik, Nyonya Ana. Kamar Anda nomor 305."
+      },
+      {
+        "speaker": "user",
+        "hanzi": "",
+        "pinyin": "",
+        "zhuyin": "",
+        "translation": "",
+        "choices": [
+          {
+            "hanzi": "谢谢。请问，几点有早饭？",
+            "pinyin": "xièxie. qǐngwèn, jǐ diǎn yǒu zǎofàn?",
+            "zhuyin": "ㄒㄧㄝˋㄒㄧㄝ˙. ㄑㄧㄥˇㄨㄣˋ, ㄐㄧˇ ㄉㄧㄢˇ ㄧㄡˇ ㄗㄠˇㄈㄢˋ?",
+            "translation": "Thanks. What time is breakfast?",
+            "natural": true,
+            "feedback": "Useful question, well-formed with 几点."
+          },
+          {
+            "hanzi": "我不要房间。",
+            "pinyin": "wǒ bú yào fángjiān.",
+            "zhuyin": "ㄨㄛˇ ㄅㄨˊ ㄧㄠˋ ㄈㄤˊㄐㄧㄢ.",
+            "translation": "I don't want a room.",
+            "natural": false,
+            "feedback": "Contradicts your reservation."
+          },
+          {
+            "hanzi": "三零五是我。",
+            "pinyin": "sān líng wǔ shì wǒ.",
+            "zhuyin": "ㄙㄢ ㄌㄧㄥˊ ㄨˇ ㄕˋ ㄨㄛˇ.",
+            "translation": "305 is me.",
+            "natural": false,
+            "feedback": "Sounds strange: just saying thanks would suffice."
+          }
+        ],
+        "text": "",
+        "romanization": ""
+      },
+      {
+        "speaker": "tutor",
+        "hanzi": "早上七点到十点。祝您入住愉快！",
+        "pinyin": "zǎoshang qī diǎn dào shí diǎn. zhù nín rùzhù yúkuài!",
+        "zhuyin": "ㄗㄠˇㄕㄤ˙ ㄑㄧ ㄉㄧㄢˇ ㄉㄠˋ ㄕˊ ㄉㄧㄢˇ. ㄓㄨˋ ㄋㄧㄣˊ ㄖㄨˋㄓㄨˋ ㄩˊㄎㄨㄞˋ!",
+        "translation": "From seven to ten in the morning. Enjoy your stay!",
+        "text": "早上七点到十点。祝您入住愉快！",
+        "romanization": "zǎoshang qī diǎn dào shí diǎn. zhù nín rùzhù yúkuài!",
+        "translation_en": "From seven to ten in the morning. Enjoy your stay!",
+        "translation_id": "Dari jam tujuh sampai sepuluh pagi. Semoga nyaman menginap!"
+      }
+    ],
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "conv:conv-hotel",
+    "language": "zh",
+    "level": 2,
+    "context_en": "You arrive at a hotel in Shanghai with a reservation in your name.",
+    "context_id": "Kamu tiba di hotel di Shanghai dengan reservasi atas namamu.",
+    "title_en": "At the hotel",
+    "title_id": "Di hotel"
+  },
+  {
+    "id": "conv-making-friends",
+    "title": "Making friends",
+    "context": "In a café, a Chinese student sits next to you.",
+    "hsk": 2,
+    "formality": "informal",
+    "turns": [
+      {
+        "speaker": "tutor",
+        "hanzi": "你也喜欢这家咖啡店吗？",
+        "pinyin": "nǐ yě xǐhuan zhè jiā kāfēidiàn ma?",
+        "zhuyin": "ㄋㄧˇ ㄧㄝˇ ㄒㄧˇㄏㄨㄢ˙ ㄓㄜˋ ㄐㄧㄚ ㄎㄚㄈㄟㄉㄧㄢˋ ㄇㄚ˙?",
+        "translation": "Do you also like this café?",
+        "text": "你也喜欢这家咖啡店吗？",
+        "romanization": "nǐ yě xǐhuan zhè jiā kāfēidiàn ma?",
+        "translation_en": "Do you also like this café?",
+        "translation_id": "Kamu juga suka kafe ini?"
+      },
+      {
+        "speaker": "user",
+        "hanzi": "",
+        "pinyin": "",
+        "zhuyin": "",
+        "translation": "",
+        "choices": [
+          {
+            "hanzi": "对，我常常来。你呢？",
+            "pinyin": "duì, wǒ chángcháng lái. nǐ ne?",
+            "zhuyin": "ㄉㄨㄟˋ, ㄨㄛˇ ㄔㄤˊㄔㄤˊ ㄌㄞˊ. ㄋㄧˇ ㄋㄜ˙?",
+            "translation": "Yes, I come often. And you?",
+            "natural": true,
+            "feedback": "You return the question with 你呢: lively conversation."
+          },
+          {
+            "hanzi": "我不知道你。",
+            "pinyin": "wǒ bù zhīdào nǐ.",
+            "zhuyin": "ㄨㄛˇ ㄅㄨˋ ㄓㄉㄠˋ ㄋㄧˇ.",
+            "translation": "I don't know you.",
+            "natural": false,
+            "feedback": "认识 is for knowing people; it doesn't fit here."
+          },
+          {
+            "hanzi": "咖啡是我。",
+            "pinyin": "kāfēi shì wǒ.",
+            "zhuyin": "ㄎㄚㄈㄟ ㄕˋ ㄨㄛˇ.",
+            "translation": "I am the coffee.",
+            "natural": false,
+            "feedback": "That mischievous 是 again."
+          }
+        ],
+        "text": "",
+        "romanization": ""
+      },
+      {
+        "speaker": "tutor",
+        "hanzi": "我每天都来！你是留学生吧？你的汉语很好！",
+        "pinyin": "wǒ měitiān dōu lái! nǐ shì liúxuéshēng ba? nǐ de hànyǔ hěn hǎo!",
+        "zhuyin": "ㄨㄛˇ ㄇㄟˇㄊㄧㄢ ㄉㄡ ㄌㄞˊ! ㄋㄧˇ ㄕˋ ㄌㄧㄡˊㄒㄩㄝˊㄕㄥ ㄅㄚ˙? ㄋㄧˇ ㄉㄜ˙ ㄏㄢˋㄩˇ ㄏㄣˇ ㄏㄠˇ!",
+        "translation": "I come every day! You're a foreign student, right? Your Chinese is very good!",
+        "text": "我每天都来！你是留学生吧？你的汉语很好！",
+        "romanization": "wǒ měitiān dōu lái! nǐ shì liúxuéshēng ba? nǐ de hànyǔ hěn hǎo!",
+        "translation_en": "I come every day! You're a foreign student, right? Your Chinese is very good!",
+        "translation_id": "Saya datang setiap hari! Kamu mahasiswa asing, kan? Bahasa Mandarinmu sangat bagus!"
+      },
+      {
+        "speaker": "user",
+        "hanzi": "",
+        "pinyin": "",
+        "zhuyin": "",
+        "translation": "",
+        "choices": [
+          {
+            "hanzi": "哪里哪里，我还在学习。",
+            "pinyin": "nǎli nǎli, wǒ hái zài xuéxí.",
+            "zhuyin": "ㄋㄚˇㄌㄧ˙ ㄋㄚˇㄌㄧ˙, ㄨㄛˇ ㄏㄞˊ ㄗㄞˋ ㄒㄩㄝˊㄒㄧˊ.",
+            "translation": "Not at all, I'm still learning.",
+            "natural": true,
+            "feedback": "哪里哪里 is the traditional, humble way to respond to a compliment."
+          },
+          {
+            "hanzi": "对，我的汉语非常好。",
+            "pinyin": "duì, wǒ de hànyǔ fēicháng hǎo.",
+            "zhuyin": "ㄉㄨㄟˋ, ㄨㄛˇ ㄉㄜ˙ ㄏㄢˋㄩˇ ㄈㄟㄔㄤˊ ㄏㄠˇ.",
+            "translation": "Yes, my Chinese is excellent.",
+            "natural": false,
+            "feedback": "Grammatically fine, culturally immodest."
+          },
+          {
+            "hanzi": "你说什么？",
+            "pinyin": "nǐ shuō shénme?",
+            "zhuyin": "ㄋㄧˇ ㄕㄨㄛ ㄕㄣˊㄇㄜ˙?",
+            "translation": "What are you saying?",
+            "natural": false,
+            "feedback": "Useful if you don't understand, but here it breaks the flow."
+          }
+        ],
+        "text": "",
+        "romanization": ""
+      },
+      {
+        "speaker": "tutor",
+        "hanzi": "我们加个微信吧，以后一起练习！",
+        "pinyin": "wǒmen jiā ge wēixìn ba, yǐhòu yìqǐ liànxí!",
+        "zhuyin": "ㄨㄛˇㄇㄣ˙ ㄐㄧㄚ ㄍㄜ˙ ㄨㄟㄒㄧㄣˋ ㄅㄚ˙, ㄧˇㄏㄡˋ ㄧˋㄑㄧˇ ㄌㄧㄢˋㄒㄧˊ!",
+        "translation": "Let's add each other on WeChat and practice together!",
+        "text": "我们加个微信吧，以后一起练习！",
+        "romanization": "wǒmen jiā ge wēixìn ba, yǐhòu yìqǐ liànxí!",
+        "translation_en": "Let's add each other on WeChat and practice together!",
+        "translation_id": "Ayo saling tambah WeChat dan berlatih bersama!"
+      }
+    ],
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "conv:conv-making-friends",
+    "language": "zh",
+    "level": 2,
+    "context_en": "In a café, a Chinese student sits next to you.",
+    "context_id": "Di sebuah kafe, seorang pelajar Tiongkok duduk di sebelahmu.",
+    "title_en": "Making friends",
+    "title_id": "Berteman"
+  },
+  {
+    "id": "conv-hsk-hsk2-keneng",
+    "title": "可能",
+    "title_en": "Talking about might (happen); possible; probable; possibility; probability; maybe; perhaps; CL:個|个[ge4]",
+    "title_id": "Ngobrol tentang mungkin (terjadi)",
+    "context": "You chat about might (happen); possible; probable; possibility; probability; maybe; perhaps; CL:個|个[ge4].",
+    "context_en": "You chat about might (happen); possible; probable; possibility; probability; maybe; perhaps; CL:個|个[ge4].",
+    "context_id": "Kamu mengobrol tentang mungkin (terjadi).",
+    "formality": "neutral",
+    "level": 2,
+    "turns": [
+      {
+        "speaker": "tutor",
+        "text": "文件太大，下载可能需要几分钟。",
+        "hanzi": "文件太大，下载可能需要几分钟。",
+        "pinyin": "wén jiàn tài dà ， xià zài kě néng xū yào jǐ fēn zhōng 。",
+        "zhuyin": "ㄨㄣˊ ㄐㄧㄢˋ ㄊㄞˋ ㄉㄚˋ ， ㄒㄧㄚˋ ㄗㄞˋ ㄎㄜˇ ㄋㄥˊ ㄒㄩ ㄧㄠˋ ㄐㄧˇ ㄈㄣ ㄓㄨㄥ 。",
+        "romanization": "Wénjiàn tài dà, xiàzài kěnéng xūyào jǐ fēnzhōng.",
+        "translation": "The file is too large, so downloading it may take a few minutes.",
+        "translation_en": "The file is too large, so downloading it may take a few minutes.",
+        "translation_id": "Mohon jangan sembarangan mengunduh materi dari sumber yang tidak dikenal."
+      },
+      {
+        "speaker": "user",
+        "text": "他脸色明显不好，可能昨晚没有休息够。",
+        "hanzi": "他脸色明显不好，可能昨晚没有休息够。",
+        "pinyin": "tā liǎn sè míng xiǎn bù hǎo ， kě néng zuó wǎn méi yǒu xiū xī gòu 。",
+        "zhuyin": "ㄊㄚ ㄌㄧㄢˇ ㄙㄜˋ ㄇㄧㄥˊ ㄒㄧㄢˇ ㄅㄨˋ ㄏㄠˇ ， ㄎㄜˇ ㄋㄥˊ ㄗㄨㄛˊ ㄨㄢˇ ㄇㄟˊ ㄧㄡˇ ㄒㄧㄡ ㄒㄧ ㄍㄡˋ 。",
+        "romanization": "Tā liǎnsè míngxiǎn bù hǎo, kěnéng zuó wǎn méiyǒu xiūxi gòu.",
+        "translation": "His complexion is obviously not good; he probably did not get enough rest last night.",
+        "translation_en": "His complexion is obviously not good; he probably did not get enough rest last night.",
+        "translation_id": "Kulitnya jelas tidak bagus; dia mungkin tidak cukup istirahat tadi malam."
+      },
+      {
+        "speaker": "tutor",
+        "text": "文件太大，上传过程可能需要几分钟。",
+        "hanzi": "文件太大，上传过程可能需要几分钟。",
+        "pinyin": "wén jiàn tài dà ， shàng chuán guò chéng kě néng xū yào jǐ fēn zhōng 。",
+        "zhuyin": "ㄨㄣˊ ㄐㄧㄢˋ ㄊㄞˋ ㄉㄚˋ ， ㄕㄤˋ ㄔㄨㄢˊ ㄍㄨㄛˋ ㄔㄥˊ ㄎㄜˇ ㄋㄥˊ ㄒㄩ ㄧㄠˋ ㄐㄧˇ ㄈㄣ ㄓㄨㄥ 。",
+        "romanization": "Wénjiàn tài dà, shàngchuán guòchéng kěnéng xūyào jǐ fēnzhōng.",
+        "translation": "The file is too large, so the upload process may take a few minutes.",
+        "translation_en": "The file is too large, so the upload process may take a few minutes.",
+        "translation_id": "Silakan pindai kontrak yang ditandatangani dan unggah ke sistem."
+      },
+      {
+        "speaker": "user",
+        "text": "我在一家外国公司工作。",
+        "hanzi": "我在一家外国公司工作。",
+        "pinyin": "wǒ zài yī jiā wài guó gōng sī gōng zuò 。",
+        "zhuyin": "ㄨㄛˇ ㄗㄞˋ ㄧ ㄐㄧㄚ ㄨㄞˋ ㄍㄨㄛˊ ㄍㄨㄥ ㄙ ㄍㄨㄥ ㄗㄨㄛˋ 。",
+        "romanization": "wǒ zài yì jiā wàiguó gōngsī gōngzuò.",
+        "translation": "I work at a foreign company.",
+        "translation_en": "I work at a foreign company.",
+        "translation_id": "Saya bekerja di perusahaan asing."
+      }
+    ],
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "conv:conv-hsk-hsk2-keneng",
+    "language": "zh"
+  },
+  {
+    "id": "conv-hsk-hsk2-ziji1",
+    "title": "自己",
+    "title_en": "Talking about oneself; one's own",
+    "title_id": "Ngobrol tentang diri",
+    "context": "You chat about oneself; one's own.",
+    "context_en": "You chat about oneself; one's own.",
+    "context_id": "Kamu mengobrol tentang diri.",
+    "formality": "neutral",
+    "level": 2,
+    "turns": [
+      {
+        "speaker": "tutor",
+        "text": "他觉得自己的知识面太窄，想多读一些书。",
+        "hanzi": "他觉得自己的知识面太窄，想多读一些书。",
+        "pinyin": "tā jué de zì jǐ de zhī shí miàn tài zhǎi ， xiǎng duō dú yī xiē shū 。",
+        "zhuyin": "ㄊㄚ ㄐㄩㄝˊ ㄉㄜ˙ ㄗˋ ㄐㄧˇ ㄉㄜ˙ ㄓ ㄕˊ ㄇㄧㄢˋ ㄊㄞˋ ㄓㄞˇ ， ㄒㄧㄤˇ ㄉㄨㄛ ㄉㄨˊ ㄧ ㄒㄧㄝ ㄕㄨ 。",
+        "romanization": "Tā juéde zìjǐ de zhīshimiàn tài zhǎi, xiǎng duō dú yìxiē shū.",
+        "translation": "He feels that his knowledge is too narrow, so he wants to read more books.",
+        "translation_en": "He feels that his knowledge is too narrow, so he wants to read more books.",
+        "translation_id": "Dia merasa pengetahuannya terlalu terbatas, jadi dia ingin membaca lebih banyak buku."
+      },
+      {
+        "speaker": "user",
+        "text": "他说出了自己真实的想法。",
+        "hanzi": "他说出了自己真实的想法。",
+        "pinyin": "tā shuō chū le zì jǐ zhēn shí de xiǎng fǎ 。",
+        "zhuyin": "ㄊㄚ ㄕㄨㄛ ㄔㄨ ㄌㄜ˙ ㄗˋ ㄐㄧˇ ㄓㄣ ㄕˊ ㄉㄜ˙ ㄒㄧㄤˇ ㄈㄚˇ 。",
+        "romanization": "Tā shuō chū le zìjǐ zhēnshí de xiǎngfǎ.",
+        "translation": "He expressed his true thoughts.",
+        "translation_en": "He expressed his true thoughts.",
+        "translation_id": "Dia mengungkapkan apa yang sebenarnya ada di pikirannya."
+      },
+      {
+        "speaker": "tutor",
+        "text": "这个字写错了。",
+        "hanzi": "这个字写错了。",
+        "pinyin": "zhè ge zì xiě cuò le 。",
+        "zhuyin": "ㄓㄜˋ ㄍㄜ˙ ㄗˋ ㄒㄧㄝˇ ㄘㄨㄛˋ ㄌㄜ˙ 。",
+        "romanization": "Zhè ge zì xiě cuò le.",
+        "translation": "This character is written wrong.",
+        "translation_en": "This character is written wrong.",
+        "translation_id": "Huruf ini salah tulis."
+      },
+      {
+        "speaker": "user",
+        "text": "我弟弟五岁。",
+        "hanzi": "我弟弟五岁。",
+        "pinyin": "wǒ dì di wǔ suì 。",
+        "zhuyin": "ㄨㄛˇ ㄉㄧˋ ㄉㄧ˙ ㄨˇ ㄙㄨㄟˋ 。",
+        "romanization": "Wǒ dìdi wǔ suì.",
+        "translation": "My younger brother is five.",
+        "translation_en": "My younger brother is five.",
+        "translation_id": "Adik laki-laki saya lima tahun."
+      }
+    ],
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "conv:conv-hsk-hsk2-ziji1",
+    "language": "zh"
+  },
+  {
+    "id": "conv-hsk-hsk2-yinwei2",
+    "title": "因为",
+    "title_en": "Talking about because",
+    "title_id": "Ngobrol tentang karena",
+    "context": "You chat about because.",
+    "context_en": "You chat about because.",
+    "context_id": "Kamu mengobrol tentang karena.",
+    "formality": "neutral",
+    "level": 2,
+    "turns": [
+      {
+        "speaker": "tutor",
+        "text": "她的眼睛因为过敏有点肿，看起来很不舒服。",
+        "hanzi": "她的眼睛因为过敏有点肿，看起来很不舒服。",
+        "pinyin": "tā de yǎn jīng yīn wèi guò mǐn yǒu diǎn zhǒng ， kàn qǐ lái hěn bù shū fú 。",
+        "zhuyin": "ㄊㄚ ㄉㄜ˙ ㄧㄢˇ ㄐㄧㄥ ㄧㄣ ㄨㄟˋ ㄍㄨㄛˋ ㄇㄧㄣˇ ㄧㄡˇ ㄉㄧㄢˇ ㄓㄨㄥˇ ， ㄎㄢˋ ㄑㄧˇ ㄌㄞˊ ㄏㄣˇ ㄅㄨˋ ㄕㄨ ㄈㄨˊ 。",
+        "romanization": "Tā de yǎnjing yīnwèi guòmǐn yǒudiǎn zhǒng, kàn qǐlai hěn bù shūfu.",
+        "translation": "Her eyes are a bit swollen because of an allergy, and she looks very uncomfortable.",
+        "translation_en": "Her eyes are a bit swollen because of an allergy, and she looks very uncomfortable.",
+        "translation_id": "Matanya sedikit bengkak karena alergi, dan dia terlihat sangat tidak nyaman."
+      },
+      {
+        "speaker": "user",
+        "text": "我们不能因为方便就做违法的事情。",
+        "hanzi": "我们不能因为方便就做违法的事情。",
+        "pinyin": "wǒ men bù néng yīn wèi fāng biàn jiù zuò wéi fǎ de shì qíng 。",
+        "zhuyin": "ㄨㄛˇ ㄇㄣ˙ ㄅㄨˋ ㄋㄥˊ ㄧㄣ ㄨㄟˋ ㄈㄤ ㄅㄧㄢˋ ㄐㄧㄡˋ ㄗㄨㄛˋ ㄨㄟˊ ㄈㄚˇ ㄉㄜ˙ ㄕˋ ㄑㄧㄥˊ 。",
+        "romanization": "Wǒmen bù néng yīnwèi fāngbiàn jiù zuò wéifǎ de shìqing.",
+        "translation": "We cannot do illegal things just because they are convenient.",
+        "translation_en": "We cannot do illegal things just because they are convenient.",
+        "translation_id": "Kita tidak bisa melakukan hal-hal ilegal hanya karena itu nyaman."
+      },
+      {
+        "speaker": "tutor",
+        "text": "我们在这家饭店吃饭。",
+        "hanzi": "我们在这家饭店吃饭。",
+        "pinyin": "wǒ men zài zhè jiā fàn diàn chī fàn 。",
+        "zhuyin": "ㄨㄛˇ ㄇㄣ˙ ㄗㄞˋ ㄓㄜˋ ㄐㄧㄚ ㄈㄢˋ ㄉㄧㄢˋ ㄔ ㄈㄢˋ 。",
+        "romanization": "Wǒmen zài zhè jiā fàndiàn chīfàn.",
+        "translation": "We eat at this restaurant.",
+        "translation_en": "We eat at this restaurant.",
+        "translation_id": "Kami makan di restoran ini."
+      },
+      {
+        "speaker": "user",
+        "text": "我哥哥很高。",
+        "hanzi": "我哥哥很高。",
+        "pinyin": "wǒ gē gē hěn gāo 。",
+        "zhuyin": "ㄨㄛˇ ㄍㄜ ㄍㄜ ㄏㄣˇ ㄍㄠ 。",
+        "romanization": "Wǒ gēge hěn gāo.",
+        "translation": "My older brother is tall.",
+        "translation_en": "My older brother is tall.",
+        "translation_id": "Kakak saya tinggi."
+      }
+    ],
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "conv:conv-hsk-hsk2-yinwei2",
+    "language": "zh"
+  }
+]
