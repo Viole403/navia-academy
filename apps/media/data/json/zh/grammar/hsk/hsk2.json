@@ -1,0 +1,3061 @@
+[
+  {
+    "id": "g-le",
+    "title": "The particle 了",
+    "pattern": "Verb + 了 / Sentence + 了",
+    "hsk": 2,
+    "difficulty": 4,
+    "simpleExplanation": "了 indicates that an action has been completed or that the situation has changed.",
+    "technicalExplanation": "There are two 了: the aspectual one (after the verb, completed action) and the modal one (end of sentence, change of state or current relevance). They can co-occur. 了 is not a «past tense»: it also appears in completed futures.",
+    "usage": "我买了一本书 (I bought a book); 下雨了 (it started raining).",
+    "avoidWhen": "It is not used with habitual states nor with verbs like 是, 在, 喜欢 in their normal usage.",
+    "examples": [
+      {
+        "hanzi": "我吃了两个苹果。",
+        "pinyin": "wǒ chī le liǎng ge píngguǒ.",
+        "zhuyin": "ㄨㄛˇ ㄔ ㄌㄜ˙ ㄌㄧㄤˇ ㄍㄜ˙ ㄆㄧㄥˊㄍㄨㄛˇ.",
+        "translation": "I ate two apples.",
+        "audio": "grammar:g-le:ex0",
+        "translation_en": "I ate two apples."
+      },
+      {
+        "hanzi": "他走了。",
+        "pinyin": "tā zǒu le.",
+        "zhuyin": "ㄊㄚ ㄗㄡˇ ㄌㄜ˙.",
+        "translation": "He has left.",
+        "audio": "grammar:g-le:ex1",
+        "translation_en": "He has left."
+      }
+    ],
+    "negativeExamples": [
+      {
+        "hanzi": "昨天我很累了。",
+        "note": "Unnecessary: past states do not require 了."
+      }
+    ],
+    "commonMistakes": [
+      "Treating 了 as a past tense marker and adding it to everything.",
+      "Forgetting that negation with 没 removes 了."
+    ],
+    "dependsOn": [
+      "g-svo",
+      "g-bu-mei"
+    ],
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "grammar:g-le",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "g-zai-prog",
+    "title": "Action in progress with 在",
+    "pattern": "Subject + 在 + verb",
+    "hsk": 2,
+    "difficulty": 2,
+    "simpleExplanation": "在 before the verb expresses that the action is happening now: «to be doing».",
+    "technicalExplanation": "在 marks progressive aspect. It can be reinforced with 正 (正在) and with final 呢. It should not be confused with the locative 在.",
+    "usage": "我在学习 (I am studying); 他在打电话 (he is calling).",
+    "avoidWhen": "Not with states: do not say 我在知道.",
+    "examples": [
+      {
+        "hanzi": "我在看书呢。",
+        "pinyin": "wǒ zài kàn shū ne.",
+        "zhuyin": "ㄨㄛˇ ㄗㄞˋ ㄎㄢˋ ㄕㄨ ㄋㄜ˙.",
+        "translation": "I am reading.",
+        "audio": "grammar:g-zai-prog:ex0",
+        "translation_en": "I am reading."
+      },
+      {
+        "hanzi": "他们正在上课。",
+        "pinyin": "tāmen zhèngzài shàngkè.",
+        "zhuyin": "ㄊㄚㄇㄣ˙ ㄓㄥˋㄗㄞˋ ㄕㄤˋㄎㄜˋ.",
+        "translation": "They are in class right now.",
+        "audio": "grammar:g-zai-prog:ex1",
+        "translation_en": "They are in class right now."
+      }
+    ],
+    "negativeExamples": [
+      {
+        "hanzi": "我在有时间。",
+        "note": "Incorrect: 有 is a state and does not take progressive."
+      }
+    ],
+    "commonMistakes": [
+      "Confusing the progressive 在 with the locative 在."
+    ],
+    "dependsOn": [
+      "g-svo"
+    ],
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "grammar:g-zai-prog",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "g-yao-xiang",
+    "title": "Wanting: 要 vs. 想",
+    "pattern": "要/想 + verb",
+    "hsk": 2,
+    "difficulty": 3,
+    "simpleExplanation": "想 is «I'd like to» (soft desire); 要 is «I'm going to / I want» (firm decision).",
+    "technicalExplanation": "Both are modal verbs. 要 implies resolute will or necessity and can indicate immediate future; 想 expresses desire or tentative intention and admits gradation (很想).",
+    "usage": "我想去中国 (I'd like to go); 我要一杯咖啡 (I want a coffee, ordering it).",
+    "avoidWhen": "In the negative, «not want» is usually 不想; 不要 means «you must not / don't».",
+    "examples": [
+      {
+        "hanzi": "我想学汉语。",
+        "pinyin": "wǒ xiǎng xué hànyǔ.",
+        "zhuyin": "ㄨㄛˇ ㄒㄧㄤˇ ㄒㄩㄝˊ ㄏㄢˋㄩˇ.",
+        "translation": "I'd like to learn Chinese.",
+        "audio": "grammar:g-yao-xiang:ex0",
+        "translation_en": "I'd like to learn Chinese."
+      },
+      {
+        "hanzi": "我要这个。",
+        "pinyin": "wǒ yào zhè ge.",
+        "zhuyin": "ㄨㄛˇ ㄧㄠˋ ㄓㄜˋ ㄍㄜ˙.",
+        "translation": "I want this one.",
+        "audio": "grammar:g-yao-xiang:ex1",
+        "translation_en": "I want this one."
+      }
+    ],
+    "negativeExamples": [
+      {
+        "hanzi": "不要",
+        "note": "不要 sounds like a prohibition; use 不想."
+      }
+    ],
+    "commonMistakes": [
+      "Using 不要 when you mean «I don't feel like it»."
+    ],
+    "dependsOn": [
+      "g-svo"
+    ],
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "grammar:g-yao-xiang",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "g-hui-neng-keyi",
+    "title": "Can: 会, 能 and 可以",
+    "pattern": "会/能/可以 + verb",
+    "hsk": 2,
+    "difficulty": 4,
+    "simpleExplanation": "会 = learned skill; 能 = capability or possibility; 可以 = permission.",
+    "technicalExplanation": "These are three possibility modals with nuances: 会 (acquired skill: languages, swimming), 能 (physical conditions or circumstances), 可以 (authorization or suggestion). In the negative, denied permission is usually 不能.",
+    "usage": "我会说汉语；今天我不能来；可以进来吗？",
+    "avoidWhen": "Do not use 会 for permissions nor 可以 for skills.",
+    "examples": [
+      {
+        "hanzi": "我会游泳。",
+        "pinyin": "wǒ huì yóuyǒng.",
+        "zhuyin": "ㄨㄛˇ ㄏㄨㄟˋ ㄧㄡˊㄩㄥˇ.",
+        "translation": "I can swim.",
+        "audio": "grammar:g-hui-neng-keyi:ex0",
+        "translation_en": "I can swim."
+      },
+      {
+        "hanzi": "这里可以拍照吗？",
+        "pinyin": "zhèlǐ kěyǐ pāizhào ma?",
+        "zhuyin": "ㄓㄜˋㄌㄧˇ ㄎㄜˇㄧˇ ㄆㄞㄓㄠˋ ㄇㄚ˙?",
+        "translation": "Can I take photos here?",
+        "audio": "grammar:g-hui-neng-keyi:ex1",
+        "translation_en": "Can I take photos here?"
+      }
+    ],
+    "negativeExamples": [
+      {
+        "hanzi": "我可以说汉语。",
+        "note": "Sounds like permission; for skill use 会."
+      }
+    ],
+    "commonMistakes": [
+      "Swapping the three modals without distinguishing the nuance."
+    ],
+    "dependsOn": [
+      "g-yao-xiang"
+    ],
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "grammar:g-hui-neng-keyi",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "g-guo",
+    "title": "Experience with 过",
+    "pattern": "Verb + 过",
+    "hsk": 2,
+    "difficulty": 3,
+    "simpleExplanation": "过 after the verb means «to have done something at least once».",
+    "technicalExplanation": "过 is an experiential aspect suffix: it marks that the subject has had that experience at least once, without relevance to when. The negation is 没…过.",
+    "usage": "我去过中国 (I have been to China).",
+    "avoidWhen": "Not with permanent states nor non-repeatable actions with current relevance.",
+    "examples": [
+      {
+        "hanzi": "你吃过北京烤鸭吗？",
+        "pinyin": "nǐ chī guo běijīng kǎoyā ma?",
+        "zhuyin": "ㄋㄧˇ ㄔ ㄍㄨㄛ˙ ㄅㄟˇㄐㄧㄥ ㄎㄠˇㄧㄚ ㄇㄚ˙?",
+        "translation": "Have you tried Peking duck?",
+        "audio": "grammar:g-guo:ex0",
+        "translation_en": "Have you tried Peking duck?"
+      },
+      {
+        "hanzi": "我没学过日语。",
+        "pinyin": "wǒ méi xué guo rìyǔ.",
+        "zhuyin": "ㄨㄛˇ ㄇㄟˊ ㄒㄩㄝˊ ㄍㄨㄛ˙ ㄖˋㄩˇ.",
+        "translation": "I have never studied Japanese.",
+        "audio": "grammar:g-guo:ex1",
+        "translation_en": "I have never studied Japanese."
+      }
+    ],
+    "negativeExamples": [
+      {
+        "hanzi": "我不去过中国。",
+        "note": "Incorrect: 过 is negated with 没."
+      }
+    ],
+    "commonMistakes": [
+      "Negating 过 with 不.",
+      "Confusing 过 with 了."
+    ],
+    "dependsOn": [
+      "g-le"
+    ],
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "grammar:g-guo",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "g-comparative-bi",
+    "title": "Comparisons with 比",
+    "pattern": "A + 比 + B + adjective",
+    "hsk": 2,
+    "difficulty": 3,
+    "simpleExplanation": "比 compares: A 比 B 大 = «A is bigger than B».",
+    "technicalExplanation": "Superiority comparative structure. The adjective is bare or with a degree complement (多了, 一点儿); never with 很/非常.",
+    "usage": "今天比昨天热。他比我高一点儿。",
+    "avoidWhen": "Do not add 很: 他比我很高 is incorrect.",
+    "examples": [
+      {
+        "hanzi": "汉语比英语难。",
+        "pinyin": "hànyǔ bǐ yīngyǔ nán.",
+        "zhuyin": "ㄏㄢˋㄩˇ ㄅㄧˇ ㄧㄥㄩˇ ㄋㄢˊ.",
+        "translation": "Chinese is harder than English.",
+        "audio": "grammar:g-comparative-bi:ex0",
+        "translation_en": "Chinese is harder than English."
+      },
+      {
+        "hanzi": "他比我大三岁。",
+        "pinyin": "tā bǐ wǒ dà sān suì.",
+        "zhuyin": "ㄊㄚ ㄅㄧˇ ㄨㄛˇ ㄉㄚˋ ㄙㄢ ㄙㄨㄟˋ.",
+        "translation": "He is three years older than me.",
+        "audio": "grammar:g-comparative-bi:ex1",
+        "translation_en": "He is three years older than me."
+      }
+    ],
+    "negativeExamples": [
+      {
+        "hanzi": "他比我很高。",
+        "note": "Incorrect: no absolute degree adverbs."
+      }
+    ],
+    "commonMistakes": [
+      "Adding 很 to the compared adjective."
+    ],
+    "dependsOn": [
+      "g-hen"
+    ],
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "grammar:g-comparative-bi",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "g-yinwei-suoyi",
+    "title": "Cause and effect: 因为…所以…",
+    "pattern": "因为 A，所以 B",
+    "hsk": 2,
+    "difficulty": 2,
+    "simpleExplanation": "«Because A, therefore B». In Chinese both conjunctions often appear together.",
+    "technicalExplanation": "Correlative causal construction. Unlike English, it is natural to keep both conjunctions; one may be omitted in informal register.",
+    "usage": "因为下雨，所以我不去了。",
+    "avoidWhen": "Avoid literally translating «because» at the end of a sentence as a short written response.",
+    "examples": [
+      {
+        "hanzi": "因为我喜欢中国文化，所以学汉语。",
+        "pinyin": "yīnwèi wǒ xǐhuan zhōngguó wénhuà, suǒyǐ xué hànyǔ.",
+        "zhuyin": "ㄧㄣㄨㄟˋ ㄨㄛˇ ㄒㄧˇㄏㄨㄢ˙ ㄓㄨㄥㄍㄨㄛˊ ㄨㄣˊㄏㄨㄚˋ, ㄙㄨㄛˇㄧˇ ㄒㄩㄝˊ ㄏㄢˋㄩˇ.",
+        "translation": "Because I like Chinese culture, I study Chinese.",
+        "audio": "grammar:g-yinwei-suoyi:ex0",
+        "translation_en": "Because I like Chinese culture, I study Chinese."
+      }
+    ],
+    "negativeExamples": [
+      {
+        "hanzi": "所以我学汉语，因为…",
+        "note": "Unnatural order: the cause goes first."
+      }
+    ],
+    "commonMistakes": [
+      "Using only one conjunction due to calquing from English and losing naturalness."
+    ],
+    "dependsOn": [
+      "g-svo"
+    ],
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "grammar:g-yinwei-suoyi",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "g-zhengzai-ne",
+    "title": "The use of 呢",
+    "pattern": "And…? / sentence + 呢",
+    "hsk": 2,
+    "difficulty": 2,
+    "simpleExplanation": "呢 returns the question («and you?») or softens an action in progress.",
+    "technicalExplanation": "Modal particle with two main uses: elliptical question (我很好，你呢？) and continuative nuance with 在…呢.",
+    "usage": "你呢？他在睡觉呢。",
+    "avoidWhen": "It does not replace 吗 in complete yes/no questions.",
+    "examples": [
+      {
+        "hanzi": "我喝咖啡，你呢？",
+        "pinyin": "wǒ hē kāfēi, nǐ ne?",
+        "zhuyin": "ㄨㄛˇ ㄏㄜ ㄎㄚㄈㄟ, ㄋㄧˇ ㄋㄜ˙?",
+        "translation": "I drink coffee, and you?",
+        "audio": "grammar:g-zhengzai-ne:ex0",
+        "translation_en": "I drink coffee, and you?"
+      }
+    ],
+    "negativeExamples": [
+      {
+        "hanzi": "你是老师呢？",
+        "note": "Incorrect: for yes/no use 吗."
+      }
+    ],
+    "commonMistakes": [
+      "Confusing 呢 and 吗."
+    ],
+    "dependsOn": [
+      "g-ma"
+    ],
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "grammar:g-zhengzai-ne",
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "g-h2-mian",
+    "title": "Suffix: 面",
+    "pattern": "面",
+    "hsk": 2,
+    "difficulty": 2,
+    "simpleExplanation": "The suffix 面 attaches after a root to form new words, e.g. 面.",
+    "technicalExplanation": "In detail, this structure is governed by the following rules: 面. Master the fixed word order and the required companion words before using it in production.",
+    "usage": "Attach the suffix to a root to form a new noun or adverb.",
+    "avoidWhen": "Do not suffix every root; the attachment is fixed per word.",
+    "examples": [
+      {
+        "hanzi": "一个面包五块钱。",
+        "pinyin": "Yí ge miànbāo wǔ kuài qián.",
+        "zhuyin": "ㄧˊ ㄍㄜ˙ ㄇㄧㄢˋㄅㄠ ㄨˇ ㄎㄨㄞˋ ㄑㄧㄢˊ.",
+        "translation": "One bread costs five yuan.",
+        "translation_en": "One bread costs five yuan.",
+        "translation_id": "Satu roti harganya lima yuan.",
+        "audio": "grammar:g-h2-mian:ex0",
+        "text": "一个面包五块钱。",
+        "romanization": "Yí ge miànbāo wǔ kuài qián."
+      },
+      {
+        "hanzi": "以后我们再见面。",
+        "pinyin": "Yǐhòu wǒmen zài jiànmiàn.",
+        "zhuyin": "ㄧˇㄏㄡˋ ㄨㄛˇㄇㄣ˙ ㄗㄞˋ ㄐㄧㄢˋㄇㄧㄢˋ.",
+        "translation": "We will meet again later.",
+        "translation_en": "We will meet again later.",
+        "translation_id": "Nanti kita bertemu lagi.",
+        "audio": "grammar:g-h2-mian:ex1",
+        "text": "以后我们再见面。",
+        "romanization": "Yǐhòu wǒmen zài jiànmiàn."
+      }
+    ],
+    "negativeExamples": [],
+    "commonMistakes": [],
+    "dependsOn": [],
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "grammar:g-h2-mian",
+    "language": "zh",
+    "level": 2,
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "g-h2-zuoyou",
+    "title": "Location Nouns: 左、右",
+    "pattern": "左、右",
+    "hsk": 2,
+    "difficulty": 2,
+    "simpleExplanation": "These nouns name people, places, things or abstract concepts: location nouns.",
+    "technicalExplanation": "In detail, this structure is governed by the following rules: 左、右. Master the fixed word order and the required companion words before using it in production.",
+    "usage": "Use this structure with the correct word order and its required companion words.",
+    "avoidWhen": "Do not use this structure in the wrong position or without the words it requires.",
+    "examples": [
+      {
+        "hanzi": "我想去，但是没时间。",
+        "pinyin": "Wǒ xiǎng qù, dànshì méi shíjiān.",
+        "zhuyin": "ㄨㄛˇ ㄒㄧㄤˇ ㄑㄩˋ, ㄉㄢˋㄕˋ ㄇㄟˊ ㄕˊㄐㄧㄢ.",
+        "translation": "I want to go, but I have no time.",
+        "translation_en": "I want to go, but I have no time.",
+        "translation_id": "Saya ingin pergi, tapi tidak punya waktu.",
+        "audio": "grammar:g-h2-zuoyou:ex0",
+        "text": "我想去，但是没时间。",
+        "romanization": "Wǒ xiǎng qù, dànshì méi shíjiān."
+      }
+    ],
+    "negativeExamples": [],
+    "commonMistakes": [],
+    "dependsOn": [],
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "grammar:g-h2-zuoyou",
+    "language": "zh",
+    "level": 2,
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "g-h2-yiliao",
+    "title": "动词重叠: AA、A一A、A了A、ABAB",
+    "pattern": "AA、A一A、A了A、ABAB",
+    "hsk": 2,
+    "difficulty": 2,
+    "simpleExplanation": "These verbs express actions, states or 动词重叠 requiring special usage.",
+    "technicalExplanation": "In detail, this structure is governed by the following rules: AA、A一A、A了A、ABAB. Master the fixed word order and the required companion words before using it in production.",
+    "usage": "Use this structure with the correct word order and its required companion words.",
+    "avoidWhen": "Do not use this structure in the wrong position or without the words it requires.",
+    "examples": [
+      {
+        "hanzi": "我想去，但是没时间。",
+        "pinyin": "Wǒ xiǎng qù, dànshì méi shíjiān.",
+        "zhuyin": "ㄨㄛˇ ㄒㄧㄤˇ ㄑㄩˋ, ㄉㄢˋㄕˋ ㄇㄟˊ ㄕˊㄐㄧㄢ.",
+        "translation": "I want to go, but I have no time.",
+        "translation_en": "I want to go, but I have no time.",
+        "translation_id": "Saya ingin pergi, tapi tidak punya waktu.",
+        "audio": "grammar:g-h2-yiliao:ex0",
+        "text": "我想去，但是没时间。",
+        "romanization": "Wǒ xiǎng qù, dànshì méi shíjiān."
+      }
+    ],
+    "negativeExamples": [],
+    "commonMistakes": [],
+    "dependsOn": [],
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "grammar:g-h2-yiliao",
+    "language": "zh",
+    "level": 2,
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "g-h2-keneng",
+    "title": "Modal Verbs: 可能",
+    "pattern": "可能",
+    "hsk": 2,
+    "difficulty": 2,
+    "simpleExplanation": "These verbs express actions, states or modal verbs requiring special usage.",
+    "technicalExplanation": "In detail, this structure is governed by the following rules: 可能. Master the fixed word order and the required companion words before using it in production.",
+    "usage": "Use this structure with the correct word order and its required companion words.",
+    "avoidWhen": "Do not use this structure in the wrong position or without the words it requires.",
+    "examples": [
+      {
+        "hanzi": "我想去，但是没时间。",
+        "pinyin": "Wǒ xiǎng qù, dànshì méi shíjiān.",
+        "zhuyin": "ㄨㄛˇ ㄒㄧㄤˇ ㄑㄩˋ, ㄉㄢˋㄕˋ ㄇㄟˊ ㄕˊㄐㄧㄢ.",
+        "translation": "I want to go, but I have no time.",
+        "translation_en": "I want to go, but I have no time.",
+        "translation_id": "Saya ingin pergi, tapi tidak punya waktu.",
+        "audio": "grammar:g-h2-keneng:ex0",
+        "text": "我想去，但是没时间。",
+        "romanization": "Wǒ xiǎng qù, dànshì méi shíjiān."
+      }
+    ],
+    "negativeExamples": [],
+    "commonMistakes": [],
+    "dependsOn": [],
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "grammar:g-h2-keneng",
+    "language": "zh",
+    "level": 2,
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "g-h2-bangmangyouyongtiaow",
+    "title": "Separable Verbs: 帮忙、游泳、跳舞、跑步",
+    "pattern": "帮忙、游泳、跳舞、跑步",
+    "hsk": 2,
+    "difficulty": 2,
+    "simpleExplanation": "These verbs express actions, states or separable verbs requiring special usage.",
+    "technicalExplanation": "In detail, this structure is governed by the following rules: 帮忙、游泳、跳舞、跑步. Master the fixed word order and the required companion words before using it in production.",
+    "usage": "Use this structure with the correct word order and its required companion words.",
+    "avoidWhen": "Do not use this structure in the wrong position or without the words it requires.",
+    "examples": [
+      {
+        "hanzi": "我想去，但是没时间。",
+        "pinyin": "Wǒ xiǎng qù, dànshì méi shíjiān.",
+        "zhuyin": "ㄨㄛˇ ㄒㄧㄤˇ ㄑㄩˋ, ㄉㄢˋㄕˋ ㄇㄟˊ ㄕˊㄐㄧㄢ.",
+        "translation": "I want to go, but I have no time.",
+        "translation_en": "I want to go, but I have no time.",
+        "translation_id": "Saya ingin pergi, tapi tidak punya waktu.",
+        "audio": "grammar:g-h2-bangmangyouyongtiaow:ex0",
+        "text": "我想去，但是没时间。",
+        "romanization": "Wǒ xiǎng qù, dànshì méi shíjiān."
+      }
+    ],
+    "negativeExamples": [],
+    "commonMistakes": [],
+    "dependsOn": [],
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "grammar:g-h2-bangmangyouyongtiaow",
+    "language": "zh",
+    "level": 2,
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "g-h2-weishenme",
+    "title": "Interrogative Pronouns: 为什么",
+    "pattern": "为什么",
+    "hsk": 2,
+    "difficulty": 2,
+    "simpleExplanation": "These pronouns replace nouns, referring to people or things already known: interrogative pronouns.",
+    "technicalExplanation": "In detail, this structure is governed by the following rules: 为什么. Master the fixed word order and the required companion words before using it in production.",
+    "usage": "Use this structure with the correct word order and its required companion words.",
+    "avoidWhen": "Do not use this structure in the wrong position or without the words it requires.",
+    "examples": [
+      {
+        "hanzi": "你为什么学中文？",
+        "pinyin": "Nǐ wèishénme xué Zhōngwén?",
+        "zhuyin": "ㄋㄧˇ ㄨㄟˋㄕㄣˊㄇㄜ˙ ㄒㄩㄝˊ ㄓㄨㄥㄨㄣˊ?",
+        "translation": "Why do you study Chinese?",
+        "translation_en": "Why do you study Chinese?",
+        "translation_id": "Kenapa kamu belajar bahasa Mandarin?",
+        "audio": "grammar:g-h2-weishenme:ex0",
+        "text": "你为什么学中文？",
+        "romanization": "Nǐ wèishénme xué Zhōngwén?"
+      }
+    ],
+    "negativeExamples": [],
+    "commonMistakes": [],
+    "dependsOn": [],
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "grammar:g-h2-weishenme",
+    "language": "zh",
+    "level": 2,
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "g-h2-ziji",
+    "title": "Personal Pronouns: 自己",
+    "pattern": "自己",
+    "hsk": 2,
+    "difficulty": 2,
+    "simpleExplanation": "These pronouns replace nouns, referring to people or things already known: personal pronouns.",
+    "technicalExplanation": "In detail, this structure is governed by the following rules: 自己. Master the fixed word order and the required companion words before using it in production.",
+    "usage": "Use this structure with the correct word order and its required companion words.",
+    "avoidWhen": "Do not use this structure in the wrong position or without the words it requires.",
+    "examples": [
+      {
+        "hanzi": "我想去，但是没时间。",
+        "pinyin": "Wǒ xiǎng qù, dànshì méi shíjiān.",
+        "zhuyin": "ㄨㄛˇ ㄒㄧㄤˇ ㄑㄩˋ, ㄉㄢˋㄕˋ ㄇㄟˊ ㄕˊㄐㄧㄢ.",
+        "translation": "I want to go, but I have no time.",
+        "translation_en": "I want to go, but I have no time.",
+        "translation_id": "Saya ingin pergi, tapi tidak punya waktu.",
+        "audio": "grammar:g-h2-ziji:ex0",
+        "text": "我想去，但是没时间。",
+        "romanization": "Wǒ xiǎng qù, dànshì méi shíjiān."
+      }
+    ],
+    "negativeExamples": [],
+    "commonMistakes": [],
+    "dependsOn": [],
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "grammar:g-h2-ziji",
+    "language": "zh",
+    "level": 2,
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "g-h2-namenayangzhemezheya",
+    "title": "Demonstrative Pronouns: 那么、那样、这么、这样、每",
+    "pattern": "那么、那样、这么、这样、每",
+    "hsk": 2,
+    "difficulty": 2,
+    "simpleExplanation": "These pronouns replace nouns, referring to people or things already known: demonstrative pronouns.",
+    "technicalExplanation": "In detail, this structure is governed by the following rules: 那么、那样、这么、这样、每. Master the fixed word order and the required companion words before using it in production.",
+    "usage": "Use this structure with the correct word order and its required companion words.",
+    "avoidWhen": "Do not use this structure in the wrong position or without the words it requires.",
+    "examples": [
+      {
+        "hanzi": "我每天读中文。",
+        "pinyin": "Wǒ měi tiān dú Zhōngwén.",
+        "zhuyin": "ㄨㄛˇ ㄇㄟˇ ㄊㄧㄢ ㄉㄨˊ ㄓㄨㄥㄨㄣˊ.",
+        "translation": "I read Chinese every day.",
+        "translation_en": "I read Chinese every day.",
+        "translation_id": "Saya membaca bahasa Mandarin setiap hari.",
+        "audio": "grammar:g-h2-namenayangzhemezheya:ex0",
+        "text": "我每天读中文。",
+        "romanization": "Wǒ měi tiān dú Zhōngwén."
+      }
+    ],
+    "negativeExamples": [],
+    "commonMistakes": [],
+    "dependsOn": [],
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "grammar:g-h2-namenayangzhemezheya",
+    "language": "zh",
+    "level": 2,
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "g-h2-item8",
+    "title": "形容词重叠: AA、AABB",
+    "pattern": "AA、AABB",
+    "hsk": 2,
+    "difficulty": 2,
+    "simpleExplanation": "These adjectives describe qualities or states and can be modified by degree adverbs like 很.",
+    "technicalExplanation": "In detail, this structure is governed by the following rules: AA、AABB. Master the fixed word order and the required companion words before using it in production.",
+    "usage": "Use this structure with the correct word order and its required companion words.",
+    "avoidWhen": "Do not use this structure in the wrong position or without the words it requires.",
+    "examples": [
+      {
+        "hanzi": "我想去，但是没时间。",
+        "pinyin": "Wǒ xiǎng qù, dànshì méi shíjiān.",
+        "zhuyin": "ㄨㄛˇ ㄒㄧㄤˇ ㄑㄩˋ, ㄉㄢˋㄕˋ ㄇㄟˊ ㄕˊㄐㄧㄢ.",
+        "translation": "I want to go, but I have no time.",
+        "translation_en": "I want to go, but I have no time.",
+        "translation_id": "Saya ingin pergi, tapi tidak punya waktu.",
+        "audio": "grammar:g-h2-item8:ex0",
+        "text": "我想去，但是没时间。",
+        "romanization": "Wǒ xiǎng qù, dànshì méi shíjiān."
+      }
+    ],
+    "negativeExamples": [],
+    "commonMistakes": [],
+    "dependsOn": [],
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "grammar:g-h2-item8",
+    "language": "zh",
+    "level": 2,
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "g-h2-wanhaoduoduo",
+    "title": "万、好多、多",
+    "pattern": "万、好多、多",
+    "hsk": 2,
+    "difficulty": 2,
+    "simpleExplanation": "These numerals express number and can combine with measure words to form quantity phrases.",
+    "technicalExplanation": "In detail, this structure is governed by the following rules: 万、好多、多. Master the fixed word order and the required companion words before using it in production.",
+    "usage": "Use this structure with the correct word order and its required companion words.",
+    "avoidWhen": "Do not use this structure in the wrong position or without the words it requires.",
+    "examples": [
+      {
+        "hanzi": "中国人口很多。",
+        "pinyin": "Zhōngguó rénkǒu hěn duō.",
+        "zhuyin": "ㄓㄨㄥㄍㄨㄛˊ ㄖㄣˊㄎㄡˇ ㄏㄣˇ ㄉㄨㄛ.",
+        "translation": "China has a large population.",
+        "translation_en": "China has a large population.",
+        "translation_id": "Penduduk China sangat banyak.",
+        "audio": "grammar:g-h2-wanhaoduoduo:ex0",
+        "text": "中国人口很多。",
+        "romanization": "Zhōngguó rénkǒu hěn duō."
+      },
+      {
+        "hanzi": "这个多少钱？",
+        "pinyin": "Zhè ge duōshao qián?",
+        "zhuyin": "ㄓㄜˋ ㄍㄜ˙ ㄉㄨㄛㄕㄠ˙ ㄑㄧㄢˊ?",
+        "translation": "How much is this?",
+        "translation_en": "How much is this?",
+        "translation_id": "Ini berapa harganya?",
+        "audio": "grammar:g-h2-wanhaoduoduo:ex1",
+        "text": "这个多少钱？",
+        "romanization": "Zhè ge duōshao qián?"
+      }
+    ],
+    "negativeExamples": [],
+    "commonMistakes": [],
+    "dependsOn": [],
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "grammar:g-h2-wanhaoduoduo",
+    "language": "zh",
+    "level": 2,
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "g-h2-zhuanyongmingliangci",
+    "title": "名量词: （1）专用名量词：条、位、间、名",
+    "pattern": "（1）专用名量词：条、位、间、名",
+    "hsk": 2,
+    "difficulty": 2,
+    "simpleExplanation": "These classifiers precede nouns after numerals or demonstratives, choosing the right counter for the noun.",
+    "technicalExplanation": "In detail, this structure is governed by the following rules: （1）专用名量词：条、位、间、名. Master the fixed word order and the required companion words before using it in production.",
+    "usage": "Select the measure word that matches the noun; do not use 个 for everything.",
+    "avoidWhen": "Some nouns take a specific classifier; using the wrong one sounds wrong.",
+    "examples": [
+      {
+        "hanzi": "现在没有时间。",
+        "pinyin": "xiànzài méiyǒu shíjiān.",
+        "zhuyin": "ㄒㄧㄢˋㄗㄞˋ ㄇㄟˊㄧㄡˇ ㄕˊㄐㄧㄢ.",
+        "translation": "There's no time now.",
+        "translation_en": "There's no time now.",
+        "translation_id": "Sekarang tidak ada waktu.",
+        "audio": "grammar:g-h2-zhuanyongmingliangci:ex0",
+        "text": "现在没有时间。",
+        "romanization": "xiànzài méiyǒu shíjiān."
+      },
+      {
+        "hanzi": "我想去，但是没时间。",
+        "pinyin": "Wǒ xiǎng qù, dànshì méi shíjiān.",
+        "zhuyin": "ㄨㄛˇ ㄒㄧㄤˇ ㄑㄩˋ, ㄉㄢˋㄕˋ ㄇㄟˊ ㄕˊㄐㄧㄢ.",
+        "translation": "I want to go, but I have no time.",
+        "translation_en": "I want to go, but I have no time.",
+        "translation_id": "Saya ingin pergi, tapi tidak punya waktu.",
+        "audio": "grammar:g-h2-zhuanyongmingliangci:ex1",
+        "text": "我想去，但是没时间。",
+        "romanization": "Wǒ xiǎng qù, dànshì méi shíjiān."
+      },
+      {
+        "hanzi": "房间很干净。",
+        "pinyin": "Fángjiān hěn gānjìng.",
+        "zhuyin": "ㄈㄤˊㄐㄧㄢ ㄏㄣˇ ㄍㄢㄐㄧㄥˋ.",
+        "translation": "The room is clean.",
+        "translation_en": "The room is clean.",
+        "translation_id": "Kamar ini bersih.",
+        "audio": "grammar:g-h2-zhuanyongmingliangci:ex2",
+        "text": "房间很干净。",
+        "romanization": "Fángjiān hěn gānjìng."
+      }
+    ],
+    "negativeExamples": [],
+    "commonMistakes": [],
+    "dependsOn": [],
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "grammar:g-h2-zhuanyongmingliangci",
+    "language": "zh",
+    "level": 2,
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "g-h2-jieyongmingliangciba",
+    "title": "名量词: （2）借用名量词：包",
+    "pattern": "（2）借用名量词：包",
+    "hsk": 2,
+    "difficulty": 2,
+    "simpleExplanation": "These classifiers precede nouns after numerals or demonstratives, choosing the right counter for the noun.",
+    "technicalExplanation": "In detail, this structure is governed by the following rules: （2）借用名量词：包. Master the fixed word order and the required companion words before using it in production.",
+    "usage": "Select the measure word that matches the noun; do not use 个 for everything.",
+    "avoidWhen": "Some nouns take a specific classifier; using the wrong one sounds wrong.",
+    "examples": [
+      {
+        "hanzi": "我想去，但是没时间。",
+        "pinyin": "Wǒ xiǎng qù, dànshì méi shíjiān.",
+        "zhuyin": "ㄨㄛˇ ㄒㄧㄤˇ ㄑㄩˋ, ㄉㄢˋㄕˋ ㄇㄟˊ ㄕˊㄐㄧㄢ.",
+        "translation": "I want to go, but I have no time.",
+        "translation_en": "I want to go, but I have no time.",
+        "translation_id": "Saya ingin pergi, tapi tidak punya waktu.",
+        "audio": "grammar:g-h2-jieyongmingliangciba:ex0",
+        "text": "我想去，但是没时间。",
+        "romanization": "Wǒ xiǎng qù, dànshì méi shíjiān."
+      }
+    ],
+    "negativeExamples": [],
+    "commonMistakes": [],
+    "dependsOn": [],
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "grammar:g-h2-jieyongmingliangciba",
+    "language": "zh",
+    "level": 2,
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "g-h2-ci",
+    "title": "动量词: 次",
+    "pattern": "次",
+    "hsk": 2,
+    "difficulty": 2,
+    "simpleExplanation": "These classifiers precede nouns after numerals or demonstratives, choosing the right counter for the noun.",
+    "technicalExplanation": "In detail, this structure is governed by the following rules: 次. Master the fixed word order and the required companion words before using it in production.",
+    "usage": "Select the measure word that matches the noun; do not use 个 for everything.",
+    "avoidWhen": "Some nouns take a specific classifier; using the wrong one sounds wrong.",
+    "examples": [
+      {
+        "hanzi": "请再说一次。",
+        "pinyin": "Qǐng zài shuō yí cì.",
+        "zhuyin": "ㄑㄧㄥˇ ㄗㄞˋ ㄕㄨㄛ ㄧˊ ㄘˋ.",
+        "translation": "Please say it again.",
+        "translation_en": "Please say it again.",
+        "translation_id": "Tolong ulangi sekali lagi.",
+        "audio": "grammar:g-h2-ci:ex0",
+        "text": "请再说一次。",
+        "romanization": "Qǐng zài shuō yí cì."
+      }
+    ],
+    "negativeExamples": [],
+    "commonMistakes": [],
+    "dependsOn": [],
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "grammar:g-h2-ci",
+    "language": "zh",
+    "level": 2,
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "g-h2-duohaozui",
+    "title": "Degree Adverbs: 多、好、最",
+    "pattern": "多、好、最",
+    "hsk": 2,
+    "difficulty": 2,
+    "simpleExplanation": "These adverbs modify verbs or adjectives to express degree, adding nuanced meaning to the predicate.",
+    "technicalExplanation": "In detail, this structure is governed by the following rules: 多、好、最. Master the fixed word order and the required companion words before using it in production.",
+    "usage": "Place the adverb directly before the verb, adjective or another adverb.",
+    "avoidWhen": "Most adverbs cannot be followed by 是 or 很 directly, and cannot modify nouns.",
+    "examples": [
+      {
+        "hanzi": "中国人口很多。",
+        "pinyin": "Zhōngguó rénkǒu hěn duō.",
+        "zhuyin": "ㄓㄨㄥㄍㄨㄛˊ ㄖㄣˊㄎㄡˇ ㄏㄣˇ ㄉㄨㄛ.",
+        "translation": "China has a large population.",
+        "translation_en": "China has a large population.",
+        "translation_id": "Penduduk China sangat banyak.",
+        "audio": "grammar:g-h2-duohaozui:ex0",
+        "text": "中国人口很多。",
+        "romanization": "Zhōngguó rénkǒu hěn duō."
+      },
+      {
+        "hanzi": "这个多少钱？",
+        "pinyin": "Zhè ge duōshao qián?",
+        "zhuyin": "ㄓㄜˋ ㄍㄜ˙ ㄉㄨㄛㄕㄠ˙ ㄑㄧㄢˊ?",
+        "translation": "How much is this?",
+        "translation_en": "How much is this?",
+        "translation_id": "Ini berapa harganya?",
+        "audio": "grammar:g-h2-duohaozui:ex1",
+        "text": "这个多少钱？",
+        "romanization": "Zhè ge duōshao qián?"
+      }
+    ],
+    "negativeExamples": [],
+    "commonMistakes": [],
+    "dependsOn": [],
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "grammar:g-h2-duohaozui",
+    "language": "zh",
+    "level": 2,
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "g-h2-yiqi",
+    "title": "Scope Adverbs: 一起",
+    "pattern": "一起",
+    "hsk": 2,
+    "difficulty": 2,
+    "simpleExplanation": "These adverbs modify verbs or adjectives to express scope, adding nuanced meaning to the predicate.",
+    "technicalExplanation": "In detail, this structure is governed by the following rules: 一起. Master the fixed word order and the required companion words before using it in production.",
+    "usage": "Place the adverb directly before the verb, adjective or another adverb.",
+    "avoidWhen": "Most adverbs cannot be followed by 是 or 很 directly, and cannot modify nouns.",
+    "examples": [
+      {
+        "hanzi": "中午我们一起吃饭。",
+        "pinyin": "Zhōngwǔ wǒmen yìqǐ chīfàn.",
+        "zhuyin": "ㄓㄨㄥㄨˇ ㄨㄛˇㄇㄣ˙ ㄧˋㄑㄧˇ ㄔㄈㄢˋ.",
+        "translation": "We eat together at noon.",
+        "translation_en": "We eat together at noon.",
+        "translation_id": "Siang hari kami makan bersama.",
+        "audio": "grammar:g-h2-yiqi:ex0",
+        "text": "中午我们一起吃饭。",
+        "romanization": "Zhōngwǔ wǒmen yìqǐ chīfàn."
+      }
+    ],
+    "negativeExamples": [],
+    "commonMistakes": [],
+    "dependsOn": [],
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "grammar:g-h2-yiqi",
+    "language": "zh",
+    "level": 2,
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "g-h2-haiyijingyoushihouku",
+    "title": "Time Adverbs: 还2、已经、有时（候）、快、快要、正",
+    "pattern": "还2、已经、有时（候）、快、快要、正",
+    "hsk": 2,
+    "difficulty": 2,
+    "simpleExplanation": "These adverbs modify verbs or adjectives to express time, adding nuanced meaning to the predicate.",
+    "technicalExplanation": "In detail, this structure is governed by the following rules: 还2、已经、有时（候）、快、快要、正. Master the fixed word order and the required companion words before using it in production.",
+    "usage": "Place the adverb directly before the verb, adjective or another adverb.",
+    "avoidWhen": "Most adverbs cannot be followed by 是 or 很 directly, and cannot modify nouns.",
+    "examples": [
+      {
+        "hanzi": "他跑得很快。",
+        "pinyin": "Tā pǎo de hěn kuài.",
+        "zhuyin": "ㄊㄚ ㄆㄠˇ ㄉㄜ˙ ㄏㄣˇ ㄎㄨㄞˋ.",
+        "translation": "He runs very fast.",
+        "translation_en": "He runs very fast.",
+        "translation_id": "Dia berlari sangat cepat.",
+        "audio": "grammar:g-h2-haiyijingyoushihouku:ex0",
+        "text": "他跑得很快。",
+        "romanization": "Tā pǎo de hěn kuài."
+      },
+      {
+        "hanzi": "祝你生日快乐！",
+        "pinyin": "Zhù nǐ shēngrì kuàilè!",
+        "zhuyin": "ㄓㄨˋ ㄋㄧˇ ㄕㄥㄖˋ ㄎㄨㄞˋㄌㄜˋ!",
+        "translation": "Happy birthday to you!",
+        "translation_en": "Happy birthday to you!",
+        "translation_id": "Selamat ulang tahun!",
+        "audio": "grammar:g-h2-haiyijingyoushihouku:ex1",
+        "text": "祝你生日快乐！",
+        "romanization": "Zhù nǐ shēngrì kuàilè!"
+      }
+    ],
+    "negativeExamples": [],
+    "commonMistakes": [],
+    "dependsOn": [],
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "grammar:g-h2-haiyijingyoushihouku",
+    "language": "zh",
+    "level": 2,
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "g-h2-changjingchang",
+    "title": "Frequency Adverbs: 常、经常",
+    "pattern": "常、经常",
+    "hsk": 2,
+    "difficulty": 2,
+    "simpleExplanation": "These adverbs modify verbs or adjectives to express frequency, adding nuanced meaning to the predicate.",
+    "technicalExplanation": "In detail, this structure is governed by the following rules: 常、经常. Master the fixed word order and the required companion words before using it in production.",
+    "usage": "Place the adverb directly before the verb, adjective or another adverb.",
+    "avoidWhen": "Most adverbs cannot be followed by 是 or 很 directly, and cannot modify nouns.",
+    "examples": [
+      {
+        "hanzi": "我非常喜欢中国。",
+        "pinyin": "Wǒ fēicháng xǐhuan Zhōngguó.",
+        "zhuyin": "ㄨㄛˇ ㄈㄟㄔㄤˊ ㄒㄧˇㄏㄨㄢ˙ ㄓㄨㄥㄍㄨㄛˊ.",
+        "translation": "I really like China.",
+        "translation_en": "I really like China.",
+        "translation_id": "Saya sangat suka China.",
+        "audio": "grammar:g-h2-changjingchang:ex0",
+        "text": "我非常喜欢中国。",
+        "romanization": "Wǒ fēicháng xǐhuan Zhōngguó."
+      }
+    ],
+    "negativeExamples": [],
+    "commonMistakes": [],
+    "dependsOn": [],
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "grammar:g-h2-changjingchang",
+    "language": "zh",
+    "level": 2,
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "g-h2-bie",
+    "title": "Negation Adverbs: 别",
+    "pattern": "别",
+    "hsk": 2,
+    "difficulty": 2,
+    "simpleExplanation": "These adverbs modify verbs or adjectives to express negation, adding nuanced meaning to the predicate.",
+    "technicalExplanation": "In detail, this structure is governed by the following rules: 别. Master the fixed word order and the required companion words before using it in production.",
+    "usage": "Place the adverb directly before the verb, adjective or another adverb.",
+    "avoidWhen": "Most adverbs cannot be followed by 是 or 很 directly, and cannot modify nouns.",
+    "examples": [
+      {
+        "hanzi": "别说话！",
+        "pinyin": "Bié shuōhuà!",
+        "zhuyin": "ㄅㄧㄝˊ ㄕㄨㄛㄏㄨㄚˋ!",
+        "translation": "Don't talk!",
+        "translation_en": "Don't talk!",
+        "translation_id": "Jangan bicara!",
+        "audio": "grammar:g-h2-bie:ex0",
+        "text": "别说话！",
+        "romanization": "Bié shuōhuà!"
+      }
+    ],
+    "negativeExamples": [],
+    "commonMistakes": [],
+    "dependsOn": [],
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "grammar:g-h2-bie",
+    "language": "zh",
+    "level": 2,
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "g-h2-zaijiu",
+    "title": "关联副词: 再2、就1",
+    "pattern": "再2、就1",
+    "hsk": 2,
+    "difficulty": 2,
+    "simpleExplanation": "These adverbs modify verbs or adjectives to express a grammatical nuance, adding nuanced meaning to the predicate.",
+    "technicalExplanation": "In detail, this structure is governed by the following rules: 再2、就1. Master the fixed word order and the required companion words before using it in production.",
+    "usage": "Place the adverb directly before the verb, adjective or another adverb.",
+    "avoidWhen": "Most adverbs cannot be followed by 是 or 很 directly, and cannot modify nouns.",
+    "examples": [
+      {
+        "hanzi": "我想去，但是没时间。",
+        "pinyin": "Wǒ xiǎng qù, dànshì méi shíjiān.",
+        "zhuyin": "ㄨㄛˇ ㄒㄧㄤˇ ㄑㄩˋ, ㄉㄢˋㄕˋ ㄇㄟˊ ㄕˊㄐㄧㄢ.",
+        "translation": "I want to go, but I have no time.",
+        "translation_en": "I want to go, but I have no time.",
+        "translation_id": "Saya ingin pergi, tapi tidak punya waktu.",
+        "audio": "grammar:g-h2-zaijiu:ex0",
+        "text": "我想去，但是没时间。",
+        "romanization": "Wǒ xiǎng qù, dànshì méi shíjiān."
+      }
+    ],
+    "negativeExamples": [],
+    "commonMistakes": [],
+    "dependsOn": [],
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "grammar:g-h2-zaijiu",
+    "language": "zh",
+    "level": 2,
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "g-h2-doujiuhaishi",
+    "title": "Modal Adverbs: 都2、就2、还是1",
+    "pattern": "都2、就2、还是1",
+    "hsk": 2,
+    "difficulty": 2,
+    "simpleExplanation": "These adverbs modify verbs or adjectives to express modality, adding nuanced meaning to the predicate.",
+    "technicalExplanation": "In detail, this structure is governed by the following rules: 都2、就2、还是1. Master the fixed word order and the required companion words before using it in production.",
+    "usage": "Place the adverb directly before the verb, adjective or another adverb.",
+    "avoidWhen": "Most adverbs cannot be followed by 是 or 很 directly, and cannot modify nouns.",
+    "examples": [
+      {
+        "hanzi": "我想去，但是没时间。",
+        "pinyin": "Wǒ xiǎng qù, dànshì méi shíjiān.",
+        "zhuyin": "ㄨㄛˇ ㄒㄧㄤˇ ㄑㄩˋ, ㄉㄢˋㄕˋ ㄇㄟˊ ㄕˊㄐㄧㄢ.",
+        "translation": "I want to go, but I have no time.",
+        "translation_en": "I want to go, but I have no time.",
+        "translation_id": "Saya ingin pergi, tapi tidak punya waktu.",
+        "audio": "grammar:g-h2-doujiuhaishi:ex0",
+        "text": "我想去，但是没时间。",
+        "romanization": "Wǒ xiǎng qù, dànshì méi shíjiān."
+      }
+    ],
+    "negativeExamples": [],
+    "commonMistakes": [],
+    "dependsOn": [],
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "grammar:g-h2-doujiuhaishi",
+    "language": "zh",
+    "level": 2,
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "g-h2-cong",
+    "title": "引出时间、处所: 从1",
+    "pattern": "从1",
+    "hsk": 2,
+    "difficulty": 2,
+    "simpleExplanation": "These prepositions introduce 引出时间、处所 words such as a location, time, object or beneficiary, forming a prepositional phrase before the verb.",
+    "technicalExplanation": "In detail, this structure is governed by the following rules: 从1. Master the fixed word order and the required companion words before using it in production.",
+    "usage": "Place the prepositional phrase before the verb it modifies.",
+    "avoidWhen": "Do not place the prepositional phrase after the verb or drop the required preposition.",
+    "examples": [
+      {
+        "hanzi": "我想去，但是没时间。",
+        "pinyin": "Wǒ xiǎng qù, dànshì méi shíjiān.",
+        "zhuyin": "ㄨㄛˇ ㄒㄧㄤˇ ㄑㄩˋ, ㄉㄢˋㄕˋ ㄇㄟˊ ㄕˊㄐㄧㄢ.",
+        "translation": "I want to go, but I have no time.",
+        "translation_en": "I want to go, but I have no time.",
+        "translation_id": "Saya ingin pergi, tapi tidak punya waktu.",
+        "audio": "grammar:g-h2-cong:ex0",
+        "text": "我想去，但是没时间。",
+        "romanization": "Wǒ xiǎng qù, dànshì méi shíjiān."
+      }
+    ],
+    "negativeExamples": [],
+    "commonMistakes": [],
+    "dependsOn": [],
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "grammar:g-h2-cong",
+    "language": "zh",
+    "level": 2,
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "g-h2-wang",
+    "title": "引出方向、路径: 往",
+    "pattern": "往",
+    "hsk": 2,
+    "difficulty": 2,
+    "simpleExplanation": "These prepositions introduce 引出方向、路径 words such as a location, time, object or beneficiary, forming a prepositional phrase before the verb.",
+    "technicalExplanation": "In detail, this structure is governed by the following rules: 往. Master the fixed word order and the required companion words before using it in production.",
+    "usage": "Place the prepositional phrase before the verb it modifies.",
+    "avoidWhen": "Do not place the prepositional phrase after the verb or drop the required preposition.",
+    "examples": [
+      {
+        "hanzi": "我想去，但是没时间。",
+        "pinyin": "Wǒ xiǎng qù, dànshì méi shíjiān.",
+        "zhuyin": "ㄨㄛˇ ㄒㄧㄤˇ ㄑㄩˋ, ㄉㄢˋㄕˋ ㄇㄟˊ ㄕˊㄐㄧㄢ.",
+        "translation": "I want to go, but I have no time.",
+        "translation_en": "I want to go, but I have no time.",
+        "translation_id": "Saya ingin pergi, tapi tidak punya waktu.",
+        "audio": "grammar:g-h2-wang:ex0",
+        "text": "我想去，但是没时间。",
+        "romanization": "Wǒ xiǎng qù, dànshì méi shíjiān."
+      }
+    ],
+    "negativeExamples": [],
+    "commonMistakes": [],
+    "dependsOn": [],
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "grammar:g-h2-wang",
+    "language": "zh",
+    "level": 2,
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "g-h2-cong2",
+    "title": "引出方向、路径: 从2",
+    "pattern": "从2",
+    "hsk": 2,
+    "difficulty": 2,
+    "simpleExplanation": "These prepositions introduce 引出方向、路径 words such as a location, time, object or beneficiary, forming a prepositional phrase before the verb.",
+    "technicalExplanation": "In detail, this structure is governed by the following rules: 从2. Master the fixed word order and the required companion words before using it in production.",
+    "usage": "Place the prepositional phrase before the verb it modifies.",
+    "avoidWhen": "Do not place the prepositional phrase after the verb or drop the required preposition.",
+    "examples": [
+      {
+        "hanzi": "我想去，但是没时间。",
+        "pinyin": "Wǒ xiǎng qù, dànshì méi shíjiān.",
+        "zhuyin": "ㄨㄛˇ ㄒㄧㄤˇ ㄑㄩˋ, ㄉㄢˋㄕˋ ㄇㄟˊ ㄕˊㄐㄧㄢ.",
+        "translation": "I want to go, but I have no time.",
+        "translation_en": "I want to go, but I have no time.",
+        "translation_id": "Saya ingin pergi, tapi tidak punya waktu.",
+        "audio": "grammar:g-h2-cong2:ex0",
+        "text": "我想去，但是没时间。",
+        "romanization": "Wǒ xiǎng qù, dànshì méi shíjiān."
+      }
+    ],
+    "negativeExamples": [],
+    "commonMistakes": [],
+    "dependsOn": [],
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "grammar:g-h2-cong2",
+    "language": "zh",
+    "level": 2,
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "g-h2-gei",
+    "title": "引出对象: 给",
+    "pattern": "给",
+    "hsk": 2,
+    "difficulty": 2,
+    "simpleExplanation": "These prepositions introduce 引出对象 words such as a location, time, object or beneficiary, forming a prepositional phrase before the verb.",
+    "technicalExplanation": "In detail, this structure is governed by the following rules: 给. Master the fixed word order and the required companion words before using it in production.",
+    "usage": "Place the prepositional phrase before the verb it modifies.",
+    "avoidWhen": "Do not place the prepositional phrase after the verb or drop the required preposition.",
+    "examples": [
+      {
+        "hanzi": "请给我一杯水。",
+        "pinyin": "Qǐng gěi wǒ yì bēi shuǐ.",
+        "zhuyin": "ㄑㄧㄥˇ ㄍㄟˇ ㄨㄛˇ ㄧˋ ㄅㄟ ㄕㄨㄟˇ.",
+        "translation": "Please give me a glass of water.",
+        "translation_en": "Please give me a glass of water.",
+        "translation_id": "Tolong beri saya segelas air.",
+        "audio": "grammar:g-h2-gei:ex0",
+        "text": "请给我一杯水。",
+        "romanization": "Qǐng gěi wǒ yì bēi shuǐ."
+      }
+    ],
+    "negativeExamples": [],
+    "commonMistakes": [],
+    "dependsOn": [],
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "grammar:g-h2-gei",
+    "language": "zh",
+    "level": 2,
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "g-h2-gen",
+    "title": "引出对象: 跟1",
+    "pattern": "跟1",
+    "hsk": 2,
+    "difficulty": 2,
+    "simpleExplanation": "These prepositions introduce 引出对象 words such as a location, time, object or beneficiary, forming a prepositional phrase before the verb.",
+    "technicalExplanation": "In detail, this structure is governed by the following rules: 跟1. Master the fixed word order and the required companion words before using it in production.",
+    "usage": "Place the prepositional phrase before the verb it modifies.",
+    "avoidWhen": "Do not place the prepositional phrase after the verb or drop the required preposition.",
+    "examples": [
+      {
+        "hanzi": "我想去，但是没时间。",
+        "pinyin": "Wǒ xiǎng qù, dànshì méi shíjiān.",
+        "zhuyin": "ㄨㄛˇ ㄒㄧㄤˇ ㄑㄩˋ, ㄉㄢˋㄕˋ ㄇㄟˊ ㄕˊㄐㄧㄢ.",
+        "translation": "I want to go, but I have no time.",
+        "translation_en": "I want to go, but I have no time.",
+        "translation_id": "Saya ingin pergi, tapi tidak punya waktu.",
+        "audio": "grammar:g-h2-gen:ex0",
+        "text": "我想去，但是没时间。",
+        "romanization": "Wǒ xiǎng qù, dànshì méi shíjiān."
+      }
+    ],
+    "negativeExamples": [],
+    "commonMistakes": [],
+    "dependsOn": [],
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "grammar:g-h2-gen",
+    "language": "zh",
+    "level": 2,
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "g-h2-yinwei",
+    "title": "引出原因: 因为1",
+    "pattern": "因为1",
+    "hsk": 2,
+    "difficulty": 2,
+    "simpleExplanation": "These prepositions introduce 引出原因 words such as a location, time, object or beneficiary, forming a prepositional phrase before the verb.",
+    "technicalExplanation": "In detail, this structure is governed by the following rules: 因为1. Master the fixed word order and the required companion words before using it in production.",
+    "usage": "Place the prepositional phrase before the verb it modifies.",
+    "avoidWhen": "Do not place the prepositional phrase after the verb or drop the required preposition.",
+    "examples": [
+      {
+        "hanzi": "我想去，但是没时间。",
+        "pinyin": "Wǒ xiǎng qù, dànshì méi shíjiān.",
+        "zhuyin": "ㄨㄛˇ ㄒㄧㄤˇ ㄑㄩˋ, ㄉㄢˋㄕˋ ㄇㄟˊ ㄕˊㄐㄧㄢ.",
+        "translation": "I want to go, but I have no time.",
+        "translation_en": "I want to go, but I have no time.",
+        "translation_id": "Saya ingin pergi, tapi tidak punya waktu.",
+        "audio": "grammar:g-h2-yinwei:ex0",
+        "text": "我想去，但是没时间。",
+        "romanization": "Wǒ xiǎng qù, dànshì méi shíjiān."
+      }
+    ],
+    "negativeExamples": [],
+    "commonMistakes": [],
+    "dependsOn": [],
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "grammar:g-h2-yinwei",
+    "language": "zh",
+    "level": 2,
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "g-h2-gen2",
+    "title": "连接词或短语: 跟2",
+    "pattern": "跟2",
+    "hsk": 2,
+    "difficulty": 2,
+    "simpleExplanation": "These conjunctions connect words, phrases or clauses and express a linking relationship such as addition, alternation or condition.",
+    "technicalExplanation": "In detail, this structure is governed by the following rules: 跟2. Master the fixed word order and the required companion words before using it in production.",
+    "usage": "Use this structure with the correct word order and its required companion words.",
+    "avoidWhen": "Do not use this structure in the wrong position or without the words it requires.",
+    "examples": [
+      {
+        "hanzi": "我想去，但是没时间。",
+        "pinyin": "Wǒ xiǎng qù, dànshì méi shíjiān.",
+        "zhuyin": "ㄨㄛˇ ㄒㄧㄤˇ ㄑㄩˋ, ㄉㄢˋㄕˋ ㄇㄟˊ ㄕˊㄐㄧㄢ.",
+        "translation": "I want to go, but I have no time.",
+        "translation_en": "I want to go, but I have no time.",
+        "translation_id": "Saya ingin pergi, tapi tidak punya waktu.",
+        "audio": "grammar:g-h2-gen2:ex0",
+        "text": "我想去，但是没时间。",
+        "romanization": "Wǒ xiǎng qù, dànshì méi shíjiān."
+      }
+    ],
+    "negativeExamples": [],
+    "commonMistakes": [],
+    "dependsOn": [],
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "grammar:g-h2-gen2",
+    "language": "zh",
+    "level": 2,
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "g-h2-dedi",
+    "title": "Structural Particles: 得、地",
+    "pattern": "得、地",
+    "hsk": 2,
+    "difficulty": 2,
+    "simpleExplanation": "These particles attach to words or clauses to mark grammatical relations such as structural particles, without carrying independent lexical meaning.",
+    "technicalExplanation": "In detail, this structure is governed by the following rules: 得、地. Master the fixed word order and the required companion words before using it in production.",
+    "usage": "Use this structure with the correct word order and its required companion words.",
+    "avoidWhen": "Do not use this structure in the wrong position or without the words it requires.",
+    "examples": [
+      {
+        "hanzi": "你起得很早。",
+        "pinyin": "Nǐ qǐ de hěn zǎo.",
+        "zhuyin": "ㄋㄧˇ ㄑㄧˇ ㄉㄜ˙ ㄏㄣˇ ㄗㄠˇ.",
+        "translation": "You get up very early.",
+        "translation_en": "You get up very early.",
+        "translation_id": "Kamu bangun sangat pagi.",
+        "audio": "grammar:g-h2-dedi:ex0",
+        "text": "你起得很早。",
+        "romanization": "Nǐ qǐ de hěn zǎo."
+      },
+      {
+        "hanzi": "我觉得很有意思。",
+        "pinyin": "wǒ juéde hěn yǒuyìsi.",
+        "zhuyin": "ㄨㄛˇ ㄐㄩㄝˊㄉㄜ˙ ㄏㄣˇ ㄧㄡˇㄧˋㄙ˙.",
+        "translation": "I find it very interesting.",
+        "translation_en": "I find it very interesting.",
+        "translation_id": "Saya rasa ini sangat menarik.",
+        "audio": "grammar:g-h2-dedi:ex1",
+        "text": "我觉得很有意思。",
+        "romanization": "wǒ juéde hěn yǒuyìsi."
+      },
+      {
+        "hanzi": "他跑得很快。",
+        "pinyin": "Tā pǎo de hěn kuài.",
+        "zhuyin": "ㄊㄚ ㄆㄠˇ ㄉㄜ˙ ㄏㄣˇ ㄎㄨㄞˋ.",
+        "translation": "He runs very fast.",
+        "translation_en": "He runs very fast.",
+        "translation_id": "Dia berlari sangat cepat.",
+        "audio": "grammar:g-h2-dedi:ex2",
+        "text": "他跑得很快。",
+        "romanization": "Tā pǎo de hěn kuài."
+      }
+    ],
+    "negativeExamples": [],
+    "commonMistakes": [],
+    "dependsOn": [],
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "grammar:g-h2-dedi",
+    "language": "zh",
+    "level": 2,
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "g-h2-guo",
+    "title": "Aspect Particles: 过",
+    "pattern": "过",
+    "hsk": 2,
+    "difficulty": 2,
+    "simpleExplanation": "These particles attach to words or clauses to mark grammatical relations such as aspect particles, without carrying independent lexical meaning.",
+    "technicalExplanation": "In detail, this structure is governed by the following rules: 过. Master the fixed word order and the required companion words before using it in production.",
+    "usage": "Use this structure with the correct word order and its required companion words.",
+    "avoidWhen": "Do not use this structure in the wrong position or without the words it requires.",
+    "examples": [
+      {
+        "hanzi": "我去过中国。",
+        "pinyin": "Wǒ qù guo Zhōngguó.",
+        "zhuyin": "ㄨㄛˇ ㄑㄩˋ ㄍㄨㄛ˙ ㄓㄨㄥㄍㄨㄛˊ.",
+        "translation": "I have been to China.",
+        "translation_en": "I have been to China.",
+        "translation_id": "Saya pernah ke China.",
+        "audio": "grammar:g-h2-guo:ex0",
+        "text": "我去过中国。",
+        "romanization": "Wǒ qù guo Zhōngguó."
+      }
+    ],
+    "negativeExamples": [],
+    "commonMistakes": [],
+    "dependsOn": [],
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "grammar:g-h2-guo",
+    "language": "zh",
+    "level": 2,
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "g-h2-zhe",
+    "title": "Aspect Particles: 着",
+    "pattern": "着",
+    "hsk": 2,
+    "difficulty": 2,
+    "simpleExplanation": "These particles attach to words or clauses to mark grammatical relations such as aspect particles, without carrying independent lexical meaning.",
+    "technicalExplanation": "In detail, this structure is governed by the following rules: 着. Master the fixed word order and the required companion words before using it in production.",
+    "usage": "Use this structure with the correct word order and its required companion words.",
+    "avoidWhen": "Do not use this structure in the wrong position or without the words it requires.",
+    "examples": [
+      {
+        "hanzi": "门开着。",
+        "pinyin": "Mén kāi zhe.",
+        "zhuyin": "ㄇㄣˊ ㄎㄞ ㄓㄜ˙.",
+        "translation": "The door is open.",
+        "translation_en": "The door is open.",
+        "translation_id": "Pintunya terbuka.",
+        "audio": "grammar:g-h2-zhe:ex0",
+        "text": "门开着。",
+        "romanization": "Mén kāi zhe."
+      }
+    ],
+    "negativeExamples": [],
+    "commonMistakes": [],
+    "dependsOn": [],
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "grammar:g-h2-zhe",
+    "language": "zh",
+    "level": 2,
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "g-h2-nebadea",
+    "title": "Modal Particles: 呢4、吧2、的2、啊1",
+    "pattern": "呢4、吧2、的2、啊1",
+    "hsk": 2,
+    "difficulty": 2,
+    "simpleExplanation": "These particles attach to words or clauses to mark grammatical relations such as modal particles, without carrying independent lexical meaning.",
+    "technicalExplanation": "In detail, this structure is governed by the following rules: 呢4、吧2、的2、啊1. Master the fixed word order and the required companion words before using it in production.",
+    "usage": "Use this structure with the correct word order and its required companion words.",
+    "avoidWhen": "Do not use this structure in the wrong position or without the words it requires.",
+    "examples": [
+      {
+        "hanzi": "我想去，但是没时间。",
+        "pinyin": "Wǒ xiǎng qù, dànshì méi shíjiān.",
+        "zhuyin": "ㄨㄛˇ ㄒㄧㄤˇ ㄑㄩˋ, ㄉㄢˋㄕˋ ㄇㄟˊ ㄕˊㄐㄧㄢ.",
+        "translation": "I want to go, but I have no time.",
+        "translation_en": "I want to go, but I have no time.",
+        "translation_id": "Saya ingin pergi, tapi tidak punya waktu.",
+        "audio": "grammar:g-h2-nebadea:ex0",
+        "text": "我想去，但是没时间。",
+        "romanization": "Wǒ xiǎng qù, dànshì méi shíjiān."
+      }
+    ],
+    "negativeExamples": [],
+    "commonMistakes": [],
+    "dependsOn": [],
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "grammar:g-h2-nebadea",
+    "language": "zh",
+    "level": 2,
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "g-h2-dongbuduanyu",
+    "title": "基本结构类型: 动补短语1",
+    "pattern": "动补短语1",
+    "hsk": 2,
+    "difficulty": 2,
+    "simpleExplanation": "This phrase type is built according to the relationship 基本结构类型: 动补短语1.",
+    "technicalExplanation": "In detail, this structure is governed by the following rules: 动补短语1. Master the fixed word order and the required companion words before using it in production.",
+    "usage": "Use this structure with the correct word order and its required companion words.",
+    "avoidWhen": "Do not use this structure in the wrong position or without the words it requires.",
+    "examples": [
+      {
+        "hanzi": "我想去，但是没时间。",
+        "pinyin": "Wǒ xiǎng qù, dànshì méi shíjiān.",
+        "zhuyin": "ㄨㄛˇ ㄒㄧㄤˇ ㄑㄩˋ, ㄉㄢˋㄕˋ ㄇㄟˊ ㄕˊㄐㄧㄢ.",
+        "translation": "I want to go, but I have no time.",
+        "translation_en": "I want to go, but I have no time.",
+        "translation_id": "Saya ingin pergi, tapi tidak punya waktu.",
+        "audio": "grammar:g-h2-dongbuduanyu:ex0",
+        "text": "我想去，但是没时间。",
+        "romanization": "Wǒ xiǎng qù, dànshì méi shíjiān."
+      }
+    ],
+    "negativeExamples": [],
+    "commonMistakes": [],
+    "dependsOn": [],
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "grammar:g-h2-dongbuduanyu",
+    "language": "zh",
+    "level": 2,
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "g-h2-deziduanyu",
+    "title": "其他结构类型: （1）“的”字短语",
+    "pattern": "（1）“的”字短语",
+    "hsk": 2,
+    "difficulty": 2,
+    "simpleExplanation": "This phrase type is built according to the relationship 其他结构类型: （1）“的”字短语.",
+    "technicalExplanation": "In detail, this structure is governed by the following rules: （1）“的”字短语. Master the fixed word order and the required companion words before using it in production.",
+    "usage": "Use this structure with the correct word order and its required companion words.",
+    "avoidWhen": "Do not use this structure in the wrong position or without the words it requires.",
+    "examples": [
+      {
+        "hanzi": "我想去，但是没时间。",
+        "pinyin": "Wǒ xiǎng qù, dànshì méi shíjiān.",
+        "zhuyin": "ㄨㄛˇ ㄒㄧㄤˇ ㄑㄩˋ, ㄉㄢˋㄕˋ ㄇㄟˊ ㄕˊㄐㄧㄢ.",
+        "translation": "I want to go, but I have no time.",
+        "translation_en": "I want to go, but I have no time.",
+        "translation_id": "Saya ingin pergi, tapi tidak punya waktu.",
+        "audio": "grammar:g-h2-deziduanyu:ex0",
+        "text": "我想去，但是没时间。",
+        "romanization": "Wǒ xiǎng qù, dànshì méi shíjiān."
+      }
+    ],
+    "negativeExamples": [],
+    "commonMistakes": [],
+    "dependsOn": [],
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "grammar:g-h2-deziduanyu",
+    "language": "zh",
+    "level": 2,
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "g-h2-lianweiduanyu",
+    "title": "其他结构类型: （2）连谓短语",
+    "pattern": "（2）连谓短语",
+    "hsk": 2,
+    "difficulty": 2,
+    "simpleExplanation": "This phrase type is built according to the relationship 其他结构类型: （2）连谓短语.",
+    "technicalExplanation": "In detail, this structure is governed by the following rules: （2）连谓短语. Master the fixed word order and the required companion words before using it in production.",
+    "usage": "Use this structure with the correct word order and its required companion words.",
+    "avoidWhen": "Do not use this structure in the wrong position or without the words it requires.",
+    "examples": [
+      {
+        "hanzi": "我想去，但是没时间。",
+        "pinyin": "Wǒ xiǎng qù, dànshì méi shíjiān.",
+        "zhuyin": "ㄨㄛˇ ㄒㄧㄤˇ ㄑㄩˋ, ㄉㄢˋㄕˋ ㄇㄟˊ ㄕˊㄐㄧㄢ.",
+        "translation": "I want to go, but I have no time.",
+        "translation_en": "I want to go, but I have no time.",
+        "translation_id": "Saya ingin pergi, tapi tidak punya waktu.",
+        "audio": "grammar:g-h2-lianweiduanyu:ex0",
+        "text": "我想去，但是没时间。",
+        "romanization": "Wǒ xiǎng qù, dànshì méi shíjiān."
+      }
+    ],
+    "negativeExamples": [],
+    "commonMistakes": [],
+    "dependsOn": [],
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "grammar:g-h2-lianweiduanyu",
+    "language": "zh",
+    "level": 2,
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "g-h2-jianyuduanyu",
+    "title": "其他结构类型: （3）兼语短语",
+    "pattern": "（3）兼语短语",
+    "hsk": 2,
+    "difficulty": 2,
+    "simpleExplanation": "This phrase type is built according to the relationship 其他结构类型: （3）兼语短语.",
+    "technicalExplanation": "In detail, this structure is governed by the following rules: （3）兼语短语. Master the fixed word order and the required companion words before using it in production.",
+    "usage": "Use this structure with the correct word order and its required companion words.",
+    "avoidWhen": "Do not use this structure in the wrong position or without the words it requires.",
+    "examples": [
+      {
+        "hanzi": "我想去，但是没时间。",
+        "pinyin": "Wǒ xiǎng qù, dànshì méi shíjiān.",
+        "zhuyin": "ㄨㄛˇ ㄒㄧㄤˇ ㄑㄩˋ, ㄉㄢˋㄕˋ ㄇㄟˊ ㄕˊㄐㄧㄢ.",
+        "translation": "I want to go, but I have no time.",
+        "translation_en": "I want to go, but I have no time.",
+        "translation_id": "Saya ingin pergi, tapi tidak punya waktu.",
+        "audio": "grammar:g-h2-jianyuduanyu:ex0",
+        "text": "我想去，但是没时间。",
+        "romanization": "Wǒ xiǎng qù, dànshì méi shíjiān."
+      }
+    ],
+    "negativeExamples": [],
+    "commonMistakes": [],
+    "dependsOn": [],
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "grammar:g-h2-jianyuduanyu",
+    "language": "zh",
+    "level": 2,
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "g-h2-item35",
+    "title": "Nominal phrases",
+    "pattern": "名词性短语",
+    "hsk": 2,
+    "difficulty": 2,
+    "simpleExplanation": "This phrase functions in the sentence as 名词性短语: .",
+    "technicalExplanation": "In detail, this structure is governed by the following rules: . Master the fixed word order and the required companion words before using it in production.",
+    "usage": "Use this structure with the correct word order and its required companion words.",
+    "avoidWhen": "Do not use this structure in the wrong position or without the words it requires.",
+    "examples": [
+      {
+        "hanzi": "我想去，但是没时间。",
+        "pinyin": "Wǒ xiǎng qù, dànshì méi shíjiān.",
+        "zhuyin": "ㄨㄛˇ ㄒㄧㄤˇ ㄑㄩˋ, ㄉㄢˋㄕˋ ㄇㄟˊ ㄕˊㄐㄧㄢ.",
+        "translation": "I want to go, but I have no time.",
+        "translation_en": "I want to go, but I have no time.",
+        "translation_id": "Saya ingin pergi, tapi tidak punya waktu.",
+        "audio": "grammar:g-h2-item35:ex0",
+        "text": "我想去，但是没时间。",
+        "romanization": "Wǒ xiǎng qù, dànshì méi shíjiān."
+      }
+    ],
+    "negativeExamples": [],
+    "commonMistakes": [],
+    "dependsOn": [],
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "grammar:g-h2-item35",
+    "language": "zh",
+    "level": 2,
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "g-h2-item36",
+    "title": "Verbal phrases",
+    "pattern": "动词性短语",
+    "hsk": 2,
+    "difficulty": 2,
+    "simpleExplanation": "This phrase functions in the sentence as 动词性短语: .",
+    "technicalExplanation": "In detail, this structure is governed by the following rules: . Master the fixed word order and the required companion words before using it in production.",
+    "usage": "Use this structure with the correct word order and its required companion words.",
+    "avoidWhen": "Do not use this structure in the wrong position or without the words it requires.",
+    "examples": [
+      {
+        "hanzi": "我想去，但是没时间。",
+        "pinyin": "Wǒ xiǎng qù, dànshì méi shíjiān.",
+        "zhuyin": "ㄨㄛˇ ㄒㄧㄤˇ ㄑㄩˋ, ㄉㄢˋㄕˋ ㄇㄟˊ ㄕˊㄐㄧㄢ.",
+        "translation": "I want to go, but I have no time.",
+        "translation_en": "I want to go, but I have no time.",
+        "translation_id": "Saya ingin pergi, tapi tidak punya waktu.",
+        "audio": "grammar:g-h2-item36:ex0",
+        "text": "我想去，但是没时间。",
+        "romanization": "Wǒ xiǎng qù, dànshì méi shíjiān."
+      }
+    ],
+    "negativeExamples": [],
+    "commonMistakes": [],
+    "dependsOn": [],
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "grammar:g-h2-item36",
+    "language": "zh",
+    "level": 2,
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "g-h2-item37",
+    "title": "Adjectival phrases",
+    "pattern": "形容词性短语",
+    "hsk": 2,
+    "difficulty": 2,
+    "simpleExplanation": "This phrase functions in the sentence as 形容词性短语: .",
+    "technicalExplanation": "In detail, this structure is governed by the following rules: . Master the fixed word order and the required companion words before using it in production.",
+    "usage": "Use this structure with the correct word order and its required companion words.",
+    "avoidWhen": "Do not use this structure in the wrong position or without the words it requires.",
+    "examples": [
+      {
+        "hanzi": "我想去，但是没时间。",
+        "pinyin": "Wǒ xiǎng qù, dànshì méi shíjiān.",
+        "zhuyin": "ㄨㄛˇ ㄒㄧㄤˇ ㄑㄩˋ, ㄉㄢˋㄕˋ ㄇㄟˊ ㄕˊㄐㄧㄢ.",
+        "translation": "I want to go, but I have no time.",
+        "translation_en": "I want to go, but I have no time.",
+        "translation_id": "Saya ingin pergi, tapi tidak punya waktu.",
+        "audio": "grammar:g-h2-item37:ex0",
+        "text": "我想去，但是没时间。",
+        "romanization": "Wǒ xiǎng qù, dànshì méi shíjiān."
+      }
+    ],
+    "negativeExamples": [],
+    "commonMistakes": [],
+    "dependsOn": [],
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "grammar:g-h2-item37",
+    "language": "zh",
+    "level": 2,
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "g-h2-shenmede",
+    "title": "其他: 什么的",
+    "pattern": "什么的",
+    "hsk": 2,
+    "difficulty": 2,
+    "simpleExplanation": "什么的 is a fixed collocation whose meaning is conventional and often non-compositional.",
+    "technicalExplanation": "In detail, this structure is governed by the following rules: 什么的. Master the fixed word order and the required companion words before using it in production.",
+    "usage": "Use this structure with the correct word order and its required companion words.",
+    "avoidWhen": "Do not use this structure in the wrong position or without the words it requires.",
+    "examples": [
+      {
+        "hanzi": "我想去，但是没时间。",
+        "pinyin": "Wǒ xiǎng qù, dànshì méi shíjiān.",
+        "zhuyin": "ㄨㄛˇ ㄒㄧㄤˇ ㄑㄩˋ, ㄉㄢˋㄕˋ ㄇㄟˊ ㄕˊㄐㄧㄢ.",
+        "translation": "I want to go, but I have no time.",
+        "translation_en": "I want to go, but I have no time.",
+        "translation_id": "Saya ingin pergi, tapi tidak punya waktu.",
+        "audio": "grammar:g-h2-shenmede:ex0",
+        "text": "我想去，但是没时间。",
+        "romanization": "Wǒ xiǎng qù, dànshì méi shíjiān."
+      }
+    ],
+    "negativeExamples": [],
+    "commonMistakes": [],
+    "dependsOn": [],
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "grammar:g-h2-shenmede",
+    "language": "zh",
+    "level": 2,
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "g-h2-haishiba",
+    "title": "还是……吧",
+    "pattern": "还是……吧",
+    "hsk": 2,
+    "difficulty": 2,
+    "simpleExplanation": "This fixed pattern 还是……吧 systematically links its parts to express a particular grammatical relationship.",
+    "technicalExplanation": "In detail, this structure is governed by the following rules: 还是……吧. Master the fixed word order and the required companion words before using it in production.",
+    "usage": "Use this structure with the correct word order and its required companion words.",
+    "avoidWhen": "Do not use this structure in the wrong position or without the words it requires.",
+    "examples": [
+      {
+        "hanzi": "我想去，但是没时间。",
+        "pinyin": "Wǒ xiǎng qù, dànshì méi shíjiān.",
+        "zhuyin": "ㄨㄛˇ ㄒㄧㄤˇ ㄑㄩˋ, ㄉㄢˋㄕˋ ㄇㄟˊ ㄕˊㄐㄧㄢ.",
+        "translation": "I want to go, but I have no time.",
+        "translation_en": "I want to go, but I have no time.",
+        "translation_id": "Saya ingin pergi, tapi tidak punya waktu.",
+        "audio": "grammar:g-h2-haishiba:ex0",
+        "text": "我想去，但是没时间。",
+        "romanization": "Wǒ xiǎng qù, dànshì méi shíjiān."
+      }
+    ],
+    "negativeExamples": [],
+    "commonMistakes": [],
+    "dependsOn": [],
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "grammar:g-h2-haishiba",
+    "language": "zh",
+    "level": 2,
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "g-h2-yaokuaiyaojiuyaole",
+    "title": "要/快要/就要……了",
+    "pattern": "要/快要/就要……了",
+    "hsk": 2,
+    "difficulty": 2,
+    "simpleExplanation": "This fixed pattern 要/快要/就要……了 systematically links its parts to express a particular grammatical relationship.",
+    "technicalExplanation": "In detail, this structure is governed by the following rules: 要/快要/就要……了. Master the fixed word order and the required companion words before using it in production.",
+    "usage": "Use this structure with the correct word order and its required companion words.",
+    "avoidWhen": "Do not use this structure in the wrong position or without the words it requires.",
+    "examples": [
+      {
+        "hanzi": "我想去，但是没时间。",
+        "pinyin": "Wǒ xiǎng qù, dànshì méi shíjiān.",
+        "zhuyin": "ㄨㄛˇ ㄒㄧㄤˇ ㄑㄩˋ, ㄉㄢˋㄕˋ ㄇㄟˊ ㄕˊㄐㄧㄢ.",
+        "translation": "I want to go, but I have no time.",
+        "translation_en": "I want to go, but I have no time.",
+        "translation_id": "Saya ingin pergi, tapi tidak punya waktu.",
+        "audio": "grammar:g-h2-yaokuaiyaojiuyaole:ex0",
+        "text": "我想去，但是没时间。",
+        "romanization": "Wǒ xiǎng qù, dànshì méi shíjiān."
+      }
+    ],
+    "negativeExamples": [],
+    "commonMistakes": [],
+    "dependsOn": [],
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "grammar:g-h2-yaokuaiyaojiuyaole",
+    "language": "zh",
+    "level": 2,
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "g-h2-doule",
+    "title": "都……了",
+    "pattern": "都……了",
+    "hsk": 2,
+    "difficulty": 2,
+    "simpleExplanation": "This fixed pattern 都……了 systematically links its parts to express a particular grammatical relationship.",
+    "technicalExplanation": "In detail, this structure is governed by the following rules: 都……了. Master the fixed word order and the required companion words before using it in production.",
+    "usage": "Use this structure with the correct word order and its required companion words.",
+    "avoidWhen": "Do not use this structure in the wrong position or without the words it requires.",
+    "examples": [
+      {
+        "hanzi": "我想去，但是没时间。",
+        "pinyin": "Wǒ xiǎng qù, dànshì méi shíjiān.",
+        "zhuyin": "ㄨㄛˇ ㄒㄧㄤˇ ㄑㄩˋ, ㄉㄢˋㄕˋ ㄇㄟˊ ㄕˊㄐㄧㄢ.",
+        "translation": "I want to go, but I have no time.",
+        "translation_en": "I want to go, but I have no time.",
+        "translation_id": "Saya ingin pergi, tapi tidak punya waktu.",
+        "audio": "grammar:g-h2-doule:ex0",
+        "text": "我想去，但是没时间。",
+        "romanization": "Wǒ xiǎng qù, dànshì méi shíjiān."
+      }
+    ],
+    "negativeExamples": [],
+    "commonMistakes": [],
+    "dependsOn": [],
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "grammar:g-h2-doule",
+    "language": "zh",
+    "level": 2,
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "g-h2-shoushizhuyu",
+    "title": "受事主语",
+    "pattern": "受事主语",
+    "hsk": 2,
+    "difficulty": 2,
+    "simpleExplanation": "The subject of a sentence can be 受事主语.",
+    "technicalExplanation": "In detail, this structure is governed by the following rules: 受事主语. Master the fixed word order and the required companion words before using it in production.",
+    "usage": "Use this structure with the correct word order and its required companion words.",
+    "avoidWhen": "Do not use this structure in the wrong position or without the words it requires.",
+    "examples": [
+      {
+        "hanzi": "我想去，但是没时间。",
+        "pinyin": "Wǒ xiǎng qù, dànshì méi shíjiān.",
+        "zhuyin": "ㄨㄛˇ ㄒㄧㄤˇ ㄑㄩˋ, ㄉㄢˋㄕˋ ㄇㄟˊ ㄕˊㄐㄧㄢ.",
+        "translation": "I want to go, but I have no time.",
+        "translation_en": "I want to go, but I have no time.",
+        "translation_id": "Saya ingin pergi, tapi tidak punya waktu.",
+        "audio": "grammar:g-h2-shoushizhuyu:ex0",
+        "text": "我想去，但是没时间。",
+        "romanization": "Wǒ xiǎng qù, dànshì méi shíjiān."
+      }
+    ],
+    "negativeExamples": [],
+    "commonMistakes": [],
+    "dependsOn": [],
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "grammar:g-h2-shoushizhuyu",
+    "language": "zh",
+    "level": 2,
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "g-h2-mingcixingduanyuzuow",
+    "title": "名词性短语作谓语",
+    "pattern": "名词性短语作谓语",
+    "hsk": 2,
+    "difficulty": 2,
+    "simpleExplanation": "The predicate of a sentence can be 名词性短语作谓语.",
+    "technicalExplanation": "In detail, this structure is governed by the following rules: 名词性短语作谓语. Master the fixed word order and the required companion words before using it in production.",
+    "usage": "Use this structure with the correct word order and its required companion words.",
+    "avoidWhen": "Do not use this structure in the wrong position or without the words it requires.",
+    "examples": [
+      {
+        "hanzi": "我想去，但是没时间。",
+        "pinyin": "Wǒ xiǎng qù, dànshì méi shíjiān.",
+        "zhuyin": "ㄨㄛˇ ㄒㄧㄤˇ ㄑㄩˋ, ㄉㄢˋㄕˋ ㄇㄟˊ ㄕˊㄐㄧㄢ.",
+        "translation": "I want to go, but I have no time.",
+        "translation_en": "I want to go, but I have no time.",
+        "translation_id": "Saya ingin pergi, tapi tidak punya waktu.",
+        "audio": "grammar:g-h2-mingcixingduanyuzuow:ex0",
+        "text": "我想去，但是没时间。",
+        "romanization": "Wǒ xiǎng qù, dànshì méi shíjiān."
+      }
+    ],
+    "negativeExamples": [],
+    "commonMistakes": [],
+    "dependsOn": [],
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "grammar:g-h2-mingcixingduanyuzuow",
+    "language": "zh",
+    "level": 2,
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "g-h2-dongcihuodongcixingd",
+    "title": "动词或动词性短语、主谓短语作定语",
+    "pattern": "动词或动词性短语、主谓短语作定语",
+    "hsk": 2,
+    "difficulty": 2,
+    "simpleExplanation": "The attributive (modifier before a noun) can be 动词或动词性短语、主谓短语作定语.",
+    "technicalExplanation": "In detail, this structure is governed by the following rules: 动词或动词性短语、主谓短语作定语. Master the fixed word order and the required companion words before using it in production.",
+    "usage": "Use this structure with the correct word order and its required companion words.",
+    "avoidWhen": "Do not use this structure in the wrong position or without the words it requires.",
+    "examples": [
+      {
+        "hanzi": "我想去，但是没时间。",
+        "pinyin": "Wǒ xiǎng qù, dànshì méi shíjiān.",
+        "zhuyin": "ㄨㄛˇ ㄒㄧㄤˇ ㄑㄩˋ, ㄉㄢˋㄕˋ ㄇㄟˊ ㄕˊㄐㄧㄢ.",
+        "translation": "I want to go, but I have no time.",
+        "translation_en": "I want to go, but I have no time.",
+        "translation_id": "Saya ingin pergi, tapi tidak punya waktu.",
+        "audio": "grammar:g-h2-dongcihuodongcixingd:ex0",
+        "text": "我想去，但是没时间。",
+        "romanization": "Wǒ xiǎng qù, dànshì méi shíjiān."
+      }
+    ],
+    "negativeExamples": [],
+    "commonMistakes": [],
+    "dependsOn": [],
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "grammar:g-h2-dongcihuodongcixingd",
+    "language": "zh",
+    "level": 2,
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "g-h2-dongcicuodonghaohuiw",
+    "title": "结果补语1: 动词+错/懂/好/会/完",
+    "pattern": "动词+错/懂/好/会/完",
+    "hsk": 2,
+    "difficulty": 2,
+    "simpleExplanation": "The complement after a verb or adjective expresses 结果补语1: 动词+错/懂/好/会/完.",
+    "technicalExplanation": "In detail, this structure is governed by the following rules: 动词+错/懂/好/会/完. Master the fixed word order and the required companion words before using it in production.",
+    "usage": "Use this structure with the correct word order and its required companion words.",
+    "avoidWhen": "Do not use this structure in the wrong position or without the words it requires.",
+    "examples": [
+      {
+        "hanzi": "我想去，但是没时间。",
+        "pinyin": "Wǒ xiǎng qù, dànshì méi shíjiān.",
+        "zhuyin": "ㄨㄛˇ ㄒㄧㄤˇ ㄑㄩˋ, ㄉㄢˋㄕˋ ㄇㄟˊ ㄕˊㄐㄧㄢ.",
+        "translation": "I want to go, but I have no time.",
+        "translation_en": "I want to go, but I have no time.",
+        "translation_id": "Saya ingin pergi, tapi tidak punya waktu.",
+        "audio": "grammar:g-h2-dongcicuodonghaohuiw:ex0",
+        "text": "我想去，但是没时间。",
+        "romanization": "Wǒ xiǎng qù, dànshì méi shíjiān."
+      }
+    ],
+    "negativeExamples": [],
+    "commonMistakes": [],
+    "dependsOn": [],
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "grammar:g-h2-dongcicuodonghaohuiw",
+    "language": "zh",
+    "level": 2,
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "g-h2-jiandanquxiangbuyude",
+    "title": "趋向补语1: 简单趋向补语的趋向意义用法：（1）动词+来/去",
+    "pattern": "简单趋向补语的趋向意义用法：（1）动词+来/去",
+    "hsk": 2,
+    "difficulty": 2,
+    "simpleExplanation": "The complement after a verb or adjective expresses 趋向补语1: 简单趋向补语的趋向意义用法：（1）动词+来/去.",
+    "technicalExplanation": "In detail, this structure is governed by the following rules: 简单趋向补语的趋向意义用法：（1）动词+来/去. Master the fixed word order and the required companion words before using it in production.",
+    "usage": "Use this structure with the correct word order and its required companion words.",
+    "avoidWhen": "Do not use this structure in the wrong position or without the words it requires.",
+    "examples": [
+      {
+        "hanzi": "我想去，但是没时间。",
+        "pinyin": "Wǒ xiǎng qù, dànshì méi shíjiān.",
+        "zhuyin": "ㄨㄛˇ ㄒㄧㄤˇ ㄑㄩˋ, ㄉㄢˋㄕˋ ㄇㄟˊ ㄕˊㄐㄧㄢ.",
+        "translation": "I want to go, but I have no time.",
+        "translation_en": "I want to go, but I have no time.",
+        "translation_id": "Saya ingin pergi, tapi tidak punya waktu.",
+        "audio": "grammar:g-h2-jiandanquxiangbuyude:ex0",
+        "text": "我想去，但是没时间。",
+        "romanization": "Wǒ xiǎng qù, dànshì méi shíjiān."
+      }
+    ],
+    "negativeExamples": [],
+    "commonMistakes": [],
+    "dependsOn": [],
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "grammar:g-h2-jiandanquxiangbuyude",
+    "language": "zh",
+    "level": 2,
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "g-h2-dongcishangxiajinchu",
+    "title": "趋向补语1: （2）动词+上/下/进/出/过/回",
+    "pattern": "（2）动词+上/下/进/出/过/回",
+    "hsk": 2,
+    "difficulty": 2,
+    "simpleExplanation": "The complement after a verb or adjective expresses 趋向补语1: （2）动词+上/下/进/出/过/回.",
+    "technicalExplanation": "In detail, this structure is governed by the following rules: （2）动词+上/下/进/出/过/回. Master the fixed word order and the required companion words before using it in production.",
+    "usage": "Use this structure with the correct word order and its required companion words.",
+    "avoidWhen": "Do not use this structure in the wrong position or without the words it requires.",
+    "examples": [
+      {
+        "hanzi": "我想去，但是没时间。",
+        "pinyin": "Wǒ xiǎng qù, dànshì méi shíjiān.",
+        "zhuyin": "ㄨㄛˇ ㄒㄧㄤˇ ㄑㄩˋ, ㄉㄢˋㄕˋ ㄇㄟˊ ㄕˊㄐㄧㄢ.",
+        "translation": "I want to go, but I have no time.",
+        "translation_en": "I want to go, but I have no time.",
+        "translation_id": "Saya ingin pergi, tapi tidak punya waktu.",
+        "audio": "grammar:g-h2-dongcishangxiajinchu:ex0",
+        "text": "我想去，但是没时间。",
+        "romanization": "Wǒ xiǎng qù, dànshì méi shíjiān."
+      }
+    ],
+    "negativeExamples": [],
+    "commonMistakes": [],
+    "dependsOn": [],
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "grammar:g-h2-dongcishangxiajinchu",
+    "language": "zh",
+    "level": 2,
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "g-h2-fuhequxiangbuyudequx",
+    "title": "趋向补语1: 复合趋向补语的趋向意义用法：动词+出来/出去/过来/过去/回来/回去/进来/进去/起来/上来/上去/下来/下去",
+    "pattern": "复合趋向补语的趋向意义用法：动词+出来/出去/过来/过去/回来/回去/进来/进去/起来/上来/上去/下来/下去",
+    "hsk": 2,
+    "difficulty": 2,
+    "simpleExplanation": "The complement after a verb or adjective expresses 趋向补语1: 复合趋向补语的趋向意义用法：动词+出来/出去/过来/过去/回来/回去/进来/进去/起来/上来/上去/下来/下去.",
+    "technicalExplanation": "In detail, this structure is governed by the following rules: 复合趋向补语的趋向意义用法：动词+出来/出去/过来/过去/回来/回去/进来/进去/起来/上来/上去/下来/下去. Master the fixed word order and the required companion words before using it in production.",
+    "usage": "Use this structure with the correct word order and its required companion words.",
+    "avoidWhen": "Do not use this structure in the wrong position or without the words it requires.",
+    "examples": [
+      {
+        "hanzi": "我想去，但是没时间。",
+        "pinyin": "Wǒ xiǎng qù, dànshì méi shíjiān.",
+        "zhuyin": "ㄨㄛˇ ㄒㄧㄤˇ ㄑㄩˋ, ㄉㄢˋㄕˋ ㄇㄟˊ ㄕˊㄐㄧㄢ.",
+        "translation": "I want to go, but I have no time.",
+        "translation_en": "I want to go, but I have no time.",
+        "translation_id": "Saya ingin pergi, tapi tidak punya waktu.",
+        "audio": "grammar:g-h2-fuhequxiangbuyudequx:ex0",
+        "text": "我想去，但是没时间。",
+        "romanization": "Wǒ xiǎng qù, dànshì méi shíjiān."
+      }
+    ],
+    "negativeExamples": [],
+    "commonMistakes": [],
+    "dependsOn": [],
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "grammar:g-h2-fuhequxiangbuyudequx",
+    "language": "zh",
+    "level": 2,
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "g-h2-dongcidexingrongcixi",
+    "title": "状态补语1: 动词+得+形容词性短语",
+    "pattern": "动词+得+形容词性短语",
+    "hsk": 2,
+    "difficulty": 2,
+    "simpleExplanation": "The complement after a verb or adjective expresses 状态补语1: 动词+得+形容词性短语.",
+    "technicalExplanation": "In detail, this structure is governed by the following rules: 动词+得+形容词性短语. Master the fixed word order and the required companion words before using it in production.",
+    "usage": "Use this structure with the correct word order and its required companion words.",
+    "avoidWhen": "Do not use this structure in the wrong position or without the words it requires.",
+    "examples": [
+      {
+        "hanzi": "我想去，但是没时间。",
+        "pinyin": "Wǒ xiǎng qù, dànshì méi shíjiān.",
+        "zhuyin": "ㄨㄛˇ ㄒㄧㄤˇ ㄑㄩˋ, ㄉㄢˋㄕˋ ㄇㄟˊ ㄕˊㄐㄧㄢ.",
+        "translation": "I want to go, but I have no time.",
+        "translation_en": "I want to go, but I have no time.",
+        "translation_id": "Saya ingin pergi, tapi tidak punya waktu.",
+        "audio": "grammar:g-h2-dongcidexingrongcixi:ex0",
+        "text": "我想去，但是没时间。",
+        "romanization": "Wǒ xiǎng qù, dànshì méi shíjiān."
+      }
+    ],
+    "negativeExamples": [],
+    "commonMistakes": [],
+    "dependsOn": [],
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "grammar:g-h2-dongcidexingrongcixi",
+    "language": "zh",
+    "level": 2,
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "g-h2-biaoshidongzuochixud",
+    "title": "数量补语2: （1）表示动作持续的时间",
+    "pattern": "（1）表示动作持续的时间",
+    "hsk": 2,
+    "difficulty": 2,
+    "simpleExplanation": "The complement after a verb or adjective expresses 数量补语2: （1）表示动作持续的时间.",
+    "technicalExplanation": "In detail, this structure is governed by the following rules: （1）表示动作持续的时间. Master the fixed word order and the required companion words before using it in production.",
+    "usage": "Use this structure with the correct word order and its required companion words.",
+    "avoidWhen": "Do not use this structure in the wrong position or without the words it requires.",
+    "examples": [
+      {
+        "hanzi": "我想去，但是没时间。",
+        "pinyin": "Wǒ xiǎng qù, dànshì méi shíjiān.",
+        "zhuyin": "ㄨㄛˇ ㄒㄧㄤˇ ㄑㄩˋ, ㄉㄢˋㄕˋ ㄇㄟˊ ㄕˊㄐㄧㄢ.",
+        "translation": "I want to go, but I have no time.",
+        "translation_en": "I want to go, but I have no time.",
+        "translation_id": "Saya ingin pergi, tapi tidak punya waktu.",
+        "audio": "grammar:g-h2-biaoshidongzuochixud:ex0",
+        "text": "我想去，但是没时间。",
+        "romanization": "Wǒ xiǎng qù, dànshì méi shíjiān."
+      }
+    ],
+    "negativeExamples": [],
+    "commonMistakes": [],
+    "dependsOn": [],
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "grammar:g-h2-biaoshidongzuochixud",
+    "language": "zh",
+    "level": 2,
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "g-h2-xingrongcishuliangbu",
+    "title": "数量补语2: （2）形容词+数量补语",
+    "pattern": "（2）形容词+数量补语",
+    "hsk": 2,
+    "difficulty": 2,
+    "simpleExplanation": "The complement after a verb or adjective expresses 数量补语2: （2）形容词+数量补语.",
+    "technicalExplanation": "In detail, this structure is governed by the following rules: （2）形容词+数量补语. Master the fixed word order and the required companion words before using it in production.",
+    "usage": "Use this structure with the correct word order and its required companion words.",
+    "avoidWhen": "Do not use this structure in the wrong position or without the words it requires.",
+    "examples": [
+      {
+        "hanzi": "我想去，但是没时间。",
+        "pinyin": "Wǒ xiǎng qù, dànshì méi shíjiān.",
+        "zhuyin": "ㄨㄛˇ ㄒㄧㄤˇ ㄑㄩˋ, ㄉㄢˋㄕˋ ㄇㄟˊ ㄕˊㄐㄧㄢ.",
+        "translation": "I want to go, but I have no time.",
+        "translation_en": "I want to go, but I have no time.",
+        "translation_id": "Saya ingin pergi, tapi tidak punya waktu.",
+        "audio": "grammar:g-h2-xingrongcishuliangbu:ex0",
+        "text": "我想去，但是没时间。",
+        "romanization": "Wǒ xiǎng qù, dànshì méi shíjiān."
+      }
+    ],
+    "negativeExamples": [],
+    "commonMistakes": [],
+    "dependsOn": [],
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "grammar:g-h2-xingrongcishuliangbu",
+    "language": "zh",
+    "level": 2,
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "g-h2-zhuweijuzhuweiweiyuj",
+    "title": "单句: 主谓句4：主谓谓语句",
+    "pattern": "主谓句4：主谓谓语句",
+    "hsk": 2,
+    "difficulty": 2,
+    "simpleExplanation": "This sentence pattern describes 主谓句4：主谓谓语句.",
+    "technicalExplanation": "In detail, this structure is governed by the following rules: 主谓句4：主谓谓语句. Master the fixed word order and the required companion words before using it in production.",
+    "usage": "Use this structure with the correct word order and its required companion words.",
+    "avoidWhen": "Do not use this structure in the wrong position or without the words it requires.",
+    "examples": [
+      {
+        "hanzi": "我想去，但是没时间。",
+        "pinyin": "Wǒ xiǎng qù, dànshì méi shíjiān.",
+        "zhuyin": "ㄨㄛˇ ㄒㄧㄤˇ ㄑㄩˋ, ㄉㄢˋㄕˋ ㄇㄟˊ ㄕˊㄐㄧㄢ.",
+        "translation": "I want to go, but I have no time.",
+        "translation_en": "I want to go, but I have no time.",
+        "translation_id": "Saya ingin pergi, tapi tidak punya waktu.",
+        "audio": "grammar:g-h2-zhuweijuzhuweiweiyuj:ex0",
+        "text": "我想去，但是没时间。",
+        "romanization": "Wǒ xiǎng qù, dànshì méi shíjiān."
+      }
+    ],
+    "negativeExamples": [],
+    "commonMistakes": [],
+    "dependsOn": [],
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "grammar:g-h2-zhuweijuzhuweiweiyuj",
+    "language": "zh",
+    "level": 2,
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "g-h2-yonghaishilianjiedex",
+    "title": "疑问句: 用“还是”连接的选择问句",
+    "pattern": "用“还是”连接的选择问句",
+    "hsk": 2,
+    "difficulty": 2,
+    "simpleExplanation": "This sentence type is used for 疑问句: 用“还是”连接的选择问句.",
+    "technicalExplanation": "In detail, this structure is governed by the following rules: 用“还是”连接的选择问句. Master the fixed word order and the required companion words before using it in production.",
+    "usage": "Choose the correct sentence type for the communicative intent: statement, question, command or exclamation.",
+    "avoidWhen": "Do not use this structure in the wrong position or without the words it requires.",
+    "examples": [
+      {
+        "hanzi": "我想去，但是没时间。",
+        "pinyin": "Wǒ xiǎng qù, dànshì méi shíjiān.",
+        "zhuyin": "ㄨㄛˇ ㄒㄧㄤˇ ㄑㄩˋ, ㄉㄢˋㄕˋ ㄇㄟˊ ㄕˊㄐㄧㄢ.",
+        "translation": "I want to go, but I have no time.",
+        "translation_en": "I want to go, but I have no time.",
+        "translation_id": "Saya ingin pergi, tapi tidak punya waktu.",
+        "audio": "grammar:g-h2-yonghaishilianjiedex:ex0",
+        "text": "我想去，但是没时间。",
+        "romanization": "Wǒ xiǎng qù, dànshì méi shíjiān."
+      }
+    ],
+    "negativeExamples": [],
+    "commonMistakes": [],
+    "dependsOn": [],
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "grammar:g-h2-yonghaishilianjiedex",
+    "language": "zh",
+    "level": 2,
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "g-h2-yongbiedeqishiju",
+    "title": "祈使句: 用“别”的祈使句",
+    "pattern": "用“别”的祈使句",
+    "hsk": 2,
+    "difficulty": 2,
+    "simpleExplanation": "This sentence type is used for 祈使句: 用“别”的祈使句.",
+    "technicalExplanation": "In detail, this structure is governed by the following rules: 用“别”的祈使句. Master the fixed word order and the required companion words before using it in production.",
+    "usage": "Choose the correct sentence type for the communicative intent: statement, question, command or exclamation.",
+    "avoidWhen": "Do not use this structure in the wrong position or without the words it requires.",
+    "examples": [
+      {
+        "hanzi": "我想去，但是没时间。",
+        "pinyin": "Wǒ xiǎng qù, dànshì méi shíjiān.",
+        "zhuyin": "ㄨㄛˇ ㄒㄧㄤˇ ㄑㄩˋ, ㄉㄢˋㄕˋ ㄇㄟˊ ㄕˊㄐㄧㄢ.",
+        "translation": "I want to go, but I have no time.",
+        "translation_en": "I want to go, but I have no time.",
+        "translation_id": "Saya ingin pergi, tapi tidak punya waktu.",
+        "audio": "grammar:g-h2-yongbiedeqishiju:ex0",
+        "text": "我想去，但是没时间。",
+        "romanization": "Wǒ xiǎng qù, dànshì méi shíjiān."
+      }
+    ],
+    "negativeExamples": [],
+    "commonMistakes": [],
+    "dependsOn": [],
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "grammar:g-h2-yongbiedeqishiju",
+    "language": "zh",
+    "level": 2,
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "g-h2-biaoshishuominghuote",
+    "title": "“是”字句2: 表示说明或特征",
+    "pattern": "表示说明或特征",
+    "hsk": 2,
+    "difficulty": 2,
+    "simpleExplanation": "This special sentence structure is 表示说明或特征.",
+    "technicalExplanation": "In detail, this structure is governed by the following rules: 表示说明或特征. Master the fixed word order and the required companion words before using it in production.",
+    "usage": "Use this structure with the correct word order and its required companion words.",
+    "avoidWhen": "Do not use this structure in the wrong position or without the words it requires.",
+    "examples": [
+      {
+        "hanzi": "我不是老师。",
+        "pinyin": "wǒ bú shì lǎoshī.",
+        "zhuyin": "ㄨㄛˇ ㄅㄨˊ ㄕˋ ㄌㄠˇㄕ.",
+        "translation": "I am not a teacher.",
+        "translation_en": "I am not a teacher.",
+        "translation_id": "Saya bukan guru.",
+        "audio": "grammar:g-h2-biaoshishuominghuote:ex0",
+        "text": "我不是老师。",
+        "romanization": "wǒ bú shì lǎoshī."
+      },
+      {
+        "hanzi": "我们都是学生。",
+        "pinyin": "Wǒmen dōu shì xuésheng.",
+        "zhuyin": "ㄨㄛˇㄇㄣ˙ ㄉㄡ ㄕˋ ㄒㄩㄝˊㄕㄥ˙.",
+        "translation": "We are all students.",
+        "translation_en": "We are all students.",
+        "translation_id": "Kami semua pelajar.",
+        "audio": "grammar:g-h2-biaoshishuominghuote:ex1",
+        "text": "我们都是学生。",
+        "romanization": "Wǒmen dōu shì xuésheng."
+      },
+      {
+        "hanzi": "现在是九点十分。",
+        "pinyin": "Xiànzài shì jiǔ diǎn shí fēn.",
+        "zhuyin": "ㄒㄧㄢˋㄗㄞˋ ㄕˋ ㄐㄧㄡˇ ㄉㄧㄢˇ ㄕˊ ㄈㄣ.",
+        "translation": "It is ten past nine now.",
+        "translation_en": "It is ten past nine now.",
+        "translation_id": "Sekarang jam sembilan lewat sepuluh menit.",
+        "audio": "grammar:g-h2-biaoshishuominghuote:ex2",
+        "text": "现在是九点十分。",
+        "romanization": "Xiànzài shì jiǔ diǎn shí fēn."
+      }
+    ],
+    "negativeExamples": [],
+    "commonMistakes": [],
+    "dependsOn": [],
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "grammar:g-h2-biaoshishuominghuote",
+    "language": "zh",
+    "level": 2,
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "g-h2-biaoshidadao",
+    "title": "“有”字句2: 表示达到",
+    "pattern": "表示达到",
+    "hsk": 2,
+    "difficulty": 2,
+    "simpleExplanation": "This special sentence structure is 表示达到.",
+    "technicalExplanation": "In detail, this structure is governed by the following rules: 表示达到. Master the fixed word order and the required companion words before using it in production.",
+    "usage": "Use this structure with the correct word order and its required companion words.",
+    "avoidWhen": "Do not use this structure in the wrong position or without the words it requires.",
+    "examples": [
+      {
+        "hanzi": "他有三个儿子。",
+        "pinyin": "Tā yǒu sān ge érzi.",
+        "zhuyin": "ㄊㄚ ㄧㄡˇ ㄙㄢ ㄍㄜ˙ ㄜˊㄦㄗ˙.",
+        "translation": "He has three sons.",
+        "translation_en": "He has three sons.",
+        "translation_id": "Dia punya tiga anak laki-laki.",
+        "audio": "grammar:g-h2-biaoshidadao:ex0",
+        "text": "他有三个儿子。",
+        "romanization": "Tā yǒu sān ge érzi."
+      },
+      {
+        "hanzi": "我有一个哥哥。",
+        "pinyin": "Wǒ yǒu yí ge gēge.",
+        "zhuyin": "ㄨㄛˇ ㄧㄡˇ ㄧˊ ㄍㄜ˙ ㄍㄜㄍㄜ˙.",
+        "translation": "I have an older brother.",
+        "translation_en": "I have an older brother.",
+        "translation_id": "Saya punya seorang kakak laki-laki.",
+        "audio": "grammar:g-h2-biaoshidadao:ex1",
+        "text": "我有一个哥哥。",
+        "romanization": "Wǒ yǒu yí ge gēge."
+      },
+      {
+        "hanzi": "我没有钱。",
+        "pinyin": "Wǒ méiyǒu qián.",
+        "zhuyin": "ㄨㄛˇ ㄇㄟˊㄧㄡˇ ㄑㄧㄢˊ.",
+        "translation": "I don't have money.",
+        "translation_en": "I don't have money.",
+        "translation_id": "Saya tidak punya uang.",
+        "audio": "grammar:g-h2-biaoshidadao:ex2",
+        "text": "我没有钱。",
+        "romanization": "Wǒ méiyǒu qián."
+      }
+    ],
+    "negativeExamples": [],
+    "commonMistakes": [],
+    "dependsOn": [],
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "grammar:g-h2-biaoshidadao",
+    "language": "zh",
+    "level": 2,
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "g-h2-chusuodongcizhaoshul",
+    "title": "存现句2: 处所+动词+着(+数量短语)+名词",
+    "pattern": "处所+动词+着(+数量短语)+名词",
+    "hsk": 2,
+    "difficulty": 2,
+    "simpleExplanation": "This special sentence structure is 处所+动词+着(+数量短语)+名词.",
+    "technicalExplanation": "In detail, this structure is governed by the following rules: 处所+动词+着(+数量短语)+名词. Master the fixed word order and the required companion words before using it in production.",
+    "usage": "Use this structure with the correct word order and its required companion words.",
+    "avoidWhen": "Do not use this structure in the wrong position or without the words it requires.",
+    "examples": [
+      {
+        "hanzi": "我想去，但是没时间。",
+        "pinyin": "Wǒ xiǎng qù, dànshì méi shíjiān.",
+        "zhuyin": "ㄨㄛˇ ㄒㄧㄤˇ ㄑㄩˋ, ㄉㄢˋㄕˋ ㄇㄟˊ ㄕˊㄐㄧㄢ.",
+        "translation": "I want to go, but I have no time.",
+        "translation_en": "I want to go, but I have no time.",
+        "translation_id": "Saya ingin pergi, tapi tidak punya waktu.",
+        "audio": "grammar:g-h2-chusuodongcizhaoshul:ex0",
+        "text": "我想去，但是没时间。",
+        "romanization": "Wǒ xiǎng qù, dànshì méi shíjiān."
+      }
+    ],
+    "negativeExamples": [],
+    "commonMistakes": [],
+    "dependsOn": [],
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "grammar:g-h2-chusuodongcizhaoshul",
+    "language": "zh",
+    "level": 2,
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "g-h2-qiangdiaoshijiandidi",
+    "title": "“是……的”句1: 强调时间、地点、方式、动作者",
+    "pattern": "强调时间、地点、方式、动作者",
+    "hsk": 2,
+    "difficulty": 2,
+    "simpleExplanation": "This special sentence structure is 强调时间、地点、方式、动作者.",
+    "technicalExplanation": "In detail, this structure is governed by the following rules: 强调时间、地点、方式、动作者. Master the fixed word order and the required companion words before using it in production.",
+    "usage": "Use this structure with the correct word order and its required companion words.",
+    "avoidWhen": "Do not use this structure in the wrong position or without the words it requires.",
+    "examples": [
+      {
+        "hanzi": "我想去，但是没时间。",
+        "pinyin": "Wǒ xiǎng qù, dànshì méi shíjiān.",
+        "zhuyin": "ㄨㄛˇ ㄒㄧㄤˇ ㄑㄩˋ, ㄉㄢˋㄕˋ ㄇㄟˊ ㄕˊㄐㄧㄢ.",
+        "translation": "I want to go, but I have no time.",
+        "translation_en": "I want to go, but I have no time.",
+        "translation_id": "Saya ingin pergi, tapi tidak punya waktu.",
+        "audio": "grammar:g-h2-qiangdiaoshijiandidi:ex0",
+        "text": "我想去，但是没时间。",
+        "romanization": "Wǒ xiǎng qù, dànshì méi shíjiān."
+      }
+    ],
+    "negativeExamples": [],
+    "commonMistakes": [],
+    "dependsOn": [],
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "grammar:g-h2-qiangdiaoshijiandidi",
+    "language": "zh",
+    "level": 2,
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "g-h2-biaoshilingzhuyuqing",
+    "title": "兼语句1: 表使令：主语+请/叫/让……+宾语1+动词+宾语2",
+    "pattern": "表使令：主语+请/叫/让……+宾语1+动词+宾语2",
+    "hsk": 2,
+    "difficulty": 2,
+    "simpleExplanation": "This special sentence structure is 表使令：主语+请/叫/让……+宾语1+动词+宾语2.",
+    "technicalExplanation": "In detail, this structure is governed by the following rules: 表使令：主语+请/叫/让……+宾语1+动词+宾语2. Master the fixed word order and the required companion words before using it in production.",
+    "usage": "Use this structure with the correct word order and its required companion words.",
+    "avoidWhen": "Do not use this structure in the wrong position or without the words it requires.",
+    "examples": [
+      {
+        "hanzi": "我想去，但是没时间。",
+        "pinyin": "Wǒ xiǎng qù, dànshì méi shíjiān.",
+        "zhuyin": "ㄨㄛˇ ㄒㄧㄤˇ ㄑㄩˋ, ㄉㄢˋㄕˋ ㄇㄟˊ ㄕˊㄐㄧㄢ.",
+        "translation": "I want to go, but I have no time.",
+        "translation_en": "I want to go, but I have no time.",
+        "translation_id": "Saya ingin pergi, tapi tidak punya waktu.",
+        "audio": "grammar:g-h2-biaoshilingzhuyuqing:ex0",
+        "text": "我想去，但是没时间。",
+        "romanization": "Wǒ xiǎng qù, dànshì méi shíjiān."
+      }
+    ],
+    "negativeExamples": [],
+    "commonMistakes": [],
+    "dependsOn": [],
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "grammar:g-h2-biaoshilingzhuyuqing",
+    "language": "zh",
+    "level": 2,
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "g-h2-zhuyudongcigeibinyub",
+    "title": "双宾语句2: 主语+动词+给+宾语1+宾语2",
+    "pattern": "主语+动词+给+宾语1+宾语2",
+    "hsk": 2,
+    "difficulty": 2,
+    "simpleExplanation": "This special sentence structure is 主语+动词+给+宾语1+宾语2.",
+    "technicalExplanation": "In detail, this structure is governed by the following rules: 主语+动词+给+宾语1+宾语2. Master the fixed word order and the required companion words before using it in production.",
+    "usage": "Use this structure with the correct word order and its required companion words.",
+    "avoidWhen": "Do not use this structure in the wrong position or without the words it requires.",
+    "examples": [
+      {
+        "hanzi": "我想去，但是没时间。",
+        "pinyin": "Wǒ xiǎng qù, dànshì méi shíjiān.",
+        "zhuyin": "ㄨㄛˇ ㄒㄧㄤˇ ㄑㄩˋ, ㄉㄢˋㄕˋ ㄇㄟˊ ㄕˊㄐㄧㄢ.",
+        "translation": "I want to go, but I have no time.",
+        "translation_en": "I want to go, but I have no time.",
+        "translation_id": "Saya ingin pergi, tapi tidak punya waktu.",
+        "audio": "grammar:g-h2-zhuyudongcigeibinyub:ex0",
+        "text": "我想去，但是没时间。",
+        "romanization": "Wǒ xiǎng qù, dànshì méi shíjiān."
+      }
+    ],
+    "negativeExamples": [],
+    "commonMistakes": [],
+    "dependsOn": [],
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "grammar:g-h2-zhuyudongcigeibinyub",
+    "language": "zh",
+    "level": 2,
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "g-h2-shihaishi",
+    "title": "选择复句: （是）……，还是……",
+    "pattern": "（是）……，还是……",
+    "hsk": 2,
+    "difficulty": 2,
+    "simpleExplanation": "This complex sentence joins clauses with the pattern （是）……，还是……, expressing 选择复句.",
+    "technicalExplanation": "In detail, this structure is governed by the following rules: （是）……，还是……. Master the fixed word order and the required companion words before using it in production.",
+    "usage": "Place the two parts in the fixed order; the conjunction in the second clause is mandatory.",
+    "avoidWhen": "Do not reverse the two clauses of the pattern.",
+    "examples": [
+      {
+        "hanzi": "我想去，但是没时间。",
+        "pinyin": "Wǒ xiǎng qù, dànshì méi shíjiān.",
+        "zhuyin": "ㄨㄛˇ ㄒㄧㄤˇ ㄑㄩˋ, ㄉㄢˋㄕˋ ㄇㄟˊ ㄕˊㄐㄧㄢ.",
+        "translation": "I want to go, but I have no time.",
+        "translation_en": "I want to go, but I have no time.",
+        "translation_id": "Saya ingin pergi, tapi tidak punya waktu.",
+        "audio": "grammar:g-h2-shihaishi:ex0",
+        "text": "我想去，但是没时间。",
+        "romanization": "Wǒ xiǎng qù, dànshì méi shíjiān."
+      }
+    ],
+    "negativeExamples": [],
+    "commonMistakes": [],
+    "dependsOn": [],
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "grammar:g-h2-shihaishi",
+    "language": "zh",
+    "level": 2,
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "g-h2-suirandanshi",
+    "title": "转折复句: 虽然……，但是……",
+    "pattern": "虽然……，但是……",
+    "hsk": 2,
+    "difficulty": 2,
+    "simpleExplanation": "This complex sentence joins clauses with the pattern 虽然……，但是……, expressing 转折复句.",
+    "technicalExplanation": "In detail, this structure is governed by the following rules: 虽然……，但是……. Master the fixed word order and the required companion words before using it in production.",
+    "usage": "Place the two parts in the fixed order; the conjunction in the second clause is mandatory.",
+    "avoidWhen": "Do not reverse the two clauses of the pattern.",
+    "examples": [
+      {
+        "hanzi": "我想去，但是没时间。",
+        "pinyin": "Wǒ xiǎng qù, dànshì méi shíjiān.",
+        "zhuyin": "ㄨㄛˇ ㄒㄧㄤˇ ㄑㄩˋ, ㄉㄢˋㄕˋ ㄇㄟˊ ㄕˊㄐㄧㄢ.",
+        "translation": "I want to go, but I have no time.",
+        "translation_en": "I want to go, but I have no time.",
+        "translation_id": "Saya ingin pergi, tapi tidak punya waktu.",
+        "audio": "grammar:g-h2-suirandanshi:ex0",
+        "text": "我想去，但是没时间。",
+        "romanization": "Wǒ xiǎng qù, dànshì méi shíjiān."
+      }
+    ],
+    "negativeExamples": [],
+    "commonMistakes": [],
+    "dependsOn": [],
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "grammar:g-h2-suirandanshi",
+    "language": "zh",
+    "level": 2,
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "g-h2-yijiu",
+    "title": "紧缩复句: 一……就……",
+    "pattern": "一……就……",
+    "hsk": 2,
+    "difficulty": 2,
+    "simpleExplanation": "This complex sentence joins clauses with the pattern 一……就……, expressing 紧缩复句.",
+    "technicalExplanation": "In detail, this structure is governed by the following rules: 一……就……. Master the fixed word order and the required companion words before using it in production.",
+    "usage": "Place the two parts in the fixed order; the conjunction in the second clause is mandatory.",
+    "avoidWhen": "Do not reverse the two clauses of the pattern.",
+    "examples": [
+      {
+        "hanzi": "我想去，但是没时间。",
+        "pinyin": "Wǒ xiǎng qù, dànshì méi shíjiān.",
+        "zhuyin": "ㄨㄛˇ ㄒㄧㄤˇ ㄑㄩˋ, ㄉㄢˋㄕˋ ㄇㄟˊ ㄕˊㄐㄧㄢ.",
+        "translation": "I want to go, but I have no time.",
+        "translation_en": "I want to go, but I have no time.",
+        "translation_id": "Saya ingin pergi, tapi tidak punya waktu.",
+        "audio": "grammar:g-h2-yijiu:ex0",
+        "text": "我想去，但是没时间。",
+        "romanization": "Wǒ xiǎng qù, dànshì méi shíjiān."
+      }
+    ],
+    "negativeExamples": [],
+    "commonMistakes": [],
+    "dependsOn": [],
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "grammar:g-h2-yijiu",
+    "language": "zh",
+    "level": 2,
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "g-h2-dongcizhebiaoshizhua",
+    "title": "持续态: 动词+着：（1）表示状态的持续",
+    "pattern": "动词+着：（1）表示状态的持续",
+    "hsk": 2,
+    "difficulty": 2,
+    "simpleExplanation": "This aspect expresses 持续态: 动词+着：（1）表示状态的持续.",
+    "technicalExplanation": "In detail, this structure is governed by the following rules: 动词+着：（1）表示状态的持续. Master the fixed word order and the required companion words before using it in production.",
+    "usage": "Use the aspect marker in the right position to show ongoing, completed or experienced action.",
+    "avoidWhen": "Do not combine conflicting aspect markers in one predicate.",
+    "examples": [
+      {
+        "hanzi": "门开着。",
+        "pinyin": "Mén kāi zhe.",
+        "zhuyin": "ㄇㄣˊ ㄎㄞ ㄓㄜ˙.",
+        "translation": "The door is open.",
+        "translation_en": "The door is open.",
+        "translation_id": "Pintunya terbuka.",
+        "audio": "grammar:g-h2-dongcizhebiaoshizhua:ex0",
+        "text": "门开着。",
+        "romanization": "Mén kāi zhe."
+      }
+    ],
+    "negativeExamples": [],
+    "commonMistakes": [],
+    "dependsOn": [],
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "grammar:g-h2-dongcizhebiaoshizhua",
+    "language": "zh",
+    "level": 2,
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "g-h2-biaoshidongzuodechix",
+    "title": "持续态: （2）表示动作的持续",
+    "pattern": "（2）表示动作的持续",
+    "hsk": 2,
+    "difficulty": 2,
+    "simpleExplanation": "This aspect expresses 持续态: （2）表示动作的持续.",
+    "technicalExplanation": "In detail, this structure is governed by the following rules: （2）表示动作的持续. Master the fixed word order and the required companion words before using it in production.",
+    "usage": "Use the aspect marker in the right position to show ongoing, completed or experienced action.",
+    "avoidWhen": "Do not combine conflicting aspect markers in one predicate.",
+    "examples": [
+      {
+        "hanzi": "门开着。",
+        "pinyin": "Mén kāi zhe.",
+        "zhuyin": "ㄇㄣˊ ㄎㄞ ㄓㄜ˙.",
+        "translation": "The door is open.",
+        "translation_en": "The door is open.",
+        "translation_id": "Pintunya terbuka.",
+        "audio": "grammar:g-h2-biaoshidongzuodechix:ex0",
+        "text": "门开着。",
+        "romanization": "Mén kāi zhe."
+      }
+    ],
+    "negativeExamples": [],
+    "commonMistakes": [],
+    "dependsOn": [],
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "grammar:g-h2-biaoshidongzuodechix",
+    "language": "zh",
+    "level": 2,
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "g-h2-yongdongtaizhuciguob",
+    "title": "经历态: 用动态助词“过”表示",
+    "pattern": "用动态助词“过”表示",
+    "hsk": 2,
+    "difficulty": 2,
+    "simpleExplanation": "This aspect expresses 经历态: 用动态助词“过”表示.",
+    "technicalExplanation": "In detail, this structure is governed by the following rules: 用动态助词“过”表示. Master the fixed word order and the required companion words before using it in production.",
+    "usage": "Use the aspect marker in the right position to show ongoing, completed or experienced action.",
+    "avoidWhen": "Do not combine conflicting aspect markers in one predicate.",
+    "examples": [
+      {
+        "hanzi": "我去过中国。",
+        "pinyin": "Wǒ qù guo Zhōngguó.",
+        "zhuyin": "ㄨㄛˇ ㄑㄩˋ ㄍㄨㄛ˙ ㄓㄨㄥㄍㄨㄛˊ.",
+        "translation": "I have been to China.",
+        "translation_en": "I have been to China.",
+        "translation_id": "Saya pernah ke China.",
+        "audio": "grammar:g-h2-yongdongtaizhuciguob:ex0",
+        "text": "我去过中国。",
+        "romanization": "Wǒ qù guo Zhōngguó."
+      }
+    ],
+    "negativeExamples": [],
+    "commonMistakes": [],
+    "dependsOn": [],
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "grammar:g-h2-yongdongtaizhuciguob",
+    "language": "zh",
+    "level": 2,
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "g-h2-xushubiaoshifashucil",
+    "title": "序数表示法2：数词+量词",
+    "pattern": "序数表示法2：数词+量词",
+    "hsk": 2,
+    "difficulty": 2,
+    "simpleExplanation": "This expression method concerns how numbers are expressed: 序数表示法2：数词+量词.",
+    "technicalExplanation": "In detail, this structure is governed by the following rules: 序数表示法2：数词+量词. Master the fixed word order and the required companion words before using it in production.",
+    "usage": "Use this structure with the correct word order and its required companion words.",
+    "avoidWhen": "Do not use this structure in the wrong position or without the words it requires.",
+    "examples": [
+      {
+        "hanzi": "我想去，但是没时间。",
+        "pinyin": "Wǒ xiǎng qù, dànshì méi shíjiān.",
+        "zhuyin": "ㄨㄛˇ ㄒㄧㄤˇ ㄑㄩˋ, ㄉㄢˋㄕˋ ㄇㄟˊ ㄕˊㄐㄧㄢ.",
+        "translation": "I want to go, but I have no time.",
+        "translation_en": "I want to go, but I have no time.",
+        "translation_id": "Saya ingin pergi, tapi tidak punya waktu.",
+        "audio": "grammar:g-h2-xushubiaoshifashucil:ex0",
+        "text": "我想去，但是没时间。",
+        "romanization": "Wǒ xiǎng qù, dànshì méi shíjiān."
+      }
+    ],
+    "negativeExamples": [],
+    "commonMistakes": [],
+    "dependsOn": [],
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "grammar:g-h2-xushubiaoshifashucil",
+    "language": "zh",
+    "level": 2,
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "g-h2-gaishubiaodafayongji",
+    "title": "概数表达法1：（1）用“几”表示概数",
+    "pattern": "概数表达法1：（1）用“几”表示概数",
+    "hsk": 2,
+    "difficulty": 2,
+    "simpleExplanation": "This expression method concerns how numbers are expressed: 概数表达法1：（1）用“几”表示概数.",
+    "technicalExplanation": "In detail, this structure is governed by the following rules: 概数表达法1：（1）用“几”表示概数. Master the fixed word order and the required companion words before using it in production.",
+    "usage": "Use this structure with the correct word order and its required companion words.",
+    "avoidWhen": "Do not use this structure in the wrong position or without the words it requires.",
+    "examples": [
+      {
+        "hanzi": "我想去，但是没时间。",
+        "pinyin": "Wǒ xiǎng qù, dànshì méi shíjiān.",
+        "zhuyin": "ㄨㄛˇ ㄒㄧㄤˇ ㄑㄩˋ, ㄉㄢˋㄕˋ ㄇㄟˊ ㄕˊㄐㄧㄢ.",
+        "translation": "I want to go, but I have no time.",
+        "translation_en": "I want to go, but I have no time.",
+        "translation_id": "Saya ingin pergi, tapi tidak punya waktu.",
+        "audio": "grammar:g-h2-gaishubiaodafayongji:ex0",
+        "text": "我想去，但是没时间。",
+        "romanization": "Wǒ xiǎng qù, dànshì méi shíjiān."
+      }
+    ],
+    "negativeExamples": [],
+    "commonMistakes": [],
+    "dependsOn": [],
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "grammar:g-h2-gaishubiaodafayongji",
+    "language": "zh",
+    "level": 2,
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "g-h2-shuciduoliangci",
+    "title": "（2）数词+多+量词",
+    "pattern": "（2）数词+多+量词",
+    "hsk": 2,
+    "difficulty": 2,
+    "simpleExplanation": "This expression method concerns how numbers are expressed: （2）数词+多+量词.",
+    "technicalExplanation": "In detail, this structure is governed by the following rules: （2）数词+多+量词. Master the fixed word order and the required companion words before using it in production.",
+    "usage": "Use this structure with the correct word order and its required companion words.",
+    "avoidWhen": "Do not use this structure in the wrong position or without the words it requires.",
+    "examples": [
+      {
+        "hanzi": "我想去，但是没时间。",
+        "pinyin": "Wǒ xiǎng qù, dànshì méi shíjiān.",
+        "zhuyin": "ㄨㄛˇ ㄒㄧㄤˇ ㄑㄩˋ, ㄉㄢˋㄕˋ ㄇㄟˊ ㄕˊㄐㄧㄢ.",
+        "translation": "I want to go, but I have no time.",
+        "translation_en": "I want to go, but I have no time.",
+        "translation_id": "Saya ingin pergi, tapi tidak punya waktu.",
+        "audio": "grammar:g-h2-shuciduoliangci:ex0",
+        "text": "我想去，但是没时间。",
+        "romanization": "Wǒ xiǎng qù, dànshì méi shíjiān."
+      }
+    ],
+    "negativeExamples": [],
+    "commonMistakes": [],
+    "dependsOn": [],
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "grammar:g-h2-shuciduoliangci",
+    "language": "zh",
+    "level": 2,
+    "tags": [
+      "approximation"
+    ]
+  },
+  {
+    "id": "g-h2-shuciliangciduo",
+    "title": "（3）数词+量词+多",
+    "pattern": "（3）数词+量词+多",
+    "hsk": 2,
+    "difficulty": 2,
+    "simpleExplanation": "This expression method concerns how numbers are expressed: （3）数词+量词+多.",
+    "technicalExplanation": "In detail, this structure is governed by the following rules: （3）数词+量词+多. Master the fixed word order and the required companion words before using it in production.",
+    "usage": "Use this structure with the correct word order and its required companion words.",
+    "avoidWhen": "Do not use this structure in the wrong position or without the words it requires.",
+    "examples": [
+      {
+        "hanzi": "我想去，但是没时间。",
+        "pinyin": "Wǒ xiǎng qù, dànshì méi shíjiān.",
+        "zhuyin": "ㄨㄛˇ ㄒㄧㄤˇ ㄑㄩˋ, ㄉㄢˋㄕˋ ㄇㄟˊ ㄕˊㄐㄧㄢ.",
+        "translation": "I want to go, but I have no time.",
+        "translation_en": "I want to go, but I have no time.",
+        "translation_id": "Saya ingin pergi, tapi tidak punya waktu.",
+        "audio": "grammar:g-h2-shuciliangciduo:ex0",
+        "text": "我想去，但是没时间。",
+        "romanization": "Wǒ xiǎng qù, dànshì méi shíjiān."
+      }
+    ],
+    "negativeExamples": [],
+    "commonMistakes": [],
+    "dependsOn": [],
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "grammar:g-h2-shuciliangciduo",
+    "language": "zh",
+    "level": 2,
+    "tags": [
+      "approximation"
+    ]
+  }
+]
