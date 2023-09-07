@@ -1,0 +1,181 @@
+{
+  "hsk": {
+    "type": "hsk",
+    "name": "HSK (Hanyu Shuiping Kaoshi)",
+    "nameCN": "汉语水平考试",
+    "region": "China",
+    "script": "Simplified Chinese",
+    "language": "zh",
+    "levels": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7"
+    ],
+    "wordCountPerLevel": {
+      "1": 300,
+      "2": 600,
+      "3": 1200,
+      "4": 2500,
+      "5": 5000,
+      "6": 7500,
+      "7": 10000
+    },
+    "focus": [
+      "vocabulary",
+      "grammar",
+      "characters",
+      "listening",
+      "reading"
+    ],
+    "description": "Official Chinese proficiency test administered by Hanban",
+    "website": "http://www.chinesetest.cn",
+    "name_en": "HSK (Hanyu Shuiping Kaoshi)",
+    "name_de": "HSK (Chinesisch-Sprachprüfung)",
+    "name_ja": "HSK 漢語水平考試"
+  },
+  "goethe": {
+    "type": "goethe",
+    "name": "Goethe-Zertifikat (Goethe-Institut)",
+    "nameCN": "歌德学院德语证书",
+    "region": "Germany",
+    "script": "Latin",
+    "language": "de",
+    "levels": [
+      "A1",
+      "A2",
+      "B1",
+      "B2",
+      "C1",
+      "C2"
+    ],
+    "wordCountPerLevel": {
+      "A1": 650,
+      "A2": 1300,
+      "B1": 2400,
+      "B2": 5000,
+      "C1": 8000,
+      "C2": 12000
+    },
+    "focus": [
+      "vocabulary",
+      "grammar",
+      "communication",
+      "culture"
+    ],
+    "description": "Official German language certification by Goethe-Institut",
+    "website": "https://www.goethe.de/en/spr/kup/prf.html",
+    "name_en": "Goethe-Zertifikat (Goethe-Institut)",
+    "name_de": "Goethe-Zertifikat",
+    "name_ja": "ゲーテ・ツェアティフィカート"
+  },
+  "jlpt": {
+    "type": "jlpt",
+    "name": "JLPT (Japanese Language Proficiency Test)",
+    "nameCN": "日本语能力测试",
+    "region": "Japan",
+    "script": "Kanji/Kana",
+    "language": "ja",
+    "levels": [
+      "N5",
+      "N4",
+      "N3",
+      "N2",
+      "N1"
+    ],
+    "wordCountPerLevel": {
+      "N5": 800,
+      "N4": 1500,
+      "N3": 3000,
+      "N2": 6000,
+      "N1": 10000
+    },
+    "focus": [
+      "vocabulary",
+      "grammar",
+      "kanji",
+      "listening",
+      "reading"
+    ],
+    "description": "Official Japanese proficiency test",
+    "website": "https://www.jlpt.jp/e/",
+    "name_en": "JLPT (Japanese Language Proficiency Test)",
+    "name_de": "JLPT (Japanisch-Sprachprüfung)",
+    "name_ja": "日本語能力試験 (JLPT)"
+  },
+  "toefl": {
+    "type": "toefl",
+    "name": "TOEFL iBT (Test of English as a Foreign Language)",
+    "nameCN": "托福",
+    "region": "International",
+    "script": "Latin",
+    "language": "en",
+    "levels": [
+      "0-30",
+      "31-60",
+      "61-80",
+      "81-100",
+      "101-120"
+    ],
+    "wordCountPerLevel": {
+      "0-30": 2000,
+      "31-60": 4000,
+      "61-80": 6000,
+      "81-100": 8000,
+      "101-120": 10000
+    },
+    "focus": [
+      "academic",
+      "vocabulary",
+      "listening",
+      "reading",
+      "writing",
+      "speaking"
+    ],
+    "description": "Test of English as a Foreign Language",
+    "website": "https://www.ets.org/toefl",
+    "name_en": "TOEFL iBT (Test of English as a Foreign Language)",
+    "name_de": "TOEFL iBT",
+    "name_ja": "TOEFL iBT"
+  },
+  "tocfl": {
+    "type": "tocfl",
+    "name": "TOCFL (Test of Chinese as a Foreign Language)",
+    "nameCN": "華語文能力測驗",
+    "region": "Taiwan",
+    "script": "Traditional Chinese",
+    "language": "zh",
+    "levels": [
+      "Novice 1",
+      "Novice 2",
+      "Level 1",
+      "Level 2",
+      "Level 3",
+      "Level 4",
+      "Level 5"
+    ],
+    "wordCountPerLevel": {
+      "Novice 1": 250,
+      "Novice 2": 500,
+      "Level 1": 1000,
+      "Level 2": 2500,
+      "Level 3": 5000,
+      "Level 4": 8000,
+      "Level 5": 10000
+    },
+    "focus": [
+      "vocabulary",
+      "grammar",
+      "listening",
+      "reading"
+    ],
+    "description": "Test of Chinese as a Foreign Language (Taiwan)",
+    "website": "https://tocfl.edu.tw",
+    "name_en": "TOCFL (Test of Chinese as a Foreign Language)",
+    "name_de": "TOCFL (Chinesisch-Sprachprüfung)",
+    "name_ja": "TOCFL 華語文能力測驗"
+  }
+}
