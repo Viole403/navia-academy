@@ -1,0 +1,560 @@
+[
+  {
+    "id": "r-chunjie",
+    "title": "春节 — Chinese New Year",
+    "type": "culture",
+    "hsk": 2,
+    "wordCount": 74,
+    "summary": "Cultural text about the most important festival in China: the Spring Festival.",
+    "paragraphs": [
+      {
+        "hanzi": "春节是中国最重要的节日。",
+        "pinyin": "chūnjié shì zhōngguó zuì zhòngyào de jiérì.",
+        "zhuyin": "ㄔㄨㄣㄐㄧㄝˊ ㄕˋ ㄓㄨㄥㄍㄨㄛˊ ㄗㄨㄟˋ ㄓㄨㄥˋㄧㄠˋ ㄉㄜ˙ ㄐㄧㄝˊㄖˋ.",
+        "translation": "The Spring Festival is the most important holiday in China.",
+        "text": "春节是中国最重要的节日。",
+        "romanization": "chūnjié shì zhōngguó zuì zhòngyào de jiérì.",
+        "translation_en": "The Spring Festival is the most important holiday in China.",
+        "translation_id": "Festival Musim Semi adalah hari libur terpenting di Tiongkok."
+      },
+      {
+        "hanzi": "春节的时候，人们回家看爸爸妈妈。",
+        "pinyin": "chūnjié de shíhou, rénmen huí jiā kàn bàba māma.",
+        "zhuyin": "ㄔㄨㄣㄐㄧㄝˊ ㄉㄜ˙ ㄕˊㄏㄡ˙, ㄖㄣˊㄇㄣ˙ ㄏㄨㄟˊ ㄐㄧㄚ ㄎㄢˋ ㄅㄚˋㄅㄚ˙ ㄇㄚㄇㄚ˙.",
+        "translation": "During the New Year, people go home to see their parents.",
+        "text": "春节的时候，人们回家看爸爸妈妈。",
+        "romanization": "chūnjié de shíhou, rénmen huí jiā kàn bàba māma.",
+        "translation_en": "During the New Year, people go home to see their parents.",
+        "translation_id": "Saat Tahun Baru, orang-orang pulang ke rumah untuk menemui orang tua mereka."
+      },
+      {
+        "hanzi": "大家一起吃饭，孩子们有红包。",
+        "pinyin": "dàjiā yìqǐ chīfàn, háizimen yǒu hóngbāo.",
+        "zhuyin": "ㄉㄚˋㄐㄧㄚ ㄧˋㄑㄧˇ ㄔㄈㄢˋ, ㄏㄞˊㄗ˙ㄇㄣ˙ ㄧㄡˇ ㄏㄨㄥˊㄅㄠ.",
+        "translation": "Everyone eats together and the children receive red envelopes.",
+        "text": "大家一起吃饭，孩子们有红包。",
+        "romanization": "dàjiā yìqǐ chīfàn, háizimen yǒu hóngbāo.",
+        "translation_en": "Everyone eats together and the children receive red envelopes.",
+        "translation_id": "Semua makan bersama dan anak-anak menerima angpao."
+      },
+      {
+        "hanzi": "人们说：新年快乐！",
+        "pinyin": "rénmen shuō: xīnnián kuàilè!",
+        "zhuyin": "ㄖㄣˊㄇㄣ˙ ㄕㄨㄛ: ㄒㄧㄣㄋㄧㄢˊ ㄎㄨㄞˋㄌㄜˋ!",
+        "translation": "People say: Happy New Year!",
+        "text": "人们说：新年快乐！",
+        "romanization": "rénmen shuō: xīnnián kuàilè!",
+        "translation_en": "People say: Happy New Year!",
+        "translation_id": "Orang-orang mengucapkan: Selamat Tahun Baru!"
+      }
+    ],
+    "questions": [
+      {
+        "id": "rq-4",
+        "type": "multiple-choice",
+        "prompt": "What do children receive at Chinese New Year?",
+        "options": [
+          {
+            "id": "a",
+            "label": "Red envelopes"
+          },
+          {
+            "id": "b",
+            "label": "Books"
+          },
+          {
+            "id": "c",
+            "label": "Tea"
+          },
+          {
+            "id": "d",
+            "label": "Flowers"
+          }
+        ],
+        "correct": "a",
+        "skill": "reading",
+        "hsk": 2
+      }
+    ],
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "reading:r-chunjie",
+    "language": "zh",
+    "level": 2,
+    "summary_en": "Cultural text about the most important festival in China: the Spring Festival.",
+    "summary_id": "Teks budaya tentang festival terpenting di Tiongkok: Festival Musim Semi.",
+    "title_en": "春节 — Chinese New Year",
+    "title_id": "春节 — Tahun Baru Imlek"
+  },
+  {
+    "id": "r-xuexi-hanyu",
+    "title": "为什么学汉语 — Why study Chinese",
+    "type": "news",
+    "hsk": 2,
+    "wordCount": 70,
+    "summary": "Adapted text about the reasons to learn Chinese today.",
+    "paragraphs": [
+      {
+        "hanzi": "现在很多人学习汉语。",
+        "pinyin": "xiànzài hěn duō rén xuéxí hànyǔ.",
+        "zhuyin": "ㄒㄧㄢˋㄗㄞˋ ㄏㄣˇ ㄉㄨㄛ ㄖㄣˊ ㄒㄩㄝˊㄒㄧˊ ㄏㄢˋㄩˇ.",
+        "translation": "Nowadays many people study Chinese.",
+        "text": "现在很多人学习汉语。",
+        "romanization": "xiànzài hěn duō rén xuéxí hànyǔ.",
+        "translation_en": "Nowadays many people study Chinese.",
+        "translation_id": "Sekarang banyak orang belajar bahasa Mandarin."
+      },
+      {
+        "hanzi": "有的人因为工作，有的人因为喜欢中国文化。",
+        "pinyin": "yǒude rén yīnwèi gōngzuò, yǒude rén yīnwèi xǐhuan zhōngguó wénhuà.",
+        "zhuyin": "ㄧㄡˇㄉㄜ˙ ㄖㄣˊ ㄧㄣㄨㄟˋ ㄍㄨㄥㄗㄨㄛˋ, ㄧㄡˇㄉㄜ˙ ㄖㄣˊ ㄧㄣㄨㄟˋ ㄒㄧˇㄏㄨㄢ˙ ㄓㄨㄥㄍㄨㄛˊ ㄨㄣˊㄏㄨㄚˋ.",
+        "translation": "Some for work, others because they like Chinese culture.",
+        "text": "有的人因为工作，有的人因为喜欢中国文化。",
+        "romanization": "yǒude rén yīnwèi gōngzuò, yǒude rén yīnwèi xǐhuan zhōngguó wénhuà.",
+        "translation_en": "Some for work, others because they like Chinese culture.",
+        "translation_id": "Ada yang untuk pekerjaan, ada juga karena suka budaya Tiongkok."
+      },
+      {
+        "hanzi": "汉语不容易，可是很有意思。",
+        "pinyin": "hànyǔ bù róngyì, kěshì hěn yǒuyìsi.",
+        "zhuyin": "ㄏㄢˋㄩˇ ㄅㄨˋ ㄖㄨㄥˊㄧˋ, ㄎㄜˇㄕˋ ㄏㄣˇ ㄧㄡˇㄧˋㄙ˙.",
+        "translation": "Chinese isn't easy, but it's very interesting.",
+        "text": "汉语不容易，可是很有意思。",
+        "romanization": "hànyǔ bù róngyì, kěshì hěn yǒuyìsi.",
+        "translation_en": "Chinese isn't easy, but it's very interesting.",
+        "translation_id": "Bahasa Mandarin tidak mudah, tapi sangat menarik."
+      },
+      {
+        "hanzi": "每天学习一点儿，就会越来越好。",
+        "pinyin": "měitiān xuéxí yìdiǎnr, jiù huì yuèláiyuè hǎo.",
+        "zhuyin": "ㄇㄟˇㄊㄧㄢ ㄒㄩㄝˊㄒㄧˊ ㄧˋㄉㄧㄢˇㄦ˙, ㄐㄧㄡˋ ㄏㄨㄟˋ ㄩㄝˋㄌㄞˊㄩㄝˋ ㄏㄠˇ.",
+        "translation": "Studying a little bit every day, you get better and better.",
+        "text": "每天学习一点儿，就会越来越好。",
+        "romanization": "měitiān xuéxí yìdiǎnr, jiù huì yuèláiyuè hǎo.",
+        "translation_en": "Studying a little bit every day, you get better and better.",
+        "translation_id": "Belajar sedikit setiap hari, kemampuanmu makin baik."
+      }
+    ],
+    "questions": [
+      {
+        "id": "rq-5",
+        "type": "multiple-choice",
+        "prompt": "According to the text, Chinese is…",
+        "options": [
+          {
+            "id": "a",
+            "label": "difficult but interesting"
+          },
+          {
+            "id": "b",
+            "label": "easy and boring"
+          },
+          {
+            "id": "c",
+            "label": "impossible"
+          },
+          {
+            "id": "d",
+            "label": "only for work"
+          }
+        ],
+        "correct": "a",
+        "skill": "reading",
+        "hsk": 2
+      }
+    ],
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "reading:r-xuexi-hanyu",
+    "language": "zh",
+    "level": 2,
+    "summary_en": "Adapted text about the reasons to learn Chinese today.",
+    "summary_id": "Teks adaptasi tentang alasan belajar bahasa Mandarin masa kini.",
+    "title_en": "为什么学汉语 — Why study Chinese",
+    "title_id": "为什么学汉语 — Mengapa Belajar Mandarin"
+  },
+  {
+    "id": "r-hsk-hsk2-keneng",
+    "title": "可能 — might (happen); possible; probable; possibility; probability; maybe; perhaps; CL:個|个[ge4]",
+    "title_en": "可能 — might (happen); possible; probable; possibility; probability; maybe; perhaps; CL:個|个[ge4]",
+    "title_id": "可能 — mungkin (terjadi)",
+    "type": "story",
+    "level": 2,
+    "wordCount": 14,
+    "summary": "A short passage about might (happen); possible; probable; possibility; probability; maybe; perhaps; CL:個|个[ge4].",
+    "summary_en": "A short passage about might (happen); possible; probable; possibility; probability; maybe; perhaps; CL:個|个[ge4].",
+    "summary_id": "Bacaan singkat tentang mungkin (terjadi).",
+    "paragraphs": [
+      {
+        "text": "她脸色很差，可能昨晚没有休息好。",
+        "hanzi": "她脸色很差，可能昨晚没有休息好。",
+        "pinyin": "tā liǎn sè hěn chà ， kě néng zuó wǎn méi yǒu xiū xī hǎo 。",
+        "zhuyin": "ㄊㄚ ㄌㄧㄢˇ ㄙㄜˋ ㄏㄣˇ ㄔㄚˋ ， ㄎㄜˇ ㄋㄥˊ ㄗㄨㄛˊ ㄨㄢˇ ㄇㄟˊ ㄧㄡˇ ㄒㄧㄡ ㄒㄧ ㄏㄠˇ 。",
+        "romanization": "Tā liǎnsè hěn chà, kěnéng zuówǎn méiyǒu xiūxi hǎo.",
+        "translation": "Her complexion looks poor; perhaps she did not rest well last night.",
+        "translation_en": "Her complexion looks poor; perhaps she did not rest well last night.",
+        "translation_id": "Wajahnya terlihat pucat; mungkin dia tidak tidur nyenyak tadi malam."
+      }
+    ],
+    "questions": [
+      {
+        "id": "rq-1",
+        "type": "multiple-choice",
+        "prompt": "What is the passage mainly about?",
+        "options": [
+          {
+            "id": "a",
+            "label": "might (happen); possible; probable; possibility; probability; maybe; perhaps; CL:個|个[ge4]"
+          },
+          {
+            "id": "b",
+            "label": "to dance"
+          },
+          {
+            "id": "c",
+            "label": "book; notebook; Japanese-style self-published comic (esp. an erotic one), aka 'dōjinshi'; CL:本[ben3]; edition"
+          },
+          {
+            "id": "d",
+            "label": "surname Zuo"
+          }
+        ],
+        "correct": "a"
+      },
+      {
+        "id": "rq-2",
+        "type": "multiple-choice",
+        "prompt": "Which sentence appears in the passage?",
+        "options": [
+          {
+            "id": "a",
+            "label": "Spring Festival is the most important traditional holiday in China."
+          },
+          {
+            "id": "b",
+            "label": "Chinese culture has a long history."
+          },
+          {
+            "id": "c",
+            "label": "Her complexion looks poor; perhaps she did not rest well last night."
+          }
+        ],
+        "correct": "c"
+      },
+      {
+        "id": "rq-3",
+        "type": "multiple-choice",
+        "prompt": "What does “可能” mean here?",
+        "options": [
+          {
+            "id": "a",
+            "label": "might (happen); possible; probable; possibility; probability; maybe; perhaps; CL:個|个[ge4]"
+          },
+          {
+            "id": "b",
+            "label": "tired"
+          },
+          {
+            "id": "c",
+            "label": "to like; to be fond of; to take pleasure in; to be keen on; interest; hobby; CL:個|个[ge4]"
+          },
+          {
+            "id": "d",
+            "label": "white; fig. reactionary; anti-communist"
+          }
+        ],
+        "correct": "a"
+      }
+    ],
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "reading:r-hsk-hsk2-keneng",
+    "language": "zh",
+    "romanization": [
+      "ta",
+      "lian",
+      "se",
+      "hen",
+      "cha",
+      "，",
+      "ke",
+      "neng",
+      "zuo",
+      "wan",
+      "mei",
+      "you",
+      "xiu",
+      "xi",
+      "hao",
+      "。"
+    ]
+  },
+  {
+    "id": "r-hsk-hsk2-ziji1",
+    "title": "自己 — oneself; one's own",
+    "title_en": "自己 — oneself; one's own",
+    "title_id": "自己 — diri",
+    "type": "story",
+    "level": 2,
+    "wordCount": 37,
+    "summary": "A short passage about oneself; one's own.",
+    "summary_en": "A short passage about oneself; one's own.",
+    "summary_id": "Bacaan singkat tentang diri.",
+    "paragraphs": [
+      {
+        "text": "她在人群中一眼认出了自己的老同学。",
+        "hanzi": "她在人群中一眼认出了自己的老同学。",
+        "pinyin": "tā zài rén qún zhōng yī yǎn rèn chū le zì jǐ de lǎo tóng xué 。",
+        "zhuyin": "ㄊㄚ ㄗㄞˋ ㄖㄣˊ ㄑㄩㄣˊ ㄓㄨㄥ ㄧ ㄧㄢˇ ㄖㄣˋ ㄔㄨ ㄌㄜ˙ ㄗˋ ㄐㄧˇ ㄉㄜ˙ ㄌㄠˇ ㄊㄨㄥˊ ㄒㄩㄝˊ 。",
+        "romanization": "Tā zài rénqún zhōng yì yǎn rèn chū le zìjǐ de lǎo tóngxué.",
+        "translation": "She recognised her old classmate at a glance in the crowd.",
+        "translation_en": "She recognised her old classmate at a glance in the crowd.",
+        "translation_id": "Polisi segera mengevakuasi massa ke tempat aman."
+      },
+      {
+        "text": "他觉得自己的字写得很丑，所以不好意思给别人看。",
+        "hanzi": "他觉得自己的字写得很丑，所以不好意思给别人看。",
+        "pinyin": "tā jué de zì jǐ de zì xiě dé hěn chǒu ， suǒ yǐ bù hǎo yì sī gěi bié rén kàn 。",
+        "zhuyin": "ㄊㄚ ㄐㄩㄝˊ ㄉㄜ˙ ㄗˋ ㄐㄧˇ ㄉㄜ˙ ㄗˋ ㄒㄧㄝˇ ㄉㄜˊ ㄏㄣˇ ㄔㄡˇ ， ㄙㄨㄛˇ ㄧˇ ㄅㄨˋ ㄏㄠˇ ㄧˋ ㄙ ㄍㄟˇ ㄅㄧㄝˊ ㄖㄣˊ ㄎㄢˋ 。",
+        "romanization": "Tā juéde zìjǐ de zì xiě de hěn chǒu, suǒyǐ bù hǎoyìsi gěi biérén kàn.",
+        "translation": "He thinks his handwriting is very ugly, so he feels embarrassed to show it to others.",
+        "translation_en": "He thinks his handwriting is very ugly, so he feels embarrassed to show it to others.",
+        "translation_id": "itu sangat tidak sopan."
+      }
+    ],
+    "questions": [
+      {
+        "id": "rq-1",
+        "type": "multiple-choice",
+        "prompt": "What is the passage mainly about?",
+        "options": [
+          {
+            "id": "a",
+            "label": "oneself; one's own"
+          },
+          {
+            "id": "b",
+            "label": "husband"
+          },
+          {
+            "id": "c",
+            "label": "surname Zuo"
+          },
+          {
+            "id": "d",
+            "label": "this kind of; so; this way; like this; such"
+          }
+        ],
+        "correct": "a"
+      },
+      {
+        "id": "rq-2",
+        "type": "multiple-choice",
+        "prompt": "Which sentence appears in the passage?",
+        "options": [
+          {
+            "id": "a",
+            "label": "He thinks his handwriting is very ugly, so he feels embarrassed to show it to others."
+          },
+          {
+            "id": "b",
+            "label": "Chinese culture has a long history."
+          },
+          {
+            "id": "c",
+            "label": "She recognised her old classmate at a glance in the crowd."
+          },
+          {
+            "id": "d",
+            "label": "Spring Festival is the most important traditional holiday in China."
+          }
+        ],
+        "correct": "c"
+      },
+      {
+        "id": "rq-3",
+        "type": "multiple-choice",
+        "prompt": "What does “自己” mean here?",
+        "options": [
+          {
+            "id": "a",
+            "label": "oneself; one's own"
+          },
+          {
+            "id": "b",
+            "label": "tired"
+          },
+          {
+            "id": "c",
+            "label": "to like; to be fond of; to take pleasure in; to be keen on; interest; hobby; CL:個|个[ge4]"
+          },
+          {
+            "id": "d",
+            "label": "white; fig. reactionary; anti-communist"
+          }
+        ],
+        "correct": "a"
+      }
+    ],
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "reading:r-hsk-hsk2-ziji1",
+    "language": "zh",
+    "romanization": [
+      "ta",
+      "zai",
+      "ren",
+      "qun",
+      "zhong",
+      "yi",
+      "yan",
+      "ren",
+      "chu",
+      "le",
+      "zi",
+      "ji",
+      "de",
+      "lao",
+      "tong",
+      "xue",
+      "。",
+      "ta",
+      "jue",
+      "de",
+      "zi",
+      "ji",
+      "de",
+      "zi",
+      "xie",
+      "de",
+      "hen",
+      "chou",
+      "，",
+      "suo",
+      "yi",
+      "bu",
+      "hao",
+      "yi",
+      "si",
+      "gei",
+      "bie",
+      "ren",
+      "kan",
+      "。"
+    ]
+  },
+  {
+    "id": "r-hsk-hsk2-yinwei2",
+    "title": "因为 — because",
+    "title_en": "因为 — because",
+    "title_id": "因为 — karena",
+    "type": "story",
+    "level": 2,
+    "wordCount": 7,
+    "summary": "A short passage about because.",
+    "summary_en": "A short passage about because.",
+    "summary_id": "Bacaan singkat tentang karena.",
+    "paragraphs": [
+      {
+        "text": "因为下雨，我不去。",
+        "hanzi": "因为下雨，我不去。",
+        "pinyin": "yīn wèi xià yǔ ， wǒ bù qù 。",
+        "zhuyin": "ㄧㄣ ㄨㄟˋ ㄒㄧㄚˋ ㄩˇ ， ㄨㄛˇ ㄅㄨˋ ㄑㄩˋ 。",
+        "romanization": "Yīnwèi xiàyǔ, wǒ bú qù.",
+        "translation": "Because it is raining, I am not going.",
+        "translation_en": "Because it is raining, I am not going.",
+        "translation_id": "Karena hujan, saya tidak pergi."
+      }
+    ],
+    "questions": [
+      {
+        "id": "rq-1",
+        "type": "multiple-choice",
+        "prompt": "What is the passage mainly about?",
+        "options": [
+          {
+            "id": "a",
+            "label": "because"
+          },
+          {
+            "id": "b",
+            "label": "husband"
+          },
+          {
+            "id": "c",
+            "label": "variant of 從|从[cong2]; from; through; via; (bound form) to follow; (bound form) to obey; (bound form) to engage in (an activity); (used before a negative) ever; (bound form) (Taiwan pr. [zong4]) retainer; attendant; (bound form) (Taiwan pr. [zong4]) assistant; auxiliary; subordinate; (bound form) (Taiwan pr. [zong4]) related by common paternal grandfather or earlier ancestor"
+          },
+          {
+            "id": "d",
+            "label": "public transport vehicle; town bus; CL:輛|辆[liang4]"
+          }
+        ],
+        "correct": "a"
+      },
+      {
+        "id": "rq-2",
+        "type": "multiple-choice",
+        "prompt": "Which sentence appears in the passage?",
+        "options": [
+          {
+            "id": "a",
+            "label": "Spring Festival is the most important traditional holiday in China."
+          },
+          {
+            "id": "b",
+            "label": "Chinese culture has a long history."
+          },
+          {
+            "id": "c",
+            "label": "Because it is raining, I am not going."
+          }
+        ],
+        "correct": "c"
+      },
+      {
+        "id": "rq-3",
+        "type": "multiple-choice",
+        "prompt": "What does “因为” mean here?",
+        "options": [
+          {
+            "id": "a",
+            "label": "because"
+          },
+          {
+            "id": "b",
+            "label": "tired"
+          },
+          {
+            "id": "c",
+            "label": "to like; to be fond of; to take pleasure in; to be keen on; interest; hobby; CL:個|个[ge4]"
+          },
+          {
+            "id": "d",
+            "label": "white; fig. reactionary; anti-communist"
+          }
+        ],
+        "correct": "a"
+      }
+    ],
+    "examMappings": {
+      "hsk": 2
+    },
+    "audio": "reading:r-hsk-hsk2-yinwei2",
+    "language": "zh",
+    "romanization": [
+      "yin",
+      "wei",
+      "xia",
+      "yu",
+      "，",
+      "wo",
+      "bu",
+      "qu",
+      "。"
+    ]
+  }
+]
