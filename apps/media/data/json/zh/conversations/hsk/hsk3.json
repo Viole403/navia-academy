@@ -1,0 +1,243 @@
+[
+  {
+    "id": "conv-hsk-hsk3-ruguo",
+    "title": "如果",
+    "title_en": "Talking about if",
+    "title_id": "Ngobrol tentang jika",
+    "context": "You chat about if.",
+    "context_en": "You chat about if.",
+    "context_id": "Kamu mengobrol tentang jika.",
+    "formality": "neutral",
+    "level": 3,
+    "turns": [
+      {
+        "speaker": "tutor",
+        "text": "如果你想了解更多资料，可以先在网上搜一下。",
+        "hanzi": "如果你想了解更多资料，可以先在网上搜一下。",
+        "pinyin": "rú guǒ nǐ xiǎng liǎo jiě gèng duō zī liào ， kě yǐ xiān zài wǎng shàng sōu yī xià 。",
+        "zhuyin": "ㄖㄨˊ ㄍㄨㄛˇ ㄋㄧˇ ㄒㄧㄤˇ ㄌㄧㄠˇ ㄐㄧㄝˇ ㄍㄥˋ ㄉㄨㄛ ㄗ ㄌㄧㄠˋ ， ㄎㄜˇ ㄧˇ ㄒㄧㄢ ㄗㄞˋ ㄨㄤˇ ㄕㄤˋ ㄙㄡ ㄧ ㄒㄧㄚˋ 。",
+        "romanization": "Rúguǒ nǐ xiǎng liǎojiě gèng duō zīliào, kěyǐ xiān zài wǎngshàng sōu yíxià.",
+        "translation": "If you want to learn more information, you can search online first.",
+        "translation_en": "If you want to learn more information, you can search online first.",
+        "translation_id": "Jika ingin mengetahui informasi lebih lanjut, Anda bisa mencari secara online terlebih dahulu."
+      },
+      {
+        "speaker": "user",
+        "text": "这些橘子如果再放几天，可能就会过期变坏。",
+        "hanzi": "这些橘子如果再放几天，可能就会过期变坏。",
+        "pinyin": "zhè xiē jú zi rú guǒ zài fàng jǐ tiān ， kě néng jiù huì guò qī biàn huài 。",
+        "zhuyin": "ㄓㄜˋ ㄒㄧㄝ ㄐㄩˊ ㄗ˙ ㄖㄨˊ ㄍㄨㄛˇ ㄗㄞˋ ㄈㄤˋ ㄐㄧˇ ㄊㄧㄢ ， ㄎㄜˇ ㄋㄥˊ ㄐㄧㄡˋ ㄏㄨㄟˋ ㄍㄨㄛˋ ㄑㄧ ㄅㄧㄢˋ ㄏㄨㄞˋ 。",
+        "romanization": "Zhèxiē júzi rúguǒ zài fàng jǐ tiān, kěnéng jiù huì guòqī biàn huài.",
+        "translation": "If these oranges are left for a few more days, they may expire and go bad.",
+        "translation_en": "If these oranges are left for a few more days, they may expire and go bad.",
+        "translation_id": "Jika jeruk ini dibiarkan beberapa hari lagi, jeruk tersebut mungkin akan kadaluwarsa dan menjadi busuk."
+      },
+      {
+        "speaker": "tutor",
+        "text": "如果答案不确定，可以先空着，最后再填。",
+        "hanzi": "如果答案不确定，可以先空着，最后再填。",
+        "pinyin": "rú guǒ dá àn bù què dìng ， kě yǐ xiān kōng zhe ， zuì hòu zài tián 。",
+        "zhuyin": "ㄖㄨˊ ㄍㄨㄛˇ ㄉㄚˊ ㄢˋ ㄅㄨˋ ㄑㄩㄝˋ ㄉㄧㄥˋ ， ㄎㄜˇ ㄧˇ ㄒㄧㄢ ㄎㄨㄥ ㄓㄜ˙ ， ㄗㄨㄟˋ ㄏㄡˋ ㄗㄞˋ ㄊㄧㄢˊ 。",
+        "romanization": "Rúguǒ dá’àn bù quèdìng, kěyǐ xiān kōng zhe, zuìhòu zài tián.",
+        "translation": "If you are not sure of the answer, you can leave it blank first and fill it in at the end.",
+        "translation_en": "If you are not sure of the answer, you can leave it blank first and fill it in at the end.",
+        "translation_id": "Jika Anda tidak yakin dengan jawabannya, Anda bisa membiarkannya kosong dulu dan mengisinya nanti."
+      },
+      {
+        "speaker": "user",
+        "text": "如果没有必要，我们就不应该收集用户的个人信息。",
+        "hanzi": "如果没有必要，我们就不应该收集用户的个人信息。",
+        "pinyin": "rú guǒ méi yǒu bì yào ， wǒ men jiù bù yīng gāi shōu jí yòng hù de gè rén xìn xī 。",
+        "zhuyin": "ㄖㄨˊ ㄍㄨㄛˇ ㄇㄟˊ ㄧㄡˇ ㄅㄧˋ ㄧㄠˋ ， ㄨㄛˇ ㄇㄣ˙ ㄐㄧㄡˋ ㄅㄨˋ ㄧㄥ ㄍㄞ ㄕㄡ ㄐㄧˊ ㄩㄥˋ ㄏㄨˋ ㄉㄜ˙ ㄍㄜˋ ㄖㄣˊ ㄒㄧㄣˋ ㄒㄧ 。",
+        "romanization": "Rúguǒ méiyǒu bìyào, wǒmen jiù bù yīnggāi shōují yònghù de gèrén xìnxī.",
+        "translation": "If it is not necessary, we should not collect users’ personal information.",
+        "translation_en": "If it is not necessary, we should not collect users’ personal information.",
+        "translation_id": "Jika tidak diperlukan, kami tidak boleh mengumpulkan informasi pribadi pengguna."
+      },
+      {
+        "speaker": "tutor",
+        "text": "西餐桌上如果没有叉子，我反而不知道该怎么吃。",
+        "hanzi": "西餐桌上如果没有叉子，我反而不知道该怎么吃。",
+        "pinyin": "xī cān zhuō shàng rú guǒ méi yǒu chā zi ， wǒ fǎn ér bù zhī dào gāi zěn me chī 。",
+        "zhuyin": "ㄒㄧ ㄘㄢ ㄓㄨㄛ ㄕㄤˋ ㄖㄨˊ ㄍㄨㄛˇ ㄇㄟˊ ㄧㄡˇ ㄔㄚ ㄗ˙ ， ㄨㄛˇ ㄈㄢˇ ㄦˊ ㄅㄨˋ ㄓ ㄉㄠˋ ㄍㄞ ㄗㄣˇ ㄇㄜ˙ ㄔ 。",
+        "romanization": "Xīcān zhuō shang rúguǒ méiyǒu chāzi, wǒ fǎn’ér bù zhīdào gāi zěnme chī.",
+        "translation": "At a Western dining table, if there is no fork, I actually do not know how to eat.",
+        "translation_en": "At a Western dining table, if there is no fork, I actually do not know how to eat.",
+        "translation_id": "Di meja makan bergaya Barat, kalau tidak ada garpu, jujur saja, saya tidak tahu cara makan."
+      }
+    ],
+    "examMappings": {
+      "hsk": 3
+    },
+    "audio": "conv:conv-hsk-hsk3-ruguo",
+    "language": "zh"
+  },
+  {
+    "id": "conv-hsk-hsk3-xuyao1",
+    "title": "需要",
+    "title_en": "Talking about to need",
+    "title_id": "Ngobrol tentang perlu",
+    "context": "You chat about to need.",
+    "context_en": "You chat about to need.",
+    "context_id": "Kamu mengobrol tentang perlu.",
+    "formality": "neutral",
+    "level": 3,
+    "turns": [
+      {
+        "speaker": "tutor",
+        "text": "理解复杂事物时，我们需要先抓住主要关系。",
+        "hanzi": "理解复杂事物时，我们需要先抓住主要关系。",
+        "pinyin": "lǐ jiě fù zá shì wù shí ， wǒ men xū yào xiān zhuā zhù zhǔ yào guān xì 。",
+        "zhuyin": "ㄌㄧˇ ㄐㄧㄝˇ ㄈㄨˋ ㄗㄚˊ ㄕˋ ㄨˋ ㄕˊ ， ㄨㄛˇ ㄇㄣ˙ ㄒㄩ ㄧㄠˋ ㄒㄧㄢ ㄓㄨㄚ ㄓㄨˋ ㄓㄨˇ ㄧㄠˋ ㄍㄨㄢ ㄒㄧˋ 。",
+        "romanization": "Lǐjiě fùzá shìwù shí, wǒmen xūyào xiān zhuāzhù zhǔyào guānxi.",
+        "translation": "When understanding complex things, we need to grasp the main relationships first.",
+        "translation_en": "When understanding complex things, we need to grasp the main relationships first.",
+        "translation_id": "Saat memahami hal-hal kompleks, kita perlu memahami hubungan utamanya terlebih dahulu."
+      },
+      {
+        "speaker": "user",
+        "text": "一个人的信用需要长期积累，不能随便损害。",
+        "hanzi": "一个人的信用需要长期积累，不能随便损害。",
+        "pinyin": "yí gè rén de xìn yòng xū yào cháng qī jī lěi ， bù néng suí biàn sǔn hài 。",
+        "zhuyin": "ㄧˊ ㄍㄜˋ ㄖㄣˊ ㄉㄜ˙ ㄒㄧㄣˋ ㄩㄥˋ ㄒㄩ ㄧㄠˋ ㄔㄤˊ ㄑㄧ ㄐㄧ ㄌㄟˇ ， ㄅㄨˋ ㄋㄥˊ ㄙㄨㄟˊ ㄅㄧㄢˋ ㄙㄨㄣˇ ㄏㄞˋ 。",
+        "romanization": "Yí ge rén de xìnyòng xūyào chángqī jīlěi, bù néng suíbiàn sǔnhài.",
+        "translation": "A person’s credit needs to be built up over a long time and must not be damaged casually.",
+        "translation_en": "A person’s credit needs to be built up over a long time and must not be damaged casually.",
+        "translation_id": "Kredit seseorang perlu dibangun dalam jangka waktu yang lama dan tidak boleh dirusak begitu saja."
+      },
+      {
+        "speaker": "tutor",
+        "text": "文化差异也是合作中需要考虑的重要因素。",
+        "hanzi": "文化差异也是合作中需要考虑的重要因素。",
+        "pinyin": "wén huà chā yì yě shì hé zuò zhōng xū yào kǎo lǜ de zhòng yào yīn sù 。",
+        "zhuyin": "ㄨㄣˊ ㄏㄨㄚˋ ㄔㄚ ㄧˋ ㄧㄝˇ ㄕˋ ㄏㄜˊ ㄗㄨㄛˋ ㄓㄨㄥ ㄒㄩ ㄧㄠˋ ㄎㄠˇ ㄌㄩˋ ㄉㄜ˙ ㄓㄨㄥˋ ㄧㄠˋ ㄧㄣ ㄙㄨˋ 。",
+        "romanization": "Wénhuà chāyì yě shì hézuò zhōng xūyào kǎolǜ de zhòngyào yīnsù.",
+        "translation": "Cultural differences are also an important factor to consider in cooperation.",
+        "translation_en": "Cultural differences are also an important factor to consider in cooperation.",
+        "translation_id": "Perbedaan budaya juga merupakan faktor penting yang perlu dipertimbangkan dalam kerja sama."
+      },
+      {
+        "speaker": "user",
+        "text": "护照上的姓名需要同时填写汉字和拼音。",
+        "hanzi": "护照上的姓名需要同时填写汉字和拼音。",
+        "pinyin": "hù zhào shàng de xìng míng xū yào tóng shí tián xiě hàn zì hé pīn yīn 。",
+        "zhuyin": "ㄏㄨˋ ㄓㄠˋ ㄕㄤˋ ㄉㄜ˙ ㄒㄧㄥˋ ㄇㄧㄥˊ ㄒㄩ ㄧㄠˋ ㄊㄨㄥˊ ㄕˊ ㄊㄧㄢˊ ㄒㄧㄝˇ ㄏㄢˋ ㄗˋ ㄏㄜˊ ㄆㄧㄣ ㄧㄣ 。",
+        "romanization": "Hùzhào shang de xìngmíng xūyào tóngshí tiánxiě Hànzì hé pīnyīn.",
+        "translation": "The name on the passport needs to be written in both Chinese characters and pinyin.",
+        "translation_en": "The name on the passport needs to be written in both Chinese characters and pinyin.",
+        "translation_id": "Nama pada paspor harus ditulis dalam huruf Mandarin dan pinyin."
+      },
+      {
+        "speaker": "tutor",
+        "text": "中介需要把买卖双方的信息说明清楚。",
+        "hanzi": "中介需要把买卖双方的信息说明清楚。",
+        "pinyin": "zhōng jiè xū yào bǎ mǎi mài shuāng fāng de xìn xī shuō míng qīng chǔ 。",
+        "zhuyin": "ㄓㄨㄥ ㄐㄧㄝˋ ㄒㄩ ㄧㄠˋ ㄅㄚˇ ㄇㄞˇ ㄇㄞˋ ㄕㄨㄤ ㄈㄤ ㄉㄜ˙ ㄒㄧㄣˋ ㄒㄧ ㄕㄨㄛ ㄇㄧㄥˊ ㄑㄧㄥ ㄔㄨˇ 。",
+        "romanization": "Zhōngjiè xūyào bǎ mǎimài shuāngfāng de xìnxī shuōmíng qīngchu.",
+        "translation": "The intermediary needs to explain the information of both sides of the sale clearly.",
+        "translation_en": "The intermediary needs to explain the information of both sides of the sale clearly.",
+        "translation_id": "Kami menemukan flat ini melalui agen."
+      },
+      {
+        "speaker": "user",
+        "text": "我们只看到了结果，其原因还需要调查。",
+        "hanzi": "我们只看到了结果，其原因还需要调查。",
+        "pinyin": "wǒ men zhǐ kàn dào le jié guǒ ， qí yuán yīn hái xū yào diào chá 。",
+        "zhuyin": "ㄨㄛˇ ㄇㄣ˙ ㄓˇ ㄎㄢˋ ㄉㄠˋ ㄌㄜ˙ ㄐㄧㄝˊ ㄍㄨㄛˇ ， ㄑㄧˊ ㄩㄢˊ ㄧㄣ ㄏㄞˊ ㄒㄩ ㄧㄠˋ ㄉㄧㄠˋ ㄔㄚˊ 。",
+        "romanization": "Wǒmen zhǐ kàn dào le jiéguǒ, qí yuányīn hái xūyào diàochá.",
+        "translation": "We have only seen the result; its cause still needs to be investigated.",
+        "translation_en": "We have only seen the result; its cause still needs to be investigated.",
+        "translation_id": "Kami hanya melihat hasilnya; penyebabnya masih perlu diselidiki."
+      }
+    ],
+    "examMappings": {
+      "hsk": 3
+    },
+    "audio": "conv:conv-hsk-hsk3-xuyao1",
+    "language": "zh"
+  },
+  {
+    "id": "conv-hsk-hsk3-chengshi2",
+    "title": "城市",
+    "title_en": "Talking about city; town; CL:座[zuo4]",
+    "title_id": "Ngobrol tentang kota",
+    "context": "You chat about city; town; CL:座[zuo4].",
+    "context_en": "You chat about city; town; CL:座[zuo4].",
+    "context_id": "Kamu mengobrol tentang kota.",
+    "formality": "neutral",
+    "level": 3,
+    "turns": [
+      {
+        "speaker": "tutor",
+        "text": "在陌生城市里，如果不看地图很容易迷路。",
+        "hanzi": "在陌生城市里，如果不看地图很容易迷路。",
+        "pinyin": "zài mò shēng chéng shì lǐ ， rú guǒ bù kàn dì tú hěn róng yì mí lù 。",
+        "zhuyin": "ㄗㄞˋ ㄇㄛˋ ㄕㄥ ㄔㄥˊ ㄕˋ ㄌㄧˇ ， ㄖㄨˊ ㄍㄨㄛˇ ㄅㄨˋ ㄎㄢˋ ㄉㄧˋ ㄊㄨˊ ㄏㄣˇ ㄖㄨㄥˊ ㄧˋ ㄇㄧˊ ㄌㄨˋ 。",
+        "romanization": "Zài mòshēng chéngshì lǐ, rúguǒ bù kàn dìtú hěn róngyì mílù.",
+        "translation": "In an unfamiliar city, it is easy to get lost if you do not look at a map.",
+        "translation_en": "In an unfamiliar city, it is easy to get lost if you do not look at a map.",
+        "translation_id": "Di kota yang tidak dikenal, kita mudah tersesat jika tidak melihat peta."
+      },
+      {
+        "speaker": "user",
+        "text": "游客走进胡同以后，才真正感受到这座城市的历史。",
+        "hanzi": "游客走进胡同以后，才真正感受到这座城市的历史。",
+        "pinyin": "yóu kè zǒu jìn hú tòng yǐ hòu ， cái zhēn zhèng gǎn shòu dào zhè zuò chéng shì de lì shǐ 。",
+        "zhuyin": "ㄧㄡˊ ㄎㄜˋ ㄗㄡˇ ㄐㄧㄣˋ ㄏㄨˊ ㄊㄨㄥˋ ㄧˇ ㄏㄡˋ ， ㄘㄞˊ ㄓㄣ ㄓㄥˋ ㄍㄢˇ ㄕㄡˋ ㄉㄠˋ ㄓㄜˋ ㄗㄨㄛˋ ㄔㄥˊ ㄕˋ ㄉㄜ˙ ㄌㄧˋ ㄕˇ 。",
+        "romanization": "Yóukè zǒu jìn hútòng yǐhòu, cái zhēnzhèng gǎnshòu dào zhè zuò chéngshì de lìshǐ.",
+        "translation": "Only after tourists walk into the hutongs do they truly feel the history of the city.",
+        "translation_en": "Only after tourists walk into the hutongs do they truly feel the history of the city.",
+        "translation_id": "Hanya setelah wisatawan masuk ke dalam Hutong barulah mereka benar-benar merasakan sejarah kota tersebut."
+      },
+      {
+        "speaker": "tutor",
+        "text": "雨后的空气很清新，仿佛整个城市都被洗干净了。",
+        "hanzi": "雨后的空气很清新，仿佛整个城市都被洗干净了。",
+        "pinyin": "yǔ hòu de kōng qì hěn qīng xīn ， fǎng fú zhěng gè chéng shì dōu bèi xǐ gān jìng le 。",
+        "zhuyin": "ㄩˇ ㄏㄡˋ ㄉㄜ˙ ㄎㄨㄥ ㄑㄧˋ ㄏㄣˇ ㄑㄧㄥ ㄒㄧㄣ ， ㄈㄤˇ ㄈㄨˊ ㄓㄥˇ ㄍㄜˋ ㄔㄥˊ ㄕˋ ㄉㄡ ㄅㄟˋ ㄒㄧˇ ㄍㄢ ㄐㄧㄥˋ ㄌㄜ˙ 。",
+        "romanization": "Yǔ hòu de kōngqì hěn qīngxīn, fǎngfú zhěnggè chéngshì dōu bèi xǐ gānjìng le.",
+        "translation": "The air after the rain was fresh, as if the whole city had been washed clean.",
+        "translation_en": "The air after the rain was fresh, as if the whole city had been washed clean.",
+        "translation_id": "Melihat cahaya di kejauhan, dia sepertinya mengingat hal-hal beberapa tahun lalu."
+      },
+      {
+        "speaker": "user",
+        "text": "这所大学位于城市北部，交通很方便。",
+        "hanzi": "这所大学位于城市北部，交通很方便。",
+        "pinyin": "zhè suǒ dà xué wèi yú chéng shì běi bù ， jiāo tōng hěn fāng biàn 。",
+        "zhuyin": "ㄓㄜˋ ㄙㄨㄛˇ ㄉㄚˋ ㄒㄩㄝˊ ㄨㄟˋ ㄩˊ ㄔㄥˊ ㄕˋ ㄅㄟˇ ㄅㄨˋ ， ㄐㄧㄠ ㄊㄨㄥ ㄏㄣˇ ㄈㄤ ㄅㄧㄢˋ 。",
+        "romanization": "Zhè suǒ dàxué wèiyú chéngshì běibù, jiāotōng hěn fāngbiàn.",
+        "translation": "This university is located in the north of the city, and transport is very convenient.",
+        "translation_en": "This university is located in the north of the city, and transport is very convenient.",
+        "translation_id": "Gedung olah raga yang baru dibangun ini terletak di tepi sungai dan memiliki eksterior modern."
+      },
+      {
+        "speaker": "tutor",
+        "text": "这两个城市隔得不远，坐高铁半个小时就能到达。",
+        "hanzi": "这两个城市隔得不远，坐高铁半个小时就能到达。",
+        "pinyin": "zhè liǎng gè chéng shì gé dé bù yuǎn ， zuò gāo tiě bàn gè xiǎo shí jiù néng dào dá 。",
+        "zhuyin": "ㄓㄜˋ ㄌㄧㄤˇ ㄍㄜˋ ㄔㄥˊ ㄕˋ ㄍㄜˊ ㄉㄜˊ ㄅㄨˋ ㄩㄢˇ ， ㄗㄨㄛˋ ㄍㄠ ㄊㄧㄝˇ ㄅㄢˋ ㄍㄜˋ ㄒㄧㄠˇ ㄕˊ ㄐㄧㄡˋ ㄋㄥˊ ㄉㄠˋ ㄉㄚˊ 。",
+        "romanization": "Zhè liǎng gè chéngshì gé de bù yuǎn, zuò gāotiě bàn gè xiǎoshí jiù néng dàodá.",
+        "translation": "The two cities are not far apart; you can arrive by high-speed rail in half an hour.",
+        "translation_en": "The two cities are not far apart; you can arrive by high-speed rail in half an hour.",
+        "translation_id": "Jarak kedua kota tersebut tidak berjauhan; Anda dapat tiba dengan kereta berkecepatan tinggi dalam waktu setengah jam."
+      },
+      {
+        "speaker": "user",
+        "text": "她首次出国旅行，就选择了一个完全陌生的城市。",
+        "hanzi": "她首次出国旅行，就选择了一个完全陌生的城市。",
+        "pinyin": "tā shǒu cì chū guó lǚ xíng ， jiù xuǎn zé le yí gè wán quán mò shēng de chéng shì 。",
+        "zhuyin": "ㄊㄚ ㄕㄡˇ ㄘˋ ㄔㄨ ㄍㄨㄛˊ ㄌㄩˇ ㄒㄧㄥˊ ， ㄐㄧㄡˋ ㄒㄩㄢˇ ㄗㄜˊ ㄌㄜ˙ ㄧˊ ㄍㄜˋ ㄨㄢˊ ㄑㄩㄢˊ ㄇㄛˋ ㄕㄥ ㄉㄜ˙ ㄔㄥˊ ㄕˋ 。",
+        "romanization": "Tā shǒucì chūguó lǚxíng, jiù xuǎnzé le yí ge wánquán mòshēng de chéngshì.",
+        "translation": "For her first trip abroad, she chose a completely unfamiliar city.",
+        "translation_en": "For her first trip abroad, she chose a completely unfamiliar city.",
+        "translation_id": "Untuk perjalanan pertamanya ke luar negeri, dia memilih kota yang sama sekali asing."
+      }
+    ],
+    "examMappings": {
+      "hsk": 3
+    },
+    "audio": "conv:conv-hsk-hsk3-chengshi2",
+    "language": "zh"
+  }
+]
