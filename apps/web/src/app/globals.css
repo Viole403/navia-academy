@@ -1,0 +1,804 @@
+@import "tailwindcss";
+
+/* ---------------------------------------------------------------------------
+   Navia — design tokens (Bauhaus / Bento rebuild, 16-Agu-2026)
+   Prior look (warm cream + serif + terracotta) retired wholesale: the warm
+   palette, editorial serif and dusted accent were the anti-patterns named in
+   brief §1. Replaced by a Bauhaus slate system: two neutral bases
+   (slate-white / ink-slate), three primaries (red / blue / yellow) used as
+   accents on a fixed secondary quantization, one architectural shadow, crisp
+   corners. Semantic var names (--bg, --ink, --accent, --gold, --jade, ...)
+   are preserved so pre-existing feature surfaces keep working; their VALUES
+   are re-tuned. Two-axis theming (data-mode × data-theme) stays; accent
+   overrides from themes/*.css were removed (they fought the new direction).
+   --------------------------------------------------------------------------- */
+
+:root,
+[data-mode="light"] {
+  --bg: #f4f4f1;
+  --bg-raised: #fbfbf8;
+  --bg-sunken: #ecece7;
+  --bg-hover: #e9e9e4;
+  --ink: #14161b;
+  --ink-soft: #454a55;
+  --ink-faint: #636872;
+  --line: #dcddda;
+  --line-strong: #c3c5c1;
+  --shadow: 0 1px 2px rgba(20, 22, 27, 0.06), 0 10px 24px -10px rgba(20, 22, 27, 0.18);
+  --radius: 0.6rem;
+
+  --accent: #2b54e5;          /* Bauhaus blue — primary UI accent */
+  --accent-strong: #1d3eb8;
+  --accent-soft: #dde4fb;
+  --accent-ink: #ffffff;
+
+  --gold: #7c6610;            /* Bauhaus yellow, tuned for contrast on light */
+  --jade: #15774d;
+  --info: #2364b3;
+  --warn: #995815;
+  --danger: #c42f29;          /* Bauhaus red */
+
+  --exam-hsk: #bb4030;
+  --exam-tocfl: #3e8464;
+  --exam-goethe: #3d7a6b;
+  --exam-jlpt: #b53a3a;
+  --exam-toefl: #2f6fc6;
+
+  --bauhaus-red: #e23b25;
+  --bauhaus-blue: #2b54e5;
+  --bauhaus-yellow: #f2b825;
+  --bauhaus-black: #14161b;
+  --bauhaus-white: #f7f6f2;
+
+  --shadow-neo: 3px 3px 0 var(--bauhaus-black);
+  --shadow-neo-lg: 6px 6px 0 var(--bauhaus-black);
+  --shadow-neo-red: 3px 3px 0 var(--bauhaus-red);
+  --shadow-neo-blue: 3px 3px 0 var(--bauhaus-blue);
+  --shadow-neo-yellow: 3px 3px 0 var(--bauhaus-yellow);
+
+  --grid-line: var(--line);
+  color-scheme: light;
+}
+[data-mode="dark"] {
+  --bg: #14161b;
+  --bg-raised: #1c1f26;
+  --bg-sunken: #0e1013;
+  --bg-hover: #262a33;
+  --ink: #ecece7;
+  --ink-soft: #a8aeb8;
+  --ink-faint: #8d919b;
+  --line: #2a2e38;
+  --line-strong: #3a404d;
+  --shadow: 0 1px 2px rgba(0, 0, 0, 0.4), 0 12px 28px -12px rgba(0, 0, 0, 0.7);
+  --radius: 0.6rem;
+
+  --accent: #6d8cff;
+  --accent-strong: #8fa5ff;
+  --accent-soft: #202c4f;
+  --accent-ink: #0e1013;
+
+  --gold: #e6bd3f;
+  --jade: #3ecf92;
+  --info: #6aa5ef;
+  --warn: #e8a13f;
+  --danger: #ef655b;
+
+  --exam-hsk: #e8745f;
+  --exam-tocfl: #5fb98c;
+  --exam-goethe: #5fb89f;
+  --exam-jlpt: #ef6b6b;
+  --exam-toefl: #6aa5ef;
+
+  --bauhaus-red: #ef5b50;
+  --bauhaus-blue: #6d8cff;
+  --bauhaus-yellow: #f2b825;
+  --bauhaus-black: #ecece7;
+  --bauhaus-white: #14161b;
+
+  --shadow-neo: 3px 3px 0 var(--bauhaus-white);
+  --shadow-neo-lg: 6px 6px 0 var(--bauhaus-white);
+  --shadow-neo-red: 3px 3px 0 var(--bauhaus-red);
+  --shadow-neo-blue: 3px 3px 0 var(--bauhaus-blue);
+  --shadow-neo-yellow: 3px 3px 0 var(--bauhaus-yellow);
+
+  --grid-line: var(--line);
+  color-scheme: dark;
+}
+
+/* ---------------------------------------------------------------------------
+   Named themes (8 total, 18-Agu-2026). `bauhaus` is the default and equals the
+   base blocks above (:root / [data-mode]). Each theme defines a full palette
+   (light + dark face) so the light/dark toggle keeps working inside a theme.
+   The Bauhaus trio (red/blue/yellow) stays in every theme — only the base and
+   accent shift. High-contrast below still wins (WCAG AAA).
+   --------------------------------------------------------------------------- */
+
+[data-theme="scholar"] {
+  --bg: #f7f3ea;
+  --bg-raised: #fdfaf3;
+  --bg-sunken: #efe8da;
+  --bg-hover: #ece4d3;
+  --ink: #1c1917;
+  --ink-soft: #4a4238;
+  --ink-faint: #6d6459;
+  --line: #e2d9c8;
+  --line-strong: #cdc0a9;
+  --shadow: 0 1px 2px rgba(28, 25, 23, 0.06), 0 10px 24px -10px rgba(28, 25, 23, 0.18);
+  --accent: #b3382c;
+  --accent-strong: #932a20;
+  --accent-soft: #f6e3dd;
+  --accent-ink: #ffffff;
+  --gold: #7b631c;
+  --jade: #2e6b52;
+  --info: #3d5f8f;
+  --warn: #945614;
+  --danger: #b3382c;
+  --bauhaus-red: #b3382c;
+  --bauhaus-blue: #3d5f8f;
+  --bauhaus-yellow: #c2a23a;
+  --bauhaus-black: #1c1917;
+  --bauhaus-white: #fdfaf3;
+  --shadow-neo: 3px 3px 0 var(--bauhaus-black);
+  --shadow-neo-lg: 6px 6px 0 var(--bauhaus-black);
+  --shadow-neo-red: 3px 3px 0 var(--bauhaus-red);
+  --shadow-neo-blue: 3px 3px 0 var(--bauhaus-blue);
+  --shadow-neo-yellow: 3px 3px 0 var(--bauhaus-yellow);
+  --grid-line: var(--line);
+  color-scheme: light;
+}
+[data-theme="scholar"][data-mode="dark"] {
+  --bg: #16130f;
+  --bg-raised: #201b15;
+  --bg-sunken: #100d0a;
+  --bg-hover: #2a241c;
+  --ink: #ede8de;
+  --ink-soft: #b0a794;
+  --ink-faint: #938b7c;
+  --line: #322b22;
+  --line-strong: #453b2e;
+  --shadow: 0 1px 2px rgba(0, 0, 0, 0.4), 0 12px 28px -12px rgba(0, 0, 0, 0.7);
+  --accent: #d65a47;
+  --accent-strong: #e57361;
+  --accent-soft: #3a241f;
+  --accent-ink: #14100d;
+  --gold: #d6b53f;
+  --jade: #4fb58c;
+  --info: #7d92c4;
+  --warn: #d99a45;
+  --danger: #e06852;
+  --bauhaus-red: #d65a47;
+  --bauhaus-blue: #7d92c4;
+  --bauhaus-yellow: #e0bd55;
+  --bauhaus-black: #ede8de;
+  --bauhaus-white: #16130f;
+  --grid-line: var(--line);
+  color-scheme: dark;
+}
+
+[data-theme="ink"] {
+  --bg: #ecebe5;
+  --bg-raised: #f7f6f1;
+  --bg-sunken: #e2e0d8;
+  --bg-hover: #dcd9cf;
+  --ink: #221f1a;
+  --ink-soft: #4d493f;
+  --ink-faint: #625e52;
+  --line: #d4d1c6;
+  --line-strong: #b8b4a4;
+  --shadow: 0 1px 2px rgba(34, 31, 26, 0.06), 0 10px 24px -10px rgba(34, 31, 26, 0.18);
+  --accent: #a6342a;
+  --accent-strong: #85281f;
+  --accent-soft: #f3ded8;
+  --accent-ink: #ffffff;
+  --gold: #725c18;
+  --jade: #23634b;
+  --info: #41618f;
+  --warn: #825511;
+  --danger: #a6342a;
+  --bauhaus-red: #a6342a;
+  --bauhaus-blue: #41618f;
+  --bauhaus-yellow: #cfab33;
+  --bauhaus-black: #221f1a;
+  --bauhaus-white: #f7f6f1;
+  --shadow-neo: 3px 3px 0 var(--bauhaus-black);
+  --shadow-neo-lg: 6px 6px 0 var(--bauhaus-black);
+  --shadow-neo-red: 3px 3px 0 var(--bauhaus-red);
+  --shadow-neo-blue: 3px 3px 0 var(--bauhaus-blue);
+  --shadow-neo-yellow: 3px 3px 0 var(--bauhaus-yellow);
+  --grid-line: var(--line);
+  color-scheme: light;
+}
+[data-theme="ink"][data-mode="dark"] {
+  --bg: #131210;
+  --bg-raised: #1f1d19;
+  --bg-sunken: #0e0d0b;
+  --bg-hover: #29261f;
+  --ink: #ece6da;
+  --ink-soft: #a8a494;
+  --ink-faint: #938e81;
+  --line: #2c2922;
+  --line-strong: #3d392f;
+  --shadow: 0 1px 2px rgba(0, 0, 0, 0.4), 0 12px 28px -12px rgba(0, 0, 0, 0.7);
+  --accent: #c8503f;
+  --accent-strong: #d9644f;
+  --accent-soft: #331f1a;
+  --accent-ink: #141009;
+  --gold: #d9b53f;
+  --jade: #3ecf92;
+  --info: #7d8fc9;
+  --warn: #e0a03f;
+  --danger: #ef5b50;
+  --bauhaus-red: #c8503f;
+  --bauhaus-blue: #7d8fc9;
+  --bauhaus-yellow: #e0bd55;
+  --bauhaus-black: #ece6da;
+  --bauhaus-white: #131210;
+  --grid-line: var(--line);
+  color-scheme: dark;
+}
+
+[data-theme="jade"] {
+  --bg: #f1f3ee;
+  --bg-raised: #fafbf7;
+  --bg-sunken: #e5e8df;
+  --bg-hover: #dfe4d8;
+  --ink: #18251f;
+  --ink-soft: #44524a;
+  --ink-faint: #5a675f;
+  --line: #d7ddd1;
+  --line-strong: #bac5b4;
+  --shadow: 0 1px 2px rgba(24, 37, 31, 0.06), 0 10px 24px -10px rgba(24, 37, 31, 0.18);
+  --accent: #2e7359;
+  --accent-strong: #215b44;
+  --accent-soft: #dcefe4;
+  --accent-ink: #ffffff;
+  --gold: #6f642a;
+  --jade: #2d6f56;
+  --info: #33658f;
+  --warn: #77621f;
+  --danger: #b4392d;
+  --bauhaus-red: #c23b2e;
+  --bauhaus-blue: #4a6fa5;
+  --bauhaus-yellow: #c9b23a;
+  --bauhaus-black: #18251f;
+  --bauhaus-white: #fafbf7;
+  --shadow-neo: 3px 3px 0 var(--bauhaus-black);
+  --shadow-neo-lg: 6px 6px 0 var(--bauhaus-black);
+  --shadow-neo-red: 3px 3px 0 var(--bauhaus-red);
+  --shadow-neo-blue: 3px 3px 0 var(--bauhaus-blue);
+  --shadow-neo-yellow: 3px 3px 0 var(--bauhaus-yellow);
+  --grid-line: var(--line);
+  color-scheme: light;
+}
+[data-theme="jade"][data-mode="dark"] {
+  --bg: #121a16;
+  --bg-raised: #1a241e;
+  --bg-sunken: #0d130f;
+  --bg-hover: #242f28;
+  --ink: #e6ece8;
+  --ink-soft: #a5b4aa;
+  --ink-faint: #8a978e;
+  --line: #27332c;
+  --line-strong: #36453c;
+  --shadow: 0 1px 2px rgba(0, 0, 0, 0.4), 0 12px 28px -12px rgba(0, 0, 0, 0.7);
+  --accent: #3ecf92;
+  --accent-strong: #5ad9a8;
+  --accent-soft: #0f2b1f;
+  --accent-ink: #0e1310;
+  --gold: #c9b53f;
+  --jade: #3ecf92;
+  --info: #6fa8d4;
+  --warn: #d9b94f;
+  --danger: #d97969;
+  --bauhaus-red: #d65a47;
+  --bauhaus-blue: #6ba3d4;
+  --bauhaus-yellow: #d9c14f;
+  --bauhaus-black: #e6ece8;
+  --bauhaus-white: #121a16;
+  --grid-line: var(--line);
+  color-scheme: dark;
+}
+
+[data-theme="midnight"] {
+  --bg: #eef1f6;
+  --bg-raised: #f8fafc;
+  --bg-sunken: #e3e8f0;
+  --bg-hover: #dde3ee;
+  --ink: #161c26;
+  --ink-soft: #414d61;
+  --ink-faint: #5a657a;
+  --line: #d5dcea;
+  --line-strong: #b9c3da;
+  --shadow: 0 1px 2px rgba(22, 28, 38, 0.06), 0 10px 24px -10px rgba(22, 28, 38, 0.18);
+  --accent: #2f6fb6;
+  --accent-strong: #20538f;
+  --accent-soft: #dbe8f7;
+  --accent-ink: #ffffff;
+  --gold: #71642d;
+  --jade: #2c705c;
+  --info: #2f6fb6;
+  --warn: #845c20;
+  --danger: #aa423a;
+  --bauhaus-red: #c0483d;
+  --bauhaus-blue: #2f6fb6;
+  --bauhaus-yellow: #c9a63f;
+  --bauhaus-black: #161c26;
+  --bauhaus-white: #f8fafc;
+  --shadow-neo: 3px 3px 0 var(--bauhaus-black);
+  --shadow-neo-lg: 6px 6px 0 var(--bauhaus-black);
+  --shadow-neo-red: 3px 3px 0 var(--bauhaus-red);
+  --shadow-neo-blue: 3px 3px 0 var(--bauhaus-blue);
+  --shadow-neo-yellow: 3px 3px 0 var(--bauhaus-yellow);
+  --grid-line: var(--line);
+  color-scheme: light;
+}
+[data-theme="midnight"][data-mode="dark"] {
+  --bg: #0e1420;
+  --bg-raised: #16202f;
+  --bg-sunken: #0a0f18;
+  --bg-hover: #1e2a3c;
+  --ink: #e8edf7;
+  --ink-soft: #a6b2c6;
+  --ink-faint: #8893a3;
+  --line: #263042;
+  --line-strong: #37445c;
+  --shadow: 0 1px 2px rgba(0, 0, 0, 0.4), 0 12px 28px -12px rgba(0, 0, 0, 0.7);
+  --accent: #5aa8c9;
+  --accent-strong: #74bfde;
+  --accent-soft: #142a3a;
+  --accent-ink: #0c1520;
+  --gold: #c9b347;
+  --jade: #4fbf9a;
+  --info: #6aa5ef;
+  --warn: #d9a13f;
+  --danger: #e16f67;
+  --bauhaus-red: #d65a50;
+  --bauhaus-blue: #5aa8c9;
+  --bauhaus-yellow: #ddb95c;
+  --bauhaus-black: #e8edf7;
+  --bauhaus-white: #0e1420;
+  --grid-line: var(--line);
+  color-scheme: dark;
+}
+
+[data-theme="paper"] {
+  --bg: #f5efe2;
+  --bg-raised: #fbf6ec;
+  --bg-sunken: #eae0cb;
+  --bg-hover: #e5d9c0;
+  --ink: #26211a;
+  --ink-soft: #57503f;
+  --ink-faint: #665e4d;
+  --line: #e0d5bd;
+  --line-strong: #c8b893;
+  --shadow: 0 1px 2px rgba(38, 33, 26, 0.06), 0 10px 24px -10px rgba(38, 33, 26, 0.18);
+  --accent: #8c4a2f;
+  --accent-strong: #6f371f;
+  --accent-soft: #f3e0d2;
+  --accent-ink: #ffffff;
+  --gold: #745c1d;
+  --jade: #466746;
+  --info: #56709b;
+  --warn: #7d571e;
+  --danger: #a63a2a;
+  --bauhaus-red: #8c4a2f;
+  --bauhaus-blue: #56709b;
+  --bauhaus-yellow: #b89b3f;
+  --bauhaus-black: #26211a;
+  --bauhaus-white: #fbf6ec;
+  --shadow-neo: 3px 3px 0 var(--bauhaus-black);
+  --shadow-neo-lg: 6px 6px 0 var(--bauhaus-black);
+  --shadow-neo-red: 3px 3px 0 var(--bauhaus-red);
+  --shadow-neo-blue: 3px 3px 0 var(--bauhaus-blue);
+  --shadow-neo-yellow: 3px 3px 0 var(--bauhaus-yellow);
+  --grid-line: var(--line);
+  color-scheme: light;
+}
+[data-theme="paper"][data-mode="dark"] {
+  --bg: #191511;
+  --bg-raised: #231d16;
+  --bg-sunken: #120f0b;
+  --bg-hover: #2c241a;
+  --ink: #ece5d6;
+  --ink-soft: #b0a58c;
+  --ink-faint: #978d78;
+  --line: #322a1e;
+  --line-strong: #44392a;
+  --shadow: 0 1px 2px rgba(0, 0, 0, 0.4), 0 12px 28px -12px rgba(0, 0, 0, 0.7);
+  --accent: #c07a52;
+  --accent-strong: #d18c63;
+  --accent-soft: #33241a;
+  --accent-ink: #191410;
+  --gold: #c4a83f;
+  --jade: #5c9c74;
+  --info: #7d92b8;
+  --warn: #d9a94f;
+  --danger: #d96d5d;
+  --bauhaus-red: #c07a52;
+  --bauhaus-blue: #7d92b8;
+  --bauhaus-yellow: #c9a94f;
+  --bauhaus-black: #ece5d6;
+  --bauhaus-white: #191511;
+  --grid-line: var(--line);
+  color-scheme: dark;
+}
+
+[data-theme="dusk"] {
+  --bg: #f3f0f7;
+  --bg-raised: #fbf9fe;
+  --bg-sunken: #e9e4f1;
+  --bg-hover: #e4def0;
+  --ink: #1b1726;
+  --ink-soft: #4a4359;
+  --ink-faint: #675f78;
+  --line: #ddd7e8;
+  --line-strong: #c3b9d9;
+  --shadow: 0 1px 2px rgba(27, 23, 38, 0.06), 0 10px 24px -10px rgba(27, 23, 38, 0.18);
+  --accent: #6b4fd8;
+  --accent-strong: #5437c0;
+  --accent-soft: #e6defb;
+  --accent-ink: #ffffff;
+  --gold: #72622c;
+  --jade: #3a6c5a;
+  --info: #4a63b3;
+  --warn: #865a1d;
+  --danger: #b13746;
+  --bauhaus-red: #c8455a;
+  --bauhaus-blue: #6b4fd8;
+  --bauhaus-yellow: #c9a63f;
+  --bauhaus-black: #1b1726;
+  --bauhaus-white: #fbf9fe;
+  --shadow-neo: 3px 3px 0 var(--bauhaus-black);
+  --shadow-neo-lg: 6px 6px 0 var(--bauhaus-black);
+  --shadow-neo-red: 3px 3px 0 var(--bauhaus-red);
+  --shadow-neo-blue: 3px 3px 0 var(--bauhaus-blue);
+  --shadow-neo-yellow: 3px 3px 0 var(--bauhaus-yellow);
+  --grid-line: var(--line);
+  color-scheme: light;
+}
+[data-theme="dusk"][data-mode="dark"] {
+  --bg: #14101f;
+  --bg-raised: #1e1830;
+  --bg-sunken: #0f0b18;
+  --bg-hover: #282040;
+  --ink: #ece7f6;
+  --ink-soft: #b0a7c9;
+  --ink-faint: #9287a8;
+  --line: #2c2540;
+  --line-strong: #3d3256;
+  --shadow: 0 1px 2px rgba(0, 0, 0, 0.4), 0 12px 28px -12px rgba(0, 0, 0, 0.7);
+  --accent: #9b7ff0;
+  --accent-strong: #b39bf5;
+  --accent-soft: #2a2150;
+  --accent-ink: #120e1c;
+  --gold: #d8b54f;
+  --jade: #5cc9a2;
+  --info: #8aa0e8;
+  --warn: #dfa94f;
+  --danger: #e0657a;
+  --bauhaus-red: #e0657a;
+  --bauhaus-blue: #9b7ff0;
+  --bauhaus-yellow: #ddbc66;
+  --bauhaus-black: #ece7f6;
+  --bauhaus-white: #14101f;
+  --grid-line: var(--line);
+  color-scheme: dark;
+}
+
+[data-theme="focus"] {
+  --bg: #fafafa;
+  --bg-raised: #ffffff;
+  --bg-sunken: #f1f1f1;
+  --bg-hover: #ececec;
+  --ink: #111111;
+  --ink-soft: #3f3f3f;
+  --ink-faint: #6a6a6a;
+  --line: #e2e2e2;
+  --line-strong: #c9c9c9;
+  --shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --accent: #5b6470;
+  --accent-strong: #48505a;
+  --accent-soft: #e6e9ec;
+  --accent-ink: #ffffff;
+  --gold: #776938;
+  --jade: #4a6a58;
+  --info: #4a5a78;
+  --warn: #7f673b;
+  --danger: #8a3f3f;
+  --bauhaus-red: #8a4a42;
+  --bauhaus-blue: #4a5a78;
+  --bauhaus-yellow: #9a8a3f;
+  --bauhaus-black: #111111;
+  --bauhaus-white: #ffffff;
+  --shadow-neo: 1px 1px 0 var(--bauhaus-black);
+  --shadow-neo-lg: 2px 2px 0 var(--bauhaus-black);
+  --shadow-neo-red: 1px 1px 0 var(--bauhaus-red);
+  --shadow-neo-blue: 1px 1px 0 var(--bauhaus-blue);
+  --shadow-neo-yellow: 1px 1px 0 var(--bauhaus-yellow);
+  --grid-line: var(--line);
+  color-scheme: light;
+}
+[data-theme="focus"][data-mode="dark"] {
+  --bg: #141414;
+  --bg-raised: #1c1c1c;
+  --bg-sunken: #0e0e0e;
+  --bg-hover: #262626;
+  --ink: #ececec;
+  --ink-soft: #a6a6a6;
+  --ink-faint: #8d8d8d;
+  --line: #2b2b2b;
+  --line-strong: #3d3d3d;
+  --shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+  --accent: #8a94a6;
+  --accent-strong: #a5aeba;
+  --accent-soft: #232833;
+  --accent-ink: #0d0d0d;
+  --gold: #a3944f;
+  --jade: #779484;
+  --info: #7288a0;
+  --warn: #a3905a;
+  --danger: #bc7e78;
+  --bauhaus-red: #b36a63;
+  --bauhaus-blue: #8a94a6;
+  --bauhaus-yellow: #a3944f;
+  --bauhaus-black: #ececec;
+  --bauhaus-white: #141414;
+  --grid-line: var(--line);
+  color-scheme: dark;
+}
+
+/* High-contrast override — functional control, WCAG AAA surface contrast. */
+[data-high-contrast="true"] {
+  --bg: #ffffff;
+  --bg-raised: #ffffff;
+  --bg-sunken: #f0f0f0;
+  --bg-hover: #ececec;
+  --ink: #000000;
+  --ink-soft: #111111;
+  --ink-faint: #222222;
+  --line: #000000;
+  --line-strong: #000000;
+  --accent: #0043d0;
+  --accent-strong: #00319a;
+  --accent-soft: #cfdbff;
+  --accent-ink: #ffffff;
+  --gold: #7a5c00;
+  --jade: #005c35;
+  --info: #003f8f;
+  --warn: #7a3f00;
+  --danger: #b30000;
+  --bauhaus-red: #b30000;
+  --bauhaus-blue: #0043d0;
+  --bauhaus-yellow: #7a5c00;
+}
+[data-high-contrast="true"][data-mode="dark"] {
+  --bg: #000000;
+  --bg-raised: #0a0a0a;
+  --bg-sunken: #000000;
+  --bg-hover: #1a1a1a;
+  --ink: #ffffff;
+  --ink-soft: #ffffff;
+  --ink-faint: #d4d4d4;
+  --line: #ffffff;
+  --line-strong: #ffffff;
+  --accent: #7aa2ff;
+  --bauhaus-red: #ff6b61;
+  --bauhaus-blue: #7aa2ff;
+  --bauhaus-yellow: #ffd257;
+}
+
+/* Map semantic vars into Tailwind theme utilities (as before). */
+@theme inline {
+  --color-bg: var(--bg);
+  --color-raised: var(--bg-raised);
+  --color-sunken: var(--bg-sunken);
+  --color-hover: var(--bg-hover);
+  --color-ink: var(--ink);
+  --color-ink-soft: var(--ink-soft);
+  --color-ink-faint: var(--ink-faint);
+  --color-line: var(--line);
+  --color-line-strong: var(--line-strong);
+  --color-accent: var(--accent);
+  --color-accent-strong: var(--accent-strong);
+  --color-accent-soft: var(--accent-soft);
+  --color-accent-ink: var(--accent-ink);
+  --color-gold: var(--gold);
+  --color-jade: var(--jade);
+  --color-info: var(--info);
+  --color-warn: var(--warn);
+  --color-danger: var(--danger);
+  --color-success: var(--jade);
+
+  --color-bauhaus-red: var(--bauhaus-red);
+  --color-bauhaus-blue: var(--bauhaus-blue);
+  --color-bauhaus-yellow: var(--bauhaus-yellow);
+  --color-bauhaus-black: var(--bauhaus-black);
+  --color-bauhaus-white: var(--bauhaus-white);
+
+  --font-sans: var(--font-sans-var), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-display-var), var(--font-sans-var), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-serif-var), var(--font-sans-var), Georgia, serif;
+  --font-hanzi: var(--font-hanzi-var), "Noto Sans SC", "PingFang SC", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: var(--color-bg);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+body,
+input,
+button,
+select,
+textarea {
+  font-size: 1rem;
+  line-height: 1.55;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-display);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+}
+::selection {
+  background: var(--accent);
+  color: var(--accent-ink);
+}
+*:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* Font-size scale set from settings */
+html[data-fontsize="sm"] { font-size: 0.90625rem; }
+html[data-fontsize="md"] { font-size: 16px; }
+html[data-fontsize="lg"] { font-size: 1.09375rem; }
+html[data-fontsize="xl"] { font-size: 1.1875rem; }
+/* Motion reduction — functional control and system preference. */
+html[data-motion="reduced"] *,
+html[data-motion="reduced"] *::before,
+html[data-motion="reduced"] *::after {
+  animation-duration: 0.001s !important;
+  transition-duration: 0.001s !important;
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001s !important;
+    transition-duration: 0.001s !important;
+  }
+}
+
+/* Display type — role-driven sizes (landing + dashboard headings). */
+.font-display,
+.text-display {
+  font-family: var(--font-display);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.04;
+}
+.text-display-xl { font-size: clamp(2.25rem, 4vw, 3.5rem); }
+.text-display-lg { font-size: clamp(2rem, 4vw, 3.25rem); }
+.text-display-md { font-size: clamp(1.5rem, 3vw, 2rem); }
+
+/* Hanzi + CJK glyph rendering (practice surfaces, writing canvas). */
+.hanzi {
+  font-family: var(--font-hanzi);
+}
+
+/* Tian Zi Ge writing grid. */
+.tianzige {
+  background-color: var(--bg-raised);
+  border: 1.5px solid var(--line-strong);
+  position: relative;
+}
+.tianzige::before,
+.tianzige::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+.tianzige::before {
+  background:
+    linear-gradient(to right, transparent calc(50% - 0.5px), var(--grid-line) calc(50% - 0.5px), var(--grid-line) calc(50% + 0.5px), transparent calc(50% + 0.5px)),
+    linear-gradient(to bottom, transparent calc(50% - 0.5px), var(--grid-line) calc(50% - 0.5px), var(--grid-line) calc(50% + 0.5px), transparent calc(50% + 0.5px));
+}
+.tianzige::after {
+  background:
+    linear-gradient(45deg, transparent calc(50% - 0.5px), var(--grid-line) calc(50% - 0.5px), var(--grid-line) calc(50% + 0.5px), transparent calc(50% + 0.5px)),
+    linear-gradient(-45deg, transparent calc(50% - 0.5px), var(--grid-line) calc(50% - 0.5px), var(--grid-line) calc(50% + 0.5px), transparent calc(50% + 0.5px));
+}
+
+/* Powered-by logo wall: full color at rest, gentle lift on hover. */
+.logo-wall-item img {
+  transition: transform 0.3s ease;
+}
+.logo-wall-item:hover img {
+  transform: translateY(-2px);
+}
+.logo-wall-item .logo-wall-label {
+  transition: color 0.3s ease;
+}
+.logo-wall-item:hover .logo-wall-label {
+  color: var(--ink);
+}
+
+/* Brand logos with light/dark variants (e.g. Dahono wordmark). */
+[data-mode="dark"] img.logo-light { display: none; }
+:root:not([data-mode="dark"]) img.logo-dark { display: none; }
+
+/* Bauhaus geometry helpers. */
+.bauhaus-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.75rem;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  padding: 0.3rem 0.65rem;
+  border: 1.5px solid var(--bauhaus-black);
+}
+.bauhaus-chip-red { background: var(--bauhaus-red); color: var(--bauhaus-white); }
+.bauhaus-chip-blue { background: var(--bauhaus-blue); color: var(--bauhaus-white); }
+.bauhaus-chip-yellow { background: var(--bauhaus-yellow); color: var(--bauhaus-black); }
+.bauhaus-chip-ink { background: var(--bauhaus-black); color: var(--bauhaus-white); }
+
+/* Neo-brutal "riser": interactive cards lift with a hard offset shadow. */
+.riser {
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+.riser:hover,
+.riser:focus-visible {
+  transform: translate(-2px, -4px);
+  box-shadow: var(--shadow-neo-lg);
+}
+
+/* Architectural grid texture used on the landing hero. */
+.bauhaus-grid {
+  background-image:
+    linear-gradient(to right, var(--line) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--line) 1px, transparent 1px);
+  background-size: 96px 96px;
+}
+
+/* Marquee — infinite horizontal scroll (house-styled, MagicUI pattern).
+   Motion only when the system allows it; static full content under
+   prefers-reduced-motion (rows still render, they just don't translate). */
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(calc(-100% - var(--gap, 1rem))); }
+}
+@keyframes marquee-vertical {
+  from { transform: translateY(0); }
+  to { transform: translateY(calc(-100% - var(--gap, 1rem))); }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .animate-marquee {
+    animation: marquee var(--duration, 40s) linear infinite;
+  }
+  .animate-marquee-reverse {
+    animation: marquee var(--duration, 40s) linear infinite reverse;
+  }
+  .animate-marquee-vertical {
+    animation: marquee-vertical var(--duration, 40s) linear infinite;
+  }
+}
