@@ -1,0 +1,601 @@
+[
+  {
+    "id": "r-hsk-hsk3-ruguo",
+    "title": "如果 — if",
+    "title_en": "如果 — if",
+    "title_id": "如果 — jika",
+    "type": "story",
+    "level": 3,
+    "wordCount": 24,
+    "summary": "A short passage about if.",
+    "summary_en": "A short passage about if.",
+    "summary_id": "Bacaan singkat tentang jika.",
+    "paragraphs": [
+      {
+        "text": "如果你来，我很高兴。",
+        "hanzi": "如果你来，我很高兴。",
+        "pinyin": "rú guǒ nǐ lái ， wǒ hěn gāo xìng 。",
+        "zhuyin": "ㄖㄨˊ ㄍㄨㄛˇ ㄋㄧˇ ㄌㄞˊ ， ㄨㄛˇ ㄏㄣˇ ㄍㄠ ㄒㄧㄥˋ 。",
+        "romanization": "Rúguǒ nǐ lái, wǒ hěn gāoxìng.",
+        "translation": "If you come, I will be happy.",
+        "translation_en": "If you come, I will be happy.",
+        "translation_id": "Jika kamu datang, saya senang."
+      },
+      {
+        "text": "如果你有不明白的地方，可以随时提问。",
+        "hanzi": "如果你有不明白的地方，可以随时提问。",
+        "pinyin": "rú guǒ nǐ yǒu bù míng bái de dì fāng ， kě yǐ suí shí tí wèn 。",
+        "zhuyin": "ㄖㄨˊ ㄍㄨㄛˇ ㄋㄧˇ ㄧㄡˇ ㄅㄨˋ ㄇㄧㄥˊ ㄅㄞˊ ㄉㄜ˙ ㄉㄧˋ ㄈㄤ ， ㄎㄜˇ ㄧˇ ㄙㄨㄟˊ ㄕˊ ㄊㄧˊ ㄨㄣˋ 。",
+        "romanization": "Rúguǒ nǐ yǒu bù míngbai de dìfang, kěyǐ suíshí tíwèn.",
+        "translation": "If there is anything you do not understand, you can ask questions at any time.",
+        "translation_en": "If there is anything you do not understand, you can ask questions at any time.",
+        "translation_id": "Jika ada yang belum Anda pahami, Anda dapat bertanya kapan saja."
+      }
+    ],
+    "questions": [
+      {
+        "id": "rq-1",
+        "type": "multiple-choice",
+        "prompt": "What is the passage mainly about?",
+        "options": [
+          {
+            "id": "a",
+            "label": "if"
+          },
+          {
+            "id": "b",
+            "label": "then; after that; afterwards"
+          },
+          {
+            "id": "c",
+            "label": "to receive"
+          },
+          {
+            "id": "d",
+            "label": "tooth; ivory; CL:顆|颗[ke1]"
+          }
+        ],
+        "correct": "a"
+      },
+      {
+        "id": "rq-2",
+        "type": "multiple-choice",
+        "prompt": "Which sentence appears in the passage?",
+        "options": [
+          {
+            "id": "a",
+            "label": "Spring Festival is the most important traditional holiday in China."
+          },
+          {
+            "id": "b",
+            "label": "If there is anything you do not understand, you can ask questions at any time."
+          },
+          {
+            "id": "c",
+            "label": "If you come, I will be happy."
+          },
+          {
+            "id": "d",
+            "label": "Chinese culture has a long history."
+          }
+        ],
+        "correct": "c"
+      },
+      {
+        "id": "rq-3",
+        "type": "multiple-choice",
+        "prompt": "What does “如果” mean here?",
+        "options": [
+          {
+            "id": "a",
+            "label": "if"
+          },
+          {
+            "id": "b",
+            "label": "probably, approximately"
+          },
+          {
+            "id": "c",
+            "label": "to understand, to know"
+          },
+          {
+            "id": "d",
+            "label": "culture"
+          }
+        ],
+        "correct": "a"
+      }
+    ],
+    "examMappings": {
+      "hsk": 3
+    },
+    "audio": "reading:r-hsk-hsk3-ruguo",
+    "language": "zh",
+    "romanization": [
+      "ru",
+      "guo",
+      "ni",
+      "lai",
+      "，",
+      "wo",
+      "hen",
+      "gao",
+      "xing",
+      "。",
+      "ru",
+      "guo",
+      "ni",
+      "you",
+      "bu",
+      "ming",
+      "bai",
+      "de",
+      "di",
+      "fang",
+      "，",
+      "ke",
+      "yi",
+      "sui",
+      "shi",
+      "ti",
+      "wen",
+      "。"
+    ]
+  },
+  {
+    "id": "r-hsk-hsk3-xuyao1",
+    "title": "需要 — to need",
+    "title_en": "需要 — to need",
+    "title_id": "需要 — perlu",
+    "type": "story",
+    "level": 3,
+    "wordCount": 78,
+    "summary": "A short passage about to need.",
+    "summary_en": "A short passage about to need.",
+    "summary_id": "Bacaan singkat tentang perlu.",
+    "paragraphs": [
+      {
+        "text": "你需要帮助吗？",
+        "hanzi": "你需要帮助吗？",
+        "pinyin": "nǐ xū yào bāng zhù ma ？",
+        "zhuyin": "ㄋㄧˇ ㄒㄩ ㄧㄠˋ ㄅㄤ ㄓㄨˋ ㄇㄚ˙ ？",
+        "romanization": "nǐ xūyào bāngzhù ma?",
+        "translation": "Do you need help?",
+        "translation_en": "Do you need help?",
+        "translation_id": "Apakah kamu butuh bantuan?"
+      },
+      {
+        "text": "文件太大，下载可能需要几分钟。",
+        "hanzi": "文件太大，下载可能需要几分钟。",
+        "pinyin": "wén jiàn tài dà ， xià zài kě néng xū yào jǐ fēn zhōng 。",
+        "zhuyin": "ㄨㄣˊ ㄐㄧㄢˋ ㄊㄞˋ ㄉㄚˋ ， ㄒㄧㄚˋ ㄗㄞˋ ㄎㄜˇ ㄋㄥˊ ㄒㄩ ㄧㄠˋ ㄐㄧˇ ㄈㄣ ㄓㄨㄥ 。",
+        "romanization": "Wénjiàn tài dà, xiàzài kěnéng xūyào jǐ fēnzhōng.",
+        "translation": "The file is too large, so downloading it may take a few minutes.",
+        "translation_en": "The file is too large, so downloading it may take a few minutes.",
+        "translation_id": "Mohon jangan sembarangan mengunduh materi dari sumber yang tidak dikenal."
+      },
+      {
+        "text": "孩子的成长需要家庭和学校共同支持。",
+        "hanzi": "孩子的成长需要家庭和学校共同支持。",
+        "pinyin": "hái zi de chéng zhǎng xū yào jiā tíng hé xué xiào gòng tóng zhī chí 。",
+        "zhuyin": "ㄏㄞˊ ㄗ˙ ㄉㄜ˙ ㄔㄥˊ ㄓㄤˇ ㄒㄩ ㄧㄠˋ ㄐㄧㄚ ㄊㄧㄥˊ ㄏㄜˊ ㄒㄩㄝˊ ㄒㄧㄠˋ ㄍㄨㄥˋ ㄊㄨㄥˊ ㄓ ㄔˊ 。",
+        "romanization": "Háizi de chéngzhǎng xūyào jiātíng hé xuéxiào gòngtóng zhīchí.",
+        "translation": "A child’s growth needs joint support from the family and the school.",
+        "translation_en": "A child’s growth needs joint support from the family and the school.",
+        "translation_id": "Pertumbuhan seorang anak membutuhkan dukungan bersama dari keluarga dan sekolah."
+      },
+      {
+        "text": "文件太大，上传过程可能需要几分钟。",
+        "hanzi": "文件太大，上传过程可能需要几分钟。",
+        "pinyin": "wén jiàn tài dà ， shàng chuán guò chéng kě néng xū yào jǐ fēn zhōng 。",
+        "zhuyin": "ㄨㄣˊ ㄐㄧㄢˋ ㄊㄞˋ ㄉㄚˋ ， ㄕㄤˋ ㄔㄨㄢˊ ㄍㄨㄛˋ ㄔㄥˊ ㄎㄜˇ ㄋㄥˊ ㄒㄩ ㄧㄠˋ ㄐㄧˇ ㄈㄣ ㄓㄨㄥ 。",
+        "romanization": "Wénjiàn tài dà, shàngchuán guòchéng kěnéng xūyào jǐ fēnzhōng.",
+        "translation": "The file is too large, so the upload process may take a few minutes.",
+        "translation_en": "The file is too large, so the upload process may take a few minutes.",
+        "translation_id": "Silakan pindai kontrak yang ditandatangani dan unggah ke sistem."
+      },
+      {
+        "text": "成年子女也需要关心父母的健康。",
+        "hanzi": "成年子女也需要关心父母的健康。",
+        "pinyin": "chéng nián zǐ nǚ yě xū yào guān xīn fù mǔ de jiàn kāng 。",
+        "zhuyin": "ㄔㄥˊ ㄋㄧㄢˊ ㄗˇ ㄋㄩˇ ㄧㄝˇ ㄒㄩ ㄧㄠˋ ㄍㄨㄢ ㄒㄧㄣ ㄈㄨˋ ㄇㄨˇ ㄉㄜ˙ ㄐㄧㄢˋ ㄎㄤ 。",
+        "romanization": "Chéngnián zǐnǚ yě xūyào guānxīn fùmǔ de jiànkāng.",
+        "translation": "Adult children also need to care about their parents’ health.",
+        "translation_en": "Adult children also need to care about their parents’ health.",
+        "translation_id": "Anak-anak yang sudah dewasa juga perlu memperhatikan kesehatan orang tuanya."
+      },
+      {
+        "text": "我们需要了解这个词的真正意义。",
+        "hanzi": "我们需要了解这个词的真正意义。",
+        "pinyin": "wǒ men xū yào liǎo jiě zhè ge cí de zhēn zhèng yì yì 。",
+        "zhuyin": "ㄨㄛˇ ㄇㄣ˙ ㄒㄩ ㄧㄠˋ ㄌㄧㄠˇ ㄐㄧㄝˇ ㄓㄜˋ ㄍㄜ˙ ㄘˊ ㄉㄜ˙ ㄓㄣ ㄓㄥˋ ㄧˋ ㄧˋ 。",
+        "romanization": "Wǒmen xūyào liǎojiě zhège cí de zhēnzhèng yìyì.",
+        "translation": "We need to understand the true meaning of this word.",
+        "translation_en": "We need to understand the true meaning of this word.",
+        "translation_id": "Kita perlu memahami makna sebenarnya dari kata ini."
+      }
+    ],
+    "questions": [
+      {
+        "id": "rq-1",
+        "type": "multiple-choice",
+        "prompt": "What is the passage mainly about?",
+        "options": [
+          {
+            "id": "a",
+            "label": "to need"
+          },
+          {
+            "id": "b",
+            "label": "Northeast China; Manchuria"
+          },
+          {
+            "id": "c",
+            "label": "the year after next"
+          },
+          {
+            "id": "d",
+            "label": "painter; CL:個|个[ge4]"
+          }
+        ],
+        "correct": "a"
+      },
+      {
+        "id": "rq-2",
+        "type": "multiple-choice",
+        "prompt": "Which sentence appears in the passage?",
+        "options": [
+          {
+            "id": "a",
+            "label": "Spring Festival is the most important traditional holiday in China."
+          },
+          {
+            "id": "b",
+            "label": "The file is too large, so downloading it may take a few minutes."
+          },
+          {
+            "id": "c",
+            "label": "Chinese culture has a long history."
+          },
+          {
+            "id": "d",
+            "label": "Do you need help?"
+          }
+        ],
+        "correct": "d"
+      },
+      {
+        "id": "rq-3",
+        "type": "multiple-choice",
+        "prompt": "What does “需要” mean here?",
+        "options": [
+          {
+            "id": "a",
+            "label": "to need"
+          },
+          {
+            "id": "b",
+            "label": "probably, approximately"
+          },
+          {
+            "id": "c",
+            "label": "to understand, to know"
+          },
+          {
+            "id": "d",
+            "label": "culture"
+          }
+        ],
+        "correct": "a"
+      }
+    ],
+    "examMappings": {
+      "hsk": 3
+    },
+    "audio": "reading:r-hsk-hsk3-xuyao1",
+    "language": "zh",
+    "romanization": [
+      "ni",
+      "xu",
+      "yao",
+      "bang",
+      "zhu",
+      "ma",
+      "？",
+      "wen",
+      "jian",
+      "tai",
+      "da",
+      "，",
+      "xia",
+      "zai",
+      "ke",
+      "neng",
+      "xu",
+      "yao",
+      "ji",
+      "fen",
+      "zhong",
+      "。",
+      "hai",
+      "zi",
+      "de",
+      "cheng",
+      "zhang",
+      "xu",
+      "yao",
+      "jia",
+      "ting",
+      "he",
+      "xue",
+      "xiao",
+      "gong",
+      "tong",
+      "zhi",
+      "chi",
+      "。",
+      "wen",
+      "jian",
+      "tai",
+      "da",
+      "，",
+      "shang",
+      "chuan",
+      "guo",
+      "cheng",
+      "ke",
+      "neng",
+      "xu",
+      "yao",
+      "ji",
+      "fen",
+      "zhong",
+      "。",
+      "cheng",
+      "nian",
+      "zi",
+      "nv",
+      "ye",
+      "xu",
+      "yao",
+      "guan",
+      "xin",
+      "fu",
+      "mu",
+      "de",
+      "jian",
+      "kang",
+      "。",
+      "wo",
+      "men",
+      "xu",
+      "yao",
+      "liao",
+      "jie",
+      "zhe",
+      "ge",
+      "ci",
+      "de",
+      "zhen",
+      "zheng",
+      "yi",
+      "yi",
+      "。"
+    ]
+  },
+  {
+    "id": "r-hsk-hsk3-chengshi2",
+    "title": "城市 — city; town; CL:座[zuo4]",
+    "title_en": "城市 — city; town; CL:座[zuo4]",
+    "title_id": "城市 — kota",
+    "type": "story",
+    "level": 3,
+    "wordCount": 74,
+    "summary": "A short passage about city; town; CL:座[zuo4].",
+    "summary_en": "A short passage about city; town; CL:座[zuo4].",
+    "summary_id": "Bacaan singkat tentang kota.",
+    "paragraphs": [
+      {
+        "text": "他决定告别过去的生活，去一个新的城市重新开始。",
+        "hanzi": "他决定告别过去的生活，去一个新的城市重新开始。",
+        "pinyin": "tā jué dìng gào bié guò qù de shēng huó ， qù yí gè xīn de chéng shì chóng xīn kāi shǐ 。",
+        "zhuyin": "ㄊㄚ ㄐㄩㄝˊ ㄉㄧㄥˋ ㄍㄠˋ ㄅㄧㄝˊ ㄍㄨㄛˋ ㄑㄩˋ ㄉㄜ˙ ㄕㄥ ㄏㄨㄛˊ ， ㄑㄩˋ ㄧˊ ㄍㄜˋ ㄒㄧㄣ ㄉㄜ˙ ㄔㄥˊ ㄕˋ ㄔㄨㄥˊ ㄒㄧㄣ ㄎㄞ ㄕˇ 。",
+        "romanization": "Tā juédìng gàobié guòqù de shēnghuó, qù yí gè xīn de chéngshì chóngxīn kāishǐ.",
+        "translation": "He decided to say goodbye to his past life and make a fresh start in a new city.",
+        "translation_en": "He decided to say goodbye to his past life and make a fresh start in a new city.",
+        "translation_id": "Dia memutuskan untuk melepaskan diri dari kehidupan lamanya dan memulai hidup baru di kota yang baru."
+      },
+      {
+        "text": "他们因为长期在不同城市工作，最终决定分手。",
+        "hanzi": "他们因为长期在不同城市工作，最终决定分手。",
+        "pinyin": "tā men yīn wèi cháng qī zài bù tóng chéng shì gōng zuò ， zuì zhōng jué dìng fēn shǒu 。",
+        "zhuyin": "ㄊㄚ ㄇㄣ˙ ㄧㄣ ㄨㄟˋ ㄔㄤˊ ㄑㄧ ㄗㄞˋ ㄅㄨˋ ㄊㄨㄥˊ ㄔㄥˊ ㄕˋ ㄍㄨㄥ ㄗㄨㄛˋ ， ㄗㄨㄟˋ ㄓㄨㄥ ㄐㄩㄝˊ ㄉㄧㄥˋ ㄈㄣ ㄕㄡˇ 。",
+        "romanization": "Tāmen yīnwèi chángqī zài bùtóng chéngshì gōngzuò, zuìzhōng juédìng fēnshǒu.",
+        "translation": "Because they worked in different cities for a long time, they finally decided to break up.",
+        "translation_en": "Because they worked in different cities for a long time, they finally decided to break up.",
+        "translation_id": "Karena lama bekerja di kota yang berbeda, mereka akhirnya memutuskan untuk putus."
+      },
+      {
+        "text": "一个城市的发展不能失去自己的文化特色。",
+        "hanzi": "一个城市的发展不能失去自己的文化特色。",
+        "pinyin": "yí gè chéng shì de fā zhǎn bù néng shī qù zì jǐ de wén huà tè sè 。",
+        "zhuyin": "ㄧˊ ㄍㄜˋ ㄔㄥˊ ㄕˋ ㄉㄜ˙ ㄈㄚ ㄓㄢˇ ㄅㄨˋ ㄋㄥˊ ㄕ ㄑㄩˋ ㄗˋ ㄐㄧˇ ㄉㄜ˙ ㄨㄣˊ ㄏㄨㄚˋ ㄊㄜˋ ㄙㄜˋ 。",
+        "romanization": "Yí ge chéngshì de fāzhǎn bùnéng shīqù zìjǐ de wénhuà tèsè.",
+        "translation": "A city’s development must not lose its own cultural characteristics.",
+        "translation_en": "A city’s development must not lose its own cultural characteristics.",
+        "translation_id": "Pembangunan sebuah kota tidak boleh mengabaikan ciri-ciri budayanya sendiri."
+      },
+      {
+        "text": "这对新人计划明年搬到新的城市生活。",
+        "hanzi": "这对新人计划明年搬到新的城市生活。",
+        "pinyin": "zhè duì xīn rén jì huà míng nián bān dào xīn de chéng shì shēng huó 。",
+        "zhuyin": "ㄓㄜˋ ㄉㄨㄟˋ ㄒㄧㄣ ㄖㄣˊ ㄐㄧˋ ㄏㄨㄚˋ ㄇㄧㄥˊ ㄋㄧㄢˊ ㄅㄢ ㄉㄠˋ ㄒㄧㄣ ㄉㄜ˙ ㄔㄥˊ ㄕˋ ㄕㄥ ㄏㄨㄛˊ 。",
+        "romanization": "Zhè duì xīnrén jìhuà míngnián bān dào xīn de chéngshì shēnghuó.",
+        "translation": "This newly married couple plans to move to a new city next year.",
+        "translation_en": "This newly married couple plans to move to a new city next year.",
+        "translation_id": "Pasangan yang baru menikah ini berencana pindah ke kota baru pada tahun depan."
+      }
+    ],
+    "questions": [
+      {
+        "id": "rq-1",
+        "type": "multiple-choice",
+        "prompt": "What is the passage mainly about?",
+        "options": [
+          {
+            "id": "a",
+            "label": "city; town; CL:座[zuo4]"
+          },
+          {
+            "id": "b",
+            "label": "to go on vacation; to have a holiday; to take leave"
+          },
+          {
+            "id": "c",
+            "label": "won't do; be out of the question; be no good; not work; not be capable"
+          },
+          {
+            "id": "d",
+            "label": "chest; heart; mind"
+          }
+        ],
+        "correct": "a"
+      },
+      {
+        "id": "rq-2",
+        "type": "multiple-choice",
+        "prompt": "Which sentence appears in the passage?",
+        "options": [
+          {
+            "id": "a",
+            "label": "Chinese culture has a long history."
+          },
+          {
+            "id": "b",
+            "label": "Spring Festival is the most important traditional holiday in China."
+          },
+          {
+            "id": "c",
+            "label": "He decided to say goodbye to his past life and make a fresh start in a new city."
+          },
+          {
+            "id": "d",
+            "label": "Because they worked in different cities for a long time, they finally decided to break up."
+          }
+        ],
+        "correct": "c"
+      },
+      {
+        "id": "rq-3",
+        "type": "multiple-choice",
+        "prompt": "What does “城市” mean here?",
+        "options": [
+          {
+            "id": "a",
+            "label": "city; town; CL:座[zuo4]"
+          },
+          {
+            "id": "b",
+            "label": "probably, approximately"
+          },
+          {
+            "id": "c",
+            "label": "to understand, to know"
+          },
+          {
+            "id": "d",
+            "label": "culture"
+          }
+        ],
+        "correct": "a"
+      }
+    ],
+    "examMappings": {
+      "hsk": 3
+    },
+    "audio": "reading:r-hsk-hsk3-chengshi2",
+    "language": "zh",
+    "romanization": [
+      "ta",
+      "jue",
+      "ding",
+      "gao",
+      "bie",
+      "guo",
+      "qu",
+      "de",
+      "sheng",
+      "huo",
+      "，",
+      "qu",
+      "yi",
+      "ge",
+      "xin",
+      "de",
+      "cheng",
+      "shi",
+      "chong",
+      "xin",
+      "kai",
+      "shi",
+      "。",
+      "ta",
+      "men",
+      "yin",
+      "wei",
+      "chang",
+      "qi",
+      "zai",
+      "bu",
+      "tong",
+      "cheng",
+      "shi",
+      "gong",
+      "zuo",
+      "，",
+      "zui",
+      "zhong",
+      "jue",
+      "ding",
+      "fen",
+      "shou",
+      "。",
+      "yi",
+      "ge",
+      "cheng",
+      "shi",
+      "de",
+      "fa",
+      "zhan",
+      "bu",
+      "neng",
+      "shi",
+      "qu",
+      "zi",
+      "ji",
+      "de",
+      "wen",
+      "hua",
+      "te",
+      "se",
+      "。",
+      "zhe",
+      "dui",
+      "xin",
+      "ren",
+      "ji",
+      "hua",
+      "ming",
+      "nian",
+      "ban",
+      "dao",
+      "xin",
+      "de",
+      "cheng",
+      "shi",
+      "sheng",
+      "huo",
+      "。"
+    ]
+  }
+]
