@@ -1,0 +1,254 @@
+[
+  {
+    "id": "conv-hsk-hsk4-yanjiu",
+    "title": "研究",
+    "title_en": "Talking about research; a study; CL:項|项[xiang4]; to research; to look into",
+    "title_id": "Ngobrol tentang riset",
+    "context": "You chat about research; a study; CL:項|项[xiang4]; to research; to look into.",
+    "context_en": "You chat about research; a study; CL:項|项[xiang4]; to research; to look into.",
+    "context_id": "Kamu mengobrol tentang riset.",
+    "formality": "neutral",
+    "level": 4,
+    "turns": [
+      {
+        "speaker": "tutor",
+        "text": "他的研究方法很先进，受到大家的重视。",
+        "hanzi": "他的研究方法很先进，受到大家的重视。",
+        "pinyin": "tā de yán jiū fāng fǎ hěn xiān jìn ， shòu dào dà jiā de zhòng shì 。",
+        "zhuyin": "ㄊㄚ ㄉㄜ˙ ㄧㄢˊ ㄐㄧㄡ ㄈㄤ ㄈㄚˇ ㄏㄣˇ ㄒㄧㄢ ㄐㄧㄣˋ ， ㄕㄡˋ ㄉㄠˋ ㄉㄚˋ ㄐㄧㄚ ㄉㄜ˙ ㄓㄨㄥˋ ㄕˋ 。",
+        "romanization": "Tā de yánjiū fāngfǎ hěn xiānjìn, shòu dào dàjiā de zhòngshì.",
+        "translation": "His research method is very advanced and is valued by everyone.",
+        "translation_en": "His research method is very advanced and is valued by everyone.",
+        "translation_id": "Metode penelitiannya sangat maju dan dihargai oleh semua orang."
+      },
+      {
+        "speaker": "user",
+        "text": "学年结束以前，学生必须提交研究报告。",
+        "hanzi": "学年结束以前，学生必须提交研究报告。",
+        "pinyin": "xué nián jié shù yǐ qián ， xué shēng bì xū tí jiāo yán jiū bào gào 。",
+        "zhuyin": "ㄒㄩㄝˊ ㄋㄧㄢˊ ㄐㄧㄝˊ ㄕㄨˋ ㄧˇ ㄑㄧㄢˊ ， ㄒㄩㄝˊ ㄕㄥ ㄅㄧˋ ㄒㄩ ㄊㄧˊ ㄐㄧㄠ ㄧㄢˊ ㄐㄧㄡ ㄅㄠˋ ㄍㄠˋ 。",
+        "romanization": "Xuénián jiéshù yǐqián, xuéshēng bìxū tíjiāo yánjiū bàogào.",
+        "translation": "Before the academic year ends, students must submit a research report.",
+        "translation_en": "Before the academic year ends, students must submit a research report.",
+        "translation_id": "Sebelum tahun ajaran berakhir, mahasiswa wajib menyerahkan laporan penelitian."
+      },
+      {
+        "speaker": "tutor",
+        "text": "心理学是一门研究人类行为的学科。",
+        "hanzi": "心理学是一门研究人类行为的学科。",
+        "pinyin": "xīn lǐ xué shì yī mén yán jiū rén lèi xíng wéi de xué kē 。",
+        "zhuyin": "ㄒㄧㄣ ㄌㄧˇ ㄒㄩㄝˊ ㄕˋ ㄧ ㄇㄣˊ ㄧㄢˊ ㄐㄧㄡ ㄖㄣˊ ㄌㄟˋ ㄒㄧㄥˊ ㄨㄟˊ ㄉㄜ˙ ㄒㄩㄝˊ ㄎㄜ 。",
+        "romanization": "Xīnlǐxué shì yì mén yánjiū rénlèi xíngwéi de xuékē.",
+        "translation": "Psychology is a discipline that studies human behaviour.",
+        "translation_en": "Psychology is a discipline that studies human behaviour.",
+        "translation_id": "Psikologi adalah disiplin ilmu yang mempelajari perilaku manusia."
+      },
+      {
+        "speaker": "user",
+        "text": "这位学者长期研究中国古代文学。",
+        "hanzi": "这位学者长期研究中国古代文学。",
+        "pinyin": "zhè wèi xué zhě cháng qī yán jiū zhōng guó gǔ dài wén xué 。",
+        "zhuyin": "ㄓㄜˋ ㄨㄟˋ ㄒㄩㄝˊ ㄓㄜˇ ㄔㄤˊ ㄑㄧ ㄧㄢˊ ㄐㄧㄡ ㄓㄨㄥ ㄍㄨㄛˊ ㄍㄨˇ ㄉㄞˋ ㄨㄣˊ ㄒㄩㄝˊ 。",
+        "romanization": "Zhè wèi xuézhě chángqī yánjiū Zhōngguó gǔdài wénxué.",
+        "translation": "This scholar has long studied ancient Chinese literature.",
+        "translation_en": "This scholar has long studied ancient Chinese literature.",
+        "translation_id": "Sarjana ini telah lama mempelajari sastra Tiongkok kuno."
+      },
+      {
+        "speaker": "tutor",
+        "text": "他每天在实验室工作到很晚，只为了完成研究项目。",
+        "hanzi": "他每天在实验室工作到很晚，只为了完成研究项目。",
+        "pinyin": "tā měi tiān zài shí yàn shì gōng zuò dào hěn wǎn ， zhǐ wèi le wán chéng yán jiū xiàng mù 。",
+        "zhuyin": "ㄊㄚ ㄇㄟˇ ㄊㄧㄢ ㄗㄞˋ ㄕˊ ㄧㄢˋ ㄕˋ ㄍㄨㄥ ㄗㄨㄛˋ ㄉㄠˋ ㄏㄣˇ ㄨㄢˇ ， ㄓˇ ㄨㄟˋ ㄌㄜ˙ ㄨㄢˊ ㄔㄥˊ ㄧㄢˊ ㄐㄧㄡ ㄒㄧㄤˋ ㄇㄨˋ 。",
+        "romanization": "Tā měitiān zài shíyànshì gōngzuò dào hěn wǎn, zhǐ wèile wánchéng yánjiū xiàngmù.",
+        "translation": "He works late in the laboratory every day just to complete the research project.",
+        "translation_en": "He works late in the laboratory every day just to complete the research project.",
+        "translation_id": "Dia bekerja lembur di laboratorium setiap hari hanya untuk menyelesaikan proyek penelitiannya."
+      },
+      {
+        "speaker": "user",
+        "text": "这位科学家的研究成果，直到他的后代整理档案时才被重新发现。",
+        "hanzi": "这位科学家的研究成果，直到他的后代整理档案时才被重新发现。",
+        "pinyin": "zhè wèi kē xué jiā de yán jiū chéng guǒ ， zhí dào tā de hòu dài zhěng lǐ dàng àn shí cái bèi chóng xīn fā xiàn 。",
+        "zhuyin": "ㄓㄜˋ ㄨㄟˋ ㄎㄜ ㄒㄩㄝˊ ㄐㄧㄚ ㄉㄜ˙ ㄧㄢˊ ㄐㄧㄡ ㄔㄥˊ ㄍㄨㄛˇ ， ㄓˊ ㄉㄠˋ ㄊㄚ ㄉㄜ˙ ㄏㄡˋ ㄉㄞˋ ㄓㄥˇ ㄌㄧˇ ㄉㄤˋ ㄢˋ ㄕˊ ㄘㄞˊ ㄅㄟˋ ㄔㄨㄥˊ ㄒㄧㄣ ㄈㄚ ㄒㄧㄢˋ 。",
+        "romanization": "Zhè wèi kēxuéjiā de yánjiū chéngguǒ, zhídào tā de hòudài zhěnglǐ dàng&#x27;àn shí cái bèi chóngxīn fāxiàn.",
+        "translation": "The scientist&#x27;s research findings were not rediscovered until his descendants organised his files.",
+        "translation_en": "The scientist&#x27;s research findings were not rediscovered until his descendants organised his files.",
+        "translation_id": "Temuan penelitian sang ilmuwan tidak ditemukan kembali sampai keturunannya menyusun arsipnya."
+      }
+    ],
+    "examMappings": {
+      "hsk": 4
+    },
+    "audio": "conv:conv-hsk-hsk4-yanjiu",
+    "language": "zh"
+  },
+  {
+    "id": "conv-hsk-hsk4-zhenzheng1",
+    "title": "真正",
+    "title_en": "Talking about genuine; real; true; really; indeed",
+    "title_id": "Ngobrol tentang asli",
+    "context": "You chat about genuine; real; true; really; indeed.",
+    "context_en": "You chat about genuine; real; true; really; indeed.",
+    "context_id": "Kamu mengobrol tentang asli.",
+    "formality": "neutral",
+    "level": 4,
+    "turns": [
+      {
+        "speaker": "tutor",
+        "text": "她的才华早已得到认可，只是缺少一个真正展示自己的舞台。",
+        "hanzi": "她的才华早已得到认可，只是缺少一个真正展示自己的舞台。",
+        "pinyin": "tā de cái huá zǎo yǐ dé dào rèn kě ， zhǐ shì quē shǎo yí gè zhēn zhèng zhǎn shì zì jǐ de wǔ tái 。",
+        "zhuyin": "ㄊㄚ ㄉㄜ˙ ㄘㄞˊ ㄏㄨㄚˊ ㄗㄠˇ ㄧˇ ㄉㄜˊ ㄉㄠˋ ㄖㄣˋ ㄎㄜˇ ， ㄓˇ ㄕˋ ㄑㄩㄝ ㄕㄠˇ ㄧˊ ㄍㄜˋ ㄓㄣ ㄓㄥˋ ㄓㄢˇ ㄕˋ ㄗˋ ㄐㄧˇ ㄉㄜ˙ ㄨˇ ㄊㄞˊ 。",
+        "romanization": "Tā de cáihuá zǎo yǐ dédào rènkě, zhǐshì quēshǎo yí gè zhēnzhèng zhǎnshì zìjǐ de wǔtái.",
+        "translation": "Her talent has long been recognised; she simply lacks a stage on which to truly show herself.",
+        "translation_en": "Her talent has long been recognised; she simply lacks a stage on which to truly show herself.",
+        "translation_id": "Bakatnya sudah lama diakui; ia hanya belum memiliki panggung untuk benar-benar menunjukkan kemampuannya."
+      },
+      {
+        "speaker": "user",
+        "text": "真正富的人不一定只关心钱。",
+        "hanzi": "真正富的人不一定只关心钱。",
+        "pinyin": "zhēn zhèng fù de rén bù yí dìng zhǐ guān xīn qián 。",
+        "zhuyin": "ㄓㄣ ㄓㄥˋ ㄈㄨˋ ㄉㄜ˙ ㄖㄣˊ ㄅㄨˋ ㄧˊ ㄉㄧㄥˋ ㄓˇ ㄍㄨㄢ ㄒㄧㄣ ㄑㄧㄢˊ 。",
+        "romanization": "Zhēnzhèng fù de rén bù yídìng zhǐ guānxīn qián.",
+        "translation": "People who are truly rich do not necessarily care only about money.",
+        "translation_en": "People who are truly rich do not necessarily care only about money.",
+        "translation_id": "Orang-orang yang benar-benar kaya tidak selalu hanya mementingkan uang."
+      },
+      {
+        "speaker": "tutor",
+        "text": "如果垃圾遍地，游客再多也无法证明这座城市真正文明。",
+        "hanzi": "如果垃圾遍地，游客再多也无法证明这座城市真正文明。",
+        "pinyin": "rú guǒ lā jī biàn dì ， yóu kè zài duō yě wú fǎ zhèng míng zhè zuò chéng shì zhēn zhèng wén míng 。",
+        "zhuyin": "ㄖㄨˊ ㄍㄨㄛˇ ㄌㄚ ㄐㄧ ㄅㄧㄢˋ ㄉㄧˋ ， ㄧㄡˊ ㄎㄜˋ ㄗㄞˋ ㄉㄨㄛ ㄧㄝˇ ㄨˊ ㄈㄚˇ ㄓㄥˋ ㄇㄧㄥˊ ㄓㄜˋ ㄗㄨㄛˋ ㄔㄥˊ ㄕˋ ㄓㄣ ㄓㄥˋ ㄨㄣˊ ㄇㄧㄥˊ 。",
+        "romanization": "Rúguǒ lājī biàndì, yóukè zài duō yě wúfǎ zhèngmíng zhè zuò chéngshì zhēnzhèng wénmíng.",
+        "translation": "If rubbish is everywhere, no number of tourists can prove that this city is truly civilised.",
+        "translation_en": "If rubbish is everywhere, no number of tourists can prove that this city is truly civilised.",
+        "translation_id": "Kalau sampah berserakan di mana-mana, tak ada satu pun wisatawan yang bisa membuktikan bahwa kota ini benar-benar beradab."
+      },
+      {
+        "speaker": "user",
+        "text": "最近工作非常忙碌，他连周末都没有真正休息。",
+        "hanzi": "最近工作非常忙碌，他连周末都没有真正休息。",
+        "pinyin": "zuì jìn gōng zuò fēi cháng máng lù ， tā lián zhōu mò dōu méi yǒu zhēn zhèng xiū xī 。",
+        "zhuyin": "ㄗㄨㄟˋ ㄐㄧㄣˋ ㄍㄨㄥ ㄗㄨㄛˋ ㄈㄟ ㄔㄤˊ ㄇㄤˊ ㄌㄨˋ ， ㄊㄚ ㄌㄧㄢˊ ㄓㄡ ㄇㄛˋ ㄉㄡ ㄇㄟˊ ㄧㄡˇ ㄓㄣ ㄓㄥˋ ㄒㄧㄡ ㄒㄧ 。",
+        "romanization": "Zuìjìn gōngzuò fēicháng mánglù, tā lián zhōumò dōu méiyǒu zhēnzhèng xiūxi.",
+        "translation": "Recently work has been very busy; he has not truly rested even at weekends.",
+        "translation_en": "Recently work has been very busy; he has not truly rested even at weekends.",
+        "translation_id": "Belakangan ini pekerjaannya sangat padat; dia bahkan belum benar-benar beristirahat di akhir pekan sekalipun."
+      },
+      {
+        "speaker": "tutor",
+        "text": "如果政策只停留在口号上，就不可能真正结果。",
+        "hanzi": "如果政策只停留在口号上，就不可能真正结果。",
+        "pinyin": "rú guǒ zhèng cè zhǐ tíng liú zài kǒu hào shàng ， jiù bù kě néng zhēn zhèng jié guǒ 。",
+        "zhuyin": "ㄖㄨˊ ㄍㄨㄛˇ ㄓㄥˋ ㄘㄜˋ ㄓˇ ㄊㄧㄥˊ ㄌㄧㄡˊ ㄗㄞˋ ㄎㄡˇ ㄏㄠˋ ㄕㄤˋ ， ㄐㄧㄡˋ ㄅㄨˋ ㄎㄜˇ ㄋㄥˊ ㄓㄣ ㄓㄥˋ ㄐㄧㄝˊ ㄍㄨㄛˇ 。",
+        "romanization": "Rúguǒ zhèngcè zhǐ tíngliú zài kǒuhào shàng, jiù bù kěnéng zhēnzhèng jiēguǒ.",
+        "translation": "If the policy remains only a slogan, it cannot truly produce results.",
+        "translation_en": "If the policy remains only a slogan, it cannot truly produce results.",
+        "translation_id": "Jika kebijakan hanya sebatas slogan, maka kebijakan tersebut tidak akan benar-benar membuahkan hasil."
+      },
+      {
+        "speaker": "user",
+        "text": "在音乐学院，他被学生们视为真正的大师，而不是单纯的名人。",
+        "hanzi": "在音乐学院，他被学生们视为真正的大师，而不是单纯的名人。",
+        "pinyin": "zài yīn yuè xué yuàn ， tā bèi xué shēng men shì wèi zhēn zhèng de dà shī ， ér bú shì dān chún de míng rén 。",
+        "zhuyin": "ㄗㄞˋ ㄧㄣ ㄩㄝˋ ㄒㄩㄝˊ ㄩㄢˋ ， ㄊㄚ ㄅㄟˋ ㄒㄩㄝˊ ㄕㄥ ㄇㄣ˙ ㄕˋ ㄨㄟˋ ㄓㄣ ㄓㄥˋ ㄉㄜ˙ ㄉㄚˋ ㄕ ， ㄦˊ ㄅㄨˊ ㄕˋ ㄉㄢ ㄔㄨㄣˊ ㄉㄜ˙ ㄇㄧㄥˊ ㄖㄣˊ 。",
+        "romanization": "Zài yīnyuè xuéyuàn, tā bèi xuéshēngmen shìwéi zhēnzhèng de dàshī, ér bú shì dānchún de míngrén.",
+        "translation": "At the music academy, he is regarded by students as a true master, not merely a celebrity.",
+        "translation_en": "At the music academy, he is regarded by students as a true master, not merely a celebrity.",
+        "translation_id": "Di akademi musik tersebut, ia dipandang oleh para siswa sebagai seorang guru sejati, bukan sekadar selebriti."
+      }
+    ],
+    "examMappings": {
+      "hsk": 4
+    },
+    "audio": "conv:conv-hsk-hsk4-zhenzheng1",
+    "language": "zh"
+  },
+  {
+    "id": "conv-hsk-hsk4-chongxin2",
+    "title": "重新",
+    "title_en": "Talking about again; once more; re-",
+    "title_id": "Ngobrol tentang lagi",
+    "context": "You chat about again; once more; re-.",
+    "context_en": "You chat about again; once more; re-.",
+    "context_id": "Kamu mengobrol tentang lagi.",
+    "formality": "neutral",
+    "level": 4,
+    "turns": [
+      {
+        "speaker": "tutor",
+        "text": "公司从那次事故中吸取教训，重新制定了安全流程。",
+        "hanzi": "公司从那次事故中吸取教训，重新制定了安全流程。",
+        "pinyin": "gōng sī cóng nà cì shì gù zhōng xī qǔ jiào xùn ， chóng xīn zhì dìng le ān quán liú chéng 。",
+        "zhuyin": "ㄍㄨㄥ ㄙ ㄘㄨㄥˊ ㄋㄚˋ ㄘˋ ㄕˋ ㄍㄨˋ ㄓㄨㄥ ㄒㄧ ㄑㄩˇ ㄐㄧㄠˋ ㄒㄩㄣˋ ， ㄔㄨㄥˊ ㄒㄧㄣ ㄓˋ ㄉㄧㄥˋ ㄌㄜ˙ ㄢ ㄑㄩㄢˊ ㄌㄧㄡˊ ㄔㄥˊ 。",
+        "romanization": "Gōngsī cóng nà cì shìgù zhōng xīqǔ jiàoxùn, chóngxīn zhìdìng le ānquán liúchéng.",
+        "translation": "The company learned a lesson from that accident and drew up new safety procedures.",
+        "translation_en": "The company learned a lesson from that accident and drew up new safety procedures.",
+        "translation_id": "Perusahaan mengambil pelajaran dari kecelakaan itu dan menyusun prosedur keselamatan baru."
+      },
+      {
+        "speaker": "user",
+        "text": "这家公司由兄妹共同继承，管理权需要重新安排。",
+        "hanzi": "这家公司由兄妹共同继承，管理权需要重新安排。",
+        "pinyin": "zhè jiā gōng sī yóu xiōng mèi gòng tóng jì chéng ， guǎn lǐ quán xū yào chóng xīn ān pái 。",
+        "zhuyin": "ㄓㄜˋ ㄐㄧㄚ ㄍㄨㄥ ㄙ ㄧㄡˊ ㄒㄩㄥ ㄇㄟˋ ㄍㄨㄥˋ ㄊㄨㄥˊ ㄐㄧˋ ㄔㄥˊ ， ㄍㄨㄢˇ ㄌㄧˇ ㄑㄩㄢˊ ㄒㄩ ㄧㄠˋ ㄔㄨㄥˊ ㄒㄧㄣ ㄢ ㄆㄞˊ 。",
+        "romanization": "Zhè jiā gōngsī yóu xiōngmèi gòngtóng jìchéng, guǎnlǐquán xūyào chóngxīn ānpái.",
+        "translation": "This company was jointly inherited by the brother and sister, so management rights need to be rearranged.",
+        "translation_en": "This company was jointly inherited by the brother and sister, so management rights need to be rearranged.",
+        "translation_id": "Perusahaan ini diwarisi bersama oleh kakak beradik tersebut, sehingga hak pengelolaannya perlu diatur ulang."
+      },
+      {
+        "speaker": "tutor",
+        "text": "我们要么接受现有条件，要么重新寻找合作方。",
+        "hanzi": "我们要么接受现有条件，要么重新寻找合作方。",
+        "pinyin": "wǒ men yào me jiē shòu xiàn yǒu tiáo jiàn ， yào me chóng xīn xún zhǎo hé zuò fāng 。",
+        "zhuyin": "ㄨㄛˇ ㄇㄣ˙ ㄧㄠˋ ㄇㄜ˙ ㄐㄧㄝ ㄕㄡˋ ㄒㄧㄢˋ ㄧㄡˇ ㄊㄧㄠˊ ㄐㄧㄢˋ ， ㄧㄠˋ ㄇㄜ˙ ㄔㄨㄥˊ ㄒㄧㄣ ㄒㄩㄣˊ ㄓㄠˇ ㄏㄜˊ ㄗㄨㄛˋ ㄈㄤ 。",
+        "romanization": "Wǒmen yàome jiēshòu xiànyǒu tiáojiàn, yàome chóngxīn xúnzhǎo hézuòfāng.",
+        "translation": "We either accept the current conditions or look for a new partner.",
+        "translation_en": "We either accept the current conditions or look for a new partner.",
+        "translation_id": "Kita bisa memilih untuk menerima kondisi saat ini atau mencari mitra baru."
+      },
+      {
+        "speaker": "user",
+        "text": "这次失败促使他重新思考自己的学习方法。",
+        "hanzi": "这次失败促使他重新思考自己的学习方法。",
+        "pinyin": "zhè cì shī bài cù shǐ tā chóng xīn sī kǎo zì jǐ de xué xí fāng fǎ 。",
+        "zhuyin": "ㄓㄜˋ ㄘˋ ㄕ ㄅㄞˋ ㄘㄨˋ ㄕˇ ㄊㄚ ㄔㄨㄥˊ ㄒㄧㄣ ㄙ ㄎㄠˇ ㄗˋ ㄐㄧˇ ㄉㄜ˙ ㄒㄩㄝˊ ㄒㄧˊ ㄈㄤ ㄈㄚˇ 。",
+        "romanization": "Zhè cì shībài cùshǐ tā chóngxīn sīkǎo zìjǐ de xuéxí fāngfǎ.",
+        "translation": "This failure prompted him to rethink his own study methods.",
+        "translation_en": "This failure prompted him to rethink his own study methods.",
+        "translation_id": "Kegagalan ini mendorongnya untuk memikirkan kembali metode belajarnya sendiri."
+      },
+      {
+        "speaker": "tutor",
+        "text": "他失业以后，没有放弃，而是重新学习新技能。",
+        "hanzi": "他失业以后，没有放弃，而是重新学习新技能。",
+        "pinyin": "tā shī yè yǐ hòu ， méi yǒu fàng qì ， ér shì chóng xīn xué xí xīn jì néng 。",
+        "zhuyin": "ㄊㄚ ㄕ ㄧㄝˋ ㄧˇ ㄏㄡˋ ， ㄇㄟˊ ㄧㄡˇ ㄈㄤˋ ㄑㄧˋ ， ㄦˊ ㄕˋ ㄔㄨㄥˊ ㄒㄧㄣ ㄒㄩㄝˊ ㄒㄧˊ ㄒㄧㄣ ㄐㄧˋ ㄋㄥˊ 。",
+        "romanization": "Tā shīyè yǐhòu, méi yǒu fàngqì, ér shì chóngxīn xuéxí xīn jìnéng.",
+        "translation": "After losing his job, he did not give up but started learning new skills again.",
+        "translation_en": "After losing his job, he did not give up but started learning new skills again.",
+        "translation_id": "Setelah kehilangan pekerjaannya, ia tidak menyerah, melainkan mulai mempelajari keterampilan baru lagi."
+      },
+      {
+        "speaker": "user",
+        "text": "我们需要重新组合这些资料。",
+        "hanzi": "我们需要重新组合这些资料。",
+        "pinyin": "wǒ men xū yào chóng xīn zǔ hé zhè xiē zī liào 。",
+        "zhuyin": "ㄨㄛˇ ㄇㄣ˙ ㄒㄩ ㄧㄠˋ ㄔㄨㄥˊ ㄒㄧㄣ ㄗㄨˇ ㄏㄜˊ ㄓㄜˋ ㄒㄧㄝ ㄗ ㄌㄧㄠˋ 。",
+        "romanization": "Wǒmen xūyào chóngxīn zǔhé zhèxiē zīliào.",
+        "translation": "We need to recombine these materials.",
+        "translation_en": "We need to recombine these materials.",
+        "translation_id": "Kita perlu menggabungkan kembali bahan-bahan ini."
+      }
+    ],
+    "examMappings": {
+      "hsk": 4
+    },
+    "audio": "conv:conv-hsk-hsk4-chongxin2",
+    "language": "zh"
+  }
+]
