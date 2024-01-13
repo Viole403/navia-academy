@@ -1,0 +1,254 @@
+[
+  {
+    "id": "conv-hsk-hsk5-zhidu",
+    "title": "制度",
+    "title_en": "Talking about system, institution",
+    "title_id": "Ngobrol tentang sistem, institusi",
+    "context": "You chat about system, institution.",
+    "context_en": "You chat about system, institution.",
+    "context_id": "Kamu mengobrol tentang sistem, institusi.",
+    "formality": "neutral",
+    "level": 5,
+    "turns": [
+      {
+        "speaker": "tutor",
+        "text": "他认为权力必须受到法律和制度的限制。",
+        "hanzi": "他认为权力必须受到法律和制度的限制。",
+        "pinyin": "tā rèn wéi quán lì bì xū shòu dào fǎ lǜ hé zhì dù de xiàn zhì 。",
+        "zhuyin": "ㄊㄚ ㄖㄣˋ ㄨㄟˊ ㄑㄩㄢˊ ㄌㄧˋ ㄅㄧˋ ㄒㄩ ㄕㄡˋ ㄉㄠˋ ㄈㄚˇ ㄌㄩˋ ㄏㄜˊ ㄓˋ ㄉㄨˋ ㄉㄜ˙ ㄒㄧㄢˋ ㄓˋ 。",
+        "romanization": "Tā rènwéi quánlì bìxū shòudào fǎlǜ hé zhìdù de xiànzhì.",
+        "translation": "He believes that power must be limited by law and institutions.",
+        "translation_en": "He believes that power must be limited by law and institutions.",
+        "translation_id": "Ia percaya bahwa kekuasaan harus dibatasi oleh hukum dan institusi."
+      },
+      {
+        "speaker": "user",
+        "text": "我们需要设计一套更完整的管理制度。",
+        "hanzi": "我们需要设计一套更完整的管理制度。",
+        "pinyin": "wǒ men xū yào shè jì yī tào gèng wán zhěng de guǎn lǐ zhì dù 。",
+        "zhuyin": "ㄨㄛˇ ㄇㄣ˙ ㄒㄩ ㄧㄠˋ ㄕㄜˋ ㄐㄧˋ ㄧ ㄊㄠˋ ㄍㄥˋ ㄨㄢˊ ㄓㄥˇ ㄉㄜ˙ ㄍㄨㄢˇ ㄌㄧˇ ㄓˋ ㄉㄨˋ 。",
+        "romanization": "Wǒmen xūyào shèjì yí tào gèng wánzhěng de guǎnlǐ zhìdù.",
+        "translation": "We need to design a more complete set of management rules.",
+        "translation_en": "We need to design a more complete set of management rules.",
+        "translation_id": "Kita perlu merancang seperangkat aturan pengelolaan yang lebih lengkap."
+      },
+      {
+        "speaker": "tutor",
+        "text": "学校希望建立一套更公平的评价制度。",
+        "hanzi": "学校希望建立一套更公平的评价制度。",
+        "pinyin": "xué xiào xī wàng jiàn lì yī tào gèng gōng píng de píng jià zhì dù 。",
+        "zhuyin": "ㄒㄩㄝˊ ㄒㄧㄠˋ ㄒㄧ ㄨㄤˋ ㄐㄧㄢˋ ㄌㄧˋ ㄧ ㄊㄠˋ ㄍㄥˋ ㄍㄨㄥ ㄆㄧㄥˊ ㄉㄜ˙ ㄆㄧㄥˊ ㄐㄧㄚˋ ㄓˋ ㄉㄨˋ 。",
+        "romanization": "Xuéxiào xīwàng jiànlì yí tào gèng gōngpíng de píngjià zhìdù.",
+        "translation": "The school hopes to establish a fairer evaluation system.",
+        "translation_en": "The school hopes to establish a fairer evaluation system.",
+        "translation_id": "Pihak sekolah berharap dapat membangun sistem evaluasi yang lebih adil."
+      },
+      {
+        "speaker": "user",
+        "text": "承认制度的缺陷，是改进工作的第一步。",
+        "hanzi": "承认制度的缺陷，是改进工作的第一步。",
+        "pinyin": "chéng rèn zhì dù de quē xiàn ， shì gǎi jìn gōng zuò de dì yī bù 。",
+        "zhuyin": "ㄔㄥˊ ㄖㄣˋ ㄓˋ ㄉㄨˋ ㄉㄜ˙ ㄑㄩㄝ ㄒㄧㄢˋ ， ㄕˋ ㄍㄞˇ ㄐㄧㄣˋ ㄍㄨㄥ ㄗㄨㄛˋ ㄉㄜ˙ ㄉㄧˋ ㄧ ㄅㄨˋ 。",
+        "romanization": "Chéngrèn zhìdù de quēxiàn, shì gǎijìn gōngzuò de dì yī bù.",
+        "translation": "Acknowledging the defects in the system is the first step towards improving the work.",
+        "translation_en": "Acknowledging the defects in the system is the first step towards improving the work.",
+        "translation_id": "Mengakui kelemahan dalam sistem adalah langkah pertama menuju perbaikan pekerjaan."
+      },
+      {
+        "speaker": "tutor",
+        "text": "在多元社会中，和平相处需要制度保障，也需要彼此尊重。",
+        "hanzi": "在多元社会中，和平相处需要制度保障，也需要彼此尊重。",
+        "pinyin": "zài duō yuán shè huì zhōng ， hé píng xiāng chǔ xū yào zhì dù bǎo zhàng ， yě xū yào bǐ cǐ zūn zhòng 。",
+        "zhuyin": "ㄗㄞˋ ㄉㄨㄛ ㄩㄢˊ ㄕㄜˋ ㄏㄨㄟˋ ㄓㄨㄥ ， ㄏㄜˊ ㄆㄧㄥˊ ㄒㄧㄤ ㄔㄨˇ ㄒㄩ ㄧㄠˋ ㄓˋ ㄉㄨˋ ㄅㄠˇ ㄓㄤˋ ， ㄧㄝˇ ㄒㄩ ㄧㄠˋ ㄅㄧˇ ㄘˇ ㄗㄨㄣ ㄓㄨㄥˋ 。",
+        "romanization": "Zài duōyuán shèhuì zhōng, hépíng xiāngchǔ xūyào zhìdù bǎozhàng, yě xūyào bǐcǐ zūnzhòng.",
+        "translation": "In a diverse society, peaceful coexistence requires institutional safeguards as well as mutual respect.",
+        "translation_en": "In a diverse society, peaceful coexistence requires institutional safeguards as well as mutual respect.",
+        "translation_id": "Dalam masyarakat yang beragam, hidup berdampingan secara damai membutuhkan perlindungan kelembagaan dan saling menghormati."
+      },
+      {
+        "speaker": "user",
+        "text": "完善社会福利制度，需要财政能力和公共服务同时跟上。",
+        "hanzi": "完善社会福利制度，需要财政能力和公共服务同时跟上。",
+        "pinyin": "wán shàn shè huì fú lì zhì dù ， xū yào cái zhèng néng lì hé gōng gòng fú wù tóng shí gēn shàng 。",
+        "zhuyin": "ㄨㄢˊ ㄕㄢˋ ㄕㄜˋ ㄏㄨㄟˋ ㄈㄨˊ ㄌㄧˋ ㄓˋ ㄉㄨˋ ， ㄒㄩ ㄧㄠˋ ㄘㄞˊ ㄓㄥˋ ㄋㄥˊ ㄌㄧˋ ㄏㄜˊ ㄍㄨㄥ ㄍㄨㄥˋ ㄈㄨˊ ㄨˋ ㄊㄨㄥˊ ㄕˊ ㄍㄣ ㄕㄤˋ 。",
+        "romanization": "Wánshàn shèhuì fúlì zhìdù, xūyào cáizhèng nénglì hé gōnggòng fúwù tóngshí gēnshàng.",
+        "translation": "Improving the social welfare system requires both fiscal capacity and public services to keep pace.",
+        "translation_en": "Improving the social welfare system requires both fiscal capacity and public services to keep pace.",
+        "translation_id": "Peningkatan sistem kesejahteraan sosial memerlukan kapasitas fiskal dan layanan publik untuk mengimbanginya."
+      }
+    ],
+    "examMappings": {
+      "hsk": 5
+    },
+    "audio": "conv:conv-hsk-hsk5-zhidu",
+    "language": "zh"
+  },
+  {
+    "id": "conv-hsk-hsk5-zhengfu1",
+    "title": "政府",
+    "title_en": "Talking about government; CL:個|个[ge4]",
+    "title_id": "Ngobrol tentang pemerintah",
+    "context": "You chat about government; CL:個|个[ge4].",
+    "context_en": "You chat about government; CL:個|个[ge4].",
+    "context_id": "Kamu mengobrol tentang pemerintah.",
+    "formality": "neutral",
+    "level": 5,
+    "turns": [
+      {
+        "speaker": "tutor",
+        "text": "政府正在改善城市的住房条件。",
+        "hanzi": "政府正在改善城市的住房条件。",
+        "pinyin": "zhèng fǔ zhèng zài gǎi shàn chéng shì de zhù fáng tiáo jiàn 。",
+        "zhuyin": "ㄓㄥˋ ㄈㄨˇ ㄓㄥˋ ㄗㄞˋ ㄍㄞˇ ㄕㄢˋ ㄔㄥˊ ㄕˋ ㄉㄜ˙ ㄓㄨˋ ㄈㄤˊ ㄊㄧㄠˊ ㄐㄧㄢˋ 。",
+        "romanization": "Zhèngfǔ zhèngzài gǎishàn chéngshì de zhùfáng tiáojiàn.",
+        "translation": "The government is improving the city&#x27;s housing conditions.",
+        "translation_en": "The government is improving the city&#x27;s housing conditions.",
+        "translation_id": "Pemerintah sedang memperbaiki kondisi perumahan kota."
+      },
+      {
+        "speaker": "user",
+        "text": "为了保护环境，政府开始限制一次性塑料袋的使用。",
+        "hanzi": "为了保护环境，政府开始限制一次性塑料袋的使用。",
+        "pinyin": "wèi le bǎo hù huán jìng ， zhèng fǔ kāi shǐ xiàn zhì yí cì xìng sù liào dài de shǐ yòng 。",
+        "zhuyin": "ㄨㄟˋ ㄌㄜ˙ ㄅㄠˇ ㄏㄨˋ ㄏㄨㄢˊ ㄐㄧㄥˋ ， ㄓㄥˋ ㄈㄨˇ ㄎㄞ ㄕˇ ㄒㄧㄢˋ ㄓˋ ㄧˊ ㄘˋ ㄒㄧㄥˋ ㄙㄨˋ ㄌㄧㄠˋ ㄉㄞˋ ㄉㄜ˙ ㄕˇ ㄩㄥˋ 。",
+        "romanization": "Wèile bǎohù huánjìng, zhèngfǔ kāishǐ xiànzhì yí cì xìng sùliào dài de shǐyòng.",
+        "translation": "To protect the environment, the government has begun to limit the use of single-use plastic bags.",
+        "translation_en": "To protect the environment, the government has begun to limit the use of single-use plastic bags.",
+        "translation_id": "Untuk menjaga lingkungan, pemerintah mulai membatasi penggunaan kantong plastik sekali pakai."
+      },
+      {
+        "speaker": "tutor",
+        "text": "政府正在大力发展公共交通，以减少城市污染。",
+        "hanzi": "政府正在大力发展公共交通，以减少城市污染。",
+        "pinyin": "zhèng fǔ zhèng zài dà lì fā zhǎn gōng gòng jiāo tōng ， yǐ jiǎn shǎo chéng shì wū rǎn 。",
+        "zhuyin": "ㄓㄥˋ ㄈㄨˇ ㄓㄥˋ ㄗㄞˋ ㄉㄚˋ ㄌㄧˋ ㄈㄚ ㄓㄢˇ ㄍㄨㄥ ㄍㄨㄥˋ ㄐㄧㄠ ㄊㄨㄥ ， ㄧˇ ㄐㄧㄢˇ ㄕㄠˇ ㄔㄥˊ ㄕˋ ㄨ ㄖㄢˇ 。",
+        "romanization": "Zhèngfǔ zhèngzài dàlì fāzhǎn gōnggòng jiāotōng, yǐ jiǎnshǎo chéngshì wūrǎn.",
+        "translation": "The government is vigorously developing public transport to reduce urban pollution.",
+        "translation_en": "The government is vigorously developing public transport to reduce urban pollution.",
+        "translation_id": "Pemerintah giat mengembangkan transportasi umum untuk mengurangi polusi perkotaan."
+      },
+      {
+        "speaker": "user",
+        "text": "为了便利居民出行，政府增加了夜间公交车。",
+        "hanzi": "为了便利居民出行，政府增加了夜间公交车。",
+        "pinyin": "wèi le biàn lì jū mín chū xíng ， zhèng fǔ zēng jiā le yè jiān gōng jiāo chē 。",
+        "zhuyin": "ㄨㄟˋ ㄌㄜ˙ ㄅㄧㄢˋ ㄌㄧˋ ㄐㄩ ㄇㄧㄣˊ ㄔㄨ ㄒㄧㄥˊ ， ㄓㄥˋ ㄈㄨˇ ㄗㄥ ㄐㄧㄚ ㄌㄜ˙ ㄧㄝˋ ㄐㄧㄢ ㄍㄨㄥ ㄐㄧㄠ ㄔㄜ 。",
+        "romanization": "Wèile biànlì jūmín chūxíng, zhèngfǔ zēngjiā le yèjiān gōngjiāochē.",
+        "translation": "To make travel easier for residents, the government added night buses.",
+        "translation_en": "To make travel easier for residents, the government added night buses.",
+        "translation_id": "Untuk memudahkan perjalanan warga, pemerintah menambahkan bus malam."
+      },
+      {
+        "speaker": "tutor",
+        "text": "政府推出了一系列措施，以缓解住房压力。",
+        "hanzi": "政府推出了一系列措施，以缓解住房压力。",
+        "pinyin": "zhèng fǔ tuī chū le yī xì liè cuò shī ， yǐ huǎn jiě zhù fáng yā lì 。",
+        "zhuyin": "ㄓㄥˋ ㄈㄨˇ ㄊㄨㄟ ㄔㄨ ㄌㄜ˙ ㄧ ㄒㄧˋ ㄌㄧㄝˋ ㄘㄨㄛˋ ㄕ ， ㄧˇ ㄏㄨㄢˇ ㄐㄧㄝˇ ㄓㄨˋ ㄈㄤˊ ㄧㄚ ㄌㄧˋ 。",
+        "romanization": "Zhèngfǔ tuīchū le yíxìliè cuòshī, yǐ huǎnjiě zhùfáng yālì.",
+        "translation": "The government introduced a series of measures to ease housing pressure.",
+        "translation_en": "The government introduced a series of measures to ease housing pressure.",
+        "translation_id": "Pemerintah memperkenalkan serangkaian langkah untuk mengurangi tekanan perumahan."
+      },
+      {
+        "speaker": "user",
+        "text": "这个山区交通不方便，因此当地政府正在建设新的公路。",
+        "hanzi": "这个山区交通不方便，因此当地政府正在建设新的公路。",
+        "pinyin": "zhè ge shān qū jiāo tōng bù fāng biàn ， yīn cǐ dāng dì zhèng fǔ zhèng zài jiàn shè xīn de gōng lù 。",
+        "zhuyin": "ㄓㄜˋ ㄍㄜ˙ ㄕㄢ ㄑㄩ ㄐㄧㄠ ㄊㄨㄥ ㄅㄨˋ ㄈㄤ ㄅㄧㄢˋ ， ㄧㄣ ㄘˇ ㄉㄤ ㄉㄧˋ ㄓㄥˋ ㄈㄨˇ ㄓㄥˋ ㄗㄞˋ ㄐㄧㄢˋ ㄕㄜˋ ㄒㄧㄣ ㄉㄜ˙ ㄍㄨㄥ ㄌㄨˋ 。",
+        "romanization": "Zhège shānqū jiāotōng bù fāngbiàn, yīncǐ dāngdì zhèngfǔ zhèngzài jiànshè xīn de gōnglù.",
+        "translation": "This mountain area has inconvenient transport, so the local government is building new roads.",
+        "translation_en": "This mountain area has inconvenient transport, so the local government is building new roads.",
+        "translation_id": "Daerah pegunungan ini memiliki akses transportasi yang kurang memadai, sehingga pemerintah daerah sedang membangun jalan-jalan baru."
+      }
+    ],
+    "examMappings": {
+      "hsk": 5
+    },
+    "audio": "conv:conv-hsk-hsk5-zhengfu1",
+    "language": "zh"
+  },
+  {
+    "id": "conv-hsk-hsk5-faner2",
+    "title": "反而",
+    "title_en": "Talking about on the contrary, instead",
+    "title_id": "Ngobrol tentang justru sebaliknya, malah",
+    "context": "You chat about on the contrary, instead.",
+    "context_en": "You chat about on the contrary, instead.",
+    "context_id": "Kamu mengobrol tentang justru sebaliknya, malah.",
+    "formality": "neutral",
+    "level": 5,
+    "turns": [
+      {
+        "speaker": "tutor",
+        "text": "这块土地太肥，种香草反而容易长得过旺。",
+        "hanzi": "这块土地太肥，种香草反而容易长得过旺。",
+        "pinyin": "zhè kuài tǔ dì tài féi ， zhǒng xiāng cǎo fǎn ér róng yì zhǎng dé guò wàng 。",
+        "zhuyin": "ㄓㄜˋ ㄎㄨㄞˋ ㄊㄨˇ ㄉㄧˋ ㄊㄞˋ ㄈㄟˊ ， ㄓㄨㄥˇ ㄒㄧㄤ ㄘㄠˇ ㄈㄢˇ ㄦˊ ㄖㄨㄥˊ ㄧˋ ㄓㄤˇ ㄉㄜˊ ㄍㄨㄛˋ ㄨㄤˋ 。",
+        "romanization": "Zhè kuài tǔdì tài féi, zhòng xiāngcǎo fǎn&#x27;ér róngyì zhǎng de guò wàng.",
+        "translation": "This piece of land is too fertile; herbs planted there may actually grow too vigorously.",
+        "translation_en": "This piece of land is too fertile; herbs planted there may actually grow too vigorously.",
+        "translation_id": "Lahan ini terlalu subur; tanaman herbal yang ditanam di sana justru mungkin tumbuh terlalu subur."
+      },
+      {
+        "speaker": "user",
+        "text": "此刻的沉默并不代表同意，反而可能隐藏着更深的不满。",
+        "hanzi": "此刻的沉默并不代表同意，反而可能隐藏着更深的不满。",
+        "pinyin": "cǐ kè de chén mò bìng bù dài biǎo tóng yì ， fǎn ér kě néng yǐn cáng zhe gēng shēn de bù mǎn 。",
+        "zhuyin": "ㄘˇ ㄎㄜˋ ㄉㄜ˙ ㄔㄣˊ ㄇㄛˋ ㄅㄧㄥˋ ㄅㄨˋ ㄉㄞˋ ㄅㄧㄠˇ ㄊㄨㄥˊ ㄧˋ ， ㄈㄢˇ ㄦˊ ㄎㄜˇ ㄋㄥˊ ㄧㄣˇ ㄘㄤˊ ㄓㄜ˙ ㄍㄥ ㄕㄣ ㄉㄜ˙ ㄅㄨˋ ㄇㄢˇ 。",
+        "romanization": "Cǐkè de chénmò bìng bù dàibiǎo tóngyì, fǎn&#x27;ér kěnéng yǐncáng zhe gèng shēn de bùmǎn.",
+        "translation": "The silence at this moment does not mean agreement; on the contrary, it may hide deeper dissatisfaction.",
+        "translation_en": "The silence at this moment does not mean agreement; on the contrary, it may hide deeper dissatisfaction.",
+        "translation_id": "Keheningan saat ini tidak berarti persetujuan; sebaliknya, hal ini mungkin menyembunyikan ketidakpuasan yang lebih dalam."
+      },
+      {
+        "speaker": "tutor",
+        "text": "如果分工过细，员工反而可能失去对整体流程的理解。",
+        "hanzi": "如果分工过细，员工反而可能失去对整体流程的理解。",
+        "pinyin": "rú guǒ fēn gōng guò xì ， yuán gōng fǎn ér kě néng shī qù duì zhěng tǐ liú chéng de lǐ jiě 。",
+        "zhuyin": "ㄖㄨˊ ㄍㄨㄛˇ ㄈㄣ ㄍㄨㄥ ㄍㄨㄛˋ ㄒㄧˋ ， ㄩㄢˊ ㄍㄨㄥ ㄈㄢˇ ㄦˊ ㄎㄜˇ ㄋㄥˊ ㄕ ㄑㄩˋ ㄉㄨㄟˋ ㄓㄥˇ ㄊㄧˇ ㄌㄧㄡˊ ㄔㄥˊ ㄉㄜ˙ ㄌㄧˇ ㄐㄧㄝˇ 。",
+        "romanization": "Rúguǒ fēngōng guò xì, yuángōng fǎn&#x27;ér kěnéng shīqù duì zhěngtǐ liúchéng de lǐjiě.",
+        "translation": "If the division of labour is too detailed, employees may instead lose their understanding of the overall process.",
+        "translation_en": "If the division of labour is too detailed, employees may instead lose their understanding of the overall process.",
+        "translation_id": "Jika pembagian kerja terlalu rinci, karyawan malah bisa kehilangan pemahaman terhadap keseluruhan proses."
+      },
+      {
+        "speaker": "user",
+        "text": "如果企业的治理结构长期失衡，管理效率反而会倒退。",
+        "hanzi": "如果企业的治理结构长期失衡，管理效率反而会倒退。",
+        "pinyin": "rú guǒ qǐ yè de zhì lǐ jié gòu cháng qī shī héng ， guǎn lǐ xiào lǜ fǎn ér huì dào tuì 。",
+        "zhuyin": "ㄖㄨˊ ㄍㄨㄛˇ ㄑㄧˇ ㄧㄝˋ ㄉㄜ˙ ㄓˋ ㄌㄧˇ ㄐㄧㄝˊ ㄍㄡˋ ㄔㄤˊ ㄑㄧ ㄕ ㄏㄥˊ ， ㄍㄨㄢˇ ㄌㄧˇ ㄒㄧㄠˋ ㄌㄩˋ ㄈㄢˇ ㄦˊ ㄏㄨㄟˋ ㄉㄠˋ ㄊㄨㄟˋ 。",
+        "romanization": "Rúguǒ qǐyè de zhìlǐ jiégòu chángqī shīhéng, guǎnlǐ xiàolǜ fǎn&#x27;ér huì dàotuì.",
+        "translation": "If a company&#x27;s governance structure remains imbalanced for a long time, management efficiency may actually regress.",
+        "translation_en": "If a company&#x27;s governance structure remains imbalanced for a long time, management efficiency may actually regress.",
+        "translation_id": "Jika struktur tata kelola perusahaan tetap tidak seimbang dalam jangka waktu yang lama, efisiensi manajemen mungkin akan mengalami kemunduran."
+      },
+      {
+        "speaker": "tutor",
+        "text": "这张床太软，我睡了一晚反而腰疼。",
+        "hanzi": "这张床太软，我睡了一晚反而腰疼。",
+        "pinyin": "zhè zhāng chuáng tài ruǎn ， wǒ shuì le yī wǎn fǎn ér yāo téng 。",
+        "zhuyin": "ㄓㄜˋ ㄓㄤ ㄔㄨㄤˊ ㄊㄞˋ ㄖㄨㄢˇ ， ㄨㄛˇ ㄕㄨㄟˋ ㄌㄜ˙ ㄧ ㄨㄢˇ ㄈㄢˇ ㄦˊ ㄧㄠ ㄊㄥˊ 。",
+        "romanization": "Zhè zhāng chuáng tài ruǎn, wǒ shuì le yì wǎn fǎn&#x27;ér yāo téng.",
+        "translation": "This bed is too soft; after sleeping on it for one night my back hurt instead.",
+        "translation_en": "This bed is too soft; after sleeping on it for one night my back hurt instead.",
+        "translation_id": "Tempat tidur ini terlalu empuk; setelah tidur di atasnya semalam, punggungku malah terasa sakit."
+      },
+      {
+        "speaker": "user",
+        "text": "许多家长不解，为什么收费提高后服务反而下降。",
+        "hanzi": "许多家长不解，为什么收费提高后服务反而下降。",
+        "pinyin": "xǔ duō jiā zhǎng bù jiě ， wèi shén me shōu fèi tí gāo hòu fú wù fǎn ér xià jiàng 。",
+        "zhuyin": "ㄒㄩˇ ㄉㄨㄛ ㄐㄧㄚ ㄓㄤˇ ㄅㄨˋ ㄐㄧㄝˇ ， ㄨㄟˋ ㄕㄣˊ ㄇㄜ˙ ㄕㄡ ㄈㄟˋ ㄊㄧˊ ㄍㄠ ㄏㄡˋ ㄈㄨˊ ㄨˋ ㄈㄢˇ ㄦˊ ㄒㄧㄚˋ ㄐㄧㄤˋ 。",
+        "romanization": "Xǔduō jiāzhǎng bùjiě, wèishénme shōufèi tígāo hòu fúwù fǎn&#x27;ér xiàjiàng.",
+        "translation": "Many parents do not understand why the service has declined after the fees were raised.",
+        "translation_en": "Many parents do not understand why the service has declined after the fees were raised.",
+        "translation_id": "Banyak orang tua yang tidak mengerti mengapa kualitas layanan menurun setelah biaya dinaikkan."
+      }
+    ],
+    "examMappings": {
+      "hsk": 5
+    },
+    "audio": "conv:conv-hsk-hsk5-faner2",
+    "language": "zh"
+  }
+]
