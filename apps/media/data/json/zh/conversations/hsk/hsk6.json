@@ -1,0 +1,254 @@
+[
+ {
+  "id": "conv-hsk-hsk6-zhengce",
+  "title": "政策",
+  "title_en": "Talking about policy; CL:個|个[ge4]",
+  "title_id": "Ngobrol tentang kebijakan",
+  "context": "You chat about policy; CL:個|个[ge4].",
+  "context_en": "You chat about policy; CL:個|个[ge4].",
+  "context_id": "Kamu mengobrol tentang kebijakan.",
+  "formality": "neutral",
+  "level": 6,
+  "turns": [
+   {
+    "speaker": "tutor",
+    "text": "投票前，候选人需要公开说明自己的政策主张。",
+    "hanzi": "投票前，候选人需要公开说明自己的政策主张。",
+    "pinyin": "tóu piào qián ， hòu xuǎn rén xū yào gōng kāi shuō míng zì jǐ de zhèng cè zhǔ zhāng 。",
+    "zhuyin": "ㄊㄡˊ ㄆㄧㄠˋ ㄑㄧㄢˊ ， ㄏㄡˋ ㄒㄩㄢˇ ㄖㄣˊ ㄒㄩ ㄧㄠˋ ㄍㄨㄥ ㄎㄞ ㄕㄨㄛ ㄇㄧㄥˊ ㄗˋ ㄐㄧˇ ㄉㄜ˙ ㄓㄥˋ ㄘㄜˋ ㄓㄨˇ ㄓㄤ 。",
+    "romanization": "Tóupiào qián, hòuxuǎn rén xūyào gōngkāi shuōmíng zìjǐ de zhèngcè zhǔzhāng.",
+    "translation": "Before the vote, candidates need to publicly explain their policy positions.",
+    "translation_en": "Before the vote, candidates need to publicly explain their policy positions.",
+    "translation_id": "Sebelum pemungutan suara, para kandidat perlu menjelaskan secara terbuka posisi kebijakan mereka."
+   },
+   {
+    "speaker": "user",
+    "text": "在制定政策前，政府需要考虑社会的方方面面。",
+    "hanzi": "在制定政策前，政府需要考虑社会的方方面面。",
+    "pinyin": "zài zhì dìng zhèng cè qián ， zhèng fǔ xū yào kǎo lǜ shè huì de fāng fāng miàn miàn 。",
+    "zhuyin": "ㄗㄞˋ ㄓˋ ㄉㄧㄥˋ ㄓㄥˋ ㄘㄜˋ ㄑㄧㄢˊ ， ㄓㄥˋ ㄈㄨˇ ㄒㄩ ㄧㄠˋ ㄎㄠˇ ㄌㄩˋ ㄕㄜˋ ㄏㄨㄟˋ ㄉㄜ˙ ㄈㄤ ㄈㄤ ㄇㄧㄢˋ ㄇㄧㄢˋ 。",
+    "romanization": "Zài zhìdìng zhèngcè qián, zhèngfǔ xūyào kǎolǜ shèhuì de fāngfāngmiànmiàn.",
+    "translation": "Before formulating policy, the government needs to consider every aspect of society.",
+    "translation_en": "Before formulating policy, the government needs to consider every aspect of society.",
+    "translation_id": "Sebelum merumuskan kebijakan, pemerintah perlu mempertimbangkan setiap aspek dalam masyarakat."
+   },
+   {
+    "speaker": "tutor",
+    "text": "政策的力量只有在真正落实后才能看出来。",
+    "hanzi": "政策的力量只有在真正落实后才能看出来。",
+    "pinyin": "zhèng cè de lì liàng zhǐ yǒu zài zhēn zhèng luò shí hòu cái néng kàn chū lái 。",
+    "zhuyin": "ㄓㄥˋ ㄘㄜˋ ㄉㄜ˙ ㄌㄧˋ ㄌㄧㄤˋ ㄓˇ ㄧㄡˇ ㄗㄞˋ ㄓㄣ ㄓㄥˋ ㄌㄨㄛˋ ㄕˊ ㄏㄡˋ ㄘㄞˊ ㄋㄥˊ ㄎㄢˋ ㄔㄨ ㄌㄞˊ 。",
+    "romanization": "Zhèngcè de lìliàng zhǐyǒu zài zhēnzhèng luòshí hòu cái néng kàn chūlái.",
+    "translation": "The power of a policy can only be seen after it has truly been put into practice.",
+    "translation_en": "The power of a policy can only be seen after it has truly been put into practice.",
+    "translation_id": "Manfaat suatu kebijakan baru dapat terlihat setelah kebijakan tersebut benar-benar diterapkan."
+   },
+   {
+    "speaker": "user",
+    "text": "在这项政策中，儿童和老人被列为例外情况。",
+    "hanzi": "在这项政策中，儿童和老人被列为例外情况。",
+    "pinyin": "zài zhè xiàng zhèng cè zhōng ， ér tóng hé lǎo rén bèi liè wèi lì wài qíng kuàng 。",
+    "zhuyin": "ㄗㄞˋ ㄓㄜˋ ㄒㄧㄤˋ ㄓㄥˋ ㄘㄜˋ ㄓㄨㄥ ， ㄦˊ ㄊㄨㄥˊ ㄏㄜˊ ㄌㄠˇ ㄖㄣˊ ㄅㄟˋ ㄌㄧㄝˋ ㄨㄟˋ ㄌㄧˋ ㄨㄞˋ ㄑㄧㄥˊ ㄎㄨㄤˋ 。",
+    "romanization": "Zài zhè xiàng zhèngcè zhōng, értóng hé lǎorén bèi lièwéi lìwài qíngkuàng.",
+    "translation": "In this policy, children and elderly people are listed as exceptional cases.",
+    "translation_en": "In this policy, children and elderly people are listed as exceptional cases.",
+    "translation_id": "Dalam kebijakan ini, anak-anak dan orang lanjut usia dimasukkan sebagai kasus luar biasa."
+   },
+   {
+    "speaker": "tutor",
+    "text": "新政策为残疾人提供了更稳定的福利保障。",
+    "hanzi": "新政策为残疾人提供了更稳定的福利保障。",
+    "pinyin": "xīn zhèng cè wèi cán jí rén tí gōng le gèng wěn dìng de fú lì bǎo zhàng 。",
+    "zhuyin": "ㄒㄧㄣ ㄓㄥˋ ㄘㄜˋ ㄨㄟˋ ㄘㄢˊ ㄐㄧˊ ㄖㄣˊ ㄊㄧˊ ㄍㄨㄥ ㄌㄜ˙ ㄍㄥˋ ㄨㄣˇ ㄉㄧㄥˋ ㄉㄜ˙ ㄈㄨˊ ㄌㄧˋ ㄅㄠˇ ㄓㄤˋ 。",
+    "romanization": "Xīn zhèngcè wèi cánjírén tígōng le gèng wěndìng de fúlì bǎozhàng.",
+    "translation": "The new policy provides more stable welfare protection for people with disabilities.",
+    "translation_en": "The new policy provides more stable welfare protection for people with disabilities.",
+    "translation_id": "Kebijakan baru ini memberikan perlindungan kesejahteraan yang lebih stabil bagi penyandang disabilitas."
+   },
+   {
+    "speaker": "user",
+    "text": "效率和公平都很重要，但在这项政策中，后者更需要被优先考虑。",
+    "hanzi": "效率和公平都很重要，但在这项政策中，后者更需要被优先考虑。",
+    "pinyin": "xiào lǜ hé gōng píng dōu hěn zhòng yào ， dàn zài zhè xiàng zhèng cè zhōng ， hòu zhě gèng xū yào bèi yōu xiān kǎo lǜ 。",
+    "zhuyin": "ㄒㄧㄠˋ ㄌㄩˋ ㄏㄜˊ ㄍㄨㄥ ㄆㄧㄥˊ ㄉㄡ ㄏㄣˇ ㄓㄨㄥˋ ㄧㄠˋ ， ㄉㄢˋ ㄗㄞˋ ㄓㄜˋ ㄒㄧㄤˋ ㄓㄥˋ ㄘㄜˋ ㄓㄨㄥ ， ㄏㄡˋ ㄓㄜˇ ㄍㄥˋ ㄒㄩ ㄧㄠˋ ㄅㄟˋ ㄧㄡ ㄒㄧㄢ ㄎㄠˇ ㄌㄩˋ 。",
+    "romanization": "Xiàolǜ hé gōngpíng dōu hěn zhòngyào, dàn zài zhè xiàng zhèngcè zhōng, hòuzhě gèng xūyào bèi yōuxiān kǎolǜ.",
+    "translation": "Efficiency and fairness are both important, but in this policy, the latter needs to be prioritised more.",
+    "translation_en": "Efficiency and fairness are both important, but in this policy, the latter needs to be prioritised more.",
+    "translation_id": "Efisiensi dan keadilan sama-sama penting, tetapi dalam kebijakan ini, keadilan perlu lebih diprioritaskan."
+   }
+  ],
+  "examMappings": {
+   "hsk": 6
+  },
+  "audio": "conv:conv-hsk-hsk6-zhengce",
+  "language": "zh"
+ },
+ {
+  "id": "conv-hsk-hsk6-bude1",
+  "title": "不得",
+  "title_en": "Talking about must not, cannot",
+  "title_id": "Ngobrol tentang tidak boleh, tidak bisa",
+  "context": "You chat about must not, cannot.",
+  "context_en": "You chat about must not, cannot.",
+  "context_id": "Kamu mengobrol tentang tidak boleh, tidak bisa.",
+  "formality": "neutral",
+  "level": 6,
+  "turns": [
+   {
+    "speaker": "tutor",
+    "text": "哦，怪不得他今天没有来，原来是感冒了。",
+    "hanzi": "哦，怪不得他今天没有来，原来是感冒了。",
+    "pinyin": "ó ， guài bù dé tā jīn tiān méi yǒu lái ， yuán lái shì gǎn mào le 。",
+    "zhuyin": "ㄛˊ ， ㄍㄨㄞˋ ㄅㄨˋ ㄉㄜˊ ㄊㄚ ㄐㄧㄣ ㄊㄧㄢ ㄇㄟˊ ㄧㄡˇ ㄌㄞˊ ， ㄩㄢˊ ㄌㄞˊ ㄕˋ ㄍㄢˇ ㄇㄠˋ ㄌㄜ˙ 。",
+    "romanization": "Ò, guàibude tā jīntiān méiyǒu lái, yuánlái shì gǎnmào le.",
+    "translation": "Oh, no wonder he did not come today; it turns out he has caught a cold.",
+    "translation_en": "Oh, no wonder he did not come today; it turns out he has caught a cold.",
+    "translation_id": "Oh, tak heran dia tidak datang hari ini; ternyata dia sedang pilek."
+   },
+   {
+    "speaker": "user",
+    "text": "孩子们围着喷泉奔跑，保安不得不反复提醒他们留神。",
+    "hanzi": "孩子们围着喷泉奔跑，保安不得不反复提醒他们留神。",
+    "pinyin": "hái zi men wéi zhe pēn quán bēn pǎo ， bǎo ān bù dé bù fǎn fù tí xǐng tā men liú shén 。",
+    "zhuyin": "ㄏㄞˊ ㄗ˙ ㄇㄣ˙ ㄨㄟˊ ㄓㄜ˙ ㄆㄣ ㄑㄩㄢˊ ㄅㄣ ㄆㄠˇ ， ㄅㄠˇ ㄢ ㄅㄨˋ ㄉㄜˊ ㄅㄨˋ ㄈㄢˇ ㄈㄨˋ ㄊㄧˊ ㄒㄧㄥˇ ㄊㄚ ㄇㄣ˙ ㄌㄧㄡˊ ㄕㄣˊ 。",
+    "romanization": "Háizimen wéirào zhe pēnquán bēnpǎo, bǎo&#x27;ān bùdébù fǎnfù tíxǐng tāmen liúshén.",
+    "translation": "Children ran around the fountain, so the security guard had to repeatedly remind them to be careful.",
+    "translation_en": "Children ran around the fountain, so the security guard had to repeatedly remind them to be careful.",
+    "translation_id": "Anak-anak berlarian di sekitar air mancur, sehingga satpam harus berulang kali mengingatkan mereka untuk berhati-hati."
+   },
+   {
+    "speaker": "tutor",
+    "text": "原先的计划因台风延期，大家不得不重新安排日程。",
+    "hanzi": "原先的计划因台风延期，大家不得不重新安排日程。",
+    "pinyin": "yuán xiān de jì huà yīn tái fēng yán qī ， dà jiā bù dé bù chóng xīn ān pái rì chéng 。",
+    "zhuyin": "ㄩㄢˊ ㄒㄧㄢ ㄉㄜ˙ ㄐㄧˋ ㄏㄨㄚˋ ㄧㄣ ㄊㄞˊ ㄈㄥ ㄧㄢˊ ㄑㄧ ， ㄉㄚˋ ㄐㄧㄚ ㄅㄨˋ ㄉㄜˊ ㄅㄨˋ ㄔㄨㄥˊ ㄒㄧㄣ ㄢ ㄆㄞˊ ㄖˋ ㄔㄥˊ 。",
+    "romanization": "Yuánxiān de jìhuà yīn táifēng yánqī, dàjiā bùdébù chóngxīn ānpái rìchéng.",
+    "translation": "The original plan was postponed because of the typhoon, so everyone had to rearrange the schedule.",
+    "translation_en": "The original plan was postponed because of the typhoon, so everyone had to rearrange the schedule.",
+    "translation_id": "Rencana semula ditunda karena adanya topan, sehingga semua orang harus menyesuaikan kembali jadwalnya."
+   },
+   {
+    "speaker": "user",
+    "text": "旧鞋底都快烂了，他还是舍不得扔。",
+    "hanzi": "旧鞋底都快烂了，他还是舍不得扔。",
+    "pinyin": "jiù xié dǐ dōu kuài làn le ， tā hái shì shě bù dé rēng 。",
+    "zhuyin": "ㄐㄧㄡˋ ㄒㄧㄝˊ ㄉㄧˇ ㄉㄡ ㄎㄨㄞˋ ㄌㄢˋ ㄌㄜ˙ ， ㄊㄚ ㄏㄞˊ ㄕˋ ㄕㄜˇ ㄅㄨˋ ㄉㄜˊ ㄖㄥ 。",
+    "romanization": "Jiù xiédǐ dōu kuài làn le, tā háishi shěbude rēng.",
+    "translation": "The soles of the old shoes are almost worn out, but he still cannot bear to throw them away.",
+    "translation_en": "The soles of the old shoes are almost worn out, but he still cannot bear to throw them away.",
+    "translation_id": "Sol sepatu lamanya sudah hampir usang, namun ia tetap tidak tega membuangnya."
+   },
+   {
+    "speaker": "tutor",
+    "text": "天气突然变坏，登山队不得不提前返回基地。",
+    "hanzi": "天气突然变坏，登山队不得不提前返回基地。",
+    "pinyin": "tiān qì tū rán biàn huài ， dēng shān duì bù dé bù tí qián fǎn huí jī dì 。",
+    "zhuyin": "ㄊㄧㄢ ㄑㄧˋ ㄊㄨ ㄖㄢˊ ㄅㄧㄢˋ ㄏㄨㄞˋ ， ㄉㄥ ㄕㄢ ㄉㄨㄟˋ ㄅㄨˋ ㄉㄜˊ ㄅㄨˋ ㄊㄧˊ ㄑㄧㄢˊ ㄈㄢˇ ㄏㄨㄟˊ ㄐㄧ ㄉㄧˋ 。",
+    "romanization": "Tiānqì tūrán biàn huài, dēngshān duì bùdébù tíqián fǎnhuí jīdì.",
+    "translation": "The weather suddenly worsened, so the climbing team had to return to base early.",
+    "translation_en": "The weather suddenly worsened, so the climbing team had to return to base early.",
+    "translation_id": "Cuaca tiba-tiba memburuk sehingga tim pendakian harus kembali ke pangkalan lebih awal."
+   },
+   {
+    "speaker": "user",
+    "text": "这批出土文物最终归国家所有，任何个人不得私自买卖。",
+    "hanzi": "这批出土文物最终归国家所有，任何个人不得私自买卖。",
+    "pinyin": "zhè pī chū tǔ wén wù zuì zhōng guī guó jiā suǒ yǒu ， rèn hé gè rén bù dé sī zì mǎi mài 。",
+    "zhuyin": "ㄓㄜˋ ㄆㄧ ㄔㄨ ㄊㄨˇ ㄨㄣˊ ㄨˋ ㄗㄨㄟˋ ㄓㄨㄥ ㄍㄨㄟ ㄍㄨㄛˊ ㄐㄧㄚ ㄙㄨㄛˇ ㄧㄡˇ ， ㄖㄣˋ ㄏㄜˊ ㄍㄜˋ ㄖㄣˊ ㄅㄨˋ ㄉㄜˊ ㄙ ㄗˋ ㄇㄞˇ ㄇㄞˋ 。",
+    "romanization": "Zhè pī chūtǔ wénwù zuìzhōng guī guójiā suǒyǒu, rènhé gèrén bùdé sīzì mǎimai.",
+    "translation": "This batch of unearthed cultural relics ultimately belongs to the state, and no individual may trade them privately.",
+    "translation_en": "This batch of unearthed cultural relics ultimately belongs to the state, and no individual may trade them privately.",
+    "translation_id": "Kumpulan peninggalan budaya yang digali ini pada akhirnya menjadi milik negara, dan tidak ada individu yang boleh memperdagangkannya secara pribadi."
+   }
+  ],
+  "examMappings": {
+   "hsk": 6
+  },
+  "audio": "conv:conv-hsk-hsk6-bude1",
+  "language": "zh"
+ },
+ {
+  "id": "conv-hsk-hsk6-jiuyuan2",
+  "title": "救援",
+  "title_en": "Talking about rescue, relief",
+  "title_id": "Ngobrol tentang penyelamatan, bantuan",
+  "context": "You chat about rescue, relief.",
+  "context_en": "You chat about rescue, relief.",
+  "context_id": "Kamu mengobrol tentang penyelamatan, bantuan.",
+  "formality": "neutral",
+  "level": 6,
+  "turns": [
+   {
+    "speaker": "tutor",
+    "text": "灾后救援急需大量人力和物资。",
+    "hanzi": "灾后救援急需大量人力和物资。",
+    "pinyin": "zāi hòu jiù yuán jí xū dà liàng rén lì hé wù zī 。",
+    "zhuyin": "ㄗㄞ ㄏㄡˋ ㄐㄧㄡˋ ㄩㄢˊ ㄐㄧˊ ㄒㄩ ㄉㄚˋ ㄌㄧㄤˋ ㄖㄣˊ ㄌㄧˋ ㄏㄜˊ ㄨˋ ㄗ 。",
+    "romanization": "Zāi hòu jiùyuán jíxū dàliàng rénlì hé wùzī.",
+    "translation": "Post-disaster rescue work urgently needs a large amount of manpower and supplies.",
+    "translation_en": "Post-disaster rescue work urgently needs a large amount of manpower and supplies.",
+    "translation_id": "Pekerjaan penyelamatan pascabencana sangat membutuhkan tenaga dan perbekalan dalam jumlah besar."
+   },
+   {
+    "speaker": "user",
+    "text": "雨下个不止，山区的救援队只能暂时停止搜救。",
+    "hanzi": "雨下个不止，山区的救援队只能暂时停止搜救。",
+    "pinyin": "yǔ xià gè bù zhǐ ， shān qū de jiù yuán duì zhǐ néng zàn shí tíng zhǐ sōu jiù 。",
+    "zhuyin": "ㄩˇ ㄒㄧㄚˋ ㄍㄜˋ ㄅㄨˋ ㄓˇ ， ㄕㄢ ㄑㄩ ㄉㄜ˙ ㄐㄧㄡˋ ㄩㄢˊ ㄉㄨㄟˋ ㄓˇ ㄋㄥˊ ㄗㄢˋ ㄕˊ ㄊㄧㄥˊ ㄓˇ ㄙㄡ ㄐㄧㄡˋ 。",
+    "romanization": "Yǔ xià ge bùzhǐ, shānqū de jiùyuánduì zhǐ néng zànshí tíngzhǐ sōujiù.",
+    "translation": "The rain kept falling without stopping, so the mountain rescue team could only temporarily stop the search and rescue.",
+    "translation_en": "The rain kept falling without stopping, so the mountain rescue team could only temporarily stop the search and rescue.",
+    "translation_id": "Hujan terus turun tanpa henti, sehingga tim penyelamat gunung hanya bisa menghentikan sementara pencarian dan penyelamatan."
+   },
+   {
+    "speaker": "tutor",
+    "text": "地震过后，救援队首先赶往交通最不便的村庄。",
+    "hanzi": "地震过后，救援队首先赶往交通最不便的村庄。",
+    "pinyin": "dì zhèn guò hòu ， jiù yuán duì shǒu xiān gǎn wǎng jiāo tōng zuì bù biàn de cūn zhuāng 。",
+    "zhuyin": "ㄉㄧˋ ㄓㄣˋ ㄍㄨㄛˋ ㄏㄡˋ ， ㄐㄧㄡˋ ㄩㄢˊ ㄉㄨㄟˋ ㄕㄡˇ ㄒㄧㄢ ㄍㄢˇ ㄨㄤˇ ㄐㄧㄠ ㄊㄨㄥ ㄗㄨㄟˋ ㄅㄨˋ ㄅㄧㄢˋ ㄉㄜ˙ ㄘㄨㄣ ㄓㄨㄤ 。",
+    "romanization": "Dìzhèn guòhòu, jiùyuán duì shǒuxiān gǎnwǎng jiāotōng zuì bù fāngbiàn de cūnzhuāng.",
+    "translation": "After the earthquake, the rescue team first headed to the village with the most inconvenient transport links.",
+    "translation_en": "After the earthquake, the rescue team first headed to the village with the most inconvenient transport links.",
+    "translation_id": "Setelah gempa bumi, tim penyelamat pertama-tama menuju ke desa yang memiliki jaringan transportasi paling tidak nyaman."
+   },
+   {
+    "speaker": "user",
+    "text": "救援人员发现水面上漂着几块木板，判断附近可能有人被困。",
+    "hanzi": "救援人员发现水面上漂着几块木板，判断附近可能有人被困。",
+    "pinyin": "jiù yuán rén yuán fā xiàn shuǐ miàn shàng piāo zhe jǐ kuài mù bǎn ， pàn duàn fù jìn kě néng yǒu rén bèi kùn 。",
+    "zhuyin": "ㄐㄧㄡˋ ㄩㄢˊ ㄖㄣˊ ㄩㄢˊ ㄈㄚ ㄒㄧㄢˋ ㄕㄨㄟˇ ㄇㄧㄢˋ ㄕㄤˋ ㄆㄧㄠ ㄓㄜ˙ ㄐㄧˇ ㄎㄨㄞˋ ㄇㄨˋ ㄅㄢˇ ， ㄆㄢˋ ㄉㄨㄢˋ ㄈㄨˋ ㄐㄧㄣˋ ㄎㄜˇ ㄋㄥˊ ㄧㄡˇ ㄖㄣˊ ㄅㄟˋ ㄎㄨㄣˋ 。",
+    "romanization": "Jiùyuán rényuán fāxiàn shuǐmiàn shàng piāo zhe jǐ kuài mùbǎn, pànduàn fùjìn kěnéng yǒu rén bèi kùn.",
+    "translation": "Rescuers found several wooden boards floating on the water surface and judged that someone nearby might be trapped.",
+    "translation_en": "Rescuers found several wooden boards floating on the water surface and judged that someone nearby might be trapped.",
+    "translation_id": "Tim penyelamat menemukan beberapa papan kayu yang mengapung di permukaan air dan menduga bahwa mungkin ada seseorang di sekitar sana yang terjebak."
+   },
+   {
+    "speaker": "tutor",
+    "text": "救援队抵达受灾村落的那一刻，等待多日的居民忍不住欢呼。",
+    "hanzi": "救援队抵达受灾村落的那一刻，等待多日的居民忍不住欢呼。",
+    "pinyin": "jiù yuán duì dǐ dá shòu zāi cūn luò de nà yī kè ， děng dài duō rì de jū mín rěn bú zhù huān hū 。",
+    "zhuyin": "ㄐㄧㄡˋ ㄩㄢˊ ㄉㄨㄟˋ ㄉㄧˇ ㄉㄚˊ ㄕㄡˋ ㄗㄞ ㄘㄨㄣ ㄌㄨㄛˋ ㄉㄜ˙ ㄋㄚˋ ㄧ ㄎㄜˋ ， ㄉㄥˇ ㄉㄞˋ ㄉㄨㄛ ㄖˋ ㄉㄜ˙ ㄐㄩ ㄇㄧㄣˊ ㄖㄣˇ ㄅㄨˊ ㄓㄨˋ ㄏㄨㄢ ㄏㄨ 。",
+    "romanization": "Jiùyuán duì dǐdá shòuzāi cūnluò de nà yíkè, děngdài duō rì de jūmín rěn bu zhù huānhū.",
+    "translation": "The moment the rescue team reached the disaster-stricken village, residents who had waited for days could not help cheering.",
+    "translation_en": "The moment the rescue team reached the disaster-stricken village, residents who had waited for days could not help cheering.",
+    "translation_id": "Saat tim penyelamat sampai di desa yang dilanda bencana, warga yang telah menunggu berhari-hari pun tak kuasa menahan sorak sorai."
+   },
+   {
+    "speaker": "user",
+    "text": "在突发事件中，错误信息可能危及人质和救援人员的生命。",
+    "hanzi": "在突发事件中，错误信息可能危及人质和救援人员的生命。",
+    "pinyin": "zài tū fā shì jiàn zhōng ， cuò wù xìn xī kě néng wēi jí rén zhì hé jiù yuán rén yuán de shēng mìng 。",
+    "zhuyin": "ㄗㄞˋ ㄊㄨ ㄈㄚ ㄕˋ ㄐㄧㄢˋ ㄓㄨㄥ ， ㄘㄨㄛˋ ㄨˋ ㄒㄧㄣˋ ㄒㄧ ㄎㄜˇ ㄋㄥˊ ㄨㄟ ㄐㄧˊ ㄖㄣˊ ㄓˋ ㄏㄜˊ ㄐㄧㄡˋ ㄩㄢˊ ㄖㄣˊ ㄩㄢˊ ㄉㄜ˙ ㄕㄥ ㄇㄧㄥˋ 。",
+    "romanization": "Zài tūfā shìjiàn zhōng, cuòwù xìnxī kěnéng wēijí rénzhì hé jiùyuán rényuán de shēngmìng.",
+    "translation": "In an emergency, false information may endanger the lives of hostages and rescue personnel.",
+    "translation_en": "In an emergency, false information may endanger the lives of hostages and rescue personnel.",
+    "translation_id": "Dalam situasi darurat, informasi yang salah dapat membahayakan nyawa para sandera dan tim penyelamat."
+   }
+  ],
+  "examMappings": {
+   "hsk": 6
+  },
+  "audio": "conv:conv-hsk-hsk6-jiuyuan2",
+  "language": "zh"
+ }
+]
