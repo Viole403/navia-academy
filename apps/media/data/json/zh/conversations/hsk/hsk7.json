@@ -1,0 +1,254 @@
+[
+ {
+  "id": "conv-hsk-hsk7-xueruo",
+  "title": "削弱",
+  "title_en": "Talking about to weaken",
+  "title_id": "Ngobrol tentang untuk melemah",
+  "context": "You chat about to weaken.",
+  "context_en": "You chat about to weaken.",
+  "context_id": "Kamu mengobrol tentang untuk melemah.",
+  "formality": "neutral",
+  "level": 7,
+  "turns": [
+   {
+    "speaker": "tutor",
+    "text": "长期的基层工作把他的傲气一点点磨平了，却没有削弱他的理想。",
+    "hanzi": "长期的基层工作把他的傲气一点点磨平了，却没有削弱他的理想。",
+    "pinyin": "cháng qī de jī céng gōng zuò bǎ tā de ào qì yì diǎn diǎn mó píng le ， què méi yǒu xuē ruò tā de lǐ xiǎng 。",
+    "zhuyin": "ㄔㄤˊ ㄑㄧ ㄉㄜ˙ ㄐㄧ ㄘㄥˊ ㄍㄨㄥ ㄗㄨㄛˋ ㄅㄚˇ ㄊㄚ ㄉㄜ˙ ㄠˋ ㄑㄧˋ ㄧˋ ㄉㄧㄢˇ ㄉㄧㄢˇ ㄇㄛˊ ㄆㄧㄥˊ ㄌㄜ˙ ， ㄑㄩㄝˋ ㄇㄟˊ ㄧㄡˇ ㄒㄩㄝ ㄖㄨㄛˋ ㄊㄚ ㄉㄜ˙ ㄌㄧˇ ㄒㄧㄤˇ 。",
+    "romanization": "Chángqī de jīcéng gōngzuò bǎ tā de àoqì yìdiǎndiǎn mó píng le, què méiyǒu xiāoruò tā de lǐxiǎng.",
+    "translation": "Long-term grassroots work gradually wore down his arrogance, but it did not weaken his ideals.",
+    "translation_en": "Long-term grassroots work gradually wore down his arrogance, but it did not weaken his ideals.",
+    "translation_id": "Pekerjaan akar rumput jangka panjang secara bertahap melemahkan kesombongannya, namun tidak melemahkan cita-citanya."
+   },
+   {
+    "speaker": "user",
+    "text": "管理层草率地裁撤部门，结果削弱了公司的核心研发能力。",
+    "hanzi": "管理层草率地裁撤部门，结果削弱了公司的核心研发能力。",
+    "pinyin": "guǎn lǐ céng cǎo shuài dì cái chè bù mén ， jié guǒ xuē ruò le gōng sī de hé xīn yán fā néng lì 。",
+    "zhuyin": "ㄍㄨㄢˇ ㄌㄧˇ ㄘㄥˊ ㄘㄠˇ ㄕㄨㄞˋ ㄉㄧˋ ㄘㄞˊ ㄔㄜˋ ㄅㄨˋ ㄇㄣˊ ， ㄐㄧㄝˊ ㄍㄨㄛˇ ㄒㄩㄝ ㄖㄨㄛˋ ㄌㄜ˙ ㄍㄨㄥ ㄙ ㄉㄜ˙ ㄏㄜˊ ㄒㄧㄣ ㄧㄢˊ ㄈㄚ ㄋㄥˊ ㄌㄧˋ 。",
+    "romanization": "Guǎnlǐcéng cǎoshuài de cáichè bùmén, jiéguǒ xuēruò le gōngsī de héxīn yánfā nénglì.",
+    "translation": "Management hastily abolished departments, ultimately weakening the company’s core research and development capacity.",
+    "translation_en": "Management hastily abolished departments, ultimately weakening the company’s core research and development capacity.",
+    "translation_id": "Pihak manajemen dengan tergesa-gesa membubarkan beberapa departemen, yang pada akhirnya melemahkan kapasitas penelitian dan pengembangan inti perusahaan."
+   },
+   {
+    "speaker": "tutor",
+    "text": "他在会议上生硬地引用政策条文，反而削弱了说服力。",
+    "hanzi": "他在会议上生硬地引用政策条文，反而削弱了说服力。",
+    "pinyin": "tā zài huì yì shàng shēng yìng dì yǐn yòng zhèng cè tiáo wén ， fǎn ér xuē ruò le shuō fú lì 。",
+    "zhuyin": "ㄊㄚ ㄗㄞˋ ㄏㄨㄟˋ ㄧˋ ㄕㄤˋ ㄕㄥ ㄧㄥˋ ㄉㄧˋ ㄧㄣˇ ㄩㄥˋ ㄓㄥˋ ㄘㄜˋ ㄊㄧㄠˊ ㄨㄣˊ ， ㄈㄢˇ ㄦˊ ㄒㄩㄝ ㄖㄨㄛˋ ㄌㄜ˙ ㄕㄨㄛ ㄈㄨˊ ㄌㄧˋ 。",
+    "romanization": "Tā zài huìyì shàng shēngyìng de yǐnyòng zhèngcè tiáowén, fǎnér xuēruò le shuōfúlì.",
+    "translation": "At the meeting, he quoted policy clauses stiffly, which instead weakened his persuasiveness.",
+    "translation_en": "At the meeting, he quoted policy clauses stiffly, which instead weakened his persuasiveness.",
+    "translation_id": "Dalam pertemuan tersebut, ia mengutip ketentuan-ketentuan kebijakan dengan nada kaku, yang justru melemahkan daya persuasinya."
+   },
+   {
+    "speaker": "user",
+    "text": "电影把一段普通救援拍得惊天动地，反而削弱了真实事件本身的力量。",
+    "hanzi": "电影把一段普通救援拍得惊天动地，反而削弱了真实事件本身的力量。",
+    "pinyin": "diàn yǐng bǎ yī duàn pǔ tōng jiù yuán pāi dé jīng tiān dòng dì ， fǎn ér xuē ruò le zhēn shí shì jiàn běn shēn de lì liàng 。",
+    "zhuyin": "ㄉㄧㄢˋ ㄧㄥˇ ㄅㄚˇ ㄧ ㄉㄨㄢˋ ㄆㄨˇ ㄊㄨㄥ ㄐㄧㄡˋ ㄩㄢˊ ㄆㄞ ㄉㄜˊ ㄐㄧㄥ ㄊㄧㄢ ㄉㄨㄥˋ ㄉㄧˋ ， ㄈㄢˇ ㄦˊ ㄒㄩㄝ ㄖㄨㄛˋ ㄌㄜ˙ ㄓㄣ ㄕˊ ㄕˋ ㄐㄧㄢˋ ㄅㄣˇ ㄕㄣ ㄉㄜ˙ ㄌㄧˋ ㄌㄧㄤˋ 。",
+    "romanization": "Diànyǐng bǎ yí duàn pǔtōng jiùyuán pāi de jīngtiān-dòngdì, fǎn&#x27;ér xuēruò le zhēnshí shìjiàn běnshēn de lìliàng.",
+    "translation": "The film made an ordinary rescue seem earth-shattering, which actually weakened the power of the real event itself.",
+    "translation_en": "The film made an ordinary rescue seem earth-shattering, which actually weakened the power of the real event itself.",
+    "translation_id": "Film ini membuat penyelamatan biasa tampak menggemparkan, yang sebenarnya melemahkan kekuatan peristiwa sebenarnya itu sendiri."
+   },
+   {
+    "speaker": "tutor",
+    "text": "那段广告配乐过于刺耳，反而削弱了品牌的高级感。",
+    "hanzi": "那段广告配乐过于刺耳，反而削弱了品牌的高级感。",
+    "pinyin": "nà duàn guǎng gào pèi yuè guò yú cì ěr ， fǎn ér xuē ruò le pǐn pái de gāo jí gǎn 。",
+    "zhuyin": "ㄋㄚˋ ㄉㄨㄢˋ ㄍㄨㄤˇ ㄍㄠˋ ㄆㄟˋ ㄩㄝˋ ㄍㄨㄛˋ ㄩˊ ㄘˋ ㄦˇ ， ㄈㄢˇ ㄦˊ ㄒㄩㄝ ㄖㄨㄛˋ ㄌㄜ˙ ㄆㄧㄣˇ ㄆㄞˊ ㄉㄜ˙ ㄍㄠ ㄐㄧˊ ㄍㄢˇ 。",
+    "romanization": "Nà duàn guǎnggào pèiyuè guòyú cì&#x27;ěr, fǎn&#x27;ér xuēruò le pǐnpái de gāojí gǎn.",
+    "translation": "That advertising music was too grating, and instead weakened the brand’s premium feel.",
+    "translation_en": "That advertising music was too grating, and instead weakened the brand’s premium feel.",
+    "translation_id": "Musik iklan tersebut terlalu kasar, dan malah melemahkan kesan premium merek tersebut."
+   },
+   {
+    "speaker": "user",
+    "text": "政府若不能守信，公共政策的权威就会逐渐被削弱。",
+    "hanzi": "政府若不能守信，公共政策的权威就会逐渐被削弱。",
+    "pinyin": "zhèng fǔ ruò bù néng shǒu xìn ， gōng gòng zhèng cè de quán wēi jiù huì zhú jiàn bèi xuē ruò 。",
+    "zhuyin": "ㄓㄥˋ ㄈㄨˇ ㄖㄨㄛˋ ㄅㄨˋ ㄋㄥˊ ㄕㄡˇ ㄒㄧㄣˋ ， ㄍㄨㄥ ㄍㄨㄥˋ ㄓㄥˋ ㄘㄜˋ ㄉㄜ˙ ㄑㄩㄢˊ ㄨㄟ ㄐㄧㄡˋ ㄏㄨㄟˋ ㄓㄨˊ ㄐㄧㄢˋ ㄅㄟˋ ㄒㄩㄝ ㄖㄨㄛˋ 。",
+    "romanization": "Zhèngfǔ ruò bù néng shǒuxìn, gōnggòng zhèngcè de quánwēi jiù huì zhújiàn bèi xuēruò.",
+    "translation": "If a government cannot keep its word, the authority of public policy will gradually be weakened.",
+    "translation_en": "If a government cannot keep its word, the authority of public policy will gradually be weakened.",
+    "translation_id": "Jika suatu pemerintah tidak dapat menepati janjinya, otoritas kebijakan publik lambat laun akan melemah."
+   }
+  ],
+  "examMappings": {
+   "hsk": 7
+  },
+  "audio": "conv:conv-hsk-hsk7-xueruo",
+  "language": "zh"
+ },
+ {
+  "id": "conv-hsk-hsk7-yiwei1",
+  "title": "意味",
+  "title_en": "Talking about meaning; implication",
+  "title_id": "Ngobrol tentang arti; implikasi",
+  "context": "You chat about meaning; implication.",
+  "context_en": "You chat about meaning; implication.",
+  "context_id": "Kamu mengobrol tentang arti; implikasi.",
+  "formality": "neutral",
+  "level": 7,
+  "turns": [
+   {
+    "speaker": "tutor",
+    "text": "低碳生活并不意味着降低生活质量，而是更理性地使用资源。",
+    "hanzi": "低碳生活并不意味着降低生活质量，而是更理性地使用资源。",
+    "pinyin": "dī tàn shēng huó bìng bù yì wèi zhe jiàng dī shēng huó zhì liàng ， ér shì gèng lǐ xìng dì shǐ yòng zī yuán 。",
+    "zhuyin": "ㄉㄧ ㄊㄢˋ ㄕㄥ ㄏㄨㄛˊ ㄅㄧㄥˋ ㄅㄨˋ ㄧˋ ㄨㄟˋ ㄓㄜ˙ ㄐㄧㄤˋ ㄉㄧ ㄕㄥ ㄏㄨㄛˊ ㄓˋ ㄌㄧㄤˋ ， ㄦˊ ㄕˋ ㄍㄥˋ ㄌㄧˇ ㄒㄧㄥˋ ㄉㄧˋ ㄕˇ ㄩㄥˋ ㄗ ㄩㄢˊ 。",
+    "romanization": "Dītàn shēnghuó bìng bù yìwèizhe jiàngdī shēnghuó zhìliàng, ér shì gèng lǐxìng de shǐyòng zīyuán.",
+    "translation": "A low-carbon lifestyle does not mean lowering quality of life, but using resources more rationally.",
+    "translation_en": "A low-carbon lifestyle does not mean lowering quality of life, but using resources more rationally.",
+    "translation_id": "Gaya hidup rendah karbon tidak berarti menurunkan kualitas hidup, melainkan memanfaatkan sumber daya secara lebih bijaksana."
+   },
+   {
+    "speaker": "user",
+    "text": "他表面上是在开玩笑，实际上每句话都带着奚落的意味。",
+    "hanzi": "他表面上是在开玩笑，实际上每句话都带着奚落的意味。",
+    "pinyin": "tā biǎo miàn shàng shì zài kāi wán xiào ， shí jì shàng měi jù huà dōu dài zhe xī luò de yì wèi 。",
+    "zhuyin": "ㄊㄚ ㄅㄧㄠˇ ㄇㄧㄢˋ ㄕㄤˋ ㄕˋ ㄗㄞˋ ㄎㄞ ㄨㄢˊ ㄒㄧㄠˋ ， ㄕˊ ㄐㄧˋ ㄕㄤˋ ㄇㄟˇ ㄐㄩˋ ㄏㄨㄚˋ ㄉㄡ ㄉㄞˋ ㄓㄜ˙ ㄒㄧ ㄌㄨㄛˋ ㄉㄜ˙ ㄧˋ ㄨㄟˋ 。",
+    "romanization": "Tā biǎomiàn shàng shì zài kāiwánxiào, shíjì shàng měi jù huà dōu dàizhe xīluò de yìwèi.",
+    "translation": "On the surface he was joking, but in fact every sentence carried a mocking tone.",
+    "translation_en": "On the surface he was joking, but in fact every sentence carried a mocking tone.",
+    "translation_id": "Di permukaan dia bercanda, namun nyatanya setiap kalimatnya bernada mengejek."
+   },
+   {
+    "speaker": "tutor",
+    "text": "国民收入增长并不自动意味着生活质量同步提高。",
+    "hanzi": "国民收入增长并不自动意味着生活质量同步提高。",
+    "pinyin": "guó mín shōu rù zēng zhǎng bìng bù zì dòng yì wèi zhe shēng huó zhì liàng tóng bù tí gāo 。",
+    "zhuyin": "ㄍㄨㄛˊ ㄇㄧㄣˊ ㄕㄡ ㄖㄨˋ ㄗㄥ ㄓㄤˇ ㄅㄧㄥˋ ㄅㄨˋ ㄗˋ ㄉㄨㄥˋ ㄧˋ ㄨㄟˋ ㄓㄜ˙ ㄕㄥ ㄏㄨㄛˊ ㄓˋ ㄌㄧㄤˋ ㄊㄨㄥˊ ㄅㄨˋ ㄊㄧˊ ㄍㄠ 。",
+    "romanization": "Guómín shōurù zēngzhǎng bìng bù zìdòng yìwèizhe shēnghuó pǐnzhì tóngbù tígāo.",
+    "translation": "Growth in national income does not automatically mean that quality of life improves at the same pace.",
+    "translation_en": "Growth in national income does not automatically mean that quality of life improves at the same pace.",
+    "translation_id": "Pertumbuhan pendapatan nasional tidak secara otomatis berarti bahwa kualitas hidup meningkat dengan kecepatan yang sama."
+   },
+   {
+    "speaker": "user",
+    "text": "价格上涨意味着成本也在增加。",
+    "hanzi": "价格上涨意味着成本也在增加。",
+    "pinyin": "jià gé shàng zhǎng yì wèi zhe chéng běn yě zài zēng jiā 。",
+    "zhuyin": "ㄐㄧㄚˋ ㄍㄜˊ ㄕㄤˋ ㄓㄤˇ ㄧˋ ㄨㄟˋ ㄓㄜ˙ ㄔㄥˊ ㄅㄣˇ ㄧㄝˇ ㄗㄞˋ ㄗㄥ ㄐㄧㄚ 。",
+    "romanization": "Jiàgé shàngzhǎng yìwèizhe chéngběn yě zài zēngjiā.",
+    "translation": "A rise in prices means that costs are also increasing.",
+    "translation_en": "A rise in prices means that costs are also increasing.",
+    "translation_id": "Kenaikan harga berarti biaya juga meningkat."
+   },
+   {
+    "speaker": "tutor",
+    "text": "成功不意味着不会再遇到困难。",
+    "hanzi": "成功不意味着不会再遇到困难。",
+    "pinyin": "chéng gōng bù yì wèi zhe bú huì zài yù dào kùn nán 。",
+    "zhuyin": "ㄔㄥˊ ㄍㄨㄥ ㄅㄨˋ ㄧˋ ㄨㄟˋ ㄓㄜ˙ ㄅㄨˊ ㄏㄨㄟˋ ㄗㄞˋ ㄩˋ ㄉㄠˋ ㄎㄨㄣˋ ㄋㄢˊ 。",
+    "romanization": "Chénggōng bù yìwèizhe bù huì zài yùdào kùnnan.",
+    "translation": "Success does not mean that you will not encounter difficulties again.",
+    "translation_en": "Success does not mean that you will not encounter difficulties again.",
+    "translation_id": "Sukses bukan berarti Anda tidak akan menemui kesulitan lagi."
+   },
+   {
+    "speaker": "user",
+    "text": "谈判桌上的交锋并不意味着关系破裂，反而可能逼近真实分歧。",
+    "hanzi": "谈判桌上的交锋并不意味着关系破裂，反而可能逼近真实分歧。",
+    "pinyin": "tán pàn zhuō shàng de jiāo fēng bìng bù yì wèi zhe guān xì pò liè ， fǎn ér kě néng bī jìn zhēn shí fēn qí 。",
+    "zhuyin": "ㄊㄢˊ ㄆㄢˋ ㄓㄨㄛ ㄕㄤˋ ㄉㄜ˙ ㄐㄧㄠ ㄈㄥ ㄅㄧㄥˋ ㄅㄨˋ ㄧˋ ㄨㄟˋ ㄓㄜ˙ ㄍㄨㄢ ㄒㄧˋ ㄆㄛˋ ㄌㄧㄝˋ ， ㄈㄢˇ ㄦˊ ㄎㄜˇ ㄋㄥˊ ㄅㄧ ㄐㄧㄣˋ ㄓㄣ ㄕˊ ㄈㄣ ㄑㄧˊ 。",
+    "romanization": "Tánpànzhuō shàng de jiāofēng bìng bù yìwèizhe guānxì pòliè, fǎn&#x27;ér kěnéng bījìn zhēnshí fēnqí.",
+    "translation": "A clash at the negotiating table does not necessarily mean relations have broken down; it may instead bring real disagreements into focus.",
+    "translation_en": "A clash at the negotiating table does not necessarily mean relations have broken down; it may instead bring real disagreements into focus.",
+    "translation_id": "Bentrokan di meja perundingan tidak selalu berarti rusaknya hubungan; hal ini justru dapat menjadikan perbedaan pendapat menjadi fokus."
+   }
+  ],
+  "examMappings": {
+   "hsk": 7
+  },
+  "audio": "conv:conv-hsk-hsk7-yiwei1",
+  "language": "zh"
+ },
+ {
+  "id": "conv-hsk-hsk7-dongshi2",
+  "title": "董事",
+  "title_en": "Talking about director; board member",
+  "title_id": "Ngobrol tentang direktur; anggota dewan",
+  "context": "You chat about director; board member.",
+  "context_en": "You chat about director; board member.",
+  "context_id": "Kamu mengobrol tentang direktur; anggota dewan.",
+  "formality": "neutral",
+  "level": 7,
+  "turns": [
+   {
+    "speaker": "tutor",
+    "text": "在董事会批准之前，任何资本支出都只能停留在预算草案里。",
+    "hanzi": "在董事会批准之前，任何资本支出都只能停留在预算草案里。",
+    "pinyin": "zài dǒng shì huì pī zhǔn zhī qián ， rèn hé zī běn zhī chū dōu zhǐ néng tíng liú zài yù suàn cǎo àn lǐ 。",
+    "zhuyin": "ㄗㄞˋ ㄉㄨㄥˇ ㄕˋ ㄏㄨㄟˋ ㄆㄧ ㄓㄨㄣˇ ㄓ ㄑㄧㄢˊ ， ㄖㄣˋ ㄏㄜˊ ㄗ ㄅㄣˇ ㄓ ㄔㄨ ㄉㄡ ㄓˇ ㄋㄥˊ ㄊㄧㄥˊ ㄌㄧㄡˊ ㄗㄞˋ ㄩˋ ㄙㄨㄢˋ ㄘㄠˇ ㄢˋ ㄌㄧˇ 。",
+    "romanization": "Zài dǒngshìhuì pīzhǔn zhīqián, rènhé zīběn zhīchū dōu zhǐ néng tíngliú zài yùsuàn cǎo&#x27;àn lǐ.",
+    "translation": "Before the board of directors approves it, any capital expenditure can only remain in the draft budget.",
+    "translation_en": "Before the board of directors approves it, any capital expenditure can only remain in the draft budget.",
+    "translation_id": "Sebelum disetujui oleh dewan direksi, setiap pengeluaran modal hanya dapat tercantum dalam rancangan anggaran."
+   },
+   {
+    "speaker": "user",
+    "text": "这位能人既懂技术又懂市场，因此被董事会委以重任。",
+    "hanzi": "这位能人既懂技术又懂市场，因此被董事会委以重任。",
+    "pinyin": "zhè wèi néng rén jì dǒng jì shù yòu dǒng shì chǎng ， yīn cǐ bèi dǒng shì huì wěi yǐ zhòng rèn 。",
+    "zhuyin": "ㄓㄜˋ ㄨㄟˋ ㄋㄥˊ ㄖㄣˊ ㄐㄧˋ ㄉㄨㄥˇ ㄐㄧˋ ㄕㄨˋ ㄧㄡˋ ㄉㄨㄥˇ ㄕˋ ㄔㄤˇ ， ㄧㄣ ㄘˇ ㄅㄟˋ ㄉㄨㄥˇ ㄕˋ ㄏㄨㄟˋ ㄨㄟˇ ㄧˇ ㄓㄨㄥˋ ㄖㄣˋ 。",
+    "romanization": "Zhè wèi néngrén jì dǒng jìshù yòu dǒng shìchǎng, yīncǐ bèi dǒngshìhuì wěiyǐ zhòngrèn.",
+    "translation": "This capable person understands both technology and the market, so the board entrusted him with an important role.",
+    "translation_en": "This capable person understands both technology and the market, so the board entrusted him with an important role.",
+    "translation_id": "Orang yang cakap ini memahami baik teknologi maupun pasar, sehingga dewan direksi mempercayakan kepadanya sebuah peran penting."
+   },
+   {
+    "speaker": "tutor",
+    "text": "在是否公开道歉这件事上，董事会思前想后，最终决定先公布调查结果。",
+    "hanzi": "在是否公开道歉这件事上，董事会思前想后，最终决定先公布调查结果。",
+    "pinyin": "zài shì fǒu gōng kāi dào qiàn zhè jiàn shì shàng ， dǒng shì huì sī qián xiǎng hòu ， zuì zhōng jué dìng xiān gōng bù diào chá jié guǒ 。",
+    "zhuyin": "ㄗㄞˋ ㄕˋ ㄈㄡˇ ㄍㄨㄥ ㄎㄞ ㄉㄠˋ ㄑㄧㄢˋ ㄓㄜˋ ㄐㄧㄢˋ ㄕˋ ㄕㄤˋ ， ㄉㄨㄥˇ ㄕˋ ㄏㄨㄟˋ ㄙ ㄑㄧㄢˊ ㄒㄧㄤˇ ㄏㄡˋ ， ㄗㄨㄟˋ ㄓㄨㄥ ㄐㄩㄝˊ ㄉㄧㄥˋ ㄒㄧㄢ ㄍㄨㄥ ㄅㄨˋ ㄉㄧㄠˋ ㄔㄚˊ ㄐㄧㄝˊ ㄍㄨㄛˇ 。",
+    "romanization": "Zài shìfǒu gōngkāi dàoqiàn zhè jiàn shì shàng, dǒngshìhuì sīqián-xiǎnghòu, zuìzhōng juédìng xiān gōngbù diàochá jiéguǒ.",
+    "translation": "On whether to apologise publicly, the board thought it over carefully and eventually decided to publish the investigation results first.",
+    "translation_en": "On whether to apologise publicly, the board thought it over carefully and eventually decided to publish the investigation results first.",
+    "translation_id": "Mengenai apakah akan meminta maaf secara terbuka, dewan memikirkannya dengan hati-hati dan akhirnya memutuskan untuk mempublikasikan hasil investigasi terlebih dahulu."
+   },
+   {
+    "speaker": "user",
+    "text": "在年会上，董事长展望公司国际化转型后的新格局。",
+    "hanzi": "在年会上，董事长展望公司国际化转型后的新格局。",
+    "pinyin": "zài nián huì shàng ， dǒng shì zhǎng zhǎn wàng gōng sī guó jì huà zhuǎn xíng hòu de xīn gé jú 。",
+    "zhuyin": "ㄗㄞˋ ㄋㄧㄢˊ ㄏㄨㄟˋ ㄕㄤˋ ， ㄉㄨㄥˇ ㄕˋ ㄓㄤˇ ㄓㄢˇ ㄨㄤˋ ㄍㄨㄥ ㄙ ㄍㄨㄛˊ ㄐㄧˋ ㄏㄨㄚˋ ㄓㄨㄢˇ ㄒㄧㄥˊ ㄏㄡˋ ㄉㄜ˙ ㄒㄧㄣ ㄍㄜˊ ㄐㄩˊ 。",
+    "romanization": "Zài niánhuì shàng, dǒngshìzhǎng zhǎnwàng gōngsī guójìhuà zhuǎnxíng hòu de xīn géjú.",
+    "translation": "At the annual meeting, the chair looked ahead to the company’s new landscape after its international transformation.",
+    "translation_en": "At the annual meeting, the chair looked ahead to the company’s new landscape after its international transformation.",
+    "translation_id": "Pada pertemuan tahunan tersebut, ketua perusahaan membahas lanskap baru perusahaan setelah transformasi internasional."
+   },
+   {
+    "speaker": "tutor",
+    "text": "调查结果暴露了管理漏洞，令整个董事会十分难堪。",
+    "hanzi": "调查结果暴露了管理漏洞，令整个董事会十分难堪。",
+    "pinyin": "diào chá jié guǒ bào lù le guǎn lǐ lòu dòng ， lìng zhěng gè dǒng shì huì shí fēn nán kān 。",
+    "zhuyin": "ㄉㄧㄠˋ ㄔㄚˊ ㄐㄧㄝˊ ㄍㄨㄛˇ ㄅㄠˋ ㄌㄨˋ ㄌㄜ˙ ㄍㄨㄢˇ ㄌㄧˇ ㄌㄡˋ ㄉㄨㄥˋ ， ㄌㄧㄥˋ ㄓㄥˇ ㄍㄜˋ ㄉㄨㄥˇ ㄕˋ ㄏㄨㄟˋ ㄕˊ ㄈㄣ ㄋㄢˊ ㄎㄢ 。",
+    "romanization": "Diàochá jiéguǒ bàolù le guǎnlǐ lòudòng, lìng zhěnggè dǒngshìhuì shífēn nánkān.",
+    "translation": "The investigation exposed management loopholes, leaving the entire board deeply embarrassed.",
+    "translation_en": "The investigation exposed management loopholes, leaving the entire board deeply embarrassed.",
+    "translation_id": "Penyelidikan tersebut mengungkap celah manajemen, sehingga membuat seluruh dewan sangat malu."
+   },
+   {
+    "speaker": "user",
+    "text": "如果董事的任期过短，长期战略往往难以落实。",
+    "hanzi": "如果董事的任期过短，长期战略往往难以落实。",
+    "pinyin": "rú guǒ dǒng shì de rèn qī guò duǎn ， cháng qī zhàn lüè wǎng wǎng nán yǐ luò shí 。",
+    "zhuyin": "ㄖㄨˊ ㄍㄨㄛˇ ㄉㄨㄥˇ ㄕˋ ㄉㄜ˙ ㄖㄣˋ ㄑㄧ ㄍㄨㄛˋ ㄉㄨㄢˇ ， ㄔㄤˊ ㄑㄧ ㄓㄢˋ ㄌㄩㄝˋ ㄨㄤˇ ㄨㄤˇ ㄋㄢˊ ㄧˇ ㄌㄨㄛˋ ㄕˊ 。",
+    "romanization": "Rúguǒ dǒngshì de rènqī guò duǎn, chángqī zhànlüè wǎngwǎng nányǐ luòshí.",
+    "translation": "If a director&#x27;s term is too short, long-term strategy is often hard to implement.",
+    "translation_en": "If a director&#x27;s term is too short, long-term strategy is often hard to implement.",
+    "translation_id": "Jika masa jabatan direktur terlalu pendek, strategi jangka panjang seringkali sulit diterapkan."
+   }
+  ],
+  "examMappings": {
+   "hsk": 7
+  },
+  "audio": "conv:conv-hsk-hsk7-dongshi2",
+  "language": "zh"
+ }
+]
