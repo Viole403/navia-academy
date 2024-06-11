@@ -1,0 +1,49 @@
+{
+  "name": "@navia/media",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 3002",
+    "build": "next build",
+    "start": "next start -p 3002",
+    "lint": "eslint",
+    "generate-manifest": "tsx --env-file-if-exists=.env scripts/generate-manifest.ts",
+    "dedupe-ids": "tsx --env-file-if-exists=.env scripts/dedupe-ids.mts",
+    "check-dedup": "tsx --env-file-if-exists=.env scripts/check-dedup.mts",
+    "backfill-exam-mappings": "tsx --env-file-if-exists=.env scripts/backfill-exam-mappings.mts",
+    "generate-audio": "npm run generate-manifest && tsx --env-file-if-exists=.env scripts/generate-audio.ts",
+    "generate-images": "npm run generate-manifest && tsx --env-file-if-exists=.env scripts/generate-images.ts",
+    "validate-images": "tsx --env-file-if-exists=.env scripts/validate-images.ts",
+    "regenerate-images": "tsx --env-file-if-exists=.env scripts/regenerate-images.ts",
+    "import-anki": "tsx --env-file-if-exists=.env scripts/import-anki.ts",
+    "sync-content": "tsx --env-file-if-exists=.env scripts/sync-content.ts",
+    "publish-data": "tsx --env-file-if-exists=.env scripts/publish-data.ts"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.658.0",
+    "@navia/utils": "workspace:*",
+    "adm-zip": "^0.5.16",
+    "better-sqlite3": "^11.7.0",
+    "edge-tts-universal": "^1.4.0",
+    "next": "16.2.10",
+    "puppeteer-core": "^25.5.0",
+    "sharp": "^0.35.2",
+    "react": "19.2.4",
+    "react-dom": "19.2.4"
+  },
+  "devDependencies": {
+    "@navia/eslint-config": "workspace:*",
+    "@tailwindcss/postcss": "^4",
+    "@types/adm-zip": "^0.5.5",
+    "@types/better-sqlite3": "^7.6.12",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.2.10",
+    "postcss-import": "^16.1.0",
+    "tailwindcss": "^4",
+    "tsx": "^4.23.1",
+    "typescript": "^5"
+  }
+}
