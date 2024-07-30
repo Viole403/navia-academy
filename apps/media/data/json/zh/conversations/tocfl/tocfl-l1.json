@@ -1,0 +1,254 @@
+[
+ {
+  "id": "conv-tocfl-tocfl-l1-ruguo",
+  "title": "如果",
+  "title_en": "Talking about if",
+  "title_id": "Ngobrol tentang jika",
+  "context": "You chat about if.",
+  "context_en": "You chat about if.",
+  "context_id": "Kamu mengobrol tentang jika.",
+  "formality": "neutral",
+  "level": 3,
+  "turns": [
+   {
+    "speaker": "tutor",
+    "text": "如果沒有剪刀，我們可以用刀把包裝打開。",
+    "hanzi": "如果沒有剪刀，我們可以用刀把包裝打開。",
+    "pinyin": "rú guǒ méi yǒu jiǎn dāo ， wǒ men kě yǐ yòng dāo bà bāo zhuāng dǎ kāi 。",
+    "zhuyin": "ㄖㄨˊ ㄍㄨㄛˇ ㄇㄟˊ ㄧㄡˇ ㄐㄧㄢˇ ㄉㄠ ， ㄨㄛˇ ㄇㄣ˙ ㄎㄜˇ ㄧˇ ㄩㄥˋ ㄉㄠ ㄅㄚˋ ㄅㄠ ㄓㄨㄤ ㄉㄚˇ ㄎㄞ 。",
+    "romanization": "Rúguǒ méiyǒu jiǎndāo, wǒmen kěyǐ yòng dāo bǎ bāozhuāng dǎkāi.",
+    "translation": "If we do not have scissors, we can use a knife to open the packaging.",
+    "translation_en": "If we do not have scissors, we can use a knife to open the packaging.",
+    "translation_id": "Jika kita tidak punya gunting, kita bisa menggunakan pisau untuk membuka kemasannya."
+   },
+   {
+    "speaker": "user",
+    "text": "如果你來，我很高興。",
+    "hanzi": "如果你來，我很高興。",
+    "pinyin": "rú guǒ nǐ lái ， wǒ hěn gāo xìng 。",
+    "zhuyin": "ㄖㄨˊ ㄍㄨㄛˇ ㄋㄧˇ ㄌㄞˊ ， ㄨㄛˇ ㄏㄣˇ ㄍㄠ ㄒㄧㄥˋ 。",
+    "romanization": "Rúguǒ nǐ lái, wǒ hěn gāoxìng.",
+    "translation": "If you come, I will be happy.",
+    "translation_en": "If you come, I will be happy.",
+    "translation_id": "Jika kamu datang, saya senang."
+   },
+   {
+    "speaker": "tutor",
+    "text": "如果你有不明白的地方，可以隨時提問。",
+    "hanzi": "如果你有不明白的地方，可以隨時提問。",
+    "pinyin": "rú guǒ nǐ yǒu bù míng bái de dì fāng ， kě yǐ suí shí tí wèn 。",
+    "zhuyin": "ㄖㄨˊ ㄍㄨㄛˇ ㄋㄧˇ ㄧㄡˇ ㄅㄨˋ ㄇㄧㄥˊ ㄅㄞˊ ㄉㄜ˙ ㄉㄧˋ ㄈㄤ ， ㄎㄜˇ ㄧˇ ㄙㄨㄟˊ ㄕˊ ㄊㄧˊ ㄨㄣˋ 。",
+    "romanization": "Rúguǒ nǐ yǒu bù míngbai de dìfang, kěyǐ suíshí tíwèn.",
+    "translation": "If there is anything you do not understand, you can ask questions at any time.",
+    "translation_en": "If there is anything you do not understand, you can ask questions at any time.",
+    "translation_id": "Jika ada yang belum Anda pahami, Anda dapat bertanya kapan saja."
+   },
+   {
+    "speaker": "user",
+    "text": "如果原來的方法沒有作用，我們可以嘗試另一種做法。",
+    "hanzi": "如果原來的方法沒有作用，我們可以嘗試另一種做法。",
+    "pinyin": "rú guǒ yuán lái de fāng fǎ méi yǒu zuò yòng ， wǒ men kě yǐ cháng shì lìng yī zhǒng zuò fǎ 。",
+    "zhuyin": "ㄖㄨˊ ㄍㄨㄛˇ ㄩㄢˊ ㄌㄞˊ ㄉㄜ˙ ㄈㄤ ㄈㄚˇ ㄇㄟˊ ㄧㄡˇ ㄗㄨㄛˋ ㄩㄥˋ ， ㄨㄛˇ ㄇㄣ˙ ㄎㄜˇ ㄧˇ ㄔㄤˊ ㄕˋ ㄌㄧㄥˋ ㄧ ㄓㄨㄥˇ ㄗㄨㄛˋ ㄈㄚˇ 。",
+    "romanization": "Rúguǒ yuánlái de fāngfǎ méiyǒu zuòyòng, wǒmen kěyǐ chángshì lìng yì zhǒng zuòfǎ.",
+    "translation": "If the original method has no effect, we can try another approach.",
+    "translation_en": "If the original method has no effect, we can try another approach.",
+    "translation_id": "Jika cara asli tidak berpengaruh, kita dapat mencoba pendekatan lain."
+   },
+   {
+    "speaker": "tutor",
+    "text": "如果沒有必要，我們就不應該收集用戶的個人信息。",
+    "hanzi": "如果沒有必要，我們就不應該收集用戶的個人信息。",
+    "pinyin": "rú guǒ méi yǒu bì yào ， wǒ men jiù bù yīng gāi shōu jí yòng hù de gè rén xìn xī 。",
+    "zhuyin": "ㄖㄨˊ ㄍㄨㄛˇ ㄇㄟˊ ㄧㄡˇ ㄅㄧˋ ㄧㄠˋ ， ㄨㄛˇ ㄇㄣ˙ ㄐㄧㄡˋ ㄅㄨˋ ㄧㄥ ㄍㄞ ㄕㄡ ㄐㄧˊ ㄩㄥˋ ㄏㄨˋ ㄉㄜ˙ ㄍㄜˋ ㄖㄣˊ ㄒㄧㄣˋ ㄒㄧ 。",
+    "romanization": "Rúguǒ méiyǒu bìyào, wǒmen jiù bù yīnggāi shōují yònghù de gèrén xìnxī.",
+    "translation": "If it is not necessary, we should not collect users’ personal information.",
+    "translation_en": "If it is not necessary, we should not collect users’ personal information.",
+    "translation_id": "Jika tidak diperlukan, kami tidak boleh mengumpulkan informasi pribadi pengguna."
+   },
+   {
+    "speaker": "user",
+    "text": "如果只是普通感冒，可以先在網上掛號，再去門診。",
+    "hanzi": "如果只是普通感冒，可以先在網上掛號，再去門診。",
+    "pinyin": "rú guǒ zhǐ shì pǔ tōng gǎn mào ， kě yǐ xiān zài wǎng shàng guà hào ， zài qù mén zhěn 。",
+    "zhuyin": "ㄖㄨˊ ㄍㄨㄛˇ ㄓˇ ㄕˋ ㄆㄨˇ ㄊㄨㄥ ㄍㄢˇ ㄇㄠˋ ， ㄎㄜˇ ㄧˇ ㄒㄧㄢ ㄗㄞˋ ㄨㄤˇ ㄕㄤˋ ㄍㄨㄚˋ ㄏㄠˋ ， ㄗㄞˋ ㄑㄩˋ ㄇㄣˊ ㄓㄣˇ 。",
+    "romanization": "Rúguǒ zhǐ shì pǔtōng gǎnmào, kěyǐ xiān zài wǎng shang guàhào, zài qù ménzhěn.",
+    "translation": "For an ordinary cold, you can register online first and then go to the outpatient clinic.",
+    "translation_en": "For an ordinary cold, you can register online first and then go to the outpatient clinic.",
+    "translation_id": "Untuk pilek biasa, Anda bisa mendaftar secara daring terlebih dahulu, lalu datang ke poliklinik."
+   }
+  ],
+  "examMappings": {
+   "tocfl": "Level 1"
+  },
+  "audio": "conv:conv-tocfl-tocfl-l1-ruguo",
+  "language": "zh"
+ },
+ {
+  "id": "conv-tocfl-tocfl-l1-gongsi1",
+  "title": "公司",
+  "title_en": "Talking about company",
+  "title_id": "Ngobrol tentang perusahaan",
+  "context": "You chat about company.",
+  "context_en": "You chat about company.",
+  "context_id": "Kamu mengobrol tentang perusahaan.",
+  "formality": "neutral",
+  "level": 3,
+  "turns": [
+   {
+    "speaker": "tutor",
+    "text": "這家公司建立了一個平臺，讓不同部門共享客戶信息。",
+    "hanzi": "這家公司建立了一個平臺，讓不同部門共享客戶信息。",
+    "pinyin": "zhè jiā gōng sī jiàn lì le yī gè píng tái ， ràng bù tóng bù mén gòng xiǎng kè hù xìn xī 。",
+    "zhuyin": "ㄓㄜˋ ㄐㄧㄚ ㄍㄨㄥ ㄙ ㄐㄧㄢˋ ㄌㄧˋ ㄌㄜ˙ ㄧ ㄍㄜˋ ㄆㄧㄥˊ ㄊㄞˊ ， ㄖㄤˋ ㄅㄨˋ ㄊㄨㄥˊ ㄅㄨˋ ㄇㄣˊ ㄍㄨㄥˋ ㄒㄧㄤˇ ㄎㄜˋ ㄏㄨˋ ㄒㄧㄣˋ ㄒㄧ 。",
+    "romanization": "Zhè jiā gōngsī jiànlì le yí gè píngtái, ràng bùtóng bùmén gòngxiǎng kèhù xìnxī.",
+    "translation": "This company built a platform allowing different departments to share customer information.",
+    "translation_en": "This company built a platform allowing different departments to share customer information.",
+    "translation_id": "Perusahaan ini membangun platform yang memungkinkan berbagai departemen untuk berbagi informasi pelanggan."
+   },
+   {
+    "speaker": "user",
+    "text": "這家公司從國外引進了先進設備。",
+    "hanzi": "這家公司從國外引進了先進設備。",
+    "pinyin": "zhè jiā gōng sī cóng guó wài yǐn jìn le xiān jìn shè bèi 。",
+    "zhuyin": "ㄓㄜˋ ㄐㄧㄚ ㄍㄨㄥ ㄙ ㄘㄨㄥˊ ㄍㄨㄛˊ ㄨㄞˋ ㄧㄣˇ ㄐㄧㄣˋ ㄌㄜ˙ ㄒㄧㄢ ㄐㄧㄣˋ ㄕㄜˋ ㄅㄟˋ 。",
+    "romanization": "Zhè jiā gōngsī cóng guówài yǐnjìn le xiānjìn shèbèi.",
+    "translation": "This company introduced advanced equipment from abroad.",
+    "translation_en": "This company introduced advanced equipment from abroad.",
+    "translation_id": "Perusahaan ini memperkenalkan peralatan canggih dari luar negeri."
+   },
+   {
+    "speaker": "tutor",
+    "text": "公司計劃開發海外市場，因此急需懂外語的人才。",
+    "hanzi": "公司計劃開發海外市場，因此急需懂外語的人才。",
+    "pinyin": "gōng sī jì huà kāi fā hǎi wài shì chǎng ， yīn cǐ jí xū dǒng wài yǔ de rén cái 。",
+    "zhuyin": "ㄍㄨㄥ ㄙ ㄐㄧˋ ㄏㄨㄚˋ ㄎㄞ ㄈㄚ ㄏㄞˇ ㄨㄞˋ ㄕˋ ㄔㄤˇ ， ㄧㄣ ㄘˇ ㄐㄧˊ ㄒㄩ ㄉㄨㄥˇ ㄨㄞˋ ㄩˇ ㄉㄜ˙ ㄖㄣˊ ㄘㄞˊ 。",
+    "romanization": "Gōngsī jìhuà kāifā hǎiwài shìchǎng, yīncǐ jíxū dǒng wàiyǔ de réncái.",
+    "translation": "The company plans to develop overseas markets, so it urgently needs people who know foreign languages.",
+    "translation_en": "The company plans to develop overseas markets, so it urgently needs people who know foreign languages.",
+    "translation_id": "Perusahaan berencana mengembangkan pasar luar negeri, sehingga sangat membutuhkan orang-orang yang menguasai bahasa asing."
+   },
+   {
+    "speaker": "user",
+    "text": "公司應該公平對待每一位員工。",
+    "hanzi": "公司應該公平對待每一位員工。",
+    "pinyin": "gōng sī yīng gāi gōng píng duì dài měi yī wèi yuán gōng 。",
+    "zhuyin": "ㄍㄨㄥ ㄙ ㄧㄥ ㄍㄞ ㄍㄨㄥ ㄆㄧㄥˊ ㄉㄨㄟˋ ㄉㄞˋ ㄇㄟˇ ㄧ ㄨㄟˋ ㄩㄢˊ ㄍㄨㄥ 。",
+    "romanization": "Gōngsī yīnggāi gōngpíng duìdài měi yí wèi yuángōng.",
+    "translation": "The company should treat every employee fairly.",
+    "translation_en": "The company should treat every employee fairly.",
+    "translation_id": "Perusahaan harus memperlakukan setiap karyawan dengan adil."
+   },
+   {
+    "speaker": "tutor",
+    "text": "這筆交易沒有調查清楚，結果公司虧了不少錢。",
+    "hanzi": "這筆交易沒有調查清楚，結果公司虧了不少錢。",
+    "pinyin": "zhè bǐ jiāo yì méi yǒu diào chá qīng chǔ ， jié guǒ gōng sī kuī le bù shǎo qián 。",
+    "zhuyin": "ㄓㄜˋ ㄅㄧˇ ㄐㄧㄠ ㄧˋ ㄇㄟˊ ㄧㄡˇ ㄉㄧㄠˋ ㄔㄚˊ ㄑㄧㄥ ㄔㄨˇ ， ㄐㄧㄝˊ ㄍㄨㄛˇ ㄍㄨㄥ ㄙ ㄎㄨㄟ ㄌㄜ˙ ㄅㄨˋ ㄕㄠˇ ㄑㄧㄢˊ 。",
+    "romanization": "Zhè bǐ jiāoyì méiyǒu diàochá qīngchu, jiéguǒ gōngsī kuī le bù shǎo qián.",
+    "translation": "This deal was not investigated clearly, and as a result the company lost quite a lot of money.",
+    "translation_en": "This deal was not investigated clearly, and as a result the company lost quite a lot of money.",
+    "translation_id": "Kesepakatan ini tidak diselidiki secara jelas, dan akibatnya perusahaan merugi cukup banyak."
+   },
+   {
+    "speaker": "user",
+    "text": "人工成本上升以後，公司開始考慮自動化方案。",
+    "hanzi": "人工成本上升以後，公司開始考慮自動化方案。",
+    "pinyin": "rén gōng chéng běn shàng shēng yǐ hòu ， gōng sī kāi shǐ kǎo lǜ zì dòng huà fāng àn 。",
+    "zhuyin": "ㄖㄣˊ ㄍㄨㄥ ㄔㄥˊ ㄅㄣˇ ㄕㄤˋ ㄕㄥ ㄧˇ ㄏㄡˋ ， ㄍㄨㄥ ㄙ ㄎㄞ ㄕˇ ㄎㄠˇ ㄌㄩˋ ㄗˋ ㄉㄨㄥˋ ㄏㄨㄚˋ ㄈㄤ ㄢˋ 。",
+    "romanization": "Réngōng chéngběn shàngshēng yǐhòu, gōngsī kāishǐ kǎolǜ zìdònghuà fāng’àn.",
+    "translation": "After labour costs rose, the company began considering automation plans.",
+    "translation_en": "After labour costs rose, the company began considering automation plans.",
+    "translation_id": "Setelah biaya tenaga kerja meningkat, perusahaan mulai mempertimbangkan rencana otomatisasi."
+   }
+  ],
+  "examMappings": {
+   "tocfl": "Level 1"
+  },
+  "audio": "conv:conv-tocfl-tocfl-l1-gongsi1",
+  "language": "zh"
+ },
+ {
+  "id": "conv-tocfl-tocfl-l1-xuyao2",
+  "title": "需要",
+  "title_en": "Talking about to need; to want; to demand; to require; needs",
+  "title_id": "Ngobrol tentang membutuhkan",
+  "context": "You chat about to need; to want; to demand; to require; needs.",
+  "context_en": "You chat about to need; to want; to demand; to require; needs.",
+  "context_id": "Kamu mengobrol tentang membutuhkan.",
+  "formality": "neutral",
+  "level": 3,
+  "turns": [
+   {
+    "speaker": "tutor",
+    "text": "文件太大，下載可能需要幾分鐘。",
+    "hanzi": "文件太大，下載可能需要幾分鐘。",
+    "pinyin": "wén jiàn tài dà ， xià zài kě néng xū yào jǐ fēn zhōng 。",
+    "zhuyin": "ㄨㄣˊ ㄐㄧㄢˋ ㄊㄞˋ ㄉㄚˋ ， ㄒㄧㄚˋ ㄗㄞˋ ㄎㄜˇ ㄋㄥˊ ㄒㄩ ㄧㄠˋ ㄐㄧˇ ㄈㄣ ㄓㄨㄥ 。",
+    "romanization": "Wénjiàn tài dà, xiàzài kěnéng xūyào jǐ fēnzhōng.",
+    "translation": "The file is too large, so downloading it may take a few minutes.",
+    "translation_en": "The file is too large, so downloading it may take a few minutes.",
+    "translation_id": "Mohon jangan sembarangan mengunduh materi dari sumber yang tidak dikenal."
+   },
+   {
+    "speaker": "user",
+    "text": "長時間照顧病人需要很好的體力和耐心。",
+    "hanzi": "長時間照顧病人需要很好的體力和耐心。",
+    "pinyin": "zhǎng shí jiān zhào gù bìng rén xū yào hěn hǎo de tǐ lì hé nài xīn 。",
+    "zhuyin": "ㄓㄤˇ ㄕˊ ㄐㄧㄢ ㄓㄠˋ ㄍㄨˋ ㄅㄧㄥˋ ㄖㄣˊ ㄒㄩ ㄧㄠˋ ㄏㄣˇ ㄏㄠˇ ㄉㄜ˙ ㄊㄧˇ ㄌㄧˋ ㄏㄜˊ ㄋㄞˋ ㄒㄧㄣ 。",
+    "romanization": "Cháng shíjiān zhàogù bìngrén xūyào hěn hǎo de tǐlì hé nàixīn.",
+    "translation": "Taking care of patients for long periods requires good physical strength and patience.",
+    "translation_en": "Taking care of patients for long periods requires good physical strength and patience.",
+    "translation_id": "Merawat pasien dalam jangka waktu lama memerlukan kekuatan fisik dan kesabaran yang baik."
+   },
+   {
+    "speaker": "tutor",
+    "text": "門口有一堆舊紙箱，下午需要全部清理掉。",
+    "hanzi": "門口有一堆舊紙箱，下午需要全部清理掉。",
+    "pinyin": "mén kǒu yǒu yī duī jiù zhǐ xiāng ， xià wǔ xū yào quán bù qīng lǐ diào 。",
+    "zhuyin": "ㄇㄣˊ ㄎㄡˇ ㄧㄡˇ ㄧ ㄉㄨㄟ ㄐㄧㄡˋ ㄓˇ ㄒㄧㄤ ， ㄒㄧㄚˋ ㄨˇ ㄒㄩ ㄧㄠˋ ㄑㄩㄢˊ ㄅㄨˋ ㄑㄧㄥ ㄌㄧˇ ㄉㄧㄠˋ 。",
+    "romanization": "Ménkǒu yǒu yì duī jiù zhǐxiāng, xiàwǔ xūyào quánbù qīnglǐ diào.",
+    "translation": "There is a pile of old cardboard boxes by the door, and they all need clearing away this afternoon.",
+    "translation_en": "There is a pile of old cardboard boxes by the door, and they all need clearing away this afternoon.",
+    "translation_id": "Ada tumpukan kardus tua di dekat pintu, dan semuanya perlu dibersihkan sore ini."
+   },
+   {
+    "speaker": "user",
+    "text": "撥打國外電話前，你需要先確認國家號碼。",
+    "hanzi": "撥打國外電話前，你需要先確認國家號碼。",
+    "pinyin": "bō dǎ guó wài diàn huà qián ， nǐ xū yào xiān què rèn guó jiā hào mǎ 。",
+    "zhuyin": "ㄅㄛ ㄉㄚˇ ㄍㄨㄛˊ ㄨㄞˋ ㄉㄧㄢˋ ㄏㄨㄚˋ ㄑㄧㄢˊ ， ㄋㄧˇ ㄒㄩ ㄧㄠˋ ㄒㄧㄢ ㄑㄩㄝˋ ㄖㄣˋ ㄍㄨㄛˊ ㄐㄧㄚ ㄏㄠˋ ㄇㄚˇ 。",
+    "romanization": "Bōdǎ guówài diànhuà qián, nǐ xūyào xiān quèrèn guójiā hàomǎ.",
+    "translation": "Before dialling an overseas number, you need to confirm the country code.",
+    "translation_en": "Before dialling an overseas number, you need to confirm the country code.",
+    "translation_id": "Sebelum menghubungi nomor luar negeri, Anda perlu mengonfirmasi kode negara."
+   },
+   {
+    "speaker": "tutor",
+    "text": "護照上的姓名需要同時填寫漢字和拼音。",
+    "hanzi": "護照上的姓名需要同時填寫漢字和拼音。",
+    "pinyin": "hù zhào shàng de xìng míng xū yào tóng shí tián xiě hàn zì hé pīn yīn 。",
+    "zhuyin": "ㄏㄨˋ ㄓㄠˋ ㄕㄤˋ ㄉㄜ˙ ㄒㄧㄥˋ ㄇㄧㄥˊ ㄒㄩ ㄧㄠˋ ㄊㄨㄥˊ ㄕˊ ㄊㄧㄢˊ ㄒㄧㄝˇ ㄏㄢˋ ㄗˋ ㄏㄜˊ ㄆㄧㄣ ㄧㄣ 。",
+    "romanization": "Hùzhào shang de xìngmíng xūyào tóngshí tiánxiě Hànzì hé pīnyīn.",
+    "translation": "The name on the passport needs to be written in both Chinese characters and pinyin.",
+    "translation_en": "The name on the passport needs to be written in both Chinese characters and pinyin.",
+    "translation_id": "Nama pada paspor harus ditulis dalam huruf Mandarin dan pinyin."
+   },
+   {
+    "speaker": "user",
+    "text": "成年子女也需要關心父母的健康。",
+    "hanzi": "成年子女也需要關心父母的健康。",
+    "pinyin": "chéng nián zǐ nǚ yě xū yào guān xīn fù mǔ de jiàn kāng 。",
+    "zhuyin": "ㄔㄥˊ ㄋㄧㄢˊ ㄗˇ ㄋㄩˇ ㄧㄝˇ ㄒㄩ ㄧㄠˋ ㄍㄨㄢ ㄒㄧㄣ ㄈㄨˋ ㄇㄨˇ ㄉㄜ˙ ㄐㄧㄢˋ ㄎㄤ 。",
+    "romanization": "Chéngnián zǐnǚ yě xūyào guānxīn fùmǔ de jiànkāng.",
+    "translation": "Adult children also need to care about their parents’ health.",
+    "translation_en": "Adult children also need to care about their parents’ health.",
+    "translation_id": "Anak-anak yang sudah dewasa juga perlu memperhatikan kesehatan orang tuanya."
+   }
+  ],
+  "examMappings": {
+   "tocfl": "Level 1"
+  },
+  "audio": "conv:conv-tocfl-tocfl-l1-xuyao2",
+  "language": "zh"
+ }
+]
