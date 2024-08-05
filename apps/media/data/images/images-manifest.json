@@ -1,0 +1,1454 @@
+[
+  {
+    "hash": "1d0258c2440a",
+    "ext": "webp",
+    "translation": "manager",
+    "language": "zh"
+  },
+  {
+    "hash": "93c731f1c3a8",
+    "ext": "webp",
+    "translation": "company",
+    "language": "zh"
+  },
+  {
+    "hash": "800c327aefb3",
+    "ext": "webp",
+    "translation": "contract",
+    "language": "zh"
+  },
+  {
+    "hash": "ff468b4ddd37",
+    "ext": "webp",
+    "translation": "to quote, quotation",
+    "language": "zh"
+  },
+  {
+    "hash": "0d479f25be69",
+    "ext": "webp",
+    "translation": "client, customer",
+    "language": "zh"
+  },
+  {
+    "hash": "02c9ce1a1c67",
+    "ext": "webp",
+    "translation": "to work (in an office)",
+    "language": "zh"
+  },
+  {
+    "hash": "5d41402abc4b",
+    "ext": "webp",
+    "translation": "Hello",
+    "language": "zh"
+  },
+  {
+    "hash": "623832aac661",
+    "ext": "webp",
+    "translation": "to study, to learn",
+    "language": "zh"
+  },
+  {
+    "hash": "639bae9ac6b3",
+    "ext": "webp",
+    "translation": "you",
+    "language": "zh"
+  },
+  {
+    "hash": "2c61465846ef",
+    "ext": "webp",
+    "translation": "good, well",
+    "language": "zh"
+  },
+  {
+    "hash": "865c0c0b4ab0",
+    "ext": "webp",
+    "translation": "I",
+    "language": "zh"
+  },
+  {
+    "hash": "6f96cfdfe5cc",
+    "ext": "webp",
+    "translation": "he",
+    "language": "zh"
+  },
+  {
+    "hash": "9eb0d040ef57",
+    "ext": "webp",
+    "translation": "she",
+    "language": "zh"
+  },
+  {
+    "hash": "07062bb18437",
+    "ext": "webp",
+    "translation": "to be",
+    "language": "zh"
+  },
+  {
+    "hash": "71f073bbf819",
+    "ext": "webp",
+    "translation": "no, not",
+    "language": "zh"
+  },
+  {
+    "hash": "a0152beb780e",
+    "ext": "webp",
+    "translation": "possessive particle",
+    "language": "zh"
+  },
+  {
+    "hash": "a2e24a01b703",
+    "ext": "webp",
+    "translation": "question particle",
+    "language": "zh"
+  },
+  {
+    "hash": "f016441d00c1",
+    "ext": "webp",
+    "translation": "very",
+    "language": "zh"
+  },
+  {
+    "hash": "07cc694b9b3f",
+    "ext": "webp",
+    "translation": "time",
+    "language": "zh"
+  },
+  {
+    "hash": "97bc592b27a9",
+    "ext": "webp",
+    "translation": "now",
+    "language": "zh"
+  },
+  {
+    "hash": "85dc3369f2eb",
+    "ext": "webp",
+    "translation": "can, may",
+    "language": "zh"
+  },
+  {
+    "hash": "84df72478626",
+    "ext": "webp",
+    "translation": "to want, to need",
+    "language": "zh"
+  },
+  {
+    "hash": "f7624011f88f",
+    "ext": "webp",
+    "translation": "to think, to want",
+    "language": "zh"
+  },
+  {
+    "hash": "392de8a4b863",
+    "ext": "webp",
+    "translation": "to know",
+    "language": "zh"
+  },
+  {
+    "hash": "3b54f545e487",
+    "ext": "webp",
+    "translation": "to feel, to think",
+    "language": "zh"
+  },
+  {
+    "hash": "0bc154ca2844",
+    "ext": "webp",
+    "translation": "work; to work",
+    "language": "zh"
+  },
+  {
+    "hash": "8bc1b2f84252",
+    "ext": "webp",
+    "translation": "busy",
+    "language": "zh"
+  },
+  {
+    "hash": "287f44f35ecb",
+    "ext": "webp",
+    "translation": "tired",
+    "language": "zh"
+  },
+  {
+    "hash": "0cc42471818b",
+    "ext": "webp",
+    "translation": "to introduce",
+    "language": "zh"
+  },
+  {
+    "hash": "d91b2c3dc97d",
+    "ext": "webp",
+    "translation": "to like",
+    "language": "zh"
+  },
+  {
+    "hash": "bebff14683a1",
+    "ext": "webp",
+    "translation": "to live in",
+    "language": "zh"
+  },
+  {
+    "hash": "812622ab6ed5",
+    "ext": "webp",
+    "translation": "can speak",
+    "language": "zh"
+  },
+  {
+    "hash": "9b8afe18cc46",
+    "ext": "webp",
+    "translation": "spoken language",
+    "language": "zh"
+  },
+  {
+    "hash": "0d3fda0bdbb9",
+    "ext": "webp",
+    "translation": "family",
+    "language": "zh"
+  },
+  {
+    "hash": "aab92e69374e",
+    "ext": "webp",
+    "translation": "weather",
+    "language": "zh"
+  },
+  {
+    "hash": "d0bb80aabb86",
+    "ext": "webp",
+    "translation": "education",
+    "language": "zh"
+  },
+  {
+    "hash": "62506be34d57",
+    "ext": "webp",
+    "translation": "food",
+    "language": "zh"
+  },
+  {
+    "hash": "18d676991926",
+    "ext": "webp",
+    "translation": "music",
+    "language": "zh"
+  },
+  {
+    "hash": "79464212afb7",
+    "ext": "webp",
+    "translation": "television",
+    "language": "zh"
+  },
+  {
+    "hash": "c7c3169c21f1",
+    "ext": "webp",
+    "translation": "morning",
+    "language": "zh"
+  },
+  {
+    "hash": "3af00c6cad11",
+    "ext": "webp",
+    "translation": "friend",
+    "language": "zh"
+  },
+  {
+    "hash": "56ab24c15b72",
+    "ext": "webp",
+    "translation": "happy",
+    "language": "zh"
+  },
+  {
+    "hash": "69faab626835",
+    "ext": "webp",
+    "translation": "goodbye",
+    "language": "zh"
+  },
+  {
+    "hash": "7516c3b35580",
+    "ext": "webp",
+    "translation": "school",
+    "language": "zh"
+  },
+  {
+    "hash": "31779ba13593",
+    "ext": "webp",
+    "translation": "Taiwan",
+    "language": "zh"
+  },
+  {
+    "hash": "db3f3946ba27",
+    "ext": "webp",
+    "translation": "together",
+    "language": "zh"
+  },
+  {
+    "hash": "c052784c2326",
+    "ext": "webp",
+    "translation": "older sister",
+    "language": "zh"
+  },
+  {
+    "hash": "e8008e06909d",
+    "ext": "webp",
+    "translation": "beautiful",
+    "language": "zh"
+  },
+  {
+    "hash": "1156105b5513",
+    "ext": "webp",
+    "translation": "convenient",
+    "language": "zh"
+  },
+  {
+    "hash": "8227dd89bc78",
+    "ext": "webp",
+    "translation": "cute, adorable",
+    "language": "zh"
+  },
+  {
+    "hash": "57f15a49a6f4",
+    "ext": "webp",
+    "translation": "dim sum, snack",
+    "language": "zh"
+  },
+  {
+    "hash": "d077f244def8",
+    "ext": "webp",
+    "translation": "cat",
+    "language": "zh"
+  },
+  {
+    "hash": "06d80eb0c50b",
+    "ext": "webp",
+    "translation": "dog",
+    "language": "zh"
+  },
+  {
+    "hash": "bda9643ac660",
+    "ext": "webp",
+    "translation": "red",
+    "language": "zh"
+  },
+  {
+    "hash": "48d6215903df",
+    "ext": "webp",
+    "translation": "blue",
+    "language": "zh"
+  },
+  {
+    "hash": "83e4a96aed96",
+    "ext": "webp",
+    "translation": "fish",
+    "language": "zh"
+  },
+  {
+    "hash": "742929dcb631",
+    "ext": "webp",
+    "translation": "chicken",
+    "language": "zh"
+  },
+  {
+    "hash": "c756662595bb",
+    "ext": "webp",
+    "translation": "classroom",
+    "language": "zh"
+  },
+  {
+    "hash": "1658f7f069a5",
+    "ext": "webp",
+    "translation": "homework",
+    "language": "zh"
+  },
+  {
+    "hash": "5b80fd7ba500",
+    "ext": "webp",
+    "translation": "to jump",
+    "language": "zh"
+  },
+  {
+    "hash": "922e5456bb61",
+    "ext": "webp",
+    "translation": "to run",
+    "language": "zh"
+  },
+  {
+    "hash": "d32ca7b26227",
+    "ext": "webp",
+    "translation": "to sing",
+    "language": "zh"
+  },
+  {
+    "hash": "6f8b8904da82",
+    "ext": "webp",
+    "translation": "to draw, to paint",
+    "language": "zh"
+  },
+  {
+    "hash": "ee1150845fa3",
+    "ext": "webp",
+    "translation": "evening",
+    "language": "de"
+  },
+  {
+    "hash": "1f3870be274f",
+    "ext": "webp",
+    "translation": "apple",
+    "language": "de"
+  },
+  {
+    "hash": "1af23c3dbe98",
+    "ext": "webp",
+    "translation": "to work",
+    "language": "de"
+  },
+  {
+    "hash": "ee087f9a2d13",
+    "ext": "webp",
+    "translation": "to get up",
+    "language": "de"
+  },
+  {
+    "hash": "478f79575e29",
+    "ext": "webp",
+    "translation": "please / you're welcome",
+    "language": "de"
+  },
+  {
+    "hash": "dba7b12a19fe",
+    "ext": "webp",
+    "translation": "bread",
+    "language": "de"
+  },
+  {
+    "hash": "e511e2a4a4b8",
+    "ext": "webp",
+    "translation": "brother",
+    "language": "de"
+  },
+  {
+    "hash": "821f03288846",
+    "ext": "webp",
+    "translation": "book",
+    "language": "de"
+  },
+  {
+    "hash": "455472b522fd",
+    "ext": "webp",
+    "translation": "thank you",
+    "language": "de"
+  },
+  {
+    "hash": "28ef36b35ae8",
+    "ext": "webp",
+    "translation": "Germany",
+    "language": "de"
+  },
+  {
+    "hash": "f97c5d29941b",
+    "ext": "webp",
+    "translation": "one",
+    "language": "de"
+  },
+  {
+    "hash": "8dc67e5da2d0",
+    "ext": "webp",
+    "translation": "to eat",
+    "language": "de"
+  },
+  {
+    "hash": "56609ab6ba04",
+    "ext": "webp",
+    "translation": "woman",
+    "language": "de"
+  },
+  {
+    "hash": "be68582f77ae",
+    "ext": "webp",
+    "translation": "friendly",
+    "language": "de"
+  },
+  {
+    "hash": "93c277366a01",
+    "ext": "webp",
+    "translation": "to have breakfast",
+    "language": "de"
+  },
+  {
+    "hash": "eb36616d0280",
+    "ext": "webp",
+    "translation": "to go, walk",
+    "language": "de"
+  },
+  {
+    "hash": "82a47546d15c",
+    "ext": "webp",
+    "translation": "gladly, with pleasure",
+    "language": "de"
+  },
+  {
+    "hash": "94db8e3f262b",
+    "ext": "webp",
+    "translation": "big / tall",
+    "language": "de"
+  },
+  {
+    "hash": "755f85c2723b",
+    "ext": "webp",
+    "translation": "good",
+    "language": "de"
+  },
+  {
+    "hash": "5a43bf14ad84",
+    "ext": "webp",
+    "translation": "to have",
+    "language": "de"
+  },
+  {
+    "hash": "2ca63cddd54f",
+    "ext": "webp",
+    "translation": "house",
+    "language": "de"
+  },
+  {
+    "hash": "fb5d1b4a2312",
+    "ext": "webp",
+    "translation": "notebook",
+    "language": "de"
+  },
+  {
+    "hash": "c5e7dfaf771d",
+    "ext": "webp",
+    "translation": "today",
+    "language": "de"
+  },
+  {
+    "hash": "01365b2bab5c",
+    "ext": "webp",
+    "translation": "my name is",
+    "language": "de"
+  },
+  {
+    "hash": "656b20346a79",
+    "ext": "webp",
+    "translation": "I come from",
+    "language": "de"
+  },
+  {
+    "hash": "a6105c0a611b",
+    "ext": "webp",
+    "translation": "yes",
+    "language": "de"
+  },
+  {
+    "hash": "fea0f1f6fede",
+    "ext": "webp",
+    "translation": "cheese",
+    "language": "de"
+  },
+  {
+    "hash": "24eb05d18318",
+    "ext": "webp",
+    "translation": "coffee",
+    "language": "de"
+  },
+  {
+    "hash": "1b7d5726533a",
+    "ext": "webp",
+    "translation": "child",
+    "language": "de"
+  },
+  {
+    "hash": "eb5c1399a871",
+    "ext": "webp",
+    "translation": "small",
+    "language": "de"
+  },
+  {
+    "hash": "623832aac661",
+    "ext": "webp",
+    "translation": "to learn",
+    "language": "de"
+  },
+  {
+    "hash": "7b803e9da676",
+    "ext": "webp",
+    "translation": "to read",
+    "language": "de"
+  },
+  {
+    "hash": "39c63ddb96a3",
+    "ext": "webp",
+    "translation": "man",
+    "language": "de"
+  },
+  {
+    "hash": "2aa34b82bc04",
+    "ext": "webp",
+    "translation": "my name",
+    "language": "de"
+  },
+  {
+    "hash": "ecbdb882ae86",
+    "ext": "webp",
+    "translation": "milk",
+    "language": "de"
+  },
+  {
+    "hash": "6ee6a213cb02",
+    "ext": "webp",
+    "translation": "mother",
+    "language": "de"
+  },
+  {
+    "hash": "71f073bbf819",
+    "ext": "webp",
+    "translation": "no",
+    "language": "de"
+  },
+  {
+    "hash": "81ab32c1e391",
+    "ext": "webp",
+    "translation": "nice, kind",
+    "language": "de"
+  },
+  {
+    "hash": "7513d80f60bb",
+    "ext": "webp",
+    "translation": "bill, invoice",
+    "language": "de"
+  },
+  {
+    "hash": "bae60998ffe4",
+    "ext": "webp",
+    "translation": "bad",
+    "language": "de"
+  },
+  {
+    "hash": "5e9c5b81d514",
+    "ext": "webp",
+    "translation": "to write",
+    "language": "de"
+  },
+  {
+    "hash": "daffd55e1b80",
+    "ext": "webp",
+    "translation": "sister",
+    "language": "de"
+  },
+  {
+    "hash": "a09272b53419",
+    "ext": "webp",
+    "translation": "chair",
+    "language": "de"
+  },
+  {
+    "hash": "7239ea2b5dc9",
+    "ext": "webp",
+    "translation": "tea",
+    "language": "de"
+  },
+  {
+    "hash": "aab9e1de16f3",
+    "ext": "webp",
+    "translation": "table",
+    "language": "de"
+  },
+  {
+    "hash": "23c4bb57445e",
+    "ext": "webp",
+    "translation": "to drink",
+    "language": "de"
+  },
+  {
+    "hash": "bfa99df33b13",
+    "ext": "webp",
+    "translation": "bye",
+    "language": "de"
+  },
+  {
+    "hash": "99b58ba65f82",
+    "ext": "webp",
+    "translation": "clock; o'clock",
+    "language": "de"
+  },
+  {
+    "hash": "0de959beaa82",
+    "ext": "webp",
+    "translation": "father",
+    "language": "de"
+  },
+  {
+    "hash": "9460370bb0ca",
+    "ext": "webp",
+    "translation": "water",
+    "language": "de"
+  },
+  {
+    "hash": "7915fc84fad6",
+    "ext": "webp",
+    "translation": "what is your name? (formal)",
+    "language": "de"
+  },
+  {
+    "hash": "ba0d4472f0e0",
+    "ext": "webp",
+    "translation": "to live, reside",
+    "language": "de"
+  },
+  {
+    "hash": "cd2158f023ff",
+    "ext": "webp",
+    "translation": "apartment",
+    "language": "de"
+  },
+  {
+    "hash": "fef2576d54db",
+    "ext": "webp",
+    "translation": "room",
+    "language": "de"
+  },
+  {
+    "hash": "32848d22a5dc",
+    "ext": "webp",
+    "translation": "to depart",
+    "language": "de"
+  },
+  {
+    "hash": "477bece28890",
+    "ext": "webp",
+    "translation": "offer, special",
+    "language": "de"
+  },
+  {
+    "hash": "f102bbe0e57d",
+    "ext": "webp",
+    "translation": "to arrive",
+    "language": "de"
+  },
+  {
+    "hash": "bf4e28785ab0",
+    "ext": "webp",
+    "translation": "pharmacy",
+    "language": "de"
+  },
+  {
+    "hash": "98b1fde1afd1",
+    "ext": "webp",
+    "translation": "work / job",
+    "language": "de"
+  },
+  {
+    "hash": "980f2ad73168",
+    "ext": "webp",
+    "translation": "workplace",
+    "language": "de"
+  },
+  {
+    "hash": "f9f16d97c90d",
+    "ext": "webp",
+    "translation": "doctor",
+    "language": "de"
+  },
+  {
+    "hash": "f19bd0844e53",
+    "ext": "webp",
+    "translation": "eye",
+    "language": "de"
+  },
+  {
+    "hash": "e6d96502596d",
+    "ext": "webp",
+    "translation": "car",
+    "language": "de"
+  },
+  {
+    "hash": "67518d646b9c",
+    "ext": "webp",
+    "translation": "bathroom",
+    "language": "de"
+  },
+  {
+    "hash": "1ce4d1769c67",
+    "ext": "webp",
+    "translation": "train station",
+    "language": "de"
+  },
+  {
+    "hash": "93585797569d",
+    "ext": "webp",
+    "translation": "cash",
+    "language": "de"
+  },
+  {
+    "hash": "87a1459efb4f",
+    "ext": "webp",
+    "translation": "stomach, belly",
+    "language": "de"
+  },
+  {
+    "hash": "1d7c700c4fd1",
+    "ext": "webp",
+    "translation": "profession, occupation",
+    "language": "de"
+  },
+  {
+    "hash": "001cbc059a40",
+    "ext": "webp",
+    "translation": "bed",
+    "language": "de"
+  },
+  {
+    "hash": "3676d55f8449",
+    "ext": "webp",
+    "translation": "application",
+    "language": "de"
+  },
+  {
+    "hash": "962aca717c11",
+    "ext": "webp",
+    "translation": "to pay",
+    "language": "de"
+  },
+  {
+    "hash": "e40b34e3380d",
+    "ext": "webp",
+    "translation": "cheap",
+    "language": "de"
+  },
+  {
+    "hash": "456f0271ce2d",
+    "ext": "webp",
+    "translation": "to book",
+    "language": "de"
+  },
+  {
+    "hash": "e72f4545eb68",
+    "ext": "webp",
+    "translation": "office",
+    "language": "de"
+  },
+  {
+    "hash": "d20f83ee6933",
+    "ext": "webp",
+    "translation": "bus",
+    "language": "de"
+  },
+  {
+    "hash": "ceb8447cc4ab",
+    "ext": "webp",
+    "translation": "boss",
+    "language": "de"
+  },
+  {
+    "hash": "a283c1853348",
+    "ext": "webp",
+    "translation": "to shop",
+    "language": "de"
+  },
+  {
+    "hash": "d6e047923b2b",
+    "ext": "webp",
+    "translation": "experience",
+    "language": "de"
+  },
+  {
+    "hash": "cbe6666027e7",
+    "ext": "webp",
+    "translation": "ability, skill",
+    "language": "de"
+  },
+  {
+    "hash": "afaa40108c6d",
+    "ext": "webp",
+    "translation": "to drive, go",
+    "language": "de"
+  },
+  {
+    "hash": "cdfee2bc43d6",
+    "ext": "webp",
+    "translation": "ticket",
+    "language": "de"
+  },
+  {
+    "hash": "9e8e37aeb444",
+    "ext": "webp",
+    "translation": "bicycle",
+    "language": "de"
+  },
+  {
+    "hash": "05b8c74cbd96",
+    "ext": "webp",
+    "translation": "window",
+    "language": "de"
+  },
+  {
+    "hash": "6c1562051db6",
+    "ext": "webp",
+    "translation": "fever",
+    "language": "de"
+  },
+  {
+    "hash": "4a776428d740",
+    "ext": "webp",
+    "translation": "airport",
+    "language": "de"
+  },
+  {
+    "hash": "45ea37a8b034",
+    "ext": "webp",
+    "translation": "airplane",
+    "language": "de"
+  },
+  {
+    "hash": "a3eb2ce8c0d6",
+    "ext": "webp",
+    "translation": "free time, leisure",
+    "language": "de"
+  },
+  {
+    "hash": "d8735f7489c9",
+    "ext": "webp",
+    "translation": "foot",
+    "language": "de"
+  },
+  {
+    "hash": "7476a5dcf8ed",
+    "ext": "webp",
+    "translation": "soccer, football",
+    "language": "de"
+  },
+  {
+    "hash": "28aa83831563",
+    "ext": "webp",
+    "translation": "salary",
+    "language": "de"
+  },
+  {
+    "hash": "9726255eec08",
+    "ext": "webp",
+    "translation": "money",
+    "language": "de"
+  },
+  {
+    "hash": "df30aaa36f07",
+    "ext": "webp",
+    "translation": "luggage",
+    "language": "de"
+  },
+  {
+    "hash": "741839f346d6",
+    "ext": "webp",
+    "translation": "healthy",
+    "language": "de"
+  },
+  {
+    "hash": "f03ea2c3613a",
+    "ext": "webp",
+    "translation": "platform, track",
+    "language": "de"
+  },
+  {
+    "hash": "720eedbbafe3",
+    "ext": "webp",
+    "translation": "neck, throat",
+    "language": "de"
+  },
+  {
+    "hash": "573ce5969e98",
+    "ext": "webp",
+    "translation": "hand",
+    "language": "de"
+  },
+  {
+    "hash": "226f863b64bf",
+    "ext": "webp",
+    "translation": "towel",
+    "language": "de"
+  },
+  {
+    "hash": "27369b3bf448",
+    "ext": "webp",
+    "translation": "hot",
+    "language": "de"
+  },
+  {
+    "hash": "c9507f538a6e",
+    "ext": "webp",
+    "translation": "shirt",
+    "language": "de"
+  },
+  {
+    "hash": "128b6697ec11",
+    "ext": "webp",
+    "translation": "hobby",
+    "language": "de"
+  },
+  {
+    "hash": "27cc9624b359",
+    "ext": "webp",
+    "translation": "pants, trousers",
+    "language": "de"
+  },
+  {
+    "hash": "e919c49d5f0c",
+    "ext": "webp",
+    "translation": "hotel",
+    "language": "de"
+  },
+  {
+    "hash": "84cdc76cabf4",
+    "ext": "webp",
+    "translation": "year",
+    "language": "de"
+  },
+  {
+    "hash": "75e52a0ecfaf",
+    "ext": "webp",
+    "translation": "cold",
+    "language": "de"
+  },
+  {
+    "hash": "c2eb474982f1",
+    "ext": "webp",
+    "translation": "to buy",
+    "language": "de"
+  },
+  {
+    "hash": "4870f9d3a629",
+    "ext": "webp",
+    "translation": "cinema",
+    "language": "de"
+  },
+  {
+    "hash": "50cf19912960",
+    "ext": "webp",
+    "translation": "clothing",
+    "language": "de"
+  },
+  {
+    "hash": "ed2c35f2acfa",
+    "ext": "webp",
+    "translation": "can / to be able to",
+    "language": "de"
+  },
+  {
+    "hash": "15b7493d0730",
+    "ext": "webp",
+    "translation": "suitcase",
+    "language": "de"
+  },
+  {
+    "hash": "2799d44695d2",
+    "ext": "webp",
+    "translation": "colleague",
+    "language": "de"
+  },
+  {
+    "hash": "0909553c7a64",
+    "ext": "webp",
+    "translation": "concert",
+    "language": "de"
+  },
+  {
+    "hash": "96e89a298e0a",
+    "ext": "webp",
+    "translation": "head",
+    "language": "de"
+  },
+  {
+    "hash": "7ac6cf540597",
+    "ext": "webp",
+    "translation": "sick, ill",
+    "language": "de"
+  },
+  {
+    "hash": "8b42a1c9b8f9",
+    "ext": "webp",
+    "translation": "hospital",
+    "language": "de"
+  },
+  {
+    "hash": "09228dac1556",
+    "ext": "webp",
+    "translation": "kitchen",
+    "language": "de"
+  },
+  {
+    "hash": "d77a0dbc1c17",
+    "ext": "webp",
+    "translation": "shop, store",
+    "language": "de"
+  },
+  {
+    "hash": "263addb76111",
+    "ext": "webp",
+    "translation": "lamp",
+    "language": "de"
+  },
+  {
+    "hash": "e909c2d7067e",
+    "ext": "webp",
+    "translation": "country",
+    "language": "de"
+  },
+  {
+    "hash": "c1c16452b046",
+    "ext": "webp",
+    "translation": "market",
+    "language": "de"
+  },
+  {
+    "hash": "d9e5d212320e",
+    "ext": "webp",
+    "translation": "medicine",
+    "language": "de"
+  },
+  {
+    "hash": "08202dfc84d6",
+    "ext": "webp",
+    "translation": "must / have to",
+    "language": "de"
+  },
+  {
+    "hash": "cb5786412bec",
+    "ext": "webp",
+    "translation": "mouth",
+    "language": "de"
+  },
+  {
+    "hash": "41d1de28e96d",
+    "ext": "webp",
+    "translation": "nose",
+    "language": "de"
+  },
+  {
+    "hash": "d8ff99616fc9",
+    "ext": "webp",
+    "translation": "ear",
+    "language": "de"
+  },
+  {
+    "hash": "1cbfb724ceee",
+    "ext": "webp",
+    "translation": "break",
+    "language": "de"
+  },
+  {
+    "hash": "78a5eb43deef",
+    "ext": "webp",
+    "translation": "price",
+    "language": "de"
+  },
+  {
+    "hash": "e2dc6c48c56d",
+    "ext": "webp",
+    "translation": "discount",
+    "language": "de"
+  },
+  {
+    "hash": "1f6503307f1e",
+    "ext": "webp",
+    "translation": "shelf",
+    "language": "de"
+  },
+  {
+    "hash": "23678db5efde",
+    "ext": "webp",
+    "translation": "rain",
+    "language": "de"
+  },
+  {
+    "hash": "f30c94cc2a32",
+    "ext": "webp",
+    "translation": "trip, journey",
+    "language": "de"
+  },
+  {
+    "hash": "cff8b1fe9362",
+    "ext": "webp",
+    "translation": "bedroom",
+    "language": "de"
+  },
+  {
+    "hash": "3c6e0b8a9c15",
+    "ext": "webp",
+    "translation": "key",
+    "language": "de"
+  },
+  {
+    "hash": "87a429872c7f",
+    "ext": "webp",
+    "translation": "pain",
+    "language": "de"
+  },
+  {
+    "hash": "2b93fbdf27d4",
+    "ext": "webp",
+    "translation": "snow",
+    "language": "de"
+  },
+  {
+    "hash": "6f26e2aeec86",
+    "ext": "webp",
+    "translation": "beautiful / nice",
+    "language": "de"
+  },
+  {
+    "hash": "399400464f9e",
+    "ext": "webp",
+    "translation": "cupboard, closet",
+    "language": "de"
+  },
+  {
+    "hash": "d8a48e3f0e13",
+    "ext": "webp",
+    "translation": "shoe",
+    "language": "de"
+  },
+  {
+    "hash": "d27c2eaaabd5",
+    "ext": "webp",
+    "translation": "to swim",
+    "language": "de"
+  },
+  {
+    "hash": "cbf4e0b79710",
+    "ext": "webp",
+    "translation": "soap",
+    "language": "de"
+  },
+  {
+    "hash": "7a2cc8b443e7",
+    "ext": "webp",
+    "translation": "sofa",
+    "language": "de"
+  },
+  {
+    "hash": "ebd556e6dfc9",
+    "ext": "webp",
+    "translation": "sun",
+    "language": "de"
+  },
+  {
+    "hash": "fbe322a89bc0",
+    "ext": "webp",
+    "translation": "mirror",
+    "language": "de"
+  },
+  {
+    "hash": "213fa3203dc5",
+    "ext": "webp",
+    "translation": "to speak",
+    "language": "de"
+  },
+  {
+    "hash": "4ed5d2eaed1a",
+    "ext": "webp",
+    "translation": "city",
+    "language": "de"
+  },
+  {
+    "hash": "a6dc9874ac04",
+    "ext": "webp",
+    "translation": "position, job",
+    "language": "de"
+  },
+  {
+    "hash": "1f4a9685e37e",
+    "ext": "webp",
+    "translation": "street",
+    "language": "de"
+  },
+  {
+    "hash": "46d7115f4014",
+    "ext": "webp",
+    "translation": "supermarket",
+    "language": "de"
+  },
+  {
+    "hash": "628b7db04235",
+    "ext": "webp",
+    "translation": "day",
+    "language": "de"
+  },
+  {
+    "hash": "859a24ed3767",
+    "ext": "webp",
+    "translation": "to dance",
+    "language": "de"
+  },
+  {
+    "hash": "b1caa385c37f",
+    "ext": "webp",
+    "translation": "appointment",
+    "language": "de"
+  },
+  {
+    "hash": "f384d48efac7",
+    "ext": "webp",
+    "translation": "expensive",
+    "language": "de"
+  },
+  {
+    "hash": "5827264e8de2",
+    "ext": "webp",
+    "translation": "theater",
+    "language": "de"
+  },
+  {
+    "hash": "2feaaf89c217",
+    "ext": "webp",
+    "translation": "door",
+    "language": "de"
+  },
+  {
+    "hash": "ee8ded5830dd",
+    "ext": "webp",
+    "translation": "vacation",
+    "language": "de"
+  },
+  {
+    "hash": "cbe85f42e687",
+    "ext": "webp",
+    "translation": "to sell",
+    "language": "de"
+  },
+  {
+    "hash": "0540c0e3dd58",
+    "ext": "webp",
+    "translation": "to understand",
+    "language": "de"
+  },
+  {
+    "hash": "76ef92c7b8a7",
+    "ext": "webp",
+    "translation": "to hike",
+    "language": "de"
+  },
+  {
+    "hash": "88df31d89cd4",
+    "ext": "webp",
+    "translation": "way, path",
+    "language": "de"
+  },
+  {
+    "hash": "7e25b972e192",
+    "ext": "webp",
+    "translation": "wind",
+    "language": "de"
+  },
+  {
+    "hash": "172a8327fcd3",
+    "ext": "webp",
+    "translation": "week",
+    "language": "de"
+  },
+  {
+    "hash": "a1234b3161b4",
+    "ext": "webp",
+    "translation": "cloud",
+    "language": "de"
+  },
+  {
+    "hash": "91c7a6f59d51",
+    "ext": "webp",
+    "translation": "to want",
+    "language": "de"
+  },
+  {
+    "hash": "28b26be59c98",
+    "ext": "webp",
+    "translation": "tooth",
+    "language": "de"
+  },
+  {
+    "hash": "61b3a8faa9c1",
+    "ext": "webp",
+    "translation": "train",
+    "language": "de"
+  },
+  {
+    "hash": "6050ce63e4bc",
+    "ext": "webp",
+    "translation": "please",
+    "language": "en"
+  },
+  {
+    "hash": "f8d7aa1cbf37",
+    "ext": "webp",
+    "translation": "to go",
+    "language": "en"
+  },
+  {
+    "hash": "2398fd1da7d9",
+    "ext": "webp",
+    "translation": "to come",
+    "language": "en"
+  },
+  {
+    "hash": "02b2c24c2809",
+    "ext": "webp",
+    "translation": "to do",
+    "language": "en"
+  },
+  {
+    "hash": "d861877da56b",
+    "ext": "webp",
+    "translation": "big",
+    "language": "en"
+  },
+  {
+    "hash": "b8a9f715dbb6",
+    "ext": "webp",
+    "translation": "two",
+    "language": "en"
+  },
+  {
+    "hash": "35d6d33467aa",
+    "ext": "webp",
+    "translation": "three",
+    "language": "en"
+  },
+  {
+    "hash": "f48aa0e46435",
+    "ext": "webp",
+    "translation": "hello / good afternoon",
+    "language": "ja"
+  },
+  {
+    "hash": "f487ea34b482",
+    "ext": "webp",
+    "translation": "I / me",
+    "language": "ja"
+  },
+  {
+    "hash": "49ac59f706e9",
+    "ext": "webp",
+    "translation": "is / am / are",
+    "language": "ja"
+  },
+  {
+    "hash": "6e99883f6311",
+    "ext": "webp",
+    "translation": "father (my)",
+    "language": "ja"
+  },
+  {
+    "hash": "ade470cd1601",
+    "ext": "webp",
+    "translation": "mother (my)",
+    "language": "ja"
+  },
+  {
+    "hash": "8d7883854312",
+    "ext": "webp",
+    "translation": "teacher",
+    "language": "ja"
+  },
+  {
+    "hash": "4a2028eceac5",
+    "ext": "webp",
+    "translation": "what",
+    "language": "ja"
+  },
+  {
+    "hash": "567904efe9e6",
+    "ext": "webp",
+    "translation": "where",
+    "language": "ja"
+  }
+]

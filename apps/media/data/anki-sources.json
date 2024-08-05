@@ -1,0 +1,17 @@
+[
+  {
+    "id": "example-hsk1-characters",
+    "name": "Contoh: HSK1 Characters",
+    "url": "",
+    "file": "",
+    "deckMatch": "",
+    "target": "characters",
+    "fields": {
+      "hanzi": 0,
+      "pinyin": 1,
+      "translation": 2,
+      "zhuyin": -1,
+      "extras": { "example": 3 }
+    }
+  }
+]

@@ -1,0 +1,182 @@
+{
+  "zh": {
+    "vocabulary": [
+      "hsk/hsk1",
+      "hsk/hsk2",
+      "hsk/hsk3",
+      "hsk/hsk4",
+      "hsk/hsk5",
+      "hsk/hsk6",
+      "hsk/hsk7",
+      "hsk/hsk8",
+      "hsk/hsk9",
+      "tocfl/tocfl-l1",
+      "tocfl/tocfl-l2",
+      "tocfl/tocfl-l3",
+      "tocfl/tocfl-l4",
+      "tocfl/tocfl-l5",
+      "tocfl/tocfl-l6",
+      "tocfl/tocfl-n1",
+      "tocfl/tocfl-n2"
+    ],
+    "grammar": [
+      "hsk/hsk1",
+      "hsk/hsk2",
+      "hsk/hsk3",
+      "hsk/hsk4",
+      "hsk/hsk5",
+      "hsk/hsk6",
+      "hsk/hsk7",
+      "hsk/hsk8",
+      "hsk/hsk9",
+      "tocfl/tocfl-l1",
+      "tocfl/tocfl-l2",
+      "tocfl/tocfl-l3",
+      "tocfl/tocfl-l4",
+      "tocfl/tocfl-l5",
+      "tocfl/tocfl-l6",
+      "tocfl/tocfl-n1",
+      "tocfl/tocfl-n2"
+    ],
+    "readings": [
+      "hsk/hsk1",
+      "hsk/hsk2",
+      "hsk/hsk3",
+      "hsk/hsk4",
+      "hsk/hsk5",
+      "hsk/hsk6",
+      "hsk/hsk7",
+      "hsk/hsk8",
+      "hsk/hsk9",
+      "tocfl/tocfl-l1",
+      "tocfl/tocfl-l2",
+      "tocfl/tocfl-l3",
+      "tocfl/tocfl-l4",
+      "tocfl/tocfl-l5",
+      "tocfl/tocfl-l6",
+      "tocfl/tocfl-n1",
+      "tocfl/tocfl-n2"
+    ],
+    "conversations": [
+      "hsk/hsk1",
+      "hsk/hsk2",
+      "hsk/hsk3",
+      "hsk/hsk4",
+      "hsk/hsk5",
+      "hsk/hsk6",
+      "hsk/hsk7",
+      "hsk/hsk8",
+      "hsk/hsk9",
+      "tocfl/tocfl-l1",
+      "tocfl/tocfl-l2",
+      "tocfl/tocfl-l3",
+      "tocfl/tocfl-l4",
+      "tocfl/tocfl-l5",
+      "tocfl/tocfl-l6",
+      "tocfl/tocfl-n1",
+      "tocfl/tocfl-n2"
+    ],
+    "characters": [
+      "hsk/hsk1",
+      "hsk/hsk2",
+      "hsk/hsk3",
+      "hsk/hsk4",
+      "hsk/hsk5",
+      "hsk/hsk6",
+      "hsk/hsk7",
+      "hsk/hsk8",
+      "hsk/hsk9",
+      "tocfl/tocfl-l1",
+      "tocfl/tocfl-l2",
+      "tocfl/tocfl-l3",
+      "tocfl/tocfl-l4",
+      "tocfl/tocfl-l5",
+      "tocfl/tocfl-l6",
+      "tocfl/tocfl-n1",
+      "tocfl/tocfl-n2"
+    ]
+  },
+  "de": {
+    "vocabulary": [
+      "a1",
+      "a2",
+      "b1",
+      "b2",
+      "c1",
+      "c2"
+    ],
+    "grammar": [
+      "a1",
+      "a2",
+      "b1",
+      "b2"
+    ],
+    "readings": [
+      "a1",
+      "a2",
+      "b1",
+      "b2"
+    ],
+    "conversations": [
+      "a1",
+      "a2",
+      "b1",
+      "b2"
+    ]
+  },
+  "en": {
+    "vocabulary": [
+      "a1",
+      "a2"
+    ],
+    "grammar": [
+      "a1",
+      "a2"
+    ],
+    "readings": [
+      "a1",
+      "a2"
+    ],
+    "conversations": [
+      "a1",
+      "a2"
+    ]
+  },
+  "ja": {
+    "vocabulary": [
+      "n1",
+      "n2",
+      "n3",
+      "n4",
+      "n5"
+    ],
+    "grammar": [
+      "n1",
+      "n2",
+      "n3",
+      "n4",
+      "n5"
+    ],
+    "readings": [
+      "n1",
+      "n2",
+      "n3",
+      "n4",
+      "n5"
+    ],
+    "conversations": [
+      "n1",
+      "n2",
+      "n3",
+      "n4",
+      "n5"
+    ],
+    "characters": [
+      "n1",
+      "n2",
+      "n3",
+      "n4",
+      "n5"
+    ]
+  }
+}
