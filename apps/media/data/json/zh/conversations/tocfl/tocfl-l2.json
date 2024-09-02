@@ -1,0 +1,254 @@
+[
+ {
+  "id": "conv-tocfl-tocfl-l2-bixu",
+  "title": "必须",
+  "title_en": "Talking about to have to; must; compulsory; necessarily",
+  "title_id": "Ngobrol tentang harus",
+  "context": "You chat about to have to; must; compulsory; necessarily.",
+  "context_en": "You chat about to have to; must; compulsory; necessarily.",
+  "context_id": "Kamu mengobrol tentang harus.",
+  "formality": "neutral",
+  "level": 4,
+  "turns": [
+   {
+    "speaker": "tutor",
+    "text": "如果需要延期提交論文，必須提前向老師提出請求。",
+    "hanzi": "如果需要延期提交論文，必須提前向老師提出請求。",
+    "pinyin": "rú guǒ xū yào yán qī tí jiāo lùn wén ， bì xū tí qián xiàng lǎo shī tí chū qǐng qiú 。",
+    "zhuyin": "ㄖㄨˊ ㄍㄨㄛˇ ㄒㄩ ㄧㄠˋ ㄧㄢˊ ㄑㄧ ㄊㄧˊ ㄐㄧㄠ ㄌㄨㄣˋ ㄨㄣˊ ， ㄅㄧˋ ㄒㄩ ㄊㄧˊ ㄑㄧㄢˊ ㄒㄧㄤˋ ㄌㄠˇ ㄕ ㄊㄧˊ ㄔㄨ ㄑㄧㄥˇ ㄑㄧㄡˊ 。",
+    "romanization": "Rúguǒ xūyào yánqī tíjiāo lùnwén, bìxū tíqián xiàng lǎoshī tíchū qǐngqiú.",
+    "translation": "If you need to delay submitting the paper, you must make a request to the teacher in advance.",
+    "translation_en": "If you need to delay submitting the paper, you must make a request to the teacher in advance.",
+    "translation_id": "Jika Anda perlu menunda penyerahan makalah, Anda harus mengajukan permintaan kepada guru terlebih dahulu."
+   },
+   {
+    "speaker": "user",
+    "text": "要解決這個問題，必須從根本上改變管理方式。",
+    "hanzi": "要解決這個問題，必須從根本上改變管理方式。",
+    "pinyin": "yào jiě jué zhè gè wèn tí ， bì xū cóng gēn běn shàng gǎi biàn guǎn lǐ fāng shì 。",
+    "zhuyin": "ㄧㄠˋ ㄐㄧㄝˇ ㄐㄩㄝˊ ㄓㄜˋ ㄍㄜˋ ㄨㄣˋ ㄊㄧˊ ， ㄅㄧˋ ㄒㄩ ㄘㄨㄥˊ ㄍㄣ ㄅㄣˇ ㄕㄤˋ ㄍㄞˇ ㄅㄧㄢˋ ㄍㄨㄢˇ ㄌㄧˇ ㄈㄤ ㄕˋ 。",
+    "romanization": "Yào jiějué zhège wèntí, bìxū cóng gēnběn shang gǎibiàn guǎnlǐ fāngshì.",
+    "translation": "To solve this problem, the management method must be changed at a fundamental level.",
+    "translation_en": "To solve this problem, the management method must be changed at a fundamental level.",
+    "translation_id": "Untuk mengatasi masalah ini, metode pengelolaan harus diubah secara mendasar."
+   },
+   {
+    "speaker": "tutor",
+    "text": "公司在做決定時，必須保護員工的合法利益。",
+    "hanzi": "公司在做決定時，必須保護員工的合法利益。",
+    "pinyin": "gōng sī zài zuò jué dìng shí ， bì xū bǎo hù yuán gōng de hé fǎ lì yì 。",
+    "zhuyin": "ㄍㄨㄥ ㄙ ㄗㄞˋ ㄗㄨㄛˋ ㄐㄩㄝˊ ㄉㄧㄥˋ ㄕˊ ， ㄅㄧˋ ㄒㄩ ㄅㄠˇ ㄏㄨˋ ㄩㄢˊ ㄍㄨㄥ ㄉㄜ˙ ㄏㄜˊ ㄈㄚˇ ㄌㄧˋ ㄧˋ 。",
+    "romanization": "Gōngsī zài zuò juédìng shí, bìxū bǎohù yuángōng de héfǎ lìyì.",
+    "translation": "When making decisions, the company must protect employees’ lawful interests.",
+    "translation_en": "When making decisions, the company must protect employees’ lawful interests.",
+    "translation_id": "Saat mengambil keputusan, perusahaan harus melindungi kepentingan sah karyawan."
+   },
+   {
+    "speaker": "user",
+    "text": "我們的時間有限，必須先處理最重要的問題。",
+    "hanzi": "我們的時間有限，必須先處理最重要的問題。",
+    "pinyin": "wǒ men de shí jiān yǒu xiàn ， bì xū xiān chù lǐ zuì zhòng yào de wèn tí 。",
+    "zhuyin": "ㄨㄛˇ ㄇㄣ˙ ㄉㄜ˙ ㄕˊ ㄐㄧㄢ ㄧㄡˇ ㄒㄧㄢˋ ， ㄅㄧˋ ㄒㄩ ㄒㄧㄢ ㄔㄨˋ ㄌㄧˇ ㄗㄨㄟˋ ㄓㄨㄥˋ ㄧㄠˋ ㄉㄜ˙ ㄨㄣˋ ㄊㄧˊ 。",
+    "romanization": "Wǒmen de shíjiān yǒuxiàn, bìxū xiān chǔlǐ zuì zhòngyào de wèntí.",
+    "translation": "Our time is limited, so we must deal with the most important issue first.",
+    "translation_en": "Our time is limited, so we must deal with the most important issue first.",
+    "translation_id": "Waktu kita terbatas, jadi kita harus menyelesaikan masalah yang paling penting terlebih dahulu."
+   },
+   {
+    "speaker": "tutor",
+    "text": "這份申請必須由本人簽字，不能請別人代簽。",
+    "hanzi": "這份申請必須由本人簽字，不能請別人代簽。",
+    "pinyin": "zhè fèn shēn qǐng bì xū yóu běn rén qiān zì ， bù néng qǐng bié rén dài qiān 。",
+    "zhuyin": "ㄓㄜˋ ㄈㄣˋ ㄕㄣ ㄑㄧㄥˇ ㄅㄧˋ ㄒㄩ ㄧㄡˊ ㄅㄣˇ ㄖㄣˊ ㄑㄧㄢ ㄗˋ ， ㄅㄨˋ ㄋㄥˊ ㄑㄧㄥˇ ㄅㄧㄝˊ ㄖㄣˊ ㄉㄞˋ ㄑㄧㄢ 。",
+    "romanization": "Zhè fèn shēnqǐng bìxū yóu běnrén qiānzì, bù néng qǐng biérén dài qiān.",
+    "translation": "This application must be signed by the person themself; someone else cannot sign on their behalf.",
+    "translation_en": "This application must be signed by the person themself; someone else cannot sign on their behalf.",
+    "translation_id": "Permohonan ini harus ditandatangani oleh orang tersebut sendiri; orang lain tidak dapat menandatangani atas nama mereka."
+   },
+   {
+    "speaker": "user",
+    "text": "公司必須證明所有收入都來自合法渠道。",
+    "hanzi": "公司必須證明所有收入都來自合法渠道。",
+    "pinyin": "gōng sī bì xū zhèng míng suǒ yǒu shōu rù dōu lái zì hé fǎ qú dào 。",
+    "zhuyin": "ㄍㄨㄥ ㄙ ㄅㄧˋ ㄒㄩ ㄓㄥˋ ㄇㄧㄥˊ ㄙㄨㄛˇ ㄧㄡˇ ㄕㄡ ㄖㄨˋ ㄉㄡ ㄌㄞˊ ㄗˋ ㄏㄜˊ ㄈㄚˇ ㄑㄩˊ ㄉㄠˋ 。",
+    "romanization": "Gōngsī bìxū zhèngmíng suǒyǒu shōurù dōu láizì héfǎ qúdào.",
+    "translation": "The company must prove that all its income comes from legal channels.",
+    "translation_en": "The company must prove that all its income comes from legal channels.",
+    "translation_id": "Perusahaan tersebut harus membuktikan bahwa seluruh pendapatannya berasal dari sumber yang sah."
+   }
+  ],
+  "examMappings": {
+   "tocfl": "Level 2"
+  },
+  "audio": "conv:conv-tocfl-tocfl-l2-bixu",
+  "language": "zh"
+ },
+ {
+  "id": "conv-tocfl-tocfl-l2-anquan1",
+  "title": "安全",
+  "title_en": "Talking about safe / safety",
+  "title_id": "Ngobrol tentang aman",
+  "context": "You chat about safe / safety.",
+  "context_en": "You chat about safe / safety.",
+  "context_id": "Kamu mengobrol tentang aman.",
+  "formality": "neutral",
+  "level": 4,
+  "turns": [
+   {
+    "speaker": "tutor",
+    "text": "飛機進入跑道前，乘客都被要求繫好安全帶。",
+    "hanzi": "飛機進入跑道前，乘客都被要求繫好安全帶。",
+    "pinyin": "fēi jī jìn rù pǎo dào qián ， chéng kè dōu bèi yāo qiú xì hǎo ān quán dài 。",
+    "zhuyin": "ㄈㄟ ㄐㄧ ㄐㄧㄣˋ ㄖㄨˋ ㄆㄠˇ ㄉㄠˋ ㄑㄧㄢˊ ， ㄔㄥˊ ㄎㄜˋ ㄉㄡ ㄅㄟˋ ㄧㄠ ㄑㄧㄡˊ ㄒㄧˋ ㄏㄠˇ ㄢ ㄑㄩㄢˊ ㄉㄞˋ 。",
+    "romanization": "Fēijī jìnrù pǎodào qián, chéngkè dōu bèi yāoqiú jì hǎo ānquán dài.",
+    "translation": "Before the plane entered the runway, all passengers were asked to fasten their seat belts.",
+    "translation_en": "Before the plane entered the runway, all passengers were asked to fasten their seat belts.",
+    "translation_id": "Sebelum pesawat memasuki landasan, seluruh penumpang diminta mengencangkan sabuk pengaman."
+   },
+   {
+    "speaker": "user",
+    "text": "乘務員提醒乘客繫好安全帶，飛機馬上就要起飛了。",
+    "hanzi": "乘務員提醒乘客繫好安全帶，飛機馬上就要起飛了。",
+    "pinyin": "chéng wù yuán tí xǐng chéng kè xì hǎo ān quán dài ， fēi jī mǎ shàng jiù yào qǐ fēi le 。",
+    "zhuyin": "ㄔㄥˊ ㄨˋ ㄩㄢˊ ㄊㄧˊ ㄒㄧㄥˇ ㄔㄥˊ ㄎㄜˋ ㄒㄧˋ ㄏㄠˇ ㄢ ㄑㄩㄢˊ ㄉㄞˋ ， ㄈㄟ ㄐㄧ ㄇㄚˇ ㄕㄤˋ ㄐㄧㄡˋ ㄧㄠˋ ㄑㄧˇ ㄈㄟ ㄌㄜ˙ 。",
+    "romanization": "Chéngwùyuán tíxǐng chéngkè jì hǎo ānquándài, fēijī mǎshàng jiù yào qǐfēi le.",
+    "translation": "The crew member reminded passengers to fasten their seatbelts, as the plane was about to take off.",
+    "translation_en": "The crew member reminded passengers to fasten their seatbelts, as the plane was about to take off.",
+    "translation_id": "Awak pesawat mengingatkan penumpang untuk mengencangkan sabuk pengaman, karena pesawat hendak lepas landas."
+   },
+   {
+    "speaker": "tutor",
+    "text": "學校附近一帶交通複雜，放學時需要特別注意安全。",
+    "hanzi": "學校附近一帶交通複雜，放學時需要特別注意安全。",
+    "pinyin": "xué xiào fù jìn yī dài jiāo tōng fù zá ， fàng xué shí xū yào tè bié zhù yì ān quán 。",
+    "zhuyin": "ㄒㄩㄝˊ ㄒㄧㄠˋ ㄈㄨˋ ㄐㄧㄣˋ ㄧ ㄉㄞˋ ㄐㄧㄠ ㄊㄨㄥ ㄈㄨˋ ㄗㄚˊ ， ㄈㄤˋ ㄒㄩㄝˊ ㄕˊ ㄒㄩ ㄧㄠˋ ㄊㄜˋ ㄅㄧㄝˊ ㄓㄨˋ ㄧˋ ㄢ ㄑㄩㄢˊ 。",
+    "romanization": "Xuéxiào fùjìn yídài jiāotōng fùzá, fàngxué shí xūyào tèbié zhùyì ānquán.",
+    "translation": "The area around the school has complicated traffic, so extra attention to safety is needed after school.",
+    "translation_en": "The area around the school has complicated traffic, so extra attention to safety is needed after school.",
+    "translation_id": "Kawasan sekitar sekolah memiliki lalu lintas yang rumit, sehingga diperlukan perhatian ekstra terhadap keselamatan sepulang sekolah."
+   },
+   {
+    "speaker": "user",
+    "text": "這些安全常識雖然簡單，但遇到危險時非常有用。",
+    "hanzi": "這些安全常識雖然簡單，但遇到危險時非常有用。",
+    "pinyin": "zhè xiē ān quán cháng shí suī rán jiǎn dān ， dàn yù dào wēi xiǎn shí fēi cháng yǒu yòng 。",
+    "zhuyin": "ㄓㄜˋ ㄒㄧㄝ ㄢ ㄑㄩㄢˊ ㄔㄤˊ ㄕˊ ㄙㄨㄟ ㄖㄢˊ ㄐㄧㄢˇ ㄉㄢ ， ㄉㄢˋ ㄩˋ ㄉㄠˋ ㄨㄟ ㄒㄧㄢˇ ㄕˊ ㄈㄟ ㄔㄤˊ ㄧㄡˇ ㄩㄥˋ 。",
+    "romanization": "Zhèxiē ānquán chángshí suīrán jiǎndān, dàn yùdào wēixiǎn shí fēicháng yǒuyòng.",
+    "translation": "Although these safety tips are simple, they are very useful when danger occurs.",
+    "translation_en": "Although these safety tips are simple, they are very useful when danger occurs.",
+    "translation_id": "Meskipun tips keselamatan ini sederhana, namun sangat berguna ketika terjadi bahaya."
+   },
+   {
+    "speaker": "tutor",
+    "text": "孩子站在窗臺旁看雪，家長一直提醒他注意安全。",
+    "hanzi": "孩子站在窗臺旁看雪，家長一直提醒他注意安全。",
+    "pinyin": "hái zi zhàn zài chuāng tái páng kàn xuě ， jiā zhǎng yì zhí tí xǐng tā zhù yì ān quán 。",
+    "zhuyin": "ㄏㄞˊ ㄗ˙ ㄓㄢˋ ㄗㄞˋ ㄔㄨㄤ ㄊㄞˊ ㄆㄤˊ ㄎㄢˋ ㄒㄩㄝˇ ， ㄐㄧㄚ ㄓㄤˇ ㄧˋ ㄓˊ ㄊㄧˊ ㄒㄧㄥˇ ㄊㄚ ㄓㄨˋ ㄧˋ ㄢ ㄑㄩㄢˊ 。",
+    "romanization": "Háizi zhàn zài chuāngtái páng kàn xuě, jiāzhǎng yìzhí tíxǐng tā zhùyì ānquán.",
+    "translation": "The child stood beside the windowsill watching the snow, while the parent kept reminding him to stay safe.",
+    "translation_en": "The child stood beside the windowsill watching the snow, while the parent kept reminding him to stay safe.",
+    "translation_id": "Anak itu berdiri di samping ambang jendela sambil mengamati salju, sementara orang tuanya terus mengingatkannya untuk tetap aman."
+   },
+   {
+    "speaker": "user",
+    "text": "你遲到幾分鐘不要緊，關鍵是路上要注意安全。",
+    "hanzi": "你遲到幾分鐘不要緊，關鍵是路上要注意安全。",
+    "pinyin": "nǐ chí dào jǐ fēn zhōng bú yào jǐn ， guān jiàn shì lù shàng yào zhù yì ān quán 。",
+    "zhuyin": "ㄋㄧˇ ㄔˊ ㄉㄠˋ ㄐㄧˇ ㄈㄣ ㄓㄨㄥ ㄅㄨˊ ㄧㄠˋ ㄐㄧㄣˇ ， ㄍㄨㄢ ㄐㄧㄢˋ ㄕˋ ㄌㄨˋ ㄕㄤˋ ㄧㄠˋ ㄓㄨˋ ㄧˋ ㄢ ㄑㄩㄢˊ 。",
+    "romanization": "Nǐ chídào jǐ fēnzhōng búyàojǐn, guānjiàn shì lùshang yào zhùyì ānquán.",
+    "translation": "It does not matter if you are a few minutes late; the key thing is to stay safe on the way.",
+    "translation_en": "It does not matter if you are a few minutes late; the key thing is to stay safe on the way.",
+    "translation_id": "Cedera kecil ini tidak serius;"
+   }
+  ],
+  "examMappings": {
+   "tocfl": "Level 2"
+  },
+  "audio": "conv:conv-tocfl-tocfl-l2-anquan1",
+  "language": "zh"
+ },
+ {
+  "id": "conv-tocfl-tocfl-l2-baogao2",
+  "title": "报告",
+  "title_en": "Talking about to make a report / report",
+  "title_id": "Ngobrol tentang untuk membuat laporan",
+  "context": "You chat about to make a report / report.",
+  "context_en": "You chat about to make a report / report.",
+  "context_id": "Kamu mengobrol tentang untuk membuat laporan.",
+  "formality": "neutral",
+  "level": 4,
+  "turns": [
+   {
+    "speaker": "tutor",
+    "text": "這份報告不僅指出風險，也提出了許多正面的建議。",
+    "hanzi": "這份報告不僅指出風險，也提出了許多正面的建議。",
+    "pinyin": "zhè fèn bào gào bù jǐn zhǐ chū fēng xiǎn ， yě tí chū le xǔ duō zhèng miàn de jiàn yì 。",
+    "zhuyin": "ㄓㄜˋ ㄈㄣˋ ㄅㄠˋ ㄍㄠˋ ㄅㄨˋ ㄐㄧㄣˇ ㄓˇ ㄔㄨ ㄈㄥ ㄒㄧㄢˇ ， ㄧㄝˇ ㄊㄧˊ ㄔㄨ ㄌㄜ˙ ㄒㄩˇ ㄉㄨㄛ ㄓㄥˋ ㄇㄧㄢˋ ㄉㄜ˙ ㄐㄧㄢˋ ㄧˋ 。",
+    "romanization": "Zhè fèn bàogào bùjǐn zhǐchū fēngxiǎn, yě tíchū le xǔduō zhèngmiàn de jiànyì.",
+    "translation": "This report not only points out risks but also offers many positive suggestions.",
+    "translation_en": "This report not only points out risks but also offers many positive suggestions.",
+    "translation_id": "Laporan ini tidak hanya menunjukkan risiko tetapi juga memberikan banyak saran positif."
+   },
+   {
+    "speaker": "user",
+    "text": "他居然能在如此短的時間內完成報告，真了不起。",
+    "hanzi": "他居然能在如此短的時間內完成報告，真了不起。",
+    "pinyin": "tā jū rán néng zài rú cǐ duǎn de shí jiān nèi wán chéng bào gào ， zhēn liǎo bù qǐ 。",
+    "zhuyin": "ㄊㄚ ㄐㄩ ㄖㄢˊ ㄋㄥˊ ㄗㄞˋ ㄖㄨˊ ㄘˇ ㄉㄨㄢˇ ㄉㄜ˙ ㄕˊ ㄐㄧㄢ ㄋㄟˋ ㄨㄢˊ ㄔㄥˊ ㄅㄠˋ ㄍㄠˋ ， ㄓㄣ ㄌㄧㄠˇ ㄅㄨˋ ㄑㄧˇ 。",
+    "romanization": "Tā jūrán néng zài rúcǐ duǎn de shíjiān nèi wánchéng bàogào, zhēn liǎobuqǐ.",
+    "translation": "He unexpectedly managed to finish the report in such a short time; that is really amazing.",
+    "translation_en": "He unexpectedly managed to finish the report in such a short time; that is really amazing.",
+    "translation_id": "Dia secara tak terduga berhasil menyelesaikan laporannya dalam waktu sesingkat itu; itu sungguh menakjubkan."
+   },
+   {
+    "speaker": "tutor",
+    "text": "會議結束前，每個部門都要報告本週的工作進展。",
+    "hanzi": "會議結束前，每個部門都要報告本週的工作進展。",
+    "pinyin": "huì yì jié shù qián ， měi gè bù mén dōu yào bào gào běn zhōu de gōng zuò jìn zhǎn 。",
+    "zhuyin": "ㄏㄨㄟˋ ㄧˋ ㄐㄧㄝˊ ㄕㄨˋ ㄑㄧㄢˊ ， ㄇㄟˇ ㄍㄜˋ ㄅㄨˋ ㄇㄣˊ ㄉㄡ ㄧㄠˋ ㄅㄠˋ ㄍㄠˋ ㄅㄣˇ ㄓㄡ ㄉㄜ˙ ㄍㄨㄥ ㄗㄨㄛˋ ㄐㄧㄣˋ ㄓㄢˇ 。",
+    "romanization": "Huìyì jiéshù qián, měi gè bùmén dōu yào bàogào běn zhōu de gōngzuò jìnzhǎn.",
+    "translation": "Before the meeting ends, every department must report this week’s work progress.",
+    "translation_en": "Before the meeting ends, every department must report this week’s work progress.",
+    "translation_id": "Sebelum rapat berakhir, setiap departemen harus melaporkan kemajuan pekerjaan minggu ini."
+   },
+   {
+    "speaker": "user",
+    "text": "這所學院要求學員在結業前完成一份實踐報告。",
+    "hanzi": "這所學院要求學員在結業前完成一份實踐報告。",
+    "pinyin": "zhè suǒ xué yuàn yāo qiú xué yuán zài jié yè qián wán chéng yī fèn shí jiàn bào gào 。",
+    "zhuyin": "ㄓㄜˋ ㄙㄨㄛˇ ㄒㄩㄝˊ ㄩㄢˋ ㄧㄠ ㄑㄧㄡˊ ㄒㄩㄝˊ ㄩㄢˊ ㄗㄞˋ ㄐㄧㄝˊ ㄧㄝˋ ㄑㄧㄢˊ ㄨㄢˊ ㄔㄥˊ ㄧ ㄈㄣˋ ㄕˊ ㄐㄧㄢˋ ㄅㄠˋ ㄍㄠˋ 。",
+    "romanization": "Zhè suǒ xuéyuàn yāoqiú xuéyuán zài jiéyè qián wánchéng yí fèn shíjiàn bàogào.",
+    "translation": "This institute requires students to complete a practical report before graduation.",
+    "translation_en": "This institute requires students to complete a practical report before graduation.",
+    "translation_id": "Lembaga ini mewajibkan mahasiswanya untuk menyelesaikan laporan praktikum sebelum lulus."
+   },
+   {
+    "speaker": "tutor",
+    "text": "寫報告以前，你可以先參考去年的數據和結論。",
+    "hanzi": "寫報告以前，你可以先參考去年的數據和結論。",
+    "pinyin": "xiě bào gào yǐ qián ， nǐ kě yǐ xiān cān kǎo qù nián de shù jù hé jié lùn 。",
+    "zhuyin": "ㄒㄧㄝˇ ㄅㄠˋ ㄍㄠˋ ㄧˇ ㄑㄧㄢˊ ， ㄋㄧˇ ㄎㄜˇ ㄧˇ ㄒㄧㄢ ㄘㄢ ㄎㄠˇ ㄑㄩˋ ㄋㄧㄢˊ ㄉㄜ˙ ㄕㄨˋ ㄐㄩˋ ㄏㄜˊ ㄐㄧㄝˊ ㄌㄨㄣˋ 。",
+    "romanization": "Xiě bàogào yǐqián, nǐ kěyǐ xiān cānkǎo qùnián de shùjù hé jiélùn.",
+    "translation": "Before writing the report, you can first refer to last year’s data and conclusions.",
+    "translation_en": "Before writing the report, you can first refer to last year’s data and conclusions.",
+    "translation_id": "Sebelum menyusun laporan, Anda dapat terlebih dahulu merujuk pada data dan kesimpulan tahun lalu."
+   },
+   {
+    "speaker": "user",
+    "text": "這門課程有三個學分，要求完成一次實踐報告。",
+    "hanzi": "這門課程有三個學分，要求完成一次實踐報告。",
+    "pinyin": "zhè mén kè chéng yǒu sān gè xué fēn ， yāo qiú wán chéng yī cì shí jiàn bào gào 。",
+    "zhuyin": "ㄓㄜˋ ㄇㄣˊ ㄎㄜˋ ㄔㄥˊ ㄧㄡˇ ㄙㄢ ㄍㄜˋ ㄒㄩㄝˊ ㄈㄣ ， ㄧㄠ ㄑㄧㄡˊ ㄨㄢˊ ㄔㄥˊ ㄧ ㄘˋ ㄕˊ ㄐㄧㄢˋ ㄅㄠˋ ㄍㄠˋ 。",
+    "romanization": "Zhè mén kèchéng yǒu sān ge xuéfēn, yāoqiú wánchéng yí cì shíjiàn bàogào.",
+    "translation": "This course is worth three credits and requires the completion of one practical report.",
+    "translation_en": "This course is worth three credits and requires the completion of one practical report.",
+    "translation_id": "Kursus ini bernilai tiga SKS dan membutuhkan penyelesaian satu laporan praktis."
+   }
+  ],
+  "examMappings": {
+   "tocfl": "Level 2"
+  },
+  "audio": "conv:conv-tocfl-tocfl-l2-baogao2",
+  "language": "zh"
+ }
+]
