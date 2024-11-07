@@ -1,0 +1,54 @@
+{
+  "expo": {
+    "name": "Navia Academy",
+    "slug": "navia",
+    "scheme": "navia",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "owner": "violemargas-team",
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/1896057c-6dfb-4a5a-85e9-299f62523ac0"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.navia.academy",
+      "buildNumber": "1",
+      "infoPlist": {
+        "NSMicrophoneUsageDescription": "Navia uses audio playback for Mandarin pronunciation.",
+        "NSAppTransportSecurity": {
+          "NSAllowsArbitraryLoads": true
+        }
+      }
+    },
+    "android": {
+      "package": "com.navia.academy",
+      "versionCode": 1,
+      "adaptiveIcon": {
+        "backgroundColor": "#0B0F1A"
+      },
+      "permissions": ["INTERNET"]
+    },
+    "plugins": [
+      "expo-router",
+      "expo-secure-store",
+      "expo-font",
+      "expo-av",
+      "expo-localization",
+      "expo-notifications"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "eas": {
+        "projectId": "1896057c-6dfb-4a5a-85e9-299f62523ac0"
+      }
+    }
+  }
+}
