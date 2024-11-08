@@ -1,0 +1,254 @@
+[
+ {
+  "id": "conv-tocfl-tocfl-l4-yanjiu",
+  "title": "研究",
+  "title_en": "Talking about research; to research",
+  "title_id": "Ngobrol tentang meneliti",
+  "context": "You chat about research; to research.",
+  "context_en": "You chat about research; to research.",
+  "context_id": "Kamu mengobrol tentang meneliti.",
+  "formality": "neutral",
+  "level": 6,
+  "turns": [
+   {
+    "speaker": "tutor",
+    "text": "為了確認結果，研究人員反覆測試了這個程序。",
+    "hanzi": "為了確認結果，研究人員反覆測試了這個程序。",
+    "pinyin": "wèi le què rèn jié guǒ ， yán jiū rén yuán fǎn fù cè shì le zhè gè chéng xù 。",
+    "zhuyin": "ㄨㄟˋ ㄌㄜ˙ ㄑㄩㄝˋ ㄖㄣˋ ㄐㄧㄝˊ ㄍㄨㄛˇ ， ㄧㄢˊ ㄐㄧㄡ ㄖㄣˊ ㄩㄢˊ ㄈㄢˇ ㄈㄨˋ ㄘㄜˋ ㄕˋ ㄌㄜ˙ ㄓㄜˋ ㄍㄜˋ ㄔㄥˊ ㄒㄩˋ 。",
+    "romanization": "Wèile quèrèn jiéguǒ, yánjiū rényuán fǎnfù cèshì le zhège chéngxù.",
+    "translation": "To confirm the result, the researchers tested this program repeatedly.",
+    "translation_en": "To confirm the result, the researchers tested this program repeatedly.",
+    "translation_id": "Untuk memastikan hasilnya, para peneliti menguji program ini berulang kali."
+   },
+   {
+    "speaker": "user",
+    "text": "教授在國際會議上發表了最新的研究成果。",
+    "hanzi": "教授在國際會議上發表了最新的研究成果。",
+    "pinyin": "jiào shòu zài guó jì huì yì shàng fā biǎo le zuì xīn de yán jiū chéng guǒ 。",
+    "zhuyin": "ㄐㄧㄠˋ ㄕㄡˋ ㄗㄞˋ ㄍㄨㄛˊ ㄐㄧˋ ㄏㄨㄟˋ ㄧˋ ㄕㄤˋ ㄈㄚ ㄅㄧㄠˇ ㄌㄜ˙ ㄗㄨㄟˋ ㄒㄧㄣ ㄉㄜ˙ ㄧㄢˊ ㄐㄧㄡ ㄔㄥˊ ㄍㄨㄛˇ 。",
+    "romanization": "Jiàoshòu zài guójì huìyì shàng fābiǎo le zuìxīn de yánjiū chéngguǒ.",
+    "translation": "The professor presented the latest research results at an international conference.",
+    "translation_en": "The professor presented the latest research results at an international conference.",
+    "translation_id": "Profesor tersebut memaparkan hasil penelitian terbaru dalam sebuah konferensi internasional."
+   },
+   {
+    "speaker": "tutor",
+    "text": "他對古文字特別感興趣，常常去博物館研究。",
+    "hanzi": "他對古文字特別感興趣，常常去博物館研究。",
+    "pinyin": "tā duì gǔ wén zì tè bié gǎn xìng qù ， cháng cháng qù bó wù guǎn yán jiū 。",
+    "zhuyin": "ㄊㄚ ㄉㄨㄟˋ ㄍㄨˇ ㄨㄣˊ ㄗˋ ㄊㄜˋ ㄅㄧㄝˊ ㄍㄢˇ ㄒㄧㄥˋ ㄑㄩˋ ， ㄔㄤˊ ㄔㄤˊ ㄑㄩˋ ㄅㄛˊ ㄨˋ ㄍㄨㄢˇ ㄧㄢˊ ㄐㄧㄡ 。",
+    "romanization": "Tā duì gǔ wénzì tèbié gǎn xìngqù, chángcháng qù bówùguǎn yánjiū.",
+    "translation": "He is especially interested in ancient writing and often goes to museums to study it.",
+    "translation_en": "He is especially interested in ancient writing and often goes to museums to study it.",
+    "translation_id": "Dia sangat tertarik pada tulisan kuno dan sering mengunjungi museum untuk mempelajarinya."
+   },
+   {
+    "speaker": "user",
+    "text": "研究古代歷史不能只看傳說，還要參考可靠的資料。",
+    "hanzi": "研究古代歷史不能只看傳說，還要參考可靠的資料。",
+    "pinyin": "yán jiū gǔ dài lì shǐ bù néng zhǐ kàn chuán shuō ， hái yào cān kǎo kě kào de zī liào 。",
+    "zhuyin": "ㄧㄢˊ ㄐㄧㄡ ㄍㄨˇ ㄉㄞˋ ㄌㄧˋ ㄕˇ ㄅㄨˋ ㄋㄥˊ ㄓˇ ㄎㄢˋ ㄔㄨㄢˊ ㄕㄨㄛ ， ㄏㄞˊ ㄧㄠˋ ㄘㄢ ㄎㄠˇ ㄎㄜˇ ㄎㄠˋ ㄉㄜ˙ ㄗ ㄌㄧㄠˋ 。",
+    "romanization": "Yánjiū gǔdài lìshǐ bù néng zhǐ kàn chuánshuō, hái yào cānkǎo kěkào de zīliào.",
+    "translation": "When studying ancient history, you cannot just look at legends; you also need to consult reliable materials.",
+    "translation_en": "When studying ancient history, you cannot just look at legends; you also need to consult reliable materials.",
+    "translation_id": "Saat mempelajari sejarah kuno, Anda tidak bisa hanya mengandalkan legenda; Anda juga perlu merujuk pada sumber-sumber yang dapat dipercaya."
+   },
+   {
+    "speaker": "tutor",
+    "text": "農業研究人員正在培養抗病能力更強的新品種。",
+    "hanzi": "農業研究人員正在培養抗病能力更強的新品種。",
+    "pinyin": "nóng yè yán jiū rén yuán zhèng zài péi yǎng kàng bìng néng lì gèng qiáng de xīn pǐn zhǒng 。",
+    "zhuyin": "ㄋㄨㄥˊ ㄧㄝˋ ㄧㄢˊ ㄐㄧㄡ ㄖㄣˊ ㄩㄢˊ ㄓㄥˋ ㄗㄞˋ ㄆㄟˊ ㄧㄤˇ ㄎㄤˋ ㄅㄧㄥˋ ㄋㄥˊ ㄌㄧˋ ㄍㄥˋ ㄑㄧㄤˊ ㄉㄜ˙ ㄒㄧㄣ ㄆㄧㄣˇ ㄓㄨㄥˇ 。",
+    "romanization": "Nóngyè yánjiū rényuán zhèngzài péiyǎng kàngbìng nénglì gèng qiáng de xīn pǐnzhǒng.",
+    "translation": "Agricultural researchers are cultivating new varieties with stronger disease resistance.",
+    "translation_en": "Agricultural researchers are cultivating new varieties with stronger disease resistance.",
+    "translation_id": "Para peneliti pertanian sedang mengembangkan varietas baru yang memiliki ketahanan terhadap penyakit yang lebih kuat."
+   },
+   {
+    "speaker": "user",
+    "text": "他研究商業管理，希望以後自己開公司。",
+    "hanzi": "他研究商業管理，希望以後自己開公司。",
+    "pinyin": "tā yán jiū shāng yè guǎn lǐ ， xī wàng yǐ hòu zì jǐ kāi gōng sī 。",
+    "zhuyin": "ㄊㄚ ㄧㄢˊ ㄐㄧㄡ ㄕㄤ ㄧㄝˋ ㄍㄨㄢˇ ㄌㄧˇ ， ㄒㄧ ㄨㄤˋ ㄧˇ ㄏㄡˋ ㄗˋ ㄐㄧˇ ㄎㄞ ㄍㄨㄥ ㄙ 。",
+    "romanization": "Tā yánjiū shāngyè guǎnlǐ, xīwàng yǐhòu zìjǐ kāi gōngsī.",
+    "translation": "He studies business management and hopes to start his own company in the future.",
+    "translation_en": "He studies business management and hopes to start his own company in the future.",
+    "translation_id": "Dia sedang menempuh studi di bidang manajemen bisnis dan berharap dapat mendirikan perusahaannya sendiri di masa depan."
+   }
+  ],
+  "examMappings": {
+   "tocfl": "Level 4"
+  },
+  "audio": "conv:conv-tocfl-tocfl-l4-yanjiu",
+  "language": "zh"
+ },
+ {
+  "id": "conv-tocfl-tocfl-l4-xiangmu1",
+  "title": "项目",
+  "title_en": "Talking about item; project; (sports) event; CL:個|个[ge4]",
+  "title_id": "Ngobrol tentang barang",
+  "context": "You chat about item; project; (sports) event; CL:個|个[ge4].",
+  "context_en": "You chat about item; project; (sports) event; CL:個|个[ge4].",
+  "context_id": "Kamu mengobrol tentang barang.",
+  "formality": "neutral",
+  "level": 6,
+  "turns": [
+   {
+    "speaker": "tutor",
+    "text": "這個項目的投資超過十億人民幣。",
+    "hanzi": "這個項目的投資超過十億人民幣。",
+    "pinyin": "zhè gè xiàng mù dì tóu zī chāo guò shí yì rén mín bì 。",
+    "zhuyin": "ㄓㄜˋ ㄍㄜˋ ㄒㄧㄤˋ ㄇㄨˋ ㄉㄧˋ ㄊㄡˊ ㄗ ㄔㄠ ㄍㄨㄛˋ ㄕˊ ㄧˋ ㄖㄣˊ ㄇㄧㄣˊ ㄅㄧˋ 。",
+    "romanization": "Zhège xiàngmù de tóuzī chāoguò shí yì rénmínbì.",
+    "translation": "The investment in this project exceeds one billion yuan.",
+    "translation_en": "The investment in this project exceeds one billion yuan.",
+    "translation_id": "Miliaran orang di seluruh dunia menggunakan internet."
+   },
+   {
+    "speaker": "user",
+    "text": "為了完成這個項目，團隊付出了很多時間和精力。",
+    "hanzi": "為了完成這個項目，團隊付出了很多時間和精力。",
+    "pinyin": "wèi le wán chéng zhè gè xiàng mù ， tuán duì fù chū le hěn duō shí jiān hé jīng lì 。",
+    "zhuyin": "ㄨㄟˋ ㄌㄜ˙ ㄨㄢˊ ㄔㄥˊ ㄓㄜˋ ㄍㄜˋ ㄒㄧㄤˋ ㄇㄨˋ ， ㄊㄨㄢˊ ㄉㄨㄟˋ ㄈㄨˋ ㄔㄨ ㄌㄜ˙ ㄏㄣˇ ㄉㄨㄛ ㄕˊ ㄐㄧㄢ ㄏㄜˊ ㄐㄧㄥ ㄌㄧˋ 。",
+    "romanization": "Wèile wánchéng zhège xiàngmù, tuánduì fùchū le hěn duō shíjiān hé jīnglì.",
+    "translation": "To complete this project, the team put in a lot of time and energy.",
+    "translation_en": "To complete this project, the team put in a lot of time and energy.",
+    "translation_id": "Untuk menyelesaikan proyek ini, tim menghabiskan banyak waktu dan tenaga."
+   },
+   {
+    "speaker": "tutor",
+    "text": "這項成果不僅代表個人努力，也代表整個項目的進步。",
+    "hanzi": "這項成果不僅代表個人努力，也代表整個項目的進步。",
+    "pinyin": "zhè xiàng chéng guǒ bù jǐn dài biǎo gè rén nǔ lì ， yě dài biǎo zhěng gè xiàng mù dì jìn bù 。",
+    "zhuyin": "ㄓㄜˋ ㄒㄧㄤˋ ㄔㄥˊ ㄍㄨㄛˇ ㄅㄨˋ ㄐㄧㄣˇ ㄉㄞˋ ㄅㄧㄠˇ ㄍㄜˋ ㄖㄣˊ ㄋㄨˇ ㄌㄧˋ ， ㄧㄝˇ ㄉㄞˋ ㄅㄧㄠˇ ㄓㄥˇ ㄍㄜˋ ㄒㄧㄤˋ ㄇㄨˋ ㄉㄧˋ ㄐㄧㄣˋ ㄅㄨˋ 。",
+    "romanization": "Zhè xiàng chéngguǒ bùjǐn dàibiǎo gèrén nǔlì, yě dàibiǎo zhěnggè xiàngmù de jìnbù.",
+    "translation": "This achievement represents not only individual effort, but also the progress of the whole project.",
+    "translation_en": "This achievement represents not only individual effort, but also the progress of the whole project.",
+    "translation_id": "Anggota ini akan mewakili tim di konferensi."
+   },
+   {
+    "speaker": "user",
+    "text": "充分發揮本地特色，是這個項目的優勢。",
+    "hanzi": "充分發揮本地特色，是這個項目的優勢。",
+    "pinyin": "chōng fèn fā huī běn dì tè sè ， shì zhè gè xiàng mù dì yōu shì 。",
+    "zhuyin": "ㄔㄨㄥ ㄈㄣˋ ㄈㄚ ㄏㄨㄟ ㄅㄣˇ ㄉㄧˋ ㄊㄜˋ ㄙㄜˋ ， ㄕˋ ㄓㄜˋ ㄍㄜˋ ㄒㄧㄤˋ ㄇㄨˋ ㄉㄧˋ ㄧㄡ ㄕˋ 。",
+    "romanization": "Chōngfèn fāhuī běndì tèsè, shì zhège xiàngmù de yōushì.",
+    "translation": "Making full use of local characteristics is the advantage of this project.",
+    "translation_en": "Making full use of local characteristics is the advantage of this project.",
+    "translation_id": "Perusahaan ini jelas memiliki keunggulan dalam teknologi."
+   },
+   {
+    "speaker": "tutor",
+    "text": "為了完成這個項目，團隊成員都付出了全力。",
+    "hanzi": "為了完成這個項目，團隊成員都付出了全力。",
+    "pinyin": "wèi le wán chéng zhè gè xiàng mù ， tuán duì chéng yuán dōu fù chū le quán lì 。",
+    "zhuyin": "ㄨㄟˋ ㄌㄜ˙ ㄨㄢˊ ㄔㄥˊ ㄓㄜˋ ㄍㄜˋ ㄒㄧㄤˋ ㄇㄨˋ ， ㄊㄨㄢˊ ㄉㄨㄟˋ ㄔㄥˊ ㄩㄢˊ ㄉㄡ ㄈㄨˋ ㄔㄨ ㄌㄜ˙ ㄑㄩㄢˊ ㄌㄧˋ 。",
+    "romanization": "Wèile wánchéng zhège xiàngmù, tuánduì chéngyuán dōu fùchū le quánlì.",
+    "translation": "To complete this project, all the team members put in their full effort.",
+    "translation_en": "To complete this project, all the team members put in their full effort.",
+    "translation_id": "Untuk menyelesaikan proyek ini, semua anggota tim mengerahkan upaya penuh mereka."
+   },
+   {
+    "speaker": "user",
+    "text": "這份報告對項目風險進行了全面分析。",
+    "hanzi": "這份報告對項目風險進行了全面分析。",
+    "pinyin": "zhè fèn bào gào duì xiàng mù fēng xiǎn jìn xíng le quán miàn fēn xī 。",
+    "zhuyin": "ㄓㄜˋ ㄈㄣˋ ㄅㄠˋ ㄍㄠˋ ㄉㄨㄟˋ ㄒㄧㄤˋ ㄇㄨˋ ㄈㄥ ㄒㄧㄢˇ ㄐㄧㄣˋ ㄒㄧㄥˊ ㄌㄜ˙ ㄑㄩㄢˊ ㄇㄧㄢˋ ㄈㄣ ㄒㄧ 。",
+    "romanization": "Zhè fèn bàogào duì xiàngmù fēngxiǎn jìnxíng le quánmiàn fēnxī.",
+    "translation": "This report carried out a comprehensive analysis of the project risks.",
+    "translation_en": "This report carried out a comprehensive analysis of the project risks.",
+    "translation_id": "Laporan ini melakukan analisis komprehensif terhadap risiko proyek."
+   }
+  ],
+  "examMappings": {
+   "tocfl": "Level 4"
+  },
+  "audio": "conv:conv-tocfl-tocfl-l4-xiangmu1",
+  "language": "zh"
+ },
+ {
+  "id": "conv-tocfl-tocfl-l4-renyuan2",
+  "title": "人员",
+  "title_en": "Talking about staff; crew; personnel; CL:個|个[ge4]",
+  "title_id": "Ngobrol tentang staf",
+  "context": "You chat about staff; crew; personnel; CL:個|个[ge4].",
+  "context_en": "You chat about staff; crew; personnel; CL:個|个[ge4].",
+  "context_id": "Kamu mengobrol tentang staf.",
+  "formality": "neutral",
+  "level": 6,
+  "turns": [
+   {
+    "speaker": "tutor",
+    "text": "為了安全，工作人員仔細檢查了舞臺四周的設備。",
+    "hanzi": "為了安全，工作人員仔細檢查了舞臺四周的設備。",
+    "pinyin": "wèi le ān quán ， gōng zuò rén yuán zǎi xì jiǎn chá le wǔ tái sì zhōu de shè bèi 。",
+    "zhuyin": "ㄨㄟˋ ㄌㄜ˙ ㄢ ㄑㄩㄢˊ ， ㄍㄨㄥ ㄗㄨㄛˋ ㄖㄣˊ ㄩㄢˊ ㄗㄞˇ ㄒㄧˋ ㄐㄧㄢˇ ㄔㄚˊ ㄌㄜ˙ ㄨˇ ㄊㄞˊ ㄙˋ ㄓㄡ ㄉㄜ˙ ㄕㄜˋ ㄅㄟˋ 。",
+    "romanization": "Wèile ānquán, gōngzuò rényuán zǐxì jiǎnchá le wǔtái sìzhōu de shèbèi.",
+    "translation": "For safety, the staff carefully checked the equipment around the stage.",
+    "translation_en": "For safety, the staff carefully checked the equipment around the stage.",
+    "translation_id": "Demi keselamatan, para staf memeriksa peralatan di sekitar panggung dengan cermat."
+   },
+   {
+    "speaker": "user",
+    "text": "事故發生時，幾名工作人員正好在場。",
+    "hanzi": "事故發生時，幾名工作人員正好在場。",
+    "pinyin": "shì gù fā shēng shí ， jǐ míng gōng zuò rén yuán zhèng hǎo zài chǎng 。",
+    "zhuyin": "ㄕˋ ㄍㄨˋ ㄈㄚ ㄕㄥ ㄕˊ ， ㄐㄧˇ ㄇㄧㄥˊ ㄍㄨㄥ ㄗㄨㄛˋ ㄖㄣˊ ㄩㄢˊ ㄓㄥˋ ㄏㄠˇ ㄗㄞˋ ㄔㄤˇ 。",
+    "romanization": "Shìgù fāshēng shí, jǐ míng gōngzuò rényuán zhènghǎo zàichǎng.",
+    "translation": "When the accident happened, several staff members happened to be present.",
+    "translation_en": "When the accident happened, several staff members happened to be present.",
+    "translation_id": "Saat kecelakaan terjadi, beberapa anggota staf kebetulan hadir."
+   },
+   {
+    "speaker": "tutor",
+    "text": "客服人員每天上午九點到晚上六點在線。",
+    "hanzi": "客服人員每天上午九點到晚上六點在線。",
+    "pinyin": "kè fú rén yuán měi tiān shàng wǔ jiǔ diǎn dào wǎn shàng liù diǎn zài xiàn 。",
+    "zhuyin": "ㄎㄜˋ ㄈㄨˊ ㄖㄣˊ ㄩㄢˊ ㄇㄟˇ ㄊㄧㄢ ㄕㄤˋ ㄨˇ ㄐㄧㄡˇ ㄉㄧㄢˇ ㄉㄠˋ ㄨㄢˇ ㄕㄤˋ ㄌㄧㄡˋ ㄉㄧㄢˇ ㄗㄞˋ ㄒㄧㄢˋ 。",
+    "romanization": "Kèfú rényuán měitiān shàngwǔ jiǔ diǎn dào wǎnshang liù diǎn zàixiàn.",
+    "translation": "Customer service staff are online every day from 9 a.m. to 6 p.m.",
+    "translation_en": "Customer service staff are online every day from 9 a.m. to 6 p.m.",
+    "translation_id": "Staf layanan pelanggan online setiap hari dari jam 9 pagi hingga 6 sore."
+   },
+   {
+    "speaker": "user",
+    "text": "政府推出培訓計劃，幫助失業人員重新就業。",
+    "hanzi": "政府推出培訓計劃，幫助失業人員重新就業。",
+    "pinyin": "zhèng fǔ tuī chū péi xùn jì huà ， bāng zhù shī yè rén yuán chóng xīn jiù yè 。",
+    "zhuyin": "ㄓㄥˋ ㄈㄨˇ ㄊㄨㄟ ㄔㄨ ㄆㄟˊ ㄒㄩㄣˋ ㄐㄧˋ ㄏㄨㄚˋ ， ㄅㄤ ㄓㄨˋ ㄕ ㄧㄝˋ ㄖㄣˊ ㄩㄢˊ ㄔㄨㄥˊ ㄒㄧㄣ ㄐㄧㄡˋ ㄧㄝˋ 。",
+    "romanization": "Zhèngfǔ tuīchū péixùn jìhuà, bāngzhù shīyè rényuán chóngxīn jiùyè.",
+    "translation": "The government introduced a training plan to help unemployed people find work again.",
+    "translation_en": "The government introduced a training plan to help unemployed people find work again.",
+    "translation_id": "Pemerintah memperkenalkan rencana pelatihan untuk membantu para pengangguran mendapatkan pekerjaan kembali."
+   },
+   {
+    "speaker": "tutor",
+    "text": "如有疑問，請在會議結束前向工作人員提出。",
+    "hanzi": "如有疑問，請在會議結束前向工作人員提出。",
+    "pinyin": "rú yǒu yí wèn ， qǐng zài huì yì jié shù qián xiàng gōng zuò rén yuán tí chū 。",
+    "zhuyin": "ㄖㄨˊ ㄧㄡˇ ㄧˊ ㄨㄣˋ ， ㄑㄧㄥˇ ㄗㄞˋ ㄏㄨㄟˋ ㄧˋ ㄐㄧㄝˊ ㄕㄨˋ ㄑㄧㄢˊ ㄒㄧㄤˋ ㄍㄨㄥ ㄗㄨㄛˋ ㄖㄣˊ ㄩㄢˊ ㄊㄧˊ ㄔㄨ 。",
+    "romanization": "Rú yǒu yíwèn, qǐng zài huìyì jiéshù qián xiàng gōngzuò rényuán tíchū.",
+    "translation": "If there are any questions, please raise them with the staff before the meeting ends.",
+    "translation_en": "If there are any questions, please raise them with the staff before the meeting ends.",
+    "translation_id": "Jika ada pertanyaan, silakan sampaikan kepada staf sebelum rapat berakhir."
+   },
+   {
+    "speaker": "user",
+    "text": "新買的空調需要專業人員上門安裝。",
+    "hanzi": "新買的空調需要專業人員上門安裝。",
+    "pinyin": "xīn mǎi de kōng diào xū yào zhuān yè rén yuán shàng mén ān zhuāng 。",
+    "zhuyin": "ㄒㄧㄣ ㄇㄞˇ ㄉㄜ˙ ㄎㄨㄥ ㄉㄧㄠˋ ㄒㄩ ㄧㄠˋ ㄓㄨㄢ ㄧㄝˋ ㄖㄣˊ ㄩㄢˊ ㄕㄤˋ ㄇㄣˊ ㄢ ㄓㄨㄤ 。",
+    "romanization": "Xīn mǎi de kōngtiáo xūyào zhuānyè rényuán shàngmén ānzhuāng.",
+    "translation": "The newly bought air conditioner needs a professional to come and install it.",
+    "translation_en": "The newly bought air conditioner needs a professional to come and install it.",
+    "translation_id": "AC yang baru dibeli membutuhkan tenaga profesional untuk datang dan memasangnya."
+   }
+  ],
+  "examMappings": {
+   "tocfl": "Level 4"
+  },
+  "audio": "conv:conv-tocfl-tocfl-l4-renyuan2",
+  "language": "zh"
+ }
+]
