@@ -1,0 +1,254 @@
+[
+ {
+  "id": "conv-tocfl-tocfl-l5-ershi",
+  "title": "而是",
+  "title_en": "Talking about rather",
+  "title_id": "Ngobrol tentang lebih tepatnya",
+  "context": "You chat about rather.",
+  "context_en": "You chat about rather.",
+  "context_id": "Kamu mengobrol tentang lebih tepatnya.",
+  "formality": "neutral",
+  "level": 7,
+  "turns": [
+   {
+    "speaker": "tutor",
+    "text": "最可怕的不是失敗，而是發現問題後仍然忽視它。",
+    "hanzi": "最可怕的不是失敗，而是發現問題後仍然忽視它。",
+    "pinyin": "zuì kě pà de bú shì shī bài ， ér shì fā xiàn wèn tí hòu réng rán hū shì tā 。",
+    "zhuyin": "ㄗㄨㄟˋ ㄎㄜˇ ㄆㄚˋ ㄉㄜ˙ ㄅㄨˊ ㄕˋ ㄕ ㄅㄞˋ ， ㄦˊ ㄕˋ ㄈㄚ ㄒㄧㄢˋ ㄨㄣˋ ㄊㄧˊ ㄏㄡˋ ㄖㄥˊ ㄖㄢˊ ㄏㄨ ㄕˋ ㄊㄚ 。",
+    "romanization": "Zuì kěpà de bú shì shībài, ér shì fāxiàn wèntí hòu réngrán hūshì tā.",
+    "translation": "The most frightening thing is not failure, but still ignoring a problem after discovering it.",
+    "translation_en": "The most frightening thing is not failure, but still ignoring a problem after discovering it.",
+    "translation_id": "Hal yang paling menakutkan bukanlah kegagalan, melainkan tetap mengabaikan suatu masalah setelah menyadarinya."
+   },
+   {
+    "speaker": "user",
+    "text": "真正堅強的人並不是沒有壓力，而是知道怎樣調整自己。",
+    "hanzi": "真正堅強的人並不是沒有壓力，而是知道怎樣調整自己。",
+    "pinyin": "zhēn zhèng jiān qiáng de rén bìng bú shì méi yǒu yā lì ， ér shì zhī dào zěn yàng diào zhěng zì jǐ 。",
+    "zhuyin": "ㄓㄣ ㄓㄥˋ ㄐㄧㄢ ㄑㄧㄤˊ ㄉㄜ˙ ㄖㄣˊ ㄅㄧㄥˋ ㄅㄨˊ ㄕˋ ㄇㄟˊ ㄧㄡˇ ㄧㄚ ㄌㄧˋ ， ㄦˊ ㄕˋ ㄓ ㄉㄠˋ ㄗㄣˇ ㄧㄤˋ ㄉㄧㄠˋ ㄓㄥˇ ㄗˋ ㄐㄧˇ 。",
+    "romanization": "Zhēnzhèng jiānqiáng de rén bìng bú shì méiyǒu yālì, ér shì zhīdào zěnyàng tiáozhěng zìjǐ.",
+    "translation": "Truly strong people are not without pressure; they know how to adjust themselves.",
+    "translation_en": "Truly strong people are not without pressure; they know how to adjust themselves.",
+    "translation_id": "Orang yang benar-benar kuat bukanlah orang yang bebas dari tekanan; mereka tahu cara menyesuaikan diri."
+   },
+   {
+    "speaker": "tutor",
+    "text": "他失業以後，沒有放棄，而是重新學習新技能。",
+    "hanzi": "他失業以後，沒有放棄，而是重新學習新技能。",
+    "pinyin": "tā shī yè yǐ hòu ， méi yǒu fàng qì ， ér shì chóng xīn xué xí xīn jì néng 。",
+    "zhuyin": "ㄊㄚ ㄕ ㄧㄝˋ ㄧˇ ㄏㄡˋ ， ㄇㄟˊ ㄧㄡˇ ㄈㄤˋ ㄑㄧˋ ， ㄦˊ ㄕˋ ㄔㄨㄥˊ ㄒㄧㄣ ㄒㄩㄝˊ ㄒㄧˊ ㄒㄧㄣ ㄐㄧˋ ㄋㄥˊ 。",
+    "romanization": "Tā shīyè yǐhòu, méi yǒu fàngqì, ér shì chóngxīn xuéxí xīn jìnéng.",
+    "translation": "After losing his job, he did not give up but started learning new skills again.",
+    "translation_en": "After losing his job, he did not give up but started learning new skills again.",
+    "translation_id": "Setelah kehilangan pekerjaannya, ia tidak menyerah, melainkan mulai mempelajari keterampilan baru lagi."
+   },
+   {
+    "speaker": "user",
+    "text": "成功不是奇蹟，而是長期努力的結果。",
+    "hanzi": "成功不是奇蹟，而是長期努力的結果。",
+    "pinyin": "chéng gōng bú shì qí jī ， ér shì zhǎng qī nǔ lì de jié guǒ 。",
+    "zhuyin": "ㄔㄥˊ ㄍㄨㄥ ㄅㄨˊ ㄕˋ ㄑㄧˊ ㄐㄧ ， ㄦˊ ㄕˋ ㄓㄤˇ ㄑㄧ ㄋㄨˇ ㄌㄧˋ ㄉㄜ˙ ㄐㄧㄝˊ ㄍㄨㄛˇ 。",
+    "romanization": "Chénggōng bú shì qíjì, ér shì chángqī nǔlì de jiéguǒ.",
+    "translation": "Success is not a miracle, but the result of long-term effort.",
+    "translation_en": "Success is not a miracle, but the result of long-term effort.",
+    "translation_id": "Kesuksesan bukanlah sebuah keajaiban, tapi hasil dari usaha jangka panjang."
+   },
+   {
+    "speaker": "tutor",
+    "text": "成功並不是偶然，而是長期努力的必然結果。",
+    "hanzi": "成功並不是偶然，而是長期努力的必然結果。",
+    "pinyin": "chéng gōng bìng bú shì ǒu rán ， ér shì zhǎng qī nǔ lì de bì rán jié guǒ 。",
+    "zhuyin": "ㄔㄥˊ ㄍㄨㄥ ㄅㄧㄥˋ ㄅㄨˊ ㄕˋ ㄡˇ ㄖㄢˊ ， ㄦˊ ㄕˋ ㄓㄤˇ ㄑㄧ ㄋㄨˇ ㄌㄧˋ ㄉㄜ˙ ㄅㄧˋ ㄖㄢˊ ㄐㄧㄝˊ ㄍㄨㄛˇ 。",
+    "romanization": "Chénggōng bìng bú shì ǒurán, ér shì chángqī nǔlì de bìrán jiéguǒ.",
+    "translation": "Success is not accidental; it is the inevitable result of long-term effort.",
+    "translation_en": "Success is not accidental; it is the inevitable result of long-term effort.",
+    "translation_id": "Kesuksesan bukanlah suatu kebetulan; ini adalah hasil yang tak terelakkan dari upaya jangka panjang."
+   },
+   {
+    "speaker": "user",
+    "text": "他今天的成就並不是偶然的，而是多年努力的結果。",
+    "hanzi": "他今天的成就並不是偶然的，而是多年努力的結果。",
+    "pinyin": "tā jīn tiān de chéng jiù bìng bú shì ǒu rán de ， ér shì duō nián nǔ lì de jié guǒ 。",
+    "zhuyin": "ㄊㄚ ㄐㄧㄣ ㄊㄧㄢ ㄉㄜ˙ ㄔㄥˊ ㄐㄧㄡˋ ㄅㄧㄥˋ ㄅㄨˊ ㄕˋ ㄡˇ ㄖㄢˊ ㄉㄜ˙ ， ㄦˊ ㄕˋ ㄉㄨㄛ ㄋㄧㄢˊ ㄋㄨˇ ㄌㄧˋ ㄉㄜ˙ ㄐㄧㄝˊ ㄍㄨㄛˇ 。",
+    "romanization": "Tā jīntiān de chéngjiù bìng bú shì ǒurán de, ér shì duō nián nǔlì de jiéguǒ.",
+    "translation": "His achievements today are not accidental, but the result of many years of hard work.",
+    "translation_en": "His achievements today are not accidental, but the result of many years of hard work.",
+    "translation_id": "Prestasinya saat ini bukanlah suatu kebetulan, melainkan hasil kerja keras bertahun-tahun."
+   }
+  ],
+  "examMappings": {
+   "tocfl": "Level 5"
+  },
+  "audio": "conv:conv-tocfl-tocfl-l5-ershi",
+  "language": "zh"
+ },
+ {
+  "id": "conv-tocfl-tocfl-l5-shuju1",
+  "title": "数据",
+  "title_en": "Talking about data",
+  "title_id": "Ngobrol tentang data",
+  "context": "You chat about data.",
+  "context_en": "You chat about data.",
+  "context_id": "Kamu mengobrol tentang data.",
+  "formality": "neutral",
+  "level": 7,
+  "turns": [
+   {
+    "speaker": "tutor",
+    "text": "只有具備足夠的數據，結論才會更有說服力。",
+    "hanzi": "只有具備足夠的數據，結論才會更有說服力。",
+    "pinyin": "zhǐ yǒu jù bèi zú gòu de shù jù ， jié lùn cái huì gèng yǒu shuō fú lì 。",
+    "zhuyin": "ㄓˇ ㄧㄡˇ ㄐㄩˋ ㄅㄟˋ ㄗㄨˊ ㄍㄡˋ ㄉㄜ˙ ㄕㄨˋ ㄐㄩˋ ， ㄐㄧㄝˊ ㄌㄨㄣˋ ㄘㄞˊ ㄏㄨㄟˋ ㄍㄥˋ ㄧㄡˇ ㄕㄨㄛ ㄈㄨˊ ㄌㄧˋ 。",
+    "romanization": "Zhǐyǒu jùbèi zúgòu de shùjù, jiélùn cái huì gèng yǒu shuōfúlì.",
+    "translation": "Only with sufficient data will the conclusion be more convincing.",
+    "translation_en": "Only with sufficient data will the conclusion be more convincing.",
+    "translation_id": "Hanya dengan data yang cukup maka kesimpulannya akan lebih meyakinkan."
+   },
+   {
+    "speaker": "user",
+    "text": "這項研究包含大量真實數據，因此結論比較可靠。",
+    "hanzi": "這項研究包含大量真實數據，因此結論比較可靠。",
+    "pinyin": "zhè xiàng yán jiū bāo hán dà liàng zhēn shí shù jù ， yīn cǐ jié lùn bǐ jiào kě kào 。",
+    "zhuyin": "ㄓㄜˋ ㄒㄧㄤˋ ㄧㄢˊ ㄐㄧㄡ ㄅㄠ ㄏㄢˊ ㄉㄚˋ ㄌㄧㄤˋ ㄓㄣ ㄕˊ ㄕㄨˋ ㄐㄩˋ ， ㄧㄣ ㄘˇ ㄐㄧㄝˊ ㄌㄨㄣˋ ㄅㄧˇ ㄐㄧㄠˋ ㄎㄜˇ ㄎㄠˋ 。",
+    "romanization": "Zhè xiàng yánjiū bāohán dàliàng zhēnshí shùjù, yīncǐ jiélùn bǐjiào kěkào.",
+    "translation": "This study contains a large amount of real data, so its conclusion is relatively reliable.",
+    "translation_en": "This study contains a large amount of real data, so its conclusion is relatively reliable.",
+    "translation_id": "Penelitian ini berisi sejumlah besar data nyata, sehingga kesimpulannya relatif dapat diandalkan."
+   },
+   {
+    "speaker": "tutor",
+    "text": "新系統保留了原有的數據和用戶設置。",
+    "hanzi": "新系統保留了原有的數據和用戶設置。",
+    "pinyin": "xīn xì tǒng bǎo liú le yuán yǒu de shù jù hé yòng hù shè zhì 。",
+    "zhuyin": "ㄒㄧㄣ ㄒㄧˋ ㄊㄨㄥˇ ㄅㄠˇ ㄌㄧㄡˊ ㄌㄜ˙ ㄩㄢˊ ㄧㄡˇ ㄉㄜ˙ ㄕㄨˋ ㄐㄩˋ ㄏㄜˊ ㄩㄥˋ ㄏㄨˋ ㄕㄜˋ ㄓˋ 。",
+    "romanization": "Xīn xìtǒng bǎoliú le yuán yǒu de shùjù hé yònghù shèdìng.",
+    "translation": "The new system retained the original data and user settings.",
+    "translation_en": "The new system retained the original data and user settings.",
+    "translation_id": "Sistem baru tersebut tetap mempertahankan data dan pengaturan pengguna yang semula."
+   },
+   {
+    "speaker": "user",
+    "text": "寫報告以前，你可以先參考去年的數據和結論。",
+    "hanzi": "寫報告以前，你可以先參考去年的數據和結論。",
+    "pinyin": "xiě bào gào yǐ qián ， nǐ kě yǐ xiān cān kǎo qù nián de shù jù hé jié lùn 。",
+    "zhuyin": "ㄒㄧㄝˇ ㄅㄠˋ ㄍㄠˋ ㄧˇ ㄑㄧㄢˊ ， ㄋㄧˇ ㄎㄜˇ ㄧˇ ㄒㄧㄢ ㄘㄢ ㄎㄠˇ ㄑㄩˋ ㄋㄧㄢˊ ㄉㄜ˙ ㄕㄨˋ ㄐㄩˋ ㄏㄜˊ ㄐㄧㄝˊ ㄌㄨㄣˋ 。",
+    "romanization": "Xiě bàogào yǐqián, nǐ kěyǐ xiān cānkǎo qùnián de shùjù hé jiélùn.",
+    "translation": "Before writing the report, you can first refer to last year’s data and conclusions.",
+    "translation_en": "Before writing the report, you can first refer to last year’s data and conclusions.",
+    "translation_id": "Sebelum menyusun laporan, Anda dapat terlebih dahulu merujuk pada data dan kesimpulan tahun lalu."
+   },
+   {
+    "speaker": "tutor",
+    "text": "這份報告列出了詳細數據，可見問題比我們想像的嚴重。",
+    "hanzi": "這份報告列出了詳細數據，可見問題比我們想像的嚴重。",
+    "pinyin": "zhè fèn bào gào liè chū le xiáng xì shù jù ， kě jiàn wèn tí bǐ wǒ men xiǎng xiàng de yán zhòng 。",
+    "zhuyin": "ㄓㄜˋ ㄈㄣˋ ㄅㄠˋ ㄍㄠˋ ㄌㄧㄝˋ ㄔㄨ ㄌㄜ˙ ㄒㄧㄤˊ ㄒㄧˋ ㄕㄨˋ ㄐㄩˋ ， ㄎㄜˇ ㄐㄧㄢˋ ㄨㄣˋ ㄊㄧˊ ㄅㄧˇ ㄨㄛˇ ㄇㄣ˙ ㄒㄧㄤˇ ㄒㄧㄤˋ ㄉㄜ˙ ㄧㄢˊ ㄓㄨㄥˋ 。",
+    "romanization": "Zhè fèn bàogào lièchū le xiángxì shùjù, kějiàn wèntí bǐ wǒmen xiǎngxiàng de yánzhòng.",
+    "translation": "This report lists detailed data, showing that the problem is more serious than we imagined.",
+    "translation_en": "This report lists detailed data, showing that the problem is more serious than we imagined.",
+    "translation_id": "Laporan ini memaparkan data terperinci yang menunjukkan bahwa masalah tersebut lebih serius daripada yang kita bayangkan."
+   },
+   {
+    "speaker": "user",
+    "text": "這個箭頭表示數據正在向上變化。",
+    "hanzi": "這個箭頭表示數據正在向上變化。",
+    "pinyin": "zhè gè jiàn tóu biǎo shì shù jù zhèng zài xiàng shàng biàn huà 。",
+    "zhuyin": "ㄓㄜˋ ㄍㄜˋ ㄐㄧㄢˋ ㄊㄡˊ ㄅㄧㄠˇ ㄕˋ ㄕㄨˋ ㄐㄩˋ ㄓㄥˋ ㄗㄞˋ ㄒㄧㄤˋ ㄕㄤˋ ㄅㄧㄢˋ ㄏㄨㄚˋ 。",
+    "romanization": "Zhège jiàntóu biǎoshì shùjù zhèngzài xiàngshàng biànhuà.",
+    "translation": "This arrow indicates that the data is changing upward.",
+    "translation_en": "This arrow indicates that the data is changing upward.",
+    "translation_id": "Panah ini menunjukkan bahwa data tersebut mengalami kenaikan."
+   }
+  ],
+  "examMappings": {
+   "tocfl": "Level 5"
+  },
+  "audio": "conv:conv-tocfl-tocfl-l5-shuju1",
+  "language": "zh"
+ },
+ {
+  "id": "conv-tocfl-tocfl-l5-jiceng2",
+  "title": "基层",
+  "title_en": "Talking about basic level; grassroots unit; basement layer",
+  "title_id": "Ngobrol tentang tingkat dasar",
+  "context": "You chat about basic level; grassroots unit; basement layer.",
+  "context_en": "You chat about basic level; grassroots unit; basement layer.",
+  "context_id": "Kamu mengobrol tentang tingkat dasar.",
+  "formality": "neutral",
+  "level": 7,
+  "turns": [
+   {
+    "speaker": "tutor",
+    "text": "本期培訓共有三十名學員，其中一半來自基層單位。",
+    "hanzi": "本期培訓共有三十名學員，其中一半來自基層單位。",
+    "pinyin": "běn qī péi xùn gòng yǒu sān shí míng xué yuán ， qí zhōng yí bàn lái zì jī céng dān wèi 。",
+    "zhuyin": "ㄅㄣˇ ㄑㄧ ㄆㄟˊ ㄒㄩㄣˋ ㄍㄨㄥˋ ㄧㄡˇ ㄙㄢ ㄕˊ ㄇㄧㄥˊ ㄒㄩㄝˊ ㄩㄢˊ ， ㄑㄧˊ ㄓㄨㄥ ㄧˊ ㄅㄢˋ ㄌㄞˊ ㄗˋ ㄐㄧ ㄘㄥˊ ㄉㄢ ㄨㄟˋ 。",
+    "romanization": "Běn qī péixùn gòng yǒu sānshí míng xuéyuán, qízhōng yíbàn láizì jīcéng dānwèi.",
+    "translation": "This training programme has thirty trainees in total, half of whom come from grassroots organisations.",
+    "translation_en": "This training programme has thirty trainees in total, half of whom come from grassroots organisations.",
+    "translation_id": "Program pelatihan ini memiliki total tiga puluh peserta, setengahnya berasal dari organisasi akar rumput."
+   },
+   {
+    "speaker": "user",
+    "text": "她主動申請到基層崗位工作，希望更直接地瞭解群眾需求。",
+    "hanzi": "她主動申請到基層崗位工作，希望更直接地瞭解群眾需求。",
+    "pinyin": "tā zhǔ dòng shēn qǐng dào jī céng gǎng wèi gōng zuò ， xī wàng gèng zhí jiē dì liǎo jiě qún zhòng xū qiú 。",
+    "zhuyin": "ㄊㄚ ㄓㄨˇ ㄉㄨㄥˋ ㄕㄣ ㄑㄧㄥˇ ㄉㄠˋ ㄐㄧ ㄘㄥˊ ㄍㄤˇ ㄨㄟˋ ㄍㄨㄥ ㄗㄨㄛˋ ， ㄒㄧ ㄨㄤˋ ㄍㄥˋ ㄓˊ ㄐㄧㄝ ㄉㄧˋ ㄌㄧㄠˇ ㄐㄧㄝˇ ㄑㄩㄣˊ ㄓㄨㄥˋ ㄒㄩ ㄑㄧㄡˊ 。",
+    "romanization": "Tā zhǔdòng shēnqǐng dào jīcéng gǎngwèi gōngzuò, xīwàng gèng zhíjiē de liǎojiě qúnzhòng xūqiú.",
+    "translation": "She took the initiative to apply for a grassroots post, hoping to understand people’s needs more directly.",
+    "translation_en": "She took the initiative to apply for a grassroots post, hoping to understand people’s needs more directly.",
+    "translation_id": "Dia mengambil inisiatif untuk melamar posisi akar rumput, dengan harapan dapat memahami kebutuhan masyarakat secara lebih langsung."
+   },
+   {
+    "speaker": "tutor",
+    "text": "他寧願待在基層積累經驗，也不急著爭取管理職位。",
+    "hanzi": "他寧願待在基層積累經驗，也不急著爭取管理職位。",
+    "pinyin": "tā níng yuàn dài zài jī céng jī lèi jīng yàn ， yě bù jí zhù zhēng qǔ guǎn lǐ zhí wèi 。",
+    "zhuyin": "ㄊㄚ ㄋㄧㄥˊ ㄩㄢˋ ㄉㄞˋ ㄗㄞˋ ㄐㄧ ㄘㄥˊ ㄐㄧ ㄌㄟˋ ㄐㄧㄥ ㄧㄢˋ ， ㄧㄝˇ ㄅㄨˋ ㄐㄧˊ ㄓㄨˋ ㄓㄥ ㄑㄩˇ ㄍㄨㄢˇ ㄌㄧˇ ㄓˊ ㄨㄟˋ 。",
+    "romanization": "Tā nìngyuàn dài zài jīcéng jīlěi jīngyàn, yě bù jí zhe zhēngqǔ guǎnlǐ zhíwèi.",
+    "translation": "He would rather stay at the grass-roots level to gain experience than rush to seek a management position.",
+    "translation_en": "He would rather stay at the grass-roots level to gain experience than rush to seek a management position.",
+    "translation_id": "Dia lebih suka bertahan di tingkat akar rumput untuk mendapatkan pengalaman daripada terburu-buru mencari posisi manajemen."
+   },
+   {
+    "speaker": "user",
+    "text": "對管理者來說，傾聽基層意見不是可選項，而是一門必修課。",
+    "hanzi": "對管理者來說，傾聽基層意見不是可選項，而是一門必修課。",
+    "pinyin": "duì guǎn lǐ zhě lái shuō ， qīng tīng jī céng yì jiàn bú shì kě xuǎn xiàng ， ér shì yī mén bì xiū kè 。",
+    "zhuyin": "ㄉㄨㄟˋ ㄍㄨㄢˇ ㄌㄧˇ ㄓㄜˇ ㄌㄞˊ ㄕㄨㄛ ， ㄑㄧㄥ ㄊㄧㄥ ㄐㄧ ㄘㄥˊ ㄧˋ ㄐㄧㄢˋ ㄅㄨˊ ㄕˋ ㄎㄜˇ ㄒㄩㄢˇ ㄒㄧㄤˋ ， ㄦˊ ㄕˋ ㄧ ㄇㄣˊ ㄅㄧˋ ㄒㄧㄡ ㄎㄜˋ 。",
+    "romanization": "Duì guǎnlǐzhě lái shuō, qīngtīng jīcéng yìjiàn bú shì kěxuǎn xiàng, ér shì yì mén bìxiū kè.",
+    "translation": "For managers, listening to grassroots opinions is not optional, but a compulsory lesson.",
+    "translation_en": "For managers, listening to grassroots opinions is not optional, but a compulsory lesson.",
+    "translation_id": "Bagi para manajer, mendengarkan pendapat masyarakat akar rumput bukanlah sebuah pilihan, namun sebuah pelajaran wajib."
+   },
+   {
+    "speaker": "tutor",
+    "text": "這份樸素的報告恰恰反映了基層工作的真實情況。",
+    "hanzi": "這份樸素的報告恰恰反映了基層工作的真實情況。",
+    "pinyin": "zhè fèn pǔ sù de bào gào qià qià fǎn yìng le jī céng gōng zuò de zhēn shí qíng kuàng 。",
+    "zhuyin": "ㄓㄜˋ ㄈㄣˋ ㄆㄨˇ ㄙㄨˋ ㄉㄜ˙ ㄅㄠˋ ㄍㄠˋ ㄑㄧㄚˋ ㄑㄧㄚˋ ㄈㄢˇ ㄧㄥˋ ㄌㄜ˙ ㄐㄧ ㄘㄥˊ ㄍㄨㄥ ㄗㄨㄛˋ ㄉㄜ˙ ㄓㄣ ㄕˊ ㄑㄧㄥˊ ㄎㄨㄤˋ 。",
+    "romanization": "Zhè fèn pǔsù de bàogào qiàqià fǎnyìng le jīcéng gōngzuò de zhēnshí qíngkuàng.",
+    "translation": "This plain report is precisely what reflects the real situation of grassroots work.",
+    "translation_en": "This plain report is precisely what reflects the real situation of grassroots work.",
+    "translation_id": "Laporan sederhana ini justru mencerminkan keadaan sebenarnya dari kegiatan di tingkat akar rumput."
+   },
+   {
+    "speaker": "user",
+    "text": "他大學畢業後進入一家地方報社，從基層記者做起。",
+    "hanzi": "他大學畢業後進入一家地方報社，從基層記者做起。",
+    "pinyin": "tā dà xué bì yè hòu jìn rù yī jiā dì fāng bào shè ， cóng jī céng jì zhě zuò qǐ 。",
+    "zhuyin": "ㄊㄚ ㄉㄚˋ ㄒㄩㄝˊ ㄅㄧˋ ㄧㄝˋ ㄏㄡˋ ㄐㄧㄣˋ ㄖㄨˋ ㄧ ㄐㄧㄚ ㄉㄧˋ ㄈㄤ ㄅㄠˋ ㄕㄜˋ ， ㄘㄨㄥˊ ㄐㄧ ㄘㄥˊ ㄐㄧˋ ㄓㄜˇ ㄗㄨㄛˋ ㄑㄧˇ 。",
+    "romanization": "Tā dàxué bìyè hòu jìnrù yì jiā dìfāng bàoshè, cóng jīcéng jìzhě zuòqǐ.",
+    "translation": "After graduating from university, he joined a local newspaper office and started as a junior reporter.",
+    "translation_en": "After graduating from university, he joined a local newspaper office and started as a junior reporter.",
+    "translation_id": "Setelah lulus dari universitas, ia bergabung dengan redaksi surat kabar lokal dan memulai kariernya sebagai reporter pemula."
+   }
+  ],
+  "examMappings": {
+   "tocfl": "Level 5"
+  },
+  "audio": "conv:conv-tocfl-tocfl-l5-jiceng2",
+  "language": "zh"
+ }
+]
