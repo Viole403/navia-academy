@@ -1,0 +1,6578 @@
+[
+ {
+  "id": "c-tocfl-n1-bie",
+  "char": "別",
+  "text": "別",
+  "pinyin": "biè",
+  "tone": 4,
+  "meaning": "to make sb change their ways, opinions etc",
+  "strokes": 7,
+  "radical": "刀",
+  "radicalMeaning": "knife",
+  "components": [
+   "刂",
+   "𠮠"
+  ],
+  "words": [],
+  "zhuyin": "ㄅㄧㄝˋ",
+  "mnemonic": "別 = 刂、𠮠; the knife radical (刀) anchors the meaning \"to make sb change their \".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-bie",
+  "language": "zh",
+  "romanization": "biè",
+  "textVariant": "别"
+ },
+ {
+  "id": "c-tocfl-n1-ba4",
+  "char": "爸",
+  "text": "爸",
+  "pinyin": "bà",
+  "tone": 4,
+  "meaning": "father",
+  "strokes": 8,
+  "radical": "父",
+  "radicalMeaning": "father",
+  "components": [
+   "巴",
+   "父"
+  ],
+  "words": [
+   "tocfl-n1-ba2",
+   "tocfl-n1-baba"
+  ],
+  "zhuyin": "ㄅㄚˋ",
+  "mnemonic": "爸 = 巴、父; the father radical (父) anchors the meaning \"father\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-ba4",
+  "language": "zh",
+  "romanization": "bà"
+ },
+ {
+  "id": "c-tocfl-n1-ban",
+  "char": "半",
+  "text": "半",
+  "pinyin": "bàn",
+  "tone": 4,
+  "meaning": "half",
+  "strokes": 5,
+  "radical": "十",
+  "radicalMeaning": "ten",
+  "components": [
+   "丨",
+   "丷",
+   "二"
+  ],
+  "words": [
+   "tocfl-n1-ban"
+  ],
+  "zhuyin": "ㄅㄢˋ",
+  "mnemonic": "半 = 丨、丷、二; the ten radical (十) anchors the meaning \"half\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-ban",
+  "language": "zh",
+  "romanization": "bàn"
+ },
+ {
+  "id": "c-tocfl-n1-bai2",
+  "char": "白",
+  "text": "白",
+  "pinyin": "bái",
+  "tone": 2,
+  "meaning": "white",
+  "strokes": 5,
+  "radical": "白",
+  "radicalMeaning": "white",
+  "components": [
+   "白"
+  ],
+  "words": [],
+  "zhuyin": "ㄅㄞˊ",
+  "mnemonic": "白 = 白; the white radical (白) anchors the meaning \"white\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-bai2",
+  "language": "zh",
+  "romanization": "bái"
+ },
+ {
+  "id": "c-tocfl-n1-bu",
+  "char": "不",
+  "text": "不",
+  "pinyin": "bù",
+  "tone": 4,
+  "meaning": "no",
+  "strokes": 4,
+  "radical": "一",
+  "radicalMeaning": "one",
+  "components": [
+   "③",
+   "一"
+  ],
+  "words": [
+   "tocfl-n1-bu",
+   "tocfl-n1-duibuqi"
+  ],
+  "zhuyin": "ㄅㄨˋ",
+  "mnemonic": "不 = ③、一; the one radical (一) anchors the meaning \"no\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-bu",
+  "language": "zh",
+  "romanization": "bù"
+ },
+ {
+  "id": "c-tocfl-n1-ba1",
+  "char": "八",
+  "text": "八",
+  "pinyin": "bā",
+  "tone": 1,
+  "meaning": "eight",
+  "strokes": 2,
+  "radical": "八",
+  "radicalMeaning": "eight",
+  "components": [
+   "八"
+  ],
+  "words": [
+   "tocfl-n1-ba"
+  ],
+  "zhuyin": "ㄅㄚ",
+  "mnemonic": "八 = 八; the eight radical (八) anchors the meaning \"eight\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-ba1",
+  "language": "zh",
+  "romanization": "bā"
+ },
+ {
+  "id": "c-tocfl-n1-ba",
+  "char": "吧",
+  "text": "吧",
+  "pinyin": "bā",
+  "tone": 1,
+  "meaning": "bar (loanword) (serving drinks, or providing Internet access etc)",
+  "strokes": 7,
+  "radical": "口",
+  "radicalMeaning": "mouth",
+  "components": [
+   "口",
+   "巴"
+  ],
+  "words": [
+   "tocfl-n1-ba3"
+  ],
+  "zhuyin": "ㄅㄚ",
+  "mnemonic": "吧 = 口、巴; the mouth radical (口) anchors the meaning \"bar (loanword) (serving \".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-ba",
+  "language": "zh",
+  "romanization": "bā"
+ },
+ {
+  "id": "c-tocfl-n1-bao",
+  "char": "包",
+  "text": "包",
+  "pinyin": "bāo",
+  "tone": 1,
+  "meaning": "to cover",
+  "strokes": 5,
+  "radical": "勹",
+  "radicalMeaning": "wrap",
+  "components": [
+   "勹",
+   "巳"
+  ],
+  "words": [],
+  "zhuyin": "ㄅㄠ",
+  "mnemonic": "包 = 勹、巳; the wrap radical (勹) anchors the meaning \"to cover\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-bao",
+  "language": "zh",
+  "romanization": "bāo"
+ },
+ {
+  "id": "c-tocfl-n1-bei",
+  "char": "杯",
+  "text": "杯",
+  "pinyin": "bēi",
+  "tone": 1,
+  "meaning": "cup",
+  "strokes": 8,
+  "radical": "木",
+  "radicalMeaning": "tree",
+  "components": [
+   "不",
+   "木"
+  ],
+  "words": [],
+  "zhuyin": "ㄅㄟ",
+  "mnemonic": "杯 = 不、木; the tree radical (木) anchors the meaning \"cup\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-bei",
+  "language": "zh",
+  "romanization": "bēi"
+ },
+ {
+  "id": "c-tocfl-n1-ben",
+  "char": "本",
+  "text": "本",
+  "pinyin": "běn",
+  "tone": 3,
+  "meaning": "(bound form) root",
+  "strokes": 5,
+  "radical": "木",
+  "radicalMeaning": "tree",
+  "components": [
+   "本"
+  ],
+  "words": [
+   "tocfl-n1-riben"
+  ],
+  "zhuyin": "ㄅㄣˇ",
+  "mnemonic": "本 = 本; the tree radical (木) anchors the meaning \"(bound form) root\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-ben",
+  "language": "zh",
+  "romanization": "běn"
+ },
+ {
+  "id": "c-tocfl-n1-bai",
+  "char": "百",
+  "text": "百",
+  "pinyin": "bǎi",
+  "tone": 3,
+  "meaning": "hundred",
+  "strokes": 6,
+  "radical": "白",
+  "radicalMeaning": "white",
+  "components": [
+   "一",
+   "白"
+  ],
+  "words": [
+   "tocfl-n1-bai"
+  ],
+  "zhuyin": "ㄅㄞˇ",
+  "mnemonic": "百 = 一、白; the white radical (白) anchors the meaning \"hundred\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-bai",
+  "language": "zh",
+  "romanization": "bǎi"
+ },
+ {
+  "id": "c-tocfl-n1-bi",
+  "char": "比",
+  "text": "比",
+  "pinyin": "bǐ",
+  "tone": 3,
+  "meaning": "to compare",
+  "strokes": 4,
+  "radical": "比",
+  "radicalMeaning": "compare",
+  "components": [
+   "比"
+  ],
+  "words": [],
+  "zhuyin": "ㄅㄧˇ",
+  "mnemonic": "比 = 比; the compare radical (比) anchors the meaning \"to compare\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-bi",
+  "language": "zh",
+  "romanization": "bǐ"
+ },
+ {
+  "id": "c-tocfl-n1-cha",
+  "char": "茶",
+  "text": "茶",
+  "pinyin": "chá",
+  "tone": 2,
+  "meaning": "tea",
+  "strokes": 9,
+  "radical": "艸",
+  "radicalMeaning": "grass",
+  "components": [
+   "人",
+   "朩",
+   "艹"
+  ],
+  "words": [],
+  "zhuyin": "ㄔㄚˊ",
+  "mnemonic": "茶 = 人、朩、艹; the grass radical (艸) anchors the meaning \"tea\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-cha",
+  "language": "zh",
+  "romanization": "chá"
+ },
+ {
+  "id": "c-tocfl-n1-chang",
+  "char": "常",
+  "text": "常",
+  "pinyin": "cháng",
+  "tone": 2,
+  "meaning": "always",
+  "strokes": 11,
+  "radical": "巾",
+  "radicalMeaning": "turban",
+  "components": [
+   "巾",
+   "𫩠"
+  ],
+  "words": [],
+  "zhuyin": "ㄔㄤˊ",
+  "mnemonic": "常 = 巾、𫩠; the turban radical (巾) anchors the meaning \"always\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-chang",
+  "language": "zh",
+  "romanization": "cháng"
+ },
+ {
+  "id": "c-tocfl-n1-zhang",
+  "char": "長",
+  "text": "長",
+  "pinyin": "cháng",
+  "tone": 2,
+  "meaning": "long",
+  "strokes": 8,
+  "radical": "門",
+  "radicalMeaning": "gate",
+  "components": [
+   "④",
+   "一",
+   "丿",
+   "乀",
+   "𠄌"
+  ],
+  "words": [],
+  "zhuyin": "ㄔㄤˊ",
+  "mnemonic": "長 = ④、一、丿、乀、𠄌; the gate radical (門) anchors the meaning \"long\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-zhang",
+  "language": "zh",
+  "romanization": "cháng",
+  "textVariant": "长"
+ },
+ {
+  "id": "c-tocfl-n1-che",
+  "char": "車",
+  "text": "車",
+  "pinyin": "chē",
+  "tone": 1,
+  "meaning": "car",
+  "strokes": 7,
+  "radical": "辛",
+  "radicalMeaning": "bitter",
+  "components": [
+   "車"
+  ],
+  "words": [
+   "tocfl-n1-che",
+   "tocfl-n1-chezi",
+   "tocfl-n1-gongche",
+   "tocfl-n1-gonggongqiche",
+   "tocfl-n1-kaiche"
+  ],
+  "zhuyin": "ㄔㄜ",
+  "mnemonic": "車 = 車; the bitter radical (辛) anchors the meaning \"car\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-che",
+  "language": "zh",
+  "romanization": "chē",
+  "textVariant": "车"
+ },
+ {
+  "id": "c-tocfl-n1-chi",
+  "char": "吃",
+  "text": "吃",
+  "pinyin": "chī",
+  "tone": 1,
+  "meaning": "to eat",
+  "strokes": 6,
+  "radical": "口",
+  "radicalMeaning": "mouth",
+  "components": [
+   "乞",
+   "口"
+  ],
+  "words": [
+   "tocfl-n1-chi"
+  ],
+  "zhuyin": "ㄔ",
+  "mnemonic": "吃 = 乞、口; the mouth radical (口) anchors the meaning \"to eat\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-chi",
+  "language": "zh",
+  "romanization": "chī"
+ },
+ {
+  "id": "c-tocfl-n1-chu",
+  "char": "出",
+  "text": "出",
+  "pinyin": "chū",
+  "tone": 1,
+  "meaning": "to go out",
+  "strokes": 5,
+  "radical": "凵",
+  "radicalMeaning": "receptacle",
+  "components": [
+   "凵",
+   "屮"
+  ],
+  "words": [],
+  "zhuyin": "ㄔㄨ",
+  "mnemonic": "出 = 凵、屮; the receptacle radical (凵) anchors the meaning \"to go out\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-chu",
+  "language": "zh",
+  "romanization": "chū"
+ },
+ {
+  "id": "c-tocfl-n1-cong",
+  "char": "從",
+  "text": "從",
+  "pinyin": "cóng",
+  "tone": 2,
+  "meaning": "from",
+  "strokes": 11,
+  "radical": "彳",
+  "radicalMeaning": "step",
+  "components": [
+   "从",
+   "彳",
+   "龰"
+  ],
+  "words": [],
+  "zhuyin": "ㄘㄨㄥˊ",
+  "mnemonic": "從 = 从、彳、龰; the step radical (彳) anchors the meaning \"from\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-cong",
+  "language": "zh",
+  "romanization": "cóng",
+  "textVariant": "从"
+ },
+ {
+  "id": "c-tocfl-n1-di5",
+  "char": "地",
+  "text": "地",
+  "pinyin": "de",
+  "tone": 5,
+  "meaning": "earth",
+  "strokes": 6,
+  "radical": "土",
+  "radicalMeaning": "earth",
+  "components": [
+   "也",
+   "土"
+  ],
+  "words": [],
+  "zhuyin": "ㄉㄜ˙",
+  "mnemonic": "地 = 也、土; the earth radical (土) anchors the meaning \"earth\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-di5",
+  "language": "zh",
+  "romanization": "de"
+ },
+ {
+  "id": "c-tocfl-n1-de5",
+  "char": "得",
+  "text": "得",
+  "pinyin": "de",
+  "tone": 5,
+  "meaning": "to obtain",
+  "strokes": 11,
+  "radical": "彳",
+  "radicalMeaning": "step",
+  "components": [
+   "㝵",
+   "彳"
+  ],
+  "words": [
+   "tocfl-n1-de2",
+   "tocfl-n1-juede"
+  ],
+  "zhuyin": "ㄉㄜ˙",
+  "mnemonic": "得 = 㝵、彳; the step radical (彳) anchors the meaning \"to obtain\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-de5",
+  "language": "zh",
+  "romanization": "de"
+ },
+ {
+  "id": "c-tocfl-n1-de",
+  "char": "的",
+  "text": "的",
+  "pinyin": "de",
+  "tone": 5,
+  "meaning": "really and truly",
+  "strokes": 8,
+  "radical": "白",
+  "radicalMeaning": "white",
+  "components": [
+   "勺",
+   "白"
+  ],
+  "words": [
+   "tocfl-n1-de"
+  ],
+  "zhuyin": "ㄉㄜ˙",
+  "mnemonic": "的 = 勺、白; the white radical (白) anchors the meaning \"really and truly\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-de",
+  "language": "zh",
+  "romanization": "de"
+ },
+ {
+  "id": "c-tocfl-n1-dian4x",
+  "char": "店",
+  "text": "店",
+  "pinyin": "diàn",
+  "tone": 4,
+  "meaning": "inn",
+  "strokes": 8,
+  "radical": "广",
+  "radicalMeaning": "dotted_cliff",
+  "components": [
+   "占",
+   "广"
+  ],
+  "words": [],
+  "zhuyin": "ㄉㄧㄢˋ",
+  "mnemonic": "店 = 占、广; the dotted_cliff radical (广) anchors the meaning \"inn\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-dian4x",
+  "language": "zh",
+  "romanization": "diàn"
+ },
+ {
+  "id": "c-tocfl-n1-dian4",
+  "char": "電",
+  "text": "電",
+  "pinyin": "diàn",
+  "tone": 4,
+  "meaning": "lightning",
+  "strokes": 13,
+  "radical": "靑",
+  "radicalMeaning": "blue",
+  "components": [
+   "乚",
+   "日",
+   "雨"
+  ],
+  "words": [
+   "tocfl-n1-da-dianhua",
+   "tocfl-n1-dianhua",
+   "tocfl-n1-dianshi",
+   "tocfl-n1-dianshiji",
+   "tocfl-n1-dianying"
+  ],
+  "zhuyin": "ㄉㄧㄢˋ",
+  "mnemonic": "電 = 乚、日、雨; the blue radical (靑) anchors the meaning \"lightning\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-dian4",
+  "language": "zh",
+  "romanization": "diàn",
+  "textVariant": "电"
+ },
+ {
+  "id": "c-tocfl-n1-dian",
+  "char": "點",
+  "text": "點",
+  "pinyin": "diǎn",
+  "tone": 3,
+  "meaning": "to touch briefly",
+  "strokes": 17,
+  "radical": "黹",
+  "radicalMeaning": "embroidery",
+  "components": [
+   "占",
+   "黑"
+  ],
+  "words": [
+   "tocfl-n1-dian"
+  ],
+  "zhuyin": "ㄉㄧㄢˇ",
+  "mnemonic": "點 = 占、黑; the embroidery radical (黹) anchors the meaning \"to touch briefly\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-dian",
+  "language": "zh",
+  "romanization": "diǎn",
+  "textVariant": "点"
+ },
+ {
+  "id": "c-tocfl-n1-dui",
+  "char": "對",
+  "text": "對",
+  "pinyin": "duì",
+  "tone": 4,
+  "meaning": "right",
+  "strokes": 14,
+  "radical": "寸",
+  "radicalMeaning": "thumb",
+  "components": [
+   "业",
+   "寸",
+   "𦍌"
+  ],
+  "words": [
+   "tocfl-n1-dui",
+   "tocfl-n1-duibuqi"
+  ],
+  "zhuyin": "ㄉㄨㄟˋ",
+  "mnemonic": "對 = 业、寸、𦍌; the thumb radical (寸) anchors the meaning \"right\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-dui",
+  "language": "zh",
+  "romanization": "duì",
+  "textVariant": "对"
+ },
+ {
+  "id": "c-tocfl-n1-duo",
+  "char": "多",
+  "text": "多",
+  "pinyin": "duō",
+  "tone": 1,
+  "meaning": "many",
+  "strokes": 6,
+  "radical": "夕",
+  "radicalMeaning": "evening",
+  "components": [
+   "夕"
+  ],
+  "words": [
+   "tocfl-n1-duoshao"
+  ],
+  "zhuyin": "ㄉㄨㄛ",
+  "mnemonic": "多 = 夕; the evening radical (夕) anchors the meaning \"many\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-duo",
+  "language": "zh",
+  "romanization": "duō"
+ },
+ {
+  "id": "c-tocfl-n1-duan",
+  "char": "短",
+  "text": "短",
+  "pinyin": "duǎn",
+  "tone": 3,
+  "meaning": "short",
+  "strokes": 12,
+  "radical": "矢",
+  "radicalMeaning": "arrow",
+  "components": [
+   "矢",
+   "豆"
+  ],
+  "words": [],
+  "zhuyin": "ㄉㄨㄢˇ",
+  "mnemonic": "短 = 矢、豆; the arrow radical (矢) anchors the meaning \"short\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-duan",
+  "language": "zh",
+  "romanization": "duǎn"
+ },
+ {
+  "id": "c-tocfl-n1-da",
+  "char": "大",
+  "text": "大",
+  "pinyin": "dà",
+  "tone": 4,
+  "meaning": "big",
+  "strokes": 3,
+  "radical": "大",
+  "radicalMeaning": "big",
+  "components": [
+   "一",
+   "人"
+  ],
+  "words": [
+   "tocfl-n1-da",
+   "tocfl-n1-daxue"
+  ],
+  "zhuyin": "ㄉㄚˋ",
+  "mnemonic": "大 = 一、人; the big radical (大) anchors the meaning \"big\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-da",
+  "language": "zh",
+  "romanization": "dà"
+ },
+ {
+  "id": "c-tocfl-n1-dai",
+  "char": "帶",
+  "text": "帶",
+  "pinyin": "dài",
+  "tone": 4,
+  "meaning": "band",
+  "strokes": 11,
+  "radical": "巾",
+  "radicalMeaning": "turban",
+  "components": [
+   "⑤",
+   "冖",
+   "巾"
+  ],
+  "words": [],
+  "zhuyin": "ㄉㄞˋ",
+  "mnemonic": "帶 = ⑤、冖、巾; the turban radical (巾) anchors the meaning \"band\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-dai",
+  "language": "zh",
+  "romanization": "dài",
+  "textVariant": "带"
+ },
+ {
+  "id": "c-tocfl-n1-dao",
+  "char": "到",
+  "text": "到",
+  "pinyin": "dào",
+  "tone": 4,
+  "meaning": "to reach",
+  "strokes": 8,
+  "radical": "刀",
+  "radicalMeaning": "knife",
+  "components": [
+   "刂",
+   "至"
+  ],
+  "words": [
+   "tocfl-n1-dao"
+  ],
+  "zhuyin": "ㄉㄠˋ",
+  "mnemonic": "到 = 刂、至; the knife radical (刀) anchors the meaning \"to reach\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-dao",
+  "language": "zh",
+  "romanization": "dào"
+ },
+ {
+  "id": "c-tocfl-n1-dao4",
+  "char": "道",
+  "text": "道",
+  "pinyin": "dào",
+  "tone": 4,
+  "meaning": "road",
+  "strokes": 12,
+  "radical": "邑",
+  "radicalMeaning": "town",
+  "components": [
+   "辶",
+   "首"
+  ],
+  "words": [
+   "tocfl-n1-zhidao"
+  ],
+  "zhuyin": "ㄉㄠˋ",
+  "mnemonic": "道 = 辶、首; the town radical (邑) anchors the meaning \"road\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-dao4",
+  "language": "zh",
+  "romanization": "dào"
+ },
+ {
+  "id": "c-tocfl-n1-di",
+  "char": "弟",
+  "text": "弟",
+  "pinyin": "dì",
+  "tone": 4,
+  "meaning": "younger brother",
+  "strokes": 7,
+  "radical": "弓",
+  "radicalMeaning": "bow",
+  "components": [
+   "丷",
+   "𢎨"
+  ],
+  "words": [
+   "tocfl-n1-di",
+   "tocfl-n1-didi"
+  ],
+  "zhuyin": "ㄉㄧˋ",
+  "mnemonic": "弟 = 丷、𢎨; the bow radical (弓) anchors the meaning \"younger brother\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-di",
+  "language": "zh",
+  "romanization": "dì"
+ },
+ {
+  "id": "c-tocfl-n1-dong",
+  "char": "東",
+  "text": "東",
+  "pinyin": "dōng",
+  "tone": 1,
+  "meaning": "east",
+  "strokes": 8,
+  "radical": "木",
+  "radicalMeaning": "tree",
+  "components": [
+   "東"
+  ],
+  "words": [
+   "tocfl-n1-dongxi"
+  ],
+  "zhuyin": "ㄉㄨㄥ",
+  "mnemonic": "東 = 東; the tree radical (木) anchors the meaning \"east\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-dong",
+  "language": "zh",
+  "romanization": "dōng",
+  "textVariant": "东"
+ },
+ {
+  "id": "c-tocfl-n1-dou",
+  "char": "都",
+  "text": "都",
+  "pinyin": "dōu",
+  "tone": 1,
+  "meaning": "capital city",
+  "strokes": 10,
+  "radical": "酉",
+  "radicalMeaning": "wine",
+  "components": [
+   "者",
+   "阝"
+  ],
+  "words": [
+   "tocfl-n1-dou"
+  ],
+  "zhuyin": "ㄉㄡ",
+  "mnemonic": "都 = 者、阝; the wine radical (酉) anchors the meaning \"capital city\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-dou",
+  "language": "zh",
+  "romanization": "dōu"
+ },
+ {
+  "id": "c-tocfl-n1-da3",
+  "char": "打",
+  "text": "打",
+  "pinyin": "dǎ",
+  "tone": 3,
+  "meaning": "a semantically light, transitive verb that is combined with various gr",
+  "strokes": 5,
+  "radical": "手",
+  "radicalMeaning": "hand",
+  "components": [
+   "丁",
+   "扌"
+  ],
+  "words": [
+   "tocfl-n1-da-dianhua"
+  ],
+  "zhuyin": "ㄉㄚˇ",
+  "mnemonic": "打 = 丁、扌; the hand radical (手) anchors the meaning \"a semantically light, tr\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-da3",
+  "language": "zh",
+  "romanization": "dǎ"
+ },
+ {
+  "id": "c-tocfl-n1-fan",
+  "char": "飯",
+  "text": "飯",
+  "pinyin": "fàn",
+  "tone": 4,
+  "meaning": "cooked rice",
+  "strokes": 12,
+  "radical": "首",
+  "radicalMeaning": "head",
+  "components": [
+   "反",
+   "飠"
+  ],
+  "words": [
+   "tocfl-n1-fan"
+  ],
+  "zhuyin": "ㄈㄢˋ",
+  "mnemonic": "飯 = 反、飠; the head radical (首) anchors the meaning \"cooked rice\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-fan",
+  "language": "zh",
+  "romanization": "fàn",
+  "textVariant": "饭"
+ },
+ {
+  "id": "c-tocfl-n1-fang2",
+  "char": "房",
+  "text": "房",
+  "pinyin": "fáng",
+  "tone": 2,
+  "meaning": "house",
+  "strokes": 8,
+  "radical": "戶",
+  "radicalMeaning": "door",
+  "components": [
+   "户",
+   "方"
+  ],
+  "words": [],
+  "zhuyin": "ㄈㄤˊ",
+  "mnemonic": "房 = 户、方; the door radical (戶) anchors the meaning \"house\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-fang2",
+  "language": "zh",
+  "romanization": "fáng"
+ },
+ {
+  "id": "c-tocfl-n1-fen",
+  "char": "分",
+  "text": "分",
+  "pinyin": "fèn",
+  "tone": 4,
+  "meaning": "part",
+  "strokes": 4,
+  "radical": "刀",
+  "radicalMeaning": "knife",
+  "components": [
+   "八",
+   "刀"
+  ],
+  "words": [
+   "tocfl-n1-fen"
+  ],
+  "zhuyin": "ㄈㄣˋ",
+  "mnemonic": "分 = 八、刀; the knife radical (刀) anchors the meaning \"part\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-fen",
+  "language": "zh",
+  "romanization": "fèn"
+ },
+ {
+  "id": "c-tocfl-n1-fu",
+  "char": "服",
+  "text": "服",
+  "pinyin": "fù",
+  "tone": 4,
+  "meaning": "classifier for medicine: dose",
+  "strokes": 8,
+  "radical": "月",
+  "radicalMeaning": "moon",
+  "components": [
+   "月",
+   "𠬝"
+  ],
+  "words": [],
+  "zhuyin": "ㄈㄨˋ",
+  "mnemonic": "服 = 月、𠬝; the moon radical (月) anchors the meaning \"classifier for medicine:\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-fu",
+  "language": "zh",
+  "romanization": "fù"
+ },
+ {
+  "id": "c-tocfl-n1-fang",
+  "char": "方",
+  "text": "方",
+  "pinyin": "fāng",
+  "tone": 1,
+  "meaning": "square",
+  "strokes": 4,
+  "radical": "方",
+  "radicalMeaning": "square",
+  "components": [
+   "丿",
+   "亠",
+   "𠃌"
+  ],
+  "words": [],
+  "zhuyin": "ㄈㄤ",
+  "mnemonic": "方 = 丿、亠、𠃌; the square radical (方) anchors the meaning \"square\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-fang",
+  "language": "zh",
+  "romanization": "fāng"
+ },
+ {
+  "id": "c-tocfl-n1-fei",
+  "char": "啡",
+  "text": "啡",
+  "pinyin": "fēi",
+  "tone": 1,
+  "meaning": "(used in loanwords for its phonetic value)",
+  "strokes": 11,
+  "radical": "口",
+  "radicalMeaning": "mouth",
+  "components": [
+   "口",
+   "非"
+  ],
+  "words": [],
+  "zhuyin": "ㄈㄟ",
+  "mnemonic": "啡 = 口、非; the mouth radical (口) anchors the meaning \"(used in loanwords for i\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-fei",
+  "language": "zh",
+  "romanization": "fēi"
+ },
+ {
+  "id": "c-tocfl-n1-fei1",
+  "char": "非",
+  "text": "非",
+  "pinyin": "fēi",
+  "tone": 1,
+  "meaning": "to not be",
+  "strokes": 8,
+  "radical": "面",
+  "radicalMeaning": "face",
+  "components": [
+   "非"
+  ],
+  "words": [],
+  "zhuyin": "ㄈㄟ",
+  "mnemonic": "非 = 非; the face radical (面) anchors the meaning \"to not be\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-fei1",
+  "language": "zh",
+  "romanization": "fēi"
+ },
+ {
+  "id": "c-tocfl-n1-fei1x",
+  "char": "飛",
+  "text": "飛",
+  "pinyin": "fēi",
+  "tone": 1,
+  "meaning": "to fly",
+  "strokes": 9,
+  "radical": "食",
+  "radicalMeaning": "eat",
+  "components": [
+   "飛"
+  ],
+  "words": [],
+  "zhuyin": "ㄈㄟ",
+  "mnemonic": "飛 = 飛; the eat radical (食) anchors the meaning \"to fly\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-fei1x",
+  "language": "zh",
+  "romanization": "fēi",
+  "textVariant": "飞"
+ },
+ {
+  "id": "c-tocfl-n1-feng",
+  "char": "風",
+  "text": "風",
+  "pinyin": "fēng",
+  "tone": 1,
+  "meaning": "wind",
+  "strokes": 9,
+  "radical": "飛",
+  "radicalMeaning": "fly",
+  "components": [
+   "䖝",
+   "几"
+  ],
+  "words": [],
+  "zhuyin": "ㄈㄥ",
+  "mnemonic": "風 = 䖝、几; the fly radical (飛) anchors the meaning \"wind\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-feng",
+  "language": "zh",
+  "romanization": "fēng",
+  "textVariant": "风"
+ },
+ {
+  "id": "c-tocfl-n1-fa",
+  "char": "法",
+  "text": "法",
+  "pinyin": "fǎ",
+  "tone": 3,
+  "meaning": "French",
+  "strokes": 8,
+  "radical": "水",
+  "radicalMeaning": "water",
+  "components": [
+   "去",
+   "氵"
+  ],
+  "words": [],
+  "zhuyin": "ㄈㄚˇ",
+  "mnemonic": "法 = 去、氵; the water radical (水) anchors the meaning \"French\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-fa",
+  "language": "zh",
+  "romanization": "fǎ"
+ },
+ {
+  "id": "c-tocfl-n1-guo4",
+  "char": "過",
+  "text": "過",
+  "pinyin": "guò",
+  "tone": 4,
+  "meaning": "to cross",
+  "strokes": 11,
+  "radical": "邑",
+  "radicalMeaning": "town",
+  "components": [
+   "咼",
+   "辶"
+  ],
+  "words": [
+   "tocfl-n1-guo2"
+  ],
+  "zhuyin": "ㄍㄨㄛˋ",
+  "mnemonic": "過 = 咼、辶; the town radical (邑) anchors the meaning \"to cross\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-guo4",
+  "language": "zh",
+  "romanization": "guò",
+  "textVariant": "过"
+ },
+ {
+  "id": "c-tocfl-n1-guo",
+  "char": "國",
+  "text": "國",
+  "pinyin": "guó",
+  "tone": 2,
+  "meaning": "country",
+  "strokes": 11,
+  "radical": "囗",
+  "radicalMeaning": "enclosure",
+  "components": [
+   "囗",
+   "或"
+  ],
+  "words": [
+   "tocfl-n1-guo",
+   "tocfl-n1-meiguo",
+   "tocfl-n1-zhongguo"
+  ],
+  "zhuyin": "ㄍㄨㄛˊ",
+  "mnemonic": "國 = 囗、或; the enclosure radical (囗) anchors the meaning \"country\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-guo",
+  "language": "zh",
+  "romanization": "guó",
+  "textVariant": "国"
+ },
+ {
+  "id": "c-tocfl-n1-guo3",
+  "char": "果",
+  "text": "果",
+  "pinyin": "guǒ",
+  "tone": 3,
+  "meaning": "fruit",
+  "strokes": 8,
+  "radical": "木",
+  "radicalMeaning": "tree",
+  "components": [
+   "日",
+   "木"
+  ],
+  "words": [],
+  "zhuyin": "ㄍㄨㄛˇ",
+  "mnemonic": "果 = 日、木; the tree radical (木) anchors the meaning \"fruit\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-guo3",
+  "language": "zh",
+  "romanization": "guǒ"
+ },
+ {
+  "id": "c-tocfl-n1-gong4",
+  "char": "共",
+  "text": "共",
+  "pinyin": "gòng",
+  "tone": 4,
+  "meaning": "common",
+  "strokes": 6,
+  "radical": "八",
+  "radicalMeaning": "eight",
+  "components": [
+   "八",
+   "龷"
+  ],
+  "words": [
+   "tocfl-n1-gonggongqiche"
+  ],
+  "zhuyin": "ㄍㄨㄥˋ",
+  "mnemonic": "共 = 八、龷; the eight radical (八) anchors the meaning \"common\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-gong4",
+  "language": "zh",
+  "romanization": "gòng"
+ },
+ {
+  "id": "c-tocfl-n1-gou",
+  "char": "夠",
+  "text": "夠",
+  "pinyin": "gòu",
+  "tone": 4,
+  "meaning": "enough (sufficient)",
+  "strokes": 11,
+  "radical": "夕",
+  "radicalMeaning": "evening",
+  "components": [
+   "句",
+   "多"
+  ],
+  "words": [],
+  "zhuyin": "ㄍㄡˋ",
+  "mnemonic": "夠 = 句、多; the evening radical (夕) anchors the meaning \"enough (sufficient)\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-gou",
+  "language": "zh",
+  "romanization": "gòu",
+  "textVariant": "够"
+ },
+ {
+  "id": "c-tocfl-n1-ka",
+  "char": "咖",
+  "text": "咖",
+  "pinyin": "gā",
+  "tone": 1,
+  "meaning": "coffee",
+  "strokes": 8,
+  "radical": "口",
+  "radicalMeaning": "mouth",
+  "components": [
+   "加",
+   "口"
+  ],
+  "words": [],
+  "zhuyin": "ㄍㄚ",
+  "mnemonic": "咖 = 加、口; the mouth radical (口) anchors the meaning \"coffee\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-ka",
+  "language": "zh",
+  "romanization": "gā"
+ },
+ {
+  "id": "c-tocfl-n1-gao",
+  "char": "高",
+  "text": "高",
+  "pinyin": "gāo",
+  "tone": 1,
+  "meaning": "high",
+  "strokes": 10,
+  "radical": "髟",
+  "radicalMeaning": "hair",
+  "components": [
+   "亠",
+   "冋",
+   "口"
+  ],
+  "words": [
+   "tocfl-n1-gao-xing",
+   "tocfl-n1-gao"
+  ],
+  "zhuyin": "ㄍㄠ",
+  "mnemonic": "高 = 亠、冋、口; the hair radical (髟) anchors the meaning \"high\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-gao",
+  "language": "zh",
+  "romanization": "gāo"
+ },
+ {
+  "id": "c-tocfl-n1-ge1",
+  "char": "哥",
+  "text": "哥",
+  "pinyin": "gē",
+  "tone": 1,
+  "meaning": "elder brother",
+  "strokes": 10,
+  "radical": "口",
+  "radicalMeaning": "mouth",
+  "components": [
+   "可"
+  ],
+  "words": [
+   "tocfl-n1-ge",
+   "tocfl-n1-gege"
+  ],
+  "zhuyin": "ㄍㄜ",
+  "mnemonic": "哥 = 可; the mouth radical (口) anchors the meaning \"elder brother\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-ge1",
+  "language": "zh",
+  "romanization": "gē"
+ },
+ {
+  "id": "c-tocfl-n1-gen",
+  "char": "跟",
+  "text": "跟",
+  "pinyin": "gēn",
+  "tone": 1,
+  "meaning": "heel",
+  "strokes": 13,
+  "radical": "身",
+  "radicalMeaning": "body",
+  "components": [
+   "艮",
+   "𧾷"
+  ],
+  "words": [],
+  "zhuyin": "ㄍㄣ",
+  "mnemonic": "跟 = 艮、𧾷; the body radical (身) anchors the meaning \"heel\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-gen",
+  "language": "zh",
+  "romanization": "gēn"
+ },
+ {
+  "id": "c-tocfl-n1-ge",
+  "char": "個",
+  "text": "個",
+  "pinyin": "gě",
+  "tone": 3,
+  "meaning": "(classifier used before a noun that has no specific classifier)",
+  "strokes": 10,
+  "radical": "人",
+  "radicalMeaning": "man",
+  "components": [
+   "亻",
+   "固"
+  ],
+  "words": [
+   "tocfl-n1-ge2"
+  ],
+  "zhuyin": "ㄍㄜˇ",
+  "mnemonic": "個 = 亻、固; the man radical (人) anchors the meaning \"(classifier used before \".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-ge",
+  "language": "zh",
+  "romanization": "gě",
+  "textVariant": "个"
+ },
+ {
+  "id": "c-tocfl-n1-gong1",
+  "char": "公",
+  "text": "公",
+  "pinyin": "gōng",
+  "tone": 1,
+  "meaning": "public",
+  "strokes": 4,
+  "radical": "八",
+  "radicalMeaning": "eight",
+  "components": [
+   "八",
+   "厶"
+  ],
+  "words": [
+   "tocfl-n1-gongche",
+   "tocfl-n1-gonggongqiche"
+  ],
+  "zhuyin": "ㄍㄨㄥ",
+  "mnemonic": "公 = 八、厶; the eight radical (八) anchors the meaning \"public\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-gong1",
+  "language": "zh",
+  "romanization": "gōng"
+ },
+ {
+  "id": "c-tocfl-n1-gong",
+  "char": "工",
+  "text": "工",
+  "pinyin": "gōng",
+  "tone": 1,
+  "meaning": "work",
+  "strokes": 3,
+  "radical": "工",
+  "radicalMeaning": "work",
+  "components": [
+   "工"
+  ],
+  "words": [],
+  "zhuyin": "ㄍㄨㄥ",
+  "mnemonic": "工 = 工; the work radical (工) anchors the meaning \"work\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-gong",
+  "language": "zh",
+  "romanization": "gōng"
+ },
+ {
+  "id": "c-tocfl-n1-hua",
+  "char": "話",
+  "text": "話",
+  "pinyin": "huà",
+  "tone": 4,
+  "meaning": "dialect",
+  "strokes": 13,
+  "radical": "谷",
+  "radicalMeaning": "valley",
+  "components": [
+   "舌",
+   "言"
+  ],
+  "words": [
+   "tocfl-n1-da-dianhua",
+   "tocfl-n1-dianhua"
+  ],
+  "zhuyin": "ㄏㄨㄚˋ",
+  "mnemonic": "話 = 舌、言; the valley radical (谷) anchors the meaning \"dialect\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-hua",
+  "language": "zh",
+  "romanization": "huà",
+  "textVariant": "话"
+ },
+ {
+  "id": "c-tocfl-n1-hua1",
+  "char": "花",
+  "text": "花",
+  "pinyin": "huā",
+  "tone": 1,
+  "meaning": "flower",
+  "strokes": 7,
+  "radical": "艸",
+  "radicalMeaning": "grass",
+  "components": [
+   "化",
+   "艹"
+  ],
+  "words": [],
+  "zhuyin": "ㄏㄨㄚ",
+  "mnemonic": "花 = 化、艹; the grass radical (艸) anchors the meaning \"flower\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-hua1",
+  "language": "zh",
+  "romanization": "huā"
+ },
+ {
+  "id": "c-tocfl-n1-huan",
+  "char": "歡",
+  "text": "歡",
+  "pinyin": "huān",
+  "tone": 1,
+  "meaning": "joyous",
+  "strokes": 21,
+  "radical": "欠",
+  "radicalMeaning": "lack",
+  "components": [
+   "欠",
+   "雚"
+  ],
+  "words": [
+   "tocfl-n1-xihuan"
+  ],
+  "zhuyin": "ㄏㄨㄢ",
+  "mnemonic": "歡 = 欠、雚; the lack radical (欠) anchors the meaning \"joyous\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-huan",
+  "language": "zh",
+  "romanization": "huān",
+  "textVariant": "欢"
+ },
+ {
+  "id": "c-tocfl-n1-huo",
+  "char": "火",
+  "text": "火",
+  "pinyin": "huǒ",
+  "tone": 3,
+  "meaning": "fire",
+  "strokes": 4,
+  "radical": "火",
+  "radicalMeaning": "fire",
+  "components": [
+   "人",
+   "八"
+  ],
+  "words": [],
+  "zhuyin": "ㄏㄨㄛˇ",
+  "mnemonic": "火 = 人、八; the fire radical (火) anchors the meaning \"fire\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-huo",
+  "language": "zh",
+  "romanization": "huǒ"
+ },
+ {
+  "id": "c-tocfl-n1-hai",
+  "char": "還",
+  "text": "還",
+  "pinyin": "hái",
+  "tone": 2,
+  "meaning": "still",
+  "strokes": 16,
+  "radical": "邑",
+  "radicalMeaning": "town",
+  "components": [
+   "睘",
+   "辶"
+  ],
+  "words": [
+   "tocfl-n1-haishi"
+  ],
+  "zhuyin": "ㄏㄞˊ",
+  "mnemonic": "還 = 睘、辶; the town radical (邑) anchors the meaning \"still\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-hai",
+  "language": "zh",
+  "romanization": "hái",
+  "textVariant": "还"
+ },
+ {
+  "id": "c-tocfl-n1-hao2",
+  "char": "號",
+  "text": "號",
+  "pinyin": "háo",
+  "tone": 2,
+  "meaning": "roar",
+  "strokes": 13,
+  "radical": "虍",
+  "radicalMeaning": "tiger",
+  "components": [
+   "号",
+   "虎"
+  ],
+  "words": [],
+  "zhuyin": "ㄏㄠˊ",
+  "mnemonic": "號 = 号、虎; the tiger radical (虍) anchors the meaning \"roar\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-hao2",
+  "language": "zh",
+  "romanization": "háo",
+  "textVariant": "号"
+ },
+ {
+  "id": "c-tocfl-n1-he4",
+  "char": "喝",
+  "text": "喝",
+  "pinyin": "hè",
+  "tone": 4,
+  "meaning": "to shout",
+  "strokes": 12,
+  "radical": "口",
+  "radicalMeaning": "mouth",
+  "components": [
+   "口",
+   "曷"
+  ],
+  "words": [],
+  "zhuyin": "ㄏㄜˋ",
+  "mnemonic": "喝 = 口、曷; the mouth radical (口) anchors the meaning \"to shout\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-he4",
+  "language": "zh",
+  "romanization": "hè"
+ },
+ {
+  "id": "c-tocfl-n1-he",
+  "char": "和",
+  "text": "和",
+  "pinyin": "hé",
+  "tone": 2,
+  "meaning": "to compose a poem in reply (to sb's poem) using the same rhyme sequenc",
+  "strokes": 8,
+  "radical": "口",
+  "radicalMeaning": "mouth",
+  "components": [
+   "口",
+   "禾"
+  ],
+  "words": [],
+  "zhuyin": "ㄏㄜˊ",
+  "mnemonic": "和 = 口、禾; the mouth radical (口) anchors the meaning \"to compose a poem in rep\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-he",
+  "language": "zh",
+  "romanization": "hé"
+ },
+ {
+  "id": "c-tocfl-n1-hou4",
+  "char": "候",
+  "text": "候",
+  "pinyin": "hòu",
+  "tone": 4,
+  "meaning": "to wait",
+  "strokes": 10,
+  "radical": "人",
+  "radicalMeaning": "man",
+  "components": [
+   "ユ",
+   "丨",
+   "亻",
+   "矢"
+  ],
+  "words": [
+   "tocfl-n1-shihou"
+  ],
+  "zhuyin": "ㄏㄡˋ",
+  "mnemonic": "候 = ユ、丨、亻、矢; the man radical (人) anchors the meaning \"to wait\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-hou4",
+  "language": "zh",
+  "romanization": "hòu"
+ },
+ {
+  "id": "c-tocfl-n1-hou",
+  "char": "後",
+  "text": "後",
+  "pinyin": "hòu",
+  "tone": 4,
+  "meaning": "empress",
+  "strokes": 9,
+  "radical": "彳",
+  "radicalMeaning": "step",
+  "components": [
+   "夂",
+   "幺",
+   "彳"
+  ],
+  "words": [
+   "tocfl-n1-yihou"
+  ],
+  "zhuyin": "ㄏㄡˋ",
+  "mnemonic": "後 = 夂、幺、彳; the step radical (彳) anchors the meaning \"empress\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-hou",
+  "language": "zh",
+  "romanization": "hòu",
+  "textVariant": "后"
+ },
+ {
+  "id": "c-tocfl-n1-hong",
+  "char": "紅",
+  "text": "紅",
+  "pinyin": "hóng",
+  "tone": 2,
+  "meaning": "red",
+  "strokes": 9,
+  "radical": "糸",
+  "radicalMeaning": "silk",
+  "components": [
+   "工",
+   "糹"
+  ],
+  "words": [],
+  "zhuyin": "ㄏㄨㄥˊ",
+  "mnemonic": "紅 = 工、糹; the silk radical (糸) anchors the meaning \"red\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-hong",
+  "language": "zh",
+  "romanization": "hóng",
+  "textVariant": "红"
+ },
+ {
+  "id": "c-tocfl-n1-hei",
+  "char": "黑",
+  "text": "黑",
+  "pinyin": "hēi",
+  "tone": 1,
+  "meaning": "black",
+  "strokes": 12,
+  "radical": "黹",
+  "radicalMeaning": "embroidery",
+  "components": [
+   "⑧",
+   "灬"
+  ],
+  "words": [],
+  "zhuyin": "ㄏㄟ",
+  "mnemonic": "黑 = ⑧、灬; the embroidery radical (黹) anchors the meaning \"black\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-hei",
+  "language": "zh",
+  "romanization": "hēi"
+ },
+ {
+  "id": "c-tocfl-n1-hen",
+  "char": "很",
+  "text": "很",
+  "pinyin": "hěn",
+  "tone": 3,
+  "meaning": "very",
+  "strokes": 9,
+  "radical": "彳",
+  "radicalMeaning": "step",
+  "components": [
+   "彳",
+   "艮"
+  ],
+  "words": [
+   "tocfl-n1-hen"
+  ],
+  "zhuyin": "ㄏㄣˇ",
+  "mnemonic": "很 = 彳、艮; the step radical (彳) anchors the meaning \"very\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-hen",
+  "language": "zh",
+  "romanization": "hěn"
+ },
+ {
+  "id": "c-tocfl-n1-hao",
+  "char": "好",
+  "text": "好",
+  "pinyin": "hǎo",
+  "tone": 3,
+  "meaning": "good",
+  "strokes": 6,
+  "radical": "女",
+  "radicalMeaning": "woman",
+  "components": [
+   "女",
+   "子"
+  ],
+  "words": [
+   "tocfl-n1-hao"
+  ],
+  "zhuyin": "ㄏㄠˇ",
+  "mnemonic": "好 = 女、子; the woman radical (女) anchors the meaning \"good\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-hao",
+  "language": "zh",
+  "romanization": "hǎo"
+ },
+ {
+  "id": "c-tocfl-n1-jian4",
+  "char": "件",
+  "text": "件",
+  "pinyin": "jiàn",
+  "tone": 4,
+  "meaning": "item",
+  "strokes": 6,
+  "radical": "人",
+  "radicalMeaning": "man",
+  "components": [
+   "亻",
+   "牛"
+  ],
+  "words": [],
+  "zhuyin": "ㄐㄧㄢˋ",
+  "mnemonic": "件 = 亻、牛; the man radical (人) anchors the meaning \"item\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-jian4",
+  "language": "zh",
+  "romanization": "jiàn"
+ },
+ {
+  "id": "c-tocfl-n1-jiao",
+  "char": "叫",
+  "text": "叫",
+  "pinyin": "jiào",
+  "tone": 4,
+  "meaning": "to shout",
+  "strokes": 5,
+  "radical": "口",
+  "radicalMeaning": "mouth",
+  "components": [
+   "丩",
+   "口"
+  ],
+  "words": [
+   "tocfl-n1-jiao"
+  ],
+  "zhuyin": "ㄐㄧㄠˋ",
+  "mnemonic": "叫 = 丩、口; the mouth radical (口) anchors the meaning \"to shout\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-jiao",
+  "language": "zh",
+  "romanization": "jiào"
+ },
+ {
+  "id": "c-tocfl-n1-xiao4",
+  "char": "校",
+  "text": "校",
+  "pinyin": "jiào",
+  "tone": 4,
+  "meaning": "to check",
+  "strokes": 10,
+  "radical": "木",
+  "radicalMeaning": "tree",
+  "components": [
+   "交",
+   "木"
+  ],
+  "words": [
+   "tocfl-n1-xue-xiao"
+  ],
+  "zhuyin": "ㄐㄧㄠˋ",
+  "mnemonic": "校 = 交、木; the tree radical (木) anchors the meaning \"to check\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-xiao4",
+  "language": "zh",
+  "romanization": "jiào"
+ },
+ {
+  "id": "c-tocfl-n1-jiu4",
+  "char": "就",
+  "text": "就",
+  "pinyin": "jiù",
+  "tone": 4,
+  "meaning": "(after a suppositional clause) in that case",
+  "strokes": 12,
+  "radical": "尢",
+  "radicalMeaning": "lame",
+  "components": [
+   "京",
+   "尤"
+  ],
+  "words": [
+   "tocfl-n1-jiu3"
+  ],
+  "zhuyin": "ㄐㄧㄡˋ",
+  "mnemonic": "就 = 京、尤; the lame radical (尢) anchors the meaning \"(after a suppositional c\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-jiu4",
+  "language": "zh",
+  "romanization": "jiù"
+ },
+ {
+  "id": "c-tocfl-n1-jia",
+  "char": "家",
+  "text": "家",
+  "pinyin": "jiā",
+  "tone": 1,
+  "meaning": "home",
+  "strokes": 10,
+  "radical": "宀",
+  "radicalMeaning": "roof",
+  "components": [
+   "宀",
+   "豕"
+  ],
+  "words": [
+   "tocfl-n1-jia"
+  ],
+  "zhuyin": "ㄐㄧㄚ",
+  "mnemonic": "家 = 宀、豕; the roof radical (宀) anchors the meaning \"home\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-jia",
+  "language": "zh",
+  "romanization": "jiā"
+ },
+ {
+  "id": "c-tocfl-n1-jiao1",
+  "char": "教",
+  "text": "教",
+  "pinyin": "jiāo",
+  "tone": 1,
+  "meaning": "(bound form) to teach",
+  "strokes": 11,
+  "radical": "攴",
+  "radicalMeaning": "rap",
+  "components": [
+   "孝",
+   "攵"
+  ],
+  "words": [],
+  "zhuyin": "ㄐㄧㄠ",
+  "mnemonic": "教 = 孝、攵; the rap radical (攴) anchors the meaning \"(bound form) to teach\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-jiao1",
+  "language": "zh",
+  "romanization": "jiāo"
+ },
+ {
+  "id": "c-tocfl-n1-jie",
+  "char": "姐",
+  "text": "姐",
+  "pinyin": "jiě",
+  "tone": 3,
+  "meaning": "older sister",
+  "strokes": 8,
+  "radical": "女",
+  "radicalMeaning": "woman",
+  "components": [
+   "且",
+   "女"
+  ],
+  "words": [
+   "tocfl-n1-jie2"
+  ],
+  "zhuyin": "ㄐㄧㄝˇ",
+  "mnemonic": "姐 = 且、女; the woman radical (女) anchors the meaning \"older sister\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-jie",
+  "language": "zh",
+  "romanization": "jiě"
+ },
+ {
+  "id": "c-tocfl-n1-jiu",
+  "char": "久",
+  "text": "久",
+  "pinyin": "jiǔ",
+  "tone": 3,
+  "meaning": "(of a period of time) long",
+  "strokes": 3,
+  "radical": "丿",
+  "radicalMeaning": "slash",
+  "components": [
+   "久"
+  ],
+  "words": [
+   "tocfl-n1-jiu2"
+  ],
+  "zhuyin": "ㄐㄧㄡˇ",
+  "mnemonic": "久 = 久; the slash radical (丿) anchors the meaning \"(of a period of time) lo\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-jiu",
+  "language": "zh",
+  "romanization": "jiǔ"
+ },
+ {
+  "id": "c-tocfl-n1-jiu3",
+  "char": "九",
+  "text": "九",
+  "pinyin": "jiǔ",
+  "tone": 3,
+  "meaning": "nine",
+  "strokes": 2,
+  "radical": "乙",
+  "radicalMeaning": "second",
+  "components": [
+   "九"
+  ],
+  "words": [
+   "tocfl-n1-jiu"
+  ],
+  "zhuyin": "ㄐㄧㄡˇ",
+  "mnemonic": "九 = 九; the second radical (乙) anchors the meaning \"nine\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-jiu3",
+  "language": "zh",
+  "romanization": "jiǔ"
+ },
+ {
+  "id": "c-tocfl-n1-jue",
+  "char": "覺",
+  "text": "覺",
+  "pinyin": "jué",
+  "tone": 2,
+  "meaning": "a nap",
+  "strokes": 20,
+  "radical": "見",
+  "radicalMeaning": "see",
+  "components": [
+   "見",
+   "𦥯"
+  ],
+  "words": [
+   "tocfl-n1-juede"
+  ],
+  "zhuyin": "ㄐㄩㄝˊ",
+  "mnemonic": "覺 = 見、𦥯; the see radical (見) anchors the meaning \"a nap\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-jue",
+  "language": "zh",
+  "romanization": "jué",
+  "textVariant": "觉"
+ },
+ {
+  "id": "c-tocfl-n1-ju",
+  "char": "句",
+  "text": "句",
+  "pinyin": "jù",
+  "tone": 4,
+  "meaning": "sentence",
+  "strokes": 5,
+  "radical": "口",
+  "radicalMeaning": "mouth",
+  "components": [
+   "勹",
+   "口"
+  ],
+  "words": [],
+  "zhuyin": "ㄐㄩˋ",
+  "mnemonic": "句 = 勹、口; the mouth radical (口) anchors the meaning \"sentence\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-ju",
+  "language": "zh",
+  "romanization": "jù"
+ },
+ {
+  "id": "c-tocfl-n1-ji1",
+  "char": "機",
+  "text": "機",
+  "pinyin": "jī",
+  "tone": 1,
+  "meaning": "(bound form) machine",
+  "strokes": 16,
+  "radical": "木",
+  "radicalMeaning": "tree",
+  "components": [
+   "幾",
+   "木"
+  ],
+  "words": [
+   "tocfl-n1-dianshiji"
+  ],
+  "zhuyin": "ㄐㄧ",
+  "mnemonic": "機 = 幾、木; the tree radical (木) anchors the meaning \"(bound form) machine\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-ji1",
+  "language": "zh",
+  "romanization": "jī",
+  "textVariant": "机"
+ },
+ {
+  "id": "c-tocfl-n1-jin",
+  "char": "今",
+  "text": "今",
+  "pinyin": "jīn",
+  "tone": 1,
+  "meaning": "now",
+  "strokes": 4,
+  "radical": "人",
+  "radicalMeaning": "man",
+  "components": [
+   "㇇",
+   "亽"
+  ],
+  "words": [
+   "tocfl-n1-jinnian",
+   "tocfl-n1-jintian"
+  ],
+  "zhuyin": "ㄐㄧㄣ",
+  "mnemonic": "今 = ㇇、亽; the man radical (人) anchors the meaning \"now\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-jin",
+  "language": "zh",
+  "romanization": "jīn"
+ },
+ {
+  "id": "c-tocfl-n1-ji3",
+  "char": "己",
+  "text": "己",
+  "pinyin": "jǐ",
+  "tone": 3,
+  "meaning": "self",
+  "strokes": 3,
+  "radical": "己",
+  "radicalMeaning": "oneself",
+  "components": [
+   "己"
+  ],
+  "words": [],
+  "zhuyin": "ㄐㄧˇ",
+  "mnemonic": "己 = 己; the oneself radical (己) anchors the meaning \"self\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-ji3",
+  "language": "zh",
+  "romanization": "jǐ"
+ },
+ {
+  "id": "c-tocfl-n1-ji",
+  "char": "幾",
+  "text": "幾",
+  "pinyin": "jǐ",
+  "tone": 3,
+  "meaning": "how much",
+  "strokes": 12,
+  "radical": "幺",
+  "radicalMeaning": "thread",
+  "components": [
+   "人",
+   "戈",
+   "𢆶"
+  ],
+  "words": [
+   "tocfl-n1-ji"
+  ],
+  "zhuyin": "ㄐㄧˇ",
+  "mnemonic": "幾 = 人、戈、𢆶; the thread radical (幺) anchors the meaning \"how much\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-ji",
+  "language": "zh",
+  "romanization": "jǐ",
+  "textVariant": "几"
+ },
+ {
+  "id": "c-tocfl-n1-gei",
+  "char": "給",
+  "text": "給",
+  "pinyin": "jǐ",
+  "tone": 3,
+  "meaning": "to supply",
+  "strokes": 12,
+  "radical": "糸",
+  "radicalMeaning": "silk",
+  "components": [
+   "合",
+   "糹"
+  ],
+  "words": [
+   "tocfl-n1-gei"
+  ],
+  "zhuyin": "ㄐㄧˇ",
+  "mnemonic": "給 = 合、糹; the silk radical (糸) anchors the meaning \"to supply\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-gei",
+  "language": "zh",
+  "romanization": "jǐ",
+  "textVariant": "给"
+ },
+ {
+  "id": "c-tocfl-n1-kuai4",
+  "char": "塊",
+  "text": "塊",
+  "pinyin": "kuài",
+  "tone": 4,
+  "meaning": "lump",
+  "strokes": 12,
+  "radical": "土",
+  "radicalMeaning": "earth",
+  "components": [
+   "土",
+   "鬼"
+  ],
+  "words": [
+   "tocfl-n1-kuai"
+  ],
+  "zhuyin": "ㄎㄨㄞˋ",
+  "mnemonic": "塊 = 土、鬼; the earth radical (土) anchors the meaning \"lump\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-kuai4",
+  "language": "zh",
+  "romanization": "kuài",
+  "textVariant": "块"
+ },
+ {
+  "id": "c-tocfl-n1-kuai",
+  "char": "快",
+  "text": "快",
+  "pinyin": "kuài",
+  "tone": 4,
+  "meaning": "rapid",
+  "strokes": 7,
+  "radical": "心",
+  "radicalMeaning": "heart",
+  "components": [
+   "夬",
+   "忄"
+  ],
+  "words": [],
+  "zhuyin": "ㄎㄨㄞˋ",
+  "mnemonic": "快 = 夬、忄; the heart radical (心) anchors the meaning \"rapid\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-kuai",
+  "language": "zh",
+  "romanization": "kuài"
+ },
+ {
+  "id": "c-tocfl-n1-hui",
+  "char": "會",
+  "text": "會",
+  "pinyin": "kuài",
+  "tone": 4,
+  "meaning": "(bound form) to reckon accounts",
+  "strokes": 13,
+  "radical": "曰",
+  "radicalMeaning": "say",
+  "components": [
+   "亼",
+   "𭥴"
+  ],
+  "words": [],
+  "zhuyin": "ㄎㄨㄞˋ",
+  "mnemonic": "會 = 亼、𭥴; the say radical (曰) anchors the meaning \"(bound form) to reckon a\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-hui",
+  "language": "zh",
+  "romanization": "kuài",
+  "textVariant": "会"
+ },
+ {
+  "id": "c-tocfl-n1-kan",
+  "char": "看",
+  "text": "看",
+  "pinyin": "kàn",
+  "tone": 4,
+  "meaning": "to see",
+  "strokes": 9,
+  "radical": "目",
+  "radicalMeaning": "eye",
+  "components": [
+   "目",
+   "龵"
+  ],
+  "words": [
+   "tocfl-n1-kan"
+  ],
+  "zhuyin": "ㄎㄢˋ",
+  "mnemonic": "看 = 目、龵; the eye radical (目) anchors the meaning \"to see\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-kan",
+  "language": "zh",
+  "romanization": "kàn"
+ },
+ {
+  "id": "c-tocfl-n1-kai",
+  "char": "開",
+  "text": "開",
+  "pinyin": "kāi",
+  "tone": 1,
+  "meaning": "to open (transitive or intransitive)",
+  "strokes": 12,
+  "radical": "阜",
+  "radicalMeaning": "mound",
+  "components": [
+   "开",
+   "門"
+  ],
+  "words": [
+   "tocfl-n1-kaiche"
+  ],
+  "zhuyin": "ㄎㄞ",
+  "mnemonic": "開 = 开、門; the mound radical (阜) anchors the meaning \"to open (transitive or i\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-kai",
+  "language": "zh",
+  "romanization": "kāi",
+  "textVariant": "开"
+ },
+ {
+  "id": "c-tocfl-n1-ke",
+  "char": "可",
+  "text": "可",
+  "pinyin": "kě",
+  "tone": 3,
+  "meaning": "(prefix) can",
+  "strokes": 5,
+  "radical": "口",
+  "radicalMeaning": "mouth",
+  "components": [
+   "丁",
+   "口"
+  ],
+  "words": [
+   "tocfl-n1-keshi",
+   "tocfl-n1-keyi"
+  ],
+  "zhuyin": "ㄎㄜˇ",
+  "mnemonic": "可 = 丁、口; the mouth radical (口) anchors the meaning \"(prefix) can\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-ke",
+  "language": "zh",
+  "romanization": "kě"
+ },
+ {
+  "id": "c-tocfl-n1-kong",
+  "char": "空",
+  "text": "空",
+  "pinyin": "kōng",
+  "tone": 1,
+  "meaning": "empty",
+  "strokes": 8,
+  "radical": "穴",
+  "radicalMeaning": "cave",
+  "components": [
+   "工",
+   "穴"
+  ],
+  "words": [],
+  "zhuyin": "ㄎㄨㄥ",
+  "mnemonic": "空 = 工、穴; the cave radical (穴) anchors the meaning \"empty\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-kong",
+  "language": "zh",
+  "romanization": "kōng"
+ },
+ {
+  "id": "c-tocfl-n1-kou",
+  "char": "口",
+  "text": "口",
+  "pinyin": "kǒu",
+  "tone": 3,
+  "meaning": "mouth",
+  "strokes": 3,
+  "radical": "口",
+  "radicalMeaning": "mouth",
+  "components": [
+   "口"
+  ],
+  "words": [],
+  "zhuyin": "ㄎㄡˇ",
+  "mnemonic": "口 = 口; the mouth radical (口) anchors the meaning \"mouth\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-kou",
+  "language": "zh",
+  "romanization": "kǒu"
+ },
+ {
+  "id": "c-tocfl-n1-liang",
+  "char": "兩",
+  "text": "兩",
+  "pinyin": "liǎng",
+  "tone": 3,
+  "meaning": "two",
+  "strokes": 8,
+  "radical": "入",
+  "radicalMeaning": "enter",
+  "components": [
+   "一",
+   "巾",
+   "𠓜"
+  ],
+  "words": [
+   "tocfl-n1-liang"
+  ],
+  "zhuyin": "ㄌㄧㄤˇ",
+  "mnemonic": "兩 = 一、巾、𠓜; the enter radical (入) anchors the meaning \"two\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-liang",
+  "language": "zh",
+  "romanization": "liǎng",
+  "textVariant": "两"
+ },
+ {
+  "id": "c-tocfl-n1-lai",
+  "char": "來",
+  "text": "來",
+  "pinyin": "lái",
+  "tone": 2,
+  "meaning": "to come",
+  "strokes": 8,
+  "radical": "人",
+  "radicalMeaning": "man",
+  "components": [
+   "从",
+   "木"
+  ],
+  "words": [
+   "tocfl-n1-lai"
+  ],
+  "zhuyin": "ㄌㄞˊ",
+  "mnemonic": "來 = 从、木; the man radical (人) anchors the meaning \"to come\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-lai",
+  "language": "zh",
+  "romanization": "lái",
+  "textVariant": "来"
+ },
+ {
+  "id": "c-tocfl-n1-le",
+  "char": "樂",
+  "text": "樂",
+  "pinyin": "lè",
+  "tone": 4,
+  "meaning": "happy",
+  "strokes": 15,
+  "radical": "木",
+  "radicalMeaning": "tree",
+  "components": [
+   "幺",
+   "木",
+   "白"
+  ],
+  "words": [],
+  "zhuyin": "ㄌㄜˋ",
+  "mnemonic": "樂 = 幺、木、白; the tree radical (木) anchors the meaning \"happy\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-le",
+  "language": "zh",
+  "romanization": "lè",
+  "textVariant": "乐"
+ },
+ {
+  "id": "c-tocfl-n1-liu",
+  "char": "六",
+  "text": "六",
+  "pinyin": "lù",
+  "tone": 4,
+  "meaning": "six",
+  "strokes": 4,
+  "radical": "八",
+  "radicalMeaning": "eight",
+  "components": [
+   "亠",
+   "八"
+  ],
+  "words": [
+   "tocfl-n1-liu"
+  ],
+  "zhuyin": "ㄌㄨˋ",
+  "mnemonic": "六 = 亠、八; the eight radical (八) anchors the meaning \"six\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-liu",
+  "language": "zh",
+  "romanization": "lù"
+ },
+ {
+  "id": "c-tocfl-n1-lu",
+  "char": "路",
+  "text": "路",
+  "pinyin": "lù",
+  "tone": 4,
+  "meaning": "road (CL:條|条[tiao2])",
+  "strokes": 13,
+  "radical": "身",
+  "radicalMeaning": "body",
+  "components": [
+   "各",
+   "𧾷"
+  ],
+  "words": [],
+  "zhuyin": "ㄌㄨˋ",
+  "mnemonic": "路 = 各、𧾷; the body radical (身) anchors the meaning \"road (CL:條|条[tiao2])\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-lu",
+  "language": "zh",
+  "romanization": "lù"
+ },
+ {
+  "id": "c-tocfl-n1-lao",
+  "char": "老",
+  "text": "老",
+  "pinyin": "lǎo",
+  "tone": 3,
+  "meaning": "prefix used before the surname of a person or a numeral indicating the",
+  "strokes": 6,
+  "radical": "老",
+  "radicalMeaning": "old",
+  "components": [
+   "匕",
+   "耂"
+  ],
+  "words": [
+   "tocfl-n1-lao",
+   "tocfl-n1-laoshi"
+  ],
+  "zhuyin": "ㄌㄠˇ",
+  "mnemonic": "老 = 匕、耂; the old radical (老) anchors the meaning \"prefix used before the s\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-lao",
+  "language": "zh",
+  "romanization": "lǎo"
+ },
+ {
+  "id": "c-tocfl-n1-li",
+  "char": "裡/裏",
+  "text": "裡/裏",
+  "pinyin": "lǐ",
+  "tone": 3,
+  "meaning": "",
+  "strokes": [
+   12,
+   0,
+   13
+  ],
+  "radical": "",
+  "radicalMeaning": "",
+  "components": [],
+  "words": [],
+  "zhuyin": "ㄌㄧˇ",
+  "mnemonic": "裡/裏: .",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-li",
+  "language": "zh",
+  "romanization": "lǐ"
+ },
+ {
+  "id": "c-tocfl-n1-men",
+  "char": "們",
+  "text": "們",
+  "pinyin": "men",
+  "tone": 5,
+  "meaning": "plural marker for pronouns, and nouns referring to individuals",
+  "strokes": 10,
+  "radical": "人",
+  "radicalMeaning": "man",
+  "components": [
+   "亻",
+   "門"
+  ],
+  "words": [
+   "tocfl-n1-nimen",
+   "tocfl-n1-tamen",
+   "tocfl-n1-tamen2",
+   "tocfl-n1-women"
+  ],
+  "zhuyin": "ㄇㄣ˙",
+  "mnemonic": "們 = 亻、門; the man radical (人) anchors the meaning \"plural marker for pronou\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-men",
+  "language": "zh",
+  "romanization": "men",
+  "textVariant": "们"
+ },
+ {
+  "id": "c-tocfl-n1-mian",
+  "char": "面",
+  "text": "面",
+  "pinyin": "miàn",
+  "tone": 4,
+  "meaning": "face",
+  "strokes": 9,
+  "radical": "革",
+  "radicalMeaning": "leather",
+  "components": [
+   "丆",
+   "囬"
+  ],
+  "words": [],
+  "zhuyin": "ㄇㄧㄢˋ",
+  "mnemonic": "面 = 丆、囬; the leather radical (革) anchors the meaning \"face\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-mian",
+  "language": "zh",
+  "romanization": "miàn"
+ },
+ {
+  "id": "c-tocfl-n1-ma",
+  "char": "嗎",
+  "text": "嗎",
+  "pinyin": "má",
+  "tone": 2,
+  "meaning": "(coll.) what?",
+  "strokes": 13,
+  "radical": "口",
+  "radicalMeaning": "mouth",
+  "components": [
+   "口",
+   "馬"
+  ],
+  "words": [
+   "tocfl-n1-ma2"
+  ],
+  "zhuyin": "ㄇㄚˊ",
+  "mnemonic": "嗎 = 口、馬; the mouth radical (口) anchors the meaning \"(coll.) what?\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-ma",
+  "language": "zh",
+  "romanization": "má",
+  "textVariant": "吗"
+ },
+ {
+  "id": "c-tocfl-n1-mei4",
+  "char": "妹",
+  "text": "妹",
+  "pinyin": "mèi",
+  "tone": 4,
+  "meaning": "younger sister",
+  "strokes": 8,
+  "radical": "女",
+  "radicalMeaning": "woman",
+  "components": [
+   "女",
+   "未"
+  ],
+  "words": [
+   "tocfl-n1-mei",
+   "tocfl-n1-meimei"
+  ],
+  "zhuyin": "ㄇㄟˋ",
+  "mnemonic": "妹 = 女、未; the woman radical (女) anchors the meaning \"younger sister\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-mei4",
+  "language": "zh",
+  "romanization": "mèi"
+ },
+ {
+  "id": "c-tocfl-n1-men2",
+  "char": "門",
+  "text": "門",
+  "pinyin": "mén",
+  "tone": 2,
+  "meaning": "gate",
+  "strokes": 8,
+  "radical": "阜",
+  "radicalMeaning": "mound",
+  "components": [
+   "𠁣",
+   "𠃛"
+  ],
+  "words": [],
+  "zhuyin": "ㄇㄣˊ",
+  "mnemonic": "門 = 𠁣、𠃛; the mound radical (阜) anchors the meaning \"gate\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-men2",
+  "language": "zh",
+  "romanization": "mén",
+  "textVariant": "门"
+ },
+ {
+  "id": "c-tocfl-n1-ming",
+  "char": "名",
+  "text": "名",
+  "pinyin": "míng",
+  "tone": 2,
+  "meaning": "name",
+  "strokes": 6,
+  "radical": "口",
+  "radicalMeaning": "mouth",
+  "components": [
+   "口",
+   "夕"
+  ],
+  "words": [
+   "tocfl-n1-mingzi",
+   "tocfl-n1-xingming"
+  ],
+  "zhuyin": "ㄇㄧㄥˊ",
+  "mnemonic": "名 = 口、夕; the mouth radical (口) anchors the meaning \"name\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-ming",
+  "language": "zh",
+  "romanization": "míng"
+ },
+ {
+  "id": "c-tocfl-n1-ming2",
+  "char": "明",
+  "text": "明",
+  "pinyin": "míng",
+  "tone": 2,
+  "meaning": "Ming Dynasty (1368–1644)",
+  "strokes": 8,
+  "radical": "日",
+  "radicalMeaning": "sun",
+  "components": [
+   "日",
+   "月"
+  ],
+  "words": [
+   "tocfl-n1-mingtian"
+  ],
+  "zhuyin": "ㄇㄧㄥˊ",
+  "mnemonic": "明 = 日、月; the sun radical (日) anchors the meaning \"Ming Dynasty (1368–1644)\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-ming2",
+  "language": "zh",
+  "romanization": "míng"
+ },
+ {
+  "id": "c-tocfl-n1-mei",
+  "char": "沒",
+  "text": "沒",
+  "pinyin": "mò",
+  "tone": 4,
+  "meaning": "drowned",
+  "strokes": 7,
+  "radical": "水",
+  "radicalMeaning": "water",
+  "components": [
+   "勹",
+   "又",
+   "氵"
+  ],
+  "words": [
+   "tocfl-n1-mei2",
+   "tocfl-n1-meiyou"
+  ],
+  "zhuyin": "ㄇㄛˋ",
+  "mnemonic": "沒 = 勹、又、氵; the water radical (水) anchors the meaning \"drowned\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-mei",
+  "language": "zh",
+  "romanization": "mò",
+  "textVariant": "没"
+ },
+ {
+  "id": "c-tocfl-n1-me",
+  "char": "麼",
+  "text": "麼",
+  "pinyin": "mó",
+  "tone": 2,
+  "meaning": "tiny",
+  "strokes": 14,
+  "radical": "黃",
+  "radicalMeaning": "yellow",
+  "components": [
+   "幺",
+   "麻"
+  ],
+  "words": [
+   "tocfl-n1-shenme",
+   "tocfl-n1-zenmeyang"
+  ],
+  "zhuyin": "ㄇㄛˊ",
+  "mnemonic": "麼 = 幺、麻; the yellow radical (黃) anchors the meaning \"tiny\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-me",
+  "language": "zh",
+  "romanization": "mó",
+  "textVariant": "麽"
+ },
+ {
+  "id": "c-tocfl-n1-ma1",
+  "char": "媽",
+  "text": "媽",
+  "pinyin": "mā",
+  "tone": 1,
+  "meaning": "ma",
+  "strokes": 13,
+  "radical": "女",
+  "radicalMeaning": "woman",
+  "components": [
+   "女",
+   "馬"
+  ],
+  "words": [
+   "tocfl-n1-ma",
+   "tocfl-n1-mama"
+  ],
+  "zhuyin": "ㄇㄚ",
+  "mnemonic": "媽 = 女、馬; the woman radical (女) anchors the meaning \"ma\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-ma1",
+  "language": "zh",
+  "romanization": "mā",
+  "textVariant": "妈"
+ },
+ {
+  "id": "c-tocfl-n1-mei3x",
+  "char": "每",
+  "text": "每",
+  "pinyin": "měi",
+  "tone": 3,
+  "meaning": "each",
+  "strokes": 7,
+  "radical": "毋",
+  "radicalMeaning": "do_not",
+  "components": [
+   "母",
+   "𠂉"
+  ],
+  "words": [],
+  "zhuyin": "ㄇㄟˇ",
+  "mnemonic": "每 = 母、𠂉; the do_not radical (毋) anchors the meaning \"each\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-mei3x",
+  "language": "zh",
+  "romanization": "měi"
+ },
+ {
+  "id": "c-tocfl-n1-mei3",
+  "char": "美",
+  "text": "美",
+  "pinyin": "měi",
+  "tone": 3,
+  "meaning": "beautiful",
+  "strokes": 9,
+  "radical": "羊",
+  "radicalMeaning": "sheep",
+  "components": [
+   "大",
+   "𦍌"
+  ],
+  "words": [
+   "tocfl-n1-meiguo"
+  ],
+  "zhuyin": "ㄇㄟˇ",
+  "mnemonic": "美 = 大、𦍌; the sheep radical (羊) anchors the meaning \"beautiful\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-mei3",
+  "language": "zh",
+  "romanization": "měi"
+ },
+ {
+  "id": "c-tocfl-n1-ma3",
+  "char": "馬",
+  "text": "馬",
+  "pinyin": "mǎ",
+  "tone": 3,
+  "meaning": "horse",
+  "strokes": 10,
+  "radical": "骨",
+  "radicalMeaning": "bone",
+  "components": [
+   "⑥",
+   "灬"
+  ],
+  "words": [],
+  "zhuyin": "ㄇㄚˇ",
+  "mnemonic": "馬 = ⑥、灬; the bone radical (骨) anchors the meaning \"horse\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-ma3",
+  "language": "zh",
+  "romanization": "mǎ",
+  "textVariant": "马"
+ },
+ {
+  "id": "c-tocfl-n1-mai",
+  "char": "買",
+  "text": "買",
+  "pinyin": "mǎi",
+  "tone": 3,
+  "meaning": "to buy",
+  "strokes": 12,
+  "radical": "赤",
+  "radicalMeaning": "red",
+  "components": [
+   "罒",
+   "貝"
+  ],
+  "words": [
+   "tocfl-n1-mai"
+  ],
+  "zhuyin": "ㄇㄞˇ",
+  "mnemonic": "買 = 罒、貝; the red radical (赤) anchors the meaning \"to buy\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-mai",
+  "language": "zh",
+  "romanization": "mǎi",
+  "textVariant": "买"
+ },
+ {
+  "id": "c-tocfl-n1-ne",
+  "char": "呢",
+  "text": "呢",
+  "pinyin": "ne",
+  "tone": 5,
+  "meaning": "particle indicating that a previously asked question is to be applied ",
+  "strokes": 8,
+  "radical": "口",
+  "radicalMeaning": "mouth",
+  "components": [
+   "口",
+   "尼"
+  ],
+  "words": [
+   "tocfl-n1-ne"
+  ],
+  "zhuyin": "ㄋㄜ˙",
+  "mnemonic": "呢 = 口、尼; the mouth radical (口) anchors the meaning \"particle indicating that\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-ne",
+  "language": "zh",
+  "romanization": "ne"
+ },
+ {
+  "id": "c-tocfl-n1-nian4x",
+  "char": "唸",
+  "text": "唸",
+  "pinyin": "niàn",
+  "tone": 4,
+  "meaning": "",
+  "strokes": 11,
+  "radical": "口",
+  "radicalMeaning": "mouth",
+  "components": [
+   "口",
+   "念"
+  ],
+  "words": [],
+  "zhuyin": "ㄋㄧㄢˋ",
+  "mnemonic": "唸 = 口、念; the mouth radical (口) anchors the meaning \"\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-nian4x",
+  "language": "zh",
+  "romanization": "niàn"
+ },
+ {
+  "id": "c-tocfl-n1-nian4",
+  "char": "念",
+  "text": "念",
+  "pinyin": "niàn",
+  "tone": 4,
+  "meaning": "to read",
+  "strokes": 8,
+  "radical": "心",
+  "radicalMeaning": "heart",
+  "components": [
+   "今",
+   "心"
+  ],
+  "words": [],
+  "zhuyin": "ㄋㄧㄢˋ",
+  "mnemonic": "念 = 今、心; the heart radical (心) anchors the meaning \"to read\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-nian4",
+  "language": "zh",
+  "romanization": "niàn"
+ },
+ {
+  "id": "c-tocfl-n1-nian",
+  "char": "年",
+  "text": "年",
+  "pinyin": "nián",
+  "tone": 2,
+  "meaning": "year",
+  "strokes": 6,
+  "radical": "干",
+  "radicalMeaning": "dry",
+  "components": [
+   "年"
+  ],
+  "words": [
+   "tocfl-n1-jinnian",
+   "tocfl-n1-nian"
+  ],
+  "zhuyin": "ㄋㄧㄢˊ",
+  "mnemonic": "年 = 年; the dry radical (干) anchors the meaning \"year\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-nian",
+  "language": "zh",
+  "romanization": "nián"
+ },
+ {
+  "id": "c-tocfl-n1-niu",
+  "char": "牛",
+  "text": "牛",
+  "pinyin": "niú",
+  "tone": 2,
+  "meaning": "ox",
+  "strokes": 4,
+  "radical": "牛",
+  "radicalMeaning": "cow",
+  "components": [
+   "牛"
+  ],
+  "words": [],
+  "zhuyin": "ㄋㄧㄡˊ",
+  "mnemonic": "牛 = 牛; the cow radical (牛) anchors the meaning \"ox\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-niu",
+  "language": "zh",
+  "romanization": "niú"
+ },
+ {
+  "id": "c-tocfl-n1-na",
+  "char": "拿",
+  "text": "拿",
+  "pinyin": "ná",
+  "tone": 2,
+  "meaning": "to hold",
+  "strokes": 10,
+  "radical": "手",
+  "radicalMeaning": "hand",
+  "components": [
+   "合",
+   "手"
+  ],
+  "words": [],
+  "zhuyin": "ㄋㄚˊ",
+  "mnemonic": "拿 = 合、手; the hand radical (手) anchors the meaning \"to hold\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-na",
+  "language": "zh",
+  "romanization": "ná"
+ },
+ {
+  "id": "c-tocfl-n1-nan",
+  "char": "男",
+  "text": "男",
+  "pinyin": "nán",
+  "tone": 2,
+  "meaning": "(bound form) male",
+  "strokes": 7,
+  "radical": "田",
+  "radicalMeaning": "field",
+  "components": [
+   "力",
+   "田"
+  ],
+  "words": [],
+  "zhuyin": "ㄋㄢˊ",
+  "mnemonic": "男 = 力、田; the field radical (田) anchors the meaning \"(bound form) male\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-nan",
+  "language": "zh",
+  "romanization": "nán"
+ },
+ {
+  "id": "c-tocfl-n1-neng",
+  "char": "能",
+  "text": "能",
+  "pinyin": "néng",
+  "tone": 2,
+  "meaning": "can",
+  "strokes": 10,
+  "radical": "肉",
+  "radicalMeaning": "meat",
+  "components": [
+   "䏍",
+   "𫧇"
+  ],
+  "words": [
+   "tocfl-n1-neng"
+  ],
+  "zhuyin": "ㄋㄥˊ",
+  "mnemonic": "能 = 䏍、𫧇; the meat radical (肉) anchors the meaning \"can\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-neng",
+  "language": "zh",
+  "romanization": "néng"
+ },
+ {
+  "id": "c-tocfl-n1-nin",
+  "char": "您",
+  "text": "您",
+  "pinyin": "nín",
+  "tone": 2,
+  "meaning": "you (courteous, as opposed to informal 你[ni3])",
+  "strokes": 11,
+  "radical": "心",
+  "radicalMeaning": "heart",
+  "components": [
+   "你",
+   "心"
+  ],
+  "words": [
+   "tocfl-n1-nin"
+  ],
+  "zhuyin": "ㄋㄧㄣˊ",
+  "mnemonic": "您 = 你、心; the heart radical (心) anchors the meaning \"you (courteous, as oppos\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-nin",
+  "language": "zh",
+  "romanization": "nín"
+ },
+ {
+  "id": "c-tocfl-n1-na3",
+  "char": "哪",
+  "text": "哪",
+  "pinyin": "něi",
+  "tone": 3,
+  "meaning": "which? (interrogative, followed by classifier or numeral-classifier)",
+  "strokes": 9,
+  "radical": "口",
+  "radicalMeaning": "mouth",
+  "components": [
+   "口",
+   "那"
+  ],
+  "words": [
+   "tocfl-n1-nali2",
+   "tocfl-n1-nar2"
+  ],
+  "zhuyin": "ㄋㄟˇ",
+  "mnemonic": "哪 = 口、那; the mouth radical (口) anchors the meaning \"which? (interrogative, f\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-na3",
+  "language": "zh",
+  "romanization": "něi"
+ },
+ {
+  "id": "c-tocfl-n1-na3x",
+  "char": "那",
+  "text": "那",
+  "pinyin": "nǎ",
+  "tone": 3,
+  "meaning": "(specifier) that",
+  "strokes": 6,
+  "radical": "酉",
+  "radicalMeaning": "wine",
+  "components": [
+   "二",
+   "刀",
+   "阝"
+  ],
+  "words": [
+   "tocfl-n1-na",
+   "tocfl-n1-nali",
+   "tocfl-n1-nar"
+  ],
+  "zhuyin": "ㄋㄚˇ",
+  "mnemonic": "那 = 二、刀、阝; the wine radical (酉) anchors the meaning \"(specifier) that\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-na3x",
+  "language": "zh",
+  "romanization": "nǎ"
+ },
+ {
+  "id": "c-tocfl-n1-nai",
+  "char": "奶",
+  "text": "奶",
+  "pinyin": "nǎi",
+  "tone": 3,
+  "meaning": "breast",
+  "strokes": 5,
+  "radical": "女",
+  "radicalMeaning": "woman",
+  "components": [
+   "乃",
+   "女"
+  ],
+  "words": [],
+  "zhuyin": "ㄋㄞˇ",
+  "mnemonic": "奶 = 乃、女; the woman radical (女) anchors the meaning \"breast\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-nai",
+  "language": "zh",
+  "romanization": "nǎi"
+ },
+ {
+  "id": "c-tocfl-n1-ni",
+  "char": "你",
+  "text": "你",
+  "pinyin": "nǐ",
+  "tone": 3,
+  "meaning": "you (informal, as opposed to courteous 您[nin2])",
+  "strokes": 7,
+  "radical": "人",
+  "radicalMeaning": "man",
+  "components": [
+   "亻",
+   "尔"
+  ],
+  "words": [
+   "tocfl-n1-ni",
+   "tocfl-n1-nimen"
+  ],
+  "zhuyin": "ㄋㄧˇ",
+  "mnemonic": "你 = 亻、尔; the man radical (人) anchors the meaning \"you (informal, as oppose\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-ni",
+  "language": "zh",
+  "romanization": "nǐ"
+ },
+ {
+  "id": "c-tocfl-n1-ni3",
+  "char": "妳",
+  "text": "妳",
+  "pinyin": "nǐ",
+  "tone": 3,
+  "meaning": "you (informal, as opposed to courteous 您[nin2])",
+  "strokes": 8,
+  "radical": "女",
+  "radicalMeaning": "woman",
+  "components": [
+   "女",
+   "尔"
+  ],
+  "words": [],
+  "zhuyin": "ㄋㄧˇ",
+  "mnemonic": "妳 = 女、尔; the woman radical (女) anchors the meaning \"you (informal, as oppose\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-ni3",
+  "language": "zh",
+  "romanization": "nǐ",
+  "textVariant": "你"
+ },
+ {
+  "id": "c-tocfl-n1-peng",
+  "char": "朋",
+  "text": "朋",
+  "pinyin": "péng",
+  "tone": 2,
+  "meaning": "friend",
+  "strokes": 8,
+  "radical": "月",
+  "radicalMeaning": "moon",
+  "components": [
+   "月"
+  ],
+  "words": [
+   "tocfl-n1-peng-you"
+  ],
+  "zhuyin": "ㄆㄥˊ",
+  "mnemonic": "朋 = 月; the moon radical (月) anchors the meaning \"friend\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-peng",
+  "language": "zh",
+  "romanization": "péng"
+ },
+ {
+  "id": "c-tocfl-n1-qian",
+  "char": "前",
+  "text": "前",
+  "pinyin": "qián",
+  "tone": 2,
+  "meaning": "front",
+  "strokes": 9,
+  "radical": "刀",
+  "radicalMeaning": "knife",
+  "components": [
+   "䒑",
+   "刖"
+  ],
+  "words": [
+   "tocfl-n1-yiqian"
+  ],
+  "zhuyin": "ㄑㄧㄢˊ",
+  "mnemonic": "前 = 䒑、刖; the knife radical (刀) anchors the meaning \"front\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-qian",
+  "language": "zh",
+  "romanization": "qián"
+ },
+ {
+  "id": "c-tocfl-n1-qian2",
+  "char": "錢",
+  "text": "錢",
+  "pinyin": "qián",
+  "tone": 2,
+  "meaning": "coin",
+  "strokes": 16,
+  "radical": "長",
+  "radicalMeaning": "long",
+  "components": [
+   "戔",
+   "金"
+  ],
+  "words": [
+   "tocfl-n1-qian2"
+  ],
+  "zhuyin": "ㄑㄧㄢˊ",
+  "mnemonic": "錢 = 戔、金; the long radical (長) anchors the meaning \"coin\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-qian2",
+  "language": "zh",
+  "romanization": "qián",
+  "textVariant": "钱"
+ },
+ {
+  "id": "c-tocfl-n1-qian1",
+  "char": "千",
+  "text": "千",
+  "pinyin": "qiān",
+  "tone": 1,
+  "meaning": "thousand",
+  "strokes": 3,
+  "radical": "十",
+  "radicalMeaning": "ten",
+  "components": [
+   "丿",
+   "十"
+  ],
+  "words": [
+   "tocfl-n1-qian"
+  ],
+  "zhuyin": "ㄑㄧㄢ",
+  "mnemonic": "千 = 丿、十; the ten radical (十) anchors the meaning \"thousand\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-qian1",
+  "language": "zh",
+  "romanization": "qiān"
+ },
+ {
+  "id": "c-tocfl-n1-qi4",
+  "char": "氣",
+  "text": "氣",
+  "pinyin": "qì",
+  "tone": 4,
+  "meaning": "gas",
+  "strokes": 10,
+  "radical": "气",
+  "radicalMeaning": "steam",
+  "components": [
+   "气",
+   "米"
+  ],
+  "words": [],
+  "zhuyin": "ㄑㄧˋ",
+  "mnemonic": "氣 = 气、米; the steam radical (气) anchors the meaning \"gas\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-qi4",
+  "language": "zh",
+  "romanization": "qì",
+  "textVariant": "气"
+ },
+ {
+  "id": "c-tocfl-n1-qu",
+  "char": "去",
+  "text": "去",
+  "pinyin": "qù",
+  "tone": 4,
+  "meaning": "to go",
+  "strokes": 5,
+  "radical": "厶",
+  "radicalMeaning": "private",
+  "components": [
+   "厶",
+   "土"
+  ],
+  "words": [
+   "tocfl-n1-qu"
+  ],
+  "zhuyin": "ㄑㄩˋ",
+  "mnemonic": "去 = 厶、土; the private radical (厶) anchors the meaning \"to go\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-qu",
+  "language": "zh",
+  "romanization": "qù"
+ },
+ {
+  "id": "c-tocfl-n1-qi1",
+  "char": "七",
+  "text": "七",
+  "pinyin": "qī",
+  "tone": 1,
+  "meaning": "seven",
+  "strokes": 2,
+  "radical": "一",
+  "radicalMeaning": "one",
+  "components": [
+   "㇀",
+   "乚"
+  ],
+  "words": [
+   "tocfl-n1-qi"
+  ],
+  "zhuyin": "ㄑㄧ",
+  "mnemonic": "七 = ㇀、乚; the one radical (一) anchors the meaning \"seven\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-qi1",
+  "language": "zh",
+  "romanization": "qī"
+ },
+ {
+  "id": "c-tocfl-n1-qi1x",
+  "char": "期",
+  "text": "期",
+  "pinyin": "qī",
+  "tone": 1,
+  "meaning": "period",
+  "strokes": 12,
+  "radical": "月",
+  "radicalMeaning": "moon",
+  "components": [
+   "其",
+   "月"
+  ],
+  "words": [],
+  "zhuyin": "ㄑㄧ",
+  "mnemonic": "期 = 其、月; the moon radical (月) anchors the meaning \"period\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-qi1x",
+  "language": "zh",
+  "romanization": "qī"
+ },
+ {
+  "id": "c-tocfl-n1-qi",
+  "char": "起",
+  "text": "起",
+  "pinyin": "qǐ",
+  "tone": 3,
+  "meaning": "to rise",
+  "strokes": 10,
+  "radical": "足",
+  "radicalMeaning": "foot",
+  "components": [
+   "巳",
+   "走"
+  ],
+  "words": [
+   "tocfl-n1-duibuqi"
+  ],
+  "zhuyin": "ㄑㄧˇ",
+  "mnemonic": "起 = 巳、走; the foot radical (足) anchors the meaning \"to rise\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-qi",
+  "language": "zh",
+  "romanization": "qǐ"
+ },
+ {
+  "id": "c-tocfl-n1-qing",
+  "char": "請",
+  "text": "請",
+  "pinyin": "qǐng",
+  "tone": 3,
+  "meaning": "to ask",
+  "strokes": 15,
+  "radical": "谷",
+  "radicalMeaning": "valley",
+  "components": [
+   "言",
+   "青"
+  ],
+  "words": [
+   "tocfl-n1-qing",
+   "tocfl-n1-qingwen"
+  ],
+  "zhuyin": "ㄑㄧㄥˇ",
+  "mnemonic": "請 = 言、青; the valley radical (谷) anchors the meaning \"to ask\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-qing",
+  "language": "zh",
+  "romanization": "qǐng",
+  "textVariant": "请"
+ },
+ {
+  "id": "c-tocfl-n1-ren",
+  "char": "人",
+  "text": "人",
+  "pinyin": "rén",
+  "tone": 2,
+  "meaning": "person",
+  "strokes": 2,
+  "radical": "人",
+  "radicalMeaning": "man",
+  "components": [
+   "人"
+  ],
+  "words": [
+   "tocfl-n1-ren"
+  ],
+  "zhuyin": "ㄖㄣˊ",
+  "mnemonic": "人 = 人; the man radical (人) anchors the meaning \"person\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-ren",
+  "language": "zh",
+  "romanization": "rén"
+ },
+ {
+  "id": "c-tocfl-n1-ri",
+  "char": "日",
+  "text": "日",
+  "pinyin": "rì",
+  "tone": 4,
+  "meaning": "sun",
+  "strokes": 4,
+  "radical": "日",
+  "radicalMeaning": "sun",
+  "components": [
+   "日"
+  ],
+  "words": [
+   "tocfl-n1-riben"
+  ],
+  "zhuyin": "ㄖˋ",
+  "mnemonic": "日 = 日; the sun radical (日) anchors the meaning \"sun\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-ri",
+  "language": "zh",
+  "romanization": "rì"
+ },
+ {
+  "id": "c-tocfl-n1-nv",
+  "char": "女",
+  "text": "女",
+  "pinyin": "rǔ",
+  "tone": 3,
+  "meaning": "female",
+  "strokes": 3,
+  "radical": "女",
+  "radicalMeaning": "woman",
+  "components": [
+   "女"
+  ],
+  "words": [],
+  "zhuyin": "ㄖㄨˇ",
+  "mnemonic": "女 = 女; the woman radical (女) anchors the meaning \"female\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-nv",
+  "language": "zh",
+  "romanization": "rǔ"
+ },
+ {
+  "id": "c-tocfl-n1-shuo",
+  "char": "說",
+  "text": "說",
+  "pinyin": "shuō",
+  "tone": 1,
+  "meaning": "to speak",
+  "strokes": 14,
+  "radical": "谷",
+  "radicalMeaning": "valley",
+  "components": [
+   "兌",
+   "言"
+  ],
+  "words": [
+   "tocfl-n1-shuo"
+  ],
+  "zhuyin": "ㄕㄨㄛ",
+  "mnemonic": "說 = 兌、言; the valley radical (谷) anchors the meaning \"to speak\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-shuo",
+  "language": "zh",
+  "romanization": "shuō",
+  "textVariant": "说"
+ },
+ {
+  "id": "c-tocfl-n1-shui",
+  "char": "水",
+  "text": "水",
+  "pinyin": "shuǐ",
+  "tone": 3,
+  "meaning": "water",
+  "strokes": 4,
+  "radical": "水",
+  "radicalMeaning": "water",
+  "components": [
+   "㇇",
+   "丿",
+   "乀",
+   "亅"
+  ],
+  "words": [
+   "tocfl-n1-shui"
+  ],
+  "zhuyin": "ㄕㄨㄟˇ",
+  "mnemonic": "水 = ㇇、丿、乀、亅; the water radical (水) anchors the meaning \"water\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-shui",
+  "language": "zh",
+  "romanization": "shuǐ"
+ },
+ {
+  "id": "c-tocfl-n1-shang",
+  "char": "上",
+  "text": "上",
+  "pinyin": "shàng",
+  "tone": 4,
+  "meaning": "(bound form) up",
+  "strokes": 3,
+  "radical": "一",
+  "radicalMeaning": "one",
+  "components": [
+   "⺊",
+   "一"
+  ],
+  "words": [
+   "tocfl-n1-zao-shang",
+   "tocfl-n1-shangke",
+   "tocfl-n1-shangwu",
+   "tocfl-n1-wanshang"
+  ],
+  "zhuyin": "ㄕㄤˋ",
+  "mnemonic": "上 = ⺊、一; the one radical (一) anchors the meaning \"(bound form) up\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-shang",
+  "language": "zh",
+  "romanization": "shàng"
+ },
+ {
+  "id": "c-tocfl-n1-shui2",
+  "char": "誰",
+  "text": "誰",
+  "pinyin": "shéi",
+  "tone": 2,
+  "meaning": "who",
+  "strokes": 15,
+  "radical": "谷",
+  "radicalMeaning": "valley",
+  "components": [
+   "言",
+   "隹"
+  ],
+  "words": [
+   "tocfl-n1-shei"
+  ],
+  "zhuyin": "ㄕㄟˊ",
+  "mnemonic": "誰 = 言、隹; the valley radical (谷) anchors the meaning \"who\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-shui2",
+  "language": "zh",
+  "romanization": "shéi",
+  "textVariant": "谁"
+ },
+ {
+  "id": "c-tocfl-n1-shi4",
+  "char": "事",
+  "text": "事",
+  "pinyin": "shì",
+  "tone": 4,
+  "meaning": "matter",
+  "strokes": 8,
+  "radical": "亅",
+  "radicalMeaning": "hook",
+  "components": [
+   "事"
+  ],
+  "words": [],
+  "zhuyin": "ㄕˋ",
+  "mnemonic": "事 = 事; the hook radical (亅) anchors the meaning \"matter\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-shi4",
+  "language": "zh",
+  "romanization": "shì"
+ },
+ {
+  "id": "c-tocfl-n1-shi4x",
+  "char": "室",
+  "text": "室",
+  "pinyin": "shì",
+  "tone": 4,
+  "meaning": "room",
+  "strokes": 9,
+  "radical": "宀",
+  "radicalMeaning": "roof",
+  "components": [
+   "宀",
+   "至"
+  ],
+  "words": [],
+  "zhuyin": "ㄕˋ",
+  "mnemonic": "室 = 宀、至; the roof radical (宀) anchors the meaning \"room\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-shi4x",
+  "language": "zh",
+  "romanization": "shì"
+ },
+ {
+  "id": "c-tocfl-n1-shi",
+  "char": "是",
+  "text": "是",
+  "pinyin": "shì",
+  "tone": 4,
+  "meaning": "to be (followed by substantives only)",
+  "strokes": 9,
+  "radical": "日",
+  "radicalMeaning": "sun",
+  "components": [
+   "日",
+   "𤴓"
+  ],
+  "words": [
+   "tocfl-n1-haishi",
+   "tocfl-n1-keshi",
+   "tocfl-n1-shi2"
+  ],
+  "zhuyin": "ㄕˋ",
+  "mnemonic": "是 = 日、𤴓; the sun radical (日) anchors the meaning \"to be (followed by subst\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-shi",
+  "language": "zh",
+  "romanization": "shì"
+ },
+ {
+  "id": "c-tocfl-n1-shen",
+  "char": "什",
+  "text": "什",
+  "pinyin": "shí",
+  "tone": 2,
+  "meaning": "ten (used in fractions, writing checks etc)",
+  "strokes": 4,
+  "radical": "人",
+  "radicalMeaning": "man",
+  "components": [
+   "亻",
+   "十"
+  ],
+  "words": [
+   "tocfl-n1-shenme"
+  ],
+  "zhuyin": "ㄕˊ",
+  "mnemonic": "什 = 亻、十; the man radical (人) anchors the meaning \"ten (used in fractions, \".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-shen",
+  "language": "zh",
+  "romanization": "shí"
+ },
+ {
+  "id": "c-tocfl-n1-shi2x",
+  "char": "十",
+  "text": "十",
+  "pinyin": "shí",
+  "tone": 2,
+  "meaning": "ten",
+  "strokes": 2,
+  "radical": "十",
+  "radicalMeaning": "ten",
+  "components": [
+   "十"
+  ],
+  "words": [
+   "tocfl-n1-shi"
+  ],
+  "zhuyin": "ㄕˊ",
+  "mnemonic": "十 = 十; the ten radical (十) anchors the meaning \"ten\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-shi2x",
+  "language": "zh",
+  "romanization": "shí"
+ },
+ {
+  "id": "c-tocfl-n1-shi2",
+  "char": "時",
+  "text": "時",
+  "pinyin": "shí",
+  "tone": 2,
+  "meaning": "o'clock",
+  "strokes": 10,
+  "radical": "日",
+  "radicalMeaning": "sun",
+  "components": [
+   "寺",
+   "日"
+  ],
+  "words": [
+   "tocfl-n1-shihou",
+   "tocfl-n1-shijian",
+   "tocfl-n1-xiaoshi"
+  ],
+  "zhuyin": "ㄕˊ",
+  "mnemonic": "時 = 寺、日; the sun radical (日) anchors the meaning \"o'clock\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-shi2",
+  "language": "zh",
+  "romanization": "shí",
+  "textVariant": "时"
+ },
+ {
+  "id": "c-tocfl-n1-shan",
+  "char": "山",
+  "text": "山",
+  "pinyin": "shān",
+  "tone": 1,
+  "meaning": "mountain",
+  "strokes": 3,
+  "radical": "山",
+  "radicalMeaning": "mountain",
+  "components": [
+   "山"
+  ],
+  "words": [],
+  "zhuyin": "ㄕㄢ",
+  "mnemonic": "山 = 山; the mountain radical (山) anchors the meaning \"mountain\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-shan",
+  "language": "zh",
+  "romanization": "shān"
+ },
+ {
+  "id": "c-tocfl-n1-sheng",
+  "char": "生",
+  "text": "生",
+  "pinyin": "shēng",
+  "tone": 1,
+  "meaning": "to be born",
+  "strokes": 5,
+  "radical": "生",
+  "radicalMeaning": "life",
+  "components": [
+   "生"
+  ],
+  "words": [
+   "tocfl-n1-xuesheng"
+  ],
+  "zhuyin": "ㄕㄥ",
+  "mnemonic": "生 = 生; the life radical (生) anchors the meaning \"to be born\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-sheng",
+  "language": "zh",
+  "romanization": "shēng"
+ },
+ {
+  "id": "c-tocfl-n1-shi1",
+  "char": "師",
+  "text": "師",
+  "pinyin": "shī",
+  "tone": 1,
+  "meaning": "teacher",
+  "strokes": 10,
+  "radical": "巾",
+  "radicalMeaning": "turban",
+  "components": [
+   "帀",
+   "𠂤"
+  ],
+  "words": [
+   "tocfl-n1-laoshi"
+  ],
+  "zhuyin": "ㄕ",
+  "mnemonic": "師 = 帀、𠂤; the turban radical (巾) anchors the meaning \"teacher\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-shi1",
+  "language": "zh",
+  "romanization": "shī",
+  "textVariant": "师"
+ },
+ {
+  "id": "c-tocfl-n1-shu",
+  "char": "書",
+  "text": "書",
+  "pinyin": "shū",
+  "tone": 1,
+  "meaning": "book",
+  "strokes": 10,
+  "radical": "曰",
+  "radicalMeaning": "say",
+  "components": [
+   "一",
+   "日",
+   "𦘒"
+  ],
+  "words": [
+   "tocfl-n1-shu"
+  ],
+  "zhuyin": "ㄕㄨ",
+  "mnemonic": "書 = 一、日、𦘒; the say radical (曰) anchors the meaning \"book\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-shu",
+  "language": "zh",
+  "romanization": "shū",
+  "textVariant": "书"
+ },
+ {
+  "id": "c-tocfl-n1-shao",
+  "char": "少",
+  "text": "少",
+  "pinyin": "shǎo",
+  "tone": 3,
+  "meaning": "few",
+  "strokes": 4,
+  "radical": "小",
+  "radicalMeaning": "small",
+  "components": [
+   "丿",
+   "小"
+  ],
+  "words": [
+   "tocfl-n1-duoshao"
+  ],
+  "zhuyin": "ㄕㄠˇ",
+  "mnemonic": "少 = 丿、小; the small radical (小) anchors the meaning \"few\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-shao",
+  "language": "zh",
+  "romanization": "shǎo"
+ },
+ {
+  "id": "c-tocfl-n1-shou",
+  "char": "手",
+  "text": "手",
+  "pinyin": "shǒu",
+  "tone": 3,
+  "meaning": "hand",
+  "strokes": 4,
+  "radical": "手",
+  "radicalMeaning": "hand",
+  "components": [
+   "手"
+  ],
+  "words": [],
+  "zhuyin": "ㄕㄡˇ",
+  "mnemonic": "手 = 手; the hand radical (手) anchors the meaning \"hand\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-shou",
+  "language": "zh",
+  "romanization": "shǒu"
+ },
+ {
+  "id": "c-tocfl-n1-sui",
+  "char": "歲",
+  "text": "歲",
+  "pinyin": "suì",
+  "tone": 4,
+  "meaning": "years old",
+  "strokes": 13,
+  "radical": "止",
+  "radicalMeaning": "stop",
+  "components": [
+   "戌",
+   "止",
+   "𣥂"
+  ],
+  "words": [
+   "tocfl-n1-sui"
+  ],
+  "zhuyin": "ㄙㄨㄟˋ",
+  "mnemonic": "歲 = 戌、止、𣥂; the stop radical (止) anchors the meaning \"years old\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-sui",
+  "language": "zh",
+  "romanization": "suì",
+  "textVariant": "岁"
+ },
+ {
+  "id": "c-tocfl-n1-suo",
+  "char": "所",
+  "text": "所",
+  "pinyin": "suǒ",
+  "tone": 3,
+  "meaning": "actually",
+  "strokes": 8,
+  "radical": "戶",
+  "radicalMeaning": "door",
+  "components": [
+   "戶",
+   "斤"
+  ],
+  "words": [],
+  "zhuyin": "ㄙㄨㄛˇ",
+  "mnemonic": "所 = 戶、斤; the door radical (戶) anchors the meaning \"actually\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-suo",
+  "language": "zh",
+  "romanization": "suǒ"
+ },
+ {
+  "id": "c-tocfl-n1-si",
+  "char": "四",
+  "text": "四",
+  "pinyin": "sì",
+  "tone": 4,
+  "meaning": "four",
+  "strokes": 5,
+  "radical": "囗",
+  "radicalMeaning": "enclosure",
+  "components": [
+   "儿",
+   "囗"
+  ],
+  "words": [
+   "tocfl-n1-si"
+  ],
+  "zhuyin": "ㄙˋ",
+  "mnemonic": "四 = 儿、囗; the enclosure radical (囗) anchors the meaning \"four\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-si",
+  "language": "zh",
+  "romanization": "sì"
+ },
+ {
+  "id": "c-tocfl-n1-san",
+  "char": "三",
+  "text": "三",
+  "pinyin": "sān",
+  "tone": 1,
+  "meaning": "three",
+  "strokes": 3,
+  "radical": "一",
+  "radicalMeaning": "one",
+  "components": [
+   "一",
+   "二"
+  ],
+  "words": [
+   "tocfl-n1-san"
+  ],
+  "zhuyin": "ㄙㄢ",
+  "mnemonic": "三 = 一、二; the one radical (一) anchors the meaning \"three\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-san",
+  "language": "zh",
+  "romanization": "sān"
+ },
+ {
+  "id": "c-tocfl-n1-tian",
+  "char": "天",
+  "text": "天",
+  "pinyin": "tiān",
+  "tone": 1,
+  "meaning": "day",
+  "strokes": 4,
+  "radical": "大",
+  "radicalMeaning": "big",
+  "components": [
+   "一",
+   "大"
+  ],
+  "words": [
+   "tocfl-n1-jintian",
+   "tocfl-n1-mingtian",
+   "tocfl-n1-zuotian"
+  ],
+  "zhuyin": "ㄊㄧㄢ",
+  "mnemonic": "天 = 一、大; the big radical (大) anchors the meaning \"day\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-tian",
+  "language": "zh",
+  "romanization": "tiān"
+ },
+ {
+  "id": "c-tocfl-n1-tou",
+  "char": "頭",
+  "text": "頭",
+  "pinyin": "tou",
+  "tone": 5,
+  "meaning": "suffix for nouns",
+  "strokes": 16,
+  "radical": "風",
+  "radicalMeaning": "wind",
+  "components": [
+   "豆",
+   "頁"
+  ],
+  "words": [],
+  "zhuyin": "ㄊㄡ˙",
+  "mnemonic": "頭 = 豆、頁; the wind radical (風) anchors the meaning \"suffix for nouns\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-tou",
+  "language": "zh",
+  "romanization": "tou",
+  "textVariant": "头"
+ },
+ {
+  "id": "c-tocfl-n1-tai4",
+  "char": "太",
+  "text": "太",
+  "pinyin": "tài",
+  "tone": 4,
+  "meaning": "highest",
+  "strokes": 4,
+  "radical": "大",
+  "radicalMeaning": "big",
+  "components": [
+   "丶",
+   "大"
+  ],
+  "words": [],
+  "zhuyin": "ㄊㄞˋ",
+  "mnemonic": "太 = 丶、大; the big radical (大) anchors the meaning \"highest\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-tai4",
+  "language": "zh",
+  "romanization": "tài"
+ },
+ {
+  "id": "c-tocfl-n1-tai",
+  "char": "台/臺",
+  "text": "台/臺",
+  "pinyin": "tái",
+  "tone": 2,
+  "meaning": "",
+  "strokes": [
+   5,
+   0,
+   14
+  ],
+  "radical": "",
+  "radicalMeaning": "",
+  "components": [],
+  "words": [],
+  "zhuyin": "ㄊㄞˊ",
+  "mnemonic": "台/臺: .",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-tai",
+  "language": "zh",
+  "romanization": "tái"
+ },
+ {
+  "id": "c-tocfl-n1-tong",
+  "char": "同",
+  "text": "同",
+  "pinyin": "tóng",
+  "tone": 2,
+  "meaning": "like",
+  "strokes": 6,
+  "radical": "口",
+  "radicalMeaning": "mouth",
+  "components": [
+   "口",
+   "𠔼"
+  ],
+  "words": [
+   "tocfl-n1-tongxue"
+  ],
+  "zhuyin": "ㄊㄨㄥˊ",
+  "mnemonic": "同 = 口、𠔼; the mouth radical (口) anchors the meaning \"like\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-tong",
+  "language": "zh",
+  "romanization": "tóng"
+ },
+ {
+  "id": "c-tocfl-n1-ta1",
+  "char": "他",
+  "text": "他",
+  "pinyin": "tā",
+  "tone": 1,
+  "meaning": "(third-person singular) (since the early 20th century, usu. male) he",
+  "strokes": 5,
+  "radical": "人",
+  "radicalMeaning": "man",
+  "components": [
+   "也",
+   "亻"
+  ],
+  "words": [
+   "tocfl-n1-ta",
+   "tocfl-n1-tamen"
+  ],
+  "zhuyin": "ㄊㄚ",
+  "mnemonic": "他 = 也、亻; the man radical (人) anchors the meaning \"(third-person singular) \".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-ta1",
+  "language": "zh",
+  "romanization": "tā"
+ },
+ {
+  "id": "c-tocfl-n1-ta",
+  "char": "她",
+  "text": "她",
+  "pinyin": "tā",
+  "tone": 1,
+  "meaning": "she",
+  "strokes": 6,
+  "radical": "女",
+  "radicalMeaning": "woman",
+  "components": [
+   "也",
+   "女"
+  ],
+  "words": [
+   "tocfl-n1-ta2",
+   "tocfl-n1-tamen2"
+  ],
+  "zhuyin": "ㄊㄚ",
+  "mnemonic": "她 = 也、女; the woman radical (女) anchors the meaning \"she\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-ta",
+  "language": "zh",
+  "romanization": "tā"
+ },
+ {
+  "id": "c-tocfl-n1-ta1x",
+  "char": "它",
+  "text": "它",
+  "pinyin": "tā",
+  "tone": 1,
+  "meaning": "it",
+  "strokes": 5,
+  "radical": "宀",
+  "radicalMeaning": "roof",
+  "components": [
+   "匕",
+   "宀"
+  ],
+  "words": [],
+  "zhuyin": "ㄊㄚ",
+  "mnemonic": "它 = 匕、宀; the roof radical (宀) anchors the meaning \"it\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-ta1x",
+  "language": "zh",
+  "romanization": "tā"
+ },
+ {
+  "id": "c-tocfl-n1-wai",
+  "char": "外",
+  "text": "外",
+  "pinyin": "wài",
+  "tone": 4,
+  "meaning": "outside",
+  "strokes": 5,
+  "radical": "夕",
+  "radicalMeaning": "evening",
+  "components": [
+   "卜",
+   "夕"
+  ],
+  "words": [],
+  "zhuyin": "ㄨㄞˋ",
+  "mnemonic": "外 = 卜、夕; the evening radical (夕) anchors the meaning \"outside\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-wai",
+  "language": "zh",
+  "romanization": "wài"
+ },
+ {
+  "id": "c-tocfl-n1-wan2",
+  "char": "玩",
+  "text": "玩",
+  "pinyin": "wán",
+  "tone": 2,
+  "meaning": "to play",
+  "strokes": 8,
+  "radical": "玉",
+  "radicalMeaning": "jade",
+  "components": [
+   "元",
+   "王"
+  ],
+  "words": [],
+  "zhuyin": "ㄨㄢˊ",
+  "mnemonic": "玩 = 元、王; the jade radical (玉) anchors the meaning \"to play\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-wan2",
+  "language": "zh",
+  "romanization": "wán"
+ },
+ {
+  "id": "c-tocfl-n1-wang",
+  "char": "王",
+  "text": "王",
+  "pinyin": "wáng",
+  "tone": 2,
+  "meaning": "king or monarch",
+  "strokes": 4,
+  "radical": "玉",
+  "radicalMeaning": "jade",
+  "components": [
+   "一",
+   "土"
+  ],
+  "words": [],
+  "zhuyin": "ㄨㄤˊ",
+  "mnemonic": "王 = 一、土; the jade radical (玉) anchors the meaning \"king or monarch\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-wang",
+  "language": "zh",
+  "romanization": "wáng"
+ },
+ {
+  "id": "c-tocfl-n1-wei",
+  "char": "位",
+  "text": "位",
+  "pinyin": "wèi",
+  "tone": 4,
+  "meaning": "position",
+  "strokes": 7,
+  "radical": "人",
+  "radicalMeaning": "man",
+  "components": [
+   "亻",
+   "立"
+  ],
+  "words": [
+   "tocfl-n1-wei"
+  ],
+  "zhuyin": "ㄨㄟˋ",
+  "mnemonic": "位 = 亻、立; the man radical (人) anchors the meaning \"position\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-wei",
+  "language": "zh",
+  "romanization": "wèi"
+ },
+ {
+  "id": "c-tocfl-n1-wei4",
+  "char": "為",
+  "text": "為",
+  "pinyin": "wèi",
+  "tone": 4,
+  "meaning": "because of",
+  "strokes": 9,
+  "radical": "火",
+  "radicalMeaning": "fire",
+  "components": [
+   "為"
+  ],
+  "words": [],
+  "zhuyin": "ㄨㄟˋ",
+  "mnemonic": "為 = 為; the fire radical (火) anchors the meaning \"because of\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-wei4",
+  "language": "zh",
+  "romanization": "wèi",
+  "textVariant": "为"
+ },
+ {
+  "id": "c-tocfl-n1-wen",
+  "char": "問",
+  "text": "問",
+  "pinyin": "wèn",
+  "tone": 4,
+  "meaning": "to ask",
+  "strokes": 11,
+  "radical": "口",
+  "radicalMeaning": "mouth",
+  "components": [
+   "口",
+   "門"
+  ],
+  "words": [
+   "tocfl-n1-qingwen",
+   "tocfl-n1-wen"
+  ],
+  "zhuyin": "ㄨㄣˋ",
+  "mnemonic": "問 = 口、門; the mouth radical (口) anchors the meaning \"to ask\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-wen",
+  "language": "zh",
+  "romanization": "wèn",
+  "textVariant": "问"
+ },
+ {
+  "id": "c-tocfl-n1-wen2",
+  "char": "文",
+  "text": "文",
+  "pinyin": "wén",
+  "tone": 2,
+  "meaning": "language",
+  "strokes": 4,
+  "radical": "文",
+  "radicalMeaning": "script",
+  "components": [
+   "乂",
+   "亠"
+  ],
+  "words": [
+   "tocfl-n1-zhongwen"
+  ],
+  "zhuyin": "ㄨㄣˊ",
+  "mnemonic": "文 = 乂、亠; the script radical (文) anchors the meaning \"language\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-wen2",
+  "language": "zh",
+  "romanization": "wén"
+ },
+ {
+  "id": "c-tocfl-n1-wan",
+  "char": "灣",
+  "text": "灣",
+  "pinyin": "wān",
+  "tone": 1,
+  "meaning": "bay",
+  "strokes": 25,
+  "radical": "水",
+  "radicalMeaning": "water",
+  "components": [
+   "彎",
+   "氵"
+  ],
+  "words": [
+   "tocfl-n1-tai-wan"
+  ],
+  "zhuyin": "ㄨㄢ",
+  "mnemonic": "灣 = 彎、氵; the water radical (水) anchors the meaning \"bay\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-wan",
+  "language": "zh",
+  "romanization": "wān",
+  "textVariant": "湾"
+ },
+ {
+  "id": "c-tocfl-n1-wan3",
+  "char": "晚",
+  "text": "晚",
+  "pinyin": "wǎn",
+  "tone": 3,
+  "meaning": "evening",
+  "strokes": 11,
+  "radical": "日",
+  "radicalMeaning": "sun",
+  "components": [
+   "免",
+   "日"
+  ],
+  "words": [
+   "tocfl-n1-wanshang"
+  ],
+  "zhuyin": "ㄨㄢˇ",
+  "mnemonic": "晚 = 免、日; the sun radical (日) anchors the meaning \"evening\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-wan3",
+  "language": "zh",
+  "romanization": "wǎn"
+ },
+ {
+  "id": "c-tocfl-n1-wo",
+  "char": "我",
+  "text": "我",
+  "pinyin": "wǒ",
+  "tone": 3,
+  "meaning": "I",
+  "strokes": 7,
+  "radical": "戈",
+  "radicalMeaning": "halberd",
+  "components": [
+   "我"
+  ],
+  "words": [
+   "tocfl-n1-wo",
+   "tocfl-n1-women"
+  ],
+  "zhuyin": "ㄨㄛˇ",
+  "mnemonic": "我 = 我; the halberd radical (戈) anchors the meaning \"I\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-wo",
+  "language": "zh",
+  "romanization": "wǒ"
+ },
+ {
+  "id": "c-tocfl-n1-wu",
+  "char": "五",
+  "text": "五",
+  "pinyin": "wǔ",
+  "tone": 3,
+  "meaning": "five",
+  "strokes": 4,
+  "radical": "二",
+  "radicalMeaning": "two",
+  "components": [
+   "一",
+   "𫝀"
+  ],
+  "words": [
+   "tocfl-n1-wu"
+  ],
+  "zhuyin": "ㄨˇ",
+  "mnemonic": "五 = 一、𫝀; the two radical (二) anchors the meaning \"five\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-wu",
+  "language": "zh",
+  "romanization": "wǔ"
+ },
+ {
+  "id": "c-tocfl-n1-wu3",
+  "char": "午",
+  "text": "午",
+  "pinyin": "wǔ",
+  "tone": 3,
+  "meaning": "7th earthly branch: 11 a.m.-1 p.m., noon, 5th solar month (6th June-6t",
+  "strokes": 4,
+  "radical": "十",
+  "radicalMeaning": "ten",
+  "components": [
+   "十",
+   "𠂉"
+  ],
+  "words": [
+   "tocfl-n1-shangwu",
+   "tocfl-n1-xiawu",
+   "tocfl-n1-zhongwu"
+  ],
+  "zhuyin": "ㄨˇ",
+  "mnemonic": "午 = 十、𠂉; the ten radical (十) anchors the meaning \"7th earthly branch: 11 a\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-wu3",
+  "language": "zh",
+  "romanization": "wǔ"
+ },
+ {
+  "id": "c-tocfl-n1-xia",
+  "char": "下",
+  "text": "下",
+  "pinyin": "xià",
+  "tone": 4,
+  "meaning": "down",
+  "strokes": 3,
+  "radical": "一",
+  "radicalMeaning": "one",
+  "components": [
+   "一",
+   "卜"
+  ],
+  "words": [
+   "tocfl-n1-xiawu"
+  ],
+  "zhuyin": "ㄒㄧㄚˋ",
+  "mnemonic": "下 = 一、卜; the one radical (一) anchors the meaning \"down\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-xia",
+  "language": "zh",
+  "romanization": "xià"
+ },
+ {
+  "id": "c-tocfl-n1-xian",
+  "char": "現",
+  "text": "現",
+  "pinyin": "xiàn",
+  "tone": 4,
+  "meaning": "to appear",
+  "strokes": 11,
+  "radical": "玉",
+  "radicalMeaning": "jade",
+  "components": [
+   "王",
+   "見"
+  ],
+  "words": [
+   "tocfl-n1-xianzai"
+  ],
+  "zhuyin": "ㄒㄧㄢˋ",
+  "mnemonic": "現 = 王、見; the jade radical (玉) anchors the meaning \"to appear\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-xian",
+  "language": "zh",
+  "romanization": "xiàn",
+  "textVariant": "现"
+ },
+ {
+  "id": "c-tocfl-n1-jian",
+  "char": "見",
+  "text": "見",
+  "pinyin": "xiàn",
+  "tone": 4,
+  "meaning": "to appear",
+  "strokes": 7,
+  "radical": "見",
+  "radicalMeaning": "see",
+  "components": [
+   "儿",
+   "目"
+  ],
+  "words": [
+   "tocfl-n1-zai-jian"
+  ],
+  "zhuyin": "ㄒㄧㄢˋ",
+  "mnemonic": "見 = 儿、目; the see radical (見) anchors the meaning \"to appear\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-jian",
+  "language": "zh",
+  "romanization": "xiàn",
+  "textVariant": "见"
+ },
+ {
+  "id": "c-tocfl-n1-xie4",
+  "char": "謝",
+  "text": "謝",
+  "pinyin": "xiè",
+  "tone": 4,
+  "meaning": "to thank",
+  "strokes": 17,
+  "radical": "谷",
+  "radicalMeaning": "valley",
+  "components": [
+   "射",
+   "言"
+  ],
+  "words": [
+   "tocfl-n1-xiexie"
+  ],
+  "zhuyin": "ㄒㄧㄝˋ",
+  "mnemonic": "謝 = 射、言; the valley radical (谷) anchors the meaning \"to thank\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-xie4",
+  "language": "zh",
+  "romanization": "xiè",
+  "textVariant": "谢"
+ },
+ {
+  "id": "c-tocfl-n1-xian1",
+  "char": "先",
+  "text": "先",
+  "pinyin": "xiān",
+  "tone": 1,
+  "meaning": "beforehand",
+  "strokes": 6,
+  "radical": "儿",
+  "radicalMeaning": "legs",
+  "components": [
+   "儿",
+   "𠂒"
+  ],
+  "words": [],
+  "zhuyin": "ㄒㄧㄢ",
+  "mnemonic": "先 = 儿、𠂒; the legs radical (儿) anchors the meaning \"beforehand\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-xian1",
+  "language": "zh",
+  "romanization": "xiān"
+ },
+ {
+  "id": "c-tocfl-n1-xie1",
+  "char": "些",
+  "text": "些",
+  "pinyin": "xiē",
+  "tone": 1,
+  "meaning": "classifier indicating a small amount or small number greater than 1: s",
+  "strokes": 8,
+  "radical": "二",
+  "radicalMeaning": "two",
+  "components": [
+   "二",
+   "此"
+  ],
+  "words": [],
+  "zhuyin": "ㄒㄧㄝ",
+  "mnemonic": "些 = 二、此; the two radical (二) anchors the meaning \"classifier indicating a \".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-xie1",
+  "language": "zh",
+  "romanization": "xiē"
+ },
+ {
+  "id": "c-tocfl-n1-xie",
+  "char": "寫",
+  "text": "寫",
+  "pinyin": "xiě",
+  "tone": 3,
+  "meaning": "to write",
+  "strokes": 15,
+  "radical": "宀",
+  "radicalMeaning": "roof",
+  "components": [
+   "宀",
+   "舄"
+  ],
+  "words": [
+   "tocfl-n1-xie"
+  ],
+  "zhuyin": "ㄒㄧㄝˇ",
+  "mnemonic": "寫 = 宀、舄; the roof radical (宀) anchors the meaning \"to write\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-xie",
+  "language": "zh",
+  "romanization": "xiě",
+  "textVariant": "写"
+ },
+ {
+  "id": "c-tocfl-n1-xiu",
+  "char": "休",
+  "text": "休",
+  "pinyin": "xiū",
+  "tone": 1,
+  "meaning": "to rest",
+  "strokes": 6,
+  "radical": "人",
+  "radicalMeaning": "man",
+  "components": [
+   "亻",
+   "木"
+  ],
+  "words": [],
+  "zhuyin": "ㄒㄧㄡ",
+  "mnemonic": "休 = 亻、木; the man radical (人) anchors the meaning \"to rest\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-xiu",
+  "language": "zh",
+  "romanization": "xiū"
+ },
+ {
+  "id": "c-tocfl-n1-xiang",
+  "char": "想",
+  "text": "想",
+  "pinyin": "xiǎng",
+  "tone": 3,
+  "meaning": "to think (about)",
+  "strokes": 13,
+  "radical": "心",
+  "radicalMeaning": "heart",
+  "components": [
+   "心",
+   "相"
+  ],
+  "words": [
+   "tocfl-n1-xiang"
+  ],
+  "zhuyin": "ㄒㄧㄤˇ",
+  "mnemonic": "想 = 心、相; the heart radical (心) anchors the meaning \"to think (about)\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-xiang",
+  "language": "zh",
+  "romanization": "xiǎng"
+ },
+ {
+  "id": "c-tocfl-n1-xiao",
+  "char": "小",
+  "text": "小",
+  "pinyin": "xiǎo",
+  "tone": 3,
+  "meaning": "small",
+  "strokes": 3,
+  "radical": "小",
+  "radicalMeaning": "small",
+  "components": [
+   "小"
+  ],
+  "words": [
+   "tocfl-n1-xiao",
+   "tocfl-n1-xiaohai",
+   "tocfl-n1-xiaohaizi",
+   "tocfl-n1-xiaoshi"
+  ],
+  "zhuyin": "ㄒㄧㄠˇ",
+  "mnemonic": "小 = 小; the small radical (小) anchors the meaning \"small\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-xiao",
+  "language": "zh",
+  "romanization": "xiǎo"
+ },
+ {
+  "id": "c-tocfl-n1-xue",
+  "char": "學",
+  "text": "學",
+  "pinyin": "xué",
+  "tone": 2,
+  "meaning": "to learn",
+  "strokes": 16,
+  "radical": "子",
+  "radicalMeaning": "child",
+  "components": [
+   "子",
+   "𦥯"
+  ],
+  "words": [
+   "tocfl-n1-xue-xiao",
+   "tocfl-n1-daxue",
+   "tocfl-n1-tongxue",
+   "tocfl-n1-xue",
+   "tocfl-n1-xuesheng"
+  ],
+  "zhuyin": "ㄒㄩㄝˊ",
+  "mnemonic": "學 = 子、𦥯; the child radical (子) anchors the meaning \"to learn\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-xue",
+  "language": "zh",
+  "romanization": "xué",
+  "textVariant": "学"
+ },
+ {
+  "id": "c-tocfl-n1-xing",
+  "char": "姓",
+  "text": "姓",
+  "pinyin": "xìng",
+  "tone": 4,
+  "meaning": "family name",
+  "strokes": 8,
+  "radical": "女",
+  "radicalMeaning": "woman",
+  "components": [
+   "女",
+   "生"
+  ],
+  "words": [
+   "tocfl-n1-xing",
+   "tocfl-n1-xingming"
+  ],
+  "zhuyin": "ㄒㄧㄥˋ",
+  "mnemonic": "姓 = 女、生; the woman radical (女) anchors the meaning \"family name\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-xing",
+  "language": "zh",
+  "romanization": "xìng"
+ },
+ {
+  "id": "c-tocfl-n1-xi1",
+  "char": "息",
+  "text": "息",
+  "pinyin": "xī",
+  "tone": 1,
+  "meaning": "breath",
+  "strokes": 10,
+  "radical": "心",
+  "radicalMeaning": "heart",
+  "components": [
+   "心",
+   "自"
+  ],
+  "words": [],
+  "zhuyin": "ㄒㄧ",
+  "mnemonic": "息 = 心、自; the heart radical (心) anchors the meaning \"breath\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-xi1",
+  "language": "zh",
+  "romanization": "xī"
+ },
+ {
+  "id": "c-tocfl-n1-xi",
+  "char": "西",
+  "text": "西",
+  "pinyin": "xī",
+  "tone": 1,
+  "meaning": "the West",
+  "strokes": 6,
+  "radical": "襾",
+  "radicalMeaning": "cover",
+  "components": [
+   "一",
+   "𠁤"
+  ],
+  "words": [
+   "tocfl-n1-dongxi"
+  ],
+  "zhuyin": "ㄒㄧ",
+  "mnemonic": "西 = 一、𠁤; the cover radical (襾) anchors the meaning \"the West\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-xi",
+  "language": "zh",
+  "romanization": "xī"
+ },
+ {
+  "id": "c-tocfl-n1-xin1",
+  "char": "心",
+  "text": "心",
+  "pinyin": "xīn",
+  "tone": 1,
+  "meaning": "heart",
+  "strokes": 4,
+  "radical": "心",
+  "radicalMeaning": "heart",
+  "components": [
+   "心"
+  ],
+  "words": [],
+  "zhuyin": "ㄒㄧㄣ",
+  "mnemonic": "心 = 心; the heart radical (心) anchors the meaning \"heart\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-xin1",
+  "language": "zh",
+  "romanization": "xīn"
+ },
+ {
+  "id": "c-tocfl-n1-xin",
+  "char": "新",
+  "text": "新",
+  "pinyin": "xīn",
+  "tone": 1,
+  "meaning": "new",
+  "strokes": 13,
+  "radical": "斤",
+  "radicalMeaning": "axe",
+  "components": [
+   "亲",
+   "斤"
+  ],
+  "words": [],
+  "zhuyin": "ㄒㄧㄣ",
+  "mnemonic": "新 = 亲、斤; the axe radical (斤) anchors the meaning \"new\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-xin",
+  "language": "zh",
+  "romanization": "xīn"
+ },
+ {
+  "id": "c-tocfl-n1-xing1",
+  "char": "星",
+  "text": "星",
+  "pinyin": "xīng",
+  "tone": 1,
+  "meaning": "star",
+  "strokes": 9,
+  "radical": "日",
+  "radicalMeaning": "sun",
+  "components": [
+   "日",
+   "生"
+  ],
+  "words": [],
+  "zhuyin": "ㄒㄧㄥ",
+  "mnemonic": "星 = 日、生; the sun radical (日) anchors the meaning \"star\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-xing1",
+  "language": "zh",
+  "romanization": "xīng"
+ },
+ {
+  "id": "c-tocfl-n1-xi3",
+  "char": "喜",
+  "text": "喜",
+  "pinyin": "xǐ",
+  "tone": 3,
+  "meaning": "to be fond of",
+  "strokes": 12,
+  "radical": "口",
+  "radicalMeaning": "mouth",
+  "components": [
+   "口",
+   "壴"
+  ],
+  "words": [
+   "tocfl-n1-xihuan"
+  ],
+  "zhuyin": "ㄒㄧˇ",
+  "mnemonic": "喜 = 口、壴; the mouth radical (口) anchors the meaning \"to be fond of\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-xi3",
+  "language": "zh",
+  "romanization": "xǐ"
+ },
+ {
+  "id": "c-tocfl-n1-yuan",
+  "char": "元",
+  "text": "元",
+  "pinyin": "yuán",
+  "tone": 2,
+  "meaning": "Yuan dynasty (1279–1368)",
+  "strokes": 4,
+  "radical": "儿",
+  "radicalMeaning": "legs",
+  "components": [
+   "一",
+   "兀"
+  ],
+  "words": [],
+  "zhuyin": "ㄩㄢˊ",
+  "mnemonic": "元 = 一、兀; the legs radical (儿) anchors the meaning \"Yuan dynasty (1279–1368)\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-yuan",
+  "language": "zh",
+  "romanization": "yuán"
+ },
+ {
+  "id": "c-tocfl-n1-yue",
+  "char": "月",
+  "text": "月",
+  "pinyin": "yuè",
+  "tone": 4,
+  "meaning": "moon",
+  "strokes": 4,
+  "radical": "月",
+  "radicalMeaning": "moon",
+  "components": [
+   "月"
+  ],
+  "words": [],
+  "zhuyin": "ㄩㄝˋ",
+  "mnemonic": "月 = 月; the moon radical (月) anchors the meaning \"moon\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-yue",
+  "language": "zh",
+  "romanization": "yuè"
+ },
+ {
+  "id": "c-tocfl-n1-yang",
+  "char": "樣",
+  "text": "樣",
+  "pinyin": "yàng",
+  "tone": 4,
+  "meaning": "manner",
+  "strokes": 15,
+  "radical": "木",
+  "radicalMeaning": "tree",
+  "components": [
+   "木",
+   "羕"
+  ],
+  "words": [
+   "tocfl-n1-zenmeyang"
+  ],
+  "zhuyin": "ㄧㄤˋ",
+  "mnemonic": "樣 = 木、羕; the tree radical (木) anchors the meaning \"manner\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-yang",
+  "language": "zh",
+  "romanization": "yàng",
+  "textVariant": "样"
+ },
+ {
+  "id": "c-tocfl-n1-yi4",
+  "char": "衣",
+  "text": "衣",
+  "pinyin": "yì",
+  "tone": 4,
+  "meaning": "to dress",
+  "strokes": 6,
+  "radical": "衣",
+  "radicalMeaning": "clothes",
+  "components": [
+   "亠",
+   "𧘇"
+  ],
+  "words": [],
+  "zhuyin": "ㄧˋ",
+  "mnemonic": "衣 = 亠、𧘇; the clothes radical (衣) anchors the meaning \"to dress\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-yi4",
+  "language": "zh",
+  "romanization": "yì"
+ },
+ {
+  "id": "c-tocfl-n1-yong",
+  "char": "用",
+  "text": "用",
+  "pinyin": "yòng",
+  "tone": 4,
+  "meaning": "to use",
+  "strokes": 5,
+  "radical": "用",
+  "radicalMeaning": "use",
+  "components": [
+   "丨",
+   "二",
+   "冂"
+  ],
+  "words": [],
+  "zhuyin": "ㄩㄥˋ",
+  "mnemonic": "用 = 丨、二、冂; the use radical (用) anchors the meaning \"to use\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-yong",
+  "language": "zh",
+  "romanization": "yòng"
+ },
+ {
+  "id": "c-tocfl-n1-you4",
+  "char": "又",
+  "text": "又",
+  "pinyin": "yòu",
+  "tone": 4,
+  "meaning": "(once) again",
+  "strokes": 2,
+  "radical": "又",
+  "radicalMeaning": "again",
+  "components": [
+   "又"
+  ],
+  "words": [],
+  "zhuyin": "ㄧㄡˋ",
+  "mnemonic": "又 = 又; the again radical (又) anchors the meaning \"(once) again\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-you4",
+  "language": "zh",
+  "romanization": "yòu"
+ },
+ {
+  "id": "c-tocfl-n1-you4x",
+  "char": "右",
+  "text": "右",
+  "pinyin": "yòu",
+  "tone": 4,
+  "meaning": "(bound form) right",
+  "strokes": 5,
+  "radical": "口",
+  "radicalMeaning": "mouth",
+  "components": [
+   "口",
+   "𠂇"
+  ],
+  "words": [],
+  "zhuyin": "ㄧㄡˋ",
+  "mnemonic": "右 = 口、𠂇; the mouth radical (口) anchors the meaning \"(bound form) right\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-you4x",
+  "language": "zh",
+  "romanization": "yòu"
+ },
+ {
+  "id": "c-tocfl-n1-yao",
+  "char": "要",
+  "text": "要",
+  "pinyin": "yāo",
+  "tone": 1,
+  "meaning": "(bound form) to demand",
+  "strokes": 9,
+  "radical": "襾",
+  "radicalMeaning": "cover",
+  "components": [
+   "女",
+   "覀"
+  ],
+  "words": [],
+  "zhuyin": "ㄧㄠ",
+  "mnemonic": "要 = 女、覀; the cover radical (襾) anchors the meaning \"(bound form) to demand\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-yao",
+  "language": "zh",
+  "romanization": "yāo"
+ },
+ {
+  "id": "c-tocfl-n1-ye",
+  "char": "也",
+  "text": "也",
+  "pinyin": "yě",
+  "tone": 3,
+  "meaning": "also",
+  "strokes": 3,
+  "radical": "乙",
+  "radicalMeaning": "second",
+  "components": [
+   "也"
+  ],
+  "words": [
+   "tocfl-n1-ye"
+  ],
+  "zhuyin": "ㄧㄝˇ",
+  "mnemonic": "也 = 也; the second radical (乙) anchors the meaning \"also\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-ye",
+  "language": "zh",
+  "romanization": "yě"
+ },
+ {
+  "id": "c-tocfl-n1-yi",
+  "char": "一",
+  "text": "一",
+  "pinyin": "yī",
+  "tone": 1,
+  "meaning": "one",
+  "strokes": 1,
+  "radical": "一",
+  "radicalMeaning": "one",
+  "components": [
+   "一"
+  ],
+  "words": [
+   "tocfl-n1-yi"
+  ],
+  "zhuyin": "ㄧ",
+  "mnemonic": "一 = 一; the one radical (一) anchors the meaning \"one\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-yi",
+  "language": "zh",
+  "romanization": "yī"
+ },
+ {
+  "id": "c-tocfl-n1-yin",
+  "char": "因",
+  "text": "因",
+  "pinyin": "yīn",
+  "tone": 1,
+  "meaning": "cause",
+  "strokes": 6,
+  "radical": "囗",
+  "radicalMeaning": "enclosure",
+  "components": [
+   "囗",
+   "大"
+  ],
+  "words": [],
+  "zhuyin": "ㄧㄣ",
+  "mnemonic": "因 = 囗、大; the enclosure radical (囗) anchors the meaning \"cause\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-yin",
+  "language": "zh",
+  "romanization": "yīn"
+ },
+ {
+  "id": "c-tocfl-n1-ying",
+  "char": "英",
+  "text": "英",
+  "pinyin": "yīng",
+  "tone": 1,
+  "meaning": "hero",
+  "strokes": 8,
+  "radical": "艸",
+  "radicalMeaning": "grass",
+  "components": [
+   "央",
+   "艹"
+  ],
+  "words": [],
+  "zhuyin": "ㄧㄥ",
+  "mnemonic": "英 = 央、艹; the grass radical (艸) anchors the meaning \"hero\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-ying",
+  "language": "zh",
+  "romanization": "yīng"
+ },
+ {
+  "id": "c-tocfl-n1-yi3",
+  "char": "以",
+  "text": "以",
+  "pinyin": "yǐ",
+  "tone": 3,
+  "meaning": "to use",
+  "strokes": 4,
+  "radical": "人",
+  "radicalMeaning": "man",
+  "components": [
+   "以"
+  ],
+  "words": [
+   "tocfl-n1-keyi",
+   "tocfl-n1-yihou",
+   "tocfl-n1-yiqian"
+  ],
+  "zhuyin": "ㄧˇ",
+  "mnemonic": "以 = 以; the man radical (人) anchors the meaning \"to use\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-yi3",
+  "language": "zh",
+  "romanization": "yǐ"
+ },
+ {
+  "id": "c-tocfl-n1-ting",
+  "char": "聽",
+  "text": "聽",
+  "pinyin": "yǐn",
+  "tone": 3,
+  "meaning": "smile (archaic)",
+  "strokes": 22,
+  "radical": "耳",
+  "radicalMeaning": "ear",
+  "components": [
+   "壬",
+   "耳",
+   "𢛳"
+  ],
+  "words": [
+   "tocfl-n1-ting"
+  ],
+  "zhuyin": "ㄧㄣˇ",
+  "mnemonic": "聽 = 壬、耳、𢛳; the ear radical (耳) anchors the meaning \"smile (archaic)\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-ting",
+  "language": "zh",
+  "romanization": "yǐn",
+  "textVariant": "听"
+ },
+ {
+  "id": "c-tocfl-n1-you3",
+  "char": "友",
+  "text": "友",
+  "pinyin": "yǒu",
+  "tone": 3,
+  "meaning": "friend",
+  "strokes": 4,
+  "radical": "又",
+  "radicalMeaning": "again",
+  "components": [
+   "又",
+   "𠂇"
+  ],
+  "words": [
+   "tocfl-n1-peng-you"
+  ],
+  "zhuyin": "ㄧㄡˇ",
+  "mnemonic": "友 = 又、𠂇; the again radical (又) anchors the meaning \"friend\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-you3",
+  "language": "zh",
+  "romanization": "yǒu"
+ },
+ {
+  "id": "c-tocfl-n1-you",
+  "char": "有",
+  "text": "有",
+  "pinyin": "yǒu",
+  "tone": 3,
+  "meaning": "to have",
+  "strokes": 6,
+  "radical": "月",
+  "radicalMeaning": "moon",
+  "components": [
+   "月",
+   "𠂇"
+  ],
+  "words": [
+   "tocfl-n1-meiyou",
+   "tocfl-n1-you"
+  ],
+  "zhuyin": "ㄧㄡˇ",
+  "mnemonic": "有 = 月、𠂇; the moon radical (月) anchors the meaning \"to have\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-you",
+  "language": "zh",
+  "romanization": "yǒu"
+ },
+ {
+  "id": "c-tocfl-n1-yu",
+  "char": "雨",
+  "text": "雨",
+  "pinyin": "yǔ",
+  "tone": 3,
+  "meaning": "rain",
+  "strokes": 8,
+  "radical": "靑",
+  "radicalMeaning": "blue",
+  "components": [
+   "一",
+   "𠕒"
+  ],
+  "words": [],
+  "zhuyin": "ㄩˇ",
+  "mnemonic": "雨 = 一、𠕒; the blue radical (靑) anchors the meaning \"rain\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-yu",
+  "language": "zh",
+  "romanization": "yǔ"
+ },
+ {
+  "id": "c-tocfl-n1-zhe",
+  "char": "這",
+  "text": "這",
+  "pinyin": "zhèi",
+  "tone": 4,
+  "meaning": "(coll.) this",
+  "strokes": 10,
+  "radical": "邑",
+  "radicalMeaning": "town",
+  "components": [
+   "言",
+   "辶"
+  ],
+  "words": [
+   "tocfl-n1-zhe",
+   "tocfl-n1-zheli",
+   "tocfl-n1-zher"
+  ],
+  "zhuyin": "ㄓㄟˋ",
+  "mnemonic": "這 = 言、辶; the town radical (邑) anchors the meaning \"(coll.) this\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-zhe",
+  "language": "zh",
+  "romanization": "zhèi",
+  "textVariant": "这"
+ },
+ {
+  "id": "c-tocfl-n1-zhu",
+  "char": "住",
+  "text": "住",
+  "pinyin": "zhù",
+  "tone": 4,
+  "meaning": "to live",
+  "strokes": 7,
+  "radical": "人",
+  "radicalMeaning": "man",
+  "components": [
+   "主",
+   "亻"
+  ],
+  "words": [
+   "tocfl-n1-zhu"
+  ],
+  "zhuyin": "ㄓㄨˋ",
+  "mnemonic": "住 = 主、亻; the man radical (人) anchors the meaning \"to live\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-zhu",
+  "language": "zh",
+  "romanization": "zhù"
+ },
+ {
+  "id": "c-tocfl-n1-zhang1",
+  "char": "張",
+  "text": "張",
+  "pinyin": "zhāng",
+  "tone": 1,
+  "meaning": "to open up",
+  "strokes": 11,
+  "radical": "弓",
+  "radicalMeaning": "bow",
+  "components": [
+   "弓",
+   "長"
+  ],
+  "words": [],
+  "zhuyin": "ㄓㄤ",
+  "mnemonic": "張 = 弓、長; the bow radical (弓) anchors the meaning \"to open up\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-zhang1",
+  "language": "zh",
+  "romanization": "zhāng",
+  "textVariant": "张"
+ },
+ {
+  "id": "c-tocfl-n1-zhen",
+  "char": "真/眞",
+  "text": "真/眞",
+  "pinyin": "zhēn",
+  "tone": 1,
+  "meaning": "",
+  "strokes": [
+   10,
+   0,
+   10
+  ],
+  "radical": "",
+  "radicalMeaning": "",
+  "components": [],
+  "words": [],
+  "zhuyin": "ㄓㄣ",
+  "mnemonic": "真/眞: .",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-zhen",
+  "language": "zh",
+  "romanization": "zhēn"
+ },
+ {
+  "id": "c-tocfl-n1-zhi1",
+  "char": "枝",
+  "text": "枝",
+  "pinyin": "zhī",
+  "tone": 1,
+  "meaning": "branch",
+  "strokes": 8,
+  "radical": "木",
+  "radicalMeaning": "tree",
+  "components": [
+   "支",
+   "木"
+  ],
+  "words": [],
+  "zhuyin": "ㄓ",
+  "mnemonic": "枝 = 支、木; the tree radical (木) anchors the meaning \"branch\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-zhi1",
+  "language": "zh",
+  "romanization": "zhī"
+ },
+ {
+  "id": "c-tocfl-n1-zhi",
+  "char": "知",
+  "text": "知",
+  "pinyin": "zhī",
+  "tone": 1,
+  "meaning": "to know",
+  "strokes": 8,
+  "radical": "矢",
+  "radicalMeaning": "arrow",
+  "components": [
+   "口",
+   "矢"
+  ],
+  "words": [
+   "tocfl-n1-zhidao"
+  ],
+  "zhuyin": "ㄓ",
+  "mnemonic": "知 = 口、矢; the arrow radical (矢) anchors the meaning \"to know\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-zhi",
+  "language": "zh",
+  "romanization": "zhī"
+ },
+ {
+  "id": "c-tocfl-n1-zhong",
+  "char": "中",
+  "text": "中",
+  "pinyin": "zhōng",
+  "tone": 1,
+  "meaning": "within",
+  "strokes": 4,
+  "radical": "丨",
+  "radicalMeaning": "line",
+  "components": [
+   "丨",
+   "口"
+  ],
+  "words": [
+   "tocfl-n1-zhongguo",
+   "tocfl-n1-zhongwen",
+   "tocfl-n1-zhongwu"
+  ],
+  "zhuyin": "ㄓㄨㄥ",
+  "mnemonic": "中 = 丨、口; the line radical (丨) anchors the meaning \"within\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-zhong",
+  "language": "zh",
+  "romanization": "zhōng"
+ },
+ {
+  "id": "c-tocfl-n1-zhong1",
+  "char": "鐘",
+  "text": "鐘",
+  "pinyin": "zhōng",
+  "tone": 1,
+  "meaning": "handleless cup",
+  "strokes": 20,
+  "radical": "長",
+  "radicalMeaning": "long",
+  "components": [
+   "童",
+   "金"
+  ],
+  "words": [],
+  "zhuyin": "ㄓㄨㄥ",
+  "mnemonic": "鐘 = 童、金; the long radical (長) anchors the meaning \"handleless cup\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-zhong1",
+  "language": "zh",
+  "romanization": "zhōng",
+  "textVariant": "钟"
+ },
+ {
+  "id": "c-tocfl-n1-zhao",
+  "char": "找",
+  "text": "找",
+  "pinyin": "zhǎo",
+  "tone": 3,
+  "meaning": "to try to find",
+  "strokes": 7,
+  "radical": "手",
+  "radicalMeaning": "hand",
+  "components": [
+   "戈",
+   "扌"
+  ],
+  "words": [
+   "tocfl-n1-zhao"
+  ],
+  "zhuyin": "ㄓㄠˇ",
+  "mnemonic": "找 = 戈、扌; the hand radical (手) anchors the meaning \"to try to find\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-zhao",
+  "language": "zh",
+  "romanization": "zhǎo"
+ },
+ {
+  "id": "c-tocfl-n1-zhi3",
+  "char": "只",
+  "text": "只",
+  "pinyin": "zhǐ",
+  "tone": 3,
+  "meaning": "grain that has begun to ripen",
+  "strokes": 5,
+  "radical": "口",
+  "radicalMeaning": "mouth",
+  "components": [
+   "八",
+   "口"
+  ],
+  "words": [
+   "tocfl-n1-zhi"
+  ],
+  "zhuyin": "ㄓˇ",
+  "mnemonic": "只 = 八、口; the mouth radical (口) anchors the meaning \"grain that has begun to \".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-zhi3",
+  "language": "zh",
+  "romanization": "zhǐ"
+ },
+ {
+  "id": "c-tocfl-n1-zui",
+  "char": "最",
+  "text": "最",
+  "pinyin": "zuì",
+  "tone": 4,
+  "meaning": "(before an adjective or verb) to the highest degree",
+  "strokes": 12,
+  "radical": "冂",
+  "radicalMeaning": "enclosure",
+  "components": [
+   "取",
+   "日"
+  ],
+  "words": [],
+  "zhuyin": "ㄗㄨㄟˋ",
+  "mnemonic": "最 = 取、日; the enclosure radical (冂) anchors the meaning \"(before an adjective or \".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-zui",
+  "language": "zh",
+  "romanization": "zuì"
+ },
+ {
+  "id": "c-tocfl-n1-zuo",
+  "char": "做",
+  "text": "做",
+  "pinyin": "zuò",
+  "tone": 4,
+  "meaning": "to make",
+  "strokes": 11,
+  "radical": "人",
+  "radicalMeaning": "man",
+  "components": [
+   "亻",
+   "故"
+  ],
+  "words": [
+   "tocfl-n1-zuo"
+  ],
+  "zhuyin": "ㄗㄨㄛˋ",
+  "mnemonic": "做 = 亻、故; the man radical (人) anchors the meaning \"to make\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-zuo",
+  "language": "zh",
+  "romanization": "zuò"
+ },
+ {
+  "id": "c-tocfl-n1-zuo4",
+  "char": "坐",
+  "text": "坐",
+  "pinyin": "zuò",
+  "tone": 4,
+  "meaning": "to sit",
+  "strokes": 7,
+  "radical": "土",
+  "radicalMeaning": "earth",
+  "components": [
+   "从",
+   "土"
+  ],
+  "words": [
+   "tocfl-n1-zuo2"
+  ],
+  "zhuyin": "ㄗㄨㄛˋ",
+  "mnemonic": "坐 = 从、土; the earth radical (土) anchors the meaning \"to sit\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-zuo4",
+  "language": "zh",
+  "romanization": "zuò"
+ },
+ {
+  "id": "c-tocfl-n1-zuo2",
+  "char": "昨",
+  "text": "昨",
+  "pinyin": "zuó",
+  "tone": 2,
+  "meaning": "yesterday",
+  "strokes": 9,
+  "radical": "日",
+  "radicalMeaning": "sun",
+  "components": [
+   "乍",
+   "日"
+  ],
+  "words": [
+   "tocfl-n1-zuotian"
+  ],
+  "zhuyin": "ㄗㄨㄛˊ",
+  "mnemonic": "昨 = 乍、日; the sun radical (日) anchors the meaning \"yesterday\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-zuo2",
+  "language": "zh",
+  "romanization": "zuó"
+ },
+ {
+  "id": "c-tocfl-n1-zuo3",
+  "char": "左",
+  "text": "左",
+  "pinyin": "zuǒ",
+  "tone": 3,
+  "meaning": "left",
+  "strokes": 5,
+  "radical": "工",
+  "radicalMeaning": "work",
+  "components": [
+   "工",
+   "𠂇"
+  ],
+  "words": [],
+  "zhuyin": "ㄗㄨㄛˇ",
+  "mnemonic": "左 = 工、𠂇; the work radical (工) anchors the meaning \"left\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-zuo3",
+  "language": "zh",
+  "romanization": "zuǒ"
+ },
+ {
+  "id": "c-tocfl-n1-zai",
+  "char": "再",
+  "text": "再",
+  "pinyin": "zài",
+  "tone": 4,
+  "meaning": "again",
+  "strokes": 6,
+  "radical": "冂",
+  "radicalMeaning": "enclosure",
+  "components": [
+   "一",
+   "冉"
+  ],
+  "words": [
+   "tocfl-n1-zai-jian",
+   "tocfl-n1-zai"
+  ],
+  "zhuyin": "ㄗㄞˋ",
+  "mnemonic": "再 = 一、冉; the enclosure radical (冂) anchors the meaning \"again\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-zai",
+  "language": "zh",
+  "romanization": "zài"
+ },
+ {
+  "id": "c-tocfl-n1-zai4",
+  "char": "在",
+  "text": "在",
+  "pinyin": "zài",
+  "tone": 4,
+  "meaning": "to exist",
+  "strokes": 6,
+  "radical": "土",
+  "radicalMeaning": "earth",
+  "components": [
+   "③",
+   "土"
+  ],
+  "words": [
+   "tocfl-n1-xianzai"
+  ],
+  "zhuyin": "ㄗㄞˋ",
+  "mnemonic": "在 = ③、土; the earth radical (土) anchors the meaning \"to exist\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-zai4",
+  "language": "zh",
+  "romanization": "zài"
+ },
+ {
+  "id": "c-tocfl-n1-zi4",
+  "char": "字",
+  "text": "字",
+  "pinyin": "zì",
+  "tone": 4,
+  "meaning": "letter",
+  "strokes": 6,
+  "radical": "子",
+  "radicalMeaning": "child",
+  "components": [
+   "子",
+   "宀"
+  ],
+  "words": [
+   "tocfl-n1-mingzi",
+   "tocfl-n1-zi"
+  ],
+  "zhuyin": "ㄗˋ",
+  "mnemonic": "字 = 子、宀; the child radical (子) anchors the meaning \"letter\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-zi4",
+  "language": "zh",
+  "romanization": "zì"
+ },
+ {
+  "id": "c-tocfl-n1-zi4x",
+  "char": "自",
+  "text": "自",
+  "pinyin": "zì",
+  "tone": 4,
+  "meaning": "(bound form) self",
+  "strokes": 6,
+  "radical": "自",
+  "radicalMeaning": "self",
+  "components": [
+   "自"
+  ],
+  "words": [],
+  "zhuyin": "ㄗˋ",
+  "mnemonic": "自 = 自; the self radical (自) anchors the meaning \"(bound form) self\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-zi4x",
+  "language": "zh",
+  "romanization": "zì"
+ },
+ {
+  "id": "c-tocfl-n1-zen",
+  "char": "怎",
+  "text": "怎",
+  "pinyin": "zěn",
+  "tone": 3,
+  "meaning": "how",
+  "strokes": 9,
+  "radical": "心",
+  "radicalMeaning": "heart",
+  "components": [
+   "乍",
+   "心"
+  ],
+  "words": [
+   "tocfl-n1-zenmeyang"
+  ],
+  "zhuyin": "ㄗㄣˇ",
+  "mnemonic": "怎 = 乍、心; the heart radical (心) anchors the meaning \"how\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-zen",
+  "language": "zh",
+  "romanization": "zěn"
+ },
+ {
+  "id": "c-tocfl-n1-zao",
+  "char": "早",
+  "text": "早",
+  "pinyin": "zǎo",
+  "tone": 3,
+  "meaning": "early",
+  "strokes": 6,
+  "radical": "日",
+  "radicalMeaning": "sun",
+  "components": [
+   "十",
+   "日"
+  ],
+  "words": [
+   "tocfl-n1-zao-shang",
+   "tocfl-n1-zao"
+  ],
+  "zhuyin": "ㄗㄠˇ",
+  "mnemonic": "早 = 十、日; the sun radical (日) anchors the meaning \"early\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-zao",
+  "language": "zh",
+  "romanization": "zǎo"
+ },
+ {
+  "id": "c-tocfl-n1-zi",
+  "char": "子",
+  "text": "子",
+  "pinyin": "zǐ",
+  "tone": 3,
+  "meaning": "son",
+  "strokes": 3,
+  "radical": "子",
+  "radicalMeaning": "child",
+  "components": [
+   "子"
+  ],
+  "words": [
+   "tocfl-n1-chezi",
+   "tocfl-n1-xiaohaizi"
+  ],
+  "zhuyin": "ㄗˇ",
+  "mnemonic": "子 = 子; the child radical (子) anchors the meaning \"son\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-zi",
+  "language": "zh",
+  "romanization": "zǐ"
+ },
+ {
+  "id": "c-tocfl-n1-zou",
+  "char": "走",
+  "text": "走",
+  "pinyin": "zǒu",
+  "tone": 3,
+  "meaning": "to walk",
+  "strokes": 7,
+  "radical": "足",
+  "radicalMeaning": "foot",
+  "components": [
+   "土",
+   "龰"
+  ],
+  "words": [
+   "tocfl-n1-zou"
+  ],
+  "zhuyin": "ㄗㄡˇ",
+  "mnemonic": "走 = 土、龰; the foot radical (足) anchors the meaning \"to walk\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-zou",
+  "language": "zh",
+  "romanization": "zǒu"
+ },
+ {
+  "id": "c-tocfl-n1-ai",
+  "char": "愛",
+  "text": "愛",
+  "pinyin": "ài",
+  "tone": 4,
+  "meaning": "to love",
+  "strokes": 13,
+  "radical": "心",
+  "radicalMeaning": "heart",
+  "components": [
+   "冖",
+   "爫",
+   "𢖻"
+  ],
+  "words": [],
+  "zhuyin": "ㄞˋ",
+  "mnemonic": "愛 = 冖、爫、𢖻; the heart radical (心) anchors the meaning \"to love\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-ai",
+  "language": "zh",
+  "romanization": "ài",
+  "textVariant": "爱"
+ },
+ {
+  "id": "c-tocfl-n1-er",
+  "char": "二",
+  "text": "二",
+  "pinyin": "èr",
+  "tone": 4,
+  "meaning": "two",
+  "strokes": 2,
+  "radical": "二",
+  "radicalMeaning": "two",
+  "components": [
+   "一"
+  ],
+  "words": [
+   "tocfl-n1-er"
+  ],
+  "zhuyin": "ㄦˋ",
+  "mnemonic": "二 = 一; the two radical (二) anchors the meaning \"two\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-er",
+  "language": "zh",
+  "romanization": "èr"
+ },
+ {
+  "id": "c-tocfl-n1-er2",
+  "char": "兒",
+  "text": "兒",
+  "pinyin": "ér",
+  "tone": 2,
+  "meaning": "child",
+  "strokes": 8,
+  "radical": "儿",
+  "radicalMeaning": "legs",
+  "components": [
+   "儿",
+   "臼"
+  ],
+  "words": [
+   "tocfl-n1-nar",
+   "tocfl-n1-nar2",
+   "tocfl-n1-zher"
+  ],
+  "zhuyin": "ㄦˊ",
+  "mnemonic": "兒 = 儿、臼; the legs radical (儿) anchors the meaning \"child\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-er2",
+  "language": "zh",
+  "romanization": "ér",
+  "textVariant": "儿"
+ },
+ {
+  "id": "c-tocfl-n1-an",
+  "char": "安",
+  "text": "安",
+  "pinyin": "ān",
+  "tone": 1,
+  "meaning": "(bound form) calm",
+  "strokes": 6,
+  "radical": "宀",
+  "radicalMeaning": "roof",
+  "components": [
+   "女",
+   "宀"
+  ],
+  "words": [],
+  "zhuyin": "ㄢ",
+  "mnemonic": "安 = 女、宀; the roof radical (宀) anchors the meaning \"(bound form) calm\".",
+  "hsk": 1,
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "char:c-tocfl-n1-an",
+  "language": "zh",
+  "romanization": "ān"
+ }
+]
