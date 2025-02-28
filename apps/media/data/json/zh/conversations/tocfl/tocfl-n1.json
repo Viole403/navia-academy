@@ -1,0 +1,247 @@
+[
+ {
+  "id": "conv-tocfl-n1-zai-jie-shang",
+  "title": "在街上問路 — Asking for Directions",
+  "context": "You are visiting Taipei and need to find the nearest MRT station.",
+  "hsk": 1,
+  "formality": "neutral",
+  "examMappings": {
+   "tocfl": "Novice 1",
+   "hsk": 1
+  },
+  "turns": [
+   {
+    "speaker": "tutor",
+    "hanzi": "你好！請問你要去哪裡？",
+    "pinyin": "nǐ hǎo! qǐngwèn nǐ yào qù nǎlǐ?",
+    "translation": "Hello! May I ask where you are going?",
+    "zhuyin": "ㄋㄧˇ ㄏㄠˇ！ ㄑㄧㄥˇ ㄨㄣˋ ㄋㄧˇ ㄧㄠˋ ㄑㄩˋ ㄋㄚˇ ㄌㄧˇ？",
+    "text": "你好！請問你要去哪裡？",
+    "romanization": "nǐ hǎo! qǐngwèn nǐ yào qù nǎlǐ?",
+    "translation_en": "Hello! May I ask where you are going?",
+    "translation_id": "Halo! Boleh tanya mau ke mana?"
+   },
+   {
+    "speaker": "user",
+    "hanzi": "",
+    "pinyin": "",
+    "translation": "",
+    "choices": [
+     {
+      "hanzi": "你好！請問捷運站在哪裡？",
+      "pinyin": "nǐ hǎo! qǐngwèn jiéyùn zhàn zài nǎlǐ?",
+      "translation": "Hello! May I ask where the MRT station is?",
+      "natural": true,
+      "feedback": "Politely asking for directions to the MRT.",
+      "zhuyin": "ㄋㄧˇ ㄏㄠˇ！ ㄑㄧㄥˇ ㄨㄣˋ ㄐㄧㄝˊ ㄩㄣˋ ㄓㄢˋ ㄗㄞˋ ㄋㄚˇ ㄌㄧˇ？"
+     },
+     {
+      "hanzi": "我很好。",
+      "pinyin": "wǒ hěn hǎo.",
+      "translation": "I'm fine.",
+      "natural": false,
+      "feedback": "That answers a different question.",
+      "zhuyin": "ㄨㄛˇ ㄏㄣˇ ㄏㄠˇ。"
+     },
+     {
+      "hanzi": "謝謝再見。",
+      "pinyin": "xièxie zàijiàn.",
+      "translation": "Thank you, goodbye.",
+      "natural": false,
+      "feedback": "Too early to end the conversation.",
+      "zhuyin": "ㄒㄧㄝˋ ㄒㄧㄝˋ ㄗㄞˋ ㄐㄧㄢˋ。"
+     }
+    ],
+    "text": "",
+    "romanization": ""
+   },
+   {
+    "speaker": "tutor",
+    "hanzi": "往前走，在第二個路口左轉就到了。",
+    "pinyin": "wǎng qián zǒu, zài dì èr ge lùkǒu zuǒ zhuǎn jiù dào le.",
+    "translation": "Go straight, turn left at the second intersection and you'll arrive.",
+    "zhuyin": "ㄨㄤˇ ㄑㄧㄢˊ ㄗㄡˇ， ㄗㄞˋ ㄉㄧˋ ㄦˋ ㄍㄜˋ ㄌㄨˋ ㄎㄡˇ ㄗㄨㄛˇ ㄓㄨㄢˇ ㄐㄧㄡˋ ㄉㄠˋ ㄌㄜ˙。",
+    "text": "往前走，在第二個路口左轉就到了。",
+    "romanization": "wǎng qián zǒu, zài dì èr ge lùkǒu zuǒ zhuǎn jiù dào le.",
+    "translation_en": "Go straight, turn left at the second intersection and you'll arrive.",
+    "translation_id": "Lurus ke depan, belok kiri di persimpangan kedua, kamu sampai."
+   },
+   {
+    "speaker": "user",
+    "hanzi": "",
+    "pinyin": "",
+    "translation": "",
+    "choices": [
+     {
+      "hanzi": "非常感謝你！",
+      "pinyin": "fēicháng gǎnxiè nǐ!",
+      "translation": "Thank you very much!",
+      "natural": true,
+      "feedback": "Polite way to show gratitude.",
+      "zhuyin": "ㄈㄟ ㄔㄤˊ ㄍㄢˇ ㄒㄧㄝˋ ㄋㄧˇ！"
+     },
+     {
+      "hanzi": "我是學生。",
+      "pinyin": "wǒ shì xuésheng.",
+      "translation": "I am a student.",
+      "natural": false,
+      "feedback": "That doesn't fit the context.",
+      "zhuyin": "ㄨㄛˇ ㄕˋ ㄒㄩㄝˊ ㄕㄥ。"
+     },
+     {
+      "hanzi": "我不知道。",
+      "pinyin": "wǒ bù zhīdào.",
+      "translation": "I don't know.",
+      "natural": false,
+      "feedback": "You're the one asking for directions.",
+      "zhuyin": "ㄨㄛˇ ㄅㄨˋ ㄓ ㄉㄠˋ。"
+     }
+    ],
+    "text": "",
+    "romanization": ""
+   },
+   {
+    "speaker": "tutor",
+    "hanzi": "不客氣！祝你玩得開心！",
+    "pinyin": "bú kèqì! zhù nǐ wán dé kāixīn!",
+    "translation": "You're welcome! Have fun!",
+    "zhuyin": "ㄅㄨˋ ㄎㄜˋ ㄑㄧˋ！ ㄓㄨˋ ㄋㄧˇ ㄨㄢˊ ㄉㄜˊ ㄎㄞ ㄒㄧㄣ！",
+    "text": "不客氣！祝你玩得開心！",
+    "romanization": "bú kèqì! zhù nǐ wán dé kāixīn!",
+    "translation_en": "You're welcome! Have fun!",
+    "translation_id": "Sama-sama! Semoga bersenang-senang!"
+   }
+  ],
+  "audio": "conv:conv-tocfl-n1-zai-jie-shang",
+  "language": "zh",
+  "level": 1,
+  "context_en": "You are visiting Taipei and need to find the nearest MRT station.",
+  "context_id": "Kamu berwisata di Taipei dan perlu menemukan stasiun MRT terdekat.",
+  "title_en": "在街上問路 — Asking for Directions",
+  "title_id": "在街上問路 — Bertanya Arah di Jalan"
+ },
+ {
+  "id": "conv-tocfl-tocfl-n1-meiyou",
+  "title": "没有",
+  "title_en": "Talking about do not have / there is not, not exist",
+  "title_id": "Ngobrol tentang tidak punya",
+  "context": "You chat about do not have / there is not, not exist.",
+  "context_en": "You chat about do not have / there is not, not exist.",
+  "context_id": "Kamu mengobrol tentang tidak punya.",
+  "formality": "neutral",
+  "level": 1,
+  "turns": [
+   {
+    "speaker": "tutor",
+    "text": "我們走吧。",
+    "hanzi": "我們走吧。",
+    "pinyin": "wǒ men zǒu ba 。",
+    "zhuyin": "ㄨㄛˇ ㄇㄣ˙ ㄗㄡˇ ㄅㄚ˙ 。",
+    "romanization": "Wǒmen zǒu ba.",
+    "translation": "Let's go.",
+    "translation_en": "Let's go.",
+    "translation_id": "Ayo kita pergi."
+   },
+   {
+    "speaker": "user",
+    "text": "現在八點半。",
+    "hanzi": "現在八點半。",
+    "pinyin": "xiàn zài bā diǎn bàn 。",
+    "zhuyin": "ㄒㄧㄢˋ ㄗㄞˋ ㄅㄚ ㄉㄧㄢˇ ㄅㄢˋ 。",
+    "romanization": "Xiànzài bā diǎn bàn.",
+    "translation": "It is half past eight now.",
+    "translation_en": "It is half past eight now.",
+    "translation_id": "Sekarang jam delapan setengah."
+   },
+   {
+    "speaker": "tutor",
+    "text": "我不是老師。",
+    "hanzi": "我不是老師。",
+    "pinyin": "wǒ bú shì lǎo shī 。",
+    "zhuyin": "ㄨㄛˇ ㄅㄨˊ ㄕˋ ㄌㄠˇ ㄕ 。",
+    "romanization": "wǒ bú shì lǎoshī.",
+    "translation": "I am not a teacher.",
+    "translation_en": "I am not a teacher.",
+    "translation_id": "Saya bukan guru."
+   },
+   {
+    "speaker": "user",
+    "text": "我的書",
+    "hanzi": "我的書",
+    "pinyin": "wǒ de shū",
+    "zhuyin": "ㄨㄛˇ ㄉㄜ˙ ㄕㄨ",
+    "romanization": "wǒ de shū",
+    "translation": "my book",
+    "translation_en": "my book",
+    "translation_id": "buku saya"
+   }
+  ],
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "conv:conv-tocfl-tocfl-n1-meiyou",
+  "language": "zh"
+ },
+ {
+  "id": "conv-tocfl-tocfl-n1-xuesheng1",
+  "title": "学生",
+  "title_en": "Talking about student",
+  "title_id": "Ngobrol tentang murid",
+  "context": "You chat about student.",
+  "context_en": "You chat about student.",
+  "context_id": "Kamu mengobrol tentang murid.",
+  "formality": "neutral",
+  "level": 1,
+  "turns": [
+   {
+    "speaker": "tutor",
+    "text": "這所學校有一千個學生。",
+    "hanzi": "這所學校有一千個學生。",
+    "pinyin": "zhè suǒ xué xiào yǒu yī qiān gè xué shēng 。",
+    "zhuyin": "ㄓㄜˋ ㄙㄨㄛˇ ㄒㄩㄝˊ ㄒㄧㄠˋ ㄧㄡˇ ㄧ ㄑㄧㄢ ㄍㄜˋ ㄒㄩㄝˊ ㄕㄥ 。",
+    "romanization": "Zhè suǒ xuéxiào yǒu yì qiān ge xuésheng.",
+    "translation": "This school has one thousand students.",
+    "translation_en": "This school has one thousand students.",
+    "translation_id": "Sekolah ini punya seribu murid."
+   },
+   {
+    "speaker": "user",
+    "text": "每個學生都有書。",
+    "hanzi": "每個學生都有書。",
+    "pinyin": "měi gè xué shēng dōu yǒu shū 。",
+    "zhuyin": "ㄇㄟˇ ㄍㄜˋ ㄒㄩㄝˊ ㄕㄥ ㄉㄡ ㄧㄡˇ ㄕㄨ 。",
+    "romanization": "Měi ge xuésheng dōu yǒu shū.",
+    "translation": "Every student has a book.",
+    "translation_en": "Every student has a book.",
+    "translation_id": "Setiap murid punya buku."
+   },
+   {
+    "speaker": "tutor",
+    "text": "我弟弟五歲。",
+    "hanzi": "我弟弟五歲。",
+    "pinyin": "wǒ dì di wǔ suì 。",
+    "zhuyin": "ㄨㄛˇ ㄉㄧˋ ㄉㄧ˙ ㄨˇ ㄙㄨㄟˋ 。",
+    "romanization": "Wǒ dìdi wǔ suì.",
+    "translation": "My younger brother is five.",
+    "translation_en": "My younger brother is five.",
+    "translation_id": "Adik laki-laki saya lima tahun."
+   },
+   {
+    "speaker": "user",
+    "text": "這個多少錢？",
+    "hanzi": "這個多少錢？",
+    "pinyin": "zhè gè duō shǎo qián ？",
+    "zhuyin": "ㄓㄜˋ ㄍㄜˋ ㄉㄨㄛ ㄕㄠˇ ㄑㄧㄢˊ ？",
+    "romanization": "Zhè ge duōshao qián?",
+    "translation": "How much is this?",
+    "translation_en": "How much is this?",
+    "translation_id": "Ini berapa harganya?"
+   }
+  ],
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "conv:conv-tocfl-tocfl-n1-xuesheng1",
+  "language": "zh"
+ }
+]
