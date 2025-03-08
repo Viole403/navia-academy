@@ -1,0 +1,142 @@
+[
+  {
+    "id": "tocfl-n1-le-change",
+    "title": "Modal 了 (Change of State)",
+    "pattern": "Sentence + 了",
+    "hsk": 1,
+    "difficulty": 2,
+    "simpleExplanation": "Put 了 at the end of a sentence to show that the situation has changed or just started happening.",
+    "technicalExplanation": "Sentence-final 了 is a modal particle indicating a new situation or a currently relevant state. It does not simply mark past tense but signals that the speaker considers the event relevant to the present moment.",
+    "usage": "Announcing changes: 下雨了, 我懂了, 他来了.",
+    "avoidWhen": "Do not use it for habitual or generic statements: 我每天喝茶 (not 我每天喝了茶).",
+    "examples": [
+      {
+        "hanzi": "下雨了。",
+        "pinyin": "xià yǔ le",
+        "translation": "It's raining (now).",
+        "audio": "grammar:tocfl-n1-le-change:ex0",
+        "zhuyin": "ㄒㄧㄚˋ ㄩˇ ㄌㄜ˙。",
+        "text": "下雨了。",
+        "romanization": "xià yǔ le",
+        "translation_en": "It's raining (now).",
+        "translation_id": "Sedang hujan (sekarang)."
+      },
+      {
+        "hanzi": "我饿了。",
+        "pinyin": "wǒ è le",
+        "translation": "I am hungry (now).",
+        "audio": "grammar:tocfl-n1-le-change:ex1",
+        "zhuyin": "ㄨㄛˇ ㄜˋ ㄌㄜ˙。",
+        "text": "我饿了。",
+        "romanization": "wǒ è le",
+        "translation_en": "I am hungry (now).",
+        "translation_id": "Saya lapar (sekarang)."
+      }
+    ],
+    "negativeExamples": [
+      {
+        "hanzi": "我每天早上喝茶了。",
+        "note": "Habitual actions should not take 了.",
+        "note_en": "Habitual actions should not take 了.",
+        "note_id": "Aksi kebiasaan tidak memakai 了."
+      }
+    ],
+    "commonMistakes": [
+      "Using 了 for all past actions; confusing modal 了 with perfective 了."
+    ],
+    "examMappings": {
+      "tocfl": "Novice 1",
+      "hsk": 1
+    },
+    "dependsOn": [],
+    "audio": "grammar:tocfl-n1-le-change",
+    "language": "zh",
+    "level": 1,
+    "title_en": "Modal 了 (Change of State)",
+    "title_id": "了 Modal (Perubahan Keadaan)",
+    "simpleExplanation_en": "Put 了 at the end of a sentence to show that the situation has changed or just started happening.",
+    "simpleExplanation_id": "Taruh 了 di akhir kalimat untuk menunjukkan keadaan berubah atau baru mulai terjadi.",
+    "technicalExplanation_en": "Sentence-final 了 is a modal particle indicating a new situation or a currently relevant state. It does not simply mark past tense but signals that the speaker considers the event relevant to the present moment.",
+    "technicalExplanation_id": "了 akhir kalimat adalah partikel modal yang menunjukkan keadaan baru atau relevansi saat ini. Ia bukan sekadar penanda lampau, melainkan menandakan pembicara menganggap peristiwa relevan dengan saat ini.",
+    "usage_en": "Announcing changes: 下雨了, 我懂了, 他来了.",
+    "usage_id": "Mengumumkan perubahan: 下雨了, 我懂了, 他来了.",
+    "avoidWhen_en": "Do not use it for habitual or generic statements: 我每天喝茶 (not 我每天喝了茶).",
+    "avoidWhen_id": "Jangan pakai untuk pernyataan kebiasaan/umum: 我每天喝茶 (bukan 我每天喝了茶).",
+    "commonMistakes_en": [
+      "Using 了 for all past actions; confusing modal 了 with perfective 了."
+    ],
+    "commonMistakes_id": [
+      "Memakai 了 untuk semua aksi lampau; mengacaukan 了 modal dengan 了 perfektif."
+    ]
+  },
+  {
+    "id": "tocfl-n2-hui-ability",
+    "title": "会 (Ability and Likelihood)",
+    "pattern": "Subject + 会 + Verb",
+    "hsk": 2,
+    "difficulty": 2,
+    "simpleExplanation": "会 expresses either a learned ability ('can/know how to') or a future likelihood ('will').",
+    "technicalExplanation": "会 has two distinct usages: (1) ability acquired through learning (我会游泳), and (2) a future possibility that the speaker feels is likely (明天会下雨). Unlike 能, which expresses physical ability or permission, 会 emphasizes knowledge or prediction.",
+    "usage": "Skills and future predictions: 我会说中文, 明天会更好.",
+    "avoidWhen": "Do not use 会 for present physical ability where 能 is more appropriate.",
+    "examples": [
+      {
+        "hanzi": "我會說一點中文。",
+        "pinyin": "wǒ huì shuō yī diǎn zhōng wén",
+        "translation": "I can speak a little Chinese.",
+        "audio": "grammar:tocfl-n2-hui-ability:ex0",
+        "zhuyin": "ㄨㄛˇ ㄏㄨㄟˋ ㄕㄨㄛ ㄧ ㄉㄧㄢˇ ㄓㄨㄥ ㄨㄣˊ。",
+        "text": "我會說一點中文。",
+        "romanization": "wǒ huì shuō yī diǎn zhōng wén",
+        "translation_en": "I can speak a little Chinese.",
+        "translation_id": "Saya bisa bicara sedikit bahasa Mandarin."
+      },
+      {
+        "hanzi": "明天會下雨。",
+        "pinyin": "míng tiān huì xià yǔ",
+        "translation": "It will rain tomorrow.",
+        "audio": "grammar:tocfl-n2-hui-ability:ex1",
+        "zhuyin": "ㄇㄧㄥˊ ㄊㄧㄢ ㄏㄨㄟˋ ㄒㄧㄚˋ ㄩˇ。",
+        "text": "明天會下雨。",
+        "romanization": "míng tiān huì xià yǔ",
+        "translation_en": "It will rain tomorrow.",
+        "translation_id": "Besok akan hujan."
+      }
+    ],
+    "negativeExamples": [
+      {
+        "hanzi": "我現在會去吃飯。",
+        "note": "Use 要 or 想 for immediate plans, not 会.",
+        "note_en": "Use 要 or 想 for immediate plans, not 会.",
+        "note_id": "Pakai 要 atau 想 untuk rencana segera, bukan 会."
+      }
+    ],
+    "commonMistakes": [
+      "Confusing 会 with 能; using 会 for present physical abilities where 能 is correct."
+    ],
+    "dependsOn": [],
+    "audio": "grammar:tocfl-n2-hui-ability",
+    "examMappings": {
+      "tocfl": "Novice 1",
+      "hsk": 2
+    },
+    "language": "zh",
+    "level": 2,
+    "title_en": "会 (Ability and Likelihood)",
+    "title_id": "会 (Kemampuan dan Kemungkinan)",
+    "simpleExplanation_en": "会 expresses either a learned ability ('can/know how to') or a future likelihood ('will').",
+    "simpleExplanation_id": "会 menyatakan kemampuan terpelajar ('bisa/tahu bagaimana') atau kemungkinan masa depan ('akan').",
+    "technicalExplanation_en": "会 has two distinct usages: (1) ability acquired through learning (我会游泳), and (2) a future possibility that the speaker feels is likely (明天会下雨). Unlike 能, which expresses physical ability or permission, 会 emphasizes knowledge or prediction.",
+    "technicalExplanation_id": "会 punya dua pemakaian berbeda: (1) kemampuan yang didapat lewat belajar (我会游泳), dan (2) kemungkinan masa depan yang dirasa mungkin (明天会下雨). Berbeda dari 能 yang menyatakan kemampuan fisik atau izin, 会 menekankan pengetahuan atau prediksi.",
+    "usage_en": "Skills and future predictions: 我会说中文, 明天会更好.",
+    "usage_id": "Keterampilan dan prediksi masa depan: 我会说中文, 明天会更好.",
+    "avoidWhen_en": "Do not use 会 for present physical ability where 能 is more appropriate.",
+    "avoidWhen_id": "Jangan pakai 会 untuk kemampuan fisik saat ini yang lebih tepat pakai 能.",
+    "commonMistakes_en": [
+      "Confusing 会 with 能; using 会 for present physical abilities where 能 is correct."
+    ],
+    "commonMistakes_id": [
+      "Mengacaukan 会 dengan 能; memakai 会 untuk kemampuan fisik saat ini yang benar pakai 能."
+    ]
+  }
+]
