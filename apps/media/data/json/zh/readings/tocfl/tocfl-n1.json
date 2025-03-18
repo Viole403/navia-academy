@@ -1,0 +1,417 @@
+[
+ {
+  "id": "r-tocfl-n1-wo-de-jia",
+  "title": "我的家 — My Family",
+  "type": "story",
+  "hsk": 1,
+  "wordCount": 62,
+  "summary": "A short introduction about a family living in Taipei.",
+  "paragraphs": [
+   {
+    "hanzi": "我家有三個人：爸爸、媽媽和我。",
+    "pinyin": "wǒ jiā yǒu sān ge rén: bàba, māma hé wǒ.",
+    "translation": "My family has three people: dad, mom, and me.",
+    "zhuyin": "ㄨㄛˇ ㄐㄧㄚ ㄧㄡˇ ㄙㄢ ㄍㄜˋ ㄖㄣˊ： ㄅㄚˋ ㄅㄚˋ、 ㄇㄚ ㄇㄚ ㄏㄜˊ ㄨㄛˇ。",
+    "text": "我家有三個人：爸爸、媽媽和我。",
+    "romanization": "wǒ jiā yǒu sān ge rén: bàba, māma hé wǒ.",
+    "translation_en": "My family has three people: dad, mom, and me.",
+    "translation_id": "Keluarga saya ada tiga orang: ayah, ibu, dan saya."
+   },
+   {
+    "hanzi": "爸爸是工程師，媽媽是老師。",
+    "pinyin": "bàba shì gōngchéngshī, māma shì lǎoshī.",
+    "translation": "Dad is an engineer, mom is a teacher.",
+    "zhuyin": "ㄅㄚˋ ㄅㄚˋ ㄕˋ ㄍㄨㄥ ㄔㄥˊ ㄕ， ㄇㄚ ㄇㄚ ㄕˋ ㄌㄠˇ ㄕ。",
+    "text": "爸爸是工程師，媽媽是老師。",
+    "romanization": "bàba shì gōngchéngshī, māma shì lǎoshī.",
+    "translation_en": "Dad is an engineer, mom is a teacher.",
+    "translation_id": "Ayah seorang insinyur, ibu seorang guru."
+   },
+   {
+    "hanzi": "我們住在台北，台北是一個很漂亮的城市。",
+    "pinyin": "wǒmen zhù zài táiběi, táiběi shì yí ge hěn piàoliang de chéngshì.",
+    "translation": "We live in Taipei; Taipei is a very beautiful city.",
+    "zhuyin": "ㄨㄛˇ ㄇㄣ˙ ㄓㄨˋ ㄗㄞˋ ㄊㄞˊ ㄅㄟˇ， ㄊㄞˊ ㄅㄟˇ ㄕˋ ㄧ ㄍㄜˋ ㄏㄣˇ ㄆㄧㄠˋ ㄌㄧㄤˋ ㄉㄜ˙ ㄔㄥˊ ㄕˋ。",
+    "text": "我們住在台北，台北是一個很漂亮的城市。",
+    "romanization": "wǒmen zhù zài táiběi, táiběi shì yí ge hěn piàoliang de chéngshì.",
+    "translation_en": "We live in Taipei; Taipei is a very beautiful city.",
+    "translation_id": "Kami tinggal di Taipei; Taipei adalah kota yang sangat indah."
+   },
+   {
+    "hanzi": "我愛我的家。",
+    "pinyin": "wǒ ài wǒ de jiā.",
+    "translation": "I love my family.",
+    "zhuyin": "ㄨㄛˇ ㄞˋ ㄨㄛˇ ㄉㄜ˙ ㄐㄧㄚ。",
+    "text": "我愛我的家。",
+    "romanization": "wǒ ài wǒ de jiā.",
+    "translation_en": "I love my family.",
+    "translation_id": "Saya sayang keluarga saya."
+   }
+  ],
+  "questions": [
+   {
+    "id": "rq-tocfl-n1-1",
+    "type": "multiple-choice",
+    "prompt": "How many people are in the family?",
+    "options": [
+     {
+      "id": "a",
+      "label": "Two"
+     },
+     {
+      "id": "b",
+      "label": "Three"
+     },
+     {
+      "id": "c",
+      "label": "Four"
+     },
+     {
+      "id": "d",
+      "label": "Five"
+     }
+    ],
+    "correct": "b",
+    "skill": "reading",
+    "hsk": 1,
+    "examMappings": {
+     "tocfl": "Novice 1"
+    }
+   }
+  ],
+  "examMappings": {
+   "tocfl": "Novice 1",
+   "hsk": 1
+  },
+  "audio": "reading:r-tocfl-n1-wo-de-jia",
+  "language": "zh",
+  "level": 1,
+  "summary_en": "A short introduction about a family living in Taipei.",
+  "summary_id": "Perkenalan singkat keluarga yang tinggal di Taipei.",
+  "title_en": "我的家 — My Family",
+  "title_id": "我的家 — Keluarga Saya"
+ },
+ {
+  "id": "r-tocfl-tocfl-n1-meiyou",
+  "title": "没有 — do not have / there is not, not exist",
+  "title_en": "没有 — do not have / there is not, not exist",
+  "title_id": "没有 — tidak punya",
+  "type": "story",
+  "level": 1,
+  "wordCount": 10,
+  "summary": "A short passage about do not have / there is not, not exist.",
+  "summary_en": "A short passage about do not have / there is not, not exist.",
+  "summary_id": "Bacaan singkat tentang tidak punya.",
+  "paragraphs": [
+   {
+    "text": "我沒有錢。",
+    "hanzi": "我沒有錢。",
+    "pinyin": "wǒ méi yǒu qián 。",
+    "zhuyin": "ㄨㄛˇ ㄇㄟˊ ㄧㄡˇ ㄑㄧㄢˊ 。",
+    "romanization": "Wǒ méiyǒu qián.",
+    "translation": "I don't have money.",
+    "translation_en": "I don't have money.",
+    "translation_id": "Saya tidak punya uang."
+   },
+   {
+    "text": "現在沒有時間。",
+    "hanzi": "現在沒有時間。",
+    "pinyin": "xiàn zài méi yǒu shí jiān 。",
+    "zhuyin": "ㄒㄧㄢˋ ㄗㄞˋ ㄇㄟˊ ㄧㄡˇ ㄕˊ ㄐㄧㄢ 。",
+    "romanization": "xiànzài méiyǒu shíjiān.",
+    "translation": "There's no time now.",
+    "translation_en": "There's no time now.",
+    "translation_id": "Sekarang tidak ada waktu."
+   }
+  ],
+  "questions": [
+   {
+    "id": "rq-1",
+    "type": "multiple-choice",
+    "prompt": "What is the passage mainly about?",
+    "options": [
+     {
+      "id": "a",
+      "label": "do not have / there is not, not exist"
+     },
+     {
+      "id": "b",
+      "label": "what?; something; anything"
+     },
+     {
+      "id": "c",
+      "label": "how many, how much"
+     },
+     {
+      "id": "d",
+      "label": "university"
+     }
+    ],
+    "correct": "a"
+   },
+   {
+    "id": "rq-2",
+    "type": "multiple-choice",
+    "prompt": "Which sentence appears in the passage?",
+    "options": [
+     {
+      "id": "a",
+      "label": "Chinese culture has a long history."
+     },
+     {
+      "id": "b",
+      "label": "There's no time now."
+     },
+     {
+      "id": "c",
+      "label": "I don't have money."
+     },
+     {
+      "id": "d",
+      "label": "Spring Festival is the most important traditional holiday in China."
+     }
+    ],
+    "correct": "c"
+   },
+   {
+    "id": "rq-3",
+    "type": "multiple-choice",
+    "prompt": "What does “没有” mean here?",
+    "options": [
+     {
+      "id": "a",
+      "label": "do not have / there is not, not exist"
+     },
+     {
+      "id": "b",
+      "label": "happy"
+     },
+     {
+      "id": "c",
+      "label": "friend"
+     },
+     {
+      "id": "d",
+      "label": "Taiwan"
+     }
+    ],
+    "correct": "a"
+   }
+  ],
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "reading:r-tocfl-tocfl-n1-meiyou",
+  "language": "zh",
+  "romanization": [
+   "wo",
+   "mei",
+   "you",
+   "qian",
+   "。",
+   "xian",
+   "zai",
+   "mei",
+   "you",
+   "shi",
+   "jian",
+   "。"
+  ]
+ },
+ {
+  "id": "r-tocfl-tocfl-n1-xuesheng1",
+  "title": "学生 — student",
+  "title_en": "学生 — student",
+  "title_id": "学生 — murid",
+  "type": "story",
+  "level": 1,
+  "wordCount": 35,
+  "summary": "A short passage about student.",
+  "summary_en": "A short passage about student.",
+  "summary_id": "Bacaan singkat tentang murid.",
+  "paragraphs": [
+   {
+    "text": "我們都是學生。",
+    "hanzi": "我們都是學生。",
+    "pinyin": "wǒ men dōu shì xué shēng 。",
+    "zhuyin": "ㄨㄛˇ ㄇㄣ˙ ㄉㄡ ㄕˋ ㄒㄩㄝˊ ㄕㄥ 。",
+    "romanization": "Wǒmen dōu shì xuésheng.",
+    "translation": "We are all students.",
+    "translation_en": "We are all students.",
+    "translation_id": "Kami semua pelajar."
+   },
+   {
+    "text": "你是學生嗎？",
+    "hanzi": "你是學生嗎？",
+    "pinyin": "nǐ shì xué shēng ma ？",
+    "zhuyin": "ㄋㄧˇ ㄕˋ ㄒㄩㄝˊ ㄕㄥ ㄇㄚ˙ ？",
+    "romanization": "nǐ shì xuésheng ma?",
+    "translation": "Are you a student?",
+    "translation_en": "Are you a student?",
+    "translation_id": "Apakah kamu seorang pelajar?"
+   },
+   {
+    "text": "你是哪個學校的學生？",
+    "hanzi": "你是哪個學校的學生？",
+    "pinyin": "nǐ shì nǎ gè xué xiào de xué shēng ？",
+    "zhuyin": "ㄋㄧˇ ㄕˋ ㄋㄚˇ ㄍㄜˋ ㄒㄩㄝˊ ㄒㄧㄠˋ ㄉㄜ˙ ㄒㄩㄝˊ ㄕㄥ ？",
+    "romanization": "Nǐ shì nǎ ge xuéxiào de xuésheng?",
+    "translation": "Which school's student are you?",
+    "translation_en": "Which school's student are you?",
+    "translation_id": "Kamu murid sekolah yang mana?"
+   },
+   {
+    "text": "我是學生。",
+    "hanzi": "我是學生。",
+    "pinyin": "wǒ shì xué shēng 。",
+    "zhuyin": "ㄨㄛˇ ㄕˋ ㄒㄩㄝˊ ㄕㄥ 。",
+    "romanization": "wǒ shì xuésheng.",
+    "translation": "I am a student.",
+    "translation_en": "I am a student.",
+    "translation_id": "Saya seorang pelajar."
+   },
+   {
+    "text": "我也是學生。",
+    "hanzi": "我也是學生。",
+    "pinyin": "wǒ yě shì xué shēng 。",
+    "zhuyin": "ㄨㄛˇ ㄧㄝˇ ㄕˋ ㄒㄩㄝˊ ㄕㄥ 。",
+    "romanization": "Wǒ yě shì xuésheng.",
+    "translation": "I am also a student.",
+    "translation_en": "I am also a student.",
+    "translation_id": "Saya juga pelajar."
+   },
+   {
+    "text": "我以前是學生。",
+    "hanzi": "我以前是學生。",
+    "pinyin": "wǒ yǐ qián shì xué shēng 。",
+    "zhuyin": "ㄨㄛˇ ㄧˇ ㄑㄧㄢˊ ㄕˋ ㄒㄩㄝˊ ㄕㄥ 。",
+    "romanization": "Wǒ yǐqián shì xuésheng.",
+    "translation": "I was a student before.",
+    "translation_en": "I was a student before.",
+    "translation_id": "Dulu saya adalah pelajar."
+   }
+  ],
+  "questions": [
+   {
+    "id": "rq-1",
+    "type": "multiple-choice",
+    "prompt": "What is the passage mainly about?",
+    "options": [
+     {
+      "id": "a",
+      "label": "student"
+     },
+     {
+      "id": "b",
+      "label": "to like, to love"
+     },
+     {
+      "id": "c",
+      "label": "father; dad; pa; papa"
+     },
+     {
+      "id": "d",
+      "label": "(pronoun) this; these; (bound form) this; the (followed by a noun); (bound form) this; these (followed by a classifier) (in this sense, commonly pr. [zhei4], esp. in Beijing)"
+     }
+    ],
+    "correct": "a"
+   },
+   {
+    "id": "rq-2",
+    "type": "multiple-choice",
+    "prompt": "Which sentence appears in the passage?",
+    "options": [
+     {
+      "id": "a",
+      "label": "Chinese culture has a long history."
+     },
+     {
+      "id": "b",
+      "label": "Spring Festival is the most important traditional holiday in China."
+     },
+     {
+      "id": "c",
+      "label": "We are all students."
+     },
+     {
+      "id": "d",
+      "label": "Are you a student?"
+     }
+    ],
+    "correct": "c"
+   },
+   {
+    "id": "rq-3",
+    "type": "multiple-choice",
+    "prompt": "What does “学生” mean here?",
+    "options": [
+     {
+      "id": "a",
+      "label": "student"
+     },
+     {
+      "id": "b",
+      "label": "happy"
+     },
+     {
+      "id": "c",
+      "label": "friend"
+     },
+     {
+      "id": "d",
+      "label": "Taiwan"
+     }
+    ],
+    "correct": "a"
+   }
+  ],
+  "examMappings": {
+   "tocfl": "Novice 1"
+  },
+  "audio": "reading:r-tocfl-tocfl-n1-xuesheng1",
+  "language": "zh",
+  "romanization": [
+   "wo",
+   "men",
+   "dou",
+   "shi",
+   "xue",
+   "sheng",
+   "。",
+   "ni",
+   "shi",
+   "xue",
+   "sheng",
+   "ma",
+   "？",
+   "ni",
+   "shi",
+   "na",
+   "ge",
+   "xue",
+   "xiao",
+   "de",
+   "xue",
+   "sheng",
+   "？",
+   "wo",
+   "shi",
+   "xue",
+   "sheng",
+   "。",
+   "wo",
+   "ye",
+   "shi",
+   "xue",
+   "sheng",
+   "。",
+   "wo",
+   "yi",
+   "qian",
+   "shi",
+   "xue",
+   "sheng",
+   "。"
+  ]
+ }
+]
