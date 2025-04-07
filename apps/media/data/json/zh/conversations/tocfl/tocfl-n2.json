@@ -1,0 +1,280 @@
+[
+ {
+  "id": "conv-tocfl-n2-dian-can",
+  "title": "在餐廳點餐 — Ordering at a Restaurant",
+  "context": "You are at a restaurant in Taipei and the waiter comes to take your order.",
+  "hsk": 2,
+  "formality": "neutral",
+  "examMappings": {
+   "tocfl": "Novice 2",
+   "hsk": 2
+  },
+  "turns": [
+   {
+    "speaker": "tutor",
+    "hanzi": "您好！這是菜單。請問您想吃什麼？",
+    "pinyin": "nín hǎo! zhè shì càidān. qǐngwèn nín xiǎng chī shénme?",
+    "translation": "Hello! Here is the menu. What would you like to eat?",
+    "zhuyin": "ㄋㄧㄣˊ ㄏㄠˇ！ ㄓㄜˋ ㄕˋ ㄘㄞˋ ㄉㄢ。 ㄑㄧㄥˇ ㄨㄣˋ ㄋㄧㄣˊ ㄒㄧㄤˇ ㄔ ㄕㄣˊ ㄇㄜ˙？",
+    "text": "您好！這是菜單。請問您想吃什麼？",
+    "romanization": "nín hǎo! zhè shì càidān. qǐngwèn nín xiǎng chī shénme?",
+    "translation_en": "Hello! Here is the menu. What would you like to eat?",
+    "translation_id": "Halo! Ini menu. Mau makan apa?"
+   },
+   {
+    "speaker": "user",
+    "hanzi": "",
+    "pinyin": "",
+    "translation": "",
+    "choices": [
+     {
+      "hanzi": "我想點一碗牛肉麵和一杯珍珠奶茶。",
+      "pinyin": "wǒ xiǎng diǎn yì wǎn niúròu miàn hé yì bēi zhēnzhū nǎichá.",
+      "translation": "I'd like to order a bowl of beef noodles and a bubble milk tea.",
+      "natural": true,
+      "feedback": "Natural order: specify what you want using 想點.",
+      "zhuyin": "ㄨㄛˇ ㄒㄧㄤˇ ㄉㄧㄢˇ ㄧ ㄨㄢˇ ㄋㄧㄡˊ ㄖㄡˋ ㄇㄧㄢˋ ㄏㄜˊ ㄧ ㄅㄟ ㄓㄣ ㄓㄨ ㄋㄞˇ ㄔㄚˊ。"
+     },
+     {
+      "hanzi": "多少錢？",
+      "pinyin": "duōshao qián?",
+      "translation": "How much?",
+      "natural": false,
+      "feedback": "You haven't ordered yet.",
+      "zhuyin": "ㄉㄨㄛ ㄕㄠˇ ㄑㄧㄢˊ？"
+     },
+     {
+      "hanzi": "我是美國人。",
+      "pinyin": "wǒ shì měiguórén.",
+      "translation": "I am American.",
+      "natural": false,
+      "feedback": "They didn't ask about your nationality.",
+      "zhuyin": "ㄨㄛˇ ㄕˋ ㄇㄟˇ ㄍㄨㄛˊ ㄖㄣˊ。"
+     }
+    ],
+    "text": "",
+    "romanization": ""
+   },
+   {
+    "speaker": "tutor",
+    "hanzi": "好的，牛肉麵和珍珠奶茶。還需要別的嗎？",
+    "pinyin": "hǎo de, niúròu miàn hé zhēnzhū nǎichá. hái xūyào bié de ma?",
+    "translation": "Okay, beef noodles and bubble milk tea. Anything else?",
+    "zhuyin": "ㄏㄠˇ ㄉㄜ˙， ㄋㄧㄡˊ ㄖㄡˋ ㄇㄧㄢˋ ㄏㄜˊ ㄓㄣ ㄓㄨ ㄋㄞˇ ㄔㄚˊ。 ㄏㄞˊ ㄒㄩ ㄧㄠˋ ㄅㄧㄝˊ ㄉㄜ˙ ㄇㄚ˙？",
+    "text": "好的，牛肉麵和珍珠奶茶。還需要別的嗎？",
+    "romanization": "hǎo de, niúròu miàn hé zhēnzhū nǎichá. hái xūyào bié de ma?",
+    "translation_en": "Okay, beef noodles and bubble milk tea. Anything else?",
+    "translation_id": "Baik, mi sapi dan teh susu mutiara. Ada lagi?"
+   },
+   {
+    "speaker": "user",
+    "hanzi": "",
+    "pinyin": "",
+    "translation": "",
+    "choices": [
+     {
+      "hanzi": "不用了，這樣就好。謝謝！",
+      "pinyin": "búyòng le, zhèyàng jiù hǎo. xièxie!",
+      "translation": "That's all, no need. Thank you!",
+      "natural": true,
+      "feedback": "Polite way to confirm the order.",
+      "zhuyin": "ㄅㄨˋ ㄩㄥˋ ㄌㄜ˙， ㄓㄜˋ ㄧㄤˋ ㄐㄧㄡˋ ㄏㄠˇ。 ㄒㄧㄝˋ ㄒㄧㄝˋ！"
+     },
+     {
+      "hanzi": "再來一個。",
+      "pinyin": "zài lái yí ge.",
+      "translation": "One more.",
+      "natural": false,
+      "feedback": "Too vague: specify what you want.",
+      "zhuyin": "ㄗㄞˋ ㄌㄞˊ ㄧ ㄍㄜˋ。"
+     },
+     {
+      "hanzi": "我要回家。",
+      "pinyin": "wǒ yào huí jiā.",
+      "translation": "I want to go home.",
+      "natural": false,
+      "feedback": "You just sat down to eat.",
+      "zhuyin": "ㄨㄛˇ ㄧㄠˋ ㄏㄨㄟˊ ㄐㄧㄚ。"
+     }
+    ],
+    "text": "",
+    "romanization": ""
+   },
+   {
+    "speaker": "tutor",
+    "hanzi": "請稍等，馬上就來。",
+    "pinyin": "qǐng shāo děng, mǎshàng jiù lái.",
+    "translation": "Please wait a moment, it will be right out.",
+    "zhuyin": "ㄑㄧㄥˇ ㄕㄠ ㄉㄥˇ， ㄇㄚˇ ㄕㄤˋ ㄐㄧㄡˋ ㄌㄞˊ。",
+    "text": "請稍等，馬上就來。",
+    "romanization": "qǐng shāo děng, mǎshàng jiù lái.",
+    "translation_en": "Please wait a moment, it will be right out.",
+    "translation_id": "Mohon tunggu sebentar, segera datang."
+   }
+  ],
+  "audio": "conv:conv-tocfl-n2-dian-can",
+  "language": "zh",
+  "level": 2,
+  "context_en": "You are at a restaurant in Taipei and the waiter comes to take your order.",
+  "context_id": "Kamu berada di restoran di Taipei dan pelayan datang mengambil pesananmu.",
+  "title_en": "在餐廳點餐 — Ordering at a Restaurant",
+  "title_id": "在餐廳點餐 — Memesan di Restoran"
+ },
+ {
+  "id": "conv-tocfl-tocfl-n2-keneng",
+  "title": "可能",
+  "title_en": "Talking about probably, maybe, perhaps",
+  "title_id": "Ngobrol tentang mungkin",
+  "context": "You chat about probably, maybe, perhaps.",
+  "context_en": "You chat about probably, maybe, perhaps.",
+  "context_id": "Kamu mengobrol tentang mungkin.",
+  "formality": "neutral",
+  "level": 2,
+  "turns": [
+   {
+    "speaker": "tutor",
+    "text": "文件太大，下載可能需要幾分鐘。",
+    "hanzi": "文件太大，下載可能需要幾分鐘。",
+    "pinyin": "wén jiàn tài dà ， xià zài kě néng xū yào jǐ fēn zhōng 。",
+    "zhuyin": "ㄨㄣˊ ㄐㄧㄢˋ ㄊㄞˋ ㄉㄚˋ ， ㄒㄧㄚˋ ㄗㄞˋ ㄎㄜˇ ㄋㄥˊ ㄒㄩ ㄧㄠˋ ㄐㄧˇ ㄈㄣ ㄓㄨㄥ 。",
+    "romanization": "Wénjiàn tài dà, xiàzài kěnéng xūyào jǐ fēnzhōng.",
+    "translation": "The file is too large, so downloading it may take a few minutes.",
+    "translation_en": "The file is too large, so downloading it may take a few minutes.",
+    "translation_id": "Mohon jangan sembarangan mengunduh materi dari sumber yang tidak dikenal."
+   },
+   {
+    "speaker": "user",
+    "text": "這種藥物可能會影響睡眠，服用前要看說明。",
+    "hanzi": "這種藥物可能會影響睡眠，服用前要看說明。",
+    "pinyin": "zhè zhǒng yào wù kě néng huì yǐng xiǎng shuì mián ， fú yòng qián yào kàn shuō míng 。",
+    "zhuyin": "ㄓㄜˋ ㄓㄨㄥˇ ㄧㄠˋ ㄨˋ ㄎㄜˇ ㄋㄥˊ ㄏㄨㄟˋ ㄧㄥˇ ㄒㄧㄤˇ ㄕㄨㄟˋ ㄇㄧㄢˊ ， ㄈㄨˊ ㄩㄥˋ ㄑㄧㄢˊ ㄧㄠˋ ㄎㄢˋ ㄕㄨㄛ ㄇㄧㄥˊ 。",
+    "romanization": "Zhè zhǒng yàowù kěnéng huì yǐngxiǎng shuìmián, fúyòng qián yào kàn shuōmíng.",
+    "translation": "This medication may affect sleep, so read the instructions before taking it.",
+    "translation_en": "This medication may affect sleep, so read the instructions before taking it.",
+    "translation_id": "Obat ini mungkin memengaruhi tidur, jadi bacalah petunjuknya sebelum meminumnya."
+   },
+   {
+    "speaker": "tutor",
+    "text": "不要把不同觀點看作衝突，它們也可能帶來新的思路。",
+    "hanzi": "不要把不同觀點看作衝突，它們也可能帶來新的思路。",
+    "pinyin": "bú yào bǎ bù tóng guān diǎn kàn zuò chōng tū ， tā men yě kě néng dài lái xīn de sī lù 。",
+    "zhuyin": "ㄅㄨˊ ㄧㄠˋ ㄅㄚˇ ㄅㄨˋ ㄊㄨㄥˊ ㄍㄨㄢ ㄉㄧㄢˇ ㄎㄢˋ ㄗㄨㄛˋ ㄔㄨㄥ ㄊㄨ ， ㄊㄚ ㄇㄣ˙ ㄧㄝˇ ㄎㄜˇ ㄋㄥˊ ㄉㄞˋ ㄌㄞˊ ㄒㄧㄣ ㄉㄜ˙ ㄙ ㄌㄨˋ 。",
+    "romanization": "Bú yào bǎ bùtóng guāndiǎn kànzuò chōngtū, tāmen yě kěnéng dài lái xīn de sīlù.",
+    "translation": "Do not regard different viewpoints as conflict; they may also bring new ways of thinking.",
+    "translation_en": "Do not regard different viewpoints as conflict; they may also bring new ways of thinking.",
+    "translation_id": "Jangan menganggap perbedaan pandangan sebagai konflik; hal itu justru bisa membuka cara berpikir yang baru."
+   },
+   {
+    "speaker": "user",
+    "text": "他臉色明顯不好，可能昨晚沒有休息夠。",
+    "hanzi": "他臉色明顯不好，可能昨晚沒有休息夠。",
+    "pinyin": "tā liǎn sè míng xiǎn bù hǎo ， kě néng zuó wǎn méi yǒu xiū xī gòu 。",
+    "zhuyin": "ㄊㄚ ㄌㄧㄢˇ ㄙㄜˋ ㄇㄧㄥˊ ㄒㄧㄢˇ ㄅㄨˋ ㄏㄠˇ ， ㄎㄜˇ ㄋㄥˊ ㄗㄨㄛˊ ㄨㄢˇ ㄇㄟˊ ㄧㄡˇ ㄒㄧㄡ ㄒㄧ ㄍㄡˋ 。",
+    "romanization": "Tā liǎnsè míngxiǎn bù hǎo, kěnéng zuó wǎn méiyǒu xiūxi gòu.",
+    "translation": "His complexion is obviously not good; he probably did not get enough rest last night.",
+    "translation_en": "His complexion is obviously not good; he probably did not get enough rest last night.",
+    "translation_id": "Kulitnya jelas tidak bagus; dia mungkin tidak cukup istirahat tadi malam."
+   },
+   {
+    "speaker": "tutor",
+    "text": "不同群體對同一問題可能有不同觀點。",
+    "hanzi": "不同群體對同一問題可能有不同觀點。",
+    "pinyin": "bù tóng qún tǐ duì tóng yī wèn tí kě néng yǒu bù tóng guān diǎn 。",
+    "zhuyin": "ㄅㄨˋ ㄊㄨㄥˊ ㄑㄩㄣˊ ㄊㄧˇ ㄉㄨㄟˋ ㄊㄨㄥˊ ㄧ ㄨㄣˋ ㄊㄧˊ ㄎㄜˇ ㄋㄥˊ ㄧㄡˇ ㄅㄨˋ ㄊㄨㄥˊ ㄍㄨㄢ ㄉㄧㄢˇ 。",
+    "romanization": "Bùtóng qúntǐ duì tóng yí wèntí kěnéng yǒu bùtóng guāndiǎn.",
+    "translation": "Different groups may have different views on the same issue.",
+    "translation_en": "Different groups may have different views on the same issue.",
+    "translation_id": "Kelompok yang berbeda mungkin mempunyai pandangan berbeda mengenai isu yang sama."
+   }
+  ],
+  "examMappings": {
+   "tocfl": "Novice 2"
+  },
+  "audio": "conv:conv-tocfl-tocfl-n2-keneng",
+  "language": "zh"
+ },
+ {
+  "id": "conv-tocfl-tocfl-n2-haizi1",
+  "title": "孩子",
+  "title_en": "Talking about kids,child, childern / son, daughter",
+  "title_id": "Ngobrol tentang anak-anak",
+  "context": "You chat about kids,child, childern / son, daughter.",
+  "context_en": "You chat about kids,child, childern / son, daughter.",
+  "context_id": "Kamu mengobrol tentang anak-anak.",
+  "formality": "neutral",
+  "level": 2,
+  "turns": [
+   {
+    "speaker": "tutor",
+    "text": "孩子們為了誰先玩玩具爭了起來。",
+    "hanzi": "孩子們為了誰先玩玩具爭了起來。",
+    "pinyin": "hái zi men wèi le shuí xiān wán wán jù zhēng le qǐ lái 。",
+    "zhuyin": "ㄏㄞˊ ㄗ˙ ㄇㄣ˙ ㄨㄟˋ ㄌㄜ˙ ㄕㄨㄟˊ ㄒㄧㄢ ㄨㄢˊ ㄨㄢˊ ㄐㄩˋ ㄓㄥ ㄌㄜ˙ ㄑㄧˇ ㄌㄞˊ 。",
+    "romanization": "Háizimen wèi le shéi xiān wán wánjù zhēng le qǐlai.",
+    "translation": "The children started arguing over who could play with the toy first.",
+    "translation_en": "The children started arguing over who could play with the toy first.",
+    "translation_id": "Dua perusahaan bersaing untuk proyek yang sama."
+   },
+   {
+    "speaker": "user",
+    "text": "雨後花園裡出現了很多蟲子，孩子們卻覺得很有趣。",
+    "hanzi": "雨後花園裡出現了很多蟲子，孩子們卻覺得很有趣。",
+    "pinyin": "yǔ hòu huā yuán lǐ chū xiàn le hěn duō chóng zi ， hái zi men què jué dé hěn yǒu qù 。",
+    "zhuyin": "ㄩˇ ㄏㄡˋ ㄏㄨㄚ ㄩㄢˊ ㄌㄧˇ ㄔㄨ ㄒㄧㄢˋ ㄌㄜ˙ ㄏㄣˇ ㄉㄨㄛ ㄔㄨㄥˊ ㄗ˙ ， ㄏㄞˊ ㄗ˙ ㄇㄣ˙ ㄑㄩㄝˋ ㄐㄩㄝˊ ㄉㄜˊ ㄏㄣˇ ㄧㄡˇ ㄑㄩˋ 。",
+    "romanization": "Yǔ hòu huāyuán lǐ chūxiàn le hěn duō chóngzi, háizimen què juéde hěn yǒuqù.",
+    "translation": "After the rain, many insects appeared in the garden, but the children found them very interesting.",
+    "translation_en": "After the rain, many insects appeared in the garden, but the children found them very interesting.",
+    "translation_id": "Setelah hujan, banyak serangga muncul di taman, tetapi anak-anak menganggapnya sangat menarik."
+   },
+   {
+    "speaker": "tutor",
+    "text": "孩子們一聽到下課鈴，就像風似的跑出教室。",
+    "hanzi": "孩子們一聽到下課鈴，就像風似的跑出教室。",
+    "pinyin": "hái zi men yī tīng dào xià kè líng ， jiù xiàng fēng shì de pǎo chū jiào shì 。",
+    "zhuyin": "ㄏㄞˊ ㄗ˙ ㄇㄣ˙ ㄧ ㄊㄧㄥ ㄉㄠˋ ㄒㄧㄚˋ ㄎㄜˋ ㄌㄧㄥˊ ， ㄐㄧㄡˋ ㄒㄧㄤˋ ㄈㄥ ㄕˋ ㄉㄜ˙ ㄆㄠˇ ㄔㄨ ㄐㄧㄠˋ ㄕˋ 。",
+    "romanization": "Háizimen yì tīngdào xiàkè líng, jiù xiàng fēng shìde pǎo chū jiàoshì.",
+    "translation": "As soon as the children heard the class bell, they ran out of the classroom like the wind.",
+    "translation_en": "As soon as the children heard the class bell, they ran out of the classroom like the wind.",
+    "translation_id": "Begitu anak-anak mendengar bel kelas, mereka berlari keluar kelas seperti angin."
+   },
+   {
+    "speaker": "user",
+    "text": "孩子用剪刀做手工時，老師一直在旁邊看著。",
+    "hanzi": "孩子用剪刀做手工時，老師一直在旁邊看著。",
+    "pinyin": "hái zi yòng jiǎn dāo zuò shǒu gōng shí ， lǎo shī yì zhí zài páng biān kàn zhù 。",
+    "zhuyin": "ㄏㄞˊ ㄗ˙ ㄩㄥˋ ㄐㄧㄢˇ ㄉㄠ ㄗㄨㄛˋ ㄕㄡˇ ㄍㄨㄥ ㄕˊ ， ㄌㄠˇ ㄕ ㄧˋ ㄓˊ ㄗㄞˋ ㄆㄤˊ ㄅㄧㄢ ㄎㄢˋ ㄓㄨˋ 。",
+    "romanization": "Háizi yòng jiǎndāo zuò shǒugōng shí, lǎoshī yìzhí zài pángbiān kànzhe.",
+    "translation": "When the children used scissors to do handicrafts, the teacher watched beside them the whole time.",
+    "translation_en": "When the children used scissors to do handicrafts, the teacher watched beside them the whole time.",
+    "translation_id": "Saat anak-anak menggunakan gunting untuk membuat kerajinan tangan, guru itu terus mengawasi mereka dari samping."
+   },
+   {
+    "speaker": "tutor",
+    "text": "支教老師在山區小學工作了三年，幫助很多孩子走出大山。",
+    "hanzi": "支教老師在山區小學工作了三年，幫助很多孩子走出大山。",
+    "pinyin": "zhī jiào lǎo shī zài shān qū xiǎo xué gōng zuò le sān nián ， bāng zhù hěn duō hái zi zǒu chū dà shān 。",
+    "zhuyin": "ㄓ ㄐㄧㄠˋ ㄌㄠˇ ㄕ ㄗㄞˋ ㄕㄢ ㄑㄩ ㄒㄧㄠˇ ㄒㄩㄝˊ ㄍㄨㄥ ㄗㄨㄛˋ ㄌㄜ˙ ㄙㄢ ㄋㄧㄢˊ ， ㄅㄤ ㄓㄨˋ ㄏㄣˇ ㄉㄨㄛ ㄏㄞˊ ㄗ˙ ㄗㄡˇ ㄔㄨ ㄉㄚˋ ㄕㄢ 。",
+    "romanization": "Zhījiào lǎoshī zài shānqū xiǎoxué gōngzuò le sān nián, bāngzhù hěn duō háizi zǒu chū dàshān.",
+    "translation": "The volunteer teacher worked for three years at a primary school in the mountain area, helping many children leave the mountains.",
+    "translation_en": "The volunteer teacher worked for three years at a primary school in the mountain area, helping many children leave the mountains.",
+    "translation_id": "Guru sukarelawan tersebut bekerja selama tiga tahun di sebuah sekolah dasar di daerah pegunungan, membantu banyak anak meninggalkan pegunungan."
+   },
+   {
+    "speaker": "user",
+    "text": "孩子抬頭望著天空，想知道雲後面有什麼。",
+    "hanzi": "孩子抬頭望著天空，想知道雲後面有什麼。",
+    "pinyin": "hái zi tái tóu wàng zhù tiān kōng ， xiǎng zhī dào yún hòu miàn yǒu shén me 。",
+    "zhuyin": "ㄏㄞˊ ㄗ˙ ㄊㄞˊ ㄊㄡˊ ㄨㄤˋ ㄓㄨˋ ㄊㄧㄢ ㄎㄨㄥ ， ㄒㄧㄤˇ ㄓ ㄉㄠˋ ㄩㄣˊ ㄏㄡˋ ㄇㄧㄢˋ ㄧㄡˇ ㄕㄣˊ ㄇㄜ˙ 。",
+    "romanization": "Háizi tái tóu wàng zhe tiānkōng, xiǎng zhīdào yún hòumian yǒu shénme.",
+    "translation": "The child looked up at the sky, wanting to know what was behind the clouds.",
+    "translation_en": "The child looked up at the sky, wanting to know what was behind the clouds.",
+    "translation_id": "Anak itu menengadah ke langit, ingin tahu apa yang ada di balik awan-awan itu."
+   }
+  ],
+  "examMappings": {
+   "tocfl": "Novice 2"
+  },
+  "audio": "conv:conv-tocfl-tocfl-n2-haizi1",
+  "language": "zh"
+ }
+]
