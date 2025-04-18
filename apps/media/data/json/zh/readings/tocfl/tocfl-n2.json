@@ -1,0 +1,502 @@
+[
+ {
+  "id": "r-tocfl-n2-tai-bei-yi-ri",
+  "title": "台北一日遊 — One Day in Taipei",
+  "type": "story",
+  "hsk": 2,
+  "wordCount": 82,
+  "summary": "A weekend trip to attractions in Taipei.",
+  "paragraphs": [
+   {
+    "hanzi": "上個星期六，我和朋友去台北玩。",
+    "pinyin": "shàng ge xīngqīliù, wǒ hé péngyou qù táiběi wán.",
+    "translation": "Last Saturday, my friend and I went to Taipei to have fun.",
+    "zhuyin": "ㄕㄤˋ ㄍㄜˋ ㄒㄧㄥ ㄑㄧ ㄌㄧㄡˋ， ㄨㄛˇ ㄏㄜˊ ㄆㄥˊ ㄧㄡˇ ㄑㄩˋ ㄊㄞˊ ㄅㄟˇ ㄨㄢˊ。",
+    "text": "上個星期六，我和朋友去台北玩。",
+    "romanization": "shàng ge xīngqīliù, wǒ hé péngyou qù táiběi wán.",
+    "translation_en": "Last Saturday, my friend and I went to Taipei to have fun.",
+    "translation_id": "Sabtu lalu, teman saya dan saya pergi ke Taipei untuk bersenang-senang."
+   },
+   {
+    "hanzi": "我們先去了故宮博物院，看到了很多古老的東西。",
+    "pinyin": "wǒmen xiān qù le gùgōng bówùyuàn, kàn dào le hěn duō gǔlǎo de dōngxi.",
+    "translation": "We first went to the National Palace Museum and saw many ancient things.",
+    "zhuyin": "ㄨㄛˇ ㄇㄣ˙ ㄒㄧㄢ ㄑㄩˋ ㄌㄜ˙ ㄍㄨˋ ㄍㄨㄥ ㄅㄛˊ ㄨˋ ㄩㄢˋ， ㄎㄢˋ ㄉㄠˋ ㄌㄜ˙ ㄏㄣˇ ㄉㄨㄛ ㄍㄨˇ ㄌㄠˇ ㄉㄜ˙ ㄉㄨㄥ ㄒㄧ。",
+    "text": "我們先去了故宮博物院，看到了很多古老的東西。",
+    "romanization": "wǒmen xiān qù le gùgōng bówùyuàn, kàn dào le hěn duō gǔlǎo de dōngxi.",
+    "translation_en": "We first went to the National Palace Museum and saw many ancient things.",
+    "translation_id": "Kami pertama-tama pergi ke Museum Istana Nasional dan melihat banyak benda kuno."
+   },
+   {
+    "hanzi": "中午我們去吃了一碗牛肉麵，很好吃。",
+    "pinyin": "zhōngwǔ wǒmen qù chī le yì wǎn niúròu miàn, hěn hǎochī.",
+    "translation": "At noon we went to eat a bowl of beef noodles; it was delicious.",
+    "zhuyin": "ㄓㄨㄥ ㄨˇ ㄨㄛˇ ㄇㄣ˙ ㄑㄩˋ ㄔ ㄌㄜ˙ ㄧ ㄨㄢˇ ㄋㄧㄡˊ ㄖㄡˋ ㄇㄧㄢˋ， ㄏㄣˇ ㄏㄠˇ ㄔ。",
+    "text": "中午我們去吃了一碗牛肉麵，很好吃。",
+    "romanization": "zhōngwǔ wǒmen qù chī le yì wǎn niúròu miàn, hěn hǎochī.",
+    "translation_en": "At noon we went to eat a bowl of beef noodles; it was delicious.",
+    "translation_id": "Siang hari kami makan semangkuk mi sapi; rasanya lezat."
+   },
+   {
+    "hanzi": "下午我們去了象山，從山上看台北非常漂亮。",
+    "pinyin": "xiàwǔ wǒmen qù le xiàngshān, cóng shān shàng kàn táiběi fēicháng piàoliang.",
+    "translation": "In the afternoon we went to Elephant Mountain; Taipei looked very beautiful from the top.",
+    "zhuyin": "ㄒㄧㄚˋ ㄨˇ ㄨㄛˇ ㄇㄣ˙ ㄑㄩˋ ㄌㄜ˙ ㄒㄧㄤˋ ㄕㄢ， ㄘㄨㄥˊ ㄕㄢ ㄕㄤˋ ㄎㄢˋ ㄊㄞˊ ㄅㄟˇ ㄈㄟ ㄔㄤˊ ㄆㄧㄠˋ ㄌㄧㄤˋ。",
+    "text": "下午我們去了象山，從山上看台北非常漂亮。",
+    "romanization": "xiàwǔ wǒmen qù le xiàngshān, cóng shān shàng kàn táiběi fēicháng piàoliang.",
+    "translation_en": "In the afternoon we went to Elephant Mountain; Taipei looked very beautiful from the top.",
+    "translation_id": "Sore harinya kami pergi ke Gunung Gajah; Taipei terlihat sangat indah dari puncak."
+   }
+  ],
+  "questions": [
+   {
+    "id": "rq-tocfl-n2-1",
+    "type": "multiple-choice",
+    "prompt": "What did they do in the afternoon?",
+    "options": [
+     {
+      "id": "a",
+      "label": "They went shopping."
+     },
+     {
+      "id": "b",
+      "label": "They climbed Elephant Mountain."
+     },
+     {
+      "id": "c",
+      "label": "They went to a museum."
+     },
+     {
+      "id": "d",
+      "label": "They ate noodles."
+     }
+    ],
+    "correct": "b",
+    "skill": "reading",
+    "hsk": 2,
+    "examMappings": {
+     "tocfl": "Novice 2"
+    }
+   }
+  ],
+  "examMappings": {
+   "tocfl": "Novice 2",
+   "hsk": 2
+  },
+  "audio": "reading:r-tocfl-n2-tai-bei-yi-ri",
+  "language": "zh",
+  "level": 2,
+  "summary_en": "A weekend trip to attractions in Taipei.",
+  "summary_id": "Perjalanan akhir pekan ke tempat wisata di Taipei.",
+  "title_en": "台北一日遊 — One Day in Taipei",
+  "title_id": "台北一日遊 — Sehari di Taipei"
+ },
+ {
+  "id": "r-tocfl-tocfl-n2-keneng",
+  "title": "可能 — probably, maybe, perhaps",
+  "title_en": "可能 — probably, maybe, perhaps",
+  "title_id": "可能 — mungkin",
+  "type": "story",
+  "level": 2,
+  "wordCount": 46,
+  "summary": "A short passage about probably, maybe, perhaps.",
+  "summary_en": "A short passage about probably, maybe, perhaps.",
+  "summary_id": "Bacaan singkat tentang mungkin.",
+  "paragraphs": [
+   {
+    "text": "你最好提前出門，不然可能趕不上火車。",
+    "hanzi": "你最好提前出門，不然可能趕不上火車。",
+    "pinyin": "nǐ zuì hǎo tí qián chū mén ， bù rán kě néng gǎn bù shàng huǒ chē 。",
+    "zhuyin": "ㄋㄧˇ ㄗㄨㄟˋ ㄏㄠˇ ㄊㄧˊ ㄑㄧㄢˊ ㄔㄨ ㄇㄣˊ ， ㄅㄨˋ ㄖㄢˊ ㄎㄜˇ ㄋㄥˊ ㄍㄢˇ ㄅㄨˋ ㄕㄤˋ ㄏㄨㄛˇ ㄔㄜ 。",
+    "romanization": "Nǐ zuìhǎo tíqián chūmén, bùrán kěnéng gǎn bu shàng huǒchē.",
+    "translation": "You had better leave early, otherwise you may not catch the train.",
+    "translation_en": "You had better leave early, otherwise you may not catch the train.",
+    "translation_id": "(atau yang lain)"
+   },
+   {
+    "text": "文件太大，上傳過程可能需要幾分鐘。",
+    "hanzi": "文件太大，上傳過程可能需要幾分鐘。",
+    "pinyin": "wén jiàn tài dà ， shàng chuán guò chéng kě néng xū yào jǐ fēn zhōng 。",
+    "zhuyin": "ㄨㄣˊ ㄐㄧㄢˋ ㄊㄞˋ ㄉㄚˋ ， ㄕㄤˋ ㄔㄨㄢˊ ㄍㄨㄛˋ ㄔㄥˊ ㄎㄜˇ ㄋㄥˊ ㄒㄩ ㄧㄠˋ ㄐㄧˇ ㄈㄣ ㄓㄨㄥ 。",
+    "romanization": "Wénjiàn tài dà, shàngchuán guòchéng kěnéng xūyào jǐ fēnzhōng.",
+    "translation": "The file is too large, so the upload process may take a few minutes.",
+    "translation_en": "The file is too large, so the upload process may take a few minutes.",
+    "translation_id": "Silakan pindai kontrak yang ditandatangani dan unggah ke sistem."
+   },
+   {
+    "text": "我最近不太閒，可能要下週才能見面。",
+    "hanzi": "我最近不太閒，可能要下週才能見面。",
+    "pinyin": "wǒ zuì jìn bù tài xián ， kě néng yào xià zhōu cái néng jiàn miàn 。",
+    "zhuyin": "ㄨㄛˇ ㄗㄨㄟˋ ㄐㄧㄣˋ ㄅㄨˋ ㄊㄞˋ ㄒㄧㄢˊ ， ㄎㄜˇ ㄋㄥˊ ㄧㄠˋ ㄒㄧㄚˋ ㄓㄡ ㄘㄞˊ ㄋㄥˊ ㄐㄧㄢˋ ㄇㄧㄢˋ 。",
+    "romanization": "Wǒ zuìjìn bú tài xián, kěnéng yào xià zhōu cái néng jiànmiàn.",
+    "translation": "I have not been very free recently, so I may not be able to meet until next week.",
+    "translation_en": "I have not been very free recently, so I may not be able to meet until next week.",
+    "translation_id": "Akhir-akhir ini aku tidak punya banyak waktu luang, jadi aku mungkin baru bisa bertemu minggu depan."
+   }
+  ],
+  "questions": [
+   {
+    "id": "rq-1",
+    "type": "multiple-choice",
+    "prompt": "What is the passage mainly about?",
+    "options": [
+     {
+      "id": "a",
+      "label": "probably, maybe, perhaps"
+     },
+     {
+      "id": "b",
+      "label": "the right-hand side"
+     },
+     {
+      "id": "c",
+      "label": "classifier for books, periodicals, files, etc."
+     },
+     {
+      "id": "d",
+      "label": "thin, slim, skinny"
+     }
+    ],
+    "correct": "a"
+   },
+   {
+    "id": "rq-2",
+    "type": "multiple-choice",
+    "prompt": "Which sentence appears in the passage?",
+    "options": [
+     {
+      "id": "a",
+      "label": "Spring Festival is the most important traditional holiday in China."
+     },
+     {
+      "id": "b",
+      "label": "The file is too large, so the upload process may take a few minutes."
+     },
+     {
+      "id": "c",
+      "label": "Chinese culture has a long history."
+     },
+     {
+      "id": "d",
+      "label": "You had better leave early, otherwise you may not catch the train."
+     }
+    ],
+    "correct": "d"
+   },
+   {
+    "id": "rq-3",
+    "type": "multiple-choice",
+    "prompt": "What does “可能” mean here?",
+    "options": [
+     {
+      "id": "a",
+      "label": "probably, maybe, perhaps"
+     },
+     {
+      "id": "b",
+      "label": "dim sum, snack"
+     },
+     {
+      "id": "c",
+      "label": "convenient"
+     },
+     {
+      "id": "d",
+      "label": "older sister"
+     }
+    ],
+    "correct": "a"
+   }
+  ],
+  "examMappings": {
+   "tocfl": "Novice 2"
+  },
+  "audio": "reading:r-tocfl-tocfl-n2-keneng",
+  "language": "zh",
+  "romanization": [
+   "ni",
+   "zui",
+   "hao",
+   "ti",
+   "qian",
+   "chu",
+   "men",
+   "，",
+   "bu",
+   "ran",
+   "ke",
+   "neng",
+   "gan",
+   "bu",
+   "shang",
+   "huo",
+   "che",
+   "。",
+   "wen",
+   "jian",
+   "tai",
+   "da",
+   "，",
+   "shang",
+   "chuan",
+   "guo",
+   "cheng",
+   "ke",
+   "neng",
+   "xu",
+   "yao",
+   "ji",
+   "fen",
+   "zhong",
+   "。",
+   "wo",
+   "zui",
+   "jin",
+   "bu",
+   "tai",
+   "xian",
+   "，",
+   "ke",
+   "neng",
+   "yao",
+   "xia",
+   "zhou",
+   "cai",
+   "neng",
+   "jian",
+   "mian",
+   "。"
+  ]
+ },
+ {
+  "id": "r-tocfl-tocfl-n2-haizi1",
+  "title": "孩子 — kids,child, childern / son, daughter",
+  "title_en": "孩子 — kids,child, childern / son, daughter",
+  "title_id": "孩子 — anak-anak",
+  "type": "story",
+  "level": 2,
+  "wordCount": 67,
+  "summary": "A short passage about kids,child, childern / son, daughter.",
+  "summary_en": "A short passage about kids,child, childern / son, daughter.",
+  "summary_id": "Bacaan singkat tentang anak-anak.",
+  "paragraphs": [
+   {
+    "text": "孩子們在玩。",
+    "hanzi": "孩子們在玩。",
+    "pinyin": "hái zi men zài wán 。",
+    "zhuyin": "ㄏㄞˊ ㄗ˙ ㄇㄣ˙ ㄗㄞˋ ㄨㄢˊ 。",
+    "romanization": "Háizimen zài wán.",
+    "translation": "The children are playing.",
+    "translation_en": "The children are playing.",
+    "translation_id": "Anak-anak sedang bermain."
+   },
+   {
+    "text": "天氣太熱了，孩子們都想吃雪糕。",
+    "hanzi": "天氣太熱了，孩子們都想吃雪糕。",
+    "pinyin": "tiān qì tài rè le ， hái zi men dōu xiǎng chī xuě gāo 。",
+    "zhuyin": "ㄊㄧㄢ ㄑㄧˋ ㄊㄞˋ ㄖㄜˋ ㄌㄜ˙ ， ㄏㄞˊ ㄗ˙ ㄇㄣ˙ ㄉㄡ ㄒㄧㄤˇ ㄔ ㄒㄩㄝˇ ㄍㄠ 。",
+    "romanization": "Tiānqì tài rè le, háizimen dōu xiǎng chī xuěgāo.",
+    "translation": "The weather is so hot that the children all want to eat ice cream.",
+    "translation_en": "The weather is so hot that the children all want to eat ice cream.",
+    "translation_id": "Cuacanya panas sekali sehingga anak-anak semua ingin makan es krim."
+   },
+   {
+    "text": "孩子還小，只能從一數到二十。",
+    "hanzi": "孩子還小，只能從一數到二十。",
+    "pinyin": "hái zi hái xiǎo ， zhǐ néng cóng yī shù dào èr shí 。",
+    "zhuyin": "ㄏㄞˊ ㄗ˙ ㄏㄞˊ ㄒㄧㄠˇ ， ㄓˇ ㄋㄥˊ ㄘㄨㄥˊ ㄧ ㄕㄨˋ ㄉㄠˋ ㄦˋ ㄕˊ 。",
+    "romanization": "Háizi hái xiǎo, zhǐ néng cóng yī shǔ dào èrshí.",
+    "translation": "The child is still young and can only count from one to twenty.",
+    "translation_en": "The child is still young and can only count from one to twenty.",
+    "translation_id": "Anak tersebut masih kecil dan baru bisa berhitung dari satu sampai dua puluh."
+   },
+   {
+    "text": "孩子的嘴巴上沾了巧克力。",
+    "hanzi": "孩子的嘴巴上沾了巧克力。",
+    "pinyin": "hái zi de zuǐ bā shàng zhān le qiǎo kè lì 。",
+    "zhuyin": "ㄏㄞˊ ㄗ˙ ㄉㄜ˙ ㄗㄨㄟˇ ㄅㄚ ㄕㄤˋ ㄓㄢ ㄌㄜ˙ ㄑㄧㄠˇ ㄎㄜˋ ㄌㄧˋ 。",
+    "romanization": "Háizi de zuǐba shang zhān le qiǎokèlì.",
+    "translation": "The child has chocolate stuck around their mouth.",
+    "translation_en": "The child has chocolate stuck around their mouth.",
+    "translation_id": "Anak itu ada cokelat yang menempel di sekitar mulutnya."
+   },
+   {
+    "text": "孩子把氣球系在椅子上。",
+    "hanzi": "孩子把氣球系在椅子上。",
+    "pinyin": "hái zi bǎ qì qiú xì zài yǐ zi shàng 。",
+    "zhuyin": "ㄏㄞˊ ㄗ˙ ㄅㄚˇ ㄑㄧˋ ㄑㄧㄡˊ ㄒㄧˋ ㄗㄞˋ ㄧˇ ㄗ˙ ㄕㄤˋ 。",
+    "romanization": "Háizi bǎ qìqiú jì zài yǐzi shang.",
+    "translation": "The child tied the balloon to the chair.",
+    "translation_en": "The child tied the balloon to the chair.",
+    "translation_id": "Anak itu mengikat balon itu ke kursi."
+   },
+   {
+    "text": "書架太高了，孩子夠不到最上面那一層。",
+    "hanzi": "書架太高了，孩子夠不到最上面那一層。",
+    "pinyin": "shū jià tài gāo le ， hái zi gòu bú dào zuì shàng miàn nà yī céng 。",
+    "zhuyin": "ㄕㄨ ㄐㄧㄚˋ ㄊㄞˋ ㄍㄠ ㄌㄜ˙ ， ㄏㄞˊ ㄗ˙ ㄍㄡˋ ㄅㄨˊ ㄉㄠˋ ㄗㄨㄟˋ ㄕㄤˋ ㄇㄧㄢˋ ㄋㄚˋ ㄧ ㄘㄥˊ 。",
+    "romanization": "Shūjià tài gāo le, háizi gòu bu dào zuì shàngmiàn nà yì céng.",
+    "translation": "The bookshelf is too high, so the child cannot reach the top shelf.",
+    "translation_en": "The bookshelf is too high, so the child cannot reach the top shelf.",
+    "translation_id": "Rak buku itu terlalu tinggi, sehingga anak itu tidak bisa menjangkau rak paling atas."
+   }
+  ],
+  "questions": [
+   {
+    "id": "rq-1",
+    "type": "multiple-choice",
+    "prompt": "What is the passage mainly about?",
+    "options": [
+     {
+      "id": "a",
+      "label": "kids,child, childern / son, daughter"
+     },
+     {
+      "id": "b",
+      "label": "place / part"
+     },
+     {
+      "id": "c",
+      "label": "many, much / how much, how many / over"
+     },
+     {
+      "id": "d",
+      "label": "to see (someone)"
+     }
+    ],
+    "correct": "a"
+   },
+   {
+    "id": "rq-2",
+    "type": "multiple-choice",
+    "prompt": "Which sentence appears in the passage?",
+    "options": [
+     {
+      "id": "a",
+      "label": "Chinese culture has a long history."
+     },
+     {
+      "id": "b",
+      "label": "The weather is so hot that the children all want to eat ice cream."
+     },
+     {
+      "id": "c",
+      "label": "The children are playing."
+     },
+     {
+      "id": "d",
+      "label": "Spring Festival is the most important traditional holiday in China."
+     }
+    ],
+    "correct": "c"
+   },
+   {
+    "id": "rq-3",
+    "type": "multiple-choice",
+    "prompt": "What does “孩子” mean here?",
+    "options": [
+     {
+      "id": "a",
+      "label": "kids,child, childern / son, daughter"
+     },
+     {
+      "id": "b",
+      "label": "dim sum, snack"
+     },
+     {
+      "id": "c",
+      "label": "convenient"
+     },
+     {
+      "id": "d",
+      "label": "older sister"
+     }
+    ],
+    "correct": "a"
+   }
+  ],
+  "examMappings": {
+   "tocfl": "Novice 2"
+  },
+  "audio": "reading:r-tocfl-tocfl-n2-haizi1",
+  "language": "zh",
+  "romanization": [
+   "hai",
+   "zi",
+   "men",
+   "zai",
+   "wan",
+   "。",
+   "tian",
+   "qi",
+   "tai",
+   "re",
+   "le",
+   "，",
+   "hai",
+   "zi",
+   "men",
+   "dou",
+   "xiang",
+   "chi",
+   "xue",
+   "gao",
+   "。",
+   "hai",
+   "zi",
+   "hai",
+   "xiao",
+   "，",
+   "zhi",
+   "neng",
+   "cong",
+   "yi",
+   "shu",
+   "dao",
+   "er",
+   "shi",
+   "。",
+   "hai",
+   "zi",
+   "de",
+   "zui",
+   "ba",
+   "shang",
+   "zhan",
+   "le",
+   "qiao",
+   "ke",
+   "li",
+   "。",
+   "hai",
+   "zi",
+   "ba",
+   "qi",
+   "qiu",
+   "xi",
+   "zai",
+   "yi",
+   "zi",
+   "shang",
+   "。",
+   "shu",
+   "jia",
+   "tai",
+   "gao",
+   "le",
+   "，",
+   "hai",
+   "zi",
+   "gou",
+   "bu",
+   "dao",
+   "zui",
+   "shang",
+   "mian",
+   "na",
+   "yi",
+   "ceng",
+   "。"
+  ]
+ }
+]
