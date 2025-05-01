@@ -1,0 +1,3413 @@
+[
+  {
+    "key": "vocab:ni3",
+    "text": "你",
+    "locale": "zh-CN",
+    "examSource": "HSK",
+    "audioPath": "vocab:ni3"
+  },
+  {
+    "key": "vocab:ni3:ex0",
+    "text": "你好吗？",
+    "locale": "zh-CN",
+    "examSource": "HSK"
+  },
+  {
+    "key": "vocab:hao3",
+    "text": "好",
+    "locale": "zh-CN",
+    "examSource": "HSK",
+    "audioPath": "vocab:hao3"
+  },
+  {
+    "key": "vocab:hao3:ex0",
+    "text": "很好。",
+    "locale": "zh-CN",
+    "examSource": "HSK"
+  },
+  {
+    "key": "vocab:wo3",
+    "text": "我",
+    "locale": "zh-CN",
+    "examSource": "HSK",
+    "audioPath": "vocab:wo3"
+  },
+  {
+    "key": "vocab:wo3:ex0",
+    "text": "我是学生。",
+    "locale": "zh-CN",
+    "examSource": "HSK"
+  },
+  {
+    "key": "vocab:ta1",
+    "text": "他",
+    "locale": "zh-CN",
+    "examSource": "HSK",
+    "audioPath": "vocab:ta1"
+  },
+  {
+    "key": "vocab:ta1:ex0",
+    "text": "他是我朋友。",
+    "locale": "zh-CN",
+    "examSource": "HSK"
+  },
+  {
+    "key": "vocab:ta1f",
+    "text": "她",
+    "locale": "zh-CN",
+    "examSource": "HSK",
+    "audioPath": "vocab:ta1f"
+  },
+  {
+    "key": "vocab:ta1f:ex0",
+    "text": "她是老师。",
+    "locale": "zh-CN",
+    "examSource": "HSK"
+  },
+  {
+    "key": "vocab:shi4",
+    "text": "是",
+    "locale": "zh-CN",
+    "examSource": "HSK",
+    "audioPath": "vocab:shi4"
+  },
+  {
+    "key": "vocab:shi4:ex0",
+    "text": "我是西班牙人。",
+    "locale": "zh-CN",
+    "examSource": "HSK"
+  },
+  {
+    "key": "vocab:bu4",
+    "text": "不",
+    "locale": "zh-CN",
+    "examSource": "HSK",
+    "audioPath": "vocab:bu4"
+  },
+  {
+    "key": "vocab:bu4:ex0",
+    "text": "我不是老师。",
+    "locale": "zh-CN",
+    "examSource": "HSK"
+  },
+  {
+    "key": "vocab:de5",
+    "text": "的",
+    "locale": "zh-CN",
+    "examSource": "HSK",
+    "audioPath": "vocab:de5"
+  },
+  {
+    "key": "vocab:de5:ex0",
+    "text": "我的书",
+    "locale": "zh-CN",
+    "examSource": "HSK"
+  },
+  {
+    "key": "vocab:ma5",
+    "text": "吗",
+    "locale": "zh-CN",
+    "examSource": "HSK",
+    "audioPath": "vocab:ma5"
+  },
+  {
+    "key": "vocab:ma5:ex0",
+    "text": "你是学生吗？",
+    "locale": "zh-CN",
+    "examSource": "HSK"
+  },
+  {
+    "key": "vocab:hen3",
+    "text": "很",
+    "locale": "zh-CN",
+    "examSource": "HSK",
+    "audioPath": "vocab:hen3"
+  },
+  {
+    "key": "vocab:hen3:ex0",
+    "text": "我很忙。",
+    "locale": "zh-CN",
+    "examSource": "HSK"
+  },
+  {
+    "key": "vocab:shijian",
+    "text": "时间",
+    "locale": "zh-CN",
+    "examSource": "HSK",
+    "audioPath": "vocab:shijian"
+  },
+  {
+    "key": "vocab:shijian:trad",
+    "text": "時間",
+    "locale": "zh-TW",
+    "examSource": "HSK"
+  },
+  {
+    "key": "vocab:shijian:ex0",
+    "text": "现在没有时间。",
+    "locale": "zh-CN",
+    "examSource": "HSK"
+  },
+  {
+    "key": "vocab:xianzai",
+    "text": "现在",
+    "locale": "zh-CN",
+    "examSource": "HSK",
+    "audioPath": "vocab:xianzai"
+  },
+  {
+    "key": "vocab:xianzai:trad",
+    "text": "現在",
+    "locale": "zh-TW",
+    "examSource": "HSK"
+  },
+  {
+    "key": "vocab:xianzai:ex0",
+    "text": "现在几点？",
+    "locale": "zh-CN",
+    "examSource": "HSK"
+  },
+  {
+    "key": "vocab:keyi",
+    "text": "可以",
+    "locale": "zh-CN",
+    "examSource": "HSK",
+    "audioPath": "vocab:keyi"
+  },
+  {
+    "key": "vocab:keyi:ex0",
+    "text": "我可以进来吗？",
+    "locale": "zh-CN",
+    "examSource": "HSK"
+  },
+  {
+    "key": "vocab:yao4",
+    "text": "要",
+    "locale": "zh-CN",
+    "examSource": "HSK",
+    "audioPath": "vocab:yao4"
+  },
+  {
+    "key": "vocab:yao4:ex0",
+    "text": "我要一杯咖啡。",
+    "locale": "zh-CN",
+    "examSource": "HSK"
+  },
+  {
+    "key": "vocab:xiang3",
+    "text": "想",
+    "locale": "zh-CN",
+    "examSource": "HSK",
+    "audioPath": "vocab:xiang3"
+  },
+  {
+    "key": "vocab:xiang3:ex0",
+    "text": "我想回家。",
+    "locale": "zh-CN",
+    "examSource": "HSK"
+  },
+  {
+    "key": "vocab:zhidao",
+    "text": "知道",
+    "locale": "zh-CN",
+    "examSource": "HSK",
+    "audioPath": "vocab:zhidao"
+  },
+  {
+    "key": "vocab:zhidao:ex0",
+    "text": "我不知道。",
+    "locale": "zh-CN",
+    "examSource": "HSK"
+  },
+  {
+    "key": "vocab:juede",
+    "text": "觉得",
+    "locale": "zh-CN",
+    "examSource": "HSK",
+    "audioPath": "vocab:juede"
+  },
+  {
+    "key": "vocab:juede:trad",
+    "text": "覺得",
+    "locale": "zh-TW",
+    "examSource": "HSK"
+  },
+  {
+    "key": "vocab:juede:ex0",
+    "text": "我觉得很有意思。",
+    "locale": "zh-CN",
+    "examSource": "HSK"
+  },
+  {
+    "key": "vocab:gongzuo",
+    "text": "工作",
+    "locale": "zh-CN",
+    "examSource": "HSK",
+    "audioPath": "vocab:gongzuo"
+  },
+  {
+    "key": "vocab:gongzuo:ex0",
+    "text": "你的工作忙吗？",
+    "locale": "zh-CN",
+    "examSource": "HSK"
+  },
+  {
+    "key": "vocab:mang2",
+    "text": "忙",
+    "locale": "zh-CN",
+    "examSource": "HSK",
+    "audioPath": "vocab:mang2"
+  },
+  {
+    "key": "vocab:mang2:ex0",
+    "text": "我今天很忙。",
+    "locale": "zh-CN",
+    "examSource": "HSK"
+  },
+  {
+    "key": "vocab:lei4",
+    "text": "累",
+    "locale": "zh-CN",
+    "examSource": "HSK",
+    "audioPath": "vocab:lei4"
+  },
+  {
+    "key": "vocab:lei4:ex0",
+    "text": "我有点儿累。",
+    "locale": "zh-CN",
+    "examSource": "HSK"
+  },
+  {
+    "key": "vocab:dagai",
+    "text": "大概",
+    "locale": "zh-CN",
+    "examSource": "HSK",
+    "audioPath": "vocab:dagai"
+  },
+  {
+    "key": "vocab:dagai:ex0",
+    "text": "他大概八点到。",
+    "locale": "zh-CN",
+    "examSource": "HSK"
+  },
+  {
+    "key": "vocab:liaojie",
+    "text": "了解",
+    "locale": "zh-CN",
+    "examSource": "HSK",
+    "audioPath": "vocab:liaojie"
+  },
+  {
+    "key": "vocab:liaojie:trad",
+    "text": "瞭解",
+    "locale": "zh-TW",
+    "examSource": "HSK"
+  },
+  {
+    "key": "vocab:liaojie:ex0",
+    "text": "我想了解中国文化。",
+    "locale": "zh-CN",
+    "examSource": "HSK"
+  },
+  {
+    "key": "vocab:wenhua",
+    "text": "文化",
+    "locale": "zh-CN",
+    "examSource": "HSK",
+    "audioPath": "vocab:wenhua"
+  },
+  {
+    "key": "vocab:wenhua:ex0",
+    "text": "中国文化很有意思。",
+    "locale": "zh-CN",
+    "examSource": "HSK"
+  },
+  {
+    "key": "vocab:lishi",
+    "text": "历史",
+    "locale": "zh-CN",
+    "examSource": "HSK",
+    "audioPath": "vocab:lishi"
+  },
+  {
+    "key": "vocab:lishi:trad",
+    "text": "歷史",
+    "locale": "zh-TW",
+    "examSource": "HSK"
+  },
+  {
+    "key": "vocab:lishi:ex0",
+    "text": "中国历史很长。",
+    "locale": "zh-CN",
+    "examSource": "HSK"
+  },
+  {
+    "key": "vocab:xuyao",
+    "text": "需要",
+    "locale": "zh-CN",
+    "examSource": "HSK",
+    "audioPath": "vocab:xuyao"
+  },
+  {
+    "key": "vocab:xuyao:ex0",
+    "text": "你需要帮助吗？",
+    "locale": "zh-CN",
+    "examSource": "HSK"
+  },
+  {
+    "key": "vocab:bangzhu",
+    "text": "帮助",
+    "locale": "zh-CN",
+    "examSource": "HSK",
+    "audioPath": "vocab:bangzhu"
+  },
+  {
+    "key": "vocab:bangzhu:trad",
+    "text": "幫助",
+    "locale": "zh-TW",
+    "examSource": "HSK"
+  },
+  {
+    "key": "vocab:bangzhu:ex0",
+    "text": "谢谢你的帮助。",
+    "locale": "zh-CN",
+    "examSource": "HSK"
+  },
+  {
+    "key": "vocab:jueding",
+    "text": "决定",
+    "locale": "zh-CN",
+    "examSource": "HSK",
+    "audioPath": "vocab:jueding"
+  },
+  {
+    "key": "vocab:jueding:trad",
+    "text": "決定",
+    "locale": "zh-TW",
+    "examSource": "HSK"
+  },
+  {
+    "key": "vocab:jueding:ex0",
+    "text": "我决定去中国留学。",
+    "locale": "zh-CN",
+    "examSource": "HSK"
+  },
+  {
+    "key": "vocab:zhongyao",
+    "text": "重要",
+    "locale": "zh-CN",
+    "examSource": "HSK",
+    "audioPath": "vocab:zhongyao"
+  },
+  {
+    "key": "vocab:zhongyao:ex0",
+    "text": "这个很重要。",
+    "locale": "zh-CN",
+    "examSource": "HSK"
+  },
+  {
+    "key": "vocab:tocfl-n1-zao-shang",
+    "text": "早上",
+    "locale": "zh-TW",
+    "examSource": "TOCFL",
+    "audioPath": "vocab:tocfl-n1-zao-shang"
+  },
+  {
+    "key": "vocab:tocfl-n1-zao-shang:ex0",
+    "text": "早上好！你吃早餐了嗎？",
+    "locale": "zh-TW",
+    "examSource": "TOCFL"
+  },
+  {
+    "key": "vocab:tocfl-n1-peng-you",
+    "text": "朋友",
+    "locale": "zh-TW",
+    "examSource": "TOCFL",
+    "audioPath": "vocab:tocfl-n1-peng-you"
+  },
+  {
+    "key": "vocab:tocfl-n1-peng-you:ex0",
+    "text": "他是我的好朋友。",
+    "locale": "zh-TW",
+    "examSource": "TOCFL"
+  },
+  {
+    "key": "vocab:tocfl-n1-gao-xing",
+    "text": "高興",
+    "locale": "zh-TW",
+    "examSource": "TOCFL",
+    "audioPath": "vocab:tocfl-n1-gao-xing"
+  },
+  {
+    "key": "vocab:tocfl-n1-gao-xing:ex0",
+    "text": "我很高興認識你。",
+    "locale": "zh-TW",
+    "examSource": "TOCFL"
+  },
+  {
+    "key": "vocab:tocfl-n1-zai-jian",
+    "text": "再見",
+    "locale": "zh-TW",
+    "examSource": "TOCFL",
+    "audioPath": "vocab:tocfl-n1-zai-jian"
+  },
+  {
+    "key": "vocab:tocfl-n1-zai-jian:ex0",
+    "text": "明天再見！",
+    "locale": "zh-TW",
+    "examSource": "TOCFL"
+  },
+  {
+    "key": "vocab:tocfl-n1-xue-xiao",
+    "text": "學校",
+    "locale": "zh-TW",
+    "examSource": "TOCFL",
+    "audioPath": "vocab:tocfl-n1-xue-xiao"
+  },
+  {
+    "key": "vocab:tocfl-n1-xue-xiao:ex0",
+    "text": "我的學校很大。",
+    "locale": "zh-TW",
+    "examSource": "TOCFL"
+  },
+  {
+    "key": "vocab:tocfl-n1-tai-wan",
+    "text": "台灣",
+    "locale": "zh-TW",
+    "examSource": "TOCFL",
+    "audioPath": "vocab:tocfl-n1-tai-wan"
+  },
+  {
+    "key": "vocab:tocfl-n1-tai-wan:ex0",
+    "text": "我從台灣來。",
+    "locale": "zh-TW",
+    "examSource": "TOCFL"
+  },
+  {
+    "key": "vocab:tocfl-n2-yi-qi",
+    "text": "一起",
+    "locale": "zh-TW",
+    "examSource": "TOCFL",
+    "audioPath": "vocab:tocfl-n2-yi-qi"
+  },
+  {
+    "key": "vocab:tocfl-n2-yi-qi:ex0",
+    "text": "我們一起去吃飯吧！",
+    "locale": "zh-TW",
+    "examSource": "TOCFL"
+  },
+  {
+    "key": "vocab:tocfl-n2-jie-jie",
+    "text": "姐姐",
+    "locale": "zh-TW",
+    "examSource": "TOCFL",
+    "audioPath": "vocab:tocfl-n2-jie-jie"
+  },
+  {
+    "key": "vocab:tocfl-n2-jie-jie:ex0",
+    "text": "我姐姐在台北工作。",
+    "locale": "zh-TW",
+    "examSource": "TOCFL"
+  },
+  {
+    "key": "vocab:tocfl-n2-mei-li",
+    "text": "美麗",
+    "locale": "zh-TW",
+    "examSource": "TOCFL",
+    "audioPath": "vocab:tocfl-n2-mei-li"
+  },
+  {
+    "key": "vocab:tocfl-n2-mei-li:ex0",
+    "text": "台灣的風景很美麗。",
+    "locale": "zh-TW",
+    "examSource": "TOCFL"
+  },
+  {
+    "key": "vocab:tocfl-n2-fang-bian",
+    "text": "方便",
+    "locale": "zh-TW",
+    "examSource": "TOCFL",
+    "audioPath": "vocab:tocfl-n2-fang-bian"
+  },
+  {
+    "key": "vocab:tocfl-n2-fang-bian:ex0",
+    "text": "坐捷運很方便。",
+    "locale": "zh-TW",
+    "examSource": "TOCFL"
+  },
+  {
+    "key": "vocab:tocfl-n2-ke-ai",
+    "text": "可愛",
+    "locale": "zh-TW",
+    "examSource": "TOCFL",
+    "audioPath": "vocab:tocfl-n2-ke-ai"
+  },
+  {
+    "key": "vocab:tocfl-n2-ke-ai:ex0",
+    "text": "那隻貓咪好可愛！",
+    "locale": "zh-TW",
+    "examSource": "TOCFL"
+  },
+  {
+    "key": "vocab:tocfl-n2-dian-xin",
+    "text": "點心",
+    "locale": "zh-TW",
+    "examSource": "TOCFL",
+    "audioPath": "vocab:tocfl-n2-dian-xin"
+  },
+  {
+    "key": "vocab:tocfl-n2-dian-xin:ex0",
+    "text": "台灣的點心很好吃。",
+    "locale": "zh-TW",
+    "examSource": "TOCFL"
+  },
+  {
+    "key": "vocab:yct-1-mao",
+    "text": "猫",
+    "locale": "zh-CN",
+    "examSource": "YCT",
+    "audioPath": "vocab:yct-1-mao"
+  },
+  {
+    "key": "vocab:yct-1-mao:ex0",
+    "text": "我有一只小猫。",
+    "locale": "zh-CN",
+    "examSource": "YCT"
+  },
+  {
+    "key": "vocab:yct-1-gou",
+    "text": "狗",
+    "locale": "zh-CN",
+    "examSource": "YCT",
+    "audioPath": "vocab:yct-1-gou"
+  },
+  {
+    "key": "vocab:yct-1-gou:ex0",
+    "text": "小狗很可爱。",
+    "locale": "zh-CN",
+    "examSource": "YCT"
+  },
+  {
+    "key": "vocab:yct-1-hong",
+    "text": "红",
+    "locale": "zh-CN",
+    "examSource": "YCT",
+    "audioPath": "vocab:yct-1-hong"
+  },
+  {
+    "key": "vocab:yct-1-hong:ex0",
+    "text": "我喜欢红色的花。",
+    "locale": "zh-CN",
+    "examSource": "YCT"
+  },
+  {
+    "key": "vocab:yct-1-lan",
+    "text": "蓝",
+    "locale": "zh-CN",
+    "examSource": "YCT",
+    "audioPath": "vocab:yct-1-lan"
+  },
+  {
+    "key": "vocab:yct-1-lan:ex0",
+    "text": "天空是蓝色的。",
+    "locale": "zh-CN",
+    "examSource": "YCT"
+  },
+  {
+    "key": "vocab:yct-1-yu",
+    "text": "鱼",
+    "locale": "zh-CN",
+    "examSource": "YCT",
+    "audioPath": "vocab:yct-1-yu"
+  },
+  {
+    "key": "vocab:yct-1-yu:ex0",
+    "text": "鱼在水里游。",
+    "locale": "zh-CN",
+    "examSource": "YCT"
+  },
+  {
+    "key": "vocab:yct-1-ji",
+    "text": "鸡",
+    "locale": "zh-CN",
+    "examSource": "YCT",
+    "audioPath": "vocab:yct-1-ji"
+  },
+  {
+    "key": "vocab:yct-1-ji:ex0",
+    "text": "奶奶养了一只鸡。",
+    "locale": "zh-CN",
+    "examSource": "YCT"
+  },
+  {
+    "key": "vocab:yct-2-jiao-shi",
+    "text": "教室",
+    "locale": "zh-CN",
+    "examSource": "YCT",
+    "audioPath": "vocab:yct-2-jiao-shi"
+  },
+  {
+    "key": "vocab:yct-2-jiao-shi:ex0",
+    "text": "我们在教室里上课。",
+    "locale": "zh-CN",
+    "examSource": "YCT"
+  },
+  {
+    "key": "vocab:yct-2-zuo-ye",
+    "text": "作业",
+    "locale": "zh-CN",
+    "examSource": "YCT",
+    "audioPath": "vocab:yct-2-zuo-ye"
+  },
+  {
+    "key": "vocab:yct-2-zuo-ye:ex0",
+    "text": "今天的作业很多。",
+    "locale": "zh-CN",
+    "examSource": "YCT"
+  },
+  {
+    "key": "vocab:yct-2-pen-you",
+    "text": "朋友",
+    "locale": "zh-CN",
+    "examSource": "YCT",
+    "audioPath": "vocab:yct-2-pen-you"
+  },
+  {
+    "key": "vocab:yct-2-pen-you:ex0",
+    "text": "他是我的好朋友。",
+    "locale": "zh-CN",
+    "examSource": "YCT"
+  },
+  {
+    "key": "vocab:yct-2-tiao",
+    "text": "跳",
+    "locale": "zh-CN",
+    "examSource": "YCT",
+    "audioPath": "vocab:yct-2-tiao"
+  },
+  {
+    "key": "vocab:yct-2-tiao:ex0",
+    "text": "小朋友在跳绳。",
+    "locale": "zh-CN",
+    "examSource": "YCT"
+  },
+  {
+    "key": "vocab:yct-2-pao",
+    "text": "跑",
+    "locale": "zh-CN",
+    "examSource": "YCT",
+    "audioPath": "vocab:yct-2-pao"
+  },
+  {
+    "key": "vocab:yct-2-pao:ex0",
+    "text": "他跑得很快。",
+    "locale": "zh-CN",
+    "examSource": "YCT"
+  },
+  {
+    "key": "vocab:yct-2-chang",
+    "text": "唱",
+    "locale": "zh-CN",
+    "examSource": "YCT",
+    "audioPath": "vocab:yct-2-chang"
+  },
+  {
+    "key": "vocab:yct-2-chang:ex0",
+    "text": "她喜欢唱歌。",
+    "locale": "zh-CN",
+    "examSource": "YCT"
+  },
+  {
+    "key": "vocab:yct-2-hua",
+    "text": "画",
+    "locale": "zh-CN",
+    "examSource": "YCT",
+    "audioPath": "vocab:yct-2-hua"
+  },
+  {
+    "key": "vocab:yct-2-hua:ex0",
+    "text": "他画了一匹马。",
+    "locale": "zh-CN",
+    "examSource": "YCT"
+  },
+  {
+    "key": "vocab:bct-a-jing-li",
+    "text": "经理",
+    "locale": "zh-CN",
+    "examSource": "BCT",
+    "audioPath": "vocab:bct-a-jing-li"
+  },
+  {
+    "key": "vocab:bct-a-jing-li:ex0",
+    "text": "经理正在开会。",
+    "locale": "zh-CN",
+    "examSource": "BCT"
+  },
+  {
+    "key": "vocab:bct-a-gong-si",
+    "text": "公司",
+    "locale": "zh-CN",
+    "examSource": "BCT",
+    "audioPath": "vocab:bct-a-gong-si"
+  },
+  {
+    "key": "vocab:bct-a-gong-si:ex0",
+    "text": "我在一家外国公司工作。",
+    "locale": "zh-CN",
+    "examSource": "BCT"
+  },
+  {
+    "key": "vocab:bct-a-he-tong",
+    "text": "合同",
+    "locale": "zh-CN",
+    "examSource": "BCT",
+    "audioPath": "vocab:bct-a-he-tong"
+  },
+  {
+    "key": "vocab:bct-a-he-tong:ex0",
+    "text": "请签一下合同。",
+    "locale": "zh-CN",
+    "examSource": "BCT"
+  },
+  {
+    "key": "vocab:bct-a-bao-jia",
+    "text": "报价",
+    "locale": "zh-CN",
+    "examSource": "BCT",
+    "audioPath": "vocab:bct-a-bao-jia"
+  },
+  {
+    "key": "vocab:bct-a-bao-jia:ex0",
+    "text": "请给我们一份报价。",
+    "locale": "zh-CN",
+    "examSource": "BCT"
+  },
+  {
+    "key": "vocab:bct-a-ke-hu",
+    "text": "客户",
+    "locale": "zh-CN",
+    "examSource": "BCT",
+    "audioPath": "vocab:bct-a-ke-hu"
+  },
+  {
+    "key": "vocab:bct-a-ke-hu:ex0",
+    "text": "我们的客户很满意。",
+    "locale": "zh-CN",
+    "examSource": "BCT"
+  },
+  {
+    "key": "vocab:bct-a-ban-gong",
+    "text": "办公",
+    "locale": "zh-CN",
+    "examSource": "BCT",
+    "audioPath": "vocab:bct-a-ban-gong"
+  },
+  {
+    "key": "vocab:bct-a-ban-gong:ex0",
+    "text": "我周一至周五办公。",
+    "locale": "zh-CN",
+    "examSource": "BCT"
+  },
+  {
+    "key": "vocab:bct-b-tou-zi",
+    "text": "投资",
+    "locale": "zh-CN",
+    "examSource": "BCT",
+    "audioPath": "vocab:bct-b-tou-zi"
+  },
+  {
+    "key": "vocab:bct-b-tou-zi:ex0",
+    "text": "这个项目需要大量投资。",
+    "locale": "zh-CN",
+    "examSource": "BCT"
+  },
+  {
+    "key": "vocab:bct-b-zhan-lue",
+    "text": "战略",
+    "locale": "zh-CN",
+    "examSource": "BCT",
+    "audioPath": "vocab:bct-b-zhan-lue"
+  },
+  {
+    "key": "vocab:bct-b-zhan-lue:ex0",
+    "text": "我们需要重新制定战略。",
+    "locale": "zh-CN",
+    "examSource": "BCT"
+  },
+  {
+    "key": "vocab:bct-b-li-run",
+    "text": "利润",
+    "locale": "zh-CN",
+    "examSource": "BCT",
+    "audioPath": "vocab:bct-b-li-run"
+  },
+  {
+    "key": "vocab:bct-b-li-run:ex0",
+    "text": "今年的利润增长了百分之二十。",
+    "locale": "zh-CN",
+    "examSource": "BCT"
+  },
+  {
+    "key": "vocab:bct-b-he-zuo",
+    "text": "合作",
+    "locale": "zh-CN",
+    "examSource": "BCT",
+    "audioPath": "vocab:bct-b-he-zuo"
+  },
+  {
+    "key": "vocab:bct-b-he-zuo:ex0",
+    "text": "我们期待与贵公司合作。",
+    "locale": "zh-CN",
+    "examSource": "BCT"
+  },
+  {
+    "key": "vocab:bct-b-shi-chang",
+    "text": "市场",
+    "locale": "zh-CN",
+    "examSource": "BCT",
+    "audioPath": "vocab:bct-b-shi-chang"
+  },
+  {
+    "key": "vocab:bct-b-shi-chang:ex0",
+    "text": "这个产品在市场上很受欢迎。",
+    "locale": "zh-CN",
+    "examSource": "BCT"
+  },
+  {
+    "key": "vocab:bct-b-jue-yi",
+    "text": "决议",
+    "locale": "zh-CN",
+    "examSource": "BCT",
+    "audioPath": "vocab:bct-b-jue-yi"
+  },
+  {
+    "key": "vocab:bct-b-jue-yi:ex0",
+    "text": "董事会通过了这项决议。",
+    "locale": "zh-CN",
+    "examSource": "BCT"
+  },
+  {
+    "key": "vocab:hskk-ele-ni-hao",
+    "text": "你好",
+    "locale": "zh-CN",
+    "examSource": "HSKK",
+    "audioPath": "vocab:hskk-ele-ni-hao"
+  },
+  {
+    "key": "vocab:hskk-ele-ni-hao:ex0",
+    "text": "你好！今天天气真好。",
+    "locale": "zh-CN",
+    "examSource": "HSKK"
+  },
+  {
+    "key": "vocab:hskk-ele-jie-shao",
+    "text": "介绍",
+    "locale": "zh-CN",
+    "examSource": "HSKK",
+    "audioPath": "vocab:hskk-ele-jie-shao"
+  },
+  {
+    "key": "vocab:hskk-ele-jie-shao:ex0",
+    "text": "请让我介绍一下自己。",
+    "locale": "zh-CN",
+    "examSource": "HSKK"
+  },
+  {
+    "key": "vocab:hskk-ele-xi-huan",
+    "text": "喜欢",
+    "locale": "zh-CN",
+    "examSource": "HSKK",
+    "audioPath": "vocab:hskk-ele-xi-huan"
+  },
+  {
+    "key": "vocab:hskk-ele-xi-huan:ex0",
+    "text": "我很喜欢学中文。",
+    "locale": "zh-CN",
+    "examSource": "HSKK"
+  },
+  {
+    "key": "vocab:hskk-ele-zhù-ai",
+    "text": "住在",
+    "locale": "zh-CN",
+    "examSource": "HSKK",
+    "audioPath": "vocab:hskk-ele-zhù-ai"
+  },
+  {
+    "key": "vocab:hskk-ele-zhù-ai:ex0",
+    "text": "我现在住在北京。",
+    "locale": "zh-CN",
+    "examSource": "HSKK"
+  },
+  {
+    "key": "vocab:hskk-ele-hui-shuo",
+    "text": "会说",
+    "locale": "zh-CN",
+    "examSource": "HSKK",
+    "audioPath": "vocab:hskk-ele-hui-shuo"
+  },
+  {
+    "key": "vocab:hskk-ele-hui-shuo:ex0",
+    "text": "我会说一点点中文。",
+    "locale": "zh-CN",
+    "examSource": "HSKK"
+  },
+  {
+    "key": "vocab:hskk-ele-kou-yu",
+    "text": "口语",
+    "locale": "zh-CN",
+    "examSource": "HSKK",
+    "audioPath": "vocab:hskk-ele-kou-yu"
+  },
+  {
+    "key": "vocab:hskk-ele-kou-yu:ex0",
+    "text": "我的口语还需要练习。",
+    "locale": "zh-CN",
+    "examSource": "HSKK"
+  },
+  {
+    "key": "vocab:hskk-int-kan-fa",
+    "text": "看法",
+    "locale": "zh-CN",
+    "examSource": "HSKK",
+    "audioPath": "vocab:hskk-int-kan-fa"
+  },
+  {
+    "key": "vocab:hskk-int-kan-fa:ex0",
+    "text": "你对这个问题有什么看法？",
+    "locale": "zh-CN",
+    "examSource": "HSKK"
+  },
+  {
+    "key": "vocab:hskk-int-jing-yan",
+    "text": "经验",
+    "locale": "zh-CN",
+    "examSource": "HSKK",
+    "audioPath": "vocab:hskk-int-jing-yan"
+  },
+  {
+    "key": "vocab:hskk-int-jing-yan:ex0",
+    "text": "请分享你学中文的经验。",
+    "locale": "zh-CN",
+    "examSource": "HSKK"
+  },
+  {
+    "key": "vocab:hskk-int-yin-xiang",
+    "text": "印象",
+    "locale": "zh-CN",
+    "examSource": "HSKK",
+    "audioPath": "vocab:hskk-int-yin-xiang"
+  },
+  {
+    "key": "vocab:hskk-int-yin-xiang:ex0",
+    "text": "你对中国的印象怎么样？",
+    "locale": "zh-CN",
+    "examSource": "HSKK"
+  },
+  {
+    "key": "vocab:hskk-int-li-you",
+    "text": "理由",
+    "locale": "zh-CN",
+    "examSource": "HSKK",
+    "audioPath": "vocab:hskk-int-li-you"
+  },
+  {
+    "key": "vocab:hskk-int-li-you:ex0",
+    "text": "请说说你学中文的理由。",
+    "locale": "zh-CN",
+    "examSource": "HSKK"
+  },
+  {
+    "key": "vocab:hskk-int-bi-jiao",
+    "text": "比较",
+    "locale": "zh-CN",
+    "examSource": "HSKK",
+    "audioPath": "vocab:hskk-int-bi-jiao"
+  },
+  {
+    "key": "vocab:hskk-int-bi-jiao:ex0",
+    "text": "请你比较一下这两个城市。",
+    "locale": "zh-CN",
+    "examSource": "HSKK"
+  },
+  {
+    "key": "vocab:hskk-int-jian-yi",
+    "text": "建议",
+    "locale": "zh-CN",
+    "examSource": "HSKK",
+    "audioPath": "vocab:hskk-int-jian-yi"
+  },
+  {
+    "key": "vocab:hskk-int-jian-yi:ex0",
+    "text": "你有什么好的建议吗？",
+    "locale": "zh-CN",
+    "examSource": "HSKK"
+  },
+  {
+    "key": "vocab:ap-1-chuan-tong",
+    "text": "传统",
+    "locale": "zh-CN",
+    "examSource": "AP",
+    "audioPath": "vocab:ap-1-chuan-tong"
+  },
+  {
+    "key": "vocab:ap-1-chuan-tong:ex0",
+    "text": "春节是中国最重要的传统节日。",
+    "locale": "zh-CN",
+    "examSource": "AP"
+  },
+  {
+    "key": "vocab:ap-1-wen-hua",
+    "text": "文化",
+    "locale": "zh-CN",
+    "examSource": "AP",
+    "audioPath": "vocab:ap-1-wen-hua"
+  },
+  {
+    "key": "vocab:ap-1-wen-hua:ex0",
+    "text": "中国文化历史悠久。",
+    "locale": "zh-CN",
+    "examSource": "AP"
+  },
+  {
+    "key": "vocab:ap-1-li-wu",
+    "text": "礼物",
+    "locale": "zh-CN",
+    "examSource": "AP",
+    "audioPath": "vocab:ap-1-li-wu"
+  },
+  {
+    "key": "vocab:ap-1-li-wu:ex0",
+    "text": "我买了一份生日礼物送给她。",
+    "locale": "zh-CN",
+    "examSource": "AP"
+  },
+  {
+    "key": "vocab:ap-1-lu-you",
+    "text": "旅游",
+    "locale": "zh-CN",
+    "examSource": "AP",
+    "audioPath": "vocab:ap-1-lu-you"
+  },
+  {
+    "key": "vocab:ap-1-lu-you:ex0",
+    "text": "暑假我们打算去中国旅游。",
+    "locale": "zh-CN",
+    "examSource": "AP"
+  },
+  {
+    "key": "vocab:ap-1-dian-nao",
+    "text": "电脑",
+    "locale": "zh-CN",
+    "examSource": "AP",
+    "audioPath": "vocab:ap-1-dian-nao"
+  },
+  {
+    "key": "vocab:ap-1-dian-nao:ex0",
+    "text": "我用电脑写作业。",
+    "locale": "zh-CN",
+    "examSource": "AP"
+  },
+  {
+    "key": "vocab:ap-2-huan-jing",
+    "text": "环境",
+    "locale": "zh-CN",
+    "examSource": "AP",
+    "audioPath": "vocab:ap-2-huan-jing"
+  },
+  {
+    "key": "vocab:ap-2-huan-jing:ex0",
+    "text": "我们要保护环境。",
+    "locale": "zh-CN",
+    "examSource": "AP"
+  },
+  {
+    "key": "vocab:ap-2-she-hui",
+    "text": "社会",
+    "locale": "zh-CN",
+    "examSource": "AP",
+    "audioPath": "vocab:ap-2-she-hui"
+  },
+  {
+    "key": "vocab:ap-2-she-hui:ex0",
+    "text": "现代社会变化很快。",
+    "locale": "zh-CN",
+    "examSource": "AP"
+  },
+  {
+    "key": "vocab:ap-2-jing-ji",
+    "text": "经济",
+    "locale": "zh-CN",
+    "examSource": "AP",
+    "audioPath": "vocab:ap-2-jing-ji"
+  },
+  {
+    "key": "vocab:ap-2-jing-ji:ex0",
+    "text": "中国的经济发展很快。",
+    "locale": "zh-CN",
+    "examSource": "AP"
+  },
+  {
+    "key": "vocab:ap-2-jiao-liu",
+    "text": "交流",
+    "locale": "zh-CN",
+    "examSource": "AP",
+    "audioPath": "vocab:ap-2-jiao-liu"
+  },
+  {
+    "key": "vocab:ap-2-jiao-liu:ex0",
+    "text": "文化交流促进互相理解。",
+    "locale": "zh-CN",
+    "examSource": "AP"
+  },
+  {
+    "key": "vocab:ap-2-ke-ji",
+    "text": "科技",
+    "locale": "zh-CN",
+    "examSource": "AP",
+    "audioPath": "vocab:ap-2-ke-ji"
+  },
+  {
+    "key": "vocab:ap-2-ke-ji:ex0",
+    "text": "科技改变了我们的生活。",
+    "locale": "zh-CN",
+    "examSource": "AP"
+  },
+  {
+    "key": "vocab:ap-2-chun-jie",
+    "text": "春节",
+    "locale": "zh-CN",
+    "examSource": "AP",
+    "audioPath": "vocab:ap-2-chun-jie"
+  },
+  {
+    "key": "vocab:ap-2-chun-jie:ex0",
+    "text": "春节我们全家团圆。",
+    "locale": "zh-CN",
+    "examSource": "AP"
+  },
+  {
+    "key": "vocab:ib-ab-jia-ting",
+    "text": "家庭",
+    "locale": "zh-CN",
+    "examSource": "IB",
+    "audioPath": "vocab:ib-ab-jia-ting"
+  },
+  {
+    "key": "vocab:ib-ab-jia-ting:ex0",
+    "text": "我的家庭有四口人。",
+    "locale": "zh-CN",
+    "examSource": "IB"
+  },
+  {
+    "key": "vocab:ib-ab-tian-qi",
+    "text": "天气",
+    "locale": "zh-CN",
+    "examSource": "IB",
+    "audioPath": "vocab:ib-ab-tian-qi"
+  },
+  {
+    "key": "vocab:ib-ab-tian-qi:ex0",
+    "text": "今天天气很好。",
+    "locale": "zh-CN",
+    "examSource": "IB"
+  },
+  {
+    "key": "vocab:ib-ab-jiao-yu",
+    "text": "教育",
+    "locale": "zh-CN",
+    "examSource": "IB",
+    "audioPath": "vocab:ib-ab-jiao-yu"
+  },
+  {
+    "key": "vocab:ib-ab-jiao-yu:ex0",
+    "text": "教育对每个人都很重要。",
+    "locale": "zh-CN",
+    "examSource": "IB"
+  },
+  {
+    "key": "vocab:ib-ab-shi-wu",
+    "text": "食物",
+    "locale": "zh-CN",
+    "examSource": "IB",
+    "audioPath": "vocab:ib-ab-shi-wu"
+  },
+  {
+    "key": "vocab:ib-ab-shi-wu:ex0",
+    "text": "健康的食物对身体好。",
+    "locale": "zh-CN",
+    "examSource": "IB"
+  },
+  {
+    "key": "vocab:ib-ab-yin-yue",
+    "text": "音乐",
+    "locale": "zh-CN",
+    "examSource": "IB",
+    "audioPath": "vocab:ib-ab-yin-yue"
+  },
+  {
+    "key": "vocab:ib-ab-yin-yue:ex0",
+    "text": "我喜欢听古典音乐。",
+    "locale": "zh-CN",
+    "examSource": "IB"
+  },
+  {
+    "key": "vocab:ib-ab-dian-shi",
+    "text": "电视",
+    "locale": "zh-CN",
+    "examSource": "IB",
+    "audioPath": "vocab:ib-ab-dian-shi"
+  },
+  {
+    "key": "vocab:ib-ab-dian-shi:ex0",
+    "text": "我晚上看电视。",
+    "locale": "zh-CN",
+    "examSource": "IB"
+  },
+  {
+    "key": "vocab:ib-bsl-quan-qiu",
+    "text": "全球",
+    "locale": "zh-CN",
+    "examSource": "IB",
+    "audioPath": "vocab:ib-bsl-quan-qiu"
+  },
+  {
+    "key": "vocab:ib-bsl-quan-qiu:ex0",
+    "text": "全球变暖是一个严重的问题。",
+    "locale": "zh-CN",
+    "examSource": "IB"
+  },
+  {
+    "key": "vocab:ib-bsl-ke-chi-xu",
+    "text": "可持续",
+    "locale": "zh-CN",
+    "examSource": "IB",
+    "audioPath": "vocab:ib-bsl-ke-chi-xu"
+  },
+  {
+    "key": "vocab:ib-bsl-ke-chi-xu:ex0",
+    "text": "可持续发展是未来的方向。",
+    "locale": "zh-CN",
+    "examSource": "IB"
+  },
+  {
+    "key": "vocab:ib-bsl-mei-ti",
+    "text": "媒体",
+    "locale": "zh-CN",
+    "examSource": "IB",
+    "audioPath": "vocab:ib-bsl-mei-ti"
+  },
+  {
+    "key": "vocab:ib-bsl-mei-ti:ex0",
+    "text": "社交媒体影响了年轻人的生活。",
+    "locale": "zh-CN",
+    "examSource": "IB"
+  },
+  {
+    "key": "vocab:ib-bsl-duo-yuan",
+    "text": "多元",
+    "locale": "zh-CN",
+    "examSource": "IB",
+    "audioPath": "vocab:ib-bsl-duo-yuan"
+  },
+  {
+    "key": "vocab:ib-bsl-duo-yuan:ex0",
+    "text": "多元文化让世界更精彩。",
+    "locale": "zh-CN",
+    "examSource": "IB"
+  },
+  {
+    "key": "vocab:ib-bsl-guo-ji",
+    "text": "国际",
+    "locale": "zh-CN",
+    "examSource": "IB",
+    "audioPath": "vocab:ib-bsl-guo-ji"
+  },
+  {
+    "key": "vocab:ib-bsl-guo-ji:ex0",
+    "text": "国际交流越来越重要。",
+    "locale": "zh-CN",
+    "examSource": "IB"
+  },
+  {
+    "key": "vocab:ib-bsl-ke-xue",
+    "text": "科学",
+    "locale": "zh-CN",
+    "examSource": "IB",
+    "audioPath": "vocab:ib-bsl-ke-xue"
+  },
+  {
+    "key": "vocab:ib-bsl-ke-xue:ex0",
+    "text": "科学技术的进步改善了生活。",
+    "locale": "zh-CN",
+    "examSource": "IB"
+  },
+  {
+    "key": "grammar:g-shi:ex0",
+    "text": "我是学生。",
+    "locale": "zh-CN",
+    "examSource": "HSK"
+  },
+  {
+    "key": "grammar:g-shi:ex1",
+    "text": "他是中国人。",
+    "locale": "zh-CN",
+    "examSource": "HSK"
+  },
+  {
+    "key": "grammar:g-hen:ex0",
+    "text": "今天很热。",
+    "locale": "zh-CN",
+    "examSource": "HSK"
+  },
+  {
+    "key": "grammar:g-hen:ex1",
+    "text": "汉语很有意思。",
+    "locale": "zh-CN",
+    "examSource": "HSK"
+  },
+  {
+    "key": "grammar:g-ma:ex0",
+    "text": "你喝茶吗？",
+    "locale": "zh-CN",
+    "examSource": "HSK"
+  },
+  {
+    "key": "grammar:g-ma:ex1",
+    "text": "他是你朋友吗？",
+    "locale": "zh-CN",
+    "examSource": "HSK"
+  },
+  {
+    "key": "grammar:g-de:ex0",
+    "text": "这是我的手机。",
+    "locale": "zh-CN",
+    "examSource": "HSK"
+  },
+  {
+    "key": "grammar:g-de:ex1",
+    "text": "我妈妈是医生。",
+    "locale": "zh-CN",
+    "examSource": "HSK"
+  },
+  {
+    "key": "grammar:g-bu-mei:ex0",
+    "text": "我不吃肉。",
+    "locale": "zh-CN",
+    "examSource": "HSK"
+  },
+  {
+    "key": "grammar:g-bu-mei:ex1",
+    "text": "他没来。",
+    "locale": "zh-CN",
+    "examSource": "HSK"
+  },
+  {
+    "key": "grammar:g-svo:ex0",
+    "text": "我明天去北京。",
+    "locale": "zh-CN",
+    "examSource": "HSK"
+  },
+  {
+    "key": "grammar:g-svo:ex1",
+    "text": "他在家吃饭。",
+    "locale": "zh-CN",
+    "examSource": "HSK"
+  },
+  {
+    "key": "grammar:g-classifiers:ex0",
+    "text": "我有两个哥哥。",
+    "locale": "zh-CN",
+    "examSource": "HSK"
+  },
+  {
+    "key": "grammar:g-classifiers:ex1",
+    "text": "请给我一杯水。",
+    "locale": "zh-CN",
+    "examSource": "HSK"
+  },
+  {
+    "key": "grammar:g-le:ex0",
+    "text": "我吃了两个苹果。",
+    "locale": "zh-CN",
+    "examSource": "HSK"
+  },
+  {
+    "key": "grammar:g-le:ex1",
+    "text": "他走了。",
+    "locale": "zh-CN",
+    "examSource": "HSK"
+  },
+  {
+    "key": "grammar:g-zai-prog:ex0",
+    "text": "我在看书呢。",
+    "locale": "zh-CN",
+    "examSource": "HSK"
+  },
+  {
+    "key": "grammar:g-zai-prog:ex1",
+    "text": "他们正在上课。",
+    "locale": "zh-CN",
+    "examSource": "HSK"
+  },
+  {
+    "key": "grammar:g-yao-xiang:ex0",
+    "text": "我想学汉语。",
+    "locale": "zh-CN",
+    "examSource": "HSK"
+  },
+  {
+    "key": "grammar:g-yao-xiang:ex1",
+    "text": "我要这个。",
+    "locale": "zh-CN",
+    "examSource": "HSK"
+  },
+  {
+    "key": "grammar:g-hui-neng-keyi:ex0",
+    "text": "我会游泳。",
+    "locale": "zh-CN",
+    "examSource": "HSK"
+  },
+  {
+    "key": "grammar:g-hui-neng-keyi:ex1",
+    "text": "这里可以拍照吗？",
+    "locale": "zh-CN",
+    "examSource": "HSK"
+  },
+  {
+    "key": "grammar:g-guo:ex0",
+    "text": "你吃过北京烤鸭吗？",
+    "locale": "zh-CN",
+    "examSource": "HSK"
+  },
+  {
+    "key": "grammar:g-guo:ex1",
+    "text": "我没学过日语。",
+    "locale": "zh-CN",
+    "examSource": "HSK"
+  },
+  {
+    "key": "grammar:g-comparative-bi:ex0",
+    "text": "汉语比英语难。",
+    "locale": "zh-CN",
+    "examSource": "HSK"
+  },
+  {
+    "key": "grammar:g-comparative-bi:ex1",
+    "text": "他比我大三岁。",
+    "locale": "zh-CN",
+    "examSource": "HSK"
+  },
+  {
+    "key": "grammar:g-yinwei-suoyi:ex0",
+    "text": "因为我喜欢中国文化，所以学汉语。",
+    "locale": "zh-CN",
+    "examSource": "HSK"
+  },
+  {
+    "key": "grammar:g-zhengzai-ne:ex0",
+    "text": "我喝咖啡，你呢？",
+    "locale": "zh-CN",
+    "examSource": "HSK"
+  },
+  {
+    "key": "grammar:g-resultative:ex0",
+    "text": "我听懂了。",
+    "locale": "zh-CN",
+    "examSource": "HSK"
+  },
+  {
+    "key": "grammar:g-resultative:ex1",
+    "text": "作业我做完了。",
+    "locale": "zh-CN",
+    "examSource": "HSK"
+  },
+  {
+    "key": "grammar:g-ba:ex0",
+    "text": "请把门关上。",
+    "locale": "zh-CN",
+    "examSource": "HSK"
+  },
+  {
+    "key": "grammar:g-ba:ex1",
+    "text": "我把作业做完了。",
+    "locale": "zh-CN",
+    "examSource": "HSK"
+  },
+  {
+    "key": "grammar:g-de-complement:ex0",
+    "text": "她汉语说得很流利。",
+    "locale": "zh-CN",
+    "examSource": "HSK"
+  },
+  {
+    "key": "grammar:g-directional:ex0",
+    "text": "他回家去了。",
+    "locale": "zh-CN",
+    "examSource": "HSK"
+  },
+  {
+    "key": "grammar:g-directional:ex1",
+    "text": "请坐下。",
+    "locale": "zh-CN",
+    "examSource": "HSK"
+  },
+  {
+    "key": "grammar:g-shi-de:ex0",
+    "text": "我是在北京学的汉语。",
+    "locale": "zh-CN",
+    "examSource": "HSK"
+  },
+  {
+    "key": "grammar:g-yijing-hai:ex0",
+    "text": "我已经做完作业了。",
+    "locale": "zh-CN",
+    "examSource": "HSK"
+  },
+  {
+    "key": "grammar:g-yijing-hai:ex1",
+    "text": "他还没起床呢。",
+    "locale": "zh-CN",
+    "examSource": "HSK"
+  },
+  {
+    "key": "grammar:tocfl-n1-le-change:ex0",
+    "text": "下雨了。",
+    "locale": "zh-TW",
+    "examSource": "TOCFL"
+  },
+  {
+    "key": "grammar:tocfl-n1-le-change:ex1",
+    "text": "我饿了。",
+    "locale": "zh-TW",
+    "examSource": "TOCFL"
+  },
+  {
+    "key": "grammar:tocfl-n2-hui-ability:ex0",
+    "text": "我會說一點中文。",
+    "locale": "zh-TW",
+    "examSource": "TOCFL"
+  },
+  {
+    "key": "grammar:tocfl-n2-hui-ability:ex1",
+    "text": "明天會下雨。",
+    "locale": "zh-TW",
+    "examSource": "TOCFL"
+  },
+  {
+    "key": "grammar:yct-1-you-have:ex0",
+    "text": "我有一只小狗。",
+    "locale": "zh-CN",
+    "examSource": "YCT"
+  },
+  {
+    "key": "grammar:yct-1-you-have:ex1",
+    "text": "桌子上有一个苹果。",
+    "locale": "zh-CN",
+    "examSource": "YCT"
+  },
+  {
+    "key": "grammar:yct-2-hui-can:ex0",
+    "text": "我会画画。",
+    "locale": "zh-CN",
+    "examSource": "YCT"
+  },
+  {
+    "key": "grammar:yct-2-hui-can:ex1",
+    "text": "妹妹会弹钢琴。",
+    "locale": "zh-CN",
+    "examSource": "YCT"
+  },
+  {
+    "key": "grammar:bct-a-bei-passive:ex0",
+    "text": "合同被经理签了。",
+    "locale": "zh-CN",
+    "examSource": "BCT"
+  },
+  {
+    "key": "grammar:bct-a-bei-passive:ex1",
+    "text": "他被公司派到上海工作。",
+    "locale": "zh-CN",
+    "examSource": "BCT"
+  },
+  {
+    "key": "grammar:bct-b-bu-dan:ex0",
+    "text": "这个方案不仅节省时间，而且降低成本。",
+    "locale": "zh-CN",
+    "examSource": "BCT"
+  },
+  {
+    "key": "grammar:bct-b-bu-dan:ex1",
+    "text": "他不仅会说英语，还会说法语。",
+    "locale": "zh-CN",
+    "examSource": "BCT"
+  },
+  {
+    "key": "grammar:hskk-ele-zheng-zai:ex0",
+    "text": "我正在学中文。",
+    "locale": "zh-CN",
+    "examSource": "HSKK"
+  },
+  {
+    "key": "grammar:hskk-ele-zheng-zai:ex1",
+    "text": "他正在打电话。",
+    "locale": "zh-CN",
+    "examSource": "HSKK"
+  },
+  {
+    "key": "grammar:hskk-int-ba-construction:ex0",
+    "text": "请把窗户打开。",
+    "locale": "zh-CN",
+    "examSource": "HSKK"
+  },
+  {
+    "key": "grammar:hskk-int-ba-construction:ex1",
+    "text": "我把作业做完了。",
+    "locale": "zh-CN",
+    "examSource": "HSKK"
+  },
+  {
+    "key": "grammar:ap-1-sui-ran-dan-shi:ex0",
+    "text": "虽然汉语很难，但是很有意思。",
+    "locale": "zh-CN",
+    "examSource": "AP"
+  },
+  {
+    "key": "grammar:ap-1-sui-ran-dan-shi:ex1",
+    "text": "虽然天气不好，但是我们还是去了。",
+    "locale": "zh-CN",
+    "examSource": "AP"
+  },
+  {
+    "key": "grammar:ap-2-chu-le-yi-wai:ex0",
+    "text": "除了学习以外，我还喜欢运动。",
+    "locale": "zh-CN",
+    "examSource": "AP"
+  },
+  {
+    "key": "grammar:ap-2-chu-le-yi-wai:ex1",
+    "text": "除了他以外，我们都到了。",
+    "locale": "zh-CN",
+    "examSource": "AP"
+  },
+  {
+    "key": "grammar:ib-ab-bi-jiao:ex0",
+    "text": "学中文比学英文难。",
+    "locale": "zh-CN",
+    "examSource": "IB"
+  },
+  {
+    "key": "grammar:ib-ab-bi-jiao:ex1",
+    "text": "今天比昨天暖和多了。",
+    "locale": "zh-CN",
+    "examSource": "IB"
+  },
+  {
+    "key": "grammar:ib-bsl-chu-le:ex0",
+    "text": "除了环境问题以外，我们也讨论了教育。",
+    "locale": "zh-CN",
+    "examSource": "IB"
+  },
+  {
+    "key": "grammar:ib-bsl-chu-le:ex1",
+    "text": "除了小明以外，大家都通过了考试。",
+    "locale": "zh-CN",
+    "examSource": "IB"
+  },
+  {
+    "key": "reading:r-wo-de-yitian:p0",
+    "text": "我叫安娜，我是学生。",
+    "locale": "zh-CN",
+    "examSource": "HSK"
+  },
+  {
+    "key": "reading:r-wo-de-yitian:p1",
+    "text": "我七点起床，喝一杯咖啡。",
+    "locale": "zh-CN",
+    "examSource": "HSK"
+  },
+  {
+    "key": "reading:r-wo-de-yitian:p2",
+    "text": "我很喜欢学汉语。",
+    "locale": "zh-CN",
+    "examSource": "HSK"
+  },
+  {
+    "key": "reading:r-wo-de-yitian:p3",
+    "text": "晚上我看书，十一点睡觉。",
+    "locale": "zh-CN",
+    "examSource": "HSK"
+  },
+  {
+    "key": "reading:r-zai-fandian:p0",
+    "text": "服务员：你好！你要什么？",
+    "locale": "zh-CN",
+    "examSource": "HSK"
+  },
+  {
+    "key": "reading:r-zai-fandian:p1",
+    "text": "客人：我要米饭和茶。",
+    "locale": "zh-CN",
+    "examSource": "HSK"
+  },
+  {
+    "key": "reading:r-zai-fandian:p2",
+    "text": "服务员：好的。一共十五块。",
+    "locale": "zh-CN",
+    "examSource": "HSK"
+  },
+  {
+    "key": "reading:r-zai-fandian:p3",
+    "text": "客人：谢谢！",
+    "locale": "zh-CN",
+    "examSource": "HSK"
+  },
+  {
+    "key": "reading:r-wo-de-jia:p0",
+    "text": "我家有四个人：爸爸、妈妈、弟弟和我。",
+    "locale": "zh-CN",
+    "examSource": "HSK"
+  },
+  {
+    "key": "reading:r-wo-de-jia:p1",
+    "text": "爸爸是老师，妈妈是医生。",
+    "locale": "zh-CN",
+    "examSource": "HSK"
+  },
+  {
+    "key": "reading:r-wo-de-jia:p2",
+    "text": "弟弟很小，他六岁。",
+    "locale": "zh-CN",
+    "examSource": "HSK"
+  },
+  {
+    "key": "reading:r-wo-de-jia:p3",
+    "text": "我们都很爱我们的家。",
+    "locale": "zh-CN",
+    "examSource": "HSK"
+  },
+  {
+    "key": "reading:r-chunjie:p0",
+    "text": "春节是中国最重要的节日。",
+    "locale": "zh-CN",
+    "examSource": "HSK"
+  },
+  {
+    "key": "reading:r-chunjie:p1",
+    "text": "春节的时候，人们回家看爸爸妈妈。",
+    "locale": "zh-CN",
+    "examSource": "HSK"
+  },
+  {
+    "key": "reading:r-chunjie:p2",
+    "text": "大家一起吃饭，孩子们有红包。",
+    "locale": "zh-CN",
+    "examSource": "HSK"
+  },
+  {
+    "key": "reading:r-chunjie:p3",
+    "text": "人们说：新年快乐！",
+    "locale": "zh-CN",
+    "examSource": "HSK"
+  },
+  {
+    "key": "reading:r-xuexi-hanyu:p0",
+    "text": "现在很多人学习汉语。",
+    "locale": "zh-CN",
+    "examSource": "HSK"
+  },
+  {
+    "key": "reading:r-xuexi-hanyu:p1",
+    "text": "有的人因为工作，有的人因为喜欢中国文化。",
+    "locale": "zh-CN",
+    "examSource": "HSK"
+  },
+  {
+    "key": "reading:r-xuexi-hanyu:p2",
+    "text": "汉语不容易，可是很有意思。",
+    "locale": "zh-CN",
+    "examSource": "HSK"
+  },
+  {
+    "key": "reading:r-xuexi-hanyu:p3",
+    "text": "每天学习一点儿，就会越来越好。",
+    "locale": "zh-CN",
+    "examSource": "HSK"
+  },
+  {
+    "key": "reading:r-tocfl-n1-wo-de-jia:p0",
+    "text": "我家有三個人：爸爸、媽媽和我。",
+    "locale": "zh-TW",
+    "examSource": "TOCFL"
+  },
+  {
+    "key": "reading:r-tocfl-n1-wo-de-jia:p1",
+    "text": "爸爸是工程師，媽媽是老師。",
+    "locale": "zh-TW",
+    "examSource": "TOCFL"
+  },
+  {
+    "key": "reading:r-tocfl-n1-wo-de-jia:p2",
+    "text": "我們住在台北，台北是一個很漂亮的城市。",
+    "locale": "zh-TW",
+    "examSource": "TOCFL"
+  },
+  {
+    "key": "reading:r-tocfl-n1-wo-de-jia:p3",
+    "text": "我愛我的家。",
+    "locale": "zh-TW",
+    "examSource": "TOCFL"
+  },
+  {
+    "key": "reading:r-tocfl-n2-tai-bei-yi-ri:p0",
+    "text": "上個星期六，我和朋友去台北玩。",
+    "locale": "zh-TW",
+    "examSource": "TOCFL"
+  },
+  {
+    "key": "reading:r-tocfl-n2-tai-bei-yi-ri:p1",
+    "text": "我們先去了故宮博物院，看到了很多古老的東西。",
+    "locale": "zh-TW",
+    "examSource": "TOCFL"
+  },
+  {
+    "key": "reading:r-tocfl-n2-tai-bei-yi-ri:p2",
+    "text": "中午我們去吃了一碗牛肉麵，很好吃。",
+    "locale": "zh-TW",
+    "examSource": "TOCFL"
+  },
+  {
+    "key": "reading:r-tocfl-n2-tai-bei-yi-ri:p3",
+    "text": "下午我們去了象山，從山上看台北非常漂亮。",
+    "locale": "zh-TW",
+    "examSource": "TOCFL"
+  },
+  {
+    "key": "reading:r-yct-1-wo-de-dong-wu:p0",
+    "text": "我家有一只小猫和一只小狗。",
+    "locale": "zh-CN",
+    "examSource": "YCT"
+  },
+  {
+    "key": "reading:r-yct-1-wo-de-dong-wu:p1",
+    "text": "小猫是白色的，小狗是黑色的。",
+    "locale": "zh-CN",
+    "examSource": "YCT"
+  },
+  {
+    "key": "reading:r-yct-1-wo-de-dong-wu:p2",
+    "text": "我喜欢和小狗一起跑。",
+    "locale": "zh-CN",
+    "examSource": "YCT"
+  },
+  {
+    "key": "reading:r-yct-1-wo-de-dong-wu:p3",
+    "text": "小猫喜欢睡觉。",
+    "locale": "zh-CN",
+    "examSource": "YCT"
+  },
+  {
+    "key": "reading:r-yct-2-xue-xiao-sheng-huo:p0",
+    "text": "我每天早上七点起床去上学。",
+    "locale": "zh-CN",
+    "examSource": "YCT"
+  },
+  {
+    "key": "reading:r-yct-2-xue-xiao-sheng-huo:p1",
+    "text": "上午我们上语文课和数学课。",
+    "locale": "zh-CN",
+    "examSource": "YCT"
+  },
+  {
+    "key": "reading:r-yct-2-xue-xiao-sheng-huo:p2",
+    "text": "中午我和朋友一起吃午饭。",
+    "locale": "zh-CN",
+    "examSource": "YCT"
+  },
+  {
+    "key": "reading:r-yct-2-xue-xiao-sheng-huo:p3",
+    "text": "下午我们上体育课，大家都很开心。",
+    "locale": "zh-CN",
+    "examSource": "YCT"
+  },
+  {
+    "key": "reading:r-bct-a-gong-si-jie-shao:p0",
+    "text": "欢迎加入我们公司！我们是做国际贸易的。",
+    "locale": "zh-CN",
+    "examSource": "BCT"
+  },
+  {
+    "key": "reading:r-bct-a-gong-si-jie-shao:p1",
+    "text": "公司成立于2005年，现在有三百多名员工。",
+    "locale": "zh-CN",
+    "examSource": "BCT"
+  },
+  {
+    "key": "reading:r-bct-a-gong-si-jie-shao:p2",
+    "text": "我们的客户来自世界各地，包括美国、欧洲和东南亚。",
+    "locale": "zh-CN",
+    "examSource": "BCT"
+  },
+  {
+    "key": "reading:r-bct-a-gong-si-jie-shao:p3",
+    "text": "希望我们合作愉快！",
+    "locale": "zh-CN",
+    "examSource": "BCT"
+  },
+  {
+    "key": "reading:r-bct-b-shi-chang-bao-gao:p0",
+    "text": "第三季度的市场报告显示，我们的销售额增长了百分之十五。",
+    "locale": "zh-CN",
+    "examSource": "BCT"
+  },
+  {
+    "key": "reading:r-bct-b-shi-chang-bao-gao:p1",
+    "text": "利润比去年同期增加了百分之八，主要原因是成本控制成功。",
+    "locale": "zh-CN",
+    "examSource": "BCT"
+  },
+  {
+    "key": "reading:r-bct-b-shi-chang-bao-gao:p2",
+    "text": "不过，市场竞争越来越激烈，我们需要开发新的产品线。",
+    "locale": "zh-CN",
+    "examSource": "BCT"
+  },
+  {
+    "key": "reading:r-bct-b-shi-chang-bao-gao:p3",
+    "text": "明年我们计划投资三千万元用于研发。",
+    "locale": "zh-CN",
+    "examSource": "BCT"
+  },
+  {
+    "key": "reading:r-hskk-ele-zi-wo-jie-shao:p0",
+    "text": "大家好！我叫王芳，我是美国人。",
+    "locale": "zh-CN",
+    "examSource": "HSKK"
+  },
+  {
+    "key": "reading:r-hskk-ele-zi-wo-jie-shao:p1",
+    "text": "我今年二十岁，在大学学习中文。",
+    "locale": "zh-CN",
+    "examSource": "HSKK"
+  },
+  {
+    "key": "reading:r-hskk-ele-zi-wo-jie-shao:p2",
+    "text": "我学习中文两年了，口语还不太好。",
+    "locale": "zh-CN",
+    "examSource": "HSKK"
+  },
+  {
+    "key": "reading:r-hskk-ele-zi-wo-jie-shao:p3",
+    "text": "我很喜欢和中国朋友聊天，一边练习口语。",
+    "locale": "zh-CN",
+    "examSource": "HSKK"
+  },
+  {
+    "key": "reading:r-hskk-int-huan-bao:p0",
+    "text": "现在越来越多的人开始关注环境问题。",
+    "locale": "zh-CN",
+    "examSource": "HSKK"
+  },
+  {
+    "key": "reading:r-hskk-int-huan-bao:p1",
+    "text": "我认为每个人都应该为环保做出努力。",
+    "locale": "zh-CN",
+    "examSource": "HSKK"
+  },
+  {
+    "key": "reading:r-hskk-int-huan-bao:p2",
+    "text": "比如说，出门时带自己的购物袋，少用一次性筷子。",
+    "locale": "zh-CN",
+    "examSource": "HSKK"
+  },
+  {
+    "key": "reading:r-hskk-int-huan-bao:p3",
+    "text": "这些小事看起来很简单，但是如果每个人都做，就会有很大的影响。",
+    "locale": "zh-CN",
+    "examSource": "HSKK"
+  },
+  {
+    "key": "reading:r-ap-1-chun-jie-xi-su:p0",
+    "text": "春节是中国最重要的传统节日，通常在每年的二月左右。",
+    "locale": "zh-CN",
+    "examSource": "AP"
+  },
+  {
+    "key": "reading:r-ap-1-chun-jie-xi-su:p1",
+    "text": "春节前夕，家人会聚在一起吃年夜饭。",
+    "locale": "zh-CN",
+    "examSource": "AP"
+  },
+  {
+    "key": "reading:r-ap-1-chun-jie-xi-su:p2",
+    "text": "人们还会贴春联、放鞭炮，表示辞旧迎新。",
+    "locale": "zh-CN",
+    "examSource": "AP"
+  },
+  {
+    "key": "reading:r-ap-1-chun-jie-xi-su:p3",
+    "text": "小孩子最喜欢的是收红包，因为里面装着压岁钱。",
+    "locale": "zh-CN",
+    "examSource": "AP"
+  },
+  {
+    "key": "reading:r-ap-2-hu-lian-wang:p0",
+    "text": "互联网改变了我们的生活方式。",
+    "locale": "zh-CN",
+    "examSource": "AP"
+  },
+  {
+    "key": "reading:r-ap-2-hu-lian-wang:p1",
+    "text": "现在很多人用手机付款，出门不需要带钱包了。",
+    "locale": "zh-CN",
+    "examSource": "AP"
+  },
+  {
+    "key": "reading:r-ap-2-hu-lian-wang:p2",
+    "text": "学生可以在网上找学习资料，不用再去图书馆。",
+    "locale": "zh-CN",
+    "examSource": "AP"
+  },
+  {
+    "key": "reading:r-ap-2-hu-lian-wang:p3",
+    "text": "不过，长时间上网对健康不好，应该适可而止。",
+    "locale": "zh-CN",
+    "examSource": "AP"
+  },
+  {
+    "key": "reading:r-ib-ab-huan-jing-bao-hu:p0",
+    "text": "环境问题是全世界都关注的话题。",
+    "locale": "zh-CN",
+    "examSource": "IB"
+  },
+  {
+    "key": "reading:r-ib-ab-huan-jing-bao-hu:p1",
+    "text": "工厂排放废气，汽车尾气污染空气。",
+    "locale": "zh-CN",
+    "examSource": "IB"
+  },
+  {
+    "key": "reading:r-ib-ab-huan-jing-bao-hu:p2",
+    "text": "为了保护环境，我们应该少用塑料袋，多坐公共汽车。",
+    "locale": "zh-CN",
+    "examSource": "IB"
+  },
+  {
+    "key": "reading:r-ib-ab-huan-jing-bao-hu:p3",
+    "text": "每个人都可以为环保出一份力。",
+    "locale": "zh-CN",
+    "examSource": "IB"
+  },
+  {
+    "key": "reading:r-ib-bsl-jiao-yu-gai-ge:p0",
+    "text": "教育是社会发展的重要基础。",
+    "locale": "zh-CN",
+    "examSource": "IB"
+  },
+  {
+    "key": "reading:r-ib-bsl-jiao-yu-gai-ge:p1",
+    "text": "传统教育注重考试成绩，但是现代教育更强调培养学生的创造力和批判性思维。",
+    "locale": "zh-CN",
+    "examSource": "IB"
+  },
+  {
+    "key": "reading:r-ib-bsl-jiao-yu-gai-ge:p2",
+    "text": "很多国家正在进行教育改革，希望找到更好的教育模式。",
+    "locale": "zh-CN",
+    "examSource": "IB"
+  },
+  {
+    "key": "reading:r-ib-bsl-jiao-yu-gai-ge:p3",
+    "text": "未来的教育应该是多元化的，满足不同学生的需求。",
+    "locale": "zh-CN",
+    "examSource": "IB"
+  },
+  {
+    "key": "conv:conv-introduce-self:t0",
+    "text": "你好！我叫李明。你叫什么名字？",
+    "locale": "zh-CN",
+    "examSource": "HSK"
+  },
+  {
+    "key": "conv:conv-introduce-self:t2",
+    "text": "很高兴认识你！你是哪国人？",
+    "locale": "zh-CN",
+    "examSource": "HSK"
+  },
+  {
+    "key": "conv:conv-introduce-self:t4",
+    "text": "太好了！我们一起学习吧。",
+    "locale": "zh-CN",
+    "examSource": "HSK"
+  },
+  {
+    "key": "conv:conv-order-food:t0",
+    "text": "欢迎！你要什么？",
+    "locale": "zh-CN",
+    "examSource": "HSK"
+  },
+  {
+    "key": "conv:conv-order-food:t2",
+    "text": "好的。要喝水吗？",
+    "locale": "zh-CN",
+    "examSource": "HSK"
+  },
+  {
+    "key": "conv:conv-order-food:t4",
+    "text": "好，请等一下。",
+    "locale": "zh-CN",
+    "examSource": "HSK"
+  },
+  {
+    "key": "conv:conv-buying:t0",
+    "text": "你好！要买什么？",
+    "locale": "zh-CN",
+    "examSource": "HSK"
+  },
+  {
+    "key": "conv:conv-buying:t2",
+    "text": "八块钱。很好吃！",
+    "locale": "zh-CN",
+    "examSource": "HSK"
+  },
+  {
+    "key": "conv:conv-buying:t4",
+    "text": "十六块。谢谢！",
+    "locale": "zh-CN",
+    "examSource": "HSK"
+  },
+  {
+    "key": "conv:conv-directions:t0",
+    "text": "你好，需要帮助吗？",
+    "locale": "zh-CN",
+    "examSource": "HSK"
+  },
+  {
+    "key": "conv:conv-directions:t2",
+    "text": "地铁站不远，一直走，五分钟就到。",
+    "locale": "zh-CN",
+    "examSource": "HSK"
+  },
+  {
+    "key": "conv:conv-hotel:t0",
+    "text": "晚上好！欢迎光临。",
+    "locale": "zh-CN",
+    "examSource": "HSK"
+  },
+  {
+    "key": "conv:conv-hotel:t2",
+    "text": "好的，安娜女士。您的房间是三零五。",
+    "locale": "zh-CN",
+    "examSource": "HSK"
+  },
+  {
+    "key": "conv:conv-hotel:t4",
+    "text": "早上七点到十点。祝您入住愉快！",
+    "locale": "zh-CN",
+    "examSource": "HSK"
+  },
+  {
+    "key": "conv:conv-making-friends:t0",
+    "text": "你也喜欢这家咖啡店吗？",
+    "locale": "zh-CN",
+    "examSource": "HSK"
+  },
+  {
+    "key": "conv:conv-making-friends:t2",
+    "text": "我每天都来！你是留学生吧？你的汉语很好！",
+    "locale": "zh-CN",
+    "examSource": "HSK"
+  },
+  {
+    "key": "conv:conv-making-friends:t4",
+    "text": "我们加个微信吧，以后一起练习！",
+    "locale": "zh-CN",
+    "examSource": "HSK"
+  },
+  {
+    "key": "conv:conv-tocfl-n1-zai-jie-shang:t0",
+    "text": "你好！請問你要去哪裡？",
+    "locale": "zh-TW",
+    "examSource": "TOCFL"
+  },
+  {
+    "key": "conv:conv-tocfl-n1-zai-jie-shang:t2",
+    "text": "往前走，在第二個路口左轉就到了。",
+    "locale": "zh-TW",
+    "examSource": "TOCFL"
+  },
+  {
+    "key": "conv:conv-tocfl-n1-zai-jie-shang:t4",
+    "text": "不客氣！祝你玩得開心！",
+    "locale": "zh-TW",
+    "examSource": "TOCFL"
+  },
+  {
+    "key": "conv:conv-tocfl-n2-dian-can:t0",
+    "text": "您好！這是菜單。請問您想吃什麼？",
+    "locale": "zh-TW",
+    "examSource": "TOCFL"
+  },
+  {
+    "key": "conv:conv-tocfl-n2-dian-can:t2",
+    "text": "好的，牛肉麵和珍珠奶茶。還需要別的嗎？",
+    "locale": "zh-TW",
+    "examSource": "TOCFL"
+  },
+  {
+    "key": "conv:conv-tocfl-n2-dian-can:t4",
+    "text": "請稍等，馬上就來。",
+    "locale": "zh-TW",
+    "examSource": "TOCFL"
+  },
+  {
+    "key": "conv:conv-yct-1-wo-de-chong-wu:t0",
+    "text": "你好！你喜欢小动物吗？",
+    "locale": "zh-CN",
+    "examSource": "YCT"
+  },
+  {
+    "key": "conv:conv-yct-1-wo-de-chong-wu:t2",
+    "text": "你的猫是什么颜色的？",
+    "locale": "zh-CN",
+    "examSource": "YCT"
+  },
+  {
+    "key": "conv:conv-yct-1-wo-de-chong-wu:t4",
+    "text": "好可爱！我也想养一只猫。",
+    "locale": "zh-CN",
+    "examSource": "YCT"
+  },
+  {
+    "key": "conv:conv-yct-2-zai-xue-xiao:t0",
+    "text": "早！今天有什么课？",
+    "locale": "zh-CN",
+    "examSource": "YCT"
+  },
+  {
+    "key": "conv:conv-yct-2-zai-xue-xiao:t2",
+    "text": "体育课是我最喜欢的！我们一起去操场吧。",
+    "locale": "zh-CN",
+    "examSource": "YCT"
+  },
+  {
+    "key": "conv:conv-yct-2-zai-xue-xiao:t4",
+    "text": "好！我们走吧！",
+    "locale": "zh-CN",
+    "examSource": "YCT"
+  },
+  {
+    "key": "conv:conv-bct-a-hui-yi-an-pai:t0",
+    "text": "您好！这里是华远公司，请问有什么可以帮您？",
+    "locale": "zh-CN",
+    "examSource": "BCT"
+  },
+  {
+    "key": "conv:conv-bct-a-hui-yi-an-pai:t2",
+    "text": "好的，明天下午两点在三楼会议室，您看可以吗？",
+    "locale": "zh-CN",
+    "examSource": "BCT"
+  },
+  {
+    "key": "conv:conv-bct-a-hui-yi-an-pai:t4",
+    "text": "好的，明天下午两点见！",
+    "locale": "zh-CN",
+    "examSource": "BCT"
+  },
+  {
+    "key": "conv:conv-bct-b-tan-pan:t0",
+    "text": "李先生，关于报价，我们已经给了您最优惠的价格。",
+    "locale": "zh-CN",
+    "examSource": "BCT"
+  },
+  {
+    "key": "conv:conv-bct-b-tan-pan:t2",
+    "text": "百分之五的话……我得跟经理商量一下。您能告诉我您的预期订单量吗？",
+    "locale": "zh-CN",
+    "examSource": "BCT"
+  },
+  {
+    "key": "conv:conv-bct-b-tan-pan:t4",
+    "text": "明白了。我马上去和经理商量，争取给您满意的答复。",
+    "locale": "zh-CN",
+    "examSource": "BCT"
+  },
+  {
+    "key": "conv:conv-hskk-ele-jie-shao-peng-you:t0",
+    "text": "你好！好久不见，最近怎么样？",
+    "locale": "zh-CN",
+    "examSource": "HSKK"
+  },
+  {
+    "key": "conv:conv-hskk-ele-jie-shao-peng-you:t2",
+    "text": "这位是我的朋友，他叫大明。",
+    "locale": "zh-CN",
+    "examSource": "HSKK"
+  },
+  {
+    "key": "conv:conv-hskk-ele-jie-shao-peng-you:t4",
+    "text": "大明也喜欢学中文，你们可以一起练习口语。",
+    "locale": "zh-CN",
+    "examSource": "HSKK"
+  },
+  {
+    "key": "conv:conv-hskk-int-jia-xiang:t0",
+    "text": "你的家乡在哪里？能给我介绍一下吗？",
+    "locale": "zh-CN",
+    "examSource": "HSKK"
+  },
+  {
+    "key": "conv:conv-hskk-int-jia-xiang:t2",
+    "text": "听起来很棒！你的家乡有什么特别的地方？",
+    "locale": "zh-CN",
+    "examSource": "HSKK"
+  },
+  {
+    "key": "conv:conv-hskk-int-jia-xiang:t4",
+    "text": "有机会我一定去你的家乡看看！",
+    "locale": "zh-CN",
+    "examSource": "HSKK"
+  },
+  {
+    "key": "conv:conv-ap-1-guo-nian:t0",
+    "text": "过年好！欢迎你来我们家过春节！",
+    "locale": "zh-CN",
+    "examSource": "AP"
+  },
+  {
+    "key": "conv:conv-ap-1-guo-nian:t2",
+    "text": "来，我们一起包饺子！你会包饺子吗？",
+    "locale": "zh-CN",
+    "examSource": "AP"
+  },
+  {
+    "key": "conv:conv-ap-1-guo-nian:t4",
+    "text": "当然可以！先放馅，再对折，然后捏紧，你看，就像这样。",
+    "locale": "zh-CN",
+    "examSource": "AP"
+  },
+  {
+    "key": "conv:conv-ap-2-lv-you:t0",
+    "text": "听说你暑假要去中国旅行，计划好了吗？",
+    "locale": "zh-CN",
+    "examSource": "AP"
+  },
+  {
+    "key": "conv:conv-ap-2-lv-you:t2",
+    "text": "听起来很棒！你打算在中国待多久？",
+    "locale": "zh-CN",
+    "examSource": "AP"
+  },
+  {
+    "key": "conv:conv-ap-2-lv-you:t4",
+    "text": "那一定要去尝尝当地的特色美食！",
+    "locale": "zh-CN",
+    "examSource": "AP"
+  },
+  {
+    "key": "conv:conv-ib-ab-huan-bao-xing-dong:t0",
+    "text": "我们学校要举办一个环保活动，你有什么想法？",
+    "locale": "zh-CN",
+    "examSource": "IB"
+  },
+  {
+    "key": "conv:conv-ib-ab-huan-bao-xing-dong:t2",
+    "text": "好主意！还可以做海报宣传环保知识。",
+    "locale": "zh-CN",
+    "examSource": "IB"
+  },
+  {
+    "key": "conv:conv-ib-ab-huan-bao-xing-dong:t4",
+    "text": "太好了！让我们一起为环保出一份力。",
+    "locale": "zh-CN",
+    "examSource": "IB"
+  },
+  {
+    "key": "conv:conv-ib-bsl-duo-yuan-wen-hua:t0",
+    "text": "今天我们讨论多元文化社会。你觉得多元文化有哪些好处？",
+    "locale": "zh-CN",
+    "examSource": "IB"
+  },
+  {
+    "key": "conv:conv-ib-bsl-duo-yuan-wen-hua:t2",
+    "text": "说得好！那你觉得多元文化社会有什么挑战吗？",
+    "locale": "zh-CN",
+    "examSource": "IB"
+  },
+  {
+    "key": "conv:conv-ib-bsl-duo-yuan-wen-hua:t4",
+    "text": "很好的见解！相互理解和包容确实是关键。",
+    "locale": "zh-CN",
+    "examSource": "IB"
+  },
+  {
+    "key": "char:c-yi",
+    "text": "一",
+    "locale": "zh-CN",
+    "examSource": "HSK",
+    "audioPath": "char:c-yi"
+  },
+  {
+    "key": "char:c-er",
+    "text": "二",
+    "locale": "zh-CN",
+    "examSource": "HSK",
+    "audioPath": "char:c-er"
+  },
+  {
+    "key": "char:c-san",
+    "text": "三",
+    "locale": "zh-CN",
+    "examSource": "HSK",
+    "audioPath": "char:c-san"
+  },
+  {
+    "key": "char:c-shi",
+    "text": "十",
+    "locale": "zh-CN",
+    "examSource": "HSK",
+    "audioPath": "char:c-shi"
+  },
+  {
+    "key": "char:c-ren",
+    "text": "人",
+    "locale": "zh-CN",
+    "examSource": "HSK",
+    "audioPath": "char:c-ren"
+  },
+  {
+    "key": "char:c-da",
+    "text": "大",
+    "locale": "zh-CN",
+    "examSource": "HSK",
+    "audioPath": "char:c-da"
+  },
+  {
+    "key": "char:c-xiao",
+    "text": "小",
+    "locale": "zh-CN",
+    "examSource": "HSK",
+    "audioPath": "char:c-xiao"
+  },
+  {
+    "key": "char:c-tian",
+    "text": "天",
+    "locale": "zh-CN",
+    "examSource": "HSK",
+    "audioPath": "char:c-tian"
+  },
+  {
+    "key": "char:c-ri",
+    "text": "日",
+    "locale": "zh-CN",
+    "examSource": "HSK",
+    "audioPath": "char:c-ri"
+  },
+  {
+    "key": "char:c-yue",
+    "text": "月",
+    "locale": "zh-CN",
+    "examSource": "HSK",
+    "audioPath": "char:c-yue"
+  },
+  {
+    "key": "char:c-shan",
+    "text": "山",
+    "locale": "zh-CN",
+    "examSource": "HSK",
+    "audioPath": "char:c-shan"
+  },
+  {
+    "key": "char:c-shui",
+    "text": "水",
+    "locale": "zh-CN",
+    "examSource": "HSK",
+    "audioPath": "char:c-shui"
+  },
+  {
+    "key": "char:c-huo",
+    "text": "火",
+    "locale": "zh-CN",
+    "examSource": "HSK",
+    "audioPath": "char:c-huo"
+  },
+  {
+    "key": "char:c-mu",
+    "text": "木",
+    "locale": "zh-CN",
+    "examSource": "HSK",
+    "audioPath": "char:c-mu"
+  },
+  {
+    "key": "char:c-kou",
+    "text": "口",
+    "locale": "zh-CN",
+    "examSource": "HSK",
+    "audioPath": "char:c-kou"
+  },
+  {
+    "key": "char:c-shou",
+    "text": "手",
+    "locale": "zh-CN",
+    "examSource": "HSK",
+    "audioPath": "char:c-shou"
+  },
+  {
+    "key": "char:c-xin",
+    "text": "心",
+    "locale": "zh-CN",
+    "examSource": "HSK",
+    "audioPath": "char:c-xin"
+  },
+  {
+    "key": "char:c-men",
+    "text": "门",
+    "locale": "zh-CN",
+    "examSource": "HSK",
+    "audioPath": "char:c-men"
+  },
+  {
+    "key": "char:c-wo",
+    "text": "我",
+    "locale": "zh-CN",
+    "examSource": "HSK",
+    "audioPath": "char:c-wo"
+  },
+  {
+    "key": "char:c-ni",
+    "text": "你",
+    "locale": "zh-CN",
+    "examSource": "HSK",
+    "audioPath": "char:c-ni"
+  },
+  {
+    "key": "char:c-ta",
+    "text": "他",
+    "locale": "zh-CN",
+    "examSource": "HSK",
+    "audioPath": "char:c-ta"
+  },
+  {
+    "key": "char:c-tanv",
+    "text": "她",
+    "locale": "zh-CN",
+    "examSource": "HSK",
+    "audioPath": "char:c-tanv"
+  },
+  {
+    "key": "char:c-hao",
+    "text": "好",
+    "locale": "zh-CN",
+    "examSource": "HSK",
+    "audioPath": "char:c-hao"
+  },
+  {
+    "key": "char:c-nv",
+    "text": "女",
+    "locale": "zh-CN",
+    "examSource": "HSK",
+    "audioPath": "char:c-nv"
+  },
+  {
+    "key": "char:c-zi",
+    "text": "子",
+    "locale": "zh-CN",
+    "examSource": "HSK",
+    "audioPath": "char:c-zi"
+  },
+  {
+    "key": "char:c-ma",
+    "text": "妈",
+    "locale": "zh-CN",
+    "examSource": "HSK",
+    "audioPath": "char:c-ma"
+  },
+  {
+    "key": "char:c-ma3",
+    "text": "马",
+    "locale": "zh-CN",
+    "examSource": "HSK",
+    "audioPath": "char:c-ma3"
+  },
+  {
+    "key": "char:c-shide",
+    "text": "是",
+    "locale": "zh-CN",
+    "examSource": "HSK",
+    "audioPath": "char:c-shide"
+  },
+  {
+    "key": "char:c-bu",
+    "text": "不",
+    "locale": "zh-CN",
+    "examSource": "HSK",
+    "audioPath": "char:c-bu"
+  },
+  {
+    "key": "char:c-you",
+    "text": "有",
+    "locale": "zh-CN",
+    "examSource": "HSK",
+    "audioPath": "char:c-you"
+  },
+  {
+    "key": "char:c-zhong",
+    "text": "中",
+    "locale": "zh-CN",
+    "examSource": "HSK",
+    "audioPath": "char:c-zhong"
+  },
+  {
+    "key": "char:c-guo",
+    "text": "国",
+    "locale": "zh-CN",
+    "examSource": "HSK",
+    "audioPath": "char:c-guo"
+  },
+  {
+    "key": "char:c-ai",
+    "text": "爱",
+    "locale": "zh-CN",
+    "examSource": "HSK",
+    "audioPath": "char:c-ai"
+  },
+  {
+    "key": "char:c-chi",
+    "text": "吃",
+    "locale": "zh-CN",
+    "examSource": "HSK",
+    "audioPath": "char:c-chi"
+  },
+  {
+    "key": "char:c-he",
+    "text": "喝",
+    "locale": "zh-CN",
+    "examSource": "HSK",
+    "audioPath": "char:c-he"
+  },
+  {
+    "key": "char:c-cha",
+    "text": "茶",
+    "locale": "zh-CN",
+    "examSource": "HSK",
+    "audioPath": "char:c-cha"
+  },
+  {
+    "key": "char:c-shu",
+    "text": "书",
+    "locale": "zh-CN",
+    "examSource": "HSK",
+    "audioPath": "char:c-shu"
+  },
+  {
+    "key": "char:c-xue",
+    "text": "学",
+    "locale": "zh-CN",
+    "examSource": "HSK",
+    "audioPath": "char:c-xue"
+  },
+  {
+    "key": "char:c-sheng",
+    "text": "生",
+    "locale": "zh-CN",
+    "examSource": "HSK",
+    "audioPath": "char:c-sheng"
+  },
+  {
+    "key": "char:c-lao",
+    "text": "老",
+    "locale": "zh-CN",
+    "examSource": "HSK",
+    "audioPath": "char:c-lao"
+  },
+  {
+    "key": "char:c-shi4",
+    "text": "师",
+    "locale": "zh-CN",
+    "examSource": "HSK",
+    "audioPath": "char:c-shi4"
+  },
+  {
+    "key": "char:c-shuo",
+    "text": "说",
+    "locale": "zh-CN",
+    "examSource": "HSK",
+    "audioPath": "char:c-shuo"
+  },
+  {
+    "key": "char:c-hua",
+    "text": "话",
+    "locale": "zh-CN",
+    "examSource": "HSK",
+    "audioPath": "char:c-hua"
+  },
+  {
+    "key": "char:c-kan",
+    "text": "看",
+    "locale": "zh-CN",
+    "examSource": "HSK",
+    "audioPath": "char:c-kan"
+  },
+  {
+    "key": "char:c-lai",
+    "text": "来",
+    "locale": "zh-CN",
+    "examSource": "HSK",
+    "audioPath": "char:c-lai"
+  },
+  {
+    "key": "char:c-qu",
+    "text": "去",
+    "locale": "zh-CN",
+    "examSource": "HSK",
+    "audioPath": "char:c-qu"
+  },
+  {
+    "key": "char:c-zai",
+    "text": "在",
+    "locale": "zh-CN",
+    "examSource": "HSK",
+    "audioPath": "char:c-zai"
+  },
+  {
+    "key": "char:c-jia",
+    "text": "家",
+    "locale": "zh-CN",
+    "examSource": "HSK",
+    "audioPath": "char:c-jia"
+  },
+  {
+    "key": "char:c-dian",
+    "text": "电",
+    "locale": "zh-CN",
+    "examSource": "HSK",
+    "audioPath": "char:c-dian"
+  },
+  {
+    "key": "char:c-qian",
+    "text": "钱",
+    "locale": "zh-CN",
+    "examSource": "HSK",
+    "audioPath": "char:c-qian"
+  },
+  {
+    "key": "char:c-mai",
+    "text": "买",
+    "locale": "zh-CN",
+    "examSource": "HSK",
+    "audioPath": "char:c-mai"
+  },
+  {
+    "key": "char:c-mai4",
+    "text": "卖",
+    "locale": "zh-CN",
+    "examSource": "HSK",
+    "audioPath": "char:c-mai4"
+  },
+  {
+    "key": "char:c-si4",
+    "text": "四",
+    "locale": "zh-CN",
+    "examSource": "HSK",
+    "audioPath": "char:c-si4"
+  },
+  {
+    "key": "char:c-wen3",
+    "text": "吻",
+    "locale": "zh-CN",
+    "examSource": "HSK",
+    "audioPath": "char:c-wen3"
+  },
+  {
+    "key": "char:c-tang1",
+    "text": "汤",
+    "locale": "zh-CN",
+    "examSource": "HSK",
+    "audioPath": "char:c-tang1"
+  },
+  {
+    "key": "char:c-tang2",
+    "text": "糖",
+    "locale": "zh-CN",
+    "examSource": "HSK",
+    "audioPath": "char:c-tang2"
+  },
+  {
+    "key": "char:c-tocfl-n1-tai",
+    "text": "台",
+    "locale": "zh-TW",
+    "examSource": "TOCFL",
+    "audioPath": "char:c-tocfl-n1-tai"
+  },
+  {
+    "key": "char:c-tocfl-n1-bei",
+    "text": "北",
+    "locale": "zh-TW",
+    "examSource": "TOCFL",
+    "audioPath": "char:c-tocfl-n1-bei"
+  },
+  {
+    "key": "char:c-tocfl-n1-an",
+    "text": "安",
+    "locale": "zh-TW",
+    "examSource": "TOCFL",
+    "audioPath": "char:c-tocfl-n1-an"
+  },
+  {
+    "key": "char:c-tocfl-n1-huan",
+    "text": "歡",
+    "locale": "zh-TW",
+    "examSource": "TOCFL",
+    "audioPath": "char:c-tocfl-n1-huan"
+  },
+  {
+    "key": "char:c-tocfl-n1-ying",
+    "text": "迎",
+    "locale": "zh-TW",
+    "examSource": "TOCFL",
+    "audioPath": "char:c-tocfl-n1-ying"
+  },
+  {
+    "key": "char:c-tocfl-n1-xiè",
+    "text": "謝",
+    "locale": "zh-TW",
+    "examSource": "TOCFL",
+    "audioPath": "char:c-tocfl-n1-xiè"
+  },
+  {
+    "key": "char:c-tocfl-n2-piao",
+    "text": "漂",
+    "locale": "zh-TW",
+    "examSource": "TOCFL",
+    "audioPath": "char:c-tocfl-n2-piao"
+  },
+  {
+    "key": "char:c-tocfl-n2-liang",
+    "text": "亮",
+    "locale": "zh-TW",
+    "examSource": "TOCFL",
+    "audioPath": "char:c-tocfl-n2-liang"
+  },
+  {
+    "key": "char:c-tocfl-n2-mei",
+    "text": "美",
+    "locale": "zh-TW",
+    "examSource": "TOCFL",
+    "audioPath": "char:c-tocfl-n2-mei"
+  },
+  {
+    "key": "char:c-tocfl-n2-gu",
+    "text": "故",
+    "locale": "zh-TW",
+    "examSource": "TOCFL",
+    "audioPath": "char:c-tocfl-n2-gu"
+  },
+  {
+    "key": "char:c-tocfl-n2-gong",
+    "text": "宮",
+    "locale": "zh-TW",
+    "examSource": "TOCFL",
+    "audioPath": "char:c-tocfl-n2-gong"
+  },
+  {
+    "key": "char:c-tocfl-n2-dian",
+    "text": "點",
+    "locale": "zh-TW",
+    "examSource": "TOCFL",
+    "audioPath": "char:c-tocfl-n2-dian"
+  },
+  {
+    "key": "char:c-tocfl-n2-xin",
+    "text": "心",
+    "locale": "zh-TW",
+    "examSource": "TOCFL",
+    "audioPath": "char:c-tocfl-n2-xin"
+  },
+  {
+    "key": "char:c-yct-1-yi",
+    "text": "一",
+    "locale": "zh-CN",
+    "examSource": "YCT",
+    "audioPath": "char:c-yct-1-yi"
+  },
+  {
+    "key": "char:c-yct-1-er",
+    "text": "二",
+    "locale": "zh-CN",
+    "examSource": "YCT",
+    "audioPath": "char:c-yct-1-er"
+  },
+  {
+    "key": "char:c-yct-1-san",
+    "text": "三",
+    "locale": "zh-CN",
+    "examSource": "YCT",
+    "audioPath": "char:c-yct-1-san"
+  },
+  {
+    "key": "char:c-yct-1-da",
+    "text": "大",
+    "locale": "zh-CN",
+    "examSource": "YCT",
+    "audioPath": "char:c-yct-1-da"
+  },
+  {
+    "key": "char:c-yct-1-xiao",
+    "text": "小",
+    "locale": "zh-CN",
+    "examSource": "YCT",
+    "audioPath": "char:c-yct-1-xiao"
+  },
+  {
+    "key": "char:c-yct-1-hua1",
+    "text": "花",
+    "locale": "zh-CN",
+    "examSource": "YCT",
+    "audioPath": "char:c-yct-1-hua1"
+  },
+  {
+    "key": "char:c-yct-2-shang",
+    "text": "上",
+    "locale": "zh-CN",
+    "examSource": "YCT",
+    "audioPath": "char:c-yct-2-shang"
+  },
+  {
+    "key": "char:c-yct-2-xia",
+    "text": "下",
+    "locale": "zh-CN",
+    "examSource": "YCT",
+    "audioPath": "char:c-yct-2-xia"
+  },
+  {
+    "key": "char:c-yct-2-ke",
+    "text": "课",
+    "locale": "zh-CN",
+    "examSource": "YCT",
+    "audioPath": "char:c-yct-2-ke"
+  },
+  {
+    "key": "char:c-yct-2-ti",
+    "text": "体",
+    "locale": "zh-CN",
+    "examSource": "YCT",
+    "audioPath": "char:c-yct-2-ti"
+  },
+  {
+    "key": "char:c-yct-2-yu",
+    "text": "育",
+    "locale": "zh-CN",
+    "examSource": "YCT",
+    "audioPath": "char:c-yct-2-yu"
+  },
+  {
+    "key": "char:c-yct-2-ge",
+    "text": "歌",
+    "locale": "zh-CN",
+    "examSource": "YCT",
+    "audioPath": "char:c-yct-2-ge"
+  },
+  {
+    "key": "char:c-yct-2-wu",
+    "text": "舞",
+    "locale": "zh-CN",
+    "examSource": "YCT",
+    "audioPath": "char:c-yct-2-wu"
+  },
+  {
+    "key": "char:c-bct-a-gong",
+    "text": "公",
+    "locale": "zh-CN",
+    "examSource": "BCT",
+    "audioPath": "char:c-bct-a-gong"
+  },
+  {
+    "key": "char:c-bct-a-si",
+    "text": "司",
+    "locale": "zh-CN",
+    "examSource": "BCT",
+    "audioPath": "char:c-bct-a-si"
+  },
+  {
+    "key": "char:c-bct-a-he",
+    "text": "合",
+    "locale": "zh-CN",
+    "examSource": "BCT",
+    "audioPath": "char:c-bct-a-he"
+  },
+  {
+    "key": "char:c-bct-a-tong",
+    "text": "同",
+    "locale": "zh-CN",
+    "examSource": "BCT",
+    "audioPath": "char:c-bct-a-tong"
+  },
+  {
+    "key": "char:c-bct-a-ke",
+    "text": "客",
+    "locale": "zh-CN",
+    "examSource": "BCT",
+    "audioPath": "char:c-bct-a-ke"
+  },
+  {
+    "key": "char:c-bct-a-hui",
+    "text": "会",
+    "locale": "zh-CN",
+    "examSource": "BCT",
+    "audioPath": "char:c-bct-a-hui"
+  },
+  {
+    "key": "char:c-bct-b-zi",
+    "text": "资",
+    "locale": "zh-CN",
+    "examSource": "BCT",
+    "audioPath": "char:c-bct-b-zi"
+  },
+  {
+    "key": "char:c-bct-b-li",
+    "text": "利",
+    "locale": "zh-CN",
+    "examSource": "BCT",
+    "audioPath": "char:c-bct-b-li"
+  },
+  {
+    "key": "char:c-bct-b-run",
+    "text": "润",
+    "locale": "zh-CN",
+    "examSource": "BCT",
+    "audioPath": "char:c-bct-b-run"
+  },
+  {
+    "key": "char:c-bct-b-shi",
+    "text": "市",
+    "locale": "zh-CN",
+    "examSource": "BCT",
+    "audioPath": "char:c-bct-b-shi"
+  },
+  {
+    "key": "char:c-bct-b-lue",
+    "text": "略",
+    "locale": "zh-CN",
+    "examSource": "BCT",
+    "audioPath": "char:c-bct-b-lue"
+  },
+  {
+    "key": "char:c-bct-b-ce",
+    "text": "策",
+    "locale": "zh-CN",
+    "examSource": "BCT",
+    "audioPath": "char:c-bct-b-ce"
+  },
+  {
+    "key": "char:c-hskk-ele-shuo",
+    "text": "说",
+    "locale": "zh-CN",
+    "examSource": "HSKK",
+    "audioPath": "char:c-hskk-ele-shuo"
+  },
+  {
+    "key": "char:c-hskk-ele-hua",
+    "text": "话",
+    "locale": "zh-CN",
+    "examSource": "HSKK",
+    "audioPath": "char:c-hskk-ele-hua"
+  },
+  {
+    "key": "char:c-hskk-ele-wen",
+    "text": "问",
+    "locale": "zh-CN",
+    "examSource": "HSKK",
+    "audioPath": "char:c-hskk-ele-wen"
+  },
+  {
+    "key": "char:c-hskk-ele-jiao",
+    "text": "叫",
+    "locale": "zh-CN",
+    "examSource": "HSKK",
+    "audioPath": "char:c-hskk-ele-jiao"
+  },
+  {
+    "key": "char:c-hskk-ele-ting",
+    "text": "听",
+    "locale": "zh-CN",
+    "examSource": "HSKK",
+    "audioPath": "char:c-hskk-ele-ting"
+  },
+  {
+    "key": "char:c-hskk-ele-nian",
+    "text": "念",
+    "locale": "zh-CN",
+    "examSource": "HSKK",
+    "audioPath": "char:c-hskk-ele-nian"
+  },
+  {
+    "key": "char:c-hskk-int-lian",
+    "text": "练",
+    "locale": "zh-CN",
+    "examSource": "HSKK",
+    "audioPath": "char:c-hskk-int-lian"
+  },
+  {
+    "key": "char:c-hskk-int-xi",
+    "text": "习",
+    "locale": "zh-CN",
+    "examSource": "HSKK",
+    "audioPath": "char:c-hskk-int-xi"
+  },
+  {
+    "key": "char:c-hskk-int-yi-jian",
+    "text": "见",
+    "locale": "zh-CN",
+    "examSource": "HSKK",
+    "audioPath": "char:c-hskk-int-yi-jian"
+  },
+  {
+    "key": "char:c-hskk-int-kan-fa2",
+    "text": "法",
+    "locale": "zh-CN",
+    "examSource": "HSKK",
+    "audioPath": "char:c-hskk-int-kan-fa2"
+  },
+  {
+    "key": "char:c-hskk-int-jing",
+    "text": "经",
+    "locale": "zh-CN",
+    "examSource": "HSKK",
+    "audioPath": "char:c-hskk-int-jing"
+  },
+  {
+    "key": "char:c-hskk-int-xiang",
+    "text": "想",
+    "locale": "zh-CN",
+    "examSource": "HSKK",
+    "audioPath": "char:c-hskk-int-xiang"
+  },
+  {
+    "key": "char:c-ap-1-chun",
+    "text": "春",
+    "locale": "zh-CN",
+    "examSource": "AP",
+    "audioPath": "char:c-ap-1-chun"
+  },
+  {
+    "key": "char:c-ap-1-jie",
+    "text": "节",
+    "locale": "zh-CN",
+    "examSource": "AP",
+    "audioPath": "char:c-ap-1-jie"
+  },
+  {
+    "key": "char:c-ap-1-huan",
+    "text": "欢",
+    "locale": "zh-CN",
+    "examSource": "AP",
+    "audioPath": "char:c-ap-1-huan"
+  },
+  {
+    "key": "char:c-ap-1-li3",
+    "text": "旅",
+    "locale": "zh-CN",
+    "examSource": "AP",
+    "audioPath": "char:c-ap-1-li3"
+  },
+  {
+    "key": "char:c-ap-1-xing",
+    "text": "行",
+    "locale": "zh-CN",
+    "examSource": "AP",
+    "audioPath": "char:c-ap-1-xing"
+  },
+  {
+    "key": "char:c-ap-1-dian4",
+    "text": "电",
+    "locale": "zh-CN",
+    "examSource": "AP",
+    "audioPath": "char:c-ap-1-dian4"
+  },
+  {
+    "key": "char:c-ap-2-huan4",
+    "text": "环",
+    "locale": "zh-CN",
+    "examSource": "AP",
+    "audioPath": "char:c-ap-2-huan4"
+  },
+  {
+    "key": "char:c-ap-2-jing4",
+    "text": "境",
+    "locale": "zh-CN",
+    "examSource": "AP",
+    "audioPath": "char:c-ap-2-jing4"
+  },
+  {
+    "key": "char:c-ap-2-she",
+    "text": "社",
+    "locale": "zh-CN",
+    "examSource": "AP",
+    "audioPath": "char:c-ap-2-she"
+  },
+  {
+    "key": "char:c-ap-2-ji1",
+    "text": "济",
+    "locale": "zh-CN",
+    "examSource": "AP",
+    "audioPath": "char:c-ap-2-ji1"
+  },
+  {
+    "key": "char:c-ap-2-wang3",
+    "text": "网",
+    "locale": "zh-CN",
+    "examSource": "AP",
+    "audioPath": "char:c-ap-2-wang3"
+  },
+  {
+    "key": "char:c-ap-2-tong3",
+    "text": "统",
+    "locale": "zh-CN",
+    "examSource": "AP",
+    "audioPath": "char:c-ap-2-tong3"
+  },
+  {
+    "key": "char:c-ib-ab-jiao",
+    "text": "教",
+    "locale": "zh-CN",
+    "examSource": "IB",
+    "audioPath": "char:c-ib-ab-jiao"
+  },
+  {
+    "key": "char:c-ib-ab-jia1",
+    "text": "家",
+    "locale": "zh-CN",
+    "examSource": "IB",
+    "audioPath": "char:c-ib-ab-jia1"
+  },
+  {
+    "key": "char:c-ib-ab-shi2",
+    "text": "食",
+    "locale": "zh-CN",
+    "examSource": "IB",
+    "audioPath": "char:c-ib-ab-shi2"
+  },
+  {
+    "key": "char:c-ib-ab-shen1",
+    "text": "身",
+    "locale": "zh-CN",
+    "examSource": "IB",
+    "audioPath": "char:c-ib-ab-shen1"
+  },
+  {
+    "key": "char:c-ib-ab-ti3",
+    "text": "体",
+    "locale": "zh-CN",
+    "examSource": "IB",
+    "audioPath": "char:c-ib-ab-ti3"
+  },
+  {
+    "key": "char:c-ib-ab-yue4",
+    "text": "乐",
+    "locale": "zh-CN",
+    "examSource": "IB",
+    "audioPath": "char:c-ib-ab-yue4"
+  },
+  {
+    "key": "char:c-ib-bsl-ke3",
+    "text": "科",
+    "locale": "zh-CN",
+    "examSource": "IB",
+    "audioPath": "char:c-ib-bsl-ke3"
+  },
+  {
+    "key": "char:c-ib-bsl-xue2",
+    "text": "学",
+    "locale": "zh-CN",
+    "examSource": "IB",
+    "audioPath": "char:c-ib-bsl-xue2"
+  },
+  {
+    "key": "char:c-ib-bsl-zhan",
+    "text": "展",
+    "locale": "zh-CN",
+    "examSource": "IB",
+    "audioPath": "char:c-ib-bsl-zhan"
+  },
+  {
+    "key": "char:c-ib-bsl-huan2",
+    "text": "还",
+    "locale": "zh-CN",
+    "examSource": "IB",
+    "audioPath": "char:c-ib-bsl-huan2"
+  },
+  {
+    "key": "char:c-ib-bsl-gai",
+    "text": "改",
+    "locale": "zh-CN",
+    "examSource": "IB",
+    "audioPath": "char:c-ib-bsl-gai"
+  },
+  {
+    "key": "char:c-ib-bsl-fa1",
+    "text": "发",
+    "locale": "zh-CN",
+    "examSource": "IB",
+    "audioPath": "char:c-ib-bsl-fa1"
+  },
+  {
+    "key": "placement:p1-4",
+    "text": "你好",
+    "locale": "zh-CN",
+    "examSource": "HSK",
+    "audioPath": "placement:p1-4"
+  },
+  {
+    "key": "placement:p2-4",
+    "text": "四十七",
+    "locale": "zh-CN",
+    "examSource": "HSK",
+    "audioPath": "placement:p2-4"
+  },
+  {
+    "key": "placement:p3-4",
+    "text": "我很累，想睡觉",
+    "locale": "zh-CN",
+    "examSource": "HSK",
+    "audioPath": "placement:p3-4"
+  },
+  {
+    "key": "placement:p4-4",
+    "text": "我是在北京学的汉语",
+    "locale": "zh-CN",
+    "examSource": "HSK",
+    "audioPath": "placement:p4-4"
+  },
+  {
+    "key": "assessment:a-mock-hsk1:ex0",
+    "text": "我很喜欢喝中国茶",
+    "locale": "zh-CN",
+    "examSource": "HSK"
+  },
+  {
+    "key": "assessment:a-mock-hsk1:ex1",
+    "text": "你爸爸做什么工作",
+    "locale": "zh-CN",
+    "examSource": "HSK"
+  },
+  {
+    "key": "assessment:a-mock-hsk1:ex6",
+    "text": "九十二",
+    "locale": "zh-CN",
+    "examSource": "HSK"
+  },
+  {
+    "key": "curriculum:l-tonos:s4",
+    "text": "妈",
+    "locale": "zh-CN"
+  },
+  {
+    "key": "curriculum:l-numeros:s5",
+    "text": "六十八",
+    "locale": "zh-CN"
+  },
+  {
+    "key": "curriculum:l-repaso-hsk1:s4",
+    "text": "我有两个弟弟",
+    "locale": "zh-CN"
+  }
+]
