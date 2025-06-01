@@ -1,0 +1,70 @@
+[
+  {
+    "id": "de-a1",
+    "courseId": "german-course",
+    "title": "A1 — Beginner",
+    "subtitle": "Anfänger",
+    "order": 1,
+    "examType": "goethe",
+    "unitIds": [
+      "de-a1-u1",
+      "de-a1-u2",
+      "de-a1-u3",
+      "de-a1-u4"
+    ]
+  },
+  {
+    "id": "de-a2",
+    "courseId": "german-course",
+    "title": "A2 — Elementary",
+    "subtitle": "Grundstufe",
+    "order": 2,
+    "examType": "goethe",
+    "unitIds": [
+      "de-a2-u1",
+      "de-a2-u2",
+      "de-a2-u3"
+    ]
+  },
+  {
+    "id": "de-b1",
+    "courseId": "german-course",
+    "title": "B1 — Intermediate",
+    "subtitle": "Mittelstufe",
+    "order": 3,
+    "examType": "goethe",
+    "unitIds": [
+      "de-b1-u1",
+      "de-b1-u2"
+    ]
+  },
+  {
+    "id": "de-b2",
+    "courseId": "german-course",
+    "title": "B2 — Upper Intermediate",
+    "subtitle": "Gute Mittelstufe",
+    "order": 4,
+    "examType": "goethe",
+    "unitIds": [
+      "de-b2-u1"
+    ]
+  },
+  {
+    "id": "de-c1",
+    "courseId": "german-course",
+    "title": "C1 — Advanced",
+    "subtitle": "Fortgeschritten",
+    "order": 5,
+    "examType": "goethe",
+    "unitIds": []
+  },
+  {
+    "id": "de-c2",
+    "courseId": "german-course",
+    "title": "C2 — Mastery",
+    "subtitle": "Perfektion",
+    "order": 6,
+    "examType": "goethe",
+    "unitIds": []
+  }
+]
