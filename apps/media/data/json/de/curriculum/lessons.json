@@ -1,0 +1,1019 @@
+[
+  {
+    "id": "de-a1-u1-l1",
+    "unitId": "de-a1-u1",
+    "title": "Hello and Goodbye",
+    "subtitle": "Hallo und Auf Wiedersehen",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Greet people in German",
+      "Say goodbye politely",
+      "Use formal and informal greetings"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Basic Greetings",
+        "content": "Learn essential German greetings",
+        "vocabIds": [
+          "de_guten_tag",
+          "de_hallo",
+          "de_tschuess",
+          "de_auf_wiedersehen"
+        ]
+      },
+      {
+        "type": "grammar",
+        "title": "Formal vs Informal",
+        "content": "Understanding Sie vs du",
+        "grammarId": "de_formal_informal"
+      }
+    ],
+    "subtitle_en": "Hallo und Auf Wiedersehen",
+    "subtitle_id": "Halo dan Selamat Tinggal"
+  },
+  {
+    "id": "de-a1-u1-l2",
+    "unitId": "de-a1-u1",
+    "title": "My Name Is...",
+    "subtitle": "Ich heiße...",
+    "order": 2,
+    "durationMin": 20,
+    "xp": 60,
+    "objectives": [
+      "Introduce yourself",
+      "Ask someone's name",
+      "Spell your name"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Introduction Phrases",
+        "vocabIds": [
+          "de_ich_heisse",
+          "de_wie_heissen_sie",
+          "de_mein_name"
+        ]
+      },
+      {
+        "type": "grammar",
+        "title": "Personal Pronouns",
+        "grammarId": "de_pronouns"
+      }
+    ],
+    "subtitle_en": "Ich heiße...",
+    "subtitle_id": "Nama saya..."
+  },
+  {
+    "id": "de-a1-u1-l3",
+    "unitId": "de-a1-u1",
+    "title": "Where Are You From?",
+    "subtitle": "Woher kommst du?",
+    "order": 3,
+    "durationMin": 25,
+    "xp": 70,
+    "objectives": [
+      "Say where you're from",
+      "Ask about origin",
+      "Name countries in German"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Countries and Nationalities",
+        "vocabIds": [
+          "de_deutschland",
+          "de_ich_komme_aus",
+          "de_land"
+        ]
+      }
+    ],
+    "subtitle_en": "Woher kommst du?",
+    "subtitle_id": "Dari mana asalmu?"
+  },
+  {
+    "id": "de-a1-u2-l1",
+    "unitId": "de-a1-u2",
+    "title": "My Family",
+    "subtitle": "Meine Familie",
+    "order": 1,
+    "durationMin": 20,
+    "xp": 60,
+    "objectives": [
+      "Name family members",
+      "Describe family relationships",
+      "Use possessive pronouns"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Family Members",
+        "vocabIds": [
+          "de_vater",
+          "de_mutter",
+          "de_bruder",
+          "de_schwester"
+        ]
+      },
+      {
+        "type": "grammar",
+        "title": "Possessive Pronouns",
+        "grammarId": "de_possessive"
+      }
+    ],
+    "subtitle_en": "Meine Familie",
+    "subtitle_id": "Keluargaku"
+  },
+  {
+    "id": "de-a1-u2-l2",
+    "unitId": "de-a1-u2",
+    "title": "Describing People",
+    "subtitle": "Menschen beschreiben",
+    "order": 2,
+    "durationMin": 25,
+    "xp": 70,
+    "objectives": [
+      "Describe physical appearance",
+      "Talk about personality",
+      "Use adjectives"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Adjectives for People",
+        "vocabIds": [
+          "de_gross",
+          "de_klein",
+          "de_nett",
+          "de_freundlich"
+        ]
+      }
+    ],
+    "subtitle_en": "Menschen beschreiben",
+    "subtitle_id": "Mendeskripsikan Orang"
+  },
+  {
+    "id": "de-a1-u2-l3",
+    "unitId": "de-a1-u2",
+    "title": "Numbers and Age",
+    "subtitle": "Zahlen und Alter",
+    "order": 3,
+    "durationMin": 20,
+    "xp": 60,
+    "objectives": [
+      "Count from one to one hundred",
+      "Say your age",
+      "Give your phone number"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Numbers",
+        "content": "Learn the numbers in German",
+        "vocabIds": [
+          "de_eins",
+          "de_drei",
+          "de_fuenf",
+          "de_zehn",
+          "de_zwanzig"
+        ]
+      },
+      {
+        "type": "vocab",
+        "title": "Bigger Numbers",
+        "content": "Numbers up to one hundred",
+        "vocabIds": [
+          "de_hundert",
+          "de_tausend"
+        ]
+      },
+      {
+        "type": "grammar",
+        "title": "Verb Conjugation",
+        "content": "Using sein to state your age",
+        "grammarId": "de_verb_conjugation"
+      }
+    ],
+    "subtitle_en": "Zahlen und Alter",
+    "subtitle_id": "Angka dan Umur"
+  },
+  {
+    "id": "de-a1-u3-l1",
+    "unitId": "de-a1-u3",
+    "title": "Daily Routine",
+    "subtitle": "Tagesablauf",
+    "order": 1,
+    "durationMin": 20,
+    "xp": 60,
+    "objectives": [
+      "Describe daily activities",
+      "Tell time",
+      "Use separable verbs"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Daily Activities",
+        "vocabIds": [
+          "de_aufstehen",
+          "de_fruehstuecken",
+          "de_arbeiten"
+        ]
+      },
+      {
+        "type": "grammar",
+        "title": "Separable Verbs",
+        "grammarId": "de_separable_verbs"
+      }
+    ],
+    "subtitle_en": "Tagesablauf",
+    "subtitle_id": "Rutinitas Harian"
+  },
+  {
+    "id": "de-a1-u3-l2",
+    "unitId": "de-a1-u3",
+    "title": "Time and Schedule",
+    "subtitle": "Zeit und Zeitplan",
+    "order": 2,
+    "durationMin": 25,
+    "xp": 70,
+    "objectives": [
+      "Tell time accurately",
+      "Talk about schedules",
+      "Use time expressions"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Time Expressions",
+        "vocabIds": [
+          "de_uhr",
+          "de_morgen",
+          "de_abend"
+        ]
+      }
+    ],
+    "subtitle_en": "Zeit und Zeitplan",
+    "subtitle_id": "Waktu dan Jadwal"
+  },
+  {
+    "id": "de-a1-u3-l3",
+    "unitId": "de-a1-u3",
+    "title": "Asking for Directions",
+    "subtitle": "Nach dem Weg fragen",
+    "order": 3,
+    "durationMin": 20,
+    "xp": 60,
+    "objectives": [
+      "Ask where places are",
+      "Understand simple directions",
+      "Use prepositions of place"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Places in Town",
+        "content": "Common places and buildings",
+        "vocabIds": [
+          "de_bahnhof",
+          "de_park",
+          "de_supermarkt"
+        ]
+      },
+      {
+        "type": "grammar",
+        "title": "Questions",
+        "content": "W-Fragen for asking directions",
+        "grammarId": "de_questions"
+      },
+      {
+        "type": "grammar",
+        "title": "Imperative",
+        "content": "Polite requests with the imperative",
+        "grammarId": "de_imperative"
+      }
+    ],
+    "subtitle_en": "Nach dem Weg fragen",
+    "subtitle_id": "Menanyakan Arah"
+  },
+  {
+    "id": "de-a1-u4-l1",
+    "unitId": "de-a1-u4",
+    "title": "At the Restaurant",
+    "subtitle": "Im Restaurant",
+    "order": 1,
+    "durationMin": 20,
+    "xp": 60,
+    "objectives": [
+      "Order food and drinks",
+      "Ask for the menu",
+      "Pay the bill"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Food and Drinks",
+        "vocabIds": [
+          "de_essen",
+          "de_trinken",
+          "de_rechnung"
+        ]
+      }
+    ],
+    "subtitle_en": "Im Restaurant",
+    "subtitle_id": "Di Restoran"
+  },
+  {
+    "id": "de-a1-u4-l2",
+    "unitId": "de-a1-u4",
+    "title": "Shopping for Food",
+    "subtitle": "Lebensmittel einkaufen",
+    "order": 2,
+    "durationMin": 25,
+    "xp": 70,
+    "objectives": [
+      "Buy groceries",
+      "Ask for prices",
+      "Use quantities"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Food Items",
+        "vocabIds": [
+          "de_brot",
+          "de_milch",
+          "de_kaese"
+        ]
+      }
+    ],
+    "subtitle_en": "Lebensmittel einkaufen",
+    "subtitle_id": "Belanja Bahan Makanan"
+  },
+  {
+    "id": "de-a1-u4-l3",
+    "unitId": "de-a1-u4",
+    "title": "Ordering at a Café",
+    "subtitle": "Im Café bestellen",
+    "order": 3,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Order food and drinks",
+      "Understand prices",
+      "Ask for the bill"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Drinks and Food",
+        "content": "Drinks and snacks at a café",
+        "vocabIds": [
+          "de_kaffee",
+          "de_tee",
+          "de_saft",
+          "de_brot",
+          "de_bier"
+        ]
+      },
+      {
+        "type": "grammar",
+        "title": "Articles",
+        "content": "ein/eine with drinks and food",
+        "grammarId": "de_articles_ein_eine"
+      },
+      {
+        "type": "grammar",
+        "title": "Modal Verbs",
+        "content": "Möchten for polite requests",
+        "grammarId": "de_modal_verbs"
+      }
+    ],
+    "subtitle_en": "Im Café bestellen",
+    "subtitle_id": "Memesan di Kafe"
+  },
+  {
+    "id": "de-a2-u1-l1",
+    "unitId": "de-a2-u1",
+    "title": "At the Train Station",
+    "subtitle": "Am Bahnhof",
+    "order": 1,
+    "durationMin": 25,
+    "xp": 80,
+    "objectives": [
+      "Buy train tickets",
+      "Ask for directions",
+      "Understand announcements"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Transportation Vocabulary",
+        "vocabIds": [
+          "de_bahnhof",
+          "de_zug",
+          "de_fahrkarte"
+        ]
+      }
+    ],
+    "subtitle_en": "Am Bahnhof",
+    "subtitle_id": "Di Stasiun Kereta"
+  },
+  {
+    "id": "de-a2-u1-l2",
+    "unitId": "de-a2-u1",
+    "title": "Planning a Trip",
+    "subtitle": "Eine Reise planen",
+    "order": 2,
+    "durationMin": 30,
+    "xp": 90,
+    "objectives": [
+      "Book accommodation",
+      "Discuss travel plans",
+      "Use future tense"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Travel Planning",
+        "vocabIds": [
+          "de_hotel",
+          "de_reise",
+          "de_buchen"
+        ]
+      },
+      {
+        "type": "grammar",
+        "title": "Future Tense",
+        "grammarId": "de_future_tense"
+      }
+    ],
+    "subtitle_en": "Eine Reise planen",
+    "subtitle_id": "Merencanakan Perjalanan"
+  },
+  {
+    "id": "de-a2-u1-l3",
+    "unitId": "de-a2-u1",
+    "title": "At the Hotel",
+    "subtitle": "Im Hotel",
+    "order": 3,
+    "durationMin": 25,
+    "xp": 80,
+    "objectives": [
+      "Check into a hotel",
+      "Ask about facilities",
+      "Understand booking details"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Hotel Vocabulary",
+        "content": "Rooms, facilities and bookings",
+        "vocabIds": [
+          "de_hotel",
+          "de_schlafzimmer",
+          "de_reservierung"
+        ]
+      },
+      {
+        "type": "grammar",
+        "title": "Future with werden",
+        "content": "Talking about your stay",
+        "grammarId": "de_future_werden"
+      },
+      {
+        "type": "grammar",
+        "title": "Dative Case",
+        "content": "Ich möchte ... + dative",
+        "grammarId": "de_dative_case"
+      }
+    ],
+    "subtitle_en": "Im Hotel",
+    "subtitle_id": "Di Hotel"
+  },
+  {
+    "id": "de-a2-u2-l1",
+    "unitId": "de-a2-u2",
+    "title": "Shopping and Bargaining",
+    "subtitle": "Einkaufen und Handeln",
+    "order": 1,
+    "durationMin": 25,
+    "xp": 80,
+    "objectives": [
+      "Shop for clothes",
+      "Compare prices",
+      "Return items"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Shopping Vocabulary",
+        "vocabIds": [
+          "de_kaufen",
+          "de_preis",
+          "de_teuer"
+        ]
+      }
+    ],
+    "subtitle_en": "Einkaufen und Handeln",
+    "subtitle_id": "Belanja dan Tawar-menawar"
+  },
+  {
+    "id": "de-a2-u2-l2",
+    "unitId": "de-a2-u2",
+    "title": "At the Market",
+    "subtitle": "Auf dem Markt",
+    "order": 2,
+    "durationMin": 25,
+    "xp": 80,
+    "objectives": [
+      "Buy fresh produce",
+      "Compare prices",
+      "Pay at the market"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Fruit and Vegetables",
+        "content": "Fresh produce vocabulary",
+        "vocabIds": [
+          "de_markt",
+          "de_kaufen",
+          "de_preis"
+        ]
+      },
+      {
+        "type": "grammar",
+        "title": "Comparative",
+        "content": "Comparing prices (billig vs billiger)",
+        "grammarId": "de_comparative_superlative"
+      },
+      {
+        "type": "grammar",
+        "title": "Accusative Case",
+        "content": "Accusative for buying things",
+        "grammarId": "de_accusative_case"
+      }
+    ],
+    "subtitle_en": "Auf dem Markt",
+    "subtitle_id": "Di Pasar"
+  },
+  {
+    "id": "de-a2-u2-l3",
+    "unitId": "de-a2-u2",
+    "title": "Clothes Shopping",
+    "subtitle": "Kleidung kaufen",
+    "order": 3,
+    "durationMin": 20,
+    "xp": 70,
+    "objectives": [
+      "Describe clothes",
+      "Try things on",
+      "Ask about sizes"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Clothes",
+        "content": "Clothing items",
+        "vocabIds": [
+          "de_kleidung",
+          "de_hemd",
+          "de_hose",
+          "de_schuh"
+        ]
+      },
+      {
+        "type": "vocab",
+        "title": "Shopping",
+        "content": "Buying and fitting",
+        "vocabIds": [
+          "de_angebot",
+          "de_verkaufen"
+        ]
+      },
+      {
+        "type": "grammar",
+        "title": "Adjectives",
+        "content": "Describing clothes",
+        "grammarId": "de_comparative_superlative"
+      }
+    ],
+    "subtitle_en": "Kleidung kaufen",
+    "subtitle_id": "Membeli Pakaian"
+  },
+  {
+    "id": "de-a2-u3-l1",
+    "unitId": "de-a2-u3",
+    "title": "At the Doctor",
+    "subtitle": "Beim Arzt",
+    "order": 1,
+    "durationMin": 25,
+    "xp": 80,
+    "objectives": [
+      "Describe symptoms",
+      "Understand medical advice",
+      "Talk about health"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Health Vocabulary",
+        "vocabIds": [
+          "de_arzt",
+          "de_schmerz",
+          "de_krank"
+        ]
+      }
+    ],
+    "subtitle_en": "Beim Arzt",
+    "subtitle_id": "Di Dokter"
+  },
+  {
+    "id": "de-a2-u3-l2",
+    "unitId": "de-a2-u3",
+    "title": "At the Pharmacy",
+    "subtitle": "In der Apotheke",
+    "order": 2,
+    "durationMin": 20,
+    "xp": 70,
+    "objectives": [
+      "Explain symptoms",
+      "Buy medicine",
+      "Understand instructions"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Pharmacy",
+        "content": "Medicine and symptoms",
+        "vocabIds": [
+          "de_apotheke",
+          "de_medikament",
+          "de_fieber"
+        ]
+      },
+      {
+        "type": "grammar",
+        "title": "Reflexive Verbs",
+        "content": "sich fühlen for symptoms",
+        "grammarId": "de_reflexive_verbs"
+      },
+      {
+        "type": "grammar",
+        "title": "Subordinate Clauses",
+        "content": "weil for giving reasons",
+        "grammarId": "de_subordinate_clauses"
+      }
+    ],
+    "subtitle_en": "In der Apotheke",
+    "subtitle_id": "Di Apotek"
+  },
+  {
+    "id": "de-a2-u3-l3",
+    "unitId": "de-a2-u3",
+    "title": "Healthy Living",
+    "subtitle": "Gesund leben",
+    "order": 3,
+    "durationMin": 20,
+    "xp": 70,
+    "objectives": [
+      "Talk about healthy habits",
+      "Discuss sports",
+      "Give advice"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Health and Fitness",
+        "content": "Health, sport and well-being",
+        "vocabIds": [
+          "de_gesund",
+          "de_schwimmen",
+          "de_fussball"
+        ]
+      },
+      {
+        "type": "grammar",
+        "title": "Perfect Tense",
+        "content": "Talking about what you did",
+        "grammarId": "de_past_perfect"
+      },
+      {
+        "type": "grammar",
+        "title": "Simple Past",
+        "content": "war and hatte for describing health",
+        "grammarId": "de_praeteritum_haben_sein"
+      }
+    ],
+    "subtitle_en": "Gesund leben",
+    "subtitle_id": "Hidup Sehat"
+  },
+  {
+    "id": "de-b1-u1-l1",
+    "unitId": "de-b1-u1",
+    "title": "Job Interview",
+    "subtitle": "Bewerbungsgespräch",
+    "order": 1,
+    "durationMin": 30,
+    "xp": 100,
+    "objectives": [
+      "Discuss work experience",
+      "Express qualifications",
+      "Ask about job conditions"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Career Vocabulary",
+        "vocabIds": [
+          "de_arbeit",
+          "de_beruf",
+          "de_bewerbung"
+        ]
+      }
+    ],
+    "subtitle_en": "Bewerbungsgespräch",
+    "subtitle_id": "Wawancara Kerja"
+  },
+  {
+    "id": "de-b1-u2-l1",
+    "unitId": "de-b1-u2",
+    "title": "German Culture",
+    "subtitle": "Deutsche Kultur",
+    "order": 1,
+    "durationMin": 30,
+    "xp": 100,
+    "objectives": [
+      "Discuss cultural topics",
+      "Express opinions",
+      "Debate social issues"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Culture Vocabulary",
+        "vocabIds": [
+          "de_kultur",
+          "de_tradition",
+          "de_fest"
+        ]
+      }
+    ],
+    "subtitle_en": "Deutsche Kultur",
+    "subtitle_id": "Budaya Jerman"
+  },
+  {
+    "id": "de-b2-u1-l1",
+    "unitId": "de-b2-u1",
+    "title": "Advanced Discussions",
+    "subtitle": "Fortgeschrittene Gespräche",
+    "order": 1,
+    "durationMin": 35,
+    "xp": 120,
+    "objectives": [
+      "Express complex ideas",
+      "Use advanced vocabulary",
+      "Debate abstract topics"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Advanced Vocabulary",
+        "vocabIds": []
+      }
+    ],
+    "subtitle_en": "Fortgeschrittene Gespräche",
+    "subtitle_id": "Percakapan Lanjutan"
+  },
+  {
+    "id": "de-b1-u1-l2",
+    "unitId": "de-b1-u1",
+    "title": "Salary and Conditions",
+    "subtitle": "Gehalt und Arbeitsbedingungen",
+    "order": 2,
+    "durationMin": 30,
+    "xp": 100,
+    "objectives": [
+      "Discuss salary",
+      "Understand work contract terms",
+      "Talk about overtime and holidays"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Work and Money Vocabulary",
+        "content": "Salary, tax, contract and hours",
+        "vocabIds": [
+          "de_gehalt",
+          "de_steuer",
+          "de_urlaub",
+          "de_ueberstunden"
+        ]
+      },
+      {
+        "type": "grammar",
+        "title": "Prepositions with Genitive",
+        "content": "wegen, trotz, während + genitive"
+      },
+      {
+        "type": "grammar",
+        "title": "Infinitive with zu",
+        "content": "Ich hoffe, ... zu verdienen"
+      }
+    ],
+    "subtitle_en": "Gehalt und Arbeitsbedingungen",
+    "subtitle_id": "Gaji dan Kondisi Kerja"
+  },
+  {
+    "id": "de-b1-u1-l3",
+    "unitId": "de-b1-u1",
+    "title": "Your First Day",
+    "subtitle": "Der erste Arbeitstag",
+    "order": 3,
+    "durationMin": 30,
+    "xp": 100,
+    "objectives": [
+      "Introduce yourself at work",
+      "Ask about daily routines",
+      "Understand office culture"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Office Life Vocabulary",
+        "content": "Colleagues, meetings and routines",
+        "vocabIds": [
+          "de_arbeitsplatz",
+          "de_arbeit",
+          "de_beruf"
+        ]
+      },
+      {
+        "type": "grammar",
+        "title": "Separable Verbs",
+        "content": "eintragen, vorstellen, aufstehen"
+      },
+      {
+        "type": "grammar",
+        "title": "Past Tense Review",
+        "content": "Ich habe ... kennengelernt"
+      }
+    ],
+    "subtitle_en": "Der erste Arbeitstag",
+    "subtitle_id": "Hari Pertama Kerja"
+  },
+  {
+    "id": "de-b1-u2-l2",
+    "unitId": "de-b1-u2",
+    "title": "German Food and Drink",
+    "subtitle": "Essen und Trinken",
+    "order": 2,
+    "durationMin": 25,
+    "xp": 80,
+    "objectives": [
+      "Order food at a restaurant",
+      "Talk about German dishes",
+      "Explain dietary habits"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Food Vocabulary",
+        "content": "Meals, bread, coffee and cake",
+        "vocabIds": [
+          "de_fruehstueck",
+          "de_brot",
+          "de_kaffee",
+          "de_kuchen"
+        ]
+      },
+      {
+        "type": "grammar",
+        "title": "Two-Part Conjunctions",
+        "content": "sowohl ... als auch, weder ... noch"
+      }
+    ],
+    "subtitle_en": "Essen und Trinken",
+    "subtitle_id": "Makanan dan Minuman Jerman"
+  },
+  {
+    "id": "de-b1-u2-l3",
+    "unitId": "de-b1-u2",
+    "title": "Holidays and Traditions",
+    "subtitle": "Feiertage und Traditionen",
+    "order": 3,
+    "durationMin": 25,
+    "xp": 80,
+    "objectives": [
+      "Describe German holidays",
+      "Compare traditions",
+      "Talk about regional customs"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Traditions Vocabulary",
+        "content": "Customs, gifts and families",
+        "vocabIds": [
+          "de_tradition",
+          "de_brauch",
+          "de_geschenk",
+          "de_urlaub"
+        ]
+      },
+      {
+        "type": "grammar",
+        "title": "Relative Clauses",
+        "content": "Das Fest, das ... feiert"
+      },
+      {
+        "type": "grammar",
+        "title": "Subordinate Clauses",
+        "content": "weil, obwohl, dass"
+      }
+    ],
+    "subtitle_en": "Feiertage und Traditionen",
+    "subtitle_id": "Hari Libur dan Tradisi"
+  },
+  {
+    "id": "de-b2-u1-l2",
+    "unitId": "de-b2-u1",
+    "title": "Arguments and Opinions",
+    "subtitle": "Argumente und Meinungen",
+    "order": 2,
+    "durationMin": 35,
+    "xp": 120,
+    "objectives": [
+      "Express strong opinions",
+      "Support arguments",
+      "Disagree politely"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Debate Vocabulary",
+        "content": "Arguments, views and opinions",
+        "vocabIds": [
+          "de_argument",
+          "de_meinung",
+          "de_ansicht",
+          "de_idee"
+        ]
+      },
+      {
+        "type": "grammar",
+        "title": "Konjunktiv II Review",
+        "content": "Ich würde sagen, dass ..."
+      },
+      {
+        "type": "grammar",
+        "title": "Indirect Questions",
+        "content": "Ich weiß nicht, ob ..."
+      }
+    ],
+    "subtitle_en": "Argumente und Meinungen",
+    "subtitle_id": "Argumen dan Pendapat"
+  },
+  {
+    "id": "de-b2-u1-l3",
+    "unitId": "de-b2-u1",
+    "title": "Politics and Society",
+    "subtitle": "Politik und Gesellschaft",
+    "order": 3,
+    "durationMin": 35,
+    "xp": 120,
+    "objectives": [
+      "Discuss social issues",
+      "Analyze political topics",
+      "Present a balanced view"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Society Vocabulary",
+        "content": "Politics, society and welfare",
+        "vocabIds": [
+          "de_politik",
+          "de_gesellschaft",
+          "de_umwelt",
+          "de_diskussion"
+        ]
+      },
+      {
+        "type": "grammar",
+        "title": "Consecutive Clauses",
+        "content": "sodass, zu ... um zu"
+      },
+      {
+        "type": "grammar",
+        "title": "Passive Voice",
+        "content": "Es wird ... diskutiert"
+      }
+    ],
+    "subtitle_en": "Politik und Gesellschaft",
+    "subtitle_id": "Politik dan Masyarakat"
+  }
+]

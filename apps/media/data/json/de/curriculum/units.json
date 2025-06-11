@@ -1,0 +1,164 @@
+[
+  {
+    "id": "de-a1-u1",
+    "levelId": "de-a1",
+    "title": "Greetings and Introductions",
+    "subtitle": "Grüße und Vorstellungen",
+    "order": 1,
+    "description": "Learn basic greetings and how to introduce yourself in German.",
+    "lessonIds": [
+      "de-a1-u1-l1",
+      "de-a1-u1-l2",
+      "de-a1-u1-l3"
+    ],
+    "subtitle_en": "Grüße und Vorstellungen",
+    "subtitle_id": "Sapaan dan Perkenalan",
+    "description_en": "Learn basic greetings and how to introduce yourself in German.",
+    "description_id": "Belajar sapaan dasar dan cara memperkenalkan diri dalam bahasa Jerman."
+  },
+  {
+    "id": "de-a1-u2",
+    "levelId": "de-a1",
+    "title": "Family and Friends",
+    "subtitle": "Familie und Freunde",
+    "order": 2,
+    "description": "Talk about your family members and describe people.",
+    "lessonIds": [
+      "de-a1-u2-l1",
+      "de-a1-u2-l2"
+    ],
+    "subtitle_en": "Familie und Freunde",
+    "subtitle_id": "Keluarga dan Teman",
+    "description_en": "Talk about your family members and describe people.",
+    "description_id": "Bicara tentang anggota keluarga dan mendeskripsikan orang."
+  },
+  {
+    "id": "de-a1-u3",
+    "levelId": "de-a1",
+    "title": "Daily Life",
+    "subtitle": "Alltag",
+    "order": 3,
+    "description": "Express daily routines and activities.",
+    "lessonIds": [
+      "de-a1-u3-l1",
+      "de-a1-u3-l2"
+    ],
+    "subtitle_en": "Alltag",
+    "subtitle_id": "Kehidupan Sehari-hari",
+    "description_en": "Express daily routines and activities.",
+    "description_id": "Menyatakan rutinitas dan aktivitas harian."
+  },
+  {
+    "id": "de-a1-u4",
+    "levelId": "de-a1",
+    "title": "Food and Drink",
+    "subtitle": "Essen und Trinken",
+    "order": 4,
+    "description": "Order food and talk about meals.",
+    "lessonIds": [
+      "de-a1-u4-l1",
+      "de-a1-u4-l2"
+    ],
+    "subtitle_en": "Essen und Trinken",
+    "subtitle_id": "Makan dan Minum",
+    "description_en": "Order food and talk about meals.",
+    "description_id": "Memesan makanan dan bicara tentang hidangan."
+  },
+  {
+    "id": "de-a2-u1",
+    "levelId": "de-a2",
+    "title": "Travel and Transportation",
+    "subtitle": "Reisen und Verkehr",
+    "order": 1,
+    "description": "Navigate transportation and travel situations.",
+    "lessonIds": [
+      "de-a2-u1-l1",
+      "de-a2-u1-l2"
+    ],
+    "subtitle_en": "Reisen und Verkehr",
+    "subtitle_id": "Perjalanan dan Transportasi",
+    "description_en": "Navigate transportation and travel situations.",
+    "description_id": "Hadapi situasi transportasi dan perjalanan."
+  },
+  {
+    "id": "de-a2-u2",
+    "levelId": "de-a2",
+    "title": "Shopping and Money",
+    "subtitle": "Einkaufen und Geld",
+    "order": 2,
+    "description": "Shop and handle money transactions.",
+    "lessonIds": [
+      "de-a2-u2-l1"
+    ],
+    "subtitle_en": "Einkaufen und Geld",
+    "subtitle_id": "Belanja dan Uang",
+    "description_en": "Shop and handle money transactions.",
+    "description_id": "Berbelanja dan menangani transaksi uang."
+  },
+  {
+    "id": "de-a2-u3",
+    "levelId": "de-a2",
+    "title": "Health and Body",
+    "subtitle": "Gesundheit und Körper",
+    "order": 3,
+    "description": "Discuss health issues and body parts.",
+    "lessonIds": [
+      "de-a2-u3-l1"
+    ],
+    "subtitle_en": "Gesundheit und Körper",
+    "subtitle_id": "Kesehatan dan Tubuh",
+    "description_en": "Discuss health issues and body parts.",
+    "description_id": "Membahas masalah kesehatan dan bagian tubuh."
+  },
+  {
+    "id": "de-b1-u1",
+    "levelId": "de-b1",
+    "title": "Work and Career",
+    "subtitle": "Arbeit und Beruf",
+    "order": 1,
+    "description": "Talk about jobs and work environments.",
+    "lessonIds": [
+      "de-b1-u1-l1",
+      "de-b1-u1-l2",
+      "de-b1-u1-l3"
+    ],
+    "subtitle_en": "Arbeit und Beruf",
+    "subtitle_id": "Pekerjaan dan Profesi",
+    "description_en": "Talk about jobs and work environments.",
+    "description_id": "Bicara tentang pekerjaan dan lingkungan kerja."
+  },
+  {
+    "id": "de-b1-u2",
+    "levelId": "de-b1",
+    "title": "Culture and Society",
+    "subtitle": "Kultur und Gesellschaft",
+    "order": 2,
+    "description": "Discuss cultural topics and social issues.",
+    "lessonIds": [
+      "de-b1-u2-l1",
+      "de-b1-u2-l2",
+      "de-b1-u2-l3"
+    ],
+    "subtitle_en": "Kultur und Gesellschaft",
+    "subtitle_id": "Budaya dan Masyarakat",
+    "description_en": "Discuss cultural topics and social issues.",
+    "description_id": "Membahas topik budaya dan isu sosial."
+  },
+  {
+    "id": "de-b2-u1",
+    "levelId": "de-b2",
+    "title": "Advanced Communication",
+    "subtitle": "Fortgeschrittene Kommunikation",
+    "order": 1,
+    "description": "Express complex ideas and opinions.",
+    "lessonIds": [
+      "de-b2-u1-l1",
+      "de-b2-u1-l2",
+      "de-b2-u1-l3"
+    ],
+    "subtitle_en": "Fortgeschrittene Kommunikation",
+    "subtitle_id": "Komunikasi Lanjutan",
+    "description_en": "Express complex ideas and opinions.",
+    "description_id": "Menyampaikan gagasan dan pendapat kompleks."
+  }
+]
