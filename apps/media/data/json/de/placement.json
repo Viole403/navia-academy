@@ -1,0 +1,590 @@
+[
+  {
+    "id": "de-p1-1",
+    "band": 1,
+    "type": "multiple-choice",
+    "prompt": "What is the German word for \"thank you\"?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "Danke"
+      },
+      {
+        "id": "o1",
+        "label": "Bitte"
+      },
+      {
+        "id": "o2",
+        "label": "Hallo"
+      },
+      {
+        "id": "o3",
+        "label": "Tschüss"
+      }
+    ],
+    "correct": "o0",
+    "skill": "vocabulary",
+    "language": "de",
+    "prompt_en": "What is the German word for \"thank you\"?",
+    "prompt_id": "Apa kata Jerman untuk terima kasih?"
+  },
+  {
+    "id": "de-p1-2",
+    "band": 1,
+    "type": "multiple-choice",
+    "prompt": "What does \"Haus\" mean?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "house"
+      },
+      {
+        "id": "o1",
+        "label": "mouse"
+      },
+      {
+        "id": "o2",
+        "label": "horse"
+      },
+      {
+        "id": "o3",
+        "label": "room"
+      }
+    ],
+    "correct": "o0",
+    "skill": "vocabulary",
+    "language": "de",
+    "prompt_en": "What does \"Haus\" mean?",
+    "prompt_id": "Apa arti Haus?"
+  },
+  {
+    "id": "de-p1-3",
+    "band": 1,
+    "type": "multiple-choice",
+    "prompt": "Which one is the number 3?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "drei"
+      },
+      {
+        "id": "o1",
+        "label": "zwei"
+      },
+      {
+        "id": "o2",
+        "label": "vier"
+      },
+      {
+        "id": "o3",
+        "label": "fünf"
+      }
+    ],
+    "correct": "o0",
+    "skill": "vocabulary",
+    "language": "de",
+    "prompt_en": "Which one is the number 3?",
+    "prompt_id": "Yang mana angka 3?"
+  },
+  {
+    "id": "de-p1-4",
+    "band": 1,
+    "type": "listening-choice",
+    "prompt": "Listen and choose what you hear.",
+    "options": [
+      {
+        "id": "o0",
+        "label": "Hallo"
+      },
+      {
+        "id": "o1",
+        "label": "Danke"
+      },
+      {
+        "id": "o2",
+        "label": "Bitte"
+      },
+      {
+        "id": "o3",
+        "label": "Guten Morgen"
+      }
+    ],
+    "correct": "o0",
+    "skill": "listening",
+    "audioText": "Hallo",
+    "audio": "placement:de-p1-4",
+    "language": "de",
+    "prompt_en": "Listen and choose what you hear.",
+    "prompt_id": "Dengarkan dan pilih apa yang kamu dengar."
+  },
+  {
+    "id": "de-p2-1",
+    "band": 2,
+    "type": "multiple-choice",
+    "prompt": "What is the German word for \"to eat\"?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "essen"
+      },
+      {
+        "id": "o1",
+        "label": "trinken"
+      },
+      {
+        "id": "o2",
+        "label": "laufen"
+      },
+      {
+        "id": "o3",
+        "label": "schlafen"
+      }
+    ],
+    "correct": "o0",
+    "skill": "vocabulary",
+    "language": "de",
+    "prompt_en": "What is the German word for \"to eat\"?",
+    "prompt_id": "Apa kata Jerman untuk makan?"
+  },
+  {
+    "id": "de-p2-2",
+    "band": 2,
+    "type": "multiple-choice",
+    "prompt": "Choose the correct article for \"Mädchen\" (girl).",
+    "options": [
+      {
+        "id": "o0",
+        "label": "das Mädchen"
+      },
+      {
+        "id": "o1",
+        "label": "der Mädchen"
+      },
+      {
+        "id": "o2",
+        "label": "die Mädchen"
+      },
+      {
+        "id": "o3",
+        "label": "ein Mädchen"
+      }
+    ],
+    "correct": "o0",
+    "skill": "grammar",
+    "language": "de",
+    "prompt_en": "Choose the correct article for \"Mädchen\" (girl).",
+    "prompt_id": "Pilih artikel yang benar untuk Madchen (gadis)."
+  },
+  {
+    "id": "de-p2-3",
+    "band": 2,
+    "type": "multiple-choice",
+    "prompt": "What does \"Ich heiße Anna\" mean?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "My name is Anna"
+      },
+      {
+        "id": "o1",
+        "label": "I am Anna"
+      },
+      {
+        "id": "o2",
+        "label": "Anna likes me"
+      },
+      {
+        "id": "o3",
+        "label": "Anna is here"
+      }
+    ],
+    "correct": "o0",
+    "skill": "reading",
+    "language": "de",
+    "prompt_en": "What does \"Ich heiße Anna\" mean?",
+    "prompt_id": "Apa arti Ich heisse Anna?"
+  },
+  {
+    "id": "de-p2-4",
+    "band": 2,
+    "type": "listening-choice",
+    "prompt": "Listen: what are they doing?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "We are eating now"
+      },
+      {
+        "id": "o1",
+        "label": "We are sleeping now"
+      },
+      {
+        "id": "o2",
+        "label": "We are walking now"
+      },
+      {
+        "id": "o3",
+        "label": "We are singing now"
+      }
+    ],
+    "correct": "o0",
+    "skill": "listening",
+    "audioText": "Wir essen jetzt",
+    "audio": "placement:de-p2-4",
+    "language": "de",
+    "prompt_en": "Listen: what are they doing?",
+    "prompt_id": "Dengarkan: apa yang sedang mereka lakukan?"
+  },
+  {
+    "id": "de-p3-1",
+    "band": 3,
+    "type": "multiple-choice",
+    "prompt": "Choose the correct past tense: \"Ich ___ gestern ins Kino.\"",
+    "options": [
+      {
+        "id": "o0",
+        "label": "bin gegangen"
+      },
+      {
+        "id": "o1",
+        "label": "habe gegangen"
+      },
+      {
+        "id": "o2",
+        "label": "bin gehen"
+      },
+      {
+        "id": "o3",
+        "label": "habe gehen"
+      }
+    ],
+    "correct": "o0",
+    "skill": "grammar",
+    "language": "de",
+    "prompt_en": "Choose the correct past tense: \"Ich ___ gestern ins Kino.\"",
+    "prompt_id": "Pilih past tense yang benar: Ich ___ gestern ins Kino."
+  },
+  {
+    "id": "de-p3-2",
+    "band": 3,
+    "type": "multiple-choice",
+    "prompt": "What does \"obwohl\" mean?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "although"
+      },
+      {
+        "id": "o1",
+        "label": "because"
+      },
+      {
+        "id": "o2",
+        "label": "while"
+      },
+      {
+        "id": "o3",
+        "label": "before"
+      }
+    ],
+    "correct": "o0",
+    "skill": "vocabulary",
+    "language": "de",
+    "prompt_en": "What does \"obwohl\" mean?",
+    "prompt_id": "Apa arti obwohl?"
+  },
+  {
+    "id": "de-p3-3",
+    "band": 3,
+    "type": "multiple-choice",
+    "prompt": "Read: \"Obwohl es regnete, ging er spazieren.\" What did he do?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "He went for a walk"
+      },
+      {
+        "id": "o1",
+        "label": "He stayed home"
+      },
+      {
+        "id": "o2",
+        "label": "He went shopping"
+      },
+      {
+        "id": "o3",
+        "label": "He took the bus"
+      }
+    ],
+    "correct": "o0",
+    "skill": "reading",
+    "language": "de",
+    "prompt_en": "Read: \"Obwohl es regnete, ging er spazieren.\" What did he do?",
+    "prompt_id": "Baca: Obwohl es regnete, ging er spazieren. Apa yang dia lakukan?"
+  },
+  {
+    "id": "de-p3-4",
+    "band": 3,
+    "type": "listening-choice",
+    "prompt": "Listen and choose the correct meaning.",
+    "options": [
+      {
+        "id": "o0",
+        "label": "Can you help me, please?"
+      },
+      {
+        "id": "o1",
+        "label": "Can you cook dinner?"
+      },
+      {
+        "id": "o2",
+        "label": "Can you open the door?"
+      },
+      {
+        "id": "o3",
+        "label": "Can you call me?"
+      }
+    ],
+    "correct": "o0",
+    "skill": "listening",
+    "audioText": "Können Sie mir bitte helfen?",
+    "audio": "placement:de-p3-4",
+    "language": "de",
+    "prompt_en": "Listen and choose the correct meaning.",
+    "prompt_id": "Dengarkan dan pilih makna yang benar."
+  },
+  {
+    "id": "de-p4-1",
+    "band": 4,
+    "type": "multiple-choice",
+    "prompt": "Choose the correct subjunctive: \"Wenn ich Zeit hätte, ___ ich reisen.\"",
+    "options": [
+      {
+        "id": "o0",
+        "label": "würde"
+      },
+      {
+        "id": "o1",
+        "label": "werde"
+      },
+      {
+        "id": "o2",
+        "label": "hätte"
+      },
+      {
+        "id": "o3",
+        "label": "habe"
+      }
+    ],
+    "correct": "o0",
+    "skill": "grammar",
+    "language": "de",
+    "prompt_en": "Choose the correct subjunctive: \"Wenn ich Zeit hätte, ___ ich reisen.\"",
+    "prompt_id": "Pilih subjunctive yang benar: Wenn ich Zeit hatte, ___ ich reisen."
+  },
+  {
+    "id": "de-p4-2",
+    "band": 4,
+    "type": "multiple-choice",
+    "prompt": "What does \"sich lohnen\" mean?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "to be worth it"
+      },
+      {
+        "id": "o1",
+        "label": "to pay for something"
+      },
+      {
+        "id": "o2",
+        "label": "to lend something"
+      },
+      {
+        "id": "o3",
+        "label": "to earn money"
+      }
+    ],
+    "correct": "o0",
+    "skill": "vocabulary",
+    "language": "de",
+    "prompt_en": "What does \"sich lohnen\" mean?",
+    "prompt_id": "Apa arti sich lohnen?"
+  },
+  {
+    "id": "de-p4-3",
+    "band": 4,
+    "type": "multiple-choice",
+    "prompt": "Read: \"In der Stadt gibt es viele Fahrradwege.\"",
+    "options": [
+      {
+        "id": "o0",
+        "label": "There are many bike lanes in the city"
+      },
+      {
+        "id": "o1",
+        "label": "There are few cars in the city"
+      },
+      {
+        "id": "o2",
+        "label": "The city has no public transport"
+      },
+      {
+        "id": "o3",
+        "label": "Bicycles are forbidden downtown"
+      }
+    ],
+    "correct": "o0",
+    "skill": "reading",
+    "language": "de",
+    "prompt_en": "Read: \"In der Stadt gibt es viele Fahrradwege.\"",
+    "prompt_id": "Baca: In der Stadt gibt es viele Fahrradwege."
+  },
+  {
+    "id": "de-p4-4",
+    "band": 4,
+    "type": "listening-choice",
+    "prompt": "Listen: what happened to the appointment?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "I moved it"
+      },
+      {
+        "id": "o1",
+        "label": "I cancelled it"
+      },
+      {
+        "id": "o2",
+        "label": "I made it"
+      },
+      {
+        "id": "o3",
+        "label": "I missed it"
+      }
+    ],
+    "correct": "o0",
+    "skill": "listening",
+    "audioText": "Ich habe den Termin verschoben",
+    "audio": "placement:de-p4-4",
+    "language": "de",
+    "prompt_en": "Listen: what happened to the appointment?",
+    "prompt_id": "Dengarkan: apa yang terjadi dengan janji temu?"
+  },
+  {
+    "id": "de-p5-1",
+    "band": 5,
+    "type": "multiple-choice",
+    "prompt": "Which sentence is correct?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "Die Frau, der ich geholfen habe, dankt mir."
+      },
+      {
+        "id": "o1",
+        "label": "Die Frau, die ich geholfen habe, dankt mir."
+      },
+      {
+        "id": "o2",
+        "label": "Die Frau, deren ich geholfen habe, dankt mir."
+      },
+      {
+        "id": "o3",
+        "label": "Die Frau, dem ich geholfen habe, dankt mir."
+      }
+    ],
+    "correct": "o0",
+    "skill": "grammar",
+    "language": "de",
+    "prompt_en": "Which sentence is correct?",
+    "prompt_id": "Kalimat mana yang benar?"
+  },
+  {
+    "id": "de-p5-2",
+    "band": 5,
+    "type": "multiple-choice",
+    "prompt": "What does \"nachhaltig\" mean?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "sustainable"
+      },
+      {
+        "id": "o1",
+        "label": "hasty"
+      },
+      {
+        "id": "o2",
+        "label": "unavoidable"
+      },
+      {
+        "id": "o3",
+        "label": "profitable"
+      }
+    ],
+    "correct": "o0",
+    "skill": "vocabulary",
+    "language": "de",
+    "prompt_en": "What does \"nachhaltig\" mean?",
+    "prompt_id": "Apa arti nachhaltig?"
+  },
+  {
+    "id": "de-p6-1",
+    "band": 6,
+    "type": "multiple-choice",
+    "prompt": "Read: \"Trotz der wirtschaftlichen Unsicherheit investierte das Unternehmen in erneuerbare Energien und schuf so langfristig zahlreiche Arbeitsplätze.\" What did the company do?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "Invested in renewables and created jobs"
+      },
+      {
+        "id": "o1",
+        "label": "Closed factories to cut costs"
+      },
+      {
+        "id": "o2",
+        "label": "Moved production abroad"
+      },
+      {
+        "id": "o3",
+        "label": "Raised prices despite uncertainty"
+      }
+    ],
+    "correct": "o0",
+    "skill": "reading",
+    "language": "de",
+    "prompt_en": "Read: \"Trotz der wirtschaftlichen Unsicherheit investierte das Unternehmen in erneuerbare Energien und schuf so langfristig zahlreiche Arbeitsplätze.\" What did the company do?",
+    "prompt_id": "Baca: Trotz der wirtschaftlichen Unsicherheit investierte das Unternehmen."
+  },
+  {
+    "id": "de-p6-2",
+    "band": 6,
+    "type": "multiple-choice",
+    "prompt": "Choose the correct passive sentence: \"Der Bericht ___ vor der Frist fertiggestellt worden.\"",
+    "options": [
+      {
+        "id": "o0",
+        "label": "ist"
+      },
+      {
+        "id": "o1",
+        "label": "hat"
+      },
+      {
+        "id": "o2",
+        "label": "wird"
+      },
+      {
+        "id": "o3",
+        "label": "war"
+      }
+    ],
+    "correct": "o0",
+    "skill": "grammar",
+    "language": "de",
+    "prompt_en": "Choose the correct passive sentence: \"Der Bericht ___ vor der Frist fertiggestellt worden.\"",
+    "prompt_id": "Pilih kalimat pasif yang benar: Der Bericht ___ vor der Frist."
+  }
+]
