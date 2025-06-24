@@ -1,0 +1,148 @@
+[
+  {
+    "id": "a-quick-de-a1",
+    "title": "Quick Test · Deutsch A1",
+    "description": "Five questions to check German A1 fundamentals: greetings, numbers, and basic structures.",
+    "kind": "quick",
+    "level": 1,
+    "examMappings": {
+      "goethe": "A1"
+    },
+    "durationMin": 5,
+    "passScore": 60,
+    "exercises": [
+      {
+        "id": "aqd1",
+        "type": "multiple-choice",
+        "prompt": "Wie sagt man «Hallo» auf Englisch?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "hello"
+          },
+          {
+            "id": "o1",
+            "label": "goodbye"
+          },
+          {
+            "id": "o2",
+            "label": "thank you"
+          },
+          {
+            "id": "o3",
+            "label": "sorry"
+          }
+        ],
+        "correct": "o0",
+        "skill": "vocabulary",
+        "level": 1
+      },
+      {
+        "id": "aqd2",
+        "type": "multiple-choice",
+        "prompt": "Which word means «mother»?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "die Mutter"
+          },
+          {
+            "id": "o1",
+            "label": "der Vater"
+          },
+          {
+            "id": "o2",
+            "label": "der Bruder"
+          },
+          {
+            "id": "o3",
+            "label": "die Schwester"
+          }
+        ],
+        "correct": "o0",
+        "skill": "vocabulary",
+        "level": 1
+      },
+      {
+        "id": "aqd3",
+        "type": "multiple-choice",
+        "prompt": "Choose the correct sentence:",
+        "options": [
+          {
+            "id": "o0",
+            "label": "Ich bin Student"
+          },
+          {
+            "id": "o1",
+            "label": "Ich Student bin"
+          },
+          {
+            "id": "o2",
+            "label": "Bin ich Student"
+          },
+          {
+            "id": "o3",
+            "label": "Student ich bin"
+          }
+        ],
+        "correct": "o0",
+        "skill": "grammar",
+        "level": 1
+      },
+      {
+        "id": "aqd4",
+        "type": "multiple-choice",
+        "prompt": "What number is «drei»?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "3"
+          },
+          {
+            "id": "o1",
+            "label": "1"
+          },
+          {
+            "id": "o2",
+            "label": "2"
+          },
+          {
+            "id": "o3",
+            "label": "13"
+          }
+        ],
+        "correct": "o0",
+        "skill": "reading",
+        "level": 1
+      },
+      {
+        "id": "aqd5",
+        "type": "multiple-choice",
+        "prompt": "Choose the correct question for asking where the station is:",
+        "options": [
+          {
+            "id": "o0",
+            "label": "Wo ist der Bahnhof?"
+          },
+          {
+            "id": "o1",
+            "label": "Was ist der Bahnhof?"
+          },
+          {
+            "id": "o2",
+            "label": "Wann ist der Bahnhof?"
+          },
+          {
+            "id": "o3",
+            "label": "Wer ist der Bahnhof?"
+          }
+        ],
+        "correct": "o0",
+        "skill": "grammar",
+        "level": 1
+      }
+    ],
+    "description_en": "Five questions to check German A1 fundamentals: greetings, numbers, and basic structures.",
+    "description_id": "Lima soal untuk menguji dasar bahasa Jerman A1: sapaan, angka, dan struktur dasar."
+  }
+]
