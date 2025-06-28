@@ -1,0 +1,722 @@
+[
+  {
+    "id": "de-conv-001",
+    "language": "de",
+    "title": "Im Café (At the Café)",
+    "level": 1,
+    "difficulty": 2,
+    "examMappings": {},
+    "scenario": "café",
+    "speakers": [
+      {
+        "id": "waiter",
+        "name": "Kellner (Waiter)",
+        "role": "waiter"
+      },
+      {
+        "id": "customer",
+        "name": "Kunde (Customer)",
+        "role": "customer"
+      }
+    ],
+    "dialogue": [
+      {
+        "speaker": "waiter",
+        "text": "Guten Tag! Was möchten Sie trinken?",
+        "romanization": null,
+        "translation": "Good day! What would you like to drink?",
+        "audio": "de_conv001_01.mp3",
+        "translation_en": "Good day! What would you like to drink?",
+        "translation_id": "Selamat siang! Mau minum apa?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Guten Tag! Ich möchte einen Kaffee, bitte.",
+        "romanization": null,
+        "translation": "Good day! I would like a coffee, please.",
+        "audio": "de_conv001_02.mp3",
+        "translation_en": "Good day! I would like a coffee, please.",
+        "translation_id": "Selamat siang! Saya mau kopi, tolong."
+      },
+      {
+        "speaker": "waiter",
+        "text": "Mit Milch und Zucker?",
+        "romanization": null,
+        "translation": "With milk and sugar?",
+        "audio": "de_conv001_03.mp3",
+        "translation_en": "With milk and sugar?",
+        "translation_id": "Dengan susu dan gula?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Nur mit Milch, bitte.",
+        "romanization": null,
+        "translation": "Just with milk, please.",
+        "audio": "de_conv001_04.mp3",
+        "translation_en": "Just with milk, please.",
+        "translation_id": "Susu saja, tolong."
+      },
+      {
+        "speaker": "waiter",
+        "text": "Möchten Sie auch etwas essen?",
+        "romanization": null,
+        "translation": "Would you also like something to eat?",
+        "audio": "de_conv001_05.mp3",
+        "translation_en": "Would you also like something to eat?",
+        "translation_id": "Mau juga makan sesuatu?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Ja, ein Croissant, bitte.",
+        "romanization": null,
+        "translation": "Yes, a croissant, please.",
+        "audio": "de_conv001_06.mp3",
+        "translation_en": "Yes, a croissant, please.",
+        "translation_id": "Ya, satu croissant, tolong."
+      },
+      {
+        "speaker": "waiter",
+        "text": "Sehr gern. Kommt sofort!",
+        "romanization": null,
+        "translation": "With pleasure. Coming right away!",
+        "audio": "de_conv001_07.mp3",
+        "translation_en": "With pleasure. Coming right away!",
+        "translation_id": "Dengan senang hati. Sebentar lagi!"
+      }
+    ],
+    "vocabulary": [
+      "de_kaffee",
+      "de_milch",
+      "de_bitte",
+      "de_essen"
+    ],
+    "grammar": [
+      "de_modal_verbs",
+      "de_word_order"
+    ],
+    "culturalNotes": "In German cafés, it's common to say 'Guten Tag' or 'Guten Morgen' when entering. Table service is standard, and you typically order from a waiter rather than at a counter.",
+    "tags": [
+      "café",
+      "food",
+      "ordering",
+      "A1"
+    ],
+    "culturalNotes_en": "In German cafés, it's common to say 'Guten Tag' or 'Guten Morgen' when entering. Table service is standard, and you typically order from a waiter rather than at a counter.",
+    "culturalNotes_id": "Di kafe Jerman, biasanya mengucapkan 'Guten Tag' atau 'Guten Morgen' saat masuk. Layanan meja adalah standar, dan biasanya memesan ke pelayan, bukan di konter."
+  },
+  {
+    "id": "de-conv-002",
+    "language": "de",
+    "title": "Sich vorstellen (Introducing Yourself)",
+    "level": 1,
+    "difficulty": 1,
+    "examMappings": {},
+    "scenario": "introduction",
+    "speakers": [
+      {
+        "id": "anna",
+        "name": "Anna",
+        "role": "person1"
+      },
+      {
+        "id": "max",
+        "name": "Max",
+        "role": "person2"
+      }
+    ],
+    "dialogue": [
+      {
+        "speaker": "anna",
+        "text": "Hallo! Ich heiße Anna. Wie heißt du?",
+        "romanization": null,
+        "translation": "Hello! My name is Anna. What's your name?",
+        "audio": "de_conv002_01.mp3",
+        "translation_en": "Hello! My name is Anna. What's your name?",
+        "translation_id": "Halo! Nama saya Anna. Siapa namamu?"
+      },
+      {
+        "speaker": "max",
+        "text": "Hallo Anna! Ich bin Max. Woher kommst du?",
+        "romanization": null,
+        "translation": "Hello Anna! I'm Max. Where are you from?",
+        "audio": "de_conv002_02.mp3",
+        "translation_en": "Hello Anna! I'm Max. Where are you from?",
+        "translation_id": "Halo Anna! Saya Max. Dari mana asalmu?"
+      },
+      {
+        "speaker": "anna",
+        "text": "Ich komme aus Spanien. Und du?",
+        "romanization": null,
+        "translation": "I'm from Spain. And you?",
+        "audio": "de_conv002_03.mp3",
+        "translation_en": "I'm from Spain. And you?",
+        "translation_id": "Saya dari Spanyol. Kalau kamu?"
+      },
+      {
+        "speaker": "max",
+        "text": "Ich komme aus Deutschland, aus Berlin.",
+        "romanization": null,
+        "translation": "I'm from Germany, from Berlin.",
+        "audio": "de_conv002_04.mp3",
+        "translation_en": "I'm from Germany, from Berlin.",
+        "translation_id": "Saya dari Jerman, dari Berlin."
+      },
+      {
+        "speaker": "anna",
+        "text": "Schön! Wie lange lernst du Spanisch?",
+        "romanization": null,
+        "translation": "Nice! How long have you been learning Spanish?",
+        "audio": "de_conv002_05.mp3",
+        "translation_en": "Nice! How long have you been learning Spanish?",
+        "translation_id": "Bagus! Sudah berapa lama kamu belajar bahasa Spanyol?"
+      },
+      {
+        "speaker": "max",
+        "text": "Ich lerne seit einem Jahr. Es ist interessant!",
+        "romanization": null,
+        "translation": "I've been learning for a year. It's interesting!",
+        "audio": "de_conv002_06.mp3",
+        "translation_en": "I've been learning for a year. It's interesting!",
+        "translation_id": "Saya sudah belajar selama setahun. Menarik!"
+      }
+    ],
+    "vocabulary": [
+      "de_ich_heisse",
+      "de_woher",
+      "de_deutschland"
+    ],
+    "grammar": [
+      "de_pronouns",
+      "de_present_tense"
+    ],
+    "culturalNotes": "Germans typically use 'du' with friends and peers, but 'Sie' in formal settings. When introducing yourself, 'Ich heiße...' or 'Ich bin...' are both acceptable.",
+    "tags": [
+      "introduction",
+      "greetings",
+      "countries",
+      "A1"
+    ],
+    "culturalNotes_en": "Germans typically use 'du' with friends and peers, but 'Sie' in formal settings. When introducing yourself, 'Ich heiße...' or 'Ich bin...' are both acceptable.",
+    "culturalNotes_id": "Orang Jerman biasanya memakai 'du' untuk teman dan sebaya, tapi 'Sie' untuk situasi formal. Saat memperkenalkan diri, 'Ich heiße...' atau 'Ich bin...' keduanya diterima."
+  },
+  {
+    "id": "de-conv-003",
+    "language": "de",
+    "title": "Im Restaurant — At the Restaurant",
+    "level": 1,
+    "difficulty": 2,
+    "examMappings": {
+      "goethe": "A1"
+    },
+    "scenario": "restaurant",
+    "speakers": [
+      {
+        "id": "w",
+        "name": "Kellner (Waiter)",
+        "role": "waiter"
+      },
+      {
+        "id": "c",
+        "name": "Gast (Guest)",
+        "role": "guest"
+      }
+    ],
+    "dialogue": [
+      {
+        "speaker": "w",
+        "text": "Haben Sie schon gewählt?",
+        "romanization": null,
+        "translation": "Are you ready to order?",
+        "translation_en": "Are you ready to order?",
+        "translation_id": "Sudah siap memesan?"
+      },
+      {
+        "speaker": "c",
+        "text": "Ja, ich hätte gern eine Suppe, bitte.",
+        "romanization": null,
+        "translation": "Yes, I would like some soup, please.",
+        "translation_en": "Yes, I would like some soup, please.",
+        "translation_id": "Ya, saya mau sup, tolong."
+      },
+      {
+        "speaker": "w",
+        "text": "Und etwas zu trinken?",
+        "romanization": null,
+        "translation": "Anything to drink?",
+        "translation_en": "Anything to drink?",
+        "translation_id": "Ada minuman?"
+      },
+      {
+        "speaker": "c",
+        "text": "Wasser, bitte.",
+        "romanization": null,
+        "translation": "Water, please.",
+        "translation_en": "Water, please.",
+        "translation_id": "Air putih, tolong."
+      }
+    ],
+    "vocabulary": [
+      "de_essen",
+      "de_trinken",
+      "de_wasser"
+    ],
+    "grammar": [
+      "de_modal_verbs"
+    ]
+  },
+  {
+    "id": "de-conv-004",
+    "language": "de",
+    "title": "Einkaufen — Shopping",
+    "level": 1,
+    "difficulty": 2,
+    "examMappings": {
+      "goethe": "A1"
+    },
+    "scenario": "shopping",
+    "speakers": [
+      {
+        "id": "s",
+        "name": "Verkäufer (Shopkeeper)",
+        "role": "shopkeeper"
+      },
+      {
+        "id": "c",
+        "name": "Kunde (Customer)",
+        "role": "customer"
+      }
+    ],
+    "dialogue": [
+      {
+        "speaker": "s",
+        "text": "Hallo! Kann ich Ihnen helfen?",
+        "romanization": null,
+        "translation": "Hello! Can I help you?",
+        "translation_en": "Hello! Can I help you?",
+        "translation_id": "Halo! Ada yang bisa dibantu?"
+      },
+      {
+        "speaker": "c",
+        "text": "Wie viel kostet dieses Hemd?",
+        "romanization": null,
+        "translation": "How much is this shirt?",
+        "translation_en": "How much is this shirt?",
+        "translation_id": "Berapa harga kemeja ini?"
+      },
+      {
+        "speaker": "s",
+        "text": "Es kostet zwanzig Euro.",
+        "romanization": null,
+        "translation": "It costs twenty euros.",
+        "translation_en": "It costs twenty euros.",
+        "translation_id": "Harganya dua puluh euro."
+      },
+      {
+        "speaker": "c",
+        "text": "Okay, ich nehme es.",
+        "romanization": null,
+        "translation": "Okay, I'll take it.",
+        "translation_en": "Okay, I'll take it.",
+        "translation_id": "Oke, saya ambil."
+      }
+    ],
+    "vocabulary": [
+      "de_geld",
+      "de_ja"
+    ],
+    "grammar": [
+      "de_accusative_case"
+    ]
+  },
+  {
+    "id": "de-conv-005",
+    "language": "de",
+    "title": "Nach dem Weg fragen — Asking for Directions",
+    "level": 1,
+    "difficulty": 2,
+    "examMappings": {
+      "goethe": "A1"
+    },
+    "scenario": "directions",
+    "speakers": [
+      {
+        "id": "p",
+        "name": "Passant (Passerby)",
+        "role": "passerby"
+      },
+      {
+        "id": "t",
+        "name": "Tourist",
+        "role": "tourist"
+      }
+    ],
+    "dialogue": [
+      {
+        "speaker": "t",
+        "text": "Entschuldigung, wo ist der Bahnhof?",
+        "romanization": null,
+        "translation": "Excuse me, where is the station?",
+        "translation_en": "Excuse me, where is the station?",
+        "translation_id": "Permisi, di mana stasiunnya?"
+      },
+      {
+        "speaker": "p",
+        "text": "Da drüben, neben der Bank.",
+        "romanization": null,
+        "translation": "Over there, next to the bank.",
+        "translation_en": "Over there, next to the bank.",
+        "translation_id": "Di sana, di samping bank."
+      },
+      {
+        "speaker": "t",
+        "text": "Ist es weit?",
+        "romanization": null,
+        "translation": "Is it far?",
+        "translation_en": "Is it far?",
+        "translation_id": "Jauh dari sini?"
+      },
+      {
+        "speaker": "p",
+        "text": "Nein, es ist sehr nah.",
+        "romanization": null,
+        "translation": "No, it is very close.",
+        "translation_en": "No, it is very close.",
+        "translation_id": "Tidak, sangat dekat."
+      }
+    ],
+    "vocabulary": [
+      "de_bahnhof",
+      "de_nein"
+    ],
+    "grammar": [
+      "de_questions"
+    ]
+  },
+  {
+    "id": "de-conv-006",
+    "language": "de",
+    "title": "Im Büro — At the Office",
+    "level": 1,
+    "difficulty": 2,
+    "examMappings": {
+      "goethe": "A1"
+    },
+    "scenario": "office",
+    "speakers": [
+      {
+        "id": "m",
+        "name": "Chef (Boss)",
+        "role": "manager"
+      },
+      {
+        "id": "e",
+        "name": "Mitarbeiter (Employee)",
+        "role": "employee"
+      }
+    ],
+    "dialogue": [
+      {
+        "speaker": "m",
+        "text": "Guten Tag. Haben Sie den Bericht?",
+        "romanization": null,
+        "translation": "Good afternoon. Do you have the report?",
+        "translation_en": "Good afternoon. Do you have the report?",
+        "translation_id": "Selamat siang. Apakah Anda punya laporannya?"
+      },
+      {
+        "speaker": "e",
+        "text": "Ja, ich bin heute Morgen fertig geworden.",
+        "romanization": null,
+        "translation": "Yes, I finished it this morning.",
+        "translation_en": "Yes, I finished it this morning.",
+        "translation_id": "Ya, saya menyelesaikannya pagi ini."
+      },
+      {
+        "speaker": "m",
+        "text": "Können Sie es mir schicken?",
+        "romanization": null,
+        "translation": "Can you send it to me?",
+        "translation_en": "Can you send it to me?",
+        "translation_id": "Bisakah Anda mengirimnya ke saya?"
+      },
+      {
+        "speaker": "e",
+        "text": "Natürlich. Ich schicke es jetzt.",
+        "romanization": null,
+        "translation": "Of course. I'll send it now.",
+        "translation_en": "Of course. I'll send it now.",
+        "translation_id": "Tentu. Saya kirim sekarang."
+      }
+    ],
+    "vocabulary": [
+      "de_arbeiten",
+      "de_haben"
+    ],
+    "grammar": [
+      "de_modal_verbs"
+    ]
+  },
+  {
+    "id": "de-conv-007",
+    "language": "de",
+    "title": "Pläne machen — Making Plans",
+    "level": 1,
+    "difficulty": 1,
+    "examMappings": {
+      "goethe": "A1"
+    },
+    "scenario": "plans",
+    "speakers": [
+      {
+        "id": "a",
+        "name": "Anna",
+        "role": "friend"
+      },
+      {
+        "id": "b",
+        "name": "Ben",
+        "role": "friend"
+      }
+    ],
+    "dialogue": [
+      {
+        "speaker": "a",
+        "text": "Was machst du am Wochenende?",
+        "romanization": null,
+        "translation": "What are you doing this weekend?",
+        "translation_en": "What are you doing this weekend?",
+        "translation_id": "Kamu mau ngapain akhir pekan ini?"
+      },
+      {
+        "speaker": "b",
+        "text": "Ich weiß nicht. Vielleicht gehe ich in den Park.",
+        "romanization": null,
+        "translation": "I'm not sure. Maybe I'll go to the park.",
+        "translation_en": "I'm not sure. Maybe I'll go to the park.",
+        "translation_id": "Belum tahu. Mungkin saya pergi ke taman."
+      },
+      {
+        "speaker": "a",
+        "text": "Lass uns zusammen gehen!",
+        "romanization": null,
+        "translation": "Let's go together!",
+        "translation_en": "Let's go together!",
+        "translation_id": "Ayo pergi bareng!"
+      },
+      {
+        "speaker": "b",
+        "text": "Gute Idee!",
+        "romanization": null,
+        "translation": "Good idea!",
+        "translation_en": "Good idea!",
+        "translation_id": "Ide bagus!"
+      }
+    ],
+    "vocabulary": [
+      "de_wissen",
+      "de_gut"
+    ],
+    "grammar": [
+      "de_modal_verbs"
+    ]
+  },
+  {
+    "id": "de-conv-008",
+    "language": "de",
+    "title": "Am Telefon — On the Phone",
+    "level": 1,
+    "difficulty": 1,
+    "examMappings": {
+      "goethe": "A1"
+    },
+    "scenario": "phone",
+    "speakers": [
+      {
+        "id": "a",
+        "name": "Anrufer (Caller)",
+        "role": "caller"
+      },
+      {
+        "id": "b",
+        "name": "Rezeption (Reception)",
+        "role": "reception"
+      }
+    ],
+    "dialogue": [
+      {
+        "speaker": "b",
+        "text": "Hallo, hier ist die Rezeption.",
+        "romanization": null,
+        "translation": "Hello, this is the reception.",
+        "translation_en": "Hello, this is the reception.",
+        "translation_id": "Halo, ini bagian resepsionis."
+      },
+      {
+        "speaker": "a",
+        "text": "Hallo, kann ich mit Herrn Lee sprechen?",
+        "romanization": null,
+        "translation": "Hello, can I speak to Mr. Lee?",
+        "translation_en": "Hello, can I speak to Mr. Lee?",
+        "translation_id": "Halo, bisa bicara dengan Pak Lee?"
+      },
+      {
+        "speaker": "b",
+        "text": "Einen Moment, bitte.",
+        "romanization": null,
+        "translation": "One moment, please.",
+        "translation_en": "One moment, please.",
+        "translation_id": "Tunggu sebentar, ya."
+      },
+      {
+        "speaker": "a",
+        "text": "Danke.",
+        "romanization": null,
+        "translation": "Thank you.",
+        "translation_en": "Thank you.",
+        "translation_id": "Terima kasih."
+      }
+    ],
+    "vocabulary": [
+      "de_sprechen",
+      "de_danke"
+    ],
+    "grammar": [
+      "de_modal_verbs"
+    ]
+  },
+  {
+    "id": "de-conv-009",
+    "language": "de",
+    "title": "Beim Arzt — At the Doctor",
+    "level": 1,
+    "difficulty": 2,
+    "examMappings": {
+      "goethe": "A1"
+    },
+    "scenario": "doctor",
+    "speakers": [
+      {
+        "id": "d",
+        "name": "Arzt (Doctor)",
+        "role": "doctor"
+      },
+      {
+        "id": "p",
+        "name": "Patient",
+        "role": "patient"
+      }
+    ],
+    "dialogue": [
+      {
+        "speaker": "d",
+        "text": "Was fehlt Ihnen?",
+        "romanization": null,
+        "translation": "What's the problem?",
+        "translation_en": "What's the problem?",
+        "translation_id": "Ada keluhan apa?"
+      },
+      {
+        "speaker": "p",
+        "text": "Ich habe Kopfschmerzen.",
+        "romanization": null,
+        "translation": "I have a headache.",
+        "translation_en": "I have a headache.",
+        "translation_id": "Kepala saya sakit."
+      },
+      {
+        "speaker": "d",
+        "text": "Haben Sie Fieber?",
+        "romanization": null,
+        "translation": "Do you have a fever?",
+        "translation_en": "Do you have a fever?",
+        "translation_id": "Apakah Anda demam?"
+      },
+      {
+        "speaker": "p",
+        "text": "Ja, ein wenig.",
+        "romanization": null,
+        "translation": "Yes, a little.",
+        "translation_en": "Yes, a little.",
+        "translation_id": "Ya, sedikit."
+      },
+      {
+        "speaker": "d",
+        "text": "Nehmen Sie diese Medizin und ruhen Sie sich aus.",
+        "romanization": null,
+        "translation": "Take this medicine and rest.",
+        "translation_en": "Take this medicine and rest.",
+        "translation_id": "Minum obat ini dan istirahat."
+      }
+    ],
+    "vocabulary": [],
+    "grammar": [
+      "de_questions",
+      "de_modal_verbs"
+    ]
+  },
+  {
+    "id": "de-conv-010",
+    "language": "de",
+    "title": "Im Zug — On the Train",
+    "level": 1,
+    "difficulty": 2,
+    "examMappings": {
+      "goethe": "A1"
+    },
+    "scenario": "train",
+    "speakers": [
+      {
+        "id": "a",
+        "name": "Passagier A",
+        "role": "passenger"
+      },
+      {
+        "id": "b",
+        "name": "Passagier B",
+        "role": "passenger"
+      }
+    ],
+    "dialogue": [
+      {
+        "speaker": "a",
+        "text": "Entschuldigung, ist dieser Platz frei?",
+        "romanization": null,
+        "translation": "Excuse me, is this seat free?",
+        "translation_en": "Excuse me, is this seat free?",
+        "translation_id": "Permisi, kursi ini kosong?"
+      },
+      {
+        "speaker": "b",
+        "text": "Ja, natürlich.",
+        "romanization": null,
+        "translation": "Yes, of course.",
+        "translation_en": "Yes, of course.",
+        "translation_id": "Ya, tentu."
+      },
+      {
+        "speaker": "a",
+        "text": "Fährt dieser Zug nach Berlin?",
+        "romanization": null,
+        "translation": "Does this train go to Berlin?",
+        "translation_en": "Does this train go to Berlin?",
+        "translation_id": "Apakah kereta ini menuju Berlin?"
+      },
+      {
+        "speaker": "b",
+        "text": "Ja, der nächste Halt ist Berlin Hauptbahnhof.",
+        "romanization": null,
+        "translation": "Yes, the next stop is Berlin Central Station.",
+        "translation_en": "Yes, the next stop is Berlin Central Station.",
+        "translation_id": "Ya, pemberhentian berikutnya Stasiun Pusat Berlin."
+      }
+    ],
+    "vocabulary": [
+      "de_zug",
+      "de_stadt"
+    ],
+    "grammar": [
+      "de_questions",
+      "de_modal_verbs"
+    ]
+  }
+]
