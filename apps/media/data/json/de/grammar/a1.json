@@ -1,0 +1,986 @@
+[
+  {
+    "id": "de_articles_ein_eine",
+    "language": "de",
+    "title": "Indefinite Articles: ein / eine",
+    "pattern": "ein + masculine/neuter, eine + feminine",
+    "level": 1,
+    "examMappings": {
+      "goethe": "A1"
+    },
+    "difficulty": 1,
+    "simpleExplanation": "'ein' and 'eine' mean 'a/an'. ein goes with masculine and neuter nouns; eine with feminine nouns.",
+    "detailedExplanation": "German has no separate word for 'a' — you use ein/eine based on the noun's gender. ein (der/ein Mann), ein (das/ein Buch), eine (die/eine Frau). The negative is kein/keine ('not a'). Remember the gender of the noun decides the article.",
+    "usage": "ein Mann | ein Buch | eine Frau | kein Geld",
+    "avoidWhen": "Don't use 'einen' in the nominative — that's the accusative form. The plural has no indefinite article (Männer, not eine Männer).",
+    "examples": [
+      {
+        "text": "Das ist ein Mann.",
+        "translation": "That is a man.",
+        "pronunciation": "das ɪst aɪn man",
+        "translation_en": "That is a man.",
+        "translation_id": "Itu seorang laki-laki."
+      },
+      {
+        "text": "Ich habe eine Schwester.",
+        "translation": "I have a sister.",
+        "pronunciation": "ɪç ˈhaːbə ˈaɪnə ˈʃvɛstɐ",
+        "translation_en": "I have a sister.",
+        "translation_id": "Saya punya seorang adik perempuan."
+      },
+      {
+        "text": "Ich habe kein Auto.",
+        "translation": "I have no car.",
+        "pronunciation": "ɪç ˈhaːbə kaɪn ˈaʊto",
+        "translation_en": "I have no car.",
+        "translation_id": "Saya tidak punya mobil."
+      }
+    ],
+    "commonMistakes": [
+      "Using 'einen' in the nominative",
+      "Using ein/eine with plural nouns",
+      "Mixing up ein (n) vs eine (f)"
+    ],
+    "relatedPoints": [
+      "de_gender_articles",
+      "de_negation"
+    ],
+    "category": "grammar",
+    "tags": [
+      "articles",
+      "determiners",
+      "A1"
+    ],
+    "title_en": "Indefinite Articles: ein / eine",
+    "title_id": "Artikel Tak Tentu: ein / eine",
+    "simpleExplanation_en": "'ein' and 'eine' mean 'a/an'. ein goes with masculine and neuter nouns; eine with feminine nouns.",
+    "simpleExplanation_id": "'ein' dan 'eine' berarti 'sebuah'. ein untuk kata benda maskulin dan netral; eine untuk feminin.",
+    "detailedExplanation_en": "German has no separate word for 'a' — you use ein/eine based on the noun's gender. ein (der/ein Mann), ein (das/ein Buch), eine (die/eine Frau). The negative is kein/keine ('not a'). Remember the gender of the noun decides the article.",
+    "detailedExplanation_id": "Bahasa Jerman tidak punya kata khusus untuk 'sebuah' — pakai ein/eine sesuai gender kata benda. ein (der/ein Mann), ein (das/ein Buch), eine (die/eine Frau). Bentuk negatifnya kein/keine ('bukan sebuah'). Ingat gender kata benda menentukan artikelnya.",
+    "usage_en": "ein Mann | ein Buch | eine Frau | kein Geld",
+    "usage_id": "ein Mann | ein Buch | eine Frau | kein Geld",
+    "avoidWhen_en": "Don't use 'einen' in the nominative — that's the accusative form. The plural has no indefinite article.",
+    "avoidWhen_id": "Jangan pakai 'einen' dalam nominatif — itu bentuk akusatif. Jamak tidak memakai artikel tak tentu.",
+    "commonMistakes_en": [
+      "Using 'einen' in the nominative",
+      "Using ein/eine with plural nouns",
+      "Mixing up ein (n) vs eine (f)"
+    ],
+    "commonMistakes_id": [
+      "Memakai 'einen' dalam nominatif",
+      "Memakai ein/eine untuk jamak",
+      "Tertukar ein (n) vs eine (f)"
+    ]
+  },
+  {
+    "id": "de_formal_informal",
+    "language": "de",
+    "title": "Formal vs Informal Address (Sie vs du)",
+    "pattern": "Sie (formal) / du (informal)",
+    "level": 1,
+    "examMappings": {
+      "goethe": "A1"
+    },
+    "difficulty": 2,
+    "simpleExplanation": "German has two ways to say 'you': 'Sie' for formal situations and 'du' for informal.",
+    "detailedExplanation": "Use 'Sie' with strangers, in professional settings, with elders, or anyone you address by last name. Use 'du' with friends, family, children, and people who've invited you to use it. 'Sie' is always capitalized and uses third-person plural verb forms.",
+    "usage": "Sie: Wie heißen Sie? (formal) | du: Wie heißt du? (informal)",
+    "avoidWhen": "Don't use 'du' with strangers or in professional contexts unless invited.",
+    "examples": [
+      {
+        "text": "Guten Tag, wie heißen Sie?",
+        "translation": "Good day, what is your name? (formal)",
+        "pronunciation": "ˈɡuːtn̩ taːk viː ˈhaɪsn̩ ziː",
+        "translation_en": "Good day, what is your name? (formal)",
+        "translation_id": "Selamat siang, siapa nama Anda? (formal)"
+      },
+      {
+        "text": "Hallo, wie heißt du?",
+        "translation": "Hi, what's your name? (informal)",
+        "pronunciation": "haˈloː viː haɪst duː",
+        "translation_en": "Hi, what's your name? (informal)",
+        "translation_id": "Hai, siapa namamu? (tidak formal)"
+      }
+    ],
+    "commonMistakes": [
+      "Using 'du' with strangers or in formal settings",
+      "Forgetting to capitalize 'Sie'",
+      "Using wrong verb conjugation with Sie"
+    ],
+    "relatedPoints": [
+      "de_pronouns"
+    ],
+    "category": "pragmatics",
+    "tags": [
+      "politeness",
+      "pronouns",
+      "A1"
+    ],
+    "title_en": "Formal vs Informal Address (Sie vs du)",
+    "title_id": "Sapaan Formal vs Informal (Sie vs du)",
+    "simpleExplanation_en": "German has two ways to say 'you': 'Sie' for formal situations and 'du' for informal.",
+    "simpleExplanation_id": "Bahasa Jerman punya dua cara menyebut 'kamu': 'Sie' untuk situasi formal dan 'du' untuk informal.",
+    "detailedExplanation_en": "Use 'Sie' with strangers, in professional settings, with elders, or anyone you address by last name. Use 'du' with friends, family, children, and people who've invited you to use it. 'Sie' is always capitalized and uses third-person plural verb forms.",
+    "detailedExplanation_id": "Pakai 'Sie' untuk orang asing, lingkungan profesional, orang yang lebih tua, atau siapa pun yang kamu sapa dengan nama belakang. Pakai 'du' untuk teman, keluarga, anak-anak, dan orang yang mengajakmu memakai 'du'. 'Sie' selalu kapital dan memakai bentuk kata kerja orang ketiga jamak.",
+    "usage_en": "Sie: Wie heißen Sie? (formal) | du: Wie heißt du? (informal)",
+    "usage_id": "Sie: Wie heißen Sie? (formal) | du: Wie heißt du? (informal)",
+    "avoidWhen_en": "Don't use 'du' with strangers or in professional contexts unless invited.",
+    "avoidWhen_id": "Jangan pakai 'du' untuk orang asing atau konteks profesional kecuali diundang.",
+    "commonMistakes_en": [
+      "Using 'du' with strangers or in formal settings",
+      "Forgetting to capitalize 'Sie'",
+      "Using wrong verb conjugation with Sie"
+    ],
+    "commonMistakes_id": [
+      "Memakai 'du' untuk orang asing atau formal",
+      "Lupa kapitalisasi 'Sie'",
+      "Konjugasi kata kerja salah dengan Sie"
+    ]
+  },
+  {
+    "id": "de_gender_articles",
+    "language": "de",
+    "title": "Grammatical Gender and Articles",
+    "pattern": "der (m) / die (f) / das (n)",
+    "level": 1,
+    "examMappings": {
+      "goethe": "A1"
+    },
+    "difficulty": 3,
+    "simpleExplanation": "All German nouns have a gender: masculine (der), feminine (die), or neuter (das).",
+    "detailedExplanation": "Every German noun belongs to one of three genders, which affects the article and adjective endings. The gender often doesn't correspond to biological sex or English patterns. Must be memorized with each noun. Plural always uses 'die'.",
+    "usage": "Learn gender with every noun: der Mann, die Frau, das Kind.",
+    "avoidWhen": "Don't assume gender based on English or biological sex.",
+    "examples": [
+      {
+        "text": "der Tisch (m), die Tür (f), das Fenster (n)",
+        "translation": "the table, the door, the window",
+        "translation_en": "the table, the door, the window",
+        "translation_id": "meja, pintu, jendela"
+      },
+      {
+        "text": "die Tische, die Türen, die Fenster (plural)",
+        "translation": "the tables, the doors, the windows",
+        "translation_en": "the tables, the doors, the windows",
+        "translation_id": "meja-meja, pintu-pintu, jendela-jendela (jamak)"
+      }
+    ],
+    "commonMistakes": [
+      "Guessing gender based on English",
+      "Using wrong article",
+      "Forgetting that 'Mädchen' (girl) is neuter"
+    ],
+    "category": "grammar",
+    "tags": [
+      "gender",
+      "articles",
+      "nouns",
+      "A1"
+    ],
+    "title_en": "Grammatical Gender and Articles",
+    "title_id": "Gender Gramatikal dan Artikel",
+    "simpleExplanation_en": "All German nouns have a gender: masculine (der), feminine (die), or neuter (das).",
+    "simpleExplanation_id": "Semua kata benda Jerman punya gender: maskulin (der), feminin (die), atau netral (das).",
+    "detailedExplanation_en": "Every German noun belongs to one of three genders, which affects the article and adjective endings. The gender often doesn't correspond to biological sex or English patterns. Must be memorized with each noun. Plural always uses 'die'.",
+    "detailedExplanation_id": "Setiap kata benda Jerman termasuk salah satu dari tiga gender yang memengaruhi artikel dan akhiran kata sifat. Gender sering tidak sesuai dengan jenis kelamin biologis atau pola Inggris. Harus dihafal bersama setiap kata benda. Jamak selalu pakai die.",
+    "usage_en": "Learn gender with every noun: der Mann, die Frau, das Kind.",
+    "usage_id": "Pelajari gender bersama tiap kata benda: der Mann, die Frau, das Kind.",
+    "avoidWhen_en": "Don't assume gender based on English or biological sex.",
+    "avoidWhen_id": "Jangan menebak gender berdasarkan bahasa Inggris atau jenis kelamin biologis.",
+    "commonMistakes_en": [
+      "Guessing gender based on English",
+      "Using wrong article",
+      "Forgetting that 'Mädchen' (girl) is neuter"
+    ],
+    "commonMistakes_id": [
+      "Menebak gender berdasarkan bahasa Inggris",
+      "Memakai artikel salah",
+      "Lupa bahwa 'Mädchen' (gadis) netral"
+    ]
+  },
+  {
+    "id": "de_imperative",
+    "language": "de",
+    "title": "Imperative (Giving Commands)",
+    "pattern": "du: lern-e! | Sie: lernen Sie! | wir: lernen wir!",
+    "level": 1,
+    "examMappings": {
+      "goethe": "A1"
+    },
+    "difficulty": 2,
+    "simpleExplanation": "Use the imperative to give orders or requests. There are forms for du, Sie, and wir.",
+    "detailedExplanation": "du-form: drop the -st ending (du lernst → Lern!), add -e for stems in -t/-d/-m/-n (Arbeite!). Sie-form: infinitive + Sie (Lernen Sie!). wir-form: infinitive + wir (Gehen wir!). Informal you can add 'mal' to soften: Komm mal her! The verb comes first.",
+    "usage": "Lern Deutsch! | Arbeiten Sie! | Gehen wir!",
+    "avoidWhen": "Don't use the du-form to address strangers — use the polite Sie-form instead.",
+    "examples": [
+      {
+        "text": "Komm bitte hierher!",
+        "translation": "Please come here!",
+        "pronunciation": "kɔm ˈbɪtə ˈhiːɐheːɐ",
+        "translation_en": "Please come here!",
+        "translation_id": "Tolong ke sini!"
+      },
+      {
+        "text": "Bitte öffnen Sie das Fenster.",
+        "translation": "Please open the window.",
+        "pronunciation": "ˈbɪtə ˈœfnən ziː das ˈfɛnstɐ",
+        "translation_en": "Please open the window.",
+        "translation_id": "Tolong buka jendelanya."
+      },
+      {
+        "text": "Gehen wir ins Kino!",
+        "translation": "Let's go to the cinema!",
+        "pronunciation": "ˈɡeːən viːɐ ɪns ˈkiːno",
+        "translation_en": "Let's go to the cinema!",
+        "translation_id": "Ayo ke bioskop!"
+      }
+    ],
+    "commonMistakes": [
+      "Using du-imperative with strangers (should be Sie)",
+      "Forgetting the -e with -t/-d stems",
+      "Putting the verb in second position instead of first"
+    ],
+    "relatedPoints": [
+      "de_verb_conjugation"
+    ],
+    "category": "grammar",
+    "tags": [
+      "verbs",
+      "commands",
+      "A1"
+    ],
+    "title_en": "Imperative (Giving Commands)",
+    "title_id": "Imperatif (Memberi Perintah)",
+    "simpleExplanation_en": "Use the imperative to give orders or requests. There are forms for du, Sie, and wir.",
+    "simpleExplanation_id": "Gunakan imperatif untuk memberi perintah atau permintaan. Ada bentuk untuk du, Sie, dan wir.",
+    "detailedExplanation_en": "du-form: drop the -st ending (du lernst → Lern!), add -e for stems in -t/-d/-m/-n (Arbeite!). Sie-form: infinitive + Sie (Lernen Sie!). wir-form: infinitive + wir (Gehen wir!). Informal you can add 'mal' to soften: Komm mal her! The verb comes first.",
+    "detailedExplanation_id": "Bentuk du: buang akhiran -st (du lernst → Lern!), tambah -e untuk akar -t/-d/-m/-n (Arbeite!). Bentuk Sie: infinitif + Sie (Lernen Sie!). Bentuk wir: infinitif + wir (Gehen wir!). Informal bisa tambah 'mal': Komm mal her! Kata kerja di depan.",
+    "usage_en": "Lern Deutsch! | Arbeiten Sie! | Gehen wir!",
+    "usage_id": "Lern Deutsch! | Arbeiten Sie! | Gehen wir!",
+    "avoidWhen_en": "Don't use the du-form to address strangers — use the polite Sie-form instead.",
+    "avoidWhen_id": "Jangan pakai bentuk du untuk orang asing — pakai bentuk sopan Sie.",
+    "commonMistakes_en": [
+      "Using du-imperative with strangers (should be Sie)",
+      "Forgetting the -e with -t/-d stems",
+      "Putting the verb in second position instead of first"
+    ],
+    "commonMistakes_id": [
+      "Memakai imperatif du untuk orang asing (harus Sie)",
+      "Lupa -e pada akar -t/-d",
+      "Kata kerja di posisi kedua bukan pertama"
+    ]
+  },
+  {
+    "id": "de_modal_verbs",
+    "language": "de",
+    "title": "Modal Verbs (können, müssen, wollen, dürfen, sollen, mögen)",
+    "pattern": "modal verb + ... + infinitive",
+    "level": 1,
+    "examMappings": {
+      "goethe": "A1"
+    },
+    "difficulty": 3,
+    "simpleExplanation": "Modal verbs express ability (können), necessity (müssen), desire (wollen), permission (dürfen), obligation (sollen), or liking (mögen).",
+    "detailedExplanation": "Modal verbs are irregular and conjugated in second position. The main verb stays in infinitive form at the end of the clause. Common modals: können (can), müssen (must), wollen (want to), dürfen (may), sollen (should), mögen (like to). They have stem changes in singular.",
+    "usage": "Ich kann schwimmen. (I can swim.) | Du musst lernen. (You must learn.)",
+    "avoidWhen": "Don't put main verb in second position with modals.",
+    "examples": [
+      {
+        "text": "Ich kann Deutsch sprechen.",
+        "translation": "I can speak German.",
+        "translation_en": "I can speak German.",
+        "translation_id": "Saya bisa berbicara bahasa Jerman."
+      },
+      {
+        "text": "Du musst heute arbeiten.",
+        "translation": "You must work today.",
+        "translation_en": "You must work today.",
+        "translation_id": "Kamu harus bekerja hari ini."
+      },
+      {
+        "text": "Wir wollen ins Kino gehen.",
+        "translation": "We want to go to the cinema.",
+        "translation_en": "We want to go to the cinema.",
+        "translation_id": "Kami ingin pergi ke bioskop."
+      }
+    ],
+    "commonMistakes": [
+      "Conjugating the main verb instead of modal",
+      "Not placing infinitive at end",
+      "Wrong modal verb conjugation"
+    ],
+    "category": "grammar",
+    "tags": [
+      "verbs",
+      "modals",
+      "A1-A2"
+    ],
+    "title_en": "Modal Verbs (können, müssen, wollen, dürfen, sollen, mögen)",
+    "title_id": "Kata Kerja Modal (können, müssen, wollen, dürfen, sollen, mögen)",
+    "simpleExplanation_en": "Modal verbs express ability (können), necessity (müssen), desire (wollen), permission (dürfen), obligation (sollen), or liking (mögen).",
+    "simpleExplanation_id": "Kata kerja modal menyatakan kemampuan (können), keharusan (müssen), keinginan (wollen), izin (dürfen), kewajiban (sollen), atau kesukaan (mögen).",
+    "detailedExplanation_en": "Modal verbs are irregular and conjugated in second position. The main verb stays in infinitive form at the end of the clause. Common modals: können (can), müssen (must), wollen (want to), dürfen (may), sollen (should), mögen (like to). They have stem changes in singular.",
+    "detailedExplanation_id": "Kata kerja modal tak beraturan dan dikonjugasi di posisi kedua. Kata kerja utama tetap infinitif di akhir klausa. Modal umum: können (bisa), müssen (harus), wollen (ingin), dürfen (boleh), sollen (sebaiknya), mögen (suka).",
+    "usage_en": "Ich kann schwimmen. (I can swim.) | Du musst lernen. (You must learn.)",
+    "usage_id": "Ich kann schwimmen. (Saya bisa berenang.) | Du musst lernen. (Kamu harus belajar.)",
+    "avoidWhen_en": "Don't put main verb in second position with modals.",
+    "avoidWhen_id": "Jangan taruh kata kerja utama di posisi kedua dengan modal.",
+    "commonMistakes_en": [
+      "Conjugating the main verb instead of modal",
+      "Not placing infinitive at end",
+      "Wrong modal verb conjugation"
+    ],
+    "commonMistakes_id": [
+      "Mengonjugasi kata kerja utama alih-alih modal",
+      "Tidak menempatkan infinitif di akhir",
+      "Konjugasi modal salah"
+    ]
+  },
+  {
+    "id": "de_negation",
+    "language": "de",
+    "title": "Negation with 'nicht' and 'kein'",
+    "pattern": "nicht (not) / kein (no/not a)",
+    "level": 1,
+    "examMappings": {
+      "goethe": "A1"
+    },
+    "difficulty": 2,
+    "simpleExplanation": "Use 'kein' to negate nouns (no/not a), and 'nicht' to negate everything else.",
+    "detailedExplanation": "'kein' replaces the indefinite article (ein) and means 'no/not a/not any'. It declines like 'ein'. 'nicht' negates verbs, adjectives, and entire sentences. Position: 'nicht' comes before what it negates, usually before predicate adjectives/nouns or at end of sentence.",
+    "usage": "Ich habe kein Auto. (no car) | Das ist nicht gut. (not good)",
+    "avoidWhen": "Don't use 'nicht ein' for nouns - use 'kein'.",
+    "examples": [
+      {
+        "text": "Ich habe kein Geld. (no money)",
+        "translation": "I have no money.",
+        "translation_en": "I have no money.",
+        "translation_id": "Saya tidak punya uang."
+      },
+      {
+        "text": "Er kommt nicht. (not coming)",
+        "translation": "He's not coming.",
+        "translation_en": "He's not coming.",
+        "translation_id": "Dia tidak datang."
+      },
+      {
+        "text": "Das ist nicht mein Buch. (not mine)",
+        "translation": "That's not my book.",
+        "translation_en": "That's not my book.",
+        "translation_id": "Itu bukan buku saya."
+      }
+    ],
+    "commonMistakes": [
+      "Using 'nicht' instead of 'kein' with nouns",
+      "Wrong position of 'nicht'",
+      "Saying 'nicht ein' instead of 'kein'"
+    ],
+    "category": "grammar",
+    "tags": [
+      "negation",
+      "A1"
+    ],
+    "title_en": "Negation with 'nicht' and 'kein'",
+    "title_id": "Negasi dengan 'nicht' dan 'kein'",
+    "simpleExplanation_en": "Use 'kein' to negate nouns (no/not a), and 'nicht' to negate everything else.",
+    "simpleExplanation_id": "Pakai 'kein' untuk menegasi kata benda (tidak/bukan), dan 'nicht' untuk menegasi yang lain.",
+    "detailedExplanation_en": "'kein' replaces the indefinite article (ein) and means 'no/not a/not any'. It declines like 'ein'. 'nicht' negates verbs, adjectives, and entire sentences. Position: 'nicht' comes before what it negates, usually before predicate adjectives/nouns or at end of sentence.",
+    "detailedExplanation_id": "'kein' menggantikan artikel tak tentu (ein) dan berarti 'tidak/bukan satu pun'. Ia menurun seperti 'ein'. 'nicht' menegasi kata kerja, kata sifat, dan seluruh kalimat. Posisi: 'nicht' sebelum yang dinegasi.",
+    "usage_en": "Ich habe kein Auto. (no car) | Das ist nicht gut. (not good)",
+    "usage_id": "Ich habe kein Auto. (tanpa mobil) | Das ist nicht gut. (tidak bagus)",
+    "avoidWhen_en": "Don't use 'nicht ein' for nouns - use 'kein'.",
+    "avoidWhen_id": "Jangan pakai 'nicht ein' untuk kata benda — pakai 'kein'.",
+    "commonMistakes_en": [
+      "Using 'nicht' instead of 'kein' with nouns",
+      "Wrong position of 'nicht'",
+      "Saying 'nicht ein' instead of 'kein'"
+    ],
+    "commonMistakes_id": [
+      "Memakai 'nicht' alih-alih 'kein' dengan kata benda",
+      "Posisi 'nicht' salah",
+      "Mengucapkan 'nicht ein' alih-alih 'kein'"
+    ]
+  },
+  {
+    "id": "de_plural_forms",
+    "language": "de",
+    "title": "Plural Forms of Nouns",
+    "pattern": "-e / -en / -er / -n / -s / (no change)",
+    "level": 1,
+    "examMappings": {
+      "goethe": "A1"
+    },
+    "difficulty": 2,
+    "simpleExplanation": "German plurals are formed in several ways: -e, -en, -er, -n, -s, or no change, sometimes with an umlaut.",
+    "detailedExplanation": "Most masculine/feminine nouns take -e/-en; many neuter nouns take -er or stay the same; foreign words take -s; nouns ending in -e take -n. Many vowels get an umlaut in the plural: der Mann → die Männer, die Mutter → die Mütter. You must learn the plural together with the noun.",
+    "usage": "Mann→Männer | Frau→Frauen | Buch→Bücher | Auto→Autos | Zimmer→Zimmer",
+    "avoidWhen": "Don't add -s to German native nouns (that's only for foreign/loan words).",
+    "examples": [
+      {
+        "text": "Der Mann → die Männer",
+        "translation": "The man → the men",
+        "pronunciation": "deːɐ man diː ˈmɛnɐ",
+        "translation_en": "The man → the men",
+        "translation_id": "Laki-laki itu → para laki-laki"
+      },
+      {
+        "text": "Die Frau → die Frauen",
+        "translation": "The woman → the women",
+        "pronunciation": "diː fʁaʊ diː ˈfʁaʊən",
+        "translation_en": "The woman → the women",
+        "translation_id": "Perempuan itu → para perempuan"
+      },
+      {
+        "text": "Das Buch → die Bücher",
+        "translation": "The book → the books",
+        "pronunciation": "das buːx diː ˈbyːçɐ",
+        "translation_en": "The book → the books",
+        "translation_id": "Buku itu → buku-buku"
+      }
+    ],
+    "commonMistakes": [
+      "Guessing the plural instead of learning it",
+      "Adding -s to native words",
+      "Forgetting umlaut changes"
+    ],
+    "relatedPoints": [
+      "de_gender_articles"
+    ],
+    "category": "grammar",
+    "tags": [
+      "nouns",
+      "plural",
+      "A1"
+    ],
+    "title_en": "Plural Forms of Nouns",
+    "title_id": "Bentuk Jamak Kata Benda",
+    "simpleExplanation_en": "German plurals are formed in several ways: -e, -en, -er, -n, -s, or no change, sometimes with an umlaut.",
+    "simpleExplanation_id": "Jamak Jerman dibentuk beberapa cara: -e, -en, -er, -n, -s, atau tanpa perubahan, kadang dengan umlaut.",
+    "detailedExplanation_en": "Most masculine/feminine nouns take -e/-en; many neuter nouns take -er or stay the same; foreign words take -s; nouns ending in -e take -n. Many vowels get an umlaut in the plural: der Mann → die Männer, die Mutter → die Mütter. You must learn the plural together with the noun.",
+    "detailedExplanation_id": "Kebanyakan kata benda maskulin/feminin memakai -e/-en; banyak kata benda netral memakai -er atau tetap; kata asing memakai -s; kata benda berakhiran -e memakai -n. Banyak vokal mendapat umlaut di jamak: der Mann → die Männer, die Mutter → die Mütter. Pelajari jamak bersamaan dengan kata bendanya.",
+    "usage_en": "Mann→Männer | Frau→Frauen | Buch→Bücher | Auto→Autos | Zimmer→Zimmer",
+    "usage_id": "Mann→Männer | Frau→Frauen | Buch→Bücher | Auto→Autos | Zimmer→Zimmer",
+    "avoidWhen_en": "Don't add -s to German native nouns (that's only for foreign/loan words).",
+    "avoidWhen_id": "Jangan menambah -s pada kata asli Jerman (itu hanya untuk kata serapan).",
+    "commonMistakes_en": [
+      "Guessing the plural instead of learning it",
+      "Adding -s to native words",
+      "Forgetting umlaut changes"
+    ],
+    "commonMistakes_id": [
+      "Menebak jamak alih-alih menghafal",
+      "Menambah -s pada kata asli",
+      "Lupa perubahan umlaut"
+    ]
+  },
+  {
+    "id": "de_possessive",
+    "language": "de",
+    "title": "Possessive Pronouns",
+    "pattern": "mein (my), dein (your), sein/ihr/sein (his/her/its), unser (our), euer (your pl), ihr/Ihr (their/your formal)",
+    "level": 1,
+    "examMappings": {
+      "goethe": "A1"
+    },
+    "difficulty": 2,
+    "simpleExplanation": "Possessive pronouns show ownership and must agree with the gender of the noun they modify.",
+    "detailedExplanation": "Possessive pronouns take endings like indefinite articles: mein/meine/mein (m/f/n). They agree with the possessed noun's gender, not the possessor's. Endings change based on case (nominative: mein/meine/mein, accusative: meinen/meine/mein).",
+    "usage": "mein Vater (m), meine Mutter (f), mein Kind (n)",
+    "avoidWhen": "Don't forget to match the possessed noun's gender.",
+    "examples": [
+      {
+        "text": "Das ist mein Bruder und meine Schwester.",
+        "translation": "That is my brother and my sister.",
+        "translation_en": "That is my brother and my sister.",
+        "translation_id": "Itu saudara laki-laki dan saudara perempuan saya."
+      },
+      {
+        "text": "Sein Haus ist groß. (his house)",
+        "translation": "His house is big.",
+        "translation_en": "His house is big.",
+        "translation_id": "Rumahnya besar."
+      }
+    ],
+    "commonMistakes": [
+      "Wrong gender agreement",
+      "Confusing sein (his) with ihr (her)",
+      "Not declining the endings"
+    ],
+    "category": "grammar",
+    "tags": [
+      "pronouns",
+      "possessive",
+      "A1"
+    ],
+    "title_en": "Possessive Pronouns",
+    "title_id": "Kata Ganti Kepunyaan",
+    "simpleExplanation_en": "Possessive pronouns show ownership and must agree with the gender of the noun they modify.",
+    "simpleExplanation_id": "Kata ganti kepunyaan menunjukkan milik dan harus cocok dengan gender kata benda yang dimodifikasi.",
+    "detailedExplanation_en": "Possessive pronouns take endings like indefinite articles: mein/meine/mein (m/f/n). They agree with the possessed noun's gender, not the possessor's. Endings change based on case (nominative: mein/meine/mein, accusative: meinen/meine/mein).",
+    "detailedExplanation_id": "Kata ganti kepunyaan memakai akhiran seperti artikel tak tentu: mein/meine/mein (m/f/n). Mereka cocok dengan gender kata benda yang dimiliki, bukan pemiliknya. Akhiran berubah berdasarkan kasus.",
+    "usage_en": "mein Vater (m), meine Mutter (f), mein Kind (n)",
+    "usage_id": "mein Vater (m), meine Mutter (f), mein Kind (n)",
+    "avoidWhen_en": "Don't forget to match the possessed noun's gender.",
+    "avoidWhen_id": "Jangan lupa mencocokkan gender kata benda yang dimiliki.",
+    "commonMistakes_en": [
+      "Wrong gender agreement",
+      "Confusing sein (his) with ihr (her)",
+      "Not declining the endings"
+    ],
+    "commonMistakes_id": [
+      "Kesalahan kesesuaian gender",
+      "Mengacaukan sein (miliknya) dengan ihr (miliknya perempuan)",
+      "Tidak menurunkan akhiran"
+    ]
+  },
+  {
+    "id": "de_present_tense",
+    "language": "de",
+    "title": "Present Tense (Präsens)",
+    "pattern": "ich -e, du -st, er/sie/es -t, wir -en, ihr -t, sie/Sie -en",
+    "level": 1,
+    "examMappings": {
+      "goethe": "A1"
+    },
+    "difficulty": 2,
+    "simpleExplanation": "German present tense conjugates verbs with endings that match the subject pronoun.",
+    "detailedExplanation": "Regular verbs add endings to the stem: -e (ich), -st (du), -t (er/sie/es), -en (wir/sie/Sie), -t (ihr). Stem-changing verbs modify vowel in du/er forms (e→i: geben→gibst, e→ie: sehen→siehst, a→ä: fahren→fährst).",
+    "usage": "ich lerne, du lernst, er lernt, wir lernen, ihr lernt, sie lernen",
+    "avoidWhen": "Don't forget stem changes in irregular verbs.",
+    "examples": [
+      {
+        "text": "Ich lerne Deutsch. Du lernst auch.",
+        "translation": "I learn German. You learn too.",
+        "translation_en": "I learn German. You learn too.",
+        "translation_id": "Saya belajar bahasa Jerman. Kamu juga belajar."
+      },
+      {
+        "text": "Er spricht gut. (sprechen→spricht)",
+        "translation": "He speaks well.",
+        "translation_en": "He speaks well.",
+        "translation_id": "Dia berbicara dengan baik."
+      }
+    ],
+    "commonMistakes": [
+      "Forgetting verb endings",
+      "Not applying stem changes",
+      "Wrong ending for du/er forms"
+    ],
+    "category": "grammar",
+    "tags": [
+      "verbs",
+      "tenses",
+      "conjugation",
+      "A1"
+    ],
+    "title_en": "Present Tense (Präsens)",
+    "title_id": "Masa Kini (Präsens)",
+    "simpleExplanation_en": "German present tense conjugates verbs with endings that match the subject pronoun.",
+    "simpleExplanation_id": "Masa kini Jerman mengonjugasi kata kerja dengan akhiran yang cocok dengan kata ganti subjek.",
+    "detailedExplanation_en": "Regular verbs add endings to the stem: -e (ich), -st (du), -t (er/sie/es), -en (wir/sie/Sie), -t (ihr). Stem-changing verbs modify vowel in du/er forms (e→i: geben→gibst, e→ie: sehen→siehst, a→ä: fahren→fährst).",
+    "detailedExplanation_id": "Kata kerja reguler menambah akhiran pada batang: -e (ich), -st (du), -t (er/sie/es), -en (wir/sie/Sie), -t (ihr). Kata kerja berubah-batang memodifikasi vokal pada bentuk du/er (e→i: geben→gibst, e→ie: sehen→siehst, a→ä: fahren→fährst).",
+    "usage_en": "ich lerne, du lernst, er lernt, wir lernen, ihr lernt, sie lernen",
+    "usage_id": "ich lerne, du lernst, er lernt, wir lernen, ihr lernt, sie lernen",
+    "avoidWhen_en": "Don't forget stem changes in irregular verbs.",
+    "avoidWhen_id": "Jangan lupa perubahan batang pada kata kerja tak beraturan.",
+    "commonMistakes_en": [
+      "Forgetting verb endings",
+      "Not applying stem changes",
+      "Wrong ending for du/er forms"
+    ],
+    "commonMistakes_id": [
+      "Lupa akhiran kata kerja",
+      "Tidak menerapkan perubahan batang",
+      "Akhiran salah untuk bentuk du/er"
+    ]
+  },
+  {
+    "id": "de_pronouns",
+    "language": "de",
+    "title": "Personal Pronouns",
+    "pattern": "ich, du, er/sie/es, wir, ihr, sie/Sie",
+    "level": 1,
+    "examMappings": {
+      "goethe": "A1"
+    },
+    "difficulty": 1,
+    "simpleExplanation": "German personal pronouns: ich (I), du (you informal), er/sie/es (he/she/it), wir (we), ihr (you plural), sie (they), Sie (you formal).",
+    "detailedExplanation": "German has distinct pronouns for all persons. Third person has three genders: er (masculine), sie (feminine), es (neuter). The formal 'Sie' is capitalized and uses same form as 'sie' (they) but with capital S.",
+    "usage": "Use pronouns according to person, number, and formality.",
+    "avoidWhen": "Don't confuse sie (she/they) with Sie (you formal).",
+    "examples": [
+      {
+        "text": "Ich bin Student. Du bist Lehrerin.",
+        "translation": "I am a student. You are a teacher.",
+        "translation_en": "I am a student. You are a teacher.",
+        "translation_id": "Saya adalah pelajar. Kamu adalah guru."
+      },
+      {
+        "text": "Er ist groß. Sie ist klein.",
+        "translation": "He is tall. She is small.",
+        "translation_en": "He is tall. She is small.",
+        "translation_id": "Dia (laki-laki) tinggi. Dia (perempuan) kecil."
+      }
+    ],
+    "commonMistakes": [
+      "Confusing sie (she) with sie (they)",
+      "Not capitalizing Sie (you formal)"
+    ],
+    "category": "grammar",
+    "tags": [
+      "pronouns",
+      "basics",
+      "A1"
+    ],
+    "title_en": "Personal Pronouns",
+    "title_id": "Kata Ganti Orang",
+    "simpleExplanation_en": "German personal pronouns: ich (I), du (you informal), er/sie/es (he/she/it), wir (we), ihr (you plural), sie (they), Sie (you formal).",
+    "simpleExplanation_id": "Kata ganti orang Jerman: ich (saya), du (kamu informal), er/sie/es (dia), wir (kami), ihr (kalian), sie (mereka), Sie (Anda formal).",
+    "detailedExplanation_en": "German has distinct pronouns for all persons. Third person has three genders: er (masculine), sie (feminine), es (neuter). The formal 'Sie' is capitalized and uses same form as 'sie' (they) but with capital S.",
+    "detailedExplanation_id": "Bahasa Jerman punya kata ganti berbeda untuk semua orang. Orang ketiga punya tiga gender: er (maskulin), sie (feminin), es (netral). 'Sie' formal kapital dan memakai bentuk yang sama dengan 'sie' (mereka) tapi S besar.",
+    "usage_en": "Use pronouns according to person, number, and formality.",
+    "usage_id": "Pakai kata ganti sesuai orang, jumlah, dan formalitas.",
+    "avoidWhen_en": "Don't confuse sie (she/they) with Sie (you formal).",
+    "avoidWhen_id": "Jangan bingung sie (dia/mereka) dengan Sie (Anda formal).",
+    "commonMistakes_en": [
+      "Confusing sie (she) with sie (they)",
+      "Not capitalizing Sie (you formal)"
+    ],
+    "commonMistakes_id": [
+      "Mengacaukan sie (dia) dengan sie (mereka)",
+      "Tidak memakai kapital Sie (Anda formal)"
+    ]
+  },
+  {
+    "id": "de_questions",
+    "language": "de",
+    "title": "Asking Questions (W-Fragen & Ja/Nein-Fragen)",
+    "pattern": "W-word + Verb + Subject? / Verb + Subject?",
+    "level": 1,
+    "examMappings": {
+      "goethe": "A1"
+    },
+    "difficulty": 2,
+    "simpleExplanation": "German has two question types: W-questions (with question words) and yes/no questions (verb first).",
+    "detailedExplanation": "W-questions use question words (wer, was, wo, wann, wie, warum, etc.) in first position, then verb, then subject. Yes/no questions start with verb, then subject. Both invert subject and verb from normal word order.",
+    "usage": "Wer bist du? (Who are you?) | Bist du Student? (Are you a student?)",
+    "avoidWhen": "Don't forget verb-subject inversion in questions.",
+    "examples": [
+      {
+        "text": "Wie heißt du? (W-question)",
+        "translation": "What's your name?",
+        "translation_en": "What's your name?",
+        "translation_id": "Siapa namamu?"
+      },
+      {
+        "text": "Kommst du aus Deutschland? (Yes/No)",
+        "translation": "Are you from Germany?",
+        "translation_en": "Are you from Germany?",
+        "translation_id": "Apakah kamu dari Jerman?"
+      },
+      {
+        "text": "Wo wohnst du?",
+        "translation": "Where do you live?",
+        "translation_en": "Where do you live?",
+        "translation_id": "Di mana kamu tinggal?"
+      }
+    ],
+    "commonMistakes": [
+      "Not inverting verb and subject",
+      "Using wrong question word",
+      "Forgetting question mark"
+    ],
+    "category": "syntax",
+    "tags": [
+      "questions",
+      "sentence-structure",
+      "A1"
+    ],
+    "title_en": "Asking Questions (W-Fragen & Ja/Nein-Fragen)",
+    "title_id": "Bertanya (W-Fragen & Ja/Nein-Fragen)",
+    "simpleExplanation_en": "German has two question types: W-questions (with question words) and yes/no questions (verb first).",
+    "simpleExplanation_id": "Bahasa Jerman punya dua jenis pertanyaan: W-pertanyaan (dengan kata tanya) dan ya/tidak (kata kerja di depan).",
+    "detailedExplanation_en": "W-questions use question words (wer, was, wo, wann, wie, warum, etc.) in first position, then verb, then subject. Yes/no questions start with verb, then subject. Both invert subject and verb from normal word order.",
+    "detailedExplanation_id": "W-pertanyaan memakai kata tanya (wer, was, wo, wann, wie, warum, dst) di posisi pertama, lalu kata kerja, lalu subjek. Pertanyaan ya/tidak dimulai dengan kata kerja, lalu subjek. Keduanya membalik subjek dan kata kerja dari urutan normal.",
+    "usage_en": "Wer bist du? (Who are you?) | Bist du Student? (Are you a student?)",
+    "usage_id": "Wer bist du? (Siapa kamu?) | Bist du Student? (Apakah kamu pelajar?)",
+    "avoidWhen_en": "Don't forget verb-subject inversion in questions.",
+    "avoidWhen_id": "Jangan lupa inversi kata kerja-subjek dalam pertanyaan.",
+    "commonMistakes_en": [
+      "Not inverting verb and subject",
+      "Using wrong question word",
+      "Forgetting question mark"
+    ],
+    "commonMistakes_id": [
+      "Tidak membalik kata kerja dan subjek",
+      "Kata tanya salah",
+      "Lupa tanda tanya"
+    ]
+  },
+  {
+    "id": "de_separable_verbs",
+    "language": "de",
+    "title": "Separable Verbs",
+    "pattern": "prefix ... verb-stem (aufstehen → Ich stehe auf)",
+    "level": 1,
+    "examMappings": {
+      "goethe": "A1"
+    },
+    "difficulty": 3,
+    "simpleExplanation": "Some German verbs have separable prefixes that split off and move to the end of the sentence.",
+    "detailedExplanation": "Separable verbs consist of a verb stem and a stressed prefix (auf-, an-, ein-, aus-, mit-, etc.). In present tense main clauses, the prefix separates and moves to sentence end. In subordinate clauses and with modal verbs, it stays attached. Common separable verbs: aufstehen (get up), anfangen (begin), einladen (invite).",
+    "usage": "aufstehen: Ich stehe um 7 Uhr auf. (I get up at 7 o'clock.)",
+    "avoidWhen": "In subordinate clauses, the prefix stays attached.",
+    "examples": [
+      {
+        "text": "Ich stehe jeden Tag um 7 Uhr auf.",
+        "translation": "I get up every day at 7 o'clock.",
+        "translation_en": "I get up every day at 7 o'clock.",
+        "translation_id": "Saya bangun setiap hari jam tujuh."
+      },
+      {
+        "text": "Wann fängst du an? (anfangen)",
+        "translation": "When do you begin?",
+        "translation_en": "When do you begin?",
+        "translation_id": "Kapan kamu mulai?"
+      }
+    ],
+    "commonMistakes": [
+      "Leaving prefix attached in main clauses",
+      "Separating in subordinate clauses",
+      "Wrong position of separated prefix"
+    ],
+    "category": "grammar",
+    "tags": [
+      "verbs",
+      "separable",
+      "A1"
+    ],
+    "title_en": "Separable Verbs",
+    "title_id": "Kata Kerja Terpisah (Separable Verbs)",
+    "simpleExplanation_en": "Some German verbs have separable prefixes that split off and move to the end of the sentence.",
+    "simpleExplanation_id": "Beberapa kata kerja Jerman punya awalan terpisah yang lepas dan pindah ke akhir kalimat.",
+    "detailedExplanation_en": "Separable verbs consist of a verb stem and a stressed prefix (auf-, an-, ein-, aus-, mit-, etc.). In present tense main clauses, the prefix separates and moves to sentence end. In subordinate clauses and with modal verbs, it stays attached. Common separable verbs: aufstehen (get up), anfangen (begin), einladen (invite).",
+    "detailedExplanation_id": "Kata kerja terpisah terdiri dari batang kata kerja dan awalan bertekanan (auf-, an-, ein-, aus-, mit-, dst). Dalam klausa utama masa kini, awalan terpisah dan pindah ke akhir kalimat. Dalam klausa subordinat dan dengan kata kerja modal, awalan tetap menempel.",
+    "usage_en": "aufstehen: Ich stehe um 7 Uhr auf. (I get up at 7 o'clock.)",
+    "usage_id": "aufstehen: Ich stehe um 7 Uhr auf. (Saya bangun jam 7.)",
+    "avoidWhen_en": "In subordinate clauses, the prefix stays attached.",
+    "avoidWhen_id": "Dalam klausa subordinat, awalan tetap menempel.",
+    "commonMistakes_en": [
+      "Leaving prefix attached in main clauses",
+      "Separating in subordinate clauses",
+      "Wrong position of separated prefix"
+    ],
+    "commonMistakes_id": [
+      "Membiarkan awalan menempel di klausa utama",
+      "Memisahkan di klausa subordinat",
+      "Posisi awalan terpisah salah"
+    ]
+  },
+  {
+    "id": "de_verb_conjugation",
+    "language": "de",
+    "title": "Verb Conjugation (Regular Verbs)",
+    "pattern": "ich lern-e, du lern-st, er/sie/es lern-t ...",
+    "level": 1,
+    "examMappings": {
+      "goethe": "A1"
+    },
+    "difficulty": 1,
+    "simpleExplanation": "Regular German verbs change their ending depending on who is doing the action.",
+    "detailedExplanation": "Take the stem (verb minus -en/-n) and add: ich -e, du -st, er/sie/es -t, wir -en, ihr -t, sie/Sie -en. Examples with 'lernen': ich lerne, du lernst, er lernt, wir lernen, ihr lernt, sie lernen. Stems ending in -t/-d/-m/-n (like 'arbeiten') add an extra -e: du arbeitest, er arbeitet.",
+    "usage": "ich lerne | du lernst | er/sie/es lernt | wir lernen | ihr lernt | sie/Sie lernen",
+    "avoidWhen": "Don't forget the -e after stems ending in -t or -d (arbeiten → du arbeitest, not du arbeitst).",
+    "examples": [
+      {
+        "text": "Ich lerne Deutsch.",
+        "translation": "I learn German.",
+        "pronunciation": "ɪç ˈlɛʁnə dɔʏtʃ",
+        "translation_en": "I learn German.",
+        "translation_id": "Saya belajar bahasa Jerman."
+      },
+      {
+        "text": "Er arbeitet jeden Tag.",
+        "translation": "He works every day.",
+        "pronunciation": "eːɐ ˈaʁbaɪtət ˈjeːdn̩ taːk",
+        "translation_en": "He works every day.",
+        "translation_id": "Dia bekerja setiap hari."
+      },
+      {
+        "text": "Ihr lernt zusammen.",
+        "translation": "You (pl.) learn together.",
+        "pronunciation": "iːɐ lɛʁnt tsʊˈzamən",
+        "translation_en": "You (pl.) learn together.",
+        "translation_id": "Kalian belajar bersama."
+      }
+    ],
+    "commonMistakes": [
+      "Forgetting to conjugate the verb",
+      "Dropping the -e with -t/-d stems",
+      "Using the infinitive in main clauses"
+    ],
+    "relatedPoints": [
+      "de_present_tense",
+      "de_pronouns"
+    ],
+    "category": "grammar",
+    "tags": [
+      "verbs",
+      "conjugation",
+      "present",
+      "A1"
+    ],
+    "title_en": "Verb Conjugation (Regular Verbs)",
+    "title_id": "Konjugasi Kata Kerja (Kata Kerja Beraturan)",
+    "simpleExplanation_en": "Regular German verbs change their ending depending on who is doing the action.",
+    "simpleExplanation_id": "Kata kerja Jerman beraturan mengubah akhiran sesuai subjek yang melakukan aksi.",
+    "detailedExplanation_en": "Take the stem (verb minus -en/-n) and add: ich -e, du -st, er/sie/es -t, wir -en, ihr -t, sie/Sie -en. Examples with 'lernen': ich lerne, du lernst, er lernt, wir lernen, ihr lernt, sie lernen. Stems ending in -t/-d/-m/-n (like 'arbeiten') add an extra -e: du arbeitest, er arbeitet.",
+    "detailedExplanation_id": "Ambil akar kata kerja (kata kerja tanpa -en/-n) lalu tambahkan: ich -e, du -st, er/sie/es -t, wir -en, ihr -t, sie/Sie -en. Contoh 'lernen': ich lerne, du lernst, er lernt, wir lernen, ihr lernt, sie lernen. Akar yang berakhiran -t/-d/-m/-n (seperti 'arbeiten') menambah -e: du arbeitest, er arbeitet.",
+    "usage_en": "ich lerne | du lernst | er/sie/es lernt | wir lernen | ihr lernt | sie/Sie lernen",
+    "usage_id": "ich lerne | du lernst | er/sie/es lernt | wir lernen | ihr lernt | sie/Sie lernen",
+    "avoidWhen_en": "Don't forget the -e after stems ending in -t or -d (arbeiten → du arbeitest, not du arbeitst).",
+    "avoidWhen_id": "Jangan lupa -e setelah akar berakhiran -t atau -d (arbeiten → du arbeitest, bukan du arbeitst).",
+    "commonMistakes_en": [
+      "Forgetting to conjugate the verb",
+      "Dropping the -e with -t/-d stems",
+      "Using the infinitive in main clauses"
+    ],
+    "commonMistakes_id": [
+      "Lupa mengonjugasi kata kerja",
+      "Menghilangkan -e pada akar -t/-d",
+      "Memakai infinitif di klausa utama"
+    ]
+  },
+  {
+    "id": "de_word_order",
+    "language": "de",
+    "title": "Basic Word Order (SVO)",
+    "pattern": "Subject + Verb + Object",
+    "level": 1,
+    "examMappings": {
+      "goethe": "A1"
+    },
+    "difficulty": 2,
+    "simpleExplanation": "In German main clauses, the verb is always in the second position.",
+    "detailedExplanation": "German uses V2 word order: the conjugated verb must be in second position. The first position can be subject, time expression, or other element. When first position is not subject, subject moves after verb (inversion). Subordinate clauses move verb to end.",
+    "usage": "Position 1 + Verb + Subject + ... | Zeit + Verb + Subject + ...",
+    "avoidWhen": "Don't put verb in first or third position in main clauses.",
+    "examples": [
+      {
+        "text": "Ich trinke Wasser. (Subject first)",
+        "translation": "I drink water.",
+        "translation_en": "I drink water.",
+        "translation_id": "Saya minum air. (subjek di depan)"
+      },
+      {
+        "text": "Heute trinke ich Wasser. (Time first, subject after verb)",
+        "translation": "Today I drink water.",
+        "translation_en": "Today I drink water.",
+        "translation_id": "Hari ini saya minum air. (waktu di depan, subjek setelah kata kerja)"
+      }
+    ],
+    "commonMistakes": [
+      "Placing verb at end in main clauses",
+      "Not inverting subject when starting with time/place",
+      "Confusing main and subordinate clause word order"
+    ],
+    "category": "syntax",
+    "tags": [
+      "word-order",
+      "sentence-structure",
+      "A1"
+    ],
+    "title_en": "Basic Word Order (SVO)",
+    "title_id": "Urutan Kata Dasar (SVO)",
+    "simpleExplanation_en": "In German main clauses, the verb is always in the second position.",
+    "simpleExplanation_id": "Dalam klausa utama Jerman, kata kerja selalu di posisi kedua.",
+    "detailedExplanation_en": "German uses V2 word order: the conjugated verb must be in second position. The first position can be subject, time expression, or other element. When first position is not subject, subject moves after verb (inversion). Subordinate clauses move verb to end.",
+    "detailedExplanation_id": "Bahasa Jerman memakai urutan V2: kata kerja terkonjugasi harus di posisi kedua. Posisi pertama bisa subjek, ekspresi waktu, atau unsur lain. Saat posisi pertama bukan subjek, subjek pindah setelah kata kerja (inversi). Klausa subordinat memakai urutan berbeda.",
+    "usage_en": "Position 1 + Verb + Subject + ... | Zeit + Verb + Subject + ...",
+    "usage_id": "Posisi 1 + Kata Kerja + Subjek + ... | Waktu + Kata Kerja + Subjek + ...",
+    "avoidWhen_en": "Don't put verb in first or third position in main clauses.",
+    "avoidWhen_id": "Jangan taruh kata kerja di posisi pertama atau ketiga dalam klausa utama.",
+    "commonMistakes_en": [
+      "Placing verb at end in main clauses",
+      "Not inverting subject when starting with time/place",
+      "Confusing main and subordinate clause word order"
+    ],
+    "commonMistakes_id": [
+      "Menempatkan kata kerja di akhir klausa utama",
+      "Tidak membalik subjek saat mulai dengan waktu/tempat",
+      "Mengacaukan urutan klausa utama dan subordinat"
+    ]
+  },
+  {
+    "id": "de_word_order_inversion",
+    "language": "de",
+    "title": "Word Order: Inversion",
+    "pattern": "Time/place + verb + subject (Gestern war ich ...)",
+    "level": 1,
+    "examMappings": {
+      "goethe": "A1"
+    },
+    "difficulty": 2,
+    "simpleExplanation": "When a sentence starts with something other than the subject, the verb stays in position 2 and the subject moves behind it.",
+    "detailedExplanation": "German verbs must stay in position 2. Normally the subject is first: Ich bin gestern im Kino. If you move a time word first, the subject jumps after the verb: Gestern bin ich im Kino. This inversion is very common and sounds natural in German.",
+    "usage": "Ich bin gestern im Kino. → Gestern bin ich im Kino.",
+    "avoidWhen": "Don't put the verb after the time word (Gestern ich bin ... is wrong).",
+    "examples": [
+      {
+        "text": "Gestern war ich im Kino.",
+        "translation": "Yesterday I was at the cinema.",
+        "pronunciation": "ˈɡɛstɐn vaːɐ ɪç ɪm ˈkiːno",
+        "translation_en": "Yesterday I was at the cinema.",
+        "translation_id": "Kemarin saya di bioskop."
+      },
+      {
+        "text": "Um acht Uhr stehe ich auf.",
+        "translation": "At eight o'clock I get up.",
+        "pronunciation": "ʊm axt uːɐ ˈʃteːə ɪç aʊf",
+        "translation_en": "At eight o'clock I get up.",
+        "translation_id": "Jam delapan saya bangun."
+      },
+      {
+        "text": "In Berlin wohne ich.",
+        "translation": "In Berlin I live.",
+        "pronunciation": "ɪn bɛɐ̯ˈliːn ˈvoːnə ɪç",
+        "translation_en": "In Berlin I live.",
+        "translation_id": "Di Berlin saya tinggal."
+      }
+    ],
+    "commonMistakes": [
+      "Putting the verb in position 3",
+      "Keeping the subject first (no inversion)",
+      "Forgetting the verb-second rule"
+    ],
+    "relatedPoints": [
+      "de_word_order"
+    ],
+    "category": "grammar",
+    "tags": [
+      "word order",
+      "syntax",
+      "A1"
+    ],
+    "title_en": "Word Order: Inversion",
+    "title_id": "Urutan Kata: Inversi",
+    "simpleExplanation_en": "When a sentence starts with something other than the subject, the verb stays in position 2 and the subject moves behind it.",
+    "simpleExplanation_id": "Saat kalimat dimulai selain dengan subjek, kata kerja tetap di posisi 2 dan subjek pindah ke belakangnya.",
+    "detailedExplanation_en": "German verbs must stay in position 2. Normally the subject is first: Ich bin gestern im Kino. If you move a time word first, the subject jumps after the verb: Gestern bin ich im Kino. This inversion is very common and sounds natural in German.",
+    "detailedExplanation_id": "Kata kerja Jerman harus di posisi 2. Biasanya subjek di depan: Ich bin gestern im Kino. Jika kata waktu ditaruh di depan, subjek melompat ke belakang kata kerja: Gestern bin ich im Kino. Inversi ini sangat umum dan terdengar natural.",
+    "usage_en": "Ich bin gestern im Kino. → Gestern bin ich im Kino.",
+    "usage_id": "Ich bin gestern im Kino. → Gestern bin ich im Kino.",
+    "avoidWhen_en": "Don't put the verb after the time word (Gestern ich bin ... is wrong).",
+    "avoidWhen_id": "Jangan taruh kata kerja setelah kata waktu (Gestern ich bin ... salah).",
+    "commonMistakes_en": [
+      "Putting the verb in position 3",
+      "Keeping the subject first (no inversion)",
+      "Forgetting the verb-second rule"
+    ],
+    "commonMistakes_id": [
+      "Menaruh kata kerja di posisi 3",
+      "Membiarkan subjek di depan (tanpa inversi)",
+      "Melupakan aturan kata kerja di posisi 2"
+    ]
+  }
+]
