@@ -1,0 +1,126 @@
+[
+  {
+    "id": "a-quick-de-a2",
+    "title": "Quick Test · Deutsch A2",
+    "description": "Five questions to check German A2 fundamentals: past tense, prepositions, articles, and simple structures.",
+    "kind": "quick",
+    "level": 2,
+    "examMappings": {
+      "goethe": "A2"
+    },
+    "durationMin": 5,
+    "passScore": 60,
+    "exercises": [
+      {
+        "id": "aqd10",
+        "type": "multiple-choice",
+        "prompt": "Was ist die Vergangenheit von: Ich esse.",
+        "options": [
+          {
+            "id": "o0",
+            "label": "Ich aß."
+          },
+          {
+            "id": "o1",
+            "label": "Ich esse gestern."
+          },
+          {
+            "id": "o2",
+            "label": "Ich werde essen."
+          }
+        ],
+        "correct": "o0",
+        "skill": "grammar",
+        "level": 2
+      },
+      {
+        "id": "aqd11",
+        "type": "multiple-choice",
+        "prompt": "Wähle die richtige Präposition: Ich gehe ___ Kino.",
+        "options": [
+          {
+            "id": "o0",
+            "label": "im"
+          },
+          {
+            "id": "o1",
+            "label": "ins"
+          },
+          {
+            "id": "o2",
+            "label": "dem"
+          }
+        ],
+        "correct": "o1",
+        "skill": "grammar",
+        "level": 2
+      },
+      {
+        "id": "aqd12",
+        "type": "multiple-choice",
+        "prompt": "Was bedeutet „freundlich\"?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "friendly"
+          },
+          {
+            "id": "o1",
+            "label": "angry"
+          },
+          {
+            "id": "o2",
+            "label": "busy"
+          }
+        ],
+        "correct": "o0",
+        "skill": "vocabulary",
+        "level": 2
+      },
+      {
+        "id": "aqd13",
+        "type": "multiple-choice",
+        "prompt": "Welcher Satz ist richtig?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "Gestern habe ich Deutsch gelernt."
+          },
+          {
+            "id": "o1",
+            "label": "Gestern ich habe Deutsch gelernt."
+          },
+          {
+            "id": "o2",
+            "label": "Ich gestern habe Deutsch gelernt."
+          }
+        ],
+        "correct": "o0",
+        "skill": "grammar",
+        "level": 2
+      },
+      {
+        "id": "aqd14",
+        "type": "multiple-choice",
+        "prompt": "Was ist das Gegenteil von „teuer\"?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "billig"
+          },
+          {
+            "id": "o1",
+            "label": "schnell"
+          },
+          {
+            "id": "o2",
+            "label": "schön"
+          }
+        ],
+        "correct": "o0",
+        "skill": "vocabulary",
+        "level": 2
+      }
+    ]
+  }
+]
