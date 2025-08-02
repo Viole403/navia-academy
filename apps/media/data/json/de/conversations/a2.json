@@ -1,0 +1,512 @@
+[
+  {
+    "id": "de-conv-011",
+    "language": "de",
+    "title": "Beim Einkaufen (At the Supermarket)",
+    "level": 2,
+    "difficulty": 2,
+    "examMappings": {
+      "goethe": "A2"
+    },
+    "scenario": "supermarket",
+    "speakers": [
+      {
+        "id": "customer",
+        "name": "Kunde (Customer)",
+        "role": "customer"
+      },
+      {
+        "id": "cashier",
+        "name": "Kassiererin (Cashier)",
+        "role": "cashier"
+      }
+    ],
+    "dialogue": [
+      {
+        "speaker": "customer",
+        "text": "Entschuldigung, wo finde ich das Brot?",
+        "romanization": null,
+        "translation": "Excuse me, where can I find the bread?",
+        "audio": "de_conv011_01.mp3",
+        "translation_en": "Excuse me, where can I find the bread?",
+        "translation_id": "Permisi, di mana saya bisa menemukan roti?"
+      },
+      {
+        "speaker": "cashier",
+        "text": "Das Brot ist in der Abteilung drei, links.",
+        "romanization": null,
+        "translation": "The bread is in section three, on the left.",
+        "audio": "de_conv011_02.mp3",
+        "translation_en": "The bread is in section three, on the left.",
+        "translation_id": "Rotinya ada di bagian tiga, sebelah kiri."
+      },
+      {
+        "speaker": "customer",
+        "text": "Vielen Dank! Und was kostet die Milch?",
+        "romanization": null,
+        "translation": "Thank you very much! And how much does the milk cost?",
+        "audio": "de_conv011_03.mp3",
+        "translation_en": "Thank you very much! And how much does the milk cost?",
+        "translation_id": "Terima kasih banyak! Berapa harga susunya?"
+      },
+      {
+        "speaker": "cashier",
+        "text": "Ein Liter Milch kostet einen Euro zwanzig.",
+        "romanization": null,
+        "translation": "One liter of milk costs one euro twenty.",
+        "audio": "de_conv011_04.mp3",
+        "translation_en": "One liter of milk costs one euro twenty.",
+        "translation_id": "Satu liter susu harganya satu euro dua puluh."
+      },
+      {
+        "speaker": "customer",
+        "text": "Ich nehme zwei Liter, bitte. Ich möchte zahlen.",
+        "romanization": null,
+        "translation": "I'll take two liters, please. I'd like to pay.",
+        "audio": "de_conv011_05.mp3",
+        "translation_en": "I'll take two liters, please. I'd like to pay.",
+        "translation_id": "Saya ambil dua liter, tolong. Saya mau bayar."
+      },
+      {
+        "speaker": "cashier",
+        "text": "Das macht zusammen zwölf Euro. Karte oder bar?",
+        "romanization": null,
+        "translation": "That comes to twelve euros in total. Card or cash?",
+        "audio": "de_conv011_06.mp3",
+        "translation_en": "That comes to twelve euros in total. Card or cash?",
+        "translation_id": "Total dua belas euro. Kartu atau tunai?"
+      },
+      {
+        "speaker": "customer",
+        "text": "Mit Karte, bitte. Hier ist meine Quittung, danke.",
+        "romanization": null,
+        "translation": "With card, please. Here is my receipt, thanks.",
+        "audio": "de_conv011_07.mp3",
+        "translation_en": "With card, please. Here is my receipt, thanks.",
+        "translation_id": "Pakai kartu, tolong. Ini struk saya, terima kasih."
+      }
+    ]
+  },
+  {
+    "id": "de-conv-012",
+    "language": "de",
+    "title": "Auf dem Bahnhof (At the Train Station)",
+    "level": 2,
+    "difficulty": 2,
+    "examMappings": {
+      "goethe": "A2"
+    },
+    "scenario": "train_station",
+    "speakers": [
+      {
+        "id": "passenger",
+        "name": "Fahrgast (Passenger)",
+        "role": "passenger"
+      },
+      {
+        "id": "employee",
+        "name": "Mitarbeiter (Station Employee)",
+        "role": "employee"
+      }
+    ],
+    "dialogue": [
+      {
+        "speaker": "passenger",
+        "text": "Guten Tag! Ich möchte ein Ticket nach Berlin, bitte.",
+        "romanization": null,
+        "translation": "Good day! I'd like a ticket to Berlin, please.",
+        "audio": "de_conv012_01.mp3",
+        "translation_en": "Good day! I'd like a ticket to Berlin, please.",
+        "translation_id": "Selamat siang! Saya mau tiket ke Berlin, tolong."
+      },
+      {
+        "speaker": "employee",
+        "text": "Gern. Einfach oder hin und zurück?",
+        "romanization": null,
+        "translation": "Sure. One-way or round trip?",
+        "audio": "de_conv012_02.mp3",
+        "translation_en": "Sure. One-way or round trip?",
+        "translation_id": "Tentu. Sekali jalan atau pulang-pergi?"
+      },
+      {
+        "speaker": "passenger",
+        "text": "Hin und zurück, bitte. Wann fährt der nächste Zug?",
+        "romanization": null,
+        "translation": "Round trip, please. When does the next train leave?",
+        "audio": "de_conv012_03.mp3",
+        "translation_en": "Round trip, please. When does the next train leave?",
+        "translation_id": "Pulang-pergi, tolong. Kapan kereta berikutnya berangkat?"
+      },
+      {
+        "speaker": "employee",
+        "text": "Um dreizehn Uhr fünfzehn von Bahnsteig vier.",
+        "romanization": null,
+        "translation": "At 1:15 pm from platform four.",
+        "audio": "de_conv012_04.mp3",
+        "translation_en": "At 1:15 pm from platform four.",
+        "translation_id": "Jam 13.15 dari peron empat."
+      },
+      {
+        "speaker": "passenger",
+        "text": "Wie lange dauert die Fahrt?",
+        "romanization": null,
+        "translation": "How long does the trip take?",
+        "audio": "de_conv012_05.mp3",
+        "translation_en": "How long does the trip take?",
+        "translation_id": "Berapa lama perjalanannya?"
+      },
+      {
+        "speaker": "employee",
+        "text": "Ungefähr vier Stunden. Ich wünsche Ihnen eine gute Reise!",
+        "romanization": null,
+        "translation": "About four hours. I wish you a good trip!",
+        "audio": "de_conv012_06.mp3",
+        "translation_en": "About four hours. I wish you a good trip!",
+        "translation_id": "Sekitar empat jam. Selamat menempuh perjalanan!"
+      }
+    ]
+  },
+  {
+    "id": "de-conv-013",
+    "language": "de",
+    "title": "Wohnungssuche (Apartment Hunting)",
+    "level": 2,
+    "difficulty": 2,
+    "examMappings": {
+      "goethe": "A2"
+    },
+    "scenario": "apartment",
+    "speakers": [
+      {
+        "id": "mieter",
+        "name": "Interessent (Applicant)",
+        "role": "applicant"
+      },
+      {
+        "id": "vermieter",
+        "name": "Vermieter (Landlord)",
+        "role": "landlord"
+      }
+    ],
+    "dialogue": [
+      {
+        "speaker": "mieter",
+        "text": "Guten Tag, ich rufe wegen der Wohnung an.",
+        "romanization": null,
+        "translation": "Good day, I'm calling about the apartment.",
+        "audio": "de_conv013_01.mp3",
+        "translation_en": "Good day, I'm calling about the apartment.",
+        "translation_id": "Selamat siang, saya menelepon soal apartemennya."
+      },
+      {
+        "speaker": "vermieter",
+        "text": "Ja, gern. Wie viel kostet sie?",
+        "romanization": null,
+        "translation": "Yes, sure. How much does it cost?",
+        "audio": "de_conv013_02.mp3",
+        "translation_en": "Yes, sure. How much does it cost?",
+        "translation_id": "Ya, silakan. Berapa biayanya?"
+      },
+      {
+        "speaker": "mieter",
+        "text": "Sie hat zwei Zimmer, eine Küche und ein Badezimmer.",
+        "romanization": null,
+        "translation": "It has two rooms, a kitchen and a bathroom.",
+        "audio": "de_conv013_03.mp3",
+        "translation_en": "It has two rooms, a kitchen and a bathroom.",
+        "translation_id": "Apartemennya punya dua kamar, dapur, dan kamar mandi."
+      },
+      {
+        "speaker": "vermieter",
+        "text": "Die Miete ist achthundert Euro warm.",
+        "romanization": null,
+        "translation": "The rent is eight hundred euros including utilities.",
+        "audio": "de_conv013_04.mp3",
+        "translation_en": "The rent is eight hundred euros including utilities.",
+        "translation_id": "Sewanya delapan ratus euro termasuk utilitas."
+      },
+      {
+        "speaker": "mieter",
+        "text": "Das ist etwas teuer. Gibt es einen Rabatt?",
+        "romanization": null,
+        "translation": "That is a bit expensive. Is there a discount?",
+        "audio": "de_conv013_05.mp3",
+        "translation_en": "That is a bit expensive. Is there a discount?",
+        "translation_id": "Itu agak mahal. Apakah ada diskon?"
+      },
+      {
+        "speaker": "vermieter",
+        "text": "Leider nicht. Aber Sie können die Wohnung am Samstag besichtigen.",
+        "romanization": null,
+        "translation": "Unfortunately not. But you can view the apartment on Saturday.",
+        "audio": "de_conv013_06.mp3",
+        "translation_en": "Unfortunately not. But you can view the apartment on Saturday.",
+        "translation_id": "Sayangnya tidak. Tapi Anda bisa melihat apartemennya hari Sabtu."
+      }
+    ]
+  },
+  {
+    "id": "de-conv-014",
+    "language": "de",
+    "title": "Im Restaurant (At the Restaurant)",
+    "level": 2,
+    "difficulty": 2,
+    "examMappings": {
+      "goethe": "A2"
+    },
+    "scenario": "restaurant",
+    "speakers": [
+      {
+        "id": "kellner",
+        "name": "Kellner (Waiter)",
+        "role": "waiter"
+      },
+      {
+        "id": "gast",
+        "name": "Gast (Guest)",
+        "role": "guest"
+      }
+    ],
+    "dialogue": [
+      {
+        "speaker": "kellner",
+        "text": "Guten Abend! Was darf ich Ihnen bringen?",
+        "romanization": null,
+        "translation": "Good evening! What may I bring you?",
+        "audio": "de_conv014_01.mp3",
+        "translation_en": "Good evening! What may I bring you?",
+        "translation_id": "Selamat malam! Ada yang bisa saya bawakan?"
+      },
+      {
+        "speaker": "gast",
+        "text": "Ich hätte gern die Suppe und dann den Fisch.",
+        "romanization": null,
+        "translation": "I'd like the soup and then the fish.",
+        "audio": "de_conv014_02.mp3",
+        "translation_en": "I'd like the soup and then the fish.",
+        "translation_id": "Saya mau sup dulu, lalu ikan."
+      },
+      {
+        "speaker": "kellner",
+        "text": "Sehr gern. Möchten Sie etwas zu trinken?",
+        "romanization": null,
+        "translation": "Very well. Would you like something to drink?",
+        "audio": "de_conv014_03.mp3",
+        "translation_en": "Very well. Would you like something to drink?",
+        "translation_id": "Baik. Mau minum apa?"
+      },
+      {
+        "speaker": "gast",
+        "text": "Ja, eine Flasche Wasser, bitte. Die Speisekarte, bitte.",
+        "romanization": null,
+        "translation": "Yes, a bottle of water, please. The menu, please.",
+        "audio": "de_conv014_04.mp3",
+        "translation_en": "Yes, a bottle of water, please. The menu, please.",
+        "translation_id": "Ya, satu botol air, tolong. Menu makanannya, tolong."
+      },
+      {
+        "speaker": "kellner",
+        "text": "Das Essen schmeckt gut, oder?",
+        "romanization": null,
+        "translation": "The food tastes good, doesn't it?",
+        "audio": "de_conv014_05.mp3",
+        "translation_en": "The food tastes good, doesn't it?",
+        "translation_id": "Makanannya enak, kan?"
+      },
+      {
+        "speaker": "gast",
+        "text": "Ja, sehr lecker! Ich hätte gern die Rechnung, bitte.",
+        "romanization": null,
+        "translation": "Yes, very delicious! I'd like the bill, please.",
+        "audio": "de_conv014_06.mp3",
+        "translation_en": "Yes, very delicious! I'd like the bill, please.",
+        "translation_id": "Ya, sangat lezat! Saya minta tagihannya, tolong."
+      },
+      {
+        "speaker": "kellner",
+        "text": "Zusammen oder getrennt?",
+        "romanization": null,
+        "translation": "Together or separately?",
+        "audio": "de_conv014_07.mp3",
+        "translation_en": "Together or separately?",
+        "translation_id": "Bayarnya bersamaan atau terpisah?"
+      }
+    ]
+  },
+  {
+    "id": "de-conv-015",
+    "language": "de",
+    "title": "Pläne fürs Wochenende (Weekend Plans)",
+    "level": 2,
+    "difficulty": 2,
+    "examMappings": {
+      "goethe": "A2"
+    },
+    "scenario": "plans",
+    "speakers": [
+      {
+        "id": "anna",
+        "name": "Anna",
+        "role": "friend"
+      },
+      {
+        "id": "ben",
+        "name": "Ben",
+        "role": "friend"
+      }
+    ],
+    "dialogue": [
+      {
+        "speaker": "ben",
+        "text": "Hallo Anna! Was machst du am Wochenende?",
+        "romanization": null,
+        "translation": "Hi Anna! What are you doing this weekend?",
+        "audio": "de_conv015_01.mp3",
+        "translation_en": "Hi Anna! What are you doing this weekend?",
+        "translation_id": "Hai Anna! Apa yang kamu lakukan akhir pekan?"
+      },
+      {
+        "speaker": "anna",
+        "text": "Am Samstag gehe ich mit meiner Familie in den Zoo.",
+        "romanization": null,
+        "translation": "On Saturday I'm going to the zoo with my family.",
+        "audio": "de_conv015_02.mp3",
+        "translation_en": "On Saturday I'm going to the zoo with my family.",
+        "translation_id": "Hari Sabtu saya pergi ke kebun binatang bersama keluarga."
+      },
+      {
+        "speaker": "ben",
+        "text": "Das klingt schön! Und am Sonntag?",
+        "romanization": null,
+        "translation": "That sounds nice! And on Sunday?",
+        "audio": "de_conv015_03.mp3",
+        "translation_en": "That sounds nice! And on Sunday?",
+        "translation_id": "Kedengarannya menyenangkan! Kalau hari Minggu?"
+      },
+      {
+        "speaker": "anna",
+        "text": "Am Sonntag mache ich vielleicht eine Radtour.",
+        "romanization": null,
+        "translation": "On Sunday I might go on a bike tour.",
+        "audio": "de_conv015_04.mp3",
+        "translation_en": "On Sunday I might go on a bike tour.",
+        "translation_id": "Hari Minggu mungkin saya bersepeda."
+      },
+      {
+        "speaker": "ben",
+        "text": "Wollen wir zusammen fahren? Ich kenne eine schöne Strecke.",
+        "romanization": null,
+        "translation": "Shall we ride together? I know a nice route.",
+        "audio": "de_conv015_05.mp3",
+        "translation_en": "Shall we ride together? I know a nice route.",
+        "translation_id": "Maukah kita bersepeda bareng? Saya tahu rute yang bagus."
+      },
+      {
+        "speaker": "anna",
+        "text": "Gerne! Wann treffen wir uns?",
+        "romanization": null,
+        "translation": "Gladly! When shall we meet?",
+        "audio": "de_conv015_06.mp3",
+        "translation_en": "Gladly! When shall we meet?",
+        "translation_id": "Tentu! Kapan kita bertemu?"
+      },
+      {
+        "speaker": "ben",
+        "text": "Um neun Uhr vor dem Park, wenn das Wetter gut ist.",
+        "romanization": null,
+        "translation": "At nine in front of the park, if the weather is good.",
+        "audio": "de_conv015_07.mp3",
+        "translation_en": "At nine in front of the park, if the weather is good.",
+        "translation_id": "Jam sembilan di depan taman, kalau cuacanya bagus."
+      }
+    ]
+  },
+  {
+    "id": "de-conv-016",
+    "language": "de",
+    "title": "Beim Arzt (At the Doctor)",
+    "level": 2,
+    "difficulty": 2,
+    "examMappings": {
+      "goethe": "A2"
+    },
+    "scenario": "doctor",
+    "speakers": [
+      {
+        "id": "patient",
+        "name": "Patient (Patient)",
+        "role": "patient"
+      },
+      {
+        "id": "arzt",
+        "name": "Arzt (Doctor)",
+        "role": "doctor"
+      }
+    ],
+    "dialogue": [
+      {
+        "speaker": "arzt",
+        "text": "Guten Morgen! Was kann ich für Sie tun?",
+        "romanization": null,
+        "translation": "Good morning! What can I do for you?",
+        "audio": "de_conv016_01.mp3",
+        "translation_en": "Good morning! What can I do for you?",
+        "translation_id": "Selamat pagi! Ada yang bisa saya bantu?"
+      },
+      {
+        "speaker": "patient",
+        "text": "Ich fühle mich seit zwei Tagen schlecht und habe Halsschmerzen.",
+        "romanization": null,
+        "translation": "I've been feeling bad for two days and have a sore throat.",
+        "audio": "de_conv016_02.mp3",
+        "translation_en": "I've been feeling bad for two days and have a sore throat.",
+        "translation_id": "Saya merasa tidak enak badan sejak dua hari dan tenggorokan sakit."
+      },
+      {
+        "speaker": "arzt",
+        "text": "Haben Sie auch Fieber?",
+        "romanization": null,
+        "translation": "Do you also have a fever?",
+        "audio": "de_conv016_03.mp3",
+        "translation_en": "Do you also have a fever?",
+        "translation_id": "Apakah kamu juga demam?"
+      },
+      {
+        "speaker": "patient",
+        "text": "Ja, gestern Abend hatte ich achtunddreißig Grad.",
+        "romanization": null,
+        "translation": "Yes, last night I had 38 degrees.",
+        "audio": "de_conv016_04.mp3",
+        "translation_en": "Yes, last night I had 38 degrees.",
+        "translation_id": "Ya, semalam suhu saya 38 derajat."
+      },
+      {
+        "speaker": "arzt",
+        "text": "Öffnen Sie bitte den Mund. Ich verschreibe Ihnen Tabletten und Tee.",
+        "romanization": null,
+        "translation": "Please open your mouth. I'll prescribe you tablets and tea.",
+        "audio": "de_conv016_05.mp3",
+        "translation_en": "Please open your mouth. I'll prescribe you tablets and tea.",
+        "translation_id": "Tolong buka mulut Anda. Saya meresepkan obat tablet dan teh."
+      },
+      {
+        "speaker": "patient",
+        "text": "Wie oft muss ich die Tabletten nehmen?",
+        "romanization": null,
+        "translation": "How often do I have to take the tablets?",
+        "audio": "de_conv016_06.mp3",
+        "translation_en": "How often do I have to take the tablets?",
+        "translation_id": "Berapa kali saya harus minum tabletnya?"
+      },
+      {
+        "speaker": "arzt",
+        "text": "Dreimal täglich nach dem Essen. Bleiben Sie zu Hause und ruhen Sie sich aus.",
+        "romanization": null,
+        "translation": "Three times a day after meals. Stay home and rest.",
+        "audio": "de_conv016_07.mp3",
+        "translation_en": "Three times a day after meals. Stay home and rest.",
+        "translation_id": "Tiga kali sehari setelah makan. Tetap di rumah dan istirahatlah."
+      }
+    ]
+  }
+]
