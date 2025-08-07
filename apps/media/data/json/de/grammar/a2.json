@@ -1,0 +1,823 @@
+[
+  {
+    "id": "de_accusative_case",
+    "language": "de",
+    "title": "Accusative Case (Akkusativ)",
+    "pattern": "den (m) / die (f) / das (n) / die (pl)",
+    "level": 2,
+    "examMappings": {
+      "goethe": "A2"
+    },
+    "difficulty": 3,
+    "simpleExplanation": "Accusative case is used for direct objects (what/whom) and after certain prepositions.",
+    "detailedExplanation": "Accusative indicates the direct object receiving the action. Only masculine articles change: der→den, ein→einen. Used after verbs like haben, sehen, kaufen and prepositions durch, für, gegen, ohne, um. Two-way prepositions (an, auf, in, über, etc.) take accusative for motion.",
+    "usage": "Ich sehe den Mann. | Ich gehe in die Stadt.",
+    "avoidWhen": "Don't use for indirect objects (use dative).",
+    "examples": [
+      {
+        "text": "Ich kaufe einen Apfel.",
+        "translation": "I buy an apple.",
+        "translation_en": "I buy an apple.",
+        "translation_id": "Saya membeli sebuah apel."
+      },
+      {
+        "text": "Wir gehen durch den Park.",
+        "translation": "We walk through the park.",
+        "translation_en": "We walk through the park.",
+        "translation_id": "Kami berjalan melewati taman."
+      }
+    ],
+    "commonMistakes": [
+      "Forgetting to change masculine articles",
+      "Confusing with dative",
+      "Wrong preposition choice"
+    ],
+    "category": "grammar",
+    "tags": [
+      "cases",
+      "accusative",
+      "articles",
+      "A2"
+    ],
+    "title_en": "Accusative Case (Akkusativ)",
+    "title_id": "Kasus Akkusativ",
+    "simpleExplanation_en": "Accusative case is used for direct objects (what/whom) and after certain prepositions.",
+    "simpleExplanation_id": "Kasus akkusatif dipakai untuk objek langsung (apa/siapa) dan setelah preposisi tertentu.",
+    "detailedExplanation_en": "Accusative indicates the direct object receiving the action. Only masculine articles change: der→den, ein→einen. Used after verbs like haben, sehen, kaufen and prepositions durch, für, gegen, ohne, um. Two-way prepositions (an, auf, in, über, etc.) take accusative for motion.",
+    "detailedExplanation_id": "Akkusatif menunjukkan objek langsung yang menerima aksi. Hanya artikel maskulin yang berubah: der→den, ein→einen. Dipakai setelah kata kerja seperti haben, sehen, kaufen dan preposisi durch, für, gegen, ohne, um. Preposisi dua-arah memakai akkusatif untuk gerak.",
+    "usage_en": "Ich sehe den Mann. | Ich gehe in die Stadt.",
+    "usage_id": "Ich sehe den Mann. | Ich gehe in die Stadt.",
+    "avoidWhen_en": "Don't use for indirect objects (use dative).",
+    "avoidWhen_id": "Jangan dipakai untuk objek tak langsung (pakai dativ).",
+    "commonMistakes_en": [
+      "Forgetting to change masculine articles",
+      "Confusing with dative",
+      "Wrong preposition choice"
+    ],
+    "commonMistakes_id": [
+      "Lupa mengubah artikel maskulin",
+      "Mengacaukan dengan dativ",
+      "Pilihan preposisi salah"
+    ]
+  },
+  {
+    "id": "de_comparative_superlative",
+    "language": "de",
+    "title": "Comparative and Superlative",
+    "pattern": "groß → größer → am größten",
+    "level": 2,
+    "examMappings": {
+      "goethe": "A2"
+    },
+    "difficulty": 3,
+    "simpleExplanation": "Add -er for comparative (bigger) and -st(e) for superlative (biggest). Often with umlaut.",
+    "detailedExplanation": "Comparative: add -er (schön→schöner). Superlative: am + adjective + -sten (am schönsten) or attributive with -st- + ending. Many common adjectives add umlaut: groß→größer, alt→älter. Irregular: gut→besser→am besten, viel→mehr→am meisten.",
+    "usage": "Berlin ist größer als München. | Hamburg ist am größten.",
+    "avoidWhen": "Don't forget umlaut with a/o/u adjectives.",
+    "examples": [
+      {
+        "text": "Mein Auto ist schneller als dein Auto.",
+        "translation": "My car is faster than your car.",
+        "translation_en": "My car is faster than your car.",
+        "translation_id": "Mobil saya lebih cepat daripada mobilmu."
+      },
+      {
+        "text": "Das ist das beste Restaurant.",
+        "translation": "That's the best restaurant.",
+        "translation_en": "That's the best restaurant.",
+        "translation_id": "Itu restoran terbaik."
+      }
+    ],
+    "commonMistakes": [
+      "Forgetting umlaut",
+      "Wrong 'als' vs 'wie' usage",
+      "Irregular forms"
+    ],
+    "category": "grammar",
+    "tags": [
+      "adjectives",
+      "comparison",
+      "A2"
+    ],
+    "title_en": "Comparative and Superlative",
+    "title_id": "Komparatif dan Superlatif",
+    "simpleExplanation_en": "Add -er for comparative (bigger) and -st(e) for superlative (biggest). Often with umlaut.",
+    "simpleExplanation_id": "Tambahkan -er untuk komparatif (lebih besar) dan -st(e) untuk superlatif (terbesar). Sering dengan umlaut.",
+    "detailedExplanation_en": "Comparative: add -er (schön→schöner). Superlative: am + adjective + -sten (am schönsten) or attributive with -st- + ending. Many common adjectives add umlaut: groß→größer, alt→älter. Irregular: gut→besser→am besten, viel→mehr→am meisten.",
+    "detailedExplanation_id": "Komparatif: tambah -er (schön→schöner). Superlatif: am + kata sifat + -sten (am schönsten) atau atributif dengan -st- + akhiran. Banyak kata sifat umum menambah umlaut: groß→größer, alt→älter. Tak beraturan: gut→besser→am besten.",
+    "usage_en": "Berlin ist größer als München. | Hamburg ist am größten.",
+    "usage_id": "Berlin ist größer als München. | Hamburg ist am größten.",
+    "avoidWhen_en": "Don't forget umlaut with a/o/u adjectives.",
+    "avoidWhen_id": "Jangan lupa umlaut dengan kata sifat a/o/u.",
+    "commonMistakes_en": [
+      "Forgetting umlaut",
+      "Wrong 'als' vs 'wie' usage",
+      "Irregular forms"
+    ],
+    "commonMistakes_id": [
+      "Lupa umlaut",
+      "Pemakaian 'als' vs 'wie' salah",
+      "Bentuk tak beraturan"
+    ]
+  },
+  {
+    "id": "de_dative_case",
+    "language": "de",
+    "title": "Dative Case (Dativ)",
+    "pattern": "dem (m) / der (f) / dem (n) / den (pl)",
+    "level": 2,
+    "examMappings": {
+      "goethe": "A2"
+    },
+    "difficulty": 4,
+    "simpleExplanation": "Dative case is used for indirect objects (to/for whom) and after certain prepositions.",
+    "detailedExplanation": "Dative indicates the indirect object (recipient). Articles change: der→dem, die→der, das→dem, die(pl)→den+n. Used with verbs like geben, helfen, schenken and two-way prepositions when location (not motion) is expressed. Also required after aus, bei, mit, nach, seit, von, zu.",
+    "usage": "Ich gebe dem Mann das Buch. | Ich bin in der Stadt.",
+    "avoidWhen": "Don't confuse with accusative for direct objects.",
+    "examples": [
+      {
+        "text": "Ich helfe meinem Vater.",
+        "translation": "I help my father.",
+        "pronunciation": "ɪç ˈhɛlfə ˈmaɪnəm ˈfaːtɐ",
+        "translation_en": "I help my father.",
+        "translation_id": "Saya membantu ayah saya."
+      },
+      {
+        "text": "Das Buch gehört der Frau.",
+        "translation": "The book belongs to the woman.",
+        "translation_en": "The book belongs to the woman.",
+        "translation_id": "Buku itu milik wanita tersebut."
+      }
+    ],
+    "commonMistakes": [
+      "Forgetting to add -n to plural nouns",
+      "Using nominative instead of dative",
+      "Wrong article endings"
+    ],
+    "category": "grammar",
+    "tags": [
+      "cases",
+      "dative",
+      "articles",
+      "A2"
+    ],
+    "title_en": "Dative Case (Dativ)",
+    "title_id": "Kasus Dativ",
+    "simpleExplanation_en": "Dative case is used for indirect objects (to/for whom) and after certain prepositions.",
+    "simpleExplanation_id": "Kasus dativ dipakai untuk objek tak langsung (untuk/kepada siapa) dan setelah preposisi tertentu.",
+    "detailedExplanation_en": "Dative indicates the indirect object (recipient). Articles change: der→dem, die→der, das→dem, die(pl)→den+n. Used with verbs like geben, helfen, schenken and two-way prepositions when location (not motion) is expressed. Also required after aus, bei, mit, nach, seit, von, zu.",
+    "detailedExplanation_id": "Dativ menunjukkan objek tak langsung (penerima). Artikel berubah: der→dem, die→der, das→dem, die(jamak)→den+n. Dipakai dengan kata kerja seperti geben, helfen, schenken dan preposisi dua-arah saat menyatakan lokasi (bukan gerak).",
+    "usage_en": "Ich gebe dem Mann das Buch. | Ich bin in der Stadt.",
+    "usage_id": "Ich gebe dem Mann das Buch. | Ich bin in der Stadt.",
+    "avoidWhen_en": "Don't confuse with accusative for direct objects.",
+    "avoidWhen_id": "Jangan dikacaukan dengan akusatif untuk objek langsung.",
+    "commonMistakes_en": [
+      "Forgetting to add -n to plural nouns",
+      "Using nominative instead of dative",
+      "Wrong article endings"
+    ],
+    "commonMistakes_id": [
+      "Lupa menambah -n pada kata benda jamak",
+      "Memakai nominatif alih-alih dativ",
+      "Akhiran artikel salah"
+    ]
+  },
+  {
+    "id": "de_future_werden",
+    "language": "de",
+    "title": "Future Tense with werden",
+    "pattern": "werden + infinitive at end",
+    "level": 2,
+    "examMappings": {
+      "goethe": "A2"
+    },
+    "difficulty": 2,
+    "simpleExplanation": "Form the future with the conjugated verb 'werden' + the infinitive at the end.",
+    "detailedExplanation": "Conjugated werden: ich werde, du wirst, er wird, wir werden, ihr werdet, sie werden. Then put the main verb's infinitive at the end: Ich werde morgen nach Berlin fliegen. For near-future plans Germans often use present tense with a time word: Ich fliege morgen. Both are correct.",
+    "usage": "Ich werde morgen arbeiten. | Es wird regnen.",
+    "avoidWhen": "Don't use werden to talk about 'becoming' (Ich werde Lehrer = I'm becoming a teacher) — that's a different use.",
+    "examples": [
+      {
+        "text": "Ich werde morgen nach Berlin fliegen.",
+        "translation": "I will fly to Berlin tomorrow.",
+        "pronunciation": "ɪç ˈveːɐdə ˈmɔʁɡn̩ naːx bɛɐ̯ˈliːn ˈfliːɡn̩",
+        "translation_en": "I will fly to Berlin tomorrow.",
+        "translation_id": "Besok saya akan terbang ke Berlin."
+      },
+      {
+        "text": "Es wird heute regnen.",
+        "translation": "It will rain today.",
+        "pronunciation": "ɛs vɪʁt ˈhɔʏtə ˈʁeːɡnən",
+        "translation_en": "It will rain today.",
+        "translation_id": "Hari ini akan hujan."
+      },
+      {
+        "text": "Wirst du kommen?",
+        "translation": "Will you come?",
+        "pronunciation": "vɪʁst duː ˈkɔmən",
+        "translation_en": "Will you come?",
+        "translation_id": "Apakah kamu akan datang?"
+      }
+    ],
+    "commonMistakes": [
+      "Putting the infinitive before werden",
+      "Using werden + past participle (that's passive)",
+      "Forgetting wirst/wird forms"
+    ],
+    "relatedPoints": [
+      "de_verb_conjugation"
+    ],
+    "category": "grammar",
+    "tags": [
+      "verbs",
+      "tenses",
+      "future",
+      "A2"
+    ],
+    "title_en": "Future Tense with werden",
+    "title_id": "Tenses Masa Depan dengan werden",
+    "simpleExplanation_en": "Form the future with the conjugated verb 'werden' + the infinitive at the end.",
+    "simpleExplanation_id": "Bentuk masa depan dengan kata kerja 'werden' + infinitif di akhir.",
+    "detailedExplanation_en": "Conjugated werden: ich werde, du wirst, er wird, wir werden, ihr werdet, sie werden. Then put the main verb's infinitive at the end: Ich werde morgen nach Berlin fliegen. For near-future plans Germans often use present tense with a time word: Ich fliege morgen. Both are correct.",
+    "detailedExplanation_id": "Konjugasi werden: ich werde, du wirst, er wird, wir werden, ihr werdet, sie werden. Lalu taruh infinitif kata kerja utama di akhir: Ich werde morgen nach Berlin fliegen. Untuk rencana dekat, orang Jerman sering memakai present tense dengan kata waktu: Ich fliege morgen. Keduanya benar.",
+    "usage_en": "Ich werde morgen arbeiten. | Es wird regnen.",
+    "usage_id": "Ich werde morgen arbeiten. | Es wird regnen.",
+    "avoidWhen_en": "Don't use werden to talk about 'becoming' (Ich werde Lehrer = I'm becoming a teacher) — that's a different use.",
+    "avoidWhen_id": "Jangan pakai werden untuk 'menjadi' (Ich werde Lehrer = saya menjadi guru) — itu penggunaan berbeda.",
+    "commonMistakes_en": [
+      "Putting the infinitive before werden",
+      "Using werden + past participle (that's passive)",
+      "Forgetting wirst/wird forms"
+    ],
+    "commonMistakes_id": [
+      "Menaruh infinitif sebelum werden",
+      "Memakai werden + partisip lampau (itu pasif)",
+      "Lupa bentuk wirst/wird"
+    ]
+  },
+  {
+    "id": "de_genitive",
+    "language": "de",
+    "title": "Genitive Case (Genitiv)",
+    "pattern": "der/das → des + -s/-es; die → der",
+    "level": 2,
+    "examMappings": {
+      "goethe": "A2"
+    },
+    "difficulty": 3,
+    "simpleExplanation": "The genitive shows possession: 'das Buch des Mannes' (the man's book).",
+    "detailedExplanation": "Masculine and neuter nouns add -s or -es (des Mannes, des Buches) with the article des. Feminine and plural use der (der Frau). 'von + dative' is a common spoken alternative: das Buch von dem Mann. Genitive also follows certain prepositions: wegen, trotz, während.",
+    "usage": "das Buch des Mannes | die Tasche der Frau | wegen des Wetters",
+    "avoidWhen": "Don't use 'von' in formal written German when a genitive is expected — in writing prefer the genitive.",
+    "examples": [
+      {
+        "text": "Das ist das Buch des Mannes.",
+        "translation": "That is the man's book.",
+        "pronunciation": "das ɪst das buːx dɛs ˈmanəs",
+        "translation_en": "That is the man's book.",
+        "translation_id": "Itu buku milik laki-laki itu."
+      },
+      {
+        "text": "Das Auto meines Vaters ist neu.",
+        "translation": "My father's car is new.",
+        "pronunciation": "das ˈaʊto ˈmaɪnəs ˈfaːtɐs ɪst nɔʏ",
+        "translation_en": "My father's car is new.",
+        "translation_id": "Mobil ayah saya baru."
+      },
+      {
+        "text": "Wegen des Regens bleiben wir zu Hause.",
+        "translation": "Because of the rain we stay home.",
+        "pronunciation": "ˈveːɡn̩ dɛs ˈʁeːɡn̩s ˈblaɪbn̩ viːɐ tsuː ˈhaʊzə",
+        "translation_en": "Because of the rain we stay home.",
+        "translation_id": "Karena hujan kita tinggal di rumah."
+      }
+    ],
+    "commonMistakes": [
+      "Using 'von' when a genitive is required in writing",
+      "Forgetting the -s/-es on masculine/neuter nouns",
+      "Using der instead of des for masculine"
+    ],
+    "relatedPoints": [
+      "de_accusative_case",
+      "de_dative_case"
+    ],
+    "category": "grammar",
+    "tags": [
+      "cases",
+      "genitive",
+      "A2"
+    ],
+    "title_en": "Genitive Case (Genitiv)",
+    "title_id": "Kasus Genitif (Genitiv)",
+    "simpleExplanation_en": "The genitive shows possession: 'das Buch des Mannes' (the man's book).",
+    "simpleExplanation_id": "Genitif menyatakan kepemilikan: 'das Buch des Mannes' (buku milik laki-laki itu).",
+    "detailedExplanation_en": "Masculine and neuter nouns add -s or -es (des Mannes, des Buches) with the article des. Feminine and plural use der (der Frau). 'von + dative' is a common spoken alternative: das Buch von dem Mann. Genitive also follows certain prepositions: wegen, trotz, während.",
+    "detailedExplanation_id": "Kata benda maskulin dan netral menambah -s atau -es (des Mannes, des Buches) dengan artikel des. Feminin dan jamak memakai der (der Frau). 'von + datif' alternatif umum lisan: das Buch von dem Mann. Genitif juga mengikuti preposisi tertentu: wegen, trotz, während.",
+    "usage_en": "das Buch des Mannes | die Tasche der Frau | wegen des Wetters",
+    "usage_id": "das Buch des Mannes | die Tasche der Frau | wegen des Wetters",
+    "avoidWhen_en": "Don't use 'von' in formal written German when a genitive is expected — in writing prefer the genitive.",
+    "avoidWhen_id": "Jangan pakai 'von' dalam tulisan formal saat genitif diharapkan — dalam tulisan utamakan genitif.",
+    "commonMistakes_en": [
+      "Using 'von' when a genitive is required in writing",
+      "Forgetting the -s/-es on masculine/neuter nouns",
+      "Using der instead of des for masculine"
+    ],
+    "commonMistakes_id": [
+      "Memakai 'von' saat genitif diperlukan dalam tulisan",
+      "Lupa -s/-es pada kata benda maskulin/netral",
+      "Memakai der alih-alih des untuk maskulin"
+    ]
+  },
+  {
+    "id": "de_past_perfect",
+    "language": "de",
+    "title": "Perfect Tense (Perfekt)",
+    "pattern": "haben/sein + ... + Partizip II",
+    "level": 2,
+    "examMappings": {
+      "goethe": "A2"
+    },
+    "difficulty": 3,
+    "simpleExplanation": "German uses perfect tense (Perfekt) for past actions, formed with haben/sein + past participle at the end.",
+    "detailedExplanation": "The perfect tense is the most common past tense in spoken German. Most verbs use 'haben' as auxiliary. Motion verbs (gehen, fahren, kommen) and state-change verbs (werden, sein, bleiben) use 'sein'. The past participle goes at the end: ge-[stem]-t (weak) or ge-[stem]-en (strong).",
+    "usage": "Ich habe gegessen. (I ate.) | Er ist gekommen. (He came.)",
+    "avoidWhen": "Don't use with modal verbs in subordinate clauses.",
+    "examples": [
+      {
+        "text": "Ich habe gestern Pizza gegessen.",
+        "translation": "I ate pizza yesterday.",
+        "pronunciation": "ɪç ˈhaːbə ˈɡɛstɐn ˈpɪtsa ɡəˈɡɛsn̩",
+        "translation_en": "I ate pizza yesterday.",
+        "translation_id": "Kemarin saya makan pizza."
+      },
+      {
+        "text": "Sie ist nach Berlin gefahren.",
+        "translation": "She went to Berlin.",
+        "pronunciation": "ziː ɪst nax bɛɐ̯ˈliːn ɡəˈfaːʁən",
+        "translation_en": "She went to Berlin.",
+        "translation_id": "Dia pergi ke Berlin."
+      }
+    ],
+    "commonMistakes": [
+      "Using 'haben' instead of 'sein' with motion verbs",
+      "Wrong past participle form",
+      "Not placing past participle at end"
+    ],
+    "relatedPoints": [
+      "de_past_simple"
+    ],
+    "category": "grammar",
+    "tags": [
+      "verbs",
+      "tenses",
+      "past",
+      "A2"
+    ],
+    "title_en": "Perfect Tense (Perfekt)",
+    "title_id": "Masa Lampau Sempurna (Perfekt)",
+    "simpleExplanation_en": "German uses perfect tense (Perfekt) for past actions, formed with haben/sein + past participle at the end.",
+    "simpleExplanation_id": "Bahasa Jerman memakai perfect tense (Perfekt) untuk aksi lampau, dibentuk dengan haben/sein + partisip lampau di akhir.",
+    "detailedExplanation_en": "The perfect tense is the most common past tense in spoken German. Most verbs use 'haben' as auxiliary. Motion verbs (gehen, fahren, kommen) and state-change verbs (werden, sein, bleiben) use 'sein'. The past participle goes at the end: ge-[stem]-t (weak) or ge-[stem]-en (strong).",
+    "detailedExplanation_id": "Perfect tense adalah masa lampau paling umum dalam bahasa Jerman lisan. Kebanyakan kata kerja memakai 'haben' sebagai penolong. Kata kerja gerak (gehen, fahren, kommen) dan kata kerja perubahan keadaan (werden, sein, bleiben) memakai 'sein'. Partisip lampau di akhir: ge-[batang]-t (lemah) atau ge-[batang]-en (kuat).",
+    "usage_en": "Ich habe gegessen. (I ate.) | Er ist gekommen. (He came.)",
+    "usage_id": "Ich habe gegessen. (Saya makan.) | Er ist gekommen. (Dia datang.)",
+    "avoidWhen_en": "Don't use with modal verbs in subordinate clauses.",
+    "avoidWhen_id": "Jangan dipakai dengan kata kerja modal dalam klausa subordinat.",
+    "commonMistakes_en": [
+      "Using 'haben' instead of 'sein' with motion verbs",
+      "Wrong past participle form",
+      "Not placing past participle at end"
+    ],
+    "commonMistakes_id": [
+      "Memakai 'haben' alih-alih 'sein' dengan kata kerja gerak",
+      "Bentuk partisip lampau salah",
+      "Tidak menempatkan partisip lampau di akhir"
+    ]
+  },
+  {
+    "id": "de_praeteritum_haben_sein",
+    "language": "de",
+    "title": "Simple Past of haben and sein",
+    "pattern": "ich hatte / ich war",
+    "level": 2,
+    "examMappings": {
+      "goethe": "A2"
+    },
+    "difficulty": 2,
+    "simpleExplanation": "haben and sein have their own short simple-past forms: hatte and war.",
+    "detailedExplanation": "In spoken German, most verbs use Perfekt. But haben and sein almost always use the simple past: ich hatte (I had), ich war (I was). Full forms: ich hatte, du hattest, er hatte, wir hatten, ihr hattet, sie hatten. ich war, du warst, er war, wir waren, ihr wart, sie waren.",
+    "usage": "Ich hatte keine Zeit. | Er war müde. | Wir waren im Urlaub.",
+    "avoidWhen": "Don't say 'ich habe gehabt' in simple sentences when 'ich hatte' is more natural.",
+    "examples": [
+      {
+        "text": "Ich hatte gestern keine Zeit.",
+        "translation": "I had no time yesterday.",
+        "pronunciation": "ɪç ˈhatə ˈɡɛstɐn ˈkaɪnə tsaɪt",
+        "translation_en": "I had no time yesterday.",
+        "translation_id": "Kemarin saya tidak punya waktu."
+      },
+      {
+        "text": "Er war gestern krank.",
+        "translation": "He was sick yesterday.",
+        "pronunciation": "eːɐ vaːɐ ˈɡɛstɐn kʁaŋk",
+        "translation_en": "He was sick yesterday.",
+        "translation_id": "Kemarin dia sakit."
+      },
+      {
+        "text": "Wir waren im Urlaub in Italien.",
+        "translation": "We were on vacation in Italy.",
+        "pronunciation": "viːɐ ˈvaːʁən ɪm ˈuːɐlaʊp ɪn ʔiˈtaːliən",
+        "translation_en": "We were on vacation in Italy.",
+        "translation_id": "Kami berlibur di Italia."
+      }
+    ],
+    "commonMistakes": [
+      "Using Perfekt (habe gehabt) where hatte is natural",
+      "Mixing up war and hatte",
+      "Conjugating war like a regular verb"
+    ],
+    "relatedPoints": [
+      "de_past_perfect",
+      "de_verb_conjugation"
+    ],
+    "category": "grammar",
+    "tags": [
+      "verbs",
+      "tenses",
+      "past",
+      "A2"
+    ],
+    "title_en": "Simple Past of haben and sein",
+    "title_id": "Simple Past dari haben dan sein",
+    "simpleExplanation_en": "haben and sein have their own short simple-past forms: hatte and war.",
+    "simpleExplanation_id": "haben dan sein punya bentuk simple past pendek sendiri: hatte dan war.",
+    "detailedExplanation_en": "In spoken German, most verbs use Perfekt. But haben and sein almost always use the simple past: ich hatte (I had), ich war (I was). Full forms: ich hatte, du hattest, er hatte, wir hatten, ihr hattet, sie hatten. ich war, du warst, er war, wir waren, ihr wart, sie waren.",
+    "detailedExplanation_id": "Dalam Jerman lisan, kebanyakan kata kerja memakai Perfekt. Tapi haben dan sein hampir selalu memakai simple past: ich hatte (saya punya), ich war (saya adalah). Bentuk lengkap: ich hatte, du hattest, er hatte, wir hatten, ihr hattet, sie hatten. ich war, du warst, er war, wir waren, ihr wart, sie waren.",
+    "usage_en": "Ich hatte keine Zeit. | Er war müde. | Wir waren im Urlaub.",
+    "usage_id": "Ich hatte keine Zeit. | Er war müde. | Wir waren im Urlaub.",
+    "avoidWhen_en": "Don't say 'ich habe gehabt' in simple sentences when 'ich hatte' is more natural.",
+    "avoidWhen_id": "Jangan bilang 'ich habe gehabt' dalam kalimat sederhana saat 'ich hatte' lebih natural.",
+    "commonMistakes_en": [
+      "Using Perfekt (habe gehabt) where hatte is natural",
+      "Mixing up war and hatte",
+      "Conjugating war like a regular verb"
+    ],
+    "commonMistakes_id": [
+      "Memakai Perfekt (habe gehabt) saat hatte lebih natural",
+      "Tertukar war dan hatte",
+      "Mengonjugasi war seperti kata kerja beraturan"
+    ]
+  },
+  {
+    "id": "de_prepositions_dative",
+    "language": "de",
+    "title": "Prepositions with Dative",
+    "pattern": "aus, bei, mit, nach, seit, von, zu + Dativ",
+    "level": 2,
+    "examMappings": {
+      "goethe": "A2"
+    },
+    "difficulty": 3,
+    "simpleExplanation": "These prepositions always take dative case: aus, bei, mit, nach, seit, von, zu.",
+    "detailedExplanation": "Seven prepositions always require dative case: aus (out of), bei (at/near), mit (with), nach (after/to), seit (since), von (from/of), zu (to). Remember: 'aus bei mit nach seit von zu, immer mit dem Dativ stehst du!'",
+    "usage": "Ich fahre mit dem Auto. | Nach dem Essen gehe ich.",
+    "avoidWhen": "Don't confuse 'nach' (to countries/cities) with 'zu' (to people/places).",
+    "examples": [
+      {
+        "text": "Ich komme aus Deutschland.",
+        "translation": "I come from Germany.",
+        "translation_en": "I come from Germany.",
+        "translation_id": "Saya berasal dari Jerman."
+      },
+      {
+        "text": "Sie wohnt bei ihrer Mutter.",
+        "translation": "She lives with her mother.",
+        "translation_en": "She lives with her mother.",
+        "translation_id": "Dia tinggal bersama ibunya."
+      }
+    ],
+    "commonMistakes": [
+      "Using accusative instead of dative",
+      "Wrong preposition choice",
+      "Confusing nach/zu"
+    ],
+    "category": "grammar",
+    "tags": [
+      "prepositions",
+      "dative",
+      "A2"
+    ],
+    "title_en": "Prepositions with Dative",
+    "title_id": "Preposisi dengan Dativ",
+    "simpleExplanation_en": "These prepositions always take dative case: aus, bei, mit, nach, seit, von, zu.",
+    "simpleExplanation_id": "Preposisi ini selalu memakai dativ: aus, bei, mit, nach, seit, von, zu.",
+    "detailedExplanation_en": "Seven prepositions always require dative case: aus (out of), bei (at/near), mit (with), nach (after/to), seit (since), von (from/of), zu (to). Remember: 'aus bei mit nach seit von zu, immer mit dem Dativ stehst du!'",
+    "detailedExplanation_id": "Tujuh preposisi selalu memerlukan dativ: aus (dari), bei (di/dekat), mit (dengan), nach (setelah/ke), seit (sejak), von (dari/of), zu (ke). Ingat: 'aus bei mit nach seit von zu, immer mit dem Dativ stehst du!'",
+    "usage_en": "Ich fahre mit dem Auto. | Nach dem Essen gehe ich.",
+    "usage_id": "Ich fahre mit dem Auto. | Nach dem Essen gehe ich.",
+    "avoidWhen_en": "Don't confuse 'nach' (to countries/cities) with 'zu' (to people/places).",
+    "avoidWhen_id": "Jangan kacaukan 'nach' (ke negara/kota) dengan 'zu' (ke orang/tempat).",
+    "commonMistakes_en": [
+      "Using accusative instead of dative",
+      "Wrong preposition choice",
+      "Confusing nach/zu"
+    ],
+    "commonMistakes_id": [
+      "Memakai akkusatif alih-alih dativ",
+      "Pilihan preposisi salah",
+      "Mengacaukan nach/zu"
+    ]
+  },
+  {
+    "id": "de_prepositions_two_way",
+    "language": "de",
+    "title": "Two-Way Prepositions (in, an, auf)",
+    "pattern": "in/an/auf + accusative (motion) OR dative (location)",
+    "level": 2,
+    "examMappings": {
+      "goethe": "A2"
+    },
+    "difficulty": 3,
+    "simpleExplanation": "in, an, auf, unter, über, vor, hinter, neben, zwischen take the accusative for movement (wohin?) and dative for position (wo?).",
+    "detailedExplanation": "Ask 'wohin?' (where to?) → accusative: Ich lege das Buch auf den Tisch. Ask 'wo?' (where?) → dative: Das Buch liegt auf dem Tisch. The nine two-way prepositions are: an, auf, hinter, in, neben, über, unter, vor, zwischen.",
+    "usage": "auf den Tisch (wohin, acc.) | auf dem Tisch (wo, dat.)",
+    "avoidWhen": "Don't always use dative — motion towards a target requires accusative.",
+    "examples": [
+      {
+        "text": "Ich lege das Buch auf den Tisch.",
+        "translation": "I put the book on the table.",
+        "pronunciation": "ɪç ˈleːɡə das buːx aʊf deːn tɪʃ",
+        "translation_en": "I put the book on the table.",
+        "translation_id": "Saya meletakkan buku di atas meja."
+      },
+      {
+        "text": "Das Buch liegt auf dem Tisch.",
+        "translation": "The book is lying on the table.",
+        "pronunciation": "das buːx liːkt aʊf deːm tɪʃ",
+        "translation_en": "The book is lying on the table.",
+        "translation_id": "Bukunya terletak di atas meja."
+      },
+      {
+        "text": "Ich gehe in die Stadt.",
+        "translation": "I'm going into town.",
+        "pronunciation": "ɪç ˈɡeːə ɪn diː ʃtat",
+        "translation_en": "I'm going into town.",
+        "translation_id": "Saya pergi ke kota."
+      }
+    ],
+    "commonMistakes": [
+      "Always using dative",
+      "Always using accusative",
+      "Mixing up wo/wohin questions"
+    ],
+    "relatedPoints": [
+      "de_accusative_case",
+      "de_dative_case",
+      "de_prepositions_dative"
+    ],
+    "category": "grammar",
+    "tags": [
+      "prepositions",
+      "cases",
+      "A2"
+    ],
+    "title_en": "Two-Way Prepositions (in, an, auf)",
+    "title_id": "Preposisi Dua Arah (in, an, auf)",
+    "simpleExplanation_en": "in, an, auf, unter, über, vor, hinter, neben, zwischen take the accusative for movement (wohin?) and dative for position (wo?).",
+    "simpleExplanation_id": "in, an, auf, unter, über, vor, hinter, neben, zwischen memakai akusatif untuk gerakan (wohin?) dan datif untuk posisi (wo?).",
+    "detailedExplanation_en": "Ask 'wohin?' (where to?) → accusative: Ich lege das Buch auf den Tisch. Ask 'wo?' (where?) → dative: Das Buch liegt auf dem Tisch. The nine two-way prepositions are: an, auf, hinter, in, neben, über, unter, vor, zwischen.",
+    "detailedExplanation_id": "Tanya 'wohin?' (ke mana?) → akusatif: Ich lege das Buch auf den Tisch. Tanya 'wo?' (di mana?) → datif: Das Buch liegt auf dem Tisch. Sembilan preposisi dua arah: an, auf, hinter, in, neben, über, unter, vor, zwischen.",
+    "usage_en": "auf den Tisch (wohin, acc.) | auf dem Tisch (wo, dat.)",
+    "usage_id": "auf den Tisch (wohin, akus.) | auf dem Tisch (wo, dat.)",
+    "avoidWhen_en": "Don't always use dative — motion towards a target requires accusative.",
+    "avoidWhen_id": "Jangan selalu pakai datif — gerakan menuju target butuh akusatif.",
+    "commonMistakes_en": [
+      "Always using dative",
+      "Always using accusative",
+      "Mixing up wo/wohin questions"
+    ],
+    "commonMistakes_id": [
+      "Selalu memakai datif",
+      "Selalu memakai akusatif",
+      "Tertukar pertanyaan wo/wohin"
+    ]
+  },
+  {
+    "id": "de_reflexive_verbs",
+    "language": "de",
+    "title": "Reflexive Verbs (sich)",
+    "pattern": "ich freue mich, du freust dich, er freut sich ...",
+    "level": 2,
+    "examMappings": {
+      "goethe": "A2"
+    },
+    "difficulty": 3,
+    "simpleExplanation": "Some verbs always go with 'sich': ich freue mich (I'm happy), ich wasche mich (I wash myself).",
+    "detailedExplanation": "Reflexive verbs need the reflexive pronoun sich. In the accusative: mich (ich), dich (du), sich (er/sie/es), uns (wir), euch (ihr), sich (sie/Sie). Common ones: sich freuen, sich waschen, sich anziehen, sich setzen, sich erinnern. Many also take a dative reflexive: ich wasche mir die Hände.",
+    "usage": "Ich freue mich. | Du setzt dich. | Wir erinnern uns.",
+    "avoidWhen": "Don't drop the reflexive pronoun — Ich freue (without mich) is wrong.",
+    "examples": [
+      {
+        "text": "Ich freue mich auf das Wochenende.",
+        "translation": "I'm looking forward to the weekend.",
+        "pronunciation": "ɪç ˈfʁɔʏə mɪç aʊf das ˈvɔxn̩ˌɛndə",
+        "translation_en": "I'm looking forward to the weekend.",
+        "translation_id": "Saya menantikan akhir pekan."
+      },
+      {
+        "text": "Er zieht sich eine Jacke an.",
+        "translation": "He puts on a jacket.",
+        "pronunciation": "eːɐ tsiːt zɪç ˈaɪnə ˈjakə an",
+        "translation_en": "He puts on a jacket.",
+        "translation_id": "Dia memakai jaket."
+      },
+      {
+        "text": "Wir treffen uns am Bahnhof.",
+        "translation": "We meet at the station.",
+        "pronunciation": "viːɐ ˈtʁɛfn̩ ʊns am ˈbaːnhoːf",
+        "translation_en": "We meet at the station.",
+        "translation_id": "Kita bertemu di stasiun."
+      }
+    ],
+    "commonMistakes": [
+      "Dropping the reflexive pronoun",
+      "Using the wrong pronoun (mich vs mir)",
+      "Using reflexive verbs without sich in the dictionary form"
+    ],
+    "relatedPoints": [
+      "de_verb_conjugation",
+      "de_accusative_case"
+    ],
+    "category": "grammar",
+    "tags": [
+      "verbs",
+      "reflexive",
+      "A2"
+    ],
+    "title_en": "Reflexive Verbs (sich)",
+    "title_id": "Kata Kerja Refleksif (sich)",
+    "simpleExplanation_en": "Some verbs always go with 'sich': ich freue mich (I'm happy), ich wasche mich (I wash myself).",
+    "simpleExplanation_id": "Beberapa kata kerja selalu memakai 'sich': ich freue mich (saya senang), ich wasche mich (saya mencuci diri).",
+    "detailedExplanation_en": "Reflexive verbs need the reflexive pronoun sich. In the accusative: mich (ich), dich (du), sich (er/sie/es), uns (wir), euch (ihr), sich (sie/Sie). Common ones: sich freuen, sich waschen, sich anziehen, sich setzen, sich erinnern. Many also take a dative reflexive: ich wasche mir die Hände.",
+    "detailedExplanation_id": "Kata kerja refleksif butuh pronomina refleksif sich. Dalam akusatif: mich (ich), dich (du), sich (er/sie/es), uns (wir), euch (ihr), sich (sie/Sie). Umum: sich freuen, sich waschen, sich anziehen, sich setzen, sich erinnern. Banyak juga memakai refleksif datif: ich wasche mir die Hände.",
+    "usage_en": "Ich freue mich. | Du setzt dich. | Wir erinnern uns.",
+    "usage_id": "Ich freue mich. | Du setzt dich. | Wir erinnern uns.",
+    "avoidWhen_en": "Don't drop the reflexive pronoun — Ich freue (without mich) is wrong.",
+    "avoidWhen_id": "Jangan buang pronomina refleksif — Ich freue (tanpa mich) salah.",
+    "commonMistakes_en": [
+      "Dropping the reflexive pronoun",
+      "Using the wrong pronoun (mich vs mir)",
+      "Using reflexive verbs without sich in the dictionary form"
+    ],
+    "commonMistakes_id": [
+      "Membuang pronomina refleksif",
+      "Memakai pronomina salah (mich vs mir)",
+      "Memakai kata kerja refleksif tanpa sich dalam bentuk kamus"
+    ]
+  },
+  {
+    "id": "de_relative_clauses",
+    "language": "de",
+    "title": "Relative Clauses (Relativsätze)",
+    "pattern": "der Mann, der ... / die Frau, die ... / das Buch, das ...",
+    "level": 2,
+    "examMappings": {
+      "goethe": "A2"
+    },
+    "difficulty": 3,
+    "simpleExplanation": "Relative clauses add information with der/die/das and push the verb to the end.",
+    "detailedExplanation": "The relative pronoun matches the noun's gender and number but takes the case from its role in the clause: Der Mann, der hier wohnt (subject), Der Mann, den ich kenne (object). The verb goes to the end. der/die/das decline: nominative der/die/das, accusative den/die/das, dative dem/der/dem, genitive dessen/deren.",
+    "usage": "Der Mann, der hier wohnt, ist nett. | Das Buch, das ich lese, ist gut.",
+    "avoidWhen": "Don't confuse the relative pronoun with the definite article — den is accusative, dem is dative.",
+    "examples": [
+      {
+        "text": "Der Mann, der hier wohnt, ist nett.",
+        "translation": "The man who lives here is nice.",
+        "pronunciation": "deːɐ man deːɐ hiːɐ voːnt ɪst nɛt",
+        "translation_en": "The man who lives here is nice.",
+        "translation_id": "Laki-laki yang tinggal di sini itu ramah."
+      },
+      {
+        "text": "Das Buch, das ich lese, ist sehr gut.",
+        "translation": "The book that I'm reading is very good.",
+        "pronunciation": "das buːx das ɪç ˈleːzə ɪst zeːɐ ɡuːt",
+        "translation_en": "The book that I'm reading is very good.",
+        "translation_id": "Buku yang saya baca itu sangat bagus."
+      },
+      {
+        "text": "Kennst du die Frau, die dort steht?",
+        "translation": "Do you know the woman who is standing there?",
+        "pronunciation": "kɛnst duː diː fʁaʊ diː dɔʁt ʃteːt",
+        "translation_en": "Do you know the woman who is standing there?",
+        "translation_id": "Apakah kamu kenal perempuan yang berdiri di sana?"
+      }
+    ],
+    "commonMistakes": [
+      "Mixing up der/den/dem",
+      "Keeping the verb in position 2 instead of at the end",
+      "Forgetting the comma"
+    ],
+    "relatedPoints": [
+      "de_subordinate_clauses",
+      "de_accusative_case"
+    ],
+    "category": "grammar",
+    "tags": [
+      "clauses",
+      "relative",
+      "A2"
+    ],
+    "title_en": "Relative Clauses (Relativsätze)",
+    "title_id": "Klausa Relatif (Relativsätze)",
+    "simpleExplanation_en": "Relative clauses add information with der/die/das and push the verb to the end.",
+    "simpleExplanation_id": "Klausa relatif menambah informasi dengan der/die/das dan mendorong kata kerja ke akhir.",
+    "detailedExplanation_en": "The relative pronoun matches the noun's gender and number but takes the case from its role in the clause: Der Mann, der hier wohnt (subject), Der Mann, den ich kenne (object). The verb goes to the end. der/die/das decline: nominative der/die/das, accusative den/die/das, dative dem/der/dem, genitive dessen/deren.",
+    "detailedExplanation_id": "Pronomina relatif cocok dengan gender dan jumlah kata benda tapi mengambil kasus sesuai perannya dalam klausa: Der Mann, der hier wohnt (subjek), Der Mann, den ich kenne (objek). Kata kerja di akhir. Deklinasi der/die/das: nominatif der/die/das, akusatif den/die/das, datif dem/der/dem, genitif dessen/deren.",
+    "usage_en": "Der Mann, der hier wohnt, ist nett. | Das Buch, das ich lese, ist gut.",
+    "usage_id": "Der Mann, der hier wohnt, ist nett. | Das Buch, das ich lese, ist gut.",
+    "avoidWhen_en": "Don't confuse the relative pronoun with the definite article — den is accusative, dem is dative.",
+    "avoidWhen_id": "Jangan tertukar pronomina relatif dengan artikel pasti — den akusatif, dem datif.",
+    "commonMistakes_en": [
+      "Mixing up der/den/dem",
+      "Keeping the verb in position 2 instead of at the end",
+      "Forgetting the comma"
+    ],
+    "commonMistakes_id": [
+      "Tertukar der/den/dem",
+      "Kata kerja di posisi 2 bukan akhir",
+      "Lupa koma"
+    ]
+  },
+  {
+    "id": "de_subordinate_clauses",
+    "language": "de",
+    "title": "Subordinate Clauses (dass, weil, wenn)",
+    "pattern": "main clause + comma + dass/weil/wenn + subject + ... + verb at end",
+    "level": 2,
+    "examMappings": {
+      "goethe": "A2"
+    },
+    "difficulty": 3,
+    "simpleExplanation": "With dass (that), weil (because) and wenn (if/when), the conjugated verb moves to the END of the clause.",
+    "detailedExplanation": "A subordinate clause starts with a conjunction and pushes the conjugated verb to the last position: Ich weiß, dass er kommt. (I know that he's coming.) Ich bin müde, weil ich lange gearbeitet habe. (I'm tired because I worked long.) Wenn es regnet, bleibe ich zu Hause.",
+    "usage": "Ich weiß, dass er kommt. | Ich bleibe zu Hause, weil ich müde bin.",
+    "avoidWhen": "Don't keep the verb in second position inside the subordinate clause (dass er kommt, not dass er kommt er... ).",
+    "examples": [
+      {
+        "text": "Ich weiß, dass er morgen kommt.",
+        "translation": "I know that he is coming tomorrow.",
+        "pronunciation": "ɪç vaɪs das eːɐ ˈmɔʁɡn̩ kɔmt",
+        "translation_en": "I know that he is coming tomorrow.",
+        "translation_id": "Saya tahu bahwa dia datang besok."
+      },
+      {
+        "text": "Ich bleibe zu Hause, weil es regnet.",
+        "translation": "I stay home because it is raining.",
+        "pronunciation": "ɪç ˈblaɪbə tsuː ˈhaʊzə vaɪl ɛs ˈʁeːɡnət",
+        "translation_en": "I stay home because it is raining.",
+        "translation_id": "Saya tinggal di rumah karena hujan."
+      },
+      {
+        "text": "Wenn ich Zeit habe, koche ich.",
+        "translation": "When I have time, I cook.",
+        "pronunciation": "vɛn ɪç tsaɪt ˈhaːbə ˈkɔxə ɪç",
+        "translation_en": "When I have time, I cook.",
+        "translation_id": "Kalau saya punya waktu, saya memasak."
+      }
+    ],
+    "commonMistakes": [
+      "Keeping the verb in position 2",
+      "Forgetting the comma",
+      "Using weil instead of denn with wrong word order"
+    ],
+    "relatedPoints": [
+      "de_word_order"
+    ],
+    "category": "grammar",
+    "tags": [
+      "clauses",
+      "syntax",
+      "A2"
+    ],
+    "title_en": "Subordinate Clauses (dass, weil, wenn)",
+    "title_id": "Klausa Subordinatif (dass, weil, wenn)",
+    "simpleExplanation_en": "With dass (that), weil (because) and wenn (if/when), the conjugated verb moves to the END of the clause.",
+    "simpleExplanation_id": "Dengan dass (bahwa), weil (karena) dan wenn (jika/ketika), kata kerja berpindah ke AKHIR klausa.",
+    "detailedExplanation_en": "A subordinate clause starts with a conjunction and pushes the conjugated verb to the last position: Ich weiß, dass er kommt. (I know that he's coming.) Ich bin müde, weil ich lange gearbeitet habe. (I'm tired because I worked long.) Wenn es regnet, bleibe ich zu Hause.",
+    "detailedExplanation_id": "Klausa subordinatif dimulai dengan konjungsi dan mendorong kata kerja ke posisi terakhir: Ich weiß, dass er kommt. (Saya tahu dia datang.) Ich bin müde, weil ich lange gearbeitet habe. (Saya lelah karena bekerja lama.) Wenn es regnet, bleibe ich zu Hause.",
+    "usage_en": "Ich weiß, dass er kommt. | Ich bleibe zu Hause, weil ich müde bin.",
+    "usage_id": "Ich weiß, dass er kommt. | Ich bleibe zu Hause, weil ich müde bin.",
+    "avoidWhen_en": "Don't keep the verb in second position inside the subordinate clause.",
+    "avoidWhen_id": "Jangan biarkan kata kerja di posisi kedua dalam klausa subordinatif.",
+    "commonMistakes_en": [
+      "Keeping the verb in position 2",
+      "Forgetting the comma",
+      "Using weil instead of denn with wrong word order"
+    ],
+    "commonMistakes_id": [
+      "Kata kerja tetap di posisi 2",
+      "Lupa koma",
+      "Memakai weil alih-alih denn dengan urutan kata salah"
+    ]
+  }
+]
