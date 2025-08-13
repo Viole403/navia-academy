@@ -1,0 +1,302 @@
+[
+  {
+    "id": "r-de-a2-1-wohnung",
+    "title": "Eine neue Wohnung — A New Apartment",
+    "type": "story",
+    "level": 2,
+    "examMappings": {
+      "goethe": "A2"
+    },
+    "wordCount": 70,
+    "summary": "A young couple searches for a new apartment in the city.",
+    "paragraphs": [
+      {
+        "text": "Meine Freundin und ich suchen eine neue Wohnung.",
+        "translation": "My girlfriend and I are looking for a new apartment.",
+        "translation_en": "My girlfriend and I are looking for a new apartment.",
+        "translation_id": "Pacar saya dan saya sedang mencari apartemen baru."
+      },
+      {
+        "text": "Wir wollen im Zentrum wohnen, aber dort sind die Wohnungen sehr teuer.",
+        "translation": "We want to live downtown, but the apartments there are very expensive.",
+        "translation_en": "We want to live downtown, but the apartments there are very expensive.",
+        "translation_id": "Kami ingin tinggal di pusat kota, tapi apartemen di sana sangat mahal."
+      },
+      {
+        "text": "Am Dienstag besuchen wir eine Wohnung mit zwei Zimmern.",
+        "translation": "On Tuesday we visit an apartment with two rooms.",
+        "translation_en": "On Tuesday we visit an apartment with two rooms.",
+        "translation_id": "Hari Selasa kami mengunjungi apartemen dua kamar."
+      },
+      {
+        "text": "Die Küche ist groß und das Wohnzimmer hat viel Licht.",
+        "translation": "The kitchen is big and the living room has lots of light.",
+        "translation_en": "The kitchen is big and the living room has lots of light.",
+        "translation_id": "Dapurnya besar dan ruang tamunya banyak cahaya."
+      },
+      {
+        "text": "Aber die Miete ist zu hoch für uns. Wir suchen weiter.",
+        "translation": "But the rent is too high for us. We keep looking.",
+        "translation_en": "But the rent is too high for us. We keep looking.",
+        "translation_id": "Tapi sewanya terlalu mahal bagi kami. Kami terus mencari."
+      }
+    ],
+    "summary_en": "A young couple searches for a new apartment in the city.",
+    "summary_id": "Sepasang muda mencari apartemen baru di kota."
+  },
+  {
+    "id": "r-de-a2-2-arztbesuch",
+    "title": "Beim Arzt — At the Doctor",
+    "type": "story",
+    "level": 2,
+    "examMappings": {
+      "goethe": "A2"
+    },
+    "wordCount": 65,
+    "summary": "Markus has a headache and visits the doctor.",
+    "paragraphs": [
+      {
+        "text": "Markus hat seit drei Tagen Kopfschmerzen.",
+        "translation": "Markus has had a headache for three days.",
+        "translation_en": "Markus has had a headache for three days.",
+        "translation_id": "Markus sakit kepala sejak tiga hari lalu."
+      },
+      {
+        "text": "Am Freitagmorgen geht er zum Arzt.",
+        "translation": "On Friday morning he goes to the doctor.",
+        "translation_en": "On Friday morning he goes to the doctor.",
+        "translation_id": "Jumat pagi dia pergi ke dokter."
+      },
+      {
+        "text": "Der Arzt fragt: \"Was ist los?\"",
+        "translation": "The doctor asks: \"What's the matter?\"",
+        "translation_en": "The doctor asks: \"What's the matter?\"",
+        "translation_id": "Dokter bertanya: \"Ada apa?\""
+      },
+      {
+        "text": "Markus antwortet: \"Ich schlafe schlecht und arbeite zu viel.\"",
+        "translation": "Markus answers: \"I sleep badly and work too much.\"",
+        "translation_en": "Markus answers: \"I sleep badly and work too much.\"",
+        "translation_id": "Markus menjawab: \"Saya tidur buruk dan bekerja terlalu banyak.\""
+      },
+      {
+        "text": "Der Arzt empfiehlt eine Woche Ruhe und verschreibt Tabletten.",
+        "translation": "The doctor recommends a week of rest and prescribes tablets.",
+        "translation_en": "The doctor recommends a week of rest and prescribes tablets.",
+        "translation_id": "Dokter menyarankan istirahat seminggu dan meresepkan obat tablet."
+      },
+      {
+        "text": "Markus nimmt die Tabletten und fühlt sich am Montag besser.",
+        "translation": "Markus takes the tablets and feels better on Monday.",
+        "translation_en": "Markus takes the tablets and feels better on Monday.",
+        "translation_id": "Markus minum obat dan merasa lebih baik pada hari Senin."
+      }
+    ],
+    "summary_en": "Markus has a headache and visits the doctor.",
+    "summary_id": "Markus sakit kepala dan pergi ke dokter."
+  },
+  {
+    "id": "r-de-a2-3-tagesausflug",
+    "title": "Ein Tagesausflug nach München — A Day Trip to Munich",
+    "type": "story",
+    "level": 2,
+    "examMappings": {
+      "goethe": "A2"
+    },
+    "wordCount": 80,
+    "summary": "A day trip to Munich by train.",
+    "paragraphs": [
+      {
+        "text": "Letzten Samstag machen wir einen Tagesausflug nach München.",
+        "translation": "Last Saturday we take a day trip to Munich.",
+        "translation_en": "Last Saturday we take a day trip to Munich.",
+        "translation_id": "Sabtu lalu kami bertamasya sehari ke München."
+      },
+      {
+        "text": "Wir kaufen zwei Tickets am Bahnhof und steigen in den Zug.",
+        "translation": "We buy two tickets at the station and get on the train.",
+        "translation_en": "We buy two tickets at the station and get on the train.",
+        "translation_id": "Kami membeli dua tiket di stasiun dan naik kereta."
+      },
+      {
+        "text": "Die Fahrt dauert ungefähr eine Stunde.",
+        "translation": "The trip takes about one hour.",
+        "translation_en": "The trip takes about one hour.",
+        "translation_id": "Perjalanannya sekitar satu jam."
+      },
+      {
+        "text": "In München besuchen wir zuerst das Zentrum und die Kirche.",
+        "translation": "In Munich we first visit the center and the church.",
+        "translation_en": "In Munich we first visit the center and the church.",
+        "translation_id": "Di München kami mengunjungi pusat kota dan gereja."
+      },
+      {
+        "text": "Dann essen wir in einem Restaurant und trinken ein Bier.",
+        "translation": "Then we eat at a restaurant and drink a beer.",
+        "translation_en": "Then we eat at a restaurant and drink a beer.",
+        "translation_id": "Lalu kami makan di restoran dan minum bir."
+      },
+      {
+        "text": "Am Abend fahren wir wieder nach Hause. Wir sind müde, aber glücklich.",
+        "translation": "In the evening we travel home again. We are tired but happy.",
+        "translation_en": "In the evening we travel home again. We are tired but happy.",
+        "translation_id": "Malamnya kami pulang. Kami lelah tapi bahagia."
+      }
+    ],
+    "summary_en": "A day trip to Munich by train.",
+    "summary_id": "Tamasya sehari ke München naik kereta."
+  },
+  {
+    "id": "r-de-a2-4-geburtstag",
+    "title": "Der Geburtstag — The Birthday",
+    "type": "story",
+    "level": 2,
+    "examMappings": {
+      "goethe": "A2"
+    },
+    "wordCount": 70,
+    "summary": "Anna prepares a surprise birthday party for her friend.",
+    "paragraphs": [
+      {
+        "text": "Am Freitag hat meine beste Freundin Anna Geburtstag.",
+        "translation": "My best friend Anna has her birthday on Friday.",
+        "translation_en": "My best friend Anna has her birthday on Friday.",
+        "translation_id": "Teman baik saya Anna berulang tahun hari Jumat."
+      },
+      {
+        "text": "Ich möchte eine Überraschungsparty organisieren.",
+        "translation": "I want to organize a surprise party.",
+        "translation_en": "I want to organize a surprise party.",
+        "translation_id": "Saya ingin mengadakan pesta kejutan."
+      },
+      {
+        "text": "Ich lade zehn Freunde ein und kaufe einen Kuchen.",
+        "translation": "I invite ten friends and buy a cake.",
+        "translation_en": "I invite ten friends and buy a cake.",
+        "translation_id": "Saya mengundang sepuluh teman dan membeli kue."
+      },
+      {
+        "text": "Wir dekorieren das Wohnzimmer mit Luftballons.",
+        "translation": "We decorate the living room with balloons.",
+        "translation_en": "We decorate the living room with balloons.",
+        "translation_id": "Kami mendekorasi ruang tamu dengan balon."
+      },
+      {
+        "text": "Um acht Uhr kommt Anna. Alle rufen: \"Überraschung!\"",
+        "translation": "At eight o'clock Anna arrives. Everyone shouts: \"Surprise!\"",
+        "translation_en": "At eight o'clock Anna arrives. Everyone shouts: \"Surprise!\"",
+        "translation_id": "Jam delapan Anna datang. Semua berteriak: \"Kejutan!\""
+      },
+      {
+        "text": "Anna freut sich sehr und sagt: \"Das ist das beste Geschenk!\"",
+        "translation": "Anna is very happy and says: \"This is the best gift!\"",
+        "translation_en": "Anna is very happy and says: \"This is the best gift!\"",
+        "translation_id": "Anna sangat senang dan berkata: \"Ini hadiah terbaik!\""
+      }
+    ],
+    "summary_en": "Anna prepares a surprise birthday party for her friend.",
+    "summary_id": "Anna menyiapkan pesta kejutan untuk temannya."
+  },
+  {
+    "id": "r-de-a2-5-wochenende",
+    "title": "Mein Wochenende — My Weekend",
+    "type": "story",
+    "level": 2,
+    "examMappings": {
+      "goethe": "A2"
+    },
+    "wordCount": 70,
+    "summary": "A relaxed weekend at home and in the park.",
+    "paragraphs": [
+      {
+        "text": "Am Samstag schlafe ich lange und frühstücke gemütlich.",
+        "translation": "On Saturday I sleep late and have a relaxed breakfast.",
+        "translation_en": "On Saturday I sleep late and have a relaxed breakfast.",
+        "translation_id": "Hari Sabtu saya tidur lama dan sarapan santai."
+      },
+      {
+        "text": "Danach gehe ich mit meinem Hund in den Park.",
+        "translation": "Afterwards I go to the park with my dog.",
+        "translation_en": "Afterwards I go to the park with my dog.",
+        "translation_id": "Setelah itu saya pergi ke taman bersama anjing saya."
+      },
+      {
+        "text": "Im Park treffe ich einen alten Freund.",
+        "translation": "In the park I meet an old friend.",
+        "translation_en": "In the park I meet an old friend.",
+        "translation_id": "Di taman saya bertemu teman lama."
+      },
+      {
+        "text": "Wir setzen uns auf eine Bank und sprechen über unsere Arbeit.",
+        "translation": "We sit on a bench and talk about our work.",
+        "translation_en": "We sit on a bench and talk about our work.",
+        "translation_id": "Kami duduk di bangku dan berbicara tentang pekerjaan kami."
+      },
+      {
+        "text": "Am Abend koche ich Spaghetti und schaue einen Film.",
+        "translation": "In the evening I cook spaghetti and watch a movie.",
+        "translation_en": "In the evening I cook spaghetti and watch a movie.",
+        "translation_id": "Malamnya saya memasak spageti dan menonton film."
+      },
+      {
+        "text": "Am Sonntag mache ich Hausarbeit und lese ein Buch. Ein schönes Wochenende!",
+        "translation": "On Sunday I do housework and read a book. A nice weekend!",
+        "translation_en": "On Sunday I do housework and read a book. A nice weekend!",
+        "translation_id": "Hari Minggu saya mengerjakan pekerjaan rumah dan membaca buku. Akhir pekan yang menyenangkan!"
+      }
+    ],
+    "summary_en": "A relaxed weekend at home and in the park.",
+    "summary_id": "Akhir pekan santai di rumah dan di taman."
+  },
+  {
+    "id": "r-de-a2-6-sommer",
+    "title": "Der Sommer — Summer",
+    "type": "story",
+    "level": 2,
+    "examMappings": {
+      "goethe": "A2"
+    },
+    "wordCount": 65,
+    "summary": "Why the author likes summer.",
+    "paragraphs": [
+      {
+        "text": "Der Sommer ist meine Lieblingsjahreszeit.",
+        "translation": "Summer is my favorite season.",
+        "translation_en": "Summer is my favorite season.",
+        "translation_id": "Musim panas adalah musim favorit saya."
+      },
+      {
+        "text": "Im Sommer scheint die Sonne und es ist warm.",
+        "translation": "In summer the sun shines and it is warm.",
+        "translation_en": "In summer the sun shines and it is warm.",
+        "translation_id": "Di musim panas matahari bersinar dan udaranya hangat."
+      },
+      {
+        "text": "Nach der Arbeit fahre ich oft zum See.",
+        "translation": "After work I often drive to the lake.",
+        "translation_en": "After work I often drive to the lake.",
+        "translation_id": "Setelah bekerja saya sering pergi ke danau."
+      },
+      {
+        "text": "Dort schwimme ich und lese in der Sonne.",
+        "translation": "There I swim and read in the sun.",
+        "translation_en": "There I swim and read in the sun.",
+        "translation_id": "Di sana saya berenang dan membaca di bawah sinar matahari."
+      },
+      {
+        "text": "Am Abend essen wir draußen im Garten.",
+        "translation": "In the evening we eat outside in the garden.",
+        "translation_en": "In the evening we eat outside in the garden.",
+        "translation_id": "Malamnya kami makan di luar di taman."
+      },
+      {
+        "text": "Im Juli machen wir Urlaub in Österreich.",
+        "translation": "In July we take a vacation in Austria.",
+        "translation_en": "In July we take a vacation in Austria.",
+        "translation_id": "Di bulan Juli kami berlibur ke Austria."
+      }
+    ],
+    "summary_en": "Why the author likes summer.",
+    "summary_id": "Mengapa penulis menyukai musim panas."
+  }
+]
