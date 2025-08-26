@@ -1,0 +1,120 @@
+name: Mobile — EAS Build
+
+# Two triggers:
+#   1. workflow_dispatch  — manual; choose platform + profile
+#   2. push to "v*" tags  — automatic production build (no auto-submit; review first)
+# PRs and main-pushes never trigger a cloud build (EAS minutes are billed).
+
+on:
+  workflow_dispatch:
+    inputs:
+      platform:
+        description: "Build target"
+        type: choice
+        required: true
+        default: android
+        options:
+          - android
+          - ios
+          - all
+      profile:
+        description: "EAS build profile"
+        type: choice
+        required: true
+        default: preview
+        options:
+          - development
+          - preview
+          - production
+      auto_submit:
+        description: "Auto-submit to store (production profile only)"
+        type: boolean
+        required: false
+        default: false
+  push:
+    tags:
+      - "v*"
+
+concurrency:
+  group: eas-build-${{ github.ref }}
+  cancel-in-progress: false
+
+env:
+  EXPO_TOKEN: ${{ secrets.EXPO_TOKEN }}
+  # These gate-keep the actual values baked into `eas.json` profiles
+  MOBILE_API_URL_PREVIEW: ${{ vars.MOBILE_API_URL_PREVIEW }}
+  MOBILE_MEDIA_BASE_URL_PREVIEW: ${{ vars.MOBILE_MEDIA_BASE_URL_PREVIEW }}
+  MOBILE_API_URL_PRODUCTION: ${{ vars.MOBILE_API_URL_PRODUCTION }}
+  MOBILE_MEDIA_BASE_URL_PRODUCTION: ${{ vars.MOBILE_MEDIA_BASE_URL_PRODUCTION }}
+
+jobs:
+  build:
+    name: EAS ${{ inputs.platform || 'all' }} (${{ inputs.profile || 'production' }})
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: apps/mobile
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+          cache-dependency-path: pnpm-lock.yaml
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Setup Expo & EAS
+        uses: expo/expo-github-action@v8
+        with:
+          eas-version: latest
+          expo-version: latest
+          token: ${{ secrets.EXPO_TOKEN }}
+
+      - name: Determine build args
+        id: args
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            PLATFORM="${{ inputs.platform }}"
+            PROFILE="${{ inputs.profile }}"
+            SUBMIT=""
+            if [ "${{ inputs.auto_submit }}" = "true" ] && [ "$PROFILE" = "production" ]; then
+              SUBMIT="--auto-submit"
+            fi
+          else
+            # Tag push → production both platforms; still no auto-submit
+            PLATFORM="all"
+            PROFILE="production"
+            SUBMIT=""
+          fi
+          echo "platform=$PLATFORM" >> $GITHUB_OUTPUT
+          echo "profile=$PROFILE" >> $GITHUB_OUTPUT
+          echo "submit=$SUBMIT" >> $GITHUB_OUTPUT
+
+      - name: Warn on placeholder URLs
+        run: |
+          case "$PROFILE" in
+            preview)
+              URL="${MOBILE_API_URL_PREVIEW:-https://api-staging.navia.example.com/api/v1}" ;;
+            production)
+              URL="${MOBILE_API_URL_PRODUCTION:-https://api.navia.example.com/api/v1}" ;;
+            *)
+              exit 0 ;;
+          esac
+          if [[ "$URL" == *"example.com"* ]]; then
+            echo "::warning::${PROFILE} build is using placeholder URLs. Set repo variables MOBILE_* before building for real."
+          fi
+        env:
+          PROFILE: ${{ steps.args.outputs.profile }}
+
+      - name: EAS Build
+        run: |
+          npx eas-cli@latest build \
+            --platform "${{ steps.args.outputs.platform }}" \
+            --profile "${{ steps.args.outputs.profile }}" \
+            ${{ steps.args.outputs.submit }} \
+            --non-interactive --no-wait
