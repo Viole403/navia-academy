@@ -1,0 +1,126 @@
+[
+  {
+    "id": "a-b1-de-midterm",
+    "title": "B1 Check · Deutsch",
+    "description": "Five questions to check German B1 fundamentals: Konjunktiv II, passive voice, word order, and vocabulary.",
+    "kind": "quick",
+    "level": 3,
+    "examMappings": {
+      "goethe": "B1"
+    },
+    "durationMin": 5,
+    "passScore": 60,
+    "exercises": [
+      {
+        "id": "ab1m1",
+        "type": "multiple-choice",
+        "prompt": "Wähle die richtige Form: Wenn ich mehr Zeit ___, würde ich reisen.",
+        "options": [
+          {
+            "id": "o0",
+            "label": "habe"
+          },
+          {
+            "id": "o1",
+            "label": "hätte"
+          },
+          {
+            "id": "o2",
+            "label": "hat"
+          }
+        ],
+        "correct": "o1",
+        "skill": "grammar",
+        "level": 3
+      },
+      {
+        "id": "ab1m2",
+        "type": "multiple-choice",
+        "prompt": "Wie bildet man das Passiv? Das Auto ___ repariert.",
+        "options": [
+          {
+            "id": "o0",
+            "label": "wird"
+          },
+          {
+            "id": "o1",
+            "label": "hat"
+          },
+          {
+            "id": "o2",
+            "label": "ist gewesen"
+          }
+        ],
+        "correct": "o0",
+        "skill": "grammar",
+        "level": 3
+      },
+      {
+        "id": "ab1m3",
+        "type": "multiple-choice",
+        "prompt": "Was bedeutet „trotzdem\"?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "nevertheless"
+          },
+          {
+            "id": "o1",
+            "label": "because"
+          },
+          {
+            "id": "o2",
+            "label": "therefore"
+          }
+        ],
+        "correct": "o0",
+        "skill": "vocabulary",
+        "level": 3
+      },
+      {
+        "id": "ab1m4",
+        "type": "multiple-choice",
+        "prompt": "Welcher Satz ist korrekt?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "Obwohl es regnete, gingen wir spazieren."
+          },
+          {
+            "id": "o1",
+            "label": "Obwohl es regnete, wir gingen spazieren."
+          },
+          {
+            "id": "o2",
+            "label": "Obwohl gingen wir spazieren."
+          }
+        ],
+        "correct": "o0",
+        "skill": "grammar",
+        "level": 3
+      },
+      {
+        "id": "ab1m5",
+        "type": "multiple-choice",
+        "prompt": "Welche Bedeutung hat „die Rechnung\"?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "the bill"
+          },
+          {
+            "id": "o1",
+            "label": "the letter"
+          },
+          {
+            "id": "o2",
+            "label": "the recipe"
+          }
+        ],
+        "correct": "o0",
+        "skill": "vocabulary",
+        "level": 3
+      }
+    ]
+  }
+]
