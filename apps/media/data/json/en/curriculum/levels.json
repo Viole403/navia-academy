@@ -1,0 +1,81 @@
+[
+  {
+    "id": "en-a1",
+    "courseId": "english-course",
+    "title": "A1 — Beginner",
+    "subtitle": "Elementary",
+    "order": 1,
+    "examType": "toefl",
+    "unitIds": [
+      "en-a1-u1",
+      "en-a1-u2",
+      "en-a1-u3",
+      "en-a1-u4"
+    ],
+    "subtitle_en": "Elementary",
+    "subtitle_id": "Elementer"
+  },
+  {
+    "id": "en-a2",
+    "courseId": "english-course",
+    "title": "A2 — Elementary",
+    "subtitle": "Pre-Intermediate",
+    "order": 2,
+    "examType": "toefl",
+    "unitIds": [
+      "en-a2-u1",
+      "en-a2-u2"
+    ],
+    "subtitle_en": "Pre-Intermediate",
+    "subtitle_id": "Pra-Menengah"
+  },
+  {
+    "id": "en-b1",
+    "courseId": "english-course",
+    "title": "B1 — Intermediate",
+    "subtitle": "Intermediate",
+    "order": 3,
+    "examType": "toefl",
+    "unitIds": [
+      "en-b1-u1",
+      "en-b1-u2"
+    ],
+    "subtitle_en": "Intermediate",
+    "subtitle_id": "Menengah"
+  },
+  {
+    "id": "en-b2",
+    "courseId": "english-course",
+    "title": "B2 — Upper Intermediate",
+    "subtitle": "Upper Intermediate",
+    "order": 4,
+    "examType": "toefl",
+    "unitIds": [
+      "en-b2-u1"
+    ],
+    "subtitle_en": "Upper Intermediate",
+    "subtitle_id": "Menengah Atas"
+  },
+  {
+    "id": "en-c1",
+    "courseId": "english-course",
+    "title": "C1 — Advanced",
+    "subtitle": "Advanced",
+    "order": 5,
+    "examType": "toefl",
+    "unitIds": [],
+    "subtitle_en": "Advanced",
+    "subtitle_id": "Lanjut"
+  },
+  {
+    "id": "en-c2",
+    "courseId": "english-course",
+    "title": "C2 — Mastery",
+    "subtitle": "Proficiency",
+    "order": 6,
+    "examType": "toefl",
+    "unitIds": [],
+    "subtitle_en": "Proficiency",
+    "subtitle_id": "Mahir"
+  }
+]
