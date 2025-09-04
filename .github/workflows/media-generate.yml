@@ -1,0 +1,116 @@
+name: media-generate
+
+on:
+  workflow_dispatch:
+    inputs:
+      scope:
+        description: "Generate (audio | images | manifest | all)"
+        required: true
+        default: "all"
+      upload:
+        description: "Upload hasil ke storage (yes/no)"
+        required: true
+        default: "yes"
+      engine:
+        description: "TTS engine override (edge/google/azure)"
+        required: false
+        default: ""
+
+# Constant group: dispatches from ANY ref/trigger source (UI, dashboard
+# route, gh CLI) serialize against each other — never two generation runs
+# overlapping, regardless of origin.
+concurrency:
+  group: media-generate
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    # Audio backfill @ MEDIA_TTS_CONCURRENCY=20 ≈ 3h; slow image providers up
+    # to ~4h. Headroom under the 6h GitHub job cap without being wasteful.
+    timeout-minutes: 330
+    env:
+      MEDIA_STORAGE_PROVIDER: ${{ secrets.MEDIA_STORAGE_PROVIDER || 'r2' }}
+      MEDIA_STORAGE_BUCKET: ${{ secrets.MEDIA_STORAGE_BUCKET }}
+      MEDIA_STORAGE_REGION: ${{ secrets.MEDIA_STORAGE_REGION || 'auto' }}
+      MEDIA_STORAGE_ENDPOINT: ${{ secrets.MEDIA_STORAGE_ENDPOINT }}
+      MEDIA_STORAGE_ACCESS_KEY: ${{ secrets.MEDIA_STORAGE_ACCESS_KEY }}
+      MEDIA_STORAGE_SECRET_KEY: ${{ secrets.MEDIA_STORAGE_SECRET_KEY }}
+      MEDIA_STORAGE_PUBLIC_URL: ${{ secrets.MEDIA_STORAGE_PUBLIC_URL }}
+      # CI default of 5 pushes a full audio backfill (~146k synthesis tasks)
+      # past the 6h job limit; 20 brings it to ~3h. VALIDATE edge-tts
+      # tolerance at this parallelism on one language before a full run —
+      # it has not been exercised at 20 in CI yet.
+      MEDIA_TTS_CONCURRENCY: "20"
+      MEDIA_TTS_ENGINE: ${{ inputs.engine || secrets.MEDIA_TTS_ENGINE }}
+      GOOGLE_TTS_API_KEY: ${{ secrets.GOOGLE_TTS_API_KEY }}
+      AZURE_SPEECH_KEY: ${{ secrets.AZURE_SPEECH_KEY }}
+      AZURE_SPEECH_REGION: ${{ secrets.AZURE_SPEECH_REGION || 'eastasia' }}
+      MEDIA_IMAGE_PROVIDER: ${{ secrets.MEDIA_IMAGE_PROVIDER }}
+      MEDIA_IMAGE_API_KEY: ${{ secrets.MEDIA_IMAGE_API_KEY }}
+      MEDIA_IMAGE_API_BASE_URL: ${{ secrets.MEDIA_IMAGE_API_BASE_URL || 'https://api.openai.com/v1' }}
+      MEDIA_IMAGE_MODEL: ${{ secrets.MEDIA_IMAGE_MODEL || 'gpt-image-1' }}
+      MEDIA_IMAGE_CF_ACCOUNT_ID: ${{ secrets.MEDIA_IMAGE_CF_ACCOUNT_ID }}
+      MEDIA_IMAGE_CF_API_TOKEN: ${{ secrets.MEDIA_IMAGE_CF_API_TOKEN }}
+      MEDIA_IMAGE_CF_MODEL: ${{ secrets.MEDIA_IMAGE_CF_MODEL || '@cf/black-forest-labs/flux-1-schnell' }}
+      # Pooled provider keys + dashboard-editable pipeline settings; when set,
+      # CI uses the same image_api_keys/tts_api_keys/media_settings rows as
+      # the VPS/dashboard instead of flat env fallbacks.
+      CONTENT_SUPABASE_URL: ${{ secrets.CONTENT_SUPABASE_URL }}
+      CONTENT_SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.CONTENT_SUPABASE_SERVICE_ROLE_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 9
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile=false
+
+      - name: Restore .output/ cache (audio/image files + records)
+        uses: actions/cache@v4
+        with:
+          path: |
+            apps/media/.output/audio
+            apps/media/.output/images
+          key: media-output-${{ hashFiles('apps/media/.output/audio/.generate-records.json', 'apps/media/.output/images/.generate-image-records.json') }}
+          restore-keys: |
+            media-output-
+
+      - name: Rebuild manifest
+        if: ${{ inputs.scope == 'all' || inputs.scope == 'manifest' }}
+        run: pnpm --filter @navia/media generate-manifest
+
+      - name: Generate audio
+        if: ${{ inputs.scope == 'all' || inputs.scope == 'audio' }}
+        run: pnpm --filter @navia/media generate-audio
+
+      - name: Generate images
+        if: ${{ inputs.scope == 'all' || inputs.scope == 'images' }}
+        run: pnpm --filter @navia/media generate-images
+
+      - name: Publish bundles → R2/CDN (data JSON + audio/images manifest)
+        run: pnpm --filter @navia/media publish-data
+
+      # Persist checkpoints + manifest via git so the NEXT run (even with a
+      # cold actions/cache) starts from accurate records. apps/web reads
+      # audio from the CDN — generated mp3 files are deliberately NOT
+      # committed into the repo.
+      - name: Commit hasil ke repo
+        run: |
+          git config user.name "media-bot"
+          git config user.email "media-bot@navia.local"
+          git add \
+            apps/media/data/audio/audio-manifest.json \
+            apps/media/.output/audio/.generate-records.json \
+            apps/media/.output/images/.generate-image-records.json
+          if ! git diff --cached --quiet; then
+            git commit -m "chore(media): regenerate data + media assets"
+            git push
+          else
+            echo "Tidak ada perubahan yang perlu di-commit."
+          fi
