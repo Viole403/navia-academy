@@ -1,0 +1,356 @@
+[
+  {
+    "id": "en-a1-u1-l1",
+    "unitId": "en-a1-u1",
+    "title": "Hello and Goodbye",
+    "subtitle": "Basic Greetings",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Greet people in English",
+      "Say goodbye politely",
+      "Ask how someone is"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Basic Greetings",
+        "content": "Learn essential English greetings",
+        "vocabIds": [
+          "en_hello",
+          "en_goodbye",
+          "en_how_are_you"
+        ]
+      }
+    ],
+    "subtitle_en": "Basic Greetings",
+    "subtitle_id": "Sapaan Dasar"
+  },
+  {
+    "id": "en-a1-u1-l2",
+    "unitId": "en-a1-u1",
+    "title": "My Name Is...",
+    "subtitle": "Introductions",
+    "order": 2,
+    "durationMin": 20,
+    "xp": 60,
+    "objectives": [
+      "Introduce yourself",
+      "Ask someone's name",
+      "Spell your name"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Introduction Phrases",
+        "vocabIds": [
+          "en_my_name_is",
+          "en_whats_your_name",
+          "en_nice_to_meet_you"
+        ]
+      }
+    ],
+    "subtitle_en": "Introductions",
+    "subtitle_id": "Perkenalan"
+  },
+  {
+    "id": "en-a1-u1-l3",
+    "unitId": "en-a1-u1",
+    "title": "Where Are You From?",
+    "subtitle": "Countries and Nationalities",
+    "order": 3,
+    "durationMin": 25,
+    "xp": 70,
+    "objectives": [
+      "Say where you're from",
+      "Ask about origin",
+      "Name countries in English"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Countries",
+        "vocabIds": [
+          "en_where_from",
+          "en_country",
+          "en_america"
+        ]
+      }
+    ],
+    "subtitle_en": "Countries and Nationalities",
+    "subtitle_id": "Negara dan Kebangsaan"
+  },
+  {
+    "id": "en-a1-u2-l1",
+    "unitId": "en-a1-u2",
+    "title": "My Family",
+    "subtitle": "Family Members",
+    "order": 1,
+    "durationMin": 20,
+    "xp": 60,
+    "objectives": [
+      "Name family members",
+      "Describe family relationships",
+      "Use possessive adjectives"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Family Vocabulary",
+        "vocabIds": [
+          "en_father",
+          "en_mother",
+          "en_brother",
+          "en_sister"
+        ]
+      }
+    ],
+    "subtitle_en": "Family Members",
+    "subtitle_id": "Anggota Keluarga"
+  },
+  {
+    "id": "en-a1-u2-l2",
+    "unitId": "en-a1-u2",
+    "title": "Describing People",
+    "subtitle": "Appearance and Personality",
+    "order": 2,
+    "durationMin": 25,
+    "xp": 70,
+    "objectives": [
+      "Describe physical appearance",
+      "Talk about personality",
+      "Use adjectives"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Descriptive Adjectives",
+        "vocabIds": [
+          "en_tall",
+          "en_short",
+          "en_nice",
+          "en_friendly"
+        ]
+      }
+    ],
+    "subtitle_en": "Appearance and Personality",
+    "subtitle_id": "Penampilan dan Kepribadian"
+  },
+  {
+    "id": "en-a1-u3-l1",
+    "unitId": "en-a1-u3",
+    "title": "My Daily Routine",
+    "subtitle": "Daily Activities",
+    "order": 1,
+    "durationMin": 20,
+    "xp": 60,
+    "objectives": [
+      "Describe daily activities",
+      "Tell time",
+      "Use present simple tense"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Daily Activities",
+        "vocabIds": [
+          "en_wake_up",
+          "en_eat_breakfast",
+          "en_go_to_work"
+        ]
+      }
+    ],
+    "subtitle_en": "Daily Activities",
+    "subtitle_id": "Aktivitas Harian"
+  },
+  {
+    "id": "en-a1-u3-l2",
+    "unitId": "en-a1-u3",
+    "title": "Time and Schedule",
+    "subtitle": "Telling Time",
+    "order": 2,
+    "durationMin": 25,
+    "xp": 70,
+    "objectives": [
+      "Tell time accurately",
+      "Talk about schedules",
+      "Use time expressions"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Time Expressions",
+        "vocabIds": [
+          "en_time",
+          "en_morning",
+          "en_evening"
+        ]
+      }
+    ],
+    "subtitle_en": "Telling Time",
+    "subtitle_id": "Menyebut Waktu"
+  },
+  {
+    "id": "en-a1-u4-l1",
+    "unitId": "en-a1-u4",
+    "title": "At the Restaurant",
+    "subtitle": "Ordering Food",
+    "order": 1,
+    "durationMin": 20,
+    "xp": 60,
+    "objectives": [
+      "Order food and drinks",
+      "Ask for the menu",
+      "Pay the bill"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Food and Drinks",
+        "vocabIds": [
+          "en_food",
+          "en_drink",
+          "en_menu"
+        ]
+      }
+    ],
+    "subtitle_en": "Ordering Food",
+    "subtitle_id": "Memesan Makanan"
+  },
+  {
+    "id": "en-a2-u1-l1",
+    "unitId": "en-a2-u1",
+    "title": "Planning a Trip",
+    "subtitle": "Travel Vocabulary",
+    "order": 1,
+    "durationMin": 25,
+    "xp": 80,
+    "objectives": [
+      "Book accommodation",
+      "Discuss travel plans",
+      "Use future tense"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Travel Words",
+        "vocabIds": [
+          "en_hotel",
+          "en_trip",
+          "en_book"
+        ]
+      }
+    ],
+    "subtitle_en": "Travel Vocabulary",
+    "subtitle_id": "Kosakata Perjalanan"
+  },
+  {
+    "id": "en-a2-u2-l1",
+    "unitId": "en-a2-u2",
+    "title": "Shopping",
+    "subtitle": "At the Store",
+    "order": 1,
+    "durationMin": 25,
+    "xp": 80,
+    "objectives": [
+      "Shop for items",
+      "Ask about prices",
+      "Return items"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Shopping Vocabulary",
+        "vocabIds": [
+          "en_buy",
+          "en_price",
+          "en_expensive"
+        ]
+      }
+    ],
+    "subtitle_en": "At the Store",
+    "subtitle_id": "Di Toko"
+  },
+  {
+    "id": "en-b1-u1-l1",
+    "unitId": "en-b1-u1",
+    "title": "Job Interview",
+    "subtitle": "Professional English",
+    "order": 1,
+    "durationMin": 30,
+    "xp": 100,
+    "objectives": [
+      "Discuss work experience",
+      "Express qualifications",
+      "Answer interview questions"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Career Vocabulary",
+        "vocabIds": [
+          "en_job",
+          "en_work",
+          "en_experience"
+        ]
+      }
+    ],
+    "subtitle_en": "Professional English",
+    "subtitle_id": "Bahasa Inggris Profesional"
+  },
+  {
+    "id": "en-b1-u2-l1",
+    "unitId": "en-b1-u2",
+    "title": "In the News",
+    "subtitle": "Current Events",
+    "order": 1,
+    "durationMin": 30,
+    "xp": 100,
+    "objectives": [
+      "Discuss news topics",
+      "Express opinions",
+      "Summarize articles"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "News Vocabulary",
+        "vocabIds": [
+          "en_news",
+          "en_report",
+          "en_happen"
+        ]
+      }
+    ],
+    "subtitle_en": "Current Events",
+    "subtitle_id": "Peristiwa Terkini"
+  },
+  {
+    "id": "en-b2-u1-l1",
+    "unitId": "en-b2-u1",
+    "title": "Academic Writing",
+    "subtitle": "Essays and Reports",
+    "order": 1,
+    "durationMin": 35,
+    "xp": 120,
+    "objectives": [
+      "Write academic essays",
+      "Use formal language",
+      "Structure arguments"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Academic Vocabulary",
+        "vocabIds": [
+          "en_research",
+          "en_analyze",
+          "en_conclude"
+        ]
+      }
+    ],
+    "subtitle_en": "Essays and Reports",
+    "subtitle_id": "Esai dan Laporan"
+  }
+]

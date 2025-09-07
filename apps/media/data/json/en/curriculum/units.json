@@ -1,0 +1,141 @@
+[
+  {
+    "id": "en-a1-u1",
+    "levelId": "en-a1",
+    "title": "Greetings and Introductions",
+    "subtitle": "Hello and Nice to Meet You",
+    "order": 1,
+    "description": "Learn basic greetings and how to introduce yourself in English.",
+    "lessonIds": [
+      "en-a1-u1-l1",
+      "en-a1-u1-l2",
+      "en-a1-u1-l3"
+    ],
+    "subtitle_en": "Hello and Nice to Meet You",
+    "subtitle_id": "Halo dan Senang Bertemu Anda",
+    "description_en": "Learn basic greetings and how to introduce yourself in English.",
+    "description_id": "Belajar sapaan dasar dan cara memperkenalkan diri dalam bahasa Inggris."
+  },
+  {
+    "id": "en-a1-u2",
+    "levelId": "en-a1",
+    "title": "Family and Friends",
+    "subtitle": "My Family",
+    "order": 2,
+    "description": "Talk about your family members and describe people.",
+    "lessonIds": [
+      "en-a1-u2-l1",
+      "en-a1-u2-l2"
+    ],
+    "subtitle_en": "My Family",
+    "subtitle_id": "Keluargaku",
+    "description_en": "Talk about your family members and describe people.",
+    "description_id": "Bicara tentang anggota keluarga dan mendeskripsikan orang."
+  },
+  {
+    "id": "en-a1-u3",
+    "levelId": "en-a1",
+    "title": "Daily Routines",
+    "subtitle": "My Day",
+    "order": 3,
+    "description": "Describe your daily activities and routines.",
+    "lessonIds": [
+      "en-a1-u3-l1",
+      "en-a1-u3-l2"
+    ],
+    "subtitle_en": "My Day",
+    "subtitle_id": "Hariku",
+    "description_en": "Describe your daily activities and routines.",
+    "description_id": "Mendeskripsikan aktivitas dan rutinitas harianmu."
+  },
+  {
+    "id": "en-a1-u4",
+    "levelId": "en-a1",
+    "title": "Food and Restaurants",
+    "subtitle": "What Would You Like?",
+    "order": 4,
+    "description": "Order food and talk about meals.",
+    "lessonIds": [
+      "en-a1-u4-l1"
+    ],
+    "subtitle_en": "What Would You Like?",
+    "subtitle_id": "Mau Pesan Apa?",
+    "description_en": "Order food and talk about meals.",
+    "description_id": "Memesan makanan dan bicara tentang hidangan."
+  },
+  {
+    "id": "en-a2-u1",
+    "levelId": "en-a2",
+    "title": "Travel and Places",
+    "subtitle": "Going Places",
+    "order": 1,
+    "description": "Navigate travel situations and describe places.",
+    "lessonIds": [
+      "en-a2-u1-l1"
+    ],
+    "subtitle_en": "Going Places",
+    "subtitle_id": "Pergi ke Tempat",
+    "description_en": "Navigate travel situations and describe places.",
+    "description_id": "Hadapi situasi perjalanan dan deskripsikan tempat."
+  },
+  {
+    "id": "en-a2-u2",
+    "levelId": "en-a2",
+    "title": "Shopping and Money",
+    "subtitle": "At the Store",
+    "order": 2,
+    "description": "Shop and handle transactions.",
+    "lessonIds": [
+      "en-a2-u2-l1"
+    ],
+    "subtitle_en": "At the Store",
+    "subtitle_id": "Di Toko",
+    "description_en": "Shop and handle transactions.",
+    "description_id": "Berbelanja dan menangani transaksi."
+  },
+  {
+    "id": "en-b1-u1",
+    "levelId": "en-b1",
+    "title": "Work and Career",
+    "subtitle": "Professional Life",
+    "order": 1,
+    "description": "Discuss work and career topics.",
+    "lessonIds": [
+      "en-b1-u1-l1"
+    ],
+    "subtitle_en": "Professional Life",
+    "subtitle_id": "Kehidupan Profesional",
+    "description_en": "Discuss work and career topics.",
+    "description_id": "Membahas topik pekerjaan dan karier."
+  },
+  {
+    "id": "en-b1-u2",
+    "levelId": "en-b1",
+    "title": "News and Current Events",
+    "subtitle": "What's Happening?",
+    "order": 2,
+    "description": "Discuss news and express opinions.",
+    "lessonIds": [
+      "en-b1-u2-l1"
+    ],
+    "subtitle_en": "What's Happening?",
+    "subtitle_id": "Apa yang Terjadi?",
+    "description_en": "Discuss news and express opinions.",
+    "description_id": "Membahas berita dan mengungkapkan pendapat."
+  },
+  {
+    "id": "en-b2-u1",
+    "levelId": "en-b2",
+    "title": "Academic English",
+    "subtitle": "Study and Research",
+    "order": 1,
+    "description": "Master academic language and writing.",
+    "lessonIds": [
+      "en-b2-u1-l1"
+    ],
+    "subtitle_en": "Study and Research",
+    "subtitle_id": "Belajar dan Riset",
+    "description_en": "Master academic language and writing.",
+    "description_id": "Menguasai bahasa akademik dan menulis."
+  }
+]
