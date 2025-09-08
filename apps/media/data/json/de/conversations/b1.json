@@ -1,0 +1,530 @@
+[
+  {
+    "id": "de-conv-017",
+    "language": "de",
+    "title": "Das Vorstellungsgespräch (The Job Interview)",
+    "level": 3,
+    "difficulty": 3,
+    "examMappings": {
+      "goethe": "B1"
+    },
+    "scenario": "interview",
+    "speakers": [
+      {
+        "id": "interviewer",
+        "name": "Herr Weber",
+        "role": "Interviewer"
+      },
+      {
+        "id": "candidate",
+        "name": "Frau Schneider",
+        "role": "Candidate"
+      }
+    ],
+    "dialogue": [
+      {
+        "speaker": "interviewer",
+        "text": "Guten Tag, Frau Schneider. Schön, dass Sie gekommen sind.",
+        "romanization": null,
+        "translation": "Good day, Ms Schneider. Nice that you came.",
+        "audio": "de_conv017_01.mp3",
+        "translation_en": "Good day, Ms Schneider. Nice that you came.",
+        "translation_id": "Selamat siang, Ibu Schneider. Senang Anda datang."
+      },
+      {
+        "speaker": "candidate",
+        "text": "Guten Tag, Herr Weber. Vielen Dank für die Einladung.",
+        "romanization": null,
+        "translation": "Good day, Mr Weber. Thank you for the invitation.",
+        "audio": "de_conv017_02.mp3",
+        "translation_en": "Good day, Mr Weber. Thank you for the invitation.",
+        "translation_id": "Selamat siang, Tuan Weber. Terima kasih atas undangannya."
+      },
+      {
+        "speaker": "interviewer",
+        "text": "Könnten Sie mir etwas über Ihre Berufserfahrung erzählen?",
+        "romanization": null,
+        "translation": "Could you tell me something about your work experience?",
+        "audio": "de_conv017_03.mp3",
+        "translation_en": "Could you tell me something about your work experience?",
+        "translation_id": "Bisakah Anda menceritakan sedikit tentang pengalaman kerja Anda?"
+      },
+      {
+        "speaker": "candidate",
+        "text": "Gerne. Ich habe fünf Jahre im Vertrieb gearbeitet und zwei Jahre ein kleines Team geleitet.",
+        "romanization": null,
+        "translation": "Gladly. I worked in sales for five years and led a small team for two years.",
+        "audio": "de_conv017_04.mp3",
+        "translation_en": "Gladly. I worked in sales for five years and led a small team for two years.",
+        "translation_id": "Dengan senang hati. Saya bekerja lima tahun di bidang penjualan dan dua tahun memimpin tim kecil."
+      },
+      {
+        "speaker": "interviewer",
+        "text": "Warum möchten Sie zu uns wechseln?",
+        "romanization": null,
+        "translation": "Why would you like to switch to us?",
+        "audio": "de_conv017_05.mp3",
+        "translation_en": "Why would you like to switch to us?",
+        "translation_id": "Mengapa Anda ingin pindah ke kami?"
+      },
+      {
+        "speaker": "candidate",
+        "text": "Ihr Unternehmen ist für Innovation bekannt, und ich würde gern an spannenden Projekten mitarbeiten.",
+        "romanization": null,
+        "translation": "Your company is known for innovation, and I would like to work on exciting projects.",
+        "audio": "de_conv017_06.mp3",
+        "translation_en": "Your company is known for innovation, and I would like to work on exciting projects.",
+        "translation_id": "Perusahaan Anda dikenal inovatif, dan saya ingin ikut mengerjakan proyek-proyek menarik."
+      },
+      {
+        "speaker": "interviewer",
+        "text": "Das klingt gut. Wir melden uns nächste Woche bei Ihnen.",
+        "romanization": null,
+        "translation": "That sounds good. We will get back to you next week.",
+        "audio": "de_conv017_07.mp3",
+        "translation_en": "That sounds good. We will get back to you next week.",
+        "translation_id": "Kedengarannya bagus. Kami akan menghubungi Anda minggu depan."
+      }
+    ]
+  },
+  {
+    "id": "de-conv-018",
+    "language": "de",
+    "title": "Beim Arzt (At the Doctor)",
+    "level": 3,
+    "difficulty": 3,
+    "examMappings": {
+      "goethe": "B1"
+    },
+    "scenario": "doctor",
+    "speakers": [
+      {
+        "id": "arzt",
+        "name": "Dr. Klein",
+        "role": "Doctor"
+      },
+      {
+        "id": "patient",
+        "name": "Herr Berg",
+        "role": "Patient"
+      }
+    ],
+    "dialogue": [
+      {
+        "speaker": "arzt",
+        "text": "Guten Tag, Herr Berg. Was kann ich für Sie tun?",
+        "romanization": null,
+        "translation": "Good day, Mr Berg. What can I do for you?",
+        "audio": "de_conv018_01.mp3",
+        "translation_en": "Good day, Mr Berg. What can I do for you?",
+        "translation_id": "Selamat siang, Tuan Berg. Ada yang bisa saya bantu?"
+      },
+      {
+        "speaker": "patient",
+        "text": "Ich fühle mich seit einer Woche müde und habe Kopfschmerzen.",
+        "romanization": null,
+        "translation": "I have felt tired for a week and have headaches.",
+        "audio": "de_conv018_02.mp3",
+        "translation_en": "I have felt tired for a week and have headaches.",
+        "translation_id": "Sudah seminggu saya merasa lelah dan sakit kepala."
+      },
+      {
+        "speaker": "arzt",
+        "text": "Haben Sie auch Fieber oder Husten?",
+        "romanization": null,
+        "translation": "Do you also have a fever or a cough?",
+        "audio": "de_conv018_03.mp3",
+        "translation_en": "Do you also have a fever or a cough?",
+        "translation_id": "Apakah Anda juga demam atau batuk?"
+      },
+      {
+        "speaker": "patient",
+        "text": "Nein, nur die ständige Müdigkeit. Ich schlafe gut, aber ich bin trotzdem müde.",
+        "romanization": null,
+        "translation": "No, just the constant tiredness. I sleep well, but I am still tired.",
+        "audio": "de_conv018_04.mp3",
+        "translation_en": "No, just the constant tiredness. I sleep well, but I am still tired.",
+        "translation_id": "Tidak, hanya kelelahan terus-menerus. Tidur saya nyenyak, tapi tetap lelah."
+      },
+      {
+        "speaker": "arzt",
+        "text": "Ich möchte gern Ihr Blut untersuchen. Wir machen einen Bluttest.",
+        "romanization": null,
+        "translation": "I would like to examine your blood. We will do a blood test.",
+        "audio": "de_conv018_05.mp3",
+        "translation_en": "I would like to examine your blood. We will do a blood test.",
+        "translation_id": "Saya ingin memeriksa darah Anda. Kita akan tes darah."
+      },
+      {
+        "speaker": "patient",
+        "text": "Ist das ernst?",
+        "romanization": null,
+        "translation": "Is it serious?",
+        "audio": "de_conv018_06.mp3",
+        "translation_en": "Is it serious?",
+        "translation_id": "Apakah ini serius?"
+      },
+      {
+        "speaker": "arzt",
+        "text": "Wahrscheinlich nicht. Oft liegt es am Eisenmangel. Wir wissen es nach dem Test.",
+        "romanization": null,
+        "translation": "Probably not. It is often due to iron deficiency. We will know after the test.",
+        "audio": "de_conv018_07.mp3",
+        "translation_en": "Probably not. It is often due to iron deficiency. We will know after the test.",
+        "translation_id": "Mungkin tidak. Seringnya karena kekurangan zat besi. Kita akan tahu setelah tes."
+      }
+    ]
+  },
+  {
+    "id": "de-conv-019",
+    "language": "de",
+    "title": "Die Wohnungsbesichtigung (The Apartment Viewing)",
+    "level": 3,
+    "difficulty": 3,
+    "examMappings": {
+      "goethe": "B1"
+    },
+    "scenario": "apartment",
+    "speakers": [
+      {
+        "id": "vermieter",
+        "name": "Frau Lorenz",
+        "role": "Landlord"
+      },
+      {
+        "id": "interessent",
+        "name": "Herr Vogt",
+        "role": "Interested tenant"
+      }
+    ],
+    "dialogue": [
+      {
+        "speaker": "vermieter",
+        "text": "Guten Tag, Herr Vogt. Das ist die Wohnung im dritten Stock.",
+        "romanization": null,
+        "translation": "Good day, Mr Vogt. This is the apartment on the third floor.",
+        "audio": "de_conv019_01.mp3",
+        "translation_en": "Good day, Mr Vogt. This is the apartment on the third floor.",
+        "translation_id": "Selamat siang, Tuan Vogt. Ini apartemen di lantai tiga."
+      },
+      {
+        "speaker": "interessent",
+        "text": "Die Wohnung ist sehr hell. Wie groß ist sie?",
+        "romanization": null,
+        "translation": "The apartment is very bright. How big is it?",
+        "audio": "de_conv019_02.mp3",
+        "translation_en": "The apartment is very bright. How big is it?",
+        "translation_id": "Apartemennya sangat terang. Berapa luasnya?"
+      },
+      {
+        "speaker": "vermieter",
+        "text": "Sie hat 72 Quadratmeter mit zwei Schlafzimmern.",
+        "romanization": null,
+        "translation": "It has 72 square meters with two bedrooms.",
+        "audio": "de_conv019_03.mp3",
+        "translation_en": "It has 72 square meters with two bedrooms.",
+        "translation_id": "Luasnya 72 meter persegi dengan dua kamar tidur."
+      },
+      {
+        "speaker": "interessent",
+        "text": "Und wie hoch ist die Kaltmiete?",
+        "romanization": null,
+        "translation": "And how much is the rent excluding utilities?",
+        "audio": "de_conv019_04.mp3",
+        "translation_en": "And how much is the rent excluding utilities?",
+        "translation_id": "Dan berapa sewa tanpa utilitas?"
+      },
+      {
+        "speaker": "vermieter",
+        "text": "Die Kaltmiete beträgt 850 Euro, plus Nebenkosten 120 Euro.",
+        "romanization": null,
+        "translation": "The rent excluding utilities is 850 euros, plus 120 euros in additional costs.",
+        "audio": "de_conv019_05.mp3",
+        "translation_en": "The rent excluding utilities is 850 euros, plus 120 euros in additional costs.",
+        "translation_id": "Sewa tanpa utilitas 850 euro, plus biaya tambahan 120 euro."
+      },
+      {
+        "speaker": "interessent",
+        "text": "Das ist etwas mehr, als ich geplant hatte. Können wir verhandeln?",
+        "romanization": null,
+        "translation": "That is a bit more than I had planned. Can we negotiate?",
+        "audio": "de_conv019_06.mp3",
+        "translation_en": "That is a bit more than I had planned. Can we negotiate?",
+        "translation_id": "Itu sedikit lebih tinggi dari rencana saya. Bisakah dinegosiasi?"
+      },
+      {
+        "speaker": "vermieter",
+        "text": "Wir können uns auf 800 Euro einigen, wenn Sie langfristig bleiben.",
+        "romanization": null,
+        "translation": "We can agree on 800 euros if you stay long term.",
+        "audio": "de_conv019_07.mp3",
+        "translation_en": "We can agree on 800 euros if you stay long term.",
+        "translation_id": "Kita bisa sepakat 800 euro kalau Anda tinggal jangka panjang."
+      }
+    ]
+  },
+  {
+    "id": "de-conv-020",
+    "language": "de",
+    "title": "Im Reisebüro (At the Travel Agency)",
+    "level": 3,
+    "difficulty": 3,
+    "examMappings": {
+      "goethe": "B1"
+    },
+    "scenario": "travel",
+    "speakers": [
+      {
+        "id": "angestellte",
+        "name": "Frau Krüger",
+        "role": "Travel agent"
+      },
+      {
+        "id": "kunde",
+        "name": "Herr Albrecht",
+        "role": "Customer"
+      }
+    ],
+    "dialogue": [
+      {
+        "speaker": "kunde",
+        "text": "Guten Tag, ich möchte im Sommer nach Österreich reisen.",
+        "romanization": null,
+        "translation": "Good day, I would like to travel to Austria in the summer.",
+        "audio": "de_conv020_01.mp3",
+        "translation_en": "Good day, I would like to travel to Austria in the summer.",
+        "translation_id": "Selamat siang, saya ingin bepergian ke Austria pada musim panas."
+      },
+      {
+        "speaker": "angestellte",
+        "text": "Sehr gern. Haben Sie schon eine Vorstellung, wohin es gehen soll?",
+        "romanization": null,
+        "translation": "With pleasure. Do you already have an idea where it should go?",
+        "audio": "de_conv020_02.mp3",
+        "translation_en": "With pleasure. Do you already have an idea where it should go?",
+        "translation_id": "Dengan senang hati. Apakah Anda sudah punya gambaran mau ke mana?"
+      },
+      {
+        "speaker": "kunde",
+        "text": "Wir würden gern nach Salzburg fahren und dort eine Woche bleiben.",
+        "romanization": null,
+        "translation": "We would like to go to Salzburg and stay there for a week.",
+        "audio": "de_conv020_03.mp3",
+        "translation_en": "We would like to go to Salzburg and stay there for a week.",
+        "translation_id": "Kami ingin ke Salzburg dan tinggal di sana seminggu."
+      },
+      {
+        "speaker": "angestellte",
+        "text": "Eine gute Wahl. Soll ich ein Hotel in der Nähe des Zentrums buchen?",
+        "romanization": null,
+        "translation": "A good choice. Should I book a hotel near the center?",
+        "audio": "de_conv020_04.mp3",
+        "translation_en": "A good choice. Should I book a hotel near the center?",
+        "translation_id": "Pilihan bagus. Perlukah saya memesan hotel di dekat pusat kota?"
+      },
+      {
+        "speaker": "kunde",
+        "text": "Ja, bitte mit Frühstück, wenn es möglich ist.",
+        "romanization": null,
+        "translation": "Yes, with breakfast please, if possible.",
+        "audio": "de_conv020_05.mp3",
+        "translation_en": "Yes, with breakfast please, if possible.",
+        "translation_id": "Ya, dengan sarapan kalau memungkinkan."
+      },
+      {
+        "speaker": "angestellte",
+        "text": "Selbstverständlich. Und möchten Sie auch einen Ausflug zur Festung Hohensalzburg?",
+        "romanization": null,
+        "translation": "Of course. Would you also like a trip to the Hohensalzburg Fortress?",
+        "audio": "de_conv020_06.mp3",
+        "translation_en": "Of course. Would you also like a trip to the Hohensalzburg Fortress?",
+        "translation_id": "Tentu. Apakah Anda juga ingin wisata ke Benteng Hohensalzburg?"
+      },
+      {
+        "speaker": "kunde",
+        "text": "Das klingt perfekt. Wie hoch wären die Gesamtkosten?",
+        "romanization": null,
+        "translation": "That sounds perfect. What would the total cost be?",
+        "audio": "de_conv020_07.mp3",
+        "translation_en": "That sounds perfect. What would the total cost be?",
+        "translation_id": "Kedengarannya sempurna. Berapa total biayanya?"
+      }
+    ]
+  },
+  {
+    "id": "de-conv-021",
+    "language": "de",
+    "title": "Umzug planen (Planning a Move)",
+    "level": 3,
+    "difficulty": 3,
+    "examMappings": {
+      "goethe": "B1"
+    },
+    "scenario": "plans",
+    "speakers": [
+      {
+        "id": "a",
+        "name": "Jonas",
+        "role": "Friend"
+      },
+      {
+        "id": "b",
+        "name": "Miriam",
+        "role": "Friend"
+      }
+    ],
+    "dialogue": [
+      {
+        "speaker": "a",
+        "text": "Miriam, hast du schon einen Umzugsunternehmer gefunden?",
+        "romanization": null,
+        "translation": "Miriam, have you already found a moving company?",
+        "audio": "de_conv021_01.mp3",
+        "translation_en": "Miriam, have you already found a moving company?",
+        "translation_id": "Miriam, sudah menemukan perusahaan jasa pindahan?"
+      },
+      {
+        "speaker": "b",
+        "text": "Noch nicht. Ich habe drei Angebote bekommen, aber die Preise sind sehr unterschiedlich.",
+        "romanization": null,
+        "translation": "Not yet. I have received three offers, but the prices are very different.",
+        "audio": "de_conv021_02.mp3",
+        "translation_en": "Not yet. I have received three offers, but the prices are very different.",
+        "translation_id": "Belum. Saya sudah dapat tiga penawaran, tapi harganya sangat berbeda."
+      },
+      {
+        "speaker": "a",
+        "text": "Worauf kommt es bei der Wahl an?",
+        "romanization": null,
+        "translation": "What matters when choosing?",
+        "audio": "de_conv021_03.mp3",
+        "translation_en": "What matters when choosing?",
+        "translation_id": "Apa yang penting saat memilih?"
+      },
+      {
+        "speaker": "b",
+        "text": "Zum einen der Preis, zum anderen, ob sie die Möbel ab- und wieder aufbauen.",
+        "romanization": null,
+        "translation": "On the one hand the price, on the other whether they assemble and disassemble the furniture.",
+        "audio": "de_conv021_04.mp3",
+        "translation_en": "On the one hand the price, on the other whether they assemble and disassemble the furniture.",
+        "translation_id": "Di satu sisi harga, di sisi lain apakah mereka membongkar dan memasang kembali furnitur."
+      },
+      {
+        "speaker": "a",
+        "text": "Ich kann dir eine Firma empfehlen, die ich selbst genutzt habe. Sie war zuverlässig.",
+        "romanization": null,
+        "translation": "I can recommend a company that I used myself. It was reliable.",
+        "audio": "de_conv021_05.mp3",
+        "translation_en": "I can recommend a company that I used myself. It was reliable.",
+        "translation_id": "Saya bisa merekomendasikan perusahaan yang saya pakai sendiri. Sangat dapat diandalkan."
+      },
+      {
+        "speaker": "b",
+        "text": "Das wäre toll! Schick mir bitte den Kontakt.",
+        "romanization": null,
+        "translation": "That would be great! Please send me the contact.",
+        "audio": "de_conv021_06.mp3",
+        "translation_en": "That would be great! Please send me the contact.",
+        "translation_id": "Itu bagus sekali! Tolong kirimkan kontaknya."
+      },
+      {
+        "speaker": "a",
+        "text": "Mache ich. Soll ich am Umzugstag helfen?",
+        "romanization": null,
+        "translation": "I will. Should I help on moving day?",
+        "audio": "de_conv021_07.mp3",
+        "translation_en": "I will. Should I help on moving day?",
+        "translation_id": "Akan saya lakukan. Perlukah saya membantu saat hari pindahan?"
+      }
+    ]
+  },
+  {
+    "id": "de-conv-022",
+    "language": "de",
+    "title": "Pläne fürs Wochenende (Weekend Plans)",
+    "level": 3,
+    "difficulty": 2,
+    "examMappings": {
+      "goethe": "B1"
+    },
+    "scenario": "plans",
+    "speakers": [
+      {
+        "id": "a",
+        "name": "Nina",
+        "role": "Friend"
+      },
+      {
+        "id": "b",
+        "name": "Tom",
+        "role": "Friend"
+      }
+    ],
+    "dialogue": [
+      {
+        "speaker": "a",
+        "text": "Tom, hast du schon Pläne fürs Wochenende?",
+        "romanization": null,
+        "translation": "Tom, do you already have plans for the weekend?",
+        "audio": "de_conv022_01.mp3",
+        "translation_en": "Tom, do you already have plans for the weekend?",
+        "translation_id": "Tom, sudah punya rencana akhir pekan?"
+      },
+      {
+        "speaker": "b",
+        "text": "Ich hatte gedacht, ins Kino zu gehen, aber ich bin mir noch nicht sicher.",
+        "romanization": null,
+        "translation": "I had thought about going to the movies, but I am not sure yet.",
+        "audio": "de_conv022_02.mp3",
+        "translation_en": "I had thought about going to the movies, but I am not sure yet.",
+        "translation_id": "Aku tadinya berpikir mau ke bioskop, tapi belum yakin."
+      },
+      {
+        "speaker": "a",
+        "text": "Wärst du interessiert, stattdessen eine Radtour zu machen?",
+        "romanization": null,
+        "translation": "Would you be interested in going on a bike tour instead?",
+        "audio": "de_conv022_03.mp3",
+        "translation_en": "Would you be interested in going on a bike tour instead?",
+        "translation_id": "Apakah kamu tertarik bersepeda santai sebagai gantinya?"
+      },
+      {
+        "speaker": "b",
+        "text": "Das wäre eine tolle Idee! Das Wetter soll schön werden.",
+        "romanization": null,
+        "translation": "That would be a great idea! The weather is supposed to be nice.",
+        "audio": "de_conv022_04.mp3",
+        "translation_en": "That would be a great idea! The weather is supposed to be nice.",
+        "translation_id": "Itu ide bagus! Kata ramalan cuacanya bagus."
+      },
+      {
+        "speaker": "a",
+        "text": "Dann treffen wir uns am Samstag um zehn am Hauptbahnhof.",
+        "romanization": null,
+        "translation": "Then we meet on Saturday at ten at the main station.",
+        "audio": "de_conv022_05.mp3",
+        "translation_en": "Then we meet on Saturday at ten at the main station.",
+        "translation_id": "Kalau begitu kita bertemu Sabtu jam sepuluh di stasiun utama."
+      },
+      {
+        "speaker": "b",
+        "text": "Gut. Soll ich etwas zu essen mitbringen?",
+        "romanization": null,
+        "translation": "Good. Should I bring something to eat?",
+        "audio": "de_conv022_06.mp3",
+        "translation_en": "Good. Should I bring something to eat?",
+        "translation_id": "Baiklah. Perlukah aku membawa makanan?"
+      },
+      {
+        "speaker": "a",
+        "text": "Ja, wir können unterwegs ein Picknick machen. Bis Samstag!",
+        "romanization": null,
+        "translation": "Yes, we can have a picnic along the way. See you Saturday!",
+        "audio": "de_conv022_07.mp3",
+        "translation_en": "Yes, we can have a picnic along the way. See you Saturday!",
+        "translation_id": "Ya, kita bisa piknik di perjalanan. Sampai Sabtu!"
+      }
+    ]
+  }
+]
