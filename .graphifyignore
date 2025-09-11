@@ -1,0 +1,26 @@
+# graphify ignore: generated/binary/build artifacts
+**/.output/
+**/.next/
+**/.wrangler/
+**/node_modules/
+**/.turbo/
+**/dist/
+**/.vercel/
+**/tmp/
+**/.graphify_out/
+graphify-out/
+**/*.mp3
+**/*.wav
+**/*.ogg
+**/*.flac
+**/*.m4a
+**/*.aac
+**/*.png
+**/*.jpg
+**/*.jpeg
+**/*.gif
+**/*.webp
+**/*.pdf
+**/web-backup/
+session-*.md
+**/session-*.md

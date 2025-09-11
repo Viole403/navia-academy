@@ -1,0 +1,71 @@
+# Full LOCAL DEV stack: postgres + redis + api dalam satu perintah.
+#
+#   docker compose up -d
+#   psql "$DATABASE_URL" -f apps/backend/migrations/*.sql   # migrasi tetap manual!
+#
+# Bedakan dengan apps/backend/docker-compose.yml yang itu API-ONLY untuk deploy
+# VPS production (pg/redis = layanan cloud managed eksternal, resource caps via
+# scripts/compute-resource-limits.sh).
+#
+# Catatan: endpoint /tts butuh STORAGE_* menunjuk storage S3-compatible
+# (RustFS lokal / R2) — tanpa itu fitur lain tetap jalan normal.
+services:
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: navia
+      POSTGRES_PASSWORD: navia-dev
+      POSTGRES_DB: navia
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U navia"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  backend:
+    build:
+      context: ./apps/backend
+      dockerfile: Dockerfile
+      args:
+        APP_PORT: "${SERVER_PORT:-8080}"
+    # Kiri = port publik di host, kanan = listen di container (satu sumber
+    # dengan EXPOSE/healthcheck image via ARG APP_PORT).
+    ports:
+      - "${SERVER_PORT:-8080}:${SERVER_PORT:-8080}"
+    environment:
+      SERVER_PORT: "${SERVER_PORT:-8080}"
+      DATABASE_URL: postgres://navia:navia-dev@postgres:5432/navia?sslmode=disable
+      REDIS_URL: redis://redis:6379
+      JWT_ACCESS_SECRET: dev-access-secret-change-in-production-32chars
+      JWT_REFRESH_SECRET: dev-refresh-secret-change-in-production-32chars
+      SITE_URL: http://localhost:3000
+      CORS_ORIGINS: http://localhost:3000
+      TTS_ENGINE: edge
+      # Opsional — aktifkan bila /tts dipakai:
+      # STORAGE_PROVIDER: s3
+      # STORAGE_ENDPOINT: http://host.docker.internal:9000
+      # STORAGE_BUCKET: navia-data
+      # STORAGE_ACCESS_KEY: rustfsadmin
+      # STORAGE_SECRET_KEY: rustfsadmin
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+
+volumes:
+  pgdata:
