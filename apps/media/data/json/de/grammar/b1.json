@@ -1,0 +1,1331 @@
+[
+  {
+    "id": "de_konjunktiv_ii",
+    "language": "de",
+    "title": "Konjunktiv II (würde, hätte, wäre)",
+    "pattern": "würde/hätte/wäre + infinitive or participle",
+    "level": 3,
+    "examMappings": {
+      "goethe": "B1"
+    },
+    "difficulty": 4,
+    "simpleExplanation": "Konjunktiv II expresses wishes, hypothetical situations and polite requests: 'Ich würde ...' (I would ...).",
+    "detailedExplanation": "Most verbs form Konjunktiv II with würde + infinitive: Ich würde gern nach Berlin fliegen. haben/sein have their own forms: hätte (ich hätte), wäre (ich wäre). Also modal verbs: könnte, müsste, sollte, dürfte, wollte. Use it for: polite requests (Könnten Sie mir helfen?), unreal wishes (Wenn ich mehr Zeit hätte ...), and conditionals (Wenn ich reich wäre, würde ich reisen).",
+    "usage": "Ich würde gern gehen. | Wenn ich Zeit hätte, würde ich kommen. | Könnten Sie mir helfen?",
+    "avoidWhen": "Don't use Konjunktiv II for real/factual statements — use the indicative. 'Wenn ich Zeit habe' (real) vs 'Wenn ich Zeit hätte' (hypothetical).",
+    "examples": [
+      {
+        "text": "Ich würde gern nach Berlin fliegen.",
+        "translation": "I would like to fly to Berlin.",
+        "pronunciation": "ɪç ˈvʏʁdə ɡeːɐn naːx bɛɐ̯ˈliːn ˈfliːɡn̩",
+        "translation_en": "I would like to fly to Berlin.",
+        "translation_id": "Saya ingin terbang ke Berlin."
+      },
+      {
+        "text": "Wenn ich mehr Zeit hätte, würde ich mehr lesen.",
+        "translation": "If I had more time, I would read more.",
+        "pronunciation": "vɛn ɪç meːɐ tsaɪt ˈhɛtə ˈvʏʁdə ɪç meːɐ ˈleːzn̩",
+        "translation_en": "If I had more time, I would read more.",
+        "translation_id": "Kalau saya punya lebih banyak waktu, saya akan membaca lebih banyak."
+      },
+      {
+        "text": "Könnten Sie mir bitte helfen?",
+        "translation": "Could you please help me?",
+        "pronunciation": "ˈkœntn̩ ziː miːɐ ˈbɪtə ˈhɛlfn̩",
+        "translation_en": "Could you please help me?",
+        "translation_id": "Bisakah Anda tolong membantu saya?"
+      }
+    ],
+    "commonMistakes": [
+      "Using würde with sein/haben (würde bin is wrong — use wäre/hätte)",
+      "Using Konjunktiv II for real situations",
+      "Forgetting the infinitive at the end with würde"
+    ],
+    "relatedPoints": [
+      "de_future_werden",
+      "de_praeteritum_haben_sein"
+    ],
+    "category": "grammar",
+    "tags": [
+      "verbs",
+      "mood",
+      "conditional",
+      "B1"
+    ],
+    "title_en": "Konjunktiv II (würde, hätte, wäre)",
+    "title_id": "Konjunktiv II (würde, hätte, wäre)",
+    "simpleExplanation_en": "Konjunktiv II expresses wishes, hypothetical situations and polite requests: 'Ich würde ...' (I would ...).",
+    "simpleExplanation_id": "Konjunktiv II menyatakan keinginan, situasi hipotetis, dan permintaan sopan: 'Ich würde ...' (saya akan ...).",
+    "detailedExplanation_en": "Most verbs form Konjunktiv II with würde + infinitive: Ich würde gern nach Berlin fliegen. haben/sein have their own forms: hätte (ich hätte), wäre (ich wäre). Also modal verbs: könnte, müsste, sollte, dürfte, wollte. Use it for: polite requests (Könnten Sie mir helfen?), unreal wishes (Wenn ich mehr Zeit hätte ...), and conditionals (Wenn ich reich wäre, würde ich reisen).",
+    "detailedExplanation_id": "Kebanyakan kata kerja membentuk Konjunktiv II dengan würde + infinitif: Ich würde gern nach Berlin fliegen. haben/sein punya bentuk sendiri: hätte (saya punya/saya akan), wäre (saya adalah). Juga kata kerja modal: könnte, müsste, sollte, dürfte, wollte. Pakai untuk: permintaan sopan (Könnten Sie mir helfen?), keinginan tak nyata (Wenn ich mehr Zeit hätte ...), dan kondisional (Wenn ich reich wäre, würde ich reisen).",
+    "usage_en": "Ich würde gern gehen. | Wenn ich Zeit hätte, würde ich kommen. | Könnten Sie mir helfen?",
+    "usage_id": "Ich würde gern gehen. | Wenn ich Zeit hätte, würde ich kommen. | Könnten Sie mir helfen?",
+    "avoidWhen_en": "Don't use Konjunktiv II for real/factual statements — use the indicative.",
+    "avoidWhen_id": "Jangan pakai Konjunktiv II untuk pernyataan nyata/faktual — gunakan indikatif.",
+    "commonMistakes_en": [
+      "Using würde with sein/haben (würde bin is wrong — use wäre/hätte)",
+      "Using Konjunktiv II for real situations",
+      "Forgetting the infinitive at the end with würde"
+    ],
+    "commonMistakes_id": [
+      "Memakai würde dengan sein/haben (würde bin salah — pakai wäre/hätte)",
+      "Memakai Konjunktiv II untuk situasi nyata",
+      "Lupa infinitif di akhir dengan würde"
+    ]
+  },
+  {
+    "id": "de_passiv",
+    "language": "de",
+    "title": "Passive Voice (Passiv)",
+    "pattern": "werden + Partizip II (+ von + agent)",
+    "level": 3,
+    "examMappings": {
+      "goethe": "B1"
+    },
+    "difficulty": 4,
+    "simpleExplanation": "The passive focuses on the action, not who does it: 'Das Haus wird gebaut.' (The house is being built.)",
+    "detailedExplanation": "Form: conjugated werden + past participle at the end. Present: Das Buch wird gelesen (The book is read/being read). Past (Präteritum): Das Buch wurde gelesen (was read). Perfect: Das Buch ist gelesen worden. The agent uses 'von': Das Buch wird von Anna gelesen. Use passive when the doer is unknown, unimportant, or you want to focus on the action itself.",
+    "usage": "Das Haus wird gebaut. | Die Tür wurde geöffnet. | Das Buch ist gelesen worden.",
+    "avoidWhen": "Don't use passive when the agent is important — the active voice is usually clearer and more natural in speech.",
+    "examples": [
+      {
+        "text": "Das Haus wird gerade gebaut.",
+        "translation": "The house is being built right now.",
+        "pronunciation": "das haʊs vɪʁt ɡəˈʁaːdə ɡəˈbaʊt",
+        "translation_en": "The house is being built right now.",
+        "translation_id": "Rumah itu sedang dibangun."
+      },
+      {
+        "text": "Das Buch wurde von Anna gelesen.",
+        "translation": "The book was read by Anna.",
+        "pronunciation": "das buːx ˈvuːʁdə fɔn ˈana ɡəˈleːzn̩",
+        "translation_en": "The book was read by Anna.",
+        "translation_id": "Buku itu dibaca oleh Anna."
+      },
+      {
+        "text": "Das Fenster ist geöffnet worden.",
+        "translation": "The window has been opened.",
+        "pronunciation": "das ˈfɛnstɐ ɪst ɡəˈʔœfnət ˈvɔʁdn̩",
+        "translation_en": "The window has been opened.",
+        "translation_id": "Jendelanya sudah dibuka."
+      }
+    ],
+    "commonMistakes": [
+      "Using sein instead of werden for passive",
+      "Forgetting the participle at the end",
+      "Mixing passive with Konjunktiv II (würde + participle = conditional, not passive)"
+    ],
+    "relatedPoints": [
+      "de_past_perfect",
+      "de_konjunktiv_ii"
+    ],
+    "category": "grammar",
+    "tags": [
+      "verbs",
+      "voice",
+      "passive",
+      "B1"
+    ],
+    "title_en": "Passive Voice (Passiv)",
+    "title_id": "Kalimat Pasif (Passiv)",
+    "simpleExplanation_en": "The passive focuses on the action, not who does it: 'Das Haus wird gebaut.' (The house is being built.)",
+    "simpleExplanation_id": "Pasif berfokus pada aksi, bukan pelaku: 'Das Haus wird gebaut.' (Rumah sedang dibangun.)",
+    "detailedExplanation_en": "Form: conjugated werden + past participle at the end. Present: Das Buch wird gelesen (The book is read/being read). Past (Präteritum): Das Buch wurde gelesen (was read). Perfect: Das Buch ist gelesen worden. The agent uses 'von': Das Buch wird von Anna gelesen. Use passive when the doer is unknown, unimportant, or you want to focus on the action itself.",
+    "detailedExplanation_id": "Bentuk: werden terkonjugasi + partisip lampau di akhir. Present: Das Buch wird gelesen (buku dibaca/sedang dibaca). Past (Präteritum): Das Buch wurde gelesen (dibaca). Perfect: Das Buch ist gelesen worden. Pelaku memakai 'von': Das Buch wird von Anna gelesen. Pakai pasif saat pelaku tidak diketahui, tidak penting, atau ingin fokus pada aksinya.",
+    "usage_en": "Das Haus wird gebaut. | Die Tür wurde geöffnet. | Das Buch ist gelesen worden.",
+    "usage_id": "Das Haus wird gebaut. | Die Tür wurde geöffnet. | Das Buch ist gelesen worden.",
+    "avoidWhen_en": "Don't use passive when the agent is important — the active voice is usually clearer.",
+    "avoidWhen_id": "Jangan pakai pasif saat pelaku penting — kalimat aktif biasanya lebih jelas.",
+    "commonMistakes_en": [
+      "Using sein instead of werden for passive",
+      "Forgetting the participle at the end",
+      "Mixing passive with Konjunktiv II"
+    ],
+    "commonMistakes_id": [
+      "Memakai sein alih-alih werden untuk pasif",
+      "Lupa partisip di akhir",
+      "Mencampur pasif dengan Konjunktiv II"
+    ]
+  },
+  {
+    "id": "de_adjective_endings",
+    "language": "de",
+    "title": "Adjective Endings (Adjektivdeklination)",
+    "pattern": "der gute Mann / ein guter Mann / gute Männer",
+    "level": 3,
+    "examMappings": {
+      "goethe": "B1"
+    },
+    "difficulty": 4,
+    "simpleExplanation": "Adjectives take different endings depending on gender, case, and whether the article is definite, indefinite, or absent.",
+    "detailedExplanation": "With definite articles, adjectives end in -e (nom/acc sing) or -en (everything else): der gute Mann, die gute Frau, das gute Buch, den guten Mann, den guten Leuten. With indefinite articles, the adjective carries the article's ending: ein guter Mann, eine gute Frau, ein gutes Buch. Without an article, the adjective carries the full ending: guter Wein, kalte Milch. Plural always -en after articles: die guten Männer, gute Männer (no article).",
+    "usage": "der gute Mann | ein guter Mann | guter Wein | die guten Männer",
+    "avoidWhen": "Don't use -en everywhere — the strong endings (-er, -e, -es) appear when there is no (or an indefinite) article.",
+    "examples": [
+      {
+        "text": "Das ist der gute Mann.",
+        "translation": "That is the good man.",
+        "pronunciation": "das ɪst deːɐ ˈɡuːtə man",
+        "translation_en": "That is the good man.",
+        "translation_id": "Itu laki-laki baik itu."
+      },
+      {
+        "text": "Das ist ein guter Mann.",
+        "translation": "That is a good man.",
+        "pronunciation": "das ɪst aɪn ˈɡuːtɐ man",
+        "translation_en": "That is a good man.",
+        "translation_id": "Itu seorang laki-laki baik."
+      },
+      {
+        "text": "Ich trinke gern kalte Milch.",
+        "translation": "I like drinking cold milk.",
+        "pronunciation": "ɪç ˈtʁɪŋkə ɡeːɐn ˈkaltə mɪlç",
+        "translation_en": "I like drinking cold milk.",
+        "translation_id": "Saya suka minum susu dingin."
+      }
+    ],
+    "commonMistakes": [
+      "Using -en for everything",
+      "Forgetting -es on neuter after ein",
+      "Using strong endings after definite articles"
+    ],
+    "relatedPoints": [
+      "de_articles_ein_eine",
+      "de_accusative_case",
+      "de_dative_case"
+    ],
+    "category": "grammar",
+    "tags": [
+      "adjectives",
+      "declension",
+      "cases",
+      "B1"
+    ],
+    "title_en": "Adjective Endings (Adjektivdeklination)",
+    "title_id": "Akhiran Kata Sifat (Adjektivdeklination)",
+    "simpleExplanation_en": "Adjectives take different endings depending on gender, case, and whether the article is definite, indefinite, or absent.",
+    "simpleExplanation_id": "Kata sifat memakai akhiran berbeda tergantung gender, kasus, dan apakah artikelnya pasti, tak tentu, atau tidak ada.",
+    "detailedExplanation_en": "With definite articles, adjectives end in -e (nom/acc sing) or -en (everything else): der gute Mann, die gute Frau, das gute Buch, den guten Mann, den guten Leuten. With indefinite articles, the adjective carries the article's ending: ein guter Mann, eine gute Frau, ein gutes Buch. Without an article, the adjective carries the full ending: guter Wein, kalte Milch. Plural always -en after articles: die guten Männer, gute Männer (no article).",
+    "detailedExplanation_id": "Dengan artikel pasti, kata sifat berakhir -e (nom/akus sing) atau -en (sisanya): der gute Mann, die gute Frau, das gute Buch, den guten Mann, den guten Leuten. Dengan artikel tak tentu, kata sifat membawa akhiran artikel: ein guter Mann, eine gute Frau, ein gutes Buch. Tanpa artikel, kata sifat membawa akhiran penuh: guter Wein, kalte Milch. Jamak selalu -en setelah artikel: die guten Männer, gute Männer (tanpa artikel).",
+    "usage_en": "der gute Mann | ein guter Mann | guter Wein | die guten Männer",
+    "usage_id": "der gute Mann | ein guter Mann | guter Wein | die guten Männer",
+    "avoidWhen_en": "Don't use -en everywhere — the strong endings (-er, -e, -es) appear when there is no (or an indefinite) article.",
+    "avoidWhen_id": "Jangan pakai -en di mana-mana — akhiran kuat (-er, -e, -es) muncul saat tidak ada (atau ada) artikel tak tentu.",
+    "commonMistakes_en": [
+      "Using -en for everything",
+      "Forgetting -es on neuter after ein",
+      "Using strong endings after definite articles"
+    ],
+    "commonMistakes_id": [
+      "Memakai -en untuk semua",
+      "Lupa -es pada netral setelah ein",
+      "Memakai akhiran kuat setelah artikel pasti"
+    ]
+  },
+  {
+    "id": "de_participle_adjectives",
+    "language": "de",
+    "title": "Participles as Adjectives (Partizipien)",
+    "pattern": "Partizip I: der lachende Mann | Partizip II: das gebaute Haus",
+    "level": 3,
+    "examMappings": {
+      "goethe": "B1"
+    },
+    "difficulty": 4,
+    "simpleExplanation": "Partizip I (verb + -d) describes an ongoing action; Partizip II describes a completed/resulting state. Both decline like adjectives.",
+    "detailedExplanation": "Partizip I: infinitive + -d, then adjective endings: der lachende Mann (the laughing man), ein weinendes Kind (a crying child). It means 'doing X' (active, ongoing). Partizip II is the past participle used as adjective: das gebaute Haus (the built house), die geschriebene E-Mail (the written email). Both decline exactly like normal adjectives after articles.",
+    "usage": "der lachende Mann | das weinende Kind | das gebaute Haus",
+    "avoidWhen": "Don't use Partizip I for completed actions — that's Partizip II. Don't forget the -d before adjective endings.",
+    "examples": [
+      {
+        "text": "Der lachende Mann ist mein Vater.",
+        "translation": "The laughing man is my father.",
+        "pronunciation": "deːɐ ˈlaxn̩də man ɪst maɪn ˈfaːtɐ",
+        "translation_en": "The laughing man is my father.",
+        "translation_id": "Laki-laki yang tertawa itu ayah saya."
+      },
+      {
+        "text": "Das weinende Kind sucht seine Mutter.",
+        "translation": "The crying child is looking for its mother.",
+        "pronunciation": "das ˈvaɪnən̩də kɪnt zuːxt ˈzaɪnə ˈmʊtɐ",
+        "translation_en": "The crying child is looking for its mother.",
+        "translation_id": "Anak yang menangis itu mencari ibunya."
+      },
+      {
+        "text": "Das gebaute Haus steht am Fluss.",
+        "translation": "The built house stands by the river.",
+        "pronunciation": "das ɡəˈbaʊtə haʊs ʃteːt am flʊs",
+        "translation_en": "The built house stands by the river.",
+        "translation_id": "Rumah yang dibangun itu berdiri di tepi sungai."
+      }
+    ],
+    "commonMistakes": [
+      "Confusing Partizip I (ongoing) with Partizip II (completed)",
+      "Forgetting the -d on Partizip I",
+      "Not declining the participle"
+    ],
+    "relatedPoints": [
+      "de_past_perfect",
+      "de_adjective_endings"
+    ],
+    "category": "grammar",
+    "tags": [
+      "participles",
+      "adjectives",
+      "verbs",
+      "B1"
+    ],
+    "title_en": "Participles as Adjectives (Partizipien)",
+    "title_id": "Partisip sebagai Kata Sifat (Partizipien)",
+    "simpleExplanation_en": "Partizip I (verb + -d) describes an ongoing action; Partizip II describes a completed/resulting state. Both decline like adjectives.",
+    "simpleExplanation_id": "Partizip I (kata kerja + -d) menggambarkan aksi yang sedang berlangsung; Partizip II menggambarkan keadaan selesai/hasil. Keduanya dideklinasi seperti kata sifat.",
+    "detailedExplanation_en": "Partizip I: infinitive + -d, then adjective endings: der lachende Mann (the laughing man), ein weinendes Kind (a crying child). It means 'doing X' (active, ongoing). Partizip II is the past participle used as adjective: das gebaute Haus (the built house), die geschriebene E-Mail (the written email). Both decline exactly like normal adjectives after articles.",
+    "detailedExplanation_id": "Partizip I: infinitif + -d, lalu akhiran kata sifat: der lachende Mann (laki-laki yang tertawa), ein weinendes Kind (anak yang menangis). Berarti 'sedang melakukan X' (aktif, berlangsung). Partizip II adalah partisip lampau sebagai kata sifat: das gebaute Haus (rumah yang dibangun), die geschriebene E-Mail (email yang ditulis). Keduanya dideklinasi seperti kata sifat normal setelah artikel.",
+    "usage_en": "der lachende Mann | das weinende Kind | das gebaute Haus",
+    "usage_id": "der lachende Mann | das weinende Kind | das gebaute Haus",
+    "avoidWhen_en": "Don't use Partizip I for completed actions — that's Partizip II.",
+    "avoidWhen_id": "Jangan pakai Partizip I untuk aksi selesai — itu Partizip II.",
+    "commonMistakes_en": [
+      "Confusing Partizip I (ongoing) with Partizip II (completed)",
+      "Forgetting the -d on Partizip I",
+      "Not declining the participle"
+    ],
+    "commonMistakes_id": [
+      "Tertukar Partizip I (berlangsung) dengan Partizip II (selesai)",
+      "Lupa -d pada Partizip I",
+      "Tidak mendeklinasi partisip"
+    ]
+  },
+  {
+    "id": "de_futur_ii",
+    "language": "de",
+    "title": "Future Perfect (Futur II)",
+    "pattern": "werden + Partizip II + haben/sein",
+    "level": 3,
+    "examMappings": {
+      "goethe": "B1"
+    },
+    "difficulty": 4,
+    "simpleExplanation": "Futur II says something will have happened by a future point: 'Ich werde morgen fertig sein.' (I will have finished by tomorrow.)",
+    "detailedExplanation": "Form: conjugated werden + Partizip II + haben/sein infinitive at the end: Bis morgen werde ich das Buch gelesen haben. (By tomorrow I will have read the book.) Use it mostly for assumptions about the past or to express certainty: Er wird zu Hause gewesen sein. (He will have been at home — I assume so.) It is rare in everyday speech.",
+    "usage": "Bis morgen werde ich fertig sein. | Er wird zu Hause gewesen sein.",
+    "avoidWhen": "Don't overuse Futur II in speech — Germans usually use Perfekt with a time word instead.",
+    "examples": [
+      {
+        "text": "Bis morgen werde ich das Buch gelesen haben.",
+        "translation": "By tomorrow I will have read the book.",
+        "pronunciation": "bɪs ˈmɔʁɡn̩ ˈveːɐdə ɪç das buːx ɡəˈleːzn̩ ˈhaːbn̩",
+        "translation_en": "By tomorrow I will have read the book.",
+        "translation_id": "Besok saya pasti sudah membaca buku itu."
+      },
+      {
+        "text": "Er wird zu Hause gewesen sein.",
+        "translation": "He will have been at home.",
+        "pronunciation": "eːɐ vɪʁt tsuː ˈhaʊzə ɡəˈveːzn̩ zaɪn",
+        "translation_en": "He will have been at home.",
+        "translation_id": "Dia pasti sudah ada di rumah."
+      },
+      {
+        "text": "Bis Freitag werde ich den Bericht geschrieben haben.",
+        "translation": "By Friday I will have written the report.",
+        "pronunciation": "bɪs ˈfʁaɪtaːk ˈveːɐdə ɪç deːn bəˈʁɪçt ɡəˈʃʁiːbn̩ ˈhaːbn̩",
+        "translation_en": "By Friday I will have written the report.",
+        "translation_id": "Jumat saya pasti sudah menulis laporannya."
+      }
+    ],
+    "commonMistakes": [
+      "Using Futur II in spoken German too often",
+      "Forgetting that haben/sein stay as infinitives at the end",
+      "Confusing Futur II with passive (werden + participle)"
+    ],
+    "relatedPoints": [
+      "de_future_werden",
+      "de_past_perfect"
+    ],
+    "category": "grammar",
+    "tags": [
+      "verbs",
+      "tenses",
+      "future",
+      "B1"
+    ],
+    "title_en": "Future Perfect (Futur II)",
+    "title_id": "Masa Depan Sempurna (Futur II)",
+    "simpleExplanation_en": "Futur II says something will have happened by a future point: 'Ich werde morgen fertig sein.' (I will have finished by tomorrow.)",
+    "simpleExplanation_id": "Futur II menyatakan sesuatu pasti sudah terjadi pada titik waktu masa depan: 'Ich werde morgen fertig sein.' (Besok saya pasti sudah selesai.)",
+    "detailedExplanation_en": "Form: conjugated werden + Partizip II + haben/sein infinitive at the end: Bis morgen werde ich das Buch gelesen haben. (By tomorrow I will have read the book.) Use it mostly for assumptions about the past or to express certainty: Er wird zu Hause gewesen sein. (He will have been at home — I assume so.) It is rare in everyday speech.",
+    "detailedExplanation_id": "Bentuk: werden terkonjugasi + Partizip II + infinitif haben/sein di akhir: Bis morgen werde ich das Buch gelesen haben. (Besok saya pasti sudah membaca buku itu.) Kebanyakan dipakai untuk asumsi tentang masa lalu atau menyatakan kepastian: Er wird zu Hause gewesen sein. (Dia pasti sudah ada di rumah — saya duga.) Jarang dalam percakapan sehari-hari.",
+    "usage_en": "Bis morgen werde ich fertig sein. | Er wird zu Hause gewesen sein.",
+    "usage_id": "Bis morgen werde ich fertig sein. | Er wird zu Hause gewesen sein.",
+    "avoidWhen_en": "Don't overuse Futur II in speech — Germans usually use Perfekt with a time word instead.",
+    "avoidWhen_id": "Jangan terlalu sering pakai Futur II dalam bicara — orang Jerman biasanya memakai Perfekt dengan kata waktu.",
+    "commonMistakes_en": [
+      "Using Futur II in spoken German too often",
+      "Forgetting that haben/sein stay as infinitives at the end",
+      "Confusing Futur II with passive"
+    ],
+    "commonMistakes_id": [
+      "Terlalu sering memakai Futur II dalam Jerman lisan",
+      "Lupa haben/sein tetap infinitif di akhir",
+      "Mencampur Futur II dengan pasif"
+    ]
+  },
+  {
+    "id": "de_konjunktiv_i_indirect",
+    "language": "de",
+    "title": "Indirect Speech (Konjunktiv I)",
+    "pattern": "Er sagt, er habe keine Zeit.",
+    "level": 3,
+    "examMappings": {
+      "goethe": "B1"
+    },
+    "difficulty": 5,
+    "simpleExplanation": "Konjunktiv I reports what someone said without quoting directly: 'Er sagt, er habe keine Zeit.'",
+    "detailedExplanation": "Konjunktiv I is formed from the present stem: ich habe, du habest, er habe, wir haben, ihr habet, sie haben. For most verbs it looks like the indicative except in the er-form: er sagt → er sage, er kommt → er komme. If Konjunktiv I looks identical to the indicative, use Konjunktiv II instead: Sie sagten, sie hätten/kämen. In newspapers it marks reported speech: Der Minister sagte, er komme morgen.",
+    "usage": "Er sagt, er habe keine Zeit. | Sie sagte, sie komme morgen. | Der Minister sagte, er fahre nach Berlin.",
+    "avoidWhen": "Don't use Konjunktiv I for hypothetical situations — that's Konjunktiv II.",
+    "examples": [
+      {
+        "text": "Er sagt, er habe keine Zeit.",
+        "translation": "He says he has no time.",
+        "pronunciation": "eːɐ zaːkt eːɐ ˈhaːbə ˈkaɪnə tsaɪt",
+        "translation_en": "He says he has no time.",
+        "translation_id": "Dia bilang dia tidak punya waktu."
+      },
+      {
+        "text": "Sie sagte, sie komme morgen.",
+        "translation": "She said she would come tomorrow.",
+        "pronunciation": "ziː ˈzaːktə ziː ˈkɔmə ˈmɔʁɡn̩",
+        "translation_en": "She said she would come tomorrow.",
+        "translation_id": "Dia bilang dia akan datang besok."
+      },
+      {
+        "text": "Der Chef sagt, er habe den Bericht gelesen.",
+        "translation": "The boss says he has read the report.",
+        "pronunciation": "deːɐ ʃɛf zaːkt eːɐ ˈhaːbə deːn bəˈʁɪçt ɡəˈleːzn̩",
+        "translation_en": "The boss says he has read the report.",
+        "translation_id": "Bos bilang dia sudah membaca laporannya."
+      }
+    ],
+    "commonMistakes": [
+      "Using Konjunktiv I for hypotheticals",
+      "Using direct quotes in formal writing instead of Konjunktiv I",
+      "Forgetting the subjunctive in reported questions"
+    ],
+    "relatedPoints": [
+      "de_konjunktiv_ii",
+      "de_subordinate_clauses"
+    ],
+    "category": "grammar",
+    "tags": [
+      "verbs",
+      "mood",
+      "reported speech",
+      "B1"
+    ],
+    "title_en": "Indirect Speech (Konjunktiv I)",
+    "title_id": "Kalimat Tidak Langsung (Konjunktiv I)",
+    "simpleExplanation_en": "Konjunktiv I reports what someone said without quoting directly: 'Er sagt, er habe keine Zeit.'",
+    "simpleExplanation_id": "Konjunktiv I melaporkan ucapan seseorang tanpa kutipan langsung: 'Er sagt, er habe keine Zeit.'",
+    "detailedExplanation_en": "Konjunktiv I is formed from the present stem: ich habe, du habest, er habe, wir haben, ihr habet, sie haben. For most verbs it looks like the indicative except in the er-form: er sagt → er sage, er kommt → er komme. If Konjunktiv I looks identical to the indicative, use Konjunktiv II instead: Sie sagten, sie hätten/kämen. In newspapers it marks reported speech: Der Minister sagte, er komme morgen.",
+    "detailedExplanation_id": "Konjunktiv I dibentuk dari akar present: ich habe, du habest, er habe, wir haben, ihr habet, sie haben. Untuk kebanyakan kata kerja terlihat sama dengan indikatif kecuali bentuk er: er sagt → er sage, er kommt → er komme. Jika Konjunktiv I terlihat identik dengan indikatif, pakai Konjunktiv II: Sie sagten, sie hätten/kämen. Di koran menandai kalimat tidak langsung: Der Minister sagte, er komme morgen.",
+    "usage_en": "Er sagt, er habe keine Zeit. | Sie sagte, sie komme morgen.",
+    "usage_id": "Er sagt, er habe keine Zeit. | Sie sagte, sie komme morgen.",
+    "avoidWhen_en": "Don't use Konjunktiv I for hypothetical situations — that's Konjunktiv II.",
+    "avoidWhen_id": "Jangan pakai Konjunktiv I untuk situasi hipotetis — itu Konjunktiv II.",
+    "commonMistakes_en": [
+      "Using Konjunktiv I for hypotheticals",
+      "Using direct quotes in formal writing instead of Konjunktiv I",
+      "Forgetting the subjunctive in reported questions"
+    ],
+    "commonMistakes_id": [
+      "Memakai Konjunktiv I untuk hipotetis",
+      "Memakai kutipan langsung dalam tulisan formal alih-alih Konjunktiv I",
+      "Lupa subjungtif dalam pertanyaan tidak langsung"
+    ]
+  },
+  {
+    "id": "de_clauses_obwohl_damit",
+    "language": "de",
+    "title": "Clauses with obwohl, damit, um ... zu",
+    "pattern": "obwohl (although) / damit (so that) / um ... zu (in order to)",
+    "level": 3,
+    "examMappings": {
+      "goethe": "B1"
+    },
+    "difficulty": 3,
+    "simpleExplanation": "obwohl introduces a contrast, damit a purpose with a subject, and um ... zu a purpose with the same subject.",
+    "detailedExplanation": "obwohl + verb at end: Obwohl es regnet, gehe ich spazieren. (Although it rains, I go for a walk.) damit + verb at end (purpose, different subject): Ich rufe an, damit du Bescheid weißt. (I call so that you know.) um ... zu + infinitive (purpose, same subject): Ich lerne Deutsch, um in Berlin zu arbeiten. (I learn German in order to work in Berlin.)",
+    "usage": "Obwohl es regnet, gehe ich raus. | Ich rufe an, damit du Bescheid weißt. | Ich spare Geld, um zu reisen.",
+    "avoidWhen": "Don't use um ... zu when the subjects differ — that requires damit. Don't use weil where obwohl fits (they are opposite).",
+    "examples": [
+      {
+        "text": "Obwohl es regnet, gehe ich spazieren.",
+        "translation": "Although it is raining, I go for a walk.",
+        "pronunciation": "ˈɔpvɔl ɛs ˈʁeːɡnət ˈɡeːə ɪç ʃpaˈtsiːʁən",
+        "translation_en": "Although it is raining, I go for a walk.",
+        "translation_id": "Meskipun hujan, saya jalan-jalan."
+      },
+      {
+        "text": "Ich rufe an, damit du Bescheid weißt.",
+        "translation": "I am calling so that you know.",
+        "pronunciation": "ɪç ˈʁuːfə an ˈdamit duː bəˈʃaɪt vaɪst",
+        "translation_en": "I am calling so that you know.",
+        "translation_id": "Saya menelepon supaya kamu tahu."
+      },
+      {
+        "text": "Ich lerne Deutsch, um in Berlin zu arbeiten.",
+        "translation": "I learn German in order to work in Berlin.",
+        "pronunciation": "ɪç ˈlɛʁnə dɔʏtʃ ʊm ɪn bɛɐ̯ˈliːn tsuː ˈaʁbaɪtn̩",
+        "translation_en": "I learn German in order to work in Berlin.",
+        "translation_id": "Saya belajar bahasa Jerman agar bisa bekerja di Berlin."
+      }
+    ],
+    "commonMistakes": [
+      "Using um ... zu with different subjects (should be damit)",
+      "Keeping the verb in position 2 after obwohl",
+      "Using weil instead of obwohl for contrast"
+    ],
+    "relatedPoints": [
+      "de_subordinate_clauses"
+    ],
+    "category": "grammar",
+    "tags": [
+      "clauses",
+      "conjunctions",
+      "syntax",
+      "B1"
+    ],
+    "title_en": "Clauses with obwohl, damit, um ... zu",
+    "title_id": "Klausa dengan obwohl, damit, um ... zu",
+    "simpleExplanation_en": "obwohl introduces a contrast, damit a purpose with a subject, and um ... zu a purpose with the same subject.",
+    "simpleExplanation_id": "obwohl memperkenalkan kontras, damit tujuan dengan subjek berbeda, dan um ... zu tujuan dengan subjek sama.",
+    "detailedExplanation_en": "obwohl + verb at end: Obwohl es regnet, gehe ich spazieren. (Although it rains, I go for a walk.) damit + verb at end (purpose, different subject): Ich rufe an, damit du Bescheid weißt. (I call so that you know.) um ... zu + infinitive (purpose, same subject): Ich lerne Deutsch, um in Berlin zu arbeiten. (I learn German in order to work in Berlin.)",
+    "detailedExplanation_id": "obwohl + kata kerja di akhir: Obwohl es regnet, gehe ich spazieren. (Meskipun hujan, saya jalan-jalan.) damit + kata kerja di akhir (tujuan, subjek berbeda): Ich rufe an, damit du Bescheid weißt. (Saya menelepon supaya kamu tahu.) um ... zu + infinitif (tujuan, subjek sama): Ich lerne Deutsch, um in Berlin zu arbeiten. (Saya belajar Jerman agar bekerja di Berlin.)",
+    "usage_en": "Obwohl es regnet, gehe ich raus. | Ich rufe an, damit du Bescheid weißt. | Ich spare Geld, um zu reisen.",
+    "usage_id": "Obwohl es regnet, gehe ich raus. | Ich rufe an, damit du Bescheid weißt. | Ich spare Geld, um zu reisen.",
+    "avoidWhen_en": "Don't use um ... zu when the subjects differ — that requires damit.",
+    "avoidWhen_id": "Jangan pakai um ... zu saat subjeknya berbeda — itu butuh damit.",
+    "commonMistakes_en": [
+      "Using um ... zu with different subjects (should be damit)",
+      "Keeping the verb in position 2 after obwohl",
+      "Using weil instead of obwohl for contrast"
+    ],
+    "commonMistakes_id": [
+      "Memakai um ... zu dengan subjek berbeda (harus damit)",
+      "Kata kerja di posisi 2 setelah obwohl",
+      "Memakai weil alih-alih obwohl untuk kontras"
+    ]
+  },
+  {
+    "id": "de_prepositions_genitive",
+    "language": "de",
+    "title": "Prepositions with Genitive (wegen, trotz, während)",
+    "pattern": "wegen + Genitiv: wegen des Regens",
+    "level": 3,
+    "examMappings": {
+      "goethe": "B1"
+    },
+    "difficulty": 3,
+    "simpleExplanation": "wegen, trotz, während, statt, anstatt and außerhalb require the genitive case.",
+    "detailedExplanation": "These prepositions govern the genitive: wegen des Wetters (because of the weather), trotz des Regens (despite the rain), während der Pause (during the break), statt des Buches (instead of the book), außerhalb der Stadt (outside the city). In spoken German, nach often replaces wegen + dative informally (wegen dem Wetter), but in writing the genitive is correct.",
+    "usage": "wegen des Wetters | trotz des Regens | während der Pause | statt des Buches",
+    "avoidWhen": "In formal writing prefer the genitive; 'wegen dem Wetter' (with dative) is spoken-style only.",
+    "examples": [
+      {
+        "text": "Wegen des Regens bleiben wir zu Hause.",
+        "translation": "Because of the rain we stay at home.",
+        "pronunciation": "ˈveːɡn̩ dɛs ˈʁeːɡn̩s ˈblaɪbn̩ viːɐ tsuː ˈhaʊzə",
+        "translation_en": "Because of the rain we stay at home.",
+        "translation_id": "Karena hujan kami tinggal di rumah."
+      },
+      {
+        "text": "Trotz des Wetters gehen wir wandern.",
+        "translation": "Despite the weather we go hiking.",
+        "pronunciation": "tʁɔtst dɛs ˈvɛtɐs ˈɡeːən viːɐ ˈvandɐn",
+        "translation_en": "Despite the weather we go hiking.",
+        "translation_id": "Meskipun cuacanya buruk kami tetap mendaki."
+      },
+      {
+        "text": "Während der Pause trinke ich Kaffee.",
+        "translation": "During the break I drink coffee.",
+        "pronunciation": "ˈvɛːʁənt deːɐ ˈpaʊzə ˈtʁɪŋkə ɪç ˈkafe",
+        "translation_en": "During the break I drink coffee.",
+        "translation_id": "Saat istirahat saya minum kopi."
+      }
+    ],
+    "commonMistakes": [
+      "Using dative after wegen in writing",
+      "Forgetting the genitive ending -s/-es on masculine/neuter nouns",
+      "Confusing trotz with obwohl (trotz + noun, obwohl + clause)"
+    ],
+    "relatedPoints": [
+      "de_genitive",
+      "de_prepositions_dative"
+    ],
+    "category": "grammar",
+    "tags": [
+      "prepositions",
+      "genitive",
+      "cases",
+      "B1"
+    ],
+    "title_en": "Prepositions with Genitive (wegen, trotz, während)",
+    "title_id": "Preposisi dengan Genitif (wegen, trotz, während)",
+    "simpleExplanation_en": "wegen, trotz, während, statt, anstatt and außerhalb require the genitive case.",
+    "simpleExplanation_id": "wegen, trotz, während, statt, anstatt, dan außerhalb membutuhkan kasus genitif.",
+    "detailedExplanation_en": "These prepositions govern the genitive: wegen des Wetters (because of the weather), trotz des Regens (despite the rain), während der Pause (during the break), statt des Buches (instead of the book), außerhalb der Stadt (outside the city). In spoken German, nach often replaces wegen + dative informally (wegen dem Wetter), but in writing the genitive is correct.",
+    "detailedExplanation_id": "Preposisi ini mengatur genitif: wegen des Wetters (karena cuaca), trotz des Regens (meski hujan), während der Pause (saat istirahat), statt des Buches (bukan bukunya), außerhalb der Stadt (di luar kota). Dalam Jerman lisan, wegen + datif dipakai informal (wegen dem Wetter), tapi dalam tulisan genitif yang benar.",
+    "usage_en": "wegen des Wetters | trotz des Regens | während der Pause | statt des Buches",
+    "usage_id": "wegen des Wetters | trotz des Regens | während der Pause | statt des Buches",
+    "avoidWhen_en": "In formal writing prefer the genitive; 'wegen dem Wetter' (with dative) is spoken-style only.",
+    "avoidWhen_id": "Dalam tulisan formal utamakan genitif; 'wegen dem Wetter' (dengan datif) hanya gaya lisan.",
+    "commonMistakes_en": [
+      "Using dative after wegen in writing",
+      "Forgetting the genitive ending -s/-es on masculine/neuter nouns",
+      "Confusing trotz with obwohl (trotz + noun, obwohl + clause)"
+    ],
+    "commonMistakes_id": [
+      "Memakai datif setelah wegen dalam tulisan",
+      "Lupa akhiran genitif -s/-es pada kata benda maskulin/netral",
+      "Tertukar trotz dengan obwohl (trotz + kata benda, obwohl + klausa)"
+    ]
+  },
+  {
+    "id": "de_infinitive_zu",
+    "language": "de",
+    "title": "Infinitive with zu",
+    "pattern": "um ... zu, ohne ... zu, statt ... zu + infinitive at end",
+    "level": 3,
+    "examMappings": {
+      "goethe": "B1"
+    },
+    "difficulty": 3,
+    "simpleExplanation": "After um, ohne, statt, anstatt, the infinitive appears with zu at the end of the clause.",
+    "detailedExplanation": "um ... zu (in order to): Ich lerne, um besser zu verstehen. ohne ... zu (without): Er ging, ohne etwas zu sagen. statt ... zu (instead of): Statt zu arbeiten, schläft er. The zu goes before the infinitive and a comma separates the clause. With separable verbs zu goes between prefix and stem: Ich habe vor, heute aufzustehen.",
+    "usage": "um besser zu verstehen | ohne etwas zu sagen | statt zu arbeiten",
+    "avoidWhen": "Don't use zu with modal verbs in these constructions (um ... machen können, not um ... zu machen können).",
+    "examples": [
+      {
+        "text": "Ich lerne Deutsch, um in Berlin zu arbeiten.",
+        "translation": "I learn German in order to work in Berlin.",
+        "pronunciation": "ɪç ˈlɛʁnə dɔʏtʃ ʊm ɪn bɛɐ̯ˈliːn tsuː ˈaʁbaɪtn̩",
+        "translation_en": "I learn German in order to work in Berlin.",
+        "translation_id": "Saya belajar Jerman agar bekerja di Berlin."
+      },
+      {
+        "text": "Er ging, ohne etwas zu sagen.",
+        "translation": "He left without saying anything.",
+        "pronunciation": "eːɐ ɡɪŋ ˈoːnə ˈɛtvas tsuː ˈzaːɡn̩",
+        "translation_en": "He left without saying anything.",
+        "translation_id": "Dia pergi tanpa mengucapkan apa pun."
+      },
+      {
+        "text": "Statt zu kochen, bestellen wir Pizza.",
+        "translation": "Instead of cooking, we order pizza.",
+        "pronunciation": "ʃtat tsuː ˈkɔxn̩ bəˈʃtɛln̩ viːɐ ˈpɪtsa",
+        "translation_en": "Instead of cooking, we order pizza.",
+        "translation_id": "Daripada memasak, kami memesan pizza."
+      }
+    ],
+    "commonMistakes": [
+      "Adding zu to modal verbs (um ... zu können is wrong)",
+      "Forgetting the comma",
+      "Putting zu before separable prefixes (auf-zu-stehen instead of aufzustehen)"
+    ],
+    "relatedPoints": [
+      "de_separable_verbs",
+      "de_subordinate_clauses"
+    ],
+    "category": "grammar",
+    "tags": [
+      "infinitive",
+      "zu",
+      "clauses",
+      "B1"
+    ],
+    "title_en": "Infinitive with zu",
+    "title_id": "Infinitif dengan zu",
+    "simpleExplanation_en": "After um, ohne, statt, anstatt, the infinitive appears with zu at the end of the clause.",
+    "simpleExplanation_id": "Setelah um, ohne, statt, anstatt, infinitif muncul dengan zu di akhir klausa.",
+    "detailedExplanation_en": "um ... zu (in order to): Ich lerne, um besser zu verstehen. ohne ... zu (without): Er ging, ohne etwas zu sagen. statt ... zu (instead of): Statt zu arbeiten, schläft er. The zu goes before the infinitive and a comma separates the clause. With separable verbs zu goes between prefix and stem: Ich habe vor, heute aufzustehen.",
+    "detailedExplanation_id": "um ... zu (agar): Ich lerne, um besser zu verstehen. ohne ... zu (tanpa): Er ging, ohne etwas zu sagen. statt ... zu (daripada): Statt zu arbeiten, schläft er. zu diletakkan sebelum infinitif dan koma memisahkan klausa. Dengan kata kerja terpisah, zu diletakkan antara prefiks dan akar: Ich habe vor, heute aufzustehen.",
+    "usage_en": "um besser zu verstehen | ohne etwas zu sagen | statt zu arbeiten",
+    "usage_id": "um besser zu verstehen | ohne etwas zu sagen | statt zu arbeiten",
+    "avoidWhen_en": "Don't use zu with modal verbs in these constructions.",
+    "avoidWhen_id": "Jangan pakai zu dengan kata kerja modal dalam konstruksi ini.",
+    "commonMistakes_en": [
+      "Adding zu to modal verbs (um ... zu können is wrong)",
+      "Forgetting the comma",
+      "Putting zu before separable prefixes"
+    ],
+    "commonMistakes_id": [
+      "Menambah zu pada kata kerja modal (um ... zu können salah)",
+      "Lupa koma",
+      "Menaruh zu sebelum prefiks terpisah"
+    ]
+  },
+  {
+    "id": "de_nominalisierung",
+    "language": "de",
+    "title": "Nominalization (Nomen-Verb-Verbindungen)",
+    "pattern": "eine Entscheidung treffen | in Frage kommen",
+    "level": 3,
+    "examMappings": {
+      "goethe": "B1"
+    },
+    "difficulty": 4,
+    "simpleExplanation": "German often expresses verbs as noun + verb combinations: 'eine Entscheidung treffen' (to make a decision) instead of 'entscheiden'.",
+    "detailedExplanation": "Nomen-Verb-Verbindungen are fixed collocations that sound natural and formal: eine Entscheidung treffen (to decide), einen Vorschlag machen (to suggest), Hilfe leisten (to help), in Frage kommen (to be possible). They often carry slightly different registers — the nominalized form is more formal. Learn them as chunks, not word-by-word.",
+    "usage": "eine Entscheidung treffen | einen Vorschlag machen | Hilfe leisten | eine Frage stellen",
+    "avoidWhen": "Don't translate literally from English — 'eine Entscheidung machen' is wrong (it's treffen).",
+    "examples": [
+      {
+        "text": "Ich habe eine Entscheidung getroffen.",
+        "translation": "I have made a decision.",
+        "pronunciation": "ɪç ˈhaːbə ˈaɪnə ɛntˈʃaɪdʊŋ ɡəˈtʁɔfn̩",
+        "translation_en": "I have made a decision.",
+        "translation_id": "Saya sudah mengambil keputusan."
+      },
+      {
+        "text": "Er hat einen Vorschlag gemacht.",
+        "translation": "He made a suggestion.",
+        "pronunciation": "eːɐ hat ˈaɪnən ˈfoːʁʃlaːk ɡəˈmaxt",
+        "translation_en": "He made a suggestion.",
+        "translation_id": "Dia mengajukan usulan."
+      },
+      {
+        "text": "Kann ich Ihnen helfen? Ja, vielen Dank für Ihre Hilfe.",
+        "translation": "Can I help you? Yes, thank you for your help.",
+        "pronunciation": "kan ɪç ˈiːnən ˈhɛlfn̩ jaː ˈfiːlən daŋk fyːɐ ˈiːʁə ˈhɪlfə",
+        "translation_en": "Can I help you? Yes, thank you for your help.",
+        "translation_id": "Bisakah saya membantu Anda? Ya, terima kasih atas bantuannya."
+      }
+    ],
+    "commonMistakes": [
+      "Saying 'eine Entscheidung machen' instead of treffen",
+      "Translating verb+noun combos literally",
+      "Using the informal form in formal writing"
+    ],
+    "relatedPoints": [
+      "de_verb_conjugation"
+    ],
+    "category": "grammar",
+    "tags": [
+      "collocations",
+      "style",
+      "B1"
+    ],
+    "title_en": "Nominalization (Nomen-Verb-Verbindungen)",
+    "title_id": "Nominalisasi (Nomen-Verb-Verbindungen)",
+    "simpleExplanation_en": "German often expresses verbs as noun + verb combinations: 'eine Entscheidung treffen' (to make a decision) instead of 'entscheiden'.",
+    "simpleExplanation_id": "Bahasa Jerman sering mengungkapkan kata kerja sebagai gabungan kata benda + kata kerja: 'eine Entscheidung treffen' (mengambil keputusan) alih-alih 'entscheiden'.",
+    "detailedExplanation_en": "Nomen-Verb-Verbindungen are fixed collocations that sound natural and formal: eine Entscheidung treffen (to decide), einen Vorschlag machen (to suggest), Hilfe leisten (to help), in Frage kommen (to be possible). They often carry slightly different registers — the nominalized form is more formal. Learn them as chunks, not word-by-word.",
+    "detailedExplanation_id": "Nomen-Verb-Verbindungen adalah kolokasi tetap yang terdengar natural dan formal: eine Entscheidung treffen (mengambil keputusan), einen Vorschlag machen (mengusulkan), Hilfe leisten (membantu), in Frage kommen (mungkin). Sering membawa register berbeda — bentuk nominal lebih formal. Pelajari sebagai satu kesatuan, bukan kata per kata.",
+    "usage_en": "eine Entscheidung treffen | einen Vorschlag machen | Hilfe leisten | eine Frage stellen",
+    "usage_id": "eine Entscheidung treffen | einen Vorschlag machen | Hilfe leisten | eine Frage stellen",
+    "avoidWhen_en": "Don't translate literally from English — 'eine Entscheidung machen' is wrong (it's treffen).",
+    "avoidWhen_id": "Jangan terjemahkan harfiah dari bahasa Inggris — 'eine Entscheidung machen' salah (harus treffen).",
+    "commonMistakes_en": [
+      "Saying 'eine Entscheidung machen' instead of treffen",
+      "Translating verb+noun combos literally",
+      "Using the informal form in formal writing"
+    ],
+    "commonMistakes_id": [
+      "Mengucapkan 'eine Entscheidung machen' alih-alih treffen",
+      "Menerjemahkan gabungan kata kerja+kata benda harfiah",
+      "Memakai bentuk informal dalam tulisan formal"
+    ]
+  },
+  {
+    "id": "de_werden_passiv_modals",
+    "language": "de",
+    "title": "Passive with Modal Verbs",
+    "pattern": "modal verb + Partizip II + werden",
+    "level": 3,
+    "examMappings": {
+      "goethe": "B1"
+    },
+    "difficulty": 4,
+    "simpleExplanation": "Combine passive and modals: 'Das Buch muss gelesen werden.' (The book must be read.)",
+    "detailedExplanation": "Structure: conjugated modal + Partizip II + werden (infinitive) at the end. Present: Das Buch muss gelesen werden. Past (Perfekt): Das Buch hat gelesen werden müssen. Past (Präteritum): Das Buch musste gelesen werden. Common modals in passive: müssen (must), können (can), sollen (should), dürfen (may). This is a very common and formal-sounding pattern.",
+    "usage": "Das Buch muss gelesen werden. | Die E-Mail kann morgen geschickt werden.",
+    "avoidWhen": "Don't put werden in the middle — it goes at the very end as an infinitive.",
+    "examples": [
+      {
+        "text": "Das Buch muss gelesen werden.",
+        "translation": "The book must be read.",
+        "pronunciation": "das buːx mʊs ɡəˈleːzn̩ ˈveːɐdn̩",
+        "translation_en": "The book must be read.",
+        "translation_id": "Bukunya harus dibaca."
+      },
+      {
+        "text": "Die E-Mail kann morgen geschickt werden.",
+        "translation": "The email can be sent tomorrow.",
+        "pronunciation": "diː iːˈmaɪl kan ˈmɔʁɡn̩ ɡəˈʃɪkt ˈveːɐdn̩",
+        "translation_en": "The email can be sent tomorrow.",
+        "translation_id": "Emailnya bisa dikirim besok."
+      },
+      {
+        "text": "Das Formular muss ausgefüllt werden.",
+        "translation": "The form must be filled out.",
+        "pronunciation": "das fɔʁmuˈlaːɐ mʊs ˈaʊsɡəfʏlt ˈveːɐdn̩",
+        "translation_en": "The form must be filled out.",
+        "translation_id": "Formulirnya harus diisi."
+      }
+    ],
+    "commonMistakes": [
+      "Using sein instead of werden",
+      "Putting werden before the participle",
+      "Forgetting müssen/werden stay as infinitives"
+    ],
+    "relatedPoints": [
+      "de_passiv",
+      "de_modal_verbs"
+    ],
+    "category": "grammar",
+    "tags": [
+      "passive",
+      "modal verbs",
+      "verbs",
+      "B1"
+    ],
+    "title_en": "Passive with Modal Verbs",
+    "title_id": "Pasif dengan Kata Kerja Modal",
+    "simpleExplanation_en": "Combine passive and modals: 'Das Buch muss gelesen werden.' (The book must be read.)",
+    "simpleExplanation_id": "Gabungkan pasif dan modal: 'Das Buch muss gelesen werden.' (Bukunya harus dibaca.)",
+    "detailedExplanation_en": "Structure: conjugated modal + Partizip II + werden (infinitive) at the end. Present: Das Buch muss gelesen werden. Past (Perfekt): Das Buch hat gelesen werden müssen. Past (Präteritum): Das Buch musste gelesen werden. Common modals in passive: müssen (must), können (can), sollen (should), dürfen (may). This is a very common and formal-sounding pattern.",
+    "detailedExplanation_id": "Struktur: modal terkonjugasi + Partizip II + werden (infinitif) di akhir. Present: Das Buch muss gelesen werden. Past (Perfekt): Das Buch hat gelesen werden müssen. Past (Präteritum): Das Buch musste gelesen werden. Modal umum dalam pasif: müssen (harus), können (bisa), sollen (seharusnya), dürfen (boleh). Ini pola yang sangat umum dan terdengar formal.",
+    "usage_en": "Das Buch muss gelesen werden. | Die E-Mail kann morgen geschickt werden.",
+    "usage_id": "Das Buch muss gelesen werden. | Die E-Mail kann morgen geschickt werden.",
+    "avoidWhen_en": "Don't put werden in the middle — it goes at the very end as an infinitive.",
+    "avoidWhen_id": "Jangan taruh werden di tengah — harus di paling akhir sebagai infinitif.",
+    "commonMistakes_en": [
+      "Using sein instead of werden",
+      "Putting werden before the participle",
+      "Forgetting müssen/werden stay as infinitives"
+    ],
+    "commonMistakes_id": [
+      "Memakai sein alih-alih werden",
+      "Menaruh werden sebelum partisip",
+      "Lupa müssen/werden tetap infinitif"
+    ]
+  },
+  {
+    "id": "de_word_order_adverbials",
+    "language": "de",
+    "title": "Word Order: TeKaMoLo",
+    "pattern": "Time, Reason, Manner, Place (when, why, how, where)",
+    "level": 3,
+    "examMappings": {
+      "goethe": "B1"
+    },
+    "difficulty": 4,
+    "simpleExplanation": "Multiple adverbs follow the order: Time (wann), Reason (warum), Manner (wie), Place (wo).",
+    "detailedExplanation": "When a sentence has several adverbials, German orders them: Te(emporal) Ka(usal) Mo(dal) Lo(kal). Example: Ich gehe heute (time) wegen des Termins (reason) mit dem Bus (manner) ins Büro (place). Exceptions: pronoun objects come before nouns, and dative objects come before accusative objects.",
+    "usage": "Ich fahre morgen wegen des Termins mit dem Auto in die Stadt.",
+    "avoidWhen": "Don't scatter the adverbials randomly — keep the TeKaMoLo order unless you deliberately move one to the front.",
+    "examples": [
+      {
+        "text": "Ich fahre morgen mit dem Auto ins Büro.",
+        "translation": "I drive to the office by car tomorrow.",
+        "pronunciation": "ɪç ˈfaːʁə ˈmɔʁɡn̩ mɪt deːm ˈaʊto ɪns byˈʁoː",
+        "translation_en": "I drive to the office by car tomorrow.",
+        "translation_id": "Besok saya pergi ke kantor naik mobil."
+      },
+      {
+        "text": "Wir treffen uns heute Abend im Park.",
+        "translation": "We meet in the park this evening.",
+        "pronunciation": "viːɐ ˈtʁɛfn̩ ʊns ˈhɔʏtə ˈaːbn̩t ɪm paʁk",
+        "translation_en": "We meet in the park this evening.",
+        "translation_id": "Kami bertemu di taman malam ini."
+      },
+      {
+        "text": "Sie kommt am Montag wegen der Besprechung nach Berlin.",
+        "translation": "She comes to Berlin on Monday because of the meeting.",
+        "pronunciation": "ziː kɔmt am ˈmoːntaːk ˈveːɡn̩ deːɐ bəˈʃpʁɛçʊŋ naːx bɛɐ̯ˈliːn",
+        "translation_en": "She comes to Berlin on Monday because of the meeting.",
+        "translation_id": "Dia datang ke Berlin hari Senin karena rapat."
+      }
+    ],
+    "commonMistakes": [
+      "Putting place before time",
+      "Forgetting the dative-before-accusative rule",
+      "Putting manner before reason"
+    ],
+    "relatedPoints": [
+      "de_word_order",
+      "de_word_order_inversion"
+    ],
+    "category": "grammar",
+    "tags": [
+      "word order",
+      "adverbs",
+      "syntax",
+      "B1"
+    ],
+    "title_en": "Word Order: TeKaMoLo",
+    "title_id": "Urutan Kata: TeKaMoLo",
+    "simpleExplanation_en": "Multiple adverbs follow the order: Time (wann), Reason (warum), Manner (wie), Place (wo).",
+    "simpleExplanation_id": "Beberapa adverbia mengikuti urutan: Waktu (kapan), Sebab (mengapa), Cara (bagaimana), Tempat (di mana).",
+    "detailedExplanation_en": "When a sentence has several adverbials, German orders them: Te(emporal) Ka(usal) Mo(dal) Lo(kal). Example: Ich gehe heute (time) wegen des Termins (reason) mit dem Bus (manner) ins Büro (place). Exceptions: pronoun objects come before nouns, and dative objects come before accusative objects.",
+    "detailedExplanation_id": "Saat satu kalimat punya beberapa adverbia, bahasa Jerman mengurutkannya: Te(mporal) Ka(usal) Mo(dal) Lo(kal). Contoh: Ich gehe heute (waktu) wegen des Termins (sebab) mit dem Bus (cara) ins Büro (tempat). Pengecualian: objek pronomina sebelum kata benda, dan objek datif sebelum akusatif.",
+    "usage_en": "Ich fahre morgen wegen des Termins mit dem Auto in die Stadt.",
+    "usage_id": "Ich fahre morgen wegen des Termins mit dem Auto in die Stadt.",
+    "avoidWhen_en": "Don't scatter the adverbials randomly — keep the TeKaMoLo order unless you deliberately move one to the front.",
+    "avoidWhen_id": "Jangan sebar adverbia acak — ikuti urutan TeKaMoLo kecuali sengaja memindah satu ke depan.",
+    "commonMistakes_en": [
+      "Putting place before time",
+      "Forgetting the dative-before-accusative rule",
+      "Putting manner before reason"
+    ],
+    "commonMistakes_id": [
+      "Menaruh tempat sebelum waktu",
+      "Lupa aturan datif sebelum akusatif",
+      "Menaruh cara sebelum sebab"
+    ]
+  },
+  {
+    "id": "de_trennbar_untrennbar",
+    "language": "de",
+    "title": "Trennbare vs Untrennbare Prefixes",
+    "pattern": "trennbar: an|kommen → ich komme an | untrennbar: verstehen → ich verstehe",
+    "level": 3,
+    "examMappings": {
+      "goethe": "B1"
+    },
+    "difficulty": 3,
+    "simpleExplanation": "Separable prefixes (an-, auf-, aus-, ein-, mit-, vor-, zu-) separate in the present, inseparable ones (be-, er-, ge-, ver-, zer-) never do.",
+    "detailedExplanation": "Separable prefixes carry the stress and split off: aufstehen → ich stehe auf, einkaufen → ich kaufe ein, mitkommen → du kommst mit. In Perfekt they form ge-...-t/en with the prefix glued back: aufgestanden, eingekauft. Inseparable prefixes are unstressed, never split, and form the participle without ge-: verstehen → ich verstehe, verstanden. The same verb root can differ: um|fahren (separable, to knock over) vs umfahren (inseparable, to drive around).",
+    "usage": "Ich stehe auf. | Er kauft ein. | Ich verstehe dich. | Sie ist aufgestanden.",
+    "avoidWhen": "Don't split inseparable prefixes (ich ver-stehe, not ich stehe ver). Don't forget ge- is dropped with inseparable prefixes.",
+    "examples": [
+      {
+        "text": "Ich stehe um sechs auf.",
+        "translation": "I get up at six.",
+        "pronunciation": "ɪç ˈʃteːə ʊm zɛks aʊf",
+        "translation_en": "I get up at six.",
+        "translation_id": "Saya bangun jam enam."
+      },
+      {
+        "text": "Er kauft im Supermarkt ein.",
+        "translation": "He shops at the supermarket.",
+        "pronunciation": "eːɐ kaʊft ɪm ˈzuːpɐmaʁkt aɪn",
+        "translation_en": "He shops at the supermarket.",
+        "translation_id": "Dia berbelanja di supermarket."
+      },
+      {
+        "text": "Ich verstehe dich nicht.",
+        "translation": "I don't understand you.",
+        "pronunciation": "ɪç fɛɐˈʃteːə dɪç nɪçt",
+        "translation_en": "I don't understand you.",
+        "translation_id": "Saya tidak mengerti kamu."
+      }
+    ],
+    "commonMistakes": [
+      "Splitting inseparable verbs",
+      "Forgetting the prefix moves to the end in present",
+      "Adding ge- to inseparable participles (ge-verstanden is wrong)"
+    ],
+    "relatedPoints": [
+      "de_separable_verbs",
+      "de_past_perfect"
+    ],
+    "category": "grammar",
+    "tags": [
+      "verbs",
+      "prefixes",
+      "word formation",
+      "B1"
+    ],
+    "title_en": "Trennbare vs Untrennbare Prefixes",
+    "title_id": "Prefiks Trennbare vs Untrennbare",
+    "simpleExplanation_en": "Separable prefixes (an-, auf-, aus-, ein-, mit-, vor-, zu-) separate in the present, inseparable ones (be-, er-, ge-, ver-, zer-) never do.",
+    "simpleExplanation_id": "Prefiks terpisah (an-, auf-, aus-, ein-, mit-, vor-, zu-) berpisah di present, yang tak terpisah (be-, er-, ge-, ver-, zer-) tidak pernah.",
+    "detailedExplanation_en": "Separable prefixes carry the stress and split off: aufstehen → ich stehe auf, einkaufen → ich kaufe ein, mitkommen → du kommst mit. In Perfekt they form ge-...-t/en with the prefix glued back: aufgestanden, eingekauft. Inseparable prefixes are unstressed, never split, and form the participle without ge-: verstehen → ich verstehe, verstanden. The same verb root can differ: um|fahren (separable, to knock over) vs umfahren (inseparable, to drive around).",
+    "detailedExplanation_id": "Prefiks terpisah membawa tekanan dan terpisah: aufstehen → ich stehe auf, einkaufen → ich kaufe ein, mitkommen → du kommst mit. Dalam Perfekt membentuk ge-...-t/en dengan prefiks ditempel kembali: aufgestanden, eingekauft. Prefiks tak terpisah tanpa tekanan, tidak pernah berpisah, dan membentuk partisip tanpa ge-: verstehen → ich verstehe, verstanden. Akar yang sama bisa berbeda: um|fahren (terpisah, menabrak) vs umfahren (tak terpisah, memutari).",
+    "usage_en": "Ich stehe auf. | Er kauft ein. | Ich verstehe dich. | Sie ist aufgestanden.",
+    "usage_id": "Ich stehe auf. | Er kauft ein. | Ich verstehe dich. | Sie ist aufgestanden.",
+    "avoidWhen_en": "Don't split inseparable prefixes. Don't forget ge- is dropped with inseparable prefixes.",
+    "avoidWhen_id": "Jangan pisahkan prefiks tak terpisah. Jangan lupa ge- dihilangkan pada prefiks tak terpisah.",
+    "commonMistakes_en": [
+      "Splitting inseparable verbs",
+      "Forgetting the prefix moves to the end in present",
+      "Adding ge- to inseparable participles"
+    ],
+    "commonMistakes_id": [
+      "Memisahkan kata kerja tak terpisah",
+      "Lupa prefiks pindah ke akhir di present",
+      "Menambah ge- pada partisip tak terpisah"
+    ]
+  },
+  {
+    "id": "de_temporal_conjunctions",
+    "title": "Temporal Clauses: als, wenn, während, nachdem",
+    "title_en": "Temporal Clauses: als, wenn, während, nachdem",
+    "title_id": "Klausa Temporal: als, wenn, während, nachdem",
+    "pattern": "als / wenn (when) / während (while) / nachdem (after)",
+    "simpleExplanation": "als = a single past event, wenn = repeated/habitual events (past, present or future), während = two simultaneous actions, nachdem = one action before another (perfect + past).",
+    "simpleExplanation_en": "als = a single past event, wenn = repeated/habitual events (past, present or future), während = two simultaneous actions, nachdem = one action before another (perfect + past).",
+    "simpleExplanation_id": "als = satu kejadian tunggal di masa lalu, wenn = kejadian berulang/kebiasaan (lampau, kini, atau depan), während = dua aksi bersamaan, nachdem = satu aksi sebelum aksi lain (Perfekt + lampau).",
+    "detailedExplanation": "als + Präteritum (single past): Als ich jung war, spielte ich Fußball. (When I was young, I played football.) wenn + Präsens or Präteritum (repeated): Wenn ich Zeit habe, lese ich. (Whenever I have time, I read.) Wenn ich Zeit hatte, las ich. (Whenever I had time, I read.) während + both clauses same tense: Während ich koche, höre ich Musik. (While I cook, I listen to music.) nachdem + Plusquamperfekt → Präteritum: Nachdem ich gegessen hatte, ging ich spazieren. (After I had eaten, I went for a walk.)",
+    "detailedExplanation_en": "als + Präteritum (single past): Als ich jung war, spielte ich Fußball. (When I was young, I played football.) wenn + Präsens or Präteritum (repeated): Wenn ich Zeit habe, lese ich. (Whenever I have time, I read.) Wenn ich Zeit hatte, las ich. (Whenever I had time, I read.) während + both clauses same tense: Während ich koche, höre ich Musik. (While I cook, I listen to music.) nachdem + Plusquamperfekt → Präteritum: Nachdem ich gegessen hatte, ging ich spazieren. (After I had eaten, I went for a walk.)",
+    "detailedExplanation_id": "als + Präteritum (kejadian tunggal lampau): Als ich jung war, spielte ich Fußball. (Ketika saya muda, saya bermain sepak bola.) wenn + Präsens atau Präteritum (berulang): Wenn ich Zeit habe, lese ich. (Kapan pun saya punya waktu, saya membaca.) Wenn ich Zeit hatte, las ich. (Kapan pun saya punya waktu, saya membaca.) während + dua klausa dengan tensa sama: Während ich koche, höre ich Musik. (Sambil memasak, saya mendengarkan musik.) nachdem + Plusquamperfekt → Präteritum: Nachdem ich gegessen hatte, ging ich spazieren. (Setelah saya makan, saya jalan-jalan.)",
+    "usage": "Als ich klein war, wohnte ich in Köln. | Wenn es regnet, bleibe ich zu Hause. | Während sie arbeitet, kocht er. | Nachdem er angekommen war, rief er an.",
+    "usage_en": "Als ich klein war, wohnte ich in Köln. | Wenn es regnet, bleibe ich zu Hause. | Während sie arbeitet, kocht er. | Nachdem er angekommen war, rief er an.",
+    "usage_id": "Als ich klein war, wohnte ich in Köln. | Wenn es regnet, bleibe ich zu Hause. | Während sie arbeitet, kocht er. | Nachdem er angekommen war, rief er an.",
+    "avoidWhen": "Don't use als for repeated actions (use wenn) or for the future (use wenn). Don't use nachdem with two same-tense clauses — the earlier action needs Plusquamperfekt.",
+    "avoidWhen_en": "Don't use als for repeated actions (use wenn) or for the future (use wenn). Don't use nachdem with two same-tense clauses — the earlier action needs Plusquamperfekt.",
+    "avoidWhen_id": "Jangan pakai als untuk aksi berulang (pakai wenn) atau untuk masa depan (pakai wenn). Jangan pakai nachdem dengan dua klausa bertensa sama — aksi yang lebih dulu butuh Plusquamperfekt.",
+    "examples": [
+      {
+        "text": "Als ich jung war, spielte ich Fußball.",
+        "translation": "When I was young, I played football.",
+        "pronunciation": "als ɪç jʊŋ vaːɐ̯ ˈʃpiːltə ɪç ˈfuːsbal",
+        "translation_en": "When I was young, I played football.",
+        "translation_id": "Ketika saya muda, saya bermain sepak bola."
+      },
+      {
+        "text": "Wenn es regnet, bleibe ich zu Hause.",
+        "translation": "Whenever it rains, I stay at home.",
+        "pronunciation": "vɛn ɛs ˈʁeːɡnət ˈblaɪbə ɪç tsuː ˈhaʊzə",
+        "translation_en": "Whenever it rains, I stay at home.",
+        "translation_id": "Kapan pun hujan, saya tinggal di rumah."
+      },
+      {
+        "text": "Während ich koche, höre ich Musik.",
+        "translation": "While I cook, I listen to music.",
+        "pronunciation": "ˈvɛːʁənt ɪç ˈkɔxə ˈhøːʁə ɪç muˈziːk",
+        "translation_en": "While I cook, I listen to music.",
+        "translation_id": "Sambil memasak, saya mendengarkan musik."
+      },
+      {
+        "text": "Nachdem ich gegessen hatte, ging ich spazieren.",
+        "translation": "After I had eaten, I went for a walk.",
+        "pronunciation": "ˈnaːxdeːm ɪç ɡəˈɡɛsn̩ ˈhatə ɡɪŋ ɪç ʃpaˈtsiːʁən",
+        "translation_en": "After I had eaten, I went for a walk.",
+        "translation_id": "Setelah saya makan, saya jalan-jalan."
+      }
+    ],
+    "commonMistakes": [
+      "Using als instead of wenn for repeated actions",
+      "Using wenn instead of als for a single past event",
+      "Forgetting the verb at the end of the subordinate clause"
+    ],
+    "commonMistakes_en": [
+      "Using als instead of wenn for repeated actions",
+      "Using wenn instead of als for a single past event",
+      "Forgetting the verb at the end of the subordinate clause"
+    ],
+    "commonMistakes_id": [
+      "Memakai als alih-alih wenn untuk aksi berulang",
+      "Memakai wenn alih-alih als untuk satu kejadian lampau",
+      "Lupa meletakkan verba di akhir klausa subordinat"
+    ],
+    "relatedPoints": [
+      "de_plusquamperfekt",
+      "de_subordinate_clauses"
+    ],
+    "category": "grammar",
+    "tags": [
+      "clauses",
+      "conjunctions",
+      "syntax",
+      "B1"
+    ],
+    "level": 3,
+    "difficulty": 3,
+    "examMappings": {
+      "goethe": "B1"
+    }
+  },
+  {
+    "id": "de_causal_conjunctions",
+    "title": "Causal Clauses: weil, da",
+    "title_en": "Causal Clauses: weil, da",
+    "title_id": "Klausa Kausal: weil, da",
+    "pattern": "weil / da (because, since)",
+    "simpleExplanation": "weil and da both mean 'because' and put the verb at the end. da is used when the reason is already known to both speakers (often at the start of the sentence).",
+    "simpleExplanation_en": "weil and da both mean 'because' and put the verb at the end. da is used when the reason is already known to both speakers (often at the start of the sentence).",
+    "simpleExplanation_id": "weil dan da sama-sama berarti 'karena' dan menaruh verba di akhir klausa. da dipakai saat alasan sudah diketahui kedua pembicara (sering di awal kalimat).",
+    "detailedExplanation": "weil + verb at end: Ich bleibe zu Hause, weil ich müde bin. (I stay at home because I am tired.) da + verb at end, usually first clause: Da es regnet, bleibe ich zu Hause. (Since it is raining, I stay at home.) Both answer the question 'Why?'. da is more formal and tends to state a reason the listener already knows.",
+    "detailedExplanation_en": "weil + verb at end: Ich bleibe zu Hause, weil ich müde bin. (I stay at home because I am tired.) da + verb at end, usually first clause: Da es regnet, bleibe ich zu Hause. (Since it is raining, I stay at home.) Both answer the question 'Why?'. da is more formal and tends to state a reason the listener already knows.",
+    "detailedExplanation_id": "weil + verba di akhir: Ich bleibe zu Hause, weil ich müde bin. (Saya tinggal di rumah karena saya lelah.) da + verba di akhir, biasanya klausa pertama: Da es regnet, bleibe ich zu Hause. (Karena hujan, saya tinggal di rumah.) Keduanya menjawab pertanyaan 'Mengapa?'. da lebih formal dan cenderung menyatakan alasan yang sudah diketahui pendengar.",
+    "usage": "Ich komme nicht, weil ich keine Zeit habe. | Da du schon da bist, können wir beginnen. | Er lernt Deutsch, weil er nach Berlin will.",
+    "usage_en": "Ich komme nicht, weil ich keine Zeit habe. | Da du schon da bist, können wir beginnen. | Er lernt Deutsch, weil er nach Berlin will.",
+    "usage_id": "Ich komme nicht, weil ich keine Zeit habe. | Da du schon da bist, können wir beginnen. | Er lernt Deutsch, weil er nach Berlin will.",
+    "avoidWhen": "Don't use weil twice in one sentence (use deshalb/deswegen instead for the main clause). Don't use denn with the verb at the end — denn keeps normal word order.",
+    "avoidWhen_en": "Don't use weil twice in one sentence (use deshalb/deswegen instead for the main clause). Don't use denn with the verb at the end — denn keeps normal word order.",
+    "avoidWhen_id": "Jangan pakai weil dua kali dalam satu kalimat (pakai deshalb/deswegen untuk klausa utama). Jangan pakai denn dengan verba di akhir — denn memakai urutan kata normal.",
+    "examples": [
+      {
+        "text": "Ich bleibe zu Hause, weil ich müde bin.",
+        "translation": "I stay at home because I am tired.",
+        "pronunciation": "ɪç ˈblaɪbə tsuː ˈhaʊzə vaɪl ɪç ˈmyːdə bɪn",
+        "translation_en": "I stay at home because I am tired.",
+        "translation_id": "Saya tinggal di rumah karena saya lelah."
+      },
+      {
+        "text": "Da es regnet, bleibe ich zu Hause.",
+        "translation": "Since it is raining, I stay at home.",
+        "pronunciation": "daː ɛs ˈʁeːɡnət ˈblaɪbə ɪç tsuː ˈhaʊzə",
+        "translation_en": "Since it is raining, I stay at home.",
+        "translation_id": "Karena hujan, saya tinggal di rumah."
+      },
+      {
+        "text": "Er lernt Deutsch, weil er nach Berlin will.",
+        "translation": "He learns German because he wants to go to Berlin.",
+        "pronunciation": "eːɐ̯ lɛʁnt dɔʏtʃ vaɪl eːɐ̯ naːx bɛʁˈliːn vɪl",
+        "translation_en": "He learns German because he wants to go to Berlin.",
+        "translation_id": "Dia belajar bahasa Jerman karena ingin ke Berlin."
+      }
+    ],
+    "commonMistakes": [
+      "Putting the verb not at the end after weil",
+      "Using weil and deshalb in the same sentence with the verb position wrong"
+    ],
+    "commonMistakes_en": [
+      "Putting the verb not at the end after weil",
+      "Using weil and deshalb in the same sentence with the verb position wrong"
+    ],
+    "commonMistakes_id": [
+      "Tidak meletakkan verba di akhir setelah weil",
+      "Memakai weil dan deshalb dalam kalimat yang sama dengan posisi verba salah"
+    ],
+    "relatedPoints": [
+      "de_subordinate_clauses",
+      "de_consecutive_clauses"
+    ],
+    "category": "grammar",
+    "tags": [
+      "clauses",
+      "conjunctions",
+      "syntax",
+      "B1"
+    ],
+    "level": 3,
+    "difficulty": 2,
+    "examMappings": {
+      "goethe": "B1"
+    }
+  },
+  {
+    "id": "de_consecutive_clauses",
+    "title": "Consecutive Clauses: so dass, so ... dass",
+    "title_en": "Consecutive Clauses: so dass, so ... dass",
+    "title_id": "Klausa Konsekutif: so dass, so ... dass",
+    "pattern": "so dass / so ... dass (so that, so ... that)",
+    "simpleExplanation": "so dass introduces a result or consequence. so + adjective/adverb + dass emphasises the degree that causes the result.",
+    "simpleExplanation_en": "so dass introduces a result or consequence. so + adjective/adverb + dass emphasises the degree that causes the result.",
+    "simpleExplanation_id": "so dass memperkenalkan hasil atau konsekuensi. so + kata sifat/kata keterangan + dass menekankan derajat yang menyebabkan hasil.",
+    "detailedExplanation": "so dass + verb at end: Es war spät, so dass wir nach Hause gingen. (It was late, so that we went home.) so + adj/adv + dass + verb at end: Das Buch war so gut, dass ich es zweimal las. (The book was so good that I read it twice.) The main clause states the cause, the so dass clause the consequence.",
+    "detailedExplanation_en": "so dass + verb at end: Es war spät, so dass wir nach Hause gingen. (It was late, so that we went home.) so + adj/adv + dass + verb at end: Das Buch war so gut, dass ich es zweimal las. (The book was so good that I read it twice.) The main clause states the cause, the so dass clause the consequence.",
+    "detailedExplanation_id": "so dass + verba di akhir: Es war spät, so dass wir nach Hause gingen. (Sudah larut, sehingga kami pulang.) so + kata sifat/kata keterangan + dass + verba di akhir: Das Buch war so gut, dass ich es zweimal las. (Bukunya bagus sekali sehingga saya membacanya dua kali.) Klausa utama menyatakan sebab, klausa so dass menyatakan akibat.",
+    "usage": "Ich hatte viel Arbeit, so dass ich spät schlief. | Das Wetter war so schön, dass wir draußen aßen.",
+    "usage_en": "Ich hatte viel Arbeit, so dass ich spät schlief. | Das Wetter war so schön, dass wir draußen aßen.",
+    "usage_id": "Ich hatte viel Arbeit, so dass ich spät schlief. | Das Wetter war so schön, dass wir draußen aßen.",
+    "avoidWhen": "Don't use so dass with a verb not at the end. Don't use so dass after a wish or purpose — that needs damit or um ... zu.",
+    "avoidWhen_en": "Don't use so dass with a verb not at the end. Don't use so dass after a wish or purpose — that needs damit or um ... zu.",
+    "avoidWhen_id": "Jangan pakai so dass dengan verba yang bukan di akhir. Jangan pakai so dass untuk keinginan atau tujuan — itu butuh damit atau um ... zu.",
+    "examples": [
+      {
+        "text": "Es war spät, so dass wir nach Hause gingen.",
+        "translation": "It was late, so we went home.",
+        "pronunciation": "ɛs vaːɐ̯ ʃpɛːt zoː das viːɐ̯ naːx ˈhaʊzə ˈɡɪŋən",
+        "translation_en": "It was late, so we went home.",
+        "translation_id": "Sudah larut, sehingga kami pulang."
+      },
+      {
+        "text": "Das Buch war so gut, dass ich es zweimal las.",
+        "translation": "The book was so good that I read it twice.",
+        "pronunciation": "das buːx vaːɐ̯ zoː ɡuːt das ɪç ɛs ˈtsvaɪ̯maːl laːs",
+        "translation_en": "The book was so good that I read it twice.",
+        "translation_id": "Bukunya bagus sekali sehingga saya membacanya dua kali."
+      },
+      {
+        "text": "Ich hatte viel Arbeit, so dass ich spät schlief.",
+        "translation": "I had a lot of work, so I slept late.",
+        "pronunciation": "ɪç ˈhatə fiːl ˈaʁbaɪt zoː das ɪç ʃpɛːt ʃliːf",
+        "translation_en": "I had a lot of work, so I slept late.",
+        "translation_id": "Saya punya banyak pekerjaan, sehingga saya tidur larut."
+      }
+    ],
+    "commonMistakes": [
+      "Putting the verb not at the end after so dass",
+      "Using so dass for a purpose instead of damit"
+    ],
+    "commonMistakes_en": [
+      "Putting the verb not at the end after so dass",
+      "Using so dass for a purpose instead of damit"
+    ],
+    "commonMistakes_id": [
+      "Tidak meletakkan verba di akhir setelah so dass",
+      "Memakai so dass untuk tujuan alih-alih damit"
+    ],
+    "relatedPoints": [
+      "de_causal_conjunctions",
+      "de_clauses_obwohl_damit"
+    ],
+    "category": "grammar",
+    "tags": [
+      "clauses",
+      "conjunctions",
+      "syntax",
+      "B1"
+    ],
+    "level": 3,
+    "difficulty": 3,
+    "examMappings": {
+      "goethe": "B1"
+    }
+  },
+  {
+    "id": "de_correlative_conjunctions",
+    "title": "Correlative Conjunctions: entweder ... oder, weder ... noch, nicht nur ... sondern auch, sowohl ... als auch, je ... desto",
+    "title_en": "Correlative Conjunctions: entweder ... oder, weder ... noch, nicht nur ... sondern auch, sowohl ... als auch, je ... desto",
+    "title_id": "Konjungsi Berpasangan: entweder ... oder, weder ... noch, nicht nur ... sondern auch, sowohl ... als auch, je ... desto",
+    "pattern": "entweder ... oder (either ... or) / weder ... noch (neither ... nor) / nicht nur ... sondern auch (not only ... but also) / sowohl ... als auch (both ... and) / je ... desto (the ... the)",
+    "simpleExplanation": "These paired conjunctions connect two alternatives or equal elements. je ... desto compares: the more/less A, the more/less B.",
+    "simpleExplanation_en": "These paired conjunctions connect two alternatives or equal elements. je ... desto compares: the more/less A, the more/less B.",
+    "simpleExplanation_id": "Konjungsi berpasangan ini menghubungkan dua alternatif atau elemen setara. je ... desto membandingkan: semakin A, semakin B.",
+    "detailedExplanation": "entweder ... oder: Entweder du kommst, oder ich gehe. (Either you come or I go.) weder ... noch: Ich mag weder Kaffee noch Tee. (I like neither coffee nor tea.) nicht nur ... sondern auch: Er spricht nicht nur Deutsch, sondern auch Englisch. (He speaks not only German but also English.) sowohl ... als auch: Sie kauft sowohl Obst als auch Gemüse. (She buys both fruit and vegetables.) je ... desto: Je mehr du übst, desto besser wirst du. (The more you practise, the better you become.)",
+    "detailedExplanation_en": "entweder ... oder: Entweder du kommst, oder ich gehe. (Either you come or I go.) weder ... noch: Ich mag weder Kaffee noch Tee. (I like neither coffee nor tea.) nicht nur ... sondern auch: Er spricht nicht nur Deutsch, sondern auch Englisch. (He speaks not only German but also English.) sowohl ... als auch: Sie kauft sowohl Obst als auch Gemüse. (She buys both fruit and vegetables.) je ... desto: Je mehr du übst, desto besser wirst du. (The more you practise, the better you become.)",
+    "detailedExplanation_id": "entweder ... oder: Entweder du kommst, oder ich gehe. (Entah kamu datang, atau saya pergi.) weder ... noch: Ich mag weder Kaffee noch Tee. (Saya tidak suka kopi maupun teh.) nicht nur ... sondern auch: Er spricht nicht nur Deutsch, sondern auch Englisch. (Dia berbicara bukan hanya bahasa Jerman, tetapi juga bahasa Inggris.) sowohl ... als auch: Sie kauft sowohl Obst als auch Gemüse. (Dia membeli buah maupun sayuran.) je ... desto: Je mehr du übst, desto besser wirst du. (Semakin banyak kamu berlatih, semakin baik kamu.)",
+    "usage": "Entweder du hilfst mir, oder ich mache es allein. | Er hat weder Zeit noch Geld. | Sie lernt nicht nur Englisch, sondern auch Französisch.",
+    "usage_en": "Entweder du hilfst mir, oder ich mache es allein. | Er hat weder Zeit noch Geld. | Sie lernt nicht nur Englisch, sondern auch Französisch.",
+    "usage_id": "Entweder du hilfst mir, oder ich mache es allein. | Er hat weder Zeit noch Geld. | Sie lernt nicht nur Englisch, sondern auch Französisch.",
+    "avoidWhen": "weder ... noch already means 'neither ... nor' — don't add a second nicht. In je ... desto clauses the verb is often at the end of the je clause.",
+    "avoidWhen_en": "weder ... noch already means 'neither ... nor' — don't add a second nicht. In je ... desto clauses the verb is often at the end of the je clause.",
+    "avoidWhen_id": "weder ... noch sudah berarti 'tidak ... maupun' — jangan tambah nicht lagi. Pada klausa je ... desto, verba sering di akhir klausa je.",
+    "examples": [
+      {
+        "text": "Entweder du kommst, oder ich gehe.",
+        "translation": "Either you come or I go.",
+        "pronunciation": "ˈɛntveːdɐ duː kɔmst ˈoːdɐ ɪç ˈɡeːə",
+        "translation_en": "Either you come or I go.",
+        "translation_id": "Entah kamu datang, atau saya pergi."
+      },
+      {
+        "text": "Ich mag weder Kaffee noch Tee.",
+        "translation": "I like neither coffee nor tea.",
+        "pronunciation": "ɪç maːk ˈveːdɐ ˈkafeː nɔx teː",
+        "translation_en": "I like neither coffee nor tea.",
+        "translation_id": "Saya tidak suka kopi maupun teh."
+      },
+      {
+        "text": "Er spricht nicht nur Deutsch, sondern auch Englisch.",
+        "translation": "He speaks not only German but also English.",
+        "pronunciation": "eːɐ̯ ʃpʁɪçt nɪçt nuːɐ̯ dɔʏtʃ ˈzɔndɐn aʊx ˈɛŋlɪʃ",
+        "translation_en": "He speaks not only German but also English.",
+        "translation_id": "Dia berbicara bukan hanya bahasa Jerman, tetapi juga bahasa Inggris."
+      },
+      {
+        "text": "Je mehr du übst, desto besser wirst du.",
+        "translation": "The more you practise, the better you become.",
+        "pronunciation": "jeː meːɐ̯ duː ʏpst ˈdɛsto ˈbɛsɐ vɪʁst duː",
+        "translation_en": "The more you practise, the better you become.",
+        "translation_id": "Semakin banyak kamu berlatih, semakin baik kamu."
+      }
+    ],
+    "commonMistakes": [
+      "Adding nicht after weder ... noch",
+      "Forgetting auch after sondern in nicht nur ... sondern auch"
+    ],
+    "commonMistakes_en": [
+      "Adding nicht after weder ... noch",
+      "Forgetting auch after sondern in nicht nur ... sondern auch"
+    ],
+    "commonMistakes_id": [
+      "Menambahkan nicht setelah weder ... noch",
+      "Lupa auch setelah sondern pada nicht nur ... sondern auch"
+    ],
+    "relatedPoints": [
+      "de_causal_conjunctions",
+      "de_word_order_adverbials"
+    ],
+    "category": "grammar",
+    "tags": [
+      "conjunctions",
+      "syntax",
+      "B1"
+    ],
+    "level": 3,
+    "difficulty": 3,
+    "examMappings": {
+      "goethe": "B1"
+    }
+  },
+  {
+    "id": "de_plusquamperfekt",
+    "title": "Plusquamperfekt (Past Perfect)",
+    "title_en": "Plusquamperfekt (Past Perfect)",
+    "title_id": "Plusquamperfekt (Past Perfect)",
+    "pattern": "hatte/war + Partizip II",
+    "simpleExplanation": "Plusquamperfekt describes an action that happened before another past action. Form it with hatte or war (in Präteritum) + the past participle.",
+    "simpleExplanation_en": "Plusquamperfekt describes an action that happened before another past action. Form it with hatte or war (in Präteritum) + the past participle.",
+    "simpleExplanation_id": "Plusquamperfekt menggambarkan aksi yang terjadi sebelum aksi lampau lain. Bentuknya dengan hatte atau war (dalam Präteritum) + partisip lampau.",
+    "detailedExplanation": "ich hatte gearbeitet (I had worked), ich war gegangen (I had gone). Use it with a second clause in Präteritum to show the order: Nachdem ich gegessen hatte, ging ich spazieren. (After I had eaten, I went for a walk.) Without a second past action, Präteritum or Perfekt is enough.",
+    "detailedExplanation_en": "ich hatte gearbeitet (I had worked), ich war gegangen (I had gone). Use it with a second clause in Präteritum to show the order: Nachdem ich gegessen hatte, ging ich spazieren. (After I had eaten, I went for a walk.) Without a second past action, Präteritum or Perfekt is enough.",
+    "detailedExplanation_id": "ich hatte gearbeitet (saya sudah bekerja), ich war gegangen (saya sudah pergi). Pakai dengan klausa kedua ber-Präteritum untuk menunjukkan urutan: Nachdem ich gegessen hatte, ging ich spazieren. (Setelah saya makan, saya jalan-jalan.) Tanpa aksi lampau kedua, Präteritum atau Perfekt sudah cukup.",
+    "usage": "Bevor er kam, hatte ich gekocht. | Sie war schon gegangen, als ich ankam.",
+    "usage_en": "Bevor er kam, hatte ich gekocht. | Sie war schon gegangen, als ich ankam.",
+    "usage_id": "Bevor er kam, hatte ich gekocht. | Sie war schon gegangen, als ich ankam.",
+    "avoidWhen": "Don't use Plusquamperfekt alone — it needs a second past action to compare against. Verbs that take sein in Perfekt (go, come, arrive) also take war in Plusquamperfekt.",
+    "avoidWhen_en": "Don't use Plusquamperfekt alone — it needs a second past action to compare against. Verbs that take sein in Perfekt (go, come, arrive) also take war in Plusquamperfekt.",
+    "avoidWhen_id": "Jangan pakai Plusquamperfekt sendirian — ia butuh aksi lampau kedua sebagai pembanding. Verba yang memakai sein di Perfekt (pergi, datang, tiba) juga memakai war di Plusquamperfekt.",
+    "examples": [
+      {
+        "text": "Nachdem ich gegessen hatte, ging ich spazieren.",
+        "translation": "After I had eaten, I went for a walk.",
+        "pronunciation": "ˈnaːxdeːm ɪç ɡəˈɡɛsn̩ ˈhatə ɡɪŋ ɪç ʃpaˈtsiːʁən",
+        "translation_en": "After I had eaten, I went for a walk.",
+        "translation_id": "Setelah saya makan, saya jalan-jalan."
+      },
+      {
+        "text": "Sie war schon gegangen, als ich ankam.",
+        "translation": "She had already left when I arrived.",
+        "pronunciation": "ziː vaːɐ̯ ʃoːn ɡəˈɡaŋən als ɪç ˈankam",
+        "translation_en": "She had already left when I arrived.",
+        "translation_id": "Dia sudah pergi ketika saya tiba."
+      },
+      {
+        "text": "Bevor er kam, hatte ich gekocht.",
+        "translation": "Before he came, I had cooked.",
+        "pronunciation": "bəˈfoːɐ̯ eːɐ̯ kaːm ˈhatə ɪç ɡəˈkɔxt",
+        "translation_en": "Before he came, I had cooked.",
+        "translation_id": "Sebelum dia datang, saya sudah memasak."
+      }
+    ],
+    "commonMistakes": [
+      "Using Plusquamperfekt without a second past action",
+      "Using hatte instead of war for movement verbs",
+      "Forgetting the participle at the end"
+    ],
+    "commonMistakes_en": [
+      "Using Plusquamperfekt without a second past action",
+      "Using hatte instead of war for movement verbs",
+      "Forgetting the participle at the end"
+    ],
+    "commonMistakes_id": [
+      "Memakai Plusquamperfekt tanpa aksi lampau kedua",
+      "Memakai hatte alih-alih war untuk verba gerak",
+      "Lupa menaruh partisip di akhir"
+    ],
+    "relatedPoints": [
+      "de_temporal_conjunctions",
+      "de_past_perfect",
+      "de_praeteritum_haben_sein"
+    ],
+    "category": "grammar",
+    "tags": [
+      "verbs",
+      "tenses",
+      "B1"
+    ],
+    "level": 3,
+    "difficulty": 3,
+    "examMappings": {
+      "goethe": "B1"
+    }
+  }
+]
