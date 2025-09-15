@@ -1,0 +1,590 @@
+[
+  {
+    "id": "en-p1-1",
+    "band": 1,
+    "type": "multiple-choice",
+    "prompt": "What is the opposite of \"hot\"?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "cold"
+      },
+      {
+        "id": "o1",
+        "label": "warm"
+      },
+      {
+        "id": "o2",
+        "label": "wet"
+      },
+      {
+        "id": "o3",
+        "label": "big"
+      }
+    ],
+    "correct": "o0",
+    "skill": "vocabulary",
+    "language": "en",
+    "prompt_en": "What is the opposite of \"hot\"?",
+    "prompt_id": "Apa lawan kata hot (panas)?"
+  },
+  {
+    "id": "en-p1-2",
+    "band": 1,
+    "type": "multiple-choice",
+    "prompt": "Choose the correct sentence.",
+    "options": [
+      {
+        "id": "o0",
+        "label": "She is reading a book."
+      },
+      {
+        "id": "o1",
+        "label": "She is read a book."
+      },
+      {
+        "id": "o2",
+        "label": "She reading a book."
+      },
+      {
+        "id": "o3",
+        "label": "She reads a book right now."
+      }
+    ],
+    "correct": "o0",
+    "skill": "grammar",
+    "language": "en",
+    "prompt_en": "Choose the correct sentence.",
+    "prompt_id": "Pilih kalimat yang benar."
+  },
+  {
+    "id": "en-p1-3",
+    "band": 1,
+    "type": "multiple-choice",
+    "prompt": "What does \"enough\" mean?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "sufficient"
+      },
+      {
+        "id": "o1",
+        "label": "too much"
+      },
+      {
+        "id": "o2",
+        "label": "missing"
+      },
+      {
+        "id": "o3",
+        "label": "extra"
+      }
+    ],
+    "correct": "o0",
+    "skill": "vocabulary",
+    "language": "en",
+    "prompt_en": "What does \"enough\" mean?",
+    "prompt_id": "Apa arti enough (cukup)?"
+  },
+  {
+    "id": "en-p1-4",
+    "band": 1,
+    "type": "listening-choice",
+    "prompt": "Listen and choose what you hear.",
+    "options": [
+      {
+        "id": "o0",
+        "label": "Nice to meet you"
+      },
+      {
+        "id": "o1",
+        "label": "See you later"
+      },
+      {
+        "id": "o2",
+        "label": "Good morning"
+      },
+      {
+        "id": "o3",
+        "label": "Thank you"
+      }
+    ],
+    "correct": "o0",
+    "skill": "listening",
+    "audioText": "Nice to meet you",
+    "audio": "placement:en-p1-4",
+    "language": "en",
+    "prompt_en": "Listen and choose what you hear.",
+    "prompt_id": "Dengarkan dan pilih apa yang kamu dengar."
+  },
+  {
+    "id": "en-p2-1",
+    "band": 2,
+    "type": "multiple-choice",
+    "prompt": "I ___ to school every day.",
+    "options": [
+      {
+        "id": "o0",
+        "label": "go"
+      },
+      {
+        "id": "o1",
+        "label": "goes"
+      },
+      {
+        "id": "o2",
+        "label": "going"
+      },
+      {
+        "id": "o3",
+        "label": "gone"
+      }
+    ],
+    "correct": "o0",
+    "skill": "grammar",
+    "language": "en",
+    "prompt_en": "I ___ to school every day.",
+    "prompt_id": "Saya ___ ke sekolah setiap hari."
+  },
+  {
+    "id": "en-p2-2",
+    "band": 2,
+    "type": "multiple-choice",
+    "prompt": "What does \"cheap\" mean?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "inexpensive"
+      },
+      {
+        "id": "o1",
+        "label": "expensive"
+      },
+      {
+        "id": "o2",
+        "label": "broken"
+      },
+      {
+        "id": "o3",
+        "label": "temporary"
+      }
+    ],
+    "correct": "o0",
+    "skill": "vocabulary",
+    "language": "en",
+    "prompt_en": "What does \"cheap\" mean?",
+    "prompt_id": "Apa arti cheap (murah)?"
+  },
+  {
+    "id": "en-p2-3",
+    "band": 2,
+    "type": "multiple-choice",
+    "prompt": "Read: \"She was tired, so she went to bed early.\"",
+    "options": [
+      {
+        "id": "o0",
+        "label": "She went to bed early because she was tired"
+      },
+      {
+        "id": "o1",
+        "label": "She was tired because she went to bed early"
+      },
+      {
+        "id": "o2",
+        "label": "She stayed up late despite being tired"
+      },
+      {
+        "id": "o3",
+        "label": "She woke up early feeling rested"
+      }
+    ],
+    "correct": "o0",
+    "skill": "reading",
+    "language": "en",
+    "prompt_en": "Read: \"She was tired, so she went to bed early.\"",
+    "prompt_id": "Baca: Dia lelah, jadi dia tidur lebih awal."
+  },
+  {
+    "id": "en-p2-4",
+    "band": 2,
+    "type": "listening-choice",
+    "prompt": "Listen and choose what you hear.",
+    "options": [
+      {
+        "id": "o0",
+        "label": "Could you pass the salt, please?"
+      },
+      {
+        "id": "o1",
+        "label": "Would you like some salt?"
+      },
+      {
+        "id": "o2",
+        "label": "Please buy some salt."
+      },
+      {
+        "id": "o3",
+        "label": "There is no salt left."
+      }
+    ],
+    "correct": "o0",
+    "skill": "listening",
+    "audioText": "Could you pass the salt, please?",
+    "audio": "placement:en-p2-4",
+    "language": "en",
+    "prompt_en": "Listen and choose what you hear.",
+    "prompt_id": "Dengarkan dan pilih apa yang kamu dengar."
+  },
+  {
+    "id": "en-p3-1",
+    "band": 3,
+    "type": "multiple-choice",
+    "prompt": "Choose the correct past tense: \"They ___ dinner when I arrived.\"",
+    "options": [
+      {
+        "id": "o0",
+        "label": "were having"
+      },
+      {
+        "id": "o1",
+        "label": "have had"
+      },
+      {
+        "id": "o2",
+        "label": "had been having had"
+      },
+      {
+        "id": "o3",
+        "label": "are having"
+      }
+    ],
+    "correct": "o0",
+    "skill": "grammar",
+    "language": "en",
+    "prompt_en": "Choose the correct past tense: \"They ___ dinner when I arrived.\"",
+    "prompt_id": "Pilih past tense yang benar: Mereka ___ makan malam ketika saya tiba."
+  },
+  {
+    "id": "en-p3-2",
+    "band": 3,
+    "type": "multiple-choice",
+    "prompt": "What does \"however\" mean?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "nevertheless"
+      },
+      {
+        "id": "o1",
+        "label": "therefore"
+      },
+      {
+        "id": "o2",
+        "label": "meanwhile"
+      },
+      {
+        "id": "o3",
+        "label": "furthermore"
+      }
+    ],
+    "correct": "o0",
+    "skill": "vocabulary",
+    "language": "en",
+    "prompt_en": "What does \"however\" mean?",
+    "prompt_id": "Apa arti however (namun)?"
+  },
+  {
+    "id": "en-p3-3",
+    "band": 3,
+    "type": "multiple-choice",
+    "prompt": "Read: \"Although it was raining, the match continued.\"",
+    "options": [
+      {
+        "id": "o0",
+        "label": "The match continued despite the rain"
+      },
+      {
+        "id": "o1",
+        "label": "The match was cancelled due to rain"
+      },
+      {
+        "id": "o2",
+        "label": "The match was postponed until it stopped raining"
+      },
+      {
+        "id": "o3",
+        "label": "The players refused to play in the rain"
+      }
+    ],
+    "correct": "o0",
+    "skill": "reading",
+    "language": "en",
+    "prompt_en": "Read: \"Although it was raining, the match continued.\"",
+    "prompt_id": "Baca: Meskipun hujan, pertandingan tetap berlanjut."
+  },
+  {
+    "id": "en-p3-4",
+    "band": 3,
+    "type": "listening-choice",
+    "prompt": "Listen and choose what you hear.",
+    "options": [
+      {
+        "id": "o0",
+        "label": "A table for two, please."
+      },
+      {
+        "id": "o1",
+        "label": "A table by the window, please."
+      },
+      {
+        "id": "o2",
+        "label": "Two coffees, please."
+      },
+      {
+        "id": "o3",
+        "label": "The menu, please."
+      }
+    ],
+    "correct": "o0",
+    "skill": "listening",
+    "audioText": "I would like a table for two, please.",
+    "audio": "placement:en-p3-4",
+    "language": "en",
+    "prompt_en": "Listen and choose what you hear.",
+    "prompt_id": "Dengarkan dan pilih apa yang kamu dengar."
+  },
+  {
+    "id": "en-p4-1",
+    "band": 4,
+    "type": "multiple-choice",
+    "prompt": "If I ___ rich, I would travel the world.",
+    "options": [
+      {
+        "id": "o0",
+        "label": "were"
+      },
+      {
+        "id": "o1",
+        "label": "was"
+      },
+      {
+        "id": "o2",
+        "label": "am"
+      },
+      {
+        "id": "o3",
+        "label": "had"
+      }
+    ],
+    "correct": "o0",
+    "skill": "grammar",
+    "language": "en",
+    "prompt_en": "If I ___ rich, I would travel the world.",
+    "prompt_id": "Jika saya ___ kaya, saya akan keliling dunia."
+  },
+  {
+    "id": "en-p4-2",
+    "band": 4,
+    "type": "multiple-choice",
+    "prompt": "What does \"eventually\" mean?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "finally"
+      },
+      {
+        "id": "o1",
+        "label": "rarely"
+      },
+      {
+        "id": "o2",
+        "label": "suddenly"
+      },
+      {
+        "id": "o3",
+        "label": "actually"
+      }
+    ],
+    "correct": "o0",
+    "skill": "vocabulary",
+    "language": "en",
+    "prompt_en": "What does \"eventually\" mean?",
+    "prompt_id": "Apa arti eventually (akhirnya)?"
+  },
+  {
+    "id": "en-p4-3",
+    "band": 4,
+    "type": "multiple-choice",
+    "prompt": "Read: \"The company had to downsize due to falling profits.\"",
+    "options": [
+      {
+        "id": "o0",
+        "label": "It reduced staff because profits fell"
+      },
+      {
+        "id": "o1",
+        "label": "It increased staff despite low profits"
+      },
+      {
+        "id": "o2",
+        "label": "It moved to a smaller office"
+      },
+      {
+        "id": "o3",
+        "label": "It closed because of losses"
+      }
+    ],
+    "correct": "o0",
+    "skill": "reading",
+    "language": "en",
+    "prompt_en": "Read: \"The company had to downsize due to falling profits.\"",
+    "prompt_id": "Baca: Perusahaan harus mengurangi karyawan karena keuntungan menurun."
+  },
+  {
+    "id": "en-p4-4",
+    "band": 4,
+    "type": "listening-choice",
+    "prompt": "Listen: what happened to the meeting?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "It was moved to Thursday"
+      },
+      {
+        "id": "o1",
+        "label": "It was cancelled"
+      },
+      {
+        "id": "o2",
+        "label": "It was delayed by an hour"
+      },
+      {
+        "id": "o3",
+        "label": "It was moved online"
+      }
+    ],
+    "correct": "o0",
+    "skill": "listening",
+    "audioText": "The meeting has been moved to Thursday.",
+    "audio": "placement:en-p4-4",
+    "language": "en",
+    "prompt_en": "Listen: what happened to the meeting?",
+    "prompt_id": "Dengarkan: apa yang terjadi dengan rapat?"
+  },
+  {
+    "id": "en-p5-1",
+    "band": 5,
+    "type": "multiple-choice",
+    "prompt": "Which sentence is correct?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "Not only did he apologize, but he also offered compensation."
+      },
+      {
+        "id": "o1",
+        "label": "Not only he apologized, but he also offered compensation."
+      },
+      {
+        "id": "o2",
+        "label": "He not only apologized, but also he offered."
+      },
+      {
+        "id": "o3",
+        "label": "Not only did he apologize but also compensation."
+      }
+    ],
+    "correct": "o0",
+    "skill": "grammar",
+    "language": "en",
+    "prompt_en": "Which sentence is correct?",
+    "prompt_id": "Kalimat mana yang benar?"
+  },
+  {
+    "id": "en-p5-2",
+    "band": 5,
+    "type": "multiple-choice",
+    "prompt": "What does \"ambiguous\" mean?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "open to more than one interpretation"
+      },
+      {
+        "id": "o1",
+        "label": "impossible to understand"
+      },
+      {
+        "id": "o2",
+        "label": "extremely clear"
+      },
+      {
+        "id": "o3",
+        "label": "unnecessarily long"
+      }
+    ],
+    "correct": "o0",
+    "skill": "vocabulary",
+    "language": "en",
+    "prompt_en": "What does \"ambiguous\" mean?",
+    "prompt_id": "Apa arti ambiguous (ambigu)?"
+  },
+  {
+    "id": "en-p6-1",
+    "band": 6,
+    "type": "multiple-choice",
+    "prompt": "Read: \"The central bank's decision to raise interest rates was widely criticized by borrowers, though economists argued it was necessary to curb persistent inflation.\" Who criticized the decision?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "Borrowers"
+      },
+      {
+        "id": "o1",
+        "label": "Economists"
+      },
+      {
+        "id": "o2",
+        "label": "The central bank"
+      },
+      {
+        "id": "o3",
+        "label": "Retailers"
+      }
+    ],
+    "correct": "o0",
+    "skill": "reading",
+    "language": "en",
+    "prompt_en": "Read: \"The central bank's decision to raise interest rates was widely criticized by borrowers, though economists argued it was necessary to curb persistent inflation.\" Who criticized the decision?",
+    "prompt_id": "Baca: Keputusan bank sentral menaikkan suku bunga disambut luas."
+  },
+  {
+    "id": "en-p6-2",
+    "band": 6,
+    "type": "multiple-choice",
+    "prompt": "Choose the correct form: \"The report ___ by the committee before the board meeting.\"",
+    "options": [
+      {
+        "id": "o0",
+        "label": "had been completed"
+      },
+      {
+        "id": "o1",
+        "label": "has completed"
+      },
+      {
+        "id": "o2",
+        "label": "was completing"
+      },
+      {
+        "id": "o3",
+        "label": "completed"
+      }
+    ],
+    "correct": "o0",
+    "skill": "grammar",
+    "language": "en",
+    "prompt_en": "Choose the correct form: \"The report ___ by the committee before the board meeting.\"",
+    "prompt_id": "Pilih bentuk yang benar: Laporan ___ oleh komite sebelum."
+  }
+]
