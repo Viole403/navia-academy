@@ -1,0 +1,146 @@
+[
+  {
+    "id": "a-quick-en-a1",
+    "title": "Quick Test · English A1",
+    "description": "Five questions to check English A1 fundamentals: greetings, numbers, and basic structures.",
+    "kind": "quick",
+    "level": 1,
+    "examMappings": {},
+    "durationMin": 5,
+    "passScore": 60,
+    "exercises": [
+      {
+        "id": "aqe1",
+        "type": "multiple-choice",
+        "prompt": "How do you greet someone in the morning?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "Good morning"
+          },
+          {
+            "id": "o1",
+            "label": "Good night"
+          },
+          {
+            "id": "o2",
+            "label": "Goodbye"
+          },
+          {
+            "id": "o3",
+            "label": "Sorry"
+          }
+        ],
+        "correct": "o0",
+        "skill": "vocabulary",
+        "level": 1
+      },
+      {
+        "id": "aqe2",
+        "type": "multiple-choice",
+        "prompt": "Which word means a female parent?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "mother"
+          },
+          {
+            "id": "o1",
+            "label": "father"
+          },
+          {
+            "id": "o2",
+            "label": "brother"
+          },
+          {
+            "id": "o3",
+            "label": "sister"
+          }
+        ],
+        "correct": "o0",
+        "skill": "vocabulary",
+        "level": 1
+      },
+      {
+        "id": "aqe3",
+        "type": "multiple-choice",
+        "prompt": "Choose the correct sentence:",
+        "options": [
+          {
+            "id": "o0",
+            "label": "I am a student"
+          },
+          {
+            "id": "o1",
+            "label": "I am student a"
+          },
+          {
+            "id": "o2",
+            "label": "A student I am"
+          },
+          {
+            "id": "o3",
+            "label": "Am I student"
+          }
+        ],
+        "correct": "o0",
+        "skill": "grammar",
+        "level": 1
+      },
+      {
+        "id": "aqe4",
+        "type": "multiple-choice",
+        "prompt": "What number is 'three'?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "3"
+          },
+          {
+            "id": "o1",
+            "label": "1"
+          },
+          {
+            "id": "o2",
+            "label": "2"
+          },
+          {
+            "id": "o3",
+            "label": "13"
+          }
+        ],
+        "correct": "o0",
+        "skill": "reading",
+        "level": 1
+      },
+      {
+        "id": "aqe5",
+        "type": "multiple-choice",
+        "prompt": "Choose the correct question for asking about a place:",
+        "options": [
+          {
+            "id": "o0",
+            "label": "Where is the station?"
+          },
+          {
+            "id": "o1",
+            "label": "What is the station?"
+          },
+          {
+            "id": "o2",
+            "label": "When is the station?"
+          },
+          {
+            "id": "o3",
+            "label": "Who is the station?"
+          }
+        ],
+        "correct": "o0",
+        "skill": "grammar",
+        "level": 1
+      }
+    ],
+    "description_en": "Five questions to check English A1 fundamentals: greetings, numbers, and basic structures.",
+    "description_id": "Lima soal untuk menguji dasar bahasa Inggris A1: sapaan, angka, dan struktur dasar."
+  }
+]
