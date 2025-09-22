@@ -1,0 +1,308 @@
+[
+  {
+    "id": "r-de-b1-1-arbeit",
+    "title": "Der neue Job — The New Job",
+    "type": "story",
+    "level": 3,
+    "examMappings": {
+      "goethe": "B1"
+    },
+    "wordCount": 105,
+    "summary": "Thomas starts a new job in Berlin and talks about his first week.",
+    "paragraphs": [
+      {
+        "text": "Vor zwei Wochen hat Thomas eine neue Stelle in Berlin angenommen.",
+        "translation": "Two weeks ago Thomas accepted a new position in Berlin.",
+        "translation_en": "Two weeks ago Thomas accepted a new position in Berlin.",
+        "translation_id": "Dua minggu lalu Thomas menerima posisi baru di Berlin."
+      },
+      {
+        "text": "Seine Firma entwickelt Software für kleine Unternehmen.",
+        "translation": "His company develops software for small businesses.",
+        "translation_en": "His company develops software for small businesses.",
+        "translation_id": "Perusahaannya mengembangkan perangkat lunak untuk usaha kecil."
+      },
+      {
+        "text": "Am ersten Tag hat ihn sein Kollege Peter herumgeführt und die wichtigsten Abteilungen gezeigt.",
+        "translation": "On the first day his colleague Peter showed him around and presented the most important departments.",
+        "translation_en": "On the first day his colleague Peter showed him around and presented the most important departments.",
+        "translation_id": "Di hari pertama rekannya Peter mengajaknya keliling dan memperkenalkan departemen-departemen terpenting."
+      },
+      {
+        "text": "Das Team arbeitet viel im Homeoffice, aber freitags sind alle im Büro.",
+        "translation": "The team works a lot from home, but on Fridays everyone is in the office.",
+        "translation_en": "The team works a lot from home, but on Fridays everyone is in the office.",
+        "translation_id": "Tim banyak bekerja dari rumah, tapi setiap Jumat semua di kantor."
+      },
+      {
+        "text": "Thomas findet die Aufgaben interessant, obwohl der Weg zur Arbeit lang ist.",
+        "translation": "Thomas finds the tasks interesting, although the commute is long.",
+        "translation_en": "Thomas finds the tasks interesting, although the commute is long.",
+        "translation_id": "Thomas merasa tugasnya menarik, meskipun perjalanan ke kantornya panjang."
+      },
+      {
+        "text": "Er hofft, dass er sich bald gut in das Team integriert.",
+        "translation": "He hopes that he will soon integrate well into the team.",
+        "translation_en": "He hopes that he will soon integrate well into the team.",
+        "translation_id": "Dia berharap segera bisa berbaur dengan baik dalam tim."
+      }
+    ],
+    "summary_en": "Thomas starts a new job in Berlin and talks about his first week.",
+    "summary_id": "Thomas memulai pekerjaan baru di Berlin dan bercerita tentang minggu pertamanya."
+  },
+  {
+    "id": "r-de-b1-2-urlaub",
+    "title": "Ein Urlaub in den Bergen — A Holiday in the Mountains",
+    "type": "story",
+    "level": 3,
+    "examMappings": {
+      "goethe": "B1"
+    },
+    "wordCount": 100,
+    "summary": "A family spends a week in the Bavarian Alps and discovers hiking.",
+    "paragraphs": [
+      {
+        "text": "Im letzten Sommer haben wir eine Woche in den bayerischen Alpen verbracht.",
+        "translation": "Last summer we spent a week in the Bavarian Alps.",
+        "translation_en": "Last summer we spent a week in the Bavarian Alps.",
+        "translation_id": "Musim panas lalu kami menghabiskan seminggu di Pegunungan Alpen Bavaria."
+      },
+      {
+        "text": "Wir hatten ein kleines Ferienhaus mit Blick auf den See gebucht.",
+        "translation": "We had booked a small holiday house with a view of the lake.",
+        "translation_en": "We had booked a small holiday house with a view of the lake.",
+        "translation_id": "Kami memesan rumah liburan kecil dengan pemandangan danau."
+      },
+      {
+        "text": "Jeden Morgen sind wir nach dem Frühstück eine andere Route gewandert.",
+        "translation": "Every morning after breakfast we hiked a different route.",
+        "translation_en": "Every morning after breakfast we hiked a different route.",
+        "translation_id": "Setiap pagi setelah sarapan kami mendaki rute yang berbeda."
+      },
+      {
+        "text": "Mein Sohn hatte anfangs Angst vor den steilen Wegen, aber bald hat er die Berge geliebt.",
+        "translation": "My son was afraid of the steep paths at first, but soon he loved the mountains.",
+        "translation_en": "My son was afraid of the steep paths at first, but soon he loved the mountains.",
+        "translation_id": "Anak saya awalnya takut dengan jalan terjal, tapi tak lama kemudian dia menyukai pegunungan."
+      },
+      {
+        "text": "Am letzten Abend haben wir auf der Terrasse gegrillt und den Sonnenuntergang beobachtet.",
+        "translation": "On the last evening we grilled on the terrace and watched the sunset.",
+        "translation_en": "On the last evening we grilled on the terrace and watched the sunset.",
+        "translation_id": "Malam terakhir kami memanggang di teras dan menonton matahari terbenam."
+      },
+      {
+        "text": "Wir sind uns sicher, dass wir nächstes Jahr wiederkommen werden.",
+        "translation": "We are sure that we will come back next year.",
+        "translation_en": "We are sure that we will come back next year.",
+        "translation_id": "Kami yakin tahun depan akan kembali lagi."
+      }
+    ],
+    "summary_en": "A family spends a week in the Bavarian Alps and discovers hiking.",
+    "summary_id": "Sebuah keluarga menghabiskan seminggu di Pegunungan Alpen Bavaria dan menemukan kegiatan mendaki."
+  },
+  {
+    "id": "r-de-b1-3-umwelt",
+    "title": "Nachhaltigkeit im Alltag — Sustainability in Everyday Life",
+    "type": "story",
+    "level": 3,
+    "examMappings": {
+      "goethe": "B1"
+    },
+    "wordCount": 95,
+    "summary": "Why more and more Germans try to live more sustainably.",
+    "paragraphs": [
+      {
+        "text": "Immer mehr Menschen in Deutschland versuchen, nachhaltiger zu leben.",
+        "translation": "More and more people in Germany try to live more sustainably.",
+        "translation_en": "More and more people in Germany try to live more sustainably.",
+        "translation_id": "Semakin banyak orang di Jerman mencoba hidup lebih berkelanjutan."
+      },
+      {
+        "text": "Sie kaufen regionale Produkte und verzichten auf Plastikverpackungen.",
+        "translation": "They buy regional products and avoid plastic packaging.",
+        "translation_en": "They buy regional products and avoid plastic packaging.",
+        "translation_id": "Mereka membeli produk lokal dan menghindari kemasan plastik."
+      },
+      {
+        "text": "Viele benutzen das Fahrrad anstatt des Autos, besonders in den Städten.",
+        "translation": "Many use the bicycle instead of the car, especially in the cities.",
+        "translation_en": "Many use the bicycle instead of the car, especially in the cities.",
+        "translation_id": "Banyak orang memakai sepeda alih-alih mobil, terutama di kota-kota."
+      },
+      {
+        "text": "Einige Firmen haben ihre Verpackungen bereits auf Papier umgestellt.",
+        "translation": "Some companies have already switched their packaging to paper.",
+        "translation_en": "Some companies have already switched their packaging to paper.",
+        "translation_id": "Sebagian perusahaan sudah mengganti kemasan mereka ke kertas."
+      },
+      {
+        "text": "Trotzdem ist es nicht immer einfach, umweltbewusst zu handeln.",
+        "translation": "Nevertheless, it is not always easy to act in an environmentally conscious way.",
+        "translation_en": "Nevertheless, it is not always easy to act in an environmentally conscious way.",
+        "translation_id": "Meski begitu, tidak selalu mudah untuk bertindak ramah lingkungan."
+      },
+      {
+        "text": "Experten sagen, dass jeder kleine Schritt zählt.",
+        "translation": "Experts say that every small step counts.",
+        "translation_en": "Experts say that every small step counts.",
+        "translation_id": "Para ahli mengatakan setiap langkah kecil berarti."
+      }
+    ],
+    "summary_en": "Why more and more Germans try to live more sustainably.",
+    "summary_id": "Mengapa semakin banyak orang Jerman mencoba hidup lebih berkelanjutan."
+  },
+  {
+    "id": "r-de-b1-4-gesundheit",
+    "title": "Gesund bleiben — Staying Healthy",
+    "type": "story",
+    "level": 3,
+    "examMappings": {
+      "goethe": "B1"
+    },
+    "wordCount": 100,
+    "summary": "How Germans take care of their health through sport, food and sleep.",
+    "paragraphs": [
+      {
+        "text": "Gesundheit spielt in Deutschland eine große Rolle im Alltag.",
+        "translation": "Health plays a big role in everyday life in Germany.",
+        "translation_en": "Health plays a big role in everyday life in Germany.",
+        "translation_id": "Kesehatan memegang peran besar dalam kehidupan sehari-hari di Jerman."
+      },
+      {
+        "text": "Viele Menschen treiben regelmäßig Sport, etwa Joggen, Schwimmen oder Fußball.",
+        "translation": "Many people exercise regularly, such as jogging, swimming or football.",
+        "translation_en": "Many people exercise regularly, such as jogging, swimming or football.",
+        "translation_id": "Banyak orang berolahraga secara teratur, misalnya joging, berenang, atau sepak bola."
+      },
+      {
+        "text": "Auch die Ernährung ist wichtig: frisches Gemüse und Obst stehen oft auf dem Tisch.",
+        "translation": "Diet is also important: fresh vegetables and fruit are often on the table.",
+        "translation_en": "Diet is also important: fresh vegetables and fruit are often on the table.",
+        "translation_id": "Makanan juga penting: sayur dan buah segar sering ada di meja."
+      },
+      {
+        "text": "Ärzte empfehlen außerdem, genug zu schlafen und Stress zu vermeiden.",
+        "translation": "Doctors also recommend sleeping enough and avoiding stress.",
+        "translation_en": "Doctors also recommend sleeping enough and avoiding stress.",
+        "translation_id": "Dokter juga menyarankan tidur cukup dan menghindari stres."
+      },
+      {
+        "text": "Wenn jemand krank ist, geht er zuerst zum Hausarzt, bevor er einen Spezialisten aufsucht.",
+        "translation": "If someone is ill, he first goes to the family doctor before seeing a specialist.",
+        "translation_en": "If someone is ill, he first goes to the family doctor before seeing a specialist.",
+        "translation_id": "Kalau ada yang sakit, pertama pergi ke dokter keluarga sebelum menemui dokter spesialis."
+      },
+      {
+        "text": "So bleibt man im besten Fall lange gesund.",
+        "translation": "That way you stay healthy for a long time in the best case.",
+        "translation_en": "That way you stay healthy for a long time in the best case.",
+        "translation_id": "Dengan begitu kamu tetap sehat dalam waktu lama dalam kasus terbaik."
+      }
+    ],
+    "summary_en": "How Germans take care of their health through sport, food and sleep.",
+    "summary_id": "Bagaimana orang Jerman menjaga kesehatan lewat olahraga, makanan, dan tidur."
+  },
+  {
+    "id": "r-de-b1-5-technik",
+    "title": "Digitales Lernen — Digital Learning",
+    "type": "story",
+    "level": 3,
+    "examMappings": {
+      "goethe": "B1"
+    },
+    "wordCount": 90,
+    "summary": "A student talks about learning with apps and online courses.",
+    "paragraphs": [
+      {
+        "text": "Lena studiert an der Universität und lernt fast alles digital.",
+        "translation": "Lena studies at the university and learns almost everything digitally.",
+        "translation_en": "Lena studies at the university and learns almost everything digitally.",
+        "translation_id": "Lena kuliah di universitas dan belajar hampir semua secara digital."
+      },
+      {
+        "text": "Sie benutzt eine Lernapp für Vokabeln und schaut sich Online-Kurse an.",
+        "translation": "She uses a learning app for vocabulary and watches online courses.",
+        "translation_en": "She uses a learning app for vocabulary and watches online courses.",
+        "translation_id": "Dia memakai aplikasi belajar untuk kosakata dan menonton kursus daring."
+      },
+      {
+        "text": "Der Vorteil ist, dass sie überall und zu jeder Zeit lernen kann.",
+        "translation": "The advantage is that she can learn anywhere and at any time.",
+        "translation_en": "The advantage is that she can learn anywhere and at any time.",
+        "translation_id": "Keuntungannya dia bisa belajar di mana saja dan kapan saja."
+      },
+      {
+        "text": "Ein Nachteil ist jedoch die Ablenkung durch das Smartphone.",
+        "translation": "A disadvantage, however, is the distraction caused by the smartphone.",
+        "translation_en": "A disadvantage, however, is the distraction caused by the smartphone.",
+        "translation_id": "Namun kekurangannya adalah gangguan dari ponsel pintar."
+      },
+      {
+        "text": "Lena hat eine Regel: Während der Lernzeit bleibt das Handy in der Tasche.",
+        "translation": "Lena has a rule: during study time the phone stays in the bag.",
+        "translation_en": "Lena has a rule: during study time the phone stays in the bag.",
+        "translation_id": "Lena punya aturan: selama waktu belajar ponsel tetap di tas."
+      },
+      {
+        "text": "So bleibt ihre Konzentration hoch und das Lernen macht mehr Spaß.",
+        "translation": "That way her concentration stays high and learning is more fun.",
+        "translation_en": "That way her concentration stays high and learning is more fun.",
+        "translation_id": "Dengan begitu konsentrasinya tetap tinggi dan belajar lebih menyenangkan."
+      }
+    ],
+    "summary_en": "A student talks about learning with apps and online courses.",
+    "summary_id": "Seorang mahasiswa bercerita tentang belajar dengan aplikasi dan kursus daring."
+  },
+  {
+    "id": "r-de-b1-6-verein",
+    "title": "Im Sportverein — In the Sports Club",
+    "type": "story",
+    "level": 3,
+    "examMappings": {
+      "goethe": "B1"
+    },
+    "wordCount": 95,
+    "summary": "Why joining a club is a good way to meet people in Germany.",
+    "paragraphs": [
+      {
+        "text": "In Deutschland spielen Vereine eine wichtige Rolle im sozialen Leben.",
+        "translation": "In Germany clubs play an important role in social life.",
+        "translation_en": "In Germany clubs play an important role in social life.",
+        "translation_id": "Di Jerman klub memegang peran penting dalam kehidupan sosial."
+      },
+      {
+        "text": "Es gibt Sportvereine, Musikvereine und sogar Gartenvereine.",
+        "translation": "There are sports clubs, music clubs and even garden clubs.",
+        "translation_en": "There are sports clubs, music clubs and even garden clubs.",
+        "translation_id": "Ada klub olahraga, klub musik, bahkan klub kebun."
+      },
+      {
+        "text": "Wenn man neu in einer Stadt ist, kann man im Verein schnell Kontakte knüpfen.",
+        "translation": "When you are new in a city, you can quickly make contacts in a club.",
+        "translation_en": "When you are new in a city, you can quickly make contacts in a club.",
+        "translation_id": "Saat baru di sebuah kota, kamu bisa cepat menjalin kenalan lewat klub."
+      },
+      {
+        "text": "Die Mitglieder treffen sich regelmäßig und organisieren gemeinsame Aktivitäten.",
+        "translation": "The members meet regularly and organize joint activities.",
+        "translation_en": "The members meet regularly and organize joint activities.",
+        "translation_id": "Para anggota bertemu secara rutin dan mengorganisasi kegiatan bersama."
+      },
+      {
+        "text": "Die monatlichen Beiträge sind meistens niedrig.",
+        "translation": "The monthly fees are usually low.",
+        "translation_en": "The monthly fees are usually low.",
+        "translation_id": "Iuran bulanannya biasanya murah."
+      },
+      {
+        "text": "Für viele ist der Verein wie eine zweite Familie.",
+        "translation": "For many, the club is like a second family.",
+        "translation_en": "For many, the club is like a second family.",
+        "translation_id": "Bagi banyak orang, klub itu seperti keluarga kedua."
+      }
+    ],
+    "summary_en": "Why joining a club is a good way to meet people in Germany.",
+    "summary_id": "Mengapa bergabung dengan klub adalah cara yang baik untuk bertemu orang di Jerman."
+  }
+]
