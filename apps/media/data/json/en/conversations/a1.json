@@ -1,0 +1,217 @@
+[
+  {
+    "id": "en-conv-001",
+    "language": "en",
+    "title": "Greetings",
+    "level": 1,
+    "difficulty": 1,
+    "examMappings": {},
+    "scenario": "greeting",
+    "speakers": [
+      { "id": "a", "name": "Alex", "role": "friend" },
+      { "id": "b", "name": "Maya", "role": "friend" }
+    ],
+    "dialogue": [
+      { "speaker": "a", "text": "Good morning, Maya!", "romanization": null, "translation": "Good morning, Maya!", "translation_en": "Good morning, Maya!", "translation_id": "Selamat pagi, Maya!" },
+      { "speaker": "b", "text": "Good morning, Alex! How are you?", "romanization": null, "translation": "Good morning, Alex! How are you?", "translation_en": "Good morning, Alex! How are you?", "translation_id": "Selamat pagi, Alex! Apa kabar?" },
+      { "speaker": "a", "text": "I'm fine, thanks. And you?", "romanization": null, "translation": "I'm fine, thanks. And you?", "translation_en": "I'm fine, thanks. And you?", "translation_id": "Baik-baik saja, terima kasih. Kalau kamu?" },
+      { "speaker": "b", "text": "Great, thanks!", "romanization": null, "translation": "Great, thanks!", "translation_en": "Great, thanks!", "translation_id": "Bagus, terima kasih!" }
+    ],
+    "vocabulary": ["en_hello", "en_goodbye", "en_thank_you"],
+    "grammar": []
+  },
+  {
+    "id": "en-conv-002",
+    "language": "en",
+    "title": "Self-Introduction",
+    "level": 1,
+    "difficulty": 1,
+    "examMappings": {},
+    "scenario": "introduction",
+    "speakers": [
+      { "id": "a", "name": "Liam", "role": "new colleague" },
+      { "id": "b", "name": "Sofia", "role": "colleague" }
+    ],
+    "dialogue": [
+      { "speaker": "a", "text": "Hi, I'm Liam. Nice to meet you.", "romanization": null, "translation": "Hi, I'm Liam. Nice to meet you.", "translation_en": "Hi, I'm Liam. Nice to meet you.", "translation_id": "Halo, saya Liam. Senang berkenalan." },
+      { "speaker": "b", "text": "Nice to meet you too. I'm Sofia.", "romanization": null, "translation": "Nice to meet you too. I'm Sofia.", "translation_en": "Nice to meet you too. I'm Sofia.", "translation_id": "Senang berkenalan juga. Saya Sofia." },
+      { "speaker": "a", "text": "What do you do here?", "romanization": null, "translation": "What do you do here?", "translation_en": "What do you do here?", "translation_id": "Apa yang kamu kerjakan di sini?" },
+      { "speaker": "b", "text": "I'm a designer. I work with computers.", "romanization": null, "translation": "I'm a designer. I work with computers.", "translation_en": "I'm a designer. I work with computers.", "translation_id": "Saya desainer. Saya bekerja dengan komputer." }
+    ],
+    "vocabulary": ["en_hello", "en_be"],
+    "grammar": ["en_present_simple"]
+  },
+  {
+    "id": "en-conv-003",
+    "language": "en",
+    "title": "At the Café",
+    "level": 1,
+    "difficulty": 1,
+    "examMappings": {},
+    "scenario": "café",
+    "speakers": [
+      { "id": "w", "name": "Waiter", "role": "waiter" },
+      { "id": "c", "name": "Customer", "role": "customer" }
+    ],
+    "dialogue": [
+      { "speaker": "w", "text": "Welcome! What would you like?", "romanization": null, "translation": "Welcome! What would you like?", "translation_en": "Welcome! What would you like?", "translation_id": "Selamat datang! Mau pesan apa?" },
+      { "speaker": "c", "text": "A coffee, please.", "romanization": null, "translation": "A coffee, please.", "translation_en": "A coffee, please.", "translation_id": "Kopi, tolong." },
+      { "speaker": "w", "text": "With milk or sugar?", "romanization": null, "translation": "With milk or sugar?", "translation_en": "With milk or sugar?", "translation_id": "Dengan susu atau gula?" },
+      { "speaker": "c", "text": "Just milk, please.", "romanization": null, "translation": "Just milk, please.", "translation_en": "Just milk, please.", "translation_id": "Susu saja, tolong." },
+      { "speaker": "w", "text": "Here you are.", "romanization": null, "translation": "Here you are.", "translation_en": "Here you are.", "translation_id": "Ini kopinya." }
+    ],
+    "vocabulary": ["en_drink", "en_water"],
+    "grammar": ["en_articles", "en_modal_verbs"]
+  },
+  {
+    "id": "en-conv-004",
+    "language": "en",
+    "title": "Ordering Food",
+    "level": 1,
+    "difficulty": 1,
+    "examMappings": {},
+    "scenario": "restaurant",
+    "speakers": [
+      { "id": "w", "name": "Waiter", "role": "waiter" },
+      { "id": "c", "name": "Customer", "role": "customer" }
+    ],
+    "dialogue": [
+      { "speaker": "w", "text": "Are you ready to order?", "romanization": null, "translation": "Are you ready to order?", "translation_en": "Are you ready to order?", "translation_id": "Sudah siap memesan?" },
+      { "speaker": "c", "text": "Yes, I'd like some soup, please.", "romanization": null, "translation": "Yes, I'd like some soup, please.", "translation_en": "Yes, I'd like some soup, please.", "translation_id": "Ya, saya mau sup, tolong." },
+      { "speaker": "w", "text": "Anything to drink?", "romanization": null, "translation": "Anything to drink?", "translation_en": "Anything to drink?", "translation_id": "Ada minuman?" },
+      { "speaker": "c", "text": "Water, please.", "romanization": null, "translation": "Water, please.", "translation_en": "Water, please.", "translation_id": "Air putih, tolong." },
+      { "speaker": "w", "text": "Certainly. It will be ready soon.", "romanization": null, "translation": "Certainly. It will be ready soon.", "translation_en": "Certainly. It will be ready soon.", "translation_id": "Baik. Sebentar lagi siap." }
+    ],
+    "vocabulary": ["en_eat", "en_drink", "en_food"],
+    "grammar": ["en_modal_verbs"]
+  },
+  {
+    "id": "en-conv-005",
+    "language": "en",
+    "title": "Shopping",
+    "level": 1,
+    "difficulty": 1,
+    "examMappings": {},
+    "scenario": "shopping",
+    "speakers": [
+      { "id": "s", "name": "Shopkeeper", "role": "shopkeeper" },
+      { "id": "c", "name": "Customer", "role": "customer" }
+    ],
+    "dialogue": [
+      { "speaker": "s", "text": "Hello! Can I help you?", "romanization": null, "translation": "Hello! Can I help you?", "translation_en": "Hello! Can I help you?", "translation_id": "Halo! Ada yang bisa dibantu?" },
+      { "speaker": "c", "text": "How much is this shirt?", "romanization": null, "translation": "How much is this shirt?", "translation_en": "How much is this shirt?", "translation_id": "Berapa harga kemeja ini?" },
+      { "speaker": "s", "text": "It's twenty dollars.", "romanization": null, "translation": "It's twenty dollars.", "translation_en": "It's twenty dollars.", "translation_id": "Dua puluh dolar." },
+      { "speaker": "c", "text": "Okay, I'll take it.", "romanization": null, "translation": "Okay, I'll take it.", "translation_en": "Okay, I'll take it.", "translation_id": "Oke, saya ambil." },
+      { "speaker": "s", "text": "Thank you! Have a nice day.", "romanization": null, "translation": "Thank you! Have a nice day.", "translation_en": "Thank you! Have a nice day.", "translation_id": "Terima kasih! Semoga harimu menyenangkan." }
+    ],
+    "vocabulary": ["en_yes", "en_thank_you"],
+    "grammar": ["en_questions"]
+  },
+  {
+    "id": "en-conv-006",
+    "language": "en",
+    "title": "Asking for Directions",
+    "level": 1,
+    "difficulty": 2,
+    "examMappings": {},
+    "scenario": "directions",
+    "speakers": [
+      { "id": "p", "name": "Passerby", "role": "passerby" },
+      { "id": "t", "name": "Tourist", "role": "tourist" }
+    ],
+    "dialogue": [
+      { "speaker": "t", "text": "Excuse me, where is the station?", "romanization": null, "translation": "Excuse me, where is the station?", "translation_en": "Excuse me, where is the station?", "translation_id": "Permisi, di mana stasiunnya?" },
+      { "speaker": "p", "text": "It's over there, next to the bank.", "romanization": null, "translation": "It's over there, next to the bank.", "translation_en": "It's over there, next to the bank.", "translation_id": "Di sana, di samping bank." },
+      { "speaker": "t", "text": "Is it far?", "romanization": null, "translation": "Is it far?", "translation_en": "Is it far?", "translation_id": "Jauh dari sini?" },
+      { "speaker": "p", "text": "No, it's very close.", "romanization": null, "translation": "No, it's very close.", "translation_en": "No, it's very close.", "translation_id": "Tidak, sangat dekat." },
+      { "speaker": "t", "text": "Thank you so much!", "romanization": null, "translation": "Thank you so much!", "translation_en": "Thank you so much!", "translation_id": "Terima kasih banyak!" }
+    ],
+    "vocabulary": ["en_go", "en_no", "en_yes"],
+    "grammar": ["en_questions", "en_prepositions_time"]
+  },
+  {
+    "id": "en-conv-007",
+    "language": "en",
+    "title": "At the Office",
+    "level": 1,
+    "difficulty": 2,
+    "examMappings": {},
+    "scenario": "office",
+    "speakers": [
+      { "id": "m", "name": "Manager", "role": "manager" },
+      { "id": "e", "name": "Employee", "role": "employee" }
+    ],
+    "dialogue": [
+      { "speaker": "m", "text": "Good afternoon. Do you have the report?", "romanization": null, "translation": "Good afternoon. Do you have the report?", "translation_en": "Good afternoon. Do you have the report?", "translation_id": "Selamat siang. Apakah kamu punya laporannya?" },
+      { "speaker": "e", "text": "Yes, I finished it this morning.", "romanization": null, "translation": "Yes, I finished it this morning.", "translation_en": "Yes, I finished it this morning.", "translation_id": "Ya, saya menyelesaikannya pagi ini." },
+      { "speaker": "m", "text": "Great. Can you send it to me?", "romanization": null, "translation": "Great. Can you send it to me?", "translation_en": "Great. Can you send it to me?", "translation_id": "Bagus. Bisakah kamu mengirimnya ke saya?" },
+      { "speaker": "e", "text": "Of course. I'll send it now.", "romanization": null, "translation": "Of course. I'll send it now.", "translation_en": "Of course. I'll send it now.", "translation_id": "Tentu. Saya kirim sekarang." }
+    ],
+    "vocabulary": ["en_do", "en_go"],
+    "grammar": ["en_present_perfect", "en_modal_verbs"]
+  },
+  {
+    "id": "en-conv-008",
+    "language": "en",
+    "title": "Making Plans",
+    "level": 1,
+    "difficulty": 1,
+    "examMappings": {},
+    "scenario": "plans",
+    "speakers": [
+      { "id": "a", "name": "Anna", "role": "friend" },
+      { "id": "b", "name": "Ben", "role": "friend" }
+    ],
+    "dialogue": [
+      { "speaker": "a", "text": "What are you doing this weekend?", "romanization": null, "translation": "What are you doing this weekend?", "translation_en": "What are you doing this weekend?", "translation_id": "Kamu mau ngapain akhir pekan ini?" },
+      { "speaker": "b", "text": "I'm not sure. Maybe I'll go to the park.", "romanization": null, "translation": "I'm not sure. Maybe I'll go to the park.", "translation_en": "I'm not sure. Maybe I'll go to the park.", "translation_id": "Belum tahu. Mungkin saya pergi ke taman." },
+      { "speaker": "a", "text": "Let's go together!", "romanization": null, "translation": "Let's go together!", "translation_en": "Let's go together!", "translation_id": "Ayo pergi bareng!" },
+      { "speaker": "b", "text": "Good idea! I'll call you on Saturday.", "romanization": null, "translation": "Good idea! I'll call you on Saturday.", "translation_en": "Good idea! I'll call you on Saturday.", "translation_id": "Ide bagus! Saya hubungi kamu hari Sabtu." }
+    ],
+    "vocabulary": ["en_go", "en_good"],
+    "grammar": ["en_present_continuous", "en_questions"]
+  },
+  {
+    "id": "en-conv-009",
+    "language": "en",
+    "title": "On the Phone",
+    "level": 1,
+    "difficulty": 1,
+    "examMappings": {},
+    "scenario": "phone",
+    "speakers": [
+      { "id": "a", "name": "Caller", "role": "caller" },
+      { "id": "b", "name": "Reception", "role": "reception" }
+    ],
+    "dialogue": [
+      { "speaker": "b", "text": "Hello, this is the reception.", "romanization": null, "translation": "Hello, this is the reception.", "translation_en": "Hello, this is the reception.", "translation_id": "Halo, ini bagian resepsionis." },
+      { "speaker": "a", "text": "Hello, can I speak to Mr. Lee?", "romanization": null, "translation": "Hello, can I speak to Mr. Lee?", "translation_en": "Hello, can I speak to Mr. Lee?", "translation_id": "Halo, bisa bicara dengan Pak Lee?" },
+      { "speaker": "b", "text": "One moment, please.", "romanization": null, "translation": "One moment, please.", "translation_en": "One moment, please.", "translation_id": "Tunggu sebentar, ya." },
+      { "speaker": "a", "text": "Thank you.", "romanization": null, "translation": "Thank you.", "translation_en": "Thank you.", "translation_id": "Terima kasih." }
+    ],
+    "vocabulary": ["en_hello", "en_thank_you", "en_please"],
+    "grammar": ["en_modal_verbs"]
+  },
+  {
+    "id": "en-conv-010",
+    "language": "en",
+    "title": "At the Doctor",
+    "level": 1,
+    "difficulty": 2,
+    "examMappings": {},
+    "scenario": "doctor",
+    "speakers": [
+      { "id": "d", "name": "Doctor", "role": "doctor" },
+      { "id": "p", "name": "Patient", "role": "patient" }
+    ],
+    "dialogue": [
+      { "speaker": "d", "text": "What's the problem?", "romanization": null, "translation": "What's the problem?", "translation_en": "What's the problem?", "translation_id": "Ada keluhan apa?" },
+      { "speaker": "p", "text": "I have a headache.", "romanization": null, "translation": "I have a headache.", "translation_en": "I have a headache.", "translation_id": "Kepala saya sakit." },
+      { "speaker": "d", "text": "Do you have a fever?", "romanization": null, "translation": "Do you have a fever?", "translation_en": "Do you have a fever?", "translation_id": "Apakah kamu demam?" },
+      { "speaker": "p", "text": "Yes, a little.", "romanization": null, "translation": "Yes, a little.", "translation_en": "Yes, a little.", "translation_id": "Ya, sedikit." },
+      { "speaker": "d", "text": "Take this medicine and rest.", "romanization": null, "translation": "Take this medicine and rest.", "translation_en": "Take this medicine and rest.", "translation_id": "Minum obat ini dan istirahat." }
+    ],
+    "vocabulary": ["en_have", "en_bad"],
+    "grammar": ["en_questions", "en_modal_verbs"]
+  }
+]
