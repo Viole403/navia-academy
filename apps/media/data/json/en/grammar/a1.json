@@ -1,0 +1,358 @@
+[
+  {
+    "id": "en_present_simple",
+    "language": "en",
+    "title": "Present Simple Tense",
+    "pattern": "I/you/we/they + verb | he/she/it + verb-s",
+    "level": 1,
+    "examMappings": {},
+    "difficulty": 1,
+    "simpleExplanation": "Present simple describes habits, facts, and general truths. Add -s for he/she/it.",
+    "detailedExplanation": "Present simple is used for habitual actions, permanent situations, and general truths. Most verbs add -s for third person singular (he/she/it): work→works. Verbs ending in -s, -sh, -ch, -x, -o add -es: go→goes, watch→watches. Have becomes has. Negatives use don't/doesn't + base verb. Questions use do/does.",
+    "usage": "I work every day. | She works in an office.",
+    "avoidWhen": "Don't use for actions happening right now (use present continuous).",
+    "examples": [
+      {
+        "text": "I speak English.",
+        "translation": "I speak English.",
+        "pronunciation": "aɪ spiːk ˈɪŋɡlɪʃ",
+        "translation_en": "I speak English.",
+        "translation_id": "Saya berbicara bahasa Inggris."
+      },
+      {
+        "text": "He studies every morning.",
+        "translation": "He studies every morning.",
+        "pronunciation": "hiː ˈstʌdiz ˈɛvri ˈmɔːrnɪŋ",
+        "translation_en": "He studies every morning.",
+        "translation_id": "Dia belajar setiap pagi."
+      }
+    ],
+    "commonMistakes": [
+      "Forgetting -s for he/she/it",
+      "Using -s with I/you/we/they",
+      "Wrong spelling (study→studies, not studys)"
+    ],
+    "relatedPoints": [
+      "en_present_continuous"
+    ],
+    "category": "grammar",
+    "tags": [
+      "verbs",
+      "tenses",
+      "present",
+      "A1"
+    ],
+    "title_en": "Present Simple Tense",
+    "title_id": "Present Simple",
+    "simpleExplanation_en": "Present simple describes habits, facts, and general truths. Add -s for he/she/it.",
+    "simpleExplanation_id": "Present simple menyatakan kebiasaan, fakta, dan kebenaran umum. Tambah -s untuk he/she/it.",
+    "detailedExplanation_en": "Present simple is used for habitual actions, permanent situations, and general truths. Most verbs add -s for third person singular (he/she/it): work→works. Verbs ending in -s, -sh, -ch, -x, -o add -es: go→goes, watch→watches. Have becomes has. Negatives use don't/doesn't + base verb. Questions use do/does.",
+    "detailedExplanation_id": "Dipakai untuk aksi kebiasaan, situasi permanen, kebenaran umum. Kebanyakan kata kerja tambah -s di orang ketiga tunggal (he/she/it): work ke works. Kata kerja berakhir -s,-sh,-ch,-x,-o tambah -es. Negasi dan pertanyaan pakai do/does.",
+    "usage_en": "I work every day. | She works in an office.",
+    "usage_id": "I work every day. | She works in an office.",
+    "avoidWhen_en": "Don't use for actions happening right now (use present continuous).",
+    "avoidWhen_id": "Jangan untuk aksi yang sedang terjadi sekarang (pakai present continuous).",
+    "commonMistakes_en": [
+      "Forgetting -s for he/she/it",
+      "Using -s with I/you/we/they",
+      "Wrong spelling (study→studies, not studys)"
+    ],
+    "commonMistakes_id": [
+      "Lupa -s untuk he/she/it",
+      "Memakai -s dengan I/you/we/they",
+      "Ejaan salah (study jadi studies)"
+    ]
+  },
+  {
+    "id": "en_present_continuous",
+    "language": "en",
+    "title": "Present Continuous Tense",
+    "pattern": "am/is/are + verb-ing",
+    "level": 1,
+    "examMappings": {},
+    "difficulty": 2,
+    "simpleExplanation": "Present continuous describes actions happening now or around now. Form: am/is/are + verb-ing.",
+    "detailedExplanation": "Use present continuous for actions in progress now, temporary situations, and future arrangements. Form: subject + am/is/are + verb-ing. Spelling: drop final -e (make→making), double final consonant after short vowel (sit→sitting), -ie becomes -y (lie→lying). Not used with stative verbs (know, like, want).",
+    "usage": "I am studying now. | She is eating lunch.",
+    "avoidWhen": "Don't use with stative verbs like know, like, want, need.",
+    "examples": [
+      {
+        "text": "I am reading a book.",
+        "translation": "I am reading a book.",
+        "translation_en": "I am reading a book.",
+        "translation_id": "Saya sedang membaca buku."
+      },
+      {
+        "text": "They are playing football.",
+        "translation": "They are playing football.",
+        "translation_en": "They are playing football.",
+        "translation_id": "Mereka sedang bermain sepak bola."
+      }
+    ],
+    "commonMistakes": [
+      "Wrong -ing spelling",
+      "Using with stative verbs (I am knowing - wrong)",
+      "Forgetting am/is/are"
+    ],
+    "category": "grammar",
+    "tags": [
+      "verbs",
+      "tenses",
+      "present",
+      "A1"
+    ],
+    "title_en": "Present Continuous Tense",
+    "title_id": "Present Continuous",
+    "simpleExplanation_en": "Present continuous describes actions happening now or around now. Form: am/is/are + verb-ing.",
+    "simpleExplanation_id": "Present continuous menyatakan aksi sedang terjadi sekarang atau sekitar sekarang. Bentuk: am/is/are + kata kerja-ing.",
+    "detailedExplanation_en": "Use present continuous for actions in progress now, temporary situations, and future arrangements. Form: subject + am/is/are + verb-ing. Spelling: drop final -e (make→making), double final consonant after short vowel (sit→sitting), -ie becomes -y (lie→lying). Not used with stative verbs (know, like, want).",
+    "detailedExplanation_id": "Pakai untuk aksi berlangsung sekarang, situasi sementara, dan rencana masa depan. Bentuk: subjek + am/is/are + kata kerja-ing. Ejaan: buang -e akhir (make jadi making), gandakan konsonan akhir.",
+    "usage_en": "I am studying now. | She is eating lunch.",
+    "usage_id": "I am studying now. | She is eating lunch.",
+    "avoidWhen_en": "Don't use with stative verbs like know, like, want, need.",
+    "avoidWhen_id": "Jangan dengan kata kerja statif seperti know, like, want, need.",
+    "commonMistakes_en": [
+      "Wrong -ing spelling",
+      "Using with stative verbs (I am knowing - wrong)",
+      "Forgetting am/is/are"
+    ],
+    "commonMistakes_id": [
+      "Ejaan -ing salah",
+      "Dipakai dengan kata kerja statif (I am knowing - salah)",
+      "Lupa am/is/are"
+    ]
+  },
+  {
+    "id": "en_past_simple",
+    "language": "en",
+    "title": "Past Simple Tense",
+    "pattern": "verb-ed (regular) | irregular forms",
+    "level": 1,
+    "examMappings": {},
+    "difficulty": 2,
+    "simpleExplanation": "Past simple describes completed actions in the past. Regular verbs add -ed, irregular verbs have special forms.",
+    "detailedExplanation": "Use past simple for finished actions at a specific past time. Regular verbs: add -ed (work→worked). Spelling: double consonant (stop→stopped), -y→-ied (study→studied). Irregular verbs must be memorized (go→went, eat→ate, see→saw). Negatives: didn't + base verb. Questions: Did + subject + base verb?",
+    "usage": "I worked yesterday. | She went to school.",
+    "avoidWhen": "Don't use for actions with present relevance (use present perfect).",
+    "examples": [
+      {
+        "text": "I visited Paris last year.",
+        "translation": "I visited Paris last year.",
+        "translation_en": "I visited Paris last year.",
+        "translation_id": "Saya mengunjungi Paris tahun lalu."
+      },
+      {
+        "text": "He didn't come to the party.",
+        "translation": "He didn't come to the party.",
+        "translation_en": "He didn't come to the party.",
+        "translation_id": "Dia tidak datang ke pesta."
+      }
+    ],
+    "commonMistakes": [
+      "Wrong irregular forms",
+      "Using -ed with irregular verbs",
+      "Forgetting didn't in negatives"
+    ],
+    "category": "grammar",
+    "tags": [
+      "verbs",
+      "tenses",
+      "past",
+      "A1"
+    ],
+    "title_en": "Past Simple Tense",
+    "title_id": "Past Simple",
+    "simpleExplanation_en": "Past simple describes completed actions in the past. Regular verbs add -ed, irregular verbs have special forms.",
+    "simpleExplanation_id": "Past simple menyatakan aksi selesai di masa lampau. Kata kerja reguler tambah -ed, tak beraturan punya bentuk khusus.",
+    "detailedExplanation_en": "Use past simple for finished actions at a specific past time. Regular verbs: add -ed (work→worked). Spelling: double consonant (stop→stopped), -y→-ied (study→studied). Irregular verbs must be memorized (go→went, eat→ate, see→saw). Negatives: didn't + base verb. Questions: Did + subject + base verb?",
+    "detailedExplanation_id": "Pakai untuk aksi selesai pada waktu lampau tertentu. Reguler: tambah -ed (work jadi worked). Ejaan: gandakan konsonan (stop jadi stopped), -y jadi -ied (study jadi studied). Kata kerja tak beraturan harus dihafal.",
+    "usage_en": "I worked yesterday. | She went to school.",
+    "usage_id": "I worked yesterday. | She went to school.",
+    "avoidWhen_en": "Don't use for actions with present relevance (use present perfect).",
+    "avoidWhen_id": "Jangan untuk aksi yang relevan sekarang (pakai present perfect).",
+    "commonMistakes_en": [
+      "Wrong irregular forms",
+      "Using -ed with irregular verbs",
+      "Forgetting didn't in negatives"
+    ],
+    "commonMistakes_id": [
+      "Bentuk tak beraturan salah",
+      "Memakai -ed dengan kata kerja tak beraturan",
+      "Lupa didn't dalam negasi"
+    ]
+  },
+  {
+    "id": "en_articles",
+    "language": "en",
+    "title": "Articles (a, an, the)",
+    "pattern": "a/an (indefinite) | the (definite)",
+    "level": 1,
+    "examMappings": {},
+    "difficulty": 2,
+    "simpleExplanation": "Use 'a/an' for non-specific singular nouns, 'the' for specific nouns. 'An' before vowel sounds.",
+    "detailedExplanation": "'A/an' introduce new, non-specific singular countable nouns. Use 'an' before vowel sounds (an apple, an hour). 'The' refers to specific nouns known to speaker and listener, unique things, or mentioned before. No article with plural/uncountable for general meaning, or with proper nouns (names, countries, cities - with exceptions).",
+    "usage": "I have a dog. The dog is black. | An apple a day.",
+    "avoidWhen": "Don't use 'the' for general plural/uncountable (I like dogs, not 'the dogs').",
+    "examples": [
+      {
+        "text": "I saw a cat. The cat was sleeping.",
+        "translation": "I saw a cat. The cat was sleeping.",
+        "translation_en": "I saw a cat. The cat was sleeping.",
+        "translation_id": "Saya melihat seekor kucing. Kucing itu sedang tidur."
+      },
+      {
+        "text": "She is an engineer.",
+        "translation": "She is an engineer.",
+        "translation_en": "She is an engineer.",
+        "translation_id": "Dia seorang insinyur."
+      }
+    ],
+    "commonMistakes": [
+      "Using 'a' before vowel sounds",
+      "Using 'the' for general statements",
+      "Omitting articles when needed"
+    ],
+    "category": "grammar",
+    "tags": [
+      "articles",
+      "determiners",
+      "A1"
+    ],
+    "title_en": "Articles (a, an, the)",
+    "title_id": "Artikel (a, an, the)",
+    "simpleExplanation_en": "Use 'a/an' for non-specific singular nouns, 'the' for specific nouns. 'An' before vowel sounds.",
+    "simpleExplanation_id": "Pakai a/an untuk kata benda tunggal tak spesifik, the untuk spesifik. An sebelum bunyi vokal.",
+    "detailedExplanation_en": "'A/an' introduce new, non-specific singular countable nouns. Use 'an' before vowel sounds (an apple, an hour). 'The' refers to specific nouns known to speaker and listener, unique things, or mentioned before. No article with plural/uncountable for general meaning, or with proper nouns (names, countries, cities - with exceptions).",
+    "detailedExplanation_id": "a/an memperkenalkan kata benda tunggal terhitung baru dan tak spesifik. Pakai an sebelum bunyi vokal (an apple, an hour). the merujuk kata benda spesifik yang dikenal pembicara dan pendengar, hal unik, atau yang sudah disebut.",
+    "usage_en": "I have a dog. The dog is black. | An apple a day.",
+    "usage_id": "I have a dog. The dog is black. | An apple a day.",
+    "avoidWhen_en": "Don't use 'the' for general plural/uncountable (I like dogs, not 'the dogs').",
+    "avoidWhen_id": "Jangan pakai the untuk jamak/uncountable umum (I like dogs, bukan the dogs).",
+    "commonMistakes_en": [
+      "Using 'a' before vowel sounds",
+      "Using 'the' for general statements",
+      "Omitting articles when needed"
+    ],
+    "commonMistakes_id": [
+      "Memakai a sebelum bunyi vokal",
+      "Memakai the untuk pernyataan umum",
+      "Menghilangkan artikel saat dibutuhkan"
+    ]
+  },
+  {
+    "id": "en_prepositions_time",
+    "language": "en",
+    "title": "Prepositions of Time (at, in, on)",
+    "pattern": "at (time) | in (month/year) | on (day/date)",
+    "level": 1,
+    "examMappings": {},
+    "difficulty": 2,
+    "simpleExplanation": "Use 'at' for clock times, 'in' for months/years/seasons, 'on' for days and dates.",
+    "detailedExplanation": "'At' for specific times (at 5 o'clock, at noon, at night). 'In' for longer periods (in January, in 2020, in summer, in the morning/afternoon/evening). 'On' for days and dates (on Monday, on June 5th, on my birthday). Exceptions: at night, at the weekend (UK)/on the weekend (US).",
+    "usage": "At 3pm | In July | On Friday",
+    "avoidWhen": "Don't mix them up (not 'in Friday' or 'at Monday').",
+    "examples": [
+      {
+        "text": "I wake up at 7 o'clock.",
+        "translation": "I wake up at 7 o'clock.",
+        "translation_en": "I wake up at 7 o'clock.",
+        "translation_id": "Saya bangun jam tujuh."
+      },
+      {
+        "text": "My birthday is on March 15th.",
+        "translation": "My birthday is on March 15th.",
+        "translation_en": "My birthday is on March 15th.",
+        "translation_id": "Ulang tahun saya tanggal 15 Maret."
+      }
+    ],
+    "commonMistakes": [
+      "Using wrong preposition (in Monday)",
+      "Confusing at night vs in the morning",
+      "UK/US differences (weekend)"
+    ],
+    "category": "grammar",
+    "tags": [
+      "prepositions",
+      "time",
+      "A1"
+    ],
+    "title_en": "Prepositions of Time (at, in, on)",
+    "title_id": "Preposisi Waktu (at, in, on)",
+    "simpleExplanation_en": "Use 'at' for clock times, 'in' for months/years/seasons, 'on' for days and dates.",
+    "simpleExplanation_id": "Pakai at untuk waktu jam, in untuk bulan/tahun/musim, on untuk hari dan tanggal.",
+    "detailedExplanation_en": "'At' for specific times (at 5 o'clock, at noon, at night). 'In' for longer periods (in January, in 2020, in summer, in the morning/afternoon/evening). 'On' for days and dates (on Monday, on June 5th, on my birthday). Exceptions: at night, at the weekend (UK)/on the weekend (US).",
+    "detailedExplanation_id": "at untuk waktu spesifik (at 5 o'clock, at noon, at night). in untuk periode lebih panjang (in January, in 2020, in summer, in the morning). on untuk hari dan tanggal (on Monday, on June 5th).",
+    "usage_en": "At 3pm | In July | On Friday",
+    "usage_id": "At 3pm | In July | On Friday",
+    "avoidWhen_en": "Don't mix them up (not 'in Friday' or 'at Monday').",
+    "avoidWhen_id": "Jangan campur (bukan in Friday atau at Monday).",
+    "commonMistakes_en": [
+      "Using wrong preposition (in Monday)",
+      "Confusing at night vs in the morning",
+      "UK/US differences (weekend)"
+    ],
+    "commonMistakes_id": [
+      "Preposisi salah (in Monday)",
+      "Mengacaukan at night vs in the morning",
+      "Perbedaan UK/US (weekend)"
+    ]
+  },
+  {
+    "id": "en_questions",
+    "language": "en",
+    "title": "Question Formation",
+    "pattern": "Wh- + auxiliary + subject + verb?",
+    "level": 1,
+    "examMappings": {},
+    "difficulty": 2,
+    "simpleExplanation": "Form questions with auxiliary verbs (do/does/did/is/are) or question words (what, where, when, who, why, how).",
+    "detailedExplanation": "Yes/no questions: Auxiliary + subject + verb (Do you like...? Is she...?). Wh-questions: Question word + auxiliary + subject + verb (Where do you live?). Present simple uses do/does, past simple uses did. With 'be', invert subject and verb (Are you...? Was he...?). Who/What as subject don't need auxiliary (Who lives here?).",
+    "usage": "Do you speak English? | Where are you from?",
+    "avoidWhen": "Don't use auxiliary with 'be' as main verb.",
+    "examples": [
+      {
+        "text": "What do you do?",
+        "translation": "What do you do?",
+        "translation_en": "What do you do?",
+        "translation_id": "Apa pekerjaanmu?"
+      },
+      {
+        "text": "Where does she work?",
+        "translation": "Where does she work?",
+        "translation_en": "Where does she work?",
+        "translation_id": "Di mana dia bekerja?"
+      }
+    ],
+    "commonMistakes": [
+      "Wrong word order",
+      "Missing auxiliary",
+      "Using do/does with 'be'"
+    ],
+    "category": "grammar",
+    "tags": [
+      "questions",
+      "sentence-structure",
+      "A1"
+    ],
+    "title_en": "Question Formation",
+    "title_id": "Pembentukan Pertanyaan",
+    "simpleExplanation_en": "Form questions with auxiliary verbs (do/does/did/is/are) or question words (what, where, when, who, why, how).",
+    "simpleExplanation_id": "Bentuk pertanyaan dengan kata kerja bantu (do/does/did/is/are) atau kata tanya (what, where, when, who, why, how).",
+    "detailedExplanation_en": "Yes/no questions: Auxiliary + subject + verb (Do you like...? Is she...?). Wh-questions: Question word + auxiliary + subject + verb (Where do you live?). Present simple uses do/does, past simple uses did. With 'be', invert subject and verb (Are you...? Was he...?). Who/What as subject don't need auxiliary (Who lives here?).",
+    "detailedExplanation_id": "Pertanyaan ya/tidak: kata bantu + subjek + kata kerja (Do you like...? Is she...?). Pertanyaan Wh-: kata tanya + kata bantu + subjek + kata kerja (Where do you live?). Present simple pakai do/does, past simple pakai did.",
+    "usage_en": "Do you speak English? | Where are you from?",
+    "usage_id": "Do you speak English? | Where are you from?",
+    "avoidWhen_en": "Don't use auxiliary with 'be' as main verb.",
+    "avoidWhen_id": "Jangan pakai kata bantu dengan be sebagai kata kerja utama.",
+    "commonMistakes_en": [
+      "Wrong word order",
+      "Missing auxiliary",
+      "Using do/does with 'be'"
+    ],
+    "commonMistakes_id": [
+      "Urutan kata salah",
+      "Kata bantu hilang",
+      "Memakai do/does dengan be"
+    ]
+  }
+]
