@@ -1,0 +1,469 @@
+[
+  {
+    "id": "de-conv-023",
+    "language": "de",
+    "title": "Homeoffice — Erfahrungen austauschen (Sharing Home Office Experiences)",
+    "level": 4,
+    "difficulty": 4,
+    "examMappings": {
+      "goethe": "B2"
+    },
+    "scenario": "office",
+    "speakers": [
+      {
+        "id": "anna",
+        "name": "Anna"
+      },
+      {
+        "id": "marco",
+        "name": "Marco"
+      }
+    ],
+    "dialogue": [
+      {
+        "speaker": "anna",
+        "text": "Marco, wie kommst du mit dem Homeoffice klar?",
+        "translation": "Marco, how are you getting on with working from home?",
+        "translation_id": "Marco, bagaimana kabarmu dengan kerja dari rumah?",
+        "audio": "de_conv023_01.mp3"
+      },
+      {
+        "speaker": "marco",
+        "text": "Eigentlich ganz gut, aber manchmal fühle ich mich allein.",
+        "translation": "Actually quite well, but sometimes I feel lonely.",
+        "translation_id": "Sebenarnya cukup baik, tetapi kadang saya merasa sendirian.",
+        "audio": "de_conv023_02.mp3"
+      },
+      {
+        "speaker": "anna",
+        "text": "Das kann ich verstehen. Bei mir fehlt der direkte Austausch mit den Kollegen.",
+        "translation": "I can understand that. I miss the direct exchange with colleagues.",
+        "translation_id": "Saya bisa memahaminya. Saya rindu komunikasi langsung dengan rekan kerja.",
+        "audio": "de_conv023_03.mp3"
+      },
+      {
+        "speaker": "marco",
+        "text": "Genau. Videocalls sind eben nicht dasselbe wie ein Gespräch in der Kaffeeküche.",
+        "translation": "Exactly. Video calls are just not the same as a chat in the kitchen.",
+        "translation_id": "Betul. Panggilan video memang tidak sama seperti obrolan di dapur kantor.",
+        "audio": "de_conv023_04.mp3"
+      },
+      {
+        "speaker": "anna",
+        "text": "Unser Team hat jetzt feste Bürotage eingeführt. Dienstag und Donnerstag sind wir alle im Büro.",
+        "translation": "Our team has now introduced fixed office days. On Tuesdays and Thursdays we are all in the office.",
+        "translation_id": "Tim kami sekarang menerapkan hari kantor tetap. Selasa dan Kamis semua di kantor.",
+        "audio": "de_conv023_05.mp3"
+      },
+      {
+        "speaker": "marco",
+        "text": "Das klingt nach einer guten Lösung. So hat man beides: Flexibilität und Kontakt.",
+        "translation": "That sounds like a good solution. This way you have both: flexibility and contact.",
+        "translation_id": "Itu kedengarannya solusi yang bagus. Dengan begitu ada dua-duanya: fleksibilitas dan interaksi.",
+        "audio": "de_conv023_06.mp3"
+      },
+      {
+        "speaker": "anna",
+        "text": "Genau. Wichtig ist nur, dass die Arbeit nicht am Ende der Woche liegen bleibt.",
+        "translation": "Exactly. The only important thing is that the work does not pile up at the end of the week.",
+        "translation_id": "Betul. Yang penting pekerjaan tidak menumpuk di akhir minggu.",
+        "audio": "de_conv023_07.mp3"
+      },
+      {
+        "speaker": "marco",
+        "text": "Da hast du recht. Ich plane meine Aufgaben jeden Morgen und halte mich daran.",
+        "translation": "You are right. I plan my tasks every morning and stick to it.",
+        "translation_id": "Kamu benar. Saya merencanakan tugas setiap pagi dan menepatinya.",
+        "audio": "de_conv023_08.mp3"
+      }
+    ],
+    "vocabulary": [
+      "das Homeoffice",
+      "der Austausch",
+      "die Kaffeeküche",
+      "der Bürotag"
+    ],
+    "grammar": [
+      "Konjunktiv II (könnte, würde)",
+      "Präpositionaladverbien (daran, dabei)"
+    ],
+    "culturalNotes": "Feste Bürotage sind in deutschen Unternehmen nach der Pandemie sehr verbreitet geworden.",
+    "culturalNotes_en": "Fixed office days have become very common in German companies after the pandemic.",
+    "culturalNotes_id": "Hari kantor tetap menjadi sangat umum di perusahaan Jerman setelah pandemi.",
+    "tags": [
+      "work",
+      "office",
+      "digital"
+    ]
+  },
+  {
+    "id": "de-conv-024",
+    "language": "de",
+    "title": "Die neue Wohnung besichtigen (Viewing the New Flat)",
+    "level": 4,
+    "difficulty": 4,
+    "examMappings": {
+      "goethe": "B2"
+    },
+    "scenario": "apartment",
+    "speakers": [
+      {
+        "id": "vera",
+        "name": "Frau Vogel"
+      },
+      {
+        "id": "tobias",
+        "name": "Herr Klein"
+      }
+    ],
+    "dialogue": [
+      {
+        "speaker": "vera",
+        "text": "Guten Tag, Herr Klein. Kommen Sie herein, die Wohnung liegt im zweiten Stock.",
+        "translation": "Good day, Mr Klein. Come in, the flat is on the second floor.",
+        "translation_id": "Selamat siang, Tuan Klein. Silakan masuk, apartemennya di lantai dua.",
+        "audio": "de_conv024_01.mp3"
+      },
+      {
+        "speaker": "tobias",
+        "text": "Vielen Dank. Die Lage gefällt mir schon einmal sehr gut, direkt an der S-Bahn.",
+        "translation": "Thank you very much. I already like the location very much, directly at the suburban train.",
+        "translation_id": "Terima kasih banyak. Saya sudah sangat menyukai lokasinya, tepat di dekat kereta S-Bahn.",
+        "audio": "de_conv024_02.mp3"
+      },
+      {
+        "speaker": "vera",
+        "text": "Ja, das ist ein Vorteil. Die Wohnung hat zwei Zimmer, ein großes Wohnzimmer und eine moderne Küche.",
+        "translation": "Yes, that is an advantage. The flat has two rooms, a large living room and a modern kitchen.",
+        "translation_id": "Ya, itu kelebihannya. Apartemen ini punya dua kamar, ruang tamu besar, dan dapur modern.",
+        "audio": "de_conv024_03.mp3"
+      },
+      {
+        "speaker": "tobias",
+        "text": "Und die Nebenkosten? Sind darin die Heizung und das Wasser enthalten?",
+        "translation": "And the ancillary costs? Are heating and water included?",
+        "translation_id": "Dan biaya tambahan? Apakah sudah termasuk pemanas dan air?",
+        "audio": "de_conv024_04.mp3"
+      },
+      {
+        "speaker": "vera",
+        "text": "Ja, die Betriebskosten sind in der Miete enthalten. Nur den Strom müssen Sie selbst anmelden.",
+        "translation": "Yes, the operating costs are included in the rent. Only the electricity you have to register yourself.",
+        "translation_id": "Ya, biaya operasional sudah termasuk sewa. Hanya listrik yang perlu Anda daftarkan sendiri.",
+        "audio": "de_conv024_05.mp3"
+      },
+      {
+        "speaker": "tobias",
+        "text": "Verstehe. Und wann wäre der Einzug möglich?",
+        "translation": "I see. And when would moving in be possible?",
+        "translation_id": "Paham. Dan kapan bisa pindah masuk?",
+        "audio": "de_conv024_06.mp3"
+      },
+      {
+        "speaker": "vera",
+        "text": "Ab dem ersten des nächsten Monats. Ich bräuchte nur Ihre Unterlagen und eine Schufa-Auskunft.",
+        "translation": "From the first of next month. I would only need your documents and a credit check report.",
+        "translation_id": "Mulai tanggal satu bulan depan. Saya hanya butuh dokumen Anda dan laporan Schufa.",
+        "audio": "de_conv024_07.mp3"
+      },
+      {
+        "speaker": "tobias",
+        "text": "Das kann ich gleich mitbringen. Die Wohnung überzeuge ich mir, ich würde sie gerne nehmen.",
+        "translation": "I can bring that right away. The flat convinces me, I would like to take it.",
+        "translation_id": "Itu bisa langsung saya bawa. Apartemen ini meyakinkan saya, saya mau mengambilnya.",
+        "audio": "de_conv024_08.mp3"
+      }
+    ],
+    "vocabulary": [
+      "die Besichtigung",
+      "die Nebenkosten",
+      "die Betriebskosten",
+      "der Einzug",
+      "die Schufa"
+    ],
+    "grammar": [
+      "Konjunktiv II (wäre, bräuchte, würde)",
+      "Kausaladverbien (denn)"
+    ],
+    "culturalNotes": "In Deutschland prüft der Vermieter oft die Schufa-Auskunft und verlangt Unterlagen wie Gehaltsnachweise.",
+    "culturalNotes_en": "In Germany landlords often check the Schufa credit report and require documents such as salary statements.",
+    "culturalNotes_id": "Di Jerman, pemilik rumah sering memeriksa laporan kredit Schufa dan meminta dokumen seperti bukti gaji.",
+    "tags": [
+      "housing",
+      "apartment",
+      "daily life"
+    ]
+  },
+  {
+    "id": "de-conv-025",
+    "language": "de",
+    "title": "Nachhaltig einkaufen (Shopping Sustainably)",
+    "level": 4,
+    "difficulty": 4,
+    "examMappings": {
+      "goethe": "B2"
+    },
+    "scenario": "shopping",
+    "speakers": [
+      {
+        "id": "lisa",
+        "name": "Lisa"
+      },
+      {
+        "id": "paul",
+        "name": "Paul"
+      }
+    ],
+    "dialogue": [
+      {
+        "speaker": "lisa",
+        "text": "Schau mal, dieser Supermarkt hat jetzt einen Unverpackt-Bereich.",
+        "translation": "Look, this supermarket now has a package-free section.",
+        "translation_id": "Lihat, supermarket ini sekarang punya area tanpa kemasan.",
+        "audio": "de_conv025_01.mp3"
+      },
+      {
+        "speaker": "paul",
+        "text": "Wirklich? Dann kann ich Nudeln und Müsli ohne Plastik kaufen. Das wollte ich schon lange.",
+        "translation": "Really? Then I can buy pasta and granola without plastic. I wanted to do that for a long time.",
+        "translation_id": "Benarkah? Berarti saya bisa membeli pasta dan granola tanpa plastik. Sudah lama saya ingin melakukannya.",
+        "audio": "de_conv025_02.mp3"
+      },
+      {
+        "speaker": "lisa",
+        "text": "Ich versuche generell, regionale Produkte zu kaufen. Die Transportwege sind kürzer und die Bauern vor Ort profitieren.",
+        "translation": "I generally try to buy regional products. The transport routes are shorter and local farmers benefit.",
+        "translation_id": "Saya umumnya mencoba membeli produk lokal. Jarak transport lebih pendek dan petani setempat diuntungkan.",
+        "audio": "de_conv025_03.mp3"
+      },
+      {
+        "speaker": "paul",
+        "text": "Stimmt. Aber nachhaltig ist leider oft teurer. Nicht jeder kann sich das leisten.",
+        "translation": "True. But sustainable is unfortunately often more expensive. Not everyone can afford it.",
+        "translation_id": "Betul. Tetapi sayangnya ramah lingkungan sering lebih mahal. Tidak semua orang mampu.",
+        "audio": "de_conv025_04.mp3"
+      },
+      {
+        "speaker": "lisa",
+        "text": "Da hast du einen Punkt. Deshalb ist es wichtig, dass auch die Politik günstige Alternativen fördert.",
+        "translation": "You have a point there. That is why it is important that politics also promotes affordable alternatives.",
+        "translation_id": "Kamu ada benarnya. Karena itu penting politik juga mendorong alternatif yang terjangkau.",
+        "audio": "de_conv025_05.mp3"
+      },
+      {
+        "speaker": "paul",
+        "text": "Auf jeden Fall. Jeder kleine Schritt zählt, aber das System muss sich insgesamt ändern.",
+        "translation": "Definitely. Every small step counts, but the system as a whole has to change.",
+        "translation_id": "Tentu saja. Setiap langkah kecil berarti, tetapi sistemnya harus berubah secara keseluruhan.",
+        "audio": "de_conv025_06.mp3"
+      }
+    ],
+    "vocabulary": [
+      "der Unverpackt-Bereich",
+      "regional",
+      "der Transportweg",
+      "die Alternative"
+    ],
+    "grammar": [
+      "Konjunktiv II (könnte, müsste)",
+      "Konsekutivsätze (deshalb, sodass)"
+    ],
+    "culturalNotes": "Unverpackt-Läden und Wochenmärkte mit regionalen Produkten sind in deutschen Städten sehr beliebt.",
+    "culturalNotes_en": "Package-free shops and weekly markets with regional products are very popular in German cities.",
+    "culturalNotes_id": "Toko tanpa kemasan dan pasar mingguan dengan produk lokal sangat populer di kota-kota Jerman.",
+    "tags": [
+      "shopping",
+      "environment",
+      "society"
+    ]
+  },
+  {
+    "id": "de-conv-026",
+    "language": "de",
+    "title": "Die Geschäftsreise planen (Planning the Business Trip)",
+    "level": 4,
+    "difficulty": 4,
+    "examMappings": {
+      "goethe": "B2"
+    },
+    "scenario": "office",
+    "speakers": [
+      {
+        "id": "chef",
+        "name": "Frau Berger"
+      },
+      {
+        "id": "mitarbeiter",
+        "name": "Herr Novak"
+      }
+    ],
+    "dialogue": [
+      {
+        "speaker": "chef",
+        "text": "Herr Novak, nächste Woche ist die Messe in Frankfurt. Haben Sie schon alles organisiert?",
+        "translation": "Mr Novak, next week is the trade fair in Frankfurt. Have you organized everything already?",
+        "translation_id": "Tuan Novak, minggu depan ada pameran dagang di Frankfurt. Apakah Anda sudah mengatur semuanya?",
+        "audio": "de_conv026_01.mp3"
+      },
+      {
+        "speaker": "mitarbeiter",
+        "text": "Fast. Ich habe das Hotel gebucht und die Zugtickets sind schon auf dem Handy.",
+        "translation": "Almost. I have booked the hotel and the train tickets are already on my phone.",
+        "translation_id": "Hampir selesai. Saya sudah memesan hotel dan tiket kereta sudah ada di ponsel.",
+        "audio": "de_conv026_02.mp3"
+      },
+      {
+        "speaker": "chef",
+        "text": "Sehr gut. Und haben Sie die Präsentation für unseren Stand vorbereitet?",
+        "translation": "Very good. And have you prepared the presentation for our booth?",
+        "translation_id": "Bagus sekali. Dan apakah Anda sudah menyiapkan presentasi untuk stan kami?",
+        "audio": "de_conv026_03.mp3"
+      },
+      {
+        "speaker": "mitarbeiter",
+        "text": "Die liegt auf dem Laufwerk. Ich werde sie vor der Abreise noch einmal überprüfen.",
+        "translation": "It is on the drive. I will check it again before departure.",
+        "translation_id": "Sudah ada di drive. Saya akan memeriksanya lagi sebelum berangkat.",
+        "audio": "de_conv026_04.mp3"
+      },
+      {
+        "speaker": "chef",
+        "text": "Denken Sie auch an die Visitenkarten? Auf Messen entscheidet oft der erste Eindruck.",
+        "translation": "Don't forget the business cards? At trade fairs the first impression often decides.",
+        "translation_id": "Jangan lupa kartu nama? Di pameran, kesan pertama sering menentukan.",
+        "audio": "de_conv026_05.mp3"
+      },
+      {
+        "speaker": "mitarbeiter",
+        "text": "Ja, die habe ich bestellt. Außerdem habe ich die wichtigsten Kunden zu einem Termin am Stand eingeladen.",
+        "translation": "Yes, I have ordered them. I have also invited the most important customers to an appointment at the booth.",
+        "translation_id": "Ya, sudah saya pesan. Selain itu saya sudah mengundang pelanggan penting untuk janji temu di stan.",
+        "audio": "de_conv026_06.mp3"
+      },
+      {
+        "speaker": "chef",
+        "text": "Perfekt. Dann sind wir gut vorbereitet. Wir treffen uns am Dienstag um sechs am Hauptbahnhof.",
+        "translation": "Perfect. Then we are well prepared. We meet on Tuesday at six at the main station.",
+        "translation_id": "Sempurna. Kalau begitu kita sudah siap. Kita bertemu Selasa jam enam di stasiun utama.",
+        "audio": "de_conv026_07.mp3"
+      }
+    ],
+    "vocabulary": [
+      "die Messe",
+      "der Stand",
+      "die Visitenkarte",
+      "die Abreise",
+      "das Laufwerk"
+    ],
+    "grammar": [
+      "Perfekt (habe gebucht, habe vorbereitet)",
+      "Futur I (werde überprüfen)"
+    ],
+    "culturalNotes": "Deutsche Geschäftsleute legen großen Wert auf Pünktlichkeit und Vorbereitung, besonders bei Messeterminen.",
+    "culturalNotes_en": "German business people place great value on punctuality and preparation, especially for trade fair appointments.",
+    "culturalNotes_id": "Pebisnis Jerman sangat menjunjung tinggi ketepatan waktu dan persiapan, terutama untuk janji di pameran.",
+    "tags": [
+      "work",
+      "travel",
+      "business"
+    ]
+  },
+  {
+    "id": "de-conv-027",
+    "language": "de",
+    "title": "Beim Arzt nachfragen (Asking the Doctor)",
+    "level": 4,
+    "difficulty": 4,
+    "examMappings": {
+      "goethe": "B2"
+    },
+    "scenario": "doctor",
+    "speakers": [
+      {
+        "id": "arzt",
+        "name": "Dr. Braun"
+      },
+      {
+        "id": "patient",
+        "name": "Frau Yilmaz"
+      }
+    ],
+    "dialogue": [
+      {
+        "speaker": "arzt",
+        "text": "Guten Morgen, Frau Yilmaz. Sie haben mir geschrieben, dass Sie wieder Kopfschmerzen haben?",
+        "translation": "Good morning, Ms Yilmaz. You wrote to me that you have headaches again?",
+        "translation_id": "Selamat pagi, Ibu Yilmaz. Anda menulis bahwa sakit kepala kembali kambuh?",
+        "audio": "de_conv027_01.mp3"
+      },
+      {
+        "speaker": "patient",
+        "text": "Ja, seit drei Wochen fast jeden Tag. Die Tabletten von letztem Mal helfen nicht mehr so gut.",
+        "translation": "Yes, almost every day for three weeks. The tablets from last time do not help as well anymore.",
+        "translation_id": "Ya, hampir setiap hari selama tiga minggu. Tablet yang dulu tidak lagi terlalu membantu.",
+        "audio": "de_conv027_02.mp3"
+      },
+      {
+        "speaker": "arzt",
+        "text": "Hmm, dann sollten wir die Dosis nicht einfach erhöhen. Wie ist Ihr Schlaf in letzter Zeit?",
+        "translation": "Hmm, then we should not simply increase the dose. How has your sleep been lately?",
+        "translation_id": "Hmm, maka sebaiknya kita tidak hanya menaikkan dosis. Bagaimana tidur Anda akhir-akhir ini?",
+        "audio": "de_conv027_03.mp3"
+      },
+      {
+        "speaker": "patient",
+        "text": "Eher schlecht. Ich habe viel Stress im Job und schlafe oft erst spät ein.",
+        "translation": "Rather bad. I have a lot of stress at work and often fall asleep late.",
+        "translation_id": "Agak buruk. Saya banyak stres di pekerjaan dan sering baru bisa tidur larut.",
+        "audio": "de_conv027_04.mp3"
+      },
+      {
+        "speaker": "arzt",
+        "text": "Das kann ein Auslöser sein. Ich schreibe Ihnen etwas anderes auf, aber Sie sollten auch über Entspannung nachdenken.",
+        "translation": "That can be a trigger. I will prescribe something else, but you should also think about relaxation.",
+        "translation_id": "Itu bisa jadi pemicu. Saya akan meresepkan obat lain, tetapi Anda juga perlu memikirkan relaksasi.",
+        "audio": "de_conv027_05.mp3"
+      },
+      {
+        "speaker": "patient",
+        "text": "Was würden Sie mir denn empfehlen? Yoga oder mehr Bewegung?",
+        "translation": "What would you recommend? Yoga or more exercise?",
+        "translation_id": "Apa yang Anda rekomendasikan? Yoga atau olahraga lebih banyak?",
+        "audio": "de_conv027_06.mp3"
+      },
+      {
+        "speaker": "arzt",
+        "text": "Beides ist gut. Fangen Sie mit regelmäßigen Spaziergängen an und versuchen Sie, vor dem Schlafen das Handy wegzulegen.",
+        "translation": "Both are good. Start with regular walks and try to put the phone away before sleeping.",
+        "translation_id": "Keduanya baik. Mulailah dengan jalan kaki rutin dan coba letakkan ponsel sebelum tidur.",
+        "audio": "de_conv027_07.mp3"
+      },
+      {
+        "speaker": "patient",
+        "text": "Das versuche ich. Wenn es in zwei Wochen nicht besser ist, komme ich wieder vorbei.",
+        "translation": "I will try that. If it is not better in two weeks, I will come back.",
+        "translation_id": "Saya akan coba. Kalau tidak membaik dalam dua minggu, saya akan datang lagi.",
+        "audio": "de_conv027_08.mp3"
+      }
+    ],
+    "vocabulary": [
+      "der Auslöser",
+      "die Dosis",
+      "das Rezept",
+      "die Entspannung",
+      "verschreiben"
+    ],
+    "grammar": [
+      "Konjunktiv II (würden, sollten)",
+      "Konditionalsätze (wenn ... dann)"
+    ],
+    "culturalNotes": "In Deutschland sind Termine beim Facharzt oft mit Wartezeiten verbunden; Hausärzte sind die erste Anlaufstelle.",
+    "culturalNotes_en": "In Germany appointments with specialists often involve waiting times; general practitioners are the first point of contact.",
+    "culturalNotes_id": "Di Jerman, janji temu dengan dokter spesialis sering harus menunggu; dokter umum adalah pintu masuk pertama.",
+    "tags": [
+      "health",
+      "doctor",
+      "daily life"
+    ]
+  }
+]
