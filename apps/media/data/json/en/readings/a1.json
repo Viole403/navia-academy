@@ -1,0 +1,312 @@
+[
+  {
+    "id": "r-en-a1-1-my-morning",
+    "title": "My Morning",
+    "type": "story",
+    "level": 1,
+    "examMappings": {},
+    "wordCount": 45,
+    "summary": "A short text about a morning routine.",
+    "paragraphs": [
+      {
+        "text": "I wake up at seven every morning.",
+        "translation": "I wake up at seven every morning.",
+        "translation_en": "I wake up at seven every morning.",
+        "translation_id": "Saya bangun jam tujuh setiap pagi."
+      },
+      {
+        "text": "I take a shower and eat breakfast.",
+        "translation": "I take a shower and eat breakfast.",
+        "translation_en": "I take a shower and eat breakfast.",
+        "translation_id": "Saya mandi dan makan sarapan."
+      },
+      {
+        "text": "Then I go to work by bus.",
+        "translation": "Then I go to work by bus.",
+        "translation_en": "Then I go to work by bus.",
+        "translation_id": "Lalu saya pergi bekerja naik bus."
+      }
+    ],
+    "summary_en": "A short text about a morning routine.",
+    "summary_id": "Teks pendek tentang rutinitas pagi."
+  },
+  {
+    "id": "r-en-1-2-my-family",
+    "title": "My Family",
+    "type": "story",
+    "level": 1,
+    "examMappings": {},
+    "wordCount": 45,
+    "summary": "About a small family.",
+    "paragraphs": [
+      {
+        "text": "My family has four people.",
+        "translation": "My family has four people.",
+        "translation_en": "My family has four people.",
+        "translation_id": "Keluarga saya ada empat orang."
+      },
+      {
+        "text": "My father is a doctor, and my mother is a teacher.",
+        "translation": "My father is a doctor, and my mother is a teacher.",
+        "translation_en": "My father is a doctor, and my mother is a teacher.",
+        "translation_id": "Ayah saya dokter, dan ibu saya guru."
+      },
+      {
+        "text": "I have one younger brother. He is a student.",
+        "translation": "I have one younger brother. He is a student.",
+        "translation_en": "I have one younger brother. He is a student.",
+        "translation_id": "Saya punya satu adik laki-laki. Dia seorang pelajar."
+      }
+    ],
+    "summary_en": "About a small family.",
+    "summary_id": "Tentang sebuah keluarga kecil."
+  },
+  {
+    "id": "r-en-1-3-at-school",
+    "title": "A Day at School",
+    "type": "story",
+    "level": 1,
+    "examMappings": {},
+    "wordCount": 45,
+    "summary": "A school day.",
+    "paragraphs": [
+      {
+        "text": "Classes start at eight in the morning.",
+        "translation": "Classes start at eight in the morning.",
+        "translation_en": "Classes start at eight in the morning.",
+        "translation_id": "Kelas dimulai jam delapan pagi."
+      },
+      {
+        "text": "We study English, math, and science.",
+        "translation": "We study English, math, and science.",
+        "translation_en": "We study English, math, and science.",
+        "translation_id": "Kami belajar bahasa Inggris, matematika, dan sains."
+      },
+      {
+        "text": "Lunch is at twelve, and school ends at three.",
+        "translation": "Lunch is at twelve, and school ends at three.",
+        "translation_en": "Lunch is at twelve, and school ends at three.",
+        "translation_id": "Makan siang jam dua belas, dan sekolah selesai jam tiga."
+      }
+    ],
+    "summary_en": "A school day.",
+    "summary_id": "Sehari di sekolah."
+  },
+  {
+    "id": "r-en-1-4-my-town",
+    "title": "My Town",
+    "type": "story",
+    "level": 1,
+    "examMappings": {},
+    "wordCount": 42,
+    "summary": "Describing a town.",
+    "paragraphs": [
+      {
+        "text": "My town is small and quiet.",
+        "translation": "My town is small and quiet.",
+        "translation_en": "My town is small and quiet.",
+        "translation_id": "Kota saya kecil dan tenang."
+      },
+      {
+        "text": "There is a park, a bank, and two restaurants.",
+        "translation": "There is a park, a bank, and two restaurants.",
+        "translation_en": "There is a park, a bank, and two restaurants.",
+        "translation_id": "Ada taman, bank, dan dua restoran."
+      },
+      {
+        "text": "People are very friendly here.",
+        "translation": "People are very friendly here.",
+        "translation_en": "People are very friendly here.",
+        "translation_id": "Orang-orang di sini sangat ramah."
+      }
+    ],
+    "summary_en": "Describing a town.",
+    "summary_id": "Mendeskripsikan sebuah kota."
+  },
+  {
+    "id": "r-en-1-5-weather",
+    "title": "The Weather",
+    "type": "story",
+    "level": 1,
+    "examMappings": {},
+    "wordCount": 40,
+    "summary": "Talking about the weather.",
+    "paragraphs": [
+      {
+        "text": "Today the weather is very nice.",
+        "translation": "Today the weather is very nice.",
+        "translation_en": "Today the weather is very nice.",
+        "translation_id": "Hari ini cuacanya sangat bagus."
+      },
+      {
+        "text": "The sky is blue and the sun is warm.",
+        "translation": "The sky is blue and the sun is warm.",
+        "translation_en": "The sky is blue and the sun is warm.",
+        "translation_id": "Langit biru dan matahari hangat."
+      },
+      {
+        "text": "It is a good day for a walk.",
+        "translation": "It is a good day for a walk.",
+        "translation_en": "It is a good day for a walk.",
+        "translation_id": "Hari yang pas untuk jalan-jalan."
+      }
+    ],
+    "summary_en": "Talking about the weather.",
+    "summary_id": "Bicara tentang cuaca."
+  },
+  {
+    "id": "r-en-1-6-favorite-food",
+    "title": "My Favorite Food",
+    "type": "story",
+    "level": 1,
+    "examMappings": {},
+    "wordCount": 42,
+    "summary": "About a favorite meal.",
+    "paragraphs": [
+      {
+        "text": "My favorite food is pizza.",
+        "translation": "My favorite food is pizza.",
+        "translation_en": "My favorite food is pizza.",
+        "translation_id": "Makanan favorit saya adalah pizza."
+      },
+      {
+        "text": "I eat pizza with my friends on weekends.",
+        "translation": "I eat pizza with my friends on weekends.",
+        "translation_en": "I eat pizza with my friends on weekends.",
+        "translation_id": "Saya makan pizza bersama teman-teman di akhir pekan."
+      },
+      {
+        "text": "It is delicious, but it is very expensive.",
+        "translation": "It is delicious, but it is very expensive.",
+        "translation_en": "It is delicious, but it is very expensive.",
+        "translation_id": "Enak, tapi harganya sangat mahal."
+      }
+    ],
+    "summary_en": "About a favorite meal.",
+    "summary_id": "Tentang hidangan favorit."
+  },
+  {
+    "id": "r-en-1-7-my-hobby",
+    "title": "My Hobby",
+    "type": "story",
+    "level": 1,
+    "examMappings": {},
+    "wordCount": 40,
+    "summary": "About a hobby.",
+    "paragraphs": [
+      {
+        "text": "My hobby is taking photos.",
+        "translation": "My hobby is taking photos.",
+        "translation_en": "My hobby is taking photos.",
+        "translation_id": "Hobi saya adalah memotret."
+      },
+      {
+        "text": "I like to take pictures of animals and nature.",
+        "translation": "I like to take pictures of animals and nature.",
+        "translation_en": "I like to take pictures of animals and nature.",
+        "translation_id": "Saya suka memotret hewan dan alam."
+      },
+      {
+        "text": "On Sundays I go to the park with my camera.",
+        "translation": "On Sundays I go to the park with my camera.",
+        "translation_en": "On Sundays I go to the park with my camera.",
+        "translation_id": "Setiap hari Minggu saya pergi ke taman membawa kamera."
+      }
+    ],
+    "summary_en": "About a hobby.",
+    "summary_id": "Tentang sebuah hobi."
+  },
+  {
+    "id": "r-en-1-8-shopping",
+    "title": "Going Shopping",
+    "type": "story",
+    "level": 1,
+    "examMappings": {},
+    "wordCount": 42,
+    "summary": "A short shopping trip.",
+    "paragraphs": [
+      {
+        "text": "I went to the supermarket this morning.",
+        "translation": "I went to the supermarket this morning.",
+        "translation_en": "I went to the supermarket this morning.",
+        "translation_id": "Saya pergi ke supermarket pagi ini."
+      },
+      {
+        "text": "I bought some bread, milk, and fruit.",
+        "translation": "I bought some bread, milk, and fruit.",
+        "translation_en": "I bought some bread, milk, and fruit.",
+        "translation_id": "Saya membeli roti, susu, dan buah."
+      },
+      {
+        "text": "Everything was cheap, so I was happy.",
+        "translation": "Everything was cheap, so I was happy.",
+        "translation_en": "Everything was cheap, so I was happy.",
+        "translation_id": "Semuanya murah, jadi saya senang."
+      }
+    ],
+    "summary_en": "A short shopping trip.",
+    "summary_id": "Perjalanan belanja singkat."
+  },
+  {
+    "id": "r-en-1-9-my-pet",
+    "title": "My Pet",
+    "type": "story",
+    "level": 1,
+    "examMappings": {},
+    "wordCount": 40,
+    "summary": "About a pet dog.",
+    "paragraphs": [
+      {
+        "text": "I have a small dog named Max.",
+        "translation": "I have a small dog named Max.",
+        "translation_en": "I have a small dog named Max.",
+        "translation_id": "Saya punya anjing kecil bernama Max."
+      },
+      {
+        "text": "He is black and very friendly.",
+        "translation": "He is black and very friendly.",
+        "translation_en": "He is black and very friendly.",
+        "translation_id": "Dia berwarna hitam dan sangat ramah."
+      },
+      {
+        "text": "I take him to the park every day.",
+        "translation": "I take him to the park every day.",
+        "translation_en": "I take him to the park every day.",
+        "translation_id": "Saya mengajaknya ke taman setiap hari."
+      }
+    ],
+    "summary_en": "About a pet dog.",
+    "summary_id": "Tentang anjing peliharaan."
+  },
+  {
+    "id": "r-en-1-10-weekend",
+    "title": "A Nice Weekend",
+    "type": "story",
+    "level": 1,
+    "examMappings": {},
+    "wordCount": 42,
+    "summary": "About a pleasant weekend.",
+    "paragraphs": [
+      {
+        "text": "Last weekend I visited my grandmother.",
+        "translation": "Last weekend I visited my grandmother.",
+        "translation_en": "Last weekend I visited my grandmother.",
+        "translation_id": "Akhir pekan lalu saya mengunjungi nenek saya."
+      },
+      {
+        "text": "We cooked lunch together and talked a lot.",
+        "translation": "We cooked lunch together and talked a lot.",
+        "translation_en": "We cooked lunch together and talked a lot.",
+        "translation_id": "Kami memasak makan siang bersama dan banyak mengobrol."
+      },
+      {
+        "text": "I had a very good time.",
+        "translation": "I had a very good time.",
+        "translation_en": "I had a very good time.",
+        "translation_id": "Saya bersenang-senang sekali."
+      }
+    ],
+    "summary_en": "About a pleasant weekend.",
+    "summary_id": "Tentang akhir pekan yang menyenangkan."
+  }
+]
