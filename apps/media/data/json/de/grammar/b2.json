@@ -1,0 +1,792 @@
+[
+  {
+    "id": "de_zustandspassiv",
+    "title": "Zustandspassiv (State Passive)",
+    "title_id": "Passif keadaan (Zustandspassiv)",
+    "pattern": "sein + Partizip II",
+    "level": 4,
+    "difficulty": 4,
+    "category": "grammar",
+    "tags": [
+      "passive",
+      "verbs",
+      "syntax",
+      "B2"
+    ],
+    "simpleExplanation": "Zustandspassiv (sein + Partizip II) describes a finished action and its RESULTING state, while Vorgangspassiv (werden + Partizip II) describes the process itself.",
+    "simpleExplanation_id": "Zustandspassiv (sein + Partizip II) menyatakan hasil akhir dari suatu tindakan, sedangkan Vorgangspassiv (werden + Partizip II) menyatakan prosesnya.",
+    "detailedExplanation": "Vorgangspassiv: Das Fenster wird geöffnet. (the window is being opened — process). Zustandspassiv: Das Fenster ist geöffnet. (the window is open — result). Zustandspassiv is formed with sein + Partizip II and is common in B2 writing and descriptions of conditions: Die Tür ist geschlossen. Der Vertrag ist unterschrieben. Das Paket ist verpackt.",
+    "detailedExplanation_id": "Vorgangspassiv: Das Fenster wird geöffnet. (jendela sedang dibuka — proses). Zustandspassiv: Das Fenster ist geöffnet. (jendelanya terbuka — hasil). Zustandspassiv dibentuk dengan sein + Partizip II dan umum di tulisan B2 serta deskripsi keadaan: Die Tür ist geschlossen. Der Vertrag ist unterschrieben. Das Paket ist verpackt.",
+    "usage": "Die Tür ist geschlossen. | Der Vertrag ist unterschrieben. | Das Paket ist verpackt.",
+    "avoidWhen": "Don't use Zustandspassiv for ongoing processes (use werden-Passiv instead). Use werden + Partizip II for actions in progress.",
+    "commonMistakes": [
+      "Using sein instead of werden for ongoing process (Das Fenster ist geöffnet shows result, not the opening)",
+      "Forgetting the infinitive position"
+    ],
+    "examples": [
+      {
+        "text": "Die Tür ist geschlossen.",
+        "translation": "The door is closed.",
+        "pronunciation": "diː tyːɐ̯ ɪst ɡəˈʃlɔsn̩",
+        "translation_en": "The door is closed.",
+        "translation_id": "Pintunya tertutup."
+      },
+      {
+        "text": "Der Vertrag ist unterschrieben.",
+        "translation": "The contract is signed.",
+        "pronunciation": "deːɐ̯ fɛɐ̯ˈtʁaːk ɪst ˈʊntɐˌʃʁiːbn̩",
+        "translation_en": "The contract is signed.",
+        "translation_id": "Kontraknya sudah ditandatangani."
+      },
+      {
+        "text": "Das Paket ist verpackt.",
+        "translation": "The parcel is wrapped.",
+        "pronunciation": "das paˈkeːt ɪst fɛɐ̯ˈpakt",
+        "translation_en": "The parcel is wrapped.",
+        "translation_id": "Paketnya sudah dibungkus."
+      }
+    ],
+    "relatedPoints": [
+      "de_passiv",
+      "de_werden_passiv_modals"
+    ],
+    "commonMistakes_en": [
+      "Using sein instead of werden for ongoing process (Das Fenster ist geöffnet shows result, not the opening)",
+      "Forgetting the infinitive position"
+    ],
+    "commonMistakes_id": [
+      "Memakai sein alih-alih werden untuk proses berlangsung (Das Fenster ist geöffnet = hasil, bukan proses membuka)",
+      "Lupa posisi infinitif"
+    ],
+    "usage_en": "Die Tür ist geschlossen. | Der Vertrag ist unterschrieben. | Das Paket ist verpackt.",
+    "usage_id": "Die Tür ist geschlossen. | Der Vertrag ist unterschrieben. | Das Paket ist verpackt.",
+    "avoidWhen_en": "Don't use Zustandspassiv for ongoing processes (use werden-Passiv instead). Use werden + Partizip II for actions in progress.",
+    "avoidWhen_id": "Jangan pakai Zustandspassiv untuk proses yang sedang berlangsung (pakai werden-Passiv). Gunakan werden + Partizip II untuk tindakan berlangsung.",
+    "examMappings": {
+      "goethe": "B2"
+    },
+    "language": "de",
+    "title_en": "Zustandspassiv (State Passive)",
+    "simpleExplanation_en": "Zustandspassiv (sein + Partizip II) describes a finished action and its RESULTING state, while Vorgangspassiv (werden + Partizip II) describes the process itself.",
+    "detailedExplanation_en": "Vorgangspassiv: Das Fenster wird geöffnet. (the window is being opened — process). Zustandspassiv: Das Fenster ist geöffnet. (the window is open — result). Zustandspassiv is formed with sein + Partizip II and is common in B2 writing and descriptions of conditions: Die Tür ist geschlossen. Der Vertrag ist unterschrieben. Das Paket ist verpackt."
+  },
+  {
+    "id": "de_relativsaetze_praeposition",
+    "title": "Relative Clauses with Prepositions",
+    "title_id": "Klausa relatif dengan preposisi",
+    "pattern": "Präposition + Relativpronomen (wo- kompounds)",
+    "level": 4,
+    "difficulty": 4,
+    "category": "grammar",
+    "tags": [
+      "relative clause",
+      "prepositions",
+      "syntax",
+      "B2"
+    ],
+    "simpleExplanation": "In relative clauses a preposition moves BEFORE the relative pronoun. For things/ideas, wo(r) + preposition (worüber, womit) is used.",
+    "simpleExplanation_id": "Dalam klausa relatif, preposisi pindah ke DEPAN kata ganti relatif. Untuk benda/gagasan dipakai wo(r) + preposisi (worüber, womit).",
+    "detailedExplanation": "Relative clause with preposition: Das Buch, UBER das ich spreche ... The preposition precedes the relative pronoun. Verb goes at end of the clause. With things/abstract ideas use wo(r)-compounds: worüber (about which), womit (with which), woran (on which), worauf (on which/at which). Example: Das ist das Thema, worüber wir reden. Das ist der Stuhl, auf dem du sitzst (concrete noun → Preposition + relative pronoun).",
+    "detailedExplanation_id": "Klausa relatif dengan preposisi: Das Buch, über das ich spreche ... Preposisi mendahului kata ganti relatif. Kata kerja diletakkan di akhir klausa. Untuk benda/gagasan abstrak pakai kata majemuk wo(r): worüber (yang tentang itu), womit (yang dengan itu), woran (yang pada itu), worauf (yang di atas itu). Contoh: Das ist das Thema, worüber wir reden. Das ist der Stuhl, auf dem du sitzst (nomina konkret → Preposisi + kata ganti relatif).",
+    "usage": "worüber wir reden | auf dem du sitzst | womit ich arbeite",
+    "avoidWhen": "Don't use wo(r)-compounds for people (use Preposition + relative pronoun: der/die/dem). wo(r)-compounds are for things/ideas only.",
+    "commonMistakes": [
+      "Forgetting the comma before the relative clause",
+      "Using wo-compound for people (worüber refers to things)",
+      "Wrong verb position (must be at the end)"
+    ],
+    "examples": [
+      {
+        "text": "Das ist das Thema, worüber wir reden.",
+        "translation": "That is the topic we are talking about.",
+        "pronunciation": "das ɪst das ˈteːma voːɐ̯ˈyːbɐ viːɐ̯ ˈʁeːdn̩",
+        "translation_en": "That is the topic we are talking about.",
+        "translation_id": "Itulah topik yang sedang kita bicarakan."
+      },
+      {
+        "text": "Das ist der Stuhl, auf dem du sitzst.",
+        "translation": "That is the chair you are sitting on.",
+        "pronunciation": "das ɪst deːɐ̯ ʃtuːl aʊ̯f deːm duː zɪt͡st",
+        "translation_en": "That is the chair you are sitting on.",
+        "translation_id": "Itulah kursi tempat kamu duduk."
+      },
+      {
+        "text": "Das ist der Computer, mit dem ich arbeite.",
+        "translation": "That is the computer I work with.",
+        "pronunciation": "das ɪst deːɐ̯ kɔmˈpjuːtɐ mɪt deːm ɪç ˈaʁbaɪtə",
+        "translation_en": "That is the computer I work with.",
+        "translation_id": "Itulah komputer yang saya pakai untuk bekerja."
+      }
+    ],
+    "relatedPoints": [
+      "de_adjective_endings"
+    ],
+    "commonMistakes_en": [
+      "Forgetting the comma before the relative clause",
+      "Using wo-compound for people (worüber refers to things)",
+      "Wrong verb position (must be at the end)"
+    ],
+    "commonMistakes_id": [
+      "Lupa koma sebelum klausa relatif",
+      "Memakai wo-komposit untuk orang (worüber untuk benda)",
+      "Posisi kata kerja salah (harus di akhir)"
+    ],
+    "usage_en": "worüber wir reden | auf dem du sitzst | womit ich arbeite",
+    "usage_id": "worüber wir reden | auf dem du sitzst | womit ich arbeite",
+    "avoidWhen_en": "Don't use wo(r)-compounds for people (use Preposition + relative pronoun: der/die/dem). wo(r)-compounds are for things/ideas only.",
+    "avoidWhen_id": "Jangan pakai wo(r)-komposit untuk orang (pakai Preposisi + kata ganti relatif: der/die/dem). wo(r)-komposit hanya untuk benda/gagasan.",
+    "examMappings": {
+      "goethe": "B2"
+    },
+    "language": "de",
+    "title_en": "Relative Clauses with Prepositions",
+    "simpleExplanation_en": "In relative clauses a preposition moves BEFORE the relative pronoun. For things/ideas, wo(r) + preposition (worüber, womit) is used.",
+    "detailedExplanation_en": "Relative clause with preposition: Das Buch, UBER das ich spreche ... The preposition precedes the relative pronoun. Verb goes at end of the clause. With things/abstract ideas use wo(r)-compounds: worüber (about which), womit (with which), woran (on which), worauf (on which/at which). Example: Das ist das Thema, worüber wir reden. Das ist der Stuhl, auf dem du sitzst (concrete noun → Preposition + relative pronoun)."
+  },
+  {
+    "id": "de_zweiteilige_konnektoren",
+    "title": "Two-Part Conjunctions",
+    "title_id": "Konjungsi dua bagian",
+    "pattern": "weder...noch | sowohl...als auch | entweder...oder | nicht nur...sondern auch",
+    "level": 4,
+    "difficulty": 3,
+    "category": "grammar",
+    "tags": [
+      "conjunctions",
+      "syntax",
+      "style",
+      "B2"
+    ],
+    "simpleExplanation": "Two-part conjunctions connect two equal elements: entweder...oder (either...or), weder...noch (neither...nor), sowohl...als auch (both...and), nicht nur...sondern auch (not only...but also).",
+    "simpleExplanation_id": "Konjungsi dua bagian menghubungkan dua unsur yang setara: entweder...oder (entah...atau), weder...noch (tidak...maupun), sowohl...als auch (baik...maupun), nicht nur...sondern auch (tidak hanya...tetapi juga).",
+    "detailedExplanation": "entweder...oder: Entweder fährst du mit dem Zug oder du fliegst. weder...noch comes with a negated sentence (or no negation + noch): Er trinkt weder Kaffee noch Tee. sowohl...als auch: Sie spricht sowohl Englisch als auch Französisch. nicht nur...sondern auch: Er ist nicht nur klug, sondern auch fleißig. With weder...noch the verb stays affirmative (no double negation)!",
+    "detailedExplanation_id": "entweder...oder: Entweder fährst du mit dem Zug oder du fliegst. (Entah kamu naik kereta atau kamu terbang). weder...noch dipakai tanpa negasi tambahan: Er trinkt weder Kaffee noch Tee. (Dia tidak minum kopi maupun teh). sowohl...als auch: Sie spricht sowohl Englisch als auch Französisch. (Dia berbicara baik bahasa Inggris maupun Prancis). nicht nur...sondern auch: Er ist nicht nur klug, sondern auch fleißig. (Dia bukan hanya pintar, tetapi juga rajin). Dengan weder...noch kata kerja tetap afirmatif (tanpa negasi ganda)!",
+    "usage": "Entweder fährst du oder du fliegst. | Er trinkt weder Kaffee noch Tee. | Sie spricht sowohl Englisch als auch Französisch.",
+    "avoidWhen": "Don't add a second negation with weder...noch (weder...noch nicht is wrong). Keep the verb affirmative.",
+    "commonMistakes": [
+      "Adding nicht with weder...noch (weder...noch nicht is wrong)",
+      "Confusing entweder...oder with weder...noch"
+    ],
+    "examples": [
+      {
+        "text": "Entweder fährst du mit dem Zug oder du fliegst.",
+        "translation": "Either you take the train or you fly.",
+        "pronunciation": "ɛntˈveːdɐ fɛːɐ̯st duː mɪt deːm tsuːk ˈoːdɐ duː fliːkst",
+        "translation_en": "Either you take the train or you fly.",
+        "translation_id": "Entah kamu naik kereta atau kamu terbang."
+      },
+      {
+        "text": "Er trinkt weder Kaffee noch Tee.",
+        "translation": "He drinks neither coffee nor tea.",
+        "pronunciation": "eːɐ ˈtʁɪŋkt ˈveːdɐ ˈkafe nɔx teː",
+        "translation_en": "He drinks neither coffee nor tea.",
+        "translation_id": "Dia tidak minum kopi maupun teh."
+      },
+      {
+        "text": "Sie spricht sowohl Englisch als auch Französisch.",
+        "translation": "She speaks both English and French.",
+        "pronunciation": "ziː ʃpʁɪçt zoˈvoːl ˈɛŋlɪʃ als aʊ̯x fʁantsøːzɪʃ",
+        "translation_en": "She speaks both English and French.",
+        "translation_id": "Dia berbicara baik bahasa Inggris maupun Prancis."
+      }
+    ],
+    "relatedPoints": [
+      "de_clauses_obwohl_damit"
+    ],
+    "commonMistakes_en": [
+      "Adding nicht with weder...noch (weder...noch nicht is wrong)",
+      "Confusing entweder...oder with weder...noch"
+    ],
+    "commonMistakes_id": [
+      "Menambahkan nicht dengan weder...noch (weder...noch nicht salah)",
+      "Mencampur entweder...oder dengan weder...noch"
+    ],
+    "usage_en": "Entweder fährst du oder du fliegst. | Er trinkt weder Kaffee noch Tee. | Sie spricht sowohl Englisch als auch Französisch.",
+    "usage_id": "Entweder fährst du oder du fliegst. | Er trinkt weder Kaffee noch Tee. | Sie spricht sowohl Englisch als auch Französisch.",
+    "avoidWhen_en": "Don't add a second negation with weder...noch (weder...noch nicht is wrong). Keep the verb affirmative.",
+    "avoidWhen_id": "Jangan tambahkan negasi kedua dengan weder...noch (weder...noch nicht salah). Pertahankan kata kerja afirmatif.",
+    "examMappings": {
+      "goethe": "B2"
+    },
+    "language": "de",
+    "title_en": "Two-Part Conjunctions",
+    "simpleExplanation_en": "Two-part conjunctions connect two equal elements: entweder...oder (either...or), weder...noch (neither...nor), sowohl...als auch (both...and), nicht nur...sondern auch (not only...but also).",
+    "detailedExplanation_en": "entweder...oder: Entweder fährst du mit dem Zug oder du fliegst. weder...noch comes with a negated sentence (or no negation + noch): Er trinkt weder Kaffee noch Tee. sowohl...als auch: Sie spricht sowohl Englisch als auch Französisch. nicht nur...sondern auch: Er ist nicht nur klug, sondern auch fleißig. With weder...noch the verb stays affirmative (no double negation)!"
+  },
+  {
+    "id": "de_konsekutivsaetze",
+    "title": "Consecutive Clauses (Result)",
+    "title_id": "Klausa konsekutif (akibat)",
+    "pattern": "sodass / so ..., dass / zu ... um zu",
+    "level": 4,
+    "difficulty": 4,
+    "category": "grammar",
+    "tags": [
+      "conjunctions",
+      "result",
+      "syntax",
+      "B2"
+    ],
+    "simpleExplanation": "Consecutive clauses express a result using sodass or so + adjective + dass: Es regnete, sodass wir zu Hause blieben. / Es war so laut, dass ich nicht schlafen konnte.",
+    "simpleExplanation_id": "Klausa konsekutif menyatakan akibat dengan sodass atau so + kata sifat + dass: Es regnete, sodass wir zu Hause blieben. (Hujan turun sehingga kami tinggal di rumah). / Es war so laut, dass ich nicht schlafen konnte. (Suaranya begitu keras sehingga saya tidak bisa tidur).",
+    "detailedExplanation": "sodass introduces a result clause, verb at the end: Er kam spät, sodass wir alle warteten. For emphasis use so + adjective + dass: Es war so kalt, dass wir zitterten. Difference from damit (purpose): damit = intention, sodass = result. Also: zu ... um zu (too much to) — Das Problem ist zu schwer, um es zu lösen.",
+    "detailedExplanation_id": "sodass mengawali klausa akibat, kata kerja di akhir: Er kam spät, sodass wir alle warteten. (Dia datang terlambat sehingga kami semua menunggu). Untuk penekanan pakai so + kata sifat + dass: Es war so kalt, dass wir zitterten. (Udara begitu dingin sehingga kami menggigil). Beda dengan damit (tujuan): damit = maksud, sodass = akibat. Juga: zu ... um zu (terlalu ... untuk) — Das Problem ist zu schwer, um es zu lösen. (Masalahnya terlalu sulit untuk dipecahkan).",
+    "usage": "Er kam spät, sodass wir warteten. | Es war so kalt, dass wir zitterten. | Das Problem ist zu schwer, um es zu lösen.",
+    "avoidWhen": "Don't confuse sodass (result) with damit (purpose). Use comma before both. zu...um zu requires a different subject retention rule — if the subject changes, use damit instead.",
+    "commonMistakes": [
+      "Missing comma before sodass/dass",
+      "Confusing sodass (result) and damit (purpose)",
+      "Using same subject wrongly in zu...um zu and changing subjects"
+    ],
+    "examples": [
+      {
+        "text": "Er kam spät, sodass wir alle warteten.",
+        "translation": "He came late, so we all waited.",
+        "pronunciation": "eːɐ kaːm ʃpɛːt zoˈdas viːɐ ˈalə ˈvaʁtətn̩",
+        "translation_en": "He came late, so we all waited.",
+        "translation_id": "Dia datang terlambat sehingga kami semua menunggu."
+      },
+      {
+        "text": "Es war so kalt, dass wir zitterten.",
+        "translation": "It was so cold that we were shivering.",
+        "pronunciation": "ɛs vaːɐ zoː kalt das viːɐ ˈt͡sɪtɐtn̩",
+        "translation_en": "It was so cold that we were shivering.",
+        "translation_id": "Udara begitu dingin sehingga kami menggigil."
+      },
+      {
+        "text": "Das Problem ist zu schwer, um es zu lösen.",
+        "translation": "The problem is too difficult to solve.",
+        "pronunciation": "das pʁoˈbleːm ɪst tsuː ʃveːɐ ʊm ɛs tsuː ˈløːzn̩",
+        "translation_en": "The problem is too difficult to solve.",
+        "translation_id": "Masalahnya terlalu sulit untuk dipecahkan."
+      }
+    ],
+    "relatedPoints": [
+      "de_clauses_obwohl_damit"
+    ],
+    "commonMistakes_en": [
+      "Missing comma before sodass/dass",
+      "Confusing sodass (result) and damit (purpose)",
+      "Using same subject wrongly in zu...um zu and changing subjects"
+    ],
+    "commonMistakes_id": [
+      "Hilang koma sebelum sodass/dass",
+      "Mencampur sodass (akibat) dengan damit (tujuan)",
+      "Salah pakai subjek sama dalam zu...um zu dan subjek berganti"
+    ],
+    "usage_en": "Er kam spät, sodass wir warteten. | Es war so kalt, dass wir zitterten. | Das Problem ist zu schwer, um es zu lösen.",
+    "usage_id": "Er kam spät, sodass wir warteten. | Es war so kalt, dass wir zitterten. | Das Problem ist zu schwer, um es zu lösen.",
+    "avoidWhen_en": "Don't confuse sodass (result) with damit (purpose). Use comma before both. zu...um zu requires a different subject retention rule — if the subject changes, use damit instead.",
+    "avoidWhen_id": "Jangan campur sodass (akibat) dengan damit (tujuan). Pakai koma sebelum keduanya. zu...um zu mensyaratkan subjek sama; bila subjek berubah, pakai damit.",
+    "examMappings": {
+      "goethe": "B2"
+    },
+    "language": "de",
+    "title_en": "Consecutive Clauses (Result)",
+    "simpleExplanation_en": "Consecutive clauses express a result using sodass or so + adjective + dass: Es regnete, sodass wir zu Hause blieben. / Es war so laut, dass ich nicht schlafen konnte.",
+    "detailedExplanation_en": "sodass introduces a result clause, verb at the end: Er kam spät, sodass wir alle warteten. For emphasis use so + adjective + dass: Es war so kalt, dass wir zitterten. Difference from damit (purpose): damit = intention, sodass = result. Also: zu ... um zu (too much to) — Das Problem ist zu schwer, um es zu lösen."
+  },
+  {
+    "id": "de_indirekte_frage",
+    "title": "Indirect Questions / Reported Questions",
+    "title_id": "Pertanyaan tidak langsung",
+    "pattern": "Ich weiß nicht, ob / w- + Nebensatz",
+    "level": 4,
+    "difficulty": 3,
+    "category": "grammar",
+    "tags": [
+      "questions",
+      "subordinate clause",
+      "syntax",
+      "B2"
+    ],
+    "simpleExplanation": "Indirect questions use ob (yes/no) or a w-question word, then verb order + verb at the end: Ich weiß nicht, ob er kommt. / Ich frage, wann der Zug fährt.",
+    "simpleExplanation_id": "Pertanyaan tidak langsung memakai ob (ya/tidak) atau kata tanya w-, kemudian kata kerja di akhir: Ich weiß nicht, ob er kommt. (Saya tidak tahu apakah dia datang). / Ich frage, wann der Zug fährt. (Saya bertanya kapan keretanya berangkat).",
+    "detailedExplanation": "Yes/no indirect question → ob: Sie fragt, ob ich komme. W-question → keep the question word and move verb to end: Woher kommst du? → Ich weiß nicht, woher du kommst. The announced intonation question (Stirnfrage) also possible. Subject often stays second if it is the subject of the introduced verb: Ich frage mich, ob es klappt.",
+    "detailedExplanation_id": "Pertanyaan tidak langsung ya/tidak → ob: Sie fragt, ob ich komme. (Dia bertanya apakah saya datang). Kata tanya w- → pertahankan kata tanya dan pindahkan kata kerja ke akhir: Woher kommst du? → Ich weiß nicht, woher du kommst. (Saya tidak tahu dari mana kamu berasal).",
+    "usage": "ob ich komme | woher du kommst | wann der Zug fährt",
+    "avoidWhen": "Don't keep question word order in indirect questions (verb must go to the end). No question mark at the end of an embedded indirect question.",
+    "commonMistakes": [
+      "Keeping direct question word order inside the clause",
+      "Adding question mark to indirect question",
+      "Using dass instead of ob"
+    ],
+    "examples": [
+      {
+        "text": "Ich weiß nicht, ob er kommt.",
+        "translation": "I don't know whether he comes.",
+        "pronunciation": "ɪç vaɪ̯s nɪçt ɔp eːɐ kɔmt",
+        "translation_en": "I don't know whether he comes.",
+        "translation_id": "Saya tidak tahu apakah dia datang."
+      },
+      {
+        "text": "Ich frage, wann der Zug fährt.",
+        "translation": "I ask when the train leaves.",
+        "pronunciation": "ɪç ˈfʁaːɡə van deːɐ̯ tsuːk fɛːɐ̯t",
+        "translation_en": "I ask when the train leaves.",
+        "translation_id": "Saya bertanya kapan keretanya berangkat."
+      },
+      {
+        "text": "Sie möchte wissen, woher du kommst.",
+        "translation": "She wants to know where you come from.",
+        "pronunciation": "ziː mœçtə ˈvɪsn̩ ˈvoːhɐ duː kɔmst",
+        "translation_en": "She wants to know where you come from.",
+        "translation_id": "Dia ingin tahu dari mana kamu berasal."
+      }
+    ],
+    "relatedPoints": [
+      "de_konjunktiv_i_indirect"
+    ],
+    "commonMistakes_en": [
+      "Keeping direct question word order inside the clause",
+      "Adding question mark to indirect question",
+      "Using dass instead of ob"
+    ],
+    "commonMistakes_id": [
+      "Mempertahankan urutan pertanyaan langsung di dalam klausa",
+      "Menambah tanda tanya pada pertanyaan tidak langsung",
+      "Memakai dass alih-alih ob"
+    ],
+    "usage_en": "ob ich komme | woher du kommst | wann der Zug fährt",
+    "usage_id": "ob ich komme | woher du kommst | wann der Zug fährt",
+    "avoidWhen_en": "Don't keep question word order in indirect questions (verb must go to the end). No question mark at the end of an embedded indirect question.",
+    "avoidWhen_id": "Jangan pertahankan urutan pertanyaan langsung dalam pertanyaan tidak langsung (kata kerja di akhir). Tanpa tanda tanya di akhir pertanyaan tidak langsung tersisip.",
+    "examMappings": {
+      "goethe": "B2"
+    },
+    "language": "de",
+    "title_en": "Indirect Questions / Reported Questions",
+    "simpleExplanation_en": "Indirect questions use ob (yes/no) or a w-question word, then verb order + verb at the end: Ich weiß nicht, ob er kommt. / Ich frage, wann der Zug fährt.",
+    "detailedExplanation_en": "Yes/no indirect question → ob: Sie fragt, ob ich komme. W-question → keep the question word and move verb to end: Woher kommst du? → Ich weiß nicht, woher du kommst. The announced intonation question (Stirnfrage) also possible. Subject often stays second if it is the subject of the introduced verb: Ich frage mich, ob es klappt."
+  },
+  {
+    "id": "de_adjektivdeklination_indefinitpronomen",
+    "title": "Adjective Endings after Indefinite Pronouns",
+    "title_id": "Akhiran kata sifat setelah kata ganti tak tentu",
+    "pattern": "einige/mehrere/viele/die meisten + adj + noun",
+    "level": 4,
+    "difficulty": 3,
+    "category": "grammar",
+    "tags": [
+      "adjective endings",
+      "determiners",
+      "cases",
+      "B2"
+    ],
+    "simpleExplanation": "Quantifying words like einige, mehrere, viele, wenige, die meisten take strong adjective endings (like those without article): einige nette Kollegen, vielen netten Leuten.",
+    "simpleExplanation_id": "Kata kuantitas seperti einige, mehrere, viele, wenige, die meisten mengambil akhiran kuat kata sifat (sama seperti tanpa artikel): einige nette Kollegen, vielen netten Leuten.",
+    "detailedExplanation": "Words indicating quantity WITHOUT an article (einige/some, mehrere/several, viele/many, wenige/few, die meisten/most, alle/all) trigger strong adjective endings identical to article-less declension: einige gute Freunde (nominative), mit vielen guten Freunden (dative). But after bestimmte, gewisse, manche, solche, andere treat them as definite determiners → weak endings: diese netten Kollegen. Mixed pairs like solche ähnliche Situationen.",
+    "detailedExplanation_id": "Kata yang menyatakan jumlah TANPA artikel (einige/beberapa, mehrere/beberapa, viele/banyak, wenige/sedikit, die meisten/kebanyakan, alle/semua) memicu akhiran kuat kata sifat yang sama dengan tanpa artikel: einige gute Freunde (nominatif), mit vielen guten Freunden (datif). Tetapi setelah bestimmte, gewisse, manche, solche, andere berlaku akhiran lemah: diese netten Kollegen.",
+    "usage": "einige gute Freunde | mit vielen guten Freunden | alle netten Kollegen",
+    "avoidWhen": "Don't use weak endings after einige/mehrere/viele (they are articleless → strong endings), except den/manche/solche which take weak endings.",
+    "commonMistakes": [
+      "Using weak endings after einige/viele (wrong — strong)",
+      "Handling manche/solche as strong (they are weak)"
+    ],
+    "examples": [
+      {
+        "text": "Sie hat einige gute Freunde.",
+        "translation": "She has some good friends.",
+        "pronunciation": "ziː hat ˈaɪ̯nɪɡə ɡuːtə ˈfʁɔɪ̯ndə",
+        "translation_en": "She has some good friends.",
+        "translation_id": "Dia punya beberapa teman baik."
+      },
+      {
+        "text": "Er spricht mit vielen netten Leuten.",
+        "translation": "He talks with many nice people.",
+        "pronunciation": "eːɐ ʃpʁɪçt mɪt ˈfiːli̯ən ˈnɛtn̩ ˈlɔɪ̯tn̩",
+        "translation_en": "He talks with many nice people.",
+        "translation_id": "Dia berbicara dengan banyak orang baik."
+      },
+      {
+        "text": "Alle netten Kollegen kommen zur Party.",
+        "translation": "All nice colleagues come to the party.",
+        "pronunciation": "ˈalə ˈnɛtn̩ koˈleːɡn̩ ˈkɔmən tsuːɐ̯ ˈpaʁti",
+        "translation_en": "All nice colleagues come to the party.",
+        "translation_id": "Semua rekan yang baik datang ke pesta."
+      }
+    ],
+    "relatedPoints": [
+      "de_adjective_endings"
+    ],
+    "commonMistakes_en": [
+      "Using weak endings after einige/viele (wrong — strong)",
+      "Handling manche/solche as strong (they are weak)"
+    ],
+    "commonMistakes_id": [
+      "Memakai akhiran lemah setelah einige/viele (salah — harus kuat)",
+      "Memperlakukan manche/solche sebagai kuat (sebenarnya lemah)"
+    ],
+    "usage_en": "einige gute Freunde | mit vielen guten Freunden | alle netten Kollegen",
+    "usage_id": "einige gute Freunde | mit vielen guten Freunden | alle netten Kollegen",
+    "avoidWhen_en": "Don't use weak endings after einige/mehrere/viele (they are articleless → strong endings), except den/manche/solche which take weak endings.",
+    "avoidWhen_id": "Jangan pakai akhiran lemah setelah einige/mehrere/viele (tanpa artikel → akhiran kuat), kecuali manche/solche yang berakhiran lemah.",
+    "examMappings": {
+      "goethe": "B2"
+    },
+    "language": "de",
+    "title_en": "Adjective Endings after Indefinite Pronouns",
+    "simpleExplanation_en": "Quantifying words like einige, mehrere, viele, wenige, die meisten take strong adjective endings (like those without article): einige nette Kollegen, vielen netten Leuten.",
+    "detailedExplanation_en": "Words indicating quantity WITHOUT an article (einige/some, mehrere/several, viele/many, wenige/few, die meisten/most, alle/all) trigger strong adjective endings identical to article-less declension: einige gute Freunde (nominative), mit vielen guten Freunden (dative). But after bestimmte, gewisse, manche, solche, andere treat them as definite determiners → weak endings: diese netten Kollegen. Mixed pairs like solche ähnliche Situationen."
+  },
+  {
+    "id": "de_konjunktiv_ii_vergangenheit",
+    "title": "Konjunktiv II for the Past (Unreal Past)",
+    "title_id": "Konjunktiv II untuk masa lampau (hipotesis tak nyata)",
+    "pattern": "hätte / wäre + Partizip II",
+    "level": 4,
+    "difficulty": 4,
+    "category": "grammar",
+    "tags": [
+      "verbs",
+      "mood",
+      "conditional",
+      "B2"
+    ],
+    "simpleExplanation": "Konjunktiv II for the past expresses unreal past situations or regrets: hätte/wäre + Partizip II. Ich hätte gern mehr gelernt. (I wish I had studied more).",
+    "simpleExplanation_id": "Konjunktiv II untuk masa lampau menyatakan situasi lampau yang tidak nyata atau penyesalan: hätte/wäre + Partizip II. Ich hätte gern mehr gelernt. (Seandainya saya belajar lebih banyak).",
+    "detailedExplanation": "Form: hätte + Partizip II (haben-verbs), wäre + Partizip II (sein-verbs), and modal verbs: hätte ... können, wäre ... gefahren. Ich wäre gern nach Berlin gefahren. Wenn ich das gewusst hätte, wäre ich anders vorgegangen. Expresses unreal past (would have / could have / should have). Often in conditional sentences type 3: Wenn ... gewesen wäre, hätte ...",
+    "detailedExplanation_id": "Bentuk: hätte + Partizip II (kata kerja haben), wäre + Partizip II (kata kerja sein), serta modal: hätte ... können, wäre ... gefahren. Ich wäre gern nach Berlin gefahren. (Seandainya saya pergi ke Berlin). Wenn ich das gewusst hätte, wäre ich anders vorgegangen. (Seandainya saya tahu itu, saya akan bertindak lain). Menyatakan masa lampau yang tak nyata, umum dalam kalimat kondisional tipe 3.",
+    "usage": "hätte gern gewusst | wäre gern gefahren | hätte ... können | wäre ... gewesen",
+    "avoidWhen": "Don't use this for real past events (use Perfekt/Präteritum). It's only for hypothetical/regret situations that did NOT happen.",
+    "commonMistakes": [
+      "Using Perfekt instead of Konjunktiv II for regrets",
+      "Wrong auxiliary (haben vs sein) with Partizip II",
+      "Forgetting ge- prefix omission with sein"
+    ],
+    "examples": [
+      {
+        "text": "Ich hätte gern mehr gelernt.",
+        "translation": "I wish I had studied more.",
+        "pronunciation": "ɪç ˈhɛtə ɡeːɐn meːɐ̯ ɡəˈlɛʁnt",
+        "translation_en": "I wish I had studied more.",
+        "translation_id": "Seandainya saya belajar lebih banyak."
+      },
+      {
+        "text": "Wenn ich das gewusst hätte, wäre ich anders vorgegangen.",
+        "translation": "If I had known that, I would have acted differently.",
+        "pronunciation": "vɛn ɪç das ɡəˈvʊst ˈhɛtə ˈvɛːʁə ɪç ˈandɐs ˈfoːɐ̯ɡəˌɡaŋən",
+        "translation_en": "If I had known that, I would have acted differently.",
+        "translation_id": "Seandainya saya tahu itu, saya akan bertindak lain."
+      },
+      {
+        "text": "Wir wären gern früher angekommen.",
+        "translation": "We would have liked to arrive earlier.",
+        "pronunciation": "viːɐ ˈvɛːʁən ɡeːɐn ˈfʁyːɐ ˈanɡəˌkɔmən",
+        "translation_en": "We would have liked to arrive earlier.",
+        "translation_id": "Seandainya kami tiba lebih awal."
+      }
+    ],
+    "relatedPoints": [
+      "de_konjunktiv_ii"
+    ],
+    "language": "de",
+    "title_en": "Konjunktiv II for the Past (Unreal Past)",
+    "simpleExplanation_en": "Konjunktiv II for the past expresses unreal past situations or regrets: hätte/wäre + Partizip II. Ich hätte gern mehr gelernt. (I wish I had studied more).",
+    "detailedExplanation_en": "Form: hätte + Partizip II (haben-verbs), wäre + Partizip II (sein-verbs), and modal verbs: hätte ... können, wäre ... gefahren. Ich wäre gern nach Berlin gefahren. Wenn ich das gewusst hätte, wäre ich anders vorgegangen. Expresses unreal past (would have / could have / should have). Often in conditional sentences type 3: Wenn ... gewesen wäre, hätte ...",
+    "usage_en": "hätte gern gewusst | wäre gern gefahren | hätte ... können | wäre ... gewesen",
+    "usage_id": "hätte gern gewusst | wäre gern gefahren | hätte ... können | wäre ... gewesen",
+    "avoidWhen_en": "Don't use this for real past events (use Perfekt/Präteritum). It's only for hypothetical/regret situations that did NOT happen.",
+    "avoidWhen_id": "Don't use this for real past events (use Perfekt/Präteritum). It's only for hypothetical/regret situations that did NOT happen.",
+    "commonMistakes_en": [
+      "Using Perfekt instead of Konjunktiv II for regrets",
+      "Wrong auxiliary (haben vs sein) with Partizip II",
+      "Forgetting ge- prefix omission with sein"
+    ],
+    "commonMistakes_id": [
+      "Memakai Perfekt alih-alih Konjunktiv II untuk penyesalan",
+      "Auxiliary salah (haben vs sein) dengan Partizip II",
+      "Lupa penghapusan ge- dengan sein"
+    ],
+    "examMappings": {
+      "goethe": "B2"
+    }
+  },
+  {
+    "id": "de_futur_i_vermutung",
+    "title": "Futur I for Assumptions",
+    "title_id": "Futur I untuk perkiraan/dugaan",
+    "pattern": "werden + infinitive (probably)",
+    "level": 4,
+    "difficulty": 3,
+    "category": "grammar",
+    "tags": [
+      "verbs",
+      "future",
+      "assumption",
+      "B2"
+    ],
+    "simpleExplanation": "Futur I with werden also expresses an assumption/probability about present or future: Er wird gleich anrufen. (He will probably call soon).",
+    "simpleExplanation_id": "Futur I dengan werden juga menyatakan perkiraan/kemungkinan tentang masa kini atau depan: Er wird gleich anrufen. (Dia mungkin akan segera menelepon).",
+    "detailedExplanation": "Assumption with werden + infinitive: Das wird stimmen. (That's probably right). Er wird müde sein. (He's probably tired). Often with sicher, wohl, vielleicht. Distinguish: werden + infinitive for future time vs werden + infinitive for probability — context decides. At B2 learn the probability reading, common in spoken German and Goethe B2 listening.",
+    "detailedExplanation_id": "Perkiraan dengan werden + infinitif: Das wird stimmen. (Itu mungkin benar). Er wird müde sein. (Dia mungkin lelah). Sering dengan sicher, wohl, vielleicht. Beda: werden + infinitif untuk waktu depan vs werden + infinitif untuk probabilitas — konteks yang menentukan. Di B2 pelajari makna probabilitas, umum dalam bahasa lisan dan listening Goethe B2.",
+    "usage": "Das wird stimmen. | Er wird müde sein. | Sie wird wohl kommen.",
+    "avoidWhen": "Don't use Futur I probability when the context clearly signals future time (use it for conjecture instead). Don't overuse — spoken German prefers present + sicher/wohl.",
+    "commonMistakes": [
+      "Confusing probability and future usage of werden",
+      "Adding a modal verb unnecessarily (wird kommen können is different)"
+    ],
+    "examples": [
+      {
+        "text": "Das wird stimmen.",
+        "translation": "That is probably right.",
+        "pronunciation": "das vɪʁt ˈʃtɪmən",
+        "translation_en": "That is probably right.",
+        "translation_id": "Itu mungkin benar."
+      },
+      {
+        "text": "Er wird müde sein.",
+        "translation": "He is probably tired.",
+        "pronunciation": "eːɐ vɪʁt ˈmyːdə zaɪ̯n",
+        "translation_en": "He is probably tired.",
+        "translation_id": "Dia mungkin lelah."
+      },
+      {
+        "text": "Sie wird wohl gleich kommen.",
+        "translation": "She will probably come soon.",
+        "pronunciation": "ziː vɪʁt voːl ɡlaɪ̯ç ˈkɔmən",
+        "translation_en": "She will probably come soon.",
+        "translation_id": "Dia mungkin akan segera datang."
+      }
+    ],
+    "relatedPoints": [
+      "de_futur_ii"
+    ],
+    "language": "de",
+    "title_en": "Futur I for Assumptions",
+    "simpleExplanation_en": "Futur I with werden also expresses an assumption/probability about present or future: Er wird gleich anrufen. (He will probably call soon).",
+    "detailedExplanation_en": "Assumption with werden + infinitive: Das wird stimmen. (That's probably right). Er wird müde sein. (He's probably tired). Often with sicher, wohl, vielleicht. Distinguish: werden + infinitive for future time vs werden + infinitive for probability — context decides. At B2 learn the probability reading, common in spoken German and Goethe B2 listening.",
+    "usage_en": "Das wird stimmen. | Er wird müde sein. | Sie wird wohl kommen.",
+    "usage_id": "Das wird stimmen. | Er wird müde sein. | Sie wird wohl kommen.",
+    "avoidWhen_en": "Don't use Futur I probability when the context clearly signals future time (use it for conjecture instead). Don't overuse — spoken German prefers present + sicher/wohl.",
+    "avoidWhen_id": "Don't use Futur I probability when the context clearly signals future time (use it for conjecture instead). Don't overuse — spoken German prefers present + sicher/wohl.",
+    "commonMistakes_en": [
+      "Confusing probability and future usage of werden",
+      "Adding a modal verb unnecessarily (wird kommen können is different)"
+    ],
+    "commonMistakes_id": [
+      "Mencampur penggunaan probabilitas dan waktu depan dari werden",
+      "Menambah modal verb tidak perlu (wird kommen können berbeda)"
+    ],
+    "examMappings": {
+      "goethe": "B2"
+    }
+  },
+  {
+    "id": "de_praepositionaladverbien",
+    "title": "Prepositional Adverbs (da-/wo- compounds)",
+    "title_id": "Adverbia berpreposisi (komposit da-/wo-)",
+    "pattern": "da(r) + Präposition / wo(r) + Präposition",
+    "level": 4,
+    "difficulty": 4,
+    "category": "grammar",
+    "tags": [
+      "adverbs",
+      "prepositions",
+      "pronouns",
+      "B2"
+    ],
+    "simpleExplanation": "da(r)+Präposition refers back to a thing/idea (darauf, damit, daran), wo(r)+Präposition asks about it (worauf, womit, woran). Useful with verb-preposition combinations.",
+    "simpleExplanation_id": "da(r)+preposisi merujuk kembali ke benda/gagasan (darauf, damit, daran), wo(r)+preposisi menanyakannya (worauf, womit, woran). Berguna dengan kombinasi kata kerja+preposisi.",
+    "detailedExplanation": "Many verbs require a specific preposition: sich interessieren für → Ich interessiere mich dafür. Ich frage mich, wofür. Denken an → Ich denke daran. Woran denkst du? Wenn + f = wo(r) + f: für → wofür. Use da-compounds ONLY for things/ideas, never for people (use er/sie/ihm/ihr + preposition for people: Ich denke an dich).",
+    "detailedExplanation_id": "Banyak kata kerja memerlukan preposisi tertentu: sich interessieren für → Ich interessiere mich dafür. Ich frage mich, wofür. Denken an → Ich denke daran. Woran denkst du? Bila preposisi dimulai f, bentuk wo(r): für → wofür. Komposit da HANYA untuk benda/gagasan, tidak pernah untuk orang (pakai er/sie/ihm/ihr + preposisi untuk orang: Ich denke an dich).",
+    "usage": "darüber sprechen | damit rechnen | woran denkst du | dafür interessieren",
+    "avoidWhen": "Don't use da-/wo- compounds with people. Don't split verb+preposition: the preposition must stay together with the da-/wo- prefix.",
+    "commonMistakes": [
+      "Using da-/wo-compound for a person (Ich denke daran means about that thing, not about him/her)",
+      "Dropping the r in vor f-vowel verbs (worauf not woauf)",
+      "Splitting the compound (da ... mit instead of damit)"
+    ],
+    "examples": [
+      {
+        "text": "Ich interessiere mich dafür.",
+        "translation": "I am interested in that.",
+        "pronunciation": "ɪç ɪntəʁeˈsiːʁə mɪç ˈdaːfyːɐ̯",
+        "translation_en": "I am interested in that.",
+        "translation_id": "Saya tertarik pada itu."
+      },
+      {
+        "text": "Woran denkst du?",
+        "translation": "What are you thinking about?",
+        "pronunciation": "voːˈʁan ˈdɛŋkst duː",
+        "translation_en": "What are you thinking about?",
+        "translation_id": "Sedang memikirkan apa kamu?"
+      },
+      {
+        "text": "Ich rechne damit.",
+        "translation": "I expect that / I count on it.",
+        "pronunciation": "ɪç ˈʁɛçnə ˈdaːmɪt",
+        "translation_en": "I expect that / I count on it.",
+        "translation_id": "Saya memperhitungkan itu."
+      }
+    ],
+    "relatedPoints": [
+      "de_relativsaetze_praeposition"
+    ],
+    "language": "de",
+    "title_en": "Prepositional Adverbs (da-/wo- compounds)",
+    "simpleExplanation_en": "da(r)+Präposition refers back to a thing/idea (darauf, damit, daran), wo(r)+Präposition asks about it (worauf, womit, woran). Useful with verb-preposition combinations.",
+    "detailedExplanation_en": "Many verbs require a specific preposition: sich interessieren für → Ich interessiere mich dafür. Ich frage mich, wofür. Denken an → Ich denke daran. Woran denkst du? Wenn + f = wo(r) + f: für → wofür. Use da-compounds ONLY for things/ideas, never for people (use er/sie/ihm/ihr + preposition for people: Ich denke an dich).",
+    "usage_en": "darüber sprechen | damit rechnen | woran denkst du | dafür interessieren",
+    "usage_id": "darüber sprechen | damit rechnen | woran denkst du | dafür interessieren",
+    "avoidWhen_en": "Don't use da-/wo- compounds with people. Don't split verb+preposition: the preposition must stay together with the da-/wo- prefix.",
+    "avoidWhen_id": "Don't use da-/wo- compounds with people. Don't split verb+preposition: the preposition must stay together with the da-/wo- prefix.",
+    "commonMistakes_en": [
+      "Using da-/wo-compound for a person (Ich denke daran means about that thing, not about him/her)",
+      "Dropping the r in vor f-vowel verbs (worauf not woauf)",
+      "Splitting the compound (da ... mit instead of damit)"
+    ],
+    "commonMistakes_id": [
+      "Memakai komposit da-/wo- untuk orang (Ich denke daran = tentang benda itu, bukan dia)",
+      "Mengecilkan huruf r di depan vokal: worauf bukan woauf",
+      "Memisah komposit (da ... mit alih-alih damit)"
+    ],
+    "examMappings": {
+      "goethe": "B2"
+    }
+  },
+  {
+    "id": "de_konditionalsaetze",
+    "title": "Conditional Sentences (B2)",
+    "title_id": "Kalimat bersyarat (B2)",
+    "pattern": "wenn + Nebensatz / ohne wenn",
+    "level": 4,
+    "difficulty": 3,
+    "category": "grammar",
+    "tags": [
+      "conditionals",
+      "subordinate clause",
+      "syntax",
+      "B2"
+    ],
+    "simpleExplanation": "Conditional sentences use wenn (if/when) + subordinate clause, with the main clause often introduced by dann/so. B2 adds alternatives without wenn: Falls (in case), and fronted verb inversion (Hättest du Zeit, ...).",
+    "simpleExplanation_id": "Kalimat bersyarat memakai wenn (jika/ketika) + klausa subordinatif, klausa utama sering diawali dann/so. Di B2 ada alternatif tanpa wenn: falls (seandainya), dan inversi kata kerja di depan (Hättest du Zeit, ...).",
+    "detailedExplanation": "Wenn du Zeit hast, (dann) kommst du mit. Conditional type 1 (real): Wenn es regnet, bleiben wir zu Hause. Type 2 (unreal present/future): Wenn ich Zeit hätte, würde ich kommen. Type 3 (unreal past): Wenn ich gewusst hätte ... With falls for hypothetical: Falls du kommst, sag Bescheid. Inversion for unreal: Hätte ich Zeit, käme ich mit. (if I had time).",
+    "detailedExplanation_id": "Wenn du Zeit hast, (dann) kommst du mit. (Jika kamu punya waktu, ikutlah). Tipe 1 (nyata): Wenn es regnet, bleiben wir zu Hause. Tipe 2 (tidak nyata kini/depan): Wenn ich Zeit hätte, würde ich kommen. Tipe 3 (tidak nyata lampau): Wenn ich gewusst hätte ... Dengan falls untuk hipotetis: Falls du kommst, sag Bescheid. (Kalau kamu datang, kabari). Inversi untuk tak nyata: Hätte ich Zeit, käme ich mit. (Seandainya aku punya waktu, aku ikut).",
+    "usage": "wenn du Zeit hast | falls du kommst | hätte ich Zeit, käme ich mit",
+    "avoidWhen": "Don't use dann after the main clause start when the wenn-clause follows (Wenn ..., dann is fine, but not after). Don't double wenn with falls.",
+    "commonMistakes": [
+      "Wrong verb position after wenn (verb goes to the end)",
+      "Adding dann where it does not belong",
+      "Mixing real and unreal conditionals"
+    ],
+    "examples": [
+      {
+        "text": "Wenn es regnet, bleiben wir zu Hause.",
+        "translation": "If it rains, we stay at home.",
+        "pronunciation": "vɛn ɛs ˈʁeːɡnət ˈblaɪ̯bn̩ viːɐ tsuː ˈhaʊ̯zə",
+        "translation_en": "If it rains, we stay at home.",
+        "translation_id": "Jika hujan, kami tinggal di rumah."
+      },
+      {
+        "text": "Wenn ich Zeit hätte, würde ich kommen.",
+        "translation": "If I had time, I would come.",
+        "pronunciation": "vɛn ɪç tsaɪ̯t ˈhɛtə ˈvʏʁdə ɪç ˈkɔmən",
+        "translation_en": "If I had time, I would come.",
+        "translation_id": "Seandainya saya punya waktu, saya akan datang."
+      },
+      {
+        "text": "Falls du kommst, sag Bescheid.",
+        "translation": "In case you come, let me know.",
+        "pronunciation": "fals duː kɔmst zaːk bəˈʃaɪ̯t",
+        "translation_en": "In case you come, let me know.",
+        "translation_id": "Kalau kamu datang, beri tahu saya."
+      }
+    ],
+    "relatedPoints": [
+      "de_konjunktiv_ii",
+      "de_konjunktiv_ii_vergangenheit"
+    ],
+    "language": "de",
+    "title_en": "Conditional Sentences (B2)",
+    "simpleExplanation_en": "Conditional sentences use wenn (if/when) + subordinate clause, with the main clause often introduced by dann/so. B2 adds alternatives without wenn: Falls (in case), and fronted verb inversion (Hättest du Zeit, ...).",
+    "detailedExplanation_en": "Wenn du Zeit hast, (dann) kommst du mit. Conditional type 1 (real): Wenn es regnet, bleiben wir zu Hause. Type 2 (unreal present/future): Wenn ich Zeit hätte, würde ich kommen. Type 3 (unreal past): Wenn ich gewusst hätte ... With falls for hypothetical: Falls du kommst, sag Bescheid. Inversion for unreal: Hätte ich Zeit, käme ich mit. (if I had time).",
+    "usage_en": "wenn du Zeit hast | falls du kommst | hätte ich Zeit, käme ich mit",
+    "usage_id": "wenn du Zeit hast | falls du kommst | hätte ich Zeit, käme ich mit",
+    "avoidWhen_en": "Don't use dann after the main clause start when the wenn-clause follows (Wenn ..., dann is fine, but not after). Don't double wenn with falls.",
+    "avoidWhen_id": "Don't use dann after the main clause start when the wenn-clause follows (Wenn ..., dann is fine, but not after). Don't double wenn with falls.",
+    "commonMistakes_en": [
+      "Wrong verb position after wenn (verb goes to the end)",
+      "Adding dann where it does not belong",
+      "Mixing real and unreal conditionals"
+    ],
+    "commonMistakes_id": [
+      "Posisi kata kerja salah setelah wenn (kata kerja di akhir)",
+      "Menambahkan dann di tempat yang salah",
+      "Mencampur kondisional nyata dan tidak nyata"
+    ],
+    "examMappings": {
+      "goethe": "B2"
+    }
+  },
+  {
+    "id": "de_kausaladverbien",
+    "title": "Causal Conjunctions (B2)",
+    "title_id": "Konjungsi kausal (B2)",
+    "pattern": "weil / da / deshalb / deswegen / daher",
+    "level": 4,
+    "difficulty": 3,
+    "category": "grammar",
+    "tags": [
+      "conjunctions",
+      "causal",
+      "syntax",
+      "B2"
+    ],
+    "simpleExplanation": "Causal relations: weil/da (because, clause-final verb), deshalb/deswegen/daher (therefore, verb second). B2 distinguishes da for known reasons and weil for new information.",
+    "simpleExplanation_id": "Hubungan sebab: weil/da (karena, kata kerja di akhir), deshalb/deswegen/daher (oleh karena itu, kata kerja posisi kedua). Di B2 dibedakan da untuk alasan yang sudah diketahui dan weil untuk informasi baru.",
+    "detailedExplanation": "weil introduces a subordinate clause (verb final): Ich bleibe zu Hause, weil es regnet. da also subordinate but for already-known reasons (often at the start): Da es regnet, bleiben wir zu Hause. deshalb/deswegen/daher connect main clauses with inversion: Es regnet, deshalb bleiben wir zu Hause. Note word order: Es regnet. Deshalb bleiben wir zu Hause. (verb second).",
+    "detailedExplanation_id": "weil mengawali klausa subordinatif (kata kerja di akhir): Ich bleibe zu Hause, weil es regnet. (Saya tinggal di rumah karena hujan). da juga subordinatif tetapi untuk alasan yang sudah diketahui (sering di awal): Da es regnet, bleiben wir zu Hause. deshalb/deswegen/daher menghubungkan klausa utama dengan inversi: Es regnet, deshalb bleiben wir zu Hause. (Hujan, oleh karena itu kami tinggal di rumah). Perhatikan urutan: Es regnet. Deshalb bleiben wir zu Hause.",
+    "usage": "weil es regnet | da es regnet | deshalb bleiben wir zu Hause",
+    "avoidWhen": "Don't use deshalb with subordinate word order (deshalb needs verb second). Don't use da when the reason is new info (use weil).",
+    "commonMistakes": [
+      "Putting verb at the end after deshalb (must be verb second)",
+      "Using weil and deshalb in the same sentence (redundant)"
+    ],
+    "examples": [
+      {
+        "text": "Ich bleibe zu Hause, weil es regnet.",
+        "translation": "I stay at home because it is raining.",
+        "pronunciation": "ɪç ˈblaɪ̯bə tsuː ˈhaʊ̯zə vaɪ̯l ɛs ˈʁeːɡnət",
+        "translation_en": "I stay at home because it is raining.",
+        "translation_id": "Saya tinggal di rumah karena hujan."
+      },
+      {
+        "text": "Da es regnet, bleiben wir zu Hause.",
+        "translation": "As it is raining, we stay at home.",
+        "pronunciation": "daː ɛs ˈʁeːɡnət ˈblaɪ̯bn̩ viːɐ tsuː ˈhaʊ̯zə",
+        "translation_en": "As it is raining, we stay at home.",
+        "translation_id": "Karena hujan, kami tinggal di rumah."
+      },
+      {
+        "text": "Es regnet, deshalb bleiben wir zu Hause.",
+        "translation": "It is raining, so we stay at home.",
+        "pronunciation": "ɛs ˈʁeːɡnət dɛsˈhalp ˈblaɪ̯bn̩ viːɐ tsuː ˈhaʊ̯zə",
+        "translation_en": "It is raining, so we stay at home.",
+        "translation_id": "Hujan, oleh karena itu kami tinggal di rumah."
+      }
+    ],
+    "relatedPoints": [
+      "de_clauses_obwohl_damit"
+    ],
+    "language": "de",
+    "title_en": "Causal Conjunctions (B2)",
+    "simpleExplanation_en": "Causal relations: weil/da (because, clause-final verb), deshalb/deswegen/daher (therefore, verb second). B2 distinguishes da for known reasons and weil for new information.",
+    "detailedExplanation_en": "weil introduces a subordinate clause (verb final): Ich bleibe zu Hause, weil es regnet. da also subordinate but for already-known reasons (often at the start): Da es regnet, bleiben wir zu Hause. deshalb/deswegen/daher connect main clauses with inversion: Es regnet, deshalb bleiben wir zu Hause. Note word order: Es regnet. Deshalb bleiben wir zu Hause. (verb second).",
+    "usage_en": "weil es regnet | da es regnet | deshalb bleiben wir zu Hause",
+    "usage_id": "weil es regnet | da es regnet | deshalb bleiben wir zu Hause",
+    "avoidWhen_en": "Don't use deshalb with subordinate word order (deshalb needs verb second). Don't use da when the reason is new info (use weil).",
+    "avoidWhen_id": "Don't use deshalb with subordinate word order (deshalb needs verb second). Don't use da when the reason is new info (use weil).",
+    "commonMistakes_en": [
+      "Putting verb at the end after deshalb (must be verb second)",
+      "Using weil and deshalb in the same sentence (redundant)"
+    ],
+    "commonMistakes_id": [
+      "Menaruh kata kerja di akhir setelah deshalb (harus posisi kedua)",
+      "Memakai weil dan deshalb dalam kalimat sama (berlebihan)"
+    ],
+    "examMappings": {
+      "goethe": "B2"
+    }
+  }
+]
