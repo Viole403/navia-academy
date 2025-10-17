@@ -1,0 +1,1011 @@
+[
+  {
+    "id": "en_hello",
+    "language": "en",
+    "text": "hello",
+    "pronunciation": [
+      "həˈloʊ",
+      "heˈloʊ"
+    ],
+    "translation": "hello",
+    "pos": "interjection",
+    "level": 1,
+    "examMappings": {
+      "toefl": "0-30"
+    },
+    "meanings": [
+      "hello",
+      "hi",
+      "greeting"
+    ],
+    "examples": [
+      {
+        "text": "Hello! How are you?",
+        "translation": "Hello! How are you?",
+        "pronunciation": "həˈloʊ haʊ ɑːr juː",
+        "translation_en": "Hello! How are you?",
+        "translation_id": "Halo! Apa kabar?"
+      }
+    ],
+    "frequency": 5,
+    "tags": [
+      "greeting",
+      "basic"
+    ],
+    "translation_en": "hello",
+    "translation_id": "halo",
+    "imagePrompt": "simple flat illustration of a friendly greeting: a smiling person waving one hand hello, warm greeting gesture, white background, no text, minimal style"
+  },
+  {
+    "id": "en_goodbye",
+    "language": "en",
+    "text": "goodbye",
+    "pronunciation": [
+      "ɡʊdˈbaɪ"
+    ],
+    "translation": "goodbye",
+    "pos": "interjection",
+    "level": 1,
+    "examMappings": {
+      "toefl": "0-30"
+    },
+    "meanings": [
+      "goodbye",
+      "bye",
+      "farewell"
+    ],
+    "examples": [
+      {
+        "text": "Goodbye! See you tomorrow.",
+        "translation": "Goodbye! See you tomorrow.",
+        "translation_en": "Goodbye! See you tomorrow.",
+        "translation_id": "Selamat tinggal! Sampai jumpa besok."
+      }
+    ],
+    "frequency": 5,
+    "tags": [
+      "greeting"
+    ],
+    "translation_en": "goodbye",
+    "translation_id": "selamat tinggal"
+  },
+  {
+    "id": "en_thank_you",
+    "language": "en",
+    "text": "thank you",
+    "pronunciation": [
+      "θæŋk juː"
+    ],
+    "translation": "thank you",
+    "pos": "phrase",
+    "level": 1,
+    "examMappings": {
+      "toefl": "0-30"
+    },
+    "meanings": [
+      "thanks",
+      "thank you"
+    ],
+    "examples": [
+      {
+        "text": "Thank you very much!",
+        "translation": "Thank you very much!",
+        "translation_en": "Thank you very much!",
+        "translation_id": "Terima kasih banyak!"
+      }
+    ],
+    "frequency": 5,
+    "tags": [
+      "politeness"
+    ],
+    "translation_en": "thank you",
+    "translation_id": "terima kasih"
+  },
+  {
+    "id": "en_please",
+    "language": "en",
+    "text": "please",
+    "pronunciation": [
+      "pliːz"
+    ],
+    "translation": "please",
+    "pos": "adverb",
+    "level": 1,
+    "examMappings": {
+      "toefl": "0-30"
+    },
+    "meanings": [
+      "please"
+    ],
+    "examples": [
+      {
+        "text": "Please help me.",
+        "translation": "Please help me.",
+        "translation_en": "Please help me.",
+        "translation_id": "Tolong bantu saya."
+      }
+    ],
+    "frequency": 5,
+    "tags": [
+      "politeness"
+    ],
+    "translation_en": "please",
+    "translation_id": "tolong"
+  },
+  {
+    "id": "en_yes",
+    "language": "en",
+    "text": "yes",
+    "pronunciation": [
+      "jɛs"
+    ],
+    "translation": "yes",
+    "pos": "adverb",
+    "level": 1,
+    "examMappings": {
+      "toefl": "0-30"
+    },
+    "meanings": [
+      "yes",
+      "affirmative"
+    ],
+    "examples": [
+      {
+        "text": "Yes, that's correct.",
+        "translation": "Yes, that's correct.",
+        "translation_en": "Yes, that's correct.",
+        "translation_id": "Ya, itu benar."
+      }
+    ],
+    "frequency": 5,
+    "tags": [
+      "basic"
+    ],
+    "translation_en": "yes",
+    "translation_id": "ya"
+  },
+  {
+    "id": "en_no",
+    "language": "en",
+    "text": "no",
+    "pronunciation": [
+      "noʊ"
+    ],
+    "translation": "no",
+    "pos": "adverb",
+    "level": 1,
+    "examMappings": {
+      "toefl": "0-30"
+    },
+    "meanings": [
+      "no",
+      "negative"
+    ],
+    "examples": [
+      {
+        "text": "No, thank you.",
+        "translation": "No, thank you.",
+        "translation_en": "No, thank you.",
+        "translation_id": "Tidak, terima kasih."
+      }
+    ],
+    "frequency": 5,
+    "tags": [
+      "basic"
+    ],
+    "translation_en": "no",
+    "translation_id": "tidak"
+  },
+  {
+    "id": "en_man",
+    "language": "en",
+    "text": "man",
+    "plural": "men",
+    "pronunciation": [
+      "mæn"
+    ],
+    "translation": "man",
+    "pos": "noun",
+    "level": 1,
+    "examMappings": {
+      "toefl": "0-30"
+    },
+    "meanings": [
+      "man",
+      "male adult"
+    ],
+    "examples": [
+      {
+        "text": "The man is tall.",
+        "translation": "The man is tall.",
+        "translation_en": "The man is tall.",
+        "translation_id": "Pria itu tinggi."
+      }
+    ],
+    "frequency": 5,
+    "tags": [
+      "people",
+      "noun"
+    ],
+    "translation_en": "man",
+    "translation_id": "pria"
+  },
+  {
+    "id": "en_woman",
+    "language": "en",
+    "text": "woman",
+    "plural": "women",
+    "pronunciation": [
+      "ˈwʊmən"
+    ],
+    "translation": "woman",
+    "pos": "noun",
+    "level": 1,
+    "examMappings": {
+      "toefl": "0-30"
+    },
+    "meanings": [
+      "woman",
+      "female adult"
+    ],
+    "examples": [
+      {
+        "text": "The woman is nice.",
+        "translation": "The woman is nice.",
+        "translation_en": "The woman is nice.",
+        "translation_id": "Wanita itu baik."
+      }
+    ],
+    "frequency": 5,
+    "tags": [
+      "people",
+      "noun"
+    ],
+    "translation_en": "woman",
+    "translation_id": "wanita"
+  },
+  {
+    "id": "en_child",
+    "language": "en",
+    "text": "child",
+    "plural": "children",
+    "pronunciation": [
+      "tʃaɪld"
+    ],
+    "translation": "child",
+    "pos": "noun",
+    "level": 1,
+    "examMappings": {
+      "toefl": "0-30"
+    },
+    "meanings": [
+      "child",
+      "kid"
+    ],
+    "examples": [
+      {
+        "text": "The child is playing.",
+        "translation": "The child is playing.",
+        "translation_en": "The child is playing.",
+        "translation_id": "Anak itu sedang bermain."
+      }
+    ],
+    "frequency": 5,
+    "tags": [
+      "people",
+      "noun"
+    ],
+    "translation_en": "child",
+    "translation_id": "anak"
+  },
+  {
+    "id": "en_father",
+    "language": "en",
+    "text": "father",
+    "pronunciation": [
+      "ˈfɑːðər"
+    ],
+    "translation": "father",
+    "pos": "noun",
+    "level": 1,
+    "examMappings": {
+      "toefl": "0-30"
+    },
+    "meanings": [
+      "father",
+      "dad"
+    ],
+    "examples": [
+      {
+        "text": "My father is a doctor.",
+        "translation": "My father is a doctor.",
+        "translation_en": "My father is a doctor.",
+        "translation_id": "Ayah saya seorang dokter."
+      }
+    ],
+    "frequency": 5,
+    "tags": [
+      "family",
+      "noun"
+    ],
+    "translation_en": "father",
+    "translation_id": "ayah"
+  },
+  {
+    "id": "en_mother",
+    "language": "en",
+    "text": "mother",
+    "pronunciation": [
+      "ˈmʌðər"
+    ],
+    "translation": "mother",
+    "pos": "noun",
+    "level": 1,
+    "examMappings": {
+      "toefl": "0-30"
+    },
+    "meanings": [
+      "mother",
+      "mom"
+    ],
+    "examples": [
+      {
+        "text": "My mother likes cooking.",
+        "translation": "My mother likes cooking.",
+        "translation_en": "My mother likes cooking.",
+        "translation_id": "Ibu saya suka memasak."
+      }
+    ],
+    "frequency": 5,
+    "tags": [
+      "family",
+      "noun"
+    ],
+    "translation_en": "mother",
+    "translation_id": "ibu"
+  },
+  {
+    "id": "en_brother",
+    "language": "en",
+    "text": "brother",
+    "pronunciation": [
+      "ˈbrʌðər"
+    ],
+    "translation": "brother",
+    "pos": "noun",
+    "level": 1,
+    "examMappings": {
+      "toefl": "0-30"
+    },
+    "meanings": [
+      "brother"
+    ],
+    "examples": [
+      {
+        "text": "My brother is a student.",
+        "translation": "My brother is a student.",
+        "translation_en": "My brother is a student.",
+        "translation_id": "Saudara laki-laki saya seorang pelajar."
+      }
+    ],
+    "frequency": 5,
+    "tags": [
+      "family",
+      "noun"
+    ],
+    "translation_en": "brother",
+    "translation_id": "saudara laki-laki"
+  },
+  {
+    "id": "en_sister",
+    "language": "en",
+    "text": "sister",
+    "pronunciation": [
+      "ˈsɪstər"
+    ],
+    "translation": "sister",
+    "pos": "noun",
+    "level": 1,
+    "examMappings": {
+      "toefl": "0-30"
+    },
+    "meanings": [
+      "sister"
+    ],
+    "examples": [
+      {
+        "text": "My sister is ten years old.",
+        "translation": "My sister is ten years old.",
+        "translation_en": "My sister is ten years old.",
+        "translation_id": "Saudara perempuan saya berumur sepuluh tahun."
+      }
+    ],
+    "frequency": 5,
+    "tags": [
+      "family",
+      "noun"
+    ],
+    "translation_en": "sister",
+    "translation_id": "saudara perempuan"
+  },
+  {
+    "id": "en_house",
+    "language": "en",
+    "text": "house",
+    "pronunciation": [
+      "haʊs"
+    ],
+    "translation": "house",
+    "pos": "noun",
+    "level": 1,
+    "examMappings": {
+      "toefl": "0-30"
+    },
+    "meanings": [
+      "house",
+      "home"
+    ],
+    "examples": [
+      {
+        "text": "The house is big.",
+        "translation": "The house is big.",
+        "translation_en": "The house is big.",
+        "translation_id": "Rumah itu besar."
+      }
+    ],
+    "frequency": 5,
+    "tags": [
+      "places",
+      "noun"
+    ],
+    "translation_en": "house",
+    "translation_id": "rumah"
+  },
+  {
+    "id": "en_water",
+    "language": "en",
+    "text": "water",
+    "pronunciation": [
+      "ˈwɔːtər"
+    ],
+    "translation": "water",
+    "pos": "noun",
+    "level": 1,
+    "examMappings": {
+      "toefl": "0-30"
+    },
+    "meanings": [
+      "water"
+    ],
+    "examples": [
+      {
+        "text": "I drink water.",
+        "translation": "I drink water.",
+        "translation_en": "I drink water.",
+        "translation_id": "Saya minum air."
+      }
+    ],
+    "frequency": 5,
+    "tags": [
+      "drinks",
+      "noun"
+    ],
+    "translation_en": "water",
+    "translation_id": "air"
+  },
+  {
+    "id": "en_food",
+    "language": "en",
+    "text": "food",
+    "pronunciation": [
+      "fuːd"
+    ],
+    "translation": "food",
+    "pos": "noun",
+    "level": 1,
+    "examMappings": {
+      "toefl": "0-30"
+    },
+    "meanings": [
+      "food"
+    ],
+    "examples": [
+      {
+        "text": "The food is good.",
+        "translation": "The food is good.",
+        "translation_en": "The food is good.",
+        "translation_id": "Makanannya enak."
+      }
+    ],
+    "frequency": 5,
+    "tags": [
+      "food",
+      "noun"
+    ],
+    "translation_en": "food",
+    "translation_id": "makanan"
+  },
+  {
+    "id": "en_eat",
+    "language": "en",
+    "text": "eat",
+    "pronunciation": [
+      "iːt"
+    ],
+    "translation": "to eat",
+    "pos": "verb",
+    "level": 1,
+    "pastTense": "ate",
+    "pastParticiple": "eaten",
+    "examMappings": {
+      "toefl": "0-30"
+    },
+    "meanings": [
+      "eat",
+      "consume food"
+    ],
+    "examples": [
+      {
+        "text": "We eat pizza.",
+        "translation": "We eat pizza.",
+        "translation_en": "We eat pizza.",
+        "translation_id": "Kami makan pizza."
+      }
+    ],
+    "frequency": 5,
+    "tags": [
+      "verb",
+      "basic",
+      "irregular"
+    ],
+    "translation_en": "to eat",
+    "translation_id": "makan"
+  },
+  {
+    "id": "en_drink",
+    "language": "en",
+    "text": "drink",
+    "pronunciation": [
+      "drɪŋk"
+    ],
+    "translation": "to drink",
+    "pos": "verb",
+    "level": 1,
+    "pastTense": "drank",
+    "pastParticiple": "drunk",
+    "examMappings": {
+      "toefl": "0-30"
+    },
+    "meanings": [
+      "drink"
+    ],
+    "examples": [
+      {
+        "text": "She drinks coffee.",
+        "translation": "She drinks coffee.",
+        "translation_en": "She drinks coffee.",
+        "translation_id": "Dia minum kopi."
+      }
+    ],
+    "frequency": 5,
+    "tags": [
+      "verb",
+      "basic",
+      "irregular"
+    ],
+    "translation_en": "to drink",
+    "translation_id": "minum"
+  },
+  {
+    "id": "en_go",
+    "language": "en",
+    "text": "go",
+    "pronunciation": [
+      "ɡoʊ"
+    ],
+    "translation": "to go",
+    "pos": "verb",
+    "level": 1,
+    "pastTense": "went",
+    "pastParticiple": "gone",
+    "examMappings": {
+      "toefl": "0-30"
+    },
+    "meanings": [
+      "go",
+      "move",
+      "travel"
+    ],
+    "examples": [
+      {
+        "text": "I go to school.",
+        "translation": "I go to school.",
+        "translation_en": "I go to school.",
+        "translation_id": "Saya pergi ke sekolah."
+      }
+    ],
+    "frequency": 5,
+    "tags": [
+      "verb",
+      "movement",
+      "irregular"
+    ],
+    "translation_en": "to go",
+    "translation_id": "pergi"
+  },
+  {
+    "id": "en_come",
+    "language": "en",
+    "text": "come",
+    "pronunciation": [
+      "kʌm"
+    ],
+    "translation": "to come",
+    "pos": "verb",
+    "level": 1,
+    "pastTense": "came",
+    "pastParticiple": "come",
+    "examMappings": {
+      "toefl": "0-30"
+    },
+    "meanings": [
+      "come",
+      "arrive"
+    ],
+    "examples": [
+      {
+        "text": "Please come here.",
+        "translation": "Please come here.",
+        "translation_en": "Please come here.",
+        "translation_id": "Tolong ke sini."
+      }
+    ],
+    "frequency": 5,
+    "tags": [
+      "verb",
+      "movement",
+      "irregular"
+    ],
+    "translation_en": "to come",
+    "translation_id": "datang"
+  },
+  {
+    "id": "en_be",
+    "language": "en",
+    "text": "be",
+    "pronunciation": [
+      "biː"
+    ],
+    "translation": "to be",
+    "pos": "verb",
+    "level": 1,
+    "pastTense": "was/were",
+    "pastParticiple": "been",
+    "examMappings": {
+      "toefl": "0-30"
+    },
+    "meanings": [
+      "be",
+      "exist"
+    ],
+    "examples": [
+      {
+        "text": "I am a student.",
+        "translation": "I am a student.",
+        "translation_en": "I am a student.",
+        "translation_id": "Saya seorang pelajar."
+      }
+    ],
+    "frequency": 5,
+    "tags": [
+      "verb",
+      "basic",
+      "irregular",
+      "auxiliary"
+    ],
+    "translation_en": "to be",
+    "translation_id": "menjadi",
+    "imagePrompt": "simple flat illustration of the verb to be: an equal sign between two silhouettes of a person, concept of identity and existence, white background, no text, minimal style"
+  },
+  {
+    "id": "en_have",
+    "language": "en",
+    "text": "have",
+    "pronunciation": [
+      "hæv"
+    ],
+    "translation": "to have",
+    "pos": "verb",
+    "level": 1,
+    "pastTense": "had",
+    "pastParticiple": "had",
+    "examMappings": {
+      "toefl": "0-30"
+    },
+    "meanings": [
+      "have",
+      "possess"
+    ],
+    "examples": [
+      {
+        "text": "I have a dog.",
+        "translation": "I have a dog.",
+        "translation_en": "I have a dog.",
+        "translation_id": "Saya punya seekor anjing."
+      }
+    ],
+    "frequency": 5,
+    "tags": [
+      "verb",
+      "basic",
+      "irregular"
+    ],
+    "translation_en": "to have",
+    "translation_id": "memiliki"
+  },
+  {
+    "id": "en_do",
+    "language": "en",
+    "text": "do",
+    "pronunciation": [
+      "duː"
+    ],
+    "translation": "to do",
+    "pos": "verb",
+    "level": 1,
+    "pastTense": "did",
+    "pastParticiple": "done",
+    "examMappings": {
+      "toefl": "0-30"
+    },
+    "meanings": [
+      "do",
+      "perform"
+    ],
+    "examples": [
+      {
+        "text": "What do you do?",
+        "translation": "What do you do?",
+        "translation_en": "What do you do?",
+        "translation_id": "Apa pekerjaanmu?"
+      }
+    ],
+    "frequency": 5,
+    "tags": [
+      "verb",
+      "basic",
+      "irregular",
+      "auxiliary"
+    ],
+    "translation_en": "to do",
+    "translation_id": "melakukan"
+  },
+  {
+    "id": "en_big",
+    "language": "en",
+    "text": "big",
+    "pronunciation": [
+      "bɪɡ"
+    ],
+    "translation": "big",
+    "pos": "adjective",
+    "level": 1,
+    "examMappings": {
+      "toefl": "0-30"
+    },
+    "meanings": [
+      "big",
+      "large"
+    ],
+    "examples": [
+      {
+        "text": "The house is big.",
+        "translation": "The house is big.",
+        "translation_en": "The house is big.",
+        "translation_id": "Rumah itu besar."
+      }
+    ],
+    "frequency": 5,
+    "tags": [
+      "adjective",
+      "description"
+    ],
+    "translation_en": "big",
+    "translation_id": "besar"
+  },
+  {
+    "id": "en_small",
+    "language": "en",
+    "text": "small",
+    "pronunciation": [
+      "smɔːl"
+    ],
+    "translation": "small",
+    "pos": "adjective",
+    "level": 1,
+    "examMappings": {
+      "toefl": "0-30"
+    },
+    "meanings": [
+      "small",
+      "little"
+    ],
+    "examples": [
+      {
+        "text": "The cat is small.",
+        "translation": "The cat is small.",
+        "translation_en": "The cat is small.",
+        "translation_id": "Kucing itu kecil."
+      }
+    ],
+    "frequency": 5,
+    "tags": [
+      "adjective",
+      "description"
+    ],
+    "translation_en": "small",
+    "translation_id": "kecil"
+  },
+  {
+    "id": "en_good",
+    "language": "en",
+    "text": "good",
+    "pronunciation": [
+      "ɡʊd"
+    ],
+    "translation": "good",
+    "pos": "adjective",
+    "level": 1,
+    "examMappings": {
+      "toefl": "0-30"
+    },
+    "meanings": [
+      "good",
+      "well"
+    ],
+    "examples": [
+      {
+        "text": "The food is good.",
+        "translation": "The food is good.",
+        "translation_en": "The food is good.",
+        "translation_id": "Makanannya enak."
+      }
+    ],
+    "frequency": 5,
+    "tags": [
+      "adjective",
+      "description"
+    ],
+    "translation_en": "good",
+    "translation_id": "bagus"
+  },
+  {
+    "id": "en_bad",
+    "language": "en",
+    "text": "bad",
+    "pronunciation": [
+      "bæd"
+    ],
+    "translation": "bad",
+    "pos": "adjective",
+    "level": 1,
+    "examMappings": {
+      "toefl": "0-30"
+    },
+    "meanings": [
+      "bad",
+      "poor"
+    ],
+    "examples": [
+      {
+        "text": "The weather is bad.",
+        "translation": "The weather is bad.",
+        "translation_en": "The weather is bad.",
+        "translation_id": "Cuacanya buruk."
+      }
+    ],
+    "frequency": 5,
+    "tags": [
+      "adjective",
+      "description"
+    ],
+    "translation_en": "bad",
+    "translation_id": "buruk"
+  },
+  {
+    "id": "en_one",
+    "language": "en",
+    "text": "one",
+    "pronunciation": [
+      "wʌn"
+    ],
+    "translation": "one",
+    "pos": "numeral",
+    "level": 1,
+    "examMappings": {
+      "toefl": "0-30"
+    },
+    "meanings": [
+      "one",
+      "1"
+    ],
+    "examples": [
+      {
+        "text": "One, two, three...",
+        "translation": "One, two, three...",
+        "translation_en": "One, two, three...",
+        "translation_id": "Satu, dua, tiga..."
+      }
+    ],
+    "frequency": 5,
+    "tags": [
+      "numbers"
+    ],
+    "translation_en": "one",
+    "translation_id": "satu"
+  },
+  {
+    "id": "en_two",
+    "language": "en",
+    "text": "two",
+    "pronunciation": [
+      "tuː"
+    ],
+    "translation": "two",
+    "pos": "numeral",
+    "level": 1,
+    "examMappings": {
+      "toefl": "0-30"
+    },
+    "meanings": [
+      "two",
+      "2"
+    ],
+    "examples": [
+      {
+        "text": "I have two sisters.",
+        "translation": "I have two sisters.",
+        "translation_en": "I have two sisters.",
+        "translation_id": "Saya punya dua saudara perempuan."
+      }
+    ],
+    "frequency": 5,
+    "tags": [
+      "numbers"
+    ],
+    "translation_en": "two",
+    "translation_id": "dua"
+  },
+  {
+    "id": "en_three",
+    "language": "en",
+    "text": "three",
+    "pronunciation": [
+      "θriː"
+    ],
+    "translation": "three",
+    "pos": "numeral",
+    "level": 1,
+    "examMappings": {
+      "toefl": "0-30"
+    },
+    "meanings": [
+      "three",
+      "3"
+    ],
+    "examples": [
+      {
+        "text": "Three books on the table.",
+        "translation": "Three books on the table.",
+        "translation_en": "Three books on the table.",
+        "translation_id": "Tiga buku di atas meja."
+      }
+    ],
+    "frequency": 5,
+    "tags": [
+      "numbers"
+    ],
+    "translation_en": "three",
+    "translation_id": "tiga"
+  }
+]
