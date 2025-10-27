@@ -1,0 +1,235 @@
+[
+  {
+    "id": "en_modal_verbs",
+    "language": "en",
+    "title": "Modal Verbs (can, should, must)",
+    "pattern": "modal + base verb",
+    "level": 2,
+    "examMappings": {},
+    "difficulty": 2,
+    "simpleExplanation": "Modal verbs express ability (can), advice (should), or obligation (must). Followed by base verb without 'to'.",
+    "detailedExplanation": "Modals: can (ability), could (past ability/polite request), should (advice), must (strong obligation), may/might (possibility), would (conditional/polite). Never add -s for third person. Main verb stays in base form without 'to'. Negatives: cannot/can't, shouldn't, mustn't. Questions: invert modal and subject.",
+    "usage": "I can swim. | You should study. | We must go.",
+    "avoidWhen": "Don't add -to after modals (not 'can to swim').",
+    "examples": [
+      {
+        "text": "She can speak three languages.",
+        "translation": "She can speak three languages.",
+        "translation_en": "She can speak three languages.",
+        "translation_id": "Dia bisa berbicara tiga bahasa."
+      },
+      {
+        "text": "You should see a doctor.",
+        "translation": "You should see a doctor.",
+        "translation_en": "You should see a doctor.",
+        "translation_id": "Kamu sebaiknya periksa ke dokter."
+      }
+    ],
+    "commonMistakes": [
+      "Adding 'to' (can to go)",
+      "Adding -s (he cans)",
+      "Using infinitive (must to go)"
+    ],
+    "category": "grammar",
+    "tags": [
+      "modals",
+      "verbs",
+      "A2"
+    ],
+    "title_en": "Modal Verbs (can, should, must)",
+    "title_id": "Kata Kerja Modal (can, should, must)",
+    "simpleExplanation_en": "Modal verbs express ability (can), advice (should), or obligation (must). Followed by base verb without 'to'.",
+    "simpleExplanation_id": "Modal menyatakan kemampuan (can), saran (should), atau keharusan (must). Diikuti kata kerja dasar tanpa to.",
+    "detailedExplanation_en": "Modals: can (ability), could (past ability/polite request), should (advice), must (strong obligation), may/might (possibility), would (conditional/polite). Never add -s for third person. Main verb stays in base form without 'to'. Negatives: cannot/can't, shouldn't, mustn't. Questions: invert modal and subject.",
+    "detailedExplanation_id": "Modal: can (bisa), could (bisa lampau/permohonan sopan), should (saran), must (keharusan kuat), may/might (kemungkinan), would (kondisional/sopan). Tidak pernah tambah -s untuk orang ketiga. Kata kerja utama tetap dasar.",
+    "usage_en": "I can swim. | You should study. | We must go.",
+    "usage_id": "I can swim. | You should study. | We must go.",
+    "avoidWhen_en": "Don't add -to after modals (not 'can to swim').",
+    "avoidWhen_id": "Jangan tambah to setelah modal (bukan can to swim).",
+    "commonMistakes_en": [
+      "Adding 'to' (can to go)",
+      "Adding -s (he cans)",
+      "Using infinitive (must to go)"
+    ],
+    "commonMistakes_id": [
+      "Menambah to (can to go)",
+      "Menambah -s (he cans)",
+      "Memakai infinitif (must to go)"
+    ]
+  },
+  {
+    "id": "en_comparatives",
+    "language": "en",
+    "title": "Comparative and Superlative Adjectives",
+    "pattern": "big → bigger → biggest | more beautiful → most beautiful",
+    "level": 2,
+    "examMappings": {},
+    "difficulty": 3,
+    "simpleExplanation": "Short adjectives add -er/-est. Long adjectives use more/most. Use 'than' with comparatives.",
+    "detailedExplanation": "One-syllable adjectives: add -er/-est (tall→taller→tallest). Two syllables ending in -y: change -y to -ier/-iest (happy→happier→happiest). Longer adjectives: use more/most (beautiful→more beautiful→most beautiful). Irregular: good→better→best, bad→worse→worst. Use 'than' for comparisons. Superlatives need 'the'.",
+    "usage": "She is taller than me. | This is the best book.",
+    "avoidWhen": "Don't mix forms (more taller - wrong).",
+    "examples": [
+      {
+        "text": "My car is faster than yours.",
+        "translation": "My car is faster than yours.",
+        "translation_en": "My car is faster than yours.",
+        "translation_id": "Mobil saya lebih cepat daripada mobilmu."
+      },
+      {
+        "text": "This is the most expensive restaurant.",
+        "translation": "This is the most expensive restaurant.",
+        "translation_en": "This is the most expensive restaurant.",
+        "translation_id": "Ini restoran paling mahal."
+      }
+    ],
+    "commonMistakes": [
+      "Mixing -er with more",
+      "Forgetting 'than'",
+      "Irregular forms"
+    ],
+    "category": "grammar",
+    "tags": [
+      "adjectives",
+      "comparison",
+      "A2"
+    ],
+    "title_en": "Comparative and Superlative Adjectives",
+    "title_id": "Kata Sifat Komparatif dan Superlatif",
+    "simpleExplanation_en": "Short adjectives add -er/-est. Long adjectives use more/most. Use 'than' with comparatives.",
+    "simpleExplanation_id": "Kata sifat pendek tambah -er/-est. Kata sifat panjang pakai more/most. Pakai than dengan komparatif.",
+    "detailedExplanation_en": "One-syllable adjectives: add -er/-est (tall→taller→tallest). Two syllables ending in -y: change -y to -ier/-iest (happy→happier→happiest). Longer adjectives: use more/most (beautiful→more beautiful→most beautiful). Irregular: good→better→best, bad→worse→worst. Use 'than' for comparisons. Superlatives need 'the'.",
+    "detailedExplanation_id": "Satu suku kata: tambah -er/-est (tall jadi taller jadi tallest). Dua suku kata akhir -y: ubah -y jadi -ier/-iest (happy jadi happier). Kata sifat panjang: pakai more/most (beautiful jadi more beautiful).",
+    "usage_en": "She is taller than me. | This is the best book.",
+    "usage_id": "She is taller than me. | This is the best book.",
+    "avoidWhen_en": "Don't mix forms (more taller - wrong).",
+    "avoidWhen_id": "Jangan campur bentuk (more taller - salah).",
+    "commonMistakes_en": [
+      "Mixing -er with more",
+      "Forgetting 'than'",
+      "Irregular forms"
+    ],
+    "commonMistakes_id": [
+      "Mencampur -er dengan more",
+      "Lupa than",
+      "Bentuk tak beraturan"
+    ]
+  },
+  {
+    "id": "en_present_perfect",
+    "language": "en",
+    "title": "Present Perfect Tense",
+    "pattern": "have/has + past participle",
+    "level": 2,
+    "examMappings": {},
+    "difficulty": 3,
+    "simpleExplanation": "Present perfect links past and present. Use for experiences, unfinished time, and results now.",
+    "detailedExplanation": "Form: have/has + past participle. Uses: (1) life experiences without specific time (I have visited Paris), (2) actions in unfinished time periods (today, this week), (3) recent past with present result (He has lost his keys - he can't open the door now). Often with: ever, never, already, yet, just, for, since. Don't use with specific past time.",
+    "usage": "I have lived here for 5 years. | She has just arrived.",
+    "avoidWhen": "Don't use with specific past time (yesterday, last year).",
+    "examples": [
+      {
+        "text": "Have you ever been to London?",
+        "translation": "Have you ever been to London?",
+        "translation_en": "Have you ever been to London?",
+        "translation_id": "Apakah kamu pernah ke London?"
+      },
+      {
+        "text": "I have already finished my homework.",
+        "translation": "I have already finished my homework.",
+        "translation_en": "I have already finished my homework.",
+        "translation_id": "Saya sudah menyelesaikan PR saya."
+      }
+    ],
+    "commonMistakes": [
+      "Using with specific past time",
+      "Wrong past participle forms",
+      "Confusing with past simple"
+    ],
+    "category": "grammar",
+    "tags": [
+      "verbs",
+      "tenses",
+      "present-perfect",
+      "A2"
+    ],
+    "title_en": "Present Perfect Tense",
+    "title_id": "Present Perfect",
+    "simpleExplanation_en": "Present perfect links past and present. Use for experiences, unfinished time, and results now.",
+    "simpleExplanation_id": "Present perfect menghubungkan lampau dan sekarang. Dipakai untuk pengalaman, waktu belum selesai, dan hasil sekarang.",
+    "detailedExplanation_en": "Form: have/has + past participle. Uses: (1) life experiences without specific time (I have visited Paris), (2) actions in unfinished time periods (today, this week), (3) recent past with present result (He has lost his keys - he can't open the door now). Often with: ever, never, already, yet, just, for, since. Don't use with specific past time.",
+    "detailedExplanation_id": "Bentuk: have/has + past participle. Kegunaan: (1) pengalaman hidup tanpa waktu spesifik (I have visited Paris), (2) aksi dalam periode belum selesai (today, this week), (3) lampau baru dengan hasil sekarang.",
+    "usage_en": "I have lived here for 5 years. | She has just arrived.",
+    "usage_id": "I have lived here for 5 years. | She has just arrived.",
+    "avoidWhen_en": "Don't use with specific past time (yesterday, last year).",
+    "avoidWhen_id": "Jangan pakai dengan waktu lampau spesifik (yesterday, last year).",
+    "commonMistakes_en": [
+      "Using with specific past time",
+      "Wrong past participle forms",
+      "Confusing with past simple"
+    ],
+    "commonMistakes_id": [
+      "Memakai dengan waktu lampau spesifik",
+      "Bentuk past participle salah",
+      "Mengacaukan dengan past simple"
+    ]
+  },
+  {
+    "id": "en_conditionals",
+    "language": "en",
+    "title": "Conditional Sentences (Zero & First)",
+    "pattern": "If + present, present | If + present, will + base verb",
+    "level": 2,
+    "examMappings": {},
+    "difficulty": 3,
+    "simpleExplanation": "Zero conditional for general truths (if + present, present). First conditional for real future possibilities (if + present, will + verb).",
+    "detailedExplanation": "Zero conditional: If + present simple, present simple. For facts and general truths (If you heat water to 100°C, it boils). First conditional: If + present simple, will + base verb. For real future possibilities (If it rains tomorrow, I will stay home). 'If' clause can come first or second. Use comma when 'if' clause is first.",
+    "usage": "If you study, you learn. | If I see her, I'll tell her.",
+    "avoidWhen": "Don't use 'will' in the if-clause for first conditional.",
+    "examples": [
+      {
+        "text": "If you press this button, the light turns on.",
+        "translation": "If you press this button, the light turns on.",
+        "translation_en": "If you press this button, the light turns on.",
+        "translation_id": "Jika kamu menekan tombol ini, lampu akan menyala."
+      },
+      {
+        "text": "If I have time, I will help you.",
+        "translation": "If I have time, I will help you.",
+        "translation_en": "If I have time, I will help you.",
+        "translation_id": "Jika saya punya waktu, saya akan membantumu."
+      }
+    ],
+    "commonMistakes": [
+      "Using 'will' in if-clause",
+      "Confusing zero and first",
+      "Wrong tense combination"
+    ],
+    "category": "grammar",
+    "tags": [
+      "conditionals",
+      "if-clauses",
+      "A2"
+    ],
+    "title_en": "Conditional Sentences (Zero & First)",
+    "title_id": "Kalimat Kondisional (Zero & First)",
+    "simpleExplanation_en": "Zero conditional for general truths (if + present, present). First conditional for real future possibilities (if + present, will + verb).",
+    "simpleExplanation_id": "Zero conditional untuk kebenaran umum (if + present, present). First conditional untuk kemungkinan masa depan (if + present, will + kata kerja).",
+    "detailedExplanation_en": "Zero conditional: If + present simple, present simple. For facts and general truths (If you heat water to 100°C, it boils). First conditional: If + present simple, will + base verb. For real future possibilities (If it rains tomorrow, I will stay home). 'If' clause can come first or second. Use comma when 'if' clause is first.",
+    "detailedExplanation_id": "Zero conditional: If + present simple, present simple. Untuk fakta dan kebenaran umum (If you heat water to 100C, it boils). First conditional: If + present simple, will + kata kerja dasar. Untuk kemungkinan masa depan nyata.",
+    "usage_en": "If you study, you learn. | If I see her, I'll tell her.",
+    "usage_id": "If you study, you learn. | If I see her, I'll tell her.",
+    "avoidWhen_en": "Don't use 'will' in the if-clause for first conditional.",
+    "avoidWhen_id": "Jangan pakai will dalam if-clause untuk first conditional.",
+    "commonMistakes_en": [
+      "Using 'will' in if-clause",
+      "Confusing zero and first",
+      "Wrong tense combination"
+    ],
+    "commonMistakes_id": [
+      "Memakai will dalam if-clause",
+      "Mengacaukan zero dan first",
+      "Kombinasi waktu salah"
+    ]
+  }
+]
