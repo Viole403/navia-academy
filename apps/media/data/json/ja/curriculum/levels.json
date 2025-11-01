@@ -1,0 +1,47 @@
+[
+  {
+    "id": "ja-n5",
+    "courseId": "japanese-course",
+    "title": "N5 — Beginner",
+    "subtitle": "初級",
+    "order": 1,
+    "examType": "jlpt",
+    "unitIds": ["ja-n5-u1", "ja-n5-u2", "ja-n5-u3", "ja-n5-u4"]
+  },
+  {
+    "id": "ja-n4",
+    "courseId": "japanese-course",
+    "title": "N4 — Elementary",
+    "subtitle": "基礎",
+    "order": 2,
+    "examType": "jlpt",
+    "unitIds": ["ja-n4-u1", "ja-n4-u2"]
+  },
+  {
+    "id": "ja-n3",
+    "courseId": "japanese-course",
+    "title": "N3 — Intermediate",
+    "subtitle": "中級",
+    "order": 3,
+    "examType": "jlpt",
+    "unitIds": ["ja-n3-u1"]
+  },
+  {
+    "id": "ja-n2",
+    "courseId": "japanese-course",
+    "title": "N2 — Upper Intermediate",
+    "subtitle": "準上級",
+    "order": 4,
+    "examType": "jlpt",
+    "unitIds": ["ja-n2-u1"]
+  },
+  {
+    "id": "ja-n1",
+    "courseId": "japanese-course",
+    "title": "N1 — Advanced",
+    "subtitle": "上級",
+    "order": 5,
+    "examType": "jlpt",
+    "unitIds": []
+  }
+]
