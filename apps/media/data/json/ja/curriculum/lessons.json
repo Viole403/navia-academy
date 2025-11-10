@@ -1,0 +1,307 @@
+[
+  {
+    "id": "ja-n5-u1-l1",
+    "unitId": "ja-n5-u1",
+    "title": "Hiragana あ-row to な-row",
+    "subtitle": "ひらがな あ行〜な行",
+    "order": 1,
+    "durationMin": 20,
+    "xp": 50,
+    "objectives": [
+      "Master Hiragana あ to な rows",
+      "Pronounce Japanese sounds correctly",
+      "Write basic Hiragana"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Hiragana Characters",
+        "content": "Learn basic Hiragana",
+        "vocabIds": [
+          "ja_hiragana_a",
+          "ja_hiragana_ka",
+          "ja_hiragana_sa"
+        ]
+      }
+    ],
+    "subtitle_en": "ひらがな あ行〜な行",
+    "subtitle_id": "Hiragana baris a sampai na"
+  },
+  {
+    "id": "ja-n5-u1-l2",
+    "unitId": "ja-n5-u1",
+    "title": "Basic Greetings",
+    "subtitle": "基本的な挨拶",
+    "order": 2,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Greet people in Japanese",
+      "Say goodbye politely",
+      "Use appropriate levels of politeness"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Greetings",
+        "vocabIds": [
+          "ja_konnichiwa",
+          "ja_arigatou",
+          "ja_sayonara"
+        ]
+      }
+    ],
+    "subtitle_en": "基本的な挨拶",
+    "subtitle_id": "Sapaan Dasar"
+  },
+  {
+    "id": "ja-n5-u1-l3",
+    "unitId": "ja-n5-u1",
+    "title": "Self-Introduction",
+    "subtitle": "自己紹介",
+    "order": 3,
+    "durationMin": 20,
+    "xp": 60,
+    "objectives": [
+      "Introduce yourself",
+      "Ask someone's name",
+      "State your nationality"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Introduction Phrases",
+        "vocabIds": [
+          "ja_watashi",
+          "ja_namae",
+          "ja_desu"
+        ]
+      }
+    ],
+    "subtitle_en": "自己紹介",
+    "subtitle_id": "Perkenalan Diri"
+  },
+  {
+    "id": "ja-n5-u2-l1",
+    "unitId": "ja-n5-u2",
+    "title": "Katakana アーカ rows",
+    "subtitle": "カタカナ ア行〜カ行",
+    "order": 1,
+    "durationMin": 20,
+    "xp": 50,
+    "objectives": [
+      "Master Katakana basics",
+      "Read foreign words",
+      "Write Katakana"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Katakana Characters",
+        "vocabIds": []
+      }
+    ],
+    "subtitle_en": "カタカナ ア行〜カ行",
+    "subtitle_id": "Katakana baris a sampai ka"
+  },
+  {
+    "id": "ja-n5-u2-l2",
+    "unitId": "ja-n5-u2",
+    "title": "Family and Relationships",
+    "subtitle": "家族と人間関係",
+    "order": 2,
+    "durationMin": 25,
+    "xp": 70,
+    "objectives": [
+      "Talk about family",
+      "Describe relationships",
+      "Use honorific expressions"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Family Members",
+        "vocabIds": [
+          "ja_chichi",
+          "ja_haha",
+          "ja_kazoku"
+        ]
+      }
+    ],
+    "subtitle_en": "家族と人間関係",
+    "subtitle_id": "Keluarga dan Hubungan"
+  },
+  {
+    "id": "ja-n5-u3-l1",
+    "unitId": "ja-n5-u3",
+    "title": "Basic Kanji (Numbers, Days)",
+    "subtitle": "基本漢字（数字、曜日）",
+    "order": 1,
+    "durationMin": 25,
+    "xp": 70,
+    "objectives": [
+      "Read number Kanji",
+      "Write day Kanji",
+      "Understand readings"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Number Kanji",
+        "vocabIds": [
+          "ja_ichi",
+          "ja_ni",
+          "ja_san"
+        ]
+      }
+    ],
+    "subtitle_en": "基本漢字（数字、曜日）",
+    "subtitle_id": "Kanji Dasar (angka, hari)"
+  },
+  {
+    "id": "ja-n5-u3-l2",
+    "unitId": "ja-n5-u3",
+    "title": "Daily Activities",
+    "subtitle": "毎日の活動",
+    "order": 2,
+    "durationMin": 25,
+    "xp": 70,
+    "objectives": [
+      "Describe daily routine",
+      "Use basic verbs",
+      "Tell time"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Daily Verbs",
+        "vocabIds": [
+          "ja_taberu",
+          "ja_nomu",
+          "ja_iku"
+        ]
+      }
+    ],
+    "subtitle_en": "毎日の活動",
+    "subtitle_id": "Aktivitas Harian"
+  },
+  {
+    "id": "ja-n5-u4-l1",
+    "unitId": "ja-n5-u4",
+    "title": "Shopping and Money",
+    "subtitle": "買い物とお金",
+    "order": 1,
+    "durationMin": 25,
+    "xp": 70,
+    "objectives": [
+      "Count money",
+      "Ask prices",
+      "Make purchases"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Shopping Vocabulary",
+        "vocabIds": [
+          "ja_kau",
+          "ja_ikura",
+          "ja_takai"
+        ]
+      }
+    ],
+    "subtitle_en": "買い物とお金",
+    "subtitle_id": "Belanja dan Uang"
+  },
+  {
+    "id": "ja-n4-u1-l1",
+    "unitId": "ja-n4-u1",
+    "title": "Verb Conjugations",
+    "subtitle": "動詞の活用",
+    "order": 1,
+    "durationMin": 30,
+    "xp": 80,
+    "objectives": [
+      "Conjugate verbs",
+      "Use past tense",
+      "Form negative"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Verb Forms",
+        "vocabIds": []
+      }
+    ],
+    "subtitle_en": "動詞の活用",
+    "subtitle_id": "Konjugasi Kata Kerja"
+  },
+  {
+    "id": "ja-n4-u2-l1",
+    "unitId": "ja-n4-u2",
+    "title": "Particles は、を、に、で",
+    "subtitle": "助詞 は、を、に、で",
+    "order": 1,
+    "durationMin": 30,
+    "xp": 80,
+    "objectives": [
+      "Use particles correctly",
+      "Understand particle functions",
+      "Build complex sentences"
+    ],
+    "steps": [
+      {
+        "type": "grammar",
+        "title": "Particle Usage",
+        "grammarId": "ja_particles"
+      }
+    ],
+    "subtitle_en": "助詞 は、を、に、で",
+    "subtitle_id": "Partikel wa, o, ni, de"
+  },
+  {
+    "id": "ja-n3-u1-l1",
+    "unitId": "ja-n3-u1",
+    "title": "Intermediate Kanji Reading",
+    "subtitle": "中級漢字読解",
+    "order": 1,
+    "durationMin": 35,
+    "xp": 100,
+    "objectives": [
+      "Read 300+ Kanji",
+      "Understand compound words",
+      "Read short passages"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "N3 Kanji",
+        "vocabIds": []
+      }
+    ],
+    "subtitle_en": "中級漢字読解",
+    "subtitle_id": "Membaca Kanji Menengah"
+  },
+  {
+    "id": "ja-n2-u1-l1",
+    "unitId": "ja-n2-u1",
+    "title": "Advanced Grammar Patterns",
+    "subtitle": "上級文法パターン",
+    "order": 1,
+    "durationMin": 40,
+    "xp": 120,
+    "objectives": [
+      "Use complex grammar",
+      "Write formal Japanese",
+      "Understand nuance"
+    ],
+    "steps": [
+      {
+        "type": "grammar",
+        "title": "N2 Grammar",
+        "grammarId": "ja_advanced_grammar"
+      }
+    ],
+    "subtitle_en": "上級文法パターン",
+    "subtitle_id": "Pola Tata Bahasa Lanjutan"
+  }
+]

@@ -1,0 +1,126 @@
+[
+  {
+    "id": "ja-n5-u1",
+    "levelId": "ja-n5",
+    "title": "Hiragana and Basic Greetings",
+    "subtitle": "ひらがなと挨拶",
+    "order": 1,
+    "description": "Learn Hiragana writing system and basic Japanese greetings.",
+    "lessonIds": [
+      "ja-n5-u1-l1",
+      "ja-n5-u1-l2",
+      "ja-n5-u1-l3"
+    ],
+    "subtitle_en": "ひらがなと挨拶",
+    "subtitle_id": "Hiragana dan Sapaan",
+    "description_en": "Learn Hiragana writing system and basic Japanese greetings.",
+    "description_id": "Belajar sistem penulisan Hiragana dan sapaan dasar bahasa Jepang."
+  },
+  {
+    "id": "ja-n5-u2",
+    "levelId": "ja-n5",
+    "title": "Katakana and Self-Introduction",
+    "subtitle": "カタカナと自己紹介",
+    "order": 2,
+    "description": "Master Katakana and introduce yourself in Japanese.",
+    "lessonIds": [
+      "ja-n5-u2-l1",
+      "ja-n5-u2-l2"
+    ],
+    "subtitle_en": "カタカナと自己紹介",
+    "subtitle_id": "Katakana dan Perkenalan Diri",
+    "description_en": "Master Katakana and introduce yourself in Japanese.",
+    "description_id": "Kuasai Katakana dan perkenalkan diri dalam bahasa Jepang."
+  },
+  {
+    "id": "ja-n5-u3",
+    "levelId": "ja-n5",
+    "title": "Basic Kanji and Daily Life",
+    "subtitle": "基本漢字と日常生活",
+    "order": 3,
+    "description": "Learn essential Kanji and daily life vocabulary.",
+    "lessonIds": [
+      "ja-n5-u3-l1",
+      "ja-n5-u3-l2"
+    ],
+    "subtitle_en": "基本漢字と日常生活",
+    "subtitle_id": "Kanji Dasar dan Kehidupan Harian",
+    "description_en": "Learn essential Kanji and daily life vocabulary.",
+    "description_id": "Belajar Kanji penting dan kosakata kehidupan sehari-hari."
+  },
+  {
+    "id": "ja-n5-u4",
+    "levelId": "ja-n5",
+    "title": "Numbers, Time, and Shopping",
+    "subtitle": "数字、時間、買い物",
+    "order": 4,
+    "description": "Count, tell time, and shop in Japanese.",
+    "lessonIds": [
+      "ja-n5-u4-l1"
+    ],
+    "subtitle_en": "数字、時間、買い物",
+    "subtitle_id": "Angka, Waktu, dan Belanja",
+    "description_en": "Count, tell time, and shop in Japanese.",
+    "description_id": "Menghitung, menyebut waktu, dan berbelanja dalam bahasa Jepang."
+  },
+  {
+    "id": "ja-n4-u1",
+    "levelId": "ja-n4",
+    "title": "Verbs and Tenses",
+    "subtitle": "動詞と時制",
+    "order": 1,
+    "description": "Master Japanese verb conjugations and tenses.",
+    "lessonIds": [
+      "ja-n4-u1-l1"
+    ],
+    "subtitle_en": "動詞と時制",
+    "subtitle_id": "Kata Kerja dan Kala",
+    "description_en": "Master Japanese verb conjugations and tenses.",
+    "description_id": "Kuasai konjugasi kata kerja dan kala bahasa Jepang."
+  },
+  {
+    "id": "ja-n4-u2",
+    "levelId": "ja-n4",
+    "title": "Particles and Sentence Structure",
+    "subtitle": "助詞と文の構造",
+    "order": 2,
+    "description": "Understand Japanese particles and sentence patterns.",
+    "lessonIds": [
+      "ja-n4-u2-l1"
+    ],
+    "subtitle_en": "助詞と文の構造",
+    "subtitle_id": "Partikel dan Struktur Kalimat",
+    "description_en": "Understand Japanese particles and sentence patterns.",
+    "description_id": "Pahami partikel dan pola kalimat bahasa Jepang."
+  },
+  {
+    "id": "ja-n3-u1",
+    "levelId": "ja-n3",
+    "title": "Intermediate Kanji and Reading",
+    "subtitle": "中級漢字と読解",
+    "order": 1,
+    "description": "Expand Kanji knowledge and reading comprehension.",
+    "lessonIds": [
+      "ja-n3-u1-l1"
+    ],
+    "subtitle_en": "中級漢字と読解",
+    "subtitle_id": "Kanji Menengah dan Pemahaman Bacaan",
+    "description_en": "Expand Kanji knowledge and reading comprehension.",
+    "description_id": "Perluas pengetahuan Kanji dan pemahaman bacaan."
+  },
+  {
+    "id": "ja-n2-u1",
+    "levelId": "ja-n2",
+    "title": "Advanced Grammar and Writing",
+    "subtitle": "上級文法と作文",
+    "order": 1,
+    "description": "Master advanced grammar patterns and writing.",
+    "lessonIds": [
+      "ja-n2-u1-l1"
+    ],
+    "subtitle_en": "上級文法と作文",
+    "subtitle_id": "Tata Bahasa Lanjutan dan Menulis",
+    "description_en": "Master advanced grammar patterns and writing.",
+    "description_id": "Kuasai pola tata bahasa lanjutan dan menulis."
+  }
+]
