@@ -1,0 +1,590 @@
+[
+  {
+    "id": "ja-p1-1",
+    "band": 1,
+    "type": "multiple-choice",
+    "prompt": "What does ありがとう mean?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "Thank you"
+      },
+      {
+        "id": "o1",
+        "label": "Goodbye"
+      },
+      {
+        "id": "o2",
+        "label": "Please"
+      },
+      {
+        "id": "o3",
+        "label": "Sorry"
+      }
+    ],
+    "correct": "o0",
+    "skill": "vocabulary",
+    "language": "ja",
+    "prompt_en": "What does ありがとう mean?",
+    "prompt_id": "Apa arti arigatou (terima kasih)?"
+  },
+  {
+    "id": "ja-p1-2",
+    "band": 1,
+    "type": "multiple-choice",
+    "prompt": "What does 水 mean?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "water"
+      },
+      {
+        "id": "o1",
+        "label": "fire"
+      },
+      {
+        "id": "o2",
+        "label": "rice"
+      },
+      {
+        "id": "o3",
+        "label": "tea"
+      }
+    ],
+    "correct": "o0",
+    "skill": "vocabulary",
+    "language": "ja",
+    "prompt_en": "What does 水 mean?",
+    "prompt_id": "Apa arti mizu (air)?"
+  },
+  {
+    "id": "ja-p1-3",
+    "band": 1,
+    "type": "multiple-choice",
+    "prompt": "Which one means \"good morning\"?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "おはよう"
+      },
+      {
+        "id": "o1",
+        "label": "こんばんは"
+      },
+      {
+        "id": "o2",
+        "label": "さようなら"
+      },
+      {
+        "id": "o3",
+        "label": "はじめまして"
+      }
+    ],
+    "correct": "o0",
+    "skill": "vocabulary",
+    "language": "ja",
+    "prompt_en": "Which one means \"good morning\"?",
+    "prompt_id": "Mana yang berarti selamat pagi?"
+  },
+  {
+    "id": "ja-p1-4",
+    "band": 1,
+    "type": "listening-choice",
+    "prompt": "Listen and choose what you hear.",
+    "options": [
+      {
+        "id": "o0",
+        "label": "Hello"
+      },
+      {
+        "id": "o1",
+        "label": "Goodbye"
+      },
+      {
+        "id": "o2",
+        "label": "Thank you"
+      },
+      {
+        "id": "o3",
+        "label": "Excuse me"
+      }
+    ],
+    "correct": "o0",
+    "skill": "listening",
+    "audioText": "こんにちは",
+    "audio": "placement:ja-p1-4",
+    "language": "ja",
+    "prompt_en": "Listen and choose what you hear.",
+    "prompt_id": "Dengarkan dan pilih apa yang kamu dengar."
+  },
+  {
+    "id": "ja-p2-1",
+    "band": 2,
+    "type": "multiple-choice",
+    "prompt": "What does 食べる mean?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "to eat"
+      },
+      {
+        "id": "o1",
+        "label": "to drink"
+      },
+      {
+        "id": "o2",
+        "label": "to run"
+      },
+      {
+        "id": "o3",
+        "label": "to sleep"
+      }
+    ],
+    "correct": "o0",
+    "skill": "vocabulary",
+    "language": "ja",
+    "prompt_en": "What does 食べる mean?",
+    "prompt_id": "Apa arti taberu (makan)?"
+  },
+  {
+    "id": "ja-p2-2",
+    "band": 2,
+    "type": "multiple-choice",
+    "prompt": "Choose the correct particle: 私はコーヒー＿＿＿飲みます。",
+    "options": [
+      {
+        "id": "o0",
+        "label": "を"
+      },
+      {
+        "id": "o1",
+        "label": "が"
+      },
+      {
+        "id": "o2",
+        "label": "に"
+      },
+      {
+        "id": "o3",
+        "label": "で"
+      }
+    ],
+    "correct": "o0",
+    "skill": "grammar",
+    "language": "ja",
+    "prompt_en": "Choose the correct particle: 私はコーヒー＿＿＿飲みます。",
+    "prompt_id": "Pilih partikel yang benar: Watashi wa koohii ___ nomimasu."
+  },
+  {
+    "id": "ja-p2-3",
+    "band": 2,
+    "type": "multiple-choice",
+    "prompt": "Read: 私は学生です。毎日日本語を勉強します。",
+    "options": [
+      {
+        "id": "o0",
+        "label": "I am a student and study Japanese every day"
+      },
+      {
+        "id": "o1",
+        "label": "I teach Japanese to students"
+      },
+      {
+        "id": "o2",
+        "label": "I study in the library every day"
+      },
+      {
+        "id": "o3",
+        "label": "I am a teacher who lives in Japan"
+      }
+    ],
+    "correct": "o0",
+    "skill": "reading",
+    "language": "ja",
+    "prompt_en": "Read: 私は学生です。毎日日本語を勉強します。",
+    "prompt_id": "Baca: Watashi wa gakusei desu. Mainichi nihongo wo benkyou shimasu."
+  },
+  {
+    "id": "ja-p2-4",
+    "band": 2,
+    "type": "listening-choice",
+    "prompt": "Listen and choose what you hear.",
+    "options": [
+      {
+        "id": "o0",
+        "label": "Nice to meet you"
+      },
+      {
+        "id": "o1",
+        "label": "Good evening"
+      },
+      {
+        "id": "o2",
+        "label": "See you tomorrow"
+      },
+      {
+        "id": "o3",
+        "label": "Congratulations"
+      }
+    ],
+    "correct": "o0",
+    "skill": "listening",
+    "audioText": "はじめまして",
+    "audio": "placement:ja-p2-4",
+    "language": "ja",
+    "prompt_en": "Listen and choose what you hear.",
+    "prompt_id": "Dengarkan dan pilih apa yang kamu dengar."
+  },
+  {
+    "id": "ja-p3-1",
+    "band": 3,
+    "type": "multiple-choice",
+    "prompt": "What does 速い mean?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "fast"
+      },
+      {
+        "id": "o1",
+        "label": "slow"
+      },
+      {
+        "id": "o2",
+        "label": "early"
+      },
+      {
+        "id": "o3",
+        "label": "heavy"
+      }
+    ],
+    "correct": "o0",
+    "skill": "vocabulary",
+    "language": "ja",
+    "prompt_en": "What does 速い mean?",
+    "prompt_id": "Apa arti hayai (cepat)?"
+  },
+  {
+    "id": "ja-p3-2",
+    "band": 3,
+    "type": "multiple-choice",
+    "prompt": "Choose the correct te-form: 本を＿＿＿ください。",
+    "options": [
+      {
+        "id": "o0",
+        "label": "読んで"
+      },
+      {
+        "id": "o1",
+        "label": "読みて"
+      },
+      {
+        "id": "o2",
+        "label": "読みった"
+      },
+      {
+        "id": "o3",
+        "label": "読みます"
+      }
+    ],
+    "correct": "o0",
+    "skill": "grammar",
+    "language": "ja",
+    "prompt_en": "Choose the correct te-form: 本を＿＿＿ください。",
+    "prompt_id": "Pilih te-form yang benar: Hon wo ___ kudasai."
+  },
+  {
+    "id": "ja-p3-3",
+    "band": 3,
+    "type": "multiple-choice",
+    "prompt": "Read: 天気がいいので、散歩に行きます。",
+    "options": [
+      {
+        "id": "o0",
+        "label": "I will go for a walk because the weather is nice"
+      },
+      {
+        "id": "o1",
+        "label": "I will not go out because it is raining"
+      },
+      {
+        "id": "o2",
+        "label": "I will go shopping because the shop is near"
+      },
+      {
+        "id": "o3",
+        "label": "I will stay home because I am busy"
+      }
+    ],
+    "correct": "o0",
+    "skill": "reading",
+    "language": "ja",
+    "prompt_en": "Read: 天気がいいので、散歩に行きます。",
+    "prompt_id": "Baca: Kekai dan sangat sehat karena berolahraga tiap hari."
+  },
+  {
+    "id": "ja-p3-4",
+    "band": 3,
+    "type": "listening-choice",
+    "prompt": "Listen and choose what the speaker is asking.",
+    "options": [
+      {
+        "id": "o0",
+        "label": "Where is the station?"
+      },
+      {
+        "id": "o1",
+        "label": "What time is it?"
+      },
+      {
+        "id": "o2",
+        "label": "Where is the restroom?"
+      },
+      {
+        "id": "o3",
+        "label": "How much does it cost?"
+      }
+    ],
+    "correct": "o0",
+    "skill": "listening",
+    "audioText": "すみません、駅はどこですか？",
+    "audio": "placement:ja-p3-4",
+    "language": "ja",
+    "prompt_en": "Listen and choose what the speaker is asking.",
+    "prompt_id": "Dengarkan dan pilih yang ditanyakan pembicara."
+  },
+  {
+    "id": "ja-p4-1",
+    "band": 4,
+    "type": "multiple-choice",
+    "prompt": "What does 経験 mean?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "experience"
+      },
+      {
+        "id": "o1",
+        "label": "experiment"
+      },
+      {
+        "id": "o2",
+        "label": "excuse"
+      },
+      {
+        "id": "o3",
+        "label": "expertise"
+      }
+    ],
+    "correct": "o0",
+    "skill": "vocabulary",
+    "language": "ja",
+    "prompt_en": "What does 経験 mean?",
+    "prompt_id": "Apa arti keiken (pengalaman)?"
+  },
+  {
+    "id": "ja-p4-2",
+    "band": 4,
+    "type": "multiple-choice",
+    "prompt": "Choose the correct form: もう＿＿＿ことがありますか？",
+    "options": [
+      {
+        "id": "o0",
+        "label": "行った"
+      },
+      {
+        "id": "o1",
+        "label": "行く"
+      },
+      {
+        "id": "o2",
+        "label": "行って"
+      },
+      {
+        "id": "o3",
+        "label": "行きます"
+      }
+    ],
+    "correct": "o0",
+    "skill": "grammar",
+    "language": "ja",
+    "prompt_en": "Choose the correct form: もう＿＿＿ことがありますか？",
+    "prompt_id": "Pilih bentuk yang benar: Mo ___ koto ga arimasu ka?"
+  },
+  {
+    "id": "ja-p4-3",
+    "band": 4,
+    "type": "multiple-choice",
+    "prompt": "Read: 彼は毎日運動しているので、とても健康です。",
+    "options": [
+      {
+        "id": "o0",
+        "label": "He is very healthy because he exercises daily"
+      },
+      {
+        "id": "o1",
+        "label": "He is tired because he runs every day"
+      },
+      {
+        "id": "o2",
+        "label": "He is busy so he does not exercise"
+      },
+      {
+        "id": "o3",
+        "label": "He got sick from exercising too much"
+      }
+    ],
+    "correct": "o0",
+    "skill": "reading",
+    "language": "ja",
+    "prompt_en": "Read: 彼は毎日運動しているので、とても健康です。",
+    "prompt_id": "Baca: Dia sangat sehat karena berolahraga setiap hari."
+  },
+  {
+    "id": "ja-p4-4",
+    "band": 4,
+    "type": "listening-choice",
+    "prompt": "Listen: what happened to the meeting?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "It was moved to tomorrow morning"
+      },
+      {
+        "id": "o1",
+        "label": "It was cancelled"
+      },
+      {
+        "id": "o2",
+        "label": "It is this afternoon"
+      },
+      {
+        "id": "o3",
+        "label": "It was moved online"
+      }
+    ],
+    "correct": "o0",
+    "skill": "listening",
+    "audioText": "会議は明日の午前中に変更されました。",
+    "audio": "placement:ja-p4-4",
+    "language": "ja",
+    "prompt_en": "Listen: what happened to the meeting?",
+    "prompt_id": "Dengarkan: apa yang terjadi dengan rapat?"
+  },
+  {
+    "id": "ja-p5-1",
+    "band": 5,
+    "type": "multiple-choice",
+    "prompt": "Which sentence is correct?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "日本に来た時、日本語がぜんぜんわかりませんでした。"
+      },
+      {
+        "id": "o1",
+        "label": "日本に来る時、日本語がぜんぜんわかりませんでした。"
+      },
+      {
+        "id": "o2",
+        "label": "日本に来て時、日本語がぜんぜんわかりませんでした。"
+      },
+      {
+        "id": "o3",
+        "label": "日本に来た時、日本語をぜんぜんわかりませんでした。"
+      }
+    ],
+    "correct": "o0",
+    "skill": "grammar",
+    "language": "ja",
+    "prompt_en": "Which sentence is correct?",
+    "prompt_id": "Kalimat mana yang benar?"
+  },
+  {
+    "id": "ja-p5-2",
+    "band": 5,
+    "type": "multiple-choice",
+    "prompt": "What does 妥協 mean?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "compromise"
+      },
+      {
+        "id": "o1",
+        "label": "negotiation"
+      },
+      {
+        "id": "o2",
+        "label": "agreement"
+      },
+      {
+        "id": "o3",
+        "label": "criticism"
+      }
+    ],
+    "correct": "o0",
+    "skill": "vocabulary",
+    "language": "ja",
+    "prompt_en": "What does 妥協 mean?",
+    "prompt_id": "Apa arti dakyou (kompromi)?"
+  },
+  {
+    "id": "ja-p6-1",
+    "band": 6,
+    "type": "multiple-choice",
+    "prompt": "Read: 政府は少子化対策として、子育て世帯への支援を拡充する方針を打ち出したが、財源の確保が課題となっている。What is the main concern?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "Securing the funding"
+      },
+      {
+        "id": "o1",
+        "label": "Expanding the childcare system"
+      },
+      {
+        "id": "o2",
+        "label": "Boosting the birth rate"
+      },
+      {
+        "id": "o3",
+        "label": "Taxing households"
+      }
+    ],
+    "correct": "o0",
+    "skill": "reading",
+    "language": "ja",
+    "prompt_en": "Read: 政府は少子化対策として、子育て世帯への支援を拡充する方針を打ち出したが、財源の確保が課題となっている。What is the main concern?",
+    "prompt_id": "Baca: Bacaan tentang kebijakan pemerintah pada masalah angka kelahiran."
+  },
+  {
+    "id": "ja-p6-2",
+    "band": 6,
+    "type": "multiple-choice",
+    "prompt": "Choose the correct passive form: この言葉は歴史的に＿＿＿使われてきた。",
+    "options": [
+      {
+        "id": "o0",
+        "label": "広く"
+      },
+      {
+        "id": "o1",
+        "label": "広い"
+      },
+      {
+        "id": "o2",
+        "label": "広げる"
+      },
+      {
+        "id": "o3",
+        "label": "広がる"
+      }
+    ],
+    "correct": "o0",
+    "skill": "grammar",
+    "language": "ja",
+    "prompt_en": "Choose the correct passive form: この言葉は歴史的に＿＿＿使われてきた。",
+    "prompt_id": "Pilih bentuk pasif yang benar."
+  }
+]
