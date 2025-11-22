@@ -1,0 +1,148 @@
+[
+  {
+    "id": "a-quick-ja-n5",
+    "title": "Quick Test · Japanese N5",
+    "description": "Five questions to check Japanese N5 fundamentals: greetings, particles, numbers, and basic structures.",
+    "kind": "quick",
+    "level": 1,
+    "examMappings": {
+      "jlpt": "N5"
+    },
+    "durationMin": 5,
+    "passScore": 60,
+    "exercises": [
+      {
+        "id": "aqj1",
+        "type": "multiple-choice",
+        "prompt": "How do you say «hello»?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "こんにちは"
+          },
+          {
+            "id": "o1",
+            "label": "さようなら"
+          },
+          {
+            "id": "o2",
+            "label": "ありがとう"
+          },
+          {
+            "id": "o3",
+            "label": "すみません"
+          }
+        ],
+        "correct": "o0",
+        "skill": "vocabulary",
+        "level": 1
+      },
+      {
+        "id": "aqj2",
+        "type": "multiple-choice",
+        "prompt": "«私は学生です» means…",
+        "options": [
+          {
+            "id": "o0",
+            "label": "I am a student"
+          },
+          {
+            "id": "o1",
+            "label": "I am a teacher"
+          },
+          {
+            "id": "o2",
+            "label": "I am fine"
+          },
+          {
+            "id": "o3",
+            "label": "I have a book"
+          }
+        ],
+        "correct": "o0",
+        "skill": "reading",
+        "level": 1
+      },
+      {
+        "id": "aqj3",
+        "type": "multiple-choice",
+        "prompt": "What number is 三?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "three"
+          },
+          {
+            "id": "o1",
+            "label": "one"
+          },
+          {
+            "id": "o2",
+            "label": "two"
+          },
+          {
+            "id": "o3",
+            "label": "ten"
+          }
+        ],
+        "correct": "o0",
+        "skill": "reading",
+        "level": 1
+      },
+      {
+        "id": "aqj4",
+        "type": "multiple-choice",
+        "prompt": "«水を飲みます» means…",
+        "options": [
+          {
+            "id": "o0",
+            "label": "I drink water"
+          },
+          {
+            "id": "o1",
+            "label": "I eat bread"
+          },
+          {
+            "id": "o2",
+            "label": "I read a book"
+          },
+          {
+            "id": "o3",
+            "label": "I go to school"
+          }
+        ],
+        "correct": "o0",
+        "skill": "reading",
+        "level": 1
+      },
+      {
+        "id": "aqj5",
+        "type": "multiple-choice",
+        "prompt": "Choose the correct question for «Where is the toilet?»",
+        "options": [
+          {
+            "id": "o0",
+            "label": "トイレはどこですか"
+          },
+          {
+            "id": "o1",
+            "label": "これは本ですか"
+          },
+          {
+            "id": "o2",
+            "label": "私は学生です"
+          },
+          {
+            "id": "o3",
+            "label": "お元気ですか"
+          }
+        ],
+        "correct": "o0",
+        "skill": "vocabulary",
+        "level": 1
+      }
+    ],
+    "description_en": "Five questions to check Japanese N5 fundamentals: greetings, particles, numbers, and basic structures.",
+    "description_id": "Lima soal untuk menguji dasar bahasa Jepang N5: sapaan, partikel, angka, dan struktur dasar."
+  }
+]
