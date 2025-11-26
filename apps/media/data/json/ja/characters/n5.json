@@ -1,0 +1,784 @@
+[
+  {
+    "id": "ja_kana_hi_a",
+    "language": "ja",
+    "char": "あ",
+    "text": "あ",
+    "romanization": "a",
+    "meaning": "a",
+    "strokes": 3,
+    "examMappings": {
+      "jlpt": "N5"
+    },
+    "audio": "char:ja_kana_hi_a",
+    "tags": [
+      "hiragana",
+      "N5"
+    ]
+  },
+  {
+    "id": "ja_kana_hi_i",
+    "language": "ja",
+    "char": "い",
+    "text": "い",
+    "romanization": "i",
+    "meaning": "i",
+    "strokes": 3,
+    "examMappings": {
+      "jlpt": "N5"
+    },
+    "audio": "char:ja_kana_hi_i",
+    "tags": [
+      "hiragana",
+      "N5"
+    ]
+  },
+  {
+    "id": "ja_kana_hi_u",
+    "language": "ja",
+    "char": "う",
+    "text": "う",
+    "romanization": "u",
+    "meaning": "u",
+    "strokes": 3,
+    "examMappings": {
+      "jlpt": "N5"
+    },
+    "audio": "char:ja_kana_hi_u",
+    "tags": [
+      "hiragana",
+      "N5"
+    ]
+  },
+  {
+    "id": "ja_kana_hi_e",
+    "language": "ja",
+    "char": "え",
+    "text": "え",
+    "romanization": "e",
+    "meaning": "e",
+    "strokes": 3,
+    "examMappings": {
+      "jlpt": "N5"
+    },
+    "audio": "char:ja_kana_hi_e",
+    "tags": [
+      "hiragana",
+      "N5"
+    ]
+  },
+  {
+    "id": "ja_kana_hi_o",
+    "language": "ja",
+    "char": "お",
+    "text": "お",
+    "romanization": "o",
+    "meaning": "o",
+    "strokes": 3,
+    "examMappings": {
+      "jlpt": "N5"
+    },
+    "audio": "char:ja_kana_hi_o",
+    "tags": [
+      "hiragana",
+      "N5"
+    ]
+  },
+  {
+    "id": "ja_kana_hi_ka",
+    "language": "ja",
+    "char": "か",
+    "text": "か",
+    "romanization": "ka",
+    "meaning": "ka",
+    "strokes": 3,
+    "examMappings": {
+      "jlpt": "N5"
+    },
+    "audio": "char:ja_kana_hi_ka",
+    "tags": [
+      "hiragana",
+      "N5"
+    ]
+  },
+  {
+    "id": "ja_kana_hi_ki",
+    "language": "ja",
+    "char": "き",
+    "text": "き",
+    "romanization": "ki",
+    "meaning": "ki",
+    "strokes": 3,
+    "examMappings": {
+      "jlpt": "N5"
+    },
+    "audio": "char:ja_kana_hi_ki",
+    "tags": [
+      "hiragana",
+      "N5"
+    ]
+  },
+  {
+    "id": "ja_kana_hi_ku",
+    "language": "ja",
+    "char": "く",
+    "text": "く",
+    "romanization": "ku",
+    "meaning": "ku",
+    "strokes": 3,
+    "examMappings": {
+      "jlpt": "N5"
+    },
+    "audio": "char:ja_kana_hi_ku",
+    "tags": [
+      "hiragana",
+      "N5"
+    ]
+  },
+  {
+    "id": "ja_kana_hi_ke",
+    "language": "ja",
+    "char": "け",
+    "text": "け",
+    "romanization": "ke",
+    "meaning": "ke",
+    "strokes": 3,
+    "examMappings": {
+      "jlpt": "N5"
+    },
+    "audio": "char:ja_kana_hi_ke",
+    "tags": [
+      "hiragana",
+      "N5"
+    ]
+  },
+  {
+    "id": "ja_kana_hi_ko",
+    "language": "ja",
+    "char": "こ",
+    "text": "こ",
+    "romanization": "ko",
+    "meaning": "ko",
+    "strokes": 3,
+    "examMappings": {
+      "jlpt": "N5"
+    },
+    "audio": "char:ja_kana_hi_ko",
+    "tags": [
+      "hiragana",
+      "N5"
+    ]
+  },
+  {
+    "id": "ja_kana_hi_sa",
+    "language": "ja",
+    "char": "さ",
+    "text": "さ",
+    "romanization": "sa",
+    "meaning": "sa",
+    "strokes": 3,
+    "examMappings": {
+      "jlpt": "N5"
+    },
+    "audio": "char:ja_kana_hi_sa",
+    "tags": [
+      "hiragana",
+      "N5"
+    ]
+  },
+  {
+    "id": "ja_kana_hi_shi",
+    "language": "ja",
+    "char": "し",
+    "text": "し",
+    "romanization": "shi",
+    "meaning": "shi",
+    "strokes": 3,
+    "examMappings": {
+      "jlpt": "N5"
+    },
+    "audio": "char:ja_kana_hi_shi",
+    "tags": [
+      "hiragana",
+      "N5"
+    ]
+  },
+  {
+    "id": "ja_kana_hi_su",
+    "language": "ja",
+    "char": "す",
+    "text": "す",
+    "romanization": "su",
+    "meaning": "su",
+    "strokes": 3,
+    "examMappings": {
+      "jlpt": "N5"
+    },
+    "audio": "char:ja_kana_hi_su",
+    "tags": [
+      "hiragana",
+      "N5"
+    ]
+  },
+  {
+    "id": "ja_kana_hi_se",
+    "language": "ja",
+    "char": "せ",
+    "text": "せ",
+    "romanization": "se",
+    "meaning": "se",
+    "strokes": 3,
+    "examMappings": {
+      "jlpt": "N5"
+    },
+    "audio": "char:ja_kana_hi_se",
+    "tags": [
+      "hiragana",
+      "N5"
+    ]
+  },
+  {
+    "id": "ja_kana_hi_so",
+    "language": "ja",
+    "char": "そ",
+    "text": "そ",
+    "romanization": "so",
+    "meaning": "so",
+    "strokes": 3,
+    "examMappings": {
+      "jlpt": "N5"
+    },
+    "audio": "char:ja_kana_hi_so",
+    "tags": [
+      "hiragana",
+      "N5"
+    ]
+  },
+  {
+    "id": "ja_kana_hi_ta",
+    "language": "ja",
+    "char": "た",
+    "text": "た",
+    "romanization": "ta",
+    "meaning": "ta",
+    "strokes": 3,
+    "examMappings": {
+      "jlpt": "N5"
+    },
+    "audio": "char:ja_kana_hi_ta",
+    "tags": [
+      "hiragana",
+      "N5"
+    ]
+  },
+  {
+    "id": "ja_kana_hi_chi",
+    "language": "ja",
+    "char": "ち",
+    "text": "ち",
+    "romanization": "chi",
+    "meaning": "chi",
+    "strokes": 3,
+    "examMappings": {
+      "jlpt": "N5"
+    },
+    "audio": "char:ja_kana_hi_chi",
+    "tags": [
+      "hiragana",
+      "N5"
+    ]
+  },
+  {
+    "id": "ja_kana_hi_tsu",
+    "language": "ja",
+    "char": "つ",
+    "text": "つ",
+    "romanization": "tsu",
+    "meaning": "tsu",
+    "strokes": 3,
+    "examMappings": {
+      "jlpt": "N5"
+    },
+    "audio": "char:ja_kana_hi_tsu",
+    "tags": [
+      "hiragana",
+      "N5"
+    ]
+  },
+  {
+    "id": "ja_kana_hi_te",
+    "language": "ja",
+    "char": "て",
+    "text": "て",
+    "romanization": "te",
+    "meaning": "te",
+    "strokes": 3,
+    "examMappings": {
+      "jlpt": "N5"
+    },
+    "audio": "char:ja_kana_hi_te",
+    "tags": [
+      "hiragana",
+      "N5"
+    ]
+  },
+  {
+    "id": "ja_kana_hi_to",
+    "language": "ja",
+    "char": "と",
+    "text": "と",
+    "romanization": "to",
+    "meaning": "to",
+    "strokes": 3,
+    "examMappings": {
+      "jlpt": "N5"
+    },
+    "audio": "char:ja_kana_hi_to",
+    "tags": [
+      "hiragana",
+      "N5"
+    ]
+  },
+  {
+    "id": "ja_kana_hi_na",
+    "language": "ja",
+    "char": "な",
+    "text": "な",
+    "romanization": "na",
+    "meaning": "na",
+    "strokes": 3,
+    "examMappings": {
+      "jlpt": "N5"
+    },
+    "audio": "char:ja_kana_hi_na",
+    "tags": [
+      "hiragana",
+      "N5"
+    ]
+  },
+  {
+    "id": "ja_kana_hi_ni",
+    "language": "ja",
+    "char": "に",
+    "text": "に",
+    "romanization": "ni",
+    "meaning": "ni",
+    "strokes": 3,
+    "examMappings": {
+      "jlpt": "N5"
+    },
+    "audio": "char:ja_kana_hi_ni",
+    "tags": [
+      "hiragana",
+      "N5"
+    ]
+  },
+  {
+    "id": "ja_kana_hi_nu",
+    "language": "ja",
+    "char": "ぬ",
+    "text": "ぬ",
+    "romanization": "nu",
+    "meaning": "nu",
+    "strokes": 3,
+    "examMappings": {
+      "jlpt": "N5"
+    },
+    "audio": "char:ja_kana_hi_nu",
+    "tags": [
+      "hiragana",
+      "N5"
+    ]
+  },
+  {
+    "id": "ja_kana_hi_ne",
+    "language": "ja",
+    "char": "ね",
+    "text": "ね",
+    "romanization": "ne",
+    "meaning": "ne",
+    "strokes": 3,
+    "examMappings": {
+      "jlpt": "N5"
+    },
+    "audio": "char:ja_kana_hi_ne",
+    "tags": [
+      "hiragana",
+      "N5"
+    ]
+  },
+  {
+    "id": "ja_kana_hi_no",
+    "language": "ja",
+    "char": "の",
+    "text": "の",
+    "romanization": "no",
+    "meaning": "no",
+    "strokes": 3,
+    "examMappings": {
+      "jlpt": "N5"
+    },
+    "audio": "char:ja_kana_hi_no",
+    "tags": [
+      "hiragana",
+      "N5"
+    ]
+  },
+  {
+    "id": "ja_kana_hi_ha",
+    "language": "ja",
+    "char": "は",
+    "text": "は",
+    "romanization": "ha",
+    "meaning": "ha",
+    "strokes": 3,
+    "examMappings": {
+      "jlpt": "N5"
+    },
+    "audio": "char:ja_kana_hi_ha",
+    "tags": [
+      "hiragana",
+      "N5"
+    ]
+  },
+  {
+    "id": "ja_kana_hi_hi",
+    "language": "ja",
+    "char": "ひ",
+    "text": "ひ",
+    "romanization": "hi",
+    "meaning": "hi",
+    "strokes": 3,
+    "examMappings": {
+      "jlpt": "N5"
+    },
+    "audio": "char:ja_kana_hi_hi",
+    "tags": [
+      "hiragana",
+      "N5"
+    ]
+  },
+  {
+    "id": "ja_kana_hi_fu",
+    "language": "ja",
+    "char": "ふ",
+    "text": "ふ",
+    "romanization": "fu",
+    "meaning": "fu",
+    "strokes": 3,
+    "examMappings": {
+      "jlpt": "N5"
+    },
+    "audio": "char:ja_kana_hi_fu",
+    "tags": [
+      "hiragana",
+      "N5"
+    ]
+  },
+  {
+    "id": "ja_kana_hi_he",
+    "language": "ja",
+    "char": "へ",
+    "text": "へ",
+    "romanization": "he",
+    "meaning": "he",
+    "strokes": 3,
+    "examMappings": {
+      "jlpt": "N5"
+    },
+    "audio": "char:ja_kana_hi_he",
+    "tags": [
+      "hiragana",
+      "N5"
+    ]
+  },
+  {
+    "id": "ja_kana_hi_ho",
+    "language": "ja",
+    "char": "ほ",
+    "text": "ほ",
+    "romanization": "ho",
+    "meaning": "ho",
+    "strokes": 3,
+    "examMappings": {
+      "jlpt": "N5"
+    },
+    "audio": "char:ja_kana_hi_ho",
+    "tags": [
+      "hiragana",
+      "N5"
+    ]
+  },
+  {
+    "id": "ja_kana_hi_ma",
+    "language": "ja",
+    "char": "ま",
+    "text": "ま",
+    "romanization": "ma",
+    "meaning": "ma",
+    "strokes": 3,
+    "examMappings": {
+      "jlpt": "N5"
+    },
+    "audio": "char:ja_kana_hi_ma",
+    "tags": [
+      "hiragana",
+      "N5"
+    ]
+  },
+  {
+    "id": "ja_kana_hi_mi",
+    "language": "ja",
+    "char": "み",
+    "text": "み",
+    "romanization": "mi",
+    "meaning": "mi",
+    "strokes": 3,
+    "examMappings": {
+      "jlpt": "N5"
+    },
+    "audio": "char:ja_kana_hi_mi",
+    "tags": [
+      "hiragana",
+      "N5"
+    ]
+  },
+  {
+    "id": "ja_kana_hi_mu",
+    "language": "ja",
+    "char": "む",
+    "text": "む",
+    "romanization": "mu",
+    "meaning": "mu",
+    "strokes": 3,
+    "examMappings": {
+      "jlpt": "N5"
+    },
+    "audio": "char:ja_kana_hi_mu",
+    "tags": [
+      "hiragana",
+      "N5"
+    ]
+  },
+  {
+    "id": "ja_kana_hi_me",
+    "language": "ja",
+    "char": "め",
+    "text": "め",
+    "romanization": "me",
+    "meaning": "me",
+    "strokes": 3,
+    "examMappings": {
+      "jlpt": "N5"
+    },
+    "audio": "char:ja_kana_hi_me",
+    "tags": [
+      "hiragana",
+      "N5"
+    ]
+  },
+  {
+    "id": "ja_kana_hi_mo",
+    "language": "ja",
+    "char": "も",
+    "text": "も",
+    "romanization": "mo",
+    "meaning": "mo",
+    "strokes": 3,
+    "examMappings": {
+      "jlpt": "N5"
+    },
+    "audio": "char:ja_kana_hi_mo",
+    "tags": [
+      "hiragana",
+      "N5"
+    ]
+  },
+  {
+    "id": "ja_kana_hi_ya",
+    "language": "ja",
+    "char": "や",
+    "text": "や",
+    "romanization": "ya",
+    "meaning": "ya",
+    "strokes": 3,
+    "examMappings": {
+      "jlpt": "N5"
+    },
+    "audio": "char:ja_kana_hi_ya",
+    "tags": [
+      "hiragana",
+      "N5"
+    ]
+  },
+  {
+    "id": "ja_kana_hi_yu",
+    "language": "ja",
+    "char": "ゆ",
+    "text": "ゆ",
+    "romanization": "yu",
+    "meaning": "yu",
+    "strokes": 3,
+    "examMappings": {
+      "jlpt": "N5"
+    },
+    "audio": "char:ja_kana_hi_yu",
+    "tags": [
+      "hiragana",
+      "N5"
+    ]
+  },
+  {
+    "id": "ja_kana_hi_yo",
+    "language": "ja",
+    "char": "よ",
+    "text": "よ",
+    "romanization": "yo",
+    "meaning": "yo",
+    "strokes": 3,
+    "examMappings": {
+      "jlpt": "N5"
+    },
+    "audio": "char:ja_kana_hi_yo",
+    "tags": [
+      "hiragana",
+      "N5"
+    ]
+  },
+  {
+    "id": "ja_kana_hi_ra",
+    "language": "ja",
+    "char": "ら",
+    "text": "ら",
+    "romanization": "ra",
+    "meaning": "ra",
+    "strokes": 3,
+    "examMappings": {
+      "jlpt": "N5"
+    },
+    "audio": "char:ja_kana_hi_ra",
+    "tags": [
+      "hiragana",
+      "N5"
+    ]
+  },
+  {
+    "id": "ja_kana_hi_ri",
+    "language": "ja",
+    "char": "り",
+    "text": "り",
+    "romanization": "ri",
+    "meaning": "ri",
+    "strokes": 3,
+    "examMappings": {
+      "jlpt": "N5"
+    },
+    "audio": "char:ja_kana_hi_ri",
+    "tags": [
+      "hiragana",
+      "N5"
+    ]
+  },
+  {
+    "id": "ja_kana_hi_ru",
+    "language": "ja",
+    "char": "る",
+    "text": "る",
+    "romanization": "ru",
+    "meaning": "ru",
+    "strokes": 3,
+    "examMappings": {
+      "jlpt": "N5"
+    },
+    "audio": "char:ja_kana_hi_ru",
+    "tags": [
+      "hiragana",
+      "N5"
+    ]
+  },
+  {
+    "id": "ja_kana_hi_re",
+    "language": "ja",
+    "char": "れ",
+    "text": "れ",
+    "romanization": "re",
+    "meaning": "re",
+    "strokes": 3,
+    "examMappings": {
+      "jlpt": "N5"
+    },
+    "audio": "char:ja_kana_hi_re",
+    "tags": [
+      "hiragana",
+      "N5"
+    ]
+  },
+  {
+    "id": "ja_kana_hi_ro",
+    "language": "ja",
+    "char": "ろ",
+    "text": "ろ",
+    "romanization": "ro",
+    "meaning": "ro",
+    "strokes": 3,
+    "examMappings": {
+      "jlpt": "N5"
+    },
+    "audio": "char:ja_kana_hi_ro",
+    "tags": [
+      "hiragana",
+      "N5"
+    ]
+  },
+  {
+    "id": "ja_kana_hi_wa",
+    "language": "ja",
+    "char": "わ",
+    "text": "わ",
+    "romanization": "wa",
+    "meaning": "wa",
+    "strokes": 3,
+    "examMappings": {
+      "jlpt": "N5"
+    },
+    "audio": "char:ja_kana_hi_wa",
+    "tags": [
+      "hiragana",
+      "N5"
+    ]
+  },
+  {
+    "id": "ja_kana_hi_wo",
+    "language": "ja",
+    "char": "を",
+    "text": "を",
+    "romanization": "wo",
+    "meaning": "wo",
+    "strokes": 3,
+    "examMappings": {
+      "jlpt": "N5"
+    },
+    "audio": "char:ja_kana_hi_wo",
+    "tags": [
+      "hiragana",
+      "N5"
+    ]
+  },
+  {
+    "id": "ja_kana_hi_n",
+    "language": "ja",
+    "char": "ん",
+    "text": "ん",
+    "romanization": "n",
+    "meaning": "n",
+    "strokes": 3,
+    "examMappings": {
+      "jlpt": "N5"
+    },
+    "audio": "char:ja_kana_hi_n",
+    "tags": [
+      "hiragana",
+      "N5"
+    ]
+  }
+]
