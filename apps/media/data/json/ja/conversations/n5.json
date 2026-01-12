@@ -1,0 +1,214 @@
+[
+  {
+    "id": "ja-conv-001",
+    "language": "ja",
+    "title": "あいさつ — Greetings",
+    "level": 1,
+    "difficulty": 1,
+    "examMappings": { "jlpt": "N5" },
+    "scenario": "greeting",
+    "speakers": [
+      { "id": "a", "name": "田中 (Tanaka)", "role": "colleague" },
+      { "id": "b", "name": "佐藤 (Satou)", "role": "colleague" }
+    ],
+    "dialogue": [
+      { "speaker": "a", "text": "おはようございます。", "romanization": "Ohayou gozaimasu.", "translation": "Good morning.", "translation_en": "Good morning.", "translation_id": "Selamat pagi." },
+      { "speaker": "b", "text": "おはようございます。元気ですか。", "romanization": "Ohayou gozaimasu. Genki desu ka.", "translation": "Good morning. How are you?", "translation_en": "Good morning. How are you?", "translation_id": "Selamat pagi. Apa kabar?" },
+      { "speaker": "a", "text": "はい、元気です。ありがとうございます。", "romanization": "Hai, genki desu. Arigatou gozaimasu.", "translation": "Yes, I'm fine. Thank you.", "translation_en": "Yes, I'm fine. Thank you.", "translation_id": "Ya, baik-baik saja. Terima kasih." }
+    ],
+    "vocabulary": ["ja_konnichiwa", "ja_arigatou"],
+    "grammar": ["ja_wa_particle", "ja_desu_copula"]
+  },
+  {
+    "id": "ja-conv-002",
+    "language": "ja",
+    "title": "じこしょうかい — Self-Introduction",
+    "level": 1,
+    "difficulty": 1,
+    "examMappings": { "jlpt": "N5" },
+    "scenario": "introduction",
+    "speakers": [
+      { "id": "a", "name": "山田 (Yamada)", "role": "new student" },
+      { "id": "b", "name": "木村 (Kimura)", "role": "student" }
+    ],
+    "dialogue": [
+      { "speaker": "a", "text": "はじめまして。私は山田です。", "romanization": "Hajimemashite. Watashi wa Yamada desu.", "translation": "Nice to meet you. I am Yamada.", "translation_en": "Nice to meet you. I am Yamada.", "translation_id": "Senang berkenalan. Saya Yamada." },
+      { "speaker": "b", "text": "はじめまして。私は木村です。", "romanization": "Hajimemashite. Watashi wa Kimura desu.", "translation": "Nice to meet you. I am Kimura.", "translation_en": "Nice to meet you. I am Kimura.", "translation_id": "Senang berkenalan. Saya Kimura." },
+      { "speaker": "a", "text": "よろしくお願いします。", "romanization": "Yoroshiku onegaishimasu.", "translation": "Nice to meet you.", "translation_en": "Nice to meet you.", "translation_id": "Senang berkenalan denganmu." },
+      { "speaker": "b", "text": "こちらこそ、よろしくお願いします。", "romanization": "Kochira koso, yoroshiku onegaishimasu.", "translation": "Likewise, nice to meet you.", "translation_en": "Likewise, nice to meet you.", "translation_id": "Sama-sama, senang berkenalan." }
+    ],
+    "vocabulary": ["ja_watashi"],
+    "grammar": ["ja_desu_copula", "ja_wa_particle"]
+  },
+  {
+    "id": "ja-conv-003",
+    "language": "ja",
+    "title": "カフェで — At the Café",
+    "level": 1,
+    "difficulty": 2,
+    "examMappings": { "jlpt": "N5" },
+    "scenario": "café",
+    "speakers": [
+      { "id": "waiter", "name": "店員 (Waiter)", "role": "waiter" },
+      { "id": "c", "name": "客 (Customer)", "role": "customer" }
+    ],
+    "dialogue": [
+      { "speaker": "waiter", "text": "いらっしゃいませ。何にしますか。", "romanization": "Irasshaimase. Nani ni shimasu ka.", "translation": "Welcome. What would you like?", "translation_en": "Welcome. What would you like?", "translation_id": "Selamat datang. Mau pesan apa?" },
+      { "speaker": "c", "text": "コーヒーをください。", "romanization": "Koohii wo kudasai.", "translation": "Coffee, please.", "translation_en": "Coffee, please.", "translation_id": "Kopi, tolong." },
+      { "speaker": "waiter", "text": "かしこまりました。こちらです。", "romanization": "Kashikomarimashita. Kochira desu.", "translation": "Certainly. Here you are.", "translation_en": "Certainly. Here you are.", "translation_id": "Baik. Ini kopinya." },
+      { "speaker": "c", "text": "いくらですか。", "romanization": "Ikura desu ka.", "translation": "How much is it?", "translation_en": "How much is it?", "translation_id": "Berapa harganya?" },
+      { "speaker": "waiter", "text": "三百円です。", "romanization": "Sanbyaku-en desu.", "translation": "It is 300 yen.", "translation_en": "It is 300 yen.", "translation_id": "Tiga ratus yen." }
+    ],
+    "vocabulary": ["ja_mizu"],
+    "grammar": ["ja_ka_question"]
+  },
+  {
+    "id": "ja-conv-004",
+    "language": "ja",
+    "title": "レストランで — At the Restaurant",
+    "level": 1,
+    "difficulty": 2,
+    "examMappings": { "jlpt": "N5" },
+    "scenario": "restaurant",
+    "speakers": [
+      { "id": "waiter", "name": "店員 (Waiter)", "role": "waiter" },
+      { "id": "c", "name": "客 (Customer)", "role": "customer" }
+    ],
+    "dialogue": [
+      { "speaker": "waiter", "text": "ご注文はお決まりですか。", "romanization": "Go-chuumon wa okimari desu ka.", "translation": "Are you ready to order?", "translation_en": "Are you ready to order?", "translation_id": "Sudah siap memesan?" },
+      { "speaker": "c", "text": "ラーメンをください。", "romanization": "Raamen wo kudasai.", "translation": "Ramen, please.", "translation_en": "Ramen, please.", "translation_id": "Ramen, tolong." },
+      { "speaker": "waiter", "text": "かしこまりました。少々お待ちください。", "romanization": "Kashikomarimashita. Shoushou omachi kudasai.", "translation": "Certainly. Please wait a moment.", "translation_en": "Certainly. Please wait a moment.", "translation_id": "Baik. Mohon tunggu sebentar." },
+      { "speaker": "c", "text": "すみません、お水をください。", "romanization": "Sumimasen, omizu wo kudasai.", "translation": "Excuse me, water please.", "translation_en": "Excuse me, water please.", "translation_id": "Permisi, air putihnya, tolong." }
+    ],
+    "vocabulary": ["ja_mizu", "ja_taberu", "ja_nomu"],
+    "grammar": ["ja_o_particle"]
+  },
+  {
+    "id": "ja-conv-005",
+    "language": "ja",
+    "title": "買い物 — Shopping",
+    "level": 1,
+    "difficulty": 2,
+    "examMappings": { "jlpt": "N5" },
+    "scenario": "shopping",
+    "speakers": [
+      { "id": "shop", "name": "店員 (Shopkeeper)", "role": "shopkeeper" },
+      { "id": "c", "name": "客 (Customer)", "role": "customer" }
+    ],
+    "dialogue": [
+      { "speaker": "shop", "text": "いらっしゃいませ。", "romanization": "Irasshaimase.", "translation": "Welcome.", "translation_en": "Welcome.", "translation_id": "Selamat datang." },
+      { "speaker": "c", "text": "この本はいくらですか。", "romanization": "Kono hon wa ikura desu ka.", "translation": "How much is this book?", "translation_en": "How much is this book?", "translation_id": "Berapa harga buku ini?" },
+      { "speaker": "shop", "text": "それは千円です。", "romanization": "Sore wa sen-en desu.", "translation": "That is 1,000 yen.", "translation_en": "That is 1,000 yen.", "translation_id": "Itu seribu yen." },
+      { "speaker": "c", "text": "じゃあ、これをください。", "romanization": "Jaa, kore wo kudasai.", "translation": "Then I'll take this.", "translation_en": "Then I'll take this.", "translation_id": "Kalau begitu, saya ambil ini." }
+    ],
+    "vocabulary": ["ja_hon", "ja_ichi", "ja_ni", "ja_san"],
+    "grammar": ["ja_no_possessive", "ja_ka_question"]
+  },
+  {
+    "id": "ja-conv-006",
+    "language": "ja",
+    "title": "道を聞く — Asking for Directions",
+    "level": 1,
+    "difficulty": 2,
+    "examMappings": { "jlpt": "N5" },
+    "scenario": "directions",
+    "speakers": [
+      { "id": "p", "name": "通行人 (Passerby)", "role": "passerby" },
+      { "id": "t", "name": "旅行者 (Tourist)", "role": "tourist" }
+    ],
+    "dialogue": [
+      { "speaker": "t", "text": "すみません、駅はどこですか。", "romanization": "Sumimasen, eki wa doko desu ka.", "translation": "Excuse me, where is the station?", "translation_en": "Excuse me, where is the station?", "translation_id": "Permisi, di mana stasiun?" },
+      { "speaker": "p", "text": "あそこにあります。", "romanization": "Asoko ni arimasu.", "translation": "It is over there.", "translation_en": "It is over there.", "translation_id": "Di sana." },
+      { "speaker": "t", "text": "ありがとうございます。", "romanization": "Arigatou gozaimasu.", "translation": "Thank you very much.", "translation_en": "Thank you very much.", "translation_id": "Terima kasih banyak." },
+      { "speaker": "p", "text": "どういたしまして。", "romanization": "Douitashimashite.", "translation": "You're welcome.", "translation_en": "You're welcome.", "translation_id": "Sama-sama." }
+    ],
+    "vocabulary": ["ja_doko", "ja_arigatou"],
+    "grammar": ["ja_ni_particle", "ja_ka_question"]
+  },
+  {
+    "id": "ja-conv-007",
+    "language": "ja",
+    "title": "教室で — In the Classroom",
+    "level": 1,
+    "difficulty": 1,
+    "examMappings": { "jlpt": "N5" },
+    "scenario": "classroom",
+    "speakers": [
+      { "id": "s", "name": "先生 (Teacher)", "role": "teacher" },
+      { "id": "st", "name": "学生 (Student)", "role": "student" }
+    ],
+    "dialogue": [
+      { "speaker": "s", "text": "今日は何を勉強しますか。", "romanization": "Kyou wa nani wo benkyou shimasu ka.", "translation": "What do we study today?", "translation_en": "What do we study today?", "translation_id": "Hari ini kita belajar apa?" },
+      { "speaker": "st", "text": "漢字を勉強します。", "romanization": "Kanji wo benkyou shimasu.", "translation": "We study kanji.", "translation_en": "We study kanji.", "translation_id": "Kita belajar kanji." },
+      { "speaker": "s", "text": "いいです。質問がありますか。", "romanization": "Ii desu. Shitsumon ga arimasu ka.", "translation": "Good. Any questions?", "translation_en": "Good. Any questions?", "translation_id": "Bagus. Ada pertanyaan?" },
+      { "speaker": "st", "text": "はい、先生。教えてください。", "romanization": "Hai, sensei. Oshiete kudasai.", "translation": "Yes, teacher. Please teach us.", "translation_en": "Yes, teacher. Please teach us.", "translation_id": "Ya, Pak/Bu guru. Tolong jelaskan." }
+    ],
+    "vocabulary": ["ja_sensei", "ja_nani"],
+    "grammar": ["ja_wa_particle", "ja_ka_question"]
+  },
+  {
+    "id": "ja-conv-008",
+    "language": "ja",
+    "title": "駅で — At the Station",
+    "level": 1,
+    "difficulty": 2,
+    "examMappings": { "jlpt": "N5" },
+    "scenario": "station",
+    "speakers": [
+      { "id": "staff", "name": "駅員 (Staff)", "role": "staff" },
+      { "id": "p", "name": "乗客 (Passenger)", "role": "passenger" }
+    ],
+    "dialogue": [
+      { "speaker": "p", "text": "切符はどこで買いますか。", "romanization": "Kippu wa doko de kaimasu ka.", "translation": "Where do I buy a ticket?", "translation_en": "Where do I buy a ticket?", "translation_id": "Di mana saya membeli tiket?" },
+      { "speaker": "staff", "text": "あの機械で買えます。", "romanization": "Ano kikai de kaemasu.", "translation": "You can buy it at that machine.", "translation_en": "You can buy it at that machine.", "translation_id": "Anda bisa membelinya di mesin itu." },
+      { "speaker": "p", "text": "大阪までいくらですか。", "romanization": "Oosaka made ikura desu ka.", "translation": "How much to Osaka?", "translation_en": "How much to Osaka?", "translation_id": "Berapa ongkos ke Osaka?" },
+      { "speaker": "staff", "text": "五百円です。", "romanization": "Gohyaku-en desu.", "translation": "500 yen.", "translation_en": "500 yen.", "translation_id": "Lima ratus yen." }
+    ],
+    "vocabulary": ["ja_iku", "ja_ichi"],
+    "grammar": ["ja_de_particle", "ja_ka_question"]
+  },
+  {
+    "id": "ja-conv-009",
+    "language": "ja",
+    "title": "電話 — A Phone Call",
+    "level": 1,
+    "difficulty": 2,
+    "examMappings": { "jlpt": "N5" },
+    "scenario": "phone",
+    "speakers": [
+      { "id": "a", "name": "田中 (Tanaka)", "role": "caller" },
+      { "id": "b", "name": "鈴木 (Suzuki)", "role": "receiver" }
+    ],
+    "dialogue": [
+      { "speaker": "b", "text": "もしもし、鈴木です。", "romanization": "Moshi moshi, Suzuki desu.", "translation": "Hello, this is Suzuki.", "translation_en": "Hello, this is Suzuki.", "translation_id": "Halo, ini Suzuki." },
+      { "speaker": "a", "text": "もしもし、田中です。いますか。", "romanization": "Moshi moshi, Tanaka desu. Imasu ka.", "translation": "Hello, this is Tanaka. Are you there?", "translation_en": "Hello, this is Tanaka. Are you there?", "translation_id": "Halo, ini Tanaka. Apakah kamu di sana?" },
+      { "speaker": "b", "text": "はい、います。どうしましたか。", "romanization": "Hai, imasu. Doushimashita ka.", "translation": "Yes, I'm here. What happened?", "translation_en": "Yes, I'm here. What happened?", "translation_id": "Ya, saya di sini. Ada apa?" },
+      { "speaker": "a", "text": "明日、一緒に映画を見ませんか。", "romanization": "Ashita, issho ni eiga wo mimasen ka.", "translation": "Let's watch a movie tomorrow.", "translation_en": "Let's watch a movie tomorrow.", "translation_id": "Besok, kita nonton film yuk." },
+      { "speaker": "b", "text": "いいですね。行きます。", "romanization": "Ii desu ne. Ikimasu.", "translation": "Sounds good. I'll go.", "translation_en": "Sounds good. I'll go.", "translation_id": "Bagus. Saya ikut." }
+    ],
+    "vocabulary": ["ja_ima"],
+    "grammar": ["ja_masen_negative", "ja_ka_question"]
+  },
+  {
+    "id": "ja-conv-010",
+    "language": "ja",
+    "title": "病院で — At the Doctor",
+    "level": 1,
+    "difficulty": 3,
+    "examMappings": { "jlpt": "N5" },
+    "scenario": "doctor",
+    "speakers": [
+      { "id": "d", "name": "医者 (Doctor)", "role": "doctor" },
+      { "id": "pt", "name": "患者 (Patient)", "role": "patient" }
+    ],
+    "dialogue": [
+      { "speaker": "d", "text": "どうしましたか。", "romanization": "Doushimashita ka.", "translation": "What seems to be the problem?", "translation_en": "What seems to be the problem?", "translation_id": "Ada keluhan apa?" },
+      { "speaker": "pt", "text": "頭が痛いです。", "romanization": "Atama ga itai desu.", "translation": "I have a headache.", "translation_en": "I have a headache.", "translation_id": "Kepala saya sakit." },
+      { "speaker": "d", "text": "熱はありますか。", "romanization": "Netsu wa arimasu ka.", "translation": "Do you have a fever?", "translation_en": "Do you have a fever?", "translation_id": "Apakah kamu demam?" },
+      { "speaker": "pt", "text": "はい、少しあります。", "romanization": "Hai, sukoshi arimasu.", "translation": "Yes, a little.", "translation_en": "Yes, a little.", "translation_id": "Ya, sedikit." },
+      { "speaker": "d", "text": "お大事に。", "romanization": "Odaiji ni.", "translation": "Take care.", "translation_en": "Take care.", "translation_id": "Semoga lekas sembuh." }
+    ],
+    "vocabulary": [],
+    "grammar": ["ja_wa_particle", "ja_ka_question"]
+  }
+]
