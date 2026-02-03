@@ -1,0 +1,628 @@
+[
+  {
+    "id": "ja_wa_particle",
+    "language": "ja",
+    "title": "Topic Particle は (wa)",
+    "pattern": "X は ...",
+    "level": 1,
+    "examMappings": {
+      "jlpt": "N5"
+    },
+    "difficulty": 1,
+    "simpleExplanation": "は (read as wa) marks the topic of the sentence.",
+    "detailedExplanation": "The particle は introduces what the sentence is about. It is written は but pronounced 'wa'. The topic can be a person, thing, or place. The rest of the sentence gives information about it.",
+    "usage": "私は学生です。 (I am a student.)",
+    "avoidWhen": "Don't use は for the object of a verb; that is を.",
+    "examples": [
+      {
+        "text": "私は学生です。",
+        "romanization": "Watashi wa gakusei desu.",
+        "translation": "I am a student.",
+        "translation_en": "I am a student.",
+        "translation_id": "Saya adalah pelajar."
+      },
+      {
+        "text": "今日は暑いです。",
+        "romanization": "Kyou wa atsui desu.",
+        "translation": "Today is hot.",
+        "translation_en": "Today is hot.",
+        "translation_id": "Hari ini panas."
+      }
+    ],
+    "commonMistakes": [
+      "Pronouncing は as 'ha' instead of 'wa'",
+      "Using は on the object"
+    ],
+    "relatedPoints": [
+      "ja_ga_particle",
+      "ja_o_particle"
+    ],
+    "category": "grammar",
+    "tags": [
+      "particles",
+      "topic",
+      "N5"
+    ],
+    "title_en": "Topic Particle は (wa)",
+    "title_id": "Partikel Topik は (wa)",
+    "simpleExplanation_en": "は (read as wa) marks the topic of the sentence.",
+    "simpleExplanation_id": "は (wa) menandai topik kalimat.",
+    "detailedExplanation_en": "The particle は introduces what the sentence is about. It is written は but pronounced 'wa'. The topic can be a person, thing, or place. The rest of the sentence gives information about it.",
+    "detailedExplanation_id": "Partikel は memperkenalkan topik pembicaraan. Ditulis は tapi diucapkan wa.",
+    "usage_en": "私は学生です。 (I am a student.)",
+    "usage_id": "私は学生です。 (Saya pelajar.)",
+    "avoidWhen_en": "Don't use は for the object of a verb; that is を.",
+    "avoidWhen_id": "Jangan pakai は untuk objek kata kerja; itu を.",
+    "commonMistakes_en": [
+      "Pronouncing は as 'ha' instead of 'wa'",
+      "Using は on the object"
+    ],
+    "commonMistakes_id": [
+      "Mengucapkan は sebagai ha bukan wa",
+      "Memakai は pada objek"
+    ]
+  },
+  {
+    "id": "ja_ga_particle",
+    "language": "ja",
+    "title": "Subject Particle が",
+    "pattern": "X が ...",
+    "level": 1,
+    "examMappings": {
+      "jlpt": "N5"
+    },
+    "difficulty": 1,
+    "simpleExplanation": "が marks the grammatical subject and answers 'what' or 'who'.",
+    "detailedExplanation": "が points out the subject, often new information or with verbs like いる/ある (to exist) and 好き (to like). Use it to answer 'who/what did it'.",
+    "usage": "猫がいます。 (There is a cat.)",
+    "avoidWhen": "Don't use が when the topic is already clear; prefer は.",
+    "examples": [
+      {
+        "text": "猫がいます。",
+        "romanization": "Neko ga imasu.",
+        "translation": "There is a cat.",
+        "translation_en": "There is a cat.",
+        "translation_id": "Ada seekor kucing."
+      },
+      {
+        "text": "私は日本語が好きです。",
+        "romanization": "Watashi wa nihongo ga suki desu.",
+        "translation": "I like Japanese.",
+        "translation_en": "I like Japanese.",
+        "translation_id": "Saya suka bahasa Jepang."
+      }
+    ],
+    "commonMistakes": [
+      "Using が with は in the same place",
+      "Forgetting が after the object of 好き"
+    ],
+    "relatedPoints": [
+      "ja_wa_particle"
+    ],
+    "category": "grammar",
+    "tags": [
+      "particles",
+      "subject",
+      "N5"
+    ],
+    "title_en": "Subject Particle が",
+    "title_id": "Partikel Subjek が",
+    "simpleExplanation_en": "が marks the grammatical subject and answers 'what' or 'who'.",
+    "simpleExplanation_id": "が menandai subjek gramatikal dan menjawab 'apa' atau 'siapa'.",
+    "detailedExplanation_en": "が points out the subject, often new information or with verbs like いる/ある (to exist) and 好き (to like). Use it to answer 'who/what did it'.",
+    "detailedExplanation_id": "が menunjuk subjek, sering informasi baru atau dengan kata kerja seperti いる/ある (ada) dan 好き (suka).",
+    "usage_en": "猫がいます。 (There is a cat.)",
+    "usage_id": "猫がいます。 (Ada seekor kucing.)",
+    "avoidWhen_en": "Don't use が when the topic is already clear; prefer は.",
+    "avoidWhen_id": "Jangan pakai が saat topik sudah jelas; lebih suka は.",
+    "commonMistakes_en": [
+      "Using が with は in the same place",
+      "Forgetting が after the object of 好き"
+    ],
+    "commonMistakes_id": [
+      "Memakai が dengan は bersama",
+      "Lupa が setelah objek 好き"
+    ]
+  },
+  {
+    "id": "ja_o_particle",
+    "language": "ja",
+    "title": "Object Particle を",
+    "pattern": "X を + verb",
+    "level": 1,
+    "examMappings": {
+      "jlpt": "N5"
+    },
+    "difficulty": 1,
+    "simpleExplanation": "を marks the direct object of a verb.",
+    "detailedExplanation": "The particle を (pronounced 'o') follows the thing directly affected by a transitive verb, like eating, drinking, reading, or buying something.",
+    "usage": "水を飲みます。 (I drink water.)",
+    "avoidWhen": "Don't use を for movement verbs; を is only for direct objects (and some movement in fixed phrases).",
+    "examples": [
+      {
+        "text": "水を飲みます。",
+        "romanization": "Mizu wo nomimasu.",
+        "translation": "I drink water.",
+        "translation_en": "I drink water.",
+        "translation_id": "Saya minum air."
+      },
+      {
+        "text": "本を読みます。",
+        "romanization": "Hon wo yomimasu.",
+        "translation": "I read a book.",
+        "translation_en": "I read a book.",
+        "translation_id": "Saya membaca buku."
+      }
+    ],
+    "commonMistakes": [
+      "Using を with intransitive verbs",
+      "Omitting を before verbs like 食べる"
+    ],
+    "relatedPoints": [
+      "ja_wa_particle",
+      "ja_ga_particle"
+    ],
+    "category": "grammar",
+    "tags": [
+      "particles",
+      "object",
+      "N5"
+    ],
+    "title_en": "Object Particle を",
+    "title_id": "Partikel Objek を",
+    "simpleExplanation_en": "を marks the direct object of a verb.",
+    "simpleExplanation_id": "を menandai objek langsung kata kerja.",
+    "detailedExplanation_en": "The particle を (pronounced 'o') follows the thing directly affected by a transitive verb, like eating, drinking, reading, or buying something.",
+    "detailedExplanation_id": "Partikel を (diucapkan o) mengikuti hal yang langsung dipengaruhi kata kerja transitif, seperti makan, minum, membaca, atau membeli.",
+    "usage_en": "水を飲みます。 (I drink water.)",
+    "usage_id": "水を飲みます。 (Saya minum air.)",
+    "avoidWhen_en": "Don't use を for movement verbs; を is only for direct objects (and some movement in fixed phrases).",
+    "avoidWhen_id": "Jangan pakai を untuk kata kerja gerak; を hanya untuk objek langsung.",
+    "commonMistakes_en": [
+      "Using を with intransitive verbs",
+      "Omitting を before verbs like 食べる"
+    ],
+    "commonMistakes_id": [
+      "Memakai を dengan kata kerja intransitif",
+      "Menghilangkan を sebelum kata kerja seperti 食べる"
+    ]
+  },
+  {
+    "id": "ja_ni_particle",
+    "language": "ja",
+    "title": "Particle に (direction, time, target)",
+    "pattern": "X に ...",
+    "level": 1,
+    "examMappings": {
+      "jlpt": "N5"
+    },
+    "difficulty": 2,
+    "simpleExplanation": "に marks a destination, a point in time, or a target.",
+    "detailedExplanation": "に indicates where something goes (学校に行く), a specific time (七時に起きる), or the target/receiver of an action (先生に聞く).",
+    "usage": "学校に行きます。 (I go to school.)",
+    "avoidWhen": "Don't use に for a place where an action happens; that is で.",
+    "examples": [
+      {
+        "text": "学校に行きます。",
+        "romanization": "Gakkou ni ikimasu.",
+        "translation": "I go to school.",
+        "translation_en": "I go to school.",
+        "translation_id": "Saya pergi ke sekolah."
+      },
+      {
+        "text": "七時に起きます。",
+        "romanization": "Shichi-ji ni okimasu.",
+        "translation": "I wake up at seven.",
+        "translation_en": "I wake up at seven.",
+        "translation_id": "Saya bangun jam tujuh."
+      }
+    ],
+    "commonMistakes": [
+      "Using に instead of で for location of action",
+      "Omitting に before times"
+    ],
+    "relatedPoints": [
+      "ja_de_particle"
+    ],
+    "category": "grammar",
+    "tags": [
+      "particles",
+      "direction",
+      "time",
+      "N5"
+    ],
+    "title_en": "Particle に (direction, time, target)",
+    "title_id": "Partikel に (arah, waktu, target)",
+    "simpleExplanation_en": "に marks a destination, a point in time, or a target.",
+    "simpleExplanation_id": "に menandai tujuan, titik waktu, atau target.",
+    "detailedExplanation_en": "に indicates where something goes (学校に行く), a specific time (七時に起きる), or the target/receiver of an action (先生に聞く).",
+    "detailedExplanation_id": "に menunjukkan ke mana sesuatu pergi (学校に行く), waktu spesifik (七時に起きる), atau target/penerima aksi (先生に聞く).",
+    "usage_en": "学校に行きます。 (I go to school.)",
+    "usage_id": "学校に行きます。 (Saya pergi ke sekolah.)",
+    "avoidWhen_en": "Don't use に for a place where an action happens; that is で.",
+    "avoidWhen_id": "Jangan pakai に untuk tempat aksi berlangsung; itu で.",
+    "commonMistakes_en": [
+      "Using に instead of で for location of action",
+      "Omitting に before times"
+    ],
+    "commonMistakes_id": [
+      "Memakai に alih-alih で untuk lokasi aksi",
+      "Menghilangkan に sebelum waktu"
+    ]
+  },
+  {
+    "id": "ja_de_particle",
+    "language": "ja",
+    "title": "Place Particle で",
+    "pattern": "X で + action",
+    "level": 1,
+    "examMappings": {
+      "jlpt": "N5"
+    },
+    "difficulty": 2,
+    "simpleExplanation": "で marks the place where an action happens.",
+    "detailedExplanation": "で shows where a verb takes place — eating, studying, working, meeting. It also marks means (でんしゃで = by train).",
+    "usage": "図書館で勉強します。 (I study at the library.)",
+    "avoidWhen": "Don't use で for existence verbs (いる/ある); use に instead.",
+    "examples": [
+      {
+        "text": "図書館で勉強します。",
+        "romanization": "Toshokan de benkyou shimasu.",
+        "translation": "I study at the library.",
+        "translation_en": "I study at the library.",
+        "translation_id": "Saya belajar di perpustakaan."
+      },
+      {
+        "text": "電車で行きます。",
+        "romanization": "Densha de ikimasu.",
+        "translation": "I go by train.",
+        "translation_en": "I go by train.",
+        "translation_id": "Saya pergi naik kereta."
+      }
+    ],
+    "commonMistakes": [
+      "Using で with いる/ある",
+      "Using で for destination"
+    ],
+    "relatedPoints": [
+      "ja_ni_particle"
+    ],
+    "category": "grammar",
+    "tags": [
+      "particles",
+      "place",
+      "means",
+      "N5"
+    ],
+    "title_en": "Place Particle で",
+    "title_id": "Partikel Tempat で",
+    "simpleExplanation_en": "で marks the place where an action happens.",
+    "simpleExplanation_id": "で menandai tempat aksi terjadi.",
+    "detailedExplanation_en": "で shows where a verb takes place — eating, studying, working, meeting. It also marks means (でんしゃで = by train).",
+    "detailedExplanation_id": "で menunjukkan tempat terjadinya kata kerja — makan, belajar, bekerja, bertemu. Juga menandai alat (でんしゃで = naik kereta).",
+    "usage_en": "図書館で勉強します。 (I study at the library.)",
+    "usage_id": "図書館で勉強します。 (Saya belajar di perpustakaan.)",
+    "avoidWhen_en": "Don't use で for existence verbs (いる/ある); use に instead.",
+    "avoidWhen_id": "Jangan pakai で dengan kata kerja keberadaan (いる/ある); pakai に.",
+    "commonMistakes_en": [
+      "Using で with いる/ある",
+      "Using で for destination"
+    ],
+    "commonMistakes_id": [
+      "Memakai で dengan いる/ある",
+      "Memakai で untuk tujuan"
+    ]
+  },
+  {
+    "id": "ja_desu_copula",
+    "language": "ja",
+    "title": "Copula です",
+    "pattern": "X は Y です / ではありません",
+    "level": 1,
+    "examMappings": {
+      "jlpt": "N5"
+    },
+    "difficulty": 1,
+    "simpleExplanation": "です links a subject to its description, like 'is/am/are'.",
+    "detailedExplanation": "です is the polite copula. Use ではありません for negation and でした for past tense. It never changes for person or number.",
+    "usage": "私は学生です。 (I am a student.)",
+    "avoidWhen": "Don't attach です to verbs; verbs conjugate themselves.",
+    "examples": [
+      {
+        "text": "私は日本人です。",
+        "romanization": "Watashi wa nihonjin desu.",
+        "translation": "I am Japanese.",
+        "translation_en": "I am Japanese.",
+        "translation_id": "Saya orang Jepang."
+      },
+      {
+        "text": "私は学生ではありません。",
+        "romanization": "Watashi wa gakusei dewa arimasen.",
+        "translation": "I am not a student.",
+        "translation_en": "I am not a student.",
+        "translation_id": "Saya bukan pelajar."
+      }
+    ],
+    "commonMistakes": [
+      "Adding です to verbs",
+      "Using ではありません informally without knowing it"
+    ],
+    "relatedPoints": [
+      "ja_wa_particle"
+    ],
+    "category": "grammar",
+    "tags": [
+      "copula",
+      "polite",
+      "N5"
+    ],
+    "title_en": "Copula です",
+    "title_id": "Kopula です",
+    "simpleExplanation_en": "です links a subject to its description, like 'is/am/are'.",
+    "simpleExplanation_id": "です menghubungkan subjek dan deskripsi seperti 'adalah'.",
+    "detailedExplanation_en": "です is the polite copula. Use ではありません for negation and でした for past tense. It never changes for person or number.",
+    "detailedExplanation_id": "Kopula sopan. Pakai ではありません untuk negasi dan でした untuk lampau. Tidak berubah untuk orang atau jumlah.",
+    "usage_en": "私は学生です。 (I am a student.)",
+    "usage_id": "私は学生です。 (Saya adalah pelajar.)",
+    "avoidWhen_en": "Don't attach です to verbs; verbs conjugate themselves.",
+    "avoidWhen_id": "Jangan tempel です pada kata kerja; kata kerja mengonjugasi sendiri.",
+    "commonMistakes_en": [
+      "Adding です to verbs",
+      "Using ではありません informally without knowing it"
+    ],
+    "commonMistakes_id": [
+      "Memakai です pada kata kerja",
+      "Memakai ではありません informal tanpa tahu"
+    ]
+  },
+  {
+    "id": "ja_ka_question",
+    "language": "ja",
+    "title": "Question Particle か",
+    "pattern": "SENTENCE か",
+    "level": 1,
+    "examMappings": {
+      "jlpt": "N5"
+    },
+    "difficulty": 1,
+    "simpleExplanation": "Adding か at the end makes a sentence a question.",
+    "detailedExplanation": "か is placed at the end of a statement to turn it into a yes/no question. In polite speech the intonation rises. No word order change is needed.",
+    "usage": "これは本ですか。 (Is this a book?)",
+    "avoidWhen": "Don't use か with か in 'whether' sentences at N5 level.",
+    "examples": [
+      {
+        "text": "これは本ですか。",
+        "romanization": "Kore wa hon desu ka.",
+        "translation": "Is this a book?",
+        "translation_en": "Is this a book?",
+        "translation_id": "Apakah ini buku?"
+      },
+      {
+        "text": "トイレはどこですか。",
+        "romanization": "Toire wa doko desu ka.",
+        "translation": "Where is the toilet?",
+        "translation_en": "Where is the toilet?",
+        "translation_id": "Di mana toiletnya?"
+      }
+    ],
+    "commonMistakes": [
+      "Forgetting the rising intonation",
+      "Using question mark only without か"
+    ],
+    "relatedPoints": [
+      "ja_desu_copula"
+    ],
+    "category": "grammar",
+    "tags": [
+      "questions",
+      "particles",
+      "N5"
+    ],
+    "title_en": "Question Particle か",
+    "title_id": "Partikel Pertanyaan か",
+    "simpleExplanation_en": "Adding か at the end makes a sentence a question.",
+    "simpleExplanation_id": "Menambah か di akhir menjadikan kalimat pertanyaan.",
+    "detailedExplanation_en": "か is placed at the end of a statement to turn it into a yes/no question. In polite speech the intonation rises. No word order change is needed.",
+    "detailedExplanation_id": "か ditaruh di akhir pernyataan untuk jadi pertanyaan ya/tidak. Dalam tutur sopan intonasi naik (diretasikan). Tanpa perubahan urutan kata.",
+    "usage_en": "これは本ですか。 (Is this a book?)",
+    "usage_id": "これは本ですか。 (Apakah ini buku?)",
+    "avoidWhen_en": "Don't use か with か in 'whether' sentences at N5 level.",
+    "avoidWhen_id": "Jangan pakai か dengan か pada kalimat 'apakah' di N5.",
+    "commonMistakes_en": [
+      "Forgetting the rising intonation",
+      "Using question mark only without か"
+    ],
+    "commonMistakes_id": [
+      "Lupa intonasi naik",
+      "Hanya memakai tanda tanya tanpa か"
+    ]
+  },
+  {
+    "id": "ja_masen_negative",
+    "language": "ja",
+    "title": "Negative Form ません",
+    "pattern": "verb-ます → verb-ません",
+    "level": 1,
+    "examMappings": {
+      "jlpt": "N5"
+    },
+    "difficulty": 2,
+    "simpleExplanation": "Change ます to ません to make a verb negative.",
+    "detailedExplanation": "For polite negative verbs, replace the final ます of the ます-form with ません: 食べます → 食べません. Past negative is ませんでした.",
+    "usage": "水を飲みません。 (I don't drink water.)",
+    "avoidWhen": "Don't use ません with nouns/adjectives; use ではありません / じゃないです.",
+    "examples": [
+      {
+        "text": "お酒を飲みません。",
+        "romanization": "Osake wo nomimasen.",
+        "translation": "I don't drink alcohol.",
+        "translation_en": "I don't drink alcohol.",
+        "translation_id": "Saya tidak minum alkohol."
+      },
+      {
+        "text": "昨日は行きませんでした。",
+        "romanization": "Kinou wa ikimasen deshita.",
+        "translation": "I didn't go yesterday.",
+        "translation_en": "I didn't go yesterday.",
+        "translation_id": "Kemarin saya tidak pergi."
+      }
+    ],
+    "commonMistakes": [
+      "Saying ませんでした instead of ません for present",
+      "Using ません with です-copula"
+    ],
+    "relatedPoints": [
+      "ja_desu_copula"
+    ],
+    "category": "grammar",
+    "tags": [
+      "verbs",
+      "negative",
+      "polite",
+      "N5"
+    ],
+    "title_en": "Negative Form ません",
+    "title_id": "Negatif ません",
+    "simpleExplanation_en": "Change ます to ません to make a verb negative.",
+    "simpleExplanation_id": "Ubah ます menjadi ません untuk kata kerja negatif.",
+    "detailedExplanation_en": "For polite negative verbs, replace the final ます of the ます-form with ません: 食べます → 食べません. Past negative is ませんでした.",
+    "detailedExplanation_id": "Untuk kata kerja negatif sopan, ganti ます akhir dengan ません: 食べます jadi 食べません. Negatif lampau ませんでした.",
+    "usage_en": "水を飲みません。 (I don't drink water.)",
+    "usage_id": "水を飲みません。 (Saya tidak minum air.)",
+    "avoidWhen_en": "Don't use ません with nouns/adjectives; use ではありません / じゃないです.",
+    "avoidWhen_id": "Jangan pakai ません dengan kata benda/kata sifat; pakai ではありません.",
+    "commonMistakes_en": [
+      "Saying ませんでした instead of ません for present",
+      "Using ません with です-copula"
+    ],
+    "commonMistakes_id": [
+      "Mengucapkan ませんでした alih-alih ません",
+      "Memakai ません dengan kopula です"
+    ]
+  },
+  {
+    "id": "ja_tai_want",
+    "language": "ja",
+    "title": "Desire Form たい",
+    "pattern": "verb-stem + たい",
+    "level": 1,
+    "examMappings": {
+      "jlpt": "N5"
+    },
+    "difficulty": 2,
+    "simpleExplanation": "Attach たい to a verb stem to say 'want to do'.",
+    "detailedExplanation": "Drop ます from the ます-form to get the stem, then add たい: 食べます → 食べたい. For 'want [object]', use がほしい instead. たい conjugates like an i-adjective.",
+    "usage": "水が飲みたいです。 (I want to drink water.)",
+    "avoidWhen": "Don't use たい for other people's wants in plain statements (use たがっている).",
+    "examples": [
+      {
+        "text": "日本に行きたいです。",
+        "romanization": "Nihon ni ikitai desu.",
+        "translation": "I want to go to Japan.",
+        "translation_en": "I want to go to Japan.",
+        "translation_id": "Saya ingin pergi ke Jepang."
+      },
+      {
+        "text": "コーヒーが飲みたいです。",
+        "romanization": "Koohii ga nomitai desu.",
+        "translation": "I want to drink coffee.",
+        "translation_en": "I want to drink coffee.",
+        "translation_id": "Saya ingin minum kopi."
+      }
+    ],
+    "commonMistakes": [
+      "Using を with たい (should be が)",
+      "Using たい for third person"
+    ],
+    "relatedPoints": [
+      "ja_o_particle"
+    ],
+    "category": "grammar",
+    "tags": [
+      "verbs",
+      "desire",
+      "N5"
+    ],
+    "title_en": "Desire Form たい",
+    "title_id": "Bentuk Keinginan たい",
+    "simpleExplanation_en": "Attach たい to a verb stem to say 'want to do'.",
+    "simpleExplanation_id": "Tempel たい ke batang kata kerja untuk 'ingin melakukan'.",
+    "detailedExplanation_en": "Drop ます from the ます-form to get the stem, then add たい: 食べます → 食べたい. For 'want [object]', use がほしい instead. たい conjugates like an i-adjective.",
+    "detailedExplanation_id": "Buang ます dari bentuk-ます untuk dapat batang, lalu tambah たい: 食べます jadi 食べたい. Untuk 'ingin [objek]', pakai がほしい. たい mengonjugasi seperti i-kata sifat.",
+    "usage_en": "水が飲みたいです。 (I want to drink water.)",
+    "usage_id": "Water が飲みたいです。 (Saya ingin minum air.)",
+    "avoidWhen_en": "Don't use たい for other people's wants in plain statements (use たがっている).",
+    "avoidWhen_id": "Jangan pakai たい untuk keinginan orang lain dalam pernyataan biasa.",
+    "commonMistakes_en": [
+      "Using を with たい (should be が)",
+      "Using たい for third person"
+    ],
+    "commonMistakes_id": [
+      "Memakai を dengan たい (seharusnya が)",
+      "Memakai たい untuk orang ketiga"
+    ]
+  },
+  {
+    "id": "ja_no_possessive",
+    "language": "ja",
+    "title": "Possessive / Attributive の",
+    "pattern": "X の Y",
+    "level": 1,
+    "examMappings": {
+      "jlpt": "N5"
+    },
+    "difficulty": 1,
+    "simpleExplanation": "の links two nouns: X belongs to or describes Y.",
+    "detailedExplanation": "A の B means 'B of A' or 'A's B' (私の本 = my book). It also joins nouns to describe (日本の学生 = a Japanese student).",
+    "usage": "私の本です。 (It is my book.)",
+    "avoidWhen": "Don't use の between a noun and its predicate; use です or だ.",
+    "examples": [
+      {
+        "text": "これは私の本です。",
+        "romanization": "Kore wa watashi no hon desu.",
+        "translation": "This is my book.",
+        "translation_en": "This is my book.",
+        "translation_id": "Ini buku saya."
+      },
+      {
+        "text": "日本語の先生です。",
+        "romanization": "Nihongo no sensei desu.",
+        "translation": "A Japanese-language teacher.",
+        "translation_en": "A Japanese-language teacher.",
+        "translation_id": "Guru bahasa Jepang."
+      }
+    ],
+    "commonMistakes": [
+      "Omitting の in noun-noun connection",
+      "Using の instead of です"
+    ],
+    "relatedPoints": [
+      "ja_desu_copula"
+    ],
+    "category": "grammar",
+    "tags": [
+      "particles",
+      "possession",
+      "nouns",
+      "N5"
+    ],
+    "title_en": "Possessive / Attributive の",
+    "title_id": "Partikel Kepemilikan の",
+    "simpleExplanation_en": "の links two nouns: X belongs to or describes Y.",
+    "simpleExplanation_id": "の menghubungkan dua kata benda: X milik atau mendeskripsikan Y.",
+    "detailedExplanation_en": "A の B means 'B of A' or 'A's B' (私の本 = my book). It also joins nouns to describe (日本の学生 = a Japanese student).",
+    "detailedExplanation_id": "A の B berarti 'B dari A' atau 'B milik A' (私は本 = bukuku). Juga merangkai kata benda + kata sifat deskripsi (日本の学生).",
+    "usage_en": "私の本です。 (It is my book.)",
+    "usage_id": "私の本です。 (Ini bukuku.)",
+    "avoidWhen_en": "Don't use の between a noun and its predicate; use です or だ.",
+    "avoidWhen_id": "Jangan pakai の antara kata benda dan predikat; pakai です.",
+    "commonMistakes_en": [
+      "Omitting の in noun-noun connection",
+      "Using の instead of です"
+    ],
+    "commonMistakes_id": [
+      "Menghilangkan の dalam koneksi kata benda",
+      "Memakai の alih-alih です"
+    ]
+  }
+]
