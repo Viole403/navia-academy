@@ -1,0 +1,362 @@
+[
+  {
+    "id": "r-ja-n5-1-aisatsu",
+    "title": "あいさつ — Greetings",
+    "type": "story",
+    "level": 1,
+    "examMappings": {
+      "jlpt": "N5"
+    },
+    "wordCount": 45,
+    "summary": "A simple morning exchange between two friends.",
+    "paragraphs": [
+      {
+        "text": "朝、田中さんと佐藤さんは学校で会います。",
+        "romanization": "Asa, Tanaka-san to Satou-san wa gakkou de aimasu.",
+        "translation": "In the morning, Tanaka and Sato meet at school.",
+        "translation_en": "In the morning, Tanaka and Sato meet at school.",
+        "translation_id": "Di pagi hari, Tanaka dan Sato bertemu di sekolah."
+      },
+      {
+        "text": "田中さんは「おはようございます」と言います。",
+        "romanization": "Tanaka-san wa 'ohayou gozaimasu' to iimasu.",
+        "translation": "Tanaka says 'good morning'.",
+        "translation_en": "Tanaka says 'good morning'.",
+        "translation_id": "Tanaka mengucapkan 'selamat pagi'."
+      },
+      {
+        "text": "佐藤さんも「おはようございます」と言います。",
+        "romanization": "Satou-san mo 'ohayou gozaimasu' to iimasu.",
+        "translation": "Sato also says 'good morning'.",
+        "translation_en": "Sato also says 'good morning'.",
+        "translation_id": "Sato juga mengucapkan 'selamat pagi'."
+      }
+    ],
+    "summary_en": "A simple morning exchange between two friends.",
+    "summary_id": "Pertukaran pagi sederhana antara dua teman."
+  },
+  {
+    "id": "r-ja-n5-2-jikosyoukai",
+    "title": "じこしょうかい — Self-Introduction",
+    "type": "story",
+    "level": 1,
+    "examMappings": {
+      "jlpt": "N5"
+    },
+    "wordCount": 50,
+    "summary": "Introducing yourself to a new classmate.",
+    "paragraphs": [
+      {
+        "text": "はじめまして。私は鈴木です。",
+        "romanization": "Hajimemashite. Watashi wa Suzuki desu.",
+        "translation": "Nice to meet you. I am Suzuki.",
+        "translation_en": "Nice to meet you. I am Suzuki.",
+        "translation_id": "Senang berkenalan. Saya Suzuki."
+      },
+      {
+        "text": "私は東京から来ました。",
+        "romanization": "Watashi wa Toukyou kara kimashita.",
+        "translation": "I came from Tokyo.",
+        "translation_en": "I came from Tokyo.",
+        "translation_id": "Saya datang dari Tokyo."
+      },
+      {
+        "text": "私は学生です。どうぞよろしくお願いします。",
+        "romanization": "Watashi wa gakusei desu. Douzo yoroshiku onegaishimasu.",
+        "translation": "I am a student. Nice to meet you.",
+        "translation_en": "I am a student. Nice to meet you.",
+        "translation_id": "Saya seorang pelajar. Senang berkenalan."
+      }
+    ],
+    "summary_en": "Introducing yourself to a new classmate.",
+    "summary_id": "Memperkenalkan diri kepada teman sekelas baru."
+  },
+  {
+    "id": "r-ja-n5-3-ichinichi",
+    "title": "わたしの一日 — My Day",
+    "type": "story",
+    "level": 1,
+    "examMappings": {
+      "jlpt": "N5"
+    },
+    "wordCount": 55,
+    "summary": "A student describes an ordinary day.",
+    "paragraphs": [
+      {
+        "text": "私は毎朝六時に起きます。",
+        "romanization": "Watashi wa maiasa roku-ji ni okimasu.",
+        "translation": "I wake up at six every morning.",
+        "translation_en": "I wake up at six every morning.",
+        "translation_id": "Saya bangun jam enam setiap pagi."
+      },
+      {
+        "text": "朝ごはんを食べて、学校へ行きます。",
+        "romanization": "Asagohan wo tabete, gakkou e ikimasu.",
+        "translation": "I eat breakfast and go to school.",
+        "translation_en": "I eat breakfast and go to school.",
+        "translation_id": "Saya makan sarapan lalu pergi ke sekolah."
+      },
+      {
+        "text": "夜は日本語を勉強します。",
+        "romanization": "Yoru wa nihongo wo benkyou shimasu.",
+        "translation": "In the evening I study Japanese.",
+        "translation_en": "In the evening I study Japanese.",
+        "translation_id": "Di malam hari saya belajar bahasa Jepang."
+      }
+    ],
+    "summary_en": "A student describes an ordinary day.",
+    "summary_id": "Seorang pelajar mendeskripsikan hari biasa."
+  },
+  {
+    "id": "r-ja-n5-4-kazoku",
+    "title": "わたしの家族 — My Family",
+    "type": "story",
+    "level": 1,
+    "examMappings": {
+      "jlpt": "N5"
+    },
+    "wordCount": 48,
+    "summary": "Talking about family members.",
+    "paragraphs": [
+      {
+        "text": "私の家族は四人です。",
+        "romanization": "Watashi no kazoku wa yonin desu.",
+        "translation": "My family has four people.",
+        "translation_en": "My family has four people.",
+        "translation_id": "Keluarga saya ada empat orang."
+      },
+      {
+        "text": "父は会社員です。母は料理が上手です。",
+        "romanization": "Chichi wa kaishain desu. Haha wa ryouri ga jouzu desu.",
+        "translation": "My father is a company employee. My mother is good at cooking.",
+        "translation_en": "My father is a company employee. My mother is good at cooking.",
+        "translation_id": "Ayah saya karyawan perusahaan. Ibu saya pandai memasak."
+      },
+      {
+        "text": "私には妹が一人います。",
+        "romanization": "Watashi ni wa imouto ga hitori imasu.",
+        "translation": "I have one younger sister.",
+        "translation_en": "I have one younger sister.",
+        "translation_id": "Saya punya satu adik perempuan."
+      }
+    ],
+    "summary_en": "Talking about family members.",
+    "summary_id": "Bicara tentang anggota keluarga."
+  },
+  {
+    "id": "r-ja-n5-5-kaisoku",
+    "title": "かいもの — Shopping",
+    "type": "story",
+    "level": 1,
+    "examMappings": {
+      "jlpt": "N5"
+    },
+    "wordCount": 50,
+    "summary": "Buying things at a shop.",
+    "paragraphs": [
+      {
+        "text": "私はスーパーで果物を買います。",
+        "romanization": "Watashi wa suupaa de kudamono wo kaimasu.",
+        "translation": "I buy fruit at the supermarket.",
+        "translation_en": "I buy fruit at the supermarket.",
+        "translation_id": "Saya membeli buah di supermarket."
+      },
+      {
+        "text": "りんごとバナナを買いました。",
+        "romanization": "Ringo to banana wo kaimashita.",
+        "translation": "I bought apples and bananas.",
+        "translation_en": "I bought apples and bananas.",
+        "translation_id": "Saya membeli apel dan pisang."
+      },
+      {
+        "text": "いくらですか。と店員さんに聞きました。",
+        "romanization": "Ikura desu ka. To ten'in-san ni kikimashita.",
+        "translation": "I asked the shop assistant how much it costs.",
+        "translation_en": "I asked the shop assistant how much it costs.",
+        "translation_id": "Saya bertanya kepada penjual berapa harganya."
+      }
+    ],
+    "summary_en": "Buying things at a shop.",
+    "summary_id": "Membeli barang di toko."
+  },
+  {
+    "id": "r-ja-n5-6-tenki",
+    "title": "天気 — Weather",
+    "type": "story",
+    "level": 1,
+    "examMappings": {
+      "jlpt": "N5"
+    },
+    "wordCount": 45,
+    "summary": "A short talk about today's weather.",
+    "paragraphs": [
+      {
+        "text": "今日はいい天気です。",
+        "romanization": "Kyou wa ii tenki desu.",
+        "translation": "The weather is nice today.",
+        "translation_en": "The weather is nice today.",
+        "translation_id": "Cuaca hari ini bagus."
+      },
+      {
+        "text": "空が青くて、暖かいです。",
+        "romanization": "Sora ga aokute, atatakai desu.",
+        "translation": "The sky is blue and it is warm.",
+        "translation_en": "The sky is blue and it is warm.",
+        "translation_id": "Langit biru dan udaranya hangat."
+      },
+      {
+        "text": "明日は雨かもしれません。",
+        "romanization": "Ashita wa ame kamoshiremasen.",
+        "translation": "It might rain tomorrow.",
+        "translation_en": "It might rain tomorrow.",
+        "translation_id": "Besok mungkin akan hujan."
+      }
+    ],
+    "summary_en": "A short talk about today's weather.",
+    "summary_id": "Percakapan singkat tentang cuaca hari ini."
+  },
+  {
+    "id": "r-ja-n5-7-machi",
+    "title": "私の町 — My Town",
+    "type": "story",
+    "level": 1,
+    "examMappings": {
+      "jlpt": "N5"
+    },
+    "wordCount": 48,
+    "summary": "Describing a small town.",
+    "paragraphs": [
+      {
+        "text": "私の町は小さいです。",
+        "romanization": "Watashi no machi wa chiisai desu.",
+        "translation": "My town is small.",
+        "translation_en": "My town is small.",
+        "translation_id": "Kota saya kecil."
+      },
+      {
+        "text": "駅と本屋とパン屋があります。",
+        "romanization": "Eki to hon'ya to pan-ya ga arimasu.",
+        "translation": "There is a station, a bookstore, and a bakery.",
+        "translation_en": "There is a station, a bookstore, and a bakery.",
+        "translation_id": "Ada stasiun, toko buku, dan toko roti."
+      },
+      {
+        "text": "静かで、住みやすいです。",
+        "romanization": "Shizuka de, sumiyasui desu.",
+        "translation": "It is quiet and easy to live in.",
+        "translation_en": "It is quiet and easy to live in.",
+        "translation_id": "Tenang dan nyaman ditinggali."
+      }
+    ],
+    "summary_en": "Describing a small town.",
+    "summary_id": "Mendeskripsikan kota kecil."
+  },
+  {
+    "id": "r-ja-n5-8-shumi",
+    "title": "しゅみ — Hobbies",
+    "type": "story",
+    "level": 1,
+    "examMappings": {
+      "jlpt": "N5"
+    },
+    "wordCount": 45,
+    "summary": "Talking about hobbies.",
+    "paragraphs": [
+      {
+        "text": "私のしゅみは写真を撮ることです。",
+        "romanization": "Watashi no shumi wa shashin wo toru koto desu.",
+        "translation": "My hobby is taking photos.",
+        "translation_en": "My hobby is taking photos.",
+        "translation_id": "Hobi saya adalah memotret."
+      },
+      {
+        "text": "休みの日に山へ行きます。",
+        "romanization": "Yasumi no hi ni yama e ikimasu.",
+        "translation": "On days off I go to the mountains.",
+        "translation_en": "On days off I go to the mountains.",
+        "translation_id": "Di hari libur saya pergi ke pegunungan."
+      },
+      {
+        "text": "きれいな写真が撮れます。",
+        "romanization": "Kirei na shashin ga toremasu.",
+        "translation": "I can take beautiful photos.",
+        "translation_en": "I can take beautiful photos.",
+        "translation_id": "Saya bisa mengambil foto yang indah."
+      }
+    ],
+    "summary_en": "Talking about hobbies.",
+    "summary_id": "Bicara tentang hobi."
+  },
+  {
+    "id": "r-ja-n5-9-tabemono",
+    "title": "たべもの — Food",
+    "type": "story",
+    "level": 1,
+    "examMappings": {
+      "jlpt": "N5"
+    },
+    "wordCount": 46,
+    "summary": "About favorite food.",
+    "paragraphs": [
+      {
+        "text": "私は寿司が大好きです。",
+        "romanization": "Watashi wa sushi ga daisuki desu.",
+        "translation": "I love sushi.",
+        "translation_en": "I love sushi.",
+        "translation_id": "Saya sangat suka sushi."
+      },
+      {
+        "text": "よく寿司屋に行きます。",
+        "romanization": "Yoku sushi-ya ni ikimasu.",
+        "translation": "I often go to a sushi restaurant.",
+        "translation_en": "I often go to a sushi restaurant.",
+        "translation_id": "Saya sering pergi ke restoran sushi."
+      },
+      {
+        "text": "でも、とても高いです。",
+        "romanization": "Demo, totemo takai desu.",
+        "translation": "But it is very expensive.",
+        "translation_en": "But it is very expensive.",
+        "translation_id": "Tapi harganya sangat mahal."
+      }
+    ],
+    "summary_en": "About favorite food.",
+    "summary_id": "Tentang makanan favorit."
+  },
+  {
+    "id": "r-ja-n5-10-gakkou",
+    "title": "がっこう — School",
+    "type": "story",
+    "level": 1,
+    "examMappings": {
+      "jlpt": "N5"
+    },
+    "wordCount": 44,
+    "summary": "About school life.",
+    "paragraphs": [
+      {
+        "text": "私の学校は駅の近くにあります。",
+        "romanization": "Watashi no gakkou wa eki no chikaku ni arimasu.",
+        "translation": "My school is near the station.",
+        "translation_en": "My school is near the station.",
+        "translation_id": "Sekolah saya dekat stasiun."
+      },
+      {
+        "text": "学校には図書館があります。",
+        "romanization": "Gakkou ni wa toshokan ga arimasu.",
+        "translation": "My school has a library.",
+        "translation_en": "My school has a library.",
+        "translation_id": "Sekolah saya memiliki perpustakaan."
+      },
+      {
+        "text": "私はそこで本を読みます。",
+        "romanization": "Watashi wa soko de hon wo yomimasu.",
+        "translation": "I read books there.",
+        "translation_en": "I read books there.",
+        "translation_id": "Saya membaca buku di sana."
+      }
+    ],
+    "summary_en": "About school life.",
+    "summary_id": "Tentang kehidupan sekolah."
+  }
+]
