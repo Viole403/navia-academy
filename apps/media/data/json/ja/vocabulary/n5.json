@@ -1,0 +1,913 @@
+[
+  {
+    "id": "ja_konnichiwa",
+    "language": "ja",
+    "text": "こんにちは",
+    "kanji": null,
+    "hiragana": "こんにちは",
+    "katakana": null,
+    "romanization": "konnichiwa",
+    "pronunciation": [
+      "こ↗んにちは"
+    ],
+    "translation": "hello / good afternoon",
+    "pos": "interjection",
+    "level": 1,
+    "examMappings": {
+      "jlpt": "N5"
+    },
+    "meanings": [
+      "hello",
+      "good afternoon",
+      "greetings"
+    ],
+    "examples": [
+      {
+        "text": "こんにちは！元気ですか？",
+        "romanization": "Konnichiwa! Genki desu ka?",
+        "translation": "Hello! How are you?",
+        "translation_en": "Hello! How are you?",
+        "translation_id": "Halo! Apa kabar?"
+      }
+    ],
+    "frequency": 5,
+    "tags": [
+      "greeting",
+      "basic"
+    ],
+    "translation_en": "hello / good afternoon",
+    "translation_id": "halo / selamat siang"
+  },
+  {
+    "id": "ja_arigatou",
+    "language": "ja",
+    "text": "ありがとう",
+    "kanji": null,
+    "hiragana": "ありがとう",
+    "romanization": "arigatou",
+    "pronunciation": [
+      "あ↗りがとう"
+    ],
+    "translation": "thank you",
+    "pos": "interjection",
+    "level": 1,
+    "examMappings": {
+      "jlpt": "N5"
+    },
+    "meanings": [
+      "thank you",
+      "thanks"
+    ],
+    "examples": [
+      {
+        "text": "ありがとうございます。",
+        "romanization": "Arigatou gozaimasu.",
+        "translation": "Thank you very much.",
+        "translation_en": "Thank you very much.",
+        "translation_id": "Terima kasih banyak."
+      }
+    ],
+    "frequency": 5,
+    "tags": [
+      "politeness",
+      "gratitude"
+    ],
+    "translation_en": "thank you",
+    "translation_id": "terima kasih"
+  },
+  {
+    "id": "ja_sayonara",
+    "language": "ja",
+    "text": "さようなら",
+    "kanji": null,
+    "hiragana": "さようなら",
+    "romanization": "sayonara",
+    "pronunciation": [
+      "さよ↗うなら"
+    ],
+    "translation": "goodbye",
+    "pos": "interjection",
+    "level": 1,
+    "examMappings": {
+      "jlpt": "N5"
+    },
+    "meanings": [
+      "goodbye",
+      "farewell"
+    ],
+    "examples": [
+      {
+        "text": "さようなら！また明日。",
+        "romanization": "Sayonara! Mata ashita.",
+        "translation": "Goodbye! See you tomorrow.",
+        "translation_en": "Goodbye! See you tomorrow.",
+        "translation_id": "Selamat tinggal! Sampai besok."
+      }
+    ],
+    "frequency": 5,
+    "tags": [
+      "greeting"
+    ],
+    "translation_en": "goodbye",
+    "translation_id": "selamat tinggal"
+  },
+  {
+    "id": "ja_watashi",
+    "language": "ja",
+    "text": "わたし",
+    "kanji": "私",
+    "hiragana": "わたし",
+    "romanization": "watashi",
+    "pronunciation": [
+      "わ↗たし"
+    ],
+    "translation": "I / me",
+    "pos": "pronoun",
+    "level": 1,
+    "examMappings": {
+      "jlpt": "N5"
+    },
+    "readings": {
+      "kun": [
+        "わたし"
+      ],
+      "on": [
+        "シ"
+      ]
+    },
+    "meanings": [
+      "I",
+      "me",
+      "myself"
+    ],
+    "examples": [
+      {
+        "text": "私は学生です。",
+        "romanization": "Watashi wa gakusei desu.",
+        "translation": "I am a student.",
+        "translation_en": "I am a student.",
+        "translation_id": "Saya adalah pelajar."
+      }
+    ],
+    "frequency": 5,
+    "tags": [
+      "pronoun",
+      "basic"
+    ],
+    "translation_en": "I / me",
+    "translation_id": "saya / aku"
+  },
+  {
+    "id": "ja_desu",
+    "language": "ja",
+    "text": "です",
+    "hiragana": "です",
+    "romanization": "desu",
+    "pronunciation": [
+      "で↗す"
+    ],
+    "translation": "is / am / are",
+    "pos": "copula",
+    "level": 1,
+    "examMappings": {
+      "jlpt": "N5"
+    },
+    "meanings": [
+      "be",
+      "is",
+      "am",
+      "are"
+    ],
+    "examples": [
+      {
+        "text": "これは本です。",
+        "romanization": "Kore wa hon desu.",
+        "translation": "This is a book.",
+        "translation_en": "This is a book.",
+        "translation_id": "Ini adalah buku."
+      }
+    ],
+    "frequency": 5,
+    "tags": [
+      "copula",
+      "basic"
+    ],
+    "translation_en": "is / am / are",
+    "translation_id": "adalah (kopula)"
+  },
+  {
+    "id": "ja_taberu",
+    "language": "ja",
+    "text": "たべる",
+    "kanji": "食べる",
+    "hiragana": "たべる",
+    "romanization": "taberu",
+    "pronunciation": [
+      "た↗べる"
+    ],
+    "translation": "to eat",
+    "pos": "verb",
+    "level": 1,
+    "examMappings": {
+      "jlpt": "N5"
+    },
+    "readings": {
+      "kun": [
+        "た-べる",
+        "く-う"
+      ],
+      "on": [
+        "ショク"
+      ]
+    },
+    "meanings": [
+      "eat",
+      "have a meal"
+    ],
+    "examples": [
+      {
+        "text": "朝ごはんを食べます。",
+        "romanization": "Asagohan wo tabemasu.",
+        "translation": "I eat breakfast.",
+        "translation_en": "I eat breakfast.",
+        "translation_id": "Saya makan sarapan."
+      }
+    ],
+    "frequency": 5,
+    "tags": [
+      "verb",
+      "food"
+    ],
+    "translation_en": "to eat",
+    "translation_id": "makan"
+  },
+  {
+    "id": "ja_nomu",
+    "language": "ja",
+    "text": "のむ",
+    "kanji": "飲む",
+    "hiragana": "のむ",
+    "romanization": "nomu",
+    "pronunciation": [
+      "の↗む"
+    ],
+    "translation": "to drink",
+    "pos": "verb",
+    "level": 1,
+    "examMappings": {
+      "jlpt": "N5"
+    },
+    "readings": {
+      "kun": [
+        "の-む"
+      ],
+      "on": [
+        "イン"
+      ]
+    },
+    "meanings": [
+      "drink"
+    ],
+    "examples": [
+      {
+        "text": "水を飲みます。",
+        "romanization": "Mizu wo nomimasu.",
+        "translation": "I drink water.",
+        "translation_en": "I drink water.",
+        "translation_id": "Saya minum air."
+      }
+    ],
+    "frequency": 5,
+    "tags": [
+      "verb",
+      "drinks"
+    ],
+    "translation_en": "to drink",
+    "translation_id": "minum"
+  },
+  {
+    "id": "ja_iku",
+    "language": "ja",
+    "text": "いく",
+    "kanji": "行く",
+    "hiragana": "いく",
+    "romanization": "iku",
+    "pronunciation": [
+      "い↗く"
+    ],
+    "translation": "to go",
+    "pos": "verb",
+    "level": 1,
+    "examMappings": {
+      "jlpt": "N5"
+    },
+    "readings": {
+      "kun": [
+        "い-く",
+        "ゆ-く"
+      ],
+      "on": [
+        "コウ",
+        "ギョウ"
+      ]
+    },
+    "meanings": [
+      "go"
+    ],
+    "examples": [
+      {
+        "text": "学校に行きます。",
+        "romanization": "Gakkou ni ikimasu.",
+        "translation": "I go to school.",
+        "translation_en": "I go to school.",
+        "translation_id": "Saya pergi ke sekolah."
+      }
+    ],
+    "frequency": 5,
+    "tags": [
+      "verb",
+      "movement"
+    ],
+    "translation_en": "to go",
+    "translation_id": "pergi"
+  },
+  {
+    "id": "ja_kuru",
+    "language": "ja",
+    "text": "くる",
+    "kanji": "来る",
+    "hiragana": "くる",
+    "romanization": "kuru",
+    "pronunciation": [
+      "く↗る"
+    ],
+    "translation": "to come",
+    "pos": "verb",
+    "level": 1,
+    "examMappings": {
+      "jlpt": "N5"
+    },
+    "readings": {
+      "kun": [
+        "く-る",
+        "きた-る"
+      ],
+      "on": [
+        "ライ"
+      ]
+    },
+    "meanings": [
+      "come",
+      "arrive"
+    ],
+    "examples": [
+      {
+        "text": "友達が来ます。",
+        "romanization": "Tomodachi ga kimasu.",
+        "translation": "My friend comes.",
+        "translation_en": "My friend comes.",
+        "translation_id": "Teman saya datang."
+      }
+    ],
+    "frequency": 5,
+    "tags": [
+      "verb",
+      "movement"
+    ],
+    "translation_en": "to come",
+    "translation_id": "datang"
+  },
+  {
+    "id": "ja_chichi",
+    "language": "ja",
+    "text": "ちち",
+    "kanji": "父",
+    "hiragana": "ちち",
+    "romanization": "chichi",
+    "pronunciation": [
+      "ち↗ち"
+    ],
+    "translation": "father (my)",
+    "pos": "noun",
+    "level": 1,
+    "examMappings": {
+      "jlpt": "N5"
+    },
+    "readings": {
+      "kun": [
+        "ちち"
+      ],
+      "on": [
+        "フ"
+      ]
+    },
+    "meanings": [
+      "father"
+    ],
+    "examples": [
+      {
+        "text": "父は会社員です。",
+        "romanization": "Chichi wa kaishain desu.",
+        "translation": "My father is a company employee.",
+        "translation_en": "My father is a company employee.",
+        "translation_id": "Ayah saya bekerja di perusahaan."
+      }
+    ],
+    "frequency": 5,
+    "tags": [
+      "family",
+      "noun"
+    ],
+    "translation_en": "father (my)",
+    "translation_id": "ayah (ayah saya)"
+  },
+  {
+    "id": "ja_haha",
+    "language": "ja",
+    "text": "はは",
+    "kanji": "母",
+    "hiragana": "はは",
+    "romanization": "haha",
+    "pronunciation": [
+      "は↗は"
+    ],
+    "translation": "mother (my)",
+    "pos": "noun",
+    "level": 1,
+    "examMappings": {
+      "jlpt": "N5"
+    },
+    "readings": {
+      "kun": [
+        "はは"
+      ],
+      "on": [
+        "ボ"
+      ]
+    },
+    "meanings": [
+      "mother"
+    ],
+    "examples": [
+      {
+        "text": "母は料理が上手です。",
+        "romanization": "Haha wa ryouri ga jouzu desu.",
+        "translation": "My mother is good at cooking.",
+        "translation_en": "My mother is good at cooking.",
+        "translation_id": "Ibu saya pandai memasak."
+      }
+    ],
+    "frequency": 5,
+    "tags": [
+      "family",
+      "noun"
+    ],
+    "translation_en": "mother (my)",
+    "translation_id": "ibu (ibu saya)"
+  },
+  {
+    "id": "ja_ichi",
+    "language": "ja",
+    "text": "いち",
+    "kanji": "一",
+    "hiragana": "いち",
+    "romanization": "ichi",
+    "pronunciation": [
+      "い↗ち"
+    ],
+    "translation": "one",
+    "pos": "numeral",
+    "level": 1,
+    "examMappings": {
+      "jlpt": "N5"
+    },
+    "readings": {
+      "kun": [
+        "ひと-つ"
+      ],
+      "on": [
+        "イチ",
+        "イツ"
+      ]
+    },
+    "meanings": [
+      "one",
+      "1"
+    ],
+    "examples": [
+      {
+        "text": "一つください。",
+        "romanization": "Hitotsu kudasai.",
+        "translation": "One, please.",
+        "translation_en": "One, please.",
+        "translation_id": "Tolong satu."
+      }
+    ],
+    "frequency": 5,
+    "tags": [
+      "numbers",
+      "kanji"
+    ],
+    "translation_en": "one",
+    "translation_id": "satu"
+  },
+  {
+    "id": "ja_ni",
+    "language": "ja",
+    "text": "に",
+    "kanji": "二",
+    "hiragana": "に",
+    "romanization": "ni",
+    "pronunciation": [
+      "に↗"
+    ],
+    "translation": "two",
+    "pos": "numeral",
+    "level": 1,
+    "examMappings": {
+      "jlpt": "N5"
+    },
+    "readings": {
+      "kun": [
+        "ふた-つ"
+      ],
+      "on": [
+        "ニ"
+      ]
+    },
+    "meanings": [
+      "two",
+      "2"
+    ],
+    "examples": [
+      {
+        "text": "二人います。",
+        "romanization": "Futari imasu.",
+        "translation": "There are two people.",
+        "translation_en": "There are two people.",
+        "translation_id": "Ada dua orang."
+      }
+    ],
+    "frequency": 5,
+    "tags": [
+      "numbers",
+      "kanji"
+    ],
+    "translation_en": "two",
+    "translation_id": "dua"
+  },
+  {
+    "id": "ja_san",
+    "language": "ja",
+    "text": "さん",
+    "kanji": "三",
+    "hiragana": "さん",
+    "romanization": "san",
+    "pronunciation": [
+      "さ↗ん"
+    ],
+    "translation": "three",
+    "pos": "numeral",
+    "level": 1,
+    "examMappings": {
+      "jlpt": "N5"
+    },
+    "readings": {
+      "kun": [
+        "み-つ"
+      ],
+      "on": [
+        "サン"
+      ]
+    },
+    "meanings": [
+      "three",
+      "3"
+    ],
+    "examples": [
+      {
+        "text": "三時です。",
+        "romanization": "San-ji desu.",
+        "translation": "It's 3 o'clock.",
+        "translation_en": "It's 3 o'clock.",
+        "translation_id": "Sekarang pukul tiga."
+      }
+    ],
+    "frequency": 5,
+    "tags": [
+      "numbers",
+      "kanji"
+    ],
+    "translation_en": "three",
+    "translation_id": "tiga"
+  },
+  {
+    "id": "ja_hon",
+    "language": "ja",
+    "text": "ほん",
+    "kanji": "本",
+    "hiragana": "ほん",
+    "romanization": "hon",
+    "pronunciation": [
+      "ほ↗ん"
+    ],
+    "translation": "book",
+    "pos": "noun",
+    "level": 1,
+    "examMappings": {
+      "jlpt": "N5"
+    },
+    "readings": {
+      "kun": [
+        "もと"
+      ],
+      "on": [
+        "ホン"
+      ]
+    },
+    "meanings": [
+      "book"
+    ],
+    "examples": [
+      {
+        "text": "本を読みます。",
+        "romanization": "Hon wo yomimasu.",
+        "translation": "I read a book.",
+        "translation_en": "I read a book.",
+        "translation_id": "Saya membaca buku."
+      }
+    ],
+    "frequency": 5,
+    "tags": [
+      "noun",
+      "objects"
+    ],
+    "translation_en": "book",
+    "translation_id": "buku"
+  },
+  {
+    "id": "ja_mizu",
+    "language": "ja",
+    "text": "みず",
+    "kanji": "水",
+    "hiragana": "みず",
+    "romanization": "mizu",
+    "pronunciation": [
+      "み↗ず"
+    ],
+    "translation": "water",
+    "pos": "noun",
+    "level": 1,
+    "examMappings": {
+      "jlpt": "N5"
+    },
+    "readings": {
+      "kun": [
+        "みず"
+      ],
+      "on": [
+        "スイ"
+      ]
+    },
+    "meanings": [
+      "water"
+    ],
+    "examples": [
+      {
+        "text": "水が飲みたいです。",
+        "romanization": "Mizu ga nomitai desu.",
+        "translation": "I want to drink water.",
+        "translation_en": "I want to drink water.",
+        "translation_id": "Saya ingin minum air."
+      }
+    ],
+    "frequency": 5,
+    "tags": [
+      "noun",
+      "drinks"
+    ],
+    "translation_en": "water",
+    "translation_id": "air"
+  },
+  {
+    "id": "ja_gakkou",
+    "language": "ja",
+    "text": "がっこう",
+    "kanji": "学校",
+    "hiragana": "がっこう",
+    "romanization": "gakkou",
+    "pronunciation": [
+      "が↗っこう"
+    ],
+    "translation": "school",
+    "pos": "noun",
+    "level": 1,
+    "examMappings": {
+      "jlpt": "N5"
+    },
+    "readings": {
+      "kun": [
+        "まな-ぶ"
+      ],
+      "on": [
+        "ガク",
+        "コウ"
+      ]
+    },
+    "meanings": [
+      "school"
+    ],
+    "examples": [
+      {
+        "text": "学校に行きます。",
+        "romanization": "Gakkou ni ikimasu.",
+        "translation": "I go to school.",
+        "translation_en": "I go to school.",
+        "translation_id": "Saya pergi ke sekolah."
+      }
+    ],
+    "frequency": 5,
+    "tags": [
+      "noun",
+      "places"
+    ],
+    "translation_en": "school",
+    "translation_id": "sekolah"
+  },
+  {
+    "id": "ja_sensei",
+    "language": "ja",
+    "text": "せんせい",
+    "kanji": "先生",
+    "hiragana": "せんせい",
+    "romanization": "sensei",
+    "pronunciation": [
+      "せ↗んせい"
+    ],
+    "translation": "teacher",
+    "pos": "noun",
+    "level": 1,
+    "examMappings": {
+      "jlpt": "N5"
+    },
+    "readings": {
+      "kun": [
+        "さき",
+        "い-きる"
+      ],
+      "on": [
+        "セン",
+        "セイ"
+      ]
+    },
+    "meanings": [
+      "teacher",
+      "master"
+    ],
+    "examples": [
+      {
+        "text": "先生に質問します。",
+        "romanization": "Sensei ni shitsumon shimasu.",
+        "translation": "I ask the teacher a question.",
+        "translation_en": "I ask the teacher a question.",
+        "translation_id": "Saya bertanya kepada guru."
+      }
+    ],
+    "frequency": 5,
+    "tags": [
+      "noun",
+      "people"
+    ],
+    "translation_en": "teacher",
+    "translation_id": "guru"
+  },
+  {
+    "id": "ja_nani",
+    "language": "ja",
+    "text": "なに",
+    "kanji": "何",
+    "hiragana": "なに",
+    "romanization": "nani",
+    "pronunciation": [
+      "な↗に"
+    ],
+    "translation": "what",
+    "pos": "pronoun",
+    "level": 1,
+    "examMappings": {
+      "jlpt": "N5"
+    },
+    "readings": {
+      "kun": [
+        "なに",
+        "なん"
+      ],
+      "on": [
+        "カ"
+      ]
+    },
+    "meanings": [
+      "what",
+      "which"
+    ],
+    "examples": [
+      {
+        "text": "これは何ですか？",
+        "romanization": "Kore wa nan desu ka?",
+        "translation": "What is this?",
+        "translation_en": "What is this?",
+        "translation_id": "Apa ini?"
+      }
+    ],
+    "frequency": 5,
+    "tags": [
+      "pronoun",
+      "question"
+    ],
+    "translation_en": "what",
+    "translation_id": "apa"
+  },
+  {
+    "id": "ja_doko",
+    "language": "ja",
+    "text": "どこ",
+    "hiragana": "どこ",
+    "romanization": "doko",
+    "pronunciation": [
+      "ど↗こ"
+    ],
+    "translation": "where",
+    "pos": "pronoun",
+    "level": 1,
+    "examMappings": {
+      "jlpt": "N5"
+    },
+    "meanings": [
+      "where",
+      "which place"
+    ],
+    "examples": [
+      {
+        "text": "トイレはどこですか？",
+        "romanization": "Toire wa doko desu ka?",
+        "translation": "Where is the toilet?",
+        "translation_en": "Where is the toilet?",
+        "translation_id": "Di mana toilet?"
+      }
+    ],
+    "frequency": 5,
+    "tags": [
+      "pronoun",
+      "question"
+    ],
+    "translation_en": "where",
+    "translation_id": "di mana"
+  },
+  {
+    "id": "ja_ima",
+    "language": "ja",
+    "text": "いま",
+    "kanji": "今",
+    "hiragana": "いま",
+    "romanization": "ima",
+    "pronunciation": [
+      "い↗ま"
+    ],
+    "translation": "now",
+    "pos": "noun",
+    "level": 1,
+    "examMappings": {
+      "jlpt": "N5"
+    },
+    "readings": {
+      "kun": [
+        "いま"
+      ],
+      "on": [
+        "コン",
+        "キン"
+      ]
+    },
+    "meanings": [
+      "now",
+      "present"
+    ],
+    "examples": [
+      {
+        "text": "今、忙しいです。",
+        "romanization": "Ima, isogashii desu.",
+        "translation": "I'm busy now.",
+        "translation_en": "I'm busy now.",
+        "translation_id": "Sekarang saya sibuk."
+      }
+    ],
+    "frequency": 5,
+    "tags": [
+      "time",
+      "adverb"
+    ],
+    "translation_en": "now",
+    "translation_id": "sekarang",
+    "imagePrompt": "simple flat illustration of now: a wall clock with a hand pointing at the current time and an hourglass beside it, concept of the present moment, white background, no text, minimal style"
+  }
+]
