@@ -23,6 +23,7 @@ huanyu-academy/
 ├── .github/workflows/  # ci.yml · media-generate.yml · eas-build.yml
 ├── docker-compose.yml  # full dev stack lokal (postgres + redis + api)
 ├── SETUP.md            # Panduan setup lengkap
+├── DEPLOYMENT.md       # Panduan deploy produksi (VPS + Vercel + R2)
 ├── AGENTS.md           # Catatan arsitektur untuk AI coding agents
 ├── pnpm-workspace.yaml
 └── turbo.json
@@ -75,6 +76,7 @@ Kenapa bentuknya begini (ramah free-tier):
 ## Dokumentasi
 
 - **[SETUP.md](./SETUP.md)** — panduan setup lengkap dev & production
+- **[DEPLOYMENT.md](./DEPLOYMENT.md)** — langkah deploy produksi (R2 public + backend VPS + web Vercel)
 - **[AGENTS.md](./AGENTS.md)** — catatan arsitektur & konvensi untuk AI coding agents
 - **[apps/backend/README.md](./apps/backend/README.md)** — detail API, env, resource budget VPS
 - **[apps/media/README.md](./apps/media/README.md)** — pipeline konten & asset generation

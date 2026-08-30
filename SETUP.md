@@ -7,6 +7,7 @@ Instruksi setup lengkap untuk environment development dan production.
 - [Prasyarat](#prasyarat)
 - [Setup Development](#setup-development)
 - [Setup Production](#setup-production)
+- [Deployment Production → DEPLOYMENT.md](./DEPLOYMENT.md)
 - [Environment Variables](#environment-variables)
 - [Database Setup](#database-setup)
 - [Storage Setup](#storage-setup)
@@ -401,6 +402,7 @@ cd apps/backend && go vet ./cmd/... ./internal/... ./pkg/... && go build ./cmd/s
 ## Next Steps
 
 - [README.md](./README.md) — overview & quick start
+- [DEPLOYMENT.md](./DEPLOYMENT.md) — panduan deploy produksi lengkap
 - [AGENTS.md](./AGENTS.md) — catatan arsitektur & konvensi (wajib baca agent AI)
 - [CONTRIBUTING.md](./CONTRIBUTING.md) — guidelines kontribusi konten
 - [apps/backend/README.md](./apps/backend/README.md) ·
