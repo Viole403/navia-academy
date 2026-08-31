@@ -43,7 +43,7 @@ export default function LearnTab() {
       const levels = new Map<string, number>();
       for (const w of all) {
         const lv = w.examMappings?.[examType];
-        if (lv === undefined || lv === false) continue;
+        if (lv === undefined) continue;
         const key = String(lv).toUpperCase();
         levels.set(key, (levels.get(key) ?? 0) + 1);
       }

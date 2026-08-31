@@ -112,6 +112,14 @@ export const exam = {
     unwrapDirect<ExamSession>(apiClient.put("/exam/sessions?action=abandon", { session_id })),
 };
 
+// ─── Games ─────────────────────────────────────────────────────────────────
+export const game = {
+  addGameResult: (game_id: string, accuracy: number, score: number) =>
+    unwrapDirect<{ ok: boolean }>(
+      apiClient.post("/games", { game_id, accuracy, score }).then((r) => ({ data: r.data.data })),
+    ),
+};
+
 // ─── Settings ──────────────────────────────────────────────────────────────
 export const settings = {
   get: () => unwrapDirect<UserSettings>(apiClient.get("/settings")),

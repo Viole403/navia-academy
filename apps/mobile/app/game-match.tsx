@@ -14,7 +14,7 @@ import { EmptyState } from "@/components/ui/EmptyState";
 import { Motif } from "@/components/ui/Motif";
 import { useTheme } from "@/theme/ThemeProvider";
 import { fonts, type } from "@/theme/typography";
-import { progress } from "@/api/endpoints";
+import { progress, game } from "@/api/endpoints";
 import { loadVocabulary } from "@/lib/content-data";
 import { logStudyWithQueue } from "@/utils/offlineQueue";
 import type { VocabWord } from "@/types/api";
@@ -51,9 +51,9 @@ export default function GameMatch() {
   const submitM = useMutation({
     mutationFn: async () => {
       if (!page.data) return;
-      const total = page.data.data.length * 2;
+      const total = page.data.length * 2;
       const accuracy = total === 0 ? 0 : matches / (total / 2);
-      await progress.addGameResult("match-hanzi", accuracy, matches * 10);
+      await game.addGameResult("match-hanzi", accuracy, matches * 10);
       const durMin = startTs ? Math.max(1, Math.round((Date.now() - startTs) / 60000)) : 1;
       await logStudyWithQueue(durMin, matches * 10);
     },
@@ -64,7 +64,7 @@ export default function GameMatch() {
 
   const start = () => {
     if (!page.data) return;
-    const pool = page.data.data;
+    const pool = page.data;
     const list: Card[] = [];
     pool.forEach((w) => {
       list.push({ id: `${w.id}-h`, label: w.hanzi, type: "hanzi", wordId: w.id, matched: false });
@@ -166,7 +166,7 @@ export default function GameMatch() {
               <Text
                 style={[type.bodySm, { color: theme.textMuted, textAlign: "center" }]}
               >
-                Pair each character with its meaning. {page.data.data.length} cards.
+                Pair each character with its meaning. {page.data?.length ?? 0} cards.
               </Text>
             </View>
             <Button title="Start" onPress={start} size="lg" />

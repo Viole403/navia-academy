@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import { Audio } from "expo-av";
-import * as FileSystem from "expo-file-system";
+import { File, Directory, Paths } from "expo-file-system";
 import { tts } from "@/api/endpoints";
 import { resolveMediaUrl } from "@/utils/env";
 import audioManifest from "@/data/audio/audio-manifest.json";
@@ -8,7 +8,6 @@ import { detectLocale, localeForExam, type VoiceGender, type VoiceLocale } from 
 
 const CDN_PUBLIC_URL = process.env.EXPO_PUBLIC_AUDIO_CDN_URL ?? "";
 const AUDIO_EXT = ".mp3";
-const CACHE_DIR = FileSystem.documentDirectory + "audio-cache/";
 const MAX_CACHE_SIZE = 50 * 1024 * 1024; // 50 MB
 
 interface ManifestEntry {
@@ -43,41 +42,46 @@ function resolveCanonicalKey(key: string): string {
   return key;
 }
 
+function cacheDir(): Directory {
+  return new Directory(Paths.document, "audio-cache");
+}
+
+function cacheFile(key: string, locale: VoiceLocale, gender: VoiceGender): File {
+  return new File(cacheDir(), `${key}__${locale}__${gender}${AUDIO_EXT}`);
+}
+
 function cdnAudioUrl(key: string, locale: VoiceLocale, gender: VoiceGender): string {
   const base = CDN_PUBLIC_URL.replace(/\/+$/, "");
   return `${base}/audio/${key}__${locale}__${gender}${AUDIO_EXT}`;
 }
 
-function cacheFilePath(key: string, locale: VoiceLocale, gender: VoiceGender): string {
-  return CACHE_DIR + `${key}__${locale}__${gender}${AUDIO_EXT}`;
-}
-
 async function ensureCacheDir(): Promise<void> {
-  const info = await FileSystem.getInfoAsync(CACHE_DIR);
-  if (!info.exists) {
-    await FileSystem.makeDirectoryAsync(CACHE_DIR, { intermediates: true });
+  const dir = cacheDir();
+  if (!dir.exists) {
+    dir.create({ intermediates: true });
   }
 }
 
 async function evictCacheIfNeeded(): Promise<void> {
   try {
-    const dir = await FileSystem.readDirectoryAsync(CACHE_DIR);
-    if (dir.length === 0) return;
+    const dir = cacheDir();
+    if (!dir.exists) return;
+    const items = dir.list();
+    if (items.length === 0) return;
     let totalSize = 0;
-    const files: { name: string; size: number; uri: string }[] = [];
-    for (const name of dir) {
-      const info = await FileSystem.getInfoAsync(CACHE_DIR + name);
-      if (info.exists && "size" in info) {
-        totalSize += info.size as number;
-        files.push({ name, size: info.size as number, uri: CACHE_DIR + name });
+    const files: { file: File; size: number }[] = [];
+    for (const item of items) {
+      if (item instanceof File) {
+        totalSize += item.size;
+        files.push({ file: item, size: item.size });
       }
     }
     if (totalSize <= MAX_CACHE_SIZE) return;
     files.sort((a, b) => a.size - b.size);
     let freed = 0;
-    for (const file of files) {
+    for (const { file } of files) {
       if (totalSize - freed <= MAX_CACHE_SIZE * 0.8) break;
-      await FileSystem.deleteAsync(file.uri, { idempotent: true });
+      file.delete();
       freed += file.size;
     }
   } catch {
@@ -127,11 +131,10 @@ export function useTts() {
       const isManifestBacked = manifestText !== undefined;
 
       // Step 1: local file cache
-      const localPath = cacheFilePath(canonicalKey, locale, genderKey);
-      const localInfo = await FileSystem.getInfoAsync(localPath);
-      if (localInfo.exists) {
+      const localFile = cacheFile(canonicalKey, locale, genderKey);
+      if (localFile.exists) {
         const { sound } = await Audio.Sound.createAsync(
-          { uri: localPath },
+          { uri: localFile.uri },
           { shouldPlay: true },
         );
         soundRef.current = sound;
@@ -162,10 +165,8 @@ export function useTts() {
           setPlaying(true);
           // Cache the file locally for offline use
           try {
-            const downloadRes = await FileSystem.downloadAsync(cdnUrl, localPath);
-            if (downloadRes.status === 200) {
-              await evictCacheIfNeeded();
-            }
+            await File.downloadFileAsync(cdnUrl, localFile, { idempotent: true });
+            await evictCacheIfNeeded();
           } catch {
             // caching is best-effort, don't block playback
           }

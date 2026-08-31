@@ -46,7 +46,7 @@ export default function ExamTab() {
 
   const active = activeQ.data ?? [];
   const progressList = progressQ.data ?? [];
-  const history = historyQ.data?.data ?? [];
+  const history = historyQ.data ?? [];
 
   return (
     <SafeAreaView style={{ flex: 1, backgroundColor: theme.bg }} edges={["top"]}>

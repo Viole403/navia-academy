@@ -3,7 +3,6 @@
   "compilerOptions": {
     "strict": true,
     "skipLibCheck": true,
-    "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"],
       "react": ["./node_modules/@types/react/index.d.ts"],
@@ -16,5 +15,6 @@
     ".expo/types/**/*.ts",
     "expo-env.d.ts",
     "nativewind-env.d.ts"
-  ]
+  ],
+  "exclude": ["node_modules", "scripts"]
 }

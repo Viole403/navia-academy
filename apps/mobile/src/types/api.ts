@@ -15,14 +15,17 @@ export interface SupabaseUserMetadata {
 
 export interface SupabaseUser {
   id: string;
+  name: string;
   email: string | null;
+  email_verified: boolean;
+  image?: string | null;
+  role: string;
   aud?: string;
-  role?: string;
   email_confirmed_at?: string | null;
   user_metadata: SupabaseUserMetadata;
   app_metadata: Record<string, unknown>;
-  created_at?: string;
-  updated_at?: string;
+  created_at: string;
+  updated_at: string;
 }
 
 export interface SupabaseSession {
