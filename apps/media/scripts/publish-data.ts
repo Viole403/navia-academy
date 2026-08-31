@@ -1,5 +1,3 @@
-import { readFile } from "node:fs/promises"
-import { join } from "node:path"
 import { loadMediaConfig, storageConfigured } from "../src/lib/config"
 import { createStorageClient, uploadBuffer } from "../src/lib/storage"
 import {

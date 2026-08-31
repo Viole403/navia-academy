@@ -14,7 +14,6 @@
  */
 import { readFile, writeFile, mkdir, stat } from "node:fs/promises"
 import { dirname, join, relative } from "node:path"
-import { createHash } from "node:crypto"
 import { collectVocabItems, type VocabEntry } from "../src/lib/runner-image"
 import { OUTPUT_IMAGE_DIR } from "../src/lib/manifest"
 
@@ -48,9 +47,6 @@ interface Row {
 
 const RECORDS_PATH = join(OUTPUT_IMAGE_DIR, ".generate-image-records.json")
 const LANG_ORDER = ["zh", "de", "en", "ja"] as const
-
-const contentHash = (t: string) =>
-  createHash("md5").update(t.toLowerCase().trim()).digest("hex").slice(0, 12)
 
 function parseFlags(): { out?: string; validation?: string } {
   const outIdx = process.argv.indexOf("--out")
