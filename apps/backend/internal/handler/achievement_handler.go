@@ -2,6 +2,7 @@ package handler
 
 import (
 	"github.com/gofiber/fiber/v2"
+	"github.com/navia-academy/backend/internal/models"
 	"github.com/navia-academy/backend/internal/service"
 	"github.com/navia-academy/backend/pkg/response"
 )
@@ -26,7 +27,9 @@ func NewAchievementHandler(achievementService *service.AchievementService) *Achi
 func (h *AchievementHandler) GetAchievements(c *fiber.Ctx) error {
 	userID := c.Locals("user_id").(string)
 
-	achievements, err := h.achievementService.GetAchievements(c.Context(), userID)
+	var achievements []models.Achievement
+	var err error
+	achievements, err = h.achievementService.GetAchievements(c.Context(), userID)
 	if err != nil {
 		return response.Error(c, fiber.StatusInternalServerError, "FETCH_FAILED", err.Error())
 	}
