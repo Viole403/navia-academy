@@ -1,7 +1,15 @@
-"use client";
+"use client"
 
-import { createContext, useContext, useMemo, useCallback, useEffect, useState, type ReactNode } from "react";
-import { useRouter } from "next/navigation";
+import {
+  createContext,
+  useContext,
+  useMemo,
+  useCallback,
+  useEffect,
+  useState,
+  type ReactNode,
+} from "react"
+import { useRouter } from "next/navigation"
 import {
   getStoredSession,
   signIn as doSignIn,
@@ -11,54 +19,54 @@ import {
   subscribeAuth,
   refreshSession,
   type AuthSession,
-} from "@/lib/auth-client";
+} from "@/lib/auth-client"
 
 export interface AppUser {
-  uid: string;
-  email: string;
-  displayName: string;
-  emailVerified: boolean;
-  provider: "password" | "google" | "local";
-  role: "student" | "contributor" | "reviewer" | "admin";
+  uid: string
+  email: string
+  displayName: string
+  emailVerified: boolean
+  provider: "password" | "google" | "local"
+  role: "student" | "contributor" | "reviewer" | "admin"
 }
 
 interface AuthContextValue {
-  user: AppUser | null;
-  loading: boolean;
-  signUp: (name: string, email: string, password: string) => Promise<void>;
-  signIn: (email: string, password: string) => Promise<AppUser | null>;
-  signInWithGoogle: () => Promise<void>;
-  signOut: () => Promise<void>;
-  resetPassword: (email: string) => Promise<void>;
-  changePassword: () => Promise<void>;
+  user: AppUser | null
+  loading: boolean
+  signUp: (name: string, email: string, password: string) => Promise<void>
+  signIn: (email: string, password: string) => Promise<AppUser | null>
+  signInWithGoogle: () => Promise<void>
+  signOut: () => Promise<void>
+  resetPassword: (email: string) => Promise<void>
+  changePassword: () => Promise<void>
   /** contributor/reviewer/admin → true (can write content). */
-  isContributor: boolean;
+  isContributor: boolean
   /** reviewer/admin → true (can review/publish content). */
-  isReviewer: boolean;
+  isReviewer: boolean
 }
 
-const AuthContext = createContext<AuthContextValue | null>(null);
+const AuthContext = createContext<AuthContextValue | null>(null)
 
-const EDITOR_ROLES = new Set(["contributor", "reviewer", "admin"]);
+const EDITOR_ROLES = new Set(["contributor", "reviewer", "admin"])
 
-export type AppRole = AppUser["role"];
+export type AppRole = AppUser["role"]
 
 /** Post-auth home per role: student → learner dash, staff → their workspace. */
 export function roleHomePath(role: AppRole): string {
   switch (role) {
     case "admin":
-      return "/dashboard/admin";
+      return "/dashboard/admin"
     case "contributor":
     case "reviewer":
-      return "/dashboard/contributor";
+      return "/dashboard/contributor"
     default:
-      return "/dashboard";
+      return "/dashboard"
   }
 }
 
 function toAppUser(session: AuthSession | null): AppUser | null {
-  if (!session?.user) return null;
-  const u = session.user;
+  if (!session?.user) return null
+  const u = session.user
   return {
     uid: u.uid,
     email: u.email ?? "",
@@ -66,57 +74,62 @@ function toAppUser(session: AuthSession | null): AppUser | null {
     emailVerified: !!u.emailVerified,
     provider: "password",
     role: (u.role as AppUser["role"]) || "student",
-  };
+  }
 }
 
 export function AuthProvider({ children }: { children: ReactNode }) {
-  const router = useRouter();
+  const router = useRouter()
   const [session, setSession] = useState<AuthSession | null>(() => {
-    if (typeof window === "undefined") return null;
-    return getStoredSession();
-  });
-  const [loading, setLoading] = useState(true);
+    if (typeof window === "undefined") return null
+    return getStoredSession()
+  })
+  const [loading, setLoading] = useState(true)
 
   useEffect(() => {
-    const unsub = subscribeAuth(() => setSession(getStoredSession()));
+    const unsub = subscribeAuth(() => setSession(getStoredSession()))
     // Validate / refresh the stored session on first load.
-    (async () => {
+    ;(async () => {
       if (getStoredSession()) {
-        const refreshed = await refreshSession();
-        setSession(refreshed ?? getStoredSession());
+        const refreshed = await refreshSession()
+        setSession(refreshed ?? getStoredSession())
       }
-      setLoading(false);
-    })();
-    return unsub;
-  }, []);
+      setLoading(false)
+    })()
+    return unsub
+  }, [])
 
-  const user = useMemo(() => toAppUser(session), [session]);
+  const user = useMemo(() => toAppUser(session), [session])
 
-  const signUp = useCallback(async (name: string, email: string, password: string) => {
-    await doSignUp(name, email, password);
-  }, []);
+  const signUp = useCallback(
+    async (name: string, email: string, password: string) => {
+      await doSignUp(name, email, password)
+    },
+    []
+  )
 
   const signIn = useCallback(async (email: string, password: string) => {
-    await doSignIn(email, password);
-    return toAppUser(getStoredSession());
-  }, []);
+    await doSignIn(email, password)
+    return toAppUser(getStoredSession())
+  }, [])
 
   const signInWithGoogle = useCallback(async () => {
-    await doSignInWithGoogle();
-  }, []);
+    await doSignInWithGoogle()
+  }, [])
 
   const signOut = useCallback(async () => {
-    await doSignOut();
-    router.push("/");
-  }, [router]);
+    await doSignOut()
+    router.push("/")
+  }, [router])
 
   const resetPassword = useCallback(async (email: string) => {
-    await requestPasswordReset(email);
-  }, []);
+    await requestPasswordReset(email)
+  }, [])
 
   const changePassword = useCallback(async () => {
-    throw new Error("Password change requires your current password. Use the form in Settings.");
-  }, []);
+    throw new Error(
+      "Password change requires your current password. Use the form in Settings."
+    )
+  }, [])
 
   const value = useMemo(
     () => ({
@@ -131,19 +144,28 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       isContributor: !!user && EDITOR_ROLES.has(user.role),
       isReviewer: !!user && (user.role === "reviewer" || user.role === "admin"),
     }),
-    [user, loading, signUp, signIn, signInWithGoogle, signOut, resetPassword, changePassword]
-  );
+    [
+      user,
+      loading,
+      signUp,
+      signIn,
+      signInWithGoogle,
+      signOut,
+      resetPassword,
+      changePassword,
+    ]
+  )
 
-  return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;
+  return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>
 }
 
 async function doSignInWithGoogle(): Promise<void> {
-  const { signInWithGoogle } = await import("@/lib/auth-client");
-  await signInWithGoogle();
+  const { signInWithGoogle } = await import("@/lib/auth-client")
+  await signInWithGoogle()
 }
 
 export function useAuth(): AuthContextValue {
-  const ctx = useContext(AuthContext);
-  if (!ctx) throw new Error("useAuth must be used within AuthProvider");
-  return ctx;
+  const ctx = useContext(AuthContext)
+  if (!ctx) throw new Error("useAuth must be used within AuthProvider")
+  return ctx
 }

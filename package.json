@@ -10,6 +10,7 @@
     "lint": "turbo lint",
     "clean": "turbo clean",
     "format": "prettier --write \"**/*.{ts,tsx,js,json,md}\"",
+    "format:check": "prettier --check \"**/*.{ts,tsx,js,json,md}\"",
     "data:generate-manifest": "pnpm --filter @navia/media generate-manifest",
     "data:generate-audio": "pnpm --filter @navia/media generate-audio",
     "data:generate-images": "pnpm --filter @navia/media generate-images",

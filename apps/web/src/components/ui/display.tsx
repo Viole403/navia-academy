@@ -1,9 +1,13 @@
-"use client";
+"use client"
 
-import type { ReactNode } from "react";
-import { cn, toneClassForSyllable, toneClassForZhuyinSyllable } from "@/lib/utils";
-import { showsPinyin, showsZhuyin, useSettings } from "@/stores/settings";
-import type { DisplayModeMode } from "@/types";
+import type { ReactNode } from "react"
+import {
+  cn,
+  toneClassForSyllable,
+  toneClassForZhuyinSyllable,
+} from "@/lib/utils"
+import { showsPinyin, showsZhuyin, useSettings } from "@/stores/settings"
+import type { DisplayModeMode } from "@/types"
 
 export function ProgressBar({
   value,
@@ -11,26 +15,29 @@ export function ProgressBar({
   className,
   label,
 }: {
-  value: number;
-  max?: number;
-  className?: string;
-  label?: string;
+  value: number
+  max?: number
+  className?: string
+  label?: string
 }) {
-  const pct = max > 0 ? Math.min(100, (value / max) * 100) : 0;
+  const pct = max > 0 ? Math.min(100, (value / max) * 100) : 0
   return (
     <div
       role="progressbar"
       aria-valuenow={Math.round(value)}
       aria-valuemax={max}
       aria-label={label}
-      className={cn("h-1.5 w-full rounded-full bg-sunken overflow-hidden", className)}
+      className={cn(
+        "h-1.5 w-full overflow-hidden rounded-full bg-sunken",
+        className
+      )}
     >
       <div
         className="h-full rounded-full bg-accent transition-[width] duration-500"
         style={{ width: `${pct}%` }}
       />
     </div>
-  );
+  )
 }
 
 export function SectionHeader({
@@ -38,21 +45,23 @@ export function SectionHeader({
   subtitle,
   action,
 }: {
-  title: string;
-  subtitle?: string;
-  action?: ReactNode;
+  title: string
+  subtitle?: string
+  action?: ReactNode
 }) {
   return (
-    <div className="flex items-end justify-between gap-4 mb-5">
+    <div className="mb-5 flex items-end justify-between gap-4">
       <div className="flex items-center gap-3">
         <div>
           <h1 className="font-display text-2xl font-bold text-ink">{title}</h1>
-          {subtitle && <p className="text-sm text-ink-faint mt-0.5">{subtitle}</p>}
+          {subtitle && (
+            <p className="mt-0.5 text-sm text-ink-faint">{subtitle}</p>
+          )}
         </div>
       </div>
       {action}
     </div>
-  );
+  )
 }
 
 /**
@@ -67,20 +76,20 @@ export function PinyinText({
   className,
   mode,
 }: {
-  pinyin: string;
-  zhuyin?: string;
-  className?: string;
-  mode?: DisplayModeMode;
+  pinyin: string
+  zhuyin?: string
+  className?: string
+  mode?: DisplayModeMode
 }) {
-  const storeMode = useSettings((s) => s.displayMode.mode);
-  const m = mode ?? storeMode;
-  const showPinyin = showsPinyin(m);
-  const showZhuyin = showsZhuyin(m) && Boolean(zhuyin);
-  
+  const storeMode = useSettings((s) => s.displayMode.mode)
+  const m = mode ?? storeMode
+  const showPinyin = showsPinyin(m)
+  const showZhuyin = showsZhuyin(m) && Boolean(zhuyin)
+
   // Guard: Return null if no reading aid to show OR if pinyin/zhuyin is missing
-  if (!showPinyin && !showZhuyin) return null;
-  if (showPinyin && !pinyin) return null;
-  if (showZhuyin && !zhuyin) return null;
+  if (!showPinyin && !showZhuyin) return null
+  if (showPinyin && !pinyin) return null
+  if (showZhuyin && !zhuyin) return null
 
   return (
     <span className={className}>
@@ -97,5 +106,5 @@ export function PinyinText({
           </span>
         ))}
     </span>
-  );
+  )
 }

@@ -1,13 +1,13 @@
-import { readFile } from "node:fs/promises";
-import { join } from "node:path";
-import type { AnkiSource } from "@/lib/anki";
+import { readFile } from "node:fs/promises"
+import { join } from "node:path"
+import type { AnkiSource } from "@/lib/anki"
 
-const SOURCES_PATH = join(process.cwd(), "data", "anki-sources.json");
+const SOURCES_PATH = join(process.cwd(), "data", "anki-sources.json")
 
 export async function GET() {
   try {
-    const raw = await readFile(SOURCES_PATH, "utf-8");
-    const sources = JSON.parse(raw) as AnkiSource[];
+    const raw = await readFile(SOURCES_PATH, "utf-8")
+    const sources = JSON.parse(raw) as AnkiSource[]
     return Response.json({
       configPath: "apps/media/data/anki-sources.json",
       sources: sources.map((s) => ({
@@ -18,8 +18,13 @@ export async function GET() {
         target: s.target ?? "?",
         fields: s.fields,
       })),
-    });
+    })
   } catch (err) {
-    return Response.json({ error: err instanceof Error ? err.message : "cannot read anki sources" }, { status: 500 });
+    return Response.json(
+      {
+        error: err instanceof Error ? err.message : "cannot read anki sources",
+      },
+      { status: 500 }
+    )
   }
 }

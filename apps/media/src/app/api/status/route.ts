@@ -1,9 +1,12 @@
-import { status } from "@/lib/pipeline";
+import { status } from "@/lib/pipeline"
 
 export async function GET() {
   try {
-    return Response.json(await status());
+    return Response.json(await status())
   } catch (err) {
-    return Response.json({ error: err instanceof Error ? err.message : "status failed" }, { status: 500 });
+    return Response.json(
+      { error: err instanceof Error ? err.message : "status failed" },
+      { status: 500 }
+    )
   }
 }

@@ -1,30 +1,30 @@
 /**
  * Runtime bridge layer for backward compatibility.
- * 
+ *
  * Automatically aliases old Chinese-specific field names to new generic names.
  * Enables zero-cost migration — existing data files work without changes.
- * 
+ *
  * Features:
  * - Auto-detect old vs new schema
  * - Bidirectional field mapping (hanzi ↔ text, pinyin ↔ romanization)
  * - Preserves both old and new fields during transition
  * - Type-safe transformations
- * 
+ *
  * Usage:
  * ```typescript
  * import { aliasVocabFields } from "@/lib/data-bridge";
- * 
+ *
  * const rawData = await fetchBundle("zh/vocabulary/index");
  * const vocabulary = rawData.map(aliasVocabFields);
  * // Works with both old and new schemas
  * ```
- * 
+ *
  * @see TYPE_GENERALIZATION_V2.md
  * @version 2.0
  * @date 2026-08-02
  */
 
-import type { VocabWord, VocabExample, GrammarPoint } from "@/types";
+import type { VocabWord, VocabExample, GrammarPoint } from "@/types"
 
 /* ========================= Schema Detection ========================= */
 
@@ -34,38 +34,31 @@ import type { VocabWord, VocabExample, GrammarPoint } from "@/types";
  * New schema has: text, romanization, level, language
  */
 export function isOldSchemaVocab(data: object): boolean {
-  return (
-    "hanzi" in data &&
-    !("text" in data) &&
-    !("language" in data)
-  );
+  return "hanzi" in data && !("text" in data) && !("language" in data)
 }
 
 /**
  * Check if example uses old schema
  */
 export function isOldSchemaExample(data: object): boolean {
-  return (
-    "hanzi" in data &&
-    !("text" in data)
-  );
+  return "hanzi" in data && !("text" in data)
 }
 
 /* ========================= Vocabulary Field Aliasing ========================= */
 
 /**
  * Transform vocabulary word to support both old and new schemas.
- * 
+ *
  * Strategy:
  * 1. Detect schema version (old vs new)
  * 2. Create unified object with both old and new field names
  * 3. Map values bidirectionally for compatibility
- * 
+ *
  * Result: Code can use either `.hanzi` or `.text` and both work.
  */
 export function aliasVocabFields(raw: Record<string, unknown>): VocabWord {
-  const isOld = isOldSchemaVocab(raw);
-  
+  const isOld = isOldSchemaVocab(raw)
+
   if (isOld) {
     // Old schema → Add new fields, keep old ones
     return {
@@ -77,7 +70,7 @@ export function aliasVocabFields(raw: Record<string, unknown>): VocabWord {
       romanization: raw.pinyin as string | undefined,
       pronunciation: raw.tones as number[] | undefined,
       level: raw.hsk as number,
-      
+
       // Keep old fields for backward compat
       hanzi: raw.hanzi as string | undefined,
       traditional: raw.traditional as string | undefined,
@@ -87,24 +80,28 @@ export function aliasVocabFields(raw: Record<string, unknown>): VocabWord {
 
       // Required gloss fields (schema)
       translation_id: (raw.translation_id as string) ?? "",
-      translation_en: (raw.translation_en as string) ?? (raw.translation as string) ?? "",
-    } as unknown as VocabWord;
+      translation_en:
+        (raw.translation_en as string) ?? (raw.translation as string) ?? "",
+    } as unknown as VocabWord
   } else {
     // New schema → Add old field aliases if missing
     return {
       ...raw,
       // Ensure language is set
       language: (raw.language as VocabWord["language"]) ?? "zh",
-      
+
       // Add old field aliases for backward compat
       hanzi: (raw.hanzi as string) ?? (raw.text as string),
       traditional: (raw.traditional as string) ?? (raw.textVariant as string),
       pinyin: (raw.pinyin as string) ?? (raw.romanization as string),
-      tones: (raw.tones as number[] | undefined) ?? (raw.pronunciation as number[] | undefined),
+      tones:
+        (raw.tones as number[] | undefined) ??
+        (raw.pronunciation as number[] | undefined),
       hsk: (raw.hsk as number | undefined) ?? (raw.level as number),
       translation_id: (raw.translation_id as string) ?? "",
-      translation_en: (raw.translation_en as string) ?? (raw.translation as string) ?? "",
-    } as unknown as VocabWord;
+      translation_en:
+        (raw.translation_en as string) ?? (raw.translation as string) ?? "",
+    } as unknown as VocabWord
   }
 }
 
@@ -112,7 +109,7 @@ export function aliasVocabFields(raw: Record<string, unknown>): VocabWord {
  * Transform array of vocabulary words
  */
 export function aliasVocabArray(data: Record<string, unknown>[]): VocabWord[] {
-  return data.map(aliasVocabFields);
+  return data.map(aliasVocabFields)
 }
 
 /* ========================= Example Field Aliasing ========================= */
@@ -121,8 +118,8 @@ export function aliasVocabArray(data: Record<string, unknown>[]): VocabWord[] {
  * Transform example sentence to support both schemas
  */
 export function aliasExampleFields(raw: Record<string, unknown>): VocabExample {
-  const isOld = isOldSchemaExample(raw);
-  
+  const isOld = isOldSchemaExample(raw)
+
   if (isOld) {
     return {
       ...raw,
@@ -132,26 +129,31 @@ export function aliasExampleFields(raw: Record<string, unknown>): VocabExample {
       pinyin: raw.pinyin as string | undefined,
       translation: (raw.translation as string) ?? "",
       translation_id: (raw.translation_id as string) ?? "",
-      translation_en: (raw.translation_en as string) ?? (raw.translation as string) ?? "",
-    };
+      translation_en:
+        (raw.translation_en as string) ?? (raw.translation as string) ?? "",
+    }
   } else {
     return {
       ...raw,
       text: (raw.text as string) ?? "",
       translation: (raw.translation as string) ?? "",
       hanzi: (raw.hanzi as string | undefined) ?? (raw.text as string),
-      pinyin: (raw.pinyin as string | undefined) ?? (raw.romanization as string),
+      pinyin:
+        (raw.pinyin as string | undefined) ?? (raw.romanization as string),
       translation_id: (raw.translation_id as string) ?? "",
-      translation_en: (raw.translation_en as string) ?? (raw.translation as string) ?? "",
-    };
+      translation_en:
+        (raw.translation_en as string) ?? (raw.translation as string) ?? "",
+    }
   }
 }
 
 /**
  * Transform array of examples
  */
-export function aliasExampleArray(data: Record<string, unknown>[]): VocabExample[] {
-  return data.map(aliasExampleFields);
+export function aliasExampleArray(
+  data: Record<string, unknown>[]
+): VocabExample[] {
+  return data.map(aliasExampleFields)
 }
 
 /* ========================= Grammar Field Aliasing ========================= */
@@ -165,19 +167,21 @@ export function aliasGrammarFields(raw: Record<string, unknown>): GrammarPoint {
     language: (raw.language as string) ?? "zh",
     level: (raw.level as number | undefined) ?? (raw.hsk as number),
     hsk: (raw.hsk as number | undefined) ?? (raw.level as number),
-    
+
     // Transform examples if present
     examples: raw.examples
       ? aliasExampleArray(raw.examples as Record<string, unknown>[])
       : [],
-  } as unknown as GrammarPoint;
+  } as unknown as GrammarPoint
 }
 
 /**
  * Transform array of grammar points
  */
-export function aliasGrammarArray(data: Record<string, unknown>[]): GrammarPoint[] {
-  return data.map(aliasGrammarFields);
+export function aliasGrammarArray(
+  data: Record<string, unknown>[]
+): GrammarPoint[] {
+  return data.map(aliasGrammarFields)
 }
 
 /* ========================= Batch Processing ========================= */
@@ -188,24 +192,28 @@ export function aliasGrammarArray(data: Record<string, unknown>[]): GrammarPoint
 export function aliasBundleData(data: unknown): unknown {
   if (Array.isArray(data)) {
     // Detect data type from first item
-    if (data.length === 0) return data;
-    
-    const first = data[0];
-    if (first && typeof first === "object" && ("hanzi" in first || "text" in first)) {
+    if (data.length === 0) return data
+
+    const first = data[0]
+    if (
+      first &&
+      typeof first === "object" &&
+      ("hanzi" in first || "text" in first)
+    ) {
       // Vocabulary
-      return aliasVocabArray(data as Record<string, unknown>[]);
+      return aliasVocabArray(data as Record<string, unknown>[])
     }
     if (first && typeof first === "object" && "pattern" in first) {
       // Grammar
-      return aliasGrammarArray(data as Record<string, unknown>[]);
+      return aliasGrammarArray(data as Record<string, unknown>[])
     }
-    
+
     // Generic array (readings, characters, etc.)
-    return data;
+    return data
   }
-  
+
   // Object (curriculum bundle, etc.)
-  return data;
+  return data
 }
 
 /* ========================= Migration Helpers ========================= */
@@ -214,7 +222,9 @@ export function aliasBundleData(data: unknown): unknown {
  * Convert old Chinese word to new schema (one-way migration).
  * Use this when you want to permanently migrate data files.
  */
-export function migrateVocabToNewSchema(old: Record<string, unknown>): VocabWord {
+export function migrateVocabToNewSchema(
+  old: Record<string, unknown>
+): VocabWord {
   return {
     id: String(old.id ?? ""),
     language: "zh",
@@ -250,14 +260,16 @@ export function migrateVocabToNewSchema(old: Record<string, unknown>): VocabWord
     tags: (old.tags as string[]) || [],
     audio: old.audio as string | undefined,
     image: old.image as string | undefined,
-  } as VocabWord;
+  } as VocabWord
 }
 
 /**
  * Batch migrate vocabulary array to new schema
  */
-export function migrateVocabBatch(oldData: Record<string, unknown>[]): VocabWord[] {
-  return oldData.map(migrateVocabToNewSchema);
+export function migrateVocabBatch(
+  oldData: Record<string, unknown>[]
+): VocabWord[] {
+  return oldData.map(migrateVocabToNewSchema)
 }
 
 /* ========================= Validation ========================= */
@@ -266,32 +278,33 @@ export function migrateVocabBatch(oldData: Record<string, unknown>[]): VocabWord
  * Validate that a word has all required fields
  */
 export function validateVocabWord(word: VocabWord): string[] {
-  const errors: string[] = [];
-  
-  if (!word.id) errors.push("Missing id");
-  if (!word.language) errors.push("Missing language");
-  if (!word.text) errors.push("Missing text");
-  if (!word.translation) errors.push("Missing translation");
+  const errors: string[] = []
+
+  if (!word.id) errors.push("Missing id")
+  if (!word.language) errors.push("Missing language")
+  if (!word.text) errors.push("Missing text")
+  if (!word.translation) errors.push("Missing translation")
   if (!word.level || word.level < 1 || word.level > 7) {
-    errors.push("Invalid level (must be 1-7)");
+    errors.push("Invalid level (must be 1-7)")
   }
-  
+
   // Language-specific validation
   if (word.language === "zh") {
-    if (!word.romanization) errors.push("Chinese word missing romanization (pinyin)");
+    if (!word.romanization)
+      errors.push("Chinese word missing romanization (pinyin)")
     if (!word.tones || word.tones.length === 0) {
-      errors.push("Chinese word missing pronunciation (tones)");
+      errors.push("Chinese word missing pronunciation (tones)")
     }
   }
-  
-  return errors;
+
+  return errors
 }
 
 /**
  * Check if word is valid
  */
 export function isValidVocabWord(word: VocabWord): boolean {
-  return validateVocabWord(word).length === 0;
+  return validateVocabWord(word).length === 0
 }
 
 /* ========================= Type Utilities ========================= */
@@ -307,26 +320,26 @@ export function ensureNewSchemaFields(word: VocabWord): VocabWord {
     romanization: word.romanization || word.pinyin,
     level: word.level || word.hsk || 1,
     language: word.language || "zh",
-  };
+  }
 }
 
 /**
  * Get the "canonical" text representation (prefers new schema)
  */
 export function getCanonicalText(word: VocabWord): string {
-  return word.text || word.hanzi || "";
+  return word.text || word.hanzi || ""
 }
 
 /**
  * Get the "canonical" romanization (prefers new schema)
  */
 export function getCanonicalRomanization(word: VocabWord): string | undefined {
-  return word.romanization || word.pinyin;
+  return word.romanization || word.pinyin
 }
 
 /**
  * Get the "canonical" level (prefers new schema)
  */
 export function getCanonicalLevel(word: VocabWord): number {
-  return word.level || word.hsk || 1;
+  return word.level || word.hsk || 1
 }

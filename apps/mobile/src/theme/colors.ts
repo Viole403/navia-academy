@@ -1,43 +1,38 @@
 // ─── Theme shape (single source of truth for UI tokens) ───────────────────
 export interface Theme {
-  bg: string;
-  surface: string;
-  surfaceAlt: string;
-  border: string;
-  borderSoft: string;
-  text: string;
-  textMuted: string;
-  textDim: string;
-  accent: string;
-  accent2: string;
-  mint: string;
-  gold: string;
-  red: string;
-  white: string;
-  cardPressed: string;
-  green: string;
+  bg: string
+  surface: string
+  surfaceAlt: string
+  border: string
+  borderSoft: string
+  text: string
+  textMuted: string
+  textDim: string
+  accent: string
+  accent2: string
+  mint: string
+  gold: string
+  red: string
+  white: string
+  cardPressed: string
+  green: string
 }
 
 // ─── User-selectable options ───────────────────────────────────────────────
 export type ThemeId =
-  | "ink"
-  | "indigo"
-  | "sunset"
-  | "jade"
-  | "sakura"
-  | "materialYou";
+  "ink" | "indigo" | "sunset" | "jade" | "sakura" | "materialYou"
 
-export type ThemeMode = "system" | "light" | "dark" | "amoled";
-export type ResolvedMode = "light" | "dark" | "amoled";
+export type ThemeMode = "system" | "light" | "dark" | "amoled"
+export type ResolvedMode = "light" | "dark" | "amoled"
 
 export interface ThemeDefinition {
-  id: ThemeId;
-  name: string;
-  description: string;
-  dark: Theme;
-  light: Theme;
+  id: ThemeId
+  name: string
+  description: string
+  dark: Theme
+  light: Theme
   /** True if this theme is driven by the device's dynamic palette. */
-  dynamic?: boolean;
+  dynamic?: boolean
 }
 
 // ─── Hand-crafted base themes ──────────────────────────────────────────────
@@ -58,7 +53,7 @@ const INK_DARK: Theme = {
   white: "#FFFFFF",
   cardPressed: "#1A2433",
   green: "#34D399",
-};
+}
 
 const INK_LIGHT: Theme = {
   bg: "#FAFAFB",
@@ -77,7 +72,7 @@ const INK_LIGHT: Theme = {
   white: "#FFFFFF",
   cardPressed: "#E2E8F0",
   green: "#059669",
-};
+}
 
 const INDIGO_DARK: Theme = {
   bg: "#0A0E1F",
@@ -96,7 +91,7 @@ const INDIGO_DARK: Theme = {
   white: "#FFFFFF",
   cardPressed: "#1F2547",
   green: "#34D399",
-};
+}
 
 const INDIGO_LIGHT: Theme = {
   bg: "#F4F6FF",
@@ -115,7 +110,7 @@ const INDIGO_LIGHT: Theme = {
   white: "#FFFFFF",
   cardPressed: "#D5D9F1",
   green: "#059669",
-};
+}
 
 const SUNSET_DARK: Theme = {
   bg: "#14090A",
@@ -134,7 +129,7 @@ const SUNSET_DARK: Theme = {
   white: "#FFFFFF",
   cardPressed: "#381B23",
   green: "#34D399",
-};
+}
 
 const SUNSET_LIGHT: Theme = {
   bg: "#FFF9F7",
@@ -153,7 +148,7 @@ const SUNSET_LIGHT: Theme = {
   white: "#FFFFFF",
   cardPressed: "#FCE0D6",
   green: "#059669",
-};
+}
 
 const JADE_DARK: Theme = {
   bg: "#071412",
@@ -172,7 +167,7 @@ const JADE_DARK: Theme = {
   white: "#FFFFFF",
   cardPressed: "#153A32",
   green: "#34D399",
-};
+}
 
 const JADE_LIGHT: Theme = {
   bg: "#F7FCFA",
@@ -191,7 +186,7 @@ const JADE_LIGHT: Theme = {
   white: "#FFFFFF",
   cardPressed: "#D4EBE1",
   green: "#059669",
-};
+}
 
 const SAKURA_DARK: Theme = {
   bg: "#150B10",
@@ -210,7 +205,7 @@ const SAKURA_DARK: Theme = {
   white: "#FFFFFF",
   cardPressed: "#3A2130",
   green: "#34D399",
-};
+}
 
 const SAKURA_LIGHT: Theme = {
   bg: "#FFF5F9",
@@ -229,10 +224,10 @@ const SAKURA_LIGHT: Theme = {
   white: "#FFFFFF",
   cardPressed: "#FBD4E4",
   green: "#059669",
-};
+}
 
 // ─── Static fallback (= Ink dark) ──────────────────────────────────────────
-export const FALLBACK: Theme = INK_DARK;
+export const FALLBACK: Theme = INK_DARK
 
 // ─── Catalog of statically defined themes (excludes Material You) ──────────
 export const BASE_THEMES: ThemeDefinition[] = [
@@ -271,28 +266,28 @@ export const BASE_THEMES: ThemeDefinition[] = [
     dark: SAKURA_DARK,
     light: SAKURA_LIGHT,
   },
-];
+]
 
 // ─── Material You builder (populated at runtime on Android 12+) ────────────
 // The shape matches @pchmn/expo-material3-theme's Material3Scheme.
 interface M3Scheme {
-  primary: string;
-  onPrimary: string;
-  primaryContainer: string;
-  onPrimaryContainer: string;
-  secondary: string;
-  tertiary: string;
-  background: string;
-  surface: string;
-  surfaceVariant: string;
-  surfaceContainer: string;
-  surfaceContainerHigh: string;
-  outline: string;
-  outlineVariant: string;
-  onBackground: string;
-  onSurface: string;
-  onSurfaceVariant: string;
-  error: string;
+  primary: string
+  onPrimary: string
+  primaryContainer: string
+  onPrimaryContainer: string
+  secondary: string
+  tertiary: string
+  background: string
+  surface: string
+  surfaceVariant: string
+  surfaceContainer: string
+  surfaceContainerHigh: string
+  outline: string
+  outlineVariant: string
+  onBackground: string
+  onSurface: string
+  onSurfaceVariant: string
+  error: string
 }
 
 export function buildThemeFromMaterialYou(scheme: M3Scheme): Theme {
@@ -313,7 +308,7 @@ export function buildThemeFromMaterialYou(scheme: M3Scheme): Theme {
     white: "#FFFFFF",
     cardPressed: scheme.surfaceVariant,
     green: scheme.secondary,
-  };
+  }
 }
 
 // ─── AMOLED variant: true black background so OLED pixels turn off ────────
@@ -324,11 +319,11 @@ export function toAmoled(t: Theme): Theme {
     surface: "#0A0A0E",
     surfaceAlt: "#101016",
     cardPressed: "#14141C",
-  };
+  }
 }
 
 // ─── Mutable live token so non-hook callers (and existing files) stay in sync
-export let colors: Theme = FALLBACK;
+export let colors: Theme = FALLBACK
 export function setActiveTheme(t: Theme) {
-  colors = t;
+  colors = t
 }

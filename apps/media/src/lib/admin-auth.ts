@@ -10,16 +10,16 @@
  * in proxy — no JWT/session store needed for an internal admin tool.
  */
 
-export const ADMIN_COOKIE = "media_admin_session";
+export const ADMIN_COOKIE = "media_admin_session"
 
 export function adminAuthEnabled(): boolean {
-  return Boolean(process.env.MEDIA_ADMIN_TOKEN);
+  return Boolean(process.env.MEDIA_ADMIN_TOKEN)
 }
 
 /** Constant-time string comparison to avoid timing side channels. */
 export function safeEqual(a: string, b: string): boolean {
-  if (a.length !== b.length) return false;
-  let diff = 0;
-  for (let i = 0; i < a.length; i++) diff |= a.charCodeAt(i) ^ b.charCodeAt(i);
-  return diff === 0;
+  if (a.length !== b.length) return false
+  let diff = 0
+  for (let i = 0; i < a.length; i++) diff |= a.charCodeAt(i) ^ b.charCodeAt(i)
+  return diff === 0
 }

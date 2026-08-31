@@ -1,9 +1,9 @@
-"use client";
+"use client"
 
-import { useEffect, useRef, type ReactNode } from "react";
-import { X } from "lucide-react";
-import { cn } from "@/lib/utils";
-import { useTranslation } from "@/i18n/locale-context";
+import { useEffect, useRef, type ReactNode } from "react"
+import { X } from "lucide-react"
+import { cn } from "@/lib/utils"
+import { useTranslation } from "@/i18n/locale-context"
 
 export function Modal({
   open,
@@ -12,31 +12,31 @@ export function Modal({
   children,
   wide,
 }: {
-  open: boolean;
-  onClose: () => void;
-  title: string;
-  children: ReactNode;
-  wide?: boolean;
+  open: boolean
+  onClose: () => void
+  title: string
+  children: ReactNode
+  wide?: boolean
 }) {
-  const ref = useRef<HTMLDivElement>(null);
-  const { t } = useTranslation();
+  const ref = useRef<HTMLDivElement>(null)
+  const { t } = useTranslation()
 
   useEffect(() => {
-    if (!open) return;
-    const onKey = (e: KeyboardEvent) => e.key === "Escape" && onClose();
-    document.addEventListener("keydown", onKey);
-    document.body.style.overflow = "hidden";
+    if (!open) return
+    const onKey = (e: KeyboardEvent) => e.key === "Escape" && onClose()
+    document.addEventListener("keydown", onKey)
+    document.body.style.overflow = "hidden"
     return () => {
-      document.removeEventListener("keydown", onKey);
-      document.body.style.overflow = "";
-    };
-  }, [open, onClose]);
+      document.removeEventListener("keydown", onKey)
+      document.body.style.overflow = ""
+    }
+  }, [open, onClose])
 
-  if (!open) return null;
+  if (!open) return null
 
   return (
     <div
-      className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/50"
+      className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 p-4"
       onClick={(e) => e.target === e.currentTarget && onClose()}
     >
       <div
@@ -45,16 +45,16 @@ export function Modal({
         aria-modal="true"
         aria-label={title}
         className={cn(
-          "bg-raised border border-line rounded-[var(--radius)] shadow-xl w-full max-h-[85vh] overflow-y-auto animate-brush-in",
+          "animate-brush-in max-h-[85vh] w-full overflow-y-auto rounded-[var(--radius)] border border-line bg-raised shadow-xl",
           wide ? "max-w-3xl" : "max-w-md"
         )}
       >
-        <div className="flex items-center justify-between px-5 py-4 border-b border-line sticky top-0 bg-raised">
+        <div className="sticky top-0 flex items-center justify-between border-b border-line bg-raised px-5 py-4">
           <h2 className="font-display text-lg font-semibold">{title}</h2>
           <button
             onClick={onClose}
             aria-label={t("common.close")}
-            className="p-1.5 rounded-[var(--radius)] text-ink-faint hover:bg-hover hover:text-ink cursor-pointer"
+            className="cursor-pointer rounded-[var(--radius)] p-1.5 text-ink-faint hover:bg-hover hover:text-ink"
           >
             <X className="h-4 w-4" />
           </button>
@@ -62,5 +62,5 @@ export function Modal({
         <div className="p-5">{children}</div>
       </div>
     </div>
-  );
+  )
 }

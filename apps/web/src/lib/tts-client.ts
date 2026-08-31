@@ -1,14 +1,14 @@
 const API_BASE_URL = (
   process.env.NEXT_PUBLIC_API_BASE_URL ?? "http://localhost:8080"
-).replace(/\/+$/, "");
+).replace(/\/+$/, "")
 
 export interface TtsResolveResult {
-  url: string;
-  provider?: string;
+  url: string
+  provider?: string
 }
 
 export interface TtsResolveError extends Error {
-  status?: number;
+  status?: number
 }
 
 /**
@@ -22,7 +22,7 @@ export interface TtsResolveError extends Error {
 export async function resolveTtsUrl(
   text: string,
   locale?: string,
-  gender?: string,
+  gender?: string
 ): Promise<TtsResolveResult> {
   const res = await fetch(`${API_BASE_URL}/api/v1/tts`, {
     method: "POST",
@@ -32,30 +32,32 @@ export async function resolveTtsUrl(
       locale: locale ?? "zh-CN",
       gender: gender ?? "female",
     }),
-  });
+  })
 
   if (!res.ok) {
-    const err = new Error(`TTS resolve failed: ${res.status}`) as TtsResolveError;
-    err.status = res.status;
-    throw err;
+    const err = new Error(
+      `TTS resolve failed: ${res.status}`
+    ) as TtsResolveError
+    err.status = res.status
+    throw err
   }
 
   // Backend response format: { url, text, locale, gender, provider }
   const raw = (await res.json()) as {
-    url: string;
-    text: string;
-    locale: string;
-    gender: string;
-    provider: string;
-  };
+    url: string
+    text: string
+    locale: string
+    gender: string
+    provider: string
+  }
 
   if (!raw.url) {
     const err = new Error(
-      `TTS resolve failed: no URL returned (${res.status})`,
-    ) as TtsResolveError;
-    err.status = res.status;
-    throw err;
+      `TTS resolve failed: no URL returned (${res.status})`
+    ) as TtsResolveError
+    err.status = res.status
+    throw err
   }
 
-  return { url: raw.url, provider: raw.provider };
+  return { url: raw.url, provider: raw.provider }
 }

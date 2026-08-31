@@ -1,14 +1,14 @@
-import { ScrollView, Text, View } from "react-native";
-import { SafeAreaView } from "react-native-safe-area-context";
-import { useRouter } from "expo-router";
-import { Button } from "@/components/ui/Button";
-import { Motif } from "@/components/ui/Motif";
-import { useTheme } from "@/theme/ThemeProvider";
-import { fonts, type } from "@/theme/typography";
+import { ScrollView, Text, View } from "react-native"
+import { SafeAreaView } from "react-native-safe-area-context"
+import { useRouter } from "expo-router"
+import { Button } from "@/components/ui/Button"
+import { Motif } from "@/components/ui/Motif"
+import { useTheme } from "@/theme/ThemeProvider"
+import { fonts, type } from "@/theme/typography"
 
 export default function Welcome() {
-  const { theme } = useTheme();
-  const router = useRouter();
+  const { theme } = useTheme()
+  const router = useRouter()
 
   return (
     <SafeAreaView style={{ flex: 1, backgroundColor: theme.bg }}>
@@ -71,7 +71,8 @@ export default function Welcome() {
                 color: theme.text,
               }}
             >
-              "Learning a language is to have one more window from which to look at the world."
+              "Learning a language is to have one more window from which to look
+              at the world."
             </Text>
             <Text style={[type.caption, { color: theme.textMuted }]}>
               — Chinese proverb
@@ -117,5 +118,5 @@ export default function Welcome() {
         </View>
       </ScrollView>
     </SafeAreaView>
-  );
+  )
 }

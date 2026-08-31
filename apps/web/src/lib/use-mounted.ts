@@ -1,8 +1,8 @@
-"use client";
+"use client"
 
-import { useSyncExternalStore } from "react";
+import { useSyncExternalStore } from "react"
 
-const emptySubscribe = () => () => {};
+const emptySubscribe = () => () => {}
 
 /**
  * True once the component is hydrated on the client. Used to gate UI that
@@ -13,10 +13,10 @@ export function useMounted(): boolean {
     emptySubscribe,
     () => true,
     () => false
-  );
+  )
 }
 
 /** Client-only snapshot of a browser value (primitive), with an SSR fallback. */
 export function useClientSnapshot<T>(getValue: () => T, serverFallback: T): T {
-  return useSyncExternalStore(emptySubscribe, getValue, () => serverFallback);
+  return useSyncExternalStore(emptySubscribe, getValue, () => serverFallback)
 }

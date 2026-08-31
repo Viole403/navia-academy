@@ -118,8 +118,8 @@ Sumber lengkap: `.env.example`.
 
 | Variable                                                             | Deskripsi                                                                                                                            | Default                               |
 | -------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------- |
-| `SERVER_PORT` | Port HTTP listen | `8080` |
-| `API_PUBLISH_PORT` | Port publik di host saat jalan via compose (kiri mapping) | `8080` |
+| `SERVER_PORT`                                                        | Port HTTP listen                                                                                                                     | `8080`                                |
+| `API_PUBLISH_PORT`                                                   | Port publik di host saat jalan via compose (kiri mapping)                                                                            | `8080`                                |
 | `DATABASE_URL`                                                       | Connection string Postgres (managed perlu `?sslmode=require`)                                                                        | —                                     |
 | `REDIS_URL`                                                          | Connection string Redis (Upstash pakai skema `rediss://`)                                                                            | `redis://localhost:6379`              |
 | `JWT_ACCESS_SECRET` / `JWT_REFRESH_SECRET`                           | Secret HS256 (min 32 char)                                                                                                           | —                                     |

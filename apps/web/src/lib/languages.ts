@@ -1,4 +1,4 @@
-import type { LanguageCode } from "@/types";
+import type { LanguageCode } from "@/types"
 
 /**
  * Supported learning languages.
@@ -10,19 +10,19 @@ import type { LanguageCode } from "@/types";
  */
 
 export interface LanguageInfo {
-  code: LanguageCode;
+  code: LanguageCode
   /** English label, e.g. "Chinese". */
-  name: string;
+  name: string
   /** Native label, e.g. "中文". */
-  nativeName: string;
+  nativeName: string
   /** Primary writing script of the language. */
-  script: "Simplified" | "Traditional" | "Latin" | "Kana" | "Hangul";
+  script: "Simplified" | "Traditional" | "Latin" | "Kana" | "Hangul"
   /** BCP-47 locale for TTS / audio. */
-  ttsLocale: string;
+  ttsLocale: string
   /** ISO 639-1 code for i18n lookups. */
-  iso6391: string;
+  iso6391: string
   /** Which exam types are relevant to this language (subset of ExamType). */
-  examTypes: string[];
+  examTypes: string[]
 }
 
 export const LANGUAGES: LanguageInfo[] = [
@@ -62,16 +62,16 @@ export const LANGUAGES: LanguageInfo[] = [
     iso6391: "ja",
     examTypes: ["jlpt"],
   },
-];
+]
 
-export const DEFAULT_LANGUAGE: LanguageCode = "zh";
+export const DEFAULT_LANGUAGE: LanguageCode = "zh"
 
 export function languageInfo(code: LanguageCode): LanguageInfo {
-  return LANGUAGES.find((l) => l.code === code) ?? LANGUAGES[0];
+  return LANGUAGES.find((l) => l.code === code) ?? LANGUAGES[0]
 }
 
 export function isSupportedLanguage(code: string): code is LanguageCode {
-  return LANGUAGES.some((l) => l.code === code);
+  return LANGUAGES.some((l) => l.code === code)
 }
 
 /**
@@ -83,37 +83,39 @@ export function isSupportedLanguage(code: string): code is LanguageCode {
  * - TOEFL → "en" (English)
  */
 export function languageForExam(examType: string): LanguageCode {
-  const zhExams = ["hsk", "tocfl"];
-  const deExams = ["goethe"];
-  const jaExams = ["jlpt"];
-  const enExams = ["toefl"];
+  const zhExams = ["hsk", "tocfl"]
+  const deExams = ["goethe"]
+  const jaExams = ["jlpt"]
+  const enExams = ["toefl"]
 
-  const lower = examType.toLowerCase();
-  if (zhExams.some((e) => e === lower)) return "zh";
-  if (deExams.some((e) => e === lower)) return "de";
-  if (jaExams.some((e) => e === lower)) return "ja";
-  if (enExams.some((e) => e === lower)) return "en";
-  return "zh"; // fallback
+  const lower = examType.toLowerCase()
+  if (zhExams.some((e) => e === lower)) return "zh"
+  if (deExams.some((e) => e === lower)) return "de"
+  if (jaExams.some((e) => e === lower)) return "ja"
+  if (enExams.some((e) => e === lower)) return "en"
+  return "zh" // fallback
 }
 
 /** Logical bundle name for a language-scoped content domain. */
 export function langBundle(lang: LanguageCode, name: string): string {
-  return `${lang}/${name}`;
+  return `${lang}/${name}`
 }
 
 /** True for languages whose writing system is character/kana-based (zh, ja). */
 export function isCharScript(lang: LanguageCode): boolean {
-  const script = languageInfo(lang).script;
-  return script === "Simplified" || script === "Traditional" || script === "Kana";
+  const script = languageInfo(lang).script
+  return (
+    script === "Simplified" || script === "Traditional" || script === "Kana"
+  )
 }
 
 /** Script-aware label for the unit of writing (character vs word). */
 export function wordLabel(lang: LanguageCode, singular = true): string {
-  if (isCharScript(lang)) return singular ? "character" : "characters";
-  return singular ? "word" : "words";
+  if (isCharScript(lang)) return singular ? "character" : "characters"
+  return singular ? "word" : "words"
 }
 
 /** BCP-47 locale for TTS given a language. */
 export function ttsLocaleFor(lang: LanguageCode): string {
-  return languageInfo(lang).ttsLocale;
+  return languageInfo(lang).ttsLocale
 }

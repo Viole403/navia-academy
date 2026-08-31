@@ -1,45 +1,46 @@
-import { useCallback, useState } from "react";
-import { Pressable, ScrollView, Switch, Text, View } from "react-native";
-import { SafeAreaView } from "react-native-safe-area-context";
-import { router } from "expo-router";
-import { useMutation } from "@tanstack/react-query";
-import { Button } from "@/components/ui/Button";
-import { Motif } from "@/components/ui/Motif";
-import { useTheme } from "@/theme/ThemeProvider";
-import type { Theme, ThemeDefinition, ThemeMode } from "@/theme/colors";
-import { fonts, type } from "@/theme/typography";
-import { useOnboardingStore, type ScriptPref } from "@/store/onboarding";
-import { useThemePrefs } from "@/store/theme";
-import { progress } from "@/api/endpoints";
+import { useCallback, useState } from "react"
+import { Pressable, ScrollView, Switch, Text, View } from "react-native"
+import { SafeAreaView } from "react-native-safe-area-context"
+import { router } from "expo-router"
+import { useMutation } from "@tanstack/react-query"
+import { Button } from "@/components/ui/Button"
+import { Motif } from "@/components/ui/Motif"
+import { useTheme } from "@/theme/ThemeProvider"
+import type { Theme, ThemeDefinition, ThemeMode } from "@/theme/colors"
+import { fonts, type } from "@/theme/typography"
+import { useOnboardingStore, type ScriptPref } from "@/store/onboarding"
+import { useThemePrefs } from "@/store/theme"
+import { progress } from "@/api/endpoints"
 
-const STEPS = ["script", "theme", "goal"] as const;
-type Step = (typeof STEPS)[number];
+const STEPS = ["script", "theme", "goal"] as const
+type Step = (typeof STEPS)[number]
 
 const KICKERS: Record<Step, string> = {
   script: "Step 01 — Foundations",
   theme: "Step 02 — Atmosphere",
   goal: "Step 03 — Rhythm",
-};
+}
 
 const TITLES: Record<Step, string> = {
   script: "Choose your script",
   theme: "Set the tone",
   goal: "Find your pace",
-};
+}
 
 const SUBS: Record<Step, string> = {
-  script: "The characters you'll read every day. You can change your mind later.",
+  script:
+    "The characters you'll read every day. You can change your mind later.",
   theme: "Six palettes. Three modes. One quiet aesthetic.",
   goal: "How many minutes feels sustainable?",
-};
+}
 
 export default function Onboarding() {
-  const { theme, catalog, materialYouAvailable } = useTheme();
-  const { themeId, mode, setThemeId, setMode } = useThemePrefs();
+  const { theme, catalog, materialYouAvailable } = useTheme()
+  const { themeId, mode, setThemeId, setMode } = useThemePrefs()
   const { script, setScript, complete, dailyMinutes, setDailyMinutes } =
-    useOnboardingStore();
-  const [stepIdx, setStepIdx] = useState(0);
-  const step = STEPS[stepIdx];
+    useOnboardingStore()
+  const [stepIdx, setStepIdx] = useState(0)
+  const step = STEPS[stepIdx]
 
   const syncOnboarding = useMutation({
     mutationFn: async () =>
@@ -48,23 +49,23 @@ export default function Onboarding() {
         data: { script },
       }),
     onError: () => undefined,
-  });
+  })
 
   const next = useCallback(() => {
     if (stepIdx < STEPS.length - 1) {
-      setStepIdx(stepIdx + 1);
+      setStepIdx(stepIdx + 1)
     } else {
-      syncOnboarding.mutate();
-      complete();
-      router.replace("/(auth)");
+      syncOnboarding.mutate()
+      complete()
+      router.replace("/(auth)")
     }
-  }, [stepIdx, complete, syncOnboarding]);
+  }, [stepIdx, complete, syncOnboarding])
 
   const stepChars: Record<Step, string> = {
     script: "简",
     theme: "彩",
     goal: "步",
-  };
+  }
 
   return (
     <SafeAreaView style={{ flex: 1, backgroundColor: theme.bg }}>
@@ -113,23 +114,21 @@ export default function Onboarding() {
         {/* Step content */}
         {step === "script" && (
           <View style={{ gap: 20 }}>
-            {(
-              [
-                {
-                  id: "simplified" as ScriptPref,
-                  display: "简体",
-                  name: "Simplified",
-                  hint: "Mainland China · Singapore · Malaysia",
-                },
-                {
-                  id: "traditional" as ScriptPref,
-                  display: "繁體",
-                  name: "Traditional",
-                  hint: "Taiwan · Hong Kong · Macau",
-                },
-              ]
-            ).map((s) => {
-              const selected = script === s.id;
+            {[
+              {
+                id: "simplified" as ScriptPref,
+                display: "简体",
+                name: "Simplified",
+                hint: "Mainland China · Singapore · Malaysia",
+              },
+              {
+                id: "traditional" as ScriptPref,
+                display: "繁體",
+                name: "Traditional",
+                hint: "Taiwan · Hong Kong · Macau",
+              },
+            ].map((s) => {
+              const selected = script === s.id
               return (
                 <Pressable
                   key={s.id}
@@ -162,7 +161,10 @@ export default function Onboarding() {
                       {s.name}
                     </Text>
                     <Text
-                      style={[type.bodySm, { color: theme.textMuted, marginTop: 2 }]}
+                      style={[
+                        type.bodySm,
+                        { color: theme.textMuted, marginTop: 2 },
+                      ]}
                     >
                       {s.hint}
                     </Text>
@@ -178,13 +180,19 @@ export default function Onboarding() {
                         justifyContent: "center",
                       }}
                     >
-                      <Text style={{ color: theme.white, fontSize: 12, fontWeight: "700" }}>
+                      <Text
+                        style={{
+                          color: theme.white,
+                          fontSize: 12,
+                          fontWeight: "700",
+                        }}
+                      >
                         ✓
                       </Text>
                     </View>
                   )}
                 </Pressable>
-              );
+              )
             })}
           </View>
         )}
@@ -220,7 +228,13 @@ export default function Onboarding() {
                       opacity: 0.4,
                     }}
                   >
-                    <Text style={{ color: theme.textMuted, fontSize: 10, fontWeight: "700" }}>
+                    <Text
+                      style={{
+                        color: theme.textMuted,
+                        fontSize: 10,
+                        fontWeight: "700",
+                      }}
+                    >
                       Material You
                     </Text>
                     <Text style={{ color: theme.textDim, fontSize: 9 }}>
@@ -245,7 +259,7 @@ export default function Onboarding() {
                     { id: "amoled", label: "AMOLED" },
                   ] as { id: ThemeMode; label: string }[]
                 ).map((m) => {
-                  const sel = mode === m.id;
+                  const sel = mode === m.id
                   return (
                     <Pressable
                       key={m.id}
@@ -271,7 +285,7 @@ export default function Onboarding() {
                         {m.label}
                       </Text>
                     </Pressable>
-                  );
+                  )
                 })}
               </View>
               <View
@@ -286,10 +300,20 @@ export default function Onboarding() {
                 }}
               >
                 <View style={{ flex: 1, paddingRight: 16 }}>
-                  <Text style={[type.body, { color: theme.text, fontWeight: "600" }]}>
+                  <Text
+                    style={[
+                      type.body,
+                      { color: theme.text, fontWeight: "600" },
+                    ]}
+                  >
                     True black
                   </Text>
-                  <Text style={[type.caption, { color: theme.textMuted, marginTop: 2 }]}>
+                  <Text
+                    style={[
+                      type.caption,
+                      { color: theme.textMuted, marginTop: 2 },
+                    ]}
+                  >
                     Pure #000 — saves battery on OLED panels
                   </Text>
                 </View>
@@ -306,15 +330,13 @@ export default function Onboarding() {
 
         {step === "goal" && (
           <View style={{ gap: 0 }}>
-            {(
-              [
-                { min: 5, label: "Casual reader" },
-                { min: 10, label: "Steady student" },
-                { min: 15, label: "Serious learner" },
-                { min: 30, label: "Daily devotee" },
-              ]
-            ).map((g, i, arr) => {
-              const selected = dailyMinutes === g.min;
+            {[
+              { min: 5, label: "Casual reader" },
+              { min: 10, label: "Steady student" },
+              { min: 15, label: "Serious learner" },
+              { min: 30, label: "Daily devotee" },
+            ].map((g, i, arr) => {
+              const selected = dailyMinutes === g.min
               return (
                 <Pressable
                   key={g.min}
@@ -333,7 +355,13 @@ export default function Onboarding() {
                     justifyContent: "space-between",
                   }}
                 >
-                  <View style={{ flexDirection: "row", alignItems: "baseline", gap: 8 }}>
+                  <View
+                    style={{
+                      flexDirection: "row",
+                      alignItems: "baseline",
+                      gap: 8,
+                    }}
+                  >
                     <Text
                       style={{
                         fontFamily: fonts.serif,
@@ -357,7 +385,7 @@ export default function Onboarding() {
                     {g.label}
                   </Text>
                 </Pressable>
-              );
+              )
             })}
           </View>
         )}
@@ -373,7 +401,7 @@ export default function Onboarding() {
         </View>
       </ScrollView>
     </SafeAreaView>
-  );
+  )
 }
 
 // ─── A small editorial theme swatch ────────────────────────────────────────
@@ -383,17 +411,17 @@ function ThemeSwatch({
   selected,
   onPress,
 }: {
-  def: ThemeDefinition;
-  mode: ThemeMode;
-  selected: boolean;
-  onPress: () => void;
+  def: ThemeDefinition
+  mode: ThemeMode
+  selected: boolean
+  onPress: () => void
 }) {
-  const showLight = mode === "light";
-  const showAmoled = mode === "amoled";
-  const base = showLight ? def.light : def.dark;
+  const showLight = mode === "light"
+  const showAmoled = mode === "amoled"
+  const base = showLight ? def.light : def.dark
   const preview: Theme = showAmoled
     ? { ...base, bg: "#000000", surface: "#0A0A0E", surfaceAlt: "#101016" }
-    : base;
+    : base
 
   return (
     <Pressable
@@ -460,9 +488,13 @@ function ThemeSwatch({
             justifyContent: "center",
           }}
         >
-          <Text style={{ color: preview.white, fontSize: 9, fontWeight: "800" }}>✓</Text>
+          <Text
+            style={{ color: preview.white, fontSize: 9, fontWeight: "800" }}
+          >
+            ✓
+          </Text>
         </View>
       )}
     </Pressable>
-  );
+  )
 }

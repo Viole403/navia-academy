@@ -97,86 +97,22 @@
     ]
   },
   "de": {
-    "vocabulary": [
-      "a1",
-      "a2",
-      "b1",
-      "b2",
-      "c1",
-      "c2"
-    ],
-    "grammar": [
-      "a1",
-      "a2",
-      "b1",
-      "b2"
-    ],
-    "readings": [
-      "a1",
-      "a2",
-      "b1",
-      "b2"
-    ],
-    "conversations": [
-      "a1",
-      "a2",
-      "b1",
-      "b2"
-    ]
+    "vocabulary": ["a1", "a2", "b1", "b2", "c1", "c2"],
+    "grammar": ["a1", "a2", "b1", "b2"],
+    "readings": ["a1", "a2", "b1", "b2"],
+    "conversations": ["a1", "a2", "b1", "b2"]
   },
   "en": {
-    "vocabulary": [
-      "a1",
-      "a2"
-    ],
-    "grammar": [
-      "a1",
-      "a2"
-    ],
-    "readings": [
-      "a1",
-      "a2"
-    ],
-    "conversations": [
-      "a1",
-      "a2"
-    ]
+    "vocabulary": ["a1", "a2"],
+    "grammar": ["a1", "a2"],
+    "readings": ["a1", "a2"],
+    "conversations": ["a1", "a2"]
   },
   "ja": {
-    "vocabulary": [
-      "n1",
-      "n2",
-      "n3",
-      "n4",
-      "n5"
-    ],
-    "grammar": [
-      "n1",
-      "n2",
-      "n3",
-      "n4",
-      "n5"
-    ],
-    "readings": [
-      "n1",
-      "n2",
-      "n3",
-      "n4",
-      "n5"
-    ],
-    "conversations": [
-      "n1",
-      "n2",
-      "n3",
-      "n4",
-      "n5"
-    ],
-    "characters": [
-      "n1",
-      "n2",
-      "n3",
-      "n4",
-      "n5"
-    ]
+    "vocabulary": ["n1", "n2", "n3", "n4", "n5"],
+    "grammar": ["n1", "n2", "n3", "n4", "n5"],
+    "readings": ["n1", "n2", "n3", "n4", "n5"],
+    "conversations": ["n1", "n2", "n3", "n4", "n5"],
+    "characters": ["n1", "n2", "n3", "n4", "n5"]
   }
 }

@@ -1,15 +1,15 @@
-"use client";
-import { type LandingInitial } from "@/lib/data-client";
-import { Hero } from "./landing-content";
+"use client"
+import { type LandingInitial } from "@/lib/data-client"
+import { Hero } from "./landing-content"
 
 export function HeroClient({
   initial,
   active,
   onActive,
 }: {
-  initial?: LandingInitial;
-  active: string;
-  onActive: (exam: string) => void;
+  initial?: LandingInitial
+  active: string
+  onActive: (exam: string) => void
 }) {
   return (
     <Hero
@@ -20,5 +20,5 @@ export function HeroClient({
       preview={initial?.preview}
       placementTotal={initial?.placementTotal}
     />
-  );
+  )
 }

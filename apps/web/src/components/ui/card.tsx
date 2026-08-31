@@ -1,7 +1,7 @@
-"use client";
+"use client"
 
-import type { ReactNode } from "react";
-import { cn } from "@/lib/utils";
+import type { ReactNode } from "react"
+import { cn } from "@/lib/utils"
 
 export function Card({
   className,
@@ -9,11 +9,11 @@ export function Card({
   onClick,
   ...rest
 }: {
-  className?: string;
-  children: ReactNode;
-  onClick?: () => void;
+  className?: string
+  children: ReactNode
+  onClick?: () => void
 } & React.HTMLAttributes<HTMLDivElement>) {
-  const interactive = Boolean(onClick);
+  const interactive = Boolean(onClick)
   return (
     <div
       {...rest}
@@ -22,8 +22,8 @@ export function Card({
         interactive
           ? (e) => {
               if (e.key === "Enter" || e.key === " ") {
-                e.preventDefault();
-                onClick?.();
+                e.preventDefault()
+                onClick?.()
               }
             }
           : rest.onKeyDown
@@ -31,15 +31,15 @@ export function Card({
       role={interactive ? "button" : rest.role}
       tabIndex={interactive ? 0 : rest.tabIndex}
       className={cn(
-        "bg-raised border border-line rounded-[var(--radius)] shadow-[var(--shadow)]",
+        "rounded-[var(--radius)] border border-line bg-raised shadow-[var(--shadow)]",
         interactive &&
-          "cursor-pointer hover:border-line-strong transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2",
+          "cursor-pointer transition-colors hover:border-line-strong focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:outline-none",
         className
       )}
     >
       {children}
     </div>
-  );
+  )
 }
 
 export function StatCard({
@@ -48,19 +48,21 @@ export function StatCard({
   sub,
   icon,
 }: {
-  label: string;
-  value: ReactNode;
-  sub?: string;
-  icon?: ReactNode;
+  label: string
+  value: ReactNode
+  sub?: string
+  icon?: ReactNode
 }) {
   return (
     <Card className="p-4">
       <div className="flex items-center justify-between">
-        <p className="text-xs font-medium uppercase tracking-wide text-ink-faint">{label}</p>
+        <p className="text-xs font-medium tracking-wide text-ink-faint uppercase">
+          {label}
+        </p>
         {icon && <span className="text-ink-faint">{icon}</span>}
       </div>
       <p className="mt-1.5 font-display text-2xl font-bold text-ink">{value}</p>
       {sub && <p className="mt-0.5 text-xs text-ink-faint">{sub}</p>}
     </Card>
-  );
+  )
 }

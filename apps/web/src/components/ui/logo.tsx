@@ -1,11 +1,17 @@
-import { cn } from "@/lib/utils";
-import Image from "next/image";
+import { cn } from "@/lib/utils"
+import Image from "next/image"
 
 /**
  * Navia brand logo — theme-aware: dark mark on light surfaces (logo-on-light.svg),
  * light mark on dark surfaces (logo.svg). Swap driven by `data-mode` on <html>.
  */
-export function Logo({ className, alt = "Navia" }: { className?: string; alt?: string }) {
+export function Logo({
+  className,
+  alt = "Navia",
+}: {
+  className?: string
+  alt?: string
+}) {
   return (
     <span className={cn("relative inline-block", className)}>
       <Image
@@ -24,5 +30,5 @@ export function Logo({ className, alt = "Navia" }: { className?: string; alt?: s
         className="hidden h-full w-full [[data-mode=dark]_&]:block"
       />
     </span>
-  );
+  )
 }

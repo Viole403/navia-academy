@@ -3,17 +3,19 @@
 import { useEffect, useRef, type RefObject } from "react"
 
 const FOCUSABLE_SELECTOR = [
-  'a[href]',
-  'button:not([disabled])',
-  'textarea:not([disabled])',
-  'input:not([disabled])',
-  'select:not([disabled])',
+  "a[href]",
+  "button:not([disabled])",
+  "textarea:not([disabled])",
+  "input:not([disabled])",
+  "select:not([disabled])",
   '[tabindex]:not([tabindex="-1"])',
 ].join(", ")
 
 function getFocusable(container: HTMLElement): HTMLElement[] {
-  return Array.from(container.querySelectorAll<HTMLElement>(FOCUSABLE_SELECTOR)).filter(
-    (el) => el.getClientRects().length > 0 || el === document.activeElement,
+  return Array.from(
+    container.querySelectorAll<HTMLElement>(FOCUSABLE_SELECTOR)
+  ).filter(
+    (el) => el.getClientRects().length > 0 || el === document.activeElement
   )
 }
 
@@ -24,7 +26,12 @@ interface UseFocusTrapOptions {
   onEscape?: () => void
 }
 
-export function useFocusTrap({ active, containerRef, initialFocusRef, onEscape }: UseFocusTrapOptions) {
+export function useFocusTrap({
+  active,
+  containerRef,
+  initialFocusRef,
+  onEscape,
+}: UseFocusTrapOptions) {
   const previousFocusRef = useRef<HTMLElement | null>(null)
   const onEscapeRef = useRef(onEscape)
 
@@ -38,7 +45,8 @@ export function useFocusTrap({ active, containerRef, initialFocusRef, onEscape }
     const container = containerRef.current
     if (!container) return
 
-    previousFocusRef.current = (document.activeElement as HTMLElement | null) ?? null
+    previousFocusRef.current =
+      (document.activeElement as HTMLElement | null) ?? null
 
     const focusables = getFocusable(container)
     ;(initialFocusRef?.current ?? focusables[0] ?? container).focus()
@@ -60,11 +68,19 @@ export function useFocusTrap({ active, containerRef, initialFocusRef, onEscape }
       const last = list[list.length - 1]
       const current = document.activeElement as HTMLElement | null
       if (e.shiftKey) {
-        if (current === first || current === container || !container.contains(current)) {
+        if (
+          current === first ||
+          current === container ||
+          !container.contains(current)
+        ) {
           e.preventDefault()
           last.focus()
         }
-      } else if (current === last || current === container || !container.contains(current)) {
+      } else if (
+        current === last ||
+        current === container ||
+        !container.contains(current)
+      ) {
         e.preventDefault()
         first.focus()
       }

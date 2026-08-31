@@ -1,31 +1,25 @@
-import { useState } from "react";
-import {
-  Alert,
-  Pressable,
-  ScrollView,
-  Text,
-  View,
-} from "react-native";
-import { SafeAreaView } from "react-native-safe-area-context";
-import { useRouter } from "expo-router";
-import { useMutation } from "@tanstack/react-query";
-import { Button } from "@/components/ui/Button";
-import { Input } from "@/components/ui/Input";
-import { Motif } from "@/components/ui/Motif";
-import { useTheme } from "@/theme/ThemeProvider";
-import { fonts, type } from "@/theme/typography";
-import { community } from "@/api/endpoints";
+import { useState } from "react"
+import { Alert, Pressable, ScrollView, Text, View } from "react-native"
+import { SafeAreaView } from "react-native-safe-area-context"
+import { useRouter } from "expo-router"
+import { useMutation } from "@tanstack/react-query"
+import { Button } from "@/components/ui/Button"
+import { Input } from "@/components/ui/Input"
+import { Motif } from "@/components/ui/Motif"
+import { useTheme } from "@/theme/ThemeProvider"
+import { fonts, type } from "@/theme/typography"
+import { community } from "@/api/endpoints"
 
-type Mode = "contributor" | "sponsor";
+type Mode = "contributor" | "sponsor"
 
 export default function Apply() {
-  const { theme } = useTheme();
-  const router = useRouter();
-  const [mode, setMode] = useState<Mode>("contributor");
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [area, setArea] = useState("");
-  const [message, setMessage] = useState("");
+  const { theme } = useTheme()
+  const router = useRouter()
+  const [mode, setMode] = useState<Mode>("contributor")
+  const [name, setName] = useState("")
+  const [email, setEmail] = useState("")
+  const [area, setArea] = useState("")
+  const [message, setMessage] = useState("")
 
   const applyM = useMutation({
     mutationFn: async () => {
@@ -35,31 +29,34 @@ export default function Apply() {
           email: email.trim(),
           contribution_area: area.trim(),
           message: message.trim() || undefined,
-        });
+        })
       }
       return community.applySponsor({
         company_name: name.trim(),
         email: email.trim(),
         message: message.trim() || undefined,
-      });
+      })
     },
     onSuccess: () => {
       Alert.alert(
         "Applied",
         "Your application has been sent. We will review it shortly.",
-        [{ text: "OK", onPress: () => router.back() }],
-      );
+        [{ text: "OK", onPress: () => router.back() }]
+      )
     },
     onError: (e: unknown) => {
-      const msg =
-        (e as { response?: { data?: { error?: { message?: string } } } })
-          ?.response?.data?.error?.message;
-      Alert.alert("Failed", msg ?? "Could not submit. Try again.");
+      const msg = (
+        e as { response?: { data?: { error?: { message?: string } } } }
+      )?.response?.data?.error?.message
+      Alert.alert("Failed", msg ?? "Could not submit. Try again.")
     },
-  });
+  })
 
   return (
-    <SafeAreaView style={{ flex: 1, backgroundColor: theme.bg }} edges={["top"]}>
+    <SafeAreaView
+      style={{ flex: 1, backgroundColor: theme.bg }}
+      edges={["top"]}
+    >
       <View
         style={{
           padding: 16,
@@ -77,7 +74,13 @@ export default function Apply() {
       </View>
 
       <ScrollView contentContainerStyle={{ padding: 24, gap: 24, flexGrow: 1 }}>
-        <View style={{ flexDirection: "row", justifyContent: "space-between", alignItems: "flex-start" }}>
+        <View
+          style={{
+            flexDirection: "row",
+            justifyContent: "space-between",
+            alignItems: "flex-start",
+          }}
+        >
           <View style={{ flex: 1, gap: 8 }}>
             <Text style={[type.labelSm, { color: theme.textMuted }]}>
               Join the project
@@ -92,7 +95,7 @@ export default function Apply() {
         {/* Mode switcher */}
         <View style={{ flexDirection: "row", gap: 8 }}>
           {(["contributor", "sponsor"] as Mode[]).map((m) => {
-            const sel = mode === m;
+            const sel = mode === m
             return (
               <Pressable
                 key={m}
@@ -117,7 +120,7 @@ export default function Apply() {
                   {m === "contributor" ? "Contributor" : "Sponsor"}
                 </Text>
               </Pressable>
-            );
+            )
           })}
         </View>
 
@@ -157,11 +160,15 @@ export default function Apply() {
             title="Submit application"
             onPress={() => applyM.mutate()}
             loading={applyM.isPending}
-            disabled={!name.trim() || !email.trim() || (mode === "contributor" && !area.trim())}
+            disabled={
+              !name.trim() ||
+              !email.trim() ||
+              (mode === "contributor" && !area.trim())
+            }
             size="lg"
           />
         </View>
       </ScrollView>
     </SafeAreaView>
-  );
+  )
 }

@@ -1,7 +1,7 @@
-"use client";
+"use client"
 
-import { motion, useReducedMotion } from "framer-motion";
-import { useEffect, useState, type ReactNode } from "react";
+import { motion, useReducedMotion } from "framer-motion"
+import { useEffect, useState, type ReactNode } from "react"
 
 /**
  * Scroll-reveal wrapper (framer-motion). Fades + lifts content in once it
@@ -22,29 +22,33 @@ export function Reveal({
   className,
   once = true,
 }: {
-  children: ReactNode;
+  children: ReactNode
   /** Delay before the reveal animation starts, in milliseconds. */
-  delay?: number;
-  y?: number;
-  className?: string;
-  once?: boolean;
+  delay?: number
+  y?: number
+  className?: string
+  once?: boolean
 }) {
-  const reduce = useReducedMotion();
-  const [ready, setReady] = useState(false);
+  const reduce = useReducedMotion()
+  const [ready, setReady] = useState(false)
   useEffect(() => {
-    const id = requestAnimationFrame(() => setReady(true));
-    return () => cancelAnimationFrame(id);
-  }, []);
-  if (reduce || !ready) return <div className={className}>{children}</div>;
+    const id = requestAnimationFrame(() => setReady(true))
+    return () => cancelAnimationFrame(id)
+  }, [])
+  if (reduce || !ready) return <div className={className}>{children}</div>
   return (
     <motion.div
       className={className}
       initial={{ opacity: 0, y }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once, amount: 0.1 }}
-      transition={{ duration: 0.6, delay: delay / 1000, ease: [0.16, 1, 0.3, 1] }}
+      transition={{
+        duration: 0.6,
+        delay: delay / 1000,
+        ease: [0.16, 1, 0.3, 1],
+      }}
     >
       {children}
     </motion.div>
-  );
+  )
 }

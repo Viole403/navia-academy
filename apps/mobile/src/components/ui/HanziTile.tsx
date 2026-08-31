@@ -1,9 +1,9 @@
-import { Text, View } from "react-native";
-import { colors } from "@/theme/colors";
+import { Text, View } from "react-native"
+import { colors } from "@/theme/colors"
 
 interface HanziTileProps {
-  char: string;
-  size?: number;
+  char: string
+  size?: number
 }
 
 export function HanziTile({ char, size = 64 }: HanziTileProps) {
@@ -20,9 +20,11 @@ export function HanziTile({ char, size = 64 }: HanziTileProps) {
         justifyContent: "center",
       }}
     >
-      <Text style={{ color: colors.text, fontSize: size * 0.5, fontWeight: "700" }}>
+      <Text
+        style={{ color: colors.text, fontSize: size * 0.5, fontWeight: "700" }}
+      >
         {char}
       </Text>
     </View>
-  );
+  )
 }

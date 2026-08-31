@@ -1,4 +1,4 @@
-import { JsonDataMap } from './json-data'
+import { JsonDataMap } from "./json-data"
 
 export type NavItem = {
   title: string
@@ -21,7 +21,7 @@ export type DashboardConfig = {
 
 export type SearchableItem = {
   id: string
-  type: 'vocabulary' | 'grammar' | 'character' | 'conversation'
+  type: "vocabulary" | "grammar" | "character" | "conversation"
   title: string
   description?: string
   tags?: string[]
@@ -29,10 +29,10 @@ export type SearchableItem = {
 }
 
 export type { JsonDataMap }
-export * from './vocabulary'
-export * from './grammar'
-export * from './character'
-export * from './conversation'
-export * from './exam'
-export * from './progress'
-export * from './srs'
+export * from "./vocabulary"
+export * from "./grammar"
+export * from "./character"
+export * from "./conversation"
+export * from "./exam"
+export * from "./progress"
+export * from "./srs"

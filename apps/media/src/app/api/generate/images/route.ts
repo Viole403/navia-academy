@@ -1,8 +1,8 @@
-import { NextRequest } from "next/server";
-import { generateImageBatch } from "@/lib/runner-image";
-import { checkApiRunning } from "../../../../../scripts/lib/api-running-guard";
+import { NextRequest } from "next/server"
+import { generateImageBatch } from "@/lib/runner-image"
+import { checkApiRunning } from "../../../../../scripts/lib/api-running-guard"
 
-export const maxDuration = 300;
+export const maxDuration = 300
 
 /**
  * Dashboard trickle-run (default limit 3). Shares the CLI's mutual-exclusion
@@ -11,11 +11,12 @@ export const maxDuration = 300;
  * instead; default/off just warns and continues.
  */
 async function guard(): Promise<Response | null> {
-  const mode = (process.env.MEDIA_BATCH_GUARD ?? "").toLowerCase();
-  if (mode === "off") return null;
+  const mode = (process.env.MEDIA_BATCH_GUARD ?? "").toLowerCase()
+  if (mode === "off") return null
 
   if (await checkApiRunning()) {
-    const url = process.env.MEDIA_API_HEALTH_URL || "http://localhost:8080/api/v1/health";
+    const url =
+      process.env.MEDIA_API_HEALTH_URL || "http://localhost:8080/api/v1/health"
     if (mode === "strict") {
       return Response.json(
         {
@@ -23,27 +24,30 @@ async function guard(): Promise<Response | null> {
           message:
             "MEDIA_BATCH_GUARD=strict and the backend API is running — generation refused to protect the shared VPS budget. Stop the api or set MEDIA_BATCH_GUARD=off.",
         },
-        { status: 503 },
-      );
+        { status: 503 }
+      )
     }
     console.warn(
-      `[generate/images] WARNING: the API appears to be RUNNING (${url}) — proceeding with a small batch (set MEDIA_BATCH_GUARD=off to silence).`,
-    );
+      `[generate/images] WARNING: the API appears to be RUNNING (${url}) — proceeding with a small batch (set MEDIA_BATCH_GUARD=off to silence).`
+    )
   }
-  return null;
+  return null
 }
 
 export async function POST(request: NextRequest) {
   try {
-    const blocked = await guard();
-    if (blocked) return blocked;
+    const blocked = await guard()
+    if (blocked) return blocked
 
-    const body = await request.json().catch(() => ({}));
-    const limit = typeof body?.limit === "number" ? body.limit : 3;
-    const dryRun = body?.dryRun === true;
-    const res = await generateImageBatch({ limit, dryRun });
-    return Response.json(res);
+    const body = await request.json().catch(() => ({}))
+    const limit = typeof body?.limit === "number" ? body.limit : 3
+    const dryRun = body?.dryRun === true
+    const res = await generateImageBatch({ limit, dryRun })
+    return Response.json(res)
   } catch (err) {
-    return Response.json({ error: err instanceof Error ? err.message : "image generation failed" }, { status: 500 });
+    return Response.json(
+      { error: err instanceof Error ? err.message : "image generation failed" },
+      { status: 500 }
+    )
   }
 }

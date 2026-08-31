@@ -1,14 +1,14 @@
-import { Text, View } from "react-native";
-import { useTheme } from "@/theme/ThemeProvider";
-import { fonts, type } from "@/theme/typography";
+import { Text, View } from "react-native"
+import { useTheme } from "@/theme/ThemeProvider"
+import { fonts, type } from "@/theme/typography"
 
 interface HeadingProps {
-  title: string;
-  subtitle?: string;
+  title: string
+  subtitle?: string
   /** Optional kicker label above the title — uppercase serif */
-  kicker?: string;
+  kicker?: string
   /** Pull-quote style: hairline rule above and below */
-  framed?: boolean;
+  framed?: boolean
 }
 
 /**
@@ -16,13 +16,11 @@ interface HeadingProps {
  * and hairline rules above/below like a magazine feature opener.
  */
 export function Heading({ title, subtitle, kicker, framed }: HeadingProps) {
-  const { theme } = useTheme();
+  const { theme } = useTheme()
 
   return (
     <View style={{ gap: 12 }}>
-      {framed && (
-        <View style={{ height: 1, backgroundColor: theme.border }} />
-      )}
+      {framed && <View style={{ height: 1, backgroundColor: theme.border }} />}
       {kicker && (
         <Text
           style={[
@@ -58,9 +56,7 @@ export function Heading({ title, subtitle, kicker, framed }: HeadingProps) {
           {subtitle}
         </Text>
       ) : null}
-      {framed && (
-        <View style={{ height: 1, backgroundColor: theme.border }} />
-      )}
+      {framed && <View style={{ height: 1, backgroundColor: theme.border }} />}
     </View>
-  );
+  )
 }

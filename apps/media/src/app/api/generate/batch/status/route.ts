@@ -1,4 +1,4 @@
-import { ghConfigured, latestMediaGenerateRun } from "@/lib/github-actions";
+import { ghConfigured, latestMediaGenerateRun } from "@/lib/github-actions"
 
 /**
  * Status surface for the dashboard trigger UI: poll this (e.g. every 15–30s
@@ -9,20 +9,26 @@ import { ghConfigured, latestMediaGenerateRun } from "@/lib/github-actions";
 export async function GET() {
   if (!ghConfigured()) {
     return Response.json(
-      { error: "GITHUB_NOT_CONFIGURED", message: "set GH_PAT / GH_REPO (Vercel env)" },
-      { status: 503 },
-    );
+      {
+        error: "GITHUB_NOT_CONFIGURED",
+        message: "set GH_PAT / GH_REPO (Vercel env)",
+      },
+      { status: 503 }
+    )
   }
   try {
-    const run = await latestMediaGenerateRun();
+    const run = await latestMediaGenerateRun()
     if (!run) {
-      return Response.json({ status: "never_run" });
+      return Response.json({ status: "never_run" })
     }
-    return Response.json(run);
+    return Response.json(run)
   } catch (err) {
     return Response.json(
-      { error: "GITHUB_UNREACHABLE", message: err instanceof Error ? err.message : "status failed" },
-      { status: 502 },
-    );
+      {
+        error: "GITHUB_UNREACHABLE",
+        message: err instanceof Error ? err.message : "status failed",
+      },
+      { status: 502 }
+    )
   }
 }

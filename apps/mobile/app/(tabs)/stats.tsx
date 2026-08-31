@@ -1,45 +1,49 @@
-import { useState } from "react";
-import {
-  ActivityIndicator,
-  ScrollView,
-  Text,
-  View,
-} from "react-native";
-import { SafeAreaView } from "react-native-safe-area-context";
-import { useQuery } from "@tanstack/react-query";
-import { Card } from "@/components/ui/Card";
-import { Chip } from "@/components/ui/Chip";
-import { EmptyState } from "@/components/ui/EmptyState";
-import { Motif } from "@/components/ui/Motif";
-import { useTheme } from "@/theme/ThemeProvider";
-import { fonts, type } from "@/theme/typography";
-import { progress } from "@/api/endpoints";
-import type { Achievement, StudySession } from "@/types/api";
+import { useState } from "react"
+import { ActivityIndicator, ScrollView, Text, View } from "react-native"
+import { SafeAreaView } from "react-native-safe-area-context"
+import { useQuery } from "@tanstack/react-query"
+import { Card } from "@/components/ui/Card"
+import { Chip } from "@/components/ui/Chip"
+import { EmptyState } from "@/components/ui/EmptyState"
+import { Motif } from "@/components/ui/Motif"
+import { useTheme } from "@/theme/ThemeProvider"
+import { fonts, type } from "@/theme/typography"
+import { progress } from "@/api/endpoints"
+import type { Achievement, StudySession } from "@/types/api"
 
 export default function StatsTab() {
-  const { theme } = useTheme();
-  const [view, setView] = useState<"overview" | "badges">("overview");
+  const { theme } = useTheme()
+  const [view, setView] = useState<"overview" | "badges">("overview")
 
-  const progressQ = useQuery({ queryKey: ["progress"], queryFn: progress.get });
+  const progressQ = useQuery({ queryKey: ["progress"], queryFn: progress.get })
   const achievementsQ = useQuery({
     queryKey: ["achievements"],
     queryFn: progress.achievements,
     enabled: view === "badges",
-  });
+  })
   const sessionsQ = useQuery({
     queryKey: ["study-sessions"],
     queryFn: () => progress.studySessions(50, 0),
     enabled: view === "overview",
-  });
+  })
 
   return (
-    <SafeAreaView style={{ flex: 1, backgroundColor: theme.bg }} edges={["top"]}>
+    <SafeAreaView
+      style={{ flex: 1, backgroundColor: theme.bg }}
+      edges={["top"]}
+    >
       <ScrollView
         contentContainerStyle={{ padding: 24, gap: 28, paddingBottom: 48 }}
       >
         {/* Masthead */}
         <View style={{ gap: 12 }}>
-          <View style={{ flexDirection: "row", justifyContent: "space-between", alignItems: "flex-start" }}>
+          <View
+            style={{
+              flexDirection: "row",
+              justifyContent: "space-between",
+              alignItems: "flex-start",
+            }}
+          >
             <View style={{ flex: 1, gap: 8 }}>
               <Text style={[type.labelSm, { color: theme.textMuted }]}>
                 Record
@@ -62,13 +66,11 @@ export default function StatsTab() {
             borderColor: theme.border,
           }}
         >
-          {(
-            [
-              { id: "overview" as const, label: "Overview" },
-              { id: "badges" as const, label: "Badges" },
-            ]
-          ).map((v) => {
-            const sel = view === v.id;
+          {[
+            { id: "overview" as const, label: "Overview" },
+            { id: "badges" as const, label: "Badges" },
+          ].map((v) => {
+            const sel = view === v.id
             return (
               <View
                 key={v.id}
@@ -92,7 +94,7 @@ export default function StatsTab() {
                   {v.label}
                 </Text>
               </View>
-            );
+            )
           })}
         </View>
 
@@ -114,7 +116,7 @@ export default function StatsTab() {
         )}
       </ScrollView>
     </SafeAreaView>
-  );
+  )
 }
 
 // ─── Overview ──────────────────────────────────────────────────────────────
@@ -126,16 +128,16 @@ function OverviewView({
   sessions,
   sessionsLoading,
 }: {
-  progressLoading: boolean;
-  xp: number;
-  streak: number;
-  bestStreak: number;
-  sessions: StudySession[];
-  sessionsLoading: boolean;
+  progressLoading: boolean
+  xp: number
+  streak: number
+  bestStreak: number
+  sessions: StudySession[]
+  sessionsLoading: boolean
 }) {
-  const { theme } = useTheme();
-  const totalMinutes = sessions.reduce((acc, s) => acc + s.minutes, 0);
-  const totalSessionXP = sessions.reduce((acc, s) => acc + s.xp, 0);
+  const { theme } = useTheme()
+  const totalMinutes = sessions.reduce((acc, s) => acc + s.minutes, 0)
+  const totalSessionXP = sessions.reduce((acc, s) => acc + s.xp, 0)
 
   return (
     <View style={{ gap: 20 }}>
@@ -158,7 +160,9 @@ function OverviewView({
       </View>
 
       <View style={{ gap: 12 }}>
-        <Text style={[type.labelSm, { color: theme.textMuted }]}>Recent sessions</Text>
+        <Text style={[type.labelSm, { color: theme.textMuted }]}>
+          Recent sessions
+        </Text>
         {sessionsLoading ? (
           <ActivityIndicator color={theme.accent} />
         ) : sessions.length === 0 ? (
@@ -176,11 +180,14 @@ function OverviewView({
                   flexDirection: "row",
                   justifyContent: "space-between",
                   paddingVertical: 10,
-                  borderBottomWidth: i === sessions.slice(0, 14).length - 1 ? 1 : 0,
+                  borderBottomWidth:
+                    i === sessions.slice(0, 14).length - 1 ? 1 : 0,
                   borderBottomColor: theme.border,
                 }}
               >
-                <Text style={[type.bodySm, { color: theme.text }]}>{s.date}</Text>
+                <Text style={[type.bodySm, { color: theme.text }]}>
+                  {s.date}
+                </Text>
                 <Text style={[type.bodySm, { color: theme.textMuted }]}>
                   {s.minutes} min · +{s.xp} XP
                 </Text>
@@ -195,7 +202,7 @@ function OverviewView({
         )}
       </View>
     </View>
-  );
+  )
 }
 
 // ─── Achievements ──────────────────────────────────────────────────────────
@@ -203,11 +210,11 @@ function BadgesView({
   achievements,
   loading,
 }: {
-  achievements: Achievement[];
-  loading: boolean;
+  achievements: Achievement[]
+  loading: boolean
 }) {
-  const { theme } = useTheme();
-  if (loading) return <ActivityIndicator color={theme.accent} />;
+  const { theme } = useTheme()
+  if (loading) return <ActivityIndicator color={theme.accent} />
   if (achievements.length === 0)
     return (
       <EmptyState
@@ -215,7 +222,7 @@ function BadgesView({
         message="Hit milestones to unlock these."
         glyph="印"
       />
-    );
+    )
 
   return (
     <View style={{ flexDirection: "row", flexWrap: "wrap", gap: 12 }}>
@@ -245,7 +252,7 @@ function BadgesView({
         </Card>
       ))}
     </View>
-  );
+  )
 }
 
 function Stat({
@@ -253,11 +260,11 @@ function Stat({
   value,
   accent,
 }: {
-  label: string;
-  value: number;
-  accent: string;
+  label: string
+  value: number
+  accent: string
 }) {
-  const { theme } = useTheme();
+  const { theme } = useTheme()
   return (
     <View style={{ flex: 1, gap: 4 }}>
       <Text
@@ -272,11 +279,11 @@ function Stat({
       </Text>
       <Text style={[type.labelSm, { color: theme.textMuted }]}>{label}</Text>
     </View>
-  );
+  )
 }
 
 function Divider({ color }: { color: string }) {
   return (
     <View style={{ width: 1, backgroundColor: color, marginHorizontal: 12 }} />
-  );
+  )
 }

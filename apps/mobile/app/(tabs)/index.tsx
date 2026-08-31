@@ -1,4 +1,4 @@
-import { useMemo } from "react";
+import { useMemo } from "react"
 import {
   ActivityIndicator,
   Pressable,
@@ -6,68 +6,74 @@ import {
   ScrollView,
   Text,
   View,
-} from "react-native";
-import { SafeAreaView } from "react-native-safe-area-context";
-import { useRouter } from "expo-router";
-import { useQuery } from "@tanstack/react-query";
-import { Card } from "@/components/ui/Card";
-import { ProgressBar } from "@/components/ui/ProgressBar";
-import { Motif } from "@/components/ui/Motif";
-import { EmptyState } from "@/components/ui/EmptyState";
-import { useTheme } from "@/theme/ThemeProvider";
-import { fonts, type } from "@/theme/typography";
-import { exam, progress, settings } from "@/api/endpoints";
-import { useAuthStore } from "@/store/auth";
+} from "react-native"
+import { SafeAreaView } from "react-native-safe-area-context"
+import { useRouter } from "expo-router"
+import { useQuery } from "@tanstack/react-query"
+import { Card } from "@/components/ui/Card"
+import { ProgressBar } from "@/components/ui/ProgressBar"
+import { Motif } from "@/components/ui/Motif"
+import { EmptyState } from "@/components/ui/EmptyState"
+import { useTheme } from "@/theme/ThemeProvider"
+import { fonts, type } from "@/theme/typography"
+import { exam, progress, settings } from "@/api/endpoints"
+import { useAuthStore } from "@/store/auth"
 
 const DAILY_WORDS = [
   { hanzi: "晨", pinyin: "chén", meaning: "morning" },
   { hanzi: "浪", pinyin: "làng", meaning: "wave" },
   { hanzi: "纸", pinyin: "zhǐ", meaning: "paper" },
   { hanzi: "野", pinyin: "yě", meaning: "field; wild" },
-];
+]
 
 export default function HomeTab() {
-  const { theme } = useTheme();
-  const router = useRouter();
-  const user = useAuthStore((s) => s.user);
+  const { theme } = useTheme()
+  const router = useRouter()
+  const user = useAuthStore((s) => s.user)
 
-  const progressQ = useQuery({ queryKey: ["progress"], queryFn: progress.get });
+  const progressQ = useQuery({ queryKey: ["progress"], queryFn: progress.get })
   const dueCardsQ = useQuery({
     queryKey: ["due-cards"],
     queryFn: () => progress.dueCards(),
-  });
-  const srsStatsQ = useQuery({ queryKey: ["srs-stats"], queryFn: progress.srsStats });
-  const settingsQ = useQuery({ queryKey: ["settings"], queryFn: settings.get });
+  })
+  const srsStatsQ = useQuery({
+    queryKey: ["srs-stats"],
+    queryFn: progress.srsStats,
+  })
+  const settingsQ = useQuery({ queryKey: ["settings"], queryFn: settings.get })
   const recommendedQ = useQuery({
     queryKey: ["exam-recommended"],
     queryFn: exam.recommended,
-  });
+  })
 
   const greeting = useMemo(() => {
-    const h = new Date().getHours();
-    if (h < 12) return "Good morning";
-    if (h < 18) return "Good afternoon";
-    return "Good evening";
-  }, []);
+    const h = new Date().getHours()
+    if (h < 12) return "Good morning"
+    if (h < 18) return "Good afternoon"
+    return "Good evening"
+  }, [])
 
   // Pick a deterministic "word of the day"
   const word = useMemo(() => {
-    const d = Math.floor(Date.now() / 86_400_000);
-    return DAILY_WORDS[d % DAILY_WORDS.length];
-  }, []);
+    const d = Math.floor(Date.now() / 86_400_000)
+    return DAILY_WORDS[d % DAILY_WORDS.length]
+  }, [])
 
-  const goal = settingsQ.data?.daily_goal_min ?? 10;
+  const goal = settingsQ.data?.daily_goal_min ?? 10
   const todayMin = useMemo(() => {
     // In a real impl, would query today's study session
-    return 0;
-  }, []);
-  const goalProgress = goal > 0 ? Math.min(1, todayMin / goal) : 0;
+    return 0
+  }, [])
+  const goalProgress = goal > 0 ? Math.min(1, todayMin / goal) : 0
 
   const isLoading =
-    progressQ.isLoading || dueCardsQ.isLoading || srsStatsQ.isLoading;
+    progressQ.isLoading || dueCardsQ.isLoading || srsStatsQ.isLoading
 
   return (
-    <SafeAreaView style={{ flex: 1, backgroundColor: theme.bg }} edges={["top"]}>
+    <SafeAreaView
+      style={{ flex: 1, backgroundColor: theme.bg }}
+      edges={["top"]}
+    >
       <ScrollView
         contentContainerStyle={{ padding: 24, gap: 32, paddingBottom: 48 }}
         refreshControl={
@@ -78,9 +84,9 @@ export default function HomeTab() {
               srsStatsQ.isRefetching
             }
             onRefresh={() => {
-              progressQ.refetch();
-              dueCardsQ.refetch();
-              srsStatsQ.refetch();
+              progressQ.refetch()
+              dueCardsQ.refetch()
+              srsStatsQ.refetch()
             }}
             tintColor={theme.accent}
           />
@@ -104,8 +110,7 @@ export default function HomeTab() {
                 })}
               </Text>
               <Text style={[type.display, { color: theme.text, fontSize: 36 }]}>
-                {greeting},
-                {"\n"}
+                {greeting},{"\n"}
                 <Text style={{ color: theme.accent, fontStyle: "italic" }}>
                   {user?.name?.split(" ")[0] ?? "reader"}.
                 </Text>
@@ -162,10 +167,14 @@ export default function HomeTab() {
               <Text style={[type.labelSm, { color: theme.textMuted }]}>
                 Word of the day
               </Text>
-              <Text style={[type.labelSm, { color: theme.accent }]}>No. 001</Text>
+              <Text style={[type.labelSm, { color: theme.accent }]}>
+                No. 001
+              </Text>
             </View>
             <View style={{ height: 1, backgroundColor: theme.border }} />
-            <View style={{ flexDirection: "row", alignItems: "center", gap: 20 }}>
+            <View
+              style={{ flexDirection: "row", alignItems: "center", gap: 20 }}
+            >
               <Text
                 style={{
                   fontFamily: fonts.serif,
@@ -179,19 +188,22 @@ export default function HomeTab() {
               </Text>
               <View style={{ flex: 1, gap: 4 }}>
                 <Text
-                  style={[type.label, { color: theme.textMuted, fontFamily: fonts.sans }]}
+                  style={[
+                    type.label,
+                    { color: theme.textMuted, fontFamily: fonts.sans },
+                  ]}
                 >
                   {word.pinyin}
                 </Text>
                 <Text
                   style={[
-                  {
-                    fontFamily: fonts.serif,
-                    fontStyle: "italic",
-                    fontSize: 20,
-                    color: theme.text,
-                  },
-                ]}
+                    {
+                      fontFamily: fonts.serif,
+                      fontStyle: "italic",
+                      fontSize: 20,
+                      color: theme.text,
+                    },
+                  ]}
                 >
                   {word.meaning}
                 </Text>
@@ -202,8 +214,16 @@ export default function HomeTab() {
 
         {/* Daily goal */}
         <View style={{ gap: 12 }}>
-          <View style={{ flexDirection: "row", justifyContent: "space-between", alignItems: "baseline" }}>
-            <Text style={[type.labelSm, { color: theme.textMuted }]}>Daily goal</Text>
+          <View
+            style={{
+              flexDirection: "row",
+              justifyContent: "space-between",
+              alignItems: "baseline",
+            }}
+          >
+            <Text style={[type.labelSm, { color: theme.textMuted }]}>
+              Daily goal
+            </Text>
             <Text style={[type.caption, { color: theme.textMuted }]}>
               {todayMin} / {goal} min
             </Text>
@@ -213,7 +233,9 @@ export default function HomeTab() {
 
         {/* Quick actions */}
         <View style={{ gap: 12 }}>
-          <Text style={[type.labelSm, { color: theme.textMuted }]}>Continue</Text>
+          <Text style={[type.labelSm, { color: theme.textMuted }]}>
+            Continue
+          </Text>
 
           {(dueCardsQ.data?.length ?? 0) > 0 && (
             <ActionRow
@@ -248,7 +270,7 @@ export default function HomeTab() {
         )}
       </ScrollView>
     </SafeAreaView>
-  );
+  )
 }
 
 function StatStrip({
@@ -256,11 +278,11 @@ function StatStrip({
   label,
   accent,
 }: {
-  value: number;
-  label: string;
-  accent: string;
+  value: number
+  label: string
+  accent: string
 }) {
-  const { theme } = useTheme();
+  const { theme } = useTheme()
   return (
     <View style={{ flex: 1, gap: 4 }}>
       <Text
@@ -283,7 +305,7 @@ function StatStrip({
         {label}
       </Text>
     </View>
-  );
+  )
 }
 
 function Divider({ color }: { color: string }) {
@@ -295,7 +317,7 @@ function Divider({ color }: { color: string }) {
         marginHorizontal: 16,
       }}
     />
-  );
+  )
 }
 
 function ActionRow({
@@ -304,12 +326,12 @@ function ActionRow({
   accent,
   onPress,
 }: {
-  label: string;
-  detail: string;
-  accent: string;
-  onPress: () => void;
+  label: string
+  detail: string
+  accent: string
+  onPress: () => void
 }) {
-  const { theme } = useTheme();
+  const { theme } = useTheme()
   return (
     <Pressable
       onPress={onPress}
@@ -346,5 +368,5 @@ function ActionRow({
         →
       </Text>
     </Pressable>
-  );
+  )
 }

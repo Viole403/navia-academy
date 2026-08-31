@@ -1,13 +1,13 @@
-import { TextInput, TextInputProps, View, Text } from "react-native";
-import { useState } from "react";
-import { useTheme } from "@/theme/ThemeProvider";
-import { fonts, type } from "@/theme/typography";
+import { TextInput, TextInputProps, View, Text } from "react-native"
+import { useState } from "react"
+import { useTheme } from "@/theme/ThemeProvider"
+import { fonts, type } from "@/theme/typography"
 
 interface InputProps extends TextInputProps {
-  label?: string;
-  error?: string;
+  label?: string
+  error?: string
   /** Extra hint below the input (e.g. constraints) */
-  hint?: string;
+  hint?: string
 }
 
 /**
@@ -15,26 +15,15 @@ interface InputProps extends TextInputProps {
  * Focus state darkens the rule, error turns it red.
  */
 export function Input({ label, error, hint, ...rest }: InputProps) {
-  const { theme } = useTheme();
-  const [focused, setFocused] = useState(false);
+  const { theme } = useTheme()
+  const [focused, setFocused] = useState(false)
 
-  const ruleColor = error
-    ? theme.red
-    : focused
-      ? theme.text
-      : theme.border;
+  const ruleColor = error ? theme.red : focused ? theme.text : theme.border
 
   return (
     <View style={{ gap: 8 }}>
       {label && (
-        <Text
-          style={[
-            type.labelSm,
-            { color: theme.textMuted },
-          ]}
-        >
-          {label}
-        </Text>
+        <Text style={[type.labelSm, { color: theme.textMuted }]}>{label}</Text>
       )}
       <TextInput
         placeholderTextColor={theme.textDim}
@@ -75,5 +64,5 @@ export function Input({ label, error, hint, ...rest }: InputProps) {
         </Text>
       ) : null}
     </View>
-  );
+  )
 }

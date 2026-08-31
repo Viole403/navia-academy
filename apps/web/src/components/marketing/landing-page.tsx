@@ -1,17 +1,17 @@
-"use client";
+"use client"
 
-import { Suspense, useEffect, useState } from "react";
-import { HeroClient } from "@/components/marketing/hero-client";
-import { StatsStrip, Programs } from "@/components/marketing/landing-content";
-import { LandingSections } from "@/components/marketing/landing-sections";
-import { ScrollProgress } from "@/components/ui";
-import { seedAudioManifest } from "@/lib/audio";
-import { type LandingInitial } from "@/lib/data-client";
+import { Suspense, useEffect, useState } from "react"
+import { HeroClient } from "@/components/marketing/hero-client"
+import { StatsStrip, Programs } from "@/components/marketing/landing-content"
+import { LandingSections } from "@/components/marketing/landing-sections"
+import { ScrollProgress } from "@/components/ui"
+import { seedAudioManifest } from "@/lib/audio"
+import { type LandingInitial } from "@/lib/data-client"
 
 function HeroSkeleton() {
   return (
     <section className="relative overflow-hidden">
-      <div className="relative mx-auto max-w-6xl px-4 pb-24 pt-16 sm:px-6 md:pb-32 md:pt-24">
+      <div className="relative mx-auto max-w-6xl px-4 pt-16 pb-24 sm:px-6 md:pt-24 md:pb-32">
         <div className="grid items-center gap-12 md:grid-cols-[1.05fr_1fr]">
           <div className="space-y-4">
             <div className="h-6 w-32 animate-pulse rounded-full bg-line/60" />
@@ -26,7 +26,7 @@ function HeroSkeleton() {
         </div>
       </div>
     </section>
-  );
+  )
 }
 
 function StatsSkeleton() {
@@ -41,7 +41,7 @@ function StatsSkeleton() {
         ))}
       </div>
     </section>
-  );
+  )
 }
 
 function ProgramsSkeleton() {
@@ -55,12 +55,15 @@ function ProgramsSkeleton() {
         </div>
         <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {[0, 1, 2].map((i) => (
-            <div key={i} className="h-72 animate-pulse rounded-2xl border border-line bg-sunken" />
+            <div
+              key={i}
+              className="h-72 animate-pulse rounded-2xl border border-line bg-sunken"
+            />
           ))}
         </div>
       </div>
     </section>
-  );
+  )
 }
 
 /**
@@ -74,29 +77,41 @@ function ProgramsSkeleton() {
  */
 export function LandingPage({ initial }: { initial: LandingInitial }) {
   const [activeExam, setActiveExam] = useState(() => {
-    const lang = initial.examConfig?.types[0] ?? "hsk";
-    return lang;
-  });
+    const lang = initial.examConfig?.types[0] ?? "hsk"
+    return lang
+  })
 
   useEffect(() => {
-    if (initial.audio?.length) seedAudioManifest(initial.audio);
-  }, [initial.audio]);
+    if (initial.audio?.length) seedAudioManifest(initial.audio)
+  }, [initial.audio])
 
   return (
     <>
       <ScrollProgress />
       <main id="main">
-      <Suspense fallback={<HeroSkeleton />}>
-        <HeroClient initial={initial} active={activeExam} onActive={setActiveExam} />
-      </Suspense>
-      <Suspense fallback={<StatsSkeleton />}>
-        <StatsStrip initialStats={initial.stats} examCount={initial.examConfig?.types.length} placementTotal={initial.placementTotal} />
-      </Suspense>
-      <Suspense fallback={<ProgramsSkeleton />}>
-        <Programs examConfig={initial.examConfig} />
-      </Suspense>
-      <LandingSections active={activeExam} initialVocab={initial.vocab} preview={initial.preview} />
+        <Suspense fallback={<HeroSkeleton />}>
+          <HeroClient
+            initial={initial}
+            active={activeExam}
+            onActive={setActiveExam}
+          />
+        </Suspense>
+        <Suspense fallback={<StatsSkeleton />}>
+          <StatsStrip
+            initialStats={initial.stats}
+            examCount={initial.examConfig?.types.length}
+            placementTotal={initial.placementTotal}
+          />
+        </Suspense>
+        <Suspense fallback={<ProgramsSkeleton />}>
+          <Programs examConfig={initial.examConfig} />
+        </Suspense>
+        <LandingSections
+          active={activeExam}
+          initialVocab={initial.vocab}
+          preview={initial.preview}
+        />
       </main>
     </>
-  );
+  )
 }

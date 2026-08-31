@@ -1,17 +1,17 @@
-import { Pressable, Text } from "react-native";
-import { useTheme } from "@/theme/ThemeProvider";
+import { Pressable, Text } from "react-native"
+import { useTheme } from "@/theme/ThemeProvider"
 
 interface ChipProps {
-  label: string;
-  selected: boolean;
-  onPress: () => void;
+  label: string
+  selected: boolean
+  onPress: () => void
 }
 
 /**
  * Editorial chip — hairline pill, sharp aesthetic, no fill unless selected.
  */
 export function Chip({ label, selected, onPress }: ChipProps) {
-  const { theme } = useTheme();
+  const { theme } = useTheme()
 
   return (
     <Pressable
@@ -39,5 +39,5 @@ export function Chip({ label, selected, onPress }: ChipProps) {
         {label}
       </Text>
     </Pressable>
-  );
+  )
 }

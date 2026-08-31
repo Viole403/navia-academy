@@ -1,22 +1,22 @@
-import AsyncStorage from "@react-native-async-storage/async-storage";
-import { create } from "zustand";
-import { createJSONStorage, persist } from "zustand/middleware";
+import AsyncStorage from "@react-native-async-storage/async-storage"
+import { create } from "zustand"
+import { createJSONStorage, persist } from "zustand/middleware"
 
-export type OnboardingGoal = "hsk" | "tocfl" | "conversation" | "travel";
-export type ScriptPref = "simplified" | "traditional";
+export type OnboardingGoal = "hsk" | "tocfl" | "conversation" | "travel"
+export type ScriptPref = "simplified" | "traditional"
 
 interface OnboardingState {
-  hasCompleted: boolean;
-  script: ScriptPref | null;
-  goal: OnboardingGoal | null;
-  examType: string | null;
-  dailyMinutes: number;
-  setScript: (s: ScriptPref) => void;
-  setGoal: (g: OnboardingGoal) => void;
-  setExamType: (e: string) => void;
-  setDailyMinutes: (m: number) => void;
-  complete: () => void;
-  reset: () => void;
+  hasCompleted: boolean
+  script: ScriptPref | null
+  goal: OnboardingGoal | null
+  examType: string | null
+  dailyMinutes: number
+  setScript: (s: ScriptPref) => void
+  setGoal: (g: OnboardingGoal) => void
+  setExamType: (e: string) => void
+  setDailyMinutes: (m: number) => void
+  complete: () => void
+  reset: () => void
 }
 
 export const useOnboardingStore = create<OnboardingState>()(
@@ -44,6 +44,6 @@ export const useOnboardingStore = create<OnboardingState>()(
     {
       name: "navia.onboarding.v1",
       storage: createJSONStorage(() => AsyncStorage),
-    },
-  ),
-);
+    }
+  )
+)

@@ -1,21 +1,21 @@
-import { useState } from "react";
-import { ActivityIndicator, Image, ImageProps, View } from "react-native";
-import { useTheme } from "@/theme/ThemeProvider";
-import { resolveMediaUrl } from "@/utils/env";
+import { useState } from "react"
+import { ActivityIndicator, Image, ImageProps, View } from "react-native"
+import { useTheme } from "@/theme/ThemeProvider"
+import { resolveMediaUrl } from "@/utils/env"
 
 interface MediaImageProps extends Omit<ImageProps, "source" | "src"> {
   /**
    * Either an absolute URL (https://r2.dev/...) or a path relative to
    * `EXPO_PUBLIC_MEDIA_BASE_URL` — both are resolved automatically.
    */
-  src: string | null | undefined;
+  src: string | null | undefined
   /** Width/height. Defaults to full-width, square. */
-  width?: number;
-  height?: number;
+  width?: number
+  height?: number
   /** Border radius — keep small for editorial style. Default 4. */
-  radius?: number;
+  radius?: number
   /** Loading placeholder. Defaults to a hairline-bordered box. */
-  placeholder?: React.ReactNode;
+  placeholder?: React.ReactNode
 }
 
 /**
@@ -33,26 +33,31 @@ export function MediaImage({
   style,
   ...rest
 }: MediaImageProps) {
-  const { theme } = useTheme();
-  const [loading, setLoading] = useState(true);
-  const [errored, setErrored] = useState(false);
+  const { theme } = useTheme()
+  const [loading, setLoading] = useState(true)
+  const [errored, setErrored] = useState(false)
 
-  const uri = resolveMediaUrl(src);
-  const w = width ?? 96;
-  const h = height ?? 96;
+  const uri = resolveMediaUrl(src)
+  const w = width ?? 96
+  const h = height ?? 96
 
   const border = {
     borderWidth: 1,
     borderColor: theme.border,
     borderRadius: radius,
     backgroundColor: theme.surface,
-  };
+  }
 
   if (!uri || errored) {
     return (
       <View
         style={[
-          { width: w, height: h, alignItems: "center", justifyContent: "center" },
+          {
+            width: w,
+            height: h,
+            alignItems: "center",
+            justifyContent: "center",
+          },
           border,
           style,
         ]}
@@ -67,7 +72,7 @@ export function MediaImage({
           }}
         />
       </View>
-    );
+    )
   }
 
   return (
@@ -94,11 +99,11 @@ export function MediaImage({
         onLoadStart={() => setLoading(true)}
         onLoadEnd={() => setLoading(false)}
         onError={() => {
-          setLoading(false);
-          setErrored(true);
+          setLoading(false)
+          setErrored(true)
         }}
         {...rest}
       />
     </View>
-  );
+  )
 }

@@ -1,14 +1,14 @@
-import { readFile } from "node:fs/promises";
-import { join } from "node:path";
-import { loadMediaConfig, storageConfigured } from "../src/lib/config";
-import { createStorageClient, uploadBuffer } from "../src/lib/storage";
+import { readFile } from "node:fs/promises"
+import { join } from "node:path"
+import { loadMediaConfig, storageConfigured } from "../src/lib/config"
+import { createStorageClient, uploadBuffer } from "../src/lib/storage"
 import {
   buildJsonBundles,
   buildLandingDemoBundle,
   publishBundles,
   writeLandingDemoStatic,
-} from "./lib/content";
-import { buildContentLevels, CONTENT_LEVELS_PATH } from "./lib/content-levels";
+} from "./lib/content"
+import { buildContentLevels, CONTENT_LEVELS_PATH } from "./lib/content-levels"
 
 /**
  * Publish content JSON bundles from the local source of truth
@@ -28,17 +28,17 @@ import { buildContentLevels, CONTENT_LEVELS_PATH } from "./lib/content-levels";
  */
 
 async function main() {
-  const cfg = loadMediaConfig();
+  const cfg = loadMediaConfig()
 
   // Static landing demo for apps/web — independent of storage config.
-  const landingDemo = await buildLandingDemoBundle();
-  await writeLandingDemoStatic(landingDemo);
+  const landingDemo = await buildLandingDemoBundle()
+  await writeLandingDemoStatic(landingDemo)
 
   if (!storageConfigured(cfg)) {
     console.error(
-      "Storage not configured. Set MEDIA_STORAGE_* (see .env.local / config.ts). Skipping CDN publish.",
-    );
-    process.exit(0);
+      "Storage not configured. Set MEDIA_STORAGE_* (see .env.local / config.ts). Skipping CDN publish."
+    )
+    process.exit(0)
   }
 
   // Content-levels whitelist: regenerate fresh here too (not only in
@@ -48,30 +48,30 @@ async function main() {
   // review validation — students never see it and it changes rarely, so a
   // month-long CDN cache meaningfully cuts origin requests with no
   // student-facing impact.
-  const levels = await buildContentLevels();
-  const levelsBody = Buffer.from(JSON.stringify(levels, null, 2) + "\n");
+  const levels = await buildContentLevels()
+  const levelsBody = Buffer.from(JSON.stringify(levels, null, 2) + "\n")
   await import("node:fs/promises").then((fs) =>
-    fs.writeFile(CONTENT_LEVELS_PATH, levelsBody, "utf-8"),
-  );
+    fs.writeFile(CONTENT_LEVELS_PATH, levelsBody, "utf-8")
+  )
 
-  const client = createStorageClient(cfg);
+  const client = createStorageClient(cfg)
   await uploadBuffer(
     cfg,
     client,
     "data/content-levels.json",
     levelsBody,
     "application/json",
-    "public, max-age=2592000",
-  );
+    "public, max-age=2592000"
+  )
   console.log(
-    `✓ content-levels.json → data/content-levels.json (${(levelsBody.length / 1024).toFixed(1)} KB, ${Object.keys(levels).length} langs)`,
-  );
+    `✓ content-levels.json → data/content-levels.json (${(levelsBody.length / 1024).toFixed(1)} KB, ${Object.keys(levels).length} langs)`
+  )
 
-  const bundles = await buildJsonBundles();
-  await publishBundles(cfg, client, bundles);
+  const bundles = await buildJsonBundles()
+  await publishBundles(cfg, client, bundles)
 }
 
 main().catch((err) => {
-  console.error("Fatal:", err);
-  process.exit(1);
-});
+  console.error("Fatal:", err)
+  process.exit(1)
+})

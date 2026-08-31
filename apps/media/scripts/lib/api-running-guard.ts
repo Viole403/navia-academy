@@ -1,5 +1,5 @@
-const DEFAULT_HEALTH_URL = "http://localhost:8080/api/v1/health";
-const GUARD_TIMEOUT_MS = 1500;
+const DEFAULT_HEALTH_URL = "http://localhost:8080/api/v1/health"
+const GUARD_TIMEOUT_MS = 1500
 
 /**
  * Mutual-exclusion preflight for batch generation.
@@ -24,17 +24,17 @@ const GUARD_TIMEOUT_MS = 1500;
 
 /** Probe the backend health endpoint. True when anything answered. */
 export async function checkApiRunning(): Promise<boolean> {
-  const url = process.env.MEDIA_API_HEALTH_URL || DEFAULT_HEALTH_URL;
-  const controller = new AbortController();
-  const timer = setTimeout(() => controller.abort(), GUARD_TIMEOUT_MS);
+  const url = process.env.MEDIA_API_HEALTH_URL || DEFAULT_HEALTH_URL
+  const controller = new AbortController()
+  const timer = setTimeout(() => controller.abort(), GUARD_TIMEOUT_MS)
   try {
-    await fetch(url, { signal: controller.signal });
-    return true;
+    await fetch(url, { signal: controller.signal })
+    return true
   } catch {
     // Nothing answered the probe -> api is down -> sequential model holds.
-    return false;
+    return false
   } finally {
-    clearTimeout(timer);
+    clearTimeout(timer)
   }
 }
 
@@ -48,8 +48,8 @@ function warnOverlap(url: string): void {
       "  the provider auto-suspend line (>95% sustained CPU).",
       "  Proceed only deliberately — or stop the api / set MEDIA_BATCH_GUARD=off.",
       "",
-    ].join("\n"),
-  );
+    ].join("\n")
+  )
 }
 
 /**
@@ -59,15 +59,17 @@ function warnOverlap(url: string): void {
  * only because CLIs are short-lived processes).
  */
 export async function guardApiNotRunningCli(): Promise<void> {
-  const mode = (process.env.MEDIA_BATCH_GUARD ?? "").toLowerCase();
-  if (mode === "off") return;
+  const mode = (process.env.MEDIA_BATCH_GUARD ?? "").toLowerCase()
+  if (mode === "off") return
 
-  const url = process.env.MEDIA_API_HEALTH_URL || DEFAULT_HEALTH_URL;
-  if (!(await checkApiRunning())) return;
+  const url = process.env.MEDIA_API_HEALTH_URL || DEFAULT_HEALTH_URL
+  if (!(await checkApiRunning())) return
 
-  warnOverlap(url);
+  warnOverlap(url)
   if (mode === "strict") {
-    console.error("MEDIA_BATCH_GUARD=strict — refusing to start while the api is up.");
-    process.exit(1);
+    console.error(
+      "MEDIA_BATCH_GUARD=strict — refusing to start while the api is up."
+    )
+    process.exit(1)
   }
 }

@@ -1,17 +1,17 @@
-"use client";
+"use client"
 
-import { motion, useInView, useReducedMotion } from "framer-motion";
-import { useRef, type ReactNode } from "react";
-import { cn } from "@/lib/utils";
+import { motion, useInView, useReducedMotion } from "framer-motion"
+import { useRef, type ReactNode } from "react"
+import { cn } from "@/lib/utils"
 
-type HighlighterAction = "underline" | "highlight";
+type HighlighterAction = "underline" | "highlight"
 
 interface HighlighterProps {
-  children: ReactNode;
-  action?: HighlighterAction;
+  children: ReactNode
+  action?: HighlighterAction
   /** Any CSS color — pass semantic vars (e.g. var(--bauhaus-red)), never raw hex. */
-  color?: string;
-  className?: string;
+  color?: string
+  className?: string
 }
 
 /**
@@ -25,10 +25,10 @@ export function Highlighter({
   color = "var(--bauhaus-red)",
   className,
 }: HighlighterProps) {
-  const ref = useRef<HTMLSpanElement>(null);
-  const inView = useInView(ref, { once: true, margin: "-10% 0px -10% 0px" });
-  const reduce = useReducedMotion();
-  const show = inView || Boolean(reduce);
+  const ref = useRef<HTMLSpanElement>(null)
+  const inView = useInView(ref, { once: true, margin: "-10% 0px -10% 0px" })
+  const reduce = useReducedMotion()
+  const show = inView || Boolean(reduce)
 
   return (
     <span ref={ref} className={cn("relative inline-block", className)}>
@@ -63,5 +63,5 @@ export function Highlighter({
       )}
       <span className="relative">{children}</span>
     </span>
-  );
+  )
 }

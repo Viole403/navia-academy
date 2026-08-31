@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import { useMemo, useState } from "react"
 import {
   ActivityIndicator,
   FlatList,
@@ -6,46 +6,46 @@ import {
   ScrollView,
   Text,
   View,
-} from "react-native";
-import { SafeAreaView } from "react-native-safe-area-context";
-import { useRouter } from "expo-router";
-import { useQuery } from "@tanstack/react-query";
-import { Chip } from "@/components/ui/Chip";
-import { EmptyState } from "@/components/ui/EmptyState";
-import { Input } from "@/components/ui/Input";
-import { Motif } from "@/components/ui/Motif";
-import { Card } from "@/components/ui/Card";
-import { ProgressBar } from "@/components/ui/ProgressBar";
-import { useTheme } from "@/theme/ThemeProvider";
-import { fonts, type } from "@/theme/typography";
-import { progress } from "@/api/endpoints";
-import { loadVocabulary } from "@/lib/content-data";
-import type { VocabWord } from "@/types/api";
+} from "react-native"
+import { SafeAreaView } from "react-native-safe-area-context"
+import { useRouter } from "expo-router"
+import { useQuery } from "@tanstack/react-query"
+import { Chip } from "@/components/ui/Chip"
+import { EmptyState } from "@/components/ui/EmptyState"
+import { Input } from "@/components/ui/Input"
+import { Motif } from "@/components/ui/Motif"
+import { Card } from "@/components/ui/Card"
+import { ProgressBar } from "@/components/ui/ProgressBar"
+import { useTheme } from "@/theme/ThemeProvider"
+import { fonts, type } from "@/theme/typography"
+import { progress } from "@/api/endpoints"
+import { loadVocabulary } from "@/lib/content-data"
+import type { VocabWord } from "@/types/api"
 
-const EXAM_TYPES = ["hsk", "tocfl"];
+const EXAM_TYPES = ["hsk", "tocfl"]
 
 export default function LearnTab() {
-  const { theme } = useTheme();
-  const router = useRouter();
-  const [search, setSearch] = useState("");
-  const [examType, setExamType] = useState<string>("hsk");
-  const [examLevel, setExamLevel] = useState<string>("1");
-  const [tab, setTab] = useState<"browse" | "review">("browse");
+  const { theme } = useTheme()
+  const router = useRouter()
+  const [search, setSearch] = useState("")
+  const [examType, setExamType] = useState<string>("hsk")
+  const [examLevel, setExamLevel] = useState<string>("1")
+  const [tab, setTab] = useState<"browse" | "review">("browse")
 
   const vocabAll = useQuery({
     queryKey: ["vocab-all"],
     queryFn: () => loadVocabulary(),
-  });
+  })
   const statsQ = useQuery({
     queryKey: ["vocab-stats", examType],
     queryFn: async () => {
-      const all = await loadVocabulary();
-      const levels = new Map<string, number>();
+      const all = await loadVocabulary()
+      const levels = new Map<string, number>()
       for (const w of all) {
-        const lv = w.examMappings?.[examType];
-        if (lv === undefined) continue;
-        const key = String(lv).toUpperCase();
-        levels.set(key, (levels.get(key) ?? 0) + 1);
+        const lv = w.examMappings?.[examType]
+        if (lv === undefined) continue
+        const key = String(lv).toUpperCase()
+        levels.set(key, (levels.get(key) ?? 0) + 1)
       }
       return {
         exam: examType,
@@ -54,30 +54,39 @@ export default function LearnTab() {
           totalWords,
           coverage: 0,
         })),
-      };
+      }
     },
-  });
-  const srsQ = useQuery({ queryKey: ["srs-stats"], queryFn: progress.srsStats });
+  })
+  const srsQ = useQuery({ queryKey: ["srs-stats"], queryFn: progress.srsStats })
   const dueCardsQ = useQuery({
     queryKey: ["due-cards"],
     queryFn: () => progress.dueCards(50),
     enabled: tab === "review",
-  });
+  })
 
   const levels = useMemo(() => {
-    const s = statsQ.data?.levels ?? [];
-    return s.map((l) => l.level).sort();
-  }, [statsQ.data]);
+    const s = statsQ.data?.levels ?? []
+    return s.map((l) => l.level).sort()
+  }, [statsQ.data])
 
   return (
-    <SafeAreaView style={{ flex: 1, backgroundColor: theme.bg }} edges={["top"]}>
+    <SafeAreaView
+      style={{ flex: 1, backgroundColor: theme.bg }}
+      edges={["top"]}
+    >
       <ScrollView
         contentContainerStyle={{ padding: 24, gap: 24, paddingBottom: 32 }}
         stickyHeaderIndices={[1]}
       >
         {/* Masthead */}
         <View style={{ gap: 12 }}>
-          <View style={{ flexDirection: "row", justifyContent: "space-between", alignItems: "flex-start" }}>
+          <View
+            style={{
+              flexDirection: "row",
+              justifyContent: "space-between",
+              alignItems: "flex-start",
+            }}
+          >
             <View style={{ flex: 1, gap: 8 }}>
               <Text style={[type.labelSm, { color: theme.textMuted }]}>
                 Library
@@ -104,7 +113,7 @@ export default function LearnTab() {
         >
           <View style={{ flexDirection: "row", gap: 24 }}>
             {(["browse", "review"] as const).map((t) => {
-              const sel = tab === t;
+              const sel = tab === t
               return (
                 <Pressable key={t} onPress={() => setTab(t)}>
                   <Text
@@ -127,7 +136,7 @@ export default function LearnTab() {
                     )}
                   </Text>
                 </Pressable>
-              );
+              )
             })}
           </View>
         </View>
@@ -163,7 +172,11 @@ export default function LearnTab() {
             </Text>
           </View>
           <Text
-            style={{ color: theme.textDim, fontFamily: fonts.serif, fontSize: 18 }}
+            style={{
+              color: theme.textDim,
+              fontFamily: fonts.serif,
+              fontSize: 18,
+            }}
           >
             →
           </Text>
@@ -181,11 +194,14 @@ export default function LearnTab() {
             statsLoading={statsQ.isLoading}
           />
         ) : (
-          <ReviewTab dueCount={srsQ.data?.due ?? 0} loading={dueCardsQ.isLoading} />
+          <ReviewTab
+            dueCount={srsQ.data?.due ?? 0}
+            loading={dueCardsQ.isLoading}
+          />
         )}
       </ScrollView>
     </SafeAreaView>
-  );
+  )
 }
 
 // ─── Browse sub-tab ────────────────────────────────────────────────────────
@@ -199,49 +215,61 @@ function BrowseTab({
   levels,
   statsLoading,
 }: {
-  search: string;
-  setSearch: (s: string) => void;
-  examType: string;
-  setExamType: (s: string) => void;
-  examLevel: string;
-  setExamLevel: (s: string) => void;
-  levels: string[];
-  statsLoading: boolean;
+  search: string
+  setSearch: (s: string) => void
+  examType: string
+  setExamType: (s: string) => void
+  examLevel: string
+  setExamLevel: (s: string) => void
+  levels: string[]
+  statsLoading: boolean
 }) {
-  const { theme } = useTheme();
+  const { theme } = useTheme()
 
   const vocabQ = useQuery({
     queryKey: ["vocab", search, examType, examLevel],
     queryFn: async () => {
-      const all = await loadVocabulary();
-      const q = search.trim().toLowerCase();
-      return all.filter((w) => {
-        if (examLevel && String(w.examMappings?.[examType] ?? "").toUpperCase() !== examLevel) return false;
-        if (!q) return true;
-        return (
-          (w.hanzi ?? "").toLowerCase().includes(q) ||
-          (w.pinyin ?? "").toLowerCase().includes(q) ||
-          (w.translation ?? "").toLowerCase().includes(q)
-        );
-      }).slice(0, 50);
+      const all = await loadVocabulary()
+      const q = search.trim().toLowerCase()
+      return all
+        .filter((w) => {
+          if (
+            examLevel &&
+            String(w.examMappings?.[examType] ?? "").toUpperCase() !== examLevel
+          )
+            return false
+          if (!q) return true
+          return (
+            (w.hanzi ?? "").toLowerCase().includes(q) ||
+            (w.pinyin ?? "").toLowerCase().includes(q) ||
+            (w.translation ?? "").toLowerCase().includes(q)
+          )
+        })
+        .slice(0, 50)
     },
-  });
+  })
 
   return (
     <View style={{ gap: 20 }}>
       {/* Exam type chips */}
       <View style={{ gap: 10 }}>
-        <Text style={[type.labelSm, { color: theme.textMuted }]}>Curriculum</Text>
-        <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={{ gap: 8 }}>
+        <Text style={[type.labelSm, { color: theme.textMuted }]}>
+          Curriculum
+        </Text>
+        <ScrollView
+          horizontal
+          showsHorizontalScrollIndicator={false}
+          contentContainerStyle={{ gap: 8 }}
+        >
           {EXAM_TYPES.map((t) => (
             <Chip
               key={t}
               label={t.toUpperCase()}
               selected={examType === t}
               onPress={() => {
-                setExamType(t);
+                setExamType(t)
                 // Reset level — different exams have different ladders
-                setExamLevel(t === "hsk" ? "1" : t === "tocfl" ? "A1" : "1");
+                setExamLevel(t === "hsk" ? "1" : t === "tocfl" ? "A1" : "1")
               }}
             />
           ))}
@@ -254,7 +282,11 @@ function BrowseTab({
         {statsLoading ? (
           <ActivityIndicator color={theme.accent} />
         ) : (
-          <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={{ gap: 8 }}>
+          <ScrollView
+            horizontal
+            showsHorizontalScrollIndicator={false}
+            contentContainerStyle={{ gap: 8 }}
+          >
             {levels.length === 0 && (
               <Text style={[type.caption, { color: theme.textDim }]}>
                 No levels discovered.
@@ -287,7 +319,9 @@ function BrowseTab({
       {/* Results */}
       <View style={{ gap: 8 }}>
         <View style={{ flexDirection: "row", justifyContent: "space-between" }}>
-          <Text style={[type.labelSm, { color: theme.textMuted }]}>Results</Text>
+          <Text style={[type.labelSm, { color: theme.textMuted }]}>
+            Results
+          </Text>
           {vocabQ.data && vocabQ.data.length > 0 && (
             <Text style={[type.caption, { color: theme.textMuted }]}>
               {vocabQ.data.length.toLocaleString()} entries
@@ -306,18 +340,22 @@ function BrowseTab({
         ) : (
           <View style={{ borderTopWidth: 1, borderTopColor: theme.border }}>
             {vocabQ.data?.map((w, i) => (
-              <WordRow key={w.id} word={w} isLast={i === (vocabQ.data?.length ?? 0) - 1} />
+              <WordRow
+                key={w.id}
+                word={w}
+                isLast={i === (vocabQ.data?.length ?? 0) - 1}
+              />
             ))}
           </View>
         )}
       </View>
     </View>
-  );
+  )
 }
 
 function WordRow({ word, isLast }: { word: VocabWord; isLast: boolean }) {
-  const { theme } = useTheme();
-  const router = useRouter();
+  const { theme } = useTheme()
+  const router = useRouter()
   return (
     <Pressable
       onPress={() =>
@@ -353,15 +391,25 @@ function WordRow({ word, isLast }: { word: VocabWord; isLast: boolean }) {
           {(word as { translation?: string }).translation ?? ""}
         </Text>
       </View>
-      <Text style={{ color: theme.textDim, fontFamily: fonts.serif, fontSize: 18 }}>→</Text>
+      <Text
+        style={{ color: theme.textDim, fontFamily: fonts.serif, fontSize: 18 }}
+      >
+        →
+      </Text>
     </Pressable>
-  );
+  )
 }
 
 // ─── Review sub-tab ────────────────────────────────────────────────────────
-function ReviewTab({ dueCount, loading }: { dueCount: number; loading: boolean }) {
-  const { theme } = useTheme();
-  const router = useRouter();
+function ReviewTab({
+  dueCount,
+  loading,
+}: {
+  dueCount: number
+  loading: boolean
+}) {
+  const { theme } = useTheme()
+  const router = useRouter()
 
   return (
     <View style={{ gap: 20 }}>
@@ -384,7 +432,11 @@ function ReviewTab({ dueCount, loading }: { dueCount: number; loading: boolean }
           <Text style={[type.bodySm, { color: theme.textMuted }]}>
             cards due for review today
           </Text>
-          <ProgressBar value={dueCount === 0 ? 1 : 0.0} height={2} tint={theme.accent} />
+          <ProgressBar
+            value={dueCount === 0 ? 1 : 0.0}
+            height={2}
+            tint={theme.accent}
+          />
         </View>
       </Card>
 
@@ -405,11 +457,18 @@ function ReviewTab({ dueCount, loading }: { dueCount: number; loading: boolean }
           }}
           disabled={loading}
         >
-          <Text style={{ color: theme.white, fontWeight: "700", fontSize: 16, letterSpacing: 0.5 }}>
+          <Text
+            style={{
+              color: theme.white,
+              fontWeight: "700",
+              fontSize: 16,
+              letterSpacing: 0.5,
+            }}
+          >
             {loading ? "Loading…" : "Start review session"}
           </Text>
         </Pressable>
       )}
     </View>
-  );
+  )
 }

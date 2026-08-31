@@ -1,13 +1,13 @@
-import { useEffect } from "react";
-import { Stack } from "expo-router";
-import { StatusBar } from "expo-status-bar";
-import { GestureHandlerRootView } from "react-native-gesture-handler";
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { ThemeProvider, useTheme } from "@/theme/ThemeProvider";
-import { useAuthStore } from "@/store/auth";
-import { getTokens } from "@/utils/secure";
-import { auth } from "@/api/endpoints";
-import "../global.css";
+import { useEffect } from "react"
+import { Stack } from "expo-router"
+import { StatusBar } from "expo-status-bar"
+import { GestureHandlerRootView } from "react-native-gesture-handler"
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query"
+import { ThemeProvider, useTheme } from "@/theme/ThemeProvider"
+import { useAuthStore } from "@/store/auth"
+import { getTokens } from "@/utils/secure"
+import { auth } from "@/api/endpoints"
+import "../global.css"
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -16,10 +16,10 @@ const queryClient = new QueryClient({
       retry: 1,
     },
   },
-});
+})
 
 function AppShell() {
-  const { theme, resolvedMode } = useTheme();
+  const { theme, resolvedMode } = useTheme()
 
   return (
     <>
@@ -31,27 +31,27 @@ function AppShell() {
         }}
       />
     </>
-  );
+  )
 }
 
 export default function RootLayout() {
-  const { setAuth, setTokens, markHydrated } = useAuthStore();
+  const { setAuth, setTokens, markHydrated } = useAuthStore()
 
   useEffect(() => {
-    (async () => {
-      const tokens = await getTokens();
+    ;(async () => {
+      const tokens = await getTokens()
       if (tokens?.accessToken) {
-        setTokens(tokens.accessToken, tokens.refreshToken);
+        setTokens(tokens.accessToken, tokens.refreshToken)
         try {
-          const me = await auth.me();
-          setAuth(me, tokens.accessToken, tokens.refreshToken);
+          const me = await auth.me()
+          setAuth(me, tokens.accessToken, tokens.refreshToken)
         } catch {
           // token invalid; refresh will be attempted by interceptor on next call
         }
       }
-      markHydrated();
-    })();
-  }, [setAuth, setTokens, markHydrated]);
+      markHydrated()
+    })()
+  }, [setAuth, setTokens, markHydrated])
 
   return (
     <GestureHandlerRootView style={{ flex: 1 }}>
@@ -61,5 +61,5 @@ export default function RootLayout() {
         </ThemeProvider>
       </QueryClientProvider>
     </GestureHandlerRootView>
-  );
+  )
 }

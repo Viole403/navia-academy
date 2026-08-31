@@ -1,8 +1,8 @@
-import { Redirect, Tabs } from "expo-router";
-import { Text } from "react-native";
-import { useTheme } from "@/theme/ThemeProvider";
-import { fonts } from "@/theme/typography";
-import { useAuthStore } from "@/store/auth";
+import { Redirect, Tabs } from "expo-router"
+import { Text } from "react-native"
+import { useTheme } from "@/theme/ThemeProvider"
+import { fonts } from "@/theme/typography"
+import { useAuthStore } from "@/store/auth"
 
 const TAB_ICONS: Record<string, string> = {
   index: "卷", // scroll / book
@@ -10,13 +10,13 @@ const TAB_ICONS: Record<string, string> = {
   exam: "考", // exam
   stats: "图", // chart
   profile: "我", // me
-};
+}
 
 export default function TabsLayout() {
-  const { theme } = useTheme();
-  const user = useAuthStore((s) => s.user);
+  const { theme } = useTheme()
+  const user = useAuthStore((s) => s.user)
 
-  if (!user) return <Redirect href="/(auth)" />;
+  if (!user) return <Redirect href="/(auth)" />
 
   return (
     <Tabs
@@ -61,5 +61,5 @@ export default function TabsLayout() {
       <Tabs.Screen name="stats" options={{ title: "Stats" }} />
       <Tabs.Screen name="profile" options={{ title: "Me" }} />
     </Tabs>
-  );
+  )
 }

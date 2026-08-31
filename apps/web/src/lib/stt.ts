@@ -25,7 +25,10 @@ type RecClass = new () => RecognitionLike
 
 export function webSpeechSupported(): boolean {
   if (typeof window === "undefined") return false
-  const w = window as unknown as { SpeechRecognition?: RecClass; webkitSpeechRecognition?: RecClass }
+  const w = window as unknown as {
+    SpeechRecognition?: RecClass
+    webkitSpeechRecognition?: RecClass
+  }
   return Boolean(w.SpeechRecognition || w.webkitSpeechRecognition)
 }
 
@@ -45,9 +48,12 @@ export function startSTT(
   onFinal: (transcript: string) => void,
   onInterim: (transcript: string) => void,
   onError: (message: string) => void,
-  onEnd: () => void,
+  onEnd: () => void
 ): SttRecognizer | null {
-  const w = window as unknown as { SpeechRecognition?: RecClass; webkitSpeechRecognition?: RecClass }
+  const w = window as unknown as {
+    SpeechRecognition?: RecClass
+    webkitSpeechRecognition?: RecClass
+  }
   const Ctor = w.SpeechRecognition || w.webkitSpeechRecognition
   if (!Ctor) return null
   const rec = new Ctor()
@@ -76,7 +82,10 @@ export function startSTT(
 }
 
 export function normalizeTranscript(s: string): string {
-  return s.normalize("NFKC").toLowerCase().replace(/[^\p{L}\p{N}]+/gu, "")
+  return s
+    .normalize("NFKC")
+    .toLowerCase()
+    .replace(/[^\p{L}\p{N}]+/gu, "")
 }
 
 export function matchTranscript(transcript: string, target: string): boolean {

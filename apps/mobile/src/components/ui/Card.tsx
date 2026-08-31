@@ -1,11 +1,11 @@
-import { PropsWithChildren } from "react";
-import { View } from "react-native";
-import { useTheme } from "@/theme/ThemeProvider";
+import { PropsWithChildren } from "react"
+import { View } from "react-native"
+import { useTheme } from "@/theme/ThemeProvider"
 
 interface CardProps {
-  padded?: boolean;
+  padded?: boolean
   /** Add a hairline top rule — editorial print style */
-  rule?: boolean;
+  rule?: boolean
 }
 
 /**
@@ -17,7 +17,7 @@ export function Card({
   padded = true,
   rule = false,
 }: PropsWithChildren<CardProps>) {
-  const { theme } = useTheme();
+  const { theme } = useTheme()
 
   return (
     <View
@@ -42,5 +42,5 @@ export function Card({
       )}
       {children}
     </View>
-  );
+  )
 }

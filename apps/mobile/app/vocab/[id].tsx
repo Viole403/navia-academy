@@ -1,26 +1,26 @@
-import { useMemo } from "react";
+import { useMemo } from "react"
 import {
   ActivityIndicator,
   Pressable,
   ScrollView,
   Text,
   View,
-} from "react-native";
-import { SafeAreaView } from "react-native-safe-area-context";
-import { Stack, useLocalSearchParams, useRouter } from "expo-router";
-import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
-import { Button } from "@/components/ui/Button";
-import { Card } from "@/components/ui/Card";
-import { Chip } from "@/components/ui/Chip";
-import { EmptyState } from "@/components/ui/EmptyState";
-import { Motif } from "@/components/ui/Motif";
-import { useTheme } from "@/theme/ThemeProvider";
-import { fonts, type } from "@/theme/typography";
-import { progress } from "@/api/endpoints";
-import { loadVocabulary } from "@/lib/content-data";
-import { useAuthStore } from "@/store/auth";
-import { useTts } from "@/hooks/useTts";
-import type { VocabWord } from "@/types/api";
+} from "react-native"
+import { SafeAreaView } from "react-native-safe-area-context"
+import { Stack, useLocalSearchParams, useRouter } from "expo-router"
+import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query"
+import { Button } from "@/components/ui/Button"
+import { Card } from "@/components/ui/Card"
+import { Chip } from "@/components/ui/Chip"
+import { EmptyState } from "@/components/ui/EmptyState"
+import { Motif } from "@/components/ui/Motif"
+import { useTheme } from "@/theme/ThemeProvider"
+import { fonts, type } from "@/theme/typography"
+import { progress } from "@/api/endpoints"
+import { loadVocabulary } from "@/lib/content-data"
+import { useAuthStore } from "@/store/auth"
+import { useTts } from "@/hooks/useTts"
+import type { VocabWord } from "@/types/api"
 
 /**
  * /vocab/[id] — vocab detail.
@@ -28,56 +28,57 @@ import type { VocabWord } from "@/types/api";
  * from a query across all visible vocabulary. Cached client-side.
  */
 export default function VocabDetail() {
-  const { theme } = useTheme();
-  const router = useRouter();
-  const { id } = useLocalSearchParams<{ id?: string }>();
-  const qc = useQueryClient();
-  const tts = useTts();
-  const user = useAuthStore((s) => s.user);
+  const { theme } = useTheme()
+  const router = useRouter()
+  const { id } = useLocalSearchParams<{ id?: string }>()
+  const qc = useQueryClient()
+  const tts = useTts()
+  const user = useAuthStore((s) => s.user)
 
   // Look up the word by scanning the vocabulary bundle from CDN.
   const wordQ = useQuery({
     queryKey: ["vocab-word", id],
     queryFn: async () => {
-      const all = await loadVocabulary();
-      return (all.find((w) => w.id === id) ?? null) as VocabWord | null;
+      const all = await loadVocabulary()
+      return (all.find((w) => w.id === id) ?? null) as VocabWord | null
     },
     enabled: !!id,
     staleTime: 60_000,
-  });
+  })
 
   const progressQ = useQuery({
     queryKey: ["progress"],
     queryFn: progress.get,
     enabled: !!user,
-  });
+  })
 
   const isSaved = useMemo(
     () => (progressQ.data?.saved_word_ids ?? []).includes(id ?? ""),
-    [progressQ.data, id],
-  );
+    [progressQ.data, id]
+  )
 
   const toggleSaveM = useMutation({
     mutationFn: async () => {
-      const current = progressQ.data?.saved_word_ids ?? [];
+      const current = progressQ.data?.saved_word_ids ?? []
       const next = isSaved
         ? current.filter((w) => w !== id)
-        : [...current, id as string];
-      return progress.update({ saved_word_ids: next });
+        : [...current, id as string]
+      return progress.update({ saved_word_ids: next })
     },
     onSuccess: () => qc.invalidateQueries({ queryKey: ["progress"] }),
-  });
+  })
 
   const addToSrsM = useMutation({
     mutationFn: () => progress.ensureCard(id as string, "word"),
     onSuccess: () => {
-      qc.invalidateQueries({ queryKey: ["due-cards"] });
-      qc.invalidateQueries({ queryKey: ["srs-stats"] });
+      qc.invalidateQueries({ queryKey: ["due-cards"] })
+      qc.invalidateQueries({ queryKey: ["srs-stats"] })
     },
-  });
+  })
 
-  const w = wordQ.data;
-  const example = (w as { exampleSentence?: string; exampleTranslation?: string }) ?? {};
+  const w = wordQ.data
+  const example =
+    (w as { exampleSentence?: string; exampleTranslation?: string }) ?? {}
 
   return (
     <SafeAreaView style={{ flex: 1, backgroundColor: theme.bg }}>
@@ -98,7 +99,10 @@ export default function VocabDetail() {
           <Text style={{ color: theme.textMuted, fontSize: 15 }}>← Back</Text>
         </Pressable>
         {w && (
-          <Pressable onPress={() => toggleSaveM.mutate()} disabled={toggleSaveM.isPending}>
+          <Pressable
+            onPress={() => toggleSaveM.mutate()}
+            disabled={toggleSaveM.isPending}
+          >
             <Text
               style={{
                 color: isSaved ? theme.accent : theme.textMuted,
@@ -114,11 +118,21 @@ export default function VocabDetail() {
       </View>
 
       {wordQ.isLoading ? (
-        <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
+        <View
+          style={{ flex: 1, alignItems: "center", justifyContent: "center" }}
+        >
           <ActivityIndicator color={theme.accent} size="large" />
         </View>
       ) : !w ? (
-        <View style={{ flex: 1, alignItems: "center", justifyContent: "center", padding: 32, gap: 16 }}>
+        <View
+          style={{
+            flex: 1,
+            alignItems: "center",
+            justifyContent: "center",
+            padding: 32,
+            gap: 16,
+          }}
+        >
           <EmptyState
             title="Not found"
             message="That word isn't in the dictionary."
@@ -127,7 +141,9 @@ export default function VocabDetail() {
           <Button title="Go back" onPress={() => router.back()} />
         </View>
       ) : (
-        <ScrollView contentContainerStyle={{ padding: 24, gap: 28, paddingBottom: 48 }}>
+        <ScrollView
+          contentContainerStyle={{ padding: 24, gap: 28, paddingBottom: 48 }}
+        >
           {/* Hanzi masthead */}
           <View style={{ gap: 8, alignItems: "center", paddingTop: 8 }}>
             <Text
@@ -142,10 +158,7 @@ export default function VocabDetail() {
               {w.hanzi}
             </Text>
             <Text
-              style={[
-                type.label,
-                { color: theme.accent, letterSpacing: 2 },
-              ]}
+              style={[type.label, { color: theme.accent, letterSpacing: 2 }]}
             >
               {(w as { pinyin?: string }).pinyin ?? ""}
             </Text>
@@ -252,5 +265,5 @@ export default function VocabDetail() {
         </ScrollView>
       )}
     </SafeAreaView>
-  );
+  )
 }

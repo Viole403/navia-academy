@@ -1,5 +1,5 @@
-import type { AssessmentAttempt, StudySessionLog, StudyTask } from "@/types";
-import { dueCards, todayLog } from "@/lib/derived";
+import type { AssessmentAttempt, StudySessionLog, StudyTask } from "@/types"
+import { dueCards, todayLog } from "@/lib/derived"
 
 /**
  * Personalized task generation ("smart plan") from the user's actual progress:
@@ -10,48 +10,64 @@ import { dueCards, todayLog } from "@/lib/derived";
  */
 
 export interface TaskPlannerInput {
-  t: (key: string, vars?: Record<string, string>) => string;
+  t: (key: string, vars?: Record<string, string>) => string
   /** SRS cards for the active learning language only. */
-  srs: Record<string, import("@/types").SrsCard>;
-  attempts: AssessmentAttempt[];
-  sessions: Record<string, StudySessionLog>;
-  dailyGoalMin: number;
-  activeExam: string;
+  srs: Record<string, import("@/types").SrsCard>
+  attempts: AssessmentAttempt[]
+  sessions: Record<string, StudySessionLog>
+  dailyGoalMin: number
+  activeExam: string
   /** Language these tasks belong to — scopes dedup within the language. */
-  language: string;
-  existing: StudyTask[];
-  today: string;
+  language: string
+  existing: StudyTask[]
+  today: string
 }
 
-const OPEN = new Set(["pending", "in-progress", "overdue"]);
+const OPEN = new Set(["pending", "in-progress", "overdue"])
 
 function parseAttempt(id: string): { examType?: string; level?: string } {
-  const parts = id.split("-");
-  return parts.length >= 2 ? { examType: parts[0], level: parts[1] } : {};
+  const parts = id.split("-")
+  return parts.length >= 2 ? { examType: parts[0], level: parts[1] } : {}
 }
 
 export function generateStudyTasks(input: TaskPlannerInput): StudyTask[] {
-  const { t, srs, attempts, sessions, dailyGoalMin, activeExam, language, existing, today } = input;
-  const out: StudyTask[] = [];
-  let seq = 0;
+  const {
+    t,
+    srs,
+    attempts,
+    sessions,
+    dailyGoalMin,
+    activeExam,
+    language,
+    existing,
+    today,
+  } = input
+  const out: StudyTask[] = []
+  let seq = 0
 
   const hasOpen = (route?: string) =>
     route !== undefined &&
-    existing.some((x) => x.language === language && x.linkedRoute === route && OPEN.has(x.status));
+    existing.some(
+      (x) =>
+        x.language === language && x.linkedRoute === route && OPEN.has(x.status)
+    )
 
   const push = (task: StudyTask) => {
-    if (task.linkedRoute && hasOpen(task.linkedRoute)) return;
-    out.push(task);
-  };
+    if (task.linkedRoute && hasOpen(task.linkedRoute)) return
+    out.push(task)
+  }
 
-  const now = new Date();
-  const due = dueCards(srs);
+  const now = new Date()
+  const due = dueCards(srs)
   if (due.length > 0) {
-    const overdue = due.filter((c) => c.due && new Date(c.due) < now).length;
+    const overdue = due.filter((c) => c.due && new Date(c.due) < now).length
     push({
       id: `gen-${Date.now()}-${seq++}`,
       title: t("tasks.gen.reviewTitle", { n: String(due.length) }),
-      description: overdue > 0 ? t("tasks.gen.reviewOverdue", { n: String(overdue) }) : t("tasks.gen.reviewDesc"),
+      description:
+        overdue > 0
+          ? t("tasks.gen.reviewOverdue", { n: String(overdue) })
+          : t("tasks.gen.reviewDesc"),
       skill: "vocabulary",
       type: "review",
       dueDate: today,
@@ -61,30 +77,37 @@ export function generateStudyTasks(input: TaskPlannerInput): StudyTask[] {
       linkedRoute: "/dashboard/review",
       createdAt: now.toISOString(),
       language,
-    });
+    })
   }
 
   // Weak exam areas → retake. Latest attempt per exam+level below 70.
-  const latest = new Map<string, AssessmentAttempt>();
+  const latest = new Map<string, AssessmentAttempt>()
   for (const a of attempts) {
-    const { examType, level } = parseAttempt(a.assessmentId);
-    if (!examType || !level) continue;
-    const key = `${examType}/${level}`;
-    const prev = latest.get(key);
-    if (!prev || new Date(a.finishedAt ?? a.startedAt) > new Date(prev.finishedAt ?? prev.startedAt)) {
-      latest.set(key, a);
+    const { examType, level } = parseAttempt(a.assessmentId)
+    if (!examType || !level) continue
+    const key = `${examType}/${level}`
+    const prev = latest.get(key)
+    if (
+      !prev ||
+      new Date(a.finishedAt ?? a.startedAt) >
+        new Date(prev.finishedAt ?? prev.startedAt)
+    ) {
+      latest.set(key, a)
     }
   }
-  let weakCount = 0;
+  let weakCount = 0
   for (const [key, a] of latest) {
-    if (a.score >= 70) continue;
-    if (weakCount >= 2) break;
-    const [examType, level] = key.split("/");
-    const route = `/dashboard/exam/${examType}/${level}`;
-    if (hasOpen(route)) continue;
+    if (a.score >= 70) continue
+    if (weakCount >= 2) break
+    const [examType, level] = key.split("/")
+    const route = `/dashboard/exam/${examType}/${level}`
+    if (hasOpen(route)) continue
     push({
       id: `gen-${Date.now()}-${seq++}`,
-      title: t("tasks.gen.retakeTitle", { exam: examType.toUpperCase(), level }),
+      title: t("tasks.gen.retakeTitle", {
+        exam: examType.toUpperCase(),
+        level,
+      }),
       description: t("tasks.gen.retakeDesc", { score: String(a.score) }),
       skill: "reading",
       type: "exam",
@@ -95,12 +118,12 @@ export function generateStudyTasks(input: TaskPlannerInput): StudyTask[] {
       linkedRoute: route,
       createdAt: now.toISOString(),
       language,
-    });
-    weakCount++;
+    })
+    weakCount++
   }
 
   // Never attempted the active exam → one practice nudge.
-  const examRoute = `/dashboard/exam`;
+  const examRoute = `/dashboard/exam`
   if (attempts.length === 0 && !hasOpen(examRoute)) {
     push({
       id: `gen-${Date.now()}-${seq++}`,
@@ -115,16 +138,18 @@ export function generateStudyTasks(input: TaskPlannerInput): StudyTask[] {
       linkedRoute: examRoute,
       createdAt: now.toISOString(),
       language,
-    });
+    })
   }
 
   // Daily goal shortfall → one focused session.
-  const todayMin = todayLog(sessions)?.minutes ?? 0;
+  const todayMin = todayLog(sessions)?.minutes ?? 0
   if (todayMin < dailyGoalMin && !hasOpen("/dashboard/learn")) {
     push({
       id: `gen-${Date.now()}-${seq++}`,
       title: t("tasks.gen.dailyTitle", { n: String(dailyGoalMin) }),
-      description: t("tasks.gen.dailyDesc", { left: String(Math.max(1, dailyGoalMin - todayMin)) }),
+      description: t("tasks.gen.dailyDesc", {
+        left: String(Math.max(1, dailyGoalMin - todayMin)),
+      }),
       skill: "vocabulary",
       type: "lesson",
       dueDate: today,
@@ -134,7 +159,7 @@ export function generateStudyTasks(input: TaskPlannerInput): StudyTask[] {
       linkedRoute: "/dashboard/learn",
       createdAt: now.toISOString(),
       language,
-    });
+    })
   }
 
   // Variety: conversation practice.
@@ -152,8 +177,8 @@ export function generateStudyTasks(input: TaskPlannerInput): StudyTask[] {
       linkedRoute: "/dashboard/conversations",
       createdAt: now.toISOString(),
       language,
-    });
+    })
   }
 
-  return out;
+  return out
 }

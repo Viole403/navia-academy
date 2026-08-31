@@ -1,13 +1,13 @@
-import { PropsWithChildren } from "react";
-import { ScrollView, View } from "react-native";
-import { SafeAreaView } from "react-native-safe-area-context";
-import { useTheme } from "@/theme/ThemeProvider";
+import { PropsWithChildren } from "react"
+import { ScrollView, View } from "react-native"
+import { SafeAreaView } from "react-native-safe-area-context"
+import { useTheme } from "@/theme/ThemeProvider"
 
 interface ScreenProps {
-  scroll?: boolean;
-  padded?: boolean;
+  scroll?: boolean
+  padded?: boolean
   /** Vertical gap between children */
-  gap?: number;
+  gap?: number
 }
 
 export function Screen({
@@ -16,11 +16,11 @@ export function Screen({
   padded = true,
   gap = 20,
 }: PropsWithChildren<ScreenProps>) {
-  const { theme } = useTheme();
+  const { theme } = useTheme()
 
   const inner = (
     <View style={{ padding: padded ? 24 : 0, gap }}>{children}</View>
-  );
+  )
 
   return (
     <SafeAreaView
@@ -38,5 +38,5 @@ export function Screen({
         <View style={{ flex: 1 }}>{inner}</View>
       )}
     </SafeAreaView>
-  );
+  )
 }

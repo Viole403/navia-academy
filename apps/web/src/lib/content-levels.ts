@@ -11,33 +11,33 @@
  * for repeat loads within a session.
  */
 
-import { useEffect, useState } from "react";
+import { useEffect, useState } from "react"
 
-export type ContentLevels = Record<string, Record<string, string[]>>;
+export type ContentLevels = Record<string, Record<string, string[]>>
 
-const BASE = (process.env.NEXT_PUBLIC_DATA_CDN_URL ?? "").replace(/\/+$/, "");
-const LEVELS_URL = `${BASE}/data/content-levels.json`;
+const BASE = (process.env.NEXT_PUBLIC_DATA_CDN_URL ?? "").replace(/\/+$/, "")
+const LEVELS_URL = `${BASE}/data/content-levels.json`
 
-let cache: ContentLevels | null = null;
-let inflight: Promise<ContentLevels> | null = null;
+let cache: ContentLevels | null = null
+let inflight: Promise<ContentLevels> | null = null
 
 /** Fetch (once per page load) and cache the published whitelist. */
 export function loadContentLevels(): Promise<ContentLevels> {
-  if (cache) return Promise.resolve(cache);
+  if (cache) return Promise.resolve(cache)
   inflight ??= fetch(LEVELS_URL)
     .then((r) => {
-      if (!r.ok) throw new Error(`HTTP ${r.status}`);
-      return r.json() as Promise<ContentLevels>;
+      if (!r.ok) throw new Error(`HTTP ${r.status}`)
+      return r.json() as Promise<ContentLevels>
     })
     .then((levels) => {
-      cache = levels;
-      return levels;
+      cache = levels
+      return levels
     })
     .catch((err) => {
-      inflight = null;
-      throw err;
-    });
-  return inflight;
+      inflight = null
+      throw err
+    })
+  return inflight
 }
 
 /**
@@ -46,22 +46,22 @@ export function loadContentLevels(): Promise<ContentLevels> {
  * prefer useAllowedRefs so they re-render once data arrives.
  */
 export function refsFor(lang: string, domain: string): string[] {
-  return cache?.[lang]?.[domain] ?? [];
+  return cache?.[lang]?.[domain] ?? []
 }
 
 /** React hook: the whitelist map (empty object until loaded). */
 export function useAllowedRefs(): ContentLevels {
-  const [levels, setLevels] = useState<ContentLevels | null>(cache);
+  const [levels, setLevels] = useState<ContentLevels | null>(cache)
   useEffect(() => {
-    let on = true;
+    let on = true
     loadContentLevels()
       .then((l) => {
-        if (on) setLevels(l);
+        if (on) setLevels(l)
       })
-      .catch(() => {});
+      .catch(() => {})
     return () => {
-      on = false;
-    };
-  }, []);
-  return levels ?? {};
+      on = false
+    }
+  }, [])
+  return levels ?? {}
 }

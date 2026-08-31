@@ -28,7 +28,12 @@ interface TypeCycleProps {
  */
 export function useTypeCycler(
   items: TypeCycleItem[],
-  opts?: { initialIndex?: number; typeSpeed?: number; deleteSpeed?: number; pause?: number },
+  opts?: {
+    initialIndex?: number
+    typeSpeed?: number
+    deleteSpeed?: number
+    pause?: number
+  }
 ) {
   const reduce = useReducedMotion()
   const [idx, setIdx] = useState(opts?.initialIndex ?? 0)
@@ -62,10 +67,15 @@ export function useTypeCycler(
       setLen(0)
       setDeleting(false)
     },
-    [items.length],
+    [items.length]
   )
 
-  return { item, text: reduce ? item.text : item.text.slice(0, len), reduce, jumpTo }
+  return {
+    item,
+    text: reduce ? item.text : item.text.slice(0, len),
+    reduce,
+    jumpTo,
+  }
 }
 
 /**
@@ -82,7 +92,12 @@ export function TypeCycle({
   showDot = true,
   initialIndex = 0,
 }: TypeCycleProps) {
-  const { item, text, reduce } = useTypeCycler(items, { initialIndex, typeSpeed, deleteSpeed, pause })
+  const { item, text, reduce } = useTypeCycler(items, {
+    initialIndex,
+    typeSpeed,
+    deleteSpeed,
+    pause,
+  })
 
   const dot = showDot ? (
     <span

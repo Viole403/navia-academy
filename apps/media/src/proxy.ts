@@ -1,5 +1,5 @@
-import { NextRequest, NextResponse } from "next/server";
-import { ADMIN_COOKIE, adminAuthEnabled, safeEqual } from "@/lib/admin-auth";
+import { NextRequest, NextResponse } from "next/server"
+import { ADMIN_COOKIE, adminAuthEnabled, safeEqual } from "@/lib/admin-auth"
 
 /**
  * Shared-secret gate for the whole Media Studio dashboard.
@@ -13,30 +13,44 @@ import { ADMIN_COOKIE, adminAuthEnabled, safeEqual } from "@/lib/admin-auth";
  * /api/import/*, and any future key-management routes) is gated here.
  */
 export async function proxy(req: NextRequest) {
-  if (!adminAuthEnabled()) return NextResponse.next();
+  if (!adminAuthEnabled()) return NextResponse.next()
 
-  const { pathname } = req.nextUrl;
+  const { pathname } = req.nextUrl
   const isPublic =
     pathname === "/login" ||
     pathname === "/api/auth/login" ||
     pathname === "/api/auth/logout" ||
     pathname.startsWith("/_next") ||
-    pathname.startsWith("/favicon");
+    pathname.startsWith("/favicon")
 
-  const cookie = req.cookies.get(ADMIN_COOKIE)?.value ?? "";
-  const authorized = isPublic || (cookie.length > 0 && safeEqual(cookie, process.env.MEDIA_ADMIN_TOKEN ?? ""));
+  const cookie = req.cookies.get(ADMIN_COOKIE)?.value ?? ""
+  const authorized =
+    isPublic ||
+    (cookie.length > 0 &&
+      safeEqual(cookie, process.env.MEDIA_ADMIN_TOKEN ?? ""))
 
-  if (authorized) return NextResponse.next();
+  if (authorized) return NextResponse.next()
 
   if (pathname.startsWith("/api/")) {
-    return NextResponse.json({ success: false, error: { code: "UNAUTHORIZED", message: "Media Studio: invalid session" } }, { status: 401 });
+    return NextResponse.json(
+      {
+        success: false,
+        error: {
+          code: "UNAUTHORIZED",
+          message: "Media Studio: invalid session",
+        },
+      },
+      { status: 401 }
+    )
   }
-  const url = req.nextUrl.clone();
-  url.pathname = "/login";
-  url.searchParams.set("next", pathname);
-  return NextResponse.redirect(url);
+  const url = req.nextUrl.clone()
+  url.pathname = "/login"
+  url.searchParams.set("next", pathname)
+  return NextResponse.redirect(url)
 }
 
 export const config = {
-  matcher: ["/((?!_next/static|_next/image|favicon.ico|.*\\.(?:svg|png|jpg|jpeg|gif|webp|ico)).*)"],
-};
+  matcher: [
+    "/((?!_next/static|_next/image|favicon.ico|.*\\.(?:svg|png|jpg|jpeg|gif|webp|ico)).*)",
+  ],
+}

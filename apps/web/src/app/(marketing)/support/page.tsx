@@ -1,47 +1,47 @@
-"use client";
+"use client"
 
-import { useEffect, useState } from "react";
-import { API_BASE_URL } from "@/lib/api";
-import { Coffee, HeartHandshake } from "lucide-react";
-import { Button, Card, EmptyState, Reveal, Spinner } from "@/components/ui";
-import { useTranslation } from "@/i18n/locale-context";
-import Image from "next/image";
+import { useEffect, useState } from "react"
+import { API_BASE_URL } from "@/lib/api"
+import { Coffee, HeartHandshake } from "lucide-react"
+import { Button, Card, EmptyState, Reveal, Spinner } from "@/components/ui"
+import { useTranslation } from "@/i18n/locale-context"
+import Image from "next/image"
 
-const TRAKTEER_URL = "https://trakteer.id/navia-academy";
-const KOFI_URL = "https://ko-fi.com/naviaacademy";
+const TRAKTEER_URL = "https://trakteer.id/navia-academy"
+const KOFI_URL = "https://ko-fi.com/naviaacademy"
 
 interface SupporterData {
-  name: string;
-  avatar_url: string | null;
-  platform: string;
-  message: string | null;
-  donated_at: string;
+  name: string
+  avatar_url: string | null
+  platform: string
+  message: string | null
+  donated_at: string
 }
 
 const PLATFORM_LABEL: Record<string, string> = {
   kofi: "Ko-fi",
   trakteer: "Trakteer",
-};
+}
 
 export default function SupportPage() {
-  const { t } = useTranslation();
-  const [data, setData] = useState<SupporterData[]>([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(false);
+  const { t } = useTranslation()
+  const [data, setData] = useState<SupporterData[]>([])
+  const [loading, setLoading] = useState(true)
+  const [error, setError] = useState(false)
 
   useEffect(() => {
     fetch(`${API_BASE_URL}/api/v1/supporters?limit=100`)
       .then((r) => {
-        if (!r.ok) throw new Error();
-        return r.json();
+        if (!r.ok) throw new Error()
+        return r.json()
       })
       .then((json: { data?: SupporterData[] }) => setData(json.data ?? []))
       .catch(() => setError(true))
-      .finally(() => setLoading(false));
-  }, []);
+      .finally(() => setLoading(false))
+  }, [])
 
-  const initials = (name: string) => name.trim().charAt(0).toUpperCase() || "?";
-  const messages = data.filter((s) => s.message).slice(0, 6);
+  const initials = (name: string) => name.trim().charAt(0).toUpperCase() || "?"
+  const messages = data.filter((s) => s.message).slice(0, 6)
 
   return (
     <main className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
@@ -54,14 +54,14 @@ export default function SupportPage() {
 
       <Reveal className="mt-10">
         <div className="rounded-xl border border-line bg-sunken/50 p-8 text-center">
-          <div className="inline-flex flex-wrap items-center justify-center gap-3 mx-auto">
+          <div className="mx-auto inline-flex flex-wrap items-center justify-center gap-3">
             <a href={TRAKTEER_URL} target="_blank" rel="noopener noreferrer">
               <Button variant="outline" size="lg">
                 <Coffee className="h-5 w-5" />
                 {t("support.donateTrakteer")}
               </Button>
             </a>
-            <HeartHandshake className="h-8 w-8 text-accent shrink-0" />
+            <HeartHandshake className="h-8 w-8 shrink-0 text-accent" />
             <a href={KOFI_URL} target="_blank" rel="noopener noreferrer">
               <Button variant="secondary" size="lg">
                 <Coffee className="h-5 w-5" />
@@ -137,5 +137,5 @@ export default function SupportPage() {
         )}
       </Reveal>
     </main>
-  );
+  )
 }

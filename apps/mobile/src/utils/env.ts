@@ -9,7 +9,7 @@
  */
 
 function str(v: unknown): string | undefined {
-  return typeof v === "string" && v.length > 0 ? v : undefined;
+  return typeof v === "string" && v.length > 0 ? v : undefined
 }
 
 export const env = {
@@ -30,16 +30,16 @@ export const env = {
 
   /** Expo release channel / runtime flavour */
   isDev: __DEV__,
-};
+}
 
 /**
  * Resolve a possibly-relative media URL against the configured base URL.
  * Absolute URLs (http/https/CDN) are returned as-is.
  */
 export function resolveMediaUrl(url: string | null | undefined): string | null {
-  if (!url) return null;
-  if (url.startsWith("http://") || url.startsWith("https://")) return url;
+  if (!url) return null
+  if (url.startsWith("http://") || url.startsWith("https://")) return url
   // Strip leading "/" so we don't end up with double slashes
-  const path = url.startsWith("/") ? url.slice(1) : url;
-  return `${env.mediaBaseUrl.replace(/\/$/, "")}/${path}`;
+  const path = url.startsWith("/") ? url.slice(1) : url
+  return `${env.mediaBaseUrl.replace(/\/$/, "")}/${path}`
 }

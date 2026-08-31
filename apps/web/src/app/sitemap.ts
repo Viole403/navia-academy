@@ -1,6 +1,6 @@
-import type { MetadataRoute } from "next";
+import type { MetadataRoute } from "next"
 
-const BASE = process.env.NEXT_PUBLIC_SITE_URL ?? "https://navia.academy";
+const BASE = process.env.NEXT_PUBLIC_SITE_URL ?? "https://navia.academy"
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
@@ -15,6 +15,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/contact`, changeFrequency: "yearly", priority: 0.3 },
     { url: `${BASE}/support`, changeFrequency: "monthly", priority: 0.4 },
     { url: `${BASE}/contributors`, changeFrequency: "monthly", priority: 0.4 },
-    { url: `${BASE}/contributors/apply`, changeFrequency: "yearly", priority: 0.3 },
-  ];
+    {
+      url: `${BASE}/contributors/apply`,
+      changeFrequency: "yearly",
+      priority: 0.3,
+    },
+  ]
 }

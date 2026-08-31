@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState } from "react"
 import {
   ActivityIndicator,
   Alert,
@@ -8,68 +8,72 @@ import {
   Switch,
   Text,
   View,
-} from "react-native";
-import { SafeAreaView } from "react-native-safe-area-context";
-import { useRouter } from "expo-router";
-import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
-import { Button } from "@/components/ui/Button";
-import { Chip } from "@/components/ui/Chip";
-import { EmptyState } from "@/components/ui/EmptyState";
-import { Input } from "@/components/ui/Input";
-import { Motif } from "@/components/ui/Motif";
-import { useTheme } from "@/theme/ThemeProvider";
-import { fonts, type } from "@/theme/typography";
-import type { ThemeDefinition, ThemeId, ThemeMode } from "@/theme/colors";
-import { community, health, progress, settings, tasks } from "@/api/endpoints";
-import { cancelStreakReminder, requestPermissions, scheduleDailyStreakReminder } from "@/utils/notifications";
-import { useAuthStore } from "@/store/auth";
-import { useThemePrefs } from "@/store/theme";
-import { clearTokens } from "@/utils/secure";
-import type { Task } from "@/types/api";
+} from "react-native"
+import { SafeAreaView } from "react-native-safe-area-context"
+import { useRouter } from "expo-router"
+import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query"
+import { Button } from "@/components/ui/Button"
+import { Chip } from "@/components/ui/Chip"
+import { EmptyState } from "@/components/ui/EmptyState"
+import { Input } from "@/components/ui/Input"
+import { Motif } from "@/components/ui/Motif"
+import { useTheme } from "@/theme/ThemeProvider"
+import { fonts, type } from "@/theme/typography"
+import type { ThemeDefinition, ThemeId, ThemeMode } from "@/theme/colors"
+import { community, health, progress, settings, tasks } from "@/api/endpoints"
+import {
+  cancelStreakReminder,
+  requestPermissions,
+  scheduleDailyStreakReminder,
+} from "@/utils/notifications"
+import { useAuthStore } from "@/store/auth"
+import { useThemePrefs } from "@/store/theme"
+import { clearTokens } from "@/utils/secure"
+import type { Task } from "@/types/api"
 
-type Section = "profile" | "tasks" | "settings" | "about";
+type Section = "profile" | "tasks" | "settings" | "about"
 
 export default function ProfileTab() {
-  const { theme, catalog } = useTheme();
-  const router = useRouter();
-  const qc = useQueryClient();
-  const user = useAuthStore((s) => s.user);
-  const signOut = useAuthStore((s) => s.signOut);
+  const { theme, catalog } = useTheme()
+  const router = useRouter()
+  const qc = useQueryClient()
+  const user = useAuthStore((s) => s.user)
+  const signOut = useAuthStore((s) => s.signOut)
 
-  const { themeId, mode, setThemeId, setMode } = useThemePrefs();
+  const { themeId, mode, setThemeId, setMode } = useThemePrefs()
 
-  const [section, setSection] = useState<Section>("profile");
-  const [newTask, setNewTask] = useState("");
+  const [section, setSection] = useState<Section>("profile")
+  const [newTask, setNewTask] = useState("")
 
-  const settingsQ = useQuery({ queryKey: ["settings"], queryFn: settings.get });
+  const settingsQ = useQuery({ queryKey: ["settings"], queryFn: settings.get })
   const tasksQ = useQuery({
     queryKey: ["tasks"],
     queryFn: tasks.list,
     enabled: section === "tasks",
-  });
+  })
 
   const updateSettingsM = useMutation({
     mutationFn: settings.update,
     onSuccess: () => qc.invalidateQueries({ queryKey: ["settings"] }),
-  });
+  })
 
   const addTaskM = useMutation({
     mutationFn: (content: string) => tasks.create(content),
     onSuccess: () => {
-      setNewTask("");
-      qc.invalidateQueries({ queryKey: ["tasks"] });
+      setNewTask("")
+      qc.invalidateQueries({ queryKey: ["tasks"] })
     },
-  });
+  })
   const toggleTaskM = useMutation({
     mutationFn: (t: Task) => tasks.update(t.id, { completed: !t.completed }),
     onSuccess: () => qc.invalidateQueries({ queryKey: ["tasks"] }),
-  });
+  })
   const deleteTaskM = useMutation({
     mutationFn: (id: string) => tasks.remove(id),
     onSuccess: () => qc.invalidateQueries({ queryKey: ["tasks"] }),
-  });
+  })
 
-  if (!user) return null;
+  if (!user) return null
 
   const onSignOut = () => {
     Alert.alert("Sign out?", "Your progress is synced to the cloud.", [
@@ -78,23 +82,30 @@ export default function ProfileTab() {
         text: "Sign out",
         style: "destructive",
         onPress: async () => {
-          await clearTokens();
-          signOut();
-          router.replace("/(auth)");
+          await clearTokens()
+          signOut()
+          router.replace("/(auth)")
         },
       },
-    ]);
-  };
+    ])
+  }
 
   return (
-    <SafeAreaView style={{ flex: 1, backgroundColor: theme.bg }} edges={["top"]}>
+    <SafeAreaView
+      style={{ flex: 1, backgroundColor: theme.bg }}
+      edges={["top"]}
+    >
       <ScrollView
         contentContainerStyle={{ padding: 24, gap: 28, paddingBottom: 48 }}
       >
         {/* Masthead */}
         <View style={{ gap: 12 }}>
           <View
-            style={{ flexDirection: "row", justifyContent: "space-between", alignItems: "flex-start" }}
+            style={{
+              flexDirection: "row",
+              justifyContent: "space-between",
+              alignItems: "flex-start",
+            }}
           >
             <View style={{ flex: 1, gap: 8 }}>
               <Text style={[type.labelSm, { color: theme.textMuted }]}>
@@ -111,15 +122,13 @@ export default function ProfileTab() {
 
         {/* Section switcher */}
         <View style={{ flexDirection: "row", gap: 8, flexWrap: "wrap" }}>
-          {(
-            [
-              { id: "profile" as Section, label: "Profile" },
-              { id: "tasks" as Section, label: "Tasks" },
-              { id: "settings" as Section, label: "Settings" },
-              { id: "about" as Section, label: "About" },
-            ]
-          ).map((s) => {
-            const sel = section === s.id;
+          {[
+            { id: "profile" as Section, label: "Profile" },
+            { id: "tasks" as Section, label: "Tasks" },
+            { id: "settings" as Section, label: "Settings" },
+            { id: "about" as Section, label: "About" },
+          ].map((s) => {
+            const sel = section === s.id
             return (
               <Pressable
                 key={s.id}
@@ -143,7 +152,7 @@ export default function ProfileTab() {
                   {s.label}
                 </Text>
               </Pressable>
-            );
+            )
           })}
         </View>
 
@@ -159,7 +168,10 @@ export default function ProfileTab() {
                 paddingVertical: 20,
               }}
             >
-              <MetaField label="Member since" value={new Date(user.created_at).toLocaleDateString()} />
+              <MetaField
+                label="Member since"
+                value={new Date(user.created_at).toLocaleDateString()}
+              />
               <MetaField label="Role" value={user.role} capitalize />
               <MetaField
                 label="Verified"
@@ -177,7 +189,9 @@ export default function ProfileTab() {
               <Text style={[type.labelSm, { color: theme.textMuted }]}>
                 Add a task
               </Text>
-              <View style={{ flexDirection: "row", gap: 8, alignItems: "flex-end" }}>
+              <View
+                style={{ flexDirection: "row", gap: 8, alignItems: "flex-end" }}
+              >
                 <View style={{ flex: 1 }}>
                   <Input
                     placeholder="e.g., Memorize 10 radicals"
@@ -189,7 +203,7 @@ export default function ProfileTab() {
                   title="Add"
                   size="sm"
                   onPress={() => {
-                    if (newTask.trim()) addTaskM.mutate(newTask.trim());
+                    if (newTask.trim()) addTaskM.mutate(newTask.trim())
                   }}
                   disabled={!newTask.trim() || addTaskM.isPending}
                   fullWidth={false}
@@ -198,10 +212,13 @@ export default function ProfileTab() {
             </View>
 
             <View style={{ gap: 10 }}>
-              <Text style={[type.labelSm, { color: theme.textMuted }]}>Open</Text>
+              <Text style={[type.labelSm, { color: theme.textMuted }]}>
+                Open
+              </Text>
               {tasksQ.isLoading ? (
                 <ActivityIndicator color={theme.accent} />
-              ) : (tasksQ.data ?? []).filter((t) => !t.completed).length === 0 ? (
+              ) : (tasksQ.data ?? []).filter((t) => !t.completed).length ===
+                0 ? (
                 <EmptyState
                   title="All clear"
                   message="Add a task above to keep momentum."
@@ -223,7 +240,9 @@ export default function ProfileTab() {
 
             {(tasksQ.data ?? []).some((t) => t.completed) && (
               <View style={{ gap: 10, marginTop: 8 }}>
-                <Text style={[type.labelSm, { color: theme.textMuted }]}>Done</Text>
+                <Text style={[type.labelSm, { color: theme.textMuted }]}>
+                  Done
+                </Text>
                 {(tasksQ.data ?? [])
                   .filter((t) => t.completed)
                   .map((t) => (
@@ -264,15 +283,13 @@ export default function ProfileTab() {
                 Appearance
               </Text>
               <View style={{ flexDirection: "row", gap: 6 }}>
-                {(
-                  [
-                    { id: "system" as ThemeMode, label: "System" },
-                    { id: "light" as ThemeMode, label: "Light" },
-                    { id: "dark" as ThemeMode, label: "Dark" },
-                    { id: "amoled" as ThemeMode, label: "AMOLED" },
-                  ]
-                ).map((m) => {
-                  const sel = mode === m.id;
+                {[
+                  { id: "system" as ThemeMode, label: "System" },
+                  { id: "light" as ThemeMode, label: "Light" },
+                  { id: "dark" as ThemeMode, label: "Dark" },
+                  { id: "amoled" as ThemeMode, label: "AMOLED" },
+                ].map((m) => {
+                  const sel = mode === m.id
                   return (
                     <Pressable
                       key={m.id}
@@ -297,14 +314,21 @@ export default function ProfileTab() {
                         {m.label}
                       </Text>
                     </Pressable>
-                  );
+                  )
                 })}
               </View>
             </View>
 
             {/* Learning prefs */}
             {settingsQ.data && (
-              <View style={{ gap: 12, borderTopWidth: 1, borderTopColor: theme.border, paddingTop: 20 }}>
+              <View
+                style={{
+                  gap: 12,
+                  borderTopWidth: 1,
+                  borderTopColor: theme.border,
+                  paddingTop: 20,
+                }}
+              >
                 <Text style={[type.labelSm, { color: theme.textMuted }]}>
                   Learning
                 </Text>
@@ -327,22 +351,22 @@ export default function ProfileTab() {
                   hint="Push notification at your chosen time"
                   value={settingsQ.data.daily_reminder}
                   onChange={async (v) => {
-                    updateSettingsM.mutate({ daily_reminder: v });
+                    updateSettingsM.mutate({ daily_reminder: v })
                     if (v) {
-                      const granted = await requestPermissions();
+                      const granted = await requestPermissions()
                       if (granted) {
                         const [h, m] = (settingsQ.data.reminder_time ?? "20:00")
                           .split(":")
-                          .map(Number);
-                        await scheduleDailyStreakReminder(h || 20, m || 0);
+                          .map(Number)
+                        await scheduleDailyStreakReminder(h || 20, m || 0)
                       } else {
                         Alert.alert(
                           "Notifications disabled",
-                          "Enable them in system settings to receive reminders.",
-                        );
+                          "Enable them in system settings to receive reminders."
+                        )
                       }
                     } else {
-                      await cancelStreakReminder();
+                      await cancelStreakReminder()
                     }
                   }}
                 />
@@ -350,7 +374,9 @@ export default function ProfileTab() {
                   label="Weekly summary"
                   hint="Every Monday morning"
                   value={settingsQ.data.weekly_summary}
-                  onChange={(v) => updateSettingsM.mutate({ weekly_summary: v })}
+                  onChange={(v) =>
+                    updateSettingsM.mutate({ weekly_summary: v })
+                  }
                 />
                 <SettingsSwitch
                   label="Focus mode"
@@ -366,7 +392,7 @@ export default function ProfileTab() {
         {section === "about" && <AboutSection />}
       </ScrollView>
     </SafeAreaView>
-  );
+  )
 }
 
 function MetaField({
@@ -374,11 +400,11 @@ function MetaField({
   value,
   capitalize,
 }: {
-  label: string;
-  value: string;
-  capitalize?: boolean;
+  label: string
+  value: string
+  capitalize?: boolean
 }) {
-  const { theme } = useTheme();
+  const { theme } = useTheme()
   return (
     <View style={{ flex: 1, gap: 4 }}>
       <Text style={[type.labelSm, { color: theme.textMuted }]}>{label}</Text>
@@ -393,7 +419,7 @@ function MetaField({
         {value}
       </Text>
     </View>
-  );
+  )
 }
 
 function TaskRow({
@@ -401,11 +427,11 @@ function TaskRow({
   onToggle,
   onDelete,
 }: {
-  task: Task;
-  onToggle: () => void;
-  onDelete: () => void;
+  task: Task
+  onToggle: () => void
+  onDelete: () => void
 }) {
-  const { theme } = useTheme();
+  const { theme } = useTheme()
   return (
     <View
       style={{
@@ -448,7 +474,7 @@ function TaskRow({
         <Text style={{ color: theme.red, fontSize: 12 }}>Delete</Text>
       </Pressable>
     </View>
-  );
+  )
 }
 
 function ThemePill({
@@ -456,9 +482,9 @@ function ThemePill({
   selected,
   onPress,
 }: {
-  def: ThemeDefinition;
-  selected: boolean;
-  onPress: () => void;
+  def: ThemeDefinition
+  selected: boolean
+  onPress: () => void
 }) {
   return (
     <Pressable
@@ -488,7 +514,7 @@ function ThemePill({
         {def.name}
       </Text>
     </Pressable>
-  );
+  )
 }
 
 function SettingsSwitch({
@@ -497,12 +523,12 @@ function SettingsSwitch({
   value,
   onChange,
 }: {
-  label: string;
-  hint?: string;
-  value: boolean;
-  onChange: (v: boolean) => void;
+  label: string
+  hint?: string
+  value: boolean
+  onChange: (v: boolean) => void
 }) {
-  const { theme } = useTheme();
+  const { theme } = useTheme()
   return (
     <View
       style={{
@@ -518,7 +544,9 @@ function SettingsSwitch({
           {label}
         </Text>
         {hint && (
-          <Text style={[type.caption, { color: theme.textMuted, marginTop: 2 }]}>
+          <Text
+            style={[type.caption, { color: theme.textMuted, marginTop: 2 }]}
+          >
             {hint}
           </Text>
         )}
@@ -530,26 +558,26 @@ function SettingsSwitch({
         thumbColor={theme.white}
       />
     </View>
-  );
+  )
 }
 
 // ─── About section ─────────────────────────────────────────────────────────
 function AboutSection() {
-  const { theme } = useTheme();
-  const router = useRouter();
+  const { theme } = useTheme()
+  const router = useRouter()
   const healthQ = useQuery({
     queryKey: ["health"],
     queryFn: health.check,
     retry: 1,
-  });
+  })
   const contributorsQ = useQuery({
     queryKey: ["contributors"],
     queryFn: () => community.contributors(50),
-  });
+  })
   const sponsorsQ = useQuery({
     queryKey: ["sponsors"],
     queryFn: () => community.sponsors(50),
-  });
+  })
 
   return (
     <View style={{ gap: 24 }}>
@@ -572,7 +600,8 @@ function AboutSection() {
               width: 8,
               height: 8,
               borderRadius: 4,
-              backgroundColor: healthQ.data?.status === "ok" ? theme.green : theme.red,
+              backgroundColor:
+                healthQ.data?.status === "ok" ? theme.green : theme.red,
             }}
           />
           <Text style={[type.bodySm, { color: theme.textMuted }]}>
@@ -587,7 +616,9 @@ function AboutSection() {
 
       {/* Contributors */}
       <View style={{ gap: 12 }}>
-        <Text style={[type.labelSm, { color: theme.textMuted }]}>Contributors</Text>
+        <Text style={[type.labelSm, { color: theme.textMuted }]}>
+          Contributors
+        </Text>
         {contributorsQ.isLoading ? (
           <ActivityIndicator color={theme.accent} />
         ) : (contributorsQ.data ?? []).length === 0 ? (
@@ -629,7 +660,12 @@ function AboutSection() {
                   </Text>
                 </View>
                 <View style={{ flex: 1 }}>
-                  <Text style={[type.bodySm, { color: theme.text, fontWeight: "600" }]}>
+                  <Text
+                    style={[
+                      type.bodySm,
+                      { color: theme.text, fontWeight: "600" },
+                    ]}
+                  >
                     {c.name}
                   </Text>
                   <Text
@@ -673,7 +709,12 @@ function AboutSection() {
                 }}
               >
                 <View style={{ flex: 1 }}>
-                  <Text style={[type.bodySm, { color: theme.text, fontWeight: "600" }]}>
+                  <Text
+                    style={[
+                      type.bodySm,
+                      { color: theme.text, fontWeight: "600" },
+                    ]}
+                  >
                     {s.name}
                   </Text>
                   {s.description && (
@@ -745,5 +786,5 @@ function AboutSection() {
         </View>
       </View>
     </View>
-  );
+  )
 }

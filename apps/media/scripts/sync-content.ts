@@ -10,25 +10,25 @@
  * CONTENT_EXPORT_TOKEN (must equal apps/backend's value) — see .env.example.
  */
 
-import { runSync } from "./lib/sync-content";
+import { runSync } from "./lib/sync-content"
 
 async function main() {
-  const args = process.argv.slice(2);
-  const flag = (name: string) => args.includes(name);
+  const args = process.argv.slice(2)
+  const flag = (name: string) => args.includes(name)
   const value = (name: string) => {
-    const i = args.indexOf(name);
-    return i > -1 ? args[i + 1] : undefined;
-  };
+    const i = args.indexOf(name)
+    return i > -1 ? args[i + 1] : undefined
+  }
 
   await runSync({
     publish: flag("--publish"),
     checkOnly: flag("--check-only"),
     lang: value("--lang"),
     domain: value("--domain"),
-  });
+  })
 }
 
 main().catch((err) => {
-  console.error("Fatal:", err);
-  process.exit(1);
-});
+  console.error("Fatal:", err)
+  process.exit(1)
+})

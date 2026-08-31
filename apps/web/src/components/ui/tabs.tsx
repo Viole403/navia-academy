@@ -1,11 +1,11 @@
-"use client";
+"use client"
 
-import { useRef, type KeyboardEvent, type ReactNode } from "react";
-import { cn } from "@/lib/utils";
+import { useRef, type KeyboardEvent, type ReactNode } from "react"
+import { cn } from "@/lib/utils"
 
 export interface TabItem {
-  id: string;
-  label: string;
+  id: string
+  label: string
 }
 
 export function Tabs({
@@ -15,51 +15,55 @@ export function Tabs({
   className,
   id,
 }: {
-  tabs: TabItem[];
-  active: string;
-  onChange: (id: string) => void;
-  className?: string;
+  tabs: TabItem[]
+  active: string
+  onChange: (id: string) => void
+  className?: string
   /** Base id used to wire each tab to its `tabpanel` (e.g. "vocab"). */
-  id?: string;
+  id?: string
 }) {
-  const tabRefs = useRef<Record<string, HTMLButtonElement | null>>({});
+  const tabRefs = useRef<Record<string, HTMLButtonElement | null>>({})
 
-  const tabButtonId = (tabId: string) => (id ? `${id}-tab-${tabId}` : undefined);
-  const panelId = (tabId: string) => (id ? `${id}-panel-${tabId}` : undefined);
+  const tabButtonId = (tabId: string) => (id ? `${id}-tab-${tabId}` : undefined)
+  const panelId = (tabId: string) => (id ? `${id}-panel-${tabId}` : undefined)
 
   const focusTab = (index: number) => {
-    const next = tabs[index];
-    if (!next) return;
-    tabRefs.current[next.id]?.focus();
-    onChange(next.id);
-  };
+    const next = tabs[index]
+    if (!next) return
+    tabRefs.current[next.id]?.focus()
+    onChange(next.id)
+  }
 
   const handleKeyDown = (e: KeyboardEvent<HTMLDivElement>) => {
-    const currentIndex = tabs.findIndex((t) => t.id === active);
-    if (currentIndex < 0) return;
-    let nextIndex = currentIndex;
-    if (e.key === "ArrowRight") nextIndex = Math.min(currentIndex + 1, tabs.length - 1);
-    else if (e.key === "ArrowLeft") nextIndex = Math.max(currentIndex - 1, 0);
-    else if (e.key === "Home") nextIndex = 0;
-    else if (e.key === "End") nextIndex = tabs.length - 1;
-    else return;
-    e.preventDefault();
-    focusTab(nextIndex);
-  };
+    const currentIndex = tabs.findIndex((t) => t.id === active)
+    if (currentIndex < 0) return
+    let nextIndex = currentIndex
+    if (e.key === "ArrowRight")
+      nextIndex = Math.min(currentIndex + 1, tabs.length - 1)
+    else if (e.key === "ArrowLeft") nextIndex = Math.max(currentIndex - 1, 0)
+    else if (e.key === "Home") nextIndex = 0
+    else if (e.key === "End") nextIndex = tabs.length - 1
+    else return
+    e.preventDefault()
+    focusTab(nextIndex)
+  }
 
   return (
     <div
       role="tablist"
       onKeyDown={handleKeyDown}
-      className={cn("flex gap-1 border-b border-line overflow-x-auto", className)}
+      className={cn(
+        "flex gap-1 overflow-x-auto border-b border-line",
+        className
+      )}
     >
       {tabs.map((t) => {
-        const selected = active === t.id;
+        const selected = active === t.id
         return (
           <button
             key={t.id}
             ref={(el) => {
-              tabRefs.current[t.id] = el;
+              tabRefs.current[t.id] = el
             }}
             id={tabButtonId(t.id)}
             role="tab"
@@ -69,16 +73,18 @@ export function Tabs({
             tabIndex={selected ? 0 : -1}
             onClick={() => onChange(t.id)}
             className={cn(
-              "px-3.5 py-2 text-sm font-medium whitespace-nowrap border-b-2 -mb-px transition-colors cursor-pointer",
-              selected ? "border-accent text-ink" : "border-transparent text-ink-faint hover:text-ink-soft"
+              "-mb-px cursor-pointer border-b-2 px-3.5 py-2 text-sm font-medium whitespace-nowrap transition-colors",
+              selected
+                ? "border-accent text-ink"
+                : "border-transparent text-ink-faint hover:text-ink-soft"
             )}
           >
             {t.label}
           </button>
-        );
+        )
       })}
     </div>
-  );
+  )
 }
 
 /**
@@ -91,10 +97,10 @@ export function TabPanel({
   className,
   children,
 }: {
-  baseId: string;
-  tabId: string;
-  className?: string;
-  children: ReactNode;
+  baseId: string
+  tabId: string
+  className?: string
+  children: ReactNode
 }) {
   return (
     <div
@@ -106,5 +112,5 @@ export function TabPanel({
     >
       {children}
     </div>
-  );
+  )
 }

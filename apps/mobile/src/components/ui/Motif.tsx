@@ -1,13 +1,19 @@
-import { Text, View } from "react-native";
-import { useTheme } from "@/theme/ThemeProvider";
-import { fonts } from "@/theme/typography";
+import { Text, View } from "react-native"
+import { useTheme } from "@/theme/ThemeProvider"
+import { fonts } from "@/theme/typography"
 
 /**
  * Editorial motif — a single akzent element placed beside key content.
  * Resembles a Chinese chop seal: a small framed square with one Hanzi.
  */
-export function Motif({ char = "章", size = 56 }: { char?: string; size?: number }) {
-  const { theme } = useTheme();
+export function Motif({
+  char = "章",
+  size = 56,
+}: {
+  char?: string
+  size?: number
+}) {
+  const { theme } = useTheme()
 
   return (
     <View
@@ -34,5 +40,5 @@ export function Motif({ char = "章", size = 56 }: { char?: string; size?: numbe
         {char}
       </Text>
     </View>
-  );
+  )
 }

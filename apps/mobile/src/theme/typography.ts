@@ -1,4 +1,4 @@
-import { Platform, TextStyle } from "react-native";
+import { Platform, TextStyle } from "react-native"
 
 // Editorial Print: serif untuk judul & hanzi, sans untuk body/label
 export const fonts = {
@@ -17,7 +17,7 @@ export const fonts = {
     android: "monospace",
     default: "Courier",
   }) as string,
-};
+}
 
 export const type = {
   display: {
@@ -98,4 +98,4 @@ export const type = {
     lineHeight: 34,
     fontWeight: "400" as const,
   },
-} satisfies Record<string, TextStyle>;
+} satisfies Record<string, TextStyle>

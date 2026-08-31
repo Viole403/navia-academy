@@ -1,17 +1,17 @@
-import { ActivityIndicator, Pressable, Text } from "react-native";
-import { useTheme } from "@/theme/ThemeProvider";
+import { ActivityIndicator, Pressable, Text } from "react-native"
+import { useTheme } from "@/theme/ThemeProvider"
 
-type Variant = "primary" | "secondary" | "ghost" | "danger";
-type Size = "sm" | "md" | "lg";
+type Variant = "primary" | "secondary" | "ghost" | "danger"
+type Size = "sm" | "md" | "lg"
 
 interface ButtonProps {
-  title: string;
-  onPress?: () => void;
-  variant?: Variant;
-  disabled?: boolean;
-  loading?: boolean;
-  fullWidth?: boolean;
-  size?: Size;
+  title: string
+  onPress?: () => void
+  variant?: Variant
+  disabled?: boolean
+  loading?: boolean
+  fullWidth?: boolean
+  size?: Size
 }
 
 /**
@@ -27,11 +27,11 @@ export function Button({
   fullWidth = true,
   size = "md",
 }: ButtonProps) {
-  const { theme } = useTheme();
+  const { theme } = useTheme()
 
-  const padY = size === "sm" ? 10 : size === "lg" ? 18 : 14;
-  const padX = size === "sm" ? 16 : size === "lg" ? 28 : 22;
-  const fontSize = size === "sm" ? 14 : size === "lg" ? 17 : 16;
+  const padY = size === "sm" ? 10 : size === "lg" ? 18 : 14
+  const padX = size === "sm" ? 16 : size === "lg" ? 28 : 22
+  const fontSize = size === "sm" ? 14 : size === "lg" ? 17 : 16
 
   if (variant === "ghost") {
     return (
@@ -59,18 +59,18 @@ export function Button({
           {title}
         </Text>
       </Pressable>
-    );
+    )
   }
 
-  const filled = variant === "primary" || variant === "danger";
+  const filled = variant === "primary" || variant === "danger"
   const bg =
     variant === "danger"
       ? theme.red
       : variant === "primary"
         ? theme.accent
-        : "transparent";
-  const borderColor = variant === "secondary" ? theme.border : bg;
-  const textColor = filled ? theme.white : theme.text;
+        : "transparent"
+  const borderColor = variant === "secondary" ? theme.border : bg
+  const textColor = filled ? theme.white : theme.text
 
   return (
     <Pressable
@@ -107,5 +107,5 @@ export function Button({
         </Text>
       )}
     </Pressable>
-  );
+  )
 }

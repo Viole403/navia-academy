@@ -1,15 +1,15 @@
-"use client";
+"use client"
 
-import { type ComponentPropsWithoutRef, type ReactNode } from "react";
-import { cn } from "@/lib/utils";
+import { type ComponentPropsWithoutRef, type ReactNode } from "react"
+import { cn } from "@/lib/utils"
 
 interface MarqueeProps extends ComponentPropsWithoutRef<"div"> {
-  className?: string;
-  reverse?: boolean;
-  pauseOnHover?: boolean;
-  vertical?: boolean;
-  repeat?: number;
-  children: ReactNode;
+  className?: string
+  reverse?: boolean
+  pauseOnHover?: boolean
+  vertical?: boolean
+  repeat?: number
+  children: ReactNode
 }
 
 /** Infinite horizontal scroll strip. CSS-only, honors prefers-reduced-motion
@@ -28,7 +28,7 @@ export function Marquee({
     <div
       {...props}
       className={cn(
-        "group flex overflow-hidden [--duration:40s] [--gap:1rem] [gap:var(--gap)]",
+        "group flex [gap:var(--gap)] overflow-hidden [--duration:40s] [--gap:1rem]",
         vertical && "flex-col",
         className
       )}
@@ -39,7 +39,11 @@ export function Marquee({
           className={cn(
             "flex shrink-0 justify-around [gap:var(--gap)]",
             vertical ? "[flex-direction:column]" : "flex-row",
-            vertical ? "animate-marquee-vertical" : reverse ? "animate-marquee-reverse" : "animate-marquee",
+            vertical
+              ? "animate-marquee-vertical"
+              : reverse
+                ? "animate-marquee-reverse"
+                : "animate-marquee",
             pauseOnHover && "group-hover:[animation-play-state:paused]"
           )}
         >
@@ -47,5 +51,5 @@ export function Marquee({
         </div>
       ))}
     </div>
-  );
+  )
 }

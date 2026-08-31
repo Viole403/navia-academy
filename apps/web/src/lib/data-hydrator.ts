@@ -1,5 +1,8 @@
-import { getLearningLanguage, subscribeLearningLanguage } from "@/lib/language-context";
-import type { LanguageCode } from "@/types";
+import {
+  getLearningLanguage,
+  subscribeLearningLanguage,
+} from "@/lib/language-context"
+import type { LanguageCode } from "@/types"
 
 /**
  * Wraps a language-scoped data loader into a hydrator that:
@@ -11,35 +14,35 @@ export function makeHydrator<T>(
   load: (lang: LanguageCode) => Promise<T>,
   setData: (data: T) => void
 ): () => Promise<T> {
-  let promise: Promise<T> | null = null;
-  let loadedFor: LanguageCode | null = null;
-  let unsubscribe: (() => void) | null = null;
+  let promise: Promise<T> | null = null
+  let loadedFor: LanguageCode | null = null
+  let unsubscribe: (() => void) | null = null
 
   const hydrate = (): Promise<T> => {
     if (typeof window !== "undefined" && !unsubscribe) {
       unsubscribe = subscribeLearningLanguage(() => {
         if (getLearningLanguage() !== loadedFor) {
-          promise = null;
-          void hydrate();
+          promise = null
+          void hydrate()
         }
-      });
+      })
     }
 
-    const lang = getLearningLanguage();
-    if (promise && loadedFor === lang) return promise;
+    const lang = getLearningLanguage()
+    if (promise && loadedFor === lang) return promise
 
-    loadedFor = lang;
+    loadedFor = lang
     promise = load(lang)
       .then((data) => {
-        if (loadedFor === lang) setData(data);
-        return data;
+        if (loadedFor === lang) setData(data)
+        return data
       })
       .catch((err) => {
-        if (loadedFor === lang) promise = null;
-        throw err;
-      });
-    return promise;
-  };
+        if (loadedFor === lang) promise = null
+        throw err
+      })
+    return promise
+  }
 
-  return hydrate;
+  return hydrate
 }

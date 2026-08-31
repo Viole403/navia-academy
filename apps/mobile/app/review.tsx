@@ -1,102 +1,110 @@
-import { useCallback, useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useState } from "react"
 import {
   ActivityIndicator,
   Pressable,
   ScrollView,
   Text,
   View,
-} from "react-native";
-import { SafeAreaView } from "react-native-safe-area-context";
-import { useRouter } from "expo-router";
-import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
-import { Button } from "@/components/ui/Button";
-import { Card } from "@/components/ui/Card";
-import { EmptyState } from "@/components/ui/EmptyState";
-import { ProgressBar } from "@/components/ui/ProgressBar";
-import { useTheme } from "@/theme/ThemeProvider";
-import { fonts, type } from "@/theme/typography";
-import { progress } from "@/api/endpoints";
-import { loadVocabulary } from "@/lib/content-data";
+} from "react-native"
+import { SafeAreaView } from "react-native-safe-area-context"
+import { useRouter } from "expo-router"
+import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query"
+import { Button } from "@/components/ui/Button"
+import { Card } from "@/components/ui/Card"
+import { EmptyState } from "@/components/ui/EmptyState"
+import { ProgressBar } from "@/components/ui/ProgressBar"
+import { useTheme } from "@/theme/ThemeProvider"
+import { fonts, type } from "@/theme/typography"
+import { progress } from "@/api/endpoints"
+import { loadVocabulary } from "@/lib/content-data"
 import {
   drain,
   getPendingCount,
   logStudyWithQueue,
   reviewWithQueue,
-} from "@/utils/offlineQueue";
-import type { SrsCard, VocabWord } from "@/types/api";
+} from "@/utils/offlineQueue"
+import type { SrsCard, VocabWord } from "@/types/api"
 
-type Grade = 0 | 1 | 2 | 3;
+type Grade = 0 | 1 | 2 | 3
 const GRADES: { grade: Grade; label: string; hint: string }[] = [
   { grade: 0, label: "Lupa", hint: "Again" },
   { grade: 1, label: "Susah", hint: "Hard" },
   { grade: 2, label: "Oke", hint: "Good" },
   { grade: 3, label: "Gampang", hint: "Easy" },
-];
+]
 
 export default function ReviewScreen() {
-  const { theme } = useTheme();
-  const router = useRouter();
-  const qc = useQueryClient();
+  const { theme } = useTheme()
+  const router = useRouter()
+  const qc = useQueryClient()
 
   const dueQ = useQuery({
     queryKey: ["due-cards"],
     queryFn: () => progress.dueCards(50),
-  });
+  })
 
-  const [index, setIndex] = useState(0);
-  const [revealed, setRevealed] = useState(false);
+  const [index, setIndex] = useState(0)
+  const [revealed, setRevealed] = useState(false)
 
-  const cards = useMemo<SrsCard[]>(() => dueQ.data ?? [], [dueQ.data]);
-  const current = cards[index];
+  const cards = useMemo<SrsCard[]>(() => dueQ.data ?? [], [dueQ.data])
+  const current = cards[index]
 
   // We need the vocabulary word for this card — look it up by id.
   const wordQ = useQuery({
     queryKey: ["vocab-item", current?.item_id],
     queryFn: async () => {
-      const all = await loadVocabulary();
-      return (all.find((w) => w.id === current?.item_id) ?? null) as VocabWord | null;
+      const all = await loadVocabulary()
+      return (all.find((w) => w.id === current?.item_id) ??
+        null) as VocabWord | null
     },
     enabled: !!current,
-  });
+  })
 
   const reviewM = useMutation({
     mutationFn: async (grade: Grade) => {
-      const start = Date.now();
-      const res = await reviewWithQueue(current!.item_id, current!.kind, grade);
+      const start = Date.now()
+      const res = await reviewWithQueue(current!.item_id, current!.kind, grade)
       // optimistic: also record a tiny study session (2 min per card is a
       // heuristic; real time-tracking lands in a follow-up)
-      await logStudyWithQueue(1, 5);
-      return res;
+      await logStudyWithQueue(1, 5)
+      return res
     },
     onSuccess: () => {
-      qc.invalidateQueries({ queryKey: ["due-cards"] });
-      qc.invalidateQueries({ queryKey: ["srs-stats"] });
-      setRevealed(false);
+      qc.invalidateQueries({ queryKey: ["due-cards"] })
+      qc.invalidateQueries({ queryKey: ["srs-stats"] })
+      setRevealed(false)
       if (index < cards.length - 1) {
-        setIndex(index + 1);
+        setIndex(index + 1)
       } else {
-        setIndex(cards.length); // done
+        setIndex(cards.length) // done
       }
     },
-  });
+  })
 
-  const done = cards.length > 0 && index >= cards.length;
+  const done = cards.length > 0 && index >= cards.length
 
   // Show how many ops are still queued (offline mode)
-  const [pending, setPending] = useState(0);
+  const [pending, setPending] = useState(0)
   const refreshPending = useCallback(async () => {
-    setPending(await getPendingCount());
-  }, []);
+    setPending(await getPendingCount())
+  }, [])
   useEffect(() => {
-    refreshPending().catch(() => {});
-  }, [refreshPending, reviewM.isSuccess]);
+    refreshPending().catch(() => {})
+  }, [refreshPending, reviewM.isSuccess])
 
   if (dueQ.isLoading) {
     return (
-      <SafeAreaView style={{ flex: 1, backgroundColor: theme.bg, alignItems: "center", justifyContent: "center" }}>
+      <SafeAreaView
+        style={{
+          flex: 1,
+          backgroundColor: theme.bg,
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      >
         <ActivityIndicator color={theme.accent} size="large" />
       </SafeAreaView>
-    );
+    )
   }
 
   return (
@@ -128,7 +136,9 @@ export default function ReviewScreen() {
       {pending > 0 && (
         <Pressable
           onPress={() =>
-            drain().then(() => refreshPending()).catch(() => {})
+            drain()
+              .then(() => refreshPending())
+              .catch(() => {})
           }
           style={{
             paddingVertical: 6,
@@ -139,14 +149,23 @@ export default function ReviewScreen() {
             borderBottomColor: theme.border,
           }}
         >
-          <Text style={{ color: theme.textMuted, fontSize: 11, letterSpacing: 1 }}>
+          <Text
+            style={{ color: theme.textMuted, fontSize: 11, letterSpacing: 1 }}
+          >
             {pending} OP{pending === 1 ? "" : "S"} QUEUED — TAP TO SYNC
           </Text>
         </Pressable>
       )}
 
       {done ? (
-        <View style={{ flex: 1, alignItems: "center", justifyContent: "center", padding: 32 }}>
+        <View
+          style={{
+            flex: 1,
+            alignItems: "center",
+            justifyContent: "center",
+            padding: 32,
+          }}
+        >
           <EmptyState
             title="Review complete"
             message="Nice work. Come back tomorrow for the next batch."
@@ -155,7 +174,14 @@ export default function ReviewScreen() {
           <Button title="Back to Learn" onPress={() => router.back()} />
         </View>
       ) : !current ? (
-        <View style={{ flex: 1, alignItems: "center", justifyContent: "center", padding: 32 }}>
+        <View
+          style={{
+            flex: 1,
+            alignItems: "center",
+            justifyContent: "center",
+            padding: 32,
+          }}
+        >
           <EmptyState title="No cards due" glyph="完" />
         </View>
       ) : (
@@ -169,7 +195,9 @@ export default function ReviewScreen() {
               <Pressable
                 onPress={() => setRevealed((r) => !r)}
                 style={{ gap: 24, alignItems: "center", paddingVertical: 24 }}
-                accessibilityHint={revealed ? "Answer revealed" : "Tap to reveal"}
+                accessibilityHint={
+                  revealed ? "Answer revealed" : "Tap to reveal"
+                }
               >
                 <Text
                   style={{
@@ -186,7 +214,8 @@ export default function ReviewScreen() {
                 {revealed ? (
                   <View style={{ gap: 8, alignItems: "center" }}>
                     <Text style={[type.label, { color: theme.accent }]}>
-                      {(wordQ.data as { pinyin?: string } | null)?.pinyin ?? "—"}
+                      {(wordQ.data as { pinyin?: string } | null)?.pinyin ??
+                        "—"}
                     </Text>
                     <Text
                       style={{
@@ -197,13 +226,21 @@ export default function ReviewScreen() {
                         textAlign: "center",
                       }}
                     >
-                      {(wordQ.data as { translation?: string } | null)?.translation ?? "—"}
+                      {(wordQ.data as { translation?: string } | null)
+                        ?.translation ?? "—"}
                     </Text>
-                    {(wordQ.data as { exampleSentence?: string } | null)?.exampleSentence && (
+                    {(wordQ.data as { exampleSentence?: string } | null)
+                      ?.exampleSentence && (
                       <Text
-                        style={[type.caption, { color: theme.textMuted, textAlign: "center" }]}
+                        style={[
+                          type.caption,
+                          { color: theme.textMuted, textAlign: "center" },
+                        ]}
                       >
-                        {(wordQ.data as { exampleSentence?: string }).exampleSentence}
+                        {
+                          (wordQ.data as { exampleSentence?: string })
+                            .exampleSentence
+                        }
                       </Text>
                     )}
                   </View>
@@ -249,7 +286,11 @@ export default function ReviewScreen() {
                 <Text
                   style={{
                     color:
-                      g.grade === 3 ? theme.white : g.grade === 0 ? theme.red : theme.text,
+                      g.grade === 3
+                        ? theme.white
+                        : g.grade === 0
+                          ? theme.red
+                          : theme.text,
                     fontWeight: "700",
                     fontSize: 14,
                   }}
@@ -276,5 +317,5 @@ export default function ReviewScreen() {
         </ScrollView>
       )}
     </SafeAreaView>
-  );
+  )
 }

@@ -1,61 +1,79 @@
-import { useState } from "react";
+import { useState } from "react"
 import {
   ActivityIndicator,
   Pressable,
   ScrollView,
   Text,
   View,
-} from "react-native";
-import { SafeAreaView } from "react-native-safe-area-context";
-import { useRouter } from "expo-router";
-import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
-import { Button } from "@/components/ui/Button";
-import { Card } from "@/components/ui/Card";
-import { Chip } from "@/components/ui/Chip";
-import { EmptyState } from "@/components/ui/EmptyState";
-import { Motif } from "@/components/ui/Motif";
-import { useTheme } from "@/theme/ThemeProvider";
-import { fonts, type } from "@/theme/typography";
-import { exam } from "@/api/endpoints";
-import type { ExamProgress, ExamSession } from "@/types/api";
+} from "react-native"
+import { SafeAreaView } from "react-native-safe-area-context"
+import { useRouter } from "expo-router"
+import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query"
+import { Button } from "@/components/ui/Button"
+import { Card } from "@/components/ui/Card"
+import { Chip } from "@/components/ui/Chip"
+import { EmptyState } from "@/components/ui/EmptyState"
+import { Motif } from "@/components/ui/Motif"
+import { useTheme } from "@/theme/ThemeProvider"
+import { fonts, type } from "@/theme/typography"
+import { exam } from "@/api/endpoints"
+import type { ExamProgress, ExamSession } from "@/types/api"
 
-const EXAM_TYPES = ["hsk", "tocfl"];
+const EXAM_TYPES = ["hsk", "tocfl"]
 
 export default function ExamTab() {
-  const { theme } = useTheme();
-  const router = useRouter();
-  const qc = useQueryClient();
-  const [examType, setExamType] = useState("hsk");
-  const [examLevel, setExamLevel] = useState("1");
+  const { theme } = useTheme()
+  const router = useRouter()
+  const qc = useQueryClient()
+  const [examType, setExamType] = useState("hsk")
+  const [examLevel, setExamLevel] = useState("1")
 
-  const activeQ = useQuery({ queryKey: ["exam-active"], queryFn: exam.active });
-  const progressQ = useQuery({ queryKey: ["exam-progress"], queryFn: exam.progress });
-  const historyQ = useQuery({ queryKey: ["exam-history"], queryFn: () => exam.history() });
+  const activeQ = useQuery({ queryKey: ["exam-active"], queryFn: exam.active })
+  const progressQ = useQuery({
+    queryKey: ["exam-progress"],
+    queryFn: exam.progress,
+  })
+  const historyQ = useQuery({
+    queryKey: ["exam-history"],
+    queryFn: () => exam.history(),
+  })
   const recommendedQ = useQuery({
     queryKey: ["exam-recommended"],
     queryFn: exam.recommended,
-  });
+  })
 
   const startM = useMutation({
     mutationFn: () => exam.create(examType, examLevel, { questionCount: 20 }),
     onSuccess: (session) => {
-      qc.invalidateQueries({ queryKey: ["exam-active"] });
-      router.push({ pathname: "/exam-session" as never, params: { id: String(session.id) } as never });
+      qc.invalidateQueries({ queryKey: ["exam-active"] })
+      router.push({
+        pathname: "/exam-session" as never,
+        params: { id: String(session.id) } as never,
+      })
     },
-  });
+  })
 
-  const active = activeQ.data ?? [];
-  const progressList = progressQ.data ?? [];
-  const history = historyQ.data ?? [];
+  const active = activeQ.data ?? []
+  const progressList = progressQ.data ?? []
+  const history = historyQ.data ?? []
 
   return (
-    <SafeAreaView style={{ flex: 1, backgroundColor: theme.bg }} edges={["top"]}>
+    <SafeAreaView
+      style={{ flex: 1, backgroundColor: theme.bg }}
+      edges={["top"]}
+    >
       <ScrollView
         contentContainerStyle={{ padding: 24, gap: 28, paddingBottom: 48 }}
       >
         {/* Masthead */}
         <View style={{ gap: 12 }}>
-          <View style={{ flexDirection: "row", justifyContent: "space-between", alignItems: "flex-start" }}>
+          <View
+            style={{
+              flexDirection: "row",
+              justifyContent: "space-between",
+              alignItems: "flex-start",
+            }}
+          >
             <View style={{ flex: 1, gap: 8 }}>
               <Text style={[type.labelSm, { color: theme.textMuted }]}>
                 Assessments
@@ -98,8 +116,14 @@ export default function ExamTab() {
           <Card>
             <View style={{ gap: 16 }}>
               <View style={{ gap: 8 }}>
-                <Text style={[type.labelSm, { color: theme.textMuted }]}>Body</Text>
-                <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={{ gap: 8 }}>
+                <Text style={[type.labelSm, { color: theme.textMuted }]}>
+                  Body
+                </Text>
+                <ScrollView
+                  horizontal
+                  showsHorizontalScrollIndicator={false}
+                  contentContainerStyle={{ gap: 8 }}
+                >
                   {EXAM_TYPES.map((t) => (
                     <Chip
                       key={t}
@@ -111,8 +135,14 @@ export default function ExamTab() {
                 </ScrollView>
               </View>
               <View style={{ gap: 8 }}>
-                <Text style={[type.labelSm, { color: theme.textMuted }]}>Level</Text>
-                <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={{ gap: 8 }}>
+                <Text style={[type.labelSm, { color: theme.textMuted }]}>
+                  Level
+                </Text>
+                <ScrollView
+                  horizontal
+                  showsHorizontalScrollIndicator={false}
+                  contentContainerStyle={{ gap: 8 }}
+                >
                   {(examType === "hsk"
                     ? ["1", "2", "3", "4", "5", "6"]
                     : examType === "tocfl"
@@ -129,7 +159,11 @@ export default function ExamTab() {
                 </ScrollView>
               </View>
               <Button
-                title={startM.isPending ? "Preparing…" : `Start ${examType.toUpperCase()} ${examLevel.toUpperCase()}`}
+                title={
+                  startM.isPending
+                    ? "Preparing…"
+                    : `Start ${examType.toUpperCase()} ${examLevel.toUpperCase()}`
+                }
                 onPress={() => startM.mutate()}
                 disabled={startM.isPending}
                 loading={startM.isPending}
@@ -162,7 +196,8 @@ export default function ExamTab() {
                       {p.exam_type.toUpperCase()}
                     </Text>
                     <Text style={[type.caption, { color: theme.textMuted }]}>
-                      Level {p.current_level ?? "—"} · {p.total_attempts} attempts
+                      Level {p.current_level ?? "—"} · {p.total_attempts}{" "}
+                      attempts
                     </Text>
                   </View>
                   <Text
@@ -202,7 +237,8 @@ export default function ExamTab() {
                     flexDirection: "row",
                     alignItems: "center",
                     paddingVertical: 12,
-                    borderBottomWidth: i === history.slice(0, 10).length - 1 ? 1 : 0,
+                    borderBottomWidth:
+                      i === history.slice(0, 10).length - 1 ? 1 : 0,
                     borderBottomColor: theme.border,
                     gap: 12,
                   }}
@@ -211,18 +247,25 @@ export default function ExamTab() {
                     style={{
                       fontFamily: fonts.serif,
                       fontSize: 22,
-                      color: r.score >= r.passing_score ? theme.green : theme.red,
+                      color:
+                        r.score >= r.passing_score ? theme.green : theme.red,
                       width: 56,
                     }}
                   >
                     {r.score}
                   </Text>
                   <View style={{ flex: 1 }}>
-                    <Text style={[type.bodySm, { color: theme.text, fontWeight: "600" }]}>
+                    <Text
+                      style={[
+                        type.bodySm,
+                        { color: theme.text, fontWeight: "600" },
+                      ]}
+                    >
                       {r.exam_type.toUpperCase()} · Level {r.exam_level}
                     </Text>
                     <Text style={[type.caption, { color: theme.textMuted }]}>
-                      {new Date(r.created_at).toLocaleDateString()} · {r.correct_answers}/{r.total_questions} correct
+                      {new Date(r.created_at).toLocaleDateString()} ·{" "}
+                      {r.correct_answers}/{r.total_questions} correct
                     </Text>
                   </View>
                   <Text
@@ -230,7 +273,9 @@ export default function ExamTab() {
                       type.labelSm,
                       {
                         color:
-                          r.score >= r.passing_score ? theme.green : theme.textMuted,
+                          r.score >= r.passing_score
+                            ? theme.green
+                            : theme.textMuted,
                       },
                     ]}
                   >
@@ -243,17 +288,17 @@ export default function ExamTab() {
         </View>
       </ScrollView>
     </SafeAreaView>
-  );
+  )
 }
 
 function ActiveSessionCard({
   session,
   onResume,
 }: {
-  session: ExamSession;
-  onResume: () => void;
+  session: ExamSession
+  onResume: () => void
 }) {
-  const { theme } = useTheme();
+  const { theme } = useTheme()
   return (
     <Pressable
       onPress={onResume}
@@ -267,15 +312,18 @@ function ActiveSessionCard({
       }}
     >
       <View style={{ flexDirection: "row", justifyContent: "space-between" }}>
-        <Text style={[type.labelSm, { color: theme.textMuted }]}>Resume exam</Text>
+        <Text style={[type.labelSm, { color: theme.textMuted }]}>
+          Resume exam
+        </Text>
         <Text style={[type.labelSm, { color: theme.accent }]}>Active</Text>
       </View>
       <Text style={[type.h2, { color: theme.text }]}>
         {session.exam_type.toUpperCase()} · Level {session.exam_level}
       </Text>
       <Text style={[type.bodySm, { color: theme.textMuted }]}>
-        Question {session.current_question_index + 1} of {session.question_count}
+        Question {session.current_question_index + 1} of{" "}
+        {session.question_count}
       </Text>
     </Pressable>
-  );
+  )
 }

@@ -1,22 +1,18 @@
-import { View } from "react-native";
-import { useTheme } from "@/theme/ThemeProvider";
+import { View } from "react-native"
+import { useTheme } from "@/theme/ThemeProvider"
 
 interface ProgressBarProps {
-  value: number; // 0..1
-  height?: number;
-  tint?: string;
+  value: number // 0..1
+  height?: number
+  tint?: string
 }
 
 /**
  * Hairline progress indicator used in editorial lists and dashboards.
  */
-export function ProgressBar({
-  value,
-  height = 2,
-  tint,
-}: ProgressBarProps) {
-  const { theme } = useTheme();
-  const clamped = Math.max(0, Math.min(1, value));
+export function ProgressBar({ value, height = 2, tint }: ProgressBarProps) {
+  const { theme } = useTheme()
+  const clamped = Math.max(0, Math.min(1, value))
 
   return (
     <View
@@ -35,5 +31,5 @@ export function ProgressBar({
         }}
       />
     </View>
-  );
+  )
 }

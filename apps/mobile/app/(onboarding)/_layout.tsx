@@ -1,5 +1,5 @@
-import { Stack } from "expo-router";
-import { colors } from "@/theme/colors";
+import { Stack } from "expo-router"
+import { colors } from "@/theme/colors"
 
 export default function OnboardingLayout() {
   return (
@@ -9,5 +9,5 @@ export default function OnboardingLayout() {
         contentStyle: { backgroundColor: colors.bg },
       }}
     />
-  );
+  )
 }

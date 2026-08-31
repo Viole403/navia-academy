@@ -1,15 +1,19 @@
-import { create } from "zustand";
-import type { SupabaseUser } from "@/types/api";
+import { create } from "zustand"
+import type { SupabaseUser } from "@/types/api"
 
 interface AuthState {
-  user: SupabaseUser | null;
-  accessToken: string | null;
-  refreshToken: string | null;
-  hydrated: boolean;
-  setAuth: (user: SupabaseUser, accessToken: string, refreshToken: string) => void;
-  setTokens: (accessToken: string, refreshToken: string) => void;
-  signOut: () => void;
-  markHydrated: () => void;
+  user: SupabaseUser | null
+  accessToken: string | null
+  refreshToken: string | null
+  hydrated: boolean
+  setAuth: (
+    user: SupabaseUser,
+    accessToken: string,
+    refreshToken: string
+  ) => void
+  setTokens: (accessToken: string, refreshToken: string) => void
+  signOut: () => void
+  markHydrated: () => void
 }
 
 export const useAuthStore = create<AuthState>((set) => ({
@@ -22,4 +26,4 @@ export const useAuthStore = create<AuthState>((set) => ({
   setTokens: (accessToken, refreshToken) => set({ accessToken, refreshToken }),
   signOut: () => set({ user: null, accessToken: null, refreshToken: null }),
   markHydrated: () => set({ hydrated: true }),
-}));
+}))
