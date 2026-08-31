@@ -1,11 +1,10 @@
 # Navia — Language Academy
 
-> Open-source platform belajar bahasa multi-negara
+> Open-source, multi-language exam preparation platform
 
-Platform belajar bahasa (Mandarin, Jerman, Jepang, Inggris) dengan kurikulum ujian yang
-fixed di **5 exam**: **HSK** & **TOCFL** (zh) · **Goethe-Zertifikat** (de) · **JLPT** (ja)
-· **TOEFL iBT** (en). Tipe exam lain (hskk/bct/yct/ap/ib/ielts/cambridge) sudah dihapus
-dan tidak boleh diintroduksi ulang di mana pun (config, types, content, curriculum).
+Navia adalah platform belajar bahasa (Mandarin, Jerman, Jepang, Inggris) dengan
+kurikulum terarah ujian yang terbatas pada **5 exam**: **HSK** & **TOCFL** (zh) ·
+**Goethe-Zertifikat** (de) · **JLPT** (ja) · **TOEFL iBT** (en).
 
 ## Struktur Monorepo
 
@@ -34,7 +33,7 @@ pnpm adalah package manager kanonik.)
 
 ## Arsitektur Konten — JSON source + read-path CDN
 
-**Intinya: konten ditulis di `apps/media/data/json/` dan dipublikasikan ke CDN.
+**Prinsip inti: konten ditulis di `apps/media/data/json/` dan dipublikasikan ke CDN.
 Database tidak pernah di-query di read path publik.**
 
 ```
@@ -55,14 +54,14 @@ CONTRIBUTOR / EDITOR                USER
 └──────────────────────────────────────────────┘
 ```
 
-Kenapa bentuknya begini (ramah free-tier):
+Mengapa arsitektur ini (ramah free-tier):
 
 - **Read publik tidak pernah menyentuh egress Vercel/Supabase** — bandwidth Vercel gratis
   kecil; menyajikan semua konten lewat database/API akan meledakkan limit egress begitu
   user bertambah. Objek CDN immutable + globally cached, jadi origin (R2) hanya kena satu
   kali per hash.
-- **Rilis = URL hashed baru** — tanpa CDN purge, tanpa cache stampede. Bundle tak berubah
-  mempertahankan URL-nya (cache selamanya).
+- **Rilis = URL hashed baru** — tanpa CDN purge, tanpa cache stampede. Bundle yang tidak
+  berubah mempertahankan URL-nya (cache selamanya).
 - **Audio dan gambar sama-sama masuk R2** — deterministic keys, immutable, tanpa biaya egress.
 
 | Layer                        | Write path                 | Read path        | Cache                           |
@@ -109,7 +108,7 @@ Detail setup: **[SETUP.md](./SETUP.md)**
 - Postgres + Redis via `DATABASE_URL` / `REDIS_URL` — container, lokal, atau cloud managed.
   Ada dua compose: root = full dev stack; `apps/backend` = api-only untuk VPS.
 
-**Opsi A — Full Docker sekalian:**
+**Opsi A — Full Docker:**
 
 ```bash
 docker compose up -d                                      # postgres + redis + api
@@ -201,8 +200,8 @@ Backend tidak pernah menyajikan konten — user publik membacanya dari R2/CDN.
    di `ci.yml`).
 3. **Release** → `pnpm data:publish` (atau GitHub Action `media-generate.yml` — manual):
    baca `data/json`, build bundle content-hashed, upload ke R2, update `data-manifest.json`.
-4. **Propagate** → client mengambil manifest baru saat TTL-nya habis; bundle tak berubah
-   tetap memakai URL lama (cached forever). Tanpa CDN purge.
+4. **Propagate** → client mengambil manifest baru saat TTL-nya habis; bundle yang tidak
+   berubah tetap memakai URL lama (cached forever). Tanpa CDN purge.
 
 Strategi cache (ramah free-tier):
 
