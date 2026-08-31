@@ -12,16 +12,10 @@ import (
 
 type ProgressService struct {
 	progressRepo *repository.ProgressRepository
-	srsRepo      *repository.SRSRepository
-	srsSvc       *SRSService
 }
 
-func NewProgressService(progressRepo *repository.ProgressRepository, srsRepo *repository.SRSRepository, srsSvc *SRSService) *ProgressService {
-	return &ProgressService{
-		progressRepo: progressRepo,
-		srsRepo:      srsRepo,
-		srsSvc:       srsSvc,
-	}
+func NewProgressService(progressRepo *repository.ProgressRepository) *ProgressService {
+	return &ProgressService{progressRepo: progressRepo}
 }
 
 func (s *ProgressService) GetProgress(ctx context.Context, userID string) (*models.UserProgress, error) {
@@ -135,36 +129,6 @@ func (s *ProgressService) UpdateProgress(ctx context.Context, userID string, req
 	return s.progressRepo.Upsert(ctx, progress)
 }
 
-func (s *ProgressService) GetDueCards(ctx context.Context, userID string, limit int) ([]models.SrsCard, error) {
-	if limit <= 0 || limit > 200 {
-		limit = 50
-	}
-	return s.srsRepo.GetDueCards(ctx, userID, limit)
-}
-
-func (s *ProgressService) ReviewCard(ctx context.Context, userID string, req models.SRSReviewRequest) (*models.SrsCard, error) {
-	card, err := s.srsRepo.GetCard(ctx, userID, req.ItemID)
-	if err != nil {
-		card = s.srsSvc.NewCard(req.ItemID, req.Kind)
-		card.UserID = userID
-		card.ID = "srs-" + userID + "-" + req.ItemID
-		card.CreatedAt = time.Now()
-	}
-
-	updatedCard := s.srsSvc.GradeCard(card, req.Grade, time.Now())
-	updatedCard.UserID = userID
-
-	if err := s.srsRepo.UpsertCard(ctx, updatedCard); err != nil {
-		return nil, err
-	}
-
-	return updatedCard, nil
-}
-
-func (s *ProgressService) GetAchievements(ctx context.Context, userID string) ([]models.Achievement, error) {
-	return s.progressRepo.GetAchievements(ctx, userID)
-}
-
 func (s *ProgressService) LogStudySession(ctx context.Context, userID string, minutes, xp int) error {
 	today := time.Now().UTC().Format("2006-01-02")
 	session := &models.StudySession{
@@ -179,41 +143,4 @@ func (s *ProgressService) LogStudySession(ctx context.Context, userID string, mi
 
 func (s *ProgressService) GetStudySessions(ctx context.Context, userID string, limit, offset int) ([]models.StudySession, error) {
 	return s.progressRepo.GetStudySessions(ctx, userID, limit, offset)
-}
-
-func (s *ProgressService) CreateTask(ctx context.Context, userID, content string, dueDate *time.Time) (*models.Task, error) {
-	task := &models.Task{
-		ID:      uuid.New().String(),
-		UserID:  userID,
-		Content: content,
-		DueDate: dueDate,
-	}
-	if err := s.progressRepo.CreateTask(ctx, task); err != nil {
-		return nil, err
-	}
-	return task, nil
-}
-
-func (s *ProgressService) UpdateTask(ctx context.Context, task *models.Task) error {
-	return s.progressRepo.UpdateTask(ctx, task)
-}
-
-func (s *ProgressService) DeleteTask(ctx context.Context, id, userID string) error {
-	return s.progressRepo.DeleteTask(ctx, id, userID)
-}
-
-func (s *ProgressService) GetTasks(ctx context.Context, userID string) ([]models.Task, error) {
-	return s.progressRepo.GetTasks(ctx, userID)
-}
-
-func (s *ProgressService) AddGameResult(ctx context.Context, userID, gameID string, accuracy float64, score int) error {
-	result := &models.GameResult{
-		ID:       uuid.New().String(),
-		UserID:   userID,
-		GameID:   gameID,
-		Accuracy: accuracy,
-		Score:    score,
-		PlayedAt: time.Now(),
-	}
-	return s.progressRepo.AddGameResult(ctx, result)
 }

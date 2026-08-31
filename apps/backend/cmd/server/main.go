@@ -162,6 +162,9 @@ func main() {
 
 	userRepo := repository.NewUserRepository(pgPool)
 	progressRepo := repository.NewProgressRepository(pgPool)
+	taskRepo := repository.NewTaskRepository(pgPool)
+	gameRepo := repository.NewGameRepository(pgPool)
+	achievementRepo := repository.NewAchievementRepository(pgPool)
 	settingsRepo := repository.NewSettingsRepository(pgPool)
 	examRepo := repository.NewExamRepository(pgPool)
 	srsRepo := repository.NewSRSRepository(pgPool)
@@ -174,7 +177,11 @@ func main() {
 	srsSvc := service.NewSRSService()
 	ttsSvc := service.NewTTSService(cfg.TTS, store, audioRepo)
 	authSvc := service.NewAuthService(userRepo, jwtSvc)
-	progressSvc := service.NewProgressService(progressRepo, srsRepo, srsSvc)
+	progressSvc := service.NewProgressService(progressRepo)
+	taskSvc := service.NewTaskService(taskRepo)
+	gameSvc := service.NewGameService(gameRepo)
+	achievementSvc := service.NewAchievementService(achievementRepo)
+	srsReviewSvc := service.NewSRSReviewService(srsRepo, srsSvc)
 	settingsSvc := service.NewSettingsService(settingsRepo)
 	examSvc := service.NewExamService(examRepo)
 	contributorSvc := service.NewContributorService(contributorRepo)
@@ -184,6 +191,10 @@ func main() {
 
 	authHandler := handler.NewAuthHandler(authSvc).WithGoogle(cfg.Google, cfg.App.SiteURL)
 	progressHandler := handler.NewProgressHandler(progressSvc)
+	taskHandler := handler.NewTaskHandler(taskSvc)
+	gameHandler := handler.NewGameHandler(gameSvc)
+	achievementHandler := handler.NewAchievementHandler(achievementSvc)
+	srsHandler := handler.NewSRSHandler(srsReviewSvc)
 	settingsHandler := handler.NewSettingsHandler(settingsSvc)
 	examHandler := handler.NewExamHandler(examSvc)
 	ttsHandler := handler.NewTTSHandler(ttsSvc, audioRepo)
@@ -255,18 +266,18 @@ func main() {
 
 	protected.Get("/progress", authMW, progressHandler.GetProgress)
 	protected.Put("/progress", authMW, progressHandler.UpdateProgress)
-	protected.Get("/progress/due-cards", authMW, progressHandler.GetDueCards)
-	protected.Post("/progress/review", authMW, progressHandler.ReviewCard)
-	protected.Get("/progress/achievements", authMW, progressHandler.GetAchievements)
+	protected.Get("/progress/due-cards", authMW, srsHandler.GetDueCards)
+	protected.Post("/progress/review", authMW, srsHandler.ReviewCard)
+	protected.Get("/progress/achievements", authMW, achievementHandler.GetAchievements)
 	protected.Post("/progress/study-session", authMW, progressHandler.LogStudySession)
 	protected.Get("/progress/study-sessions", authMW, progressHandler.GetStudySessions)
 
-	protected.Get("/tasks", authMW, progressHandler.GetTasks)
-	protected.Post("/tasks", authMW, progressHandler.CreateTask)
-	protected.Put("/tasks/:id", authMW, progressHandler.UpdateTask)
-	protected.Delete("/tasks/:id", authMW, progressHandler.DeleteTask)
+	protected.Get("/tasks", authMW, taskHandler.GetTasks)
+	protected.Post("/tasks", authMW, taskHandler.CreateTask)
+	protected.Put("/tasks/:id", authMW, taskHandler.UpdateTask)
+	protected.Delete("/tasks/:id", authMW, taskHandler.DeleteTask)
 
-	protected.Post("/games", authMW, progressHandler.AddGameResult)
+	protected.Post("/games", authMW, gameHandler.AddGameResult)
 
 	protected.Get("/settings", authMW, settingsHandler.GetSettings)
 	protected.Put("/settings", authMW, settingsHandler.UpdateSettings)
@@ -341,21 +352,7 @@ func main() {
 	// @Failure 401 {object} response.APIError "UNAUTHORIZED / TOKEN_EXPIRED"
 	// @Failure 500 {object} response.APIError "CREATE_FAILED"
 	// @Router /srs/cards [post]
-	protected.Post("/srs/cards", authMW, func(c *fiber.Ctx) error {
-		userID := c.Locals("user_id").(string)
-		var req struct {
-			ItemID string `json:"item_id"`
-			Kind   string `json:"kind"`
-		}
-		if err := c.BodyParser(&req); err != nil {
-			return response.Error(c, fiber.StatusBadRequest, "INVALID_BODY", "invalid request")
-		}
-		card, err := srsRepo.CreateCardForNewItem(c.Context(), userID, req.ItemID, req.Kind)
-		if err != nil {
-			return response.Error(c, fiber.StatusInternalServerError, "CREATE_FAILED", err.Error())
-		}
-		return response.JSON(c, fiber.StatusCreated, card)
-	})
+	protected.Post("/srs/cards", authMW, srsHandler.CreateCard)
 	// @Summary Get SRS stats
 	// @Description Get the user's SRS card statistics (total, due, new, learning, review per kind).
 	// @Tags SRS
@@ -364,13 +361,7 @@ func main() {
 	// @Success 200 {object} response.APIResponse{data=object}
 	// @Failure 401 {object} response.APIError "UNAUTHORIZED / TOKEN_EXPIRED"
 	// @Router /srs/stats [get]
-	protected.Get("/srs/stats", authMW, func(c *fiber.Ctx) error {
-		userID := c.Locals("user_id").(string)
-		dueCount, _ := srsRepo.GetDueCount(c.Context(), userID)
-		stats, _ := srsRepo.GetCardStats(c.Context(), userID)
-		stats["due"] = dueCount
-		return response.JSON(c, fiber.StatusOK, stats)
-	})
+	protected.Get("/srs/stats", authMW, srsHandler.GetStats)
 
 	app.Get("/", func(c *fiber.Ctx) error {
 		return response.JSON(c, fiber.StatusOK, fiber.Map{
