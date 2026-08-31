@@ -11,6 +11,29 @@ definitions:
       user_id:
         type: string
     type: object
+  github_com_navia-academy_backend_internal_models.AdminCreateUserRequest:
+    properties:
+      email:
+        example: sari@example.com
+        type: string
+      name:
+        example: Ibu Sari
+        maxLength: 100
+        minLength: 2
+        type: string
+      password:
+        example: Rahasia123!
+        maxLength: 128
+        minLength: 8
+        type: string
+      role:
+        example: reviewer
+        type: string
+    required:
+    - email
+    - name
+    - password
+    type: object
   github_com_navia-academy_backend_internal_models.AudioRecord:
     properties:
       created_at:
@@ -179,6 +202,26 @@ definitions:
         type: number
     required:
     - answers
+    type: object
+  github_com_navia-academy_backend_internal_models.ContentExportMeta:
+    properties:
+      count:
+        type: integer
+      generated_at:
+        type: string
+      total_published:
+        type: integer
+    type: object
+  github_com_navia-academy_backend_internal_models.ContentExportResponse:
+    properties:
+      data:
+        items:
+          $ref: '#/definitions/github_com_navia-academy_backend_internal_models.ExportContentItem'
+        type: array
+      meta:
+        $ref: '#/definitions/github_com_navia-academy_backend_internal_models.ContentExportMeta'
+      success:
+        type: boolean
     type: object
   github_com_navia-academy_backend_internal_models.ContentItem:
     properties:
@@ -357,6 +400,15 @@ definitions:
     required:
     - name
     type: object
+  github_com_navia-academy_backend_internal_models.CreateTestimonialRequest:
+    properties:
+      name:
+        type: string
+      quote:
+        type: string
+      role_label:
+        type: string
+    type: object
   github_com_navia-academy_backend_internal_models.ExamSession:
     properties:
       answers:
@@ -400,6 +452,25 @@ definitions:
       updated_at:
         type: string
       user_id:
+        type: string
+    type: object
+  github_com_navia-academy_backend_internal_models.ExportContentItem:
+    properties:
+      domain:
+        type: string
+      id:
+        type: string
+      lang:
+        type: string
+      payload:
+        items:
+          type: integer
+        type: array
+      pos:
+        type: integer
+      ref:
+        type: string
+      updated_at:
         type: string
     type: object
   github_com_navia-academy_backend_internal_models.LoginRequest:
@@ -488,6 +559,59 @@ definitions:
     - name
     - password
     type: object
+  github_com_navia-academy_backend_internal_models.ResonanceEvent:
+    properties:
+      emotion:
+        type: string
+      intensity:
+        type: integer
+      origin:
+        type: string
+    type: object
+  github_com_navia-academy_backend_internal_models.ResonanceHot:
+    properties:
+      live:
+        type: integer
+      origin:
+        type: string
+      total:
+        type: integer
+    type: object
+  github_com_navia-academy_backend_internal_models.ResonanceOrigin:
+    properties:
+      emotion:
+        additionalProperties:
+          format: int64
+          type: integer
+        type: object
+      live:
+        additionalProperties:
+          format: int64
+          type: integer
+        type: object
+      origin:
+        type: string
+      total:
+        additionalProperties:
+          format: int64
+          type: integer
+        type: object
+    type: object
+  github_com_navia-academy_backend_internal_models.ResonanceReaction:
+    properties:
+      created_at:
+        type: string
+      emotion:
+        type: string
+      id:
+        type: integer
+      intensity:
+        type: integer
+      origin:
+        type: string
+      user_id:
+        type: string
+    type: object
   github_com_navia-academy_backend_internal_models.ReviewApplicationRequest:
     properties:
       reviewed_by:
@@ -503,10 +627,21 @@ definitions:
     type: object
   github_com_navia-academy_backend_internal_models.ReviewContentRequest:
     properties:
+      ref:
+        description: |-
+          Ref is REQUIRED when publishing — the reviewer-assigned target level
+          (e.g. "hsk/hsk3"); ignored when rejecting.
+        example: hsk/hsk3
+        type: string
       review_note:
         type: string
       status:
         description: published | rejected
+        type: string
+    type: object
+  github_com_navia-academy_backend_internal_models.ReviewTestimonialRequest:
+    properties:
+      status:
         type: string
     type: object
   github_com_navia-academy_backend_internal_models.SRSReviewRequest:
@@ -530,6 +665,14 @@ definitions:
     - grade
     - item_id
     - kind
+    type: object
+  github_com_navia-academy_backend_internal_models.SetUserRoleRequest:
+    properties:
+      role:
+        example: reviewer
+        type: string
+    required:
+    - role
     type: object
   github_com_navia-academy_backend_internal_models.SettingsUpdateRequest:
     properties:
@@ -750,6 +893,31 @@ definitions:
       user_id:
         type: string
     type: object
+  github_com_navia-academy_backend_internal_models.Testimonial:
+    properties:
+      avatar:
+        type: string
+      created_at:
+        type: string
+      id:
+        type: string
+      name:
+        type: string
+      quote:
+        type: string
+      reviewed_at:
+        type: string
+      reviewed_by:
+        type: string
+      role_label:
+        type: string
+      status:
+        type: string
+      updated_at:
+        type: string
+      user_id:
+        type: string
+    type: object
   github_com_navia-academy_backend_internal_models.TokenPair:
     properties:
       access_token:
@@ -765,6 +933,9 @@ definitions:
         items:
           type: integer
         type: array
+      ref:
+        description: proposed level, e.g. "hsk/hsk3"
+        type: string
       status:
         description: draft | review
         type: string
@@ -991,6 +1162,150 @@ paths:
       summary: List all supporters
       tags:
       - Supporters
+  /admin/users:
+    get:
+      consumes:
+      - application/json
+      - application/json
+      description: |-
+        Update a user's role (admin). Valid roles: student, contributor, reviewer, admin.
+        Admin-only. Returns all user accounts (id, name, email, role).
+      parameters:
+      - description: New role
+        in: body
+        name: body
+        required: true
+        schema:
+          $ref: '#/definitions/github_com_navia-academy_backend_internal_models.SetUserRoleRequest'
+      produces:
+      - application/json
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - $ref: '#/definitions/github_com_navia-academy_backend_pkg_response.APIResponse'
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/github_com_navia-academy_backend_internal_models.User'
+                  type: array
+              type: object
+        "400":
+          description: INVALID_ROLE / MISSING_BODY / USER_NOT_FOUND
+          schema:
+            $ref: '#/definitions/github_com_navia-academy_backend_pkg_response.APIError'
+        "403":
+          description: FORBIDDEN
+          schema:
+            $ref: '#/definitions/github_com_navia-academy_backend_pkg_response.APIError'
+        "500":
+          description: FETCH_FAILED
+          schema:
+            $ref: '#/definitions/github_com_navia-academy_backend_pkg_response.APIError'
+      security:
+      - BearerAuth: []
+      - BearerAuth: []
+      summary: List users
+      tags:
+      - Admin
+      - Admin
+    post:
+      consumes:
+      - application/json
+      description: Admin-only. Creates a user with an explicit role (default student).
+        Public register always yields student; staff roles are created here.
+      parameters:
+      - description: User details
+        in: body
+        name: body
+        required: true
+        schema:
+          $ref: '#/definitions/github_com_navia-academy_backend_internal_models.AdminCreateUserRequest'
+      produces:
+      - application/json
+      responses:
+        "201":
+          description: Created
+          schema:
+            allOf:
+            - $ref: '#/definitions/github_com_navia-academy_backend_pkg_response.APIResponse'
+            - properties:
+                data:
+                  type: object
+              type: object
+        "400":
+          description: INVALID_BODY
+          schema:
+            $ref: '#/definitions/github_com_navia-academy_backend_pkg_response.APIError'
+        "409":
+          description: EMAIL_TAKEN
+          schema:
+            $ref: '#/definitions/github_com_navia-academy_backend_pkg_response.APIError'
+        "500":
+          description: CREATE_FAILED
+          schema:
+            $ref: '#/definitions/github_com_navia-academy_backend_pkg_response.APIError'
+      security:
+      - BearerAuth: []
+      summary: Create user (admin)
+      tags:
+      - Admin
+  /admin/users/:id/role:
+    put:
+      consumes:
+      - application/json
+      - application/json
+      description: |-
+        Update a user's role (admin). Valid roles: student, contributor, reviewer, admin.
+        Admin-only. Returns all user accounts (id, name, email, role).
+      parameters:
+      - description: User ID
+        in: path
+        name: id
+        required: true
+        type: string
+      - description: New role
+        in: body
+        name: body
+        required: true
+        schema:
+          $ref: '#/definitions/github_com_navia-academy_backend_internal_models.SetUserRoleRequest'
+      produces:
+      - application/json
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - $ref: '#/definitions/github_com_navia-academy_backend_pkg_response.APIResponse'
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/github_com_navia-academy_backend_internal_models.User'
+                  type: array
+              type: object
+        "400":
+          description: INVALID_ROLE / MISSING_BODY / USER_NOT_FOUND
+          schema:
+            $ref: '#/definitions/github_com_navia-academy_backend_pkg_response.APIError'
+        "403":
+          description: FORBIDDEN
+          schema:
+            $ref: '#/definitions/github_com_navia-academy_backend_pkg_response.APIError'
+        "500":
+          description: FETCH_FAILED
+          schema:
+            $ref: '#/definitions/github_com_navia-academy_backend_pkg_response.APIError'
+      security:
+      - BearerAuth: []
+      - BearerAuth: []
+      summary: List users
+      tags:
+      - Admin
+      - Admin
   /auth/change-password:
     post:
       consumes:
@@ -1669,7 +1984,7 @@ paths:
         name: id
         required: true
         type: string
-      - description: 'Status: published | rejected (+ note)'
+      - description: 'Status: published (requires ref) | rejected (+ note)'
         in: body
         name: body
         required: true
@@ -1688,7 +2003,7 @@ paths:
                   $ref: '#/definitions/github_com_navia-academy_backend_internal_models.ContentItem'
               type: object
         "400":
-          description: INVALID_STATUS / REVIEW_FAILED
+          description: INVALID_STATUS / MISSING_REF / INVALID_REF / REVIEW_FAILED
           schema:
             $ref: '#/definitions/github_com_navia-academy_backend_pkg_response.APIError'
         "401":
@@ -1702,6 +2017,61 @@ paths:
       security:
       - BearerAuth: []
       summary: Review content item
+      tags:
+      - Content · Items
+  /content/export:
+    get:
+      description: Read-only machine-to-machine feed of published content items for
+        apps/media's sync script. Authenticated with the shared CONTENT_EXPORT_TOKEN
+        bearer token, not user BearerAuth.
+      parameters:
+      - description: Language
+        example: zh
+        in: query
+        name: lang
+        type: string
+      - description: Domain
+        example: vocabulary
+        in: query
+        name: domain
+        type: string
+      - description: Only rows updated after this RFC3339 timestamp
+        example: "2026-01-01T00:00:00Z"
+        in: query
+        name: since
+        type: string
+      - description: Max results per page (default 500, max 1000)
+        example: 500
+        in: query
+        name: limit
+        type: integer
+      - description: Pagination offset
+        example: 0
+        in: query
+        name: offset
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/github_com_navia-academy_backend_internal_models.ContentExportResponse'
+        "400":
+          description: INVALID_LANG / INVALID_DOMAIN / INVALID_SINCE
+          schema:
+            $ref: '#/definitions/github_com_navia-academy_backend_pkg_response.APIError'
+        "401":
+          description: UNAUTHORIZED
+          schema:
+            $ref: '#/definitions/github_com_navia-academy_backend_pkg_response.APIError'
+        "503":
+          description: EXPORT_DISABLED
+          schema:
+            $ref: '#/definitions/github_com_navia-academy_backend_pkg_response.APIError'
+      security:
+      - ServiceTokenAuth: []
+      summary: Export published content items
       tags:
       - Content · Items
   /contributors:
@@ -2152,7 +2522,7 @@ paths:
       - BearerAuth: []
       summary: Add game result
       tags:
-      - Progress
+      - Games
   /me:
     get:
       description: Get the authenticated user's profile.
@@ -2280,7 +2650,7 @@ paths:
       - BearerAuth: []
       summary: Get achievements
       tags:
-      - Progress
+      - Achievements
   /progress/due-cards:
     get:
       description: Get the user's SRS cards due for review (limit 200 max).
@@ -2316,7 +2686,7 @@ paths:
       - BearerAuth: []
       summary: Get due SRS cards
       tags:
-      - Progress
+      - SRS
   /progress/review:
     post:
       consumes:
@@ -2357,7 +2727,7 @@ paths:
       - BearerAuth: []
       summary: Review SRS card
       tags:
-      - Progress
+      - SRS
   /progress/study-session:
     post:
       consumes:
@@ -2440,6 +2810,128 @@ paths:
       summary: Get study sessions
       tags:
       - Progress
+  /resonance:
+    get:
+      description: Public. Returns all-time (violet) and 24h live (turquoise) emotion
+        counts for one origin.
+      parameters:
+      - description: Origin key (radical / head character)
+        in: query
+        name: origin
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - $ref: '#/definitions/github_com_navia-academy_backend_pkg_response.APIResponse'
+            - properties:
+                data:
+                  $ref: '#/definitions/github_com_navia-academy_backend_internal_models.ResonanceOrigin'
+              type: object
+        "400":
+          description: INVALID_ORIGIN
+          schema:
+            $ref: '#/definitions/github_com_navia-academy_backend_pkg_response.APIError'
+      summary: Get an origin's resonance
+      tags:
+      - Resonance
+    post:
+      consumes:
+      - application/json
+      description: Attach a feeling (inspired, warm, curious, nostalgic, calm, excited)
+        to a word origin. Aliases are normalized.
+      parameters:
+      - description: Resonance event
+        in: body
+        name: body
+        required: true
+        schema:
+          $ref: '#/definitions/github_com_navia-academy_backend_internal_models.ResonanceEvent'
+      produces:
+      - application/json
+      responses:
+        "201":
+          description: Created
+          schema:
+            allOf:
+            - $ref: '#/definitions/github_com_navia-academy_backend_pkg_response.APIResponse'
+            - properties:
+                data:
+                  $ref: '#/definitions/github_com_navia-academy_backend_internal_models.ResonanceOrigin'
+              type: object
+        "400":
+          description: INVALID_ORIGIN / INVALID_EMOTION / MISSING_BODY
+          schema:
+            $ref: '#/definitions/github_com_navia-academy_backend_pkg_response.APIError'
+        "401":
+          description: UNAUTHORIZED
+          schema:
+            $ref: '#/definitions/github_com_navia-academy_backend_pkg_response.APIError'
+        "500":
+          description: SAVE_FAILED
+          schema:
+            $ref: '#/definitions/github_com_navia-academy_backend_pkg_response.APIError'
+      security:
+      - BearerAuth: []
+      summary: Record a resonance reaction
+      tags:
+      - Resonance
+  /resonance/hot:
+    get:
+      description: Public. Top origins ranked by 24h live pulse (turquoise), with
+        all-time totals (violet).
+      parameters:
+      - description: Max rows (default 8, max 25)
+        in: query
+        name: limit
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - $ref: '#/definitions/github_com_navia-academy_backend_pkg_response.APIResponse'
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/github_com_navia-academy_backend_internal_models.ResonanceHot'
+                  type: array
+              type: object
+      summary: Hot origins right now
+      tags:
+      - Resonance
+  /resonance/me:
+    get:
+      description: Auth. The caller's recent reactions, for re-highlighting the UI.
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - $ref: '#/definitions/github_com_navia-academy_backend_pkg_response.APIResponse'
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/github_com_navia-academy_backend_internal_models.ResonanceReaction'
+                  type: array
+              type: object
+        "401":
+          description: UNAUTHORIZED
+          schema:
+            $ref: '#/definitions/github_com_navia-academy_backend_pkg_response.APIError'
+      security:
+      - BearerAuth: []
+      summary: My resonance reactions
+      tags:
+      - Resonance
   /settings:
     get:
       description: Get the authenticated user's preferences.
@@ -2743,6 +3235,75 @@ paths:
       summary: Apply as sponsor
       tags:
       - Contributors · Sponsors
+  /srs/cards:
+    post:
+      consumes:
+      - application/json
+      description: Create a new SRS card for an item (no-op if it already exists).
+      parameters:
+      - description: 'Payload: {\'
+        in: body
+        name: body
+        required: true
+        schema:
+          type: object
+      produces:
+      - application/json
+      responses:
+        "201":
+          description: Created
+          schema:
+            allOf:
+            - $ref: '#/definitions/github_com_navia-academy_backend_pkg_response.APIResponse'
+            - properties:
+                data:
+                  $ref: '#/definitions/github_com_navia-academy_backend_internal_models.SrsCard'
+              type: object
+        "400":
+          description: INVALID_BODY
+          schema:
+            $ref: '#/definitions/github_com_navia-academy_backend_pkg_response.APIError'
+        "401":
+          description: UNAUTHORIZED / TOKEN_EXPIRED
+          schema:
+            $ref: '#/definitions/github_com_navia-academy_backend_pkg_response.APIError'
+        "500":
+          description: CREATE_FAILED
+          schema:
+            $ref: '#/definitions/github_com_navia-academy_backend_pkg_response.APIError'
+      security:
+      - BearerAuth: []
+      summary: Create SRS card
+      tags:
+      - SRS
+  /srs/stats:
+    get:
+      description: Get the user's SRS statistics (total, due, new, learning, review).
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - $ref: '#/definitions/github_com_navia-academy_backend_pkg_response.APIResponse'
+            - properties:
+                data:
+                  type: object
+              type: object
+        "401":
+          description: UNAUTHORIZED / TOKEN_EXPIRED
+          schema:
+            $ref: '#/definitions/github_com_navia-academy_backend_pkg_response.APIError'
+        "500":
+          description: FETCH_FAILED
+          schema:
+            $ref: '#/definitions/github_com_navia-academy_backend_pkg_response.APIError'
+      security:
+      - BearerAuth: []
+      summary: Get SRS stats
+      tags:
+      - SRS
   /supporters:
     get:
       description: Get public supporters (wall). Amount is never exposed.
@@ -2807,7 +3368,7 @@ paths:
       - BearerAuth: []
       summary: Get tasks
       tags:
-      - Progress
+      - Tasks
     post:
       consumes:
       - application/json
@@ -2847,7 +3408,7 @@ paths:
       - BearerAuth: []
       summary: Create task
       tags:
-      - Progress
+      - Tasks
   /tasks/{id}:
     delete:
       description: Delete a user task by ID.
@@ -2881,7 +3442,7 @@ paths:
       - BearerAuth: []
       summary: Delete task
       tags:
-      - Progress
+      - Tasks
     put:
       consumes:
       - application/json
@@ -2926,7 +3487,191 @@ paths:
       - BearerAuth: []
       summary: Update task
       tags:
-      - Progress
+      - Tasks
+  /testimonials:
+    get:
+      description: Public testimonials for the landing page (APPROVED only).
+      parameters:
+      - description: Max results (default 9, max 24)
+        example: 9
+        in: query
+        name: limit
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - $ref: '#/definitions/github_com_navia-academy_backend_pkg_response.APIResponse'
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/github_com_navia-academy_backend_internal_models.Testimonial'
+                  type: array
+              type: object
+        "500":
+          description: FETCH_FAILED
+          schema:
+            $ref: '#/definitions/github_com_navia-academy_backend_pkg_response.APIError'
+      summary: List approved testimonials
+      tags:
+      - Testimonials
+    post:
+      consumes:
+      - application/json
+      description: Store a learner testimonial for moderation (public, rate limited).
+      parameters:
+      - description: '{name, role_label?, quote}'
+        in: body
+        name: body
+        required: true
+        schema:
+          $ref: '#/definitions/github_com_navia-academy_backend_internal_models.CreateTestimonialRequest'
+      produces:
+      - application/json
+      responses:
+        "201":
+          description: Created
+          schema:
+            allOf:
+            - $ref: '#/definitions/github_com_navia-academy_backend_pkg_response.APIResponse'
+            - properties:
+                data:
+                  $ref: '#/definitions/github_com_navia-academy_backend_internal_models.Testimonial'
+              type: object
+        "400":
+          description: INVALID_BODY / VALIDATION_FAILED
+          schema:
+            $ref: '#/definitions/github_com_navia-academy_backend_pkg_response.APIError'
+        "500":
+          description: SUBMIT_FAILED
+          schema:
+            $ref: '#/definitions/github_com_navia-academy_backend_pkg_response.APIError'
+      summary: Submit a testimonial
+      tags:
+      - Testimonials
+  /testimonials/{id}:
+    delete:
+      description: Delete a testimonial permanently (admin).
+      parameters:
+      - description: Testimonial ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - $ref: '#/definitions/github_com_navia-academy_backend_pkg_response.APIResponse'
+            - properties:
+                data:
+                  type: object
+              type: object
+        "401":
+          description: UNAUTHORIZED / TOKEN_EXPIRED
+          schema:
+            $ref: '#/definitions/github_com_navia-academy_backend_pkg_response.APIError'
+        "500":
+          description: DELETE_FAILED
+          schema:
+            $ref: '#/definitions/github_com_navia-academy_backend_pkg_response.APIError'
+      security:
+      - BearerAuth: []
+      summary: Delete testimonial
+      tags:
+      - Testimonials
+  /testimonials/{id}/status:
+    put:
+      consumes:
+      - application/json
+      description: Approve or reject a testimonial (admin).
+      parameters:
+      - description: Testimonial ID
+        in: path
+        name: id
+        required: true
+        type: string
+      - description: 'Status: APPROVED | REJECTED'
+        in: body
+        name: body
+        required: true
+        schema:
+          $ref: '#/definitions/github_com_navia-academy_backend_internal_models.ReviewTestimonialRequest'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - $ref: '#/definitions/github_com_navia-academy_backend_pkg_response.APIResponse'
+            - properties:
+                data:
+                  type: object
+              type: object
+        "400":
+          description: INVALID_BODY / INVALID_STATUS
+          schema:
+            $ref: '#/definitions/github_com_navia-academy_backend_pkg_response.APIError'
+        "401":
+          description: UNAUTHORIZED / TOKEN_EXPIRED
+          schema:
+            $ref: '#/definitions/github_com_navia-academy_backend_pkg_response.APIError'
+        "500":
+          description: REVIEW_FAILED
+          schema:
+            $ref: '#/definitions/github_com_navia-academy_backend_pkg_response.APIError'
+      security:
+      - BearerAuth: []
+      summary: Review testimonial
+      tags:
+      - Testimonials
+  /testimonials/admin:
+    get:
+      description: Admin listing with optional status filter (?status=PENDING|APPROVED|REJECTED).
+      parameters:
+      - description: PENDING | APPROVED | REJECTED
+        example: PENDING
+        in: query
+        name: status
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - $ref: '#/definitions/github_com_navia-academy_backend_pkg_response.APIResponse'
+            - properties:
+                data:
+                  items:
+                    $ref: '#/definitions/github_com_navia-academy_backend_internal_models.Testimonial'
+                  type: array
+              type: object
+        "400":
+          description: INVALID_STATUS
+          schema:
+            $ref: '#/definitions/github_com_navia-academy_backend_pkg_response.APIError'
+        "401":
+          description: UNAUTHORIZED / TOKEN_EXPIRED
+          schema:
+            $ref: '#/definitions/github_com_navia-academy_backend_pkg_response.APIError'
+        "500":
+          description: FETCH_FAILED
+          schema:
+            $ref: '#/definitions/github_com_navia-academy_backend_pkg_response.APIError'
+      security:
+      - BearerAuth: []
+      summary: List all testimonials
+      tags:
+      - Testimonials
   /tts:
     post:
       consumes:
@@ -3080,6 +3825,12 @@ paths:
 securityDefinitions:
   BearerAuth:
     description: Type "Bearer" followed by a space and the access token.
+    in: header
+    name: Authorization
+    type: apiKey
+  ServiceTokenAuth:
+    description: Type "Bearer" followed by a space and the shared CONTENT_EXPORT_TOKEN.
+      Machine-to-machine export auth, not a user session.
     in: header
     name: Authorization
     type: apiKey

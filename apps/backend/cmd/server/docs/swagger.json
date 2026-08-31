@@ -112,6 +112,236 @@
                 }
             }
         },
+        "/admin/users": {
+            "get": {
+                "security": [
+                    {
+                        "BearerAuth": []
+                    },
+                    {
+                        "BearerAuth": []
+                    }
+                ],
+                "description": "Update a user's role (admin). Valid roles: student, contributor, reviewer, admin.\nAdmin-only. Returns all user accounts (id, name, email, role).",
+                "consumes": [
+                    "application/json",
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json",
+                    "application/json"
+                ],
+                "tags": [
+                    "Admin",
+                    "Admin"
+                ],
+                "summary": "List users",
+                "parameters": [
+                    {
+                        "description": "New role",
+                        "name": "body",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/github_com_navia-academy_backend_internal_models.SetUserRoleRequest"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "allOf": [
+                                {
+                                    "$ref": "#/definitions/github_com_navia-academy_backend_pkg_response.APIResponse"
+                                },
+                                {
+                                    "type": "object",
+                                    "properties": {
+                                        "data": {
+                                            "type": "array",
+                                            "items": {
+                                                "$ref": "#/definitions/github_com_navia-academy_backend_internal_models.User"
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    "400": {
+                        "description": "INVALID_ROLE / MISSING_BODY / USER_NOT_FOUND",
+                        "schema": {
+                            "$ref": "#/definitions/github_com_navia-academy_backend_pkg_response.APIError"
+                        }
+                    },
+                    "403": {
+                        "description": "FORBIDDEN",
+                        "schema": {
+                            "$ref": "#/definitions/github_com_navia-academy_backend_pkg_response.APIError"
+                        }
+                    },
+                    "500": {
+                        "description": "FETCH_FAILED",
+                        "schema": {
+                            "$ref": "#/definitions/github_com_navia-academy_backend_pkg_response.APIError"
+                        }
+                    }
+                }
+            },
+            "post": {
+                "security": [
+                    {
+                        "BearerAuth": []
+                    }
+                ],
+                "description": "Admin-only. Creates a user with an explicit role (default student). Public register always yields student; staff roles are created here.",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "Admin"
+                ],
+                "summary": "Create user (admin)",
+                "parameters": [
+                    {
+                        "description": "User details",
+                        "name": "body",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/github_com_navia-academy_backend_internal_models.AdminCreateUserRequest"
+                        }
+                    }
+                ],
+                "responses": {
+                    "201": {
+                        "description": "Created",
+                        "schema": {
+                            "allOf": [
+                                {
+                                    "$ref": "#/definitions/github_com_navia-academy_backend_pkg_response.APIResponse"
+                                },
+                                {
+                                    "type": "object",
+                                    "properties": {
+                                        "data": {
+                                            "type": "object"
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    "400": {
+                        "description": "INVALID_BODY",
+                        "schema": {
+                            "$ref": "#/definitions/github_com_navia-academy_backend_pkg_response.APIError"
+                        }
+                    },
+                    "409": {
+                        "description": "EMAIL_TAKEN",
+                        "schema": {
+                            "$ref": "#/definitions/github_com_navia-academy_backend_pkg_response.APIError"
+                        }
+                    },
+                    "500": {
+                        "description": "CREATE_FAILED",
+                        "schema": {
+                            "$ref": "#/definitions/github_com_navia-academy_backend_pkg_response.APIError"
+                        }
+                    }
+                }
+            }
+        },
+        "/admin/users/:id/role": {
+            "put": {
+                "security": [
+                    {
+                        "BearerAuth": []
+                    },
+                    {
+                        "BearerAuth": []
+                    }
+                ],
+                "description": "Update a user's role (admin). Valid roles: student, contributor, reviewer, admin.\nAdmin-only. Returns all user accounts (id, name, email, role).",
+                "consumes": [
+                    "application/json",
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json",
+                    "application/json"
+                ],
+                "tags": [
+                    "Admin",
+                    "Admin"
+                ],
+                "summary": "List users",
+                "parameters": [
+                    {
+                        "type": "string",
+                        "description": "User ID",
+                        "name": "id",
+                        "in": "path",
+                        "required": true
+                    },
+                    {
+                        "description": "New role",
+                        "name": "body",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/github_com_navia-academy_backend_internal_models.SetUserRoleRequest"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "allOf": [
+                                {
+                                    "$ref": "#/definitions/github_com_navia-academy_backend_pkg_response.APIResponse"
+                                },
+                                {
+                                    "type": "object",
+                                    "properties": {
+                                        "data": {
+                                            "type": "array",
+                                            "items": {
+                                                "$ref": "#/definitions/github_com_navia-academy_backend_internal_models.User"
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    "400": {
+                        "description": "INVALID_ROLE / MISSING_BODY / USER_NOT_FOUND",
+                        "schema": {
+                            "$ref": "#/definitions/github_com_navia-academy_backend_pkg_response.APIError"
+                        }
+                    },
+                    "403": {
+                        "description": "FORBIDDEN",
+                        "schema": {
+                            "$ref": "#/definitions/github_com_navia-academy_backend_pkg_response.APIError"
+                        }
+                    },
+                    "500": {
+                        "description": "FETCH_FAILED",
+                        "schema": {
+                            "$ref": "#/definitions/github_com_navia-academy_backend_pkg_response.APIError"
+                        }
+                    }
+                }
+            }
+        },
         "/auth/change-password": {
             "post": {
                 "security": [
@@ -993,6 +1223,86 @@
                 }
             }
         },
+        "/content/export": {
+            "get": {
+                "security": [
+                    {
+                        "ServiceTokenAuth": []
+                    }
+                ],
+                "description": "Read-only machine-to-machine feed of published content items for apps/media's sync script. Authenticated with the shared CONTENT_EXPORT_TOKEN bearer token, not user BearerAuth.",
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "Content · Items"
+                ],
+                "summary": "Export published content items",
+                "parameters": [
+                    {
+                        "type": "string",
+                        "example": "zh",
+                        "description": "Language",
+                        "name": "lang",
+                        "in": "query"
+                    },
+                    {
+                        "type": "string",
+                        "example": "vocabulary",
+                        "description": "Domain",
+                        "name": "domain",
+                        "in": "query"
+                    },
+                    {
+                        "type": "string",
+                        "example": "2026-01-01T00:00:00Z",
+                        "description": "Only rows updated after this RFC3339 timestamp",
+                        "name": "since",
+                        "in": "query"
+                    },
+                    {
+                        "type": "integer",
+                        "example": 500,
+                        "description": "Max results per page (default 500, max 1000)",
+                        "name": "limit",
+                        "in": "query"
+                    },
+                    {
+                        "type": "integer",
+                        "example": 0,
+                        "description": "Pagination offset",
+                        "name": "offset",
+                        "in": "query"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/github_com_navia-academy_backend_internal_models.ContentExportResponse"
+                        }
+                    },
+                    "400": {
+                        "description": "INVALID_LANG / INVALID_DOMAIN / INVALID_SINCE",
+                        "schema": {
+                            "$ref": "#/definitions/github_com_navia-academy_backend_pkg_response.APIError"
+                        }
+                    },
+                    "401": {
+                        "description": "UNAUTHORIZED",
+                        "schema": {
+                            "$ref": "#/definitions/github_com_navia-academy_backend_pkg_response.APIError"
+                        }
+                    },
+                    "503": {
+                        "description": "EXPORT_DISABLED",
+                        "schema": {
+                            "$ref": "#/definitions/github_com_navia-academy_backend_pkg_response.APIError"
+                        }
+                    }
+                }
+            }
+        },
         "/content/{lang}/{domain}/{id}": {
             "get": {
                 "security": [
@@ -1215,7 +1525,7 @@
                         "required": true
                     },
                     {
-                        "description": "Status: published | rejected (+ note)",
+                        "description": "Status: published (requires ref) | rejected (+ note)",
                         "name": "body",
                         "in": "body",
                         "required": true,
@@ -1244,7 +1554,7 @@
                         }
                     },
                     "400": {
-                        "description": "INVALID_STATUS / REVIEW_FAILED",
+                        "description": "INVALID_STATUS / MISSING_REF / INVALID_REF / REVIEW_FAILED",
                         "schema": {
                             "$ref": "#/definitions/github_com_navia-academy_backend_pkg_response.APIError"
                         }
@@ -1945,7 +2255,7 @@
                     "application/json"
                 ],
                 "tags": [
-                    "Progress"
+                    "Games"
                 ],
                 "summary": "Add game result",
                 "parameters": [
@@ -2176,7 +2486,7 @@
                     "application/json"
                 ],
                 "tags": [
-                    "Progress"
+                    "Achievements"
                 ],
                 "summary": "Get achievements",
                 "responses": {
@@ -2228,7 +2538,7 @@
                     "application/json"
                 ],
                 "tags": [
-                    "Progress"
+                    "SRS"
                 ],
                 "summary": "Get due SRS cards",
                 "parameters": [
@@ -2292,7 +2602,7 @@
                     "application/json"
                 ],
                 "tags": [
-                    "Progress"
+                    "SRS"
                 ],
                 "summary": "Review SRS card",
                 "parameters": [
@@ -2476,6 +2786,209 @@
                     },
                     "500": {
                         "description": "FETCH_FAILED",
+                        "schema": {
+                            "$ref": "#/definitions/github_com_navia-academy_backend_pkg_response.APIError"
+                        }
+                    }
+                }
+            }
+        },
+        "/resonance": {
+            "get": {
+                "description": "Public. Returns all-time (violet) and 24h live (turquoise) emotion counts for one origin.",
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "Resonance"
+                ],
+                "summary": "Get an origin's resonance",
+                "parameters": [
+                    {
+                        "type": "string",
+                        "description": "Origin key (radical / head character)",
+                        "name": "origin",
+                        "in": "query",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "allOf": [
+                                {
+                                    "$ref": "#/definitions/github_com_navia-academy_backend_pkg_response.APIResponse"
+                                },
+                                {
+                                    "type": "object",
+                                    "properties": {
+                                        "data": {
+                                            "$ref": "#/definitions/github_com_navia-academy_backend_internal_models.ResonanceOrigin"
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    "400": {
+                        "description": "INVALID_ORIGIN",
+                        "schema": {
+                            "$ref": "#/definitions/github_com_navia-academy_backend_pkg_response.APIError"
+                        }
+                    }
+                }
+            },
+            "post": {
+                "security": [
+                    {
+                        "BearerAuth": []
+                    }
+                ],
+                "description": "Attach a feeling (inspired, warm, curious, nostalgic, calm, excited) to a word origin. Aliases are normalized.",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "Resonance"
+                ],
+                "summary": "Record a resonance reaction",
+                "parameters": [
+                    {
+                        "description": "Resonance event",
+                        "name": "body",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/github_com_navia-academy_backend_internal_models.ResonanceEvent"
+                        }
+                    }
+                ],
+                "responses": {
+                    "201": {
+                        "description": "Created",
+                        "schema": {
+                            "allOf": [
+                                {
+                                    "$ref": "#/definitions/github_com_navia-academy_backend_pkg_response.APIResponse"
+                                },
+                                {
+                                    "type": "object",
+                                    "properties": {
+                                        "data": {
+                                            "$ref": "#/definitions/github_com_navia-academy_backend_internal_models.ResonanceOrigin"
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    "400": {
+                        "description": "INVALID_ORIGIN / INVALID_EMOTION / MISSING_BODY",
+                        "schema": {
+                            "$ref": "#/definitions/github_com_navia-academy_backend_pkg_response.APIError"
+                        }
+                    },
+                    "401": {
+                        "description": "UNAUTHORIZED",
+                        "schema": {
+                            "$ref": "#/definitions/github_com_navia-academy_backend_pkg_response.APIError"
+                        }
+                    },
+                    "500": {
+                        "description": "SAVE_FAILED",
+                        "schema": {
+                            "$ref": "#/definitions/github_com_navia-academy_backend_pkg_response.APIError"
+                        }
+                    }
+                }
+            }
+        },
+        "/resonance/hot": {
+            "get": {
+                "description": "Public. Top origins ranked by 24h live pulse (turquoise), with all-time totals (violet).",
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "Resonance"
+                ],
+                "summary": "Hot origins right now",
+                "parameters": [
+                    {
+                        "type": "integer",
+                        "description": "Max rows (default 8, max 25)",
+                        "name": "limit",
+                        "in": "query"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "allOf": [
+                                {
+                                    "$ref": "#/definitions/github_com_navia-academy_backend_pkg_response.APIResponse"
+                                },
+                                {
+                                    "type": "object",
+                                    "properties": {
+                                        "data": {
+                                            "type": "array",
+                                            "items": {
+                                                "$ref": "#/definitions/github_com_navia-academy_backend_internal_models.ResonanceHot"
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                }
+            }
+        },
+        "/resonance/me": {
+            "get": {
+                "security": [
+                    {
+                        "BearerAuth": []
+                    }
+                ],
+                "description": "Auth. The caller's recent reactions, for re-highlighting the UI.",
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "Resonance"
+                ],
+                "summary": "My resonance reactions",
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "allOf": [
+                                {
+                                    "$ref": "#/definitions/github_com_navia-academy_backend_pkg_response.APIResponse"
+                                },
+                                {
+                                    "type": "object",
+                                    "properties": {
+                                        "data": {
+                                            "type": "array",
+                                            "items": {
+                                                "$ref": "#/definitions/github_com_navia-academy_backend_internal_models.ResonanceReaction"
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    "401": {
+                        "description": "UNAUTHORIZED",
                         "schema": {
                             "$ref": "#/definitions/github_com_navia-academy_backend_pkg_response.APIError"
                         }
@@ -2994,6 +3507,124 @@
                 }
             }
         },
+        "/srs/cards": {
+            "post": {
+                "security": [
+                    {
+                        "BearerAuth": []
+                    }
+                ],
+                "description": "Create a new SRS card for an item (no-op if it already exists).",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "SRS"
+                ],
+                "summary": "Create SRS card",
+                "parameters": [
+                    {
+                        "description": "Payload: {\\",
+                        "name": "body",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "type": "object"
+                        }
+                    }
+                ],
+                "responses": {
+                    "201": {
+                        "description": "Created",
+                        "schema": {
+                            "allOf": [
+                                {
+                                    "$ref": "#/definitions/github_com_navia-academy_backend_pkg_response.APIResponse"
+                                },
+                                {
+                                    "type": "object",
+                                    "properties": {
+                                        "data": {
+                                            "$ref": "#/definitions/github_com_navia-academy_backend_internal_models.SrsCard"
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    "400": {
+                        "description": "INVALID_BODY",
+                        "schema": {
+                            "$ref": "#/definitions/github_com_navia-academy_backend_pkg_response.APIError"
+                        }
+                    },
+                    "401": {
+                        "description": "UNAUTHORIZED / TOKEN_EXPIRED",
+                        "schema": {
+                            "$ref": "#/definitions/github_com_navia-academy_backend_pkg_response.APIError"
+                        }
+                    },
+                    "500": {
+                        "description": "CREATE_FAILED",
+                        "schema": {
+                            "$ref": "#/definitions/github_com_navia-academy_backend_pkg_response.APIError"
+                        }
+                    }
+                }
+            }
+        },
+        "/srs/stats": {
+            "get": {
+                "security": [
+                    {
+                        "BearerAuth": []
+                    }
+                ],
+                "description": "Get the user's SRS statistics (total, due, new, learning, review).",
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "SRS"
+                ],
+                "summary": "Get SRS stats",
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "allOf": [
+                                {
+                                    "$ref": "#/definitions/github_com_navia-academy_backend_pkg_response.APIResponse"
+                                },
+                                {
+                                    "type": "object",
+                                    "properties": {
+                                        "data": {
+                                            "type": "object"
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    "401": {
+                        "description": "UNAUTHORIZED / TOKEN_EXPIRED",
+                        "schema": {
+                            "$ref": "#/definitions/github_com_navia-academy_backend_pkg_response.APIError"
+                        }
+                    },
+                    "500": {
+                        "description": "FETCH_FAILED",
+                        "schema": {
+                            "$ref": "#/definitions/github_com_navia-academy_backend_pkg_response.APIError"
+                        }
+                    }
+                }
+            }
+        },
         "/supporters": {
             "get": {
                 "description": "Get public supporters (wall). Amount is never exposed.",
@@ -3063,7 +3694,7 @@
                     "application/json"
                 ],
                 "tags": [
-                    "Progress"
+                    "Tasks"
                 ],
                 "summary": "Get tasks",
                 "responses": {
@@ -3116,7 +3747,7 @@
                     "application/json"
                 ],
                 "tags": [
-                    "Progress"
+                    "Tasks"
                 ],
                 "summary": "Create task",
                 "parameters": [
@@ -3185,7 +3816,7 @@
                     "application/json"
                 ],
                 "tags": [
-                    "Progress"
+                    "Tasks"
                 ],
                 "summary": "Update task",
                 "parameters": [
@@ -3256,7 +3887,7 @@
                     "application/json"
                 ],
                 "tags": [
-                    "Progress"
+                    "Tasks"
                 ],
                 "summary": "Delete task",
                 "parameters": [
@@ -3295,6 +3926,313 @@
                     },
                     "500": {
                         "description": "DELETE_FAILED",
+                        "schema": {
+                            "$ref": "#/definitions/github_com_navia-academy_backend_pkg_response.APIError"
+                        }
+                    }
+                }
+            }
+        },
+        "/testimonials": {
+            "get": {
+                "description": "Public testimonials for the landing page (APPROVED only).",
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "Testimonials"
+                ],
+                "summary": "List approved testimonials",
+                "parameters": [
+                    {
+                        "type": "integer",
+                        "example": 9,
+                        "description": "Max results (default 9, max 24)",
+                        "name": "limit",
+                        "in": "query"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "allOf": [
+                                {
+                                    "$ref": "#/definitions/github_com_navia-academy_backend_pkg_response.APIResponse"
+                                },
+                                {
+                                    "type": "object",
+                                    "properties": {
+                                        "data": {
+                                            "type": "array",
+                                            "items": {
+                                                "$ref": "#/definitions/github_com_navia-academy_backend_internal_models.Testimonial"
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    "500": {
+                        "description": "FETCH_FAILED",
+                        "schema": {
+                            "$ref": "#/definitions/github_com_navia-academy_backend_pkg_response.APIError"
+                        }
+                    }
+                }
+            },
+            "post": {
+                "description": "Store a learner testimonial for moderation (public, rate limited).",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "Testimonials"
+                ],
+                "summary": "Submit a testimonial",
+                "parameters": [
+                    {
+                        "description": "{name, role_label?, quote}",
+                        "name": "body",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/github_com_navia-academy_backend_internal_models.CreateTestimonialRequest"
+                        }
+                    }
+                ],
+                "responses": {
+                    "201": {
+                        "description": "Created",
+                        "schema": {
+                            "allOf": [
+                                {
+                                    "$ref": "#/definitions/github_com_navia-academy_backend_pkg_response.APIResponse"
+                                },
+                                {
+                                    "type": "object",
+                                    "properties": {
+                                        "data": {
+                                            "$ref": "#/definitions/github_com_navia-academy_backend_internal_models.Testimonial"
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    "400": {
+                        "description": "INVALID_BODY / VALIDATION_FAILED",
+                        "schema": {
+                            "$ref": "#/definitions/github_com_navia-academy_backend_pkg_response.APIError"
+                        }
+                    },
+                    "500": {
+                        "description": "SUBMIT_FAILED",
+                        "schema": {
+                            "$ref": "#/definitions/github_com_navia-academy_backend_pkg_response.APIError"
+                        }
+                    }
+                }
+            }
+        },
+        "/testimonials/admin": {
+            "get": {
+                "security": [
+                    {
+                        "BearerAuth": []
+                    }
+                ],
+                "description": "Admin listing with optional status filter (?status=PENDING|APPROVED|REJECTED).",
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "Testimonials"
+                ],
+                "summary": "List all testimonials",
+                "parameters": [
+                    {
+                        "type": "string",
+                        "example": "PENDING",
+                        "description": "PENDING | APPROVED | REJECTED",
+                        "name": "status",
+                        "in": "query"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "allOf": [
+                                {
+                                    "$ref": "#/definitions/github_com_navia-academy_backend_pkg_response.APIResponse"
+                                },
+                                {
+                                    "type": "object",
+                                    "properties": {
+                                        "data": {
+                                            "type": "array",
+                                            "items": {
+                                                "$ref": "#/definitions/github_com_navia-academy_backend_internal_models.Testimonial"
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    "400": {
+                        "description": "INVALID_STATUS",
+                        "schema": {
+                            "$ref": "#/definitions/github_com_navia-academy_backend_pkg_response.APIError"
+                        }
+                    },
+                    "401": {
+                        "description": "UNAUTHORIZED / TOKEN_EXPIRED",
+                        "schema": {
+                            "$ref": "#/definitions/github_com_navia-academy_backend_pkg_response.APIError"
+                        }
+                    },
+                    "500": {
+                        "description": "FETCH_FAILED",
+                        "schema": {
+                            "$ref": "#/definitions/github_com_navia-academy_backend_pkg_response.APIError"
+                        }
+                    }
+                }
+            }
+        },
+        "/testimonials/{id}": {
+            "delete": {
+                "security": [
+                    {
+                        "BearerAuth": []
+                    }
+                ],
+                "description": "Delete a testimonial permanently (admin).",
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "Testimonials"
+                ],
+                "summary": "Delete testimonial",
+                "parameters": [
+                    {
+                        "type": "string",
+                        "description": "Testimonial ID",
+                        "name": "id",
+                        "in": "path",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "allOf": [
+                                {
+                                    "$ref": "#/definitions/github_com_navia-academy_backend_pkg_response.APIResponse"
+                                },
+                                {
+                                    "type": "object",
+                                    "properties": {
+                                        "data": {
+                                            "type": "object"
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    "401": {
+                        "description": "UNAUTHORIZED / TOKEN_EXPIRED",
+                        "schema": {
+                            "$ref": "#/definitions/github_com_navia-academy_backend_pkg_response.APIError"
+                        }
+                    },
+                    "500": {
+                        "description": "DELETE_FAILED",
+                        "schema": {
+                            "$ref": "#/definitions/github_com_navia-academy_backend_pkg_response.APIError"
+                        }
+                    }
+                }
+            }
+        },
+        "/testimonials/{id}/status": {
+            "put": {
+                "security": [
+                    {
+                        "BearerAuth": []
+                    }
+                ],
+                "description": "Approve or reject a testimonial (admin).",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "Testimonials"
+                ],
+                "summary": "Review testimonial",
+                "parameters": [
+                    {
+                        "type": "string",
+                        "description": "Testimonial ID",
+                        "name": "id",
+                        "in": "path",
+                        "required": true
+                    },
+                    {
+                        "description": "Status: APPROVED | REJECTED",
+                        "name": "body",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/github_com_navia-academy_backend_internal_models.ReviewTestimonialRequest"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "allOf": [
+                                {
+                                    "$ref": "#/definitions/github_com_navia-academy_backend_pkg_response.APIResponse"
+                                },
+                                {
+                                    "type": "object",
+                                    "properties": {
+                                        "data": {
+                                            "type": "object"
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    "400": {
+                        "description": "INVALID_BODY / INVALID_STATUS",
+                        "schema": {
+                            "$ref": "#/definitions/github_com_navia-academy_backend_pkg_response.APIError"
+                        }
+                    },
+                    "401": {
+                        "description": "UNAUTHORIZED / TOKEN_EXPIRED",
+                        "schema": {
+                            "$ref": "#/definitions/github_com_navia-academy_backend_pkg_response.APIError"
+                        }
+                    },
+                    "500": {
+                        "description": "REVIEW_FAILED",
                         "schema": {
                             "$ref": "#/definitions/github_com_navia-academy_backend_pkg_response.APIError"
                         }
@@ -3571,6 +4509,36 @@
                 }
             }
         },
+        "github_com_navia-academy_backend_internal_models.AdminCreateUserRequest": {
+            "type": "object",
+            "required": [
+                "email",
+                "name",
+                "password"
+            ],
+            "properties": {
+                "email": {
+                    "type": "string",
+                    "example": "sari@example.com"
+                },
+                "name": {
+                    "type": "string",
+                    "maxLength": 100,
+                    "minLength": 2,
+                    "example": "Ibu Sari"
+                },
+                "password": {
+                    "type": "string",
+                    "maxLength": 128,
+                    "minLength": 8,
+                    "example": "Rahasia123!"
+                },
+                "role": {
+                    "type": "string",
+                    "example": "reviewer"
+                }
+            }
+        },
         "github_com_navia-academy_backend_internal_models.AudioRecord": {
             "type": "object",
             "properties": {
@@ -3816,6 +4784,37 @@
                     "description": "current estimate (informational)",
                     "type": "number",
                     "example": 600
+                }
+            }
+        },
+        "github_com_navia-academy_backend_internal_models.ContentExportMeta": {
+            "type": "object",
+            "properties": {
+                "count": {
+                    "type": "integer"
+                },
+                "generated_at": {
+                    "type": "string"
+                },
+                "total_published": {
+                    "type": "integer"
+                }
+            }
+        },
+        "github_com_navia-academy_backend_internal_models.ContentExportResponse": {
+            "type": "object",
+            "properties": {
+                "data": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/github_com_navia-academy_backend_internal_models.ExportContentItem"
+                    }
+                },
+                "meta": {
+                    "$ref": "#/definitions/github_com_navia-academy_backend_internal_models.ContentExportMeta"
+                },
+                "success": {
+                    "type": "boolean"
                 }
             }
         },
@@ -4085,6 +5084,20 @@
                 }
             }
         },
+        "github_com_navia-academy_backend_internal_models.CreateTestimonialRequest": {
+            "type": "object",
+            "properties": {
+                "name": {
+                    "type": "string"
+                },
+                "quote": {
+                    "type": "string"
+                },
+                "role_label": {
+                    "type": "string"
+                }
+            }
+        },
         "github_com_navia-academy_backend_internal_models.ExamSession": {
             "type": "object",
             "properties": {
@@ -4149,6 +5162,35 @@
                     "type": "string"
                 },
                 "user_id": {
+                    "type": "string"
+                }
+            }
+        },
+        "github_com_navia-academy_backend_internal_models.ExportContentItem": {
+            "type": "object",
+            "properties": {
+                "domain": {
+                    "type": "string"
+                },
+                "id": {
+                    "type": "string"
+                },
+                "lang": {
+                    "type": "string"
+                },
+                "payload": {
+                    "type": "array",
+                    "items": {
+                        "type": "integer"
+                    }
+                },
+                "pos": {
+                    "type": "integer"
+                },
+                "ref": {
+                    "type": "string"
+                },
+                "updated_at": {
                     "type": "string"
                 }
             }
@@ -4278,6 +5320,86 @@
                 }
             }
         },
+        "github_com_navia-academy_backend_internal_models.ResonanceEvent": {
+            "type": "object",
+            "properties": {
+                "emotion": {
+                    "type": "string"
+                },
+                "intensity": {
+                    "type": "integer"
+                },
+                "origin": {
+                    "type": "string"
+                }
+            }
+        },
+        "github_com_navia-academy_backend_internal_models.ResonanceHot": {
+            "type": "object",
+            "properties": {
+                "live": {
+                    "type": "integer"
+                },
+                "origin": {
+                    "type": "string"
+                },
+                "total": {
+                    "type": "integer"
+                }
+            }
+        },
+        "github_com_navia-academy_backend_internal_models.ResonanceOrigin": {
+            "type": "object",
+            "properties": {
+                "emotion": {
+                    "type": "object",
+                    "additionalProperties": {
+                        "type": "integer",
+                        "format": "int64"
+                    }
+                },
+                "live": {
+                    "type": "object",
+                    "additionalProperties": {
+                        "type": "integer",
+                        "format": "int64"
+                    }
+                },
+                "origin": {
+                    "type": "string"
+                },
+                "total": {
+                    "type": "object",
+                    "additionalProperties": {
+                        "type": "integer",
+                        "format": "int64"
+                    }
+                }
+            }
+        },
+        "github_com_navia-academy_backend_internal_models.ResonanceReaction": {
+            "type": "object",
+            "properties": {
+                "created_at": {
+                    "type": "string"
+                },
+                "emotion": {
+                    "type": "string"
+                },
+                "id": {
+                    "type": "integer"
+                },
+                "intensity": {
+                    "type": "integer"
+                },
+                "origin": {
+                    "type": "string"
+                },
+                "user_id": {
+                    "type": "string"
+                }
+            }
+        },
         "github_com_navia-academy_backend_internal_models.ReviewApplicationRequest": {
             "type": "object",
             "required": [
@@ -4300,11 +5422,24 @@
         "github_com_navia-academy_backend_internal_models.ReviewContentRequest": {
             "type": "object",
             "properties": {
+                "ref": {
+                    "description": "Ref is REQUIRED when publishing — the reviewer-assigned target level\n(e.g. \"hsk/hsk3\"); ignored when rejecting.",
+                    "type": "string",
+                    "example": "hsk/hsk3"
+                },
                 "review_note": {
                     "type": "string"
                 },
                 "status": {
                     "description": "published | rejected",
+                    "type": "string"
+                }
+            }
+        },
+        "github_com_navia-academy_backend_internal_models.ReviewTestimonialRequest": {
+            "type": "object",
+            "properties": {
+                "status": {
                     "type": "string"
                 }
             }
@@ -4335,6 +5470,18 @@
                         "grammar"
                     ],
                     "example": "word"
+                }
+            }
+        },
+        "github_com_navia-academy_backend_internal_models.SetUserRoleRequest": {
+            "type": "object",
+            "required": [
+                "role"
+            ],
+            "properties": {
+                "role": {
+                    "type": "string",
+                    "example": "reviewer"
                 }
             }
         },
@@ -4667,6 +5814,44 @@
                 }
             }
         },
+        "github_com_navia-academy_backend_internal_models.Testimonial": {
+            "type": "object",
+            "properties": {
+                "avatar": {
+                    "type": "string"
+                },
+                "created_at": {
+                    "type": "string"
+                },
+                "id": {
+                    "type": "string"
+                },
+                "name": {
+                    "type": "string"
+                },
+                "quote": {
+                    "type": "string"
+                },
+                "reviewed_at": {
+                    "type": "string"
+                },
+                "reviewed_by": {
+                    "type": "string"
+                },
+                "role_label": {
+                    "type": "string"
+                },
+                "status": {
+                    "type": "string"
+                },
+                "updated_at": {
+                    "type": "string"
+                },
+                "user_id": {
+                    "type": "string"
+                }
+            }
+        },
         "github_com_navia-academy_backend_internal_models.TokenPair": {
             "type": "object",
             "properties": {
@@ -4689,6 +5874,10 @@
                     "items": {
                         "type": "integer"
                     }
+                },
+                "ref": {
+                    "description": "proposed level, e.g. \"hsk/hsk3\"",
+                    "type": "string"
                 },
                 "status": {
                     "description": "draft | review",
@@ -4924,6 +6113,12 @@
     "securityDefinitions": {
         "BearerAuth": {
             "description": "Type \"Bearer\" followed by a space and the access token.",
+            "type": "apiKey",
+            "name": "Authorization",
+            "in": "header"
+        },
+        "ServiceTokenAuth": {
+            "description": "Type \"Bearer\" followed by a space and the shared CONTENT_EXPORT_TOKEN. Machine-to-machine export auth, not a user session.",
             "type": "apiKey",
             "name": "Authorization",
             "in": "header"
