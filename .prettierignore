@@ -1,0 +1,15 @@
+node_modules
+.next
+.turbo
+.expo
+android
+ios
+dist
+bin
+graphify-out
+out
+.output
+pnpm-lock.yaml
+.opencode
+apps/media/data
+apps/backend/cmd/server/docs

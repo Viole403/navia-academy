@@ -10,6 +10,7 @@
     "ios": "expo start --ios",
     "web": "expo start --web",
     "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
     "eas:login": "eas login",
     "eas:init": "eas init",
     "eas:configure": "eas build:configure",
@@ -59,10 +60,12 @@
   "devDependencies": {
     "@babel/core": "^7.26.0",
     "@babel/plugin-transform-react-jsx": "^7.29.7",
+    "@navia/eslint-config": "workspace:*",
     "@types/node": "^20",
     "@types/react": "~19.2.4",
     "@types/react-native": "^0.73.0",
     "babel-plugin-module-resolver": "^5.0.2",
+    "eslint": "^9.0.0",
     "typescript": "~6.0.3"
   }
 }
