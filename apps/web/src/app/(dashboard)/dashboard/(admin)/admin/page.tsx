@@ -53,10 +53,22 @@ export default function AdminPage() {
 
   const datasets = useMemo(
     () => ({
-      lessons: { labelKey: "admin.dataset.lessons" as TranslationKey, data: LESSONS },
-      characters: { labelKey: "admin.dataset.characters" as TranslationKey, data: CHARACTERS },
-      grammar: { labelKey: "admin.dataset.grammar" as TranslationKey, data: GRAMMAR_POINTS },
-      readings: { labelKey: "admin.dataset.readings" as TranslationKey, data: READINGS },
+      lessons: {
+        labelKey: "admin.dataset.lessons" as TranslationKey,
+        data: LESSONS,
+      },
+      characters: {
+        labelKey: "admin.dataset.characters" as TranslationKey,
+        data: CHARACTERS,
+      },
+      grammar: {
+        labelKey: "admin.dataset.grammar" as TranslationKey,
+        data: GRAMMAR_POINTS,
+      },
+      readings: {
+        labelKey: "admin.dataset.readings" as TranslationKey,
+        data: READINGS,
+      },
       conversations: {
         labelKey: "admin.dataset.conversations" as TranslationKey,
         data: CONVERSATIONS,
@@ -65,7 +77,10 @@ export default function AdminPage() {
         labelKey: "admin.dataset.achievements" as TranslationKey,
         data: ACHIEVEMENTS,
       },
-      vocabulary: { labelKey: "admin.dataset.vocabulary" as TranslationKey, data: vocabulary },
+      vocabulary: {
+        labelKey: "admin.dataset.vocabulary" as TranslationKey,
+        data: vocabulary,
+      },
     }),
     [
       LESSONS,

@@ -19,7 +19,10 @@ const schema = z.object({
 
 type FormData = z.infer<typeof schema>
 
-function friendlyError(err: unknown, t: (key: TranslationKey) => string): string {
+function friendlyError(
+  err: unknown,
+  t: (key: TranslationKey) => string
+): string {
   const msg = err instanceof Error ? err.message : String(err)
   const code = (err as { code?: string } | null)?.code ?? ""
   if (
