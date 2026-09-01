@@ -15,11 +15,12 @@ import { LANGUAGES, languageInfo } from "@/lib/languages"
 import { setLearningLanguage } from "@/lib/language-context"
 import type { ExamType, LanguageCode, OnboardingData } from "@/types"
 import { usePlacement } from "@/lib/placement"
+import type { TranslationKey } from "@/i18n/keys"
 
 interface StepDef {
   id: string
-  titleKey: string
-  subtitleKey: string
+  titleKey: TranslationKey
+  subtitleKey: TranslationKey
 }
 
 const STEPS: StepDef[] = [
@@ -55,7 +56,7 @@ const STEPS: StepDef[] = [
   },
 ]
 
-const MOTIVATIONS = [
+const MOTIVATIONS: { id: string; labelKey: TranslationKey }[] = [
   { id: "culture", labelKey: "onboarding.motivation.culture" },
   { id: "work", labelKey: "onboarding.motivation.work" },
   { id: "travel", labelKey: "onboarding.motivation.travel" },

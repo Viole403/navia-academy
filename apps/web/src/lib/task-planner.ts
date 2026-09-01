@@ -1,4 +1,5 @@
 import type { AssessmentAttempt, StudySessionLog, StudyTask } from "@/types"
+import type { TranslationKey } from "@/i18n/keys"
 import { dueCards, todayLog } from "@/lib/derived"
 
 /**
@@ -10,7 +11,7 @@ import { dueCards, todayLog } from "@/lib/derived"
  */
 
 export interface TaskPlannerInput {
-  t: (key: string, vars?: Record<string, string>) => string
+  t: (key: TranslationKey, vars?: Record<string, string>) => string
   /** SRS cards for the active learning language only. */
   srs: Record<string, import("@/types").SrsCard>
   attempts: AssessmentAttempt[]
