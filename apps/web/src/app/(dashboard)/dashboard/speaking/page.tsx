@@ -16,6 +16,7 @@ import { useProgress } from "@/stores/progress"
 import { showsTranslation, useSettings } from "@/stores/settings"
 import { play } from "@/lib/audio"
 import { useTranslation } from "@/i18n/locale-context"
+import type { TranslationKey } from "@/i18n/keys"
 import { translationFor } from "@/lib/content-translation"
 import {
   matchTranscript,
@@ -35,7 +36,7 @@ import {
   Tabs,
 } from "@/components/ui"
 
-const TONE_PAIRS = [
+const TONE_PAIRS: { a: string; b: string; noteKey: TranslationKey }[] = [
   { a: "妈 mā", b: "马 mǎ", noteKey: "speaking.pair1" },
   { a: "买 mǎi", b: "卖 mài", noteKey: "speaking.pair2" },
   { a: "四 sì", b: "十 shí", noteKey: "speaking.pair3" },
