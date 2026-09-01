@@ -1,7 +1,7 @@
 // Web is a pure frontend: every data request goes to the Go/Fiber backend
 // (NEXT_PUBLIC_API_BASE_URL) authenticated with the custom JWT access token.
 
-import { getAccessToken } from "@/lib/auth-client"
+import { getAccessToken, refreshSession } from "@/lib/auth-client"
 
 export const API_BASE_URL = (
   process.env.NEXT_PUBLIC_API_BASE_URL ?? "http://localhost:8080"
@@ -38,8 +38,26 @@ export async function api<T = unknown>(
   path: string,
   init?: RequestInit
 ): Promise<T> {
-  const headers = authHeaders(init?.headers as Record<string, string>)
-  const res = await fetch(`${API_BASE_URL}${path}`, { ...init, headers })
+  return apiWithRetry<T>(path, init, 0)
+}
+
+/**
+ * fetch wrapper that:
+ *  - attaches the Bearer token
+ *  - unwraps the {success, data} envelope and throws typed errors
+ *  - on 401, refreshes the token pair once and retries (parity with the
+ *    mobile apiClient interceptor)
+ */
+async function apiWithRetry<T>(
+  path: string,
+  init: RequestInit | undefined,
+  retried: number
+): Promise<T> {
+  const res = await authFetch(path, init)
+  if (res.status === 401 && retried === 0) {
+    const next = await refreshSession()
+    if (next) return apiWithRetry<T>(path, init, 1)
+  }
   if (!res.ok) {
     const body = (await res.json().catch(() => ({}))) as Envelope<unknown>
     const err = new Error(

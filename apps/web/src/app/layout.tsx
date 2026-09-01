@@ -57,6 +57,14 @@ export const metadata: Metadata = {
   metadataBase: new URL(
     process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000"
   ),
+  alternates: {
+    canonical: "/",
+    languages: {
+      en: "/",
+      id: "/",
+      "x-default": "/",
+    },
+  },
   title: {
     default: "Navia — Language Academy",
     template: "%s · Navia",
@@ -104,7 +112,7 @@ export default async function RootLayout({
   const initialLocale: "en" | "id" = cookieLocale === "id" ? "id" : "en"
   return (
     <html
-      lang="en"
+      lang={initialLocale}
       data-theme="bauhaus"
       data-fontsize="md"
       suppressHydrationWarning
