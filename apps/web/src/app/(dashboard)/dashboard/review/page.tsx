@@ -37,7 +37,7 @@ interface CardFace {
 
 function faceFor(
   card: SrsCard,
-  t: (key: string, params?: Record<string, string>) => string,
+  t: (key: TranslationKey, params?: Record<string, string>) => string,
   dm: DisplayModeMode,
   locale: string
 ): CardFace | null {
