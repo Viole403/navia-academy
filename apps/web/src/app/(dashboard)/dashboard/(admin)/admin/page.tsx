@@ -22,6 +22,7 @@ import {
   TabPanel,
 } from "@/components/ui"
 import { useTranslation } from "@/i18n/locale-context"
+import type { TranslationKey } from "@/i18n/keys"
 
 type DatasetKey =
   | "lessons"
@@ -52,19 +53,19 @@ export default function AdminPage() {
 
   const datasets = useMemo(
     () => ({
-      lessons: { labelKey: "admin.dataset.lessons", data: LESSONS },
-      characters: { labelKey: "admin.dataset.characters", data: CHARACTERS },
-      grammar: { labelKey: "admin.dataset.grammar", data: GRAMMAR_POINTS },
-      readings: { labelKey: "admin.dataset.readings", data: READINGS },
+      lessons: { labelKey: "admin.dataset.lessons" as TranslationKey, data: LESSONS },
+      characters: { labelKey: "admin.dataset.characters" as TranslationKey, data: CHARACTERS },
+      grammar: { labelKey: "admin.dataset.grammar" as TranslationKey, data: GRAMMAR_POINTS },
+      readings: { labelKey: "admin.dataset.readings" as TranslationKey, data: READINGS },
       conversations: {
-        labelKey: "admin.dataset.conversations",
+        labelKey: "admin.dataset.conversations" as TranslationKey,
         data: CONVERSATIONS,
       },
       achievements: {
-        labelKey: "admin.dataset.achievements",
+        labelKey: "admin.dataset.achievements" as TranslationKey,
         data: ACHIEVEMENTS,
       },
-      vocabulary: { labelKey: "admin.dataset.vocabulary", data: vocabulary },
+      vocabulary: { labelKey: "admin.dataset.vocabulary" as TranslationKey, data: vocabulary },
     }),
     [
       LESSONS,
