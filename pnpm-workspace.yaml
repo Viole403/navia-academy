@@ -1,6 +1,0 @@
-packages:
-  - "apps/web"
-  - "apps/mobile"
-  - "apps/media"
-  - "apps/backend"
-  - "packages/*"

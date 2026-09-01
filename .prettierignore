@@ -10,6 +10,8 @@ graphify-out
 out
 .output
 pnpm-lock.yaml
+bun.lock
 .opencode
 apps/media/data
 apps/backend/cmd/server/docs
+next-env.d.ts

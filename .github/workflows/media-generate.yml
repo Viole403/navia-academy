@@ -62,14 +62,10 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-      - uses: pnpm/action-setup@v4
+      - uses: oven-sh/setup-bun@v2
         with:
-          version: 9
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 22
-          cache: pnpm
-      - run: pnpm install --frozen-lockfile=false
+          bun-version: "1.4.0"
+      - run: bun install
 
       - name: Restore .output/ cache (audio/image files + records)
         uses: actions/cache@v4
@@ -83,18 +79,18 @@ jobs:
 
       - name: Rebuild manifest
         if: ${{ inputs.scope == 'all' || inputs.scope == 'manifest' }}
-        run: pnpm --filter @navia/media generate-manifest
+        run: bun run --filter @navia/media generate-manifest
 
       - name: Generate audio
         if: ${{ inputs.scope == 'all' || inputs.scope == 'audio' }}
-        run: pnpm --filter @navia/media generate-audio
+        run: bun run --filter @navia/media generate-audio
 
       - name: Generate images
         if: ${{ inputs.scope == 'all' || inputs.scope == 'images' }}
-        run: pnpm --filter @navia/media generate-images
+        run: bun run --filter @navia/media generate-images
 
       - name: Publish bundles → R2/CDN (data JSON + audio/images manifest)
-        run: pnpm --filter @navia/media publish-data
+        run: bun run --filter @navia/media publish-data
 
       # Persist checkpoints + manifest via git so the NEXT run (even with a
       # cold actions/cache) starts from accurate records. apps/web reads

@@ -57,16 +57,12 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - uses: pnpm/action-setup@v4
-
-      - uses: actions/setup-node@v4
+      - uses: oven-sh/setup-bun@v2
         with:
-          node-version: 22
-          cache: pnpm
-          cache-dependency-path: pnpm-lock.yaml
+          bun-version: "1.4.0"
 
       - name: Install dependencies
-        run: pnpm install --frozen-lockfile
+        run: bun install --frozen-lockfile
 
       - name: Setup Expo & EAS
         uses: expo/expo-github-action@v8
@@ -113,7 +109,7 @@ jobs:
 
       - name: EAS Build
         run: |
-          npx eas-cli@latest build \
+          bunx eas-cli@latest build \
             --platform "${{ steps.args.outputs.platform }}" \
             --profile "${{ steps.args.outputs.profile }}" \
             ${{ steps.args.outputs.submit }} \
