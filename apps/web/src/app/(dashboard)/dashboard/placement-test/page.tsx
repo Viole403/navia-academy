@@ -29,6 +29,7 @@ import {
   type StudyTask,
 } from "@/types"
 import { useTranslation } from "@/i18n/locale-context"
+import type { TranslationKey } from "@/i18n/keys"
 import { locText } from "@/lib/content-translation"
 
 const MAX_QUESTIONS = 12
@@ -130,7 +131,7 @@ function buildResult(answers: Answer[], skipped: boolean): PlacementResult {
 function planTasks(
   result: PlacementResult,
   minutesPerDay: number,
-  t: (key: string, params?: Record<string, string>) => string
+  t: (key: TranslationKey, params?: Record<string, string>) => string
 ): StudyTask[] {
   const mk = (
     dayOffset: number,
