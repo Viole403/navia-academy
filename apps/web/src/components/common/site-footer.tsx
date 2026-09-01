@@ -2,12 +2,16 @@
 
 import Link from "next/link"
 import { useTranslation } from "@/i18n/locale-context"
+import type { TranslationKey } from "@/i18n/keys"
 import { Logo } from "@/components/ui/logo"
 
 export function SiteFooter() {
   const { t } = useTranslation()
 
-  const COLUMNS = [
+  const COLUMNS: {
+    titleKey: TranslationKey
+    links: { href: string; labelKey: TranslationKey }[]
+  }[] = [
     {
       titleKey: "footer.product",
       links: [
