@@ -10,6 +10,7 @@ import { AuthShell, GoogleIcon } from "@/components/auth/auth-shell"
 import { Button, Input } from "@/components/ui"
 import { useAuth, roleHomePath } from "@/lib/auth-context"
 import { useTranslation } from "@/i18n/locale-context"
+import type { TranslationKey } from "@/i18n/keys"
 
 const schema = z.object({
   email: z.email("Enter a valid email"),
@@ -18,7 +19,7 @@ const schema = z.object({
 
 type FormData = z.infer<typeof schema>
 
-function friendlyError(err: unknown, t: (key: string) => string): string {
+function friendlyError(err: unknown, t: (key: TranslationKey) => string): string {
   const msg = err instanceof Error ? err.message : String(err)
   const code = (err as { code?: string } | null)?.code ?? ""
   if (
