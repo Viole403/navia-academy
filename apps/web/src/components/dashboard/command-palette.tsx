@@ -29,12 +29,13 @@ import {
 import { useCommandPalette } from "@/stores/command-palette"
 import { useProgress } from "@/stores/progress"
 import { useTranslation } from "@/i18n/locale-context"
+import type { TranslationKey } from "@/i18n/keys"
 import { cn } from "@/lib/utils"
 import { useExamConfig } from "@/lib/exam-definitions"
 import type { ExamType } from "@/types"
 
 interface PageItem {
-  labelKey: string
+  labelKey: TranslationKey
   href: string
   icon: React.ComponentType<{ className?: string }>
 }
