@@ -152,7 +152,7 @@ curl https://api.naviaacademy.com/api/v1/health
 
 ```bash
 cd apps/web
-npx vercel --prod          # atau connect GitHub di dashboard
+bunx vercel --prod          # atau connect GitHub di dashboard
 ```
 
 Environment variables (Production) di Vercel — semua `NEXT_PUBLIC_*` ter-bundle di client:
@@ -191,7 +191,7 @@ Helper: `apps/media/scripts/setup-gh-secrets.sh`.
 
 ```bash
 # Dari mesin lokal (data/json terbaru sudah di repo):
-pnpm data:publish
+bun run data:publish
 ```
 
 Atau trigger GH Action **media-generate** (manual): generate audio/images → publish.
@@ -215,7 +215,7 @@ curl -s https://cdn.naviaacademy.com/data-manifest.json | head
 - [ ] Login Google (OAuth) jalan di domain prod
 - [ ] Web prod `CORS_ORIGINS` — API menerima request dari domain web
 - [ ] Migrasi DB sudah di-apply (tabel users/progress/dll ada)
-- [ ] `pnpm lint` + typecheck (web/media) hijau sebelum rilis
+- [ ] `bun run lint` + typecheck (web/media) hijau sebelum rilis
 
 ## Rollback
 

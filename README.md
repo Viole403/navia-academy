@@ -24,12 +24,10 @@ huanyu-academy/
 ├── SETUP.md            # Panduan setup lengkap
 ├── DEPLOYMENT.md       # Panduan deploy produksi (VPS + Vercel + R2)
 ├── AGENTS.md           # Catatan arsitektur untuk AI coding agents
-├── pnpm-workspace.yaml
 └── turbo.json
 ```
 
-Toolchain: **pnpm 9+ + Turborepo**, Node 22+, Go 1.26+. (`bun.lock` di root diabaikan —
-pnpm adalah package manager kanonik.)
+Toolchain: **Bun 1.4+ + Turborepo**, Go 1.26+.
 
 ## Arsitektur Konten — JSON source + read-path CDN
 
@@ -84,20 +82,20 @@ Mengapa arsitektur ini (ramah free-tier):
 
 ```bash
 # Install dependencies
-pnpm install
+bun install
 
 # Jalankan backend + web sekaligus dari root
 # (root script "dev" = make -C apps/backend dev & turbo dev)
-pnpm dev
+bun run dev
 # Backend :8080 · Web :3000 · Media Studio :3002 (jalankan terpisah bila perlu)
 ```
 
 Per-app:
 
 ```bash
-pnpm backend:dev                       # Go/Fiber API (Air hot-reload, :8080)
-pnpm --filter @navia/web dev           # Next.js :3000
-pnpm --filter @navia/media dev         # Media Studio dashboard :3002
+bun run backend:dev                       # Go/Fiber API (Air hot-reload, :8080)
+bun run --filter @navia/web dev           # Next.js :3000
+bun run --filter @navia/media dev         # Media Studio dashboard :3002
 ```
 
 Detail setup: **[SETUP.md](./SETUP.md)**
@@ -141,11 +139,11 @@ di README backend.
 ### Data
 
 Single source of truth untuk data kurikulum adalah pohon JSON di `apps/media/data/json/`.
-`pnpm data:publish` membacanya menjadi bundle R2/CDN immutable (content-hashed + manifest).
+`bun run data:publish` membacanya menjadi bundle R2/CDN immutable (content-hashed + manifest).
 Proses ini idempotent:
 
 ```bash
-pnpm data:publish            # data/json → bundle R2/CDN + manifest
+bun run data:publish            # data/json → bundle R2/CDN + manifest
 ```
 
 Tabel `content_items` di Postgres (via `ContentHandler` backend) hanyalah record
@@ -196,9 +194,9 @@ Backend tidak pernah menyajikan konten — user publik membacanya dari R2/CDN.
 
 1. **Contribute/edit** → edit pohon JSON `apps/media/data/json/<lang>/`
    (Media Studio / CLI).
-2. **Validate** → `pnpm data:validate-images` + `check-dedup` (CI juga menjalankannya
+2. **Validate** → `bun run data:validate-images` + `check-dedup` (CI juga menjalankannya
    di `ci.yml`).
-3. **Release** → `pnpm data:publish` (atau GitHub Action `media-generate.yml` — manual):
+3. **Release** → `bun run data:publish` (atau GitHub Action `media-generate.yml` — manual):
    baca `data/json`, build bundle content-hashed, upload ke R2, update `data-manifest.json`.
 4. **Propagate** → client mengambil manifest baru saat TTL-nya habis; bundle yang tidak
    berubah tetap memakai URL lama (cached forever). Tanpa CDN purge.
@@ -229,15 +227,15 @@ AWS S3 di production**.
 
 ```bash
 # Konten: data/json → R2/CDN (bundle content-hashed + manifest)
-pnpm data:publish
+bun run data:publish
 
 # Aset (audio + gambar, sama-sama → R2)
-pnpm data:generate-manifest
-pnpm data:generate-audio      # ≈30–45 menit utk dataset penuh; jalankan di GitHub Actions
-pnpm data:generate-images     # gambar (prompt POS-aware, dedup by concept)
-pnpm data:validate-images     # cek gambar-vs-konsep via Gemini vision
-pnpm data:regenerate-images   # regenerate yang mismatch dari laporan check
-pnpm data:import-anki -- path/to/deck.apkg --dump out.json
+bun run data:generate-manifest
+bun run data:generate-audio      # ≈30–45 menit utk dataset penuh; jalankan di GitHub Actions
+bun run data:generate-images     # gambar (prompt POS-aware, dedup by concept)
+bun run data:validate-images     # cek gambar-vs-konsep via Gemini vision
+bun run data:regenerate-images   # regenerate yang mismatch dari laporan check
+bun run data:import-anki -- path/to/deck.apkg --dump out.json
 ```
 
 Generasi batch besar berjalan di workflow **GitHub Actions** gratis
@@ -249,7 +247,7 @@ saling eksklusif dengan API backend (guard `MEDIA_BATCH_GUARD`) — lihat README
 - **Voice gender** (Female/Male) diatur di Settings → Sound dan berlaku untuk semua audio.
 - **Voice locale mengikuti folder konten**: HSK → Mandarin mainland (`zh-CN`),
   TOCFL → Taiwanese Mandarin (`zh-TW`). Tidak ada cross-locale fallback (beda aksara/suara).
-- Audio digenerate oleh Media Studio (`pnpm data:generate-audio`), diupload ke **R2**,
+- Audio digenerate oleh Media Studio (`bun run data:generate-audio`), diupload ke **R2**,
   dan disajikan via `NEXT_PUBLIC_AUDIO_CDN_URL`.
 - TTS on-demand untuk teks arbitrer lewat backend (`POST /api/v1/tts`).
 

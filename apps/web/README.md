@@ -19,21 +19,21 @@ Tailwind CSS v4, TypeScript strict.
 
 ```bash
 # dari root monorepo
-pnpm install
-pnpm --filter @navia/web dev        # http://localhost:3000
+bun install
+bun run --filter @navia/web dev        # http://localhost:3000
 
-pnpm --filter @navia/web build      # production build
-pnpm --filter @navia/web start      # jalankan hasil build
+bun run --filter @navia/web build      # production build
+bun run --filter @navia/web start      # jalankan hasil build
 ```
 
 Verifikasi sebelum PR:
 
 ```bash
-pnpm lint                # root (turbo)
-npx tsc --noEmit         # di apps/web
+bun run lint                # root (turbo)
+bun x tsc --noEmit         # di apps/web
 ```
 
-> Tidak ada test runner di repo ini — CI hanya `pnpm lint` + typecheck + validasi JSON.
+> Tidak ada test runner di repo ini — CI hanya `bun run lint` + typecheck + validasi JSON.
 
 ## Environment
 
@@ -104,4 +104,4 @@ backend tidak melayani konten, dan DB tidak ada di read path.
   `caches.delete('navia-v1')` lalu hard reload. Production aman karena bundle
   content-hashed immutable.
 - Setelah menambah/menghapus route, kadang perlu `rm -rf .next` (stale validator
-  typegen) sebelum `pnpm dev` lagi.
+  typegen) sebelum `bun run dev` lagi.

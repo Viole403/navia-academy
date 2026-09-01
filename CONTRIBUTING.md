@@ -27,7 +27,7 @@ remains the contributor/review record. **Public users never read the database.**
 
 ```bash
 # data/json → R2/CDN bundles + data-manifest.json (idempotent, content-hashed)
-pnpm --filter @navia/media publish-data
+bun run --filter @navia/media publish-data
 ```
 
 > Env: `CONTENT_SUPABASE_URL` + `CONTENT_SUPABASE_SERVICE_ROLE_KEY` are only required for the
@@ -44,8 +44,8 @@ pnpm --filter @navia/media publish-data
 
 ```bash
 # 1. Edit data/json, 2. check for duplicates, 3. publish for local testing
-pnpm --filter @navia/media check-dedup
-pnpm --filter @navia/media publish-data   # → R2/CDN (or local storage via .env.local)
+bun run --filter @navia/media check-dedup
+bun run --filter @navia/media publish-data   # → R2/CDN (or local storage via .env.local)
 ```
 
 Rules for content:
@@ -66,14 +66,14 @@ See `R2_SETUP_GUIDE.md` for production setup.
 
 ```bash
 # Rebuild the audio manifest from data/json
-pnpm --filter @navia/media generate-manifest
+bun run --filter @navia/media generate-manifest
 # Generate audio + images (incremental, dedup by text/translation) and upload to R2
-pnpm --filter @navia/media generate-audio
-pnpm --filter @navia/media generate-images
+bun run --filter @navia/media generate-audio
+bun run --filter @navia/media generate-images
 # Publish content bundles → R2/CDN
-pnpm --filter @navia/media publish-data
+bun run --filter @navia/media publish-data
 # Import an Anki deck
-pnpm --filter @navia/media import-anki -- path/to/deck.apkg --dump out.json
+bun run --filter @navia/media import-anki -- path/to/deck.apkg --dump out.json
 ```
 
 ## Backend (apps/backend)
@@ -104,13 +104,13 @@ Endpoint conventions:
 
 ```bash
 # Frontend
-cd apps/web && npm run build
+cd apps/web && bun run build
 
 # Backend
 make -C apps/backend build
 
 # Media Studio
-cd apps/media && npm run build
+cd apps/media && bun run build
 ```
 
 ## CI/CD

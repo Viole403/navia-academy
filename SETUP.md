@@ -21,7 +21,7 @@ Instruksi setup lengkap untuk environment development dan production.
 
 - **Node.js** 22+
 - **Go** 1.26+ (backend)
-- **pnpm** 9+ (package manager kanonik monorepo; `bun.lock` diabaikan)
+- **Bun** 1.4+ (package manager monorepo)
 - **Git**
 
 ### Opsional (fitur penuh)
@@ -51,7 +51,7 @@ Instruksi setup lengkap untuk environment development dan production.
 ```bash
 git clone <repo-url>
 cd huanyu-academy
-pnpm install
+bun install
 ```
 
 ### 2. Backend (Go/Fiber)
@@ -133,7 +133,7 @@ MinIO juga bisa (lihat `.env.example` media).
 Urutan boot penting: halaman landing web (SSR) membaca bundle `landing/demo` dari CDN.
 
 1. Storage hidup (step 3).
-2. `pnpm data:publish` dari root — upload bundle + manifest (atomik).
+2. `bun run data:publish` dari root — upload bundle + manifest (atomik).
 3. Baru start web.
 
 Bila web start sebelum publish selesai, SSR menunggu ±8s lalu degrade ke retry
@@ -152,7 +152,7 @@ NEXT_PUBLIC_SITE_URL=http://localhost:3000
 ```
 
 ```bash
-pnpm --filter @navia/web dev    # → http://localhost:3000
+bun run --filter @navia/web dev    # → http://localhost:3000
 ```
 
 > Gotcha dev: service worker `navia-v1` bisa menyajikan konten stale setelah
@@ -182,10 +182,10 @@ CONTENT_EXPORT_TOKEN=<sama persis dgn backend>
 ```
 
 ```bash
-pnpm dev                        # dashboard → http://localhost:3002
+bun run dev                        # dashboard → http://localhost:3002
 
-pnpm generate-manifest && pnpm generate-audio   # TTS (butuh kunci utk engine non-edge)
-pnpm publish-data               # data/json → R2/RustFS bundles + manifest
+bun run generate-manifest && bun run generate-audio   # TTS (butuh kunci utk engine non-edge)
+bun run publish-data               # data/json → R2/RustFS bundles + manifest
 ```
 
 Provider gambar: `MEDIA_IMAGE_PROVIDER=openai | gemini | deepai | cloudflare`
@@ -196,17 +196,17 @@ Provider gambar: `MEDIA_IMAGE_PROVIDER=openai | gemini | deepai | cloudflare`
 Dari root:
 
 ```bash
-pnpm dev        # make -C apps/backend dev & turbo dev (web; media/mobile exclude via turbo)
+bun run dev        # make -C apps/backend dev & turbo dev (web; media/mobile exclude via turbo)
 ```
 
 Atau per terminal terpisah:
 
 ```bash
-pnpm backend:dev                # Terminal 1: API :8080
-pnpm --filter @navia/web dev    # Terminal 2: Web :3000
-pnpm --filter @navia/media dev  # Terminal 3: Media Studio :3002
+bun run backend:dev                # Terminal 1: API :8080
+bun run --filter @navia/web dev    # Terminal 2: Web :3000
+bun run --filter @navia/media dev  # Terminal 3: Media Studio :3002
 # Mobile (opsional):
-cd apps/mobile && cp .env.example .env && pnpm start
+cd apps/mobile && cp .env.example .env && bun run start
 ```
 
 ---
@@ -240,7 +240,7 @@ make docker-up                  # Opsi B: container (compose api-only + resource
 
 ```bash
 cd apps/web
-npx vercel --prod               # atau connect GitHub via dashboard
+bunx vercel --prod               # atau connect GitHub via dashboard
 ```
 
 Environment variables di Vercel: sama seperti dev, tapi `NEXT_PUBLIC_API_BASE_URL`,
@@ -273,7 +273,7 @@ Egress R2 selalu $0.
 ### 4. Publishing Konten (Production)
 
 ```bash
-pnpm data:publish
+bun run data:publish
 # Atau trigger GH Action "media-generate" (manual): generate audio/images → publish
 ```
 
@@ -371,7 +371,7 @@ Browser 403/audio kosong → CORS bucket belum aktif atau bucket belum public-re
 ### Konten tidak muncul di web
 
 ```bash
-cd apps/media && pnpm publish-data
+cd apps/media && bun run publish-data
 # Pastikan NEXT_PUBLIC_DATA_CDN_URL menunjuk base storage/CDN yang sama, restart web.
 # Manifest: curl http://localhost:9000/navia-data/data-manifest.json
 # Masih stale? caches.delete('navia-v1') lalu hard reload.
@@ -391,9 +391,9 @@ open http://localhost:8080/scalar          # API reference
 ### Build error
 
 ```bash
-rm -rf node_modules .next .turbo dist && pnpm install
-pnpm lint                                  # root turbo
-cd apps/web && npx tsc --noEmit
+rm -rf node_modules .next .turbo dist && bun install
+bun run lint                                  # root turbo
+cd apps/web && bun x tsc --noEmit
 cd apps/backend && go vet ./cmd/... ./internal/... ./pkg/... && go build ./cmd/server
 ```
 

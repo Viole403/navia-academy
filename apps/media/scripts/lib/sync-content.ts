@@ -403,7 +403,7 @@ export async function runSync(opts: SyncOptions): Promise<SyncStats> {
     await publishData()
   } else if (stats.filesTouched > 0) {
     console.log(
-      "\nNext: run `pnpm publish-data` to release to the CDN (or re-run with --publish)."
+      "\nNext: run `bun run publish-data` to release to the CDN (or re-run with --publish)."
     )
   }
 

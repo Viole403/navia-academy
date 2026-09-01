@@ -4,16 +4,16 @@ Compact guidance for AI coding agents. Every line is something an agent would li
 
 ## Toolchain
 
-- **pnpm + Turborepo monorepo.** Use `pnpm` (declared `packageManager: pnpm@9.15.0`). A stray `bun.lock` exists in the root but pnpm is canonical — ignore it.
-- **No test runner exists anywhere.** CI only runs `pnpm lint` + per-package typecheck (`tsc --noEmit` / `go vet`) + JSON validation. Verify changes with `pnpm lint` and `tsc --noEmit`, never `pnpm test`.
-- Prettier config: `semi: false`, `singleQuote: false`, `printWidth: 80`. Run `pnpm format` to autofix.
-- Node 22+ / pnpm 9+ (CI pins Node 22). Backend needs Go 1.26+.
+- **Bun + Turborepo monorepo.** Use `bun` (declared `packageManager: bun@1.4.0`). Workspaces come from the `workspaces` field in root `package.json` (no pnpm-workspace.yaml).
+- **No test runner exists anywhere.** CI only runs `bun run lint` + per-package typecheck (`tsc --noEmit` / `go vet`) + JSON validation. Verify changes with `bun run lint` and `tsc --noEmit`, never `bun test`.
+- Prettier config: `semi: false`, `singleQuote: false`, `printWidth: 80`. Run `bun run format` to autofix.
+- Node 22+ / Bun 1.4+ (CI pins Bun 1.4.0 via `oven-sh/setup-bun`). Backend needs Go 1.26+.
 
 ## Workspace layout
 
 - `apps/web` — Next.js 16 App Router, React 19, Tailwind v4. Dev `:3000`. Path alias `@/*` → `./src/*`.
 - `apps/media` — Next.js 16 Media Studio + content/asset pipeline (`data/json`, TTS, AI images). Dev `:3002`.
-- `apps/backend` — **Go/Fiber** API. NOT a pnpm package (no `package.json`). Don't drive it with pnpm.
+- `apps/backend` — **Go/Fiber** API. NOT a JS package (no `package.json`). Don't drive it with bun; use its Makefile.
 - `apps/mobile` — Expo + React Native, **Tailwind v3 + nativewind** (different major from web/media v4 — don't unify).
 - `packages/` — `types` (shared TS types), `utils`, `eslint-config` (`@navia/eslint-config`).
 
@@ -21,7 +21,7 @@ Compact guidance for AI coding agents. Every line is something an agent would li
 
 - Setup: `cd apps/backend && cp .env.example .env && make dev` (dev runs natively — no Docker; point `DATABASE_URL`/`REDIS_URL` at local instances or cloud dev DBs).
 - `make dev` (Air hot-reload) · `make build` → `bin/server` · `make swagger` (regenerates `/scalar`, `/docs/*`).
-- Typecheck: `cd apps/backend && go vet ./cmd/... ./internal/... ./pkg/...` (this is what `pnpm backend:typecheck` runs).
+- Typecheck: `cd apps/backend && go vet ./cmd/... ./internal/... ./pkg/...` (this is what `bun run backend:typecheck` runs).
 - API response envelope: `{success, data, error:{code,message}}`. Auth = custom JWT HS256, `Authorization: Bearer <token>`.
 - Migrations live in `apps/backend/migrations/`; there is **NO automigration** — apply manually: `psql "$DATABASE_URL" -f migrations/*.sql`.
 - **VPS resource budget**: Postgres/Redis are external managed cloud services (never on the VPS). `api` and `apps/media` batch jobs **never run concurrently**, so each gets the FULL budget (~90% CPU / ~62% RAM standalone) — `apps/backend/scripts/compute-resource-limits.sh` writes the caps into `.env`, consumed by the api-only `docker-compose.yml`. Media batch entrypoints probe the api's health endpoint first and warn on overlap (`MEDIA_BATCH_GUARD=strict` refuses, `off` skips). Don't reintroduce pg/redis into compose or split the budget between the two consumers.
@@ -29,7 +29,7 @@ Compact guidance for AI coding agents. Every line is something an agent would li
 ## Content architecture (critical, non-obvious)
 
 - **Single source of truth = `apps/media/data/json/`** (`zh/ de/ en/ ja/`). Public users read content **only** from R2/CDN via `apps/web/src/lib/data-client.ts` (cache-first, manifest-resolved). The backend **never serves content** and the DB is **never on the read path**.
-- Publish: `pnpm data:publish` (`@navia/media publish-data`) → immutable, content-hashed R2 bundles + `data-manifest.json` (5 min TTL). Idempotent; releases propagate within 5 min. **No CDN purge ever.**
+- Publish: `bun run data:publish` (`@navia/media publish-data`) → immutable, content-hashed R2 bundles + `data-manifest.json` (5 min TTL). Idempotent; releases propagate within 5 min. **No CDN purge ever.**
 - Heavy generation (`generate-audio` ≈30–45 min, `generate-images`) must run in the manual `media-generate.yml` GitHub Action, not locally. `generate-manifest` must run before `generate-audio`/`generate-images` (turbo wires this dependency).
 - Never add a web route that pulls content from the backend/Supabase; read it from R2/CDN only.
 
@@ -60,7 +60,7 @@ Compact guidance for AI coding agents. Every line is something an agent would li
 
 ## Verify before PR
 
-- `pnpm lint` (root, turbo) · `go vet ./cmd/... ./internal/... ./pkg/...` + `go build ./cmd/server` (apps/backend) · `npx tsc --noEmit` (apps/media, apps/web).
+- `bun run lint` (root, turbo) · `go vet ./cmd/... ./internal/... ./pkg/...` + `go build ./cmd/server` (apps/backend) · `bun x tsc --noEmit` (apps/media, apps/web).
 
 ## Scratch space
 

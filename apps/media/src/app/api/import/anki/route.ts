@@ -38,7 +38,7 @@ export async function POST(request: NextRequest) {
       normalized: normalized.length,
       fieldMap,
       sample: normalized.slice(0, 5),
-      hint: "Untuk merge ke dataset: `pnpm --filter @navia/media import-anki -- path/deck.apkg --fields hanzi=0,pinyin=1,translation=2 --dump out.json`",
+      hint: "Untuk merge ke dataset: `bun run --filter @navia/media import-anki -- path/deck.apkg --fields hanzi=0,pinyin=1,translation=2 --dump out.json`",
     })
   } catch (err) {
     return Response.json(

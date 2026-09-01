@@ -1,10 +1,10 @@
 /**
  * Content export bridge CLI: apps/backend → data/json.
  *
- *   pnpm sync-content                 # fetch + merge into data/json
- *   pnpm sync-content --check-only    # dry-run: report what WOULD change
- *   pnpm sync-content --publish       # merge, then chain into publish-data
- *   pnpm sync-content --lang zh --domain vocabulary
+ *   bun run sync-content                 # fetch + merge into data/json
+ *   bun run sync-content --check-only    # dry-run: report what WOULD change
+ *   bun run sync-content --publish       # merge, then chain into publish-data
+ *   bun run sync-content --lang zh --domain vocabulary
  *
  * Env: CONTENT_API_BASE_URL (default http://localhost:8080) and
  * CONTENT_EXPORT_TOKEN (must equal apps/backend's value) — see .env.example.

@@ -30,18 +30,18 @@ via Expo dan (opsional) EAS.
 
 ```bash
 # 1. Install deps dari root repo
-pnpm install
+bun install
 
 # 2. Konfigurasi env (sekali)
 cp .env.example .env
 # Edit .env agar menunjuk backend-mu (lihat "Environment")
 
 # 3. Start Metro bundler (dari apps/mobile)
-pnpm start
+bun run start
 
 # 4. Jalankan di device / emulator
-pnpm android       # emulator Android atau device terhubung
-pnpm ios           # iOS simulator (macOS only)
+bun run android       # emulator Android atau device terhubung
+bun run ios           # iOS simulator (macOS only)
 ```
 
 > Go backend harus berjalan (`apps/backend`: `make dev`).
@@ -184,18 +184,18 @@ Aturan visual di seluruh primitives (`src/components/*`):
 
 ## Scripts
 
-| Command                            | Purpose                                                                 |
-| ---------------------------------- | ----------------------------------------------------------------------- |
-| `pnpm start`                       | Metro dev server (Expo Go / dev client)                                 |
-| `pnpm android` / `pnpm ios`        | Launch Android / iOS                                                    |
-| `pnpm typecheck`                   | `tsc --noEmit` (strict)                                                 |
-| `pnpm sync:mobile`                 | Sync artefak/konten bersama dari workspace (tsx scripts/sync-mobile.ts) |
-| `pnpm eas:init`                    | Link sekali ke EAS project                                              |
-| `pnpm build:dev:{android,ios}`     | Cloud dev-client build                                                  |
-| `pnpm build:preview:{android,ios}` | Internal distribution APK/IPA                                           |
-| `pnpm build:prod:{android,ios}`    | AAB / IPA siap store                                                    |
-| `pnpm submit:{android,ios}`        | Submit build terakhir ke Play Console / App Store Connect               |
-| `pnpm update:{preview,production}` | OTA update via EAS Update                                               |
+| Command                               | Purpose                                                                 |
+| ------------------------------------- | ----------------------------------------------------------------------- |
+| `bun run start`                       | Metro dev server (Expo Go / dev client)                                 |
+| `bun run android` / `bun run ios`     | Launch Android / iOS                                                    |
+| `bun run typecheck`                   | `tsc --noEmit` (strict)                                                 |
+| `bun run sync:mobile`                 | Sync artefak/konten bersama dari workspace (tsx scripts/sync-mobile.ts) |
+| `bun run eas:init`                    | Link sekali ke EAS project                                              |
+| `bun run build:dev:{android,ios}`     | Cloud dev-client build                                                  |
+| `bun run build:preview:{android,ios}` | Internal distribution APK/IPA                                           |
+| `bun run build:prod:{android,ios}`    | AAB / IPA siap store                                                    |
+| `bun run submit:{android,ios}`        | Submit build terakhir ke Play Console / App Store Connect               |
+| `bun run update:{preview,production}` | OTA update via EAS Update                                               |
 
 ---
 
@@ -208,8 +208,8 @@ Project tertaut ke **EAS project ID `1896057c-6dfb-4a5a-85e9-299f62523ac0`**
 
 ```bash
 cd apps/mobile
-npx eas-cli@latest login            # akun Expo pemilik project
-npx eas-cli@latest init --id 1896057c-6dfb-4a5a-85e9-299f62523ac0  # opsional, idempotent
+bunx eas-cli@latest login            # akun Expo pemilik project
+bunx eas-cli@latest init --id 1896057c-6dfb-4a5a-85e9-299f62523ac0  # opsional, idempotent
 eas whoami && eas project:info      # verifikasi
 ```
 
@@ -236,20 +236,20 @@ di sana masih placeholder — update saat backend publik:
 
 ```bash
 # Sanity lokal sebelum cloud build
-pnpm typecheck
+bun run typecheck
 
 # Dev-client (install sekali di device fisik; dibutuhkan Material You)
-pnpm build:dev:android && pnpm build:dev:ios
+bun run build:dev:android && bun run build:dev:ios
 
 # Internal test build, distribusi via EAS download URL
-pnpm build:preview:android
+bun run build:preview:android
 
 # Siap store + submit
-pnpm build:prod:android && pnpm submit:android
-pnpm build:prod:ios && pnpm submit:ios
+bun run build:prod:android && bun run submit:android
+bun run build:prod:ios && bun run submit:ios
 
 # One-shot kedua platform + auto-submit (butuh credentials + URL publik + tested!)
-npx eas-cli@latest build --platform all --auto-submit
+bunx eas-cli@latest build --platform all --auto-submit
 ```
 
 ## Secrets & environment variables
@@ -297,8 +297,8 @@ Karena `runtimeVersion.policy = "appVersion"`, perubahan JS-only bisa dikirim se
 OTA tanpa review store:
 
 ```bash
-pnpm update:preview "chore: tweak home greeting"
-pnpm update:production "feat: vocab detail screen"
+bun run update:preview "chore: tweak home greeting"
+bun run update:production "feat: vocab detail screen"
 ```
 
 OTA **tidak** berlaku untuk perubahan native dep (`package.json` bump, modul Expo baru)
@@ -327,7 +327,7 @@ OTA **tidak** berlaku untuk perubahan native dep (`package.json` bump, modul Exp
 
 | Gejala                                            | Fix                                                                                                                                                                                                |
 | ------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| White screen saat start                           | `pnpm install` dari root, restart Metro `pnpm start -c`                                                                                                                                            |
+| White screen saat start                           | `bun install` dari root, restart Metro `bun run start -c`                                                                                                                                          |
 | "Network request failed" di device fisik          | Tunjuk `EXPO_PUBLIC_API_URL` ke IP LAN, bukan `localhost`                                                                                                                                          |
 | Error TS `SafeAreaView … not a valid JSX element` | Sudah ditangani — `tsconfig.paths` me-redirect `@types/react` ke copy lokal di `node_modules` mobile (monorepo root resolve versi beda untuk Next.js). Jangan hapus override dari `tsconfig.json`. |
 | Theme aneh di Expo Go                             | Expected — Material You butuh dev client; static theme tetap normal                                                                                                                                |

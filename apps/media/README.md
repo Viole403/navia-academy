@@ -101,14 +101,14 @@ apps/media/
 ## Quick Start
 
 1. Copy `.env.example` → `.env.local` dan isi credentials (storage, TTS, image provider).
-2. `pnpm dev` → dashboard di <http://localhost:3002>
+2. `bun run dev` → dashboard di <http://localhost:3002>
 3. Generate & publish:
 
    ```bash
-   pnpm generate-manifest   # manifest audio dari data/json
-   pnpm generate-audio      # TTS + upload (incremental, dedup) — auto-run generate-manifest
-   pnpm generate-images     # AI images + upload (incremental, dedup) — idem
-   pnpm publish-data        # content → R2/CDN bundles + manifest
+   bun run generate-manifest   # manifest audio dari data/json
+   bun run generate-audio      # TTS + upload (incremental, dedup) — auto-run generate-manifest
+   bun run generate-images     # AI images + upload (incremental, dedup) — idem
+   bun run publish-data        # content → R2/CDN bundles + manifest
    ```
 
 4. (Opsional) Setup Supabase untuk key pools: jalankan `migrations/0003…0005*.sql` di
@@ -117,21 +117,21 @@ apps/media/
 
 ## Key Commands
 
-| Command                           | Purpose                                                                                           |
-| --------------------------------- | ------------------------------------------------------------------------------------------------- |
-| `pnpm dev`                        | Start Media Studio dashboard (:3002)                                                              |
-| `pnpm publish-data`               | Publish `data/json` → R2 bundles + manifest + content-levels                                      |
-| `pnpm generate-manifest`          | Rebuild audio manifest dari data/json                                                             |
-| `pnpm generate-audio`             | Generate audio (TTS) + upload R2 (≈30–45 mnt dataset penuh)                                       |
-| `pnpm generate-images`            | Generate images (AI) + upload R2                                                                  |
-| `pnpm validate-images`            | Vision-check hasil gambar                                                                         |
-| `pnpm regenerate-images`          | Re-generate gambar yang vision-check tandai MISMATCH                                              |
-| `pnpm image-report`               | Laporan markdown validasi gambar utk eyeballing manual                                            |
-| `pnpm check-dedup`                | Cek duplikasi / naming issues di data/json                                                        |
-| `pnpm dedupe-ids`                 | Perbaiki id duplikat                                                                              |
-| `pnpm backfill-exam-mappings`     | Backfill field examMappings                                                                       |
-| `pnpm sync-content`               | Tarik konten review dari backend → data/json (`--check-only` dry-run, `--publish` lanjut publish) |
-| `pnpm import-anki -- <file.apkg>` | Import Anki deck                                                                                  |
+| Command                              | Purpose                                                                                           |
+| ------------------------------------ | ------------------------------------------------------------------------------------------------- |
+| `bun run dev`                        | Start Media Studio dashboard (:3002)                                                              |
+| `bun run publish-data`               | Publish `data/json` → R2 bundles + manifest + content-levels                                      |
+| `bun run generate-manifest`          | Rebuild audio manifest dari data/json                                                             |
+| `bun run generate-audio`             | Generate audio (TTS) + upload R2 (≈30–45 mnt dataset penuh)                                       |
+| `bun run generate-images`            | Generate images (AI) + upload R2                                                                  |
+| `bun run validate-images`            | Vision-check hasil gambar                                                                         |
+| `bun run regenerate-images`          | Re-generate gambar yang vision-check tandai MISMATCH                                              |
+| `bun run image-report`               | Laporan markdown validasi gambar utk eyeballing manual                                            |
+| `bun run check-dedup`                | Cek duplikasi / naming issues di data/json                                                        |
+| `bun run dedupe-ids`                 | Perbaiki id duplikat                                                                              |
+| `bun run backfill-exam-mappings`     | Backfill field examMappings                                                                       |
+| `bun run sync-content`               | Tarik konten review dari backend → data/json (`--check-only` dry-run, `--publish` lanjut publish) |
+| `bun run import-anki -- <file.apkg>` | Import Anki deck                                                                                  |
 
 `validate-images` → `regenerate-images` bisa dijalankan berurutan tanpa flag:
 laporan mismatch default ditulis/dibaca dari `.output/images/vision-mismatches.json`.
@@ -140,7 +140,7 @@ laporan mismatch default ditulis/dibaca dari `.output/images/vision-mismatches.j
 
 | Jalur                 | Cara                                                                 | Untuk                                                                                |
 | --------------------- | -------------------------------------------------------------------- | ------------------------------------------------------------------------------------ |
-| **VPS CLI**           | `pnpm generate-audio` / `generate-images` langsung                   | Full control; guard mutual-exclusion aktif                                           |
+| **VPS CLI**           | `bun run generate-audio` / `generate-images` langsung                | Full control; guard mutual-exclusion aktif                                           |
 | **GitHub Actions**    | Tab Actions → `media-generate` → Run workflow (inputs: scope/engine) | Backfill/inkremental di runner ephemeral — tanpa kontensi VPS                        |
 | **Dashboard trigger** | Media Studio → tombol batch → `POST /api/generate/batch`             | Trigger jarak jauh ke workflow GH yang sama; status via `/api/generate/batch/status` |
 
@@ -175,8 +175,8 @@ dan `GH_REF` (default `main`).
 
 ```text
 1. Author/edit    → data/json/<lang>/<group>/*.json  (source of truth)
-2. Validate       → pnpm check-dedup + validate-images (CI juga jalan di ci.yml)
-3. Release        → pnpm publish-data / GH Action media-generate.yml (manual)
+2. Validate       → bun run check-dedup + validate-images (CI juga jalan di ci.yml)
+3. Release        → bun run publish-data / GH Action media-generate.yml (manual)
 4. Propagate      → client ambil manifest baru sesuai TTL cache-nya
 ```
 
@@ -286,9 +286,9 @@ Aturan penulisan konten:
 ## Staging & Release Strategy
 
 1. **Edit** → `data/json` (author/edit langsung di JSON tree)
-2. **Validate** → `pnpm check-dedup` (+ `validate-images` setelah generate)
-3. **Generate** → `pnpm generate-manifest` → `generate-audio` / `generate-images`
-4. **Publish** → `pnpm publish-data` (manual / via `media-generate.yml`)
+2. **Validate** → `bun run check-dedup` (+ `validate-images` setelah generate)
+3. **Generate** → `bun run generate-manifest` → `generate-audio` / `generate-images`
+4. **Publish** → `bun run publish-data` (manual / via `media-generate.yml`)
 
 No CDN purge needed — rilis baru meng-upload file hashed baru.
 
@@ -296,7 +296,7 @@ No CDN purge needed — rilis baru meng-upload file hashed baru.
 
 ```bash
 # Import .apkg deck
-pnpm import-anki -- path/to/deck.apkg
+bun run import-anki -- path/to/deck.apkg
 
 # Output: parsed notes di data/json/zh/vocabulary/
 ```
@@ -324,15 +324,15 @@ Secrets CI: `MEDIA_STORAGE_*`, plus TTS/image keys (flat maupun pooled via
 nano data/json/zh/vocabulary/hsk/hsk1.json
 
 # Validate + publish lokal (RustFS)
-pnpm check-dedup
-pnpm publish-data
+bun run check-dedup
+bun run publish-data
 ```
 
 **Production workflow:**
 
 ```bash
 # Publish ke R2/CDN
-pnpm publish-data
+bun run publish-data
 
 # Atau jalankan GH Action "Media Generate" (manual) — generate + publish sekaligus
 ```

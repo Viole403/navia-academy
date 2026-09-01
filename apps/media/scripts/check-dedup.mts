@@ -29,8 +29,8 @@ import { JSON_DIR, CONTENT_LANGS, LIST_GROUPS, collectJsonFiles } from "./lib/co
  * Exit code: 0 = clean, 2 = duplicates/naming issues found.
  *
  * Usage:
- *   pnpm --filter @navia/media check-dedup
- *   pnpm --filter @navia/media check-dedup -- --lang de --group vocabulary \
+ *   bun run --filter @navia/media check-dedup
+ *   bun run --filter @navia/media check-dedup -- --lang de --group vocabulary \
  *       --candidate data/json/de/vocabulary/c2.json
  */
 

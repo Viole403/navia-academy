@@ -224,10 +224,10 @@ images   : ${status.imageProvider}`
           className="mt-2 overflow-x-auto text-sm"
           style={{ color: "var(--muted)" }}
         >
-          {`pnpm data:generate-manifest   # rebuild manifest dari data/json
-pnpm data:generate-audio      # audio penuh + upload (≈30–45 menit)
- pnpm data:generate-images     # gambar penuh + upload
- pnpm data:import-anki -- file.apkg --dump out.json`}
+          {`bun run data:generate-manifest   # rebuild manifest dari data/json
+bun run data:generate-audio      # audio penuh + upload (≈30–45 menit)
+bun run data:generate-images     # gambar penuh + upload
+bun run data:import-anki -- file.apkg --dump out.json`}
         </pre>
       </section>
 

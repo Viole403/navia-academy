@@ -5,7 +5,7 @@
 -- ContentHandler) and lives here in Supabase (PostgreSQL). PUBLIC READS NEVER
 -- HIT THESE TABLES — release content is published from `data/json` into
 -- immutable R2/CDN bundles (content-hashed + short-TTL manifest) via
--- `pnpm publish-data`. This keeps the free tiers safe: Vercel/Cloudflare only
+-- `bun run publish-data`. This keeps the free tiers safe: Vercel/Cloudflare only
 -- ever serve CDN objects, and the database is never queried on the read path.
 --
 -- Auth is Supabase Auth (auth.users). created_by / reviewer_id reference

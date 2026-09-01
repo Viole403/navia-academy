@@ -15,7 +15,7 @@ import { join } from "node:path";
  *
  * Idempotent: no-ops when every id is already unique.
  *
- * Run: pnpm --filter @navia/media dedupe-ids
+ * Run: bun run --filter @navia/media dedupe-ids
  */
 
 const ROOT = join(process.cwd(), "data", "json");
