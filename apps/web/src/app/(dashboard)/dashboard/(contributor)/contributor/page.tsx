@@ -2,7 +2,6 @@
 
 import { useCallback, useEffect, useMemo, useState } from "react"
 import { useAuth } from "@/lib/auth-context"
-import { api } from "@/lib/api"
 import { useAllowedRefs } from "@/lib/content-levels"
 import { content } from "@/lib/api-client"
 import {

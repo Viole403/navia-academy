@@ -19,7 +19,6 @@ import { EXAM_LANGS, type VocabWord } from "@/lib/data-client"
 import { community, type TestimonialItem } from "@/lib/api-client"
 import { useTranslation } from "@/i18n/locale-context"
 import type { TranslationKey } from "@/i18n/keys"
-import { api } from "@/lib/api"
 import { THEMES, useSettings } from "@/stores/settings"
 import { cn } from "@/lib/utils"
 

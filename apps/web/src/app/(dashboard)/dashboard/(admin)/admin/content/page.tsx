@@ -1,7 +1,6 @@
 "use client"
 
 import { useCallback, useEffect, useState } from "react"
-import { api } from "@/lib/api"
 import { useAllowedRefs } from "@/lib/content-levels"
 import { content } from "@/lib/api-client"
 import {

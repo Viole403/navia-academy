@@ -1,7 +1,6 @@
 "use client"
 
 import { useCallback, useEffect, useState } from "react"
-import { api } from "@/lib/api"
 import { Button, Badge, Spinner } from "@/components/ui"
 import { Input, Select } from "@/components/ui/form"
 import { admin } from "@/lib/api-client"

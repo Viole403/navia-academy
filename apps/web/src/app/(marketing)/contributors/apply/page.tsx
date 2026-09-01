@@ -7,7 +7,6 @@ import { NaviaChip } from "@/components/marketing/navia-chip"
 import { Reveal } from "@/components/ui"
 import { community } from "@/lib/api-client"
 import { useTranslation } from "@/i18n/locale-context"
-import { api } from "@/lib/api"
 
 export default function ContributorApplyPage() {
   const [sent, setSent] = useState(false)
