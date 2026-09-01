@@ -12,12 +12,14 @@ import (
 	"time"
 
 	"github.com/gofiber/fiber/v2"
+	"github.com/gofiber/fiber/v2/middleware/requestid"
 	"github.com/joho/godotenv"
 	// Auto-detects the cgroup CPU quota and sets runtime.GOMAXPROCS at init,
 	// so the scheduler matches the container's CPU limit instead of the
 	// host's core count (logs its detected value via the std log package).
 	_ "go.uber.org/automaxprocs"
 	"go.uber.org/zap"
+	"go.uber.org/zap/zapcore"
 
 	"github.com/navia-academy/backend/internal/config"
 	"github.com/navia-academy/backend/internal/database"
@@ -99,6 +101,18 @@ func setMemoryLimit(logger *zap.Logger) {
 		zap.Int64("soft_limit_bytes", soft))
 }
 
+// newLogger builds the production zap logger, honoring the configured
+// LOG_LEVEL. Falls back to info when the value is unparsable.
+func newLogger(level string) (*zap.Logger, error) {
+	cfg := zap.NewProductionConfig()
+	var lvl zapcore.Level
+	if err := lvl.UnmarshalText([]byte(level)); err != nil {
+		lvl = zapcore.InfoLevel
+	}
+	cfg.Level = zap.NewAtomicLevelAt(lvl)
+	return cfg.Build()
+}
+
 // @title           Navia Academy API
 // @version         1.0.0
 // @description     Mandarin Chinese Learning Platform REST API
@@ -130,7 +144,7 @@ func main() {
 
 	cfg := config.Load()
 
-	logger, err := zap.NewProduction()
+	logger, err := newLogger(cfg.App.LogLevel)
 	if err != nil {
 		log.Fatalf("failed to initialize logger: %v", err)
 	}
@@ -207,21 +221,43 @@ func main() {
 	app := fiber.New(fiber.Config{
 		ReadTimeout:  cfg.Server.ReadTimeout,
 		WriteTimeout: cfg.Server.WriteTimeout,
+		// Trust X-Forwarded-For only when running behind a reverse proxy;
+		// empty (default) uses the TCP peer address. Set TRUST_PROXY_HEADER
+		// to the header your proxy sets (e.g. X-Forwarded-For) — never
+		// enable it on a direct-exposed port (IP spoofing bypasses limits).
+		ProxyHeader: os.Getenv("TRUST_PROXY_HEADER"),
 		ErrorHandler: func(c *fiber.Ctx, err error) error {
 			// Pool exhaustion surfaces as a context deadline from the DB pool
 			// wrapper: answer 503 so clients know to retry, not an opaque 500.
 			if errors.Is(err, context.DeadlineExceeded) {
 				return response.Error(c, fiber.StatusServiceUnavailable, "SERVICE_UNAVAILABLE", "service temporarily busy, please try again later")
 			}
-			code := fiber.StatusInternalServerError
-			if e, ok := err.(*fiber.Error); ok {
-				code = e.Code
+			// Fiber errors carry an explicit status + client-safe message.
+			var fe *fiber.Error
+			if errors.As(err, &fe) {
+				return response.Error(c, fe.Code, "ERROR", fe.Message)
 			}
-			return response.Error(c, code, "ERROR", err.Error())
+			// Anything else: never leak internal details to the client.
+			logger.Error("unhandled error",
+				zap.String("path", c.Path()),
+				zap.String("method", c.Method()),
+				zap.Error(err),
+			)
+			return response.Error(c, fiber.StatusInternalServerError, "INTERNAL_ERROR", "an unexpected error occurred")
 		},
 	})
 
+	// Liveness/health probes run OUTSIDE the global rate limiter so an
+	// overloaded instance still answers orchestrator/load-balancer checks.
+	app.Get("/api/v1/health", func(c *fiber.Ctx) error {
+		return response.JSON(c, fiber.StatusOK, fiber.Map{
+			"status":  "ok",
+			"version": "1.0.0",
+		})
+	})
+
 	app.Use(middleware.RecoveryMiddleware(logger))
+	app.Use(requestid.New())
 	app.Use(middleware.LoggerMiddleware(logger))
 	app.Use(middleware.CORSMiddleware(cfg.App.CORSOrigins))
 	app.Use(middleware.RateLimitMiddleware(redisCli, "global", cfg.App.RateLimitPerMin))
@@ -236,27 +272,17 @@ func main() {
 
 	api := app.Group("/api/v1")
 
-	// @Summary Health check
-	// @Description Liveness probe. Returns status ok.
-	// @Tags System
-	// @Produce json
-	// @Success 200 {object} response.APIResponse{data=object}
-	// @Router /health [get]
-	api.Get("/health", func(c *fiber.Ctx) error {
-		return response.JSON(c, fiber.StatusOK, fiber.Map{
-			"status":  "ok",
-			"version": "1.0.0",
-		})
-	})
-
 	authMW := middleware.AuthMiddleware(jwtSvc)
 
+	// Stricter limit for credential-based endpoints (brute-force surface):
+	// login/register/refresh share one bucket per identifier (IP or user).
+	authLimiter := middleware.RateLimitMiddleware(redisCli, "auth", 10)
 	auth := api.Group("/auth")
-	auth.Post("/register", authHandler.Register)
-	auth.Post("/login", authHandler.Login)
-	auth.Post("/refresh", authHandler.RefreshToken)
+	auth.Post("/register", authLimiter, authHandler.Register)
+	auth.Post("/login", authLimiter, authHandler.Login)
+	auth.Post("/refresh", authLimiter, authHandler.RefreshToken)
 	auth.Get("/google", authHandler.GoogleAuthorize)
-	auth.Post("/reset-password", authHandler.ResetPassword)
+	auth.Post("/reset-password", authLimiter, authHandler.ResetPassword)
 	auth.Post("/logout", authMW, authHandler.Logout)
 	auth.Post("/change-password", authMW, authHandler.ChangePassword)
 
@@ -403,5 +429,11 @@ func main() {
 
 	<-quit
 	logger.Info("shutting down server...")
-	app.Shutdown()
+	// Bound the graceful shutdown so a stuck connection can't hang the
+	// container forever past the drain window.
+	shutdownCtx, cancel := context.WithTimeout(context.Background(), cfg.Server.ShutdownTimeout)
+	defer cancel()
+	if err := app.ShutdownWithContext(shutdownCtx); err != nil {
+		logger.Warn("graceful shutdown did not complete in time", zap.Error(err))
+	}
 }

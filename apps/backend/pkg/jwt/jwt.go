@@ -91,7 +91,7 @@ func (s *JWTService) GenerateTokenPair(userID, email, role string) (*TokenPair, 
 func (s *JWTService) ValidateAccessToken(tokenStr string) (*Claims, error) {
 	token, err := jwt.ParseWithClaims(tokenStr, &Claims{}, func(t *jwt.Token) (interface{}, error) {
 		return []byte(s.accessSecret), nil
-	})
+	}, jwt.WithValidMethods([]string{jwt.SigningMethodHS256.Alg()}), jwt.WithIssuer(s.issuer))
 	if err != nil {
 		return nil, err
 	}
@@ -107,7 +107,7 @@ func (s *JWTService) ValidateAccessToken(tokenStr string) (*Claims, error) {
 func (s *JWTService) ValidateRefreshToken(tokenStr string) (*Claims, error) {
 	token, err := jwt.ParseWithClaims(tokenStr, &Claims{}, func(t *jwt.Token) (interface{}, error) {
 		return []byte(s.refreshSecret), nil
-	})
+	}, jwt.WithValidMethods([]string{jwt.SigningMethodHS256.Alg()}), jwt.WithIssuer(s.issuer))
 	if err != nil {
 		return nil, err
 	}
@@ -118,8 +118,4 @@ func (s *JWTService) ValidateRefreshToken(tokenStr string) (*Claims, error) {
 	}
 
 	return claims, nil
-}
-
-func (s *JWTService) GetAccessSecret() string {
-	return s.accessSecret
 }

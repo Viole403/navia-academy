@@ -27,6 +27,10 @@ func LoggerMiddleware(log *zap.Logger) fiber.Handler {
 			zap.String("user_agent", c.Get("User-Agent")),
 		}
 
+		if reqID := c.Locals("request_id"); reqID != nil {
+			fields = append(fields, zap.String("request_id", reqID.(string)))
+		}
+
 		if userID := c.Locals("user_id"); userID != nil {
 			fields = append(fields, zap.String("user_id", userID.(string)))
 		}
