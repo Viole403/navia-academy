@@ -17,6 +17,7 @@ import {
 import { play, speak } from "@/lib/audio"
 import { EXAM_LANGS, type VocabWord } from "@/lib/data-client"
 import { useTranslation } from "@/i18n/locale-context"
+import type { TranslationKey } from "@/i18n/keys"
 import { api } from "@/lib/api"
 import { THEMES, useSettings } from "@/stores/settings"
 import { cn } from "@/lib/utils"
@@ -156,7 +157,7 @@ function SrsDeck({
             style={grade === g.id ? { background: g.color } : undefined}
           >
             {t(
-              `landing.labGrade${g.id.charAt(0).toUpperCase()}${g.id.slice(1)}`
+              `landing.labGrade${g.id.charAt(0).toUpperCase()}${g.id.slice(1)}` as TranslationKey
             )}
           </button>
         ))}
@@ -362,8 +363,8 @@ function Labs({
 function HowItWorks() {
   const { t } = useTranslation()
   const steps = [1, 2, 3, 4].map((n) => ({
-    title: t(`how.step${n}`),
-    desc: t(`how.desc${n}`),
+    title: t(`how.step${n}` as TranslationKey),
+    desc: t(`how.desc${n}` as TranslationKey),
   }))
   return (
     <section id="how-it-works" className="scroll-mt-24">
