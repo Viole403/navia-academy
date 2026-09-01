@@ -2,6 +2,7 @@
 
 import { useCallback, useEffect, useState } from "react"
 import Link from "next/link"
+import { useRouter } from "next/navigation"
 
 interface Status {
   manifestEntries: number
@@ -37,6 +38,7 @@ interface AnkiSourceInfo {
 }
 
 export default function MediaStudioPage() {
+  const router = useRouter()
   const [status, setStatus] = useState<Status | null>(null)
   const [ankiSources, setAnkiSources] = useState<AnkiSourceInfo[] | null>(null)
   const [busy, setBusy] = useState<string | null>(null)
@@ -132,7 +134,7 @@ export default function MediaStudioPage() {
           <button
             onClick={async () => {
               await fetch("/api/auth/logout", { method: "POST" })
-              window.location.href = "/login"
+              router.push("/login")
             }}
             className="rounded-lg px-3 py-1.5 text-sm"
             style={{
