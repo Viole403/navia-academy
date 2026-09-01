@@ -793,6 +793,7 @@
   "notifications.streakBody": "Study at least a few minutes today to keep it.",
   "notifications.subtitle": "Alerts about your academic activity.",
   "offline.banner": "Offline: your progress is saved locally and will be kept.",
+  "offline.pending": "Reconnecting — syncing your progress…",
   "onboarding.answersSaved": "Your answers are saved automatically: you can pause and resume whenever you like.",
   "onboarding.back": "Back",
   "onboarding.daysPerWeek": "{n} days/week",

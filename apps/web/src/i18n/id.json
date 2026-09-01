@@ -793,6 +793,7 @@
   "notifications.streakBody": "Belajarlah setidaknya beberapa menit hari ini untuk mempertahankannya.",
   "notifications.subtitle": "Peringatan tentang aktivitas akademik Anda.",
   "offline.banner": "Luring: progres Anda tersimpan lokal dan akan dipertahankan.",
+  "offline.pending": "Menyambung ulang — menyinkronkan progres Anda…",
   "onboarding.answersSaved": "Jawaban Anda tersimpan otomatis: Anda dapat menjeda dan melanjutkan kapan pun Anda mau.",
   "onboarding.back": "Kembali",
   "onboarding.daysPerWeek": "{n} hari/minggu",

@@ -27,15 +27,15 @@
   },
   "lint-staged": {
     "apps/web/**/*.{js,jsx,ts,tsx}": [
-      "bun x eslint --config apps/web/eslint.config.mjs --fix",
+      "apps/web/node_modules/.bin/eslint --config apps/web/eslint.config.mjs --fix",
       "prettier --write"
     ],
     "apps/mobile/**/*.{js,jsx,ts,tsx}": [
-      "bun x eslint --config apps/mobile/eslint.config.mjs --fix",
+      "apps/mobile/node_modules/.bin/eslint --config apps/mobile/eslint.config.mjs --fix",
       "prettier --write"
     ],
     "apps/media/**/*.{js,jsx,ts,tsx}": [
-      "bun x eslint --config apps/media/eslint.config.mjs --fix",
+      "apps/media/node_modules/.bin/eslint --config apps/media/eslint.config.mjs --fix",
       "prettier --write"
     ],
     "*.md": "markdownlint-cli2 --fix",

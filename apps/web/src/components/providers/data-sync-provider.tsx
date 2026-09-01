@@ -7,6 +7,7 @@ import {
   loadProgressFromServer,
   loadProgressFromCache,
   markProgressSynced,
+  retryProgressSync,
 } from "@/stores/progress"
 import {
   useSettings,
@@ -49,6 +50,14 @@ export function DataSyncProvider({ children }: { children: React.ReactNode }) {
       const { subscribeProgress } = await import("@/stores/progress")
       const { subscribeSettings } = await import("@/stores/settings")
       unsubRef.current = [subscribeProgress(), subscribeSettings()]
+
+      // When connectivity returns, flush any progress mutations that were
+      // queued while offline (same contract as the mobile outbox queue).
+      const onOnline = () => retryProgressSync()
+      window.addEventListener("online", onOnline)
+      unsubRef.current.push(() =>
+        window.removeEventListener("online", onOnline)
+      )
     })()
 
     return () => {
