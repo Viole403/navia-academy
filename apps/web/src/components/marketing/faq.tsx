@@ -4,10 +4,13 @@ import { useState } from "react"
 import { ChevronDown } from "lucide-react"
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion"
 import { useTranslation } from "@/i18n/locale-context"
+import type { TranslationKey } from "@/i18n/keys"
 import { cn } from "@/lib/utils"
 import { Reveal } from "@/components/ui"
 
-const FAQ_IDS = [1, 2, 3, 4, 5, 6, 7]
+const FAQ_IDS = [1, 2, 3, 4, 5, 6, 7] as const
+
+type FaqId = (typeof FAQ_IDS)[number]
 
 export function Faq({ showHeading = false }: { showHeading?: boolean }) {
   const { t } = useTranslation()
