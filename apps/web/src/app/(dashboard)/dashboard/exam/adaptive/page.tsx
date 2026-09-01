@@ -18,7 +18,7 @@ import type { VoiceLocale } from "@navia/utils"
 import { Button, ProgressBar, Badge } from "@/components/ui"
 import { cn } from "@/lib/utils"
 import { useMounted } from "@/lib/use-mounted"
-import { cat } from "@/lib/api-client"
+import { cat } from "@/lib/api"
 
 const PER_QUESTION_SECONDS = 45
 

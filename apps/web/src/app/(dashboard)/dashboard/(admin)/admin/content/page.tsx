@@ -2,7 +2,7 @@
 
 import { useCallback, useEffect, useState } from "react"
 import { useAllowedRefs } from "@/lib/content-levels"
-import { content } from "@/lib/api-client"
+import { content } from "@/lib/api"
 import {
   Button,
   Badge,

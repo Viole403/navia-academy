@@ -3,7 +3,7 @@
 import { useCallback, useEffect, useMemo, useState } from "react"
 import { useAuth } from "@/lib/auth-context"
 import { useAllowedRefs } from "@/lib/content-levels"
-import { content } from "@/lib/api-client"
+import { content } from "@/lib/api"
 import {
   Button,
   Badge,

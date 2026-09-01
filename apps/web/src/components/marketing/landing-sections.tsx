@@ -16,7 +16,7 @@ import {
 } from "@/components/ui"
 import { play, speak } from "@/lib/audio"
 import { EXAM_LANGS, type VocabWord } from "@/lib/data-client"
-import { community, type TestimonialItem } from "@/lib/api-client"
+import { community, type TestimonialItem } from "@/lib/api"
 import { useTranslation } from "@/i18n/locale-context"
 import type { TranslationKey } from "@/i18n/keys"
 import { THEMES, useSettings } from "@/stores/settings"
@@ -416,7 +416,7 @@ function HowItWorks() {
 
 /* ------------------------------- Testimonials ------------------------------ */
 
-// TestimonialItem type imported from @/lib/api-client.
+// TestimonialItem type exported from @/lib/api.
 
 function TestimonialsColumn({
   className,

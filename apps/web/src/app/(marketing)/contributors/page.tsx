@@ -6,7 +6,7 @@ import Image from "next/image"
 import { Users } from "lucide-react"
 import { NaviaChip } from "@/components/marketing/navia-chip"
 import { Reveal } from "@/components/ui"
-import { community } from "@/lib/api-client"
+import { community } from "@/lib/api"
 import { useTranslation } from "@/i18n/locale-context"
 
 interface Contributor {

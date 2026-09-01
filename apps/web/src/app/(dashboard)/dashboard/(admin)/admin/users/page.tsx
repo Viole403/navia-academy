@@ -3,7 +3,7 @@
 import { useCallback, useEffect, useState } from "react"
 import { Button, Badge, Spinner } from "@/components/ui"
 import { Input, Select } from "@/components/ui/form"
-import { admin } from "@/lib/api-client"
+import { admin } from "@/lib/api"
 import { useTranslation } from "@/i18n/locale-context"
 
 const ROLES = ["student", "contributor", "reviewer", "admin"] as const

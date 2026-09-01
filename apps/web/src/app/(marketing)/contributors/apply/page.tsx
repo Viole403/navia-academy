@@ -5,7 +5,7 @@ import { CheckCircle2, Rocket } from "lucide-react"
 import { Button, Input, Textarea, Select } from "@/components/ui"
 import { NaviaChip } from "@/components/marketing/navia-chip"
 import { Reveal } from "@/components/ui"
-import { community } from "@/lib/api-client"
+import { community } from "@/lib/api"
 import { useTranslation } from "@/i18n/locale-context"
 
 export default function ContributorApplyPage() {
