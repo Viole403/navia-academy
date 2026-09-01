@@ -16,6 +16,7 @@ import {
 } from "@/components/ui"
 import { play, speak } from "@/lib/audio"
 import { EXAM_LANGS, type VocabWord } from "@/lib/data-client"
+import { community, type TestimonialItem } from "@/lib/api-client"
 import { useTranslation } from "@/i18n/locale-context"
 import type { TranslationKey } from "@/i18n/keys"
 import { api } from "@/lib/api"
@@ -416,13 +417,7 @@ function HowItWorks() {
 
 /* ------------------------------- Testimonials ------------------------------ */
 
-interface TestimonialItem {
-  id: string
-  name: string
-  role_label?: string
-  quote: string
-  avatar?: string
-}
+// TestimonialItem type imported from @/lib/api-client.
 
 function TestimonialsColumn({
   className,
@@ -534,7 +529,8 @@ function Testimonials() {
 
   useEffect(() => {
     let cancelled = false
-    api<TestimonialItem[]>("/api/v1/testimonials?limit=9")
+    community
+      .testimonials()
       .then((list) => {
         if (!cancelled) setItems(Array.isArray(list) ? list.slice(0, 9) : [])
       })

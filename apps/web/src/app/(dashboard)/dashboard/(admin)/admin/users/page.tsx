@@ -4,6 +4,7 @@ import { useCallback, useEffect, useState } from "react"
 import { api } from "@/lib/api"
 import { Button, Badge, Spinner } from "@/components/ui"
 import { Input, Select } from "@/components/ui/form"
+import { admin } from "@/lib/api-client"
 import { useTranslation } from "@/i18n/locale-context"
 
 const ROLES = ["student", "contributor", "reviewer", "admin"] as const
@@ -34,7 +35,8 @@ export default function AdminUsersPage() {
 
   const fetchData = useCallback(() => {
     setLoading(true)
-    api<AdminUser[]>("/api/v1/admin/users")
+    admin
+      .users()
       .then(setUsers)
       .catch((e: Error) => setError(e.message))
       .finally(() => setLoading(false))
@@ -50,10 +52,7 @@ export default function AdminUsersPage() {
     setBusy(true)
     setError("")
     try {
-      await api(`/api/v1/admin/users`, {
-        method: "POST",
-        body: JSON.stringify(form),
-      })
+      await admin.createUser(form)
       setCreated(true)
       setForm({ name: "", email: "", password: "", role: "student" })
       fetchData()
@@ -65,10 +64,7 @@ export default function AdminUsersPage() {
   }
 
   const changeRole = async (id: string, role: string) => {
-    await api(`/api/v1/admin/users/${id}/role`, {
-      method: "PUT",
-      body: JSON.stringify({ role }),
-    }).catch((err: Error) => setError(err.message))
+    await admin.setRole(id, role).catch((err: Error) => setError(err.message))
     fetchData()
   }
 

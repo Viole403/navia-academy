@@ -3,6 +3,7 @@
 import { useCallback, useEffect, useState } from "react"
 import { api } from "@/lib/api"
 import { useAllowedRefs } from "@/lib/content-levels"
+import { content } from "@/lib/api-client"
 import {
   Button,
   Badge,
@@ -68,7 +69,7 @@ export default function AdminContentPage() {
     try {
       const q = new URLSearchParams({ status, limit: "200" })
       if (domain) q.set("domain", domain)
-      const rows = await api<ContentRow[]>(`/api/v1/content?${q}`)
+      const rows = await content.list(q)
       setRows(rows)
     } catch (err) {
       setError(err instanceof Error ? err.message : "Failed")
@@ -91,13 +92,10 @@ export default function AdminContentPage() {
   const decide = async (row: ContentRow, next: "published" | "rejected") => {
     setDeciding(true)
     try {
-      await api(`/api/v1/content/${row.lang}/${row.domain}/${row.id}/review`, {
-        method: "POST",
-        body: JSON.stringify({
-          status: next,
-          review_note: note.trim() || undefined,
-          ref: next === "published" ? refChoice || undefined : undefined,
-        }),
+      await content.review(row.lang, row.domain, row.id, {
+        status: next,
+        review_note: note.trim() || undefined,
+        ref: next === "published" ? refChoice || undefined : undefined,
       })
       setReviewing(null)
       setNote("")

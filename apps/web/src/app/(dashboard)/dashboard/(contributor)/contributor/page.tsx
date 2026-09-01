@@ -4,6 +4,7 @@ import { useCallback, useEffect, useMemo, useState } from "react"
 import { useAuth } from "@/lib/auth-context"
 import { api } from "@/lib/api"
 import { useAllowedRefs } from "@/lib/content-levels"
+import { content } from "@/lib/api-client"
 import {
   Button,
   Badge,
@@ -74,7 +75,7 @@ export default function ContributorPage() {
     setError("")
     try {
       const q = new URLSearchParams({ domain, lang, limit: "200" })
-      const rows = await api<ContentRow[]>(`/api/v1/content?${q}`)
+      const rows = await content.list(q)
       setRows(rows)
     } catch (err) {
       setError(err instanceof Error ? err.message : "Failed")
@@ -108,12 +109,9 @@ export default function ContributorPage() {
 
   const submitForReview = async (row: ContentRow) => {
     try {
-      await api(`/api/v1/content/${row.lang}/${row.domain}/${row.id}`, {
-        method: "PUT",
-        body: JSON.stringify({
-          status: "review",
-          expected_updated_at: row.updated_at,
-        }),
+      await content.update(row.lang, row.domain, row.id, {
+        status: "review",
+        expected_updated_at: row.updated_at,
       })
       notify("Submitted for review")
       fetchRows()
@@ -467,23 +465,21 @@ function ContentEditor({
     }
 
     try {
-      await api(
-        isEdit
-          ? `/api/v1/content/${row!.lang}/${row!.domain}/${row!.id}`
-          : `/api/v1/content`,
-        {
-          method: isEdit ? "PUT" : "POST",
-          body: JSON.stringify(
-            isEdit
-              ? {
-                  payload,
-                  expected_updated_at: row!.updated_at,
-                  ref: ref || undefined,
-                }
-              : { lang, domain, id, payload, ref: ref || undefined }
-          ),
-        }
-      )
+      if (isEdit) {
+        await content.update(row!.lang, row!.domain, row!.id, {
+          payload,
+          expected_updated_at: row!.updated_at,
+          ref: ref || undefined,
+        })
+      } else {
+        await content.create({
+          lang,
+          domain,
+          id,
+          payload,
+          ref: ref || undefined,
+        })
+      }
       onClose()
     } catch (e) {
       const msg = e instanceof Error ? e.message : "Failed"

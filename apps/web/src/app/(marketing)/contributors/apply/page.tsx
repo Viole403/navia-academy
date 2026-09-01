@@ -5,6 +5,7 @@ import { CheckCircle2, Rocket } from "lucide-react"
 import { Button, Input, Textarea, Select } from "@/components/ui"
 import { NaviaChip } from "@/components/marketing/navia-chip"
 import { Reveal } from "@/components/ui"
+import { community } from "@/lib/api-client"
 import { useTranslation } from "@/i18n/locale-context"
 import { api } from "@/lib/api"
 
@@ -66,16 +67,16 @@ export default function ContributorApplyPage() {
                     setError(null)
                     const form = new FormData(e.currentTarget)
                     try {
-                      await api("/api/v1/contributors/apply", {
-                        method: "POST",
-                        body: JSON.stringify({
-                          name: form.get("name"),
-                          email: form.get("email"),
-                          contribution_area: form.get("contribution_area"),
-                          mandarin_level: form.get("mandarin_level"),
-                          portfolio: form.get("portfolio") || null,
-                          message: form.get("message") || null,
-                        }),
+                      await community.apply({
+                        name: String(form.get("name") ?? ""),
+                        email: String(form.get("email") ?? ""),
+                        contribution_area: String(
+                          form.get("contribution_area") ?? ""
+                        ),
+                        mandarin_level:
+                          String(form.get("mandarin_level") ?? "") || null,
+                        portfolio: String(form.get("portfolio") ?? "") || null,
+                        message: String(form.get("message") ?? "") || null,
                       })
                       setSent(true)
                     } catch {

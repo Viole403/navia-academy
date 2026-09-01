@@ -68,6 +68,11 @@ export interface CatSessionDTO {
 // ─── Admin ─────────────────────────────────────────────────────────────────
 export const admin = {
   users: () => api<AdminUser[]>("/api/v1/admin/users"),
+  createUser: (body: Record<string, string>) =>
+    api<{ ok: boolean }>("/api/v1/admin/users", {
+      method: "POST",
+      body: JSON.stringify(body),
+    }),
   setRole: (id: string, role: string) =>
     api<{ ok: boolean }>(`/api/v1/admin/users/${id}/role`, {
       method: "PUT",
@@ -77,7 +82,13 @@ export const admin = {
 
 // ─── Content (contributor & admin) ─────────────────────────────────────────
 export const content = {
-  list: (query: string) => api<ContentRow[]>(`/api/v1/content?${query}`),
+  list: (query: string | URLSearchParams) =>
+    api<ContentRow[]>(`/api/v1/content?${query}`),
+  create: (body: Record<string, unknown>) =>
+    api<{ ok: boolean }>("/api/v1/content", {
+      method: "POST",
+      body: JSON.stringify(body),
+    }),
   update: (
     lang: string,
     domain: string,
@@ -88,10 +99,15 @@ export const content = {
       method: "PUT",
       body: JSON.stringify(body),
     }),
-  review: (lang: string, domain: string, id: string) =>
+  review: (
+    lang: string,
+    domain: string,
+    id: string,
+    body: { status: string; review_note?: string; ref?: string }
+  ) =>
     api<{ ok: boolean }>(`/api/v1/content/${lang}/${domain}/${id}/review`, {
       method: "POST",
-      body: "{}",
+      body: JSON.stringify(body),
     }),
 }
 
@@ -99,7 +115,7 @@ export const content = {
 export const community = {
   contributors: (limit = 50) =>
     api<Contributor[]>(`/api/v1/contributors?limit=${limit}`),
-  apply: (body: Record<string, string>) =>
+  apply: (body: Record<string, string | null>) =>
     api<{ ok: boolean }>("/api/v1/contributors/apply", {
       method: "POST",
       body: JSON.stringify(body),
@@ -122,6 +138,12 @@ export const cat = {
       method: "POST",
       body: JSON.stringify(body),
     }),
+  /** Autosave: persist progress without submitting an answer. */
+  saveSession: (sessionId: number, body: Record<string, unknown>) =>
+    api<{ ok: boolean }>(`/cat/session/${sessionId}`, {
+      method: "PATCH",
+      body: JSON.stringify(body),
+    }),
   /** Get the current session state. */
   getSession: (sessionId: number) =>
     api<CatSessionDTO>(`/cat/session/${sessionId}`),
@@ -132,7 +154,7 @@ export const cat = {
       body: JSON.stringify(body),
     }),
   /** Get progress summary across all CAT sessions. */
-  progress: () => api<unknown[]>("/cat/progress"),
+  progress: () => api<{ elo_estimate: number }[]>("/cat/progress"),
 }
 
 // ─── Convenience export ────────────────────────────────────────────────────

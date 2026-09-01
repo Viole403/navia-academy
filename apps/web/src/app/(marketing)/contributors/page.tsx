@@ -6,6 +6,7 @@ import Image from "next/image"
 import { Users } from "lucide-react"
 import { NaviaChip } from "@/components/marketing/navia-chip"
 import { Reveal } from "@/components/ui"
+import { community } from "@/lib/api-client"
 import { useTranslation } from "@/i18n/locale-context"
 import { api } from "@/lib/api"
 
@@ -29,7 +30,8 @@ export default function ContributorsPage() {
   const fetchContributors = useCallback(() => {
     setError(false)
     setContributors(null)
-    api<Contributor[]>("/api/v1/contributors")
+    community
+      .contributors()
       .then(setContributors)
       .catch(() => setError(true))
   }, [])

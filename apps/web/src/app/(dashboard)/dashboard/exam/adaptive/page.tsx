@@ -19,6 +19,7 @@ import { Button, ProgressBar, Badge } from "@/components/ui"
 import { cn } from "@/lib/utils"
 import { useMounted } from "@/lib/use-mounted"
 import { api } from "@/lib/api"
+import { cat } from "@/lib/api-client"
 
 const PER_QUESTION_SECONDS = 45
 
@@ -93,7 +94,7 @@ async function flushPendingResult(): Promise<void> {
   const raw = window.localStorage.getItem(PENDING_RESULT_KEY)
   if (!raw) return
   try {
-    await api("/cat/result", { method: "POST", body: raw })
+    await cat.result(JSON.parse(raw))
     window.localStorage.removeItem(PENDING_RESULT_KEY)
   } catch {
     // keep queued; retry next mount / online event
@@ -136,9 +137,9 @@ export default function AdaptiveExamPage() {
     void flushPendingResult()
     void (async () => {
       try {
-        const prog = (await api<Array<{ elo_estimate: number }>>(
-          "/cat/progress"
-        )) as Array<{ elo_estimate: number }>
+        const prog = (await cat.progress()) as Array<{
+          elo_estimate: number
+        }>
         if (
           prog.length > 0 &&
           !window.localStorage.getItem("navia-cat-last-elo")
@@ -166,9 +167,7 @@ export default function AdaptiveExamPage() {
         return
       }
       try {
-        const s = (await api<CatSessionDTO>(
-          `/cat/session/${raw}`
-        )) as CatSessionDTO
+        const s = (await cat.getSession(Number(raw))) as CatSessionDTO
         sessionIdRef.current = s.id
         if (s.status === "in_progress" && s.answers.length > 0) {
           setPendingResume({
@@ -255,15 +254,13 @@ export default function AdaptiveExamPage() {
     if (log.length === 0 || done) return
     const sid = sessionIdRef.current
     if (!sid) return
-    const payload = {
-      answers: log.map(toWire),
-      elapsed_sec: elapsedRef.current,
-      theta: Math.round(theta),
-    }
-    void api(`/cat/session/${sid}`, {
-      method: "PATCH",
-      body: JSON.stringify(payload),
-    }).catch(() => {})
+    void cat
+      .saveSession(sid, {
+        answers: log.map(toWire),
+        elapsed_sec: elapsedRef.current,
+        theta: Math.round(theta),
+      })
+      .catch(() => {})
   }, [log, done, theta])
 
   function beginSession(resumeData: CatResume | null) {
@@ -280,14 +277,12 @@ export default function AdaptiveExamPage() {
     window.localStorage.removeItem(SESSION_KEY)
     setElapsed(0)
     elapsedRef.current = 0
-    api<{ id: number }>("/cat/session", {
-      method: "POST",
-      body: JSON.stringify({
+    cat
+      .session({
         exam_type: examType,
         start_theta: theta,
         time_limit_sec: maxSeconds,
-      }),
-    })
+      })
       .then((s: { id: number }) => {
         sessionIdRef.current = s.id
         window.localStorage.setItem(SESSION_KEY, String(s.id))
@@ -300,14 +295,13 @@ export default function AdaptiveExamPage() {
     const onHide = () => {
       const sid = sessionIdRef.current
       if (!sid) return
-      void api(`/cat/session/${sid}`, {
-        method: "PATCH",
-        body: JSON.stringify({
+      void cat
+        .saveSession(sid, {
           answers: log.map(toWire),
           elapsed_sec: elapsedRef.current,
           theta: Math.round(theta),
-        }),
-      }).catch(() => {})
+        })
+        .catch(() => {})
     }
     // Blueprint §10.1 (wajib): confirm before leaving an in-progress session.
     const onBeforeUnload = (e: BeforeUnloadEvent) => {
@@ -331,23 +325,8 @@ export default function AdaptiveExamPage() {
     savedRef.current = true
     window.localStorage.removeItem(SESSION_KEY)
     sessionIdRef.current = null
-    void api("/cat/result", {
-      method: "POST",
-      body: JSON.stringify({
-        exam_type: examType,
-        exam_level: result.cefrBand,
-        elo_estimate: Math.round(result.eloEstimate),
-        elo_sd: Math.round(result.eloSd),
-        cefr_band: result.cefrBand,
-        total_questions: result.answered,
-        correct_answers: result.correct,
-        time_taken: elapsedRef.current,
-        integrity_flag: integrityFlag,
-        answers: log.map(toWire),
-        engine_version: "elo-v1",
-      }),
-    }).catch(() => {
-      queueResult({
+    void cat
+      .result({
         exam_type: examType,
         exam_level: result.cefrBand,
         elo_estimate: Math.round(result.eloEstimate),
@@ -360,8 +339,22 @@ export default function AdaptiveExamPage() {
         answers: log.map(toWire),
         engine_version: "elo-v1",
       })
-      savedRef.current = false
-    })
+      .catch(() => {
+        queueResult({
+          exam_type: examType,
+          exam_level: result.cefrBand,
+          elo_estimate: Math.round(result.eloEstimate),
+          elo_sd: Math.round(result.eloSd),
+          cefr_band: result.cefrBand,
+          total_questions: result.answered,
+          correct_answers: result.correct,
+          time_taken: elapsedRef.current,
+          integrity_flag: integrityFlag,
+          answers: log.map(toWire),
+          engine_version: "elo-v1",
+        })
+        savedRef.current = false
+      })
   }, [done, result, examType, integrityFlag, log])
 
   function abandonSession() {
@@ -384,14 +377,12 @@ export default function AdaptiveExamPage() {
     setIntegrityFlag(false)
     sessionIdRef.current = null
     window.localStorage.removeItem(SESSION_KEY)
-    api<{ id: number }>("/cat/session", {
-      method: "POST",
-      body: JSON.stringify({
+    cat
+      .session({
         exam_type: examType,
         start_theta: 550,
         time_limit_sec: maxSeconds,
-      }),
-    })
+      })
       .then((s: { id: number }) => {
         sessionIdRef.current = s.id
         window.localStorage.setItem(SESSION_KEY, String(s.id))
