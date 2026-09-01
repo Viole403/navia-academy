@@ -20,30 +20,30 @@
     "publish-data": "tsx --env-file-if-exists=.env scripts/publish-data.ts"
   },
   "dependencies": {
-    "@aws-sdk/client-s3": "^3.658.0",
+    "@aws-sdk/client-s3": "^3.1123.0",
     "@navia/utils": "workspace:*",
-    "adm-zip": "^0.5.16",
-    "better-sqlite3": "^11.7.0",
+    "adm-zip": "^0.6.0",
+    "better-sqlite3": "^13.0.3",
     "edge-tts-universal": "^1.4.0",
-    "next": "16.2.10",
-    "puppeteer-core": "^25.5.0",
-    "sharp": "^0.35.2",
-    "react": "19.2.4",
-    "react-dom": "19.2.4"
+    "next": "16.3.4",
+    "puppeteer-core": "^25.9.0",
+    "sharp": "^0.35.4",
+    "react": "19.2.8",
+    "react-dom": "19.2.8"
   },
   "devDependencies": {
     "@navia/eslint-config": "workspace:*",
     "@tailwindcss/postcss": "^4",
-    "@types/adm-zip": "^0.5.5",
-    "@types/better-sqlite3": "^7.6.12",
-    "@types/node": "^20",
+    "@types/adm-zip": "^0.5.8",
+    "@types/better-sqlite3": "^9.6.0",
+    "@types/node": "^26",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
-    "eslint-config-next": "16.2.10",
-    "postcss-import": "^16.1.0",
+    "eslint-config-next": "16.3.4",
+    "postcss-import": "^17.0.0",
     "tailwindcss": "^4",
-    "tsx": "^4.23.1",
-    "typescript": "^5"
+    "tsx": "^4.23.13",
+    "typescript": "^7"
   }
 }
