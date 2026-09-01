@@ -120,17 +120,18 @@ type SubmitExamRequest struct {
 }
 
 type CatResultRequest struct {
-	ExamType       string   `json:"exam_type" validate:"required" example:"hsk"`
-	ExamLevel      string   `json:"exam_level" example:"1"`
-	EloEstimate    float64  `json:"elo_estimate" validate:"required" example:"1150"`
-	EloSD          float64  `json:"elo_sd" example:"60"`
-	CefrBand       string   `json:"cefr_band" example:"B1"`
-	TotalQuestions int      `json:"total_questions" example:"18"`
-	CorrectAnswers int      `json:"correct_answers" example:"12"`
-	TimeTaken      int      `json:"time_taken" example:"780"`
+	ExamType       string      `json:"exam_type" validate:"required" example:"hsk"`
+	ExamLevel      string      `json:"exam_level" example:"1"`
+	StartTheta     float64     `json:"start_theta" example:"550"`
+	EloEstimate    float64     `json:"elo_estimate" validate:"required" example:"1150"`
+	EloSD          float64     `json:"elo_sd" example:"60"`
+	CefrBand       string      `json:"cefr_band" example:"B1"`
+	TotalQuestions int         `json:"total_questions" example:"18"`
+	CorrectAnswers int         `json:"correct_answers" example:"12"`
+	TimeTaken      int         `json:"time_taken" example:"780"`
 	Answers        []CatAnswer `json:"answers,omitempty"`
-	EngineVersion  string   `json:"engine_version,omitempty" example:"elo-v1"`
-	IntegrityFlag  bool     `json:"integrity_flag"`
+	EngineVersion  string      `json:"engine_version,omitempty" example:"elo-v1"`
+	IntegrityFlag  bool        `json:"integrity_flag"`
 }
 
 type CatResult struct {

@@ -57,21 +57,78 @@ func (s *ExamService) GetCatSession(ctx context.Context, sessionID int, userID s
 }
 
 func (s *ExamService) SaveCatResult(ctx context.Context, userID string, req *models.CatResultRequest) (*models.CatResult, error) {
+	// Server-side recompute: never trust the client's self-reported
+	// Elo/scores. Derive everything from the submitted answer log so a
+	// forged elo_estimate / correct_answers payload has no effect.
+	elo, correct, total := recomputeCatRating(req.Answers, req.StartTheta)
 	res := &models.CatResult{
 		UserID:         userID,
 		ExamType:       req.ExamType,
 		ExamLevel:      req.ExamLevel,
-		EloEstimate:    req.EloEstimate,
+		EloEstimate:    elo,
 		EloSD:          req.EloSD,
 		CefrBand:       req.CefrBand,
-		TotalQuestions: req.TotalQuestions,
-		CorrectAnswers: req.CorrectAnswers,
+		TotalQuestions: total,
+		CorrectAnswers: correct,
 		TimeTaken:      req.TimeTaken,
 		Answers:        req.Answers,
 		EngineVersion:  CatEngineVersion,
 		IntegrityFlag:  req.IntegrityFlag,
 	}
+	// Elo estimate is authoritative from recompute; band derived from it.
+	res.CefrBand = cefrBandOf(elo)
 	return s.examRepo.CreateCatResult(ctx, res)
+}
+
+// recomputeCatRating replays the CAT answer log with the same Elo update
+// rule as the client (apps/web/src/lib/elo.ts) to produce a server-side
+// authoritative rating, correct count, and question total. Mirrors
+// eloUpdate() (K-factor decay) and the Elo expected-score formula.
+func recomputeCatRating(answers []models.CatAnswer, startTheta float64) (elo float64, correct, total int) {
+	theta := startTheta
+	if theta == 0 {
+		theta = 550 // DEFAULT_ELO
+	}
+	for _, a := range answers {
+		theta = eloUpdate(theta, a.ItemElo, a.Correct, total)
+		if a.Correct {
+			correct++
+		}
+		total++
+	}
+	return theta, correct, total
+}
+
+// eloUpdate mirrors the client's K-factor decay update: k = max(4, 36 - 2n).
+func eloUpdate(theta, itemElo float64, correct bool, questionsAnswered int) float64 {
+	k := 36 - questionsAnswered*2
+	if k < 4 {
+		k = 4
+	}
+	expected := 1 / (1 + math.Pow(10, (itemElo-theta)/400))
+	actual := 0.0
+	if correct {
+		actual = 1
+	}
+	return theta + float64(k)*(actual-expected)
+}
+
+// cefrBandOf maps an Elo rating to a CEFR band (mirrors elo.ts CEFR_BANDS).
+func cefrBandOf(elo float64) string {
+	switch {
+	case elo < 700:
+		return "A1"
+	case elo < 1000:
+		return "A2"
+	case elo < 1300:
+		return "B1"
+	case elo < 1700:
+		return "B2"
+	case elo < 2000:
+		return "C1"
+	default:
+		return "C2"
+	}
 }
 
 func (s *ExamService) GetCatProgress(ctx context.Context, userID string) ([]models.CatResult, error) {
