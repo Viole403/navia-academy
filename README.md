@@ -8,7 +8,7 @@ kurikulum terarah ujian yang terbatas pada **5 exam**: **HSK** & **TOCFL** (zh) 
 
 ## Struktur Monorepo
 
-```
+```text
 huanyu-academy/
 ├── apps/
 │   ├── web/          # Next.js frontend learner-facing (App Router, React 19, Tailwind v4)
@@ -34,7 +34,7 @@ Toolchain: **Bun 1.4+ + Turborepo**, Go 1.26+.
 **Prinsip inti: konten ditulis di `apps/media/data/json/` dan dipublikasikan ke CDN.
 Database tidak pernah di-query di read path publik.**
 
-```
+```text
 CONTRIBUTOR / EDITOR                USER
    │ edit data/json                   ▲ fetch (cache-first, immutable)
    ▼ apps/media                       │
@@ -210,7 +210,7 @@ Strategi cache (ramah free-tier):
 | `data-manifest.json`  | `max-age=86400` (1 hari)    | rollback = revert manifest ke versi sebelumnya |
 | `content-levels.json` | `max-age=2592000` (1 bulan) | whitelist level per bahasa                     |
 
-## Media Studio (`apps/media`)
+## Media Studio — Pipeline & Commands
 
 Pipeline konten + aset terpusat: memiliki pohon JSON (`apps/media/data/json`),
 menghasilkan **audio** (edge / Google / Azure TTS) dan **gambar** (OpenAI / Gemini /

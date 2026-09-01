@@ -49,7 +49,7 @@ NEXT_PUBLIC_SITE_URL=http://localhost:3000
 
 ## Struktur `src/`
 
-```
+```text
 src/
 ├── app/                  # App Router routes
 │   ├── (marketing)/      # landing `/`, features, about, contact, legal, contributors

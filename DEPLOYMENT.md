@@ -6,7 +6,7 @@ Untuk setup dev/production lengkap lihat [SETUP.md](./SETUP.md); dokumen ini fok
 
 ## Arsitektur Produksi
 
-```
+```text
                      USER
                       │  fetch
         ┌─────────────┼───────────────────────┐
@@ -157,7 +157,7 @@ bunx vercel --prod          # atau connect GitHub di dashboard
 
 Environment variables (Production) di Vercel — semua `NEXT_PUBLIC_*` ter-bundle di client:
 
-```
+```text
 NEXT_PUBLIC_API_BASE_URL    = https://api.naviaacademy.com
 NEXT_PUBLIC_DATA_CDN_URL    = https://cdn.naviaacademy.com
 NEXT_PUBLIC_AUDIO_CDN_URL   = https://cdn.naviaacademy.com
@@ -176,7 +176,7 @@ Supaya generate audio/images + publish R2 bisa jalan dari GitHub Actions (jangan
 
 - `MEDIA_STORAGE_PROVIDER` (r2) · `MEDIA_STORAGE_BUCKET` (navia-data)
 - `MEDIA_STORAGE_REGION` (auto) · `MEDIA_STORAGE_ENDPOINT` (R2 S3 endpoint)
-- `MEDIA_STORAGE_ACCESS_KEY` · `MEDIA_STORAGE_SECRET_KEY` · `MEDIA_STORAGE_PUBLIC_URL` (https://cdn.naviaacademy.com)
+- `MEDIA_STORAGE_ACCESS_KEY` · `MEDIA_STORAGE_SECRET_KEY` · `MEDIA_STORAGE_PUBLIC_URL` (<https://cdn.naviaacademy.com>)
 - TTS: `MEDIA_TTS_ENGINE` (+ `GOOGLE_TTS_API_KEY` atau `AZURE_SPEECH_KEY`/`AZURE_SPEECH_REGION`)
 - Gambar: `MEDIA_IMAGE_PROVIDER` + `MEDIA_IMAGE_API_KEY` (atau `MEDIA_IMAGE_CF_ACCOUNT_ID`/`MEDIA_IMAGE_CF_API_TOKEN`)
 - Opsional key pools: `CONTENT_SUPABASE_URL` · `CONTENT_SUPABASE_SERVICE_ROLE_KEY`

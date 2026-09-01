@@ -9,7 +9,7 @@ menyajikan content bundle.
 
 ## Arsitektur
 
-```
+```text
 cmd/server/main.go                     - entrypoint + semua routes
 internal/config/                       - config berbasis env
 internal/handler/                      - HTTP handlers (auth, progress, content, tts, ...)

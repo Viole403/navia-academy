@@ -17,3 +17,9 @@ tmp/
 # tools
 .impeccable/
 .vscode/
+
+# build artifacts
+coverage/
+
+# husky auto-generated runtime files
+.husky/_

@@ -197,7 +197,7 @@ retired wholesale; `--font-serif-var` resolves to the same geometric sans.
 - **Label** (500–700, 0.75rem, +0.025–0.05em, UPPERCASE): stat labels, metadata,
   bauhaus-chip captions (display face, 0.8125rem).
 
-### Named Rules
+### Named Rules — Typography
 
 **The Sans-Everywhere Rule.** No serif returns anywhere — not for quotes, not for
 elegance. The geometric sans IS the house voice.
@@ -232,7 +232,7 @@ still present on older cards) is retired — **new surfaces must not use it**.
   posters, chips, feature tiles — decoration with a physical metaphor.
 - **Legacy ambient** (`0 1px 2px …, 0 10px 24px -10px …`): phase out; do not add.
 
-### Named Rules
+### Named Rules — Shadows
 
 **The Hard Offset Rule.** A shadow is either a hard offset in the mode's ink or a
 colored offset in a primary — nothing diffuse, nothing ambiguous. If it looks like

@@ -76,7 +76,7 @@ Backend yang memiliki storage media. **Mobile hanya mengonsumsi URL.**
 
 ### Flow
 
-```
+```text
 mobile  ──POST /tts──▶  backend cek cache R2/S3
                             │
                             ├─ cache hit  → return { url }
@@ -94,7 +94,7 @@ mobile  ─play──▶  expo-av streaming URL
 
 ## Struktur Proyek
 
-```
+```text
 apps/mobile/
 ├── app/                    # expo-router screens (file-based routing)
 │   ├── _layout.tsx         # Root — QueryClient + ThemeProvider + auth bootstrap
@@ -256,7 +256,7 @@ bunx eas-cli@latest build --platform all --auto-submit
 
 **Tidak ada yang sensitif di-hardcode.** Semua lewat layer:
 
-```
+```text
 local shell / .env  ──┐
 GitHub Secrets ───────┼─→ resolved saat build-time → baked ke bundle
 EAS env vars ─────────┘
