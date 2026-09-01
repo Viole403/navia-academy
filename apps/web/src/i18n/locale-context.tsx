@@ -11,16 +11,20 @@ import {
 } from "react"
 import en from "./en.json"
 import id from "./id.json"
+import type { TranslationKey } from "./keys"
 import { useSettings } from "@/stores/settings"
 
 export type Locale = "en" | "id"
 
-const TRANSLATIONS: Record<Locale, Record<string, string>> = { en, id }
+const TRANSLATIONS: Record<Locale, Record<TranslationKey, string>> = {
+  en,
+  id,
+}
 
 interface LocaleContextValue {
   locale: Locale
   setLocale: (l: Locale) => void
-  t: (key: string, params?: Record<string, string>) => string
+  t: (key: TranslationKey, params?: Record<string, string>) => string
 }
 
 const LocaleContext = createContext<LocaleContextValue | null>(null)
@@ -70,7 +74,7 @@ export function LocaleProvider({
   )
 
   const t = useCallback(
-    (key: string, params?: Record<string, string>): string => {
+    (key: TranslationKey, params?: Record<string, string>): string => {
       const dict = TRANSLATIONS[locale]
       let val = dict[key] ?? key
       if (params) {

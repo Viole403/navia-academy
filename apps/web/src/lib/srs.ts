@@ -1,4 +1,5 @@
 import type { SrsCard, SrsGrade, SrsItemKind } from "@/types"
+import type { TranslationKey } from "@/i18n/keys"
 import { clamp } from "@/lib/utils"
 
 /**
@@ -87,7 +88,7 @@ export function isDue(card: SrsCard, onDate = new Date()): boolean {
   return card.due <= onDate.toISOString().slice(0, 10)
 }
 
-export function masteryLabel(mastery: number): string {
+export function masteryLabel(mastery: number): TranslationKey {
   if (mastery >= 85) return "srs.mastery.mastered"
   if (mastery >= 60) return "srs.mastery.consolidating"
   if (mastery >= 30) return "srs.mastery.learning"
