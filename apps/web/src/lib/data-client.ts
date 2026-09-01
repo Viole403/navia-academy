@@ -201,7 +201,7 @@ export function clearDataCache(): void {
   manifestCache = null
 }
 
-// ─── Typed bundle loaders ───────────────────────────────────────────────
+// Typed bundle loaders
 // Content bundles are language-scoped (`<lang>/<domain>/index`). App-level
 // config (achievements, exam-definitions, …) is language-agnostic.
 
@@ -329,8 +329,7 @@ export function loadCharactersActive(): Promise<HanziChar[]> {
   return loadBundle<HanziChar[]>(langBundle(lang, "characters/index"))
 }
 
-// ─── App-level config (not language-scoped) ─────────────────────────────
-
+// App-level config (not language-scoped)
 export interface ExamDefinitionConfig {
   type: string
   name: string

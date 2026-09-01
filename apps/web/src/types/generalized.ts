@@ -86,7 +86,7 @@ export interface VocabWord {
   id: string
   language: LanguageCode
 
-  /* ─── Core Fields (All Languages) ─── */
+  /* Core Fields (All Languages) */
 
   /** Primary text representation in target language */
   text: string
@@ -139,7 +139,7 @@ export interface VocabWord {
   /** Image file URL/key */
   image?: string
 
-  /* ─── Language-Specific Fields (Optional) ─── */
+  /* Language-Specific Fields (Optional) */
 
   /** Text variant: Traditional Chinese, British English, Swiss German, etc. */
   textVariant?: string
@@ -215,7 +215,7 @@ export interface VocabWord {
   /** Phrasal verb particles (English) */
   particles?: string[]
 
-  /* ─── Backward Compatibility (Deprecated) ─── */
+  /* Backward Compatibility (Deprecated) */
 
   /** @deprecated Use `text` instead (Chinese: 汉字) */
   hanzi?: string

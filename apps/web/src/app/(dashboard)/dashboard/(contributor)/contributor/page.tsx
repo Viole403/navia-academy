@@ -308,8 +308,7 @@ export default function ContributorPage() {
   )
 }
 
-// ─── Editor ────────────────────────────────────────────────────────────
-
+// Editor
 interface GuidedField {
   key: string
   label: string

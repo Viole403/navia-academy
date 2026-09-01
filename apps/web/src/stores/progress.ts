@@ -543,7 +543,7 @@ export function subscribeProgress() {
   return useProgress.subscribe((state) => syncProgressToServer(state))
 }
 
-// ─── Language-scoped accessors ──────────────────────────────────────────
+// Language-scoped accessors
 // Pages read the active language's slice so aggregates never mix languages.
 
 // Stable empty references so `getSnapshot` selectors stay referentially

@@ -1,5 +1,3 @@
-// Web is a pure frontend: every data request goes to the Go/Fiber backend
-// (NEXT_PUBLIC_API_BASE_URL) authenticated with the custom JWT access token.
 //
 // This file is the single API module — transport layer (api<T>), domain types,
 // and typed domain wrappers (admin, content, community, cat), mirroring the
@@ -88,8 +86,6 @@ async function apiWithRetry<T>(
   throw err
 }
 
-// ─── Domain types (mirror mobile's @/types/api) ────────────────────────────
-
 export interface AdminUser {
   id: string
   name: string
@@ -146,7 +142,6 @@ export interface CatSessionDTO {
   [k: string]: unknown
 }
 
-// ─── Admin ─────────────────────────────────────────────────────────────────
 export const admin = {
   users: () => api<AdminUser[]>("/api/v1/admin/users"),
   createUser: (body: Record<string, string>) =>
@@ -161,7 +156,6 @@ export const admin = {
     }),
 }
 
-// ─── Content (contributor & admin) ─────────────────────────────────────────
 export const content = {
   list: (query: string | URLSearchParams) =>
     api<ContentRow[]>(`/api/v1/content?${query}`),
@@ -192,7 +186,6 @@ export const content = {
     }),
 }
 
-// ─── Community ─────────────────────────────────────────────────────────────
 export const community = {
   contributors: (limit = 50) =>
     api<Contributor[]>(`/api/v1/contributors?limit=${limit}`),
@@ -205,38 +198,30 @@ export const community = {
     api<TestimonialItem[]>(`/api/v1/testimonials?limit=${limit}`),
 }
 
-// ─── CAT (Computer-Adaptive Testing) ───────────────────────────────────────
 export const cat = {
-  /** Create a new session or resume an existing one. */
   session: (body: Record<string, unknown>) =>
     api<{ id: number }>("/cat/session", {
       method: "POST",
       body: JSON.stringify(body),
     }),
-  /** Submit an answer for the current question. */
   answer: (sessionId: number, body: Record<string, unknown>) =>
     api<CatSessionDTO>(`/cat/session/${sessionId}`, {
       method: "POST",
       body: JSON.stringify(body),
     }),
-  /** Autosave: persist progress without submitting an answer. */
   saveSession: (sessionId: number, body: Record<string, unknown>) =>
     api<{ ok: boolean }>(`/cat/session/${sessionId}`, {
       method: "PATCH",
       body: JSON.stringify(body),
     }),
-  /** Get the current session state. */
   getSession: (sessionId: number) =>
     api<CatSessionDTO>(`/cat/session/${sessionId}`),
-  /** Submit the result at the end of a session. */
   result: (body: Record<string, unknown>) =>
     api<CatSessionDTO>("/cat/result", {
       method: "POST",
       body: JSON.stringify(body),
     }),
-  /** Get progress summary across all CAT sessions. */
   progress: () => api<{ elo_estimate: number }[]>("/cat/progress"),
 }
 
-// ─── Convenience export ────────────────────────────────────────────────────
 export const apiClient = { admin, content, community, cat }

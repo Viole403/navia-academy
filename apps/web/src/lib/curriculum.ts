@@ -90,8 +90,7 @@ if (typeof window !== "undefined") {
   })
 }
 
-// ─── Sync helpers (read current snapshot) ──────────────────────────────
-
+// Sync helpers (read current snapshot)
 export function lessonById(id: string): Lesson | undefined {
   return LESSONS.find((l) => l.id === id)
 }

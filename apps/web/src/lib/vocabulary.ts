@@ -84,8 +84,7 @@ if (typeof window !== "undefined") {
   })
 }
 
-// ─── Sync helpers (read current snapshot) ──────────────────────────────
-
+// Sync helpers (read current snapshot)
 export function vocabById(id: string): VocabWord | undefined {
   return VOCABULARY.find((v) => v.id === id)
 }

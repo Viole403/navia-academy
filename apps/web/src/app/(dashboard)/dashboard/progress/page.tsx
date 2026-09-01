@@ -539,7 +539,7 @@ function ProgressContent() {
         subtitle={t("progress.subtitle")}
       />
 
-      {/* ── Stat cards (mobile/tablet only, <lg) ── */}
+      {/* Stat cards (mobile/tablet only, <lg) */}
       {hasAttempts && (
         <div className="mt-6 grid grid-cols-2 gap-4 md:grid-cols-3 lg:hidden">
           <StatCard
@@ -577,7 +577,7 @@ function ProgressContent() {
 
       {hasAttempts ? (
         <>
-          {/* ── 2-column layout (desktop) ── */}
+          {/* 2-column layout (desktop) */}
           <div className="mt-6 lg:mt-10 lg:grid lg:grid-cols-[1fr_280px] lg:gap-8">
             {/* ══ MAIN COLUMN ══ */}
             <div className="space-y-10">
@@ -831,7 +831,7 @@ function ProgressContent() {
 
             {/* ══ SIDEBAR (desktop only, lg+) ══ */}
             <aside className="hidden space-y-3 lg:block">
-              {/* ── Stats ── */}
+              {/* Stats */}
               <Card className="p-4">
                 <div className="grid grid-cols-2 gap-2">
                   <StatTile
@@ -862,7 +862,7 @@ function ProgressContent() {
                 </div>
               </Card>
 
-              {/* ── Performance ── */}
+              {/* Performance */}
               {byExam.length > 0 && (
                 <Card className="p-4">
                   <h3 className="mb-2.5 text-xs font-semibold tracking-wider text-ink-soft uppercase">
@@ -925,7 +925,7 @@ function ProgressContent() {
                 </Card>
               )}
 
-              {/* ── Explore Other Exams ── */}
+              {/* Explore Other Exams */}
               {unattemptedExamTypes.length > 0 && (
                 <Card className="p-4">
                   <h3 className="mb-2.5 text-xs font-semibold tracking-wider text-ink-soft uppercase">
@@ -946,7 +946,7 @@ function ProgressContent() {
                 </Card>
               )}
 
-              {/* ── Areas to Improve ── */}
+              {/* Areas to Improve */}
               {weakAreas.length > 0 && (
                 <Card className="p-4">
                   <h3 className="mb-2.5 text-xs font-semibold tracking-wider text-ink-soft uppercase">
@@ -988,7 +988,7 @@ function ProgressContent() {
                 </Card>
               )}
 
-              {/* ── Next Goals ── */}
+              {/* Next Goals */}
               <Card className="p-4">
                 <h3 className="mb-2.5 text-xs font-semibold tracking-wider text-ink-soft uppercase">
                   {t("progress.nextGoals")}
