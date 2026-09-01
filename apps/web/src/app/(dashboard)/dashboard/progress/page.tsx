@@ -628,6 +628,7 @@ function ProgressContent() {
                       value={searchInput}
                       onChange={(e) => setSearchInput(e.target.value)}
                       placeholder={t("progress.searchPlaceholder")}
+                      aria-label={t("progress.searchPlaceholder")}
                       className="h-full w-full rounded-md border bg-raised pr-7 pl-7 text-xs text-ink transition-colors outline-none placeholder:text-ink-faint focus:border-accent"
                     />
                     {searchInput && (
@@ -636,6 +637,7 @@ function ProgressContent() {
                           setSearchInput("")
                           navigate({ q: null })
                         }}
+                        aria-label={t("progress.clearSearch")}
                         className="absolute top-1/2 right-1.5 flex h-4 w-4 -translate-y-1/2 items-center justify-center rounded transition-colors hover:bg-hover"
                       >
                         <X className="h-3 w-3 text-ink-soft" />
