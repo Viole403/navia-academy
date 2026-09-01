@@ -14,6 +14,7 @@ import {
   loadSettingsFromServer,
   loadSettingsFromCache,
   markSettingsSynced,
+  retrySettingsSync,
 } from "@/stores/settings"
 
 export function DataSyncProvider({ children }: { children: React.ReactNode }) {
@@ -53,7 +54,10 @@ export function DataSyncProvider({ children }: { children: React.ReactNode }) {
 
       // When connectivity returns, flush any progress mutations that were
       // queued while offline (same contract as the mobile outbox queue).
-      const onOnline = () => retryProgressSync()
+      const onOnline = () => {
+        retryProgressSync()
+        retrySettingsSync()
+      }
       window.addEventListener("online", onOnline)
       unsubRef.current.push(() =>
         window.removeEventListener("online", onOnline)

@@ -162,9 +162,47 @@ export const useSettings = create<SettingsState>()((set) => ({
 
 const SYNC_DELAY = 2000
 const CACHE_KEY = "navia-settings"
+const PENDING_KEY = "navia-settings-pending"
 let syncTimer: ReturnType<typeof setTimeout> | null = null
 let suppressSync = false
 let lastSynced: string | null = null
+let pendingSync = false
+const syncListeners = new Set<() => void>()
+
+// Restore the pending flag across reloads so a queued sync isn't forgotten
+// if the tab closes mid-offline.
+try {
+  if (localStorage.getItem(PENDING_KEY)) pendingSync = true
+} catch {
+  /* storage unavailable — start clean */
+}
+
+function notifySyncListeners() {
+  syncListeners.forEach((fn) => fn())
+}
+
+function setPendingSync(value: boolean) {
+  if (pendingSync === value) return
+  pendingSync = value
+  try {
+    if (value) localStorage.setItem(PENDING_KEY, "1")
+    else localStorage.removeItem(PENDING_KEY)
+  } catch {
+    /* storage unavailable — memory flag is enough */
+  }
+  notifySyncListeners()
+}
+
+/** Whether settings changes are queued locally waiting to reach the server. */
+export function hasPendingSettingsSync(): boolean {
+  return pendingSync
+}
+
+/** Subscribe to pending-sync changes (returns an unsubscribe function). */
+export function subscribePendingSettingsSync(fn: () => void): () => void {
+  syncListeners.add(fn)
+  return () => syncListeners.delete(fn)
+}
 
 function extractData(state: SettingsState) {
   const { hydrated: _, load: _l, ...data } = state
@@ -178,20 +216,47 @@ export function syncSettingsToServer(state: SettingsState) {
   if (serialized === lastSynced) return
   lastSynced = serialized
   localStorage.setItem(CACHE_KEY, serialized)
+  setPendingSync(true)
   if (syncTimer) clearTimeout(syncTimer)
-  syncTimer = setTimeout(() => {
-    fetch(`${API_BASE_URL}/api/v1/settings`, {
-      method: "PUT",
-      headers: authHeaders(),
-      body: serialized,
-    }).catch(() => {})
+  syncTimer = setTimeout(async () => {
+    try {
+      const res = await fetch(`${API_BASE_URL}/api/v1/settings`, {
+        method: "PUT",
+        headers: authHeaders(),
+        body: serialized,
+      })
+      if (res.ok) setPendingSync(false)
+    } catch {
+      /* offline — stays pending; retried on the next change or `online` event */
+    }
   }, SYNC_DELAY)
+}
+
+/** Force a sync attempt regardless of whether the serialized state changed. */
+export function retrySettingsSync() {
+  if (!pendingSync) return
+  const state = useSettings.getState()
+  if (!state.hydrated || suppressSync) return
+  const serialized = JSON.stringify(extractData(state))
+  fetch(`${API_BASE_URL}/api/v1/settings`, {
+    method: "PUT",
+    headers: authHeaders(),
+    body: serialized,
+  })
+    .then((res) => {
+      if (res.ok) {
+        setPendingSync(false)
+        lastSynced = serialized
+      }
+    })
+    .catch(() => {})
 }
 
 /** Re-arm syncing after a load and record the loaded state as the baseline. */
 export function markSettingsSynced() {
   suppressSync = false
   lastSynced = JSON.stringify(extractData(useSettings.getState()))
+  setPendingSync(false)
 }
 
 export async function loadSettingsFromServer(): Promise<Partial<SettingsState> | null> {
