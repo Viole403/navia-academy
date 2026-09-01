@@ -203,7 +203,9 @@ func main() {
 	supporterSvc := service.NewSupporterService(supporterRepo)
 	contentSvc := service.NewContentService(contentRepo)
 
-	authHandler := handler.NewAuthHandler(authSvc).WithGoogle(cfg.Google, cfg.App.SiteURL)
+	authHandler := handler.NewAuthHandler(authSvc).
+		WithGoogle(cfg.Google, cfg.App.SiteURL).
+		WithResetTokenExposure(os.Getenv("RESET_TOKEN_EXPOSE") == "true")
 	progressHandler := handler.NewProgressHandler(progressSvc)
 	taskHandler := handler.NewTaskHandler(taskSvc)
 	gameHandler := handler.NewGameHandler(gameSvc)
@@ -283,6 +285,7 @@ func main() {
 	auth.Post("/refresh", authLimiter, authHandler.RefreshToken)
 	auth.Get("/google", authHandler.GoogleAuthorize)
 	auth.Post("/reset-password", authLimiter, authHandler.ResetPassword)
+	auth.Post("/reset-password/confirm", authLimiter, authHandler.ResetPasswordConfirm)
 	auth.Post("/logout", authMW, authHandler.Logout)
 	auth.Post("/change-password", authMW, authHandler.ChangePassword)
 

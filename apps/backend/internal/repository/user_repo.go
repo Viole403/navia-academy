@@ -125,12 +125,20 @@ func (r *UserRepository) UpdateRole(ctx context.Context, userID, role string) er
 	return err
 }
 
-// ListAll returns every user (id, name, email, role, created_at) for the admin user registry.
-func (r *UserRepository) ListAll(ctx context.Context) ([]models.User, error) {
+// ListAll returns a page of users (id, name, email, role, created_at) for the
+// admin user registry. Bounded pagination keeps the response small at scale.
+func (r *UserRepository) ListAll(ctx context.Context, limit, offset int) ([]models.User, error) {
+	if limit <= 0 || limit > 200 {
+		limit = 100
+	}
+	if offset < 0 {
+		offset = 0
+	}
 	rows, err := r.pool.Query(ctx, `
 		SELECT id, name, email, email_verified, image, role, created_at, updated_at
 		FROM "user" ORDER BY created_at DESC
-	`)
+		LIMIT $1 OFFSET $2
+	`, limit, offset)
 	if err != nil {
 		return nil, err
 	}
@@ -153,5 +161,27 @@ func (r *UserRepository) CreateVerification(ctx context.Context, id, identifier,
 		INSERT INTO verification (id, identifier, value, expires_at, created_at, updated_at)
 		VALUES ($1, $2, $3, $4, $5, $6)
 	`, id, identifier, value, expiresAt, now, now)
+	return err
+}
+
+// FindVerification looks up a verification record by identifier + value
+// (e.g. "reset:user@example.com" + hashed token). Returns nil when the
+// record is missing or expired (caller treats as "invalid").
+func (r *UserRepository) FindVerification(ctx context.Context, identifier, value string) (*models.Verification, error) {
+	row := r.pool.QueryRow(ctx, `
+		SELECT id, identifier, value, expires_at, created_at, updated_at
+		FROM verification
+		WHERE identifier = $1 AND value = $2 AND expires_at > NOW()
+	`, identifier, value)
+	v := &models.Verification{}
+	if err := row.Scan(&v.ID, &v.Identifier, &v.Value, &v.ExpiresAt, &v.CreatedAt, &v.UpdatedAt); err != nil {
+		return nil, err
+	}
+	return v, nil
+}
+
+// DeleteVerification removes a verification record by id.
+func (r *UserRepository) DeleteVerification(ctx context.Context, id string) error {
+	_, err := r.pool.Exec(ctx, `DELETE FROM verification WHERE id = $1`, id)
 	return err
 }

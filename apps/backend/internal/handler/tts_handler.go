@@ -30,7 +30,10 @@ func NewTTSHandler(ttsService *service.TTSService, audioRepo *repository.AudioRe
 // @Failure 500 {object} response.APIError "FETCH_FAILED"
 // @Router /tts/cache/stats [get]
 func (h *TTSHandler) GetCacheStats(c *fiber.Ctx) error {
-	cached, _ := h.audioRepo.GetCacheStats(c.Context())
+	cached, err := h.audioRepo.GetCacheStats(c.Context())
+	if err != nil {
+		return response.Error(c, fiber.StatusInternalServerError, "FETCH_FAILED", "failed to read cache stats")
+	}
 	return response.JSON(c, fiber.StatusOK, fiber.Map{
 		"total_cached": cached,
 	})
@@ -46,13 +49,19 @@ func (h *TTSHandler) GetCacheStats(c *fiber.Ctx) error {
 // @Failure 500 {object} response.APIError "FETCH_FAILED"
 // @Router /tts/metrics [get]
 func (h *TTSHandler) GetMetrics(c *fiber.Ctx) error {
-	cached, _ := h.audioRepo.GetCacheStats(c.Context())
-	total, _ := h.audioRepo.GetTotalAudioCount(c.Context())
+	cached, err := h.audioRepo.GetCacheStats(c.Context())
+	if err != nil {
+		return response.Error(c, fiber.StatusInternalServerError, "FETCH_FAILED", "failed to read cache stats")
+	}
+	total, err := h.audioRepo.GetTotalAudioCount(c.Context())
+	if err != nil {
+		return response.Error(c, fiber.StatusInternalServerError, "FETCH_FAILED", "failed to read audio count")
+	}
 	return response.JSON(c, fiber.StatusOK, fiber.Map{
-		"total_cached":    cached,
-		"total_audio":     total,
-		"cache_hit_rate":  0.0,
-		"timestamp":       time.Now().UTC().Format(time.RFC3339),
+		"total_cached":   cached,
+		"total_audio":    total,
+		"cache_hit_rate": 0.0,
+		"timestamp":      time.Now().UTC().Format(time.RFC3339),
 	})
 }
 

@@ -11,9 +11,10 @@ import (
 )
 
 type AuthHandler struct {
-	authService *service.AuthService
-	google      config.GoogleConfig
-	siteURL     string
+	authService       *service.AuthService
+	google            config.GoogleConfig
+	siteURL           string
+	exposeResetToken  bool
 }
 
 func NewAuthHandler(authService *service.AuthService) *AuthHandler {
@@ -23,6 +24,15 @@ func NewAuthHandler(authService *service.AuthService) *AuthHandler {
 func (h *AuthHandler) WithGoogle(google config.GoogleConfig, siteURL string) *AuthHandler {
 	h.google = google
 	h.siteURL = siteURL
+	return h
+}
+
+// WithResetTokenExposure enables returning the password-reset token in the
+// API response. Off by default — production must never expose it (no SMTP
+// mailer is wired yet; set RESET_TOKEN_EXPOSE=true only for local/manual
+// development delivery).
+func (h *AuthHandler) WithResetTokenExposure(expose bool) *AuthHandler {
+	h.exposeResetToken = expose
 	return h
 }
 
@@ -187,7 +197,7 @@ func (h *AuthHandler) Logout(c *fiber.Ctx) error {
 }
 
 // @Summary Request password reset
-// @Description Generate a password reset token (SMTP send is optional; token returned in dev).
+// @Description Generate a password reset token (stored hashed, single-use, 30 min TTL). Never returns the token in production; dev-only delivery via RESET_TOKEN_EXPOSE=true.
 // @Tags Auth
 // @Accept json
 // @Produce json
@@ -205,11 +215,52 @@ func (h *AuthHandler) ResetPassword(c *fiber.Ctx) error {
 
 	token, err := h.authService.RequestPasswordReset(c.Context(), req.Email)
 	if err != nil {
+		return response.Error(c, fiber.StatusBadRequest, "RESET_FAILED", "could not request password reset")
+	}
+
+	// Always return ok (do not leak account existence). The reset token is
+	// returned ONLY when explicitly enabled for dev/manual delivery.
+	data := fiber.Map{"ok": true}
+	if h.exposeResetToken && token != "" {
+		data["reset_token"] = token
+	}
+	return response.JSON(c, fiber.StatusOK, data)
+}
+
+// @Summary Confirm password reset
+// @Description Complete a password reset with the emailed token + new password. Consumes the token (single use).
+// @Tags Auth
+// @Accept json
+// @Produce json
+// @Param body body object true "Reset payload: {\"email\":\"...\",\"token\":\"...\",\"new_password\":\"...\"}"
+// @Success 200 {object} response.APIResponse{data=object}
+// @Failure 400 {object} response.APIError "PASSWORD_TOO_SHORT"
+// @Failure 401 {object} response.APIError "INVALID_TOKEN"
+// @Router /auth/reset-password/confirm [post]
+func (h *AuthHandler) ResetPasswordConfirm(c *fiber.Ctx) error {
+	var req struct {
+		Email       string `json:"email"`
+		Token       string `json:"token"`
+		NewPassword string `json:"new_password"`
+	}
+	if err := c.BodyParser(&req); err != nil {
+		return response.Error(c, fiber.StatusBadRequest, "INVALID_BODY", "invalid request body")
+	}
+	if req.Token == "" {
+		return response.Error(c, fiber.StatusUnauthorized, "INVALID_TOKEN", "reset token is required")
+	}
+
+	if err := h.authService.ConfirmPasswordReset(c.Context(), req.Email, req.Token, req.NewPassword); err != nil {
+		switch err {
+		case service.ErrPasswordTooShort:
+			return response.Error(c, fiber.StatusBadRequest, "PASSWORD_TOO_SHORT", err.Error())
+		case service.ErrInvalidToken:
+			return response.Error(c, fiber.StatusUnauthorized, "INVALID_TOKEN", "reset token is invalid or expired")
+		}
 		return response.Error(c, fiber.StatusBadRequest, "RESET_FAILED", err.Error())
 	}
 
-	// Always return ok (do not leak account existence).
-	return response.JSON(c, fiber.StatusOK, fiber.Map{"ok": true, "reset_token": token})
+	return response.JSON(c, fiber.StatusOK, fiber.Map{"ok": true})
 }
 
 // @Summary Change password

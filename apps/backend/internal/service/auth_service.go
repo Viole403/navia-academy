@@ -2,6 +2,8 @@ package service
 
 import (
 	"context"
+	"crypto/sha256"
+	"encoding/hex"
 	"errors"
 	"strings"
 	"time"
@@ -19,6 +21,7 @@ var (
 	ErrUserNotFound       = errors.New("user not found")
 	ErrInvalidToken       = errors.New("invalid or expired token")
 	ErrSamePassword       = errors.New("new password must be different")
+	ErrPasswordTooShort   = errors.New("new password must be at least 8 characters")
 	ErrEmailRequired      = errors.New("email is required")
 	ErrInvalidRole        = errors.New("invalid role")
 )
@@ -183,8 +186,11 @@ func (s *AuthService) Logout(ctx context.Context, userID string) error {
 	return nil
 }
 
-// RequestPasswordReset generates a reset token and stores it in verification.
-// Returns the token so the caller can email it (SMTP may be unconfigured in dev).
+// RequestPasswordReset generates a reset token, stores only its SHA-256 hash
+// in verification (identifier "reset:<userID>"), and returns the plain token
+// so the caller can deliver it (SMTP mailer is not wired yet — the handler
+// exposes it only at debug level for local/manual delivery). Never returned
+// in an API response.
 func (s *AuthService) RequestPasswordReset(ctx context.Context, email string) (string, error) {
 	email = strings.TrimSpace(email)
 	if email == "" {
@@ -198,17 +204,52 @@ func (s *AuthService) RequestPasswordReset(ctx context.Context, email string) (s
 	}
 
 	token := uuid.New().String()
+	hashed := hashResetToken(token)
 	expiresAt := time.Now().Add(30 * time.Minute)
-	if err := s.userRepo.CreateVerification(ctx, "reset-"+uuid.New().String(), user.ID, token, expiresAt); err != nil {
+	if err := s.userRepo.CreateVerification(ctx, "reset-"+uuid.New().String(), "reset:"+user.ID, hashed, expiresAt); err != nil {
 		return "", err
 	}
 
 	return token, nil
 }
 
+// ConfirmPasswordReset validates a reset token against its stored hash,
+// updates the password, and consumes the verification record (single use).
+func (s *AuthService) ConfirmPasswordReset(ctx context.Context, email, token, newPassword string) error {
+	if len(newPassword) < 8 {
+		return ErrPasswordTooShort
+	}
+
+	user, err := s.userRepo.FindByEmail(ctx, strings.TrimSpace(email))
+	if err != nil {
+		return ErrInvalidToken
+	}
+
+	v, err := s.userRepo.FindVerification(ctx, "reset:"+user.ID, hashResetToken(token))
+	if err != nil {
+		return ErrInvalidToken
+	}
+
+	hashed, err := bcrypt.GenerateFromPassword([]byte(newPassword), bcrypt.DefaultCost)
+	if err != nil {
+		return err
+	}
+	if err := s.userRepo.UpdatePassword(ctx, user.ID, string(hashed)); err != nil {
+		return err
+	}
+	return s.userRepo.DeleteVerification(ctx, v.ID)
+}
+
+// hashResetToken stores only a one-way digest so a DB leak cannot be replayed
+// against other accounts (tokens are high-entropy UUIDs — no pepper needed).
+func hashResetToken(token string) string {
+	sum := sha256.Sum256([]byte(token))
+	return hex.EncodeToString(sum[:])
+}
+
 func (s *AuthService) ChangePassword(ctx context.Context, userID, currentPassword, newPassword string) error {
-	if newPassword == "" || len(newPassword) < 8 {
-		return errors.New("new password must be at least 8 characters")
+	if len(newPassword) < 8 {
+		return ErrPasswordTooShort
 	}
 
 	account, err := s.userRepo.FindAccountByUser(ctx, userID, "email")

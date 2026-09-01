@@ -1,9 +1,12 @@
 package handler
 
 import (
+	"strconv"
+
 	"github.com/gofiber/fiber/v2"
 	"github.com/navia-academy/backend/internal/models"
 	"github.com/navia-academy/backend/internal/repository"
+	"github.com/navia-academy/backend/internal/service"
 	"github.com/navia-academy/backend/pkg/response"
 )
 
@@ -13,13 +16,6 @@ type AdminHandler struct {
 
 func NewAdminHandler(userRepo *repository.UserRepository) *AdminHandler {
 	return &AdminHandler{userRepo: userRepo}
-}
-
-var validRoles = map[string]bool{
-	"student":     true,
-	"contributor": true,
-	"reviewer":    true,
-	"admin":       true,
 }
 
 // @Summary Set user role
@@ -46,7 +42,18 @@ var validRoles = map[string]bool{
 // @Failure 500 {object} response.APIError "FETCH_FAILED"
 // @Router /admin/users [get]
 func (h *AdminHandler) ListUsers(c *fiber.Ctx) error {
-	users, err := h.userRepo.ListAll(c.Context())
+	limit, _ := strconv.Atoi(c.Query("limit", "100"))
+	if limit > 200 {
+		limit = 200
+	}
+	if limit <= 0 {
+		limit = 100
+	}
+	offset, _ := strconv.Atoi(c.Query("offset", "0"))
+	if offset < 0 {
+		offset = 0
+	}
+	users, err := h.userRepo.ListAll(c.Context(), limit, offset)
 	if err != nil {
 		return response.Error(c, fiber.StatusInternalServerError, "FETCH_FAILED", err.Error())
 	}
@@ -61,7 +68,7 @@ func (h *AdminHandler) SetUserRole(c *fiber.Ctx) error {
 	if err := c.BodyParser(&req); err != nil {
 		return response.Error(c, fiber.StatusBadRequest, "INVALID_BODY", "invalid request body")
 	}
-	if !validRoles[req.Role] {
+	if !service.ValidRoles[req.Role] {
 		return response.Error(c, fiber.StatusBadRequest, "INVALID_ROLE", "role must be one of: student, contributor, reviewer, admin")
 	}
 
