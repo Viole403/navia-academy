@@ -28,6 +28,7 @@ import {
   TabPanel,
 } from "@/components/ui"
 import { useTranslation } from "@/i18n/locale-context"
+import type { TranslationKey } from "@/i18n/keys"
 import type {
   ExamType,
   VocabWord,
@@ -54,7 +55,7 @@ function buildIndex(
   grammar: GrammarPoint[],
   readings: Reading[],
   conversations: ConversationScenario[],
-  t: (key: string, params?: Record<string, string>) => string,
+  t: (key: TranslationKey, params?: Record<string, string>) => string,
   examType: ExamType
 ): Item[] {
   return [
