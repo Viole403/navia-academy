@@ -9,6 +9,7 @@ import { useProgress } from "@/stores/progress"
 import { useSettings } from "@/stores/settings"
 import { sample, shuffle } from "@/lib/utils"
 import { useTranslation } from "@/i18n/locale-context"
+import type { TranslationKey } from "@/i18n/keys"
 import type { Exercise, HskLevel, VocabWord } from "@/types"
 import {
   Button,
@@ -22,7 +23,7 @@ import { ExercisePlayer } from "@/components/dashboard/exercise-player"
 
 type DrillKind = "word" | "tone" | "sentence"
 
-const TONE_KEYS = [
+const TONE_KEYS: TranslationKey[] = [
   "listening.tone.neutral",
   "listening.tone.1st",
   "listening.tone.2nd",
@@ -34,7 +35,7 @@ function buildDrills(
   kind: DrillKind,
   pool: VocabWord[],
   count: number,
-  t: (key: string, params?: Record<string, string>) => string
+  t: (key: TranslationKey, params?: Record<string, string>) => string
 ): Exercise[] {
   const drills: Exercise[] = []
   const chosen = sample(pool, Math.min(count, pool.length))
