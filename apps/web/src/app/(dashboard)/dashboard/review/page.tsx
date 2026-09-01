@@ -15,6 +15,7 @@ import { play } from "@/lib/audio"
 import { shuffle } from "@/lib/utils"
 import { ttsLocaleFor } from "@/lib/languages"
 import type { VoiceLocale } from "@navia/utils"
+import type { TranslationKey } from "@/i18n/keys"
 import type { DisplayModeMode, SrsCard, SrsGrade } from "@/types"
 import {
   Badge,
