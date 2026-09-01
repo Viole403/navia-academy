@@ -13,11 +13,12 @@ import { isCharScript, ttsLocaleFor } from "@/lib/languages"
 import { sample } from "@/lib/utils"
 import { useTranslation } from "@/i18n/locale-context"
 import type { Exercise, HanziChar } from "@/types"
+import type { TranslationKey } from "@/i18n/keys"
 import { Button, Card, SectionHeader, Tabs, Textarea } from "@/components/ui"
 import { ExercisePlayer } from "@/components/dashboard/exercise-player"
 import { HanziPractice } from "@/components/dashboard/hanzi-practice"
 
-const PROMPT_KEYS = [
+const PROMPT_KEYS: TranslationKey[] = [
   "writing.prompt1",
   "writing.prompt2",
   "writing.prompt3",
@@ -25,7 +26,7 @@ const PROMPT_KEYS = [
   "writing.prompt5",
 ]
 
-const RUBRIC_KEYS = [
+const RUBRIC_KEYS: TranslationKey[] = [
   "writing.rubric1",
   "writing.rubric2",
   "writing.rubric3",

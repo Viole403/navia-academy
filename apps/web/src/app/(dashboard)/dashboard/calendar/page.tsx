@@ -9,8 +9,9 @@ import { useSettings } from "@/stores/settings"
 import { cn, todayISO } from "@/lib/utils"
 import { Badge, Card, SectionHeader } from "@/components/ui"
 import { useTranslation } from "@/i18n/locale-context"
+import type { TranslationKey } from "@/i18n/keys"
 
-const MONTH_KEYS = [
+const MONTH_KEYS: TranslationKey[] = [
   "calendar.month.january",
   "calendar.month.february",
   "calendar.month.march",
@@ -24,7 +25,7 @@ const MONTH_KEYS = [
   "calendar.month.november",
   "calendar.month.december",
 ]
-const WEEKDAY_KEYS = [
+const WEEKDAY_KEYS: TranslationKey[] = [
   "calendar.weekday.mon",
   "calendar.weekday.tue",
   "calendar.weekday.wed",

@@ -8,8 +8,9 @@ import { useProgress } from "@/stores/progress"
 import { cn } from "@/lib/utils"
 import { Badge, SectionHeader, StatCard } from "@/components/ui"
 import { useTranslation } from "@/i18n/locale-context"
+import type { TranslationKey } from "@/i18n/keys"
 
-const CATEGORY_KEYS: Record<string, string> = {
+const CATEGORY_KEYS: Record<string, TranslationKey> = {
   start: "achievements.cat.start",
   consistency: "achievements.cat.consistency",
   vocabulary: "nav.vocabulary",

@@ -8,6 +8,7 @@ import { useReadings } from "@/lib/readings"
 import { useExamConfig } from "@/lib/exam-definitions"
 import { useSettings } from "@/stores/settings"
 import { useTranslation } from "@/i18n/locale-context"
+import type { TranslationKey } from "@/i18n/keys"
 import { locText } from "@/lib/content-translation"
 import { stripPinyinTones } from "@/lib/utils"
 import {
@@ -18,7 +19,7 @@ import {
   Select,
 } from "@/components/ui"
 
-const TYPE_LABEL_KEYS: Record<string, string> = {
+const TYPE_LABEL_KEYS: Record<string, TranslationKey> = {
   sentences: "reading.type.sentences",
   conversation: "reading.type.conversation",
   story: "reading.type.story",
