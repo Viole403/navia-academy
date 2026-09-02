@@ -6,6 +6,7 @@ import (
 	"encoding/hex"
 	"encoding/json"
 	"errors"
+	"math"
 	"net/http"
 	"strconv"
 	"strings"
@@ -209,7 +210,18 @@ func parseAmount(raw string) (float64, error) {
 	if clean == "" || clean == "." {
 		return 0, errors.New("no digits in amount")
 	}
-	return strconv.ParseFloat(clean, 64)
+	// Reject absurd input early (e.g. hundreds of digits): ParseFloat would
+	// return +Inf, which then fails to marshal to JSON / store in numeric.
+	if len(clean) > 32 {
+		return 0, errors.New("amount too long")
+	}
+	// Round to cents so stored values stay consistent with the 2-decimal
+	// display used by clients, and never drift into binary-float noise.
+	amt, err := strconv.ParseFloat(clean, 64)
+	if err != nil || math.IsInf(amt, 0) || math.IsNaN(amt) {
+		return 0, errors.New("invalid amount")
+	}
+	return math.Round(amt*100) / 100, nil
 }
 
 func optionalString(s string) *string {

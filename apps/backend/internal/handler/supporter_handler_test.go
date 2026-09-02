@@ -52,6 +52,9 @@ func TestParseAmount(t *testing.T) {
 		{"empty", "", 0, true},
 		{"just dot", ".", 0, true},
 		{"no digits", "abc", 0, true},
+		{"oversized input rejected", strings.Repeat("9", 100), 0, true},
+		{"three decimals rounded to cents", "1.999", 2.00, false},
+		{"binary-float noise normalized", "0.30000000000000004", 0.30, false},
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
