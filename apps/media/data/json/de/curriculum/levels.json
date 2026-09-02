@@ -56,7 +56,14 @@
     "subtitle": "Fortgeschritten",
     "order": 5,
     "examType": "goethe",
-    "unitIds": []
+    "unitIds": [
+      "de-c1-u1",
+      "de-c1-u2",
+      "de-c1-u3",
+      "de-c1-u4",
+      "de-c1-u5",
+      "de-c1-u6"
+    ]
   },
   {
     "id": "de-c2",
@@ -65,6 +72,10 @@
     "subtitle": "Perfektion",
     "order": 6,
     "examType": "goethe",
-    "unitIds": []
+    "unitIds": [
+      "de-c2-u1",
+      "de-c2-u2",
+      "de-c2-u3"
+    ]
   }
 ]

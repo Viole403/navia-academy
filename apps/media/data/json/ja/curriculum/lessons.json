@@ -14,13 +14,13 @@
     ],
     "steps": [
       {
-        "type": "vocab",
+        "type": "vocabulary",
         "title": "Hiragana Characters",
         "content": "Learn basic Hiragana",
-        "vocabIds": [
-          "ja_hiragana_a",
-          "ja_hiragana_ka",
-          "ja_hiragana_sa"
+        "characterIds": [
+          "ja_kana_hi_a",
+          "ja_kana_hi_ka",
+          "ja_kana_hi_sa"
         ]
       }
     ],
@@ -73,7 +73,7 @@
         "title": "Introduction Phrases",
         "vocabIds": [
           "ja_watashi",
-          "ja_namae",
+          "ja__615",
           "ja_desu"
         ]
       }
@@ -124,7 +124,7 @@
         "vocabIds": [
           "ja_chichi",
           "ja_haha",
-          "ja_kazoku"
+          "ja__221"
         ]
       }
     ],
@@ -203,9 +203,9 @@
         "type": "vocab",
         "title": "Shopping Vocabulary",
         "vocabIds": [
-          "ja_kau",
-          "ja_ikura",
-          "ja_takai"
+          "ja__554",
+          "ja__16",
+          "ja__322"
         ]
       }
     ],

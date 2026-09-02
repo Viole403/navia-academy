@@ -160,5 +160,140 @@
     "subtitle_id": "Komunikasi Lanjutan",
     "description_en": "Express complex ideas and opinions.",
     "description_id": "Menyampaikan gagasan dan pendapat kompleks."
+  },
+  {
+    "id": "de-c1-u1",
+    "levelId": "de-c1",
+    "title": "Communication & Expression",
+    "subtitle": "Kommunikation & Ausdruck",
+    "order": 1,
+    "description": "Practice communication & expression.",
+    "lessonIds": [
+      "de-c1-u1-l1"
+    ],
+    "subtitle_en": "Kommunikation & Ausdruck",
+    "subtitle_id": "Communication & Expression",
+    "description_en": "Practice communication & expression.",
+    "description_id": "Latihan communication & expression."
+  },
+  {
+    "id": "de-c1-u2",
+    "levelId": "de-c1",
+    "title": "Academic & Formal",
+    "subtitle": "Akademisch & Formal",
+    "order": 2,
+    "description": "Practice academic & formal.",
+    "lessonIds": [
+      "de-c1-u2-l1"
+    ],
+    "subtitle_en": "Akademisch & Formal",
+    "subtitle_id": "Academic & Formal",
+    "description_en": "Practice academic & formal.",
+    "description_id": "Latihan academic & formal."
+  },
+  {
+    "id": "de-c1-u3",
+    "levelId": "de-c1",
+    "title": "Economy & Business",
+    "subtitle": "Wirtschaft & Business",
+    "order": 3,
+    "description": "Practice economy & business.",
+    "lessonIds": [
+      "de-c1-u3-l1"
+    ],
+    "subtitle_en": "Wirtschaft & Business",
+    "subtitle_id": "Economy & Business",
+    "description_en": "Practice economy & business.",
+    "description_id": "Latihan economy & business."
+  },
+  {
+    "id": "de-c1-u4",
+    "levelId": "de-c1",
+    "title": "Society & Culture",
+    "subtitle": "Gesellschaft & Kultur",
+    "order": 4,
+    "description": "Practice society & culture.",
+    "lessonIds": [
+      "de-c1-u4-l1"
+    ],
+    "subtitle_en": "Gesellschaft & Kultur",
+    "subtitle_id": "Society & Culture",
+    "description_en": "Practice society & culture.",
+    "description_id": "Latihan society & culture."
+  },
+  {
+    "id": "de-c1-u5",
+    "levelId": "de-c1",
+    "title": "Nature & Science",
+    "subtitle": "Natur & Wissenschaft",
+    "order": 5,
+    "description": "Practice nature & science.",
+    "lessonIds": [
+      "de-c1-u5-l1"
+    ],
+    "subtitle_en": "Natur & Wissenschaft",
+    "subtitle_id": "Nature & Science",
+    "description_en": "Practice nature & science.",
+    "description_id": "Latihan nature & science."
+  },
+  {
+    "id": "de-c1-u6",
+    "levelId": "de-c1",
+    "title": "Feelings & Character",
+    "subtitle": "Gefühle & Charakter",
+    "order": 6,
+    "description": "Practice feelings & character.",
+    "lessonIds": [
+      "de-c1-u6-l1"
+    ],
+    "subtitle_en": "Gefühle & Charakter",
+    "subtitle_id": "Feelings & Character",
+    "description_en": "Practice feelings & character.",
+    "description_id": "Latihan feelings & character."
+  },
+  {
+    "id": "de-c2-u1",
+    "levelId": "de-c2",
+    "title": "Communication & Expression",
+    "subtitle": "Kommunikation & Ausdruck",
+    "order": 1,
+    "description": "Practice communication & expression.",
+    "lessonIds": [
+      "de-c2-u1-l1"
+    ],
+    "subtitle_en": "Kommunikation & Ausdruck",
+    "subtitle_id": "Communication & Expression",
+    "description_en": "Practice communication & expression.",
+    "description_id": "Latihan communication & expression."
+  },
+  {
+    "id": "de-c2-u2",
+    "levelId": "de-c2",
+    "title": "Society & Culture",
+    "subtitle": "Gesellschaft & Kultur",
+    "order": 2,
+    "description": "Practice society & culture.",
+    "lessonIds": [
+      "de-c2-u2-l1"
+    ],
+    "subtitle_en": "Gesellschaft & Kultur",
+    "subtitle_id": "Society & Culture",
+    "description_en": "Practice society & culture.",
+    "description_id": "Latihan society & culture."
+  },
+  {
+    "id": "de-c2-u3",
+    "levelId": "de-c2",
+    "title": "Feelings & Character",
+    "subtitle": "Gefühle & Charakter",
+    "order": 3,
+    "description": "Practice feelings & character.",
+    "lessonIds": [
+      "de-c2-u3-l1"
+    ],
+    "subtitle_en": "Gefühle & Charakter",
+    "subtitle_id": "Feelings & Character",
+    "description_en": "Practice feelings & character.",
+    "description_id": "Latihan feelings & character."
   }
 ]
