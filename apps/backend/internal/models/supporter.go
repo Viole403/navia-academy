@@ -3,16 +3,17 @@ package models
 import "time"
 
 type Supporter struct {
-	ID         int64     `json:"id" db:"id"`
-	Name       string    `json:"name" db:"name"`
-	AvatarURL  *string   `json:"avatar_url,omitempty" db:"avatar_url"`
-	Platform   string    `json:"platform" db:"platform"`
-	Amount     *float64  `json:"-" db:"amount"`
-	Message    *string   `json:"message,omitempty" db:"message"`
-	IsPublic   bool      `json:"is_public" db:"is_public"`
-	ExternalID string    `json:"-" db:"external_id"`
-	DonatedAt  time.Time `json:"donated_at" db:"donated_at"`
-	CreatedAt  time.Time `json:"created_at" db:"created_at"`
+	ID          int64     `json:"id" db:"id"`
+	Name        string    `json:"name" db:"name"`
+	AvatarURL   *string   `json:"avatar_url,omitempty" db:"avatar_url"`
+	Platform    string    `json:"platform" db:"platform"`
+	AmountMinor *int64    `json:"amount_minor,omitempty" db:"amount_minor"` // smallest unit (USD: cents, IDR: rupiah)
+	Currency    string    `json:"currency,omitempty" db:"currency"`         // ISO 4217
+	Message     *string   `json:"message,omitempty" db:"message"`
+	IsPublic    bool      `json:"is_public" db:"is_public"`
+	ExternalID  string    `json:"-" db:"external_id"`
+	DonatedAt   time.Time `json:"donated_at" db:"donated_at"`
+	CreatedAt   time.Time `json:"created_at" db:"created_at"`
 }
 
 func (s Supporter) Public() PublicSupporter {

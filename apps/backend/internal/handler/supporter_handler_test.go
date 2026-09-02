@@ -37,40 +37,46 @@ func TestVerifyHMAC(t *testing.T) {
 	}
 }
 
-func TestParseAmount(t *testing.T) {
+func TestParseAmountMinor(t *testing.T) {
 	tests := []struct {
-		name    string
-		raw     string
-		want    float64
-		wantErr bool
+		name      string
+		raw       string
+		platform  string
+		want      int64
+		wantErr   bool
 	}{
-		{"plain number", "50000", 50000, false},
-		{"decimal", "12.50", 12.50, false},
-		{"comma as decimal (IDR)", "12,50", 12.50, false},
-		{"currency prefix", "Rp 50.000", 50.000, false},
-		{"comma is decimal separator, not thousands", "50,000", 50.000, false}, // "50.000" parses as 50
-		{"empty", "", 0, true},
-		{"just dot", ".", 0, true},
-		{"no digits", "abc", 0, true},
-		{"oversized input rejected", strings.Repeat("9", 100), 0, true},
-		{"three decimals rounded to cents", "1.999", 2.00, false},
-		{"binary-float noise normalized", "0.30000000000000004", 0.30, false},
+		// kofi (USD) — dollars → cents
+		{"kofi plain", "5.00", "kofi", 500, false},
+		{"kofi integer dollar", "5", "kofi", 500, false},
+		{"kofi comma decimal", "5,50", "kofi", 550, false},
+		{"kofi rounded cents", "1.999", "kofi", 200, false},
+		{"kofi binary drift normalized", "0.30000000000000004", "kofi", 30, false},
+		{"kofi oversized rejected", strings.Repeat("9", 100), "kofi", 0, true},
+		// trakteer (IDR) — whole rupiah
+		{"trakteer whole", "50000", "trakteer", 50000, false},
+		{"trakteer currency prefix", "Rp 50.000", "trakteer", 50, false}, // dot = decimal here
+		{"trakteer comma decimal", "50,50", "trakteer", 51, false},       // 50.5 → round 51
+		{"trakteer oversized rejected", strings.Repeat("9", 100), "trakteer", 0, true},
+		// shared guards
+		{"empty", "", "kofi", 0, true},
+		{"just dot", ".", "kofi", 0, true},
+		{"no digits", "abc", "kofi", 0, true},
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			got, err := parseAmount(tt.raw)
+			got, err := parseAmountMinor(tt.raw, tt.platform)
 			if tt.wantErr {
 				if err == nil {
-					t.Errorf("parseAmount(%q) = %v; want error", tt.raw, got)
+					t.Errorf("parseAmountMinor(%q, %q) = %d; want error", tt.raw, tt.platform, got)
 				}
 				return
 			}
 			if err != nil {
-				t.Errorf("parseAmount(%q) unexpected error: %v", tt.raw, err)
+				t.Errorf("parseAmountMinor(%q, %q) unexpected error: %v", tt.raw, tt.platform, err)
 				return
 			}
 			if got != tt.want {
-				t.Errorf("parseAmount(%q) = %v; want %v", tt.raw, got, tt.want)
+				t.Errorf("parseAmountMinor(%q, %q) = %d; want %d", tt.raw, tt.platform, got, tt.want)
 			}
 		})
 	}

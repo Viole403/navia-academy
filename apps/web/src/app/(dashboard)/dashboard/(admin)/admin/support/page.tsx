@@ -15,10 +15,23 @@ interface Supporter {
   id: number
   name: string
   platform: string
-  amount: number | null
+  amount_minor: number | null
+  currency: string | null
   is_public: boolean
   donated_at: string
   message: string | null
+}
+
+// formatAmount renders a minor-unit amount (USD cents / IDR rupiah) with its
+// currency symbol. Returns "—" when there is no recorded amount.
+function formatAmount(minor: number | null, currency: string | null): string {
+  if (minor === null || minor === undefined) return "—"
+  if (currency === "IDR") {
+    // Trakteer sends whole rupiah; minor == rupiah already.
+    return `Rp ${minor.toLocaleString("id-ID")}`
+  }
+  // Default USD: minor is cents.
+  return `$${(minor / 100).toFixed(2)}`
 }
 
 export default function AdminSupportPage() {
@@ -170,7 +183,7 @@ export default function AdminSupportPage() {
                       {s.platform}
                     </td>
                     <td className="px-4 py-3 text-ink">
-                      {s.amount !== null ? `$${s.amount.toFixed(2)}` : "—"}
+                      {formatAmount(s.amount_minor, s.currency)}
                     </td>
                     <td className="px-4 py-3">
                       <Badge tone={s.is_public ? "success" : "neutral"}>

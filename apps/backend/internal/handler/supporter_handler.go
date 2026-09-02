@@ -94,9 +94,10 @@ func (h *SupporterHandler) KofiWebhook(c *fiber.Ctx) error {
 		IsPublic:   p.IsPublic && strings.TrimSpace(p.FromName) != "",
 		ExternalID: "kofi:" + externalID,
 		DonatedAt:  donatedAt,
+		Currency:   "USD",
 	}
-	if amt, err := parseAmount(p.Amount); err == nil {
-		s.Amount = &amt
+	if amt, err := parseAmountMinor(p.Amount, "kofi"); err == nil {
+		s.AmountMinor = &amt
 	}
 	if err := h.supporterService.Upsert(c.Context(), s); err != nil {
 		return response.Error(c, fiber.StatusInternalServerError, "PROCESS_FAILED", err.Error())
@@ -149,11 +150,12 @@ func (h *SupporterHandler) TrakteerWebhook(c *fiber.Ctx) error {
 		IsPublic:   !p.IsAnonymous && name != "",
 		ExternalID: "trakteer:" + p.ID,
 		DonatedAt:  donatedAt,
+		Currency:   "IDR",
 	}
-	if amt, err := parseAmount(string(p.Amount)); err == nil {
-		s.Amount = &amt
-	} else if amt, err := parseAmount(p.AmountText); err == nil {
-		s.Amount = &amt
+	if amt, err := parseAmountMinor(string(p.Amount), "trakteer"); err == nil {
+		s.AmountMinor = &amt
+	} else if amt, err := parseAmountMinor(p.AmountText, "trakteer"); err == nil {
+		s.AmountMinor = &amt
 	}
 	if err := h.supporterService.Upsert(c.Context(), s); err != nil {
 		return response.Error(c, fiber.StatusInternalServerError, "PROCESS_FAILED", err.Error())
@@ -193,7 +195,11 @@ func verifyHMAC(signature string, body []byte, secret string) bool {
 	return hmac.Equal([]byte(strings.TrimSpace(signature)), []byte(expected))
 }
 
-func parseAmount(raw string) (float64, error) {
+// parseAmountMinor converts a donation amount string to integer minor units
+// for the given platform. The returned value is the smallest currency unit:
+//   - kofi (USD): amount in dollars → cents (×100, round)
+//   - trakteer (IDR): amount in whole rupiah → rupiah (×1, round)
+func parseAmountMinor(raw string, platform string) (int64, error) {
 	raw = strings.TrimSpace(raw)
 	if raw == "" {
 		return 0, errors.New("empty amount")
@@ -211,17 +217,23 @@ func parseAmount(raw string) (float64, error) {
 		return 0, errors.New("no digits in amount")
 	}
 	// Reject absurd input early (e.g. hundreds of digits): ParseFloat would
-	// return +Inf, which then fails to marshal to JSON / store in numeric.
+	// return +Inf, which then fails to marshal to JSON / store in DB.
 	if len(clean) > 32 {
 		return 0, errors.New("amount too long")
 	}
-	// Round to cents so stored values stay consistent with the 2-decimal
-	// display used by clients, and never drift into binary-float noise.
 	amt, err := strconv.ParseFloat(clean, 64)
 	if err != nil || math.IsInf(amt, 0) || math.IsNaN(amt) {
 		return 0, errors.New("invalid amount")
 	}
-	return math.Round(amt*100) / 100, nil
+
+	switch platform {
+	case "kofi":
+		// Ko-fi sends amounts in USD with decimal (e.g. "5.00").
+		return int64(math.Round(amt * 100)), nil
+	default:
+		// Trakteer sends amounts in whole IDR (e.g. "50000" → Rp 50,000).
+		return int64(math.Round(amt)), nil
+	}
 }
 
 func optionalString(s string) *string {
