@@ -181,7 +181,16 @@
     "order": 3,
     "examType": "jlpt",
     "unitIds": [
-      "ja-n3-u1"
+      "ja-n3-u1",
+      "u-ja-n3-w10",
+      "u-ja-n3-w2",
+      "u-ja-n3-w3",
+      "u-ja-n3-w4",
+      "u-ja-n3-w5",
+      "u-ja-n3-w6",
+      "u-ja-n3-w7",
+      "u-ja-n3-w8",
+      "u-ja-n3-w9"
     ]
   },
   {
@@ -192,7 +201,16 @@
     "order": 4,
     "examType": "jlpt",
     "unitIds": [
-      "ja-n2-u1"
+      "ja-n2-u1",
+      "u-ja-n2-w10",
+      "u-ja-n2-w2",
+      "u-ja-n2-w3",
+      "u-ja-n2-w4",
+      "u-ja-n2-w5",
+      "u-ja-n2-w6",
+      "u-ja-n2-w7",
+      "u-ja-n2-w8",
+      "u-ja-n2-w9"
     ]
   },
   {
@@ -202,6 +220,17 @@
     "subtitle": "上級",
     "order": 5,
     "examType": "jlpt",
-    "unitIds": []
+    "unitIds": [
+      "u-ja-n1-w1",
+      "u-ja-n1-w10",
+      "u-ja-n1-w2",
+      "u-ja-n1-w3",
+      "u-ja-n1-w4",
+      "u-ja-n1-w5",
+      "u-ja-n1-w6",
+      "u-ja-n1-w7",
+      "u-ja-n1-w8",
+      "u-ja-n1-w9"
+    ]
   }
 ]

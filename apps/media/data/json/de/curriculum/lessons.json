@@ -5726,5 +5726,1705 @@
     ],
     "subtitle_en": "Apprentice",
     "subtitle_id": "Apprentice"
+  },
+  {
+    "id": "u-de-b2-w2-l1",
+    "unitId": "u-de-b2-w2",
+    "title": "abbrechen",
+    "subtitle": "B2",
+    "order": 1,
+    "durationMin": 10,
+    "xp": 40,
+    "objectives": [
+      "Learn the word «abbrechen»",
+      "Read it in context"
+    ],
+    "steps": [
+      {
+        "type": "intro",
+        "title": "abbrechen",
+        "body": [
+          "Today we focus on the word «abbrechen» ().",
+          "It means: to cancel, to break off."
+        ]
+      },
+      {
+        "type": "explanation",
+        "title": "About «abbrechen»",
+        "body": [
+          "«abbrechen» () means «to cancel, to break off»."
+        ]
+      },
+      {
+        "type": "reading",
+        "title": "«abbrechen» in context",
+        "paragraphs": [
+          {
+            "text": "Wir müssen die Reise abbrechen.",
+            "hanzi": "Wir müssen die Reise abbrechen.",
+            "pinyin": "",
+            "romanization": "",
+            "translation": "We must cancel the trip.",
+            "translation_en": "We must cancel the trip.",
+            "translation_id": "We must cancel the trip."
+          }
+        ]
+      },
+      {
+        "type": "exercise",
+        "title": "Quick check",
+        "exercise": {
+          "id": "e-u-de-b2-w2-1",
+          "type": "multiple-choice",
+          "prompt": "What does «abbrechen» mean?",
+          "options": [
+            {
+              "id": "o0",
+              "label": "to cancel, to break off"
+            },
+            {
+              "id": "o1",
+              "label": "A different word"
+            },
+            {
+              "id": "o2",
+              "label": "Another meaning"
+            },
+            {
+              "id": "o3",
+              "label": "Not sure"
+            }
+          ],
+          "correct": "o0",
+          "skill": "reading",
+          "explanation": "«abbrechen» means «to cancel, to break off»."
+        }
+      },
+      {
+        "type": "summary",
+        "title": "Summary",
+        "body": [
+          "«abbrechen» () = to cancel, to break off.",
+          "Practice this word in the reading exercises."
+        ]
+      }
+    ],
+    "subtitle_en": "B2",
+    "subtitle_id": "B2"
+  },
+  {
+    "id": "u-de-b2-w3-l1",
+    "unitId": "u-de-b2-w3",
+    "title": "Abgeordneter",
+    "subtitle": "B2",
+    "order": 1,
+    "durationMin": 10,
+    "xp": 40,
+    "objectives": [
+      "Learn the word «Abgeordneter»",
+      "Read it in context"
+    ],
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Abgeordneter",
+        "body": [
+          "Today we focus on the word «Abgeordneter» ().",
+          "It means: member of parliament."
+        ]
+      },
+      {
+        "type": "explanation",
+        "title": "About «Abgeordneter»",
+        "body": [
+          "«Abgeordneter» () means «member of parliament»."
+        ]
+      },
+      {
+        "type": "reading",
+        "title": "«Abgeordneter» in context",
+        "paragraphs": [
+          {
+            "text": "Der Abgeordnete stimmt gegen das Gesetz.",
+            "hanzi": "Der Abgeordnete stimmt gegen das Gesetz.",
+            "pinyin": "",
+            "romanization": "",
+            "translation": "The MP votes against the law.",
+            "translation_en": "The MP votes against the law.",
+            "translation_id": "The MP votes against the law."
+          }
+        ]
+      },
+      {
+        "type": "exercise",
+        "title": "Quick check",
+        "exercise": {
+          "id": "e-u-de-b2-w3-1",
+          "type": "multiple-choice",
+          "prompt": "What does «Abgeordneter» mean?",
+          "options": [
+            {
+              "id": "o0",
+              "label": "member of parliament"
+            },
+            {
+              "id": "o1",
+              "label": "A different word"
+            },
+            {
+              "id": "o2",
+              "label": "Another meaning"
+            },
+            {
+              "id": "o3",
+              "label": "Not sure"
+            }
+          ],
+          "correct": "o0",
+          "skill": "reading",
+          "explanation": "«Abgeordneter» means «member of parliament»."
+        }
+      },
+      {
+        "type": "summary",
+        "title": "Summary",
+        "body": [
+          "«Abgeordneter» () = member of parliament.",
+          "Practice this word in the reading exercises."
+        ]
+      }
+    ],
+    "subtitle_en": "B2",
+    "subtitle_id": "B2"
+  },
+  {
+    "id": "u-de-b2-w4-l1",
+    "unitId": "u-de-b2-w4",
+    "title": "abhängen",
+    "subtitle": "B2",
+    "order": 1,
+    "durationMin": 10,
+    "xp": 40,
+    "objectives": [
+      "Learn the word «abhängen»",
+      "Read it in context"
+    ],
+    "steps": [
+      {
+        "type": "intro",
+        "title": "abhängen",
+        "body": [
+          "Today we focus on the word «abhängen» ().",
+          "It means: to depend."
+        ]
+      },
+      {
+        "type": "explanation",
+        "title": "About «abhängen»",
+        "body": [
+          "«abhängen» () means «to depend»."
+        ]
+      },
+      {
+        "type": "reading",
+        "title": "«abhängen» in context",
+        "paragraphs": [
+          {
+            "text": "Das hängt vom Wetter ab.",
+            "hanzi": "Das hängt vom Wetter ab.",
+            "pinyin": "",
+            "romanization": "",
+            "translation": "That depends on the weather.",
+            "translation_en": "That depends on the weather.",
+            "translation_id": "That depends on the weather."
+          }
+        ]
+      },
+      {
+        "type": "exercise",
+        "title": "Quick check",
+        "exercise": {
+          "id": "e-u-de-b2-w4-1",
+          "type": "multiple-choice",
+          "prompt": "What does «abhängen» mean?",
+          "options": [
+            {
+              "id": "o0",
+              "label": "to depend"
+            },
+            {
+              "id": "o1",
+              "label": "A different word"
+            },
+            {
+              "id": "o2",
+              "label": "Another meaning"
+            },
+            {
+              "id": "o3",
+              "label": "Not sure"
+            }
+          ],
+          "correct": "o0",
+          "skill": "reading",
+          "explanation": "«abhängen» means «to depend»."
+        }
+      },
+      {
+        "type": "summary",
+        "title": "Summary",
+        "body": [
+          "«abhängen» () = to depend.",
+          "Practice this word in the reading exercises."
+        ]
+      }
+    ],
+    "subtitle_en": "B2",
+    "subtitle_id": "B2"
+  },
+  {
+    "id": "u-de-b2-w5-l1",
+    "unitId": "u-de-b2-w5",
+    "title": "ablehnen",
+    "subtitle": "B2",
+    "order": 1,
+    "durationMin": 10,
+    "xp": 40,
+    "objectives": [
+      "Learn the word «ablehnen»",
+      "Read it in context"
+    ],
+    "steps": [
+      {
+        "type": "intro",
+        "title": "ablehnen",
+        "body": [
+          "Today we focus on the word «ablehnen» ().",
+          "It means: to reject, to decline."
+        ]
+      },
+      {
+        "type": "explanation",
+        "title": "About «ablehnen»",
+        "body": [
+          "«ablehnen» () means «to reject, to decline»."
+        ]
+      },
+      {
+        "type": "reading",
+        "title": "«ablehnen» in context",
+        "paragraphs": [
+          {
+            "text": "Sie lehnt das Angebot ab.",
+            "hanzi": "Sie lehnt das Angebot ab.",
+            "pinyin": "",
+            "romanization": "",
+            "translation": "She rejects the offer.",
+            "translation_en": "She rejects the offer.",
+            "translation_id": "She rejects the offer."
+          }
+        ]
+      },
+      {
+        "type": "exercise",
+        "title": "Quick check",
+        "exercise": {
+          "id": "e-u-de-b2-w5-1",
+          "type": "multiple-choice",
+          "prompt": "What does «ablehnen» mean?",
+          "options": [
+            {
+              "id": "o0",
+              "label": "to reject, to decline"
+            },
+            {
+              "id": "o1",
+              "label": "A different word"
+            },
+            {
+              "id": "o2",
+              "label": "Another meaning"
+            },
+            {
+              "id": "o3",
+              "label": "Not sure"
+            }
+          ],
+          "correct": "o0",
+          "skill": "reading",
+          "explanation": "«ablehnen» means «to reject, to decline»."
+        }
+      },
+      {
+        "type": "summary",
+        "title": "Summary",
+        "body": [
+          "«ablehnen» () = to reject, to decline.",
+          "Practice this word in the reading exercises."
+        ]
+      }
+    ],
+    "subtitle_en": "B2",
+    "subtitle_id": "B2"
+  },
+  {
+    "id": "u-de-b2-w6-l1",
+    "unitId": "u-de-b2-w6",
+    "title": "Ablehnung",
+    "subtitle": "B2",
+    "order": 1,
+    "durationMin": 10,
+    "xp": 40,
+    "objectives": [
+      "Learn the word «Ablehnung»",
+      "Read it in context"
+    ],
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Ablehnung",
+        "body": [
+          "Today we focus on the word «Ablehnung» ().",
+          "It means: rejection, refusal."
+        ]
+      },
+      {
+        "type": "explanation",
+        "title": "About «Ablehnung»",
+        "body": [
+          "«Ablehnung» () means «rejection, refusal»."
+        ]
+      },
+      {
+        "type": "reading",
+        "title": "«Ablehnung» in context",
+        "paragraphs": [
+          {
+            "text": "Die Ablehnung traf ihn hart.",
+            "hanzi": "Die Ablehnung traf ihn hart.",
+            "pinyin": "",
+            "romanization": "",
+            "translation": "The rejection hit him hard.",
+            "translation_en": "The rejection hit him hard.",
+            "translation_id": "The rejection hit him hard."
+          }
+        ]
+      },
+      {
+        "type": "exercise",
+        "title": "Quick check",
+        "exercise": {
+          "id": "e-u-de-b2-w6-1",
+          "type": "multiple-choice",
+          "prompt": "What does «Ablehnung» mean?",
+          "options": [
+            {
+              "id": "o0",
+              "label": "rejection, refusal"
+            },
+            {
+              "id": "o1",
+              "label": "A different word"
+            },
+            {
+              "id": "o2",
+              "label": "Another meaning"
+            },
+            {
+              "id": "o3",
+              "label": "Not sure"
+            }
+          ],
+          "correct": "o0",
+          "skill": "reading",
+          "explanation": "«Ablehnung» means «rejection, refusal»."
+        }
+      },
+      {
+        "type": "summary",
+        "title": "Summary",
+        "body": [
+          "«Ablehnung» () = rejection, refusal.",
+          "Practice this word in the reading exercises."
+        ]
+      }
+    ],
+    "subtitle_en": "B2",
+    "subtitle_id": "B2"
+  },
+  {
+    "id": "u-de-b2-w7-l1",
+    "unitId": "u-de-b2-w7",
+    "title": "Absicht",
+    "subtitle": "B2",
+    "order": 1,
+    "durationMin": 10,
+    "xp": 40,
+    "objectives": [
+      "Learn the word «Absicht»",
+      "Read it in context"
+    ],
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Absicht",
+        "body": [
+          "Today we focus on the word «Absicht» ().",
+          "It means: intention."
+        ]
+      },
+      {
+        "type": "explanation",
+        "title": "About «Absicht»",
+        "body": [
+          "«Absicht» () means «intention»."
+        ]
+      },
+      {
+        "type": "reading",
+        "title": "«Absicht» in context",
+        "paragraphs": [
+          {
+            "text": "Das war nicht meine Absicht.",
+            "hanzi": "Das war nicht meine Absicht.",
+            "pinyin": "",
+            "romanization": "",
+            "translation": "That was not my intention.",
+            "translation_en": "That was not my intention.",
+            "translation_id": "That was not my intention."
+          }
+        ]
+      },
+      {
+        "type": "exercise",
+        "title": "Quick check",
+        "exercise": {
+          "id": "e-u-de-b2-w7-1",
+          "type": "multiple-choice",
+          "prompt": "What does «Absicht» mean?",
+          "options": [
+            {
+              "id": "o0",
+              "label": "intention"
+            },
+            {
+              "id": "o1",
+              "label": "A different word"
+            },
+            {
+              "id": "o2",
+              "label": "Another meaning"
+            },
+            {
+              "id": "o3",
+              "label": "Not sure"
+            }
+          ],
+          "correct": "o0",
+          "skill": "reading",
+          "explanation": "«Absicht» means «intention»."
+        }
+      },
+      {
+        "type": "summary",
+        "title": "Summary",
+        "body": [
+          "«Absicht» () = intention.",
+          "Practice this word in the reading exercises."
+        ]
+      }
+    ],
+    "subtitle_en": "B2",
+    "subtitle_id": "B2"
+  },
+  {
+    "id": "u-de-b2-w8-l1",
+    "unitId": "u-de-b2-w8",
+    "title": "Aktie",
+    "subtitle": "B2",
+    "order": 1,
+    "durationMin": 10,
+    "xp": 40,
+    "objectives": [
+      "Learn the word «Aktie»",
+      "Read it in context"
+    ],
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Aktie",
+        "body": [
+          "Today we focus on the word «Aktie» ().",
+          "It means: share, stock."
+        ]
+      },
+      {
+        "type": "explanation",
+        "title": "About «Aktie»",
+        "body": [
+          "«Aktie» () means «share, stock»."
+        ]
+      },
+      {
+        "type": "reading",
+        "title": "«Aktie» in context",
+        "paragraphs": [
+          {
+            "text": "Die Aktie ist im Wert gestiegen.",
+            "hanzi": "Die Aktie ist im Wert gestiegen.",
+            "pinyin": "",
+            "romanization": "",
+            "translation": "The share has risen in value.",
+            "translation_en": "The share has risen in value.",
+            "translation_id": "The share has risen in value."
+          }
+        ]
+      },
+      {
+        "type": "exercise",
+        "title": "Quick check",
+        "exercise": {
+          "id": "e-u-de-b2-w8-1",
+          "type": "multiple-choice",
+          "prompt": "What does «Aktie» mean?",
+          "options": [
+            {
+              "id": "o0",
+              "label": "share, stock"
+            },
+            {
+              "id": "o1",
+              "label": "A different word"
+            },
+            {
+              "id": "o2",
+              "label": "Another meaning"
+            },
+            {
+              "id": "o3",
+              "label": "Not sure"
+            }
+          ],
+          "correct": "o0",
+          "skill": "reading",
+          "explanation": "«Aktie» means «share, stock»."
+        }
+      },
+      {
+        "type": "summary",
+        "title": "Summary",
+        "body": [
+          "«Aktie» () = share, stock.",
+          "Practice this word in the reading exercises."
+        ]
+      }
+    ],
+    "subtitle_en": "B2",
+    "subtitle_id": "B2"
+  },
+  {
+    "id": "u-de-b2-w9-l1",
+    "unitId": "u-de-b2-w9",
+    "title": "aktuell",
+    "subtitle": "B2",
+    "order": 1,
+    "durationMin": 10,
+    "xp": 40,
+    "objectives": [
+      "Learn the word «aktuell»",
+      "Read it in context"
+    ],
+    "steps": [
+      {
+        "type": "intro",
+        "title": "aktuell",
+        "body": [
+          "Today we focus on the word «aktuell» ().",
+          "It means: current, up to date."
+        ]
+      },
+      {
+        "type": "explanation",
+        "title": "About «aktuell»",
+        "body": [
+          "«aktuell» () means «current, up to date»."
+        ]
+      },
+      {
+        "type": "reading",
+        "title": "«aktuell» in context",
+        "paragraphs": [
+          {
+            "text": "Die Informationen sind aktuell.",
+            "hanzi": "Die Informationen sind aktuell.",
+            "pinyin": "",
+            "romanization": "",
+            "translation": "The information is current.",
+            "translation_en": "The information is current.",
+            "translation_id": "The information is current."
+          }
+        ]
+      },
+      {
+        "type": "exercise",
+        "title": "Quick check",
+        "exercise": {
+          "id": "e-u-de-b2-w9-1",
+          "type": "multiple-choice",
+          "prompt": "What does «aktuell» mean?",
+          "options": [
+            {
+              "id": "o0",
+              "label": "current, up to date"
+            },
+            {
+              "id": "o1",
+              "label": "A different word"
+            },
+            {
+              "id": "o2",
+              "label": "Another meaning"
+            },
+            {
+              "id": "o3",
+              "label": "Not sure"
+            }
+          ],
+          "correct": "o0",
+          "skill": "reading",
+          "explanation": "«aktuell» means «current, up to date»."
+        }
+      },
+      {
+        "type": "summary",
+        "title": "Summary",
+        "body": [
+          "«aktuell» () = current, up to date.",
+          "Practice this word in the reading exercises."
+        ]
+      }
+    ],
+    "subtitle_en": "B2",
+    "subtitle_id": "B2"
+  },
+  {
+    "id": "u-de-b2-w10-l1",
+    "unitId": "u-de-b2-w10",
+    "title": "Analyse",
+    "subtitle": "B2",
+    "order": 1,
+    "durationMin": 10,
+    "xp": 40,
+    "objectives": [
+      "Learn the word «Analyse»",
+      "Read it in context"
+    ],
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Analyse",
+        "body": [
+          "Today we focus on the word «Analyse» ().",
+          "It means: analysis."
+        ]
+      },
+      {
+        "type": "explanation",
+        "title": "About «Analyse»",
+        "body": [
+          "«Analyse» () means «analysis»."
+        ]
+      },
+      {
+        "type": "reading",
+        "title": "«Analyse» in context",
+        "paragraphs": [
+          {
+            "text": "Die Analyse der Daten dauert lange.",
+            "hanzi": "Die Analyse der Daten dauert lange.",
+            "pinyin": "",
+            "romanization": "",
+            "translation": "The analysis of the data takes a long time.",
+            "translation_en": "The analysis of the data takes a long time.",
+            "translation_id": "The analysis of the data takes a long time."
+          }
+        ]
+      },
+      {
+        "type": "exercise",
+        "title": "Quick check",
+        "exercise": {
+          "id": "e-u-de-b2-w10-1",
+          "type": "multiple-choice",
+          "prompt": "What does «Analyse» mean?",
+          "options": [
+            {
+              "id": "o0",
+              "label": "analysis"
+            },
+            {
+              "id": "o1",
+              "label": "A different word"
+            },
+            {
+              "id": "o2",
+              "label": "Another meaning"
+            },
+            {
+              "id": "o3",
+              "label": "Not sure"
+            }
+          ],
+          "correct": "o0",
+          "skill": "reading",
+          "explanation": "«Analyse» means «analysis»."
+        }
+      },
+      {
+        "type": "summary",
+        "title": "Summary",
+        "body": [
+          "«Analyse» () = analysis.",
+          "Practice this word in the reading exercises."
+        ]
+      }
+    ],
+    "subtitle_en": "B2",
+    "subtitle_id": "B2"
+  },
+  {
+    "id": "u-de-c1-w7-l1",
+    "unitId": "u-de-c1-w7",
+    "title": "abbauen",
+    "subtitle": "C1",
+    "order": 1,
+    "durationMin": 10,
+    "xp": 40,
+    "objectives": [
+      "Learn the word «abbauen»",
+      "Read it in context"
+    ],
+    "steps": [
+      {
+        "type": "intro",
+        "title": "abbauen",
+        "body": [
+          "Today we focus on the word «abbauen» ().",
+          "It means: to reduce, to dismantle."
+        ]
+      },
+      {
+        "type": "explanation",
+        "title": "About «abbauen»",
+        "body": [
+          "«abbauen» () means «to reduce, to dismantle»."
+        ]
+      },
+      {
+        "type": "reading",
+        "title": "«abbauen» in context",
+        "paragraphs": [
+          {
+            "text": "Wir bauen die Schulden ab.",
+            "hanzi": "Wir bauen die Schulden ab.",
+            "pinyin": "",
+            "romanization": "",
+            "translation": "We reduce the debts.",
+            "translation_en": "We reduce the debts.",
+            "translation_id": "We reduce the debts."
+          }
+        ]
+      },
+      {
+        "type": "exercise",
+        "title": "Quick check",
+        "exercise": {
+          "id": "e-u-de-c1-w7-1",
+          "type": "multiple-choice",
+          "prompt": "What does «abbauen» mean?",
+          "options": [
+            {
+              "id": "o0",
+              "label": "to reduce, to dismantle"
+            },
+            {
+              "id": "o1",
+              "label": "A different word"
+            },
+            {
+              "id": "o2",
+              "label": "Another meaning"
+            },
+            {
+              "id": "o3",
+              "label": "Not sure"
+            }
+          ],
+          "correct": "o0",
+          "skill": "reading",
+          "explanation": "«abbauen» means «to reduce, to dismantle»."
+        }
+      },
+      {
+        "type": "summary",
+        "title": "Summary",
+        "body": [
+          "«abbauen» () = to reduce, to dismantle.",
+          "Practice this word in the reading exercises."
+        ]
+      }
+    ],
+    "subtitle_en": "C1",
+    "subtitle_id": "C1"
+  },
+  {
+    "id": "u-de-c1-w8-l1",
+    "unitId": "u-de-c1-w8",
+    "title": "Abgeordnete",
+    "subtitle": "C1",
+    "order": 1,
+    "durationMin": 10,
+    "xp": 40,
+    "objectives": [
+      "Learn the word «Abgeordnete»",
+      "Read it in context"
+    ],
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Abgeordnete",
+        "body": [
+          "Today we focus on the word «Abgeordnete» ().",
+          "It means: representative, deputy."
+        ]
+      },
+      {
+        "type": "explanation",
+        "title": "About «Abgeordnete»",
+        "body": [
+          "«Abgeordnete» () means «representative, deputy»."
+        ]
+      },
+      {
+        "type": "reading",
+        "title": "«Abgeordnete» in context",
+        "paragraphs": [
+          {
+            "text": "Die Abgeordneten stimmen ab.",
+            "hanzi": "Die Abgeordneten stimmen ab.",
+            "pinyin": "",
+            "romanization": "",
+            "translation": "The representatives vote.",
+            "translation_en": "The representatives vote.",
+            "translation_id": "The representatives vote."
+          }
+        ]
+      },
+      {
+        "type": "exercise",
+        "title": "Quick check",
+        "exercise": {
+          "id": "e-u-de-c1-w8-1",
+          "type": "multiple-choice",
+          "prompt": "What does «Abgeordnete» mean?",
+          "options": [
+            {
+              "id": "o0",
+              "label": "representative, deputy"
+            },
+            {
+              "id": "o1",
+              "label": "A different word"
+            },
+            {
+              "id": "o2",
+              "label": "Another meaning"
+            },
+            {
+              "id": "o3",
+              "label": "Not sure"
+            }
+          ],
+          "correct": "o0",
+          "skill": "reading",
+          "explanation": "«Abgeordnete» means «representative, deputy»."
+        }
+      },
+      {
+        "type": "summary",
+        "title": "Summary",
+        "body": [
+          "«Abgeordnete» () = representative, deputy.",
+          "Practice this word in the reading exercises."
+        ]
+      }
+    ],
+    "subtitle_en": "C1",
+    "subtitle_id": "C1"
+  },
+  {
+    "id": "u-de-c1-w9-l1",
+    "unitId": "u-de-c1-w9",
+    "title": "abgrenzen",
+    "subtitle": "C1",
+    "order": 1,
+    "durationMin": 10,
+    "xp": 40,
+    "objectives": [
+      "Learn the word «abgrenzen»",
+      "Read it in context"
+    ],
+    "steps": [
+      {
+        "type": "intro",
+        "title": "abgrenzen",
+        "body": [
+          "Today we focus on the word «abgrenzen» ().",
+          "It means: to delimit, to demarcate."
+        ]
+      },
+      {
+        "type": "explanation",
+        "title": "About «abgrenzen»",
+        "body": [
+          "«abgrenzen» () means «to delimit, to demarcate»."
+        ]
+      },
+      {
+        "type": "reading",
+        "title": "«abgrenzen» in context",
+        "paragraphs": [
+          {
+            "text": "Man muss die Begriffe voneinander abgrenzen.",
+            "hanzi": "Man muss die Begriffe voneinander abgrenzen.",
+            "pinyin": "",
+            "romanization": "",
+            "translation": "One must delimit the terms from each other.",
+            "translation_en": "One must delimit the terms from each other.",
+            "translation_id": "One must delimit the terms from each other."
+          }
+        ]
+      },
+      {
+        "type": "exercise",
+        "title": "Quick check",
+        "exercise": {
+          "id": "e-u-de-c1-w9-1",
+          "type": "multiple-choice",
+          "prompt": "What does «abgrenzen» mean?",
+          "options": [
+            {
+              "id": "o0",
+              "label": "to delimit, to demarcate"
+            },
+            {
+              "id": "o1",
+              "label": "A different word"
+            },
+            {
+              "id": "o2",
+              "label": "Another meaning"
+            },
+            {
+              "id": "o3",
+              "label": "Not sure"
+            }
+          ],
+          "correct": "o0",
+          "skill": "reading",
+          "explanation": "«abgrenzen» means «to delimit, to demarcate»."
+        }
+      },
+      {
+        "type": "summary",
+        "title": "Summary",
+        "body": [
+          "«abgrenzen» () = to delimit, to demarcate.",
+          "Practice this word in the reading exercises."
+        ]
+      }
+    ],
+    "subtitle_en": "C1",
+    "subtitle_id": "C1"
+  },
+  {
+    "id": "u-de-c1-w10-l1",
+    "unitId": "u-de-c1-w10",
+    "title": "Abgrenzung",
+    "subtitle": "C1",
+    "order": 1,
+    "durationMin": 10,
+    "xp": 40,
+    "objectives": [
+      "Learn the word «Abgrenzung»",
+      "Read it in context"
+    ],
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Abgrenzung",
+        "body": [
+          "Today we focus on the word «Abgrenzung» ().",
+          "It means: delineation, boundary."
+        ]
+      },
+      {
+        "type": "explanation",
+        "title": "About «Abgrenzung»",
+        "body": [
+          "«Abgrenzung» () means «delineation, boundary»."
+        ]
+      },
+      {
+        "type": "reading",
+        "title": "«Abgrenzung» in context",
+        "paragraphs": [
+          {
+            "text": "Die Abgrenzung der Begriffe ist schwierig.",
+            "hanzi": "Die Abgrenzung der Begriffe ist schwierig.",
+            "pinyin": "",
+            "romanization": "",
+            "translation": "The delimitation of the terms is difficult.",
+            "translation_en": "The delimitation of the terms is difficult.",
+            "translation_id": "The delimitation of the terms is difficult."
+          }
+        ]
+      },
+      {
+        "type": "exercise",
+        "title": "Quick check",
+        "exercise": {
+          "id": "e-u-de-c1-w10-1",
+          "type": "multiple-choice",
+          "prompt": "What does «Abgrenzung» mean?",
+          "options": [
+            {
+              "id": "o0",
+              "label": "delineation, boundary"
+            },
+            {
+              "id": "o1",
+              "label": "A different word"
+            },
+            {
+              "id": "o2",
+              "label": "Another meaning"
+            },
+            {
+              "id": "o3",
+              "label": "Not sure"
+            }
+          ],
+          "correct": "o0",
+          "skill": "reading",
+          "explanation": "«Abgrenzung» means «delineation, boundary»."
+        }
+      },
+      {
+        "type": "summary",
+        "title": "Summary",
+        "body": [
+          "«Abgrenzung» () = delineation, boundary.",
+          "Practice this word in the reading exercises."
+        ]
+      }
+    ],
+    "subtitle_en": "C1",
+    "subtitle_id": "C1"
+  },
+  {
+    "id": "u-de-c2-w4-l1",
+    "unitId": "u-de-c2-w4",
+    "title": "abebben",
+    "subtitle": "C2",
+    "order": 1,
+    "durationMin": 10,
+    "xp": 40,
+    "objectives": [
+      "Learn the word «abebben»",
+      "Read it in context"
+    ],
+    "steps": [
+      {
+        "type": "intro",
+        "title": "abebben",
+        "body": [
+          "Today we focus on the word «abebben» ().",
+          "It means: to subside, to ebb away."
+        ]
+      },
+      {
+        "type": "explanation",
+        "title": "About «abebben»",
+        "body": [
+          "«abebben» () means «to subside, to ebb away»."
+        ]
+      },
+      {
+        "type": "reading",
+        "title": "«abebben» in context",
+        "paragraphs": [
+          {
+            "text": "Das Interesse ebbte langsam ab.",
+            "hanzi": "Das Interesse ebbte langsam ab.",
+            "pinyin": "",
+            "romanization": "",
+            "translation": "Interest slowly ebbed away.",
+            "translation_en": "Interest slowly ebbed away.",
+            "translation_id": "Interest slowly ebbed away."
+          }
+        ]
+      },
+      {
+        "type": "exercise",
+        "title": "Quick check",
+        "exercise": {
+          "id": "e-u-de-c2-w4-1",
+          "type": "multiple-choice",
+          "prompt": "What does «abebben» mean?",
+          "options": [
+            {
+              "id": "o0",
+              "label": "to subside, to ebb away"
+            },
+            {
+              "id": "o1",
+              "label": "A different word"
+            },
+            {
+              "id": "o2",
+              "label": "Another meaning"
+            },
+            {
+              "id": "o3",
+              "label": "Not sure"
+            }
+          ],
+          "correct": "o0",
+          "skill": "reading",
+          "explanation": "«abebben» means «to subside, to ebb away»."
+        }
+      },
+      {
+        "type": "summary",
+        "title": "Summary",
+        "body": [
+          "«abebben» () = to subside, to ebb away.",
+          "Practice this word in the reading exercises."
+        ]
+      }
+    ],
+    "subtitle_en": "C2",
+    "subtitle_id": "C2"
+  },
+  {
+    "id": "u-de-c2-w5-l1",
+    "unitId": "u-de-c2-w5",
+    "title": "abflauen",
+    "subtitle": "C2",
+    "order": 1,
+    "durationMin": 10,
+    "xp": 40,
+    "objectives": [
+      "Learn the word «abflauen»",
+      "Read it in context"
+    ],
+    "steps": [
+      {
+        "type": "intro",
+        "title": "abflauen",
+        "body": [
+          "Today we focus on the word «abflauen» ().",
+          "It means: to die down, to abate."
+        ]
+      },
+      {
+        "type": "explanation",
+        "title": "About «abflauen»",
+        "body": [
+          "«abflauen» () means «to die down, to abate»."
+        ]
+      },
+      {
+        "type": "reading",
+        "title": "«abflauen» in context",
+        "paragraphs": [
+          {
+            "text": "Der Sturm flaute ab.",
+            "hanzi": "Der Sturm flaute ab.",
+            "pinyin": "",
+            "romanization": "",
+            "translation": "The storm died down.",
+            "translation_en": "The storm died down.",
+            "translation_id": "The storm died down."
+          }
+        ]
+      },
+      {
+        "type": "exercise",
+        "title": "Quick check",
+        "exercise": {
+          "id": "e-u-de-c2-w5-1",
+          "type": "multiple-choice",
+          "prompt": "What does «abflauen» mean?",
+          "options": [
+            {
+              "id": "o0",
+              "label": "to die down, to abate"
+            },
+            {
+              "id": "o1",
+              "label": "A different word"
+            },
+            {
+              "id": "o2",
+              "label": "Another meaning"
+            },
+            {
+              "id": "o3",
+              "label": "Not sure"
+            }
+          ],
+          "correct": "o0",
+          "skill": "reading",
+          "explanation": "«abflauen» means «to die down, to abate»."
+        }
+      },
+      {
+        "type": "summary",
+        "title": "Summary",
+        "body": [
+          "«abflauen» () = to die down, to abate.",
+          "Practice this word in the reading exercises."
+        ]
+      }
+    ],
+    "subtitle_en": "C2",
+    "subtitle_id": "C2"
+  },
+  {
+    "id": "u-de-c2-w6-l1",
+    "unitId": "u-de-c2-w6",
+    "title": "abgründig",
+    "subtitle": "C2",
+    "order": 1,
+    "durationMin": 10,
+    "xp": 40,
+    "objectives": [
+      "Learn the word «abgründig»",
+      "Read it in context"
+    ],
+    "steps": [
+      {
+        "type": "intro",
+        "title": "abgründig",
+        "body": [
+          "Today we focus on the word «abgründig» ().",
+          "It means: abyssal, profound (dark)."
+        ]
+      },
+      {
+        "type": "explanation",
+        "title": "About «abgründig»",
+        "body": [
+          "«abgründig» () means «abyssal, profound (dark)»."
+        ]
+      },
+      {
+        "type": "reading",
+        "title": "«abgründig» in context",
+        "paragraphs": [
+          {
+            "text": "Sein Humor war abgründig.",
+            "hanzi": "Sein Humor war abgründig.",
+            "pinyin": "",
+            "romanization": "",
+            "translation": "His humor was dark and profound.",
+            "translation_en": "His humor was dark and profound.",
+            "translation_id": "His humor was dark and profound."
+          }
+        ]
+      },
+      {
+        "type": "exercise",
+        "title": "Quick check",
+        "exercise": {
+          "id": "e-u-de-c2-w6-1",
+          "type": "multiple-choice",
+          "prompt": "What does «abgründig» mean?",
+          "options": [
+            {
+              "id": "o0",
+              "label": "abyssal, profound (dark)"
+            },
+            {
+              "id": "o1",
+              "label": "A different word"
+            },
+            {
+              "id": "o2",
+              "label": "Another meaning"
+            },
+            {
+              "id": "o3",
+              "label": "Not sure"
+            }
+          ],
+          "correct": "o0",
+          "skill": "reading",
+          "explanation": "«abgründig» means «abyssal, profound (dark)»."
+        }
+      },
+      {
+        "type": "summary",
+        "title": "Summary",
+        "body": [
+          "«abgründig» () = abyssal, profound (dark).",
+          "Practice this word in the reading exercises."
+        ]
+      }
+    ],
+    "subtitle_en": "C2",
+    "subtitle_id": "C2"
+  },
+  {
+    "id": "u-de-c2-w7-l1",
+    "unitId": "u-de-c2-w7",
+    "title": "abmildern",
+    "subtitle": "C2",
+    "order": 1,
+    "durationMin": 10,
+    "xp": 40,
+    "objectives": [
+      "Learn the word «abmildern»",
+      "Read it in context"
+    ],
+    "steps": [
+      {
+        "type": "intro",
+        "title": "abmildern",
+        "body": [
+          "Today we focus on the word «abmildern» ().",
+          "It means: to temper, to mitigate."
+        ]
+      },
+      {
+        "type": "explanation",
+        "title": "About «abmildern»",
+        "body": [
+          "«abmildern» () means «to temper, to mitigate»."
+        ]
+      },
+      {
+        "type": "reading",
+        "title": "«abmildern» in context",
+        "paragraphs": [
+          {
+            "text": "Er milderte seine Kritik ab.",
+            "hanzi": "Er milderte seine Kritik ab.",
+            "pinyin": "",
+            "romanization": "",
+            "translation": "He tempered his criticism.",
+            "translation_en": "He tempered his criticism.",
+            "translation_id": "He tempered his criticism."
+          }
+        ]
+      },
+      {
+        "type": "exercise",
+        "title": "Quick check",
+        "exercise": {
+          "id": "e-u-de-c2-w7-1",
+          "type": "multiple-choice",
+          "prompt": "What does «abmildern» mean?",
+          "options": [
+            {
+              "id": "o0",
+              "label": "to temper, to mitigate"
+            },
+            {
+              "id": "o1",
+              "label": "A different word"
+            },
+            {
+              "id": "o2",
+              "label": "Another meaning"
+            },
+            {
+              "id": "o3",
+              "label": "Not sure"
+            }
+          ],
+          "correct": "o0",
+          "skill": "reading",
+          "explanation": "«abmildern» means «to temper, to mitigate»."
+        }
+      },
+      {
+        "type": "summary",
+        "title": "Summary",
+        "body": [
+          "«abmildern» () = to temper, to mitigate.",
+          "Practice this word in the reading exercises."
+        ]
+      }
+    ],
+    "subtitle_en": "C2",
+    "subtitle_id": "C2"
+  },
+  {
+    "id": "u-de-c2-w8-l1",
+    "unitId": "u-de-c2-w8",
+    "title": "abnutzen",
+    "subtitle": "C2",
+    "order": 1,
+    "durationMin": 10,
+    "xp": 40,
+    "objectives": [
+      "Learn the word «abnutzen»",
+      "Read it in context"
+    ],
+    "steps": [
+      {
+        "type": "intro",
+        "title": "abnutzen",
+        "body": [
+          "Today we focus on the word «abnutzen» ().",
+          "It means: to wear out, to use up."
+        ]
+      },
+      {
+        "type": "explanation",
+        "title": "About «abnutzen»",
+        "body": [
+          "«abnutzen» () means «to wear out, to use up»."
+        ]
+      },
+      {
+        "type": "reading",
+        "title": "«abnutzen» in context",
+        "paragraphs": [
+          {
+            "text": "Die Bremsen haben sich abgenutzt.",
+            "hanzi": "Die Bremsen haben sich abgenutzt.",
+            "pinyin": "",
+            "romanization": "",
+            "translation": "The brakes have worn out.",
+            "translation_en": "The brakes have worn out.",
+            "translation_id": "The brakes have worn out."
+          }
+        ]
+      },
+      {
+        "type": "exercise",
+        "title": "Quick check",
+        "exercise": {
+          "id": "e-u-de-c2-w8-1",
+          "type": "multiple-choice",
+          "prompt": "What does «abnutzen» mean?",
+          "options": [
+            {
+              "id": "o0",
+              "label": "to wear out, to use up"
+            },
+            {
+              "id": "o1",
+              "label": "A different word"
+            },
+            {
+              "id": "o2",
+              "label": "Another meaning"
+            },
+            {
+              "id": "o3",
+              "label": "Not sure"
+            }
+          ],
+          "correct": "o0",
+          "skill": "reading",
+          "explanation": "«abnutzen» means «to wear out, to use up»."
+        }
+      },
+      {
+        "type": "summary",
+        "title": "Summary",
+        "body": [
+          "«abnutzen» () = to wear out, to use up.",
+          "Practice this word in the reading exercises."
+        ]
+      }
+    ],
+    "subtitle_en": "C2",
+    "subtitle_id": "C2"
+  },
+  {
+    "id": "u-de-c2-w9-l1",
+    "unitId": "u-de-c2-w9",
+    "title": "Abnutzung",
+    "subtitle": "C2",
+    "order": 1,
+    "durationMin": 10,
+    "xp": 40,
+    "objectives": [
+      "Learn the word «Abnutzung»",
+      "Read it in context"
+    ],
+    "steps": [
+      {
+        "type": "intro",
+        "title": "Abnutzung",
+        "body": [
+          "Today we focus on the word «Abnutzung» ().",
+          "It means: wear and tear."
+        ]
+      },
+      {
+        "type": "explanation",
+        "title": "About «Abnutzung»",
+        "body": [
+          "«Abnutzung» () means «wear and tear»."
+        ]
+      },
+      {
+        "type": "reading",
+        "title": "«Abnutzung» in context",
+        "paragraphs": [
+          {
+            "text": "Die Abnutzung der Maschine ist sichtbar.",
+            "hanzi": "Die Abnutzung der Maschine ist sichtbar.",
+            "pinyin": "",
+            "romanization": "",
+            "translation": "The wear and tear of the machine is visible.",
+            "translation_en": "The wear and tear of the machine is visible.",
+            "translation_id": "The wear and tear of the machine is visible."
+          }
+        ]
+      },
+      {
+        "type": "exercise",
+        "title": "Quick check",
+        "exercise": {
+          "id": "e-u-de-c2-w9-1",
+          "type": "multiple-choice",
+          "prompt": "What does «Abnutzung» mean?",
+          "options": [
+            {
+              "id": "o0",
+              "label": "wear and tear"
+            },
+            {
+              "id": "o1",
+              "label": "A different word"
+            },
+            {
+              "id": "o2",
+              "label": "Another meaning"
+            },
+            {
+              "id": "o3",
+              "label": "Not sure"
+            }
+          ],
+          "correct": "o0",
+          "skill": "reading",
+          "explanation": "«Abnutzung» means «wear and tear»."
+        }
+      },
+      {
+        "type": "summary",
+        "title": "Summary",
+        "body": [
+          "«Abnutzung» () = wear and tear.",
+          "Practice this word in the reading exercises."
+        ]
+      }
+    ],
+    "subtitle_en": "C2",
+    "subtitle_id": "C2"
+  },
+  {
+    "id": "u-de-c2-w10-l1",
+    "unitId": "u-de-c2-w10",
+    "title": "abstecken",
+    "subtitle": "C2",
+    "order": 1,
+    "durationMin": 10,
+    "xp": 40,
+    "objectives": [
+      "Learn the word «abstecken»",
+      "Read it in context"
+    ],
+    "steps": [
+      {
+        "type": "intro",
+        "title": "abstecken",
+        "body": [
+          "Today we focus on the word «abstecken» ().",
+          "It means: to stake out, to mark off."
+        ]
+      },
+      {
+        "type": "explanation",
+        "title": "About «abstecken»",
+        "body": [
+          "«abstecken» () means «to stake out, to mark off»."
+        ]
+      },
+      {
+        "type": "reading",
+        "title": "«abstecken» in context",
+        "paragraphs": [
+          {
+            "text": "Sie steckten das Gelände ab.",
+            "hanzi": "Sie steckten das Gelände ab.",
+            "pinyin": "",
+            "romanization": "",
+            "translation": "They marked off the grounds.",
+            "translation_en": "They marked off the grounds.",
+            "translation_id": "They marked off the grounds."
+          }
+        ]
+      },
+      {
+        "type": "exercise",
+        "title": "Quick check",
+        "exercise": {
+          "id": "e-u-de-c2-w10-1",
+          "type": "multiple-choice",
+          "prompt": "What does «abstecken» mean?",
+          "options": [
+            {
+              "id": "o0",
+              "label": "to stake out, to mark off"
+            },
+            {
+              "id": "o1",
+              "label": "A different word"
+            },
+            {
+              "id": "o2",
+              "label": "Another meaning"
+            },
+            {
+              "id": "o3",
+              "label": "Not sure"
+            }
+          ],
+          "correct": "o0",
+          "skill": "reading",
+          "explanation": "«abstecken» means «to stake out, to mark off»."
+        }
+      },
+      {
+        "type": "summary",
+        "title": "Summary",
+        "body": [
+          "«abstecken» () = to stake out, to mark off.",
+          "Practice this word in the reading exercises."
+        ]
+      }
+    ],
+    "subtitle_en": "C2",
+    "subtitle_id": "C2"
   }
 ]

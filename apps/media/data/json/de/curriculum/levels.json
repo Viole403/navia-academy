@@ -203,7 +203,16 @@
     "order": 4,
     "examType": "goethe",
     "unitIds": [
-      "de-b2-u1"
+      "de-b2-u1",
+      "u-de-b2-w10",
+      "u-de-b2-w2",
+      "u-de-b2-w3",
+      "u-de-b2-w4",
+      "u-de-b2-w5",
+      "u-de-b2-w6",
+      "u-de-b2-w7",
+      "u-de-b2-w8",
+      "u-de-b2-w9"
     ]
   },
   {
@@ -219,7 +228,11 @@
       "de-c1-u3",
       "de-c1-u4",
       "de-c1-u5",
-      "de-c1-u6"
+      "de-c1-u6",
+      "u-de-c1-w10",
+      "u-de-c1-w7",
+      "u-de-c1-w8",
+      "u-de-c1-w9"
     ]
   },
   {
@@ -232,7 +245,14 @@
     "unitIds": [
       "de-c2-u1",
       "de-c2-u2",
-      "de-c2-u3"
+      "de-c2-u3",
+      "u-de-c2-w10",
+      "u-de-c2-w4",
+      "u-de-c2-w5",
+      "u-de-c2-w6",
+      "u-de-c2-w7",
+      "u-de-c2-w8",
+      "u-de-c2-w9"
     ]
   }
 ]

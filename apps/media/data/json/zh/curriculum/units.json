@@ -1013,5 +1013,1880 @@
     "subtitle_id": "Work 3",
     "description_en": "Practice work 3.",
     "description_id": "Latihan work 3."
+  },
+  {
+    "id": "u-zh-hsk2-w2",
+    "levelId": "lv-hsk2",
+    "title": "HSK 2 — 累",
+    "subtitle": "HSK 2",
+    "order": 2,
+    "description": "Learn the word 累.",
+    "lessonIds": [
+      "u-zh-hsk2-w2-l1"
+    ],
+    "subtitle_en": "HSK 2",
+    "subtitle_id": "HSK 2",
+    "description_en": "Learn the word 累.",
+    "description_id": "Pelajari kata 累."
+  },
+  {
+    "id": "u-zh-hsk2-w3",
+    "levelId": "lv-hsk2",
+    "title": "HSK 2 — 爱好",
+    "subtitle": "HSK 2",
+    "order": 3,
+    "description": "Learn the word 爱好.",
+    "lessonIds": [
+      "u-zh-hsk2-w3-l1"
+    ],
+    "subtitle_en": "HSK 2",
+    "subtitle_id": "HSK 2",
+    "description_en": "Learn the word 爱好.",
+    "description_id": "Pelajari kata 爱好."
+  },
+  {
+    "id": "u-zh-hsk2-w4",
+    "levelId": "lv-hsk2",
+    "title": "HSK 2 — 白色",
+    "subtitle": "HSK 2",
+    "order": 4,
+    "description": "Learn the word 白色.",
+    "lessonIds": [
+      "u-zh-hsk2-w4-l1"
+    ],
+    "subtitle_en": "HSK 2",
+    "subtitle_id": "HSK 2",
+    "description_en": "Learn the word 白色.",
+    "description_id": "Pelajari kata 白色."
+  },
+  {
+    "id": "u-zh-hsk2-w5",
+    "levelId": "lv-hsk2",
+    "title": "HSK 2 — 班",
+    "subtitle": "HSK 2",
+    "order": 5,
+    "description": "Learn the word 班.",
+    "lessonIds": [
+      "u-zh-hsk2-w5-l1"
+    ],
+    "subtitle_en": "HSK 2",
+    "subtitle_id": "HSK 2",
+    "description_en": "Learn the word 班.",
+    "description_id": "Pelajari kata 班."
+  },
+  {
+    "id": "u-zh-hsk2-w6",
+    "levelId": "lv-hsk2",
+    "title": "HSK 2 — 帮忙",
+    "subtitle": "HSK 2",
+    "order": 6,
+    "description": "Learn the word 帮忙.",
+    "lessonIds": [
+      "u-zh-hsk2-w6-l1"
+    ],
+    "subtitle_en": "HSK 2",
+    "subtitle_id": "HSK 2",
+    "description_en": "Learn the word 帮忙.",
+    "description_id": "Pelajari kata 帮忙."
+  },
+  {
+    "id": "u-zh-hsk2-w7",
+    "levelId": "lv-hsk2",
+    "title": "HSK 2 — 包",
+    "subtitle": "HSK 2",
+    "order": 7,
+    "description": "Learn the word 包.",
+    "lessonIds": [
+      "u-zh-hsk2-w7-l1"
+    ],
+    "subtitle_en": "HSK 2",
+    "subtitle_id": "HSK 2",
+    "description_en": "Learn the word 包.",
+    "description_id": "Pelajari kata 包."
+  },
+  {
+    "id": "u-zh-hsk2-w8",
+    "levelId": "lv-hsk2",
+    "title": "HSK 2 — 本子",
+    "subtitle": "HSK 2",
+    "order": 8,
+    "description": "Learn the word 本子.",
+    "lessonIds": [
+      "u-zh-hsk2-w8-l1"
+    ],
+    "subtitle_en": "HSK 2",
+    "subtitle_id": "HSK 2",
+    "description_en": "Learn the word 本子.",
+    "description_id": "Pelajari kata 本子."
+  },
+  {
+    "id": "u-zh-hsk2-w9",
+    "levelId": "lv-hsk2",
+    "title": "HSK 2 — 比",
+    "subtitle": "HSK 2",
+    "order": 9,
+    "description": "Learn the word 比.",
+    "lessonIds": [
+      "u-zh-hsk2-w9-l1"
+    ],
+    "subtitle_en": "HSK 2",
+    "subtitle_id": "HSK 2",
+    "description_en": "Learn the word 比.",
+    "description_id": "Pelajari kata 比."
+  },
+  {
+    "id": "u-zh-hsk2-w10",
+    "levelId": "lv-hsk2",
+    "title": "HSK 2 — 笔",
+    "subtitle": "HSK 2",
+    "order": 10,
+    "description": "Learn the word 笔.",
+    "lessonIds": [
+      "u-zh-hsk2-w10-l1"
+    ],
+    "subtitle_en": "HSK 2",
+    "subtitle_id": "HSK 2",
+    "description_en": "Learn the word 笔.",
+    "description_id": "Pelajari kata 笔."
+  },
+  {
+    "id": "u-zh-hsk3-w2",
+    "levelId": "lv-hsk3",
+    "title": "HSK 3 — 大概",
+    "subtitle": "HSK 3",
+    "order": 2,
+    "description": "Learn the word 大概.",
+    "lessonIds": [
+      "u-zh-hsk3-w2-l1"
+    ],
+    "subtitle_en": "HSK 3",
+    "subtitle_id": "HSK 3",
+    "description_en": "Learn the word 大概.",
+    "description_id": "Pelajari kata 大概."
+  },
+  {
+    "id": "u-zh-hsk3-w3",
+    "levelId": "lv-hsk3",
+    "title": "HSK 3 — 了解",
+    "subtitle": "HSK 3",
+    "order": 3,
+    "description": "Learn the word 了解.",
+    "lessonIds": [
+      "u-zh-hsk3-w3-l1"
+    ],
+    "subtitle_en": "HSK 3",
+    "subtitle_id": "HSK 3",
+    "description_en": "Learn the word 了解.",
+    "description_id": "Pelajari kata 了解."
+  },
+  {
+    "id": "u-zh-hsk3-w4",
+    "levelId": "lv-hsk3",
+    "title": "HSK 3 — 文化",
+    "subtitle": "HSK 3",
+    "order": 4,
+    "description": "Learn the word 文化.",
+    "lessonIds": [
+      "u-zh-hsk3-w4-l1"
+    ],
+    "subtitle_en": "HSK 3",
+    "subtitle_id": "HSK 3",
+    "description_en": "Learn the word 文化.",
+    "description_id": "Pelajari kata 文化."
+  },
+  {
+    "id": "u-zh-hsk3-w5",
+    "levelId": "lv-hsk3",
+    "title": "HSK 3 — 历史",
+    "subtitle": "HSK 3",
+    "order": 5,
+    "description": "Learn the word 历史.",
+    "lessonIds": [
+      "u-zh-hsk3-w5-l1"
+    ],
+    "subtitle_en": "HSK 3",
+    "subtitle_id": "HSK 3",
+    "description_en": "Learn the word 历史.",
+    "description_id": "Pelajari kata 历史."
+  },
+  {
+    "id": "u-zh-hsk3-w6",
+    "levelId": "lv-hsk3",
+    "title": "HSK 3 — 需要",
+    "subtitle": "HSK 3",
+    "order": 6,
+    "description": "Learn the word 需要.",
+    "lessonIds": [
+      "u-zh-hsk3-w6-l1"
+    ],
+    "subtitle_en": "HSK 3",
+    "subtitle_id": "HSK 3",
+    "description_en": "Learn the word 需要.",
+    "description_id": "Pelajari kata 需要."
+  },
+  {
+    "id": "u-zh-hsk3-w7",
+    "levelId": "lv-hsk3",
+    "title": "HSK 3 — 帮助",
+    "subtitle": "HSK 3",
+    "order": 7,
+    "description": "Learn the word 帮助.",
+    "lessonIds": [
+      "u-zh-hsk3-w7-l1"
+    ],
+    "subtitle_en": "HSK 3",
+    "subtitle_id": "HSK 3",
+    "description_en": "Learn the word 帮助.",
+    "description_id": "Pelajari kata 帮助."
+  },
+  {
+    "id": "u-zh-hsk3-w8",
+    "levelId": "lv-hsk3",
+    "title": "HSK 3 — 决定",
+    "subtitle": "HSK 3",
+    "order": 8,
+    "description": "Learn the word 决定.",
+    "lessonIds": [
+      "u-zh-hsk3-w8-l1"
+    ],
+    "subtitle_en": "HSK 3",
+    "subtitle_id": "HSK 3",
+    "description_en": "Learn the word 决定.",
+    "description_id": "Pelajari kata 决定."
+  },
+  {
+    "id": "u-zh-hsk3-w9",
+    "levelId": "lv-hsk3",
+    "title": "HSK 3 — 重要",
+    "subtitle": "HSK 3",
+    "order": 9,
+    "description": "Learn the word 重要.",
+    "lessonIds": [
+      "u-zh-hsk3-w9-l1"
+    ],
+    "subtitle_en": "HSK 3",
+    "subtitle_id": "HSK 3",
+    "description_en": "Learn the word 重要.",
+    "description_id": "Pelajari kata 重要."
+  },
+  {
+    "id": "u-zh-hsk3-w10",
+    "levelId": "lv-hsk3",
+    "title": "HSK 3 — 爱人",
+    "subtitle": "HSK 3",
+    "order": 10,
+    "description": "Learn the word 爱人.",
+    "lessonIds": [
+      "u-zh-hsk3-w10-l1"
+    ],
+    "subtitle_en": "HSK 3",
+    "subtitle_id": "HSK 3",
+    "description_en": "Learn the word 爱人.",
+    "description_id": "Pelajari kata 爱人."
+  },
+  {
+    "id": "u-zh-hsk4-w2",
+    "levelId": "lv-hsk4",
+    "title": "HSK 4 — 爱情",
+    "subtitle": "HSK 4",
+    "order": 2,
+    "description": "Learn the word 爱情.",
+    "lessonIds": [
+      "u-zh-hsk4-w2-l1"
+    ],
+    "subtitle_en": "HSK 4",
+    "subtitle_id": "HSK 4",
+    "description_en": "Learn the word 爱情.",
+    "description_id": "Pelajari kata 爱情."
+  },
+  {
+    "id": "u-zh-hsk4-w3",
+    "levelId": "lv-hsk4",
+    "title": "HSK 4 — 爱心",
+    "subtitle": "HSK 4",
+    "order": 3,
+    "description": "Learn the word 爱心.",
+    "lessonIds": [
+      "u-zh-hsk4-w3-l1"
+    ],
+    "subtitle_en": "HSK 4",
+    "subtitle_id": "HSK 4",
+    "description_en": "Learn the word 爱心.",
+    "description_id": "Pelajari kata 爱心."
+  },
+  {
+    "id": "u-zh-hsk4-w4",
+    "levelId": "lv-hsk4",
+    "title": "HSK 4 — 按",
+    "subtitle": "HSK 4",
+    "order": 4,
+    "description": "Learn the word 按.",
+    "lessonIds": [
+      "u-zh-hsk4-w4-l1"
+    ],
+    "subtitle_en": "HSK 4",
+    "subtitle_id": "HSK 4",
+    "description_en": "Learn the word 按.",
+    "description_id": "Pelajari kata 按."
+  },
+  {
+    "id": "u-zh-hsk4-w5",
+    "levelId": "lv-hsk4",
+    "title": "HSK 4 — 安检",
+    "subtitle": "HSK 4",
+    "order": 5,
+    "description": "Learn the word 安检.",
+    "lessonIds": [
+      "u-zh-hsk4-w5-l1"
+    ],
+    "subtitle_en": "HSK 4",
+    "subtitle_id": "HSK 4",
+    "description_en": "Learn the word 安检.",
+    "description_id": "Pelajari kata 安检."
+  },
+  {
+    "id": "u-zh-hsk4-w6",
+    "levelId": "lv-hsk4",
+    "title": "HSK 4 — 安排",
+    "subtitle": "HSK 4",
+    "order": 6,
+    "description": "Learn the word 安排.",
+    "lessonIds": [
+      "u-zh-hsk4-w6-l1"
+    ],
+    "subtitle_en": "HSK 4",
+    "subtitle_id": "HSK 4",
+    "description_en": "Learn the word 安排.",
+    "description_id": "Pelajari kata 安排."
+  },
+  {
+    "id": "u-zh-hsk4-w7",
+    "levelId": "lv-hsk4",
+    "title": "HSK 4 — 按时",
+    "subtitle": "HSK 4",
+    "order": 7,
+    "description": "Learn the word 按时.",
+    "lessonIds": [
+      "u-zh-hsk4-w7-l1"
+    ],
+    "subtitle_en": "HSK 4",
+    "subtitle_id": "HSK 4",
+    "description_en": "Learn the word 按时.",
+    "description_id": "Pelajari kata 按时."
+  },
+  {
+    "id": "u-zh-hsk4-w8",
+    "levelId": "lv-hsk4",
+    "title": "HSK 4 — 按照",
+    "subtitle": "HSK 4",
+    "order": 8,
+    "description": "Learn the word 按照.",
+    "lessonIds": [
+      "u-zh-hsk4-w8-l1"
+    ],
+    "subtitle_en": "HSK 4",
+    "subtitle_id": "HSK 4",
+    "description_en": "Learn the word 按照.",
+    "description_id": "Pelajari kata 按照."
+  },
+  {
+    "id": "u-zh-hsk4-w9",
+    "levelId": "lv-hsk4",
+    "title": "HSK 4 — 白酒",
+    "subtitle": "HSK 4",
+    "order": 9,
+    "description": "Learn the word 白酒.",
+    "lessonIds": [
+      "u-zh-hsk4-w9-l1"
+    ],
+    "subtitle_en": "HSK 4",
+    "subtitle_id": "HSK 4",
+    "description_en": "Learn the word 白酒.",
+    "description_id": "Pelajari kata 白酒."
+  },
+  {
+    "id": "u-zh-hsk4-w10",
+    "levelId": "lv-hsk4",
+    "title": "HSK 4 — 棒",
+    "subtitle": "HSK 4",
+    "order": 10,
+    "description": "Learn the word 棒.",
+    "lessonIds": [
+      "u-zh-hsk4-w10-l1"
+    ],
+    "subtitle_en": "HSK 4",
+    "subtitle_id": "HSK 4",
+    "description_en": "Learn the word 棒.",
+    "description_id": "Pelajari kata 棒."
+  },
+  {
+    "id": "u-zh-hsk5-w2",
+    "levelId": "lv-hsk5",
+    "title": "HSK 5 — 批",
+    "subtitle": "HSK 5",
+    "order": 2,
+    "description": "Learn the word 批.",
+    "lessonIds": [
+      "u-zh-hsk5-w2-l1"
+    ],
+    "subtitle_en": "HSK 5",
+    "subtitle_id": "HSK 5",
+    "description_en": "Learn the word 批.",
+    "description_id": "Pelajari kata 批."
+  },
+  {
+    "id": "u-zh-hsk5-w3",
+    "levelId": "lv-hsk5",
+    "title": "HSK 5 — 一代",
+    "subtitle": "HSK 5",
+    "order": 3,
+    "description": "Learn the word 一代.",
+    "lessonIds": [
+      "u-zh-hsk5-w3-l1"
+    ],
+    "subtitle_en": "HSK 5",
+    "subtitle_id": "HSK 5",
+    "description_en": "Learn the word 一代.",
+    "description_id": "Pelajari kata 一代."
+  },
+  {
+    "id": "u-zh-hsk5-w4",
+    "levelId": "lv-hsk5",
+    "title": "HSK 5 — 一旦",
+    "subtitle": "HSK 5",
+    "order": 4,
+    "description": "Learn the word 一旦.",
+    "lessonIds": [
+      "u-zh-hsk5-w4-l1"
+    ],
+    "subtitle_en": "HSK 5",
+    "subtitle_id": "HSK 5",
+    "description_en": "Learn the word 一旦.",
+    "description_id": "Pelajari kata 一旦."
+  },
+  {
+    "id": "u-zh-hsk5-w5",
+    "levelId": "lv-hsk5",
+    "title": "HSK 5 — 一次性",
+    "subtitle": "HSK 5",
+    "order": 5,
+    "description": "Learn the word 一次性.",
+    "lessonIds": [
+      "u-zh-hsk5-w5-l1"
+    ],
+    "subtitle_en": "HSK 5",
+    "subtitle_id": "HSK 5",
+    "description_en": "Learn the word 一次性.",
+    "description_id": "Pelajari kata 一次性."
+  },
+  {
+    "id": "u-zh-hsk5-w6",
+    "levelId": "lv-hsk5",
+    "title": "HSK 5 — 一致",
+    "subtitle": "HSK 5",
+    "order": 6,
+    "description": "Learn the word 一致.",
+    "lessonIds": [
+      "u-zh-hsk5-w6-l1"
+    ],
+    "subtitle_en": "HSK 5",
+    "subtitle_id": "HSK 5",
+    "description_en": "Learn the word 一致.",
+    "description_id": "Pelajari kata 一致."
+  },
+  {
+    "id": "u-zh-hsk5-w7",
+    "levelId": "lv-hsk5",
+    "title": "HSK 5 — 一路",
+    "subtitle": "HSK 5",
+    "order": 7,
+    "description": "Learn the word 一路.",
+    "lessonIds": [
+      "u-zh-hsk5-w7-l1"
+    ],
+    "subtitle_en": "HSK 5",
+    "subtitle_id": "HSK 5",
+    "description_en": "Learn the word 一路.",
+    "description_id": "Pelajari kata 一路."
+  },
+  {
+    "id": "u-zh-hsk5-w8",
+    "levelId": "lv-hsk5",
+    "title": "HSK 5 — 一路顺风",
+    "subtitle": "HSK 5",
+    "order": 8,
+    "description": "Learn the word 一路顺风.",
+    "lessonIds": [
+      "u-zh-hsk5-w8-l1"
+    ],
+    "subtitle_en": "HSK 5",
+    "subtitle_id": "HSK 5",
+    "description_en": "Learn the word 一路顺风.",
+    "description_id": "Pelajari kata 一路顺风."
+  },
+  {
+    "id": "u-zh-hsk5-w9",
+    "levelId": "lv-hsk5",
+    "title": "HSK 5 — 万一",
+    "subtitle": "HSK 5",
+    "order": 9,
+    "description": "Learn the word 万一.",
+    "lessonIds": [
+      "u-zh-hsk5-w9-l1"
+    ],
+    "subtitle_en": "HSK 5",
+    "subtitle_id": "HSK 5",
+    "description_en": "Learn the word 万一.",
+    "description_id": "Pelajari kata 万一."
+  },
+  {
+    "id": "u-zh-hsk5-w10",
+    "levelId": "lv-hsk5",
+    "title": "HSK 5 — 上下",
+    "subtitle": "HSK 5",
+    "order": 10,
+    "description": "Learn the word 上下.",
+    "lessonIds": [
+      "u-zh-hsk5-w10-l1"
+    ],
+    "subtitle_en": "HSK 5",
+    "subtitle_id": "HSK 5",
+    "description_en": "Learn the word 上下.",
+    "description_id": "Pelajari kata 上下."
+  },
+  {
+    "id": "u-zh-hsk6-w2",
+    "levelId": "lv-hsk6",
+    "title": "HSK 6 — 一一",
+    "subtitle": "HSK 6",
+    "order": 2,
+    "description": "Learn the word 一一.",
+    "lessonIds": [
+      "u-zh-hsk6-w2-l1"
+    ],
+    "subtitle_en": "HSK 6",
+    "subtitle_id": "HSK 6",
+    "description_en": "Learn the word 一一.",
+    "description_id": "Pelajari kata 一一."
+  },
+  {
+    "id": "u-zh-hsk6-w3",
+    "levelId": "lv-hsk6",
+    "title": "HSK 6 — 一再",
+    "subtitle": "HSK 6",
+    "order": 3,
+    "description": "Learn the word 一再.",
+    "lessonIds": [
+      "u-zh-hsk6-w3-l1"
+    ],
+    "subtitle_en": "HSK 6",
+    "subtitle_id": "HSK 6",
+    "description_en": "Learn the word 一再.",
+    "description_id": "Pelajari kata 一再."
+  },
+  {
+    "id": "u-zh-hsk6-w4",
+    "levelId": "lv-hsk6",
+    "title": "HSK 6 — 一口气",
+    "subtitle": "HSK 6",
+    "order": 4,
+    "description": "Learn the word 一口气.",
+    "lessonIds": [
+      "u-zh-hsk6-w4-l1"
+    ],
+    "subtitle_en": "HSK 6",
+    "subtitle_id": "HSK 6",
+    "description_en": "Learn the word 一口气.",
+    "description_id": "Pelajari kata 一口气."
+  },
+  {
+    "id": "u-zh-hsk6-w5",
+    "levelId": "lv-hsk6",
+    "title": "HSK 6 — 一同",
+    "subtitle": "HSK 6",
+    "order": 5,
+    "description": "Learn the word 一同.",
+    "lessonIds": [
+      "u-zh-hsk6-w5-l1"
+    ],
+    "subtitle_en": "HSK 6",
+    "subtitle_id": "HSK 6",
+    "description_en": "Learn the word 一同.",
+    "description_id": "Pelajari kata 一同."
+  },
+  {
+    "id": "u-zh-hsk6-w6",
+    "levelId": "lv-hsk6",
+    "title": "HSK 6 — 一向",
+    "subtitle": "HSK 6",
+    "order": 6,
+    "description": "Learn the word 一向.",
+    "lessonIds": [
+      "u-zh-hsk6-w6-l1"
+    ],
+    "subtitle_en": "HSK 6",
+    "subtitle_id": "HSK 6",
+    "description_en": "Learn the word 一向.",
+    "description_id": "Pelajari kata 一向."
+  },
+  {
+    "id": "u-zh-hsk6-w7",
+    "levelId": "lv-hsk6",
+    "title": "HSK 6 — 一帆风顺",
+    "subtitle": "HSK 6",
+    "order": 7,
+    "description": "Learn the word 一帆风顺.",
+    "lessonIds": [
+      "u-zh-hsk6-w7-l1"
+    ],
+    "subtitle_en": "HSK 6",
+    "subtitle_id": "HSK 6",
+    "description_en": "Learn the word 一帆风顺.",
+    "description_id": "Pelajari kata 一帆风顺."
+  },
+  {
+    "id": "u-zh-hsk6-w8",
+    "levelId": "lv-hsk6",
+    "title": "HSK 6 — 一带",
+    "subtitle": "HSK 6",
+    "order": 8,
+    "description": "Learn the word 一带.",
+    "lessonIds": [
+      "u-zh-hsk6-w8-l1"
+    ],
+    "subtitle_en": "HSK 6",
+    "subtitle_id": "HSK 6",
+    "description_en": "Learn the word 一带.",
+    "description_id": "Pelajari kata 一带."
+  },
+  {
+    "id": "u-zh-hsk6-w9",
+    "levelId": "lv-hsk6",
+    "title": "HSK 6 — 一律",
+    "subtitle": "HSK 6",
+    "order": 9,
+    "description": "Learn the word 一律.",
+    "lessonIds": [
+      "u-zh-hsk6-w9-l1"
+    ],
+    "subtitle_en": "HSK 6",
+    "subtitle_id": "HSK 6",
+    "description_en": "Learn the word 一律.",
+    "description_id": "Pelajari kata 一律."
+  },
+  {
+    "id": "u-zh-hsk6-w10",
+    "levelId": "lv-hsk6",
+    "title": "HSK 6 — 一时",
+    "subtitle": "HSK 6",
+    "order": 10,
+    "description": "Learn the word 一时.",
+    "lessonIds": [
+      "u-zh-hsk6-w10-l1"
+    ],
+    "subtitle_en": "HSK 6",
+    "subtitle_id": "HSK 6",
+    "description_en": "Learn the word 一时.",
+    "description_id": "Pelajari kata 一时."
+  },
+  {
+    "id": "u-zh-hsk79-w1",
+    "levelId": "lv-hsk79",
+    "title": "HSK 79 — 一丝不苟",
+    "subtitle": "HSK 79",
+    "order": 1,
+    "description": "Learn the word 一丝不苟.",
+    "lessonIds": [
+      "u-zh-hsk79-w1-l1"
+    ],
+    "subtitle_en": "HSK 79",
+    "subtitle_id": "HSK 79",
+    "description_en": "Learn the word 一丝不苟.",
+    "description_id": "Pelajari kata 一丝不苟."
+  },
+  {
+    "id": "u-zh-hsk79-w2",
+    "levelId": "lv-hsk79",
+    "title": "HSK 79 — 一举",
+    "subtitle": "HSK 79",
+    "order": 2,
+    "description": "Learn the word 一举.",
+    "lessonIds": [
+      "u-zh-hsk79-w2-l1"
+    ],
+    "subtitle_en": "HSK 79",
+    "subtitle_id": "HSK 79",
+    "description_en": "Learn the word 一举.",
+    "description_id": "Pelajari kata 一举."
+  },
+  {
+    "id": "u-zh-hsk79-w3",
+    "levelId": "lv-hsk79",
+    "title": "HSK 79 — 一举一动",
+    "subtitle": "HSK 79",
+    "order": 3,
+    "description": "Learn the word 一举一动.",
+    "lessonIds": [
+      "u-zh-hsk79-w3-l1"
+    ],
+    "subtitle_en": "HSK 79",
+    "subtitle_id": "HSK 79",
+    "description_en": "Learn the word 一举一动.",
+    "description_id": "Pelajari kata 一举一动."
+  },
+  {
+    "id": "u-zh-hsk79-w4",
+    "levelId": "lv-hsk79",
+    "title": "HSK 79 — 一举两得",
+    "subtitle": "HSK 79",
+    "order": 4,
+    "description": "Learn the word 一举两得.",
+    "lessonIds": [
+      "u-zh-hsk79-w4-l1"
+    ],
+    "subtitle_en": "HSK 79",
+    "subtitle_id": "HSK 79",
+    "description_en": "Learn the word 一举两得.",
+    "description_id": "Pelajari kata 一举两得."
+  },
+  {
+    "id": "u-zh-hsk79-w5",
+    "levelId": "lv-hsk79",
+    "title": "HSK 79 — 一事无成",
+    "subtitle": "HSK 79",
+    "order": 5,
+    "description": "Learn the word 一事无成.",
+    "lessonIds": [
+      "u-zh-hsk79-w5-l1"
+    ],
+    "subtitle_en": "HSK 79",
+    "subtitle_id": "HSK 79",
+    "description_en": "Learn the word 一事无成.",
+    "description_id": "Pelajari kata 一事无成."
+  },
+  {
+    "id": "u-zh-hsk79-w6",
+    "levelId": "lv-hsk79",
+    "title": "HSK 79 — 一体",
+    "subtitle": "HSK 79",
+    "order": 6,
+    "description": "Learn the word 一体.",
+    "lessonIds": [
+      "u-zh-hsk79-w6-l1"
+    ],
+    "subtitle_en": "HSK 79",
+    "subtitle_id": "HSK 79",
+    "description_en": "Learn the word 一体.",
+    "description_id": "Pelajari kata 一体."
+  },
+  {
+    "id": "u-zh-hsk79-w7",
+    "levelId": "lv-hsk79",
+    "title": "HSK 79 — 一动不动",
+    "subtitle": "HSK 79",
+    "order": 7,
+    "description": "Learn the word 一动不动.",
+    "lessonIds": [
+      "u-zh-hsk79-w7-l1"
+    ],
+    "subtitle_en": "HSK 79",
+    "subtitle_id": "HSK 79",
+    "description_en": "Learn the word 一动不动.",
+    "description_id": "Pelajari kata 一动不动."
+  },
+  {
+    "id": "u-zh-hsk79-w8",
+    "levelId": "lv-hsk79",
+    "title": "HSK 79 — 一味",
+    "subtitle": "HSK 79",
+    "order": 8,
+    "description": "Learn the word 一味.",
+    "lessonIds": [
+      "u-zh-hsk79-w8-l1"
+    ],
+    "subtitle_en": "HSK 79",
+    "subtitle_id": "HSK 79",
+    "description_en": "Learn the word 一味.",
+    "description_id": "Pelajari kata 一味."
+  },
+  {
+    "id": "u-zh-hsk79-w9",
+    "levelId": "lv-hsk79",
+    "title": "HSK 79 — 一塌糊涂",
+    "subtitle": "HSK 79",
+    "order": 9,
+    "description": "Learn the word 一塌糊涂.",
+    "lessonIds": [
+      "u-zh-hsk79-w9-l1"
+    ],
+    "subtitle_en": "HSK 79",
+    "subtitle_id": "HSK 79",
+    "description_en": "Learn the word 一塌糊涂.",
+    "description_id": "Pelajari kata 一塌糊涂."
+  },
+  {
+    "id": "u-zh-hsk79-w10",
+    "levelId": "lv-hsk79",
+    "title": "HSK 79 — 一声不吭",
+    "subtitle": "HSK 79",
+    "order": 10,
+    "description": "Learn the word 一声不吭.",
+    "lessonIds": [
+      "u-zh-hsk79-w10-l1"
+    ],
+    "subtitle_en": "HSK 79",
+    "subtitle_id": "HSK 79",
+    "description_en": "Learn the word 一声不吭.",
+    "description_id": "Pelajari kata 一声不吭."
+  },
+  {
+    "id": "u-zh-tocfl-novice1-w3",
+    "levelId": "lv-tocfl-novice1",
+    "title": "TOCFL Novice 1 — 高興",
+    "subtitle": "TOCFL Novice 1",
+    "order": 3,
+    "description": "Learn the word 高興.",
+    "lessonIds": [
+      "u-zh-tocfl-novice1-w3-l1"
+    ],
+    "subtitle_en": "TOCFL Novice 1",
+    "subtitle_id": "TOCFL Novice 1",
+    "description_en": "Learn the word 高興.",
+    "description_id": "Pelajari kata 高興."
+  },
+  {
+    "id": "u-zh-tocfl-novice1-w4",
+    "levelId": "lv-tocfl-novice1",
+    "title": "TOCFL Novice 1 — 朋友",
+    "subtitle": "TOCFL Novice 1",
+    "order": 4,
+    "description": "Learn the word 朋友.",
+    "lessonIds": [
+      "u-zh-tocfl-novice1-w4-l1"
+    ],
+    "subtitle_en": "TOCFL Novice 1",
+    "subtitle_id": "TOCFL Novice 1",
+    "description_en": "Learn the word 朋友.",
+    "description_id": "Pelajari kata 朋友."
+  },
+  {
+    "id": "u-zh-tocfl-novice1-w5",
+    "levelId": "lv-tocfl-novice1",
+    "title": "TOCFL Novice 1 — 台灣",
+    "subtitle": "TOCFL Novice 1",
+    "order": 5,
+    "description": "Learn the word 台灣.",
+    "lessonIds": [
+      "u-zh-tocfl-novice1-w5-l1"
+    ],
+    "subtitle_en": "TOCFL Novice 1",
+    "subtitle_id": "TOCFL Novice 1",
+    "description_en": "Learn the word 台灣.",
+    "description_id": "Pelajari kata 台灣."
+  },
+  {
+    "id": "u-zh-tocfl-novice1-w6",
+    "levelId": "lv-tocfl-novice1",
+    "title": "TOCFL Novice 1 — 學校",
+    "subtitle": "TOCFL Novice 1",
+    "order": 6,
+    "description": "Learn the word 學校.",
+    "lessonIds": [
+      "u-zh-tocfl-novice1-w6-l1"
+    ],
+    "subtitle_en": "TOCFL Novice 1",
+    "subtitle_id": "TOCFL Novice 1",
+    "description_en": "Learn the word 學校.",
+    "description_id": "Pelajari kata 學校."
+  },
+  {
+    "id": "u-zh-tocfl-novice1-w7",
+    "levelId": "lv-tocfl-novice1",
+    "title": "TOCFL Novice 1 — 再見",
+    "subtitle": "TOCFL Novice 1",
+    "order": 7,
+    "description": "Learn the word 再見.",
+    "lessonIds": [
+      "u-zh-tocfl-novice1-w7-l1"
+    ],
+    "subtitle_en": "TOCFL Novice 1",
+    "subtitle_id": "TOCFL Novice 1",
+    "description_en": "Learn the word 再見.",
+    "description_id": "Pelajari kata 再見."
+  },
+  {
+    "id": "u-zh-tocfl-novice1-w8",
+    "levelId": "lv-tocfl-novice1",
+    "title": "TOCFL Novice 1 — 早上",
+    "subtitle": "TOCFL Novice 1",
+    "order": 8,
+    "description": "Learn the word 早上.",
+    "lessonIds": [
+      "u-zh-tocfl-novice1-w8-l1"
+    ],
+    "subtitle_en": "TOCFL Novice 1",
+    "subtitle_id": "TOCFL Novice 1",
+    "description_en": "Learn the word 早上.",
+    "description_id": "Pelajari kata 早上."
+  },
+  {
+    "id": "u-zh-tocfl-novice1-w9",
+    "levelId": "lv-tocfl-novice1",
+    "title": "TOCFL Novice 1 — 八",
+    "subtitle": "TOCFL Novice 1",
+    "order": 9,
+    "description": "Learn the word 八.",
+    "lessonIds": [
+      "u-zh-tocfl-novice1-w9-l1"
+    ],
+    "subtitle_en": "TOCFL Novice 1",
+    "subtitle_id": "TOCFL Novice 1",
+    "description_en": "Learn the word 八.",
+    "description_id": "Pelajari kata 八."
+  },
+  {
+    "id": "u-zh-tocfl-novice1-w10",
+    "levelId": "lv-tocfl-novice1",
+    "title": "TOCFL Novice 1 — 爸",
+    "subtitle": "TOCFL Novice 1",
+    "order": 10,
+    "description": "Learn the word 爸.",
+    "lessonIds": [
+      "u-zh-tocfl-novice1-w10-l1"
+    ],
+    "subtitle_en": "TOCFL Novice 1",
+    "subtitle_id": "TOCFL Novice 1",
+    "description_en": "Learn the word 爸.",
+    "description_id": "Pelajari kata 爸."
+  },
+  {
+    "id": "u-zh-tocfl-novice2-w3",
+    "levelId": "lv-tocfl-novice2",
+    "title": "TOCFL Novice 2 — 點心",
+    "subtitle": "TOCFL Novice 2",
+    "order": 3,
+    "description": "Learn the word 點心.",
+    "lessonIds": [
+      "u-zh-tocfl-novice2-w3-l1"
+    ],
+    "subtitle_en": "TOCFL Novice 2",
+    "subtitle_id": "TOCFL Novice 2",
+    "description_en": "Learn the word 點心.",
+    "description_id": "Pelajari kata 點心."
+  },
+  {
+    "id": "u-zh-tocfl-novice2-w4",
+    "levelId": "lv-tocfl-novice2",
+    "title": "TOCFL Novice 2 — 方便",
+    "subtitle": "TOCFL Novice 2",
+    "order": 4,
+    "description": "Learn the word 方便.",
+    "lessonIds": [
+      "u-zh-tocfl-novice2-w4-l1"
+    ],
+    "subtitle_en": "TOCFL Novice 2",
+    "subtitle_id": "TOCFL Novice 2",
+    "description_en": "Learn the word 方便.",
+    "description_id": "Pelajari kata 方便."
+  },
+  {
+    "id": "u-zh-tocfl-novice2-w5",
+    "levelId": "lv-tocfl-novice2",
+    "title": "TOCFL Novice 2 — 姐姐",
+    "subtitle": "TOCFL Novice 2",
+    "order": 5,
+    "description": "Learn the word 姐姐.",
+    "lessonIds": [
+      "u-zh-tocfl-novice2-w5-l1"
+    ],
+    "subtitle_en": "TOCFL Novice 2",
+    "subtitle_id": "TOCFL Novice 2",
+    "description_en": "Learn the word 姐姐.",
+    "description_id": "Pelajari kata 姐姐."
+  },
+  {
+    "id": "u-zh-tocfl-novice2-w6",
+    "levelId": "lv-tocfl-novice2",
+    "title": "TOCFL Novice 2 — 可愛",
+    "subtitle": "TOCFL Novice 2",
+    "order": 6,
+    "description": "Learn the word 可愛.",
+    "lessonIds": [
+      "u-zh-tocfl-novice2-w6-l1"
+    ],
+    "subtitle_en": "TOCFL Novice 2",
+    "subtitle_id": "TOCFL Novice 2",
+    "description_en": "Learn the word 可愛.",
+    "description_id": "Pelajari kata 可愛."
+  },
+  {
+    "id": "u-zh-tocfl-novice2-w7",
+    "levelId": "lv-tocfl-novice2",
+    "title": "TOCFL Novice 2 — 美麗",
+    "subtitle": "TOCFL Novice 2",
+    "order": 7,
+    "description": "Learn the word 美麗.",
+    "lessonIds": [
+      "u-zh-tocfl-novice2-w7-l1"
+    ],
+    "subtitle_en": "TOCFL Novice 2",
+    "subtitle_id": "TOCFL Novice 2",
+    "description_en": "Learn the word 美麗.",
+    "description_id": "Pelajari kata 美麗."
+  },
+  {
+    "id": "u-zh-tocfl-novice2-w8",
+    "levelId": "lv-tocfl-novice2",
+    "title": "TOCFL Novice 2 — 一起",
+    "subtitle": "TOCFL Novice 2",
+    "order": 8,
+    "description": "Learn the word 一起.",
+    "lessonIds": [
+      "u-zh-tocfl-novice2-w8-l1"
+    ],
+    "subtitle_en": "TOCFL Novice 2",
+    "subtitle_id": "TOCFL Novice 2",
+    "description_en": "Learn the word 一起.",
+    "description_id": "Pelajari kata 一起."
+  },
+  {
+    "id": "u-zh-tocfl-novice2-w9",
+    "levelId": "lv-tocfl-novice2",
+    "title": "TOCFL Novice 2 — 愛",
+    "subtitle": "TOCFL Novice 2",
+    "order": 9,
+    "description": "Learn the word 愛.",
+    "lessonIds": [
+      "u-zh-tocfl-novice2-w9-l1"
+    ],
+    "subtitle_en": "TOCFL Novice 2",
+    "subtitle_id": "TOCFL Novice 2",
+    "description_en": "Learn the word 愛.",
+    "description_id": "Pelajari kata 愛."
+  },
+  {
+    "id": "u-zh-tocfl-novice2-w10",
+    "levelId": "lv-tocfl-novice2",
+    "title": "TOCFL Novice 2 — 矮",
+    "subtitle": "TOCFL Novice 2",
+    "order": 10,
+    "description": "Learn the word 矮.",
+    "lessonIds": [
+      "u-zh-tocfl-novice2-w10-l1"
+    ],
+    "subtitle_en": "TOCFL Novice 2",
+    "subtitle_id": "TOCFL Novice 2",
+    "description_en": "Learn the word 矮.",
+    "description_id": "Pelajari kata 矮."
+  },
+  {
+    "id": "u-zh-tocfl-level5-w2",
+    "levelId": "lv-tocfl-level5",
+    "title": "TOCFL Level 5 — 倡議",
+    "subtitle": "TOCFL Level 5",
+    "order": 2,
+    "description": "Learn the word 倡議.",
+    "lessonIds": [
+      "u-zh-tocfl-level5-w2-l1"
+    ],
+    "subtitle_en": "TOCFL Level 5",
+    "subtitle_id": "TOCFL Level 5",
+    "description_en": "Learn the word 倡議.",
+    "description_id": "Pelajari kata 倡議."
+  },
+  {
+    "id": "u-zh-tocfl-level5-w3",
+    "levelId": "lv-tocfl-level5",
+    "title": "TOCFL Level 5 — 創新",
+    "subtitle": "TOCFL Level 5",
+    "order": 3,
+    "description": "Learn the word 創新.",
+    "lessonIds": [
+      "u-zh-tocfl-level5-w3-l1"
+    ],
+    "subtitle_en": "TOCFL Level 5",
+    "subtitle_id": "TOCFL Level 5",
+    "description_en": "Learn the word 創新.",
+    "description_id": "Pelajari kata 創新."
+  },
+  {
+    "id": "u-zh-tocfl-level5-w4",
+    "levelId": "lv-tocfl-level5",
+    "title": "TOCFL Level 5 — 風險",
+    "subtitle": "TOCFL Level 5",
+    "order": 4,
+    "description": "Learn the word 風險.",
+    "lessonIds": [
+      "u-zh-tocfl-level5-w4-l1"
+    ],
+    "subtitle_en": "TOCFL Level 5",
+    "subtitle_id": "TOCFL Level 5",
+    "description_en": "Learn the word 風險.",
+    "description_id": "Pelajari kata 風險."
+  },
+  {
+    "id": "u-zh-tocfl-level5-w5",
+    "levelId": "lv-tocfl-level5",
+    "title": "TOCFL Level 5 — 環保",
+    "subtitle": "TOCFL Level 5",
+    "order": 5,
+    "description": "Learn the word 環保.",
+    "lessonIds": [
+      "u-zh-tocfl-level5-w5-l1"
+    ],
+    "subtitle_en": "TOCFL Level 5",
+    "subtitle_id": "TOCFL Level 5",
+    "description_en": "Learn the word 環保.",
+    "description_id": "Pelajari kata 環保."
+  },
+  {
+    "id": "u-zh-tocfl-level5-w6",
+    "levelId": "lv-tocfl-level5",
+    "title": "TOCFL Level 5 — 機制",
+    "subtitle": "TOCFL Level 5",
+    "order": 6,
+    "description": "Learn the word 機制.",
+    "lessonIds": [
+      "u-zh-tocfl-level5-w6-l1"
+    ],
+    "subtitle_en": "TOCFL Level 5",
+    "subtitle_id": "TOCFL Level 5",
+    "description_en": "Learn the word 機制.",
+    "description_id": "Pelajari kata 機制."
+  },
+  {
+    "id": "u-zh-tocfl-level5-w7",
+    "levelId": "lv-tocfl-level5",
+    "title": "TOCFL Level 5 — 立法",
+    "subtitle": "TOCFL Level 5",
+    "order": 7,
+    "description": "Learn the word 立法.",
+    "lessonIds": [
+      "u-zh-tocfl-level5-w7-l1"
+    ],
+    "subtitle_en": "TOCFL Level 5",
+    "subtitle_id": "TOCFL Level 5",
+    "description_en": "Learn the word 立法.",
+    "description_id": "Pelajari kata 立法."
+  },
+  {
+    "id": "u-zh-tocfl-level5-w8",
+    "levelId": "lv-tocfl-level5",
+    "title": "TOCFL Level 5 — 貿易",
+    "subtitle": "TOCFL Level 5",
+    "order": 8,
+    "description": "Learn the word 貿易.",
+    "lessonIds": [
+      "u-zh-tocfl-level5-w8-l1"
+    ],
+    "subtitle_en": "TOCFL Level 5",
+    "subtitle_id": "TOCFL Level 5",
+    "description_en": "Learn the word 貿易.",
+    "description_id": "Pelajari kata 貿易."
+  },
+  {
+    "id": "u-zh-tocfl-level5-w9",
+    "levelId": "lv-tocfl-level5",
+    "title": "TOCFL Level 5 — 媒體",
+    "subtitle": "TOCFL Level 5",
+    "order": 9,
+    "description": "Learn the word 媒體.",
+    "lessonIds": [
+      "u-zh-tocfl-level5-w9-l1"
+    ],
+    "subtitle_en": "TOCFL Level 5",
+    "subtitle_id": "TOCFL Level 5",
+    "description_en": "Learn the word 媒體.",
+    "description_id": "Pelajari kata 媒體."
+  },
+  {
+    "id": "u-zh-tocfl-level5-w10",
+    "levelId": "lv-tocfl-level5",
+    "title": "TOCFL Level 5 — 品牌",
+    "subtitle": "TOCFL Level 5",
+    "order": 10,
+    "description": "Learn the word 品牌.",
+    "lessonIds": [
+      "u-zh-tocfl-level5-w10-l1"
+    ],
+    "subtitle_en": "TOCFL Level 5",
+    "subtitle_id": "TOCFL Level 5",
+    "description_en": "Learn the word 品牌.",
+    "description_id": "Pelajari kata 品牌."
+  },
+  {
+    "id": "u-zh-tocfl-level3-w2",
+    "levelId": "lv-tocfl-level3",
+    "title": "TOCFL Level 3 — 哎",
+    "subtitle": "TOCFL Level 3",
+    "order": 2,
+    "description": "Learn the word 哎.",
+    "lessonIds": [
+      "u-zh-tocfl-level3-w2-l1"
+    ],
+    "subtitle_en": "TOCFL Level 3",
+    "subtitle_id": "TOCFL Level 3",
+    "description_en": "Learn the word 哎.",
+    "description_id": "Pelajari kata 哎."
+  },
+  {
+    "id": "u-zh-tocfl-level3-w3",
+    "levelId": "lv-tocfl-level3",
+    "title": "TOCFL Level 3 — 唉",
+    "subtitle": "TOCFL Level 3",
+    "order": 3,
+    "description": "Learn the word 唉.",
+    "lessonIds": [
+      "u-zh-tocfl-level3-w3-l1"
+    ],
+    "subtitle_en": "TOCFL Level 3",
+    "subtitle_id": "TOCFL Level 3",
+    "description_en": "Learn the word 唉.",
+    "description_id": "Pelajari kata 唉."
+  },
+  {
+    "id": "u-zh-tocfl-level3-w4",
+    "levelId": "lv-tocfl-level3",
+    "title": "TOCFL Level 3 — 愛情",
+    "subtitle": "TOCFL Level 3",
+    "order": 4,
+    "description": "Learn the word 愛情.",
+    "lessonIds": [
+      "u-zh-tocfl-level3-w4-l1"
+    ],
+    "subtitle_en": "TOCFL Level 3",
+    "subtitle_id": "TOCFL Level 3",
+    "description_en": "Learn the word 愛情.",
+    "description_id": "Pelajari kata 愛情."
+  },
+  {
+    "id": "u-zh-tocfl-level3-w5",
+    "levelId": "lv-tocfl-level3",
+    "title": "TOCFL Level 3 — 愛惜",
+    "subtitle": "TOCFL Level 3",
+    "order": 5,
+    "description": "Learn the word 愛惜.",
+    "lessonIds": [
+      "u-zh-tocfl-level3-w5-l1"
+    ],
+    "subtitle_en": "TOCFL Level 3",
+    "subtitle_id": "TOCFL Level 3",
+    "description_en": "Learn the word 愛惜.",
+    "description_id": "Pelajari kata 愛惜."
+  },
+  {
+    "id": "u-zh-tocfl-level3-w6",
+    "levelId": "lv-tocfl-level3",
+    "title": "TOCFL Level 3 — 愛心",
+    "subtitle": "TOCFL Level 3",
+    "order": 6,
+    "description": "Learn the word 愛心.",
+    "lessonIds": [
+      "u-zh-tocfl-level3-w6-l1"
+    ],
+    "subtitle_en": "TOCFL Level 3",
+    "subtitle_id": "TOCFL Level 3",
+    "description_en": "Learn the word 愛心.",
+    "description_id": "Pelajari kata 愛心."
+  },
+  {
+    "id": "u-zh-tocfl-level3-w7",
+    "levelId": "lv-tocfl-level3",
+    "title": "TOCFL Level 3 — 按",
+    "subtitle": "TOCFL Level 3",
+    "order": 7,
+    "description": "Learn the word 按.",
+    "lessonIds": [
+      "u-zh-tocfl-level3-w7-l1"
+    ],
+    "subtitle_en": "TOCFL Level 3",
+    "subtitle_id": "TOCFL Level 3",
+    "description_en": "Learn the word 按.",
+    "description_id": "Pelajari kata 按."
+  },
+  {
+    "id": "u-zh-tocfl-level3-w8",
+    "levelId": "lv-tocfl-level3",
+    "title": "TOCFL Level 3 — 安定",
+    "subtitle": "TOCFL Level 3",
+    "order": 8,
+    "description": "Learn the word 安定.",
+    "lessonIds": [
+      "u-zh-tocfl-level3-w8-l1"
+    ],
+    "subtitle_en": "TOCFL Level 3",
+    "subtitle_id": "TOCFL Level 3",
+    "description_en": "Learn the word 安定.",
+    "description_id": "Pelajari kata 安定."
+  },
+  {
+    "id": "u-zh-tocfl-level3-w9",
+    "levelId": "lv-tocfl-level3",
+    "title": "TOCFL Level 3 — 安靜",
+    "subtitle": "TOCFL Level 3",
+    "order": 9,
+    "description": "Learn the word 安靜.",
+    "lessonIds": [
+      "u-zh-tocfl-level3-w9-l1"
+    ],
+    "subtitle_en": "TOCFL Level 3",
+    "subtitle_id": "TOCFL Level 3",
+    "description_en": "Learn the word 安靜.",
+    "description_id": "Pelajari kata 安靜."
+  },
+  {
+    "id": "u-zh-tocfl-level3-w10",
+    "levelId": "lv-tocfl-level3",
+    "title": "TOCFL Level 3 — 安排",
+    "subtitle": "TOCFL Level 3",
+    "order": 10,
+    "description": "Learn the word 安排.",
+    "lessonIds": [
+      "u-zh-tocfl-level3-w10-l1"
+    ],
+    "subtitle_en": "TOCFL Level 3",
+    "subtitle_id": "TOCFL Level 3",
+    "description_en": "Learn the word 安排.",
+    "description_id": "Pelajari kata 安排."
+  },
+  {
+    "id": "u-zh-tocfl-level2-w2",
+    "levelId": "lv-tocfl-level2",
+    "title": "TOCFL Level 2 — 安全",
+    "subtitle": "TOCFL Level 2",
+    "order": 2,
+    "description": "Learn the word 安全.",
+    "lessonIds": [
+      "u-zh-tocfl-level2-w2-l1"
+    ],
+    "subtitle_en": "TOCFL Level 2",
+    "subtitle_id": "TOCFL Level 2",
+    "description_en": "Learn the word 安全.",
+    "description_id": "Pelajari kata 安全."
+  },
+  {
+    "id": "u-zh-tocfl-level2-w3",
+    "levelId": "lv-tocfl-level2",
+    "title": "TOCFL Level 2 — 阿姨",
+    "subtitle": "TOCFL Level 2",
+    "order": 3,
+    "description": "Learn the word 阿姨.",
+    "lessonIds": [
+      "u-zh-tocfl-level2-w3-l1"
+    ],
+    "subtitle_en": "TOCFL Level 2",
+    "subtitle_id": "TOCFL Level 2",
+    "description_en": "Learn the word 阿姨.",
+    "description_id": "Pelajari kata 阿姨."
+  },
+  {
+    "id": "u-zh-tocfl-level2-w4",
+    "levelId": "lv-tocfl-level2",
+    "title": "TOCFL Level 2 — 百貨公司",
+    "subtitle": "TOCFL Level 2",
+    "order": 4,
+    "description": "Learn the word 百貨公司.",
+    "lessonIds": [
+      "u-zh-tocfl-level2-w4-l1"
+    ],
+    "subtitle_en": "TOCFL Level 2",
+    "subtitle_id": "TOCFL Level 2",
+    "description_en": "Learn the word 百貨公司.",
+    "description_id": "Pelajari kata 百貨公司."
+  },
+  {
+    "id": "u-zh-tocfl-level2-w5",
+    "levelId": "lv-tocfl-level2",
+    "title": "TOCFL Level 2 — 白天",
+    "subtitle": "TOCFL Level 2",
+    "order": 5,
+    "description": "Learn the word 白天.",
+    "lessonIds": [
+      "u-zh-tocfl-level2-w5-l1"
+    ],
+    "subtitle_en": "TOCFL Level 2",
+    "subtitle_id": "TOCFL Level 2",
+    "description_en": "Learn the word 白天.",
+    "description_id": "Pelajari kata 白天."
+  },
+  {
+    "id": "u-zh-tocfl-level2-w6",
+    "levelId": "lv-tocfl-level2",
+    "title": "TOCFL Level 2 — 辦",
+    "subtitle": "TOCFL Level 2",
+    "order": 6,
+    "description": "Learn the word 辦.",
+    "lessonIds": [
+      "u-zh-tocfl-level2-w6-l1"
+    ],
+    "subtitle_en": "TOCFL Level 2",
+    "subtitle_id": "TOCFL Level 2",
+    "description_en": "Learn the word 辦.",
+    "description_id": "Pelajari kata 辦."
+  },
+  {
+    "id": "u-zh-tocfl-level2-w7",
+    "levelId": "lv-tocfl-level2",
+    "title": "TOCFL Level 2 — 搬家",
+    "subtitle": "TOCFL Level 2",
+    "order": 7,
+    "description": "Learn the word 搬家.",
+    "lessonIds": [
+      "u-zh-tocfl-level2-w7-l1"
+    ],
+    "subtitle_en": "TOCFL Level 2",
+    "subtitle_id": "TOCFL Level 2",
+    "description_en": "Learn the word 搬家.",
+    "description_id": "Pelajari kata 搬家."
+  },
+  {
+    "id": "u-zh-tocfl-level2-w8",
+    "levelId": "lv-tocfl-level2",
+    "title": "TOCFL Level 2 — 半夜",
+    "subtitle": "TOCFL Level 2",
+    "order": 8,
+    "description": "Learn the word 半夜.",
+    "lessonIds": [
+      "u-zh-tocfl-level2-w8-l1"
+    ],
+    "subtitle_en": "TOCFL Level 2",
+    "subtitle_id": "TOCFL Level 2",
+    "description_en": "Learn the word 半夜.",
+    "description_id": "Pelajari kata 半夜."
+  },
+  {
+    "id": "u-zh-tocfl-level2-w9",
+    "levelId": "lv-tocfl-level2",
+    "title": "TOCFL Level 2 — 報告",
+    "subtitle": "TOCFL Level 2",
+    "order": 9,
+    "description": "Learn the word 報告.",
+    "lessonIds": [
+      "u-zh-tocfl-level2-w9-l1"
+    ],
+    "subtitle_en": "TOCFL Level 2",
+    "subtitle_id": "TOCFL Level 2",
+    "description_en": "Learn the word 報告.",
+    "description_id": "Pelajari kata 報告."
+  },
+  {
+    "id": "u-zh-tocfl-level2-w10",
+    "levelId": "lv-tocfl-level2",
+    "title": "TOCFL Level 2 — 保護",
+    "subtitle": "TOCFL Level 2",
+    "order": 10,
+    "description": "Learn the word 保護.",
+    "lessonIds": [
+      "u-zh-tocfl-level2-w10-l1"
+    ],
+    "subtitle_en": "TOCFL Level 2",
+    "subtitle_id": "TOCFL Level 2",
+    "description_en": "Learn the word 保護.",
+    "description_id": "Pelajari kata 保護."
+  },
+  {
+    "id": "u-zh-tocfl-level1-w2",
+    "levelId": "lv-tocfl-level1",
+    "title": "TOCFL Level 1 — 啊",
+    "subtitle": "TOCFL Level 1",
+    "order": 2,
+    "description": "Learn the word 啊.",
+    "lessonIds": [
+      "u-zh-tocfl-level1-w2-l1"
+    ],
+    "subtitle_en": "TOCFL Level 1",
+    "subtitle_id": "TOCFL Level 1",
+    "description_en": "Learn the word 啊.",
+    "description_id": "Pelajari kata 啊."
+  },
+  {
+    "id": "u-zh-tocfl-level1-w3",
+    "levelId": "lv-tocfl-level1",
+    "title": "TOCFL Level 1 — 把",
+    "subtitle": "TOCFL Level 1",
+    "order": 3,
+    "description": "Learn the word 把.",
+    "lessonIds": [
+      "u-zh-tocfl-level1-w3-l1"
+    ],
+    "subtitle_en": "TOCFL Level 1",
+    "subtitle_id": "TOCFL Level 1",
+    "description_en": "Learn the word 把.",
+    "description_id": "Pelajari kata 把."
+  },
+  {
+    "id": "u-zh-tocfl-level1-w4",
+    "levelId": "lv-tocfl-level1",
+    "title": "TOCFL Level 1 — 白色",
+    "subtitle": "TOCFL Level 1",
+    "order": 4,
+    "description": "Learn the word 白色.",
+    "lessonIds": [
+      "u-zh-tocfl-level1-w4-l1"
+    ],
+    "subtitle_en": "TOCFL Level 1",
+    "subtitle_id": "TOCFL Level 1",
+    "description_en": "Learn the word 白色.",
+    "description_id": "Pelajari kata 白色."
+  },
+  {
+    "id": "u-zh-tocfl-level1-w5",
+    "levelId": "lv-tocfl-level1",
+    "title": "TOCFL Level 1 — 班",
+    "subtitle": "TOCFL Level 1",
+    "order": 5,
+    "description": "Learn the word 班.",
+    "lessonIds": [
+      "u-zh-tocfl-level1-w5-l1"
+    ],
+    "subtitle_en": "TOCFL Level 1",
+    "subtitle_id": "TOCFL Level 1",
+    "description_en": "Learn the word 班.",
+    "description_id": "Pelajari kata 班."
+  },
+  {
+    "id": "u-zh-tocfl-level1-w6",
+    "levelId": "lv-tocfl-level1",
+    "title": "TOCFL Level 1 — 搬",
+    "subtitle": "TOCFL Level 1",
+    "order": 6,
+    "description": "Learn the word 搬.",
+    "lessonIds": [
+      "u-zh-tocfl-level1-w6-l1"
+    ],
+    "subtitle_en": "TOCFL Level 1",
+    "subtitle_id": "TOCFL Level 1",
+    "description_en": "Learn the word 搬.",
+    "description_id": "Pelajari kata 搬."
+  },
+  {
+    "id": "u-zh-tocfl-level1-w7",
+    "levelId": "lv-tocfl-level1",
+    "title": "TOCFL Level 1 — 辦法",
+    "subtitle": "TOCFL Level 1",
+    "order": 7,
+    "description": "Learn the word 辦法.",
+    "lessonIds": [
+      "u-zh-tocfl-level1-w7-l1"
+    ],
+    "subtitle_en": "TOCFL Level 1",
+    "subtitle_id": "TOCFL Level 1",
+    "description_en": "Learn the word 辦法.",
+    "description_id": "Pelajari kata 辦法."
+  },
+  {
+    "id": "u-zh-tocfl-level1-w8",
+    "levelId": "lv-tocfl-level1",
+    "title": "TOCFL Level 1 — 棒",
+    "subtitle": "TOCFL Level 1",
+    "order": 8,
+    "description": "Learn the word 棒.",
+    "lessonIds": [
+      "u-zh-tocfl-level1-w8-l1"
+    ],
+    "subtitle_en": "TOCFL Level 1",
+    "subtitle_id": "TOCFL Level 1",
+    "description_en": "Learn the word 棒.",
+    "description_id": "Pelajari kata 棒."
+  },
+  {
+    "id": "u-zh-tocfl-level1-w9",
+    "levelId": "lv-tocfl-level1",
+    "title": "TOCFL Level 1 — 幫",
+    "subtitle": "TOCFL Level 1",
+    "order": 9,
+    "description": "Learn the word 幫.",
+    "lessonIds": [
+      "u-zh-tocfl-level1-w9-l1"
+    ],
+    "subtitle_en": "TOCFL Level 1",
+    "subtitle_id": "TOCFL Level 1",
+    "description_en": "Learn the word 幫.",
+    "description_id": "Pelajari kata 幫."
+  },
+  {
+    "id": "u-zh-tocfl-level1-w10",
+    "levelId": "lv-tocfl-level1",
+    "title": "TOCFL Level 1 — 幫忙",
+    "subtitle": "TOCFL Level 1",
+    "order": 10,
+    "description": "Learn the word 幫忙.",
+    "lessonIds": [
+      "u-zh-tocfl-level1-w10-l1"
+    ],
+    "subtitle_en": "TOCFL Level 1",
+    "subtitle_id": "TOCFL Level 1",
+    "description_en": "Learn the word 幫忙.",
+    "description_id": "Pelajari kata 幫忙."
+  },
+  {
+    "id": "u-zh-tocfl-level4-w2",
+    "levelId": "lv-tocfl-level4",
+    "title": "TOCFL Level 4 — 報導",
+    "subtitle": "TOCFL Level 4",
+    "order": 2,
+    "description": "Learn the word 報導.",
+    "lessonIds": [
+      "u-zh-tocfl-level4-w2-l1"
+    ],
+    "subtitle_en": "TOCFL Level 4",
+    "subtitle_id": "TOCFL Level 4",
+    "description_en": "Learn the word 報導.",
+    "description_id": "Pelajari kata 報導."
+  },
+  {
+    "id": "u-zh-tocfl-level4-w3",
+    "levelId": "lv-tocfl-level4",
+    "title": "TOCFL Level 4 — 產品",
+    "subtitle": "TOCFL Level 4",
+    "order": 3,
+    "description": "Learn the word 產品.",
+    "lessonIds": [
+      "u-zh-tocfl-level4-w3-l1"
+    ],
+    "subtitle_en": "TOCFL Level 4",
+    "subtitle_id": "TOCFL Level 4",
+    "description_en": "Learn the word 產品.",
+    "description_id": "Pelajari kata 產品."
+  },
+  {
+    "id": "u-zh-tocfl-level4-w4",
+    "levelId": "lv-tocfl-level4",
+    "title": "TOCFL Level 4 — 電腦",
+    "subtitle": "TOCFL Level 4",
+    "order": 4,
+    "description": "Learn the word 電腦.",
+    "lessonIds": [
+      "u-zh-tocfl-level4-w4-l1"
+    ],
+    "subtitle_en": "TOCFL Level 4",
+    "subtitle_id": "TOCFL Level 4",
+    "description_en": "Learn the word 電腦.",
+    "description_id": "Pelajari kata 電腦."
+  },
+  {
+    "id": "u-zh-tocfl-level4-w5",
+    "levelId": "lv-tocfl-level4",
+    "title": "TOCFL Level 4 — 法律",
+    "subtitle": "TOCFL Level 4",
+    "order": 5,
+    "description": "Learn the word 法律.",
+    "lessonIds": [
+      "u-zh-tocfl-level4-w5-l1"
+    ],
+    "subtitle_en": "TOCFL Level 4",
+    "subtitle_id": "TOCFL Level 4",
+    "description_en": "Learn the word 法律.",
+    "description_id": "Pelajari kata 法律."
+  },
+  {
+    "id": "u-zh-tocfl-level4-w6",
+    "levelId": "lv-tocfl-level4",
+    "title": "TOCFL Level 4 — 發展",
+    "subtitle": "TOCFL Level 4",
+    "order": 6,
+    "description": "Learn the word 發展.",
+    "lessonIds": [
+      "u-zh-tocfl-level4-w6-l1"
+    ],
+    "subtitle_en": "TOCFL Level 4",
+    "subtitle_id": "TOCFL Level 4",
+    "description_en": "Learn the word 發展.",
+    "description_id": "Pelajari kata 發展."
+  },
+  {
+    "id": "u-zh-tocfl-level4-w7",
+    "levelId": "lv-tocfl-level4",
+    "title": "TOCFL Level 4 — 溝通",
+    "subtitle": "TOCFL Level 4",
+    "order": 7,
+    "description": "Learn the word 溝通.",
+    "lessonIds": [
+      "u-zh-tocfl-level4-w7-l1"
+    ],
+    "subtitle_en": "TOCFL Level 4",
+    "subtitle_id": "TOCFL Level 4",
+    "description_en": "Learn the word 溝通.",
+    "description_id": "Pelajari kata 溝通."
+  },
+  {
+    "id": "u-zh-tocfl-level4-w8",
+    "levelId": "lv-tocfl-level4",
+    "title": "TOCFL Level 4 — 關係",
+    "subtitle": "TOCFL Level 4",
+    "order": 8,
+    "description": "Learn the word 關係.",
+    "lessonIds": [
+      "u-zh-tocfl-level4-w8-l1"
+    ],
+    "subtitle_en": "TOCFL Level 4",
+    "subtitle_id": "TOCFL Level 4",
+    "description_en": "Learn the word 關係.",
+    "description_id": "Pelajari kata 關係."
+  },
+  {
+    "id": "u-zh-tocfl-level4-w9",
+    "levelId": "lv-tocfl-level4",
+    "title": "TOCFL Level 4 — 廣告",
+    "subtitle": "TOCFL Level 4",
+    "order": 9,
+    "description": "Learn the word 廣告.",
+    "lessonIds": [
+      "u-zh-tocfl-level4-w9-l1"
+    ],
+    "subtitle_en": "TOCFL Level 4",
+    "subtitle_id": "TOCFL Level 4",
+    "description_en": "Learn the word 廣告.",
+    "description_id": "Pelajari kata 廣告."
+  },
+  {
+    "id": "u-zh-tocfl-level4-w10",
+    "levelId": "lv-tocfl-level4",
+    "title": "TOCFL Level 4 — 觀光",
+    "subtitle": "TOCFL Level 4",
+    "order": 10,
+    "description": "Learn the word 觀光.",
+    "lessonIds": [
+      "u-zh-tocfl-level4-w10-l1"
+    ],
+    "subtitle_en": "TOCFL Level 4",
+    "subtitle_id": "TOCFL Level 4",
+    "description_en": "Learn the word 觀光.",
+    "description_id": "Pelajari kata 觀光."
+  },
+  {
+    "id": "u-zh-hsk7-w2",
+    "levelId": "lv-hsk7",
+    "title": "HSK 7 — 一丝不苟",
+    "subtitle": "HSK 7",
+    "order": 2,
+    "description": "Learn the word 一丝不苟.",
+    "lessonIds": [
+      "u-zh-hsk7-w2-l1"
+    ],
+    "subtitle_en": "HSK 7",
+    "subtitle_id": "HSK 7",
+    "description_en": "Learn the word 一丝不苟.",
+    "description_id": "Pelajari kata 一丝不苟."
+  },
+  {
+    "id": "u-zh-hsk7-w3",
+    "levelId": "lv-hsk7",
+    "title": "HSK 7 — 一举",
+    "subtitle": "HSK 7",
+    "order": 3,
+    "description": "Learn the word 一举.",
+    "lessonIds": [
+      "u-zh-hsk7-w3-l1"
+    ],
+    "subtitle_en": "HSK 7",
+    "subtitle_id": "HSK 7",
+    "description_en": "Learn the word 一举.",
+    "description_id": "Pelajari kata 一举."
+  },
+  {
+    "id": "u-zh-hsk7-w4",
+    "levelId": "lv-hsk7",
+    "title": "HSK 7 — 一举一动",
+    "subtitle": "HSK 7",
+    "order": 4,
+    "description": "Learn the word 一举一动.",
+    "lessonIds": [
+      "u-zh-hsk7-w4-l1"
+    ],
+    "subtitle_en": "HSK 7",
+    "subtitle_id": "HSK 7",
+    "description_en": "Learn the word 一举一动.",
+    "description_id": "Pelajari kata 一举一动."
+  },
+  {
+    "id": "u-zh-hsk7-w5",
+    "levelId": "lv-hsk7",
+    "title": "HSK 7 — 一举两得",
+    "subtitle": "HSK 7",
+    "order": 5,
+    "description": "Learn the word 一举两得.",
+    "lessonIds": [
+      "u-zh-hsk7-w5-l1"
+    ],
+    "subtitle_en": "HSK 7",
+    "subtitle_id": "HSK 7",
+    "description_en": "Learn the word 一举两得.",
+    "description_id": "Pelajari kata 一举两得."
+  },
+  {
+    "id": "u-zh-hsk7-w6",
+    "levelId": "lv-hsk7",
+    "title": "HSK 7 — 一事无成",
+    "subtitle": "HSK 7",
+    "order": 6,
+    "description": "Learn the word 一事无成.",
+    "lessonIds": [
+      "u-zh-hsk7-w6-l1"
+    ],
+    "subtitle_en": "HSK 7",
+    "subtitle_id": "HSK 7",
+    "description_en": "Learn the word 一事无成.",
+    "description_id": "Pelajari kata 一事无成."
+  },
+  {
+    "id": "u-zh-hsk7-w7",
+    "levelId": "lv-hsk7",
+    "title": "HSK 7 — 一体",
+    "subtitle": "HSK 7",
+    "order": 7,
+    "description": "Learn the word 一体.",
+    "lessonIds": [
+      "u-zh-hsk7-w7-l1"
+    ],
+    "subtitle_en": "HSK 7",
+    "subtitle_id": "HSK 7",
+    "description_en": "Learn the word 一体.",
+    "description_id": "Pelajari kata 一体."
+  },
+  {
+    "id": "u-zh-hsk7-w8",
+    "levelId": "lv-hsk7",
+    "title": "HSK 7 — 一动不动",
+    "subtitle": "HSK 7",
+    "order": 8,
+    "description": "Learn the word 一动不动.",
+    "lessonIds": [
+      "u-zh-hsk7-w8-l1"
+    ],
+    "subtitle_en": "HSK 7",
+    "subtitle_id": "HSK 7",
+    "description_en": "Learn the word 一动不动.",
+    "description_id": "Pelajari kata 一动不动."
+  },
+  {
+    "id": "u-zh-hsk7-w9",
+    "levelId": "lv-hsk7",
+    "title": "HSK 7 — 一味",
+    "subtitle": "HSK 7",
+    "order": 9,
+    "description": "Learn the word 一味.",
+    "lessonIds": [
+      "u-zh-hsk7-w9-l1"
+    ],
+    "subtitle_en": "HSK 7",
+    "subtitle_id": "HSK 7",
+    "description_en": "Learn the word 一味.",
+    "description_id": "Pelajari kata 一味."
+  },
+  {
+    "id": "u-zh-hsk7-w10",
+    "levelId": "lv-hsk7",
+    "title": "HSK 7 — 一塌糊涂",
+    "subtitle": "HSK 7",
+    "order": 10,
+    "description": "Learn the word 一塌糊涂.",
+    "lessonIds": [
+      "u-zh-hsk7-w10-l1"
+    ],
+    "subtitle_en": "HSK 7",
+    "subtitle_id": "HSK 7",
+    "description_en": "Learn the word 一塌糊涂.",
+    "description_id": "Pelajari kata 一塌糊涂."
   }
 ]

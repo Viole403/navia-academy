@@ -352,5 +352,515 @@
     ],
     "subtitle_en": "Essays and Reports",
     "subtitle_id": "Esai dan Laporan"
+  },
+  {
+    "id": "u-en-a1-w5-l1",
+    "unitId": "u-en-a1-w5",
+    "title": "hello",
+    "subtitle": "A1",
+    "order": 1,
+    "durationMin": 10,
+    "xp": 40,
+    "objectives": [
+      "Learn the word «hello»",
+      "Read it in context"
+    ],
+    "steps": [
+      {
+        "type": "intro",
+        "title": "hello",
+        "body": [
+          "Today we focus on the word «hello» ().",
+          "It means: hello."
+        ]
+      },
+      {
+        "type": "explanation",
+        "title": "About «hello»",
+        "body": [
+          "«hello» () means «hello»."
+        ]
+      },
+      {
+        "type": "reading",
+        "title": "«hello» in context",
+        "paragraphs": [
+          {
+            "text": "Hello! How are you?",
+            "hanzi": "Hello! How are you?",
+            "pinyin": "",
+            "romanization": "",
+            "translation": "Hello! How are you?",
+            "translation_en": "Hello! How are you?",
+            "translation_id": "Hello! How are you?"
+          }
+        ]
+      },
+      {
+        "type": "exercise",
+        "title": "Quick check",
+        "exercise": {
+          "id": "e-u-en-a1-w5-1",
+          "type": "multiple-choice",
+          "prompt": "What does «hello» mean?",
+          "options": [
+            {
+              "id": "o0",
+              "label": "hello"
+            },
+            {
+              "id": "o1",
+              "label": "A different word"
+            },
+            {
+              "id": "o2",
+              "label": "Another meaning"
+            },
+            {
+              "id": "o3",
+              "label": "Not sure"
+            }
+          ],
+          "correct": "o0",
+          "skill": "reading",
+          "explanation": "«hello» means «hello»."
+        }
+      },
+      {
+        "type": "summary",
+        "title": "Summary",
+        "body": [
+          "«hello» () = hello.",
+          "Practice this word in the reading exercises."
+        ]
+      }
+    ],
+    "subtitle_en": "A1",
+    "subtitle_id": "A1"
+  },
+  {
+    "id": "u-en-a1-w6-l1",
+    "unitId": "u-en-a1-w6",
+    "title": "goodbye",
+    "subtitle": "A1",
+    "order": 1,
+    "durationMin": 10,
+    "xp": 40,
+    "objectives": [
+      "Learn the word «goodbye»",
+      "Read it in context"
+    ],
+    "steps": [
+      {
+        "type": "intro",
+        "title": "goodbye",
+        "body": [
+          "Today we focus on the word «goodbye» ().",
+          "It means: goodbye."
+        ]
+      },
+      {
+        "type": "explanation",
+        "title": "About «goodbye»",
+        "body": [
+          "«goodbye» () means «goodbye»."
+        ]
+      },
+      {
+        "type": "reading",
+        "title": "«goodbye» in context",
+        "paragraphs": [
+          {
+            "text": "Goodbye! See you tomorrow.",
+            "hanzi": "Goodbye! See you tomorrow.",
+            "pinyin": "",
+            "romanization": "",
+            "translation": "Goodbye! See you tomorrow.",
+            "translation_en": "Goodbye! See you tomorrow.",
+            "translation_id": "Goodbye! See you tomorrow."
+          }
+        ]
+      },
+      {
+        "type": "exercise",
+        "title": "Quick check",
+        "exercise": {
+          "id": "e-u-en-a1-w6-1",
+          "type": "multiple-choice",
+          "prompt": "What does «goodbye» mean?",
+          "options": [
+            {
+              "id": "o0",
+              "label": "goodbye"
+            },
+            {
+              "id": "o1",
+              "label": "A different word"
+            },
+            {
+              "id": "o2",
+              "label": "Another meaning"
+            },
+            {
+              "id": "o3",
+              "label": "Not sure"
+            }
+          ],
+          "correct": "o0",
+          "skill": "reading",
+          "explanation": "«goodbye» means «goodbye»."
+        }
+      },
+      {
+        "type": "summary",
+        "title": "Summary",
+        "body": [
+          "«goodbye» () = goodbye.",
+          "Practice this word in the reading exercises."
+        ]
+      }
+    ],
+    "subtitle_en": "A1",
+    "subtitle_id": "A1"
+  },
+  {
+    "id": "u-en-a1-w7-l1",
+    "unitId": "u-en-a1-w7",
+    "title": "please",
+    "subtitle": "A1",
+    "order": 1,
+    "durationMin": 10,
+    "xp": 40,
+    "objectives": [
+      "Learn the word «please»",
+      "Read it in context"
+    ],
+    "steps": [
+      {
+        "type": "intro",
+        "title": "please",
+        "body": [
+          "Today we focus on the word «please» ().",
+          "It means: please."
+        ]
+      },
+      {
+        "type": "explanation",
+        "title": "About «please»",
+        "body": [
+          "«please» () means «please»."
+        ]
+      },
+      {
+        "type": "reading",
+        "title": "«please» in context",
+        "paragraphs": [
+          {
+            "text": "Please help me.",
+            "hanzi": "Please help me.",
+            "pinyin": "",
+            "romanization": "",
+            "translation": "Please help me.",
+            "translation_en": "Please help me.",
+            "translation_id": "Please help me."
+          }
+        ]
+      },
+      {
+        "type": "exercise",
+        "title": "Quick check",
+        "exercise": {
+          "id": "e-u-en-a1-w7-1",
+          "type": "multiple-choice",
+          "prompt": "What does «please» mean?",
+          "options": [
+            {
+              "id": "o0",
+              "label": "please"
+            },
+            {
+              "id": "o1",
+              "label": "A different word"
+            },
+            {
+              "id": "o2",
+              "label": "Another meaning"
+            },
+            {
+              "id": "o3",
+              "label": "Not sure"
+            }
+          ],
+          "correct": "o0",
+          "skill": "reading",
+          "explanation": "«please» means «please»."
+        }
+      },
+      {
+        "type": "summary",
+        "title": "Summary",
+        "body": [
+          "«please» () = please.",
+          "Practice this word in the reading exercises."
+        ]
+      }
+    ],
+    "subtitle_en": "A1",
+    "subtitle_id": "A1"
+  },
+  {
+    "id": "u-en-a1-w8-l1",
+    "unitId": "u-en-a1-w8",
+    "title": "yes",
+    "subtitle": "A1",
+    "order": 1,
+    "durationMin": 10,
+    "xp": 40,
+    "objectives": [
+      "Learn the word «yes»",
+      "Read it in context"
+    ],
+    "steps": [
+      {
+        "type": "intro",
+        "title": "yes",
+        "body": [
+          "Today we focus on the word «yes» ().",
+          "It means: yes."
+        ]
+      },
+      {
+        "type": "explanation",
+        "title": "About «yes»",
+        "body": [
+          "«yes» () means «yes»."
+        ]
+      },
+      {
+        "type": "reading",
+        "title": "«yes» in context",
+        "paragraphs": [
+          {
+            "text": "Yes, that's correct.",
+            "hanzi": "Yes, that's correct.",
+            "pinyin": "",
+            "romanization": "",
+            "translation": "Yes, that's correct.",
+            "translation_en": "Yes, that's correct.",
+            "translation_id": "Yes, that's correct."
+          }
+        ]
+      },
+      {
+        "type": "exercise",
+        "title": "Quick check",
+        "exercise": {
+          "id": "e-u-en-a1-w8-1",
+          "type": "multiple-choice",
+          "prompt": "What does «yes» mean?",
+          "options": [
+            {
+              "id": "o0",
+              "label": "yes"
+            },
+            {
+              "id": "o1",
+              "label": "A different word"
+            },
+            {
+              "id": "o2",
+              "label": "Another meaning"
+            },
+            {
+              "id": "o3",
+              "label": "Not sure"
+            }
+          ],
+          "correct": "o0",
+          "skill": "reading",
+          "explanation": "«yes» means «yes»."
+        }
+      },
+      {
+        "type": "summary",
+        "title": "Summary",
+        "body": [
+          "«yes» () = yes.",
+          "Practice this word in the reading exercises."
+        ]
+      }
+    ],
+    "subtitle_en": "A1",
+    "subtitle_id": "A1"
+  },
+  {
+    "id": "u-en-a1-w9-l1",
+    "unitId": "u-en-a1-w9",
+    "title": "no",
+    "subtitle": "A1",
+    "order": 1,
+    "durationMin": 10,
+    "xp": 40,
+    "objectives": [
+      "Learn the word «no»",
+      "Read it in context"
+    ],
+    "steps": [
+      {
+        "type": "intro",
+        "title": "no",
+        "body": [
+          "Today we focus on the word «no» ().",
+          "It means: no."
+        ]
+      },
+      {
+        "type": "explanation",
+        "title": "About «no»",
+        "body": [
+          "«no» () means «no»."
+        ]
+      },
+      {
+        "type": "reading",
+        "title": "«no» in context",
+        "paragraphs": [
+          {
+            "text": "No, thank you.",
+            "hanzi": "No, thank you.",
+            "pinyin": "",
+            "romanization": "",
+            "translation": "No, thank you.",
+            "translation_en": "No, thank you.",
+            "translation_id": "No, thank you."
+          }
+        ]
+      },
+      {
+        "type": "exercise",
+        "title": "Quick check",
+        "exercise": {
+          "id": "e-u-en-a1-w9-1",
+          "type": "multiple-choice",
+          "prompt": "What does «no» mean?",
+          "options": [
+            {
+              "id": "o0",
+              "label": "no"
+            },
+            {
+              "id": "o1",
+              "label": "A different word"
+            },
+            {
+              "id": "o2",
+              "label": "Another meaning"
+            },
+            {
+              "id": "o3",
+              "label": "Not sure"
+            }
+          ],
+          "correct": "o0",
+          "skill": "reading",
+          "explanation": "«no» means «no»."
+        }
+      },
+      {
+        "type": "summary",
+        "title": "Summary",
+        "body": [
+          "«no» () = no.",
+          "Practice this word in the reading exercises."
+        ]
+      }
+    ],
+    "subtitle_en": "A1",
+    "subtitle_id": "A1"
+  },
+  {
+    "id": "u-en-a1-w10-l1",
+    "unitId": "u-en-a1-w10",
+    "title": "man",
+    "subtitle": "A1",
+    "order": 1,
+    "durationMin": 10,
+    "xp": 40,
+    "objectives": [
+      "Learn the word «man»",
+      "Read it in context"
+    ],
+    "steps": [
+      {
+        "type": "intro",
+        "title": "man",
+        "body": [
+          "Today we focus on the word «man» ().",
+          "It means: man."
+        ]
+      },
+      {
+        "type": "explanation",
+        "title": "About «man»",
+        "body": [
+          "«man» () means «man»."
+        ]
+      },
+      {
+        "type": "reading",
+        "title": "«man» in context",
+        "paragraphs": [
+          {
+            "text": "The man is tall.",
+            "hanzi": "The man is tall.",
+            "pinyin": "",
+            "romanization": "",
+            "translation": "The man is tall.",
+            "translation_en": "The man is tall.",
+            "translation_id": "The man is tall."
+          }
+        ]
+      },
+      {
+        "type": "exercise",
+        "title": "Quick check",
+        "exercise": {
+          "id": "e-u-en-a1-w10-1",
+          "type": "multiple-choice",
+          "prompt": "What does «man» mean?",
+          "options": [
+            {
+              "id": "o0",
+              "label": "man"
+            },
+            {
+              "id": "o1",
+              "label": "A different word"
+            },
+            {
+              "id": "o2",
+              "label": "Another meaning"
+            },
+            {
+              "id": "o3",
+              "label": "Not sure"
+            }
+          ],
+          "correct": "o0",
+          "skill": "reading",
+          "explanation": "«man» means «man»."
+        }
+      },
+      {
+        "type": "summary",
+        "title": "Summary",
+        "body": [
+          "«man» () = man.",
+          "Practice this word in the reading exercises."
+        ]
+      }
+    ],
+    "subtitle_en": "A1",
+    "subtitle_id": "A1"
   }
 ]

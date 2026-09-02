@@ -2650,5 +2650,305 @@
     "subtitle_id": "Apprentice",
     "description_en": "Practice apprentice.",
     "description_id": "Latihan apprentice."
+  },
+  {
+    "id": "u-de-b2-w2",
+    "levelId": "de-b2",
+    "title": "B2 — abbrechen",
+    "subtitle": "B2",
+    "order": 2,
+    "description": "Learn the word abbrechen.",
+    "lessonIds": [
+      "u-de-b2-w2-l1"
+    ],
+    "subtitle_en": "B2",
+    "subtitle_id": "B2",
+    "description_en": "Learn the word abbrechen.",
+    "description_id": "Pelajari kata abbrechen."
+  },
+  {
+    "id": "u-de-b2-w3",
+    "levelId": "de-b2",
+    "title": "B2 — Abgeordneter",
+    "subtitle": "B2",
+    "order": 3,
+    "description": "Learn the word Abgeordneter.",
+    "lessonIds": [
+      "u-de-b2-w3-l1"
+    ],
+    "subtitle_en": "B2",
+    "subtitle_id": "B2",
+    "description_en": "Learn the word Abgeordneter.",
+    "description_id": "Pelajari kata Abgeordneter."
+  },
+  {
+    "id": "u-de-b2-w4",
+    "levelId": "de-b2",
+    "title": "B2 — abhängen",
+    "subtitle": "B2",
+    "order": 4,
+    "description": "Learn the word abhängen.",
+    "lessonIds": [
+      "u-de-b2-w4-l1"
+    ],
+    "subtitle_en": "B2",
+    "subtitle_id": "B2",
+    "description_en": "Learn the word abhängen.",
+    "description_id": "Pelajari kata abhängen."
+  },
+  {
+    "id": "u-de-b2-w5",
+    "levelId": "de-b2",
+    "title": "B2 — ablehnen",
+    "subtitle": "B2",
+    "order": 5,
+    "description": "Learn the word ablehnen.",
+    "lessonIds": [
+      "u-de-b2-w5-l1"
+    ],
+    "subtitle_en": "B2",
+    "subtitle_id": "B2",
+    "description_en": "Learn the word ablehnen.",
+    "description_id": "Pelajari kata ablehnen."
+  },
+  {
+    "id": "u-de-b2-w6",
+    "levelId": "de-b2",
+    "title": "B2 — Ablehnung",
+    "subtitle": "B2",
+    "order": 6,
+    "description": "Learn the word Ablehnung.",
+    "lessonIds": [
+      "u-de-b2-w6-l1"
+    ],
+    "subtitle_en": "B2",
+    "subtitle_id": "B2",
+    "description_en": "Learn the word Ablehnung.",
+    "description_id": "Pelajari kata Ablehnung."
+  },
+  {
+    "id": "u-de-b2-w7",
+    "levelId": "de-b2",
+    "title": "B2 — Absicht",
+    "subtitle": "B2",
+    "order": 7,
+    "description": "Learn the word Absicht.",
+    "lessonIds": [
+      "u-de-b2-w7-l1"
+    ],
+    "subtitle_en": "B2",
+    "subtitle_id": "B2",
+    "description_en": "Learn the word Absicht.",
+    "description_id": "Pelajari kata Absicht."
+  },
+  {
+    "id": "u-de-b2-w8",
+    "levelId": "de-b2",
+    "title": "B2 — Aktie",
+    "subtitle": "B2",
+    "order": 8,
+    "description": "Learn the word Aktie.",
+    "lessonIds": [
+      "u-de-b2-w8-l1"
+    ],
+    "subtitle_en": "B2",
+    "subtitle_id": "B2",
+    "description_en": "Learn the word Aktie.",
+    "description_id": "Pelajari kata Aktie."
+  },
+  {
+    "id": "u-de-b2-w9",
+    "levelId": "de-b2",
+    "title": "B2 — aktuell",
+    "subtitle": "B2",
+    "order": 9,
+    "description": "Learn the word aktuell.",
+    "lessonIds": [
+      "u-de-b2-w9-l1"
+    ],
+    "subtitle_en": "B2",
+    "subtitle_id": "B2",
+    "description_en": "Learn the word aktuell.",
+    "description_id": "Pelajari kata aktuell."
+  },
+  {
+    "id": "u-de-b2-w10",
+    "levelId": "de-b2",
+    "title": "B2 — Analyse",
+    "subtitle": "B2",
+    "order": 10,
+    "description": "Learn the word Analyse.",
+    "lessonIds": [
+      "u-de-b2-w10-l1"
+    ],
+    "subtitle_en": "B2",
+    "subtitle_id": "B2",
+    "description_en": "Learn the word Analyse.",
+    "description_id": "Pelajari kata Analyse."
+  },
+  {
+    "id": "u-de-c1-w7",
+    "levelId": "de-c1",
+    "title": "C1 — abbauen",
+    "subtitle": "C1",
+    "order": 7,
+    "description": "Learn the word abbauen.",
+    "lessonIds": [
+      "u-de-c1-w7-l1"
+    ],
+    "subtitle_en": "C1",
+    "subtitle_id": "C1",
+    "description_en": "Learn the word abbauen.",
+    "description_id": "Pelajari kata abbauen."
+  },
+  {
+    "id": "u-de-c1-w8",
+    "levelId": "de-c1",
+    "title": "C1 — Abgeordnete",
+    "subtitle": "C1",
+    "order": 8,
+    "description": "Learn the word Abgeordnete.",
+    "lessonIds": [
+      "u-de-c1-w8-l1"
+    ],
+    "subtitle_en": "C1",
+    "subtitle_id": "C1",
+    "description_en": "Learn the word Abgeordnete.",
+    "description_id": "Pelajari kata Abgeordnete."
+  },
+  {
+    "id": "u-de-c1-w9",
+    "levelId": "de-c1",
+    "title": "C1 — abgrenzen",
+    "subtitle": "C1",
+    "order": 9,
+    "description": "Learn the word abgrenzen.",
+    "lessonIds": [
+      "u-de-c1-w9-l1"
+    ],
+    "subtitle_en": "C1",
+    "subtitle_id": "C1",
+    "description_en": "Learn the word abgrenzen.",
+    "description_id": "Pelajari kata abgrenzen."
+  },
+  {
+    "id": "u-de-c1-w10",
+    "levelId": "de-c1",
+    "title": "C1 — Abgrenzung",
+    "subtitle": "C1",
+    "order": 10,
+    "description": "Learn the word Abgrenzung.",
+    "lessonIds": [
+      "u-de-c1-w10-l1"
+    ],
+    "subtitle_en": "C1",
+    "subtitle_id": "C1",
+    "description_en": "Learn the word Abgrenzung.",
+    "description_id": "Pelajari kata Abgrenzung."
+  },
+  {
+    "id": "u-de-c2-w4",
+    "levelId": "de-c2",
+    "title": "C2 — abebben",
+    "subtitle": "C2",
+    "order": 4,
+    "description": "Learn the word abebben.",
+    "lessonIds": [
+      "u-de-c2-w4-l1"
+    ],
+    "subtitle_en": "C2",
+    "subtitle_id": "C2",
+    "description_en": "Learn the word abebben.",
+    "description_id": "Pelajari kata abebben."
+  },
+  {
+    "id": "u-de-c2-w5",
+    "levelId": "de-c2",
+    "title": "C2 — abflauen",
+    "subtitle": "C2",
+    "order": 5,
+    "description": "Learn the word abflauen.",
+    "lessonIds": [
+      "u-de-c2-w5-l1"
+    ],
+    "subtitle_en": "C2",
+    "subtitle_id": "C2",
+    "description_en": "Learn the word abflauen.",
+    "description_id": "Pelajari kata abflauen."
+  },
+  {
+    "id": "u-de-c2-w6",
+    "levelId": "de-c2",
+    "title": "C2 — abgründig",
+    "subtitle": "C2",
+    "order": 6,
+    "description": "Learn the word abgründig.",
+    "lessonIds": [
+      "u-de-c2-w6-l1"
+    ],
+    "subtitle_en": "C2",
+    "subtitle_id": "C2",
+    "description_en": "Learn the word abgründig.",
+    "description_id": "Pelajari kata abgründig."
+  },
+  {
+    "id": "u-de-c2-w7",
+    "levelId": "de-c2",
+    "title": "C2 — abmildern",
+    "subtitle": "C2",
+    "order": 7,
+    "description": "Learn the word abmildern.",
+    "lessonIds": [
+      "u-de-c2-w7-l1"
+    ],
+    "subtitle_en": "C2",
+    "subtitle_id": "C2",
+    "description_en": "Learn the word abmildern.",
+    "description_id": "Pelajari kata abmildern."
+  },
+  {
+    "id": "u-de-c2-w8",
+    "levelId": "de-c2",
+    "title": "C2 — abnutzen",
+    "subtitle": "C2",
+    "order": 8,
+    "description": "Learn the word abnutzen.",
+    "lessonIds": [
+      "u-de-c2-w8-l1"
+    ],
+    "subtitle_en": "C2",
+    "subtitle_id": "C2",
+    "description_en": "Learn the word abnutzen.",
+    "description_id": "Pelajari kata abnutzen."
+  },
+  {
+    "id": "u-de-c2-w9",
+    "levelId": "de-c2",
+    "title": "C2 — Abnutzung",
+    "subtitle": "C2",
+    "order": 9,
+    "description": "Learn the word Abnutzung.",
+    "lessonIds": [
+      "u-de-c2-w9-l1"
+    ],
+    "subtitle_en": "C2",
+    "subtitle_id": "C2",
+    "description_en": "Learn the word Abnutzung.",
+    "description_id": "Pelajari kata Abnutzung."
+  },
+  {
+    "id": "u-de-c2-w10",
+    "levelId": "de-c2",
+    "title": "C2 — abstecken",
+    "subtitle": "C2",
+    "order": 10,
+    "description": "Learn the word abstecken.",
+    "lessonIds": [
+      "u-de-c2-w10-l1"
+    ],
+    "subtitle_en": "C2",
+    "subtitle_id": "C2",
+    "description_en": "Learn the word abstecken.",
+    "description_id": "Pelajari kata abstecken."
   }
 ]

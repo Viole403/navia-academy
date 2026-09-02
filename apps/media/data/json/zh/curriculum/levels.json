@@ -94,7 +94,16 @@
       "Reach 300 words and 150 characters"
     ],
     "unitIds": [
-      "u-hsk-hsk2-read"
+      "u-hsk-hsk2-read",
+      "u-zh-hsk2-w10",
+      "u-zh-hsk2-w2",
+      "u-zh-hsk2-w3",
+      "u-zh-hsk2-w4",
+      "u-zh-hsk2-w5",
+      "u-zh-hsk2-w6",
+      "u-zh-hsk2-w7",
+      "u-zh-hsk2-w8",
+      "u-zh-hsk2-w9"
     ],
     "estimatedHours": 80
   },
@@ -114,7 +123,16 @@
       "Reach 600 words and 300 characters"
     ],
     "unitIds": [
-      "u-hsk-hsk3-read"
+      "u-hsk-hsk3-read",
+      "u-zh-hsk3-w10",
+      "u-zh-hsk3-w2",
+      "u-zh-hsk3-w3",
+      "u-zh-hsk3-w4",
+      "u-zh-hsk3-w5",
+      "u-zh-hsk3-w6",
+      "u-zh-hsk3-w7",
+      "u-zh-hsk3-w8",
+      "u-zh-hsk3-w9"
     ],
     "estimatedHours": 110
   },
@@ -134,7 +152,16 @@
       "Reach 1,200 words"
     ],
     "unitIds": [
-      "u-hsk-hsk4-read"
+      "u-hsk-hsk4-read",
+      "u-zh-hsk4-w10",
+      "u-zh-hsk4-w2",
+      "u-zh-hsk4-w3",
+      "u-zh-hsk4-w4",
+      "u-zh-hsk4-w5",
+      "u-zh-hsk4-w6",
+      "u-zh-hsk4-w7",
+      "u-zh-hsk4-w8",
+      "u-zh-hsk4-w9"
     ],
     "estimatedHours": 150
   },
@@ -154,7 +181,16 @@
       "Reach 2,500 words"
     ],
     "unitIds": [
-      "u-hsk-hsk5-read"
+      "u-hsk-hsk5-read",
+      "u-zh-hsk5-w10",
+      "u-zh-hsk5-w2",
+      "u-zh-hsk5-w3",
+      "u-zh-hsk5-w4",
+      "u-zh-hsk5-w5",
+      "u-zh-hsk5-w6",
+      "u-zh-hsk5-w7",
+      "u-zh-hsk5-w8",
+      "u-zh-hsk5-w9"
     ],
     "estimatedHours": 220
   },
@@ -174,7 +210,16 @@
       "Reach 5,000 words"
     ],
     "unitIds": [
-      "u-hsk-hsk6-read"
+      "u-hsk-hsk6-read",
+      "u-zh-hsk6-w10",
+      "u-zh-hsk6-w2",
+      "u-zh-hsk6-w3",
+      "u-zh-hsk6-w4",
+      "u-zh-hsk6-w5",
+      "u-zh-hsk6-w6",
+      "u-zh-hsk6-w7",
+      "u-zh-hsk6-w8",
+      "u-zh-hsk6-w9"
     ],
     "estimatedHours": 300
   },
@@ -192,7 +237,18 @@
       "Understand standard dialects and regional variants of the standard",
       "Produce high-level professional texts"
     ],
-    "unitIds": [],
+    "unitIds": [
+      "u-zh-hsk79-w1",
+      "u-zh-hsk79-w10",
+      "u-zh-hsk79-w2",
+      "u-zh-hsk79-w3",
+      "u-zh-hsk79-w4",
+      "u-zh-hsk79-w5",
+      "u-zh-hsk79-w6",
+      "u-zh-hsk79-w7",
+      "u-zh-hsk79-w8",
+      "u-zh-hsk79-w9"
+    ],
     "estimatedHours": 500
   },
   {
@@ -213,7 +269,15 @@
     ],
     "unitIds": [
       "u-tocfl-n1-intro",
-      "u-tocfl-tocfl-n1-read"
+      "u-tocfl-tocfl-n1-read",
+      "u-zh-tocfl-novice1-w10",
+      "u-zh-tocfl-novice1-w3",
+      "u-zh-tocfl-novice1-w4",
+      "u-zh-tocfl-novice1-w5",
+      "u-zh-tocfl-novice1-w6",
+      "u-zh-tocfl-novice1-w7",
+      "u-zh-tocfl-novice1-w8",
+      "u-zh-tocfl-novice1-w9"
     ],
     "estimatedHours": 40
   },
@@ -235,7 +299,15 @@
     ],
     "unitIds": [
       "u-tocfl-n2-life",
-      "u-tocfl-tocfl-n2-read"
+      "u-tocfl-tocfl-n2-read",
+      "u-zh-tocfl-novice2-w10",
+      "u-zh-tocfl-novice2-w3",
+      "u-zh-tocfl-novice2-w4",
+      "u-zh-tocfl-novice2-w5",
+      "u-zh-tocfl-novice2-w6",
+      "u-zh-tocfl-novice2-w7",
+      "u-zh-tocfl-novice2-w8",
+      "u-zh-tocfl-novice2-w9"
     ],
     "estimatedHours": 45
   },
@@ -248,7 +320,16 @@
     "subtitle": "Taiwan Mandarin",
     "description": "Practice exam-level content for TOCFL Level 5: readings, dialogues, and summaries.",
     "unitIds": [
-      "u-tocfl-tocfl-l5-read"
+      "u-tocfl-tocfl-l5-read",
+      "u-zh-tocfl-level5-w10",
+      "u-zh-tocfl-level5-w2",
+      "u-zh-tocfl-level5-w3",
+      "u-zh-tocfl-level5-w4",
+      "u-zh-tocfl-level5-w5",
+      "u-zh-tocfl-level5-w6",
+      "u-zh-tocfl-level5-w7",
+      "u-zh-tocfl-level5-w8",
+      "u-zh-tocfl-level5-w9"
     ]
   },
   {
@@ -260,7 +341,16 @@
     "subtitle": "Taiwan Mandarin",
     "description": "Practice exam-level content for TOCFL Level 3: readings, dialogues, and summaries.",
     "unitIds": [
-      "u-tocfl-tocfl-l3-read"
+      "u-tocfl-tocfl-l3-read",
+      "u-zh-tocfl-level3-w10",
+      "u-zh-tocfl-level3-w2",
+      "u-zh-tocfl-level3-w3",
+      "u-zh-tocfl-level3-w4",
+      "u-zh-tocfl-level3-w5",
+      "u-zh-tocfl-level3-w6",
+      "u-zh-tocfl-level3-w7",
+      "u-zh-tocfl-level3-w8",
+      "u-zh-tocfl-level3-w9"
     ]
   },
   {
@@ -272,7 +362,16 @@
     "subtitle": "Taiwan Mandarin",
     "description": "Practice exam-level content for TOCFL Level 2: readings, dialogues, and summaries.",
     "unitIds": [
-      "u-tocfl-tocfl-l2-read"
+      "u-tocfl-tocfl-l2-read",
+      "u-zh-tocfl-level2-w10",
+      "u-zh-tocfl-level2-w2",
+      "u-zh-tocfl-level2-w3",
+      "u-zh-tocfl-level2-w4",
+      "u-zh-tocfl-level2-w5",
+      "u-zh-tocfl-level2-w6",
+      "u-zh-tocfl-level2-w7",
+      "u-zh-tocfl-level2-w8",
+      "u-zh-tocfl-level2-w9"
     ]
   },
   {
@@ -284,7 +383,16 @@
     "subtitle": "Taiwan Mandarin",
     "description": "Practice exam-level content for TOCFL Level 1: readings, dialogues, and summaries.",
     "unitIds": [
-      "u-tocfl-tocfl-l1-read"
+      "u-tocfl-tocfl-l1-read",
+      "u-zh-tocfl-level1-w10",
+      "u-zh-tocfl-level1-w2",
+      "u-zh-tocfl-level1-w3",
+      "u-zh-tocfl-level1-w4",
+      "u-zh-tocfl-level1-w5",
+      "u-zh-tocfl-level1-w6",
+      "u-zh-tocfl-level1-w7",
+      "u-zh-tocfl-level1-w8",
+      "u-zh-tocfl-level1-w9"
     ]
   },
   {
@@ -296,7 +404,16 @@
     "subtitle": "Taiwan Mandarin",
     "description": "Practice exam-level content for TOCFL Level 4: readings, dialogues, and summaries.",
     "unitIds": [
-      "u-tocfl-tocfl-l4-read"
+      "u-tocfl-tocfl-l4-read",
+      "u-zh-tocfl-level4-w10",
+      "u-zh-tocfl-level4-w2",
+      "u-zh-tocfl-level4-w3",
+      "u-zh-tocfl-level4-w4",
+      "u-zh-tocfl-level4-w5",
+      "u-zh-tocfl-level4-w6",
+      "u-zh-tocfl-level4-w7",
+      "u-zh-tocfl-level4-w8",
+      "u-zh-tocfl-level4-w9"
     ]
   },
   {
@@ -308,7 +425,16 @@
     "subtitle": "Young Learner",
     "description": "Practice exam-level content for HSK 7: readings, dialogues, and summaries.",
     "unitIds": [
-      "u-hsk-hsk7-read"
+      "u-hsk-hsk7-read",
+      "u-zh-hsk7-w10",
+      "u-zh-hsk7-w2",
+      "u-zh-hsk7-w3",
+      "u-zh-hsk7-w4",
+      "u-zh-hsk7-w5",
+      "u-zh-hsk7-w6",
+      "u-zh-hsk7-w7",
+      "u-zh-hsk7-w8",
+      "u-zh-hsk7-w9"
     ]
   }
 ]

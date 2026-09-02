@@ -2342,5 +2342,425 @@
     "subtitle_id": "Four Seasons",
     "description_en": "Practice four seasons.",
     "description_id": "Latihan four seasons."
+  },
+  {
+    "id": "u-ja-n3-w2",
+    "levelId": "ja-n3",
+    "title": "N3 — アイスクリーム",
+    "subtitle": "N3",
+    "order": 2,
+    "description": "Learn the word アイスクリーム.",
+    "lessonIds": [
+      "u-ja-n3-w2-l1"
+    ],
+    "subtitle_en": "N3",
+    "subtitle_id": "N3",
+    "description_en": "Learn the word アイスクリーム.",
+    "description_id": "Pelajari kata アイスクリーム."
+  },
+  {
+    "id": "u-ja-n3-w3",
+    "levelId": "ja-n3",
+    "title": "N3 — あいにく",
+    "subtitle": "N3",
+    "order": 3,
+    "description": "Learn the word あいにく.",
+    "lessonIds": [
+      "u-ja-n3-w3-l1"
+    ],
+    "subtitle_en": "N3",
+    "subtitle_id": "N3",
+    "description_en": "Learn the word あいにく.",
+    "description_id": "Pelajari kata あいにく."
+  },
+  {
+    "id": "u-ja-n3-w4",
+    "levelId": "ja-n3",
+    "title": "N3 — アイロン",
+    "subtitle": "N3",
+    "order": 4,
+    "description": "Learn the word アイロン.",
+    "lessonIds": [
+      "u-ja-n3-w4-l1"
+    ],
+    "subtitle_en": "N3",
+    "subtitle_id": "N3",
+    "description_en": "Learn the word アイロン.",
+    "description_id": "Pelajari kata アイロン."
+  },
+  {
+    "id": "u-ja-n3-w5",
+    "levelId": "ja-n3",
+    "title": "N3 — アウト",
+    "subtitle": "N3",
+    "order": 5,
+    "description": "Learn the word アウト.",
+    "lessonIds": [
+      "u-ja-n3-w5-l1"
+    ],
+    "subtitle_en": "N3",
+    "subtitle_id": "N3",
+    "description_en": "Learn the word アウト.",
+    "description_id": "Pelajari kata アウト."
+  },
+  {
+    "id": "u-ja-n3-w6",
+    "levelId": "ja-n3",
+    "title": "N3 — あした",
+    "subtitle": "N3",
+    "order": 6,
+    "description": "Learn the word あした.",
+    "lessonIds": [
+      "u-ja-n3-w6-l1"
+    ],
+    "subtitle_en": "N3",
+    "subtitle_id": "N3",
+    "description_en": "Learn the word あした.",
+    "description_id": "Pelajari kata あした."
+  },
+  {
+    "id": "u-ja-n3-w7",
+    "levelId": "ja-n3",
+    "title": "N3 — あちこち",
+    "subtitle": "N3",
+    "order": 7,
+    "description": "Learn the word あちこち.",
+    "lessonIds": [
+      "u-ja-n3-w7-l1"
+    ],
+    "subtitle_en": "N3",
+    "subtitle_id": "N3",
+    "description_en": "Learn the word あちこち.",
+    "description_id": "Pelajari kata あちこち."
+  },
+  {
+    "id": "u-ja-n3-w8",
+    "levelId": "ja-n3",
+    "title": "N3 — あっ",
+    "subtitle": "N3",
+    "order": 8,
+    "description": "Learn the word あっ.",
+    "lessonIds": [
+      "u-ja-n3-w8-l1"
+    ],
+    "subtitle_en": "N3",
+    "subtitle_id": "N3",
+    "description_en": "Learn the word あっ.",
+    "description_id": "Pelajari kata あっ."
+  },
+  {
+    "id": "u-ja-n3-w9",
+    "levelId": "ja-n3",
+    "title": "N3 — あと",
+    "subtitle": "N3",
+    "order": 9,
+    "description": "Learn the word あと.",
+    "lessonIds": [
+      "u-ja-n3-w9-l1"
+    ],
+    "subtitle_en": "N3",
+    "subtitle_id": "N3",
+    "description_en": "Learn the word あと.",
+    "description_id": "Pelajari kata あと."
+  },
+  {
+    "id": "u-ja-n3-w10",
+    "levelId": "ja-n3",
+    "title": "N3 — あらゆる",
+    "subtitle": "N3",
+    "order": 10,
+    "description": "Learn the word あらゆる.",
+    "lessonIds": [
+      "u-ja-n3-w10-l1"
+    ],
+    "subtitle_en": "N3",
+    "subtitle_id": "N3",
+    "description_en": "Learn the word あらゆる.",
+    "description_id": "Pelajari kata あらゆる."
+  },
+  {
+    "id": "u-ja-n2-w2",
+    "levelId": "ja-n2",
+    "title": "N2 — あいかわらず",
+    "subtitle": "N2",
+    "order": 2,
+    "description": "Learn the word あいかわらず.",
+    "lessonIds": [
+      "u-ja-n2-w2-l1"
+    ],
+    "subtitle_en": "N2",
+    "subtitle_id": "N2",
+    "description_en": "Learn the word あいかわらず.",
+    "description_id": "Pelajari kata あいかわらず."
+  },
+  {
+    "id": "u-ja-n2-w3",
+    "levelId": "ja-n2",
+    "title": "N2 — アイデア/アイディア",
+    "subtitle": "N2",
+    "order": 3,
+    "description": "Learn the word アイデア/アイディア.",
+    "lessonIds": [
+      "u-ja-n2-w3-l1"
+    ],
+    "subtitle_en": "N2",
+    "subtitle_id": "N2",
+    "description_en": "Learn the word アイデア/アイディア.",
+    "description_id": "Pelajari kata アイデア/アイディア."
+  },
+  {
+    "id": "u-ja-n2-w4",
+    "levelId": "ja-n2",
+    "title": "N2 — あいまい",
+    "subtitle": "N2",
+    "order": 4,
+    "description": "Learn the word あいまい.",
+    "lessonIds": [
+      "u-ja-n2-w4-l1"
+    ],
+    "subtitle_en": "N2",
+    "subtitle_id": "N2",
+    "description_en": "Learn the word あいまい.",
+    "description_id": "Pelajari kata あいまい."
+  },
+  {
+    "id": "u-ja-n2-w5",
+    "levelId": "ja-n2",
+    "title": "N2 — あかんぼう",
+    "subtitle": "N2",
+    "order": 5,
+    "description": "Learn the word あかんぼう.",
+    "lessonIds": [
+      "u-ja-n2-w5-l1"
+    ],
+    "subtitle_en": "N2",
+    "subtitle_id": "N2",
+    "description_en": "Learn the word あかんぼう.",
+    "description_id": "Pelajari kata あかんぼう."
+  },
+  {
+    "id": "u-ja-n2-w6",
+    "levelId": "ja-n2",
+    "title": "N2 — あきれる",
+    "subtitle": "N2",
+    "order": 6,
+    "description": "Learn the word あきれる.",
+    "lessonIds": [
+      "u-ja-n2-w6-l1"
+    ],
+    "subtitle_en": "N2",
+    "subtitle_id": "N2",
+    "description_en": "Learn the word あきれる.",
+    "description_id": "Pelajari kata あきれる."
+  },
+  {
+    "id": "u-ja-n2-w7",
+    "levelId": "ja-n2",
+    "title": "N2 — アクセント",
+    "subtitle": "N2",
+    "order": 7,
+    "description": "Learn the word アクセント.",
+    "lessonIds": [
+      "u-ja-n2-w7-l1"
+    ],
+    "subtitle_en": "N2",
+    "subtitle_id": "N2",
+    "description_en": "Learn the word アクセント.",
+    "description_id": "Pelajari kata アクセント."
+  },
+  {
+    "id": "u-ja-n2-w8",
+    "levelId": "ja-n2",
+    "title": "N2 — あくび",
+    "subtitle": "N2",
+    "order": 8,
+    "description": "Learn the word あくび.",
+    "lessonIds": [
+      "u-ja-n2-w8-l1"
+    ],
+    "subtitle_en": "N2",
+    "subtitle_id": "N2",
+    "description_en": "Learn the word あくび.",
+    "description_id": "Pelajari kata あくび."
+  },
+  {
+    "id": "u-ja-n2-w9",
+    "levelId": "ja-n2",
+    "title": "N2 — あたりまえ",
+    "subtitle": "N2",
+    "order": 9,
+    "description": "Learn the word あたりまえ.",
+    "lessonIds": [
+      "u-ja-n2-w9-l1"
+    ],
+    "subtitle_en": "N2",
+    "subtitle_id": "N2",
+    "description_en": "Learn the word あたりまえ.",
+    "description_id": "Pelajari kata あたりまえ."
+  },
+  {
+    "id": "u-ja-n2-w10",
+    "levelId": "ja-n2",
+    "title": "N2 — あちらこちら",
+    "subtitle": "N2",
+    "order": 10,
+    "description": "Learn the word あちらこちら.",
+    "lessonIds": [
+      "u-ja-n2-w10-l1"
+    ],
+    "subtitle_en": "N2",
+    "subtitle_id": "N2",
+    "description_en": "Learn the word あちらこちら.",
+    "description_id": "Pelajari kata あちらこちら."
+  },
+  {
+    "id": "u-ja-n1-w1",
+    "levelId": "ja-n1",
+    "title": "N1 — アイデア",
+    "subtitle": "N1",
+    "order": 1,
+    "description": "Learn the word アイデア.",
+    "lessonIds": [
+      "u-ja-n1-w1-l1"
+    ],
+    "subtitle_en": "N1",
+    "subtitle_id": "N1",
+    "description_en": "Learn the word アイデア.",
+    "description_id": "Pelajari kata アイデア."
+  },
+  {
+    "id": "u-ja-n1-w2",
+    "levelId": "ja-n1",
+    "title": "N1 — アクセル",
+    "subtitle": "N1",
+    "order": 2,
+    "description": "Learn the word アクセル.",
+    "lessonIds": [
+      "u-ja-n1-w2-l1"
+    ],
+    "subtitle_en": "N1",
+    "subtitle_id": "N1",
+    "description_en": "Learn the word アクセル.",
+    "description_id": "Pelajari kata アクセル."
+  },
+  {
+    "id": "u-ja-n1-w3",
+    "levelId": "ja-n1",
+    "title": "N1 — あくどい",
+    "subtitle": "N1",
+    "order": 3,
+    "description": "Learn the word あくどい.",
+    "lessonIds": [
+      "u-ja-n1-w3-l1"
+    ],
+    "subtitle_en": "N1",
+    "subtitle_id": "N1",
+    "description_en": "Learn the word あくどい.",
+    "description_id": "Pelajari kata あくどい."
+  },
+  {
+    "id": "u-ja-n1-w4",
+    "levelId": "ja-n1",
+    "title": "N1 — あざ笑う",
+    "subtitle": "N1",
+    "order": 4,
+    "description": "Learn the word あざ笑う.",
+    "lessonIds": [
+      "u-ja-n1-w4-l1"
+    ],
+    "subtitle_en": "N1",
+    "subtitle_id": "N1",
+    "description_en": "Learn the word あざ笑う.",
+    "description_id": "Pelajari kata あざ笑う."
+  },
+  {
+    "id": "u-ja-n1-w5",
+    "levelId": "ja-n1",
+    "title": "N1 — あっさり",
+    "subtitle": "N1",
+    "order": 5,
+    "description": "Learn the word あっさり.",
+    "lessonIds": [
+      "u-ja-n1-w5-l1"
+    ],
+    "subtitle_en": "N1",
+    "subtitle_id": "N1",
+    "description_en": "Learn the word あっさり.",
+    "description_id": "Pelajari kata あっさり."
+  },
+  {
+    "id": "u-ja-n1-w6",
+    "levelId": "ja-n1",
+    "title": "N1 — アップ",
+    "subtitle": "N1",
+    "order": 6,
+    "description": "Learn the word アップ.",
+    "lessonIds": [
+      "u-ja-n1-w6-l1"
+    ],
+    "subtitle_en": "N1",
+    "subtitle_id": "N1",
+    "description_en": "Learn the word アップ.",
+    "description_id": "Pelajari kata アップ."
+  },
+  {
+    "id": "u-ja-n1-w7",
+    "levelId": "ja-n1",
+    "title": "N1 — アプローチ",
+    "subtitle": "N1",
+    "order": 7,
+    "description": "Learn the word アプローチ.",
+    "lessonIds": [
+      "u-ja-n1-w7-l1"
+    ],
+    "subtitle_en": "N1",
+    "subtitle_id": "N1",
+    "description_en": "Learn the word アプローチ.",
+    "description_id": "Pelajari kata アプローチ."
+  },
+  {
+    "id": "u-ja-n1-w8",
+    "levelId": "ja-n1",
+    "title": "N1 — あべこべ",
+    "subtitle": "N1",
+    "order": 8,
+    "description": "Learn the word あべこべ.",
+    "lessonIds": [
+      "u-ja-n1-w8-l1"
+    ],
+    "subtitle_en": "N1",
+    "subtitle_id": "N1",
+    "description_en": "Learn the word あべこべ.",
+    "description_id": "Pelajari kata あべこべ."
+  },
+  {
+    "id": "u-ja-n1-w9",
+    "levelId": "ja-n1",
+    "title": "N1 — アマチュア",
+    "subtitle": "N1",
+    "order": 9,
+    "description": "Learn the word アマチュア.",
+    "lessonIds": [
+      "u-ja-n1-w9-l1"
+    ],
+    "subtitle_en": "N1",
+    "subtitle_id": "N1",
+    "description_en": "Learn the word アマチュア.",
+    "description_id": "Pelajari kata アマチュア."
+  },
+  {
+    "id": "u-ja-n1-w10",
+    "levelId": "ja-n1",
+    "title": "N1 — あやふや",
+    "subtitle": "N1",
+    "order": 10,
+    "description": "Learn the word あやふや.",
+    "lessonIds": [
+      "u-ja-n1-w10-l1"
+    ],
+    "subtitle_en": "N1",
+    "subtitle_id": "N1",
+    "description_en": "Learn the word あやふや.",
+    "description_id": "Pelajari kata あやふや."
   }
 ]

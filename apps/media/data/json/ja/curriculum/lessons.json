@@ -4559,5 +4559,2340 @@
     ],
     "subtitle_en": "Four Seasons",
     "subtitle_id": "Four Seasons"
+  },
+  {
+    "id": "u-ja-n3-w2-l1",
+    "unitId": "u-ja-n3-w2",
+    "title": "アイスクリーム",
+    "subtitle": "N3",
+    "order": 1,
+    "durationMin": 10,
+    "xp": 40,
+    "objectives": [
+      "Learn the word «アイスクリーム»",
+      "Read it in context"
+    ],
+    "steps": [
+      {
+        "type": "intro",
+        "title": "アイスクリーム",
+        "body": [
+          "Today we focus on the word «アイスクリーム» (aisukurimu).",
+          "It means: ice cream."
+        ]
+      },
+      {
+        "type": "explanation",
+        "title": "About «アイスクリーム»",
+        "body": [
+          "«アイスクリーム» (aisukurimu) means «ice cream»."
+        ]
+      },
+      {
+        "type": "reading",
+        "title": "«アイスクリーム» in context",
+        "paragraphs": [
+          {
+            "text": "アイスクリームが好きだ。",
+            "hanzi": "アイスクリームが好きだ。",
+            "pinyin": "aisukurimugakida",
+            "romanization": "aisukurimugakida",
+            "translation": "I like ice cream.",
+            "translation_en": "I like ice cream.",
+            "translation_id": "I like ice cream."
+          }
+        ]
+      },
+      {
+        "type": "exercise",
+        "title": "Quick check",
+        "exercise": {
+          "id": "e-u-ja-n3-w2-1",
+          "type": "multiple-choice",
+          "prompt": "What does «アイスクリーム» mean?",
+          "options": [
+            {
+              "id": "o0",
+              "label": "ice cream"
+            },
+            {
+              "id": "o1",
+              "label": "A different word"
+            },
+            {
+              "id": "o2",
+              "label": "Another meaning"
+            },
+            {
+              "id": "o3",
+              "label": "Not sure"
+            }
+          ],
+          "correct": "o0",
+          "skill": "reading",
+          "explanation": "«アイスクリーム» means «ice cream»."
+        }
+      },
+      {
+        "type": "summary",
+        "title": "Summary",
+        "body": [
+          "«アイスクリーム» (aisukurimu) = ice cream.",
+          "Practice this word in the reading exercises."
+        ]
+      }
+    ],
+    "subtitle_en": "N3",
+    "subtitle_id": "N3"
+  },
+  {
+    "id": "u-ja-n3-w3-l1",
+    "unitId": "u-ja-n3-w3",
+    "title": "あいにく",
+    "subtitle": "N3",
+    "order": 1,
+    "durationMin": 10,
+    "xp": 40,
+    "objectives": [
+      "Learn the word «あいにく»",
+      "Read it in context"
+    ],
+    "steps": [
+      {
+        "type": "intro",
+        "title": "あいにく",
+        "body": [
+          "Today we focus on the word «あいにく» (ainiku).",
+          "It means: unfortunately / Sorry / but....."
+        ]
+      },
+      {
+        "type": "explanation",
+        "title": "About «あいにく»",
+        "body": [
+          "«あいにく» (ainiku) means «unfortunately / Sorry / but....»."
+        ]
+      },
+      {
+        "type": "reading",
+        "title": "«あいにく» in context",
+        "paragraphs": [
+          {
+            "text": "あいにく話中です。",
+            "hanzi": "あいにく話中です。",
+            "pinyin": "ainikudesu",
+            "romanization": "ainikudesu",
+            "translation": "I'm afraid the line is busy.",
+            "translation_en": "I'm afraid the line is busy.",
+            "translation_id": "I'm afraid the line is busy."
+          }
+        ]
+      },
+      {
+        "type": "exercise",
+        "title": "Quick check",
+        "exercise": {
+          "id": "e-u-ja-n3-w3-1",
+          "type": "multiple-choice",
+          "prompt": "What does «あいにく» mean?",
+          "options": [
+            {
+              "id": "o0",
+              "label": "unfortunately / Sorry / but...."
+            },
+            {
+              "id": "o1",
+              "label": "A different word"
+            },
+            {
+              "id": "o2",
+              "label": "Another meaning"
+            },
+            {
+              "id": "o3",
+              "label": "Not sure"
+            }
+          ],
+          "correct": "o0",
+          "skill": "reading",
+          "explanation": "«あいにく» means «unfortunately / Sorry / but....»."
+        }
+      },
+      {
+        "type": "summary",
+        "title": "Summary",
+        "body": [
+          "«あいにく» (ainiku) = unfortunately / Sorry / but.....",
+          "Practice this word in the reading exercises."
+        ]
+      }
+    ],
+    "subtitle_en": "N3",
+    "subtitle_id": "N3"
+  },
+  {
+    "id": "u-ja-n3-w4-l1",
+    "unitId": "u-ja-n3-w4",
+    "title": "アイロン",
+    "subtitle": "N3",
+    "order": 1,
+    "durationMin": 10,
+    "xp": 40,
+    "objectives": [
+      "Learn the word «アイロン»",
+      "Read it in context"
+    ],
+    "steps": [
+      {
+        "type": "intro",
+        "title": "アイロン",
+        "body": [
+          "Today we focus on the word «アイロン» (airon).",
+          "It means: (electric) iron."
+        ]
+      },
+      {
+        "type": "explanation",
+        "title": "About «アイロン»",
+        "body": [
+          "«アイロン» (airon) means «(electric) iron»."
+        ]
+      },
+      {
+        "type": "reading",
+        "title": "«アイロン» in context",
+        "paragraphs": [
+          {
+            "text": "アイロンがけ、大っ嫌い。",
+            "hanzi": "アイロンがけ、大っ嫌い。",
+            "pinyin": "airongakei",
+            "romanization": "airongakei",
+            "translation": "I hate ironing.",
+            "translation_en": "I hate ironing.",
+            "translation_id": "I hate ironing."
+          }
+        ]
+      },
+      {
+        "type": "exercise",
+        "title": "Quick check",
+        "exercise": {
+          "id": "e-u-ja-n3-w4-1",
+          "type": "multiple-choice",
+          "prompt": "What does «アイロン» mean?",
+          "options": [
+            {
+              "id": "o0",
+              "label": "(electric) iron"
+            },
+            {
+              "id": "o1",
+              "label": "A different word"
+            },
+            {
+              "id": "o2",
+              "label": "Another meaning"
+            },
+            {
+              "id": "o3",
+              "label": "Not sure"
+            }
+          ],
+          "correct": "o0",
+          "skill": "reading",
+          "explanation": "«アイロン» means «(electric) iron»."
+        }
+      },
+      {
+        "type": "summary",
+        "title": "Summary",
+        "body": [
+          "«アイロン» (airon) = (electric) iron.",
+          "Practice this word in the reading exercises."
+        ]
+      }
+    ],
+    "subtitle_en": "N3",
+    "subtitle_id": "N3"
+  },
+  {
+    "id": "u-ja-n3-w5-l1",
+    "unitId": "u-ja-n3-w5",
+    "title": "アウト",
+    "subtitle": "N3",
+    "order": 1,
+    "durationMin": 10,
+    "xp": 40,
+    "objectives": [
+      "Learn the word «アウト»",
+      "Read it in context"
+    ],
+    "steps": [
+      {
+        "type": "intro",
+        "title": "アウト",
+        "body": [
+          "Today we focus on the word «アウト» (auto).",
+          "It means: out."
+        ]
+      },
+      {
+        "type": "explanation",
+        "title": "About «アウト»",
+        "body": [
+          "«アウト» (auto) means «out»."
+        ]
+      },
+      {
+        "type": "reading",
+        "title": "«アウト» in context",
+        "paragraphs": [
+          {
+            "text": "テイクアウトしよう。",
+            "hanzi": "テイクアウトしよう。",
+            "pinyin": "テイクアウトshiyou。",
+            "romanization": "テイクアウトshiyou。",
+            "translation": "Let's get takeout.",
+            "translation_en": "Let's get takeout.",
+            "translation_id": "Let's get takeout."
+          }
+        ]
+      },
+      {
+        "type": "exercise",
+        "title": "Quick check",
+        "exercise": {
+          "id": "e-u-ja-n3-w5-1",
+          "type": "multiple-choice",
+          "prompt": "What does «アウト» mean?",
+          "options": [
+            {
+              "id": "o0",
+              "label": "out"
+            },
+            {
+              "id": "o1",
+              "label": "A different word"
+            },
+            {
+              "id": "o2",
+              "label": "Another meaning"
+            },
+            {
+              "id": "o3",
+              "label": "Not sure"
+            }
+          ],
+          "correct": "o0",
+          "skill": "reading",
+          "explanation": "«アウト» means «out»."
+        }
+      },
+      {
+        "type": "summary",
+        "title": "Summary",
+        "body": [
+          "«アウト» (auto) = out.",
+          "Practice this word in the reading exercises."
+        ]
+      }
+    ],
+    "subtitle_en": "N3",
+    "subtitle_id": "N3"
+  },
+  {
+    "id": "u-ja-n3-w6-l1",
+    "unitId": "u-ja-n3-w6",
+    "title": "あした",
+    "subtitle": "N3",
+    "order": 1,
+    "durationMin": 10,
+    "xp": 40,
+    "objectives": [
+      "Learn the word «あした»",
+      "Read it in context"
+    ],
+    "steps": [
+      {
+        "type": "intro",
+        "title": "あした",
+        "body": [
+          "Today we focus on the word «あした» (ashita).",
+          "It means: tomorrow."
+        ]
+      },
+      {
+        "type": "explanation",
+        "title": "About «あした»",
+        "body": [
+          "«あした» (ashita) means «tomorrow»."
+        ]
+      },
+      {
+        "type": "reading",
+        "title": "«あした» in context",
+        "paragraphs": [
+          {
+            "text": "またあしたね。",
+            "hanzi": "またあしたね。",
+            "pinyin": "mataashitane。",
+            "romanization": "mataashitane。",
+            "translation": "See you tomorrow!",
+            "translation_en": "See you tomorrow!",
+            "translation_id": "See you tomorrow!"
+          }
+        ]
+      },
+      {
+        "type": "exercise",
+        "title": "Quick check",
+        "exercise": {
+          "id": "e-u-ja-n3-w6-1",
+          "type": "multiple-choice",
+          "prompt": "What does «あした» mean?",
+          "options": [
+            {
+              "id": "o0",
+              "label": "tomorrow"
+            },
+            {
+              "id": "o1",
+              "label": "A different word"
+            },
+            {
+              "id": "o2",
+              "label": "Another meaning"
+            },
+            {
+              "id": "o3",
+              "label": "Not sure"
+            }
+          ],
+          "correct": "o0",
+          "skill": "reading",
+          "explanation": "«あした» means «tomorrow»."
+        }
+      },
+      {
+        "type": "summary",
+        "title": "Summary",
+        "body": [
+          "«あした» (ashita) = tomorrow.",
+          "Practice this word in the reading exercises."
+        ]
+      }
+    ],
+    "subtitle_en": "N3",
+    "subtitle_id": "N3"
+  },
+  {
+    "id": "u-ja-n3-w7-l1",
+    "unitId": "u-ja-n3-w7",
+    "title": "あちこち",
+    "subtitle": "N3",
+    "order": 1,
+    "durationMin": 10,
+    "xp": 40,
+    "objectives": [
+      "Learn the word «あちこち»",
+      "Read it in context"
+    ],
+    "steps": [
+      {
+        "type": "intro",
+        "title": "あちこち",
+        "body": [
+          "Today we focus on the word «あちこち» (achikochi).",
+          "It means: here and there."
+        ]
+      },
+      {
+        "type": "explanation",
+        "title": "About «あちこち»",
+        "body": [
+          "«あちこち» (achikochi) means «here and there»."
+        ]
+      },
+      {
+        "type": "reading",
+        "title": "«あちこち» in context",
+        "paragraphs": [
+          {
+            "text": "あちこち痒いよ。",
+            "hanzi": "あちこち痒いよ。",
+            "pinyin": "achikochiiyo",
+            "romanization": "achikochiiyo",
+            "translation": "I feel itchy everywhere.",
+            "translation_en": "I feel itchy everywhere.",
+            "translation_id": "I feel itchy everywhere."
+          }
+        ]
+      },
+      {
+        "type": "exercise",
+        "title": "Quick check",
+        "exercise": {
+          "id": "e-u-ja-n3-w7-1",
+          "type": "multiple-choice",
+          "prompt": "What does «あちこち» mean?",
+          "options": [
+            {
+              "id": "o0",
+              "label": "here and there"
+            },
+            {
+              "id": "o1",
+              "label": "A different word"
+            },
+            {
+              "id": "o2",
+              "label": "Another meaning"
+            },
+            {
+              "id": "o3",
+              "label": "Not sure"
+            }
+          ],
+          "correct": "o0",
+          "skill": "reading",
+          "explanation": "«あちこち» means «here and there»."
+        }
+      },
+      {
+        "type": "summary",
+        "title": "Summary",
+        "body": [
+          "«あちこち» (achikochi) = here and there.",
+          "Practice this word in the reading exercises."
+        ]
+      }
+    ],
+    "subtitle_en": "N3",
+    "subtitle_id": "N3"
+  },
+  {
+    "id": "u-ja-n3-w8-l1",
+    "unitId": "u-ja-n3-w8",
+    "title": "あっ",
+    "subtitle": "N3",
+    "order": 1,
+    "durationMin": 10,
+    "xp": 40,
+    "objectives": [
+      "Learn the word «あっ»",
+      "Read it in context"
+    ],
+    "steps": [
+      {
+        "type": "intro",
+        "title": "あっ",
+        "body": [
+          "Today we focus on the word «あっ» (a).",
+          "It means: Ah! / Oh!."
+        ]
+      },
+      {
+        "type": "explanation",
+        "title": "About «あっ»",
+        "body": [
+          "«あっ» (a) means «Ah! / Oh!»."
+        ]
+      },
+      {
+        "type": "reading",
+        "title": "«あっ» in context",
+        "paragraphs": [
+          {
+            "text": "何かあった？",
+            "hanzi": "何かあった？",
+            "pinyin": "kaata",
+            "romanization": "kaata",
+            "translation": "Anything new?",
+            "translation_en": "Anything new?",
+            "translation_id": "Anything new?"
+          }
+        ]
+      },
+      {
+        "type": "exercise",
+        "title": "Quick check",
+        "exercise": {
+          "id": "e-u-ja-n3-w8-1",
+          "type": "multiple-choice",
+          "prompt": "What does «あっ» mean?",
+          "options": [
+            {
+              "id": "o0",
+              "label": "Ah! / Oh!"
+            },
+            {
+              "id": "o1",
+              "label": "A different word"
+            },
+            {
+              "id": "o2",
+              "label": "Another meaning"
+            },
+            {
+              "id": "o3",
+              "label": "Not sure"
+            }
+          ],
+          "correct": "o0",
+          "skill": "reading",
+          "explanation": "«あっ» means «Ah! / Oh!»."
+        }
+      },
+      {
+        "type": "summary",
+        "title": "Summary",
+        "body": [
+          "«あっ» (a) = Ah! / Oh!.",
+          "Practice this word in the reading exercises."
+        ]
+      }
+    ],
+    "subtitle_en": "N3",
+    "subtitle_id": "N3"
+  },
+  {
+    "id": "u-ja-n3-w9-l1",
+    "unitId": "u-ja-n3-w9",
+    "title": "あと",
+    "subtitle": "N3",
+    "order": 1,
+    "durationMin": 10,
+    "xp": 40,
+    "objectives": [
+      "Learn the word «あと»",
+      "Read it in context"
+    ],
+    "steps": [
+      {
+        "type": "intro",
+        "title": "あと",
+        "body": [
+          "Today we focus on the word «あと» (ato).",
+          "It means: (1) trace / tracks / (2) remains."
+        ]
+      },
+      {
+        "type": "explanation",
+        "title": "About «あと»",
+        "body": [
+          "«あと» (ato) means «(1) trace / tracks / (2) remains»."
+        ]
+      },
+      {
+        "type": "reading",
+        "title": "«あと» in context",
+        "paragraphs": [
+          {
+            "text": "あと一息だ。",
+            "hanzi": "あと一息だ。",
+            "pinyin": "atoda",
+            "romanization": "atoda",
+            "translation": "We're almost there.",
+            "translation_en": "We're almost there.",
+            "translation_id": "We're almost there."
+          }
+        ]
+      },
+      {
+        "type": "exercise",
+        "title": "Quick check",
+        "exercise": {
+          "id": "e-u-ja-n3-w9-1",
+          "type": "multiple-choice",
+          "prompt": "What does «あと» mean?",
+          "options": [
+            {
+              "id": "o0",
+              "label": "(1) trace / tracks / (2) remains"
+            },
+            {
+              "id": "o1",
+              "label": "A different word"
+            },
+            {
+              "id": "o2",
+              "label": "Another meaning"
+            },
+            {
+              "id": "o3",
+              "label": "Not sure"
+            }
+          ],
+          "correct": "o0",
+          "skill": "reading",
+          "explanation": "«あと» means «(1) trace / tracks / (2) remains»."
+        }
+      },
+      {
+        "type": "summary",
+        "title": "Summary",
+        "body": [
+          "«あと» (ato) = (1) trace / tracks / (2) remains.",
+          "Practice this word in the reading exercises."
+        ]
+      }
+    ],
+    "subtitle_en": "N3",
+    "subtitle_id": "N3"
+  },
+  {
+    "id": "u-ja-n3-w10-l1",
+    "unitId": "u-ja-n3-w10",
+    "title": "あらゆる",
+    "subtitle": "N3",
+    "order": 1,
+    "durationMin": 10,
+    "xp": 40,
+    "objectives": [
+      "Learn the word «あらゆる»",
+      "Read it in context"
+    ],
+    "steps": [
+      {
+        "type": "intro",
+        "title": "あらゆる",
+        "body": [
+          "Today we focus on the word «あらゆる» (arayuru).",
+          "It means: all / every."
+        ]
+      },
+      {
+        "type": "explanation",
+        "title": "About «あらゆる»",
+        "body": [
+          "«あらゆる» (arayuru) means «all / every»."
+        ]
+      },
+      {
+        "type": "reading",
+        "title": "«あらゆる» in context",
+        "paragraphs": [
+          {
+            "text": "あらゆる機会を利用せよ。",
+            "hanzi": "あらゆる機会を利用せよ。",
+            "pinyin": "arayuruwoseyo",
+            "romanization": "arayuruwoseyo",
+            "translation": "You must avail yourself of every opportunity.",
+            "translation_en": "You must avail yourself of every opportunity.",
+            "translation_id": "You must avail yourself of every opportunity."
+          }
+        ]
+      },
+      {
+        "type": "exercise",
+        "title": "Quick check",
+        "exercise": {
+          "id": "e-u-ja-n3-w10-1",
+          "type": "multiple-choice",
+          "prompt": "What does «あらゆる» mean?",
+          "options": [
+            {
+              "id": "o0",
+              "label": "all / every"
+            },
+            {
+              "id": "o1",
+              "label": "A different word"
+            },
+            {
+              "id": "o2",
+              "label": "Another meaning"
+            },
+            {
+              "id": "o3",
+              "label": "Not sure"
+            }
+          ],
+          "correct": "o0",
+          "skill": "reading",
+          "explanation": "«あらゆる» means «all / every»."
+        }
+      },
+      {
+        "type": "summary",
+        "title": "Summary",
+        "body": [
+          "«あらゆる» (arayuru) = all / every.",
+          "Practice this word in the reading exercises."
+        ]
+      }
+    ],
+    "subtitle_en": "N3",
+    "subtitle_id": "N3"
+  },
+  {
+    "id": "u-ja-n2-w2-l1",
+    "unitId": "u-ja-n2-w2",
+    "title": "あいかわらず",
+    "subtitle": "N2",
+    "order": 1,
+    "durationMin": 10,
+    "xp": 40,
+    "objectives": [
+      "Learn the word «あいかわらず»",
+      "Read it in context"
+    ],
+    "steps": [
+      {
+        "type": "intro",
+        "title": "あいかわらず",
+        "body": [
+          "Today we focus on the word «あいかわらず» (aikawarazu).",
+          "It means: as ever / as usual / the same."
+        ]
+      },
+      {
+        "type": "explanation",
+        "title": "About «あいかわらず»",
+        "body": [
+          "«あいかわらず» (aikawarazu) means «as ever / as usual / the same»."
+        ]
+      },
+      {
+        "type": "reading",
+        "title": "«あいかわらず» in context",
+        "paragraphs": [
+          {
+            "text": "彼はあいかわらず丈夫だ。",
+            "hanzi": "彼はあいかわらず丈夫だ。",
+            "pinyin": "haaikawarazuda",
+            "romanization": "haaikawarazuda",
+            "translation": "He is as strong as ever.",
+            "translation_en": "He is as strong as ever.",
+            "translation_id": "He is as strong as ever."
+          }
+        ]
+      },
+      {
+        "type": "exercise",
+        "title": "Quick check",
+        "exercise": {
+          "id": "e-u-ja-n2-w2-1",
+          "type": "multiple-choice",
+          "prompt": "What does «あいかわらず» mean?",
+          "options": [
+            {
+              "id": "o0",
+              "label": "as ever / as usual / the same"
+            },
+            {
+              "id": "o1",
+              "label": "A different word"
+            },
+            {
+              "id": "o2",
+              "label": "Another meaning"
+            },
+            {
+              "id": "o3",
+              "label": "Not sure"
+            }
+          ],
+          "correct": "o0",
+          "skill": "reading",
+          "explanation": "«あいかわらず» means «as ever / as usual / the same»."
+        }
+      },
+      {
+        "type": "summary",
+        "title": "Summary",
+        "body": [
+          "«あいかわらず» (aikawarazu) = as ever / as usual / the same.",
+          "Practice this word in the reading exercises."
+        ]
+      }
+    ],
+    "subtitle_en": "N2",
+    "subtitle_id": "N2"
+  },
+  {
+    "id": "u-ja-n2-w3-l1",
+    "unitId": "u-ja-n2-w3",
+    "title": "アイデア/アイディア",
+    "subtitle": "N2",
+    "order": 1,
+    "durationMin": 10,
+    "xp": 40,
+    "objectives": [
+      "Learn the word «アイデア/アイディア»",
+      "Read it in context"
+    ],
+    "steps": [
+      {
+        "type": "intro",
+        "title": "アイデア/アイディア",
+        "body": [
+          "Today we focus on the word «アイデア/アイディア» (aidea/aideぃa).",
+          "It means: idea."
+        ]
+      },
+      {
+        "type": "explanation",
+        "title": "About «アイデア/アイディア»",
+        "body": [
+          "«アイデア/アイディア» (aidea/aideぃa) means «idea»."
+        ]
+      },
+      {
+        "type": "exercise",
+        "title": "Quick check",
+        "exercise": {
+          "id": "e-u-ja-n2-w3-1",
+          "type": "multiple-choice",
+          "prompt": "What does «アイデア/アイディア» mean?",
+          "options": [
+            {
+              "id": "o0",
+              "label": "idea"
+            },
+            {
+              "id": "o1",
+              "label": "A different word"
+            },
+            {
+              "id": "o2",
+              "label": "Another meaning"
+            },
+            {
+              "id": "o3",
+              "label": "Not sure"
+            }
+          ],
+          "correct": "o0",
+          "skill": "reading",
+          "explanation": "«アイデア/アイディア» means «idea»."
+        }
+      },
+      {
+        "type": "summary",
+        "title": "Summary",
+        "body": [
+          "«アイデア/アイディア» (aidea/aideぃa) = idea.",
+          "Practice this word in the reading exercises."
+        ]
+      }
+    ],
+    "subtitle_en": "N2",
+    "subtitle_id": "N2"
+  },
+  {
+    "id": "u-ja-n2-w4-l1",
+    "unitId": "u-ja-n2-w4",
+    "title": "あいまい",
+    "subtitle": "N2",
+    "order": 1,
+    "durationMin": 10,
+    "xp": 40,
+    "objectives": [
+      "Learn the word «あいまい»",
+      "Read it in context"
+    ],
+    "steps": [
+      {
+        "type": "intro",
+        "title": "あいまい",
+        "body": [
+          "Today we focus on the word «あいまい» (aimai).",
+          "It means: vague / ambiguous."
+        ]
+      },
+      {
+        "type": "explanation",
+        "title": "About «あいまい»",
+        "body": [
+          "«あいまい» (aimai) means «vague / ambiguous»."
+        ]
+      },
+      {
+        "type": "reading",
+        "title": "«あいまい» in context",
+        "paragraphs": [
+          {
+            "text": "彼の説明はあいまいだ。",
+            "hanzi": "彼の説明はあいまいだ。",
+            "pinyin": "nohaaimaida",
+            "romanization": "nohaaimaida",
+            "translation": "His explanation is not clear.",
+            "translation_en": "His explanation is not clear.",
+            "translation_id": "His explanation is not clear."
+          }
+        ]
+      },
+      {
+        "type": "exercise",
+        "title": "Quick check",
+        "exercise": {
+          "id": "e-u-ja-n2-w4-1",
+          "type": "multiple-choice",
+          "prompt": "What does «あいまい» mean?",
+          "options": [
+            {
+              "id": "o0",
+              "label": "vague / ambiguous"
+            },
+            {
+              "id": "o1",
+              "label": "A different word"
+            },
+            {
+              "id": "o2",
+              "label": "Another meaning"
+            },
+            {
+              "id": "o3",
+              "label": "Not sure"
+            }
+          ],
+          "correct": "o0",
+          "skill": "reading",
+          "explanation": "«あいまい» means «vague / ambiguous»."
+        }
+      },
+      {
+        "type": "summary",
+        "title": "Summary",
+        "body": [
+          "«あいまい» (aimai) = vague / ambiguous.",
+          "Practice this word in the reading exercises."
+        ]
+      }
+    ],
+    "subtitle_en": "N2",
+    "subtitle_id": "N2"
+  },
+  {
+    "id": "u-ja-n2-w5-l1",
+    "unitId": "u-ja-n2-w5",
+    "title": "あかんぼう",
+    "subtitle": "N2",
+    "order": 1,
+    "durationMin": 10,
+    "xp": 40,
+    "objectives": [
+      "Learn the word «あかんぼう»",
+      "Read it in context"
+    ],
+    "steps": [
+      {
+        "type": "intro",
+        "title": "あかんぼう",
+        "body": [
+          "Today we focus on the word «あかんぼう» (akanbou).",
+          "It means: baby."
+        ]
+      },
+      {
+        "type": "explanation",
+        "title": "About «あかんぼう»",
+        "body": [
+          "«あかんぼう» (akanbou) means «baby»."
+        ]
+      },
+      {
+        "type": "exercise",
+        "title": "Quick check",
+        "exercise": {
+          "id": "e-u-ja-n2-w5-1",
+          "type": "multiple-choice",
+          "prompt": "What does «あかんぼう» mean?",
+          "options": [
+            {
+              "id": "o0",
+              "label": "baby"
+            },
+            {
+              "id": "o1",
+              "label": "A different word"
+            },
+            {
+              "id": "o2",
+              "label": "Another meaning"
+            },
+            {
+              "id": "o3",
+              "label": "Not sure"
+            }
+          ],
+          "correct": "o0",
+          "skill": "reading",
+          "explanation": "«あかんぼう» means «baby»."
+        }
+      },
+      {
+        "type": "summary",
+        "title": "Summary",
+        "body": [
+          "«あかんぼう» (akanbou) = baby.",
+          "Practice this word in the reading exercises."
+        ]
+      }
+    ],
+    "subtitle_en": "N2",
+    "subtitle_id": "N2"
+  },
+  {
+    "id": "u-ja-n2-w6-l1",
+    "unitId": "u-ja-n2-w6",
+    "title": "あきれる",
+    "subtitle": "N2",
+    "order": 1,
+    "durationMin": 10,
+    "xp": 40,
+    "objectives": [
+      "Learn the word «あきれる»",
+      "Read it in context"
+    ],
+    "steps": [
+      {
+        "type": "intro",
+        "title": "あきれる",
+        "body": [
+          "Today we focus on the word «あきれる» (akireru).",
+          "It means: to be amazed / to be shocked."
+        ]
+      },
+      {
+        "type": "explanation",
+        "title": "About «あきれる»",
+        "body": [
+          "«あきれる» (akireru) means «to be amazed / to be shocked»."
+        ]
+      },
+      {
+        "type": "reading",
+        "title": "«あきれる» in context",
+        "paragraphs": [
+          {
+            "text": "結婚が聞いてあきれる！",
+            "hanzi": "結婚が聞いてあきれる！",
+            "pinyin": "gaiteakireru",
+            "romanization": "gaiteakireru",
+            "translation": "You call that a marriage?",
+            "translation_en": "You call that a marriage?",
+            "translation_id": "You call that a marriage?"
+          }
+        ]
+      },
+      {
+        "type": "exercise",
+        "title": "Quick check",
+        "exercise": {
+          "id": "e-u-ja-n2-w6-1",
+          "type": "multiple-choice",
+          "prompt": "What does «あきれる» mean?",
+          "options": [
+            {
+              "id": "o0",
+              "label": "to be amazed / to be shocked"
+            },
+            {
+              "id": "o1",
+              "label": "A different word"
+            },
+            {
+              "id": "o2",
+              "label": "Another meaning"
+            },
+            {
+              "id": "o3",
+              "label": "Not sure"
+            }
+          ],
+          "correct": "o0",
+          "skill": "reading",
+          "explanation": "«あきれる» means «to be amazed / to be shocked»."
+        }
+      },
+      {
+        "type": "summary",
+        "title": "Summary",
+        "body": [
+          "«あきれる» (akireru) = to be amazed / to be shocked.",
+          "Practice this word in the reading exercises."
+        ]
+      }
+    ],
+    "subtitle_en": "N2",
+    "subtitle_id": "N2"
+  },
+  {
+    "id": "u-ja-n2-w7-l1",
+    "unitId": "u-ja-n2-w7",
+    "title": "アクセント",
+    "subtitle": "N2",
+    "order": 1,
+    "durationMin": 10,
+    "xp": 40,
+    "objectives": [
+      "Learn the word «アクセント»",
+      "Read it in context"
+    ],
+    "steps": [
+      {
+        "type": "intro",
+        "title": "アクセント",
+        "body": [
+          "Today we focus on the word «アクセント» (akusento).",
+          "It means: accent."
+        ]
+      },
+      {
+        "type": "explanation",
+        "title": "About «アクセント»",
+        "body": [
+          "«アクセント» (akusento) means «accent»."
+        ]
+      },
+      {
+        "type": "reading",
+        "title": "«アクセント» in context",
+        "paragraphs": [
+          {
+            "text": "この語のアクセントはどこにあるか。",
+            "hanzi": "この語のアクセントはどこにあるか。",
+            "pinyin": "kononoakusentohadokoniaruka",
+            "romanization": "kononoakusentohadokoniaruka",
+            "translation": "How is the word accented?",
+            "translation_en": "How is the word accented?",
+            "translation_id": "How is the word accented?"
+          }
+        ]
+      },
+      {
+        "type": "exercise",
+        "title": "Quick check",
+        "exercise": {
+          "id": "e-u-ja-n2-w7-1",
+          "type": "multiple-choice",
+          "prompt": "What does «アクセント» mean?",
+          "options": [
+            {
+              "id": "o0",
+              "label": "accent"
+            },
+            {
+              "id": "o1",
+              "label": "A different word"
+            },
+            {
+              "id": "o2",
+              "label": "Another meaning"
+            },
+            {
+              "id": "o3",
+              "label": "Not sure"
+            }
+          ],
+          "correct": "o0",
+          "skill": "reading",
+          "explanation": "«アクセント» means «accent»."
+        }
+      },
+      {
+        "type": "summary",
+        "title": "Summary",
+        "body": [
+          "«アクセント» (akusento) = accent.",
+          "Practice this word in the reading exercises."
+        ]
+      }
+    ],
+    "subtitle_en": "N2",
+    "subtitle_id": "N2"
+  },
+  {
+    "id": "u-ja-n2-w8-l1",
+    "unitId": "u-ja-n2-w8",
+    "title": "あくび",
+    "subtitle": "N2",
+    "order": 1,
+    "durationMin": 10,
+    "xp": 40,
+    "objectives": [
+      "Learn the word «あくび»",
+      "Read it in context"
+    ],
+    "steps": [
+      {
+        "type": "intro",
+        "title": "あくび",
+        "body": [
+          "Today we focus on the word «あくび» (akubi).",
+          "It means: yawn."
+        ]
+      },
+      {
+        "type": "explanation",
+        "title": "About «あくび»",
+        "body": [
+          "«あくび» (akubi) means «yawn»."
+        ]
+      },
+      {
+        "type": "reading",
+        "title": "«あくび» in context",
+        "paragraphs": [
+          {
+            "text": "あくびをした。",
+            "hanzi": "あくびをした。",
+            "pinyin": "akubiwoshita。",
+            "romanization": "akubiwoshita。",
+            "translation": "I yawned.",
+            "translation_en": "I yawned.",
+            "translation_id": "I yawned."
+          }
+        ]
+      },
+      {
+        "type": "exercise",
+        "title": "Quick check",
+        "exercise": {
+          "id": "e-u-ja-n2-w8-1",
+          "type": "multiple-choice",
+          "prompt": "What does «あくび» mean?",
+          "options": [
+            {
+              "id": "o0",
+              "label": "yawn"
+            },
+            {
+              "id": "o1",
+              "label": "A different word"
+            },
+            {
+              "id": "o2",
+              "label": "Another meaning"
+            },
+            {
+              "id": "o3",
+              "label": "Not sure"
+            }
+          ],
+          "correct": "o0",
+          "skill": "reading",
+          "explanation": "«あくび» means «yawn»."
+        }
+      },
+      {
+        "type": "summary",
+        "title": "Summary",
+        "body": [
+          "«あくび» (akubi) = yawn.",
+          "Practice this word in the reading exercises."
+        ]
+      }
+    ],
+    "subtitle_en": "N2",
+    "subtitle_id": "N2"
+  },
+  {
+    "id": "u-ja-n2-w9-l1",
+    "unitId": "u-ja-n2-w9",
+    "title": "あたりまえ",
+    "subtitle": "N2",
+    "order": 1,
+    "durationMin": 10,
+    "xp": 40,
+    "objectives": [
+      "Learn the word «あたりまえ»",
+      "Read it in context"
+    ],
+    "steps": [
+      {
+        "type": "intro",
+        "title": "あたりまえ",
+        "body": [
+          "Today we focus on the word «あたりまえ» (atarimae).",
+          "It means: usual / common / ordinary."
+        ]
+      },
+      {
+        "type": "explanation",
+        "title": "About «あたりまえ»",
+        "body": [
+          "«あたりまえ» (atarimae) means «usual / common / ordinary»."
+        ]
+      },
+      {
+        "type": "exercise",
+        "title": "Quick check",
+        "exercise": {
+          "id": "e-u-ja-n2-w9-1",
+          "type": "multiple-choice",
+          "prompt": "What does «あたりまえ» mean?",
+          "options": [
+            {
+              "id": "o0",
+              "label": "usual / common / ordinary"
+            },
+            {
+              "id": "o1",
+              "label": "A different word"
+            },
+            {
+              "id": "o2",
+              "label": "Another meaning"
+            },
+            {
+              "id": "o3",
+              "label": "Not sure"
+            }
+          ],
+          "correct": "o0",
+          "skill": "reading",
+          "explanation": "«あたりまえ» means «usual / common / ordinary»."
+        }
+      },
+      {
+        "type": "summary",
+        "title": "Summary",
+        "body": [
+          "«あたりまえ» (atarimae) = usual / common / ordinary.",
+          "Practice this word in the reading exercises."
+        ]
+      }
+    ],
+    "subtitle_en": "N2",
+    "subtitle_id": "N2"
+  },
+  {
+    "id": "u-ja-n2-w10-l1",
+    "unitId": "u-ja-n2-w10",
+    "title": "あちらこちら",
+    "subtitle": "N2",
+    "order": 1,
+    "durationMin": 10,
+    "xp": 40,
+    "objectives": [
+      "Learn the word «あちらこちら»",
+      "Read it in context"
+    ],
+    "steps": [
+      {
+        "type": "intro",
+        "title": "あちらこちら",
+        "body": [
+          "Today we focus on the word «あちらこちら» (achirakochira).",
+          "It means: here and there."
+        ]
+      },
+      {
+        "type": "explanation",
+        "title": "About «あちらこちら»",
+        "body": [
+          "«あちらこちら» (achirakochira) means «here and there»."
+        ]
+      },
+      {
+        "type": "reading",
+        "title": "«あちらこちら» in context",
+        "paragraphs": [
+          {
+            "text": "彼の目はあちらこちらに動いた。",
+            "hanzi": "彼の目はあちらこちらに動いた。",
+            "pinyin": "nohaachirakochiraniita",
+            "romanization": "nohaachirakochiraniita",
+            "translation": "His eyes went to and fro.",
+            "translation_en": "His eyes went to and fro.",
+            "translation_id": "His eyes went to and fro."
+          }
+        ]
+      },
+      {
+        "type": "exercise",
+        "title": "Quick check",
+        "exercise": {
+          "id": "e-u-ja-n2-w10-1",
+          "type": "multiple-choice",
+          "prompt": "What does «あちらこちら» mean?",
+          "options": [
+            {
+              "id": "o0",
+              "label": "here and there"
+            },
+            {
+              "id": "o1",
+              "label": "A different word"
+            },
+            {
+              "id": "o2",
+              "label": "Another meaning"
+            },
+            {
+              "id": "o3",
+              "label": "Not sure"
+            }
+          ],
+          "correct": "o0",
+          "skill": "reading",
+          "explanation": "«あちらこちら» means «here and there»."
+        }
+      },
+      {
+        "type": "summary",
+        "title": "Summary",
+        "body": [
+          "«あちらこちら» (achirakochira) = here and there.",
+          "Practice this word in the reading exercises."
+        ]
+      }
+    ],
+    "subtitle_en": "N2",
+    "subtitle_id": "N2"
+  },
+  {
+    "id": "u-ja-n1-w1-l1",
+    "unitId": "u-ja-n1-w1",
+    "title": "アイデア",
+    "subtitle": "N1",
+    "order": 1,
+    "durationMin": 10,
+    "xp": 40,
+    "objectives": [
+      "Learn the word «アイデア»",
+      "Read it in context"
+    ],
+    "steps": [
+      {
+        "type": "intro",
+        "title": "アイデア",
+        "body": [
+          "Today we focus on the word «アイデア» (aidea).",
+          "It means: idea."
+        ]
+      },
+      {
+        "type": "explanation",
+        "title": "About «アイデア»",
+        "body": [
+          "«アイデア» (aidea) means «idea»."
+        ]
+      },
+      {
+        "type": "reading",
+        "title": "«アイデア» in context",
+        "paragraphs": [
+          {
+            "text": "ナイスアイデア！",
+            "hanzi": "ナイスアイデア！",
+            "pinyin": "ナイスアイデア！",
+            "romanization": "ナイスアイデア！",
+            "translation": "That's a good idea!",
+            "translation_en": "That's a good idea!",
+            "translation_id": "That's a good idea!"
+          }
+        ]
+      },
+      {
+        "type": "exercise",
+        "title": "Quick check",
+        "exercise": {
+          "id": "e-u-ja-n1-w1-1",
+          "type": "multiple-choice",
+          "prompt": "What does «アイデア» mean?",
+          "options": [
+            {
+              "id": "o0",
+              "label": "idea"
+            },
+            {
+              "id": "o1",
+              "label": "A different word"
+            },
+            {
+              "id": "o2",
+              "label": "Another meaning"
+            },
+            {
+              "id": "o3",
+              "label": "Not sure"
+            }
+          ],
+          "correct": "o0",
+          "skill": "reading",
+          "explanation": "«アイデア» means «idea»."
+        }
+      },
+      {
+        "type": "summary",
+        "title": "Summary",
+        "body": [
+          "«アイデア» (aidea) = idea.",
+          "Practice this word in the reading exercises."
+        ]
+      }
+    ],
+    "subtitle_en": "N1",
+    "subtitle_id": "N1"
+  },
+  {
+    "id": "u-ja-n1-w2-l1",
+    "unitId": "u-ja-n1-w2",
+    "title": "アクセル",
+    "subtitle": "N1",
+    "order": 1,
+    "durationMin": 10,
+    "xp": 40,
+    "objectives": [
+      "Learn the word «アクセル»",
+      "Read it in context"
+    ],
+    "steps": [
+      {
+        "type": "intro",
+        "title": "アクセル",
+        "body": [
+          "Today we focus on the word «アクセル» (akuseru).",
+          "It means: accelerator."
+        ]
+      },
+      {
+        "type": "explanation",
+        "title": "About «アクセル»",
+        "body": [
+          "«アクセル» (akuseru) means «accelerator»."
+        ]
+      },
+      {
+        "type": "reading",
+        "title": "«アクセル» in context",
+        "paragraphs": [
+          {
+            "text": "私は注意深くアクセルを踏んだ。",
+            "hanzi": "私は注意深くアクセルを踏んだ。",
+            "pinyin": "hakuakuseruwonda",
+            "romanization": "hakuakuseruwonda",
+            "translation": "I stepped on the accelerator carefully.",
+            "translation_en": "I stepped on the accelerator carefully.",
+            "translation_id": "I stepped on the accelerator carefully."
+          }
+        ]
+      },
+      {
+        "type": "exercise",
+        "title": "Quick check",
+        "exercise": {
+          "id": "e-u-ja-n1-w2-1",
+          "type": "multiple-choice",
+          "prompt": "What does «アクセル» mean?",
+          "options": [
+            {
+              "id": "o0",
+              "label": "accelerator"
+            },
+            {
+              "id": "o1",
+              "label": "A different word"
+            },
+            {
+              "id": "o2",
+              "label": "Another meaning"
+            },
+            {
+              "id": "o3",
+              "label": "Not sure"
+            }
+          ],
+          "correct": "o0",
+          "skill": "reading",
+          "explanation": "«アクセル» means «accelerator»."
+        }
+      },
+      {
+        "type": "summary",
+        "title": "Summary",
+        "body": [
+          "«アクセル» (akuseru) = accelerator.",
+          "Practice this word in the reading exercises."
+        ]
+      }
+    ],
+    "subtitle_en": "N1",
+    "subtitle_id": "N1"
+  },
+  {
+    "id": "u-ja-n1-w3-l1",
+    "unitId": "u-ja-n1-w3",
+    "title": "あくどい",
+    "subtitle": "N1",
+    "order": 1,
+    "durationMin": 10,
+    "xp": 40,
+    "objectives": [
+      "Learn the word «あくどい»",
+      "Read it in context"
+    ],
+    "steps": [
+      {
+        "type": "intro",
+        "title": "あくどい",
+        "body": [
+          "Today we focus on the word «あくどい» (akudoi).",
+          "It means: 1.  gaudy / showy / excessive."
+        ]
+      },
+      {
+        "type": "explanation",
+        "title": "About «あくどい»",
+        "body": [
+          "«あくどい» (akudoi) means «1.  gaudy / showy / excessive»."
+        ]
+      },
+      {
+        "type": "reading",
+        "title": "«あくどい» in context",
+        "paragraphs": [
+          {
+            "text": "あくどい事をするな。",
+            "hanzi": "あくどい事をするな。",
+            "pinyin": "akudoiwosuruna",
+            "romanization": "akudoiwosuruna",
+            "translation": "Don't do wicked things.",
+            "translation_en": "Don't do wicked things.",
+            "translation_id": "Don't do wicked things."
+          }
+        ]
+      },
+      {
+        "type": "exercise",
+        "title": "Quick check",
+        "exercise": {
+          "id": "e-u-ja-n1-w3-1",
+          "type": "multiple-choice",
+          "prompt": "What does «あくどい» mean?",
+          "options": [
+            {
+              "id": "o0",
+              "label": "1.  gaudy / showy / excessive"
+            },
+            {
+              "id": "o1",
+              "label": "A different word"
+            },
+            {
+              "id": "o2",
+              "label": "Another meaning"
+            },
+            {
+              "id": "o3",
+              "label": "Not sure"
+            }
+          ],
+          "correct": "o0",
+          "skill": "reading",
+          "explanation": "«あくどい» means «1.  gaudy / showy / excessive»."
+        }
+      },
+      {
+        "type": "summary",
+        "title": "Summary",
+        "body": [
+          "«あくどい» (akudoi) = 1.  gaudy / showy / excessive.",
+          "Practice this word in the reading exercises."
+        ]
+      }
+    ],
+    "subtitle_en": "N1",
+    "subtitle_id": "N1"
+  },
+  {
+    "id": "u-ja-n1-w4-l1",
+    "unitId": "u-ja-n1-w4",
+    "title": "あざ笑う",
+    "subtitle": "N1",
+    "order": 1,
+    "durationMin": 10,
+    "xp": 40,
+    "objectives": [
+      "Learn the word «あざ笑う»",
+      "Read it in context"
+    ],
+    "steps": [
+      {
+        "type": "intro",
+        "title": "あざ笑う",
+        "body": [
+          "Today we focus on the word «あざ笑う» (azawarau).",
+          "It means: to sneer at / to ridicule."
+        ]
+      },
+      {
+        "type": "explanation",
+        "title": "About «あざ笑う»",
+        "body": [
+          "«あざ笑う» (azawarau) means «to sneer at / to ridicule»."
+        ]
+      },
+      {
+        "type": "reading",
+        "title": "«あざ笑う» in context",
+        "paragraphs": [
+          {
+            "text": "間違えたからと言って彼をあざ笑うな。",
+            "hanzi": "間違えたからと言って彼をあざ笑うな。",
+            "pinyin": "etakaratotewoazauna",
+            "romanization": "etakaratotewoazauna",
+            "translation": "Don't laugh at him for making a mistake.",
+            "translation_en": "Don't laugh at him for making a mistake.",
+            "translation_id": "Don't laugh at him for making a mistake."
+          }
+        ]
+      },
+      {
+        "type": "exercise",
+        "title": "Quick check",
+        "exercise": {
+          "id": "e-u-ja-n1-w4-1",
+          "type": "multiple-choice",
+          "prompt": "What does «あざ笑う» mean?",
+          "options": [
+            {
+              "id": "o0",
+              "label": "to sneer at / to ridicule"
+            },
+            {
+              "id": "o1",
+              "label": "A different word"
+            },
+            {
+              "id": "o2",
+              "label": "Another meaning"
+            },
+            {
+              "id": "o3",
+              "label": "Not sure"
+            }
+          ],
+          "correct": "o0",
+          "skill": "reading",
+          "explanation": "«あざ笑う» means «to sneer at / to ridicule»."
+        }
+      },
+      {
+        "type": "summary",
+        "title": "Summary",
+        "body": [
+          "«あざ笑う» (azawarau) = to sneer at / to ridicule.",
+          "Practice this word in the reading exercises."
+        ]
+      }
+    ],
+    "subtitle_en": "N1",
+    "subtitle_id": "N1"
+  },
+  {
+    "id": "u-ja-n1-w5-l1",
+    "unitId": "u-ja-n1-w5",
+    "title": "あっさり",
+    "subtitle": "N1",
+    "order": 1,
+    "durationMin": 10,
+    "xp": 40,
+    "objectives": [
+      "Learn the word «あっさり»",
+      "Read it in context"
+    ],
+    "steps": [
+      {
+        "type": "intro",
+        "title": "あっさり",
+        "body": [
+          "Today we focus on the word «あっさり» (asari).",
+          "It means: easily / readily / quickly."
+        ]
+      },
+      {
+        "type": "explanation",
+        "title": "About «あっさり»",
+        "body": [
+          "«あっさり» (asari) means «easily / readily / quickly»."
+        ]
+      },
+      {
+        "type": "reading",
+        "title": "«あっさり» in context",
+        "paragraphs": [
+          {
+            "text": "彼女はあっさりと答えた。",
+            "hanzi": "彼女はあっさりと答えた。",
+            "pinyin": "haasaritoeta",
+            "romanization": "haasaritoeta",
+            "translation": "She answered easily.",
+            "translation_en": "She answered easily.",
+            "translation_id": "She answered easily."
+          }
+        ]
+      },
+      {
+        "type": "exercise",
+        "title": "Quick check",
+        "exercise": {
+          "id": "e-u-ja-n1-w5-1",
+          "type": "multiple-choice",
+          "prompt": "What does «あっさり» mean?",
+          "options": [
+            {
+              "id": "o0",
+              "label": "easily / readily / quickly"
+            },
+            {
+              "id": "o1",
+              "label": "A different word"
+            },
+            {
+              "id": "o2",
+              "label": "Another meaning"
+            },
+            {
+              "id": "o3",
+              "label": "Not sure"
+            }
+          ],
+          "correct": "o0",
+          "skill": "reading",
+          "explanation": "«あっさり» means «easily / readily / quickly»."
+        }
+      },
+      {
+        "type": "summary",
+        "title": "Summary",
+        "body": [
+          "«あっさり» (asari) = easily / readily / quickly.",
+          "Practice this word in the reading exercises."
+        ]
+      }
+    ],
+    "subtitle_en": "N1",
+    "subtitle_id": "N1"
+  },
+  {
+    "id": "u-ja-n1-w6-l1",
+    "unitId": "u-ja-n1-w6",
+    "title": "アップ",
+    "subtitle": "N1",
+    "order": 1,
+    "durationMin": 10,
+    "xp": 40,
+    "objectives": [
+      "Learn the word «アップ»",
+      "Read it in context"
+    ],
+    "steps": [
+      {
+        "type": "intro",
+        "title": "アップ",
+        "body": [
+          "Today we focus on the word «アップ» (apu).",
+          "It means: up."
+        ]
+      },
+      {
+        "type": "explanation",
+        "title": "About «アップ»",
+        "body": [
+          "«アップ» (apu) means «up»."
+        ]
+      },
+      {
+        "type": "reading",
+        "title": "«アップ» in context",
+        "paragraphs": [
+          {
+            "text": "ネバー・ギブ・アップ！",
+            "hanzi": "ネバー・ギブ・アップ！",
+            "pinyin": "ネバ・ギブ・アップ！",
+            "romanization": "ネバ・ギブ・アップ！",
+            "translation": "Never give up.",
+            "translation_en": "Never give up.",
+            "translation_id": "Never give up."
+          }
+        ]
+      },
+      {
+        "type": "exercise",
+        "title": "Quick check",
+        "exercise": {
+          "id": "e-u-ja-n1-w6-1",
+          "type": "multiple-choice",
+          "prompt": "What does «アップ» mean?",
+          "options": [
+            {
+              "id": "o0",
+              "label": "up"
+            },
+            {
+              "id": "o1",
+              "label": "A different word"
+            },
+            {
+              "id": "o2",
+              "label": "Another meaning"
+            },
+            {
+              "id": "o3",
+              "label": "Not sure"
+            }
+          ],
+          "correct": "o0",
+          "skill": "reading",
+          "explanation": "«アップ» means «up»."
+        }
+      },
+      {
+        "type": "summary",
+        "title": "Summary",
+        "body": [
+          "«アップ» (apu) = up.",
+          "Practice this word in the reading exercises."
+        ]
+      }
+    ],
+    "subtitle_en": "N1",
+    "subtitle_id": "N1"
+  },
+  {
+    "id": "u-ja-n1-w7-l1",
+    "unitId": "u-ja-n1-w7",
+    "title": "アプローチ",
+    "subtitle": "N1",
+    "order": 1,
+    "durationMin": 10,
+    "xp": 40,
+    "objectives": [
+      "Learn the word «アプローチ»",
+      "Read it in context"
+    ],
+    "steps": [
+      {
+        "type": "intro",
+        "title": "アプローチ",
+        "body": [
+          "Today we focus on the word «アプローチ» (apurochi).",
+          "It means: approach (in golf)."
+        ]
+      },
+      {
+        "type": "explanation",
+        "title": "About «アプローチ»",
+        "body": [
+          "«アプローチ» (apurochi) means «approach (in golf)»."
+        ]
+      },
+      {
+        "type": "reading",
+        "title": "«アプローチ» in context",
+        "paragraphs": [
+          {
+            "text": "うまいアプローチだね。",
+            "hanzi": "うまいアプローチだね。",
+            "pinyin": "umaiアプロチdane。",
+            "romanization": "umaiアプロチdane。",
+            "translation": "That's a good approach.",
+            "translation_en": "That's a good approach.",
+            "translation_id": "That's a good approach."
+          }
+        ]
+      },
+      {
+        "type": "exercise",
+        "title": "Quick check",
+        "exercise": {
+          "id": "e-u-ja-n1-w7-1",
+          "type": "multiple-choice",
+          "prompt": "What does «アプローチ» mean?",
+          "options": [
+            {
+              "id": "o0",
+              "label": "approach (in golf)"
+            },
+            {
+              "id": "o1",
+              "label": "A different word"
+            },
+            {
+              "id": "o2",
+              "label": "Another meaning"
+            },
+            {
+              "id": "o3",
+              "label": "Not sure"
+            }
+          ],
+          "correct": "o0",
+          "skill": "reading",
+          "explanation": "«アプローチ» means «approach (in golf)»."
+        }
+      },
+      {
+        "type": "summary",
+        "title": "Summary",
+        "body": [
+          "«アプローチ» (apurochi) = approach (in golf).",
+          "Practice this word in the reading exercises."
+        ]
+      }
+    ],
+    "subtitle_en": "N1",
+    "subtitle_id": "N1"
+  },
+  {
+    "id": "u-ja-n1-w8-l1",
+    "unitId": "u-ja-n1-w8",
+    "title": "あべこべ",
+    "subtitle": "N1",
+    "order": 1,
+    "durationMin": 10,
+    "xp": 40,
+    "objectives": [
+      "Learn the word «あべこべ»",
+      "Read it in context"
+    ],
+    "steps": [
+      {
+        "type": "intro",
+        "title": "あべこべ",
+        "body": [
+          "Today we focus on the word «あべこべ» (abekobe).",
+          "It means: contrary / opposite / inverse."
+        ]
+      },
+      {
+        "type": "explanation",
+        "title": "About «あべこべ»",
+        "body": [
+          "«あべこべ» (abekobe) means «contrary / opposite / inverse»."
+        ]
+      },
+      {
+        "type": "reading",
+        "title": "«あべこべ» in context",
+        "paragraphs": [
+          {
+            "text": "あなたはシャツをあべこべに着ている。",
+            "hanzi": "あなたはシャツをあべこべに着ている。",
+            "pinyin": "anatahashatsuwoabekobeniteiru",
+            "romanization": "anatahashatsuwoabekobeniteiru",
+            "translation": "You are wearing your shirt inside out.",
+            "translation_en": "You are wearing your shirt inside out.",
+            "translation_id": "You are wearing your shirt inside out."
+          }
+        ]
+      },
+      {
+        "type": "exercise",
+        "title": "Quick check",
+        "exercise": {
+          "id": "e-u-ja-n1-w8-1",
+          "type": "multiple-choice",
+          "prompt": "What does «あべこべ» mean?",
+          "options": [
+            {
+              "id": "o0",
+              "label": "contrary / opposite / inverse"
+            },
+            {
+              "id": "o1",
+              "label": "A different word"
+            },
+            {
+              "id": "o2",
+              "label": "Another meaning"
+            },
+            {
+              "id": "o3",
+              "label": "Not sure"
+            }
+          ],
+          "correct": "o0",
+          "skill": "reading",
+          "explanation": "«あべこべ» means «contrary / opposite / inverse»."
+        }
+      },
+      {
+        "type": "summary",
+        "title": "Summary",
+        "body": [
+          "«あべこべ» (abekobe) = contrary / opposite / inverse.",
+          "Practice this word in the reading exercises."
+        ]
+      }
+    ],
+    "subtitle_en": "N1",
+    "subtitle_id": "N1"
+  },
+  {
+    "id": "u-ja-n1-w9-l1",
+    "unitId": "u-ja-n1-w9",
+    "title": "アマチュア",
+    "subtitle": "N1",
+    "order": 1,
+    "durationMin": 10,
+    "xp": 40,
+    "objectives": [
+      "Learn the word «アマチュア»",
+      "Read it in context"
+    ],
+    "steps": [
+      {
+        "type": "intro",
+        "title": "アマチュア",
+        "body": [
+          "Today we focus on the word «アマチュア» (amachua).",
+          "It means: amateur."
+        ]
+      },
+      {
+        "type": "explanation",
+        "title": "About «アマチュア»",
+        "body": [
+          "«アマチュア» (amachua) means «amateur»."
+        ]
+      },
+      {
+        "type": "reading",
+        "title": "«アマチュア» in context",
+        "paragraphs": [
+          {
+            "text": "彼はアマチュアにすぎない。",
+            "hanzi": "彼はアマチュアにすぎない。",
+            "pinyin": "haamachuanisuginai",
+            "romanization": "haamachuanisuginai",
+            "translation": "He is just an amateur.",
+            "translation_en": "He is just an amateur.",
+            "translation_id": "He is just an amateur."
+          }
+        ]
+      },
+      {
+        "type": "exercise",
+        "title": "Quick check",
+        "exercise": {
+          "id": "e-u-ja-n1-w9-1",
+          "type": "multiple-choice",
+          "prompt": "What does «アマチュア» mean?",
+          "options": [
+            {
+              "id": "o0",
+              "label": "amateur"
+            },
+            {
+              "id": "o1",
+              "label": "A different word"
+            },
+            {
+              "id": "o2",
+              "label": "Another meaning"
+            },
+            {
+              "id": "o3",
+              "label": "Not sure"
+            }
+          ],
+          "correct": "o0",
+          "skill": "reading",
+          "explanation": "«アマチュア» means «amateur»."
+        }
+      },
+      {
+        "type": "summary",
+        "title": "Summary",
+        "body": [
+          "«アマチュア» (amachua) = amateur.",
+          "Practice this word in the reading exercises."
+        ]
+      }
+    ],
+    "subtitle_en": "N1",
+    "subtitle_id": "N1"
+  },
+  {
+    "id": "u-ja-n1-w10-l1",
+    "unitId": "u-ja-n1-w10",
+    "title": "あやふや",
+    "subtitle": "N1",
+    "order": 1,
+    "durationMin": 10,
+    "xp": 40,
+    "objectives": [
+      "Learn the word «あやふや»",
+      "Read it in context"
+    ],
+    "steps": [
+      {
+        "type": "intro",
+        "title": "あやふや",
+        "body": [
+          "Today we focus on the word «あやふや» (ayafuya).",
+          "It means: uncertain / vague / ambiguous."
+        ]
+      },
+      {
+        "type": "explanation",
+        "title": "About «あやふや»",
+        "body": [
+          "«あやふや» (ayafuya) means «uncertain / vague / ambiguous»."
+        ]
+      },
+      {
+        "type": "reading",
+        "title": "«あやふや» in context",
+        "paragraphs": [
+          {
+            "text": "あやふやな手つきで一枚の紙を動かした。",
+            "hanzi": "あやふやな手つきで一枚の紙を動かした。",
+            "pinyin": "ayafuyanatsukidenowokashita",
+            "romanization": "ayafuyanatsukidenowokashita",
+            "translation": "She fumbled with a piece of paper.",
+            "translation_en": "She fumbled with a piece of paper.",
+            "translation_id": "She fumbled with a piece of paper."
+          }
+        ]
+      },
+      {
+        "type": "exercise",
+        "title": "Quick check",
+        "exercise": {
+          "id": "e-u-ja-n1-w10-1",
+          "type": "multiple-choice",
+          "prompt": "What does «あやふや» mean?",
+          "options": [
+            {
+              "id": "o0",
+              "label": "uncertain / vague / ambiguous"
+            },
+            {
+              "id": "o1",
+              "label": "A different word"
+            },
+            {
+              "id": "o2",
+              "label": "Another meaning"
+            },
+            {
+              "id": "o3",
+              "label": "Not sure"
+            }
+          ],
+          "correct": "o0",
+          "skill": "reading",
+          "explanation": "«あやふや» means «uncertain / vague / ambiguous»."
+        }
+      },
+      {
+        "type": "summary",
+        "title": "Summary",
+        "body": [
+          "«あやふや» (ayafuya) = uncertain / vague / ambiguous.",
+          "Practice this word in the reading exercises."
+        ]
+      }
+    ],
+    "subtitle_en": "N1",
+    "subtitle_id": "N1"
   }
 ]

@@ -137,5 +137,95 @@
     "subtitle_id": "Belajar dan Riset",
     "description_en": "Master academic language and writing.",
     "description_id": "Menguasai bahasa akademik dan menulis."
+  },
+  {
+    "id": "u-en-a1-w5",
+    "levelId": "en-a1",
+    "title": "A1 — hello",
+    "subtitle": "A1",
+    "order": 5,
+    "description": "Learn the word hello.",
+    "lessonIds": [
+      "u-en-a1-w5-l1"
+    ],
+    "subtitle_en": "A1",
+    "subtitle_id": "A1",
+    "description_en": "Learn the word hello.",
+    "description_id": "Pelajari kata hello."
+  },
+  {
+    "id": "u-en-a1-w6",
+    "levelId": "en-a1",
+    "title": "A1 — goodbye",
+    "subtitle": "A1",
+    "order": 6,
+    "description": "Learn the word goodbye.",
+    "lessonIds": [
+      "u-en-a1-w6-l1"
+    ],
+    "subtitle_en": "A1",
+    "subtitle_id": "A1",
+    "description_en": "Learn the word goodbye.",
+    "description_id": "Pelajari kata goodbye."
+  },
+  {
+    "id": "u-en-a1-w7",
+    "levelId": "en-a1",
+    "title": "A1 — please",
+    "subtitle": "A1",
+    "order": 7,
+    "description": "Learn the word please.",
+    "lessonIds": [
+      "u-en-a1-w7-l1"
+    ],
+    "subtitle_en": "A1",
+    "subtitle_id": "A1",
+    "description_en": "Learn the word please.",
+    "description_id": "Pelajari kata please."
+  },
+  {
+    "id": "u-en-a1-w8",
+    "levelId": "en-a1",
+    "title": "A1 — yes",
+    "subtitle": "A1",
+    "order": 8,
+    "description": "Learn the word yes.",
+    "lessonIds": [
+      "u-en-a1-w8-l1"
+    ],
+    "subtitle_en": "A1",
+    "subtitle_id": "A1",
+    "description_en": "Learn the word yes.",
+    "description_id": "Pelajari kata yes."
+  },
+  {
+    "id": "u-en-a1-w9",
+    "levelId": "en-a1",
+    "title": "A1 — no",
+    "subtitle": "A1",
+    "order": 9,
+    "description": "Learn the word no.",
+    "lessonIds": [
+      "u-en-a1-w9-l1"
+    ],
+    "subtitle_en": "A1",
+    "subtitle_id": "A1",
+    "description_en": "Learn the word no.",
+    "description_id": "Pelajari kata no."
+  },
+  {
+    "id": "u-en-a1-w10",
+    "levelId": "en-a1",
+    "title": "A1 — man",
+    "subtitle": "A1",
+    "order": 10,
+    "description": "Learn the word man.",
+    "lessonIds": [
+      "u-en-a1-w10-l1"
+    ],
+    "subtitle_en": "A1",
+    "subtitle_id": "A1",
+    "description_en": "Learn the word man.",
+    "description_id": "Pelajari kata man."
   }
 ]
