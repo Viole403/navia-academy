@@ -245,7 +245,7 @@
       "zh-lv-hsk1-d1-l1"
     ],
     "subtitle_en": "Food",
-    "subtitle_id": "Food",
+    "subtitle_id": "Makanan",
     "description_en": "Practice food.",
     "description_id": "Latihan food."
   },
@@ -260,7 +260,7 @@
       "zh-lv-hsk1-d2-l1"
     ],
     "subtitle_en": "Nation.",
-    "subtitle_id": "Nation.",
+    "subtitle_id": "Bangsa.",
     "description_en": "Practice nation..",
     "description_id": "Latihan nation.."
   },
@@ -275,7 +275,7 @@
       "zh-lv-hsk1-d3-l1"
     ],
     "subtitle_en": "Profs.",
-    "subtitle_id": "Profs.",
+    "subtitle_id": "Prof.",
     "description_en": "Practice profs..",
     "description_id": "Latihan profs.."
   },
@@ -290,7 +290,7 @@
       "zh-lv-hsk1-d4-l1"
     ],
     "subtitle_en": "Prefer.",
-    "subtitle_id": "Prefer.",
+    "subtitle_id": "Lebih menyukai.",
     "description_en": "Practice prefer..",
     "description_id": "Latihan prefer.."
   },
@@ -305,7 +305,7 @@
       "zh-lv-hsk1-d5-l1"
     ],
     "subtitle_en": "Family",
-    "subtitle_id": "Family",
+    "subtitle_id": "Keluarga",
     "description_en": "Practice family.",
     "description_id": "Latihan family."
   },
@@ -320,7 +320,7 @@
       "zh-lv-hsk1-d6-l1"
     ],
     "subtitle_en": "Town",
-    "subtitle_id": "Town",
+    "subtitle_id": "Kota",
     "description_en": "Practice town.",
     "description_id": "Latihan town."
   },
@@ -335,7 +335,7 @@
       "zh-lv-hsk1-d7-l1"
     ],
     "subtitle_en": "Cafe",
-    "subtitle_id": "Cafe",
+    "subtitle_id": "Kafe",
     "description_en": "Practice cafe.",
     "description_id": "Latihan cafe."
   },
@@ -350,7 +350,7 @@
       "zh-lv-hsk1-d8-l1"
     ],
     "subtitle_en": "Travel",
-    "subtitle_id": "Travel",
+    "subtitle_id": "Bepergian",
     "description_en": "Practice travel.",
     "description_id": "Latihan travel."
   },
@@ -380,7 +380,7 @@
       "zh-lv-hsk1-d10-l1"
     ],
     "subtitle_en": "Plans",
-    "subtitle_id": "Plans",
+    "subtitle_id": "Rencana",
     "description_en": "Practice plans.",
     "description_id": "Latihan plans."
   },
@@ -395,7 +395,7 @@
       "zh-lv-hsk1-d11-l1"
     ],
     "subtitle_en": "New Home",
-    "subtitle_id": "New Home",
+    "subtitle_id": "Rumah Baru",
     "description_en": "Practice new home.",
     "description_id": "Latihan new home."
   },
@@ -410,7 +410,7 @@
       "zh-lv-hsk1-d12-l1"
     ],
     "subtitle_en": "Trip to Beijing",
-    "subtitle_id": "Trip to Beijing",
+    "subtitle_id": "Perjalanan ke Beijing",
     "description_en": "Practice trip to beijing.",
     "description_id": "Latihan trip to beijing."
   },
@@ -425,7 +425,7 @@
       "zh-lv-hsk1-d13-l1"
     ],
     "subtitle_en": "Shopping",
-    "subtitle_id": "Shopping",
+    "subtitle_id": "Belanja",
     "description_en": "Practice shopping.",
     "description_id": "Latihan shopping."
   },
@@ -440,7 +440,7 @@
       "zh-lv-hsk1-d14-l1"
     ],
     "subtitle_en": "Birthday Present",
-    "subtitle_id": "Birthday Present",
+    "subtitle_id": "Hadiah Ulang Tahun",
     "description_en": "Practice birthday present.",
     "description_id": "Latihan birthday present."
   },
@@ -455,7 +455,7 @@
       "zh-lv-hsk1-d15-l1"
     ],
     "subtitle_en": "Convenience Store",
-    "subtitle_id": "Convenience Store",
+    "subtitle_id": "Toko Serba Ada",
     "description_en": "Practice convenience store.",
     "description_id": "Latihan convenience store."
   },
@@ -470,7 +470,7 @@
       "zh-lv-hsk1-d16-l1"
     ],
     "subtitle_en": "Weekend",
-    "subtitle_id": "Weekend",
+    "subtitle_id": "Akhir pekan",
     "description_en": "Practice weekend.",
     "description_id": "Latihan weekend."
   },
@@ -485,7 +485,7 @@
       "zh-lv-hsk1-d17-l1"
     ],
     "subtitle_en": "Greeting 1",
-    "subtitle_id": "Greeting 1",
+    "subtitle_id": "Salam 1",
     "description_en": "Practice greeting 1.",
     "description_id": "Latihan greeting 1."
   },
@@ -500,7 +500,7 @@
       "zh-lv-hsk1-d18-l1"
     ],
     "subtitle_en": "People",
-    "subtitle_id": "People",
+    "subtitle_id": "Rakyat",
     "description_en": "Practice people.",
     "description_id": "Latihan people."
   },
@@ -515,7 +515,7 @@
       "zh-lv-hsk1-d19-l1"
     ],
     "subtitle_en": "Greeting 3",
-    "subtitle_id": "Greeting 3",
+    "subtitle_id": "Salam 3",
     "description_en": "Practice greeting 3.",
     "description_id": "Latihan greeting 3."
   },
@@ -530,7 +530,7 @@
       "zh-lv-hsk1-d20-l1"
     ],
     "subtitle_en": "Phrases 2",
-    "subtitle_id": "Phrases 2",
+    "subtitle_id": "Frase 2",
     "description_en": "Practice phrases 2.",
     "description_id": "Latihan phrases 2."
   },
@@ -545,7 +545,7 @@
       "zh-lv-hsk1-d21-l1"
     ],
     "subtitle_en": "Location 2",
-    "subtitle_id": "Location 2",
+    "subtitle_id": "Lokasi 2",
     "description_en": "Practice location 2.",
     "description_id": "Latihan location 2."
   },
@@ -560,7 +560,7 @@
       "zh-lv-hsk1-d22-l1"
     ],
     "subtitle_en": "Family 2",
-    "subtitle_id": "Family 2",
+    "subtitle_id": "Keluarga 2",
     "description_en": "Practice family 2.",
     "description_id": "Latihan family 2."
   },
@@ -575,7 +575,7 @@
       "zh-lv-hsk1-d23-l1"
     ],
     "subtitle_en": "Time 2",
-    "subtitle_id": "Time 2",
+    "subtitle_id": "Waktu 2",
     "description_en": "Practice time 2.",
     "description_id": "Latihan time 2."
   },
@@ -590,7 +590,7 @@
       "zh-lv-hsk1-d24-l1"
     ],
     "subtitle_en": "Hobbies 1",
-    "subtitle_id": "Hobbies 1",
+    "subtitle_id": "Hobi 1",
     "description_en": "Practice hobbies 1.",
     "description_id": "Latihan hobbies 1."
   },
@@ -605,7 +605,7 @@
       "zh-lv-hsk1-d25-l1"
     ],
     "subtitle_en": "Payment",
-    "subtitle_id": "Payment",
+    "subtitle_id": "Pembayaran",
     "description_en": "Practice payment.",
     "description_id": "Latihan payment."
   },
@@ -620,7 +620,7 @@
       "zh-lv-hsk1-d26-l1"
     ],
     "subtitle_en": "Location 4",
-    "subtitle_id": "Location 4",
+    "subtitle_id": "Lokasi 4",
     "description_en": "Practice location 4.",
     "description_id": "Latihan location 4."
   },
@@ -650,7 +650,7 @@
       "zh-lv-hsk1-d28-l1"
     ],
     "subtitle_en": "Health 1",
-    "subtitle_id": "Health 1",
+    "subtitle_id": "Kesehatan 1",
     "description_en": "Practice health 1.",
     "description_id": "Latihan health 1."
   },
@@ -665,7 +665,7 @@
       "zh-lv-hsk1-d29-l1"
     ],
     "subtitle_en": "Shopping 1",
-    "subtitle_id": "Shopping 1",
+    "subtitle_id": "Belanja 1",
     "description_en": "Practice shopping 1.",
     "description_id": "Latihan shopping 1."
   },
@@ -680,7 +680,7 @@
       "zh-lv-hsk1-d30-l1"
     ],
     "subtitle_en": "Time 3",
-    "subtitle_id": "Time 3",
+    "subtitle_id": "Waktu 3",
     "description_en": "Practice time 3.",
     "description_id": "Latihan time 3."
   },
@@ -695,7 +695,7 @@
       "zh-lv-hsk1-d31-l1"
     ],
     "subtitle_en": "Sports 1",
-    "subtitle_id": "Sports 1",
+    "subtitle_id": "Olahraga 1",
     "description_en": "Practice sports 1.",
     "description_id": "Latihan sports 1."
   },
@@ -710,7 +710,7 @@
       "zh-lv-hsk1-d32-l1"
     ],
     "subtitle_en": "Invitiation 1",
-    "subtitle_id": "Invitiation 1",
+    "subtitle_id": "Undangan 1",
     "description_en": "Practice invitiation 1.",
     "description_id": "Latihan invitiation 1."
   },
@@ -725,7 +725,7 @@
       "zh-lv-hsk1-d33-l1"
     ],
     "subtitle_en": "Dining 3",
-    "subtitle_id": "Dining 3",
+    "subtitle_id": "Makan 3",
     "description_en": "Practice dining 3.",
     "description_id": "Latihan dining 3."
   },
@@ -740,7 +740,7 @@
       "zh-lv-hsk1-d34-l1"
     ],
     "subtitle_en": "Body Parts",
-    "subtitle_id": "Body Parts",
+    "subtitle_id": "Bagian Tubuh",
     "description_en": "Practice body parts.",
     "description_id": "Latihan body parts."
   },
@@ -755,7 +755,7 @@
       "zh-lv-hsk1-d35-l1"
     ],
     "subtitle_en": "Travel 1",
-    "subtitle_id": "Travel 1",
+    "subtitle_id": "Perjalanan 1",
     "description_en": "Practice travel 1.",
     "description_id": "Latihan travel 1."
   },
@@ -770,7 +770,7 @@
       "zh-lv-hsk1-d36-l1"
     ],
     "subtitle_en": "People 2",
-    "subtitle_id": "People 2",
+    "subtitle_id": "Orang 2",
     "description_en": "Practice people 2.",
     "description_id": "Latihan people 2."
   },
@@ -785,7 +785,7 @@
       "zh-lv-hsk1-d37-l1"
     ],
     "subtitle_en": "Sports 2",
-    "subtitle_id": "Sports 2",
+    "subtitle_id": "Olahraga 2",
     "description_en": "Practice sports 2.",
     "description_id": "Latihan sports 2."
   },
@@ -800,7 +800,7 @@
       "zh-lv-hsk1-d38-l1"
     ],
     "subtitle_en": "Fam. 3",
-    "subtitle_id": "Fam. 3",
+    "subtitle_id": "keluarga. 3",
     "description_en": "Practice fam. 3.",
     "description_id": "Latihan fam. 3."
   },
@@ -815,7 +815,7 @@
       "zh-lv-hsk1-d39-l1"
     ],
     "subtitle_en": "Time 4",
-    "subtitle_id": "Time 4",
+    "subtitle_id": "Waktu 4",
     "description_en": "Practice time 4.",
     "description_id": "Latihan time 4."
   },
@@ -830,7 +830,7 @@
       "zh-lv-hsk1-d40-l1"
     ],
     "subtitle_en": "Daily Routine 2",
-    "subtitle_id": "Daily Routine 2",
+    "subtitle_id": "Rutinitas Harian 2",
     "description_en": "Practice daily routine 2.",
     "description_id": "Latihan daily routine 2."
   },
@@ -845,7 +845,7 @@
       "zh-lv-hsk1-d41-l1"
     ],
     "subtitle_en": "People 3",
-    "subtitle_id": "People 3",
+    "subtitle_id": "Orang 3",
     "description_en": "Practice people 3.",
     "description_id": "Latihan people 3."
   },
@@ -860,7 +860,7 @@
       "zh-lv-hsk1-d42-l1"
     ],
     "subtitle_en": "Travel 2",
-    "subtitle_id": "Travel 2",
+    "subtitle_id": "Perjalanan 2",
     "description_en": "Practice travel 2.",
     "description_id": "Latihan travel 2."
   },
@@ -875,7 +875,7 @@
       "zh-lv-hsk1-d43-l1"
     ],
     "subtitle_en": "Personality and Feelings",
-    "subtitle_id": "Personality and Feelings",
+    "subtitle_id": "Kepribadian dan Perasaan",
     "description_en": "Practice personality and feelings.",
     "description_id": "Latihan personality and feelings."
   },
@@ -890,7 +890,7 @@
       "zh-lv-hsk1-d44-l1"
     ],
     "subtitle_en": "Future",
-    "subtitle_id": "Future",
+    "subtitle_id": "Masa depan",
     "description_en": "Practice future.",
     "description_id": "Latihan future."
   },
@@ -905,7 +905,7 @@
       "zh-lv-hsk1-d45-l1"
     ],
     "subtitle_en": "Work",
-    "subtitle_id": "Work",
+    "subtitle_id": "Bekerja",
     "description_en": "Practice work.",
     "description_id": "Latihan work."
   },
@@ -920,7 +920,7 @@
       "zh-lv-hsk1-d46-l1"
     ],
     "subtitle_en": "Hobbies 3",
-    "subtitle_id": "Hobbies 3",
+    "subtitle_id": "Hobi 3",
     "description_en": "Practice hobbies 3.",
     "description_id": "Latihan hobbies 3."
   },
@@ -935,7 +935,7 @@
       "zh-lv-hsk1-d47-l1"
     ],
     "subtitle_en": "Exam",
-    "subtitle_id": "Exam",
+    "subtitle_id": "Ujian",
     "description_en": "Practice exam.",
     "description_id": "Latihan exam."
   },
@@ -950,7 +950,7 @@
       "zh-lv-hsk1-d48-l1"
     ],
     "subtitle_en": "Travel 4",
-    "subtitle_id": "Travel 4",
+    "subtitle_id": "Perjalanan 4",
     "description_en": "Practice travel 4.",
     "description_id": "Latihan travel 4."
   },
@@ -965,7 +965,7 @@
       "zh-lv-hsk1-d49-l1"
     ],
     "subtitle_en": "Festivals",
-    "subtitle_id": "Festivals",
+    "subtitle_id": "Festival",
     "description_en": "Practice festivals.",
     "description_id": "Latihan festivals."
   },
@@ -980,7 +980,7 @@
       "zh-lv-hsk1-d50-l1"
     ],
     "subtitle_en": "Internet Slang",
-    "subtitle_id": "Internet Slang",
+    "subtitle_id": "Bahasa Gaul Internet",
     "description_en": "Practice internet slang.",
     "description_id": "Latihan internet slang."
   },
@@ -995,7 +995,7 @@
       "zh-lv-hsk1-d51-l1"
     ],
     "subtitle_en": "Business 2",
-    "subtitle_id": "Business 2",
+    "subtitle_id": "Bisnis 2",
     "description_en": "Practice business 2.",
     "description_id": "Latihan business 2."
   },
@@ -1010,7 +1010,7 @@
       "zh-lv-hsk1-d52-l1"
     ],
     "subtitle_en": "Work 3",
-    "subtitle_id": "Work 3",
+    "subtitle_id": "Pekerjaan 3",
     "description_en": "Practice work 3.",
     "description_id": "Latihan work 3."
   },
@@ -1100,7 +1100,7 @@
       "u-zh-hsk2-w7-l1"
     ],
     "subtitle_en": "HSK 2",
-    "subtitle_id": "HSK 2",
+    "subtitle_id": "HSK 2 - 包",
     "description_en": "Learn the word 包.",
     "description_id": "Pelajari kata 包."
   },
@@ -1850,7 +1850,7 @@
       "u-zh-tocfl-novice1-w3-l1"
     ],
     "subtitle_en": "TOCFL Novice 1",
-    "subtitle_id": "TOCFL Novice 1",
+    "subtitle_id": "TOCFL Pemula 1 — 高興",
     "description_en": "Learn the word 高興.",
     "description_id": "Pelajari kata 高興."
   },
@@ -1865,7 +1865,7 @@
       "u-zh-tocfl-novice1-w4-l1"
     ],
     "subtitle_en": "TOCFL Novice 1",
-    "subtitle_id": "TOCFL Novice 1",
+    "subtitle_id": "TOCFL Pemula 1 — 朋友",
     "description_en": "Learn the word 朋友.",
     "description_id": "Pelajari kata 朋友."
   },
@@ -1880,7 +1880,7 @@
       "u-zh-tocfl-novice1-w5-l1"
     ],
     "subtitle_en": "TOCFL Novice 1",
-    "subtitle_id": "TOCFL Novice 1",
+    "subtitle_id": "TOCFL Pemula 1 — 台灣",
     "description_en": "Learn the word 台灣.",
     "description_id": "Pelajari kata 台灣."
   },
@@ -1895,7 +1895,7 @@
       "u-zh-tocfl-novice1-w6-l1"
     ],
     "subtitle_en": "TOCFL Novice 1",
-    "subtitle_id": "TOCFL Novice 1",
+    "subtitle_id": "TOCFL Pemula 1 — 學校",
     "description_en": "Learn the word 學校.",
     "description_id": "Pelajari kata 學校."
   },
@@ -1910,7 +1910,7 @@
       "u-zh-tocfl-novice1-w7-l1"
     ],
     "subtitle_en": "TOCFL Novice 1",
-    "subtitle_id": "TOCFL Novice 1",
+    "subtitle_id": "TOCFL Pemula 1 — 再見",
     "description_en": "Learn the word 再見.",
     "description_id": "Pelajari kata 再見."
   },
@@ -1925,7 +1925,7 @@
       "u-zh-tocfl-novice1-w8-l1"
     ],
     "subtitle_en": "TOCFL Novice 1",
-    "subtitle_id": "TOCFL Novice 1",
+    "subtitle_id": "TOCFL Pemula 1 — 早上",
     "description_en": "Learn the word 早上.",
     "description_id": "Pelajari kata 早上."
   },
@@ -1940,7 +1940,7 @@
       "u-zh-tocfl-novice1-w9-l1"
     ],
     "subtitle_en": "TOCFL Novice 1",
-    "subtitle_id": "TOCFL Novice 1",
+    "subtitle_id": "TOCFL Pemula 1 — 八",
     "description_en": "Learn the word 八.",
     "description_id": "Pelajari kata 八."
   },
@@ -1955,7 +1955,7 @@
       "u-zh-tocfl-novice1-w10-l1"
     ],
     "subtitle_en": "TOCFL Novice 1",
-    "subtitle_id": "TOCFL Novice 1",
+    "subtitle_id": "TOCFL Pemula 1 — 爸",
     "description_en": "Learn the word 爸.",
     "description_id": "Pelajari kata 爸."
   },
@@ -1970,7 +1970,7 @@
       "u-zh-tocfl-novice2-w3-l1"
     ],
     "subtitle_en": "TOCFL Novice 2",
-    "subtitle_id": "TOCFL Novice 2",
+    "subtitle_id": "TOCFL Pemula 2 — 點心",
     "description_en": "Learn the word 點心.",
     "description_id": "Pelajari kata 點心."
   },
@@ -1985,7 +1985,7 @@
       "u-zh-tocfl-novice2-w4-l1"
     ],
     "subtitle_en": "TOCFL Novice 2",
-    "subtitle_id": "TOCFL Novice 2",
+    "subtitle_id": "TOCFL Pemula 2 — 方便",
     "description_en": "Learn the word 方便.",
     "description_id": "Pelajari kata 方便."
   },
@@ -2000,7 +2000,7 @@
       "u-zh-tocfl-novice2-w5-l1"
     ],
     "subtitle_en": "TOCFL Novice 2",
-    "subtitle_id": "TOCFL Novice 2",
+    "subtitle_id": "TOCFL Pemula 2 — 姐姐",
     "description_en": "Learn the word 姐姐.",
     "description_id": "Pelajari kata 姐姐."
   },
@@ -2015,7 +2015,7 @@
       "u-zh-tocfl-novice2-w6-l1"
     ],
     "subtitle_en": "TOCFL Novice 2",
-    "subtitle_id": "TOCFL Novice 2",
+    "subtitle_id": "TOCFL Pemula 2 — 可愛",
     "description_en": "Learn the word 可愛.",
     "description_id": "Pelajari kata 可愛."
   },
@@ -2030,7 +2030,7 @@
       "u-zh-tocfl-novice2-w7-l1"
     ],
     "subtitle_en": "TOCFL Novice 2",
-    "subtitle_id": "TOCFL Novice 2",
+    "subtitle_id": "TOCFL Pemula 2 — 美麗",
     "description_en": "Learn the word 美麗.",
     "description_id": "Pelajari kata 美麗."
   },
@@ -2045,7 +2045,7 @@
       "u-zh-tocfl-novice2-w8-l1"
     ],
     "subtitle_en": "TOCFL Novice 2",
-    "subtitle_id": "TOCFL Novice 2",
+    "subtitle_id": "TOCFL Pemula 2 — 一起",
     "description_en": "Learn the word 一起.",
     "description_id": "Pelajari kata 一起."
   },
@@ -2060,7 +2060,7 @@
       "u-zh-tocfl-novice2-w9-l1"
     ],
     "subtitle_en": "TOCFL Novice 2",
-    "subtitle_id": "TOCFL Novice 2",
+    "subtitle_id": "TOCFL Pemula 2 — 愛",
     "description_en": "Learn the word 愛.",
     "description_id": "Pelajari kata 愛."
   },
@@ -2075,7 +2075,7 @@
       "u-zh-tocfl-novice2-w10-l1"
     ],
     "subtitle_en": "TOCFL Novice 2",
-    "subtitle_id": "TOCFL Novice 2",
+    "subtitle_id": "TOCFL Pemula 2 — 矮",
     "description_en": "Learn the word 矮.",
     "description_id": "Pelajari kata 矮."
   },
@@ -2120,7 +2120,7 @@
       "u-zh-tocfl-level5-w4-l1"
     ],
     "subtitle_en": "TOCFL Level 5",
-    "subtitle_id": "TOCFL Level 5",
+    "subtitle_id": "TOCFL Tingkat 5 — 風險",
     "description_en": "Learn the word 風險.",
     "description_id": "Pelajari kata 風險."
   },
@@ -2225,7 +2225,7 @@
       "u-zh-tocfl-level3-w2-l1"
     ],
     "subtitle_en": "TOCFL Level 3",
-    "subtitle_id": "TOCFL Level 3",
+    "subtitle_id": "TOCFL Tingkat 3 — 哎",
     "description_en": "Learn the word 哎.",
     "description_id": "Pelajari kata 哎."
   },
@@ -2240,7 +2240,7 @@
       "u-zh-tocfl-level3-w3-l1"
     ],
     "subtitle_en": "TOCFL Level 3",
-    "subtitle_id": "TOCFL Level 3",
+    "subtitle_id": "TOCFL Tingkat 3 — 唉",
     "description_en": "Learn the word 唉.",
     "description_id": "Pelajari kata 唉."
   },
@@ -2255,7 +2255,7 @@
       "u-zh-tocfl-level3-w4-l1"
     ],
     "subtitle_en": "TOCFL Level 3",
-    "subtitle_id": "TOCFL Level 3",
+    "subtitle_id": "TOCFL Tingkat 3 — 愛情",
     "description_en": "Learn the word 愛情.",
     "description_id": "Pelajari kata 愛情."
   },
@@ -2270,7 +2270,7 @@
       "u-zh-tocfl-level3-w5-l1"
     ],
     "subtitle_en": "TOCFL Level 3",
-    "subtitle_id": "TOCFL Level 3",
+    "subtitle_id": "TOCFL Tingkat 3 — 愛惜",
     "description_en": "Learn the word 愛惜.",
     "description_id": "Pelajari kata 愛惜."
   },
@@ -2300,7 +2300,7 @@
       "u-zh-tocfl-level3-w7-l1"
     ],
     "subtitle_en": "TOCFL Level 3",
-    "subtitle_id": "TOCFL Level 3",
+    "subtitle_id": "TOCFL Tingkat 3 — 按",
     "description_en": "Learn the word 按.",
     "description_id": "Pelajari kata 按."
   },
@@ -2420,7 +2420,7 @@
       "u-zh-tocfl-level2-w6-l1"
     ],
     "subtitle_en": "TOCFL Level 2",
-    "subtitle_id": "TOCFL Level 2",
+    "subtitle_id": "TOCFL Tingkat 2 —",
     "description_en": "Learn the word 辦.",
     "description_id": "Pelajari kata 辦."
   },
@@ -2495,7 +2495,7 @@
       "u-zh-tocfl-level1-w2-l1"
     ],
     "subtitle_en": "TOCFL Level 1",
-    "subtitle_id": "TOCFL Level 1",
+    "subtitle_id": "TOCFL Tingkat 1 — 啊",
     "description_en": "Learn the word 啊.",
     "description_id": "Pelajari kata 啊."
   },
@@ -2510,7 +2510,7 @@
       "u-zh-tocfl-level1-w3-l1"
     ],
     "subtitle_en": "TOCFL Level 1",
-    "subtitle_id": "TOCFL Level 1",
+    "subtitle_id": "TOCFL Tingkat 1 — 把",
     "description_en": "Learn the word 把.",
     "description_id": "Pelajari kata 把."
   },
@@ -2540,7 +2540,7 @@
       "u-zh-tocfl-level1-w5-l1"
     ],
     "subtitle_en": "TOCFL Level 1",
-    "subtitle_id": "TOCFL Level 1",
+    "subtitle_id": "TOCFL Tingkat 1 — 班",
     "description_en": "Learn the word 班.",
     "description_id": "Pelajari kata 班."
   },
@@ -2555,7 +2555,7 @@
       "u-zh-tocfl-level1-w6-l1"
     ],
     "subtitle_en": "TOCFL Level 1",
-    "subtitle_id": "TOCFL Level 1",
+    "subtitle_id": "TOCFL Tingkat 1 — 搬",
     "description_en": "Learn the word 搬.",
     "description_id": "Pelajari kata 搬."
   },
@@ -2585,7 +2585,7 @@
       "u-zh-tocfl-level1-w8-l1"
     ],
     "subtitle_en": "TOCFL Level 1",
-    "subtitle_id": "TOCFL Level 1",
+    "subtitle_id": "TOCFL Tingkat 1 — 棒",
     "description_en": "Learn the word 棒.",
     "description_id": "Pelajari kata 棒."
   },
@@ -2600,7 +2600,7 @@
       "u-zh-tocfl-level1-w9-l1"
     ],
     "subtitle_en": "TOCFL Level 1",
-    "subtitle_id": "TOCFL Level 1",
+    "subtitle_id": "TOCFL Tingkat 1 — 幫",
     "description_en": "Learn the word 幫.",
     "description_id": "Pelajari kata 幫."
   },

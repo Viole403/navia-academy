@@ -134,7 +134,7 @@
       "ja-n5-d1-l1"
     ],
     "subtitle_en": "Basics",
-    "subtitle_id": "Basics",
+    "subtitle_id": "Dasar-dasar",
     "description_en": "Practice basics.",
     "description_id": "Latihan basics."
   },
@@ -149,7 +149,7 @@
       "ja-n5-d2-l1"
     ],
     "subtitle_en": "People",
-    "subtitle_id": "People",
+    "subtitle_id": "Rakyat",
     "description_en": "Practice people.",
     "description_id": "Latihan people."
   },
@@ -164,7 +164,7 @@
       "ja-n5-d3-l1"
     ],
     "subtitle_en": "Cafe",
-    "subtitle_id": "Cafe",
+    "subtitle_id": "Kafe",
     "description_en": "Practice cafe.",
     "description_id": "Latihan cafe."
   },
@@ -179,7 +179,7 @@
       "ja-n5-d4-l1"
     ],
     "subtitle_en": "Bonus Skill 1",
-    "subtitle_id": "Bonus Skill 1",
+    "subtitle_id": "Keterampilan Bonus 1",
     "description_en": "Practice bonus skill 1.",
     "description_id": "Latihan bonus skill 1."
   },
@@ -194,7 +194,7 @@
       "ja-n5-d5-l1"
     ],
     "subtitle_en": "Countries",
-    "subtitle_id": "Countries",
+    "subtitle_id": "Negara",
     "description_en": "Practice countries.",
     "description_id": "Latihan countries."
   },
@@ -209,7 +209,7 @@
       "ja-n5-d6-l1"
     ],
     "subtitle_en": "Belongings",
-    "subtitle_id": "Belongings",
+    "subtitle_id": "Barang-barang",
     "description_en": "Practice belongings.",
     "description_id": "Latihan belongings."
   },
@@ -224,7 +224,7 @@
       "ja-n5-d7-l1"
     ],
     "subtitle_en": "Neighbors",
-    "subtitle_id": "Neighbors",
+    "subtitle_id": "Tetangga",
     "description_en": "Practice neighbors.",
     "description_id": "Latihan neighbors."
   },
@@ -239,7 +239,7 @@
       "ja-n5-d8-l1"
     ],
     "subtitle_en": "Travel",
-    "subtitle_id": "Travel",
+    "subtitle_id": "Bepergian",
     "description_en": "Practice travel.",
     "description_id": "Latihan travel."
   },
@@ -254,7 +254,7 @@
       "ja-n5-d9-l1"
     ],
     "subtitle_en": "Welcome",
-    "subtitle_id": "Welcome",
+    "subtitle_id": "Selamat datang",
     "description_en": "Practice welcome.",
     "description_id": "Latihan welcome."
   },
@@ -269,7 +269,7 @@
       "ja-n5-d10-l1"
     ],
     "subtitle_en": "My Family",
-    "subtitle_id": "My Family",
+    "subtitle_id": "Keluargaku",
     "description_en": "Practice my family.",
     "description_id": "Latihan my family."
   },
@@ -284,7 +284,7 @@
       "ja-n5-d11-l1"
     ],
     "subtitle_en": "Mealtime",
-    "subtitle_id": "Mealtime",
+    "subtitle_id": "Waktu makan",
     "description_en": "Practice mealtime.",
     "description_id": "Latihan mealtime."
   },
@@ -299,7 +299,7 @@
       "ja-n5-d12-l1"
     ],
     "subtitle_en": "Restaurant",
-    "subtitle_id": "Restaurant",
+    "subtitle_id": "Restoran",
     "description_en": "Practice restaurant.",
     "description_id": "Latihan restaurant."
   },
@@ -314,7 +314,7 @@
       "ja-n5-d13-l1"
     ],
     "subtitle_en": "Weekend",
-    "subtitle_id": "Weekend",
+    "subtitle_id": "Akhir pekan",
     "description_en": "Practice weekend.",
     "description_id": "Latihan weekend."
   },
@@ -329,7 +329,7 @@
       "ja-n5-d14-l1"
     ],
     "subtitle_en": "Routines",
-    "subtitle_id": "Routines",
+    "subtitle_id": "Rutinitas",
     "description_en": "Practice routines.",
     "description_id": "Latihan routines."
   },
@@ -344,7 +344,7 @@
       "ja-n5-d15-l1"
     ],
     "subtitle_en": "New Friend",
-    "subtitle_id": "New Friend",
+    "subtitle_id": "Teman Baru",
     "description_en": "Practice new friend.",
     "description_id": "Latihan new friend."
   },
@@ -359,7 +359,7 @@
       "ja-n5-d16-l1"
     ],
     "subtitle_en": "Transport",
-    "subtitle_id": "Transport",
+    "subtitle_id": "Mengangkut",
     "description_en": "Practice transport.",
     "description_id": "Latihan transport."
   },
@@ -374,7 +374,7 @@
       "ja-n5-d17-l1"
     ],
     "subtitle_en": "Sights",
-    "subtitle_id": "Sights",
+    "subtitle_id": "Pemandangan",
     "description_en": "Practice sights.",
     "description_id": "Latihan sights."
   },
@@ -389,7 +389,7 @@
       "ja-n5-d18-l1"
     ],
     "subtitle_en": "Weather",
-    "subtitle_id": "Weather",
+    "subtitle_id": "Cuaca",
     "description_en": "Practice weather.",
     "description_id": "Latihan weather."
   },
@@ -404,7 +404,7 @@
       "ja-n5-d19-l1"
     ],
     "subtitle_en": "Family 2",
-    "subtitle_id": "Family 2",
+    "subtitle_id": "Keluarga 2",
     "description_en": "Practice family 2.",
     "description_id": "Latihan family 2."
   },
@@ -419,7 +419,7 @@
       "ja-n5-d20-l1"
     ],
     "subtitle_en": "Travel 2",
-    "subtitle_id": "Travel 2",
+    "subtitle_id": "Perjalanan 2",
     "description_en": "Practice travel 2.",
     "description_id": "Latihan travel 2."
   },
@@ -434,7 +434,7 @@
       "ja-n5-d21-l1"
     ],
     "subtitle_en": "Visiting",
-    "subtitle_id": "Visiting",
+    "subtitle_id": "Mengunjungi",
     "description_en": "Practice visiting.",
     "description_id": "Latihan visiting."
   },
@@ -449,7 +449,7 @@
       "ja-n5-d22-l1"
     ],
     "subtitle_en": "Pastries",
-    "subtitle_id": "Pastries",
+    "subtitle_id": "kue kering",
     "description_en": "Practice pastries.",
     "description_id": "Latihan pastries."
   },
@@ -464,7 +464,7 @@
       "ja-n5-d23-l1"
     ],
     "subtitle_en": "Cooking",
-    "subtitle_id": "Cooking",
+    "subtitle_id": "Memasak",
     "description_en": "Practice cooking.",
     "description_id": "Latihan cooking."
   },
@@ -479,7 +479,7 @@
       "ja-n5-d24-l1"
     ],
     "subtitle_en": "Occupation",
-    "subtitle_id": "Occupation",
+    "subtitle_id": "Pekerjaan",
     "description_en": "Practice occupation.",
     "description_id": "Latihan occupation."
   },
@@ -494,7 +494,7 @@
       "ja-n5-d25-l1"
     ],
     "subtitle_en": "Bookstore",
-    "subtitle_id": "Bookstore",
+    "subtitle_id": "Toko buku",
     "description_en": "Practice bookstore.",
     "description_id": "Latihan bookstore."
   },
@@ -509,7 +509,7 @@
       "ja-n5-d26-l1"
     ],
     "subtitle_en": "Office",
-    "subtitle_id": "Office",
+    "subtitle_id": "Kantor",
     "description_en": "Practice office.",
     "description_id": "Latihan office."
   },
@@ -524,7 +524,7 @@
       "ja-n5-d27-l1"
     ],
     "subtitle_en": "Hobbies 2",
-    "subtitle_id": "Hobbies 2",
+    "subtitle_id": "Hobi 2",
     "description_en": "Practice hobbies 2.",
     "description_id": "Latihan hobbies 2."
   },
@@ -539,7 +539,7 @@
       "ja-n5-d28-l1"
     ],
     "subtitle_en": "Events",
-    "subtitle_id": "Events",
+    "subtitle_id": "Acara",
     "description_en": "Practice events.",
     "description_id": "Latihan events."
   },
@@ -554,7 +554,7 @@
       "ja-n5-d29-l1"
     ],
     "subtitle_en": "Station 2",
-    "subtitle_id": "Station 2",
+    "subtitle_id": "Stasiun 2",
     "description_en": "Practice station 2.",
     "description_id": "Latihan station 2."
   },
@@ -569,7 +569,7 @@
       "ja-n5-d30-l1"
     ],
     "subtitle_en": "University",
-    "subtitle_id": "University",
+    "subtitle_id": "Universitas",
     "description_en": "Practice university.",
     "description_id": "Latihan university."
   },
@@ -584,7 +584,7 @@
       "ja-n5-d31-l1"
     ],
     "subtitle_en": "Outdoors",
-    "subtitle_id": "Outdoors",
+    "subtitle_id": "Di luar rumah",
     "description_en": "Practice outdoors.",
     "description_id": "Latihan outdoors."
   },
@@ -599,7 +599,7 @@
       "ja-n5-d32-l1"
     ],
     "subtitle_en": "Food",
-    "subtitle_id": "Food",
+    "subtitle_id": "Makanan",
     "description_en": "Practice food.",
     "description_id": "Latihan food."
   },
@@ -629,7 +629,7 @@
       "ja-n5-d34-l1"
     ],
     "subtitle_en": "Past Trip",
-    "subtitle_id": "Past Trip",
+    "subtitle_id": "Perjalanan Sebelumnya",
     "description_en": "Practice past trip.",
     "description_id": "Latihan past trip."
   },
@@ -644,7 +644,7 @@
       "ja-n5-d35-l1"
     ],
     "subtitle_en": "Birthday",
-    "subtitle_id": "Birthday",
+    "subtitle_id": "Hari ulang tahun",
     "description_en": "Practice birthday.",
     "description_id": "Latihan birthday."
   },
@@ -659,7 +659,7 @@
       "ja-n5-d36-l1"
     ],
     "subtitle_en": "Computers",
-    "subtitle_id": "Computers",
+    "subtitle_id": "Komputer",
     "description_en": "Practice computers.",
     "description_id": "Latihan computers."
   },
@@ -674,7 +674,7 @@
       "ja-n5-d37-l1"
     ],
     "subtitle_en": "Concert",
-    "subtitle_id": "Concert",
+    "subtitle_id": "Konser",
     "description_en": "Practice concert.",
     "description_id": "Latihan concert."
   },
@@ -689,7 +689,7 @@
       "ja-n5-d38-l1"
     ],
     "subtitle_en": "College",
-    "subtitle_id": "College",
+    "subtitle_id": "Kampus",
     "description_en": "Practice college.",
     "description_id": "Latihan college."
   },
@@ -704,7 +704,7 @@
       "ja-n5-d39-l1"
     ],
     "subtitle_en": "Clothes 2",
-    "subtitle_id": "Clothes 2",
+    "subtitle_id": "Pakaian 2",
     "description_en": "Practice clothes 2.",
     "description_id": "Latihan clothes 2."
   },
@@ -719,7 +719,7 @@
       "ja-n5-d40-l1"
     ],
     "subtitle_en": "Seasons",
-    "subtitle_id": "Seasons",
+    "subtitle_id": "Musim",
     "description_en": "Practice seasons.",
     "description_id": "Latihan seasons."
   },
@@ -734,7 +734,7 @@
       "ja-n5-d41-l1"
     ],
     "subtitle_en": "Birthday 2",
-    "subtitle_id": "Birthday 2",
+    "subtitle_id": "Ulang tahun 2",
     "description_en": "Practice birthday 2.",
     "description_id": "Latihan birthday 2."
   },
@@ -749,7 +749,7 @@
       "ja-n5-d42-l1"
     ],
     "subtitle_en": "Slow Day",
-    "subtitle_id": "Slow Day",
+    "subtitle_id": "Hari Lambat",
     "description_en": "Practice slow day.",
     "description_id": "Latihan slow day."
   },
@@ -764,7 +764,7 @@
       "ja-n5-d43-l1"
     ],
     "subtitle_en": "Meet Up",
-    "subtitle_id": "Meet Up",
+    "subtitle_id": "Bertemu",
     "description_en": "Practice meet up.",
     "description_id": "Latihan meet up."
   },
@@ -779,7 +779,7 @@
       "ja-n5-d44-l1"
     ],
     "subtitle_en": "Cruise",
-    "subtitle_id": "Cruise",
+    "subtitle_id": "Pelayaran",
     "description_en": "Practice cruise.",
     "description_id": "Latihan cruise."
   },
@@ -809,7 +809,7 @@
       "ja-n5-d46-l1"
     ],
     "subtitle_en": "Zoo",
-    "subtitle_id": "Zoo",
+    "subtitle_id": "Kebun binatang",
     "description_en": "Practice zoo.",
     "description_id": "Latihan zoo."
   },
@@ -824,7 +824,7 @@
       "ja-n5-d47-l1"
     ],
     "subtitle_en": "Sick Day",
-    "subtitle_id": "Sick Day",
+    "subtitle_id": "Hari Sakit",
     "description_en": "Practice sick day.",
     "description_id": "Latihan sick day."
   },
@@ -839,7 +839,7 @@
       "ja-n5-d48-l1"
     ],
     "subtitle_en": "WorkPlace",
-    "subtitle_id": "WorkPlace",
+    "subtitle_id": "Tempat Kerja",
     "description_en": "Practice workplace.",
     "description_id": "Latihan workplace."
   },
@@ -854,7 +854,7 @@
       "ja-n5-d49-l1"
     ],
     "subtitle_en": "Gifts",
-    "subtitle_id": "Gifts",
+    "subtitle_id": "Hadiah",
     "description_en": "Practice gifts.",
     "description_id": "Latihan gifts."
   },
@@ -884,7 +884,7 @@
       "ja-n5-d51-l1"
     ],
     "subtitle_en": "Clothes3",
-    "subtitle_id": "Clothes3",
+    "subtitle_id": "Pakaian3",
     "description_en": "Practice clothes3.",
     "description_id": "Latihan clothes3."
   },
@@ -899,7 +899,7 @@
       "ja-n5-d52-l1"
     ],
     "subtitle_en": "College 2",
-    "subtitle_id": "College 2",
+    "subtitle_id": "perguruan tinggi 2",
     "description_en": "Practice college 2.",
     "description_id": "Latihan college 2."
   },
@@ -914,7 +914,7 @@
       "ja-n5-d53-l1"
     ],
     "subtitle_en": "Cooking 2",
-    "subtitle_id": "Cooking 2",
+    "subtitle_id": "Memasak 2",
     "description_en": "Practice cooking 2.",
     "description_id": "Latihan cooking 2."
   },
@@ -929,7 +929,7 @@
       "ja-n5-d54-l1"
     ],
     "subtitle_en": "New Home 2",
-    "subtitle_id": "New Home 2",
+    "subtitle_id": "Rumah Baru 2",
     "description_en": "Practice new home 2.",
     "description_id": "Latihan new home 2."
   },
@@ -944,7 +944,7 @@
       "ja-n5-d55-l1"
     ],
     "subtitle_en": "Clinic",
-    "subtitle_id": "Clinic",
+    "subtitle_id": "Klinik",
     "description_en": "Practice clinic.",
     "description_id": "Latihan clinic."
   },
@@ -974,7 +974,7 @@
       "ja-n5-d57-l1"
     ],
     "subtitle_en": "Growing Up",
-    "subtitle_id": "Growing Up",
+    "subtitle_id": "Tumbuh Dewasa",
     "description_en": "Practice growing up.",
     "description_id": "Latihan growing up."
   },
@@ -989,7 +989,7 @@
       "ja-n5-d58-l1"
     ],
     "subtitle_en": "Bad Date",
-    "subtitle_id": "Bad Date",
+    "subtitle_id": "Tanggal Buruk",
     "description_en": "Practice bad date.",
     "description_id": "Latihan bad date."
   },
@@ -1004,7 +1004,7 @@
       "ja-n5-d59-l1"
     ],
     "subtitle_en": "Doctor",
-    "subtitle_id": "Doctor",
+    "subtitle_id": "Dokter",
     "description_en": "Practice doctor.",
     "description_id": "Latihan doctor."
   },
@@ -1019,7 +1019,7 @@
       "ja-n5-d60-l1"
     ],
     "subtitle_en": "Summer",
-    "subtitle_id": "Summer",
+    "subtitle_id": "Musim panas",
     "description_en": "Practice summer.",
     "description_id": "Latihan summer."
   },
@@ -1034,7 +1034,7 @@
       "ja-n5-d61-l1"
     ],
     "subtitle_en": "Restaur. 2",
-    "subtitle_id": "Restaur. 2",
+    "subtitle_id": "Restoran kembali. 2",
     "description_en": "Practice restaur. 2.",
     "description_id": "Latihan restaur. 2."
   },
@@ -1049,7 +1049,7 @@
       "ja-n5-d62-l1"
     ],
     "subtitle_en": "Wedding",
-    "subtitle_id": "Wedding",
+    "subtitle_id": "Pernikahan",
     "description_en": "Practice wedding.",
     "description_id": "Latihan wedding."
   },
@@ -1064,7 +1064,7 @@
       "ja-n5-d63-l1"
     ],
     "subtitle_en": "Invitation",
-    "subtitle_id": "Invitation",
+    "subtitle_id": "Undangan",
     "description_en": "Practice invitation.",
     "description_id": "Latihan invitation."
   },
@@ -1079,7 +1079,7 @@
       "ja-n5-d64-l1"
     ],
     "subtitle_en": "Restaur.3",
-    "subtitle_id": "Restaur.3",
+    "subtitle_id": "Restoran.3",
     "description_en": "Practice restaur.3.",
     "description_id": "Latihan restaur.3."
   },
@@ -1094,7 +1094,7 @@
       "ja-n5-d65-l1"
     ],
     "subtitle_en": "Univ.2",
-    "subtitle_id": "Univ.2",
+    "subtitle_id": "Universitas.2",
     "description_en": "Practice univ.2.",
     "description_id": "Latihan univ.2."
   },
@@ -1109,7 +1109,7 @@
       "ja-n5-d66-l1"
     ],
     "subtitle_en": "Good Date",
-    "subtitle_id": "Good Date",
+    "subtitle_id": "Tanggal yang bagus",
     "description_en": "Practice good date.",
     "description_id": "Latihan good date."
   },
@@ -1124,7 +1124,7 @@
       "ja-n5-d67-l1"
     ],
     "subtitle_en": "Stationery",
-    "subtitle_id": "Stationery",
+    "subtitle_id": "Alat tulis",
     "description_en": "Practice stationery.",
     "description_id": "Latihan stationery."
   },
@@ -1154,7 +1154,7 @@
       "ja-n5-d69-l1"
     ],
     "subtitle_en": "In Town",
-    "subtitle_id": "In Town",
+    "subtitle_id": "Di Kota",
     "description_en": "Practice in town.",
     "description_id": "Latihan in town."
   },
@@ -1169,7 +1169,7 @@
       "ja-n5-d70-l1"
     ],
     "subtitle_en": "Routines 2",
-    "subtitle_id": "Routines 2",
+    "subtitle_id": "Rutinitas 2",
     "description_en": "Practice routines 2.",
     "description_id": "Latihan routines 2."
   },
@@ -1184,7 +1184,7 @@
       "ja-n5-d71-l1"
     ],
     "subtitle_en": "Home 1",
-    "subtitle_id": "Home 1",
+    "subtitle_id": "Rumah 1",
     "description_en": "Practice home 1.",
     "description_id": "Latihan home 1."
   },
@@ -1199,7 +1199,7 @@
       "ja-n5-d72-l1"
     ],
     "subtitle_en": "Family 3",
-    "subtitle_id": "Family 3",
+    "subtitle_id": "Keluarga 3",
     "description_en": "Practice family 3.",
     "description_id": "Latihan family 3."
   },
@@ -1214,7 +1214,7 @@
       "ja-n5-d73-l1"
     ],
     "subtitle_en": "Activity 1",
-    "subtitle_id": "Activity 1",
+    "subtitle_id": "Kegiatan 1",
     "description_en": "Practice activity 1.",
     "description_id": "Latihan activity 1."
   },
@@ -1229,7 +1229,7 @@
       "ja-n5-d74-l1"
     ],
     "subtitle_en": "Position",
-    "subtitle_id": "Position",
+    "subtitle_id": "Posisi",
     "description_en": "Practice position.",
     "description_id": "Latihan position."
   },
@@ -1244,7 +1244,7 @@
       "ja-n5-d75-l1"
     ],
     "subtitle_en": "Activity 2",
-    "subtitle_id": "Activity 2",
+    "subtitle_id": "Kegiatan 2",
     "description_en": "Practice activity 2.",
     "description_id": "Latihan activity 2."
   },
@@ -1259,7 +1259,7 @@
       "ja-n5-d76-l1"
     ],
     "subtitle_en": "Hobby 1",
-    "subtitle_id": "Hobby 1",
+    "subtitle_id": "Hobi 1",
     "description_en": "Practice hobby 1.",
     "description_id": "Latihan hobby 1."
   },
@@ -1274,7 +1274,7 @@
       "ja-n5-d77-l1"
     ],
     "subtitle_en": "Transportation 1",
-    "subtitle_id": "Transportation 1",
+    "subtitle_id": "Transportasi 1",
     "description_en": "Practice transportation 1.",
     "description_id": "Latihan transportation 1."
   },
@@ -1289,7 +1289,7 @@
       "ja-n5-d78-l1"
     ],
     "subtitle_en": "Clothes 1",
-    "subtitle_id": "Clothes 1",
+    "subtitle_id": "Pakaian 1",
     "description_en": "Practice clothes 1.",
     "description_id": "Latihan clothes 1."
   },
@@ -1304,7 +1304,7 @@
       "ja-n5-d79-l1"
     ],
     "subtitle_en": "Weather 1",
-    "subtitle_id": "Weather 1",
+    "subtitle_id": "Cuaca 1",
     "description_en": "Practice weather 1.",
     "description_id": "Latihan weather 1."
   },
@@ -1319,7 +1319,7 @@
       "ja-n5-d80-l1"
     ],
     "subtitle_en": "Direction 2",
-    "subtitle_id": "Direction 2",
+    "subtitle_id": "Arah 2",
     "description_en": "Practice direction 2.",
     "description_id": "Latihan direction 2."
   },
@@ -1334,7 +1334,7 @@
       "ja-n5-d81-l1"
     ],
     "subtitle_en": "Dates",
-    "subtitle_id": "Dates",
+    "subtitle_id": "Tanggal",
     "description_en": "Practice dates.",
     "description_id": "Latihan dates."
   },
@@ -1349,7 +1349,7 @@
       "ja-n5-d82-l1"
     ],
     "subtitle_en": "People 2",
-    "subtitle_id": "People 2",
+    "subtitle_id": "Orang 2",
     "description_en": "Practice people 2.",
     "description_id": "Latihan people 2."
   },
@@ -1364,7 +1364,7 @@
       "ja-n5-d83-l1"
     ],
     "subtitle_en": "Clothes 4",
-    "subtitle_id": "Clothes 4",
+    "subtitle_id": "Pakaian 4",
     "description_en": "Practice clothes 4.",
     "description_id": "Latihan clothes 4."
   },
@@ -1379,7 +1379,7 @@
       "ja-n5-d84-l1"
     ],
     "subtitle_en": "Nature 1",
-    "subtitle_id": "Nature 1",
+    "subtitle_id": "Alam 1",
     "description_en": "Practice nature 1.",
     "description_id": "Latihan nature 1."
   },
@@ -1394,7 +1394,7 @@
       "ja-n5-d85-l1"
     ],
     "subtitle_en": "Convenience Store",
-    "subtitle_id": "Convenience Store",
+    "subtitle_id": "Toko Serba Ada",
     "description_en": "Practice convenience store.",
     "description_id": "Latihan convenience store."
   },
@@ -1409,7 +1409,7 @@
       "ja-n5-d86-l1"
     ],
     "subtitle_en": "Feelings 1",
-    "subtitle_id": "Feelings 1",
+    "subtitle_id": "Perasaan 1",
     "description_en": "Practice feelings 1.",
     "description_id": "Latihan feelings 1."
   },
@@ -1424,7 +1424,7 @@
       "ja-n5-d87-l1"
     ],
     "subtitle_en": "Object",
-    "subtitle_id": "Object",
+    "subtitle_id": "Obyek",
     "description_en": "Practice object.",
     "description_id": "Latihan object."
   },
@@ -1439,7 +1439,7 @@
       "ja-n5-d88-l1"
     ],
     "subtitle_en": "Clothes 3",
-    "subtitle_id": "Clothes 3",
+    "subtitle_id": "Pakaian 3",
     "description_en": "Practice clothes 3.",
     "description_id": "Latihan clothes 3."
   },
@@ -1454,7 +1454,7 @@
       "ja-n5-d89-l1"
     ],
     "subtitle_en": "Classroom 3",
-    "subtitle_id": "Classroom 3",
+    "subtitle_id": "Kelas 3",
     "description_en": "Practice classroom 3.",
     "description_id": "Latihan classroom 3."
   },
@@ -1469,7 +1469,7 @@
       "ja-n5-d90-l1"
     ],
     "subtitle_en": "Health 1",
-    "subtitle_id": "Health 1",
+    "subtitle_id": "Kesehatan 1",
     "description_en": "Practice health 1.",
     "description_id": "Latihan health 1."
   },
@@ -1484,7 +1484,7 @@
       "ja-n5-d91-l1"
     ],
     "subtitle_en": "Memories 1",
-    "subtitle_id": "Memories 1",
+    "subtitle_id": "Kenangan 1",
     "description_en": "Practice memories 1.",
     "description_id": "Latihan memories 1."
   },
@@ -1499,7 +1499,7 @@
       "ja-n5-d92-l1"
     ],
     "subtitle_en": "Post Office",
-    "subtitle_id": "Post Office",
+    "subtitle_id": "Kantor Pos",
     "description_en": "Practice post office.",
     "description_id": "Latihan post office."
   },
@@ -1514,7 +1514,7 @@
       "ja-n5-d93-l1"
     ],
     "subtitle_en": "The City",
-    "subtitle_id": "The City",
+    "subtitle_id": "Kota",
     "description_en": "Practice the city.",
     "description_id": "Latihan the city."
   },
@@ -1529,7 +1529,7 @@
       "ja-n5-d94-l1"
     ],
     "subtitle_en": "Ability 1",
-    "subtitle_id": "Ability 1",
+    "subtitle_id": "Kemampuan 1",
     "description_en": "Practice ability 1.",
     "description_id": "Latihan ability 1."
   },
@@ -1544,7 +1544,7 @@
       "ja-n5-d95-l1"
     ],
     "subtitle_en": "Money 1",
-    "subtitle_id": "Money 1",
+    "subtitle_id": "Uang 1",
     "description_en": "Practice money 1.",
     "description_id": "Latihan money 1."
   },
@@ -1559,7 +1559,7 @@
       "ja-n5-d96-l1"
     ],
     "subtitle_en": "Ability 2",
-    "subtitle_id": "Ability 2",
+    "subtitle_id": "Kemampuan 2",
     "description_en": "Practice ability 2.",
     "description_id": "Latihan ability 2."
   },
@@ -1574,7 +1574,7 @@
       "ja-n5-d97-l1"
     ],
     "subtitle_en": "Restaurant 2",
-    "subtitle_id": "Restaurant 2",
+    "subtitle_id": "Restoran 2",
     "description_en": "Practice restaurant 2.",
     "description_id": "Latihan restaurant 2."
   },
@@ -1589,7 +1589,7 @@
       "ja-n4-d1-l1"
     ],
     "subtitle_en": "Condition",
-    "subtitle_id": "Condition",
+    "subtitle_id": "Kondisi",
     "description_en": "Practice condition.",
     "description_id": "Latihan condition."
   },
@@ -1604,7 +1604,7 @@
       "ja-n4-d2-l1"
     ],
     "subtitle_en": "Cooking 1",
-    "subtitle_id": "Cooking 1",
+    "subtitle_id": "Memasak 1",
     "description_en": "Practice cooking 1.",
     "description_id": "Latihan cooking 1."
   },
@@ -1619,7 +1619,7 @@
       "ja-n4-d3-l1"
     ],
     "subtitle_en": "Resources",
-    "subtitle_id": "Resources",
+    "subtitle_id": "Sumber daya",
     "description_en": "Practice resources.",
     "description_id": "Latihan resources."
   },
@@ -1634,7 +1634,7 @@
       "ja-n4-d4-l1"
     ],
     "subtitle_en": "Emergency 1",
-    "subtitle_id": "Emergency 1",
+    "subtitle_id": "Darurat 1",
     "description_en": "Practice emergency 1.",
     "description_id": "Latihan emergency 1."
   },
@@ -1649,7 +1649,7 @@
       "ja-n4-d5-l1"
     ],
     "subtitle_en": "Education",
-    "subtitle_id": "Education",
+    "subtitle_id": "Pendidikan",
     "description_en": "Practice education.",
     "description_id": "Latihan education."
   },
@@ -1664,7 +1664,7 @@
       "ja-n4-d6-l1"
     ],
     "subtitle_en": "Numbers 2",
-    "subtitle_id": "Numbers 2",
+    "subtitle_id": "Nomor 2",
     "description_en": "Practice numbers 2.",
     "description_id": "Latihan numbers 2."
   },
@@ -1679,7 +1679,7 @@
       "ja-n4-d7-l1"
     ],
     "subtitle_en": "Desires 1",
-    "subtitle_id": "Desires 1",
+    "subtitle_id": "Keinginan 1",
     "description_en": "Practice desires 1.",
     "description_id": "Latihan desires 1."
   },
@@ -1694,7 +1694,7 @@
       "ja-n4-d8-l1"
     ],
     "subtitle_en": "Ideas 1",
-    "subtitle_id": "Ideas 1",
+    "subtitle_id": "Ide 1",
     "description_en": "Practice ideas 1.",
     "description_id": "Latihan ideas 1."
   },
@@ -1709,7 +1709,7 @@
       "ja-n4-d9-l1"
     ],
     "subtitle_en": "Education 2",
-    "subtitle_id": "Education 2",
+    "subtitle_id": "Pendidikan 2",
     "description_en": "Practice education 2.",
     "description_id": "Latihan education 2."
   },
@@ -1724,7 +1724,7 @@
       "ja-n4-d10-l1"
     ],
     "subtitle_en": "Ideas 2",
-    "subtitle_id": "Ideas 2",
+    "subtitle_id": "Ide 2",
     "description_en": "Practice ideas 2.",
     "description_id": "Latihan ideas 2."
   },
@@ -1739,7 +1739,7 @@
       "ja-n4-d11-l1"
     ],
     "subtitle_en": "Health 2",
-    "subtitle_id": "Health 2",
+    "subtitle_id": "Kesehatan 2",
     "description_en": "Practice health 2.",
     "description_id": "Latihan health 2."
   },
@@ -1754,7 +1754,7 @@
       "ja-n4-d12-l1"
     ],
     "subtitle_en": "Society",
-    "subtitle_id": "Society",
+    "subtitle_id": "Masyarakat",
     "description_en": "Practice society.",
     "description_id": "Latihan society."
   },
@@ -1769,7 +1769,7 @@
       "ja-n4-d13-l1"
     ],
     "subtitle_en": "Work 2",
-    "subtitle_id": "Work 2",
+    "subtitle_id": "Pekerjaan 2",
     "description_en": "Practice work 2.",
     "description_id": "Latihan work 2."
   },
@@ -1784,7 +1784,7 @@
       "ja-n4-d14-l1"
     ],
     "subtitle_en": "Feelings 2",
-    "subtitle_id": "Feelings 2",
+    "subtitle_id": "Perasaan 2",
     "description_en": "Practice feelings 2.",
     "description_id": "Latihan feelings 2."
   },
@@ -1799,7 +1799,7 @@
       "ja-n4-d15-l1"
     ],
     "subtitle_en": "The Arts 1",
-    "subtitle_id": "The Arts 1",
+    "subtitle_id": "Seni 1",
     "description_en": "Practice the arts 1.",
     "description_id": "Latihan the arts 1."
   },
@@ -1814,7 +1814,7 @@
       "ja-n4-d16-l1"
     ],
     "subtitle_en": "Geography 1",
-    "subtitle_id": "Geography 1",
+    "subtitle_id": "Geografi 1",
     "description_en": "Practice geography 1.",
     "description_id": "Latihan geography 1."
   },
@@ -1829,7 +1829,7 @@
       "ja-n4-d17-l1"
     ],
     "subtitle_en": "Law 1",
-    "subtitle_id": "Law 1",
+    "subtitle_id": "Hukum 1",
     "description_en": "Practice law 1.",
     "description_id": "Latihan law 1."
   },
@@ -1844,7 +1844,7 @@
       "ja-n4-d18-l1"
     ],
     "subtitle_en": "Plans 1",
-    "subtitle_id": "Plans 1",
+    "subtitle_id": "Rencana 1",
     "description_en": "Practice plans 1.",
     "description_id": "Latihan plans 1."
   },
@@ -1859,7 +1859,7 @@
       "ja-n4-d19-l1"
     ],
     "subtitle_en": "Conflict 1",
-    "subtitle_id": "Conflict 1",
+    "subtitle_id": "Konflik 1",
     "description_en": "Practice conflict 1.",
     "description_id": "Latihan conflict 1."
   },
@@ -1874,7 +1874,7 @@
       "ja-n4-d20-l1"
     ],
     "subtitle_en": "Law 2",
-    "subtitle_id": "Law 2",
+    "subtitle_id": "Hukum 2",
     "description_en": "Practice law 2.",
     "description_id": "Latihan law 2."
   },
@@ -1889,7 +1889,7 @@
       "ja-n4-d21-l1"
     ],
     "subtitle_en": "Obligation 2",
-    "subtitle_id": "Obligation 2",
+    "subtitle_id": "Kewajiban 2",
     "description_en": "Practice obligation 2.",
     "description_id": "Latihan obligation 2."
   },
@@ -1904,7 +1904,7 @@
       "ja-n4-d22-l1"
     ],
     "subtitle_en": "Honorifics 1",
-    "subtitle_id": "Honorifics 1",
+    "subtitle_id": "Kehormatan 1",
     "description_en": "Practice honorifics 1.",
     "description_id": "Latihan honorifics 1."
   },
@@ -1919,7 +1919,7 @@
       "ja-n4-d23-l1"
     ],
     "subtitle_en": "Geography 2",
-    "subtitle_id": "Geography 2",
+    "subtitle_id": "Geografi 2",
     "description_en": "Practice geography 2.",
     "description_id": "Latihan geography 2."
   },
@@ -1934,7 +1934,7 @@
       "ja-n4-d24-l1"
     ],
     "subtitle_en": "Politics 2",
-    "subtitle_id": "Politics 2",
+    "subtitle_id": "Politik 2",
     "description_en": "Practice politics 2.",
     "description_id": "Latihan politics 2."
   },
@@ -1949,7 +1949,7 @@
       "ja-n4-d25-l1"
     ],
     "subtitle_en": "Health 3",
-    "subtitle_id": "Health 3",
+    "subtitle_id": "Kesehatan 3",
     "description_en": "Practice health 3.",
     "description_id": "Latihan health 3."
   },
@@ -1964,7 +1964,7 @@
       "ja-n4-d26-l1"
     ],
     "subtitle_en": "News 1",
-    "subtitle_id": "News 1",
+    "subtitle_id": "Berita 1",
     "description_en": "Practice news 1.",
     "description_id": "Latihan news 1."
   },
@@ -1979,7 +1979,7 @@
       "ja-n4-d27-l1"
     ],
     "subtitle_en": "Transportation 4",
-    "subtitle_id": "Transportation 4",
+    "subtitle_id": "Transportasi 4",
     "description_en": "Practice transportation 4.",
     "description_id": "Latihan transportation 4."
   },
@@ -1994,7 +1994,7 @@
       "ja-n4-d28-l1"
     ],
     "subtitle_en": "Fantasy 1",
-    "subtitle_id": "Fantasy 1",
+    "subtitle_id": "Fantasi 1",
     "description_en": "Practice fantasy 1.",
     "description_id": "Latihan fantasy 1."
   },
@@ -2009,7 +2009,7 @@
       "ja-n4-d29-l1"
     ],
     "subtitle_en": "Ideas 3",
-    "subtitle_id": "Ideas 3",
+    "subtitle_id": "Ide 3",
     "description_en": "Practice ideas 3.",
     "description_id": "Latihan ideas 3."
   },
@@ -2024,7 +2024,7 @@
       "ja-n4-d30-l1"
     ],
     "subtitle_en": "The Clinic",
-    "subtitle_id": "The Clinic",
+    "subtitle_id": "Klinik",
     "description_en": "Practice the clinic.",
     "description_id": "Latihan the clinic."
   },
@@ -2039,7 +2039,7 @@
       "ja-n4-d31-l1"
     ],
     "subtitle_en": "The Train",
-    "subtitle_id": "The Train",
+    "subtitle_id": "Kereta Api",
     "description_en": "Practice the train.",
     "description_id": "Latihan the train."
   },
@@ -2054,7 +2054,7 @@
       "ja-n4-d32-l1"
     ],
     "subtitle_en": "Work 4",
-    "subtitle_id": "Work 4",
+    "subtitle_id": "Pekerjaan 4",
     "description_en": "Practice work 4.",
     "description_id": "Latihan work 4."
   },
@@ -2069,7 +2069,7 @@
       "ja-n4-d33-l1"
     ],
     "subtitle_en": "News 2",
-    "subtitle_id": "News 2",
+    "subtitle_id": "Berita 2",
     "description_en": "Practice news 2.",
     "description_id": "Latihan news 2."
   },
@@ -2084,7 +2084,7 @@
       "ja-n4-d34-l1"
     ],
     "subtitle_en": "Authority",
-    "subtitle_id": "Authority",
+    "subtitle_id": "Otoritas",
     "description_en": "Practice authority.",
     "description_id": "Latihan authority."
   },
@@ -2099,7 +2099,7 @@
       "ja-n4-d35-l1"
     ],
     "subtitle_en": "Animals",
-    "subtitle_id": "Animals",
+    "subtitle_id": "Hewan",
     "description_en": "Practice animals.",
     "description_id": "Latihan animals."
   },
@@ -2114,7 +2114,7 @@
       "ja-n4-d36-l1"
     ],
     "subtitle_en": "Casual 1",
-    "subtitle_id": "Casual 1",
+    "subtitle_id": "Santai 1",
     "description_en": "Practice casual 1.",
     "description_id": "Latihan casual 1."
   },
@@ -2129,7 +2129,7 @@
       "ja-n4-d37-l1"
     ],
     "subtitle_en": "Desires 2",
-    "subtitle_id": "Desires 2",
+    "subtitle_id": "Keinginan 2",
     "description_en": "Practice desires 2.",
     "description_id": "Latihan desires 2."
   },
@@ -2144,7 +2144,7 @@
       "ja-n4-d38-l1"
     ],
     "subtitle_en": "The Dentist",
-    "subtitle_id": "The Dentist",
+    "subtitle_id": "Dokter Gigi",
     "description_en": "Practice the dentist.",
     "description_id": "Latihan the dentist."
   },
@@ -2159,7 +2159,7 @@
       "ja-n4-d39-l1"
     ],
     "subtitle_en": "Cooking 5",
-    "subtitle_id": "Cooking 5",
+    "subtitle_id": "Memasak 5",
     "description_en": "Practice cooking 5.",
     "description_id": "Latihan cooking 5."
   },
@@ -2174,7 +2174,7 @@
       "ja-n4-d40-l1"
     ],
     "subtitle_en": "People 3",
-    "subtitle_id": "People 3",
+    "subtitle_id": "Orang 3",
     "description_en": "Practice people 3.",
     "description_id": "Latihan people 3."
   },
@@ -2189,7 +2189,7 @@
       "ja-n4-d41-l1"
     ],
     "subtitle_en": "The Clinic 2",
-    "subtitle_id": "The Clinic 2",
+    "subtitle_id": "Klinik 2",
     "description_en": "Practice the clinic 2.",
     "description_id": "Latihan the clinic 2."
   },
@@ -2204,7 +2204,7 @@
       "ja-n4-d42-l1"
     ],
     "subtitle_en": "The Arts 2",
-    "subtitle_id": "The Arts 2",
+    "subtitle_id": "Seni 2",
     "description_en": "Practice the arts 2.",
     "description_id": "Latihan the arts 2."
   },
@@ -2219,7 +2219,7 @@
       "ja-n4-d43-l1"
     ],
     "subtitle_en": "Ideas 4",
-    "subtitle_id": "Ideas 4",
+    "subtitle_id": "Ide 4",
     "description_en": "Practice ideas 4.",
     "description_id": "Latihan ideas 4."
   },
@@ -2234,7 +2234,7 @@
       "ja-n4-d44-l1"
     ],
     "subtitle_en": "Restaurant 3",
-    "subtitle_id": "Restaurant 3",
+    "subtitle_id": "Restoran 3",
     "description_en": "Practice restaurant 3.",
     "description_id": "Latihan restaurant 3."
   },
@@ -2249,7 +2249,7 @@
       "ja-n4-d45-l1"
     ],
     "subtitle_en": "Fantasy 2",
-    "subtitle_id": "Fantasy 2",
+    "subtitle_id": "Fantasi 2",
     "description_en": "Practice fantasy 2.",
     "description_id": "Latihan fantasy 2."
   },
@@ -2264,7 +2264,7 @@
       "ja-n4-d46-l1"
     ],
     "subtitle_en": "The Farm",
-    "subtitle_id": "The Farm",
+    "subtitle_id": "Peternakan",
     "description_en": "Practice the farm.",
     "description_id": "Latihan the farm."
   },
@@ -2279,7 +2279,7 @@
       "ja-n4-d47-l1"
     ],
     "subtitle_en": "Language",
-    "subtitle_id": "Language",
+    "subtitle_id": "Bahasa",
     "description_en": "Practice language.",
     "description_id": "Latihan language."
   },
@@ -2294,7 +2294,7 @@
       "ja-n4-d48-l1"
     ],
     "subtitle_en": "Science 3",
-    "subtitle_id": "Science 3",
+    "subtitle_id": "Sains 3",
     "description_en": "Practice science 3.",
     "description_id": "Latihan science 3."
   },
@@ -2309,7 +2309,7 @@
       "ja-n4-d49-l1"
     ],
     "subtitle_en": "Ideas 5",
-    "subtitle_id": "Ideas 5",
+    "subtitle_id": "Ide 5",
     "description_en": "Practice ideas 5.",
     "description_id": "Latihan ideas 5."
   },
@@ -2324,7 +2324,7 @@
       "ja-n4-d50-l1"
     ],
     "subtitle_en": "Law 3",
-    "subtitle_id": "Law 3",
+    "subtitle_id": "Hukum 3",
     "description_en": "Practice law 3.",
     "description_id": "Latihan law 3."
   },
@@ -2339,7 +2339,7 @@
       "ja-n5-d98-l1"
     ],
     "subtitle_en": "Four Seasons",
-    "subtitle_id": "Four Seasons",
+    "subtitle_id": "Empat Musim",
     "description_en": "Practice four seasons.",
     "description_id": "Latihan four seasons."
   },
