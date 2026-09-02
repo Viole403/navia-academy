@@ -1,7 +1,8 @@
 "use client"
 
 import Link from "next/link"
-import { Lock } from "lucide-react"
+import { useState } from "react"
+import { ChevronDown, Lock } from "lucide-react"
 import { useCurriculum } from "@/lib/curriculum"
 import { lessonsFor, useProgress } from "@/stores/progress"
 import { useSettings } from "@/stores/settings"
@@ -9,6 +10,7 @@ import { useExamConfig } from "@/lib/exam-definitions"
 import { Badge, Card, ProgressBar, SectionHeader } from "@/components/ui"
 import { useTranslation } from "@/i18n/locale-context"
 import { locText } from "@/lib/content-translation"
+import { cn } from "@/lib/utils"
 
 export default function ProgramPage() {
   const { t, locale } = useTranslation()
@@ -22,6 +24,21 @@ export default function ProgramPage() {
     lessons: LESSONS,
   } = useCurriculum()
   const { displayNames: EXAM_DISPLAY_NAMES } = useExamConfig()
+
+  // Level accordion: null = default (first level open). Once the user
+  // toggles any level, honor the set strictly so all can be collapsed.
+  const [openLevels, setOpenLevels] = useState<Set<string> | null>(null)
+  const activeLevels = LEVELS.filter((l) => l.examType === activeExamType)
+  const toggleLevel = (id: string) =>
+    setOpenLevels((prev) => {
+      const current = prev ?? new Set<string>()
+      const next = new Set(current)
+      if (next.has(id)) next.delete(id)
+      else next.add(id)
+      return next
+    })
+  const isOpen = (id: string, index: number) =>
+    openLevels === null ? index === 0 : openLevels.has(id)
 
   // Fallback for languages without curriculum yet (show immediately, don't wait for mount)
   if (!COURSE || LEVELS.length === 0) {
@@ -58,8 +75,6 @@ export default function ProgramPage() {
     )
   }
 
-  const activeLevels = LEVELS.filter((l) => l.examType === activeExamType)
-
   return (
     <div className="animate-fade-up">
       <SectionHeader
@@ -76,9 +91,13 @@ export default function ProgramPage() {
             (l) => lessons[l.id]?.completed
           ).length
           const hasContent = units.length > 0
+          const open = isOpen(level.id, i)
           return (
             <Card key={level.id} className="p-5">
-              <div className="flex flex-wrap items-start justify-between gap-3">
+              <button
+                onClick={() => toggleLevel(level.id)}
+                className="flex w-full items-start justify-between gap-3 text-left"
+              >
                 <div className="flex items-start gap-4">
                   <span className="bg-surface flex h-12 w-12 shrink-0 items-center justify-center rounded-[var(--radius)] border border-line font-display text-xl text-accent">
                     {i + 1}
@@ -103,73 +122,91 @@ export default function ProgramPage() {
                     </p>
                   </div>
                 </div>
-                <p className="text-xs text-ink-faint">
-                  ≈ {level.estimatedHours} h
-                </p>
-              </div>
+                <div className="flex shrink-0 items-center gap-3">
+                  <p className="text-xs text-ink-faint">
+                    ≈ {level.estimatedHours} h
+                  </p>
+                  <ChevronDown
+                    className={cn(
+                      "h-5 w-5 text-ink-faint transition-transform",
+                      open && "rotate-180"
+                    )}
+                  />
+                </div>
+              </button>
 
-              <details className="group mt-3">
-                <summary className="cursor-pointer text-xs font-medium text-accent hover:underline">
-                  {t("program.levelObjectives")}
-                </summary>
-                <ul className="mt-2 grid gap-1 text-sm text-ink-soft sm:grid-cols-2">
-                  {(level.objectives ?? []).map((o) => (
-                    <li key={o}>· {o}</li>
-                  ))}
-                </ul>
-              </details>
-
-              {hasContent && (
+              {open && (
                 <>
-                  <div className="mt-4 flex items-center gap-3">
-                    <ProgressBar
-                      value={done}
-                      max={levelLessons.length}
-                      className="flex-1"
-                      label={t("program.levelProgress", { name: level.title })}
-                    />
-                    <span className="text-xs text-ink-faint">
-                      {t("program.lessonsCount", {
-                        done: String(done),
-                        total: String(levelLessons.length),
-                      })}
-                    </span>
-                  </div>
-                  <div className="mt-4 grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
-                    {units
-                      .sort((a, b) => a.order - b.order)
-                      .map((unit) => {
-                        const ul = LESSONS.filter((l) => l.unitId === unit.id)
-                        const ud = ul.filter(
-                          (l) => lessons[l.id]?.completed
-                        ).length
-                        return (
-                          <Link
-                            key={unit.id}
-                            href={`/dashboard/unit/${unit.id}`}
-                            className="rounded-[var(--radius)] border border-line bg-sunken/40 p-4 transition-colors hover:border-accent"
-                          >
-                            <p className="text-xs text-ink-faint">
-                              {t("program.unit", { n: String(unit.order) })}
-                            </p>
-                            <p className="mt-0.5 font-medium">{unit.title}</p>
-                            <p className="text-xs text-ink-faint">
-                              {locText(unit, "subtitle", locale)}
-                            </p>
-                            <div className="mt-3 flex items-center gap-2">
-                              <ProgressBar
-                                value={ud}
-                                max={ul.length}
-                                className="flex-1"
-                              />
-                              <span className="text-xs text-ink-faint">
-                                {ud}/{ul.length}
-                              </span>
-                            </div>
-                          </Link>
-                        )
-                      })}
-                  </div>
+                  <details className="group mt-3">
+                    <summary className="cursor-pointer text-xs font-medium text-accent hover:underline">
+                      {t("program.levelObjectives")}
+                    </summary>
+                    <ul className="mt-2 grid gap-1 text-sm text-ink-soft sm:grid-cols-2">
+                      {(level.objectives ?? []).map((o) => (
+                        <li key={o}>· {o}</li>
+                      ))}
+                    </ul>
+                  </details>
+
+                  {hasContent && (
+                    <>
+                      <div className="mt-4 flex items-center gap-3">
+                        <ProgressBar
+                          value={done}
+                          max={levelLessons.length}
+                          className="flex-1"
+                          label={t("program.levelProgress", {
+                            name: level.title,
+                          })}
+                        />
+                        <span className="text-xs text-ink-faint">
+                          {t("program.lessonsCount", {
+                            done: String(done),
+                            total: String(levelLessons.length),
+                          })}
+                        </span>
+                      </div>
+                      <div className="mt-4 grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
+                        {units
+                          .sort((a, b) => a.order - b.order)
+                          .map((unit) => {
+                            const ul = LESSONS.filter(
+                              (l) => l.unitId === unit.id
+                            )
+                            const ud = ul.filter(
+                              (l) => lessons[l.id]?.completed
+                            ).length
+                            return (
+                              <Link
+                                key={unit.id}
+                                href={`/dashboard/unit/${unit.id}`}
+                                className="rounded-[var(--radius)] border border-line bg-sunken/40 p-4 transition-colors hover:border-accent"
+                              >
+                                <p className="text-xs text-ink-faint">
+                                  {t("program.unit", { n: String(unit.order) })}
+                                </p>
+                                <p className="mt-0.5 font-medium">
+                                  {unit.title}
+                                </p>
+                                <p className="text-xs text-ink-faint">
+                                  {locText(unit, "subtitle", locale)}
+                                </p>
+                                <div className="mt-3 flex items-center gap-2">
+                                  <ProgressBar
+                                    value={ud}
+                                    max={ul.length}
+                                    className="flex-1"
+                                  />
+                                  <span className="text-xs text-ink-faint">
+                                    {ud}/{ul.length}
+                                  </span>
+                                </div>
+                              </Link>
+                            )
+                          })}
+                      </div>
+                    </>
+                  )}
                 </>
               )}
             </Card>
