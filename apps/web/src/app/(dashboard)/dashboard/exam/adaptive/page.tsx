@@ -106,6 +106,10 @@ export default function AdaptiveExamPage() {
   const mounted = useMounted()
   const settings = useSettings()
   const resumeObj = useRef<CatResume | null>(null)
+  // startThetaRef captures the theta this session began with (fresh = prior
+  // Elo or 550; resume = the stored start). The server recomputes the CAT
+  // rating from this start, so omitting it makes resume sessions under-report.
+  const startThetaRef = useRef(550)
   const { current, theta, log, done, result, start, answer } = useCatExam(
     undefined,
     resumeObj
@@ -265,11 +269,13 @@ export default function AdaptiveExamPage() {
   function beginSession(resumeData: CatResume | null) {
     if (resumeData) {
       resumeObj.current = resumeData
+      startThetaRef.current = resumeData.startTheta
       setPendingResume(null)
       start()
       return
     }
     resumeObj.current = null
+    startThetaRef.current = theta
     setPendingResume(null)
     startedRef.current = true
     sessionIdRef.current = null
@@ -328,6 +334,7 @@ export default function AdaptiveExamPage() {
       .result({
         exam_type: examType,
         exam_level: result.cefrBand,
+        start_theta: startThetaRef.current,
         elo_estimate: Math.round(result.eloEstimate),
         elo_sd: Math.round(result.eloSd),
         cefr_band: result.cefrBand,
@@ -342,6 +349,7 @@ export default function AdaptiveExamPage() {
         queueResult({
           exam_type: examType,
           exam_level: result.cefrBand,
+          start_theta: startThetaRef.current,
           elo_estimate: Math.round(result.eloEstimate),
           elo_sd: Math.round(result.eloSd),
           cefr_band: result.cefrBand,
