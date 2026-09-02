@@ -1,1 +1,799 @@
-[]
+[
+  {
+    "id": "ja_gram_n3_01",
+    "language": "ja",
+    "title": "〜ことだ",
+    "pattern": "〜ことだ",
+    "level": 3,
+    "examMappings": {
+      "jlpt": "N3"
+    },
+    "difficulty": 3,
+    "simpleExplanation": "should; it is important to",
+    "usage": "〜ことだ: Verb-plain + ことだ",
+    "examples": [
+      {
+        "text": "毎日復習することだ。",
+        "romanization": "Mainichifukushuusurukotoda.",
+        "translation": "You should review every day.",
+        "translation_en": "You should review every day.",
+        "translation_id": "Anda harus meninjaunya setiap hari."
+      },
+      {
+        "text": "健康のために運動することだ。",
+        "romanization": "Kenkounotameniundousurukotoda.",
+        "translation": "You should exercise for your health.",
+        "translation_en": "You should exercise for your health.",
+        "translation_id": "Anda harus berolahraga untuk kesehatan Anda."
+      }
+    ],
+    "category": "grammar",
+    "tags": [
+      "advice",
+      "emphasis"
+    ],
+    "title_en": "〜ことだ — should; it is important to",
+    "title_id": "should; it is important to",
+    "simpleExplanation_en": "should; it is important to",
+    "simpleExplanation_id": "sebaiknya; itu penting untuk",
+    "usage_en": "〜ことだ: Verb-plain + ことだ",
+    "usage_id": "〜ことだ: Kata kerja-polos + ことだ"
+  },
+  {
+    "id": "ja_gram_n3_02",
+    "language": "ja",
+    "title": "〜ことはない",
+    "pattern": "〜ことはない",
+    "level": 3,
+    "examMappings": {
+      "jlpt": "N3"
+    },
+    "difficulty": 3,
+    "simpleExplanation": "there is no need to; never happens",
+    "usage": "〜ことはない: Verb-plain + ことはない",
+    "examples": [
+      {
+        "text": "心配することはない。",
+        "romanization": "Shinpaisurukotohanai.",
+        "translation": "There is no need to worry.",
+        "translation_en": "There is no need to worry.",
+        "translation_id": "Tidak perlu khawatir."
+      },
+      {
+        "text": "そんなことはない。",
+        "romanization": "Sonnakotohanai.",
+        "translation": "That's not true.",
+        "translation_en": "That's not true.",
+        "translation_id": "Itu tidak benar."
+      }
+    ],
+    "category": "grammar",
+    "tags": [
+      "negation",
+      "reassurance"
+    ],
+    "title_en": "〜ことはない — there is no need to; never happens",
+    "title_id": "there is no need to; never happens",
+    "simpleExplanation_en": "there is no need to; never happens",
+    "simpleExplanation_id": "tidak perlu; tidak pernah terjadi",
+    "usage_en": "〜ことはない: Verb-plain + ことはない",
+    "usage_id": "〜ことはない: Kata kerja-polos + ことはない"
+  },
+  {
+    "id": "ja_gram_n3_03",
+    "language": "ja",
+    "title": "〜そうにする",
+    "pattern": "〜そうにする",
+    "level": 3,
+    "examMappings": {
+      "jlpt": "N3"
+    },
+    "difficulty": 3,
+    "simpleExplanation": "pretend to; act as if",
+    "usage": "〜そうにする: Verb-plain + そうにする",
+    "examples": [
+      {
+        "text": "知らないそうにしていた。",
+        "romanization": "Shiranaisounishiteita.",
+        "translation": "I pretended not to know.",
+        "translation_en": "I pretended not to know.",
+        "translation_id": "Aku pura-pura tidak tahu."
+      },
+      {
+        "text": "元気そうに見せる。",
+        "romanization": "Genkisounimiseru.",
+        "translation": "I act as if I am healthy.",
+        "translation_en": "I act as if I am healthy.",
+        "translation_id": "Saya bertindak seolah-olah saya sehat."
+      }
+    ],
+    "category": "grammar",
+    "tags": [
+      "pretense",
+      "appearance"
+    ],
+    "title_en": "〜そうにする — pretend to; act as if",
+    "title_id": "pretend to; act as if",
+    "simpleExplanation_en": "pretend to; act as if",
+    "simpleExplanation_id": "berpura-pura; bertindak seolah-olah",
+    "usage_en": "〜そうにする: Verb-plain + そうにする",
+    "usage_id": "〜そうにする: Kata kerja-polos + そうにする"
+  },
+  {
+    "id": "ja_gram_n3_04",
+    "language": "ja",
+    "title": "〜ところ",
+    "pattern": "〜ところ",
+    "level": 3,
+    "examMappings": {
+      "jlpt": "N3"
+    },
+    "difficulty": 3,
+    "simpleExplanation": "time; place; situation; about to",
+    "usage": "〜ところ: Verb-plain / Verb-te / Verb-ta + ところ",
+    "examples": [
+      {
+        "text": "今、出かけるところです。",
+        "romanization": "Ima,dekakerutokorodesu.",
+        "translation": "I am about to go out now.",
+        "translation_en": "I am about to go out now.",
+        "translation_id": "Saya akan keluar sekarang."
+      },
+      {
+        "text": "電話したところ、彼は出かけていた。",
+        "romanization": "Denwashitatokoro,karehadekaketeita.",
+        "translation": "When I called, he had just gone out.",
+        "translation_en": "When I called, he had just gone out.",
+        "translation_id": "Ketika saya menelepon, dia baru saja keluar."
+      }
+    ],
+    "category": "grammar",
+    "tags": [
+      "timing",
+      "situation"
+    ],
+    "title_en": "〜ところ — time; place; situation; about to",
+    "title_id": "time; place; situation; about to",
+    "simpleExplanation_en": "time; place; situation; about to",
+    "simpleExplanation_id": "waktu; tempat; situasi; akan",
+    "usage_en": "〜ところ: Verb-plain / Verb-te / Verb-ta + ところ",
+    "usage_id": "〜ところ: Verba-polos / Verb-te / Verb-ta + ところ"
+  },
+  {
+    "id": "ja_gram_n3_05",
+    "language": "ja",
+    "title": "〜について",
+    "pattern": "〜について",
+    "level": 3,
+    "examMappings": {
+      "jlpt": "N3"
+    },
+    "difficulty": 3,
+    "simpleExplanation": "about; concerning; regarding",
+    "usage": "〜について: Noun + について",
+    "examples": [
+      {
+        "text": "環境について話す。",
+        "romanization": "Kankyounitsuitehanasu.",
+        "translation": "Talk about the environment.",
+        "translation_en": "Talk about the environment.",
+        "translation_id": "Bicara tentang lingkungan."
+      },
+      {
+        "text": "日本の文化について学ぶ。",
+        "romanization": "Nipponnobunkanitsuitemanabu.",
+        "translation": "Learn about Japanese culture.",
+        "translation_en": "Learn about Japanese culture.",
+        "translation_id": "Pelajari tentang budaya Jepang."
+      }
+    ],
+    "category": "grammar",
+    "tags": [
+      "topic"
+    ],
+    "title_en": "〜について — about; concerning; regarding",
+    "title_id": "about; concerning; regarding",
+    "simpleExplanation_en": "about; concerning; regarding",
+    "simpleExplanation_id": "tentang; tentang; tentang",
+    "usage_en": "〜について: Noun + について",
+    "usage_id": "〜について: Kata benda + について"
+  },
+  {
+    "id": "ja_gram_n3_06",
+    "language": "ja",
+    "title": "〜によって",
+    "pattern": "〜によって",
+    "level": 3,
+    "examMappings": {
+      "jlpt": "N3"
+    },
+    "difficulty": 3,
+    "simpleExplanation": "by means of; due to; depending on; passive agent",
+    "usage": "〜によって: Noun + によって",
+    "examples": [
+      {
+        "text": "この本は有名な作家によって書かれた。",
+        "romanization": "Konohonhayuumeinasakkaniyottekakareta.",
+        "translation": "This book was written by a famous author.",
+        "translation_en": "This book was written by a famous author.",
+        "translation_id": "Buku ini ditulis oleh seorang penulis terkenal."
+      },
+      {
+        "text": "人によって意見が違う。",
+        "romanization": "Ninniyotteikengachigau.",
+        "translation": "Opinions differ depending on the person.",
+        "translation_en": "Opinions differ depending on the person.",
+        "translation_id": "Pendapat berbeda-beda tergantung orangnya."
+      }
+    ],
+    "category": "grammar",
+    "tags": [
+      "means",
+      "passive",
+      "difference"
+    ],
+    "title_en": "〜によって — by means of; due to; depending on; passive agent",
+    "title_id": "by means of; due to; depending on; passive agent",
+    "simpleExplanation_en": "by means of; due to; depending on; passive agent",
+    "simpleExplanation_id": "melalui; karena; tergantung pada; agen pasif",
+    "usage_en": "〜によって: Noun + によって",
+    "usage_id": "〜によって: Kata benda + によって"
+  },
+  {
+    "id": "ja_gram_n3_07",
+    "language": "ja",
+    "title": "〜によると",
+    "pattern": "〜によると",
+    "level": 3,
+    "examMappings": {
+      "jlpt": "N3"
+    },
+    "difficulty": 3,
+    "simpleExplanation": "according to",
+    "usage": "〜によると: Noun + によると",
+    "examples": [
+      {
+        "text": "天気予報によると、明日は雨だ。",
+        "romanization": "Tenkiyohouniyoruto,ashitahaameda.",
+        "translation": "According to the weather forecast, it will rain tomorrow.",
+        "translation_en": "According to the weather forecast, it will rain tomorrow.",
+        "translation_id": "Menurut ramalan cuaca, besok akan turun hujan."
+      },
+      {
+        "text": "先生によると、試験は難しいらしい。",
+        "romanization": "Senseiniyoruto,shikenhamuzukashiirashii.",
+        "translation": "According to the teacher, the exam seems difficult.",
+        "translation_en": "According to the teacher, the exam seems difficult.",
+        "translation_id": "Menurut guru, ujiannya sepertinya sulit."
+      }
+    ],
+    "category": "grammar",
+    "tags": [
+      "hearsay"
+    ],
+    "title_en": "〜によると — according to",
+    "title_id": "menurut",
+    "simpleExplanation_en": "according to",
+    "simpleExplanation_id": "menurut",
+    "usage_en": "〜によると: Noun + によると",
+    "usage_id": "〜によると: Kata benda + によると"
+  },
+  {
+    "id": "ja_gram_n3_08",
+    "language": "ja",
+    "title": "〜に対して",
+    "pattern": "〜に対して",
+    "level": 3,
+    "examMappings": {
+      "jlpt": "N3"
+    },
+    "difficulty": 3,
+    "simpleExplanation": "toward; in contrast to; regarding",
+    "usage": "〜に対して: Noun + に対して",
+    "examples": [
+      {
+        "text": "お客様に対して丁寧に話す。",
+        "romanization": "Okyakusamanitaishiteteineinihanasu.",
+        "translation": "Speak politely toward customers.",
+        "translation_en": "Speak politely toward customers.",
+        "translation_id": "Berbicaralah dengan sopan kepada pelanggan."
+      },
+      {
+        "text": "兄は背が高いのに対して、弟は低い。",
+        "romanization": "Anihasegatakainonitaishite,otoutohahikui.",
+        "translation": "The older brother is tall, whereas the younger brother is short.",
+        "translation_en": "The older brother is tall, whereas the younger brother is short.",
+        "translation_id": "Kakak laki-lakinya tinggi, sedangkan adiknya pendek."
+      }
+    ],
+    "category": "grammar",
+    "tags": [
+      "target",
+      "contrast"
+    ],
+    "title_en": "〜に対して — toward; in contrast to; regarding",
+    "title_id": "toward; in contrast to; regarding",
+    "simpleExplanation_en": "toward; in contrast to; regarding",
+    "simpleExplanation_id": "ke arah; berbeda dengan; tentang",
+    "usage_en": "〜に対して: Noun + に対して",
+    "usage_id": "〜に対して: Kata benda + に対して"
+  },
+  {
+    "id": "ja_gram_n3_09",
+    "language": "ja",
+    "title": "〜ばかり",
+    "pattern": "〜ばかり",
+    "level": 3,
+    "examMappings": {
+      "jlpt": "N3"
+    },
+    "difficulty": 3,
+    "simpleExplanation": "only; just; full of; tendency to",
+    "usage": "〜ばかり: Verb-te / Noun + ばかり",
+    "examples": [
+      {
+        "text": "毎日ゲームをしているばかりだ。",
+        "romanization": "Mainichigeemuwoshiteirubakarida.",
+        "translation": "I do nothing but play games every day.",
+        "translation_en": "I do nothing but play games every day.",
+        "translation_id": "Saya tidak melakukan apa pun selain bermain game setiap hari."
+      },
+      {
+        "text": "彼は文句を言うばかりだ。",
+        "romanization": "Karehamonkuwoiubakarida.",
+        "translation": "He does nothing but complain.",
+        "translation_en": "He does nothing but complain.",
+        "translation_id": "Dia tidak melakukan apa pun selain mengeluh."
+      }
+    ],
+    "category": "grammar",
+    "tags": [
+      "limitation",
+      "habit"
+    ],
+    "title_en": "〜ばかり — only; just; full of; tendency to",
+    "title_id": "only; just; full of; tendency to",
+    "simpleExplanation_en": "only; just; full of; tendency to",
+    "simpleExplanation_id": "hanya; hanya; penuh dengan; kecenderungan untuk",
+    "usage_en": "〜ばかり: Verb-te / Noun + ばかり",
+    "usage_id": "〜ばかり: Kata Kerja-te / Kata Benda + ばかり"
+  },
+  {
+    "id": "ja_gram_n3_10",
+    "language": "ja",
+    "title": "〜ばかりでなく",
+    "pattern": "〜ばかりでなく",
+    "level": 3,
+    "examMappings": {
+      "jlpt": "N3"
+    },
+    "difficulty": 3,
+    "simpleExplanation": "not only ... but also",
+    "usage": "〜ばかりでなく: Verb-plain / i-adjective / na-adjective + ばかりでなく",
+    "examples": [
+      {
+        "text": "彼女は頭がいいばかりでなく、優しい。",
+        "romanization": "Kanojohaatamagaiibakaridenaku,yasashii.",
+        "translation": "She is not only smart but also kind.",
+        "translation_en": "She is not only smart but also kind.",
+        "translation_id": "Dia tidak hanya pintar tetapi juga baik hati."
+      },
+      {
+        "text": "日本語を読むばかりでなく、書く練習もする。",
+        "romanization": "Nihongowoyomubakaridenaku,kakurenshuumosuru.",
+        "translation": "I not only read Japanese but also practice writing.",
+        "translation_en": "I not only read Japanese but also practice writing.",
+        "translation_id": "Saya tidak hanya membaca bahasa Jepang tetapi juga berlatih menulis."
+      }
+    ],
+    "category": "grammar",
+    "tags": [
+      "addition"
+    ],
+    "title_en": "〜ばかりでなく — not only ... but also",
+    "title_id": "not only ... but also",
+    "simpleExplanation_en": "not only ... but also",
+    "simpleExplanation_id": "tidak hanya ... tetapi juga",
+    "usage_en": "〜ばかりでなく: Verb-plain / i-adjective / na-adjective + ばかりでなく",
+    "usage_id": "〜ばかりでなく: Kata kerja-polos / kata sifat-i / kata sifat-na + ばかりでなく"
+  },
+  {
+    "id": "ja_gram_n3_11",
+    "language": "ja",
+    "title": "〜ものだ",
+    "pattern": "〜ものだ",
+    "level": 3,
+    "examMappings": {
+      "jlpt": "N3"
+    },
+    "difficulty": 3,
+    "simpleExplanation": "it is natural/normal to; one should",
+    "usage": "〜ものだ: Verb-plain + ものだ",
+    "examples": [
+      {
+        "text": "子供のころはよく遊んだものだ。",
+        "romanization": "Kodomonokorohayokuasondamonoda.",
+        "translation": "I used to play a lot as a child.",
+        "translation_en": "I used to play a lot as a child.",
+        "translation_id": "Saya dulu sering bermain sebagai seorang anak."
+      },
+      {
+        "text": "人は誰でも間違うものだ。",
+        "romanization": "Ninhadaredemomachigaumonoda.",
+        "translation": "Everyone makes mistakes.",
+        "translation_en": "Everyone makes mistakes.",
+        "translation_id": "Setiap orang membuat kesalahan."
+      }
+    ],
+    "category": "grammar",
+    "tags": [
+      "general-truth",
+      "nostalgia"
+    ],
+    "title_en": "〜ものだ — it is natural/normal to; one should",
+    "title_id": "it is natural/normal to; one should",
+    "simpleExplanation_en": "it is natural/normal to; one should",
+    "simpleExplanation_id": "itu wajar/normal; seseorang seharusnya",
+    "usage_en": "〜ものだ: Verb-plain + ものだ",
+    "usage_id": "〜ものだ: Kata kerja-polos + ものだ"
+  },
+  {
+    "id": "ja_gram_n3_12",
+    "language": "ja",
+    "title": "〜ものではない",
+    "pattern": "〜ものではない",
+    "level": 3,
+    "examMappings": {
+      "jlpt": "N3"
+    },
+    "difficulty": 3,
+    "simpleExplanation": "should not; it's not right to",
+    "usage": "〜ものではない: Verb-plain + ものではない",
+    "examples": [
+      {
+        "text": "人の悪口を言うものではない。",
+        "romanization": "Ninnowarukuchiwoiumonodehanai.",
+        "translation": "You shouldn't speak ill of others.",
+        "translation_en": "You shouldn't speak ill of others.",
+        "translation_id": "Anda tidak boleh berbicara buruk tentang orang lain."
+      },
+      {
+        "text": "嘘をつくものではない。",
+        "romanization": "Usowotsukumonodehanai.",
+        "translation": "You shouldn't lie.",
+        "translation_en": "You shouldn't lie.",
+        "translation_id": "Anda tidak harus berbohong."
+      }
+    ],
+    "category": "grammar",
+    "tags": [
+      "prohibition",
+      "advice"
+    ],
+    "title_en": "〜ものではない — should not; it's not right to",
+    "title_id": "should not; it's not right to",
+    "simpleExplanation_en": "should not; it's not right to",
+    "simpleExplanation_id": "jangan; itu tidak benar",
+    "usage_en": "〜ものではない: Verb-plain + ものではない",
+    "usage_id": "〜ものではない: Kata kerja-polos + ものではない"
+  },
+  {
+    "id": "ja_gram_n3_13",
+    "language": "ja",
+    "title": "〜よう",
+    "pattern": "〜よう",
+    "level": 3,
+    "examMappings": {
+      "jlpt": "N3"
+    },
+    "difficulty": 3,
+    "simpleExplanation": "way/manner of; like; in order to",
+    "usage": "〜よう: Verb-plain + よう",
+    "examples": [
+      {
+        "text": "泳ぎ方を教えてください。",
+        "romanization": "Oyogihouwooshietekudasai.",
+        "translation": "Please teach me how to swim.",
+        "translation_en": "Please teach me how to swim.",
+        "translation_id": "Tolong ajari saya cara berenang."
+      },
+      {
+        "text": "分かるように説明する。",
+        "romanization": "Wakaruyounisetsumeisuru.",
+        "translation": "Explain so that it is understood.",
+        "translation_en": "Explain so that it is understood.",
+        "translation_id": "Jelaskan agar dapat dipahami."
+      }
+    ],
+    "category": "grammar",
+    "tags": [
+      "method",
+      "purpose"
+    ],
+    "title_en": "〜よう — way/manner of; like; in order to",
+    "title_id": "way/manner of; like; in order to",
+    "simpleExplanation_en": "way/manner of; like; in order to",
+    "simpleExplanation_id": "cara/cara; menyukai; untuk",
+    "usage_en": "〜よう: Verb-plain + よう",
+    "usage_id": "〜よう: Kata kerja-polos + よう"
+  },
+  {
+    "id": "ja_gram_n3_14",
+    "language": "ja",
+    "title": "〜ようにする",
+    "pattern": "〜ようにする",
+    "level": 3,
+    "examMappings": {
+      "jlpt": "N3"
+    },
+    "difficulty": 3,
+    "simpleExplanation": "make sure to; try to",
+    "usage": "〜ようにする: Verb-plain + ようにする",
+    "examples": [
+      {
+        "text": "毎日日本語を話すようにしている。",
+        "romanization": "Mainichinihongowohanasuyounishiteiru.",
+        "translation": "I make sure to speak Japanese every day.",
+        "translation_en": "I make sure to speak Japanese every day.",
+        "translation_id": "Saya pastikan untuk berbicara bahasa Jepang setiap hari."
+      },
+      {
+        "text": "早く寝るようにしてください。",
+        "romanization": "Hayakuneruyounishitekudasai.",
+        "translation": "Please try to go to bed early.",
+        "translation_en": "Please try to go to bed early.",
+        "translation_id": "Silakan mencoba untuk tidur lebih awal."
+      }
+    ],
+    "category": "grammar",
+    "tags": [
+      "effort",
+      "habit"
+    ],
+    "title_en": "〜ようにする — make sure to; try to",
+    "title_id": "make sure to; try to",
+    "simpleExplanation_en": "make sure to; try to",
+    "simpleExplanation_id": "pastikan untuk; mencoba untuk",
+    "usage_en": "〜ようにする: Verb-plain + ようにする",
+    "usage_id": "〜ようにする: Kata kerja-polos + ようにする"
+  },
+  {
+    "id": "ja_gram_n3_15",
+    "language": "ja",
+    "title": "〜ようになる",
+    "pattern": "〜ようになる",
+    "level": 3,
+    "examMappings": {
+      "jlpt": "N3"
+    },
+    "difficulty": 3,
+    "simpleExplanation": "come to be able to; reach the point where",
+    "usage": "〜ようになる: Verb-plain + ようになる",
+    "examples": [
+      {
+        "text": "毎日練習したら、泳げるようになった。",
+        "romanization": "Mainichirenshuushitara,oyogeruyouninatta.",
+        "translation": "After practicing every day, I became able to swim.",
+        "translation_en": "After practicing every day, I became able to swim.",
+        "translation_id": "Setelah berlatih setiap hari, saya bisa berenang."
+      },
+      {
+        "text": "日本に来てから、納豆が食べられるようになった。",
+        "romanization": "Nipponnikitekara,nattougataberareruyouninatta.",
+        "translation": "Since coming to Japan, I became able to eat natto.",
+        "translation_en": "Since coming to Japan, I became able to eat natto.",
+        "translation_id": "Sejak datang ke Jepang, saya bisa makan natto."
+      }
+    ],
+    "category": "grammar",
+    "tags": [
+      "change",
+      "ability"
+    ],
+    "title_en": "〜ようになる — come to be able to; reach the point where",
+    "title_id": "come to be able to; reach the point where",
+    "simpleExplanation_en": "come to be able to; reach the point where",
+    "simpleExplanation_id": "menjadi mampu; mencapai titik di mana",
+    "usage_en": "〜ようになる: Verb-plain + ようになる",
+    "usage_id": "〜ようになる: Kata kerja-polos + ようになる"
+  },
+  {
+    "id": "ja_gram_n3_16",
+    "language": "ja",
+    "title": "〜らしい",
+    "pattern": "〜らしい",
+    "level": 3,
+    "examMappings": {
+      "jlpt": "N3"
+    },
+    "difficulty": 3,
+    "simpleExplanation": "seems; I heard; typical (less casual than みたい)",
+    "usage": "〜らしい: Verb-plain / i-adjective / na-adjective + らしい",
+    "examples": [
+      {
+        "text": "彼は怒っているらしい。",
+        "romanization": "Karehaikatsuteirurashii.",
+        "translation": "He seems angry.",
+        "translation_en": "He seems angry.",
+        "translation_id": "Dia tampak marah."
+      },
+      {
+        "text": "明日は台風が来るらしい。",
+        "romanization": "Ashitahataifuugakururashii.",
+        "translation": "I heard a typhoon is coming tomorrow.",
+        "translation_en": "I heard a typhoon is coming tomorrow.",
+        "translation_id": "Saya mendengar topan akan datang besok."
+      }
+    ],
+    "category": "grammar",
+    "tags": [
+      "hearsay",
+      "appearance"
+    ],
+    "title_en": "〜らしい — seems; I heard; typical (less casual than みたい)",
+    "title_id": "seems; I heard; typical (less casual than みたい)",
+    "simpleExplanation_en": "seems; I heard; typical (less casual than みたい)",
+    "simpleExplanation_id": "tampaknya; Saya dengar; khas (kurang santai dibandingkan みたい)",
+    "usage_en": "〜らしい: Verb-plain / i-adjective / na-adjective + らしい",
+    "usage_id": "〜らしい: Kata kerja-polos / kata sifat-i / kata sifat-na + らしい"
+  },
+  {
+    "id": "ja_gram_n3_17",
+    "language": "ja",
+    "title": "〜わけがない",
+    "pattern": "〜わけがない",
+    "level": 3,
+    "examMappings": {
+      "jlpt": "N3"
+    },
+    "difficulty": 3,
+    "simpleExplanation": "there is no way that; impossible",
+    "usage": "〜わけがない: Verb-plain / i-adjective / na-adjective + わけがない",
+    "examples": [
+      {
+        "text": "あの人が嘘をつくわけがない。",
+        "romanization": "Anoningausowotsukuwakeganai.",
+        "translation": "There is no way that person would lie.",
+        "translation_en": "There is no way that person would lie.",
+        "translation_id": "Tidak mungkin orang itu berbohong."
+      },
+      {
+        "text": "彼女が遅刻するわけがない。",
+        "romanization": "Kanojogachikokusuruwakeganai.",
+        "translation": "There is no way she would be late.",
+        "translation_en": "There is no way she would be late.",
+        "translation_id": "Tidak mungkin dia terlambat."
+      }
+    ],
+    "category": "grammar",
+    "tags": [
+      "impossibility",
+      "strong-negation"
+    ],
+    "title_en": "〜わけがない — there is no way that; impossible",
+    "title_id": "there is no way that; impossible",
+    "simpleExplanation_en": "there is no way that; impossible",
+    "simpleExplanation_id": "tidak mungkin itu; mustahil",
+    "usage_en": "〜わけがない: Verb-plain / i-adjective / na-adjective + わけがない",
+    "usage_id": "〜わけがない: Kata kerja-polos / kata sifat-i / kata sifat-na + わけがない"
+  },
+  {
+    "id": "ja_gram_n3_18",
+    "language": "ja",
+    "title": "〜わけだ",
+    "pattern": "〜わけだ",
+    "level": 3,
+    "examMappings": {
+      "jlpt": "N3"
+    },
+    "difficulty": 3,
+    "simpleExplanation": "it is natural that; no wonder; as expected",
+    "usage": "〜わけだ: Verb-plain / i-adjective / na-adjective + わけだ",
+    "examples": [
+      {
+        "text": "毎日勉強しているから、上手になるわけだ。",
+        "romanization": "Mainichibenkyoushiteirukara,jouzuninaruwakeda.",
+        "translation": "Since you study every day, it's natural that you improve.",
+        "translation_en": "Since you study every day, it's natural that you improve.",
+        "translation_id": "Karena Anda belajar setiap hari, wajar jika Anda meningkat."
+      },
+      {
+        "text": "彼は10年日本に住んでいる。日本語が上手なわけだ。",
+        "romanization": "Kareha10nennipponnisundeiru.nihongogajouzunawakeda.",
+        "translation": "He has lived in Japan for 10 years. No wonder his Japanese is good.",
+        "translation_en": "He has lived in Japan for 10 years. No wonder his Japanese is good.",
+        "translation_id": "Dia telah tinggal di Jepang selama 10 tahun. Pantas saja bahasa Jepangnya bagus."
+      }
+    ],
+    "category": "grammar",
+    "tags": [
+      "reason",
+      "conclusion"
+    ],
+    "title_en": "〜わけだ — it is natural that; no wonder; as expected",
+    "title_id": "it is natural that; no wonder; as expected",
+    "simpleExplanation_en": "it is natural that; no wonder; as expected",
+    "simpleExplanation_id": "wajar jika; tidak heran; seperti yang diharapkan",
+    "usage_en": "〜わけだ: Verb-plain / i-adjective / na-adjective + わけだ",
+    "usage_id": "〜わけだ: Kata kerja-polos / kata sifat-i / kata sifat-na + わけだ"
+  },
+  {
+    "id": "ja_gram_n3_19",
+    "language": "ja",
+    "title": "〜わけではない",
+    "pattern": "〜わけではない",
+    "level": 3,
+    "examMappings": {
+      "jlpt": "N3"
+    },
+    "difficulty": 3,
+    "simpleExplanation": "it doesn't mean that; not necessarily",
+    "usage": "〜わけではない: Verb-plain / i-adjective / na-adjective + わけではない",
+    "examples": [
+      {
+        "text": "嫌いなわけではない。",
+        "romanization": "Kirainawakedehanai.",
+        "translation": "It's not that I dislike it.",
+        "translation_en": "It's not that I dislike it.",
+        "translation_id": "Bukannya aku tidak menyukainya."
+      },
+      {
+        "text": "全く分からないわけではない。",
+        "romanization": "Mattakuwakaranaiwakedehanai.",
+        "translation": "It's not that I don't understand at all.",
+        "translation_en": "It's not that I don't understand at all.",
+        "translation_id": "Bukannya saya tidak mengerti sama sekali."
+      }
+    ],
+    "category": "grammar",
+    "tags": [
+      "negation",
+      "nuance"
+    ],
+    "title_en": "〜わけではない — it doesn't mean that; not necessarily",
+    "title_id": "it doesn't mean that; not necessarily",
+    "simpleExplanation_en": "it doesn't mean that; not necessarily",
+    "simpleExplanation_id": "bukan berarti demikian; belum tentu",
+    "usage_en": "〜わけではない: Verb-plain / i-adjective / na-adjective + わけではない",
+    "usage_id": "〜わけではない: Kata kerja-polos / kata sifat-i / kata sifat-na + わけではない"
+  },
+  {
+    "id": "ja_gram_n3_20",
+    "language": "ja",
+    "title": "〜一方",
+    "pattern": "〜一方",
+    "level": 3,
+    "examMappings": {
+      "jlpt": "N3"
+    },
+    "difficulty": 3,
+    "simpleExplanation": "on the one hand; on the other hand; while",
+    "usage": "〜一方: Noun/Verb-plain + 一方",
+    "examples": [
+      {
+        "text": "この町は静かな一方、不便だ。",
+        "romanization": "Konomachihashizukanaippou,fubenda.",
+        "translation": "This town is quiet, but on the other hand, it's inconvenient.",
+        "translation_en": "This town is quiet, but on the other hand, it's inconvenient.",
+        "translation_id": "Kota ini sepi, namun di sisi lain kurang nyaman."
+      },
+      {
+        "text": "彼は勉強ができる一方、スポーツも上手だ。",
+        "romanization": "Karehabenkyougadekiruippou,supootsumojouzuda.",
+        "translation": "He is good at studying, and also good at sports.",
+        "translation_en": "He is good at studying, and also good at sports.",
+        "translation_id": "Dia pandai belajar, dan juga pandai olahraga."
+      }
+    ],
+    "category": "grammar",
+    "tags": [
+      "contrast"
+    ],
+    "title_en": "〜一方 — on the one hand; on the other hand; while",
+    "title_id": "on the one hand; on the other hand; while",
+    "simpleExplanation_en": "on the one hand; on the other hand; while",
+    "simpleExplanation_id": "di satu sisi; di sisi lain; ketika",
+    "usage_en": "〜一方: Noun/Verb-plain + 一方",
+    "usage_id": "〜一方: Kata Benda/Kata Kerja-polos + 一方"
+  }
+]

@@ -1,1 +1,294 @@
-[]
+[
+  {
+    "id": "ja-conv-n2-business",
+    "language": "ja",
+    "title": "ビジネス — Business",
+    "level": 4,
+    "difficulty": 4,
+    "examMappings": {
+      "jlpt": "N2"
+    },
+    "scenario": "business",
+    "speakers": [
+      {
+        "id": "a",
+        "name": "A",
+        "role": "speaker"
+      },
+      {
+        "id": "b",
+        "name": "B",
+        "role": "speaker"
+      }
+    ],
+    "dialogue": [
+      {
+        "speaker": "a",
+        "text": "その話は誤解を招きかねない。",
+        "romanization": "Sonohanashihagokaiwomanekikanenai.",
+        "translation": "That story might cause misunderstanding.",
+        "translation_en": "That story might cause misunderstanding.",
+        "translation_id": "Cerita itu mungkin menyebabkan kesalahpahaman."
+      },
+      {
+        "speaker": "b",
+        "text": "彼の話を信じずにはいられなかった。",
+        "romanization": "Kanohanashiwoshinjizunihairarenakatta.",
+        "translation": "I couldn't help but believe his story.",
+        "translation_en": "I couldn't help but believe his story.",
+        "translation_id": "Aku tidak bisa tidak mempercayai ceritanya."
+      },
+      {
+        "speaker": "a",
+        "text": "相手に応じて話し方を変える。",
+        "romanization": "Aitenioujitehanashikatawokaeru.",
+        "translation": "Change the way you speak depending on the other person.",
+        "translation_en": "Change the way you speak depending on the other person.",
+        "translation_id": "Ubah cara Anda berbicara tergantung pada orang lain."
+      },
+      {
+        "speaker": "b",
+        "text": "実際の経験に基づいて書いた。",
+        "romanization": "Jissainokeikennimotozuitekaita.",
+        "translation": "I wrote it based on actual experience.",
+        "translation_en": "I wrote it based on actual experience.",
+        "translation_id": "Saya menulisnya berdasarkan pengalaman nyata."
+      },
+      {
+        "speaker": "a",
+        "text": "社長に代わって挨拶する。",
+        "romanization": "Shachounikawatteaisatsusuru.",
+        "translation": "Give a speech on behalf of the president.",
+        "translation_en": "Give a speech on behalf of the president.",
+        "translation_id": "Memberikan pidato atas nama presiden."
+      },
+      {
+        "speaker": "b",
+        "text": "親の期待に反して、芸術家になった。",
+        "romanization": "Oyanokitainihanshite,geijutsukaninatta.",
+        "translation": "Against my parents' expectations, I became an artist.",
+        "translation_en": "Against my parents' expectations, I became an artist.",
+        "translation_id": "Bertentangan dengan harapan orang tuaku, aku menjadi seorang seniman."
+      }
+    ]
+  },
+  {
+    "id": "ja-conv-n2-academic",
+    "language": "ja",
+    "title": "がくじゅつ — Academic",
+    "level": 4,
+    "difficulty": 4,
+    "examMappings": {
+      "jlpt": "N2"
+    },
+    "scenario": "academic",
+    "speakers": [
+      {
+        "id": "a",
+        "name": "A",
+        "role": "speaker"
+      },
+      {
+        "id": "b",
+        "name": "B",
+        "role": "speaker"
+      }
+    ],
+    "dialogue": [
+      {
+        "speaker": "a",
+        "text": "彼はまるで専門家かのように説明した。",
+        "romanization": "Karehamarudesenmonkakanoyounisetsumeishita.",
+        "translation": "He explained as if he were an expert.",
+        "translation_en": "He explained as if he were an expert.",
+        "translation_id": "Dia menjelaskan seolah-olah dia adalah seorang ahli."
+      },
+      {
+        "speaker": "b",
+        "text": "全国にわたって調査を行った。",
+        "romanization": "Zenkokuniwatattechousawoitta.",
+        "translation": "We conducted a survey across the whole country.",
+        "translation_en": "We conducted a survey across the whole country.",
+        "translation_id": "Kami melakukan survei di seluruh negeri."
+      },
+      {
+        "speaker": "a",
+        "text": "英語に加えて、フランス語も勉強している。",
+        "romanization": "Eigonikuwaete,furansugomobenkyoushiteiru.",
+        "translation": "In addition to English, I also study French.",
+        "translation_en": "In addition to English, I also study French.",
+        "translation_id": "Selain bahasa Inggris, saya juga belajar bahasa Prancis."
+      },
+      {
+        "speaker": "b",
+        "text": "入社に際して、誓約書を提出した。",
+        "romanization": "Nyuushanisaishite,seiyakushowoteishutsushita.",
+        "translation": "I submitted a pledge when joining the company.",
+        "translation_en": "I submitted a pledge when joining the company.",
+        "translation_id": "Saya mengajukan janji ketika bergabung dengan perusahaan."
+      },
+      {
+        "speaker": "a",
+        "text": "都市化に伴って、緑が減っている。",
+        "romanization": "Toshikanitomonatsute,midorigahetsuteiru.",
+        "translation": "As urbanization progresses, greenery is decreasing.",
+        "translation_en": "As urbanization progresses, greenery is decreasing.",
+        "translation_id": "Seiring dengan kemajuan urbanisasi, lahan hijau semakin berkurang."
+      },
+      {
+        "speaker": "b",
+        "text": "この本をきっかけに、歴史を勉強し始めた。",
+        "romanization": "Konohonwokikkakeni,rekishiwobenkyoushihajimeta.",
+        "translation": "This book was the opportunity for me to start studying history.",
+        "translation_en": "This book was the opportunity for me to start studying history.",
+        "translation_id": "Buku ini adalah kesempatan bagi saya untuk mulai mempelajari sejarah."
+      }
+    ]
+  },
+  {
+    "id": "ja-conv-n2-news",
+    "language": "ja",
+    "title": "ニュース — News",
+    "level": 4,
+    "difficulty": 4,
+    "examMappings": {
+      "jlpt": "N2"
+    },
+    "scenario": "news",
+    "speakers": [
+      {
+        "id": "a",
+        "name": "A",
+        "role": "speaker"
+      },
+      {
+        "id": "b",
+        "name": "B",
+        "role": "speaker"
+      }
+    ],
+    "dialogue": [
+      {
+        "speaker": "a",
+        "text": "遅れたら、怒られかねない。",
+        "romanization": "Okuretara,ikararekanenai.",
+        "translation": "If I'm late, I might get scolded.",
+        "translation_en": "If I'm late, I might get scolded.",
+        "translation_id": "Jika saya terlambat, saya mungkin akan dimarahi."
+      },
+      {
+        "speaker": "b",
+        "text": "3年にわたって研究を続けた。",
+        "romanization": "3nenniwatattekenkyuuwotsuzuketa.",
+        "translation": "I continued the research for three years.",
+        "translation_en": "I continued the research for three years.",
+        "translation_id": "Saya melanjutkan penelitian selama tiga tahun."
+      },
+      {
+        "speaker": "a",
+        "text": "収入に応じて支出を決める。",
+        "romanization": "Shuunyuunioujiteshishutsuwokimeru.",
+        "translation": "Decide expenses according to income.",
+        "translation_en": "Decide expenses according to income.",
+        "translation_id": "Tentukan pengeluaran berdasarkan pendapatan."
+      },
+      {
+        "speaker": "b",
+        "text": "出発に際して、一言ご挨拶させていただきます。",
+        "romanization": "Shuppatsunisaishite,hitokotogoaisatsusaseteitadakimasu.",
+        "translation": "On the occasion of our departure, please allow me to say a few words.",
+        "translation_en": "On the occasion of our departure, please allow me to say a few words.",
+        "translation_id": "Pada kesempatan keberangkatan kami, izinkan saya menyampaikan beberapa patah kata."
+      },
+      {
+        "speaker": "a",
+        "text": "彼に代わって、私が出席した。",
+        "romanization": "Karenikawatte,watashigashussekishita.",
+        "translation": "I attended in his place.",
+        "translation_en": "I attended in his place.",
+        "translation_id": "Saya hadir menggantikan dia."
+      },
+      {
+        "speaker": "b",
+        "text": "留学をきっかけに、日本語が好きになった。",
+        "romanization": "Ryuugakuwokikkakeni,nihongogasukininatta.",
+        "translation": "Studying abroad was the trigger that made me love Japanese.",
+        "translation_en": "Studying abroad was the trigger that made me love Japanese.",
+        "translation_id": "Belajar di luar negeri menjadi pemicu yang membuat saya menyukai bahasa Jepang."
+      }
+    ]
+  },
+  {
+    "id": "ja-conv-n2-opinion",
+    "language": "ja",
+    "title": "いけん — Opinion",
+    "level": 4,
+    "difficulty": 4,
+    "examMappings": {
+      "jlpt": "N2"
+    },
+    "scenario": "opinion",
+    "speakers": [
+      {
+        "id": "a",
+        "name": "A",
+        "role": "speaker"
+      },
+      {
+        "id": "b",
+        "name": "B",
+        "role": "speaker"
+      }
+    ],
+    "dialogue": [
+      {
+        "speaker": "a",
+        "text": "夢を見ているかのようだ。",
+        "romanization": "Yumewomiteirukanoyouda.",
+        "translation": "It's as if I'm dreaming.",
+        "translation_en": "It's as if I'm dreaming.",
+        "translation_id": "Seolah-olah aku sedang bermimpi."
+      },
+      {
+        "speaker": "b",
+        "text": "海岸に沿って走る。",
+        "romanization": "Kaigannisottehashiru.",
+        "translation": "Run along the coast.",
+        "translation_en": "Run along the coast.",
+        "translation_id": "Jalankan di sepanjang pantai."
+      },
+      {
+        "speaker": "a",
+        "text": "値上げに加えて、サービスも悪化した。",
+        "romanization": "Neagenikuwaete,saabisumoakkashita.",
+        "translation": "In addition to the price increase, service also deteriorated.",
+        "translation_en": "In addition to the price increase, service also deteriorated.",
+        "translation_id": "Selain kenaikan harga, pelayanan juga menurun."
+      },
+      {
+        "speaker": "b",
+        "text": "辞職に至った経緯を説明する。",
+        "romanization": "Jishokuniitatsutakeiiwosetsumeisuru.",
+        "translation": "Explain the circumstances that led to the resignation.",
+        "translation_en": "Explain the circumstances that led to the resignation.",
+        "translation_id": "Jelaskan keadaan yang menyebabkan pengunduran diri tersebut."
+      },
+      {
+        "speaker": "a",
+        "text": "人口の増加に伴って、問題も増えた。",
+        "romanization": "Jinkounozoukanitomonatsute,mondaimofueta.",
+        "translation": "Along with the increase in population, problems also increased.",
+        "translation_en": "Along with the increase in population, problems also increased.",
+        "translation_id": "Seiring dengan bertambahnya jumlah penduduk, permasalahan pun semakin meningkat."
+      },
+      {
+        "speaker": "b",
+        "text": "環境問題をめぐって議論が続いている。",
+        "romanization": "Kankyoumondaiwomeguttegirongatsuzuiteiru.",
+        "translation": "Discussion continues regarding environmental issues.",
+        "translation_en": "Discussion continues regarding environmental issues.",
+        "translation_id": "Diskusi terus berlanjut mengenai masalah lingkungan."
+      }
+    ]
+  }
+]

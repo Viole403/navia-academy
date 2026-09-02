@@ -761630,6 +761630,1126 @@
     "examSource": "jlpt"
   },
   {
+    "key": "grammar:ja_gram_n1_01:ex0",
+    "text": "本業のかたわら、小説を書いている。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n1_01:ex1",
+    "text": "妻は家事のかたわら、ボランティアをしている。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n1_02:ex0",
+    "text": "彼は病気がちだ。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n1_02:ex1",
+    "text": "最近、雨がちの天気が続く。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n1_03:ex0",
+    "text": "散歩がてら、駅前まで買い物に行った。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n1_03:ex1",
+    "text": "買い物がてら、友達の家に寄った。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n1_04:ex0",
+    "text": "お答えしかねます。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n1_04:ex1",
+    "text": "その提案は受けかねます。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n1_05:ex0",
+    "text": "彼は教室に入るが早いか、泣き出した。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n1_05:ex1",
+    "text": "終わるが早いか、逃げ出した。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n1_06:ex0",
+    "text": "彼女はいいことずくめだ。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n1_06:ex1",
+    "text": "今日は黒ずくめの服装だ。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n1_07:ex0",
+    "text": "彼は水すら飲まなかった。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n1_07:ex1",
+    "text": "子供すら知っている。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n1_08:ex0",
+    "text": "今さら謝ったところで、許されないだろう。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n1_08:ex1",
+    "text": "勉強したところで、間に合わない。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n1_09:ex0",
+    "text": "部屋はゴミだらけだ。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n1_09:ex1",
+    "text": "彼の言い訳は間違いだらけだ。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n1_10:ex0",
+    "text": "彼に黙っていると言ったら最後、誰にも言うだろう。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n1_10:ex1",
+    "text": "あの店に入ったら最後、何時間も出てこない。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n1_11:ex0",
+    "text": "長い議論の末、結論が出た。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n1_11:ex1",
+    "text": "試行錯誤の末、成功した。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n1_12:ex0",
+    "text": "日本に来てからというもの、毎日忙しい。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n1_12:ex1",
+    "text": "彼女に出会ってからというもの、人生が変わった。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n1_13:ex0",
+    "text": "子供の将来を案じてやまない。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n1_13:ex1",
+    "text": "彼の成功を願ってやまない。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n1_14:ex0",
+    "text": "家族旅行ともなると、準備が大変だ。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n1_14:ex1",
+    "text": "社長ともなると、責任が重い。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n1_15:ex0",
+    "text": "好天に恵まれたことと相まって、大会は大成功だった。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n1_15:ex1",
+    "text": "新技術の導入と相まって、生産性が向上した。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n1_16:ex0",
+    "text": "京都ならではの風景だ。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n1_16:ex1",
+    "text": "プロならではの技術だ。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n1_17:ex0",
+    "text": "成功を目指すべく、日夜努力している。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n1_17:ex1",
+    "text": "問題を解決すべく、会議を開いた。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n1_18:ex0",
+    "text": "あんな失敗は二度とするまい。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n1_18:ex1",
+    "text": "彼は来るまい。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n1_19:ex0",
+    "text": "できるものなら、やってみろ。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n1_19:ex1",
+    "text": "戻れるものなら、戻りたい。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n1_20:ex0",
+    "text": "使いようによっては、この道具は便利だ。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n1_20:ex1",
+    "text": "考えようによっては、彼も正しい。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n2_01:ex0",
+    "text": "その話は誤解を招きかねない。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n2_01:ex1",
+    "text": "遅れたら、怒られかねない。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n2_02:ex0",
+    "text": "彼はまるで専門家かのように説明した。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n2_02:ex1",
+    "text": "夢を見ているかのようだ。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n2_03:ex0",
+    "text": "面白くて、笑わずにはいられない。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n2_03:ex1",
+    "text": "彼の話を信じずにはいられなかった。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n2_04:ex0",
+    "text": "3年にわたって研究を続けた。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n2_04:ex1",
+    "text": "全国にわたって調査を行った。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n2_05:ex0",
+    "text": "海岸に沿って走る。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n2_05:ex1",
+    "text": "計画に沿って進める。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n2_06:ex0",
+    "text": "相手に応じて話し方を変える。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n2_06:ex1",
+    "text": "収入に応じて支出を決める。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n2_07:ex0",
+    "text": "英語に加えて、フランス語も勉強している。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n2_07:ex1",
+    "text": "値上げに加えて、サービスも悪化した。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n2_08:ex0",
+    "text": "データに基づいて判断する。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n2_08:ex1",
+    "text": "実際の経験に基づいて書いた。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n2_09:ex0",
+    "text": "出発に際して、一言ご挨拶させていただきます。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n2_09:ex1",
+    "text": "入社に際して、誓約書を提出した。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n2_10:ex0",
+    "text": "辞職に至った経緯を説明する。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n2_10:ex1",
+    "text": "今回の事件に至って、ようやく問題の深刻さが分かった。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n2_11:ex0",
+    "text": "社長に代わって挨拶する。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n2_11:ex1",
+    "text": "彼に代わって、私が出席した。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n2_12:ex0",
+    "text": "都市化に伴って、緑が減っている。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n2_12:ex1",
+    "text": "人口の増加に伴って、問題も増えた。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n2_13:ex0",
+    "text": "予想に反して、試験は簡単だった。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n2_13:ex1",
+    "text": "親の期待に反して、芸術家になった。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n2_14:ex0",
+    "text": "留学をきっかけに、日本語が好きになった。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n2_14:ex1",
+    "text": "この本をきっかけに、歴史を勉強し始めた。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n2_15:ex0",
+    "text": "環境問題をめぐって議論が続いている。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n2_15:ex1",
+    "text": "遺産をめぐって争いが起きた。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n2_16:ex0",
+    "text": "その結果には驚きを禁じえない。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n2_16:ex1",
+    "text": "彼の努力には感動を禁じえない。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n2_17:ex0",
+    "text": "日曜日を除いて、毎日開店している。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n2_17:ex1",
+    "text": "彼を除いて、全員参加した。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n2_18:ex0",
+    "text": "仕事を通して多くを学んだ。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n2_18:ex1",
+    "text": "試験を通して、実力が分かる。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n2_19:ex0",
+    "text": "SNSを通じて知り合った。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n2_19:ex1",
+    "text": "一年を通じて暖かい気候だ。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n2_20:ex0",
+    "text": "悪天候で中止を余儀なくされた。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n2_20:ex1",
+    "text": "予算削減で人員削減を余儀なくされた。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n3_01:ex0",
+    "text": "毎日復習することだ。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n3_01:ex1",
+    "text": "健康のために運動することだ。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n3_02:ex0",
+    "text": "心配することはない。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n3_02:ex1",
+    "text": "そんなことはない。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n3_03:ex0",
+    "text": "知らないそうにしていた。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n3_03:ex1",
+    "text": "元気そうに見せる。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n3_04:ex0",
+    "text": "今、出かけるところです。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n3_04:ex1",
+    "text": "電話したところ、彼は出かけていた。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n3_05:ex0",
+    "text": "環境について話す。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n3_05:ex1",
+    "text": "日本の文化について学ぶ。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n3_06:ex0",
+    "text": "この本は有名な作家によって書かれた。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n3_06:ex1",
+    "text": "人によって意見が違う。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n3_07:ex0",
+    "text": "天気予報によると、明日は雨だ。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n3_07:ex1",
+    "text": "先生によると、試験は難しいらしい。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n3_08:ex0",
+    "text": "お客様に対して丁寧に話す。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n3_08:ex1",
+    "text": "兄は背が高いのに対して、弟は低い。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n3_09:ex0",
+    "text": "毎日ゲームをしているばかりだ。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n3_09:ex1",
+    "text": "彼は文句を言うばかりだ。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n3_10:ex0",
+    "text": "彼女は頭がいいばかりでなく、優しい。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n3_10:ex1",
+    "text": "日本語を読むばかりでなく、書く練習もする。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n3_11:ex0",
+    "text": "子供のころはよく遊んだものだ。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n3_11:ex1",
+    "text": "人は誰でも間違うものだ。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n3_12:ex0",
+    "text": "人の悪口を言うものではない。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n3_12:ex1",
+    "text": "嘘をつくものではない。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n3_13:ex0",
+    "text": "泳ぎ方を教えてください。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n3_13:ex1",
+    "text": "分かるように説明する。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n3_14:ex0",
+    "text": "毎日日本語を話すようにしている。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n3_14:ex1",
+    "text": "早く寝るようにしてください。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n3_15:ex0",
+    "text": "毎日練習したら、泳げるようになった。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n3_15:ex1",
+    "text": "日本に来てから、納豆が食べられるようになった。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n3_16:ex0",
+    "text": "彼は怒っているらしい。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n3_16:ex1",
+    "text": "明日は台風が来るらしい。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n3_17:ex0",
+    "text": "あの人が嘘をつくわけがない。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n3_17:ex1",
+    "text": "彼女が遅刻するわけがない。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n3_18:ex0",
+    "text": "毎日勉強しているから、上手になるわけだ。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n3_18:ex1",
+    "text": "彼は10年日本に住んでいる。日本語が上手なわけだ。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n3_19:ex0",
+    "text": "嫌いなわけではない。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n3_19:ex1",
+    "text": "全く分からないわけではない。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n3_20:ex0",
+    "text": "この町は静かな一方、不便だ。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n3_20:ex1",
+    "text": "彼は勉強ができる一方、スポーツも上手だ。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n4_01:ex0",
+    "text": "毎日運動することにした。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n4_01:ex1",
+    "text": "明日から禁煙することにします。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n4_02:ex0",
+    "text": "朝ご飯を食べずに出かけた。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n4_02:ex1",
+    "text": "何も言わずに帰った。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n4_03:ex0",
+    "text": "このケーキはおいしそうだ。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n4_03:ex1",
+    "text": "雨が降りそうです。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n4_04:ex0",
+    "text": "来年、日本に留学するつもりだ。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n4_04:ex1",
+    "text": "今度の週末は何もするつもりはない。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n4_05:ex0",
+    "text": "友達に本を貸してあげた。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n4_05:ex1",
+    "text": "母に花を買ってあげます。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n4_06:ex0",
+    "text": "明日、荷物を持っていきます。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n4_06:ex1",
+    "text": "これからも頑張っていく。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n4_07:ex0",
+    "text": "明日の朝のために水を出しておく。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n4_07:ex1",
+    "text": "ドアを開けておいてください。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n4_08:ex0",
+    "text": "すぐ戻ってきます。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n4_08:ex1",
+    "text": "雨が降ってきた。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n4_09:ex0",
+    "text": "先生が漢字を教えてくれた。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n4_09:ex1",
+    "text": "友達が傘を貸してくれた。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n4_10:ex0",
+    "text": "財布を落としてしまった。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n4_10:ex1",
+    "text": "本を全部読んでしまった。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n4_11:ex0",
+    "text": "新しいレストランで食べてみる。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n4_11:ex1",
+    "text": "この靴を履いてみてもいいですか。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n4_12:ex0",
+    "text": "田中さんに日本語を教えてもらう。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n4_12:ex1",
+    "text": "父に車を貸してもらった。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n4_13:ex0",
+    "text": "彼は疲れているに違いない。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n4_13:ex1",
+    "text": "この本は高いに違いない。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n4_14:ex0",
+    "text": "あの人が合格するに決まっている。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n4_14:ex1",
+    "text": "この料理はおいしいに決まっている。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n4_15:ex0",
+    "text": "彼女は猫みたいだ。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n4_15:ex1",
+    "text": "雨が降るみたいです。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n4_16:ex0",
+    "text": "彼は日本語が上手らしい。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n4_16:ex1",
+    "text": "子供らしい遊びをする。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n4_17:ex0",
+    "text": "明日は試験だから、遊んでいるわけにはいかない。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n4_17:ex1",
+    "text": "会社を休むわけにはいかない。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n4_18:ex0",
+    "text": "昨日は飲みすぎた。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n4_18:ex1",
+    "text": "この問題は難しすぎる。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n4_19:ex0",
+    "text": "会議中です。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n4_19:ex1",
+    "text": "電車は今、渋谷に向かっている途中です。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n4_20:ex0",
+    "text": "この漢字の読み方を教えてください。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n4_20:ex1",
+    "text": "お寿司の作り方を知りたい。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
     "key": "grammar:ja_wa_particle:ex0",
     "text": "私は学生です。",
     "locale": "ja-JP",
@@ -761765,6 +762885,958 @@
   {
     "key": "grammar:ja_no_possessive:ex1",
     "text": "日本語の先生です。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_but:ex0",
+    "text": "この本は高いですが、面白いです。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_but:ex1",
+    "text": "日本語が好きですが、難しいです。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram____:ex0",
+    "text": "公園に猫がいます。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram____:ex1",
+    "text": "机の上に本があります。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_reason:ex0",
+    "text": "雨が降っているから、出かけません。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_reason:ex1",
+    "text": "眠いから、早く寝ます。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_place_means:ex0",
+    "text": "学校で勉強します。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_place_means:ex1",
+    "text": "バスで帰ります。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_and_with:ex0",
+    "text": "友達と映画を見ます。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_and_with:ex1",
+    "text": "春になると、桜が咲きます。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_time_destination:ex0",
+    "text": "7時に起きます。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_time_destination:ex1",
+    "text": "日本に行きます。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_object_particle:ex0",
+    "text": "本を読みます。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_object_particle:ex1",
+    "text": "コーヒーを飲みます。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n5_04:ex0",
+    "text": "私は猫が好きです。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n5_04:ex1",
+    "text": "彼は野菜が嫌いです。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n5_05:ex0",
+    "text": "日本に行きたいです。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n5_05:ex1",
+    "text": "水が飲みたいです。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n5_06:ex0",
+    "text": "日本に行ったことがあります。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n5_06:ex1",
+    "text": "寿司を食べたことがありません。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n5_08:ex0",
+    "text": "今、ご飯を食べています。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n5_08:ex1",
+    "text": "電気がついています。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n5_09:ex0",
+    "text": "窓を開けてください。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n5_09:ex1",
+    "text": "ここに名前を書いてください。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n5_10:ex0",
+    "text": "昨日は日曜日でした。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n5_10:ex1",
+    "text": "昔、ここは静かでした。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n5_11:ex0",
+    "text": "私は学生ではありません。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n5_11:ex1",
+    "text": "今日は寒くありません。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n5_12:ex0",
+    "text": "ここで写真を撮ってはいけません。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n5_12:ex1",
+    "text": "嘘をついてはいけません。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n5_13:ex0",
+    "text": "写真を撮ってもいいですか。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n5_13:ex1",
+    "text": "ここで食べてもいいです。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n5_15:ex0",
+    "text": "明日は早く来なくてもいいです。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n5_15:ex1",
+    "text": "帽子をかぶらなくてもいいです。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n5_16:ex0",
+    "text": "明日までにレポートを出さなければなりません。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n5_16:ex1",
+    "text": "薬を飲まなくてはいけません。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n5_18:ex0",
+    "text": "一緒に行きましょう。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n5_18:ex1",
+    "text": "週末に映画を見ましょう。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n5_19:ex0",
+    "text": "一緒に食べませんか。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "grammar:ja_gram_n5_19:ex1",
+    "text": "明日、公園を散歩しませんか。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "reading:r-ja-n1-politics:p0",
+    "text": "本業のかたわら、小説を書いている。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "reading:r-ja-n1-politics:p1",
+    "text": "買い物がてら、友達の家に寄った。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "reading:r-ja-n1-politics:p2",
+    "text": "彼女はいいことずくめだ。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "reading:r-ja-n1-politics:p3",
+    "text": "勉強したところで、間に合わない。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "reading:r-ja-n1-politics:p4",
+    "text": "長い議論の末、結論が出た。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "reading:r-ja-n1-politics:p5",
+    "text": "彼の成功を願ってやまない。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "reading:r-ja-n1-economy:p0",
+    "text": "彼は病気がちだ。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "reading:r-ja-n1-economy:p1",
+    "text": "その提案は受けかねます。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "reading:r-ja-n1-economy:p2",
+    "text": "彼は水すら飲まなかった。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "reading:r-ja-n1-economy:p3",
+    "text": "彼の言い訳は間違いだらけだ。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "reading:r-ja-n1-economy:p4",
+    "text": "日本に来てからというもの、毎日忙しい。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "reading:r-ja-n1-economy:p5",
+    "text": "社長ともなると、責任が重い。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "reading:r-ja-n1-science:p0",
+    "text": "妻は家事のかたわら、ボランティアをしている。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "reading:r-ja-n1-science:p1",
+    "text": "お答えしかねます。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "reading:r-ja-n1-science:p2",
+    "text": "今日は黒ずくめの服装だ。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "reading:r-ja-n1-science:p3",
+    "text": "部屋はゴミだらけだ。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "reading:r-ja-n1-science:p4",
+    "text": "試行錯誤の末、成功した。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "reading:r-ja-n1-science:p5",
+    "text": "家族旅行ともなると、準備が大変だ。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "reading:r-ja-n1-literature:p0",
+    "text": "最近、雨がちの天気が続く。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "reading:r-ja-n1-literature:p1",
+    "text": "彼は教室に入るが早いか、泣き出した。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "reading:r-ja-n1-literature:p2",
+    "text": "子供すら知っている。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "reading:r-ja-n1-literature:p3",
+    "text": "彼に黙っていると言ったら最後、誰にも言うだろう。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "reading:r-ja-n1-literature:p4",
+    "text": "彼女に出会ってからというもの、人生が変わった。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "reading:r-ja-n1-literature:p5",
+    "text": "好天に恵まれたことと相まって、大会は大成功だった。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "reading:r-ja-n2-business:p0",
+    "text": "その話は誤解を招きかねない。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "reading:r-ja-n2-business:p1",
+    "text": "彼の話を信じずにはいられなかった。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "reading:r-ja-n2-business:p2",
+    "text": "相手に応じて話し方を変える。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "reading:r-ja-n2-business:p3",
+    "text": "実際の経験に基づいて書いた。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "reading:r-ja-n2-business:p4",
+    "text": "社長に代わって挨拶する。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "reading:r-ja-n2-business:p5",
+    "text": "親の期待に反して、芸術家になった。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "reading:r-ja-n2-academic:p0",
+    "text": "彼はまるで専門家かのように説明した。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "reading:r-ja-n2-academic:p1",
+    "text": "全国にわたって調査を行った。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "reading:r-ja-n2-academic:p2",
+    "text": "英語に加えて、フランス語も勉強している。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "reading:r-ja-n2-academic:p3",
+    "text": "入社に際して、誓約書を提出した。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "reading:r-ja-n2-academic:p4",
+    "text": "都市化に伴って、緑が減っている。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "reading:r-ja-n2-academic:p5",
+    "text": "この本をきっかけに、歴史を勉強し始めた。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "reading:r-ja-n2-news:p0",
+    "text": "遅れたら、怒られかねない。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "reading:r-ja-n2-news:p1",
+    "text": "3年にわたって研究を続けた。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "reading:r-ja-n2-news:p2",
+    "text": "収入に応じて支出を決める。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "reading:r-ja-n2-news:p3",
+    "text": "出発に際して、一言ご挨拶させていただきます。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "reading:r-ja-n2-news:p4",
+    "text": "彼に代わって、私が出席した。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "reading:r-ja-n2-news:p5",
+    "text": "留学をきっかけに、日本語が好きになった。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "reading:r-ja-n2-opinion:p0",
+    "text": "夢を見ているかのようだ。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "reading:r-ja-n2-opinion:p1",
+    "text": "海岸に沿って走る。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "reading:r-ja-n2-opinion:p2",
+    "text": "値上げに加えて、サービスも悪化した。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "reading:r-ja-n2-opinion:p3",
+    "text": "辞職に至った経緯を説明する。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "reading:r-ja-n2-opinion:p4",
+    "text": "人口の増加に伴って、問題も増えた。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "reading:r-ja-n2-opinion:p5",
+    "text": "環境問題をめぐって議論が続いている。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "reading:r-ja-n3-society:p0",
+    "text": "毎日復習することだ。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "reading:r-ja-n3-society:p1",
+    "text": "元気そうに見せる。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "reading:r-ja-n3-society:p2",
+    "text": "この本は有名な作家によって書かれた。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "reading:r-ja-n3-society:p3",
+    "text": "兄は背が高いのに対して、弟は低い。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "reading:r-ja-n3-society:p4",
+    "text": "子供のころはよく遊んだものだ。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "reading:r-ja-n3-society:p5",
+    "text": "分かるように説明する。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "reading:r-ja-n3-culture:p0",
+    "text": "心配することはない。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "reading:r-ja-n3-culture:p1",
+    "text": "電話したところ、彼は出かけていた。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "reading:r-ja-n3-culture:p2",
+    "text": "天気予報によると、明日は雨だ。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "reading:r-ja-n3-culture:p3",
+    "text": "彼は文句を言うばかりだ。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "reading:r-ja-n3-culture:p4",
+    "text": "人の悪口を言うものではない。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "reading:r-ja-n3-culture:p5",
+    "text": "早く寝るようにしてください。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "reading:r-ja-n3-technology:p0",
+    "text": "健康のために運動することだ。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "reading:r-ja-n3-technology:p1",
+    "text": "今、出かけるところです。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "reading:r-ja-n3-technology:p2",
+    "text": "人によって意見が違う。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "reading:r-ja-n3-technology:p3",
+    "text": "毎日ゲームをしているばかりだ。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "reading:r-ja-n3-technology:p4",
+    "text": "人は誰でも間違うものだ。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "reading:r-ja-n3-technology:p5",
+    "text": "毎日日本語を話すようにしている。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "reading:r-ja-n3-environment:p0",
+    "text": "そんなことはない。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "reading:r-ja-n3-environment:p1",
+    "text": "環境について話す。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "reading:r-ja-n3-environment:p2",
+    "text": "先生によると、試験は難しいらしい。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "reading:r-ja-n3-environment:p3",
+    "text": "彼女は頭がいいばかりでなく、優しい。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "reading:r-ja-n3-environment:p4",
+    "text": "嘘をつくものではない。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "reading:r-ja-n3-environment:p5",
+    "text": "毎日練習したら、泳げるようになった。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "reading:r-ja-n4-work:p0",
+    "text": "毎日運動することにした。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "reading:r-ja-n4-work:p1",
+    "text": "雨が降りそうです。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "reading:r-ja-n4-work:p2",
+    "text": "明日、荷物を持っていきます。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "reading:r-ja-n4-work:p3",
+    "text": "雨が降ってきた。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "reading:r-ja-n4-work:p4",
+    "text": "新しいレストランで食べてみる。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "reading:r-ja-n4-work:p5",
+    "text": "この本は高いに違いない。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "reading:r-ja-n4-travel:p0",
+    "text": "朝ご飯を食べずに出かけた。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "reading:r-ja-n4-travel:p1",
+    "text": "今度の週末は何もするつもりはない。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "reading:r-ja-n4-travel:p2",
+    "text": "明日の朝のために水を出しておく。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "reading:r-ja-n4-travel:p3",
+    "text": "友達が傘を貸してくれた。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "reading:r-ja-n4-travel:p4",
+    "text": "田中さんに日本語を教えてもらう。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "reading:r-ja-n4-travel:p5",
+    "text": "この料理はおいしいに決まっている。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "reading:r-ja-n4-city:p0",
+    "text": "明日から禁煙することにします。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "reading:r-ja-n4-city:p1",
+    "text": "来年、日本に留学するつもりだ。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "reading:r-ja-n4-city:p2",
+    "text": "これからも頑張っていく。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "reading:r-ja-n4-city:p3",
+    "text": "先生が漢字を教えてくれた。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "reading:r-ja-n4-city:p4",
+    "text": "この靴を履いてみてもいいですか。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "reading:r-ja-n4-city:p5",
+    "text": "あの人が合格するに決まっている。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "reading:r-ja-n4-health:p0",
+    "text": "何も言わずに帰った。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "reading:r-ja-n4-health:p1",
+    "text": "友達に本を貸してあげた。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "reading:r-ja-n4-health:p2",
+    "text": "ドアを開けておいてください。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "reading:r-ja-n4-health:p3",
+    "text": "財布を落としてしまった。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "reading:r-ja-n4-health:p4",
+    "text": "父に車を貸してもらった。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "reading:r-ja-n4-health:p5",
+    "text": "彼女は猫みたいだ。",
     "locale": "ja-JP",
     "language": "ja",
     "examSource": "jlpt"
@@ -761975,6 +764047,846 @@
   {
     "key": "reading:r-ja-n5-10-gakkou:p2",
     "text": "私はそこで本を読みます。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "reading:r-ja-n5-daily:p0",
+    "text": "私は学生です。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "reading:r-ja-n5-daily:p1",
+    "text": "本を読みます。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "reading:r-ja-n5-daily:p2",
+    "text": "私は日本人です。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "reading:r-ja-n5-daily:p3",
+    "text": "昨日は行きませんでした。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "reading:r-ja-n5-daily:p4",
+    "text": "この本は高いですが、面白いです。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "reading:r-ja-n5-daily:p5",
+    "text": "眠いから、早く寝ます。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "reading:r-ja-n5-greeting:p0",
+    "text": "猫がいます。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "reading:r-ja-n5-greeting:p1",
+    "text": "七時に起きます。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "reading:r-ja-n5-greeting:p2",
+    "text": "これは本ですか。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "reading:r-ja-n5-greeting:p3",
+    "text": "コーヒーが飲みたいです。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "reading:r-ja-n5-greeting:p4",
+    "text": "公園に猫がいます。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "reading:r-ja-n5-greeting:p5",
+    "text": "バスで帰ります。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "reading:r-ja-n5-school:p0",
+    "text": "今日は暑いです。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "reading:r-ja-n5-school:p1",
+    "text": "学校に行きます。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "reading:r-ja-n5-school:p2",
+    "text": "私は学生ではありません。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "reading:r-ja-n5-school:p3",
+    "text": "日本に行きたいです。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "reading:r-ja-n5-school:p4",
+    "text": "日本語が好きですが、難しいです。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "reading:r-ja-n5-school:p5",
+    "text": "学校で勉強します。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "reading:r-ja-n5-food:p0",
+    "text": "私は日本語が好きです。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "reading:r-ja-n5-food:p1",
+    "text": "図書館で勉強します。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "reading:r-ja-n5-food:p2",
+    "text": "トイレはどこですか。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "reading:r-ja-n5-food:p3",
+    "text": "これは私の本です。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "reading:r-ja-n5-food:p4",
+    "text": "机の上に本があります。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "reading:r-ja-n5-food:p5",
+    "text": "友達と映画を見ます。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "conv:ja-conv-n1-politics:t0",
+    "text": "本業のかたわら、小説を書いている。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "conv:ja-conv-n1-politics:t1",
+    "text": "買い物がてら、友達の家に寄った。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "conv:ja-conv-n1-politics:t2",
+    "text": "彼女はいいことずくめだ。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "conv:ja-conv-n1-politics:t3",
+    "text": "勉強したところで、間に合わない。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "conv:ja-conv-n1-politics:t4",
+    "text": "長い議論の末、結論が出た。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "conv:ja-conv-n1-politics:t5",
+    "text": "彼の成功を願ってやまない。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "conv:ja-conv-n1-economy:t0",
+    "text": "彼は病気がちだ。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "conv:ja-conv-n1-economy:t1",
+    "text": "その提案は受けかねます。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "conv:ja-conv-n1-economy:t2",
+    "text": "彼は水すら飲まなかった。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "conv:ja-conv-n1-economy:t3",
+    "text": "彼の言い訳は間違いだらけだ。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "conv:ja-conv-n1-economy:t4",
+    "text": "日本に来てからというもの、毎日忙しい。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "conv:ja-conv-n1-economy:t5",
+    "text": "社長ともなると、責任が重い。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "conv:ja-conv-n1-science:t0",
+    "text": "妻は家事のかたわら、ボランティアをしている。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "conv:ja-conv-n1-science:t1",
+    "text": "お答えしかねます。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "conv:ja-conv-n1-science:t2",
+    "text": "今日は黒ずくめの服装だ。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "conv:ja-conv-n1-science:t3",
+    "text": "部屋はゴミだらけだ。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "conv:ja-conv-n1-science:t4",
+    "text": "試行錯誤の末、成功した。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "conv:ja-conv-n1-science:t5",
+    "text": "家族旅行ともなると、準備が大変だ。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "conv:ja-conv-n1-literature:t0",
+    "text": "最近、雨がちの天気が続く。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "conv:ja-conv-n1-literature:t1",
+    "text": "彼は教室に入るが早いか、泣き出した。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "conv:ja-conv-n1-literature:t2",
+    "text": "子供すら知っている。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "conv:ja-conv-n1-literature:t3",
+    "text": "彼に黙っていると言ったら最後、誰にも言うだろう。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "conv:ja-conv-n1-literature:t4",
+    "text": "彼女に出会ってからというもの、人生が変わった。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "conv:ja-conv-n1-literature:t5",
+    "text": "好天に恵まれたことと相まって、大会は大成功だった。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "conv:ja-conv-n2-business:t0",
+    "text": "その話は誤解を招きかねない。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "conv:ja-conv-n2-business:t1",
+    "text": "彼の話を信じずにはいられなかった。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "conv:ja-conv-n2-business:t2",
+    "text": "相手に応じて話し方を変える。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "conv:ja-conv-n2-business:t3",
+    "text": "実際の経験に基づいて書いた。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "conv:ja-conv-n2-business:t4",
+    "text": "社長に代わって挨拶する。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "conv:ja-conv-n2-business:t5",
+    "text": "親の期待に反して、芸術家になった。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "conv:ja-conv-n2-academic:t0",
+    "text": "彼はまるで専門家かのように説明した。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "conv:ja-conv-n2-academic:t1",
+    "text": "全国にわたって調査を行った。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "conv:ja-conv-n2-academic:t2",
+    "text": "英語に加えて、フランス語も勉強している。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "conv:ja-conv-n2-academic:t3",
+    "text": "入社に際して、誓約書を提出した。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "conv:ja-conv-n2-academic:t4",
+    "text": "都市化に伴って、緑が減っている。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "conv:ja-conv-n2-academic:t5",
+    "text": "この本をきっかけに、歴史を勉強し始めた。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "conv:ja-conv-n2-news:t0",
+    "text": "遅れたら、怒られかねない。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "conv:ja-conv-n2-news:t1",
+    "text": "3年にわたって研究を続けた。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "conv:ja-conv-n2-news:t2",
+    "text": "収入に応じて支出を決める。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "conv:ja-conv-n2-news:t3",
+    "text": "出発に際して、一言ご挨拶させていただきます。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "conv:ja-conv-n2-news:t4",
+    "text": "彼に代わって、私が出席した。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "conv:ja-conv-n2-news:t5",
+    "text": "留学をきっかけに、日本語が好きになった。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "conv:ja-conv-n2-opinion:t0",
+    "text": "夢を見ているかのようだ。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "conv:ja-conv-n2-opinion:t1",
+    "text": "海岸に沿って走る。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "conv:ja-conv-n2-opinion:t2",
+    "text": "値上げに加えて、サービスも悪化した。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "conv:ja-conv-n2-opinion:t3",
+    "text": "辞職に至った経緯を説明する。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "conv:ja-conv-n2-opinion:t4",
+    "text": "人口の増加に伴って、問題も増えた。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "conv:ja-conv-n2-opinion:t5",
+    "text": "環境問題をめぐって議論が続いている。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "conv:ja-conv-n3-society:t0",
+    "text": "毎日復習することだ。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "conv:ja-conv-n3-society:t1",
+    "text": "元気そうに見せる。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "conv:ja-conv-n3-society:t2",
+    "text": "この本は有名な作家によって書かれた。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "conv:ja-conv-n3-society:t3",
+    "text": "兄は背が高いのに対して、弟は低い。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "conv:ja-conv-n3-society:t4",
+    "text": "子供のころはよく遊んだものだ。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "conv:ja-conv-n3-society:t5",
+    "text": "分かるように説明する。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "conv:ja-conv-n3-culture:t0",
+    "text": "心配することはない。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "conv:ja-conv-n3-culture:t1",
+    "text": "電話したところ、彼は出かけていた。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "conv:ja-conv-n3-culture:t2",
+    "text": "天気予報によると、明日は雨だ。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "conv:ja-conv-n3-culture:t3",
+    "text": "彼は文句を言うばかりだ。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "conv:ja-conv-n3-culture:t4",
+    "text": "人の悪口を言うものではない。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "conv:ja-conv-n3-culture:t5",
+    "text": "早く寝るようにしてください。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "conv:ja-conv-n3-technology:t0",
+    "text": "健康のために運動することだ。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "conv:ja-conv-n3-technology:t1",
+    "text": "今、出かけるところです。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "conv:ja-conv-n3-technology:t2",
+    "text": "人によって意見が違う。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "conv:ja-conv-n3-technology:t3",
+    "text": "毎日ゲームをしているばかりだ。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "conv:ja-conv-n3-technology:t4",
+    "text": "人は誰でも間違うものだ。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "conv:ja-conv-n3-technology:t5",
+    "text": "毎日日本語を話すようにしている。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "conv:ja-conv-n3-environment:t0",
+    "text": "そんなことはない。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "conv:ja-conv-n3-environment:t1",
+    "text": "環境について話す。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "conv:ja-conv-n3-environment:t2",
+    "text": "先生によると、試験は難しいらしい。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "conv:ja-conv-n3-environment:t3",
+    "text": "彼女は頭がいいばかりでなく、優しい。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "conv:ja-conv-n3-environment:t4",
+    "text": "嘘をつくものではない。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "conv:ja-conv-n3-environment:t5",
+    "text": "毎日練習したら、泳げるようになった。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "conv:ja-conv-n4-work:t0",
+    "text": "毎日運動することにした。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "conv:ja-conv-n4-work:t1",
+    "text": "雨が降りそうです。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "conv:ja-conv-n4-work:t2",
+    "text": "明日、荷物を持っていきます。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "conv:ja-conv-n4-work:t3",
+    "text": "雨が降ってきた。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "conv:ja-conv-n4-work:t4",
+    "text": "新しいレストランで食べてみる。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "conv:ja-conv-n4-work:t5",
+    "text": "この本は高いに違いない。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "conv:ja-conv-n4-travel:t0",
+    "text": "朝ご飯を食べずに出かけた。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "conv:ja-conv-n4-travel:t1",
+    "text": "今度の週末は何もするつもりはない。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "conv:ja-conv-n4-travel:t2",
+    "text": "明日の朝のために水を出しておく。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "conv:ja-conv-n4-travel:t3",
+    "text": "友達が傘を貸してくれた。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "conv:ja-conv-n4-travel:t4",
+    "text": "田中さんに日本語を教えてもらう。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "conv:ja-conv-n4-travel:t5",
+    "text": "この料理はおいしいに決まっている。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "conv:ja-conv-n4-city:t0",
+    "text": "明日から禁煙することにします。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "conv:ja-conv-n4-city:t1",
+    "text": "来年、日本に留学するつもりだ。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "conv:ja-conv-n4-city:t2",
+    "text": "これからも頑張っていく。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "conv:ja-conv-n4-city:t3",
+    "text": "先生が漢字を教えてくれた。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "conv:ja-conv-n4-city:t4",
+    "text": "この靴を履いてみてもいいですか。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "conv:ja-conv-n4-city:t5",
+    "text": "あの人が合格するに決まっている。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "conv:ja-conv-n4-health:t0",
+    "text": "何も言わずに帰った。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "conv:ja-conv-n4-health:t1",
+    "text": "友達に本を貸してあげた。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "conv:ja-conv-n4-health:t2",
+    "text": "ドアを開けておいてください。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "conv:ja-conv-n4-health:t3",
+    "text": "財布を落としてしまった。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "conv:ja-conv-n4-health:t4",
+    "text": "父に車を貸してもらった。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "conv:ja-conv-n4-health:t5",
+    "text": "彼女は猫みたいだ。",
     "locale": "ja-JP",
     "language": "ja",
     "examSource": "jlpt"
@@ -762269,6 +765181,174 @@
   {
     "key": "conv:ja-conv-010:t4",
     "text": "お大事に。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "conv:ja-conv-n5-daily:t0",
+    "text": "私は学生です。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "conv:ja-conv-n5-daily:t1",
+    "text": "本を読みます。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "conv:ja-conv-n5-daily:t2",
+    "text": "私は日本人です。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "conv:ja-conv-n5-daily:t3",
+    "text": "昨日は行きませんでした。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "conv:ja-conv-n5-daily:t4",
+    "text": "この本は高いですが、面白いです。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "conv:ja-conv-n5-daily:t5",
+    "text": "眠いから、早く寝ます。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "conv:ja-conv-n5-greeting:t0",
+    "text": "猫がいます。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "conv:ja-conv-n5-greeting:t1",
+    "text": "七時に起きます。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "conv:ja-conv-n5-greeting:t2",
+    "text": "これは本ですか。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "conv:ja-conv-n5-greeting:t3",
+    "text": "コーヒーが飲みたいです。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "conv:ja-conv-n5-greeting:t4",
+    "text": "公園に猫がいます。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "conv:ja-conv-n5-greeting:t5",
+    "text": "バスで帰ります。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "conv:ja-conv-n5-school:t0",
+    "text": "今日は暑いです。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "conv:ja-conv-n5-school:t1",
+    "text": "学校に行きます。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "conv:ja-conv-n5-school:t2",
+    "text": "私は学生ではありません。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "conv:ja-conv-n5-school:t3",
+    "text": "日本に行きたいです。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "conv:ja-conv-n5-school:t4",
+    "text": "日本語が好きですが、難しいです。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "conv:ja-conv-n5-school:t5",
+    "text": "学校で勉強します。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "conv:ja-conv-n5-food:t0",
+    "text": "私は日本語が好きです。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "conv:ja-conv-n5-food:t1",
+    "text": "図書館で勉強します。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "conv:ja-conv-n5-food:t2",
+    "text": "トイレはどこですか。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "conv:ja-conv-n5-food:t3",
+    "text": "これは私の本です。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "conv:ja-conv-n5-food:t4",
+    "text": "机の上に本があります。",
+    "locale": "ja-JP",
+    "language": "ja",
+    "examSource": "jlpt"
+  },
+  {
+    "key": "conv:ja-conv-n5-food:t5",
+    "text": "友達と映画を見ます。",
     "locale": "ja-JP",
     "language": "ja",
     "examSource": "jlpt"

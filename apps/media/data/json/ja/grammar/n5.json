@@ -624,5 +624,787 @@
       "Menghilangkan の dalam koneksi kata benda",
       "Memakai の alih-alih です"
     ]
+  },
+  {
+    "id": "ja_gram_but",
+    "language": "ja",
+    "title": "〜が（but）",
+    "pattern": "〜が（but）",
+    "level": 1,
+    "examMappings": {
+      "jlpt": "N5"
+    },
+    "difficulty": 1,
+    "simpleExplanation": "but; however",
+    "usage": "〜が（but）: Clause A + が + Clause B",
+    "examples": [
+      {
+        "text": "この本は高いですが、面白いです。",
+        "romanization": "konohaidesugaidesu",
+        "translation": "This book is expensive, but interesting.",
+        "translation_en": "This book is expensive, but interesting.",
+        "translation_id": "Buku ini mahal, tapi menarik."
+      },
+      {
+        "text": "日本語が好きですが、難しいです。",
+        "romanization": "gakidesugashiidesu",
+        "translation": "I like Japanese, but it's difficult.",
+        "translation_en": "I like Japanese, but it's difficult.",
+        "translation_id": "Saya suka bahasa Jepang, tapi sulit."
+      }
+    ],
+    "category": "grammar",
+    "tags": [
+      "conjunction"
+    ],
+    "title_en": "〜が（but） — but; however",
+    "title_id": "but; however",
+    "simpleExplanation_en": "but; however",
+    "simpleExplanation_id": "Tetapi; Namun",
+    "usage_en": "〜が（but）: Clause A + が + Clause B",
+    "usage_id": "〜が（tetapi）: Klausul A + が + Klausul B"
+  },
+  {
+    "id": "ja_gram____",
+    "language": "ja",
+    "title": "〜がいます / 〜があります",
+    "pattern": "〜がいます / 〜があります",
+    "level": 1,
+    "examMappings": {
+      "jlpt": "N5"
+    },
+    "difficulty": 1,
+    "simpleExplanation": "there is/are (animate or inanimate)",
+    "usage": "〜がいます / 〜があります: Noun + が + います/あります",
+    "examples": [
+      {
+        "text": "公園に猫がいます。",
+        "romanization": "nigaimasu",
+        "translation": "There is a cat in the park.",
+        "translation_en": "There is a cat in the park.",
+        "translation_id": "Ada seekor kucing di taman."
+      },
+      {
+        "text": "机の上に本があります。",
+        "romanization": "nonigaarimasu",
+        "translation": "There is a book on the desk.",
+        "translation_en": "There is a book on the desk.",
+        "translation_id": "Ada sebuah buku di atas meja."
+      }
+    ],
+    "category": "grammar",
+    "tags": [
+      "existence"
+    ],
+    "title_en": "〜がいます / 〜があります — there is/are (animate or inanimate)",
+    "title_id": "there is/are (animate or inanimate)",
+    "simpleExplanation_en": "there is/are (animate or inanimate)",
+    "simpleExplanation_id": "ada/ada (hidup atau mati)",
+    "usage_en": "〜がいます / 〜があります: Noun + が + います/あります",
+    "usage_id": "〜がいます / 〜があります: Kata benda + が + います/あります"
+  },
+  {
+    "id": "ja_gram_reason",
+    "language": "ja",
+    "title": "〜から（reason）",
+    "pattern": "〜から（reason）",
+    "level": 1,
+    "examMappings": {
+      "jlpt": "N5"
+    },
+    "difficulty": 1,
+    "simpleExplanation": "because; since",
+    "usage": "〜から（reason）: Sentence + から + Result",
+    "examples": [
+      {
+        "text": "雨が降っているから、出かけません。",
+        "romanization": "gatteirukarakakemasen",
+        "translation": "Because it's raining, I won't go out.",
+        "translation_en": "Because it's raining, I won't go out.",
+        "translation_id": "Karena hujan, saya tidak akan keluar."
+      },
+      {
+        "text": "眠いから、早く寝ます。",
+        "romanization": "ikarakumasu",
+        "translation": "Because I'm sleepy, I'll go to bed early.",
+        "translation_en": "Because I'm sleepy, I'll go to bed early.",
+        "translation_id": "Karena aku mengantuk, aku akan tidur lebih awal."
+      }
+    ],
+    "category": "grammar",
+    "tags": [
+      "reason"
+    ],
+    "title_en": "〜から（reason） — because; since",
+    "title_id": "because; since",
+    "simpleExplanation_en": "because; since",
+    "simpleExplanation_id": "Karena; sejak",
+    "usage_en": "〜から（reason）: Sentence + から + Result",
+    "usage_id": "〜から（alasan）: Kalimat + から + Hasil"
+  },
+  {
+    "id": "ja_gram_place_means",
+    "language": "ja",
+    "title": "〜で（place/means）",
+    "pattern": "〜で（place/means）",
+    "level": 1,
+    "examMappings": {
+      "jlpt": "N5"
+    },
+    "difficulty": 1,
+    "simpleExplanation": "marks the place of action or the means of doing something",
+    "usage": "〜で（place/means）: Place/Means + で + Verb",
+    "examples": [
+      {
+        "text": "学校で勉強します。",
+        "romanization": "deshimasu",
+        "translation": "I study at school.",
+        "translation_en": "I study at school.",
+        "translation_id": "Saya belajar di sekolah."
+      },
+      {
+        "text": "バスで帰ります。",
+        "romanization": "derimasu",
+        "translation": "I return by bus.",
+        "translation_en": "I return by bus.",
+        "translation_id": "Saya kembali dengan bus."
+      }
+    ],
+    "category": "grammar",
+    "tags": [
+      "particle"
+    ],
+    "title_en": "〜で（place/means） — marks the place of action or the means of doing something",
+    "title_id": "marks the place of action or the means of doing something",
+    "simpleExplanation_en": "marks the place of action or the means of doing something",
+    "simpleExplanation_id": "menandai tempat tindakan atau cara melakukan sesuatu",
+    "usage_en": "〜で（place/means）: Place/Means + で + Verb",
+    "usage_id": "〜で（tempat/sarana）: Tempat/sarana + で + Kata Kerja"
+  },
+  {
+    "id": "ja_gram_and_with",
+    "language": "ja",
+    "title": "〜と（and/with）",
+    "pattern": "〜と（and/with）",
+    "level": 1,
+    "examMappings": {
+      "jlpt": "N5"
+    },
+    "difficulty": 1,
+    "simpleExplanation": "and; with; together with",
+    "usage": "〜と（and/with）: Noun/Verb-plain + と + Noun/Verb",
+    "examples": [
+      {
+        "text": "友達と映画を見ます。",
+        "romanization": "towomasu",
+        "translation": "I watch a movie with my friend.",
+        "translation_en": "I watch a movie with my friend.",
+        "translation_id": "Saya menonton film bersama teman saya."
+      },
+      {
+        "text": "春になると、桜が咲きます。",
+        "romanization": "ninarutogakimasu",
+        "translation": "When spring comes, cherry blossoms bloom.",
+        "translation_en": "When spring comes, cherry blossoms bloom.",
+        "translation_id": "Saat musim semi tiba, bunga sakura bermekaran."
+      }
+    ],
+    "category": "grammar",
+    "tags": [
+      "conjunction"
+    ],
+    "title_en": "〜と（and/with） — and; with; together with",
+    "title_id": "and; with; together with",
+    "simpleExplanation_en": "and; with; together with",
+    "simpleExplanation_id": "Dan; dengan; bersama",
+    "usage_en": "〜と（and/with）: Noun/Verb-plain + と + Noun/Verb",
+    "usage_id": "〜と（dan/dengan）: Kata Benda/Kata Kerja-polos + と + Kata Benda/Kata Kerja"
+  },
+  {
+    "id": "ja_gram_time_destination",
+    "language": "ja",
+    "title": "〜に（time/destination）",
+    "pattern": "〜に（time/destination）",
+    "level": 1,
+    "examMappings": {
+      "jlpt": "N5"
+    },
+    "difficulty": 1,
+    "simpleExplanation": "marks time, destination, or indirect target",
+    "usage": "〜に（time/destination）: Noun/Time + に + Verb",
+    "examples": [
+      {
+        "text": "7時に起きます。",
+        "romanization": "nikimasu",
+        "translation": "I wake up at 7 o'clock.",
+        "translation_en": "I wake up at 7 o'clock.",
+        "translation_id": "Saya bangun jam 7."
+      },
+      {
+        "text": "日本に行きます。",
+        "romanization": "nikimasu",
+        "translation": "I go to Japan.",
+        "translation_en": "I go to Japan.",
+        "translation_id": "Saya pergi ke Jepang."
+      }
+    ],
+    "category": "grammar",
+    "tags": [
+      "particle"
+    ],
+    "title_en": "〜に（time/destination） — marks time, destination, or indirect target",
+    "title_id": "marks time, destination, or indirect target",
+    "simpleExplanation_en": "marks time, destination, or indirect target",
+    "simpleExplanation_id": "menandai waktu, tujuan, atau target tidak langsung",
+    "usage_en": "〜に（time/destination）: Noun/Time + に + Verb",
+    "usage_id": "〜に（waktu/tujuan）: Kata Benda/Waktu + に + Kata Kerja"
+  },
+  {
+    "id": "ja_gram_object_particle",
+    "language": "ja",
+    "title": "〜を（object particle）",
+    "pattern": "〜を（object particle）",
+    "level": 1,
+    "examMappings": {
+      "jlpt": "N5"
+    },
+    "difficulty": 1,
+    "simpleExplanation": "marks the direct object of a verb",
+    "usage": "〜を（object particle）: Noun + を + Verb",
+    "examples": [
+      {
+        "text": "本を読みます。",
+        "romanization": "womimasu",
+        "translation": "I read a book.",
+        "translation_en": "I read a book.",
+        "translation_id": "Saya membaca buku."
+      },
+      {
+        "text": "コーヒーを飲みます。",
+        "romanization": "womimasu",
+        "translation": "I drink coffee.",
+        "translation_en": "I drink coffee.",
+        "translation_id": "Saya minum kopi."
+      }
+    ],
+    "category": "grammar",
+    "tags": [
+      "particle"
+    ],
+    "title_en": "〜を（object particle） — marks the direct object of a verb",
+    "title_id": "marks the direct object of a verb",
+    "simpleExplanation_en": "marks the direct object of a verb",
+    "simpleExplanation_id": "menandai objek langsung dari kata kerja",
+    "usage_en": "〜を（object particle）: Noun + を + Verb",
+    "usage_id": "〜を（partikel objek）: Kata Benda + を + Kata Kerja"
+  },
+  {
+    "id": "ja_gram_n5_04",
+    "language": "ja",
+    "title": "〜が好きです / 〜が嫌いです",
+    "pattern": "〜が好きです / 〜が嫌いです",
+    "level": 1,
+    "examMappings": {
+      "jlpt": "N5"
+    },
+    "difficulty": 1,
+    "simpleExplanation": "like / dislike",
+    "usage": "〜が好きです / 〜が嫌いです: Noun/Verb-noun + が + 好きです/嫌いです",
+    "examples": [
+      {
+        "text": "私は猫が好きです。",
+        "romanization": "Watashihanekogasukidesu.",
+        "translation": "I like cats.",
+        "translation_en": "I like cats.",
+        "translation_id": "Saya suka kucing."
+      },
+      {
+        "text": "彼は野菜が嫌いです。",
+        "romanization": "Karehayasaigakiraidesu.",
+        "translation": "He dislikes vegetables.",
+        "translation_en": "He dislikes vegetables.",
+        "translation_id": "Dia tidak menyukai sayuran."
+      }
+    ],
+    "category": "grammar",
+    "tags": [
+      "preference"
+    ],
+    "title_en": "〜が好きです / 〜が嫌いです — like / dislike",
+    "title_id": "like / dislike",
+    "simpleExplanation_en": "like / dislike",
+    "simpleExplanation_id": "suka / tidak suka",
+    "usage_en": "〜が好きです / 〜が嫌いです: Noun/Verb-noun + が + 好きです/嫌いです",
+    "usage_id": "〜が好きです / 〜が嫌いです: Kata benda/kata kerja-kata benda + が + 好きです/嫌いです"
+  },
+  {
+    "id": "ja_gram_n5_05",
+    "language": "ja",
+    "title": "〜たい",
+    "pattern": "〜たい",
+    "level": 1,
+    "examMappings": {
+      "jlpt": "N5"
+    },
+    "difficulty": 1,
+    "simpleExplanation": "want to do",
+    "usage": "〜たい: Verb-stem + たい",
+    "examples": [
+      {
+        "text": "日本に行きたいです。",
+        "romanization": "Nipponniikitaidesu.",
+        "translation": "I want to go to Japan.",
+        "translation_en": "I want to go to Japan.",
+        "translation_id": "Saya ingin pergi ke Jepang."
+      },
+      {
+        "text": "水が飲みたいです。",
+        "romanization": "Mizuganomitaidesu.",
+        "translation": "I want to drink water.",
+        "translation_en": "I want to drink water.",
+        "translation_id": "Saya ingin minum air."
+      }
+    ],
+    "category": "grammar",
+    "tags": [
+      "desire"
+    ],
+    "title_en": "〜たい — want to do",
+    "title_id": "want to do",
+    "simpleExplanation_en": "want to do",
+    "simpleExplanation_id": "ingin lakukan",
+    "usage_en": "〜たい: Verb-stem + たい",
+    "usage_id": "〜たい: Batang kata kerja + たい"
+  },
+  {
+    "id": "ja_gram_n5_06",
+    "language": "ja",
+    "title": "〜たことがあります",
+    "pattern": "〜たことがあります",
+    "level": 1,
+    "examMappings": {
+      "jlpt": "N5"
+    },
+    "difficulty": 1,
+    "simpleExplanation": "have done before; experienced",
+    "usage": "〜たことがあります: Verb-ta + ことがあります",
+    "examples": [
+      {
+        "text": "日本に行ったことがあります。",
+        "romanization": "Nipponniittakotogaarimasu.",
+        "translation": "I have been to Japan before.",
+        "translation_en": "I have been to Japan before.",
+        "translation_id": "Saya pernah ke Jepang sebelumnya."
+      },
+      {
+        "text": "寿司を食べたことがありません。",
+        "romanization": "Sushiwotabetakotogaarimasen.",
+        "translation": "I have never eaten sushi.",
+        "translation_en": "I have never eaten sushi.",
+        "translation_id": "Saya belum pernah makan sushi."
+      }
+    ],
+    "category": "grammar",
+    "tags": [
+      "experience"
+    ],
+    "title_en": "〜たことがあります — have done before; experienced",
+    "title_id": "have done before; experienced",
+    "simpleExplanation_en": "have done before; experienced",
+    "simpleExplanation_id": "telah dilakukan sebelumnya; berpengalaman",
+    "usage_en": "〜たことがあります: Verb-ta + ことがあります",
+    "usage_id": "〜たことがあります: Kata Kerja-ta + ことがあります"
+  },
+  {
+    "id": "ja_gram_n5_08",
+    "language": "ja",
+    "title": "〜ている",
+    "pattern": "〜ている",
+    "level": 1,
+    "examMappings": {
+      "jlpt": "N5"
+    },
+    "difficulty": 1,
+    "simpleExplanation": "is/am/are doing (progressive) or resultant state",
+    "usage": "〜ている: Verb-te + いる",
+    "examples": [
+      {
+        "text": "今、ご飯を食べています。",
+        "romanization": "Ima,gomeshiwotabeteimasu.",
+        "translation": "I am eating now.",
+        "translation_en": "I am eating now.",
+        "translation_id": "Saya sedang makan sekarang."
+      },
+      {
+        "text": "電気がついています。",
+        "romanization": "Denkigatsuiteimasu.",
+        "translation": "The light is on.",
+        "translation_en": "The light is on.",
+        "translation_id": "Lampu menyala."
+      }
+    ],
+    "category": "grammar",
+    "tags": [
+      "progressive"
+    ],
+    "title_en": "〜ている — is/am/are doing (progressive) or resultant state",
+    "title_id": "is/am/are doing (progressive) or resultant state",
+    "simpleExplanation_en": "is/am/are doing (progressive) or resultant state",
+    "simpleExplanation_id": "sedang/sedang dilakukan (progresif) atau keadaan yang dihasilkan",
+    "usage_en": "〜ている: Verb-te + いる",
+    "usage_id": "〜ている: Kata kerja-te + いる"
+  },
+  {
+    "id": "ja_gram_n5_09",
+    "language": "ja",
+    "title": "〜てください",
+    "pattern": "〜てください",
+    "level": 1,
+    "examMappings": {
+      "jlpt": "N5"
+    },
+    "difficulty": 1,
+    "simpleExplanation": "please do (for me)",
+    "usage": "〜てください: Verb-te + ください",
+    "examples": [
+      {
+        "text": "窓を開けてください。",
+        "romanization": "Madowohiraketekudasai.",
+        "translation": "Please open the window.",
+        "translation_en": "Please open the window.",
+        "translation_id": "Silakan buka jendelanya."
+      },
+      {
+        "text": "ここに名前を書いてください。",
+        "romanization": "Kokoninamaewokaitekudasai.",
+        "translation": "Please write your name here.",
+        "translation_en": "Please write your name here.",
+        "translation_id": "Silakan tulis nama Anda di sini."
+      }
+    ],
+    "category": "grammar",
+    "tags": [
+      "request"
+    ],
+    "title_en": "〜てください — please do (for me)",
+    "title_id": "please do (for me)",
+    "simpleExplanation_en": "please do (for me)",
+    "simpleExplanation_id": "tolong lakukan (untukku)",
+    "usage_en": "〜てください: Verb-te + ください",
+    "usage_id": "〜てください: Kata kerja-te + ください"
+  },
+  {
+    "id": "ja_gram_n5_10",
+    "language": "ja",
+    "title": "〜でした",
+    "pattern": "〜でした",
+    "level": 1,
+    "examMappings": {
+      "jlpt": "N5"
+    },
+    "difficulty": 1,
+    "simpleExplanation": "was/were (polite past of です)",
+    "usage": "〜でした: Noun/Na-adjective + でした",
+    "examples": [
+      {
+        "text": "昨日は日曜日でした。",
+        "romanization": "Kinouhanichiyoubideshita.",
+        "translation": "Yesterday was Sunday.",
+        "translation_en": "Yesterday was Sunday.",
+        "translation_id": "Kemarin adalah hari Minggu."
+      },
+      {
+        "text": "昔、ここは静かでした。",
+        "romanization": "Mukashi,kokohashizukadeshita.",
+        "translation": "This place used to be quiet.",
+        "translation_en": "This place used to be quiet.",
+        "translation_id": "Tempat ini dulunya sepi."
+      }
+    ],
+    "category": "grammar",
+    "tags": [
+      "past",
+      "polite"
+    ],
+    "title_en": "〜でした — was/were (polite past of です)",
+    "title_id": "was/were (polite past of です)",
+    "simpleExplanation_en": "was/were (polite past of です)",
+    "simpleExplanation_id": "was/were (masa lalu yang sopan dari です)",
+    "usage_en": "〜でした: Noun/Na-adjective + でした",
+    "usage_id": "〜でした: Kata Benda/Kata Sifat Na + でした"
+  },
+  {
+    "id": "ja_gram_n5_11",
+    "language": "ja",
+    "title": "〜ではありません",
+    "pattern": "〜ではありません",
+    "level": 1,
+    "examMappings": {
+      "jlpt": "N5"
+    },
+    "difficulty": 1,
+    "simpleExplanation": "is not (polite negative)",
+    "usage": "〜ではありません: Noun/Na-adjective + ではありません",
+    "examples": [
+      {
+        "text": "私は学生ではありません。",
+        "romanization": "Watashihagakuseidehaarimasen.",
+        "translation": "I am not a student.",
+        "translation_en": "I am not a student.",
+        "translation_id": "Saya bukan seorang pelajar."
+      },
+      {
+        "text": "今日は寒くありません。",
+        "romanization": "Konnichihasamukuarimasen.",
+        "translation": "Today is not cold.",
+        "translation_en": "Today is not cold.",
+        "translation_id": "Hari ini tidak dingin."
+      }
+    ],
+    "category": "grammar",
+    "tags": [
+      "negative",
+      "polite"
+    ],
+    "title_en": "〜ではありません — is not (polite negative)",
+    "title_id": "is not (polite negative)",
+    "simpleExplanation_en": "is not (polite negative)",
+    "simpleExplanation_id": "tidak (sopan negatif)",
+    "usage_en": "〜ではありません: Noun/Na-adjective + ではありません",
+    "usage_id": "〜ではありません: Kata benda/kata sifat Na + ではありません"
+  },
+  {
+    "id": "ja_gram_n5_12",
+    "language": "ja",
+    "title": "〜てはいけません",
+    "pattern": "〜てはいけません",
+    "level": 1,
+    "examMappings": {
+      "jlpt": "N5"
+    },
+    "difficulty": 1,
+    "simpleExplanation": "must not do",
+    "usage": "〜てはいけません: Verb-te + はいけません",
+    "examples": [
+      {
+        "text": "ここで写真を撮ってはいけません。",
+        "romanization": "Kokodeshashinwototsutehaikemasen.",
+        "translation": "You must not take pictures here.",
+        "translation_en": "You must not take pictures here.",
+        "translation_id": "Anda tidak boleh mengambil gambar di sini."
+      },
+      {
+        "text": "嘘をついてはいけません。",
+        "romanization": "Usowotsuitehaikemasen.",
+        "translation": "You must not lie.",
+        "translation_en": "You must not lie.",
+        "translation_id": "Anda tidak boleh berbohong."
+      }
+    ],
+    "category": "grammar",
+    "tags": [
+      "prohibition"
+    ],
+    "title_en": "〜てはいけません — must not do",
+    "title_id": "must not do",
+    "simpleExplanation_en": "must not do",
+    "simpleExplanation_id": "tidak harus dilakukan",
+    "usage_en": "〜てはいけません: Verb-te + はいけません",
+    "usage_id": "〜てはいけません: Kata Kerja-te + はいけません"
+  },
+  {
+    "id": "ja_gram_n5_13",
+    "language": "ja",
+    "title": "〜てもいいです",
+    "pattern": "〜てもいいです",
+    "level": 1,
+    "examMappings": {
+      "jlpt": "N5"
+    },
+    "difficulty": 1,
+    "simpleExplanation": "may do; it's okay to do",
+    "usage": "〜てもいいです: Verb-te + もいいです",
+    "examples": [
+      {
+        "text": "写真を撮ってもいいですか。",
+        "romanization": "Shashinwototsutemoiidesuka.",
+        "translation": "May I take a picture?",
+        "translation_en": "May I take a picture?",
+        "translation_id": "Bolehkah saya mengambil gambar?"
+      },
+      {
+        "text": "ここで食べてもいいです。",
+        "romanization": "Kokodetabetemoiidesu.",
+        "translation": "It's okay to eat here.",
+        "translation_en": "It's okay to eat here.",
+        "translation_id": "Tidak apa-apa makan di sini."
+      }
+    ],
+    "category": "grammar",
+    "tags": [
+      "permission"
+    ],
+    "title_en": "〜てもいいです — may do; it's okay to do",
+    "title_id": "may do; it's okay to do",
+    "simpleExplanation_en": "may do; it's okay to do",
+    "simpleExplanation_id": "mungkin melakukan; tidak apa-apa untuk dilakukan",
+    "usage_en": "〜てもいいです: Verb-te + もいいです",
+    "usage_id": "〜てもいいです: Kata kerja-te + もいいです"
+  },
+  {
+    "id": "ja_gram_n5_15",
+    "language": "ja",
+    "title": "〜なくてもいいです",
+    "pattern": "〜なくてもいいです",
+    "level": 1,
+    "examMappings": {
+      "jlpt": "N5"
+    },
+    "difficulty": 1,
+    "simpleExplanation": "don't have to; need not",
+    "usage": "〜なくてもいいです: Verb-negative + くてもいいです",
+    "examples": [
+      {
+        "text": "明日は早く来なくてもいいです。",
+        "romanization": "Ashitahahayakukonakutemoiidesu.",
+        "translation": "You don't have to come early tomorrow.",
+        "translation_en": "You don't have to come early tomorrow.",
+        "translation_id": "Anda tidak harus datang lebih awal besok."
+      },
+      {
+        "text": "帽子をかぶらなくてもいいです。",
+        "romanization": "Boushiwokaburanakutemoiidesu.",
+        "translation": "You don't have to wear a hat.",
+        "translation_en": "You don't have to wear a hat.",
+        "translation_id": "Anda tidak harus memakai topi."
+      }
+    ],
+    "category": "grammar",
+    "tags": [
+      "permission"
+    ],
+    "title_en": "〜なくてもいいです — don't have to; need not",
+    "title_id": "don't have to; need not",
+    "simpleExplanation_en": "don't have to; need not",
+    "simpleExplanation_id": "tidak perlu; tak perlu",
+    "usage_en": "〜なくてもいいです: Verb-negative + くてもいいです",
+    "usage_id": "〜なくてもいいです: Kata kerja negatif + くてもいいです"
+  },
+  {
+    "id": "ja_gram_n5_16",
+    "language": "ja",
+    "title": "〜なければなりません / 〜なくてはいけません",
+    "pattern": "〜なければなりません / 〜なくてはいけません",
+    "level": 1,
+    "examMappings": {
+      "jlpt": "N5"
+    },
+    "difficulty": 1,
+    "simpleExplanation": "must do; have to do",
+    "usage": "〜なければなりません / 〜なくてはいけません: Verb-negative + ければなりません / くてはいけません",
+    "examples": [
+      {
+        "text": "明日までにレポートを出さなければなりません。",
+        "romanization": "Ashitamadenirepootowodasanakerebanarimasen.",
+        "translation": "I must submit the report by tomorrow.",
+        "translation_en": "I must submit the report by tomorrow.",
+        "translation_id": "Saya harus menyerahkan laporannya besok."
+      },
+      {
+        "text": "薬を飲まなくてはいけません。",
+        "romanization": "Kusuriwonomanakutehaikemasen.",
+        "translation": "I have to take medicine.",
+        "translation_en": "I have to take medicine.",
+        "translation_id": "Saya harus minum obat."
+      }
+    ],
+    "category": "grammar",
+    "tags": [
+      "obligation"
+    ],
+    "title_en": "〜なければなりません / 〜なくてはいけません — must do; have to do",
+    "title_id": "must do; have to do",
+    "simpleExplanation_en": "must do; have to do",
+    "simpleExplanation_id": "harus dilakukan; harus lakukan",
+    "usage_en": "〜なければなりません / 〜なくてはいけません: Verb-negative + ければなりません / くてはいけません",
+    "usage_id": "〜なければなりません / 〜なくてはいけません: Kata kerja negatif + ければなりません /くてはいけません"
+  },
+  {
+    "id": "ja_gram_n5_18",
+    "language": "ja",
+    "title": "〜ましょう",
+    "pattern": "〜ましょう",
+    "level": 1,
+    "examMappings": {
+      "jlpt": "N5"
+    },
+    "difficulty": 1,
+    "simpleExplanation": "let's do; shall we do",
+    "usage": "〜ましょう: Verb-stem + ましょう",
+    "examples": [
+      {
+        "text": "一緒に行きましょう。",
+        "romanization": "Isshoniikimashou.",
+        "translation": "Let's go together.",
+        "translation_en": "Let's go together.",
+        "translation_id": "Ayo pergi bersama."
+      },
+      {
+        "text": "週末に映画を見ましょう。",
+        "romanization": "Shuumatsunieigawomimashou.",
+        "translation": "Let's watch a movie this weekend.",
+        "translation_en": "Let's watch a movie this weekend.",
+        "translation_id": "Mari kita menonton film akhir pekan ini."
+      }
+    ],
+    "category": "grammar",
+    "tags": [
+      "invitation"
+    ],
+    "title_en": "〜ましょう — let's do; shall we do",
+    "title_id": "let's do; shall we do",
+    "simpleExplanation_en": "let's do; shall we do",
+    "simpleExplanation_id": "ayo lakukan; haruskah kita melakukannya",
+    "usage_en": "〜ましょう: Verb-stem + ましょう",
+    "usage_id": "〜ましょう: Batang kata kerja + ましょう"
+  },
+  {
+    "id": "ja_gram_n5_19",
+    "language": "ja",
+    "title": "〜ませんか",
+    "pattern": "〜ませんか",
+    "level": 1,
+    "examMappings": {
+      "jlpt": "N5"
+    },
+    "difficulty": 1,
+    "simpleExplanation": "shall we?; won't you?",
+    "usage": "〜ませんか: Verb-negative + ませんか",
+    "examples": [
+      {
+        "text": "一緒に食べませんか。",
+        "romanization": "Isshonitabemasenka.",
+        "translation": "Won't you eat with me?",
+        "translation_en": "Won't you eat with me?",
+        "translation_id": "Maukah kamu makan bersamaku?"
+      },
+      {
+        "text": "明日、公園を散歩しませんか。",
+        "romanization": "Ashita,kouenwosanposhimasenka.",
+        "translation": "Shall we take a walk in the park tomorrow?",
+        "translation_en": "Shall we take a walk in the park tomorrow?",
+        "translation_id": "Bagaimana kalau kita jalan-jalan di taman besok?"
+      }
+    ],
+    "category": "grammar",
+    "tags": [
+      "invitation"
+    ],
+    "title_en": "〜ませんか — shall we?; won't you?",
+    "title_id": "shall we?; won't you?",
+    "simpleExplanation_en": "shall we?; won't you?",
+    "simpleExplanation_id": "bolehkah?; bukan?",
+    "usage_en": "〜ませんか: Verb-negative + ませんか",
+    "usage_id": "〜ませんか: Kata kerja negatif + ませんか"
   }
 ]

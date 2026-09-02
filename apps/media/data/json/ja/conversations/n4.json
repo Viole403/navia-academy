@@ -1,1 +1,294 @@
-[]
+[
+  {
+    "id": "ja-conv-n4-work",
+    "language": "ja",
+    "title": "しごと — Work",
+    "level": 2,
+    "difficulty": 2,
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "scenario": "work",
+    "speakers": [
+      {
+        "id": "a",
+        "name": "A",
+        "role": "speaker"
+      },
+      {
+        "id": "b",
+        "name": "B",
+        "role": "speaker"
+      }
+    ],
+    "dialogue": [
+      {
+        "speaker": "a",
+        "text": "毎日運動することにした。",
+        "romanization": "Mainichiundousurukotonishita.",
+        "translation": "I decided to exercise every day.",
+        "translation_en": "I decided to exercise every day.",
+        "translation_id": "Saya memutuskan untuk berolahraga setiap hari."
+      },
+      {
+        "speaker": "b",
+        "text": "雨が降りそうです。",
+        "romanization": "Amegaorisoudesu.",
+        "translation": "It looks like it will rain.",
+        "translation_en": "It looks like it will rain.",
+        "translation_id": "Sepertinya akan turun hujan."
+      },
+      {
+        "speaker": "a",
+        "text": "明日、荷物を持っていきます。",
+        "romanization": "Ashita,nimotsuwomotsuteikimasu.",
+        "translation": "I will take the luggage with me tomorrow.",
+        "translation_en": "I will take the luggage with me tomorrow.",
+        "translation_id": "Saya akan membawa barang bawaan saya besok."
+      },
+      {
+        "speaker": "b",
+        "text": "雨が降ってきた。",
+        "romanization": "Amegafutsutekita.",
+        "translation": "It started to rain.",
+        "translation_en": "It started to rain.",
+        "translation_id": "Hujan mulai turun."
+      },
+      {
+        "speaker": "a",
+        "text": "新しいレストランで食べてみる。",
+        "romanization": "Atarashiiresutorandetabetemiru.",
+        "translation": "I will try eating at the new restaurant.",
+        "translation_en": "I will try eating at the new restaurant.",
+        "translation_id": "Saya akan mencoba makan di restoran baru."
+      },
+      {
+        "speaker": "b",
+        "text": "この本は高いに違いない。",
+        "romanization": "Konohonhatakainichigainai.",
+        "translation": "This book must be expensive.",
+        "translation_en": "This book must be expensive.",
+        "translation_id": "Buku ini pasti mahal."
+      }
+    ]
+  },
+  {
+    "id": "ja-conv-n4-travel",
+    "language": "ja",
+    "title": "りょこう — Travel",
+    "level": 2,
+    "difficulty": 2,
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "scenario": "travel",
+    "speakers": [
+      {
+        "id": "a",
+        "name": "A",
+        "role": "speaker"
+      },
+      {
+        "id": "b",
+        "name": "B",
+        "role": "speaker"
+      }
+    ],
+    "dialogue": [
+      {
+        "speaker": "a",
+        "text": "朝ご飯を食べずに出かけた。",
+        "romanization": "Asagomeshiwotabezunidekaketa.",
+        "translation": "I went out without eating breakfast.",
+        "translation_en": "I went out without eating breakfast.",
+        "translation_id": "Saya keluar tanpa sarapan."
+      },
+      {
+        "speaker": "b",
+        "text": "今度の週末は何もするつもりはない。",
+        "romanization": "Kondonoshuumatsuhananimosurutsumorihanai.",
+        "translation": "I don't plan to do anything this weekend.",
+        "translation_en": "I don't plan to do anything this weekend.",
+        "translation_id": "Saya tidak berencana melakukan apa pun akhir pekan ini."
+      },
+      {
+        "speaker": "a",
+        "text": "明日の朝のために水を出しておく。",
+        "romanization": "Ashitanoasanotamenimizuwodashiteoku.",
+        "translation": "I will put out water for tomorrow morning.",
+        "translation_en": "I will put out water for tomorrow morning.",
+        "translation_id": "Saya akan mengeluarkan air untuk besok pagi."
+      },
+      {
+        "speaker": "b",
+        "text": "友達が傘を貸してくれた。",
+        "romanization": "Tomodachigakasawokashitekureta.",
+        "translation": "My friend lent me an umbrella.",
+        "translation_en": "My friend lent me an umbrella.",
+        "translation_id": "Temanku meminjamiku payung."
+      },
+      {
+        "speaker": "a",
+        "text": "田中さんに日本語を教えてもらう。",
+        "romanization": "Tanakasanninihongowooshietemorau.",
+        "translation": "I receive Japanese lessons from Tanaka.",
+        "translation_en": "I receive Japanese lessons from Tanaka.",
+        "translation_id": "Saya menerima pelajaran bahasa Jepang dari Tanaka."
+      },
+      {
+        "speaker": "b",
+        "text": "この料理はおいしいに決まっている。",
+        "romanization": "Konoryourihaoishiinikimatteiru.",
+        "translation": "This dish is definitely delicious.",
+        "translation_en": "This dish is definitely delicious.",
+        "translation_id": "Hidangan ini pasti enak."
+      }
+    ]
+  },
+  {
+    "id": "ja-conv-n4-city",
+    "language": "ja",
+    "title": "まち — The City",
+    "level": 2,
+    "difficulty": 2,
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "scenario": "city",
+    "speakers": [
+      {
+        "id": "a",
+        "name": "A",
+        "role": "speaker"
+      },
+      {
+        "id": "b",
+        "name": "B",
+        "role": "speaker"
+      }
+    ],
+    "dialogue": [
+      {
+        "speaker": "a",
+        "text": "明日から禁煙することにします。",
+        "romanization": "Ashitakarakin'ensurukotonishimasu.",
+        "translation": "I will decide to quit smoking from tomorrow.",
+        "translation_en": "I will decide to quit smoking from tomorrow.",
+        "translation_id": "Saya akan memutuskan untuk berhenti merokok mulai besok."
+      },
+      {
+        "speaker": "b",
+        "text": "来年、日本に留学するつもりだ。",
+        "romanization": "Rainen,nipponniryuugakusurutsumorida.",
+        "translation": "I intend to study abroad in Japan next year.",
+        "translation_en": "I intend to study abroad in Japan next year.",
+        "translation_id": "Saya berniat untuk belajar di luar negeri di Jepang tahun depan."
+      },
+      {
+        "speaker": "a",
+        "text": "これからも頑張っていく。",
+        "romanization": "Korekaramoganbatsuteiku.",
+        "translation": "I will keep doing my best from now on.",
+        "translation_en": "I will keep doing my best from now on.",
+        "translation_id": "Saya akan terus melakukan yang terbaik mulai sekarang."
+      },
+      {
+        "speaker": "b",
+        "text": "先生が漢字を教えてくれた。",
+        "romanization": "Senseigakanjiwooshietekureta.",
+        "translation": "The teacher taught me kanji.",
+        "translation_en": "The teacher taught me kanji.",
+        "translation_id": "Guru mengajari saya kanji."
+      },
+      {
+        "speaker": "a",
+        "text": "この靴を履いてみてもいいですか。",
+        "romanization": "Konokutsuwohaitemitemoiidesuka.",
+        "translation": "May I try on these shoes?",
+        "translation_en": "May I try on these shoes?",
+        "translation_id": "Bolehkah saya mencoba sepatu ini?"
+      },
+      {
+        "speaker": "b",
+        "text": "あの人が合格するに決まっている。",
+        "romanization": "Anoningagoukakusurunikimatteiru.",
+        "translation": "That person will definitely pass.",
+        "translation_en": "That person will definitely pass.",
+        "translation_id": "Orang itu pasti lolos."
+      }
+    ]
+  },
+  {
+    "id": "ja-conv-n4-health",
+    "language": "ja",
+    "title": "けんこう — Health",
+    "level": 2,
+    "difficulty": 2,
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "scenario": "health",
+    "speakers": [
+      {
+        "id": "a",
+        "name": "A",
+        "role": "speaker"
+      },
+      {
+        "id": "b",
+        "name": "B",
+        "role": "speaker"
+      }
+    ],
+    "dialogue": [
+      {
+        "speaker": "a",
+        "text": "何も言わずに帰った。",
+        "romanization": "Nanimoiwazunikaetsuta.",
+        "translation": "I went home without saying anything.",
+        "translation_en": "I went home without saying anything.",
+        "translation_id": "Aku pulang ke rumah tanpa berkata apa-apa."
+      },
+      {
+        "speaker": "b",
+        "text": "友達に本を貸してあげた。",
+        "romanization": "Tomodachinihonwokashiteageta.",
+        "translation": "I lent a book to my friend.",
+        "translation_en": "I lent a book to my friend.",
+        "translation_id": "Saya meminjamkan sebuah buku kepada teman saya."
+      },
+      {
+        "speaker": "a",
+        "text": "ドアを開けておいてください。",
+        "romanization": "Doawohiraketeoitekudasai.",
+        "translation": "Please leave the door open.",
+        "translation_en": "Please leave the door open.",
+        "translation_id": "Silakan biarkan pintunya terbuka."
+      },
+      {
+        "speaker": "b",
+        "text": "財布を落としてしまった。",
+        "romanization": "Saifuwootoshiteshimatta.",
+        "translation": "I dropped my wallet (by accident).",
+        "translation_en": "I dropped my wallet (by accident).",
+        "translation_id": "Saya menjatuhkan dompet saya (secara tidak sengaja)."
+      },
+      {
+        "speaker": "a",
+        "text": "父に車を貸してもらった。",
+        "romanization": "Chichinikurumawokashitemoratta.",
+        "translation": "My father lent me his car.",
+        "translation_en": "My father lent me his car.",
+        "translation_id": "Ayah saya meminjamkan mobilnya kepada saya."
+      },
+      {
+        "speaker": "b",
+        "text": "彼女は猫みたいだ。",
+        "romanization": "Kanojohanekomitaida.",
+        "translation": "She is like a cat.",
+        "translation_en": "She is like a cat.",
+        "translation_id": "Dia seperti kucing."
+      }
+    ]
+  }
+]

@@ -1,1 +1,294 @@
-[]
+[
+  {
+    "id": "ja-conv-n1-politics",
+    "language": "ja",
+    "title": "せいじ — Politics",
+    "level": 5,
+    "difficulty": 5,
+    "examMappings": {
+      "jlpt": "N1"
+    },
+    "scenario": "politics",
+    "speakers": [
+      {
+        "id": "a",
+        "name": "A",
+        "role": "speaker"
+      },
+      {
+        "id": "b",
+        "name": "B",
+        "role": "speaker"
+      }
+    ],
+    "dialogue": [
+      {
+        "speaker": "a",
+        "text": "本業のかたわら、小説を書いている。",
+        "romanization": "Hongyounokatawara,shousetsuwokaiteiru.",
+        "translation": "I write novels on the side while working my main job.",
+        "translation_en": "I write novels on the side while working my main job.",
+        "translation_id": "Saya menulis novel sambil mengerjakan pekerjaan utama saya."
+      },
+      {
+        "speaker": "b",
+        "text": "買い物がてら、友達の家に寄った。",
+        "romanization": "Kaimonogatera,tomodachinoieniyotsuta.",
+        "translation": "I stopped by my friend's house on the way to go shopping.",
+        "translation_en": "I stopped by my friend's house on the way to go shopping.",
+        "translation_id": "Saya mampir ke rumah teman saya dalam perjalanan untuk berbelanja."
+      },
+      {
+        "speaker": "a",
+        "text": "彼女はいいことずくめだ。",
+        "romanization": "Kanojohaiikotozukumeda.",
+        "translation": "She has nothing but good things going for her.",
+        "translation_en": "She has nothing but good things going for her.",
+        "translation_id": "Dia tidak punya apa-apa selain hal-hal baik yang terjadi padanya."
+      },
+      {
+        "speaker": "b",
+        "text": "勉強したところで、間に合わない。",
+        "romanization": "Benkyoushitatokorode,maniawanai.",
+        "translation": "Even if I study, I won't make it in time.",
+        "translation_en": "Even if I study, I won't make it in time.",
+        "translation_id": "Sekalipun aku belajar, aku tidak akan bisa tiba tepat waktu."
+      },
+      {
+        "speaker": "a",
+        "text": "長い議論の末、結論が出た。",
+        "romanization": "Nagaigironnomatsu,ketsurongadeta.",
+        "translation": "After a long discussion, a conclusion was reached.",
+        "translation_en": "After a long discussion, a conclusion was reached.",
+        "translation_id": "Setelah diskusi panjang, sebuah kesimpulan tercapai."
+      },
+      {
+        "speaker": "b",
+        "text": "彼の成功を願ってやまない。",
+        "romanization": "Kanoseikouwonegatsuteyamanai.",
+        "translation": "I sincerely wish for his success.",
+        "translation_en": "I sincerely wish for his success.",
+        "translation_id": "Saya dengan tulus mendoakan kesuksesannya."
+      }
+    ]
+  },
+  {
+    "id": "ja-conv-n1-economy",
+    "language": "ja",
+    "title": "けいざい — Economy",
+    "level": 5,
+    "difficulty": 5,
+    "examMappings": {
+      "jlpt": "N1"
+    },
+    "scenario": "economy",
+    "speakers": [
+      {
+        "id": "a",
+        "name": "A",
+        "role": "speaker"
+      },
+      {
+        "id": "b",
+        "name": "B",
+        "role": "speaker"
+      }
+    ],
+    "dialogue": [
+      {
+        "speaker": "a",
+        "text": "彼は病気がちだ。",
+        "romanization": "Karehabyoukigachida.",
+        "translation": "He is prone to illness.",
+        "translation_en": "He is prone to illness.",
+        "translation_id": "Dia rentan terhadap penyakit."
+      },
+      {
+        "speaker": "b",
+        "text": "その提案は受けかねます。",
+        "romanization": "Sonoteianhaukekanemasu.",
+        "translation": "We cannot accept that proposal.",
+        "translation_en": "We cannot accept that proposal.",
+        "translation_id": "Kami tidak bisa menerima usulan itu."
+      },
+      {
+        "speaker": "a",
+        "text": "彼は水すら飲まなかった。",
+        "romanization": "Karehamizusuranomanakatta.",
+        "translation": "He didn't even drink water.",
+        "translation_en": "He didn't even drink water.",
+        "translation_id": "Dia bahkan tidak minum air."
+      },
+      {
+        "speaker": "b",
+        "text": "彼の言い訳は間違いだらけだ。",
+        "romanization": "Kanoiiwakehamachigaidarakeda.",
+        "translation": "His excuses are full of mistakes.",
+        "translation_en": "His excuses are full of mistakes.",
+        "translation_id": "Alasannya penuh dengan kesalahan."
+      },
+      {
+        "speaker": "a",
+        "text": "日本に来てからというもの、毎日忙しい。",
+        "romanization": "Nipponnikitekaratoiumono,mainichiisogashii.",
+        "translation": "Ever since I came to Japan, I've been busy every day.",
+        "translation_en": "Ever since I came to Japan, I've been busy every day.",
+        "translation_id": "Sejak saya datang ke Jepang, saya sibuk setiap hari."
+      },
+      {
+        "speaker": "b",
+        "text": "社長ともなると、責任が重い。",
+        "romanization": "Shachoutomonaruto,sekiningaomoi.",
+        "translation": "Once you become president, the responsibility is heavy.",
+        "translation_en": "Once you become president, the responsibility is heavy.",
+        "translation_id": "Begitu Anda menjadi presiden, tanggung jawabnya berat."
+      }
+    ]
+  },
+  {
+    "id": "ja-conv-n1-science",
+    "language": "ja",
+    "title": "かがく — Science",
+    "level": 5,
+    "difficulty": 5,
+    "examMappings": {
+      "jlpt": "N1"
+    },
+    "scenario": "science",
+    "speakers": [
+      {
+        "id": "a",
+        "name": "A",
+        "role": "speaker"
+      },
+      {
+        "id": "b",
+        "name": "B",
+        "role": "speaker"
+      }
+    ],
+    "dialogue": [
+      {
+        "speaker": "a",
+        "text": "妻は家事のかたわら、ボランティアをしている。",
+        "romanization": "Tsumahakajinokatawara,boranteiawoshiteiru.",
+        "translation": "My wife volunteers while doing housework.",
+        "translation_en": "My wife volunteers while doing housework.",
+        "translation_id": "Istri saya menjadi sukarelawan sambil melakukan pekerjaan rumah."
+      },
+      {
+        "speaker": "b",
+        "text": "お答えしかねます。",
+        "romanization": "Okotaeshikanemasu.",
+        "translation": "I am unable to answer.",
+        "translation_en": "I am unable to answer.",
+        "translation_id": "Saya tidak dapat menjawab."
+      },
+      {
+        "speaker": "a",
+        "text": "今日は黒ずくめの服装だ。",
+        "romanization": "Konnichihakurozukumenofukusouda.",
+        "translation": "Today I'm dressed entirely in black.",
+        "translation_en": "Today I'm dressed entirely in black.",
+        "translation_id": "Hari ini aku berpakaian serba hitam."
+      },
+      {
+        "speaker": "b",
+        "text": "部屋はゴミだらけだ。",
+        "romanization": "Heyahagomidarakeda.",
+        "translation": "The room is full of trash.",
+        "translation_en": "The room is full of trash.",
+        "translation_id": "Ruangan itu penuh dengan sampah."
+      },
+      {
+        "speaker": "a",
+        "text": "試行錯誤の末、成功した。",
+        "romanization": "Shikousakugonomatsu,seikoushita.",
+        "translation": "After trial and error, we succeeded.",
+        "translation_en": "After trial and error, we succeeded.",
+        "translation_id": "Setelah trial and error, kami berhasil."
+      },
+      {
+        "speaker": "b",
+        "text": "家族旅行ともなると、準備が大変だ。",
+        "romanization": "Kazokuryokoutomonaruto,junbigataihenda.",
+        "translation": "When it comes to a family trip, the preparations are tough.",
+        "translation_en": "When it comes to a family trip, the preparations are tough.",
+        "translation_id": "Kalau mau jalan-jalan bersama keluarga, persiapannya memang berat."
+      }
+    ]
+  },
+  {
+    "id": "ja-conv-n1-literature",
+    "language": "ja",
+    "title": "ぶんがく — Literature",
+    "level": 5,
+    "difficulty": 5,
+    "examMappings": {
+      "jlpt": "N1"
+    },
+    "scenario": "literature",
+    "speakers": [
+      {
+        "id": "a",
+        "name": "A",
+        "role": "speaker"
+      },
+      {
+        "id": "b",
+        "name": "B",
+        "role": "speaker"
+      }
+    ],
+    "dialogue": [
+      {
+        "speaker": "a",
+        "text": "最近、雨がちの天気が続く。",
+        "romanization": "Saikin,amegachinotenkigatsuzuku.",
+        "translation": "Recently, rainy weather continues.",
+        "translation_en": "Recently, rainy weather continues.",
+        "translation_id": "Akhir-akhir ini, cuaca hujan terus berlanjut."
+      },
+      {
+        "speaker": "b",
+        "text": "彼は教室に入るが早いか、泣き出した。",
+        "romanization": "Karehakyoushitsuniirugahayaika,nakidashita.",
+        "translation": "He burst into tears the moment he entered the classroom.",
+        "translation_en": "He burst into tears the moment he entered the classroom.",
+        "translation_id": "Dia menangis saat memasuki ruang kelas."
+      },
+      {
+        "speaker": "a",
+        "text": "子供すら知っている。",
+        "romanization": "Kodomosurashitteiru.",
+        "translation": "Even children know it.",
+        "translation_en": "Even children know it.",
+        "translation_id": "Bahkan anak-anak pun mengetahuinya."
+      },
+      {
+        "speaker": "b",
+        "text": "彼に黙っていると言ったら最後、誰にも言うだろう。",
+        "romanization": "Karenidamatsuteirutoittarasaigo,darenimoiudarou.",
+        "translation": "Once you tell him to keep quiet, it's over — he'll tell everyone.",
+        "translation_en": "Once you tell him to keep quiet, it's over — he'll tell everyone.",
+        "translation_id": "Begitu Anda menyuruhnya diam, semuanya berakhir — dia akan memberi tahu semua orang."
+      },
+      {
+        "speaker": "a",
+        "text": "彼女に出会ってからというもの、人生が変わった。",
+        "romanization": "Kanojonideatsutekaratoiumono,jinseigakawatta.",
+        "translation": "Ever since I met her, my life has changed.",
+        "translation_en": "Ever since I met her, my life has changed.",
+        "translation_id": "Semenjak aku bertemu dengannya, hidupku berubah."
+      },
+      {
+        "speaker": "b",
+        "text": "好天に恵まれたことと相まって、大会は大成功だった。",
+        "romanization": "Koutennimegumaretakototosoumatte,taikaihadaiseikoudatta.",
+        "translation": "Combined with the good weather, the event was a great success.",
+        "translation_en": "Combined with the good weather, the event was a great success.",
+        "translation_id": "Dikombinasikan dengan cuaca yang bagus, acara ini sukses besar."
+      }
+    ]
+  }
+]

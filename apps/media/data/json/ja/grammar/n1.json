@@ -1,1 +1,799 @@
-[]
+[
+  {
+    "id": "ja_gram_n1_01",
+    "language": "ja",
+    "title": "〜かたわら",
+    "pattern": "〜かたわら",
+    "level": 5,
+    "examMappings": {
+      "jlpt": "N1"
+    },
+    "difficulty": 5,
+    "simpleExplanation": "while doing; concurrently; on the side",
+    "usage": "〜かたわら: Verb-stem / Noun + かたわら",
+    "examples": [
+      {
+        "text": "本業のかたわら、小説を書いている。",
+        "romanization": "Hongyounokatawara,shousetsuwokaiteiru.",
+        "translation": "I write novels on the side while working my main job.",
+        "translation_en": "I write novels on the side while working my main job.",
+        "translation_id": "Saya menulis novel sambil mengerjakan pekerjaan utama saya."
+      },
+      {
+        "text": "妻は家事のかたわら、ボランティアをしている。",
+        "romanization": "Tsumahakajinokatawara,boranteiawoshiteiru.",
+        "translation": "My wife volunteers while doing housework.",
+        "translation_en": "My wife volunteers while doing housework.",
+        "translation_id": "Istri saya menjadi sukarelawan sambil melakukan pekerjaan rumah."
+      }
+    ],
+    "category": "grammar",
+    "tags": [
+      "side-activity",
+      "formal"
+    ],
+    "title_en": "〜かたわら — while doing; concurrently; on the side",
+    "title_id": "while doing; concurrently; on the side",
+    "simpleExplanation_en": "while doing; concurrently; on the side",
+    "simpleExplanation_id": "saat melakukan; secara bersamaan; di sisi",
+    "usage_en": "〜かたわら: Verb-stem / Noun + かたわら",
+    "usage_id": "〜かたわら: Batang kata kerja / Kata Benda + かたわら"
+  },
+  {
+    "id": "ja_gram_n1_02",
+    "language": "ja",
+    "title": "〜がち",
+    "pattern": "〜がち",
+    "level": 5,
+    "examMappings": {
+      "jlpt": "N1"
+    },
+    "difficulty": 5,
+    "simpleExplanation": "tend to; prone to; frequently",
+    "usage": "〜がち: Verb-stem / Noun + がち",
+    "examples": [
+      {
+        "text": "彼は病気がちだ。",
+        "romanization": "Karehabyoukigachida.",
+        "translation": "He is prone to illness.",
+        "translation_en": "He is prone to illness.",
+        "translation_id": "Dia rentan terhadap penyakit."
+      },
+      {
+        "text": "最近、雨がちの天気が続く。",
+        "romanization": "Saikin,amegachinotenkigatsuzuku.",
+        "translation": "Recently, rainy weather continues.",
+        "translation_en": "Recently, rainy weather continues.",
+        "translation_id": "Akhir-akhir ini, cuaca hujan terus berlanjut."
+      }
+    ],
+    "category": "grammar",
+    "tags": [
+      "tendency"
+    ],
+    "title_en": "〜がち — tend to; prone to; frequently",
+    "title_id": "tend to; prone to; frequently",
+    "simpleExplanation_en": "tend to; prone to; frequently",
+    "simpleExplanation_id": "cenderung; rentan terhadap; sering",
+    "usage_en": "〜がち: Verb-stem / Noun + がち",
+    "usage_id": "〜がち: Batang kata kerja / Kata Benda + がち"
+  },
+  {
+    "id": "ja_gram_n1_03",
+    "language": "ja",
+    "title": "〜がてら",
+    "pattern": "〜がてら",
+    "level": 5,
+    "examMappings": {
+      "jlpt": "N1"
+    },
+    "difficulty": 5,
+    "simpleExplanation": "on the way; while doing; taking the opportunity",
+    "usage": "〜がてら: Verb-stem / Noun + がてら",
+    "examples": [
+      {
+        "text": "散歩がてら、駅前まで買い物に行った。",
+        "romanization": "Sanpogatera,ekimaemadekaimononiitta.",
+        "translation": "I went shopping downtown, taking the opportunity of a walk.",
+        "translation_en": "I went shopping downtown, taking the opportunity of a walk.",
+        "translation_id": "Saya pergi berbelanja di pusat kota, mengambil kesempatan untuk berjalan-jalan."
+      },
+      {
+        "text": "買い物がてら、友達の家に寄った。",
+        "romanization": "Kaimonogatera,tomodachinoieniyotsuta.",
+        "translation": "I stopped by my friend's house on the way to go shopping.",
+        "translation_en": "I stopped by my friend's house on the way to go shopping.",
+        "translation_id": "Saya mampir ke rumah teman saya dalam perjalanan untuk berbelanja."
+      }
+    ],
+    "category": "grammar",
+    "tags": [
+      "opportunity",
+      "on-the-way"
+    ],
+    "title_en": "〜がてら — on the way; while doing; taking the opportunity",
+    "title_id": "on the way; while doing; taking the opportunity",
+    "simpleExplanation_en": "on the way; while doing; taking the opportunity",
+    "simpleExplanation_id": "dalam perjalanan; saat melakukan; mengambil kesempatan",
+    "usage_en": "〜がてら: Verb-stem / Noun + がてら",
+    "usage_id": "〜がてら: Batang kata kerja / Kata benda + がてら"
+  },
+  {
+    "id": "ja_gram_n1_04",
+    "language": "ja",
+    "title": "〜かねる",
+    "pattern": "〜かねる",
+    "level": 5,
+    "examMappings": {
+      "jlpt": "N1"
+    },
+    "difficulty": 5,
+    "simpleExplanation": "unable to do; cannot (polite refusal)",
+    "usage": "〜かねる: Verb-stem + かねる",
+    "examples": [
+      {
+        "text": "お答えしかねます。",
+        "romanization": "Okotaeshikanemasu.",
+        "translation": "I am unable to answer.",
+        "translation_en": "I am unable to answer.",
+        "translation_id": "Saya tidak dapat menjawab."
+      },
+      {
+        "text": "その提案は受けかねます。",
+        "romanization": "Sonoteianhaukekanemasu.",
+        "translation": "We cannot accept that proposal.",
+        "translation_en": "We cannot accept that proposal.",
+        "translation_id": "Kami tidak bisa menerima usulan itu."
+      }
+    ],
+    "category": "grammar",
+    "tags": [
+      "polite-refusal",
+      "formal"
+    ],
+    "title_en": "〜かねる — unable to do; cannot (polite refusal)",
+    "title_id": "unable to do; cannot (polite refusal)",
+    "simpleExplanation_en": "unable to do; cannot (polite refusal)",
+    "simpleExplanation_id": "tidak dapat melakukan; tidak bisa (penolakan dengan sopan)",
+    "usage_en": "〜かねる: Verb-stem + かねる",
+    "usage_id": "〜かねる: Batang kata kerja + かねる"
+  },
+  {
+    "id": "ja_gram_n1_05",
+    "language": "ja",
+    "title": "〜が早いか",
+    "pattern": "〜が早いか",
+    "level": 5,
+    "examMappings": {
+      "jlpt": "N1"
+    },
+    "difficulty": 5,
+    "simpleExplanation": "as soon as; the moment",
+    "usage": "〜が早いか: Verb-plain + が早いか",
+    "examples": [
+      {
+        "text": "彼は教室に入るが早いか、泣き出した。",
+        "romanization": "Karehakyoushitsuniirugahayaika,nakidashita.",
+        "translation": "He burst into tears the moment he entered the classroom.",
+        "translation_en": "He burst into tears the moment he entered the classroom.",
+        "translation_id": "Dia menangis saat memasuki ruang kelas."
+      },
+      {
+        "text": "終わるが早いか、逃げ出した。",
+        "romanization": "Owarugahayaika,nigedashita.",
+        "translation": "He ran away as soon as it ended.",
+        "translation_en": "He ran away as soon as it ended.",
+        "translation_id": "Dia melarikan diri segera setelah itu berakhir."
+      }
+    ],
+    "category": "grammar",
+    "tags": [
+      "immediacy",
+      "formal"
+    ],
+    "title_en": "〜が早いか — as soon as; the moment",
+    "title_id": "as soon as; the moment",
+    "simpleExplanation_en": "as soon as; the moment",
+    "simpleExplanation_id": "segera setelah; saat ini",
+    "usage_en": "〜が早いか: Verb-plain + が早いか",
+    "usage_id": "〜が早いか: Kata kerja-polos + が早いか"
+  },
+  {
+    "id": "ja_gram_n1_06",
+    "language": "ja",
+    "title": "〜ずくめ",
+    "pattern": "〜ずくめ",
+    "level": 5,
+    "examMappings": {
+      "jlpt": "N1"
+    },
+    "difficulty": 5,
+    "simpleExplanation": "nothing but; full of; entirely (positive or neutral)",
+    "usage": "〜ずくめ: Noun + ずくめ",
+    "examples": [
+      {
+        "text": "彼女はいいことずくめだ。",
+        "romanization": "Kanojohaiikotozukumeda.",
+        "translation": "She has nothing but good things going for her.",
+        "translation_en": "She has nothing but good things going for her.",
+        "translation_id": "Dia tidak punya apa-apa selain hal-hal baik yang terjadi padanya."
+      },
+      {
+        "text": "今日は黒ずくめの服装だ。",
+        "romanization": "Konnichihakurozukumenofukusouda.",
+        "translation": "Today I'm dressed entirely in black.",
+        "translation_en": "Today I'm dressed entirely in black.",
+        "translation_id": "Hari ini aku berpakaian serba hitam."
+      }
+    ],
+    "category": "grammar",
+    "tags": [
+      "abundance"
+    ],
+    "title_en": "〜ずくめ — nothing but; full of; entirely (positive or neutral)",
+    "title_id": "nothing but; full of; entirely (positive or neutral)",
+    "simpleExplanation_en": "nothing but; full of; entirely (positive or neutral)",
+    "simpleExplanation_id": "hanya; penuh dengan; seluruhnya (positif atau netral)",
+    "usage_en": "〜ずくめ: Noun + ずくめ",
+    "usage_id": "〜ずくめ: Kata Benda + ずくめ"
+  },
+  {
+    "id": "ja_gram_n1_07",
+    "language": "ja",
+    "title": "〜すら",
+    "pattern": "〜すら",
+    "level": 5,
+    "examMappings": {
+      "jlpt": "N1"
+    },
+    "difficulty": 5,
+    "simpleExplanation": "even; not even (emphatic negative)",
+    "usage": "〜すら: Noun + すら",
+    "examples": [
+      {
+        "text": "彼は水すら飲まなかった。",
+        "romanization": "Karehamizusuranomanakatta.",
+        "translation": "He didn't even drink water.",
+        "translation_en": "He didn't even drink water.",
+        "translation_id": "Dia bahkan tidak minum air."
+      },
+      {
+        "text": "子供すら知っている。",
+        "romanization": "Kodomosurashitteiru.",
+        "translation": "Even children know it.",
+        "translation_en": "Even children know it.",
+        "translation_id": "Bahkan anak-anak pun mengetahuinya."
+      }
+    ],
+    "category": "grammar",
+    "tags": [
+      "emphasis",
+      "negative"
+    ],
+    "title_en": "〜すら — even; not even (emphatic negative)",
+    "title_id": "even; not even (emphatic negative)",
+    "simpleExplanation_en": "even; not even (emphatic negative)",
+    "simpleExplanation_id": "bahkan; bahkan tidak (negatif tegas)",
+    "usage_en": "〜すら: Noun + すら",
+    "usage_id": "〜すら: Kata Benda + すら"
+  },
+  {
+    "id": "ja_gram_n1_08",
+    "language": "ja",
+    "title": "〜たところで",
+    "pattern": "〜たところで",
+    "level": 5,
+    "examMappings": {
+      "jlpt": "N1"
+    },
+    "difficulty": 5,
+    "simpleExplanation": "even if; even though (unlikely to help)",
+    "usage": "〜たところで: Verb-ta + ところで",
+    "examples": [
+      {
+        "text": "今さら謝ったところで、許されないだろう。",
+        "romanization": "Imasaraayamatsutatokorode,yurusarenaidarou.",
+        "translation": "Even if you apologize now, you probably won't be forgiven.",
+        "translation_en": "Even if you apologize now, you probably won't be forgiven.",
+        "translation_id": "Bahkan jika Anda meminta maaf sekarang, Anda mungkin tidak akan dimaafkan."
+      },
+      {
+        "text": "勉強したところで、間に合わない。",
+        "romanization": "Benkyoushitatokorode,maniawanai.",
+        "translation": "Even if I study, I won't make it in time.",
+        "translation_en": "Even if I study, I won't make it in time.",
+        "translation_id": "Sekalipun aku belajar, aku tidak akan bisa tiba tepat waktu."
+      }
+    ],
+    "category": "grammar",
+    "tags": [
+      "concessive",
+      "negative"
+    ],
+    "title_en": "〜たところで — even if; even though (unlikely to help)",
+    "title_id": "even if; even though (unlikely to help)",
+    "simpleExplanation_en": "even if; even though (unlikely to help)",
+    "simpleExplanation_id": "meskipun; meskipun (tidak mungkin membantu)",
+    "usage_en": "〜たところで: Verb-ta + ところで",
+    "usage_id": "〜たところで: Kata Kerja-ta + ところで"
+  },
+  {
+    "id": "ja_gram_n1_09",
+    "language": "ja",
+    "title": "〜だらけ",
+    "pattern": "〜だらけ",
+    "level": 5,
+    "examMappings": {
+      "jlpt": "N1"
+    },
+    "difficulty": 5,
+    "simpleExplanation": "full of; covered with; lots of (negative nuance)",
+    "usage": "〜だらけ: Noun + だらけ",
+    "examples": [
+      {
+        "text": "部屋はゴミだらけだ。",
+        "romanization": "Heyahagomidarakeda.",
+        "translation": "The room is full of trash.",
+        "translation_en": "The room is full of trash.",
+        "translation_id": "Ruangan itu penuh dengan sampah."
+      },
+      {
+        "text": "彼の言い訳は間違いだらけだ。",
+        "romanization": "Kanoiiwakehamachigaidarakeda.",
+        "translation": "His excuses are full of mistakes.",
+        "translation_en": "His excuses are full of mistakes.",
+        "translation_id": "Alasannya penuh dengan kesalahan."
+      }
+    ],
+    "category": "grammar",
+    "tags": [
+      "abundance",
+      "negative"
+    ],
+    "title_en": "〜だらけ — full of; covered with; lots of (negative nuance)",
+    "title_id": "full of; covered with; lots of (negative nuance)",
+    "simpleExplanation_en": "full of; covered with; lots of (negative nuance)",
+    "simpleExplanation_id": "penuh dengan; ditutupi dengan; banyak (nuansa negatif)",
+    "usage_en": "〜だらけ: Noun + だらけ",
+    "usage_id": "〜だらけ: Kata benda + だらけ"
+  },
+  {
+    "id": "ja_gram_n1_10",
+    "language": "ja",
+    "title": "〜たら最後",
+    "pattern": "〜たら最後",
+    "level": 5,
+    "examMappings": {
+      "jlpt": "N1"
+    },
+    "difficulty": 5,
+    "simpleExplanation": "once ... it's all over; the moment ...",
+    "usage": "〜たら最後: Verb-ta + ら最後",
+    "examples": [
+      {
+        "text": "彼に黙っていると言ったら最後、誰にも言うだろう。",
+        "romanization": "Karenidamatsuteirutoittarasaigo,darenimoiudarou.",
+        "translation": "Once you tell him to keep quiet, it's over — he'll tell everyone.",
+        "translation_en": "Once you tell him to keep quiet, it's over — he'll tell everyone.",
+        "translation_id": "Begitu Anda menyuruhnya diam, semuanya berakhir — dia akan memberi tahu semua orang."
+      },
+      {
+        "text": "あの店に入ったら最後、何時間も出てこない。",
+        "romanization": "Anomiseniitsutsutarasaigo,nanjikanmodetekonai.",
+        "translation": "Once she enters that shop, she won't come out for hours.",
+        "translation_en": "Once she enters that shop, she won't come out for hours.",
+        "translation_id": "Begitu dia memasuki toko itu, dia tidak akan keluar selama berjam-jam."
+      }
+    ],
+    "category": "grammar",
+    "tags": [
+      "irreversible",
+      "emphasis"
+    ],
+    "title_en": "〜たら最後 — once ... it's all over; the moment ...",
+    "title_id": "once ... it's all over; the moment ...",
+    "simpleExplanation_en": "once ... it's all over; the moment ...",
+    "simpleExplanation_id": "sekali... semuanya berakhir; saat ini ...",
+    "usage_en": "〜たら最後: Verb-ta + ら最後",
+    "usage_id": "〜たら最後: Kata Kerja-ta + ら最後"
+  },
+  {
+    "id": "ja_gram_n1_11",
+    "language": "ja",
+    "title": "〜た末",
+    "pattern": "〜た末",
+    "level": 5,
+    "examMappings": {
+      "jlpt": "N1"
+    },
+    "difficulty": 5,
+    "simpleExplanation": "after all; in the end; as a result of",
+    "usage": "〜た末: Verb-ta + 末（に/の）",
+    "examples": [
+      {
+        "text": "長い議論の末、結論が出た。",
+        "romanization": "Nagaigironnomatsu,ketsurongadeta.",
+        "translation": "After a long discussion, a conclusion was reached.",
+        "translation_en": "After a long discussion, a conclusion was reached.",
+        "translation_id": "Setelah diskusi panjang, sebuah kesimpulan tercapai."
+      },
+      {
+        "text": "試行錯誤の末、成功した。",
+        "romanization": "Shikousakugonomatsu,seikoushita.",
+        "translation": "After trial and error, we succeeded.",
+        "translation_en": "After trial and error, we succeeded.",
+        "translation_id": "Setelah trial and error, kami berhasil."
+      }
+    ],
+    "category": "grammar",
+    "tags": [
+      "result",
+      "process"
+    ],
+    "title_en": "〜た末 — after all; in the end; as a result of",
+    "title_id": "after all; in the end; as a result of",
+    "simpleExplanation_en": "after all; in the end; as a result of",
+    "simpleExplanation_id": "bagaimanapun; pada akhirnya; sebagai akibat dari",
+    "usage_en": "〜た末: Verb-ta + 末（に/の）",
+    "usage_id": "〜た末: Kata Kerja-ta + 末（に/の）"
+  },
+  {
+    "id": "ja_gram_n1_12",
+    "language": "ja",
+    "title": "〜てからというもの",
+    "pattern": "〜てからというもの",
+    "level": 5,
+    "examMappings": {
+      "jlpt": "N1"
+    },
+    "difficulty": 5,
+    "simpleExplanation": "ever since; from the time that",
+    "usage": "〜てからというもの: Verb-te + からというもの",
+    "examples": [
+      {
+        "text": "日本に来てからというもの、毎日忙しい。",
+        "romanization": "Nipponnikitekaratoiumono,mainichiisogashii.",
+        "translation": "Ever since I came to Japan, I've been busy every day.",
+        "translation_en": "Ever since I came to Japan, I've been busy every day.",
+        "translation_id": "Sejak saya datang ke Jepang, saya sibuk setiap hari."
+      },
+      {
+        "text": "彼女に出会ってからというもの、人生が変わった。",
+        "romanization": "Kanojonideatsutekaratoiumono,jinseigakawatta.",
+        "translation": "Ever since I met her, my life has changed.",
+        "translation_en": "Ever since I met her, my life has changed.",
+        "translation_id": "Semenjak aku bertemu dengannya, hidupku berubah."
+      }
+    ],
+    "category": "grammar",
+    "tags": [
+      "since",
+      "change"
+    ],
+    "title_en": "〜てからというもの — ever since; from the time that",
+    "title_id": "ever since; from the time that",
+    "simpleExplanation_en": "ever since; from the time that",
+    "simpleExplanation_id": "sejak; sejak saat itu",
+    "usage_en": "〜てからというもの: Verb-te + からというもの",
+    "usage_id": "〜てからというもの: Kata kerja-te + からというもの"
+  },
+  {
+    "id": "ja_gram_n1_13",
+    "language": "ja",
+    "title": "〜てやまない",
+    "pattern": "〜てやまない",
+    "level": 5,
+    "examMappings": {
+      "jlpt": "N1"
+    },
+    "difficulty": 5,
+    "simpleExplanation": "cannot stop doing; do nothing but",
+    "usage": "〜てやまない: Verb-te + やまない",
+    "examples": [
+      {
+        "text": "子供の将来を案じてやまない。",
+        "romanization": "Kodomonoshouraiwoanjiteyamanai.",
+        "translation": "I can't stop worrying about my child's future.",
+        "translation_en": "I can't stop worrying about my child's future.",
+        "translation_id": "Saya tidak bisa berhenti mengkhawatirkan masa depan anak saya."
+      },
+      {
+        "text": "彼の成功を願ってやまない。",
+        "romanization": "Kanoseikouwonegatsuteyamanai.",
+        "translation": "I sincerely wish for his success.",
+        "translation_en": "I sincerely wish for his success.",
+        "translation_id": "Saya dengan tulus mendoakan kesuksesannya."
+      }
+    ],
+    "category": "grammar",
+    "tags": [
+      "emotion",
+      "continuity"
+    ],
+    "title_en": "〜てやまない — cannot stop doing; do nothing but",
+    "title_id": "cannot stop doing; do nothing but",
+    "simpleExplanation_en": "cannot stop doing; do nothing but",
+    "simpleExplanation_id": "tidak bisa berhenti melakukan; tidak melakukan apa pun kecuali",
+    "usage_en": "〜てやまない: Verb-te + やまない",
+    "usage_id": "〜てやまない: Kata Kerja-te + やまない"
+  },
+  {
+    "id": "ja_gram_n1_14",
+    "language": "ja",
+    "title": "〜ともなると",
+    "pattern": "〜ともなると",
+    "level": 5,
+    "examMappings": {
+      "jlpt": "N1"
+    },
+    "difficulty": 5,
+    "simpleExplanation": "when it comes to; now that",
+    "usage": "〜ともなると: Verb-plain / Noun + ともなると",
+    "examples": [
+      {
+        "text": "家族旅行ともなると、準備が大変だ。",
+        "romanization": "Kazokuryokoutomonaruto,junbigataihenda.",
+        "translation": "When it comes to a family trip, the preparations are tough.",
+        "translation_en": "When it comes to a family trip, the preparations are tough.",
+        "translation_id": "Kalau mau jalan-jalan bersama keluarga, persiapannya memang berat."
+      },
+      {
+        "text": "社長ともなると、責任が重い。",
+        "romanization": "Shachoutomonaruto,sekiningaomoi.",
+        "translation": "Once you become president, the responsibility is heavy.",
+        "translation_en": "Once you become president, the responsibility is heavy.",
+        "translation_id": "Begitu Anda menjadi presiden, tanggung jawabnya berat."
+      }
+    ],
+    "category": "grammar",
+    "tags": [
+      "condition",
+      "emphasis"
+    ],
+    "title_en": "〜ともなると — when it comes to; now that",
+    "title_id": "when it comes to; now that",
+    "simpleExplanation_en": "when it comes to; now that",
+    "simpleExplanation_id": "ketika menyangkut; sekarang itu",
+    "usage_en": "〜ともなると: Verb-plain / Noun + ともなると",
+    "usage_id": "〜ともなると: Kata Kerja-biasa / Kata Benda + ともなると"
+  },
+  {
+    "id": "ja_gram_n1_15",
+    "language": "ja",
+    "title": "〜と相まって",
+    "pattern": "〜と相まって",
+    "level": 5,
+    "examMappings": {
+      "jlpt": "N1"
+    },
+    "difficulty": 5,
+    "simpleExplanation": "combined with; together with",
+    "usage": "〜と相まって: Noun + と相まって",
+    "examples": [
+      {
+        "text": "好天に恵まれたことと相まって、大会は大成功だった。",
+        "romanization": "Koutennimegumaretakototosoumatte,taikaihadaiseikoudatta.",
+        "translation": "Combined with the good weather, the event was a great success.",
+        "translation_en": "Combined with the good weather, the event was a great success.",
+        "translation_id": "Dikombinasikan dengan cuaca yang bagus, acara ini sukses besar."
+      },
+      {
+        "text": "新技術の導入と相まって、生産性が向上した。",
+        "romanization": "Shingijutsunodounyuutosoumatte,seisanseigakoujoushita.",
+        "translation": "Together with the introduction of new technology, productivity improved.",
+        "translation_en": "Together with the introduction of new technology, productivity improved.",
+        "translation_id": "Seiring dengan diperkenalkannya teknologi baru, produktivitas meningkat."
+      }
+    ],
+    "category": "grammar",
+    "tags": [
+      "combination",
+      "formal"
+    ],
+    "title_en": "〜と相まって — combined with; together with",
+    "title_id": "combined with; together with",
+    "simpleExplanation_en": "combined with; together with",
+    "simpleExplanation_id": "dikombinasikan dengan; bersama",
+    "usage_en": "〜と相まって: Noun + と相まって",
+    "usage_id": "〜と相まって: Kata benda + と相まって"
+  },
+  {
+    "id": "ja_gram_n1_16",
+    "language": "ja",
+    "title": "〜ならでは",
+    "pattern": "〜ならでは",
+    "level": 5,
+    "examMappings": {
+      "jlpt": "N1"
+    },
+    "difficulty": 5,
+    "simpleExplanation": "unique to; only possible for; characteristic of",
+    "usage": "〜ならでは: Noun + ならでは",
+    "examples": [
+      {
+        "text": "京都ならではの風景だ。",
+        "romanization": "Kyoutonaradehanofuukeida.",
+        "translation": "This is a scenery unique to Kyoto.",
+        "translation_en": "This is a scenery unique to Kyoto.",
+        "translation_id": "Ini adalah pemandangan unik di Kyoto."
+      },
+      {
+        "text": "プロならではの技術だ。",
+        "romanization": "Puronaradehanogijutsuda.",
+        "translation": "This is a technique only a professional can pull off.",
+        "translation_en": "This is a technique only a professional can pull off.",
+        "translation_id": "Ini adalah teknik yang hanya bisa dilakukan oleh seorang profesional."
+      }
+    ],
+    "category": "grammar",
+    "tags": [
+      "uniqueness"
+    ],
+    "title_en": "〜ならでは — unique to; only possible for; characteristic of",
+    "title_id": "unique to; only possible for; characteristic of",
+    "simpleExplanation_en": "unique to; only possible for; characteristic of",
+    "simpleExplanation_id": "unik untuk; hanya mungkin untuk; karakteristik dari",
+    "usage_en": "〜ならでは: Noun + ならでは",
+    "usage_id": "〜ならでは: Kata Benda + ならでは"
+  },
+  {
+    "id": "ja_gram_n1_17",
+    "language": "ja",
+    "title": "〜べく",
+    "pattern": "〜べく",
+    "level": 5,
+    "examMappings": {
+      "jlpt": "N1"
+    },
+    "difficulty": 5,
+    "simpleExplanation": "in order to; for the purpose of (formal)",
+    "usage": "〜べく: Verb-stem + べく",
+    "examples": [
+      {
+        "text": "成功を目指すべく、日夜努力している。",
+        "romanization": "Seikouwomezasubeku,nichiyadoryokushiteiru.",
+        "translation": "I strive day and night in order to achieve success.",
+        "translation_en": "I strive day and night in order to achieve success.",
+        "translation_id": "Saya berusaha siang dan malam untuk mencapai kesuksesan."
+      },
+      {
+        "text": "問題を解決すべく、会議を開いた。",
+        "romanization": "Mondaiwokaiketsusubeku,kaigiwohiraita.",
+        "translation": "We held a meeting in order to solve the problem.",
+        "translation_en": "We held a meeting in order to solve the problem.",
+        "translation_id": "Kami mengadakan pertemuan untuk menyelesaikan masalah tersebut."
+      }
+    ],
+    "category": "grammar",
+    "tags": [
+      "purpose",
+      "formal"
+    ],
+    "title_en": "〜べく — in order to; for the purpose of (formal)",
+    "title_id": "in order to; for the purpose of (formal)",
+    "simpleExplanation_en": "in order to; for the purpose of (formal)",
+    "simpleExplanation_id": "untuk; untuk tujuan (resmi)",
+    "usage_en": "〜べく: Verb-stem + べく",
+    "usage_id": "〜べく: Batang kata kerja + べく"
+  },
+  {
+    "id": "ja_gram_n1_18",
+    "language": "ja",
+    "title": "〜まい",
+    "pattern": "〜まい",
+    "level": 5,
+    "examMappings": {
+      "jlpt": "N1"
+    },
+    "difficulty": 5,
+    "simpleExplanation": "will not; let's not; probably not",
+    "usage": "〜まい: Verb-stem + まい",
+    "examples": [
+      {
+        "text": "あんな失敗は二度とするまい。",
+        "romanization": "Annashippaihanidotosurumai.",
+        "translation": "I will never make such a mistake again.",
+        "translation_en": "I will never make such a mistake again.",
+        "translation_id": "Saya tidak akan pernah melakukan kesalahan seperti itu lagi."
+      },
+      {
+        "text": "彼は来るまい。",
+        "romanization": "Karehakurumai.",
+        "translation": "He probably won't come.",
+        "translation_en": "He probably won't come.",
+        "translation_id": "Dia mungkin tidak akan datang."
+      }
+    ],
+    "category": "grammar",
+    "tags": [
+      "negative-volition",
+      "prediction"
+    ],
+    "title_en": "〜まい — will not; let's not; probably not",
+    "title_id": "will not; let's not; probably not",
+    "simpleExplanation_en": "will not; let's not; probably not",
+    "simpleExplanation_id": "tidak akan; jangan; mungkin tidak",
+    "usage_en": "〜まい: Verb-stem + まい",
+    "usage_id": "〜まい: Batang kata kerja + まい"
+  },
+  {
+    "id": "ja_gram_n1_19",
+    "language": "ja",
+    "title": "〜ものなら",
+    "pattern": "〜ものなら",
+    "level": 5,
+    "examMappings": {
+      "jlpt": "N1"
+    },
+    "difficulty": 5,
+    "simpleExplanation": "if one could; if only; if you think you can",
+    "usage": "〜ものなら: Verb-potential + ものなら",
+    "examples": [
+      {
+        "text": "できるものなら、やってみろ。",
+        "romanization": "Dekirumononara,yattemiro.",
+        "translation": "If you think you can do it, go ahead and try.",
+        "translation_en": "If you think you can do it, go ahead and try.",
+        "translation_id": "Jika Anda merasa bisa melakukannya, silakan dan coba."
+      },
+      {
+        "text": "戻れるものなら、戻りたい。",
+        "romanization": "Modorerumononara,modoritai.",
+        "translation": "If only I could go back, I would.",
+        "translation_en": "If only I could go back, I would.",
+        "translation_id": "Kalau saja aku bisa kembali, aku akan melakukannya."
+      }
+    ],
+    "category": "grammar",
+    "tags": [
+      "hypothetical",
+      "challenge"
+    ],
+    "title_en": "〜ものなら — if one could; if only; if you think you can",
+    "title_id": "if one could; if only; if you think you can",
+    "simpleExplanation_en": "if one could; if only; if you think you can",
+    "simpleExplanation_id": "jika ada yang bisa; jika saja; jika kamu pikir kamu bisa",
+    "usage_en": "〜ものなら: Verb-potential + ものなら",
+    "usage_id": "〜ものなら: Potensi kata kerja + ものなら"
+  },
+  {
+    "id": "ja_gram_n1_20",
+    "language": "ja",
+    "title": "〜ようによっては",
+    "pattern": "〜ようによっては",
+    "level": 5,
+    "examMappings": {
+      "jlpt": "N1"
+    },
+    "difficulty": 5,
+    "simpleExplanation": "depending on how; depending on the way",
+    "usage": "〜ようによっては: Verb-stem + ようによっては",
+    "examples": [
+      {
+        "text": "使いようによっては、この道具は便利だ。",
+        "romanization": "Tsukaiyouniyotteha,konodouguhabenrida.",
+        "translation": "Depending on how you use it, this tool is convenient.",
+        "translation_en": "Depending on how you use it, this tool is convenient.",
+        "translation_id": "Tergantung pada bagaimana Anda menggunakannya, alat ini nyaman digunakan."
+      },
+      {
+        "text": "考えようによっては、彼も正しい。",
+        "romanization": "Kangaeyouniyotteha,karemotadashii.",
+        "translation": "Depending on how you think about it, he is also right.",
+        "translation_en": "Depending on how you think about it, he is also right.",
+        "translation_id": "Tergantung bagaimana Anda memikirkannya, dia juga benar."
+      }
+    ],
+    "category": "grammar",
+    "tags": [
+      "condition",
+      "perspective"
+    ],
+    "title_en": "〜ようによっては — depending on how; depending on the way",
+    "title_id": "depending on how; depending on the way",
+    "simpleExplanation_en": "depending on how; depending on the way",
+    "simpleExplanation_id": "tergantung caranya; tergantung jalannya",
+    "usage_en": "〜ようによっては: Verb-stem + ようによっては",
+    "usage_id": "〜ようによっては: Batang kata kerja + ようによっては"
+  }
+]

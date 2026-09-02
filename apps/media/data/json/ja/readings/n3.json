@@ -1,1 +1,230 @@
-[]
+[
+  {
+    "id": "r-ja-n3-society",
+    "title": "しゃかい — Society",
+    "type": "story",
+    "level": 3,
+    "examMappings": {
+      "jlpt": "N3"
+    },
+    "wordCount": 80,
+    "summary": "A society reading for JLPT N3 practice.",
+    "summary_en": "A society reading for JLPT N3 practice.",
+    "summary_id": "A society reading for JLPT N3 practice.",
+    "paragraphs": [
+      {
+        "text": "毎日復習することだ。",
+        "romanization": "Mainichifukushuusurukotoda.",
+        "translation": "You should review every day.",
+        "translation_en": "You should review every day.",
+        "translation_id": "Anda harus meninjaunya setiap hari."
+      },
+      {
+        "text": "元気そうに見せる。",
+        "romanization": "Genkisounimiseru.",
+        "translation": "I act as if I am healthy.",
+        "translation_en": "I act as if I am healthy.",
+        "translation_id": "Saya bertindak seolah-olah saya sehat."
+      },
+      {
+        "text": "この本は有名な作家によって書かれた。",
+        "romanization": "Konohonhayuumeinasakkaniyottekakareta.",
+        "translation": "This book was written by a famous author.",
+        "translation_en": "This book was written by a famous author.",
+        "translation_id": "Buku ini ditulis oleh seorang penulis terkenal."
+      },
+      {
+        "text": "兄は背が高いのに対して、弟は低い。",
+        "romanization": "Anihasegatakainonitaishite,otoutohahikui.",
+        "translation": "The older brother is tall, whereas the younger brother is short.",
+        "translation_en": "The older brother is tall, whereas the younger brother is short.",
+        "translation_id": "Kakak laki-lakinya tinggi, sedangkan adiknya pendek."
+      },
+      {
+        "text": "子供のころはよく遊んだものだ。",
+        "romanization": "Kodomonokorohayokuasondamonoda.",
+        "translation": "I used to play a lot as a child.",
+        "translation_en": "I used to play a lot as a child.",
+        "translation_id": "Saya dulu sering bermain sebagai seorang anak."
+      },
+      {
+        "text": "分かるように説明する。",
+        "romanization": "Wakaruyounisetsumeisuru.",
+        "translation": "Explain so that it is understood.",
+        "translation_en": "Explain so that it is understood.",
+        "translation_id": "Jelaskan agar dapat dipahami."
+      }
+    ]
+  },
+  {
+    "id": "r-ja-n3-culture",
+    "title": "ぶんか — Culture",
+    "type": "story",
+    "level": 3,
+    "examMappings": {
+      "jlpt": "N3"
+    },
+    "wordCount": 82,
+    "summary": "A culture reading for JLPT N3 practice.",
+    "summary_en": "A culture reading for JLPT N3 practice.",
+    "summary_id": "A culture reading for JLPT N3 practice.",
+    "paragraphs": [
+      {
+        "text": "心配することはない。",
+        "romanization": "Shinpaisurukotohanai.",
+        "translation": "There is no need to worry.",
+        "translation_en": "There is no need to worry.",
+        "translation_id": "Tidak perlu khawatir."
+      },
+      {
+        "text": "電話したところ、彼は出かけていた。",
+        "romanization": "Denwashitatokoro,karehadekaketeita.",
+        "translation": "When I called, he had just gone out.",
+        "translation_en": "When I called, he had just gone out.",
+        "translation_id": "Ketika saya menelepon, dia baru saja keluar."
+      },
+      {
+        "text": "天気予報によると、明日は雨だ。",
+        "romanization": "Tenkiyohouniyoruto,ashitahaameda.",
+        "translation": "According to the weather forecast, it will rain tomorrow.",
+        "translation_en": "According to the weather forecast, it will rain tomorrow.",
+        "translation_id": "Menurut ramalan cuaca, besok akan turun hujan."
+      },
+      {
+        "text": "彼は文句を言うばかりだ。",
+        "romanization": "Karehamonkuwoiubakarida.",
+        "translation": "He does nothing but complain.",
+        "translation_en": "He does nothing but complain.",
+        "translation_id": "Dia tidak melakukan apa pun selain mengeluh."
+      },
+      {
+        "text": "人の悪口を言うものではない。",
+        "romanization": "Ninnowarukuchiwoiumonodehanai.",
+        "translation": "You shouldn't speak ill of others.",
+        "translation_en": "You shouldn't speak ill of others.",
+        "translation_id": "Anda tidak boleh berbicara buruk tentang orang lain."
+      },
+      {
+        "text": "早く寝るようにしてください。",
+        "romanization": "Hayakuneruyounishitekudasai.",
+        "translation": "Please try to go to bed early.",
+        "translation_en": "Please try to go to bed early.",
+        "translation_id": "Silakan mencoba untuk tidur lebih awal."
+      }
+    ]
+  },
+  {
+    "id": "r-ja-n3-technology",
+    "title": "ぎじゅつ — Technology",
+    "type": "story",
+    "level": 3,
+    "examMappings": {
+      "jlpt": "N3"
+    },
+    "wordCount": 80,
+    "summary": "A technology reading for JLPT N3 practice.",
+    "summary_en": "A technology reading for JLPT N3 practice.",
+    "summary_id": "A technology reading for JLPT N3 practice.",
+    "paragraphs": [
+      {
+        "text": "健康のために運動することだ。",
+        "romanization": "Kenkounotameniundousurukotoda.",
+        "translation": "You should exercise for your health.",
+        "translation_en": "You should exercise for your health.",
+        "translation_id": "Anda harus berolahraga untuk kesehatan Anda."
+      },
+      {
+        "text": "今、出かけるところです。",
+        "romanization": "Ima,dekakerutokorodesu.",
+        "translation": "I am about to go out now.",
+        "translation_en": "I am about to go out now.",
+        "translation_id": "Saya akan keluar sekarang."
+      },
+      {
+        "text": "人によって意見が違う。",
+        "romanization": "Ninniyotteikengachigau.",
+        "translation": "Opinions differ depending on the person.",
+        "translation_en": "Opinions differ depending on the person.",
+        "translation_id": "Pendapat berbeda-beda tergantung orangnya."
+      },
+      {
+        "text": "毎日ゲームをしているばかりだ。",
+        "romanization": "Mainichigeemuwoshiteirubakarida.",
+        "translation": "I do nothing but play games every day.",
+        "translation_en": "I do nothing but play games every day.",
+        "translation_id": "Saya tidak melakukan apa pun selain bermain game setiap hari."
+      },
+      {
+        "text": "人は誰でも間違うものだ。",
+        "romanization": "Ninhadaredemomachigaumonoda.",
+        "translation": "Everyone makes mistakes.",
+        "translation_en": "Everyone makes mistakes.",
+        "translation_id": "Setiap orang membuat kesalahan."
+      },
+      {
+        "text": "毎日日本語を話すようにしている。",
+        "romanization": "Mainichinihongowohanasuyounishiteiru.",
+        "translation": "I make sure to speak Japanese every day.",
+        "translation_en": "I make sure to speak Japanese every day.",
+        "translation_id": "Saya pastikan untuk berbicara bahasa Jepang setiap hari."
+      }
+    ]
+  },
+  {
+    "id": "r-ja-n3-environment",
+    "title": "かんきょう — Environment",
+    "type": "story",
+    "level": 3,
+    "examMappings": {
+      "jlpt": "N3"
+    },
+    "wordCount": 82,
+    "summary": "A environment reading for JLPT N3 practice.",
+    "summary_en": "A environment reading for JLPT N3 practice.",
+    "summary_id": "A environment reading for JLPT N3 practice.",
+    "paragraphs": [
+      {
+        "text": "そんなことはない。",
+        "romanization": "Sonnakotohanai.",
+        "translation": "That's not true.",
+        "translation_en": "That's not true.",
+        "translation_id": "Itu tidak benar."
+      },
+      {
+        "text": "環境について話す。",
+        "romanization": "Kankyounitsuitehanasu.",
+        "translation": "Talk about the environment.",
+        "translation_en": "Talk about the environment.",
+        "translation_id": "Bicara tentang lingkungan."
+      },
+      {
+        "text": "先生によると、試験は難しいらしい。",
+        "romanization": "Senseiniyoruto,shikenhamuzukashiirashii.",
+        "translation": "According to the teacher, the exam seems difficult.",
+        "translation_en": "According to the teacher, the exam seems difficult.",
+        "translation_id": "Menurut guru, ujiannya sepertinya sulit."
+      },
+      {
+        "text": "彼女は頭がいいばかりでなく、優しい。",
+        "romanization": "Kanojohaatamagaiibakaridenaku,yasashii.",
+        "translation": "She is not only smart but also kind.",
+        "translation_en": "She is not only smart but also kind.",
+        "translation_id": "Dia tidak hanya pintar tetapi juga baik hati."
+      },
+      {
+        "text": "嘘をつくものではない。",
+        "romanization": "Usowotsukumonodehanai.",
+        "translation": "You shouldn't lie.",
+        "translation_en": "You shouldn't lie.",
+        "translation_id": "Anda tidak harus berbohong."
+      },
+      {
+        "text": "毎日練習したら、泳げるようになった。",
+        "romanization": "Mainichirenshuushitara,oyogeruyouninatta.",
+        "translation": "After practicing every day, I became able to swim.",
+        "translation_en": "After practicing every day, I became able to swim.",
+        "translation_id": "Setelah berlatih setiap hari, saya bisa berenang."
+      }
+    ]
+  }
+]

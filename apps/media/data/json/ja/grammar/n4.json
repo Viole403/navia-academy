@@ -1,1 +1,792 @@
-[]
+[
+  {
+    "id": "ja_gram_n4_01",
+    "language": "ja",
+    "title": "〜ことにする",
+    "pattern": "〜ことにする",
+    "level": 2,
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "difficulty": 2,
+    "simpleExplanation": "decide to do",
+    "usage": "〜ことにする: Verb-plain + ことにする",
+    "examples": [
+      {
+        "text": "毎日運動することにした。",
+        "romanization": "Mainichiundousurukotonishita.",
+        "translation": "I decided to exercise every day.",
+        "translation_en": "I decided to exercise every day.",
+        "translation_id": "Saya memutuskan untuk berolahraga setiap hari."
+      },
+      {
+        "text": "明日から禁煙することにします。",
+        "romanization": "Ashitakarakin'ensurukotonishimasu.",
+        "translation": "I will decide to quit smoking from tomorrow.",
+        "translation_en": "I will decide to quit smoking from tomorrow.",
+        "translation_id": "Saya akan memutuskan untuk berhenti merokok mulai besok."
+      }
+    ],
+    "category": "grammar",
+    "tags": [
+      "decision"
+    ],
+    "title_en": "〜ことにする — decide to do",
+    "title_id": "decide to do",
+    "simpleExplanation_en": "decide to do",
+    "simpleExplanation_id": "memutuskan untuk melakukan",
+    "usage_en": "〜ことにする: Verb-plain + ことにする",
+    "usage_id": "〜ことにする: Kata kerja-polos + ことにする"
+  },
+  {
+    "id": "ja_gram_n4_02",
+    "language": "ja",
+    "title": "〜ずに",
+    "pattern": "〜ずに",
+    "level": 2,
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "difficulty": 2,
+    "simpleExplanation": "without doing",
+    "usage": "〜ずに: Verb-negative (ない) + ずに",
+    "examples": [
+      {
+        "text": "朝ご飯を食べずに出かけた。",
+        "romanization": "Asagomeshiwotabezunidekaketa.",
+        "translation": "I went out without eating breakfast.",
+        "translation_en": "I went out without eating breakfast.",
+        "translation_id": "Saya keluar tanpa sarapan."
+      },
+      {
+        "text": "何も言わずに帰った。",
+        "romanization": "Nanimoiwazunikaetsuta.",
+        "translation": "I went home without saying anything.",
+        "translation_en": "I went home without saying anything.",
+        "translation_id": "Aku pulang ke rumah tanpa berkata apa-apa."
+      }
+    ],
+    "category": "grammar",
+    "tags": [
+      "negative",
+      "condition"
+    ],
+    "title_en": "〜ずに — without doing",
+    "title_id": "without doing",
+    "simpleExplanation_en": "without doing",
+    "simpleExplanation_id": "tanpa melakukan",
+    "usage_en": "〜ずに: Verb-negative (ない) + ずに",
+    "usage_id": "〜ずに: Kata kerja-negatif (ない) + ずに"
+  },
+  {
+    "id": "ja_gram_n4_03",
+    "language": "ja",
+    "title": "〜そうだ（appearance）",
+    "pattern": "〜そうだ（appearance）",
+    "level": 2,
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "difficulty": 2,
+    "simpleExplanation": "looks like; appears that",
+    "usage": "〜そうだ（appearance）: Verb-stem / i-adjective stem + そうだ",
+    "examples": [
+      {
+        "text": "このケーキはおいしそうだ。",
+        "romanization": "Konokeekihaoishisouda.",
+        "translation": "This cake looks delicious.",
+        "translation_en": "This cake looks delicious.",
+        "translation_id": "Kue ini kelihatannya enak."
+      },
+      {
+        "text": "雨が降りそうです。",
+        "romanization": "Amegaorisoudesu.",
+        "translation": "It looks like it will rain.",
+        "translation_en": "It looks like it will rain.",
+        "translation_id": "Sepertinya akan turun hujan."
+      }
+    ],
+    "category": "grammar",
+    "tags": [
+      "appearance"
+    ],
+    "title_en": "〜そうだ（appearance） — looks like; appears that",
+    "title_id": "looks like; appears that",
+    "simpleExplanation_en": "looks like; appears that",
+    "simpleExplanation_id": "sepertinya; muncul itu",
+    "usage_en": "〜そうだ（appearance）: Verb-stem / i-adjective stem + そうだ",
+    "usage_id": "〜そうだ（penampakan）: Batang kata kerja / kata sifat ke-i + そうだ"
+  },
+  {
+    "id": "ja_gram_n4_04",
+    "language": "ja",
+    "title": "〜つもり",
+    "pattern": "〜つもり",
+    "level": 2,
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "difficulty": 2,
+    "simpleExplanation": "intend to; plan to",
+    "usage": "〜つもり: Verb-plain + つもり",
+    "examples": [
+      {
+        "text": "来年、日本に留学するつもりだ。",
+        "romanization": "Rainen,nipponniryuugakusurutsumorida.",
+        "translation": "I intend to study abroad in Japan next year.",
+        "translation_en": "I intend to study abroad in Japan next year.",
+        "translation_id": "Saya berniat untuk belajar di luar negeri di Jepang tahun depan."
+      },
+      {
+        "text": "今度の週末は何もするつもりはない。",
+        "romanization": "Kondonoshuumatsuhananimosurutsumorihanai.",
+        "translation": "I don't plan to do anything this weekend.",
+        "translation_en": "I don't plan to do anything this weekend.",
+        "translation_id": "Saya tidak berencana melakukan apa pun akhir pekan ini."
+      }
+    ],
+    "category": "grammar",
+    "tags": [
+      "intention"
+    ],
+    "title_en": "〜つもり — intend to; plan to",
+    "title_id": "intend to; plan to",
+    "simpleExplanation_en": "intend to; plan to",
+    "simpleExplanation_id": "berniat untuk; berencana untuk",
+    "usage_en": "〜つもり: Verb-plain + つもり",
+    "usage_id": "〜つもり: Kata kerja-polos + つもり"
+  },
+  {
+    "id": "ja_gram_n4_05",
+    "language": "ja",
+    "title": "〜てあげる",
+    "pattern": "〜てあげる",
+    "level": 2,
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "difficulty": 2,
+    "simpleExplanation": "do something for someone (outward)",
+    "usage": "〜てあげる: Verb-te + あげる",
+    "examples": [
+      {
+        "text": "友達に本を貸してあげた。",
+        "romanization": "Tomodachinihonwokashiteageta.",
+        "translation": "I lent a book to my friend.",
+        "translation_en": "I lent a book to my friend.",
+        "translation_id": "Saya meminjamkan sebuah buku kepada teman saya."
+      },
+      {
+        "text": "母に花を買ってあげます。",
+        "romanization": "Hahanihanawokatsuteagemasu.",
+        "translation": "I will buy flowers for my mother.",
+        "translation_en": "I will buy flowers for my mother.",
+        "translation_id": "Saya akan membeli bunga untuk ibu saya."
+      }
+    ],
+    "category": "grammar",
+    "tags": [
+      "giving",
+      "favor"
+    ],
+    "title_en": "〜てあげる — do something for someone (outward)",
+    "title_id": "do something for someone (outward)",
+    "simpleExplanation_en": "do something for someone (outward)",
+    "simpleExplanation_id": "melakukan sesuatu untuk seseorang (luar)",
+    "usage_en": "〜てあげる: Verb-te + あげる",
+    "usage_id": "〜てあげる: Kata kerja-te + あげる"
+  },
+  {
+    "id": "ja_gram_n4_06",
+    "language": "ja",
+    "title": "〜ていく",
+    "pattern": "〜ていく",
+    "level": 2,
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "difficulty": 2,
+    "simpleExplanation": "go and do; do something and go away; continue",
+    "usage": "〜ていく: Verb-te + いく",
+    "examples": [
+      {
+        "text": "明日、荷物を持っていきます。",
+        "romanization": "Ashita,nimotsuwomotsuteikimasu.",
+        "translation": "I will take the luggage with me tomorrow.",
+        "translation_en": "I will take the luggage with me tomorrow.",
+        "translation_id": "Saya akan membawa barang bawaan saya besok."
+      },
+      {
+        "text": "これからも頑張っていく。",
+        "romanization": "Korekaramoganbatsuteiku.",
+        "translation": "I will keep doing my best from now on.",
+        "translation_en": "I will keep doing my best from now on.",
+        "translation_id": "Saya akan terus melakukan yang terbaik mulai sekarang."
+      }
+    ],
+    "category": "grammar",
+    "tags": [
+      "direction",
+      "continuation"
+    ],
+    "title_en": "〜ていく — go and do; do something and go away; continue",
+    "title_id": "go and do; do something and go away; continue",
+    "simpleExplanation_en": "go and do; do something and go away; continue",
+    "simpleExplanation_id": "pergi dan lakukan; lakukan sesuatu dan pergi; melanjutkan",
+    "usage_en": "〜ていく: Verb-te + いく",
+    "usage_id": "〜ていく: Kata Kerja-te + いく"
+  },
+  {
+    "id": "ja_gram_n4_07",
+    "language": "ja",
+    "title": "〜ておく",
+    "pattern": "〜ておく",
+    "level": 2,
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "difficulty": 2,
+    "simpleExplanation": "do something in advance; leave something in a state",
+    "usage": "〜ておく: Verb-te + おく",
+    "examples": [
+      {
+        "text": "明日の朝のために水を出しておく。",
+        "romanization": "Ashitanoasanotamenimizuwodashiteoku.",
+        "translation": "I will put out water for tomorrow morning.",
+        "translation_en": "I will put out water for tomorrow morning.",
+        "translation_id": "Saya akan mengeluarkan air untuk besok pagi."
+      },
+      {
+        "text": "ドアを開けておいてください。",
+        "romanization": "Doawohiraketeoitekudasai.",
+        "translation": "Please leave the door open.",
+        "translation_en": "Please leave the door open.",
+        "translation_id": "Silakan biarkan pintunya terbuka."
+      }
+    ],
+    "category": "grammar",
+    "tags": [
+      "preparation"
+    ],
+    "title_en": "〜ておく — do something in advance; leave something in a state",
+    "title_id": "do something in advance; leave something in a state",
+    "simpleExplanation_en": "do something in advance; leave something in a state",
+    "simpleExplanation_id": "lakukan sesuatu sebelumnya; meninggalkan sesuatu dalam keadaan",
+    "usage_en": "〜ておく: Verb-te + おく",
+    "usage_id": "〜ておく: Kata kerja-te + おく"
+  },
+  {
+    "id": "ja_gram_n4_08",
+    "language": "ja",
+    "title": "〜てくる",
+    "pattern": "〜てくる",
+    "level": 2,
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "difficulty": 2,
+    "simpleExplanation": "come and do; do something and come back; start to",
+    "usage": "〜てくる: Verb-te + くる",
+    "examples": [
+      {
+        "text": "すぐ戻ってきます。",
+        "romanization": "Sugumodotsutekimasu.",
+        "translation": "I will come right back.",
+        "translation_en": "I will come right back.",
+        "translation_id": "Saya akan segera kembali."
+      },
+      {
+        "text": "雨が降ってきた。",
+        "romanization": "Amegafutsutekita.",
+        "translation": "It started to rain.",
+        "translation_en": "It started to rain.",
+        "translation_id": "Hujan mulai turun."
+      }
+    ],
+    "category": "grammar",
+    "tags": [
+      "direction",
+      "beginning"
+    ],
+    "title_en": "〜てくる — come and do; do something and come back; start to",
+    "title_id": "come and do; do something and come back; start to",
+    "simpleExplanation_en": "come and do; do something and come back; start to",
+    "simpleExplanation_id": "datang dan lakukan; lakukan sesuatu dan kembali; mulai",
+    "usage_en": "〜てくる: Verb-te + くる",
+    "usage_id": "〜てくる: Kata kerja-te + くる"
+  },
+  {
+    "id": "ja_gram_n4_09",
+    "language": "ja",
+    "title": "〜てくれる",
+    "pattern": "〜てくれる",
+    "level": 2,
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "difficulty": 2,
+    "simpleExplanation": "someone does something for me",
+    "usage": "〜てくれる: Verb-te + くれる",
+    "examples": [
+      {
+        "text": "先生が漢字を教えてくれた。",
+        "romanization": "Senseigakanjiwooshietekureta.",
+        "translation": "The teacher taught me kanji.",
+        "translation_en": "The teacher taught me kanji.",
+        "translation_id": "Guru mengajari saya kanji."
+      },
+      {
+        "text": "友達が傘を貸してくれた。",
+        "romanization": "Tomodachigakasawokashitekureta.",
+        "translation": "My friend lent me an umbrella.",
+        "translation_en": "My friend lent me an umbrella.",
+        "translation_id": "Temanku meminjamiku payung."
+      }
+    ],
+    "category": "grammar",
+    "tags": [
+      "receiving",
+      "favor"
+    ],
+    "title_en": "〜てくれる — someone does something for me",
+    "title_id": "someone does something for me",
+    "simpleExplanation_en": "someone does something for me",
+    "simpleExplanation_id": "seseorang melakukan sesuatu untukku",
+    "usage_en": "〜てくれる: Verb-te + くれる",
+    "usage_id": "〜てくれる: Kata kerja-te + くれる"
+  },
+  {
+    "id": "ja_gram_n4_10",
+    "language": "ja",
+    "title": "〜てしまう",
+    "pattern": "〜てしまう",
+    "level": 2,
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "difficulty": 2,
+    "simpleExplanation": "do something completely; unintentionally; regret",
+    "usage": "〜てしまう: Verb-te + しまう",
+    "examples": [
+      {
+        "text": "財布を落としてしまった。",
+        "romanization": "Saifuwootoshiteshimatta.",
+        "translation": "I dropped my wallet (by accident).",
+        "translation_en": "I dropped my wallet (by accident).",
+        "translation_id": "Saya menjatuhkan dompet saya (secara tidak sengaja)."
+      },
+      {
+        "text": "本を全部読んでしまった。",
+        "romanization": "Honwozenbuyondeshimatta.",
+        "translation": "I ended up reading the whole book.",
+        "translation_en": "I ended up reading the whole book.",
+        "translation_id": "Saya akhirnya membaca seluruh buku."
+      }
+    ],
+    "category": "grammar",
+    "tags": [
+      "completion",
+      "regret"
+    ],
+    "title_en": "〜てしまう — do something completely; unintentionally; regret",
+    "title_id": "do something completely; unintentionally; regret",
+    "simpleExplanation_en": "do something completely; unintentionally; regret",
+    "simpleExplanation_id": "melakukan sesuatu secara menyeluruh; secara tidak sengaja; menyesali",
+    "usage_en": "〜てしまう: Verb-te + しまう",
+    "usage_id": "〜てしまう: Kata kerja-te + しまう"
+  },
+  {
+    "id": "ja_gram_n4_11",
+    "language": "ja",
+    "title": "〜てみる",
+    "pattern": "〜てみる",
+    "level": 2,
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "difficulty": 2,
+    "simpleExplanation": "try doing something",
+    "usage": "〜てみる: Verb-te + みる",
+    "examples": [
+      {
+        "text": "新しいレストランで食べてみる。",
+        "romanization": "Atarashiiresutorandetabetemiru.",
+        "translation": "I will try eating at the new restaurant.",
+        "translation_en": "I will try eating at the new restaurant.",
+        "translation_id": "Saya akan mencoba makan di restoran baru."
+      },
+      {
+        "text": "この靴を履いてみてもいいですか。",
+        "romanization": "Konokutsuwohaitemitemoiidesuka.",
+        "translation": "May I try on these shoes?",
+        "translation_en": "May I try on these shoes?",
+        "translation_id": "Bolehkah saya mencoba sepatu ini?"
+      }
+    ],
+    "category": "grammar",
+    "tags": [
+      "attempt"
+    ],
+    "title_en": "〜てみる — try doing something",
+    "title_id": "try doing something",
+    "simpleExplanation_en": "try doing something",
+    "simpleExplanation_id": "mencoba melakukan sesuatu",
+    "usage_en": "〜てみる: Verb-te + みる",
+    "usage_id": "〜てみる: Kata kerja-te + みる"
+  },
+  {
+    "id": "ja_gram_n4_12",
+    "language": "ja",
+    "title": "〜てもらう",
+    "pattern": "〜てもらう",
+    "level": 2,
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "difficulty": 2,
+    "simpleExplanation": "receive the favor of someone doing something",
+    "usage": "〜てもらう: Verb-te + もらう",
+    "examples": [
+      {
+        "text": "田中さんに日本語を教えてもらう。",
+        "romanization": "Tanakasanninihongowooshietemorau.",
+        "translation": "I receive Japanese lessons from Tanaka.",
+        "translation_en": "I receive Japanese lessons from Tanaka.",
+        "translation_id": "Saya menerima pelajaran bahasa Jepang dari Tanaka."
+      },
+      {
+        "text": "父に車を貸してもらった。",
+        "romanization": "Chichinikurumawokashitemoratta.",
+        "translation": "My father lent me his car.",
+        "translation_en": "My father lent me his car.",
+        "translation_id": "Ayah saya meminjamkan mobilnya kepada saya."
+      }
+    ],
+    "category": "grammar",
+    "tags": [
+      "receiving",
+      "favor"
+    ],
+    "title_en": "〜てもらう — receive the favor of someone doing something",
+    "title_id": "receive the favor of someone doing something",
+    "simpleExplanation_en": "receive the favor of someone doing something",
+    "simpleExplanation_id": "menerima bantuan dari seseorang yang melakukan sesuatu",
+    "usage_en": "〜てもらう: Verb-te + もらう",
+    "usage_id": "〜てもらう: Kata kerja-te + もらう"
+  },
+  {
+    "id": "ja_gram_n4_13",
+    "language": "ja",
+    "title": "〜に違いない",
+    "pattern": "〜に違いない",
+    "level": 2,
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "difficulty": 2,
+    "simpleExplanation": "must be; no doubt",
+    "usage": "〜に違いない: Verb-plain / i-adjective / na-adjective + に違いない",
+    "examples": [
+      {
+        "text": "彼は疲れているに違いない。",
+        "romanization": "Karehatsukareteirunichigainai.",
+        "translation": "He must be tired.",
+        "translation_en": "He must be tired.",
+        "translation_id": "Dia pasti lelah."
+      },
+      {
+        "text": "この本は高いに違いない。",
+        "romanization": "Konohonhatakainichigainai.",
+        "translation": "This book must be expensive.",
+        "translation_en": "This book must be expensive.",
+        "translation_id": "Buku ini pasti mahal."
+      }
+    ],
+    "category": "grammar",
+    "tags": [
+      "certainty"
+    ],
+    "title_en": "〜に違いない — must be; no doubt",
+    "title_id": "must be; no doubt",
+    "simpleExplanation_en": "must be; no doubt",
+    "simpleExplanation_id": "harus; tidak diragukan lagi",
+    "usage_en": "〜に違いない: Verb-plain / i-adjective / na-adjective + に違いない",
+    "usage_id": "〜に違いない: Kata kerja-polos / kata sifat-i / kata sifat-na + に違いない"
+  },
+  {
+    "id": "ja_gram_n4_14",
+    "language": "ja",
+    "title": "〜に決まっている",
+    "pattern": "〜に決まっている",
+    "level": 2,
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "difficulty": 2,
+    "simpleExplanation": "certainly; must; no doubt",
+    "usage": "〜に決まっている: Verb-plain / i-adjective / na-adjective + に決まっている",
+    "examples": [
+      {
+        "text": "あの人が合格するに決まっている。",
+        "romanization": "Anoningagoukakusurunikimatteiru.",
+        "translation": "That person will definitely pass.",
+        "translation_en": "That person will definitely pass.",
+        "translation_id": "Orang itu pasti lolos."
+      },
+      {
+        "text": "この料理はおいしいに決まっている。",
+        "romanization": "Konoryourihaoishiinikimatteiru.",
+        "translation": "This dish is definitely delicious.",
+        "translation_en": "This dish is definitely delicious.",
+        "translation_id": "Hidangan ini pasti enak."
+      }
+    ],
+    "category": "grammar",
+    "tags": [
+      "certainty"
+    ],
+    "title_en": "〜に決まっている — certainly; must; no doubt",
+    "title_id": "certainly; must; no doubt",
+    "simpleExplanation_en": "certainly; must; no doubt",
+    "simpleExplanation_id": "tentu; harus; tidak diragukan lagi",
+    "usage_en": "〜に決まっている: Verb-plain / i-adjective / na-adjective + に決まっている",
+    "usage_id": "〜に決まっている: Verba-polos / kata sifat-i / kata sifat-na + に決まっている"
+  },
+  {
+    "id": "ja_gram_n4_15",
+    "language": "ja",
+    "title": "〜みたい",
+    "pattern": "〜みたい",
+    "level": 2,
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "difficulty": 2,
+    "simpleExplanation": "like; similar to; seems like (casual)",
+    "usage": "〜みたい: Noun + みたい / Verb-plain / i-adjective / na-adjective + みたい",
+    "examples": [
+      {
+        "text": "彼女は猫みたいだ。",
+        "romanization": "Kanojohanekomitaida.",
+        "translation": "She is like a cat.",
+        "translation_en": "She is like a cat.",
+        "translation_id": "Dia seperti kucing."
+      },
+      {
+        "text": "雨が降るみたいです。",
+        "romanization": "Amegafurumitaidesu.",
+        "translation": "It seems like it will rain.",
+        "translation_en": "It seems like it will rain.",
+        "translation_id": "Sepertinya akan turun hujan."
+      }
+    ],
+    "category": "grammar",
+    "tags": [
+      "similarity",
+      "appearance"
+    ],
+    "title_en": "〜みたい — like; similar to; seems like (casual)",
+    "title_id": "like; similar to; seems like (casual)",
+    "simpleExplanation_en": "like; similar to; seems like (casual)",
+    "simpleExplanation_id": "menyukai; mirip dengan; sepertinya (santai)",
+    "usage_en": "〜みたい: Noun + みたい / Verb-plain / i-adjective / na-adjective + みたい",
+    "usage_id": "〜みたい: Kata benda + みたい / Kata kerja biasa / kata sifat i / kata sifat na + みたい"
+  },
+  {
+    "id": "ja_gram_n4_16",
+    "language": "ja",
+    "title": "〜らしい",
+    "pattern": "〜らしい",
+    "level": 2,
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "difficulty": 2,
+    "simpleExplanation": "seems like; I heard; typical of",
+    "usage": "〜らしい: Noun/Verb-plain / i-adjective / na-adjective + らしい",
+    "examples": [
+      {
+        "text": "彼は日本語が上手らしい。",
+        "romanization": "Karehanihongogajouzurashii.",
+        "translation": "I heard he is good at Japanese.",
+        "translation_en": "I heard he is good at Japanese.",
+        "translation_id": "Kudengar dia pandai berbahasa Jepang."
+      },
+      {
+        "text": "子供らしい遊びをする。",
+        "romanization": "Kodomorashiiasobiwosuru.",
+        "translation": "Play like a child.",
+        "translation_en": "Play like a child.",
+        "translation_id": "Bermain seperti anak kecil."
+      }
+    ],
+    "category": "grammar",
+    "tags": [
+      "hearsay",
+      "typical"
+    ],
+    "title_en": "〜らしい — seems like; I heard; typical of",
+    "title_id": "seems like; I heard; typical of",
+    "simpleExplanation_en": "seems like; I heard; typical of",
+    "simpleExplanation_id": "sepertinya; Saya dengar; tipikal dari",
+    "usage_en": "〜らしい: Noun/Verb-plain / i-adjective / na-adjective + らしい",
+    "usage_id": "〜らしい: Kata Benda/Kata Kerja-polos / kata sifat-i / kata sifat-na + らしい"
+  },
+  {
+    "id": "ja_gram_n4_17",
+    "language": "ja",
+    "title": "〜わけにはいかない",
+    "pattern": "〜わけにはいかない",
+    "level": 2,
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "difficulty": 2,
+    "simpleExplanation": "cannot afford to; must not",
+    "usage": "〜わけにはいかない: Verb-negative (ない) + わけにはいかない",
+    "examples": [
+      {
+        "text": "明日は試験だから、遊んでいるわけにはいかない。",
+        "romanization": "Ashitahashikendakara,asondeiruwakenihaikanai.",
+        "translation": "I have an exam tomorrow, so I can't afford to play around.",
+        "translation_en": "I have an exam tomorrow, so I can't afford to play around.",
+        "translation_id": "Saya ada ujian besok, jadi saya tidak bisa bermain-main."
+      },
+      {
+        "text": "会社を休むわけにはいかない。",
+        "romanization": "Kaishawoyasumuwakenihaikanai.",
+        "translation": "I can't take the day off from work.",
+        "translation_en": "I can't take the day off from work.",
+        "translation_id": "Saya tidak bisa mengambil cuti kerja."
+      }
+    ],
+    "category": "grammar",
+    "tags": [
+      "obligation",
+      "prohibition"
+    ],
+    "title_en": "〜わけにはいかない — cannot afford to; must not",
+    "title_id": "cannot afford to; must not",
+    "simpleExplanation_en": "cannot afford to; must not",
+    "simpleExplanation_id": "tidak mampu; tidak harus",
+    "usage_en": "〜わけにはいかない: Verb-negative (ない) + わけにはいかない",
+    "usage_id": "〜わけにはいかない: Kata kerja negatif (ない) + わけにはいかない"
+  },
+  {
+    "id": "ja_gram_n4_18",
+    "language": "ja",
+    "title": "〜過ぎる",
+    "pattern": "〜過ぎる",
+    "level": 2,
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "difficulty": 2,
+    "simpleExplanation": "too much; excessive",
+    "usage": "〜過ぎる: Verb-stem / i-adjective stem / na-adjective stem + すぎる",
+    "examples": [
+      {
+        "text": "昨日は飲みすぎた。",
+        "romanization": "Kinouhanomisugita.",
+        "translation": "I drank too much yesterday.",
+        "translation_en": "I drank too much yesterday.",
+        "translation_id": "Saya minum terlalu banyak kemarin."
+      },
+      {
+        "text": "この問題は難しすぎる。",
+        "romanization": "Konomondaihamutsukashisugiru.",
+        "translation": "This problem is too difficult.",
+        "translation_en": "This problem is too difficult.",
+        "translation_id": "Masalah ini terlalu sulit."
+      }
+    ],
+    "category": "grammar",
+    "tags": [
+      "degree"
+    ],
+    "title_en": "〜過ぎる — too much; excessive",
+    "title_id": "too much; excessive",
+    "simpleExplanation_en": "too much; excessive",
+    "simpleExplanation_id": "terlalu banyak; berlebihan",
+    "usage_en": "〜過ぎる: Verb-stem / i-adjective stem / na-adjective stem + すぎる",
+    "usage_id": "〜過ぎる: batang kata kerja / batang kata sifat i / batang kata sifat na + すぎる"
+  },
+  {
+    "id": "ja_gram_n4_19",
+    "language": "ja",
+    "title": "〜中",
+    "pattern": "〜中",
+    "level": 2,
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "difficulty": 2,
+    "simpleExplanation": "in the middle of; during",
+    "usage": "〜中: Verb-stem + ちゅう / Noun + ちゅう",
+    "examples": [
+      {
+        "text": "会議中です。",
+        "romanization": "Kaigichuudesu.",
+        "translation": "I am in a meeting.",
+        "translation_en": "I am in a meeting.",
+        "translation_id": "Saya sedang rapat."
+      },
+      {
+        "text": "電車は今、渋谷に向かっている途中です。",
+        "romanization": "Denshahaima,shibuyanimukatteirutochuudesu.",
+        "translation": "The train is on its way to Shibuya now.",
+        "translation_en": "The train is on its way to Shibuya now.",
+        "translation_id": "Kereta sedang dalam perjalanan ke Shibuya sekarang."
+      }
+    ],
+    "category": "grammar",
+    "tags": [
+      "progressive"
+    ],
+    "title_en": "〜中 — in the middle of; during",
+    "title_id": "in the middle of; during",
+    "simpleExplanation_en": "in the middle of; during",
+    "simpleExplanation_id": "di tengah; selama",
+    "usage_en": "〜中: Verb-stem + ちゅう / Noun + ちゅう",
+    "usage_id": "〜中: Batang kata kerja + ちゅう / Kata Benda + ちゅう"
+  },
+  {
+    "id": "ja_gram_n4_20",
+    "language": "ja",
+    "title": "〜方",
+    "pattern": "〜方",
+    "level": 2,
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "difficulty": 2,
+    "simpleExplanation": "way of doing; how to",
+    "usage": "〜方: Verb-stem + 方",
+    "examples": [
+      {
+        "text": "この漢字の読み方を教えてください。",
+        "romanization": "Konokanjinoyomikatawooshietekudasai.",
+        "translation": "Please tell me how to read this kanji.",
+        "translation_en": "Please tell me how to read this kanji.",
+        "translation_id": "Tolong beritahu saya cara membaca kanji ini."
+      },
+      {
+        "text": "お寿司の作り方を知りたい。",
+        "romanization": "Osushinotsukurikatawoshiritai.",
+        "translation": "I want to know how to make sushi.",
+        "translation_en": "I want to know how to make sushi.",
+        "translation_id": "Saya ingin tahu cara membuat sushi."
+      }
+    ],
+    "category": "grammar",
+    "tags": [
+      "method"
+    ],
+    "title_en": "〜方 — way of doing; how to",
+    "title_id": "way of doing; how to",
+    "simpleExplanation_en": "way of doing; how to",
+    "simpleExplanation_id": "cara melakukan; bagaimana caranya",
+    "usage_en": "〜方: Verb-stem + 方",
+    "usage_id": "〜方: Kata kerja-batang + 方"
+  }
+]

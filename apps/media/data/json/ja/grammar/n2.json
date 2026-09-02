@@ -1,1 +1,796 @@
-[]
+[
+  {
+    "id": "ja_gram_n2_01",
+    "language": "ja",
+    "title": "〜かねない",
+    "pattern": "〜かねない",
+    "level": 4,
+    "examMappings": {
+      "jlpt": "N2"
+    },
+    "difficulty": 4,
+    "simpleExplanation": "might; there is a risk that",
+    "usage": "〜かねない: Verb-stem + かねない",
+    "examples": [
+      {
+        "text": "その話は誤解を招きかねない。",
+        "romanization": "Sonohanashihagokaiwomanekikanenai.",
+        "translation": "That story might cause misunderstanding.",
+        "translation_en": "That story might cause misunderstanding.",
+        "translation_id": "Cerita itu mungkin menyebabkan kesalahpahaman."
+      },
+      {
+        "text": "遅れたら、怒られかねない。",
+        "romanization": "Okuretara,ikararekanenai.",
+        "translation": "If I'm late, I might get scolded.",
+        "translation_en": "If I'm late, I might get scolded.",
+        "translation_id": "Jika saya terlambat, saya mungkin akan dimarahi."
+      }
+    ],
+    "category": "grammar",
+    "tags": [
+      "risk",
+      "possibility"
+    ],
+    "title_en": "〜かねない — might; there is a risk that",
+    "title_id": "might; there is a risk that",
+    "simpleExplanation_en": "might; there is a risk that",
+    "simpleExplanation_id": "mungkin; ada risiko itu",
+    "usage_en": "〜かねない: Verb-stem + かねない",
+    "usage_id": "〜かねない: Batang kata kerja + かねない"
+  },
+  {
+    "id": "ja_gram_n2_02",
+    "language": "ja",
+    "title": "〜かのようだ",
+    "pattern": "〜かのようだ",
+    "level": 4,
+    "examMappings": {
+      "jlpt": "N2"
+    },
+    "difficulty": 4,
+    "simpleExplanation": "as if; just like",
+    "usage": "〜かのようだ: Verb-plain / i-adjective / na-adjective + かのようだ",
+    "examples": [
+      {
+        "text": "彼はまるで専門家かのように説明した。",
+        "romanization": "Karehamarudesenmonkakanoyounisetsumeishita.",
+        "translation": "He explained as if he were an expert.",
+        "translation_en": "He explained as if he were an expert.",
+        "translation_id": "Dia menjelaskan seolah-olah dia adalah seorang ahli."
+      },
+      {
+        "text": "夢を見ているかのようだ。",
+        "romanization": "Yumewomiteirukanoyouda.",
+        "translation": "It's as if I'm dreaming.",
+        "translation_en": "It's as if I'm dreaming.",
+        "translation_id": "Seolah-olah aku sedang bermimpi."
+      }
+    ],
+    "category": "grammar",
+    "tags": [
+      "metaphor",
+      "appearance"
+    ],
+    "title_en": "〜かのようだ — as if; just like",
+    "title_id": "as if; just like",
+    "simpleExplanation_en": "as if; just like",
+    "simpleExplanation_id": "seolah olah; sama seperti",
+    "usage_en": "〜かのようだ: Verb-plain / i-adjective / na-adjective + かのようだ",
+    "usage_id": "〜かのようだ: Kata kerja-polos / kata sifat-i / kata sifat-na + かのようだ"
+  },
+  {
+    "id": "ja_gram_n2_03",
+    "language": "ja",
+    "title": "〜ずにはいられない",
+    "pattern": "〜ずにはいられない",
+    "level": 4,
+    "examMappings": {
+      "jlpt": "N2"
+    },
+    "difficulty": 4,
+    "simpleExplanation": "cannot help but; can't resist",
+    "usage": "〜ずにはいられない: Verb-negative (ない) + ずにはいられない",
+    "examples": [
+      {
+        "text": "面白くて、笑わずにはいられない。",
+        "romanization": "Omoshirokute,warawazunihairarenai.",
+        "translation": "It's so funny that I can't help laughing.",
+        "translation_en": "It's so funny that I can't help laughing.",
+        "translation_id": "Lucu sekali sampai saya tidak bisa menahan tawa."
+      },
+      {
+        "text": "彼の話を信じずにはいられなかった。",
+        "romanization": "Kanohanashiwoshinjizunihairarenakatta.",
+        "translation": "I couldn't help but believe his story.",
+        "translation_en": "I couldn't help but believe his story.",
+        "translation_id": "Aku tidak bisa tidak mempercayai ceritanya."
+      }
+    ],
+    "category": "grammar",
+    "tags": [
+      "emotion",
+      "compulsion"
+    ],
+    "title_en": "〜ずにはいられない — cannot help but; can't resist",
+    "title_id": "cannot help but; can't resist",
+    "simpleExplanation_en": "cannot help but; can't resist",
+    "simpleExplanation_id": "tidak bisa tidak; tidak bisa menolak",
+    "usage_en": "〜ずにはいられない: Verb-negative (ない) + ずにはいられない",
+    "usage_id": "〜ずにはいられない: Kata kerja negatif (ない) + ずにはいられない"
+  },
+  {
+    "id": "ja_gram_n2_04",
+    "language": "ja",
+    "title": "〜にわたって",
+    "pattern": "〜にわたって",
+    "level": 4,
+    "examMappings": {
+      "jlpt": "N2"
+    },
+    "difficulty": 4,
+    "simpleExplanation": "throughout; over; spanning",
+    "usage": "〜にわたって: Noun + にわたって",
+    "examples": [
+      {
+        "text": "3年にわたって研究を続けた。",
+        "romanization": "3nenniwatattekenkyuuwotsuzuketa.",
+        "translation": "I continued the research for three years.",
+        "translation_en": "I continued the research for three years.",
+        "translation_id": "Saya melanjutkan penelitian selama tiga tahun."
+      },
+      {
+        "text": "全国にわたって調査を行った。",
+        "romanization": "Zenkokuniwatattechousawoitta.",
+        "translation": "We conducted a survey across the whole country.",
+        "translation_en": "We conducted a survey across the whole country.",
+        "translation_id": "Kami melakukan survei di seluruh negeri."
+      }
+    ],
+    "category": "grammar",
+    "tags": [
+      "span",
+      "range"
+    ],
+    "title_en": "〜にわたって — throughout; over; spanning",
+    "title_id": "throughout; over; spanning",
+    "simpleExplanation_en": "throughout; over; spanning",
+    "simpleExplanation_id": "selama; lebih; merentang",
+    "usage_en": "〜にわたって: Noun + にわたって",
+    "usage_id": "〜にわたって: Kata benda + にわたって"
+  },
+  {
+    "id": "ja_gram_n2_05",
+    "language": "ja",
+    "title": "〜に沿って",
+    "pattern": "〜に沿って",
+    "level": 4,
+    "examMappings": {
+      "jlpt": "N2"
+    },
+    "difficulty": 4,
+    "simpleExplanation": "along; in line with; following",
+    "usage": "〜に沿って: Noun + に沿って",
+    "examples": [
+      {
+        "text": "海岸に沿って走る。",
+        "romanization": "Kaigannisottehashiru.",
+        "translation": "Run along the coast.",
+        "translation_en": "Run along the coast.",
+        "translation_id": "Jalankan di sepanjang pantai."
+      },
+      {
+        "text": "計画に沿って進める。",
+        "romanization": "Keikakunisottesusumeru.",
+        "translation": "Proceed in line with the plan.",
+        "translation_en": "Proceed in line with the plan.",
+        "translation_id": "Lanjutkan sesuai dengan rencana."
+      }
+    ],
+    "category": "grammar",
+    "tags": [
+      "direction",
+      "conformity"
+    ],
+    "title_en": "〜に沿って — along; in line with; following",
+    "title_id": "along; in line with; following",
+    "simpleExplanation_en": "along; in line with; following",
+    "simpleExplanation_id": "bersama; sejalan dengan; mengikuti",
+    "usage_en": "〜に沿って: Noun + に沿って",
+    "usage_id": "〜に沿って: Kata benda + に沿って"
+  },
+  {
+    "id": "ja_gram_n2_06",
+    "language": "ja",
+    "title": "〜に応じて",
+    "pattern": "〜に応じて",
+    "level": 4,
+    "examMappings": {
+      "jlpt": "N2"
+    },
+    "difficulty": 4,
+    "simpleExplanation": "according to; in proportion to; depending on",
+    "usage": "〜に応じて: Noun + に応じて",
+    "examples": [
+      {
+        "text": "相手に応じて話し方を変える。",
+        "romanization": "Aitenioujitehanashikatawokaeru.",
+        "translation": "Change the way you speak depending on the other person.",
+        "translation_en": "Change the way you speak depending on the other person.",
+        "translation_id": "Ubah cara Anda berbicara tergantung pada orang lain."
+      },
+      {
+        "text": "収入に応じて支出を決める。",
+        "romanization": "Shuunyuunioujiteshishutsuwokimeru.",
+        "translation": "Decide expenses according to income.",
+        "translation_en": "Decide expenses according to income.",
+        "translation_id": "Tentukan pengeluaran berdasarkan pendapatan."
+      }
+    ],
+    "category": "grammar",
+    "tags": [
+      "proportion",
+      "adaptation"
+    ],
+    "title_en": "〜に応じて — according to; in proportion to; depending on",
+    "title_id": "according to; in proportion to; depending on",
+    "simpleExplanation_en": "according to; in proportion to; depending on",
+    "simpleExplanation_id": "menurut; sebanding dengan; tergantung pada",
+    "usage_en": "〜に応じて: Noun + に応じて",
+    "usage_id": "〜に応じて: Kata benda + に応じて"
+  },
+  {
+    "id": "ja_gram_n2_07",
+    "language": "ja",
+    "title": "〜に加えて",
+    "pattern": "〜に加えて",
+    "level": 4,
+    "examMappings": {
+      "jlpt": "N2"
+    },
+    "difficulty": 4,
+    "simpleExplanation": "in addition to",
+    "usage": "〜に加えて: Noun + に加えて",
+    "examples": [
+      {
+        "text": "英語に加えて、フランス語も勉強している。",
+        "romanization": "Eigonikuwaete,furansugomobenkyoushiteiru.",
+        "translation": "In addition to English, I also study French.",
+        "translation_en": "In addition to English, I also study French.",
+        "translation_id": "Selain bahasa Inggris, saya juga belajar bahasa Prancis."
+      },
+      {
+        "text": "値上げに加えて、サービスも悪化した。",
+        "romanization": "Neagenikuwaete,saabisumoakkashita.",
+        "translation": "In addition to the price increase, service also deteriorated.",
+        "translation_en": "In addition to the price increase, service also deteriorated.",
+        "translation_id": "Selain kenaikan harga, pelayanan juga menurun."
+      }
+    ],
+    "category": "grammar",
+    "tags": [
+      "addition"
+    ],
+    "title_en": "〜に加えて — in addition to",
+    "title_id": "in addition to",
+    "simpleExplanation_en": "in addition to",
+    "simpleExplanation_id": "sebagai tambahan",
+    "usage_en": "〜に加えて: Noun + に加えて",
+    "usage_id": "〜に加えて: Kata benda + に加えて"
+  },
+  {
+    "id": "ja_gram_n2_08",
+    "language": "ja",
+    "title": "〜に基づいて",
+    "pattern": "〜に基づいて",
+    "level": 4,
+    "examMappings": {
+      "jlpt": "N2"
+    },
+    "difficulty": 4,
+    "simpleExplanation": "based on; in accordance with",
+    "usage": "〜に基づいて: Noun + に基づいて",
+    "examples": [
+      {
+        "text": "データに基づいて判断する。",
+        "romanization": "Deetanimotozuitehandansuru.",
+        "translation": "Judge based on data.",
+        "translation_en": "Judge based on data.",
+        "translation_id": "Hakim berdasarkan data."
+      },
+      {
+        "text": "実際の経験に基づいて書いた。",
+        "romanization": "Jissainokeikennimotozuitekaita.",
+        "translation": "I wrote it based on actual experience.",
+        "translation_en": "I wrote it based on actual experience.",
+        "translation_id": "Saya menulisnya berdasarkan pengalaman nyata."
+      }
+    ],
+    "category": "grammar",
+    "tags": [
+      "basis"
+    ],
+    "title_en": "〜に基づいて — based on; in accordance with",
+    "title_id": "based on; in accordance with",
+    "simpleExplanation_en": "based on; in accordance with",
+    "simpleExplanation_id": "berdasarkan; menurut",
+    "usage_en": "〜に基づいて: Noun + に基づいて",
+    "usage_id": "〜に基づいて: Kata benda + に基づいて"
+  },
+  {
+    "id": "ja_gram_n2_09",
+    "language": "ja",
+    "title": "〜に際して",
+    "pattern": "〜に際して",
+    "level": 4,
+    "examMappings": {
+      "jlpt": "N2"
+    },
+    "difficulty": 4,
+    "simpleExplanation": "on the occasion of; at the time of",
+    "usage": "〜に際して: Noun + に際して",
+    "examples": [
+      {
+        "text": "出発に際して、一言ご挨拶させていただきます。",
+        "romanization": "Shuppatsunisaishite,hitokotogoaisatsusaseteitadakimasu.",
+        "translation": "On the occasion of our departure, please allow me to say a few words.",
+        "translation_en": "On the occasion of our departure, please allow me to say a few words.",
+        "translation_id": "Pada kesempatan keberangkatan kami, izinkan saya menyampaikan beberapa patah kata."
+      },
+      {
+        "text": "入社に際して、誓約書を提出した。",
+        "romanization": "Nyuushanisaishite,seiyakushowoteishutsushita.",
+        "translation": "I submitted a pledge when joining the company.",
+        "translation_en": "I submitted a pledge when joining the company.",
+        "translation_id": "Saya mengajukan janji ketika bergabung dengan perusahaan."
+      }
+    ],
+    "category": "grammar",
+    "tags": [
+      "formal",
+      "timing"
+    ],
+    "title_en": "〜に際して — on the occasion of; at the time of",
+    "title_id": "on the occasion of; at the time of",
+    "simpleExplanation_en": "on the occasion of; at the time of",
+    "simpleExplanation_id": "pada kesempatan; pada saat",
+    "usage_en": "〜に際して: Noun + に際して",
+    "usage_id": "〜に際して: Kata Benda + に際して"
+  },
+  {
+    "id": "ja_gram_n2_10",
+    "language": "ja",
+    "title": "〜に至って",
+    "pattern": "〜に至って",
+    "level": 4,
+    "examMappings": {
+      "jlpt": "N2"
+    },
+    "difficulty": 4,
+    "simpleExplanation": "when it comes to; at the point of",
+    "usage": "〜に至って: Noun + に至って",
+    "examples": [
+      {
+        "text": "辞職に至った経緯を説明する。",
+        "romanization": "Jishokuniitatsutakeiiwosetsumeisuru.",
+        "translation": "Explain the circumstances that led to the resignation.",
+        "translation_en": "Explain the circumstances that led to the resignation.",
+        "translation_id": "Jelaskan keadaan yang menyebabkan pengunduran diri tersebut."
+      },
+      {
+        "text": "今回の事件に至って、ようやく問題の深刻さが分かった。",
+        "romanization": "Konkainojikenniitatsute,youyakumondainoshinkokusagawakatta.",
+        "translation": "It was only with this incident that I finally understood the seriousness of the problem.",
+        "translation_en": "It was only with this incident that I finally understood the seriousness of the problem.",
+        "translation_id": "Hanya dengan kejadian inilah saya akhirnya memahami keseriusan masalahnya."
+      }
+    ],
+    "category": "grammar",
+    "tags": [
+      "advanced-timing",
+      "formal"
+    ],
+    "title_en": "〜に至って — when it comes to; at the point of",
+    "title_id": "when it comes to; at the point of",
+    "simpleExplanation_en": "when it comes to; at the point of",
+    "simpleExplanation_id": "ketika menyangkut; pada titik",
+    "usage_en": "〜に至って: Noun + に至って",
+    "usage_id": "〜に至って: Kata benda + に至って"
+  },
+  {
+    "id": "ja_gram_n2_11",
+    "language": "ja",
+    "title": "〜に代わって",
+    "pattern": "〜に代わって",
+    "level": 4,
+    "examMappings": {
+      "jlpt": "N2"
+    },
+    "difficulty": 4,
+    "simpleExplanation": "in place of; instead of; on behalf of",
+    "usage": "〜に代わって: Noun + に代わって",
+    "examples": [
+      {
+        "text": "社長に代わって挨拶する。",
+        "romanization": "Shachounikawatteaisatsusuru.",
+        "translation": "Give a speech on behalf of the president.",
+        "translation_en": "Give a speech on behalf of the president.",
+        "translation_id": "Memberikan pidato atas nama presiden."
+      },
+      {
+        "text": "彼に代わって、私が出席した。",
+        "romanization": "Karenikawatte,watashigashussekishita.",
+        "translation": "I attended in his place.",
+        "translation_en": "I attended in his place.",
+        "translation_id": "Saya hadir menggantikan dia."
+      }
+    ],
+    "category": "grammar",
+    "tags": [
+      "substitution"
+    ],
+    "title_en": "〜に代わって — in place of; instead of; on behalf of",
+    "title_id": "in place of; instead of; on behalf of",
+    "simpleExplanation_en": "in place of; instead of; on behalf of",
+    "simpleExplanation_id": "sebagai pengganti; alih-alih; atas nama",
+    "usage_en": "〜に代わって: Noun + に代わって",
+    "usage_id": "〜に代わって: Kata benda + に代わって"
+  },
+  {
+    "id": "ja_gram_n2_12",
+    "language": "ja",
+    "title": "〜に伴って",
+    "pattern": "〜に伴って",
+    "level": 4,
+    "examMappings": {
+      "jlpt": "N2"
+    },
+    "difficulty": 4,
+    "simpleExplanation": "as; in accordance with; along with",
+    "usage": "〜に伴って: Noun + に伴って",
+    "examples": [
+      {
+        "text": "都市化に伴って、緑が減っている。",
+        "romanization": "Toshikanitomonatsute,midorigahetsuteiru.",
+        "translation": "As urbanization progresses, greenery is decreasing.",
+        "translation_en": "As urbanization progresses, greenery is decreasing.",
+        "translation_id": "Seiring dengan kemajuan urbanisasi, lahan hijau semakin berkurang."
+      },
+      {
+        "text": "人口の増加に伴って、問題も増えた。",
+        "romanization": "Jinkounozoukanitomonatsute,mondaimofueta.",
+        "translation": "Along with the increase in population, problems also increased.",
+        "translation_en": "Along with the increase in population, problems also increased.",
+        "translation_id": "Seiring dengan bertambahnya jumlah penduduk, permasalahan pun semakin meningkat."
+      }
+    ],
+    "category": "grammar",
+    "tags": [
+      "accompaniment"
+    ],
+    "title_en": "〜に伴って — as; in accordance with; along with",
+    "title_id": "as; in accordance with; along with",
+    "simpleExplanation_en": "as; in accordance with; along with",
+    "simpleExplanation_id": "sebagai; menurut; bersama dengan",
+    "usage_en": "〜に伴って: Noun + に伴って",
+    "usage_id": "〜に伴って: Kata benda + に伴って"
+  },
+  {
+    "id": "ja_gram_n2_13",
+    "language": "ja",
+    "title": "〜に反して",
+    "pattern": "〜に反して",
+    "level": 4,
+    "examMappings": {
+      "jlpt": "N2"
+    },
+    "difficulty": 4,
+    "simpleExplanation": "contrary to; against",
+    "usage": "〜に反して: Noun + に反して",
+    "examples": [
+      {
+        "text": "予想に反して、試験は簡単だった。",
+        "romanization": "Yosounihanshite,shikenhakantandatta.",
+        "translation": "Contrary to expectations, the exam was easy.",
+        "translation_en": "Contrary to expectations, the exam was easy.",
+        "translation_id": "Bertentangan dengan ekspektasi, ujiannya mudah."
+      },
+      {
+        "text": "親の期待に反して、芸術家になった。",
+        "romanization": "Oyanokitainihanshite,geijutsukaninatta.",
+        "translation": "Against my parents' expectations, I became an artist.",
+        "translation_en": "Against my parents' expectations, I became an artist.",
+        "translation_id": "Bertentangan dengan harapan orang tuaku, aku menjadi seorang seniman."
+      }
+    ],
+    "category": "grammar",
+    "tags": [
+      "contrast"
+    ],
+    "title_en": "〜に反して — contrary to; against",
+    "title_id": "contrary to; against",
+    "simpleExplanation_en": "contrary to; against",
+    "simpleExplanation_id": "bertentangan dengan; melawan",
+    "usage_en": "〜に反して: Noun + に反して",
+    "usage_id": "〜に反して: Kata benda + に反して"
+  },
+  {
+    "id": "ja_gram_n2_14",
+    "language": "ja",
+    "title": "〜をきっかけに",
+    "pattern": "〜をきっかけに",
+    "level": 4,
+    "examMappings": {
+      "jlpt": "N2"
+    },
+    "difficulty": 4,
+    "simpleExplanation": "triggered by; taking the opportunity of",
+    "usage": "〜をきっかけに: Noun + をきっかけに",
+    "examples": [
+      {
+        "text": "留学をきっかけに、日本語が好きになった。",
+        "romanization": "Ryuugakuwokikkakeni,nihongogasukininatta.",
+        "translation": "Studying abroad was the trigger that made me love Japanese.",
+        "translation_en": "Studying abroad was the trigger that made me love Japanese.",
+        "translation_id": "Belajar di luar negeri menjadi pemicu yang membuat saya menyukai bahasa Jepang."
+      },
+      {
+        "text": "この本をきっかけに、歴史を勉強し始めた。",
+        "romanization": "Konohonwokikkakeni,rekishiwobenkyoushihajimeta.",
+        "translation": "This book was the opportunity for me to start studying history.",
+        "translation_en": "This book was the opportunity for me to start studying history.",
+        "translation_id": "Buku ini adalah kesempatan bagi saya untuk mulai mempelajari sejarah."
+      }
+    ],
+    "category": "grammar",
+    "tags": [
+      "opportunity",
+      "trigger"
+    ],
+    "title_en": "〜をきっかけに — triggered by; taking the opportunity of",
+    "title_id": "triggered by; taking the opportunity of",
+    "simpleExplanation_en": "triggered by; taking the opportunity of",
+    "simpleExplanation_id": "dipicu oleh; mengambil kesempatan",
+    "usage_en": "〜をきっかけに: Noun + をきっかけに",
+    "usage_id": "〜をきっかけに: Kata benda + をきっかけに"
+  },
+  {
+    "id": "ja_gram_n2_15",
+    "language": "ja",
+    "title": "〜をめぐって",
+    "pattern": "〜をめぐって",
+    "level": 4,
+    "examMappings": {
+      "jlpt": "N2"
+    },
+    "difficulty": 4,
+    "simpleExplanation": "concerning; regarding; around",
+    "usage": "〜をめぐって: Noun + をめぐって",
+    "examples": [
+      {
+        "text": "環境問題をめぐって議論が続いている。",
+        "romanization": "Kankyoumondaiwomeguttegirongatsuzuiteiru.",
+        "translation": "Discussion continues regarding environmental issues.",
+        "translation_en": "Discussion continues regarding environmental issues.",
+        "translation_id": "Diskusi terus berlanjut mengenai masalah lingkungan."
+      },
+      {
+        "text": "遺産をめぐって争いが起きた。",
+        "romanization": "Isanwomeguttearasoigaokita.",
+        "translation": "A dispute arose over the inheritance.",
+        "translation_en": "A dispute arose over the inheritance.",
+        "translation_id": "Terjadi perselisihan mengenai warisan."
+      }
+    ],
+    "category": "grammar",
+    "tags": [
+      "topic",
+      "controversy"
+    ],
+    "title_en": "〜をめぐって — concerning; regarding; around",
+    "title_id": "concerning; regarding; around",
+    "simpleExplanation_en": "concerning; regarding; around",
+    "simpleExplanation_id": "tentang; tentang; sekitar",
+    "usage_en": "〜をめぐって: Noun + をめぐって",
+    "usage_id": "〜をめぐって: Kata benda + をめぐって"
+  },
+  {
+    "id": "ja_gram_n2_16",
+    "language": "ja",
+    "title": "〜を禁じえない",
+    "pattern": "〜を禁じえない",
+    "level": 4,
+    "examMappings": {
+      "jlpt": "N2"
+    },
+    "difficulty": 4,
+    "simpleExplanation": "cannot help feeling; unable to restrain",
+    "usage": "〜を禁じえない: Noun + を禁じえない",
+    "examples": [
+      {
+        "text": "その結果には驚きを禁じえない。",
+        "romanization": "Sonokekkanihaodorokiwokinjienai.",
+        "translation": "I cannot help but be surprised by that result.",
+        "translation_en": "I cannot help but be surprised by that result.",
+        "translation_id": "Saya terkejut dengan hasil itu."
+      },
+      {
+        "text": "彼の努力には感動を禁じえない。",
+        "romanization": "Kanodoryokunihakandouwokinjienai.",
+        "translation": "I cannot help being moved by his efforts.",
+        "translation_en": "I cannot help being moved by his efforts.",
+        "translation_id": "Saya tidak bisa menahan diri untuk tergerak oleh usahanya."
+      }
+    ],
+    "category": "grammar",
+    "tags": [
+      "emotion",
+      "formal"
+    ],
+    "title_en": "〜を禁じえない — cannot help feeling; unable to restrain",
+    "title_id": "cannot help feeling; unable to restrain",
+    "simpleExplanation_en": "cannot help feeling; unable to restrain",
+    "simpleExplanation_id": "tidak bisa menahan perasaan; tidak dapat menahan diri",
+    "usage_en": "〜を禁じえない: Noun + を禁じえない",
+    "usage_id": "〜を禁じえない: Kata benda + を禁じえない"
+  },
+  {
+    "id": "ja_gram_n2_17",
+    "language": "ja",
+    "title": "〜を除いて",
+    "pattern": "〜を除いて",
+    "level": 4,
+    "examMappings": {
+      "jlpt": "N2"
+    },
+    "difficulty": 4,
+    "simpleExplanation": "except for; excluding",
+    "usage": "〜を除いて: Noun + を除いて",
+    "examples": [
+      {
+        "text": "日曜日を除いて、毎日開店している。",
+        "romanization": "Nichiyoubiwonozoite,mainichikaitenshiteiru.",
+        "translation": "We are open every day except Sunday.",
+        "translation_en": "We are open every day except Sunday.",
+        "translation_id": "Kami buka setiap hari kecuali hari minggu."
+      },
+      {
+        "text": "彼を除いて、全員参加した。",
+        "romanization": "Karewonozoite,zen'insankashita.",
+        "translation": "Everyone participated except him.",
+        "translation_en": "Everyone participated except him.",
+        "translation_id": "Semua orang berpartisipasi kecuali dia."
+      }
+    ],
+    "category": "grammar",
+    "tags": [
+      "exception"
+    ],
+    "title_en": "〜を除いて — except for; excluding",
+    "title_id": "except for; excluding",
+    "simpleExplanation_en": "except for; excluding",
+    "simpleExplanation_id": "kecuali; tidak termasuk",
+    "usage_en": "〜を除いて: Noun + を除いて",
+    "usage_id": "〜を除いて: Kata benda + を除いて"
+  },
+  {
+    "id": "ja_gram_n2_18",
+    "language": "ja",
+    "title": "〜を通して",
+    "pattern": "〜を通して",
+    "level": 4,
+    "examMappings": {
+      "jlpt": "N2"
+    },
+    "difficulty": 4,
+    "simpleExplanation": "through; by way of; throughout",
+    "usage": "〜を通して: Noun + を通して",
+    "examples": [
+      {
+        "text": "仕事を通して多くを学んだ。",
+        "romanization": "Shigotowotoushiteookuwomananda.",
+        "translation": "I learned a lot through work.",
+        "translation_en": "I learned a lot through work.",
+        "translation_id": "Saya belajar banyak melalui pekerjaan."
+      },
+      {
+        "text": "試験を通して、実力が分かる。",
+        "romanization": "Shikenwotoushite,jitsuryokugawakaru.",
+        "translation": "You can understand your ability through the exam.",
+        "translation_en": "You can understand your ability through the exam.",
+        "translation_id": "Anda dapat memahami kemampuan Anda melalui ujian."
+      }
+    ],
+    "category": "grammar",
+    "tags": [
+      "means",
+      "span"
+    ],
+    "title_en": "〜を通して — through; by way of; throughout",
+    "title_id": "through; by way of; throughout",
+    "simpleExplanation_en": "through; by way of; throughout",
+    "simpleExplanation_id": "melalui; melalui; selama",
+    "usage_en": "〜を通して: Noun + を通して",
+    "usage_id": "〜を通して: Kata benda + を通して"
+  },
+  {
+    "id": "ja_gram_n2_19",
+    "language": "ja",
+    "title": "〜を通じて",
+    "pattern": "〜を通じて",
+    "level": 4,
+    "examMappings": {
+      "jlpt": "N2"
+    },
+    "difficulty": 4,
+    "simpleExplanation": "through; by means of; throughout",
+    "usage": "〜を通じて: Noun + を通じて",
+    "examples": [
+      {
+        "text": "SNSを通じて知り合った。",
+        "romanization": "SNSwotsuujiteshiriatsuta.",
+        "translation": "We met through social media.",
+        "translation_en": "We met through social media.",
+        "translation_id": "Kami bertemu melalui media sosial."
+      },
+      {
+        "text": "一年を通じて暖かい気候だ。",
+        "romanization": "Ichinenwotsuujiteatatakaikikouda.",
+        "translation": "The climate is warm throughout the year.",
+        "translation_en": "The climate is warm throughout the year.",
+        "translation_id": "Iklimnya hangat sepanjang tahun."
+      }
+    ],
+    "category": "grammar",
+    "tags": [
+      "means",
+      "span"
+    ],
+    "title_en": "〜を通じて — through; by means of; throughout",
+    "title_id": "through; by means of; throughout",
+    "simpleExplanation_en": "through; by means of; throughout",
+    "simpleExplanation_id": "melalui; melalui; selama",
+    "usage_en": "〜を通じて: Noun + を通じて",
+    "usage_id": "〜を通じて: Kata Benda + を通じて"
+  },
+  {
+    "id": "ja_gram_n2_20",
+    "language": "ja",
+    "title": "〜を余儀なくされる",
+    "pattern": "〜を余儀なくされる",
+    "level": 4,
+    "examMappings": {
+      "jlpt": "N2"
+    },
+    "difficulty": 4,
+    "simpleExplanation": "be forced to; be compelled to",
+    "usage": "〜を余儀なくされる: Noun + を余儀なくされる",
+    "examples": [
+      {
+        "text": "悪天候で中止を余儀なくされた。",
+        "romanization": "Akutenkoudechuushiwoyoginakusareta.",
+        "translation": "We were forced to cancel due to bad weather.",
+        "translation_en": "We were forced to cancel due to bad weather.",
+        "translation_id": "Kami terpaksa membatalkan karena cuaca buruk."
+      },
+      {
+        "text": "予算削減で人員削減を余儀なくされた。",
+        "romanization": "Yosansakugendejin'insakugenwoyoginakusareta.",
+        "translation": "We were forced to reduce staff due to budget cuts.",
+        "translation_en": "We were forced to reduce staff due to budget cuts.",
+        "translation_id": "Kami terpaksa mengurangi staf karena pemotongan anggaran."
+      }
+    ],
+    "category": "grammar",
+    "tags": [
+      "compulsion",
+      "formal"
+    ],
+    "title_en": "〜を余儀なくされる — be forced to; be compelled to",
+    "title_id": "be forced to; be compelled to",
+    "simpleExplanation_en": "be forced to; be compelled to",
+    "simpleExplanation_id": "terpaksa; terpaksa",
+    "usage_en": "〜を余儀なくされる: Noun + を余儀なくされる",
+    "usage_id": "〜を余儀なくされる: Kata benda + を余儀なくされる"
+  }
+]

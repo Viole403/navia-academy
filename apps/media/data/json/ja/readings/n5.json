@@ -358,5 +358,233 @@
     ],
     "summary_en": "About school life.",
     "summary_id": "Tentang kehidupan sekolah."
+  },
+  {
+    "id": "r-ja-n5-daily",
+    "title": "にちじょう — Daily Life",
+    "type": "story",
+    "level": 1,
+    "examMappings": {
+      "jlpt": "N5"
+    },
+    "wordCount": 61,
+    "summary": "A daily reading for JLPT N5 practice.",
+    "summary_en": "A daily reading for JLPT N5 practice.",
+    "summary_id": "A daily reading for JLPT N5 practice.",
+    "paragraphs": [
+      {
+        "text": "私は学生です。",
+        "romanization": "Watashihagakuseidesu.",
+        "translation": "I am a student.",
+        "translation_en": "I am a student.",
+        "translation_id": "I am a student."
+      },
+      {
+        "text": "本を読みます。",
+        "romanization": "Honwoyomimasu.",
+        "translation": "I read a book.",
+        "translation_en": "I read a book.",
+        "translation_id": "Saya membaca buku."
+      },
+      {
+        "text": "私は日本人です。",
+        "romanization": "Watashihanihonjindesu.",
+        "translation": "I am Japanese.",
+        "translation_en": "I am Japanese.",
+        "translation_id": "I am Japanese."
+      },
+      {
+        "text": "昨日は行きませんでした。",
+        "romanization": "Kinouhaikimasendeshita.",
+        "translation": "I didn't go yesterday.",
+        "translation_en": "I didn't go yesterday.",
+        "translation_id": "I didn't go yesterday."
+      },
+      {
+        "text": "この本は高いですが、面白いです。",
+        "romanization": "Konohonhatakaidesuga,omoshiroidesu.",
+        "translation": "This book is expensive, but interesting.",
+        "translation_en": "This book is expensive, but interesting.",
+        "translation_id": "Buku ini mahal, tapi menarik."
+      },
+      {
+        "text": "眠いから、早く寝ます。",
+        "romanization": "Nemuikara,hayakunemasu.",
+        "translation": "Because I'm sleepy, I'll go to bed early.",
+        "translation_en": "Because I'm sleepy, I'll go to bed early.",
+        "translation_id": "Karena aku mengantuk, aku akan tidur lebih awal."
+      }
+    ]
+  },
+  {
+    "id": "r-ja-n5-greeting",
+    "title": "あいさつ — Greetings",
+    "type": "story",
+    "level": 1,
+    "examMappings": {
+      "jlpt": "N5"
+    },
+    "wordCount": 51,
+    "summary": "A greeting reading for JLPT N5 practice.",
+    "summary_en": "A greeting reading for JLPT N5 practice.",
+    "summary_id": "A greeting reading for JLPT N5 practice.",
+    "paragraphs": [
+      {
+        "text": "猫がいます。",
+        "romanization": "Nekogaimasu.",
+        "translation": "There is a cat.",
+        "translation_en": "There is a cat.",
+        "translation_id": "There is a cat."
+      },
+      {
+        "text": "七時に起きます。",
+        "romanization": "Shichijiniokimasu.",
+        "translation": "I wake up at seven.",
+        "translation_en": "I wake up at seven.",
+        "translation_id": "I wake up at seven."
+      },
+      {
+        "text": "これは本ですか。",
+        "romanization": "Korehahondesuka.",
+        "translation": "Is this a book?",
+        "translation_en": "Is this a book?",
+        "translation_id": "Is this a book?"
+      },
+      {
+        "text": "コーヒーが飲みたいです。",
+        "romanization": "Koohiiganomitaidesu.",
+        "translation": "I want to drink coffee.",
+        "translation_en": "I want to drink coffee.",
+        "translation_id": "I want to drink coffee."
+      },
+      {
+        "text": "公園に猫がいます。",
+        "romanization": "Kouenninekogaimasu.",
+        "translation": "There is a cat in the park.",
+        "translation_en": "There is a cat in the park.",
+        "translation_id": "Ada seekor kucing di taman."
+      },
+      {
+        "text": "バスで帰ります。",
+        "romanization": "Basudekaerimasu.",
+        "translation": "I return by bus.",
+        "translation_en": "I return by bus.",
+        "translation_id": "Saya kembali dengan bus."
+      }
+    ]
+  },
+  {
+    "id": "r-ja-n5-school",
+    "title": "がっこう — School",
+    "type": "story",
+    "level": 1,
+    "examMappings": {
+      "jlpt": "N5"
+    },
+    "wordCount": 63,
+    "summary": "A school reading for JLPT N5 practice.",
+    "summary_en": "A school reading for JLPT N5 practice.",
+    "summary_id": "A school reading for JLPT N5 practice.",
+    "paragraphs": [
+      {
+        "text": "今日は暑いです。",
+        "romanization": "Konnichihaatsuidesu.",
+        "translation": "Today is hot.",
+        "translation_en": "Today is hot.",
+        "translation_id": "Today is hot."
+      },
+      {
+        "text": "学校に行きます。",
+        "romanization": "Gakkouniikimasu.",
+        "translation": "I go to school.",
+        "translation_en": "I go to school.",
+        "translation_id": "I go to school."
+      },
+      {
+        "text": "私は学生ではありません。",
+        "romanization": "Watashihagakuseidehaarimasen.",
+        "translation": "I am not a student.",
+        "translation_en": "I am not a student.",
+        "translation_id": "Saya bukan seorang pelajar."
+      },
+      {
+        "text": "日本に行きたいです。",
+        "romanization": "Nipponniikitaidesu.",
+        "translation": "I want to go to Japan.",
+        "translation_en": "I want to go to Japan.",
+        "translation_id": "Saya ingin pergi ke Jepang."
+      },
+      {
+        "text": "日本語が好きですが、難しいです。",
+        "romanization": "Nihongogasukidesuga,muzukashiidesu.",
+        "translation": "I like Japanese, but it's difficult.",
+        "translation_en": "I like Japanese, but it's difficult.",
+        "translation_id": "Saya suka bahasa Jepang, tapi sulit."
+      },
+      {
+        "text": "学校で勉強します。",
+        "romanization": "Gakkoudebenkyoushimasu.",
+        "translation": "I study at school.",
+        "translation_en": "I study at school.",
+        "translation_id": "Saya belajar di sekolah."
+      }
+    ]
+  },
+  {
+    "id": "r-ja-n5-food",
+    "title": "たべもの — Food",
+    "type": "story",
+    "level": 1,
+    "examMappings": {
+      "jlpt": "N5"
+    },
+    "wordCount": 61,
+    "summary": "A food reading for JLPT N5 practice.",
+    "summary_en": "A food reading for JLPT N5 practice.",
+    "summary_id": "A food reading for JLPT N5 practice.",
+    "paragraphs": [
+      {
+        "text": "私は日本語が好きです。",
+        "romanization": "Watashihanihongogasukidesu.",
+        "translation": "I like Japanese.",
+        "translation_en": "I like Japanese.",
+        "translation_id": "I like Japanese."
+      },
+      {
+        "text": "図書館で勉強します。",
+        "romanization": "Toshokandebenkyoushimasu.",
+        "translation": "I study at the library.",
+        "translation_en": "I study at the library.",
+        "translation_id": "I study at the library."
+      },
+      {
+        "text": "トイレはどこですか。",
+        "romanization": "Toirehadokodesuka.",
+        "translation": "Where is the toilet?",
+        "translation_en": "Where is the toilet?",
+        "translation_id": "Where is the toilet?"
+      },
+      {
+        "text": "これは私の本です。",
+        "romanization": "Korehawatashinohondesu.",
+        "translation": "This is my book.",
+        "translation_en": "This is my book.",
+        "translation_id": "This is my book."
+      },
+      {
+        "text": "机の上に本があります。",
+        "romanization": "Tsukuenouenihongaarimasu.",
+        "translation": "There is a book on the desk.",
+        "translation_en": "There is a book on the desk.",
+        "translation_id": "Ada sebuah buku di atas meja."
+      },
+      {
+        "text": "友達と映画を見ます。",
+        "romanization": "Tomodachitoeigawomimasu.",
+        "translation": "I watch a movie with my friend.",
+        "translation_en": "I watch a movie with my friend.",
+        "translation_id": "Saya menonton film bersama teman saya."
+      }
+    ]
   }
 ]
