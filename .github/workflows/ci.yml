@@ -23,7 +23,7 @@ jobs:
       - run: bun run lint
 
   backend:
-    name: Backend (Go vet + Build)
+    name: Backend (Go vet + Test + Build)
     runs-on: ubuntu-latest
     defaults:
       run:
@@ -35,6 +35,7 @@ jobs:
           go-version: "1.26"
           cache-dependency-path: apps/backend/go.sum
       - run: go vet ./cmd/... ./internal/... ./pkg/...
+      - run: go test -count=1 ./...
       - run: go build ./cmd/server
 
   media-typecheck:
