@@ -49,7 +49,9 @@ func (s *ExamService) PatchCatSession(ctx context.Context, sessionID int, userID
 		seen[a.ItemID] = true
 		out = append(out, a)
 	}
-	return s.examRepo.PatchCatSession(ctx, sessionID, userID, out, req.ElapsedSec, req.Theta)
+	// Elapsed is computed server-side from started_at; req.ElapsedSec is
+	// ignored (client-provided wall clock is not trusted).
+	return s.examRepo.PatchCatSession(ctx, sessionID, userID, out, req.Theta)
 }
 
 func (s *ExamService) GetCatSession(ctx context.Context, sessionID int, userID string) (*models.CatSession, error) {

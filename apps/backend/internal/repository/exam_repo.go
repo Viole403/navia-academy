@@ -3,6 +3,7 @@ package repository
 import (
 	"context"
 	"encoding/json"
+	"time"
 
 	"github.com/navia-academy/backend/internal/database"
 	"github.com/navia-academy/backend/internal/models"
@@ -179,17 +180,30 @@ func (r *ExamRepository) CreateCatSession(ctx context.Context, s *models.CatSess
 	return s, nil
 }
 
-// idempotent: upsert answers by item_id (server-side dedupe against replay/retry)
-func (r *ExamRepository) PatchCatSession(ctx context.Context, sessionID int, userID string, in []models.CatAnswer, elapsedSec int, theta float64) error {
+// PatchCatSession appends answers to a running session. Idempotent: answers
+// are deduped by item_id upstream, and this method upserts the batch. The
+// elapsed time is computed SERVER-SIDE from the session's started_at so a
+// client cannot reset time_remaining by sending elapsed_sec: 0.
+func (r *ExamRepository) PatchCatSession(ctx context.Context, sessionID int, userID string, in []models.CatAnswer, theta float64) error {
 	answersJSON, _ := json.Marshal(in)
-	timeLimit := 0
-	if err := r.pool.QueryRow(ctx, `SELECT time_limit FROM exam_sessions WHERE id=$1 AND user_id=$2`, sessionID, userID).Scan(&timeLimit); err != nil {
+
+	var timeLimit int
+	var startedAt time.Time
+	if err := r.pool.QueryRow(ctx,
+		`SELECT time_limit, started_at FROM exam_sessions WHERE id=$1 AND user_id=$2`,
+		sessionID, userID).Scan(&timeLimit, &startedAt); err != nil {
 		return err
 	}
-	timeRemaining := timeLimit - elapsedSec
+
+	// Elapsed measured against the server clock: monotonic, not client-
+	// reported. Clamped to [0, timeLimit] so a paused/stale session can
+	// never go negative or exceed the cap.
+	elapsed := int(time.Since(startedAt).Seconds())
+	timeRemaining := timeLimit - elapsed
 	if timeRemaining < 0 {
 		timeRemaining = 0
 	}
+
 	var uid string
 	err := r.pool.QueryRow(ctx, `
 		UPDATE exam_sessions

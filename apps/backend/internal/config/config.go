@@ -1,6 +1,7 @@
 package config
 
 import (
+	"log"
 	"os"
 	"strconv"
 	"strings"
@@ -99,8 +100,12 @@ type GoogleConfig struct {
 	RedirectURL  string
 }
 
+// Load reads configuration from the environment. Required production secrets
+// are validated: if JWT secrets are absent or still set to their known
+// dev-placeholder values, the process exits so a misconfigured deployment
+// fails fast instead of issuing tokens signed with a public default.
 func Load() *Config {
-	return &Config{
+	cfg := &Config{
 		Server: ServerConfig{
 			Port:            getEnv("SERVER_PORT", "8080"),
 			ReadTimeout:     getDuration("SERVER_READ_TIMEOUT", 10*time.Second),
@@ -169,6 +174,41 @@ func Load() *Config {
 		},
 		ContentExportToken: getEnv("CONTENT_EXPORT_TOKEN", ""),
 		ContentLevelsURL:   getContentLevelsURL(),
+	}
+
+	validateSecrets(cfg)
+	return cfg
+}
+
+// validateSecrets fails fast when production-critical secrets are missing or
+// still set to the known development placeholders. Local dev is unaffected
+// because it deliberately uses the placeholder values; the guard only trips
+// when the placeholders are detected AND a production marker is present
+// (APP_ENV=production) — otherwise a fresh dev checkout would refuse to boot.
+func validateSecrets(cfg *Config) {
+	if os.Getenv("APP_ENV") != "production" {
+		return
+	}
+
+	knownDefaults := map[string]string{
+		"JWT_ACCESS_SECRET":  "change-me-access-secret-32-chars!",
+		"JWT_REFRESH_SECRET": "change-me-refresh-secret-32-chars!",
+	}
+	check := func(envKey, value, placeholder string) {
+		if value == "" {
+			log.Fatalf("config: %s is required in production", envKey)
+		}
+		if value == placeholder {
+			log.Fatalf("config: %s must not use the default placeholder in production", envKey)
+		}
+	}
+	for key, placeholder := range knownDefaults {
+		switch key {
+		case "JWT_ACCESS_SECRET":
+			check(key, cfg.JWT.AccessSecret, placeholder)
+		case "JWT_REFRESH_SECRET":
+			check(key, cfg.JWT.RefreshSecret, placeholder)
+		}
 	}
 }
 
