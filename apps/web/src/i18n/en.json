@@ -207,7 +207,7 @@
   "characters.strokes": "{n} strokes · {radical}",
   "characters.strokesLabel": "Strokes",
   "characters.structure": "Structure",
-  "characters.subtitle": "{n} hanzi for {exam}",
+  "characters.subtitle": "{n} {term} for {exam}",
   "characters.traditional": "Traditional:",
   "characters.words": "Words with this character",
   "command.examHistory": "Exam history",

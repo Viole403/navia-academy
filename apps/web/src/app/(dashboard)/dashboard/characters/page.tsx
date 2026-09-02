@@ -24,6 +24,12 @@ export default function CharactersPage() {
   const [query, setQuery] = useState("")
   const [radical, setRadical] = useState("all")
   const [page, setPage] = useState(1)
+  const charTerm =
+    settings.language === "zh"
+      ? "hanzi"
+      : settings.language === "ja"
+        ? "kanji"
+        : "characters"
   const PAGE_SIZE = 24
   const mounted = useMounted()
   const { t } = useTranslation()
@@ -76,6 +82,7 @@ export default function CharactersPage() {
         title={t("nav.characters")}
         subtitle={t("characters.subtitle", {
           n: String(examChars.length),
+          term: charTerm,
           exam: EXAM_DISPLAY_NAMES[settings.activeExamType],
         })}
       />

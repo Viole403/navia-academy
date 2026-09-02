@@ -207,7 +207,7 @@
   "characters.strokes": "{n} goresan · {radical}",
   "characters.strokesLabel": "Coretan",
   "characters.structure": "Struktur",
-  "characters.subtitle": "{n} hanzi untuk {exam}",
+  "characters.subtitle": "{n} {term} untuk {exam}",
   "characters.traditional": "Tradisional:",
   "characters.words": "Kata dengan karakter ini",
   "command.examHistory": "Riwayat ujian",
