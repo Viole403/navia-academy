@@ -1,1 +1,5265 @@
-[]
+[
+  {
+    "id": "ja_kanji_4f1a",
+    "language": "ja",
+    "char": "会",
+    "text": "会",
+    "kanji": "会",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "カイ / エ",
+    "meaning": "meeting, meet, party, association, interview",
+    "strokes": 6,
+    "grade": 2,
+    "frequency": 4,
+    "readings": {
+      "on": [
+        "カイ",
+        "エ"
+      ],
+      "kun": [
+        "あ.う",
+        "あ.わせる",
+        "あつ.まる"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_4f1a",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_540c",
+    "language": "ja",
+    "char": "同",
+    "text": "同",
+    "kanji": "同",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "ドウ",
+    "meaning": "same, agree, equal",
+    "strokes": 6,
+    "grade": 2,
+    "frequency": 15,
+    "readings": {
+      "on": [
+        "ドウ"
+      ],
+      "kun": [
+        "おな.じ"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_540c",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_4e8b",
+    "language": "ja",
+    "char": "事",
+    "text": "事",
+    "kanji": "事",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "ジ / ズ",
+    "meaning": "matter, thing, fact, business, reason",
+    "strokes": 8,
+    "grade": 3,
+    "frequency": 18,
+    "readings": {
+      "on": [
+        "ジ",
+        "ズ"
+      ],
+      "kun": [
+        "こと",
+        "つか.う",
+        "つか.える"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_4e8b",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_81ea",
+    "language": "ja",
+    "char": "自",
+    "text": "自",
+    "kanji": "自",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "ジ / シ",
+    "meaning": "oneself",
+    "strokes": 6,
+    "grade": 2,
+    "frequency": 19,
+    "readings": {
+      "on": [
+        "ジ",
+        "シ"
+      ],
+      "kun": [
+        "みずか.ら",
+        "おの.ずから",
+        "おの.ずと"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_81ea",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_793e",
+    "language": "ja",
+    "char": "社",
+    "text": "社",
+    "kanji": "社",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "シャ",
+    "meaning": "company, firm, office, association, shrine",
+    "strokes": 7,
+    "grade": 2,
+    "frequency": 21,
+    "readings": {
+      "on": [
+        "シャ"
+      ],
+      "kun": [
+        "やしろ"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_793e",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_767a",
+    "language": "ja",
+    "char": "発",
+    "text": "発",
+    "kanji": "発",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "ハツ / ホツ",
+    "meaning": "departure, discharge, publish, emit, start from",
+    "strokes": 9,
+    "grade": 3,
+    "frequency": 32,
+    "readings": {
+      "on": [
+        "ハツ",
+        "ホツ"
+      ],
+      "kun": [
+        "た.つ",
+        "あば.く",
+        "おこ.る",
+        "つか.わす",
+        "はな.つ"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_767a",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_8005",
+    "language": "ja",
+    "char": "者",
+    "text": "者",
+    "kanji": "者",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "シャ",
+    "meaning": "someone, person",
+    "strokes": 8,
+    "grade": 3,
+    "frequency": 38,
+    "readings": {
+      "on": [
+        "シャ"
+      ],
+      "kun": [
+        "もの"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_8005",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_5730",
+    "language": "ja",
+    "char": "地",
+    "text": "地",
+    "kanji": "地",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "チ / ジ",
+    "meaning": "ground, earth",
+    "strokes": 6,
+    "grade": 2,
+    "frequency": 40,
+    "readings": {
+      "on": [
+        "チ",
+        "ジ"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_5730",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_696d",
+    "language": "ja",
+    "char": "業",
+    "text": "業",
+    "kanji": "業",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "ギョウ / ゴウ",
+    "meaning": "business, vocation, arts, performance",
+    "strokes": 13,
+    "grade": 3,
+    "frequency": 43,
+    "readings": {
+      "on": [
+        "ギョウ",
+        "ゴウ"
+      ],
+      "kun": [
+        "わざ"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_696d",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_65b9",
+    "language": "ja",
+    "char": "方",
+    "text": "方",
+    "kanji": "方",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "ホウ",
+    "meaning": "direction, person, alternative",
+    "strokes": 4,
+    "grade": 2,
+    "frequency": 46,
+    "readings": {
+      "on": [
+        "ホウ"
+      ],
+      "kun": [
+        "かた",
+        "-かた",
+        "-がた"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_65b9",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_65b0",
+    "language": "ja",
+    "char": "新",
+    "text": "新",
+    "kanji": "新",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "シン",
+    "meaning": "new",
+    "strokes": 13,
+    "grade": 2,
+    "frequency": 51,
+    "readings": {
+      "on": [
+        "シン"
+      ],
+      "kun": [
+        "あたら.しい",
+        "あら.た",
+        "あら-",
+        "にい-"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_65b0",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_5834",
+    "language": "ja",
+    "char": "場",
+    "text": "場",
+    "kanji": "場",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "ジョウ / チョウ",
+    "meaning": "location, place",
+    "strokes": 12,
+    "grade": 2,
+    "frequency": 52,
+    "readings": {
+      "on": [
+        "ジョウ",
+        "チョウ"
+      ],
+      "kun": [
+        "ば"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_5834",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_54e1",
+    "language": "ja",
+    "char": "員",
+    "text": "員",
+    "kanji": "員",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "イン",
+    "meaning": "employee, member, number, the one in charge",
+    "strokes": 10,
+    "grade": 3,
+    "frequency": 54,
+    "readings": {
+      "on": [
+        "イン"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_54e1",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_7acb",
+    "language": "ja",
+    "char": "立",
+    "text": "立",
+    "kanji": "立",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "リツ / リュウ / リットル",
+    "meaning": "stand up, rise, set up, erect",
+    "strokes": 5,
+    "grade": 1,
+    "frequency": 58,
+    "readings": {
+      "on": [
+        "リツ",
+        "リュウ",
+        "リットル"
+      ],
+      "kun": [
+        "た.つ",
+        "-た.つ",
+        "た.ち-",
+        "た.てる",
+        "-た.てる",
+        "た.て-",
+        "たて-",
+        "-た.て",
+        "-だ.て",
+        "-だ.てる"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_7acb",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_958b",
+    "language": "ja",
+    "char": "開",
+    "text": "開",
+    "kanji": "開",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "カイ",
+    "meaning": "open, unfold, unseal",
+    "strokes": 12,
+    "grade": 3,
+    "frequency": 59,
+    "readings": {
+      "on": [
+        "カイ"
+      ],
+      "kun": [
+        "ひら.く",
+        "ひら.き",
+        "-びら.き",
+        "ひら.ける",
+        "あ.く",
+        "あ.ける"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_958b",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_624b",
+    "language": "ja",
+    "char": "手",
+    "text": "手",
+    "kanji": "手",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "シュ / ズ",
+    "meaning": "hand",
+    "strokes": 4,
+    "grade": 1,
+    "frequency": 60,
+    "readings": {
+      "on": [
+        "シュ",
+        "ズ"
+      ],
+      "kun": [
+        "て",
+        "て-",
+        "-て",
+        "た-"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_624b",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_529b",
+    "language": "ja",
+    "char": "力",
+    "text": "力",
+    "kanji": "力",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "リョク / リキ / リイ",
+    "meaning": "power, strength, strong, strain, bear up",
+    "strokes": 2,
+    "grade": 1,
+    "frequency": 62,
+    "readings": {
+      "on": [
+        "リョク",
+        "リキ",
+        "リイ"
+      ],
+      "kun": [
+        "ちから"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_529b",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_554f",
+    "language": "ja",
+    "char": "問",
+    "text": "問",
+    "kanji": "問",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "モン",
+    "meaning": "question, ask, problem",
+    "strokes": 11,
+    "grade": 3,
+    "frequency": 64,
+    "readings": {
+      "on": [
+        "モン"
+      ],
+      "kun": [
+        "と.う",
+        "と.い",
+        "とん"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_554f",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_4ee3",
+    "language": "ja",
+    "char": "代",
+    "text": "代",
+    "kanji": "代",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "ダイ / タイ",
+    "meaning": "substitute, change, convert, replace, period",
+    "strokes": 5,
+    "grade": 3,
+    "frequency": 66,
+    "readings": {
+      "on": [
+        "ダイ",
+        "タイ"
+      ],
+      "kun": [
+        "か.わる",
+        "かわ.る",
+        "かわ.り",
+        "か.わり",
+        "-がわ.り",
+        "-が.わり",
+        "か.える",
+        "よ",
+        "しろ"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_4ee3",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_660e",
+    "language": "ja",
+    "char": "明",
+    "text": "明",
+    "kanji": "明",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "メイ / ミョウ / ミン",
+    "meaning": "bright, light",
+    "strokes": 8,
+    "grade": 2,
+    "frequency": 67,
+    "readings": {
+      "on": [
+        "メイ",
+        "ミョウ",
+        "ミン"
+      ],
+      "kun": [
+        "あ.かり",
+        "あか.るい",
+        "あか.るむ",
+        "あか.らむ",
+        "あき.らか",
+        "あ.ける",
+        "-あ.け",
+        "あ.く",
+        "あ.くる",
+        "あ.かす"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_660e",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_52d5",
+    "language": "ja",
+    "char": "動",
+    "text": "動",
+    "kanji": "動",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "ドウ",
+    "meaning": "move, motion, change, confusion, shift",
+    "strokes": 11,
+    "grade": 3,
+    "frequency": 73,
+    "readings": {
+      "on": [
+        "ドウ"
+      ],
+      "kun": [
+        "うご.く",
+        "うご.かす"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_52d5",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_4eac",
+    "language": "ja",
+    "char": "京",
+    "text": "京",
+    "kanji": "京",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "キョウ / ケイ / キン",
+    "meaning": "capital, 10**16",
+    "strokes": 8,
+    "grade": 2,
+    "frequency": 74,
+    "readings": {
+      "on": [
+        "キョウ",
+        "ケイ",
+        "キン"
+      ],
+      "kun": [
+        "みやこ"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_4eac",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_76ee",
+    "language": "ja",
+    "char": "目",
+    "text": "目",
+    "kanji": "目",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "モク / ボク",
+    "meaning": "eye, class, look, insight, experience",
+    "strokes": 5,
+    "grade": 1,
+    "frequency": 76,
+    "readings": {
+      "on": [
+        "モク",
+        "ボク"
+      ],
+      "kun": [
+        "め",
+        "-め",
+        "ま-"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_76ee",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_901a",
+    "language": "ja",
+    "char": "通",
+    "text": "通",
+    "kanji": "通",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "ツウ / ツ",
+    "meaning": "traffic, pass through, avenue, commute, counter for letters, notes, documents, etc.",
+    "strokes": 10,
+    "grade": 2,
+    "frequency": 80,
+    "readings": {
+      "on": [
+        "ツウ",
+        "ツ"
+      ],
+      "kun": [
+        "とお.る",
+        "とお.り",
+        "-とお.り",
+        "-どお.り",
+        "とお.す",
+        "とお.し",
+        "-どお.し",
+        "かよ.う"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_901a",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_8a00",
+    "language": "ja",
+    "char": "言",
+    "text": "言",
+    "kanji": "言",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "ゲン / ゴン",
+    "meaning": "say, word",
+    "strokes": 7,
+    "grade": 2,
+    "frequency": 83,
+    "readings": {
+      "on": [
+        "ゲン",
+        "ゴン"
+      ],
+      "kun": [
+        "い.う",
+        "こと"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_8a00",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_7406",
+    "language": "ja",
+    "char": "理",
+    "text": "理",
+    "kanji": "理",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "リ",
+    "meaning": "logic, arrangement, reason, justice, truth",
+    "strokes": 11,
+    "grade": 2,
+    "frequency": 86,
+    "readings": {
+      "on": [
+        "リ"
+      ],
+      "kun": [
+        "ことわり"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_7406",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_4f53",
+    "language": "ja",
+    "char": "体",
+    "text": "体",
+    "kanji": "体",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "タイ / テイ",
+    "meaning": "body, substance, object, reality, counter for images",
+    "strokes": 7,
+    "grade": 2,
+    "frequency": 88,
+    "readings": {
+      "on": [
+        "タイ",
+        "テイ"
+      ],
+      "kun": [
+        "からだ",
+        "かたち"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_4f53",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_7530",
+    "language": "ja",
+    "char": "田",
+    "text": "田",
+    "kanji": "田",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "デン",
+    "meaning": "rice field, rice paddy",
+    "strokes": 5,
+    "grade": 1,
+    "frequency": 90,
+    "readings": {
+      "on": [
+        "デン"
+      ],
+      "kun": [
+        "た"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_7530",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_4e3b",
+    "language": "ja",
+    "char": "主",
+    "text": "主",
+    "kanji": "主",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "シュ / ス / シュウ",
+    "meaning": "lord, chief, master, main thing, principal",
+    "strokes": 5,
+    "grade": 3,
+    "frequency": 95,
+    "readings": {
+      "on": [
+        "シュ",
+        "ス",
+        "シュウ"
+      ],
+      "kun": [
+        "ぬし",
+        "おも",
+        "あるじ"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_4e3b",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_984c",
+    "language": "ja",
+    "char": "題",
+    "text": "題",
+    "kanji": "題",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "ダイ",
+    "meaning": "topic, subject",
+    "strokes": 18,
+    "grade": 3,
+    "frequency": 96,
+    "readings": {
+      "on": [
+        "ダイ"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_984c",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_610f",
+    "language": "ja",
+    "char": "意",
+    "text": "意",
+    "kanji": "意",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "イ",
+    "meaning": "idea, mind, heart, taste, thought",
+    "strokes": 13,
+    "grade": 3,
+    "frequency": 99,
+    "readings": {
+      "on": [
+        "イ"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_610f",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_4e0d",
+    "language": "ja",
+    "char": "不",
+    "text": "不",
+    "kanji": "不",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "フ / ブ",
+    "meaning": "negative, non-, bad, ugly, clumsy",
+    "strokes": 4,
+    "grade": 4,
+    "frequency": 101,
+    "readings": {
+      "on": [
+        "フ",
+        "ブ"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_4e0d",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_4f5c",
+    "language": "ja",
+    "char": "作",
+    "text": "作",
+    "kanji": "作",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "サク / サ",
+    "meaning": "make, production, prepare, build",
+    "strokes": 7,
+    "grade": 2,
+    "frequency": 103,
+    "readings": {
+      "on": [
+        "サク",
+        "サ"
+      ],
+      "kun": [
+        "つく.る",
+        "つく.り",
+        "-づく.り"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_4f5c",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_7528",
+    "language": "ja",
+    "char": "用",
+    "text": "用",
+    "kanji": "用",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "ヨウ",
+    "meaning": "utilize, business, service, use, employ",
+    "strokes": 5,
+    "grade": 2,
+    "frequency": 107,
+    "readings": {
+      "on": [
+        "ヨウ"
+      ],
+      "kun": [
+        "もち.いる"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_7528",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_5ea6",
+    "language": "ja",
+    "char": "度",
+    "text": "度",
+    "kanji": "度",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "ド / ト / タク",
+    "meaning": "degrees, occurrence, time, counter for occurrences, consider",
+    "strokes": 9,
+    "grade": 3,
+    "frequency": 110,
+    "readings": {
+      "on": [
+        "ド",
+        "ト",
+        "タク"
+      ],
+      "kun": [
+        "たび",
+        "-た.い"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_5ea6",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_5f37",
+    "language": "ja",
+    "char": "強",
+    "text": "強",
+    "kanji": "強",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "キョウ / ゴウ",
+    "meaning": "strong",
+    "strokes": 11,
+    "grade": 2,
+    "frequency": 112,
+    "readings": {
+      "on": [
+        "キョウ",
+        "ゴウ"
+      ],
+      "kun": [
+        "つよ.い",
+        "つよ.まる",
+        "つよ.める",
+        "し.いる",
+        "こわ.い"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_5f37",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_516c",
+    "language": "ja",
+    "char": "公",
+    "text": "公",
+    "kanji": "公",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "コウ / ク",
+    "meaning": "public, prince, official, governmental",
+    "strokes": 4,
+    "grade": 2,
+    "frequency": 118,
+    "readings": {
+      "on": [
+        "コウ",
+        "ク"
+      ],
+      "kun": [
+        "おおやけ"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_516c",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_6301",
+    "language": "ja",
+    "char": "持",
+    "text": "持",
+    "kanji": "持",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "ジ",
+    "meaning": "hold, have",
+    "strokes": 9,
+    "grade": 3,
+    "frequency": 119,
+    "readings": {
+      "on": [
+        "ジ"
+      ],
+      "kun": [
+        "も.つ",
+        "-も.ち",
+        "も.てる"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_6301",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_91ce",
+    "language": "ja",
+    "char": "野",
+    "text": "野",
+    "kanji": "野",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "ヤ / ショ",
+    "meaning": "plains, field, rustic, civilian life",
+    "strokes": 11,
+    "grade": 2,
+    "frequency": 120,
+    "readings": {
+      "on": [
+        "ヤ",
+        "ショ"
+      ],
+      "kun": [
+        "の",
+        "の-"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_91ce",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_4ee5",
+    "language": "ja",
+    "char": "以",
+    "text": "以",
+    "kanji": "以",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "イ",
+    "meaning": "by means of, because, in view of, compared with",
+    "strokes": 5,
+    "grade": 4,
+    "frequency": 126,
+    "readings": {
+      "on": [
+        "イ"
+      ],
+      "kun": [
+        "もっ.て"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_4ee5",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_601d",
+    "language": "ja",
+    "char": "思",
+    "text": "思",
+    "kanji": "思",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "シ",
+    "meaning": "think",
+    "strokes": 9,
+    "grade": 2,
+    "frequency": 132,
+    "readings": {
+      "on": [
+        "シ"
+      ],
+      "kun": [
+        "おも.う",
+        "おもえら.く",
+        "おぼ.す"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_601d",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_5bb6",
+    "language": "ja",
+    "char": "家",
+    "text": "家",
+    "kanji": "家",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "カ / ケ",
+    "meaning": "house, home, family, professional, expert",
+    "strokes": 10,
+    "grade": 2,
+    "frequency": 133,
+    "readings": {
+      "on": [
+        "カ",
+        "ケ"
+      ],
+      "kun": [
+        "いえ",
+        "や",
+        "うち"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_5bb6",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_4e16",
+    "language": "ja",
+    "char": "世",
+    "text": "世",
+    "kanji": "世",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "セイ / セ / ソウ",
+    "meaning": "generation, world, society, public",
+    "strokes": 5,
+    "grade": 3,
+    "frequency": 135,
+    "readings": {
+      "on": [
+        "セイ",
+        "セ",
+        "ソウ"
+      ],
+      "kun": [
+        "よ"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_4e16",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_591a",
+    "language": "ja",
+    "char": "多",
+    "text": "多",
+    "kanji": "多",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "タ",
+    "meaning": "many, frequent, much",
+    "strokes": 6,
+    "grade": 2,
+    "frequency": 139,
+    "readings": {
+      "on": [
+        "タ"
+      ],
+      "kun": [
+        "おお.い",
+        "まさ.に",
+        "まさ.る"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_591a",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_6b63",
+    "language": "ja",
+    "char": "正",
+    "text": "正",
+    "kanji": "正",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "セイ / ショウ",
+    "meaning": "correct, justice, righteous, 10**40",
+    "strokes": 5,
+    "grade": 1,
+    "frequency": 143,
+    "readings": {
+      "on": [
+        "セイ",
+        "ショウ"
+      ],
+      "kun": [
+        "ただ.しい",
+        "ただ.す",
+        "まさ",
+        "まさ.に"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_6b63",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_5b89",
+    "language": "ja",
+    "char": "安",
+    "text": "安",
+    "kanji": "安",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "アン",
+    "meaning": "relax, cheap, low, quiet, rested",
+    "strokes": 6,
+    "grade": 3,
+    "frequency": 144,
+    "readings": {
+      "on": [
+        "アン"
+      ],
+      "kun": [
+        "やす.い",
+        "やす.まる",
+        "やす",
+        "やす.らか"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_5b89",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_9662",
+    "language": "ja",
+    "char": "院",
+    "text": "院",
+    "kanji": "院",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "イン",
+    "meaning": "Inst., institution, temple, mansion, school",
+    "strokes": 10,
+    "grade": 3,
+    "frequency": 150,
+    "readings": {
+      "on": [
+        "イン"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_9662",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_5fc3",
+    "language": "ja",
+    "char": "心",
+    "text": "心",
+    "kanji": "心",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "シン",
+    "meaning": "heart, mind, spirit, heart radical (no. 61)",
+    "strokes": 4,
+    "grade": 2,
+    "frequency": 157,
+    "readings": {
+      "on": [
+        "シン"
+      ],
+      "kun": [
+        "こころ",
+        "-ごころ"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_5fc3",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_754c",
+    "language": "ja",
+    "char": "界",
+    "text": "界",
+    "kanji": "界",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "カイ",
+    "meaning": "world, boundary",
+    "strokes": 9,
+    "grade": 3,
+    "frequency": 158,
+    "readings": {
+      "on": [
+        "カイ"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_754c",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_6559",
+    "language": "ja",
+    "char": "教",
+    "text": "教",
+    "kanji": "教",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "キョウ",
+    "meaning": "teach, faith, doctrine",
+    "strokes": 11,
+    "grade": 2,
+    "frequency": 166,
+    "readings": {
+      "on": [
+        "キョウ"
+      ],
+      "kun": [
+        "おし.える",
+        "おそ.わる"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_6559",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_6587",
+    "language": "ja",
+    "char": "文",
+    "text": "文",
+    "kanji": "文",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "ブン / モン",
+    "meaning": "sentence, literature, style, art, decoration",
+    "strokes": 4,
+    "grade": 1,
+    "frequency": 190,
+    "readings": {
+      "on": [
+        "ブン",
+        "モン"
+      ],
+      "kun": [
+        "ふみ",
+        "あや"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_6587",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_5143",
+    "language": "ja",
+    "char": "元",
+    "text": "元",
+    "kanji": "元",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "ゲン / ガン",
+    "meaning": "beginning, former time, origin",
+    "strokes": 4,
+    "grade": 2,
+    "frequency": 192,
+    "readings": {
+      "on": [
+        "ゲン",
+        "ガン"
+      ],
+      "kun": [
+        "もと"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_5143",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_91cd",
+    "language": "ja",
+    "char": "重",
+    "text": "重",
+    "kanji": "重",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "ジュウ / チョウ",
+    "meaning": "heavy, important, esteem, respect, heap up",
+    "strokes": 9,
+    "grade": 3,
+    "frequency": 193,
+    "readings": {
+      "on": [
+        "ジュウ",
+        "チョウ"
+      ],
+      "kun": [
+        "え",
+        "おも.い",
+        "おも.り",
+        "おも.なう",
+        "かさ.ねる",
+        "かさ.なる",
+        "おも"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_91cd",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_8fd1",
+    "language": "ja",
+    "char": "近",
+    "text": "近",
+    "kanji": "近",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "キン / コン",
+    "meaning": "near, early, akin, tantamount",
+    "strokes": 7,
+    "grade": 2,
+    "frequency": 194,
+    "readings": {
+      "on": [
+        "キン",
+        "コン"
+      ],
+      "kun": [
+        "ちか.い"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_8fd1",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_8003",
+    "language": "ja",
+    "char": "考",
+    "text": "考",
+    "kanji": "考",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "コウ",
+    "meaning": "consider, think over",
+    "strokes": 6,
+    "grade": 2,
+    "frequency": 196,
+    "readings": {
+      "on": [
+        "コウ"
+      ],
+      "kun": [
+        "かんが.える",
+        "かんが.え"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_8003",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_753b",
+    "language": "ja",
+    "char": "画",
+    "text": "画",
+    "kanji": "画",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "ガ / カク / エ",
+    "meaning": "brush-stroke, picture",
+    "strokes": 8,
+    "grade": 2,
+    "frequency": 199,
+    "readings": {
+      "on": [
+        "ガ",
+        "カク",
+        "エ",
+        "カイ"
+      ],
+      "kun": [
+        "えが.く",
+        "かく.する",
+        "かぎ.る",
+        "はかりごと",
+        "はか.る"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_753b",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_6d77",
+    "language": "ja",
+    "char": "海",
+    "text": "海",
+    "kanji": "海",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "カイ",
+    "meaning": "sea, ocean",
+    "strokes": 9,
+    "grade": 2,
+    "frequency": 200,
+    "readings": {
+      "on": [
+        "カイ"
+      ],
+      "kun": [
+        "うみ"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_6d77",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_58f2",
+    "language": "ja",
+    "char": "売",
+    "text": "売",
+    "kanji": "売",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "バイ",
+    "meaning": "sell",
+    "strokes": 7,
+    "grade": 2,
+    "frequency": 202,
+    "readings": {
+      "on": [
+        "バイ"
+      ],
+      "kun": [
+        "う.る",
+        "う.れる"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_58f2",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_77e5",
+    "language": "ja",
+    "char": "知",
+    "text": "知",
+    "kanji": "知",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "チ",
+    "meaning": "know, wisdom",
+    "strokes": 8,
+    "grade": 2,
+    "frequency": 205,
+    "readings": {
+      "on": [
+        "チ"
+      ],
+      "kun": [
+        "し.る",
+        "し.らせる"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_77e5",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_9053",
+    "language": "ja",
+    "char": "道",
+    "text": "道",
+    "kanji": "道",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "ドウ / トウ",
+    "meaning": "road-way, street, district, journey, course",
+    "strokes": 12,
+    "grade": 2,
+    "frequency": 207,
+    "readings": {
+      "on": [
+        "ドウ",
+        "トウ"
+      ],
+      "kun": [
+        "みち",
+        "いう"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_9053",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_96c6",
+    "language": "ja",
+    "char": "集",
+    "text": "集",
+    "kanji": "集",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "シュウ",
+    "meaning": "gather, meet, congregate, swarm, flock",
+    "strokes": 12,
+    "grade": 3,
+    "frequency": 210,
+    "readings": {
+      "on": [
+        "シュウ"
+      ],
+      "kun": [
+        "あつ.まる",
+        "あつ.める",
+        "つど.う"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_96c6",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_5225",
+    "language": "ja",
+    "char": "別",
+    "text": "別",
+    "kanji": "別",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "ベツ",
+    "meaning": "separate, branch off, diverge, fork, another",
+    "strokes": 7,
+    "grade": 4,
+    "frequency": 214,
+    "readings": {
+      "on": [
+        "ベツ"
+      ],
+      "kun": [
+        "わか.れる",
+        "わ.ける"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_5225",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_7269",
+    "language": "ja",
+    "char": "物",
+    "text": "物",
+    "kanji": "物",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "ブツ / モツ",
+    "meaning": "thing, object, matter",
+    "strokes": 8,
+    "grade": 3,
+    "frequency": 215,
+    "readings": {
+      "on": [
+        "ブツ",
+        "モツ"
+      ],
+      "kun": [
+        "もの",
+        "もの-"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_7269",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_4f7f",
+    "language": "ja",
+    "char": "使",
+    "text": "使",
+    "kanji": "使",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "シ",
+    "meaning": "use, send on a mission, order, messenger, envoy",
+    "strokes": 8,
+    "grade": 3,
+    "frequency": 219,
+    "readings": {
+      "on": [
+        "シ"
+      ],
+      "kun": [
+        "つか.う",
+        "つか.い",
+        "-つか.い",
+        "-づか.い"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_4f7f",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_54c1",
+    "language": "ja",
+    "char": "品",
+    "text": "品",
+    "kanji": "品",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "ヒン / ホン",
+    "meaning": "goods, refinement, dignity, article, counter for meal courses",
+    "strokes": 9,
+    "grade": 3,
+    "frequency": 225,
+    "readings": {
+      "on": [
+        "ヒン",
+        "ホン"
+      ],
+      "kun": [
+        "しな"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_54c1",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_8a08",
+    "language": "ja",
+    "char": "計",
+    "text": "計",
+    "kanji": "計",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "ケイ",
+    "meaning": "plot, plan, scheme, measure",
+    "strokes": 9,
+    "grade": 2,
+    "frequency": 228,
+    "readings": {
+      "on": [
+        "ケイ"
+      ],
+      "kun": [
+        "はか.る",
+        "はか.らう"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_8a08",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_6b7b",
+    "language": "ja",
+    "char": "死",
+    "text": "死",
+    "kanji": "死",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "シ",
+    "meaning": "death, die",
+    "strokes": 6,
+    "grade": 3,
+    "frequency": 229,
+    "readings": {
+      "on": [
+        "シ"
+      ],
+      "kun": [
+        "し.ぬ",
+        "し.に-"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_6b7b",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_7279",
+    "language": "ja",
+    "char": "特",
+    "text": "特",
+    "kanji": "特",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "トク",
+    "meaning": "special",
+    "strokes": 10,
+    "grade": 4,
+    "frequency": 234,
+    "readings": {
+      "on": [
+        "トク"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_7279",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_79c1",
+    "language": "ja",
+    "char": "私",
+    "text": "私",
+    "kanji": "私",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "シ",
+    "meaning": "private, I, me",
+    "strokes": 7,
+    "grade": 6,
+    "frequency": 242,
+    "readings": {
+      "on": [
+        "シ"
+      ],
+      "kun": [
+        "わたくし",
+        "わたし"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_79c1",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_59cb",
+    "language": "ja",
+    "char": "始",
+    "text": "始",
+    "kanji": "始",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "シ",
+    "meaning": "commence, begin",
+    "strokes": 8,
+    "grade": 3,
+    "frequency": 244,
+    "readings": {
+      "on": [
+        "シ"
+      ],
+      "kun": [
+        "はじ.める",
+        "-はじ.める",
+        "はじ.まる"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_59cb",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_671d",
+    "language": "ja",
+    "char": "朝",
+    "text": "朝",
+    "kanji": "朝",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "チョウ",
+    "meaning": "morning, dynasty, regime, epoch, period",
+    "strokes": 12,
+    "grade": 2,
+    "frequency": 248,
+    "readings": {
+      "on": [
+        "チョウ"
+      ],
+      "kun": [
+        "あさ"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_671d",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_904b",
+    "language": "ja",
+    "char": "運",
+    "text": "運",
+    "kanji": "運",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "ウン",
+    "meaning": "carry, luck, destiny, fate, lot",
+    "strokes": 12,
+    "grade": 3,
+    "frequency": 255,
+    "readings": {
+      "on": [
+        "ウン"
+      ],
+      "kun": [
+        "はこ.ぶ"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_904b",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_7d42",
+    "language": "ja",
+    "char": "終",
+    "text": "終",
+    "kanji": "終",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "シュウ",
+    "meaning": "end, finish",
+    "strokes": 11,
+    "grade": 3,
+    "frequency": 256,
+    "readings": {
+      "on": [
+        "シュウ"
+      ],
+      "kun": [
+        "お.わる",
+        "-お.わる",
+        "おわ.る",
+        "お.える",
+        "つい",
+        "つい.に"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_7d42",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_53f0",
+    "language": "ja",
+    "char": "台",
+    "text": "台",
+    "kanji": "台",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "ダイ / タイ",
+    "meaning": "pedestal, a stand, counter for machines and vehicles",
+    "strokes": 5,
+    "grade": 2,
+    "frequency": 262,
+    "readings": {
+      "on": [
+        "ダイ",
+        "タイ"
+      ],
+      "kun": [
+        "うてな",
+        "われ",
+        "つかさ"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_53f0",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_5e83",
+    "language": "ja",
+    "char": "広",
+    "text": "広",
+    "kanji": "広",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "コウ",
+    "meaning": "wide, broad, spacious",
+    "strokes": 5,
+    "grade": 2,
+    "frequency": 263,
+    "readings": {
+      "on": [
+        "コウ"
+      ],
+      "kun": [
+        "ひろ.い",
+        "ひろ.まる",
+        "ひろ.める",
+        "ひろ.がる",
+        "ひろ.げる"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_5e83",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_4f4f",
+    "language": "ja",
+    "char": "住",
+    "text": "住",
+    "kanji": "住",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "ジュウ / ヂュウ / チュウ",
+    "meaning": "dwell, reside, live, inhabit",
+    "strokes": 7,
+    "grade": 3,
+    "frequency": 270,
+    "readings": {
+      "on": [
+        "ジュウ",
+        "ヂュウ",
+        "チュウ"
+      ],
+      "kun": [
+        "す.む",
+        "す.まう",
+        "-ず.まい"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_4f4f",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_771f",
+    "language": "ja",
+    "char": "真",
+    "text": "真",
+    "kanji": "真",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "シン",
+    "meaning": "true, reality, Buddhist sect",
+    "strokes": 10,
+    "grade": 3,
+    "frequency": 279,
+    "readings": {
+      "on": [
+        "シン"
+      ],
+      "kun": [
+        "ま",
+        "ま-",
+        "まこと"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_771f",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_6709",
+    "language": "ja",
+    "char": "有",
+    "text": "有",
+    "kanji": "有",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "ユウ / ウ",
+    "meaning": "possess, have, exist, happen, occur",
+    "strokes": 6,
+    "grade": 3,
+    "frequency": 282,
+    "readings": {
+      "on": [
+        "ユウ",
+        "ウ"
+      ],
+      "kun": [
+        "あ.る"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_6709",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_53e3",
+    "language": "ja",
+    "char": "口",
+    "text": "口",
+    "kanji": "口",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "コウ / ク",
+    "meaning": "mouth",
+    "strokes": 3,
+    "grade": 1,
+    "frequency": 284,
+    "readings": {
+      "on": [
+        "コウ",
+        "ク"
+      ],
+      "kun": [
+        "くち"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_53e3",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_5c11",
+    "language": "ja",
+    "char": "少",
+    "text": "少",
+    "kanji": "少",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "ショウ",
+    "meaning": "few, little",
+    "strokes": 4,
+    "grade": 2,
+    "frequency": 287,
+    "readings": {
+      "on": [
+        "ショウ"
+      ],
+      "kun": [
+        "すく.ない",
+        "すこ.し"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_5c11",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_753a",
+    "language": "ja",
+    "char": "町",
+    "text": "町",
+    "kanji": "町",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "チョウ",
+    "meaning": "town, village, block, street",
+    "strokes": 7,
+    "grade": 1,
+    "frequency": 292,
+    "readings": {
+      "on": [
+        "チョウ"
+      ],
+      "kun": [
+        "まち"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_753a",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_6599",
+    "language": "ja",
+    "char": "料",
+    "text": "料",
+    "kanji": "料",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "リョウ",
+    "meaning": "fee, materials",
+    "strokes": 10,
+    "grade": 4,
+    "frequency": 295,
+    "readings": {
+      "on": [
+        "リョウ"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_6599",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_5de5",
+    "language": "ja",
+    "char": "工",
+    "text": "工",
+    "kanji": "工",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "コウ / ク / グ",
+    "meaning": "craft, construction, katakana e radical (no. 48)",
+    "strokes": 3,
+    "grade": 2,
+    "frequency": 299,
+    "readings": {
+      "on": [
+        "コウ",
+        "ク",
+        "グ"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_5de5",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_5efa",
+    "language": "ja",
+    "char": "建",
+    "text": "建",
+    "kanji": "建",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "ケン / コン",
+    "meaning": "build",
+    "strokes": 9,
+    "grade": 4,
+    "frequency": 300,
+    "readings": {
+      "on": [
+        "ケン",
+        "コン"
+      ],
+      "kun": [
+        "た.てる",
+        "た.て",
+        "-だ.て",
+        "た.つ"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_5efa",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_7a7a",
+    "language": "ja",
+    "char": "空",
+    "text": "空",
+    "kanji": "空",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "クウ",
+    "meaning": "empty, sky, void, vacant, vacuum",
+    "strokes": 8,
+    "grade": 1,
+    "frequency": 304,
+    "readings": {
+      "on": [
+        "クウ"
+      ],
+      "kun": [
+        "そら",
+        "あ.く",
+        "あ.き",
+        "あ.ける",
+        "から",
+        "す.く",
+        "す.かす",
+        "むな.しい"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_7a7a",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_6025",
+    "language": "ja",
+    "char": "急",
+    "text": "急",
+    "kanji": "急",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "キュウ",
+    "meaning": "hurry, emergency, sudden, steep",
+    "strokes": 9,
+    "grade": 3,
+    "frequency": 309,
+    "readings": {
+      "on": [
+        "キュウ"
+      ],
+      "kun": [
+        "いそ.ぐ",
+        "いそ.ぎ",
+        "せ.く"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_6025",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_6b62",
+    "language": "ja",
+    "char": "止",
+    "text": "止",
+    "kanji": "止",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "シ",
+    "meaning": "stop, halt",
+    "strokes": 4,
+    "grade": 2,
+    "frequency": 310,
+    "readings": {
+      "on": [
+        "シ"
+      ],
+      "kun": [
+        "と.まる",
+        "-ど.まり",
+        "と.める",
+        "-と.める",
+        "-ど.め",
+        "とど.める",
+        "とど.め",
+        "とど.まる",
+        "や.める",
+        "や.む",
+        "-や.む",
+        "よ.す",
+        "-さ.す",
+        "-さ.し"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_6b62",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_9001",
+    "language": "ja",
+    "char": "送",
+    "text": "送",
+    "kanji": "送",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "ソウ",
+    "meaning": "escort, send",
+    "strokes": 9,
+    "grade": 3,
+    "frequency": 311,
+    "readings": {
+      "on": [
+        "ソウ"
+      ],
+      "kun": [
+        "おく.る"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_9001",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_5207",
+    "language": "ja",
+    "char": "切",
+    "text": "切",
+    "kanji": "切",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "セツ / サイ",
+    "meaning": "cut, cutoff, be sharp",
+    "strokes": 4,
+    "grade": 2,
+    "frequency": 324,
+    "readings": {
+      "on": [
+        "セツ",
+        "サイ"
+      ],
+      "kun": [
+        "き.る",
+        "-き.る",
+        "き.り",
+        "-き.り",
+        "-ぎ.り",
+        "き.れる",
+        "-き.れる",
+        "き.れ",
+        "-き.れ",
+        "-ぎ.れ"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_5207",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_8ee2",
+    "language": "ja",
+    "char": "転",
+    "text": "転",
+    "kanji": "転",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "テン",
+    "meaning": "revolve, turn around, change",
+    "strokes": 11,
+    "grade": 3,
+    "frequency": 327,
+    "readings": {
+      "on": [
+        "テン"
+      ],
+      "kun": [
+        "ころ.がる",
+        "ころ.げる",
+        "ころ.がす",
+        "ころ.ぶ",
+        "まろ.ぶ",
+        "うたた",
+        "うつ.る",
+        "くる.めく"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_8ee2",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_7814",
+    "language": "ja",
+    "char": "研",
+    "text": "研",
+    "kanji": "研",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "ケン",
+    "meaning": "polish, study of, sharpen",
+    "strokes": 9,
+    "grade": 3,
+    "frequency": 336,
+    "readings": {
+      "on": [
+        "ケン"
+      ],
+      "kun": [
+        "と.ぐ"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_7814",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_8db3",
+    "language": "ja",
+    "char": "足",
+    "text": "足",
+    "kanji": "足",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "ソク",
+    "meaning": "leg, foot, be sufficient, counter for pairs of footwear",
+    "strokes": 7,
+    "grade": 1,
+    "frequency": 343,
+    "readings": {
+      "on": [
+        "ソク"
+      ],
+      "kun": [
+        "あし",
+        "た.りる",
+        "た.る",
+        "た.す"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_8db3",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_7a76",
+    "language": "ja",
+    "char": "究",
+    "text": "究",
+    "kanji": "究",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "キュウ / ク",
+    "meaning": "research, study",
+    "strokes": 7,
+    "grade": 3,
+    "frequency": 368,
+    "readings": {
+      "on": [
+        "キュウ",
+        "ク"
+      ],
+      "kun": [
+        "きわ.める"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_7a76",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_697d",
+    "language": "ja",
+    "char": "楽",
+    "text": "楽",
+    "kanji": "楽",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "ガク / ラク / ゴウ",
+    "meaning": "music, comfort, ease",
+    "strokes": 13,
+    "grade": 2,
+    "frequency": 373,
+    "readings": {
+      "on": [
+        "ガク",
+        "ラク",
+        "ゴウ"
+      ],
+      "kun": [
+        "たの.しい",
+        "たの.しむ",
+        "この.む"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_697d",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_8d77",
+    "language": "ja",
+    "char": "起",
+    "text": "起",
+    "kanji": "起",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "キ",
+    "meaning": "rouse, wake up, get up",
+    "strokes": 10,
+    "grade": 3,
+    "frequency": 374,
+    "readings": {
+      "on": [
+        "キ"
+      ],
+      "kun": [
+        "お.きる",
+        "お.こる",
+        "お.こす",
+        "おこ.す",
+        "た.つ"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_8d77",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_7740",
+    "language": "ja",
+    "char": "着",
+    "text": "着",
+    "kanji": "着",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "チャク / ジャク",
+    "meaning": "don, arrive, wear, counter for suits of clothing",
+    "strokes": 12,
+    "grade": 3,
+    "frequency": 376,
+    "readings": {
+      "on": [
+        "チャク",
+        "ジャク"
+      ],
+      "kun": [
+        "き.る",
+        "き.せる",
+        "つ.く",
+        "つ.ける"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_7740",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_5e97",
+    "language": "ja",
+    "char": "店",
+    "text": "店",
+    "kanji": "店",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "テン",
+    "meaning": "store, shop",
+    "strokes": 8,
+    "grade": 2,
+    "frequency": 378,
+    "readings": {
+      "on": [
+        "テン"
+      ],
+      "kun": [
+        "みせ",
+        "たな"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_5e97",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_75c5",
+    "language": "ja",
+    "char": "病",
+    "text": "病",
+    "kanji": "病",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "ビョウ / ヘイ",
+    "meaning": "ill, sick",
+    "strokes": 10,
+    "grade": 3,
+    "frequency": 384,
+    "readings": {
+      "on": [
+        "ビョウ",
+        "ヘイ"
+      ],
+      "kun": [
+        "や.む",
+        "-や.み",
+        "やまい"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_75c5",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_8cea",
+    "language": "ja",
+    "char": "質",
+    "text": "質",
+    "kanji": "質",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "シツ / シチ / チ",
+    "meaning": "substance, quality, matter, temperament",
+    "strokes": 15,
+    "grade": 5,
+    "frequency": 389,
+    "readings": {
+      "on": [
+        "シツ",
+        "シチ",
+        "チ"
+      ],
+      "kun": [
+        "たち",
+        "ただ.す",
+        "もと",
+        "わりふ"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_8cea",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_5f85",
+    "language": "ja",
+    "char": "待",
+    "text": "待",
+    "kanji": "待",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "タイ",
+    "meaning": "wait, depend on",
+    "strokes": 9,
+    "grade": 3,
+    "frequency": 391,
+    "readings": {
+      "on": [
+        "タイ"
+      ],
+      "kun": [
+        "ま.つ",
+        "-ま.ち"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_5f85",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_8a66",
+    "language": "ja",
+    "char": "試",
+    "text": "試",
+    "kanji": "試",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "シ",
+    "meaning": "test, try, attempt, experiment, ordeal",
+    "strokes": 13,
+    "grade": 4,
+    "frequency": 392,
+    "readings": {
+      "on": [
+        "シ"
+      ],
+      "kun": [
+        "こころ.みる",
+        "ため.す"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_8a66",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_65cf",
+    "language": "ja",
+    "char": "族",
+    "text": "族",
+    "kanji": "族",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "ゾク",
+    "meaning": "tribe, family",
+    "strokes": 11,
+    "grade": 3,
+    "frequency": 393,
+    "readings": {
+      "on": [
+        "ゾク"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_65cf",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_9280",
+    "language": "ja",
+    "char": "銀",
+    "text": "銀",
+    "kanji": "銀",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "ギン",
+    "meaning": "silver",
+    "strokes": 14,
+    "grade": 3,
+    "frequency": 395,
+    "readings": {
+      "on": [
+        "ギン"
+      ],
+      "kun": [
+        "しろがね"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_9280",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_65e9",
+    "language": "ja",
+    "char": "早",
+    "text": "早",
+    "kanji": "早",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "ソウ / サッ",
+    "meaning": "early, fast",
+    "strokes": 6,
+    "grade": 1,
+    "frequency": 402,
+    "readings": {
+      "on": [
+        "ソウ",
+        "サッ"
+      ],
+      "kun": [
+        "はや.い",
+        "はや",
+        "はや-",
+        "はや.まる",
+        "はや.める",
+        "さ-"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_65e9",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_6620",
+    "language": "ja",
+    "char": "映",
+    "text": "映",
+    "kanji": "映",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "エイ",
+    "meaning": "reflect, reflection, projection",
+    "strokes": 9,
+    "grade": 6,
+    "frequency": 404,
+    "readings": {
+      "on": [
+        "エイ"
+      ],
+      "kun": [
+        "うつ.る",
+        "うつ.す",
+        "は.える",
+        "-ば.え"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_6620",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_89aa",
+    "language": "ja",
+    "char": "親",
+    "text": "親",
+    "kanji": "親",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "シン",
+    "meaning": "parent, intimacy, relative, familiarity, dealer (cards)",
+    "strokes": 16,
+    "grade": 2,
+    "frequency": 406,
+    "readings": {
+      "on": [
+        "シン"
+      ],
+      "kun": [
+        "おや",
+        "おや-",
+        "した.しい",
+        "した.しむ"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_89aa",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_9a13",
+    "language": "ja",
+    "char": "験",
+    "text": "験",
+    "kanji": "験",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "ケン / ゲン",
+    "meaning": "verification, effect, testing",
+    "strokes": 18,
+    "grade": 4,
+    "frequency": 410,
+    "readings": {
+      "on": [
+        "ケン",
+        "ゲン"
+      ],
+      "kun": [
+        "あかし",
+        "しるし",
+        "ため.す",
+        "ためし"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_9a13",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_82f1",
+    "language": "ja",
+    "char": "英",
+    "text": "英",
+    "kanji": "英",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "エイ",
+    "meaning": "England, English, hero, outstanding, calyx",
+    "strokes": 8,
+    "grade": 4,
+    "frequency": 430,
+    "readings": {
+      "on": [
+        "エイ"
+      ],
+      "kun": [
+        "はなぶさ"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_82f1",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_533b",
+    "language": "ja",
+    "char": "医",
+    "text": "医",
+    "kanji": "医",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "イ",
+    "meaning": "doctor, medicine",
+    "strokes": 7,
+    "grade": 3,
+    "frequency": 437,
+    "readings": {
+      "on": [
+        "イ"
+      ],
+      "kun": [
+        "い.やす",
+        "い.する",
+        "くすし"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_533b",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_4ed5",
+    "language": "ja",
+    "char": "仕",
+    "text": "仕",
+    "kanji": "仕",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "シ / ジ",
+    "meaning": "attend, doing, official, serve",
+    "strokes": 5,
+    "grade": 3,
+    "frequency": 439,
+    "readings": {
+      "on": [
+        "シ",
+        "ジ"
+      ],
+      "kun": [
+        "つか.える"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_4ed5",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_53bb",
+    "language": "ja",
+    "char": "去",
+    "text": "去",
+    "kanji": "去",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "キョ / コ",
+    "meaning": "gone, past, quit, leave, elapse",
+    "strokes": 5,
+    "grade": 3,
+    "frequency": 440,
+    "readings": {
+      "on": [
+        "キョ",
+        "コ"
+      ],
+      "kun": [
+        "さ.る",
+        "-さ.る"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_53bb",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_5473",
+    "language": "ja",
+    "char": "味",
+    "text": "味",
+    "kanji": "味",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "ミ",
+    "meaning": "flavor, taste",
+    "strokes": 8,
+    "grade": 3,
+    "frequency": 442,
+    "readings": {
+      "on": [
+        "ミ"
+      ],
+      "kun": [
+        "あじ",
+        "あじ.わう"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_5473",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_5199",
+    "language": "ja",
+    "char": "写",
+    "text": "写",
+    "kanji": "写",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "シャ / ジャ",
+    "meaning": "copy, be photographed, describe",
+    "strokes": 5,
+    "grade": 3,
+    "frequency": 453,
+    "readings": {
+      "on": [
+        "シャ",
+        "ジャ"
+      ],
+      "kun": [
+        "うつ.す",
+        "うつ.る",
+        "うつ-",
+        "うつ.し"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_5199",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_5b57",
+    "language": "ja",
+    "char": "字",
+    "text": "字",
+    "kanji": "字",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "ジ",
+    "meaning": "character, letter, word, section of village",
+    "strokes": 6,
+    "grade": 1,
+    "frequency": 485,
+    "readings": {
+      "on": [
+        "ジ"
+      ],
+      "kun": [
+        "あざ",
+        "あざな",
+        "-な"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_5b57",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_7b54",
+    "language": "ja",
+    "char": "答",
+    "text": "答",
+    "kanji": "答",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "トウ",
+    "meaning": "solution, answer",
+    "strokes": 12,
+    "grade": 2,
+    "frequency": 486,
+    "readings": {
+      "on": [
+        "トウ"
+      ],
+      "kun": [
+        "こた.える",
+        "こた.え"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_7b54",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_591c",
+    "language": "ja",
+    "char": "夜",
+    "text": "夜",
+    "kanji": "夜",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "ヤ",
+    "meaning": "night, evening",
+    "strokes": 8,
+    "grade": 2,
+    "frequency": 487,
+    "readings": {
+      "on": [
+        "ヤ"
+      ],
+      "kun": [
+        "よ",
+        "よる"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_591c",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_97f3",
+    "language": "ja",
+    "char": "音",
+    "text": "音",
+    "kanji": "音",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "オン / イン / -ノン",
+    "meaning": "sound, noise",
+    "strokes": 9,
+    "grade": 1,
+    "frequency": 491,
+    "readings": {
+      "on": [
+        "オン",
+        "イン",
+        "-ノン"
+      ],
+      "kun": [
+        "おと",
+        "ね"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_97f3",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_6ce8",
+    "language": "ja",
+    "char": "注",
+    "text": "注",
+    "kanji": "注",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "チュウ",
+    "meaning": "pour, irrigate, shed (tears), flow into, concentrate on",
+    "strokes": 8,
+    "grade": 3,
+    "frequency": 497,
+    "readings": {
+      "on": [
+        "チュウ"
+      ],
+      "kun": [
+        "そそ.ぐ",
+        "さ.す",
+        "つ.ぐ"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_6ce8",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_5e30",
+    "language": "ja",
+    "char": "帰",
+    "text": "帰",
+    "kanji": "帰",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "キ",
+    "meaning": "homecoming, arrive at, lead to, result in",
+    "strokes": 10,
+    "grade": 2,
+    "frequency": 504,
+    "readings": {
+      "on": [
+        "キ"
+      ],
+      "kun": [
+        "かえ.る",
+        "かえ.す",
+        "おく.る",
+        "とつ.ぐ"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_5e30",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_53e4",
+    "language": "ja",
+    "char": "古",
+    "text": "古",
+    "kanji": "古",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "コ",
+    "meaning": "old",
+    "strokes": 5,
+    "grade": 2,
+    "frequency": 509,
+    "readings": {
+      "on": [
+        "コ"
+      ],
+      "kun": [
+        "ふる.い",
+        "ふる-",
+        "-ふる.す"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_53e4",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_6b4c",
+    "language": "ja",
+    "char": "歌",
+    "text": "歌",
+    "kanji": "歌",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "カ",
+    "meaning": "song, sing",
+    "strokes": 14,
+    "grade": 2,
+    "frequency": 519,
+    "readings": {
+      "on": [
+        "カ"
+      ],
+      "kun": [
+        "うた",
+        "うた.う"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_6b4c",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_8cb7",
+    "language": "ja",
+    "char": "買",
+    "text": "買",
+    "kanji": "買",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "バイ",
+    "meaning": "buy",
+    "strokes": 12,
+    "grade": 2,
+    "frequency": 520,
+    "readings": {
+      "on": [
+        "バイ"
+      ],
+      "kun": [
+        "か.う"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_8cb7",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_60aa",
+    "language": "ja",
+    "char": "悪",
+    "text": "悪",
+    "kanji": "悪",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "アク / オ",
+    "meaning": "bad, vice, rascal, false, evil",
+    "strokes": 11,
+    "grade": 3,
+    "frequency": 530,
+    "readings": {
+      "on": [
+        "アク",
+        "オ"
+      ],
+      "kun": [
+        "わる.い",
+        "わる-",
+        "あ.し",
+        "にく.い",
+        "-にく.い",
+        "ああ",
+        "いずくに",
+        "いずくんぞ",
+        "にく.む"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_60aa",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_56f3",
+    "language": "ja",
+    "char": "図",
+    "text": "図",
+    "kanji": "図",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "ズ / ト",
+    "meaning": "map, drawing, plan, extraordinary, audacious",
+    "strokes": 7,
+    "grade": 2,
+    "frequency": 539,
+    "readings": {
+      "on": [
+        "ズ",
+        "ト"
+      ],
+      "kun": [
+        "え",
+        "はか.る"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_56f3",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_9031",
+    "language": "ja",
+    "char": "週",
+    "text": "週",
+    "kanji": "週",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "シュウ",
+    "meaning": "week",
+    "strokes": 11,
+    "grade": 2,
+    "frequency": 540,
+    "readings": {
+      "on": [
+        "シュウ"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_9031",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_5ba4",
+    "language": "ja",
+    "char": "室",
+    "text": "室",
+    "kanji": "室",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "シツ",
+    "meaning": "room, apartment, chamber, greenhouse, cellar",
+    "strokes": 9,
+    "grade": 2,
+    "frequency": 550,
+    "readings": {
+      "on": [
+        "シツ"
+      ],
+      "kun": [
+        "むろ"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_5ba4",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_6b69",
+    "language": "ja",
+    "char": "歩",
+    "text": "歩",
+    "kanji": "歩",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "ホ / ブ / フ",
+    "meaning": "walk, counter for steps",
+    "strokes": 8,
+    "grade": 2,
+    "frequency": 554,
+    "readings": {
+      "on": [
+        "ホ",
+        "ブ",
+        "フ"
+      ],
+      "kun": [
+        "ある.く",
+        "あゆ.む"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_6b69",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_98a8",
+    "language": "ja",
+    "char": "風",
+    "text": "風",
+    "kanji": "風",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "フウ / フ",
+    "meaning": "wind, air, style, manner",
+    "strokes": 9,
+    "grade": 2,
+    "frequency": 558,
+    "readings": {
+      "on": [
+        "フウ",
+        "フ"
+      ],
+      "kun": [
+        "かぜ",
+        "かざ-"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_98a8",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_7d19",
+    "language": "ja",
+    "char": "紙",
+    "text": "紙",
+    "kanji": "紙",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "シ",
+    "meaning": "paper",
+    "strokes": 10,
+    "grade": 2,
+    "frequency": 559,
+    "readings": {
+      "on": [
+        "シ"
+      ],
+      "kun": [
+        "かみ"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_7d19",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_9ed2",
+    "language": "ja",
+    "char": "黒",
+    "text": "黒",
+    "kanji": "黒",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "コク",
+    "meaning": "black",
+    "strokes": 11,
+    "grade": 2,
+    "frequency": 573,
+    "readings": {
+      "on": [
+        "コク"
+      ],
+      "kun": [
+        "くろ",
+        "くろ.ずむ",
+        "くろ.い"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_9ed2",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_82b1",
+    "language": "ja",
+    "char": "花",
+    "text": "花",
+    "kanji": "花",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "カ / ケ",
+    "meaning": "flower",
+    "strokes": 7,
+    "grade": 1,
+    "frequency": 578,
+    "readings": {
+      "on": [
+        "カ",
+        "ケ"
+      ],
+      "kun": [
+        "はな"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_82b1",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_6625",
+    "language": "ja",
+    "char": "春",
+    "text": "春",
+    "kanji": "春",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "シュン",
+    "meaning": "springtime, spring (season)",
+    "strokes": 9,
+    "grade": 2,
+    "frequency": 579,
+    "readings": {
+      "on": [
+        "シュン"
+      ],
+      "kun": [
+        "はる"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_6625",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_8d64",
+    "language": "ja",
+    "char": "赤",
+    "text": "赤",
+    "kanji": "赤",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "セキ / シャク",
+    "meaning": "red",
+    "strokes": 7,
+    "grade": 1,
+    "frequency": 584,
+    "readings": {
+      "on": [
+        "セキ",
+        "シャク"
+      ],
+      "kun": [
+        "あか",
+        "あか-",
+        "あか.い",
+        "あか.らむ",
+        "あか.らめる"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_8d64",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_9752",
+    "language": "ja",
+    "char": "青",
+    "text": "青",
+    "kanji": "青",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "セイ / ショウ",
+    "meaning": "blue, green",
+    "strokes": 8,
+    "grade": 1,
+    "frequency": 589,
+    "readings": {
+      "on": [
+        "セイ",
+        "ショウ"
+      ],
+      "kun": [
+        "あお",
+        "あお-",
+        "あお.い"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_9752",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_9928",
+    "language": "ja",
+    "char": "館",
+    "text": "館",
+    "kanji": "館",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "カン",
+    "meaning": "building, mansion, large building, palace",
+    "strokes": 16,
+    "grade": 3,
+    "frequency": 613,
+    "readings": {
+      "on": [
+        "カン"
+      ],
+      "kun": [
+        "やかた",
+        "たて"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_9928",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_5c4b",
+    "language": "ja",
+    "char": "屋",
+    "text": "屋",
+    "kanji": "屋",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "オク",
+    "meaning": "roof, house, shop, dealer, seller",
+    "strokes": 9,
+    "grade": 3,
+    "frequency": 616,
+    "readings": {
+      "on": [
+        "オク"
+      ],
+      "kun": [
+        "や"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_5c4b",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_8272",
+    "language": "ja",
+    "char": "色",
+    "text": "色",
+    "kanji": "色",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "ショク / シキ",
+    "meaning": "color",
+    "strokes": 6,
+    "grade": 2,
+    "frequency": 621,
+    "readings": {
+      "on": [
+        "ショク",
+        "シキ"
+      ],
+      "kun": [
+        "いろ"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_8272",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_8d70",
+    "language": "ja",
+    "char": "走",
+    "text": "走",
+    "kanji": "走",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "ソウ",
+    "meaning": "run",
+    "strokes": 7,
+    "grade": 2,
+    "frequency": 626,
+    "readings": {
+      "on": [
+        "ソウ"
+      ],
+      "kun": [
+        "はし.る"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_8d70",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_79cb",
+    "language": "ja",
+    "char": "秋",
+    "text": "秋",
+    "kanji": "秋",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "シュウ",
+    "meaning": "autumn",
+    "strokes": 9,
+    "grade": 2,
+    "frequency": 635,
+    "readings": {
+      "on": [
+        "シュウ"
+      ],
+      "kun": [
+        "あき",
+        "とき"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_79cb",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_590f",
+    "language": "ja",
+    "char": "夏",
+    "text": "夏",
+    "kanji": "夏",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "カ / ガ / ゲ",
+    "meaning": "summer",
+    "strokes": 10,
+    "grade": 2,
+    "frequency": 659,
+    "readings": {
+      "on": [
+        "カ",
+        "ガ",
+        "ゲ"
+      ],
+      "kun": [
+        "なつ"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_590f",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_7fd2",
+    "language": "ja",
+    "char": "習",
+    "text": "習",
+    "kanji": "習",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "シュウ / ジュ",
+    "meaning": "learn",
+    "strokes": 11,
+    "grade": 3,
+    "frequency": 706,
+    "readings": {
+      "on": [
+        "シュウ",
+        "ジュ"
+      ],
+      "kun": [
+        "なら.う",
+        "なら.い"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_7fd2",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_99c5",
+    "language": "ja",
+    "char": "駅",
+    "text": "駅",
+    "kanji": "駅",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "エキ",
+    "meaning": "station",
+    "strokes": 14,
+    "grade": 3,
+    "frequency": 724,
+    "readings": {
+      "on": [
+        "エキ"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_99c5",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_6d0b",
+    "language": "ja",
+    "char": "洋",
+    "text": "洋",
+    "kanji": "洋",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "ヨウ",
+    "meaning": "ocean, sea, foreign, Western style",
+    "strokes": 9,
+    "grade": 3,
+    "frequency": 763,
+    "readings": {
+      "on": [
+        "ヨウ"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_6d0b",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_65c5",
+    "language": "ja",
+    "char": "旅",
+    "text": "旅",
+    "kanji": "旅",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "リョ",
+    "meaning": "trip, travel",
+    "strokes": 10,
+    "grade": 3,
+    "frequency": 783,
+    "readings": {
+      "on": [
+        "リョ"
+      ],
+      "kun": [
+        "たび"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_65c5",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_670d",
+    "language": "ja",
+    "char": "服",
+    "text": "服",
+    "kanji": "服",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "フク",
+    "meaning": "clothing, admit, obey, discharge",
+    "strokes": 8,
+    "grade": 3,
+    "frequency": 873,
+    "readings": {
+      "on": [
+        "フク"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_670d",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_5915",
+    "language": "ja",
+    "char": "夕",
+    "text": "夕",
+    "kanji": "夕",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "セキ",
+    "meaning": "evening",
+    "strokes": 3,
+    "grade": 1,
+    "frequency": 924,
+    "readings": {
+      "on": [
+        "セキ"
+      ],
+      "kun": [
+        "ゆう"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_5915",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_501f",
+    "language": "ja",
+    "char": "借",
+    "text": "借",
+    "kanji": "借",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "シャク",
+    "meaning": "borrow, rent",
+    "strokes": 10,
+    "grade": 4,
+    "frequency": 932,
+    "readings": {
+      "on": [
+        "シャク"
+      ],
+      "kun": [
+        "か.りる"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_501f",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_66dc",
+    "language": "ja",
+    "char": "曜",
+    "text": "曜",
+    "kanji": "曜",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "ヨウ",
+    "meaning": "weekday",
+    "strokes": 18,
+    "grade": 2,
+    "frequency": 940,
+    "readings": {
+      "on": [
+        "ヨウ"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_66dc",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_98f2",
+    "language": "ja",
+    "char": "飲",
+    "text": "飲",
+    "kanji": "飲",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "イン / オン",
+    "meaning": "drink, smoke, take",
+    "strokes": 12,
+    "grade": 3,
+    "frequency": 969,
+    "readings": {
+      "on": [
+        "イン",
+        "オン"
+      ],
+      "kun": [
+        "の.む",
+        "-の.み"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_98f2",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_8089",
+    "language": "ja",
+    "char": "肉",
+    "text": "肉",
+    "kanji": "肉",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "ニク",
+    "meaning": "meat",
+    "strokes": 6,
+    "grade": 2,
+    "frequency": 986,
+    "readings": {
+      "on": [
+        "ニク"
+      ],
+      "kun": [
+        "しし"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_8089",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_8cb8",
+    "language": "ja",
+    "char": "貸",
+    "text": "貸",
+    "kanji": "貸",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "タイ",
+    "meaning": "lend",
+    "strokes": 12,
+    "grade": 5,
+    "frequency": 995,
+    "readings": {
+      "on": [
+        "タイ"
+      ],
+      "kun": [
+        "か.す",
+        "か.し-",
+        "かし-"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_8cb8",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_5802",
+    "language": "ja",
+    "char": "堂",
+    "text": "堂",
+    "kanji": "堂",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "ドウ",
+    "meaning": "public chamber, hall",
+    "strokes": 11,
+    "grade": 5,
+    "frequency": 1010,
+    "readings": {
+      "on": [
+        "ドウ"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_5802",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_9ce5",
+    "language": "ja",
+    "char": "鳥",
+    "text": "鳥",
+    "kanji": "鳥",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "チョウ",
+    "meaning": "bird, chicken",
+    "strokes": 11,
+    "grade": 2,
+    "frequency": 1043,
+    "readings": {
+      "on": [
+        "チョウ"
+      ],
+      "kun": [
+        "とり"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_9ce5",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_98ef",
+    "language": "ja",
+    "char": "飯",
+    "text": "飯",
+    "kanji": "飯",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "ハン",
+    "meaning": "meal, boiled rice",
+    "strokes": 12,
+    "grade": 4,
+    "frequency": 1046,
+    "readings": {
+      "on": [
+        "ハン"
+      ],
+      "kun": [
+        "めし"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_98ef",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_52c9",
+    "language": "ja",
+    "char": "勉",
+    "text": "勉",
+    "kanji": "勉",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "ベン",
+    "meaning": "exertion, endeavour, encourage, strive, make effort",
+    "strokes": 10,
+    "grade": 3,
+    "frequency": 1066,
+    "readings": {
+      "on": [
+        "ベン"
+      ],
+      "kun": [
+        "つと.める"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_52c9",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_51ac",
+    "language": "ja",
+    "char": "冬",
+    "text": "冬",
+    "kanji": "冬",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "トウ",
+    "meaning": "winter",
+    "strokes": 5,
+    "grade": 2,
+    "frequency": 1090,
+    "readings": {
+      "on": [
+        "トウ"
+      ],
+      "kun": [
+        "ふゆ"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_51ac",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_663c",
+    "language": "ja",
+    "char": "昼",
+    "text": "昼",
+    "kanji": "昼",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "チュウ",
+    "meaning": "daytime, noon",
+    "strokes": 9,
+    "grade": 2,
+    "frequency": 1115,
+    "readings": {
+      "on": [
+        "チュウ"
+      ],
+      "kun": [
+        "ひる"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_663c",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_8336",
+    "language": "ja",
+    "char": "茶",
+    "text": "茶",
+    "kanji": "茶",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "チャ / サ",
+    "meaning": "tea",
+    "strokes": 9,
+    "grade": 2,
+    "frequency": 1116,
+    "readings": {
+      "on": [
+        "チャ",
+        "サ"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_8336",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_5f1f",
+    "language": "ja",
+    "char": "弟",
+    "text": "弟",
+    "kanji": "弟",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "テイ / ダイ / デ",
+    "meaning": "younger brother, faithful service to elders",
+    "strokes": 7,
+    "grade": 2,
+    "frequency": 1161,
+    "readings": {
+      "on": [
+        "テイ",
+        "ダイ",
+        "デ"
+      ],
+      "kun": [
+        "おとうと"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_5f1f",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_725b",
+    "language": "ja",
+    "char": "牛",
+    "text": "牛",
+    "kanji": "牛",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "ギュウ",
+    "meaning": "cow",
+    "strokes": 4,
+    "grade": 2,
+    "frequency": 1202,
+    "readings": {
+      "on": [
+        "ギュウ"
+      ],
+      "kun": [
+        "うし"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_725b",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_9b5a",
+    "language": "ja",
+    "char": "魚",
+    "text": "魚",
+    "kanji": "魚",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "ギョ",
+    "meaning": "fish",
+    "strokes": 11,
+    "grade": 2,
+    "frequency": 1208,
+    "readings": {
+      "on": [
+        "ギョ"
+      ],
+      "kun": [
+        "うお",
+        "さかな",
+        "-ざかな"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_9b5a",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_5144",
+    "language": "ja",
+    "char": "兄",
+    "text": "兄",
+    "kanji": "兄",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "ケイ / キョウ",
+    "meaning": "elder brother, big brother",
+    "strokes": 5,
+    "grade": 2,
+    "frequency": 1219,
+    "readings": {
+      "on": [
+        "ケイ",
+        "キョウ"
+      ],
+      "kun": [
+        "あに"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_5144",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_72ac",
+    "language": "ja",
+    "char": "犬",
+    "text": "犬",
+    "kanji": "犬",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "ケン",
+    "meaning": "dog",
+    "strokes": 4,
+    "grade": 1,
+    "frequency": 1326,
+    "readings": {
+      "on": [
+        "ケン"
+      ],
+      "kun": [
+        "いぬ",
+        "いぬ-"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_72ac",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_59b9",
+    "language": "ja",
+    "char": "妹",
+    "text": "妹",
+    "kanji": "妹",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "マイ",
+    "meaning": "younger sister",
+    "strokes": 8,
+    "grade": 2,
+    "frequency": 1446,
+    "readings": {
+      "on": [
+        "マイ"
+      ],
+      "kun": [
+        "いもうと"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_59b9",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_59c9",
+    "language": "ja",
+    "char": "姉",
+    "text": "姉",
+    "kanji": "姉",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "シ",
+    "meaning": "elder sister",
+    "strokes": 8,
+    "grade": 2,
+    "frequency": 1473,
+    "readings": {
+      "on": [
+        "シ"
+      ],
+      "kun": [
+        "あね",
+        "はは"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_59c9",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  },
+  {
+    "id": "ja_kanji_6f22",
+    "language": "ja",
+    "char": "漢",
+    "text": "漢",
+    "kanji": "漢",
+    "hiragana": null,
+    "katakana": null,
+    "romanization": "カン",
+    "meaning": "Sino-, China",
+    "strokes": 13,
+    "grade": 3,
+    "frequency": 1487,
+    "readings": {
+      "on": [
+        "カン"
+      ]
+    },
+    "examMappings": {
+      "jlpt": "N4"
+    },
+    "audio": "char:ja_kanji_6f22",
+    "tags": [
+      "kanji",
+      "N4"
+    ]
+  }
+]
