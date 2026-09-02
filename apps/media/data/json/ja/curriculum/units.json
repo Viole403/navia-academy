@@ -21,7 +21,7 @@
     "levelId": "ja-n5",
     "title": "Katakana and Self-Introduction",
     "subtitle": "カタカナと自己紹介",
-    "order": 2,
+    "order": 3,
     "description": "Master Katakana and introduce yourself in Japanese.",
     "lessonIds": [
       "ja-n5-u2-l1",
@@ -37,7 +37,7 @@
     "levelId": "ja-n5",
     "title": "Basic Kanji and Daily Life",
     "subtitle": "基本漢字と日常生活",
-    "order": 3,
+    "order": 5,
     "description": "Learn essential Kanji and daily life vocabulary.",
     "lessonIds": [
       "ja-n5-u3-l1",
@@ -53,7 +53,7 @@
     "levelId": "ja-n5",
     "title": "Numbers, Time, and Shopping",
     "subtitle": "数字、時間、買い物",
-    "order": 4,
+    "order": 7,
     "description": "Count, tell time, and shop in Japanese.",
     "lessonIds": [
       "ja-n5-u4-l1"
@@ -83,7 +83,7 @@
     "levelId": "ja-n4",
     "title": "Particles and Sentence Structure",
     "subtitle": "助詞と文の構造",
-    "order": 2,
+    "order": 3,
     "description": "Understand Japanese particles and sentence patterns.",
     "lessonIds": [
       "ja-n4-u2-l1"
@@ -124,596 +124,11 @@
     "description_id": "Kuasai pola tata bahasa lanjutan dan menulis."
   },
   {
-    "id": "ja-n5-t1",
-    "levelId": "ja-n5",
-    "title": "Greetings & Politeness",
-    "subtitle": "挨拶と丁寧語",
-    "order": 1,
-    "description": "Practice greetings & politeness.",
-    "lessonIds": [
-      "ja-n5-t1-l1"
-    ],
-    "subtitle_en": "挨拶と丁寧語",
-    "subtitle_id": "Greetings & Politeness",
-    "description_en": "Practice greetings & politeness.",
-    "description_id": "Latihan greetings & politeness."
-  },
-  {
-    "id": "ja-n5-t2",
-    "levelId": "ja-n5",
-    "title": "Food & Drink",
-    "subtitle": "食べ物と飲み物",
-    "order": 2,
-    "description": "Practice food & drink.",
-    "lessonIds": [
-      "ja-n5-t2-l2"
-    ],
-    "subtitle_en": "食べ物と飲み物",
-    "subtitle_id": "Food & Drink",
-    "description_en": "Practice food & drink.",
-    "description_id": "Latihan food & drink."
-  },
-  {
-    "id": "ja-n5-t3",
-    "levelId": "ja-n5",
-    "title": "Time & Numbers",
-    "subtitle": "時間と数字",
-    "order": 3,
-    "description": "Practice time & numbers.",
-    "lessonIds": [
-      "ja-n5-t3-l3"
-    ],
-    "subtitle_en": "時間と数字",
-    "subtitle_id": "Time & Numbers",
-    "description_en": "Practice time & numbers.",
-    "description_id": "Latihan time & numbers."
-  },
-  {
-    "id": "ja-n5-t4",
-    "levelId": "ja-n5",
-    "title": "People & Family",
-    "subtitle": "人と家族",
-    "order": 4,
-    "description": "Practice people & family.",
-    "lessonIds": [
-      "ja-n5-t4-l4"
-    ],
-    "subtitle_en": "人と家族",
-    "subtitle_id": "People & Family",
-    "description_en": "Practice people & family.",
-    "description_id": "Latihan people & family."
-  },
-  {
-    "id": "ja-n5-t5",
-    "levelId": "ja-n5",
-    "title": "Daily Life",
-    "subtitle": "日常生活",
-    "order": 5,
-    "description": "Practice daily life.",
-    "lessonIds": [
-      "ja-n5-t5-l5"
-    ],
-    "subtitle_en": "日常生活",
-    "subtitle_id": "Daily Life",
-    "description_en": "Practice daily life.",
-    "description_id": "Latihan daily life."
-  },
-  {
-    "id": "ja-n5-t6",
-    "levelId": "ja-n5",
-    "title": "Travel & Places",
-    "subtitle": "旅行と場所",
-    "order": 6,
-    "description": "Practice travel & places.",
-    "lessonIds": [
-      "ja-n5-t6-l6"
-    ],
-    "subtitle_en": "旅行と場所",
-    "subtitle_id": "Travel & Places",
-    "description_en": "Practice travel & places.",
-    "description_id": "Latihan travel & places."
-  },
-  {
-    "id": "ja-n5-t7",
-    "levelId": "ja-n5",
-    "title": "Feelings & Opinions",
-    "subtitle": "気持ちと意見",
-    "order": 7,
-    "description": "Practice feelings & opinions.",
-    "lessonIds": [
-      "ja-n5-t7-l7"
-    ],
-    "subtitle_en": "気持ちと意見",
-    "subtitle_id": "Feelings & Opinions",
-    "description_en": "Practice feelings & opinions.",
-    "description_id": "Latihan feelings & opinions."
-  },
-  {
-    "id": "ja-n5-t8",
-    "levelId": "ja-n5",
-    "title": "Nature & Weather",
-    "subtitle": "自然と天気",
-    "order": 8,
-    "description": "Practice nature & weather.",
-    "lessonIds": [
-      "ja-n5-t8-l8"
-    ],
-    "subtitle_en": "自然と天気",
-    "subtitle_id": "Nature & Weather",
-    "description_en": "Practice nature & weather.",
-    "description_id": "Latihan nature & weather."
-  },
-  {
-    "id": "ja-n4-t1",
-    "levelId": "ja-n4",
-    "title": "Food & Drink",
-    "subtitle": "食べ物と飲み物",
-    "order": 1,
-    "description": "Practice food & drink.",
-    "lessonIds": [
-      "ja-n4-t1-l1"
-    ],
-    "subtitle_en": "食べ物と飲み物",
-    "subtitle_id": "Food & Drink",
-    "description_en": "Practice food & drink.",
-    "description_id": "Latihan food & drink."
-  },
-  {
-    "id": "ja-n4-t2",
-    "levelId": "ja-n4",
-    "title": "Time & Numbers",
-    "subtitle": "時間と数字",
-    "order": 2,
-    "description": "Practice time & numbers.",
-    "lessonIds": [
-      "ja-n4-t2-l2"
-    ],
-    "subtitle_en": "時間と数字",
-    "subtitle_id": "Time & Numbers",
-    "description_en": "Practice time & numbers.",
-    "description_id": "Latihan time & numbers."
-  },
-  {
-    "id": "ja-n4-t3",
-    "levelId": "ja-n4",
-    "title": "People & Family",
-    "subtitle": "人と家族",
-    "order": 3,
-    "description": "Practice people & family.",
-    "lessonIds": [
-      "ja-n4-t3-l3"
-    ],
-    "subtitle_en": "人と家族",
-    "subtitle_id": "People & Family",
-    "description_en": "Practice people & family.",
-    "description_id": "Latihan people & family."
-  },
-  {
-    "id": "ja-n4-t4",
-    "levelId": "ja-n4",
-    "title": "Daily Life",
-    "subtitle": "日常生活",
-    "order": 4,
-    "description": "Practice daily life.",
-    "lessonIds": [
-      "ja-n4-t4-l4"
-    ],
-    "subtitle_en": "日常生活",
-    "subtitle_id": "Daily Life",
-    "description_en": "Practice daily life.",
-    "description_id": "Latihan daily life."
-  },
-  {
-    "id": "ja-n4-t5",
-    "levelId": "ja-n4",
-    "title": "Travel & Places",
-    "subtitle": "旅行と場所",
-    "order": 5,
-    "description": "Practice travel & places.",
-    "lessonIds": [
-      "ja-n4-t5-l5"
-    ],
-    "subtitle_en": "旅行と場所",
-    "subtitle_id": "Travel & Places",
-    "description_en": "Practice travel & places.",
-    "description_id": "Latihan travel & places."
-  },
-  {
-    "id": "ja-n4-t6",
-    "levelId": "ja-n4",
-    "title": "Feelings & Opinions",
-    "subtitle": "気持ちと意見",
-    "order": 6,
-    "description": "Practice feelings & opinions.",
-    "lessonIds": [
-      "ja-n4-t6-l6"
-    ],
-    "subtitle_en": "気持ちと意見",
-    "subtitle_id": "Feelings & Opinions",
-    "description_en": "Practice feelings & opinions.",
-    "description_id": "Latihan feelings & opinions."
-  },
-  {
-    "id": "ja-n4-t7",
-    "levelId": "ja-n4",
-    "title": "Nature & Weather",
-    "subtitle": "自然と天気",
-    "order": 7,
-    "description": "Practice nature & weather.",
-    "lessonIds": [
-      "ja-n4-t7-l7"
-    ],
-    "subtitle_en": "自然と天気",
-    "subtitle_id": "Nature & Weather",
-    "description_en": "Practice nature & weather.",
-    "description_id": "Latihan nature & weather."
-  },
-  {
-    "id": "ja-n3-t1",
-    "levelId": "ja-n3",
-    "title": "Greetings & Politeness",
-    "subtitle": "挨拶と丁寧語",
-    "order": 1,
-    "description": "Practice greetings & politeness.",
-    "lessonIds": [
-      "ja-n3-t1-l1"
-    ],
-    "subtitle_en": "挨拶と丁寧語",
-    "subtitle_id": "Greetings & Politeness",
-    "description_en": "Practice greetings & politeness.",
-    "description_id": "Latihan greetings & politeness."
-  },
-  {
-    "id": "ja-n3-t2",
-    "levelId": "ja-n3",
-    "title": "Food & Drink",
-    "subtitle": "食べ物と飲み物",
-    "order": 2,
-    "description": "Practice food & drink.",
-    "lessonIds": [
-      "ja-n3-t2-l2"
-    ],
-    "subtitle_en": "食べ物と飲み物",
-    "subtitle_id": "Food & Drink",
-    "description_en": "Practice food & drink.",
-    "description_id": "Latihan food & drink."
-  },
-  {
-    "id": "ja-n3-t3",
-    "levelId": "ja-n3",
-    "title": "Time & Numbers",
-    "subtitle": "時間と数字",
-    "order": 3,
-    "description": "Practice time & numbers.",
-    "lessonIds": [
-      "ja-n3-t3-l3"
-    ],
-    "subtitle_en": "時間と数字",
-    "subtitle_id": "Time & Numbers",
-    "description_en": "Practice time & numbers.",
-    "description_id": "Latihan time & numbers."
-  },
-  {
-    "id": "ja-n3-t4",
-    "levelId": "ja-n3",
-    "title": "People & Family",
-    "subtitle": "人と家族",
-    "order": 4,
-    "description": "Practice people & family.",
-    "lessonIds": [
-      "ja-n3-t4-l4"
-    ],
-    "subtitle_en": "人と家族",
-    "subtitle_id": "People & Family",
-    "description_en": "Practice people & family.",
-    "description_id": "Latihan people & family."
-  },
-  {
-    "id": "ja-n3-t5",
-    "levelId": "ja-n3",
-    "title": "Daily Life",
-    "subtitle": "日常生活",
-    "order": 5,
-    "description": "Practice daily life.",
-    "lessonIds": [
-      "ja-n3-t5-l5"
-    ],
-    "subtitle_en": "日常生活",
-    "subtitle_id": "Daily Life",
-    "description_en": "Practice daily life.",
-    "description_id": "Latihan daily life."
-  },
-  {
-    "id": "ja-n3-t6",
-    "levelId": "ja-n3",
-    "title": "Travel & Places",
-    "subtitle": "旅行と場所",
-    "order": 6,
-    "description": "Practice travel & places.",
-    "lessonIds": [
-      "ja-n3-t6-l6"
-    ],
-    "subtitle_en": "旅行と場所",
-    "subtitle_id": "Travel & Places",
-    "description_en": "Practice travel & places.",
-    "description_id": "Latihan travel & places."
-  },
-  {
-    "id": "ja-n3-t7",
-    "levelId": "ja-n3",
-    "title": "Feelings & Opinions",
-    "subtitle": "気持ちと意見",
-    "order": 7,
-    "description": "Practice feelings & opinions.",
-    "lessonIds": [
-      "ja-n3-t7-l7"
-    ],
-    "subtitle_en": "気持ちと意見",
-    "subtitle_id": "Feelings & Opinions",
-    "description_en": "Practice feelings & opinions.",
-    "description_id": "Latihan feelings & opinions."
-  },
-  {
-    "id": "ja-n3-t8",
-    "levelId": "ja-n3",
-    "title": "Nature & Weather",
-    "subtitle": "自然と天気",
-    "order": 8,
-    "description": "Practice nature & weather.",
-    "lessonIds": [
-      "ja-n3-t8-l8"
-    ],
-    "subtitle_en": "自然と天気",
-    "subtitle_id": "Nature & Weather",
-    "description_en": "Practice nature & weather.",
-    "description_id": "Latihan nature & weather."
-  },
-  {
-    "id": "ja-n2-t1",
-    "levelId": "ja-n2",
-    "title": "Greetings & Politeness",
-    "subtitle": "挨拶と丁寧語",
-    "order": 1,
-    "description": "Practice greetings & politeness.",
-    "lessonIds": [
-      "ja-n2-t1-l1"
-    ],
-    "subtitle_en": "挨拶と丁寧語",
-    "subtitle_id": "Greetings & Politeness",
-    "description_en": "Practice greetings & politeness.",
-    "description_id": "Latihan greetings & politeness."
-  },
-  {
-    "id": "ja-n2-t2",
-    "levelId": "ja-n2",
-    "title": "Food & Drink",
-    "subtitle": "食べ物と飲み物",
-    "order": 2,
-    "description": "Practice food & drink.",
-    "lessonIds": [
-      "ja-n2-t2-l2"
-    ],
-    "subtitle_en": "食べ物と飲み物",
-    "subtitle_id": "Food & Drink",
-    "description_en": "Practice food & drink.",
-    "description_id": "Latihan food & drink."
-  },
-  {
-    "id": "ja-n2-t3",
-    "levelId": "ja-n2",
-    "title": "Time & Numbers",
-    "subtitle": "時間と数字",
-    "order": 3,
-    "description": "Practice time & numbers.",
-    "lessonIds": [
-      "ja-n2-t3-l3"
-    ],
-    "subtitle_en": "時間と数字",
-    "subtitle_id": "Time & Numbers",
-    "description_en": "Practice time & numbers.",
-    "description_id": "Latihan time & numbers."
-  },
-  {
-    "id": "ja-n2-t4",
-    "levelId": "ja-n2",
-    "title": "People & Family",
-    "subtitle": "人と家族",
-    "order": 4,
-    "description": "Practice people & family.",
-    "lessonIds": [
-      "ja-n2-t4-l4"
-    ],
-    "subtitle_en": "人と家族",
-    "subtitle_id": "People & Family",
-    "description_en": "Practice people & family.",
-    "description_id": "Latihan people & family."
-  },
-  {
-    "id": "ja-n2-t5",
-    "levelId": "ja-n2",
-    "title": "Daily Life",
-    "subtitle": "日常生活",
-    "order": 5,
-    "description": "Practice daily life.",
-    "lessonIds": [
-      "ja-n2-t5-l5"
-    ],
-    "subtitle_en": "日常生活",
-    "subtitle_id": "Daily Life",
-    "description_en": "Practice daily life.",
-    "description_id": "Latihan daily life."
-  },
-  {
-    "id": "ja-n2-t6",
-    "levelId": "ja-n2",
-    "title": "Travel & Places",
-    "subtitle": "旅行と場所",
-    "order": 6,
-    "description": "Practice travel & places.",
-    "lessonIds": [
-      "ja-n2-t6-l6"
-    ],
-    "subtitle_en": "旅行と場所",
-    "subtitle_id": "Travel & Places",
-    "description_en": "Practice travel & places.",
-    "description_id": "Latihan travel & places."
-  },
-  {
-    "id": "ja-n2-t7",
-    "levelId": "ja-n2",
-    "title": "Feelings & Opinions",
-    "subtitle": "気持ちと意見",
-    "order": 7,
-    "description": "Practice feelings & opinions.",
-    "lessonIds": [
-      "ja-n2-t7-l7"
-    ],
-    "subtitle_en": "気持ちと意見",
-    "subtitle_id": "Feelings & Opinions",
-    "description_en": "Practice feelings & opinions.",
-    "description_id": "Latihan feelings & opinions."
-  },
-  {
-    "id": "ja-n2-t8",
-    "levelId": "ja-n2",
-    "title": "Nature & Weather",
-    "subtitle": "自然と天気",
-    "order": 8,
-    "description": "Practice nature & weather.",
-    "lessonIds": [
-      "ja-n2-t8-l8"
-    ],
-    "subtitle_en": "自然と天気",
-    "subtitle_id": "Nature & Weather",
-    "description_en": "Practice nature & weather.",
-    "description_id": "Latihan nature & weather."
-  },
-  {
-    "id": "ja-n1-t1",
-    "levelId": "ja-n1",
-    "title": "Greetings & Politeness",
-    "subtitle": "挨拶と丁寧語",
-    "order": 1,
-    "description": "Practice greetings & politeness.",
-    "lessonIds": [
-      "ja-n1-t1-l1"
-    ],
-    "subtitle_en": "挨拶と丁寧語",
-    "subtitle_id": "Greetings & Politeness",
-    "description_en": "Practice greetings & politeness.",
-    "description_id": "Latihan greetings & politeness."
-  },
-  {
-    "id": "ja-n1-t2",
-    "levelId": "ja-n1",
-    "title": "Food & Drink",
-    "subtitle": "食べ物と飲み物",
-    "order": 2,
-    "description": "Practice food & drink.",
-    "lessonIds": [
-      "ja-n1-t2-l2"
-    ],
-    "subtitle_en": "食べ物と飲み物",
-    "subtitle_id": "Food & Drink",
-    "description_en": "Practice food & drink.",
-    "description_id": "Latihan food & drink."
-  },
-  {
-    "id": "ja-n1-t3",
-    "levelId": "ja-n1",
-    "title": "Time & Numbers",
-    "subtitle": "時間と数字",
-    "order": 3,
-    "description": "Practice time & numbers.",
-    "lessonIds": [
-      "ja-n1-t3-l3"
-    ],
-    "subtitle_en": "時間と数字",
-    "subtitle_id": "Time & Numbers",
-    "description_en": "Practice time & numbers.",
-    "description_id": "Latihan time & numbers."
-  },
-  {
-    "id": "ja-n1-t4",
-    "levelId": "ja-n1",
-    "title": "People & Family",
-    "subtitle": "人と家族",
-    "order": 4,
-    "description": "Practice people & family.",
-    "lessonIds": [
-      "ja-n1-t4-l4"
-    ],
-    "subtitle_en": "人と家族",
-    "subtitle_id": "People & Family",
-    "description_en": "Practice people & family.",
-    "description_id": "Latihan people & family."
-  },
-  {
-    "id": "ja-n1-t5",
-    "levelId": "ja-n1",
-    "title": "Daily Life",
-    "subtitle": "日常生活",
-    "order": 5,
-    "description": "Practice daily life.",
-    "lessonIds": [
-      "ja-n1-t5-l5"
-    ],
-    "subtitle_en": "日常生活",
-    "subtitle_id": "Daily Life",
-    "description_en": "Practice daily life.",
-    "description_id": "Latihan daily life."
-  },
-  {
-    "id": "ja-n1-t6",
-    "levelId": "ja-n1",
-    "title": "Travel & Places",
-    "subtitle": "旅行と場所",
-    "order": 6,
-    "description": "Practice travel & places.",
-    "lessonIds": [
-      "ja-n1-t6-l6"
-    ],
-    "subtitle_en": "旅行と場所",
-    "subtitle_id": "Travel & Places",
-    "description_en": "Practice travel & places.",
-    "description_id": "Latihan travel & places."
-  },
-  {
-    "id": "ja-n1-t7",
-    "levelId": "ja-n1",
-    "title": "Feelings & Opinions",
-    "subtitle": "気持ちと意見",
-    "order": 7,
-    "description": "Practice feelings & opinions.",
-    "lessonIds": [
-      "ja-n1-t7-l7"
-    ],
-    "subtitle_en": "気持ちと意見",
-    "subtitle_id": "Feelings & Opinions",
-    "description_en": "Practice feelings & opinions.",
-    "description_id": "Latihan feelings & opinions."
-  },
-  {
-    "id": "ja-n1-t8",
-    "levelId": "ja-n1",
-    "title": "Nature & Weather",
-    "subtitle": "自然と天気",
-    "order": 8,
-    "description": "Practice nature & weather.",
-    "lessonIds": [
-      "ja-n1-t8-l8"
-    ],
-    "subtitle_en": "自然と天気",
-    "subtitle_id": "Nature & Weather",
-    "description_en": "Practice nature & weather.",
-    "description_id": "Latihan nature & weather."
-  },
-  {
     "id": "ja-n5-d1",
     "levelId": "ja-n5",
     "title": "Basics",
     "subtitle": "Basics",
-    "order": 1,
+    "order": 2,
     "description": "Practice basics.",
     "lessonIds": [
       "ja-n5-d1-l1"
@@ -728,7 +143,7 @@
     "levelId": "ja-n5",
     "title": "People",
     "subtitle": "People",
-    "order": 2,
+    "order": 4,
     "description": "Practice people.",
     "lessonIds": [
       "ja-n5-d2-l1"
@@ -743,7 +158,7 @@
     "levelId": "ja-n5",
     "title": "Cafe",
     "subtitle": "Cafe",
-    "order": 3,
+    "order": 6,
     "description": "Practice cafe.",
     "lessonIds": [
       "ja-n5-d3-l1"
@@ -758,7 +173,7 @@
     "levelId": "ja-n5",
     "title": "Bonus Skill 1",
     "subtitle": "Bonus Skill 1",
-    "order": 4,
+    "order": 8,
     "description": "Practice bonus skill 1.",
     "lessonIds": [
       "ja-n5-d4-l1"
@@ -773,7 +188,7 @@
     "levelId": "ja-n5",
     "title": "Countries",
     "subtitle": "Countries",
-    "order": 5,
+    "order": 9,
     "description": "Practice countries.",
     "lessonIds": [
       "ja-n5-d5-l1"
@@ -788,7 +203,7 @@
     "levelId": "ja-n5",
     "title": "Belongings",
     "subtitle": "Belongings",
-    "order": 6,
+    "order": 10,
     "description": "Practice belongings.",
     "lessonIds": [
       "ja-n5-d6-l1"
@@ -803,7 +218,7 @@
     "levelId": "ja-n5",
     "title": "Neighbors",
     "subtitle": "Neighbors",
-    "order": 7,
+    "order": 11,
     "description": "Practice neighbors.",
     "lessonIds": [
       "ja-n5-d7-l1"
@@ -818,7 +233,7 @@
     "levelId": "ja-n5",
     "title": "Travel",
     "subtitle": "Travel",
-    "order": 8,
+    "order": 12,
     "description": "Practice travel.",
     "lessonIds": [
       "ja-n5-d8-l1"
@@ -833,7 +248,7 @@
     "levelId": "ja-n5",
     "title": "Welcome",
     "subtitle": "Welcome",
-    "order": 9,
+    "order": 13,
     "description": "Practice welcome.",
     "lessonIds": [
       "ja-n5-d9-l1"
@@ -848,7 +263,7 @@
     "levelId": "ja-n5",
     "title": "My Family",
     "subtitle": "My Family",
-    "order": 10,
+    "order": 14,
     "description": "Practice my family.",
     "lessonIds": [
       "ja-n5-d10-l1"
@@ -863,7 +278,7 @@
     "levelId": "ja-n5",
     "title": "Mealtime",
     "subtitle": "Mealtime",
-    "order": 11,
+    "order": 15,
     "description": "Practice mealtime.",
     "lessonIds": [
       "ja-n5-d11-l1"
@@ -878,7 +293,7 @@
     "levelId": "ja-n5",
     "title": "Restaurant",
     "subtitle": "Restaurant",
-    "order": 12,
+    "order": 16,
     "description": "Practice restaurant.",
     "lessonIds": [
       "ja-n5-d12-l1"
@@ -893,7 +308,7 @@
     "levelId": "ja-n5",
     "title": "Weekend",
     "subtitle": "Weekend",
-    "order": 13,
+    "order": 17,
     "description": "Practice weekend.",
     "lessonIds": [
       "ja-n5-d13-l1"
@@ -908,7 +323,7 @@
     "levelId": "ja-n5",
     "title": "Routines",
     "subtitle": "Routines",
-    "order": 14,
+    "order": 18,
     "description": "Practice routines.",
     "lessonIds": [
       "ja-n5-d14-l1"
@@ -923,7 +338,7 @@
     "levelId": "ja-n5",
     "title": "New Friend",
     "subtitle": "New Friend",
-    "order": 15,
+    "order": 19,
     "description": "Practice new friend.",
     "lessonIds": [
       "ja-n5-d15-l1"
@@ -938,7 +353,7 @@
     "levelId": "ja-n5",
     "title": "Transport",
     "subtitle": "Transport",
-    "order": 16,
+    "order": 20,
     "description": "Practice transport.",
     "lessonIds": [
       "ja-n5-d16-l1"
@@ -953,7 +368,7 @@
     "levelId": "ja-n5",
     "title": "Sights",
     "subtitle": "Sights",
-    "order": 17,
+    "order": 21,
     "description": "Practice sights.",
     "lessonIds": [
       "ja-n5-d17-l1"
@@ -968,7 +383,7 @@
     "levelId": "ja-n5",
     "title": "Weather",
     "subtitle": "Weather",
-    "order": 18,
+    "order": 22,
     "description": "Practice weather.",
     "lessonIds": [
       "ja-n5-d18-l1"
@@ -983,7 +398,7 @@
     "levelId": "ja-n5",
     "title": "Family 2",
     "subtitle": "Family 2",
-    "order": 19,
+    "order": 23,
     "description": "Practice family 2.",
     "lessonIds": [
       "ja-n5-d19-l1"
@@ -998,7 +413,7 @@
     "levelId": "ja-n5",
     "title": "Travel 2",
     "subtitle": "Travel 2",
-    "order": 20,
+    "order": 24,
     "description": "Practice travel 2.",
     "lessonIds": [
       "ja-n5-d20-l1"
@@ -1013,7 +428,7 @@
     "levelId": "ja-n5",
     "title": "Visiting",
     "subtitle": "Visiting",
-    "order": 21,
+    "order": 25,
     "description": "Practice visiting.",
     "lessonIds": [
       "ja-n5-d21-l1"
@@ -1028,7 +443,7 @@
     "levelId": "ja-n5",
     "title": "Pastries",
     "subtitle": "Pastries",
-    "order": 22,
+    "order": 26,
     "description": "Practice pastries.",
     "lessonIds": [
       "ja-n5-d22-l1"
@@ -1043,7 +458,7 @@
     "levelId": "ja-n5",
     "title": "Cooking",
     "subtitle": "Cooking",
-    "order": 23,
+    "order": 27,
     "description": "Practice cooking.",
     "lessonIds": [
       "ja-n5-d23-l1"
@@ -1058,7 +473,7 @@
     "levelId": "ja-n5",
     "title": "Occupation",
     "subtitle": "Occupation",
-    "order": 24,
+    "order": 28,
     "description": "Practice occupation.",
     "lessonIds": [
       "ja-n5-d24-l1"
@@ -1073,7 +488,7 @@
     "levelId": "ja-n5",
     "title": "Bookstore",
     "subtitle": "Bookstore",
-    "order": 25,
+    "order": 29,
     "description": "Practice bookstore.",
     "lessonIds": [
       "ja-n5-d25-l1"
@@ -1088,7 +503,7 @@
     "levelId": "ja-n5",
     "title": "Office",
     "subtitle": "Office",
-    "order": 26,
+    "order": 30,
     "description": "Practice office.",
     "lessonIds": [
       "ja-n5-d26-l1"
@@ -1103,7 +518,7 @@
     "levelId": "ja-n5",
     "title": "Hobbies 2",
     "subtitle": "Hobbies 2",
-    "order": 27,
+    "order": 31,
     "description": "Practice hobbies 2.",
     "lessonIds": [
       "ja-n5-d27-l1"
@@ -1118,7 +533,7 @@
     "levelId": "ja-n5",
     "title": "Events",
     "subtitle": "Events",
-    "order": 28,
+    "order": 32,
     "description": "Practice events.",
     "lessonIds": [
       "ja-n5-d28-l1"
@@ -1133,7 +548,7 @@
     "levelId": "ja-n5",
     "title": "Station 2",
     "subtitle": "Station 2",
-    "order": 29,
+    "order": 33,
     "description": "Practice station 2.",
     "lessonIds": [
       "ja-n5-d29-l1"
@@ -1148,7 +563,7 @@
     "levelId": "ja-n5",
     "title": "University",
     "subtitle": "University",
-    "order": 30,
+    "order": 34,
     "description": "Practice university.",
     "lessonIds": [
       "ja-n5-d30-l1"
@@ -1163,7 +578,7 @@
     "levelId": "ja-n5",
     "title": "Outdoors",
     "subtitle": "Outdoors",
-    "order": 31,
+    "order": 35,
     "description": "Practice outdoors.",
     "lessonIds": [
       "ja-n5-d31-l1"
@@ -1178,7 +593,7 @@
     "levelId": "ja-n5",
     "title": "Food",
     "subtitle": "Food",
-    "order": 32,
+    "order": 36,
     "description": "Practice food.",
     "lessonIds": [
       "ja-n5-d32-l1"
@@ -1193,7 +608,7 @@
     "levelId": "ja-n5",
     "title": "Hotel",
     "subtitle": "Hotel",
-    "order": 33,
+    "order": 37,
     "description": "Practice hotel.",
     "lessonIds": [
       "ja-n5-d33-l1"
@@ -1208,7 +623,7 @@
     "levelId": "ja-n5",
     "title": "Past Trip",
     "subtitle": "Past Trip",
-    "order": 34,
+    "order": 38,
     "description": "Practice past trip.",
     "lessonIds": [
       "ja-n5-d34-l1"
@@ -1223,7 +638,7 @@
     "levelId": "ja-n5",
     "title": "Birthday",
     "subtitle": "Birthday",
-    "order": 35,
+    "order": 39,
     "description": "Practice birthday.",
     "lessonIds": [
       "ja-n5-d35-l1"
@@ -1238,7 +653,7 @@
     "levelId": "ja-n5",
     "title": "Computers",
     "subtitle": "Computers",
-    "order": 36,
+    "order": 40,
     "description": "Practice computers.",
     "lessonIds": [
       "ja-n5-d36-l1"
@@ -1253,7 +668,7 @@
     "levelId": "ja-n5",
     "title": "Concert",
     "subtitle": "Concert",
-    "order": 37,
+    "order": 41,
     "description": "Practice concert.",
     "lessonIds": [
       "ja-n5-d37-l1"
@@ -1268,7 +683,7 @@
     "levelId": "ja-n5",
     "title": "College",
     "subtitle": "College",
-    "order": 38,
+    "order": 42,
     "description": "Practice college.",
     "lessonIds": [
       "ja-n5-d38-l1"
@@ -1283,7 +698,7 @@
     "levelId": "ja-n5",
     "title": "Clothes 2",
     "subtitle": "Clothes 2",
-    "order": 39,
+    "order": 43,
     "description": "Practice clothes 2.",
     "lessonIds": [
       "ja-n5-d39-l1"
@@ -1298,7 +713,7 @@
     "levelId": "ja-n5",
     "title": "Seasons",
     "subtitle": "Seasons",
-    "order": 40,
+    "order": 44,
     "description": "Practice seasons.",
     "lessonIds": [
       "ja-n5-d40-l1"
@@ -1313,7 +728,7 @@
     "levelId": "ja-n5",
     "title": "Birthday 2",
     "subtitle": "Birthday 2",
-    "order": 41,
+    "order": 45,
     "description": "Practice birthday 2.",
     "lessonIds": [
       "ja-n5-d41-l1"
@@ -1328,7 +743,7 @@
     "levelId": "ja-n5",
     "title": "Slow Day",
     "subtitle": "Slow Day",
-    "order": 42,
+    "order": 46,
     "description": "Practice slow day.",
     "lessonIds": [
       "ja-n5-d42-l1"
@@ -1343,7 +758,7 @@
     "levelId": "ja-n5",
     "title": "Meet Up",
     "subtitle": "Meet Up",
-    "order": 43,
+    "order": 47,
     "description": "Practice meet up.",
     "lessonIds": [
       "ja-n5-d43-l1"
@@ -1358,7 +773,7 @@
     "levelId": "ja-n5",
     "title": "Cruise",
     "subtitle": "Cruise",
-    "order": 44,
+    "order": 48,
     "description": "Practice cruise.",
     "lessonIds": [
       "ja-n5-d44-l1"
@@ -1373,7 +788,7 @@
     "levelId": "ja-n5",
     "title": "Sakura",
     "subtitle": "Sakura",
-    "order": 45,
+    "order": 49,
     "description": "Practice sakura.",
     "lessonIds": [
       "ja-n5-d45-l1"
@@ -1388,7 +803,7 @@
     "levelId": "ja-n5",
     "title": "Zoo",
     "subtitle": "Zoo",
-    "order": 46,
+    "order": 50,
     "description": "Practice zoo.",
     "lessonIds": [
       "ja-n5-d46-l1"
@@ -1403,7 +818,7 @@
     "levelId": "ja-n5",
     "title": "Sick Day",
     "subtitle": "Sick Day",
-    "order": 47,
+    "order": 51,
     "description": "Practice sick day.",
     "lessonIds": [
       "ja-n5-d47-l1"
@@ -1418,7 +833,7 @@
     "levelId": "ja-n5",
     "title": "WorkPlace",
     "subtitle": "WorkPlace",
-    "order": 48,
+    "order": 52,
     "description": "Practice workplace.",
     "lessonIds": [
       "ja-n5-d48-l1"
@@ -1433,7 +848,7 @@
     "levelId": "ja-n5",
     "title": "Gifts",
     "subtitle": "Gifts",
-    "order": 49,
+    "order": 53,
     "description": "Practice gifts.",
     "lessonIds": [
       "ja-n5-d49-l1"
@@ -1448,7 +863,7 @@
     "levelId": "ja-n5",
     "title": "Ryokan",
     "subtitle": "Ryokan",
-    "order": 50,
+    "order": 54,
     "description": "Practice ryokan.",
     "lessonIds": [
       "ja-n5-d50-l1"
@@ -1463,7 +878,7 @@
     "levelId": "ja-n5",
     "title": "Clothes3",
     "subtitle": "Clothes3",
-    "order": 51,
+    "order": 55,
     "description": "Practice clothes3.",
     "lessonIds": [
       "ja-n5-d51-l1"
@@ -1478,7 +893,7 @@
     "levelId": "ja-n5",
     "title": "College 2",
     "subtitle": "College 2",
-    "order": 52,
+    "order": 56,
     "description": "Practice college 2.",
     "lessonIds": [
       "ja-n5-d52-l1"
@@ -1493,7 +908,7 @@
     "levelId": "ja-n5",
     "title": "Cooking 2",
     "subtitle": "Cooking 2",
-    "order": 53,
+    "order": 57,
     "description": "Practice cooking 2.",
     "lessonIds": [
       "ja-n5-d53-l1"
@@ -1508,7 +923,7 @@
     "levelId": "ja-n5",
     "title": "New Home 2",
     "subtitle": "New Home 2",
-    "order": 54,
+    "order": 58,
     "description": "Practice new home 2.",
     "lessonIds": [
       "ja-n5-d54-l1"
@@ -1523,7 +938,7 @@
     "levelId": "ja-n5",
     "title": "Clinic",
     "subtitle": "Clinic",
-    "order": 55,
+    "order": 59,
     "description": "Practice clinic.",
     "lessonIds": [
       "ja-n5-d55-l1"
@@ -1538,7 +953,7 @@
     "levelId": "ja-n5",
     "title": "Hotel 2",
     "subtitle": "Hotel 2",
-    "order": 56,
+    "order": 60,
     "description": "Practice hotel 2.",
     "lessonIds": [
       "ja-n5-d56-l1"
@@ -1553,7 +968,7 @@
     "levelId": "ja-n5",
     "title": "Growing Up",
     "subtitle": "Growing Up",
-    "order": 57,
+    "order": 61,
     "description": "Practice growing up.",
     "lessonIds": [
       "ja-n5-d57-l1"
@@ -1568,7 +983,7 @@
     "levelId": "ja-n5",
     "title": "Bad Date",
     "subtitle": "Bad Date",
-    "order": 58,
+    "order": 62,
     "description": "Practice bad date.",
     "lessonIds": [
       "ja-n5-d58-l1"
@@ -1583,7 +998,7 @@
     "levelId": "ja-n5",
     "title": "Doctor",
     "subtitle": "Doctor",
-    "order": 59,
+    "order": 63,
     "description": "Practice doctor.",
     "lessonIds": [
       "ja-n5-d59-l1"
@@ -1598,7 +1013,7 @@
     "levelId": "ja-n5",
     "title": "Summer",
     "subtitle": "Summer",
-    "order": 60,
+    "order": 64,
     "description": "Practice summer.",
     "lessonIds": [
       "ja-n5-d60-l1"
@@ -1613,7 +1028,7 @@
     "levelId": "ja-n5",
     "title": "Restaur. 2",
     "subtitle": "Restaur. 2",
-    "order": 61,
+    "order": 65,
     "description": "Practice restaur. 2.",
     "lessonIds": [
       "ja-n5-d61-l1"
@@ -1628,7 +1043,7 @@
     "levelId": "ja-n5",
     "title": "Wedding",
     "subtitle": "Wedding",
-    "order": 62,
+    "order": 66,
     "description": "Practice wedding.",
     "lessonIds": [
       "ja-n5-d62-l1"
@@ -1643,7 +1058,7 @@
     "levelId": "ja-n5",
     "title": "Invitation",
     "subtitle": "Invitation",
-    "order": 63,
+    "order": 67,
     "description": "Practice invitation.",
     "lessonIds": [
       "ja-n5-d63-l1"
@@ -1658,7 +1073,7 @@
     "levelId": "ja-n5",
     "title": "Restaur.3",
     "subtitle": "Restaur.3",
-    "order": 64,
+    "order": 68,
     "description": "Practice restaur.3.",
     "lessonIds": [
       "ja-n5-d64-l1"
@@ -1673,7 +1088,7 @@
     "levelId": "ja-n5",
     "title": "Univ.2",
     "subtitle": "Univ.2",
-    "order": 65,
+    "order": 69,
     "description": "Practice univ.2.",
     "lessonIds": [
       "ja-n5-d65-l1"
@@ -1688,7 +1103,7 @@
     "levelId": "ja-n5",
     "title": "Good Date",
     "subtitle": "Good Date",
-    "order": 66,
+    "order": 70,
     "description": "Practice good date.",
     "lessonIds": [
       "ja-n5-d66-l1"
@@ -1703,7 +1118,7 @@
     "levelId": "ja-n5",
     "title": "Stationery",
     "subtitle": "Stationery",
-    "order": 67,
+    "order": 71,
     "description": "Practice stationery.",
     "lessonIds": [
       "ja-n5-d67-l1"
@@ -1718,7 +1133,7 @@
     "levelId": "ja-n5",
     "title": "Conbini",
     "subtitle": "Conbini",
-    "order": 68,
+    "order": 72,
     "description": "Practice conbini.",
     "lessonIds": [
       "ja-n5-d68-l1"
@@ -1733,7 +1148,7 @@
     "levelId": "ja-n5",
     "title": "In Town",
     "subtitle": "In Town",
-    "order": 69,
+    "order": 73,
     "description": "Practice in town.",
     "lessonIds": [
       "ja-n5-d69-l1"
@@ -1748,7 +1163,7 @@
     "levelId": "ja-n5",
     "title": "Routines 2",
     "subtitle": "Routines 2",
-    "order": 70,
+    "order": 74,
     "description": "Practice routines 2.",
     "lessonIds": [
       "ja-n5-d70-l1"
@@ -1763,7 +1178,7 @@
     "levelId": "ja-n5",
     "title": "Home 1",
     "subtitle": "Home 1",
-    "order": 71,
+    "order": 75,
     "description": "Practice home 1.",
     "lessonIds": [
       "ja-n5-d71-l1"
@@ -1778,7 +1193,7 @@
     "levelId": "ja-n5",
     "title": "Family 3",
     "subtitle": "Family 3",
-    "order": 72,
+    "order": 76,
     "description": "Practice family 3.",
     "lessonIds": [
       "ja-n5-d72-l1"
@@ -1793,7 +1208,7 @@
     "levelId": "ja-n5",
     "title": "Activity 1",
     "subtitle": "Activity 1",
-    "order": 73,
+    "order": 77,
     "description": "Practice activity 1.",
     "lessonIds": [
       "ja-n5-d73-l1"
@@ -1808,7 +1223,7 @@
     "levelId": "ja-n5",
     "title": "Position",
     "subtitle": "Position",
-    "order": 74,
+    "order": 78,
     "description": "Practice position.",
     "lessonIds": [
       "ja-n5-d74-l1"
@@ -1823,7 +1238,7 @@
     "levelId": "ja-n5",
     "title": "Activity 2",
     "subtitle": "Activity 2",
-    "order": 75,
+    "order": 79,
     "description": "Practice activity 2.",
     "lessonIds": [
       "ja-n5-d75-l1"
@@ -1838,7 +1253,7 @@
     "levelId": "ja-n5",
     "title": "Hobby 1",
     "subtitle": "Hobby 1",
-    "order": 76,
+    "order": 80,
     "description": "Practice hobby 1.",
     "lessonIds": [
       "ja-n5-d76-l1"
@@ -1853,7 +1268,7 @@
     "levelId": "ja-n5",
     "title": "Transportation 1",
     "subtitle": "Transportation 1",
-    "order": 77,
+    "order": 81,
     "description": "Practice transportation 1.",
     "lessonIds": [
       "ja-n5-d77-l1"
@@ -1868,7 +1283,7 @@
     "levelId": "ja-n5",
     "title": "Clothes 1",
     "subtitle": "Clothes 1",
-    "order": 78,
+    "order": 82,
     "description": "Practice clothes 1.",
     "lessonIds": [
       "ja-n5-d78-l1"
@@ -1883,7 +1298,7 @@
     "levelId": "ja-n5",
     "title": "Weather 1",
     "subtitle": "Weather 1",
-    "order": 79,
+    "order": 83,
     "description": "Practice weather 1.",
     "lessonIds": [
       "ja-n5-d79-l1"
@@ -1898,7 +1313,7 @@
     "levelId": "ja-n5",
     "title": "Direction 2",
     "subtitle": "Direction 2",
-    "order": 80,
+    "order": 84,
     "description": "Practice direction 2.",
     "lessonIds": [
       "ja-n5-d80-l1"
@@ -1913,7 +1328,7 @@
     "levelId": "ja-n5",
     "title": "Dates",
     "subtitle": "Dates",
-    "order": 81,
+    "order": 85,
     "description": "Practice dates.",
     "lessonIds": [
       "ja-n5-d81-l1"
@@ -1928,7 +1343,7 @@
     "levelId": "ja-n5",
     "title": "People 2",
     "subtitle": "People 2",
-    "order": 82,
+    "order": 86,
     "description": "Practice people 2.",
     "lessonIds": [
       "ja-n5-d82-l1"
@@ -1943,7 +1358,7 @@
     "levelId": "ja-n5",
     "title": "Clothes 4",
     "subtitle": "Clothes 4",
-    "order": 83,
+    "order": 87,
     "description": "Practice clothes 4.",
     "lessonIds": [
       "ja-n5-d83-l1"
@@ -1958,7 +1373,7 @@
     "levelId": "ja-n5",
     "title": "Nature 1",
     "subtitle": "Nature 1",
-    "order": 84,
+    "order": 88,
     "description": "Practice nature 1.",
     "lessonIds": [
       "ja-n5-d84-l1"
@@ -1973,7 +1388,7 @@
     "levelId": "ja-n5",
     "title": "Convenience Store",
     "subtitle": "Convenience Store",
-    "order": 85,
+    "order": 89,
     "description": "Practice convenience store.",
     "lessonIds": [
       "ja-n5-d85-l1"
@@ -1988,7 +1403,7 @@
     "levelId": "ja-n5",
     "title": "Feelings 1",
     "subtitle": "Feelings 1",
-    "order": 86,
+    "order": 90,
     "description": "Practice feelings 1.",
     "lessonIds": [
       "ja-n5-d86-l1"
@@ -2003,7 +1418,7 @@
     "levelId": "ja-n5",
     "title": "Object",
     "subtitle": "Object",
-    "order": 87,
+    "order": 91,
     "description": "Practice object.",
     "lessonIds": [
       "ja-n5-d87-l1"
@@ -2018,7 +1433,7 @@
     "levelId": "ja-n5",
     "title": "Clothes 3",
     "subtitle": "Clothes 3",
-    "order": 88,
+    "order": 92,
     "description": "Practice clothes 3.",
     "lessonIds": [
       "ja-n5-d88-l1"
@@ -2033,7 +1448,7 @@
     "levelId": "ja-n5",
     "title": "Classroom 3",
     "subtitle": "Classroom 3",
-    "order": 89,
+    "order": 93,
     "description": "Practice classroom 3.",
     "lessonIds": [
       "ja-n5-d89-l1"
@@ -2048,7 +1463,7 @@
     "levelId": "ja-n5",
     "title": "Health 1",
     "subtitle": "Health 1",
-    "order": 90,
+    "order": 94,
     "description": "Practice health 1.",
     "lessonIds": [
       "ja-n5-d90-l1"
@@ -2063,7 +1478,7 @@
     "levelId": "ja-n5",
     "title": "Memories 1",
     "subtitle": "Memories 1",
-    "order": 91,
+    "order": 95,
     "description": "Practice memories 1.",
     "lessonIds": [
       "ja-n5-d91-l1"
@@ -2078,7 +1493,7 @@
     "levelId": "ja-n5",
     "title": "Post Office",
     "subtitle": "Post Office",
-    "order": 92,
+    "order": 96,
     "description": "Practice post office.",
     "lessonIds": [
       "ja-n5-d92-l1"
@@ -2093,7 +1508,7 @@
     "levelId": "ja-n5",
     "title": "The City",
     "subtitle": "The City",
-    "order": 93,
+    "order": 97,
     "description": "Practice the city.",
     "lessonIds": [
       "ja-n5-d93-l1"
@@ -2108,7 +1523,7 @@
     "levelId": "ja-n5",
     "title": "Ability 1",
     "subtitle": "Ability 1",
-    "order": 94,
+    "order": 98,
     "description": "Practice ability 1.",
     "lessonIds": [
       "ja-n5-d94-l1"
@@ -2123,7 +1538,7 @@
     "levelId": "ja-n5",
     "title": "Money 1",
     "subtitle": "Money 1",
-    "order": 95,
+    "order": 99,
     "description": "Practice money 1.",
     "lessonIds": [
       "ja-n5-d95-l1"
@@ -2138,7 +1553,7 @@
     "levelId": "ja-n5",
     "title": "Ability 2",
     "subtitle": "Ability 2",
-    "order": 96,
+    "order": 100,
     "description": "Practice ability 2.",
     "lessonIds": [
       "ja-n5-d96-l1"
@@ -2153,7 +1568,7 @@
     "levelId": "ja-n5",
     "title": "Restaurant 2",
     "subtitle": "Restaurant 2",
-    "order": 97,
+    "order": 101,
     "description": "Practice restaurant 2.",
     "lessonIds": [
       "ja-n5-d97-l1"
@@ -2168,7 +1583,7 @@
     "levelId": "ja-n4",
     "title": "Condition",
     "subtitle": "Condition",
-    "order": 1,
+    "order": 2,
     "description": "Practice condition.",
     "lessonIds": [
       "ja-n4-d1-l1"
@@ -2183,7 +1598,7 @@
     "levelId": "ja-n4",
     "title": "Cooking 1",
     "subtitle": "Cooking 1",
-    "order": 2,
+    "order": 4,
     "description": "Practice cooking 1.",
     "lessonIds": [
       "ja-n4-d2-l1"
@@ -2198,7 +1613,7 @@
     "levelId": "ja-n4",
     "title": "Resources",
     "subtitle": "Resources",
-    "order": 3,
+    "order": 5,
     "description": "Practice resources.",
     "lessonIds": [
       "ja-n4-d3-l1"
@@ -2213,7 +1628,7 @@
     "levelId": "ja-n4",
     "title": "Emergency 1",
     "subtitle": "Emergency 1",
-    "order": 4,
+    "order": 6,
     "description": "Practice emergency 1.",
     "lessonIds": [
       "ja-n4-d4-l1"
@@ -2228,7 +1643,7 @@
     "levelId": "ja-n4",
     "title": "Education",
     "subtitle": "Education",
-    "order": 5,
+    "order": 7,
     "description": "Practice education.",
     "lessonIds": [
       "ja-n4-d5-l1"
@@ -2243,7 +1658,7 @@
     "levelId": "ja-n4",
     "title": "Numbers 2",
     "subtitle": "Numbers 2",
-    "order": 6,
+    "order": 8,
     "description": "Practice numbers 2.",
     "lessonIds": [
       "ja-n4-d6-l1"
@@ -2258,7 +1673,7 @@
     "levelId": "ja-n4",
     "title": "Desires 1",
     "subtitle": "Desires 1",
-    "order": 7,
+    "order": 9,
     "description": "Practice desires 1.",
     "lessonIds": [
       "ja-n4-d7-l1"
@@ -2273,7 +1688,7 @@
     "levelId": "ja-n4",
     "title": "Ideas 1",
     "subtitle": "Ideas 1",
-    "order": 8,
+    "order": 10,
     "description": "Practice ideas 1.",
     "lessonIds": [
       "ja-n4-d8-l1"
@@ -2288,7 +1703,7 @@
     "levelId": "ja-n4",
     "title": "Education 2",
     "subtitle": "Education 2",
-    "order": 9,
+    "order": 11,
     "description": "Practice education 2.",
     "lessonIds": [
       "ja-n4-d9-l1"
@@ -2303,7 +1718,7 @@
     "levelId": "ja-n4",
     "title": "Ideas 2",
     "subtitle": "Ideas 2",
-    "order": 10,
+    "order": 12,
     "description": "Practice ideas 2.",
     "lessonIds": [
       "ja-n4-d10-l1"
@@ -2318,7 +1733,7 @@
     "levelId": "ja-n4",
     "title": "Health 2",
     "subtitle": "Health 2",
-    "order": 11,
+    "order": 13,
     "description": "Practice health 2.",
     "lessonIds": [
       "ja-n4-d11-l1"
@@ -2333,7 +1748,7 @@
     "levelId": "ja-n4",
     "title": "Society",
     "subtitle": "Society",
-    "order": 12,
+    "order": 14,
     "description": "Practice society.",
     "lessonIds": [
       "ja-n4-d12-l1"
@@ -2348,7 +1763,7 @@
     "levelId": "ja-n4",
     "title": "Work 2",
     "subtitle": "Work 2",
-    "order": 13,
+    "order": 15,
     "description": "Practice work 2.",
     "lessonIds": [
       "ja-n4-d13-l1"
@@ -2363,7 +1778,7 @@
     "levelId": "ja-n4",
     "title": "Feelings 2",
     "subtitle": "Feelings 2",
-    "order": 14,
+    "order": 16,
     "description": "Practice feelings 2.",
     "lessonIds": [
       "ja-n4-d14-l1"
@@ -2378,7 +1793,7 @@
     "levelId": "ja-n4",
     "title": "The Arts 1",
     "subtitle": "The Arts 1",
-    "order": 15,
+    "order": 17,
     "description": "Practice the arts 1.",
     "lessonIds": [
       "ja-n4-d15-l1"
@@ -2393,7 +1808,7 @@
     "levelId": "ja-n4",
     "title": "Geography 1",
     "subtitle": "Geography 1",
-    "order": 16,
+    "order": 18,
     "description": "Practice geography 1.",
     "lessonIds": [
       "ja-n4-d16-l1"
@@ -2408,7 +1823,7 @@
     "levelId": "ja-n4",
     "title": "Law 1",
     "subtitle": "Law 1",
-    "order": 17,
+    "order": 19,
     "description": "Practice law 1.",
     "lessonIds": [
       "ja-n4-d17-l1"
@@ -2423,7 +1838,7 @@
     "levelId": "ja-n4",
     "title": "Plans 1",
     "subtitle": "Plans 1",
-    "order": 18,
+    "order": 20,
     "description": "Practice plans 1.",
     "lessonIds": [
       "ja-n4-d18-l1"
@@ -2438,7 +1853,7 @@
     "levelId": "ja-n4",
     "title": "Conflict 1",
     "subtitle": "Conflict 1",
-    "order": 19,
+    "order": 21,
     "description": "Practice conflict 1.",
     "lessonIds": [
       "ja-n4-d19-l1"
@@ -2453,7 +1868,7 @@
     "levelId": "ja-n4",
     "title": "Law 2",
     "subtitle": "Law 2",
-    "order": 20,
+    "order": 22,
     "description": "Practice law 2.",
     "lessonIds": [
       "ja-n4-d20-l1"
@@ -2468,7 +1883,7 @@
     "levelId": "ja-n4",
     "title": "Obligation 2",
     "subtitle": "Obligation 2",
-    "order": 21,
+    "order": 23,
     "description": "Practice obligation 2.",
     "lessonIds": [
       "ja-n4-d21-l1"
@@ -2483,7 +1898,7 @@
     "levelId": "ja-n4",
     "title": "Honorifics 1",
     "subtitle": "Honorifics 1",
-    "order": 22,
+    "order": 24,
     "description": "Practice honorifics 1.",
     "lessonIds": [
       "ja-n4-d22-l1"
@@ -2498,7 +1913,7 @@
     "levelId": "ja-n4",
     "title": "Geography 2",
     "subtitle": "Geography 2",
-    "order": 23,
+    "order": 25,
     "description": "Practice geography 2.",
     "lessonIds": [
       "ja-n4-d23-l1"
@@ -2513,7 +1928,7 @@
     "levelId": "ja-n4",
     "title": "Politics 2",
     "subtitle": "Politics 2",
-    "order": 24,
+    "order": 26,
     "description": "Practice politics 2.",
     "lessonIds": [
       "ja-n4-d24-l1"
@@ -2528,7 +1943,7 @@
     "levelId": "ja-n4",
     "title": "Health 3",
     "subtitle": "Health 3",
-    "order": 25,
+    "order": 27,
     "description": "Practice health 3.",
     "lessonIds": [
       "ja-n4-d25-l1"
@@ -2543,7 +1958,7 @@
     "levelId": "ja-n4",
     "title": "News 1",
     "subtitle": "News 1",
-    "order": 26,
+    "order": 28,
     "description": "Practice news 1.",
     "lessonIds": [
       "ja-n4-d26-l1"
@@ -2558,7 +1973,7 @@
     "levelId": "ja-n4",
     "title": "Transportation 4",
     "subtitle": "Transportation 4",
-    "order": 27,
+    "order": 29,
     "description": "Practice transportation 4.",
     "lessonIds": [
       "ja-n4-d27-l1"
@@ -2573,7 +1988,7 @@
     "levelId": "ja-n4",
     "title": "Fantasy 1",
     "subtitle": "Fantasy 1",
-    "order": 28,
+    "order": 30,
     "description": "Practice fantasy 1.",
     "lessonIds": [
       "ja-n4-d28-l1"
@@ -2588,7 +2003,7 @@
     "levelId": "ja-n4",
     "title": "Ideas 3",
     "subtitle": "Ideas 3",
-    "order": 29,
+    "order": 31,
     "description": "Practice ideas 3.",
     "lessonIds": [
       "ja-n4-d29-l1"
@@ -2603,7 +2018,7 @@
     "levelId": "ja-n4",
     "title": "The Clinic",
     "subtitle": "The Clinic",
-    "order": 30,
+    "order": 32,
     "description": "Practice the clinic.",
     "lessonIds": [
       "ja-n4-d30-l1"
@@ -2618,7 +2033,7 @@
     "levelId": "ja-n4",
     "title": "The Train",
     "subtitle": "The Train",
-    "order": 31,
+    "order": 33,
     "description": "Practice the train.",
     "lessonIds": [
       "ja-n4-d31-l1"
@@ -2633,7 +2048,7 @@
     "levelId": "ja-n4",
     "title": "Work 4",
     "subtitle": "Work 4",
-    "order": 32,
+    "order": 34,
     "description": "Practice work 4.",
     "lessonIds": [
       "ja-n4-d32-l1"
@@ -2648,7 +2063,7 @@
     "levelId": "ja-n4",
     "title": "News 2",
     "subtitle": "News 2",
-    "order": 33,
+    "order": 35,
     "description": "Practice news 2.",
     "lessonIds": [
       "ja-n4-d33-l1"
@@ -2663,7 +2078,7 @@
     "levelId": "ja-n4",
     "title": "Authority",
     "subtitle": "Authority",
-    "order": 34,
+    "order": 36,
     "description": "Practice authority.",
     "lessonIds": [
       "ja-n4-d34-l1"
@@ -2678,7 +2093,7 @@
     "levelId": "ja-n4",
     "title": "Animals",
     "subtitle": "Animals",
-    "order": 35,
+    "order": 37,
     "description": "Practice animals.",
     "lessonIds": [
       "ja-n4-d35-l1"
@@ -2693,7 +2108,7 @@
     "levelId": "ja-n4",
     "title": "Casual 1",
     "subtitle": "Casual 1",
-    "order": 36,
+    "order": 38,
     "description": "Practice casual 1.",
     "lessonIds": [
       "ja-n4-d36-l1"
@@ -2708,7 +2123,7 @@
     "levelId": "ja-n4",
     "title": "Desires 2",
     "subtitle": "Desires 2",
-    "order": 37,
+    "order": 39,
     "description": "Practice desires 2.",
     "lessonIds": [
       "ja-n4-d37-l1"
@@ -2723,7 +2138,7 @@
     "levelId": "ja-n4",
     "title": "The Dentist",
     "subtitle": "The Dentist",
-    "order": 38,
+    "order": 40,
     "description": "Practice the dentist.",
     "lessonIds": [
       "ja-n4-d38-l1"
@@ -2738,7 +2153,7 @@
     "levelId": "ja-n4",
     "title": "Cooking 5",
     "subtitle": "Cooking 5",
-    "order": 39,
+    "order": 41,
     "description": "Practice cooking 5.",
     "lessonIds": [
       "ja-n4-d39-l1"
@@ -2753,7 +2168,7 @@
     "levelId": "ja-n4",
     "title": "People 3",
     "subtitle": "People 3",
-    "order": 40,
+    "order": 42,
     "description": "Practice people 3.",
     "lessonIds": [
       "ja-n4-d40-l1"
@@ -2768,7 +2183,7 @@
     "levelId": "ja-n4",
     "title": "The Clinic 2",
     "subtitle": "The Clinic 2",
-    "order": 41,
+    "order": 43,
     "description": "Practice the clinic 2.",
     "lessonIds": [
       "ja-n4-d41-l1"
@@ -2783,7 +2198,7 @@
     "levelId": "ja-n4",
     "title": "The Arts 2",
     "subtitle": "The Arts 2",
-    "order": 42,
+    "order": 44,
     "description": "Practice the arts 2.",
     "lessonIds": [
       "ja-n4-d42-l1"
@@ -2798,7 +2213,7 @@
     "levelId": "ja-n4",
     "title": "Ideas 4",
     "subtitle": "Ideas 4",
-    "order": 43,
+    "order": 45,
     "description": "Practice ideas 4.",
     "lessonIds": [
       "ja-n4-d43-l1"
@@ -2813,7 +2228,7 @@
     "levelId": "ja-n4",
     "title": "Restaurant 3",
     "subtitle": "Restaurant 3",
-    "order": 44,
+    "order": 46,
     "description": "Practice restaurant 3.",
     "lessonIds": [
       "ja-n4-d44-l1"
@@ -2828,7 +2243,7 @@
     "levelId": "ja-n4",
     "title": "Fantasy 2",
     "subtitle": "Fantasy 2",
-    "order": 45,
+    "order": 47,
     "description": "Practice fantasy 2.",
     "lessonIds": [
       "ja-n4-d45-l1"
@@ -2843,7 +2258,7 @@
     "levelId": "ja-n4",
     "title": "The Farm",
     "subtitle": "The Farm",
-    "order": 46,
+    "order": 48,
     "description": "Practice the farm.",
     "lessonIds": [
       "ja-n4-d46-l1"
@@ -2858,7 +2273,7 @@
     "levelId": "ja-n4",
     "title": "Language",
     "subtitle": "Language",
-    "order": 47,
+    "order": 49,
     "description": "Practice language.",
     "lessonIds": [
       "ja-n4-d47-l1"
@@ -2873,7 +2288,7 @@
     "levelId": "ja-n4",
     "title": "Science 3",
     "subtitle": "Science 3",
-    "order": 48,
+    "order": 50,
     "description": "Practice science 3.",
     "lessonIds": [
       "ja-n4-d48-l1"
@@ -2888,7 +2303,7 @@
     "levelId": "ja-n4",
     "title": "Ideas 5",
     "subtitle": "Ideas 5",
-    "order": 49,
+    "order": 51,
     "description": "Practice ideas 5.",
     "lessonIds": [
       "ja-n4-d49-l1"
@@ -2903,7 +2318,7 @@
     "levelId": "ja-n4",
     "title": "Law 3",
     "subtitle": "Law 3",
-    "order": 50,
+    "order": 52,
     "description": "Practice law 3.",
     "lessonIds": [
       "ja-n4-d50-l1"
@@ -2918,7 +2333,7 @@
     "levelId": "ja-n5",
     "title": "Four Seasons",
     "subtitle": "Four Seasons",
-    "order": 98,
+    "order": 102,
     "description": "Practice four seasons.",
     "lessonIds": [
       "ja-n5-d98-l1"

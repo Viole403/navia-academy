@@ -21,7 +21,7 @@
     "levelId": "de-a1",
     "title": "Family and Friends",
     "subtitle": "Familie und Freunde",
-    "order": 2,
+    "order": 3,
     "description": "Talk about your family members and describe people.",
     "lessonIds": [
       "de-a1-u2-l1",
@@ -37,7 +37,7 @@
     "levelId": "de-a1",
     "title": "Daily Life",
     "subtitle": "Alltag",
-    "order": 3,
+    "order": 5,
     "description": "Express daily routines and activities.",
     "lessonIds": [
       "de-a1-u3-l1",
@@ -53,7 +53,7 @@
     "levelId": "de-a1",
     "title": "Food and Drink",
     "subtitle": "Essen und Trinken",
-    "order": 4,
+    "order": 7,
     "description": "Order food and talk about meals.",
     "lessonIds": [
       "de-a1-u4-l1",
@@ -85,7 +85,7 @@
     "levelId": "de-a2",
     "title": "Shopping and Money",
     "subtitle": "Einkaufen und Geld",
-    "order": 2,
+    "order": 3,
     "description": "Shop and handle money transactions.",
     "lessonIds": [
       "de-a2-u2-l1"
@@ -100,7 +100,7 @@
     "levelId": "de-a2",
     "title": "Health and Body",
     "subtitle": "Gesundheit und Körper",
-    "order": 3,
+    "order": 5,
     "description": "Discuss health issues and body parts.",
     "lessonIds": [
       "de-a2-u3-l1"
@@ -132,7 +132,7 @@
     "levelId": "de-b1",
     "title": "Culture and Society",
     "subtitle": "Kultur und Gesellschaft",
-    "order": 2,
+    "order": 3,
     "description": "Discuss cultural topics and social issues.",
     "lessonIds": [
       "de-b1-u2-l1",
@@ -254,45 +254,45 @@
   {
     "id": "de-c2-u1",
     "levelId": "de-c2",
-    "title": "Communication & Expression",
-    "subtitle": "Kommunikation & Ausdruck",
+    "title": "Discourse & Nuance",
+    "subtitle": "Diskurs & Nuance",
     "order": 1,
     "description": "Practice communication & expression.",
     "lessonIds": [
       "de-c2-u1-l1"
     ],
-    "subtitle_en": "Kommunikation & Ausdruck",
-    "subtitle_id": "Communication & Expression",
+    "subtitle_en": "Diskurs & Nuance",
+    "subtitle_id": "Discourse & Nuance",
     "description_en": "Practice communication & expression.",
     "description_id": "Latihan communication & expression."
   },
   {
     "id": "de-c2-u2",
     "levelId": "de-c2",
-    "title": "Society & Culture",
-    "subtitle": "Gesellschaft & Kultur",
+    "title": "Argumentation & Rhetoric",
+    "subtitle": "Argumentation & Rhetorik",
     "order": 2,
     "description": "Practice society & culture.",
     "lessonIds": [
       "de-c2-u2-l1"
     ],
-    "subtitle_en": "Gesellschaft & Kultur",
-    "subtitle_id": "Society & Culture",
+    "subtitle_en": "Argumentation & Rhetorik",
+    "subtitle_id": "Argumentation & Rhetoric",
     "description_en": "Practice society & culture.",
     "description_id": "Latihan society & culture."
   },
   {
     "id": "de-c2-u3",
     "levelId": "de-c2",
-    "title": "Feelings & Character",
-    "subtitle": "Gefühle & Charakter",
+    "title": "Abstract Concepts",
+    "subtitle": "Abstrakte Konzepte",
     "order": 3,
     "description": "Practice feelings & character.",
     "lessonIds": [
       "de-c2-u3-l1"
     ],
-    "subtitle_en": "Gefühle & Charakter",
-    "subtitle_id": "Feelings & Character",
+    "subtitle_en": "Abstrakte Konzepte",
+    "subtitle_id": "Abstract Concepts",
     "description_en": "Practice feelings & character.",
     "description_id": "Latihan feelings & character."
   },
@@ -301,7 +301,7 @@
     "levelId": "de-a1",
     "title": "Basics 1",
     "subtitle": "Basics 1",
-    "order": 1,
+    "order": 2,
     "description": "Practice basics 1.",
     "lessonIds": [
       "de-a1-d1-l1"
@@ -316,7 +316,7 @@
     "levelId": "de-a1",
     "title": "Family",
     "subtitle": "Family",
-    "order": 2,
+    "order": 4,
     "description": "Practice family.",
     "lessonIds": [
       "de-a1-d2-l1"
@@ -331,7 +331,7 @@
     "levelId": "de-a1",
     "title": "Basics 2",
     "subtitle": "Basics 2",
-    "order": 3,
+    "order": 6,
     "description": "Practice basics 2.",
     "lessonIds": [
       "de-a1-d3-l1"
@@ -346,7 +346,7 @@
     "levelId": "de-a1",
     "title": "Idioms and Proverbs",
     "subtitle": "Idioms and Proverbs",
-    "order": 4,
+    "order": 8,
     "description": "Practice idioms and proverbs.",
     "lessonIds": [
       "de-a1-d4-l1"
@@ -361,7 +361,7 @@
     "levelId": "de-a1",
     "title": "Greetings",
     "subtitle": "Greetings",
-    "order": 5,
+    "order": 9,
     "description": "Practice greetings.",
     "lessonIds": [
       "de-a1-d5-l1"
@@ -376,7 +376,7 @@
     "levelId": "de-a1",
     "title": "Restaurant",
     "subtitle": "Restaurant",
-    "order": 6,
+    "order": 10,
     "description": "Practice restaurant.",
     "lessonIds": [
       "de-a1-d6-l1"
@@ -391,7 +391,7 @@
     "levelId": "de-a1",
     "title": "Places",
     "subtitle": "Places",
-    "order": 7,
+    "order": 11,
     "description": "Practice places.",
     "lessonIds": [
       "de-a1-d7-l1"
@@ -406,7 +406,7 @@
     "levelId": "de-a1",
     "title": "Jobs",
     "subtitle": "Jobs",
-    "order": 8,
+    "order": 12,
     "description": "Practice jobs.",
     "lessonIds": [
       "de-a1-d8-l1"
@@ -421,7 +421,7 @@
     "levelId": "de-a1",
     "title": "Hobbies",
     "subtitle": "Hobbies",
-    "order": 9,
+    "order": 13,
     "description": "Practice hobbies.",
     "lessonIds": [
       "de-a1-d9-l1"
@@ -436,7 +436,7 @@
     "levelId": "de-a1",
     "title": "Directions",
     "subtitle": "Directions",
-    "order": 10,
+    "order": 14,
     "description": "Practice directions.",
     "lessonIds": [
       "de-a1-d10-l1"
@@ -451,7 +451,7 @@
     "levelId": "de-a1",
     "title": "Questions",
     "subtitle": "Questions",
-    "order": 11,
+    "order": 15,
     "description": "Practice questions.",
     "lessonIds": [
       "de-a1-d11-l1"
@@ -466,7 +466,7 @@
     "levelId": "de-a1",
     "title": "Market",
     "subtitle": "Market",
-    "order": 12,
+    "order": 16,
     "description": "Practice market.",
     "lessonIds": [
       "de-a1-d12-l1"
@@ -481,7 +481,7 @@
     "levelId": "de-a1",
     "title": "Weather",
     "subtitle": "Weather",
-    "order": 13,
+    "order": 17,
     "description": "Practice weather.",
     "lessonIds": [
       "de-a1-d13-l1"
@@ -496,7 +496,7 @@
     "levelId": "de-a1",
     "title": "Family 2",
     "subtitle": "Family 2",
-    "order": 14,
+    "order": 18,
     "description": "Practice family 2.",
     "lessonIds": [
       "de-a1-d14-l1"
@@ -511,7 +511,7 @@
     "levelId": "de-a1",
     "title": "Languages",
     "subtitle": "Languages",
-    "order": 15,
+    "order": 19,
     "description": "Practice languages.",
     "lessonIds": [
       "de-a1-d15-l1"
@@ -526,7 +526,7 @@
     "levelId": "de-a1",
     "title": "Leisure",
     "subtitle": "Leisure",
-    "order": 16,
+    "order": 20,
     "description": "Practice leisure.",
     "lessonIds": [
       "de-a1-d16-l1"
@@ -541,7 +541,7 @@
     "levelId": "de-a1",
     "title": "Plans",
     "subtitle": "Plans",
-    "order": 17,
+    "order": 21,
     "description": "Practice plans.",
     "lessonIds": [
       "de-a1-d17-l1"
@@ -556,7 +556,7 @@
     "levelId": "de-a1",
     "title": "Apartment",
     "subtitle": "Apartment",
-    "order": 18,
+    "order": 22,
     "description": "Practice apartment.",
     "lessonIds": [
       "de-a1-d18-l1"
@@ -571,7 +571,7 @@
     "levelId": "de-a1",
     "title": "Shopping",
     "subtitle": "Shopping",
-    "order": 19,
+    "order": 23,
     "description": "Practice shopping.",
     "lessonIds": [
       "de-a1-d19-l1"
@@ -586,7 +586,7 @@
     "levelId": "de-a1",
     "title": "Travel",
     "subtitle": "Travel",
-    "order": 20,
+    "order": 24,
     "description": "Practice travel.",
     "lessonIds": [
       "de-a1-d20-l1"
@@ -601,7 +601,7 @@
     "levelId": "de-a1",
     "title": "Dining Out",
     "subtitle": "Dining Out",
-    "order": 21,
+    "order": 25,
     "description": "Practice dining out.",
     "lessonIds": [
       "de-a1-d21-l1"
@@ -616,7 +616,7 @@
     "levelId": "de-a1",
     "title": "Transport",
     "subtitle": "Transport",
-    "order": 22,
+    "order": 26,
     "description": "Practice transport.",
     "lessonIds": [
       "de-a1-d22-l1"
@@ -631,7 +631,7 @@
     "levelId": "de-a1",
     "title": "Birthday",
     "subtitle": "Birthday",
-    "order": 23,
+    "order": 27,
     "description": "Practice birthday.",
     "lessonIds": [
       "de-a1-d23-l1"
@@ -646,7 +646,7 @@
     "levelId": "de-a1",
     "title": "Hobbies 2",
     "subtitle": "Hobbies 2",
-    "order": 24,
+    "order": 28,
     "description": "Practice hobbies 2.",
     "lessonIds": [
       "de-a1-d24-l1"
@@ -661,7 +661,7 @@
     "levelId": "de-a1",
     "title": "Health",
     "subtitle": "Health",
-    "order": 25,
+    "order": 29,
     "description": "Practice health.",
     "lessonIds": [
       "de-a1-d25-l1"
@@ -676,7 +676,7 @@
     "levelId": "de-a1",
     "title": "People",
     "subtitle": "People",
-    "order": 26,
+    "order": 30,
     "description": "Practice people.",
     "lessonIds": [
       "de-a1-d26-l1"
@@ -691,7 +691,7 @@
     "levelId": "de-a1",
     "title": "Events",
     "subtitle": "Events",
-    "order": 27,
+    "order": 31,
     "description": "Practice events.",
     "lessonIds": [
       "de-a1-d27-l1"
@@ -706,7 +706,7 @@
     "levelId": "de-a1",
     "title": "Habits",
     "subtitle": "Habits",
-    "order": 28,
+    "order": 32,
     "description": "Practice habits.",
     "lessonIds": [
       "de-a1-d28-l1"
@@ -721,7 +721,7 @@
     "levelId": "de-a1",
     "title": "Housing",
     "subtitle": "Housing",
-    "order": 29,
+    "order": 33,
     "description": "Practice housing.",
     "lessonIds": [
       "de-a1-d29-l1"
@@ -736,7 +736,7 @@
     "levelId": "de-a1",
     "title": "Hotel",
     "subtitle": "Hotel",
-    "order": 30,
+    "order": 34,
     "description": "Practice hotel.",
     "lessonIds": [
       "de-a1-d30-l1"
@@ -751,7 +751,7 @@
     "levelId": "de-a1",
     "title": "Family 3",
     "subtitle": "Family 3",
-    "order": 31,
+    "order": 35,
     "description": "Practice family 3.",
     "lessonIds": [
       "de-a1-d31-l1"
@@ -766,7 +766,7 @@
     "levelId": "de-a1",
     "title": "Food",
     "subtitle": "Food",
-    "order": 32,
+    "order": 36,
     "description": "Practice food.",
     "lessonIds": [
       "de-a1-d32-l1"
@@ -781,7 +781,7 @@
     "levelId": "de-a1",
     "title": "Plans 2",
     "subtitle": "Plans 2",
-    "order": 33,
+    "order": 37,
     "description": "Practice plans 2.",
     "lessonIds": [
       "de-a1-d33-l1"
@@ -796,7 +796,7 @@
     "levelId": "de-a1",
     "title": "Travel 2",
     "subtitle": "Travel 2",
-    "order": 34,
+    "order": 38,
     "description": "Practice travel 2.",
     "lessonIds": [
       "de-a1-d34-l1"
@@ -811,7 +811,7 @@
     "levelId": "de-a1",
     "title": "New Job",
     "subtitle": "New Job",
-    "order": 35,
+    "order": 39,
     "description": "Practice new job.",
     "lessonIds": [
       "de-a1-d35-l1"
@@ -826,7 +826,7 @@
     "levelId": "de-a1",
     "title": "Habits 2",
     "subtitle": "Habits 2",
-    "order": 36,
+    "order": 40,
     "description": "Practice habits 2.",
     "lessonIds": [
       "de-a1-d36-l1"
@@ -841,7 +841,7 @@
     "levelId": "de-a1",
     "title": "Packing",
     "subtitle": "Packing",
-    "order": 37,
+    "order": 41,
     "description": "Practice packing.",
     "lessonIds": [
       "de-a1-d37-l1"
@@ -856,7 +856,7 @@
     "levelId": "de-a1",
     "title": "Groceries",
     "subtitle": "Groceries",
-    "order": 38,
+    "order": 42,
     "description": "Practice groceries.",
     "lessonIds": [
       "de-a1-d38-l1"
@@ -871,7 +871,7 @@
     "levelId": "de-a1",
     "title": "Birthday 2",
     "subtitle": "Birthday 2",
-    "order": 39,
+    "order": 43,
     "description": "Practice birthday 2.",
     "lessonIds": [
       "de-a1-d39-l1"
@@ -886,7 +886,7 @@
     "levelId": "de-a1",
     "title": "Roommate",
     "subtitle": "Roommate",
-    "order": 40,
+    "order": 44,
     "description": "Practice roommate.",
     "lessonIds": [
       "de-a1-d40-l1"
@@ -901,7 +901,7 @@
     "levelId": "de-a1",
     "title": "On Break",
     "subtitle": "On Break",
-    "order": 41,
+    "order": 45,
     "description": "Practice on break.",
     "lessonIds": [
       "de-a1-d41-l1"
@@ -916,7 +916,7 @@
     "levelId": "de-a1",
     "title": "Barbecue",
     "subtitle": "Barbecue",
-    "order": 42,
+    "order": 46,
     "description": "Practice barbecue.",
     "lessonIds": [
       "de-a1-d42-l1"
@@ -931,7 +931,7 @@
     "levelId": "de-a1",
     "title": "Community",
     "subtitle": "Community",
-    "order": 43,
+    "order": 47,
     "description": "Practice community.",
     "lessonIds": [
       "de-a1-d43-l1"
@@ -946,7 +946,7 @@
     "levelId": "de-a1",
     "title": "Plans 3",
     "subtitle": "Plans 3",
-    "order": 44,
+    "order": 48,
     "description": "Practice plans 3.",
     "lessonIds": [
       "de-a1-d44-l1"
@@ -961,7 +961,7 @@
     "levelId": "de-a1",
     "title": "Party",
     "subtitle": "Party",
-    "order": 45,
+    "order": 49,
     "description": "Practice party.",
     "lessonIds": [
       "de-a1-d45-l1"
@@ -976,7 +976,7 @@
     "levelId": "de-a1",
     "title": "Free Time",
     "subtitle": "Free Time",
-    "order": 46,
+    "order": 50,
     "description": "Practice free time.",
     "lessonIds": [
       "de-a1-d46-l1"
@@ -991,7 +991,7 @@
     "levelId": "de-a1",
     "title": "Errands",
     "subtitle": "Errands",
-    "order": 47,
+    "order": 51,
     "description": "Practice errands.",
     "lessonIds": [
       "de-a1-d47-l1"
@@ -1006,7 +1006,7 @@
     "levelId": "de-a1",
     "title": "Opinions",
     "subtitle": "Opinions",
-    "order": 48,
+    "order": 52,
     "description": "Practice opinions.",
     "lessonIds": [
       "de-a1-d48-l1"
@@ -1021,7 +1021,7 @@
     "levelId": "de-a1",
     "title": "Excuses",
     "subtitle": "Excuses",
-    "order": 49,
+    "order": 53,
     "description": "Practice excuses.",
     "lessonIds": [
       "de-a1-d49-l1"
@@ -1036,7 +1036,7 @@
     "levelId": "de-a1",
     "title": "Moving",
     "subtitle": "Moving",
-    "order": 50,
+    "order": 54,
     "description": "Practice moving.",
     "lessonIds": [
       "de-a1-d50-l1"
@@ -1051,7 +1051,7 @@
     "levelId": "de-a1",
     "title": "Food 2",
     "subtitle": "Food 2",
-    "order": 51,
+    "order": 55,
     "description": "Practice food 2.",
     "lessonIds": [
       "de-a1-d51-l1"
@@ -1066,7 +1066,7 @@
     "levelId": "de-a1",
     "title": "Holidays",
     "subtitle": "Holidays",
-    "order": 52,
+    "order": 56,
     "description": "Practice holidays.",
     "lessonIds": [
       "de-a1-d52-l1"
@@ -1081,7 +1081,7 @@
     "levelId": "de-a1",
     "title": "New Home",
     "subtitle": "New Home",
-    "order": 53,
+    "order": 57,
     "description": "Practice new home.",
     "lessonIds": [
       "de-a1-d53-l1"
@@ -1096,7 +1096,7 @@
     "levelId": "de-a1",
     "title": "Long Day",
     "subtitle": "Long Day",
-    "order": 54,
+    "order": 58,
     "description": "Practice long day.",
     "lessonIds": [
       "de-a1-d54-l1"
@@ -1111,7 +1111,7 @@
     "levelId": "de-a1",
     "title": "Weekend",
     "subtitle": "Weekend",
-    "order": 55,
+    "order": 59,
     "description": "Practice weekend.",
     "lessonIds": [
       "de-a1-d55-l1"
@@ -1126,7 +1126,7 @@
     "levelId": "de-a1",
     "title": "Wedding",
     "subtitle": "Wedding",
-    "order": 56,
+    "order": 60,
     "description": "Practice wedding.",
     "lessonIds": [
       "de-a1-d56-l1"
@@ -1141,7 +1141,7 @@
     "levelId": "de-a1",
     "title": "Vacation",
     "subtitle": "Vacation",
-    "order": 57,
+    "order": 61,
     "description": "Practice vacation.",
     "lessonIds": [
       "de-a1-d57-l1"
@@ -1156,7 +1156,7 @@
     "levelId": "de-a1",
     "title": "Routines",
     "subtitle": "Routines",
-    "order": 58,
+    "order": 62,
     "description": "Practice routines.",
     "lessonIds": [
       "de-a1-d58-l1"
@@ -1171,7 +1171,7 @@
     "levelId": "de-a1",
     "title": "Pets",
     "subtitle": "Pets",
-    "order": 59,
+    "order": 63,
     "description": "Practice pets.",
     "lessonIds": [
       "de-a1-d59-l1"
@@ -1186,7 +1186,7 @@
     "levelId": "de-a1",
     "title": "Gossip",
     "subtitle": "Gossip",
-    "order": 60,
+    "order": 64,
     "description": "Practice gossip.",
     "lessonIds": [
       "de-a1-d60-l1"
@@ -1201,7 +1201,7 @@
     "levelId": "de-a1",
     "title": "Passport",
     "subtitle": "Passport",
-    "order": 61,
+    "order": 65,
     "description": "Practice passport.",
     "lessonIds": [
       "de-a1-d61-l1"
@@ -1216,7 +1216,7 @@
     "levelId": "de-a2",
     "title": "College",
     "subtitle": "College",
-    "order": 1,
+    "order": 2,
     "description": "Practice college.",
     "lessonIds": [
       "de-a2-d1-l1"
@@ -1231,7 +1231,7 @@
     "levelId": "de-a2",
     "title": "Concert",
     "subtitle": "Concert",
-    "order": 2,
+    "order": 4,
     "description": "Practice concert.",
     "lessonIds": [
       "de-a2-d2-l1"
@@ -1246,7 +1246,7 @@
     "levelId": "de-a2",
     "title": "Family 4",
     "subtitle": "Family 4",
-    "order": 3,
+    "order": 6,
     "description": "Practice family 4.",
     "lessonIds": [
       "de-a2-d3-l1"
@@ -1261,7 +1261,7 @@
     "levelId": "de-a2",
     "title": "Dreams",
     "subtitle": "Dreams",
-    "order": 4,
+    "order": 7,
     "description": "Practice dreams.",
     "lessonIds": [
       "de-a2-d4-l1"
@@ -1276,7 +1276,7 @@
     "levelId": "de-a2",
     "title": "Shopping 2",
     "subtitle": "Shopping 2",
-    "order": 5,
+    "order": 8,
     "description": "Practice shopping 2.",
     "lessonIds": [
       "de-a2-d5-l1"
@@ -1291,7 +1291,7 @@
     "levelId": "de-a2",
     "title": "Health 2",
     "subtitle": "Health 2",
-    "order": 6,
+    "order": 9,
     "description": "Practice health 2.",
     "lessonIds": [
       "de-a2-d6-l1"
@@ -1306,7 +1306,7 @@
     "levelId": "de-a2",
     "title": "Childhood",
     "subtitle": "Childhood",
-    "order": 7,
+    "order": 10,
     "description": "Practice childhood.",
     "lessonIds": [
       "de-a2-d7-l1"
@@ -1321,7 +1321,7 @@
     "levelId": "de-a2",
     "title": "Party 2",
     "subtitle": "Party 2",
-    "order": 8,
+    "order": 11,
     "description": "Practice party 2.",
     "lessonIds": [
       "de-a2-d8-l1"
@@ -1336,7 +1336,7 @@
     "levelId": "de-a2",
     "title": "Favors",
     "subtitle": "Favors",
-    "order": 9,
+    "order": 12,
     "description": "Practice favors.",
     "lessonIds": [
       "de-a2-d9-l1"
@@ -1351,7 +1351,7 @@
     "levelId": "de-a2",
     "title": "Jobs 2",
     "subtitle": "Jobs 2",
-    "order": 10,
+    "order": 13,
     "description": "Practice jobs 2.",
     "lessonIds": [
       "de-a2-d10-l1"
@@ -1366,7 +1366,7 @@
     "levelId": "de-a2",
     "title": "Take-Out",
     "subtitle": "Take-Out",
-    "order": 11,
+    "order": 14,
     "description": "Practice take-out.",
     "lessonIds": [
       "de-a2-d11-l1"
@@ -1381,7 +1381,7 @@
     "levelId": "de-a2",
     "title": "Gossip 2",
     "subtitle": "Gossip 2",
-    "order": 12,
+    "order": 15,
     "description": "Practice gossip 2.",
     "lessonIds": [
       "de-a2-d12-l1"
@@ -1396,7 +1396,7 @@
     "levelId": "de-a2",
     "title": "Feelings",
     "subtitle": "Feelings",
-    "order": 13,
+    "order": 16,
     "description": "Practice feelings.",
     "lessonIds": [
       "de-a2-d13-l1"
@@ -1411,7 +1411,7 @@
     "levelId": "de-a2",
     "title": "Dorm",
     "subtitle": "Dorm",
-    "order": 14,
+    "order": 17,
     "description": "Practice dorm.",
     "lessonIds": [
       "de-a2-d14-l1"
@@ -1426,7 +1426,7 @@
     "levelId": "de-a2",
     "title": "Travel 3",
     "subtitle": "Travel 3",
-    "order": 15,
+    "order": 18,
     "description": "Practice travel 3.",
     "lessonIds": [
       "de-a2-d15-l1"
@@ -1441,7 +1441,7 @@
     "levelId": "de-a2",
     "title": "Habits 3",
     "subtitle": "Habits 3",
-    "order": 16,
+    "order": 19,
     "description": "Practice habits 3.",
     "lessonIds": [
       "de-a2-d16-l1"
@@ -1456,7 +1456,7 @@
     "levelId": "de-a2",
     "title": "School",
     "subtitle": "School",
-    "order": 17,
+    "order": 20,
     "description": "Practice school.",
     "lessonIds": [
       "de-a2-d17-l1"
@@ -1471,7 +1471,7 @@
     "levelId": "de-a2",
     "title": "Coworkers",
     "subtitle": "Coworkers",
-    "order": 18,
+    "order": 21,
     "description": "Practice coworkers.",
     "lessonIds": [
       "de-a2-d18-l1"
@@ -1486,7 +1486,7 @@
     "levelId": "de-a2",
     "title": "Neighbors",
     "subtitle": "Neighbors",
-    "order": 19,
+    "order": 22,
     "description": "Practice neighbors.",
     "lessonIds": [
       "de-a2-d19-l1"
@@ -1501,7 +1501,7 @@
     "levelId": "de-a2",
     "title": "Movies",
     "subtitle": "Movies",
-    "order": 20,
+    "order": 23,
     "description": "Practice movies.",
     "lessonIds": [
       "de-a2-d20-l1"
@@ -1516,7 +1516,7 @@
     "levelId": "de-a2",
     "title": "Germany",
     "subtitle": "Germany",
-    "order": 21,
+    "order": 24,
     "description": "Practice germany.",
     "lessonIds": [
       "de-a2-d21-l1"
@@ -1531,7 +1531,7 @@
     "levelId": "de-a2",
     "title": "Date",
     "subtitle": "Date",
-    "order": 22,
+    "order": 25,
     "description": "Practice date.",
     "lessonIds": [
       "de-a2-d22-l1"
@@ -1546,7 +1546,7 @@
     "levelId": "de-a2",
     "title": "Bad Luck",
     "subtitle": "Bad Luck",
-    "order": 23,
+    "order": 26,
     "description": "Practice bad luck.",
     "lessonIds": [
       "de-a2-d23-l1"
@@ -1561,7 +1561,7 @@
     "levelId": "de-a2",
     "title": "Dinner",
     "subtitle": "Dinner",
-    "order": 24,
+    "order": 27,
     "description": "Practice dinner.",
     "lessonIds": [
       "de-a2-d24-l1"
@@ -1576,7 +1576,7 @@
     "levelId": "de-a2",
     "title": "Wardrobe",
     "subtitle": "Wardrobe",
-    "order": 25,
+    "order": 28,
     "description": "Practice wardrobe.",
     "lessonIds": [
       "de-a2-d25-l1"
@@ -1591,7 +1591,7 @@
     "levelId": "de-a2",
     "title": "Friends",
     "subtitle": "Friends",
-    "order": 26,
+    "order": 29,
     "description": "Practice friends.",
     "lessonIds": [
       "de-a2-d26-l1"
@@ -1606,7 +1606,7 @@
     "levelId": "de-a2",
     "title": "Shopping 3",
     "subtitle": "Shopping 3",
-    "order": 27,
+    "order": 30,
     "description": "Practice shopping 3.",
     "lessonIds": [
       "de-a2-d27-l1"
@@ -1621,7 +1621,7 @@
     "levelId": "de-a2",
     "title": "Opinions 2",
     "subtitle": "Opinions 2",
-    "order": 28,
+    "order": 31,
     "description": "Practice opinions 2.",
     "lessonIds": [
       "de-a2-d28-l1"
@@ -1636,7 +1636,7 @@
     "levelId": "de-a2",
     "title": "Family 5",
     "subtitle": "Family 5",
-    "order": 29,
+    "order": 32,
     "description": "Practice family 5.",
     "lessonIds": [
       "de-a2-d29-l1"
@@ -1651,7 +1651,7 @@
     "levelId": "de-a2",
     "title": "Vacation 2",
     "subtitle": "Vacation 2",
-    "order": 30,
+    "order": 33,
     "description": "Practice vacation 2.",
     "lessonIds": [
       "de-a2-d30-l1"
@@ -1666,7 +1666,7 @@
     "levelId": "de-a2",
     "title": "Carnival",
     "subtitle": "Carnival",
-    "order": 31,
+    "order": 34,
     "description": "Practice carnival.",
     "lessonIds": [
       "de-a2-d31-l1"
@@ -1681,7 +1681,7 @@
     "levelId": "de-a2",
     "title": "Health 3",
     "subtitle": "Health 3",
-    "order": 32,
+    "order": 35,
     "description": "Practice health 3.",
     "lessonIds": [
       "de-a2-d32-l1"
@@ -1696,7 +1696,7 @@
     "levelId": "de-a2",
     "title": "Travel 4",
     "subtitle": "Travel 4",
-    "order": 33,
+    "order": 36,
     "description": "Practice travel 4.",
     "lessonIds": [
       "de-a2-d33-l1"
@@ -1711,7 +1711,7 @@
     "levelId": "de-a2",
     "title": "Roommate 2",
     "subtitle": "Roommate 2",
-    "order": 34,
+    "order": 37,
     "description": "Practice roommate 2.",
     "lessonIds": [
       "de-a2-d34-l1"
@@ -1726,7 +1726,7 @@
     "levelId": "de-a2",
     "title": "Repairs",
     "subtitle": "Repairs",
-    "order": 35,
+    "order": 38,
     "description": "Practice repairs.",
     "lessonIds": [
       "de-a2-d35-l1"
@@ -1741,7 +1741,7 @@
     "levelId": "de-a2",
     "title": "Farm",
     "subtitle": "Farm",
-    "order": 36,
+    "order": 39,
     "description": "Practice farm.",
     "lessonIds": [
       "de-a2-d36-l1"
@@ -1756,7 +1756,7 @@
     "levelId": "de-a2",
     "title": "People 2",
     "subtitle": "People 2",
-    "order": 37,
+    "order": 40,
     "description": "Practice people 2.",
     "lessonIds": [
       "de-a2-d37-l1"
@@ -1771,7 +1771,7 @@
     "levelId": "de-a2",
     "title": "Banking",
     "subtitle": "Banking",
-    "order": 38,
+    "order": 41,
     "description": "Practice banking.",
     "lessonIds": [
       "de-a2-d38-l1"
@@ -1786,7 +1786,7 @@
     "levelId": "de-a2",
     "title": "University",
     "subtitle": "University",
-    "order": 39,
+    "order": 42,
     "description": "Practice university.",
     "lessonIds": [
       "de-a2-d39-l1"
@@ -1801,7 +1801,7 @@
     "levelId": "de-a2",
     "title": "Memories",
     "subtitle": "Memories",
-    "order": 40,
+    "order": 43,
     "description": "Practice memories.",
     "lessonIds": [
       "de-a2-d40-l1"
@@ -1816,7 +1816,7 @@
     "levelId": "de-a2",
     "title": "Shopping 4",
     "subtitle": "Shopping 4",
-    "order": 41,
+    "order": 44,
     "description": "Practice shopping 4.",
     "lessonIds": [
       "de-a2-d41-l1"
@@ -1831,7 +1831,7 @@
     "levelId": "de-a2",
     "title": "Vienna",
     "subtitle": "Vienna",
-    "order": 42,
+    "order": 45,
     "description": "Practice vienna.",
     "lessonIds": [
       "de-a2-d42-l1"
@@ -1846,7 +1846,7 @@
     "levelId": "de-a2",
     "title": "Cooking",
     "subtitle": "Cooking",
-    "order": 43,
+    "order": 46,
     "description": "Practice cooking.",
     "lessonIds": [
       "de-a2-d43-l1"
@@ -1861,7 +1861,7 @@
     "levelId": "de-a2",
     "title": "Fairy Tale",
     "subtitle": "Fairy Tale",
-    "order": 44,
+    "order": 47,
     "description": "Practice fairy tale.",
     "lessonIds": [
       "de-a2-d44-l1"
@@ -1876,7 +1876,7 @@
     "levelId": "de-a2",
     "title": "Oh No!",
     "subtitle": "Oh No!",
-    "order": 45,
+    "order": 48,
     "description": "Practice oh no!.",
     "lessonIds": [
       "de-a2-d45-l1"
@@ -1891,7 +1891,7 @@
     "levelId": "de-a2",
     "title": "Telephone",
     "subtitle": "Telephone",
-    "order": 46,
+    "order": 49,
     "description": "Practice telephone.",
     "lessonIds": [
       "de-a2-d46-l1"
@@ -1906,7 +1906,7 @@
     "levelId": "de-a2",
     "title": "Worst Job",
     "subtitle": "Worst Job",
-    "order": 47,
+    "order": 50,
     "description": "Practice worst job.",
     "lessonIds": [
       "de-a2-d47-l1"
@@ -1921,7 +1921,7 @@
     "levelId": "de-a2",
     "title": "Technology",
     "subtitle": "Technology",
-    "order": 48,
+    "order": 51,
     "description": "Practice technology.",
     "lessonIds": [
       "de-a2-d48-l1"
@@ -1936,7 +1936,7 @@
     "levelId": "de-a2",
     "title": "Health 4",
     "subtitle": "Health 4",
-    "order": 49,
+    "order": 52,
     "description": "Practice health 4.",
     "lessonIds": [
       "de-a2-d49-l1"
@@ -1951,7 +1951,7 @@
     "levelId": "de-a2",
     "title": "Asparagus",
     "subtitle": "Asparagus",
-    "order": 50,
+    "order": 53,
     "description": "Practice asparagus.",
     "lessonIds": [
       "de-a2-d50-l1"
@@ -1966,7 +1966,7 @@
     "levelId": "de-a2",
     "title": "School 2",
     "subtitle": "School 2",
-    "order": 51,
+    "order": 54,
     "description": "Practice school 2.",
     "lessonIds": [
       "de-a2-d51-l1"
@@ -1981,7 +1981,7 @@
     "levelId": "de-b1",
     "title": "Baltic Sea",
     "subtitle": "Baltic Sea",
-    "order": 1,
+    "order": 2,
     "description": "Practice baltic sea.",
     "lessonIds": [
       "de-b1-d1-l1"
@@ -1996,7 +1996,7 @@
     "levelId": "de-b1",
     "title": "Literature",
     "subtitle": "Literature",
-    "order": 2,
+    "order": 4,
     "description": "Practice literature.",
     "lessonIds": [
       "de-b1-d2-l1"
@@ -2011,7 +2011,7 @@
     "levelId": "de-b1",
     "title": "Market 2",
     "subtitle": "Market 2",
-    "order": 3,
+    "order": 5,
     "description": "Practice market 2.",
     "lessonIds": [
       "de-b1-d3-l1"
@@ -2026,7 +2026,7 @@
     "levelId": "de-b1",
     "title": "Basement",
     "subtitle": "Basement",
-    "order": 4,
+    "order": 6,
     "description": "Practice basement.",
     "lessonIds": [
       "de-b1-d4-l1"
@@ -2041,7 +2041,7 @@
     "levelId": "de-b1",
     "title": "Café",
     "subtitle": "Café",
-    "order": 5,
+    "order": 7,
     "description": "Practice café.",
     "lessonIds": [
       "de-b1-d5-l1"
@@ -2056,7 +2056,7 @@
     "levelId": "de-b1",
     "title": "Berlin Zoo",
     "subtitle": "Berlin Zoo",
-    "order": 6,
+    "order": 8,
     "description": "Practice berlin zoo.",
     "lessonIds": [
       "de-b1-d6-l1"
@@ -2071,7 +2071,7 @@
     "levelId": "de-b1",
     "title": "Dogs",
     "subtitle": "Dogs",
-    "order": 7,
+    "order": 9,
     "description": "Practice dogs.",
     "lessonIds": [
       "de-b1-d7-l1"
@@ -2086,7 +2086,7 @@
     "levelId": "de-b1",
     "title": "New Year",
     "subtitle": "New Year",
-    "order": 8,
+    "order": 10,
     "description": "Practice new year.",
     "lessonIds": [
       "de-b1-d8-l1"
@@ -2101,7 +2101,7 @@
     "levelId": "de-b1",
     "title": "Luggage",
     "subtitle": "Luggage",
-    "order": 9,
+    "order": 11,
     "description": "Practice luggage.",
     "lessonIds": [
       "de-b1-d9-l1"
@@ -2116,7 +2116,7 @@
     "levelId": "de-b1",
     "title": "Road Trip",
     "subtitle": "Road Trip",
-    "order": 10,
+    "order": 12,
     "description": "Practice road trip.",
     "lessonIds": [
       "de-b1-d10-l1"
@@ -2131,7 +2131,7 @@
     "levelId": "de-b1",
     "title": "Family 6",
     "subtitle": "Family 6",
-    "order": 11,
+    "order": 13,
     "description": "Practice family 6.",
     "lessonIds": [
       "de-b1-d11-l1"
@@ -2146,7 +2146,7 @@
     "levelId": "de-b1",
     "title": "Dining 2",
     "subtitle": "Dining 2",
-    "order": 12,
+    "order": 14,
     "description": "Practice dining 2.",
     "lessonIds": [
       "de-b1-d12-l1"
@@ -2161,7 +2161,7 @@
     "levelId": "de-b1",
     "title": "Wishes",
     "subtitle": "Wishes",
-    "order": 13,
+    "order": 15,
     "description": "Practice wishes.",
     "lessonIds": [
       "de-b1-d13-l1"
@@ -2176,7 +2176,7 @@
     "levelId": "de-b1",
     "title": "School 3",
     "subtitle": "School 3",
-    "order": 14,
+    "order": 16,
     "description": "Practice school 3.",
     "lessonIds": [
       "de-b1-d14-l1"
@@ -2191,7 +2191,7 @@
     "levelId": "de-b1",
     "title": "Trivia",
     "subtitle": "Trivia",
-    "order": 15,
+    "order": 17,
     "description": "Practice trivia.",
     "lessonIds": [
       "de-b1-d15-l1"
@@ -2206,7 +2206,7 @@
     "levelId": "de-b1",
     "title": "Shopping 5",
     "subtitle": "Shopping 5",
-    "order": 16,
+    "order": 18,
     "description": "Practice shopping 5.",
     "lessonIds": [
       "de-b1-d16-l1"
@@ -2221,7 +2221,7 @@
     "levelId": "de-b1",
     "title": "News",
     "subtitle": "News",
-    "order": 17,
+    "order": 19,
     "description": "Practice news.",
     "lessonIds": [
       "de-b1-d17-l1"
@@ -2236,7 +2236,7 @@
     "levelId": "de-b1",
     "title": "Cheating",
     "subtitle": "Cheating",
-    "order": 18,
+    "order": 20,
     "description": "Practice cheating.",
     "lessonIds": [
       "de-b1-d18-l1"
@@ -2251,7 +2251,7 @@
     "levelId": "de-b1",
     "title": "Opinions 3",
     "subtitle": "Opinions 3",
-    "order": 19,
+    "order": 21,
     "description": "Practice opinions 3.",
     "lessonIds": [
       "de-b1-d19-l1"
@@ -2266,7 +2266,7 @@
     "levelId": "de-b1",
     "title": "Government",
     "subtitle": "Government",
-    "order": 20,
+    "order": 22,
     "description": "Practice government.",
     "lessonIds": [
       "de-b1-d20-l1"
@@ -2281,7 +2281,7 @@
     "levelId": "de-b1",
     "title": "Media",
     "subtitle": "Media",
-    "order": 21,
+    "order": 23,
     "description": "Practice media.",
     "lessonIds": [
       "de-b1-d21-l1"
@@ -2296,7 +2296,7 @@
     "levelId": "de-b1",
     "title": "News 2",
     "subtitle": "News 2",
-    "order": 22,
+    "order": 24,
     "description": "Practice news 2.",
     "lessonIds": [
       "de-b1-d22-l1"
@@ -2311,7 +2311,7 @@
     "levelId": "de-b1",
     "title": "Soccer",
     "subtitle": "Soccer",
-    "order": 23,
+    "order": 25,
     "description": "Practice soccer.",
     "lessonIds": [
       "de-b1-d23-l1"
@@ -2326,7 +2326,7 @@
     "levelId": "de-b1",
     "title": "Jobs 3",
     "subtitle": "Jobs 3",
-    "order": 24,
+    "order": 26,
     "description": "Practice jobs 3.",
     "lessonIds": [
       "de-b1-d24-l1"
@@ -2341,7 +2341,7 @@
     "levelId": "de-b1",
     "title": "Homesick",
     "subtitle": "Homesick",
-    "order": 25,
+    "order": 27,
     "description": "Practice homesick.",
     "lessonIds": [
       "de-b1-d25-l1"
@@ -2356,7 +2356,7 @@
     "levelId": "de-b1",
     "title": "Reunion",
     "subtitle": "Reunion",
-    "order": 26,
+    "order": 28,
     "description": "Practice reunion.",
     "lessonIds": [
       "de-b1-d26-l1"
@@ -2371,7 +2371,7 @@
     "levelId": "de-b1",
     "title": "History",
     "subtitle": "History",
-    "order": 27,
+    "order": 29,
     "description": "Practice history.",
     "lessonIds": [
       "de-b1-d27-l1"
@@ -2386,7 +2386,7 @@
     "levelId": "de-b1",
     "title": "Vacation 3",
     "subtitle": "Vacation 3",
-    "order": 28,
+    "order": 30,
     "description": "Practice vacation 3.",
     "lessonIds": [
       "de-b1-d28-l1"
@@ -2401,7 +2401,7 @@
     "levelId": "de-b1",
     "title": "Trier",
     "subtitle": "Trier",
-    "order": 29,
+    "order": 31,
     "description": "Practice trier.",
     "lessonIds": [
       "de-b1-d29-l1"
@@ -2416,7 +2416,7 @@
     "levelId": "de-b1",
     "title": "Nature",
     "subtitle": "Nature",
-    "order": 30,
+    "order": 32,
     "description": "Practice nature.",
     "lessonIds": [
       "de-b1-d30-l1"
@@ -2431,7 +2431,7 @@
     "levelId": "de-b1",
     "title": "Help!",
     "subtitle": "Help!",
-    "order": 31,
+    "order": 33,
     "description": "Practice help!.",
     "lessonIds": [
       "de-b1-d31-l1"
@@ -2446,7 +2446,7 @@
     "levelId": "de-b1",
     "title": "Puppets",
     "subtitle": "Puppets",
-    "order": 32,
+    "order": 34,
     "description": "Practice puppets.",
     "lessonIds": [
       "de-b1-d32-l1"
@@ -2461,7 +2461,7 @@
     "levelId": "de-b1",
     "title": "Family 7",
     "subtitle": "Family 7",
-    "order": 33,
+    "order": 35,
     "description": "Practice family 7.",
     "lessonIds": [
       "de-b1-d33-l1"
@@ -2476,7 +2476,7 @@
     "levelId": "de-b1",
     "title": "Wolf",
     "subtitle": "Wolf",
-    "order": 34,
+    "order": 36,
     "description": "Practice wolf.",
     "lessonIds": [
       "de-b1-d34-l1"
@@ -2491,7 +2491,7 @@
     "levelId": "de-b1",
     "title": "Wishes 2",
     "subtitle": "Wishes 2",
-    "order": 35,
+    "order": 37,
     "description": "Practice wishes 2.",
     "lessonIds": [
       "de-b1-d35-l1"
@@ -2506,7 +2506,7 @@
     "levelId": "de-b1",
     "title": "Immigrants",
     "subtitle": "Immigrants",
-    "order": 36,
+    "order": 38,
     "description": "Practice immigrants.",
     "lessonIds": [
       "de-b1-d36-l1"
@@ -2521,7 +2521,7 @@
     "levelId": "de-b1",
     "title": "Gossip 3",
     "subtitle": "Gossip 3",
-    "order": 37,
+    "order": 39,
     "description": "Practice gossip 3.",
     "lessonIds": [
       "de-b1-d37-l1"
@@ -2536,7 +2536,7 @@
     "levelId": "de-b1",
     "title": "1989",
     "subtitle": "1989",
-    "order": 38,
+    "order": 40,
     "description": "Practice 1989.",
     "lessonIds": [
       "de-b1-d38-l1"
@@ -2551,7 +2551,7 @@
     "levelId": "de-b1",
     "title": "Wolf 2",
     "subtitle": "Wolf 2",
-    "order": 39,
+    "order": 41,
     "description": "Practice wolf 2.",
     "lessonIds": [
       "de-b1-d39-l1"
@@ -2566,7 +2566,7 @@
     "levelId": "de-b1",
     "title": "Seminar",
     "subtitle": "Seminar",
-    "order": 40,
+    "order": 42,
     "description": "Practice seminar.",
     "lessonIds": [
       "de-b1-d40-l1"
@@ -2581,7 +2581,7 @@
     "levelId": "de-b1",
     "title": "Excuses 2",
     "subtitle": "Excuses 2",
-    "order": 41,
+    "order": 43,
     "description": "Practice excuses 2.",
     "lessonIds": [
       "de-b1-d41-l1"
@@ -2596,7 +2596,7 @@
     "levelId": "de-b1",
     "title": "Econ 101",
     "subtitle": "Econ 101",
-    "order": 42,
+    "order": 44,
     "description": "Practice econ 101.",
     "lessonIds": [
       "de-b1-d42-l1"
@@ -2611,7 +2611,7 @@
     "levelId": "de-b1",
     "title": "History 2",
     "subtitle": "History 2",
-    "order": 43,
+    "order": 45,
     "description": "Practice history 2.",
     "lessonIds": [
       "de-b1-d43-l1"
@@ -2626,7 +2626,7 @@
     "levelId": "de-b1",
     "title": "College 2",
     "subtitle": "College 2",
-    "order": 44,
+    "order": 46,
     "description": "Practice college 2.",
     "lessonIds": [
       "de-b1-d44-l1"
@@ -2641,7 +2641,7 @@
     "levelId": "de-a1",
     "title": "Apprentice",
     "subtitle": "Apprentice",
-    "order": 62,
+    "order": 66,
     "description": "Practice apprentice.",
     "lessonIds": [
       "de-a1-d62-l1"

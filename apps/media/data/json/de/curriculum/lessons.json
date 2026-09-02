@@ -1219,8 +1219,8 @@
   {
     "id": "de-c2-u1-l1",
     "unitId": "de-c2-u1",
-    "title": "Communication & Expression",
-    "subtitle": "Kommunikation & Ausdruck",
+    "title": "Discourse & Nuance",
+    "subtitle": "Diskurs & Nuance",
     "order": 1,
     "durationMin": 20,
     "xp": 60,
@@ -1245,8 +1245,8 @@
   {
     "id": "de-c2-u2-l1",
     "unitId": "de-c2-u2",
-    "title": "Society & Culture",
-    "subtitle": "Gesellschaft & Kultur",
+    "title": "Argumentation & Rhetoric",
+    "subtitle": "Argumentation & Rhetorik",
     "order": 1,
     "durationMin": 20,
     "xp": 60,
@@ -1274,8 +1274,8 @@
   {
     "id": "de-c2-u3-l1",
     "unitId": "de-c2-u3",
-    "title": "Feelings & Character",
-    "subtitle": "Gefühle & Charakter",
+    "title": "Abstract Concepts",
+    "subtitle": "Abstrakte Konzepte",
     "order": 1,
     "durationMin": 20,
     "xp": 60,

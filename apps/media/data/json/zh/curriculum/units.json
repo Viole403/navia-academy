@@ -19,7 +19,7 @@
   {
     "id": "u-greetings",
     "levelId": "lv-hsk1",
-    "order": 2,
+    "order": 3,
     "title": "First Words",
     "subtitle": "Greetings and Introductions",
     "description": "Greet, introduce yourself, ask for names, and say goodbye. Your first real conversations.",
@@ -37,7 +37,7 @@
   {
     "id": "u-numbers",
     "levelId": "lv-hsk1",
-    "order": 3,
+    "order": 5,
     "title": "Numbers and Time",
     "subtitle": "Counting, Dates, and Prices",
     "description": "Numbers from 1 to 99, telling time, dates, and how much things cost.",
@@ -55,7 +55,7 @@
   {
     "id": "u-family",
     "levelId": "lv-hsk1",
-    "order": 4,
+    "order": 7,
     "title": "People and Family",
     "subtitle": "Talking About Yours",
     "description": "Family, friends, professions, and possession with 的. Classifiers for counting people and things.",
@@ -73,7 +73,7 @@
   {
     "id": "u-routines",
     "levelId": "lv-hsk1",
-    "order": 5,
+    "order": 9,
     "title": "My Daily Life",
     "subtitle": "Routines and Basic Verbs",
     "description": "Eat, drink, go, come, study, and work: verbs in action and Chinese sentence order.",
@@ -221,7 +221,7 @@
   {
     "id": "u-hsk-hsk1-read",
     "levelId": "lv-hsk1",
-    "order": 6,
+    "order": 11,
     "title": "HSK 1 in Practice",
     "subtitle": "Graded Readings & Dialogues",
     "description": "Short passages and everyday dialogues built from the vocabulary of this level."
@@ -239,7 +239,7 @@
     "levelId": "lv-hsk1",
     "title": "Food",
     "subtitle": "Food",
-    "order": 1,
+    "order": 2,
     "description": "Practice food.",
     "lessonIds": [
       "zh-lv-hsk1-d1-l1"
@@ -254,7 +254,7 @@
     "levelId": "lv-hsk1",
     "title": "Nation.",
     "subtitle": "Nation.",
-    "order": 2,
+    "order": 4,
     "description": "Practice nation..",
     "lessonIds": [
       "zh-lv-hsk1-d2-l1"
@@ -269,7 +269,7 @@
     "levelId": "lv-hsk1",
     "title": "Profs.",
     "subtitle": "Profs.",
-    "order": 3,
+    "order": 6,
     "description": "Practice profs..",
     "lessonIds": [
       "zh-lv-hsk1-d3-l1"
@@ -284,7 +284,7 @@
     "levelId": "lv-hsk1",
     "title": "Prefer.",
     "subtitle": "Prefer.",
-    "order": 4,
+    "order": 8,
     "description": "Practice prefer..",
     "lessonIds": [
       "zh-lv-hsk1-d4-l1"
@@ -299,7 +299,7 @@
     "levelId": "lv-hsk1",
     "title": "Family",
     "subtitle": "Family",
-    "order": 5,
+    "order": 10,
     "description": "Practice family.",
     "lessonIds": [
       "zh-lv-hsk1-d5-l1"
@@ -314,7 +314,7 @@
     "levelId": "lv-hsk1",
     "title": "Town",
     "subtitle": "Town",
-    "order": 6,
+    "order": 12,
     "description": "Practice town.",
     "lessonIds": [
       "zh-lv-hsk1-d6-l1"
@@ -329,7 +329,7 @@
     "levelId": "lv-hsk1",
     "title": "Cafe",
     "subtitle": "Cafe",
-    "order": 7,
+    "order": 13,
     "description": "Practice cafe.",
     "lessonIds": [
       "zh-lv-hsk1-d7-l1"
@@ -344,7 +344,7 @@
     "levelId": "lv-hsk1",
     "title": "Travel",
     "subtitle": "Travel",
-    "order": 8,
+    "order": 14,
     "description": "Practice travel.",
     "lessonIds": [
       "zh-lv-hsk1-d8-l1"
@@ -359,7 +359,7 @@
     "levelId": "lv-hsk1",
     "title": "Semester",
     "subtitle": "Semester",
-    "order": 9,
+    "order": 15,
     "description": "Practice semester.",
     "lessonIds": [
       "zh-lv-hsk1-d9-l1"
@@ -374,7 +374,7 @@
     "levelId": "lv-hsk1",
     "title": "Plans",
     "subtitle": "Plans",
-    "order": 10,
+    "order": 16,
     "description": "Practice plans.",
     "lessonIds": [
       "zh-lv-hsk1-d10-l1"
@@ -389,7 +389,7 @@
     "levelId": "lv-hsk1",
     "title": "New Home",
     "subtitle": "New Home",
-    "order": 11,
+    "order": 17,
     "description": "Practice new home.",
     "lessonIds": [
       "zh-lv-hsk1-d11-l1"
@@ -404,7 +404,7 @@
     "levelId": "lv-hsk1",
     "title": "Trip to Beijing",
     "subtitle": "Trip to Beijing",
-    "order": 12,
+    "order": 18,
     "description": "Practice trip to beijing.",
     "lessonIds": [
       "zh-lv-hsk1-d12-l1"
@@ -419,7 +419,7 @@
     "levelId": "lv-hsk1",
     "title": "Shopping",
     "subtitle": "Shopping",
-    "order": 13,
+    "order": 19,
     "description": "Practice shopping.",
     "lessonIds": [
       "zh-lv-hsk1-d13-l1"
@@ -434,7 +434,7 @@
     "levelId": "lv-hsk1",
     "title": "Birthday Present",
     "subtitle": "Birthday Present",
-    "order": 14,
+    "order": 20,
     "description": "Practice birthday present.",
     "lessonIds": [
       "zh-lv-hsk1-d14-l1"
@@ -449,7 +449,7 @@
     "levelId": "lv-hsk1",
     "title": "Convenience Store",
     "subtitle": "Convenience Store",
-    "order": 15,
+    "order": 21,
     "description": "Practice convenience store.",
     "lessonIds": [
       "zh-lv-hsk1-d15-l1"
@@ -464,7 +464,7 @@
     "levelId": "lv-hsk1",
     "title": "Weekend",
     "subtitle": "Weekend",
-    "order": 16,
+    "order": 22,
     "description": "Practice weekend.",
     "lessonIds": [
       "zh-lv-hsk1-d16-l1"
@@ -479,7 +479,7 @@
     "levelId": "lv-hsk1",
     "title": "Greeting 1",
     "subtitle": "Greeting 1",
-    "order": 17,
+    "order": 23,
     "description": "Practice greeting 1.",
     "lessonIds": [
       "zh-lv-hsk1-d17-l1"
@@ -494,7 +494,7 @@
     "levelId": "lv-hsk1",
     "title": "People",
     "subtitle": "People",
-    "order": 18,
+    "order": 24,
     "description": "Practice people.",
     "lessonIds": [
       "zh-lv-hsk1-d18-l1"
@@ -509,7 +509,7 @@
     "levelId": "lv-hsk1",
     "title": "Greeting 3",
     "subtitle": "Greeting 3",
-    "order": 19,
+    "order": 25,
     "description": "Practice greeting 3.",
     "lessonIds": [
       "zh-lv-hsk1-d19-l1"
@@ -524,7 +524,7 @@
     "levelId": "lv-hsk1",
     "title": "Phrases 2",
     "subtitle": "Phrases 2",
-    "order": 20,
+    "order": 26,
     "description": "Practice phrases 2.",
     "lessonIds": [
       "zh-lv-hsk1-d20-l1"
@@ -539,7 +539,7 @@
     "levelId": "lv-hsk1",
     "title": "Location 2",
     "subtitle": "Location 2",
-    "order": 21,
+    "order": 27,
     "description": "Practice location 2.",
     "lessonIds": [
       "zh-lv-hsk1-d21-l1"
@@ -554,7 +554,7 @@
     "levelId": "lv-hsk1",
     "title": "Family 2",
     "subtitle": "Family 2",
-    "order": 22,
+    "order": 28,
     "description": "Practice family 2.",
     "lessonIds": [
       "zh-lv-hsk1-d22-l1"
@@ -569,7 +569,7 @@
     "levelId": "lv-hsk1",
     "title": "Time 2",
     "subtitle": "Time 2",
-    "order": 23,
+    "order": 29,
     "description": "Practice time 2.",
     "lessonIds": [
       "zh-lv-hsk1-d23-l1"
@@ -584,7 +584,7 @@
     "levelId": "lv-hsk1",
     "title": "Hobbies 1",
     "subtitle": "Hobbies 1",
-    "order": 24,
+    "order": 30,
     "description": "Practice hobbies 1.",
     "lessonIds": [
       "zh-lv-hsk1-d24-l1"
@@ -599,7 +599,7 @@
     "levelId": "lv-hsk1",
     "title": "Payment",
     "subtitle": "Payment",
-    "order": 25,
+    "order": 31,
     "description": "Practice payment.",
     "lessonIds": [
       "zh-lv-hsk1-d25-l1"
@@ -614,7 +614,7 @@
     "levelId": "lv-hsk1",
     "title": "Location 4",
     "subtitle": "Location 4",
-    "order": 26,
+    "order": 32,
     "description": "Practice location 4.",
     "lessonIds": [
       "zh-lv-hsk1-d26-l1"
@@ -629,7 +629,7 @@
     "levelId": "lv-hsk1",
     "title": "Supermarket",
     "subtitle": "Supermarket",
-    "order": 27,
+    "order": 33,
     "description": "Practice supermarket.",
     "lessonIds": [
       "zh-lv-hsk1-d27-l1"
@@ -644,7 +644,7 @@
     "levelId": "lv-hsk1",
     "title": "Health 1",
     "subtitle": "Health 1",
-    "order": 28,
+    "order": 34,
     "description": "Practice health 1.",
     "lessonIds": [
       "zh-lv-hsk1-d28-l1"
@@ -659,7 +659,7 @@
     "levelId": "lv-hsk1",
     "title": "Shopping 1",
     "subtitle": "Shopping 1",
-    "order": 29,
+    "order": 35,
     "description": "Practice shopping 1.",
     "lessonIds": [
       "zh-lv-hsk1-d29-l1"
@@ -674,7 +674,7 @@
     "levelId": "lv-hsk1",
     "title": "Time 3",
     "subtitle": "Time 3",
-    "order": 30,
+    "order": 36,
     "description": "Practice time 3.",
     "lessonIds": [
       "zh-lv-hsk1-d30-l1"
@@ -689,7 +689,7 @@
     "levelId": "lv-hsk1",
     "title": "Sports 1",
     "subtitle": "Sports 1",
-    "order": 31,
+    "order": 37,
     "description": "Practice sports 1.",
     "lessonIds": [
       "zh-lv-hsk1-d31-l1"
@@ -704,7 +704,7 @@
     "levelId": "lv-hsk1",
     "title": "Invitiation 1",
     "subtitle": "Invitiation 1",
-    "order": 32,
+    "order": 38,
     "description": "Practice invitiation 1.",
     "lessonIds": [
       "zh-lv-hsk1-d32-l1"
@@ -719,7 +719,7 @@
     "levelId": "lv-hsk1",
     "title": "Dining 3",
     "subtitle": "Dining 3",
-    "order": 33,
+    "order": 39,
     "description": "Practice dining 3.",
     "lessonIds": [
       "zh-lv-hsk1-d33-l1"
@@ -734,7 +734,7 @@
     "levelId": "lv-hsk1",
     "title": "Body Parts",
     "subtitle": "Body Parts",
-    "order": 34,
+    "order": 40,
     "description": "Practice body parts.",
     "lessonIds": [
       "zh-lv-hsk1-d34-l1"
@@ -749,7 +749,7 @@
     "levelId": "lv-hsk1",
     "title": "Travel 1",
     "subtitle": "Travel 1",
-    "order": 35,
+    "order": 41,
     "description": "Practice travel 1.",
     "lessonIds": [
       "zh-lv-hsk1-d35-l1"
@@ -764,7 +764,7 @@
     "levelId": "lv-hsk1",
     "title": "People 2",
     "subtitle": "People 2",
-    "order": 36,
+    "order": 42,
     "description": "Practice people 2.",
     "lessonIds": [
       "zh-lv-hsk1-d36-l1"
@@ -779,7 +779,7 @@
     "levelId": "lv-hsk1",
     "title": "Sports 2",
     "subtitle": "Sports 2",
-    "order": 37,
+    "order": 43,
     "description": "Practice sports 2.",
     "lessonIds": [
       "zh-lv-hsk1-d37-l1"
@@ -794,7 +794,7 @@
     "levelId": "lv-hsk1",
     "title": "Fam. 3",
     "subtitle": "Fam. 3",
-    "order": 38,
+    "order": 44,
     "description": "Practice fam. 3.",
     "lessonIds": [
       "zh-lv-hsk1-d38-l1"
@@ -809,7 +809,7 @@
     "levelId": "lv-hsk1",
     "title": "Time 4",
     "subtitle": "Time 4",
-    "order": 39,
+    "order": 45,
     "description": "Practice time 4.",
     "lessonIds": [
       "zh-lv-hsk1-d39-l1"
@@ -824,7 +824,7 @@
     "levelId": "lv-hsk1",
     "title": "Daily Routine 2",
     "subtitle": "Daily Routine 2",
-    "order": 40,
+    "order": 46,
     "description": "Practice daily routine 2.",
     "lessonIds": [
       "zh-lv-hsk1-d40-l1"
@@ -839,7 +839,7 @@
     "levelId": "lv-hsk1",
     "title": "People 3",
     "subtitle": "People 3",
-    "order": 41,
+    "order": 47,
     "description": "Practice people 3.",
     "lessonIds": [
       "zh-lv-hsk1-d41-l1"
@@ -854,7 +854,7 @@
     "levelId": "lv-hsk1",
     "title": "Travel 2",
     "subtitle": "Travel 2",
-    "order": 42,
+    "order": 48,
     "description": "Practice travel 2.",
     "lessonIds": [
       "zh-lv-hsk1-d42-l1"
@@ -869,7 +869,7 @@
     "levelId": "lv-hsk1",
     "title": "Personality and Feelings",
     "subtitle": "Personality and Feelings",
-    "order": 43,
+    "order": 49,
     "description": "Practice personality and feelings.",
     "lessonIds": [
       "zh-lv-hsk1-d43-l1"
@@ -884,7 +884,7 @@
     "levelId": "lv-hsk1",
     "title": "Future",
     "subtitle": "Future",
-    "order": 44,
+    "order": 50,
     "description": "Practice future.",
     "lessonIds": [
       "zh-lv-hsk1-d44-l1"
@@ -899,7 +899,7 @@
     "levelId": "lv-hsk1",
     "title": "Work",
     "subtitle": "Work",
-    "order": 45,
+    "order": 51,
     "description": "Practice work.",
     "lessonIds": [
       "zh-lv-hsk1-d45-l1"
@@ -914,7 +914,7 @@
     "levelId": "lv-hsk1",
     "title": "Hobbies 3",
     "subtitle": "Hobbies 3",
-    "order": 46,
+    "order": 52,
     "description": "Practice hobbies 3.",
     "lessonIds": [
       "zh-lv-hsk1-d46-l1"
@@ -929,7 +929,7 @@
     "levelId": "lv-hsk1",
     "title": "Exam",
     "subtitle": "Exam",
-    "order": 47,
+    "order": 53,
     "description": "Practice exam.",
     "lessonIds": [
       "zh-lv-hsk1-d47-l1"
@@ -944,7 +944,7 @@
     "levelId": "lv-hsk1",
     "title": "Travel 4",
     "subtitle": "Travel 4",
-    "order": 48,
+    "order": 54,
     "description": "Practice travel 4.",
     "lessonIds": [
       "zh-lv-hsk1-d48-l1"
@@ -959,7 +959,7 @@
     "levelId": "lv-hsk1",
     "title": "Festivals",
     "subtitle": "Festivals",
-    "order": 49,
+    "order": 55,
     "description": "Practice festivals.",
     "lessonIds": [
       "zh-lv-hsk1-d49-l1"
@@ -974,7 +974,7 @@
     "levelId": "lv-hsk1",
     "title": "Internet Slang",
     "subtitle": "Internet Slang",
-    "order": 50,
+    "order": 56,
     "description": "Practice internet slang.",
     "lessonIds": [
       "zh-lv-hsk1-d50-l1"
@@ -989,7 +989,7 @@
     "levelId": "lv-hsk1",
     "title": "Business 2",
     "subtitle": "Business 2",
-    "order": 51,
+    "order": 57,
     "description": "Practice business 2.",
     "lessonIds": [
       "zh-lv-hsk1-d51-l1"
@@ -1004,7 +1004,7 @@
     "levelId": "lv-hsk1",
     "title": "Work 3",
     "subtitle": "Work 3",
-    "order": 52,
+    "order": 58,
     "description": "Practice work 3.",
     "lessonIds": [
       "zh-lv-hsk1-d52-l1"
