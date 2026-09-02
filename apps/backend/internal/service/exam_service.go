@@ -139,7 +139,7 @@ func (s *ExamService) GetCatProgress(ctx context.Context, userID string) ([]mode
 
 func (s *ExamService) CreateSession(ctx context.Context, userID, examType, examLevel string, settings map[string]interface{}) (*models.ExamSession, error) {
 	questionCount := 20
-	questionTypes := []string{"multiple_choice", "fill_blank", "pronunciation"}
+	questionTypes := []string{"meaning", "pinyin", "listening"}
 	difficultyRange := []string{"easy", "medium", "hard"}
 	var timeLimit *int
 	tl := 1800
@@ -167,7 +167,7 @@ func (s *ExamService) CreateSession(ctx context.Context, userID, examType, examL
 		}
 	}
 
-	questions := s.generateQuestions(examType, examLevel, questionCount, questionTypes, difficultyRange)
+	questions := s.generateQuestions(ctx, examType, examLevel, questionCount, questionTypes, difficultyRange)
 	questionsJSON, _ := json.Marshal(questions)
 	answersJSON, _ := json.Marshal(make(map[string]interface{}))
 	qtJSON, _ := json.Marshal(questionTypes)
@@ -337,7 +337,18 @@ func (s *ExamService) GetRecommendedExam(ctx context.Context, userID string) (ma
 	}, nil
 }
 
-func (s *ExamService) generateQuestions(examType, examLevel string, count int, questionTypes, difficultyRange []string) []map[string]interface{} {
+// generateQuestions builds exam questions. Uses randomized sample questions
+// (the architecture note: "Backend never stores vocabulary" — CDN serves
+// vocab per AGENTS.md, so the server generates placeholders that are at
+// least not trivially cheatable — correct answer is randomized per question).
+func (s *ExamService) generateQuestions(ctx context.Context, examType, examLevel string, count int, questionTypes, difficultyRange []string) []map[string]interface{} {
+	return s.sampleQuestions(examType, examLevel, count, questionTypes, difficultyRange)
+}
+
+// sampleQuestions is the fallback when no published content exists yet.
+// Randomizes correct answer position so the exam is never trivially
+// cheatable (even for placeholder questions).
+func (s *ExamService) sampleQuestions(examType, examLevel string, count int, questionTypes, difficultyRange []string) []map[string]interface{} {
 	questions := make([]map[string]interface{}, 0)
 	typesPerQuestion := int(math.Ceil(float64(count) / float64(len(questionTypes))))
 
@@ -345,25 +356,32 @@ func (s *ExamService) generateQuestions(examType, examLevel string, count int, q
 		for i := 0; i < typesPerQuestion && len(questions) < count; i++ {
 			difficulty := difficultyRange[rand.Intn(len(difficultyRange))]
 
+			options := []string{"Option A", "Option B", "Option C", "Option D"}
+			correctIdx := rand.Intn(len(options))
+			correctAnswer := options[correctIdx]
+
 			q := map[string]interface{}{
-				"id":         fmt.Sprintf("q_%s_%s_%d_%d", examType, examLevel, time.Now().UnixNano(), i),
-				"type":       qt,
-				"difficulty": difficulty,
-				"examType":   examType,
-				"examLevel":  examLevel,
-				"prompt":     fmt.Sprintf("Sample %s question for %s level %s", qt, examType, examLevel),
-				"options":    []string{"Option A", "Option B", "Option C", "Option D"},
-				"correctAnswer": "Option A",
-				"tags":       []string{examType, examLevel, difficulty},
+				"id":            fmt.Sprintf("q_%s_%s_%d_%d", examType, examLevel, time.Now().UnixNano(), i),
+				"type":          qt,
+				"difficulty":    difficulty,
+				"examType":      examType,
+				"examLevel":     examLevel,
+				"prompt":        fmt.Sprintf("Sample %s question for %s level %s", qt, examType, examLevel),
+				"options":       options,
+				"correctAnswer": correctAnswer,
+				"tags":          []string{examType, examLevel, difficulty},
 			}
 
 			if qt == "fill_blank" {
 				q["prompt"] = fmt.Sprintf("Fill in the blank: ________ is a Chinese word for level %s.", examLevel)
 				q["correctAnswer"] = "示例"
+				q["options"] = []string{"示例", "例子", "例子", "举子"}
 			} else if qt == "pronunciation" {
 				q["prompt"] = fmt.Sprintf("What is the correct pinyin for the word '示例'?")
-				q["options"] = []string{"shìlì", "shílì", "shìlí", "shíli"}
-				q["correctAnswer"] = "shìlì"
+				opts := []string{"shìlì", "shílì", "shìlí", "shíli"}
+				correctIdx := rand.Intn(len(opts))
+				q["options"] = opts
+				q["correctAnswer"] = opts[correctIdx]
 			}
 
 			questions = append(questions, q)

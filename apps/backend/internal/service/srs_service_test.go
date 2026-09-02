@@ -173,6 +173,48 @@ func TestCalculateCardStats(t *testing.T) {
 	}
 }
 
+func TestSampleQuestionsRandomized(t *testing.T) {
+	// L4: sample questions must not always place the correct answer at
+	// index 0 ("Option A") — that made the fixed exam trivially cheatable.
+	s := NewExamService(nil)
+	types := []string{"multiple_choice"}
+	difficulties := []string{"easy", "medium", "hard"}
+
+	seenCorrect := map[string]bool{}
+	total := 0
+	for i := 0; i < 50; i++ {
+		qs := s.sampleQuestions("hsk", "1", 20, types, difficulties)
+		for _, q := range qs {
+			ca, _ := q["correctAnswer"].(string)
+			opts, _ := q["options"].([]string)
+			if len(opts) == 0 {
+				t.Fatal("question has no options")
+			}
+			// correctAnswer must be present in the option set
+			found := false
+			for _, o := range opts {
+				if o == ca {
+					found = true
+					break
+				}
+			}
+			if !found {
+				t.Errorf("correctAnswer %q not among options %v", ca, opts)
+			}
+			seenCorrect[ca] = true
+			total++
+		}
+	}
+	// Across 1000 questions the answer should be randomized, not locked to
+	// one position. At least 2 distinct correct answers expected.
+	if len(seenCorrect) < 2 {
+		t.Errorf("correct answer never randomized: only saw %v", seenCorrect)
+	}
+	if total < 1000 {
+		t.Errorf("expected >= 1000 questions, got %d", total)
+	}
+}
+
 func round64(v float64) float64 {
 	// small helper mirroring math.Round semantics for the SRS interval math
 	if v < 0 {
