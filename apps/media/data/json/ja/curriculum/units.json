@@ -122,5 +122,590 @@
     "subtitle_id": "Tata Bahasa Lanjutan dan Menulis",
     "description_en": "Master advanced grammar patterns and writing.",
     "description_id": "Kuasai pola tata bahasa lanjutan dan menulis."
+  },
+  {
+    "id": "ja-n5-t1",
+    "levelId": "ja-n5",
+    "title": "Greetings & Politeness",
+    "subtitle": "挨拶と丁寧語",
+    "order": 1,
+    "description": "Practice greetings & politeness.",
+    "lessonIds": [
+      "ja-n5-t1-l1"
+    ],
+    "subtitle_en": "挨拶と丁寧語",
+    "subtitle_id": "Greetings & Politeness",
+    "description_en": "Practice greetings & politeness.",
+    "description_id": "Latihan greetings & politeness."
+  },
+  {
+    "id": "ja-n5-t2",
+    "levelId": "ja-n5",
+    "title": "Food & Drink",
+    "subtitle": "食べ物と飲み物",
+    "order": 2,
+    "description": "Practice food & drink.",
+    "lessonIds": [
+      "ja-n5-t2-l2"
+    ],
+    "subtitle_en": "食べ物と飲み物",
+    "subtitle_id": "Food & Drink",
+    "description_en": "Practice food & drink.",
+    "description_id": "Latihan food & drink."
+  },
+  {
+    "id": "ja-n5-t3",
+    "levelId": "ja-n5",
+    "title": "Time & Numbers",
+    "subtitle": "時間と数字",
+    "order": 3,
+    "description": "Practice time & numbers.",
+    "lessonIds": [
+      "ja-n5-t3-l3"
+    ],
+    "subtitle_en": "時間と数字",
+    "subtitle_id": "Time & Numbers",
+    "description_en": "Practice time & numbers.",
+    "description_id": "Latihan time & numbers."
+  },
+  {
+    "id": "ja-n5-t4",
+    "levelId": "ja-n5",
+    "title": "People & Family",
+    "subtitle": "人と家族",
+    "order": 4,
+    "description": "Practice people & family.",
+    "lessonIds": [
+      "ja-n5-t4-l4"
+    ],
+    "subtitle_en": "人と家族",
+    "subtitle_id": "People & Family",
+    "description_en": "Practice people & family.",
+    "description_id": "Latihan people & family."
+  },
+  {
+    "id": "ja-n5-t5",
+    "levelId": "ja-n5",
+    "title": "Daily Life",
+    "subtitle": "日常生活",
+    "order": 5,
+    "description": "Practice daily life.",
+    "lessonIds": [
+      "ja-n5-t5-l5"
+    ],
+    "subtitle_en": "日常生活",
+    "subtitle_id": "Daily Life",
+    "description_en": "Practice daily life.",
+    "description_id": "Latihan daily life."
+  },
+  {
+    "id": "ja-n5-t6",
+    "levelId": "ja-n5",
+    "title": "Travel & Places",
+    "subtitle": "旅行と場所",
+    "order": 6,
+    "description": "Practice travel & places.",
+    "lessonIds": [
+      "ja-n5-t6-l6"
+    ],
+    "subtitle_en": "旅行と場所",
+    "subtitle_id": "Travel & Places",
+    "description_en": "Practice travel & places.",
+    "description_id": "Latihan travel & places."
+  },
+  {
+    "id": "ja-n5-t7",
+    "levelId": "ja-n5",
+    "title": "Feelings & Opinions",
+    "subtitle": "気持ちと意見",
+    "order": 7,
+    "description": "Practice feelings & opinions.",
+    "lessonIds": [
+      "ja-n5-t7-l7"
+    ],
+    "subtitle_en": "気持ちと意見",
+    "subtitle_id": "Feelings & Opinions",
+    "description_en": "Practice feelings & opinions.",
+    "description_id": "Latihan feelings & opinions."
+  },
+  {
+    "id": "ja-n5-t8",
+    "levelId": "ja-n5",
+    "title": "Nature & Weather",
+    "subtitle": "自然と天気",
+    "order": 8,
+    "description": "Practice nature & weather.",
+    "lessonIds": [
+      "ja-n5-t8-l8"
+    ],
+    "subtitle_en": "自然と天気",
+    "subtitle_id": "Nature & Weather",
+    "description_en": "Practice nature & weather.",
+    "description_id": "Latihan nature & weather."
+  },
+  {
+    "id": "ja-n4-t1",
+    "levelId": "ja-n4",
+    "title": "Food & Drink",
+    "subtitle": "食べ物と飲み物",
+    "order": 1,
+    "description": "Practice food & drink.",
+    "lessonIds": [
+      "ja-n4-t1-l1"
+    ],
+    "subtitle_en": "食べ物と飲み物",
+    "subtitle_id": "Food & Drink",
+    "description_en": "Practice food & drink.",
+    "description_id": "Latihan food & drink."
+  },
+  {
+    "id": "ja-n4-t2",
+    "levelId": "ja-n4",
+    "title": "Time & Numbers",
+    "subtitle": "時間と数字",
+    "order": 2,
+    "description": "Practice time & numbers.",
+    "lessonIds": [
+      "ja-n4-t2-l2"
+    ],
+    "subtitle_en": "時間と数字",
+    "subtitle_id": "Time & Numbers",
+    "description_en": "Practice time & numbers.",
+    "description_id": "Latihan time & numbers."
+  },
+  {
+    "id": "ja-n4-t3",
+    "levelId": "ja-n4",
+    "title": "People & Family",
+    "subtitle": "人と家族",
+    "order": 3,
+    "description": "Practice people & family.",
+    "lessonIds": [
+      "ja-n4-t3-l3"
+    ],
+    "subtitle_en": "人と家族",
+    "subtitle_id": "People & Family",
+    "description_en": "Practice people & family.",
+    "description_id": "Latihan people & family."
+  },
+  {
+    "id": "ja-n4-t4",
+    "levelId": "ja-n4",
+    "title": "Daily Life",
+    "subtitle": "日常生活",
+    "order": 4,
+    "description": "Practice daily life.",
+    "lessonIds": [
+      "ja-n4-t4-l4"
+    ],
+    "subtitle_en": "日常生活",
+    "subtitle_id": "Daily Life",
+    "description_en": "Practice daily life.",
+    "description_id": "Latihan daily life."
+  },
+  {
+    "id": "ja-n4-t5",
+    "levelId": "ja-n4",
+    "title": "Travel & Places",
+    "subtitle": "旅行と場所",
+    "order": 5,
+    "description": "Practice travel & places.",
+    "lessonIds": [
+      "ja-n4-t5-l5"
+    ],
+    "subtitle_en": "旅行と場所",
+    "subtitle_id": "Travel & Places",
+    "description_en": "Practice travel & places.",
+    "description_id": "Latihan travel & places."
+  },
+  {
+    "id": "ja-n4-t6",
+    "levelId": "ja-n4",
+    "title": "Feelings & Opinions",
+    "subtitle": "気持ちと意見",
+    "order": 6,
+    "description": "Practice feelings & opinions.",
+    "lessonIds": [
+      "ja-n4-t6-l6"
+    ],
+    "subtitle_en": "気持ちと意見",
+    "subtitle_id": "Feelings & Opinions",
+    "description_en": "Practice feelings & opinions.",
+    "description_id": "Latihan feelings & opinions."
+  },
+  {
+    "id": "ja-n4-t7",
+    "levelId": "ja-n4",
+    "title": "Nature & Weather",
+    "subtitle": "自然と天気",
+    "order": 7,
+    "description": "Practice nature & weather.",
+    "lessonIds": [
+      "ja-n4-t7-l7"
+    ],
+    "subtitle_en": "自然と天気",
+    "subtitle_id": "Nature & Weather",
+    "description_en": "Practice nature & weather.",
+    "description_id": "Latihan nature & weather."
+  },
+  {
+    "id": "ja-n3-t1",
+    "levelId": "ja-n3",
+    "title": "Greetings & Politeness",
+    "subtitle": "挨拶と丁寧語",
+    "order": 1,
+    "description": "Practice greetings & politeness.",
+    "lessonIds": [
+      "ja-n3-t1-l1"
+    ],
+    "subtitle_en": "挨拶と丁寧語",
+    "subtitle_id": "Greetings & Politeness",
+    "description_en": "Practice greetings & politeness.",
+    "description_id": "Latihan greetings & politeness."
+  },
+  {
+    "id": "ja-n3-t2",
+    "levelId": "ja-n3",
+    "title": "Food & Drink",
+    "subtitle": "食べ物と飲み物",
+    "order": 2,
+    "description": "Practice food & drink.",
+    "lessonIds": [
+      "ja-n3-t2-l2"
+    ],
+    "subtitle_en": "食べ物と飲み物",
+    "subtitle_id": "Food & Drink",
+    "description_en": "Practice food & drink.",
+    "description_id": "Latihan food & drink."
+  },
+  {
+    "id": "ja-n3-t3",
+    "levelId": "ja-n3",
+    "title": "Time & Numbers",
+    "subtitle": "時間と数字",
+    "order": 3,
+    "description": "Practice time & numbers.",
+    "lessonIds": [
+      "ja-n3-t3-l3"
+    ],
+    "subtitle_en": "時間と数字",
+    "subtitle_id": "Time & Numbers",
+    "description_en": "Practice time & numbers.",
+    "description_id": "Latihan time & numbers."
+  },
+  {
+    "id": "ja-n3-t4",
+    "levelId": "ja-n3",
+    "title": "People & Family",
+    "subtitle": "人と家族",
+    "order": 4,
+    "description": "Practice people & family.",
+    "lessonIds": [
+      "ja-n3-t4-l4"
+    ],
+    "subtitle_en": "人と家族",
+    "subtitle_id": "People & Family",
+    "description_en": "Practice people & family.",
+    "description_id": "Latihan people & family."
+  },
+  {
+    "id": "ja-n3-t5",
+    "levelId": "ja-n3",
+    "title": "Daily Life",
+    "subtitle": "日常生活",
+    "order": 5,
+    "description": "Practice daily life.",
+    "lessonIds": [
+      "ja-n3-t5-l5"
+    ],
+    "subtitle_en": "日常生活",
+    "subtitle_id": "Daily Life",
+    "description_en": "Practice daily life.",
+    "description_id": "Latihan daily life."
+  },
+  {
+    "id": "ja-n3-t6",
+    "levelId": "ja-n3",
+    "title": "Travel & Places",
+    "subtitle": "旅行と場所",
+    "order": 6,
+    "description": "Practice travel & places.",
+    "lessonIds": [
+      "ja-n3-t6-l6"
+    ],
+    "subtitle_en": "旅行と場所",
+    "subtitle_id": "Travel & Places",
+    "description_en": "Practice travel & places.",
+    "description_id": "Latihan travel & places."
+  },
+  {
+    "id": "ja-n3-t7",
+    "levelId": "ja-n3",
+    "title": "Feelings & Opinions",
+    "subtitle": "気持ちと意見",
+    "order": 7,
+    "description": "Practice feelings & opinions.",
+    "lessonIds": [
+      "ja-n3-t7-l7"
+    ],
+    "subtitle_en": "気持ちと意見",
+    "subtitle_id": "Feelings & Opinions",
+    "description_en": "Practice feelings & opinions.",
+    "description_id": "Latihan feelings & opinions."
+  },
+  {
+    "id": "ja-n3-t8",
+    "levelId": "ja-n3",
+    "title": "Nature & Weather",
+    "subtitle": "自然と天気",
+    "order": 8,
+    "description": "Practice nature & weather.",
+    "lessonIds": [
+      "ja-n3-t8-l8"
+    ],
+    "subtitle_en": "自然と天気",
+    "subtitle_id": "Nature & Weather",
+    "description_en": "Practice nature & weather.",
+    "description_id": "Latihan nature & weather."
+  },
+  {
+    "id": "ja-n2-t1",
+    "levelId": "ja-n2",
+    "title": "Greetings & Politeness",
+    "subtitle": "挨拶と丁寧語",
+    "order": 1,
+    "description": "Practice greetings & politeness.",
+    "lessonIds": [
+      "ja-n2-t1-l1"
+    ],
+    "subtitle_en": "挨拶と丁寧語",
+    "subtitle_id": "Greetings & Politeness",
+    "description_en": "Practice greetings & politeness.",
+    "description_id": "Latihan greetings & politeness."
+  },
+  {
+    "id": "ja-n2-t2",
+    "levelId": "ja-n2",
+    "title": "Food & Drink",
+    "subtitle": "食べ物と飲み物",
+    "order": 2,
+    "description": "Practice food & drink.",
+    "lessonIds": [
+      "ja-n2-t2-l2"
+    ],
+    "subtitle_en": "食べ物と飲み物",
+    "subtitle_id": "Food & Drink",
+    "description_en": "Practice food & drink.",
+    "description_id": "Latihan food & drink."
+  },
+  {
+    "id": "ja-n2-t3",
+    "levelId": "ja-n2",
+    "title": "Time & Numbers",
+    "subtitle": "時間と数字",
+    "order": 3,
+    "description": "Practice time & numbers.",
+    "lessonIds": [
+      "ja-n2-t3-l3"
+    ],
+    "subtitle_en": "時間と数字",
+    "subtitle_id": "Time & Numbers",
+    "description_en": "Practice time & numbers.",
+    "description_id": "Latihan time & numbers."
+  },
+  {
+    "id": "ja-n2-t4",
+    "levelId": "ja-n2",
+    "title": "People & Family",
+    "subtitle": "人と家族",
+    "order": 4,
+    "description": "Practice people & family.",
+    "lessonIds": [
+      "ja-n2-t4-l4"
+    ],
+    "subtitle_en": "人と家族",
+    "subtitle_id": "People & Family",
+    "description_en": "Practice people & family.",
+    "description_id": "Latihan people & family."
+  },
+  {
+    "id": "ja-n2-t5",
+    "levelId": "ja-n2",
+    "title": "Daily Life",
+    "subtitle": "日常生活",
+    "order": 5,
+    "description": "Practice daily life.",
+    "lessonIds": [
+      "ja-n2-t5-l5"
+    ],
+    "subtitle_en": "日常生活",
+    "subtitle_id": "Daily Life",
+    "description_en": "Practice daily life.",
+    "description_id": "Latihan daily life."
+  },
+  {
+    "id": "ja-n2-t6",
+    "levelId": "ja-n2",
+    "title": "Travel & Places",
+    "subtitle": "旅行と場所",
+    "order": 6,
+    "description": "Practice travel & places.",
+    "lessonIds": [
+      "ja-n2-t6-l6"
+    ],
+    "subtitle_en": "旅行と場所",
+    "subtitle_id": "Travel & Places",
+    "description_en": "Practice travel & places.",
+    "description_id": "Latihan travel & places."
+  },
+  {
+    "id": "ja-n2-t7",
+    "levelId": "ja-n2",
+    "title": "Feelings & Opinions",
+    "subtitle": "気持ちと意見",
+    "order": 7,
+    "description": "Practice feelings & opinions.",
+    "lessonIds": [
+      "ja-n2-t7-l7"
+    ],
+    "subtitle_en": "気持ちと意見",
+    "subtitle_id": "Feelings & Opinions",
+    "description_en": "Practice feelings & opinions.",
+    "description_id": "Latihan feelings & opinions."
+  },
+  {
+    "id": "ja-n2-t8",
+    "levelId": "ja-n2",
+    "title": "Nature & Weather",
+    "subtitle": "自然と天気",
+    "order": 8,
+    "description": "Practice nature & weather.",
+    "lessonIds": [
+      "ja-n2-t8-l8"
+    ],
+    "subtitle_en": "自然と天気",
+    "subtitle_id": "Nature & Weather",
+    "description_en": "Practice nature & weather.",
+    "description_id": "Latihan nature & weather."
+  },
+  {
+    "id": "ja-n1-t1",
+    "levelId": "ja-n1",
+    "title": "Greetings & Politeness",
+    "subtitle": "挨拶と丁寧語",
+    "order": 1,
+    "description": "Practice greetings & politeness.",
+    "lessonIds": [
+      "ja-n1-t1-l1"
+    ],
+    "subtitle_en": "挨拶と丁寧語",
+    "subtitle_id": "Greetings & Politeness",
+    "description_en": "Practice greetings & politeness.",
+    "description_id": "Latihan greetings & politeness."
+  },
+  {
+    "id": "ja-n1-t2",
+    "levelId": "ja-n1",
+    "title": "Food & Drink",
+    "subtitle": "食べ物と飲み物",
+    "order": 2,
+    "description": "Practice food & drink.",
+    "lessonIds": [
+      "ja-n1-t2-l2"
+    ],
+    "subtitle_en": "食べ物と飲み物",
+    "subtitle_id": "Food & Drink",
+    "description_en": "Practice food & drink.",
+    "description_id": "Latihan food & drink."
+  },
+  {
+    "id": "ja-n1-t3",
+    "levelId": "ja-n1",
+    "title": "Time & Numbers",
+    "subtitle": "時間と数字",
+    "order": 3,
+    "description": "Practice time & numbers.",
+    "lessonIds": [
+      "ja-n1-t3-l3"
+    ],
+    "subtitle_en": "時間と数字",
+    "subtitle_id": "Time & Numbers",
+    "description_en": "Practice time & numbers.",
+    "description_id": "Latihan time & numbers."
+  },
+  {
+    "id": "ja-n1-t4",
+    "levelId": "ja-n1",
+    "title": "People & Family",
+    "subtitle": "人と家族",
+    "order": 4,
+    "description": "Practice people & family.",
+    "lessonIds": [
+      "ja-n1-t4-l4"
+    ],
+    "subtitle_en": "人と家族",
+    "subtitle_id": "People & Family",
+    "description_en": "Practice people & family.",
+    "description_id": "Latihan people & family."
+  },
+  {
+    "id": "ja-n1-t5",
+    "levelId": "ja-n1",
+    "title": "Daily Life",
+    "subtitle": "日常生活",
+    "order": 5,
+    "description": "Practice daily life.",
+    "lessonIds": [
+      "ja-n1-t5-l5"
+    ],
+    "subtitle_en": "日常生活",
+    "subtitle_id": "Daily Life",
+    "description_en": "Practice daily life.",
+    "description_id": "Latihan daily life."
+  },
+  {
+    "id": "ja-n1-t6",
+    "levelId": "ja-n1",
+    "title": "Travel & Places",
+    "subtitle": "旅行と場所",
+    "order": 6,
+    "description": "Practice travel & places.",
+    "lessonIds": [
+      "ja-n1-t6-l6"
+    ],
+    "subtitle_en": "旅行と場所",
+    "subtitle_id": "Travel & Places",
+    "description_en": "Practice travel & places.",
+    "description_id": "Latihan travel & places."
+  },
+  {
+    "id": "ja-n1-t7",
+    "levelId": "ja-n1",
+    "title": "Feelings & Opinions",
+    "subtitle": "気持ちと意見",
+    "order": 7,
+    "description": "Practice feelings & opinions.",
+    "lessonIds": [
+      "ja-n1-t7-l7"
+    ],
+    "subtitle_en": "気持ちと意見",
+    "subtitle_id": "Feelings & Opinions",
+    "description_en": "Practice feelings & opinions.",
+    "description_id": "Latihan feelings & opinions."
+  },
+  {
+    "id": "ja-n1-t8",
+    "levelId": "ja-n1",
+    "title": "Nature & Weather",
+    "subtitle": "自然と天気",
+    "order": 8,
+    "description": "Practice nature & weather.",
+    "lessonIds": [
+      "ja-n1-t8-l8"
+    ],
+    "subtitle_en": "自然と天気",
+    "subtitle_id": "Nature & Weather",
+    "description_en": "Practice nature & weather.",
+    "description_id": "Latihan nature & weather."
   }
 ]

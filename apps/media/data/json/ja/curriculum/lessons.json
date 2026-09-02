@@ -303,5 +303,1345 @@
     ],
     "subtitle_en": "上級文法パターン",
     "subtitle_id": "Pola Tata Bahasa Lanjutan"
+  },
+  {
+    "id": "ja-n5-t1-l1",
+    "unitId": "ja-n5-t1",
+    "title": "Greetings & Politeness",
+    "subtitle": "挨拶と丁寧語",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn greetings & politeness vocabulary",
+      "Practice using these words in context"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Greetings & Politeness",
+        "vocabIds": [
+          "ja_konnichiwa",
+          "ja_arigatou",
+          "ja_sayonara",
+          "ja__54",
+          "ja__119",
+          "ja__120"
+        ]
+      }
+    ],
+    "subtitle_en": "挨拶と丁寧語",
+    "subtitle_id": "Greetings & Politeness"
+  },
+  {
+    "id": "ja-n5-t2-l2",
+    "unitId": "ja-n5-t2",
+    "title": "Food & Drink",
+    "subtitle": "食べ物と飲み物",
+    "order": 2,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn food & drink vocabulary",
+      "Practice using these words in context"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Food & Drink",
+        "vocabIds": [
+          "ja_taberu",
+          "ja_nomu",
+          "ja_mizu",
+          "ja_sensei",
+          "ja__35",
+          "ja__36",
+          "ja__39",
+          "ja__58",
+          "ja__76",
+          "ja__82",
+          "ja__101",
+          "ja__127"
+        ]
+      }
+    ],
+    "subtitle_en": "食べ物と飲み物",
+    "subtitle_id": "Food & Drink"
+  },
+  {
+    "id": "ja-n5-t3-l3",
+    "unitId": "ja-n5-t3",
+    "title": "Time & Numbers",
+    "subtitle": "時間と数字",
+    "order": 3,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn time & numbers vocabulary",
+      "Practice using these words in context"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Time & Numbers",
+        "vocabIds": [
+          "ja_",
+          "ja__41",
+          "ja__68",
+          "ja__188",
+          "ja__189",
+          "ja__190",
+          "ja__193",
+          "ja__219",
+          "ja__223",
+          "ja__227",
+          "ja__258",
+          "ja__263"
+        ]
+      }
+    ],
+    "subtitle_en": "時間と数字",
+    "subtitle_id": "Time & Numbers"
+  },
+  {
+    "id": "ja-n5-t4-l4",
+    "unitId": "ja-n5-t4",
+    "title": "People & Family",
+    "subtitle": "人と家族",
+    "order": 4,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn people & family vocabulary",
+      "Practice using these words in context"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "People & Family",
+        "vocabIds": [
+          "ja_chichi",
+          "ja_haha",
+          "ja__15",
+          "ja__26",
+          "ja__27",
+          "ja__31",
+          "ja__33",
+          "ja__37",
+          "ja__40",
+          "ja__60",
+          "ja__61",
+          "ja__95"
+        ]
+      }
+    ],
+    "subtitle_en": "人と家族",
+    "subtitle_id": "People & Family"
+  },
+  {
+    "id": "ja-n5-t5-l5",
+    "unitId": "ja-n5-t5",
+    "title": "Daily Life",
+    "subtitle": "日常生活",
+    "order": 5,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn daily life vocabulary",
+      "Practice using these words in context"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Daily Life",
+        "vocabIds": [
+          "ja_gakkou",
+          "ja__8",
+          "ja__34",
+          "ja__38",
+          "ja__147",
+          "ja__203",
+          "ja__220",
+          "ja__222",
+          "ja__245",
+          "ja__256",
+          "ja__268",
+          "ja__272"
+        ]
+      }
+    ],
+    "subtitle_en": "日常生活",
+    "subtitle_id": "Daily Life"
+  },
+  {
+    "id": "ja-n5-t6-l6",
+    "unitId": "ja-n5-t6",
+    "title": "Travel & Places",
+    "subtitle": "旅行と場所",
+    "order": 6,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn travel & places vocabulary",
+      "Practice using these words in context"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Travel & Places",
+        "vocabIds": [
+          "ja__86",
+          "ja__157",
+          "ja__233",
+          "ja__241",
+          "ja__323",
+          "ja__351",
+          "ja__405",
+          "ja__448",
+          "ja__455",
+          "ja__492",
+          "ja__504",
+          "ja__515"
+        ]
+      }
+    ],
+    "subtitle_en": "旅行と場所",
+    "subtitle_id": "Travel & Places"
+  },
+  {
+    "id": "ja-n5-t7-l7",
+    "unitId": "ja-n5-t7",
+    "title": "Feelings & Opinions",
+    "subtitle": "気持ちと意見",
+    "order": 7,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn feelings & opinions vocabulary",
+      "Practice using these words in context"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Feelings & Opinions",
+        "vocabIds": [
+          "ja__28",
+          "ja__316",
+          "ja__476",
+          "ja__481",
+          "ja__636"
+        ]
+      }
+    ],
+    "subtitle_en": "気持ちと意見",
+    "subtitle_id": "Feelings & Opinions"
+  },
+  {
+    "id": "ja-n5-t8-l8",
+    "unitId": "ja-n5-t8",
+    "title": "Nature & Weather",
+    "subtitle": "自然と天気",
+    "order": 8,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn nature & weather vocabulary",
+      "Practice using these words in context"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Nature & Weather",
+        "vocabIds": [
+          "ja__198",
+          "ja__228",
+          "ja__264",
+          "ja__265",
+          "ja__280",
+          "ja__293",
+          "ja__321",
+          "ja__436",
+          "ja__449",
+          "ja__462",
+          "ja__506",
+          "ja__527"
+        ]
+      }
+    ],
+    "subtitle_en": "自然と天気",
+    "subtitle_id": "Nature & Weather"
+  },
+  {
+    "id": "ja-n4-t1-l1",
+    "unitId": "ja-n4-t1",
+    "title": "Food & Drink",
+    "subtitle": "食べ物と飲み物",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn food & drink vocabulary",
+      "Practice using these words in context"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Food & Drink",
+        "vocabIds": [
+          "ja__674",
+          "ja__732",
+          "ja__743",
+          "ja__779",
+          "ja__889",
+          "ja__1032",
+          "ja__1053",
+          "ja__1072",
+          "ja__1085",
+          "ja__1120",
+          "ja__1123",
+          "ja__1151"
+        ]
+      }
+    ],
+    "subtitle_en": "食べ物と飲み物",
+    "subtitle_id": "Food & Drink"
+  },
+  {
+    "id": "ja-n4-t2-l2",
+    "unitId": "ja-n4-t2",
+    "title": "Time & Numbers",
+    "subtitle": "時間と数字",
+    "order": 2,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn time & numbers vocabulary",
+      "Practice using these words in context"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Time & Numbers",
+        "vocabIds": [
+          "ja__672",
+          "ja__717",
+          "ja__718",
+          "ja__725",
+          "ja__729",
+          "ja__730",
+          "ja__782",
+          "ja__878",
+          "ja__896",
+          "ja__961",
+          "ja__962",
+          "ja__965"
+        ]
+      }
+    ],
+    "subtitle_en": "時間と数字",
+    "subtitle_id": "Time & Numbers"
+  },
+  {
+    "id": "ja-n4-t3-l3",
+    "unitId": "ja-n4-t3",
+    "title": "People & Family",
+    "subtitle": "人と家族",
+    "order": 3,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn people & family vocabulary",
+      "Practice using these words in context"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "People & Family",
+        "vocabIds": [
+          "ja__692",
+          "ja__765",
+          "ja__784",
+          "ja__853",
+          "ja__945",
+          "ja__956",
+          "ja__978",
+          "ja__1019",
+          "ja__1030",
+          "ja__1065",
+          "ja__1097",
+          "ja__1098"
+        ]
+      }
+    ],
+    "subtitle_en": "人と家族",
+    "subtitle_id": "People & Family"
+  },
+  {
+    "id": "ja-n4-t4-l4",
+    "unitId": "ja-n4-t4",
+    "title": "Daily Life",
+    "subtitle": "日常生活",
+    "order": 4,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn daily life vocabulary",
+      "Practice using these words in context"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Daily Life",
+        "vocabIds": [
+          "ja__697",
+          "ja__703",
+          "ja__822",
+          "ja__829",
+          "ja__837",
+          "ja__848",
+          "ja__856",
+          "ja__929",
+          "ja__943",
+          "ja__955",
+          "ja__957",
+          "ja__1034"
+        ]
+      }
+    ],
+    "subtitle_en": "日常生活",
+    "subtitle_id": "Daily Life"
+  },
+  {
+    "id": "ja-n4-t5-l5",
+    "unitId": "ja-n4-t5",
+    "title": "Travel & Places",
+    "subtitle": "旅行と場所",
+    "order": 5,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn travel & places vocabulary",
+      "Practice using these words in context"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Travel & Places",
+        "vocabIds": [
+          "ja__832",
+          "ja__857",
+          "ja__891",
+          "ja__912",
+          "ja__928",
+          "ja__979",
+          "ja__1156",
+          "ja__1188",
+          "ja__1200",
+          "ja__1282"
+        ]
+      }
+    ],
+    "subtitle_en": "旅行と場所",
+    "subtitle_id": "Travel & Places"
+  },
+  {
+    "id": "ja-n4-t6-l6",
+    "unitId": "ja-n4-t6",
+    "title": "Feelings & Opinions",
+    "subtitle": "気持ちと意見",
+    "order": 6,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn feelings & opinions vocabulary",
+      "Practice using these words in context"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Feelings & Opinions",
+        "vocabIds": [
+          "ja__662",
+          "ja__688",
+          "ja__757",
+          "ja__887",
+          "ja__982",
+          "ja__1118",
+          "ja__1163",
+          "ja__1197",
+          "ja__1201"
+        ]
+      }
+    ],
+    "subtitle_en": "気持ちと意見",
+    "subtitle_id": "Feelings & Opinions"
+  },
+  {
+    "id": "ja-n4-t7-l7",
+    "unitId": "ja-n4-t7",
+    "title": "Nature & Weather",
+    "subtitle": "自然と天気",
+    "order": 7,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn nature & weather vocabulary",
+      "Practice using these words in context"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Nature & Weather",
+        "vocabIds": [
+          "ja__902",
+          "ja__954",
+          "ja__1036",
+          "ja__1048",
+          "ja__1148",
+          "ja__1216"
+        ]
+      }
+    ],
+    "subtitle_en": "自然と天気",
+    "subtitle_id": "Nature & Weather"
+  },
+  {
+    "id": "ja-n3-t1-l1",
+    "unitId": "ja-n3-t1",
+    "title": "Greetings & Politeness",
+    "subtitle": "挨拶と丁寧語",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn greetings & politeness vocabulary",
+      "Practice using these words in context"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Greetings & Politeness",
+        "vocabIds": [
+          "ja__1294",
+          "ja__1302",
+          "ja__1319",
+          "ja__1373",
+          "ja__1405",
+          "ja__1439",
+          "ja__1533",
+          "ja__1545",
+          "ja__1750",
+          "ja__1755",
+          "ja__1798"
+        ]
+      }
+    ],
+    "subtitle_en": "挨拶と丁寧語",
+    "subtitle_id": "Greetings & Politeness"
+  },
+  {
+    "id": "ja-n3-t2-l2",
+    "unitId": "ja-n3-t2",
+    "title": "Food & Drink",
+    "subtitle": "食べ物と飲み物",
+    "order": 2,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn food & drink vocabulary",
+      "Practice using these words in context"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Food & Drink",
+        "vocabIds": [
+          "ja__1311",
+          "ja__1312",
+          "ja__1340",
+          "ja__1378",
+          "ja__1383",
+          "ja__1392",
+          "ja__1397",
+          "ja__1402",
+          "ja__1432",
+          "ja__1436",
+          "ja__1473",
+          "ja__1492"
+        ]
+      }
+    ],
+    "subtitle_en": "食べ物と飲み物",
+    "subtitle_id": "Food & Drink"
+  },
+  {
+    "id": "ja-n3-t3-l3",
+    "unitId": "ja-n3-t3",
+    "title": "Time & Numbers",
+    "subtitle": "時間と数字",
+    "order": 3,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn time & numbers vocabulary",
+      "Practice using these words in context"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Time & Numbers",
+        "vocabIds": [
+          "ja__1297",
+          "ja__1314",
+          "ja__1315",
+          "ja__1317",
+          "ja__1377",
+          "ja__1525",
+          "ja__1585",
+          "ja__1588",
+          "ja__1589",
+          "ja__1595",
+          "ja__1678",
+          "ja__1683"
+        ]
+      }
+    ],
+    "subtitle_en": "時間と数字",
+    "subtitle_id": "Time & Numbers"
+  },
+  {
+    "id": "ja-n3-t4-l4",
+    "unitId": "ja-n3-t4",
+    "title": "People & Family",
+    "subtitle": "人と家族",
+    "order": 4,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn people & family vocabulary",
+      "Practice using these words in context"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "People & Family",
+        "vocabIds": [
+          "ja__1331",
+          "ja__1335",
+          "ja__1337",
+          "ja__1387",
+          "ja__1449",
+          "ja__1514",
+          "ja__1582",
+          "ja__1583",
+          "ja__1615",
+          "ja__1619",
+          "ja__1629",
+          "ja__1631"
+        ]
+      }
+    ],
+    "subtitle_en": "人と家族",
+    "subtitle_id": "People & Family"
+  },
+  {
+    "id": "ja-n3-t5-l5",
+    "unitId": "ja-n3-t5",
+    "title": "Daily Life",
+    "subtitle": "日常生活",
+    "order": 5,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn daily life vocabulary",
+      "Practice using these words in context"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Daily Life",
+        "vocabIds": [
+          "ja__1300",
+          "ja__1342",
+          "ja__1343",
+          "ja__1354",
+          "ja__1445",
+          "ja__1457",
+          "ja__1460",
+          "ja__1475",
+          "ja__1487",
+          "ja__1505",
+          "ja__1636",
+          "ja__1655"
+        ]
+      }
+    ],
+    "subtitle_en": "日常生活",
+    "subtitle_id": "Daily Life"
+  },
+  {
+    "id": "ja-n3-t6-l6",
+    "unitId": "ja-n3-t6",
+    "title": "Travel & Places",
+    "subtitle": "旅行と場所",
+    "order": 6,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn travel & places vocabulary",
+      "Practice using these words in context"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Travel & Places",
+        "vocabIds": [
+          "ja__1559",
+          "ja__1645",
+          "ja__1676",
+          "ja__1703",
+          "ja__1708",
+          "ja__1754",
+          "ja__1948",
+          "ja__2004",
+          "ja__2049",
+          "ja__2098",
+          "ja__2197",
+          "ja__2297"
+        ]
+      }
+    ],
+    "subtitle_en": "旅行と場所",
+    "subtitle_id": "Travel & Places"
+  },
+  {
+    "id": "ja-n3-t7-l7",
+    "unitId": "ja-n3-t7",
+    "title": "Feelings & Opinions",
+    "subtitle": "気持ちと意見",
+    "order": 7,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn feelings & opinions vocabulary",
+      "Practice using these words in context"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Feelings & Opinions",
+        "vocabIds": [
+          "ja__1316",
+          "ja__1344",
+          "ja__1372",
+          "ja__1413",
+          "ja__1474",
+          "ja__1747",
+          "ja__1748",
+          "ja__1784",
+          "ja__1796",
+          "ja__1803",
+          "ja__1882",
+          "ja__1894"
+        ]
+      }
+    ],
+    "subtitle_en": "気持ちと意見",
+    "subtitle_id": "Feelings & Opinions"
+  },
+  {
+    "id": "ja-n3-t8-l8",
+    "unitId": "ja-n3-t8",
+    "title": "Nature & Weather",
+    "subtitle": "自然と天気",
+    "order": 8,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn nature & weather vocabulary",
+      "Practice using these words in context"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Nature & Weather",
+        "vocabIds": [
+          "ja__1322",
+          "ja__1539",
+          "ja__1608",
+          "ja__1714",
+          "ja__1715",
+          "ja__1738",
+          "ja__1778",
+          "ja__1840",
+          "ja__1848",
+          "ja__1891",
+          "ja__1898",
+          "ja__1972"
+        ]
+      }
+    ],
+    "subtitle_en": "自然と天気",
+    "subtitle_id": "Nature & Weather"
+  },
+  {
+    "id": "ja-n2-t1-l1",
+    "unitId": "ja-n2-t1",
+    "title": "Greetings & Politeness",
+    "subtitle": "挨拶と丁寧語",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn greetings & politeness vocabulary",
+      "Practice using these words in context"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Greetings & Politeness",
+        "vocabIds": [
+          "ja__3116",
+          "ja__3127",
+          "ja__3129",
+          "ja__3130",
+          "ja__3131",
+          "ja__3136",
+          "ja__3170",
+          "ja__3227",
+          "ja__3264",
+          "ja__3638",
+          "ja__4007",
+          "ja__4205"
+        ]
+      }
+    ],
+    "subtitle_en": "挨拶と丁寧語",
+    "subtitle_id": "Greetings & Politeness"
+  },
+  {
+    "id": "ja-n2-t2-l2",
+    "unitId": "ja-n2-t2",
+    "title": "Food & Drink",
+    "subtitle": "食べ物と飲み物",
+    "order": 2,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn food & drink vocabulary",
+      "Practice using these words in context"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Food & Drink",
+        "vocabIds": [
+          "ja__3108",
+          "ja__3117",
+          "ja__3123",
+          "ja__3134",
+          "ja__3148",
+          "ja__3165",
+          "ja__3174",
+          "ja__3175",
+          "ja__3198",
+          "ja__3220",
+          "ja__3249",
+          "ja__3254"
+        ]
+      }
+    ],
+    "subtitle_en": "食べ物と飲み物",
+    "subtitle_id": "Food & Drink"
+  },
+  {
+    "id": "ja-n2-t3-l3",
+    "unitId": "ja-n2-t3",
+    "title": "Time & Numbers",
+    "subtitle": "時間と数字",
+    "order": 3,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn time & numbers vocabulary",
+      "Practice using these words in context"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Time & Numbers",
+        "vocabIds": [
+          "ja__3124",
+          "ja__3125",
+          "ja__3128",
+          "ja__3133",
+          "ja__3176",
+          "ja__3186",
+          "ja__3189",
+          "ja__3195",
+          "ja__3235",
+          "ja__3266",
+          "ja__3276",
+          "ja__3321"
+        ]
+      }
+    ],
+    "subtitle_en": "時間と数字",
+    "subtitle_id": "Time & Numbers"
+  },
+  {
+    "id": "ja-n2-t4-l4",
+    "unitId": "ja-n2-t4",
+    "title": "People & Family",
+    "subtitle": "人と家族",
+    "order": 4,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn people & family vocabulary",
+      "Practice using these words in context"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "People & Family",
+        "vocabIds": [
+          "ja__3102",
+          "ja__3171",
+          "ja__3192",
+          "ja__3222",
+          "ja__3375",
+          "ja__3397",
+          "ja__3505",
+          "ja__3559",
+          "ja__3632",
+          "ja__3680",
+          "ja__3686",
+          "ja__3705"
+        ]
+      }
+    ],
+    "subtitle_en": "人と家族",
+    "subtitle_id": "People & Family"
+  },
+  {
+    "id": "ja-n2-t5-l5",
+    "unitId": "ja-n2-t5",
+    "title": "Daily Life",
+    "subtitle": "日常生活",
+    "order": 5,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn daily life vocabulary",
+      "Practice using these words in context"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Daily Life",
+        "vocabIds": [
+          "ja__3105",
+          "ja__3122",
+          "ja__3149",
+          "ja__3201",
+          "ja__3210",
+          "ja__3211",
+          "ja__3214",
+          "ja__3215",
+          "ja__3238",
+          "ja__3270",
+          "ja__3335",
+          "ja__3337"
+        ]
+      }
+    ],
+    "subtitle_en": "日常生活",
+    "subtitle_id": "Daily Life"
+  },
+  {
+    "id": "ja-n2-t6-l6",
+    "unitId": "ja-n2-t6",
+    "title": "Travel & Places",
+    "subtitle": "旅行と場所",
+    "order": 6,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn travel & places vocabulary",
+      "Practice using these words in context"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Travel & Places",
+        "vocabIds": [
+          "ja__3196",
+          "ja__3446",
+          "ja__3506",
+          "ja__3508",
+          "ja__3519",
+          "ja__3530",
+          "ja__3539",
+          "ja__3669",
+          "ja__3718",
+          "ja__3722",
+          "ja__3733",
+          "ja__3793"
+        ]
+      }
+    ],
+    "subtitle_en": "旅行と場所",
+    "subtitle_id": "Travel & Places"
+  },
+  {
+    "id": "ja-n2-t7-l7",
+    "unitId": "ja-n2-t7",
+    "title": "Feelings & Opinions",
+    "subtitle": "気持ちと意見",
+    "order": 7,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn feelings & opinions vocabulary",
+      "Practice using these words in context"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Feelings & Opinions",
+        "vocabIds": [
+          "ja__3132",
+          "ja__3237",
+          "ja__3338",
+          "ja__3345",
+          "ja__3576",
+          "ja__3700",
+          "ja__3724",
+          "ja__3776",
+          "ja__3800",
+          "ja__3821",
+          "ja__3831",
+          "ja__3897"
+        ]
+      }
+    ],
+    "subtitle_en": "気持ちと意見",
+    "subtitle_id": "Feelings & Opinions"
+  },
+  {
+    "id": "ja-n2-t8-l8",
+    "unitId": "ja-n2-t8",
+    "title": "Nature & Weather",
+    "subtitle": "自然と天気",
+    "order": 8,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn nature & weather vocabulary",
+      "Practice using these words in context"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Nature & Weather",
+        "vocabIds": [
+          "ja__3086",
+          "ja__3200",
+          "ja__3370",
+          "ja__3451",
+          "ja__3467",
+          "ja__3529",
+          "ja__3535",
+          "ja__3555",
+          "ja__3566",
+          "ja__3572",
+          "ja__3573",
+          "ja__3609"
+        ]
+      }
+    ],
+    "subtitle_en": "自然と天気",
+    "subtitle_id": "Nature & Weather"
+  },
+  {
+    "id": "ja-n1-t1-l1",
+    "unitId": "ja-n1-t1",
+    "title": "Greetings & Politeness",
+    "subtitle": "挨拶と丁寧語",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn greetings & politeness vocabulary",
+      "Practice using these words in context"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Greetings & Politeness",
+        "vocabIds": [
+          "ja__4915",
+          "ja__4916",
+          "ja__4986",
+          "ja__4996",
+          "ja__5088",
+          "ja__5430",
+          "ja__5729",
+          "ja__5819",
+          "ja__6076",
+          "ja__6201",
+          "ja__6248",
+          "ja__6249"
+        ]
+      }
+    ],
+    "subtitle_en": "挨拶と丁寧語",
+    "subtitle_id": "Greetings & Politeness"
+  },
+  {
+    "id": "ja-n1-t2-l2",
+    "unitId": "ja-n1-t2",
+    "title": "Food & Drink",
+    "subtitle": "食べ物と飲み物",
+    "order": 2,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn food & drink vocabulary",
+      "Practice using these words in context"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Food & Drink",
+        "vocabIds": [
+          "ja__4881",
+          "ja__4920",
+          "ja__4934",
+          "ja__4953",
+          "ja__4988",
+          "ja__4999",
+          "ja__5001",
+          "ja__5019",
+          "ja__5064",
+          "ja__5069",
+          "ja__5175",
+          "ja__5182"
+        ]
+      }
+    ],
+    "subtitle_en": "食べ物と飲み物",
+    "subtitle_id": "Food & Drink"
+  },
+  {
+    "id": "ja-n1-t3-l3",
+    "unitId": "ja-n1-t3",
+    "title": "Time & Numbers",
+    "subtitle": "時間と数字",
+    "order": 3,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn time & numbers vocabulary",
+      "Practice using these words in context"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Time & Numbers",
+        "vocabIds": [
+          "ja__4884",
+          "ja__4917",
+          "ja__4931",
+          "ja__4976",
+          "ja__5055",
+          "ja__5057",
+          "ja__5058",
+          "ja__5096",
+          "ja__5100",
+          "ja__5179",
+          "ja__5210",
+          "ja__5274"
+        ]
+      }
+    ],
+    "subtitle_en": "時間と数字",
+    "subtitle_id": "Time & Numbers"
+  },
+  {
+    "id": "ja-n1-t4-l4",
+    "unitId": "ja-n1-t4",
+    "title": "People & Family",
+    "subtitle": "人と家族",
+    "order": 4,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn people & family vocabulary",
+      "Practice using these words in context"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "People & Family",
+        "vocabIds": [
+          "ja__4926",
+          "ja__4929",
+          "ja__4930",
+          "ja__4948",
+          "ja__5066",
+          "ja__5197",
+          "ja__5198",
+          "ja__5200",
+          "ja__5234",
+          "ja__5236",
+          "ja__5277",
+          "ja__5313"
+        ]
+      }
+    ],
+    "subtitle_en": "人と家族",
+    "subtitle_id": "People & Family"
+  },
+  {
+    "id": "ja-n1-t5-l5",
+    "unitId": "ja-n1-t5",
+    "title": "Daily Life",
+    "subtitle": "日常生活",
+    "order": 5,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn daily life vocabulary",
+      "Practice using these words in context"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Daily Life",
+        "vocabIds": [
+          "ja__4932",
+          "ja__4938",
+          "ja__4952",
+          "ja__4959",
+          "ja__5005",
+          "ja__5030",
+          "ja__5051",
+          "ja__5117",
+          "ja__5194",
+          "ja__5263",
+          "ja__5323",
+          "ja__5327"
+        ]
+      }
+    ],
+    "subtitle_en": "日常生活",
+    "subtitle_id": "Daily Life"
+  },
+  {
+    "id": "ja-n1-t6-l6",
+    "unitId": "ja-n1-t6",
+    "title": "Travel & Places",
+    "subtitle": "旅行と場所",
+    "order": 6,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn travel & places vocabulary",
+      "Practice using these words in context"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Travel & Places",
+        "vocabIds": [
+          "ja__4939",
+          "ja__5094",
+          "ja__5109",
+          "ja__5229",
+          "ja__5282",
+          "ja__5299",
+          "ja__5300",
+          "ja__5305",
+          "ja__5306",
+          "ja__5361",
+          "ja__5362",
+          "ja__5428"
+        ]
+      }
+    ],
+    "subtitle_en": "旅行と場所",
+    "subtitle_id": "Travel & Places"
+  },
+  {
+    "id": "ja-n1-t7-l7",
+    "unitId": "ja-n1-t7",
+    "title": "Feelings & Opinions",
+    "subtitle": "気持ちと意見",
+    "order": 7,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn feelings & opinions vocabulary",
+      "Practice using these words in context"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Feelings & Opinions",
+        "vocabIds": [
+          "ja__4950",
+          "ja__5033",
+          "ja__5090",
+          "ja__5102",
+          "ja__5128",
+          "ja__5152",
+          "ja__5203",
+          "ja__5353",
+          "ja__5426",
+          "ja__5432",
+          "ja__5441",
+          "ja__5581"
+        ]
+      }
+    ],
+    "subtitle_en": "気持ちと意見",
+    "subtitle_id": "Feelings & Opinions"
+  },
+  {
+    "id": "ja-n1-t8-l8",
+    "unitId": "ja-n1-t8",
+    "title": "Nature & Weather",
+    "subtitle": "自然と天気",
+    "order": 8,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn nature & weather vocabulary",
+      "Practice using these words in context"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Nature & Weather",
+        "vocabIds": [
+          "ja__4902",
+          "ja__4946",
+          "ja__4958",
+          "ja__4979",
+          "ja__5161",
+          "ja__5176",
+          "ja__5309",
+          "ja__5311",
+          "ja__5314",
+          "ja__5326",
+          "ja__5373",
+          "ja__5446"
+        ]
+      }
+    ],
+    "subtitle_en": "自然と天気",
+    "subtitle_id": "Nature & Weather"
   }
 ]

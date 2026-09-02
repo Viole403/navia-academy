@@ -508375,6 +508375,1077 @@
     "examSource": "hsk"
   },
   {
+    "key": "reading:r-xiao-niao-he-shui:p0",
+    "text": "一只小鸟很渴。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-xiao-niao-he-shui:p1",
+    "text": "它想喝水。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-xiao-niao-he-shui:p2",
+    "text": "它看到一个瓶子。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-xiao-niao-he-shui:p3",
+    "text": "瓶子里有水,可是水很少。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-xiao-niao-he-shui:p4",
+    "text": "小鸟喝不到水。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-xiao-niao-he-shui:p5",
+    "text": "它想了想,看到旁边有小石头。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-xiao-niao-he-shui:p6",
+    "text": "小鸟把石头一个一个放进瓶子里。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-xiao-niao-he-shui:p7",
+    "text": "水慢慢升上来了。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-xiao-niao-he-shui:p8",
+    "text": "最后,小鸟喝到了水。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-xiao-niao-he-shui:p9",
+    "text": "小鸟真聪明!",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-da-xiongmao:p0",
+    "text": "大熊猫是中国的国宝。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-da-xiongmao:p1",
+    "text": "熊猫住在中国西南的山里。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-da-xiongmao:p2",
+    "text": "它们有黑白的毛。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-da-xiongmao:p3",
+    "text": "熊猫最喜欢吃竹子。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-da-xiongmao:p4",
+    "text": "它们每天吃十几个小时的竹子。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-da-xiongmao:p5",
+    "text": "早上它们睡觉,下午爬树。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-da-xiongmao:p6",
+    "text": "小熊猫刚生的时候是粉色的。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-da-xiongmao:p7",
+    "text": "很多游客从世界各地来看它们。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-da-xiongmao:p8",
+    "text": "熊猫真可爱!",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-ni-hao:p0",
+    "text": "你好!",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-ni-hao:p1",
+    "text": "我是李明。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-ni-hao:p2",
+    "text": "我是中国人。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-ni-hao:p3",
+    "text": "你叫什么名字?",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-ni-hao:p4",
+    "text": "我叫王小文。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-ni-hao:p5",
+    "text": "很高兴认识你。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-chi-fan:p0",
+    "text": "我饿了。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-chi-fan:p1",
+    "text": "我想吃饭。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-chi-fan:p2",
+    "text": "我喜欢吃米饭。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-chi-fan:p3",
+    "text": "我也喜欢面条。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-chi-fan:p4",
+    "text": "妈妈做饭很好吃。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-chi-fan:p5",
+    "text": "谢谢妈妈!",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-mai-dongxi:p0",
+    "text": "今天我去商店。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-mai-dongxi:p1",
+    "text": "我要买苹果。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-mai-dongxi:p2",
+    "text": "苹果多少钱?",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-mai-dongxi:p3",
+    "text": "五块钱一斤。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-mai-dongxi:p4",
+    "text": "我买两斤。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-mai-dongxi:p5",
+    "text": "谢谢,再见!",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-xue-zhongwen:p0",
+    "text": "我学中文。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-xue-zhongwen:p1",
+    "text": "中文很有意思。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-xue-zhongwen:p2",
+    "text": "我的老师是中国人。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-xue-zhongwen:p3",
+    "text": "她很好。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-xue-zhongwen:p4",
+    "text": "我每天学习。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-xue-zhongwen:p5",
+    "text": "我想去中国。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-jintian-tianqi:p0",
+    "text": "今天天气很好。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-jintian-tianqi:p1",
+    "text": "太阳很大。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-jintian-tianqi:p2",
+    "text": "不冷也不热。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-jintian-tianqi:p3",
+    "text": "我想去公园。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-jintian-tianqi:p4",
+    "text": "公园有很多花。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-jintian-tianqi:p5",
+    "text": "真漂亮!",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wo-de-laoshi:p0",
+    "text": "我的老师姓王。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wo-de-laoshi:p1",
+    "text": "她很年轻。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wo-de-laoshi:p2",
+    "text": "她教我们英文。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wo-de-laoshi:p3",
+    "text": "她的课很有意思。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wo-de-laoshi:p4",
+    "text": "我们都很喜欢她。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wo-de-laoshi:p5",
+    "text": "她常常笑。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-he-cha:p0",
+    "text": "中国人喜欢喝茶。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-he-cha:p1",
+    "text": "我也喜欢。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-he-cha:p2",
+    "text": "爷爷每天早上喝茶。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-he-cha:p3",
+    "text": "他说茶对身体好。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-he-cha:p4",
+    "text": "我最喜欢绿茶。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-he-cha:p5",
+    "text": "喝茶让我觉得放松。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wo-ai-yinyue:p0",
+    "text": "我很爱音乐。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wo-ai-yinyue:p1",
+    "text": "我每天都听歌。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wo-ai-yinyue:p2",
+    "text": "我喜欢中文歌。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wo-ai-yinyue:p3",
+    "text": "也喜欢英文歌。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wo-ai-yinyue:p4",
+    "text": "我也会唱歌。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wo-ai-yinyue:p5",
+    "text": "音乐让我开心。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-xiaogou-doudou:p0",
+    "text": "我有一只小狗。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-xiaogou-doudou:p1",
+    "text": "它叫豆豆。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-xiaogou-doudou:p2",
+    "text": "它很可爱。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-xiaogou-doudou:p3",
+    "text": "它很喜欢跑。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-xiaogou-doudou:p4",
+    "text": "每天下午我带它出去。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-xiaogou-doudou:p5",
+    "text": "豆豆是我最好的朋友。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wo-de-fangjian:p0",
+    "text": "这是我的房间。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wo-de-fangjian:p1",
+    "text": "我的房间不大,可是很干净。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wo-de-fangjian:p2",
+    "text": "房间里有一张床。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wo-de-fangjian:p3",
+    "text": "床的旁边有一个书桌。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wo-de-fangjian:p4",
+    "text": "书桌上有很多书。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wo-de-fangjian:p5",
+    "text": "我喜欢在这里看书。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wo-de-fangjian:p6",
+    "text": "我的房间有一个窗户。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wo-de-fangjian:p7",
+    "text": "从窗户可以看见外面的树。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wo-de-yi-tian:p0",
+    "text": "我每天七点起床。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wo-de-yi-tian:p1",
+    "text": "起床以后,我吃早饭。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wo-de-yi-tian:p2",
+    "text": "我八点去上班。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wo-de-yi-tian:p3",
+    "text": "中午我在公司吃饭。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wo-de-yi-tian:p4",
+    "text": "下午我很忙。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wo-de-yi-tian:p5",
+    "text": "六点我回家。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wo-de-yi-tian:p6",
+    "text": "晚上我看电视,也看书。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wo-de-yi-tian:p7",
+    "text": "我十一点睡觉。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zuo-gonggong-qiche:p0",
+    "text": "我家离公司很远。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zuo-gonggong-qiche:p1",
+    "text": "我每天坐公共汽车去上班。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zuo-gonggong-qiche:p2",
+    "text": "车站在我家前面。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zuo-gonggong-qiche:p3",
+    "text": "我坐三路车。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zuo-gonggong-qiche:p4",
+    "text": "车上人很多。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zuo-gonggong-qiche:p5",
+    "text": "我常常站着。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zuo-gonggong-qiche:p6",
+    "text": "二十分钟以后,我到公司。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zuo-gonggong-qiche:p7",
+    "text": "坐车不贵,只要两块钱。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wo-de-pengyou:p0",
+    "text": "我有一个好朋友。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wo-de-pengyou:p1",
+    "text": "她叫小美。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wo-de-pengyou:p2",
+    "text": "她是中国人,住在北京。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wo-de-pengyou:p3",
+    "text": "小美很高,也很漂亮。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wo-de-pengyou:p4",
+    "text": "她喜欢看电影。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wo-de-pengyou:p5",
+    "text": "我们常常一起吃饭。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wo-de-pengyou:p6",
+    "text": "她的中文很好,我的不太好。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wo-de-pengyou:p7",
+    "text": "所以她教我中文。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zai-fanguan:p0",
+    "text": "今天我和朋友去饭馆吃饭。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zai-fanguan:p1",
+    "text": "服务员给我们菜单。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zai-fanguan:p2",
+    "text": "我看了看,不知道吃什么。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zai-fanguan:p3",
+    "text": "朋友说:\"这里的鱼很好吃。\"",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zai-fanguan:p4",
+    "text": "我们点了鱼和青菜。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zai-fanguan:p5",
+    "text": "我们还要了两碗米饭。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zai-fanguan:p6",
+    "text": "菜很快就来了。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zai-fanguan:p7",
+    "text": "我们吃得很好,一共八十块。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-si-ji:p0",
+    "text": "一年有四个季节。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-si-ji:p1",
+    "text": "春天不冷也不热。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-si-ji:p2",
+    "text": "春天的花很漂亮。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-si-ji:p3",
+    "text": "夏天很热,我常常游泳。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-si-ji:p4",
+    "text": "秋天的天气最好。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-si-ji:p5",
+    "text": "秋天有很多水果。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-si-ji:p6",
+    "text": "冬天很冷,有时候下雪。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-si-ji:p7",
+    "text": "我最喜欢秋天。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-qu-xuexiao:p0",
+    "text": "我是学生,今年十二岁。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-qu-xuexiao:p1",
+    "text": "我的学校不远。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-qu-xuexiao:p2",
+    "text": "我每天走路去学校。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-qu-xuexiao:p3",
+    "text": "路上要十五分钟。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-qu-xuexiao:p4",
+    "text": "我早上八点到学校。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-qu-xuexiao:p5",
+    "text": "我们上午有四节课。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-qu-xuexiao:p6",
+    "text": "我最喜欢中文课。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-qu-xuexiao:p7",
+    "text": "下午四点我回家。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-shengri:p0",
+    "text": "今天是我的生日。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-shengri:p1",
+    "text": "我今年二十岁。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-shengri:p2",
+    "text": "妈妈做了很多好吃的菜。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-shengri:p3",
+    "text": "朋友们都来了。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-shengri:p4",
+    "text": "他们给我很多礼物。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-shengri:p5",
+    "text": "我们一起吃蛋糕。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-shengri:p6",
+    "text": "大家唱歌,很热闹。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-shengri:p7",
+    "text": "这是一个很好的生日。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-yanse:p0",
+    "text": "我们家的人喜欢不同的颜色。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-yanse:p1",
+    "text": "我喜欢蓝色。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-yanse:p2",
+    "text": "我的衣服很多都是蓝的。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-yanse:p3",
+    "text": "妈妈喜欢红色。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-yanse:p4",
+    "text": "她说红色很好看。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-yanse:p5",
+    "text": "爸爸喜欢黑色和白色。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-yanse:p6",
+    "text": "我妹妹最喜欢黄色。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-yanse:p7",
+    "text": "她的房间里都是黄色的东西。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wen-lu:p0",
+    "text": "我想去火车站,可是不认识路。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wen-lu:p1",
+    "text": "我问一个人:\"请问,火车站在哪儿?\"",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wen-lu:p2",
+    "text": "他说:\"你往前走。\"",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wen-lu:p3",
+    "text": "\"到那个路口往右拐。\"",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wen-lu:p4",
+    "text": "\"走五分钟就到了。\"",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wen-lu:p5",
+    "text": "我说:\"谢谢你!\"",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wen-lu:p6",
+    "text": "他说:\"不客气。\"",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wen-lu:p7",
+    "text": "我很快就找到了火车站。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
     "key": "reading:r-chunjie:p0",
     "text": "春节是中国最重要的节日。",
     "locale": "zh-CN",
@@ -508459,6 +509530,1329 @@
     "examSource": "hsk"
   },
   {
+    "key": "reading:r-wo-de-zhoumo:p0",
+    "text": "周末我常常和朋友一起出去。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wo-de-zhoumo:p1",
+    "text": "星期六早上我们去跑步。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wo-de-zhoumo:p2",
+    "text": "下午我们一起吃午饭。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wo-de-zhoumo:p3",
+    "text": "晚上我在家看电影。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wo-de-zhoumo:p4",
+    "text": "星期天我睡得很晚。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wo-de-zhoumo:p5",
+    "text": "然后我做作业。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wo-de-zhoumo:p6",
+    "text": "我的周末很开心。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-qu-beijing:p0",
+    "text": "下个月我要去北京旅游。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-qu-beijing:p1",
+    "text": "我想看长城。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-qu-beijing:p2",
+    "text": "我还想吃北京烤鸭。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-qu-beijing:p3",
+    "text": "我的朋友住在北京。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-qu-beijing:p4",
+    "text": "他会带我去很多地方。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-qu-beijing:p5",
+    "text": "我已经买好机票了。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-qu-beijing:p6",
+    "text": "我很期待!",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zai-kafeidian:p0",
+    "text": "每天早上我都去咖啡店。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zai-kafeidian:p1",
+    "text": "那里的咖啡很好喝。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zai-kafeidian:p2",
+    "text": "我常常点一杯拿铁。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zai-kafeidian:p3",
+    "text": "服务员认识我了。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zai-kafeidian:p4",
+    "text": "我喜欢坐在窗边看书。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zai-kafeidian:p5",
+    "text": "咖啡店里很安静。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zai-kafeidian:p6",
+    "text": "这是我最喜欢的地方。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wo-de-pengyou-xiaoming:p0",
+    "text": "小明是我最好的朋友。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wo-de-pengyou-xiaoming:p1",
+    "text": "我们一起长大的。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wo-de-pengyou-xiaoming:p2",
+    "text": "他比我高一点。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wo-de-pengyou-xiaoming:p3",
+    "text": "他非常聪明也很幽默。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wo-de-pengyou-xiaoming:p4",
+    "text": "我们每个星期都见面。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wo-de-pengyou-xiaoming:p5",
+    "text": "我们一起打篮球、看电影。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wo-de-pengyou-xiaoming:p6",
+    "text": "有这样的朋友我很幸运。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-shengri-kuaile:p0",
+    "text": "今天是我妹妹的生日。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-shengri-kuaile:p1",
+    "text": "她今年十岁了。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-shengri-kuaile:p2",
+    "text": "妈妈做了一个大蛋糕。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-shengri-kuaile:p3",
+    "text": "爸爸买了很多礼物。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-shengri-kuaile:p4",
+    "text": "我们一起唱生日歌。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-shengri-kuaile:p5",
+    "text": "妹妹非常开心。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-shengri-kuaile:p6",
+    "text": "她许了一个愿望。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zuo-ditie:p0",
+    "text": "我每天坐地铁上班。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zuo-ditie:p1",
+    "text": "地铁又快又便宜。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zuo-ditie:p2",
+    "text": "早上人非常多。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zuo-ditie:p3",
+    "text": "有时候我找不到座位。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zuo-ditie:p4",
+    "text": "我要坐五站。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zuo-ditie:p5",
+    "text": "下车以后我走路去公司。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zuo-ditie:p6",
+    "text": "一共要三十分钟。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wo-de-fangjian:p0",
+    "text": "我的房间不大,但是很舒服。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wo-de-fangjian:p1",
+    "text": "床在窗户旁边。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wo-de-fangjian:p2",
+    "text": "早上阳光很好。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wo-de-fangjian:p3",
+    "text": "书桌上有一台电脑。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wo-de-fangjian:p4",
+    "text": "我常常在这里做作业。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wo-de-fangjian:p5",
+    "text": "墙上有几张照片。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wo-de-fangjian:p6",
+    "text": "都是我的家人和朋友。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wo-de-fangjian:p7",
+    "text": "我很喜欢我的房间。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-xue-zuo-fan:p0",
+    "text": "最近我开始学做饭。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-xue-zuo-fan:p1",
+    "text": "以前我总是点外卖。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-xue-zuo-fan:p2",
+    "text": "妈妈说自己做饭更健康。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-xue-zuo-fan:p3",
+    "text": "我第一次做的是西红柿鸡蛋。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-xue-zuo-fan:p4",
+    "text": "开始的时候我做得不好。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-xue-zuo-fan:p5",
+    "text": "但是妈妈帮我。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-xue-zuo-fan:p6",
+    "text": "现在我可以做几个菜了。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-xue-zuo-fan:p7",
+    "text": "做饭其实很有意思。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-di-yi-ci-xia-xue:p0",
+    "text": "我是南方人,没见过雪。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-di-yi-ci-xia-xue:p1",
+    "text": "去年冬天我去了北方。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-di-yi-ci-xia-xue:p2",
+    "text": "那是我第一次看见雪。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-di-yi-ci-xia-xue:p3",
+    "text": "雪又白又软。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-di-yi-ci-xia-xue:p4",
+    "text": "外面非常冷。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-di-yi-ci-xia-xue:p5",
+    "text": "可是我还是很兴奋。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-di-yi-ci-xia-xue:p6",
+    "text": "我和朋友一起打雪仗。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-di-yi-ci-xia-xue:p7",
+    "text": "那一天我永远不会忘。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-xin-de-gongzuo:p0",
+    "text": "下个星期我开始新工作。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-xin-de-gongzuo:p1",
+    "text": "这家公司在市中心。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-xin-de-gongzuo:p2",
+    "text": "我要坐公交车去上班。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-xin-de-gongzuo:p3",
+    "text": "我有一点紧张。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-xin-de-gongzuo:p4",
+    "text": "因为是我第一次工作。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-xin-de-gongzuo:p5",
+    "text": "但是我也很期待。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-xin-de-gongzuo:p6",
+    "text": "同事们应该都很好。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-xin-de-gongzuo:p7",
+    "text": "我希望一切都顺利。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zaoshang:p0",
+    "text": "我每天七点起床。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zaoshang:p1",
+    "text": "我先刷牙、洗脸。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zaoshang:p2",
+    "text": "然后我吃早饭。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zaoshang:p3",
+    "text": "我喜欢喝牛奶和吃面包。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zaoshang:p4",
+    "text": "八点我去上班。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zaoshang:p5",
+    "text": "我坐地铁去公司。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zaoshang:p6",
+    "text": "地铁站离我家很近。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zaoshang:p7",
+    "text": "路上我听音乐。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zaoshang:p8",
+    "text": "九点我到公司。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zaoshang:p9",
+    "text": "工作日很忙。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-qu-chaoshi:p0",
+    "text": "周末我去超市买东西。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-qu-chaoshi:p1",
+    "text": "超市很大,东西很多。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-qu-chaoshi:p2",
+    "text": "我买了水果和蔬菜。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-qu-chaoshi:p3",
+    "text": "我也买了牛奶和鸡蛋。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-qu-chaoshi:p4",
+    "text": "苹果很新鲜,也不贵。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-qu-chaoshi:p5",
+    "text": "我忘了买面包。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-qu-chaoshi:p6",
+    "text": "收银台有很多人。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-qu-chaoshi:p7",
+    "text": "我等了十分钟。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-qu-chaoshi:p8",
+    "text": "回家以后,我做了晚饭。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-da-dianhua:p0",
+    "text": "喂,你好,是小李吗?",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-da-dianhua:p1",
+    "text": "是我,你是谁?",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-da-dianhua:p2",
+    "text": "我是你的同学小王。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-da-dianhua:p3",
+    "text": "明天你有空吗?",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-da-dianhua:p4",
+    "text": "我想请你吃饭。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-da-dianhua:p5",
+    "text": "好啊,几点?",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-da-dianhua:p6",
+    "text": "晚上七点,老地方。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-da-dianhua:p7",
+    "text": "好的,明天见。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-da-dianhua:p8",
+    "text": "再见。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-qu-yinhang:p0",
+    "text": "今天我去银行。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-qu-yinhang:p1",
+    "text": "我要换一些钱。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-qu-yinhang:p2",
+    "text": "银行九点开门。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-qu-yinhang:p3",
+    "text": "我早上八点半就到了。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-qu-yinhang:p4",
+    "text": "等了一会儿,门开了。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-qu-yinhang:p5",
+    "text": "里面人不多。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-qu-yinhang:p6",
+    "text": "我用了护照办事。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-qu-yinhang:p7",
+    "text": "办完以后,我去上班。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-kan-bing:p0",
+    "text": "我今天不舒服。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-kan-bing:p1",
+    "text": "我的头很疼。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-kan-bing:p2",
+    "text": "妈妈说我应该去医院。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-kan-bing:p3",
+    "text": "医生问我:你怎么了?",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-kan-bing:p4",
+    "text": "我说我头疼,也咳嗽。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-kan-bing:p5",
+    "text": "医生让我吃药,多喝水。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-kan-bing:p6",
+    "text": "他说我需要休息。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-kan-bing:p7",
+    "text": "下午我在家睡觉。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-kan-bing:p8",
+    "text": "晚上我觉得好一点了。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-shengri-paidui:p0",
+    "text": "今天是我的生日。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-shengri-paidui:p1",
+    "text": "朋友们来我家玩。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-shengri-paidui:p2",
+    "text": "他们带了很多礼物。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-shengri-paidui:p3",
+    "text": "妈妈做了一个大蛋糕。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-shengri-paidui:p4",
+    "text": "上面有我的名字。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-shengri-paidui:p5",
+    "text": "我们一起唱生日歌。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-shengri-paidui:p6",
+    "text": "我许了一个愿望。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-shengri-paidui:p7",
+    "text": "然后我切了蛋糕。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-shengri-paidui:p8",
+    "text": "大家一起吃蛋糕。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-shengri-paidui:p9",
+    "text": "我今天很开心。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wen-lu:p0",
+    "text": "请问,地铁站在哪里?",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wen-lu:p1",
+    "text": "地铁站在前面。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wen-lu:p2",
+    "text": "一直往前走五分钟。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wen-lu:p3",
+    "text": "然后向右转。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wen-lu:p4",
+    "text": "你就会看到。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wen-lu:p5",
+    "text": "谢谢你。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wen-lu:p6",
+    "text": "不客气。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wen-lu:p7",
+    "text": "请问,从这里到机场远不远?",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wen-lu:p8",
+    "text": "不太远,坐公交车三十分钟。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-jie-shu:p0",
+    "text": "我常常去图书馆。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-jie-shu:p1",
+    "text": "图书馆的书很多。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-jie-shu:p2",
+    "text": "今天我借了三本书。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-jie-shu:p3",
+    "text": "一本是中文书。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-jie-shu:p4",
+    "text": "一本是英文书。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-jie-shu:p5",
+    "text": "还有一本是关于历史的。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-jie-shu:p6",
+    "text": "借书要用图书证。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-jie-shu:p7",
+    "text": "书可以借两个星期。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-jie-shu:p8",
+    "text": "我喜欢在家里看书。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zuo-gongjiao-che:p0",
+    "text": "我住的地方没有地铁。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zuo-gongjiao-che:p1",
+    "text": "所以我常常坐公交车。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zuo-gongjiao-che:p2",
+    "text": "公交车站在我家门口。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zuo-gongjiao-che:p3",
+    "text": "我坐三路车去学校。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zuo-gongjiao-che:p4",
+    "text": "车票两块钱。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zuo-gongjiao-che:p5",
+    "text": "车里有时候人很多。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zuo-gongjiao-che:p6",
+    "text": "我一般给老人让座。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zuo-gongjiao-che:p7",
+    "text": "公交车比地铁慢一点。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zuo-gongjiao-che:p8",
+    "text": "但是比地铁便宜。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhoumo-jihua:p0",
+    "text": "明天是星期六。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhoumo-jihua:p1",
+    "text": "我想和朋友一起出去玩。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhoumo-jihua:p2",
+    "text": "上午我们去公园跑步。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhoumo-jihua:p3",
+    "text": "中午我们在饭馆吃饭。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhoumo-jihua:p4",
+    "text": "下午我们去看电影。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhoumo-jihua:p5",
+    "text": "电影是新的,很好看。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhoumo-jihua:p6",
+    "text": "晚上我们一起做饭。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhoumo-jihua:p7",
+    "text": "我们做了中国菜和日本菜。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhoumo-jihua:p8",
+    "text": "周末过得很愉快。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-chunjie-kuaile:p0",
+    "text": "春节是中国最重要的节日。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-chunjie-kuaile:p1",
+    "text": "每年的一月或二月,我们过春节。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-chunjie-kuaile:p2",
+    "text": "春节前,全家一起打扫房子。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-chunjie-kuaile:p3",
+    "text": "我们在门上贴红色的对联。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-chunjie-kuaile:p4",
+    "text": "除夕晚上,全家人一起吃年夜饭。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-chunjie-kuaile:p5",
+    "text": "大家都喜欢吃饺子和鱼。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-chunjie-kuaile:p6",
+    "text": "孩子们收到红包,非常开心。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-chunjie-kuaile:p7",
+    "text": "晚上我们一起看春节晚会。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-chunjie-kuaile:p8",
+    "text": "十二点,外面有很多烟花。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-chunjie-kuaile:p9",
+    "text": "第二天,我们去亲戚家拜年。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-chunjie-kuaile:p10",
+    "text": "大家互相说\"新年快乐\"。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-chunjie-kuaile:p11",
+    "text": "春节真热闹!",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zai-canting:p0",
+    "text": "服务员:您好,几位?",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zai-canting:p1",
+    "text": "客人:两位,谢谢。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zai-canting:p2",
+    "text": "服务员:这边请,这是菜单。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zai-canting:p3",
+    "text": "客人:谢谢。请问什么菜好吃?",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zai-canting:p4",
+    "text": "服务员:我们的鸡肉很有名。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zai-canting:p5",
+    "text": "客人:好,来一份鸡肉。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zai-canting:p6",
+    "text": "服务员:要米饭吗?",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zai-canting:p7",
+    "text": "客人:要两碗,再来一个青菜。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zai-canting:p8",
+    "text": "服务员:喝什么?",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zai-canting:p9",
+    "text": "客人:两杯茶,谢谢。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zai-canting:p10",
+    "text": "服务员:好的,请等一下。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zai-canting:p11",
+    "text": "客人:服务员,买单!",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
     "key": "reading:r-hsk-hsk3-ruguo:p0",
     "text": "如果你来，我很高兴。",
     "locale": "zh-CN",
@@ -508538,6 +510932,1679 @@
   {
     "key": "reading:r-hsk-hsk3-chengshi2:p3",
     "text": "这对新人计划明年搬到新的城市生活。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-xiaomei-de-xin:p0",
+    "text": "亲爱的爸爸妈妈:",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-xiaomei-de-xin:p1",
+    "text": "我到北京已经三个月了。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-xiaomei-de-xin:p2",
+    "text": "北京的生活和家里很不一样。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-xiaomei-de-xin:p3",
+    "text": "这里的冬天比南方冷得多。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-xiaomei-de-xin:p4",
+    "text": "我常常穿大衣和围巾。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-xiaomei-de-xin:p5",
+    "text": "我的学校在城市的北边。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-xiaomei-de-xin:p6",
+    "text": "每天我坐地铁去上课。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-xiaomei-de-xin:p7",
+    "text": "老师非常认真,同学们也很友好。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-xiaomei-de-xin:p8",
+    "text": "上个周末,我和朋友去了长城。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-xiaomei-de-xin:p9",
+    "text": "长城真长,也很壮观。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-xiaomei-de-xin:p10",
+    "text": "我照了很多照片,下次回家给你们看。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-xiaomei-de-xin:p11",
+    "text": "虽然我有时候想家,但是我在这里过得很开心。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-xiaomei-de-xin:p12",
+    "text": "请你们不要担心我。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-xiaomei-de-xin:p13",
+    "text": "等放假我就回去看你们。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-xiaomei-de-xin:p14",
+    "text": "爱你们的女儿小美。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhongguo-de-si-ji:p0",
+    "text": "中国是一个很大的国家,四季分明。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhongguo-de-si-ji:p1",
+    "text": "春天,万物复苏。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhongguo-de-si-ji:p2",
+    "text": "树上长出新的叶子,花也开了。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhongguo-de-si-ji:p3",
+    "text": "人们去公园散步,看樱花。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhongguo-de-si-ji:p4",
+    "text": "夏天又热又潮湿。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhongguo-de-si-ji:p5",
+    "text": "很多人去海边游泳,或者去山里避暑。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhongguo-de-si-ji:p6",
+    "text": "北方的夏天比南方短一点。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhongguo-de-si-ji:p7",
+    "text": "秋天是最舒服的季节。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhongguo-de-si-ji:p8",
+    "text": "天气不冷也不热,天空又高又蓝。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhongguo-de-si-ji:p9",
+    "text": "北京的香山,秋天的红叶特别美。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhongguo-de-si-ji:p10",
+    "text": "冬天,北方会下雪。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhongguo-de-si-ji:p11",
+    "text": "孩子们喜欢堆雪人、打雪仗。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhongguo-de-si-ji:p12",
+    "text": "南方的冬天很少下雪,但是也很冷。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhongguo-de-si-ji:p13",
+    "text": "每个季节都有它自己的美。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-yi-ci-nanwang-de-luxing:p0",
+    "text": "去年夏天我和家人去了云南。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-yi-ci-nanwang-de-luxing:p1",
+    "text": "云南的风景特别美丽。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-yi-ci-nanwang-de-luxing:p2",
+    "text": "我们爬了一座很高的山。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-yi-ci-nanwang-de-luxing:p3",
+    "text": "从山上看下去,一切都像一幅画。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-yi-ci-nanwang-de-luxing:p4",
+    "text": "晚上我们住在一个小村子里。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-yi-ci-nanwang-de-luxing:p5",
+    "text": "当地人非常热情。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-yi-ci-nanwang-de-luxing:p6",
+    "text": "他们请我们吃了很多本地菜。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-yi-ci-nanwang-de-luxing:p7",
+    "text": "那是我第一次尝试这些菜。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-yi-ci-nanwang-de-luxing:p8",
+    "text": "这次旅行让我学到了很多东西。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-yi-ci-nanwang-de-luxing:p9",
+    "text": "我永远不会忘记它。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-chunjie-hui-jia:p0",
+    "text": "每年春节我都会回老家。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-chunjie-hui-jia:p1",
+    "text": "坐火车回家要花十个小时。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-chunjie-hui-jia:p2",
+    "text": "虽然很累,但是我很开心。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-chunjie-hui-jia:p3",
+    "text": "到家以后我先去看爷爷奶奶。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-chunjie-hui-jia:p4",
+    "text": "奶奶总是准备很多好吃的。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-chunjie-hui-jia:p5",
+    "text": "除夕晚上全家人一起吃年夜饭。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-chunjie-hui-jia:p6",
+    "text": "我们会放鞭炮,看春晚。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-chunjie-hui-jia:p7",
+    "text": "孩子们最喜欢收红包。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-chunjie-hui-jia:p8",
+    "text": "这是一年中最重要的节日。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wo-de-zhongwen-laoshi:p0",
+    "text": "我的中文老师姓张。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wo-de-zhongwen-laoshi:p1",
+    "text": "她已经教书二十多年了。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wo-de-zhongwen-laoshi:p2",
+    "text": "她的教学方法非常有趣。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wo-de-zhongwen-laoshi:p3",
+    "text": "她不只是教我们语言,也教我们文化。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wo-de-zhongwen-laoshi:p4",
+    "text": "课堂上我们经常玩游戏。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wo-de-zhongwen-laoshi:p5",
+    "text": "虽然中文很难,但是我越来越喜欢。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wo-de-zhongwen-laoshi:p6",
+    "text": "张老师对每个学生都很耐心。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wo-de-zhongwen-laoshi:p7",
+    "text": "我很幸运能遇到这样的老师。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wangshang-gouwu:p0",
+    "text": "现在很多人喜欢在网上买东西。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wangshang-gouwu:p1",
+    "text": "比去商店方便多了。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wangshang-gouwu:p2",
+    "text": "只要点一点手机,东西就会送到家里。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wangshang-gouwu:p3",
+    "text": "价格也常常比较便宜。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wangshang-gouwu:p4",
+    "text": "可是网上购物也有问题。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wangshang-gouwu:p5",
+    "text": "有时候商品的质量不好。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wangshang-gouwu:p6",
+    "text": "或者跟图片看起来不一样。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wangshang-gouwu:p7",
+    "text": "所以买之前一定要看评论。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wangshang-gouwu:p8",
+    "text": "我一般只在大网站上购物。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-xue-waiyu-de-tiaozhan:p0",
+    "text": "学一门外语不是一件容易的事。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-xue-waiyu-de-tiaozhan:p1",
+    "text": "需要花很多时间和精力。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-xue-waiyu-de-tiaozhan:p2",
+    "text": "最大的挑战是坚持。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-xue-waiyu-de-tiaozhan:p3",
+    "text": "很多人开始的时候很有动力。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-xue-waiyu-de-tiaozhan:p4",
+    "text": "但是过了几个月就放弃了。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-xue-waiyu-de-tiaozhan:p5",
+    "text": "其实最重要的是每天都练习。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-xue-waiyu-de-tiaozhan:p6",
+    "text": "哪怕只有十五分钟也很有用。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-xue-waiyu-de-tiaozhan:p7",
+    "text": "还要找机会跟母语者说话。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-xue-waiyu-de-tiaozhan:p8",
+    "text": "不要怕犯错误,犯错是学习的一部分。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-yi-jia-xiao-canguan:p0",
+    "text": "我家附近有一家小餐馆。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-yi-jia-xiao-canguan:p1",
+    "text": "老板是一对年轻的夫妻。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-yi-jia-xiao-canguan:p2",
+    "text": "他们每天早上五点就开始准备。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-yi-jia-xiao-canguan:p3",
+    "text": "餐馆虽然不大,但是非常干净。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-yi-jia-xiao-canguan:p4",
+    "text": "他们做的饺子是最有名的。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-yi-jia-xiao-canguan:p5",
+    "text": "每天中午都有人排队。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-yi-jia-xiao-canguan:p6",
+    "text": "有时候要等三十分钟。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-yi-jia-xiao-canguan:p7",
+    "text": "不过饺子真的值得等。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-yi-jia-xiao-canguan:p8",
+    "text": "我几乎每个星期都去。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-chengshi-he-xiangcun:p0",
+    "text": "很多人讨论城市好还是乡村好。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-chengshi-he-xiangcun:p1",
+    "text": "城市里工作机会多,交通方便。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-chengshi-he-xiangcun:p2",
+    "text": "但是压力也很大,空气也不好。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-chengshi-he-xiangcun:p3",
+    "text": "乡村生活比较慢,比较安静。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-chengshi-he-xiangcun:p4",
+    "text": "可以呼吸新鲜的空气。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-chengshi-he-xiangcun:p5",
+    "text": "但是工作不好找。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-chengshi-he-xiangcun:p6",
+    "text": "每个人的选择都不一样。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-chengshi-he-xiangcun:p7",
+    "text": "我更喜欢城市,不过周末常常去乡下。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wo-de-mengxiang:p0",
+    "text": "每个人都有自己的梦想。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wo-de-mengxiang:p1",
+    "text": "我的梦想是成为一名作家。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wo-de-mengxiang:p2",
+    "text": "从小我就喜欢读书和写故事。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wo-de-mengxiang:p3",
+    "text": "虽然做作家不容易,但是我不想放弃。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wo-de-mengxiang:p4",
+    "text": "我每天晚上都会写一点东西。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wo-de-mengxiang:p5",
+    "text": "有时候灵感来得快,有时候很慢。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wo-de-mengxiang:p6",
+    "text": "我希望有一天能出版自己的书。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wo-de-mengxiang:p7",
+    "text": "就算别人不喜欢,我也要坚持下去。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhongqiu-jie:p0",
+    "text": "中秋节是中国一个很重要的节日。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhongqiu-jie:p1",
+    "text": "它通常在九月或十月。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhongqiu-jie:p2",
+    "text": "那一天月亮又圆又亮。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhongqiu-jie:p3",
+    "text": "全家人会一起赏月。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhongqiu-jie:p4",
+    "text": "我们还会吃月饼。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhongqiu-jie:p5",
+    "text": "月饼有很多不同的味道。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhongqiu-jie:p6",
+    "text": "我最喜欢莲蓉蛋黄的。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhongqiu-jie:p7",
+    "text": "中秋节的意思是团圆。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhongqiu-jie:p8",
+    "text": "所以很多人会回家过节。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-jiankang-de-shenghuo:p0",
+    "text": "最近我开始注意自己的健康。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-jiankang-de-shenghuo:p1",
+    "text": "以前我工作太忙,经常吃快餐。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-jiankang-de-shenghuo:p2",
+    "text": "现在我尽量自己做饭。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-jiankang-de-shenghuo:p3",
+    "text": "我也开始每天早上跑步。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-jiankang-de-shenghuo:p4",
+    "text": "开始的时候真的很难。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-jiankang-de-shenghuo:p5",
+    "text": "但是一个月以后,我感觉好多了。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-jiankang-de-shenghuo:p6",
+    "text": "睡觉的质量也变好了。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-jiankang-de-shenghuo:p7",
+    "text": "我还学会了放松。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-jiankang-de-shenghuo:p8",
+    "text": "健康的身体比什么都重要。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhao-gongzuo:p0",
+    "text": "我刚刚大学毕业,开始找工作。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhao-gongzuo:p1",
+    "text": "现在的工作不太好找。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhao-gongzuo:p2",
+    "text": "我在网上看了很多招聘广告。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhao-gongzuo:p3",
+    "text": "有的公司要求有工作经验。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhao-gongzuo:p4",
+    "text": "我没有经验,所以很难。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhao-gongzuo:p5",
+    "text": "我每天都投简历。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhao-gongzuo:p6",
+    "text": "上个星期,我接到了三个面试通知。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhao-gongzuo:p7",
+    "text": "我准备得很认真。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhao-gongzuo:p8",
+    "text": "一家公司给了我机会。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhao-gongzuo:p9",
+    "text": "工资虽然不高,但是我很高兴。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhao-gongzuo:p10",
+    "text": "这是我人生的第一份工作。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhao-gongzuo:p11",
+    "text": "我决定好好努力。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-ban-jia:p0",
+    "text": "上个月我搬了家。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-ban-jia:p1",
+    "text": "以前的房子太小了。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-ban-jia:p2",
+    "text": "新的房子大一点,也更便宜。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-ban-jia:p3",
+    "text": "搬家那天,朋友们都来帮忙。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-ban-jia:p4",
+    "text": "我们搬了一整天。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-ban-jia:p5",
+    "text": "最重的东西是冰箱和沙发。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-ban-jia:p6",
+    "text": "新家的厨房比以前大。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-ban-jia:p7",
+    "text": "我在客厅放了一个书架。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-ban-jia:p8",
+    "text": "卧室里有一张大床。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-ban-jia:p9",
+    "text": "搬家很累,但是很值得。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-ban-jia:p10",
+    "text": "现在我很喜欢这个新家。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-ban-jia:p11",
+    "text": "我打算请朋友们来吃饭。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wangshang-gouwu:p0",
+    "text": "最近我经常在网上买东西。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wangshang-gouwu:p1",
+    "text": "网购方便又便宜。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wangshang-gouwu:p2",
+    "text": "我只需要用手机就可以下单。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wangshang-gouwu:p3",
+    "text": "送货速度也越来越快。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wangshang-gouwu:p4",
+    "text": "有时候第二天就到了。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wangshang-gouwu:p5",
+    "text": "不过,有些东西网上的和实际不一样。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wangshang-gouwu:p6",
+    "text": "颜色可能不同。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wangshang-gouwu:p7",
+    "text": "大小也可能不合适。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wangshang-gouwu:p8",
+    "text": "如果不满意,还可以退货。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wangshang-gouwu:p9",
+    "text": "我上个月退了一件衣服。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wangshang-gouwu:p10",
+    "text": "过程很简单。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wangshang-gouwu:p11",
+    "text": "我觉得网购改变了我们的生活。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-xue-kaiche:p0",
+    "text": "我最近在学开车。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-xue-kaiche:p1",
+    "text": "我报了一个驾校。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-xue-kaiche:p2",
+    "text": "老师很有经验,也很耐心。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-xue-kaiche:p3",
+    "text": "第一次开车,我特别紧张。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-xue-kaiche:p4",
+    "text": "手一直发抖。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-xue-kaiche:p5",
+    "text": "老师告诉我要放松。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-xue-kaiche:p6",
+    "text": "慢慢地我开始习惯了。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-xue-kaiche:p7",
+    "text": "现在我已经学了两个月。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-xue-kaiche:p8",
+    "text": "下个月要考试。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-xue-kaiche:p9",
+    "text": "如果考过,我就可以开车上路。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-xue-kaiche:p10",
+    "text": "我打算买一辆小汽车。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-xue-kaiche:p11",
+    "text": "有车以后出门会方便得多。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-canjia-mianshi:p0",
+    "text": "今天我去一家公司面试。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-canjia-mianshi:p1",
+    "text": "我七点就起床了。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-canjia-mianshi:p2",
+    "text": "我穿了最好的衣服。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-canjia-mianshi:p3",
+    "text": "面试的地方离我家有点远。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-canjia-mianshi:p4",
+    "text": "我提前一个小时出门。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-canjia-mianshi:p5",
+    "text": "到了公司,我在前台等了十分钟。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-canjia-mianshi:p6",
+    "text": "然后面试官叫我进办公室。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-canjia-mianshi:p7",
+    "text": "他问了我很多问题。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-canjia-mianshi:p8",
+    "text": "有些问题比较难回答。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-canjia-mianshi:p9",
+    "text": "我尽量说实话。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-canjia-mianshi:p10",
+    "text": "面试一共进行了四十分钟。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-canjia-mianshi:p11",
+    "text": "他说下个星期给我消息。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-canjia-mianshi:p12",
+    "text": "我希望能得到这份工作。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-huanbao-shenghuo:p0",
+    "text": "保护环境越来越重要。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-huanbao-shenghuo:p1",
+    "text": "我们应该从日常生活开始。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-huanbao-shenghuo:p2",
+    "text": "比如,少用塑料袋。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-huanbao-shenghuo:p3",
+    "text": "去超市的时候自己带袋子。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-huanbao-shenghuo:p4",
+    "text": "也可以节约用水。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-huanbao-shenghuo:p5",
+    "text": "刷牙的时候关水龙头。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-huanbao-shenghuo:p6",
+    "text": "出门的时候关灯。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-huanbao-shenghuo:p7",
+    "text": "如果路不远,可以走路或者骑自行车。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-huanbao-shenghuo:p8",
+    "text": "这样不仅环保,而且对身体好。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-huanbao-shenghuo:p9",
+    "text": "很多年轻人现在都有环保意识。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-huanbao-shenghuo:p10",
+    "text": "这是一个好的变化。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-huanbao-shenghuo:p11",
+    "text": "我相信环境会越来越好。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-luxing-jihua:p0",
+    "text": "下个月我要去云南旅行。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-luxing-jihua:p1",
+    "text": "这是我第一次去云南。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-luxing-jihua:p2",
+    "text": "我听说那里风景特别美。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-luxing-jihua:p3",
+    "text": "我和两个朋友一起去。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-luxing-jihua:p4",
+    "text": "我们已经订了机票和酒店。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-luxing-jihua:p5",
+    "text": "一共去七天。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-luxing-jihua:p6",
+    "text": "我们打算先去昆明。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-luxing-jihua:p7",
+    "text": "然后去大理和丽江。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-luxing-jihua:p8",
+    "text": "那里有很多少数民族。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-luxing-jihua:p9",
+    "text": "我想尝一尝当地的菜。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-luxing-jihua:p10",
+    "text": "也要拍很多照片。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-luxing-jihua:p11",
+    "text": "我已经开始收拾行李了。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-jianshen-xiguan:p0",
+    "text": "两年前,我的身体不太好。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-jianshen-xiguan:p1",
+    "text": "我经常感冒,也容易累。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-jianshen-xiguan:p2",
+    "text": "后来,我决定开始运动。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-jianshen-xiguan:p3",
+    "text": "一开始我只是每天走路。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-jianshen-xiguan:p4",
+    "text": "慢慢地,我开始跑步。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-jianshen-xiguan:p5",
+    "text": "现在我每周去三次健身房。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-jianshen-xiguan:p6",
+    "text": "我也注意饮食。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-jianshen-xiguan:p7",
+    "text": "少吃油腻的东西,多吃蔬菜水果。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-jianshen-xiguan:p8",
+    "text": "我还学会了做一些健康的饭菜。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-jianshen-xiguan:p9",
+    "text": "坚持运动以后,我的身体好多了。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-jianshen-xiguan:p10",
+    "text": "我变得更有精神。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-jianshen-xiguan:p11",
+    "text": "健身已经成为我生活的一部分。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wo-de-mengxiang:p0",
+    "text": "我小时候有很多梦想。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wo-de-mengxiang:p1",
+    "text": "我想当医生,也想当老师。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wo-de-mengxiang:p2",
+    "text": "长大了以后,我的梦想变了。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wo-de-mengxiang:p3",
+    "text": "现在我想开一家小咖啡店。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wo-de-mengxiang:p4",
+    "text": "一个安静又舒服的地方。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wo-de-mengxiang:p5",
+    "text": "客人可以在那里看书、聊天。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wo-de-mengxiang:p6",
+    "text": "我想自己做咖啡和蛋糕。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wo-de-mengxiang:p7",
+    "text": "我知道这不容易。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wo-de-mengxiang:p8",
+    "text": "我需要学很多东西。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wo-de-mengxiang:p9",
+    "text": "也需要很多钱。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wo-de-mengxiang:p10",
+    "text": "所以我现在努力工作,努力存钱。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wo-de-mengxiang:p11",
+    "text": "我相信总有一天我能实现这个梦想。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-chunjie-hui-jia:p0",
+    "text": "春节是中国最重要的节日。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-chunjie-hui-jia:p1",
+    "text": "每年春节,我都回老家。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-chunjie-hui-jia:p2",
+    "text": "我的家在南方的一个小城市。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-chunjie-hui-jia:p3",
+    "text": "坐火车要十几个小时。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-chunjie-hui-jia:p4",
+    "text": "火车票很难买。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-chunjie-hui-jia:p5",
+    "text": "但是我一定要回家。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-chunjie-hui-jia:p6",
+    "text": "除夕晚上,全家人一起吃饭。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-chunjie-hui-jia:p7",
+    "text": "妈妈准备了很多好吃的。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-chunjie-hui-jia:p8",
+    "text": "我们一边吃饭,一边看电视。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-chunjie-hui-jia:p9",
+    "text": "十二点的时候,外面开始放烟花。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-chunjie-hui-jia:p10",
+    "text": "我给爷爷奶奶拜年。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-chunjie-hui-jia:p11",
+    "text": "他们给我红包。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-chunjie-hui-jia:p12",
+    "text": "和家人一起过年,我觉得最幸福。",
     "locale": "zh-CN",
     "language": "zh",
     "examSource": "hsk"
@@ -508669,6 +512736,1245 @@
     "examSource": "hsk"
   },
   {
+    "key": "reading:r-zhoumo-de-kafei-guan:p0",
+    "text": "周六早上,我像往常一样去了家附近的咖啡馆。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhoumo-de-kafei-guan:p1",
+    "text": "我点了一杯拿铁,选了靠窗的位置。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhoumo-de-kafei-guan:p2",
+    "text": "阳光透过玻璃照进来,非常舒服。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhoumo-de-kafei-guan:p3",
+    "text": "旁边桌子上的老人在认真地看报纸。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhoumo-de-kafei-guan:p4",
+    "text": "两个学生在热烈地讨论一个项目。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhoumo-de-kafei-guan:p5",
+    "text": "我拿出自己的书,却无法集中注意力。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhoumo-de-kafei-guan:p6",
+    "text": "在周末,咖啡馆更像一个公共客厅。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhoumo-de-kafei-guan:p7",
+    "text": "大家都有自己的生活,却一起分享安静的下午。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhoumo-de-kafei-guan:p8",
+    "text": "咖啡馆的老板姓陈,他记得每个常客的口味。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhoumo-de-kafei-guan:p9",
+    "text": "我一进门,他就知道我要热的还是冰的。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhoumo-de-kafei-guan:p10",
+    "text": "下午三点左右,阳光慢慢移到了另一边。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhoumo-de-kafei-guan:p11",
+    "text": "一个女孩带着笔记本电脑坐下,开始工作。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhoumo-de-kafei-guan:p12",
+    "text": "有人离开的时候,把一本读完的书留在了架子上。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhoumo-de-kafei-guan:p13",
+    "text": "那个架子上的书,都是客人留下的。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhoumo-de-kafei-guan:p14",
+    "text": "我想,这大概就是咖啡馆最好的地方。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhoumo-de-kafei-guan:p15",
+    "text": "你可以一个人待着,却不会觉得孤单。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wangshang-gouwu:p0",
+    "text": "现在,越来越多的人喜欢在网上购物。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wangshang-gouwu:p1",
+    "text": "无论是衣服、食品还是电子产品,几乎都能在网上买到。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wangshang-gouwu:p2",
+    "text": "网购的优点很明显:方便、快速,还可以比较价格。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wangshang-gouwu:p3",
+    "text": "不过它也有一些问题。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wangshang-gouwu:p4",
+    "text": "有时候,实物和图片不一样。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wangshang-gouwu:p5",
+    "text": "退货也很麻烦,要打包再寄回去。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wangshang-gouwu:p6",
+    "text": "即便如此,我仍然觉得方便大于不便。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wangshang-gouwu:p7",
+    "text": "我记得第一次网购是十年前。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wangshang-gouwu:p8",
+    "text": "那时候付款要去银行,快递也要等一个星期。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wangshang-gouwu:p9",
+    "text": "现在付款只要刷一下脸,第二天东西就到了。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wangshang-gouwu:p10",
+    "text": "双十一更是变成了全民的购物节。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wangshang-gouwu:p11",
+    "text": "那一天,很多人熬夜等着零点下单。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wangshang-gouwu:p12",
+    "text": "商家提前一个月就开始做广告。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wangshang-gouwu:p13",
+    "text": "不过这几年我慢慢学会了少买一些。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wangshang-gouwu:p14",
+    "text": "便宜的东西买回来不用,也是浪费。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhao-gongzuo-de-rizi:p0",
+    "text": "上个月我从大学毕业,开始找工作。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhao-gongzuo-de-rizi:p1",
+    "text": "我投了三十多份简历,却只收到三次面试机会。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhao-gongzuo-de-rizi:p2",
+    "text": "每次面试都让我紧张,但也让我学到很多。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhao-gongzuo-de-rizi:p3",
+    "text": "有时候我会怀疑自己是不是选错了专业。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhao-gongzuo-de-rizi:p4",
+    "text": "朋友们告诉我别着急,万事开头难。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhao-gongzuo-de-rizi:p5",
+    "text": "昨天我终于拿到了一份还算满意的工作。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhao-gongzuo-de-rizi:p6",
+    "text": "现在回头看,那段等待的日子也没有白过。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhao-gongzuo-de-rizi:p7",
+    "text": "我还记得第一次面试时的样子。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhao-gongzuo-de-rizi:p8",
+    "text": "我提前一个小时就到了公司楼下。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhao-gongzuo-de-rizi:p9",
+    "text": "因为太紧张,我在外面走来走去。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhao-gongzuo-de-rizi:p10",
+    "text": "面试官问我为什么想做这份工作。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhao-gongzuo-de-rizi:p11",
+    "text": "我准备了很久的答案,却说得乱七八糟。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhao-gongzuo-de-rizi:p12",
+    "text": "后来我才明白,面试不只是回答问题。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhao-gongzuo-de-rizi:p13",
+    "text": "他们更想知道你是一个什么样的人。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhao-gongzuo-de-rizi:p14",
+    "text": "现在我坐在自己的工位上,还常常想起那些日子。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-beijing-ditie-de-zao-gaofeng:p0",
+    "text": "早上八点,北京地铁每节车厢都挤满了人。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-beijing-ditie-de-zao-gaofeng:p1",
+    "text": "有的人在看手机,有的人还没完全睡醒。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-beijing-ditie-de-zao-gaofeng:p2",
+    "text": "列车到换乘站时,大家一下子都往前挤。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-beijing-ditie-de-zao-gaofeng:p3",
+    "text": "我紧紧抱住包,怕和东西分开。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-beijing-ditie-de-zao-gaofeng:p4",
+    "text": "广播里反复提醒:\"看好随身物品,站稳扶好。\"",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-beijing-ditie-de-zao-gaofeng:p5",
+    "text": "虽然拥挤,却没有人抱怨。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-beijing-ditie-de-zao-gaofeng:p6",
+    "text": "这就是城市的节奏,既是压力,也是一种丰富的活力。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-beijing-ditie-de-zao-gaofeng:p7",
+    "text": "十号线是北京最忙的线路之一。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-beijing-ditie-de-zao-gaofeng:p8",
+    "text": "有时候要等两三趟车才能挤上去。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-beijing-ditie-de-zao-gaofeng:p9",
+    "text": "站台上有工作人员帮忙把乘客推进车厢。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-beijing-ditie-de-zao-gaofeng:p10",
+    "text": "车厢里几乎没有人说话。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-beijing-ditie-de-zao-gaofeng:p11",
+    "text": "只听得见广播和手机的声音。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-beijing-ditie-de-zao-gaofeng:p12",
+    "text": "到了国贸站,一大半人同时下车。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-beijing-ditie-de-zao-gaofeng:p13",
+    "text": "车厢忽然空了下来,我终于找到座位。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-beijing-ditie-de-zao-gaofeng:p14",
+    "text": "可是再过两站,我也该下车了。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-chunjie-de-chuantong:p0",
+    "text": "春节是中国最重要的传统节日。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-chunjie-de-chuantong:p1",
+    "text": "无论在哪里,人们都会想办法回家团圆。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-chunjie-de-chuantong:p2",
+    "text": "除夕晚上,全家会聚在一起吃年夜饭。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-chunjie-de-chuantong:p3",
+    "text": "饺子是北方必吃的一道菜,象征着好运。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-chunjie-de-chuantong:p4",
+    "text": "饭后,孩子们会放鞭炮,大人则看春晚。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-chunjie-de-chuantong:p5",
+    "text": "大年初一,人们互相拜年,送祝福。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-chunjie-de-chuantong:p6",
+    "text": "这些风俗背后,是中国人对家庭的重视。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-chunjie-de-chuantong:p7",
+    "text": "春节前,家家户户都要打扫房子。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-chunjie-de-chuantong:p8",
+    "text": "这叫\"扫尘\",意思是把旧的一年扫出去。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-chunjie-de-chuantong:p9",
+    "text": "门上要贴红色的春联和\"福\"字。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-chunjie-de-chuantong:p10",
+    "text": "有些人还会把\"福\"字倒着贴。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-chunjie-de-chuantong:p11",
+    "text": "因为\"倒\"和\"到\"同音,表示福气到了。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-chunjie-de-chuantong:p12",
+    "text": "长辈会给孩子红包,里面装着压岁钱。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-chunjie-de-chuantong:p13",
+    "text": "从初一到十五,亲戚之间互相走动。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-chunjie-de-chuantong:p14",
+    "text": "一直到元宵节,春节才算真正结束。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-changcheng-de-gushi:p0",
+    "text": "长城是中国最有名的建筑之一。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-changcheng-de-gushi:p1",
+    "text": "它最初是为了防止北方民族的进攻而建造的。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-changcheng-de-gushi:p2",
+    "text": "从春秋时期开始,许多诸侯国就开始修城墙。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-changcheng-de-gushi:p3",
+    "text": "秦始皇统一中国后,把它们连接成一条。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-changcheng-de-gushi:p4",
+    "text": "我们今天看到的长城,大部分是明朝修建的。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-changcheng-de-gushi:p5",
+    "text": "修建长城耗费了无数劳工和许多生命。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-changcheng-de-gushi:p6",
+    "text": "如今,它已经不再是防御工事,而是历史的见证。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-changcheng-de-gushi:p7",
+    "text": "长城不是一道简单的墙。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-changcheng-de-gushi:p8",
+    "text": "它包括城墙、关口、烽火台和驻军的城堡。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-changcheng-de-gushi:p9",
+    "text": "烽火台是古代最快的通信方式。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-changcheng-de-gushi:p10",
+    "text": "发现敌人的时候,白天放烟,晚上点火。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-changcheng-de-gushi:p11",
+    "text": "一个信号可以在几个小时内传到很远的地方。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-changcheng-de-gushi:p12",
+    "text": "有一句老话说:\"不到长城非好汉。\"",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-changcheng-de-gushi:p13",
+    "text": "今天每年有上千万人来这里爬长城。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-changcheng-de-gushi:p14",
+    "text": "站在城墙上往远处看,你才明白它有多长。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhongguo-cha-wenhua:p0",
+    "text": "中国是茶的故乡之一,饮茶已有几千年的历史。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhongguo-cha-wenhua:p1",
+    "text": "茶的种类很多,有绿茶、乌龙茶、普洱、白茶等等。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhongguo-cha-wenhua:p2",
+    "text": "不同的茶需要不同的泡法和水温。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhongguo-cha-wenhua:p3",
+    "text": "在中国南方,喝茶还是一种社交方式。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhongguo-cha-wenhua:p4",
+    "text": "朋友在茶馆里见面,边喝茶边聊天,可以度过整个下午。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhongguo-cha-wenhua:p5",
+    "text": "茶道讲究\"和、敬、清、寂\"。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhongguo-cha-wenhua:p6",
+    "text": "它不仅是一种饮料,也是一种生活态度。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhongguo-cha-wenhua:p7",
+    "text": "中国人喝茶讲究\"看、闻、品\"三步。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhongguo-cha-wenhua:p8",
+    "text": "先看茶叶的颜色和形状。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhongguo-cha-wenhua:p9",
+    "text": "再闻它的香气。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhongguo-cha-wenhua:p10",
+    "text": "最后小口地喝,让茶在嘴里停一会儿。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhongguo-cha-wenhua:p11",
+    "text": "好茶喝完以后,嘴里会有回甘。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhongguo-cha-wenhua:p12",
+    "text": "送茶给长辈是很常见的礼物。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhongguo-cha-wenhua:p13",
+    "text": "不过送礼的时候要注意,不能送太便宜的茶。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhongguo-cha-wenhua:p14",
+    "text": "在很多家庭里,泡一壶茶就是欢迎客人的方式。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-jingju-rumen:p0",
+    "text": "京剧是中国传统戏剧的代表。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-jingju-rumen:p1",
+    "text": "它融合了唱、念、做、打四种表演。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-jingju-rumen:p2",
+    "text": "演员穿着鲜艳的戏服,画着精致的脸谱。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-jingju-rumen:p3",
+    "text": "不同颜色和图案代表角色的性格。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-jingju-rumen:p4",
+    "text": "比如,红色代表忠诚,白色则常常代表奸诈。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-jingju-rumen:p5",
+    "text": "外国观众刚开始会觉得它的节奏很慢。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-jingju-rumen:p6",
+    "text": "但一旦理解了它的象征语言,每一个动作都有意义。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-jingju-rumen:p7",
+    "text": "京剧的舞台其实很简单。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-jingju-rumen:p8",
+    "text": "台上常常只有一桌两椅。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-jingju-rumen:p9",
+    "text": "演员用动作告诉观众他在哪里。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-jingju-rumen:p10",
+    "text": "拿着马鞭走几步,就表示骑马走了很远。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-jingju-rumen:p11",
+    "text": "做出划桨的动作,就是在河上坐船。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-jingju-rumen:p12",
+    "text": "这种表演方式叫\"虚拟\",全靠想象。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-jingju-rumen:p13",
+    "text": "京剧最有名的剧目之一是《霸王别姬》。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-jingju-rumen:p14",
+    "text": "如果你只看一出戏,可以从它开始。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-kan-yisheng:p0",
+    "text": "上个星期我有点不舒服,就去医院看医生。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-kan-yisheng:p1",
+    "text": "中国的医院跟西方的不太一样。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-kan-yisheng:p2",
+    "text": "你不用先打电话预约,可以直接去挂号。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-kan-yisheng:p3",
+    "text": "我在手机上挂了内科的号,省了不少时间。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-kan-yisheng:p4",
+    "text": "等了大概二十分钟,护士就叫我的名字。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-kan-yisheng:p5",
+    "text": "医生问我哪里不舒服,我说我嗓子疼,还有点发烧。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-kan-yisheng:p6",
+    "text": "他让我张开嘴,看了看,又量了体温。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-kan-yisheng:p7",
+    "text": "他说我只是普通的感冒,不用太担心。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-kan-yisheng:p8",
+    "text": "然后他给我开了药,让我去一楼取药。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-kan-yisheng:p9",
+    "text": "取药的地方排着长队,大家都很有耐心。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-kan-yisheng:p10",
+    "text": "药一共花了三十多块钱,比我想象的便宜。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-kan-yisheng:p11",
+    "text": "医生提醒我要多喝热水,多休息。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-kan-yisheng:p12",
+    "text": "回家以后我睡了一个下午。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-kan-yisheng:p13",
+    "text": "过了两天,我果然好多了。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zu-fangzi:p0",
+    "text": "来北京工作以后,我做的第一件大事就是租房子。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zu-fangzi:p1",
+    "text": "我在网上看了很多房子的照片,可是照片常常比真的好看。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zu-fangzi:p2",
+    "text": "后来朋友介绍我认识了一位中介。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zu-fangzi:p3",
+    "text": "他带我一个下午看了四套房子。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zu-fangzi:p4",
+    "text": "第一套离地铁站很近,但是太贵了。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zu-fangzi:p5",
+    "text": "第二套房租便宜,可是楼太旧,厨房也很小。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zu-fangzi:p6",
+    "text": "第三套朝北,一天到晚都晒不到太阳。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zu-fangzi:p7",
+    "text": "最后一套在六楼,没有电梯,不过房间又干净又亮。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zu-fangzi:p8",
+    "text": "我站在窗户前面,看见楼下有一棵大树。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zu-fangzi:p9",
+    "text": "就是那棵树让我决定租下来。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zu-fangzi:p10",
+    "text": "签合同的时候,我看得特别仔细。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zu-fangzi:p11",
+    "text": "押金是两个月的房租,这在北京很常见。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zu-fangzi:p12",
+    "text": "搬进去的那天晚上,我坐在空空的地板上吃泡面。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zu-fangzi:p13",
+    "text": "虽然什么家具都没有,但我觉得心里很踏实。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-waimai-yu-kuaidi:p0",
+    "text": "在中国生活,最方便的事情之一就是点外卖。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-waimai-yu-kuaidi:p1",
+    "text": "不管你想吃什么,手机上点几下就行了。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-waimai-yu-kuaidi:p2",
+    "text": "早上的豆浆油条,晚上的火锅,都可以送到家门口。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-waimai-yu-kuaidi:p3",
+    "text": "常常等不到三十分钟,外卖员就到了。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-waimai-yu-kuaidi:p4",
+    "text": "快递也一样快,有时候上午下单,下午就收到了。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-waimai-yu-kuaidi:p5",
+    "text": "我住的楼下有一排快递柜。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-waimai-yu-kuaidi:p6",
+    "text": "每天下班回家,我都会顺便看看有没有我的包裹。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-waimai-yu-kuaidi:p7",
+    "text": "这种方便当然有它的代价。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-waimai-yu-kuaidi:p8",
+    "text": "外卖员为了赶时间,在路上骑得很快。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-waimai-yu-kuaidi:p9",
+    "text": "一次下大雨,我看见一个外卖员浑身都湿透了。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-waimai-yu-kuaidi:p10",
+    "text": "他把餐盒抱在怀里,自己却站在雨里。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-waimai-yu-kuaidi:p11",
+    "text": "我接过来的时候,盒子还是热的。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-waimai-yu-kuaidi:p12",
+    "text": "从那以后,我总会多说一句\"谢谢,辛苦了\"。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-waimai-yu-kuaidi:p13",
+    "text": "方便的背后,是很多人跑出来的时间。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhongqiu-jie:p0",
+    "text": "农历八月十五是中秋节,是中国人很重视的节日。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhongqiu-jie:p1",
+    "text": "这一天的月亮最圆,也最亮。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhongqiu-jie:p2",
+    "text": "中秋节最重要的事情,就是一家人团圆。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhongqiu-jie:p3",
+    "text": "不管走得多远,很多人都会想办法回家。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhongqiu-jie:p4",
+    "text": "晚饭以后,大家把桌子搬到院子里或者阳台上。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhongqiu-jie:p5",
+    "text": "桌上放着月饼、水果和热茶。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhongqiu-jie:p6",
+    "text": "月饼的味道很多,有豆沙的,有莲蓉的,还有咸蛋黄的。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhongqiu-jie:p7",
+    "text": "现在还出现了冰淇淋月饼和巧克力月饼。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhongqiu-jie:p8",
+    "text": "老人常常一边看月亮,一边讲嫦娥的故事。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhongqiu-jie:p9",
+    "text": "传说嫦娥吃了长生不老药,飞到了月亮上。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhongqiu-jie:p10",
+    "text": "从此她就住在广寒宫里,再也回不来了。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhongqiu-jie:p11",
+    "text": "所以中秋的月亮里,总有一点点寂寞。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhongqiu-jie:p12",
+    "text": "如果那天你在外地,也不要难过。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhongqiu-jie:p13",
+    "text": "因为你和家人看到的,是同一个月亮。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
     "key": "reading:r-hsk-hsk5-zhidu:p0",
     "text": "这所大学在高等教育改革中试行了更加灵活的课程制度。",
     "locale": "zh-CN",
@@ -508795,6 +514101,1462 @@
     "examSource": "hsk"
   },
   {
+    "key": "reading:r-gongxiang-danche-de-chengshi:p0",
+    "text": "几年前,共享单车在中国的城市迅速普及。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-gongxiang-danche-de-chengshi:p1",
+    "text": "只要用手机扫一下,就可以骑车去任何地方。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-gongxiang-danche-de-chengshi:p2",
+    "text": "它解决了所谓\"最后一公里\"的出行难题。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-gongxiang-danche-de-chengshi:p3",
+    "text": "然而,盲目扩张很快带来了严重的管理问题。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-gongxiang-danche-de-chengshi:p4",
+    "text": "街道上的自行车乱停乱放,挡住了行人的路。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-gongxiang-danche-de-chengshi:p5",
+    "text": "不少公司因为扩张太快,最后破产倒闭。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-gongxiang-danche-de-chengshi:p6",
+    "text": "如今,这个行业已经成熟,共享单车成了城市基础设施的一部分。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-gongxiang-danche-de-chengshi:p7",
+    "text": "这是一个非常中国式的故事:先爆发式增长,再小心治理。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-gongxiang-danche-de-chengshi:p8",
+    "text": "最疯狂的时候,有几十家公司同时投放单车。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-gongxiang-danche-de-chengshi:p9",
+    "text": "每家都用不同的颜色,街上像开了一场比赛。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-gongxiang-danche-de-chengshi:p10",
+    "text": "黄色、橙色、蓝色、绿色,人们叫它们\"彩虹大战\"。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-gongxiang-danche-de-chengshi:p11",
+    "text": "公司为了抢用户,甚至推出一元骑一个月的活动。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-gongxiang-danche-de-chengshi:p12",
+    "text": "结果是钱烧完了,车却还堆在路边。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-gongxiang-danche-de-chengshi:p13",
+    "text": "有些城市出现了巨大的\"单车坟场\"。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-gongxiang-danche-de-chengshi:p14",
+    "text": "成千上万辆车锈在空地上,从高处看非常震撼。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-gongxiang-danche-de-chengshi:p15",
+    "text": "后来政府开始限制投放的数量。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-gongxiang-danche-de-chengshi:p16",
+    "text": "也要求企业把用户的押金存进专门的账户。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-gongxiang-danche-de-chengshi:p17",
+    "text": "现在剩下的几家公司规模小了,却活得更稳。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zaijia-bangong-de-tiaozhan:p0",
+    "text": "疫情之后,许多公司开始允许员工在家办公。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zaijia-bangong-de-tiaozhan:p1",
+    "text": "以前我以为在家办公是最舒适的安排。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zaijia-bangong-de-tiaozhan:p2",
+    "text": "可是过了一段时间,我发现工作和生活的界限反而更模糊。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zaijia-bangong-de-tiaozhan:p3",
+    "text": "没有通勤,也意味着你可能二十四小时都在\"上班\"。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zaijia-bangong-de-tiaozhan:p4",
+    "text": "和同事之间少了闲聊,创意上的协作也变得困难。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zaijia-bangong-de-tiaozhan:p5",
+    "text": "我渐渐明白,在家工作的效率取决于自律。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zaijia-bangong-de-tiaozhan:p6",
+    "text": "现在我每天设固定的工作时间,下班后绝不打开电脑。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zaijia-bangong-de-tiaozhan:p7",
+    "text": "自由,自有它的代价。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zaijia-bangong-de-tiaozhan:p8",
+    "text": "刚开始在家办公的那几个星期,我很享受。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zaijia-bangong-de-tiaozhan:p9",
+    "text": "不用挤地铁,省下了每天两个小时。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zaijia-bangong-de-tiaozhan:p10",
+    "text": "我可以睡到八点半,穿着睡衣就开始工作。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zaijia-bangong-de-tiaozhan:p11",
+    "text": "可是慢慢地,问题出现了。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zaijia-bangong-de-tiaozhan:p12",
+    "text": "我的电脑就放在床边,晚上十一点还在回邮件。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zaijia-bangong-de-tiaozhan:p13",
+    "text": "周末和工作日看起来几乎一样。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zaijia-bangong-de-tiaozhan:p14",
+    "text": "家里也有很多干扰,快递、家人、还有洗不完的碗。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zaijia-bangong-de-tiaozhan:p15",
+    "text": "后来我在房间里划出一个角落,只用来工作。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zaijia-bangong-de-tiaozhan:p16",
+    "text": "离开那个角落,我就告诉自己今天结束了。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zaijia-bangong-de-tiaozhan:p17",
+    "text": "这个简单的办法,比任何软件都有效。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-shanghai-longtang-de-zaochen:p0",
+    "text": "上海弄堂的早晨开始得很早。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-shanghai-longtang-de-zaochen:p1",
+    "text": "天刚亮,街角的早餐铺已经冒着热气。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-shanghai-longtang-de-zaochen:p2",
+    "text": "阿姨们为一条鲜鱼讨价还价,挑、问、嫌弃。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-shanghai-longtang-de-zaochen:p3",
+    "text": "老人家提着鸟笼出来,和朋友凑在一起喝茶聊天。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-shanghai-longtang-de-zaochen:p4",
+    "text": "背着书包的小孩睡眼惺忪,被家长拉着往学校走。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-shanghai-longtang-de-zaochen:p5",
+    "text": "一墙之外,是城市的高楼大厦,还没有完全苏醒。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-shanghai-longtang-de-zaochen:p6",
+    "text": "弄堂里,藏着上海另一张更缓慢的面孔。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-shanghai-longtang-de-zaochen:p7",
+    "text": "弄堂很窄,两个人并排走就有点挤。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-shanghai-longtang-de-zaochen:p8",
+    "text": "墙上爬着电线,窗外挂着一排排衣服。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-shanghai-longtang-de-zaochen:p9",
+    "text": "有人把竹竿架在两边的窗户之间晾被子。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-shanghai-longtang-de-zaochen:p10",
+    "text": "早晨的太阳照在被子上,有一种干净的味道。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-shanghai-longtang-de-zaochen:p11",
+    "text": "修鞋的老师傅在门口摆开工具。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-shanghai-longtang-de-zaochen:p12",
+    "text": "卖豆浆的推着车,一边走一边喊。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-shanghai-longtang-de-zaochen:p13",
+    "text": "这些声音混在一起,就是弄堂的闹钟。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-shanghai-longtang-de-zaochen:p14",
+    "text": "住在这里的人,大多认识彼此几十年了。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-shanghai-longtang-de-zaochen:p15",
+    "text": "谁家孩子考上大学,整条弄堂都知道。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-shanghai-longtang-de-zaochen:p16",
+    "text": "这几年,很多弄堂被拆掉,盖起了新楼。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-shanghai-longtang-de-zaochen:p17",
+    "text": "留下来的那些,成了游客拍照的地方。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wangluo-shidai-de-youqing:p0",
+    "text": "在社交媒体上,我有几百个\"朋友\"。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wangluo-shidai-de-youqing:p1",
+    "text": "但真正能在半夜打电话的,最多三个。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wangluo-shidai-de-youqing:p2",
+    "text": "我们习惯了互相点赞,却很少真正倾听。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wangluo-shidai-de-youqing:p3",
+    "text": "看到朋友在网上晒婚礼照片,我有时感到一种奇怪的距离。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wangluo-shidai-de-youqing:p4",
+    "text": "不是因为不亲近,而是数字关系取代了面对面的联系。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wangluo-shidai-de-youqing:p5",
+    "text": "上周我特意约了几个老朋友出来吃饭。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wangluo-shidai-de-youqing:p6",
+    "text": "坐下来才发现,距离上次见面已经三年。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wangluo-shidai-de-youqing:p7",
+    "text": "真正的友谊仍然需要时间和空间,而不只是一块屏幕。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wangluo-shidai-de-youqing:p8",
+    "text": "那天晚上我们聊了四个小时。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wangluo-shidai-de-youqing:p9",
+    "text": "说的都是些小事,工作、房子、父母的身体。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wangluo-shidai-de-youqing:p10",
+    "text": "可是那种感觉,是点赞给不了的。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wangluo-shidai-de-youqing:p11",
+    "text": "我发现我其实并不了解他们最近的生活。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wangluo-shidai-de-youqing:p12",
+    "text": "一个人换了工作,另一个刚离婚。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wangluo-shidai-de-youqing:p13",
+    "text": "这些事情,他们都没有发在朋友圈里。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wangluo-shidai-de-youqing:p14",
+    "text": "真正重要的事,人们反而不会写在网上。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wangluo-shidai-de-youqing:p15",
+    "text": "网络让我们看见彼此的生活,却看不见彼此的心情。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wangluo-shidai-de-youqing:p16",
+    "text": "从那以后,我每个月都约一次老朋友。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-wangluo-shidai-de-youqing:p17",
+    "text": "见面很麻烦,但正是这份麻烦让关系变得真实。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-duanwujie-de-laili:p0",
+    "text": "端午节在农历五月初五。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-duanwujie-de-laili:p1",
+    "text": "传说这个节日是为了纪念古代爱国诗人屈原。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-duanwujie-de-laili:p2",
+    "text": "屈原在国家灭亡时,悲愤地投入汨罗江。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-duanwujie-de-laili:p3",
+    "text": "当地百姓听说后,划着船去寻找他。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-duanwujie-de-laili:p4",
+    "text": "为了不让鱼伤害他的身体,人们把米投入江中。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-duanwujie-de-laili:p5",
+    "text": "这两件事后来演变成赛龙舟和吃粽子的风俗。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-duanwujie-de-laili:p6",
+    "text": "今天,端午节早已不仅是纪念,更成了文化认同的象征。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-duanwujie-de-laili:p7",
+    "text": "屈原是战国时期楚国的大臣。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-duanwujie-de-laili:p8",
+    "text": "他主张联合抗秦,却被小人陷害,遭到流放。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-duanwujie-de-laili:p9",
+    "text": "流放期间,他写下了《离骚》等不朽的诗篇。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-duanwujie-de-laili:p10",
+    "text": "那些诗至今仍是中国文学的高峰。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-duanwujie-de-laili:p11",
+    "text": "秦军攻破楚国都城那年,他终于绝望了。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-duanwujie-de-laili:p12",
+    "text": "五月初五那天,他抱着石头走进了江水。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-duanwujie-de-laili:p13",
+    "text": "今天的赛龙舟已经成了一项国际比赛。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-duanwujie-de-laili:p14",
+    "text": "鼓声一响,几十个人的桨同时落水。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-duanwujie-de-laili:p15",
+    "text": "粽子的口味南北不同,北方多甜,南方多咸。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-duanwujie-de-laili:p16",
+    "text": "为了甜粽还是咸粽,人们每年都要争论一次。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-duanwujie-de-laili:p17",
+    "text": "一个两千多年前的故事,就这样活到了今天。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-sichou-zhi-lu:p0",
+    "text": "丝绸之路是古代连接中国和西方的贸易通道。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-sichou-zhi-lu:p1",
+    "text": "它始于西汉时期,由外交官张骞开辟。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-sichou-zhi-lu:p2",
+    "text": "商队把丝绸、瓷器和茶叶从长安运往西方。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-sichou-zhi-lu:p3",
+    "text": "返程时,他们带回了葡萄、核桃、玻璃器和音乐。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-sichou-zhi-lu:p4",
+    "text": "丝路的交流不仅是商业上的,也是宗教和艺术上的。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-sichou-zhi-lu:p5",
+    "text": "佛教就是沿着这条路传入中原的。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-sichou-zhi-lu:p6",
+    "text": "沙漠之行极其危险,风沙、强盗和疾病夺去了无数生命。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-sichou-zhi-lu:p7",
+    "text": "但正是这种艰难的交流,塑造了欧亚大陆丰富的文化多样性。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-sichou-zhi-lu:p8",
+    "text": "张骞第一次出使时被匈奴抓住,扣留了十多年。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-sichou-zhi-lu:p9",
+    "text": "他没有放弃使命,后来找到机会逃走,继续西行。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-sichou-zhi-lu:p10",
+    "text": "回到长安时,一百多人的队伍只剩下两个人。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-sichou-zhi-lu:p11",
+    "text": "丝绸在罗马非常昂贵,据说和黄金同价。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-sichou-zhi-lu:p12",
+    "text": "罗马人很久都不知道丝是怎么做出来的。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-sichou-zhi-lu:p13",
+    "text": "他们以为丝长在树上。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-sichou-zhi-lu:p14",
+    "text": "沿途兴起了许多城市,比如敦煌、撒马尔罕。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-sichou-zhi-lu:p15",
+    "text": "敦煌的莫高窟里,保存着上千年的壁画。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-sichou-zhi-lu:p16",
+    "text": "那些壁画上,能看到不同民族的面孔和服装。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-sichou-zhi-lu:p17",
+    "text": "今天的\"一带一路\",名字就来自这条古道。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhongguo-gudai-de-keju:p0",
+    "text": "科举是中国古代选拔官员的制度。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhongguo-gudai-de-keju:p1",
+    "text": "它始于隋朝,前后延续了一千三百多年。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhongguo-gudai-de-keju:p2",
+    "text": "通过层层考试,考生要在经书、诗文和行政判断上接受考验。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhongguo-gudai-de-keju:p3",
+    "text": "理论上,即使一个贫寒的读书人,也能通过读书改变命运。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhongguo-gudai-de-keju:p4",
+    "text": "但现实中,备考的成本非常高昂。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhongguo-gudai-de-keju:p5",
+    "text": "许多人一辈子研读经书,始终没能考上。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhongguo-gudai-de-keju:p6",
+    "text": "科举塑造了中国人\"学而优则仕\"的想象。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhongguo-gudai-de-keju:p7",
+    "text": "即便是今天,现代高考仍被视为它的延续。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhongguo-gudai-de-keju:p8",
+    "text": "考试分好几级,从县里一直考到京城。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhongguo-gudai-de-keju:p9",
+    "text": "最低一级叫童试,考中的人称为秀才。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhongguo-gudai-de-keju:p10",
+    "text": "再往上是乡试、会试,最后是皇帝亲自主持的殿试。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhongguo-gudai-de-keju:p11",
+    "text": "殿试的第一名叫状元,是天下读书人的梦想。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhongguo-gudai-de-keju:p12",
+    "text": "考场是一间间小屋子,只有一张桌子那么大。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhongguo-gudai-de-keju:p13",
+    "text": "考生要在里面待上几天几夜,吃住都在其中。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhongguo-gudai-de-keju:p14",
+    "text": "为了防止作弊,考生进场前要被搜身。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhongguo-gudai-de-keju:p15",
+    "text": "有人把小抄写在衣服的夹层里,甚至写在毛笔杆上。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhongguo-gudai-de-keju:p16",
+    "text": "也有人考了一辈子,头发白了还在考。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhongguo-gudai-de-keju:p17",
+    "text": "《儒林外史》里的范进,中举时高兴得发了疯。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-si-da-faming:p0",
+    "text": "造纸术、印刷术、火药和指南针,被称为中国\"四大发明\"。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-si-da-faming:p1",
+    "text": "这些发明不仅深刻地改变了中国,也改变了世界。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-si-da-faming:p2",
+    "text": "东汉的蔡伦改进了造纸术,使书写变得廉价普及。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-si-da-faming:p3",
+    "text": "毕昇的活字印刷则进一步加速了知识的传播。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-si-da-faming:p4",
+    "text": "火药最初是炼丹术的副产品,后来彻底改变了战争的形态。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-si-da-faming:p5",
+    "text": "指南针让远洋航海成为可能。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-si-da-faming:p6",
+    "text": "如果没有这些发明,世界史将完全不同。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-si-da-faming:p7",
+    "text": "在纸出现以前,中国人在竹简上写字。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-si-da-faming:p8",
+    "text": "一部书可能要用几十斤重的竹片。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-si-da-faming:p9",
+    "text": "据说秦始皇每天要看一百二十斤的奏章。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-si-da-faming:p10",
+    "text": "蔡伦用树皮、麻布和渔网造出了便宜的纸。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-si-da-faming:p11",
+    "text": "从此知识不再只属于贵族。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-si-da-faming:p12",
+    "text": "毕昇的活字是用胶泥做的,一个字一个印。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-si-da-faming:p13",
+    "text": "排好版印完以后,字还可以拆下来再用。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-si-da-faming:p14",
+    "text": "火药本来是道士炼长生不老药时发现的。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-si-da-faming:p15",
+    "text": "他们想求长生,却造出了最致命的东西。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-si-da-faming:p16",
+    "text": "指南针最早叫司南,样子像一把勺子。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-si-da-faming:p17",
+    "text": "这四样东西传到欧洲后,推动了那里的巨大变革。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-gaokao:p0",
+    "text": "每年六月初,中国有上千万的学生走进同一个考场。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-gaokao:p1",
+    "text": "这场考试叫高考,是决定他们能上哪所大学的关键。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-gaokao:p2",
+    "text": "对很多家庭来说,高考几乎是一年中最重要的日子。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-gaokao:p3",
+    "text": "考试前的那个月,整个社会都会为考生让路。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-gaokao:p4",
+    "text": "学校附近的工地必须停工,以免影响学生休息。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-gaokao:p5",
+    "text": "交通警察会专门为送考的车辆开路。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-gaokao:p6",
+    "text": "有的城市甚至规定,考试期间不许按喇叭。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-gaokao:p7",
+    "text": "家长站在考场外面,一站就是三个小时。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-gaokao:p8",
+    "text": "他们不敢走远,怕孩子出来的时候找不到人。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-gaokao:p9",
+    "text": "有人拿着水,有人拿着伞,更多的人只是沉默地等着。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-gaokao:p10",
+    "text": "支持高考的人认为,它给了普通家庭一条公平的路。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-gaokao:p11",
+    "text": "无论你出生在城市还是农村,分数面前人人平等。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-gaokao:p12",
+    "text": "反对的人则说,一次考试不应该决定一个人的一生。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-gaokao:p13",
+    "text": "他们担心学生只学会了考试,却没学会思考。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-gaokao:p14",
+    "text": "这两种看法都有道理,争论了几十年也没有结果。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-gaokao:p15",
+    "text": "但有一点大家都同意:那个夏天,谁也不会忘记。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-dusheng-zinu-de-yi-dai:p0",
+    "text": "从上世纪八十年代开始,中国实行了三十多年的独生子女政策。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-dusheng-zinu-de-yi-dai:p1",
+    "text": "因此出现了世界上规模最大的一代独生子女。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-dusheng-zinu-de-yi-dai:p2",
+    "text": "我就是其中之一,家里只有我一个孩子。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-dusheng-zinu-de-yi-dai:p3",
+    "text": "小时候,我几乎得到了父母全部的关注和资源。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-dusheng-zinu-de-yi-dai:p4",
+    "text": "我有自己的房间,自己的书桌,不用跟任何人分。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-dusheng-zinu-de-yi-dai:p5",
+    "text": "外人常说,独生子女被宠坏了,自私又任性。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-dusheng-zinu-de-yi-dai:p6",
+    "text": "可是他们很少看到硬币的另一面。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-dusheng-zinu-de-yi-dai:p7",
+    "text": "没有兄弟姐妹,意味着所有的期望都压在一个人身上。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-dusheng-zinu-de-yi-dai:p8",
+    "text": "考试考砸了,没有人可以分担父母的失望。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-dusheng-zinu-de-yi-dai:p9",
+    "text": "长大以后,压力变得更加具体。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-dusheng-zinu-de-yi-dai:p10",
+    "text": "一对夫妻,可能要照顾四位老人,还要养自己的孩子。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-dusheng-zinu-de-yi-dai:p11",
+    "text": "这被称为\"四二一\"结构,像一座倒过来的金字塔。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-dusheng-zinu-de-yi-dai:p12",
+    "text": "父母生病的时候,你才真正明白独生的意思。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-dusheng-zinu-de-yi-dai:p13",
+    "text": "病房外面的走廊上,只有你一个人在打电话。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-dusheng-zinu-de-yi-dai:p14",
+    "text": "现在政策已经放开了,可以生两个甚至三个孩子。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-dusheng-zinu-de-yi-dai:p15",
+    "text": "但对我们这一代来说,有些东西已经无法重来。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhengzai-xiaoshi-de-fangyan:p0",
+    "text": "中国有几百种方言,有些方言之间的差别比欧洲的语言还大。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhengzai-xiaoshi-de-fangyan:p1",
+    "text": "一个说粤语的人和一个说闽南话的人,可能完全听不懂对方。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhengzai-xiaoshi-de-fangyan:p2",
+    "text": "为了让全国人能够交流,国家推广了普通话。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhengzai-xiaoshi-de-fangyan:p3",
+    "text": "这在教育和经济上确实带来了巨大的好处。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhengzai-xiaoshi-de-fangyan:p4",
+    "text": "但是几十年以后,人们开始发现一个问题。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhengzai-xiaoshi-de-fangyan:p5",
+    "text": "越来越多的孩子,已经不会说自己父母的方言了。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhengzai-xiaoshi-de-fangyan:p6",
+    "text": "在上海,很多小学生听得懂上海话,却不会说。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhengzai-xiaoshi-de-fangyan:p7",
+    "text": "在很多城市,方言只剩下老人还在使用。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhengzai-xiaoshi-de-fangyan:p8",
+    "text": "语言学家说,一种方言消失,不只是少了一种口音。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhengzai-xiaoshi-de-fangyan:p9",
+    "text": "方言里保存着当地的历史、笑话和看世界的方式。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhengzai-xiaoshi-de-fangyan:p10",
+    "text": "有些词在普通话里根本找不到对应的说法。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhengzai-xiaoshi-de-fangyan:p11",
+    "text": "比如形容一种说不出的闷热,或者一种特别的亲切。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhengzai-xiaoshi-de-fangyan:p12",
+    "text": "这几年,有人开始录制老人说方言的声音。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhengzai-xiaoshi-de-fangyan:p13",
+    "text": "也有学校尝试开设方言课,教孩子唱当地的童谣。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhengzai-xiaoshi-de-fangyan:p14",
+    "text": "没有人想回到互相听不懂的时代。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhengzai-xiaoshi-de-fangyan:p15",
+    "text": "但也许我们可以既说普通话,也记得奶奶的口音。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhongyi:p0",
+    "text": "走进一家中药店,你会闻到一种很特别的味道。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhongyi:p1",
+    "text": "那是几百种草药混在一起的气味,又苦又香。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhongyi:p2",
+    "text": "中医有两千多年的历史,是中国文化的重要部分。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhongyi:p3",
+    "text": "中医看病的方法和西医很不一样。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhongyi:p4",
+    "text": "医生会看你的舌头,听你的声音,还要摸你的脉。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhongyi:p5",
+    "text": "他关心的不只是病,还有你整个人的状态。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhongyi:p6",
+    "text": "中医认为身体讲究平衡,太热或者太寒都会生病。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhongyi:p7",
+    "text": "所以中医常说\"调理\",而不是简单地\"治好\"。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhongyi:p8",
+    "text": "今天在中国,中医和西医常常一起使用。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhongyi:p9",
+    "text": "感冒的时候,有人吃西药,也有人先喝一碗中药。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhongyi:p10",
+    "text": "针灸在很多国家也越来越受欢迎。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhongyi:p11",
+    "text": "不过关于中医的争论一直没有停过。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhongyi:p12",
+    "text": "批评的人认为,很多方子缺少现代科学的证明。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhongyi:p13",
+    "text": "支持的人则说,有效果几千年了,不能简单否定。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhongyi:p14",
+    "text": "也许最合理的态度,是既不盲目相信,也不轻易否定。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-zhongyi:p15",
+    "text": "让证据说话,同时尊重经验留下来的东西。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
     "key": "reading:r-hsk-hsk6-zhengce:p0",
     "text": "如果政策只停留在口号上，就不可能真正结果。",
     "locale": "zh-CN",
@@ -508888,6 +515650,1497 @@
   {
     "key": "reading:r-hsk-hsk6-jiuyuan2:p1",
     "text": "救援队租用了一艘小船，把物资送到被困的岛上。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-dushi-ye-gui-ren:p0",
+    "text": "夜里十一点过后,街道渐渐安静下来。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-dushi-ye-gui-ren:p1",
+    "text": "但高楼底下,深夜食堂依然灯火通明,像一座座温暖的小岛。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-dushi-ye-gui-ren:p2",
+    "text": "加班的白领一边松领带,一边走进店里。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-dushi-ye-gui-ren:p3",
+    "text": "刚下班的司机默默地喝完一碗牛肉面。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-dushi-ye-gui-ren:p4",
+    "text": "还有三两成群的年轻人,在过着\"夜宵\"。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-dushi-ye-gui-ren:p5",
+    "text": "城市的灯光温柔,城市的孤独也温柔。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-dushi-ye-gui-ren:p6",
+    "text": "在放下筷子以前,没有人急着离开。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-dushi-ye-gui-ren:p7",
+    "text": "夜归,成了这座城市最安静的仪式。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-dushi-ye-gui-ren:p8",
+    "text": "深夜食堂的老板往往话不多。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-dushi-ye-gui-ren:p9",
+    "text": "他知道谁刚失恋,谁刚被辞退,却从来不问。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-dushi-ye-gui-ren:p10",
+    "text": "他只是把面煮得更久一点,汤盛得更满一些。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-dushi-ye-gui-ren:p11",
+    "text": "有人喝完酒,趴在桌子上睡着了。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-dushi-ye-gui-ren:p12",
+    "text": "老板给他盖了一件外套,没有叫醒他。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-dushi-ye-gui-ren:p13",
+    "text": "凌晨两点,最后一班地铁早已停运。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-dushi-ye-gui-ren:p14",
+    "text": "街上只剩下代驾和网约车的灯。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-dushi-ye-gui-ren:p15",
+    "text": "他们也在等,等着把别人送回家。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-dushi-ye-gui-ren:p16",
+    "text": "天快亮的时候,卖早点的摊子开始支起来。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-dushi-ye-gui-ren:p17",
+    "text": "城市的夜和城市的早晨,在这一刻交接。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-dushi-ye-gui-ren:p18",
+    "text": "谁也没有说话,但一切都在继续。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-yi-feng-xie-gei-guxiang-de-xin:p0",
+    "text": "亲爱的故乡:距离我离开你,已经十年。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-yi-feng-xie-gei-guxiang-de-xin:p1",
+    "text": "我常常梦见村口的那口老井。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-yi-feng-xie-gei-guxiang-de-xin:p2",
+    "text": "母亲说井已经被填了,取代它的是一个小小的广场。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-yi-feng-xie-gei-guxiang-de-xin:p3",
+    "text": "我小时候读过书的那棵柳树也不在了。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-yi-feng-xie-gei-guxiang-de-xin:p4",
+    "text": "巷中开裂的石头,也被换成了整齐的方砖。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-yi-feng-xie-gei-guxiang-de-xin:p5",
+    "text": "故乡,你仍是你,却已不再是记忆中的你。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-yi-feng-xie-gei-guxiang-de-xin:p6",
+    "text": "也许我也早已不是当年那个小小的我。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-yi-feng-xie-gei-guxiang-de-xin:p7",
+    "text": "但我还是想给你写一封信,说给自己的过去听。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-yi-feng-xie-gei-guxiang-de-xin:p8",
+    "text": "我记得夏天的傍晚,大人们把凉席铺在门口。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-yi-feng-xie-gei-guxiang-de-xin:p9",
+    "text": "我们躺在上面数星星,直到被蚊子赶回屋里。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-yi-feng-xie-gei-guxiang-de-xin:p10",
+    "text": "那时候没有空调,却好像没有那么热。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-yi-feng-xie-gei-guxiang-de-xin:p11",
+    "text": "现在我住在有二十四层的楼里。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-yi-feng-xie-gei-guxiang-de-xin:p12",
+    "text": "邻居换了三次,我一个也叫不出名字。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-yi-feng-xie-gei-guxiang-de-xin:p13",
+    "text": "去年过年我回去了一趟,只待了三天。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-yi-feng-xie-gei-guxiang-de-xin:p14",
+    "text": "村里的年轻人几乎都走了,只剩老人和小孩。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-yi-feng-xie-gei-guxiang-de-xin:p15",
+    "text": "我在老屋门口站了很久,却没有进去。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-yi-feng-xie-gei-guxiang-de-xin:p16",
+    "text": "也许我怕看见里面已经空了。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-yi-feng-xie-gei-guxiang-de-xin:p17",
+    "text": "故乡,原谅我把你留在了记忆里。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-yi-feng-xie-gei-guxiang-de-xin:p18",
+    "text": "因为只有在记忆里,你才不会变。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-suanfa-shidai-de-gudu:p0",
+    "text": "每天早晨,我做的第一件事,是打开手机。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-suanfa-shidai-de-gudu:p1",
+    "text": "算法精准地嗅出我每一种偏好。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-suanfa-shidai-de-gudu:p2",
+    "text": "它只推给我我想看的内容。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-suanfa-shidai-de-gudu:p3",
+    "text": "我渐渐意识到,自己被困在所谓\"信息茧房\"中。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-suanfa-shidai-de-gudu:p4",
+    "text": "不同的声音,被系统自动过滤掉。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-suanfa-shidai-de-gudu:p5",
+    "text": "每个人都活在自己\"完美\"的小世界。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-suanfa-shidai-de-gudu:p6",
+    "text": "然而,这种\"完美\"中,藏着前所未有的孤独。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-suanfa-shidai-de-gudu:p7",
+    "text": "也许我们缺的不是信息,而是面对陌生的勇气。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-suanfa-shidai-de-gudu:p8",
+    "text": "我做过一个实验,把推荐关掉一个星期。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-suanfa-shidai-de-gudu:p9",
+    "text": "那几天我很不习惯,像走进了陌生的城市。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-suanfa-shidai-de-gudu:p10",
+    "text": "我看到了很多我平时不会点开的东西。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-suanfa-shidai-de-gudu:p11",
+    "text": "有些让我不舒服,有些让我重新思考。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-suanfa-shidai-de-gudu:p12",
+    "text": "算法最可怕的地方,不是它骗你。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-suanfa-shidai-de-gudu:p13",
+    "text": "而是它太懂你,懂到你不再需要选择。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-suanfa-shidai-de-gudu:p14",
+    "text": "你以为那是你的口味,其实是它训练出来的。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-suanfa-shidai-de-gudu:p15",
+    "text": "我们每一次停留,每一次划过,都在教它。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-suanfa-shidai-de-gudu:p16",
+    "text": "然后它把我们教出来的东西,再喂回给我们。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-suanfa-shidai-de-gudu:p17",
+    "text": "这是一个越转越紧的圈。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-suanfa-shidai-de-gudu:p18",
+    "text": "要走出去,可能只需要一点不方便。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-lao-beijing-de-hutong:p0",
+    "text": "胡同是老北京的灵魂。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-lao-beijing-de-hutong:p1",
+    "text": "它们狭窄的石砖路承载着几百年的故事。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-lao-beijing-de-hutong:p2",
+    "text": "晾衣服的大妈,下棋的老人,追着跑的小孩。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-lao-beijing-de-hutong:p3",
+    "text": "这些平凡的画面,曾是北京最日常的面孔。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-lao-beijing-de-hutong:p4",
+    "text": "然而,随着城市扩张,胡同在不断地被拆除。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-lao-beijing-de-hutong:p5",
+    "text": "高楼代替了四合院,邻里情谊也随墙一起消失。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-lao-beijing-de-hutong:p6",
+    "text": "一些留下来的胡同,成了游客的打卡地。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-lao-beijing-de-hutong:p7",
+    "text": "可当原住民离开以后,胡同成了没有演员的舞台。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-lao-beijing-de-hutong:p8",
+    "text": "胡同这个词,据说来自蒙古语,原意是水井。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-lao-beijing-de-hutong:p9",
+    "text": "有水的地方就有人家,有人家就成了巷子。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-lao-beijing-de-hutong:p10",
+    "text": "北京最窄的胡同不到一米,两个人要侧身才能过。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-lao-beijing-de-hutong:p11",
+    "text": "每条胡同都有自己的名字,有的很土气。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-lao-beijing-de-hutong:p12",
+    "text": "比如\"炒豆胡同\"、\"狗尾巴胡同\"。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-lao-beijing-de-hutong:p13",
+    "text": "名字里藏着从前住在这里的人做什么营生。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-lao-beijing-de-hutong:p14",
+    "text": "四合院的门口常有两个石墩子。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-lao-beijing-de-hutong:p15",
+    "text": "老人说,看门墩就知道这家从前是文官还是武官。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-lao-beijing-de-hutong:p16",
+    "text": "冬天的胡同里,煤炉的烟从屋顶慢慢升起来。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-lao-beijing-de-hutong:p17",
+    "text": "那种味道,现在的孩子已经闻不到了。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-su-dongpo-yu-huangzhou:p0",
+    "text": "公元一零八零年,苏轼被贬到黄州。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-su-dongpo-yu-huangzhou:p1",
+    "text": "他人生陷入低谷,被诬陷诽谤朝廷。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-su-dongpo-yu-huangzhou:p2",
+    "text": "在黄州,他缺衣少食,亲自耕种一块坡地。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-su-dongpo-yu-huangzhou:p3",
+    "text": "他把那块地取名\"东坡\",自号\"东坡居士\"。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-su-dongpo-yu-huangzhou:p4",
+    "text": "正是这段时间,他写出了他最伟大的作品。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-su-dongpo-yu-huangzhou:p5",
+    "text": "《赤壁怀古》就是在这时完成的。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-su-dongpo-yu-huangzhou:p6",
+    "text": "他不再哀叹命运的不公,反而学会了对命运微笑。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-su-dongpo-yu-huangzhou:p7",
+    "text": "黄州毁掉了政治家苏轼,却成就了文学家东坡。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-su-dongpo-yu-huangzhou:p8",
+    "text": "到黄州的第二年,他在城东开了五十亩荒地。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-su-dongpo-yu-huangzhou:p9",
+    "text": "他写信给朋友说,自己现在是个农夫了。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-su-dongpo-yu-huangzhou:p10",
+    "text": "他还发明了一道菜,用小火慢慢炖猪肉。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-su-dongpo-yu-huangzhou:p11",
+    "text": "那道菜后来就叫东坡肉,一直传到今天。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-su-dongpo-yu-huangzhou:p12",
+    "text": "一个被贬的官员,教会了中国人怎么吃肉。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-su-dongpo-yu-huangzhou:p13",
+    "text": "他在黄州写的《寒食帖》,被称为天下第三行书。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-su-dongpo-yu-huangzhou:p14",
+    "text": "那幅字里,能看出他写的时候心情起伏。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-su-dongpo-yu-huangzhou:p15",
+    "text": "有一次他和朋友夜游赤壁,忽然想通了。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-su-dongpo-yu-huangzhou:p16",
+    "text": "他说,江上的清风和山间的明月,是取之不尽的。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-su-dongpo-yu-huangzhou:p17",
+    "text": "那是造物者留给所有人的,不用花一分钱。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-gugong-de-hong-qiang:p0",
+    "text": "故宫的红墙黄瓦,可算是皇家建筑的缩影。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-gugong-de-hong-qiang:p1",
+    "text": "红色代表权威与尊贵,黄色象征皇权。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-gugong-de-hong-qiang:p2",
+    "text": "我曾在初冬的清晨站在这些高墙下。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-gugong-de-hong-qiang:p3",
+    "text": "阳光缓缓地在墙上移动,像一场无声的潮水。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-gugong-de-hong-qiang:p4",
+    "text": "乌鸦从金顶上飞过,留下几声尖锐的鸣叫。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-gugong-de-hong-qiang:p5",
+    "text": "王朝的主人早已在这里化为尘土。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-gugong-de-hong-qiang:p6",
+    "text": "但红墙依然挺立,见证着时光缓慢的流动。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-gugong-de-hong-qiang:p7",
+    "text": "走出宫门,我忽然感到一种人间的安静。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-gugong-de-hong-qiang:p8",
+    "text": "故宫有九千多间房子,走完要好几天。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-gugong-de-hong-qiang:p9",
+    "text": "从前住在这里的人,一辈子也见不到皇帝几次。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-gugong-de-hong-qiang:p10",
+    "text": "宫女进宫的时候大多十三四岁。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-gugong-de-hong-qiang:p11",
+    "text": "她们中的很多人,再也没有走出过这道门。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-gugong-de-hong-qiang:p12",
+    "text": "红墙的颜色其实每隔几年就要重新刷一次。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-gugong-de-hong-qiang:p13",
+    "text": "工匠说,那种红要用矿石磨成粉,再一层层上。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-gugong-de-hong-qiang:p14",
+    "text": "太阳晒久了会褪色,雨水也会带走一些。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-gugong-de-hong-qiang:p15",
+    "text": "所以我们看到的红,是一代代人不断补上去的。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-gugong-de-hong-qiang:p16",
+    "text": "建筑不会自己活下来,是有人一直在照顾它。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-gugong-de-hong-qiang:p17",
+    "text": "这大概也是一种记忆的方式。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-lu-xun-de-nahan:p0",
+    "text": "鲁迅被普遍视为中国现代文学的奠基人。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-lu-xun-de-nahan:p1",
+    "text": "他原本赴日学医,希望治病救人。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-lu-xun-de-nahan:p2",
+    "text": "但他后来认为,更致命的病,是中国人的精神。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-lu-xun-de-nahan:p3",
+    "text": "于是他弃医从文,以笔为刀,剖开国人的麻木。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-lu-xun-de-nahan:p4",
+    "text": "《狂人日记》、《阿Q正传》是他的代表作品。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-lu-xun-de-nahan:p5",
+    "text": "他看到礼教中\"吃人\"的本质。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-lu-xun-de-nahan:p6",
+    "text": "他的文字犀利,心中却怀有无限的温情。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-lu-xun-de-nahan:p7",
+    "text": "他曾经说:\"世上本没有路,走的人多了,也便成了路。\"",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-lu-xun-de-nahan:p8",
+    "text": "他在日本看过一张幻灯片。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-lu-xun-de-nahan:p9",
+    "text": "片子里,一个中国人要被砍头,旁边围着一群中国人看热闹。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-lu-xun-de-nahan:p10",
+    "text": "那些看客的表情麻木而好奇。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-lu-xun-de-nahan:p11",
+    "text": "他后来说,那一刻他决定不再学医。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-lu-xun-de-nahan:p12",
+    "text": "身体再好也没有用,如果精神是麻木的。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-lu-xun-de-nahan:p13",
+    "text": "《狂人日记》是中国第一篇白话小说。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-lu-xun-de-nahan:p14",
+    "text": "那个\"狂人\"翻开历史书,满本都写着\"仁义道德\"。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-lu-xun-de-nahan:p15",
+    "text": "可是他仔细看,字缝里却全是\"吃人\"两个字。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-lu-xun-de-nahan:p16",
+    "text": "鲁迅一生都在骂,却也一生都在帮年轻人。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-lu-xun-de-nahan:p17",
+    "text": "他常常自己掏钱,给学生印书。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-lu-xun-de-nahan:p18",
+    "text": "他去世的时候,棺材上盖着三个字:民族魂。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-cha-ma-gudao:p0",
+    "text": "茶马古道是中国西南与西藏之间最古老的山间贸易通道之一。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-cha-ma-gudao:p1",
+    "text": "始于唐宋年间,商队沿着这条古道以茶换马。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-cha-ma-gudao:p2",
+    "text": "路线穿越高山大江,是世界上最凶险的商道之一。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-cha-ma-gudao:p3",
+    "text": "马帮在路上一走就是几个月。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-cha-ma-gudao:p4",
+    "text": "头马的铃铛日夜作响。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-cha-ma-gudao:p5",
+    "text": "他们把茶叶、盐和丝绸运进藏区。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-cha-ma-gudao:p6",
+    "text": "回程时则运回马匹、皮毛与藏药。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-cha-ma-gudao:p7",
+    "text": "它如今已无人行走,但那些山道仍在,风也在。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-cha-ma-gudao:p8",
+    "text": "谁走过一次,都会听见一首从过去传来的沉郁长歌。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-cha-ma-gudao:p9",
+    "text": "马帮的队伍里,每个人都有自己的位置。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-cha-ma-gudao:p10",
+    "text": "走在最前面的叫锅头,他决定今天走到哪里。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-cha-ma-gudao:p11",
+    "text": "路窄的地方,一边是山壁,一边是几百米的深谷。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-cha-ma-gudao:p12",
+    "text": "马失前蹄的事,每年都会发生几次。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-cha-ma-gudao:p13",
+    "text": "他们在山里睡觉,把马围成一圈挡风。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-cha-ma-gudao:p14",
+    "text": "到了藏区,一块砖茶可以换一匹好马。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-cha-ma-gudao:p15",
+    "text": "茶在高原上不是饮料,而是必需品。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-cha-ma-gudao:p16",
+    "text": "那里蔬菜很少,茶能补充身体需要的东西。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-cha-ma-gudao:p17",
+    "text": "二十世纪五十年代,公路修通了。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-cha-ma-gudao:p18",
+    "text": "铃铛声停了,可是路还在山上,一圈一圈地绕。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-san-xia:p0",
+    "text": "长江从青藏高原奔流而下,在西陵、巫峡、瞿塘之间被群山紧紧夹住。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-san-xia:p1",
+    "text": "那一段两百公里的水路,古人称之为三峡。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-san-xia:p2",
+    "text": "两岸的悬崖高得几乎看不见天,江水在中间挤出一条窄窄的路。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-san-xia:p3",
+    "text": "一千五百年前,郦道元在《水经注》里写下\"重岩叠嶂,隐天蔽日\"。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-san-xia:p4",
+    "text": "唐朝的李白也曾在这里留下\"两岸猿声啼不住,轻舟已过万重山\"。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-san-xia:p5",
+    "text": "那是被赦免以后顺流而下的快意,一日千里。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-san-xia:p6",
+    "text": "千百年来,三峡既是绝景,也是险途。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-san-xia:p7",
+    "text": "江面上常有沉船的传说,纤夫赤着脚在岩壁上拉船前行。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-san-xia:p8",
+    "text": "二十世纪末,一座巨大的水坝在这里开始修建。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-san-xia:p9",
+    "text": "它带来了世界上最大的水电站,也带来了防洪的能力。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-san-xia:p10",
+    "text": "但水位上升了一百多米,淹没了上千个村庄和城镇。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-san-xia:p11",
+    "text": "一百多万人离开了祖祖辈辈生活的土地。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-san-xia:p12",
+    "text": "有些古迹被整体搬到了高处,有些永远沉在了水下。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-san-xia:p13",
+    "text": "今天的游船平稳地驶过,乘客举着手机拍照。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-san-xia:p14",
+    "text": "江面比从前宽阔,也比从前安静。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-san-xia:p15",
+    "text": "那些猿声早已听不见了,只有山还站在原来的地方。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-ershisi-jieqi:p0",
+    "text": "在钟表和日历出现以前,中国人用二十四个节气来分辨时间。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-ershisi-jieqi:p1",
+    "text": "它们把一年切成二十四段,每一段大约十五天。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-ershisi-jieqi:p2",
+    "text": "这些名字本身就像诗:立春、惊蛰、清明、芒种、霜降、大寒。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-ershisi-jieqi:p3",
+    "text": "惊蛰的意思是,春雷响了,冬眠的虫子被惊醒。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-ershisi-jieqi:p4",
+    "text": "清明前后,种瓜点豆,农民知道该下地了。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-ershisi-jieqi:p5",
+    "text": "芒种是最忙的时候,要收麦子,又要插秧。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-ershisi-jieqi:p6",
+    "text": "霜降之后,天气转冷,树叶开始落下。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-ershisi-jieqi:p7",
+    "text": "每一个节气都对应着天上的位置和地上的农事。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-ershisi-jieqi:p8",
+    "text": "古人没有精密的仪器,靠的是一代代的观察和记忆。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-ershisi-jieqi:p9",
+    "text": "他们把太阳走过的路,变成了可以背诵的句子。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-ershisi-jieqi:p10",
+    "text": "今天大多数人不再种地,节气似乎离生活远了。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-ershisi-jieqi:p11",
+    "text": "可是每到冬至,北方人还是会包饺子。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-ershisi-jieqi:p12",
+    "text": "每到清明,人们仍旧会去给祖先扫墓。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-ershisi-jieqi:p13",
+    "text": "天气预报比节气准确得多,但节气里有别的东西。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-ershisi-jieqi:p14",
+    "text": "它提醒我们,时间不是数字,而是风、雨和光的变化。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-ershisi-jieqi:p15",
+    "text": "二零一六年,二十四节气被列入了世界非物质文化遗产。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-li-bai-yu-yueliang:p0",
+    "text": "在中国的诗人里,没有谁比李白更爱月亮。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-li-bai-yu-yueliang:p1",
+    "text": "据说他的一生写了上千首诗,其中提到月亮的有三百多处。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-li-bai-yu-yueliang:p2",
+    "text": "月亮是他的酒伴,也是他的镜子。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-li-bai-yu-yueliang:p3",
+    "text": "最有名的那首只有二十个字,几乎每个中国孩子都会背。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-li-bai-yu-yueliang:p4",
+    "text": "\"床前明月光,疑是地上霜。举头望明月,低头思故乡。\"",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-li-bai-yu-yueliang:p5",
+    "text": "语言简单得像说话,却写尽了所有游子的心情。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-li-bai-yu-yueliang:p6",
+    "text": "他一生都在路上,很少停下来。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-li-bai-yu-yueliang:p7",
+    "text": "他去过长安,做过皇帝身边的官,也很快就被赶了出来。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-li-bai-yu-yueliang:p8",
+    "text": "他不适合官场,正如官场不适合他。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-li-bai-yu-yueliang:p9",
+    "text": "于是他继续漫游,喝酒,写诗,交朋友。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-li-bai-yu-yueliang:p10",
+    "text": "有一首诗里,他一个人在花间喝酒,便邀请月亮来陪。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-li-bai-yu-yueliang:p11",
+    "text": "\"举杯邀明月,对影成三人。\"",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-li-bai-yu-yueliang:p12",
+    "text": "孤独到极点的时候,他把孤独写成了热闹。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-li-bai-yu-yueliang:p13",
+    "text": "传说他最后是在水中捞月时淹死的。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-li-bai-yu-yueliang:p14",
+    "text": "这个故事多半不是真的,但人们愿意相信。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-li-bai-yu-yueliang:p15",
+    "text": "因为对李白来说,为了月亮而死,似乎是最合适的结局。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-chunyun:p0",
+    "text": "每年农历新年之前,中国会发生一场人类历史上规模最大的迁徙。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-chunyun:p1",
+    "text": "这场迁徙有一个专门的名字,叫春运。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-chunyun:p2",
+    "text": "在四十天里,几十亿人次要在这片土地上移动。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-chunyun:p3",
+    "text": "他们大多是离开家乡去外地工作的人。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-chunyun:p4",
+    "text": "一年到头,只有这个时候能回去看看父母和孩子。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-chunyun:p5",
+    "text": "从前买票要在售票窗口排一整夜的队。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-chunyun:p6",
+    "text": "人们带着被子和小板凳,在寒风里守着位置。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-chunyun:p7",
+    "text": "现在抢票在手机上进行,可是那种紧张一点也没有减少。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-chunyun:p8",
+    "text": "放票的那一刻,几百万人同时点下同一个按钮。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-chunyun:p9",
+    "text": "火车站的候车厅里,行李堆得像小山。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-chunyun:p10",
+    "text": "有人扛着一整箱特产,有人抱着睡着的孩子。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-chunyun:p11",
+    "text": "也有人骑着摩托车,走上千公里的国道回家。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-chunyun:p12",
+    "text": "他们把这叫做\"摩托大军\",风吹了几天几夜。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-chunyun:p13",
+    "text": "支撑着这一切的,其实只是一顿年夜饭。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-chunyun:p14",
+    "text": "车到站的时候,母亲往往已经在出站口等了很久。",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk"
+  },
+  {
+    "key": "reading:r-chunyun:p15",
+    "text": "那一刻,所有的辛苦都变得可以承受。",
     "locale": "zh-CN",
     "language": "zh",
     "examSource": "hsk"

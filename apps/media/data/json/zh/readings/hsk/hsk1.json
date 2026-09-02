@@ -681,5 +681,1745 @@
       "sheng",
       "。"
     ]
+  },
+  {
+    "id": "r-xiao-niao-he-shui",
+    "title": "小鸟喝水 — The Thirsty Bird",
+    "type": "story",
+    "hsk": 1,
+    "wordCount": 92,
+    "summary": "A classic Chinese fable — a clever bird solves a problem.",
+    "paragraphs": [
+      {
+        "hanzi": "一只小鸟很渴。",
+        "pinyin": "yì zhī xiǎo niǎo hěn kě",
+        "zhuyin": "ㄧˋ ㄓ ㄒㄧㄠˇ ㄋㄧㄠˇ ㄏㄣˇ ㄎㄜˇ",
+        "text": "一只小鸟很渴。",
+        "romanization": "yì zhī xiǎo niǎo hěn kě",
+        "translation": "A little bird was very thirsty.",
+        "translation_en": "A little bird was very thirsty.",
+        "translation_id": "A little bird was very thirsty."
+      },
+      {
+        "hanzi": "它想喝水。",
+        "pinyin": "tā xiǎng hē shuǐ",
+        "zhuyin": "ㄊㄚ ㄒㄧㄤˇ ㄏㄜ ㄕㄨㄟˇ",
+        "text": "它想喝水。",
+        "romanization": "tā xiǎng hē shuǐ",
+        "translation": "It wanted to drink water.",
+        "translation_en": "It wanted to drink water.",
+        "translation_id": "It wanted to drink water."
+      },
+      {
+        "hanzi": "它看到一个瓶子。",
+        "pinyin": "tā kàndào yí ge píngzi",
+        "zhuyin": "ㄊㄚ ㄎㄢˋ ㄉㄠˋ ㄧˊ ㄍㄜ˙ ㄆㄧㄥˊ ㄗ˙",
+        "text": "它看到一个瓶子。",
+        "romanization": "tā kàndào yí ge píngzi",
+        "translation": "It saw a bottle.",
+        "translation_en": "It saw a bottle.",
+        "translation_id": "It saw a bottle."
+      },
+      {
+        "hanzi": "瓶子里有水,可是水很少。",
+        "pinyin": "píngzi lǐ yǒu shuǐ kěshì shuǐ hěn shǎo",
+        "zhuyin": "ㄆㄧㄥˊ ㄗ˙ ㄌㄧˇ ㄧㄡˇ ㄕㄨㄟˇ ㄎㄜˇ ㄕˋ ㄕㄨㄟˇ ㄏㄣˇ ㄕㄠˇ",
+        "text": "瓶子里有水,可是水很少。",
+        "romanization": "píngzi lǐ yǒu shuǐ kěshì shuǐ hěn shǎo",
+        "translation": "There was water in the bottle, but very little.",
+        "translation_en": "There was water in the bottle, but very little.",
+        "translation_id": "There was water in the bottle, but very little."
+      },
+      {
+        "hanzi": "小鸟喝不到水。",
+        "pinyin": "xiǎo niǎo hē bú dào shuǐ",
+        "zhuyin": "ㄒㄧㄠˇ ㄋㄧㄠˇ ㄏㄜ ㄅㄨˊ ㄉㄠˋ ㄕㄨㄟˇ",
+        "text": "小鸟喝不到水。",
+        "romanization": "xiǎo niǎo hē bú dào shuǐ",
+        "translation": "The bird could not reach the water.",
+        "translation_en": "The bird could not reach the water.",
+        "translation_id": "The bird could not reach the water."
+      },
+      {
+        "hanzi": "它想了想,看到旁边有小石头。",
+        "pinyin": "tā xiǎng le xiǎng kàndào pángbiān yǒu xiǎo shítou",
+        "zhuyin": "ㄊㄚ ㄒㄧㄤˇ ㄌㄜ˙ ㄒㄧㄤˇ ㄎㄢˋ ㄉㄠˋ ㄆㄤˊ ㄅㄧㄢ ㄧㄡˇ ㄒㄧㄠˇ ㄕˊ ㄊㄡ˙",
+        "text": "它想了想,看到旁边有小石头。",
+        "romanization": "tā xiǎng le xiǎng kàndào pángbiān yǒu xiǎo shítou",
+        "translation": "It thought, and saw small stones nearby.",
+        "translation_en": "It thought, and saw small stones nearby.",
+        "translation_id": "It thought, and saw small stones nearby."
+      },
+      {
+        "hanzi": "小鸟把石头一个一个放进瓶子里。",
+        "pinyin": "xiǎo niǎo bǎ shítou yí ge yí ge fàngjìn píngzi lǐ",
+        "zhuyin": "ㄒㄧㄠˇ ㄋㄧㄠˇ ㄅㄚˇ ㄕˊ ㄊㄡ˙ ㄧˊ ㄍㄜ˙ ㄧˊ ㄍㄜ˙ ㄈㄤˋ ㄐㄧㄣˋ ㄆㄧㄥˊ ㄗ˙ ㄌㄧˇ",
+        "text": "小鸟把石头一个一个放进瓶子里。",
+        "romanization": "xiǎo niǎo bǎ shítou yí ge yí ge fàngjìn píngzi lǐ",
+        "translation": "The bird dropped the stones into the bottle, one by one.",
+        "translation_en": "The bird dropped the stones into the bottle, one by one.",
+        "translation_id": "The bird dropped the stones into the bottle, one by one."
+      },
+      {
+        "hanzi": "水慢慢升上来了。",
+        "pinyin": "shuǐ mànmàn shēng shànglai le",
+        "zhuyin": "ㄕㄨㄟˇ ㄇㄢˋ ㄇㄢˋ ㄕㄥ ㄕㄤˋ ㄌㄞ˙ ㄌㄜ˙",
+        "text": "水慢慢升上来了。",
+        "romanization": "shuǐ mànmàn shēng shànglai le",
+        "translation": "The water slowly rose up.",
+        "translation_en": "The water slowly rose up.",
+        "translation_id": "The water slowly rose up."
+      },
+      {
+        "hanzi": "最后,小鸟喝到了水。",
+        "pinyin": "zuìhòu xiǎo niǎo hēdào le shuǐ",
+        "zhuyin": "ㄗㄨㄟˋ ㄏㄡˋ ㄒㄧㄠˇ ㄋㄧㄠˇ ㄏㄜ ㄉㄠˋ ㄌㄜ˙ ㄕㄨㄟˇ",
+        "text": "最后,小鸟喝到了水。",
+        "romanization": "zuìhòu xiǎo niǎo hēdào le shuǐ",
+        "translation": "At last, the bird drank the water.",
+        "translation_en": "At last, the bird drank the water.",
+        "translation_id": "At last, the bird drank the water."
+      },
+      {
+        "hanzi": "小鸟真聪明!",
+        "pinyin": "xiǎo niǎo zhēn cōngmíng",
+        "zhuyin": "ㄒㄧㄠˇ ㄋㄧㄠˇ ㄓㄣ ㄘㄨㄥ ㄇㄧㄥˊ",
+        "text": "小鸟真聪明!",
+        "romanization": "xiǎo niǎo zhēn cōngmíng",
+        "translation": "The bird is very clever!",
+        "translation_en": "The bird is very clever!",
+        "translation_id": "The bird is very clever!"
+      }
+    ]
+  },
+  {
+    "id": "r-da-xiongmao",
+    "title": "大熊猫 — Giant Pandas",
+    "type": "story",
+    "hsk": 1,
+    "wordCount": 98,
+    "summary": "Simple facts about China's most famous animal.",
+    "paragraphs": [
+      {
+        "hanzi": "大熊猫是中国的国宝。",
+        "pinyin": "dà xióngmāo shì Zhōngguó de guóbǎo",
+        "zhuyin": "ㄉㄚˋ ㄒㄩㄥˊ ㄇㄠ ㄕˋ ㄓㄨㄥ ㄍㄨㄛˊ ㄉㄜ˙ ㄍㄨㄛˊ ㄅㄠˇ",
+        "text": "大熊猫是中国的国宝。",
+        "romanization": "dà xióngmāo shì Zhōngguó de guóbǎo",
+        "translation": "The giant panda is China's national treasure.",
+        "translation_en": "The giant panda is China's national treasure.",
+        "translation_id": "The giant panda is China's national treasure."
+      },
+      {
+        "hanzi": "熊猫住在中国西南的山里。",
+        "pinyin": "xióngmāo zhù zài Zhōngguó xīnán de shān lǐ",
+        "zhuyin": "ㄒㄩㄥˊ ㄇㄠ ㄓㄨˋ ㄗㄞˋ ㄓㄨㄥ ㄍㄨㄛˊ ㄒㄧ ㄋㄢˊ ㄉㄜ˙ ㄕㄢ ㄌㄧˇ",
+        "text": "熊猫住在中国西南的山里。",
+        "romanization": "xióngmāo zhù zài Zhōngguó xīnán de shān lǐ",
+        "translation": "Pandas live in the mountains of southwestern China.",
+        "translation_en": "Pandas live in the mountains of southwestern China.",
+        "translation_id": "Pandas live in the mountains of southwestern China."
+      },
+      {
+        "hanzi": "它们有黑白的毛。",
+        "pinyin": "tāmen yǒu hēibái de máo",
+        "zhuyin": "ㄊㄚ ㄇㄣ˙ ㄧㄡˇ ㄏㄟ ㄅㄞˊ ㄉㄜ˙ ㄇㄠˊ",
+        "text": "它们有黑白的毛。",
+        "romanization": "tāmen yǒu hēibái de máo",
+        "translation": "They have black and white fur.",
+        "translation_en": "They have black and white fur.",
+        "translation_id": "They have black and white fur."
+      },
+      {
+        "hanzi": "熊猫最喜欢吃竹子。",
+        "pinyin": "xióngmāo zuì xǐhuan chī zhúzi",
+        "zhuyin": "ㄒㄩㄥˊ ㄇㄠ ㄗㄨㄟˋ ㄒㄧˇ ㄏㄨㄢ˙ ㄔ ㄓㄨˊ ㄗ˙",
+        "text": "熊猫最喜欢吃竹子。",
+        "romanization": "xióngmāo zuì xǐhuan chī zhúzi",
+        "translation": "Pandas love eating bamboo.",
+        "translation_en": "Pandas love eating bamboo.",
+        "translation_id": "Pandas love eating bamboo."
+      },
+      {
+        "hanzi": "它们每天吃十几个小时的竹子。",
+        "pinyin": "tāmen měi tiān chī shí jǐ ge xiǎoshí de zhúzi",
+        "zhuyin": "ㄊㄚ ㄇㄣ˙ ㄇㄟˇ ㄊㄧㄢ ㄔ ㄕˊ ㄐㄧˇ ㄍㄜ˙ ㄒㄧㄠˇ ㄕˊ ㄉㄜ˙ ㄓㄨˊ ㄗ˙",
+        "text": "它们每天吃十几个小时的竹子。",
+        "romanization": "tāmen měi tiān chī shí jǐ ge xiǎoshí de zhúzi",
+        "translation": "They eat bamboo for over ten hours every day.",
+        "translation_en": "They eat bamboo for over ten hours every day.",
+        "translation_id": "They eat bamboo for over ten hours every day."
+      },
+      {
+        "hanzi": "早上它们睡觉,下午爬树。",
+        "pinyin": "zǎoshang tāmen shuìjiào xiàwǔ pá shù",
+        "zhuyin": "ㄗㄠˇ ㄕㄤ˙ ㄊㄚ ㄇㄣ˙ ㄕㄨㄟˋ ㄐㄧㄠˋ ㄒㄧㄚˋ ㄨˇ ㄆㄚˊ ㄕㄨˋ",
+        "text": "早上它们睡觉,下午爬树。",
+        "romanization": "zǎoshang tāmen shuìjiào xiàwǔ pá shù",
+        "translation": "In the morning they sleep; in the afternoon they climb trees.",
+        "translation_en": "In the morning they sleep; in the afternoon they climb trees.",
+        "translation_id": "In the morning they sleep; in the afternoon they climb trees."
+      },
+      {
+        "hanzi": "小熊猫刚生的时候是粉色的。",
+        "pinyin": "xiǎo xióngmāo gāng shēng de shíhou shì fěnsè de",
+        "zhuyin": "ㄒㄧㄠˇ ㄒㄩㄥˊ ㄇㄠ ㄍㄤ ㄕㄥ ㄉㄜ˙ ㄕˊ ㄏㄡ˙ ㄕˋ ㄈㄣˇ ㄙㄜˋ ㄉㄜ˙",
+        "text": "小熊猫刚生的时候是粉色的。",
+        "romanization": "xiǎo xióngmāo gāng shēng de shíhou shì fěnsè de",
+        "translation": "Baby pandas are pink at first.",
+        "translation_en": "Baby pandas are pink at first.",
+        "translation_id": "Baby pandas are pink at first."
+      },
+      {
+        "hanzi": "很多游客从世界各地来看它们。",
+        "pinyin": "hěn duō yóukè cóng shìjiè gèdì lái kàn tāmen",
+        "zhuyin": "ㄏㄣˇ ㄉㄨㄛ ㄧㄡˊ ㄎㄜˋ ㄘㄨㄥˊ ㄕˋ ㄐㄧㄝˋ ㄍㄜˋ ㄉㄧˋ ㄌㄞˊ ㄎㄢˋ ㄊㄚ ㄇㄣ˙",
+        "text": "很多游客从世界各地来看它们。",
+        "romanization": "hěn duō yóukè cóng shìjiè gèdì lái kàn tāmen",
+        "translation": "Many tourists come from all over the world to see them.",
+        "translation_en": "Many tourists come from all over the world to see them.",
+        "translation_id": "Many tourists come from all over the world to see them."
+      },
+      {
+        "hanzi": "熊猫真可爱!",
+        "pinyin": "xióngmāo zhēn kě'ài",
+        "zhuyin": "ㄒㄩㄥˊ ㄇㄠ ㄓㄣ ㄎㄜˇ ㄞˋ",
+        "text": "熊猫真可爱!",
+        "romanization": "xióngmāo zhēn kě'ài",
+        "translation": "Pandas are really cute.",
+        "translation_en": "Pandas are really cute.",
+        "translation_id": "Pandas are really cute."
+      }
+    ]
+  },
+  {
+    "id": "r-ni-hao",
+    "title": "你好 — Hello",
+    "type": "story",
+    "hsk": 1,
+    "wordCount": 34,
+    "summary": "A simple introduction between two people.",
+    "paragraphs": [
+      {
+        "hanzi": "你好!",
+        "pinyin": "nǐ hǎo",
+        "zhuyin": "ㄋㄧˇ ㄏㄠˇ",
+        "text": "你好!",
+        "romanization": "nǐ hǎo",
+        "translation": "Hello!",
+        "translation_en": "Hello!",
+        "translation_id": "Hello!"
+      },
+      {
+        "hanzi": "我是李明。",
+        "pinyin": "wǒ shì Lǐ Míng",
+        "zhuyin": "ㄨㄛˇ ㄕˋ ㄌㄧˇ ㄇㄧㄥˊ",
+        "text": "我是李明。",
+        "romanization": "wǒ shì Lǐ Míng",
+        "translation": "I am Li Ming.",
+        "translation_en": "I am Li Ming.",
+        "translation_id": "I am Li Ming."
+      },
+      {
+        "hanzi": "我是中国人。",
+        "pinyin": "wǒ shì Zhōngguórén",
+        "zhuyin": "ㄨㄛˇ ㄕˋ ㄓㄨㄥ ㄍㄨㄛˊ ㄖㄣˊ",
+        "text": "我是中国人。",
+        "romanization": "wǒ shì Zhōngguórén",
+        "translation": "I am Chinese.",
+        "translation_en": "I am Chinese.",
+        "translation_id": "I am Chinese."
+      },
+      {
+        "hanzi": "你叫什么名字?",
+        "pinyin": "nǐ jiào shénme míngzi",
+        "zhuyin": "ㄋㄧˇ ㄐㄧㄠˋ ㄕㄣˊ ㄇㄜ˙ ㄇㄧㄥˊ ㄗ˙",
+        "text": "你叫什么名字?",
+        "romanization": "nǐ jiào shénme míngzi",
+        "translation": "What is your name?",
+        "translation_en": "What is your name?",
+        "translation_id": "What is your name?"
+      },
+      {
+        "hanzi": "我叫王小文。",
+        "pinyin": "wǒ jiào Wáng Xiǎowén",
+        "zhuyin": "ㄨㄛˇ ㄐㄧㄠˋ ㄨㄤˊ ㄒㄧㄠˇ ㄨㄣˊ",
+        "text": "我叫王小文。",
+        "romanization": "wǒ jiào Wáng Xiǎowén",
+        "translation": "My name is Wang Xiaowen.",
+        "translation_en": "My name is Wang Xiaowen.",
+        "translation_id": "My name is Wang Xiaowen."
+      },
+      {
+        "hanzi": "很高兴认识你。",
+        "pinyin": "hěn gāoxìng rènshi nǐ",
+        "zhuyin": "ㄏㄣˇ ㄍㄠ ㄒㄧㄥˋ ㄖㄣˋ ㄕ˙ ㄋㄧˇ",
+        "text": "很高兴认识你。",
+        "romanization": "hěn gāoxìng rènshi nǐ",
+        "translation": "Nice to meet you.",
+        "translation_en": "Nice to meet you.",
+        "translation_id": "Nice to meet you."
+      }
+    ]
+  },
+  {
+    "id": "r-chi-fan",
+    "title": "吃饭 — Eating",
+    "type": "story",
+    "hsk": 1,
+    "wordCount": 36,
+    "summary": "Talking about favorite foods.",
+    "paragraphs": [
+      {
+        "hanzi": "我饿了。",
+        "pinyin": "wǒ è le",
+        "zhuyin": "ㄨㄛˇ ㄜˋ ㄌㄜ˙",
+        "text": "我饿了。",
+        "romanization": "wǒ è le",
+        "translation": "I am hungry.",
+        "translation_en": "I am hungry.",
+        "translation_id": "I am hungry."
+      },
+      {
+        "hanzi": "我想吃饭。",
+        "pinyin": "wǒ xiǎng chī fàn",
+        "zhuyin": "ㄨㄛˇ ㄒㄧㄤˇ ㄔ ㄈㄢˋ",
+        "text": "我想吃饭。",
+        "romanization": "wǒ xiǎng chī fàn",
+        "translation": "I want to eat.",
+        "translation_en": "I want to eat.",
+        "translation_id": "I want to eat."
+      },
+      {
+        "hanzi": "我喜欢吃米饭。",
+        "pinyin": "wǒ xǐhuan chī mǐfàn",
+        "zhuyin": "ㄨㄛˇ ㄒㄧˇ ㄏㄨㄢ˙ ㄔ ㄇㄧˇ ㄈㄢˋ",
+        "text": "我喜欢吃米饭。",
+        "romanization": "wǒ xǐhuan chī mǐfàn",
+        "translation": "I like to eat rice.",
+        "translation_en": "I like to eat rice.",
+        "translation_id": "I like to eat rice."
+      },
+      {
+        "hanzi": "我也喜欢面条。",
+        "pinyin": "wǒ yě xǐhuan miàntiáo",
+        "zhuyin": "ㄨㄛˇ ㄧㄝˇ ㄒㄧˇ ㄏㄨㄢ˙ ㄇㄧㄢˋ ㄊㄧㄠˊ",
+        "text": "我也喜欢面条。",
+        "romanization": "wǒ yě xǐhuan miàntiáo",
+        "translation": "I also like noodles.",
+        "translation_en": "I also like noodles.",
+        "translation_id": "I also like noodles."
+      },
+      {
+        "hanzi": "妈妈做饭很好吃。",
+        "pinyin": "māma zuò fàn hěn hǎochī",
+        "zhuyin": "ㄇㄚ ㄇㄚ˙ ㄗㄨㄛˋ ㄈㄢˋ ㄏㄣˇ ㄏㄠˇ ㄔ",
+        "text": "妈妈做饭很好吃。",
+        "romanization": "māma zuò fàn hěn hǎochī",
+        "translation": "Mom's cooking is delicious.",
+        "translation_en": "Mom's cooking is delicious.",
+        "translation_id": "Mom's cooking is delicious."
+      },
+      {
+        "hanzi": "谢谢妈妈!",
+        "pinyin": "xièxie māma",
+        "zhuyin": "ㄒㄧㄝˋ ㄒㄧㄝ˙ ㄇㄚ ㄇㄚ˙",
+        "text": "谢谢妈妈!",
+        "romanization": "xièxie māma",
+        "translation": "Thank you, Mom!",
+        "translation_en": "Thank you, Mom!",
+        "translation_id": "Thank you, Mom!"
+      }
+    ]
+  },
+  {
+    "id": "r-mai-dongxi",
+    "title": "买东西 — Shopping",
+    "type": "story",
+    "hsk": 1,
+    "wordCount": 36,
+    "summary": "Buying fruit at the store.",
+    "paragraphs": [
+      {
+        "hanzi": "今天我去商店。",
+        "pinyin": "jīntiān wǒ qù shāngdiàn",
+        "zhuyin": "ㄐㄧㄣ ㄊㄧㄢ ㄨㄛˇ ㄑㄩˋ ㄕㄤ ㄉㄧㄢˋ",
+        "text": "今天我去商店。",
+        "romanization": "jīntiān wǒ qù shāngdiàn",
+        "translation": "Today I'm going to the store.",
+        "translation_en": "Today I'm going to the store.",
+        "translation_id": "Today I'm going to the store."
+      },
+      {
+        "hanzi": "我要买苹果。",
+        "pinyin": "wǒ yào mǎi píngguǒ",
+        "zhuyin": "ㄨㄛˇ ㄧㄠˋ ㄇㄞˇ ㄆㄧㄥˊ ㄍㄨㄛˇ",
+        "text": "我要买苹果。",
+        "romanization": "wǒ yào mǎi píngguǒ",
+        "translation": "I want to buy apples.",
+        "translation_en": "I want to buy apples.",
+        "translation_id": "I want to buy apples."
+      },
+      {
+        "hanzi": "苹果多少钱?",
+        "pinyin": "píngguǒ duōshao qián",
+        "zhuyin": "ㄆㄧㄥˊ ㄍㄨㄛˇ ㄉㄨㄛ ㄕㄠ˙ ㄑㄧㄢˊ",
+        "text": "苹果多少钱?",
+        "romanization": "píngguǒ duōshao qián",
+        "translation": "How much are the apples?",
+        "translation_en": "How much are the apples?",
+        "translation_id": "How much are the apples?"
+      },
+      {
+        "hanzi": "五块钱一斤。",
+        "pinyin": "wǔ kuài qián yī jīn",
+        "zhuyin": "ㄨˇ ㄎㄨㄞˋ ㄑㄧㄢˊ ㄧ ㄐㄧㄣ",
+        "text": "五块钱一斤。",
+        "romanization": "wǔ kuài qián yī jīn",
+        "translation": "Five yuan per jin (500g).",
+        "translation_en": "Five yuan per jin (500g).",
+        "translation_id": "Five yuan per jin (500g)."
+      },
+      {
+        "hanzi": "我买两斤。",
+        "pinyin": "wǒ mǎi liǎng jīn",
+        "zhuyin": "ㄨㄛˇ ㄇㄞˇ ㄌㄧㄤˇ ㄐㄧㄣ",
+        "text": "我买两斤。",
+        "romanization": "wǒ mǎi liǎng jīn",
+        "translation": "I'll buy two jin.",
+        "translation_en": "I'll buy two jin.",
+        "translation_id": "I'll buy two jin."
+      },
+      {
+        "hanzi": "谢谢,再见!",
+        "pinyin": "xièxie zàijiàn",
+        "zhuyin": "ㄒㄧㄝˋ ㄒㄧㄝ˙ ㄗㄞˋ ㄐㄧㄢˋ",
+        "text": "谢谢,再见!",
+        "romanization": "xièxie zàijiàn",
+        "translation": "Thanks, goodbye!",
+        "translation_en": "Thanks, goodbye!",
+        "translation_id": "Thanks, goodbye!"
+      }
+    ]
+  },
+  {
+    "id": "r-xue-zhongwen",
+    "title": "学中文 — Studying Chinese",
+    "type": "story",
+    "hsk": 1,
+    "wordCount": 37,
+    "summary": "Why I'm learning Mandarin.",
+    "paragraphs": [
+      {
+        "hanzi": "我学中文。",
+        "pinyin": "wǒ xué Zhōngwén",
+        "zhuyin": "ㄨㄛˇ ㄒㄩㄝˊ ㄓㄨㄥ ㄨㄣˊ",
+        "text": "我学中文。",
+        "romanization": "wǒ xué Zhōngwén",
+        "translation": "I study Chinese.",
+        "translation_en": "I study Chinese.",
+        "translation_id": "I study Chinese."
+      },
+      {
+        "hanzi": "中文很有意思。",
+        "pinyin": "Zhōngwén hěn yǒu yìsi",
+        "zhuyin": "ㄓㄨㄥ ㄨㄣˊ ㄏㄣˇ ㄧㄡˇ ㄧˋ ㄙ˙",
+        "text": "中文很有意思。",
+        "romanization": "Zhōngwén hěn yǒu yìsi",
+        "translation": "Chinese is very interesting.",
+        "translation_en": "Chinese is very interesting.",
+        "translation_id": "Chinese is very interesting."
+      },
+      {
+        "hanzi": "我的老师是中国人。",
+        "pinyin": "wǒ de lǎoshī shì Zhōngguórén",
+        "zhuyin": "ㄨㄛˇ ㄉㄜ˙ ㄌㄠˇ ㄕ ㄕˋ ㄓㄨㄥ ㄍㄨㄛˊ ㄖㄣˊ",
+        "text": "我的老师是中国人。",
+        "romanization": "wǒ de lǎoshī shì Zhōngguórén",
+        "translation": "My teacher is Chinese.",
+        "translation_en": "My teacher is Chinese.",
+        "translation_id": "My teacher is Chinese."
+      },
+      {
+        "hanzi": "她很好。",
+        "pinyin": "tā hěn hǎo",
+        "zhuyin": "ㄊㄚ ㄏㄣˇ ㄏㄠˇ",
+        "text": "她很好。",
+        "romanization": "tā hěn hǎo",
+        "translation": "She is very nice.",
+        "translation_en": "She is very nice.",
+        "translation_id": "She is very nice."
+      },
+      {
+        "hanzi": "我每天学习。",
+        "pinyin": "wǒ měitiān xuéxí",
+        "zhuyin": "ㄨㄛˇ ㄇㄟˇ ㄊㄧㄢ ㄒㄩㄝˊ ㄒㄧˊ",
+        "text": "我每天学习。",
+        "romanization": "wǒ měitiān xuéxí",
+        "translation": "I study every day.",
+        "translation_en": "I study every day.",
+        "translation_id": "I study every day."
+      },
+      {
+        "hanzi": "我想去中国。",
+        "pinyin": "wǒ xiǎng qù Zhōngguó",
+        "zhuyin": "ㄨㄛˇ ㄒㄧㄤˇ ㄑㄩˋ ㄓㄨㄥ ㄍㄨㄛˊ",
+        "text": "我想去中国。",
+        "romanization": "wǒ xiǎng qù Zhōngguó",
+        "translation": "I want to go to China.",
+        "translation_en": "I want to go to China.",
+        "translation_id": "I want to go to China."
+      }
+    ]
+  },
+  {
+    "id": "r-jintian-tianqi",
+    "title": "今天天气 — Today's Weather",
+    "type": "story",
+    "hsk": 1,
+    "wordCount": 35,
+    "summary": "A nice day in the park.",
+    "paragraphs": [
+      {
+        "hanzi": "今天天气很好。",
+        "pinyin": "jīntiān tiānqì hěn hǎo",
+        "zhuyin": "ㄐㄧㄣ ㄊㄧㄢ ㄊㄧㄢ ㄑㄧˋ ㄏㄣˇ ㄏㄠˇ",
+        "text": "今天天气很好。",
+        "romanization": "jīntiān tiānqì hěn hǎo",
+        "translation": "Today's weather is very nice.",
+        "translation_en": "Today's weather is very nice.",
+        "translation_id": "Today's weather is very nice."
+      },
+      {
+        "hanzi": "太阳很大。",
+        "pinyin": "tàiyáng hěn dà",
+        "zhuyin": "ㄊㄞˋ ㄧㄤˊ ㄏㄣˇ ㄉㄚˋ",
+        "text": "太阳很大。",
+        "romanization": "tàiyáng hěn dà",
+        "translation": "The sun is strong.",
+        "translation_en": "The sun is strong.",
+        "translation_id": "The sun is strong."
+      },
+      {
+        "hanzi": "不冷也不热。",
+        "pinyin": "bù lěng yě bù rè",
+        "zhuyin": "ㄅㄨˋ ㄌㄥˇ ㄧㄝˇ ㄅㄨˋ ㄖㄜˋ",
+        "text": "不冷也不热。",
+        "romanization": "bù lěng yě bù rè",
+        "translation": "Not cold, not hot either.",
+        "translation_en": "Not cold, not hot either.",
+        "translation_id": "Not cold, not hot either."
+      },
+      {
+        "hanzi": "我想去公园。",
+        "pinyin": "wǒ xiǎng qù gōngyuán",
+        "zhuyin": "ㄨㄛˇ ㄒㄧㄤˇ ㄑㄩˋ ㄍㄨㄥ ㄩㄢˊ",
+        "text": "我想去公园。",
+        "romanization": "wǒ xiǎng qù gōngyuán",
+        "translation": "I want to go to the park.",
+        "translation_en": "I want to go to the park.",
+        "translation_id": "I want to go to the park."
+      },
+      {
+        "hanzi": "公园有很多花。",
+        "pinyin": "gōngyuán yǒu hěnduō huā",
+        "zhuyin": "ㄍㄨㄥ ㄩㄢˊ ㄧㄡˇ ㄏㄣˇ ㄉㄨㄛ ㄏㄨㄚ",
+        "text": "公园有很多花。",
+        "romanization": "gōngyuán yǒu hěnduō huā",
+        "translation": "The park has many flowers.",
+        "translation_en": "The park has many flowers.",
+        "translation_id": "The park has many flowers."
+      },
+      {
+        "hanzi": "真漂亮!",
+        "pinyin": "zhēn piàoliang",
+        "zhuyin": "ㄓㄣ ㄆㄧㄠˋ ㄌㄧㄤ˙",
+        "text": "真漂亮!",
+        "romanization": "zhēn piàoliang",
+        "translation": "So pretty!",
+        "translation_en": "So pretty!",
+        "translation_id": "So pretty!"
+      }
+    ]
+  },
+  {
+    "id": "r-wo-de-laoshi",
+    "title": "我的老师 — My Teacher",
+    "type": "story",
+    "hsk": 1,
+    "wordCount": 40,
+    "summary": "A short description of my English teacher.",
+    "paragraphs": [
+      {
+        "hanzi": "我的老师姓王。",
+        "pinyin": "wǒ de lǎoshī xìng Wáng",
+        "zhuyin": "ㄨㄛˇ ㄉㄜ˙ ㄌㄠˇ ㄕ ㄒㄧㄥˋ ㄨㄤˊ",
+        "text": "我的老师姓王。",
+        "romanization": "wǒ de lǎoshī xìng Wáng",
+        "translation": "My teacher's surname is Wang.",
+        "translation_en": "My teacher's surname is Wang.",
+        "translation_id": "My teacher's surname is Wang."
+      },
+      {
+        "hanzi": "她很年轻。",
+        "pinyin": "tā hěn niánqīng",
+        "zhuyin": "ㄊㄚ ㄏㄣˇ ㄋㄧㄢˊ ㄑㄧㄥ",
+        "text": "她很年轻。",
+        "romanization": "tā hěn niánqīng",
+        "translation": "She is very young.",
+        "translation_en": "She is very young.",
+        "translation_id": "She is very young."
+      },
+      {
+        "hanzi": "她教我们英文。",
+        "pinyin": "tā jiāo wǒmen Yīngwén",
+        "zhuyin": "ㄊㄚ ㄐㄧㄠ ㄨㄛˇ ㄇㄣ˙ ㄧㄥ ㄨㄣˊ",
+        "text": "她教我们英文。",
+        "romanization": "tā jiāo wǒmen Yīngwén",
+        "translation": "She teaches us English.",
+        "translation_en": "She teaches us English.",
+        "translation_id": "She teaches us English."
+      },
+      {
+        "hanzi": "她的课很有意思。",
+        "pinyin": "tā de kè hěn yǒu yìsi",
+        "zhuyin": "ㄊㄚ ㄉㄜ˙ ㄎㄜˋ ㄏㄣˇ ㄧㄡˇ ㄧˋ ㄙ˙",
+        "text": "她的课很有意思。",
+        "romanization": "tā de kè hěn yǒu yìsi",
+        "translation": "Her class is very interesting.",
+        "translation_en": "Her class is very interesting.",
+        "translation_id": "Her class is very interesting."
+      },
+      {
+        "hanzi": "我们都很喜欢她。",
+        "pinyin": "wǒmen dōu hěn xǐhuan tā",
+        "zhuyin": "ㄨㄛˇ ㄇㄣ˙ ㄉㄡ ㄏㄣˇ ㄒㄧˇ ㄏㄨㄢ˙ ㄊㄚ",
+        "text": "我们都很喜欢她。",
+        "romanization": "wǒmen dōu hěn xǐhuan tā",
+        "translation": "We all like her very much.",
+        "translation_en": "We all like her very much.",
+        "translation_id": "We all like her very much."
+      },
+      {
+        "hanzi": "她常常笑。",
+        "pinyin": "tā chángcháng xiào",
+        "zhuyin": "ㄊㄚ ㄔㄤˊ ㄔㄤˊ ㄒㄧㄠˋ",
+        "text": "她常常笑。",
+        "romanization": "tā chángcháng xiào",
+        "translation": "She often smiles.",
+        "translation_en": "She often smiles.",
+        "translation_id": "She often smiles."
+      }
+    ]
+  },
+  {
+    "id": "r-he-cha",
+    "title": "喝茶 — Drinking Tea",
+    "type": "story",
+    "hsk": 1,
+    "wordCount": 46,
+    "summary": "A daily tea habit at home.",
+    "paragraphs": [
+      {
+        "hanzi": "中国人喜欢喝茶。",
+        "pinyin": "Zhōngguórén xǐhuan hē chá",
+        "zhuyin": "ㄓㄨㄥ ㄍㄨㄛˊ ㄖㄣˊ ㄒㄧˇ ㄏㄨㄢ˙ ㄏㄜ ㄔㄚˊ",
+        "text": "中国人喜欢喝茶。",
+        "romanization": "Zhōngguórén xǐhuan hē chá",
+        "translation": "Chinese people like drinking tea.",
+        "translation_en": "Chinese people like drinking tea.",
+        "translation_id": "Chinese people like drinking tea."
+      },
+      {
+        "hanzi": "我也喜欢。",
+        "pinyin": "wǒ yě xǐhuan",
+        "zhuyin": "ㄨㄛˇ ㄧㄝˇ ㄒㄧˇ ㄏㄨㄢ˙",
+        "text": "我也喜欢。",
+        "romanization": "wǒ yě xǐhuan",
+        "translation": "I like it too.",
+        "translation_en": "I like it too.",
+        "translation_id": "I like it too."
+      },
+      {
+        "hanzi": "爷爷每天早上喝茶。",
+        "pinyin": "yéye měitiān zǎoshang hē chá",
+        "zhuyin": "ㄧㄝˊ ㄧㄝ˙ ㄇㄟˇ ㄊㄧㄢ ㄗㄠˇ ㄕㄤ˙ ㄏㄜ ㄔㄚˊ",
+        "text": "爷爷每天早上喝茶。",
+        "romanization": "yéye měitiān zǎoshang hē chá",
+        "translation": "Grandpa drinks tea every morning.",
+        "translation_en": "Grandpa drinks tea every morning.",
+        "translation_id": "Grandpa drinks tea every morning."
+      },
+      {
+        "hanzi": "他说茶对身体好。",
+        "pinyin": "tā shuō chá duì shēntǐ hǎo",
+        "zhuyin": "ㄊㄚ ㄕㄨㄛ ㄔㄚˊ ㄉㄨㄟˋ ㄕㄣ ㄊㄧˇ ㄏㄠˇ",
+        "text": "他说茶对身体好。",
+        "romanization": "tā shuō chá duì shēntǐ hǎo",
+        "translation": "He says tea is good for the body.",
+        "translation_en": "He says tea is good for the body.",
+        "translation_id": "He says tea is good for the body."
+      },
+      {
+        "hanzi": "我最喜欢绿茶。",
+        "pinyin": "wǒ zuì xǐhuan lǜchá",
+        "zhuyin": "ㄨㄛˇ ㄗㄨㄟˋ ㄒㄧˇ ㄏㄨㄢ˙ ㄌㄩˋ ㄔㄚˊ",
+        "text": "我最喜欢绿茶。",
+        "romanization": "wǒ zuì xǐhuan lǜchá",
+        "translation": "I like green tea the most.",
+        "translation_en": "I like green tea the most.",
+        "translation_id": "I like green tea the most."
+      },
+      {
+        "hanzi": "喝茶让我觉得放松。",
+        "pinyin": "hē chá ràng wǒ juéde fàngsōng",
+        "zhuyin": "ㄏㄜ ㄔㄚˊ ㄖㄤˋ ㄨㄛˇ ㄐㄩㄝˊ ㄉㄜ˙ ㄈㄤˋ ㄙㄨㄥ",
+        "text": "喝茶让我觉得放松。",
+        "romanization": "hē chá ràng wǒ juéde fàngsōng",
+        "translation": "Drinking tea makes me feel relaxed.",
+        "translation_en": "Drinking tea makes me feel relaxed.",
+        "translation_id": "Drinking tea makes me feel relaxed."
+      }
+    ]
+  },
+  {
+    "id": "r-wo-ai-yinyue",
+    "title": "我爱音乐 — I Love Music",
+    "type": "story",
+    "hsk": 1,
+    "wordCount": 40,
+    "summary": "Listening to songs and singing along.",
+    "paragraphs": [
+      {
+        "hanzi": "我很爱音乐。",
+        "pinyin": "wǒ hěn ài yīnyuè",
+        "zhuyin": "ㄨㄛˇ ㄏㄣˇ ㄞˋ ㄧㄣ ㄩㄝˋ",
+        "text": "我很爱音乐。",
+        "romanization": "wǒ hěn ài yīnyuè",
+        "translation": "I love music very much.",
+        "translation_en": "I love music very much.",
+        "translation_id": "I love music very much."
+      },
+      {
+        "hanzi": "我每天都听歌。",
+        "pinyin": "wǒ měitiān dōu tīng gē",
+        "zhuyin": "ㄨㄛˇ ㄇㄟˇ ㄊㄧㄢ ㄉㄡ ㄊㄧㄥ ㄍㄜ",
+        "text": "我每天都听歌。",
+        "romanization": "wǒ měitiān dōu tīng gē",
+        "translation": "I listen to songs every day.",
+        "translation_en": "I listen to songs every day.",
+        "translation_id": "I listen to songs every day."
+      },
+      {
+        "hanzi": "我喜欢中文歌。",
+        "pinyin": "wǒ xǐhuan Zhōngwén gē",
+        "zhuyin": "ㄨㄛˇ ㄒㄧˇ ㄏㄨㄢ˙ ㄓㄨㄥ ㄨㄣˊ ㄍㄜ",
+        "text": "我喜欢中文歌。",
+        "romanization": "wǒ xǐhuan Zhōngwén gē",
+        "translation": "I like Chinese songs.",
+        "translation_en": "I like Chinese songs.",
+        "translation_id": "I like Chinese songs."
+      },
+      {
+        "hanzi": "也喜欢英文歌。",
+        "pinyin": "yě xǐhuan Yīngwén gē",
+        "zhuyin": "ㄧㄝˇ ㄒㄧˇ ㄏㄨㄢ˙ ㄧㄥ ㄨㄣˊ ㄍㄜ",
+        "text": "也喜欢英文歌。",
+        "romanization": "yě xǐhuan Yīngwén gē",
+        "translation": "I also like English songs.",
+        "translation_en": "I also like English songs.",
+        "translation_id": "I also like English songs."
+      },
+      {
+        "hanzi": "我也会唱歌。",
+        "pinyin": "wǒ yě huì chànggē",
+        "zhuyin": "ㄨㄛˇ ㄧㄝˇ ㄏㄨㄟˋ ㄔㄤˋ ㄍㄜ",
+        "text": "我也会唱歌。",
+        "romanization": "wǒ yě huì chànggē",
+        "translation": "I can also sing.",
+        "translation_en": "I can also sing.",
+        "translation_id": "I can also sing."
+      },
+      {
+        "hanzi": "音乐让我开心。",
+        "pinyin": "yīnyuè ràng wǒ kāixīn",
+        "zhuyin": "ㄧㄣ ㄩㄝˋ ㄖㄤˋ ㄨㄛˇ ㄎㄞ ㄒㄧㄣ",
+        "text": "音乐让我开心。",
+        "romanization": "yīnyuè ràng wǒ kāixīn",
+        "translation": "Music makes me happy.",
+        "translation_en": "Music makes me happy.",
+        "translation_id": "Music makes me happy."
+      }
+    ]
+  },
+  {
+    "id": "r-xiaogou-doudou",
+    "title": "小狗豆豆 — My Puppy Doudou",
+    "type": "story",
+    "hsk": 1,
+    "wordCount": 43,
+    "summary": "A cute puppy at home.",
+    "paragraphs": [
+      {
+        "hanzi": "我有一只小狗。",
+        "pinyin": "wǒ yǒu yì zhī xiǎogǒu",
+        "zhuyin": "ㄨㄛˇ ㄧㄡˇ ㄧˋ ㄓ ㄒㄧㄠˇ ㄍㄡˇ",
+        "text": "我有一只小狗。",
+        "romanization": "wǒ yǒu yì zhī xiǎogǒu",
+        "translation": "I have a little dog.",
+        "translation_en": "I have a little dog.",
+        "translation_id": "I have a little dog."
+      },
+      {
+        "hanzi": "它叫豆豆。",
+        "pinyin": "tā jiào Dòudou",
+        "zhuyin": "ㄊㄚ ㄐㄧㄠˋ ㄉㄡˋ ㄉㄡ˙",
+        "text": "它叫豆豆。",
+        "romanization": "tā jiào Dòudou",
+        "translation": "It is called Doudou.",
+        "translation_en": "It is called Doudou.",
+        "translation_id": "It is called Doudou."
+      },
+      {
+        "hanzi": "它很可爱。",
+        "pinyin": "tā hěn kě'ài",
+        "zhuyin": "ㄊㄚ ㄏㄣˇ ㄎㄜˇ ㄞˋ",
+        "text": "它很可爱。",
+        "romanization": "tā hěn kě'ài",
+        "translation": "It is very cute.",
+        "translation_en": "It is very cute.",
+        "translation_id": "It is very cute."
+      },
+      {
+        "hanzi": "它很喜欢跑。",
+        "pinyin": "tā hěn xǐhuan pǎo",
+        "zhuyin": "ㄊㄚ ㄏㄣˇ ㄒㄧˇ ㄏㄨㄢ˙ ㄆㄠˇ",
+        "text": "它很喜欢跑。",
+        "romanization": "tā hěn xǐhuan pǎo",
+        "translation": "It loves to run.",
+        "translation_en": "It loves to run.",
+        "translation_id": "It loves to run."
+      },
+      {
+        "hanzi": "每天下午我带它出去。",
+        "pinyin": "měitiān xiàwǔ wǒ dài tā chūqù",
+        "zhuyin": "ㄇㄟˇ ㄊㄧㄢ ㄒㄧㄚˋ ㄨˇ ㄨㄛˇ ㄉㄞˋ ㄊㄚ ㄔㄨ ㄑㄩˋ",
+        "text": "每天下午我带它出去。",
+        "romanization": "měitiān xiàwǔ wǒ dài tā chūqù",
+        "translation": "Every afternoon I take it out.",
+        "translation_en": "Every afternoon I take it out.",
+        "translation_id": "Every afternoon I take it out."
+      },
+      {
+        "hanzi": "豆豆是我最好的朋友。",
+        "pinyin": "Dòudou shì wǒ zuì hǎo de péngyou",
+        "zhuyin": "ㄉㄡˋ ㄉㄡ˙ ㄕˋ ㄨㄛˇ ㄗㄨㄟˋ ㄏㄠˇ ㄉㄜ˙ ㄆㄥˊ ㄧㄡ˙",
+        "text": "豆豆是我最好的朋友。",
+        "romanization": "Dòudou shì wǒ zuì hǎo de péngyou",
+        "translation": "Doudou is my best friend.",
+        "translation_en": "Doudou is my best friend.",
+        "translation_id": "Doudou is my best friend."
+      }
+    ]
+  },
+  {
+    "id": "r-wo-de-fangjian",
+    "title": "我的房间 — My Room",
+    "type": "story",
+    "hsk": 1,
+    "wordCount": 77,
+    "summary": "A small, clean room with a bed, a desk and a window.",
+    "paragraphs": [
+      {
+        "hanzi": "这是我的房间。",
+        "pinyin": "zhè shì wǒ de fángjiān",
+        "zhuyin": "ㄓㄜˋ ㄕˋ ㄨㄛˇ ㄉㄜ˙ ㄈㄤˊ ㄐㄧㄢ",
+        "text": "这是我的房间。",
+        "romanization": "zhè shì wǒ de fángjiān",
+        "translation": "This is my room.",
+        "translation_en": "This is my room.",
+        "translation_id": "This is my room."
+      },
+      {
+        "hanzi": "我的房间不大,可是很干净。",
+        "pinyin": "wǒ de fángjiān bú dà kěshì hěn gānjìng",
+        "zhuyin": "ㄨㄛˇ ㄉㄜ˙ ㄈㄤˊ ㄐㄧㄢ ㄅㄨˊ ㄉㄚˋ ㄎㄜˇ ㄕˋ ㄏㄣˇ ㄍㄢ ㄐㄧㄥˋ",
+        "text": "我的房间不大,可是很干净。",
+        "romanization": "wǒ de fángjiān bú dà kěshì hěn gānjìng",
+        "translation": "My room is not big, but it is very clean.",
+        "translation_en": "My room is not big, but it is very clean.",
+        "translation_id": "My room is not big, but it is very clean."
+      },
+      {
+        "hanzi": "房间里有一张床。",
+        "pinyin": "fángjiān lǐ yǒu yì zhāng chuáng",
+        "zhuyin": "ㄈㄤˊ ㄐㄧㄢ ㄌㄧˇ ㄧㄡˇ ㄧˋ ㄓㄤ ㄔㄨㄤˊ",
+        "text": "房间里有一张床。",
+        "romanization": "fángjiān lǐ yǒu yì zhāng chuáng",
+        "translation": "There is a bed in the room.",
+        "translation_en": "There is a bed in the room.",
+        "translation_id": "There is a bed in the room."
+      },
+      {
+        "hanzi": "床的旁边有一个书桌。",
+        "pinyin": "chuáng de pángbiān yǒu yí ge shūzhuō",
+        "zhuyin": "ㄔㄨㄤˊ ㄉㄜ˙ ㄆㄤˊ ㄅㄧㄢ ㄧㄡˇ ㄧˊ ㄍㄜ˙ ㄕㄨ ㄓㄨㄛ",
+        "text": "床的旁边有一个书桌。",
+        "romanization": "chuáng de pángbiān yǒu yí ge shūzhuō",
+        "translation": "Next to the bed there is a desk.",
+        "translation_en": "Next to the bed there is a desk.",
+        "translation_id": "Next to the bed there is a desk."
+      },
+      {
+        "hanzi": "书桌上有很多书。",
+        "pinyin": "shūzhuō shàng yǒu hěn duō shū",
+        "zhuyin": "ㄕㄨ ㄓㄨㄛ ㄕㄤˋ ㄧㄡˇ ㄏㄣˇ ㄉㄨㄛ ㄕㄨ",
+        "text": "书桌上有很多书。",
+        "romanization": "shūzhuō shàng yǒu hěn duō shū",
+        "translation": "There are many books on the desk.",
+        "translation_en": "There are many books on the desk.",
+        "translation_id": "There are many books on the desk."
+      },
+      {
+        "hanzi": "我喜欢在这里看书。",
+        "pinyin": "wǒ xǐhuan zài zhèlǐ kàn shū",
+        "zhuyin": "ㄨㄛˇ ㄒㄧˇ ㄏㄨㄢ˙ ㄗㄞˋ ㄓㄜˋ ㄌㄧˇ ㄎㄢˋ ㄕㄨ",
+        "text": "我喜欢在这里看书。",
+        "romanization": "wǒ xǐhuan zài zhèlǐ kàn shū",
+        "translation": "I like to read here.",
+        "translation_en": "I like to read here.",
+        "translation_id": "I like to read here."
+      },
+      {
+        "hanzi": "我的房间有一个窗户。",
+        "pinyin": "wǒ de fángjiān yǒu yí ge chuānghu",
+        "zhuyin": "ㄨㄛˇ ㄉㄜ˙ ㄈㄤˊ ㄐㄧㄢ ㄧㄡˇ ㄧˊ ㄍㄜ˙ ㄔㄨㄤ ㄏㄨ˙",
+        "text": "我的房间有一个窗户。",
+        "romanization": "wǒ de fángjiān yǒu yí ge chuānghu",
+        "translation": "My room has a window.",
+        "translation_en": "My room has a window.",
+        "translation_id": "My room has a window."
+      },
+      {
+        "hanzi": "从窗户可以看见外面的树。",
+        "pinyin": "cóng chuānghu kěyǐ kànjiàn wàimiàn de shù",
+        "zhuyin": "ㄘㄨㄥˊ ㄔㄨㄤ ㄏㄨ˙ ㄎㄜˇ ㄧˇ ㄎㄢˋ ㄐㄧㄢˋ ㄨㄞˋ ㄇㄧㄢˋ ㄉㄜ˙ ㄕㄨˋ",
+        "text": "从窗户可以看见外面的树。",
+        "romanization": "cóng chuānghu kěyǐ kànjiàn wàimiàn de shù",
+        "translation": "From the window I can see the trees outside.",
+        "translation_en": "From the window I can see the trees outside.",
+        "translation_id": "From the window I can see the trees outside."
+      }
+    ]
+  },
+  {
+    "id": "r-wo-de-yi-tian",
+    "title": "我的一天 — My Day",
+    "type": "story",
+    "hsk": 1,
+    "wordCount": 64,
+    "summary": "From getting up at seven to going to bed at eleven.",
+    "paragraphs": [
+      {
+        "hanzi": "我每天七点起床。",
+        "pinyin": "wǒ měitiān qī diǎn qǐchuáng",
+        "zhuyin": "ㄨㄛˇ ㄇㄟˇ ㄊㄧㄢ ㄑㄧ ㄉㄧㄢˇ ㄑㄧˇ ㄔㄨㄤˊ",
+        "text": "我每天七点起床。",
+        "romanization": "wǒ měitiān qī diǎn qǐchuáng",
+        "translation": "I get up at seven every day.",
+        "translation_en": "I get up at seven every day.",
+        "translation_id": "I get up at seven every day."
+      },
+      {
+        "hanzi": "起床以后,我吃早饭。",
+        "pinyin": "qǐchuáng yǐhòu wǒ chī zǎofàn",
+        "zhuyin": "ㄑㄧˇ ㄔㄨㄤˊ ㄧˇ ㄏㄡˋ ㄨㄛˇ ㄔ ㄗㄠˇ ㄈㄢˋ",
+        "text": "起床以后,我吃早饭。",
+        "romanization": "qǐchuáng yǐhòu wǒ chī zǎofàn",
+        "translation": "After getting up, I eat breakfast.",
+        "translation_en": "After getting up, I eat breakfast.",
+        "translation_id": "After getting up, I eat breakfast."
+      },
+      {
+        "hanzi": "我八点去上班。",
+        "pinyin": "wǒ bā diǎn qù shàngbān",
+        "zhuyin": "ㄨㄛˇ ㄅㄚ ㄉㄧㄢˇ ㄑㄩˋ ㄕㄤˋ ㄅㄢ",
+        "text": "我八点去上班。",
+        "romanization": "wǒ bā diǎn qù shàngbān",
+        "translation": "I go to work at eight.",
+        "translation_en": "I go to work at eight.",
+        "translation_id": "I go to work at eight."
+      },
+      {
+        "hanzi": "中午我在公司吃饭。",
+        "pinyin": "zhōngwǔ wǒ zài gōngsī chī fàn",
+        "zhuyin": "ㄓㄨㄥ ㄨˇ ㄨㄛˇ ㄗㄞˋ ㄍㄨㄥ ㄙ ㄔ ㄈㄢˋ",
+        "text": "中午我在公司吃饭。",
+        "romanization": "zhōngwǔ wǒ zài gōngsī chī fàn",
+        "translation": "At noon I eat at the company.",
+        "translation_en": "At noon I eat at the company.",
+        "translation_id": "At noon I eat at the company."
+      },
+      {
+        "hanzi": "下午我很忙。",
+        "pinyin": "xiàwǔ wǒ hěn máng",
+        "zhuyin": "ㄒㄧㄚˋ ㄨˇ ㄨㄛˇ ㄏㄣˇ ㄇㄤˊ",
+        "text": "下午我很忙。",
+        "romanization": "xiàwǔ wǒ hěn máng",
+        "translation": "In the afternoon I am very busy.",
+        "translation_en": "In the afternoon I am very busy.",
+        "translation_id": "In the afternoon I am very busy."
+      },
+      {
+        "hanzi": "六点我回家。",
+        "pinyin": "liù diǎn wǒ huí jiā",
+        "zhuyin": "ㄌㄧㄡˋ ㄉㄧㄢˇ ㄨㄛˇ ㄏㄨㄟˊ ㄐㄧㄚ",
+        "text": "六点我回家。",
+        "romanization": "liù diǎn wǒ huí jiā",
+        "translation": "I go home at six.",
+        "translation_en": "I go home at six.",
+        "translation_id": "I go home at six."
+      },
+      {
+        "hanzi": "晚上我看电视,也看书。",
+        "pinyin": "wǎnshang wǒ kàn diànshì yě kàn shū",
+        "zhuyin": "ㄨㄢˇ ㄕㄤ˙ ㄨㄛˇ ㄎㄢˋ ㄉㄧㄢˋ ㄕˋ ㄧㄝˇ ㄎㄢˋ ㄕㄨ",
+        "text": "晚上我看电视,也看书。",
+        "romanization": "wǎnshang wǒ kàn diànshì yě kàn shū",
+        "translation": "In the evening I watch TV and also read.",
+        "translation_en": "In the evening I watch TV and also read.",
+        "translation_id": "In the evening I watch TV and also read."
+      },
+      {
+        "hanzi": "我十一点睡觉。",
+        "pinyin": "wǒ shíyī diǎn shuìjiào",
+        "zhuyin": "ㄨㄛˇ ㄕˊ ㄧ ㄉㄧㄢˇ ㄕㄨㄟˋ ㄐㄧㄠˋ",
+        "text": "我十一点睡觉。",
+        "romanization": "wǒ shíyī diǎn shuìjiào",
+        "translation": "I go to sleep at eleven.",
+        "translation_en": "I go to sleep at eleven.",
+        "translation_id": "I go to sleep at eleven."
+      }
+    ]
+  },
+  {
+    "id": "r-zuo-gonggong-qiche",
+    "title": "坐公共汽车 — Taking the Bus",
+    "type": "story",
+    "hsk": 1,
+    "wordCount": 69,
+    "summary": "The number three bus to work, twenty minutes for two yuan.",
+    "paragraphs": [
+      {
+        "hanzi": "我家离公司很远。",
+        "pinyin": "wǒ jiā lí gōngsī hěn yuǎn",
+        "zhuyin": "ㄨㄛˇ ㄐㄧㄚ ㄌㄧˊ ㄍㄨㄥ ㄙ ㄏㄣˇ ㄩㄢˇ",
+        "text": "我家离公司很远。",
+        "romanization": "wǒ jiā lí gōngsī hěn yuǎn",
+        "translation": "My home is far from the company.",
+        "translation_en": "My home is far from the company.",
+        "translation_id": "My home is far from the company."
+      },
+      {
+        "hanzi": "我每天坐公共汽车去上班。",
+        "pinyin": "wǒ měitiān zuò gōnggòng qìchē qù shàngbān",
+        "zhuyin": "ㄨㄛˇ ㄇㄟˇ ㄊㄧㄢ ㄗㄨㄛˋ ㄍㄨㄥ ㄍㄨㄥˋ ㄑㄧˋ ㄔㄜ ㄑㄩˋ ㄕㄤˋ ㄅㄢ",
+        "text": "我每天坐公共汽车去上班。",
+        "romanization": "wǒ měitiān zuò gōnggòng qìchē qù shàngbān",
+        "translation": "Every day I take the bus to work.",
+        "translation_en": "Every day I take the bus to work.",
+        "translation_id": "Every day I take the bus to work."
+      },
+      {
+        "hanzi": "车站在我家前面。",
+        "pinyin": "chēzhàn zài wǒ jiā qiánmiàn",
+        "zhuyin": "ㄔㄜ ㄓㄢˋ ㄗㄞˋ ㄨㄛˇ ㄐㄧㄚ ㄑㄧㄢˊ ㄇㄧㄢˋ",
+        "text": "车站在我家前面。",
+        "romanization": "chēzhàn zài wǒ jiā qiánmiàn",
+        "translation": "The bus stop is in front of my home.",
+        "translation_en": "The bus stop is in front of my home.",
+        "translation_id": "The bus stop is in front of my home."
+      },
+      {
+        "hanzi": "我坐三路车。",
+        "pinyin": "wǒ zuò sān lù chē",
+        "zhuyin": "ㄨㄛˇ ㄗㄨㄛˋ ㄙㄢ ㄌㄨˋ ㄔㄜ",
+        "text": "我坐三路车。",
+        "romanization": "wǒ zuò sān lù chē",
+        "translation": "I take the number three bus.",
+        "translation_en": "I take the number three bus.",
+        "translation_id": "I take the number three bus."
+      },
+      {
+        "hanzi": "车上人很多。",
+        "pinyin": "chē shàng rén hěn duō",
+        "zhuyin": "ㄔㄜ ㄕㄤˋ ㄖㄣˊ ㄏㄣˇ ㄉㄨㄛ",
+        "text": "车上人很多。",
+        "romanization": "chē shàng rén hěn duō",
+        "translation": "There are many people on the bus.",
+        "translation_en": "There are many people on the bus.",
+        "translation_id": "There are many people on the bus."
+      },
+      {
+        "hanzi": "我常常站着。",
+        "pinyin": "wǒ chángcháng zhàn zhe",
+        "zhuyin": "ㄨㄛˇ ㄔㄤˊ ㄔㄤˊ ㄓㄢˋ ㄓㄜ˙",
+        "text": "我常常站着。",
+        "romanization": "wǒ chángcháng zhàn zhe",
+        "translation": "I often stand.",
+        "translation_en": "I often stand.",
+        "translation_id": "I often stand."
+      },
+      {
+        "hanzi": "二十分钟以后,我到公司。",
+        "pinyin": "èrshí fēnzhōng yǐhòu wǒ dào gōngsī",
+        "zhuyin": "ㄦˋ ㄕˊ ㄈㄣ ㄓㄨㄥ ㄧˇ ㄏㄡˋ ㄨㄛˇ ㄉㄠˋ ㄍㄨㄥ ㄙ",
+        "text": "二十分钟以后,我到公司。",
+        "romanization": "èrshí fēnzhōng yǐhòu wǒ dào gōngsī",
+        "translation": "Twenty minutes later, I arrive at the company.",
+        "translation_en": "Twenty minutes later, I arrive at the company.",
+        "translation_id": "Twenty minutes later, I arrive at the company."
+      },
+      {
+        "hanzi": "坐车不贵,只要两块钱。",
+        "pinyin": "zuò chē bú guì zhǐ yào liǎng kuài qián",
+        "zhuyin": "ㄗㄨㄛˋ ㄔㄜ ㄅㄨˊ ㄍㄨㄟˋ ㄓˇ ㄧㄠˋ ㄌㄧㄤˇ ㄎㄨㄞˋ ㄑㄧㄢˊ",
+        "text": "坐车不贵,只要两块钱。",
+        "romanization": "zuò chē bú guì zhǐ yào liǎng kuài qián",
+        "translation": "The bus is not expensive — only two yuan.",
+        "translation_en": "The bus is not expensive — only two yuan.",
+        "translation_id": "The bus is not expensive — only two yuan."
+      }
+    ]
+  },
+  {
+    "id": "r-wo-de-pengyou",
+    "title": "我的朋友 — My Friend",
+    "type": "story",
+    "hsk": 1,
+    "wordCount": 71,
+    "summary": "Xiaomei is tall, likes films, and teaches me Chinese.",
+    "paragraphs": [
+      {
+        "hanzi": "我有一个好朋友。",
+        "pinyin": "wǒ yǒu yí ge hǎo péngyou",
+        "zhuyin": "ㄨㄛˇ ㄧㄡˇ ㄧˊ ㄍㄜ˙ ㄏㄠˇ ㄆㄥˊ ㄧㄡ˙",
+        "text": "我有一个好朋友。",
+        "romanization": "wǒ yǒu yí ge hǎo péngyou",
+        "translation": "I have a good friend.",
+        "translation_en": "I have a good friend.",
+        "translation_id": "I have a good friend."
+      },
+      {
+        "hanzi": "她叫小美。",
+        "pinyin": "tā jiào Xiǎoměi",
+        "zhuyin": "ㄊㄚ ㄐㄧㄠˋ ㄒㄧㄠˇ ㄇㄟˇ",
+        "text": "她叫小美。",
+        "romanization": "tā jiào Xiǎoměi",
+        "translation": "She is called Xiaomei.",
+        "translation_en": "She is called Xiaomei.",
+        "translation_id": "She is called Xiaomei."
+      },
+      {
+        "hanzi": "她是中国人,住在北京。",
+        "pinyin": "tā shì Zhōngguó rén zhù zài Běijīng",
+        "zhuyin": "ㄊㄚ ㄕˋ ㄓㄨㄥ ㄍㄨㄛˊ ㄖㄣˊ ㄓㄨˋ ㄗㄞˋ ㄅㄟˇ ㄐㄧㄥ",
+        "text": "她是中国人,住在北京。",
+        "romanization": "tā shì Zhōngguó rén zhù zài Běijīng",
+        "translation": "She is Chinese and lives in Beijing.",
+        "translation_en": "She is Chinese and lives in Beijing.",
+        "translation_id": "She is Chinese and lives in Beijing."
+      },
+      {
+        "hanzi": "小美很高,也很漂亮。",
+        "pinyin": "Xiǎoměi hěn gāo yě hěn piàoliang",
+        "zhuyin": "ㄒㄧㄠˇ ㄇㄟˇ ㄏㄣˇ ㄍㄠ ㄧㄝˇ ㄏㄣˇ ㄆㄧㄠˋ ㄌㄧㄤ˙",
+        "text": "小美很高,也很漂亮。",
+        "romanization": "Xiǎoměi hěn gāo yě hěn piàoliang",
+        "translation": "Xiaomei is tall and also very pretty.",
+        "translation_en": "Xiaomei is tall and also very pretty.",
+        "translation_id": "Xiaomei is tall and also very pretty."
+      },
+      {
+        "hanzi": "她喜欢看电影。",
+        "pinyin": "tā xǐhuan kàn diànyǐng",
+        "zhuyin": "ㄊㄚ ㄒㄧˇ ㄏㄨㄢ˙ ㄎㄢˋ ㄉㄧㄢˋ ㄧㄥˇ",
+        "text": "她喜欢看电影。",
+        "romanization": "tā xǐhuan kàn diànyǐng",
+        "translation": "She likes watching films.",
+        "translation_en": "She likes watching films.",
+        "translation_id": "She likes watching films."
+      },
+      {
+        "hanzi": "我们常常一起吃饭。",
+        "pinyin": "wǒmen chángcháng yìqǐ chī fàn",
+        "zhuyin": "ㄨㄛˇ ㄇㄣ˙ ㄔㄤˊ ㄔㄤˊ ㄧˋ ㄑㄧˇ ㄔ ㄈㄢˋ",
+        "text": "我们常常一起吃饭。",
+        "romanization": "wǒmen chángcháng yìqǐ chī fàn",
+        "translation": "We often eat together.",
+        "translation_en": "We often eat together.",
+        "translation_id": "We often eat together."
+      },
+      {
+        "hanzi": "她的中文很好,我的不太好。",
+        "pinyin": "tā de Zhōngwén hěn hǎo wǒ de bú tài hǎo",
+        "zhuyin": "ㄊㄚ ㄉㄜ˙ ㄓㄨㄥ ㄨㄣˊ ㄏㄣˇ ㄏㄠˇ ㄨㄛˇ ㄉㄜ˙ ㄅㄨˊ ㄊㄞˋ ㄏㄠˇ",
+        "text": "她的中文很好,我的不太好。",
+        "romanization": "tā de Zhōngwén hěn hǎo wǒ de bú tài hǎo",
+        "translation": "Her Chinese is very good; mine is not very good.",
+        "translation_en": "Her Chinese is very good; mine is not very good.",
+        "translation_id": "Her Chinese is very good; mine is not very good."
+      },
+      {
+        "hanzi": "所以她教我中文。",
+        "pinyin": "suǒyǐ tā jiāo wǒ Zhōngwén",
+        "zhuyin": "ㄙㄨㄛˇ ㄧˇ ㄊㄚ ㄐㄧㄠ ㄨㄛˇ ㄓㄨㄥ ㄨㄣˊ",
+        "text": "所以她教我中文。",
+        "romanization": "suǒyǐ tā jiāo wǒ Zhōngwén",
+        "translation": "So she teaches me Chinese.",
+        "translation_en": "So she teaches me Chinese.",
+        "translation_id": "So she teaches me Chinese."
+      }
+    ]
+  },
+  {
+    "id": "r-zai-fanguan",
+    "title": "在饭馆 — At the Restaurant",
+    "type": "story",
+    "hsk": 1,
+    "wordCount": 86,
+    "summary": "Ordering fish and greens with a friend, for eighty yuan.",
+    "paragraphs": [
+      {
+        "hanzi": "今天我和朋友去饭馆吃饭。",
+        "pinyin": "jīntiān wǒ hé péngyou qù fànguǎn chī fàn",
+        "zhuyin": "ㄐㄧㄣ ㄊㄧㄢ ㄨㄛˇ ㄏㄜˊ ㄆㄥˊ ㄧㄡ˙ ㄑㄩˋ ㄈㄢˋ ㄍㄨㄢˇ ㄔ ㄈㄢˋ",
+        "text": "今天我和朋友去饭馆吃饭。",
+        "romanization": "jīntiān wǒ hé péngyou qù fànguǎn chī fàn",
+        "translation": "Today my friend and I went to a restaurant to eat.",
+        "translation_en": "Today my friend and I went to a restaurant to eat.",
+        "translation_id": "Today my friend and I went to a restaurant to eat."
+      },
+      {
+        "hanzi": "服务员给我们菜单。",
+        "pinyin": "fúwùyuán gěi wǒmen càidān",
+        "zhuyin": "ㄈㄨˊ ㄨˋ ㄩㄢˊ ㄍㄟˇ ㄨㄛˇ ㄇㄣ˙ ㄘㄞˋ ㄉㄢ",
+        "text": "服务员给我们菜单。",
+        "romanization": "fúwùyuán gěi wǒmen càidān",
+        "translation": "The waiter gave us a menu.",
+        "translation_en": "The waiter gave us a menu.",
+        "translation_id": "The waiter gave us a menu."
+      },
+      {
+        "hanzi": "我看了看,不知道吃什么。",
+        "pinyin": "wǒ kàn le kàn bù zhīdào chī shénme",
+        "zhuyin": "ㄨㄛˇ ㄎㄢˋ ㄌㄜ˙ ㄎㄢˋ ㄅㄨˋ ㄓ ㄉㄠˋ ㄔ ㄕㄣˊ ㄇㄜ˙",
+        "text": "我看了看,不知道吃什么。",
+        "romanization": "wǒ kàn le kàn bù zhīdào chī shénme",
+        "translation": "I looked at it and did not know what to eat.",
+        "translation_en": "I looked at it and did not know what to eat.",
+        "translation_id": "I looked at it and did not know what to eat."
+      },
+      {
+        "hanzi": "朋友说:\"这里的鱼很好吃。\"",
+        "pinyin": "péngyou shuō zhèlǐ de yú hěn hǎochī",
+        "zhuyin": "ㄆㄥˊ ㄧㄡ˙ ㄕㄨㄛ ㄓㄜˋ ㄌㄧˇ ㄉㄜ˙ ㄩˊ ㄏㄣˇ ㄏㄠˇ ㄔ",
+        "text": "朋友说:\"这里的鱼很好吃。\"",
+        "romanization": "péngyou shuō zhèlǐ de yú hěn hǎochī",
+        "translation": "My friend said: \"The fish here is very tasty.\"",
+        "translation_en": "My friend said: \"The fish here is very tasty.\"",
+        "translation_id": "My friend said: \"The fish here is very tasty.\""
+      },
+      {
+        "hanzi": "我们点了鱼和青菜。",
+        "pinyin": "wǒmen diǎn le yú hé qīngcài",
+        "zhuyin": "ㄨㄛˇ ㄇㄣ˙ ㄉㄧㄢˇ ㄌㄜ˙ ㄩˊ ㄏㄜˊ ㄑㄧㄥ ㄘㄞˋ",
+        "text": "我们点了鱼和青菜。",
+        "romanization": "wǒmen diǎn le yú hé qīngcài",
+        "translation": "We ordered fish and green vegetables.",
+        "translation_en": "We ordered fish and green vegetables.",
+        "translation_id": "We ordered fish and green vegetables."
+      },
+      {
+        "hanzi": "我们还要了两碗米饭。",
+        "pinyin": "wǒmen hái yào le liǎng wǎn mǐfàn",
+        "zhuyin": "ㄨㄛˇ ㄇㄣ˙ ㄏㄞˊ ㄧㄠˋ ㄌㄜ˙ ㄌㄧㄤˇ ㄨㄢˇ ㄇㄧˇ ㄈㄢˋ",
+        "text": "我们还要了两碗米饭。",
+        "romanization": "wǒmen hái yào le liǎng wǎn mǐfàn",
+        "translation": "We also asked for two bowls of rice.",
+        "translation_en": "We also asked for two bowls of rice.",
+        "translation_id": "We also asked for two bowls of rice."
+      },
+      {
+        "hanzi": "菜很快就来了。",
+        "pinyin": "cài hěn kuài jiù lái le",
+        "zhuyin": "ㄘㄞˋ ㄏㄣˇ ㄎㄨㄞˋ ㄐㄧㄡˋ ㄌㄞˊ ㄌㄜ˙",
+        "text": "菜很快就来了。",
+        "romanization": "cài hěn kuài jiù lái le",
+        "translation": "The food came very quickly.",
+        "translation_en": "The food came very quickly.",
+        "translation_id": "The food came very quickly."
+      },
+      {
+        "hanzi": "我们吃得很好,一共八十块。",
+        "pinyin": "wǒmen chī de hěn hǎo yígòng bāshí kuài",
+        "zhuyin": "ㄨㄛˇ ㄇㄣ˙ ㄔ ㄉㄜ˙ ㄏㄣˇ ㄏㄠˇ ㄧˊ ㄍㄨㄥˋ ㄅㄚ ㄕˊ ㄎㄨㄞˋ",
+        "text": "我们吃得很好,一共八十块。",
+        "romanization": "wǒmen chī de hěn hǎo yígòng bāshí kuài",
+        "translation": "We ate very well; in total it was eighty yuan.",
+        "translation_en": "We ate very well; in total it was eighty yuan.",
+        "translation_id": "We ate very well; in total it was eighty yuan."
+      }
+    ]
+  },
+  {
+    "id": "r-si-ji",
+    "title": "四季 — The Four Seasons",
+    "type": "story",
+    "hsk": 1,
+    "wordCount": 69,
+    "summary": "Spring flowers, summer swimming, autumn fruit and winter snow.",
+    "paragraphs": [
+      {
+        "hanzi": "一年有四个季节。",
+        "pinyin": "yì nián yǒu sì ge jìjié",
+        "zhuyin": "ㄧˋ ㄋㄧㄢˊ ㄧㄡˇ ㄙˋ ㄍㄜ˙ ㄐㄧˋ ㄐㄧㄝˊ",
+        "text": "一年有四个季节。",
+        "romanization": "yì nián yǒu sì ge jìjié",
+        "translation": "A year has four seasons.",
+        "translation_en": "A year has four seasons.",
+        "translation_id": "A year has four seasons."
+      },
+      {
+        "hanzi": "春天不冷也不热。",
+        "pinyin": "chūntiān bù lěng yě bú rè",
+        "zhuyin": "ㄔㄨㄣ ㄊㄧㄢ ㄅㄨˋ ㄌㄥˇ ㄧㄝˇ ㄅㄨˊ ㄖㄜˋ",
+        "text": "春天不冷也不热。",
+        "romanization": "chūntiān bù lěng yě bú rè",
+        "translation": "Spring is neither cold nor hot.",
+        "translation_en": "Spring is neither cold nor hot.",
+        "translation_id": "Spring is neither cold nor hot."
+      },
+      {
+        "hanzi": "春天的花很漂亮。",
+        "pinyin": "chūntiān de huā hěn piàoliang",
+        "zhuyin": "ㄔㄨㄣ ㄊㄧㄢ ㄉㄜ˙ ㄏㄨㄚ ㄏㄣˇ ㄆㄧㄠˋ ㄌㄧㄤ˙",
+        "text": "春天的花很漂亮。",
+        "romanization": "chūntiān de huā hěn piàoliang",
+        "translation": "The spring flowers are very pretty.",
+        "translation_en": "The spring flowers are very pretty.",
+        "translation_id": "The spring flowers are very pretty."
+      },
+      {
+        "hanzi": "夏天很热,我常常游泳。",
+        "pinyin": "xiàtiān hěn rè wǒ chángcháng yóuyǒng",
+        "zhuyin": "ㄒㄧㄚˋ ㄊㄧㄢ ㄏㄣˇ ㄖㄜˋ ㄨㄛˇ ㄔㄤˊ ㄔㄤˊ ㄧㄡˊ ㄩㄥˇ",
+        "text": "夏天很热,我常常游泳。",
+        "romanization": "xiàtiān hěn rè wǒ chángcháng yóuyǒng",
+        "translation": "Summer is very hot, and I often swim.",
+        "translation_en": "Summer is very hot, and I often swim.",
+        "translation_id": "Summer is very hot, and I often swim."
+      },
+      {
+        "hanzi": "秋天的天气最好。",
+        "pinyin": "qiūtiān de tiānqì zuì hǎo",
+        "zhuyin": "ㄑㄧㄡ ㄊㄧㄢ ㄉㄜ˙ ㄊㄧㄢ ㄑㄧˋ ㄗㄨㄟˋ ㄏㄠˇ",
+        "text": "秋天的天气最好。",
+        "romanization": "qiūtiān de tiānqì zuì hǎo",
+        "translation": "The autumn weather is the best.",
+        "translation_en": "The autumn weather is the best.",
+        "translation_id": "The autumn weather is the best."
+      },
+      {
+        "hanzi": "秋天有很多水果。",
+        "pinyin": "qiūtiān yǒu hěn duō shuǐguǒ",
+        "zhuyin": "ㄑㄧㄡ ㄊㄧㄢ ㄧㄡˇ ㄏㄣˇ ㄉㄨㄛ ㄕㄨㄟˇ ㄍㄨㄛˇ",
+        "text": "秋天有很多水果。",
+        "romanization": "qiūtiān yǒu hěn duō shuǐguǒ",
+        "translation": "In autumn there is a lot of fruit.",
+        "translation_en": "In autumn there is a lot of fruit.",
+        "translation_id": "In autumn there is a lot of fruit."
+      },
+      {
+        "hanzi": "冬天很冷,有时候下雪。",
+        "pinyin": "dōngtiān hěn lěng yǒu shíhou xià xuě",
+        "zhuyin": "ㄉㄨㄥ ㄊㄧㄢ ㄏㄣˇ ㄌㄥˇ ㄧㄡˇ ㄕˊ ㄏㄡ˙ ㄒㄧㄚˋ ㄒㄩㄝˇ",
+        "text": "冬天很冷,有时候下雪。",
+        "romanization": "dōngtiān hěn lěng yǒu shíhou xià xuě",
+        "translation": "Winter is very cold, and sometimes it snows.",
+        "translation_en": "Winter is very cold, and sometimes it snows.",
+        "translation_id": "Winter is very cold, and sometimes it snows."
+      },
+      {
+        "hanzi": "我最喜欢秋天。",
+        "pinyin": "wǒ zuì xǐhuan qiūtiān",
+        "zhuyin": "ㄨㄛˇ ㄗㄨㄟˋ ㄒㄧˇ ㄏㄨㄢ˙ ㄑㄧㄡ ㄊㄧㄢ",
+        "text": "我最喜欢秋天。",
+        "romanization": "wǒ zuì xǐhuan qiūtiān",
+        "translation": "I like autumn best.",
+        "translation_en": "I like autumn best.",
+        "translation_id": "I like autumn best."
+      }
+    ]
+  },
+  {
+    "id": "r-qu-xuexiao",
+    "title": "去学校 — Going to School",
+    "type": "story",
+    "hsk": 1,
+    "wordCount": 69,
+    "summary": "A fifteen-minute walk, four morning classes, and a favorite one.",
+    "paragraphs": [
+      {
+        "hanzi": "我是学生,今年十二岁。",
+        "pinyin": "wǒ shì xuésheng jīnnián shí'èr suì",
+        "zhuyin": "ㄨㄛˇ ㄕˋ ㄒㄩㄝˊ ㄕㄥ˙ ㄐㄧㄣ ㄋㄧㄢˊ ㄕˊ ㄦˋ ㄙㄨㄟˋ",
+        "text": "我是学生,今年十二岁。",
+        "romanization": "wǒ shì xuésheng jīnnián shí'èr suì",
+        "translation": "I am a student, and I am twelve this year.",
+        "translation_en": "I am a student, and I am twelve this year.",
+        "translation_id": "I am a student, and I am twelve this year."
+      },
+      {
+        "hanzi": "我的学校不远。",
+        "pinyin": "wǒ de xuéxiào bù yuǎn",
+        "zhuyin": "ㄨㄛˇ ㄉㄜ˙ ㄒㄩㄝˊ ㄒㄧㄠˋ ㄅㄨˋ ㄩㄢˇ",
+        "text": "我的学校不远。",
+        "romanization": "wǒ de xuéxiào bù yuǎn",
+        "translation": "My school is not far.",
+        "translation_en": "My school is not far.",
+        "translation_id": "My school is not far."
+      },
+      {
+        "hanzi": "我每天走路去学校。",
+        "pinyin": "wǒ měitiān zǒu lù qù xuéxiào",
+        "zhuyin": "ㄨㄛˇ ㄇㄟˇ ㄊㄧㄢ ㄗㄡˇ ㄌㄨˋ ㄑㄩˋ ㄒㄩㄝˊ ㄒㄧㄠˋ",
+        "text": "我每天走路去学校。",
+        "romanization": "wǒ měitiān zǒu lù qù xuéxiào",
+        "translation": "Every day I walk to school.",
+        "translation_en": "Every day I walk to school.",
+        "translation_id": "Every day I walk to school."
+      },
+      {
+        "hanzi": "路上要十五分钟。",
+        "pinyin": "lù shàng yào shíwǔ fēnzhōng",
+        "zhuyin": "ㄌㄨˋ ㄕㄤˋ ㄧㄠˋ ㄕˊ ㄨˇ ㄈㄣ ㄓㄨㄥ",
+        "text": "路上要十五分钟。",
+        "romanization": "lù shàng yào shíwǔ fēnzhōng",
+        "translation": "The way takes fifteen minutes.",
+        "translation_en": "The way takes fifteen minutes.",
+        "translation_id": "The way takes fifteen minutes."
+      },
+      {
+        "hanzi": "我早上八点到学校。",
+        "pinyin": "wǒ zǎoshang bā diǎn dào xuéxiào",
+        "zhuyin": "ㄨㄛˇ ㄗㄠˇ ㄕㄤ˙ ㄅㄚ ㄉㄧㄢˇ ㄉㄠˋ ㄒㄩㄝˊ ㄒㄧㄠˋ",
+        "text": "我早上八点到学校。",
+        "romanization": "wǒ zǎoshang bā diǎn dào xuéxiào",
+        "translation": "I arrive at school at eight in the morning.",
+        "translation_en": "I arrive at school at eight in the morning.",
+        "translation_id": "I arrive at school at eight in the morning."
+      },
+      {
+        "hanzi": "我们上午有四节课。",
+        "pinyin": "wǒmen shàngwǔ yǒu sì jié kè",
+        "zhuyin": "ㄨㄛˇ ㄇㄣ˙ ㄕㄤˋ ㄨˇ ㄧㄡˇ ㄙˋ ㄐㄧㄝˊ ㄎㄜˋ",
+        "text": "我们上午有四节课。",
+        "romanization": "wǒmen shàngwǔ yǒu sì jié kè",
+        "translation": "We have four classes in the morning.",
+        "translation_en": "We have four classes in the morning.",
+        "translation_id": "We have four classes in the morning."
+      },
+      {
+        "hanzi": "我最喜欢中文课。",
+        "pinyin": "wǒ zuì xǐhuan Zhōngwén kè",
+        "zhuyin": "ㄨㄛˇ ㄗㄨㄟˋ ㄒㄧˇ ㄏㄨㄢ˙ ㄓㄨㄥ ㄨㄣˊ ㄎㄜˋ",
+        "text": "我最喜欢中文课。",
+        "romanization": "wǒ zuì xǐhuan Zhōngwén kè",
+        "translation": "I like the Chinese class best.",
+        "translation_en": "I like the Chinese class best.",
+        "translation_id": "I like the Chinese class best."
+      },
+      {
+        "hanzi": "下午四点我回家。",
+        "pinyin": "xiàwǔ sì diǎn wǒ huí jiā",
+        "zhuyin": "ㄒㄧㄚˋ ㄨˇ ㄙˋ ㄉㄧㄢˇ ㄨㄛˇ ㄏㄨㄟˊ ㄐㄧㄚ",
+        "text": "下午四点我回家。",
+        "romanization": "xiàwǔ sì diǎn wǒ huí jiā",
+        "translation": "At four in the afternoon I go home.",
+        "translation_en": "At four in the afternoon I go home.",
+        "translation_id": "At four in the afternoon I go home."
+      }
+    ]
+  },
+  {
+    "id": "r-shengri",
+    "title": "生日 — Birthday",
+    "type": "story",
+    "hsk": 1,
+    "wordCount": 69,
+    "summary": "Mother cooks, friends bring presents, and everyone sings.",
+    "paragraphs": [
+      {
+        "hanzi": "今天是我的生日。",
+        "pinyin": "jīntiān shì wǒ de shēngrì",
+        "zhuyin": "ㄐㄧㄣ ㄊㄧㄢ ㄕˋ ㄨㄛˇ ㄉㄜ˙ ㄕㄥ ㄖˋ",
+        "text": "今天是我的生日。",
+        "romanization": "jīntiān shì wǒ de shēngrì",
+        "translation": "Today is my birthday.",
+        "translation_en": "Today is my birthday.",
+        "translation_id": "Today is my birthday."
+      },
+      {
+        "hanzi": "我今年二十岁。",
+        "pinyin": "wǒ jīnnián èrshí suì",
+        "zhuyin": "ㄨㄛˇ ㄐㄧㄣ ㄋㄧㄢˊ ㄦˋ ㄕˊ ㄙㄨㄟˋ",
+        "text": "我今年二十岁。",
+        "romanization": "wǒ jīnnián èrshí suì",
+        "translation": "I am twenty this year.",
+        "translation_en": "I am twenty this year.",
+        "translation_id": "I am twenty this year."
+      },
+      {
+        "hanzi": "妈妈做了很多好吃的菜。",
+        "pinyin": "māma zuò le hěn duō hǎochī de cài",
+        "zhuyin": "ㄇㄚ ㄇㄚ˙ ㄗㄨㄛˋ ㄌㄜ˙ ㄏㄣˇ ㄉㄨㄛ ㄏㄠˇ ㄔ ㄉㄜ˙ ㄘㄞˋ",
+        "text": "妈妈做了很多好吃的菜。",
+        "romanization": "māma zuò le hěn duō hǎochī de cài",
+        "translation": "Mother made many tasty dishes.",
+        "translation_en": "Mother made many tasty dishes.",
+        "translation_id": "Mother made many tasty dishes."
+      },
+      {
+        "hanzi": "朋友们都来了。",
+        "pinyin": "péngyou men dōu lái le",
+        "zhuyin": "ㄆㄥˊ ㄧㄡ˙ ㄇㄣ˙ ㄉㄡ ㄌㄞˊ ㄌㄜ˙",
+        "text": "朋友们都来了。",
+        "romanization": "péngyou men dōu lái le",
+        "translation": "All my friends came.",
+        "translation_en": "All my friends came.",
+        "translation_id": "All my friends came."
+      },
+      {
+        "hanzi": "他们给我很多礼物。",
+        "pinyin": "tāmen gěi wǒ hěn duō lǐwù",
+        "zhuyin": "ㄊㄚ ㄇㄣ˙ ㄍㄟˇ ㄨㄛˇ ㄏㄣˇ ㄉㄨㄛ ㄌㄧˇ ㄨˋ",
+        "text": "他们给我很多礼物。",
+        "romanization": "tāmen gěi wǒ hěn duō lǐwù",
+        "translation": "They gave me many presents.",
+        "translation_en": "They gave me many presents.",
+        "translation_id": "They gave me many presents."
+      },
+      {
+        "hanzi": "我们一起吃蛋糕。",
+        "pinyin": "wǒmen yìqǐ chī dàngāo",
+        "zhuyin": "ㄨㄛˇ ㄇㄣ˙ ㄧˋ ㄑㄧˇ ㄔ ㄉㄢˋ ㄍㄠ",
+        "text": "我们一起吃蛋糕。",
+        "romanization": "wǒmen yìqǐ chī dàngāo",
+        "translation": "We ate cake together.",
+        "translation_en": "We ate cake together.",
+        "translation_id": "We ate cake together."
+      },
+      {
+        "hanzi": "大家唱歌,很热闹。",
+        "pinyin": "dàjiā chàng gē hěn rènao",
+        "zhuyin": "ㄉㄚˋ ㄐㄧㄚ ㄔㄤˋ ㄍㄜ ㄏㄣˇ ㄖㄜˋ ㄋㄠ˙",
+        "text": "大家唱歌,很热闹。",
+        "romanization": "dàjiā chàng gē hěn rènao",
+        "translation": "Everyone sang, and it was very lively.",
+        "translation_en": "Everyone sang, and it was very lively.",
+        "translation_id": "Everyone sang, and it was very lively."
+      },
+      {
+        "hanzi": "这是一个很好的生日。",
+        "pinyin": "zhè shì yí ge hěn hǎo de shēngrì",
+        "zhuyin": "ㄓㄜˋ ㄕˋ ㄧˊ ㄍㄜ˙ ㄏㄣˇ ㄏㄠˇ ㄉㄜ˙ ㄕㄥ ㄖˋ",
+        "text": "这是一个很好的生日。",
+        "romanization": "zhè shì yí ge hěn hǎo de shēngrì",
+        "translation": "This was a very good birthday.",
+        "translation_en": "This was a very good birthday.",
+        "translation_id": "This was a very good birthday."
+      }
+    ]
+  },
+  {
+    "id": "r-yanse",
+    "title": "颜色 — Colors",
+    "type": "story",
+    "hsk": 1,
+    "wordCount": 77,
+    "summary": "Everyone in the family likes a different color.",
+    "paragraphs": [
+      {
+        "hanzi": "我们家的人喜欢不同的颜色。",
+        "pinyin": "wǒmen jiā de rén xǐhuan bùtóng de yánsè",
+        "zhuyin": "ㄨㄛˇ ㄇㄣ˙ ㄐㄧㄚ ㄉㄜ˙ ㄖㄣˊ ㄒㄧˇ ㄏㄨㄢ˙ ㄅㄨˋ ㄊㄨㄥˊ ㄉㄜ˙ ㄧㄢˊ ㄙㄜˋ",
+        "text": "我们家的人喜欢不同的颜色。",
+        "romanization": "wǒmen jiā de rén xǐhuan bùtóng de yánsè",
+        "translation": "The people in our family like different colors.",
+        "translation_en": "The people in our family like different colors.",
+        "translation_id": "The people in our family like different colors."
+      },
+      {
+        "hanzi": "我喜欢蓝色。",
+        "pinyin": "wǒ xǐhuan lánsè",
+        "zhuyin": "ㄨㄛˇ ㄒㄧˇ ㄏㄨㄢ˙ ㄌㄢˊ ㄙㄜˋ",
+        "text": "我喜欢蓝色。",
+        "romanization": "wǒ xǐhuan lánsè",
+        "translation": "I like blue.",
+        "translation_en": "I like blue.",
+        "translation_id": "I like blue."
+      },
+      {
+        "hanzi": "我的衣服很多都是蓝的。",
+        "pinyin": "wǒ de yīfu hěn duō dōu shì lán de",
+        "zhuyin": "ㄨㄛˇ ㄉㄜ˙ ㄧ ㄈㄨ˙ ㄏㄣˇ ㄉㄨㄛ ㄉㄡ ㄕˋ ㄌㄢˊ ㄉㄜ˙",
+        "text": "我的衣服很多都是蓝的。",
+        "romanization": "wǒ de yīfu hěn duō dōu shì lán de",
+        "translation": "Many of my clothes are blue.",
+        "translation_en": "Many of my clothes are blue.",
+        "translation_id": "Many of my clothes are blue."
+      },
+      {
+        "hanzi": "妈妈喜欢红色。",
+        "pinyin": "māma xǐhuan hóngsè",
+        "zhuyin": "ㄇㄚ ㄇㄚ˙ ㄒㄧˇ ㄏㄨㄢ˙ ㄏㄨㄥˊ ㄙㄜˋ",
+        "text": "妈妈喜欢红色。",
+        "romanization": "māma xǐhuan hóngsè",
+        "translation": "Mother likes red.",
+        "translation_en": "Mother likes red.",
+        "translation_id": "Mother likes red."
+      },
+      {
+        "hanzi": "她说红色很好看。",
+        "pinyin": "tā shuō hóngsè hěn hǎokàn",
+        "zhuyin": "ㄊㄚ ㄕㄨㄛ ㄏㄨㄥˊ ㄙㄜˋ ㄏㄣˇ ㄏㄠˇ ㄎㄢˋ",
+        "text": "她说红色很好看。",
+        "romanization": "tā shuō hóngsè hěn hǎokàn",
+        "translation": "She says red looks very good.",
+        "translation_en": "She says red looks very good.",
+        "translation_id": "She says red looks very good."
+      },
+      {
+        "hanzi": "爸爸喜欢黑色和白色。",
+        "pinyin": "bàba xǐhuan hēisè hé báisè",
+        "zhuyin": "ㄅㄚˋ ㄅㄚ˙ ㄒㄧˇ ㄏㄨㄢ˙ ㄏㄟ ㄙㄜˋ ㄏㄜˊ ㄅㄞˊ ㄙㄜˋ",
+        "text": "爸爸喜欢黑色和白色。",
+        "romanization": "bàba xǐhuan hēisè hé báisè",
+        "translation": "Father likes black and white.",
+        "translation_en": "Father likes black and white.",
+        "translation_id": "Father likes black and white."
+      },
+      {
+        "hanzi": "我妹妹最喜欢黄色。",
+        "pinyin": "wǒ mèimei zuì xǐhuan huángsè",
+        "zhuyin": "ㄨㄛˇ ㄇㄟˋ ㄇㄟ˙ ㄗㄨㄟˋ ㄒㄧˇ ㄏㄨㄢ˙ ㄏㄨㄤˊ ㄙㄜˋ",
+        "text": "我妹妹最喜欢黄色。",
+        "romanization": "wǒ mèimei zuì xǐhuan huángsè",
+        "translation": "My younger sister likes yellow best.",
+        "translation_en": "My younger sister likes yellow best.",
+        "translation_id": "My younger sister likes yellow best."
+      },
+      {
+        "hanzi": "她的房间里都是黄色的东西。",
+        "pinyin": "tā de fángjiān lǐ dōu shì huángsè de dōngxi",
+        "zhuyin": "ㄊㄚ ㄉㄜ˙ ㄈㄤˊ ㄐㄧㄢ ㄌㄧˇ ㄉㄡ ㄕˋ ㄏㄨㄤˊ ㄙㄜˋ ㄉㄜ˙ ㄉㄨㄥ ㄒㄧ˙",
+        "text": "她的房间里都是黄色的东西。",
+        "romanization": "tā de fángjiān lǐ dōu shì huángsè de dōngxi",
+        "translation": "Everything in her room is yellow.",
+        "translation_en": "Everything in her room is yellow.",
+        "translation_id": "Everything in her room is yellow."
+      }
+    ]
+  },
+  {
+    "id": "r-wen-lu",
+    "title": "问路 — Asking Directions",
+    "type": "story",
+    "hsk": 1,
+    "wordCount": 92,
+    "summary": "Lost on the way to the station, and the stranger who helped.",
+    "paragraphs": [
+      {
+        "hanzi": "我想去火车站,可是不认识路。",
+        "pinyin": "wǒ xiǎng qù huǒchē zhàn kěshì bù rènshi lù",
+        "zhuyin": "ㄨㄛˇ ㄒㄧㄤˇ ㄑㄩˋ ㄏㄨㄛˇ ㄔㄜ ㄓㄢˋ ㄎㄜˇ ㄕˋ ㄅㄨˋ ㄖㄣˋ ㄕ˙ ㄌㄨˋ",
+        "text": "我想去火车站,可是不认识路。",
+        "romanization": "wǒ xiǎng qù huǒchē zhàn kěshì bù rènshi lù",
+        "translation": "I wanted to go to the train station, but I did not know the way.",
+        "translation_en": "I wanted to go to the train station, but I did not know the way.",
+        "translation_id": "I wanted to go to the train station, but I did not know the way."
+      },
+      {
+        "hanzi": "我问一个人:\"请问,火车站在哪儿?\"",
+        "pinyin": "wǒ wèn yí ge rén qǐngwèn huǒchē zhàn zài nǎr",
+        "zhuyin": "ㄨㄛˇ ㄨㄣˋ ㄧˊ ㄍㄜ˙ ㄖㄣˊ ㄑㄧㄥˇ ㄨㄣˋ ㄏㄨㄛˇ ㄔㄜ ㄓㄢˋ ㄗㄞˋ ㄋㄚˇ ㄦ˙",
+        "text": "我问一个人:\"请问,火车站在哪儿?\"",
+        "romanization": "wǒ wèn yí ge rén qǐngwèn huǒchē zhàn zài nǎr",
+        "translation": "I asked someone: \"Excuse me, where is the train station?\"",
+        "translation_en": "I asked someone: \"Excuse me, where is the train station?\"",
+        "translation_id": "I asked someone: \"Excuse me, where is the train station?\""
+      },
+      {
+        "hanzi": "他说:\"你往前走。\"",
+        "pinyin": "tā shuō nǐ wǎng qián zǒu",
+        "zhuyin": "ㄊㄚ ㄕㄨㄛ ㄋㄧˇ ㄨㄤˇ ㄑㄧㄢˊ ㄗㄡˇ",
+        "text": "他说:\"你往前走。\"",
+        "romanization": "tā shuō nǐ wǎng qián zǒu",
+        "translation": "He said: \"Walk straight ahead.\"",
+        "translation_en": "He said: \"Walk straight ahead.\"",
+        "translation_id": "He said: \"Walk straight ahead.\""
+      },
+      {
+        "hanzi": "\"到那个路口往右拐。\"",
+        "pinyin": "dào nà ge lùkǒu wǎng yòu guǎi",
+        "zhuyin": "ㄉㄠˋ ㄋㄚˋ ㄍㄜ˙ ㄌㄨˋ ㄎㄡˇ ㄨㄤˇ ㄧㄡˋ ㄍㄨㄞˇ",
+        "text": "\"到那个路口往右拐。\"",
+        "romanization": "dào nà ge lùkǒu wǎng yòu guǎi",
+        "translation": "\"At that crossing, turn right.\"",
+        "translation_en": "\"At that crossing, turn right.\"",
+        "translation_id": "\"At that crossing, turn right.\""
+      },
+      {
+        "hanzi": "\"走五分钟就到了。\"",
+        "pinyin": "zǒu wǔ fēnzhōng jiù dào le",
+        "zhuyin": "ㄗㄡˇ ㄨˇ ㄈㄣ ㄓㄨㄥ ㄐㄧㄡˋ ㄉㄠˋ ㄌㄜ˙",
+        "text": "\"走五分钟就到了。\"",
+        "romanization": "zǒu wǔ fēnzhōng jiù dào le",
+        "translation": "\"Walk five minutes and you are there.\"",
+        "translation_en": "\"Walk five minutes and you are there.\"",
+        "translation_id": "\"Walk five minutes and you are there.\""
+      },
+      {
+        "hanzi": "我说:\"谢谢你!\"",
+        "pinyin": "wǒ shuō xièxie nǐ",
+        "zhuyin": "ㄨㄛˇ ㄕㄨㄛ ㄒㄧㄝˋ ㄒㄧㄝ˙ ㄋㄧˇ",
+        "text": "我说:\"谢谢你!\"",
+        "romanization": "wǒ shuō xièxie nǐ",
+        "translation": "I said: \"Thank you!\"",
+        "translation_en": "I said: \"Thank you!\"",
+        "translation_id": "I said: \"Thank you!\""
+      },
+      {
+        "hanzi": "他说:\"不客气。\"",
+        "pinyin": "tā shuō bú kèqi",
+        "zhuyin": "ㄊㄚ ㄕㄨㄛ ㄅㄨˊ ㄎㄜˋ ㄑㄧ˙",
+        "text": "他说:\"不客气。\"",
+        "romanization": "tā shuō bú kèqi",
+        "translation": "He said: \"You're welcome.\"",
+        "translation_en": "He said: \"You're welcome.\"",
+        "translation_id": "He said: \"You're welcome.\""
+      },
+      {
+        "hanzi": "我很快就找到了火车站。",
+        "pinyin": "wǒ hěn kuài jiù zhǎo dào le huǒchē zhàn",
+        "zhuyin": "ㄨㄛˇ ㄏㄣˇ ㄎㄨㄞˋ ㄐㄧㄡˋ ㄓㄠˇ ㄉㄠˋ ㄌㄜ˙ ㄏㄨㄛˇ ㄔㄜ ㄓㄢˋ",
+        "text": "我很快就找到了火车站。",
+        "romanization": "wǒ hěn kuài jiù zhǎo dào le huǒchē zhàn",
+        "translation": "I found the train station very quickly.",
+        "translation_en": "I found the train station very quickly.",
+        "translation_id": "I found the train station very quickly."
+      }
+    ]
   }
 ]

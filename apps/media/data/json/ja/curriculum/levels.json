@@ -6,7 +6,20 @@
     "subtitle": "初級",
     "order": 1,
     "examType": "jlpt",
-    "unitIds": ["ja-n5-u1", "ja-n5-u2", "ja-n5-u3", "ja-n5-u4"]
+    "unitIds": [
+      "ja-n5-t1",
+      "ja-n5-t2",
+      "ja-n5-t3",
+      "ja-n5-t4",
+      "ja-n5-t5",
+      "ja-n5-t6",
+      "ja-n5-t7",
+      "ja-n5-t8",
+      "ja-n5-u1",
+      "ja-n5-u2",
+      "ja-n5-u3",
+      "ja-n5-u4"
+    ]
   },
   {
     "id": "ja-n4",
@@ -15,7 +28,17 @@
     "subtitle": "基礎",
     "order": 2,
     "examType": "jlpt",
-    "unitIds": ["ja-n4-u1", "ja-n4-u2"]
+    "unitIds": [
+      "ja-n4-t1",
+      "ja-n4-t2",
+      "ja-n4-t3",
+      "ja-n4-t4",
+      "ja-n4-t5",
+      "ja-n4-t6",
+      "ja-n4-t7",
+      "ja-n4-u1",
+      "ja-n4-u2"
+    ]
   },
   {
     "id": "ja-n3",
@@ -24,7 +47,17 @@
     "subtitle": "中級",
     "order": 3,
     "examType": "jlpt",
-    "unitIds": ["ja-n3-u1"]
+    "unitIds": [
+      "ja-n3-t1",
+      "ja-n3-t2",
+      "ja-n3-t3",
+      "ja-n3-t4",
+      "ja-n3-t5",
+      "ja-n3-t6",
+      "ja-n3-t7",
+      "ja-n3-t8",
+      "ja-n3-u1"
+    ]
   },
   {
     "id": "ja-n2",
@@ -33,7 +66,17 @@
     "subtitle": "準上級",
     "order": 4,
     "examType": "jlpt",
-    "unitIds": ["ja-n2-u1"]
+    "unitIds": [
+      "ja-n2-t1",
+      "ja-n2-t2",
+      "ja-n2-t3",
+      "ja-n2-t4",
+      "ja-n2-t5",
+      "ja-n2-t6",
+      "ja-n2-t7",
+      "ja-n2-t8",
+      "ja-n2-u1"
+    ]
   },
   {
     "id": "ja-n1",
@@ -42,6 +85,15 @@
     "subtitle": "上級",
     "order": 5,
     "examType": "jlpt",
-    "unitIds": []
+    "unitIds": [
+      "ja-n1-t1",
+      "ja-n1-t2",
+      "ja-n1-t3",
+      "ja-n1-t4",
+      "ja-n1-t5",
+      "ja-n1-t6",
+      "ja-n1-t7",
+      "ja-n1-t8"
+    ]
   }
 ]

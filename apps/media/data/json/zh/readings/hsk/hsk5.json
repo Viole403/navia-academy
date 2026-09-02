@@ -857,5 +857,2205 @@
       "liang",
       "。"
     ]
+  },
+  {
+    "id": "r-gongxiang-danche-de-chengshi",
+    "title": "共享单车的城市 — Cities of Shared Bicycles",
+    "type": "story",
+    "hsk": 5,
+    "wordCount": 364,
+    "summary": "How bike-sharing reshaped Chinese cities, for better and for worse.",
+    "paragraphs": [
+      {
+        "hanzi": "几年前,共享单车在中国的城市迅速普及。",
+        "pinyin": "jǐ nián qián gòngxiǎng dānchē zài Zhōngguó de chéngshì xùnsù pǔjí",
+        "zhuyin": "ㄐㄧˇ ㄋㄧㄢˊ ㄑㄧㄢˊ ㄍㄨㄥˋ ㄒㄧㄤˇ ㄉㄢ ㄔㄜ ㄗㄞˋ ㄓㄨㄥ ㄍㄨㄛˊ ㄉㄜ˙ ㄔㄥˊ ㄕˋ ㄒㄩㄣˋ ㄙㄨˋ ㄆㄨˇ ㄐㄧˊ",
+        "text": "几年前,共享单车在中国的城市迅速普及。",
+        "romanization": "jǐ nián qián gòngxiǎng dānchē zài Zhōngguó de chéngshì xùnsù pǔjí",
+        "translation": "A few years ago, shared bicycles spread rapidly across cities in China.",
+        "translation_en": "A few years ago, shared bicycles spread rapidly across cities in China.",
+        "translation_id": "A few years ago, shared bicycles spread rapidly across cities in China."
+      },
+      {
+        "hanzi": "只要用手机扫一下,就可以骑车去任何地方。",
+        "pinyin": "zhǐyào yòng shǒujī sǎo yíxià jiù kěyǐ qíchē qù rènhé dìfang",
+        "zhuyin": "ㄓˇ ㄧㄠˋ ㄩㄥˋ ㄕㄡˇ ㄐㄧ ㄙㄠˇ ㄧˊ ㄒㄧㄚˋ ㄐㄧㄡˋ ㄎㄜˇ ㄧˇ ㄑㄧˊ ㄔㄜ ㄑㄩˋ ㄖㄣˋ ㄏㄜˊ ㄉㄧˋ ㄈㄤ˙",
+        "text": "只要用手机扫一下,就可以骑车去任何地方。",
+        "romanization": "zhǐyào yòng shǒujī sǎo yíxià jiù kěyǐ qíchē qù rènhé dìfang",
+        "translation": "With just a swipe of your phone, you can ride one anywhere.",
+        "translation_en": "With just a swipe of your phone, you can ride one anywhere.",
+        "translation_id": "With just a swipe of your phone, you can ride one anywhere."
+      },
+      {
+        "hanzi": "它解决了所谓\"最后一公里\"的出行难题。",
+        "pinyin": "tā jiějué le suǒwèi zuìhòu yì gōnglǐ de chūxíng nántí",
+        "zhuyin": "ㄊㄚ ㄐㄧㄝˇ ㄐㄩㄝˊ ㄌㄜ˙ ㄙㄨㄛˇ ㄨㄟˋ ㄗㄨㄟˋ ㄏㄡˋ ㄧˋ ㄍㄨㄥ ㄌㄧˇ ㄉㄜ˙ ㄔㄨ ㄒㄧㄥˊ ㄋㄢˊ ㄊㄧˊ",
+        "text": "它解决了所谓\"最后一公里\"的出行难题。",
+        "romanization": "tā jiějué le suǒwèi zuìhòu yì gōnglǐ de chūxíng nántí",
+        "translation": "It solved the so-called \"last mile\" transportation problem.",
+        "translation_en": "It solved the so-called \"last mile\" transportation problem.",
+        "translation_id": "It solved the so-called \"last mile\" transportation problem."
+      },
+      {
+        "hanzi": "然而,盲目扩张很快带来了严重的管理问题。",
+        "pinyin": "rán'ér mángmù kuòzhāng hěn kuài dàilái le yánzhòng de guǎnlǐ wèntí",
+        "zhuyin": "ㄖㄢˊ ㄦˊ ㄇㄤˊ ㄇㄨˋ ㄎㄨㄛˋ ㄓㄤ ㄏㄣˇ ㄎㄨㄞˋ ㄉㄞˋ ㄌㄞˊ ㄌㄜ˙ ㄧㄢˊ ㄓㄨㄥˋ ㄉㄜ˙ ㄍㄨㄢˇ ㄌㄧˇ ㄨㄣˋ ㄊㄧˊ",
+        "text": "然而,盲目扩张很快带来了严重的管理问题。",
+        "romanization": "rán'ér mángmù kuòzhāng hěn kuài dàilái le yánzhòng de guǎnlǐ wèntí",
+        "translation": "But blind expansion soon brought serious management problems.",
+        "translation_en": "But blind expansion soon brought serious management problems.",
+        "translation_id": "But blind expansion soon brought serious management problems."
+      },
+      {
+        "hanzi": "街道上的自行车乱停乱放,挡住了行人的路。",
+        "pinyin": "jiēdào shàng de zìxíngchē luàn tíng luàn fàng dǎng zhù le xíngrén de lù",
+        "zhuyin": "ㄐㄧㄝ ㄉㄠˋ ㄕㄤˋ ㄉㄜ˙ ㄗˋ ㄒㄧㄥˊ ㄔㄜ ㄌㄨㄢˋ ㄊㄧㄥˊ ㄌㄨㄢˋ ㄈㄤˋ ㄉㄤˇ ㄓㄨˋ ㄌㄜ˙ ㄒㄧㄥˊ ㄖㄣˊ ㄉㄜ˙ ㄌㄨˋ",
+        "text": "街道上的自行车乱停乱放,挡住了行人的路。",
+        "romanization": "jiēdào shàng de zìxíngchē luàn tíng luàn fàng dǎng zhù le xíngrén de lù",
+        "translation": "Bicycles were piled randomly on sidewalks, blocking pedestrians.",
+        "translation_en": "Bicycles were piled randomly on sidewalks, blocking pedestrians.",
+        "translation_id": "Bicycles were piled randomly on sidewalks, blocking pedestrians."
+      },
+      {
+        "hanzi": "不少公司因为扩张太快,最后破产倒闭。",
+        "pinyin": "bùshǎo gōngsī yīnwèi kuòzhāng tài kuài zuìhòu pòchǎn dǎobì",
+        "zhuyin": "ㄅㄨˋ ㄕㄠˇ ㄍㄨㄥ ㄙ ㄧㄣ ㄨㄟˋ ㄎㄨㄛˋ ㄓㄤ ㄊㄞˋ ㄎㄨㄞˋ ㄗㄨㄟˋ ㄏㄡˋ ㄆㄛˋ ㄔㄢˇ ㄉㄠˇ ㄅㄧˋ",
+        "text": "不少公司因为扩张太快,最后破产倒闭。",
+        "romanization": "bùshǎo gōngsī yīnwèi kuòzhāng tài kuài zuìhòu pòchǎn dǎobì",
+        "translation": "Many companies expanded too fast and eventually went bankrupt.",
+        "translation_en": "Many companies expanded too fast and eventually went bankrupt.",
+        "translation_id": "Many companies expanded too fast and eventually went bankrupt."
+      },
+      {
+        "hanzi": "如今,这个行业已经成熟,共享单车成了城市基础设施的一部分。",
+        "pinyin": "rújīn zhège hángyè yǐjīng chéngshú gòngxiǎng dānchē chéng le chéngshì jīchǔ shèshī de yí bùfen",
+        "zhuyin": "ㄖㄨˊ ㄐㄧㄣ ㄓㄜˋ ㄍㄜ˙ ㄏㄤˊ ㄧㄝˋ ㄧˇ ㄐㄧㄥ ㄔㄥˊ ㄕㄨˊ ㄍㄨㄥˋ ㄒㄧㄤˇ ㄉㄢ ㄔㄜ ㄔㄥˊ ㄌㄜ˙ ㄔㄥˊ ㄕˋ ㄐㄧ ㄔㄨˇ ㄕㄜˋ ㄕ ㄉㄜ˙ ㄧˊ ㄅㄨˋ ㄈㄣ˙",
+        "text": "如今,这个行业已经成熟,共享单车成了城市基础设施的一部分。",
+        "romanization": "rújīn zhège hángyè yǐjīng chéngshú gòngxiǎng dānchē chéng le chéngshì jīchǔ shèshī de yí bùfen",
+        "translation": "Now the industry has matured, and shared bicycles have become part of urban infrastructure.",
+        "translation_en": "Now the industry has matured, and shared bicycles have become part of urban infrastructure.",
+        "translation_id": "Now the industry has matured, and shared bicycles have become part of urban infrastructure."
+      },
+      {
+        "hanzi": "这是一个非常中国式的故事:先爆发式增长,再小心治理。",
+        "pinyin": "zhè shì yí ge fēicháng Zhōngguó shì de gùshi xiān bàofāshì zēngzhǎng zài xiǎoxīn zhìlǐ",
+        "zhuyin": "ㄓㄜˋ ㄕˋ ㄧˊ ㄍㄜ˙ ㄈㄟ ㄔㄤˊ ㄓㄨㄥ ㄍㄨㄛˊ ㄕˋ ㄉㄜ˙ ㄍㄨˋ ㄕ˙ ㄒㄧㄢ ㄅㄠˋ ㄈㄚ ㄕˋ ㄗㄥ ㄓㄤˇ ㄗㄞˋ ㄒㄧㄠˇ ㄒㄧㄣ ㄓˋ ㄌㄧˇ",
+        "text": "这是一个非常中国式的故事:先爆发式增长,再小心治理。",
+        "romanization": "zhè shì yí ge fēicháng Zhōngguó shì de gùshi xiān bàofāshì zēngzhǎng zài xiǎoxīn zhìlǐ",
+        "translation": "It's a very Chinese story — explosive growth followed by careful regulation.",
+        "translation_en": "It's a very Chinese story — explosive growth followed by careful regulation.",
+        "translation_id": "It's a very Chinese story — explosive growth followed by careful regulation."
+      },
+      {
+        "hanzi": "最疯狂的时候,有几十家公司同时投放单车。",
+        "pinyin": "zuì fēngkuáng de shíhou yǒu jǐshí jiā gōngsī tóngshí tóufàng dānchē",
+        "zhuyin": "ㄗㄨㄟˋ ㄈㄥ ㄎㄨㄤˊ ㄉㄜ˙ ㄕˊ ㄏㄡ˙ ㄧㄡˇ ㄐㄧˇ ㄕˊ ㄐㄧㄚ ㄍㄨㄥ ㄙ ㄊㄨㄥˊ ㄕˊ ㄊㄡˊ ㄈㄤˋ ㄉㄢ ㄔㄜ",
+        "text": "最疯狂的时候,有几十家公司同时投放单车。",
+        "romanization": "zuì fēngkuáng de shíhou yǒu jǐshí jiā gōngsī tóngshí tóufàng dānchē",
+        "translation": "At the maddest point, dozens of companies were putting out bicycles at once.",
+        "translation_en": "At the maddest point, dozens of companies were putting out bicycles at once.",
+        "translation_id": "At the maddest point, dozens of companies were putting out bicycles at once."
+      },
+      {
+        "hanzi": "每家都用不同的颜色,街上像开了一场比赛。",
+        "pinyin": "měi jiā dōu yòng bùtóng de yánsè jiē shàng xiàng kāi le yì chǎng bǐsài",
+        "zhuyin": "ㄇㄟˇ ㄐㄧㄚ ㄉㄡ ㄩㄥˋ ㄅㄨˋ ㄊㄨㄥˊ ㄉㄜ˙ ㄧㄢˊ ㄙㄜˋ ㄐㄧㄝ ㄕㄤˋ ㄒㄧㄤˋ ㄎㄞ ㄌㄜ˙ ㄧˋ ㄔㄤˇ ㄅㄧˇ ㄙㄞˋ",
+        "text": "每家都用不同的颜色,街上像开了一场比赛。",
+        "romanization": "měi jiā dōu yòng bùtóng de yánsè jiē shàng xiàng kāi le yì chǎng bǐsài",
+        "translation": "Each used a different color, and the streets looked like a race had opened.",
+        "translation_en": "Each used a different color, and the streets looked like a race had opened.",
+        "translation_id": "Each used a different color, and the streets looked like a race had opened."
+      },
+      {
+        "hanzi": "黄色、橙色、蓝色、绿色,人们叫它们\"彩虹大战\"。",
+        "pinyin": "huángsè chéngsè lánsè lǜsè rénmen jiào tāmen cǎihóng dàzhàn",
+        "zhuyin": "ㄏㄨㄤˊ ㄙㄜˋ ㄔㄥˊ ㄙㄜˋ ㄌㄢˊ ㄙㄜˋ ㄌㄩˋ ㄙㄜˋ ㄖㄣˊ ㄇㄣ˙ ㄐㄧㄠˋ ㄊㄚ ㄇㄣ˙ ㄘㄞˇ ㄏㄨㄥˊ ㄉㄚˋ ㄓㄢˋ",
+        "text": "黄色、橙色、蓝色、绿色,人们叫它们\"彩虹大战\"。",
+        "romanization": "huángsè chéngsè lánsè lǜsè rénmen jiào tāmen cǎihóng dàzhàn",
+        "translation": "Yellow, orange, blue, green — people called it the \"rainbow war\".",
+        "translation_en": "Yellow, orange, blue, green — people called it the \"rainbow war\".",
+        "translation_id": "Yellow, orange, blue, green — people called it the \"rainbow war\"."
+      },
+      {
+        "hanzi": "公司为了抢用户,甚至推出一元骑一个月的活动。",
+        "pinyin": "gōngsī wèile qiǎng yònghù shènzhì tuīchū yì yuán qí yí ge yuè de huódòng",
+        "zhuyin": "ㄍㄨㄥ ㄙ ㄨㄟˋ ㄌㄜ˙ ㄑㄧㄤˇ ㄩㄥˋ ㄏㄨˋ ㄕㄣˋ ㄓˋ ㄊㄨㄟ ㄔㄨ ㄧˋ ㄩㄢˊ ㄑㄧˊ ㄧˊ ㄍㄜ˙ ㄩㄝˋ ㄉㄜ˙ ㄏㄨㄛˊ ㄉㄨㄥˋ",
+        "text": "公司为了抢用户,甚至推出一元骑一个月的活动。",
+        "romanization": "gōngsī wèile qiǎng yònghù shènzhì tuīchū yì yuán qí yí ge yuè de huódòng",
+        "translation": "To grab users, companies even ran promotions of one yuan for a whole month.",
+        "translation_en": "To grab users, companies even ran promotions of one yuan for a whole month.",
+        "translation_id": "To grab users, companies even ran promotions of one yuan for a whole month."
+      },
+      {
+        "hanzi": "结果是钱烧完了,车却还堆在路边。",
+        "pinyin": "jiéguǒ shì qián shāo wán le chē què hái duī zài lù biān",
+        "zhuyin": "ㄐㄧㄝˊ ㄍㄨㄛˇ ㄕˋ ㄑㄧㄢˊ ㄕㄠ ㄨㄢˊ ㄌㄜ˙ ㄔㄜ ㄑㄩㄝˋ ㄏㄞˊ ㄉㄨㄟ ㄗㄞˋ ㄌㄨˋ ㄅㄧㄢ",
+        "text": "结果是钱烧完了,车却还堆在路边。",
+        "romanization": "jiéguǒ shì qián shāo wán le chē què hái duī zài lù biān",
+        "translation": "The result was that the money burned away while the bikes still piled up on the roadside.",
+        "translation_en": "The result was that the money burned away while the bikes still piled up on the roadside.",
+        "translation_id": "The result was that the money burned away while the bikes still piled up on the roadside."
+      },
+      {
+        "hanzi": "有些城市出现了巨大的\"单车坟场\"。",
+        "pinyin": "yǒu xiē chéngshì chūxiàn le jùdà de dānchē fénchǎng",
+        "zhuyin": "ㄧㄡˇ ㄒㄧㄝ ㄔㄥˊ ㄕˋ ㄔㄨ ㄒㄧㄢˋ ㄌㄜ˙ ㄐㄩˋ ㄉㄚˋ ㄉㄜ˙ ㄉㄢ ㄔㄜ ㄈㄣˊ ㄔㄤˇ",
+        "text": "有些城市出现了巨大的\"单车坟场\"。",
+        "romanization": "yǒu xiē chéngshì chūxiàn le jùdà de dānchē fénchǎng",
+        "translation": "Some cities grew enormous \"bicycle graveyards\".",
+        "translation_en": "Some cities grew enormous \"bicycle graveyards\".",
+        "translation_id": "Some cities grew enormous \"bicycle graveyards\"."
+      },
+      {
+        "hanzi": "成千上万辆车锈在空地上,从高处看非常震撼。",
+        "pinyin": "chéng qiān shàng wàn liàng chē xiù zài kòngdì shàng cóng gāochù kàn fēicháng zhènhàn",
+        "zhuyin": "ㄔㄥˊ ㄑㄧㄢ ㄕㄤˋ ㄨㄢˋ ㄌㄧㄤˋ ㄔㄜ ㄒㄧㄡˋ ㄗㄞˋ ㄎㄨㄥˋ ㄉㄧˋ ㄕㄤˋ ㄘㄨㄥˊ ㄍㄠ ㄔㄨˋ ㄎㄢˋ ㄈㄟ ㄔㄤˊ ㄓㄣˋ ㄏㄢˋ",
+        "text": "成千上万辆车锈在空地上,从高处看非常震撼。",
+        "romanization": "chéng qiān shàng wàn liàng chē xiù zài kòngdì shàng cóng gāochù kàn fēicháng zhènhàn",
+        "translation": "Tens of thousands of bikes rusted on open ground, staggering to see from above.",
+        "translation_en": "Tens of thousands of bikes rusted on open ground, staggering to see from above.",
+        "translation_id": "Tens of thousands of bikes rusted on open ground, staggering to see from above."
+      },
+      {
+        "hanzi": "后来政府开始限制投放的数量。",
+        "pinyin": "hòulái zhèngfǔ kāishǐ xiànzhì tóufàng de shùliàng",
+        "zhuyin": "ㄏㄡˋ ㄌㄞˊ ㄓㄥˋ ㄈㄨˇ ㄎㄞ ㄕˇ ㄒㄧㄢˋ ㄓˋ ㄊㄡˊ ㄈㄤˋ ㄉㄜ˙ ㄕㄨˋ ㄌㄧㄤˋ",
+        "text": "后来政府开始限制投放的数量。",
+        "romanization": "hòulái zhèngfǔ kāishǐ xiànzhì tóufàng de shùliàng",
+        "translation": "Later the government began limiting how many could be put out.",
+        "translation_en": "Later the government began limiting how many could be put out.",
+        "translation_id": "Later the government began limiting how many could be put out."
+      },
+      {
+        "hanzi": "也要求企业把用户的押金存进专门的账户。",
+        "pinyin": "yě yāoqiú qǐyè bǎ yònghù de yājīn cún jìn zhuānmén de zhànghù",
+        "zhuyin": "ㄧㄝˇ ㄧㄠ ㄑㄧㄡˊ ㄑㄧˇ ㄧㄝˋ ㄅㄚˇ ㄩㄥˋ ㄏㄨˋ ㄉㄜ˙ ㄧㄚ ㄐㄧㄣ ㄘㄨㄣˊ ㄐㄧㄣˋ ㄓㄨㄢ ㄇㄣˊ ㄉㄜ˙ ㄓㄤˋ ㄏㄨˋ",
+        "text": "也要求企业把用户的押金存进专门的账户。",
+        "romanization": "yě yāoqiú qǐyè bǎ yònghù de yājīn cún jìn zhuānmén de zhànghù",
+        "translation": "It also required firms to hold user deposits in dedicated accounts.",
+        "translation_en": "It also required firms to hold user deposits in dedicated accounts.",
+        "translation_id": "It also required firms to hold user deposits in dedicated accounts."
+      },
+      {
+        "hanzi": "现在剩下的几家公司规模小了,却活得更稳。",
+        "pinyin": "xiànzài shèng xià de jǐ jiā gōngsī guīmó xiǎo le què huó de gèng wěn",
+        "zhuyin": "ㄒㄧㄢˋ ㄗㄞˋ ㄕㄥˋ ㄒㄧㄚˋ ㄉㄜ˙ ㄐㄧˇ ㄐㄧㄚ ㄍㄨㄥ ㄙ ㄍㄨㄟ ㄇㄛˊ ㄒㄧㄠˇ ㄌㄜ˙ ㄑㄩㄝˋ ㄏㄨㄛˊ ㄉㄜ˙ ㄍㄥˋ ㄨㄣˇ",
+        "text": "现在剩下的几家公司规模小了,却活得更稳。",
+        "romanization": "xiànzài shèng xià de jǐ jiā gōngsī guīmó xiǎo le què huó de gèng wěn",
+        "translation": "The few firms left today are smaller in scale but live far more steadily.",
+        "translation_en": "The few firms left today are smaller in scale but live far more steadily.",
+        "translation_id": "The few firms left today are smaller in scale but live far more steadily."
+      }
+    ]
+  },
+  {
+    "id": "r-zaijia-bangong-de-tiaozhan",
+    "title": "在家办公的挑战 — The Challenges of Working from Home",
+    "type": "story",
+    "hsk": 5,
+    "wordCount": 342,
+    "summary": "What freedom from the commute really means.",
+    "paragraphs": [
+      {
+        "hanzi": "疫情之后,许多公司开始允许员工在家办公。",
+        "pinyin": "yìqíng zhīhòu xǔduō gōngsī kāishǐ yǔnxǔ yuángōng zàijiā bàngōng",
+        "zhuyin": "ㄧˋ ㄑㄧㄥˊ ㄓ ㄏㄡˋ ㄒㄩˇ ㄉㄨㄛ ㄍㄨㄥ ㄙ ㄎㄞ ㄕˇ ㄩㄣˇ ㄒㄩˇ ㄩㄢˊ ㄍㄨㄥ ㄗㄞˋ ㄐㄧㄚ ㄅㄢˋ ㄍㄨㄥ",
+        "text": "疫情之后,许多公司开始允许员工在家办公。",
+        "romanization": "yìqíng zhīhòu xǔduō gōngsī kāishǐ yǔnxǔ yuángōng zàijiā bàngōng",
+        "translation": "After the pandemic, many companies started letting employees work from home.",
+        "translation_en": "After the pandemic, many companies started letting employees work from home.",
+        "translation_id": "After the pandemic, many companies started letting employees work from home."
+      },
+      {
+        "hanzi": "以前我以为在家办公是最舒适的安排。",
+        "pinyin": "yǐqián wǒ yǐwéi zàijiā bàngōng shì zuì shūshì de ānpái",
+        "zhuyin": "ㄧˇ ㄑㄧㄢˊ ㄨㄛˇ ㄧˇ ㄨㄟˊ ㄗㄞˋ ㄐㄧㄚ ㄅㄢˋ ㄍㄨㄥ ㄕˋ ㄗㄨㄟˋ ㄕㄨ ㄕˋ ㄉㄜ˙ ㄢ ㄆㄞˊ",
+        "text": "以前我以为在家办公是最舒适的安排。",
+        "romanization": "yǐqián wǒ yǐwéi zàijiā bàngōng shì zuì shūshì de ānpái",
+        "translation": "I used to think working from home would be the most comfortable arrangement.",
+        "translation_en": "I used to think working from home would be the most comfortable arrangement.",
+        "translation_id": "I used to think working from home would be the most comfortable arrangement."
+      },
+      {
+        "hanzi": "可是过了一段时间,我发现工作和生活的界限反而更模糊。",
+        "pinyin": "kěshì guò le yí duàn shíjiān wǒ fāxiàn gōngzuò hé shēnghuó de jièxiàn fǎn'ér gèng móhu",
+        "zhuyin": "ㄎㄜˇ ㄕˋ ㄍㄨㄛˋ ㄌㄜ˙ ㄧˊ ㄉㄨㄢˋ ㄕˊ ㄐㄧㄢ ㄨㄛˇ ㄈㄚ ㄒㄧㄢˋ ㄍㄨㄥ ㄗㄨㄛˋ ㄏㄜˊ ㄕㄥ ㄏㄨㄛˊ ㄉㄜ˙ ㄐㄧㄝˋ ㄒㄧㄢˋ ㄈㄢˇ ㄦˊ ㄍㄥˋ ㄇㄛˊ ㄏㄨ˙",
+        "text": "可是过了一段时间,我发现工作和生活的界限反而更模糊。",
+        "romanization": "kěshì guò le yí duàn shíjiān wǒ fāxiàn gōngzuò hé shēnghuó de jièxiàn fǎn'ér gèng móhu",
+        "translation": "But after a while, I realized the boundary between work and life is more blurred.",
+        "translation_en": "But after a while, I realized the boundary between work and life is more blurred.",
+        "translation_id": "But after a while, I realized the boundary between work and life is more blurred."
+      },
+      {
+        "hanzi": "没有通勤,也意味着你可能二十四小时都在\"上班\"。",
+        "pinyin": "méiyǒu tōngqín yě yìwèizhe nǐ kěnéng èrshísì xiǎoshí dōu zài shàngbān",
+        "zhuyin": "ㄇㄟˊ ㄧㄡˇ ㄊㄨㄥ ㄑㄧㄣˊ ㄧㄝˇ ㄧˋ ㄨㄟˋ ㄓㄜ˙ ㄋㄧˇ ㄎㄜˇ ㄋㄥˊ ㄦˋ ㄕˊ ㄙˋ ㄒㄧㄠˇ ㄕˊ ㄉㄡ ㄗㄞˋ ㄕㄤˋ ㄅㄢ",
+        "text": "没有通勤,也意味着你可能二十四小时都在\"上班\"。",
+        "romanization": "méiyǒu tōngqín yě yìwèizhe nǐ kěnéng èrshísì xiǎoshí dōu zài shàngbān",
+        "translation": "Without a commute, you can also feel like you're \"on duty\" 24 hours a day.",
+        "translation_en": "Without a commute, you can also feel like you're \"on duty\" 24 hours a day.",
+        "translation_id": "Without a commute, you can also feel like you're \"on duty\" 24 hours a day."
+      },
+      {
+        "hanzi": "和同事之间少了闲聊,创意上的协作也变得困难。",
+        "pinyin": "hé tóngshì zhījiān shǎo le xiánliáo chuàngyì shàng de xiézuò yě biànde kùnnán",
+        "zhuyin": "ㄏㄜˊ ㄊㄨㄥˊ ㄕˋ ㄓ ㄐㄧㄢ ㄕㄠˇ ㄌㄜ˙ ㄒㄧㄢˊ ㄌㄧㄠˊ ㄔㄨㄤˋ ㄧˋ ㄕㄤˋ ㄉㄜ˙ ㄒㄧㄝˊ ㄗㄨㄛˋ ㄧㄝˇ ㄅㄧㄢˋ ㄉㄜ˙ ㄎㄨㄣˋ ㄋㄢˊ",
+        "text": "和同事之间少了闲聊,创意上的协作也变得困难。",
+        "romanization": "hé tóngshì zhījiān shǎo le xiánliáo chuàngyì shàng de xiézuò yě biànde kùnnán",
+        "translation": "There's no chitchat with colleagues, and creative collaboration becomes harder.",
+        "translation_en": "There's no chitchat with colleagues, and creative collaboration becomes harder.",
+        "translation_id": "There's no chitchat with colleagues, and creative collaboration becomes harder."
+      },
+      {
+        "hanzi": "我渐渐明白,在家工作的效率取决于自律。",
+        "pinyin": "wǒ jiànjiàn míngbai zàijiā gōngzuò de xiàolǜ qǔjuéyú zìlǜ",
+        "zhuyin": "ㄨㄛˇ ㄐㄧㄢˋ ㄐㄧㄢˋ ㄇㄧㄥˊ ㄅㄞ˙ ㄗㄞˋ ㄐㄧㄚ ㄍㄨㄥ ㄗㄨㄛˋ ㄉㄜ˙ ㄒㄧㄠˋ ㄌㄩˋ ㄑㄩˇ ㄐㄩㄝˊ ㄩˊ ㄗˋ ㄌㄩˋ",
+        "text": "我渐渐明白,在家工作的效率取决于自律。",
+        "romanization": "wǒ jiànjiàn míngbai zàijiā gōngzuò de xiàolǜ qǔjuéyú zìlǜ",
+        "translation": "I gradually understood: efficiency at home depends on self-discipline.",
+        "translation_en": "I gradually understood: efficiency at home depends on self-discipline.",
+        "translation_id": "I gradually understood: efficiency at home depends on self-discipline."
+      },
+      {
+        "hanzi": "现在我每天设固定的工作时间,下班后绝不打开电脑。",
+        "pinyin": "xiànzài wǒ měi tiān shè gùdìng de gōngzuò shíjiān xiàbān hòu jué bù dǎkāi diànnǎo",
+        "zhuyin": "ㄒㄧㄢˋ ㄗㄞˋ ㄨㄛˇ ㄇㄟˇ ㄊㄧㄢ ㄕㄜˋ ㄍㄨˋ ㄉㄧㄥˋ ㄉㄜ˙ ㄍㄨㄥ ㄗㄨㄛˋ ㄕˊ ㄐㄧㄢ ㄒㄧㄚˋ ㄅㄢ ㄏㄡˋ ㄐㄩㄝˊ ㄅㄨˋ ㄉㄚˇ ㄎㄞ ㄉㄧㄢˋ ㄋㄠˇ",
+        "text": "现在我每天设固定的工作时间,下班后绝不打开电脑。",
+        "romanization": "xiànzài wǒ měi tiān shè gùdìng de gōngzuò shíjiān xiàbān hòu jué bù dǎkāi diànnǎo",
+        "translation": "Now I set fixed working hours every day and don't open my laptop after work.",
+        "translation_en": "Now I set fixed working hours every day and don't open my laptop after work.",
+        "translation_id": "Now I set fixed working hours every day and don't open my laptop after work."
+      },
+      {
+        "hanzi": "自由,自有它的代价。",
+        "pinyin": "zìyóu zì yǒu tā de dàijià",
+        "zhuyin": "ㄗˋ ㄧㄡˊ ㄗˋ ㄧㄡˇ ㄊㄚ ㄉㄜ˙ ㄉㄞˋ ㄐㄧㄚˋ",
+        "text": "自由,自有它的代价。",
+        "romanization": "zìyóu zì yǒu tā de dàijià",
+        "translation": "Freedom comes with its own cost.",
+        "translation_en": "Freedom comes with its own cost.",
+        "translation_id": "Freedom comes with its own cost."
+      },
+      {
+        "hanzi": "刚开始在家办公的那几个星期,我很享受。",
+        "pinyin": "gāng kāishǐ zài jiā bàngōng de nà jǐ ge xīngqī wǒ hěn xiǎngshòu",
+        "zhuyin": "ㄍㄤ ㄎㄞ ㄕˇ ㄗㄞˋ ㄐㄧㄚ ㄅㄢˋ ㄍㄨㄥ ㄉㄜ˙ ㄋㄚˋ ㄐㄧˇ ㄍㄜ˙ ㄒㄧㄥ ㄑㄧ ㄨㄛˇ ㄏㄣˇ ㄒㄧㄤˇ ㄕㄡˋ",
+        "text": "刚开始在家办公的那几个星期,我很享受。",
+        "romanization": "gāng kāishǐ zài jiā bàngōng de nà jǐ ge xīngqī wǒ hěn xiǎngshòu",
+        "translation": "In the first few weeks of working from home, I enjoyed it thoroughly.",
+        "translation_en": "In the first few weeks of working from home, I enjoyed it thoroughly.",
+        "translation_id": "In the first few weeks of working from home, I enjoyed it thoroughly."
+      },
+      {
+        "hanzi": "不用挤地铁,省下了每天两个小时。",
+        "pinyin": "búyòng jǐ dìtiě shěng xià le měitiān liǎng ge xiǎoshí",
+        "zhuyin": "ㄅㄨˊ ㄩㄥˋ ㄐㄧˇ ㄉㄧˋ ㄊㄧㄝˇ ㄕㄥˇ ㄒㄧㄚˋ ㄌㄜ˙ ㄇㄟˇ ㄊㄧㄢ ㄌㄧㄤˇ ㄍㄜ˙ ㄒㄧㄠˇ ㄕˊ",
+        "text": "不用挤地铁,省下了每天两个小时。",
+        "romanization": "búyòng jǐ dìtiě shěng xià le měitiān liǎng ge xiǎoshí",
+        "translation": "No packed subway, which saved me two hours every day.",
+        "translation_en": "No packed subway, which saved me two hours every day.",
+        "translation_id": "No packed subway, which saved me two hours every day."
+      },
+      {
+        "hanzi": "我可以睡到八点半,穿着睡衣就开始工作。",
+        "pinyin": "wǒ kěyǐ shuì dào bā diǎn bàn chuān zhe shuìyī jiù kāishǐ gōngzuò",
+        "zhuyin": "ㄨㄛˇ ㄎㄜˇ ㄧˇ ㄕㄨㄟˋ ㄉㄠˋ ㄅㄚ ㄉㄧㄢˇ ㄅㄢˋ ㄔㄨㄢ ㄓㄜ˙ ㄕㄨㄟˋ ㄧ ㄐㄧㄡˋ ㄎㄞ ㄕˇ ㄍㄨㄥ ㄗㄨㄛˋ",
+        "text": "我可以睡到八点半,穿着睡衣就开始工作。",
+        "romanization": "wǒ kěyǐ shuì dào bā diǎn bàn chuān zhe shuìyī jiù kāishǐ gōngzuò",
+        "translation": "I could sleep until half past eight and start work in my pyjamas.",
+        "translation_en": "I could sleep until half past eight and start work in my pyjamas.",
+        "translation_id": "I could sleep until half past eight and start work in my pyjamas."
+      },
+      {
+        "hanzi": "可是慢慢地,问题出现了。",
+        "pinyin": "kěshì mànmàn de wèntí chūxiàn le",
+        "zhuyin": "ㄎㄜˇ ㄕˋ ㄇㄢˋ ㄇㄢˋ ㄉㄜ˙ ㄨㄣˋ ㄊㄧˊ ㄔㄨ ㄒㄧㄢˋ ㄌㄜ˙",
+        "text": "可是慢慢地,问题出现了。",
+        "romanization": "kěshì mànmàn de wèntí chūxiàn le",
+        "translation": "But gradually the problems appeared.",
+        "translation_en": "But gradually the problems appeared.",
+        "translation_id": "But gradually the problems appeared."
+      },
+      {
+        "hanzi": "我的电脑就放在床边,晚上十一点还在回邮件。",
+        "pinyin": "wǒ de diànnǎo jiù fàng zài chuáng biān wǎnshang shíyī diǎn hái zài huí yóujiàn",
+        "zhuyin": "ㄨㄛˇ ㄉㄜ˙ ㄉㄧㄢˋ ㄋㄠˇ ㄐㄧㄡˋ ㄈㄤˋ ㄗㄞˋ ㄔㄨㄤˊ ㄅㄧㄢ ㄨㄢˇ ㄕㄤ˙ ㄕˊ ㄧ ㄉㄧㄢˇ ㄏㄞˊ ㄗㄞˋ ㄏㄨㄟˊ ㄧㄡˊ ㄐㄧㄢˋ",
+        "text": "我的电脑就放在床边,晚上十一点还在回邮件。",
+        "romanization": "wǒ de diànnǎo jiù fàng zài chuáng biān wǎnshang shíyī diǎn hái zài huí yóujiàn",
+        "translation": "My computer sat right beside the bed, and at eleven at night I was still answering mail.",
+        "translation_en": "My computer sat right beside the bed, and at eleven at night I was still answering mail.",
+        "translation_id": "My computer sat right beside the bed, and at eleven at night I was still answering mail."
+      },
+      {
+        "hanzi": "周末和工作日看起来几乎一样。",
+        "pinyin": "zhōumò hé gōngzuò rì kàn qǐlái jīhū yíyàng",
+        "zhuyin": "ㄓㄡ ㄇㄛˋ ㄏㄜˊ ㄍㄨㄥ ㄗㄨㄛˋ ㄖˋ ㄎㄢˋ ㄑㄧˇ ㄌㄞˊ ㄐㄧ ㄏㄨ ㄧˊ ㄧㄤˋ",
+        "text": "周末和工作日看起来几乎一样。",
+        "romanization": "zhōumò hé gōngzuò rì kàn qǐlái jīhū yíyàng",
+        "translation": "Weekends and weekdays came to look almost the same.",
+        "translation_en": "Weekends and weekdays came to look almost the same.",
+        "translation_id": "Weekends and weekdays came to look almost the same."
+      },
+      {
+        "hanzi": "家里也有很多干扰,快递、家人、还有洗不完的碗。",
+        "pinyin": "jiā lǐ yě yǒu hěn duō gānrǎo kuàidì jiārén hái yǒu xǐ bù wán de wǎn",
+        "zhuyin": "ㄐㄧㄚ ㄌㄧˇ ㄧㄝˇ ㄧㄡˇ ㄏㄣˇ ㄉㄨㄛ ㄍㄢ ㄖㄠˇ ㄎㄨㄞˋ ㄉㄧˋ ㄐㄧㄚ ㄖㄣˊ ㄏㄞˊ ㄧㄡˇ ㄒㄧˇ ㄅㄨˋ ㄨㄢˊ ㄉㄜ˙ ㄨㄢˇ",
+        "text": "家里也有很多干扰,快递、家人、还有洗不完的碗。",
+        "romanization": "jiā lǐ yě yǒu hěn duō gānrǎo kuàidì jiārén hái yǒu xǐ bù wán de wǎn",
+        "translation": "Home has plenty of distractions too: parcels, family, and dishes without end.",
+        "translation_en": "Home has plenty of distractions too: parcels, family, and dishes without end.",
+        "translation_id": "Home has plenty of distractions too: parcels, family, and dishes without end."
+      },
+      {
+        "hanzi": "后来我在房间里划出一个角落,只用来工作。",
+        "pinyin": "hòulái wǒ zài fángjiān lǐ huà chū yí ge jiǎoluò zhǐ yòng lái gōngzuò",
+        "zhuyin": "ㄏㄡˋ ㄌㄞˊ ㄨㄛˇ ㄗㄞˋ ㄈㄤˊ ㄐㄧㄢ ㄌㄧˇ ㄏㄨㄚˋ ㄔㄨ ㄧˊ ㄍㄜ˙ ㄐㄧㄠˇ ㄌㄨㄛˋ ㄓˇ ㄩㄥˋ ㄌㄞˊ ㄍㄨㄥ ㄗㄨㄛˋ",
+        "text": "后来我在房间里划出一个角落,只用来工作。",
+        "romanization": "hòulái wǒ zài fángjiān lǐ huà chū yí ge jiǎoluò zhǐ yòng lái gōngzuò",
+        "translation": "Later I marked off one corner of the room, used only for work.",
+        "translation_en": "Later I marked off one corner of the room, used only for work.",
+        "translation_id": "Later I marked off one corner of the room, used only for work."
+      },
+      {
+        "hanzi": "离开那个角落,我就告诉自己今天结束了。",
+        "pinyin": "líkāi nà ge jiǎoluò wǒ jiù gàosu zìjǐ jīntiān jiéshù le",
+        "zhuyin": "ㄌㄧˊ ㄎㄞ ㄋㄚˋ ㄍㄜ˙ ㄐㄧㄠˇ ㄌㄨㄛˋ ㄨㄛˇ ㄐㄧㄡˋ ㄍㄠˋ ㄙㄨ˙ ㄗˋ ㄐㄧˇ ㄐㄧㄣ ㄊㄧㄢ ㄐㄧㄝˊ ㄕㄨˋ ㄌㄜ˙",
+        "text": "离开那个角落,我就告诉自己今天结束了。",
+        "romanization": "líkāi nà ge jiǎoluò wǒ jiù gàosu zìjǐ jīntiān jiéshù le",
+        "translation": "Leaving that corner, I tell myself the day is over.",
+        "translation_en": "Leaving that corner, I tell myself the day is over.",
+        "translation_id": "Leaving that corner, I tell myself the day is over."
+      },
+      {
+        "hanzi": "这个简单的办法,比任何软件都有效。",
+        "pinyin": "zhè ge jiǎndān de bànfǎ bǐ rènhé ruǎnjiàn dōu yǒuxiào",
+        "zhuyin": "ㄓㄜˋ ㄍㄜ˙ ㄐㄧㄢˇ ㄉㄢ ㄉㄜ˙ ㄅㄢˋ ㄈㄚˇ ㄅㄧˇ ㄖㄣˋ ㄏㄜˊ ㄖㄨㄢˇ ㄐㄧㄢˋ ㄉㄡ ㄧㄡˇ ㄒㄧㄠˋ",
+        "text": "这个简单的办法,比任何软件都有效。",
+        "romanization": "zhè ge jiǎndān de bànfǎ bǐ rènhé ruǎnjiàn dōu yǒuxiào",
+        "translation": "This simple method works better than any piece of software.",
+        "translation_en": "This simple method works better than any piece of software.",
+        "translation_id": "This simple method works better than any piece of software."
+      }
+    ]
+  },
+  {
+    "id": "r-shanghai-longtang-de-zaochen",
+    "title": "上海弄堂的早晨 — Morning in a Shanghai Lane",
+    "type": "story",
+    "hsk": 5,
+    "wordCount": 321,
+    "summary": "Inside the longtang, the day begins long before the skyline wakes.",
+    "paragraphs": [
+      {
+        "hanzi": "上海弄堂的早晨开始得很早。",
+        "pinyin": "Shànghǎi lòngtáng de zǎochén kāishǐ de hěn zǎo",
+        "zhuyin": "ㄕㄤˋ ㄏㄞˇ ㄌㄨㄥˋ ㄊㄤˊ ㄉㄜ˙ ㄗㄠˇ ㄔㄣˊ ㄎㄞ ㄕˇ ㄉㄜ˙ ㄏㄣˇ ㄗㄠˇ",
+        "text": "上海弄堂的早晨开始得很早。",
+        "romanization": "Shànghǎi lòngtáng de zǎochén kāishǐ de hěn zǎo",
+        "translation": "The morning of a Shanghai lane begins very early.",
+        "translation_en": "The morning of a Shanghai lane begins very early.",
+        "translation_id": "The morning of a Shanghai lane begins very early."
+      },
+      {
+        "hanzi": "天刚亮,街角的早餐铺已经冒着热气。",
+        "pinyin": "tiān gāng liàng jiējiǎo de zǎocān pù yǐjīng mào zhe rèqì",
+        "zhuyin": "ㄊㄧㄢ ㄍㄤ ㄌㄧㄤˋ ㄐㄧㄝ ㄐㄧㄠˇ ㄉㄜ˙ ㄗㄠˇ ㄘㄢ ㄆㄨˋ ㄧˇ ㄐㄧㄥ ㄇㄠˋ ㄓㄜ˙ ㄖㄜˋ ㄑㄧˋ",
+        "text": "天刚亮,街角的早餐铺已经冒着热气。",
+        "romanization": "tiān gāng liàng jiējiǎo de zǎocān pù yǐjīng mào zhe rèqì",
+        "translation": "When the sky barely turns light, the breakfast stall on the corner is already steaming.",
+        "translation_en": "When the sky barely turns light, the breakfast stall on the corner is already steaming.",
+        "translation_id": "When the sky barely turns light, the breakfast stall on the corner is already steaming."
+      },
+      {
+        "hanzi": "阿姨们为一条鲜鱼讨价还价,挑、问、嫌弃。",
+        "pinyin": "āyímen wèi yì tiáo xiānyú tǎojiàhuánjià tiāo wèn xiánqì",
+        "zhuyin": "ㄚ ㄧˊ ㄇㄣ˙ ㄨㄟˋ ㄧˋ ㄊㄧㄠˊ ㄒㄧㄢ ㄩˊ ㄊㄠˇ ㄐㄧㄚˋ ㄏㄨㄢˊ ㄐㄧㄚˋ ㄊㄧㄠ ㄨㄣˋ ㄒㄧㄢˊ ㄑㄧˋ",
+        "text": "阿姨们为一条鲜鱼讨价还价,挑、问、嫌弃。",
+        "romanization": "āyímen wèi yì tiáo xiānyú tǎojiàhuánjià tiāo wèn xiánqì",
+        "translation": "The aunties bargain over fresh fish, picking, asking, mocking.",
+        "translation_en": "The aunties bargain over fresh fish, picking, asking, mocking.",
+        "translation_id": "The aunties bargain over fresh fish, picking, asking, mocking."
+      },
+      {
+        "hanzi": "老人家提着鸟笼出来,和朋友凑在一起喝茶聊天。",
+        "pinyin": "lǎo rénjiā tí zhe niǎolóng chūlái hé péngyou còu zài yìqǐ hēchá liáotiān",
+        "zhuyin": "ㄌㄠˇ ㄖㄣˊ ㄐㄧㄚ ㄊㄧˊ ㄓㄜ˙ ㄋㄧㄠˇ ㄌㄨㄥˊ ㄔㄨ ㄌㄞˊ ㄏㄜˊ ㄆㄥˊ ㄧㄡ˙ ㄘㄡˋ ㄗㄞˋ ㄧˋ ㄑㄧˇ ㄏㄜ ㄔㄚˊ ㄌㄧㄠˊ ㄊㄧㄢ",
+        "text": "老人家提着鸟笼出来,和朋友凑在一起喝茶聊天。",
+        "romanization": "lǎo rénjiā tí zhe niǎolóng chūlái hé péngyou còu zài yìqǐ hēchá liáotiān",
+        "translation": "Old men carry cages out, gathering with friends to chat over tea.",
+        "translation_en": "Old men carry cages out, gathering with friends to chat over tea.",
+        "translation_id": "Old men carry cages out, gathering with friends to chat over tea."
+      },
+      {
+        "hanzi": "背着书包的小孩睡眼惺忪,被家长拉着往学校走。",
+        "pinyin": "bēi zhe shūbāo de xiǎohái shuìyǎn xīngsōng bèi jiāzhǎng lā zhe wǎng xuéxiào zǒu",
+        "zhuyin": "ㄅㄟ ㄓㄜ˙ ㄕㄨ ㄅㄠ ㄉㄜ˙ ㄒㄧㄠˇ ㄏㄞˊ ㄕㄨㄟˋ ㄧㄢˇ ㄒㄧㄥ ㄙㄨㄥ ㄅㄟˋ ㄐㄧㄚ ㄓㄤˇ ㄌㄚ ㄓㄜ˙ ㄨㄤˇ ㄒㄩㄝˊ ㄒㄧㄠˋ ㄗㄡˇ",
+        "text": "背着书包的小孩睡眼惺忪,被家长拉着往学校走。",
+        "romanization": "bēi zhe shūbāo de xiǎohái shuìyǎn xīngsōng bèi jiāzhǎng lā zhe wǎng xuéxiào zǒu",
+        "translation": "Children with backpacks, half asleep, are dragged toward school.",
+        "translation_en": "Children with backpacks, half asleep, are dragged toward school.",
+        "translation_id": "Children with backpacks, half asleep, are dragged toward school."
+      },
+      {
+        "hanzi": "一墙之外,是城市的高楼大厦,还没有完全苏醒。",
+        "pinyin": "yì qiáng zhī wài shì chéngshì de gāolóu dàshà hái méiyǒu wánquán sūxǐng",
+        "zhuyin": "ㄧˋ ㄑㄧㄤˊ ㄓ ㄨㄞˋ ㄕˋ ㄔㄥˊ ㄕˋ ㄉㄜ˙ ㄍㄠ ㄌㄡˊ ㄉㄚˋ ㄕㄚˋ ㄏㄞˊ ㄇㄟˊ ㄧㄡˇ ㄨㄢˊ ㄑㄩㄢˊ ㄙㄨ ㄒㄧㄥˇ",
+        "text": "一墙之外,是城市的高楼大厦,还没有完全苏醒。",
+        "romanization": "yì qiáng zhī wài shì chéngshì de gāolóu dàshà hái méiyǒu wánquán sūxǐng",
+        "translation": "Across the wall, the city's skyscrapers haven't quite woken up yet.",
+        "translation_en": "Across the wall, the city's skyscrapers haven't quite woken up yet.",
+        "translation_id": "Across the wall, the city's skyscrapers haven't quite woken up yet."
+      },
+      {
+        "hanzi": "弄堂里,藏着上海另一张更缓慢的面孔。",
+        "pinyin": "lòngtáng lǐ cáng zhe Shànghǎi lìng yī zhāng gèng huǎnmàn de miànkǒng",
+        "zhuyin": "ㄌㄨㄥˋ ㄊㄤˊ ㄌㄧˇ ㄘㄤˊ ㄓㄜ˙ ㄕㄤˋ ㄏㄞˇ ㄌㄧㄥˋ ㄧ ㄓㄤ ㄍㄥˋ ㄏㄨㄢˇ ㄇㄢˋ ㄉㄜ˙ ㄇㄧㄢˋ ㄎㄨㄥˇ",
+        "text": "弄堂里,藏着上海另一张更缓慢的面孔。",
+        "romanization": "lòngtáng lǐ cáng zhe Shànghǎi lìng yī zhāng gèng huǎnmàn de miànkǒng",
+        "translation": "Within the lanes, the city's another, slower face is hidden.",
+        "translation_en": "Within the lanes, the city's another, slower face is hidden.",
+        "translation_id": "Within the lanes, the city's another, slower face is hidden."
+      },
+      {
+        "hanzi": "弄堂很窄,两个人并排走就有点挤。",
+        "pinyin": "lòngtáng hěn zhǎi liǎng ge rén bìngpái zǒu jiù yǒudiǎn jǐ",
+        "zhuyin": "ㄌㄨㄥˋ ㄊㄤˊ ㄏㄣˇ ㄓㄞˇ ㄌㄧㄤˇ ㄍㄜ˙ ㄖㄣˊ ㄅㄧㄥˋ ㄆㄞˊ ㄗㄡˇ ㄐㄧㄡˋ ㄧㄡˇ ㄉㄧㄢˇ ㄐㄧˇ",
+        "text": "弄堂很窄,两个人并排走就有点挤。",
+        "romanization": "lòngtáng hěn zhǎi liǎng ge rén bìngpái zǒu jiù yǒudiǎn jǐ",
+        "translation": "The lane is narrow — two people walking abreast is already a squeeze.",
+        "translation_en": "The lane is narrow — two people walking abreast is already a squeeze.",
+        "translation_id": "The lane is narrow — two people walking abreast is already a squeeze."
+      },
+      {
+        "hanzi": "墙上爬着电线,窗外挂着一排排衣服。",
+        "pinyin": "qiáng shàng pá zhe diànxiàn chuāng wài guà zhe yì pái pái yīfu",
+        "zhuyin": "ㄑㄧㄤˊ ㄕㄤˋ ㄆㄚˊ ㄓㄜ˙ ㄉㄧㄢˋ ㄒㄧㄢˋ ㄔㄨㄤ ㄨㄞˋ ㄍㄨㄚˋ ㄓㄜ˙ ㄧˋ ㄆㄞˊ ㄆㄞˊ ㄧ ㄈㄨ˙",
+        "text": "墙上爬着电线,窗外挂着一排排衣服。",
+        "romanization": "qiáng shàng pá zhe diànxiàn chuāng wài guà zhe yì pái pái yīfu",
+        "translation": "Wires climb the walls, and rows of clothes hang outside the windows.",
+        "translation_en": "Wires climb the walls, and rows of clothes hang outside the windows.",
+        "translation_id": "Wires climb the walls, and rows of clothes hang outside the windows."
+      },
+      {
+        "hanzi": "有人把竹竿架在两边的窗户之间晾被子。",
+        "pinyin": "yǒu rén bǎ zhúgān jià zài liǎng biān de chuānghu zhījiān liàng bèizi",
+        "zhuyin": "ㄧㄡˇ ㄖㄣˊ ㄅㄚˇ ㄓㄨˊ ㄍㄢ ㄐㄧㄚˋ ㄗㄞˋ ㄌㄧㄤˇ ㄅㄧㄢ ㄉㄜ˙ ㄔㄨㄤ ㄏㄨ˙ ㄓ ㄐㄧㄢ ㄌㄧㄤˋ ㄅㄟˋ ㄗ˙",
+        "text": "有人把竹竿架在两边的窗户之间晾被子。",
+        "romanization": "yǒu rén bǎ zhúgān jià zài liǎng biān de chuānghu zhījiān liàng bèizi",
+        "translation": "Someone props a bamboo pole between the windows on either side to air the quilts.",
+        "translation_en": "Someone props a bamboo pole between the windows on either side to air the quilts.",
+        "translation_id": "Someone props a bamboo pole between the windows on either side to air the quilts."
+      },
+      {
+        "hanzi": "早晨的太阳照在被子上,有一种干净的味道。",
+        "pinyin": "zǎochen de tàiyáng zhào zài bèizi shàng yǒu yì zhǒng gānjìng de wèidào",
+        "zhuyin": "ㄗㄠˇ ㄔㄣ˙ ㄉㄜ˙ ㄊㄞˋ ㄧㄤˊ ㄓㄠˋ ㄗㄞˋ ㄅㄟˋ ㄗ˙ ㄕㄤˋ ㄧㄡˇ ㄧˋ ㄓㄨㄥˇ ㄍㄢ ㄐㄧㄥˋ ㄉㄜ˙ ㄨㄟˋ ㄉㄠˋ",
+        "text": "早晨的太阳照在被子上,有一种干净的味道。",
+        "romanization": "zǎochen de tàiyáng zhào zài bèizi shàng yǒu yì zhǒng gānjìng de wèidào",
+        "translation": "The morning sun falls on the quilts, giving off a clean smell.",
+        "translation_en": "The morning sun falls on the quilts, giving off a clean smell.",
+        "translation_id": "The morning sun falls on the quilts, giving off a clean smell."
+      },
+      {
+        "hanzi": "修鞋的老师傅在门口摆开工具。",
+        "pinyin": "xiū xié de lǎo shīfu zài ménkǒu bǎi kāi gōngjù",
+        "zhuyin": "ㄒㄧㄡ ㄒㄧㄝˊ ㄉㄜ˙ ㄌㄠˇ ㄕ ㄈㄨ˙ ㄗㄞˋ ㄇㄣˊ ㄎㄡˇ ㄅㄞˇ ㄎㄞ ㄍㄨㄥ ㄐㄩˋ",
+        "text": "修鞋的老师傅在门口摆开工具。",
+        "romanization": "xiū xié de lǎo shīfu zài ménkǒu bǎi kāi gōngjù",
+        "translation": "The old shoe-mender lays out his tools in the doorway.",
+        "translation_en": "The old shoe-mender lays out his tools in the doorway.",
+        "translation_id": "The old shoe-mender lays out his tools in the doorway."
+      },
+      {
+        "hanzi": "卖豆浆的推着车,一边走一边喊。",
+        "pinyin": "mài dòujiāng de tuī zhe chē yìbiān zǒu yìbiān hǎn",
+        "zhuyin": "ㄇㄞˋ ㄉㄡˋ ㄐㄧㄤ ㄉㄜ˙ ㄊㄨㄟ ㄓㄜ˙ ㄔㄜ ㄧˋ ㄅㄧㄢ ㄗㄡˇ ㄧˋ ㄅㄧㄢ ㄏㄢˇ",
+        "text": "卖豆浆的推着车,一边走一边喊。",
+        "romanization": "mài dòujiāng de tuī zhe chē yìbiān zǒu yìbiān hǎn",
+        "translation": "The soy-milk seller pushes his cart along, calling out as he goes.",
+        "translation_en": "The soy-milk seller pushes his cart along, calling out as he goes.",
+        "translation_id": "The soy-milk seller pushes his cart along, calling out as he goes."
+      },
+      {
+        "hanzi": "这些声音混在一起,就是弄堂的闹钟。",
+        "pinyin": "zhèxiē shēngyīn hùn zài yìqǐ jiùshì lòngtáng de nàozhōng",
+        "zhuyin": "ㄓㄜˋ ㄒㄧㄝ ㄕㄥ ㄧㄣ ㄏㄨㄣˋ ㄗㄞˋ ㄧˋ ㄑㄧˇ ㄐㄧㄡˋ ㄕˋ ㄌㄨㄥˋ ㄊㄤˊ ㄉㄜ˙ ㄋㄠˋ ㄓㄨㄥ",
+        "text": "这些声音混在一起,就是弄堂的闹钟。",
+        "romanization": "zhèxiē shēngyīn hùn zài yìqǐ jiùshì lòngtáng de nàozhōng",
+        "translation": "These sounds mixed together are the lane's alarm clock.",
+        "translation_en": "These sounds mixed together are the lane's alarm clock.",
+        "translation_id": "These sounds mixed together are the lane's alarm clock."
+      },
+      {
+        "hanzi": "住在这里的人,大多认识彼此几十年了。",
+        "pinyin": "zhù zài zhèlǐ de rén dàduō rènshi bǐcǐ jǐshí nián le",
+        "zhuyin": "ㄓㄨˋ ㄗㄞˋ ㄓㄜˋ ㄌㄧˇ ㄉㄜ˙ ㄖㄣˊ ㄉㄚˋ ㄉㄨㄛ ㄖㄣˋ ㄕ˙ ㄅㄧˇ ㄘˇ ㄐㄧˇ ㄕˊ ㄋㄧㄢˊ ㄌㄜ˙",
+        "text": "住在这里的人,大多认识彼此几十年了。",
+        "romanization": "zhù zài zhèlǐ de rén dàduō rènshi bǐcǐ jǐshí nián le",
+        "translation": "Most of the people living here have known one another for decades.",
+        "translation_en": "Most of the people living here have known one another for decades.",
+        "translation_id": "Most of the people living here have known one another for decades."
+      },
+      {
+        "hanzi": "谁家孩子考上大学,整条弄堂都知道。",
+        "pinyin": "shéi jiā háizi kǎo shàng dàxué zhěng tiáo lòngtáng dōu zhīdào",
+        "zhuyin": "ㄕㄟˊ ㄐㄧㄚ ㄏㄞˊ ㄗ˙ ㄎㄠˇ ㄕㄤˋ ㄉㄚˋ ㄒㄩㄝˊ ㄓㄥˇ ㄊㄧㄠˊ ㄌㄨㄥˋ ㄊㄤˊ ㄉㄡ ㄓ ㄉㄠˋ",
+        "text": "谁家孩子考上大学,整条弄堂都知道。",
+        "romanization": "shéi jiā háizi kǎo shàng dàxué zhěng tiáo lòngtáng dōu zhīdào",
+        "translation": "When someone's child gets into university, the whole lane knows.",
+        "translation_en": "When someone's child gets into university, the whole lane knows.",
+        "translation_id": "When someone's child gets into university, the whole lane knows."
+      },
+      {
+        "hanzi": "这几年,很多弄堂被拆掉,盖起了新楼。",
+        "pinyin": "zhè jǐ nián hěn duō lòngtáng bèi chāi diào gài qǐ le xīn lóu",
+        "zhuyin": "ㄓㄜˋ ㄐㄧˇ ㄋㄧㄢˊ ㄏㄣˇ ㄉㄨㄛ ㄌㄨㄥˋ ㄊㄤˊ ㄅㄟˋ ㄔㄞ ㄉㄧㄠˋ ㄍㄞˋ ㄑㄧˇ ㄌㄜ˙ ㄒㄧㄣ ㄌㄡˊ",
+        "text": "这几年,很多弄堂被拆掉,盖起了新楼。",
+        "romanization": "zhè jǐ nián hěn duō lòngtáng bèi chāi diào gài qǐ le xīn lóu",
+        "translation": "In recent years many lanes have been torn down and new blocks raised.",
+        "translation_en": "In recent years many lanes have been torn down and new blocks raised.",
+        "translation_id": "In recent years many lanes have been torn down and new blocks raised."
+      },
+      {
+        "hanzi": "留下来的那些,成了游客拍照的地方。",
+        "pinyin": "liú xiàlái de nàxiē chéng le yóukè pāizhào de dìfang",
+        "zhuyin": "ㄌㄧㄡˊ ㄒㄧㄚˋ ㄌㄞˊ ㄉㄜ˙ ㄋㄚˋ ㄒㄧㄝ ㄔㄥˊ ㄌㄜ˙ ㄧㄡˊ ㄎㄜˋ ㄆㄞ ㄓㄠˋ ㄉㄜ˙ ㄉㄧˋ ㄈㄤ˙",
+        "text": "留下来的那些,成了游客拍照的地方。",
+        "romanization": "liú xiàlái de nàxiē chéng le yóukè pāizhào de dìfang",
+        "translation": "The ones that remain have become places for tourists to take photographs.",
+        "translation_en": "The ones that remain have become places for tourists to take photographs.",
+        "translation_id": "The ones that remain have become places for tourists to take photographs."
+      }
+    ]
+  },
+  {
+    "id": "r-wangluo-shidai-de-youqing",
+    "title": "网络时代的友情 — Friendship in the Internet Age",
+    "type": "story",
+    "hsk": 5,
+    "wordCount": 338,
+    "summary": "What it means to have hundreds of contacts and few real friends.",
+    "paragraphs": [
+      {
+        "hanzi": "在社交媒体上,我有几百个\"朋友\"。",
+        "pinyin": "zài shèjiāo méitǐ shàng wǒ yǒu jǐ bǎi ge péngyou",
+        "zhuyin": "ㄗㄞˋ ㄕㄜˋ ㄐㄧㄠ ㄇㄟˊ ㄊㄧˇ ㄕㄤˋ ㄨㄛˇ ㄧㄡˇ ㄐㄧˇ ㄅㄞˇ ㄍㄜ˙ ㄆㄥˊ ㄧㄡ˙",
+        "text": "在社交媒体上,我有几百个\"朋友\"。",
+        "romanization": "zài shèjiāo méitǐ shàng wǒ yǒu jǐ bǎi ge péngyou",
+        "translation": "On social media, I have hundreds of \"friends\".",
+        "translation_en": "On social media, I have hundreds of \"friends\".",
+        "translation_id": "On social media, I have hundreds of \"friends\"."
+      },
+      {
+        "hanzi": "但真正能在半夜打电话的,最多三个。",
+        "pinyin": "dàn zhēnzhèng néng zài bànyè dǎ diànhuà de zuì duō sān ge",
+        "zhuyin": "ㄉㄢˋ ㄓㄣ ㄓㄥˋ ㄋㄥˊ ㄗㄞˋ ㄅㄢˋ ㄧㄝˋ ㄉㄚˇ ㄉㄧㄢˋ ㄏㄨㄚˋ ㄉㄜ˙ ㄗㄨㄟˋ ㄉㄨㄛ ㄙㄢ ㄍㄜ˙",
+        "text": "但真正能在半夜打电话的,最多三个。",
+        "romanization": "dàn zhēnzhèng néng zài bànyè dǎ diànhuà de zuì duō sān ge",
+        "translation": "But really being able to call someone in the middle of the night — there are at most three.",
+        "translation_en": "But really being able to call someone in the middle of the night — there are at most three.",
+        "translation_id": "But really being able to call someone in the middle of the night — there are at most three."
+      },
+      {
+        "hanzi": "我们习惯了互相点赞,却很少真正倾听。",
+        "pinyin": "wǒmen xíguàn le hùxiāng diǎn zàn què hěn shǎo zhēnzhèng qīngtīng",
+        "zhuyin": "ㄨㄛˇ ㄇㄣ˙ ㄒㄧˊ ㄍㄨㄢˋ ㄌㄜ˙ ㄏㄨˋ ㄒㄧㄤ ㄉㄧㄢˇ ㄗㄢˋ ㄑㄩㄝˋ ㄏㄣˇ ㄕㄠˇ ㄓㄣ ㄓㄥˋ ㄑㄧㄥ ㄊㄧㄥ",
+        "text": "我们习惯了互相点赞,却很少真正倾听。",
+        "romanization": "wǒmen xíguàn le hùxiāng diǎn zàn què hěn shǎo zhēnzhèng qīngtīng",
+        "translation": "We're used to giving each other a thumbs-up, but rarely truly listen.",
+        "translation_en": "We're used to giving each other a thumbs-up, but rarely truly listen.",
+        "translation_id": "We're used to giving each other a thumbs-up, but rarely truly listen."
+      },
+      {
+        "hanzi": "看到朋友在网上晒婚礼照片,我有时感到一种奇怪的距离。",
+        "pinyin": "kàndào péngyou zài wǎngshàng shài hūnlǐ zhàopiàn wǒ yǒu shí gǎndào yì zhǒng qíguài de jùlí",
+        "zhuyin": "ㄎㄢˋ ㄉㄠˋ ㄆㄥˊ ㄧㄡ˙ ㄗㄞˋ ㄨㄤˇ ㄕㄤˋ ㄕㄞˋ ㄏㄨㄣ ㄌㄧˇ ㄓㄠˋ ㄆㄧㄢˋ ㄨㄛˇ ㄧㄡˇ ㄕˊ ㄍㄢˇ ㄉㄠˋ ㄧˋ ㄓㄨㄥˇ ㄑㄧˊ ㄍㄨㄞˋ ㄉㄜ˙ ㄐㄩˋ ㄌㄧˊ",
+        "text": "看到朋友在网上晒婚礼照片,我有时感到一种奇怪的距离。",
+        "romanization": "kàndào péngyou zài wǎngshàng shài hūnlǐ zhàopiàn wǒ yǒu shí gǎndào yì zhǒng qíguài de jùlí",
+        "translation": "When I see a friend's wedding photo posted online, I sometimes feel a strange distance.",
+        "translation_en": "When I see a friend's wedding photo posted online, I sometimes feel a strange distance.",
+        "translation_id": "When I see a friend's wedding photo posted online, I sometimes feel a strange distance."
+      },
+      {
+        "hanzi": "不是因为不亲近,而是数字关系取代了面对面的联系。",
+        "pinyin": "bú shì yīnwèi bù qīnjìn ér shì shùzì guānxi qǔdài le miànduìmiàn de liánxì",
+        "zhuyin": "ㄅㄨˊ ㄕˋ ㄧㄣ ㄨㄟˋ ㄅㄨˋ ㄑㄧㄣ ㄐㄧㄣˋ ㄦˊ ㄕˋ ㄕㄨˋ ㄗˋ ㄍㄨㄢ ㄒㄧ˙ ㄑㄩˇ ㄉㄞˋ ㄌㄜ˙ ㄇㄧㄢˋ ㄉㄨㄟˋ ㄇㄧㄢˋ ㄉㄜ˙ ㄌㄧㄢˊ ㄒㄧˋ",
+        "text": "不是因为不亲近,而是数字关系取代了面对面的联系。",
+        "romanization": "bú shì yīnwèi bù qīnjìn ér shì shùzì guānxi qǔdài le miànduìmiàn de liánxì",
+        "translation": "It's not because we're not close — but because the digital relationship has replaced face-to-face connection.",
+        "translation_en": "It's not because we're not close — but because the digital relationship has replaced face-to-face connection.",
+        "translation_id": "It's not because we're not close — but because the digital relationship has replaced face-to-face connection."
+      },
+      {
+        "hanzi": "上周我特意约了几个老朋友出来吃饭。",
+        "pinyin": "shàng zhōu wǒ tèyì yuē le jǐ ge lǎo péngyou chūlái chīfàn",
+        "zhuyin": "ㄕㄤˋ ㄓㄡ ㄨㄛˇ ㄊㄜˋ ㄧˋ ㄩㄝ ㄌㄜ˙ ㄐㄧˇ ㄍㄜ˙ ㄌㄠˇ ㄆㄥˊ ㄧㄡ˙ ㄔㄨ ㄌㄞˊ ㄔ ㄈㄢˋ",
+        "text": "上周我特意约了几个老朋友出来吃饭。",
+        "romanization": "shàng zhōu wǒ tèyì yuē le jǐ ge lǎo péngyou chūlái chīfàn",
+        "translation": "Last week I made an effort to invite a few old friends out to dinner.",
+        "translation_en": "Last week I made an effort to invite a few old friends out to dinner.",
+        "translation_id": "Last week I made an effort to invite a few old friends out to dinner."
+      },
+      {
+        "hanzi": "坐下来才发现,距离上次见面已经三年。",
+        "pinyin": "zuò xiàlái cái fāxiàn jùlí shàng cì jiànmiàn yǐjīng sān nián",
+        "zhuyin": "ㄗㄨㄛˋ ㄒㄧㄚˋ ㄌㄞˊ ㄘㄞˊ ㄈㄚ ㄒㄧㄢˋ ㄐㄩˋ ㄌㄧˊ ㄕㄤˋ ㄘˋ ㄐㄧㄢˋ ㄇㄧㄢˋ ㄧˇ ㄐㄧㄥ ㄙㄢ ㄋㄧㄢˊ",
+        "text": "坐下来才发现,距离上次见面已经三年。",
+        "romanization": "zuò xiàlái cái fāxiàn jùlí shàng cì jiànmiàn yǐjīng sān nián",
+        "translation": "Sitting down together, we suddenly realized — it had been three years since we last met.",
+        "translation_en": "Sitting down together, we suddenly realized — it had been three years since we last met.",
+        "translation_id": "Sitting down together, we suddenly realized — it had been three years since we last met."
+      },
+      {
+        "hanzi": "真正的友谊仍然需要时间和空间,而不只是一块屏幕。",
+        "pinyin": "zhēnzhèng de yǒuyì réngrán xūyào shíjiān hé kōngjiān ér bù zhǐshì yī kuài píngmù",
+        "zhuyin": "ㄓㄣ ㄓㄥˋ ㄉㄜ˙ ㄧㄡˇ ㄧˋ ㄖㄥˊ ㄖㄢˊ ㄒㄩ ㄧㄠˋ ㄕˊ ㄐㄧㄢ ㄏㄜˊ ㄎㄨㄥ ㄐㄧㄢ ㄦˊ ㄅㄨˋ ㄓˇ ㄕˋ ㄧ ㄎㄨㄞˋ ㄆㄧㄥˊ ㄇㄨˋ",
+        "text": "真正的友谊仍然需要时间和空间,而不只是一块屏幕。",
+        "romanization": "zhēnzhèng de yǒuyì réngrán xūyào shíjiān hé kōngjiān ér bù zhǐshì yī kuài píngmù",
+        "translation": "True friendship still needs time and space — not just a screen.",
+        "translation_en": "True friendship still needs time and space — not just a screen.",
+        "translation_id": "True friendship still needs time and space — not just a screen."
+      },
+      {
+        "hanzi": "那天晚上我们聊了四个小时。",
+        "pinyin": "nà tiān wǎnshang wǒmen liáo le sì ge xiǎoshí",
+        "zhuyin": "ㄋㄚˋ ㄊㄧㄢ ㄨㄢˇ ㄕㄤ˙ ㄨㄛˇ ㄇㄣ˙ ㄌㄧㄠˊ ㄌㄜ˙ ㄙˋ ㄍㄜ˙ ㄒㄧㄠˇ ㄕˊ",
+        "text": "那天晚上我们聊了四个小时。",
+        "romanization": "nà tiān wǎnshang wǒmen liáo le sì ge xiǎoshí",
+        "translation": "That evening we talked for four hours.",
+        "translation_en": "That evening we talked for four hours.",
+        "translation_id": "That evening we talked for four hours."
+      },
+      {
+        "hanzi": "说的都是些小事,工作、房子、父母的身体。",
+        "pinyin": "shuō de dōu shì xiē xiǎoshì gōngzuò fángzi fùmǔ de shēntǐ",
+        "zhuyin": "ㄕㄨㄛ ㄉㄜ˙ ㄉㄡ ㄕˋ ㄒㄧㄝ ㄒㄧㄠˇ ㄕˋ ㄍㄨㄥ ㄗㄨㄛˋ ㄈㄤˊ ㄗ˙ ㄈㄨˋ ㄇㄨˇ ㄉㄜ˙ ㄕㄣ ㄊㄧˇ",
+        "text": "说的都是些小事,工作、房子、父母的身体。",
+        "romanization": "shuō de dōu shì xiē xiǎoshì gōngzuò fángzi fùmǔ de shēntǐ",
+        "translation": "It was all small things — work, apartments, our parents' health.",
+        "translation_en": "It was all small things — work, apartments, our parents' health.",
+        "translation_id": "It was all small things — work, apartments, our parents' health."
+      },
+      {
+        "hanzi": "可是那种感觉,是点赞给不了的。",
+        "pinyin": "kěshì nà zhǒng gǎnjué shì diǎn zàn gěi bù liǎo de",
+        "zhuyin": "ㄎㄜˇ ㄕˋ ㄋㄚˋ ㄓㄨㄥˇ ㄍㄢˇ ㄐㄩㄝˊ ㄕˋ ㄉㄧㄢˇ ㄗㄢˋ ㄍㄟˇ ㄅㄨˋ ㄌㄧㄠˇ ㄉㄜ˙",
+        "text": "可是那种感觉,是点赞给不了的。",
+        "romanization": "kěshì nà zhǒng gǎnjué shì diǎn zàn gěi bù liǎo de",
+        "translation": "But that feeling is something a \"like\" cannot give you.",
+        "translation_en": "But that feeling is something a \"like\" cannot give you.",
+        "translation_id": "But that feeling is something a \"like\" cannot give you."
+      },
+      {
+        "hanzi": "我发现我其实并不了解他们最近的生活。",
+        "pinyin": "wǒ fāxiàn wǒ qíshí bìng bù liǎojiě tāmen zuìjìn de shēnghuó",
+        "zhuyin": "ㄨㄛˇ ㄈㄚ ㄒㄧㄢˋ ㄨㄛˇ ㄑㄧˊ ㄕˊ ㄅㄧㄥˋ ㄅㄨˋ ㄌㄧㄠˇ ㄐㄧㄝˇ ㄊㄚ ㄇㄣ˙ ㄗㄨㄟˋ ㄐㄧㄣˋ ㄉㄜ˙ ㄕㄥ ㄏㄨㄛˊ",
+        "text": "我发现我其实并不了解他们最近的生活。",
+        "romanization": "wǒ fāxiàn wǒ qíshí bìng bù liǎojiě tāmen zuìjìn de shēnghuó",
+        "translation": "I realised I did not actually know much about their recent lives.",
+        "translation_en": "I realised I did not actually know much about their recent lives.",
+        "translation_id": "I realised I did not actually know much about their recent lives."
+      },
+      {
+        "hanzi": "一个人换了工作,另一个刚离婚。",
+        "pinyin": "yí ge rén huàn le gōngzuò lìng yí ge gāng líhūn",
+        "zhuyin": "ㄧˊ ㄍㄜ˙ ㄖㄣˊ ㄏㄨㄢˋ ㄌㄜ˙ ㄍㄨㄥ ㄗㄨㄛˋ ㄌㄧㄥˋ ㄧˊ ㄍㄜ˙ ㄍㄤ ㄌㄧˊ ㄏㄨㄣ",
+        "text": "一个人换了工作,另一个刚离婚。",
+        "romanization": "yí ge rén huàn le gōngzuò lìng yí ge gāng líhūn",
+        "translation": "One had changed jobs; another had just divorced.",
+        "translation_en": "One had changed jobs; another had just divorced.",
+        "translation_id": "One had changed jobs; another had just divorced."
+      },
+      {
+        "hanzi": "这些事情,他们都没有发在朋友圈里。",
+        "pinyin": "zhèxiē shìqing tāmen dōu méiyǒu fā zài péngyou quān lǐ",
+        "zhuyin": "ㄓㄜˋ ㄒㄧㄝ ㄕˋ ㄑㄧㄥ˙ ㄊㄚ ㄇㄣ˙ ㄉㄡ ㄇㄟˊ ㄧㄡˇ ㄈㄚ ㄗㄞˋ ㄆㄥˊ ㄧㄡ˙ ㄑㄩㄢ ㄌㄧˇ",
+        "text": "这些事情,他们都没有发在朋友圈里。",
+        "romanization": "zhèxiē shìqing tāmen dōu méiyǒu fā zài péngyou quān lǐ",
+        "translation": "Neither of them had posted any of it on social media.",
+        "translation_en": "Neither of them had posted any of it on social media.",
+        "translation_id": "Neither of them had posted any of it on social media."
+      },
+      {
+        "hanzi": "真正重要的事,人们反而不会写在网上。",
+        "pinyin": "zhēnzhèng zhòngyào de shì rénmen fǎn'ér bú huì xiě zài wǎng shàng",
+        "zhuyin": "ㄓㄣ ㄓㄥˋ ㄓㄨㄥˋ ㄧㄠˋ ㄉㄜ˙ ㄕˋ ㄖㄣˊ ㄇㄣ˙ ㄈㄢˇ ㄦˊ ㄅㄨˊ ㄏㄨㄟˋ ㄒㄧㄝˇ ㄗㄞˋ ㄨㄤˇ ㄕㄤˋ",
+        "text": "真正重要的事,人们反而不会写在网上。",
+        "romanization": "zhēnzhèng zhòngyào de shì rénmen fǎn'ér bú huì xiě zài wǎng shàng",
+        "translation": "The things that truly matter are exactly what people do not write online.",
+        "translation_en": "The things that truly matter are exactly what people do not write online.",
+        "translation_id": "The things that truly matter are exactly what people do not write online."
+      },
+      {
+        "hanzi": "网络让我们看见彼此的生活,却看不见彼此的心情。",
+        "pinyin": "wǎngluò ràng wǒmen kànjiàn bǐcǐ de shēnghuó què kàn bú jiàn bǐcǐ de xīnqíng",
+        "zhuyin": "ㄨㄤˇ ㄌㄨㄛˋ ㄖㄤˋ ㄨㄛˇ ㄇㄣ˙ ㄎㄢˋ ㄐㄧㄢˋ ㄅㄧˇ ㄘˇ ㄉㄜ˙ ㄕㄥ ㄏㄨㄛˊ ㄑㄩㄝˋ ㄎㄢˋ ㄅㄨˊ ㄐㄧㄢˋ ㄅㄧˇ ㄘˇ ㄉㄜ˙ ㄒㄧㄣ ㄑㄧㄥˊ",
+        "text": "网络让我们看见彼此的生活,却看不见彼此的心情。",
+        "romanization": "wǎngluò ràng wǒmen kànjiàn bǐcǐ de shēnghuó què kàn bú jiàn bǐcǐ de xīnqíng",
+        "translation": "The network lets us see each other's lives but not each other's hearts.",
+        "translation_en": "The network lets us see each other's lives but not each other's hearts.",
+        "translation_id": "The network lets us see each other's lives but not each other's hearts."
+      },
+      {
+        "hanzi": "从那以后,我每个月都约一次老朋友。",
+        "pinyin": "cóng nà yǐhòu wǒ měi ge yuè dōu yuē yí cì lǎo péngyou",
+        "zhuyin": "ㄘㄨㄥˊ ㄋㄚˋ ㄧˇ ㄏㄡˋ ㄨㄛˇ ㄇㄟˇ ㄍㄜ˙ ㄩㄝˋ ㄉㄡ ㄩㄝ ㄧˊ ㄘˋ ㄌㄠˇ ㄆㄥˊ ㄧㄡ˙",
+        "text": "从那以后,我每个月都约一次老朋友。",
+        "romanization": "cóng nà yǐhòu wǒ měi ge yuè dōu yuē yí cì lǎo péngyou",
+        "translation": "Ever since, I have arranged to see old friends once a month.",
+        "translation_en": "Ever since, I have arranged to see old friends once a month.",
+        "translation_id": "Ever since, I have arranged to see old friends once a month."
+      },
+      {
+        "hanzi": "见面很麻烦,但正是这份麻烦让关系变得真实。",
+        "pinyin": "jiànmiàn hěn máfan dàn zhèng shì zhè fèn máfan ràng guānxi biàn de zhēnshí",
+        "zhuyin": "ㄐㄧㄢˋ ㄇㄧㄢˋ ㄏㄣˇ ㄇㄚˊ ㄈㄢ˙ ㄉㄢˋ ㄓㄥˋ ㄕˋ ㄓㄜˋ ㄈㄣˋ ㄇㄚˊ ㄈㄢ˙ ㄖㄤˋ ㄍㄨㄢ ㄒㄧ˙ ㄅㄧㄢˋ ㄉㄜ˙ ㄓㄣ ㄕˊ",
+        "text": "见面很麻烦,但正是这份麻烦让关系变得真实。",
+        "romanization": "jiànmiàn hěn máfan dàn zhèng shì zhè fèn máfan ràng guānxi biàn de zhēnshí",
+        "translation": "Meeting is a nuisance, but it is precisely that nuisance that makes it real.",
+        "translation_en": "Meeting is a nuisance, but it is precisely that nuisance that makes it real.",
+        "translation_id": "Meeting is a nuisance, but it is precisely that nuisance that makes it real."
+      }
+    ]
+  },
+  {
+    "id": "r-duanwujie-de-laili",
+    "title": "端午节的来历 — The Origin of Dragon Boat Festival",
+    "type": "story",
+    "hsk": 5,
+    "wordCount": 328,
+    "summary": "Why people race dragon boats and eat zongzi every fifth lunar month.",
+    "paragraphs": [
+      {
+        "hanzi": "端午节在农历五月初五。",
+        "pinyin": "Duānwǔjié zài nónglì wǔyuè chūwǔ",
+        "zhuyin": "ㄉㄨㄢ ㄨˇ ㄐㄧㄝˊ ㄗㄞˋ ㄋㄨㄥˊ ㄌㄧˋ ㄨˇ ㄩㄝˋ ㄔㄨ ㄨˇ",
+        "text": "端午节在农历五月初五。",
+        "romanization": "Duānwǔjié zài nónglì wǔyuè chūwǔ",
+        "translation": "The Dragon Boat Festival falls on the fifth day of the fifth lunar month.",
+        "translation_en": "The Dragon Boat Festival falls on the fifth day of the fifth lunar month.",
+        "translation_id": "The Dragon Boat Festival falls on the fifth day of the fifth lunar month."
+      },
+      {
+        "hanzi": "传说这个节日是为了纪念古代爱国诗人屈原。",
+        "pinyin": "chuánshuō zhège jiérì shì wèile jìniàn gǔdài àiguó shīrén Qū Yuán",
+        "zhuyin": "ㄔㄨㄢˊ ㄕㄨㄛ ㄓㄜˋ ㄍㄜ˙ ㄐㄧㄝˊ ㄖˋ ㄕˋ ㄨㄟˋ ㄌㄜ˙ ㄐㄧˋ ㄋㄧㄢˋ ㄍㄨˇ ㄉㄞˋ ㄞˋ ㄍㄨㄛˊ ㄕ ㄖㄣˊ ㄑㄩ ㄩㄢˊ",
+        "text": "传说这个节日是为了纪念古代爱国诗人屈原。",
+        "romanization": "chuánshuō zhège jiérì shì wèile jìniàn gǔdài àiguó shīrén Qū Yuán",
+        "translation": "It is said this holiday is to commemorate Qu Yuan, an ancient patriotic poet.",
+        "translation_en": "It is said this holiday is to commemorate Qu Yuan, an ancient patriotic poet.",
+        "translation_id": "It is said this holiday is to commemorate Qu Yuan, an ancient patriotic poet."
+      },
+      {
+        "hanzi": "屈原在国家灭亡时,悲愤地投入汨罗江。",
+        "pinyin": "Qū Yuán zài guójiā mièwáng shí bēifèn de tóurù Mìluó Jiāng",
+        "zhuyin": "ㄑㄩ ㄩㄢˊ ㄗㄞˋ ㄍㄨㄛˊ ㄐㄧㄚ ㄇㄧㄝˋ ㄨㄤˊ ㄕˊ ㄅㄟ ㄈㄣˋ ㄉㄜ˙ ㄊㄡˊ ㄖㄨˋ ㄇㄧˋ ㄌㄨㄛˊ ㄐㄧㄤ",
+        "text": "屈原在国家灭亡时,悲愤地投入汨罗江。",
+        "romanization": "Qū Yuán zài guójiā mièwáng shí bēifèn de tóurù Mìluó Jiāng",
+        "translation": "When his country fell, Qu Yuan jumped into the Miluo River out of grief.",
+        "translation_en": "When his country fell, Qu Yuan jumped into the Miluo River out of grief.",
+        "translation_id": "When his country fell, Qu Yuan jumped into the Miluo River out of grief."
+      },
+      {
+        "hanzi": "当地百姓听说后,划着船去寻找他。",
+        "pinyin": "dāngdì bǎixìng tīngshuō hòu huá zhe chuán qù xúnzhǎo tā",
+        "zhuyin": "ㄉㄤ ㄉㄧˋ ㄅㄞˇ ㄒㄧㄥˋ ㄊㄧㄥ ㄕㄨㄛ ㄏㄡˋ ㄏㄨㄚˊ ㄓㄜ˙ ㄔㄨㄢˊ ㄑㄩˋ ㄒㄩㄣˊ ㄓㄠˇ ㄊㄚ",
+        "text": "当地百姓听说后,划着船去寻找他。",
+        "romanization": "dāngdì bǎixìng tīngshuō hòu huá zhe chuán qù xúnzhǎo tā",
+        "translation": "When the local people heard, they paddled boats to look for him.",
+        "translation_en": "When the local people heard, they paddled boats to look for him.",
+        "translation_id": "When the local people heard, they paddled boats to look for him."
+      },
+      {
+        "hanzi": "为了不让鱼伤害他的身体,人们把米投入江中。",
+        "pinyin": "wèile bù ràng yú shānghài tā de shēntǐ rénmen bǎ mǐ tóu rù jiāng zhōng",
+        "zhuyin": "ㄨㄟˋ ㄌㄜ˙ ㄅㄨˋ ㄖㄤˋ ㄩˊ ㄕㄤ ㄏㄞˋ ㄊㄚ ㄉㄜ˙ ㄕㄣ ㄊㄧˇ ㄖㄣˊ ㄇㄣ˙ ㄅㄚˇ ㄇㄧˇ ㄊㄡˊ ㄖㄨˋ ㄐㄧㄤ ㄓㄨㄥ",
+        "text": "为了不让鱼伤害他的身体,人们把米投入江中。",
+        "romanization": "wèile bù ràng yú shānghài tā de shēntǐ rénmen bǎ mǐ tóu rù jiāng zhōng",
+        "translation": "To prevent fish from harming his body, they threw rice into the river.",
+        "translation_en": "To prevent fish from harming his body, they threw rice into the river.",
+        "translation_id": "To prevent fish from harming his body, they threw rice into the river."
+      },
+      {
+        "hanzi": "这两件事后来演变成赛龙舟和吃粽子的风俗。",
+        "pinyin": "zhè liǎng jiàn shì hòulái yǎnbiàn chéng sài lóngzhōu hé chī zòngzi de fēngsú",
+        "zhuyin": "ㄓㄜˋ ㄌㄧㄤˇ ㄐㄧㄢˋ ㄕˋ ㄏㄡˋ ㄌㄞˊ ㄧㄢˇ ㄅㄧㄢˋ ㄔㄥˊ ㄙㄞˋ ㄌㄨㄥˊ ㄓㄡ ㄏㄜˊ ㄔ ㄗㄨㄥˋ ㄗ˙ ㄉㄜ˙ ㄈㄥ ㄙㄨˊ",
+        "text": "这两件事后来演变成赛龙舟和吃粽子的风俗。",
+        "romanization": "zhè liǎng jiàn shì hòulái yǎnbiàn chéng sài lóngzhōu hé chī zòngzi de fēngsú",
+        "translation": "These two acts later evolved into dragon boat racing and eating zongzi.",
+        "translation_en": "These two acts later evolved into dragon boat racing and eating zongzi.",
+        "translation_id": "These two acts later evolved into dragon boat racing and eating zongzi."
+      },
+      {
+        "hanzi": "今天,端午节早已不仅是纪念,更成了文化认同的象征。",
+        "pinyin": "jīntiān Duānwǔjié zǎo yǐ bùjǐn shì jìniàn gèng chéng le wénhuà rèntóng de xiàngzhēng",
+        "zhuyin": "ㄐㄧㄣ ㄊㄧㄢ ㄉㄨㄢ ㄨˇ ㄐㄧㄝˊ ㄗㄠˇ ㄧˇ ㄅㄨˋ ㄐㄧㄣˇ ㄕˋ ㄐㄧˋ ㄋㄧㄢˋ ㄍㄥˋ ㄔㄥˊ ㄌㄜ˙ ㄨㄣˊ ㄏㄨㄚˋ ㄖㄣˋ ㄊㄨㄥˊ ㄉㄜ˙ ㄒㄧㄤˋ ㄓㄥ",
+        "text": "今天,端午节早已不仅是纪念,更成了文化认同的象征。",
+        "romanization": "jīntiān Duānwǔjié zǎo yǐ bùjǐn shì jìniàn gèng chéng le wénhuà rèntóng de xiàngzhēng",
+        "translation": "Today, the Dragon Boat Festival is no longer just memorial — it has become a symbol of cultural identity.",
+        "translation_en": "Today, the Dragon Boat Festival is no longer just memorial — it has become a symbol of cultural identity.",
+        "translation_id": "Today, the Dragon Boat Festival is no longer just memorial — it has become a symbol of cultural identity."
+      },
+      {
+        "hanzi": "屈原是战国时期楚国的大臣。",
+        "pinyin": "Qū Yuán shì Zhànguó shíqī Chǔ guó de dàchén",
+        "zhuyin": "ㄑㄩ ㄩㄢˊ ㄕˋ ㄓㄢˋ ㄍㄨㄛˊ ㄕˊ ㄑㄧ ㄔㄨˇ ㄍㄨㄛˊ ㄉㄜ˙ ㄉㄚˋ ㄔㄣˊ",
+        "text": "屈原是战国时期楚国的大臣。",
+        "romanization": "Qū Yuán shì Zhànguó shíqī Chǔ guó de dàchén",
+        "translation": "Qu Yuan was a minister of the state of Chu in the Warring States period.",
+        "translation_en": "Qu Yuan was a minister of the state of Chu in the Warring States period.",
+        "translation_id": "Qu Yuan was a minister of the state of Chu in the Warring States period."
+      },
+      {
+        "hanzi": "他主张联合抗秦,却被小人陷害,遭到流放。",
+        "pinyin": "tā zhǔzhāng liánhé kàng Qín què bèi xiǎorén xiànhài zāodào liúfàng",
+        "zhuyin": "ㄊㄚ ㄓㄨˇ ㄓㄤ ㄌㄧㄢˊ ㄏㄜˊ ㄎㄤˋ ㄑㄧㄣˊ ㄑㄩㄝˋ ㄅㄟˋ ㄒㄧㄠˇ ㄖㄣˊ ㄒㄧㄢˋ ㄏㄞˋ ㄗㄠ ㄉㄠˋ ㄌㄧㄡˊ ㄈㄤˋ",
+        "text": "他主张联合抗秦,却被小人陷害,遭到流放。",
+        "romanization": "tā zhǔzhāng liánhé kàng Qín què bèi xiǎorén xiànhài zāodào liúfàng",
+        "translation": "He argued for an alliance against Qin, but was framed by petty men and exiled.",
+        "translation_en": "He argued for an alliance against Qin, but was framed by petty men and exiled.",
+        "translation_id": "He argued for an alliance against Qin, but was framed by petty men and exiled."
+      },
+      {
+        "hanzi": "流放期间,他写下了《离骚》等不朽的诗篇。",
+        "pinyin": "liúfàng qījiān tā xiě xià le Lí Sāo děng bùxiǔ de shīpiān",
+        "zhuyin": "ㄌㄧㄡˊ ㄈㄤˋ ㄑㄧ ㄐㄧㄢ ㄊㄚ ㄒㄧㄝˇ ㄒㄧㄚˋ ㄌㄜ˙ ㄌㄧˊ ㄙㄠ ㄉㄥˇ ㄅㄨˋ ㄒㄧㄡˇ ㄉㄜ˙ ㄕ ㄆㄧㄢ",
+        "text": "流放期间,他写下了《离骚》等不朽的诗篇。",
+        "romanization": "liúfàng qījiān tā xiě xià le Lí Sāo děng bùxiǔ de shīpiān",
+        "translation": "During his exile he wrote Li Sao and other imperishable poems.",
+        "translation_en": "During his exile he wrote Li Sao and other imperishable poems.",
+        "translation_id": "During his exile he wrote Li Sao and other imperishable poems."
+      },
+      {
+        "hanzi": "那些诗至今仍是中国文学的高峰。",
+        "pinyin": "nàxiē shī zhìjīn réng shì Zhōngguó wénxué de gāofēng",
+        "zhuyin": "ㄋㄚˋ ㄒㄧㄝ ㄕ ㄓˋ ㄐㄧㄣ ㄖㄥˊ ㄕˋ ㄓㄨㄥ ㄍㄨㄛˊ ㄨㄣˊ ㄒㄩㄝˊ ㄉㄜ˙ ㄍㄠ ㄈㄥ",
+        "text": "那些诗至今仍是中国文学的高峰。",
+        "romanization": "nàxiē shī zhìjīn réng shì Zhōngguó wénxué de gāofēng",
+        "translation": "Those poems remain a summit of Chinese literature to this day.",
+        "translation_en": "Those poems remain a summit of Chinese literature to this day.",
+        "translation_id": "Those poems remain a summit of Chinese literature to this day."
+      },
+      {
+        "hanzi": "秦军攻破楚国都城那年,他终于绝望了。",
+        "pinyin": "Qín jūn gōngpò Chǔ guó dūchéng nà nián tā zhōngyú juéwàng le",
+        "zhuyin": "ㄑㄧㄣˊ ㄐㄩㄣ ㄍㄨㄥ ㄆㄛˋ ㄔㄨˇ ㄍㄨㄛˊ ㄉㄨ ㄔㄥˊ ㄋㄚˋ ㄋㄧㄢˊ ㄊㄚ ㄓㄨㄥ ㄩˊ ㄐㄩㄝˊ ㄨㄤˋ ㄌㄜ˙",
+        "text": "秦军攻破楚国都城那年,他终于绝望了。",
+        "romanization": "Qín jūn gōngpò Chǔ guó dūchéng nà nián tā zhōngyú juéwàng le",
+        "translation": "The year the Qin army broke the Chu capital, he despaired at last.",
+        "translation_en": "The year the Qin army broke the Chu capital, he despaired at last.",
+        "translation_id": "The year the Qin army broke the Chu capital, he despaired at last."
+      },
+      {
+        "hanzi": "五月初五那天,他抱着石头走进了江水。",
+        "pinyin": "wǔ yuè chū wǔ nà tiān tā bào zhe shítou zǒu jìn le jiāngshuǐ",
+        "zhuyin": "ㄨˇ ㄩㄝˋ ㄔㄨ ㄨˇ ㄋㄚˋ ㄊㄧㄢ ㄊㄚ ㄅㄠˋ ㄓㄜ˙ ㄕˊ ㄊㄡ˙ ㄗㄡˇ ㄐㄧㄣˋ ㄌㄜ˙ ㄐㄧㄤ ㄕㄨㄟˇ",
+        "text": "五月初五那天,他抱着石头走进了江水。",
+        "romanization": "wǔ yuè chū wǔ nà tiān tā bào zhe shítou zǒu jìn le jiāngshuǐ",
+        "translation": "On the fifth day of the fifth month, he walked into the river holding a stone.",
+        "translation_en": "On the fifth day of the fifth month, he walked into the river holding a stone.",
+        "translation_id": "On the fifth day of the fifth month, he walked into the river holding a stone."
+      },
+      {
+        "hanzi": "今天的赛龙舟已经成了一项国际比赛。",
+        "pinyin": "jīntiān de sài lóngzhōu yǐjīng chéng le yí xiàng guójì bǐsài",
+        "zhuyin": "ㄐㄧㄣ ㄊㄧㄢ ㄉㄜ˙ ㄙㄞˋ ㄌㄨㄥˊ ㄓㄡ ㄧˇ ㄐㄧㄥ ㄔㄥˊ ㄌㄜ˙ ㄧˊ ㄒㄧㄤˋ ㄍㄨㄛˊ ㄐㄧˋ ㄅㄧˇ ㄙㄞˋ",
+        "text": "今天的赛龙舟已经成了一项国际比赛。",
+        "romanization": "jīntiān de sài lóngzhōu yǐjīng chéng le yí xiàng guójì bǐsài",
+        "translation": "Dragon boat racing today has become an international sport.",
+        "translation_en": "Dragon boat racing today has become an international sport.",
+        "translation_id": "Dragon boat racing today has become an international sport."
+      },
+      {
+        "hanzi": "鼓声一响,几十个人的桨同时落水。",
+        "pinyin": "gǔ shēng yì xiǎng jǐshí ge rén de jiǎng tóngshí luò shuǐ",
+        "zhuyin": "ㄍㄨˇ ㄕㄥ ㄧˋ ㄒㄧㄤˇ ㄐㄧˇ ㄕˊ ㄍㄜ˙ ㄖㄣˊ ㄉㄜ˙ ㄐㄧㄤˇ ㄊㄨㄥˊ ㄕˊ ㄌㄨㄛˋ ㄕㄨㄟˇ",
+        "text": "鼓声一响,几十个人的桨同时落水。",
+        "romanization": "gǔ shēng yì xiǎng jǐshí ge rén de jiǎng tóngshí luò shuǐ",
+        "translation": "The drum sounds, and dozens of oars strike the water at once.",
+        "translation_en": "The drum sounds, and dozens of oars strike the water at once.",
+        "translation_id": "The drum sounds, and dozens of oars strike the water at once."
+      },
+      {
+        "hanzi": "粽子的口味南北不同,北方多甜,南方多咸。",
+        "pinyin": "zòngzi de kǒuwèi nán běi bùtóng běifāng duō tián nánfāng duō xián",
+        "zhuyin": "ㄗㄨㄥˋ ㄗ˙ ㄉㄜ˙ ㄎㄡˇ ㄨㄟˋ ㄋㄢˊ ㄅㄟˇ ㄅㄨˋ ㄊㄨㄥˊ ㄅㄟˇ ㄈㄤ ㄉㄨㄛ ㄊㄧㄢˊ ㄋㄢˊ ㄈㄤ ㄉㄨㄛ ㄒㄧㄢˊ",
+        "text": "粽子的口味南北不同,北方多甜,南方多咸。",
+        "romanization": "zòngzi de kǒuwèi nán běi bùtóng běifāng duō tián nánfāng duō xián",
+        "translation": "Zongzi taste different north and south — the north mostly sweet, the south mostly salty.",
+        "translation_en": "Zongzi taste different north and south — the north mostly sweet, the south mostly salty.",
+        "translation_id": "Zongzi taste different north and south — the north mostly sweet, the south mostly salty."
+      },
+      {
+        "hanzi": "为了甜粽还是咸粽,人们每年都要争论一次。",
+        "pinyin": "wèile tián zòng háishi xián zòng rénmen měi nián dōu yào zhēnglùn yí cì",
+        "zhuyin": "ㄨㄟˋ ㄌㄜ˙ ㄊㄧㄢˊ ㄗㄨㄥˋ ㄏㄞˊ ㄕ˙ ㄒㄧㄢˊ ㄗㄨㄥˋ ㄖㄣˊ ㄇㄣ˙ ㄇㄟˇ ㄋㄧㄢˊ ㄉㄡ ㄧㄠˋ ㄓㄥ ㄌㄨㄣˋ ㄧˊ ㄘˋ",
+        "text": "为了甜粽还是咸粽,人们每年都要争论一次。",
+        "romanization": "wèile tián zòng háishi xián zòng rénmen měi nián dōu yào zhēnglùn yí cì",
+        "translation": "Sweet zongzi or salty — people have the same argument once a year.",
+        "translation_en": "Sweet zongzi or salty — people have the same argument once a year.",
+        "translation_id": "Sweet zongzi or salty — people have the same argument once a year."
+      },
+      {
+        "hanzi": "一个两千多年前的故事,就这样活到了今天。",
+        "pinyin": "yí ge liǎng qiān duō nián qián de gùshi jiù zhèyàng huó dào le jīntiān",
+        "zhuyin": "ㄧˊ ㄍㄜ˙ ㄌㄧㄤˇ ㄑㄧㄢ ㄉㄨㄛ ㄋㄧㄢˊ ㄑㄧㄢˊ ㄉㄜ˙ ㄍㄨˋ ㄕ˙ ㄐㄧㄡˋ ㄓㄜˋ ㄧㄤˋ ㄏㄨㄛˊ ㄉㄠˋ ㄌㄜ˙ ㄐㄧㄣ ㄊㄧㄢ",
+        "text": "一个两千多年前的故事,就这样活到了今天。",
+        "romanization": "yí ge liǎng qiān duō nián qián de gùshi jiù zhèyàng huó dào le jīntiān",
+        "translation": "A story from over two thousand years ago has lived on to today just like that.",
+        "translation_en": "A story from over two thousand years ago has lived on to today just like that.",
+        "translation_id": "A story from over two thousand years ago has lived on to today just like that."
+      }
+    ]
+  },
+  {
+    "id": "r-sichou-zhi-lu",
+    "title": "丝绸之路 — The Silk Road",
+    "type": "story",
+    "hsk": 5,
+    "wordCount": 355,
+    "summary": "What was actually exchanged along the route — and what it cost.",
+    "paragraphs": [
+      {
+        "hanzi": "丝绸之路是古代连接中国和西方的贸易通道。",
+        "pinyin": "Sīchóu zhī Lù shì gǔdài liánjiē Zhōngguó hé xīfāng de màoyì tōngdào",
+        "zhuyin": "ㄙ ㄔㄡˊ ㄓ ㄌㄨˋ ㄕˋ ㄍㄨˇ ㄉㄞˋ ㄌㄧㄢˊ ㄐㄧㄝ ㄓㄨㄥ ㄍㄨㄛˊ ㄏㄜˊ ㄒㄧ ㄈㄤ ㄉㄜ˙ ㄇㄠˋ ㄧˋ ㄊㄨㄥ ㄉㄠˋ",
+        "text": "丝绸之路是古代连接中国和西方的贸易通道。",
+        "romanization": "Sīchóu zhī Lù shì gǔdài liánjiē Zhōngguó hé xīfāng de màoyì tōngdào",
+        "translation": "The Silk Road was an ancient network of trade routes connecting China and the West.",
+        "translation_en": "The Silk Road was an ancient network of trade routes connecting China and the West.",
+        "translation_id": "The Silk Road was an ancient network of trade routes connecting China and the West."
+      },
+      {
+        "hanzi": "它始于西汉时期,由外交官张骞开辟。",
+        "pinyin": "tā shǐ yú Xī Hàn shíqī yóu wàijiāoguān Zhāng Qiān kāipì",
+        "zhuyin": "ㄊㄚ ㄕˇ ㄩˊ ㄒㄧ ㄏㄢˋ ㄕˊ ㄑㄧ ㄧㄡˊ ㄨㄞˋ ㄐㄧㄠ ㄍㄨㄢ ㄓㄤ ㄑㄧㄢ ㄎㄞ ㄆㄧˋ",
+        "text": "它始于西汉时期,由外交官张骞开辟。",
+        "romanization": "tā shǐ yú Xī Hàn shíqī yóu wàijiāoguān Zhāng Qiān kāipì",
+        "translation": "It originated in the Western Han dynasty, opened up by the diplomat Zhang Qian.",
+        "translation_en": "It originated in the Western Han dynasty, opened up by the diplomat Zhang Qian.",
+        "translation_id": "It originated in the Western Han dynasty, opened up by the diplomat Zhang Qian."
+      },
+      {
+        "hanzi": "商队把丝绸、瓷器和茶叶从长安运往西方。",
+        "pinyin": "shāngduì bǎ sīchóu cíqì hé cháyè cóng Cháng'ān yùn wǎng xīfāng",
+        "zhuyin": "ㄕㄤ ㄉㄨㄟˋ ㄅㄚˇ ㄙ ㄔㄡˊ ㄘˊ ㄑㄧˋ ㄏㄜˊ ㄔㄚˊ ㄧㄝˋ ㄘㄨㄥˊ ㄔㄤˊ ㄢ ㄩㄣˋ ㄨㄤˇ ㄒㄧ ㄈㄤ",
+        "text": "商队把丝绸、瓷器和茶叶从长安运往西方。",
+        "romanization": "shāngduì bǎ sīchóu cíqì hé cháyè cóng Cháng'ān yùn wǎng xīfāng",
+        "translation": "Caravans transported silk, porcelain, and tea from Chang'an westward.",
+        "translation_en": "Caravans transported silk, porcelain, and tea from Chang'an westward.",
+        "translation_id": "Caravans transported silk, porcelain, and tea from Chang'an westward."
+      },
+      {
+        "hanzi": "返程时,他们带回了葡萄、核桃、玻璃器和音乐。",
+        "pinyin": "fǎnchéng shí tāmen dài huí le pútáo hétáo bōli qì hé yīnyuè",
+        "zhuyin": "ㄈㄢˇ ㄔㄥˊ ㄕˊ ㄊㄚ ㄇㄣ˙ ㄉㄞˋ ㄏㄨㄟˊ ㄌㄜ˙ ㄆㄨˊ ㄊㄠˊ ㄏㄜˊ ㄊㄠˊ ㄅㄛ ㄌㄧ˙ ㄑㄧˋ ㄏㄜˊ ㄧㄣ ㄩㄝˋ",
+        "text": "返程时,他们带回了葡萄、核桃、玻璃器和音乐。",
+        "romanization": "fǎnchéng shí tāmen dài huí le pútáo hétáo bōli qì hé yīnyuè",
+        "translation": "On the return trip they brought back grapes, walnuts, glassware, and music.",
+        "translation_en": "On the return trip they brought back grapes, walnuts, glassware, and music.",
+        "translation_id": "On the return trip they brought back grapes, walnuts, glassware, and music."
+      },
+      {
+        "hanzi": "丝路的交流不仅是商业上的,也是宗教和艺术上的。",
+        "pinyin": "Sī Lù de jiāoliú bùjǐn shì shāngyè shàng de yě shì zōngjiào hé yìshù shàng de",
+        "zhuyin": "ㄙ ㄌㄨˋ ㄉㄜ˙ ㄐㄧㄠ ㄌㄧㄡˊ ㄅㄨˋ ㄐㄧㄣˇ ㄕˋ ㄕㄤ ㄧㄝˋ ㄕㄤˋ ㄉㄜ˙ ㄧㄝˇ ㄕˋ ㄗㄨㄥ ㄐㄧㄠˋ ㄏㄜˊ ㄧˋ ㄕㄨˋ ㄕㄤˋ ㄉㄜ˙",
+        "text": "丝路的交流不仅是商业上的,也是宗教和艺术上的。",
+        "romanization": "Sī Lù de jiāoliú bùjǐn shì shāngyè shàng de yě shì zōngjiào hé yìshù shàng de",
+        "translation": "Silk Road exchange was not only commercial — it was also religious and artistic.",
+        "translation_en": "Silk Road exchange was not only commercial — it was also religious and artistic.",
+        "translation_id": "Silk Road exchange was not only commercial — it was also religious and artistic."
+      },
+      {
+        "hanzi": "佛教就是沿着这条路传入中原的。",
+        "pinyin": "Fójiào jiùshì yán zhe zhè tiáo lù chuán rù Zhōngyuán de",
+        "zhuyin": "ㄈㄛˊ ㄐㄧㄠˋ ㄐㄧㄡˋ ㄕˋ ㄧㄢˊ ㄓㄜ˙ ㄓㄜˋ ㄊㄧㄠˊ ㄌㄨˋ ㄔㄨㄢˊ ㄖㄨˋ ㄓㄨㄥ ㄩㄢˊ ㄉㄜ˙",
+        "text": "佛教就是沿着这条路传入中原的。",
+        "romanization": "Fójiào jiùshì yán zhe zhè tiáo lù chuán rù Zhōngyuán de",
+        "translation": "Buddhism entered the Central Plains along this road.",
+        "translation_en": "Buddhism entered the Central Plains along this road.",
+        "translation_id": "Buddhism entered the Central Plains along this road."
+      },
+      {
+        "hanzi": "沙漠之行极其危险,风沙、强盗和疾病夺去了无数生命。",
+        "pinyin": "shāmò zhī xíng jíqí wēixiǎn fēngshā qiángdào hé jíbìng duó qù le wúshù shēngmìng",
+        "zhuyin": "ㄕㄚ ㄇㄛˋ ㄓ ㄒㄧㄥˊ ㄐㄧˊ ㄑㄧˊ ㄨㄟ ㄒㄧㄢˇ ㄈㄥ ㄕㄚ ㄑㄧㄤˊ ㄉㄠˋ ㄏㄜˊ ㄐㄧˊ ㄅㄧㄥˋ ㄉㄨㄛˊ ㄑㄩˋ ㄌㄜ˙ ㄨˊ ㄕㄨˋ ㄕㄥ ㄇㄧㄥˋ",
+        "text": "沙漠之行极其危险,风沙、强盗和疾病夺去了无数生命。",
+        "romanization": "shāmò zhī xíng jíqí wēixiǎn fēngshā qiángdào hé jíbìng duó qù le wúshù shēngmìng",
+        "translation": "The desert journey was extremely dangerous — sandstorms, bandits, and disease all took countless lives.",
+        "translation_en": "The desert journey was extremely dangerous — sandstorms, bandits, and disease all took countless lives.",
+        "translation_id": "The desert journey was extremely dangerous — sandstorms, bandits, and disease all took countless lives."
+      },
+      {
+        "hanzi": "但正是这种艰难的交流,塑造了欧亚大陆丰富的文化多样性。",
+        "pinyin": "dàn zhèng shì zhè zhǒng jiānnán de jiāoliú sùzào le Ōuyà dàlù fēngfù de wénhuà duōyàngxìng",
+        "zhuyin": "ㄉㄢˋ ㄓㄥˋ ㄕˋ ㄓㄜˋ ㄓㄨㄥˇ ㄐㄧㄢ ㄋㄢˊ ㄉㄜ˙ ㄐㄧㄠ ㄌㄧㄡˊ ㄙㄨˋ ㄗㄠˋ ㄌㄜ˙ ㄡ ㄧㄚˋ ㄉㄚˋ ㄌㄨˋ ㄈㄥ ㄈㄨˋ ㄉㄜ˙ ㄨㄣˊ ㄏㄨㄚˋ ㄉㄨㄛ ㄧㄤˋ ㄒㄧㄥˋ",
+        "text": "但正是这种艰难的交流,塑造了欧亚大陆丰富的文化多样性。",
+        "romanization": "dàn zhèng shì zhè zhǒng jiānnán de jiāoliú sùzào le Ōuyà dàlù fēngfù de wénhuà duōyàngxìng",
+        "translation": "Yet it was precisely this difficult exchange that built the rich cultural diversity of Eurasia.",
+        "translation_en": "Yet it was precisely this difficult exchange that built the rich cultural diversity of Eurasia.",
+        "translation_id": "Yet it was precisely this difficult exchange that built the rich cultural diversity of Eurasia."
+      },
+      {
+        "hanzi": "张骞第一次出使时被匈奴抓住,扣留了十多年。",
+        "pinyin": "Zhāng Qiān dì yī cì chūshǐ shí bèi Xiōngnú zhuā zhù kòuliú le shí duō nián",
+        "zhuyin": "ㄓㄤ ㄑㄧㄢ ㄉㄧˋ ㄧ ㄘˋ ㄔㄨ ㄕˇ ㄕˊ ㄅㄟˋ ㄒㄩㄥ ㄋㄨˊ ㄓㄨㄚ ㄓㄨˋ ㄎㄡˋ ㄌㄧㄡˊ ㄌㄜ˙ ㄕˊ ㄉㄨㄛ ㄋㄧㄢˊ",
+        "text": "张骞第一次出使时被匈奴抓住,扣留了十多年。",
+        "romanization": "Zhāng Qiān dì yī cì chūshǐ shí bèi Xiōngnú zhuā zhù kòuliú le shí duō nián",
+        "translation": "On his first mission Zhang Qian was seized by the Xiongnu and held for over ten years.",
+        "translation_en": "On his first mission Zhang Qian was seized by the Xiongnu and held for over ten years.",
+        "translation_id": "On his first mission Zhang Qian was seized by the Xiongnu and held for over ten years."
+      },
+      {
+        "hanzi": "他没有放弃使命,后来找到机会逃走,继续西行。",
+        "pinyin": "tā méiyǒu fàngqì shǐmìng hòulái zhǎo dào jīhuì táo zǒu jìxù xī xíng",
+        "zhuyin": "ㄊㄚ ㄇㄟˊ ㄧㄡˇ ㄈㄤˋ ㄑㄧˋ ㄕˇ ㄇㄧㄥˋ ㄏㄡˋ ㄌㄞˊ ㄓㄠˇ ㄉㄠˋ ㄐㄧ ㄏㄨㄟˋ ㄊㄠˊ ㄗㄡˇ ㄐㄧˋ ㄒㄩˋ ㄒㄧ ㄒㄧㄥˊ",
+        "text": "他没有放弃使命,后来找到机会逃走,继续西行。",
+        "romanization": "tā méiyǒu fàngqì shǐmìng hòulái zhǎo dào jīhuì táo zǒu jìxù xī xíng",
+        "translation": "He did not abandon the mission; he later found a chance to escape and pressed west.",
+        "translation_en": "He did not abandon the mission; he later found a chance to escape and pressed west.",
+        "translation_id": "He did not abandon the mission; he later found a chance to escape and pressed west."
+      },
+      {
+        "hanzi": "回到长安时,一百多人的队伍只剩下两个人。",
+        "pinyin": "huí dào Cháng'ān shí yì bǎi duō rén de duìwu zhǐ shèng xià liǎng ge rén",
+        "zhuyin": "ㄏㄨㄟˊ ㄉㄠˋ ㄔㄤˊ ㄢ ㄕˊ ㄧˋ ㄅㄞˇ ㄉㄨㄛ ㄖㄣˊ ㄉㄜ˙ ㄉㄨㄟˋ ㄨ˙ ㄓˇ ㄕㄥˋ ㄒㄧㄚˋ ㄌㄧㄤˇ ㄍㄜ˙ ㄖㄣˊ",
+        "text": "回到长安时,一百多人的队伍只剩下两个人。",
+        "romanization": "huí dào Cháng'ān shí yì bǎi duō rén de duìwu zhǐ shèng xià liǎng ge rén",
+        "translation": "When he returned to Chang'an, only two of a party of over a hundred were left.",
+        "translation_en": "When he returned to Chang'an, only two of a party of over a hundred were left.",
+        "translation_id": "When he returned to Chang'an, only two of a party of over a hundred were left."
+      },
+      {
+        "hanzi": "丝绸在罗马非常昂贵,据说和黄金同价。",
+        "pinyin": "sīchóu zài Luómǎ fēicháng ángguì jùshuō hé huángjīn tóng jià",
+        "zhuyin": "ㄙ ㄔㄡˊ ㄗㄞˋ ㄌㄨㄛˊ ㄇㄚˇ ㄈㄟ ㄔㄤˊ ㄤˊ ㄍㄨㄟˋ ㄐㄩˋ ㄕㄨㄛ ㄏㄜˊ ㄏㄨㄤˊ ㄐㄧㄣ ㄊㄨㄥˊ ㄐㄧㄚˋ",
+        "text": "丝绸在罗马非常昂贵,据说和黄金同价。",
+        "romanization": "sīchóu zài Luómǎ fēicháng ángguì jùshuō hé huángjīn tóng jià",
+        "translation": "Silk was extremely costly in Rome — said to be worth its weight in gold.",
+        "translation_en": "Silk was extremely costly in Rome — said to be worth its weight in gold.",
+        "translation_id": "Silk was extremely costly in Rome — said to be worth its weight in gold."
+      },
+      {
+        "hanzi": "罗马人很久都不知道丝是怎么做出来的。",
+        "pinyin": "Luómǎ rén hěn jiǔ dōu bù zhīdào sī shì zěnme zuò chūlái de",
+        "zhuyin": "ㄌㄨㄛˊ ㄇㄚˇ ㄖㄣˊ ㄏㄣˇ ㄐㄧㄡˇ ㄉㄡ ㄅㄨˋ ㄓ ㄉㄠˋ ㄙ ㄕˋ ㄗㄣˇ ㄇㄜ˙ ㄗㄨㄛˋ ㄔㄨ ㄌㄞˊ ㄉㄜ˙",
+        "text": "罗马人很久都不知道丝是怎么做出来的。",
+        "romanization": "Luómǎ rén hěn jiǔ dōu bù zhīdào sī shì zěnme zuò chūlái de",
+        "translation": "For a long time the Romans did not know how silk was made.",
+        "translation_en": "For a long time the Romans did not know how silk was made.",
+        "translation_id": "For a long time the Romans did not know how silk was made."
+      },
+      {
+        "hanzi": "他们以为丝长在树上。",
+        "pinyin": "tāmen yǐwéi sī zhǎng zài shù shàng",
+        "zhuyin": "ㄊㄚ ㄇㄣ˙ ㄧˇ ㄨㄟˊ ㄙ ㄓㄤˇ ㄗㄞˋ ㄕㄨˋ ㄕㄤˋ",
+        "text": "他们以为丝长在树上。",
+        "romanization": "tāmen yǐwéi sī zhǎng zài shù shàng",
+        "translation": "They believed silk grew on trees.",
+        "translation_en": "They believed silk grew on trees.",
+        "translation_id": "They believed silk grew on trees."
+      },
+      {
+        "hanzi": "沿途兴起了许多城市,比如敦煌、撒马尔罕。",
+        "pinyin": "yántú xīngqǐ le xǔduō chéngshì bǐrú Dūnhuáng Sāmǎ'ěrhǎn",
+        "zhuyin": "ㄧㄢˊ ㄊㄨˊ ㄒㄧㄥ ㄑㄧˇ ㄌㄜ˙ ㄒㄩˇ ㄉㄨㄛ ㄔㄥˊ ㄕˋ ㄅㄧˇ ㄖㄨˊ ㄉㄨㄣ ㄏㄨㄤˊ ㄙㄚ ㄇㄚˇ ㄦˇ ㄏㄢˇ",
+        "text": "沿途兴起了许多城市,比如敦煌、撒马尔罕。",
+        "romanization": "yántú xīngqǐ le xǔduō chéngshì bǐrú Dūnhuáng Sāmǎ'ěrhǎn",
+        "translation": "Many cities rose along the route, such as Dunhuang and Samarkand.",
+        "translation_en": "Many cities rose along the route, such as Dunhuang and Samarkand.",
+        "translation_id": "Many cities rose along the route, such as Dunhuang and Samarkand."
+      },
+      {
+        "hanzi": "敦煌的莫高窟里,保存着上千年的壁画。",
+        "pinyin": "Dūnhuáng de Mògāo Kū lǐ bǎocún zhe shàng qiān nián de bìhuà",
+        "zhuyin": "ㄉㄨㄣ ㄏㄨㄤˊ ㄉㄜ˙ ㄇㄛˋ ㄍㄠ ㄎㄨ ㄌㄧˇ ㄅㄠˇ ㄘㄨㄣˊ ㄓㄜ˙ ㄕㄤˋ ㄑㄧㄢ ㄋㄧㄢˊ ㄉㄜ˙ ㄅㄧˋ ㄏㄨㄚˋ",
+        "text": "敦煌的莫高窟里,保存着上千年的壁画。",
+        "romanization": "Dūnhuáng de Mògāo Kū lǐ bǎocún zhe shàng qiān nián de bìhuà",
+        "translation": "In the Mogao Caves at Dunhuang, murals a thousand years old are preserved.",
+        "translation_en": "In the Mogao Caves at Dunhuang, murals a thousand years old are preserved.",
+        "translation_id": "In the Mogao Caves at Dunhuang, murals a thousand years old are preserved."
+      },
+      {
+        "hanzi": "那些壁画上,能看到不同民族的面孔和服装。",
+        "pinyin": "nàxiē bìhuà shàng néng kàndào bùtóng mínzú de miànkǒng hé fúzhuāng",
+        "zhuyin": "ㄋㄚˋ ㄒㄧㄝ ㄅㄧˋ ㄏㄨㄚˋ ㄕㄤˋ ㄋㄥˊ ㄎㄢˋ ㄉㄠˋ ㄅㄨˋ ㄊㄨㄥˊ ㄇㄧㄣˊ ㄗㄨˊ ㄉㄜ˙ ㄇㄧㄢˋ ㄎㄨㄥˇ ㄏㄜˊ ㄈㄨˊ ㄓㄨㄤ",
+        "text": "那些壁画上,能看到不同民族的面孔和服装。",
+        "romanization": "nàxiē bìhuà shàng néng kàndào bùtóng mínzú de miànkǒng hé fúzhuāng",
+        "translation": "On those murals you can see the faces and dress of many different peoples.",
+        "translation_en": "On those murals you can see the faces and dress of many different peoples.",
+        "translation_id": "On those murals you can see the faces and dress of many different peoples."
+      },
+      {
+        "hanzi": "今天的\"一带一路\",名字就来自这条古道。",
+        "pinyin": "jīntiān de Yí Dài Yí Lù míngzi jiù láizì zhè tiáo gǔdào",
+        "zhuyin": "ㄐㄧㄣ ㄊㄧㄢ ㄉㄜ˙ ㄧˊ ㄉㄞˋ ㄧˊ ㄌㄨˋ ㄇㄧㄥˊ ㄗ˙ ㄐㄧㄡˋ ㄌㄞˊ ㄗˋ ㄓㄜˋ ㄊㄧㄠˊ ㄍㄨˇ ㄉㄠˋ",
+        "text": "今天的\"一带一路\",名字就来自这条古道。",
+        "romanization": "jīntiān de Yí Dài Yí Lù míngzi jiù láizì zhè tiáo gǔdào",
+        "translation": "Today's \"Belt and Road\" takes its very name from this ancient route.",
+        "translation_en": "Today's \"Belt and Road\" takes its very name from this ancient route.",
+        "translation_id": "Today's \"Belt and Road\" takes its very name from this ancient route."
+      }
+    ]
+  },
+  {
+    "id": "r-zhongguo-gudai-de-keju",
+    "title": "中国古代的科举 — China's Ancient Imperial Exam",
+    "type": "story",
+    "hsk": 5,
+    "wordCount": 352,
+    "summary": "How a written exam decided destinies for over a thousand years.",
+    "paragraphs": [
+      {
+        "hanzi": "科举是中国古代选拔官员的制度。",
+        "pinyin": "kējǔ shì Zhōngguó gǔdài xuǎnbá guānyuán de zhìdù",
+        "zhuyin": "ㄎㄜ ㄐㄩˇ ㄕˋ ㄓㄨㄥ ㄍㄨㄛˊ ㄍㄨˇ ㄉㄞˋ ㄒㄩㄢˇ ㄅㄚˊ ㄍㄨㄢ ㄩㄢˊ ㄉㄜ˙ ㄓˋ ㄉㄨˋ",
+        "text": "科举是中国古代选拔官员的制度。",
+        "romanization": "kējǔ shì Zhōngguó gǔdài xuǎnbá guānyuán de zhìdù",
+        "translation": "The keju was an ancient Chinese system for selecting officials.",
+        "translation_en": "The keju was an ancient Chinese system for selecting officials.",
+        "translation_id": "The keju was an ancient Chinese system for selecting officials."
+      },
+      {
+        "hanzi": "它始于隋朝,前后延续了一千三百多年。",
+        "pinyin": "tā shǐ yú Suí cháo qiánhòu yánxù le yìqiān sānbǎi duō nián",
+        "zhuyin": "ㄊㄚ ㄕˇ ㄩˊ ㄙㄨㄟˊ ㄔㄠˊ ㄑㄧㄢˊ ㄏㄡˋ ㄧㄢˊ ㄒㄩˋ ㄌㄜ˙ ㄧˋ ㄑㄧㄢ ㄙㄢ ㄅㄞˇ ㄉㄨㄛ ㄋㄧㄢˊ",
+        "text": "它始于隋朝,前后延续了一千三百多年。",
+        "romanization": "tā shǐ yú Suí cháo qiánhòu yánxù le yìqiān sānbǎi duō nián",
+        "translation": "It began in the Sui dynasty and continued for over 1300 years.",
+        "translation_en": "It began in the Sui dynasty and continued for over 1300 years.",
+        "translation_id": "It began in the Sui dynasty and continued for over 1300 years."
+      },
+      {
+        "hanzi": "通过层层考试,考生要在经书、诗文和行政判断上接受考验。",
+        "pinyin": "tōngguò céngcéng kǎoshì kǎoshēng yào zài jīngshū shī wén hé xíngzhèng pànduàn shàng jiēshòu kǎoyàn",
+        "zhuyin": "ㄊㄨㄥ ㄍㄨㄛˋ ㄘㄥˊ ㄘㄥˊ ㄎㄠˇ ㄕˋ ㄎㄠˇ ㄕㄥ ㄧㄠˋ ㄗㄞˋ ㄐㄧㄥ ㄕㄨ ㄕ ㄨㄣˊ ㄏㄜˊ ㄒㄧㄥˊ ㄓㄥˋ ㄆㄢˋ ㄉㄨㄢˋ ㄕㄤˋ ㄐㄧㄝ ㄕㄡˋ ㄎㄠˇ ㄧㄢˋ",
+        "text": "通过层层考试,考生要在经书、诗文和行政判断上接受考验。",
+        "romanization": "tōngguò céngcéng kǎoshì kǎoshēng yào zài jīngshū shī wén hé xíngzhèng pànduàn shàng jiēshòu kǎoyàn",
+        "translation": "Through several rounds, candidates were tested on classics, poetry, and administrative judgment.",
+        "translation_en": "Through several rounds, candidates were tested on classics, poetry, and administrative judgment.",
+        "translation_id": "Through several rounds, candidates were tested on classics, poetry, and administrative judgment."
+      },
+      {
+        "hanzi": "理论上,即使一个贫寒的读书人,也能通过读书改变命运。",
+        "pinyin": "lǐlùn shàng jíshǐ yí ge pín hán de dúshū rén yě néng tōngguò dúshū gǎibiàn mìngyùn",
+        "zhuyin": "ㄌㄧˇ ㄌㄨㄣˋ ㄕㄤˋ ㄐㄧˊ ㄕˇ ㄧˊ ㄍㄜ˙ ㄆㄧㄣˊ ㄏㄢˊ ㄉㄜ˙ ㄉㄨˊ ㄕㄨ ㄖㄣˊ ㄧㄝˇ ㄋㄥˊ ㄊㄨㄥ ㄍㄨㄛˋ ㄉㄨˊ ㄕㄨ ㄍㄞˇ ㄅㄧㄢˋ ㄇㄧㄥˋ ㄩㄣˋ",
+        "text": "理论上,即使一个贫寒的读书人,也能通过读书改变命运。",
+        "romanization": "lǐlùn shàng jíshǐ yí ge pín hán de dúshū rén yě néng tōngguò dúshū gǎibiàn mìngyùn",
+        "translation": "In theory, even a poor scholar could change his fate through study.",
+        "translation_en": "In theory, even a poor scholar could change his fate through study.",
+        "translation_id": "In theory, even a poor scholar could change his fate through study."
+      },
+      {
+        "hanzi": "但现实中,备考的成本非常高昂。",
+        "pinyin": "dàn xiànshí zhōng bèikǎo de chéngběn fēicháng gāo'áng",
+        "zhuyin": "ㄉㄢˋ ㄒㄧㄢˋ ㄕˊ ㄓㄨㄥ ㄅㄟˋ ㄎㄠˇ ㄉㄜ˙ ㄔㄥˊ ㄅㄣˇ ㄈㄟ ㄔㄤˊ ㄍㄠ ㄤˊ",
+        "text": "但现实中,备考的成本非常高昂。",
+        "romanization": "dàn xiànshí zhōng bèikǎo de chéngběn fēicháng gāo'áng",
+        "translation": "But in practice, the cost of preparing for the exam was enormous.",
+        "translation_en": "But in practice, the cost of preparing for the exam was enormous.",
+        "translation_id": "But in practice, the cost of preparing for the exam was enormous."
+      },
+      {
+        "hanzi": "许多人一辈子研读经书,始终没能考上。",
+        "pinyin": "xǔduō rén yíbèizi yándú jīngshū shǐzhōng méi néng kǎo shàng",
+        "zhuyin": "ㄒㄩˇ ㄉㄨㄛ ㄖㄣˊ ㄧˊ ㄅㄟˋ ㄗ˙ ㄧㄢˊ ㄉㄨˊ ㄐㄧㄥ ㄕㄨ ㄕˇ ㄓㄨㄥ ㄇㄟˊ ㄋㄥˊ ㄎㄠˇ ㄕㄤˋ",
+        "text": "许多人一辈子研读经书,始终没能考上。",
+        "romanization": "xǔduō rén yíbèizi yándú jīngshū shǐzhōng méi néng kǎo shàng",
+        "translation": "Many people studied the classics for an entire lifetime without ever passing.",
+        "translation_en": "Many people studied the classics for an entire lifetime without ever passing.",
+        "translation_id": "Many people studied the classics for an entire lifetime without ever passing."
+      },
+      {
+        "hanzi": "科举塑造了中国人\"学而优则仕\"的想象。",
+        "pinyin": "kējǔ sùzào le Zhōngguó rén xué ér yōu zé shì de xiǎngxiàng",
+        "zhuyin": "ㄎㄜ ㄐㄩˇ ㄙㄨˋ ㄗㄠˋ ㄌㄜ˙ ㄓㄨㄥ ㄍㄨㄛˊ ㄖㄣˊ ㄒㄩㄝˊ ㄦˊ ㄧㄡ ㄗㄜˊ ㄕˋ ㄉㄜ˙ ㄒㄧㄤˇ ㄒㄧㄤˋ",
+        "text": "科举塑造了中国人\"学而优则仕\"的想象。",
+        "romanization": "kējǔ sùzào le Zhōngguó rén xué ér yōu zé shì de xiǎngxiàng",
+        "translation": "The keju shaped the Chinese imagination of \"learning leads to officialdom.\"",
+        "translation_en": "The keju shaped the Chinese imagination of \"learning leads to officialdom.\"",
+        "translation_id": "The keju shaped the Chinese imagination of \"learning leads to officialdom.\""
+      },
+      {
+        "hanzi": "即便是今天,现代高考仍被视为它的延续。",
+        "pinyin": "jíbiàn shì jīntiān xiàndài gāokǎo réng bèi shì wéi tā de yánxù",
+        "zhuyin": "ㄐㄧˊ ㄅㄧㄢˋ ㄕˋ ㄐㄧㄣ ㄊㄧㄢ ㄒㄧㄢˋ ㄉㄞˋ ㄍㄠ ㄎㄠˇ ㄖㄥˊ ㄅㄟˋ ㄕˋ ㄨㄟˊ ㄊㄚ ㄉㄜ˙ ㄧㄢˊ ㄒㄩˋ",
+        "text": "即便是今天,现代高考仍被视为它的延续。",
+        "romanization": "jíbiàn shì jīntiān xiàndài gāokǎo réng bèi shì wéi tā de yánxù",
+        "translation": "Even today, the modern college entrance exam is still seen as its echo.",
+        "translation_en": "Even today, the modern college entrance exam is still seen as its echo.",
+        "translation_id": "Even today, the modern college entrance exam is still seen as its echo."
+      },
+      {
+        "hanzi": "考试分好几级,从县里一直考到京城。",
+        "pinyin": "kǎoshì fēn hǎo jǐ jí cóng xiàn lǐ yìzhí kǎo dào jīngchéng",
+        "zhuyin": "ㄎㄠˇ ㄕˋ ㄈㄣ ㄏㄠˇ ㄐㄧˇ ㄐㄧˊ ㄘㄨㄥˊ ㄒㄧㄢˋ ㄌㄧˇ ㄧˋ ㄓˊ ㄎㄠˇ ㄉㄠˋ ㄐㄧㄥ ㄔㄥˊ",
+        "text": "考试分好几级,从县里一直考到京城。",
+        "romanization": "kǎoshì fēn hǎo jǐ jí cóng xiàn lǐ yìzhí kǎo dào jīngchéng",
+        "translation": "The examinations came in several grades, from the county all the way to the capital.",
+        "translation_en": "The examinations came in several grades, from the county all the way to the capital.",
+        "translation_id": "The examinations came in several grades, from the county all the way to the capital."
+      },
+      {
+        "hanzi": "最低一级叫童试,考中的人称为秀才。",
+        "pinyin": "zuì dī yì jí jiào tóngshì kǎo zhòng de rén chēngwéi xiùcai",
+        "zhuyin": "ㄗㄨㄟˋ ㄉㄧ ㄧˋ ㄐㄧˊ ㄐㄧㄠˋ ㄊㄨㄥˊ ㄕˋ ㄎㄠˇ ㄓㄨㄥˋ ㄉㄜ˙ ㄖㄣˊ ㄔㄥ ㄨㄟˊ ㄒㄧㄡˋ ㄘㄞ˙",
+        "text": "最低一级叫童试,考中的人称为秀才。",
+        "romanization": "zuì dī yì jí jiào tóngshì kǎo zhòng de rén chēngwéi xiùcai",
+        "translation": "The lowest grade was the child examination, and those who passed were called xiucai.",
+        "translation_en": "The lowest grade was the child examination, and those who passed were called xiucai.",
+        "translation_id": "The lowest grade was the child examination, and those who passed were called xiucai."
+      },
+      {
+        "hanzi": "再往上是乡试、会试,最后是皇帝亲自主持的殿试。",
+        "pinyin": "zài wǎng shàng shì xiāngshì huìshì zuìhòu shì huángdì qīnzì zhǔchí de diànshì",
+        "zhuyin": "ㄗㄞˋ ㄨㄤˇ ㄕㄤˋ ㄕˋ ㄒㄧㄤ ㄕˋ ㄏㄨㄟˋ ㄕˋ ㄗㄨㄟˋ ㄏㄡˋ ㄕˋ ㄏㄨㄤˊ ㄉㄧˋ ㄑㄧㄣ ㄗˋ ㄓㄨˇ ㄔˊ ㄉㄜ˙ ㄉㄧㄢˋ ㄕˋ",
+        "text": "再往上是乡试、会试,最后是皇帝亲自主持的殿试。",
+        "romanization": "zài wǎng shàng shì xiāngshì huìshì zuìhòu shì huángdì qīnzì zhǔchí de diànshì",
+        "translation": "Above that came the provincial and metropolitan exams, then the palace exam the emperor presided over himself.",
+        "translation_en": "Above that came the provincial and metropolitan exams, then the palace exam the emperor presided over himself.",
+        "translation_id": "Above that came the provincial and metropolitan exams, then the palace exam the emperor presided over himself."
+      },
+      {
+        "hanzi": "殿试的第一名叫状元,是天下读书人的梦想。",
+        "pinyin": "diànshì de dì yī míng jiào zhuàngyuán shì tiānxià dúshū rén de mèngxiǎng",
+        "zhuyin": "ㄉㄧㄢˋ ㄕˋ ㄉㄜ˙ ㄉㄧˋ ㄧ ㄇㄧㄥˊ ㄐㄧㄠˋ ㄓㄨㄤˋ ㄩㄢˊ ㄕˋ ㄊㄧㄢ ㄒㄧㄚˋ ㄉㄨˊ ㄕㄨ ㄖㄣˊ ㄉㄜ˙ ㄇㄥˋ ㄒㄧㄤˇ",
+        "text": "殿试的第一名叫状元,是天下读书人的梦想。",
+        "romanization": "diànshì de dì yī míng jiào zhuàngyuán shì tiānxià dúshū rén de mèngxiǎng",
+        "translation": "First place in the palace exam was the zhuangyuan, the dream of every scholar under heaven.",
+        "translation_en": "First place in the palace exam was the zhuangyuan, the dream of every scholar under heaven.",
+        "translation_id": "First place in the palace exam was the zhuangyuan, the dream of every scholar under heaven."
+      },
+      {
+        "hanzi": "考场是一间间小屋子,只有一张桌子那么大。",
+        "pinyin": "kǎochǎng shì yì jiān jiān xiǎo wūzi zhǐ yǒu yì zhāng zhuōzi nàme dà",
+        "zhuyin": "ㄎㄠˇ ㄔㄤˇ ㄕˋ ㄧˋ ㄐㄧㄢ ㄐㄧㄢ ㄒㄧㄠˇ ㄨ ㄗ˙ ㄓˇ ㄧㄡˇ ㄧˋ ㄓㄤ ㄓㄨㄛ ㄗ˙ ㄋㄚˋ ㄇㄜ˙ ㄉㄚˋ",
+        "text": "考场是一间间小屋子,只有一张桌子那么大。",
+        "romanization": "kǎochǎng shì yì jiān jiān xiǎo wūzi zhǐ yǒu yì zhāng zhuōzi nàme dà",
+        "translation": "The examination hall was a row of tiny cells, each about the size of one desk.",
+        "translation_en": "The examination hall was a row of tiny cells, each about the size of one desk.",
+        "translation_id": "The examination hall was a row of tiny cells, each about the size of one desk."
+      },
+      {
+        "hanzi": "考生要在里面待上几天几夜,吃住都在其中。",
+        "pinyin": "kǎoshēng yào zài lǐmiàn dāi shàng jǐ tiān jǐ yè chī zhù dōu zài qízhōng",
+        "zhuyin": "ㄎㄠˇ ㄕㄥ ㄧㄠˋ ㄗㄞˋ ㄌㄧˇ ㄇㄧㄢˋ ㄉㄞ ㄕㄤˋ ㄐㄧˇ ㄊㄧㄢ ㄐㄧˇ ㄧㄝˋ ㄔ ㄓㄨˋ ㄉㄡ ㄗㄞˋ ㄑㄧˊ ㄓㄨㄥ",
+        "text": "考生要在里面待上几天几夜,吃住都在其中。",
+        "romanization": "kǎoshēng yào zài lǐmiàn dāi shàng jǐ tiān jǐ yè chī zhù dōu zài qízhōng",
+        "translation": "Candidates stayed inside for several days and nights, eating and sleeping there.",
+        "translation_en": "Candidates stayed inside for several days and nights, eating and sleeping there.",
+        "translation_id": "Candidates stayed inside for several days and nights, eating and sleeping there."
+      },
+      {
+        "hanzi": "为了防止作弊,考生进场前要被搜身。",
+        "pinyin": "wèile fángzhǐ zuòbì kǎoshēng jìn chǎng qián yào bèi sōushēn",
+        "zhuyin": "ㄨㄟˋ ㄌㄜ˙ ㄈㄤˊ ㄓˇ ㄗㄨㄛˋ ㄅㄧˋ ㄎㄠˇ ㄕㄥ ㄐㄧㄣˋ ㄔㄤˇ ㄑㄧㄢˊ ㄧㄠˋ ㄅㄟˋ ㄙㄡ ㄕㄣ",
+        "text": "为了防止作弊,考生进场前要被搜身。",
+        "romanization": "wèile fángzhǐ zuòbì kǎoshēng jìn chǎng qián yào bèi sōushēn",
+        "translation": "To prevent cheating, candidates were searched before entering.",
+        "translation_en": "To prevent cheating, candidates were searched before entering.",
+        "translation_id": "To prevent cheating, candidates were searched before entering."
+      },
+      {
+        "hanzi": "有人把小抄写在衣服的夹层里,甚至写在毛笔杆上。",
+        "pinyin": "yǒu rén bǎ xiǎochāo xiě zài yīfu de jiācéng lǐ shènzhì xiě zài máobǐ gǎn shàng",
+        "zhuyin": "ㄧㄡˇ ㄖㄣˊ ㄅㄚˇ ㄒㄧㄠˇ ㄔㄠ ㄒㄧㄝˇ ㄗㄞˋ ㄧ ㄈㄨ˙ ㄉㄜ˙ ㄐㄧㄚ ㄘㄥˊ ㄌㄧˇ ㄕㄣˋ ㄓˋ ㄒㄧㄝˇ ㄗㄞˋ ㄇㄠˊ ㄅㄧˇ ㄍㄢˇ ㄕㄤˋ",
+        "text": "有人把小抄写在衣服的夹层里,甚至写在毛笔杆上。",
+        "romanization": "yǒu rén bǎ xiǎochāo xiě zài yīfu de jiācéng lǐ shènzhì xiě zài máobǐ gǎn shàng",
+        "translation": "Some wrote crib notes into the lining of their clothes, even onto the shaft of a brush.",
+        "translation_en": "Some wrote crib notes into the lining of their clothes, even onto the shaft of a brush.",
+        "translation_id": "Some wrote crib notes into the lining of their clothes, even onto the shaft of a brush."
+      },
+      {
+        "hanzi": "也有人考了一辈子,头发白了还在考。",
+        "pinyin": "yě yǒu rén kǎo le yíbèizi tóufa bái le hái zài kǎo",
+        "zhuyin": "ㄧㄝˇ ㄧㄡˇ ㄖㄣˊ ㄎㄠˇ ㄌㄜ˙ ㄧˊ ㄅㄟˋ ㄗ˙ ㄊㄡˊ ㄈㄚ˙ ㄅㄞˊ ㄌㄜ˙ ㄏㄞˊ ㄗㄞˋ ㄎㄠˇ",
+        "text": "也有人考了一辈子,头发白了还在考。",
+        "romanization": "yě yǒu rén kǎo le yíbèizi tóufa bái le hái zài kǎo",
+        "translation": "Others sat the exam their whole lives, still sitting it when their hair had turned white.",
+        "translation_en": "Others sat the exam their whole lives, still sitting it when their hair had turned white.",
+        "translation_id": "Others sat the exam their whole lives, still sitting it when their hair had turned white."
+      },
+      {
+        "hanzi": "《儒林外史》里的范进,中举时高兴得发了疯。",
+        "pinyin": "Rúlín Wàishǐ lǐ de Fàn Jìn zhòng jǔ shí gāoxìng de fā le fēng",
+        "zhuyin": "ㄖㄨˊ ㄌㄧㄣˊ ㄨㄞˋ ㄕˇ ㄌㄧˇ ㄉㄜ˙ ㄈㄢˋ ㄐㄧㄣˋ ㄓㄨㄥˋ ㄐㄩˇ ㄕˊ ㄍㄠ ㄒㄧㄥˋ ㄉㄜ˙ ㄈㄚ ㄌㄜ˙ ㄈㄥ",
+        "text": "《儒林外史》里的范进,中举时高兴得发了疯。",
+        "romanization": "Rúlín Wàishǐ lǐ de Fàn Jìn zhòng jǔ shí gāoxìng de fā le fēng",
+        "translation": "Fan Jin, in The Scholars, went mad with joy when he finally passed.",
+        "translation_en": "Fan Jin, in The Scholars, went mad with joy when he finally passed.",
+        "translation_id": "Fan Jin, in The Scholars, went mad with joy when he finally passed."
+      }
+    ]
+  },
+  {
+    "id": "r-si-da-faming",
+    "title": "四大发明 — The Four Great Inventions",
+    "type": "story",
+    "hsk": 5,
+    "wordCount": 341,
+    "summary": "Paper, printing, gunpowder, the compass — and what they actually did.",
+    "paragraphs": [
+      {
+        "hanzi": "造纸术、印刷术、火药和指南针,被称为中国\"四大发明\"。",
+        "pinyin": "zàozhǐ shù yìnshuā shù huǒyào hé zhǐnánzhēn bèi chēng wéi Zhōngguó sì dà fāmíng",
+        "zhuyin": "ㄗㄠˋ ㄓˇ ㄕㄨˋ ㄧㄣˋ ㄕㄨㄚ ㄕㄨˋ ㄏㄨㄛˇ ㄧㄠˋ ㄏㄜˊ ㄓˇ ㄋㄢˊ ㄓㄣ ㄅㄟˋ ㄔㄥ ㄨㄟˊ ㄓㄨㄥ ㄍㄨㄛˊ ㄙˋ ㄉㄚˋ ㄈㄚ ㄇㄧㄥˊ",
+        "text": "造纸术、印刷术、火药和指南针,被称为中国\"四大发明\"。",
+        "romanization": "zàozhǐ shù yìnshuā shù huǒyào hé zhǐnánzhēn bèi chēng wéi Zhōngguó sì dà fāmíng",
+        "translation": "Papermaking, printing, gunpowder, and the compass are called China's \"Four Great Inventions.\"",
+        "translation_en": "Papermaking, printing, gunpowder, and the compass are called China's \"Four Great Inventions.\"",
+        "translation_id": "Papermaking, printing, gunpowder, and the compass are called China's \"Four Great Inventions.\""
+      },
+      {
+        "hanzi": "这些发明不仅深刻地改变了中国,也改变了世界。",
+        "pinyin": "zhèxiē fāmíng bùjǐn shēn kè de gǎibiàn le Zhōngguó yě gǎibiàn le shìjiè",
+        "zhuyin": "ㄓㄜˋ ㄒㄧㄝ ㄈㄚ ㄇㄧㄥˊ ㄅㄨˋ ㄐㄧㄣˇ ㄕㄣ ㄎㄜˋ ㄉㄜ˙ ㄍㄞˇ ㄅㄧㄢˋ ㄌㄜ˙ ㄓㄨㄥ ㄍㄨㄛˊ ㄧㄝˇ ㄍㄞˇ ㄅㄧㄢˋ ㄌㄜ˙ ㄕˋ ㄐㄧㄝˋ",
+        "text": "这些发明不仅深刻地改变了中国,也改变了世界。",
+        "romanization": "zhèxiē fāmíng bùjǐn shēn kè de gǎibiàn le Zhōngguó yě gǎibiàn le shìjiè",
+        "translation": "These inventions deeply changed not only China but also the world.",
+        "translation_en": "These inventions deeply changed not only China but also the world.",
+        "translation_id": "These inventions deeply changed not only China but also the world."
+      },
+      {
+        "hanzi": "东汉的蔡伦改进了造纸术,使书写变得廉价普及。",
+        "pinyin": "Dōng Hàn de Cài Lún gǎijìn le zàozhǐ shù shǐ shūxiě biànde liánjià pǔjí",
+        "zhuyin": "ㄉㄨㄥ ㄏㄢˋ ㄉㄜ˙ ㄘㄞˋ ㄌㄨㄣˊ ㄍㄞˇ ㄐㄧㄣˋ ㄌㄜ˙ ㄗㄠˋ ㄓˇ ㄕㄨˋ ㄕˇ ㄕㄨ ㄒㄧㄝˇ ㄅㄧㄢˋ ㄉㄜ˙ ㄌㄧㄢˊ ㄐㄧㄚˋ ㄆㄨˇ ㄐㄧˊ",
+        "text": "东汉的蔡伦改进了造纸术,使书写变得廉价普及。",
+        "romanization": "Dōng Hàn de Cài Lún gǎijìn le zàozhǐ shù shǐ shūxiě biànde liánjià pǔjí",
+        "translation": "Cai Lun improved papermaking in the Eastern Han, making writing cheap and widespread.",
+        "translation_en": "Cai Lun improved papermaking in the Eastern Han, making writing cheap and widespread.",
+        "translation_id": "Cai Lun improved papermaking in the Eastern Han, making writing cheap and widespread."
+      },
+      {
+        "hanzi": "毕昇的活字印刷则进一步加速了知识的传播。",
+        "pinyin": "Bì Shēng de huózì yìnshuā zé jìn yí bù jiāsù le zhīshi de chuánbō",
+        "zhuyin": "ㄅㄧˋ ㄕㄥ ㄉㄜ˙ ㄏㄨㄛˊ ㄗˋ ㄧㄣˋ ㄕㄨㄚ ㄗㄜˊ ㄐㄧㄣˋ ㄧˊ ㄅㄨˋ ㄐㄧㄚ ㄙㄨˋ ㄌㄜ˙ ㄓ ㄕ˙ ㄉㄜ˙ ㄔㄨㄢˊ ㄅㄛ",
+        "text": "毕昇的活字印刷则进一步加速了知识的传播。",
+        "romanization": "Bì Shēng de huózì yìnshuā zé jìn yí bù jiāsù le zhīshi de chuánbō",
+        "translation": "Bi Sheng's movable-type printing further accelerated the spread of knowledge.",
+        "translation_en": "Bi Sheng's movable-type printing further accelerated the spread of knowledge.",
+        "translation_id": "Bi Sheng's movable-type printing further accelerated the spread of knowledge."
+      },
+      {
+        "hanzi": "火药最初是炼丹术的副产品,后来彻底改变了战争的形态。",
+        "pinyin": "huǒyào zuìchū shì liàndān shù de fù chǎnpǐn hòulái chèdǐ gǎibiàn le zhànzhēng de xíngtài",
+        "zhuyin": "ㄏㄨㄛˇ ㄧㄠˋ ㄗㄨㄟˋ ㄔㄨ ㄕˋ ㄌㄧㄢˋ ㄉㄢ ㄕㄨˋ ㄉㄜ˙ ㄈㄨˋ ㄔㄢˇ ㄆㄧㄣˇ ㄏㄡˋ ㄌㄞˊ ㄔㄜˋ ㄉㄧˇ ㄍㄞˇ ㄅㄧㄢˋ ㄌㄜ˙ ㄓㄢˋ ㄓㄥ ㄉㄜ˙ ㄒㄧㄥˊ ㄊㄞˋ",
+        "text": "火药最初是炼丹术的副产品,后来彻底改变了战争的形态。",
+        "romanization": "huǒyào zuìchū shì liàndān shù de fù chǎnpǐn hòulái chèdǐ gǎibiàn le zhànzhēng de xíngtài",
+        "translation": "Gunpowder, originally a byproduct of alchemy, eventually transformed warfare.",
+        "translation_en": "Gunpowder, originally a byproduct of alchemy, eventually transformed warfare.",
+        "translation_id": "Gunpowder, originally a byproduct of alchemy, eventually transformed warfare."
+      },
+      {
+        "hanzi": "指南针让远洋航海成为可能。",
+        "pinyin": "zhǐnánzhēn ràng yuǎn yáng hánghǎi chéng wéi kěnéng",
+        "zhuyin": "ㄓˇ ㄋㄢˊ ㄓㄣ ㄖㄤˋ ㄩㄢˇ ㄧㄤˊ ㄏㄤˊ ㄏㄞˇ ㄔㄥˊ ㄨㄟˊ ㄎㄜˇ ㄋㄥˊ",
+        "text": "指南针让远洋航海成为可能。",
+        "romanization": "zhǐnánzhēn ràng yuǎn yáng hánghǎi chéng wéi kěnéng",
+        "translation": "The compass made long-distance ocean navigation possible.",
+        "translation_en": "The compass made long-distance ocean navigation possible.",
+        "translation_id": "The compass made long-distance ocean navigation possible."
+      },
+      {
+        "hanzi": "如果没有这些发明,世界史将完全不同。",
+        "pinyin": "rúguǒ méiyǒu zhèxiē fāmíng shìjiè shǐ jiāng wánquán bùtóng",
+        "zhuyin": "ㄖㄨˊ ㄍㄨㄛˇ ㄇㄟˊ ㄧㄡˇ ㄓㄜˋ ㄒㄧㄝ ㄈㄚ ㄇㄧㄥˊ ㄕˋ ㄐㄧㄝˋ ㄕˇ ㄐㄧㄤ ㄨㄢˊ ㄑㄩㄢˊ ㄅㄨˋ ㄊㄨㄥˊ",
+        "text": "如果没有这些发明,世界史将完全不同。",
+        "romanization": "rúguǒ méiyǒu zhèxiē fāmíng shìjiè shǐ jiāng wánquán bùtóng",
+        "translation": "Without these inventions, world history would be completely different.",
+        "translation_en": "Without these inventions, world history would be completely different.",
+        "translation_id": "Without these inventions, world history would be completely different."
+      },
+      {
+        "hanzi": "在纸出现以前,中国人在竹简上写字。",
+        "pinyin": "zài zhǐ chūxiàn yǐqián Zhōngguó rén zài zhújiǎn shàng xiě zì",
+        "zhuyin": "ㄗㄞˋ ㄓˇ ㄔㄨ ㄒㄧㄢˋ ㄧˇ ㄑㄧㄢˊ ㄓㄨㄥ ㄍㄨㄛˊ ㄖㄣˊ ㄗㄞˋ ㄓㄨˊ ㄐㄧㄢˇ ㄕㄤˋ ㄒㄧㄝˇ ㄗˋ",
+        "text": "在纸出现以前,中国人在竹简上写字。",
+        "romanization": "zài zhǐ chūxiàn yǐqián Zhōngguó rén zài zhújiǎn shàng xiě zì",
+        "translation": "Before paper appeared, Chinese people wrote on bamboo slips.",
+        "translation_en": "Before paper appeared, Chinese people wrote on bamboo slips.",
+        "translation_id": "Before paper appeared, Chinese people wrote on bamboo slips."
+      },
+      {
+        "hanzi": "一部书可能要用几十斤重的竹片。",
+        "pinyin": "yí bù shū kěnéng yào yòng jǐshí jīn zhòng de zhúpiàn",
+        "zhuyin": "ㄧˊ ㄅㄨˋ ㄕㄨ ㄎㄜˇ ㄋㄥˊ ㄧㄠˋ ㄩㄥˋ ㄐㄧˇ ㄕˊ ㄐㄧㄣ ㄓㄨㄥˋ ㄉㄜ˙ ㄓㄨˊ ㄆㄧㄢˋ",
+        "text": "一部书可能要用几十斤重的竹片。",
+        "romanization": "yí bù shū kěnéng yào yòng jǐshí jīn zhòng de zhúpiàn",
+        "translation": "A single book might take tens of catties' weight of bamboo strips.",
+        "translation_en": "A single book might take tens of catties' weight of bamboo strips.",
+        "translation_id": "A single book might take tens of catties' weight of bamboo strips."
+      },
+      {
+        "hanzi": "据说秦始皇每天要看一百二十斤的奏章。",
+        "pinyin": "jùshuō Qín Shǐhuáng měitiān yào kàn yì bǎi èrshí jīn de zòuzhāng",
+        "zhuyin": "ㄐㄩˋ ㄕㄨㄛ ㄑㄧㄣˊ ㄕˇ ㄏㄨㄤˊ ㄇㄟˇ ㄊㄧㄢ ㄧㄠˋ ㄎㄢˋ ㄧˋ ㄅㄞˇ ㄦˋ ㄕˊ ㄐㄧㄣ ㄉㄜ˙ ㄗㄡˋ ㄓㄤ",
+        "text": "据说秦始皇每天要看一百二十斤的奏章。",
+        "romanization": "jùshuō Qín Shǐhuáng měitiān yào kàn yì bǎi èrshí jīn de zòuzhāng",
+        "translation": "The First Emperor is said to have read a hundred and twenty catties of memorials daily.",
+        "translation_en": "The First Emperor is said to have read a hundred and twenty catties of memorials daily.",
+        "translation_id": "The First Emperor is said to have read a hundred and twenty catties of memorials daily."
+      },
+      {
+        "hanzi": "蔡伦用树皮、麻布和渔网造出了便宜的纸。",
+        "pinyin": "Cài Lún yòng shùpí mábù hé yúwǎng zào chū le piányi de zhǐ",
+        "zhuyin": "ㄘㄞˋ ㄌㄨㄣˊ ㄩㄥˋ ㄕㄨˋ ㄆㄧˊ ㄇㄚˊ ㄅㄨˋ ㄏㄜˊ ㄩˊ ㄨㄤˇ ㄗㄠˋ ㄔㄨ ㄌㄜ˙ ㄆㄧㄢˊ ㄧ˙ ㄉㄜ˙ ㄓˇ",
+        "text": "蔡伦用树皮、麻布和渔网造出了便宜的纸。",
+        "romanization": "Cài Lún yòng shùpí mábù hé yúwǎng zào chū le piányi de zhǐ",
+        "translation": "Cai Lun made cheap paper out of bark, hemp cloth and fishing nets.",
+        "translation_en": "Cai Lun made cheap paper out of bark, hemp cloth and fishing nets.",
+        "translation_id": "Cai Lun made cheap paper out of bark, hemp cloth and fishing nets."
+      },
+      {
+        "hanzi": "从此知识不再只属于贵族。",
+        "pinyin": "cóngcǐ zhīshi bú zài zhǐ shǔyú guìzú",
+        "zhuyin": "ㄘㄨㄥˊ ㄘˇ ㄓ ㄕ˙ ㄅㄨˊ ㄗㄞˋ ㄓˇ ㄕㄨˇ ㄩˊ ㄍㄨㄟˋ ㄗㄨˊ",
+        "text": "从此知识不再只属于贵族。",
+        "romanization": "cóngcǐ zhīshi bú zài zhǐ shǔyú guìzú",
+        "translation": "From then on, knowledge no longer belonged to the aristocracy alone.",
+        "translation_en": "From then on, knowledge no longer belonged to the aristocracy alone.",
+        "translation_id": "From then on, knowledge no longer belonged to the aristocracy alone."
+      },
+      {
+        "hanzi": "毕昇的活字是用胶泥做的,一个字一个印。",
+        "pinyin": "Bì Shēng de huózì shì yòng jiāoní zuò de yí ge zì yí ge yìn",
+        "zhuyin": "ㄅㄧˋ ㄕㄥ ㄉㄜ˙ ㄏㄨㄛˊ ㄗˋ ㄕˋ ㄩㄥˋ ㄐㄧㄠ ㄋㄧˊ ㄗㄨㄛˋ ㄉㄜ˙ ㄧˊ ㄍㄜ˙ ㄗˋ ㄧˊ ㄍㄜ˙ ㄧㄣˋ",
+        "text": "毕昇的活字是用胶泥做的,一个字一个印。",
+        "romanization": "Bì Shēng de huózì shì yòng jiāoní zuò de yí ge zì yí ge yìn",
+        "translation": "Bi Sheng's movable type was made of clay, one character to a piece.",
+        "translation_en": "Bi Sheng's movable type was made of clay, one character to a piece.",
+        "translation_id": "Bi Sheng's movable type was made of clay, one character to a piece."
+      },
+      {
+        "hanzi": "排好版印完以后,字还可以拆下来再用。",
+        "pinyin": "pái hǎo bǎn yìn wán yǐhòu zì hái kěyǐ chāi xiàlái zài yòng",
+        "zhuyin": "ㄆㄞˊ ㄏㄠˇ ㄅㄢˇ ㄧㄣˋ ㄨㄢˊ ㄧˇ ㄏㄡˋ ㄗˋ ㄏㄞˊ ㄎㄜˇ ㄧˇ ㄔㄞ ㄒㄧㄚˋ ㄌㄞˊ ㄗㄞˋ ㄩㄥˋ",
+        "text": "排好版印完以后,字还可以拆下来再用。",
+        "romanization": "pái hǎo bǎn yìn wán yǐhòu zì hái kěyǐ chāi xiàlái zài yòng",
+        "translation": "Once the page was set and printed, the characters could be taken apart and used again.",
+        "translation_en": "Once the page was set and printed, the characters could be taken apart and used again.",
+        "translation_id": "Once the page was set and printed, the characters could be taken apart and used again."
+      },
+      {
+        "hanzi": "火药本来是道士炼长生不老药时发现的。",
+        "pinyin": "huǒyào běnlái shì dàoshi liàn chángshēng bù lǎo yào shí fāxiàn de",
+        "zhuyin": "ㄏㄨㄛˇ ㄧㄠˋ ㄅㄣˇ ㄌㄞˊ ㄕˋ ㄉㄠˋ ㄕ˙ ㄌㄧㄢˋ ㄔㄤˊ ㄕㄥ ㄅㄨˋ ㄌㄠˇ ㄧㄠˋ ㄕˊ ㄈㄚ ㄒㄧㄢˋ ㄉㄜ˙",
+        "text": "火药本来是道士炼长生不老药时发现的。",
+        "romanization": "huǒyào běnlái shì dàoshi liàn chángshēng bù lǎo yào shí fāxiàn de",
+        "translation": "Gunpowder was originally found by Daoists brewing an elixir of immortality.",
+        "translation_en": "Gunpowder was originally found by Daoists brewing an elixir of immortality.",
+        "translation_id": "Gunpowder was originally found by Daoists brewing an elixir of immortality."
+      },
+      {
+        "hanzi": "他们想求长生,却造出了最致命的东西。",
+        "pinyin": "tāmen xiǎng qiú chángshēng què zào chū le zuì zhìmìng de dōngxi",
+        "zhuyin": "ㄊㄚ ㄇㄣ˙ ㄒㄧㄤˇ ㄑㄧㄡˊ ㄔㄤˊ ㄕㄥ ㄑㄩㄝˋ ㄗㄠˋ ㄔㄨ ㄌㄜ˙ ㄗㄨㄟˋ ㄓˋ ㄇㄧㄥˋ ㄉㄜ˙ ㄉㄨㄥ ㄒㄧ˙",
+        "text": "他们想求长生,却造出了最致命的东西。",
+        "romanization": "tāmen xiǎng qiú chángshēng què zào chū le zuì zhìmìng de dōngxi",
+        "translation": "They sought long life and produced the deadliest thing of all.",
+        "translation_en": "They sought long life and produced the deadliest thing of all.",
+        "translation_id": "They sought long life and produced the deadliest thing of all."
+      },
+      {
+        "hanzi": "指南针最早叫司南,样子像一把勺子。",
+        "pinyin": "zhǐnánzhēn zuì zǎo jiào sīnán yàngzi xiàng yì bǎ sháozi",
+        "zhuyin": "ㄓˇ ㄋㄢˊ ㄓㄣ ㄗㄨㄟˋ ㄗㄠˇ ㄐㄧㄠˋ ㄙ ㄋㄢˊ ㄧㄤˋ ㄗ˙ ㄒㄧㄤˋ ㄧˋ ㄅㄚˇ ㄕㄠˊ ㄗ˙",
+        "text": "指南针最早叫司南,样子像一把勺子。",
+        "romanization": "zhǐnánzhēn zuì zǎo jiào sīnán yàngzi xiàng yì bǎ sháozi",
+        "translation": "The earliest compass was called the sinan and looked like a spoon.",
+        "translation_en": "The earliest compass was called the sinan and looked like a spoon.",
+        "translation_id": "The earliest compass was called the sinan and looked like a spoon."
+      },
+      {
+        "hanzi": "这四样东西传到欧洲后,推动了那里的巨大变革。",
+        "pinyin": "zhè sì yàng dōngxi chuán dào Ōuzhōu hòu tuīdòng le nàlǐ de jùdà biàngé",
+        "zhuyin": "ㄓㄜˋ ㄙˋ ㄧㄤˋ ㄉㄨㄥ ㄒㄧ˙ ㄔㄨㄢˊ ㄉㄠˋ ㄡ ㄓㄡ ㄏㄡˋ ㄊㄨㄟ ㄉㄨㄥˋ ㄌㄜ˙ ㄋㄚˋ ㄌㄧˇ ㄉㄜ˙ ㄐㄩˋ ㄉㄚˋ ㄅㄧㄢˋ ㄍㄜˊ",
+        "text": "这四样东西传到欧洲后,推动了那里的巨大变革。",
+        "romanization": "zhè sì yàng dōngxi chuán dào Ōuzhōu hòu tuīdòng le nàlǐ de jùdà biàngé",
+        "translation": "After these four things reached Europe, they drove enormous change there.",
+        "translation_en": "After these four things reached Europe, they drove enormous change there.",
+        "translation_id": "After these four things reached Europe, they drove enormous change there."
+      }
+    ]
+  },
+  {
+    "id": "r-gaokao",
+    "title": "高考 — The College Entrance Exam",
+    "type": "story",
+    "hsk": 5,
+    "wordCount": 339,
+    "summary": "The exam a whole country rearranges itself around — and the argument about whether it should.",
+    "paragraphs": [
+      {
+        "hanzi": "每年六月初,中国有上千万的学生走进同一个考场。",
+        "pinyin": "měi nián liù yuè chū Zhōngguó yǒu shàng qiān wàn de xuéshēng zǒu jìn tóng yí ge kǎochǎng",
+        "zhuyin": "ㄇㄟˇ ㄋㄧㄢˊ ㄌㄧㄡˋ ㄩㄝˋ ㄔㄨ ㄓㄨㄥ ㄍㄨㄛˊ ㄧㄡˇ ㄕㄤˋ ㄑㄧㄢ ㄨㄢˋ ㄉㄜ˙ ㄒㄩㄝˊ ㄕㄥ ㄗㄡˇ ㄐㄧㄣˋ ㄊㄨㄥˊ ㄧˊ ㄍㄜ˙ ㄎㄠˇ ㄔㄤˇ",
+        "text": "每年六月初,中国有上千万的学生走进同一个考场。",
+        "romanization": "měi nián liù yuè chū Zhōngguó yǒu shàng qiān wàn de xuéshēng zǒu jìn tóng yí ge kǎochǎng",
+        "translation": "In early June each year, tens of millions of Chinese students walk into the same examination hall.",
+        "translation_en": "In early June each year, tens of millions of Chinese students walk into the same examination hall.",
+        "translation_id": "In early June each year, tens of millions of Chinese students walk into the same examination hall."
+      },
+      {
+        "hanzi": "这场考试叫高考,是决定他们能上哪所大学的关键。",
+        "pinyin": "zhè chǎng kǎoshì jiào gāokǎo shì juédìng tāmen néng shàng nǎ suǒ dàxué de guānjiàn",
+        "zhuyin": "ㄓㄜˋ ㄔㄤˇ ㄎㄠˇ ㄕˋ ㄐㄧㄠˋ ㄍㄠ ㄎㄠˇ ㄕˋ ㄐㄩㄝˊ ㄉㄧㄥˋ ㄊㄚ ㄇㄣ˙ ㄋㄥˊ ㄕㄤˋ ㄋㄚˇ ㄙㄨㄛˇ ㄉㄚˋ ㄒㄩㄝˊ ㄉㄜ˙ ㄍㄨㄢ ㄐㄧㄢˋ",
+        "text": "这场考试叫高考,是决定他们能上哪所大学的关键。",
+        "romanization": "zhè chǎng kǎoshì jiào gāokǎo shì juédìng tāmen néng shàng nǎ suǒ dàxué de guānjiàn",
+        "translation": "This exam is called the gaokao, and it decides which university they can attend.",
+        "translation_en": "This exam is called the gaokao, and it decides which university they can attend.",
+        "translation_id": "This exam is called the gaokao, and it decides which university they can attend."
+      },
+      {
+        "hanzi": "对很多家庭来说,高考几乎是一年中最重要的日子。",
+        "pinyin": "duì hěn duō jiātíng lái shuō gāokǎo jīhū shì yì nián zhōng zuì zhòngyào de rìzi",
+        "zhuyin": "ㄉㄨㄟˋ ㄏㄣˇ ㄉㄨㄛ ㄐㄧㄚ ㄊㄧㄥˊ ㄌㄞˊ ㄕㄨㄛ ㄍㄠ ㄎㄠˇ ㄐㄧ ㄏㄨ ㄕˋ ㄧˋ ㄋㄧㄢˊ ㄓㄨㄥ ㄗㄨㄟˋ ㄓㄨㄥˋ ㄧㄠˋ ㄉㄜ˙ ㄖˋ ㄗ˙",
+        "text": "对很多家庭来说,高考几乎是一年中最重要的日子。",
+        "romanization": "duì hěn duō jiātíng lái shuō gāokǎo jīhū shì yì nián zhōng zuì zhòngyào de rìzi",
+        "translation": "For many families, the gaokao is almost the most important day of the year.",
+        "translation_en": "For many families, the gaokao is almost the most important day of the year.",
+        "translation_id": "For many families, the gaokao is almost the most important day of the year."
+      },
+      {
+        "hanzi": "考试前的那个月,整个社会都会为考生让路。",
+        "pinyin": "kǎoshì qián de nà ge yuè zhěnggè shèhuì dōu huì wèi kǎoshēng ràng lù",
+        "zhuyin": "ㄎㄠˇ ㄕˋ ㄑㄧㄢˊ ㄉㄜ˙ ㄋㄚˋ ㄍㄜ˙ ㄩㄝˋ ㄓㄥˇ ㄍㄜˋ ㄕㄜˋ ㄏㄨㄟˋ ㄉㄡ ㄏㄨㄟˋ ㄨㄟˋ ㄎㄠˇ ㄕㄥ ㄖㄤˋ ㄌㄨˋ",
+        "text": "考试前的那个月,整个社会都会为考生让路。",
+        "romanization": "kǎoshì qián de nà ge yuè zhěnggè shèhuì dōu huì wèi kǎoshēng ràng lù",
+        "translation": "In the month before the exam, the whole society makes way for the candidates.",
+        "translation_en": "In the month before the exam, the whole society makes way for the candidates.",
+        "translation_id": "In the month before the exam, the whole society makes way for the candidates."
+      },
+      {
+        "hanzi": "学校附近的工地必须停工,以免影响学生休息。",
+        "pinyin": "xuéxiào fùjìn de gōngdì bìxū tíng gōng yǐmiǎn yǐngxiǎng xuéshēng xiūxi",
+        "zhuyin": "ㄒㄩㄝˊ ㄒㄧㄠˋ ㄈㄨˋ ㄐㄧㄣˋ ㄉㄜ˙ ㄍㄨㄥ ㄉㄧˋ ㄅㄧˋ ㄒㄩ ㄊㄧㄥˊ ㄍㄨㄥ ㄧˇ ㄇㄧㄢˇ ㄧㄥˇ ㄒㄧㄤˇ ㄒㄩㄝˊ ㄕㄥ ㄒㄧㄡ ㄒㄧ˙",
+        "text": "学校附近的工地必须停工,以免影响学生休息。",
+        "romanization": "xuéxiào fùjìn de gōngdì bìxū tíng gōng yǐmiǎn yǐngxiǎng xuéshēng xiūxi",
+        "translation": "Construction sites near schools must halt work so students' rest is not disturbed.",
+        "translation_en": "Construction sites near schools must halt work so students' rest is not disturbed.",
+        "translation_id": "Construction sites near schools must halt work so students' rest is not disturbed."
+      },
+      {
+        "hanzi": "交通警察会专门为送考的车辆开路。",
+        "pinyin": "jiāotōng jǐngchá huì zhuānmén wèi sòng kǎo de chēliàng kāi lù",
+        "zhuyin": "ㄐㄧㄠ ㄊㄨㄥ ㄐㄧㄥˇ ㄔㄚˊ ㄏㄨㄟˋ ㄓㄨㄢ ㄇㄣˊ ㄨㄟˋ ㄙㄨㄥˋ ㄎㄠˇ ㄉㄜ˙ ㄔㄜ ㄌㄧㄤˋ ㄎㄞ ㄌㄨˋ",
+        "text": "交通警察会专门为送考的车辆开路。",
+        "romanization": "jiāotōng jǐngchá huì zhuānmén wèi sòng kǎo de chēliàng kāi lù",
+        "translation": "Traffic police clear the way specially for vehicles carrying students to the exam.",
+        "translation_en": "Traffic police clear the way specially for vehicles carrying students to the exam.",
+        "translation_id": "Traffic police clear the way specially for vehicles carrying students to the exam."
+      },
+      {
+        "hanzi": "有的城市甚至规定,考试期间不许按喇叭。",
+        "pinyin": "yǒu de chéngshì shènzhì guīdìng kǎoshì qījiān bùxǔ àn lǎba",
+        "zhuyin": "ㄧㄡˇ ㄉㄜ˙ ㄔㄥˊ ㄕˋ ㄕㄣˋ ㄓˋ ㄍㄨㄟ ㄉㄧㄥˋ ㄎㄠˇ ㄕˋ ㄑㄧ ㄐㄧㄢ ㄅㄨˋ ㄒㄩˇ ㄢˋ ㄌㄚˇ ㄅㄚ˙",
+        "text": "有的城市甚至规定,考试期间不许按喇叭。",
+        "romanization": "yǒu de chéngshì shènzhì guīdìng kǎoshì qījiān bùxǔ àn lǎba",
+        "translation": "Some cities even rule that horns may not be sounded during the exam period.",
+        "translation_en": "Some cities even rule that horns may not be sounded during the exam period.",
+        "translation_id": "Some cities even rule that horns may not be sounded during the exam period."
+      },
+      {
+        "hanzi": "家长站在考场外面,一站就是三个小时。",
+        "pinyin": "jiāzhǎng zhàn zài kǎochǎng wàimiàn yí zhàn jiùshì sān ge xiǎoshí",
+        "zhuyin": "ㄐㄧㄚ ㄓㄤˇ ㄓㄢˋ ㄗㄞˋ ㄎㄠˇ ㄔㄤˇ ㄨㄞˋ ㄇㄧㄢˋ ㄧˊ ㄓㄢˋ ㄐㄧㄡˋ ㄕˋ ㄙㄢ ㄍㄜ˙ ㄒㄧㄠˇ ㄕˊ",
+        "text": "家长站在考场外面,一站就是三个小时。",
+        "romanization": "jiāzhǎng zhàn zài kǎochǎng wàimiàn yí zhàn jiùshì sān ge xiǎoshí",
+        "translation": "Parents stand outside the exam hall, and once they start they stand for three hours.",
+        "translation_en": "Parents stand outside the exam hall, and once they start they stand for three hours.",
+        "translation_id": "Parents stand outside the exam hall, and once they start they stand for three hours."
+      },
+      {
+        "hanzi": "他们不敢走远,怕孩子出来的时候找不到人。",
+        "pinyin": "tāmen bù gǎn zǒu yuǎn pà háizi chūlái de shíhou zhǎo bú dào rén",
+        "zhuyin": "ㄊㄚ ㄇㄣ˙ ㄅㄨˋ ㄍㄢˇ ㄗㄡˇ ㄩㄢˇ ㄆㄚˋ ㄏㄞˊ ㄗ˙ ㄔㄨ ㄌㄞˊ ㄉㄜ˙ ㄕˊ ㄏㄡ˙ ㄓㄠˇ ㄅㄨˊ ㄉㄠˋ ㄖㄣˊ",
+        "text": "他们不敢走远,怕孩子出来的时候找不到人。",
+        "romanization": "tāmen bù gǎn zǒu yuǎn pà háizi chūlái de shíhou zhǎo bú dào rén",
+        "translation": "They dare not walk far, afraid their child will not find them coming out.",
+        "translation_en": "They dare not walk far, afraid their child will not find them coming out.",
+        "translation_id": "They dare not walk far, afraid their child will not find them coming out."
+      },
+      {
+        "hanzi": "有人拿着水,有人拿着伞,更多的人只是沉默地等着。",
+        "pinyin": "yǒu rén ná zhe shuǐ yǒu rén ná zhe sǎn gèng duō de rén zhǐshì chénmò de děng zhe",
+        "zhuyin": "ㄧㄡˇ ㄖㄣˊ ㄋㄚˊ ㄓㄜ˙ ㄕㄨㄟˇ ㄧㄡˇ ㄖㄣˊ ㄋㄚˊ ㄓㄜ˙ ㄙㄢˇ ㄍㄥˋ ㄉㄨㄛ ㄉㄜ˙ ㄖㄣˊ ㄓˇ ㄕˋ ㄔㄣˊ ㄇㄛˋ ㄉㄜ˙ ㄉㄥˇ ㄓㄜ˙",
+        "text": "有人拿着水,有人拿着伞,更多的人只是沉默地等着。",
+        "romanization": "yǒu rén ná zhe shuǐ yǒu rén ná zhe sǎn gèng duō de rén zhǐshì chénmò de děng zhe",
+        "translation": "Some hold water, some hold umbrellas, and more of them simply wait in silence.",
+        "translation_en": "Some hold water, some hold umbrellas, and more of them simply wait in silence.",
+        "translation_id": "Some hold water, some hold umbrellas, and more of them simply wait in silence."
+      },
+      {
+        "hanzi": "支持高考的人认为,它给了普通家庭一条公平的路。",
+        "pinyin": "zhīchí gāokǎo de rén rènwéi tā gěi le pǔtōng jiātíng yì tiáo gōngpíng de lù",
+        "zhuyin": "ㄓ ㄔˊ ㄍㄠ ㄎㄠˇ ㄉㄜ˙ ㄖㄣˊ ㄖㄣˋ ㄨㄟˊ ㄊㄚ ㄍㄟˇ ㄌㄜ˙ ㄆㄨˇ ㄊㄨㄥ ㄐㄧㄚ ㄊㄧㄥˊ ㄧˋ ㄊㄧㄠˊ ㄍㄨㄥ ㄆㄧㄥˊ ㄉㄜ˙ ㄌㄨˋ",
+        "text": "支持高考的人认为,它给了普通家庭一条公平的路。",
+        "romanization": "zhīchí gāokǎo de rén rènwéi tā gěi le pǔtōng jiātíng yì tiáo gōngpíng de lù",
+        "translation": "Those who support the gaokao believe it gives ordinary families a fair road.",
+        "translation_en": "Those who support the gaokao believe it gives ordinary families a fair road.",
+        "translation_id": "Those who support the gaokao believe it gives ordinary families a fair road."
+      },
+      {
+        "hanzi": "无论你出生在城市还是农村,分数面前人人平等。",
+        "pinyin": "wúlùn nǐ chūshēng zài chéngshì háishi nóngcūn fēnshù miànqián rénrén píngděng",
+        "zhuyin": "ㄨˊ ㄌㄨㄣˋ ㄋㄧˇ ㄔㄨ ㄕㄥ ㄗㄞˋ ㄔㄥˊ ㄕˋ ㄏㄞˊ ㄕ˙ ㄋㄨㄥˊ ㄘㄨㄣ ㄈㄣ ㄕㄨˋ ㄇㄧㄢˋ ㄑㄧㄢˊ ㄖㄣˊ ㄖㄣˊ ㄆㄧㄥˊ ㄉㄥˇ",
+        "text": "无论你出生在城市还是农村,分数面前人人平等。",
+        "romanization": "wúlùn nǐ chūshēng zài chéngshì háishi nóngcūn fēnshù miànqián rénrén píngděng",
+        "translation": "Whether you are born in the city or the countryside, before a score everyone is equal.",
+        "translation_en": "Whether you are born in the city or the countryside, before a score everyone is equal.",
+        "translation_id": "Whether you are born in the city or the countryside, before a score everyone is equal."
+      },
+      {
+        "hanzi": "反对的人则说,一次考试不应该决定一个人的一生。",
+        "pinyin": "fǎnduì de rén zé shuō yí cì kǎoshì bù yīnggāi juédìng yí ge rén de yìshēng",
+        "zhuyin": "ㄈㄢˇ ㄉㄨㄟˋ ㄉㄜ˙ ㄖㄣˊ ㄗㄜˊ ㄕㄨㄛ ㄧˊ ㄘˋ ㄎㄠˇ ㄕˋ ㄅㄨˋ ㄧㄥ ㄍㄞ ㄐㄩㄝˊ ㄉㄧㄥˋ ㄧˊ ㄍㄜ˙ ㄖㄣˊ ㄉㄜ˙ ㄧˋ ㄕㄥ",
+        "text": "反对的人则说,一次考试不应该决定一个人的一生。",
+        "romanization": "fǎnduì de rén zé shuō yí cì kǎoshì bù yīnggāi juédìng yí ge rén de yìshēng",
+        "translation": "Opponents say that a single exam should not decide a person's whole life.",
+        "translation_en": "Opponents say that a single exam should not decide a person's whole life.",
+        "translation_id": "Opponents say that a single exam should not decide a person's whole life."
+      },
+      {
+        "hanzi": "他们担心学生只学会了考试,却没学会思考。",
+        "pinyin": "tāmen dānxīn xuéshēng zhǐ xuéhuì le kǎoshì què méi xuéhuì sīkǎo",
+        "zhuyin": "ㄊㄚ ㄇㄣ˙ ㄉㄢ ㄒㄧㄣ ㄒㄩㄝˊ ㄕㄥ ㄓˇ ㄒㄩㄝˊ ㄏㄨㄟˋ ㄌㄜ˙ ㄎㄠˇ ㄕˋ ㄑㄩㄝˋ ㄇㄟˊ ㄒㄩㄝˊ ㄏㄨㄟˋ ㄙ ㄎㄠˇ",
+        "text": "他们担心学生只学会了考试,却没学会思考。",
+        "romanization": "tāmen dānxīn xuéshēng zhǐ xuéhuì le kǎoshì què méi xuéhuì sīkǎo",
+        "translation": "They worry that students only learn to take exams, without learning to think.",
+        "translation_en": "They worry that students only learn to take exams, without learning to think.",
+        "translation_id": "They worry that students only learn to take exams, without learning to think."
+      },
+      {
+        "hanzi": "这两种看法都有道理,争论了几十年也没有结果。",
+        "pinyin": "zhè liǎng zhǒng kànfǎ dōu yǒu dàolǐ zhēnglùn le jǐshí nián yě méiyǒu jiéguǒ",
+        "zhuyin": "ㄓㄜˋ ㄌㄧㄤˇ ㄓㄨㄥˇ ㄎㄢˋ ㄈㄚˇ ㄉㄡ ㄧㄡˇ ㄉㄠˋ ㄌㄧˇ ㄓㄥ ㄌㄨㄣˋ ㄌㄜ˙ ㄐㄧˇ ㄕˊ ㄋㄧㄢˊ ㄧㄝˇ ㄇㄟˊ ㄧㄡˇ ㄐㄧㄝˊ ㄍㄨㄛˇ",
+        "text": "这两种看法都有道理,争论了几十年也没有结果。",
+        "romanization": "zhè liǎng zhǒng kànfǎ dōu yǒu dàolǐ zhēnglùn le jǐshí nián yě méiyǒu jiéguǒ",
+        "translation": "Both views have their reasons, and decades of argument have settled nothing.",
+        "translation_en": "Both views have their reasons, and decades of argument have settled nothing.",
+        "translation_id": "Both views have their reasons, and decades of argument have settled nothing."
+      },
+      {
+        "hanzi": "但有一点大家都同意:那个夏天,谁也不会忘记。",
+        "pinyin": "dàn yǒu yì diǎn dàjiā dōu tóngyì nà ge xiàtiān shéi yě bú huì wàngjì",
+        "zhuyin": "ㄉㄢˋ ㄧㄡˇ ㄧˋ ㄉㄧㄢˇ ㄉㄚˋ ㄐㄧㄚ ㄉㄡ ㄊㄨㄥˊ ㄧˋ ㄋㄚˋ ㄍㄜ˙ ㄒㄧㄚˋ ㄊㄧㄢ ㄕㄟˊ ㄧㄝˇ ㄅㄨˊ ㄏㄨㄟˋ ㄨㄤˋ ㄐㄧˋ",
+        "text": "但有一点大家都同意:那个夏天,谁也不会忘记。",
+        "romanization": "dàn yǒu yì diǎn dàjiā dōu tóngyì nà ge xiàtiān shéi yě bú huì wàngjì",
+        "translation": "But on one point everyone agrees: nobody ever forgets that summer.",
+        "translation_en": "But on one point everyone agrees: nobody ever forgets that summer.",
+        "translation_id": "But on one point everyone agrees: nobody ever forgets that summer."
+      }
+    ]
+  },
+  {
+    "id": "r-dusheng-zinu-de-yi-dai",
+    "title": "独生子女的一代 — The Only-Child Generation",
+    "type": "story",
+    "hsk": 5,
+    "wordCount": 331,
+    "summary": "What outsiders got wrong about a generation raised without brothers or sisters.",
+    "paragraphs": [
+      {
+        "hanzi": "从上世纪八十年代开始,中国实行了三十多年的独生子女政策。",
+        "pinyin": "cóng shàng shìjì bāshí niándài kāishǐ Zhōngguó shíxíng le sānshí duō nián de dúshēng zǐnǚ zhèngcè",
+        "zhuyin": "ㄘㄨㄥˊ ㄕㄤˋ ㄕˋ ㄐㄧˋ ㄅㄚ ㄕˊ ㄋㄧㄢˊ ㄉㄞˋ ㄎㄞ ㄕˇ ㄓㄨㄥ ㄍㄨㄛˊ ㄕˊ ㄒㄧㄥˊ ㄌㄜ˙ ㄙㄢ ㄕˊ ㄉㄨㄛ ㄋㄧㄢˊ ㄉㄜ˙ ㄉㄨˊ ㄕㄥ ㄗˇ ㄋㄩˇ ㄓㄥˋ ㄘㄜˋ",
+        "text": "从上世纪八十年代开始,中国实行了三十多年的独生子女政策。",
+        "romanization": "cóng shàng shìjì bāshí niándài kāishǐ Zhōngguó shíxíng le sānshí duō nián de dúshēng zǐnǚ zhèngcè",
+        "translation": "From the 1980s onward, China carried out the one-child policy for more than thirty years.",
+        "translation_en": "From the 1980s onward, China carried out the one-child policy for more than thirty years.",
+        "translation_id": "From the 1980s onward, China carried out the one-child policy for more than thirty years."
+      },
+      {
+        "hanzi": "因此出现了世界上规模最大的一代独生子女。",
+        "pinyin": "yīncǐ chūxiàn le shìjiè shàng guīmó zuì dà de yí dài dúshēng zǐnǚ",
+        "zhuyin": "ㄧㄣ ㄘˇ ㄔㄨ ㄒㄧㄢˋ ㄌㄜ˙ ㄕˋ ㄐㄧㄝˋ ㄕㄤˋ ㄍㄨㄟ ㄇㄛˊ ㄗㄨㄟˋ ㄉㄚˋ ㄉㄜ˙ ㄧˊ ㄉㄞˋ ㄉㄨˊ ㄕㄥ ㄗˇ ㄋㄩˇ",
+        "text": "因此出现了世界上规模最大的一代独生子女。",
+        "romanization": "yīncǐ chūxiàn le shìjiè shàng guīmó zuì dà de yí dài dúshēng zǐnǚ",
+        "translation": "As a result there appeared the largest generation of only children in the world.",
+        "translation_en": "As a result there appeared the largest generation of only children in the world.",
+        "translation_id": "As a result there appeared the largest generation of only children in the world."
+      },
+      {
+        "hanzi": "我就是其中之一,家里只有我一个孩子。",
+        "pinyin": "wǒ jiùshì qízhōng zhī yī jiā lǐ zhǐ yǒu wǒ yí ge háizi",
+        "zhuyin": "ㄨㄛˇ ㄐㄧㄡˋ ㄕˋ ㄑㄧˊ ㄓㄨㄥ ㄓ ㄧ ㄐㄧㄚ ㄌㄧˇ ㄓˇ ㄧㄡˇ ㄨㄛˇ ㄧˊ ㄍㄜ˙ ㄏㄞˊ ㄗ˙",
+        "text": "我就是其中之一,家里只有我一个孩子。",
+        "romanization": "wǒ jiùshì qízhōng zhī yī jiā lǐ zhǐ yǒu wǒ yí ge háizi",
+        "translation": "I am one of them; there was only me at home.",
+        "translation_en": "I am one of them; there was only me at home.",
+        "translation_id": "I am one of them; there was only me at home."
+      },
+      {
+        "hanzi": "小时候,我几乎得到了父母全部的关注和资源。",
+        "pinyin": "xiǎo shíhou wǒ jīhū dédào le fùmǔ quánbù de guānzhù hé zīyuán",
+        "zhuyin": "ㄒㄧㄠˇ ㄕˊ ㄏㄡ˙ ㄨㄛˇ ㄐㄧ ㄏㄨ ㄉㄜˊ ㄉㄠˋ ㄌㄜ˙ ㄈㄨˋ ㄇㄨˇ ㄑㄩㄢˊ ㄅㄨˋ ㄉㄜ˙ ㄍㄨㄢ ㄓㄨˋ ㄏㄜˊ ㄗ ㄩㄢˊ",
+        "text": "小时候,我几乎得到了父母全部的关注和资源。",
+        "romanization": "xiǎo shíhou wǒ jīhū dédào le fùmǔ quánbù de guānzhù hé zīyuán",
+        "translation": "As a child I received almost all of my parents' attention and resources.",
+        "translation_en": "As a child I received almost all of my parents' attention and resources.",
+        "translation_id": "As a child I received almost all of my parents' attention and resources."
+      },
+      {
+        "hanzi": "我有自己的房间,自己的书桌,不用跟任何人分。",
+        "pinyin": "wǒ yǒu zìjǐ de fángjiān zìjǐ de shūzhuō búyòng gēn rènhé rén fēn",
+        "zhuyin": "ㄨㄛˇ ㄧㄡˇ ㄗˋ ㄐㄧˇ ㄉㄜ˙ ㄈㄤˊ ㄐㄧㄢ ㄗˋ ㄐㄧˇ ㄉㄜ˙ ㄕㄨ ㄓㄨㄛ ㄅㄨˊ ㄩㄥˋ ㄍㄣ ㄖㄣˋ ㄏㄜˊ ㄖㄣˊ ㄈㄣ",
+        "text": "我有自己的房间,自己的书桌,不用跟任何人分。",
+        "romanization": "wǒ yǒu zìjǐ de fángjiān zìjǐ de shūzhuō búyòng gēn rènhé rén fēn",
+        "translation": "I had my own room and my own desk, and shared them with nobody.",
+        "translation_en": "I had my own room and my own desk, and shared them with nobody.",
+        "translation_id": "I had my own room and my own desk, and shared them with nobody."
+      },
+      {
+        "hanzi": "外人常说,独生子女被宠坏了,自私又任性。",
+        "pinyin": "wàirén cháng shuō dúshēng zǐnǚ bèi chǒng huài le zìsī yòu rènxìng",
+        "zhuyin": "ㄨㄞˋ ㄖㄣˊ ㄔㄤˊ ㄕㄨㄛ ㄉㄨˊ ㄕㄥ ㄗˇ ㄋㄩˇ ㄅㄟˋ ㄔㄨㄥˇ ㄏㄨㄞˋ ㄌㄜ˙ ㄗˋ ㄙ ㄧㄡˋ ㄖㄣˋ ㄒㄧㄥˋ",
+        "text": "外人常说,独生子女被宠坏了,自私又任性。",
+        "romanization": "wàirén cháng shuō dúshēng zǐnǚ bèi chǒng huài le zìsī yòu rènxìng",
+        "translation": "Outsiders often said only children were spoiled, selfish and willful.",
+        "translation_en": "Outsiders often said only children were spoiled, selfish and willful.",
+        "translation_id": "Outsiders often said only children were spoiled, selfish and willful."
+      },
+      {
+        "hanzi": "可是他们很少看到硬币的另一面。",
+        "pinyin": "kěshì tāmen hěn shǎo kàndào yìngbì de lìng yí miàn",
+        "zhuyin": "ㄎㄜˇ ㄕˋ ㄊㄚ ㄇㄣ˙ ㄏㄣˇ ㄕㄠˇ ㄎㄢˋ ㄉㄠˋ ㄧㄥˋ ㄅㄧˋ ㄉㄜ˙ ㄌㄧㄥˋ ㄧˊ ㄇㄧㄢˋ",
+        "text": "可是他们很少看到硬币的另一面。",
+        "romanization": "kěshì tāmen hěn shǎo kàndào yìngbì de lìng yí miàn",
+        "translation": "But they rarely saw the other side of the coin.",
+        "translation_en": "But they rarely saw the other side of the coin.",
+        "translation_id": "But they rarely saw the other side of the coin."
+      },
+      {
+        "hanzi": "没有兄弟姐妹,意味着所有的期望都压在一个人身上。",
+        "pinyin": "méiyǒu xiōngdì jiěmèi yìwèi zhe suǒyǒu de qīwàng dōu yā zài yí ge rén shēn shàng",
+        "zhuyin": "ㄇㄟˊ ㄧㄡˇ ㄒㄩㄥ ㄉㄧˋ ㄐㄧㄝˇ ㄇㄟˋ ㄧˋ ㄨㄟˋ ㄓㄜ˙ ㄙㄨㄛˇ ㄧㄡˇ ㄉㄜ˙ ㄑㄧ ㄨㄤˋ ㄉㄡ ㄧㄚ ㄗㄞˋ ㄧˊ ㄍㄜ˙ ㄖㄣˊ ㄕㄣ ㄕㄤˋ",
+        "text": "没有兄弟姐妹,意味着所有的期望都压在一个人身上。",
+        "romanization": "méiyǒu xiōngdì jiěmèi yìwèi zhe suǒyǒu de qīwàng dōu yā zài yí ge rén shēn shàng",
+        "translation": "Having no siblings meant every expectation pressed down on one person.",
+        "translation_en": "Having no siblings meant every expectation pressed down on one person.",
+        "translation_id": "Having no siblings meant every expectation pressed down on one person."
+      },
+      {
+        "hanzi": "考试考砸了,没有人可以分担父母的失望。",
+        "pinyin": "kǎoshì kǎo zá le méiyǒu rén kěyǐ fēndān fùmǔ de shīwàng",
+        "zhuyin": "ㄎㄠˇ ㄕˋ ㄎㄠˇ ㄗㄚˊ ㄌㄜ˙ ㄇㄟˊ ㄧㄡˇ ㄖㄣˊ ㄎㄜˇ ㄧˇ ㄈㄣ ㄉㄢ ㄈㄨˋ ㄇㄨˇ ㄉㄜ˙ ㄕ ㄨㄤˋ",
+        "text": "考试考砸了,没有人可以分担父母的失望。",
+        "romanization": "kǎoshì kǎo zá le méiyǒu rén kěyǐ fēndān fùmǔ de shīwàng",
+        "translation": "If you failed an exam, there was nobody to share your parents' disappointment.",
+        "translation_en": "If you failed an exam, there was nobody to share your parents' disappointment.",
+        "translation_id": "If you failed an exam, there was nobody to share your parents' disappointment."
+      },
+      {
+        "hanzi": "长大以后,压力变得更加具体。",
+        "pinyin": "zhǎng dà yǐhòu yālì biàn de gèngjiā jùtǐ",
+        "zhuyin": "ㄓㄤˇ ㄉㄚˋ ㄧˇ ㄏㄡˋ ㄧㄚ ㄌㄧˋ ㄅㄧㄢˋ ㄉㄜ˙ ㄍㄥˋ ㄐㄧㄚ ㄐㄩˋ ㄊㄧˇ",
+        "text": "长大以后,压力变得更加具体。",
+        "romanization": "zhǎng dà yǐhòu yālì biàn de gèngjiā jùtǐ",
+        "translation": "Once we grew up, the pressure became more concrete.",
+        "translation_en": "Once we grew up, the pressure became more concrete.",
+        "translation_id": "Once we grew up, the pressure became more concrete."
+      },
+      {
+        "hanzi": "一对夫妻,可能要照顾四位老人,还要养自己的孩子。",
+        "pinyin": "yí duì fūqī kěnéng yào zhàogù sì wèi lǎorén hái yào yǎng zìjǐ de háizi",
+        "zhuyin": "ㄧˊ ㄉㄨㄟˋ ㄈㄨ ㄑㄧ ㄎㄜˇ ㄋㄥˊ ㄧㄠˋ ㄓㄠˋ ㄍㄨˋ ㄙˋ ㄨㄟˋ ㄌㄠˇ ㄖㄣˊ ㄏㄞˊ ㄧㄠˋ ㄧㄤˇ ㄗˋ ㄐㄧˇ ㄉㄜ˙ ㄏㄞˊ ㄗ˙",
+        "text": "一对夫妻,可能要照顾四位老人,还要养自己的孩子。",
+        "romanization": "yí duì fūqī kěnéng yào zhàogù sì wèi lǎorén hái yào yǎng zìjǐ de háizi",
+        "translation": "One couple may have to care for four elderly parents and raise their own child.",
+        "translation_en": "One couple may have to care for four elderly parents and raise their own child.",
+        "translation_id": "One couple may have to care for four elderly parents and raise their own child."
+      },
+      {
+        "hanzi": "这被称为\"四二一\"结构,像一座倒过来的金字塔。",
+        "pinyin": "zhè bèi chēngwéi sì èr yī jiégòu xiàng yí zuò dào guòlái de jīnzìtǎ",
+        "zhuyin": "ㄓㄜˋ ㄅㄟˋ ㄔㄥ ㄨㄟˊ ㄙˋ ㄦˋ ㄧ ㄐㄧㄝˊ ㄍㄡˋ ㄒㄧㄤˋ ㄧˊ ㄗㄨㄛˋ ㄉㄠˋ ㄍㄨㄛˋ ㄌㄞˊ ㄉㄜ˙ ㄐㄧㄣ ㄗˋ ㄊㄚˇ",
+        "text": "这被称为\"四二一\"结构,像一座倒过来的金字塔。",
+        "romanization": "zhè bèi chēngwéi sì èr yī jiégòu xiàng yí zuò dào guòlái de jīnzìtǎ",
+        "translation": "This is called the \"four-two-one\" structure, like an upside-down pyramid.",
+        "translation_en": "This is called the \"four-two-one\" structure, like an upside-down pyramid.",
+        "translation_id": "This is called the \"four-two-one\" structure, like an upside-down pyramid."
+      },
+      {
+        "hanzi": "父母生病的时候,你才真正明白独生的意思。",
+        "pinyin": "fùmǔ shēngbìng de shíhou nǐ cái zhēnzhèng míngbai dúshēng de yìsi",
+        "zhuyin": "ㄈㄨˋ ㄇㄨˇ ㄕㄥ ㄅㄧㄥˋ ㄉㄜ˙ ㄕˊ ㄏㄡ˙ ㄋㄧˇ ㄘㄞˊ ㄓㄣ ㄓㄥˋ ㄇㄧㄥˊ ㄅㄞ˙ ㄉㄨˊ ㄕㄥ ㄉㄜ˙ ㄧˋ ㄙ˙",
+        "text": "父母生病的时候,你才真正明白独生的意思。",
+        "romanization": "fùmǔ shēngbìng de shíhou nǐ cái zhēnzhèng míngbai dúshēng de yìsi",
+        "translation": "Only when your parents fall ill do you truly understand what being an only child means.",
+        "translation_en": "Only when your parents fall ill do you truly understand what being an only child means.",
+        "translation_id": "Only when your parents fall ill do you truly understand what being an only child means."
+      },
+      {
+        "hanzi": "病房外面的走廊上,只有你一个人在打电话。",
+        "pinyin": "bìngfáng wàimiàn de zǒuláng shàng zhǐ yǒu nǐ yí ge rén zài dǎ diànhuà",
+        "zhuyin": "ㄅㄧㄥˋ ㄈㄤˊ ㄨㄞˋ ㄇㄧㄢˋ ㄉㄜ˙ ㄗㄡˇ ㄌㄤˊ ㄕㄤˋ ㄓˇ ㄧㄡˇ ㄋㄧˇ ㄧˊ ㄍㄜ˙ ㄖㄣˊ ㄗㄞˋ ㄉㄚˇ ㄉㄧㄢˋ ㄏㄨㄚˋ",
+        "text": "病房外面的走廊上,只有你一个人在打电话。",
+        "romanization": "bìngfáng wàimiàn de zǒuláng shàng zhǐ yǒu nǐ yí ge rén zài dǎ diànhuà",
+        "translation": "In the corridor outside the ward, you are the only one making phone calls.",
+        "translation_en": "In the corridor outside the ward, you are the only one making phone calls.",
+        "translation_id": "In the corridor outside the ward, you are the only one making phone calls."
+      },
+      {
+        "hanzi": "现在政策已经放开了,可以生两个甚至三个孩子。",
+        "pinyin": "xiànzài zhèngcè yǐjīng fàng kāi le kěyǐ shēng liǎng ge shènzhì sān ge háizi",
+        "zhuyin": "ㄒㄧㄢˋ ㄗㄞˋ ㄓㄥˋ ㄘㄜˋ ㄧˇ ㄐㄧㄥ ㄈㄤˋ ㄎㄞ ㄌㄜ˙ ㄎㄜˇ ㄧˇ ㄕㄥ ㄌㄧㄤˇ ㄍㄜ˙ ㄕㄣˋ ㄓˋ ㄙㄢ ㄍㄜ˙ ㄏㄞˊ ㄗ˙",
+        "text": "现在政策已经放开了,可以生两个甚至三个孩子。",
+        "romanization": "xiànzài zhèngcè yǐjīng fàng kāi le kěyǐ shēng liǎng ge shènzhì sān ge háizi",
+        "translation": "The policy has now been relaxed, and people may have two or even three children.",
+        "translation_en": "The policy has now been relaxed, and people may have two or even three children.",
+        "translation_id": "The policy has now been relaxed, and people may have two or even three children."
+      },
+      {
+        "hanzi": "但对我们这一代来说,有些东西已经无法重来。",
+        "pinyin": "dàn duì wǒmen zhè yí dài lái shuō yǒu xiē dōngxi yǐjīng wúfǎ chóng lái",
+        "zhuyin": "ㄉㄢˋ ㄉㄨㄟˋ ㄨㄛˇ ㄇㄣ˙ ㄓㄜˋ ㄧˊ ㄉㄞˋ ㄌㄞˊ ㄕㄨㄛ ㄧㄡˇ ㄒㄧㄝ ㄉㄨㄥ ㄒㄧ˙ ㄧˇ ㄐㄧㄥ ㄨˊ ㄈㄚˇ ㄔㄨㄥˊ ㄌㄞˊ",
+        "text": "但对我们这一代来说,有些东西已经无法重来。",
+        "romanization": "dàn duì wǒmen zhè yí dài lái shuō yǒu xiē dōngxi yǐjīng wúfǎ chóng lái",
+        "translation": "But for our generation, some things can never be lived over again.",
+        "translation_en": "But for our generation, some things can never be lived over again.",
+        "translation_id": "But for our generation, some things can never be lived over again."
+      }
+    ]
+  },
+  {
+    "id": "r-zhengzai-xiaoshi-de-fangyan",
+    "title": "正在消失的方言 — The Dialects That Are Disappearing",
+    "type": "story",
+    "hsk": 5,
+    "wordCount": 338,
+    "summary": "Mandarin united a country's speech — and quietly cost it something else.",
+    "paragraphs": [
+      {
+        "hanzi": "中国有几百种方言,有些方言之间的差别比欧洲的语言还大。",
+        "pinyin": "Zhōngguó yǒu jǐ bǎi zhǒng fāngyán yǒu xiē fāngyán zhījiān de chābié bǐ Ōuzhōu de yǔyán hái dà",
+        "zhuyin": "ㄓㄨㄥ ㄍㄨㄛˊ ㄧㄡˇ ㄐㄧˇ ㄅㄞˇ ㄓㄨㄥˇ ㄈㄤ ㄧㄢˊ ㄧㄡˇ ㄒㄧㄝ ㄈㄤ ㄧㄢˊ ㄓ ㄐㄧㄢ ㄉㄜ˙ ㄔㄚ ㄅㄧㄝˊ ㄅㄧˇ ㄡ ㄓㄡ ㄉㄜ˙ ㄩˇ ㄧㄢˊ ㄏㄞˊ ㄉㄚˋ",
+        "text": "中国有几百种方言,有些方言之间的差别比欧洲的语言还大。",
+        "romanization": "Zhōngguó yǒu jǐ bǎi zhǒng fāngyán yǒu xiē fāngyán zhījiān de chābié bǐ Ōuzhōu de yǔyán hái dà",
+        "translation": "China has several hundred dialects, some differing more than European languages do.",
+        "translation_en": "China has several hundred dialects, some differing more than European languages do.",
+        "translation_id": "China has several hundred dialects, some differing more than European languages do."
+      },
+      {
+        "hanzi": "一个说粤语的人和一个说闽南话的人,可能完全听不懂对方。",
+        "pinyin": "yí ge shuō Yuèyǔ de rén hé yí ge shuō Mǐnnán huà de rén kěnéng wánquán tīng bù dǒng duìfāng",
+        "zhuyin": "ㄧˊ ㄍㄜ˙ ㄕㄨㄛ ㄩㄝˋ ㄩˇ ㄉㄜ˙ ㄖㄣˊ ㄏㄜˊ ㄧˊ ㄍㄜ˙ ㄕㄨㄛ ㄇㄧㄣˇ ㄋㄢˊ ㄏㄨㄚˋ ㄉㄜ˙ ㄖㄣˊ ㄎㄜˇ ㄋㄥˊ ㄨㄢˊ ㄑㄩㄢˊ ㄊㄧㄥ ㄅㄨˋ ㄉㄨㄥˇ ㄉㄨㄟˋ ㄈㄤ",
+        "text": "一个说粤语的人和一个说闽南话的人,可能完全听不懂对方。",
+        "romanization": "yí ge shuō Yuèyǔ de rén hé yí ge shuō Mǐnnán huà de rén kěnéng wánquán tīng bù dǒng duìfāng",
+        "translation": "A Cantonese speaker and a Hokkien speaker may not understand each other at all.",
+        "translation_en": "A Cantonese speaker and a Hokkien speaker may not understand each other at all.",
+        "translation_id": "A Cantonese speaker and a Hokkien speaker may not understand each other at all."
+      },
+      {
+        "hanzi": "为了让全国人能够交流,国家推广了普通话。",
+        "pinyin": "wèile ràng quánguó rén nénggòu jiāoliú guójiā tuīguǎng le pǔtōnghuà",
+        "zhuyin": "ㄨㄟˋ ㄌㄜ˙ ㄖㄤˋ ㄑㄩㄢˊ ㄍㄨㄛˊ ㄖㄣˊ ㄋㄥˊ ㄍㄡˋ ㄐㄧㄠ ㄌㄧㄡˊ ㄍㄨㄛˊ ㄐㄧㄚ ㄊㄨㄟ ㄍㄨㄤˇ ㄌㄜ˙ ㄆㄨˇ ㄊㄨㄥ ㄏㄨㄚˋ",
+        "text": "为了让全国人能够交流,国家推广了普通话。",
+        "romanization": "wèile ràng quánguó rén nénggòu jiāoliú guójiā tuīguǎng le pǔtōnghuà",
+        "translation": "So that the whole country could communicate, the state promoted Mandarin.",
+        "translation_en": "So that the whole country could communicate, the state promoted Mandarin.",
+        "translation_id": "So that the whole country could communicate, the state promoted Mandarin."
+      },
+      {
+        "hanzi": "这在教育和经济上确实带来了巨大的好处。",
+        "pinyin": "zhè zài jiàoyù hé jīngjì shàng quèshí dàilái le jùdà de hǎochù",
+        "zhuyin": "ㄓㄜˋ ㄗㄞˋ ㄐㄧㄠˋ ㄩˋ ㄏㄜˊ ㄐㄧㄥ ㄐㄧˋ ㄕㄤˋ ㄑㄩㄝˋ ㄕˊ ㄉㄞˋ ㄌㄞˊ ㄌㄜ˙ ㄐㄩˋ ㄉㄚˋ ㄉㄜ˙ ㄏㄠˇ ㄔㄨˋ",
+        "text": "这在教育和经济上确实带来了巨大的好处。",
+        "romanization": "zhè zài jiàoyù hé jīngjì shàng quèshí dàilái le jùdà de hǎochù",
+        "translation": "This did bring enormous benefits in education and the economy.",
+        "translation_en": "This did bring enormous benefits in education and the economy.",
+        "translation_id": "This did bring enormous benefits in education and the economy."
+      },
+      {
+        "hanzi": "但是几十年以后,人们开始发现一个问题。",
+        "pinyin": "dànshì jǐshí nián yǐhòu rénmen kāishǐ fāxiàn yí ge wèntí",
+        "zhuyin": "ㄉㄢˋ ㄕˋ ㄐㄧˇ ㄕˊ ㄋㄧㄢˊ ㄧˇ ㄏㄡˋ ㄖㄣˊ ㄇㄣ˙ ㄎㄞ ㄕˇ ㄈㄚ ㄒㄧㄢˋ ㄧˊ ㄍㄜ˙ ㄨㄣˋ ㄊㄧˊ",
+        "text": "但是几十年以后,人们开始发现一个问题。",
+        "romanization": "dànshì jǐshí nián yǐhòu rénmen kāishǐ fāxiàn yí ge wèntí",
+        "translation": "But decades later, people began to notice a problem.",
+        "translation_en": "But decades later, people began to notice a problem.",
+        "translation_id": "But decades later, people began to notice a problem."
+      },
+      {
+        "hanzi": "越来越多的孩子,已经不会说自己父母的方言了。",
+        "pinyin": "yuè lái yuè duō de háizi yǐjīng bú huì shuō zìjǐ fùmǔ de fāngyán le",
+        "zhuyin": "ㄩㄝˋ ㄌㄞˊ ㄩㄝˋ ㄉㄨㄛ ㄉㄜ˙ ㄏㄞˊ ㄗ˙ ㄧˇ ㄐㄧㄥ ㄅㄨˊ ㄏㄨㄟˋ ㄕㄨㄛ ㄗˋ ㄐㄧˇ ㄈㄨˋ ㄇㄨˇ ㄉㄜ˙ ㄈㄤ ㄧㄢˊ ㄌㄜ˙",
+        "text": "越来越多的孩子,已经不会说自己父母的方言了。",
+        "romanization": "yuè lái yuè duō de háizi yǐjīng bú huì shuō zìjǐ fùmǔ de fāngyán le",
+        "translation": "More and more children can no longer speak their own parents' dialect.",
+        "translation_en": "More and more children can no longer speak their own parents' dialect.",
+        "translation_id": "More and more children can no longer speak their own parents' dialect."
+      },
+      {
+        "hanzi": "在上海,很多小学生听得懂上海话,却不会说。",
+        "pinyin": "zài Shànghǎi hěn duō xiǎoxuéshēng tīng de dǒng Shànghǎi huà què bú huì shuō",
+        "zhuyin": "ㄗㄞˋ ㄕㄤˋ ㄏㄞˇ ㄏㄣˇ ㄉㄨㄛ ㄒㄧㄠˇ ㄒㄩㄝˊ ㄕㄥ ㄊㄧㄥ ㄉㄜ˙ ㄉㄨㄥˇ ㄕㄤˋ ㄏㄞˇ ㄏㄨㄚˋ ㄑㄩㄝˋ ㄅㄨˊ ㄏㄨㄟˋ ㄕㄨㄛ",
+        "text": "在上海,很多小学生听得懂上海话,却不会说。",
+        "romanization": "zài Shànghǎi hěn duō xiǎoxuéshēng tīng de dǒng Shànghǎi huà què bú huì shuō",
+        "translation": "In Shanghai, many primary school pupils understand Shanghainese but cannot speak it.",
+        "translation_en": "In Shanghai, many primary school pupils understand Shanghainese but cannot speak it.",
+        "translation_id": "In Shanghai, many primary school pupils understand Shanghainese but cannot speak it."
+      },
+      {
+        "hanzi": "在很多城市,方言只剩下老人还在使用。",
+        "pinyin": "zài hěn duō chéngshì fāngyán zhǐ shèng xià lǎorén hái zài shǐyòng",
+        "zhuyin": "ㄗㄞˋ ㄏㄣˇ ㄉㄨㄛ ㄔㄥˊ ㄕˋ ㄈㄤ ㄧㄢˊ ㄓˇ ㄕㄥˋ ㄒㄧㄚˋ ㄌㄠˇ ㄖㄣˊ ㄏㄞˊ ㄗㄞˋ ㄕˇ ㄩㄥˋ",
+        "text": "在很多城市,方言只剩下老人还在使用。",
+        "romanization": "zài hěn duō chéngshì fāngyán zhǐ shèng xià lǎorén hái zài shǐyòng",
+        "translation": "In many cities, the dialect survives only among the elderly.",
+        "translation_en": "In many cities, the dialect survives only among the elderly.",
+        "translation_id": "In many cities, the dialect survives only among the elderly."
+      },
+      {
+        "hanzi": "语言学家说,一种方言消失,不只是少了一种口音。",
+        "pinyin": "yǔyánxuéjiā shuō yì zhǒng fāngyán xiāoshī bù zhǐshì shǎo le yì zhǒng kǒuyīn",
+        "zhuyin": "ㄩˇ ㄧㄢˊ ㄒㄩㄝˊ ㄐㄧㄚ ㄕㄨㄛ ㄧˋ ㄓㄨㄥˇ ㄈㄤ ㄧㄢˊ ㄒㄧㄠ ㄕ ㄅㄨˋ ㄓˇ ㄕˋ ㄕㄠˇ ㄌㄜ˙ ㄧˋ ㄓㄨㄥˇ ㄎㄡˇ ㄧㄣ",
+        "text": "语言学家说,一种方言消失,不只是少了一种口音。",
+        "romanization": "yǔyánxuéjiā shuō yì zhǒng fāngyán xiāoshī bù zhǐshì shǎo le yì zhǒng kǒuyīn",
+        "translation": "Linguists say that when a dialect vanishes, it is not merely one accent fewer.",
+        "translation_en": "Linguists say that when a dialect vanishes, it is not merely one accent fewer.",
+        "translation_id": "Linguists say that when a dialect vanishes, it is not merely one accent fewer."
+      },
+      {
+        "hanzi": "方言里保存着当地的历史、笑话和看世界的方式。",
+        "pinyin": "fāngyán lǐ bǎocún zhe dāngdì de lìshǐ xiàohuà hé kàn shìjiè de fāngshì",
+        "zhuyin": "ㄈㄤ ㄧㄢˊ ㄌㄧˇ ㄅㄠˇ ㄘㄨㄣˊ ㄓㄜ˙ ㄉㄤ ㄉㄧˋ ㄉㄜ˙ ㄌㄧˋ ㄕˇ ㄒㄧㄠˋ ㄏㄨㄚˋ ㄏㄜˊ ㄎㄢˋ ㄕˋ ㄐㄧㄝˋ ㄉㄜ˙ ㄈㄤ ㄕˋ",
+        "text": "方言里保存着当地的历史、笑话和看世界的方式。",
+        "romanization": "fāngyán lǐ bǎocún zhe dāngdì de lìshǐ xiàohuà hé kàn shìjiè de fāngshì",
+        "translation": "A dialect preserves local history, its jokes, and its way of seeing the world.",
+        "translation_en": "A dialect preserves local history, its jokes, and its way of seeing the world.",
+        "translation_id": "A dialect preserves local history, its jokes, and its way of seeing the world."
+      },
+      {
+        "hanzi": "有些词在普通话里根本找不到对应的说法。",
+        "pinyin": "yǒu xiē cí zài pǔtōnghuà lǐ gēnběn zhǎo bú dào duìyìng de shuōfǎ",
+        "zhuyin": "ㄧㄡˇ ㄒㄧㄝ ㄘˊ ㄗㄞˋ ㄆㄨˇ ㄊㄨㄥ ㄏㄨㄚˋ ㄌㄧˇ ㄍㄣ ㄅㄣˇ ㄓㄠˇ ㄅㄨˊ ㄉㄠˋ ㄉㄨㄟˋ ㄧㄥˋ ㄉㄜ˙ ㄕㄨㄛ ㄈㄚˇ",
+        "text": "有些词在普通话里根本找不到对应的说法。",
+        "romanization": "yǒu xiē cí zài pǔtōnghuà lǐ gēnběn zhǎo bú dào duìyìng de shuōfǎ",
+        "translation": "Some words simply have no equivalent in Mandarin at all.",
+        "translation_en": "Some words simply have no equivalent in Mandarin at all.",
+        "translation_id": "Some words simply have no equivalent in Mandarin at all."
+      },
+      {
+        "hanzi": "比如形容一种说不出的闷热,或者一种特别的亲切。",
+        "pinyin": "bǐrú xíngróng yì zhǒng shuō bù chū de mēnrè huòzhě yì zhǒng tèbié de qīnqiè",
+        "zhuyin": "ㄅㄧˇ ㄖㄨˊ ㄒㄧㄥˊ ㄖㄨㄥˊ ㄧˋ ㄓㄨㄥˇ ㄕㄨㄛ ㄅㄨˋ ㄔㄨ ㄉㄜ˙ ㄇㄣ ㄖㄜˋ ㄏㄨㄛˋ ㄓㄜˇ ㄧˋ ㄓㄨㄥˇ ㄊㄜˋ ㄅㄧㄝˊ ㄉㄜ˙ ㄑㄧㄣ ㄑㄧㄝˋ",
+        "text": "比如形容一种说不出的闷热,或者一种特别的亲切。",
+        "romanization": "bǐrú xíngróng yì zhǒng shuō bù chū de mēnrè huòzhě yì zhǒng tèbié de qīnqiè",
+        "translation": "For instance, a stifling heat you cannot name, or a particular kind of warmth.",
+        "translation_en": "For instance, a stifling heat you cannot name, or a particular kind of warmth.",
+        "translation_id": "For instance, a stifling heat you cannot name, or a particular kind of warmth."
+      },
+      {
+        "hanzi": "这几年,有人开始录制老人说方言的声音。",
+        "pinyin": "zhè jǐ nián yǒu rén kāishǐ lùzhì lǎorén shuō fāngyán de shēngyīn",
+        "zhuyin": "ㄓㄜˋ ㄐㄧˇ ㄋㄧㄢˊ ㄧㄡˇ ㄖㄣˊ ㄎㄞ ㄕˇ ㄌㄨˋ ㄓˋ ㄌㄠˇ ㄖㄣˊ ㄕㄨㄛ ㄈㄤ ㄧㄢˊ ㄉㄜ˙ ㄕㄥ ㄧㄣ",
+        "text": "这几年,有人开始录制老人说方言的声音。",
+        "romanization": "zhè jǐ nián yǒu rén kāishǐ lùzhì lǎorén shuō fāngyán de shēngyīn",
+        "translation": "In recent years, some people have begun recording old people speaking dialect.",
+        "translation_en": "In recent years, some people have begun recording old people speaking dialect.",
+        "translation_id": "In recent years, some people have begun recording old people speaking dialect."
+      },
+      {
+        "hanzi": "也有学校尝试开设方言课,教孩子唱当地的童谣。",
+        "pinyin": "yě yǒu xuéxiào chángshì kāishè fāngyán kè jiāo háizi chàng dāngdì de tóngyáo",
+        "zhuyin": "ㄧㄝˇ ㄧㄡˇ ㄒㄩㄝˊ ㄒㄧㄠˋ ㄔㄤˊ ㄕˋ ㄎㄞ ㄕㄜˋ ㄈㄤ ㄧㄢˊ ㄎㄜˋ ㄐㄧㄠ ㄏㄞˊ ㄗ˙ ㄔㄤˋ ㄉㄤ ㄉㄧˋ ㄉㄜ˙ ㄊㄨㄥˊ ㄧㄠˊ",
+        "text": "也有学校尝试开设方言课,教孩子唱当地的童谣。",
+        "romanization": "yě yǒu xuéxiào chángshì kāishè fāngyán kè jiāo háizi chàng dāngdì de tóngyáo",
+        "translation": "Some schools have also tried offering dialect classes, teaching local nursery rhymes.",
+        "translation_en": "Some schools have also tried offering dialect classes, teaching local nursery rhymes.",
+        "translation_id": "Some schools have also tried offering dialect classes, teaching local nursery rhymes."
+      },
+      {
+        "hanzi": "没有人想回到互相听不懂的时代。",
+        "pinyin": "méiyǒu rén xiǎng huí dào hùxiāng tīng bù dǒng de shídài",
+        "zhuyin": "ㄇㄟˊ ㄧㄡˇ ㄖㄣˊ ㄒㄧㄤˇ ㄏㄨㄟˊ ㄉㄠˋ ㄏㄨˋ ㄒㄧㄤ ㄊㄧㄥ ㄅㄨˋ ㄉㄨㄥˇ ㄉㄜ˙ ㄕˊ ㄉㄞˋ",
+        "text": "没有人想回到互相听不懂的时代。",
+        "romanization": "méiyǒu rén xiǎng huí dào hùxiāng tīng bù dǒng de shídài",
+        "translation": "Nobody wants to return to an age when people could not understand one another.",
+        "translation_en": "Nobody wants to return to an age when people could not understand one another.",
+        "translation_id": "Nobody wants to return to an age when people could not understand one another."
+      },
+      {
+        "hanzi": "但也许我们可以既说普通话,也记得奶奶的口音。",
+        "pinyin": "dàn yěxǔ wǒmen kěyǐ jì shuō pǔtōnghuà yě jìde nǎinai de kǒuyīn",
+        "zhuyin": "ㄉㄢˋ ㄧㄝˇ ㄒㄩˇ ㄨㄛˇ ㄇㄣ˙ ㄎㄜˇ ㄧˇ ㄐㄧˋ ㄕㄨㄛ ㄆㄨˇ ㄊㄨㄥ ㄏㄨㄚˋ ㄧㄝˇ ㄐㄧˋ ㄉㄜ˙ ㄋㄞˇ ㄋㄞ˙ ㄉㄜ˙ ㄎㄡˇ ㄧㄣ",
+        "text": "但也许我们可以既说普通话,也记得奶奶的口音。",
+        "romanization": "dàn yěxǔ wǒmen kěyǐ jì shuō pǔtōnghuà yě jìde nǎinai de kǒuyīn",
+        "translation": "But perhaps we can speak Mandarin and still remember our grandmother's accent.",
+        "translation_en": "But perhaps we can speak Mandarin and still remember our grandmother's accent.",
+        "translation_id": "But perhaps we can speak Mandarin and still remember our grandmother's accent."
+      }
+    ]
+  },
+  {
+    "id": "r-zhongyi",
+    "title": "中医 — Traditional Chinese Medicine",
+    "type": "story",
+    "hsk": 5,
+    "wordCount": 320,
+    "summary": "Two thousand years of practice, and the argument that will not go away.",
+    "paragraphs": [
+      {
+        "hanzi": "走进一家中药店,你会闻到一种很特别的味道。",
+        "pinyin": "zǒu jìn yì jiā zhōngyào diàn nǐ huì wén dào yì zhǒng hěn tèbié de wèidào",
+        "zhuyin": "ㄗㄡˇ ㄐㄧㄣˋ ㄧˋ ㄐㄧㄚ ㄓㄨㄥ ㄧㄠˋ ㄉㄧㄢˋ ㄋㄧˇ ㄏㄨㄟˋ ㄨㄣˊ ㄉㄠˋ ㄧˋ ㄓㄨㄥˇ ㄏㄣˇ ㄊㄜˋ ㄅㄧㄝˊ ㄉㄜ˙ ㄨㄟˋ ㄉㄠˋ",
+        "text": "走进一家中药店,你会闻到一种很特别的味道。",
+        "romanization": "zǒu jìn yì jiā zhōngyào diàn nǐ huì wén dào yì zhǒng hěn tèbié de wèidào",
+        "translation": "Walk into a Chinese pharmacy and you meet a very particular smell.",
+        "translation_en": "Walk into a Chinese pharmacy and you meet a very particular smell.",
+        "translation_id": "Walk into a Chinese pharmacy and you meet a very particular smell."
+      },
+      {
+        "hanzi": "那是几百种草药混在一起的气味,又苦又香。",
+        "pinyin": "nà shì jǐ bǎi zhǒng cǎoyào hùn zài yìqǐ de qìwèi yòu kǔ yòu xiāng",
+        "zhuyin": "ㄋㄚˋ ㄕˋ ㄐㄧˇ ㄅㄞˇ ㄓㄨㄥˇ ㄘㄠˇ ㄧㄠˋ ㄏㄨㄣˋ ㄗㄞˋ ㄧˋ ㄑㄧˇ ㄉㄜ˙ ㄑㄧˋ ㄨㄟˋ ㄧㄡˋ ㄎㄨˇ ㄧㄡˋ ㄒㄧㄤ",
+        "text": "那是几百种草药混在一起的气味,又苦又香。",
+        "romanization": "nà shì jǐ bǎi zhǒng cǎoyào hùn zài yìqǐ de qìwèi yòu kǔ yòu xiāng",
+        "translation": "It is hundreds of herbs mixed together, both bitter and fragrant.",
+        "translation_en": "It is hundreds of herbs mixed together, both bitter and fragrant.",
+        "translation_id": "It is hundreds of herbs mixed together, both bitter and fragrant."
+      },
+      {
+        "hanzi": "中医有两千多年的历史,是中国文化的重要部分。",
+        "pinyin": "zhōngyī yǒu liǎng qiān duō nián de lìshǐ shì Zhōngguó wénhuà de zhòngyào bùfen",
+        "zhuyin": "ㄓㄨㄥ ㄧ ㄧㄡˇ ㄌㄧㄤˇ ㄑㄧㄢ ㄉㄨㄛ ㄋㄧㄢˊ ㄉㄜ˙ ㄌㄧˋ ㄕˇ ㄕˋ ㄓㄨㄥ ㄍㄨㄛˊ ㄨㄣˊ ㄏㄨㄚˋ ㄉㄜ˙ ㄓㄨㄥˋ ㄧㄠˋ ㄅㄨˋ ㄈㄣ˙",
+        "text": "中医有两千多年的历史,是中国文化的重要部分。",
+        "romanization": "zhōngyī yǒu liǎng qiān duō nián de lìshǐ shì Zhōngguó wénhuà de zhòngyào bùfen",
+        "translation": "Chinese medicine has over two thousand years of history and is a major part of the culture.",
+        "translation_en": "Chinese medicine has over two thousand years of history and is a major part of the culture.",
+        "translation_id": "Chinese medicine has over two thousand years of history and is a major part of the culture."
+      },
+      {
+        "hanzi": "中医看病的方法和西医很不一样。",
+        "pinyin": "zhōngyī kàn bìng de fāngfǎ hé xīyī hěn bù yíyàng",
+        "zhuyin": "ㄓㄨㄥ ㄧ ㄎㄢˋ ㄅㄧㄥˋ ㄉㄜ˙ ㄈㄤ ㄈㄚˇ ㄏㄜˊ ㄒㄧ ㄧ ㄏㄣˇ ㄅㄨˋ ㄧˊ ㄧㄤˋ",
+        "text": "中医看病的方法和西医很不一样。",
+        "romanization": "zhōngyī kàn bìng de fāngfǎ hé xīyī hěn bù yíyàng",
+        "translation": "The way Chinese medicine examines a patient differs greatly from Western medicine.",
+        "translation_en": "The way Chinese medicine examines a patient differs greatly from Western medicine.",
+        "translation_id": "The way Chinese medicine examines a patient differs greatly from Western medicine."
+      },
+      {
+        "hanzi": "医生会看你的舌头,听你的声音,还要摸你的脉。",
+        "pinyin": "yīshēng huì kàn nǐ de shétou tīng nǐ de shēngyīn hái yào mō nǐ de mài",
+        "zhuyin": "ㄧ ㄕㄥ ㄏㄨㄟˋ ㄎㄢˋ ㄋㄧˇ ㄉㄜ˙ ㄕㄜˊ ㄊㄡ˙ ㄊㄧㄥ ㄋㄧˇ ㄉㄜ˙ ㄕㄥ ㄧㄣ ㄏㄞˊ ㄧㄠˋ ㄇㄛ ㄋㄧˇ ㄉㄜ˙ ㄇㄞˋ",
+        "text": "医生会看你的舌头,听你的声音,还要摸你的脉。",
+        "romanization": "yīshēng huì kàn nǐ de shétou tīng nǐ de shēngyīn hái yào mō nǐ de mài",
+        "translation": "The doctor looks at your tongue, listens to your voice, and takes your pulse.",
+        "translation_en": "The doctor looks at your tongue, listens to your voice, and takes your pulse.",
+        "translation_id": "The doctor looks at your tongue, listens to your voice, and takes your pulse."
+      },
+      {
+        "hanzi": "他关心的不只是病,还有你整个人的状态。",
+        "pinyin": "tā guānxīn de bù zhǐshì bìng hái yǒu nǐ zhěnggè rén de zhuàngtài",
+        "zhuyin": "ㄊㄚ ㄍㄨㄢ ㄒㄧㄣ ㄉㄜ˙ ㄅㄨˋ ㄓˇ ㄕˋ ㄅㄧㄥˋ ㄏㄞˊ ㄧㄡˇ ㄋㄧˇ ㄓㄥˇ ㄍㄜˋ ㄖㄣˊ ㄉㄜ˙ ㄓㄨㄤˋ ㄊㄞˋ",
+        "text": "他关心的不只是病,还有你整个人的状态。",
+        "romanization": "tā guānxīn de bù zhǐshì bìng hái yǒu nǐ zhěnggè rén de zhuàngtài",
+        "translation": "What concerns him is not only the illness but the state of your whole person.",
+        "translation_en": "What concerns him is not only the illness but the state of your whole person.",
+        "translation_id": "What concerns him is not only the illness but the state of your whole person."
+      },
+      {
+        "hanzi": "中医认为身体讲究平衡,太热或者太寒都会生病。",
+        "pinyin": "zhōngyī rènwéi shēntǐ jiǎngjiu pínghéng tài rè huòzhě tài hán dōu huì shēngbìng",
+        "zhuyin": "ㄓㄨㄥ ㄧ ㄖㄣˋ ㄨㄟˊ ㄕㄣ ㄊㄧˇ ㄐㄧㄤˇ ㄐㄧㄡ˙ ㄆㄧㄥˊ ㄏㄥˊ ㄊㄞˋ ㄖㄜˋ ㄏㄨㄛˋ ㄓㄜˇ ㄊㄞˋ ㄏㄢˊ ㄉㄡ ㄏㄨㄟˋ ㄕㄥ ㄅㄧㄥˋ",
+        "text": "中医认为身体讲究平衡,太热或者太寒都会生病。",
+        "romanization": "zhōngyī rènwéi shēntǐ jiǎngjiu pínghéng tài rè huòzhě tài hán dōu huì shēngbìng",
+        "translation": "Chinese medicine holds that the body needs balance; too hot or too cold makes you ill.",
+        "translation_en": "Chinese medicine holds that the body needs balance; too hot or too cold makes you ill.",
+        "translation_id": "Chinese medicine holds that the body needs balance; too hot or too cold makes you ill."
+      },
+      {
+        "hanzi": "所以中医常说\"调理\",而不是简单地\"治好\"。",
+        "pinyin": "suǒyǐ zhōngyī cháng shuō tiáolǐ ér bú shì jiǎndān de zhì hǎo",
+        "zhuyin": "ㄙㄨㄛˇ ㄧˇ ㄓㄨㄥ ㄧ ㄔㄤˊ ㄕㄨㄛ ㄊㄧㄠˊ ㄌㄧˇ ㄦˊ ㄅㄨˊ ㄕˋ ㄐㄧㄢˇ ㄉㄢ ㄉㄜ˙ ㄓˋ ㄏㄠˇ",
+        "text": "所以中医常说\"调理\",而不是简单地\"治好\"。",
+        "romanization": "suǒyǐ zhōngyī cháng shuō tiáolǐ ér bú shì jiǎndān de zhì hǎo",
+        "translation": "So Chinese doctors speak of \"regulating\" rather than simply \"curing\".",
+        "translation_en": "So Chinese doctors speak of \"regulating\" rather than simply \"curing\".",
+        "translation_id": "So Chinese doctors speak of \"regulating\" rather than simply \"curing\"."
+      },
+      {
+        "hanzi": "今天在中国,中医和西医常常一起使用。",
+        "pinyin": "jīntiān zài Zhōngguó zhōngyī hé xīyī chángcháng yìqǐ shǐyòng",
+        "zhuyin": "ㄐㄧㄣ ㄊㄧㄢ ㄗㄞˋ ㄓㄨㄥ ㄍㄨㄛˊ ㄓㄨㄥ ㄧ ㄏㄜˊ ㄒㄧ ㄧ ㄔㄤˊ ㄔㄤˊ ㄧˋ ㄑㄧˇ ㄕˇ ㄩㄥˋ",
+        "text": "今天在中国,中医和西医常常一起使用。",
+        "romanization": "jīntiān zài Zhōngguó zhōngyī hé xīyī chángcháng yìqǐ shǐyòng",
+        "translation": "In China today, Chinese and Western medicine are often used together.",
+        "translation_en": "In China today, Chinese and Western medicine are often used together.",
+        "translation_id": "In China today, Chinese and Western medicine are often used together."
+      },
+      {
+        "hanzi": "感冒的时候,有人吃西药,也有人先喝一碗中药。",
+        "pinyin": "gǎnmào de shíhou yǒu rén chī xīyào yě yǒu rén xiān hē yì wǎn zhōngyào",
+        "zhuyin": "ㄍㄢˇ ㄇㄠˋ ㄉㄜ˙ ㄕˊ ㄏㄡ˙ ㄧㄡˇ ㄖㄣˊ ㄔ ㄒㄧ ㄧㄠˋ ㄧㄝˇ ㄧㄡˇ ㄖㄣˊ ㄒㄧㄢ ㄏㄜ ㄧˋ ㄨㄢˇ ㄓㄨㄥ ㄧㄠˋ",
+        "text": "感冒的时候,有人吃西药,也有人先喝一碗中药。",
+        "romanization": "gǎnmào de shíhou yǒu rén chī xīyào yě yǒu rén xiān hē yì wǎn zhōngyào",
+        "translation": "With a cold, some take Western pills, and some first drink a bowl of herbal decoction.",
+        "translation_en": "With a cold, some take Western pills, and some first drink a bowl of herbal decoction.",
+        "translation_id": "With a cold, some take Western pills, and some first drink a bowl of herbal decoction."
+      },
+      {
+        "hanzi": "针灸在很多国家也越来越受欢迎。",
+        "pinyin": "zhēnjiǔ zài hěn duō guójiā yě yuè lái yuè shòu huānyíng",
+        "zhuyin": "ㄓㄣ ㄐㄧㄡˇ ㄗㄞˋ ㄏㄣˇ ㄉㄨㄛ ㄍㄨㄛˊ ㄐㄧㄚ ㄧㄝˇ ㄩㄝˋ ㄌㄞˊ ㄩㄝˋ ㄕㄡˋ ㄏㄨㄢ ㄧㄥˊ",
+        "text": "针灸在很多国家也越来越受欢迎。",
+        "romanization": "zhēnjiǔ zài hěn duō guójiā yě yuè lái yuè shòu huānyíng",
+        "translation": "Acupuncture is also growing more popular in many countries.",
+        "translation_en": "Acupuncture is also growing more popular in many countries.",
+        "translation_id": "Acupuncture is also growing more popular in many countries."
+      },
+      {
+        "hanzi": "不过关于中医的争论一直没有停过。",
+        "pinyin": "búguò guānyú zhōngyī de zhēnglùn yìzhí méiyǒu tíng guo",
+        "zhuyin": "ㄅㄨˊ ㄍㄨㄛˋ ㄍㄨㄢ ㄩˊ ㄓㄨㄥ ㄧ ㄉㄜ˙ ㄓㄥ ㄌㄨㄣˋ ㄧˋ ㄓˊ ㄇㄟˊ ㄧㄡˇ ㄊㄧㄥˊ ㄍㄨㄛ˙",
+        "text": "不过关于中医的争论一直没有停过。",
+        "romanization": "búguò guānyú zhōngyī de zhēnglùn yìzhí méiyǒu tíng guo",
+        "translation": "The argument about Chinese medicine has never stopped, though.",
+        "translation_en": "The argument about Chinese medicine has never stopped, though.",
+        "translation_id": "The argument about Chinese medicine has never stopped, though."
+      },
+      {
+        "hanzi": "批评的人认为,很多方子缺少现代科学的证明。",
+        "pinyin": "pīpíng de rén rènwéi hěn duō fāngzi quēshǎo xiàndài kēxué de zhèngmíng",
+        "zhuyin": "ㄆㄧ ㄆㄧㄥˊ ㄉㄜ˙ ㄖㄣˊ ㄖㄣˋ ㄨㄟˊ ㄏㄣˇ ㄉㄨㄛ ㄈㄤ ㄗ˙ ㄑㄩㄝ ㄕㄠˇ ㄒㄧㄢˋ ㄉㄞˋ ㄎㄜ ㄒㄩㄝˊ ㄉㄜ˙ ㄓㄥˋ ㄇㄧㄥˊ",
+        "text": "批评的人认为,很多方子缺少现代科学的证明。",
+        "romanization": "pīpíng de rén rènwéi hěn duō fāngzi quēshǎo xiàndài kēxué de zhèngmíng",
+        "translation": "Critics hold that many prescriptions lack modern scientific proof.",
+        "translation_en": "Critics hold that many prescriptions lack modern scientific proof.",
+        "translation_id": "Critics hold that many prescriptions lack modern scientific proof."
+      },
+      {
+        "hanzi": "支持的人则说,有效果几千年了,不能简单否定。",
+        "pinyin": "zhīchí de rén zé shuō yǒu xiàoguǒ jǐ qiān nián le bù néng jiǎndān fǒudìng",
+        "zhuyin": "ㄓ ㄔˊ ㄉㄜ˙ ㄖㄣˊ ㄗㄜˊ ㄕㄨㄛ ㄧㄡˇ ㄒㄧㄠˋ ㄍㄨㄛˇ ㄐㄧˇ ㄑㄧㄢ ㄋㄧㄢˊ ㄌㄜ˙ ㄅㄨˋ ㄋㄥˊ ㄐㄧㄢˇ ㄉㄢ ㄈㄡˇ ㄉㄧㄥˋ",
+        "text": "支持的人则说,有效果几千年了,不能简单否定。",
+        "romanization": "zhīchí de rén zé shuō yǒu xiàoguǒ jǐ qiān nián le bù néng jiǎndān fǒudìng",
+        "translation": "Supporters reply that it has worked for thousands of years and cannot be dismissed.",
+        "translation_en": "Supporters reply that it has worked for thousands of years and cannot be dismissed.",
+        "translation_id": "Supporters reply that it has worked for thousands of years and cannot be dismissed."
+      },
+      {
+        "hanzi": "也许最合理的态度,是既不盲目相信,也不轻易否定。",
+        "pinyin": "yěxǔ zuì hélǐ de tàidù shì jì bù mángmù xiāngxìn yě bù qīngyì fǒudìng",
+        "zhuyin": "ㄧㄝˇ ㄒㄩˇ ㄗㄨㄟˋ ㄏㄜˊ ㄌㄧˇ ㄉㄜ˙ ㄊㄞˋ ㄉㄨˋ ㄕˋ ㄐㄧˋ ㄅㄨˋ ㄇㄤˊ ㄇㄨˋ ㄒㄧㄤ ㄒㄧㄣˋ ㄧㄝˇ ㄅㄨˋ ㄑㄧㄥ ㄧˋ ㄈㄡˇ ㄉㄧㄥˋ",
+        "text": "也许最合理的态度,是既不盲目相信,也不轻易否定。",
+        "romanization": "yěxǔ zuì hélǐ de tàidù shì jì bù mángmù xiāngxìn yě bù qīngyì fǒudìng",
+        "translation": "Perhaps the soundest attitude is neither blind faith nor easy dismissal.",
+        "translation_en": "Perhaps the soundest attitude is neither blind faith nor easy dismissal.",
+        "translation_id": "Perhaps the soundest attitude is neither blind faith nor easy dismissal."
+      },
+      {
+        "hanzi": "让证据说话,同时尊重经验留下来的东西。",
+        "pinyin": "ràng zhèngjù shuōhuà tóngshí zūnzhòng jīngyàn liú xiàlái de dōngxi",
+        "zhuyin": "ㄖㄤˋ ㄓㄥˋ ㄐㄩˋ ㄕㄨㄛ ㄏㄨㄚˋ ㄊㄨㄥˊ ㄕˊ ㄗㄨㄣ ㄓㄨㄥˋ ㄐㄧㄥ ㄧㄢˋ ㄌㄧㄡˊ ㄒㄧㄚˋ ㄌㄞˊ ㄉㄜ˙ ㄉㄨㄥ ㄒㄧ˙",
+        "text": "让证据说话,同时尊重经验留下来的东西。",
+        "romanization": "ràng zhèngjù shuōhuà tóngshí zūnzhòng jīngyàn liú xiàlái de dōngxi",
+        "translation": "Let the evidence speak, while respecting what experience has left behind.",
+        "translation_en": "Let the evidence speak, while respecting what experience has left behind.",
+        "translation_id": "Let the evidence speak, while respecting what experience has left behind."
+      }
+    ]
   }
 ]
