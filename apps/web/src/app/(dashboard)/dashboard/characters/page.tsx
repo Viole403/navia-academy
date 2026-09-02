@@ -38,7 +38,7 @@ export default function CharactersPage() {
     [settings.activeExamType, CHARACTERS]
   )
   const radicals = useMemo(
-    () => [...new Set(examChars.map((c) => c.radical))].sort(),
+    () => [...new Set(examChars.map((c) => c.radical).filter(Boolean))].sort(),
     [examChars]
   )
 
@@ -143,10 +143,12 @@ export default function CharactersPage() {
                   </span>
                 )}
                 <span className="mt-1.5 block text-xs text-ink-faint">
-                  {t("characters.strokes", {
-                    n: String(c.strokes),
-                    radical: c.radical,
-                  })}
+                  {c.radical
+                    ? t("characters.strokes", {
+                        n: String(c.strokes),
+                        radical: c.radical,
+                      })
+                    : t("characters.strokesLabel") + " " + String(c.strokes)}
                 </span>
               </Link>
             )
