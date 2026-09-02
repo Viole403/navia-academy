@@ -7149,5 +7149,1572 @@
         ]
       }
     ]
+  },
+  {
+    "id": "zh-lv-hsk1-d1-l1",
+    "unitId": "zh-lv-hsk1-d1",
+    "title": "Food",
+    "subtitle": "Food",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about food",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Food",
+        "vocabIds": [
+          "tocfl-l5-baojia",
+          "tocfl-l5-beisong",
+          "tocfl-l5-bi",
+          "tocfl-l5-bianzhi",
+          "tocfl-l5-bie",
+          "tocfl-l5-canju",
+          "tocfl-l5-chaju",
+          "tocfl-l5-chaqu",
+          "tocfl-l5-chizi",
+          "tocfl-l5-chuang",
+          "tocfl-l5-chuanshou",
+          "tocfl-l5-chui"
+        ]
+      }
+    ],
+    "subtitle_en": "Food",
+    "subtitle_id": "Food"
+  },
+  {
+    "id": "zh-lv-hsk1-d2-l1",
+    "unitId": "zh-lv-hsk1-d2",
+    "title": "Nation.",
+    "subtitle": "Nation.",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about nation.",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "explanation",
+        "title": "Nation.",
+        "body": [
+          "This lesson introduces Nation.."
+        ]
+      }
+    ],
+    "subtitle_en": "Nation.",
+    "subtitle_id": "Nation."
+  },
+  {
+    "id": "zh-lv-hsk1-d3-l1",
+    "unitId": "zh-lv-hsk1-d3",
+    "title": "Profs.",
+    "subtitle": "Profs.",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about profs.",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "explanation",
+        "title": "Profs.",
+        "body": [
+          "This lesson introduces Profs.."
+        ]
+      }
+    ],
+    "subtitle_en": "Profs.",
+    "subtitle_id": "Profs."
+  },
+  {
+    "id": "zh-lv-hsk1-d4-l1",
+    "unitId": "zh-lv-hsk1-d4",
+    "title": "Prefer.",
+    "subtitle": "Prefer.",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about prefer.",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "explanation",
+        "title": "Prefer.",
+        "body": [
+          "This lesson introduces Prefer.."
+        ]
+      }
+    ],
+    "subtitle_en": "Prefer.",
+    "subtitle_id": "Prefer."
+  },
+  {
+    "id": "zh-lv-hsk1-d5-l1",
+    "unitId": "zh-lv-hsk1-d5",
+    "title": "Family",
+    "subtitle": "Family",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about family",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Family",
+        "vocabIds": [
+          "tocfl-l5-buxiao",
+          "tocfl-l5-caozong",
+          "tocfl-l5-changci",
+          "tocfl-l5-chi",
+          "tocfl-l5-chijiu",
+          "tocfl-l5-chuanqi",
+          "tocfl-l5-culu",
+          "tocfl-l5-cuohe",
+          "tocfl-l5-danqin",
+          "tocfl-l5-diaodu",
+          "tocfl-l5-dixiong",
+          "tocfl-l5-ernv"
+        ]
+      }
+    ],
+    "subtitle_en": "Family",
+    "subtitle_id": "Family"
+  },
+  {
+    "id": "zh-lv-hsk1-d6-l1",
+    "unitId": "zh-lv-hsk1-d6",
+    "title": "Town",
+    "subtitle": "Town",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about town",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "explanation",
+        "title": "Town",
+        "body": [
+          "This lesson introduces Town."
+        ]
+      }
+    ],
+    "subtitle_en": "Town",
+    "subtitle_id": "Town"
+  },
+  {
+    "id": "zh-lv-hsk1-d7-l1",
+    "unitId": "zh-lv-hsk1-d7",
+    "title": "Cafe",
+    "subtitle": "Cafe",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about cafe",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Cafe",
+        "vocabIds": [
+          "tocfl-l5-baojia",
+          "tocfl-l5-beisong",
+          "tocfl-l5-bi",
+          "tocfl-l5-bianzhi",
+          "tocfl-l5-bie",
+          "tocfl-l5-canju",
+          "tocfl-l5-chaju",
+          "tocfl-l5-chaqu",
+          "tocfl-l5-chizi",
+          "tocfl-l5-chuang",
+          "tocfl-l5-chuanshou",
+          "tocfl-l5-chui"
+        ]
+      }
+    ],
+    "subtitle_en": "Cafe",
+    "subtitle_id": "Cafe"
+  },
+  {
+    "id": "zh-lv-hsk1-d8-l1",
+    "unitId": "zh-lv-hsk1-d8",
+    "title": "Travel",
+    "subtitle": "Travel",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about travel",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Travel",
+        "vocabIds": [
+          "tocfl-l5-aiguo",
+          "tocfl-l5-andun",
+          "tocfl-l5-anzhi",
+          "tocfl-l5-baohe",
+          "tocfl-l5-binguan",
+          "tocfl-l5-chuansuo",
+          "tocfl-l5-danshui",
+          "tocfl-l5-dianli",
+          "tocfl-l5-duizhao",
+          "tocfl-l5-fadian",
+          "tocfl-l5-fan",
+          "tocfl-l5-gengdong"
+        ]
+      }
+    ],
+    "subtitle_en": "Travel",
+    "subtitle_id": "Travel"
+  },
+  {
+    "id": "zh-lv-hsk1-d9-l1",
+    "unitId": "zh-lv-hsk1-d9",
+    "title": "Semester",
+    "subtitle": "Semester",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about semester",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "explanation",
+        "title": "Semester",
+        "body": [
+          "This lesson introduces Semester."
+        ]
+      }
+    ],
+    "subtitle_en": "Semester",
+    "subtitle_id": "Semester"
+  },
+  {
+    "id": "zh-lv-hsk1-d10-l1",
+    "unitId": "zh-lv-hsk1-d10",
+    "title": "Plans",
+    "subtitle": "Plans",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about plans",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "explanation",
+        "title": "Plans",
+        "body": [
+          "This lesson introduces Plans."
+        ]
+      }
+    ],
+    "subtitle_en": "Plans",
+    "subtitle_id": "Plans"
+  },
+  {
+    "id": "zh-lv-hsk1-d11-l1",
+    "unitId": "zh-lv-hsk1-d11",
+    "title": "New Home",
+    "subtitle": "New Home",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about new home",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "New Home",
+        "vocabIds": [
+          "tocfl-l5-andun",
+          "tocfl-l5-anzhi",
+          "tocfl-l5-baomu",
+          "tocfl-l5-bian'e",
+          "tocfl-l5-bingchuang",
+          "tocfl-l5-binguan",
+          "tocfl-l5-caiguang",
+          "tocfl-l5-cangying",
+          "tocfl-l5-chizi",
+          "tocfl-l5-chongwu",
+          "tocfl-l5-diangong",
+          "tocfl-l5-hukou"
+        ]
+      }
+    ],
+    "subtitle_en": "New Home",
+    "subtitle_id": "New Home"
+  },
+  {
+    "id": "zh-lv-hsk1-d12-l1",
+    "unitId": "zh-lv-hsk1-d12",
+    "title": "Trip to Beijing",
+    "subtitle": "Trip to Beijing",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about trip to beijing",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Trip to Beijing",
+        "vocabIds": [
+          "tocfl-l5-aiguo",
+          "tocfl-l5-andun",
+          "tocfl-l5-anzhi",
+          "tocfl-l5-baohe",
+          "tocfl-l5-binguan",
+          "tocfl-l5-chuansuo",
+          "tocfl-l5-danshui",
+          "tocfl-l5-dianli",
+          "tocfl-l5-duizhao",
+          "tocfl-l5-fadian",
+          "tocfl-l5-fan",
+          "tocfl-l5-gengdong"
+        ]
+      }
+    ],
+    "subtitle_en": "Trip to Beijing",
+    "subtitle_id": "Trip to Beijing"
+  },
+  {
+    "id": "zh-lv-hsk1-d13-l1",
+    "unitId": "zh-lv-hsk1-d13",
+    "title": "Shopping",
+    "subtitle": "Shopping",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about shopping",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Shopping",
+        "vocabIds": [
+          "tocfl-l5-baihui",
+          "tocfl-l5-baojia",
+          "tocfl-l5-changxiao",
+          "tocfl-l5-chengyi",
+          "tocfl-l5-chubei",
+          "tocfl-l5-chumai",
+          "tocfl-l5-chushou",
+          "tocfl-l5-chuxie",
+          "tocfl-l5-danjia",
+          "tocfl-l5-daobie",
+          "tocfl-l5-dayang",
+          "tocfl-l5-dongjie"
+        ]
+      }
+    ],
+    "subtitle_en": "Shopping",
+    "subtitle_id": "Shopping"
+  },
+  {
+    "id": "zh-lv-hsk1-d14-l1",
+    "unitId": "zh-lv-hsk1-d14",
+    "title": "Birthday Present",
+    "subtitle": "Birthday Present",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about birthday present",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Birthday Present",
+        "vocabIds": [
+          "tocfl-l5-bisheng",
+          "tocfl-l5-bushi",
+          "tocfl-l5-choukong",
+          "tocfl-l5-chuang",
+          "tocfl-l5-dafa",
+          "tocfl-l5-dangqian",
+          "tocfl-l5-duomeiti",
+          "tocfl-l5-fangkuan",
+          "tocfl-l5-feiteng",
+          "tocfl-l5-fengchao",
+          "tocfl-l5-ganxing",
+          "tocfl-l5-getian"
+        ]
+      }
+    ],
+    "subtitle_en": "Birthday Present",
+    "subtitle_id": "Birthday Present"
+  },
+  {
+    "id": "zh-lv-hsk1-d15-l1",
+    "unitId": "zh-lv-hsk1-d15",
+    "title": "Convenience Store",
+    "subtitle": "Convenience Store",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about convenience store",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Convenience Store",
+        "vocabIds": [
+          "tocfl-l5-baihui",
+          "tocfl-l5-baojia",
+          "tocfl-l5-changxiao",
+          "tocfl-l5-chengyi",
+          "tocfl-l5-chubei",
+          "tocfl-l5-chumai",
+          "tocfl-l5-chushou",
+          "tocfl-l5-chuxie",
+          "tocfl-l5-danjia",
+          "tocfl-l5-daobie",
+          "tocfl-l5-dayang",
+          "tocfl-l5-dongjie"
+        ]
+      }
+    ],
+    "subtitle_en": "Convenience Store",
+    "subtitle_id": "Convenience Store"
+  },
+  {
+    "id": "zh-lv-hsk1-d16-l1",
+    "unitId": "zh-lv-hsk1-d16",
+    "title": "Weekend",
+    "subtitle": "Weekend",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about weekend",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Weekend",
+        "vocabIds": [
+          "tocfl-l5-bisheng",
+          "tocfl-l5-bushi",
+          "tocfl-l5-choukong",
+          "tocfl-l5-chuang",
+          "tocfl-l5-dafa",
+          "tocfl-l5-dangqian",
+          "tocfl-l5-duomeiti",
+          "tocfl-l5-fangkuan",
+          "tocfl-l5-feiteng",
+          "tocfl-l5-fengchao",
+          "tocfl-l5-ganxing",
+          "tocfl-l5-getian"
+        ]
+      }
+    ],
+    "subtitle_en": "Weekend",
+    "subtitle_id": "Weekend"
+  },
+  {
+    "id": "zh-lv-hsk1-d17-l1",
+    "unitId": "zh-lv-hsk1-d17",
+    "title": "Greeting 1",
+    "subtitle": "Greeting 1",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about greeting 1",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Greeting 1",
+        "vocabIds": [
+          "tocfl-l5-cixing",
+          "tocfl-l5-daobie",
+          "tocfl-l5-duokui",
+          "tocfl-l5-gaobie",
+          "tocfl-l5-kui",
+          "tocfl-l5-quyue",
+          "tocfl-l5-wanxi",
+          "tocfl-l5-xinteng",
+          "tocfl-l5-yihan",
+          "tocfl-l5-ying3",
+          "tocfl-l5-zhiyi2",
+          "tocfl-l3-deyi"
+        ]
+      }
+    ],
+    "subtitle_en": "Greeting 1",
+    "subtitle_id": "Greeting 1"
+  },
+  {
+    "id": "zh-lv-hsk1-d18-l1",
+    "unitId": "zh-lv-hsk1-d18",
+    "title": "People",
+    "subtitle": "People",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about people",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "People",
+        "vocabIds": [
+          "tocfl-l5-buxiao",
+          "tocfl-l5-caozong",
+          "tocfl-l5-changci",
+          "tocfl-l5-chi",
+          "tocfl-l5-chijiu",
+          "tocfl-l5-chuanqi",
+          "tocfl-l5-culu",
+          "tocfl-l5-cuohe",
+          "tocfl-l5-danqin",
+          "tocfl-l5-diaodu",
+          "tocfl-l5-dixiong",
+          "tocfl-l5-ernv"
+        ]
+      }
+    ],
+    "subtitle_en": "People",
+    "subtitle_id": "People"
+  },
+  {
+    "id": "zh-lv-hsk1-d19-l1",
+    "unitId": "zh-lv-hsk1-d19",
+    "title": "Greeting 3",
+    "subtitle": "Greeting 3",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about greeting 3",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Greeting 3",
+        "vocabIds": [
+          "tocfl-l5-cixing",
+          "tocfl-l5-daobie",
+          "tocfl-l5-duokui",
+          "tocfl-l5-gaobie",
+          "tocfl-l5-kui",
+          "tocfl-l5-quyue",
+          "tocfl-l5-wanxi",
+          "tocfl-l5-xinteng",
+          "tocfl-l5-yihan",
+          "tocfl-l5-ying3",
+          "tocfl-l5-zhiyi2",
+          "tocfl-l3-deyi"
+        ]
+      }
+    ],
+    "subtitle_en": "Greeting 3",
+    "subtitle_id": "Greeting 3"
+  },
+  {
+    "id": "zh-lv-hsk1-d20-l1",
+    "unitId": "zh-lv-hsk1-d20",
+    "title": "Phrases 2",
+    "subtitle": "Phrases 2",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about phrases 2",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "explanation",
+        "title": "Phrases 2",
+        "body": [
+          "This lesson introduces Phrases 2."
+        ]
+      }
+    ],
+    "subtitle_en": "Phrases 2",
+    "subtitle_id": "Phrases 2"
+  },
+  {
+    "id": "zh-lv-hsk1-d21-l1",
+    "unitId": "zh-lv-hsk1-d21",
+    "title": "Location 2",
+    "subtitle": "Location 2",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about location 2",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "explanation",
+        "title": "Location 2",
+        "body": [
+          "This lesson introduces Location 2."
+        ]
+      }
+    ],
+    "subtitle_en": "Location 2",
+    "subtitle_id": "Location 2"
+  },
+  {
+    "id": "zh-lv-hsk1-d22-l1",
+    "unitId": "zh-lv-hsk1-d22",
+    "title": "Family 2",
+    "subtitle": "Family 2",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about family 2",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Family 2",
+        "vocabIds": [
+          "tocfl-l5-buxiao",
+          "tocfl-l5-caozong",
+          "tocfl-l5-changci",
+          "tocfl-l5-chi",
+          "tocfl-l5-chijiu",
+          "tocfl-l5-chuanqi",
+          "tocfl-l5-culu",
+          "tocfl-l5-cuohe",
+          "tocfl-l5-danqin",
+          "tocfl-l5-diaodu",
+          "tocfl-l5-dixiong",
+          "tocfl-l5-ernv"
+        ]
+      }
+    ],
+    "subtitle_en": "Family 2",
+    "subtitle_id": "Family 2"
+  },
+  {
+    "id": "zh-lv-hsk1-d23-l1",
+    "unitId": "zh-lv-hsk1-d23",
+    "title": "Time 2",
+    "subtitle": "Time 2",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about time 2",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Time 2",
+        "vocabIds": [
+          "tocfl-l5-bisheng",
+          "tocfl-l5-bushi",
+          "tocfl-l5-choukong",
+          "tocfl-l5-chuang",
+          "tocfl-l5-dafa",
+          "tocfl-l5-dangqian",
+          "tocfl-l5-duomeiti",
+          "tocfl-l5-fangkuan",
+          "tocfl-l5-feiteng",
+          "tocfl-l5-fengchao",
+          "tocfl-l5-ganxing",
+          "tocfl-l5-getian"
+        ]
+      }
+    ],
+    "subtitle_en": "Time 2",
+    "subtitle_id": "Time 2"
+  },
+  {
+    "id": "zh-lv-hsk1-d24-l1",
+    "unitId": "zh-lv-hsk1-d24",
+    "title": "Hobbies 1",
+    "subtitle": "Hobbies 1",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about hobbies 1",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "explanation",
+        "title": "Hobbies 1",
+        "body": [
+          "This lesson introduces Hobbies 1."
+        ]
+      }
+    ],
+    "subtitle_en": "Hobbies 1",
+    "subtitle_id": "Hobbies 1"
+  },
+  {
+    "id": "zh-lv-hsk1-d25-l1",
+    "unitId": "zh-lv-hsk1-d25",
+    "title": "Payment",
+    "subtitle": "Payment",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about payment",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Payment",
+        "vocabIds": [
+          "tocfl-l5-baihui",
+          "tocfl-l5-baojia",
+          "tocfl-l5-changxiao",
+          "tocfl-l5-chengyi",
+          "tocfl-l5-chubei",
+          "tocfl-l5-chumai",
+          "tocfl-l5-chushou",
+          "tocfl-l5-chuxie",
+          "tocfl-l5-danjia",
+          "tocfl-l5-daobie",
+          "tocfl-l5-dayang",
+          "tocfl-l5-dongjie"
+        ]
+      }
+    ],
+    "subtitle_en": "Payment",
+    "subtitle_id": "Payment"
+  },
+  {
+    "id": "zh-lv-hsk1-d26-l1",
+    "unitId": "zh-lv-hsk1-d26",
+    "title": "Location 4",
+    "subtitle": "Location 4",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about location 4",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "explanation",
+        "title": "Location 4",
+        "body": [
+          "This lesson introduces Location 4."
+        ]
+      }
+    ],
+    "subtitle_en": "Location 4",
+    "subtitle_id": "Location 4"
+  },
+  {
+    "id": "zh-lv-hsk1-d27-l1",
+    "unitId": "zh-lv-hsk1-d27",
+    "title": "Supermarket",
+    "subtitle": "Supermarket",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about supermarket",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "explanation",
+        "title": "Supermarket",
+        "body": [
+          "This lesson introduces Supermarket."
+        ]
+      }
+    ],
+    "subtitle_en": "Supermarket",
+    "subtitle_id": "Supermarket"
+  },
+  {
+    "id": "zh-lv-hsk1-d28-l1",
+    "unitId": "zh-lv-hsk1-d28",
+    "title": "Health 1",
+    "subtitle": "Health 1",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about health 1",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Health 1",
+        "vocabIds": [
+          "tocfl-l5-ban'an",
+          "tocfl-l5-bashou",
+          "tocfl-l5-biaoming",
+          "tocfl-l5-bing2",
+          "tocfl-l5-bingchuang",
+          "tocfl-l5-bingfa",
+          "tocfl-l5-bukan",
+          "tocfl-l5-caoyao",
+          "tocfl-l5-chaoxi",
+          "tocfl-l5-cheng",
+          "tocfl-l5-chengxinchengyi",
+          "tocfl-l5-chiku"
+        ]
+      }
+    ],
+    "subtitle_en": "Health 1",
+    "subtitle_id": "Health 1"
+  },
+  {
+    "id": "zh-lv-hsk1-d29-l1",
+    "unitId": "zh-lv-hsk1-d29",
+    "title": "Shopping 1",
+    "subtitle": "Shopping 1",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about shopping 1",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Shopping 1",
+        "vocabIds": [
+          "tocfl-l5-baihui",
+          "tocfl-l5-baojia",
+          "tocfl-l5-changxiao",
+          "tocfl-l5-chengyi",
+          "tocfl-l5-chubei",
+          "tocfl-l5-chumai",
+          "tocfl-l5-chushou",
+          "tocfl-l5-chuxie",
+          "tocfl-l5-danjia",
+          "tocfl-l5-daobie",
+          "tocfl-l5-dayang",
+          "tocfl-l5-dongjie"
+        ]
+      }
+    ],
+    "subtitle_en": "Shopping 1",
+    "subtitle_id": "Shopping 1"
+  },
+  {
+    "id": "zh-lv-hsk1-d30-l1",
+    "unitId": "zh-lv-hsk1-d30",
+    "title": "Time 3",
+    "subtitle": "Time 3",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about time 3",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Time 3",
+        "vocabIds": [
+          "tocfl-l5-bisheng",
+          "tocfl-l5-bushi",
+          "tocfl-l5-choukong",
+          "tocfl-l5-chuang",
+          "tocfl-l5-dafa",
+          "tocfl-l5-dangqian",
+          "tocfl-l5-duomeiti",
+          "tocfl-l5-fangkuan",
+          "tocfl-l5-feiteng",
+          "tocfl-l5-fengchao",
+          "tocfl-l5-ganxing",
+          "tocfl-l5-getian"
+        ]
+      }
+    ],
+    "subtitle_en": "Time 3",
+    "subtitle_id": "Time 3"
+  },
+  {
+    "id": "zh-lv-hsk1-d31-l1",
+    "unitId": "zh-lv-hsk1-d31",
+    "title": "Sports 1",
+    "subtitle": "Sports 1",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about sports 1",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "explanation",
+        "title": "Sports 1",
+        "body": [
+          "This lesson introduces Sports 1."
+        ]
+      }
+    ],
+    "subtitle_en": "Sports 1",
+    "subtitle_id": "Sports 1"
+  },
+  {
+    "id": "zh-lv-hsk1-d32-l1",
+    "unitId": "zh-lv-hsk1-d32",
+    "title": "Invitiation 1",
+    "subtitle": "Invitiation 1",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about invitiation 1",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "explanation",
+        "title": "Invitiation 1",
+        "body": [
+          "This lesson introduces Invitiation 1."
+        ]
+      }
+    ],
+    "subtitle_en": "Invitiation 1",
+    "subtitle_id": "Invitiation 1"
+  },
+  {
+    "id": "zh-lv-hsk1-d33-l1",
+    "unitId": "zh-lv-hsk1-d33",
+    "title": "Dining 3",
+    "subtitle": "Dining 3",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about dining 3",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "explanation",
+        "title": "Dining 3",
+        "body": [
+          "This lesson introduces Dining 3."
+        ]
+      }
+    ],
+    "subtitle_en": "Dining 3",
+    "subtitle_id": "Dining 3"
+  },
+  {
+    "id": "zh-lv-hsk1-d34-l1",
+    "unitId": "zh-lv-hsk1-d34",
+    "title": "Body Parts",
+    "subtitle": "Body Parts",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about body parts",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Body Parts",
+        "vocabIds": [
+          "tocfl-l5-ban'an",
+          "tocfl-l5-bashou",
+          "tocfl-l5-biaoming",
+          "tocfl-l5-bing2",
+          "tocfl-l5-bingchuang",
+          "tocfl-l5-bingfa",
+          "tocfl-l5-bukan",
+          "tocfl-l5-caoyao",
+          "tocfl-l5-chaoxi",
+          "tocfl-l5-cheng",
+          "tocfl-l5-chengxinchengyi",
+          "tocfl-l5-chiku"
+        ]
+      }
+    ],
+    "subtitle_en": "Body Parts",
+    "subtitle_id": "Body Parts"
+  },
+  {
+    "id": "zh-lv-hsk1-d35-l1",
+    "unitId": "zh-lv-hsk1-d35",
+    "title": "Travel 1",
+    "subtitle": "Travel 1",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about travel 1",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Travel 1",
+        "vocabIds": [
+          "tocfl-l5-aiguo",
+          "tocfl-l5-andun",
+          "tocfl-l5-anzhi",
+          "tocfl-l5-baohe",
+          "tocfl-l5-binguan",
+          "tocfl-l5-chuansuo",
+          "tocfl-l5-danshui",
+          "tocfl-l5-dianli",
+          "tocfl-l5-duizhao",
+          "tocfl-l5-fadian",
+          "tocfl-l5-fan",
+          "tocfl-l5-gengdong"
+        ]
+      }
+    ],
+    "subtitle_en": "Travel 1",
+    "subtitle_id": "Travel 1"
+  },
+  {
+    "id": "zh-lv-hsk1-d36-l1",
+    "unitId": "zh-lv-hsk1-d36",
+    "title": "People 2",
+    "subtitle": "People 2",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about people 2",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "People 2",
+        "vocabIds": [
+          "tocfl-l5-buxiao",
+          "tocfl-l5-caozong",
+          "tocfl-l5-changci",
+          "tocfl-l5-chi",
+          "tocfl-l5-chijiu",
+          "tocfl-l5-chuanqi",
+          "tocfl-l5-culu",
+          "tocfl-l5-cuohe",
+          "tocfl-l5-danqin",
+          "tocfl-l5-diaodu",
+          "tocfl-l5-dixiong",
+          "tocfl-l5-ernv"
+        ]
+      }
+    ],
+    "subtitle_en": "People 2",
+    "subtitle_id": "People 2"
+  },
+  {
+    "id": "zh-lv-hsk1-d37-l1",
+    "unitId": "zh-lv-hsk1-d37",
+    "title": "Sports 2",
+    "subtitle": "Sports 2",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about sports 2",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "explanation",
+        "title": "Sports 2",
+        "body": [
+          "This lesson introduces Sports 2."
+        ]
+      }
+    ],
+    "subtitle_en": "Sports 2",
+    "subtitle_id": "Sports 2"
+  },
+  {
+    "id": "zh-lv-hsk1-d38-l1",
+    "unitId": "zh-lv-hsk1-d38",
+    "title": "Fam. 3",
+    "subtitle": "Fam. 3",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about fam. 3",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "explanation",
+        "title": "Fam. 3",
+        "body": [
+          "This lesson introduces Fam. 3."
+        ]
+      }
+    ],
+    "subtitle_en": "Fam. 3",
+    "subtitle_id": "Fam. 3"
+  },
+  {
+    "id": "zh-lv-hsk1-d39-l1",
+    "unitId": "zh-lv-hsk1-d39",
+    "title": "Time 4",
+    "subtitle": "Time 4",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about time 4",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Time 4",
+        "vocabIds": [
+          "tocfl-l5-bisheng",
+          "tocfl-l5-bushi",
+          "tocfl-l5-choukong",
+          "tocfl-l5-chuang",
+          "tocfl-l5-dafa",
+          "tocfl-l5-dangqian",
+          "tocfl-l5-duomeiti",
+          "tocfl-l5-fangkuan",
+          "tocfl-l5-feiteng",
+          "tocfl-l5-fengchao",
+          "tocfl-l5-ganxing",
+          "tocfl-l5-getian"
+        ]
+      }
+    ],
+    "subtitle_en": "Time 4",
+    "subtitle_id": "Time 4"
+  },
+  {
+    "id": "zh-lv-hsk1-d40-l1",
+    "unitId": "zh-lv-hsk1-d40",
+    "title": "Daily Routine 2",
+    "subtitle": "Daily Routine 2",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about daily routine 2",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "explanation",
+        "title": "Daily Routine 2",
+        "body": [
+          "This lesson introduces Daily Routine 2."
+        ]
+      }
+    ],
+    "subtitle_en": "Daily Routine 2",
+    "subtitle_id": "Daily Routine 2"
+  },
+  {
+    "id": "zh-lv-hsk1-d41-l1",
+    "unitId": "zh-lv-hsk1-d41",
+    "title": "People 3",
+    "subtitle": "People 3",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about people 3",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "People 3",
+        "vocabIds": [
+          "tocfl-l5-buxiao",
+          "tocfl-l5-caozong",
+          "tocfl-l5-changci",
+          "tocfl-l5-chi",
+          "tocfl-l5-chijiu",
+          "tocfl-l5-chuanqi",
+          "tocfl-l5-culu",
+          "tocfl-l5-cuohe",
+          "tocfl-l5-danqin",
+          "tocfl-l5-diaodu",
+          "tocfl-l5-dixiong",
+          "tocfl-l5-ernv"
+        ]
+      }
+    ],
+    "subtitle_en": "People 3",
+    "subtitle_id": "People 3"
+  },
+  {
+    "id": "zh-lv-hsk1-d42-l1",
+    "unitId": "zh-lv-hsk1-d42",
+    "title": "Travel 2",
+    "subtitle": "Travel 2",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about travel 2",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Travel 2",
+        "vocabIds": [
+          "tocfl-l5-aiguo",
+          "tocfl-l5-andun",
+          "tocfl-l5-anzhi",
+          "tocfl-l5-baohe",
+          "tocfl-l5-binguan",
+          "tocfl-l5-chuansuo",
+          "tocfl-l5-danshui",
+          "tocfl-l5-dianli",
+          "tocfl-l5-duizhao",
+          "tocfl-l5-fadian",
+          "tocfl-l5-fan",
+          "tocfl-l5-gengdong"
+        ]
+      }
+    ],
+    "subtitle_en": "Travel 2",
+    "subtitle_id": "Travel 2"
+  },
+  {
+    "id": "zh-lv-hsk1-d43-l1",
+    "unitId": "zh-lv-hsk1-d43",
+    "title": "Personality and Feelings",
+    "subtitle": "Personality and Feelings",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about personality and feelings",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "explanation",
+        "title": "Personality and Feelings",
+        "body": [
+          "This lesson introduces Personality and Feelings."
+        ]
+      }
+    ],
+    "subtitle_en": "Personality and Feelings",
+    "subtitle_id": "Personality and Feelings"
+  },
+  {
+    "id": "zh-lv-hsk1-d44-l1",
+    "unitId": "zh-lv-hsk1-d44",
+    "title": "Future",
+    "subtitle": "Future",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about future",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "explanation",
+        "title": "Future",
+        "body": [
+          "This lesson introduces Future."
+        ]
+      }
+    ],
+    "subtitle_en": "Future",
+    "subtitle_id": "Future"
+  },
+  {
+    "id": "zh-lv-hsk1-d45-l1",
+    "unitId": "zh-lv-hsk1-d45",
+    "title": "Work",
+    "subtitle": "Work",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about work",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Work",
+        "vocabIds": [
+          "tocfl-l5-bao'an",
+          "tocfl-l5-canmou",
+          "tocfl-l5-cehua2",
+          "tocfl-l5-chengbao",
+          "tocfl-l5-chunv",
+          "tocfl-l5-daike",
+          "tocfl-l5-danji",
+          "tocfl-l5-daoshi",
+          "tocfl-l5-diangong",
+          "tocfl-l5-fenfa",
+          "tocfl-l5-gangwei",
+          "tocfl-l5-gaozhuang"
+        ]
+      }
+    ],
+    "subtitle_en": "Work",
+    "subtitle_id": "Work"
+  },
+  {
+    "id": "zh-lv-hsk1-d46-l1",
+    "unitId": "zh-lv-hsk1-d46",
+    "title": "Hobbies 3",
+    "subtitle": "Hobbies 3",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about hobbies 3",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "explanation",
+        "title": "Hobbies 3",
+        "body": [
+          "This lesson introduces Hobbies 3."
+        ]
+      }
+    ],
+    "subtitle_en": "Hobbies 3",
+    "subtitle_id": "Hobbies 3"
+  },
+  {
+    "id": "zh-lv-hsk1-d47-l1",
+    "unitId": "zh-lv-hsk1-d47",
+    "title": "Exam",
+    "subtitle": "Exam",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about exam",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "explanation",
+        "title": "Exam",
+        "body": [
+          "This lesson introduces Exam."
+        ]
+      }
+    ],
+    "subtitle_en": "Exam",
+    "subtitle_id": "Exam"
+  },
+  {
+    "id": "zh-lv-hsk1-d48-l1",
+    "unitId": "zh-lv-hsk1-d48",
+    "title": "Travel 4",
+    "subtitle": "Travel 4",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about travel 4",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Travel 4",
+        "vocabIds": [
+          "tocfl-l5-aiguo",
+          "tocfl-l5-andun",
+          "tocfl-l5-anzhi",
+          "tocfl-l5-baohe",
+          "tocfl-l5-binguan",
+          "tocfl-l5-chuansuo",
+          "tocfl-l5-danshui",
+          "tocfl-l5-dianli",
+          "tocfl-l5-duizhao",
+          "tocfl-l5-fadian",
+          "tocfl-l5-fan",
+          "tocfl-l5-gengdong"
+        ]
+      }
+    ],
+    "subtitle_en": "Travel 4",
+    "subtitle_id": "Travel 4"
+  },
+  {
+    "id": "zh-lv-hsk1-d49-l1",
+    "unitId": "zh-lv-hsk1-d49",
+    "title": "Festivals",
+    "subtitle": "Festivals",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about festivals",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "explanation",
+        "title": "Festivals",
+        "body": [
+          "This lesson introduces Festivals."
+        ]
+      }
+    ],
+    "subtitle_en": "Festivals",
+    "subtitle_id": "Festivals"
+  },
+  {
+    "id": "zh-lv-hsk1-d50-l1",
+    "unitId": "zh-lv-hsk1-d50",
+    "title": "Internet Slang",
+    "subtitle": "Internet Slang",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about internet slang",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "explanation",
+        "title": "Internet Slang",
+        "body": [
+          "This lesson introduces Internet Slang."
+        ]
+      }
+    ],
+    "subtitle_en": "Internet Slang",
+    "subtitle_id": "Internet Slang"
+  },
+  {
+    "id": "zh-lv-hsk1-d51-l1",
+    "unitId": "zh-lv-hsk1-d51",
+    "title": "Business 2",
+    "subtitle": "Business 2",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about business 2",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Business 2",
+        "vocabIds": [
+          "tocfl-l5-bao'an",
+          "tocfl-l5-canmou",
+          "tocfl-l5-cehua2",
+          "tocfl-l5-chengbao",
+          "tocfl-l5-chunv",
+          "tocfl-l5-daike",
+          "tocfl-l5-danji",
+          "tocfl-l5-daoshi",
+          "tocfl-l5-diangong",
+          "tocfl-l5-fenfa",
+          "tocfl-l5-gangwei",
+          "tocfl-l5-gaozhuang"
+        ]
+      }
+    ],
+    "subtitle_en": "Business 2",
+    "subtitle_id": "Business 2"
+  },
+  {
+    "id": "zh-lv-hsk1-d52-l1",
+    "unitId": "zh-lv-hsk1-d52",
+    "title": "Work 3",
+    "subtitle": "Work 3",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about work 3",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Work 3",
+        "vocabIds": [
+          "tocfl-l5-bao'an",
+          "tocfl-l5-canmou",
+          "tocfl-l5-cehua2",
+          "tocfl-l5-chengbao",
+          "tocfl-l5-chunv",
+          "tocfl-l5-daike",
+          "tocfl-l5-danji",
+          "tocfl-l5-daoshi",
+          "tocfl-l5-diangong",
+          "tocfl-l5-fenfa",
+          "tocfl-l5-gangwei",
+          "tocfl-l5-gaozhuang"
+        ]
+      }
+    ],
+    "subtitle_en": "Work 3",
+    "subtitle_id": "Work 3"
   }
 ]

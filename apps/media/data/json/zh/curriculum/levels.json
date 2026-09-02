@@ -17,11 +17,64 @@
       "Understand the basic Chinese sentence order"
     ],
     "unitIds": [
-      "u-pinyin",
-      "u-greetings",
-      "u-numbers",
       "u-family",
-      "u-routines"
+      "u-greetings",
+      "u-hsk-hsk1-read",
+      "u-numbers",
+      "u-pinyin",
+      "u-routines",
+      "zh-lv-hsk1-d1",
+      "zh-lv-hsk1-d10",
+      "zh-lv-hsk1-d11",
+      "zh-lv-hsk1-d12",
+      "zh-lv-hsk1-d13",
+      "zh-lv-hsk1-d14",
+      "zh-lv-hsk1-d15",
+      "zh-lv-hsk1-d16",
+      "zh-lv-hsk1-d17",
+      "zh-lv-hsk1-d18",
+      "zh-lv-hsk1-d19",
+      "zh-lv-hsk1-d2",
+      "zh-lv-hsk1-d20",
+      "zh-lv-hsk1-d21",
+      "zh-lv-hsk1-d22",
+      "zh-lv-hsk1-d23",
+      "zh-lv-hsk1-d24",
+      "zh-lv-hsk1-d25",
+      "zh-lv-hsk1-d26",
+      "zh-lv-hsk1-d27",
+      "zh-lv-hsk1-d28",
+      "zh-lv-hsk1-d29",
+      "zh-lv-hsk1-d3",
+      "zh-lv-hsk1-d30",
+      "zh-lv-hsk1-d31",
+      "zh-lv-hsk1-d32",
+      "zh-lv-hsk1-d33",
+      "zh-lv-hsk1-d34",
+      "zh-lv-hsk1-d35",
+      "zh-lv-hsk1-d36",
+      "zh-lv-hsk1-d37",
+      "zh-lv-hsk1-d38",
+      "zh-lv-hsk1-d39",
+      "zh-lv-hsk1-d4",
+      "zh-lv-hsk1-d40",
+      "zh-lv-hsk1-d41",
+      "zh-lv-hsk1-d42",
+      "zh-lv-hsk1-d43",
+      "zh-lv-hsk1-d44",
+      "zh-lv-hsk1-d45",
+      "zh-lv-hsk1-d46",
+      "zh-lv-hsk1-d47",
+      "zh-lv-hsk1-d48",
+      "zh-lv-hsk1-d49",
+      "zh-lv-hsk1-d5",
+      "zh-lv-hsk1-d50",
+      "zh-lv-hsk1-d51",
+      "zh-lv-hsk1-d52",
+      "zh-lv-hsk1-d6",
+      "zh-lv-hsk1-d7",
+      "zh-lv-hsk1-d8",
+      "zh-lv-hsk1-d9"
     ],
     "estimatedHours": 60
   },
@@ -40,7 +93,9 @@
       "Talk about plans, weather, and climate",
       "Reach 300 words and 150 characters"
     ],
-    "unitIds": [],
+    "unitIds": [
+      "u-hsk-hsk2-read"
+    ],
     "estimatedHours": 80
   },
   {
@@ -58,7 +113,9 @@
       "Write short connected texts",
       "Reach 600 words and 300 characters"
     ],
-    "unitIds": [],
+    "unitIds": [
+      "u-hsk-hsk3-read"
+    ],
     "estimatedHours": 110
   },
   {
@@ -76,7 +133,9 @@
       "Write emails and simple argumentative texts",
       "Reach 1,200 words"
     ],
-    "unitIds": [],
+    "unitIds": [
+      "u-hsk-hsk4-read"
+    ],
     "estimatedHours": 150
   },
   {
@@ -94,7 +153,9 @@
       "Write texts of 400+ characters",
       "Reach 2,500 words"
     ],
-    "unitIds": [],
+    "unitIds": [
+      "u-hsk-hsk5-read"
+    ],
     "estimatedHours": 220
   },
   {
@@ -112,7 +173,9 @@
       "Write complex formal texts",
       "Reach 5,000 words"
     ],
-    "unitIds": [],
+    "unitIds": [
+      "u-hsk-hsk6-read"
+    ],
     "estimatedHours": 300
   },
   {
@@ -149,7 +212,8 @@
       "Order food and ask simple prices"
     ],
     "unitIds": [
-      "u-tocfl-n1-intro"
+      "u-tocfl-n1-intro",
+      "u-tocfl-tocfl-n1-read"
     ],
     "estimatedHours": 40
   },
@@ -170,7 +234,8 @@
       "Describe daily routines and simple plans"
     ],
     "unitIds": [
-      "u-tocfl-n2-life"
+      "u-tocfl-n2-life",
+      "u-tocfl-tocfl-n2-read"
     ],
     "estimatedHours": 45
   },
@@ -181,7 +246,10 @@
     "hsk": 7,
     "title": "TOCFL Level 5",
     "subtitle": "Taiwan Mandarin",
-    "description": "Practice exam-level content for TOCFL Level 5: readings, dialogues, and summaries."
+    "description": "Practice exam-level content for TOCFL Level 5: readings, dialogues, and summaries.",
+    "unitIds": [
+      "u-tocfl-tocfl-l5-read"
+    ]
   },
   {
     "id": "lv-tocfl-level3",
@@ -190,7 +258,10 @@
     "hsk": 5,
     "title": "TOCFL Level 3",
     "subtitle": "Taiwan Mandarin",
-    "description": "Practice exam-level content for TOCFL Level 3: readings, dialogues, and summaries."
+    "description": "Practice exam-level content for TOCFL Level 3: readings, dialogues, and summaries.",
+    "unitIds": [
+      "u-tocfl-tocfl-l3-read"
+    ]
   },
   {
     "id": "lv-tocfl-level2",
@@ -199,7 +270,10 @@
     "hsk": 4,
     "title": "TOCFL Level 2",
     "subtitle": "Taiwan Mandarin",
-    "description": "Practice exam-level content for TOCFL Level 2: readings, dialogues, and summaries."
+    "description": "Practice exam-level content for TOCFL Level 2: readings, dialogues, and summaries.",
+    "unitIds": [
+      "u-tocfl-tocfl-l2-read"
+    ]
   },
   {
     "id": "lv-tocfl-level1",
@@ -208,7 +282,10 @@
     "hsk": 3,
     "title": "TOCFL Level 1",
     "subtitle": "Taiwan Mandarin",
-    "description": "Practice exam-level content for TOCFL Level 1: readings, dialogues, and summaries."
+    "description": "Practice exam-level content for TOCFL Level 1: readings, dialogues, and summaries.",
+    "unitIds": [
+      "u-tocfl-tocfl-l1-read"
+    ]
   },
   {
     "id": "lv-tocfl-level4",
@@ -217,7 +294,10 @@
     "hsk": 6,
     "title": "TOCFL Level 4",
     "subtitle": "Taiwan Mandarin",
-    "description": "Practice exam-level content for TOCFL Level 4: readings, dialogues, and summaries."
+    "description": "Practice exam-level content for TOCFL Level 4: readings, dialogues, and summaries.",
+    "unitIds": [
+      "u-tocfl-tocfl-l4-read"
+    ]
   },
   {
     "id": "lv-hsk7",
@@ -226,6 +306,9 @@
     "hsk": "7",
     "title": "HSK 7",
     "subtitle": "Young Learner",
-    "description": "Practice exam-level content for HSK 7: readings, dialogues, and summaries."
+    "description": "Practice exam-level content for HSK 7: readings, dialogues, and summaries.",
+    "unitIds": [
+      "u-hsk-hsk7-read"
+    ]
   }
 ]

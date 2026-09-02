@@ -295,5 +295,2360 @@
     "subtitle_id": "Feelings & Character",
     "description_en": "Practice feelings & character.",
     "description_id": "Latihan feelings & character."
+  },
+  {
+    "id": "de-a1-d1",
+    "levelId": "de-a1",
+    "title": "Basics 1",
+    "subtitle": "Basics 1",
+    "order": 1,
+    "description": "Practice basics 1.",
+    "lessonIds": [
+      "de-a1-d1-l1"
+    ],
+    "subtitle_en": "Basics 1",
+    "subtitle_id": "Basics 1",
+    "description_en": "Practice basics 1.",
+    "description_id": "Latihan basics 1."
+  },
+  {
+    "id": "de-a1-d2",
+    "levelId": "de-a1",
+    "title": "Family",
+    "subtitle": "Family",
+    "order": 2,
+    "description": "Practice family.",
+    "lessonIds": [
+      "de-a1-d2-l1"
+    ],
+    "subtitle_en": "Family",
+    "subtitle_id": "Family",
+    "description_en": "Practice family.",
+    "description_id": "Latihan family."
+  },
+  {
+    "id": "de-a1-d3",
+    "levelId": "de-a1",
+    "title": "Basics 2",
+    "subtitle": "Basics 2",
+    "order": 3,
+    "description": "Practice basics 2.",
+    "lessonIds": [
+      "de-a1-d3-l1"
+    ],
+    "subtitle_en": "Basics 2",
+    "subtitle_id": "Basics 2",
+    "description_en": "Practice basics 2.",
+    "description_id": "Latihan basics 2."
+  },
+  {
+    "id": "de-a1-d4",
+    "levelId": "de-a1",
+    "title": "Idioms and Proverbs",
+    "subtitle": "Idioms and Proverbs",
+    "order": 4,
+    "description": "Practice idioms and proverbs.",
+    "lessonIds": [
+      "de-a1-d4-l1"
+    ],
+    "subtitle_en": "Idioms and Proverbs",
+    "subtitle_id": "Idioms and Proverbs",
+    "description_en": "Practice idioms and proverbs.",
+    "description_id": "Latihan idioms and proverbs."
+  },
+  {
+    "id": "de-a1-d5",
+    "levelId": "de-a1",
+    "title": "Greetings",
+    "subtitle": "Greetings",
+    "order": 5,
+    "description": "Practice greetings.",
+    "lessonIds": [
+      "de-a1-d5-l1"
+    ],
+    "subtitle_en": "Greetings",
+    "subtitle_id": "Greetings",
+    "description_en": "Practice greetings.",
+    "description_id": "Latihan greetings."
+  },
+  {
+    "id": "de-a1-d6",
+    "levelId": "de-a1",
+    "title": "Restaurant",
+    "subtitle": "Restaurant",
+    "order": 6,
+    "description": "Practice restaurant.",
+    "lessonIds": [
+      "de-a1-d6-l1"
+    ],
+    "subtitle_en": "Restaurant",
+    "subtitle_id": "Restaurant",
+    "description_en": "Practice restaurant.",
+    "description_id": "Latihan restaurant."
+  },
+  {
+    "id": "de-a1-d7",
+    "levelId": "de-a1",
+    "title": "Places",
+    "subtitle": "Places",
+    "order": 7,
+    "description": "Practice places.",
+    "lessonIds": [
+      "de-a1-d7-l1"
+    ],
+    "subtitle_en": "Places",
+    "subtitle_id": "Places",
+    "description_en": "Practice places.",
+    "description_id": "Latihan places."
+  },
+  {
+    "id": "de-a1-d8",
+    "levelId": "de-a1",
+    "title": "Jobs",
+    "subtitle": "Jobs",
+    "order": 8,
+    "description": "Practice jobs.",
+    "lessonIds": [
+      "de-a1-d8-l1"
+    ],
+    "subtitle_en": "Jobs",
+    "subtitle_id": "Jobs",
+    "description_en": "Practice jobs.",
+    "description_id": "Latihan jobs."
+  },
+  {
+    "id": "de-a1-d9",
+    "levelId": "de-a1",
+    "title": "Hobbies",
+    "subtitle": "Hobbies",
+    "order": 9,
+    "description": "Practice hobbies.",
+    "lessonIds": [
+      "de-a1-d9-l1"
+    ],
+    "subtitle_en": "Hobbies",
+    "subtitle_id": "Hobbies",
+    "description_en": "Practice hobbies.",
+    "description_id": "Latihan hobbies."
+  },
+  {
+    "id": "de-a1-d10",
+    "levelId": "de-a1",
+    "title": "Directions",
+    "subtitle": "Directions",
+    "order": 10,
+    "description": "Practice directions.",
+    "lessonIds": [
+      "de-a1-d10-l1"
+    ],
+    "subtitle_en": "Directions",
+    "subtitle_id": "Directions",
+    "description_en": "Practice directions.",
+    "description_id": "Latihan directions."
+  },
+  {
+    "id": "de-a1-d11",
+    "levelId": "de-a1",
+    "title": "Questions",
+    "subtitle": "Questions",
+    "order": 11,
+    "description": "Practice questions.",
+    "lessonIds": [
+      "de-a1-d11-l1"
+    ],
+    "subtitle_en": "Questions",
+    "subtitle_id": "Questions",
+    "description_en": "Practice questions.",
+    "description_id": "Latihan questions."
+  },
+  {
+    "id": "de-a1-d12",
+    "levelId": "de-a1",
+    "title": "Market",
+    "subtitle": "Market",
+    "order": 12,
+    "description": "Practice market.",
+    "lessonIds": [
+      "de-a1-d12-l1"
+    ],
+    "subtitle_en": "Market",
+    "subtitle_id": "Market",
+    "description_en": "Practice market.",
+    "description_id": "Latihan market."
+  },
+  {
+    "id": "de-a1-d13",
+    "levelId": "de-a1",
+    "title": "Weather",
+    "subtitle": "Weather",
+    "order": 13,
+    "description": "Practice weather.",
+    "lessonIds": [
+      "de-a1-d13-l1"
+    ],
+    "subtitle_en": "Weather",
+    "subtitle_id": "Weather",
+    "description_en": "Practice weather.",
+    "description_id": "Latihan weather."
+  },
+  {
+    "id": "de-a1-d14",
+    "levelId": "de-a1",
+    "title": "Family 2",
+    "subtitle": "Family 2",
+    "order": 14,
+    "description": "Practice family 2.",
+    "lessonIds": [
+      "de-a1-d14-l1"
+    ],
+    "subtitle_en": "Family 2",
+    "subtitle_id": "Family 2",
+    "description_en": "Practice family 2.",
+    "description_id": "Latihan family 2."
+  },
+  {
+    "id": "de-a1-d15",
+    "levelId": "de-a1",
+    "title": "Languages",
+    "subtitle": "Languages",
+    "order": 15,
+    "description": "Practice languages.",
+    "lessonIds": [
+      "de-a1-d15-l1"
+    ],
+    "subtitle_en": "Languages",
+    "subtitle_id": "Languages",
+    "description_en": "Practice languages.",
+    "description_id": "Latihan languages."
+  },
+  {
+    "id": "de-a1-d16",
+    "levelId": "de-a1",
+    "title": "Leisure",
+    "subtitle": "Leisure",
+    "order": 16,
+    "description": "Practice leisure.",
+    "lessonIds": [
+      "de-a1-d16-l1"
+    ],
+    "subtitle_en": "Leisure",
+    "subtitle_id": "Leisure",
+    "description_en": "Practice leisure.",
+    "description_id": "Latihan leisure."
+  },
+  {
+    "id": "de-a1-d17",
+    "levelId": "de-a1",
+    "title": "Plans",
+    "subtitle": "Plans",
+    "order": 17,
+    "description": "Practice plans.",
+    "lessonIds": [
+      "de-a1-d17-l1"
+    ],
+    "subtitle_en": "Plans",
+    "subtitle_id": "Plans",
+    "description_en": "Practice plans.",
+    "description_id": "Latihan plans."
+  },
+  {
+    "id": "de-a1-d18",
+    "levelId": "de-a1",
+    "title": "Apartment",
+    "subtitle": "Apartment",
+    "order": 18,
+    "description": "Practice apartment.",
+    "lessonIds": [
+      "de-a1-d18-l1"
+    ],
+    "subtitle_en": "Apartment",
+    "subtitle_id": "Apartment",
+    "description_en": "Practice apartment.",
+    "description_id": "Latihan apartment."
+  },
+  {
+    "id": "de-a1-d19",
+    "levelId": "de-a1",
+    "title": "Shopping",
+    "subtitle": "Shopping",
+    "order": 19,
+    "description": "Practice shopping.",
+    "lessonIds": [
+      "de-a1-d19-l1"
+    ],
+    "subtitle_en": "Shopping",
+    "subtitle_id": "Shopping",
+    "description_en": "Practice shopping.",
+    "description_id": "Latihan shopping."
+  },
+  {
+    "id": "de-a1-d20",
+    "levelId": "de-a1",
+    "title": "Travel",
+    "subtitle": "Travel",
+    "order": 20,
+    "description": "Practice travel.",
+    "lessonIds": [
+      "de-a1-d20-l1"
+    ],
+    "subtitle_en": "Travel",
+    "subtitle_id": "Travel",
+    "description_en": "Practice travel.",
+    "description_id": "Latihan travel."
+  },
+  {
+    "id": "de-a1-d21",
+    "levelId": "de-a1",
+    "title": "Dining Out",
+    "subtitle": "Dining Out",
+    "order": 21,
+    "description": "Practice dining out.",
+    "lessonIds": [
+      "de-a1-d21-l1"
+    ],
+    "subtitle_en": "Dining Out",
+    "subtitle_id": "Dining Out",
+    "description_en": "Practice dining out.",
+    "description_id": "Latihan dining out."
+  },
+  {
+    "id": "de-a1-d22",
+    "levelId": "de-a1",
+    "title": "Transport",
+    "subtitle": "Transport",
+    "order": 22,
+    "description": "Practice transport.",
+    "lessonIds": [
+      "de-a1-d22-l1"
+    ],
+    "subtitle_en": "Transport",
+    "subtitle_id": "Transport",
+    "description_en": "Practice transport.",
+    "description_id": "Latihan transport."
+  },
+  {
+    "id": "de-a1-d23",
+    "levelId": "de-a1",
+    "title": "Birthday",
+    "subtitle": "Birthday",
+    "order": 23,
+    "description": "Practice birthday.",
+    "lessonIds": [
+      "de-a1-d23-l1"
+    ],
+    "subtitle_en": "Birthday",
+    "subtitle_id": "Birthday",
+    "description_en": "Practice birthday.",
+    "description_id": "Latihan birthday."
+  },
+  {
+    "id": "de-a1-d24",
+    "levelId": "de-a1",
+    "title": "Hobbies 2",
+    "subtitle": "Hobbies 2",
+    "order": 24,
+    "description": "Practice hobbies 2.",
+    "lessonIds": [
+      "de-a1-d24-l1"
+    ],
+    "subtitle_en": "Hobbies 2",
+    "subtitle_id": "Hobbies 2",
+    "description_en": "Practice hobbies 2.",
+    "description_id": "Latihan hobbies 2."
+  },
+  {
+    "id": "de-a1-d25",
+    "levelId": "de-a1",
+    "title": "Health",
+    "subtitle": "Health",
+    "order": 25,
+    "description": "Practice health.",
+    "lessonIds": [
+      "de-a1-d25-l1"
+    ],
+    "subtitle_en": "Health",
+    "subtitle_id": "Health",
+    "description_en": "Practice health.",
+    "description_id": "Latihan health."
+  },
+  {
+    "id": "de-a1-d26",
+    "levelId": "de-a1",
+    "title": "People",
+    "subtitle": "People",
+    "order": 26,
+    "description": "Practice people.",
+    "lessonIds": [
+      "de-a1-d26-l1"
+    ],
+    "subtitle_en": "People",
+    "subtitle_id": "People",
+    "description_en": "Practice people.",
+    "description_id": "Latihan people."
+  },
+  {
+    "id": "de-a1-d27",
+    "levelId": "de-a1",
+    "title": "Events",
+    "subtitle": "Events",
+    "order": 27,
+    "description": "Practice events.",
+    "lessonIds": [
+      "de-a1-d27-l1"
+    ],
+    "subtitle_en": "Events",
+    "subtitle_id": "Events",
+    "description_en": "Practice events.",
+    "description_id": "Latihan events."
+  },
+  {
+    "id": "de-a1-d28",
+    "levelId": "de-a1",
+    "title": "Habits",
+    "subtitle": "Habits",
+    "order": 28,
+    "description": "Practice habits.",
+    "lessonIds": [
+      "de-a1-d28-l1"
+    ],
+    "subtitle_en": "Habits",
+    "subtitle_id": "Habits",
+    "description_en": "Practice habits.",
+    "description_id": "Latihan habits."
+  },
+  {
+    "id": "de-a1-d29",
+    "levelId": "de-a1",
+    "title": "Housing",
+    "subtitle": "Housing",
+    "order": 29,
+    "description": "Practice housing.",
+    "lessonIds": [
+      "de-a1-d29-l1"
+    ],
+    "subtitle_en": "Housing",
+    "subtitle_id": "Housing",
+    "description_en": "Practice housing.",
+    "description_id": "Latihan housing."
+  },
+  {
+    "id": "de-a1-d30",
+    "levelId": "de-a1",
+    "title": "Hotel",
+    "subtitle": "Hotel",
+    "order": 30,
+    "description": "Practice hotel.",
+    "lessonIds": [
+      "de-a1-d30-l1"
+    ],
+    "subtitle_en": "Hotel",
+    "subtitle_id": "Hotel",
+    "description_en": "Practice hotel.",
+    "description_id": "Latihan hotel."
+  },
+  {
+    "id": "de-a1-d31",
+    "levelId": "de-a1",
+    "title": "Family 3",
+    "subtitle": "Family 3",
+    "order": 31,
+    "description": "Practice family 3.",
+    "lessonIds": [
+      "de-a1-d31-l1"
+    ],
+    "subtitle_en": "Family 3",
+    "subtitle_id": "Family 3",
+    "description_en": "Practice family 3.",
+    "description_id": "Latihan family 3."
+  },
+  {
+    "id": "de-a1-d32",
+    "levelId": "de-a1",
+    "title": "Food",
+    "subtitle": "Food",
+    "order": 32,
+    "description": "Practice food.",
+    "lessonIds": [
+      "de-a1-d32-l1"
+    ],
+    "subtitle_en": "Food",
+    "subtitle_id": "Food",
+    "description_en": "Practice food.",
+    "description_id": "Latihan food."
+  },
+  {
+    "id": "de-a1-d33",
+    "levelId": "de-a1",
+    "title": "Plans 2",
+    "subtitle": "Plans 2",
+    "order": 33,
+    "description": "Practice plans 2.",
+    "lessonIds": [
+      "de-a1-d33-l1"
+    ],
+    "subtitle_en": "Plans 2",
+    "subtitle_id": "Plans 2",
+    "description_en": "Practice plans 2.",
+    "description_id": "Latihan plans 2."
+  },
+  {
+    "id": "de-a1-d34",
+    "levelId": "de-a1",
+    "title": "Travel 2",
+    "subtitle": "Travel 2",
+    "order": 34,
+    "description": "Practice travel 2.",
+    "lessonIds": [
+      "de-a1-d34-l1"
+    ],
+    "subtitle_en": "Travel 2",
+    "subtitle_id": "Travel 2",
+    "description_en": "Practice travel 2.",
+    "description_id": "Latihan travel 2."
+  },
+  {
+    "id": "de-a1-d35",
+    "levelId": "de-a1",
+    "title": "New Job",
+    "subtitle": "New Job",
+    "order": 35,
+    "description": "Practice new job.",
+    "lessonIds": [
+      "de-a1-d35-l1"
+    ],
+    "subtitle_en": "New Job",
+    "subtitle_id": "New Job",
+    "description_en": "Practice new job.",
+    "description_id": "Latihan new job."
+  },
+  {
+    "id": "de-a1-d36",
+    "levelId": "de-a1",
+    "title": "Habits 2",
+    "subtitle": "Habits 2",
+    "order": 36,
+    "description": "Practice habits 2.",
+    "lessonIds": [
+      "de-a1-d36-l1"
+    ],
+    "subtitle_en": "Habits 2",
+    "subtitle_id": "Habits 2",
+    "description_en": "Practice habits 2.",
+    "description_id": "Latihan habits 2."
+  },
+  {
+    "id": "de-a1-d37",
+    "levelId": "de-a1",
+    "title": "Packing",
+    "subtitle": "Packing",
+    "order": 37,
+    "description": "Practice packing.",
+    "lessonIds": [
+      "de-a1-d37-l1"
+    ],
+    "subtitle_en": "Packing",
+    "subtitle_id": "Packing",
+    "description_en": "Practice packing.",
+    "description_id": "Latihan packing."
+  },
+  {
+    "id": "de-a1-d38",
+    "levelId": "de-a1",
+    "title": "Groceries",
+    "subtitle": "Groceries",
+    "order": 38,
+    "description": "Practice groceries.",
+    "lessonIds": [
+      "de-a1-d38-l1"
+    ],
+    "subtitle_en": "Groceries",
+    "subtitle_id": "Groceries",
+    "description_en": "Practice groceries.",
+    "description_id": "Latihan groceries."
+  },
+  {
+    "id": "de-a1-d39",
+    "levelId": "de-a1",
+    "title": "Birthday 2",
+    "subtitle": "Birthday 2",
+    "order": 39,
+    "description": "Practice birthday 2.",
+    "lessonIds": [
+      "de-a1-d39-l1"
+    ],
+    "subtitle_en": "Birthday 2",
+    "subtitle_id": "Birthday 2",
+    "description_en": "Practice birthday 2.",
+    "description_id": "Latihan birthday 2."
+  },
+  {
+    "id": "de-a1-d40",
+    "levelId": "de-a1",
+    "title": "Roommate",
+    "subtitle": "Roommate",
+    "order": 40,
+    "description": "Practice roommate.",
+    "lessonIds": [
+      "de-a1-d40-l1"
+    ],
+    "subtitle_en": "Roommate",
+    "subtitle_id": "Roommate",
+    "description_en": "Practice roommate.",
+    "description_id": "Latihan roommate."
+  },
+  {
+    "id": "de-a1-d41",
+    "levelId": "de-a1",
+    "title": "On Break",
+    "subtitle": "On Break",
+    "order": 41,
+    "description": "Practice on break.",
+    "lessonIds": [
+      "de-a1-d41-l1"
+    ],
+    "subtitle_en": "On Break",
+    "subtitle_id": "On Break",
+    "description_en": "Practice on break.",
+    "description_id": "Latihan on break."
+  },
+  {
+    "id": "de-a1-d42",
+    "levelId": "de-a1",
+    "title": "Barbecue",
+    "subtitle": "Barbecue",
+    "order": 42,
+    "description": "Practice barbecue.",
+    "lessonIds": [
+      "de-a1-d42-l1"
+    ],
+    "subtitle_en": "Barbecue",
+    "subtitle_id": "Barbecue",
+    "description_en": "Practice barbecue.",
+    "description_id": "Latihan barbecue."
+  },
+  {
+    "id": "de-a1-d43",
+    "levelId": "de-a1",
+    "title": "Community",
+    "subtitle": "Community",
+    "order": 43,
+    "description": "Practice community.",
+    "lessonIds": [
+      "de-a1-d43-l1"
+    ],
+    "subtitle_en": "Community",
+    "subtitle_id": "Community",
+    "description_en": "Practice community.",
+    "description_id": "Latihan community."
+  },
+  {
+    "id": "de-a1-d44",
+    "levelId": "de-a1",
+    "title": "Plans 3",
+    "subtitle": "Plans 3",
+    "order": 44,
+    "description": "Practice plans 3.",
+    "lessonIds": [
+      "de-a1-d44-l1"
+    ],
+    "subtitle_en": "Plans 3",
+    "subtitle_id": "Plans 3",
+    "description_en": "Practice plans 3.",
+    "description_id": "Latihan plans 3."
+  },
+  {
+    "id": "de-a1-d45",
+    "levelId": "de-a1",
+    "title": "Party",
+    "subtitle": "Party",
+    "order": 45,
+    "description": "Practice party.",
+    "lessonIds": [
+      "de-a1-d45-l1"
+    ],
+    "subtitle_en": "Party",
+    "subtitle_id": "Party",
+    "description_en": "Practice party.",
+    "description_id": "Latihan party."
+  },
+  {
+    "id": "de-a1-d46",
+    "levelId": "de-a1",
+    "title": "Free Time",
+    "subtitle": "Free Time",
+    "order": 46,
+    "description": "Practice free time.",
+    "lessonIds": [
+      "de-a1-d46-l1"
+    ],
+    "subtitle_en": "Free Time",
+    "subtitle_id": "Free Time",
+    "description_en": "Practice free time.",
+    "description_id": "Latihan free time."
+  },
+  {
+    "id": "de-a1-d47",
+    "levelId": "de-a1",
+    "title": "Errands",
+    "subtitle": "Errands",
+    "order": 47,
+    "description": "Practice errands.",
+    "lessonIds": [
+      "de-a1-d47-l1"
+    ],
+    "subtitle_en": "Errands",
+    "subtitle_id": "Errands",
+    "description_en": "Practice errands.",
+    "description_id": "Latihan errands."
+  },
+  {
+    "id": "de-a1-d48",
+    "levelId": "de-a1",
+    "title": "Opinions",
+    "subtitle": "Opinions",
+    "order": 48,
+    "description": "Practice opinions.",
+    "lessonIds": [
+      "de-a1-d48-l1"
+    ],
+    "subtitle_en": "Opinions",
+    "subtitle_id": "Opinions",
+    "description_en": "Practice opinions.",
+    "description_id": "Latihan opinions."
+  },
+  {
+    "id": "de-a1-d49",
+    "levelId": "de-a1",
+    "title": "Excuses",
+    "subtitle": "Excuses",
+    "order": 49,
+    "description": "Practice excuses.",
+    "lessonIds": [
+      "de-a1-d49-l1"
+    ],
+    "subtitle_en": "Excuses",
+    "subtitle_id": "Excuses",
+    "description_en": "Practice excuses.",
+    "description_id": "Latihan excuses."
+  },
+  {
+    "id": "de-a1-d50",
+    "levelId": "de-a1",
+    "title": "Moving",
+    "subtitle": "Moving",
+    "order": 50,
+    "description": "Practice moving.",
+    "lessonIds": [
+      "de-a1-d50-l1"
+    ],
+    "subtitle_en": "Moving",
+    "subtitle_id": "Moving",
+    "description_en": "Practice moving.",
+    "description_id": "Latihan moving."
+  },
+  {
+    "id": "de-a1-d51",
+    "levelId": "de-a1",
+    "title": "Food 2",
+    "subtitle": "Food 2",
+    "order": 51,
+    "description": "Practice food 2.",
+    "lessonIds": [
+      "de-a1-d51-l1"
+    ],
+    "subtitle_en": "Food 2",
+    "subtitle_id": "Food 2",
+    "description_en": "Practice food 2.",
+    "description_id": "Latihan food 2."
+  },
+  {
+    "id": "de-a1-d52",
+    "levelId": "de-a1",
+    "title": "Holidays",
+    "subtitle": "Holidays",
+    "order": 52,
+    "description": "Practice holidays.",
+    "lessonIds": [
+      "de-a1-d52-l1"
+    ],
+    "subtitle_en": "Holidays",
+    "subtitle_id": "Holidays",
+    "description_en": "Practice holidays.",
+    "description_id": "Latihan holidays."
+  },
+  {
+    "id": "de-a1-d53",
+    "levelId": "de-a1",
+    "title": "New Home",
+    "subtitle": "New Home",
+    "order": 53,
+    "description": "Practice new home.",
+    "lessonIds": [
+      "de-a1-d53-l1"
+    ],
+    "subtitle_en": "New Home",
+    "subtitle_id": "New Home",
+    "description_en": "Practice new home.",
+    "description_id": "Latihan new home."
+  },
+  {
+    "id": "de-a1-d54",
+    "levelId": "de-a1",
+    "title": "Long Day",
+    "subtitle": "Long Day",
+    "order": 54,
+    "description": "Practice long day.",
+    "lessonIds": [
+      "de-a1-d54-l1"
+    ],
+    "subtitle_en": "Long Day",
+    "subtitle_id": "Long Day",
+    "description_en": "Practice long day.",
+    "description_id": "Latihan long day."
+  },
+  {
+    "id": "de-a1-d55",
+    "levelId": "de-a1",
+    "title": "Weekend",
+    "subtitle": "Weekend",
+    "order": 55,
+    "description": "Practice weekend.",
+    "lessonIds": [
+      "de-a1-d55-l1"
+    ],
+    "subtitle_en": "Weekend",
+    "subtitle_id": "Weekend",
+    "description_en": "Practice weekend.",
+    "description_id": "Latihan weekend."
+  },
+  {
+    "id": "de-a1-d56",
+    "levelId": "de-a1",
+    "title": "Wedding",
+    "subtitle": "Wedding",
+    "order": 56,
+    "description": "Practice wedding.",
+    "lessonIds": [
+      "de-a1-d56-l1"
+    ],
+    "subtitle_en": "Wedding",
+    "subtitle_id": "Wedding",
+    "description_en": "Practice wedding.",
+    "description_id": "Latihan wedding."
+  },
+  {
+    "id": "de-a1-d57",
+    "levelId": "de-a1",
+    "title": "Vacation",
+    "subtitle": "Vacation",
+    "order": 57,
+    "description": "Practice vacation.",
+    "lessonIds": [
+      "de-a1-d57-l1"
+    ],
+    "subtitle_en": "Vacation",
+    "subtitle_id": "Vacation",
+    "description_en": "Practice vacation.",
+    "description_id": "Latihan vacation."
+  },
+  {
+    "id": "de-a1-d58",
+    "levelId": "de-a1",
+    "title": "Routines",
+    "subtitle": "Routines",
+    "order": 58,
+    "description": "Practice routines.",
+    "lessonIds": [
+      "de-a1-d58-l1"
+    ],
+    "subtitle_en": "Routines",
+    "subtitle_id": "Routines",
+    "description_en": "Practice routines.",
+    "description_id": "Latihan routines."
+  },
+  {
+    "id": "de-a1-d59",
+    "levelId": "de-a1",
+    "title": "Pets",
+    "subtitle": "Pets",
+    "order": 59,
+    "description": "Practice pets.",
+    "lessonIds": [
+      "de-a1-d59-l1"
+    ],
+    "subtitle_en": "Pets",
+    "subtitle_id": "Pets",
+    "description_en": "Practice pets.",
+    "description_id": "Latihan pets."
+  },
+  {
+    "id": "de-a1-d60",
+    "levelId": "de-a1",
+    "title": "Gossip",
+    "subtitle": "Gossip",
+    "order": 60,
+    "description": "Practice gossip.",
+    "lessonIds": [
+      "de-a1-d60-l1"
+    ],
+    "subtitle_en": "Gossip",
+    "subtitle_id": "Gossip",
+    "description_en": "Practice gossip.",
+    "description_id": "Latihan gossip."
+  },
+  {
+    "id": "de-a1-d61",
+    "levelId": "de-a1",
+    "title": "Passport",
+    "subtitle": "Passport",
+    "order": 61,
+    "description": "Practice passport.",
+    "lessonIds": [
+      "de-a1-d61-l1"
+    ],
+    "subtitle_en": "Passport",
+    "subtitle_id": "Passport",
+    "description_en": "Practice passport.",
+    "description_id": "Latihan passport."
+  },
+  {
+    "id": "de-a2-d1",
+    "levelId": "de-a2",
+    "title": "College",
+    "subtitle": "College",
+    "order": 1,
+    "description": "Practice college.",
+    "lessonIds": [
+      "de-a2-d1-l1"
+    ],
+    "subtitle_en": "College",
+    "subtitle_id": "College",
+    "description_en": "Practice college.",
+    "description_id": "Latihan college."
+  },
+  {
+    "id": "de-a2-d2",
+    "levelId": "de-a2",
+    "title": "Concert",
+    "subtitle": "Concert",
+    "order": 2,
+    "description": "Practice concert.",
+    "lessonIds": [
+      "de-a2-d2-l1"
+    ],
+    "subtitle_en": "Concert",
+    "subtitle_id": "Concert",
+    "description_en": "Practice concert.",
+    "description_id": "Latihan concert."
+  },
+  {
+    "id": "de-a2-d3",
+    "levelId": "de-a2",
+    "title": "Family 4",
+    "subtitle": "Family 4",
+    "order": 3,
+    "description": "Practice family 4.",
+    "lessonIds": [
+      "de-a2-d3-l1"
+    ],
+    "subtitle_en": "Family 4",
+    "subtitle_id": "Family 4",
+    "description_en": "Practice family 4.",
+    "description_id": "Latihan family 4."
+  },
+  {
+    "id": "de-a2-d4",
+    "levelId": "de-a2",
+    "title": "Dreams",
+    "subtitle": "Dreams",
+    "order": 4,
+    "description": "Practice dreams.",
+    "lessonIds": [
+      "de-a2-d4-l1"
+    ],
+    "subtitle_en": "Dreams",
+    "subtitle_id": "Dreams",
+    "description_en": "Practice dreams.",
+    "description_id": "Latihan dreams."
+  },
+  {
+    "id": "de-a2-d5",
+    "levelId": "de-a2",
+    "title": "Shopping 2",
+    "subtitle": "Shopping 2",
+    "order": 5,
+    "description": "Practice shopping 2.",
+    "lessonIds": [
+      "de-a2-d5-l1"
+    ],
+    "subtitle_en": "Shopping 2",
+    "subtitle_id": "Shopping 2",
+    "description_en": "Practice shopping 2.",
+    "description_id": "Latihan shopping 2."
+  },
+  {
+    "id": "de-a2-d6",
+    "levelId": "de-a2",
+    "title": "Health 2",
+    "subtitle": "Health 2",
+    "order": 6,
+    "description": "Practice health 2.",
+    "lessonIds": [
+      "de-a2-d6-l1"
+    ],
+    "subtitle_en": "Health 2",
+    "subtitle_id": "Health 2",
+    "description_en": "Practice health 2.",
+    "description_id": "Latihan health 2."
+  },
+  {
+    "id": "de-a2-d7",
+    "levelId": "de-a2",
+    "title": "Childhood",
+    "subtitle": "Childhood",
+    "order": 7,
+    "description": "Practice childhood.",
+    "lessonIds": [
+      "de-a2-d7-l1"
+    ],
+    "subtitle_en": "Childhood",
+    "subtitle_id": "Childhood",
+    "description_en": "Practice childhood.",
+    "description_id": "Latihan childhood."
+  },
+  {
+    "id": "de-a2-d8",
+    "levelId": "de-a2",
+    "title": "Party 2",
+    "subtitle": "Party 2",
+    "order": 8,
+    "description": "Practice party 2.",
+    "lessonIds": [
+      "de-a2-d8-l1"
+    ],
+    "subtitle_en": "Party 2",
+    "subtitle_id": "Party 2",
+    "description_en": "Practice party 2.",
+    "description_id": "Latihan party 2."
+  },
+  {
+    "id": "de-a2-d9",
+    "levelId": "de-a2",
+    "title": "Favors",
+    "subtitle": "Favors",
+    "order": 9,
+    "description": "Practice favors.",
+    "lessonIds": [
+      "de-a2-d9-l1"
+    ],
+    "subtitle_en": "Favors",
+    "subtitle_id": "Favors",
+    "description_en": "Practice favors.",
+    "description_id": "Latihan favors."
+  },
+  {
+    "id": "de-a2-d10",
+    "levelId": "de-a2",
+    "title": "Jobs 2",
+    "subtitle": "Jobs 2",
+    "order": 10,
+    "description": "Practice jobs 2.",
+    "lessonIds": [
+      "de-a2-d10-l1"
+    ],
+    "subtitle_en": "Jobs 2",
+    "subtitle_id": "Jobs 2",
+    "description_en": "Practice jobs 2.",
+    "description_id": "Latihan jobs 2."
+  },
+  {
+    "id": "de-a2-d11",
+    "levelId": "de-a2",
+    "title": "Take-Out",
+    "subtitle": "Take-Out",
+    "order": 11,
+    "description": "Practice take-out.",
+    "lessonIds": [
+      "de-a2-d11-l1"
+    ],
+    "subtitle_en": "Take-Out",
+    "subtitle_id": "Take-Out",
+    "description_en": "Practice take-out.",
+    "description_id": "Latihan take-out."
+  },
+  {
+    "id": "de-a2-d12",
+    "levelId": "de-a2",
+    "title": "Gossip 2",
+    "subtitle": "Gossip 2",
+    "order": 12,
+    "description": "Practice gossip 2.",
+    "lessonIds": [
+      "de-a2-d12-l1"
+    ],
+    "subtitle_en": "Gossip 2",
+    "subtitle_id": "Gossip 2",
+    "description_en": "Practice gossip 2.",
+    "description_id": "Latihan gossip 2."
+  },
+  {
+    "id": "de-a2-d13",
+    "levelId": "de-a2",
+    "title": "Feelings",
+    "subtitle": "Feelings",
+    "order": 13,
+    "description": "Practice feelings.",
+    "lessonIds": [
+      "de-a2-d13-l1"
+    ],
+    "subtitle_en": "Feelings",
+    "subtitle_id": "Feelings",
+    "description_en": "Practice feelings.",
+    "description_id": "Latihan feelings."
+  },
+  {
+    "id": "de-a2-d14",
+    "levelId": "de-a2",
+    "title": "Dorm",
+    "subtitle": "Dorm",
+    "order": 14,
+    "description": "Practice dorm.",
+    "lessonIds": [
+      "de-a2-d14-l1"
+    ],
+    "subtitle_en": "Dorm",
+    "subtitle_id": "Dorm",
+    "description_en": "Practice dorm.",
+    "description_id": "Latihan dorm."
+  },
+  {
+    "id": "de-a2-d15",
+    "levelId": "de-a2",
+    "title": "Travel 3",
+    "subtitle": "Travel 3",
+    "order": 15,
+    "description": "Practice travel 3.",
+    "lessonIds": [
+      "de-a2-d15-l1"
+    ],
+    "subtitle_en": "Travel 3",
+    "subtitle_id": "Travel 3",
+    "description_en": "Practice travel 3.",
+    "description_id": "Latihan travel 3."
+  },
+  {
+    "id": "de-a2-d16",
+    "levelId": "de-a2",
+    "title": "Habits 3",
+    "subtitle": "Habits 3",
+    "order": 16,
+    "description": "Practice habits 3.",
+    "lessonIds": [
+      "de-a2-d16-l1"
+    ],
+    "subtitle_en": "Habits 3",
+    "subtitle_id": "Habits 3",
+    "description_en": "Practice habits 3.",
+    "description_id": "Latihan habits 3."
+  },
+  {
+    "id": "de-a2-d17",
+    "levelId": "de-a2",
+    "title": "School",
+    "subtitle": "School",
+    "order": 17,
+    "description": "Practice school.",
+    "lessonIds": [
+      "de-a2-d17-l1"
+    ],
+    "subtitle_en": "School",
+    "subtitle_id": "School",
+    "description_en": "Practice school.",
+    "description_id": "Latihan school."
+  },
+  {
+    "id": "de-a2-d18",
+    "levelId": "de-a2",
+    "title": "Coworkers",
+    "subtitle": "Coworkers",
+    "order": 18,
+    "description": "Practice coworkers.",
+    "lessonIds": [
+      "de-a2-d18-l1"
+    ],
+    "subtitle_en": "Coworkers",
+    "subtitle_id": "Coworkers",
+    "description_en": "Practice coworkers.",
+    "description_id": "Latihan coworkers."
+  },
+  {
+    "id": "de-a2-d19",
+    "levelId": "de-a2",
+    "title": "Neighbors",
+    "subtitle": "Neighbors",
+    "order": 19,
+    "description": "Practice neighbors.",
+    "lessonIds": [
+      "de-a2-d19-l1"
+    ],
+    "subtitle_en": "Neighbors",
+    "subtitle_id": "Neighbors",
+    "description_en": "Practice neighbors.",
+    "description_id": "Latihan neighbors."
+  },
+  {
+    "id": "de-a2-d20",
+    "levelId": "de-a2",
+    "title": "Movies",
+    "subtitle": "Movies",
+    "order": 20,
+    "description": "Practice movies.",
+    "lessonIds": [
+      "de-a2-d20-l1"
+    ],
+    "subtitle_en": "Movies",
+    "subtitle_id": "Movies",
+    "description_en": "Practice movies.",
+    "description_id": "Latihan movies."
+  },
+  {
+    "id": "de-a2-d21",
+    "levelId": "de-a2",
+    "title": "Germany",
+    "subtitle": "Germany",
+    "order": 21,
+    "description": "Practice germany.",
+    "lessonIds": [
+      "de-a2-d21-l1"
+    ],
+    "subtitle_en": "Germany",
+    "subtitle_id": "Germany",
+    "description_en": "Practice germany.",
+    "description_id": "Latihan germany."
+  },
+  {
+    "id": "de-a2-d22",
+    "levelId": "de-a2",
+    "title": "Date",
+    "subtitle": "Date",
+    "order": 22,
+    "description": "Practice date.",
+    "lessonIds": [
+      "de-a2-d22-l1"
+    ],
+    "subtitle_en": "Date",
+    "subtitle_id": "Date",
+    "description_en": "Practice date.",
+    "description_id": "Latihan date."
+  },
+  {
+    "id": "de-a2-d23",
+    "levelId": "de-a2",
+    "title": "Bad Luck",
+    "subtitle": "Bad Luck",
+    "order": 23,
+    "description": "Practice bad luck.",
+    "lessonIds": [
+      "de-a2-d23-l1"
+    ],
+    "subtitle_en": "Bad Luck",
+    "subtitle_id": "Bad Luck",
+    "description_en": "Practice bad luck.",
+    "description_id": "Latihan bad luck."
+  },
+  {
+    "id": "de-a2-d24",
+    "levelId": "de-a2",
+    "title": "Dinner",
+    "subtitle": "Dinner",
+    "order": 24,
+    "description": "Practice dinner.",
+    "lessonIds": [
+      "de-a2-d24-l1"
+    ],
+    "subtitle_en": "Dinner",
+    "subtitle_id": "Dinner",
+    "description_en": "Practice dinner.",
+    "description_id": "Latihan dinner."
+  },
+  {
+    "id": "de-a2-d25",
+    "levelId": "de-a2",
+    "title": "Wardrobe",
+    "subtitle": "Wardrobe",
+    "order": 25,
+    "description": "Practice wardrobe.",
+    "lessonIds": [
+      "de-a2-d25-l1"
+    ],
+    "subtitle_en": "Wardrobe",
+    "subtitle_id": "Wardrobe",
+    "description_en": "Practice wardrobe.",
+    "description_id": "Latihan wardrobe."
+  },
+  {
+    "id": "de-a2-d26",
+    "levelId": "de-a2",
+    "title": "Friends",
+    "subtitle": "Friends",
+    "order": 26,
+    "description": "Practice friends.",
+    "lessonIds": [
+      "de-a2-d26-l1"
+    ],
+    "subtitle_en": "Friends",
+    "subtitle_id": "Friends",
+    "description_en": "Practice friends.",
+    "description_id": "Latihan friends."
+  },
+  {
+    "id": "de-a2-d27",
+    "levelId": "de-a2",
+    "title": "Shopping 3",
+    "subtitle": "Shopping 3",
+    "order": 27,
+    "description": "Practice shopping 3.",
+    "lessonIds": [
+      "de-a2-d27-l1"
+    ],
+    "subtitle_en": "Shopping 3",
+    "subtitle_id": "Shopping 3",
+    "description_en": "Practice shopping 3.",
+    "description_id": "Latihan shopping 3."
+  },
+  {
+    "id": "de-a2-d28",
+    "levelId": "de-a2",
+    "title": "Opinions 2",
+    "subtitle": "Opinions 2",
+    "order": 28,
+    "description": "Practice opinions 2.",
+    "lessonIds": [
+      "de-a2-d28-l1"
+    ],
+    "subtitle_en": "Opinions 2",
+    "subtitle_id": "Opinions 2",
+    "description_en": "Practice opinions 2.",
+    "description_id": "Latihan opinions 2."
+  },
+  {
+    "id": "de-a2-d29",
+    "levelId": "de-a2",
+    "title": "Family 5",
+    "subtitle": "Family 5",
+    "order": 29,
+    "description": "Practice family 5.",
+    "lessonIds": [
+      "de-a2-d29-l1"
+    ],
+    "subtitle_en": "Family 5",
+    "subtitle_id": "Family 5",
+    "description_en": "Practice family 5.",
+    "description_id": "Latihan family 5."
+  },
+  {
+    "id": "de-a2-d30",
+    "levelId": "de-a2",
+    "title": "Vacation 2",
+    "subtitle": "Vacation 2",
+    "order": 30,
+    "description": "Practice vacation 2.",
+    "lessonIds": [
+      "de-a2-d30-l1"
+    ],
+    "subtitle_en": "Vacation 2",
+    "subtitle_id": "Vacation 2",
+    "description_en": "Practice vacation 2.",
+    "description_id": "Latihan vacation 2."
+  },
+  {
+    "id": "de-a2-d31",
+    "levelId": "de-a2",
+    "title": "Carnival",
+    "subtitle": "Carnival",
+    "order": 31,
+    "description": "Practice carnival.",
+    "lessonIds": [
+      "de-a2-d31-l1"
+    ],
+    "subtitle_en": "Carnival",
+    "subtitle_id": "Carnival",
+    "description_en": "Practice carnival.",
+    "description_id": "Latihan carnival."
+  },
+  {
+    "id": "de-a2-d32",
+    "levelId": "de-a2",
+    "title": "Health 3",
+    "subtitle": "Health 3",
+    "order": 32,
+    "description": "Practice health 3.",
+    "lessonIds": [
+      "de-a2-d32-l1"
+    ],
+    "subtitle_en": "Health 3",
+    "subtitle_id": "Health 3",
+    "description_en": "Practice health 3.",
+    "description_id": "Latihan health 3."
+  },
+  {
+    "id": "de-a2-d33",
+    "levelId": "de-a2",
+    "title": "Travel 4",
+    "subtitle": "Travel 4",
+    "order": 33,
+    "description": "Practice travel 4.",
+    "lessonIds": [
+      "de-a2-d33-l1"
+    ],
+    "subtitle_en": "Travel 4",
+    "subtitle_id": "Travel 4",
+    "description_en": "Practice travel 4.",
+    "description_id": "Latihan travel 4."
+  },
+  {
+    "id": "de-a2-d34",
+    "levelId": "de-a2",
+    "title": "Roommate 2",
+    "subtitle": "Roommate 2",
+    "order": 34,
+    "description": "Practice roommate 2.",
+    "lessonIds": [
+      "de-a2-d34-l1"
+    ],
+    "subtitle_en": "Roommate 2",
+    "subtitle_id": "Roommate 2",
+    "description_en": "Practice roommate 2.",
+    "description_id": "Latihan roommate 2."
+  },
+  {
+    "id": "de-a2-d35",
+    "levelId": "de-a2",
+    "title": "Repairs",
+    "subtitle": "Repairs",
+    "order": 35,
+    "description": "Practice repairs.",
+    "lessonIds": [
+      "de-a2-d35-l1"
+    ],
+    "subtitle_en": "Repairs",
+    "subtitle_id": "Repairs",
+    "description_en": "Practice repairs.",
+    "description_id": "Latihan repairs."
+  },
+  {
+    "id": "de-a2-d36",
+    "levelId": "de-a2",
+    "title": "Farm",
+    "subtitle": "Farm",
+    "order": 36,
+    "description": "Practice farm.",
+    "lessonIds": [
+      "de-a2-d36-l1"
+    ],
+    "subtitle_en": "Farm",
+    "subtitle_id": "Farm",
+    "description_en": "Practice farm.",
+    "description_id": "Latihan farm."
+  },
+  {
+    "id": "de-a2-d37",
+    "levelId": "de-a2",
+    "title": "People 2",
+    "subtitle": "People 2",
+    "order": 37,
+    "description": "Practice people 2.",
+    "lessonIds": [
+      "de-a2-d37-l1"
+    ],
+    "subtitle_en": "People 2",
+    "subtitle_id": "People 2",
+    "description_en": "Practice people 2.",
+    "description_id": "Latihan people 2."
+  },
+  {
+    "id": "de-a2-d38",
+    "levelId": "de-a2",
+    "title": "Banking",
+    "subtitle": "Banking",
+    "order": 38,
+    "description": "Practice banking.",
+    "lessonIds": [
+      "de-a2-d38-l1"
+    ],
+    "subtitle_en": "Banking",
+    "subtitle_id": "Banking",
+    "description_en": "Practice banking.",
+    "description_id": "Latihan banking."
+  },
+  {
+    "id": "de-a2-d39",
+    "levelId": "de-a2",
+    "title": "University",
+    "subtitle": "University",
+    "order": 39,
+    "description": "Practice university.",
+    "lessonIds": [
+      "de-a2-d39-l1"
+    ],
+    "subtitle_en": "University",
+    "subtitle_id": "University",
+    "description_en": "Practice university.",
+    "description_id": "Latihan university."
+  },
+  {
+    "id": "de-a2-d40",
+    "levelId": "de-a2",
+    "title": "Memories",
+    "subtitle": "Memories",
+    "order": 40,
+    "description": "Practice memories.",
+    "lessonIds": [
+      "de-a2-d40-l1"
+    ],
+    "subtitle_en": "Memories",
+    "subtitle_id": "Memories",
+    "description_en": "Practice memories.",
+    "description_id": "Latihan memories."
+  },
+  {
+    "id": "de-a2-d41",
+    "levelId": "de-a2",
+    "title": "Shopping 4",
+    "subtitle": "Shopping 4",
+    "order": 41,
+    "description": "Practice shopping 4.",
+    "lessonIds": [
+      "de-a2-d41-l1"
+    ],
+    "subtitle_en": "Shopping 4",
+    "subtitle_id": "Shopping 4",
+    "description_en": "Practice shopping 4.",
+    "description_id": "Latihan shopping 4."
+  },
+  {
+    "id": "de-a2-d42",
+    "levelId": "de-a2",
+    "title": "Vienna",
+    "subtitle": "Vienna",
+    "order": 42,
+    "description": "Practice vienna.",
+    "lessonIds": [
+      "de-a2-d42-l1"
+    ],
+    "subtitle_en": "Vienna",
+    "subtitle_id": "Vienna",
+    "description_en": "Practice vienna.",
+    "description_id": "Latihan vienna."
+  },
+  {
+    "id": "de-a2-d43",
+    "levelId": "de-a2",
+    "title": "Cooking",
+    "subtitle": "Cooking",
+    "order": 43,
+    "description": "Practice cooking.",
+    "lessonIds": [
+      "de-a2-d43-l1"
+    ],
+    "subtitle_en": "Cooking",
+    "subtitle_id": "Cooking",
+    "description_en": "Practice cooking.",
+    "description_id": "Latihan cooking."
+  },
+  {
+    "id": "de-a2-d44",
+    "levelId": "de-a2",
+    "title": "Fairy Tale",
+    "subtitle": "Fairy Tale",
+    "order": 44,
+    "description": "Practice fairy tale.",
+    "lessonIds": [
+      "de-a2-d44-l1"
+    ],
+    "subtitle_en": "Fairy Tale",
+    "subtitle_id": "Fairy Tale",
+    "description_en": "Practice fairy tale.",
+    "description_id": "Latihan fairy tale."
+  },
+  {
+    "id": "de-a2-d45",
+    "levelId": "de-a2",
+    "title": "Oh No!",
+    "subtitle": "Oh No!",
+    "order": 45,
+    "description": "Practice oh no!.",
+    "lessonIds": [
+      "de-a2-d45-l1"
+    ],
+    "subtitle_en": "Oh No!",
+    "subtitle_id": "Oh No!",
+    "description_en": "Practice oh no!.",
+    "description_id": "Latihan oh no!."
+  },
+  {
+    "id": "de-a2-d46",
+    "levelId": "de-a2",
+    "title": "Telephone",
+    "subtitle": "Telephone",
+    "order": 46,
+    "description": "Practice telephone.",
+    "lessonIds": [
+      "de-a2-d46-l1"
+    ],
+    "subtitle_en": "Telephone",
+    "subtitle_id": "Telephone",
+    "description_en": "Practice telephone.",
+    "description_id": "Latihan telephone."
+  },
+  {
+    "id": "de-a2-d47",
+    "levelId": "de-a2",
+    "title": "Worst Job",
+    "subtitle": "Worst Job",
+    "order": 47,
+    "description": "Practice worst job.",
+    "lessonIds": [
+      "de-a2-d47-l1"
+    ],
+    "subtitle_en": "Worst Job",
+    "subtitle_id": "Worst Job",
+    "description_en": "Practice worst job.",
+    "description_id": "Latihan worst job."
+  },
+  {
+    "id": "de-a2-d48",
+    "levelId": "de-a2",
+    "title": "Technology",
+    "subtitle": "Technology",
+    "order": 48,
+    "description": "Practice technology.",
+    "lessonIds": [
+      "de-a2-d48-l1"
+    ],
+    "subtitle_en": "Technology",
+    "subtitle_id": "Technology",
+    "description_en": "Practice technology.",
+    "description_id": "Latihan technology."
+  },
+  {
+    "id": "de-a2-d49",
+    "levelId": "de-a2",
+    "title": "Health 4",
+    "subtitle": "Health 4",
+    "order": 49,
+    "description": "Practice health 4.",
+    "lessonIds": [
+      "de-a2-d49-l1"
+    ],
+    "subtitle_en": "Health 4",
+    "subtitle_id": "Health 4",
+    "description_en": "Practice health 4.",
+    "description_id": "Latihan health 4."
+  },
+  {
+    "id": "de-a2-d50",
+    "levelId": "de-a2",
+    "title": "Asparagus",
+    "subtitle": "Asparagus",
+    "order": 50,
+    "description": "Practice asparagus.",
+    "lessonIds": [
+      "de-a2-d50-l1"
+    ],
+    "subtitle_en": "Asparagus",
+    "subtitle_id": "Asparagus",
+    "description_en": "Practice asparagus.",
+    "description_id": "Latihan asparagus."
+  },
+  {
+    "id": "de-a2-d51",
+    "levelId": "de-a2",
+    "title": "School 2",
+    "subtitle": "School 2",
+    "order": 51,
+    "description": "Practice school 2.",
+    "lessonIds": [
+      "de-a2-d51-l1"
+    ],
+    "subtitle_en": "School 2",
+    "subtitle_id": "School 2",
+    "description_en": "Practice school 2.",
+    "description_id": "Latihan school 2."
+  },
+  {
+    "id": "de-b1-d1",
+    "levelId": "de-b1",
+    "title": "Baltic Sea",
+    "subtitle": "Baltic Sea",
+    "order": 1,
+    "description": "Practice baltic sea.",
+    "lessonIds": [
+      "de-b1-d1-l1"
+    ],
+    "subtitle_en": "Baltic Sea",
+    "subtitle_id": "Baltic Sea",
+    "description_en": "Practice baltic sea.",
+    "description_id": "Latihan baltic sea."
+  },
+  {
+    "id": "de-b1-d2",
+    "levelId": "de-b1",
+    "title": "Literature",
+    "subtitle": "Literature",
+    "order": 2,
+    "description": "Practice literature.",
+    "lessonIds": [
+      "de-b1-d2-l1"
+    ],
+    "subtitle_en": "Literature",
+    "subtitle_id": "Literature",
+    "description_en": "Practice literature.",
+    "description_id": "Latihan literature."
+  },
+  {
+    "id": "de-b1-d3",
+    "levelId": "de-b1",
+    "title": "Market 2",
+    "subtitle": "Market 2",
+    "order": 3,
+    "description": "Practice market 2.",
+    "lessonIds": [
+      "de-b1-d3-l1"
+    ],
+    "subtitle_en": "Market 2",
+    "subtitle_id": "Market 2",
+    "description_en": "Practice market 2.",
+    "description_id": "Latihan market 2."
+  },
+  {
+    "id": "de-b1-d4",
+    "levelId": "de-b1",
+    "title": "Basement",
+    "subtitle": "Basement",
+    "order": 4,
+    "description": "Practice basement.",
+    "lessonIds": [
+      "de-b1-d4-l1"
+    ],
+    "subtitle_en": "Basement",
+    "subtitle_id": "Basement",
+    "description_en": "Practice basement.",
+    "description_id": "Latihan basement."
+  },
+  {
+    "id": "de-b1-d5",
+    "levelId": "de-b1",
+    "title": "Café",
+    "subtitle": "Café",
+    "order": 5,
+    "description": "Practice café.",
+    "lessonIds": [
+      "de-b1-d5-l1"
+    ],
+    "subtitle_en": "Café",
+    "subtitle_id": "Café",
+    "description_en": "Practice café.",
+    "description_id": "Latihan café."
+  },
+  {
+    "id": "de-b1-d6",
+    "levelId": "de-b1",
+    "title": "Berlin Zoo",
+    "subtitle": "Berlin Zoo",
+    "order": 6,
+    "description": "Practice berlin zoo.",
+    "lessonIds": [
+      "de-b1-d6-l1"
+    ],
+    "subtitle_en": "Berlin Zoo",
+    "subtitle_id": "Berlin Zoo",
+    "description_en": "Practice berlin zoo.",
+    "description_id": "Latihan berlin zoo."
+  },
+  {
+    "id": "de-b1-d7",
+    "levelId": "de-b1",
+    "title": "Dogs",
+    "subtitle": "Dogs",
+    "order": 7,
+    "description": "Practice dogs.",
+    "lessonIds": [
+      "de-b1-d7-l1"
+    ],
+    "subtitle_en": "Dogs",
+    "subtitle_id": "Dogs",
+    "description_en": "Practice dogs.",
+    "description_id": "Latihan dogs."
+  },
+  {
+    "id": "de-b1-d8",
+    "levelId": "de-b1",
+    "title": "New Year",
+    "subtitle": "New Year",
+    "order": 8,
+    "description": "Practice new year.",
+    "lessonIds": [
+      "de-b1-d8-l1"
+    ],
+    "subtitle_en": "New Year",
+    "subtitle_id": "New Year",
+    "description_en": "Practice new year.",
+    "description_id": "Latihan new year."
+  },
+  {
+    "id": "de-b1-d9",
+    "levelId": "de-b1",
+    "title": "Luggage",
+    "subtitle": "Luggage",
+    "order": 9,
+    "description": "Practice luggage.",
+    "lessonIds": [
+      "de-b1-d9-l1"
+    ],
+    "subtitle_en": "Luggage",
+    "subtitle_id": "Luggage",
+    "description_en": "Practice luggage.",
+    "description_id": "Latihan luggage."
+  },
+  {
+    "id": "de-b1-d10",
+    "levelId": "de-b1",
+    "title": "Road Trip",
+    "subtitle": "Road Trip",
+    "order": 10,
+    "description": "Practice road trip.",
+    "lessonIds": [
+      "de-b1-d10-l1"
+    ],
+    "subtitle_en": "Road Trip",
+    "subtitle_id": "Road Trip",
+    "description_en": "Practice road trip.",
+    "description_id": "Latihan road trip."
+  },
+  {
+    "id": "de-b1-d11",
+    "levelId": "de-b1",
+    "title": "Family 6",
+    "subtitle": "Family 6",
+    "order": 11,
+    "description": "Practice family 6.",
+    "lessonIds": [
+      "de-b1-d11-l1"
+    ],
+    "subtitle_en": "Family 6",
+    "subtitle_id": "Family 6",
+    "description_en": "Practice family 6.",
+    "description_id": "Latihan family 6."
+  },
+  {
+    "id": "de-b1-d12",
+    "levelId": "de-b1",
+    "title": "Dining 2",
+    "subtitle": "Dining 2",
+    "order": 12,
+    "description": "Practice dining 2.",
+    "lessonIds": [
+      "de-b1-d12-l1"
+    ],
+    "subtitle_en": "Dining 2",
+    "subtitle_id": "Dining 2",
+    "description_en": "Practice dining 2.",
+    "description_id": "Latihan dining 2."
+  },
+  {
+    "id": "de-b1-d13",
+    "levelId": "de-b1",
+    "title": "Wishes",
+    "subtitle": "Wishes",
+    "order": 13,
+    "description": "Practice wishes.",
+    "lessonIds": [
+      "de-b1-d13-l1"
+    ],
+    "subtitle_en": "Wishes",
+    "subtitle_id": "Wishes",
+    "description_en": "Practice wishes.",
+    "description_id": "Latihan wishes."
+  },
+  {
+    "id": "de-b1-d14",
+    "levelId": "de-b1",
+    "title": "School 3",
+    "subtitle": "School 3",
+    "order": 14,
+    "description": "Practice school 3.",
+    "lessonIds": [
+      "de-b1-d14-l1"
+    ],
+    "subtitle_en": "School 3",
+    "subtitle_id": "School 3",
+    "description_en": "Practice school 3.",
+    "description_id": "Latihan school 3."
+  },
+  {
+    "id": "de-b1-d15",
+    "levelId": "de-b1",
+    "title": "Trivia",
+    "subtitle": "Trivia",
+    "order": 15,
+    "description": "Practice trivia.",
+    "lessonIds": [
+      "de-b1-d15-l1"
+    ],
+    "subtitle_en": "Trivia",
+    "subtitle_id": "Trivia",
+    "description_en": "Practice trivia.",
+    "description_id": "Latihan trivia."
+  },
+  {
+    "id": "de-b1-d16",
+    "levelId": "de-b1",
+    "title": "Shopping 5",
+    "subtitle": "Shopping 5",
+    "order": 16,
+    "description": "Practice shopping 5.",
+    "lessonIds": [
+      "de-b1-d16-l1"
+    ],
+    "subtitle_en": "Shopping 5",
+    "subtitle_id": "Shopping 5",
+    "description_en": "Practice shopping 5.",
+    "description_id": "Latihan shopping 5."
+  },
+  {
+    "id": "de-b1-d17",
+    "levelId": "de-b1",
+    "title": "News",
+    "subtitle": "News",
+    "order": 17,
+    "description": "Practice news.",
+    "lessonIds": [
+      "de-b1-d17-l1"
+    ],
+    "subtitle_en": "News",
+    "subtitle_id": "News",
+    "description_en": "Practice news.",
+    "description_id": "Latihan news."
+  },
+  {
+    "id": "de-b1-d18",
+    "levelId": "de-b1",
+    "title": "Cheating",
+    "subtitle": "Cheating",
+    "order": 18,
+    "description": "Practice cheating.",
+    "lessonIds": [
+      "de-b1-d18-l1"
+    ],
+    "subtitle_en": "Cheating",
+    "subtitle_id": "Cheating",
+    "description_en": "Practice cheating.",
+    "description_id": "Latihan cheating."
+  },
+  {
+    "id": "de-b1-d19",
+    "levelId": "de-b1",
+    "title": "Opinions 3",
+    "subtitle": "Opinions 3",
+    "order": 19,
+    "description": "Practice opinions 3.",
+    "lessonIds": [
+      "de-b1-d19-l1"
+    ],
+    "subtitle_en": "Opinions 3",
+    "subtitle_id": "Opinions 3",
+    "description_en": "Practice opinions 3.",
+    "description_id": "Latihan opinions 3."
+  },
+  {
+    "id": "de-b1-d20",
+    "levelId": "de-b1",
+    "title": "Government",
+    "subtitle": "Government",
+    "order": 20,
+    "description": "Practice government.",
+    "lessonIds": [
+      "de-b1-d20-l1"
+    ],
+    "subtitle_en": "Government",
+    "subtitle_id": "Government",
+    "description_en": "Practice government.",
+    "description_id": "Latihan government."
+  },
+  {
+    "id": "de-b1-d21",
+    "levelId": "de-b1",
+    "title": "Media",
+    "subtitle": "Media",
+    "order": 21,
+    "description": "Practice media.",
+    "lessonIds": [
+      "de-b1-d21-l1"
+    ],
+    "subtitle_en": "Media",
+    "subtitle_id": "Media",
+    "description_en": "Practice media.",
+    "description_id": "Latihan media."
+  },
+  {
+    "id": "de-b1-d22",
+    "levelId": "de-b1",
+    "title": "News 2",
+    "subtitle": "News 2",
+    "order": 22,
+    "description": "Practice news 2.",
+    "lessonIds": [
+      "de-b1-d22-l1"
+    ],
+    "subtitle_en": "News 2",
+    "subtitle_id": "News 2",
+    "description_en": "Practice news 2.",
+    "description_id": "Latihan news 2."
+  },
+  {
+    "id": "de-b1-d23",
+    "levelId": "de-b1",
+    "title": "Soccer",
+    "subtitle": "Soccer",
+    "order": 23,
+    "description": "Practice soccer.",
+    "lessonIds": [
+      "de-b1-d23-l1"
+    ],
+    "subtitle_en": "Soccer",
+    "subtitle_id": "Soccer",
+    "description_en": "Practice soccer.",
+    "description_id": "Latihan soccer."
+  },
+  {
+    "id": "de-b1-d24",
+    "levelId": "de-b1",
+    "title": "Jobs 3",
+    "subtitle": "Jobs 3",
+    "order": 24,
+    "description": "Practice jobs 3.",
+    "lessonIds": [
+      "de-b1-d24-l1"
+    ],
+    "subtitle_en": "Jobs 3",
+    "subtitle_id": "Jobs 3",
+    "description_en": "Practice jobs 3.",
+    "description_id": "Latihan jobs 3."
+  },
+  {
+    "id": "de-b1-d25",
+    "levelId": "de-b1",
+    "title": "Homesick",
+    "subtitle": "Homesick",
+    "order": 25,
+    "description": "Practice homesick.",
+    "lessonIds": [
+      "de-b1-d25-l1"
+    ],
+    "subtitle_en": "Homesick",
+    "subtitle_id": "Homesick",
+    "description_en": "Practice homesick.",
+    "description_id": "Latihan homesick."
+  },
+  {
+    "id": "de-b1-d26",
+    "levelId": "de-b1",
+    "title": "Reunion",
+    "subtitle": "Reunion",
+    "order": 26,
+    "description": "Practice reunion.",
+    "lessonIds": [
+      "de-b1-d26-l1"
+    ],
+    "subtitle_en": "Reunion",
+    "subtitle_id": "Reunion",
+    "description_en": "Practice reunion.",
+    "description_id": "Latihan reunion."
+  },
+  {
+    "id": "de-b1-d27",
+    "levelId": "de-b1",
+    "title": "History",
+    "subtitle": "History",
+    "order": 27,
+    "description": "Practice history.",
+    "lessonIds": [
+      "de-b1-d27-l1"
+    ],
+    "subtitle_en": "History",
+    "subtitle_id": "History",
+    "description_en": "Practice history.",
+    "description_id": "Latihan history."
+  },
+  {
+    "id": "de-b1-d28",
+    "levelId": "de-b1",
+    "title": "Vacation 3",
+    "subtitle": "Vacation 3",
+    "order": 28,
+    "description": "Practice vacation 3.",
+    "lessonIds": [
+      "de-b1-d28-l1"
+    ],
+    "subtitle_en": "Vacation 3",
+    "subtitle_id": "Vacation 3",
+    "description_en": "Practice vacation 3.",
+    "description_id": "Latihan vacation 3."
+  },
+  {
+    "id": "de-b1-d29",
+    "levelId": "de-b1",
+    "title": "Trier",
+    "subtitle": "Trier",
+    "order": 29,
+    "description": "Practice trier.",
+    "lessonIds": [
+      "de-b1-d29-l1"
+    ],
+    "subtitle_en": "Trier",
+    "subtitle_id": "Trier",
+    "description_en": "Practice trier.",
+    "description_id": "Latihan trier."
+  },
+  {
+    "id": "de-b1-d30",
+    "levelId": "de-b1",
+    "title": "Nature",
+    "subtitle": "Nature",
+    "order": 30,
+    "description": "Practice nature.",
+    "lessonIds": [
+      "de-b1-d30-l1"
+    ],
+    "subtitle_en": "Nature",
+    "subtitle_id": "Nature",
+    "description_en": "Practice nature.",
+    "description_id": "Latihan nature."
+  },
+  {
+    "id": "de-b1-d31",
+    "levelId": "de-b1",
+    "title": "Help!",
+    "subtitle": "Help!",
+    "order": 31,
+    "description": "Practice help!.",
+    "lessonIds": [
+      "de-b1-d31-l1"
+    ],
+    "subtitle_en": "Help!",
+    "subtitle_id": "Help!",
+    "description_en": "Practice help!.",
+    "description_id": "Latihan help!."
+  },
+  {
+    "id": "de-b1-d32",
+    "levelId": "de-b1",
+    "title": "Puppets",
+    "subtitle": "Puppets",
+    "order": 32,
+    "description": "Practice puppets.",
+    "lessonIds": [
+      "de-b1-d32-l1"
+    ],
+    "subtitle_en": "Puppets",
+    "subtitle_id": "Puppets",
+    "description_en": "Practice puppets.",
+    "description_id": "Latihan puppets."
+  },
+  {
+    "id": "de-b1-d33",
+    "levelId": "de-b1",
+    "title": "Family 7",
+    "subtitle": "Family 7",
+    "order": 33,
+    "description": "Practice family 7.",
+    "lessonIds": [
+      "de-b1-d33-l1"
+    ],
+    "subtitle_en": "Family 7",
+    "subtitle_id": "Family 7",
+    "description_en": "Practice family 7.",
+    "description_id": "Latihan family 7."
+  },
+  {
+    "id": "de-b1-d34",
+    "levelId": "de-b1",
+    "title": "Wolf",
+    "subtitle": "Wolf",
+    "order": 34,
+    "description": "Practice wolf.",
+    "lessonIds": [
+      "de-b1-d34-l1"
+    ],
+    "subtitle_en": "Wolf",
+    "subtitle_id": "Wolf",
+    "description_en": "Practice wolf.",
+    "description_id": "Latihan wolf."
+  },
+  {
+    "id": "de-b1-d35",
+    "levelId": "de-b1",
+    "title": "Wishes 2",
+    "subtitle": "Wishes 2",
+    "order": 35,
+    "description": "Practice wishes 2.",
+    "lessonIds": [
+      "de-b1-d35-l1"
+    ],
+    "subtitle_en": "Wishes 2",
+    "subtitle_id": "Wishes 2",
+    "description_en": "Practice wishes 2.",
+    "description_id": "Latihan wishes 2."
+  },
+  {
+    "id": "de-b1-d36",
+    "levelId": "de-b1",
+    "title": "Immigrants",
+    "subtitle": "Immigrants",
+    "order": 36,
+    "description": "Practice immigrants.",
+    "lessonIds": [
+      "de-b1-d36-l1"
+    ],
+    "subtitle_en": "Immigrants",
+    "subtitle_id": "Immigrants",
+    "description_en": "Practice immigrants.",
+    "description_id": "Latihan immigrants."
+  },
+  {
+    "id": "de-b1-d37",
+    "levelId": "de-b1",
+    "title": "Gossip 3",
+    "subtitle": "Gossip 3",
+    "order": 37,
+    "description": "Practice gossip 3.",
+    "lessonIds": [
+      "de-b1-d37-l1"
+    ],
+    "subtitle_en": "Gossip 3",
+    "subtitle_id": "Gossip 3",
+    "description_en": "Practice gossip 3.",
+    "description_id": "Latihan gossip 3."
+  },
+  {
+    "id": "de-b1-d38",
+    "levelId": "de-b1",
+    "title": "1989",
+    "subtitle": "1989",
+    "order": 38,
+    "description": "Practice 1989.",
+    "lessonIds": [
+      "de-b1-d38-l1"
+    ],
+    "subtitle_en": "1989",
+    "subtitle_id": "1989",
+    "description_en": "Practice 1989.",
+    "description_id": "Latihan 1989."
+  },
+  {
+    "id": "de-b1-d39",
+    "levelId": "de-b1",
+    "title": "Wolf 2",
+    "subtitle": "Wolf 2",
+    "order": 39,
+    "description": "Practice wolf 2.",
+    "lessonIds": [
+      "de-b1-d39-l1"
+    ],
+    "subtitle_en": "Wolf 2",
+    "subtitle_id": "Wolf 2",
+    "description_en": "Practice wolf 2.",
+    "description_id": "Latihan wolf 2."
+  },
+  {
+    "id": "de-b1-d40",
+    "levelId": "de-b1",
+    "title": "Seminar",
+    "subtitle": "Seminar",
+    "order": 40,
+    "description": "Practice seminar.",
+    "lessonIds": [
+      "de-b1-d40-l1"
+    ],
+    "subtitle_en": "Seminar",
+    "subtitle_id": "Seminar",
+    "description_en": "Practice seminar.",
+    "description_id": "Latihan seminar."
+  },
+  {
+    "id": "de-b1-d41",
+    "levelId": "de-b1",
+    "title": "Excuses 2",
+    "subtitle": "Excuses 2",
+    "order": 41,
+    "description": "Practice excuses 2.",
+    "lessonIds": [
+      "de-b1-d41-l1"
+    ],
+    "subtitle_en": "Excuses 2",
+    "subtitle_id": "Excuses 2",
+    "description_en": "Practice excuses 2.",
+    "description_id": "Latihan excuses 2."
+  },
+  {
+    "id": "de-b1-d42",
+    "levelId": "de-b1",
+    "title": "Econ 101",
+    "subtitle": "Econ 101",
+    "order": 42,
+    "description": "Practice econ 101.",
+    "lessonIds": [
+      "de-b1-d42-l1"
+    ],
+    "subtitle_en": "Econ 101",
+    "subtitle_id": "Econ 101",
+    "description_en": "Practice econ 101.",
+    "description_id": "Latihan econ 101."
+  },
+  {
+    "id": "de-b1-d43",
+    "levelId": "de-b1",
+    "title": "History 2",
+    "subtitle": "History 2",
+    "order": 43,
+    "description": "Practice history 2.",
+    "lessonIds": [
+      "de-b1-d43-l1"
+    ],
+    "subtitle_en": "History 2",
+    "subtitle_id": "History 2",
+    "description_en": "Practice history 2.",
+    "description_id": "Latihan history 2."
+  },
+  {
+    "id": "de-b1-d44",
+    "levelId": "de-b1",
+    "title": "College 2",
+    "subtitle": "College 2",
+    "order": 44,
+    "description": "Practice college 2.",
+    "lessonIds": [
+      "de-b1-d44-l1"
+    ],
+    "subtitle_en": "College 2",
+    "subtitle_id": "College 2",
+    "description_en": "Practice college 2.",
+    "description_id": "Latihan college 2."
+  },
+  {
+    "id": "de-a1-d62",
+    "levelId": "de-a1",
+    "title": "Apprentice",
+    "subtitle": "Apprentice",
+    "order": 62,
+    "description": "Practice apprentice.",
+    "lessonIds": [
+      "de-a1-d62-l1"
+    ],
+    "subtitle_en": "Apprentice",
+    "subtitle_id": "Apprentice",
+    "description_en": "Practice apprentice.",
+    "description_id": "Latihan apprentice."
   }
 ]

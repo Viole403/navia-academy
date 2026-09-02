@@ -1298,5 +1298,4433 @@
     ],
     "subtitle_en": "Gefühle & Charakter",
     "subtitle_id": "Feelings & Character"
+  },
+  {
+    "id": "de-a1-d1-l1",
+    "unitId": "de-a1-d1",
+    "title": "Basics 1",
+    "subtitle": "Basics 1",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about basics 1",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "explanation",
+        "title": "Basics 1",
+        "body": [
+          "This lesson introduces Basics 1."
+        ]
+      }
+    ],
+    "subtitle_en": "Basics 1",
+    "subtitle_id": "Basics 1"
+  },
+  {
+    "id": "de-a1-d2-l1",
+    "unitId": "de-a1-d2",
+    "title": "Family",
+    "subtitle": "Family",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about family",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Family",
+        "vocabIds": [
+          "de_anspruchslos",
+          "de_bewerkstelligen",
+          "de_bewaeltigung",
+          "de_facettenreich",
+          "de_geziert",
+          "de_instanzenweg",
+          "de_mangelhaft",
+          "de_auffuehrung",
+          "de_ehemann",
+          "de_enkel",
+          "de_mannschaft",
+          "de_meister"
+        ]
+      }
+    ],
+    "subtitle_en": "Family",
+    "subtitle_id": "Family"
+  },
+  {
+    "id": "de-a1-d3-l1",
+    "unitId": "de-a1-d3",
+    "title": "Basics 2",
+    "subtitle": "Basics 2",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about basics 2",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "explanation",
+        "title": "Basics 2",
+        "body": [
+          "This lesson introduces Basics 2."
+        ]
+      }
+    ],
+    "subtitle_en": "Basics 2",
+    "subtitle_id": "Basics 2"
+  },
+  {
+    "id": "de-a1-d4-l1",
+    "unitId": "de-a1-d4",
+    "title": "Idioms and Proverbs",
+    "subtitle": "Idioms and Proverbs",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about idioms and proverbs",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "explanation",
+        "title": "Idioms and Proverbs",
+        "body": [
+          "This lesson introduces Idioms and Proverbs."
+        ]
+      }
+    ],
+    "subtitle_en": "Idioms and Proverbs",
+    "subtitle_id": "Idioms and Proverbs"
+  },
+  {
+    "id": "de-a1-d5-l1",
+    "unitId": "de-a1-d5",
+    "title": "Greetings",
+    "subtitle": "Greetings",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about greetings",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Greetings",
+        "vocabIds": [
+          "de_sich_bedanken",
+          "de_sich_verabschieden",
+          "de_begruen",
+          "de_dank",
+          "de_danken",
+          "de_empfangen",
+          "de_auf_wiedersehen",
+          "de_bitte",
+          "de_danke",
+          "de_entschuldigung",
+          "de_gefallen",
+          "de_gruss"
+        ]
+      }
+    ],
+    "subtitle_en": "Greetings",
+    "subtitle_id": "Greetings"
+  },
+  {
+    "id": "de-a1-d6-l1",
+    "unitId": "de-a1-d6",
+    "title": "Restaurant",
+    "subtitle": "Restaurant",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about restaurant",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Restaurant",
+        "vocabIds": [
+          "de_abnutzung",
+          "de_behandlungsplan",
+          "de_resigniert",
+          "de_unbeirrbar",
+          "de_verstohlen",
+          "de_behandlung",
+          "de_bestellen",
+          "de_heizung",
+          "de_herd",
+          "de_hitze",
+          "de_kaffeemaschine",
+          "de_kantine"
+        ]
+      }
+    ],
+    "subtitle_en": "Restaurant",
+    "subtitle_id": "Restaurant"
+  },
+  {
+    "id": "de-a1-d7-l1",
+    "unitId": "de-a1-d7",
+    "title": "Places",
+    "subtitle": "Places",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about places",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Places",
+        "vocabIds": [
+          "de_belastbarkeit",
+          "de_vermessenheit",
+          "de_arbeitsplatz",
+          "de_ersetzen",
+          "de_landkarte",
+          "de_parkschein",
+          "de_reisefuehrer",
+          "de_strom",
+          "de_alltaeglich",
+          "de_arbeitsstelle",
+          "de_billett",
+          "de_elektrizitaet_2"
+        ]
+      }
+    ],
+    "subtitle_en": "Places",
+    "subtitle_id": "Places"
+  },
+  {
+    "id": "de-a1-d8-l1",
+    "unitId": "de-a1-d8",
+    "title": "Jobs",
+    "subtitle": "Jobs",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about jobs",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Jobs",
+        "vocabIds": [
+          "de_amt",
+          "de_arbeitsplatz",
+          "de_buero",
+          "de_fleissig",
+          "de_funktionieren",
+          "de_homeoffice",
+          "de_klappen",
+          "de_nebenjob",
+          "de_netzwerk",
+          "de_postamt",
+          "de_praxis",
+          "de_sprechstunde"
+        ]
+      }
+    ],
+    "subtitle_en": "Jobs",
+    "subtitle_id": "Jobs"
+  },
+  {
+    "id": "de-a1-d9-l1",
+    "unitId": "de-a1-d9",
+    "title": "Hobbies",
+    "subtitle": "Hobbies",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about hobbies",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "explanation",
+        "title": "Hobbies",
+        "body": [
+          "This lesson introduces Hobbies."
+        ]
+      }
+    ],
+    "subtitle_en": "Hobbies",
+    "subtitle_id": "Hobbies"
+  },
+  {
+    "id": "de-a1-d10-l1",
+    "unitId": "de-a1-d10",
+    "title": "Directions",
+    "subtitle": "Directions",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about directions",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "explanation",
+        "title": "Directions",
+        "body": [
+          "This lesson introduces Directions."
+        ]
+      }
+    ],
+    "subtitle_en": "Directions",
+    "subtitle_id": "Directions"
+  },
+  {
+    "id": "de-a1-d11-l1",
+    "unitId": "de-a1-d11",
+    "title": "Questions",
+    "subtitle": "Questions",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about questions",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "explanation",
+        "title": "Questions",
+        "body": [
+          "This lesson introduces Questions."
+        ]
+      }
+    ],
+    "subtitle_en": "Questions",
+    "subtitle_id": "Questions"
+  },
+  {
+    "id": "de-a1-d12-l1",
+    "unitId": "de-a1-d12",
+    "title": "Market",
+    "subtitle": "Market",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about market",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "explanation",
+        "title": "Market",
+        "body": [
+          "This lesson introduces Market."
+        ]
+      }
+    ],
+    "subtitle_en": "Market",
+    "subtitle_id": "Market"
+  },
+  {
+    "id": "de-a1-d13-l1",
+    "unitId": "de-a1-d13",
+    "title": "Weather",
+    "subtitle": "Weather",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about weather",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Weather",
+        "vocabIds": [
+          "de_abnutzung",
+          "de_behandlungsplan",
+          "de_resigniert",
+          "de_unbeirrbar",
+          "de_verstohlen",
+          "de_behandlung",
+          "de_bestellen",
+          "de_heizung",
+          "de_herd",
+          "de_hitze",
+          "de_kaffeemaschine",
+          "de_kantine"
+        ]
+      }
+    ],
+    "subtitle_en": "Weather",
+    "subtitle_id": "Weather"
+  },
+  {
+    "id": "de-a1-d14-l1",
+    "unitId": "de-a1-d14",
+    "title": "Family 2",
+    "subtitle": "Family 2",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about family 2",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Family 2",
+        "vocabIds": [
+          "de_anspruchslos",
+          "de_bewerkstelligen",
+          "de_bewaeltigung",
+          "de_facettenreich",
+          "de_geziert",
+          "de_instanzenweg",
+          "de_mangelhaft",
+          "de_auffuehrung",
+          "de_ehemann",
+          "de_enkel",
+          "de_mannschaft",
+          "de_meister"
+        ]
+      }
+    ],
+    "subtitle_en": "Family 2",
+    "subtitle_id": "Family 2"
+  },
+  {
+    "id": "de-a1-d15-l1",
+    "unitId": "de-a1-d15",
+    "title": "Languages",
+    "subtitle": "Languages",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about languages",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "explanation",
+        "title": "Languages",
+        "body": [
+          "This lesson introduces Languages."
+        ]
+      }
+    ],
+    "subtitle_en": "Languages",
+    "subtitle_id": "Languages"
+  },
+  {
+    "id": "de-a1-d16-l1",
+    "unitId": "de-a1-d16",
+    "title": "Leisure",
+    "subtitle": "Leisure",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about leisure",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "explanation",
+        "title": "Leisure",
+        "body": [
+          "This lesson introduces Leisure."
+        ]
+      }
+    ],
+    "subtitle_en": "Leisure",
+    "subtitle_id": "Leisure"
+  },
+  {
+    "id": "de-a1-d17-l1",
+    "unitId": "de-a1-d17",
+    "title": "Plans",
+    "subtitle": "Plans",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about plans",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "explanation",
+        "title": "Plans",
+        "body": [
+          "This lesson introduces Plans."
+        ]
+      }
+    ],
+    "subtitle_en": "Plans",
+    "subtitle_id": "Plans"
+  },
+  {
+    "id": "de-a1-d18-l1",
+    "unitId": "de-a1-d18",
+    "title": "Apartment",
+    "subtitle": "Apartment",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about apartment",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "explanation",
+        "title": "Apartment",
+        "body": [
+          "This lesson introduces Apartment."
+        ]
+      }
+    ],
+    "subtitle_en": "Apartment",
+    "subtitle_id": "Apartment"
+  },
+  {
+    "id": "de-a1-d19-l1",
+    "unitId": "de-a1-d19",
+    "title": "Shopping",
+    "subtitle": "Shopping",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about shopping",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Shopping",
+        "vocabIds": [
+          "de_gesellschaftsschicht",
+          "de_aufpassen",
+          "de_buchhandlung",
+          "de_einkaufswagen",
+          "de_einkaufszentrum",
+          "de_etage",
+          "de_werkstatt",
+          "de_abheben",
+          "de_achten",
+          "de_anschaffen",
+          "de_ausgeben",
+          "de_beachten"
+        ]
+      }
+    ],
+    "subtitle_en": "Shopping",
+    "subtitle_id": "Shopping"
+  },
+  {
+    "id": "de-a1-d20-l1",
+    "unitId": "de-a1-d20",
+    "title": "Travel",
+    "subtitle": "Travel",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about travel",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Travel",
+        "vocabIds": [
+          "de_belastbarkeit",
+          "de_vermessenheit",
+          "de_arbeitsplatz",
+          "de_ersetzen",
+          "de_landkarte",
+          "de_parkschein",
+          "de_reisefuehrer",
+          "de_strom",
+          "de_alltaeglich",
+          "de_arbeitsstelle",
+          "de_billett",
+          "de_elektrizitaet_2"
+        ]
+      }
+    ],
+    "subtitle_en": "Travel",
+    "subtitle_id": "Travel"
+  },
+  {
+    "id": "de-a1-d21-l1",
+    "unitId": "de-a1-d21",
+    "title": "Dining Out",
+    "subtitle": "Dining Out",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about dining out",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "explanation",
+        "title": "Dining Out",
+        "body": [
+          "This lesson introduces Dining Out."
+        ]
+      }
+    ],
+    "subtitle_en": "Dining Out",
+    "subtitle_id": "Dining Out"
+  },
+  {
+    "id": "de-a1-d22-l1",
+    "unitId": "de-a1-d22",
+    "title": "Transport",
+    "subtitle": "Transport",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about transport",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "explanation",
+        "title": "Transport",
+        "body": [
+          "This lesson introduces Transport."
+        ]
+      }
+    ],
+    "subtitle_en": "Transport",
+    "subtitle_id": "Transport"
+  },
+  {
+    "id": "de-a1-d23-l1",
+    "unitId": "de-a1-d23",
+    "title": "Birthday",
+    "subtitle": "Birthday",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about birthday",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Birthday",
+        "vocabIds": [
+          "de_halbe_stunde",
+          "de_schuljahr",
+          "de_sprechstunde",
+          "de_stundenplan",
+          "de_teilzeitarbeit",
+          "de_verbringen",
+          "de_viertelstunde",
+          "de_wochentag",
+          "de_ueberstunde",
+          "de_alltag",
+          "de_alltaeglich",
+          "de_damals"
+        ]
+      }
+    ],
+    "subtitle_en": "Birthday",
+    "subtitle_id": "Birthday"
+  },
+  {
+    "id": "de-a1-d24-l1",
+    "unitId": "de-a1-d24",
+    "title": "Hobbies 2",
+    "subtitle": "Hobbies 2",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about hobbies 2",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "explanation",
+        "title": "Hobbies 2",
+        "body": [
+          "This lesson introduces Hobbies 2."
+        ]
+      }
+    ],
+    "subtitle_en": "Hobbies 2",
+    "subtitle_id": "Hobbies 2"
+  },
+  {
+    "id": "de-a1-d25-l1",
+    "unitId": "de-a1-d25",
+    "title": "Health",
+    "subtitle": "Health",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about health",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Health",
+        "vocabIds": [
+          "de_abnutzen",
+          "de_abnutzung",
+          "de_befuergnissen",
+          "de_behandlungsplan",
+          "de_besonnen",
+          "de_besonnenheit",
+          "de_entsagen",
+          "de_facettenreich",
+          "de_mehrdeutig",
+          "de_zuspitzen",
+          "de_strapazierfaehig",
+          "de_undeutlich"
+        ]
+      }
+    ],
+    "subtitle_en": "Health",
+    "subtitle_id": "Health"
+  },
+  {
+    "id": "de-a1-d26-l1",
+    "unitId": "de-a1-d26",
+    "title": "People",
+    "subtitle": "People",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about people",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "People",
+        "vocabIds": [
+          "de_anspruchslos",
+          "de_bewerkstelligen",
+          "de_bewaeltigung",
+          "de_facettenreich",
+          "de_geziert",
+          "de_instanzenweg",
+          "de_mangelhaft",
+          "de_auffuehrung",
+          "de_ehemann",
+          "de_enkel",
+          "de_mannschaft",
+          "de_meister"
+        ]
+      }
+    ],
+    "subtitle_en": "People",
+    "subtitle_id": "People"
+  },
+  {
+    "id": "de-a1-d27-l1",
+    "unitId": "de-a1-d27",
+    "title": "Events",
+    "subtitle": "Events",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about events",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "explanation",
+        "title": "Events",
+        "body": [
+          "This lesson introduces Events."
+        ]
+      }
+    ],
+    "subtitle_en": "Events",
+    "subtitle_id": "Events"
+  },
+  {
+    "id": "de-a1-d28-l1",
+    "unitId": "de-a1-d28",
+    "title": "Habits",
+    "subtitle": "Habits",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about habits",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "explanation",
+        "title": "Habits",
+        "body": [
+          "This lesson introduces Habits."
+        ]
+      }
+    ],
+    "subtitle_en": "Habits",
+    "subtitle_id": "Habits"
+  },
+  {
+    "id": "de-a1-d29-l1",
+    "unitId": "de-a1-d29",
+    "title": "Housing",
+    "subtitle": "Housing",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about housing",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "explanation",
+        "title": "Housing",
+        "body": [
+          "This lesson introduces Housing."
+        ]
+      }
+    ],
+    "subtitle_en": "Housing",
+    "subtitle_id": "Housing"
+  },
+  {
+    "id": "de-a1-d30-l1",
+    "unitId": "de-a1-d30",
+    "title": "Hotel",
+    "subtitle": "Hotel",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about hotel",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Hotel",
+        "vocabIds": [
+          "de_belastbarkeit",
+          "de_vermessenheit",
+          "de_arbeitsplatz",
+          "de_ersetzen",
+          "de_landkarte",
+          "de_parkschein",
+          "de_reisefuehrer",
+          "de_strom",
+          "de_alltaeglich",
+          "de_arbeitsstelle",
+          "de_billett",
+          "de_elektrizitaet_2"
+        ]
+      }
+    ],
+    "subtitle_en": "Hotel",
+    "subtitle_id": "Hotel"
+  },
+  {
+    "id": "de-a1-d31-l1",
+    "unitId": "de-a1-d31",
+    "title": "Family 3",
+    "subtitle": "Family 3",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about family 3",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Family 3",
+        "vocabIds": [
+          "de_anspruchslos",
+          "de_bewerkstelligen",
+          "de_bewaeltigung",
+          "de_facettenreich",
+          "de_geziert",
+          "de_instanzenweg",
+          "de_mangelhaft",
+          "de_auffuehrung",
+          "de_ehemann",
+          "de_enkel",
+          "de_mannschaft",
+          "de_meister"
+        ]
+      }
+    ],
+    "subtitle_en": "Family 3",
+    "subtitle_id": "Family 3"
+  },
+  {
+    "id": "de-a1-d32-l1",
+    "unitId": "de-a1-d32",
+    "title": "Food",
+    "subtitle": "Food",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about food",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Food",
+        "vocabIds": [
+          "de_abnutzung",
+          "de_behandlungsplan",
+          "de_resigniert",
+          "de_unbeirrbar",
+          "de_verstohlen",
+          "de_behandlung",
+          "de_bestellen",
+          "de_heizung",
+          "de_herd",
+          "de_hitze",
+          "de_kaffeemaschine",
+          "de_kantine"
+        ]
+      }
+    ],
+    "subtitle_en": "Food",
+    "subtitle_id": "Food"
+  },
+  {
+    "id": "de-a1-d33-l1",
+    "unitId": "de-a1-d33",
+    "title": "Plans 2",
+    "subtitle": "Plans 2",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about plans 2",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "explanation",
+        "title": "Plans 2",
+        "body": [
+          "This lesson introduces Plans 2."
+        ]
+      }
+    ],
+    "subtitle_en": "Plans 2",
+    "subtitle_id": "Plans 2"
+  },
+  {
+    "id": "de-a1-d34-l1",
+    "unitId": "de-a1-d34",
+    "title": "Travel 2",
+    "subtitle": "Travel 2",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about travel 2",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Travel 2",
+        "vocabIds": [
+          "de_belastbarkeit",
+          "de_vermessenheit",
+          "de_arbeitsplatz",
+          "de_ersetzen",
+          "de_landkarte",
+          "de_parkschein",
+          "de_reisefuehrer",
+          "de_strom",
+          "de_alltaeglich",
+          "de_arbeitsstelle",
+          "de_billett",
+          "de_elektrizitaet_2"
+        ]
+      }
+    ],
+    "subtitle_en": "Travel 2",
+    "subtitle_id": "Travel 2"
+  },
+  {
+    "id": "de-a1-d35-l1",
+    "unitId": "de-a1-d35",
+    "title": "New Job",
+    "subtitle": "New Job",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about new job",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "New Job",
+        "vocabIds": [
+          "de_amt",
+          "de_arbeitsplatz",
+          "de_buero",
+          "de_fleissig",
+          "de_funktionieren",
+          "de_homeoffice",
+          "de_klappen",
+          "de_nebenjob",
+          "de_netzwerk",
+          "de_postamt",
+          "de_praxis",
+          "de_sprechstunde"
+        ]
+      }
+    ],
+    "subtitle_en": "New Job",
+    "subtitle_id": "New Job"
+  },
+  {
+    "id": "de-a1-d36-l1",
+    "unitId": "de-a1-d36",
+    "title": "Habits 2",
+    "subtitle": "Habits 2",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about habits 2",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "explanation",
+        "title": "Habits 2",
+        "body": [
+          "This lesson introduces Habits 2."
+        ]
+      }
+    ],
+    "subtitle_en": "Habits 2",
+    "subtitle_id": "Habits 2"
+  },
+  {
+    "id": "de-a1-d37-l1",
+    "unitId": "de-a1-d37",
+    "title": "Packing",
+    "subtitle": "Packing",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about packing",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "explanation",
+        "title": "Packing",
+        "body": [
+          "This lesson introduces Packing."
+        ]
+      }
+    ],
+    "subtitle_en": "Packing",
+    "subtitle_id": "Packing"
+  },
+  {
+    "id": "de-a1-d38-l1",
+    "unitId": "de-a1-d38",
+    "title": "Groceries",
+    "subtitle": "Groceries",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about groceries",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "explanation",
+        "title": "Groceries",
+        "body": [
+          "This lesson introduces Groceries."
+        ]
+      }
+    ],
+    "subtitle_en": "Groceries",
+    "subtitle_id": "Groceries"
+  },
+  {
+    "id": "de-a1-d39-l1",
+    "unitId": "de-a1-d39",
+    "title": "Birthday 2",
+    "subtitle": "Birthday 2",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about birthday 2",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Birthday 2",
+        "vocabIds": [
+          "de_halbe_stunde",
+          "de_schuljahr",
+          "de_sprechstunde",
+          "de_stundenplan",
+          "de_teilzeitarbeit",
+          "de_verbringen",
+          "de_viertelstunde",
+          "de_wochentag",
+          "de_ueberstunde",
+          "de_alltag",
+          "de_alltaeglich",
+          "de_damals"
+        ]
+      }
+    ],
+    "subtitle_en": "Birthday 2",
+    "subtitle_id": "Birthday 2"
+  },
+  {
+    "id": "de-a1-d40-l1",
+    "unitId": "de-a1-d40",
+    "title": "Roommate",
+    "subtitle": "Roommate",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about roommate",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Roommate",
+        "vocabIds": [
+          "de_bedingen",
+          "de_bedraengen",
+          "de_bedraengnis",
+          "de_gehorsam",
+          "de_gehorsamkeit",
+          "de_ungehorsam",
+          "de_bad",
+          "de_badewanne",
+          "de_besen",
+          "de_bettwaesche",
+          "de_braeutigam",
+          "de_einbaukueche"
+        ]
+      }
+    ],
+    "subtitle_en": "Roommate",
+    "subtitle_id": "Roommate"
+  },
+  {
+    "id": "de-a1-d41-l1",
+    "unitId": "de-a1-d41",
+    "title": "On Break",
+    "subtitle": "On Break",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about on break",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "explanation",
+        "title": "On Break",
+        "body": [
+          "This lesson introduces On Break."
+        ]
+      }
+    ],
+    "subtitle_en": "On Break",
+    "subtitle_id": "On Break"
+  },
+  {
+    "id": "de-a1-d42-l1",
+    "unitId": "de-a1-d42",
+    "title": "Barbecue",
+    "subtitle": "Barbecue",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about barbecue",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "explanation",
+        "title": "Barbecue",
+        "body": [
+          "This lesson introduces Barbecue."
+        ]
+      }
+    ],
+    "subtitle_en": "Barbecue",
+    "subtitle_id": "Barbecue"
+  },
+  {
+    "id": "de-a1-d43-l1",
+    "unitId": "de-a1-d43",
+    "title": "Community",
+    "subtitle": "Community",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about community",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "explanation",
+        "title": "Community",
+        "body": [
+          "This lesson introduces Community."
+        ]
+      }
+    ],
+    "subtitle_en": "Community",
+    "subtitle_id": "Community"
+  },
+  {
+    "id": "de-a1-d44-l1",
+    "unitId": "de-a1-d44",
+    "title": "Plans 3",
+    "subtitle": "Plans 3",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about plans 3",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "explanation",
+        "title": "Plans 3",
+        "body": [
+          "This lesson introduces Plans 3."
+        ]
+      }
+    ],
+    "subtitle_en": "Plans 3",
+    "subtitle_id": "Plans 3"
+  },
+  {
+    "id": "de-a1-d45-l1",
+    "unitId": "de-a1-d45",
+    "title": "Party",
+    "subtitle": "Party",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about party",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "explanation",
+        "title": "Party",
+        "body": [
+          "This lesson introduces Party."
+        ]
+      }
+    ],
+    "subtitle_en": "Party",
+    "subtitle_id": "Party"
+  },
+  {
+    "id": "de-a1-d46-l1",
+    "unitId": "de-a1-d46",
+    "title": "Free Time",
+    "subtitle": "Free Time",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about free time",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Free Time",
+        "vocabIds": [
+          "de_halbe_stunde",
+          "de_schuljahr",
+          "de_sprechstunde",
+          "de_stundenplan",
+          "de_teilzeitarbeit",
+          "de_verbringen",
+          "de_viertelstunde",
+          "de_wochentag",
+          "de_ueberstunde",
+          "de_alltag",
+          "de_alltaeglich",
+          "de_damals"
+        ]
+      }
+    ],
+    "subtitle_en": "Free Time",
+    "subtitle_id": "Free Time"
+  },
+  {
+    "id": "de-a1-d47-l1",
+    "unitId": "de-a1-d47",
+    "title": "Errands",
+    "subtitle": "Errands",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about errands",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "explanation",
+        "title": "Errands",
+        "body": [
+          "This lesson introduces Errands."
+        ]
+      }
+    ],
+    "subtitle_en": "Errands",
+    "subtitle_id": "Errands"
+  },
+  {
+    "id": "de-a1-d48-l1",
+    "unitId": "de-a1-d48",
+    "title": "Opinions",
+    "subtitle": "Opinions",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about opinions",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "explanation",
+        "title": "Opinions",
+        "body": [
+          "This lesson introduces Opinions."
+        ]
+      }
+    ],
+    "subtitle_en": "Opinions",
+    "subtitle_id": "Opinions"
+  },
+  {
+    "id": "de-a1-d49-l1",
+    "unitId": "de-a1-d49",
+    "title": "Excuses",
+    "subtitle": "Excuses",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about excuses",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "explanation",
+        "title": "Excuses",
+        "body": [
+          "This lesson introduces Excuses."
+        ]
+      }
+    ],
+    "subtitle_en": "Excuses",
+    "subtitle_id": "Excuses"
+  },
+  {
+    "id": "de-a1-d50-l1",
+    "unitId": "de-a1-d50",
+    "title": "Moving",
+    "subtitle": "Moving",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about moving",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "explanation",
+        "title": "Moving",
+        "body": [
+          "This lesson introduces Moving."
+        ]
+      }
+    ],
+    "subtitle_en": "Moving",
+    "subtitle_id": "Moving"
+  },
+  {
+    "id": "de-a1-d51-l1",
+    "unitId": "de-a1-d51",
+    "title": "Food 2",
+    "subtitle": "Food 2",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about food 2",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Food 2",
+        "vocabIds": [
+          "de_abnutzung",
+          "de_behandlungsplan",
+          "de_resigniert",
+          "de_unbeirrbar",
+          "de_verstohlen",
+          "de_behandlung",
+          "de_bestellen",
+          "de_heizung",
+          "de_herd",
+          "de_hitze",
+          "de_kaffeemaschine",
+          "de_kantine"
+        ]
+      }
+    ],
+    "subtitle_en": "Food 2",
+    "subtitle_id": "Food 2"
+  },
+  {
+    "id": "de-a1-d52-l1",
+    "unitId": "de-a1-d52",
+    "title": "Holidays",
+    "subtitle": "Holidays",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about holidays",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Holidays",
+        "vocabIds": [
+          "de_halbe_stunde",
+          "de_schuljahr",
+          "de_sprechstunde",
+          "de_stundenplan",
+          "de_teilzeitarbeit",
+          "de_verbringen",
+          "de_viertelstunde",
+          "de_wochentag",
+          "de_ueberstunde",
+          "de_alltag",
+          "de_alltaeglich",
+          "de_damals"
+        ]
+      }
+    ],
+    "subtitle_en": "Holidays",
+    "subtitle_id": "Holidays"
+  },
+  {
+    "id": "de-a1-d53-l1",
+    "unitId": "de-a1-d53",
+    "title": "New Home",
+    "subtitle": "New Home",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about new home",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "New Home",
+        "vocabIds": [
+          "de_bedingen",
+          "de_bedraengen",
+          "de_bedraengnis",
+          "de_gehorsam",
+          "de_gehorsamkeit",
+          "de_ungehorsam",
+          "de_bad",
+          "de_badewanne",
+          "de_besen",
+          "de_bettwaesche",
+          "de_braeutigam",
+          "de_einbaukueche"
+        ]
+      }
+    ],
+    "subtitle_en": "New Home",
+    "subtitle_id": "New Home"
+  },
+  {
+    "id": "de-a1-d54-l1",
+    "unitId": "de-a1-d54",
+    "title": "Long Day",
+    "subtitle": "Long Day",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about long day",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Long Day",
+        "vocabIds": [
+          "de_halbe_stunde",
+          "de_schuljahr",
+          "de_sprechstunde",
+          "de_stundenplan",
+          "de_teilzeitarbeit",
+          "de_verbringen",
+          "de_viertelstunde",
+          "de_wochentag",
+          "de_ueberstunde",
+          "de_alltag",
+          "de_alltaeglich",
+          "de_damals"
+        ]
+      }
+    ],
+    "subtitle_en": "Long Day",
+    "subtitle_id": "Long Day"
+  },
+  {
+    "id": "de-a1-d55-l1",
+    "unitId": "de-a1-d55",
+    "title": "Weekend",
+    "subtitle": "Weekend",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about weekend",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Weekend",
+        "vocabIds": [
+          "de_halbe_stunde",
+          "de_schuljahr",
+          "de_sprechstunde",
+          "de_stundenplan",
+          "de_teilzeitarbeit",
+          "de_verbringen",
+          "de_viertelstunde",
+          "de_wochentag",
+          "de_ueberstunde",
+          "de_alltag",
+          "de_alltaeglich",
+          "de_damals"
+        ]
+      }
+    ],
+    "subtitle_en": "Weekend",
+    "subtitle_id": "Weekend"
+  },
+  {
+    "id": "de-a1-d56-l1",
+    "unitId": "de-a1-d56",
+    "title": "Wedding",
+    "subtitle": "Wedding",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about wedding",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "explanation",
+        "title": "Wedding",
+        "body": [
+          "This lesson introduces Wedding."
+        ]
+      }
+    ],
+    "subtitle_en": "Wedding",
+    "subtitle_id": "Wedding"
+  },
+  {
+    "id": "de-a1-d57-l1",
+    "unitId": "de-a1-d57",
+    "title": "Vacation",
+    "subtitle": "Vacation",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about vacation",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "explanation",
+        "title": "Vacation",
+        "body": [
+          "This lesson introduces Vacation."
+        ]
+      }
+    ],
+    "subtitle_en": "Vacation",
+    "subtitle_id": "Vacation"
+  },
+  {
+    "id": "de-a1-d58-l1",
+    "unitId": "de-a1-d58",
+    "title": "Routines",
+    "subtitle": "Routines",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about routines",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "explanation",
+        "title": "Routines",
+        "body": [
+          "This lesson introduces Routines."
+        ]
+      }
+    ],
+    "subtitle_en": "Routines",
+    "subtitle_id": "Routines"
+  },
+  {
+    "id": "de-a1-d59-l1",
+    "unitId": "de-a1-d59",
+    "title": "Pets",
+    "subtitle": "Pets",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about pets",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "explanation",
+        "title": "Pets",
+        "body": [
+          "This lesson introduces Pets."
+        ]
+      }
+    ],
+    "subtitle_en": "Pets",
+    "subtitle_id": "Pets"
+  },
+  {
+    "id": "de-a1-d60-l1",
+    "unitId": "de-a1-d60",
+    "title": "Gossip",
+    "subtitle": "Gossip",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about gossip",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "explanation",
+        "title": "Gossip",
+        "body": [
+          "This lesson introduces Gossip."
+        ]
+      }
+    ],
+    "subtitle_en": "Gossip",
+    "subtitle_id": "Gossip"
+  },
+  {
+    "id": "de-a1-d61-l1",
+    "unitId": "de-a1-d61",
+    "title": "Passport",
+    "subtitle": "Passport",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about passport",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "explanation",
+        "title": "Passport",
+        "body": [
+          "This lesson introduces Passport."
+        ]
+      }
+    ],
+    "subtitle_en": "Passport",
+    "subtitle_id": "Passport"
+  },
+  {
+    "id": "de-a2-d1-l1",
+    "unitId": "de-a2-d1",
+    "title": "College",
+    "subtitle": "College",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about college",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "explanation",
+        "title": "College",
+        "body": [
+          "This lesson introduces College."
+        ]
+      }
+    ],
+    "subtitle_en": "College",
+    "subtitle_id": "College"
+  },
+  {
+    "id": "de-a2-d2-l1",
+    "unitId": "de-a2-d2",
+    "title": "Concert",
+    "subtitle": "Concert",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about concert",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "explanation",
+        "title": "Concert",
+        "body": [
+          "This lesson introduces Concert."
+        ]
+      }
+    ],
+    "subtitle_en": "Concert",
+    "subtitle_id": "Concert"
+  },
+  {
+    "id": "de-a2-d3-l1",
+    "unitId": "de-a2-d3",
+    "title": "Family 4",
+    "subtitle": "Family 4",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about family 4",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Family 4",
+        "vocabIds": [
+          "de_anspruchslos",
+          "de_bewerkstelligen",
+          "de_bewaeltigung",
+          "de_facettenreich",
+          "de_geziert",
+          "de_instanzenweg",
+          "de_mangelhaft",
+          "de_auffuehrung",
+          "de_ehemann",
+          "de_enkel",
+          "de_mannschaft",
+          "de_meister"
+        ]
+      }
+    ],
+    "subtitle_en": "Family 4",
+    "subtitle_id": "Family 4"
+  },
+  {
+    "id": "de-a2-d4-l1",
+    "unitId": "de-a2-d4",
+    "title": "Dreams",
+    "subtitle": "Dreams",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about dreams",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "explanation",
+        "title": "Dreams",
+        "body": [
+          "This lesson introduces Dreams."
+        ]
+      }
+    ],
+    "subtitle_en": "Dreams",
+    "subtitle_id": "Dreams"
+  },
+  {
+    "id": "de-a2-d5-l1",
+    "unitId": "de-a2-d5",
+    "title": "Shopping 2",
+    "subtitle": "Shopping 2",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about shopping 2",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Shopping 2",
+        "vocabIds": [
+          "de_gesellschaftsschicht",
+          "de_aufpassen",
+          "de_buchhandlung",
+          "de_einkaufswagen",
+          "de_einkaufszentrum",
+          "de_etage",
+          "de_werkstatt",
+          "de_abheben",
+          "de_achten",
+          "de_anschaffen",
+          "de_ausgeben",
+          "de_beachten"
+        ]
+      }
+    ],
+    "subtitle_en": "Shopping 2",
+    "subtitle_id": "Shopping 2"
+  },
+  {
+    "id": "de-a2-d6-l1",
+    "unitId": "de-a2-d6",
+    "title": "Health 2",
+    "subtitle": "Health 2",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about health 2",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Health 2",
+        "vocabIds": [
+          "de_abnutzen",
+          "de_abnutzung",
+          "de_befuergnissen",
+          "de_behandlungsplan",
+          "de_besonnen",
+          "de_besonnenheit",
+          "de_entsagen",
+          "de_facettenreich",
+          "de_mehrdeutig",
+          "de_zuspitzen",
+          "de_strapazierfaehig",
+          "de_undeutlich"
+        ]
+      }
+    ],
+    "subtitle_en": "Health 2",
+    "subtitle_id": "Health 2"
+  },
+  {
+    "id": "de-a2-d7-l1",
+    "unitId": "de-a2-d7",
+    "title": "Childhood",
+    "subtitle": "Childhood",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about childhood",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Childhood",
+        "vocabIds": [
+          "de_anspruchslos",
+          "de_bewerkstelligen",
+          "de_bewaeltigung",
+          "de_facettenreich",
+          "de_geziert",
+          "de_instanzenweg",
+          "de_mangelhaft",
+          "de_auffuehrung",
+          "de_ehemann",
+          "de_enkel",
+          "de_mannschaft",
+          "de_meister"
+        ]
+      }
+    ],
+    "subtitle_en": "Childhood",
+    "subtitle_id": "Childhood"
+  },
+  {
+    "id": "de-a2-d8-l1",
+    "unitId": "de-a2-d8",
+    "title": "Party 2",
+    "subtitle": "Party 2",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about party 2",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "explanation",
+        "title": "Party 2",
+        "body": [
+          "This lesson introduces Party 2."
+        ]
+      }
+    ],
+    "subtitle_en": "Party 2",
+    "subtitle_id": "Party 2"
+  },
+  {
+    "id": "de-a2-d9-l1",
+    "unitId": "de-a2-d9",
+    "title": "Favors",
+    "subtitle": "Favors",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about favors",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "explanation",
+        "title": "Favors",
+        "body": [
+          "This lesson introduces Favors."
+        ]
+      }
+    ],
+    "subtitle_en": "Favors",
+    "subtitle_id": "Favors"
+  },
+  {
+    "id": "de-a2-d10-l1",
+    "unitId": "de-a2-d10",
+    "title": "Jobs 2",
+    "subtitle": "Jobs 2",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about jobs 2",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Jobs 2",
+        "vocabIds": [
+          "de_amt",
+          "de_arbeitsplatz",
+          "de_buero",
+          "de_fleissig",
+          "de_funktionieren",
+          "de_homeoffice",
+          "de_klappen",
+          "de_nebenjob",
+          "de_netzwerk",
+          "de_postamt",
+          "de_praxis",
+          "de_sprechstunde"
+        ]
+      }
+    ],
+    "subtitle_en": "Jobs 2",
+    "subtitle_id": "Jobs 2"
+  },
+  {
+    "id": "de-a2-d11-l1",
+    "unitId": "de-a2-d11",
+    "title": "Take-Out",
+    "subtitle": "Take-Out",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about take-out",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "explanation",
+        "title": "Take-Out",
+        "body": [
+          "This lesson introduces Take-Out."
+        ]
+      }
+    ],
+    "subtitle_en": "Take-Out",
+    "subtitle_id": "Take-Out"
+  },
+  {
+    "id": "de-a2-d12-l1",
+    "unitId": "de-a2-d12",
+    "title": "Gossip 2",
+    "subtitle": "Gossip 2",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about gossip 2",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "explanation",
+        "title": "Gossip 2",
+        "body": [
+          "This lesson introduces Gossip 2."
+        ]
+      }
+    ],
+    "subtitle_en": "Gossip 2",
+    "subtitle_id": "Gossip 2"
+  },
+  {
+    "id": "de-a2-d13-l1",
+    "unitId": "de-a2-d13",
+    "title": "Feelings",
+    "subtitle": "Feelings",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about feelings",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "explanation",
+        "title": "Feelings",
+        "body": [
+          "This lesson introduces Feelings."
+        ]
+      }
+    ],
+    "subtitle_en": "Feelings",
+    "subtitle_id": "Feelings"
+  },
+  {
+    "id": "de-a2-d14-l1",
+    "unitId": "de-a2-d14",
+    "title": "Dorm",
+    "subtitle": "Dorm",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about dorm",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "explanation",
+        "title": "Dorm",
+        "body": [
+          "This lesson introduces Dorm."
+        ]
+      }
+    ],
+    "subtitle_en": "Dorm",
+    "subtitle_id": "Dorm"
+  },
+  {
+    "id": "de-a2-d15-l1",
+    "unitId": "de-a2-d15",
+    "title": "Travel 3",
+    "subtitle": "Travel 3",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about travel 3",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Travel 3",
+        "vocabIds": [
+          "de_belastbarkeit",
+          "de_vermessenheit",
+          "de_arbeitsplatz",
+          "de_ersetzen",
+          "de_landkarte",
+          "de_parkschein",
+          "de_reisefuehrer",
+          "de_strom",
+          "de_alltaeglich",
+          "de_arbeitsstelle",
+          "de_billett",
+          "de_elektrizitaet_2"
+        ]
+      }
+    ],
+    "subtitle_en": "Travel 3",
+    "subtitle_id": "Travel 3"
+  },
+  {
+    "id": "de-a2-d16-l1",
+    "unitId": "de-a2-d16",
+    "title": "Habits 3",
+    "subtitle": "Habits 3",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about habits 3",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "explanation",
+        "title": "Habits 3",
+        "body": [
+          "This lesson introduces Habits 3."
+        ]
+      }
+    ],
+    "subtitle_en": "Habits 3",
+    "subtitle_id": "Habits 3"
+  },
+  {
+    "id": "de-a2-d17-l1",
+    "unitId": "de-a2-d17",
+    "title": "School",
+    "subtitle": "School",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about school",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "School",
+        "vocabIds": [
+          "de_kleinbuergerlich",
+          "de_buchen",
+          "de_buchhandlung",
+          "de_grundschule",
+          "de_gymnasium",
+          "de_hochschule",
+          "de_schuljahr",
+          "de_studium",
+          "de_unterricht",
+          "de_broschure",
+          "de_abitur_2",
+          "de_erfahren"
+        ]
+      }
+    ],
+    "subtitle_en": "School",
+    "subtitle_id": "School"
+  },
+  {
+    "id": "de-a2-d18-l1",
+    "unitId": "de-a2-d18",
+    "title": "Coworkers",
+    "subtitle": "Coworkers",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about coworkers",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Coworkers",
+        "vocabIds": [
+          "de_amt",
+          "de_arbeitsplatz",
+          "de_buero",
+          "de_fleissig",
+          "de_funktionieren",
+          "de_homeoffice",
+          "de_klappen",
+          "de_nebenjob",
+          "de_netzwerk",
+          "de_postamt",
+          "de_praxis",
+          "de_sprechstunde"
+        ]
+      }
+    ],
+    "subtitle_en": "Coworkers",
+    "subtitle_id": "Coworkers"
+  },
+  {
+    "id": "de-a2-d19-l1",
+    "unitId": "de-a2-d19",
+    "title": "Neighbors",
+    "subtitle": "Neighbors",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about neighbors",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Neighbors",
+        "vocabIds": [
+          "de_bedingen",
+          "de_bedraengen",
+          "de_bedraengnis",
+          "de_gehorsam",
+          "de_gehorsamkeit",
+          "de_ungehorsam",
+          "de_bad",
+          "de_badewanne",
+          "de_besen",
+          "de_bettwaesche",
+          "de_braeutigam",
+          "de_einbaukueche"
+        ]
+      }
+    ],
+    "subtitle_en": "Neighbors",
+    "subtitle_id": "Neighbors"
+  },
+  {
+    "id": "de-a2-d20-l1",
+    "unitId": "de-a2-d20",
+    "title": "Movies",
+    "subtitle": "Movies",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about movies",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "explanation",
+        "title": "Movies",
+        "body": [
+          "This lesson introduces Movies."
+        ]
+      }
+    ],
+    "subtitle_en": "Movies",
+    "subtitle_id": "Movies"
+  },
+  {
+    "id": "de-a2-d21-l1",
+    "unitId": "de-a2-d21",
+    "title": "Germany",
+    "subtitle": "Germany",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about germany",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Germany",
+        "vocabIds": [
+          "de_anspruchslos",
+          "de_bewerkstelligen",
+          "de_bewaeltigung",
+          "de_facettenreich",
+          "de_geziert",
+          "de_instanzenweg",
+          "de_mangelhaft",
+          "de_auffuehrung",
+          "de_ehemann",
+          "de_enkel",
+          "de_mannschaft",
+          "de_meister"
+        ]
+      }
+    ],
+    "subtitle_en": "Germany",
+    "subtitle_id": "Germany"
+  },
+  {
+    "id": "de-a2-d22-l1",
+    "unitId": "de-a2-d22",
+    "title": "Date",
+    "subtitle": "Date",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about date",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "explanation",
+        "title": "Date",
+        "body": [
+          "This lesson introduces Date."
+        ]
+      }
+    ],
+    "subtitle_en": "Date",
+    "subtitle_id": "Date"
+  },
+  {
+    "id": "de-a2-d23-l1",
+    "unitId": "de-a2-d23",
+    "title": "Bad Luck",
+    "subtitle": "Bad Luck",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about bad luck",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "explanation",
+        "title": "Bad Luck",
+        "body": [
+          "This lesson introduces Bad Luck."
+        ]
+      }
+    ],
+    "subtitle_en": "Bad Luck",
+    "subtitle_id": "Bad Luck"
+  },
+  {
+    "id": "de-a2-d24-l1",
+    "unitId": "de-a2-d24",
+    "title": "Dinner",
+    "subtitle": "Dinner",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about dinner",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Dinner",
+        "vocabIds": [
+          "de_abnutzung",
+          "de_behandlungsplan",
+          "de_resigniert",
+          "de_unbeirrbar",
+          "de_verstohlen",
+          "de_behandlung",
+          "de_bestellen",
+          "de_heizung",
+          "de_herd",
+          "de_hitze",
+          "de_kaffeemaschine",
+          "de_kantine"
+        ]
+      }
+    ],
+    "subtitle_en": "Dinner",
+    "subtitle_id": "Dinner"
+  },
+  {
+    "id": "de-a2-d25-l1",
+    "unitId": "de-a2-d25",
+    "title": "Wardrobe",
+    "subtitle": "Wardrobe",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about wardrobe",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "explanation",
+        "title": "Wardrobe",
+        "body": [
+          "This lesson introduces Wardrobe."
+        ]
+      }
+    ],
+    "subtitle_en": "Wardrobe",
+    "subtitle_id": "Wardrobe"
+  },
+  {
+    "id": "de-a2-d26-l1",
+    "unitId": "de-a2-d26",
+    "title": "Friends",
+    "subtitle": "Friends",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about friends",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "explanation",
+        "title": "Friends",
+        "body": [
+          "This lesson introduces Friends."
+        ]
+      }
+    ],
+    "subtitle_en": "Friends",
+    "subtitle_id": "Friends"
+  },
+  {
+    "id": "de-a2-d27-l1",
+    "unitId": "de-a2-d27",
+    "title": "Shopping 3",
+    "subtitle": "Shopping 3",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about shopping 3",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Shopping 3",
+        "vocabIds": [
+          "de_gesellschaftsschicht",
+          "de_aufpassen",
+          "de_buchhandlung",
+          "de_einkaufswagen",
+          "de_einkaufszentrum",
+          "de_etage",
+          "de_werkstatt",
+          "de_abheben",
+          "de_achten",
+          "de_anschaffen",
+          "de_ausgeben",
+          "de_beachten"
+        ]
+      }
+    ],
+    "subtitle_en": "Shopping 3",
+    "subtitle_id": "Shopping 3"
+  },
+  {
+    "id": "de-a2-d28-l1",
+    "unitId": "de-a2-d28",
+    "title": "Opinions 2",
+    "subtitle": "Opinions 2",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about opinions 2",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "explanation",
+        "title": "Opinions 2",
+        "body": [
+          "This lesson introduces Opinions 2."
+        ]
+      }
+    ],
+    "subtitle_en": "Opinions 2",
+    "subtitle_id": "Opinions 2"
+  },
+  {
+    "id": "de-a2-d29-l1",
+    "unitId": "de-a2-d29",
+    "title": "Family 5",
+    "subtitle": "Family 5",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about family 5",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Family 5",
+        "vocabIds": [
+          "de_anspruchslos",
+          "de_bewerkstelligen",
+          "de_bewaeltigung",
+          "de_facettenreich",
+          "de_geziert",
+          "de_instanzenweg",
+          "de_mangelhaft",
+          "de_auffuehrung",
+          "de_ehemann",
+          "de_enkel",
+          "de_mannschaft",
+          "de_meister"
+        ]
+      }
+    ],
+    "subtitle_en": "Family 5",
+    "subtitle_id": "Family 5"
+  },
+  {
+    "id": "de-a2-d30-l1",
+    "unitId": "de-a2-d30",
+    "title": "Vacation 2",
+    "subtitle": "Vacation 2",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about vacation 2",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "explanation",
+        "title": "Vacation 2",
+        "body": [
+          "This lesson introduces Vacation 2."
+        ]
+      }
+    ],
+    "subtitle_en": "Vacation 2",
+    "subtitle_id": "Vacation 2"
+  },
+  {
+    "id": "de-a2-d31-l1",
+    "unitId": "de-a2-d31",
+    "title": "Carnival",
+    "subtitle": "Carnival",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about carnival",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "explanation",
+        "title": "Carnival",
+        "body": [
+          "This lesson introduces Carnival."
+        ]
+      }
+    ],
+    "subtitle_en": "Carnival",
+    "subtitle_id": "Carnival"
+  },
+  {
+    "id": "de-a2-d32-l1",
+    "unitId": "de-a2-d32",
+    "title": "Health 3",
+    "subtitle": "Health 3",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about health 3",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Health 3",
+        "vocabIds": [
+          "de_abnutzen",
+          "de_abnutzung",
+          "de_befuergnissen",
+          "de_behandlungsplan",
+          "de_besonnen",
+          "de_besonnenheit",
+          "de_entsagen",
+          "de_facettenreich",
+          "de_mehrdeutig",
+          "de_zuspitzen",
+          "de_strapazierfaehig",
+          "de_undeutlich"
+        ]
+      }
+    ],
+    "subtitle_en": "Health 3",
+    "subtitle_id": "Health 3"
+  },
+  {
+    "id": "de-a2-d33-l1",
+    "unitId": "de-a2-d33",
+    "title": "Travel 4",
+    "subtitle": "Travel 4",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about travel 4",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Travel 4",
+        "vocabIds": [
+          "de_belastbarkeit",
+          "de_vermessenheit",
+          "de_arbeitsplatz",
+          "de_ersetzen",
+          "de_landkarte",
+          "de_parkschein",
+          "de_reisefuehrer",
+          "de_strom",
+          "de_alltaeglich",
+          "de_arbeitsstelle",
+          "de_billett",
+          "de_elektrizitaet_2"
+        ]
+      }
+    ],
+    "subtitle_en": "Travel 4",
+    "subtitle_id": "Travel 4"
+  },
+  {
+    "id": "de-a2-d34-l1",
+    "unitId": "de-a2-d34",
+    "title": "Roommate 2",
+    "subtitle": "Roommate 2",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about roommate 2",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Roommate 2",
+        "vocabIds": [
+          "de_bedingen",
+          "de_bedraengen",
+          "de_bedraengnis",
+          "de_gehorsam",
+          "de_gehorsamkeit",
+          "de_ungehorsam",
+          "de_bad",
+          "de_badewanne",
+          "de_besen",
+          "de_bettwaesche",
+          "de_braeutigam",
+          "de_einbaukueche"
+        ]
+      }
+    ],
+    "subtitle_en": "Roommate 2",
+    "subtitle_id": "Roommate 2"
+  },
+  {
+    "id": "de-a2-d35-l1",
+    "unitId": "de-a2-d35",
+    "title": "Repairs",
+    "subtitle": "Repairs",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about repairs",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "explanation",
+        "title": "Repairs",
+        "body": [
+          "This lesson introduces Repairs."
+        ]
+      }
+    ],
+    "subtitle_en": "Repairs",
+    "subtitle_id": "Repairs"
+  },
+  {
+    "id": "de-a2-d36-l1",
+    "unitId": "de-a2-d36",
+    "title": "Farm",
+    "subtitle": "Farm",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about farm",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "explanation",
+        "title": "Farm",
+        "body": [
+          "This lesson introduces Farm."
+        ]
+      }
+    ],
+    "subtitle_en": "Farm",
+    "subtitle_id": "Farm"
+  },
+  {
+    "id": "de-a2-d37-l1",
+    "unitId": "de-a2-d37",
+    "title": "People 2",
+    "subtitle": "People 2",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about people 2",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "People 2",
+        "vocabIds": [
+          "de_anspruchslos",
+          "de_bewerkstelligen",
+          "de_bewaeltigung",
+          "de_facettenreich",
+          "de_geziert",
+          "de_instanzenweg",
+          "de_mangelhaft",
+          "de_auffuehrung",
+          "de_ehemann",
+          "de_enkel",
+          "de_mannschaft",
+          "de_meister"
+        ]
+      }
+    ],
+    "subtitle_en": "People 2",
+    "subtitle_id": "People 2"
+  },
+  {
+    "id": "de-a2-d38-l1",
+    "unitId": "de-a2-d38",
+    "title": "Banking",
+    "subtitle": "Banking",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about banking",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "explanation",
+        "title": "Banking",
+        "body": [
+          "This lesson introduces Banking."
+        ]
+      }
+    ],
+    "subtitle_en": "Banking",
+    "subtitle_id": "Banking"
+  },
+  {
+    "id": "de-a2-d39-l1",
+    "unitId": "de-a2-d39",
+    "title": "University",
+    "subtitle": "University",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about university",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "University",
+        "vocabIds": [
+          "de_kleinbuergerlich",
+          "de_buchen",
+          "de_buchhandlung",
+          "de_grundschule",
+          "de_gymnasium",
+          "de_hochschule",
+          "de_schuljahr",
+          "de_studium",
+          "de_unterricht",
+          "de_broschure",
+          "de_abitur_2",
+          "de_erfahren"
+        ]
+      }
+    ],
+    "subtitle_en": "University",
+    "subtitle_id": "University"
+  },
+  {
+    "id": "de-a2-d40-l1",
+    "unitId": "de-a2-d40",
+    "title": "Memories",
+    "subtitle": "Memories",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about memories",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "explanation",
+        "title": "Memories",
+        "body": [
+          "This lesson introduces Memories."
+        ]
+      }
+    ],
+    "subtitle_en": "Memories",
+    "subtitle_id": "Memories"
+  },
+  {
+    "id": "de-a2-d41-l1",
+    "unitId": "de-a2-d41",
+    "title": "Shopping 4",
+    "subtitle": "Shopping 4",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about shopping 4",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Shopping 4",
+        "vocabIds": [
+          "de_gesellschaftsschicht",
+          "de_aufpassen",
+          "de_buchhandlung",
+          "de_einkaufswagen",
+          "de_einkaufszentrum",
+          "de_etage",
+          "de_werkstatt",
+          "de_abheben",
+          "de_achten",
+          "de_anschaffen",
+          "de_ausgeben",
+          "de_beachten"
+        ]
+      }
+    ],
+    "subtitle_en": "Shopping 4",
+    "subtitle_id": "Shopping 4"
+  },
+  {
+    "id": "de-a2-d42-l1",
+    "unitId": "de-a2-d42",
+    "title": "Vienna",
+    "subtitle": "Vienna",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about vienna",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "explanation",
+        "title": "Vienna",
+        "body": [
+          "This lesson introduces Vienna."
+        ]
+      }
+    ],
+    "subtitle_en": "Vienna",
+    "subtitle_id": "Vienna"
+  },
+  {
+    "id": "de-a2-d43-l1",
+    "unitId": "de-a2-d43",
+    "title": "Cooking",
+    "subtitle": "Cooking",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about cooking",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Cooking",
+        "vocabIds": [
+          "de_abnutzung",
+          "de_behandlungsplan",
+          "de_resigniert",
+          "de_unbeirrbar",
+          "de_verstohlen",
+          "de_behandlung",
+          "de_bestellen",
+          "de_heizung",
+          "de_herd",
+          "de_hitze",
+          "de_kaffeemaschine",
+          "de_kantine"
+        ]
+      }
+    ],
+    "subtitle_en": "Cooking",
+    "subtitle_id": "Cooking"
+  },
+  {
+    "id": "de-a2-d44-l1",
+    "unitId": "de-a2-d44",
+    "title": "Fairy Tale",
+    "subtitle": "Fairy Tale",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about fairy tale",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "explanation",
+        "title": "Fairy Tale",
+        "body": [
+          "This lesson introduces Fairy Tale."
+        ]
+      }
+    ],
+    "subtitle_en": "Fairy Tale",
+    "subtitle_id": "Fairy Tale"
+  },
+  {
+    "id": "de-a2-d45-l1",
+    "unitId": "de-a2-d45",
+    "title": "Oh No!",
+    "subtitle": "Oh No!",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about oh no!",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "explanation",
+        "title": "Oh No!",
+        "body": [
+          "This lesson introduces Oh No!."
+        ]
+      }
+    ],
+    "subtitle_en": "Oh No!",
+    "subtitle_id": "Oh No!"
+  },
+  {
+    "id": "de-a2-d46-l1",
+    "unitId": "de-a2-d46",
+    "title": "Telephone",
+    "subtitle": "Telephone",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about telephone",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Telephone",
+        "vocabIds": [
+          "de_befuergnissen",
+          "de_beharrlich",
+          "de_dasein",
+          "de_durchhalten",
+          "de_einheitlich",
+          "de_entraten",
+          "de_ernuechtert",
+          "de_existenziell",
+          "de_facettenreich",
+          "de_fuersorglich",
+          "de_genuegsam",
+          "de_gleichschalten"
+        ]
+      }
+    ],
+    "subtitle_en": "Telephone",
+    "subtitle_id": "Telephone"
+  },
+  {
+    "id": "de-a2-d47-l1",
+    "unitId": "de-a2-d47",
+    "title": "Worst Job",
+    "subtitle": "Worst Job",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about worst job",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Worst Job",
+        "vocabIds": [
+          "de_amt",
+          "de_arbeitsplatz",
+          "de_buero",
+          "de_fleissig",
+          "de_funktionieren",
+          "de_homeoffice",
+          "de_klappen",
+          "de_nebenjob",
+          "de_netzwerk",
+          "de_postamt",
+          "de_praxis",
+          "de_sprechstunde"
+        ]
+      }
+    ],
+    "subtitle_en": "Worst Job",
+    "subtitle_id": "Worst Job"
+  },
+  {
+    "id": "de-a2-d48-l1",
+    "unitId": "de-a2-d48",
+    "title": "Technology",
+    "subtitle": "Technology",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about technology",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "explanation",
+        "title": "Technology",
+        "body": [
+          "This lesson introduces Technology."
+        ]
+      }
+    ],
+    "subtitle_en": "Technology",
+    "subtitle_id": "Technology"
+  },
+  {
+    "id": "de-a2-d49-l1",
+    "unitId": "de-a2-d49",
+    "title": "Health 4",
+    "subtitle": "Health 4",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about health 4",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Health 4",
+        "vocabIds": [
+          "de_abnutzen",
+          "de_abnutzung",
+          "de_befuergnissen",
+          "de_behandlungsplan",
+          "de_besonnen",
+          "de_besonnenheit",
+          "de_entsagen",
+          "de_facettenreich",
+          "de_mehrdeutig",
+          "de_zuspitzen",
+          "de_strapazierfaehig",
+          "de_undeutlich"
+        ]
+      }
+    ],
+    "subtitle_en": "Health 4",
+    "subtitle_id": "Health 4"
+  },
+  {
+    "id": "de-a2-d50-l1",
+    "unitId": "de-a2-d50",
+    "title": "Asparagus",
+    "subtitle": "Asparagus",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about asparagus",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "explanation",
+        "title": "Asparagus",
+        "body": [
+          "This lesson introduces Asparagus."
+        ]
+      }
+    ],
+    "subtitle_en": "Asparagus",
+    "subtitle_id": "Asparagus"
+  },
+  {
+    "id": "de-a2-d51-l1",
+    "unitId": "de-a2-d51",
+    "title": "School 2",
+    "subtitle": "School 2",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about school 2",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "School 2",
+        "vocabIds": [
+          "de_kleinbuergerlich",
+          "de_buchen",
+          "de_buchhandlung",
+          "de_grundschule",
+          "de_gymnasium",
+          "de_hochschule",
+          "de_schuljahr",
+          "de_studium",
+          "de_unterricht",
+          "de_broschure",
+          "de_abitur_2",
+          "de_erfahren"
+        ]
+      }
+    ],
+    "subtitle_en": "School 2",
+    "subtitle_id": "School 2"
+  },
+  {
+    "id": "de-b1-d1-l1",
+    "unitId": "de-b1-d1",
+    "title": "Baltic Sea",
+    "subtitle": "Baltic Sea",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about baltic sea",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Baltic Sea",
+        "vocabIds": [
+          "de_fassung",
+          "de_fassungslos",
+          "de_zurueckhalten",
+          "de_strapazieren",
+          "de_zurueckhaltend",
+          "de_zurueckhaltung",
+          "de_ausbildung",
+          "de_blumenkohl",
+          "de_einbahnstrasse",
+          "de_krankheit",
+          "de_missverstaendnis",
+          "de_regenbogen"
+        ]
+      }
+    ],
+    "subtitle_en": "Baltic Sea",
+    "subtitle_id": "Baltic Sea"
+  },
+  {
+    "id": "de-b1-d2-l1",
+    "unitId": "de-b1-d2",
+    "title": "Literature",
+    "subtitle": "Literature",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about literature",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "explanation",
+        "title": "Literature",
+        "body": [
+          "This lesson introduces Literature."
+        ]
+      }
+    ],
+    "subtitle_en": "Literature",
+    "subtitle_id": "Literature"
+  },
+  {
+    "id": "de-b1-d3-l1",
+    "unitId": "de-b1-d3",
+    "title": "Market 2",
+    "subtitle": "Market 2",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about market 2",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "explanation",
+        "title": "Market 2",
+        "body": [
+          "This lesson introduces Market 2."
+        ]
+      }
+    ],
+    "subtitle_en": "Market 2",
+    "subtitle_id": "Market 2"
+  },
+  {
+    "id": "de-b1-d4-l1",
+    "unitId": "de-b1-d4",
+    "title": "Basement",
+    "subtitle": "Basement",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about basement",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "explanation",
+        "title": "Basement",
+        "body": [
+          "This lesson introduces Basement."
+        ]
+      }
+    ],
+    "subtitle_en": "Basement",
+    "subtitle_id": "Basement"
+  },
+  {
+    "id": "de-b1-d5-l1",
+    "unitId": "de-b1-d5",
+    "title": "Café",
+    "subtitle": "Café",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about café",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "explanation",
+        "title": "Café",
+        "body": [
+          "This lesson introduces Café."
+        ]
+      }
+    ],
+    "subtitle_en": "Café",
+    "subtitle_id": "Café"
+  },
+  {
+    "id": "de-b1-d6-l1",
+    "unitId": "de-b1-d6",
+    "title": "Berlin Zoo",
+    "subtitle": "Berlin Zoo",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about berlin zoo",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "explanation",
+        "title": "Berlin Zoo",
+        "body": [
+          "This lesson introduces Berlin Zoo."
+        ]
+      }
+    ],
+    "subtitle_en": "Berlin Zoo",
+    "subtitle_id": "Berlin Zoo"
+  },
+  {
+    "id": "de-b1-d7-l1",
+    "unitId": "de-b1-d7",
+    "title": "Dogs",
+    "subtitle": "Dogs",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about dogs",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "explanation",
+        "title": "Dogs",
+        "body": [
+          "This lesson introduces Dogs."
+        ]
+      }
+    ],
+    "subtitle_en": "Dogs",
+    "subtitle_id": "Dogs"
+  },
+  {
+    "id": "de-b1-d8-l1",
+    "unitId": "de-b1-d8",
+    "title": "New Year",
+    "subtitle": "New Year",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about new year",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "New Year",
+        "vocabIds": [
+          "de_halbe_stunde",
+          "de_schuljahr",
+          "de_sprechstunde",
+          "de_stundenplan",
+          "de_teilzeitarbeit",
+          "de_verbringen",
+          "de_viertelstunde",
+          "de_wochentag",
+          "de_ueberstunde",
+          "de_alltag",
+          "de_alltaeglich",
+          "de_damals"
+        ]
+      }
+    ],
+    "subtitle_en": "New Year",
+    "subtitle_id": "New Year"
+  },
+  {
+    "id": "de-b1-d9-l1",
+    "unitId": "de-b1-d9",
+    "title": "Luggage",
+    "subtitle": "Luggage",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about luggage",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "explanation",
+        "title": "Luggage",
+        "body": [
+          "This lesson introduces Luggage."
+        ]
+      }
+    ],
+    "subtitle_en": "Luggage",
+    "subtitle_id": "Luggage"
+  },
+  {
+    "id": "de-b1-d10-l1",
+    "unitId": "de-b1-d10",
+    "title": "Road Trip",
+    "subtitle": "Road Trip",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about road trip",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Road Trip",
+        "vocabIds": [
+          "de_belastbarkeit",
+          "de_vermessenheit",
+          "de_arbeitsplatz",
+          "de_ersetzen",
+          "de_landkarte",
+          "de_parkschein",
+          "de_reisefuehrer",
+          "de_strom",
+          "de_alltaeglich",
+          "de_arbeitsstelle",
+          "de_billett",
+          "de_elektrizitaet_2"
+        ]
+      }
+    ],
+    "subtitle_en": "Road Trip",
+    "subtitle_id": "Road Trip"
+  },
+  {
+    "id": "de-b1-d11-l1",
+    "unitId": "de-b1-d11",
+    "title": "Family 6",
+    "subtitle": "Family 6",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about family 6",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Family 6",
+        "vocabIds": [
+          "de_anspruchslos",
+          "de_bewerkstelligen",
+          "de_bewaeltigung",
+          "de_facettenreich",
+          "de_geziert",
+          "de_instanzenweg",
+          "de_mangelhaft",
+          "de_auffuehrung",
+          "de_ehemann",
+          "de_enkel",
+          "de_mannschaft",
+          "de_meister"
+        ]
+      }
+    ],
+    "subtitle_en": "Family 6",
+    "subtitle_id": "Family 6"
+  },
+  {
+    "id": "de-b1-d12-l1",
+    "unitId": "de-b1-d12",
+    "title": "Dining 2",
+    "subtitle": "Dining 2",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about dining 2",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "explanation",
+        "title": "Dining 2",
+        "body": [
+          "This lesson introduces Dining 2."
+        ]
+      }
+    ],
+    "subtitle_en": "Dining 2",
+    "subtitle_id": "Dining 2"
+  },
+  {
+    "id": "de-b1-d13-l1",
+    "unitId": "de-b1-d13",
+    "title": "Wishes",
+    "subtitle": "Wishes",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about wishes",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "explanation",
+        "title": "Wishes",
+        "body": [
+          "This lesson introduces Wishes."
+        ]
+      }
+    ],
+    "subtitle_en": "Wishes",
+    "subtitle_id": "Wishes"
+  },
+  {
+    "id": "de-b1-d14-l1",
+    "unitId": "de-b1-d14",
+    "title": "School 3",
+    "subtitle": "School 3",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about school 3",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "School 3",
+        "vocabIds": [
+          "de_kleinbuergerlich",
+          "de_buchen",
+          "de_buchhandlung",
+          "de_grundschule",
+          "de_gymnasium",
+          "de_hochschule",
+          "de_schuljahr",
+          "de_studium",
+          "de_unterricht",
+          "de_broschure",
+          "de_abitur_2",
+          "de_erfahren"
+        ]
+      }
+    ],
+    "subtitle_en": "School 3",
+    "subtitle_id": "School 3"
+  },
+  {
+    "id": "de-b1-d15-l1",
+    "unitId": "de-b1-d15",
+    "title": "Trivia",
+    "subtitle": "Trivia",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about trivia",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "explanation",
+        "title": "Trivia",
+        "body": [
+          "This lesson introduces Trivia."
+        ]
+      }
+    ],
+    "subtitle_en": "Trivia",
+    "subtitle_id": "Trivia"
+  },
+  {
+    "id": "de-b1-d16-l1",
+    "unitId": "de-b1-d16",
+    "title": "Shopping 5",
+    "subtitle": "Shopping 5",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about shopping 5",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Shopping 5",
+        "vocabIds": [
+          "de_gesellschaftsschicht",
+          "de_aufpassen",
+          "de_buchhandlung",
+          "de_einkaufswagen",
+          "de_einkaufszentrum",
+          "de_etage",
+          "de_werkstatt",
+          "de_abheben",
+          "de_achten",
+          "de_anschaffen",
+          "de_ausgeben",
+          "de_beachten"
+        ]
+      }
+    ],
+    "subtitle_en": "Shopping 5",
+    "subtitle_id": "Shopping 5"
+  },
+  {
+    "id": "de-b1-d17-l1",
+    "unitId": "de-b1-d17",
+    "title": "News",
+    "subtitle": "News",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about news",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "explanation",
+        "title": "News",
+        "body": [
+          "This lesson introduces News."
+        ]
+      }
+    ],
+    "subtitle_en": "News",
+    "subtitle_id": "News"
+  },
+  {
+    "id": "de-b1-d18-l1",
+    "unitId": "de-b1-d18",
+    "title": "Cheating",
+    "subtitle": "Cheating",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about cheating",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Cheating",
+        "vocabIds": [
+          "de_abnutzung",
+          "de_behandlungsplan",
+          "de_resigniert",
+          "de_unbeirrbar",
+          "de_verstohlen",
+          "de_behandlung",
+          "de_bestellen",
+          "de_heizung",
+          "de_herd",
+          "de_hitze",
+          "de_kaffeemaschine",
+          "de_kantine"
+        ]
+      }
+    ],
+    "subtitle_en": "Cheating",
+    "subtitle_id": "Cheating"
+  },
+  {
+    "id": "de-b1-d19-l1",
+    "unitId": "de-b1-d19",
+    "title": "Opinions 3",
+    "subtitle": "Opinions 3",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about opinions 3",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "explanation",
+        "title": "Opinions 3",
+        "body": [
+          "This lesson introduces Opinions 3."
+        ]
+      }
+    ],
+    "subtitle_en": "Opinions 3",
+    "subtitle_id": "Opinions 3"
+  },
+  {
+    "id": "de-b1-d20-l1",
+    "unitId": "de-b1-d20",
+    "title": "Government",
+    "subtitle": "Government",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about government",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "explanation",
+        "title": "Government",
+        "body": [
+          "This lesson introduces Government."
+        ]
+      }
+    ],
+    "subtitle_en": "Government",
+    "subtitle_id": "Government"
+  },
+  {
+    "id": "de-b1-d21-l1",
+    "unitId": "de-b1-d21",
+    "title": "Media",
+    "subtitle": "Media",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about media",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "explanation",
+        "title": "Media",
+        "body": [
+          "This lesson introduces Media."
+        ]
+      }
+    ],
+    "subtitle_en": "Media",
+    "subtitle_id": "Media"
+  },
+  {
+    "id": "de-b1-d22-l1",
+    "unitId": "de-b1-d22",
+    "title": "News 2",
+    "subtitle": "News 2",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about news 2",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "explanation",
+        "title": "News 2",
+        "body": [
+          "This lesson introduces News 2."
+        ]
+      }
+    ],
+    "subtitle_en": "News 2",
+    "subtitle_id": "News 2"
+  },
+  {
+    "id": "de-b1-d23-l1",
+    "unitId": "de-b1-d23",
+    "title": "Soccer",
+    "subtitle": "Soccer",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about soccer",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "explanation",
+        "title": "Soccer",
+        "body": [
+          "This lesson introduces Soccer."
+        ]
+      }
+    ],
+    "subtitle_en": "Soccer",
+    "subtitle_id": "Soccer"
+  },
+  {
+    "id": "de-b1-d24-l1",
+    "unitId": "de-b1-d24",
+    "title": "Jobs 3",
+    "subtitle": "Jobs 3",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about jobs 3",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Jobs 3",
+        "vocabIds": [
+          "de_amt",
+          "de_arbeitsplatz",
+          "de_buero",
+          "de_fleissig",
+          "de_funktionieren",
+          "de_homeoffice",
+          "de_klappen",
+          "de_nebenjob",
+          "de_netzwerk",
+          "de_postamt",
+          "de_praxis",
+          "de_sprechstunde"
+        ]
+      }
+    ],
+    "subtitle_en": "Jobs 3",
+    "subtitle_id": "Jobs 3"
+  },
+  {
+    "id": "de-b1-d25-l1",
+    "unitId": "de-b1-d25",
+    "title": "Homesick",
+    "subtitle": "Homesick",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about homesick",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Homesick",
+        "vocabIds": [
+          "de_bedingen",
+          "de_bedraengen",
+          "de_bedraengnis",
+          "de_gehorsam",
+          "de_gehorsamkeit",
+          "de_ungehorsam",
+          "de_bad",
+          "de_badewanne",
+          "de_besen",
+          "de_bettwaesche",
+          "de_braeutigam",
+          "de_einbaukueche"
+        ]
+      }
+    ],
+    "subtitle_en": "Homesick",
+    "subtitle_id": "Homesick"
+  },
+  {
+    "id": "de-b1-d26-l1",
+    "unitId": "de-b1-d26",
+    "title": "Reunion",
+    "subtitle": "Reunion",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about reunion",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "explanation",
+        "title": "Reunion",
+        "body": [
+          "This lesson introduces Reunion."
+        ]
+      }
+    ],
+    "subtitle_en": "Reunion",
+    "subtitle_id": "Reunion"
+  },
+  {
+    "id": "de-b1-d27-l1",
+    "unitId": "de-b1-d27",
+    "title": "History",
+    "subtitle": "History",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about history",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "explanation",
+        "title": "History",
+        "body": [
+          "This lesson introduces History."
+        ]
+      }
+    ],
+    "subtitle_en": "History",
+    "subtitle_id": "History"
+  },
+  {
+    "id": "de-b1-d28-l1",
+    "unitId": "de-b1-d28",
+    "title": "Vacation 3",
+    "subtitle": "Vacation 3",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about vacation 3",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "explanation",
+        "title": "Vacation 3",
+        "body": [
+          "This lesson introduces Vacation 3."
+        ]
+      }
+    ],
+    "subtitle_en": "Vacation 3",
+    "subtitle_id": "Vacation 3"
+  },
+  {
+    "id": "de-b1-d29-l1",
+    "unitId": "de-b1-d29",
+    "title": "Trier",
+    "subtitle": "Trier",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about trier",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "explanation",
+        "title": "Trier",
+        "body": [
+          "This lesson introduces Trier."
+        ]
+      }
+    ],
+    "subtitle_en": "Trier",
+    "subtitle_id": "Trier"
+  },
+  {
+    "id": "de-b1-d30-l1",
+    "unitId": "de-b1-d30",
+    "title": "Nature",
+    "subtitle": "Nature",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about nature",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Nature",
+        "vocabIds": [
+          "de_fassung",
+          "de_fassungslos",
+          "de_zurueckhalten",
+          "de_strapazieren",
+          "de_zurueckhaltend",
+          "de_zurueckhaltung",
+          "de_ausbildung",
+          "de_blumenkohl",
+          "de_einbahnstrasse",
+          "de_krankheit",
+          "de_missverstaendnis",
+          "de_regenbogen"
+        ]
+      }
+    ],
+    "subtitle_en": "Nature",
+    "subtitle_id": "Nature"
+  },
+  {
+    "id": "de-b1-d31-l1",
+    "unitId": "de-b1-d31",
+    "title": "Help!",
+    "subtitle": "Help!",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about help!",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "explanation",
+        "title": "Help!",
+        "body": [
+          "This lesson introduces Help!."
+        ]
+      }
+    ],
+    "subtitle_en": "Help!",
+    "subtitle_id": "Help!"
+  },
+  {
+    "id": "de-b1-d32-l1",
+    "unitId": "de-b1-d32",
+    "title": "Puppets",
+    "subtitle": "Puppets",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about puppets",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "explanation",
+        "title": "Puppets",
+        "body": [
+          "This lesson introduces Puppets."
+        ]
+      }
+    ],
+    "subtitle_en": "Puppets",
+    "subtitle_id": "Puppets"
+  },
+  {
+    "id": "de-b1-d33-l1",
+    "unitId": "de-b1-d33",
+    "title": "Family 7",
+    "subtitle": "Family 7",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about family 7",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "vocab",
+        "title": "Family 7",
+        "vocabIds": [
+          "de_anspruchslos",
+          "de_bewerkstelligen",
+          "de_bewaeltigung",
+          "de_facettenreich",
+          "de_geziert",
+          "de_instanzenweg",
+          "de_mangelhaft",
+          "de_auffuehrung",
+          "de_ehemann",
+          "de_enkel",
+          "de_mannschaft",
+          "de_meister"
+        ]
+      }
+    ],
+    "subtitle_en": "Family 7",
+    "subtitle_id": "Family 7"
+  },
+  {
+    "id": "de-b1-d34-l1",
+    "unitId": "de-b1-d34",
+    "title": "Wolf",
+    "subtitle": "Wolf",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about wolf",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "explanation",
+        "title": "Wolf",
+        "body": [
+          "This lesson introduces Wolf."
+        ]
+      }
+    ],
+    "subtitle_en": "Wolf",
+    "subtitle_id": "Wolf"
+  },
+  {
+    "id": "de-b1-d35-l1",
+    "unitId": "de-b1-d35",
+    "title": "Wishes 2",
+    "subtitle": "Wishes 2",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about wishes 2",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "explanation",
+        "title": "Wishes 2",
+        "body": [
+          "This lesson introduces Wishes 2."
+        ]
+      }
+    ],
+    "subtitle_en": "Wishes 2",
+    "subtitle_id": "Wishes 2"
+  },
+  {
+    "id": "de-b1-d36-l1",
+    "unitId": "de-b1-d36",
+    "title": "Immigrants",
+    "subtitle": "Immigrants",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about immigrants",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "explanation",
+        "title": "Immigrants",
+        "body": [
+          "This lesson introduces Immigrants."
+        ]
+      }
+    ],
+    "subtitle_en": "Immigrants",
+    "subtitle_id": "Immigrants"
+  },
+  {
+    "id": "de-b1-d37-l1",
+    "unitId": "de-b1-d37",
+    "title": "Gossip 3",
+    "subtitle": "Gossip 3",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about gossip 3",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "explanation",
+        "title": "Gossip 3",
+        "body": [
+          "This lesson introduces Gossip 3."
+        ]
+      }
+    ],
+    "subtitle_en": "Gossip 3",
+    "subtitle_id": "Gossip 3"
+  },
+  {
+    "id": "de-b1-d38-l1",
+    "unitId": "de-b1-d38",
+    "title": "1989",
+    "subtitle": "1989",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about 1989",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "explanation",
+        "title": "1989",
+        "body": [
+          "This lesson introduces 1989."
+        ]
+      }
+    ],
+    "subtitle_en": "1989",
+    "subtitle_id": "1989"
+  },
+  {
+    "id": "de-b1-d39-l1",
+    "unitId": "de-b1-d39",
+    "title": "Wolf 2",
+    "subtitle": "Wolf 2",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about wolf 2",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "explanation",
+        "title": "Wolf 2",
+        "body": [
+          "This lesson introduces Wolf 2."
+        ]
+      }
+    ],
+    "subtitle_en": "Wolf 2",
+    "subtitle_id": "Wolf 2"
+  },
+  {
+    "id": "de-b1-d40-l1",
+    "unitId": "de-b1-d40",
+    "title": "Seminar",
+    "subtitle": "Seminar",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about seminar",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "explanation",
+        "title": "Seminar",
+        "body": [
+          "This lesson introduces Seminar."
+        ]
+      }
+    ],
+    "subtitle_en": "Seminar",
+    "subtitle_id": "Seminar"
+  },
+  {
+    "id": "de-b1-d41-l1",
+    "unitId": "de-b1-d41",
+    "title": "Excuses 2",
+    "subtitle": "Excuses 2",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about excuses 2",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "explanation",
+        "title": "Excuses 2",
+        "body": [
+          "This lesson introduces Excuses 2."
+        ]
+      }
+    ],
+    "subtitle_en": "Excuses 2",
+    "subtitle_id": "Excuses 2"
+  },
+  {
+    "id": "de-b1-d42-l1",
+    "unitId": "de-b1-d42",
+    "title": "Econ 101",
+    "subtitle": "Econ 101",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about econ 101",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "explanation",
+        "title": "Econ 101",
+        "body": [
+          "This lesson introduces Econ 101."
+        ]
+      }
+    ],
+    "subtitle_en": "Econ 101",
+    "subtitle_id": "Econ 101"
+  },
+  {
+    "id": "de-b1-d43-l1",
+    "unitId": "de-b1-d43",
+    "title": "History 2",
+    "subtitle": "History 2",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about history 2",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "explanation",
+        "title": "History 2",
+        "body": [
+          "This lesson introduces History 2."
+        ]
+      }
+    ],
+    "subtitle_en": "History 2",
+    "subtitle_id": "History 2"
+  },
+  {
+    "id": "de-b1-d44-l1",
+    "unitId": "de-b1-d44",
+    "title": "College 2",
+    "subtitle": "College 2",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about college 2",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "explanation",
+        "title": "College 2",
+        "body": [
+          "This lesson introduces College 2."
+        ]
+      }
+    ],
+    "subtitle_en": "College 2",
+    "subtitle_id": "College 2"
+  },
+  {
+    "id": "de-a1-d62-l1",
+    "unitId": "de-a1-d62",
+    "title": "Apprentice",
+    "subtitle": "Apprentice",
+    "order": 1,
+    "durationMin": 15,
+    "xp": 50,
+    "objectives": [
+      "Learn vocabulary about apprentice",
+      "Practice using these words"
+    ],
+    "steps": [
+      {
+        "type": "explanation",
+        "title": "Apprentice",
+        "body": [
+          "This lesson introduces Apprentice."
+        ]
+      }
+    ],
+    "subtitle_en": "Apprentice",
+    "subtitle_id": "Apprentice"
   }
 ]

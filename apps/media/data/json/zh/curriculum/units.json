@@ -233,5 +233,785 @@
     "title": "HSK 7 in Practice",
     "subtitle": "Graded Readings & Dialogues",
     "description": "Short passages and everyday dialogues built from the vocabulary of this level."
+  },
+  {
+    "id": "zh-lv-hsk1-d1",
+    "levelId": "lv-hsk1",
+    "title": "Food",
+    "subtitle": "Food",
+    "order": 1,
+    "description": "Practice food.",
+    "lessonIds": [
+      "zh-lv-hsk1-d1-l1"
+    ],
+    "subtitle_en": "Food",
+    "subtitle_id": "Food",
+    "description_en": "Practice food.",
+    "description_id": "Latihan food."
+  },
+  {
+    "id": "zh-lv-hsk1-d2",
+    "levelId": "lv-hsk1",
+    "title": "Nation.",
+    "subtitle": "Nation.",
+    "order": 2,
+    "description": "Practice nation..",
+    "lessonIds": [
+      "zh-lv-hsk1-d2-l1"
+    ],
+    "subtitle_en": "Nation.",
+    "subtitle_id": "Nation.",
+    "description_en": "Practice nation..",
+    "description_id": "Latihan nation.."
+  },
+  {
+    "id": "zh-lv-hsk1-d3",
+    "levelId": "lv-hsk1",
+    "title": "Profs.",
+    "subtitle": "Profs.",
+    "order": 3,
+    "description": "Practice profs..",
+    "lessonIds": [
+      "zh-lv-hsk1-d3-l1"
+    ],
+    "subtitle_en": "Profs.",
+    "subtitle_id": "Profs.",
+    "description_en": "Practice profs..",
+    "description_id": "Latihan profs.."
+  },
+  {
+    "id": "zh-lv-hsk1-d4",
+    "levelId": "lv-hsk1",
+    "title": "Prefer.",
+    "subtitle": "Prefer.",
+    "order": 4,
+    "description": "Practice prefer..",
+    "lessonIds": [
+      "zh-lv-hsk1-d4-l1"
+    ],
+    "subtitle_en": "Prefer.",
+    "subtitle_id": "Prefer.",
+    "description_en": "Practice prefer..",
+    "description_id": "Latihan prefer.."
+  },
+  {
+    "id": "zh-lv-hsk1-d5",
+    "levelId": "lv-hsk1",
+    "title": "Family",
+    "subtitle": "Family",
+    "order": 5,
+    "description": "Practice family.",
+    "lessonIds": [
+      "zh-lv-hsk1-d5-l1"
+    ],
+    "subtitle_en": "Family",
+    "subtitle_id": "Family",
+    "description_en": "Practice family.",
+    "description_id": "Latihan family."
+  },
+  {
+    "id": "zh-lv-hsk1-d6",
+    "levelId": "lv-hsk1",
+    "title": "Town",
+    "subtitle": "Town",
+    "order": 6,
+    "description": "Practice town.",
+    "lessonIds": [
+      "zh-lv-hsk1-d6-l1"
+    ],
+    "subtitle_en": "Town",
+    "subtitle_id": "Town",
+    "description_en": "Practice town.",
+    "description_id": "Latihan town."
+  },
+  {
+    "id": "zh-lv-hsk1-d7",
+    "levelId": "lv-hsk1",
+    "title": "Cafe",
+    "subtitle": "Cafe",
+    "order": 7,
+    "description": "Practice cafe.",
+    "lessonIds": [
+      "zh-lv-hsk1-d7-l1"
+    ],
+    "subtitle_en": "Cafe",
+    "subtitle_id": "Cafe",
+    "description_en": "Practice cafe.",
+    "description_id": "Latihan cafe."
+  },
+  {
+    "id": "zh-lv-hsk1-d8",
+    "levelId": "lv-hsk1",
+    "title": "Travel",
+    "subtitle": "Travel",
+    "order": 8,
+    "description": "Practice travel.",
+    "lessonIds": [
+      "zh-lv-hsk1-d8-l1"
+    ],
+    "subtitle_en": "Travel",
+    "subtitle_id": "Travel",
+    "description_en": "Practice travel.",
+    "description_id": "Latihan travel."
+  },
+  {
+    "id": "zh-lv-hsk1-d9",
+    "levelId": "lv-hsk1",
+    "title": "Semester",
+    "subtitle": "Semester",
+    "order": 9,
+    "description": "Practice semester.",
+    "lessonIds": [
+      "zh-lv-hsk1-d9-l1"
+    ],
+    "subtitle_en": "Semester",
+    "subtitle_id": "Semester",
+    "description_en": "Practice semester.",
+    "description_id": "Latihan semester."
+  },
+  {
+    "id": "zh-lv-hsk1-d10",
+    "levelId": "lv-hsk1",
+    "title": "Plans",
+    "subtitle": "Plans",
+    "order": 10,
+    "description": "Practice plans.",
+    "lessonIds": [
+      "zh-lv-hsk1-d10-l1"
+    ],
+    "subtitle_en": "Plans",
+    "subtitle_id": "Plans",
+    "description_en": "Practice plans.",
+    "description_id": "Latihan plans."
+  },
+  {
+    "id": "zh-lv-hsk1-d11",
+    "levelId": "lv-hsk1",
+    "title": "New Home",
+    "subtitle": "New Home",
+    "order": 11,
+    "description": "Practice new home.",
+    "lessonIds": [
+      "zh-lv-hsk1-d11-l1"
+    ],
+    "subtitle_en": "New Home",
+    "subtitle_id": "New Home",
+    "description_en": "Practice new home.",
+    "description_id": "Latihan new home."
+  },
+  {
+    "id": "zh-lv-hsk1-d12",
+    "levelId": "lv-hsk1",
+    "title": "Trip to Beijing",
+    "subtitle": "Trip to Beijing",
+    "order": 12,
+    "description": "Practice trip to beijing.",
+    "lessonIds": [
+      "zh-lv-hsk1-d12-l1"
+    ],
+    "subtitle_en": "Trip to Beijing",
+    "subtitle_id": "Trip to Beijing",
+    "description_en": "Practice trip to beijing.",
+    "description_id": "Latihan trip to beijing."
+  },
+  {
+    "id": "zh-lv-hsk1-d13",
+    "levelId": "lv-hsk1",
+    "title": "Shopping",
+    "subtitle": "Shopping",
+    "order": 13,
+    "description": "Practice shopping.",
+    "lessonIds": [
+      "zh-lv-hsk1-d13-l1"
+    ],
+    "subtitle_en": "Shopping",
+    "subtitle_id": "Shopping",
+    "description_en": "Practice shopping.",
+    "description_id": "Latihan shopping."
+  },
+  {
+    "id": "zh-lv-hsk1-d14",
+    "levelId": "lv-hsk1",
+    "title": "Birthday Present",
+    "subtitle": "Birthday Present",
+    "order": 14,
+    "description": "Practice birthday present.",
+    "lessonIds": [
+      "zh-lv-hsk1-d14-l1"
+    ],
+    "subtitle_en": "Birthday Present",
+    "subtitle_id": "Birthday Present",
+    "description_en": "Practice birthday present.",
+    "description_id": "Latihan birthday present."
+  },
+  {
+    "id": "zh-lv-hsk1-d15",
+    "levelId": "lv-hsk1",
+    "title": "Convenience Store",
+    "subtitle": "Convenience Store",
+    "order": 15,
+    "description": "Practice convenience store.",
+    "lessonIds": [
+      "zh-lv-hsk1-d15-l1"
+    ],
+    "subtitle_en": "Convenience Store",
+    "subtitle_id": "Convenience Store",
+    "description_en": "Practice convenience store.",
+    "description_id": "Latihan convenience store."
+  },
+  {
+    "id": "zh-lv-hsk1-d16",
+    "levelId": "lv-hsk1",
+    "title": "Weekend",
+    "subtitle": "Weekend",
+    "order": 16,
+    "description": "Practice weekend.",
+    "lessonIds": [
+      "zh-lv-hsk1-d16-l1"
+    ],
+    "subtitle_en": "Weekend",
+    "subtitle_id": "Weekend",
+    "description_en": "Practice weekend.",
+    "description_id": "Latihan weekend."
+  },
+  {
+    "id": "zh-lv-hsk1-d17",
+    "levelId": "lv-hsk1",
+    "title": "Greeting 1",
+    "subtitle": "Greeting 1",
+    "order": 17,
+    "description": "Practice greeting 1.",
+    "lessonIds": [
+      "zh-lv-hsk1-d17-l1"
+    ],
+    "subtitle_en": "Greeting 1",
+    "subtitle_id": "Greeting 1",
+    "description_en": "Practice greeting 1.",
+    "description_id": "Latihan greeting 1."
+  },
+  {
+    "id": "zh-lv-hsk1-d18",
+    "levelId": "lv-hsk1",
+    "title": "People",
+    "subtitle": "People",
+    "order": 18,
+    "description": "Practice people.",
+    "lessonIds": [
+      "zh-lv-hsk1-d18-l1"
+    ],
+    "subtitle_en": "People",
+    "subtitle_id": "People",
+    "description_en": "Practice people.",
+    "description_id": "Latihan people."
+  },
+  {
+    "id": "zh-lv-hsk1-d19",
+    "levelId": "lv-hsk1",
+    "title": "Greeting 3",
+    "subtitle": "Greeting 3",
+    "order": 19,
+    "description": "Practice greeting 3.",
+    "lessonIds": [
+      "zh-lv-hsk1-d19-l1"
+    ],
+    "subtitle_en": "Greeting 3",
+    "subtitle_id": "Greeting 3",
+    "description_en": "Practice greeting 3.",
+    "description_id": "Latihan greeting 3."
+  },
+  {
+    "id": "zh-lv-hsk1-d20",
+    "levelId": "lv-hsk1",
+    "title": "Phrases 2",
+    "subtitle": "Phrases 2",
+    "order": 20,
+    "description": "Practice phrases 2.",
+    "lessonIds": [
+      "zh-lv-hsk1-d20-l1"
+    ],
+    "subtitle_en": "Phrases 2",
+    "subtitle_id": "Phrases 2",
+    "description_en": "Practice phrases 2.",
+    "description_id": "Latihan phrases 2."
+  },
+  {
+    "id": "zh-lv-hsk1-d21",
+    "levelId": "lv-hsk1",
+    "title": "Location 2",
+    "subtitle": "Location 2",
+    "order": 21,
+    "description": "Practice location 2.",
+    "lessonIds": [
+      "zh-lv-hsk1-d21-l1"
+    ],
+    "subtitle_en": "Location 2",
+    "subtitle_id": "Location 2",
+    "description_en": "Practice location 2.",
+    "description_id": "Latihan location 2."
+  },
+  {
+    "id": "zh-lv-hsk1-d22",
+    "levelId": "lv-hsk1",
+    "title": "Family 2",
+    "subtitle": "Family 2",
+    "order": 22,
+    "description": "Practice family 2.",
+    "lessonIds": [
+      "zh-lv-hsk1-d22-l1"
+    ],
+    "subtitle_en": "Family 2",
+    "subtitle_id": "Family 2",
+    "description_en": "Practice family 2.",
+    "description_id": "Latihan family 2."
+  },
+  {
+    "id": "zh-lv-hsk1-d23",
+    "levelId": "lv-hsk1",
+    "title": "Time 2",
+    "subtitle": "Time 2",
+    "order": 23,
+    "description": "Practice time 2.",
+    "lessonIds": [
+      "zh-lv-hsk1-d23-l1"
+    ],
+    "subtitle_en": "Time 2",
+    "subtitle_id": "Time 2",
+    "description_en": "Practice time 2.",
+    "description_id": "Latihan time 2."
+  },
+  {
+    "id": "zh-lv-hsk1-d24",
+    "levelId": "lv-hsk1",
+    "title": "Hobbies 1",
+    "subtitle": "Hobbies 1",
+    "order": 24,
+    "description": "Practice hobbies 1.",
+    "lessonIds": [
+      "zh-lv-hsk1-d24-l1"
+    ],
+    "subtitle_en": "Hobbies 1",
+    "subtitle_id": "Hobbies 1",
+    "description_en": "Practice hobbies 1.",
+    "description_id": "Latihan hobbies 1."
+  },
+  {
+    "id": "zh-lv-hsk1-d25",
+    "levelId": "lv-hsk1",
+    "title": "Payment",
+    "subtitle": "Payment",
+    "order": 25,
+    "description": "Practice payment.",
+    "lessonIds": [
+      "zh-lv-hsk1-d25-l1"
+    ],
+    "subtitle_en": "Payment",
+    "subtitle_id": "Payment",
+    "description_en": "Practice payment.",
+    "description_id": "Latihan payment."
+  },
+  {
+    "id": "zh-lv-hsk1-d26",
+    "levelId": "lv-hsk1",
+    "title": "Location 4",
+    "subtitle": "Location 4",
+    "order": 26,
+    "description": "Practice location 4.",
+    "lessonIds": [
+      "zh-lv-hsk1-d26-l1"
+    ],
+    "subtitle_en": "Location 4",
+    "subtitle_id": "Location 4",
+    "description_en": "Practice location 4.",
+    "description_id": "Latihan location 4."
+  },
+  {
+    "id": "zh-lv-hsk1-d27",
+    "levelId": "lv-hsk1",
+    "title": "Supermarket",
+    "subtitle": "Supermarket",
+    "order": 27,
+    "description": "Practice supermarket.",
+    "lessonIds": [
+      "zh-lv-hsk1-d27-l1"
+    ],
+    "subtitle_en": "Supermarket",
+    "subtitle_id": "Supermarket",
+    "description_en": "Practice supermarket.",
+    "description_id": "Latihan supermarket."
+  },
+  {
+    "id": "zh-lv-hsk1-d28",
+    "levelId": "lv-hsk1",
+    "title": "Health 1",
+    "subtitle": "Health 1",
+    "order": 28,
+    "description": "Practice health 1.",
+    "lessonIds": [
+      "zh-lv-hsk1-d28-l1"
+    ],
+    "subtitle_en": "Health 1",
+    "subtitle_id": "Health 1",
+    "description_en": "Practice health 1.",
+    "description_id": "Latihan health 1."
+  },
+  {
+    "id": "zh-lv-hsk1-d29",
+    "levelId": "lv-hsk1",
+    "title": "Shopping 1",
+    "subtitle": "Shopping 1",
+    "order": 29,
+    "description": "Practice shopping 1.",
+    "lessonIds": [
+      "zh-lv-hsk1-d29-l1"
+    ],
+    "subtitle_en": "Shopping 1",
+    "subtitle_id": "Shopping 1",
+    "description_en": "Practice shopping 1.",
+    "description_id": "Latihan shopping 1."
+  },
+  {
+    "id": "zh-lv-hsk1-d30",
+    "levelId": "lv-hsk1",
+    "title": "Time 3",
+    "subtitle": "Time 3",
+    "order": 30,
+    "description": "Practice time 3.",
+    "lessonIds": [
+      "zh-lv-hsk1-d30-l1"
+    ],
+    "subtitle_en": "Time 3",
+    "subtitle_id": "Time 3",
+    "description_en": "Practice time 3.",
+    "description_id": "Latihan time 3."
+  },
+  {
+    "id": "zh-lv-hsk1-d31",
+    "levelId": "lv-hsk1",
+    "title": "Sports 1",
+    "subtitle": "Sports 1",
+    "order": 31,
+    "description": "Practice sports 1.",
+    "lessonIds": [
+      "zh-lv-hsk1-d31-l1"
+    ],
+    "subtitle_en": "Sports 1",
+    "subtitle_id": "Sports 1",
+    "description_en": "Practice sports 1.",
+    "description_id": "Latihan sports 1."
+  },
+  {
+    "id": "zh-lv-hsk1-d32",
+    "levelId": "lv-hsk1",
+    "title": "Invitiation 1",
+    "subtitle": "Invitiation 1",
+    "order": 32,
+    "description": "Practice invitiation 1.",
+    "lessonIds": [
+      "zh-lv-hsk1-d32-l1"
+    ],
+    "subtitle_en": "Invitiation 1",
+    "subtitle_id": "Invitiation 1",
+    "description_en": "Practice invitiation 1.",
+    "description_id": "Latihan invitiation 1."
+  },
+  {
+    "id": "zh-lv-hsk1-d33",
+    "levelId": "lv-hsk1",
+    "title": "Dining 3",
+    "subtitle": "Dining 3",
+    "order": 33,
+    "description": "Practice dining 3.",
+    "lessonIds": [
+      "zh-lv-hsk1-d33-l1"
+    ],
+    "subtitle_en": "Dining 3",
+    "subtitle_id": "Dining 3",
+    "description_en": "Practice dining 3.",
+    "description_id": "Latihan dining 3."
+  },
+  {
+    "id": "zh-lv-hsk1-d34",
+    "levelId": "lv-hsk1",
+    "title": "Body Parts",
+    "subtitle": "Body Parts",
+    "order": 34,
+    "description": "Practice body parts.",
+    "lessonIds": [
+      "zh-lv-hsk1-d34-l1"
+    ],
+    "subtitle_en": "Body Parts",
+    "subtitle_id": "Body Parts",
+    "description_en": "Practice body parts.",
+    "description_id": "Latihan body parts."
+  },
+  {
+    "id": "zh-lv-hsk1-d35",
+    "levelId": "lv-hsk1",
+    "title": "Travel 1",
+    "subtitle": "Travel 1",
+    "order": 35,
+    "description": "Practice travel 1.",
+    "lessonIds": [
+      "zh-lv-hsk1-d35-l1"
+    ],
+    "subtitle_en": "Travel 1",
+    "subtitle_id": "Travel 1",
+    "description_en": "Practice travel 1.",
+    "description_id": "Latihan travel 1."
+  },
+  {
+    "id": "zh-lv-hsk1-d36",
+    "levelId": "lv-hsk1",
+    "title": "People 2",
+    "subtitle": "People 2",
+    "order": 36,
+    "description": "Practice people 2.",
+    "lessonIds": [
+      "zh-lv-hsk1-d36-l1"
+    ],
+    "subtitle_en": "People 2",
+    "subtitle_id": "People 2",
+    "description_en": "Practice people 2.",
+    "description_id": "Latihan people 2."
+  },
+  {
+    "id": "zh-lv-hsk1-d37",
+    "levelId": "lv-hsk1",
+    "title": "Sports 2",
+    "subtitle": "Sports 2",
+    "order": 37,
+    "description": "Practice sports 2.",
+    "lessonIds": [
+      "zh-lv-hsk1-d37-l1"
+    ],
+    "subtitle_en": "Sports 2",
+    "subtitle_id": "Sports 2",
+    "description_en": "Practice sports 2.",
+    "description_id": "Latihan sports 2."
+  },
+  {
+    "id": "zh-lv-hsk1-d38",
+    "levelId": "lv-hsk1",
+    "title": "Fam. 3",
+    "subtitle": "Fam. 3",
+    "order": 38,
+    "description": "Practice fam. 3.",
+    "lessonIds": [
+      "zh-lv-hsk1-d38-l1"
+    ],
+    "subtitle_en": "Fam. 3",
+    "subtitle_id": "Fam. 3",
+    "description_en": "Practice fam. 3.",
+    "description_id": "Latihan fam. 3."
+  },
+  {
+    "id": "zh-lv-hsk1-d39",
+    "levelId": "lv-hsk1",
+    "title": "Time 4",
+    "subtitle": "Time 4",
+    "order": 39,
+    "description": "Practice time 4.",
+    "lessonIds": [
+      "zh-lv-hsk1-d39-l1"
+    ],
+    "subtitle_en": "Time 4",
+    "subtitle_id": "Time 4",
+    "description_en": "Practice time 4.",
+    "description_id": "Latihan time 4."
+  },
+  {
+    "id": "zh-lv-hsk1-d40",
+    "levelId": "lv-hsk1",
+    "title": "Daily Routine 2",
+    "subtitle": "Daily Routine 2",
+    "order": 40,
+    "description": "Practice daily routine 2.",
+    "lessonIds": [
+      "zh-lv-hsk1-d40-l1"
+    ],
+    "subtitle_en": "Daily Routine 2",
+    "subtitle_id": "Daily Routine 2",
+    "description_en": "Practice daily routine 2.",
+    "description_id": "Latihan daily routine 2."
+  },
+  {
+    "id": "zh-lv-hsk1-d41",
+    "levelId": "lv-hsk1",
+    "title": "People 3",
+    "subtitle": "People 3",
+    "order": 41,
+    "description": "Practice people 3.",
+    "lessonIds": [
+      "zh-lv-hsk1-d41-l1"
+    ],
+    "subtitle_en": "People 3",
+    "subtitle_id": "People 3",
+    "description_en": "Practice people 3.",
+    "description_id": "Latihan people 3."
+  },
+  {
+    "id": "zh-lv-hsk1-d42",
+    "levelId": "lv-hsk1",
+    "title": "Travel 2",
+    "subtitle": "Travel 2",
+    "order": 42,
+    "description": "Practice travel 2.",
+    "lessonIds": [
+      "zh-lv-hsk1-d42-l1"
+    ],
+    "subtitle_en": "Travel 2",
+    "subtitle_id": "Travel 2",
+    "description_en": "Practice travel 2.",
+    "description_id": "Latihan travel 2."
+  },
+  {
+    "id": "zh-lv-hsk1-d43",
+    "levelId": "lv-hsk1",
+    "title": "Personality and Feelings",
+    "subtitle": "Personality and Feelings",
+    "order": 43,
+    "description": "Practice personality and feelings.",
+    "lessonIds": [
+      "zh-lv-hsk1-d43-l1"
+    ],
+    "subtitle_en": "Personality and Feelings",
+    "subtitle_id": "Personality and Feelings",
+    "description_en": "Practice personality and feelings.",
+    "description_id": "Latihan personality and feelings."
+  },
+  {
+    "id": "zh-lv-hsk1-d44",
+    "levelId": "lv-hsk1",
+    "title": "Future",
+    "subtitle": "Future",
+    "order": 44,
+    "description": "Practice future.",
+    "lessonIds": [
+      "zh-lv-hsk1-d44-l1"
+    ],
+    "subtitle_en": "Future",
+    "subtitle_id": "Future",
+    "description_en": "Practice future.",
+    "description_id": "Latihan future."
+  },
+  {
+    "id": "zh-lv-hsk1-d45",
+    "levelId": "lv-hsk1",
+    "title": "Work",
+    "subtitle": "Work",
+    "order": 45,
+    "description": "Practice work.",
+    "lessonIds": [
+      "zh-lv-hsk1-d45-l1"
+    ],
+    "subtitle_en": "Work",
+    "subtitle_id": "Work",
+    "description_en": "Practice work.",
+    "description_id": "Latihan work."
+  },
+  {
+    "id": "zh-lv-hsk1-d46",
+    "levelId": "lv-hsk1",
+    "title": "Hobbies 3",
+    "subtitle": "Hobbies 3",
+    "order": 46,
+    "description": "Practice hobbies 3.",
+    "lessonIds": [
+      "zh-lv-hsk1-d46-l1"
+    ],
+    "subtitle_en": "Hobbies 3",
+    "subtitle_id": "Hobbies 3",
+    "description_en": "Practice hobbies 3.",
+    "description_id": "Latihan hobbies 3."
+  },
+  {
+    "id": "zh-lv-hsk1-d47",
+    "levelId": "lv-hsk1",
+    "title": "Exam",
+    "subtitle": "Exam",
+    "order": 47,
+    "description": "Practice exam.",
+    "lessonIds": [
+      "zh-lv-hsk1-d47-l1"
+    ],
+    "subtitle_en": "Exam",
+    "subtitle_id": "Exam",
+    "description_en": "Practice exam.",
+    "description_id": "Latihan exam."
+  },
+  {
+    "id": "zh-lv-hsk1-d48",
+    "levelId": "lv-hsk1",
+    "title": "Travel 4",
+    "subtitle": "Travel 4",
+    "order": 48,
+    "description": "Practice travel 4.",
+    "lessonIds": [
+      "zh-lv-hsk1-d48-l1"
+    ],
+    "subtitle_en": "Travel 4",
+    "subtitle_id": "Travel 4",
+    "description_en": "Practice travel 4.",
+    "description_id": "Latihan travel 4."
+  },
+  {
+    "id": "zh-lv-hsk1-d49",
+    "levelId": "lv-hsk1",
+    "title": "Festivals",
+    "subtitle": "Festivals",
+    "order": 49,
+    "description": "Practice festivals.",
+    "lessonIds": [
+      "zh-lv-hsk1-d49-l1"
+    ],
+    "subtitle_en": "Festivals",
+    "subtitle_id": "Festivals",
+    "description_en": "Practice festivals.",
+    "description_id": "Latihan festivals."
+  },
+  {
+    "id": "zh-lv-hsk1-d50",
+    "levelId": "lv-hsk1",
+    "title": "Internet Slang",
+    "subtitle": "Internet Slang",
+    "order": 50,
+    "description": "Practice internet slang.",
+    "lessonIds": [
+      "zh-lv-hsk1-d50-l1"
+    ],
+    "subtitle_en": "Internet Slang",
+    "subtitle_id": "Internet Slang",
+    "description_en": "Practice internet slang.",
+    "description_id": "Latihan internet slang."
+  },
+  {
+    "id": "zh-lv-hsk1-d51",
+    "levelId": "lv-hsk1",
+    "title": "Business 2",
+    "subtitle": "Business 2",
+    "order": 51,
+    "description": "Practice business 2.",
+    "lessonIds": [
+      "zh-lv-hsk1-d51-l1"
+    ],
+    "subtitle_en": "Business 2",
+    "subtitle_id": "Business 2",
+    "description_en": "Practice business 2.",
+    "description_id": "Latihan business 2."
+  },
+  {
+    "id": "zh-lv-hsk1-d52",
+    "levelId": "lv-hsk1",
+    "title": "Work 3",
+    "subtitle": "Work 3",
+    "order": 52,
+    "description": "Practice work 3.",
+    "lessonIds": [
+      "zh-lv-hsk1-d52-l1"
+    ],
+    "subtitle_en": "Work 3",
+    "subtitle_id": "Work 3",
+    "description_en": "Practice work 3.",
+    "description_id": "Latihan work 3."
   }
 ]
