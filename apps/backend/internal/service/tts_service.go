@@ -83,7 +83,7 @@ func NewTTSService(cfg config.TTSConfig, store *storage.StorageService, audioRep
 	return svc
 }
 
-func (s *TTSService) Synthesize(ctx context.Context, text, locale, gender string) (*models.AudioRecord, error) {
+func (s *TTSService) Synthesize(ctx context.Context, text, locale, gender string) (*models.AudioRecord, bool, error) {
 	if locale == "" {
 		locale = "zh-CN"
 	}
@@ -95,7 +95,7 @@ func (s *TTSService) Synthesize(ctx context.Context, text, locale, gender string
 
 	existing, err := s.audioRepo.FindByTextHash(ctx, textHash)
 	if err == nil && existing != nil {
-		return existing, nil
+		return existing, true, nil
 	}
 
 	// singleflight dedups concurrent requests for the same text+locale+gender:
@@ -143,9 +143,9 @@ func (s *TTSService) Synthesize(ctx context.Context, text, locale, gender string
 		return nil, fmt.Errorf("all TTS providers failed: %w", lastErr)
 	})
 	if err != nil {
-		return nil, err
+		return nil, false, err
 	}
-	return v.(*models.AudioRecord), nil
+	return v.(*models.AudioRecord), false, nil
 }
 
 func (s *TTSService) hashKey(text, locale, gender string) string {
@@ -154,7 +154,7 @@ func (s *TTSService) hashKey(text, locale, gender string) string {
 }
 
 func (s *TTSService) GetVoiceURL(ctx context.Context, text, locale, gender string) (string, error) {
-	record, err := s.Synthesize(ctx, text, locale, gender)
+	record, _, err := s.Synthesize(ctx, text, locale, gender)
 	if err != nil {
 		return "", err
 	}

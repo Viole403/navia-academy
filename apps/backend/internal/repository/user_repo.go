@@ -128,8 +128,8 @@ func (r *UserRepository) UpdateRole(ctx context.Context, userID, role string) er
 // ListAll returns a page of users (id, name, email, role, created_at) for the
 // admin user registry. Bounded pagination keeps the response small at scale.
 func (r *UserRepository) ListAll(ctx context.Context, limit, offset int) ([]models.User, error) {
-	if limit <= 0 || limit > 200 {
-		limit = 100
+	if limit <= 0 || limit > 500 {
+		limit = 500
 	}
 	if offset < 0 {
 		offset = 0

@@ -89,6 +89,12 @@ func (h *TTSHandler) Synthesize(c *fiber.Ctx) error {
 	if req.Text == "" {
 		return response.Error(c, fiber.StatusBadRequest, "MISSING_TEXT", "text is required")
 	}
+	// Cap text length: a single synthesis hits paid providers (Google/Azure);
+	// an unbounded body turns the 10/min rate limit into a cost amplification
+	// vector. ~4k chars is generous for any real learning sentence.
+	if len(req.Text) > 4096 {
+		return response.Error(c, fiber.StatusBadRequest, "TEXT_TOO_LONG", "text exceeds the 4096 character limit")
+	}
 	if req.Locale == "" {
 		req.Locale = "zh-CN"
 	}
@@ -96,12 +102,16 @@ func (h *TTSHandler) Synthesize(c *fiber.Ctx) error {
 		req.Gender = "female"
 	}
 
-	record, err := h.ttsService.Synthesize(c.Context(), req.Text, req.Locale, req.Gender)
+	record, cacheHit, err := h.ttsService.Synthesize(c.Context(), req.Text, req.Locale, req.Gender)
 	if err != nil {
 		return response.Error(c, fiber.StatusInternalServerError, "TTS_FAILED", err.Error())
 	}
 
-	c.Set("X-TTS-Cache", "miss")
+	cacheHeader := "miss"
+	if cacheHit {
+		cacheHeader = "hit"
+	}
+	c.Set("X-TTS-Cache", cacheHeader)
 	return response.JSON(c, fiber.StatusOK, fiber.Map{
 		"url":      record.URL,
 		"text":     record.Text,

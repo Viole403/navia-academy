@@ -42,12 +42,12 @@ func NewAdminHandler(userRepo *repository.UserRepository) *AdminHandler {
 // @Failure 500 {object} response.APIError "FETCH_FAILED"
 // @Router /admin/users [get]
 func (h *AdminHandler) ListUsers(c *fiber.Ctx) error {
-	limit, _ := strconv.Atoi(c.Query("limit", "100"))
-	if limit > 200 {
-		limit = 200
+	limit, _ := strconv.Atoi(c.Query("limit", "500"))
+	if limit > 500 {
+		limit = 500
 	}
 	if limit <= 0 {
-		limit = 100
+		limit = 500
 	}
 	offset, _ := strconv.Atoi(c.Query("offset", "0"))
 	if offset < 0 {
