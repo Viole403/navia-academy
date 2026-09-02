@@ -73,9 +73,11 @@ export function useCurriculum(): CurriculumBundle {
   const [snapshot, setSnapshot] = useState<CurriculumBundle>(getCurriculum())
 
   useEffect(() => {
-    hydrateCurriculum().catch(() => {
-      // non-fatal
-    })
+    hydrateCurriculum()
+      .then(() => setSnapshot(getCurriculum()))
+      .catch(() => {
+        // non-fatal
+      })
     const unsubscribe = subscribeCurriculum(() => setSnapshot(getCurriculum()))
     return unsubscribe
   }, [])
