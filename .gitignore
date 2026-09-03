@@ -22,4 +22,4 @@ tmp/
 coverage/
 
 # husky auto-generated runtime files
-.husky/_
+.husky/_.kilo/
