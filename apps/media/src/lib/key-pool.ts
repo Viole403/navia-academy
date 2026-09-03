@@ -6,7 +6,13 @@
  * `tts_api_keys`) that only the service-role key can read. The CLI, GitHub
  * Actions, and the dashboard API routes all reach the same tables via
  * PostgREST, so a key edited in the dashboard is used by every consumer.
+ *
+ * AES-256-GCM encryption is applied to api_key columns when
+ * MEDIA_KEY_ENCRYPTION_KEY is set. Without it the pool stays plaintext
+ * (backward-compatible with existing local/CI data).
  */
+
+import { createCipheriv, createDecipheriv, randomBytes } from "node:crypto"
 
 export const POOL_CACHE_TTL_MS = 60_000
 export const DEFAULT_COOLDOWN_MS = 10 * 60_000
@@ -28,6 +34,42 @@ export function dbConfigured(): boolean {
     process.env.CONTENT_SUPABASE_URL &&
     process.env.CONTENT_SUPABASE_SERVICE_ROLE_KEY
   )
+}
+
+function getEncryptionKey(): Buffer | null {
+  const key = process.env.MEDIA_KEY_ENCRYPTION_KEY
+  if (!key) return null
+  return Buffer.from(key, "base64") // must be 32 bytes (256-bit)
+}
+
+/** Decrypt a ciphertext stored in the DB. Returns plaintext on success. */
+function decryptSecret(ciphertext: string): string {
+  const key = getEncryptionKey()
+  if (!key) return ciphertext
+  try {
+    const [version, ivHex, tagHex, ...rest] = ciphertext.split(":")
+    if (version !== "enc:v1") throw new Error("unknown version")
+    const iv = Buffer.from(ivHex, "hex")
+    const tag = Buffer.from(tagHex, "hex")
+    const encrypted = rest.join(":")
+    const decipher = createDecipheriv("aes-256-gcm", key, iv)
+    decipher.setAuthTag(tag)
+    return decipher.update(encrypted, "base64", "utf8") + decipher.final("utf8")
+  } catch {
+    return ciphertext // legacy plaintext
+  }
+}
+
+/** Encrypt a plaintext secret for storage. Returns ciphertext prefixed with version. */
+function encryptSecret(plaintext: string): string {
+  const key = getEncryptionKey()
+  if (!key) return plaintext
+  const iv = randomBytes(12)
+  const cipher = createCipheriv("aes-256-gcm", key, iv)
+  const encrypted =
+    cipher.update(plaintext, "utf8", "base64") + cipher.final("base64")
+  const tag = cipher.getAuthTag()
+  return `enc:v1:${iv.toString("hex")}:${tag.toString("hex")}:${encrypted}`
 }
 
 export function supabaseUrl(): string {
@@ -78,7 +120,8 @@ export async function fetchPoolRows<T extends PooledRow>(
     throw new Error(
       `Failed to read ${table} (${res.status}): ${await res.text()}`
     )
-  return (await res.json()) as T[]
+  const rows: T[] = await res.json()
+  return rows.map((r) => ({ ...r, api_key: decryptSecret(r.api_key) })) as T[]
 }
 
 /** Upsert a row by the unique (provider, name) constraint. */
@@ -86,13 +129,16 @@ export async function upsertPoolRow(
   table: string,
   row: Record<string, unknown>
 ): Promise<PooledRow> {
+  const body = { ...row }
+  if (typeof body.api_key === "string" && body.api_key)
+    body.api_key = encryptSecret(body.api_key)
   const res = await fetch(`${supabaseUrl()}/rest/v1/${table}`, {
     method: "POST",
     headers: {
       ...authHeaders(),
       Prefer: "resolution=merge-duplicates,return=representation",
     },
-    body: JSON.stringify(row),
+    body: JSON.stringify(body),
   })
   if (!res.ok)
     throw new Error(
@@ -107,10 +153,13 @@ export async function patchPoolRow(
   id: string,
   patch: Record<string, unknown>
 ): Promise<void> {
+  const body: Record<string, unknown> = { ...patch }
+  if (typeof body.api_key === "string" && body.api_key)
+    body.api_key = encryptSecret(body.api_key)
   const res = await fetch(`${supabaseUrl()}/rest/v1/${table}?id=eq.${id}`, {
     method: "PATCH",
     headers: { ...authHeaders(), Prefer: "return=minimal" },
-    body: JSON.stringify(patch),
+    body: JSON.stringify(body),
   })
   if (!res.ok)
     throw new Error(
@@ -125,11 +174,14 @@ export async function patchPoolRowByProviderName(
   name: string,
   patch: Record<string, unknown>
 ): Promise<void> {
+  const body: Record<string, unknown> = { ...patch }
+  if (typeof body.api_key === "string" && body.api_key)
+    body.api_key = encryptSecret(body.api_key)
   const q = `provider=eq.${encodeURIComponent(provider)}&name=eq.${encodeURIComponent(name)}`
   const res = await fetch(`${supabaseUrl()}/rest/v1/${table}?${q}`, {
     method: "PATCH",
     headers: { ...authHeaders(), Prefer: "return=minimal" },
-    body: JSON.stringify(patch),
+    body: JSON.stringify(body),
   })
   if (!res.ok)
     throw new Error(

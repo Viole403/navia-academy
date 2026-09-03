@@ -15,9 +15,7 @@ export async function POST(request: NextRequest) {
     const res = await generateAudioBatch({ limit, dryRun })
     return Response.json(res)
   } catch (err) {
-    return Response.json(
-      { error: err instanceof Error ? err.message : "audio generation failed" },
-      { status: 500 }
-    )
+    console.error("[generate/audio]", err)
+    return Response.json({ error: "audio generation failed" }, { status: 500 })
   }
 }

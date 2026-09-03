@@ -49,9 +49,12 @@ export async function POST(request: NextRequest) {
     const res = await generateImageBatch({ limit, dryRun })
     return Response.json(res)
   } catch (err) {
+    console.error("[generate/images]", err)
+    const status =
+      err instanceof Error && "SERVICE_BUSY" in err.message ? 503 : 500
     return Response.json(
-      { error: err instanceof Error ? err.message : "image generation failed" },
-      { status: 500 }
+      { error: status === 503 ? "SERVICE_BUSY" : "image generation failed" },
+      { status }
     )
   }
 }
