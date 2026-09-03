@@ -1,7 +1,7 @@
 "use client"
 
 import { create } from "zustand"
-import { API_BASE_URL, authHeaders } from "@/lib/api"
+import { API_BASE_URL, authHeaders, putWithAuthRetry } from "@/lib/api"
 import type {
   AssessmentAttempt,
   LanguageCode,
@@ -469,16 +469,8 @@ export function syncProgressToServer(state: ProgressState) {
   setPendingSync(true)
   if (syncTimer) clearTimeout(syncTimer)
   syncTimer = setTimeout(async () => {
-    try {
-      const res = await fetch(`${API_BASE_URL}/api/v1/progress`, {
-        method: "PUT",
-        headers: authHeaders(),
-        body: serialized,
-      })
-      if (res.ok) setPendingSync(false)
-    } catch {
-      /* offline — stays pending; retried on the next change or `online` event */
-    }
+    if (await putWithAuthRetry("/api/v1/progress", serialized))
+      setPendingSync(false)
   }, SYNC_DELAY)
 }
 
@@ -488,18 +480,12 @@ export function retryProgressSync() {
   const state = useProgress.getState()
   if (!state.hydrated || suppressSync) return
   const serialized = JSON.stringify(extractData(state))
-  fetch(`${API_BASE_URL}/api/v1/progress`, {
-    method: "PUT",
-    headers: authHeaders(),
-    body: serialized,
+  putWithAuthRetry("/api/v1/progress", serialized).then((ok) => {
+    if (ok) {
+      setPendingSync(false)
+      lastSynced = serialized
+    }
   })
-    .then((res) => {
-      if (res.ok) {
-        setPendingSync(false)
-        lastSynced = serialized
-      }
-    })
-    .catch(() => {})
 }
 
 /** Re-arm syncing after a load and record the loaded state as the baseline. */

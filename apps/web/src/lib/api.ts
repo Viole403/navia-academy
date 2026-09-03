@@ -30,6 +30,31 @@ export function authFetch(path: string, init?: RequestInit): Promise<Response> {
   })
 }
 
+/**
+ * PUT with Bearer token that refreshes the session once on 401 and retries.
+ * Returns true when the server accepted the payload. Used by the offline-sync
+ * stores, which use raw fetch() and would otherwise leave the pending flag
+ * stuck after the short-lived access token expires.
+ */
+export async function putWithAuthRetry(
+  path: string,
+  body: string
+): Promise<boolean> {
+  const attempt = () =>
+    fetch(`${API_BASE_URL}${path}`, {
+      method: "PUT",
+      headers: authHeaders(),
+      body,
+    })
+  try {
+    let res = await attempt()
+    if (res.status === 401 && (await refreshSession())) res = await attempt()
+    return res.ok
+  } catch {
+    return false
+  }
+}
+
 interface Envelope<T> {
   success: boolean
   data?: T

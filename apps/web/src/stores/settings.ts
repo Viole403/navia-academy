@@ -1,7 +1,7 @@
 "use client"
 
 import { create } from "zustand"
-import { API_BASE_URL, authHeaders } from "@/lib/api"
+import { API_BASE_URL, authHeaders, putWithAuthRetry } from "@/lib/api"
 import type {
   DisplayMode,
   DisplayModeMode,
@@ -219,16 +219,8 @@ export function syncSettingsToServer(state: SettingsState) {
   setPendingSync(true)
   if (syncTimer) clearTimeout(syncTimer)
   syncTimer = setTimeout(async () => {
-    try {
-      const res = await fetch(`${API_BASE_URL}/api/v1/settings`, {
-        method: "PUT",
-        headers: authHeaders(),
-        body: serialized,
-      })
-      if (res.ok) setPendingSync(false)
-    } catch {
-      /* offline — stays pending; retried on the next change or `online` event */
-    }
+    if (await putWithAuthRetry("/api/v1/settings", serialized))
+      setPendingSync(false)
   }, SYNC_DELAY)
 }
 
@@ -238,18 +230,12 @@ export function retrySettingsSync() {
   const state = useSettings.getState()
   if (!state.hydrated || suppressSync) return
   const serialized = JSON.stringify(extractData(state))
-  fetch(`${API_BASE_URL}/api/v1/settings`, {
-    method: "PUT",
-    headers: authHeaders(),
-    body: serialized,
+  putWithAuthRetry("/api/v1/settings", serialized).then((ok) => {
+    if (ok) {
+      setPendingSync(false)
+      lastSynced = serialized
+    }
   })
-    .then((res) => {
-      if (res.ok) {
-        setPendingSync(false)
-        lastSynced = serialized
-      }
-    })
-    .catch(() => {})
 }
 
 /** Re-arm syncing after a load and record the loaded state as the baseline. */
