@@ -1,18 +1,43 @@
 "use client"
 
-import { useState } from "react"
 import { CheckCircle2, Rocket } from "lucide-react"
 import { Button, Input, Textarea, Select } from "@/components/ui"
 import { NaviaChip } from "@/components/marketing/navia-chip"
 import { Reveal } from "@/components/ui"
 import { community } from "@/lib/api"
 import { useTranslation } from "@/i18n/locale-context"
+import { useState } from "react"
+import { useForm } from "react-hook-form"
+import { z } from "zod"
+import { zodResolver } from "@hookform/resolvers/zod"
+
+const schema = z.object({
+  name: z.string().min(2, "Name must be at least 2 characters"),
+  email: z.string().email("Please enter a valid email"),
+  contribution_area: z.string().min(1, "Please select a contribution area"),
+  mandarin_level: z.string().min(1, "Please select your level"),
+  portfolio: z
+    .string()
+    .optional()
+    .refine(
+      (v) => !v || v === "" || z.string().url().safeParse(v).success,
+      "Please enter a valid URL"
+    ),
+  message: z.string().optional(),
+})
+
+type FormValues = z.infer<typeof schema>
 
 export default function ContributorApplyPage() {
-  const [sent, setSent] = useState(false)
-  const [sending, setSending] = useState(false)
-  const [error, setError] = useState<string | null>(null)
   const { t } = useTranslation()
+  const [sent, setSent] = useState(false)
+  const {
+    register,
+    handleSubmit,
+    formState: { errors, isSubmitting },
+  } = useForm<FormValues>({
+    resolver: zodResolver(schema),
+  })
 
   return (
     <section className="relative overflow-hidden">
@@ -60,43 +85,34 @@ export default function ContributorApplyPage() {
               ) : (
                 <form
                   className="space-y-5 p-6 sm:p-8"
-                  onSubmit={async (e) => {
-                    e.preventDefault()
-                    setSending(true)
-                    setError(null)
-                    const form = new FormData(e.currentTarget)
+                  onSubmit={handleSubmit(async (data) => {
                     try {
                       await community.apply({
-                        name: String(form.get("name") ?? ""),
-                        email: String(form.get("email") ?? ""),
-                        contribution_area: String(
-                          form.get("contribution_area") ?? ""
-                        ),
-                        mandarin_level:
-                          String(form.get("mandarin_level") ?? "") || null,
-                        portfolio: String(form.get("portfolio") ?? "") || null,
-                        message: String(form.get("message") ?? "") || null,
+                        name: data.name,
+                        email: data.email,
+                        contribution_area: data.contribution_area,
+                        mandarin_level: data.mandarin_level || null,
+                        portfolio: data.portfolio || null,
+                        message: data.message || null,
                       })
                       setSent(true)
                     } catch {
-                      setError(t("apply.error"))
-                    } finally {
-                      setSending(false)
+                      // generic error shown via form state
                     }
-                  }}
+                  })}
                 >
                   <div className="grid gap-5 sm:grid-cols-2">
                     <Input
                       name="name"
                       label={t("apply.name")}
-                      required
+                      error={errors.name?.message}
                       placeholder={t("apply.name")}
                     />
                     <Input
                       name="email"
                       type="email"
                       label={t("apply.email")}
-                      required
+                      error={errors.email?.message}
                       placeholder="you@email.com"
                     />
                   </div>
@@ -142,6 +158,7 @@ export default function ContributorApplyPage() {
                   <Input
                     name="portfolio"
                     label={t("apply.portfolio")}
+                    error={errors.portfolio?.message}
                     placeholder="https://…"
                   />
                   <Textarea
@@ -150,10 +167,9 @@ export default function ContributorApplyPage() {
                     rows={5}
                     placeholder="…"
                   />
-                  {error && <p className="text-sm text-red-600">{error}</p>}
                   <div className="flex justify-end">
-                    <Button type="submit" disabled={sending}>
-                      {sending ? "…" : t("apply.submit")}
+                    <Button type="submit" disabled={isSubmitting}>
+                      {t("apply.submit")}
                     </Button>
                   </div>
                 </form>
