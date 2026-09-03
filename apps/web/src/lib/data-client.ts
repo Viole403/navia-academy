@@ -62,11 +62,10 @@ const isServer = typeof window === "undefined"
 
 /** Resolve an absolute fetch URL for a CDN object. The `data` prefix belongs to the CDN base. */
 export function dataUrl(path: string): string {
-  let base = `${CDN_URL.replace(/\/+$/, "")}/${DATA_CDN_PREFIX}`
-  if (base.startsWith("/") && isServer) {
-    base = `${(process.env.NEXT_PUBLIC_SITE_URL ?? "").replace(/\/+$/, "")}${base}`
-  }
-  return `${base}/${path}`
+  const base = CDN_URL
+    ? `${CDN_URL.replace(/\/+$/, "")}/${DATA_CDN_PREFIX}`
+    : (process.env.NEXT_PUBLIC_SITE_URL ?? "")
+  return `${base.replace(/\/+$/, "")}/${path}`
 }
 
 async function fromCacheStorage<T>(path: string): Promise<T | undefined> {
