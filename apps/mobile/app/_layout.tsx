@@ -7,6 +7,7 @@ import { ThemeProvider, useTheme } from "@/theme/ThemeProvider"
 import { useAuthStore } from "@/store/auth"
 import { getTokens } from "@/utils/secure"
 import { auth } from "@/api/endpoints"
+import { ErrorBoundary } from "@/components/ui/ErrorBoundary"
 import "../global.css"
 
 const queryClient = new QueryClient({
@@ -54,12 +55,14 @@ export default function RootLayout() {
   }, [setAuth, setTokens, markHydrated])
 
   return (
-    <GestureHandlerRootView style={{ flex: 1 }}>
-      <QueryClientProvider client={queryClient}>
-        <ThemeProvider>
-          <AppShell />
-        </ThemeProvider>
-      </QueryClientProvider>
-    </GestureHandlerRootView>
+    <ErrorBoundary>
+      <GestureHandlerRootView style={{ flex: 1 }}>
+        <QueryClientProvider client={queryClient}>
+          <ThemeProvider>
+            <AppShell />
+          </ThemeProvider>
+        </QueryClientProvider>
+      </GestureHandlerRootView>
+    </ErrorBoundary>
   )
 }
