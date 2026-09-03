@@ -1,54 +1,12 @@
 import type { NextConfig } from "next"
 import path from "path"
 
-function originOf(raw: string | undefined, fallback: string): string {
-  try {
-    return new URL(raw && raw.trim() ? raw : fallback).origin
-  } catch {
-    return new URL(fallback).origin
-  }
-}
-
-const apiOrigin = originOf(
-  process.env.NEXT_PUBLIC_API_BASE_URL,
-  "http://localhost:8080"
-)
-const dataOrigin = originOf(
-  process.env.NEXT_PUBLIC_DATA_CDN_URL,
-  "http://localhost:9000"
-)
-const audioOrigin = originOf(
-  process.env.NEXT_PUBLIC_AUDIO_CDN_URL ??
-    process.env.NEXT_PUBLIC_AUDIO_BASE_URL,
-  "http://localhost:9000"
-)
-const imageOrigin = originOf(
-  process.env.NEXT_PUBLIC_IMAGE_BASE_URL,
-  "http://localhost:9000"
-)
-
-// Unique origins, stable order.
-const contentOrigins = [...new Set([dataOrigin, audioOrigin, imageOrigin])]
-const contentSrc = contentOrigins.join(" ")
-
+// NOTE: Content-Security-Policy is owned by src/proxy.ts, which mints a
+// per-request nonce (strict script-src, Next.js stamps the nonce onto the
+// scripts it renders). A static header here would intersect with it and
+// defeat the nonce, so only the non-CSP hardening headers live here.
 const securityHeaders = [
   { key: "X-DNS-Prefetch-Control", value: "on" },
-  {
-    key: "Content-Security-Policy",
-    value: [
-      "default-src 'self'",
-      "base-uri 'self'",
-      "object-src 'none'",
-      "frame-ancestors 'none'",
-      "form-action 'self'",
-      "script-src 'self' 'unsafe-inline' 'unsafe-eval'",
-      "style-src 'self' 'unsafe-inline'",
-      `img-src 'self' data: https: ${contentSrc}`,
-      `connect-src 'self' ${apiOrigin} ${contentSrc}`,
-      `media-src 'self' ${contentSrc}`,
-      "font-src 'self'",
-    ].join("; "),
-  },
   {
     key: "Strict-Transport-Security",
     value: "max-age=63072000; includeSubDomains; preload",
