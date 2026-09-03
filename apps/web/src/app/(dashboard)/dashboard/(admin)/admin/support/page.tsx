@@ -1,7 +1,7 @@
 "use client"
 
 import { useCallback, useEffect, useState } from "react"
-import { API_BASE_URL, authFetch } from "@/lib/api"
+import { authFetch } from "@/lib/api"
 import { Badge, Button, Spinner } from "@/components/ui"
 import { Copy, RefreshCw } from "lucide-react"
 
@@ -46,12 +46,8 @@ export default function AdminSupportPage() {
   const load = useCallback(() => {
     setLoading(true)
     Promise.all([
-      authFetch(`${API_BASE_URL}/api/v1/admin/support/config`).then((r) =>
-        r.json()
-      ),
-      authFetch(`${API_BASE_URL}/api/v1/admin/supporters?limit=100`).then((r) =>
-        r.json()
-      ),
+      authFetch(`/api/v1/admin/support/config`).then((r) => r.json()),
+      authFetch(`/api/v1/admin/supporters?limit=100`).then((r) => r.json()),
     ])
       .then(([cfg, sup]) => {
         setConfig(cfg.data ?? null)

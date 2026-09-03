@@ -1,7 +1,7 @@
 "use client"
 
 import { useEffect, useState, useCallback } from "react"
-import { API_BASE_URL, authFetch } from "@/lib/api"
+import { authFetch } from "@/lib/api"
 import {
   Button,
   Badge,
@@ -37,13 +37,13 @@ export default function AdminSponsorsPage() {
 
   const fetchData = useCallback(() => {
     setLoading(true)
-    authFetch(`${API_BASE_URL}/api/v1/sponsors?limit=100`)
+    authFetch(`/api/v1/sponsors?limit=100`)
       .then((r) => r.json())
       .then((env: { data?: Sponsor[] }) => {
         const all = env.data ?? []
         return Promise.all(
           all.map((s) =>
-            authFetch(`${API_BASE_URL}/api/v1/sponsors/${s.id}`)
+            authFetch(`/api/v1/sponsors/${s.id}`)
               .then((r) => r.json())
               .then((e2: { data?: Sponsor }) => e2.data ?? s)
               .catch(() => s)
@@ -61,7 +61,7 @@ export default function AdminSponsorsPage() {
   }, [fetchData])
 
   const toggleActive = async (id: string, current: boolean) => {
-    await authFetch(`${API_BASE_URL}/api/v1/sponsors/${id}`, {
+    await authFetch(`/api/v1/sponsors/${id}`, {
       method: "PUT",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ is_active: !current }),
@@ -70,7 +70,7 @@ export default function AdminSponsorsPage() {
   }
 
   const softDelete = async (id: string) => {
-    await authFetch(`${API_BASE_URL}/api/v1/sponsors/${id}`, {
+    await authFetch(`/api/v1/sponsors/${id}`, {
       method: "DELETE",
     })
     fetchData()
@@ -216,7 +216,7 @@ function AddSponsorForm({ onClose }: { onClose: () => void }) {
     setSaving(true)
     const form = e.currentTarget as HTMLFormElement
     const fd = new FormData(form)
-    await authFetch(`${API_BASE_URL}/api/v1/sponsors`, {
+    await authFetch(`/api/v1/sponsors`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
@@ -274,7 +274,7 @@ function EditSponsorForm({
 
   const save = async () => {
     setSaving(true)
-    await authFetch(`${API_BASE_URL}/api/v1/sponsors/${sponsor.id}`, {
+    await authFetch(`/api/v1/sponsors/${sponsor.id}`, {
       method: "PUT",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ name, tier, description }),

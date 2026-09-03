@@ -3,7 +3,7 @@
 import { useEffect, useState, useCallback } from "react"
 import { Button, Badge, Spinner, EmptyState } from "@/components/ui"
 import { useAuth } from "@/lib/auth-context"
-import { API_BASE_URL, authFetch } from "@/lib/api"
+import { authFetch } from "@/lib/api"
 import { CheckCircle2, XCircle } from "lucide-react"
 
 interface Application {
@@ -24,7 +24,7 @@ export default function AdminApplicationsPage() {
   const [loading, setLoading] = useState(true)
 
   const fetchData = useCallback(() => {
-    authFetch(`${API_BASE_URL}/api/v1/contributors/applications`)
+    authFetch(`/api/v1/contributors/applications`)
       .then((r) => r.json())
       .then((json: { data?: Application[] }) => setData(json.data ?? []))
       .catch(() => {})
@@ -36,7 +36,7 @@ export default function AdminApplicationsPage() {
   }, [fetchData])
 
   const review = async (id: string, status: "APPROVED" | "REJECTED") => {
-    await authFetch(`${API_BASE_URL}/api/v1/contributors/applications/${id}`, {
+    await authFetch(`/api/v1/contributors/applications/${id}`, {
       method: "PUT",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ status, reviewed_by: user?.uid ?? "unknown" }),

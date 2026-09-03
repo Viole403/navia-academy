@@ -1,7 +1,7 @@
 "use client"
 
 import { useEffect, useState, useCallback } from "react"
-import { API_BASE_URL, authFetch } from "@/lib/api"
+import { authFetch } from "@/lib/api"
 import { Button, Badge, Spinner, Modal } from "@/components/ui"
 import { Pencil, Trash2, Plus } from "lucide-react"
 import { useTranslation } from "@/i18n/locale-context"
@@ -26,13 +26,13 @@ export default function AdminContributorsPage() {
 
   const fetchData = useCallback(() => {
     setLoading(true)
-    authFetch(`${API_BASE_URL}/api/v1/contributors?limit=100`)
+    authFetch(`/api/v1/contributors?limit=100`)
       .then((r) => r.json())
       .then((env: { data?: Contributor[] }) => {
         const all = env.data ?? []
         return Promise.all(
           all.map((c) =>
-            authFetch(`${API_BASE_URL}/api/v1/contributors/${c.id}`)
+            authFetch(`/api/v1/contributors/${c.id}`)
               .then((r) => r.json())
               .then((e2: { data?: Contributor }) => e2.data ?? c)
               .catch(() => c)
@@ -50,7 +50,7 @@ export default function AdminContributorsPage() {
   }, [fetchData])
 
   const toggleActive = async (id: string, current: boolean) => {
-    await authFetch(`${API_BASE_URL}/api/v1/contributors/${id}`, {
+    await authFetch(`/api/v1/contributors/${id}`, {
       method: "PUT",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ is_active: !current }),
@@ -59,7 +59,7 @@ export default function AdminContributorsPage() {
   }
 
   const softDelete = async (id: string) => {
-    await authFetch(`${API_BASE_URL}/api/v1/contributors/${id}`, {
+    await authFetch(`/api/v1/contributors/${id}`, {
       method: "DELETE",
     })
     fetchData()
@@ -195,7 +195,7 @@ function EditForm({
 
   const save = async () => {
     setSaving(true)
-    await authFetch(`${API_BASE_URL}/api/v1/contributors/${contributor.id}`, {
+    await authFetch(`/api/v1/contributors/${contributor.id}`, {
       method: "PUT",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ name, bio, mandarin_level: languageLevel }),
