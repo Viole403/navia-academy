@@ -135,6 +135,9 @@ definitions:
         type: string
       integrity_flag:
         type: boolean
+      start_theta:
+        example: 550
+        type: number
       time_taken:
         example: 780
         type: integer
@@ -845,9 +848,15 @@ definitions:
     type: object
   github_com_navia-academy_backend_internal_models.Supporter:
     properties:
+      amount_minor:
+        description: 'smallest unit (USD: cents, IDR: rupiah)'
+        type: integer
       avatar_url:
         type: string
       created_at:
+        type: string
+      currency:
+        description: ISO 4217
         type: string
       donated_at:
         type: string
@@ -1076,6 +1085,11 @@ definitions:
         $ref: '#/definitions/github_com_navia-academy_backend_pkg_response.Meta'
       success:
         type: boolean
+      trace_id:
+        description: |-
+          TraceID echoes the request ID (X-Request-Id) so clients can attach it
+          to bug reports and operators can correlate with server logs.
+        type: string
     type: object
   github_com_navia-academy_backend_pkg_response.Meta:
     properties:
@@ -1517,8 +1531,8 @@ paths:
     post:
       consumes:
       - application/json
-      description: Generate a password reset token (SMTP send is optional; token returned
-        in dev).
+      description: Generate a password reset token (stored hashed, single-use, 30
+        min TTL). Never returns the token in production; dev-only delivery via RESET_TOKEN_EXPOSE=true.
       parameters:
       - description: 'Email payload: {\'
         in: body
@@ -1543,6 +1557,42 @@ paths:
           schema:
             $ref: '#/definitions/github_com_navia-academy_backend_pkg_response.APIError'
       summary: Request password reset
+      tags:
+      - Auth
+  /auth/reset-password/confirm:
+    post:
+      consumes:
+      - application/json
+      description: Complete a password reset with the emailed token + new password.
+        Consumes the token (single use).
+      parameters:
+      - description: 'Reset payload: {\'
+        in: body
+        name: body
+        required: true
+        schema:
+          type: object
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - $ref: '#/definitions/github_com_navia-academy_backend_pkg_response.APIResponse'
+            - properties:
+                data:
+                  type: object
+              type: object
+        "400":
+          description: PASSWORD_TOO_SHORT
+          schema:
+            $ref: '#/definitions/github_com_navia-academy_backend_pkg_response.APIError'
+        "401":
+          description: INVALID_TOKEN
+          schema:
+            $ref: '#/definitions/github_com_navia-academy_backend_pkg_response.APIError'
+      summary: Confirm password reset
       tags:
       - Auth
   /cat/progress:

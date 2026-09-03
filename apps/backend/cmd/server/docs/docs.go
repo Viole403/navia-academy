@@ -692,7 +692,7 @@ const docTemplate = `{
         },
         "/auth/reset-password": {
             "post": {
-                "description": "Generate a password reset token (SMTP send is optional; token returned in dev).",
+                "description": "Generate a password reset token (stored hashed, single-use, 30 min TTL). Never returns the token in production; dev-only delivery via RESET_TOKEN_EXPOSE=true.",
                 "consumes": [
                     "application/json"
                 ],
@@ -735,6 +735,64 @@ const docTemplate = `{
                     },
                     "400": {
                         "description": "RESET_FAILED",
+                        "schema": {
+                            "$ref": "#/definitions/github_com_navia-academy_backend_pkg_response.APIError"
+                        }
+                    }
+                }
+            }
+        },
+        "/auth/reset-password/confirm": {
+            "post": {
+                "description": "Complete a password reset with the emailed token + new password. Consumes the token (single use).",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "Auth"
+                ],
+                "summary": "Confirm password reset",
+                "parameters": [
+                    {
+                        "description": "Reset payload: {\\",
+                        "name": "body",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "type": "object"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "allOf": [
+                                {
+                                    "$ref": "#/definitions/github_com_navia-academy_backend_pkg_response.APIResponse"
+                                },
+                                {
+                                    "type": "object",
+                                    "properties": {
+                                        "data": {
+                                            "type": "object"
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    "400": {
+                        "description": "PASSWORD_TOO_SHORT",
+                        "schema": {
+                            "$ref": "#/definitions/github_com_navia-academy_backend_pkg_response.APIError"
+                        }
+                    },
+                    "401": {
+                        "description": "INVALID_TOKEN",
                         "schema": {
                             "$ref": "#/definitions/github_com_navia-academy_backend_pkg_response.APIError"
                         }
@@ -4698,6 +4756,10 @@ const docTemplate = `{
                 "integrity_flag": {
                     "type": "boolean"
                 },
+                "start_theta": {
+                    "type": "number",
+                    "example": 550
+                },
                 "time_taken": {
                     "type": "integer",
                     "example": 780
@@ -5748,10 +5810,18 @@ const docTemplate = `{
         "github_com_navia-academy_backend_internal_models.Supporter": {
             "type": "object",
             "properties": {
+                "amount_minor": {
+                    "description": "smallest unit (USD: cents, IDR: rupiah)",
+                    "type": "integer"
+                },
                 "avatar_url": {
                     "type": "string"
                 },
                 "created_at": {
+                    "type": "string"
+                },
+                "currency": {
+                    "description": "ISO 4217",
                     "type": "string"
                 },
                 "donated_at": {
@@ -6095,6 +6165,10 @@ const docTemplate = `{
                 },
                 "success": {
                     "type": "boolean"
+                },
+                "trace_id": {
+                    "description": "TraceID echoes the request ID (X-Request-Id) so clients can attach it\nto bug reports and operators can correlate with server logs.",
+                    "type": "string"
                 }
             }
         },

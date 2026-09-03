@@ -240,9 +240,12 @@ func main() {
 				return response.Error(c, fe.Code, "ERROR", fe.Message)
 			}
 			// Anything else: never leak internal details to the client.
+			// request_id matches the trace_id in the response envelope.
+			requestID, _ := c.Locals("requestid").(string)
 			logger.Error("unhandled error",
 				zap.String("path", c.Path()),
 				zap.String("method", c.Method()),
+				zap.String("request_id", requestID),
 				zap.Error(err),
 			)
 			return response.Error(c, fiber.StatusInternalServerError, "INTERNAL_ERROR", "an unexpected error occurred")
