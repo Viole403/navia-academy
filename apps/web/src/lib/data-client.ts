@@ -58,14 +58,14 @@ let manifestCache: DataManifest | null = null
 let manifestCacheAt = 0 // ms epoch; manifest revalidated after MANIFEST_REVALIDATE
 let manifestInflight: Promise<DataManifest> | null = null
 
-const isServer = typeof window === "undefined"
-
 /** Resolve an absolute fetch URL for a CDN object. The `data` prefix belongs to the CDN base. */
 export function dataUrl(path: string): string {
-  const base = CDN_URL
-    ? `${CDN_URL.replace(/\/+$/, "")}/${DATA_CDN_PREFIX}`
-    : (process.env.NEXT_PUBLIC_SITE_URL ?? "")
-  return `${base.replace(/\/+$/, "")}/${path}`
+  const cleanPath = path.replace(/^\/+/, "")
+  if (CDN_URL)
+    return `${CDN_URL.replace(/\/+$/, "")}/${DATA_CDN_PREFIX}/${cleanPath}`
+  const site = (process.env.NEXT_PUBLIC_SITE_URL ?? "").replace(/\/+$/, "")
+  if (site) return `${site}/${DATA_CDN_PREFIX}/${cleanPath}`
+  return `/${DATA_CDN_PREFIX}/${cleanPath}`
 }
 
 async function fromCacheStorage<T>(path: string): Promise<T | undefined> {
