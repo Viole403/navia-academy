@@ -1,6 +1,6 @@
 "use client"
 
-import { useEffect, useRef, useState } from "react"
+import { useEffect, useRef, useState, useCallback } from "react"
 import { useRouter } from "next/navigation"
 import { PlayCircle, Sparkles, Volume2, Loader2, RotateCcw } from "lucide-react"
 import {
@@ -16,9 +16,9 @@ import { play } from "@/lib/audio"
 import { languageInfo } from "@/lib/languages"
 import type { VoiceLocale } from "@navia/utils"
 import { Button, ProgressBar, Badge } from "@/components/ui"
-import { cn } from "@/lib/utils"
 import { useMounted } from "@/lib/use-mounted"
 import { cat } from "@/lib/api"
+import { OptionButton } from "./option-button"
 
 const PER_QUESTION_SECONDS = 45
 
@@ -125,13 +125,16 @@ export default function AdaptiveExamPage() {
   const timedOutRef = useRef(false)
   const elapsedRef = useRef(0)
   const qElapsedRef = useRef(0)
+  const onAnswerRef = useRef<((option: string | null) => void) | null>(null)
   const sessionIdRef = useRef<number | null>(null)
   const examTypeRef = useRef("")
 
   const examType = settings.activeExamType
   const maxSeconds = CAT_CAP_SECONDS[examType] ?? DEFAULT_CAP_SECONDS
   const ttsLocale = languageInfo(settings.language).ttsLocale as VoiceLocale
-  examTypeRef.current = examType
+  useEffect(() => {
+    examTypeRef.current = examType
+  }, [examType])
 
   // On mount: look for an interrupted session and offer resume; flush queued result;
   // warm-start Elo from server history if no local estimate yet (blueprint §7.1 cold-start).
@@ -207,11 +210,10 @@ export default function AdaptiveExamPage() {
           elapsedRef.current >= maxSeconds)
       ) {
         timedOutRef.current = true
-        onAnswer(null)
+        onAnswerRef.current?.(null)
       }
     }, 1000)
     return () => clearInterval(iv)
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [done, current, picked, maxSeconds])
 
   useEffect(() => {
@@ -241,16 +243,22 @@ export default function AdaptiveExamPage() {
     }
   }, [done])
 
-  function onAnswer(option: string | null) {
-    if (!current || picked) return
-    setPicked(option)
-    setTimeout(() => {
-      answer(option ?? "")
-      setPicked(null)
-      qElapsedRef.current = 0
-      timedOutRef.current = false
-    }, 700)
-  }
+  const onAnswer = useCallback(
+    (option: string | null) => {
+      if (!current || picked) return
+      setPicked(option)
+      setTimeout(() => {
+        answer(option ?? "")
+        setPicked(null)
+        qElapsedRef.current = 0
+        timedOutRef.current = false
+      }, 700)
+    },
+    [current, picked, answer]
+  )
+  useEffect(() => {
+    onAnswerRef.current = onAnswer
+  }, [onAnswer])
 
   // Persist per-answer (fire-and-forget). Creates the session on first answer.
   useEffect(() => {
@@ -593,24 +601,14 @@ export default function AdaptiveExamPage() {
           )}
 
           <div className="mt-6 space-y-2.5">
-            {current.options.map((o) => {
-              const isPicked = picked === o
-              return (
-                <button
-                  key={o}
-                  disabled={isPicked}
-                  onClick={() => onAnswer(o)}
-                  className={cn(
-                    "w-full cursor-pointer rounded-[var(--radius)] border px-4 py-3 text-left transition-colors disabled:cursor-default",
-                    isPicked
-                      ? "border-accent bg-accent-soft"
-                      : "border-line bg-raised hover:border-line-strong hover:bg-hover"
-                  )}
-                >
-                  <span>{o}</span>
-                </button>
-              )
-            })}
+            {current.options.map((o) => (
+              <OptionButton
+                key={o}
+                option={o}
+                isPicked={picked === o}
+                onSelect={onAnswer}
+              />
+            ))}
           </div>
         </div>
       )}

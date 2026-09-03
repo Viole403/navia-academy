@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useEffect, useCallback, useMemo } from "react"
+import { useState, useEffect, useCallback, useMemo, memo } from "react"
 import Image from "next/image"
 import { useParams, useRouter } from "next/navigation"
 import { Card, Button, Badge, SectionHeader } from "@/components/ui"
@@ -209,7 +209,7 @@ function useExamQuestions(
   }, [examType, level, totalQuestions, vocabulary])
 }
 
-function QuestionRenderer({
+const QuestionRenderer = memo(function QuestionRenderer({
   question,
   selectedAnswer,
   onAnswer,
@@ -313,15 +313,15 @@ function QuestionRenderer({
       </div>
     </div>
   )
-}
+})
 
-function ResultIcon({ correct }: { correct: boolean }) {
+const ResultIcon = memo(function ResultIcon({ correct }: { correct: boolean }) {
   return correct ? (
     <Check className="h-4 w-4 text-success" />
   ) : (
     <X className="h-4 w-4 text-danger" />
   )
-}
+})
 
 export default function DynamicExamPage() {
   const params = useParams()

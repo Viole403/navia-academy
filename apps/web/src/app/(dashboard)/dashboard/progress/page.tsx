@@ -2,6 +2,7 @@
 
 import {
   Suspense,
+  memo,
   useCallback,
   useEffect,
   useMemo,
@@ -153,7 +154,7 @@ interface SortHeaderProps {
   align?: "left" | "right"
 }
 
-function SortHeader({
+const SortHeader = memo(function SortHeader({
   field,
   label,
   active,
@@ -190,7 +191,7 @@ function SortHeader({
       </button>
     </th>
   )
-}
+})
 
 export default function ProgressPage() {
   return (
@@ -1042,7 +1043,7 @@ function ProgressContent() {
   )
 }
 
-function StatCard({
+const StatCard = memo(function StatCard({
   label,
   value,
   icon,
@@ -1062,18 +1063,24 @@ function StatCard({
       </div>
     </Card>
   )
-}
+})
 
-function StatTile({ label, value }: { label: string; value: string | number }) {
+const StatTile = memo(function StatTile({
+  label,
+  value,
+}: {
+  label: string
+  value: string | number
+}) {
   return (
     <div className="rounded-[var(--radius)] bg-sunken px-3 py-2.5">
       <p className="text-xs text-ink-faint">{label}</p>
       <p className="mt-0.5 text-base font-semibold tabular-nums">{value}</p>
     </div>
   )
-}
+})
 
-function GoalItem({
+const GoalItem = memo(function GoalItem({
   label,
   current,
   target,
@@ -1113,4 +1120,4 @@ function GoalItem({
       </div>
     </div>
   )
-}
+})
