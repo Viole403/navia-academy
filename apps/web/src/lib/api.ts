@@ -200,28 +200,28 @@ export const community = {
 
 export const cat = {
   session: (body: Record<string, unknown>) =>
-    api<{ id: number }>("/cat/session", {
+    api<{ id: number }>("/api/v1/cat/session", {
       method: "POST",
       body: JSON.stringify(body),
     }),
   answer: (sessionId: number, body: Record<string, unknown>) =>
-    api<CatSessionDTO>(`/cat/session/${sessionId}`, {
+    api<CatSessionDTO>(`/api/v1/cat/session/${sessionId}`, {
       method: "POST",
       body: JSON.stringify(body),
     }),
   saveSession: (sessionId: number, body: Record<string, unknown>) =>
-    api<{ ok: boolean }>(`/cat/session/${sessionId}`, {
+    api<{ ok: boolean }>(`/api/v1/cat/session/${sessionId}`, {
       method: "PATCH",
       body: JSON.stringify(body),
     }),
   getSession: (sessionId: number) =>
-    api<CatSessionDTO>(`/cat/session/${sessionId}`),
+    api<CatSessionDTO>(`/api/v1/cat/session/${sessionId}`),
   result: (body: Record<string, unknown>) =>
-    api<CatSessionDTO>("/cat/result", {
+    api<CatSessionDTO>("/api/v1/cat/result", {
       method: "POST",
       body: JSON.stringify(body),
     }),
-  progress: () => api<{ elo_estimate: number }[]>("/cat/progress"),
+  progress: () => api<{ elo_estimate: number }[]>("/api/v1/cat/progress"),
 }
 
 export const apiClient = { admin, content, community, cat }
