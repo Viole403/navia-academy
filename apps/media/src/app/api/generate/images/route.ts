@@ -40,7 +40,11 @@ export async function POST(request: NextRequest) {
     if (blocked) return blocked
 
     const body = await request.json().catch(() => ({}))
-    const limit = typeof body?.limit === "number" ? body.limit : 3
+    // Cap the trickle-run size: this route is gated by the admin cookie but a
+    // compromised/leaked session must not be able to rack up unbounded provider
+    // cost in one request. Full runs go through the GitHub Actions workflow.
+    const requested = typeof body?.limit === "number" ? body.limit : 3
+    const limit = Math.min(Math.max(1, Math.floor(requested)), 100)
     const dryRun = body?.dryRun === true
     const res = await generateImageBatch({ limit, dryRun })
     return Response.json(res)

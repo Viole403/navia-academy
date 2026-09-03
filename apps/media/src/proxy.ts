@@ -13,7 +13,33 @@ import { ADMIN_COOKIE, adminAuthEnabled, safeEqual } from "@/lib/admin-auth"
  * /api/import/*, and any future key-management routes) is gated here.
  */
 export async function proxy(req: NextRequest) {
-  if (!adminAuthEnabled()) return NextResponse.next()
+  // Dev convenience: without MEDIA_ADMIN_TOKEN the dashboard is open locally.
+  // In production that is a misconfiguration, not a feature — fail closed so a
+  // missing env var can never expose the keys/generate surfaces publicly.
+  if (!adminAuthEnabled()) {
+    if (process.env.NODE_ENV === "production") {
+      console.error(
+        "[media] MEDIA_ADMIN_TOKEN is NOT set in production — refusing to serve the dashboard (fail-closed)."
+      )
+      if (req.nextUrl.pathname.startsWith("/api/")) {
+        return NextResponse.json(
+          {
+            success: false,
+            error: {
+              code: "AUTH_MISCONFIGURED",
+              message: "Media Studio: MEDIA_ADMIN_TOKEN not configured",
+            },
+          },
+          { status: 503 }
+        )
+      }
+      return new NextResponse(
+        "Media Studio is not configured (MEDIA_ADMIN_TOKEN missing).",
+        { status: 503 }
+      )
+    }
+    return NextResponse.next()
+  }
 
   const { pathname } = req.nextUrl
   const isPublic =
