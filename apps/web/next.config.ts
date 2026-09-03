@@ -1,6 +1,36 @@
 import type { NextConfig } from "next"
 import path from "path"
 
+function originOf(raw: string | undefined, fallback: string): string {
+  try {
+    return new URL(raw && raw.trim() ? raw : fallback).origin
+  } catch {
+    return new URL(fallback).origin
+  }
+}
+
+const apiOrigin = originOf(
+  process.env.NEXT_PUBLIC_API_BASE_URL,
+  "http://localhost:8080"
+)
+const dataOrigin = originOf(
+  process.env.NEXT_PUBLIC_DATA_CDN_URL,
+  "http://localhost:9000"
+)
+const audioOrigin = originOf(
+  process.env.NEXT_PUBLIC_AUDIO_CDN_URL ??
+    process.env.NEXT_PUBLIC_AUDIO_BASE_URL,
+  "http://localhost:9000"
+)
+const imageOrigin = originOf(
+  process.env.NEXT_PUBLIC_IMAGE_BASE_URL,
+  "http://localhost:9000"
+)
+
+// Unique origins, stable order.
+const contentOrigins = [...new Set([dataOrigin, audioOrigin, imageOrigin])]
+const contentSrc = contentOrigins.join(" ")
+
 const securityHeaders = [
   { key: "X-DNS-Prefetch-Control", value: "on" },
   {
@@ -13,8 +43,9 @@ const securityHeaders = [
       "form-action 'self'",
       "script-src 'self' 'unsafe-inline' 'unsafe-eval'",
       "style-src 'self' 'unsafe-inline'",
-      "img-src 'self' data: https:",
-      "connect-src 'self'",
+      `img-src 'self' data: https: ${contentSrc}`,
+      `connect-src 'self' ${apiOrigin} ${contentSrc}`,
+      `media-src 'self' ${contentSrc}`,
       "font-src 'self'",
     ].join("; "),
   },
@@ -31,11 +62,22 @@ const securityHeaders = [
   },
 ]
 
+function remotePattern(raw: string | undefined, fallback: string) {
+  const u = new URL(raw && raw.trim() ? raw : fallback)
+  return {
+    protocol: u.protocol.replace(":", "") as "http" | "https",
+    hostname: u.hostname,
+    ...(u.port ? { port: u.port } : {}),
+  }
+}
+
 const nextConfig: NextConfig = {
   images: {
     remotePatterns: [
-      { protocol: "http", hostname: "localhost", port: "9000" },
-      { protocol: "https", hostname: "cdn.naviaacademy.com" },
+      remotePattern(
+        process.env.NEXT_PUBLIC_IMAGE_BASE_URL,
+        "http://localhost:9000"
+      ),
     ],
   },
   turbopack: {
