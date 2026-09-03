@@ -50,10 +50,10 @@ export async function POST(request: NextRequest) {
     return Response.json(res)
   } catch (err) {
     console.error("[generate/images]", err)
-    const status =
-      err instanceof Error && "SERVICE_BUSY" in err.message ? 503 : 500
+    const busy = err instanceof Error && err.message.includes("SERVICE_BUSY")
+    const status: number = busy ? 503 : 500
     return Response.json(
-      { error: status === 503 ? "SERVICE_BUSY" : "image generation failed" },
+      { error: busy ? "SERVICE_BUSY" : "image generation failed" },
       { status }
     )
   }
