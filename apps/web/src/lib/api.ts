@@ -59,6 +59,26 @@ interface Envelope<T> {
   success: boolean
   data?: T
   error?: { code?: string; message?: string }
+  trace_id?: string
+}
+
+interface ApiErrorFields {
+  status: number
+  code?: string
+  traceId?: string
+}
+
+function toApiError(
+  status: number,
+  body: Envelope<unknown>,
+  fallback: string
+): Error & ApiErrorFields {
+  const err = new Error(body.error?.message ?? fallback) as Error &
+    ApiErrorFields
+  err.status = status
+  err.code = body.error?.code
+  err.traceId = body.trace_id
+  return err
 }
 
 export async function api<T = unknown>(
@@ -87,28 +107,12 @@ async function apiWithRetry<T>(
   }
   if (!res.ok) {
     const body = (await res.json().catch(() => ({}))) as Envelope<unknown>
-    const err = new Error(
-      body.error?.message ?? `Request failed: ${res.status}`
-    ) as Error & {
-      status: number
-      code?: string
-    }
-    err.status = res.status
-    err.code = body.error?.code
-    throw err
+    throw toApiError(res.status, body, `Request failed: ${res.status}`)
   }
   if (res.status === 204) return undefined as T
   const body = (await res.json()) as Envelope<T>
   if (body.success !== false) return (body.data ?? body) as T
-  const err = new Error(
-    body.error?.message ?? `Request failed: ${res.status}`
-  ) as Error & {
-    status: number
-    code?: string
-  }
-  err.status = res.status
-  err.code = body.error?.code
-  throw err
+  throw toApiError(res.status, body, `Request failed: ${res.status}`)
 }
 
 export interface AdminUser {
