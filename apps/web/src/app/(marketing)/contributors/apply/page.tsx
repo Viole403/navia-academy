@@ -103,12 +103,14 @@ export default function ContributorApplyPage() {
                 >
                   <div className="grid gap-5 sm:grid-cols-2">
                     <Input
+                      {...register("name")}
                       name="name"
                       label={t("apply.name")}
                       error={errors.name?.message}
                       placeholder={t("apply.name")}
                     />
                     <Input
+                      {...register("email")}
                       name="email"
                       type="email"
                       label={t("apply.email")}
@@ -117,6 +119,7 @@ export default function ContributorApplyPage() {
                     />
                   </div>
                   <Select
+                    {...register("contribution_area")}
                     name="contribution_area"
                     label={t("apply.field")}
                     defaultValue="content"
@@ -138,6 +141,7 @@ export default function ContributorApplyPage() {
                     <option value="other">{t("apply.field.other")}</option>
                   </Select>
                   <Select
+                    {...register("mandarin_level")}
                     name="mandarin_level"
                     label={t("apply.languageLevel")}
                     defaultValue="intermediate"
@@ -156,12 +160,14 @@ export default function ContributorApplyPage() {
                     </option>
                   </Select>
                   <Input
+                    {...register("portfolio")}
                     name="portfolio"
                     label={t("apply.portfolio")}
                     error={errors.portfolio?.message}
                     placeholder="https://…"
                   />
                   <Textarea
+                    {...register("message")}
                     name="message"
                     label={t("apply.message")}
                     rows={5}
