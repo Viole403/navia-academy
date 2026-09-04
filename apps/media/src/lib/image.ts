@@ -82,10 +82,11 @@ async function cloudflareImage(
           signal: AbortSignal.timeout(120_000),
         }
       )
-      if (!res.ok)
-        throw new Error(
-          `Cloudflare Workers AI ${res.status}: ${await res.text()}`
-        )
+      if (!res.ok) {
+        const body = await res.text()
+        console.error(`[image] Cloudflare Workers AI ${res.status}: ${body}`)
+        throw new Error(`Cloudflare Workers AI ${res.status}`)
+      }
       const j = (await res.json()) as {
         result?: { image?: string }
         errors?: unknown[]
@@ -140,7 +141,11 @@ async function openaiImage(
     body: JSON.stringify(body),
     signal: AbortSignal.timeout(120_000),
   })
-  if (!res.ok) throw new Error(`Image API ${res.status}: ${await res.text()}`)
+  if (!res.ok) {
+    const body = await res.text()
+    console.error(`[image] OpenAI-compatible ${res.status}: ${body}`)
+    throw new Error(`Image API ${res.status}`)
+  }
   const data = (await res.json()) as {
     data?: { b64_json?: string; url?: string }[]
   }
@@ -190,8 +195,11 @@ async function geminiImage(
       signal: AbortSignal.timeout(120_000),
     }
   )
-  if (!res.ok)
-    throw new Error(`Gemini image ${res.status}: ${await res.text()}`)
+  if (!res.ok) {
+    const body = await res.text()
+    console.error(`[image] Gemini ${res.status}: ${body}`)
+    throw new Error(`Gemini image ${res.status}`)
+  }
   const data = (await res.json()) as {
     candidates?: {
       content?: { parts?: { inlineData?: { data?: string } }[] }
@@ -206,9 +214,6 @@ async function geminiImage(
 
 const DEEPAI_DEFAULT_UA =
   "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
-const DEEPAI_DEFAULT_SALT =
-  "hackers_become_a_little_stinkier_every_time_they_hack"
-
 /**
  * DeepAI's inline hasher (from the try-it script on deepai.org): standard MD5
  * hex digest with the string REVERSED. Cross-validated against the live
@@ -287,7 +292,10 @@ async function deepaiRequest(
   ) {
     throw new DeepAIGateError(`DeepAI anti-bot gate: ${text.trim()}`)
   }
-  if (!res.ok) throw new Error(`DeepAI scrape ${res.status}: ${text}`)
+  if (!res.ok) {
+    console.error(`[image] DeepAI scrape ${res.status}: ${text}`)
+    throw new Error(`DeepAI scrape ${res.status}`)
+  }
   return data
 }
 
@@ -308,9 +316,17 @@ async function deepaiImage(
 ): Promise<Buffer> {
   const model = cfg.imageDeepaiModel
   const userAgent = process.env.MEDIA_IMAGE_DEEPAI_UA ?? DEEPAI_DEFAULT_UA
-  const salt = process.env.MEDIA_IMAGE_DEEPAI_SALT ?? DEEPAI_DEFAULT_SALT
+  const rawSalt = process.env.MEDIA_IMAGE_DEEPAI_SALT
   const paidKey = key.apiKey || cfg.imageDeepaiPaidKey
-  const apiKey = paidKey || deepaiTryitKey(userAgent, salt)
+  const apiKey =
+    paidKey ??
+    (() => {
+      if (!rawSalt)
+        throw new Error(
+          "MEDIA_IMAGE_DEEPAI_SALT is required when no paid key is configured"
+        )
+      return deepaiTryitKey(userAgent, rawSalt)
+    })()
   const endpoint = (
     key.apiBaseUrl ||
     (process.env.MEDIA_IMAGE_DEEPAI_ENDPOINT ?? "https://api.deepai.org")
@@ -416,8 +432,12 @@ async function deepaiImageViaBrowser(
   // Key must be computed over the exact User-Agent the browser sends; the
   // page's own `generateIslandKey` is module-scoped, so we build it here.
   const ua = await page.evaluate(() => navigator.userAgent)
-  const salt = process.env.MEDIA_IMAGE_DEEPAI_SALT ?? DEEPAI_DEFAULT_SALT
-  const apiKey = deepaiTryitKey(ua, salt)
+  const rawSalt = process.env.MEDIA_IMAGE_DEEPAI_SALT
+  if (!rawSalt)
+    throw new Error(
+      "MEDIA_IMAGE_DEEPAI_SALT is required for browser-based DeepAI generation"
+    )
+  const apiKey = deepaiTryitKey(ua, rawSalt)
 
   const job = await page.evaluate(
     async (arg: {
@@ -439,13 +459,15 @@ async function deepaiImageViaBrowser(
     { prompt, apiUrl: `${endpoint}/api/${model}`, apiKey, ua }
   )
 
-  if (job.status !== 200)
-    throw new Error(`DeepAI browser scrape ${job.status}: ${job.text}`)
+  if (job.status !== 200) {
+    console.error(`[image] DeepAI browser scrape ${job.status}: ${job.text}`)
+    throw new Error(`DeepAI browser scrape ${job.status}`)
+  }
   const data = JSON.parse(job.text) as DeepAIResult
   if (data.status || data.error || data.err) {
-    throw new Error(
-      `DeepAI browser scrape rejected: ${data.status || data.error || data.err}`
-    )
+    const detail = data.error || data.err || data.status
+    console.error(`[image] DeepAI browser scrape rejected: ${detail}`)
+    throw new Error("DeepAI browser scrape rejected")
   }
   if (!data.output_url)
     throw new Error("DeepAI browser scrape returned no output_url")

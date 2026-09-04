@@ -34,6 +34,7 @@ const contentSrc = [...new Set([dataOrigin, audioOrigin, imageOrigin])].join(
 export function proxy(request: NextRequest) {
   const nonce = Buffer.from(crypto.randomUUID()).toString("base64")
   const isDev = process.env.NODE_ENV === "development"
+
   // React needs 'unsafe-eval' in dev for error-stack reconstruction.
   // Production needs neither it nor 'unsafe-inline': Next.js reads the
   // nonce from the CSP header during SSR and stamps it onto the scripts
@@ -51,7 +52,10 @@ export function proxy(request: NextRequest) {
     }`,
     "style-src 'self' 'unsafe-inline'",
     `img-src 'self' data: blob: https: ${contentSrc}`,
-    `connect-src 'self' ${apiOrigin} ${contentSrc}`,
+    // hanzi-writer fetches stroke-coordinate data from jsdElivr CDN in dev.
+    `connect-src 'self' ${apiOrigin} ${contentSrc}${
+      isDev ? " https://cdn.jsdelivr.net" : ""
+    }`,
     `media-src 'self' ${contentSrc}`,
     "font-src 'self'",
     ...(isDev ? [] : ["upgrade-insecure-requests"]),

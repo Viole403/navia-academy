@@ -292,7 +292,11 @@ export async function generateImageBatch(
   for (const item of items) {
     if (!item.translation) continue
     const prompt = buildImagePrompt(item)
-    const hash = contentHash(item.translation)
+    // Include imagePrompt in hash so editing a custom prompt triggers
+    // regeneration (L1 fix). Items without imagePrompt hash identically to the
+    // old translation-only hash, preserving backward-compatibility with existing
+    // records.
+    const hash = contentHash(item.translation + "|" + (item.imagePrompt ?? ""))
     const rec = recordsByHash.get(hash)
 
     // 1) Exact translation already generated (file present locally or in storage).
