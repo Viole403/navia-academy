@@ -8,6 +8,16 @@ import { clearTokens, getTokens, saveTokens } from "@/utils/secure"
 import { env } from "@/utils/env"
 import type { LoginResponse } from "@/types/api"
 
+/** Listeners are called synchronously when refresh fails. */
+type RefreshFailListener = () => void
+const refreshFailListeners = new Set<RefreshFailListener>()
+
+/** Register a listener for when the refresh token expires. */
+export function onRefreshFail(fn: RefreshFailListener): () => void {
+  refreshFailListeners.add(fn)
+  return () => refreshFailListeners.delete(fn)
+}
+
 export const apiClient: AxiosInstance = axios.create({
   baseURL: env.apiUrl,
   timeout: 20000,
@@ -31,7 +41,7 @@ apiClient.interceptors.request.use(
   }
 )
 
-// ─── Response: auto-refresh on 401 + log in debug mode ────────────────────
+// ─── Response: auto-refresh on 401 + log in debug mode ───────────────────
 let refreshing: Promise<string | null> | null = null
 
 async function doRefresh(): Promise<string | null> {
@@ -54,6 +64,7 @@ async function doRefresh(): Promise<string | null> {
   } catch {
     state.signOut()
     await clearTokens()
+    refreshFailListeners.forEach((fn) => fn())
     return null
   }
 }

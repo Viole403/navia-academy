@@ -19,7 +19,12 @@
       "supportsTablet": true,
       "bundleIdentifier": "com.navia.academy",
       "buildNumber": "1",
-      "infoPlist": {},
+      "infoPlist": {
+        "NSAllowsArbitraryLoads": false,
+        "NSAllowsArbitraryLoadsForMedia": true,
+        "NSMicrophoneUsageDescription": "Navia Academy needs microphone access for speaking practice with pronunciation feedback.",
+        "NSUserActivityTypes": ["com.apple.expo.deep-link"]
+      },
       "privacyManifests": {
         "NSPrivacyTracking": false,
         "NSPrivacyTrackingDomains": [],

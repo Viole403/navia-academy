@@ -1,5 +1,5 @@
 import { useEffect } from "react"
-import { Stack } from "expo-router"
+import { Stack, useRouter } from "expo-router"
 import { StatusBar } from "expo-status-bar"
 import { GestureHandlerRootView } from "react-native-gesture-handler"
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query"
@@ -7,6 +7,7 @@ import { ThemeProvider, useTheme } from "@/theme/ThemeProvider"
 import { useAuthStore } from "@/store/auth"
 import { getTokens } from "@/utils/secure"
 import { auth } from "@/api/endpoints"
+import { onRefreshFail } from "@/api/client"
 import { ErrorBoundary } from "@/components/ui/ErrorBoundary"
 import "../global.css"
 
@@ -21,6 +22,7 @@ const queryClient = new QueryClient({
 
 function AppShell() {
   const { theme, resolvedMode } = useTheme()
+  const router = useRouter()
 
   return (
     <>
@@ -37,6 +39,7 @@ function AppShell() {
 
 export default function RootLayout() {
   const { setAuth, setTokens, markHydrated } = useAuthStore()
+  const router = useRouter()
 
   useEffect(() => {
     ;(async () => {
@@ -52,6 +55,14 @@ export default function RootLayout() {
       }
       markHydrated()
     })()
+
+    // Redirect to sign-in when refresh token is rejected by the server.
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const unsubscribe = onRefreshFail(() => {
+      router.replace("/(auth)/sign-in" as any)
+    })
+
+    return unsubscribe
   }, [setAuth, setTokens, markHydrated])
 
   return (

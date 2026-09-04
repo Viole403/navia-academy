@@ -21,5 +21,8 @@ tmp/
 # build artifacts
 coverage/
 
+# Hermes session logs
+session-*.md
+
 # husky auto-generated runtime files
 .husky/_.kilo/
