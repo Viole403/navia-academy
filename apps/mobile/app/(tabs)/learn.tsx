@@ -36,38 +36,23 @@ export default function LearnTab() {
     queryKey: ["vocab-all"],
     queryFn: () => loadVocabulary(),
   })
-  const statsQ = useQuery({
-    queryKey: ["vocab-stats", examType],
-    queryFn: async () => {
-      const all = await loadVocabulary()
-      const levels = new Map<string, number>()
-      for (const w of all) {
-        const lv = w.examMappings?.[examType]
-        if (lv === undefined) continue
-        const key = String(lv).toUpperCase()
-        levels.set(key, (levels.get(key) ?? 0) + 1)
-      }
-      return {
-        exam: examType,
-        levels: [...levels.entries()].map(([level, totalWords]) => ({
-          level,
-          totalWords,
-          coverage: 0,
-        })),
-      }
-    },
-  })
+  const levels = useMemo(() => {
+    if (!vocabAll.data) return []
+    const m = new Set<string>()
+    for (const w of vocabAll.data) {
+      const lv = w.examMappings?.[examType]
+      if (lv === undefined) continue
+      m.add(String(lv).toUpperCase())
+    }
+    return [...m].sort()
+  }, [vocabAll.data, examType])
+
   const srsQ = useQuery({ queryKey: ["srs-stats"], queryFn: progress.srsStats })
   const dueCardsQ = useQuery({
     queryKey: ["due-cards"],
     queryFn: () => progress.dueCards(50),
     enabled: tab === "review",
   })
-
-  const levels = useMemo(() => {
-    const s = statsQ.data?.levels ?? []
-    return s.map((l) => l.level).sort()
-  }, [statsQ.data])
 
   return (
     <SafeAreaView
@@ -191,7 +176,8 @@ export default function LearnTab() {
             examLevel={examLevel}
             setExamLevel={setExamLevel}
             levels={levels}
-            statsLoading={statsQ.isLoading}
+            vocabLoading={vocabAll.isLoading}
+            vocabData={vocabAll.data ?? []}
           />
         ) : (
           <ReviewTab
@@ -206,6 +192,8 @@ export default function LearnTab() {
 
 // ─── Browse sub-tab ────────────────────────────────────────────────────────
 function BrowseTab({
+  vocabData,
+  vocabLoading,
   search,
   setSearch,
   examType,
@@ -213,8 +201,9 @@ function BrowseTab({
   examLevel,
   setExamLevel,
   levels,
-  statsLoading,
 }: {
+  vocabData: import("@/types/api").VocabWord[]
+  vocabLoading: boolean
   search: string
   setSearch: (s: string) => void
   examType: string
@@ -222,32 +211,27 @@ function BrowseTab({
   examLevel: string
   setExamLevel: (s: string) => void
   levels: string[]
-  statsLoading: boolean
 }) {
   const { theme } = useTheme()
 
-  const vocabQ = useQuery({
-    queryKey: ["vocab", search, examType, examLevel],
-    queryFn: async () => {
-      const all = await loadVocabulary()
-      const q = search.trim().toLowerCase()
-      return all
-        .filter((w) => {
-          if (
-            examLevel &&
-            String(w.examMappings?.[examType] ?? "").toUpperCase() !== examLevel
-          )
-            return false
-          if (!q) return true
-          return (
-            (w.hanzi ?? "").toLowerCase().includes(q) ||
-            (w.pinyin ?? "").toLowerCase().includes(q) ||
-            (w.translation ?? "").toLowerCase().includes(q)
-          )
-        })
-        .slice(0, 50)
-    },
-  })
+  const filtered = useMemo(() => {
+    const q = search.trim().toLowerCase()
+    return vocabData
+      .filter((w) => {
+        if (
+          examLevel &&
+          String(w.examMappings?.[examType] ?? "").toUpperCase() !== examLevel
+        )
+          return false
+        if (!q) return true
+        return (
+          (w.hanzi ?? "").toLowerCase().includes(q) ||
+          (w.pinyin ?? "").toLowerCase().includes(q) ||
+          (w.translation ?? "").toLowerCase().includes(q)
+        )
+      })
+      .slice(0, 50)
+  }, [vocabData, search, examLevel, examType])
 
   return (
     <View style={{ gap: 20 }}>
@@ -279,7 +263,7 @@ function BrowseTab({
       {/* Level selector */}
       <View style={{ gap: 10 }}>
         <Text style={[type.labelSm, { color: theme.textMuted }]}>Level</Text>
-        {statsLoading ? (
+        {vocabLoading ? (
           <ActivityIndicator color={theme.accent} />
         ) : (
           <ScrollView
@@ -322,18 +306,18 @@ function BrowseTab({
           <Text style={[type.labelSm, { color: theme.textMuted }]}>
             Results
           </Text>
-          {vocabQ.data && vocabQ.data.length > 0 && (
+          {filtered.length > 0 && (
             <Text style={[type.caption, { color: theme.textMuted }]}>
-              {vocabQ.data.length.toLocaleString()} entries
+              {filtered.length.toLocaleString()} entries
             </Text>
           )}
         </View>
 
-        {vocabQ.isLoading ? (
+        {vocabLoading ? (
           <ActivityIndicator color={theme.accent} />
         ) : (
           <FlatList
-            data={vocabQ.data}
+            data={filtered}
             keyExtractor={(w) => w.id}
             renderItem={({ item }) => <WordRow word={item} />}
             initialNumToRender={12}
