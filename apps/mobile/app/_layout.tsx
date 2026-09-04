@@ -10,6 +10,7 @@ import { getTokens } from "@/utils/secure"
 import { auth } from "@/api/endpoints"
 import { onRefreshFail } from "@/api/client"
 import { ErrorBoundary } from "@/components/ui/ErrorBoundary"
+import { useOfflineDrain } from "@/hooks/useOfflineDrain"
 import "../global.css"
 
 const queryClient = new QueryClient({
@@ -61,6 +62,7 @@ const linking = {
 }
 
 function AppShell() {
+  useOfflineDrain()
   const { theme, resolvedMode } = useTheme()
 
   return (

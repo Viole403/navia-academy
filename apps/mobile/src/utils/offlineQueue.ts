@@ -1,5 +1,5 @@
 import AsyncStorage from "@react-native-async-storage/async-storage"
-import { progress } from "@/api/endpoints"
+import { progress } from "../api/endpoints"
 import type { SrsCard } from "@/types/api"
 
 const KEY = "navia.outbox.v1"

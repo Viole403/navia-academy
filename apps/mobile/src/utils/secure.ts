@@ -49,14 +49,12 @@ export async function getTokens(): Promise<StoredTokens | null> {
     return JSON.parse(raw) as StoredTokens
   }
 
-  // Fall back to version 1 (original single-slot key) for migration
-  if (version === 1) {
-    raw = await SafeGet(KEY_PREFIX + 1)
-    if (raw) {
-      await SecureStore.setItemAsync(KEY_VERSION, String(CURRENT_VERSION))
-      await SecureStore.setItemAsync(await tokenKey(CURRENT_VERSION), raw)
-      return JSON.parse(raw) as StoredTokens
-    }
+  // Fall back to legacy v1 slot and promote on read
+  const legacy = await SafeGet(KEY_PREFIX + "1")
+  if (legacy) {
+    await SecureStore.setItemAsync(KEY_VERSION, String(CURRENT_VERSION))
+    await SecureStore.setItemAsync(await tokenKey(CURRENT_VERSION), legacy)
+    return JSON.parse(legacy) as StoredTokens
   }
 
   return null
