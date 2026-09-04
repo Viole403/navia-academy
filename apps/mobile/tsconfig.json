@@ -16,5 +16,13 @@
     "expo-env.d.ts",
     "nativewind-env.d.ts"
   ],
-  "exclude": ["node_modules", "scripts"]
+  "exclude": [
+    "node_modules",
+    "scripts",
+    "**/__tests__/**",
+    "jest.setup.ts",
+    "vitest.setup.ts",
+    "jest.config.ts",
+    "vitest.config.ts"
+  ]
 }
