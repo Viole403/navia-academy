@@ -1,4 +1,5 @@
 import { useEffect } from "react"
+import { addEventListener, getInitialURL } from "expo-linking"
 import { Stack, useRouter } from "expo-router"
 import { StatusBar } from "expo-status-bar"
 import { GestureHandlerRootView } from "react-native-gesture-handler"
@@ -20,25 +21,67 @@ const queryClient = new QueryClient({
   },
 })
 
+/** Whitelist of allowed deep-link path prefixes (scheme: navia://).
+ *  Guards against F-18: deep-link injection via arbitrary URL schemes. */
+const ALLOWED_PREFIXES = ["/vocab/", "/review", "/exam", "/apply", "/profile"]
+
+/** Returns true when the parsed path is in the allow-list. */
+function isAllowedPath(path: string | null): boolean {
+  return path != null && ALLOWED_PREFIXES.some((p) => path.startsWith(p))
+}
+
+/** Extract the path from a navia:// URL, null if malformed. */
+function extractPath(url: string): string | null {
+  const match = url.match(/^navia:\/\/([^?#]+)/)
+  return match ? "/" + match[1] : null
+}
+
+const linking = {
+  prefixes: ["navia://"],
+  config: {
+    screens: {
+      "(auth)": {
+        screens: {
+          "sign-in": "sign-in",
+        },
+      },
+      "(tabs)": {
+        screens: {
+          index: "",
+          learn: "learn",
+          profile: "profile",
+        },
+      },
+      vocab: "vocab/:id",
+      review: "review",
+      exam: "exam",
+      apply: "apply",
+    },
+  },
+}
+
 function AppShell() {
   const { theme, resolvedMode } = useTheme()
-  const router = useRouter()
 
   return (
     <>
       <StatusBar style={resolvedMode === "light" ? "dark" : "light"} />
+      {/* eslint-disable-next-line @typescript-eslint/no-explicit-any */}
       <Stack
-        screenOptions={{
-          headerShown: false,
-          contentStyle: { backgroundColor: theme.bg },
-        }}
+        {...({
+          screenOptions: {
+            headerShown: false,
+            contentStyle: { backgroundColor: theme.bg },
+          },
+          linking: linking,
+        } as any)}
       />
     </>
   )
 }
 
 export default function RootLayout() {
-  const { setAuth, setTokens, markHydrated } = useAuthStore()
+  const { setAuth, setTokens, markHydrated, signOut } = useAuthStore()
   const router = useRouter()
 
   useEffect(() => {
@@ -55,25 +98,37 @@ export default function RootLayout() {
       }
       markHydrated()
     })()
-
-    // Redirect to sign-in when refresh token is rejected by the server.
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    const unsubscribe = onRefreshFail(() => {
-      router.replace("/(auth)/sign-in" as any)
-    })
-
-    return unsubscribe
   }, [setAuth, setTokens, markHydrated])
 
-  return (
-    <ErrorBoundary>
-      <GestureHandlerRootView style={{ flex: 1 }}>
-        <QueryClientProvider client={queryClient}>
-          <ThemeProvider>
-            <AppShell />
-          </ThemeProvider>
-        </QueryClientProvider>
-      </GestureHandlerRootView>
-    </ErrorBoundary>
-  )
+  useEffect(() => {
+    // Handle cold-start deep link (app was not in memory).
+    ;(async () => {
+      const url = await getInitialURL()
+      if (url) {
+        const path = extractPath(url)
+        if (isAllowedPath(path)) {
+          router.push(path as never)
+        }
+      }
+    })()
+
+    // Handle deep link when app is already running.
+    const sub = addEventListener("url", ({ url }: { url: string }) => {
+      const path = extractPath(url)
+      if (isAllowedPath(path)) {
+        router.push(path as never)
+      }
+    })
+
+    return () => sub.remove()
+  }, [router])
+
+  useEffect(() => {
+    // Redirect to sign-in when refresh token is rejected by the server.
+    const unsubscribe = onRefreshFail(() => {
+      signOut()
+      router.replace("/(auth)/sign-in" as never)
+    })
+    return unsubscribe
+  }, [signOut, router])
 }
