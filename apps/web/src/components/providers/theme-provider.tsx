@@ -1,6 +1,7 @@
 "use client"
 
 import { useEffect, type ReactNode } from "react"
+import { MotionConfig } from "framer-motion"
 import { useSettings } from "@/stores/settings"
 
 export function ThemeProvider({ children }: { children: ReactNode }) {
@@ -19,5 +20,9 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
     else delete el.dataset.motion
   }, [theme, mode, fontSize, reduceMotion, focusMode])
 
-  return <>{children}</>
+  return (
+    <MotionConfig reducedMotion={reduceMotion ? "always" : "never"}>
+      {children}
+    </MotionConfig>
+  )
 }
