@@ -53,7 +53,7 @@ func (h *ContentHandler) List(c *fiber.Ctx) error {
 		Offset: offset,
 	}, userID, role)
 	if err != nil {
-		return response.Error(c, fiber.StatusInternalServerError, "FETCH_FAILED", err.Error())
+		return response.Error(c, fiber.StatusInternalServerError, "FETCH_FAILED", "fetch failed")
 	}
 
 	if items == nil {
@@ -104,9 +104,9 @@ func (h *ContentHandler) Create(c *fiber.Ctx) error {
 	item, err := h.contentService.Create(c.Context(), req, userID)
 	if err != nil {
 		if err == service.ErrDuplicateID {
-			return response.Error(c, fiber.StatusConflict, "duplicate-id", err.Error())
+			return response.Error(c, fiber.StatusConflict, "duplicate-id", "duplicate resource")
 		}
-		return response.Error(c, fiber.StatusBadRequest, "CREATE_FAILED", err.Error())
+		return response.Error(c, fiber.StatusBadRequest, "CREATE_FAILED", "creation failed")
 	}
 
 	return response.JSON(c, fiber.StatusCreated, item)
@@ -150,7 +150,7 @@ func (h *ContentHandler) Update(c *fiber.Ctx) error {
 		case service.ErrContentStale:
 			return response.Error(c, fiber.StatusConflict, "STALE_ITEM", "item changed since your last read; refresh and retry")
 		}
-		return response.Error(c, fiber.StatusInternalServerError, "UPDATE_FAILED", err.Error())
+		return response.Error(c, fiber.StatusInternalServerError, "UPDATE_FAILED", "update failed")
 	}
 
 	return response.JSON(c, fiber.StatusOK, item)

@@ -16,9 +16,14 @@ func CORSMiddleware(allowedOrigins string) fiber.Handler {
 	return func(c *fiber.Ctx) error {
 		origin := c.Get("Origin")
 
-		if originMap[origin] || originMap["*"] {
-			c.Set("Access-Control-Allow-Origin", origin)
-			c.Set("Access-Control-Allow-Credentials", "true")
+		isWildcard := originMap["*"]
+		if originMap[origin] || isWildcard {
+			if !isWildcard {
+				c.Set("Access-Control-Allow-Origin", origin)
+				c.Set("Access-Control-Allow-Credentials", "true")
+			} else {
+				c.Set("Access-Control-Allow-Origin", origin)
+			}
 			c.Set("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, PATCH, OPTIONS")
 			c.Set("Access-Control-Allow-Headers", "Origin, Content-Type, Accept, Authorization, X-Requested-With")
 			c.Set("Access-Control-Expose-Headers", "Content-Length, Content-Type, X-TTS-Cache, X-TTS-Provider")

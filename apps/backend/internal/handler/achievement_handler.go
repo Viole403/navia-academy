@@ -31,7 +31,7 @@ func (h *AchievementHandler) GetAchievements(c *fiber.Ctx) error {
 	var err error
 	achievements, err = h.achievementService.GetAchievements(c.Context(), userID)
 	if err != nil {
-		return response.Error(c, fiber.StatusInternalServerError, "FETCH_FAILED", err.Error())
+		return response.Error(c, fiber.StatusInternalServerError, "FETCH_FAILED", "fetch failed")
 	}
 
 	return response.JSON(c, fiber.StatusOK, achievements)

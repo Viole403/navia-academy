@@ -58,7 +58,7 @@ func (h *AuthHandler) Register(c *fiber.Ctx) error {
 		if err == service.ErrEmailTaken {
 			return response.Error(c, fiber.StatusConflict, "EMAIL_TAKEN", "email already registered")
 		}
-		return response.Error(c, fiber.StatusInternalServerError, "REGISTER_FAILED", err.Error())
+		return response.Error(c, fiber.StatusInternalServerError, "REGISTER_FAILED", "registration failed")
 	}
 
 	return response.JSON(c, fiber.StatusCreated, fiber.Map{
@@ -93,7 +93,7 @@ func (h *AuthHandler) CreateUser(c *fiber.Ctx) error {
 		case service.ErrEmailTaken:
 			return response.Error(c, fiber.StatusConflict, "EMAIL_TAKEN", "email already registered")
 		default:
-			return response.Error(c, fiber.StatusInternalServerError, "CREATE_FAILED", err.Error())
+			return response.Error(c, fiber.StatusInternalServerError, "CREATE_FAILED", "creation failed")
 		}
 	}
 
@@ -122,7 +122,7 @@ func (h *AuthHandler) Login(c *fiber.Ctx) error {
 		if err == service.ErrInvalidCredentials {
 			return response.Error(c, fiber.StatusUnauthorized, "INVALID_CREDENTIALS", "invalid email or password")
 		}
-		return response.Error(c, fiber.StatusInternalServerError, "LOGIN_FAILED", err.Error())
+		return response.Error(c, fiber.StatusInternalServerError, "LOGIN_FAILED", "login failed")
 	}
 
 	return response.JSON(c, fiber.StatusOK, fiber.Map{
@@ -153,7 +153,7 @@ func (h *AuthHandler) RefreshToken(c *fiber.Ctx) error {
 		if err == service.ErrInvalidToken {
 			return response.Error(c, fiber.StatusUnauthorized, "INVALID_TOKEN", "invalid or expired refresh token")
 		}
-		return response.Error(c, fiber.StatusInternalServerError, "REFRESH_FAILED", err.Error())
+		return response.Error(c, fiber.StatusInternalServerError, "REFRESH_FAILED", "token refresh failed")
 	}
 
 	return response.JSON(c, fiber.StatusOK, tokenPair)
@@ -191,7 +191,7 @@ func (h *AuthHandler) Me(c *fiber.Ctx) error {
 func (h *AuthHandler) Logout(c *fiber.Ctx) error {
 	userID, _ := c.Locals("user_id").(string)
 	if err := h.authService.Logout(c.Context(), userID); err != nil {
-		return response.Error(c, fiber.StatusInternalServerError, "LOGOUT_FAILED", err.Error())
+		return response.Error(c, fiber.StatusInternalServerError, "LOGOUT_FAILED", "logout failed")
 	}
 	return response.JSON(c, fiber.StatusOK, fiber.Map{"ok": true})
 }
@@ -253,11 +253,11 @@ func (h *AuthHandler) ResetPasswordConfirm(c *fiber.Ctx) error {
 	if err := h.authService.ConfirmPasswordReset(c.Context(), req.Email, req.Token, req.NewPassword); err != nil {
 		switch err {
 		case service.ErrPasswordTooShort:
-			return response.Error(c, fiber.StatusBadRequest, "PASSWORD_TOO_SHORT", err.Error())
+			return response.Error(c, fiber.StatusBadRequest, "PASSWORD_TOO_SHORT", "password policy not met")
 		case service.ErrInvalidToken:
 			return response.Error(c, fiber.StatusUnauthorized, "INVALID_TOKEN", "reset token is invalid or expired")
 		}
-		return response.Error(c, fiber.StatusBadRequest, "RESET_FAILED", err.Error())
+		return response.Error(c, fiber.StatusBadRequest, "RESET_FAILED", "password reset failed")
 	}
 
 	return response.JSON(c, fiber.StatusOK, fiber.Map{"ok": true})
@@ -292,7 +292,7 @@ func (h *AuthHandler) ChangePassword(c *fiber.Ctx) error {
 		case service.ErrSamePassword:
 			return response.Error(c, fiber.StatusBadRequest, "SAME_PASSWORD", "new password must be different")
 		}
-		return response.Error(c, fiber.StatusBadRequest, "CHANGE_FAILED", err.Error())
+		return response.Error(c, fiber.StatusBadRequest, "CHANGE_FAILED", "password change failed")
 	}
 
 	return response.JSON(c, fiber.StatusOK, fiber.Map{"ok": true})

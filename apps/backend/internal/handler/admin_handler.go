@@ -55,7 +55,7 @@ func (h *AdminHandler) ListUsers(c *fiber.Ctx) error {
 	}
 	users, err := h.userRepo.ListAll(c.Context(), limit, offset)
 	if err != nil {
-		return response.Error(c, fiber.StatusInternalServerError, "FETCH_FAILED", err.Error())
+		return response.Error(c, fiber.StatusInternalServerError, "FETCH_FAILED", "fetch failed")
 	}
 	if users == nil {
 		users = []models.User{}
@@ -79,7 +79,7 @@ func (h *AdminHandler) SetUserRole(c *fiber.Ctx) error {
 	}
 
 	if err := h.userRepo.UpdateRole(c.Context(), user.ID, req.Role); err != nil {
-		return response.Error(c, fiber.StatusInternalServerError, "UPDATE_FAILED", err.Error())
+		return response.Error(c, fiber.StatusInternalServerError, "UPDATE_FAILED", "update failed")
 	}
 
 	return response.JSON(c, fiber.StatusOK, map[string]string{"id": user.ID, "role": req.Role})
