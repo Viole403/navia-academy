@@ -114,6 +114,7 @@ async function evictCacheIfNeeded(): Promise<void> {
  */
 export function useTts() {
   const soundRef = useRef<Audio.Sound | null>(null)
+  const playIdRef = useRef(0) // increments on each play() call to discard stale status updates
   const [loading, setLoading] = useState(false)
   const [playing, setPlaying] = useState(false)
   const [error, setError] = useState<string | null>(null)
@@ -132,6 +133,7 @@ export function useTts() {
 
   const play = useCallback(async (text: string) => {
     if (!text) return
+    const playId = ++playIdRef.current // tag this call
     try {
       setError(null)
       setLoading(true)
@@ -152,9 +154,14 @@ export function useTts() {
           { uri: localFile.uri },
           { shouldPlay: true }
         )
+        if (playId !== playIdRef.current) {
+          sound.unloadAsync().catch(() => {})
+          return
+        }
         soundRef.current = sound
         setPlaying(true)
         sound.setOnPlaybackStatusUpdate((status) => {
+          if (playId !== playIdRef.current) return
           if (!status.isLoaded) {
             if ("error" in status && status.error) {
               setPlaying(false)
@@ -176,6 +183,10 @@ export function useTts() {
             { uri: cdnUrl },
             { shouldPlay: true }
           )
+          if (playId !== playIdRef.current) {
+            sound.unloadAsync().catch(() => {})
+            return
+          }
           soundRef.current = sound
           setPlaying(true)
           // Cache the file locally for offline use
@@ -188,6 +199,7 @@ export function useTts() {
             // caching is best-effort, don't block playback
           }
           sound.setOnPlaybackStatusUpdate((status) => {
+            if (playId !== playIdRef.current) return
             if (!status.isLoaded) {
               if ("error" in status && status.error) {
                 setPlaying(false)
@@ -213,9 +225,14 @@ export function useTts() {
         { uri: url },
         { shouldPlay: true }
       )
+      if (playId !== playIdRef.current) {
+        sound.unloadAsync().catch(() => {})
+        return
+      }
       soundRef.current = sound
       setPlaying(true)
       sound.setOnPlaybackStatusUpdate((status) => {
+        if (playId !== playIdRef.current) return
         if (!status.isLoaded) {
           if ("error" in status && status.error) {
             setPlaying(false)
