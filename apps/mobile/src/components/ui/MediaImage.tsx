@@ -1,9 +1,10 @@
 import { useState } from "react"
-import { ActivityIndicator, Image, ImageProps, View } from "react-native"
+import { Image } from "expo-image"
+import { View } from "react-native"
 import { useTheme } from "@/theme/ThemeProvider"
 import { resolveMediaUrl } from "@/utils/env"
 
-interface MediaImageProps extends Omit<ImageProps, "source" | "src"> {
+interface MediaImageProps {
   /**
    * Either an absolute URL (https://r2.dev/...) or a path relative to
    * `EXPO_PUBLIC_MEDIA_BASE_URL` — both are resolved automatically.
@@ -14,14 +15,12 @@ interface MediaImageProps extends Omit<ImageProps, "source" | "src"> {
   height?: number
   /** Border radius — keep small for editorial style. Default 4. */
   radius?: number
-  /** Loading placeholder. Defaults to a hairline-bordered box. */
-  placeholder?: React.ReactNode
+  style?: object
 }
 
 /**
- * Editorial image renderer for S3/R2-hosted media.
- * - Resolves relative URLs against EXPO_PUBLIC_MEDIA_BASE_URL
- * - Hairline border, sharp 4px radius
+ * Editorial image renderer for S3/R2-hosted media using expo-image.
+ * - Disk-cached via expo-image's managed disk cache
  * - Graceful error fallback (broken-icon glyph)
  */
 export function MediaImage({
@@ -29,12 +28,9 @@ export function MediaImage({
   width,
   height,
   radius = 4,
-  placeholder,
   style,
-  ...rest
 }: MediaImageProps) {
   const { theme } = useTheme()
-  const [loading, setLoading] = useState(true)
   const [errored, setErrored] = useState(false)
 
   const uri = resolveMediaUrl(src)
@@ -59,7 +55,7 @@ export function MediaImage({
             justifyContent: "center",
           },
           border,
-          style,
+          style as object,
         ]}
       >
         <View
@@ -76,33 +72,19 @@ export function MediaImage({
   }
 
   return (
-    <View style={[{ width: w, height: h, overflow: "hidden" }, border, style]}>
-      {loading &&
-        (placeholder ?? (
-          <View
-            style={{
-              position: "absolute",
-              top: 0,
-              left: 0,
-              right: 0,
-              bottom: 0,
-              alignItems: "center",
-              justifyContent: "center",
-            }}
-          >
-            <ActivityIndicator color={theme.accent} size="small" />
-          </View>
-        ))}
+    <View
+      style={[
+        { width: w, height: h, overflow: "hidden" },
+        border,
+        style as object,
+      ]}
+    >
       <Image
         source={{ uri }}
         style={{ width: w, height: h }}
-        onLoadStart={() => setLoading(true)}
-        onLoadEnd={() => setLoading(false)}
-        onError={() => {
-          setLoading(false)
-          setErrored(true)
-        }}
-        {...rest}
+        contentFit="cover"
+        transition={150}
+        onError={() => setErrored(true)}
       />
     </View>
   )

@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react"
+import { memo, useMemo, useState } from "react"
 import {
   ActivityIndicator,
   FlatList,
@@ -331,29 +331,35 @@ function BrowseTab({
 
         {vocabQ.isLoading ? (
           <ActivityIndicator color={theme.accent} />
-        ) : !vocabQ.data || vocabQ.data.length === 0 ? (
-          <EmptyState
-            title="Nothing here"
-            message="Try a different search term or level."
-            glyph="空"
-          />
         ) : (
-          <View style={{ borderTopWidth: 1, borderTopColor: theme.border }}>
-            {vocabQ.data?.map((w, i) => (
-              <WordRow
-                key={w.id}
-                word={w}
-                isLast={i === (vocabQ.data?.length ?? 0) - 1}
+          <FlatList
+            data={vocabQ.data}
+            keyExtractor={(w) => w.id}
+            renderItem={({ item }) => <WordRow word={item} />}
+            initialNumToRender={12}
+            maxToRenderPerBatch={8}
+            windowSize={5}
+            removeClippedSubviews
+            ItemSeparatorComponent={() => (
+              <View
+                style={{ borderTopWidth: 1, borderTopColor: theme.border }}
               />
-            ))}
-          </View>
+            )}
+            ListEmptyComponent={
+              <EmptyState
+                title="Nothing here"
+                message="Try a different search term or level."
+                glyph="空"
+              />
+            }
+          />
         )}
       </View>
     </View>
   )
 }
 
-function WordRow({ word, isLast }: { word: VocabWord; isLast: boolean }) {
+const WordRow = memo(function WordRow({ word }: { word: VocabWord }) {
   const { theme } = useTheme()
   const router = useRouter()
   return (
@@ -369,7 +375,7 @@ function WordRow({ word, isLast }: { word: VocabWord; isLast: boolean }) {
         alignItems: "center",
         paddingVertical: 14,
         gap: 16,
-        borderBottomWidth: isLast ? 1 : 0,
+        borderBottomWidth: 1,
         borderBottomColor: theme.border,
       }}
     >
@@ -398,7 +404,7 @@ function WordRow({ word, isLast }: { word: VocabWord; isLast: boolean }) {
       </Text>
     </Pressable>
   )
-}
+})
 
 // ─── Review sub-tab ────────────────────────────────────────────────────────
 function ReviewTab({

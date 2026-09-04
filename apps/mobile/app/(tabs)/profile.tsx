@@ -4,7 +4,6 @@ import {
   Alert,
   Linking,
   Pressable,
-  ScrollView,
   Switch,
   Text,
   View,
@@ -13,9 +12,10 @@ import { SafeAreaView } from "react-native-safe-area-context"
 import { useRouter } from "expo-router"
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query"
 import { Button } from "@/components/ui/Button"
-import { Chip } from "@/components/ui/Chip"
+import { Card } from "@/components/ui/Card"
 import { EmptyState } from "@/components/ui/EmptyState"
 import { Input } from "@/components/ui/Input"
+import { KeyboardSafeScroll } from "@/components/ui/KeyboardSafeScroll"
 import { Motif } from "@/components/ui/Motif"
 import { useTheme } from "@/theme/ThemeProvider"
 import { fonts, type } from "@/theme/typography"
@@ -95,7 +95,7 @@ export default function ProfileTab() {
       style={{ flex: 1, backgroundColor: theme.bg }}
       edges={["top"]}
     >
-      <ScrollView
+      <KeyboardSafeScroll
         contentContainerStyle={{ padding: 24, gap: 28, paddingBottom: 48 }}
       >
         {/* Masthead */}
@@ -390,7 +390,7 @@ export default function ProfileTab() {
         )}
 
         {section === "about" && <AboutSection />}
-      </ScrollView>
+      </KeyboardSafeScroll>
     </SafeAreaView>
   )
 }
