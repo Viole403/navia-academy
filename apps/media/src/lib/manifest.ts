@@ -9,6 +9,8 @@ export interface ManifestEntry {
   examSource?: string
   audioPath?: string
   language?: string
+  /** Fixed voice casting (see lib/voice-casting.ts). Absent = legacy entry. */
+  gender?: "female" | "male"
 }
 
 const ROOT = join(process.cwd())

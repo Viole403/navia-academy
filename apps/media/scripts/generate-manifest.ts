@@ -2,6 +2,13 @@ import { readFile, writeFile, mkdir, readdir } from "node:fs/promises"
 import { join, dirname } from "node:path"
 import { fileURLToPath } from "node:url"
 import { detectLocale } from "@navia/utils"
+import {
+  DIALOG_READINGS,
+  hashGender,
+  readingGender,
+  speakerGender,
+  type CastGender,
+} from "../src/lib/voice-casting"
 import { writeContentLevelsFile } from "./lib/content-levels"
 
 /**
@@ -54,6 +61,14 @@ interface ManifestEntry {
   language: string
   examSource?: string
   audioPath?: string
+  gender: CastGender
+}
+
+/** "Name：line" / "Name:line" → [name, line]; short prefix only (avoid enumerations). */
+function splitDialogLine(text: string): [string, string] | undefined {
+  const m = text.match(/^([^：:]{1,12})[：:]\s*(.+)$/)
+  if (!m) return undefined
+  return [m[1], m[2]]
 }
 
 // ─── Unified field extraction (canonical-first, legacy fallback) ────────
@@ -146,23 +161,30 @@ async function collectContentDomain(
       if (domain === "vocabulary") {
         const text = getText(item)
         if (!text) continue
+        const wordKey = `vocab:${item.id}`
+        // Word voice: deterministic hash. Examples inherit it so a card
+        // never switches voice mid-card (audit Q8).
+        const wordGender = hashGender(wordKey)
         entries.push({
-          key: `vocab:${item.id}`,
+          key: wordKey,
           text,
           locale: detectLocale(text, src, langHint),
           language: lang,
           examSource: src,
-          audioPath: audioPath(item.audio as string, `vocab:${item.id}`),
+          audioPath: audioPath(item.audio as string, wordKey),
+          gender: wordGender,
         })
         if (lang === "zh") {
           const trad = String(item.textVariant ?? item.traditional ?? "")
           if (trad && trad !== text) {
+            const tradKey = `vocab:${item.id}:trad`
             entries.push({
-              key: `vocab:${item.id}:trad`,
+              key: tradKey,
               text: trad,
               locale: "zh-TW",
               language: lang,
               examSource: src,
+              gender: hashGender(tradKey),
             })
           }
         }
@@ -178,6 +200,7 @@ async function collectContentDomain(
             language: lang,
             examSource: src,
             audioPath: audioPath(examples[i].audio as string, key),
+            gender: wordGender,
           })
         }
       } else if (domain === "grammar") {
@@ -193,21 +216,53 @@ async function collectContentDomain(
             language: lang,
             examSource: src,
             audioPath: audioPath(examples[i].audio as string, key),
+            gender: hashGender(key),
           })
         }
       } else if (domain === "readings") {
         const paragraphs = (item.paragraphs as Record<string, unknown>[]) ?? []
+        const itemId = String(item.id ?? "")
+        const isDialog = DIALOG_READINGS.has(itemId)
         for (let i = 0; i < paragraphs.length; i++) {
-          const pText = getText(paragraphs[i])
-          if (!pText) continue
-          const key = `reading:${item.id}:p${i}`
+          const rawText = getText(paragraphs[i])
+          if (!rawText) continue
+          const key = `reading:${itemId}:p${i}`
+          if (isDialog) {
+            // Dialogue reading: one voice per speaker line (audit Q5).
+            const split = splitDialogLine(rawText)
+            if (split) {
+              const [who, line] = split
+              // First distinct speaker in this reading = male (order rule).
+              const firstSeen = paragraphs
+                .slice(0, i)
+                .map((p) => splitDialogLine(getText(p))?.[0])
+                .filter(Boolean) as string[]
+              const firstSpoken = !firstSeen.length || firstSeen[0] === who
+              entries.push({
+                key,
+                text: line,
+                locale: detectLocale(line, src, langHint),
+                language: lang,
+                examSource: src,
+                audioPath: audioPath(paragraphs[i].audio as string, key),
+                gender: speakerGender(
+                  `reading:${itemId}`,
+                  who,
+                  who,
+                  firstSpoken
+                ),
+              })
+              continue
+            }
+          }
           entries.push({
             key,
-            text: pText,
-            locale: detectLocale(pText, src, langHint),
+            text: rawText,
+            locale: detectLocale(rawText, src, langHint),
             language: lang,
             examSource: src,
             audioPath: audioPath(paragraphs[i].audio as string, key),
+            gender: readingGender(itemId),
           })
         }
       } else if (domain === "conversations") {
@@ -215,10 +270,22 @@ async function collectContentDomain(
           (item.turns as Record<string, unknown>[]) ??
           (item.dialogue as Record<string, unknown>[]) ??
           []
+        // Speaker order = first appearance in turns (NOT speakers[] order).
+        const seenOrder: string[] = []
+        for (const t of turns) {
+          const s = String(t.speaker ?? "")
+          if (s && !seenOrder.includes(s)) seenOrder.push(s)
+        }
+        const nameById = new Map<string, string>()
+        for (const s of (item.speakers as Record<string, unknown>[]) ?? []) {
+          nameById.set(String(s.id ?? ""), String(s.name ?? ""))
+        }
+        const convId = String(item.id ?? "")
         for (let i = 0; i < turns.length; i++) {
           const tText = getText(turns[i])
           if (!tText) continue
-          const key = `conv:${item.id}:t${i}`
+          const speakerId = String(turns[i].speaker ?? "")
+          const key = `conv:${convId}:t${i}`
           entries.push({
             key,
             text: tText,
@@ -226,18 +293,26 @@ async function collectContentDomain(
             language: lang,
             examSource: src,
             audioPath: audioPath(turns[i].audio as string, key),
+            gender: speakerGender(
+              lang === "zh" ? "zh" : convId,
+              speakerId,
+              nameById.get(speakerId),
+              seenOrder[0] === speakerId
+            ),
           })
         }
       } else if (domain === "characters") {
         const text = getText(item)
         if (!text) continue
+        const key = `char:${item.id}`
         entries.push({
-          key: `char:${item.id}`,
+          key,
           text,
           locale: detectLocale(text, src, langHint),
           language: lang,
           examSource: src,
-          audioPath: audioPath(item.audio as string, `char:${item.id}`),
+          audioPath: audioPath(item.audio as string, key),
+          gender: hashGender(key),
         })
       }
     }
@@ -260,12 +335,14 @@ async function collectPlacement(lang: string): Promise<ManifestEntry[]> {
     const src = resolveExamSource(
       item.examMappings as Record<string, unknown> | undefined
     )
+    const pKey = (item.audio as string) ?? `placement:${item.id}`
     entries.push({
-      key: (item.audio as string) ?? `placement:${item.id}`,
+      key: pKey,
       text: audioText,
       locale: detectLocale(audioText, src, (item.language as string) ?? lang),
       language: lang,
       examSource: src,
+      gender: hashGender(pKey),
     })
   }
   return entries
@@ -283,12 +360,14 @@ async function collectAssessments(lang: string): Promise<ManifestEntry[]> {
       ).entries()) {
         const audioText = ex.audioText as string
         if (!audioText) continue
+        const aKey = `assessment:${assessment.id}:ex${i}`
         entries.push({
-          key: `assessment:${assessment.id}:ex${i}`,
+          key: aKey,
           text: audioText,
           locale: detectLocale(audioText, "hsk", lang),
           language: lang,
           examSource: "hsk",
+          gender: hashGender(aKey),
         })
       }
     }
@@ -309,17 +388,52 @@ async function collectCurriculum(lang: string): Promise<ManifestEntry[]> {
         const audioText =
           ((step.exercise as Record<string, unknown> | undefined)
             ?.audioText as string) ?? ""
-        if (!audioText) continue
-        entries.push({
-          key: `curriculum:${lesson.id}:${step.id}`,
-          text: audioText,
-          locale: detectLocale(
-            audioText,
-            undefined,
-            (lesson.language as string) ?? lang
-          ),
-          language: lang,
-        })
+        if (audioText) {
+          const cKey = `curriculum:${lesson.id}:${step.id}`
+          entries.push({
+            key: cKey,
+            text: audioText,
+            locale: detectLocale(
+              audioText,
+              undefined,
+              (lesson.language as string) ?? lang
+            ),
+            language: lang,
+            gender: hashGender(cKey),
+          })
+        }
+        // D2: dialogue steps were never in the manifest (played via on-demand
+        // TTS). Include them as per-speaker entries, same rules as conv turns.
+        if (step.type === "dialogue") {
+          const lines = (step.dialogue as Record<string, unknown>[]) ?? []
+          const seenOrder: string[] = []
+          for (const ln of lines) {
+            const s = String(ln.speaker ?? "")
+            if (s && !seenOrder.includes(s)) seenOrder.push(s)
+          }
+          for (let i = 0; i < lines.length; i++) {
+            const dText = getText(lines[i])
+            if (!dText) continue
+            const who = String(lines[i].speaker ?? "")
+            const dKey = `curriculum:${lesson.id}:${step.id}:d${i}`
+            entries.push({
+              key: dKey,
+              text: dText,
+              locale: detectLocale(
+                dText,
+                undefined,
+                (lesson.language as string) ?? lang
+              ),
+              language: lang,
+              gender: speakerGender(
+                "curriculum",
+                who,
+                who,
+                seenOrder[0] === who
+              ),
+            })
+          }
+        }
       }
     }
   }

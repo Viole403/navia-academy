@@ -15,6 +15,7 @@ import {
   loadManifest,
   type ManifestEntry,
 } from "./manifest"
+import { hashGender } from "./voice-casting"
 
 interface GenerateRecord {
   key: string
@@ -29,7 +30,12 @@ interface GenerateRecord {
 const RECORDS_PATH = join(OUTPUT_AUDIO_DIR, ".generate-records.json")
 const RATE_LIMIT_MS = 350
 const RETRY_BACKOFF_MS = 2000
-const GENDERS = ["female", "male"] as const
+
+/** Fixed voice casting: one gender per manifest entry (see voice-casting.ts).
+ *  Legacy entries without `gender` fall back to the deterministic hash. */
+export function entryGender(e: ManifestEntry): MediaGender {
+  return (e.gender ?? hashGender(e.key)) as MediaGender
+}
 
 export interface BatchResult {
   generated: number
@@ -95,7 +101,8 @@ function isTransient(err: unknown): boolean {
 }
 
 /**
- * Generate audio for every manifest entry, per gender.
+ * Generate audio for every manifest entry — exactly ONE file per entry, using
+ * its fixed cast gender (`entry.gender`, see voice-casting.ts).
  *
  * Dedup guarantee: the SAME text+locale+gender is synthesized at most ONCE.
  * Every other manifest key that points to identical text+locale+gender reuses
@@ -169,43 +176,51 @@ export async function generateAudioBatch(
 
   // Build the task list up-front and reserve dedup slots synchronously, before
   // any synthesis starts. This is what fixes the dedup race.
+  // One task per entry — the entry's fixed cast gender (no more ×2 genders).
   const tasks: Task[] = []
   const ownerDone = new Map<string, () => void>()
   const ownerPromise = new Map<string, Promise<void>>()
   for (const entry of manifest) {
     if (opts.lang && entry.language !== opts.lang) continue
-    for (const gender of GENDERS) {
-      const key = recordKey(entry, gender)
-      const combo = `${entry.text}::${entry.locale}::${gender}`
-      const owner = ownerByCombo.get(combo) ?? key
-      if (!ownerByCombo.has(combo)) {
-        ownerByCombo.set(combo, key)
-        let resolve!: () => void
-        ownerPromise.set(combo, new Promise<void>((r) => (resolve = r)))
-        ownerDone.set(combo, resolve)
-      }
-      tasks.push({
-        entry,
-        gender,
-        key,
-        combo,
-        hash: contentHash(entry.text, entry.locale, gender),
-        objectKey: audioObjectKey(entry, gender),
-        owner,
-      })
+    const gender = entryGender(entry)
+    const key = recordKey(entry, gender)
+    const combo = `${entry.text}::${entry.locale}::${gender}`
+    const owner = ownerByCombo.get(combo) ?? key
+    if (!ownerByCombo.has(combo)) {
+      ownerByCombo.set(combo, key)
+      let resolve!: () => void
+      ownerPromise.set(combo, new Promise<void>((r) => (resolve = r)))
+      ownerDone.set(combo, resolve)
     }
+    tasks.push({
+      entry,
+      gender,
+      key,
+      combo,
+      hash: contentHash(entry.text, entry.locale, gender),
+      objectKey: audioObjectKey(entry, gender),
+      owner,
+    })
   }
 
   let generated = 0
   let copied = 0
   let skipped = 0
   let errors = 0
+  // R3 fix: merge into previous records instead of overwriting — a partial
+  // run (limit/lang) must not drop records for keys it never visited.
+  const merged = new Map<string, GenerateRecord>(records)
   const newRecords: GenerateRecord[] = []
   let lastCheckpoint = 0
 
+  const track = (rec: GenerateRecord) => {
+    merged.set(rec.key, rec)
+    newRecords.push(rec)
+  }
+
   const checkpoint = async (force = false) => {
     if (force || newRecords.length - lastCheckpoint >= checkpointEvery) {
-      await saveRecords(newRecords)
+      await saveRecords([...merged.values()])
       lastCheckpoint = newRecords.length
     }
   }
@@ -244,13 +259,13 @@ export async function generateAudioBatch(
           await localAudioExists(task.entry.key, task.entry.locale, task.gender)
         ) {
           skipped++
-          newRecords.push(existing)
+          track(existing)
           return
         }
         // File missing from storage — fall through to re-generate.
         if (storageKeys.has(task.objectKey)) {
           skipped++
-          newRecords.push(existing)
+          track(existing)
           return
         }
       }
@@ -261,7 +276,7 @@ export async function generateAudioBatch(
       // overwrite existing objects at their immutable-cached keys.
       if (storageKeys.has(task.objectKey)) {
         skipped++
-        newRecords.push({
+        track({
           key: task.key,
           text: task.entry.text,
           locale: task.entry.locale,
@@ -289,7 +304,7 @@ export async function generateAudioBatch(
           if (client) {
             await uploadBuffer(cfg, client, task.objectKey, audio, "audio/mpeg")
           }
-          newRecords.push({
+          track({
             key: task.key,
             text: task.entry.text,
             locale: task.entry.locale,
@@ -315,7 +330,7 @@ export async function generateAudioBatch(
             await uploadBuffer(cfg, client, task.objectKey, audio, "audio/mpeg")
           }
         }
-        newRecords.push({
+        track({
           key: task.key,
           text: task.entry.text,
           locale: task.entry.locale,
