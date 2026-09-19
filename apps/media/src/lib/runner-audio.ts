@@ -97,7 +97,13 @@ async function existingAudioKeys(
 /** True for transient edge-tts failures that deserve a single retry. */
 function isTransient(err: unknown): boolean {
   const msg = err instanceof Error ? err.message : String(err)
-  return msg.includes("504") || msg.includes("WSServerHandshakeError")
+  return (
+    msg.includes("504") ||
+    msg.includes("WSServerHandshakeError") ||
+    // Edge sometimes returns empty audio under burst load; a paced retry
+    // almost always succeeds (seen on zh-TW trad batches).
+    msg.includes("No audio was received")
+  )
 }
 
 /**
