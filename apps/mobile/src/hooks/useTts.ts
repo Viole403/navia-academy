@@ -4,12 +4,7 @@ import { File, Directory, Paths } from "expo-file-system"
 import { tts } from "@/api/endpoints"
 import { resolveMediaUrl } from "@/utils/env"
 import audioManifest from "@/data/audio/audio-manifest.json"
-import {
-  detectLocale,
-  localeForExam,
-  type VoiceGender,
-  type VoiceLocale,
-} from "@/data/audio"
+import { type VoiceGender, type VoiceLocale } from "@/data/audio"
 
 const CDN_PUBLIC_URL = process.env.EXPO_PUBLIC_AUDIO_CDN_URL ?? ""
 const AUDIO_EXT = ".mp3"
@@ -21,15 +16,20 @@ interface ManifestEntry {
   locale: string
   examSource?: string
   audioPath?: string
+  gender?: VoiceGender
 }
 
 const manifestEntries = audioManifest as ManifestEntry[]
 const textByKey = new Map<string, string>()
 const keysByText = new Map<string, string[]>()
 const localeByKey = new Map<string, string>()
+const genderByKey = new Map<string, VoiceGender>()
 for (const entry of manifestEntries) {
   textByKey.set(entry.key, entry.text)
   localeByKey.set(entry.key, entry.locale)
+  if (entry.gender === "female" || entry.gender === "male") {
+    genderByKey.set(entry.key, entry.gender)
+  }
   const existing = keysByText.get(entry.text)
   if (existing) {
     existing.push(entry.key)
@@ -141,9 +141,11 @@ export function useTts() {
 
       await ensureCacheDir()
 
-      const locale = localeForExam("hsk")
-      const genderKey: VoiceGender = "female"
+      // M1/M2: voice follows the manifest casting (fixed gender + natural
+      // locale per entry). Falls back to zh-CN female for raw/dynamic text.
       const canonicalKey = resolveCanonicalKey(text)
+      const locale = (localeByKey.get(canonicalKey) ?? "zh-CN") as VoiceLocale
+      const genderKey: VoiceGender = genderByKey.get(canonicalKey) ?? "female"
       const manifestText = textByKey.get(canonicalKey)
       const isManifestBacked = manifestText !== undefined
 
@@ -217,7 +219,7 @@ export function useTts() {
       }
 
       // Step 3: backend TTS (fallback for dynamic content or CDN failure)
-      const audio = await tts.say(text)
+      const audio = await tts.say(text, locale, genderKey)
       const url = resolveMediaUrl(audio.url)
       if (!url) throw new Error("empty audio url")
 
