@@ -562,16 +562,6 @@ export default function SettingsPage() {
               <option value="0.85">{t("settings.voiceDidactic")}</option>
               <option value="1">{t("settings.voiceNatural")}</option>
             </Select>
-            <Select
-              label={t("settings.voiceGender")}
-              value={s.voiceGender}
-              onChange={(e) =>
-                s.set({ voiceGender: e.target.value as "female" | "male" })
-              }
-            >
-              <option value="female">{t("settings.female")}</option>
-              <option value="male">{t("settings.male")}</option>
-            </Select>
           </div>
           <div className="mt-2 divide-y divide-line">
             <Toggle

@@ -313,6 +313,7 @@ interface GuidedField {
   key: string
   label: string
   list?: boolean
+  hint?: string
 }
 
 // Matches the canonical JSON schema in apps/media/data/json. The guided form
@@ -369,12 +370,28 @@ function guidedFields(lang: string, domain: string): GuidedField[] {
         ? [
             { key: "title", label: "Title" },
             { key: "context", label: "Context" },
-            { key: "turns", label: "Turns (JSON array)", list: true },
+            {
+              key: "turns",
+              label: "Turns (JSON array)",
+              list: true,
+              hint: "Voice rule: the speaker who talks FIRST gets the male voice, the other gets the female voice (tutor first).",
+            },
           ]
         : [
             { key: "title", label: "Title" },
             { key: "scenario", label: "Scenario" },
-            { key: "dialogue", label: "Dialogue (JSON array)", list: true },
+            {
+              key: "speakers",
+              label: "Speakers (JSON array, optional)",
+              list: true,
+              hint: 'Optional names, e.g. [{"id": "a", "name": "Anna"}]. Named speakers keep a fixed voice; unnamed pairs follow the order rule below.',
+            },
+            {
+              key: "dialogue",
+              label: "Dialogue (JSON array)",
+              list: true,
+              hint: "Voice rule: the speaker who talks FIRST gets the male voice, the other gets the female voice.",
+            },
           ]
   }
   return []
@@ -548,6 +565,9 @@ function ContentEditor({
                   onChange={(e) => setVal(f.key, e.target.value)}
                   placeholder={f.key === "translation" ? "English" : ""}
                 />
+              )}
+              {f.hint && (
+                <p className="mt-1 text-xs text-ink-faint">{f.hint}</p>
               )}
             </div>
           ))}

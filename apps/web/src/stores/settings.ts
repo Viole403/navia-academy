@@ -9,9 +9,13 @@ import type {
   LanguageCode,
   ThemeId,
 } from "@/types"
-import type { VoiceGender } from "@navia/utils"
+
+// Settings schema version. Bump when removing/renaming fields; load()
+// drops keys that no longer exist so stale cached values never come back.
+export const SETTINGS_VERSION = 1
 
 export interface SettingsState {
+  version: number
   activeExamType: ExamType
   language: LanguageCode
   theme: ThemeId
@@ -37,7 +41,6 @@ export interface SettingsState {
   publicProfile: boolean
   showStats: boolean
   hiddenWidgets: string[]
-  voiceGender: VoiceGender
   hydrated: boolean
 
   load: (data: Partial<SettingsState>) => void
@@ -105,6 +108,7 @@ export const THEMES: { id: ThemeId }[] = [
 ]
 
 export const useSettings = create<SettingsState>()((set) => ({
+  version: SETTINGS_VERSION,
   activeExamType: "hsk",
   language: "zh",
   theme: "bauhaus",
@@ -135,14 +139,21 @@ export const useSettings = create<SettingsState>()((set) => ({
   publicProfile: false,
   showStats: true,
   hiddenWidgets: [],
-  voiceGender: "female",
   hydrated: false,
 
   load: (data) => {
     suppressSync = true
+    // Drop keys that no longer exist in the schema (e.g. a stale
+    // `voiceGender` from an older app version) so they can never come back.
+    const {
+      voiceGender: _removed,
+      version: _v,
+      ...rest
+    } = data as Record<string, unknown>
     set((s) => ({
       ...s,
-      ...data,
+      ...(rest as Partial<SettingsState>),
+      version: SETTINGS_VERSION,
       hydrated: true,
     }))
   },

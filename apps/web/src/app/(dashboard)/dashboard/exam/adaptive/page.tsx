@@ -582,8 +582,7 @@ export default function AdaptiveExamPage() {
                     onLoadingChange: setAudioLoading,
                     onError: () => {},
                   },
-                  ttsLocale,
-                  settings.voiceGender
+                  ttsLocale
                 )
               }
               disabled={audioLoading}

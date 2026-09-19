@@ -2,6 +2,7 @@
 
 import {
   detectLocale,
+  hashGenderKey,
   localeForExam,
   type VoiceGender,
   type VoiceLocale,
@@ -24,12 +25,14 @@ type ManifestEntry = {
   locale: string
   examSource?: string
   audioPath?: string
+  gender?: VoiceGender
 }
 
 const textByKey = new Map<string, string>()
 const audioPathByKey = new Map<string, string>()
 const keysByText = new Map<string, string[]>()
 const localeByKey = new Map<string, string>()
+const genderByKey = new Map<string, VoiceGender>()
 
 let manifestPromise: Promise<void> | null = null
 /** Populate the lookup maps from manifest entries (shared by full + seeded loads). */
@@ -37,6 +40,9 @@ function ingestAudioManifest(entries: ManifestEntry[]) {
   for (const entry of entries) {
     textByKey.set(entry.key, entry.text)
     localeByKey.set(entry.key, entry.locale)
+    if (entry.gender === "female" || entry.gender === "male") {
+      genderByKey.set(entry.key, entry.gender)
+    }
     if (entry.audioPath && entry.audioPath !== entry.key) {
       audioPathByKey.set(entry.key, entry.audioPath)
     }
@@ -144,6 +150,20 @@ function cdnAudioUrl(
   return `${base}/audio/${key}__${locale}__${gender}${AUDIO_EXT}`
 }
 
+/**
+ * Fixed voice casting: explicit caller gender wins; otherwise the manifest's
+ * own `gender` (one fixed voice per entry); otherwise deterministic hash
+ * for raw text.
+ */
+function resolveCastGender(
+  canonicalKey: string,
+  explicit?: VoiceGender
+): VoiceGender {
+  return (
+    explicit ?? genderByKey.get(canonicalKey) ?? hashGenderKey(canonicalKey)
+  )
+}
+
 export function audioUrl(
   key: string,
   locale?: VoiceLocale,
@@ -151,7 +171,7 @@ export function audioUrl(
 ): string {
   const manifestLocale = localeByKey.get(key) as VoiceLocale | undefined
   const l = locale ?? manifestLocale ?? "zh-CN"
-  const g = gender ?? useSettings.getState().voiceGender ?? "female"
+  const g = resolveCastGender(key, gender)
 
   if (isCdnConfigured()) {
     return cdnAudioUrl(key, l, g)
@@ -196,24 +216,21 @@ function contentLocale(
 }
 
 /**
- * The voice locale follows the active Exam Program (settings.activeExamType):
- *   hsk → zh-CN, tocfl → zh-TW.
- * This guarantees a single, consistent voice per exam — no more mismatches
- * where the same word sounded Taiwanese on one page and Mainland on another.
- *
- * - Manifest-backed keys: the Exam Program drives the locale.
- * - Raw text (no key): follow the exam, but traditional script still needs a
- *   Taiwanese voice.
+ * Voice locale resolution: the manifest's own locale wins for
+ * manifest-backed keys (its natural curriculum — e.g. TOCFL content stays
+ * manifest-backed keys (its natural curriculum — e.g. TOCFL content stays
+ * Taiwanese even while the learner studies HSK). The active Exam Program
+ * only drives raw/dynamic text.
  */
 function effectiveLocale(
   key: string,
   canonicalKey: string,
   text: string
 ): VoiceLocale {
-  const examLocale = localeForExam(useSettings.getState().activeExamType)
-  if (contentLocale(key, canonicalKey)) return examLocale
+  const natural = contentLocale(key, canonicalKey)
+  if (natural) return natural
   if (detectLocale(text) === "zh-TW") return "zh-TW"
-  return examLocale
+  return localeForExam(useSettings.getState().activeExamType)
 }
 
 function resolveCanonicalKey(key: string): string {
@@ -236,7 +253,7 @@ export async function preloadAudio(
   const canonicalKey = resolveCanonicalKey(key)
   const text = textByKey.get(canonicalKey) ?? canonicalKey
   const resolvedLocale = effectiveLocale(key, canonicalKey, text)
-  const genderKey = gender ?? useSettings.getState().voiceGender ?? "female"
+  const genderKey = resolveCastGender(canonicalKey, gender)
   const cacheKey = `${canonicalKey}__${resolvedLocale}__${genderKey}`
   if (cache.has(cacheKey)) return cache.get(cacheKey)!
 
@@ -377,7 +394,7 @@ export async function play(
     return
   }
 
-  const genderKey = gender ?? useSettings.getState().voiceGender ?? "female"
+  const genderKey = resolveCastGender(key, gender)
   const rate = opts.rate ?? 1
 
   // Same audio still loaded: apply the (possibly new) rate and replay.

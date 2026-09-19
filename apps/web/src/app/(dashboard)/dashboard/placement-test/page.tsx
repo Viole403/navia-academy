@@ -202,7 +202,6 @@ export default function PlacementTestPage() {
   const completed = useProgress((s) => s.onboarding.completed)
   const hydrated = useProgress((s) => s.hydrated)
   const audioRate = useSettings((s) => s.audioRate)
-  const voiceGender = useSettings((s) => s.voiceGender)
   const language = useSettings((s) => s.language)
   const { t, locale } = useTranslation()
 
@@ -482,8 +481,7 @@ export default function PlacementTestPage() {
                     onLoadingChange: setAudioLoading,
                     onError: () => {},
                   },
-                  ttsLocaleFor(language) as VoiceLocale,
-                  voiceGender
+                  ttsLocaleFor(language) as VoiceLocale
                 )
               }
               disabled={audioLoading}

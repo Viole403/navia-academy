@@ -266,8 +266,7 @@ export default function ReviewPage() {
                     onLoadingChange: setAudioLoading,
                     onError: () => {},
                   },
-                  locale,
-                  settings.voiceGender
+                  locale
                 )
               }
               disabled={audioLoading}
@@ -294,8 +293,7 @@ export default function ReviewPage() {
                       onLoadingChange: setAudioLoading,
                       onError: () => {},
                     },
-                    locale,
-                    settings.voiceGender
+                    locale
                   )
               }}
             >

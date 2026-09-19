@@ -189,16 +189,11 @@ export default function ReadingDetailPage() {
               </p>
               <button
                 onClick={() =>
-                  play(
-                    p.audio ?? p.hanzi ?? p.text ?? "",
-                    {
-                      rate: settings.audioRate,
-                      onLoadingChange: setAudioLoading,
-                      onError: () => {},
-                    },
-                    "zh-CN",
-                    settings.voiceGender
-                  )
+                  play(p.audio ?? p.hanzi ?? p.text ?? "", {
+                    rate: settings.audioRate,
+                    onLoadingChange: setAudioLoading,
+                    onError: () => {},
+                  })
                 }
                 disabled={audioLoading}
                 className="mt-1 shrink-0 cursor-pointer rounded p-1.5 text-ink-faint hover:text-accent disabled:opacity-50"

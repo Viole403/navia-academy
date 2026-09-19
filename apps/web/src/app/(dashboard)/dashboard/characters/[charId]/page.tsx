@@ -114,8 +114,7 @@ export default function CharDetailPage() {
                           onLoadingChange: setAudioLoading,
                           onError: () => {},
                         },
-                        locale,
-                        settings.voiceGender
+                        locale
                       )
                     }
                     disabled={audioLoading}

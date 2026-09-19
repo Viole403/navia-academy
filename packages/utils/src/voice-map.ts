@@ -35,6 +35,21 @@ export function resolveVoice(locale: VoiceLocale, gender: VoiceGender): string {
   return VOICE_MAP[locale]?.[gender] ?? VOICE_MAP["zh-CN"].female
 }
 
+/**
+ * Deterministic fallback narrator gender for NON-manifest (dynamic) text.
+ * Manifest-backed keys must use the manifest's own `gender` field (the fixed
+ * casting); this is only for raw text played via on-demand TTS, where no
+ * casting exists. FNV-1a parity — cheap, dependency-free, stable per string.
+ */
+export function hashGenderKey(key: string): VoiceGender {
+  let h = 0x811c9dc5
+  for (let i = 0; i < key.length; i++) {
+    h ^= key.charCodeAt(i)
+    h = Math.imul(h, 0x01000193)
+  }
+  return h % 2 === 0 ? "female" : "male"
+}
+
 export function localeForExam(examType: string): VoiceLocale {
   const normalized = examType.toLowerCase()
   switch (normalized) {

@@ -162,8 +162,7 @@ export default function GrammarDetailPage() {
                         onLoadingChange: setAudioLoading,
                         onError: () => {},
                       },
-                      locale,
-                      settings.voiceGender
+                      locale
                     )
                   }
                   disabled={audioLoading}

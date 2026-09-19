@@ -368,8 +368,7 @@ export default function LessonPage() {
                             onLoadingChange: setAudioLoading,
                             onError: () => {},
                           },
-                          locale,
-                          settings.voiceGender
+                          locale
                         )
                       }
                       aria-label={t("lesson.listenPhrase")}
@@ -417,8 +416,7 @@ export default function LessonPage() {
                           onLoadingChange: setAudioLoading,
                           onError: () => {},
                         },
-                        locale,
-                        settings.voiceGender
+                        locale
                       )
                     }
                     aria-label={t("lesson.listenPhrase")}

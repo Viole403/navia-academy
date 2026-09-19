@@ -249,8 +249,7 @@ export default function SpeakingPage() {
                       onLoadingChange: setAudioLoading,
                       onError: () => {},
                     },
-                    ttsLocale,
-                    settings.voiceGender
+                    ttsLocale
                   )
                 }
                 disabled={audioLoading}

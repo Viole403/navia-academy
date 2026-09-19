@@ -90,16 +90,11 @@ export default function ConversationPlayerPage() {
     .at(-1)?.hanzi
   useEffect(() => {
     if (lastTutorLine && settings.autoplayAudio)
-      play(
-        lastTutorLine,
-        {
-          rate: settings.audioRate,
-          onLoadingChange: setAudioLoading,
-          onError: () => {},
-        },
-        "zh-CN",
-        settings.voiceGender
-      )
+      play(lastTutorLine, {
+        rate: settings.audioRate,
+        onLoadingChange: setAudioLoading,
+        onError: () => {},
+      })
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [lastTutorLine])
 
@@ -159,16 +154,11 @@ export default function ConversationPlayerPage() {
                 </p>
                 <button
                   onClick={() =>
-                    play(
-                      item.hanzi,
-                      {
-                        rate: settings.audioRate,
-                        onLoadingChange: setAudioLoading,
-                        onError: () => {},
-                      },
-                      "zh-CN",
-                      settings.voiceGender
-                    )
+                    play(item.hanzi, {
+                      rate: settings.audioRate,
+                      onLoadingChange: setAudioLoading,
+                      onError: () => {},
+                    })
                   }
                   disabled={audioLoading}
                   className="cursor-pointer rounded p-1 text-ink-faint hover:text-accent disabled:opacity-50"

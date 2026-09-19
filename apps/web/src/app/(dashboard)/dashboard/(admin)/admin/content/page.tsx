@@ -3,6 +3,7 @@
 import { useCallback, useEffect, useState } from "react"
 import { useAllowedRefs } from "@/lib/content-levels"
 import { content } from "@/lib/api"
+import { play, stop } from "@/lib/audio"
 import {
   Button,
   Badge,
@@ -11,7 +12,7 @@ import {
   Textarea,
   Select,
 } from "@/components/ui"
-import { Check, X, RefreshCw, Eye } from "lucide-react"
+import { Check, X, RefreshCw, Eye, Volume2 } from "lucide-react"
 
 interface ContentRow {
   lang: string
@@ -48,6 +49,49 @@ function summary(p: unknown): string {
       p.title ??
       JSON.stringify(p).slice(0, 60)
   )
+}
+
+/** Flag conversation turns without a speaker (first-speaker voice applies). */
+function speakerWarnings(p: unknown): string[] {
+  if (!isObj(p)) return []
+  const out: string[] = []
+  const lists: Array<{ arr: unknown; label: string }> = [
+    { arr: p.turns, label: "turn" },
+    { arr: p.dialogue, label: "line" },
+  ]
+  for (const { arr, label } of lists) {
+    if (!Array.isArray(arr)) continue
+    arr.forEach((t, i) => {
+      if (isObj(t) && !String(t.speaker ?? "").trim()) {
+        out.push(
+          `${label} #${i + 1} has no speaker — first-speaker=male rule applies`
+        )
+      }
+    })
+  }
+  return out
+}
+
+/** Speakable lines for reviewer preview: turns/dialogue/paragraphs/
+ *  examples/audioText, capped. Unpublished items have no manifest key, so
+ *  play() resolves them via on-demand TTS. */
+function previewLines(p: unknown, cap = 8): string[] {
+  if (!isObj(p)) return []
+  const out: string[] = []
+  const push = (v: unknown) => {
+    const s = String(
+      (isObj(v) ? (v.text ?? v.hanzi ?? v.char) : v) ?? ""
+    ).trim()
+    if (s && out.length < cap && !out.includes(s)) out.push(s)
+  }
+  const arr = (v: unknown) => (Array.isArray(v) ? v : isObj(v) ? [v] : [])
+  for (const t of arr(p.turns)) push(t)
+  for (const t of arr(p.dialogue)) push(t)
+  for (const t of arr(p.paragraphs)) push(t)
+  for (const t of arr(p.examples)) push(t)
+  push(p.audioText)
+  push(p.text ?? p.hanzi ?? p.char)
+  return out
 }
 
 export default function AdminContentPage() {
@@ -226,6 +270,34 @@ export default function AdminContentPage() {
           <pre className="max-h-64 overflow-auto rounded-lg border border-line bg-sunken p-3 text-xs whitespace-pre-wrap text-ink">
             {JSON.stringify(reviewing?.payload, null, 2)}
           </pre>
+          {reviewing && speakerWarnings(reviewing.payload).length > 0 && (
+            <div className="border-warning/30 bg-warning/5 text-warning rounded-lg border px-3 py-2 text-xs">
+              {speakerWarnings(reviewing.payload).map((w) => (
+                <p key={w}>{w}</p>
+              ))}
+            </div>
+          )}
+          {reviewing && previewLines(reviewing.payload).length > 0 && (
+            <div>
+              <label className="block text-sm font-medium text-ink-soft">
+                Audio preview (on-demand TTS)
+              </label>
+              <div className="mt-1 flex flex-wrap gap-2">
+                {previewLines(reviewing.payload).map((line) => (
+                  <button
+                    key={line}
+                    onClick={() => play(line)}
+                    onDoubleClick={() => stop()}
+                    className="inline-flex max-w-full cursor-pointer items-center gap-1.5 truncate rounded-lg border border-line bg-sunken px-2.5 py-1.5 text-xs text-ink hover:bg-line/40"
+                    title={`${line} (double-click to stop)`}
+                  >
+                    <Volume2 className="h-3.5 w-3.5 shrink-0" />
+                    <span className="truncate">{line.slice(0, 40)}</span>
+                  </button>
+                ))}
+              </div>
+            </div>
+          )}
           {reviewing && (
             <div>
               <label className="block text-sm font-medium text-ink-soft">

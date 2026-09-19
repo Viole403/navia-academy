@@ -147,8 +147,7 @@ export default function WordDetailPage() {
                   onLoadingChange: setAudioLoading,
                   onError: () => {},
                 },
-                locale,
-                settings.voiceGender
+                locale
               )
             }
             disabled={audioLoading}
@@ -216,8 +215,7 @@ export default function WordDetailPage() {
                         onLoadingChange: setAudioLoading,
                         onError: () => {},
                       },
-                      locale,
-                      settings.voiceGender
+                      locale
                     )
                   }
                   disabled={audioLoading}
