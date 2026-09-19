@@ -1,34 +1,34 @@
-# AUDIT MEDIA — Hapus 2x gender, ganti voice-casting tetap per domain (Opsi B expanded)
+# AUDIT MEDIA — Fixed voice casting, satu file per entry (FINAL, implemented)
 
-Tanggal: 2026-09-19 (re-audit). Scope: `apps/media` (pipeline TTS + manifest) + konsumen
-(`apps/web` audio player + settings, `apps/mobile` TTS hook, backend `POST /api/v1/tts`).
+Tanggal: 2026-09-19. Status: **diimplementasikan** (commit f1695b2 → bfb56cf).
+Doc progres per konten: `AUDIT_JSON_GENDER.md`. Doc audit sistem penuh: `AUDIT_AUDIO_FULL.md`.
 
-Keputusan produk (dari user): **web tidak lagi memakai toggle gender** — setiap domain / peran
-dapat **satu suara tetap (fixed voice casting)**. Hasil storage sama hematnya dengan Opsi A
-(~50%), plus UX lebih sederhana (satu setting hilang).
+Keputusan produk: **toggle gender dihapus** — setiap entry punya satu suara tetap.
+Hemat ~50% storage + variasi pembicara membantu generalisasi listening.
 
-## 1. Jawaban singkat
+## 1. Skema final (bukan usulan lagi)
 
-**Ya, Opsi B bisa diterapkan ke SEMUA domain — justru lebih mudah daripada yang dikira**,
-karena tidak ada satu pun domain yang datanya membawa sinyal gender suara:
+- Dialog (conversation turns, curriculum dialogue steps, 1 reading dialog):
+  suara ikut pembicara — bernama menang, tanpa nama ikut aturan urutan
+  (pembicara pertama = male). zh tutor = male, user = female.
+- Narasi netral (vocab, characters, grammar, readings, placement, assessment,
+  curriculum exercise): hash deterministik per key (~50/50 male/female se-korpus,
+  stabil per entry). Contoh vocab mewarisi suara kata induknya.
+- Implementasi: `apps/media/src/lib/voice-casting.ts`
+  (dipakai `scripts/generate-manifest.ts` → field `gender` per entry).
 
-| Domain                       | Manifest entries | Sinyal speaker/gender di data?                                                                            | Casting yang diusulkan                        |
-| ---------------------------- | ---------------- | --------------------------------------------------------------------------------------------------------- | --------------------------------------------- |
-| vocabulary (`vocab:*`)       | 101.385 (90%)    | Tidak ada. Kata + contoh kalimat, tanpa speaker                                                           | female tetap                                  |
-| characters (`char:*`)        | 7.298            | Tidak ada. Satu hanzi per entry                                                                           | female tetap                                  |
-| grammar (`grammar:*:ex*`)    | 1.747            | Tidak ada. Contoh kalimat, tanpa speaker                                                                  | female tetap                                  |
-| readings (`reading:*:p*`)    | 1.706            | Tidak ada. Paragraf narasi, tanpa field narrator                                                          | female tetap (narrator)                       |
-| conversations (`conv:*:t*`)  | 617              | Ada `speaker: "tutor" \| "user"` — tapi itu **peran, bukan gender** (0 field gender dari 261 turn sampel) | tutor = female, user = male (drama dua suara) |
-| placement (`placement:*`)    | 16               | Tidak ada (`audioText` per soal)                                                                          | female tetap                                  |
-| assessments (`assessment:*`) | 3                | Tidak ada (`audioText` per exercise)                                                                      | female tetap                                  |
-| curriculum (`curriculum:*`)  | 3                | Tidak ada (`steps[].exercise.audioText`)                                                                  | female tetap                                  |
-| **TOTAL**                    | **112.775**      |                                                                                                           | **112.775 file (bukan 225.550)**              |
+| Domain                      | Entries     | Hasil file                         |
+| --------------------------- | ----------- | ---------------------------------- |
+| vocabulary (`vocab:*`)      | 101.385     | 1/entry, contoh ikut kata induk    |
+| characters (`char:*`)       | 7.298       | 1/entry (hash)                     |
+| grammar (`grammar:*:ex*`)   | 1.747       | 1/entry (hash)                     |
+| readings (`reading:*:p*`)   | 1.706       | protagonis/hash; 1 dialog di-split |
+| conversations (`conv:*:t*`) | 617         | per-turn ikut speaker              |
+| placement/assessment        | 19          | 1/entry (hash)                     |
+| curriculum (+257 dialog D2) | 260         | exercise hash, dialog ikut speaker |
+| **TOTAL manifest**          | **113.032** | **male 56.734 / female 56.298**    |
 
-Jadi "masa ga diterapkan" — benar, tidak ada alasan domain lain tetap 2x. Satu-satunya
-yang butuh keputusan produk hanyalah **pemetaan peran→suara di conversation**
-(tutor female / user male), selebihnya satu suara narrator tetap tanpa kontroversi.
-
-## 2. Cara kerja hari ini (yang menyebabkan 2x)
+## 2. Cara kerja lama (yang sudah diganti)
 
 - `apps/media/src/lib/runner-audio.ts:32` — `const GENDERS = ["female", "male"]`;
   loop baris 177 membangun 2 task untuk **setiap** manifest entry, semua domain tanpa kecuali.
@@ -156,15 +156,25 @@ yang dapat suara `CONV_USER_GENDER`.
 | placement/assessment/curriculum | 22          | 44                     | 22                      | ~22                |
 | **TOTAL**                       | **112.775** | **±225.550 (±4,7 GB)** | **±112.775 (±2,35 GB)** | **~50%**           |
 
-## 9. Langkah konkret (bisa 2 PR)
+## 9. Status implementasi (PR-1 media, PR-2 web, PR-3 mobile — committed)
 
-**PR 1 — media (tanpa efek ke produksi web):**
-`generate-manifest.ts` tambah `gender` per entry + `runner-audio.ts` 1 task per entry.
-Hasil: generate berikutnya hanya menulis file casting (§1); file male lama tak tersentuh.
+**PR-1 media (f1695b2, ab90133, 10b710b, c166faa):**
+`voice-casting.ts` baru + `gender` per entry di manifest (113.032 entries) +
+`runner-audio.ts` 1 task per entry + records merge + retry respons kosong +
+Azure zh-TW female disamakan + curriculum dialogue steps masuk manifest (D2).
+Rebuild penuh berjalan; lokal `.output/audio` di-prune; daftar orphan R2
+(113.032 key) siap dihapus setelah rebuild + deploy.
 
-**PR 2 — web (rilis bersamaan/berurutan setelah PR 1 generate):**
-`voice-casting.ts` baru + 12 call site (§5) + hapus toggle (§4) + migrasi persisted store.
-Mobile & backend: tanpa perubahan.
+**PR-2 web (7d0dbd1):** `audio.ts` resolve gender/locale dari manifest
+(fallback hash untuk teks dinamis) + 12 call site tanpa gender eksplisit +
+toggle `voiceGender` dihapus (store + settings page + i18n, stale-key cleanup) +
+locale manifest menang atas exam + preview audio + flag speaker di admin review +
+field `speakers` opsional + hint suara di form kontributor.
+Terverifikasi realtime via browser: klik 八 → `vocab:ba1__zh-CN__female.mp3` 206.
+
+**PR-3 mobile (7ac0c72):** `useTts` baca gender+locale dari manifest,
+fallback teruskan keduanya ke `/tts`; subset manifest + voice-map re-sync.
+Hook belum di-wiring ke screen (tidak ada yang rusak, tidak ada yang jalan).
 
 ## 10. File yang dirujuk
 
