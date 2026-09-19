@@ -9,7 +9,7 @@ export interface ManifestEntry {
   examSource?: string
   audioPath?: string
   language?: string
-  /** Fixed voice casting (see lib/voice-casting.ts). Absent = legacy entry. */
+  /** Fixed voice casting (see lib/voice-casting.ts). Absent = deterministic hash. */
   gender?: "female" | "male"
 }
 

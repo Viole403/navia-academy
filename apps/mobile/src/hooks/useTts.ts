@@ -141,8 +141,8 @@ export function useTts() {
 
       await ensureCacheDir()
 
-      // M1/M2: voice follows the manifest casting (fixed gender + natural
-      // locale per entry). Falls back to zh-CN female for raw/dynamic text.
+      // Voice follows the manifest: fixed gender + natural locale per entry.
+      // Raw/dynamic text falls back to zh-CN female.
       const canonicalKey = resolveCanonicalKey(text)
       const locale = (localeByKey.get(canonicalKey) ?? "zh-CN") as VoiceLocale
       const genderKey: VoiceGender = genderByKey.get(canonicalKey) ?? "female"

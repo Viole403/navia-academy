@@ -1,5 +1,6 @@
 "use client"
 
+import { memo } from "react"
 import type { VocabWord, ExamType, ExamMappings } from "@/types"
 import {
   EXAM_BADGE_COLORS,
@@ -15,7 +16,7 @@ interface ExamBadgeProps {
   className?: string
 }
 
-export function ExamBadge({
+export const ExamBadge = memo(function ExamBadge({
   examType,
   level,
   size = "md",
@@ -59,16 +60,16 @@ export function ExamBadge({
       )}
     </span>
   )
-}
+})
 
 interface ExamBadgesProps {
   mappings: ExamMappings
   showEmpty?: boolean
   size?: "sm" | "md" | "lg"
   className?: string
-}
+})
 
-export function ExamBadges({
+export const ExamBadges = memo(function ExamBadges({
   mappings,
   showEmpty = false,
   size = "md",
@@ -98,16 +99,16 @@ export function ExamBadges({
       ))}
     </div>
   )
-}
+})
 
 interface WordExamBadgesProps {
   word: VocabWord
   showAll?: boolean
   size?: "sm" | "md" | "lg"
   className?: string
-}
+})
 
-export function WordExamBadges({
+export const WordExamBadges = memo(function WordExamBadges({
   word,
   showAll = false,
   size = "md",
@@ -125,16 +126,16 @@ export function WordExamBadges({
       className={className}
     />
   )
-}
+})
 
 interface ExamLevelSelectorProps {
   examType: ExamType
   selectedLevel?: string
   onSelect?: (level: string) => void
   className?: string
-}
+})
 
-export function ExamLevelSelector({
+export const ExamLevelSelector = memo(function ExamLevelSelector({
   examType,
   selectedLevel,
   onSelect,
@@ -191,16 +192,16 @@ export function ExamLevelSelector({
       })}
     </div>
   )
-}
+})
 
 interface ExamFilterBadgeProps {
   examType: ExamType
   level?: string
   onRemove?: () => void
   className?: string
-}
+})
 
-export function ExamFilterBadge({
+export const ExamFilterBadge = memo(function ExamFilterBadge({
   examType,
   level,
   onRemove,
@@ -238,7 +239,7 @@ export function ExamFilterBadge({
       )}
     </span>
   )
-}
+})
 
 interface ExamCoverageBarProps {
   examType: ExamType
@@ -247,9 +248,9 @@ interface ExamCoverageBarProps {
   total: number
   showNumbers?: boolean
   className?: string
-}
+})
 
-export function ExamCoverageBar({
+export const ExamCoverageBar = memo(function ExamCoverageBar({
   examType,
   level,
   current,
@@ -284,4 +285,4 @@ export function ExamCoverageBar({
       </div>
     </div>
   )
-}
+})

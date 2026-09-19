@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react"
+import { useState, memo } from "react"
 import { Bookmark, BookmarkCheck, Volume2 } from "lucide-react"
 import type { VocabWord } from "@/types"
 import { play } from "@/lib/audio"
@@ -13,7 +13,7 @@ import { translationFor } from "@/lib/content-translation"
 import { formatWordSubtitle } from "@/lib/vocab-utils"
 import { isCharScript, ttsLocaleFor } from "@/lib/languages"
 
-export function VocabCard({
+export const VocabCard = memo(function VocabCard({
   word,
   compact,
 }: {
@@ -128,4 +128,4 @@ export function VocabCard({
       )}
     </div>
   )
-}
+})

@@ -32,7 +32,7 @@ const RATE_LIMIT_MS = 350
 const RETRY_BACKOFF_MS = 2000
 
 /** Fixed voice casting: one gender per manifest entry (see voice-casting.ts).
- *  Legacy entries without `gender` fall back to the deterministic hash. */
+ *  Entries without `gender` use the deterministic hash. */
 export function entryGender(e: ManifestEntry): MediaGender {
   return (e.gender ?? hashGender(e.key)) as MediaGender
 }
