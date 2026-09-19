@@ -98,7 +98,7 @@ const AZURE_VOICES: Record<
     male: { name: "zh-CN-YunxiNeural", rate: "-10%" },
   },
   "zh-TW": {
-    // R2 fix: HsiaoYuNeural to match the edge voice-map (was HsiaoChenNeural).
+    // HsiaoYuNeural to match the edge voice-map.
     female: { name: "zh-TW-HsiaoYuNeural", rate: "-15%" },
     male: { name: "zh-TW-YunJheNeural", rate: "-10%" },
   },

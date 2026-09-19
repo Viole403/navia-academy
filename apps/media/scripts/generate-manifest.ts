@@ -163,7 +163,7 @@ async function collectContentDomain(
         if (!text) continue
         const wordKey = `vocab:${item.id}`
         // Word voice: deterministic hash. Examples inherit it so a card
-        // never switches voice mid-card (audit Q8).
+        // never switches voice mid-card.
         const wordGender = hashGender(wordKey)
         entries.push({
           key: wordKey,
@@ -228,7 +228,7 @@ async function collectContentDomain(
           if (!rawText) continue
           const key = `reading:${itemId}:p${i}`
           if (isDialog) {
-            // Dialogue reading: one voice per speaker line (audit Q5).
+            // Dialogue reading: one voice per speaker line.
             const split = splitDialogLine(rawText)
             if (split) {
               const [who, line] = split

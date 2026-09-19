@@ -3,28 +3,27 @@ import { createHash } from "node:crypto"
 export type CastGender = "female" | "male"
 
 /**
- * Single source of truth for voice casting (see AUDIT_JSON_GENDER.md).
+ * Single source of truth for voice casting.
  *
  * Priority for dialogue speakers:
- *   1. Explicit per-conv override (ambiguous names: Dr. Klein, Dr. Braun, Alex)
+ *   1. Explicit per-conversation override (ambiguous names)
  *   2. Named pattern (Herr/Mr → male, Frau/Mrs/Ms → female)
  *   3. Known first names (Anna, Marco, …)
- *   4. Order rule: speaker who talks FIRST in the dialogue = male, other = female.
- *      (Order is by first turn appearance, NOT speakers[] array order —
- *      e.g. de-conv-015 lists [anna, ben] but Ben speaks first.)
+ *   4. Order rule: speaker who talks FIRST in the dialogue = male,
+ *      the other = female. Order is by first turn appearance, NOT
+ *      speakers[] array order.
  *
- * Neutral narrator content: deterministic hash of the manifest key (~50/50 M/F
- * corpus-wide, stable per entry). Research basis: HVPT meta-analyses — talker
- * variability improves generalization to novel talkers (Zhang et al. 2021,
- * g=0.72; Cambridge 2025, 79 studies).
+ * Neutral narrator content: deterministic hash of the manifest key (~50/50
+ * male/female corpus-wide, stable per entry). Talker variability improves
+ * generalization to novel talkers.
  */
 
-/** convId:speakerId → gender for ambiguous/named speakers (audit §1b–1d). */
+/** convId:speakerId → gender for named speakers. */
 const EXPLICIT_SPEAKERS: Record<string, CastGender> = {
   // de b1/b2 named pairs
   "de-conv-017:interviewer": "male", // Herr Weber
   "de-conv-017:candidate": "female", // Frau Schneider
-  "de-conv-018:arzt": "female", // Dr. Klein — contrast w/ Herr Berg (Q2)
+  "de-conv-018:arzt": "female", // Dr. Klein, pairs with Herr Berg
   "de-conv-018:patient": "male", // Herr Berg
   "de-conv-019:vermieter": "female", // Frau Lorenz
   "de-conv-019:interessent": "male", // Herr Vogt
@@ -42,7 +41,7 @@ const EXPLICIT_SPEAKERS: Record<string, CastGender> = {
   "de-conv-025:paul": "male", // Paul
   "de-conv-026:chef": "female", // Frau Berger
   "de-conv-026:mitarbeiter": "male", // Herr Novak
-  "de-conv-027:arzt": "male", // Dr. Braun — contrast w/ Frau Yilmaz (Q2)
+  "de-conv-027:arzt": "male", // Dr. Braun, pairs with Frau Yilmaz
   "de-conv-027:patient": "female", // Frau Yilmaz
   // de a1/a2 named
   "de-conv-002:anna": "female",
@@ -53,7 +52,7 @@ const EXPLICIT_SPEAKERS: Record<string, CastGender> = {
   "de-conv-015:anna": "female",
   "de-conv-015:ben": "male",
   // en named
-  "en-conv-001:a": "male", // Alex — contrast w/ Maya (Q3)
+  "en-conv-001:a": "male", // Alex, pairs with Maya
   "en-conv-001:b": "female", // Maya
   "en-conv-002:a": "male", // Liam
   "en-conv-002:b": "female", // Sofia
@@ -131,7 +130,7 @@ export function speakerGender(
   return firstSpoken ? "male" : "female"
 }
 
-/** Reading ids whose narrator follows a clear protagonist (audit §2a–2b). */
+/** Reading ids whose narrator follows a clear protagonist. */
 const PROTAGONIST_NARRATOR: Record<string, CastGender> = {
   "r-wo-de-yitian": "female", // 我叫安娜
   "r-wo-de-laoshi": "female", // 老师…她
@@ -147,7 +146,7 @@ const PROTAGONIST_NARRATOR: Record<string, CastGender> = {
   "r-de-b2-5-reisen": "male", // Jonas
 }
 
-/** Readings that are dialogues → split per speaker line (audit Q5). */
+/** Readings that are dialogues → split per speaker line. */
 export const DIALOG_READINGS = new Set(["r-zai-fandian"])
 
 /** Deterministic ~50/50 narrator gender from any stable key. */

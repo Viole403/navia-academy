@@ -213,7 +213,7 @@ export async function generateAudioBatch(
   let copied = 0
   let skipped = 0
   let errors = 0
-  // R3 fix: merge into previous records instead of overwriting — a partial
+  // Merge into previous records instead of overwriting — a partial
   // run (limit/lang) must not drop records for keys it never visited.
   const merged = new Map<string, GenerateRecord>(records)
   const newRecords: GenerateRecord[] = []
