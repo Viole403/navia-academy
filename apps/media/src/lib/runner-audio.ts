@@ -276,8 +276,6 @@ export async function generateAudioBatch(
     }
     return Promise.resolve()
   }
-    return Promise.resolve()
-  }
 
   const synthWithRetry = async (task: Task): Promise<Buffer> => {
     try {
