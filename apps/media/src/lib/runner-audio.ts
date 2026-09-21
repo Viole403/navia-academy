@@ -1,3 +1,4 @@
+import { createHash } from "node:crypto"
 import { mkdir, readFile, rename, stat, writeFile } from "node:fs/promises"
 import { join } from "node:path"
 import {
@@ -25,6 +26,28 @@ interface GenerateRecord {
   hash: string
   generatedAt: string
   audioRef?: string
+  /** sha256 of the mp3 bytes (content fingerprint, independent of text). */
+  audioHash?: string
+  /** Byte size of the stored mp3. */
+  audioSize?: number
+}
+
+/** Minimum plausible mp3 size — anything smaller is a truncated/error payload. */
+export const MIN_AUDIO_BYTES = 1024
+
+/** sha256 hex of audio bytes. */
+export function audioFingerprint(buf: Buffer): string {
+  return createHash("sha256").update(buf).digest("hex")
+}
+
+/** Cheap structural check: ID3 header or MPEG frame sync + sane size. */
+export function looksLikeMp3(buf: Buffer): boolean {
+  if (buf.length < MIN_AUDIO_BYTES) return false
+  if (buf[0] === 0x49 && buf[1] === 0x44 && buf[2] === 0x33) return true // ID3
+  for (let i = 0; i < Math.min(buf.length - 1, 4096); i++) {
+    if (buf[i] === 0xff && (buf[i + 1] & 0xe0) === 0xe0) return true
+  }
+  return false
 }
 
 const RECORDS_PATH = join(OUTPUT_AUDIO_DIR, ".generate-records.json")
@@ -312,6 +335,7 @@ export async function generateAudioBatch(
           await ownerPromise.get(task.combo)
           const src = join(OUTPUT_AUDIO_DIR, `${task.owner}.mp3`)
           const audio = await readFile(src)
+          if (!looksLikeMp3(audio)) throw new Error("owner audio invalid")
           const localPath = join(OUTPUT_AUDIO_DIR, `${task.key}.mp3`)
           await writeFile(localPath, audio)
           if (client) {
@@ -325,6 +349,8 @@ export async function generateAudioBatch(
             hash: task.hash,
             generatedAt: new Date().toISOString(),
             audioRef: task.owner,
+            audioHash: audioFingerprint(audio),
+            audioSize: audio.length,
           })
           copied++
           await checkpoint()
@@ -337,20 +363,34 @@ export async function generateAudioBatch(
       try {
         if (!opts.dryRun) {
           const audio = await synthWithRetry(task)
+          if (!looksLikeMp3(audio)) {
+            throw new Error(`synthesized audio invalid (${audio.length} bytes)`)
+          }
           const localPath = join(OUTPUT_AUDIO_DIR, `${task.key}.mp3`)
           await writeFile(localPath, audio)
           if (client) {
             await uploadBuffer(cfg, client, task.objectKey, audio, "audio/mpeg")
           }
+          track({
+            key: task.key,
+            text: task.entry.text,
+            locale: task.entry.locale,
+            gender: task.gender,
+            hash: task.hash,
+            generatedAt: new Date().toISOString(),
+            audioHash: audioFingerprint(audio),
+            audioSize: audio.length,
+          })
+        } else {
+          track({
+            key: task.key,
+            text: task.entry.text,
+            locale: task.entry.locale,
+            gender: task.gender,
+            hash: task.hash,
+            generatedAt: new Date().toISOString(),
+          })
         }
-        track({
-          key: task.key,
-          text: task.entry.text,
-          locale: task.entry.locale,
-          gender: task.gender,
-          hash: task.hash,
-          generatedAt: new Date().toISOString(),
-        })
         generated++
         await checkpoint()
       } catch (err) {
