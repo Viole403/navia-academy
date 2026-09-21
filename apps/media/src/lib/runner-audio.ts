@@ -1,4 +1,4 @@
-import { mkdir, readFile, stat, writeFile } from "node:fs/promises"
+import { mkdir, readFile, rename, stat, writeFile } from "node:fs/promises"
 import { join } from "node:path"
 import {
   resolveMediaConfig,
@@ -58,7 +58,9 @@ async function loadRecords(): Promise<Map<string, GenerateRecord>> {
 
 async function saveRecords(records: GenerateRecord[]) {
   await mkdir(OUTPUT_AUDIO_DIR, { recursive: true })
-  await writeFile(RECORDS_PATH, JSON.stringify(records, null, 2), "utf-8")
+  const tmp = `${RECORDS_PATH}.tmp`
+  await writeFile(tmp, JSON.stringify(records, null, 2), "utf-8")
+  await rename(tmp, RECORDS_PATH)
 }
 
 const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms))
@@ -94,16 +96,21 @@ async function existingAudioKeys(
   return new Set(keys)
 }
 
-/** True for transient edge-tts failures that deserve a single retry. */
+/** True for transient edge-tts failures that deserve a retry. */
 function isTransient(err: unknown): boolean {
   const msg = err instanceof Error ? err.message : String(err)
   return (
     msg.includes("504") ||
     msg.includes("WSServerHandshakeError") ||
-    // Edge sometimes returns empty audio under burst load; a paced retry
-    // almost always succeeds (seen on zh-TW trad batches).
-    msg.includes("No audio was received")
+    msg.includes("No audio was received") ||
+    msg.includes("reduce your request rate")
   )
+}
+
+/** Extra cooldown before retrying a rate-limited synthesis. */
+function isRateLimited(err: unknown): boolean {
+  const msg = err instanceof Error ? err.message : String(err)
+  return msg.includes("reduce your request rate")
 }
 
 /**
@@ -241,7 +248,7 @@ export async function generateAudioBatch(
       )
     } catch (err) {
       if (isTransient(err)) {
-        await sleep(RETRY_BACKOFF_MS)
+        await sleep(isRateLimited(err) ? RATE_LIMIT_MS * 20 : RETRY_BACKOFF_MS)
         return synthesizeAudioWithRotation(
           cfg,
           task.entry.text,
