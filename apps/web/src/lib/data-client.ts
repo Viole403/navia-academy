@@ -238,6 +238,7 @@ export interface LandingAudioSeed {
   text: string
   locale: string
   audioPath?: string
+  gender?: "female" | "male"
 }
 
 export function loadLandingDemo(): Promise<LandingDemo> {

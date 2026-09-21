@@ -221,7 +221,13 @@ export async function buildLandingDemoBundle(): Promise<Bundle[]> {
   let placementTotal = 0
   const audioManifest = JSON.parse(
     await readFile(join(ROOT, "data", "audio", "audio-manifest.json"), "utf-8")
-  ) as { key: string; text: string; locale: string; audioPath?: string }[]
+  ) as {
+    key: string
+    text: string
+    locale: string
+    audioPath?: string
+    gender?: "female" | "male"
+  }[]
   const entryByKey = new Map(audioManifest.map((e) => [e.key, e]))
   const wantedAudio = new Set<string>(["char:c-ma3", "vocab:ren2", "vocab:ni3"])
   for (const lang of CONTENT_LANGS) {
@@ -255,6 +261,7 @@ export async function buildLandingDemoBundle(): Promise<Bundle[]> {
         text: string
         locale: string
         audioPath?: string
+        gender?: "female" | "male"
       } => Boolean(e)
     )
     .map((e) => ({
@@ -262,6 +269,7 @@ export async function buildLandingDemoBundle(): Promise<Bundle[]> {
       text: e.text,
       locale: e.locale,
       audioPath: e.audioPath,
+      gender: e.gender,
     }))
   const readApp = async (name: string): Promise<unknown> =>
     JSON.parse(await readFile(join(JSON_DIR, `${name}.json`), "utf-8"))
