@@ -254,11 +254,29 @@ export async function generateAudioBatch(
     newRecords.push(rec)
   }
 
-  const checkpoint = async (force = false) => {
+  // Serialize checkpoints — workers race here; concurrent tmp writes +
+  // renames tear the records file (seen: ENOENT + torn JSON).
+  // A failed save must not poison the chain — log and keep going.
+  let checkpointChain: Promise<void> = Promise.resolve()
+  const checkpoint = (force = false) => {
     if (force || newRecords.length - lastCheckpoint >= checkpointEvery) {
-      await saveRecords([...merged.values()])
-      lastCheckpoint = newRecords.length
+      checkpointChain = checkpointChain
+        .then(() => saveRecords([...merged.values()]))
+        .then(
+          () => {
+            lastCheckpoint = newRecords.length
+          },
+          (err) => {
+            console.error(
+              `  ! checkpoint failed: ${err instanceof Error ? err.message : err}`
+            )
+          }
+        )
+      return checkpointChain
     }
+    return Promise.resolve()
+  }
+    return Promise.resolve()
   }
 
   const synthWithRetry = async (task: Task): Promise<Buffer> => {
