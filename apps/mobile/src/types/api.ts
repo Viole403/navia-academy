@@ -1,9 +1,18 @@
 // ─── Envelope ───────────────────────────────────────────────────────────────
-// Backend (Go/Fiber) returns most resources directly (no {data} wrapper). List
-// endpoints return `{ data: T[], count?: number }`.
+// Backend (Go/Fiber, pkg/response/response.go) wraps every response as
+// {success, data?, meta?, error?, trace_id}. List endpoints put a raw JSON
+// array in `data`; single-object endpoints put the object in `data`;
+// history endpoints add `meta: {page, per_page, total, total_pages}`.
 export interface ApiEnvelope<T> {
+  success: boolean
   data: T
-  count?: number
+  meta?: {
+    page: number
+    per_page: number
+    total: number
+    total_pages: number
+  }
+  trace_id?: string
 }
 
 // ─── Auth (backend Go/Fiber: {user, token_pair}) ────────────────────────────
@@ -75,11 +84,9 @@ export interface SrsCard {
   last_review?: string
 }
 
-export interface SrsStats {
-  total: number
-  due: number
-  by_kind?: Record<string, number>
-}
+// Backend srs_review_service.go: GetStats returns a flat map: per-kind
+// counts (GROUP BY kind) plus a `due` key. No fixed shape — index it.
+export type SrsStats = Record<string, number>
 
 export interface StudySession {
   id: string
@@ -177,6 +184,16 @@ export interface ExamProgress {
   total_attempts: number
 }
 
+// Backend exam_service.go GetRecommendedExam returns a camelCase map
+// {examType, examLevel, reason} (NOT snake_case), default hsk/1.
+// ponytail: this is the only camelCase payload in the API — keep it
+// isolated here instead of "normalizing" at the call site.
+export interface RecommendedExam {
+  examType: string
+  examLevel: string
+  reason?: string
+}
+
 // ─── Settings ───────────────────────────────────────────────────────────────
 export interface UserSettings {
   theme: string
@@ -231,6 +248,32 @@ export interface Sponsor {
   tier?: string
   description?: string
   started_at: string
+}
+
+// Apply endpoints return the created application object (201), not {ok}.
+// Shapes mirror models/contributor.go: ContributorApplication /
+// SponsorApplication.
+export interface ContributorApplication {
+  id: string
+  name: string
+  email: string
+  contribution_area: string
+  mandarin_level?: string
+  portfolio?: string
+  message?: string
+  status: string
+  created_at: string
+}
+
+export interface SponsorApplication {
+  id: string
+  company_name: string
+  email: string
+  website?: string
+  message?: string
+  tier_interest?: string
+  status: string
+  created_at: string
 }
 
 // ─── Content bundles (mirrors media data/json/<lang>/<group>/index) ─────────

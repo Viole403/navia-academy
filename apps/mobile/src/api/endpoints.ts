@@ -7,11 +7,14 @@ import type {
   CatResult,
   CatSession,
   Contributor,
+  ContributorApplication,
   ExamProgress,
   ExamResult,
   ExamSession,
+  RecommendedExam,
   RegisterRequest,
   Sponsor,
+  SponsorApplication,
   SrsCard,
   SrsStats,
   StudySession,
@@ -22,18 +25,24 @@ import type {
   UserSettings,
 } from "@/types/api"
 
-/** Backend (Go/Fiber): list endpoints return `{ data: T[], count? }`. */
+/** Backend (Go/Fiber): list endpoints put a raw JSON array in `data`. */
 async function unwrapList<T>(
-  p: Promise<{ data: { data: T[]; count?: number } }>
+  p: Promise<{ data: { data: T[] } }>
 ): Promise<T[]> {
   const res = await p
   return res.data.data ?? []
 }
 
-/** Backend (Go/Fiber): single resources are returned directly. */
-async function unwrapDirect<T>(p: Promise<{ data: T }>): Promise<T> {
+/**
+ * Backend (Go/Fiber): every response is an envelope
+ * {success, data, meta?, error?, trace_id}. Unwrap the inner `data`.
+ * ponytail: axios `res.data` IS the envelope — the old helper returned the
+ * envelope itself, which is why `recommendedQ.data.exam_type` blew up with
+ * "Cannot read property toUpperCase of undefined".
+ */
+async function unwrapData<T>(p: Promise<{ data: { data: T } }>): Promise<T> {
   const res = await p
-  return res.data
+  return res.data.data
 }
 
 // ─── Auth ──────────────────────────────────────────────────────────────────
@@ -54,9 +63,9 @@ export const auth = {
 
 // ─── Progress & SRS ────────────────────────────────────────────────────────
 export const progress = {
-  get: () => unwrapDirect<UserProgress>(apiClient.get("/progress")),
+  get: () => unwrapData<UserProgress>(apiClient.get("/progress")),
   update: (body: Record<string, unknown>) =>
-    unwrapDirect<{ ok: boolean }>(apiClient.put("/progress", body)),
+    unwrapData<{ ok: boolean }>(apiClient.put("/progress", body)),
   dueCards: (limit = 50) =>
     unwrapList<SrsCard>(apiClient.get(`/progress/due-cards?limit=${limit}`)),
   review: (
@@ -64,46 +73,33 @@ export const progress = {
     kind: "word" | "character" | "grammar",
     grade: 0 | 1 | 2 | 3
   ) =>
-    unwrapDirect<SrsCard>(
-      apiClient
-        .post("/progress/review", { item_id, kind, grade })
-        .then((r) => ({ data: r.data.data }))
+    unwrapData<SrsCard>(
+      apiClient.post("/progress/review", { item_id, kind, grade })
     ),
   achievements: () =>
     unwrapList<Achievement>(apiClient.get("/progress/achievements")),
   logStudy: (minutes: number, xp: number) =>
-    unwrapDirect<{ ok: boolean }>(
+    unwrapData<{ ok: boolean }>(
       apiClient.post("/progress/study-session", { minutes, xp })
     ),
   studySessions: (limit = 50, offset = 0) =>
     unwrapList<StudySession>(
       apiClient.get(`/progress/study-sessions?limit=${limit}&offset=${offset}`)
     ),
-  srsStats: () =>
-    unwrapDirect<SrsStats>(
-      apiClient.get("/srs/stats").then((r) => ({ data: r.data }))
-    ),
+  srsStats: () => unwrapData<SrsStats>(apiClient.get("/srs/stats")),
   ensureCard: (item_id: string, kind: "word" | "character" | "grammar") =>
-    unwrapDirect<SrsCard>(
-      apiClient
-        .post("/srs/cards", { item_id, kind })
-        .then((r) => ({ data: r.data.data }))
-    ),
+    unwrapData<SrsCard>(apiClient.post("/srs/cards", { item_id, kind })),
 }
 
 // ─── Tasks ─────────────────────────────────────────────────────────────────
 export const tasks = {
   list: () => unwrapList<Task>(apiClient.get("/tasks")),
   create: (content: string, due_date?: string) =>
-    unwrapDirect<Task>(
-      apiClient
-        .post("/tasks", { content, due_date })
-        .then((r) => ({ data: r.data.data }))
-    ),
+    unwrapData<Task>(apiClient.post("/tasks", { content, due_date })),
   update: (id: string, body: { content?: string; completed?: boolean }) =>
-    unwrapDirect<{ ok: boolean }>(apiClient.put(`/tasks/${id}`, body)),
+    unwrapData<{ ok: boolean }>(apiClient.put(`/tasks/${id}`, body)),
   remove: (id: string) =>
-    unwrapDirect<{ ok: boolean }>(apiClient.delete(`/tasks/${id}`)),
+    unwrapData<{ ok: boolean }>(apiClient.delete(`/tasks/${id}`)),
 }
 
 // ─── Exam ──────────────────────────────────────────────────────────────────
@@ -119,11 +115,11 @@ export const exam = {
   progress: () =>
     unwrapList<ExamProgress>(apiClient.get("/exam/sessions?type=progress")),
   recommended: () =>
-    unwrapDirect<{ exam_type: string; exam_level: string } | null>(
+    unwrapData<RecommendedExam | null>(
       apiClient.get("/exam/sessions?type=recommended")
     ),
   get: (sessionId: number) =>
-    unwrapDirect<ExamSession>(
+    unwrapData<ExamSession>(
       apiClient.get(`/exam/sessions?sessionId=${sessionId}`)
     ),
   create: (
@@ -131,13 +127,11 @@ export const exam = {
     exam_level: string,
     settings?: Record<string, unknown>
   ) =>
-    unwrapDirect<ExamSession>(
-      apiClient
-        .post("/exam/sessions", { exam_type, exam_level, settings })
-        .then((r) => ({ data: r.data.data }))
+    unwrapData<ExamSession>(
+      apiClient.post("/exam/sessions", { exam_type, exam_level, settings })
     ),
   answer: (session_id: number, question_id: string, answer: unknown) =>
-    unwrapDirect<ExamSession>(
+    unwrapData<ExamSession>(
       apiClient.put("/exam/sessions?action=answer", {
         session_id,
         question_id,
@@ -145,11 +139,11 @@ export const exam = {
       })
     ),
   submit: (session_id: number) =>
-    unwrapDirect<ExamResult>(
+    unwrapData<ExamResult>(
       apiClient.put("/exam/sessions?action=submit", { session_id })
     ),
   abandon: (session_id: number) =>
-    unwrapDirect<ExamSession>(
+    unwrapData<ExamSession>(
       apiClient.put("/exam/sessions?action=abandon", { session_id })
     ),
 }
@@ -169,46 +163,49 @@ export const cat = {
     answers?: CatAnswer[]
     engine_version?: string
     integrity_flag?: boolean
-  }) => unwrapDirect<CatResult>(apiClient.post("/cat/result", body)),
+  }) => unwrapData<CatResult>(apiClient.post("/cat/result", body)),
   progress: () => unwrapList<CatResult>(apiClient.get("/cat/progress")),
   startSession: (body: {
     exam_type: string
     start_theta?: number
     time_limit_sec?: number
-  }) => unwrapDirect<CatSession>(apiClient.post("/cat/session", body)),
-  updateSession: (
+  }) => unwrapData<CatSession>(apiClient.post("/cat/session", body)),
+  // Backend PATCH answers with 204 No Content — no body to unwrap.
+  // ponytail: do NOT route this through unwrapData; axios resolves with
+  // undefined data on 204 and unwrapping would yield `undefined.data` throw.
+  updateSession: async (
     id: number,
     body: { answers: CatAnswer[]; elapsed_sec?: number; theta?: number }
-  ) => unwrapDirect<CatSession>(apiClient.patch(`/cat/session/${id}`, body)),
+  ): Promise<void> => {
+    await apiClient.patch(`/cat/session/${id}`, body)
+  },
   resume: (id: number) =>
-    unwrapDirect<CatSession>(apiClient.get(`/cat/session/${id}`)),
+    unwrapData<CatSession>(apiClient.get(`/cat/session/${id}`)),
 }
 
 // ─── Games ─────────────────────────────────────────────────────────────────
 export const game = {
   addGameResult: (game_id: string, accuracy: number, score: number) =>
-    unwrapDirect<{ ok: boolean }>(
-      apiClient
-        .post("/games", { game_id, accuracy, score })
-        .then((r) => ({ data: r.data.data }))
+    unwrapData<{ ok: boolean }>(
+      apiClient.post("/games", { game_id, accuracy, score })
     ),
 }
 
 // ─── Settings ──────────────────────────────────────────────────────────────
 export const settings = {
-  get: () => unwrapDirect<UserSettings>(apiClient.get("/settings")),
+  get: () => unwrapData<UserSettings>(apiClient.get("/settings")),
   update: (body: Partial<UserSettings>) =>
-    unwrapDirect<{ ok: boolean }>(apiClient.put("/settings", body)),
+    unwrapData<{ ok: boolean }>(apiClient.put("/settings", body)),
 }
 
 // ─── TTS ───────────────────────────────────────────────────────────────────
 export const tts = {
   /** POST /tts — works with or without auth (backend is optional-auth). */
   say: (text: string, locale = "zh-CN", gender = "female") =>
-    unwrapDirect<TTSResponse>(apiClient.post("/tts", { text, locale, gender })),
+    unwrapData<TTSResponse>(apiClient.post("/tts", { text, locale, gender })),
   /** GET /tts/cache/stats — admin/diagnostic, requires auth. */
   cacheStats: () =>
-    unwrapDirect<TTSCacheStats>(apiClient.get("/tts/cache/stats")),
+    unwrapData<TTSCacheStats>(apiClient.get("/tts/cache/stats")),
 }
 
 // ─── Contributors & Sponsors (public, mostly informational) ───────────────
@@ -216,11 +213,11 @@ export const community = {
   contributors: (limit = 50) =>
     unwrapList<Contributor>(apiClient.get(`/contributors?limit=${limit}`)),
   contributor: (id: string) =>
-    unwrapDirect<Contributor>(apiClient.get(`/contributors/${id}`)),
+    unwrapData<Contributor>(apiClient.get(`/contributors/${id}`)),
   sponsors: (limit = 50) =>
     unwrapList<Sponsor>(apiClient.get(`/sponsors?limit=${limit}`)),
   sponsor: (id: string) =>
-    unwrapDirect<Sponsor>(apiClient.get(`/sponsors/${id}`)),
+    unwrapData<Sponsor>(apiClient.get(`/sponsors/${id}`)),
   applyContributor: (body: {
     name: string
     email: string
@@ -229,18 +226,20 @@ export const community = {
     portfolio?: string
     message?: string
   }) =>
-    unwrapDirect<{ ok: boolean }>(apiClient.post("/contributors/apply", body)),
+    unwrapData<ContributorApplication>(
+      apiClient.post("/contributors/apply", body)
+    ),
   applySponsor: (body: {
     company_name: string
     email: string
     website?: string
     message?: string
     tier_interest?: string
-  }) => unwrapDirect<{ ok: boolean }>(apiClient.post("/sponsors/apply", body)),
+  }) => unwrapData<SponsorApplication>(apiClient.post("/sponsors/apply", body)),
 }
 
 // ─── Health (public, ops) ─────────────────────────────────────────────────
 export const health = {
   check: () =>
-    unwrapDirect<{ status: string; version: string }>(apiClient.get("/health")),
+    unwrapData<{ status: string; version: string }>(apiClient.get("/health")),
 }

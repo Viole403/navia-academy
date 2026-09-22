@@ -275,7 +275,7 @@ export default function HomeTab() {
           )}
           {recommendedQ.data && (
             <ActionRow
-              label={`Start ${recommendedQ.data.exam_type.toUpperCase()} ${recommendedQ.data.exam_level}`}
+              label={`Start ${recommendedQ.data.examType.toUpperCase()} ${recommendedQ.data.examLevel}`}
               detail="Recommended exam"
               onPress={() => router.push("/(tabs)/exam")}
               accent={theme.accent}
