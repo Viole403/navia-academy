@@ -133,4 +133,16 @@ export default function RootLayout() {
     })
     return unsubscribe
   }, [signOut, router])
+
+  return (
+    <GestureHandlerRootView style={{ flex: 1 }}>
+      <QueryClientProvider client={queryClient}>
+        <ThemeProvider>
+          <ErrorBoundary>
+            <AppShell />
+          </ErrorBoundary>
+        </ThemeProvider>
+      </QueryClientProvider>
+    </GestureHandlerRootView>
+  )
 }
