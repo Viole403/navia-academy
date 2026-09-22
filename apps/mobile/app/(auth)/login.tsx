@@ -35,10 +35,14 @@ export default function Login() {
     mutationFn: () => auth.login(email.trim().toLowerCase(), password),
     onSuccess: async (data) => {
       await saveTokens({
-        accessToken: data.session.access_token,
-        refreshToken: data.session.refresh_token,
+        accessToken: data.token_pair.access_token,
+        refreshToken: data.token_pair.refresh_token,
       })
-      setAuth(data.user, data.session.access_token, data.session.refresh_token)
+      setAuth(
+        data.user,
+        data.token_pair.access_token,
+        data.token_pair.refresh_token
+      )
       router.replace("/(tabs)")
     },
     onError: (e: unknown) => {

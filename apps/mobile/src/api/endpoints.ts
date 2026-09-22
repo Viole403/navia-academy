@@ -1,6 +1,8 @@
 import apiClient from "./client"
 import type {
   Achievement,
+  ApiUser,
+  AuthResultResponse,
   CatAnswer,
   CatResult,
   CatSession,
@@ -8,7 +10,6 @@ import type {
   ExamProgress,
   ExamResult,
   ExamSession,
-  LoginResponse,
   RegisterRequest,
   Sponsor,
   SrsCard,
@@ -17,7 +18,6 @@ import type {
   Task,
   TTSCacheStats,
   TTSResponse,
-  SupabaseUser,
   UserProgress,
   UserSettings,
 } from "@/types/api"
@@ -37,17 +37,19 @@ async function unwrapDirect<T>(p: Promise<{ data: T }>): Promise<T> {
 }
 
 // ─── Auth ──────────────────────────────────────────────────────────────────
+// Backend envelope is {success, data, trace_id}; register/login return
+// data = {user, token_pair}, refresh returns data = TokenPair, /me returns
+// data = User. Unwrap `data` then reshape to the callers' shape.
 export const auth = {
   login: (email: string, password: string) =>
-    unwrapDirect<LoginResponse>(
-      apiClient.post("/auth/login", { email, password })
-    ),
+    apiClient
+      .post("/auth/login", { email, password })
+      .then((r) => r.data.data as AuthResultResponse),
   register: (body: RegisterRequest) =>
-    unwrapDirect<LoginResponse>(apiClient.post("/auth/register", body)),
-  me: () =>
-    unwrapDirect<SupabaseUser>(
-      apiClient.get("/me").then((r) => ({ data: r.data.user }))
-    ),
+    apiClient
+      .post("/auth/register", body)
+      .then((r) => r.data.data as AuthResultResponse),
+  me: () => apiClient.get("/me").then((r) => r.data.data as ApiUser),
 }
 
 // ─── Progress & SRS ────────────────────────────────────────────────────────
@@ -95,7 +97,7 @@ export const tasks = {
   create: (content: string, due_date?: string) =>
     unwrapDirect<Task>(
       apiClient
-        .post("/tasks", { title: content, due_date })
+        .post("/tasks", { content, due_date })
         .then((r) => ({ data: r.data.data }))
     ),
   update: (id: string, body: { content?: string; completed?: boolean }) =>

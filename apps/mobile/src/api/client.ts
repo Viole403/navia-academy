@@ -6,7 +6,7 @@ import axios, {
 import { useAuthStore } from "@/store/auth"
 import { clearTokens, getTokens, saveTokens } from "@/utils/secure"
 import { env } from "@/utils/env"
-import type { LoginResponse } from "@/types/api"
+import type { TokenPair } from "@/types/api"
 
 /** Listeners are called synchronously when refresh fails. */
 type RefreshFailListener = () => void
@@ -51,16 +51,19 @@ async function doRefresh(): Promise<string | null> {
   if (!refreshToken) return null
 
   try {
-    const res = await axios.post<LoginResponse>(`${env.apiUrl}/auth/refresh`, {
-      refresh_token: refreshToken,
-    })
-    const { user, session } = res.data
-    state.setAuth(user, session.access_token, session.refresh_token)
+    // Backend /auth/refresh returns envelope data = TokenPair directly
+    // (no user object, no session wrapper). Keep the existing user.
+    const res = await axios.post<{ data: TokenPair }>(
+      `${env.apiUrl}/auth/refresh`,
+      { refresh_token: refreshToken }
+    )
+    const pair = res.data.data
+    state.setTokens(pair.access_token, pair.refresh_token)
     await saveTokens({
-      accessToken: session.access_token,
-      refreshToken: session.refresh_token,
+      accessToken: pair.access_token,
+      refreshToken: pair.refresh_token,
     })
-    return session.access_token
+    return pair.access_token
   } catch {
     state.signOut()
     await clearTokens()

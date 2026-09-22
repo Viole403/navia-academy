@@ -6,40 +6,29 @@ export interface ApiEnvelope<T> {
   count?: number
 }
 
-// ─── Auth (Supabase Auth via backend) ───────────────────────────────────────
-export interface SupabaseUserMetadata {
-  name?: string
-  role?: string
-  [k: string]: unknown
-}
-
-export interface SupabaseUser {
+// ─── Auth (backend Go/Fiber: {user, token_pair}) ────────────────────────────
+// Matches apps/backend/internal/models/user.go: User, TokenPair,
+// AuthResultResponse. Login/register return envelope data = {user, token_pair};
+// refresh returns envelope data = TokenPair; GET /me returns envelope data = User.
+export interface ApiUser {
   id: string
   name: string
-  email: string | null
+  email: string
   email_verified: boolean
   image?: string | null
   role: string
-  aud?: string
-  email_confirmed_at?: string | null
-  user_metadata: SupabaseUserMetadata
-  app_metadata: Record<string, unknown>
   created_at: string
   updated_at: string
 }
 
-export interface SupabaseSession {
+export interface TokenPair {
   access_token: string
   refresh_token: string
-  expires_in?: number
-  expires_at?: number
-  token_type?: string
-  user: SupabaseUser
 }
 
-export interface LoginResponse {
-  user: SupabaseUser
-  session: SupabaseSession
+export interface AuthResultResponse {
+  user: ApiUser
+  token_pair: TokenPair
 }
 
 export interface RegisterRequest {

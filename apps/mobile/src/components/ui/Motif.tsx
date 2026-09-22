@@ -1,4 +1,4 @@
-import { Text } from "react-native"
+import { Text, View } from "react-native"
 import Animated, { ZoomIn, useReducedMotion } from "react-native-reanimated"
 import { useTheme } from "@/theme/ThemeProvider"
 import { fonts } from "@/theme/typography"
@@ -18,31 +18,34 @@ export function Motif({
   const { theme } = useTheme()
   const reduce = useReducedMotion()
 
+  // Static tilt lives on the inner View: entering ZoomIn drives transform on
+  // the outer Animated.View, and Reanimated warns when both fight over it.
   return (
-    <Animated.View
-      entering={reduce ? undefined : ZoomIn.duration(240)}
-      style={{
-        width: size,
-        height: size,
-        borderWidth: 1.5,
-        borderColor: theme.accent,
-        backgroundColor: theme.accent + "08",
-        alignItems: "center",
-        justifyContent: "center",
-        borderRadius: 2,
-        transform: [{ rotate: "-4deg" }],
-      }}
-    >
-      <Text
+    <Animated.View entering={reduce ? undefined : ZoomIn.duration(240)}>
+      <View
         style={{
-          fontFamily: fonts.serif,
-          fontSize: size * 0.5,
-          color: theme.accent,
-          fontWeight: "500",
+          width: size,
+          height: size,
+          borderWidth: 1.5,
+          borderColor: theme.accent,
+          backgroundColor: theme.accent + "08",
+          alignItems: "center",
+          justifyContent: "center",
+          borderRadius: 2,
+          transform: [{ rotate: "-4deg" }],
         }}
       >
-        {char}
-      </Text>
+        <Text
+          style={{
+            fontFamily: fonts.serif,
+            fontSize: size * 0.5,
+            color: theme.accent,
+            fontWeight: "500",
+          }}
+        >
+          {char}
+        </Text>
+      </View>
     </Animated.View>
   )
 }

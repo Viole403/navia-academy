@@ -1,16 +1,12 @@
 import { create } from "zustand"
-import type { SupabaseUser } from "@/types/api"
+import type { ApiUser } from "@/types/api"
 
 interface AuthState {
-  user: SupabaseUser | null
+  user: ApiUser | null
   accessToken: string | null
   refreshToken: string | null
   hydrated: boolean
-  setAuth: (
-    user: SupabaseUser,
-    accessToken: string,
-    refreshToken: string
-  ) => void
+  setAuth: (user: ApiUser, accessToken: string, refreshToken: string) => void
   setTokens: (accessToken: string, refreshToken: string) => void
   signOut: () => void
   markHydrated: () => void
