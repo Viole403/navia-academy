@@ -16,7 +16,8 @@ import { ProgressBar } from "@/components/ui/ProgressBar"
 import { useTheme } from "@/theme/ThemeProvider"
 import { fonts, type } from "@/theme/typography"
 import { progress } from "@/api/endpoints"
-import { loadVocabulary } from "@/lib/content-data"
+import { findWord } from "@/lib/content-data"
+import { headword, reading } from "@/lib/languages"
 import {
   drain,
   getPendingCount,
@@ -52,11 +53,8 @@ export default function ReviewScreen() {
   // We need the vocabulary word for this card — look it up by id.
   const wordQ = useQuery({
     queryKey: ["vocab-item", current?.item_id],
-    queryFn: async () => {
-      const all = await loadVocabulary()
-      return (all.find((w) => w.id === current?.item_id) ??
-        null) as VocabWord | null
-    },
+    queryFn: async () =>
+      current ? (await findWord(current.item_id)).word : null,
     enabled: !!current,
   })
 
@@ -208,14 +206,13 @@ export default function ReviewScreen() {
                     fontWeight: "500",
                   }}
                 >
-                  {wordQ.data?.hanzi ?? "…"}
+                  {wordQ.data ? headword(wordQ.data) : "…"}
                 </Text>
 
                 {revealed ? (
                   <View style={{ gap: 8, alignItems: "center" }}>
                     <Text style={[type.label, { color: theme.accent }]}>
-                      {(wordQ.data as { pinyin?: string } | null)?.pinyin ??
-                        "—"}
+                      {wordQ.data ? (reading(wordQ.data) ?? "—") : "—"}
                     </Text>
                     <Text
                       style={{

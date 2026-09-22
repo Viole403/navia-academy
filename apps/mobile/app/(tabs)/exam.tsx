@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import {
   ActivityIndicator,
   Pressable,
@@ -17,16 +17,29 @@ import { Motif } from "@/components/ui/Motif"
 import { useTheme } from "@/theme/ThemeProvider"
 import { fonts, type } from "@/theme/typography"
 import { exam } from "@/api/endpoints"
+import {
+  examBadgeColor,
+  examDisplayName,
+  examLevels,
+  languageInfo,
+} from "@/lib/languages"
+import { useOnboardingStore } from "@/store/onboarding"
 import type { ExamProgress, ExamSession } from "@/types/api"
-
-const EXAM_TYPES = ["hsk", "tocfl"]
 
 export default function ExamTab() {
   const { theme } = useTheme()
   const router = useRouter()
   const qc = useQueryClient()
-  const [examType, setExamType] = useState("hsk")
-  const [examLevel, setExamLevel] = useState("1")
+  const language = useOnboardingStore((s) => s.language)
+  const examTypes = languageInfo(language).examTypes
+  const [examType, setExamType] = useState(examTypes[0])
+  const [examLevel, setExamLevel] = useState(examLevels(examTypes[0])[0])
+
+  useEffect(() => {
+    const types = languageInfo(language).examTypes
+    setExamType(types[0])
+    setExamLevel(examLevels(types[0])[0])
+  }, [language])
 
   const activeQ = useQuery({ queryKey: ["exam-active"], queryFn: exam.active })
   const progressQ = useQuery({
@@ -124,12 +137,16 @@ export default function ExamTab() {
                   showsHorizontalScrollIndicator={false}
                   contentContainerStyle={{ gap: 8 }}
                 >
-                  {EXAM_TYPES.map((t) => (
+                  {examTypes.map((t) => (
                     <Chip
                       key={t}
-                      label={t.toUpperCase()}
+                      label={examDisplayName(t)}
                       selected={examType === t}
-                      onPress={() => setExamType(t)}
+                      tint={examBadgeColor(t)}
+                      onPress={() => {
+                        setExamType(t)
+                        setExamLevel(examLevels(t)[0])
+                      }}
                     />
                   ))}
                 </ScrollView>
@@ -143,15 +160,10 @@ export default function ExamTab() {
                   showsHorizontalScrollIndicator={false}
                   contentContainerStyle={{ gap: 8 }}
                 >
-                  {(examType === "hsk"
-                    ? ["1", "2", "3", "4", "5", "6"]
-                    : examType === "tocfl"
-                      ? ["A1", "A2", "B1", "B2", "C1"]
-                      : ["1", "2", "3"]
-                  ).map((lv) => (
+                  {examLevels(examType).map((lv) => (
                     <Chip
                       key={lv}
-                      label={lv.toUpperCase()}
+                      label={lv}
                       selected={examLevel === lv}
                       onPress={() => setExamLevel(lv)}
                     />
@@ -162,7 +174,7 @@ export default function ExamTab() {
                 title={
                   startM.isPending
                     ? "Preparing…"
-                    : `Start ${examType.toUpperCase()} ${examLevel.toUpperCase()}`
+                    : `Start ${examDisplayName(examType)} ${examLevel}`
                 }
                 onPress={() => startM.mutate()}
                 disabled={startM.isPending}
@@ -193,7 +205,7 @@ export default function ExamTab() {
                 >
                   <View>
                     <Text style={[type.h3, { color: theme.text }]}>
-                      {p.exam_type.toUpperCase()}
+                      {examDisplayName(p.exam_type)}
                     </Text>
                     <Text style={[type.caption, { color: theme.textMuted }]}>
                       Level {p.current_level ?? "—"} · {p.total_attempts}{" "}
@@ -261,7 +273,7 @@ export default function ExamTab() {
                         { color: theme.text, fontWeight: "600" },
                       ]}
                     >
-                      {r.exam_type.toUpperCase()} · Level {r.exam_level}
+                      {examDisplayName(r.exam_type)} · Level {r.exam_level}
                     </Text>
                     <Text style={[type.caption, { color: theme.textMuted }]}>
                       {new Date(r.created_at).toLocaleDateString()} ·{" "}
@@ -318,7 +330,7 @@ function ActiveSessionCard({
         <Text style={[type.labelSm, { color: theme.accent }]}>Active</Text>
       </View>
       <Text style={[type.h2, { color: theme.text }]}>
-        {session.exam_type.toUpperCase()} · Level {session.exam_level}
+        {examDisplayName(session.exam_type)} · Level {session.exam_level}
       </Text>
       <Text style={[type.bodySm, { color: theme.textMuted }]}>
         Question {session.current_question_index + 1} of{" "}

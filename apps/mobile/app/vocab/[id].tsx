@@ -17,7 +17,8 @@ import { Motif } from "@/components/ui/Motif"
 import { useTheme } from "@/theme/ThemeProvider"
 import { fonts, type } from "@/theme/typography"
 import { progress } from "@/api/endpoints"
-import { loadVocabulary } from "@/lib/content-data"
+import { findWord } from "@/lib/content-data"
+import { headword, reading } from "@/lib/languages"
 import { useAuthStore } from "@/store/auth"
 import { useTts } from "@/hooks/useTts"
 import type { VocabWord } from "@/types/api"
@@ -35,13 +36,10 @@ export default function VocabDetail() {
   const tts = useTts()
   const user = useAuthStore((s) => s.user)
 
-  // Look up the word by scanning the vocabulary bundle from CDN.
+  // Look up the word by scanning the vocabulary bundles from CDN (cross-language).
   const wordQ = useQuery({
     queryKey: ["vocab-word", id],
-    queryFn: async () => {
-      const all = await loadVocabulary()
-      return (all.find((w) => w.id === id) ?? null) as VocabWord | null
-    },
+    queryFn: async () => (await findWord(id as string)).word,
     enabled: !!id,
     staleTime: 60_000,
   })
@@ -144,7 +142,7 @@ export default function VocabDetail() {
         <ScrollView
           contentContainerStyle={{ padding: 24, gap: 28, paddingBottom: 48 }}
         >
-          {/* Hanzi masthead */}
+          {/* Headword masthead */}
           <View style={{ gap: 8, alignItems: "center", paddingTop: 8 }}>
             <Text
               style={{
@@ -155,16 +153,16 @@ export default function VocabDetail() {
                 fontWeight: "500",
               }}
             >
-              {w.hanzi}
+              {headword(w)}
             </Text>
             <Text
               style={[type.label, { color: theme.accent, letterSpacing: 2 }]}
             >
-              {(w as { pinyin?: string }).pinyin ?? ""}
+              {reading(w) ?? ""}
             </Text>
-            {(w as { traditional?: string }).traditional && (
+            {w.traditional && (
               <Text style={[type.caption, { color: theme.textMuted }]}>
-                Traditional · {(w as { traditional?: string }).traditional}
+                Traditional · {w.traditional}
               </Text>
             )}
             <Text
@@ -252,7 +250,7 @@ export default function VocabDetail() {
             <Button
               title={tts.loading || tts.playing ? "Playing…" : "Listen"}
               variant="secondary"
-              onPress={() => tts.play(w.hanzi)}
+              onPress={() => tts.play(headword(w))}
               disabled={tts.loading}
             />
             <Button

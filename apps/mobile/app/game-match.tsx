@@ -16,6 +16,8 @@ import { useTheme } from "@/theme/ThemeProvider"
 import { fonts, type } from "@/theme/typography"
 import { progress, game } from "@/api/endpoints"
 import { loadVocabulary } from "@/lib/content-data"
+import { headword, isCharScript } from "@/lib/languages"
+import { useOnboardingStore } from "@/store/onboarding"
 import { logStudyWithQueue } from "@/utils/offlineQueue"
 import type { VocabWord } from "@/types/api"
 
@@ -31,12 +33,13 @@ export default function GameMatch() {
   const { theme } = useTheme()
   const router = useRouter()
   const qc = useQueryClient()
+  const language = useOnboardingStore((s) => s.language)
 
   const page = useQuery({
-    queryKey: ["game-match-pool"],
+    queryKey: ["game-match-pool", language],
     queryFn: async () => {
-      const all = await loadVocabulary()
-      return all.filter((w) => w.examMappings?.hsk === 1).slice(0, 8)
+      const all = await loadVocabulary(language)
+      return all.slice(0, 8)
     },
   })
 
@@ -51,7 +54,11 @@ export default function GameMatch() {
       if (!page.data) return
       const total = page.data.length * 2
       const accuracy = total === 0 ? 0 : matches / (total / 2)
-      await game.addGameResult("match-hanzi", accuracy, matches * 10)
+      await game.addGameResult(
+        isCharScript(language) ? "match-hanzi" : "match-word",
+        accuracy,
+        matches * 10
+      )
       const durMin = startTs
         ? Math.max(1, Math.round((Date.now() - startTs) / 60000))
         : 1
@@ -69,7 +76,7 @@ export default function GameMatch() {
     pool.forEach((w) => {
       list.push({
         id: `${w.id}-h`,
-        label: w.hanzi,
+        label: headword(w),
         type: "hanzi",
         wordId: w.id,
         matched: false,
@@ -189,7 +196,7 @@ export default function GameMatch() {
               <Text
                 style={[type.h2, { color: theme.text, textAlign: "center" }]}
               >
-                Hanzi Match
+                {isCharScript(language) ? "Hanzi Match" : "Word Match"}
               </Text>
               <Text
                 style={[
@@ -197,8 +204,8 @@ export default function GameMatch() {
                   { color: theme.textMuted, textAlign: "center" },
                 ]}
               >
-                Pair each character with its meaning. {page.data?.length ?? 0}{" "}
-                cards.
+                Pair each {isCharScript(language) ? "character" : "word"} with
+                its meaning. {page.data?.length ?? 0} cards.
               </Text>
             </View>
             <Button title="Start" onPress={start} size="lg" />

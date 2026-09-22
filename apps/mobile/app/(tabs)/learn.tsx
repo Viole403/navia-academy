@@ -1,4 +1,4 @@
-import { memo, useMemo, useState } from "react"
+import { memo, useEffect, useMemo, useState } from "react"
 import {
   ActivityIndicator,
   FlatList,
@@ -20,21 +20,43 @@ import { useTheme } from "@/theme/ThemeProvider"
 import { fonts, type } from "@/theme/typography"
 import { progress } from "@/api/endpoints"
 import { loadVocabulary } from "@/lib/content-data"
+import {
+  DEFAULT_LANGUAGE,
+  examBadgeColor,
+  examDisplayName,
+  examLevels,
+  headword,
+  isCharScript,
+  languageInfo,
+  reading,
+  wordLabel,
+} from "@/lib/languages"
+import { useOnboardingStore } from "@/store/onboarding"
 import type { VocabWord } from "@/types/api"
-
-const EXAM_TYPES = ["hsk", "tocfl"]
 
 export default function LearnTab() {
   const { theme } = useTheme()
   const router = useRouter()
+  const language = useOnboardingStore((s) => s.language) ?? DEFAULT_LANGUAGE
+  const info = languageInfo(language)
+  const examTypes = info.examTypes
   const [search, setSearch] = useState("")
-  const [examType, setExamType] = useState<string>("hsk")
-  const [examLevel, setExamLevel] = useState<string>("1")
+  const [examType, setExamType] = useState<string>(examTypes[0])
+  const [examLevel, setExamLevel] = useState<string>(
+    examLevels(examTypes[0])[0]
+  )
+  // Reset exam selection when the learning language changes (e.g. after
+  // onboarding picks de/en/ja).
+  useEffect(() => {
+    setExamType(examTypes[0])
+    setExamLevel(examLevels(examTypes[0])[0])
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [language])
   const [tab, setTab] = useState<"browse" | "review">("browse")
 
   const vocabAll = useQuery({
-    queryKey: ["vocab-all"],
-    queryFn: () => loadVocabulary(),
+    queryKey: ["vocab-all", language],
+    queryFn: () => loadVocabulary(language),
   })
   const levels = useMemo(() => {
     if (!vocabAll.data) return []
@@ -80,7 +102,7 @@ export default function LearnTab() {
                 Learn
               </Text>
             </View>
-            <Motif char="学" size={56} />
+            <Motif char={info.nativeName.charAt(0)} size={56} />
           </View>
           <View style={{ height: 1, backgroundColor: theme.border }} />
         </View>
@@ -148,12 +170,15 @@ export default function LearnTab() {
               fontWeight: "500",
             }}
           >
-            玩
+            {info.nativeName.charAt(0)}
           </Text>
           <View style={{ flex: 1, gap: 4 }}>
-            <Text style={[type.h3, { color: theme.text }]}>Hanzi Match</Text>
+            <Text style={[type.h3, { color: theme.text }]}>
+              {isCharScript(language) ? "Hanzi Match" : "Word Match"}
+            </Text>
             <Text style={[type.bodySm, { color: theme.textMuted }]}>
-              Pair characters to meanings. HSK 1 deck.
+              Pair {wordLabel(language, false)} to meanings.{" "}
+              {examDisplayName(examType)} {examLevel} deck.
             </Text>
           </View>
           <Text
@@ -171,6 +196,7 @@ export default function LearnTab() {
           <BrowseTab
             search={search}
             setSearch={setSearch}
+            examTypes={examTypes}
             examType={examType}
             setExamType={setExamType}
             examLevel={examLevel}
@@ -178,6 +204,7 @@ export default function LearnTab() {
             levels={levels}
             vocabLoading={vocabAll.isLoading}
             vocabData={vocabAll.data ?? []}
+            language={language}
           />
         ) : (
           <ReviewTab
@@ -200,10 +227,14 @@ function BrowseTab({
   setExamType,
   examLevel,
   setExamLevel,
+  examTypes,
   levels,
+  language,
 }: {
   vocabData: import("@/types/api").VocabWord[]
   vocabLoading: boolean
+  examTypes: string[]
+  language: import("@/lib/languages").LanguageCode
   search: string
   setSearch: (s: string) => void
   examType: string
@@ -225,8 +256,8 @@ function BrowseTab({
           return false
         if (!q) return true
         return (
-          (w.hanzi ?? "").toLowerCase().includes(q) ||
-          (w.pinyin ?? "").toLowerCase().includes(q) ||
+          headword(w).toLowerCase().includes(q) ||
+          (reading(w) ?? "").toLowerCase().includes(q) ||
           (w.translation ?? "").toLowerCase().includes(q)
         )
       })
@@ -245,15 +276,15 @@ function BrowseTab({
           showsHorizontalScrollIndicator={false}
           contentContainerStyle={{ gap: 8 }}
         >
-          {EXAM_TYPES.map((t) => (
+          {examTypes.map((t) => (
             <Chip
               key={t}
-              label={t.toUpperCase()}
+              label={examDisplayName(t)}
               selected={examType === t}
               onPress={() => {
                 setExamType(t)
                 // Reset level — different exams have different ladders
-                setExamLevel(t === "hsk" ? "1" : t === "tocfl" ? "A1" : "1")
+                setExamLevel(examLevels(t)[0])
               }}
             />
           ))}
@@ -292,7 +323,7 @@ function BrowseTab({
       <View style={{ gap: 10 }}>
         <Text style={[type.labelSm, { color: theme.textMuted }]}>Search</Text>
         <Input
-          placeholder="汉字, pinyin, or meaning…"
+          placeholder={wordLabel(language) + " headword, reading, or meaning…"}
           value={search}
           onChangeText={setSearch}
           autoCapitalize="none"
@@ -371,11 +402,11 @@ const WordRow = memo(function WordRow({ word }: { word: VocabWord }) {
           width: 56,
         }}
       >
-        {word.hanzi}
+        {headword(word)}
       </Text>
       <View style={{ flex: 1, gap: 2 }}>
         <Text style={[type.caption, { color: theme.textMuted }]}>
-          {(word as { pinyin?: string }).pinyin ?? "—"}
+          {reading(word) ?? "—"}
         </Text>
         <Text style={[type.bodySm, { color: theme.text }]} numberOfLines={1}>
           {(word as { translation?: string }).translation ?? ""}

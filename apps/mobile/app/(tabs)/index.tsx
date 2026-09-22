@@ -18,13 +18,39 @@ import { useTheme } from "@/theme/ThemeProvider"
 import { fonts, type } from "@/theme/typography"
 import { exam, progress, settings } from "@/api/endpoints"
 import { useAuthStore } from "@/store/auth"
+import { useOnboardingStore } from "@/store/onboarding"
+import { type LanguageCode } from "@/lib/languages"
 
-const DAILY_WORDS = [
-  { hanzi: "晨", pinyin: "chén", meaning: "morning" },
-  { hanzi: "浪", pinyin: "làng", meaning: "wave" },
-  { hanzi: "纸", pinyin: "zhǐ", meaning: "paper" },
-  { hanzi: "野", pinyin: "yě", meaning: "field; wild" },
-]
+const DAILY_WORDS: Record<
+  LanguageCode,
+  { hw: string; rd: string; meaning: string }[]
+> = {
+  zh: [
+    { hw: "晨", rd: "chén", meaning: "morning" },
+    { hw: "浪", rd: "làng", meaning: "wave" },
+    { hw: "纸", rd: "zhǐ", meaning: "paper" },
+    { hw: "野", rd: "yě", meaning: "field; wild" },
+  ],
+  // ponytail: 4 hand-picked words per language enough for rotation; swap to CDN vocab when bundles land.
+  de: [
+    { hw: "Morgen", rd: "der Morgen", meaning: "morning" },
+    { hw: "Welle", rd: "die Welle", meaning: "wave" },
+    { hw: "Papier", rd: "das Papier", meaning: "paper" },
+    { hw: "Feld", rd: "das Feld", meaning: "field" },
+  ],
+  en: [
+    { hw: "morning", rd: "ˈmɔːrnɪŋ", meaning: "pagi hari" },
+    { hw: "wave", rd: "weɪv", meaning: "gelombang" },
+    { hw: "paper", rd: "ˈpeɪpər", meaning: "kertas" },
+    { hw: "field", rd: "fiːld", meaning: "lapangan" },
+  ],
+  ja: [
+    { hw: "朝", rd: "あさ", meaning: "morning" },
+    { hw: "波", rd: "なみ", meaning: "wave" },
+    { hw: "紙", rd: "かみ", meaning: "paper" },
+    { hw: "野", rd: "の", meaning: "field; wild" },
+  ],
+}
 
 export default function HomeTab() {
   const { theme } = useTheme()
@@ -54,10 +80,12 @@ export default function HomeTab() {
   }, [])
 
   // Pick a deterministic "word of the day"
+  const language = useOnboardingStore((s) => s.language)
   const word = useMemo(() => {
+    const pool = DAILY_WORDS[language] ?? DAILY_WORDS.zh
     const d = Math.floor(Date.now() / 86_400_000)
-    return DAILY_WORDS[d % DAILY_WORDS.length]
-  }, [])
+    return pool[d % pool.length]
+  }, [language])
 
   const goal = settingsQ.data?.daily_goal_min ?? 10
   const todayMin = useMemo(() => {
@@ -184,7 +212,7 @@ export default function HomeTab() {
                   fontWeight: "500",
                 }}
               >
-                {word.hanzi}
+                {word.hw}
               </Text>
               <View style={{ flex: 1, gap: 4 }}>
                 <Text
@@ -193,7 +221,7 @@ export default function HomeTab() {
                     { color: theme.textMuted, fontFamily: fonts.sans },
                   ]}
                 >
-                  {word.pinyin}
+                  {word.rd}
                 </Text>
                 <Text
                   style={[

@@ -9,25 +9,29 @@ import { useTheme } from "@/theme/ThemeProvider"
 import type { Theme, ThemeDefinition, ThemeMode } from "@/theme/colors"
 import { fonts, type } from "@/theme/typography"
 import { useOnboardingStore, type ScriptPref } from "@/store/onboarding"
+import { LANGUAGES, examDisplayName, languageInfo } from "@/lib/languages"
 import { useThemePrefs } from "@/store/theme"
 import { progress } from "@/api/endpoints"
 
-const STEPS = ["script", "theme", "goal"] as const
+const STEPS = ["language", "script", "theme", "goal"] as const
 type Step = (typeof STEPS)[number]
 
 const KICKERS: Record<Step, string> = {
-  script: "Step 01 — Foundations",
-  theme: "Step 02 — Atmosphere",
-  goal: "Step 03 — Rhythm",
+  language: "Step 01 — Language",
+  script: "Step 02 — Foundations",
+  theme: "Step 03 — Atmosphere",
+  goal: "Step 04 — Rhythm",
 }
 
 const TITLES: Record<Step, string> = {
+  language: "What will you learn?",
   script: "Choose your script",
   theme: "Set the tone",
   goal: "Find your pace",
 }
 
 const SUBS: Record<Step, string> = {
+  language: "Chinese, German, English, or Japanese. Change anytime later.",
   script:
     "The characters you'll read every day. You can change your mind later.",
   theme: "Six palettes. Three modes. One quiet aesthetic.",
@@ -37,31 +41,48 @@ const SUBS: Record<Step, string> = {
 export default function Onboarding() {
   const { theme, catalog, materialYouAvailable } = useTheme()
   const { themeId, mode, setThemeId, setMode } = useThemePrefs()
-  const { script, setScript, complete, dailyMinutes, setDailyMinutes } =
-    useOnboardingStore()
+  const {
+    script,
+    setScript,
+    complete,
+    dailyMinutes,
+    setDailyMinutes,
+    language,
+    setLanguage,
+    examType,
+    setExamType,
+  } = useOnboardingStore()
   const [stepIdx, setStepIdx] = useState(0)
   const step = STEPS[stepIdx]
 
   const syncOnboarding = useMutation({
     mutationFn: async () =>
       progress.update({
-        onboarding: { completed: true, step: 3 },
-        data: { script },
+        onboarding: { completed: true, step: 4 },
+        data: { script, language, examType },
       }),
     onError: () => undefined,
   })
 
   const next = useCallback(() => {
-    if (stepIdx < STEPS.length - 1) {
-      setStepIdx(stepIdx + 1)
+    // ponytail: no back nav; skip script step for non-zh (latin/kana need no script choice)
+    let nextIdx = stepIdx + 1
+    if (STEPS[stepIdx] === "language" && language !== "zh") nextIdx += 1
+    if (nextIdx < STEPS.length) {
+      setStepIdx(nextIdx)
     } else {
       syncOnboarding.mutate()
       complete()
       router.replace("/(auth)")
     }
-  }, [stepIdx, complete, syncOnboarding])
+  }, [stepIdx, complete, syncOnboarding, language])
+
+  const ctaDisabled =
+    (step === "language" && !examType) ||
+    (step === "script" && language === "zh" && !script)
 
   const stepChars: Record<Step, string> = {
+    language: "语",
     script: "简",
     theme: "彩",
     goal: "步",
@@ -112,6 +133,119 @@ export default function Onboarding() {
         </View>
 
         {/* Step content */}
+        {step === "language" && (
+          <View style={{ gap: 20 }}>
+            {LANGUAGES.map((l) => {
+              const selected = language === l.code
+              return (
+                <Pressable
+                  key={l.code}
+                  onPress={() => {
+                    setLanguage(l.code)
+                    setExamType(languageInfo(l.code).examTypes[0] ?? "")
+                  }}
+                  style={{
+                    paddingVertical: 20,
+                    borderTopWidth: 1,
+                    borderBottomWidth: 1,
+                    borderColor: selected ? theme.text : theme.border,
+                    backgroundColor: selected ? theme.surface : "transparent",
+                    paddingHorizontal: 16,
+                    marginHorizontal: -16,
+                    flexDirection: "row",
+                    alignItems: "center",
+                    gap: 20,
+                  }}
+                >
+                  <Text
+                    style={{
+                      fontFamily: fonts.serif,
+                      fontSize: 32,
+                      color: selected ? theme.accent : theme.text,
+                      width: 96,
+                    }}
+                  >
+                    {l.nativeName}
+                  </Text>
+                  <View style={{ flex: 1 }}>
+                    <Text style={[type.h3, { color: theme.text }]}>
+                      {l.name}
+                    </Text>
+                    <Text
+                      style={[
+                        type.bodySm,
+                        { color: theme.textMuted, marginTop: 2 },
+                      ]}
+                    >
+                      {languageInfo(l.code)
+                        .examTypes.map(examDisplayName)
+                        .join(" · ")}
+                    </Text>
+                  </View>
+                  {selected && (
+                    <View
+                      style={{
+                        width: 24,
+                        height: 24,
+                        borderRadius: 12,
+                        backgroundColor: theme.accent,
+                        alignItems: "center",
+                        justifyContent: "center",
+                      }}
+                    >
+                      <Text
+                        style={{
+                          color: theme.white,
+                          fontSize: 12,
+                          fontWeight: "700",
+                        }}
+                      >
+                        ✓
+                      </Text>
+                    </View>
+                  )}
+                </Pressable>
+              )
+            })}
+
+            {/* Exam picker for chosen language */}
+            <View style={{ gap: 10, marginTop: 8 }}>
+              <Text style={[type.labelSm, { color: theme.textMuted }]}>
+                Exam track
+              </Text>
+              <View style={{ flexDirection: "row", flexWrap: "wrap", gap: 8 }}>
+                {languageInfo(language).examTypes.map((t) => {
+                  const sel = examType === t
+                  return (
+                    <Pressable
+                      key={t}
+                      onPress={() => setExamType(t)}
+                      style={{
+                        paddingVertical: 10,
+                        paddingHorizontal: 16,
+                        borderRadius: 2,
+                        borderWidth: 1.5,
+                        borderColor: sel ? theme.text : theme.border,
+                        backgroundColor: sel ? theme.text : "transparent",
+                      }}
+                    >
+                      <Text
+                        style={{
+                          color: sel ? theme.bg : theme.text,
+                          fontWeight: "600",
+                          fontSize: 13,
+                        }}
+                      >
+                        {examDisplayName(t)}
+                      </Text>
+                    </Pressable>
+                  )
+                })}
+              </View>
+            </View>
+          </View>
+        )}
+
         {step === "script" && (
           <View style={{ gap: 20 }}>
             {[
@@ -395,7 +529,7 @@ export default function Onboarding() {
           <Button
             title={stepIdx === STEPS.length - 1 ? "Begin" : "Continue"}
             onPress={next}
-            disabled={step === "script" && !script}
+            disabled={ctaDisabled}
             size="lg"
           />
         </View>
