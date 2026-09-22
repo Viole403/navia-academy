@@ -1,5 +1,5 @@
 import { useCallback, useState } from "react"
-import { Pressable, ScrollView, Switch, Text, View } from "react-native"
+import { Pressable, ScrollView, Text, View } from "react-native"
 import { SafeAreaView } from "react-native-safe-area-context"
 import { router } from "expo-router"
 import { useMutation } from "@tanstack/react-query"
@@ -65,7 +65,7 @@ export default function Onboarding() {
   })
 
   const next = useCallback(() => {
-    // ponytail: no back nav; skip script step for non-zh (latin/kana need no script choice)
+    // ponytail: skip script step for non-zh (latin/kana need no script choice)
     let nextIdx = stepIdx + 1
     if (STEPS[stepIdx] === "language" && language !== "zh") nextIdx += 1
     if (nextIdx < STEPS.length) {
@@ -76,6 +76,13 @@ export default function Onboarding() {
       router.replace("/(auth)")
     }
   }, [stepIdx, complete, syncOnboarding, language])
+
+  const back = useCallback(() => {
+    // Mirror the forward skip: theme -> language directly for non-zh.
+    let prevIdx = stepIdx - 1
+    if (STEPS[stepIdx] === "theme" && language !== "zh") prevIdx -= 1
+    if (prevIdx >= 0) setStepIdx(prevIdx)
+  }, [stepIdx, language])
 
   const ctaDisabled =
     (step === "language" && !examType) ||
@@ -422,42 +429,6 @@ export default function Onboarding() {
                   )
                 })}
               </View>
-              <View
-                style={{
-                  flexDirection: "row",
-                  alignItems: "center",
-                  justifyContent: "space-between",
-                  marginTop: 6,
-                  paddingTop: 14,
-                  borderTopWidth: 1,
-                  borderTopColor: theme.border,
-                }}
-              >
-                <View style={{ flex: 1, paddingRight: 16 }}>
-                  <Text
-                    style={[
-                      type.body,
-                      { color: theme.text, fontWeight: "600" },
-                    ]}
-                  >
-                    True black
-                  </Text>
-                  <Text
-                    style={[
-                      type.caption,
-                      { color: theme.textMuted, marginTop: 2 },
-                    ]}
-                  >
-                    Pure #000 — saves battery on OLED panels
-                  </Text>
-                </View>
-                <Switch
-                  value={mode === "amoled"}
-                  onValueChange={(v) => setMode(v ? "amoled" : "dark")}
-                  trackColor={{ false: theme.border, true: theme.accent }}
-                  thumbColor={theme.white}
-                />
-              </View>
             </View>
           </View>
         )}
@@ -524,14 +495,33 @@ export default function Onboarding() {
           </View>
         )}
 
-        {/* CTA */}
-        <View style={{ marginTop: "auto", paddingTop: 16 }}>
-          <Button
-            title={stepIdx === STEPS.length - 1 ? "Begin" : "Continue"}
-            onPress={next}
-            disabled={ctaDisabled}
-            size="lg"
-          />
+        {/* CTA — Back mirrors the forward skip, primary takes 2/3 */}
+        <View
+          style={{
+            marginTop: "auto",
+            paddingTop: 16,
+            flexDirection: "row",
+            gap: 12,
+          }}
+        >
+          {stepIdx > 0 && (
+            <View style={{ flex: 1 }}>
+              <Button
+                title="Back"
+                variant="secondary"
+                onPress={back}
+                size="lg"
+              />
+            </View>
+          )}
+          <View style={{ flex: 2 }}>
+            <Button
+              title={stepIdx === STEPS.length - 1 ? "Begin" : "Continue"}
+              onPress={next}
+              disabled={ctaDisabled}
+              size="lg"
+            />
+          </View>
         </View>
       </ScrollView>
     </SafeAreaView>

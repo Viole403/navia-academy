@@ -6,7 +6,7 @@ import {
   Text,
   View,
 } from "react-native"
-import { SafeAreaView } from "react-native-safe-area-context"
+import { SafeAreaView, useSafeAreaInsets } from "react-native-safe-area-context"
 import { useRouter } from "expo-router"
 import { useMutation } from "@tanstack/react-query"
 import { Button } from "@/components/ui/Button"
@@ -20,6 +20,7 @@ import { saveTokens } from "@/utils/secure"
 
 export default function Register() {
   const { theme } = useTheme()
+  const insets = useSafeAreaInsets()
   const router = useRouter()
   const setAuth = useAuthStore((s) => s.setAuth)
 
@@ -129,7 +130,16 @@ export default function Register() {
           </View>
 
           {/* CTA */}
-          <View style={{ marginTop: "auto", gap: 12 }}>
+          <View
+            style={{
+              marginTop: "auto",
+              gap: 8,
+              paddingTop: 16,
+              paddingBottom: Math.max(insets.bottom, 8),
+              borderTopWidth: 1,
+              borderTopColor: theme.borderSoft,
+            }}
+          >
             <Button
               title="Create account"
               onPress={() => register.mutate()}
