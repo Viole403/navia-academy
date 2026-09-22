@@ -47,7 +47,8 @@
       "expo-font",
       "expo-av",
       "expo-localization",
-      "expo-notifications"
+      "expo-notifications",
+      "expo-image"
     ],
     "experiments": {
       "typedRoutes": true
