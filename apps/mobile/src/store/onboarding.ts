@@ -1,6 +1,6 @@
-import AsyncStorage from "@react-native-async-storage/async-storage"
 import { create } from "zustand"
 import { createJSONStorage, persist } from "zustand/middleware"
+import { storage } from "@/utils/storage"
 import type { LanguageCode } from "@/lib/languages"
 import { DEFAULT_LANGUAGE } from "@/lib/languages"
 
@@ -51,7 +51,7 @@ export const useOnboardingStore = create<OnboardingState>()(
     }),
     {
       name: "navia.onboarding.v1",
-      storage: createJSONStorage(() => AsyncStorage),
+      storage: createJSONStorage(() => storage),
     }
   )
 )

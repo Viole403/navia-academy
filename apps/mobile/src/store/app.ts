@@ -1,6 +1,6 @@
-import AsyncStorage from "@react-native-async-storage/async-storage"
 import { create } from "zustand"
 import { createJSONStorage, persist } from "zustand/middleware"
+import { storage } from "@/utils/storage"
 
 interface AppState {
   hasOnboarded: boolean
@@ -15,7 +15,7 @@ export const useAppStore = create<AppState>()(
     }),
     {
       name: "navia.app.v1",
-      storage: createJSONStorage(() => AsyncStorage),
+      storage: createJSONStorage(() => storage),
     }
   )
 )

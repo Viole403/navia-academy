@@ -1,6 +1,6 @@
-import AsyncStorage from "@react-native-async-storage/async-storage"
 import { create } from "zustand"
 import { createJSONStorage, persist } from "zustand/middleware"
+import { storage } from "@/utils/storage"
 import type { ThemeId, ThemeMode } from "@/theme/colors"
 
 interface ThemePrefsState {
@@ -20,7 +20,7 @@ export const useThemePrefs = create<ThemePrefsState>()(
     }),
     {
       name: "navia.theme.v1",
-      storage: createJSONStorage(() => AsyncStorage),
+      storage: createJSONStorage(() => storage),
     }
   )
 )

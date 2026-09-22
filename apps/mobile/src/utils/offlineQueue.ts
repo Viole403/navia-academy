@@ -1,4 +1,4 @@
-import AsyncStorage from "@react-native-async-storage/async-storage"
+import { storage } from "./storage"
 import { progress } from "../api/endpoints"
 import type { SrsCard } from "@/types/api"
 
@@ -20,7 +20,7 @@ export interface OutboxOp {
 
 async function read(): Promise<OutboxOp[]> {
   try {
-    const raw = await AsyncStorage.getItem(KEY)
+    const raw = await storage.getItem(KEY)
     if (!raw) return []
     const parsed = JSON.parse(raw)
     return Array.isArray(parsed) ? (parsed as OutboxOp[]) : []
@@ -30,7 +30,7 @@ async function read(): Promise<OutboxOp[]> {
 }
 
 async function write(ops: OutboxOp[]): Promise<void> {
-  await AsyncStorage.setItem(KEY, JSON.stringify(ops))
+  await storage.setItem(KEY, JSON.stringify(ops))
 }
 
 export async function enqueue(
