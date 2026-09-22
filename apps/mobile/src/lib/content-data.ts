@@ -1,5 +1,11 @@
 import { env } from "@/utils/env"
 import type { VocabWord } from "@/types/api"
+import {
+  DEFAULT_LANGUAGE,
+  LANGUAGES,
+  langBundle,
+  type LanguageCode,
+} from "@/lib/languages"
 
 /**
  * Cache-first JSON data client (mobile), mirrors apps/web/src/lib/data-client.ts.
@@ -91,6 +97,29 @@ export function clearDataCache(): void {
 }
 
 /** Language-scoped vocabulary bundle (`<lang>/vocabulary/index`). */
-export function loadVocabulary(lang = "zh"): Promise<VocabWord[]> {
-  return loadBundle<VocabWord[]>(`${lang}/vocabulary/index`)
+export function loadVocabulary(
+  lang: LanguageCode = DEFAULT_LANGUAGE
+): Promise<VocabWord[]> {
+  return loadBundle<VocabWord[]>(langBundle(lang, "vocabulary/index"))
+}
+
+/**
+ * Find a word by id, searching the preferred language first then the rest.
+ * Ids are only unique per language bundle, so cross-language lookup tries
+ * each bundle in turn.
+ */
+export async function findWord(
+  id: string,
+  preferred: LanguageCode = DEFAULT_LANGUAGE
+): Promise<{ word: VocabWord | null; lang: LanguageCode }> {
+  const langs: LanguageCode[] = [
+    preferred,
+    ...LANGUAGES.filter((l) => l.code !== preferred).map((l) => l.code),
+  ]
+  for (const lang of langs) {
+    const all = await loadVocabulary(lang).catch(() => [] as VocabWord[])
+    const word = all.find((w) => w.id === id) ?? null
+    if (word) return { word, lang }
+  }
+  return { word: null, lang: preferred }
 }

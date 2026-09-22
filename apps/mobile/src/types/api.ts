@@ -117,12 +117,20 @@ export interface Task {
   updated_at: string
 }
 
-// ─── Vocabulary ─────────────────────────────────────────────────────────────
+// ─── Vocabulary (all learning languages, not just zh) ──────────────────────
 export interface VocabWord {
   id: string
+  /**
+   * Headword. Chinese items use `hanzi`; other languages use `text`
+   * (media schema: `text`, `pronunciation[]`, `language`).
+   */
   hanzi: string
-  pinyin: string
+  /** Optional reading/pronunciation. zh = pinyin; de/ja/en use `pronunciation`. */
+  pinyin?: string
   translation: string
+  language?: string
+  text?: string
+  pronunciation?: string[]
   traditional?: string
   exampleSentence?: string
   exampleTranslation?: string

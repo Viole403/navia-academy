@@ -5,13 +5,16 @@ interface ChipProps {
   label: string
   selected: boolean
   onPress: () => void
+  /** Optional accent (e.g. exam badge color); defaults to theme text. */
+  tint?: string
 }
 
 /**
  * Editorial chip — hairline pill, sharp aesthetic, no fill unless selected.
  */
-export function Chip({ label, selected, onPress }: ChipProps) {
+export function Chip({ label, selected, onPress, tint }: ChipProps) {
   const { theme } = useTheme()
+  const active = tint ?? theme.text
 
   return (
     <Pressable
@@ -21,8 +24,8 @@ export function Chip({ label, selected, onPress }: ChipProps) {
         paddingHorizontal: 16,
         borderRadius: 999,
         borderWidth: 1.5,
-        borderColor: selected ? theme.text : theme.border,
-        backgroundColor: selected ? theme.text : "transparent",
+        borderColor: selected ? active : theme.border,
+        backgroundColor: selected ? active : "transparent",
         opacity: pressed ? 0.7 : 1,
       })}
       accessibilityRole="button"

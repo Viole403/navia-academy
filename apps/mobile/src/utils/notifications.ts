@@ -1,17 +1,26 @@
-import * as Notifications from "expo-notifications"
 import { Platform } from "react-native"
-
-Notifications.setNotificationHandler({
-  handleNotification: async () => ({
-    shouldShowAlert: true,
-    shouldPlaySound: false,
-    shouldSetBadge: false,
-    shouldShowBanner: true,
-    shouldShowList: true,
-  }),
-})
+// ponytail: expo-notifications push removed from Expo Go SDK 53+; safe-require
+// keeps importing routes loadable. Migrate to dev build for real reminders.
+// eslint-disable-next-line @typescript-eslint/no-require-imports
+let Notifications: any = null
+try {
+  // eslint-disable-next-line @typescript-eslint/no-require-imports
+  Notifications = require("expo-notifications")
+  Notifications.setNotificationHandler({
+    handleNotification: async () => ({
+      shouldShowAlert: true,
+      shouldPlaySound: false,
+      shouldSetBadge: false,
+      shouldShowBanner: true,
+      shouldShowList: true,
+    }),
+  })
+} catch {
+  Notifications = null
+}
 
 export async function requestPermissions(): Promise<boolean> {
+  if (!Notifications) return false
   const { status } = await Notifications.requestPermissionsAsync()
   return status === "granted"
 }
@@ -20,6 +29,7 @@ export async function scheduleDailyStreakReminder(
   hour = 20,
   minute = 0
 ): Promise<void> {
+  if (!Notifications) return
   await cancelStreakReminder()
   if (Platform.OS === "android") {
     await Notifications.setNotificationChannelAsync("streak", {
@@ -42,9 +52,10 @@ export async function scheduleDailyStreakReminder(
 }
 
 export async function cancelStreakReminder(): Promise<void> {
+  if (!Notifications) return
   const scheduled = await Notifications.getAllScheduledNotificationsAsync()
   await Promise.all(
-    scheduled.map((s) =>
+    scheduled.map((s: any) =>
       Notifications.cancelScheduledNotificationAsync(s.identifier)
     )
   )

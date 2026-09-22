@@ -1,8 +1,19 @@
 import { useCallback, useEffect, useRef, useState } from "react"
-import { Audio } from "expo-av"
 import { File, Directory, Paths } from "expo-file-system"
+// ponytail: expo-av native module (ExponentAV) absent in Expo Go SDK 53+;
+// migrate to expo-audio + dev build. Safe-require keeps routes loadable.
+// eslint-disable-next-line @typescript-eslint/no-require-imports
+let Audio: any = null
+try {
+  // eslint-disable-next-line @typescript-eslint/no-require-imports
+  Audio = require("expo-av").Audio
+} catch {
+  Audio = null
+}
 import { tts } from "@/api/endpoints"
 import { resolveMediaUrl } from "@/utils/env"
+import { ttsLocaleFor } from "@/lib/languages"
+import { useOnboardingStore } from "@/store/onboarding"
 import audioManifest from "@/data/audio/audio-manifest.json"
 import { type VoiceGender, type VoiceLocale } from "@/data/audio"
 
@@ -113,13 +124,15 @@ async function evictCacheIfNeeded(): Promise<void> {
  *   3. Backend TTS endpoint (POST /tts) — fallback for dynamic content
  */
 export function useTts() {
-  const soundRef = useRef<Audio.Sound | null>(null)
+  const soundRef = useRef<any>(null)
   const playIdRef = useRef(0) // increments on each play() call to discard stale status updates
   const [loading, setLoading] = useState(false)
   const [playing, setPlaying] = useState(false)
   const [error, setError] = useState<string | null>(null)
+  const language = useOnboardingStore((s) => s.language)
 
   useEffect(() => {
+    if (!Audio) return
     Audio.setAudioModeAsync({
       playsInSilentModeIOS: true,
       staysActiveInBackground: false,
@@ -131,58 +144,35 @@ export function useTts() {
     }
   }, [])
 
-  const play = useCallback(async (text: string) => {
-    if (!text) return
-    const playId = ++playIdRef.current // tag this call
-    try {
-      setError(null)
-      setLoading(true)
-      soundRef.current?.unloadAsync().catch(() => {})
-
-      await ensureCacheDir()
-
-      // Voice follows the manifest: fixed gender + natural locale per entry.
-      // Raw/dynamic text falls back to zh-CN female.
-      const canonicalKey = resolveCanonicalKey(text)
-      const locale = (localeByKey.get(canonicalKey) ?? "zh-CN") as VoiceLocale
-      const genderKey: VoiceGender = genderByKey.get(canonicalKey) ?? "female"
-      const manifestText = textByKey.get(canonicalKey)
-      const isManifestBacked = manifestText !== undefined
-
-      // Step 1: local file cache
-      const localFile = cacheFile(canonicalKey, locale, genderKey)
-      if (localFile.exists) {
-        const { sound } = await Audio.Sound.createAsync(
-          { uri: localFile.uri },
-          { shouldPlay: true }
-        )
-        if (playId !== playIdRef.current) {
-          sound.unloadAsync().catch(() => {})
-          return
-        }
-        soundRef.current = sound
-        setPlaying(true)
-        sound.setOnPlaybackStatusUpdate((status) => {
-          if (playId !== playIdRef.current) return
-          if (!status.isLoaded) {
-            if ("error" in status && status.error) {
-              setPlaying(false)
-              setError(String(status.error))
-            }
-            return
-          }
-          if (status.didJustFinish) setPlaying(false)
-        })
-        setLoading(false)
+  const play = useCallback(
+    async (text: string) => {
+      if (!text) return
+      if (!Audio) {
+        setError("Audio unavailable in Expo Go — use a dev build")
         return
       }
+      const playId = ++playIdRef.current // tag this call
+      try {
+        setError(null)
+        setLoading(true)
+        soundRef.current?.unloadAsync().catch(() => {})
 
-      // Step 2: CDN direct URL (manifest-backed keys only)
-      if (isManifestBacked && CDN_PUBLIC_URL) {
-        const cdnUrl = cdnAudioUrl(canonicalKey, locale, genderKey)
-        try {
+        await ensureCacheDir()
+
+        // Voice follows the manifest: fixed gender + natural locale per entry.
+        // Raw/dynamic text falls back to the current learning language locale.
+        const canonicalKey = resolveCanonicalKey(text)
+        const locale = (localeByKey.get(canonicalKey) ??
+          ttsLocaleFor(language)) as VoiceLocale
+        const genderKey: VoiceGender = genderByKey.get(canonicalKey) ?? "female"
+        const manifestText = textByKey.get(canonicalKey)
+        const isManifestBacked = manifestText !== undefined
+
+        // Step 1: local file cache
+        const localFile = cacheFile(canonicalKey, locale, genderKey)
+        if (localFile.exists) {
           const { sound } = await Audio.Sound.createAsync(
-            { uri: cdnUrl },
+            { uri: localFile.uri },
             { shouldPlay: true }
           )
           if (playId !== playIdRef.current) {
@@ -191,16 +181,7 @@ export function useTts() {
           }
           soundRef.current = sound
           setPlaying(true)
-          // Cache the file locally for offline use
-          try {
-            await File.downloadFileAsync(cdnUrl, localFile, {
-              idempotent: true,
-            })
-            await evictCacheIfNeeded()
-          } catch {
-            // caching is best-effort, don't block playback
-          }
-          sound.setOnPlaybackStatusUpdate((status) => {
+          sound.setOnPlaybackStatusUpdate((status: any) => {
             if (playId !== playIdRef.current) return
             if (!status.isLoaded) {
               if ("error" in status && status.error) {
@@ -213,44 +194,84 @@ export function useTts() {
           })
           setLoading(false)
           return
-        } catch {
-          // CDN failed, fall through to backend
         }
-      }
 
-      // Step 3: backend TTS (fallback for dynamic content or CDN failure)
-      const audio = await tts.say(text, locale, genderKey)
-      const url = resolveMediaUrl(audio.url)
-      if (!url) throw new Error("empty audio url")
-
-      const { sound } = await Audio.Sound.createAsync(
-        { uri: url },
-        { shouldPlay: true }
-      )
-      if (playId !== playIdRef.current) {
-        sound.unloadAsync().catch(() => {})
-        return
-      }
-      soundRef.current = sound
-      setPlaying(true)
-      sound.setOnPlaybackStatusUpdate((status) => {
-        if (playId !== playIdRef.current) return
-        if (!status.isLoaded) {
-          if ("error" in status && status.error) {
-            setPlaying(false)
-            setError(String(status.error))
+        // Step 2: CDN direct URL (manifest-backed keys only)
+        if (isManifestBacked && CDN_PUBLIC_URL) {
+          const cdnUrl = cdnAudioUrl(canonicalKey, locale, genderKey)
+          try {
+            const { sound } = await Audio.Sound.createAsync(
+              { uri: cdnUrl },
+              { shouldPlay: true }
+            )
+            if (playId !== playIdRef.current) {
+              sound.unloadAsync().catch(() => {})
+              return
+            }
+            soundRef.current = sound
+            setPlaying(true)
+            // Cache the file locally for offline use
+            try {
+              await File.downloadFileAsync(cdnUrl, localFile, {
+                idempotent: true,
+              })
+              await evictCacheIfNeeded()
+            } catch {
+              // caching is best-effort, don't block playback
+            }
+            sound.setOnPlaybackStatusUpdate((status: any) => {
+              if (playId !== playIdRef.current) return
+              if (!status.isLoaded) {
+                if ("error" in status && status.error) {
+                  setPlaying(false)
+                  setError(String(status.error))
+                }
+                return
+              }
+              if (status.didJustFinish) setPlaying(false)
+            })
+            setLoading(false)
+            return
+          } catch {
+            // CDN failed, fall through to backend
           }
+        }
+
+        // Step 3: backend TTS (fallback for dynamic content or CDN failure)
+        const audio = await tts.say(text, locale, genderKey)
+        const url = resolveMediaUrl(audio.url)
+        if (!url) throw new Error("empty audio url")
+
+        const { sound } = await Audio.Sound.createAsync(
+          { uri: url },
+          { shouldPlay: true }
+        )
+        if (playId !== playIdRef.current) {
+          sound.unloadAsync().catch(() => {})
           return
         }
-        if (status.didJustFinish) setPlaying(false)
-      })
-    } catch (e) {
-      setError(e instanceof Error ? e.message : "playback failed")
-      setPlaying(false)
-    } finally {
-      setLoading(false)
-    }
-  }, [])
+        soundRef.current = sound
+        setPlaying(true)
+        sound.setOnPlaybackStatusUpdate((status: any) => {
+          if (playId !== playIdRef.current) return
+          if (!status.isLoaded) {
+            if ("error" in status && status.error) {
+              setPlaying(false)
+              setError(String(status.error))
+            }
+            return
+          }
+          if (status.didJustFinish) setPlaying(false)
+        })
+      } catch (e) {
+        setError(e instanceof Error ? e.message : "playback failed")
+        setPlaying(false)
+      } finally {
+        setLoading(false)
+      }
+    },
+    [language]
+  )
 
   const stop = useCallback(async () => {
     await soundRef.current?.stopAsync().catch(() => {})
