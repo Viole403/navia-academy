@@ -1,4 +1,11 @@
 import { ActivityIndicator, Pressable, Text } from "react-native"
+import Animated, {
+  useAnimatedStyle,
+  useReducedMotion,
+  useSharedValue,
+  withSpring,
+} from "react-native-reanimated"
+import * as Haptics from "expo-haptics"
 import { useTheme } from "@/theme/ThemeProvider"
 
 type Variant = "primary" | "secondary" | "ghost" | "danger"
@@ -28,6 +35,20 @@ export function Button({
   size = "md",
 }: ButtonProps) {
   const { theme } = useTheme()
+  const reduce = useReducedMotion()
+  const scale = useSharedValue(1)
+  const pressStyle = useAnimatedStyle(() => ({
+    transform: [{ scale: scale.value }],
+  }))
+  const pressIn = () => {
+    if (!reduce) scale.value = withSpring(0.97, { damping: 18, stiffness: 400 })
+    Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light).catch(
+      () => undefined
+    )
+  }
+  const pressOut = () => {
+    scale.value = withSpring(1, { damping: 18, stiffness: 400 })
+  }
 
   const padY = size === "sm" ? 10 : size === "lg" ? 18 : 14
   const padX = size === "sm" ? 16 : size === "lg" ? 28 : 22
@@ -35,30 +56,34 @@ export function Button({
 
   if (variant === "ghost") {
     return (
-      <Pressable
-        onPress={onPress}
-        disabled={disabled || loading}
-        style={({ pressed }) => ({
-          alignSelf: fullWidth ? "stretch" : "auto",
-          paddingVertical: padY,
-          paddingHorizontal: padX,
-          alignItems: "center",
-          opacity: disabled ? 0.4 : pressed ? 0.6 : 1,
-        })}
-      >
-        <Text
-          style={{
-            color: theme.text,
-            fontSize,
-            fontWeight: "600",
-            letterSpacing: 0.3,
-            textDecorationLine: "underline",
-            textDecorationColor: theme.border,
-          }}
+      <Animated.View style={pressStyle}>
+        <Pressable
+          onPress={onPress}
+          onPressIn={pressIn}
+          onPressOut={pressOut}
+          disabled={disabled || loading}
+          style={({ pressed }) => ({
+            alignSelf: fullWidth ? "stretch" : "auto",
+            paddingVertical: padY,
+            paddingHorizontal: padX,
+            alignItems: "center",
+            opacity: disabled ? 0.4 : pressed ? 0.6 : 1,
+          })}
         >
-          {title}
-        </Text>
-      </Pressable>
+          <Text
+            style={{
+              color: theme.text,
+              fontSize,
+              fontWeight: "600",
+              letterSpacing: 0.3,
+              textDecorationLine: "underline",
+              textDecorationColor: theme.border,
+            }}
+          >
+            {title}
+          </Text>
+        </Pressable>
+      </Animated.View>
     )
   }
 
@@ -73,39 +98,43 @@ export function Button({
   const textColor = filled ? theme.white : theme.text
 
   return (
-    <Pressable
-      onPress={onPress}
-      disabled={disabled || loading}
-      style={({ pressed }) => ({
-        alignSelf: fullWidth ? "stretch" : "auto",
-        backgroundColor: pressed ? theme.cardPressed : bg,
-        borderWidth: 1.5,
-        borderColor,
-        paddingVertical: padY,
-        paddingHorizontal: padX,
-        alignItems: "center",
-        justifyContent: "center",
-        flexDirection: "row",
-        opacity: disabled ? 0.5 : 1,
-        borderRadius: 2,
-      })}
-      accessibilityRole="button"
-      accessibilityLabel={title}
-    >
-      {loading ? (
-        <ActivityIndicator color={textColor} />
-      ) : (
-        <Text
-          style={{
-            color: textColor,
-            fontSize,
-            fontWeight: "700",
-            letterSpacing: 0.5,
-          }}
-        >
-          {title}
-        </Text>
-      )}
-    </Pressable>
+    <Animated.View style={pressStyle}>
+      <Pressable
+        onPress={onPress}
+        onPressIn={pressIn}
+        onPressOut={pressOut}
+        disabled={disabled || loading}
+        style={({ pressed }) => ({
+          alignSelf: fullWidth ? "stretch" : "auto",
+          backgroundColor: pressed ? theme.cardPressed : bg,
+          borderWidth: 1.5,
+          borderColor,
+          paddingVertical: padY,
+          paddingHorizontal: padX,
+          alignItems: "center",
+          justifyContent: "center",
+          flexDirection: "row",
+          opacity: disabled ? 0.5 : 1,
+          borderRadius: 2,
+        })}
+        accessibilityRole="button"
+        accessibilityLabel={title}
+      >
+        {loading ? (
+          <ActivityIndicator color={textColor} />
+        ) : (
+          <Text
+            style={{
+              color: textColor,
+              fontSize,
+              fontWeight: "700",
+              letterSpacing: 0.5,
+            }}
+          >
+            {title}
+          </Text>
+        )}
+      </Pressable>
+    </Animated.View>
   )
 }

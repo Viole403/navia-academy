@@ -16,6 +16,8 @@ import { useTheme } from "@/theme/ThemeProvider"
 import { type } from "@/theme/typography"
 import { auth } from "@/api/endpoints"
 import { useAuthStore } from "@/store/auth"
+import { useOnboardingStore } from "@/store/onboarding"
+import { motifChar } from "@/lib/languages"
 import { saveTokens } from "@/utils/secure"
 
 export default function Register() {
@@ -23,6 +25,7 @@ export default function Register() {
   const insets = useSafeAreaInsets()
   const router = useRouter()
   const setAuth = useAuthStore((s) => s.setAuth)
+  const language = useOnboardingStore((s) => s.language)
 
   const [name, setName] = useState("")
   const [email, setEmail] = useState("")
@@ -86,7 +89,7 @@ export default function Register() {
                   Your data syncs across devices.
                 </Text>
               </View>
-              <Motif char="开" size={64} />
+              <Motif char={motifChar(language)} size={64} />
             </View>
 
             <View style={{ height: 1, backgroundColor: theme.border }} />

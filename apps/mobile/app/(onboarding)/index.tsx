@@ -4,12 +4,18 @@ import { SafeAreaView } from "react-native-safe-area-context"
 import { router } from "expo-router"
 import { useMutation } from "@tanstack/react-query"
 import { Button } from "@/components/ui/Button"
+import { Enter } from "@/components/ui/Enter"
 import { Motif } from "@/components/ui/Motif"
 import { useTheme } from "@/theme/ThemeProvider"
 import type { Theme, ThemeDefinition, ThemeMode } from "@/theme/colors"
 import { fonts, type } from "@/theme/typography"
 import { useOnboardingStore, type ScriptPref } from "@/store/onboarding"
-import { LANGUAGES, examDisplayName, languageInfo } from "@/lib/languages"
+import {
+  LANGUAGES,
+  examDisplayName,
+  languageInfo,
+  motifChar,
+} from "@/lib/languages"
 import { useThemePrefs } from "@/store/theme"
 import { progress } from "@/api/endpoints"
 
@@ -89,10 +95,10 @@ export default function Onboarding() {
     (step === "script" && language === "zh" && !script)
 
   const stepChars: Record<Step, string> = {
-    language: "语",
-    script: "简",
-    theme: "彩",
-    goal: "步",
+    language: motifChar(language),
+    script: "文",
+    theme: "◐",
+    goal: "→",
   }
 
   return (
@@ -142,76 +148,77 @@ export default function Onboarding() {
         {/* Step content */}
         {step === "language" && (
           <View style={{ gap: 20 }}>
-            {LANGUAGES.map((l) => {
+            {LANGUAGES.map((l, i) => {
               const selected = language === l.code
               return (
-                <Pressable
-                  key={l.code}
-                  onPress={() => {
-                    setLanguage(l.code)
-                    setExamType(languageInfo(l.code).examTypes[0] ?? "")
-                  }}
-                  style={{
-                    paddingVertical: 20,
-                    borderTopWidth: 1,
-                    borderBottomWidth: 1,
-                    borderColor: selected ? theme.text : theme.border,
-                    backgroundColor: selected ? theme.surface : "transparent",
-                    paddingHorizontal: 16,
-                    marginHorizontal: -16,
-                    flexDirection: "row",
-                    alignItems: "center",
-                    gap: 20,
-                  }}
-                >
-                  <Text
+                <Enter key={l.code} index={i}>
+                  <Pressable
+                    onPress={() => {
+                      setLanguage(l.code)
+                      setExamType(languageInfo(l.code).examTypes[0] ?? "")
+                    }}
                     style={{
-                      fontFamily: fonts.serif,
-                      fontSize: 32,
-                      color: selected ? theme.accent : theme.text,
-                      width: 96,
+                      paddingVertical: 20,
+                      borderTopWidth: 1,
+                      borderBottomWidth: 1,
+                      borderColor: selected ? theme.text : theme.border,
+                      backgroundColor: selected ? theme.surface : "transparent",
+                      paddingHorizontal: 16,
+                      marginHorizontal: -16,
+                      flexDirection: "row",
+                      alignItems: "center",
+                      gap: 20,
                     }}
                   >
-                    {l.nativeName}
-                  </Text>
-                  <View style={{ flex: 1 }}>
-                    <Text style={[type.h3, { color: theme.text }]}>
-                      {l.name}
-                    </Text>
                     <Text
-                      style={[
-                        type.bodySm,
-                        { color: theme.textMuted, marginTop: 2 },
-                      ]}
-                    >
-                      {languageInfo(l.code)
-                        .examTypes.map(examDisplayName)
-                        .join(" · ")}
-                    </Text>
-                  </View>
-                  {selected && (
-                    <View
                       style={{
-                        width: 24,
-                        height: 24,
-                        borderRadius: 12,
-                        backgroundColor: theme.accent,
-                        alignItems: "center",
-                        justifyContent: "center",
+                        fontFamily: fonts.serif,
+                        fontSize: 32,
+                        color: selected ? theme.accent : theme.text,
+                        width: 96,
                       }}
                     >
+                      {l.nativeName}
+                    </Text>
+                    <View style={{ flex: 1 }}>
+                      <Text style={[type.h3, { color: theme.text }]}>
+                        {l.name}
+                      </Text>
                       <Text
-                        style={{
-                          color: theme.white,
-                          fontSize: 12,
-                          fontWeight: "700",
-                        }}
+                        style={[
+                          type.bodySm,
+                          { color: theme.textMuted, marginTop: 2 },
+                        ]}
                       >
-                        ✓
+                        {languageInfo(l.code)
+                          .examTypes.map(examDisplayName)
+                          .join(" · ")}
                       </Text>
                     </View>
-                  )}
-                </Pressable>
+                    {selected && (
+                      <View
+                        style={{
+                          width: 24,
+                          height: 24,
+                          borderRadius: 12,
+                          backgroundColor: theme.accent,
+                          alignItems: "center",
+                          justifyContent: "center",
+                        }}
+                      >
+                        <Text
+                          style={{
+                            color: theme.white,
+                            fontSize: 12,
+                            fontWeight: "700",
+                          }}
+                        >
+                          ✓
+                        </Text>
+                      </View>
+                    )}
+                  </Pressable>
+                </Enter>
               )
             })}
 
@@ -268,71 +275,72 @@ export default function Onboarding() {
                 name: "Traditional",
                 hint: "Taiwan · Hong Kong · Macau",
               },
-            ].map((s) => {
+            ].map((s, i) => {
               const selected = script === s.id
               return (
-                <Pressable
-                  key={s.id}
-                  onPress={() => setScript(s.id)}
-                  style={{
-                    paddingVertical: 24,
-                    borderTopWidth: 1,
-                    borderBottomWidth: 1,
-                    borderColor: selected ? theme.text : theme.border,
-                    backgroundColor: selected ? theme.surface : "transparent",
-                    paddingHorizontal: 16,
-                    marginHorizontal: -16,
-                    flexDirection: "row",
-                    alignItems: "center",
-                    gap: 20,
-                  }}
-                >
-                  <Text
+                <Enter key={s.id} index={i}>
+                  <Pressable
+                    onPress={() => setScript(s.id)}
                     style={{
-                      fontFamily: fonts.serif,
-                      fontSize: 44,
-                      color: selected ? theme.accent : theme.text,
-                      width: 64,
+                      paddingVertical: 24,
+                      borderTopWidth: 1,
+                      borderBottomWidth: 1,
+                      borderColor: selected ? theme.text : theme.border,
+                      backgroundColor: selected ? theme.surface : "transparent",
+                      paddingHorizontal: 16,
+                      marginHorizontal: -16,
+                      flexDirection: "row",
+                      alignItems: "center",
+                      gap: 20,
                     }}
                   >
-                    {s.display}
-                  </Text>
-                  <View style={{ flex: 1 }}>
-                    <Text style={[type.h3, { color: theme.text }]}>
-                      {s.name}
-                    </Text>
                     <Text
-                      style={[
-                        type.bodySm,
-                        { color: theme.textMuted, marginTop: 2 },
-                      ]}
-                    >
-                      {s.hint}
-                    </Text>
-                  </View>
-                  {selected && (
-                    <View
                       style={{
-                        width: 24,
-                        height: 24,
-                        borderRadius: 12,
-                        backgroundColor: theme.accent,
-                        alignItems: "center",
-                        justifyContent: "center",
+                        fontFamily: fonts.serif,
+                        fontSize: 44,
+                        color: selected ? theme.accent : theme.text,
+                        width: 64,
                       }}
                     >
+                      {s.display}
+                    </Text>
+                    <View style={{ flex: 1 }}>
+                      <Text style={[type.h3, { color: theme.text }]}>
+                        {s.name}
+                      </Text>
                       <Text
-                        style={{
-                          color: theme.white,
-                          fontSize: 12,
-                          fontWeight: "700",
-                        }}
+                        style={[
+                          type.bodySm,
+                          { color: theme.textMuted, marginTop: 2 },
+                        ]}
                       >
-                        ✓
+                        {s.hint}
                       </Text>
                     </View>
-                  )}
-                </Pressable>
+                    {selected && (
+                      <View
+                        style={{
+                          width: 24,
+                          height: 24,
+                          borderRadius: 12,
+                          backgroundColor: theme.accent,
+                          alignItems: "center",
+                          justifyContent: "center",
+                        }}
+                      >
+                        <Text
+                          style={{
+                            color: theme.white,
+                            fontSize: 12,
+                            fontWeight: "700",
+                          }}
+                        >
+                          ✓
+                        </Text>
+                      </View>
+                    )}
+                  </Pressable>
+                </Enter>
               )
             })}
           </View>
@@ -443,53 +451,54 @@ export default function Onboarding() {
             ].map((g, i, arr) => {
               const selected = dailyMinutes === g.min
               return (
-                <Pressable
-                  key={g.min}
-                  onPress={() => setDailyMinutes(g.min)}
-                  style={{
-                    paddingVertical: 20,
-                    paddingHorizontal: 16,
-                    borderTopWidth: 1,
-                    borderTopColor: theme.border,
-                    borderBottomWidth: i === arr.length - 1 ? 1 : 0,
-                    borderBottomColor: theme.border,
-                    backgroundColor: selected ? theme.surface : "transparent",
-                    marginHorizontal: -12,
-                    flexDirection: "row",
-                    alignItems: "baseline",
-                    justifyContent: "space-between",
-                  }}
-                >
-                  <View
+                <Enter key={g.min} index={i}>
+                  <Pressable
+                    onPress={() => setDailyMinutes(g.min)}
                     style={{
+                      paddingVertical: 20,
+                      paddingHorizontal: 16,
+                      borderTopWidth: 1,
+                      borderTopColor: theme.border,
+                      borderBottomWidth: i === arr.length - 1 ? 1 : 0,
+                      borderBottomColor: theme.border,
+                      backgroundColor: selected ? theme.surface : "transparent",
+                      marginHorizontal: -12,
                       flexDirection: "row",
                       alignItems: "baseline",
-                      gap: 8,
+                      justifyContent: "space-between",
                     }}
                   >
-                    <Text
+                    <View
                       style={{
-                        fontFamily: fonts.serif,
-                        fontSize: 32,
-                        color: selected ? theme.accent : theme.text,
-                        fontWeight: "400",
+                        flexDirection: "row",
+                        alignItems: "baseline",
+                        gap: 8,
                       }}
                     >
-                      {g.min}
+                      <Text
+                        style={{
+                          fontFamily: fonts.serif,
+                          fontSize: 32,
+                          color: selected ? theme.accent : theme.text,
+                          fontWeight: "400",
+                        }}
+                      >
+                        {g.min}
+                      </Text>
+                      <Text style={[type.body, { color: theme.textMuted }]}>
+                        minutes
+                      </Text>
+                    </View>
+                    <Text
+                      style={[
+                        type.labelSm,
+                        { color: selected ? theme.accent : theme.textMuted },
+                      ]}
+                    >
+                      {g.label}
                     </Text>
-                    <Text style={[type.body, { color: theme.textMuted }]}>
-                      minutes
-                    </Text>
-                  </View>
-                  <Text
-                    style={[
-                      type.labelSm,
-                      { color: selected ? theme.accent : theme.textMuted },
-                    ]}
-                  >
-                    {g.label}
-                  </Text>
-                </Pressable>
+                  </Pressable>
+                </Enter>
               )
             })}
           </View>

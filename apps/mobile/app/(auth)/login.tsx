@@ -16,12 +16,15 @@ import { useTheme } from "@/theme/ThemeProvider"
 import { type } from "@/theme/typography"
 import { auth } from "@/api/endpoints"
 import { useAuthStore } from "@/store/auth"
+import { useOnboardingStore } from "@/store/onboarding"
+import { motifChar } from "@/lib/languages"
 import { saveTokens } from "@/utils/secure"
 
 export default function Login() {
   const { theme } = useTheme()
   const router = useRouter()
   const setAuth = useAuthStore((s) => s.setAuth)
+  const language = useOnboardingStore((s) => s.language)
   const insets = useSafeAreaInsets()
 
   const [email, setEmail] = useState("")
@@ -78,7 +81,7 @@ export default function Login() {
                   Continue where you left off.
                 </Text>
               </View>
-              <Motif char="进" size={64} />
+              <Motif char={motifChar(language)} size={64} />
             </View>
 
             <View style={{ height: 1, backgroundColor: theme.border }} />

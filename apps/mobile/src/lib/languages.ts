@@ -123,6 +123,22 @@ export function reading(w: {
   return w.pinyin ?? w.pronunciation?.[0] ?? ""
 }
 
+/** Per-language seal glyph + cover sub-line (neutral across zh/de/en/ja). */
+export const MOTIF: Record<LanguageCode, { char: string; sub: string }> = {
+  zh: { char: "你", sub: "nǐ · you" },
+  de: { char: "Ä", sub: "Ä · ä" },
+  en: { char: "A", sub: "A · a" },
+  ja: { char: "あ", sub: "あ · a" },
+}
+
+export function motifChar(lang: LanguageCode): string {
+  return MOTIF[lang].char
+}
+
+export function motifSub(lang: LanguageCode): string {
+  return MOTIF[lang].sub
+}
+
 // ─── Exam metadata (mirrors media data/json/exam-*.json) ────────────────────
 
 /** Display names: media `exam-display-names.json`. */

@@ -1,10 +1,12 @@
-import { Text, View } from "react-native"
+import { Text } from "react-native"
+import Animated, { ZoomIn, useReducedMotion } from "react-native-reanimated"
 import { useTheme } from "@/theme/ThemeProvider"
 import { fonts } from "@/theme/typography"
 
 /**
  * Editorial motif — a single akzent element placed beside key content.
- * Resembles a Chinese chop seal: a small framed square with one Hanzi.
+ * Resembles a chop seal: a small framed square with one glyph.
+ * Entering zoom honors system reduce-motion.
  */
 export function Motif({
   char = "章",
@@ -14,9 +16,11 @@ export function Motif({
   size?: number
 }) {
   const { theme } = useTheme()
+  const reduce = useReducedMotion()
 
   return (
-    <View
+    <Animated.View
+      entering={reduce ? undefined : ZoomIn.duration(240)}
       style={{
         width: size,
         height: size,
@@ -39,6 +43,6 @@ export function Motif({
       >
         {char}
       </Text>
-    </View>
+    </Animated.View>
   )
 }
