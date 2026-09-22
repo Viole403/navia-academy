@@ -381096,14 +381096,6 @@
     "gender": "female"
   },
   {
-    "key": "vocab:tocfl-l1-de:ex1",
-    "text": "」。",
-    "locale": "zh-TW",
-    "language": "zh",
-    "examSource": "tocfl",
-    "gender": "female"
-  },
-  {
     "key": "vocab:tocfl-l1-deng",
     "text": "燈",
     "locale": "zh-TW",
@@ -381138,14 +381130,6 @@
   {
     "key": "vocab:tocfl-l1-di:ex0",
     "text": "他高興地說：「我的生日快到了。",
-    "locale": "zh-TW",
-    "language": "zh",
-    "examSource": "tocfl",
-    "gender": "male"
-  },
-  {
-    "key": "vocab:tocfl-l1-di:ex1",
-    "text": "」。",
     "locale": "zh-TW",
     "language": "zh",
     "examSource": "tocfl",
@@ -385496,14 +385480,6 @@
     "gender": "male"
   },
   {
-    "key": "vocab:tocfl-l1-siji:ex1",
-    "text": ";。",
-    "locale": "zh-TW",
-    "language": "zh",
-    "examSource": "tocfl",
-    "gender": "male"
-  },
-  {
     "key": "vocab:tocfl-l1-song",
     "text": "送",
     "locale": "zh-TW",
@@ -386418,14 +386394,6 @@
   {
     "key": "vocab:tocfl-l1-xiao:ex0",
     "text": "他笑著說：「這個故事真有意思。",
-    "locale": "zh-TW",
-    "language": "zh",
-    "examSource": "tocfl",
-    "gender": "female"
-  },
-  {
-    "key": "vocab:tocfl-l1-xiao:ex1",
-    "text": "」。",
     "locale": "zh-TW",
     "language": "zh",
     "examSource": "tocfl",
@@ -388818,14 +388786,6 @@
   {
     "key": "vocab:tocfl-l2-budan:ex0",
     "text": "他不但會說英文，還會說德文。",
-    "locale": "zh-TW",
-    "language": "zh",
-    "examSource": "tocfl",
-    "gender": "female"
-  },
-  {
-    "key": "vocab:tocfl-l2-budan:ex1",
-    "text": ";;。",
     "locale": "zh-TW",
     "language": "zh",
     "examSource": "tocfl",
@@ -560640,14 +560600,6 @@
     "gender": "female"
   },
   {
-    "key": "vocab:tocfl-n1-gonggongqiche:ex1",
-    "text": ";;;。",
-    "locale": "zh-TW",
-    "language": "zh",
-    "examSource": "tocfl",
-    "gender": "female"
-  },
-  {
     "key": "vocab:tocfl-n1-gui",
     "text": "貴",
     "locale": "zh-TW",
@@ -565002,14 +564954,6 @@
   {
     "key": "vocab:tocfl-n2-erzi:ex0",
     "text": "他有一個十歲的兒子。",
-    "locale": "zh-TW",
-    "language": "zh",
-    "examSource": "tocfl",
-    "gender": "female"
-  },
-  {
-    "key": "vocab:tocfl-n2-erzi:ex1",
-    "text": ";。",
     "locale": "zh-TW",
     "language": "zh",
     "examSource": "tocfl",
@@ -582656,68 +582600,68 @@
     "gender": "male"
   },
   {
-    "key": "reading:r-wo-de-fangjian:p0",
+    "key": "reading:r-wo-de-fangjian-2:p0",
     "text": "我的房间不大,但是很舒服。",
     "locale": "zh-CN",
     "language": "zh",
     "examSource": "hsk",
-    "gender": "male"
+    "gender": "female"
   },
   {
-    "key": "reading:r-wo-de-fangjian:p1",
+    "key": "reading:r-wo-de-fangjian-2:p1",
     "text": "床在窗户旁边。",
     "locale": "zh-CN",
     "language": "zh",
     "examSource": "hsk",
-    "gender": "male"
+    "gender": "female"
   },
   {
-    "key": "reading:r-wo-de-fangjian:p2",
+    "key": "reading:r-wo-de-fangjian-2:p2",
     "text": "早上阳光很好。",
     "locale": "zh-CN",
     "language": "zh",
     "examSource": "hsk",
-    "gender": "male"
+    "gender": "female"
   },
   {
-    "key": "reading:r-wo-de-fangjian:p3",
+    "key": "reading:r-wo-de-fangjian-2:p3",
     "text": "书桌上有一台电脑。",
     "locale": "zh-CN",
     "language": "zh",
     "examSource": "hsk",
-    "gender": "male"
+    "gender": "female"
   },
   {
-    "key": "reading:r-wo-de-fangjian:p4",
+    "key": "reading:r-wo-de-fangjian-2:p4",
     "text": "我常常在这里做作业。",
     "locale": "zh-CN",
     "language": "zh",
     "examSource": "hsk",
-    "gender": "male"
+    "gender": "female"
   },
   {
-    "key": "reading:r-wo-de-fangjian:p5",
+    "key": "reading:r-wo-de-fangjian-2:p5",
     "text": "墙上有几张照片。",
     "locale": "zh-CN",
     "language": "zh",
     "examSource": "hsk",
-    "gender": "male"
+    "gender": "female"
   },
   {
-    "key": "reading:r-wo-de-fangjian:p6",
+    "key": "reading:r-wo-de-fangjian-2:p6",
     "text": "都是我的家人和朋友。",
     "locale": "zh-CN",
     "language": "zh",
     "examSource": "hsk",
-    "gender": "male"
+    "gender": "female"
   },
   {
-    "key": "reading:r-wo-de-fangjian:p7",
+    "key": "reading:r-wo-de-fangjian-2:p7",
     "text": "我很喜欢我的房间。",
     "locale": "zh-CN",
     "language": "zh",
     "examSource": "hsk",
-    "gender": "male"
+    "gender": "female"
   },
   {
     "key": "reading:r-xue-zuo-fan:p0",
@@ -583352,7 +583296,7 @@
     "gender": "male"
   },
   {
-    "key": "reading:r-wen-lu:p0",
+    "key": "reading:r-wen-lu-2:p0",
     "text": "请问,地铁站在哪里?",
     "locale": "zh-CN",
     "language": "zh",
@@ -583360,7 +583304,7 @@
     "gender": "male"
   },
   {
-    "key": "reading:r-wen-lu:p1",
+    "key": "reading:r-wen-lu-2:p1",
     "text": "地铁站在前面。",
     "locale": "zh-CN",
     "language": "zh",
@@ -583368,7 +583312,7 @@
     "gender": "male"
   },
   {
-    "key": "reading:r-wen-lu:p2",
+    "key": "reading:r-wen-lu-2:p2",
     "text": "一直往前走五分钟。",
     "locale": "zh-CN",
     "language": "zh",
@@ -583376,7 +583320,7 @@
     "gender": "male"
   },
   {
-    "key": "reading:r-wen-lu:p3",
+    "key": "reading:r-wen-lu-2:p3",
     "text": "然后向右转。",
     "locale": "zh-CN",
     "language": "zh",
@@ -583384,7 +583328,7 @@
     "gender": "male"
   },
   {
-    "key": "reading:r-wen-lu:p4",
+    "key": "reading:r-wen-lu-2:p4",
     "text": "你就会看到。",
     "locale": "zh-CN",
     "language": "zh",
@@ -583392,7 +583336,7 @@
     "gender": "male"
   },
   {
-    "key": "reading:r-wen-lu:p5",
+    "key": "reading:r-wen-lu-2:p5",
     "text": "谢谢你。",
     "locale": "zh-CN",
     "language": "zh",
@@ -583400,7 +583344,7 @@
     "gender": "male"
   },
   {
-    "key": "reading:r-wen-lu:p6",
+    "key": "reading:r-wen-lu-2:p6",
     "text": "不客气。",
     "locale": "zh-CN",
     "language": "zh",
@@ -583408,7 +583352,7 @@
     "gender": "male"
   },
   {
-    "key": "reading:r-wen-lu:p7",
+    "key": "reading:r-wen-lu-2:p7",
     "text": "请问,从这里到机场远不远?",
     "locale": "zh-CN",
     "language": "zh",
@@ -583416,7 +583360,7 @@
     "gender": "male"
   },
   {
-    "key": "reading:r-wen-lu:p8",
+    "key": "reading:r-wen-lu-2:p8",
     "text": "不太远,坐公交车三十分钟。",
     "locale": "zh-CN",
     "language": "zh",
@@ -585056,7 +585000,7 @@
     "gender": "male"
   },
   {
-    "key": "reading:r-wangshang-gouwu:p0",
+    "key": "reading:r-wangshang-gouwu-2:p0",
     "text": "最近我经常在网上买东西。",
     "locale": "zh-CN",
     "language": "zh",
@@ -585064,7 +585008,7 @@
     "gender": "female"
   },
   {
-    "key": "reading:r-wangshang-gouwu:p1",
+    "key": "reading:r-wangshang-gouwu-2:p1",
     "text": "网购方便又便宜。",
     "locale": "zh-CN",
     "language": "zh",
@@ -585072,7 +585016,7 @@
     "gender": "female"
   },
   {
-    "key": "reading:r-wangshang-gouwu:p2",
+    "key": "reading:r-wangshang-gouwu-2:p2",
     "text": "我只需要用手机就可以下单。",
     "locale": "zh-CN",
     "language": "zh",
@@ -585080,7 +585024,7 @@
     "gender": "female"
   },
   {
-    "key": "reading:r-wangshang-gouwu:p3",
+    "key": "reading:r-wangshang-gouwu-2:p3",
     "text": "送货速度也越来越快。",
     "locale": "zh-CN",
     "language": "zh",
@@ -585088,7 +585032,7 @@
     "gender": "female"
   },
   {
-    "key": "reading:r-wangshang-gouwu:p4",
+    "key": "reading:r-wangshang-gouwu-2:p4",
     "text": "有时候第二天就到了。",
     "locale": "zh-CN",
     "language": "zh",
@@ -585096,7 +585040,7 @@
     "gender": "female"
   },
   {
-    "key": "reading:r-wangshang-gouwu:p5",
+    "key": "reading:r-wangshang-gouwu-2:p5",
     "text": "不过,有些东西网上的和实际不一样。",
     "locale": "zh-CN",
     "language": "zh",
@@ -585104,7 +585048,7 @@
     "gender": "female"
   },
   {
-    "key": "reading:r-wangshang-gouwu:p6",
+    "key": "reading:r-wangshang-gouwu-2:p6",
     "text": "颜色可能不同。",
     "locale": "zh-CN",
     "language": "zh",
@@ -585112,7 +585056,7 @@
     "gender": "female"
   },
   {
-    "key": "reading:r-wangshang-gouwu:p7",
+    "key": "reading:r-wangshang-gouwu-2:p7",
     "text": "大小也可能不合适。",
     "locale": "zh-CN",
     "language": "zh",
@@ -585120,7 +585064,7 @@
     "gender": "female"
   },
   {
-    "key": "reading:r-wangshang-gouwu:p8",
+    "key": "reading:r-wangshang-gouwu-2:p8",
     "text": "如果不满意,还可以退货。",
     "locale": "zh-CN",
     "language": "zh",
@@ -585128,7 +585072,7 @@
     "gender": "female"
   },
   {
-    "key": "reading:r-wangshang-gouwu:p9",
+    "key": "reading:r-wangshang-gouwu-2:p9",
     "text": "我上个月退了一件衣服。",
     "locale": "zh-CN",
     "language": "zh",
@@ -585136,7 +585080,7 @@
     "gender": "female"
   },
   {
-    "key": "reading:r-wangshang-gouwu:p10",
+    "key": "reading:r-wangshang-gouwu-2:p10",
     "text": "过程很简单。",
     "locale": "zh-CN",
     "language": "zh",
@@ -585144,7 +585088,7 @@
     "gender": "female"
   },
   {
-    "key": "reading:r-wangshang-gouwu:p11",
+    "key": "reading:r-wangshang-gouwu-2:p11",
     "text": "我觉得网购改变了我们的生活。",
     "locale": "zh-CN",
     "language": "zh",
@@ -585640,204 +585584,204 @@
     "gender": "female"
   },
   {
-    "key": "reading:r-wo-de-mengxiang:p0",
+    "key": "reading:r-wo-de-mengxiang-2:p0",
     "text": "我小时候有很多梦想。",
     "locale": "zh-CN",
     "language": "zh",
     "examSource": "hsk",
-    "gender": "female"
+    "gender": "male"
   },
   {
-    "key": "reading:r-wo-de-mengxiang:p1",
+    "key": "reading:r-wo-de-mengxiang-2:p1",
     "text": "我想当医生,也想当老师。",
     "locale": "zh-CN",
     "language": "zh",
     "examSource": "hsk",
-    "gender": "female"
+    "gender": "male"
   },
   {
-    "key": "reading:r-wo-de-mengxiang:p2",
+    "key": "reading:r-wo-de-mengxiang-2:p2",
     "text": "长大了以后,我的梦想变了。",
     "locale": "zh-CN",
     "language": "zh",
     "examSource": "hsk",
-    "gender": "female"
+    "gender": "male"
   },
   {
-    "key": "reading:r-wo-de-mengxiang:p3",
+    "key": "reading:r-wo-de-mengxiang-2:p3",
     "text": "现在我想开一家小咖啡店。",
     "locale": "zh-CN",
     "language": "zh",
     "examSource": "hsk",
-    "gender": "female"
+    "gender": "male"
   },
   {
-    "key": "reading:r-wo-de-mengxiang:p4",
+    "key": "reading:r-wo-de-mengxiang-2:p4",
     "text": "一个安静又舒服的地方。",
     "locale": "zh-CN",
     "language": "zh",
     "examSource": "hsk",
-    "gender": "female"
+    "gender": "male"
   },
   {
-    "key": "reading:r-wo-de-mengxiang:p5",
+    "key": "reading:r-wo-de-mengxiang-2:p5",
     "text": "客人可以在那里看书、聊天。",
     "locale": "zh-CN",
     "language": "zh",
     "examSource": "hsk",
-    "gender": "female"
+    "gender": "male"
   },
   {
-    "key": "reading:r-wo-de-mengxiang:p6",
+    "key": "reading:r-wo-de-mengxiang-2:p6",
     "text": "我想自己做咖啡和蛋糕。",
     "locale": "zh-CN",
     "language": "zh",
     "examSource": "hsk",
-    "gender": "female"
+    "gender": "male"
   },
   {
-    "key": "reading:r-wo-de-mengxiang:p7",
+    "key": "reading:r-wo-de-mengxiang-2:p7",
     "text": "我知道这不容易。",
     "locale": "zh-CN",
     "language": "zh",
     "examSource": "hsk",
-    "gender": "female"
+    "gender": "male"
   },
   {
-    "key": "reading:r-wo-de-mengxiang:p8",
+    "key": "reading:r-wo-de-mengxiang-2:p8",
     "text": "我需要学很多东西。",
     "locale": "zh-CN",
     "language": "zh",
     "examSource": "hsk",
-    "gender": "female"
+    "gender": "male"
   },
   {
-    "key": "reading:r-wo-de-mengxiang:p9",
+    "key": "reading:r-wo-de-mengxiang-2:p9",
     "text": "也需要很多钱。",
     "locale": "zh-CN",
     "language": "zh",
     "examSource": "hsk",
-    "gender": "female"
+    "gender": "male"
   },
   {
-    "key": "reading:r-wo-de-mengxiang:p10",
+    "key": "reading:r-wo-de-mengxiang-2:p10",
     "text": "所以我现在努力工作,努力存钱。",
     "locale": "zh-CN",
     "language": "zh",
     "examSource": "hsk",
-    "gender": "female"
+    "gender": "male"
   },
   {
-    "key": "reading:r-wo-de-mengxiang:p11",
+    "key": "reading:r-wo-de-mengxiang-2:p11",
     "text": "我相信总有一天我能实现这个梦想。",
     "locale": "zh-CN",
     "language": "zh",
     "examSource": "hsk",
-    "gender": "female"
+    "gender": "male"
   },
   {
-    "key": "reading:r-chunjie-hui-jia:p0",
+    "key": "reading:r-chunjie-hui-jia-2:p0",
     "text": "春节是中国最重要的节日。",
     "locale": "zh-CN",
     "language": "zh",
     "examSource": "hsk",
-    "gender": "male"
+    "gender": "female"
   },
   {
-    "key": "reading:r-chunjie-hui-jia:p1",
+    "key": "reading:r-chunjie-hui-jia-2:p1",
     "text": "每年春节,我都回老家。",
     "locale": "zh-CN",
     "language": "zh",
     "examSource": "hsk",
-    "gender": "male"
+    "gender": "female"
   },
   {
-    "key": "reading:r-chunjie-hui-jia:p2",
+    "key": "reading:r-chunjie-hui-jia-2:p2",
     "text": "我的家在南方的一个小城市。",
     "locale": "zh-CN",
     "language": "zh",
     "examSource": "hsk",
-    "gender": "male"
+    "gender": "female"
   },
   {
-    "key": "reading:r-chunjie-hui-jia:p3",
+    "key": "reading:r-chunjie-hui-jia-2:p3",
     "text": "坐火车要十几个小时。",
     "locale": "zh-CN",
     "language": "zh",
     "examSource": "hsk",
-    "gender": "male"
+    "gender": "female"
   },
   {
-    "key": "reading:r-chunjie-hui-jia:p4",
+    "key": "reading:r-chunjie-hui-jia-2:p4",
     "text": "火车票很难买。",
     "locale": "zh-CN",
     "language": "zh",
     "examSource": "hsk",
-    "gender": "male"
+    "gender": "female"
   },
   {
-    "key": "reading:r-chunjie-hui-jia:p5",
+    "key": "reading:r-chunjie-hui-jia-2:p5",
     "text": "但是我一定要回家。",
     "locale": "zh-CN",
     "language": "zh",
     "examSource": "hsk",
-    "gender": "male"
+    "gender": "female"
   },
   {
-    "key": "reading:r-chunjie-hui-jia:p6",
+    "key": "reading:r-chunjie-hui-jia-2:p6",
     "text": "除夕晚上,全家人一起吃饭。",
     "locale": "zh-CN",
     "language": "zh",
     "examSource": "hsk",
-    "gender": "male"
+    "gender": "female"
   },
   {
-    "key": "reading:r-chunjie-hui-jia:p7",
+    "key": "reading:r-chunjie-hui-jia-2:p7",
     "text": "妈妈准备了很多好吃的。",
     "locale": "zh-CN",
     "language": "zh",
     "examSource": "hsk",
-    "gender": "male"
+    "gender": "female"
   },
   {
-    "key": "reading:r-chunjie-hui-jia:p8",
+    "key": "reading:r-chunjie-hui-jia-2:p8",
     "text": "我们一边吃饭,一边看电视。",
     "locale": "zh-CN",
     "language": "zh",
     "examSource": "hsk",
-    "gender": "male"
+    "gender": "female"
   },
   {
-    "key": "reading:r-chunjie-hui-jia:p9",
+    "key": "reading:r-chunjie-hui-jia-2:p9",
     "text": "十二点的时候,外面开始放烟花。",
     "locale": "zh-CN",
     "language": "zh",
     "examSource": "hsk",
-    "gender": "male"
+    "gender": "female"
   },
   {
-    "key": "reading:r-chunjie-hui-jia:p10",
+    "key": "reading:r-chunjie-hui-jia-2:p10",
     "text": "我给爷爷奶奶拜年。",
     "locale": "zh-CN",
     "language": "zh",
     "examSource": "hsk",
-    "gender": "male"
+    "gender": "female"
   },
   {
-    "key": "reading:r-chunjie-hui-jia:p11",
+    "key": "reading:r-chunjie-hui-jia-2:p11",
     "text": "他们给我红包。",
     "locale": "zh-CN",
     "language": "zh",
     "examSource": "hsk",
-    "gender": "male"
+    "gender": "female"
   },
   {
-    "key": "reading:r-chunjie-hui-jia:p12",
+    "key": "reading:r-chunjie-hui-jia-2:p12",
     "text": "和家人一起过年,我觉得最幸福。",
     "locale": "zh-CN",
     "language": "zh",
     "examSource": "hsk",
-    "gender": "male"
+    "gender": "female"
   },
   {
     "key": "reading:r-hsk-hsk4-yanjiu:p0",
@@ -586112,7 +586056,7 @@
     "gender": "female"
   },
   {
-    "key": "reading:r-wangshang-gouwu:p0",
+    "key": "reading:r-wangshang-gouwu-3:p0",
     "text": "现在,越来越多的人喜欢在网上购物。",
     "locale": "zh-CN",
     "language": "zh",
@@ -586120,7 +586064,7 @@
     "gender": "female"
   },
   {
-    "key": "reading:r-wangshang-gouwu:p1",
+    "key": "reading:r-wangshang-gouwu-3:p1",
     "text": "无论是衣服、食品还是电子产品,几乎都能在网上买到。",
     "locale": "zh-CN",
     "language": "zh",
@@ -586128,7 +586072,7 @@
     "gender": "female"
   },
   {
-    "key": "reading:r-wangshang-gouwu:p2",
+    "key": "reading:r-wangshang-gouwu-3:p2",
     "text": "网购的优点很明显:方便、快速,还可以比较价格。",
     "locale": "zh-CN",
     "language": "zh",
@@ -586136,7 +586080,7 @@
     "gender": "female"
   },
   {
-    "key": "reading:r-wangshang-gouwu:p3",
+    "key": "reading:r-wangshang-gouwu-3:p3",
     "text": "不过它也有一些问题。",
     "locale": "zh-CN",
     "language": "zh",
@@ -586144,7 +586088,7 @@
     "gender": "female"
   },
   {
-    "key": "reading:r-wangshang-gouwu:p4",
+    "key": "reading:r-wangshang-gouwu-3:p4",
     "text": "有时候,实物和图片不一样。",
     "locale": "zh-CN",
     "language": "zh",
@@ -586152,7 +586096,7 @@
     "gender": "female"
   },
   {
-    "key": "reading:r-wangshang-gouwu:p5",
+    "key": "reading:r-wangshang-gouwu-3:p5",
     "text": "退货也很麻烦,要打包再寄回去。",
     "locale": "zh-CN",
     "language": "zh",
@@ -586160,7 +586104,7 @@
     "gender": "female"
   },
   {
-    "key": "reading:r-wangshang-gouwu:p6",
+    "key": "reading:r-wangshang-gouwu-3:p6",
     "text": "即便如此,我仍然觉得方便大于不便。",
     "locale": "zh-CN",
     "language": "zh",
@@ -586168,7 +586112,7 @@
     "gender": "female"
   },
   {
-    "key": "reading:r-wangshang-gouwu:p7",
+    "key": "reading:r-wangshang-gouwu-3:p7",
     "text": "我记得第一次网购是十年前。",
     "locale": "zh-CN",
     "language": "zh",
@@ -586176,7 +586120,7 @@
     "gender": "female"
   },
   {
-    "key": "reading:r-wangshang-gouwu:p8",
+    "key": "reading:r-wangshang-gouwu-3:p8",
     "text": "那时候付款要去银行,快递也要等一个星期。",
     "locale": "zh-CN",
     "language": "zh",
@@ -586184,7 +586128,7 @@
     "gender": "female"
   },
   {
-    "key": "reading:r-wangshang-gouwu:p9",
+    "key": "reading:r-wangshang-gouwu-3:p9",
     "text": "现在付款只要刷一下脸,第二天东西就到了。",
     "locale": "zh-CN",
     "language": "zh",
@@ -586192,7 +586136,7 @@
     "gender": "female"
   },
   {
-    "key": "reading:r-wangshang-gouwu:p10",
+    "key": "reading:r-wangshang-gouwu-3:p10",
     "text": "双十一更是变成了全民的购物节。",
     "locale": "zh-CN",
     "language": "zh",
@@ -586200,7 +586144,7 @@
     "gender": "female"
   },
   {
-    "key": "reading:r-wangshang-gouwu:p11",
+    "key": "reading:r-wangshang-gouwu-3:p11",
     "text": "那一天,很多人熬夜等着零点下单。",
     "locale": "zh-CN",
     "language": "zh",
@@ -586208,7 +586152,7 @@
     "gender": "female"
   },
   {
-    "key": "reading:r-wangshang-gouwu:p12",
+    "key": "reading:r-wangshang-gouwu-3:p12",
     "text": "商家提前一个月就开始做广告。",
     "locale": "zh-CN",
     "language": "zh",
@@ -586216,7 +586160,7 @@
     "gender": "female"
   },
   {
-    "key": "reading:r-wangshang-gouwu:p13",
+    "key": "reading:r-wangshang-gouwu-3:p13",
     "text": "不过这几年我慢慢学会了少买一些。",
     "locale": "zh-CN",
     "language": "zh",
@@ -586224,7 +586168,7 @@
     "gender": "female"
   },
   {
-    "key": "reading:r-wangshang-gouwu:p14",
+    "key": "reading:r-wangshang-gouwu-3:p14",
     "text": "便宜的东西买回来不用,也是浪费。",
     "locale": "zh-CN",
     "language": "zh",
@@ -587288,7 +587232,7 @@
     "gender": "female"
   },
   {
-    "key": "reading:r-zhongqiu-jie:p0",
+    "key": "reading:r-zhongqiu-jie-2:p0",
     "text": "农历八月十五是中秋节,是中国人很重视的节日。",
     "locale": "zh-CN",
     "language": "zh",
@@ -587296,7 +587240,7 @@
     "gender": "female"
   },
   {
-    "key": "reading:r-zhongqiu-jie:p1",
+    "key": "reading:r-zhongqiu-jie-2:p1",
     "text": "这一天的月亮最圆,也最亮。",
     "locale": "zh-CN",
     "language": "zh",
@@ -587304,7 +587248,7 @@
     "gender": "female"
   },
   {
-    "key": "reading:r-zhongqiu-jie:p2",
+    "key": "reading:r-zhongqiu-jie-2:p2",
     "text": "中秋节最重要的事情,就是一家人团圆。",
     "locale": "zh-CN",
     "language": "zh",
@@ -587312,7 +587256,7 @@
     "gender": "female"
   },
   {
-    "key": "reading:r-zhongqiu-jie:p3",
+    "key": "reading:r-zhongqiu-jie-2:p3",
     "text": "不管走得多远,很多人都会想办法回家。",
     "locale": "zh-CN",
     "language": "zh",
@@ -587320,7 +587264,7 @@
     "gender": "female"
   },
   {
-    "key": "reading:r-zhongqiu-jie:p4",
+    "key": "reading:r-zhongqiu-jie-2:p4",
     "text": "晚饭以后,大家把桌子搬到院子里或者阳台上。",
     "locale": "zh-CN",
     "language": "zh",
@@ -587328,7 +587272,7 @@
     "gender": "female"
   },
   {
-    "key": "reading:r-zhongqiu-jie:p5",
+    "key": "reading:r-zhongqiu-jie-2:p5",
     "text": "桌上放着月饼、水果和热茶。",
     "locale": "zh-CN",
     "language": "zh",
@@ -587336,7 +587280,7 @@
     "gender": "female"
   },
   {
-    "key": "reading:r-zhongqiu-jie:p6",
+    "key": "reading:r-zhongqiu-jie-2:p6",
     "text": "月饼的味道很多,有豆沙的,有莲蓉的,还有咸蛋黄的。",
     "locale": "zh-CN",
     "language": "zh",
@@ -587344,7 +587288,7 @@
     "gender": "female"
   },
   {
-    "key": "reading:r-zhongqiu-jie:p7",
+    "key": "reading:r-zhongqiu-jie-2:p7",
     "text": "现在还出现了冰淇淋月饼和巧克力月饼。",
     "locale": "zh-CN",
     "language": "zh",
@@ -587352,7 +587296,7 @@
     "gender": "female"
   },
   {
-    "key": "reading:r-zhongqiu-jie:p8",
+    "key": "reading:r-zhongqiu-jie-2:p8",
     "text": "老人常常一边看月亮,一边讲嫦娥的故事。",
     "locale": "zh-CN",
     "language": "zh",
@@ -587360,7 +587304,7 @@
     "gender": "female"
   },
   {
-    "key": "reading:r-zhongqiu-jie:p9",
+    "key": "reading:r-zhongqiu-jie-2:p9",
     "text": "传说嫦娥吃了长生不老药,飞到了月亮上。",
     "locale": "zh-CN",
     "language": "zh",
@@ -587368,7 +587312,7 @@
     "gender": "female"
   },
   {
-    "key": "reading:r-zhongqiu-jie:p10",
+    "key": "reading:r-zhongqiu-jie-2:p10",
     "text": "从此她就住在广寒宫里,再也回不来了。",
     "locale": "zh-CN",
     "language": "zh",
@@ -587376,7 +587320,7 @@
     "gender": "female"
   },
   {
-    "key": "reading:r-zhongqiu-jie:p11",
+    "key": "reading:r-zhongqiu-jie-2:p11",
     "text": "所以中秋的月亮里,总有一点点寂寞。",
     "locale": "zh-CN",
     "language": "zh",
@@ -587384,7 +587328,7 @@
     "gender": "female"
   },
   {
-    "key": "reading:r-zhongqiu-jie:p12",
+    "key": "reading:r-zhongqiu-jie-2:p12",
     "text": "如果那天你在外地,也不要难过。",
     "locale": "zh-CN",
     "language": "zh",
@@ -587392,7 +587336,7 @@
     "gender": "female"
   },
   {
-    "key": "reading:r-zhongqiu-jie:p13",
+    "key": "reading:r-zhongqiu-jie-2:p13",
     "text": "因为你和家人看到的,是同一个月亮。",
     "locale": "zh-CN",
     "language": "zh",

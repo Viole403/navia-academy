@@ -441,8 +441,24 @@ async function collectCurriculum(lang: string): Promise<ManifestEntry[]> {
 }
 
 const seen = new Set<string>()
+const seenKeyText = new Map<string, string>()
+/** Punctuation/symbol/space-only strings have nothing speakable — no TTS
+ *  engine can voice them, so they never enter the manifest. */
+function hasSpeakableText(text: string): boolean {
+  return /[\p{L}\p{N}]/u.test(text)
+}
 function dedupe(entries: ManifestEntry[]): ManifestEntry[] {
   return entries.filter((e) => {
+    if (!hasSpeakableText(e.text)) return false
+    const prev = seenKeyText.get(e.key)
+    if (prev !== undefined && prev !== e.text) {
+      console.error(
+        `  ! key collision: ${e.key} has two texts — ` +
+          `keeping first, ids must be unique (${e.text.slice(0, 40)})`
+      )
+      return false
+    }
+    seenKeyText.set(e.key, e.text)
     const k = `${e.key}::${e.text}::${e.language}`
     if (seen.has(k)) return false
     seen.add(k)
