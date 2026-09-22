@@ -243,3 +243,170 @@ export interface Sponsor {
   description?: string
   started_at: string
 }
+
+// ─── Content bundles (mirrors media data/json/<lang>/<group>/index) ─────────
+// ponytail: index-signature fields ([key: string]: unknown) accept media
+// extras without breaking tsc; tighten when bundles get a JSON schema.
+export interface GrammarExample {
+  hanzi?: string
+  text?: string
+  pinyin?: string
+  romanization?: string
+  translation?: string
+  [key: string]: unknown
+}
+
+export interface GrammarPoint {
+  id: string
+  title: string
+  pattern?: string
+  level?: string
+  hsk?: number
+  difficulty?: string
+  simpleExplanation?: string
+  examples?: GrammarExample[]
+  [key: string]: unknown
+}
+
+export interface ReadingParagraph {
+  hanzi?: string
+  text?: string
+  pinyin?: string
+  romanization?: string
+  zhuyin?: string
+  translation?: string
+  [key: string]: unknown
+}
+
+export interface Reading {
+  id: string
+  title: string
+  type?: string
+  hsk?: number
+  level?: string
+  wordCount?: number
+  summary?: string
+  paragraphs?: ReadingParagraph[]
+  [key: string]: unknown
+}
+
+export interface DialogueTurn {
+  speaker?: string
+  hanzi?: string
+  text?: string
+  pinyin?: string
+  romanization?: string
+  zhuyin?: string
+  translation?: string
+  [key: string]: unknown
+}
+
+export interface ConversationScenario {
+  id: string
+  title: string
+  context?: string
+  hsk?: number
+  level?: string
+  formality?: string
+  turns?: DialogueTurn[]
+  [key: string]: unknown
+}
+
+export interface HanziChar {
+  id: string
+  char?: string
+  hanzi?: string
+  pinyin?: string
+  tone?: number
+  meaning?: string
+  strokes?: number
+  radical?: string
+  [key: string]: unknown
+}
+
+export interface Course {
+  id: string
+  language?: string
+  title: string
+  description?: string
+  levelIds?: string[]
+  status?: string
+  [key: string]: unknown
+}
+
+export interface CurriculumBundle {
+  course?: Course
+  levels?: unknown[]
+  units?: unknown[]
+  lessons?: unknown[]
+  [key: string]: unknown
+}
+
+export interface PlacementOption {
+  id: string
+  label: string
+}
+
+export interface PlacementItem {
+  id: string
+  band: number
+  type: string
+  prompt: string
+  options: PlacementOption[]
+  correct: string
+  skill?: string
+  hsk?: number
+  [key: string]: unknown
+}
+
+export type PlacementSkill =
+  "listening" | "reading" | "grammar" | "vocabulary" | "speaking" | "writing"
+
+export interface PlacementResult {
+  estimatedBand: number
+  estimatedHsk?: number
+  confidence: "low" | "medium" | "high"
+  strengths: string[]
+  weaknesses: string[]
+  correctCount: number
+  totalCount: number
+}
+
+// ─── CAT (backend elo-v1, exam_handler.go + models/exam.go) ─────────────────
+export interface CatAnswer {
+  item_id: string
+  item_elo?: number
+  correct: boolean
+  format?: string
+}
+
+export interface CatResult {
+  id: number
+  user_id: string
+  exam_type: string
+  exam_level?: string
+  elo_estimate: number
+  elo_sd?: number
+  cefr_band?: string
+  total_questions?: number
+  correct_answers?: number
+  time_taken?: number
+  answers?: CatAnswer[]
+  engine_version?: string
+  integrity_flag?: boolean
+  created_at: string
+}
+
+export interface CatSession {
+  id: number
+  user_id: string
+  exam_type: string
+  status: string
+  start_theta?: number
+  engine_version?: string
+  answers?: CatAnswer[]
+  elapsed_sec?: number
+  time_remaining_sec?: number
+  time_limit_sec?: number
+  started_at: string
+}

@@ -1,6 +1,9 @@
 import apiClient from "./client"
 import type {
   Achievement,
+  CatAnswer,
+  CatResult,
+  CatSession,
   Contributor,
   ExamProgress,
   ExamResult,
@@ -147,6 +150,36 @@ export const exam = {
     unwrapDirect<ExamSession>(
       apiClient.put("/exam/sessions?action=abandon", { session_id })
     ),
+}
+
+// ─── CAT (adaptive engine elo-v1, exam_handler.go) ────────────────────────
+export const cat = {
+  submitResult: (body: {
+    exam_type: string
+    elo_estimate: number
+    exam_level?: string
+    start_theta?: number
+    elo_sd?: number
+    cefr_band?: string
+    total_questions?: number
+    correct_answers?: number
+    time_taken?: number
+    answers?: CatAnswer[]
+    engine_version?: string
+    integrity_flag?: boolean
+  }) => unwrapDirect<CatResult>(apiClient.post("/cat/result", body)),
+  progress: () => unwrapList<CatResult>(apiClient.get("/cat/progress")),
+  startSession: (body: {
+    exam_type: string
+    start_theta?: number
+    time_limit_sec?: number
+  }) => unwrapDirect<CatSession>(apiClient.post("/cat/session", body)),
+  updateSession: (
+    id: number,
+    body: { answers: CatAnswer[]; elapsed_sec?: number; theta?: number }
+  ) => unwrapDirect<CatSession>(apiClient.patch(`/cat/session/${id}`, body)),
+  resume: (id: number) =>
+    unwrapDirect<CatSession>(apiClient.get(`/cat/session/${id}`)),
 }
 
 // ─── Games ─────────────────────────────────────────────────────────────────

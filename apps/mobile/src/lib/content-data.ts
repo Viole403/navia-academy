@@ -1,5 +1,13 @@
 import { env } from "@/utils/env"
-import type { VocabWord } from "@/types/api"
+import type {
+  ConversationScenario,
+  CurriculumBundle,
+  GrammarPoint,
+  HanziChar,
+  PlacementItem,
+  Reading,
+  VocabWord,
+} from "@/types/api"
 import {
   DEFAULT_LANGUAGE,
   LANGUAGES,
@@ -101,6 +109,50 @@ export function loadVocabulary(
   lang: LanguageCode = DEFAULT_LANGUAGE
 ): Promise<VocabWord[]> {
   return loadBundle<VocabWord[]>(langBundle(lang, "vocabulary/index"))
+}
+
+/** Language-scoped grammar bundle (`<lang>/grammar/index`). */
+export function loadGrammar(
+  lang: LanguageCode = DEFAULT_LANGUAGE
+): Promise<GrammarPoint[]> {
+  return loadBundle<GrammarPoint[]>(langBundle(lang, "grammar/index"))
+}
+
+/** Language-scoped readings bundle (`<lang>/readings/index`). */
+export function loadReadings(
+  lang: LanguageCode = DEFAULT_LANGUAGE
+): Promise<Reading[]> {
+  return loadBundle<Reading[]>(langBundle(lang, "readings/index"))
+}
+
+/** Language-scoped conversations bundle (`<lang>/conversations/index`). */
+export function loadConversations(
+  lang: LanguageCode = DEFAULT_LANGUAGE
+): Promise<ConversationScenario[]> {
+  return loadBundle<ConversationScenario[]>(
+    langBundle(lang, "conversations/index")
+  )
+}
+
+/** Language-scoped characters bundle (`<lang>/characters/index`). */
+export function loadCharacters(
+  lang: LanguageCode = DEFAULT_LANGUAGE
+): Promise<HanziChar[]> {
+  return loadBundle<HanziChar[]>(langBundle(lang, "characters/index"))
+}
+
+/** Language-scoped curriculum bundle (`<lang>/curriculum/index`). */
+export function loadCurriculum(
+  lang: LanguageCode = DEFAULT_LANGUAGE
+): Promise<CurriculumBundle> {
+  return loadBundle<CurriculumBundle>(langBundle(lang, "curriculum/index"))
+}
+
+/** Language-scoped placement bank (`<lang>/placement/index`). Flat array. */
+export function loadPlacement(
+  lang: LanguageCode = DEFAULT_LANGUAGE
+): Promise<PlacementItem[]> {
+  return loadBundle<PlacementItem[]>(langBundle(lang, "placement/index"))
 }
 
 /**
