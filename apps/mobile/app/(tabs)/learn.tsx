@@ -352,9 +352,6 @@ function BrowseTab({
             glyph="空"
           />
         ) : (
-          // ponytail: plain map, not FlatList — this list lives inside the
-          // screen's vertical ScrollView and a nested VirtualizedList breaks
-          // windowing (RN warning). `filtered` is already capped at 50.
           <View>
             {filtered.map((w, i) => (
               <View

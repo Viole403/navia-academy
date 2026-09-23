@@ -36,9 +36,6 @@ async function unwrapList<T>(
 /**
  * Backend (Go/Fiber): every response is an envelope
  * {success, data, meta?, error?, trace_id}. Unwrap the inner `data`.
- * ponytail: axios `res.data` IS the envelope — the old helper returned the
- * envelope itself, which is why `recommendedQ.data.exam_type` blew up with
- * "Cannot read property toUpperCase of undefined".
  */
 async function unwrapData<T>(p: Promise<{ data: { data: T } }>): Promise<T> {
   const res = await p
@@ -171,8 +168,6 @@ export const cat = {
     time_limit_sec?: number
   }) => unwrapData<CatSession>(apiClient.post("/cat/session", body)),
   // Backend PATCH answers with 204 No Content — no body to unwrap.
-  // ponytail: do NOT route this through unwrapData; axios resolves with
-  // undefined data on 204 and unwrapping would yield `undefined.data` throw.
   updateSession: async (
     id: number,
     body: { answers: CatAnswer[]; elapsed_sec?: number; theta?: number }

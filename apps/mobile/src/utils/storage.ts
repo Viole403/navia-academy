@@ -3,8 +3,6 @@ import AsyncStorage from "@react-native-async-storage/async-storage"
 // Safe key-value storage: AsyncStorage when its native module exists,
 // in-memory Map fallback otherwise (e.g. Expo Go version drift where the
 // native module is null and every call rejects with AsyncStorageError).
-// ponytail: persistence in Expo Go is best-effort; real fix is a dev build
-// with matching native modules. Swap this file for raw AsyncStorage then.
 const mem = new Map<string, string>()
 
 export async function getItem(key: string): Promise<string | null> {

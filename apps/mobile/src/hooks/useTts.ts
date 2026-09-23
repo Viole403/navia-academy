@@ -1,7 +1,5 @@
 import { useCallback, useEffect, useRef, useState } from "react"
 import { File, Directory, Paths } from "expo-file-system"
-// ponytail: expo-av native module (ExponentAV) absent in Expo Go SDK 53+;
-// migrate to expo-audio + dev build. Safe-require keeps routes loadable.
 // eslint-disable-next-line @typescript-eslint/no-require-imports
 let Audio: any = null
 try {

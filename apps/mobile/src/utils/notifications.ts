@@ -1,6 +1,4 @@
 import { Platform } from "react-native"
-// ponytail: expo-notifications push removed from Expo Go SDK 53+; safe-require
-// keeps importing routes loadable. Migrate to dev build for real reminders.
 // eslint-disable-next-line @typescript-eslint/no-require-imports
 let Notifications: any = null
 try {

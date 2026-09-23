@@ -2,6 +2,7 @@ import { useState } from "react"
 import {
   KeyboardAvoidingView,
   Platform,
+  Pressable,
   ScrollView,
   Text,
   View,
@@ -13,7 +14,7 @@ import { Button } from "@/components/ui/Button"
 import { Input } from "@/components/ui/Input"
 import { Motif } from "@/components/ui/Motif"
 import { useTheme } from "@/theme/ThemeProvider"
-import { type } from "@/theme/typography"
+import { fonts, type } from "@/theme/typography"
 import { auth } from "@/api/endpoints"
 import { useAuthStore } from "@/store/auth"
 import { useOnboardingStore } from "@/store/onboarding"
@@ -119,7 +120,7 @@ export default function Login() {
           <View
             style={{
               marginTop: "auto",
-              gap: 8,
+              gap: 4,
               paddingTop: 16,
               paddingBottom: Math.max(insets.bottom, 8),
               borderTopWidth: 1,
@@ -133,11 +134,24 @@ export default function Login() {
               disabled={!email || !password}
               size="lg"
             />
-            <Button
-              title="New here? Create an account"
-              variant="ghost"
+            <Pressable
               onPress={() => router.replace("/(auth)/register")}
-            />
+              hitSlop={8}
+              style={{ alignItems: "center", paddingVertical: 12 }}
+            >
+              <Text
+                style={{
+                  fontFamily: fonts.sans,
+                  fontSize: 15,
+                  color: theme.textMuted,
+                }}
+              >
+                New here?{" "}
+                <Text style={{ color: theme.accent, fontWeight: "600" }}>
+                  Create an account
+                </Text>
+              </Text>
+            </Pressable>
           </View>
         </ScrollView>
       </KeyboardAvoidingView>

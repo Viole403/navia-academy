@@ -71,7 +71,6 @@ export default function Onboarding() {
   })
 
   const next = useCallback(() => {
-    // ponytail: skip script step for non-zh (latin/kana need no script choice)
     let nextIdx = stepIdx + 1
     if (STEPS[stepIdx] === "language" && language !== "zh") nextIdx += 1
     if (nextIdx < STEPS.length) {

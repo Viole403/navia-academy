@@ -31,7 +31,6 @@ const DAILY_WORDS: Record<
     { hw: "纸", rd: "zhǐ", meaning: "paper" },
     { hw: "野", rd: "yě", meaning: "field; wild" },
   ],
-  // ponytail: 4 hand-picked words per language enough for rotation; swap to CDN vocab when bundles land.
   de: [
     { hw: "Morgen", rd: "der Morgen", meaning: "morning" },
     { hw: "Welle", rd: "die Welle", meaning: "wave" },

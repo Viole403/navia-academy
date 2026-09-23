@@ -186,8 +186,6 @@ export interface ExamProgress {
 
 // Backend exam_service.go GetRecommendedExam returns a camelCase map
 // {examType, examLevel, reason} (NOT snake_case), default hsk/1.
-// ponytail: this is the only camelCase payload in the API — keep it
-// isolated here instead of "normalizing" at the call site.
 export interface RecommendedExam {
   examType: string
   examLevel: string
@@ -277,8 +275,6 @@ export interface SponsorApplication {
 }
 
 // ─── Content bundles (mirrors media data/json/<lang>/<group>/index) ─────────
-// ponytail: index-signature fields ([key: string]: unknown) accept media
-// extras without breaking tsc; tighten when bundles get a JSON schema.
 export interface GrammarExample {
   hanzi?: string
   text?: string

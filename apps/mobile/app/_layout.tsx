@@ -87,8 +87,6 @@ function AppShell() {
 export default function RootLayout() {
   const { setAuth, setTokens, markHydrated, signOut } = useAuthStore()
   const router = useRouter()
-  // Bundled CJK serif — blocks first paint briefly so hanzi never tofu.
-  // Requires assets/fonts/NotoSerifSC.ttf to exist (see typography ponytail).
   const [fontsLoaded] = useFonts({
     NaviaSerifSC: require("../assets/fonts/NotoSerifSC.ttf"),
   })
@@ -149,7 +147,6 @@ export default function RootLayout() {
             {fontsLoaded ? (
               <AppShell />
             ) : (
-              // Static splash while the bundled font loads (no theme yet).
               <View style={{ flex: 1, backgroundColor: "#141210" }} />
             )}
           </ErrorBoundary>
