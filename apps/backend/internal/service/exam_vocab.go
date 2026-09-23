@@ -167,7 +167,13 @@ func (s *ExamService) vocabQuestions(ctx context.Context, examType, examLevel st
 
 		var prompt, correct string
 		var options []string
+		var audioText string
 		switch qt {
+		case "listening":
+			audioText = item.headword()
+			prompt = "Press play to hear the word, then pick its meaning."
+			correct = item.Translation
+			options = distinctStrings(collectTranslations(use, correct), correct, 4)
 		case "pinyin", "reading", "pronunciation":
 			reading := item.reading()
 			if reading == "" {
@@ -199,6 +205,7 @@ func (s *ExamService) vocabQuestions(ctx context.Context, examType, examLevel st
 			"examType":      examType,
 			"examLevel":     examLevel,
 			"prompt":        prompt,
+			"audioText":     audioText,
 			"options":       options,
 			"correctAnswer": correct,
 			"tags":          []string{examType, examLevel, difficulty},

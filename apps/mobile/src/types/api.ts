@@ -142,6 +142,7 @@ export interface ExamQuestion {
   difficulty?: string
   prompt: string
   prompt_chinese?: string
+  audioText?: string
   options?: string[]
   explanation?: string
 }

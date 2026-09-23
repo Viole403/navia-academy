@@ -16,6 +16,7 @@ import { ProgressBar } from "@/components/ui/ProgressBar"
 import { useTheme } from "@/theme/ThemeProvider"
 import { fonts, type } from "@/theme/typography"
 import { exam } from "@/api/endpoints"
+import { useTts } from "@/hooks/useTts"
 import type { ExamQuestion, ExamSession } from "@/types/api"
 
 export default function ExamSessionScreen() {
@@ -27,6 +28,7 @@ export default function ExamSessionScreen() {
 
   const [picked, setPicked] = useState<Record<string, unknown>>({})
   const [elapsed, setElapsed] = useState(0)
+  const tts = useTts()
 
   const sessionQ = useQuery({
     queryKey: ["exam-session", sessionId],
@@ -214,7 +216,6 @@ export default function ExamSessionScreen() {
         height={2}
         tint={theme.accent}
       />
-
       <ScrollView contentContainerStyle={{ padding: 24, gap: 24, flexGrow: 1 }}>
         {/* Question */}
         {current ? (
@@ -229,7 +230,7 @@ export default function ExamSessionScreen() {
               {current.prompt_chinese && (
                 <Text
                   style={{
-                    fontFamily: fonts.serif,
+                    fontFamily: fonts.hanzi,
                     fontSize: 26,
                     lineHeight: 36,
                     color: theme.text,
@@ -238,16 +239,27 @@ export default function ExamSessionScreen() {
                   {current.prompt_chinese}
                 </Text>
               )}
+              {(current.type === "listening" || current.type === "audio") &&
+                current.audioText && (
+                  <AudioPlayButton
+                    text={current.audioText}
+                    playing={tts.playing}
+                    loading={tts.loading}
+                    onPlay={() => tts.play(current.audioText!)}
+                  />
+                )}
             </View>
 
             {/* Options */}
             <View style={{ gap: 10 }}>
-              {(current.options ?? []).map((opt) => {
+              {(current.options ?? []).map((opt, idx) => {
                 const sel = picked[current.id] === opt
                 return (
                   <Pressable
                     key={opt}
                     onPress={() => pick(current.id, opt)}
+                    accessibilityRole="radio"
+                    accessibilityState={{ selected: sel }}
                     style={{
                       paddingVertical: 14,
                       paddingHorizontal: 16,
@@ -257,10 +269,36 @@ export default function ExamSessionScreen() {
                       backgroundColor: sel
                         ? `${theme.accent}0A`
                         : "transparent",
+                      flexDirection: "row",
+                      alignItems: "center",
+                      gap: 12,
                     }}
                   >
+                    <View
+                      style={{
+                        width: 28,
+                        height: 28,
+                        borderRadius: 14,
+                        borderWidth: 1.5,
+                        borderColor: sel ? theme.accent : theme.textDim,
+                        backgroundColor: sel ? theme.accent : "transparent",
+                        alignItems: "center",
+                        justifyContent: "center",
+                      }}
+                    >
+                      <Text
+                        style={{
+                          color: sel ? theme.bg : theme.textMuted,
+                          fontSize: 13,
+                          fontWeight: "700",
+                        }}
+                      >
+                        {sel ? "✓" : ("ABCD"[idx] ?? "")}
+                      </Text>
+                    </View>
                     <Text
                       style={{
+                        flex: 1,
                         color: theme.text,
                         fontSize: 16,
                         fontWeight: sel ? "600" : "400",
@@ -277,8 +315,7 @@ export default function ExamSessionScreen() {
           <EmptyState title="No question at this index" glyph="？" />
         )}
       </ScrollView>
-
-      {/* Bottom nav */}
+      {/* Bottom nav */}{" "}
       <View
         style={{
           padding: 16,
@@ -302,5 +339,51 @@ export default function ExamSessionScreen() {
         />
       </View>
     </SafeAreaView>
+  )
+}
+
+function AudioPlayButton({
+  text,
+  playing,
+  loading,
+  onPlay,
+}: {
+  text: string
+  playing: boolean
+  loading: boolean
+  onPlay: () => void
+}) {
+  const { theme } = useTheme()
+  return (
+    <Pressable
+      onPress={onPlay}
+      disabled={loading}
+      accessibilityRole="button"
+      accessibilityLabel="Play audio"
+      style={{
+        flexDirection: "row",
+        alignItems: "center",
+        justifyContent: "center",
+        gap: 12,
+        paddingVertical: 18,
+        borderRadius: 4,
+        backgroundColor: theme.accent,
+        opacity: loading ? 0.6 : 1,
+      }}
+    >
+      <Text style={{ fontSize: 22, color: theme.bg }}>
+        {playing ? "…" : "▶"}
+      </Text>
+      <Text
+        style={{
+          fontFamily: fonts.sans,
+          fontSize: 17,
+          fontWeight: "600",
+          color: theme.bg,
+        }}
+      >
+        {loading ? "Loading…" : playing ? "Playing…" : "Play audio"}
+      </Text>
+    </Pressable>
   )
 }
