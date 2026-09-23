@@ -197,7 +197,7 @@ func main() {
 	achievementSvc := service.NewAchievementService(achievementRepo)
 	srsReviewSvc := service.NewSRSReviewService(srsRepo, srsSvc)
 	settingsSvc := service.NewSettingsService(settingsRepo)
-	examSvc := service.NewExamService(examRepo)
+	examSvc := service.NewExamService(examRepo, cfg.Storage.PublicURL)
 	contributorSvc := service.NewContributorService(contributorRepo)
 	testimonialSvc := service.NewTestimonialService(testimonialRepo)
 	supporterSvc := service.NewSupporterService(supporterRepo)

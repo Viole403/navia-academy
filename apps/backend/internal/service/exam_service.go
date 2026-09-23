@@ -13,11 +13,16 @@ import (
 )
 
 type ExamService struct {
-	examRepo *repository.ExamRepository
+	examRepo       *repository.ExamRepository
+	contentBaseURL string
 }
 
-func NewExamService(examRepo *repository.ExamRepository) *ExamService {
-	return &ExamService{examRepo: examRepo}
+func NewExamService(examRepo *repository.ExamRepository, contentBaseURL ...string) *ExamService {
+	base := ""
+	if len(contentBaseURL) > 0 {
+		base = contentBaseURL[0]
+	}
+	return &ExamService{examRepo: examRepo, contentBaseURL: base}
 }
 
 const CatEngineVersion = "elo-v1"
@@ -28,12 +33,12 @@ func (s *ExamService) CreateCatSession(ctx context.Context, userID string, req *
 		capSec = 1200 // CAT umum default (web mengirim cap sesungguhnya dari §9.1)
 	}
 	sess := &models.CatSession{
-		UserID:      userID,
-		ExamType:    req.ExamType,
-		StartTheta:  req.StartTheta,
-		Status:      "in_progress",
+		UserID:        userID,
+		ExamType:      req.ExamType,
+		StartTheta:    req.StartTheta,
+		Status:        "in_progress",
 		EngineVersion: CatEngineVersion,
-		TimeLimitSec: capSec,
+		TimeLimitSec:  capSec,
 	}
 	return s.examRepo.CreateCatSession(ctx, sess)
 }
@@ -174,19 +179,19 @@ func (s *ExamService) CreateSession(ctx context.Context, userID, examType, examL
 	drJSON, _ := json.Marshal(difficultyRange)
 
 	session := &models.ExamSession{
-		UserID:              userID,
-		ExamType:            examType,
-		ExamLevel:           examLevel,
-		Status:              "in_progress",
+		UserID:               userID,
+		ExamType:             examType,
+		ExamLevel:            examLevel,
+		Status:               "in_progress",
 		CurrentQuestionIndex: 0,
-		Questions:           (*json.RawMessage)(&questionsJSON),
-		Answers:             (*json.RawMessage)(&answersJSON),
-		StartedAt:           time.Now(),
-		TimeLimit:           timeLimit,
-		TimeRemaining:       timeLimit,
-		QuestionCount:       questionCount,
-		QuestionTypes:       (*json.RawMessage)(&qtJSON),
-		DifficultyRange:     (*json.RawMessage)(&drJSON),
+		Questions:            (*json.RawMessage)(&questionsJSON),
+		Answers:              (*json.RawMessage)(&answersJSON),
+		StartedAt:            time.Now(),
+		TimeLimit:            timeLimit,
+		TimeRemaining:        timeLimit,
+		QuestionCount:        questionCount,
+		QuestionTypes:        (*json.RawMessage)(&qtJSON),
+		DifficultyRange:      (*json.RawMessage)(&drJSON),
 	}
 
 	return s.examRepo.CreateSession(ctx, session)
@@ -337,11 +342,15 @@ func (s *ExamService) GetRecommendedExam(ctx context.Context, userID string) (ma
 	}, nil
 }
 
-// generateQuestions builds exam questions. Uses randomized sample questions
-// (the architecture note: "Backend never stores vocabulary" — CDN serves
-// vocab per AGENTS.md, so the server generates placeholders that are at
-// least not trivially cheatable — correct answer is randomized per question).
 func (s *ExamService) generateQuestions(ctx context.Context, examType, examLevel string, count int, questionTypes, difficultyRange []string) []map[string]interface{} {
+	if real := s.vocabQuestions(ctx, examType, examLevel, count, questionTypes, difficultyRange); len(real) > 0 {
+		if len(real) >= count {
+			return real[:count]
+		}
+		// Pad the remainder with samples so the session keeps its size.
+		rest := s.sampleQuestions(examType, examLevel, count-len(real), questionTypes, difficultyRange)
+		return append(real, rest...)
+	}
 	return s.sampleQuestions(examType, examLevel, count, questionTypes, difficultyRange)
 }
 
@@ -470,21 +479,21 @@ func (s *ExamService) calculateScore(session *models.ExamSession, questions []ma
 	stJSON, _ := json.Marshal(strengths)
 
 	return &models.ExamResult{
-		SessionID:            session.ID,
-		UserID:               session.UserID,
-		ExamType:             session.ExamType,
-		ExamLevel:            session.ExamLevel,
-		TotalQuestions:       totalQuestions,
-		CorrectAnswers:       correctAnswers,
-		Score:                score,
-		PassingScore:         60,
-		ByQuestionType:       (*json.RawMessage)(&bqJSON),
-		ByDifficulty:         (*json.RawMessage)(&bdJSON),
-		TimeTaken:            timeTaken,
+		SessionID:              session.ID,
+		UserID:                 session.UserID,
+		ExamType:               session.ExamType,
+		ExamLevel:              session.ExamLevel,
+		TotalQuestions:         totalQuestions,
+		CorrectAnswers:         correctAnswers,
+		Score:                  score,
+		PassingScore:           60,
+		ByQuestionType:         (*json.RawMessage)(&bqJSON),
+		ByDifficulty:           (*json.RawMessage)(&bdJSON),
+		TimeTaken:              timeTaken,
 		AverageTimePerQuestion: avgTimePerQuestion,
-		RecommendedNextLevel: recommendedNextLevel,
-		WeakAreas:            (*json.RawMessage)(&waJSON),
-		Strengths:            (*json.RawMessage)(&stJSON),
+		RecommendedNextLevel:   recommendedNextLevel,
+		WeakAreas:              (*json.RawMessage)(&waJSON),
+		Strengths:              (*json.RawMessage)(&stJSON),
 	}
 }
 
@@ -509,15 +518,15 @@ func (s *ExamService) updateExamProgress(ctx context.Context, userID, examType s
 		currentLevel := result.ExamLevel
 
 		examProgress := &models.ExamProgress{
-			UserID:              userID,
-			ExamType:            examType,
-			LevelsCompleted:     (*json.RawMessage)(&lcJSON),
-			CurrentLevel:        &currentLevel,
-			HighestScore:        result.Score,
-			AverageScore:        result.Score,
-			TotalAttempts:       1,
-			ByLevel:             (*json.RawMessage)(&byLevelJSON),
-			WeakQuestionTypes:   (*json.RawMessage)(&wqJSON),
+			UserID:               userID,
+			ExamType:             examType,
+			LevelsCompleted:      (*json.RawMessage)(&lcJSON),
+			CurrentLevel:         &currentLevel,
+			HighestScore:         result.Score,
+			AverageScore:         result.Score,
+			TotalAttempts:        1,
+			ByLevel:              (*json.RawMessage)(&byLevelJSON),
+			WeakQuestionTypes:    (*json.RawMessage)(&wqJSON),
 			WeakDifficultyLevels: (*json.RawMessage)(&wdJSON),
 		}
 
