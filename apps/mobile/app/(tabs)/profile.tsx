@@ -13,6 +13,7 @@ import { useRouter } from "expo-router"
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query"
 import { Button } from "@/components/ui/Button"
 import { Card } from "@/components/ui/Card"
+import { Chip } from "@/components/ui/Chip"
 import { EmptyState } from "@/components/ui/EmptyState"
 import { Input } from "@/components/ui/Input"
 import { KeyboardSafeScroll } from "@/components/ui/KeyboardSafeScroll"
@@ -21,6 +22,13 @@ import { useTheme } from "@/theme/ThemeProvider"
 import { fonts, type } from "@/theme/typography"
 import type { ThemeDefinition, ThemeId, ThemeMode } from "@/theme/colors"
 import { community, health, progress, settings, tasks } from "@/api/endpoints"
+import {
+  LANGUAGES,
+  examBadgeColor,
+  examDisplayName,
+  languageInfo,
+} from "@/lib/languages"
+import { useOnboardingStore } from "@/store/onboarding"
 import {
   cancelStreakReminder,
   requestPermissions,
@@ -41,6 +49,23 @@ export default function ProfileTab() {
   const signOut = useAuthStore((s) => s.signOut)
 
   const { themeId, mode, setThemeId, setMode } = useThemePrefs()
+
+  const language = useOnboardingStore((s) => s.language)
+  const setLanguage = useOnboardingStore((s) => s.setLanguage)
+  const storedExamType = useOnboardingStore((s) => s.examType)
+  const setStoredExamType = useOnboardingStore((s) => s.setExamType)
+  const langExamTypes = languageInfo(language).examTypes
+
+  const pickLanguage = (code: (typeof LANGUAGES)[number]["code"]) => {
+    setLanguage(code)
+    const first = languageInfo(code).examTypes[0]
+    setStoredExamType(first)
+    updateSettingsM.mutate({ active_exam_type: first })
+  }
+  const pickExamTrack = (t: string) => {
+    setStoredExamType(t)
+    updateSettingsM.mutate({ active_exam_type: t })
+  }
 
   const [section, setSection] = useState<Section>("profile")
   const [newTask, setNewTask] = useState("")
@@ -260,6 +285,41 @@ export default function ProfileTab() {
 
         {section === "settings" && (
           <View style={{ gap: 24 }}>
+            {/* Learning language */}
+            <View style={{ gap: 12 }}>
+              <Text style={[type.labelSm, { color: theme.textMuted }]}>
+                Learning language
+              </Text>
+              <View style={{ flexDirection: "row", flexWrap: "wrap", gap: 8 }}>
+                {LANGUAGES.map((l) => (
+                  <Chip
+                    key={l.code}
+                    label={`${l.nativeName} · ${l.name}`}
+                    selected={language === l.code}
+                    onPress={() => pickLanguage(l.code)}
+                  />
+                ))}
+              </View>
+            </View>
+
+            {/* Exam track */}
+            <View style={{ gap: 12 }}>
+              <Text style={[type.labelSm, { color: theme.textMuted }]}>
+                Exam track
+              </Text>
+              <View style={{ flexDirection: "row", flexWrap: "wrap", gap: 8 }}>
+                {langExamTypes.map((t) => (
+                  <Chip
+                    key={t}
+                    label={examDisplayName(t)}
+                    selected={storedExamType === t}
+                    tint={examBadgeColor(t)}
+                    onPress={() => pickExamTrack(t)}
+                  />
+                ))}
+              </View>
+            </View>
+
             {/* Theme */}
             <View style={{ gap: 12 }}>
               <Text style={[type.labelSm, { color: theme.textMuted }]}>

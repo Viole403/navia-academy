@@ -39,6 +39,7 @@ export function Chip({ label, selected, onPress, tint }: ChipProps) {
           letterSpacing: 0.4,
         }}
       >
+        {selected ? "✓ " : ""}
         {label}
       </Text>
     </Pressable>

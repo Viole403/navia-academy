@@ -17,7 +17,7 @@ import { Card } from "@/components/ui/Card"
 import { ProgressBar } from "@/components/ui/ProgressBar"
 import { useTheme } from "@/theme/ThemeProvider"
 import { fonts, type } from "@/theme/typography"
-import { progress } from "@/api/endpoints"
+import { progress, settings } from "@/api/endpoints"
 import { loadVocabulary } from "@/lib/content-data"
 import {
   DEFAULT_LANGUAGE,
@@ -37,20 +37,32 @@ export default function LearnTab() {
   const { theme } = useTheme()
   const router = useRouter()
   const language = useOnboardingStore((s) => s.language) ?? DEFAULT_LANGUAGE
+  const storedExamType = useOnboardingStore((s) => s.examType)
+  const setStoredExamType = useOnboardingStore((s) => s.setExamType)
   const info = languageInfo(language)
   const examTypes = info.examTypes
+  const initType =
+    storedExamType && examTypes.includes(storedExamType)
+      ? storedExamType
+      : examTypes[0]
   const [search, setSearch] = useState("")
-  const [examType, setExamType] = useState<string>(examTypes[0])
-  const [examLevel, setExamLevel] = useState<string>(
-    examLevels(examTypes[0])[0]
-  )
-  // Reset exam selection when the learning language changes (e.g. after
-  // onboarding picks de/en/ja).
+  const [examType, setExamType] = useState<string>(initType)
+  const [examLevel, setExamLevel] = useState<string>(examLevels(initType)[0])
   useEffect(() => {
-    setExamType(examTypes[0])
-    setExamLevel(examLevels(examTypes[0])[0])
+    const next =
+      storedExamType && examTypes.includes(storedExamType)
+        ? storedExamType
+        : examTypes[0]
+    setExamType(next)
+    setExamLevel(examLevels(next)[0])
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [language])
+  }, [language, storedExamType])
+  const pickExamType = (t: string) => {
+    setExamType(t)
+    setExamLevel(examLevels(t)[0])
+    setStoredExamType(t)
+    settings.update({ active_exam_type: t })
+  }
   const [tab, setTab] = useState<"browse" | "review">("browse")
 
   const vocabAll = useQuery({
@@ -197,7 +209,7 @@ export default function LearnTab() {
             setSearch={setSearch}
             examTypes={examTypes}
             examType={examType}
-            setExamType={setExamType}
+            setExamType={pickExamType}
             examLevel={examLevel}
             setExamLevel={setExamLevel}
             levels={levels}

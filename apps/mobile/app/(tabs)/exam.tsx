@@ -16,7 +16,7 @@ import { EmptyState } from "@/components/ui/EmptyState"
 import { Motif } from "@/components/ui/Motif"
 import { useTheme } from "@/theme/ThemeProvider"
 import { fonts, type } from "@/theme/typography"
-import { exam } from "@/api/endpoints"
+import { exam, settings } from "@/api/endpoints"
 import {
   examBadgeColor,
   examDisplayName,
@@ -31,15 +31,34 @@ export default function ExamTab() {
   const router = useRouter()
   const qc = useQueryClient()
   const language = useOnboardingStore((s) => s.language)
+  const storedExamType = useOnboardingStore((s) => s.examType)
+  const setStoredExamType = useOnboardingStore((s) => s.setExamType)
   const examTypes = languageInfo(language).examTypes
-  const [examType, setExamType] = useState(examTypes[0])
-  const [examLevel, setExamLevel] = useState(examLevels(examTypes[0])[0])
+  const initType =
+    storedExamType && examTypes.includes(storedExamType)
+      ? storedExamType
+      : examTypes[0]
+  const [examType, setExamType] = useState(initType)
+  const [examLevel, setExamLevel] = useState(examLevels(initType)[0])
 
   useEffect(() => {
     const types = languageInfo(language).examTypes
-    setExamType(types[0])
-    setExamLevel(examLevels(types[0])[0])
-  }, [language])
+    const next =
+      storedExamType && types.includes(storedExamType)
+        ? storedExamType
+        : types[0]
+    setExamType(next)
+    setExamLevel(examLevels(next)[0])
+  }, [language, storedExamType])
+
+  const pickExamType = (t: string) => {
+    setExamType(t)
+    setExamLevel(examLevels(t)[0])
+    setStoredExamType(t)
+    settings.update({ active_exam_type: t }).then(() => {
+      qc.invalidateQueries({ queryKey: ["settings"] })
+    })
+  }
 
   const activeQ = useQuery({ queryKey: ["exam-active"], queryFn: exam.active })
   const progressQ = useQuery({
@@ -143,10 +162,7 @@ export default function ExamTab() {
                       label={examDisplayName(t)}
                       selected={examType === t}
                       tint={examBadgeColor(t)}
-                      onPress={() => {
-                        setExamType(t)
-                        setExamLevel(examLevels(t)[0])
-                      }}
+                      onPress={() => pickExamType(t)}
                     />
                   ))}
                 </ScrollView>
