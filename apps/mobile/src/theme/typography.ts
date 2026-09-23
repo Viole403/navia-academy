@@ -1,6 +1,17 @@
 import { Platform, TextStyle } from "react-native"
 
-// Editorial Print: serif untuk judul & hanzi, sans untuk body/label
+// Editorial Print: serif untuk judul & hanzi, sans untuk body/label.
+// ponytail: Android "serif" (Noto Serif) has NO CJK glyphs and on some
+// devices the serif->CJK system fallback fails, rendering hanzi/pinyin
+// tone marks as tofu. So CJK-bearing styles use the bundled Noto Serif SC
+// (assets/fonts/NotoSerifSC.ttf, loaded via expo-font in app/_layout.tsx);
+// iOS keeps Georgia (PingFang fallback is reliable there). If the bundled
+// file is missing, Metro red-screens on the require — keep the file in place.
+const serifCJK = Platform.select({
+  ios: "Georgia",
+  android: "NaviaSerifSC",
+  default: "Georgia",
+}) as string
 export const fonts = {
   serif: Platform.select({
     ios: "Georgia",
@@ -17,6 +28,8 @@ export const fonts = {
     android: "monospace",
     default: "Courier",
   }) as string,
+  /** CJK-safe serif: Georgia on iOS, sans-serif on Android (see ponytail). */
+  hanzi: serifCJK,
 }
 
 export const type = {
@@ -47,13 +60,13 @@ export const type = {
     fontWeight: "400" as const,
   },
   hanzi: {
-    fontFamily: fonts.serif,
+    fontFamily: serifCJK,
     fontSize: 56,
     lineHeight: 64,
     fontWeight: "500" as const,
   },
   hanziLg: {
-    fontFamily: fonts.serif,
+    fontFamily: serifCJK,
     fontSize: 96,
     lineHeight: 110,
     fontWeight: "500" as const,

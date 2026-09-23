@@ -269,7 +269,7 @@ export default function GameMatch() {
                 >
                   <Text
                     style={{
-                      fontFamily: c.type === "hanzi" ? fonts.serif : fonts.sans,
+                      fontFamily: c.type === "hanzi" ? fonts.hanzi : fonts.sans,
                       fontSize: c.type === "hanzi" ? 26 : 14,
                       color: c.matched
                         ? theme.green

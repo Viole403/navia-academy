@@ -1,4 +1,6 @@
 import { useEffect } from "react"
+import { View } from "react-native"
+import { useFonts } from "expo-font"
 import { addEventListener, getInitialURL } from "expo-linking"
 import { Stack, useRouter } from "expo-router"
 import { StatusBar } from "expo-status-bar"
@@ -85,6 +87,11 @@ function AppShell() {
 export default function RootLayout() {
   const { setAuth, setTokens, markHydrated, signOut } = useAuthStore()
   const router = useRouter()
+  // Bundled CJK serif — blocks first paint briefly so hanzi never tofu.
+  // Requires assets/fonts/NotoSerifSC.ttf to exist (see typography ponytail).
+  const [fontsLoaded] = useFonts({
+    NaviaSerifSC: require("../assets/fonts/NotoSerifSC.ttf"),
+  })
 
   useEffect(() => {
     ;(async () => {
@@ -139,7 +146,12 @@ export default function RootLayout() {
       <QueryClientProvider client={queryClient}>
         <ThemeProvider>
           <ErrorBoundary>
-            <AppShell />
+            {fontsLoaded ? (
+              <AppShell />
+            ) : (
+              // Static splash while the bundled font loads (no theme yet).
+              <View style={{ flex: 1, backgroundColor: "#141210" }} />
+            )}
           </ErrorBoundary>
         </ThemeProvider>
       </QueryClientProvider>
