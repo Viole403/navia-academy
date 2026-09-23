@@ -1,7 +1,6 @@
 import { memo, useEffect, useMemo, useState } from "react"
 import {
   ActivityIndicator,
-  FlatList,
   Pressable,
   ScrollView,
   Text,
@@ -346,28 +345,30 @@ function BrowseTab({
 
         {vocabLoading ? (
           <ActivityIndicator color={theme.accent} />
-        ) : (
-          <FlatList
-            data={filtered}
-            keyExtractor={(w) => w.id}
-            renderItem={({ item }) => <WordRow word={item} />}
-            initialNumToRender={12}
-            maxToRenderPerBatch={8}
-            windowSize={5}
-            removeClippedSubviews
-            ItemSeparatorComponent={() => (
-              <View
-                style={{ borderTopWidth: 1, borderTopColor: theme.border }}
-              />
-            )}
-            ListEmptyComponent={
-              <EmptyState
-                title="Nothing here"
-                message="Try a different search term or level."
-                glyph="空"
-              />
-            }
+        ) : filtered.length === 0 ? (
+          <EmptyState
+            title="Nothing here"
+            message="Try a different search term or level."
+            glyph="空"
           />
+        ) : (
+          // ponytail: plain map, not FlatList — this list lives inside the
+          // screen's vertical ScrollView and a nested VirtualizedList breaks
+          // windowing (RN warning). `filtered` is already capped at 50.
+          <View>
+            {filtered.map((w, i) => (
+              <View
+                key={w.id}
+                style={
+                  i > 0
+                    ? { borderTopWidth: 1, borderTopColor: theme.border }
+                    : undefined
+                }
+              >
+                <WordRow word={w} />
+              </View>
+            ))}
+          </View>
         )}
       </View>
     </View>
