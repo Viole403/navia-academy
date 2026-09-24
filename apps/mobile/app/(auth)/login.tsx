@@ -11,6 +11,7 @@ import { SafeAreaView, useSafeAreaInsets } from "react-native-safe-area-context"
 import { useRouter } from "expo-router"
 import { useMutation } from "@tanstack/react-query"
 import { Button } from "@/components/ui/Button"
+import { GoogleSignInButton } from "@/components/ui/GoogleSignInButton"
 import { Input } from "@/components/ui/Input"
 import { Motif } from "@/components/ui/Motif"
 import { useTheme } from "@/theme/ThemeProvider"
@@ -61,7 +62,7 @@ export default function Login() {
   return (
     <SafeAreaView style={{ flex: 1, backgroundColor: theme.bg }}>
       <KeyboardAvoidingView
-        behavior={Platform.OS === "ios" ? "padding" : "height"}
+        behavior={Platform.OS === "ios" ? "padding" : undefined}
         style={{ flex: 1 }}
       >
         <ScrollView
@@ -140,7 +141,7 @@ export default function Login() {
           <View
             style={{
               marginTop: "auto",
-              gap: 4,
+              gap: 16,
               paddingTop: 16,
               paddingBottom: Math.max(insets.bottom, 8),
               borderTopWidth: 1,
@@ -155,13 +156,13 @@ export default function Login() {
               size="lg"
             />
             {google.configured && (
-              <View style={{ gap: 4 }}>
+              <View style={{ gap: 12 }}>
                 <View
                   style={{
                     flexDirection: "row",
                     alignItems: "center",
                     gap: 12,
-                    paddingVertical: 8,
+                    paddingVertical: 4,
                   }}
                 >
                   <View
@@ -182,19 +183,19 @@ export default function Login() {
                     }}
                   />
                 </View>
-                <Button
+                <GoogleSignInButton
                   title={t("auth.google")}
-                  variant="secondary"
                   onPress={google.prompt}
                   loading={google.pending}
                   disabled={!google.canPrompt}
-                  size="lg"
                 />
-                {google.error && (
-                  <Text style={{ color: theme.red, fontSize: 13 }}>
-                    {google.error}
-                  </Text>
-                )}
+                <View style={{ minHeight: 20, justifyContent: "center" }}>
+                  {google.error && (
+                    <Text style={{ color: theme.red, fontSize: 13 }}>
+                      {google.error}
+                    </Text>
+                  )}
+                </View>
               </View>
             )}
             <Pressable
