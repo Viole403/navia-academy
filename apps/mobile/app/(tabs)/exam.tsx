@@ -298,7 +298,7 @@ export default function ExamTab() {
             <EmptyState
               title={t("exam.noSittings")}
               message={t("exam.firstExam")}
-              glyph={motifChar(language)}
+              glyph="◷"
             />
           ) : (
             <View style={{ borderTopWidth: 1, borderTopColor: theme.border }}>

@@ -189,7 +189,7 @@ function OverviewView({
           <EmptyState
             title={t("stats.noSessions")}
             message={t("stats.sessionsMsg")}
-            glyph={motifChar(language)}
+            glyph="◷"
           />
         ) : (
           <View style={{ borderTopWidth: 1, borderTopColor: theme.border }}>
@@ -281,9 +281,9 @@ function CalendarView({
               >
                 <View
                   style={{
-                    height: Math.max(2, (d.minutes / max) * 64),
+                    height: Math.max(4, (d.minutes / max) * 64),
                     backgroundColor:
-                      d.minutes > 0 ? theme.accent : theme.border,
+                      d.minutes > 0 ? theme.accent : theme.textDim + "55",
                     borderRadius: 2,
                   }}
                 />
@@ -316,7 +316,7 @@ function BadgesView({
       <EmptyState
         title={t("stats.noBadges")}
         message={t("stats.badgesMsg")}
-        glyph={motifChar(language)}
+        glyph="★"
       />
     )
 

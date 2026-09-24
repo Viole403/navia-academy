@@ -195,6 +195,7 @@ const id: Record<I18nKey, string> = {
   "profile.bestStreak": "Rangkaian terbaik",
   "profile.learningPath": "Jalur belajar",
   "profile.changeSettings": "Ubah di Pengaturan →",
+  "profile.current": "Aktif",
   "profile.memberSince": "Anggota sejak",
   "profile.role": "Peran",
   "profile.verified": "Terverifikasi",

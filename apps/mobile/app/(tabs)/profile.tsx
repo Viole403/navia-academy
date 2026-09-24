@@ -14,6 +14,7 @@ import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query"
 import { Button } from "@/components/ui/Button"
 import { Card } from "@/components/ui/Card"
 import { Chip } from "@/components/ui/Chip"
+import { SegmentedControl } from "@/components/ui/SegmentedControl"
 import { EmptyState } from "@/components/ui/EmptyState"
 import { Input } from "@/components/ui/Input"
 import { KeyboardSafeScroll } from "@/components/ui/KeyboardSafeScroll"
@@ -173,7 +174,7 @@ export default function ProfileTab() {
                 {user.name}
               </Text>
               {activePath && (
-                <Text style={[type.bodySm, { color: theme.accent }]}>
+                <Text style={[type.bodySm, { color: theme.accent + "AA" }]}>
                   {activePath.title} · {activePath.sub}
                 </Text>
               )}
@@ -184,40 +185,16 @@ export default function ProfileTab() {
         </View>
 
         {/* Section switcher */}
-        <View style={{ flexDirection: "row", gap: 8, flexWrap: "wrap" }}>
-          {[
-            { id: "profile" as Section, label: t("profile.tab") },
-            { id: "tasks" as Section, label: t("profile.tasks") },
-            { id: "settings" as Section, label: t("profile.settings") },
-            { id: "about" as Section, label: t("profile.about") },
-          ].map((s) => {
-            const sel = section === s.id
-            return (
-              <Pressable
-                key={s.id}
-                onPress={() => setSection(s.id)}
-                style={{
-                  paddingHorizontal: 14,
-                  paddingVertical: 8,
-                  borderRadius: 2,
-                  borderBottomWidth: sel ? 2 : 0,
-                  borderBottomColor: theme.accent,
-                }}
-              >
-                <Text
-                  style={{
-                    fontFamily: fonts.serif,
-                    fontSize: 18,
-                    color: sel ? theme.text : theme.textMuted,
-                    fontWeight: sel ? "500" : "400",
-                  }}
-                >
-                  {s.label}
-                </Text>
-              </Pressable>
-            )
-          })}
-        </View>
+        <SegmentedControl<Section>
+          options={[
+            { id: "profile", label: t("profile.tab") },
+            { id: "tasks", label: t("profile.tasks") },
+            { id: "settings", label: t("profile.settings") },
+            { id: "about", label: t("profile.about") },
+          ]}
+          value={section}
+          onChange={setSection}
+        />
 
         {/* Sections */}
         {section === "profile" && (
@@ -341,7 +318,7 @@ export default function ProfileTab() {
                 <EmptyState
                   title={t("profile.allClear")}
                   message={t("profile.allClearMsg")}
-                  glyph={motifChar(language)}
+                  glyph="✓"
                 />
               ) : (
                 (tasksQ.data ?? [])
@@ -378,289 +355,298 @@ export default function ProfileTab() {
         )}
 
         {section === "settings" && (
-          <View style={{ gap: 24 }}>
+          <View style={{ gap: 28 }}>
             {/* Learning path */}
-            <View style={{ gap: 12 }}>
-              <Text style={[type.labelSm, { color: theme.textMuted }]}>
-                {t("profile.learningPath")}
-              </Text>
-              <View style={{ flexDirection: "row", flexWrap: "wrap", gap: 8 }}>
-                {PATHS.map((p) => (
-                  <Chip
-                    key={`${p.language}-${p.examType}`}
-                    label={`${p.title} · ${p.sub}`}
-                    selected={
+            <Card>
+              <View style={{ gap: 12 }}>
+                <Text style={[type.labelSm, { color: theme.textMuted }]}>
+                  {t("profile.learningPath")}
+                </Text>
+                <View
+                  style={{ flexDirection: "row", flexWrap: "wrap", gap: 8 }}
+                >
+                  {PATHS.map((p) => {
+                    const isActive =
                       language === p.language && storedExamType === p.examType
-                    }
-                    tint={examBadgeColor(p.examType)}
-                    onPress={() => pickPath(p)}
-                  />
-                ))}
+                    return (
+                      <Chip
+                        key={`${p.language}-${p.examType}`}
+                        label={`${p.title} · ${p.sub}`}
+                        selected={isActive}
+                        tint={examBadgeColor(p.examType)}
+                        badge={isActive ? t("profile.current") : undefined}
+                        onPress={() => pickPath(p)}
+                      />
+                    )
+                  })}
+                </View>
               </View>
-            </View>
+            </Card>
 
             {/* Voice */}
-            <View style={{ gap: 12 }}>
-              <Text style={[type.labelSm, { color: theme.textMuted }]}>
-                {t("profile.voice")}
-              </Text>
-              <View style={{ flexDirection: "row", flexWrap: "wrap", gap: 8 }}>
-                {[
-                  { id: "female", label: t("profile.female") },
-                  { id: "male", label: t("profile.male") },
-                ].map((g) => (
-                  <Chip
-                    key={g.id}
-                    label={g.label}
-                    selected={
-                      (settingsQ.data?.voice_gender ?? "female") === g.id
-                    }
-                    onPress={() =>
-                      updateSettingsM.mutate({ voice_gender: g.id })
-                    }
-                  />
-                ))}
+            <Card>
+              <View style={{ gap: 12 }}>
+                <Text style={[type.labelSm, { color: theme.textMuted }]}>
+                  {t("profile.voice")}
+                </Text>
+                <View
+                  style={{ flexDirection: "row", flexWrap: "wrap", gap: 8 }}
+                >
+                  {[
+                    { id: "female", label: t("profile.female") },
+                    { id: "male", label: t("profile.male") },
+                  ].map((g) => (
+                    <Chip
+                      key={g.id}
+                      label={g.label}
+                      selected={
+                        (settingsQ.data?.voice_gender ?? "female") === g.id
+                      }
+                      onPress={() =>
+                        updateSettingsM.mutate({ voice_gender: g.id })
+                      }
+                    />
+                  ))}
+                </View>
               </View>
-            </View>
+            </Card>
 
             {/* Daily goal */}
-            <View style={{ gap: 12 }}>
-              <Text style={[type.labelSm, { color: theme.textMuted }]}>
-                {t("profile.dailyGoal")}
-              </Text>
-              <View style={{ flexDirection: "row", flexWrap: "wrap", gap: 8 }}>
-                {[5, 10, 15, 30].map((m) => (
-                  <Chip
-                    key={m}
-                    label={`${m} ${t("profile.min")}`}
-                    selected={(settingsQ.data?.daily_goal_min ?? 10) === m}
-                    onPress={() =>
-                      updateSettingsM.mutate({ daily_goal_min: m })
-                    }
-                  />
-                ))}
+            <Card>
+              <View style={{ gap: 12 }}>
+                <Text style={[type.labelSm, { color: theme.textMuted }]}>
+                  {t("profile.dailyGoal")}
+                </Text>
+                <View
+                  style={{ flexDirection: "row", flexWrap: "wrap", gap: 8 }}
+                >
+                  {[5, 10, 15, 30].map((m) => (
+                    <Chip
+                      key={m}
+                      label={`${m} ${t("profile.min")}`}
+                      selected={(settingsQ.data?.daily_goal_min ?? 10) === m}
+                      onPress={() =>
+                        updateSettingsM.mutate({ daily_goal_min: m })
+                      }
+                    />
+                  ))}
+                </View>
               </View>
-            </View>
+            </Card>
 
             {/* New words + reviews */}
-            <View style={{ gap: 12 }}>
-              <Text style={[type.labelSm, { color: theme.textMuted }]}>
-                {t("profile.newWords")}
-              </Text>
-              <View style={{ flexDirection: "row", flexWrap: "wrap", gap: 8 }}>
-                {[5, 10, 20].map((n) => (
-                  <Chip
-                    key={n}
-                    label={String(n)}
-                    selected={(settingsQ.data?.new_words_per_day ?? 10) === n}
-                    onPress={() =>
-                      updateSettingsM.mutate({ new_words_per_day: n })
-                    }
-                  />
-                ))}
+            <Card>
+              <View style={{ gap: 12 }}>
+                <Text style={[type.labelSm, { color: theme.textMuted }]}>
+                  {t("profile.newWords")}
+                </Text>
+                <View
+                  style={{ flexDirection: "row", flexWrap: "wrap", gap: 8 }}
+                >
+                  {[5, 10, 20].map((n) => (
+                    <Chip
+                      key={n}
+                      label={String(n)}
+                      selected={(settingsQ.data?.new_words_per_day ?? 10) === n}
+                      onPress={() =>
+                        updateSettingsM.mutate({ new_words_per_day: n })
+                      }
+                    />
+                  ))}
+                </View>
               </View>
-            </View>
 
-            <View style={{ gap: 12 }}>
-              <Text style={[type.labelSm, { color: theme.textMuted }]}>
-                {t("profile.maxReviews")}
-              </Text>
-              <View style={{ flexDirection: "row", flexWrap: "wrap", gap: 8 }}>
-                {[20, 50, 100].map((n) => (
-                  <Chip
-                    key={n}
-                    label={String(n)}
-                    selected={(settingsQ.data?.max_reviews_per_day ?? 50) === n}
-                    onPress={() =>
-                      updateSettingsM.mutate({ max_reviews_per_day: n })
-                    }
-                  />
-                ))}
+              <View style={{ gap: 12 }}>
+                <Text style={[type.labelSm, { color: theme.textMuted }]}>
+                  {t("profile.maxReviews")}
+                </Text>
+                <View
+                  style={{ flexDirection: "row", flexWrap: "wrap", gap: 8 }}
+                >
+                  {[20, 50, 100].map((n) => (
+                    <Chip
+                      key={n}
+                      label={String(n)}
+                      selected={
+                        (settingsQ.data?.max_reviews_per_day ?? 50) === n
+                      }
+                      onPress={() =>
+                        updateSettingsM.mutate({ max_reviews_per_day: n })
+                      }
+                    />
+                  ))}
+                </View>
               </View>
-            </View>
+            </Card>
 
             {/* App language */}
-            <View style={{ gap: 12 }}>
-              <Text style={[type.labelSm, { color: theme.textMuted }]}>
-                {t("profile.appLang")}
-              </Text>
-              <View style={{ flexDirection: "row", flexWrap: "wrap", gap: 8 }}>
-                {(
-                  [
-                    { id: "en", label: "English" },
-                    { id: "id", label: "Indonesia" },
-                  ] as { id: AppLocale; label: string }[]
-                ).map((l) => (
-                  <Chip
-                    key={l.id}
-                    label={l.label}
-                    selected={(settingsQ.data?.locale ?? "en") === l.id}
-                    onPress={() => {
-                      setLocale(l.id)
-                      updateSettingsM.mutate({ locale: l.id })
-                    }}
-                  />
-                ))}
+            <Card>
+              <View style={{ gap: 12 }}>
+                <Text style={[type.labelSm, { color: theme.textMuted }]}>
+                  {t("profile.appLang")}
+                </Text>
+                <View
+                  style={{ flexDirection: "row", flexWrap: "wrap", gap: 8 }}
+                >
+                  {(
+                    [
+                      { id: "en", label: "English" },
+                      { id: "id", label: "Indonesia" },
+                    ] as { id: AppLocale; label: string }[]
+                  ).map((l) => (
+                    <Chip
+                      key={l.id}
+                      label={l.label}
+                      selected={(settingsQ.data?.locale ?? "en") === l.id}
+                      onPress={() => {
+                        setLocale(l.id)
+                        updateSettingsM.mutate({ locale: l.id })
+                      }}
+                    />
+                  ))}
+                </View>
               </View>
-            </View>
+            </Card>
 
             {/* Theme */}
-            <View style={{ gap: 12 }}>
-              <Text style={[type.labelSm, { color: theme.textMuted }]}>
-                {t("profile.theme")}
-              </Text>
-              <View style={{ flexDirection: "row", flexWrap: "wrap", gap: 10 }}>
-                {catalog.map((t) => (
-                  <ThemePill
-                    key={t.id}
-                    def={t}
-                    selected={themeId === t.id}
-                    onPress={() => setThemeId(t.id)}
-                  />
-                ))}
+            <Card>
+              <View style={{ gap: 12 }}>
+                <Text style={[type.labelSm, { color: theme.textMuted }]}>
+                  {t("profile.theme")}
+                </Text>
+                <View
+                  style={{ flexDirection: "row", flexWrap: "wrap", gap: 10 }}
+                >
+                  {catalog.map((t) => (
+                    <ThemePill
+                      key={t.id}
+                      def={t}
+                      selected={themeId === t.id}
+                      onPress={() => setThemeId(t.id)}
+                    />
+                  ))}
+                </View>
               </View>
-            </View>
+            </Card>
 
             {/* Mode */}
-            <View style={{ gap: 10 }}>
-              <Text style={[type.labelSm, { color: theme.textMuted }]}>
-                {t("profile.appearance")}
-              </Text>
-              <View style={{ flexDirection: "row", gap: 6 }}>
-                {[
-                  { id: "system" as ThemeMode, label: t("profile.modeSystem") },
-                  { id: "light" as ThemeMode, label: t("profile.modeLight") },
-                  { id: "dark" as ThemeMode, label: t("profile.modeDark") },
-                  { id: "amoled" as ThemeMode, label: "AMOLED" },
-                ].map((m) => {
-                  const sel = mode === m.id
-                  return (
-                    <Pressable
-                      key={m.id}
-                      onPress={() => setMode(m.id)}
-                      style={{
-                        flex: 1,
-                        paddingVertical: 10,
-                        borderRadius: 2,
-                        borderWidth: 1.5,
-                        borderColor: sel ? theme.text : theme.border,
-                        backgroundColor: sel ? theme.text : "transparent",
-                        alignItems: "center",
-                      }}
-                    >
-                      <Text
-                        style={{
-                          color: sel ? theme.bg : theme.text,
-                          fontWeight: "600",
-                          fontSize: 13,
-                        }}
-                      >
-                        {m.label}
-                      </Text>
-                    </Pressable>
-                  )
-                })}
+            <Card>
+              <View style={{ gap: 10 }}>
+                <Text style={[type.labelSm, { color: theme.textMuted }]}>
+                  {t("profile.appearance")}
+                </Text>
+                <SegmentedControl<ThemeMode>
+                  options={[
+                    { id: "system", label: t("profile.modeSystem") },
+                    { id: "light", label: t("profile.modeLight") },
+                    { id: "dark", label: t("profile.modeDark") },
+                    { id: "amoled", label: "AMOLED" },
+                  ]}
+                  value={mode}
+                  onChange={setMode}
+                />
               </View>
-            </View>
+            </Card>
 
             {/* Learning prefs */}
             {settingsQ.data && (
-              <View
-                style={{
-                  gap: 12,
-                  borderTopWidth: 1,
-                  borderTopColor: theme.border,
-                  paddingTop: 20,
-                }}
-              >
-                <Text style={[type.labelSm, { color: theme.textMuted }]}>
-                  {t("profile.learning")}
-                </Text>
-                <SettingsSwitch
-                  label={t("profile.autoplay")}
-                  hint={t("profile.autoplayHint")}
-                  value={settingsQ.data.autoplay_audio}
-                  onChange={(v) =>
-                    updateSettingsM.mutate({ autoplay_audio: v })
-                  }
-                />
-                <SettingsSwitch
-                  label={t("profile.sounds")}
-                  hint={t("profile.soundsHint")}
-                  value={settingsQ.data.sound_effects}
-                  onChange={(v) => updateSettingsM.mutate({ sound_effects: v })}
-                />
-                <SettingsSwitch
-                  label={t("profile.reminder")}
-                  hint={t("profile.reminderHint")}
-                  value={settingsQ.data.daily_reminder}
-                  onChange={async (v) => {
-                    updateSettingsM.mutate({ daily_reminder: v })
-                    if (v) {
-                      const granted = await requestPermissions()
-                      if (granted) {
-                        const [h, m] = (settingsQ.data.reminder_time ?? "20:00")
-                          .split(":")
-                          .map(Number)
-                        await scheduleDailyStreakReminder(h || 20, m || 0)
-                      } else {
-                        Alert.alert(
-                          t("profile.notifOff"),
-                          t("profile.notifOffMsg")
-                        )
-                      }
-                    } else {
-                      await cancelStreakReminder()
-                    }
-                  }}
-                />
-                <View style={{ gap: 8 }}>
+              <Card>
+                <View style={{ gap: 12 }}>
                   <Text style={[type.labelSm, { color: theme.textMuted }]}>
-                    {t("profile.reminderTime")}
+                    {t("profile.learning")}
                   </Text>
-                  <View
-                    style={{ flexDirection: "row", flexWrap: "wrap", gap: 8 }}
-                  >
-                    {["07:00", "12:00", "20:00"].map((t) => (
-                      <Chip
-                        key={t}
-                        label={t}
-                        selected={
-                          (settingsQ.data.reminder_time ?? "20:00") === t
+                  <SettingsSwitch
+                    label={t("profile.autoplay")}
+                    hint={t("profile.autoplayHint")}
+                    value={settingsQ.data.autoplay_audio}
+                    onChange={(v) =>
+                      updateSettingsM.mutate({ autoplay_audio: v })
+                    }
+                  />
+                  <SettingsSwitch
+                    label={t("profile.sounds")}
+                    hint={t("profile.soundsHint")}
+                    value={settingsQ.data.sound_effects}
+                    onChange={(v) =>
+                      updateSettingsM.mutate({ sound_effects: v })
+                    }
+                  />
+                  <SettingsSwitch
+                    label={t("profile.reminder")}
+                    hint={t("profile.reminderHint")}
+                    value={settingsQ.data.daily_reminder}
+                    onChange={async (v) => {
+                      updateSettingsM.mutate({ daily_reminder: v })
+                      if (v) {
+                        const granted = await requestPermissions()
+                        if (granted) {
+                          const [h, m] = (
+                            settingsQ.data.reminder_time ?? "20:00"
+                          )
+                            .split(":")
+                            .map(Number)
+                          await scheduleDailyStreakReminder(h || 20, m || 0)
+                        } else {
+                          Alert.alert(
+                            t("profile.notifOff"),
+                            t("profile.notifOffMsg")
+                          )
                         }
-                        onPress={async () => {
-                          updateSettingsM.mutate({ reminder_time: t })
-                          if (settingsQ.data.daily_reminder) {
-                            await cancelStreakReminder()
-                            const [h, m] = t.split(":").map(Number)
-                            await scheduleDailyStreakReminder(h || 20, m || 0)
+                      } else {
+                        await cancelStreakReminder()
+                      }
+                    }}
+                  />
+                  <View style={{ gap: 8 }}>
+                    <Text style={[type.labelSm, { color: theme.textMuted }]}>
+                      {t("profile.reminderTime")}
+                    </Text>
+                    <View
+                      style={{ flexDirection: "row", flexWrap: "wrap", gap: 8 }}
+                    >
+                      {["07:00", "12:00", "20:00"].map((t) => (
+                        <Chip
+                          key={t}
+                          label={t}
+                          selected={
+                            (settingsQ.data.reminder_time ?? "20:00") === t
                           }
-                        }}
-                      />
-                    ))}
+                          onPress={async () => {
+                            updateSettingsM.mutate({ reminder_time: t })
+                            if (settingsQ.data.daily_reminder) {
+                              await cancelStreakReminder()
+                              const [h, m] = t.split(":").map(Number)
+                              await scheduleDailyStreakReminder(h || 20, m || 0)
+                            }
+                          }}
+                        />
+                      ))}
+                    </View>
                   </View>
+                  <SettingsSwitch
+                    label={t("profile.weekly")}
+                    hint={t("profile.weeklyHint")}
+                    value={settingsQ.data.weekly_summary}
+                    onChange={(v) =>
+                      updateSettingsM.mutate({ weekly_summary: v })
+                    }
+                  />
+                  <SettingsSwitch
+                    label={t("profile.focus")}
+                    hint={t("profile.focusHint")}
+                    value={settingsQ.data.focus_mode}
+                    onChange={(v) => updateSettingsM.mutate({ focus_mode: v })}
+                  />
+                  <SettingsSwitch
+                    label={t("profile.reduceMotion")}
+                    hint={t("profile.reduceMotionHint")}
+                    value={settingsQ.data.reduce_motion}
+                    onChange={(v) =>
+                      updateSettingsM.mutate({ reduce_motion: v })
+                    }
+                  />
                 </View>
-                <SettingsSwitch
-                  label={t("profile.weekly")}
-                  hint={t("profile.weeklyHint")}
-                  value={settingsQ.data.weekly_summary}
-                  onChange={(v) =>
-                    updateSettingsM.mutate({ weekly_summary: v })
-                  }
-                />
-                <SettingsSwitch
-                  label={t("profile.focus")}
-                  hint={t("profile.focusHint")}
-                  value={settingsQ.data.focus_mode}
-                  onChange={(v) => updateSettingsM.mutate({ focus_mode: v })}
-                />
-                <SettingsSwitch
-                  label={t("profile.reduceMotion")}
-                  hint={t("profile.reduceMotionHint")}
-                  value={settingsQ.data.reduce_motion}
-                  onChange={(v) => updateSettingsM.mutate({ reduce_motion: v })}
-                />
-              </View>
+              </Card>
             )}
 
             <ChangePasswordCard />
@@ -671,6 +657,16 @@ export default function ProfileTab() {
       </KeyboardSafeScroll>
     </SafeAreaView>
   )
+}
+
+function contributorColor(
+  name: string,
+  palette: { accent: string; gold: string; mint: string }
+) {
+  const colors = [palette.accent, palette.gold, palette.mint]
+  let h = 0
+  for (const ch of name) h = (h * 31 + ch.charCodeAt(0)) % 997
+  return colors[h % colors.length] ?? palette.accent
 }
 
 function MetaField({
@@ -843,6 +839,7 @@ function SettingsSwitch({
 function ChangePasswordCard() {
   const { theme } = useTheme()
   const t = useT()
+  const [open, setOpen] = useState(false)
   const [current, setCurrent] = useState("")
   const [next, setNext] = useState("")
   const [msg, setMsg] = useState<string | null>(null)
@@ -858,41 +855,63 @@ function ChangePasswordCard() {
   })
 
   return (
-    <View style={{ gap: 12 }}>
-      <Text style={[type.labelSm, { color: theme.textMuted }]}>
-        {t("profile.changePw")}
-      </Text>
-      <Input
-        label={t("profile.currentPw")}
-        value={current}
-        onChangeText={(v) => {
-          setCurrent(v)
-          setMsg(null)
-        }}
-        secureTextEntry
-        autoCapitalize="none"
-      />
-      <Input
-        label={t("profile.newPw")}
-        hint={t("profile.pwHint")}
-        value={next}
-        onChangeText={(v) => {
-          setNext(v)
-          setMsg(null)
-        }}
-        secureTextEntry
-        autoCapitalize="none"
-      />
-      {!!msg && (
-        <Text style={[type.bodySm, { color: theme.textMuted }]}>{msg}</Text>
-      )}
-      <Button
-        title={changeM.isPending ? t("profile.saving") : t("profile.updatePw")}
-        variant="secondary"
-        disabled={!current || next.length < 8 || changeM.isPending}
-        onPress={() => changeM.mutate()}
-      />
-    </View>
+    <Card>
+      <View style={{ gap: 12 }}>
+        <Pressable
+          onPress={() => setOpen((o) => !o)}
+          style={{
+            flexDirection: "row",
+            alignItems: "center",
+            justifyContent: "space-between",
+          }}
+        >
+          <Text style={[type.labelSm, { color: theme.textMuted }]}>
+            {t("profile.changePw")}
+          </Text>
+          <Text style={[type.body, { color: theme.textDim }]}>
+            {open ? "−" : "+"}
+          </Text>
+        </Pressable>
+        {open && (
+          <View style={{ gap: 12 }}>
+            <Input
+              label={t("profile.currentPw")}
+              value={current}
+              onChangeText={(v) => {
+                setCurrent(v)
+                setMsg(null)
+              }}
+              secureTextEntry
+              autoCapitalize="none"
+            />
+            <Input
+              label={t("profile.newPw")}
+              hint={t("profile.pwHint")}
+              value={next}
+              onChangeText={(v) => {
+                setNext(v)
+                setMsg(null)
+              }}
+              secureTextEntry
+              autoCapitalize="none"
+            />
+            {!!msg && (
+              <Text style={[type.bodySm, { color: theme.textMuted }]}>
+                {msg}
+              </Text>
+            )}
+            <Button
+              title={
+                changeM.isPending ? t("profile.saving") : t("profile.updatePw")
+              }
+              variant="secondary"
+              disabled={!current || next.length < 8 || changeM.isPending}
+              onPress={() => changeM.mutate()}
+            />
+          </View>
+        )}
+      </View>
+    </Card>
   )
 }
 
@@ -930,10 +949,7 @@ function AboutSection() {
         {contributorsQ.isLoading ? (
           <ActivityIndicator color={theme.accent} />
         ) : (contributorsQ.data ?? []).length === 0 ? (
-          <EmptyState
-            title={t("profile.noContrib")}
-            glyph={motifChar(language)}
-          />
+          <EmptyState title={t("profile.noContrib")} glyph="○" />
         ) : (
           <View style={{ borderTopWidth: 1, borderTopColor: theme.border }}>
             {(contributorsQ.data ?? []).map((c, i, arr) => (
@@ -955,7 +971,7 @@ function AboutSection() {
                     borderRadius: 2,
                     borderWidth: 1,
                     borderColor: theme.border,
-                    backgroundColor: theme.surface,
+                    backgroundColor: contributorColor(c.name, theme) + "22",
                     alignItems: "center",
                     justifyContent: "center",
                   }}
@@ -964,7 +980,7 @@ function AboutSection() {
                     style={{
                       fontFamily: fonts.serif,
                       fontSize: 18,
-                      color: theme.accent,
+                      color: contributorColor(c.name, theme),
                     }}
                   >
                     {c.name.slice(0, 1).toUpperCase()}
@@ -987,7 +1003,7 @@ function AboutSection() {
                   </Text>
                 </View>
                 {c.mandarin_level && (
-                  <Text style={[type.labelSm, { color: theme.accent }]}>
+                  <Text style={[type.labelSm, { color: theme.textMuted }]}>
                     {c.mandarin_level.toUpperCase()}
                   </Text>
                 )}
@@ -1005,10 +1021,7 @@ function AboutSection() {
         {sponsorsQ.isLoading ? (
           <ActivityIndicator color={theme.accent} />
         ) : (sponsorsQ.data ?? []).length === 0 ? (
-          <EmptyState
-            title={t("profile.noSponsors")}
-            glyph={motifChar(language)}
-          />
+          <EmptyState title={t("profile.noSponsors")} glyph="♥" />
         ) : (
           <View style={{ borderTopWidth: 1, borderTopColor: theme.border }}>
             {(sponsorsQ.data ?? []).map((s, i, arr) => (

@@ -193,6 +193,7 @@ const en = {
   "profile.bestStreak": "Best streak",
   "profile.learningPath": "Learning path",
   "profile.changeSettings": "Change in Settings →",
+  "profile.current": "Current",
   "profile.memberSince": "Member since",
   "profile.role": "Role",
   "profile.verified": "Verified",

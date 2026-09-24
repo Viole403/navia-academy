@@ -1,4 +1,4 @@
-import { Pressable, Text } from "react-native"
+import { Pressable, Text, View } from "react-native"
 import { useTheme } from "@/theme/ThemeProvider"
 
 interface ChipProps {
@@ -7,12 +7,14 @@ interface ChipProps {
   onPress: () => void
   /** Optional accent (e.g. exam badge color); defaults to theme text. */
   tint?: string
+  /** Small uppercase marker shown after the label (e.g. "Current"). */
+  badge?: string
 }
 
 /**
  * Editorial chip — hairline pill, sharp aesthetic, no fill unless selected.
  */
-export function Chip({ label, selected, onPress, tint }: ChipProps) {
+export function Chip({ label, selected, onPress, tint, badge }: ChipProps) {
   const { theme } = useTheme()
   const active = tint ?? theme.text
 
@@ -31,17 +33,41 @@ export function Chip({ label, selected, onPress, tint }: ChipProps) {
       accessibilityRole="button"
       accessibilityState={{ selected }}
     >
-      <Text
-        style={{
-          color: selected ? theme.bg : theme.text,
-          fontSize: 13,
-          fontWeight: "600",
-          letterSpacing: 0.4,
-        }}
-      >
-        {selected ? "✓ " : ""}
-        {label}
-      </Text>
+      <View style={{ flexDirection: "row", alignItems: "center", gap: 6 }}>
+        <Text
+          style={{
+            color: selected ? theme.bg : theme.text,
+            fontSize: 13,
+            fontWeight: "600",
+            letterSpacing: 0.4,
+          }}
+        >
+          {selected ? "✓ " : ""}
+          {label}
+        </Text>
+        {badge ? (
+          <View
+            style={{
+              borderWidth: 1,
+              borderColor: selected ? theme.bg : active,
+              borderRadius: 999,
+              paddingHorizontal: 6,
+              paddingVertical: 1,
+            }}
+          >
+            <Text
+              style={{
+                color: selected ? theme.bg : active,
+                fontSize: 9,
+                fontWeight: "800",
+                letterSpacing: 1,
+              }}
+            >
+              {badge.toUpperCase()}
+            </Text>
+          </View>
+        ) : null}
+      </View>
     </Pressable>
   )
 }
