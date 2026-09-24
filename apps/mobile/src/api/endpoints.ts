@@ -56,6 +56,20 @@ export const auth = {
       .post("/auth/register", body)
       .then((r) => r.data.data as AuthResultResponse),
   me: () => apiClient.get("/me").then((r) => r.data.data as ApiUser),
+  logout: () =>
+    apiClient.post("/auth/logout").then((r) => r.data.data as { ok: boolean }),
+  requestReset: (email: string) =>
+    apiClient
+      .post("/auth/reset-password", { email })
+      .then((r) => r.data.data as { ok: boolean; reset_token?: string }),
+  confirmReset: (email: string, token: string, new_password: string) =>
+    apiClient
+      .post("/auth/reset-password/confirm", { email, token, new_password })
+      .then((r) => r.data.data as { ok: boolean }),
+  changePassword: (current_password: string, new_password: string) =>
+    apiClient
+      .post("/auth/change-password", { current_password, new_password })
+      .then((r) => r.data.data as { ok: boolean }),
 }
 
 // ─── Progress & SRS ────────────────────────────────────────────────────────

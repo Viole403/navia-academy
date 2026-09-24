@@ -21,7 +21,7 @@ import { Motif } from "@/components/ui/Motif"
 import { useTheme } from "@/theme/ThemeProvider"
 import { fonts, type } from "@/theme/typography"
 import type { ThemeDefinition, ThemeId, ThemeMode } from "@/theme/colors"
-import { community, progress, settings, tasks } from "@/api/endpoints"
+import { auth, community, progress, settings, tasks } from "@/api/endpoints"
 import { examBadgeColor, motifChar } from "@/lib/languages"
 import { useOnboardingStore } from "@/store/onboarding"
 import {
@@ -132,6 +132,11 @@ export default function ProfileTab() {
         text: "Sign out",
         style: "destructive",
         onPress: async () => {
+          try {
+            await auth.logout()
+          } catch {
+            // Server logout is best-effort; local tokens are cleared anyway.
+          }
           await clearTokens()
           signOut()
           router.replace("/(auth)")
@@ -634,6 +639,8 @@ export default function ProfileTab() {
                 />
               </View>
             )}
+
+            <ChangePasswordCard />
           </View>
         )}
 
@@ -802,6 +809,61 @@ function SettingsSwitch({
         onValueChange={onChange}
         trackColor={{ false: theme.border, true: theme.accent }}
         thumbColor={theme.white}
+      />
+    </View>
+  )
+}
+
+function ChangePasswordCard() {
+  const { theme } = useTheme()
+  const [current, setCurrent] = useState("")
+  const [next, setNext] = useState("")
+  const [msg, setMsg] = useState<string | null>(null)
+
+  const changeM = useMutation({
+    mutationFn: () => auth.changePassword(current, next),
+    onSuccess: () => {
+      setCurrent("")
+      setNext("")
+      setMsg("Password changed.")
+    },
+    onError: () => setMsg("Change failed. Check the current password."),
+  })
+
+  return (
+    <View style={{ gap: 12 }}>
+      <Text style={[type.labelSm, { color: theme.textMuted }]}>
+        Change password
+      </Text>
+      <Input
+        label="Current password"
+        value={current}
+        onChangeText={(v) => {
+          setCurrent(v)
+          setMsg(null)
+        }}
+        secureTextEntry
+        autoCapitalize="none"
+      />
+      <Input
+        label="New password"
+        hint="At least 8 characters"
+        value={next}
+        onChangeText={(v) => {
+          setNext(v)
+          setMsg(null)
+        }}
+        secureTextEntry
+        autoCapitalize="none"
+      />
+      {!!msg && (
+        <Text style={[type.bodySm, { color: theme.textMuted }]}>{msg}</Text>
+      )}
+      <Button
+        title={changeM.isPending ? "Saving…" : "Update password"}
+        variant="secondary"
+        disabled={!current || next.length < 8 || changeM.isPending}
+        onPress={() => changeM.mutate()}
       />
     </View>
   )

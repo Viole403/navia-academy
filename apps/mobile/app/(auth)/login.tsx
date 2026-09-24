@@ -111,6 +111,22 @@ export default function Login() {
               value={password}
               onChangeText={setPassword}
             />
+            <Pressable
+              onPress={() => router.push("/(auth)/forgot")}
+              hitSlop={8}
+              style={{ alignItems: "flex-end", paddingVertical: 4 }}
+            >
+              <Text
+                style={{
+                  fontFamily: fonts.sans,
+                  fontSize: 14,
+                  color: theme.accent,
+                  fontWeight: "600",
+                }}
+              >
+                Forgot password?
+              </Text>
+            </Pressable>
             {error && (
               <Text style={{ color: theme.red, fontSize: 13 }}>{error}</Text>
             )}
