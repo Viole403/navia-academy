@@ -41,7 +41,8 @@ interface ButtonProps {
 
 /**
  * Editorial button — flat, hairline borders, no shadows.
- * Primary & Danger = filled solid. Secondary = outline. Ghost = underline-only.
+ * Primary = monochrome solid (theme.text, flips with light/dark).
+ * Danger = red solid. Secondary = outline. Ghost = underline-only.
  */
 export function Button({
   title,
@@ -110,16 +111,18 @@ export function Button({
     variant === "danger"
       ? theme.red
       : variant === "primary"
-        ? theme.accent
+        ? theme.text
         : "transparent"
   const bg = rawBg ?? (variant === "danger" ? FALLBACK.red : FALLBACK.accent)
   const borderColor = variant === "secondary" ? theme.textDim : bg
   const textColor =
-    filled && luminance(bg) > 0.3
-      ? "#1F1F1F"
-      : filled
-        ? theme.white
-        : theme.text
+    variant === "primary"
+      ? (theme.bg ?? FALLBACK.bg)
+      : filled && luminance(bg) > 0.3
+        ? "#1F1F1F"
+        : filled
+          ? theme.white
+          : theme.text
 
   return (
     <Animated.View style={pressStyle}>
