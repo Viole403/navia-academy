@@ -27,6 +27,7 @@ import {
   headword,
   isCharScript,
   languageInfo,
+  motifChar,
   reading,
   wordLabel,
 } from "@/lib/languages"
@@ -190,6 +191,46 @@ export default function LearnTab() {
             <Text style={[type.bodySm, { color: theme.textMuted }]}>
               Pair {wordLabel(language, false)} to meanings.{" "}
               {examDisplayName(examType)} {examLevel} deck.
+            </Text>
+          </View>
+          <Text
+            style={{
+              color: theme.textDim,
+              fontFamily: fonts.serif,
+              fontSize: 18,
+            }}
+          >
+            →
+          </Text>
+        </Pressable>
+
+        <Pressable
+          onPress={() => router.push("/library")}
+          style={{
+            padding: 18,
+            borderWidth: 1,
+            borderColor: theme.border,
+            borderRadius: 4,
+            backgroundColor: theme.surface,
+            flexDirection: "row",
+            alignItems: "center",
+            gap: 16,
+          }}
+        >
+          <Text
+            style={{
+              fontFamily: fonts.serif,
+              fontSize: 40,
+              color: theme.accent,
+              fontWeight: "500",
+            }}
+          >
+            {motifChar(language)}
+          </Text>
+          <View style={{ flex: 1, gap: 4 }}>
+            <Text style={[type.h3, { color: theme.text }]}>Library</Text>
+            <Text style={[type.bodySm, { color: theme.textMuted }]}>
+              Grammar, readings, and conversations.
             </Text>
           </View>
           <Text
