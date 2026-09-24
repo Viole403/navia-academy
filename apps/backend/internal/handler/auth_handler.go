@@ -352,7 +352,7 @@ func (h *AuthHandler) GoogleExchange(c *fiber.Ctx) error {
 		return response.Error(c, fiber.StatusNotImplemented, "NOT_CONFIGURED", "Google sign-in is not configured")
 	}
 
-	user, tokenPair, err := h.authService.GoogleExchange(c.Context(), h.google.ClientID, req.IDToken)
+	user, tokenPair, err := h.authService.GoogleExchange(c.Context(), req.IDToken, h.google.ClientID, h.google.AndroidClientID)
 	if err != nil {
 		if err == service.ErrInvalidGoogleToken {
 			return response.Error(c, fiber.StatusUnauthorized, "INVALID_GOOGLE_TOKEN", "Google sign-in failed")

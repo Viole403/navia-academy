@@ -44,11 +44,11 @@ type RedisConfig struct {
 }
 
 type JWTConfig struct {
-	AccessSecret     string
-	RefreshSecret    string
-	AccessDuration   time.Duration
-	RefreshDuration  time.Duration
-	Issuer           string
+	AccessSecret    string
+	RefreshSecret   string
+	AccessDuration  time.Duration
+	RefreshDuration time.Duration
+	Issuer          string
 }
 
 type AudioConfig struct {
@@ -95,9 +95,10 @@ type WebhookConfig struct {
 }
 
 type GoogleConfig struct {
-	ClientID     string
-	ClientSecret string
-	RedirectURL  string
+	ClientID        string
+	AndroidClientID string
+	ClientSecret    string
+	RedirectURL     string
 }
 
 // Load reads configuration from the environment. Required production secrets
@@ -157,16 +158,17 @@ func Load() *Config {
 			Pass: getEnv("SMTP_PASS", ""),
 			From: getEnv("SMTP_FROM", "noreply@navia.academy"),
 		},
-	App: AppConfig{
-		SiteURL:         getEnv("SITE_URL", "http://localhost:3000"),
-		CORSOrigins:     getEnv("CORS_ORIGINS", "http://localhost:3000"),
-		RateLimitPerMin: getInt("RATE_LIMIT_PER_MIN", 60),
-		LogLevel:        getEnv("LOG_LEVEL", "info"),
-	},
+		App: AppConfig{
+			SiteURL:         getEnv("SITE_URL", "http://localhost:3000"),
+			CORSOrigins:     getEnv("CORS_ORIGINS", "http://localhost:3000"),
+			RateLimitPerMin: getInt("RATE_LIMIT_PER_MIN", 60),
+			LogLevel:        getEnv("LOG_LEVEL", "info"),
+		},
 		Google: GoogleConfig{
-			ClientID:     getEnv("AUTH_GOOGLE_ID", ""),
-			ClientSecret: getEnv("AUTH_GOOGLE_SECRET", ""),
-			RedirectURL:  getEnv("AUTH_GOOGLE_REDIRECT_URL", ""),
+			ClientID:        getEnv("AUTH_GOOGLE_ID", ""),
+			AndroidClientID: getEnv("AUTH_GOOGLE_ANDROID_ID", ""),
+			ClientSecret:    getEnv("AUTH_GOOGLE_SECRET", ""),
+			RedirectURL:     getEnv("AUTH_GOOGLE_REDIRECT_URL", ""),
 		},
 		Webhook: WebhookConfig{
 			KofiVerificationToken: getEnv("KOFI_VERIFICATION_TOKEN", ""),

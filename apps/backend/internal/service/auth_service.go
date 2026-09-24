@@ -290,12 +290,9 @@ type googleTokenInfo struct {
 	Aud           string `json:"aud"`
 }
 
-func (s *AuthService) GoogleExchange(ctx context.Context, clientID, idToken string) (*models.User, *jwt.TokenPair, error) {
-	if clientID == "" {
+func (s *AuthService) GoogleExchange(ctx context.Context, idToken string, clientIDs ...string) (*models.User, *jwt.TokenPair, error) {
+	if len(clientIDs) == 0 || idToken == "" {
 		return nil, nil, ErrGoogleNotConfigured
-	}
-	if idToken == "" {
-		return nil, nil, ErrInvalidGoogleToken
 	}
 
 	endpoint := "https://oauth2.googleapis.com/tokeninfo?id_token=" + url.QueryEscape(idToken)
@@ -315,7 +312,14 @@ func (s *AuthService) GoogleExchange(ctx context.Context, clientID, idToken stri
 	if err := json.NewDecoder(res.Body).Decode(&info); err != nil {
 		return nil, nil, ErrInvalidGoogleToken
 	}
-	if info.Aud != clientID || info.Sub == "" || info.Email == "" {
+	matched := false
+	for _, id := range clientIDs {
+		if id != "" && info.Aud == id {
+			matched = true
+			break
+		}
+	}
+	if !matched || info.Sub == "" || info.Email == "" {
 		return nil, nil, ErrInvalidGoogleToken
 	}
 
