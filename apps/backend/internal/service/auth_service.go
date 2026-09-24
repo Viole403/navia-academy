@@ -4,15 +4,18 @@ import (
 	"context"
 	"crypto/sha256"
 	"encoding/hex"
+	"encoding/json"
 	"errors"
+	"net/http"
+	"net/url"
 	"strings"
 	"time"
 
 	"github.com/google/uuid"
-	"golang.org/x/crypto/bcrypt"
 	"github.com/navia-academy/backend/internal/models"
 	"github.com/navia-academy/backend/internal/repository"
 	"github.com/navia-academy/backend/pkg/jwt"
+	"golang.org/x/crypto/bcrypt"
 )
 
 var (
@@ -35,14 +38,14 @@ var ValidRoles = map[string]bool{
 }
 
 type AuthService struct {
-	userRepo  *repository.UserRepository
-	jwtSvc    *jwt.JWTService
+	userRepo *repository.UserRepository
+	jwtSvc   *jwt.JWTService
 }
 
 func NewAuthService(userRepo *repository.UserRepository, jwtSvc *jwt.JWTService) *AuthService {
 	return &AuthService{
-		userRepo:  userRepo,
-		jwtSvc:    jwtSvc,
+		userRepo: userRepo,
+		jwtSvc:   jwtSvc,
 	}
 }
 
@@ -271,4 +274,91 @@ func (s *AuthService) ChangePassword(ctx context.Context, userID, currentPasswor
 	}
 
 	return s.userRepo.UpdatePassword(ctx, userID, string(hashed))
+}
+
+var (
+	ErrGoogleNotConfigured = errors.New("google sign-in is not configured")
+	ErrInvalidGoogleToken  = errors.New("invalid google id token")
+)
+
+type googleTokenInfo struct {
+	Sub           string `json:"sub"`
+	Email         string `json:"email"`
+	EmailVerified string `json:"email_verified"`
+	Name          string `json:"name"`
+	Picture       string `json:"picture"`
+	Aud           string `json:"aud"`
+}
+
+func (s *AuthService) GoogleExchange(ctx context.Context, clientID, idToken string) (*models.User, *jwt.TokenPair, error) {
+	if clientID == "" {
+		return nil, nil, ErrGoogleNotConfigured
+	}
+	if idToken == "" {
+		return nil, nil, ErrInvalidGoogleToken
+	}
+
+	endpoint := "https://oauth2.googleapis.com/tokeninfo?id_token=" + url.QueryEscape(idToken)
+	req, err := http.NewRequestWithContext(ctx, http.MethodGet, endpoint, nil)
+	if err != nil {
+		return nil, nil, err
+	}
+	res, err := http.DefaultClient.Do(req)
+	if err != nil {
+		return nil, nil, err
+	}
+	defer res.Body.Close()
+	if res.StatusCode != http.StatusOK {
+		return nil, nil, ErrInvalidGoogleToken
+	}
+	var info googleTokenInfo
+	if err := json.NewDecoder(res.Body).Decode(&info); err != nil {
+		return nil, nil, ErrInvalidGoogleToken
+	}
+	if info.Aud != clientID || info.Sub == "" || info.Email == "" {
+		return nil, nil, ErrInvalidGoogleToken
+	}
+
+	existing, _ := s.userRepo.FindByEmail(ctx, info.Email)
+	if existing != nil {
+		tokenPair, err := s.jwtSvc.GenerateTokenPair(existing.ID, existing.Email, existing.Role)
+		if err != nil {
+			return nil, nil, err
+		}
+		return existing, tokenPair, nil
+	}
+
+	name := info.Name
+	if name == "" {
+		name = strings.Split(info.Email, "@")[0]
+	}
+	now := time.Now()
+	user := &models.User{
+		ID:            uuid.New().String(),
+		Name:          name,
+		Email:         info.Email,
+		EmailVerified: info.EmailVerified == "true",
+		Role:          "student",
+		CreatedAt:     now,
+		UpdatedAt:     now,
+	}
+	if info.Picture != "" {
+		picture := info.Picture
+		user.Image = &picture
+	}
+
+	if err := s.userRepo.Create(ctx, user); err != nil {
+		return nil, nil, err
+	}
+
+	if err := s.userRepo.CreateAccount(ctx, user.ID, "google", info.Sub, ""); err != nil {
+		return nil, nil, err
+	}
+
+	tokenPair, err := s.jwtSvc.GenerateTokenPair(user.ID, user.Email, user.Role)
+	if err != nil {
+		return nil, nil, err
+	}
+
+	return user, tokenPair, nil
 }

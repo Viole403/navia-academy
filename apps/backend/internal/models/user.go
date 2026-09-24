@@ -64,6 +64,10 @@ type RefreshTokenRequest struct {
 	RefreshToken string `json:"refresh_token" validate:"required" example:"<jwt-refresh-token>"`
 }
 
+type GoogleExchangeRequest struct {
+	IDToken string `json:"id_token" validate:"required" example:"<google-id-token>"`
+}
+
 type SetUserRoleRequest struct {
 	Role string `json:"role" validate:"required" example:"reviewer"`
 }

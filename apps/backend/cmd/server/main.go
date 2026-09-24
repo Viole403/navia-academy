@@ -287,6 +287,7 @@ func main() {
 	auth.Post("/login", authLimiter, authHandler.Login)
 	auth.Post("/refresh", authLimiter, authHandler.RefreshToken)
 	auth.Get("/google", authHandler.GoogleAuthorize)
+	auth.Post("/google/exchange", authLimiter, authHandler.GoogleExchange)
 	auth.Post("/reset-password", authLimiter, authHandler.ResetPassword)
 	auth.Post("/reset-password/confirm", authLimiter, authHandler.ResetPasswordConfirm)
 	auth.Post("/logout", authMW, authHandler.Logout)

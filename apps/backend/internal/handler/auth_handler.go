@@ -11,10 +11,10 @@ import (
 )
 
 type AuthHandler struct {
-	authService       *service.AuthService
-	google            config.GoogleConfig
-	siteURL           string
-	exposeResetToken  bool
+	authService      *service.AuthService
+	google           config.GoogleConfig
+	siteURL          string
+	exposeResetToken bool
 }
 
 func NewAuthHandler(authService *service.AuthService) *AuthHandler {
@@ -126,8 +126,8 @@ func (h *AuthHandler) Login(c *fiber.Ctx) error {
 	}
 
 	return response.JSON(c, fiber.StatusOK, fiber.Map{
-		"user":         authResult.User,
-		"token_pair":   tokenPair,
+		"user":       authResult.User,
+		"token_pair": tokenPair,
 	})
 }
 
@@ -326,5 +326,45 @@ func (h *AuthHandler) GoogleAuthorize(c *fiber.Ctx) error {
 
 	return response.JSON(c, fiber.StatusOK, fiber.Map{
 		"url": "https://accounts.google.com/o/oauth2/v2/auth?" + q.Encode(),
+	})
+}
+
+// GoogleExchange verifies a Google ID token obtained by a native client,
+// finds or creates the matching user, and returns the session token pair.
+// @Summary Google ID token exchange (native clients)
+// @Description Verifies the Google ID token server-side, then returns {user, token_pair}. 501 when AUTH_GOOGLE_ID not configured.
+// @Tags Auth
+// @Accept json
+// @Produce json
+// @Param body body models.GoogleExchangeRequest true "Google ID token"
+// @Success 200 {object} response.APIResponse{data=object}
+// @Failure 400 {object} response.APIError "INVALID_BODY"
+// @Failure 401 {object} response.APIError "INVALID_GOOGLE_TOKEN"
+// @Failure 501 {object} response.APIError "NOT_CONFIGURED"
+// @Router /auth/google/exchange [post]
+func (h *AuthHandler) GoogleExchange(c *fiber.Ctx) error {
+	var req models.GoogleExchangeRequest
+	if err := c.BodyParser(&req); err != nil {
+		return response.Error(c, fiber.StatusBadRequest, "INVALID_BODY", "invalid request body")
+	}
+
+	if h.google.ClientID == "" {
+		return response.Error(c, fiber.StatusNotImplemented, "NOT_CONFIGURED", "Google sign-in is not configured")
+	}
+
+	user, tokenPair, err := h.authService.GoogleExchange(c.Context(), h.google.ClientID, req.IDToken)
+	if err != nil {
+		if err == service.ErrInvalidGoogleToken {
+			return response.Error(c, fiber.StatusUnauthorized, "INVALID_GOOGLE_TOKEN", "Google sign-in failed")
+		}
+		if err == service.ErrGoogleNotConfigured {
+			return response.Error(c, fiber.StatusNotImplemented, "NOT_CONFIGURED", "Google sign-in is not configured")
+		}
+		return response.Error(c, fiber.StatusInternalServerError, "GOOGLE_EXCHANGE_FAILED", "Google sign-in failed")
+	}
+
+	return response.JSON(c, fiber.StatusOK, fiber.Map{
+		"user":       user,
+		"token_pair": tokenPair,
 	})
 }
