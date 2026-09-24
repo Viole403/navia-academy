@@ -34,6 +34,7 @@ export default function ExamTab() {
   const storedExamType = useOnboardingStore((s) => s.examType)
   const setStoredExamType = useOnboardingStore((s) => s.setExamType)
   const examTypes = languageInfo(language).examTypes
+  const info = languageInfo(language)
   const initType =
     storedExamType && examTypes.includes(storedExamType)
       ? storedExamType
@@ -147,34 +148,74 @@ export default function ExamTab() {
           </Text>
           <Card>
             <View style={{ gap: 16 }}>
-              <View style={{ gap: 8 }}>
-                <Text style={[type.labelSm, { color: theme.textMuted }]}>
-                  Body
-                </Text>
-                <ScrollView
-                  horizontal
-                  showsHorizontalScrollIndicator={false}
-                  contentContainerStyle={{ gap: 8 }}
+              <View
+                style={{
+                  flexDirection: "row",
+                  alignItems: "center",
+                  gap: 12,
+                }}
+              >
+                <View
+                  style={{
+                    width: 40,
+                    height: 40,
+                    borderRadius: 20,
+                    backgroundColor:
+                      (examBadgeColor(examType) ?? theme.accent) + "1F",
+                    alignItems: "center",
+                    justifyContent: "center",
+                  }}
                 >
-                  {examTypes.map((t) => (
-                    <Chip
-                      key={t}
-                      label={examDisplayName(t)}
-                      selected={examType === t}
-                      tint={examBadgeColor(t)}
-                      onPress={() => pickExamType(t)}
-                    />
-                  ))}
-                </ScrollView>
+                  <View
+                    style={{
+                      width: 12,
+                      height: 12,
+                      borderRadius: 6,
+                      backgroundColor: examBadgeColor(examType) ?? theme.accent,
+                    }}
+                  />
+                </View>
+                <View style={{ flex: 1 }}>
+                  <Text style={[type.h3, { color: theme.text }]}>
+                    {examDisplayName(examType)}
+                  </Text>
+                  <Text style={[type.caption, { color: theme.textMuted }]}>
+                    {examLevels(examType).length} levels · {info.nativeName}
+                  </Text>
+                </View>
               </View>
+              {examTypes.length > 1 && (
+                <View style={{ gap: 8 }}>
+                  <Text style={[type.labelSm, { color: theme.textMuted }]}>
+                    Exam track
+                  </Text>
+                  <ScrollView
+                    horizontal
+                    showsHorizontalScrollIndicator={false}
+                    contentContainerStyle={{ gap: 8 }}
+                  >
+                    {examTypes.map((t) => (
+                      <Chip
+                        key={t}
+                        label={examDisplayName(t)}
+                        selected={examType === t}
+                        tint={examBadgeColor(t)}
+                        onPress={() => pickExamType(t)}
+                      />
+                    ))}
+                  </ScrollView>
+                </View>
+              )}
               <View style={{ gap: 8 }}>
                 <Text style={[type.labelSm, { color: theme.textMuted }]}>
                   Level
                 </Text>
-                <ScrollView
-                  horizontal
-                  showsHorizontalScrollIndicator={false}
-                  contentContainerStyle={{ gap: 8 }}
+                <View
+                  style={{
+                    flexDirection: "row",
+                    flexWrap: "wrap",
+                    gap: 8,
+                  }}
                 >
                   {examLevels(examType).map((lv) => (
                     <Chip
@@ -184,7 +225,7 @@ export default function ExamTab() {
                       onPress={() => setExamLevel(lv)}
                     />
                   ))}
-                </ScrollView>
+                </View>
               </View>
               <Button
                 title={
