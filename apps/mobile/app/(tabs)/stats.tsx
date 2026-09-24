@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useMemo, useState } from "react"
 import { ActivityIndicator, ScrollView, Text, View } from "react-native"
 import { SafeAreaView } from "react-native-safe-area-context"
 import { useQuery } from "@tanstack/react-query"
@@ -16,7 +16,9 @@ import type { Achievement, StudySession } from "@/types/api"
 export default function StatsTab() {
   const { theme } = useTheme()
   const language = useOnboardingStore((s) => s.language)
-  const [view, setView] = useState<"overview" | "badges">("overview")
+  const [view, setView] = useState<"overview" | "badges" | "calendar">(
+    "overview"
+  )
 
   const progressQ = useQuery({ queryKey: ["progress"], queryFn: progress.get })
   const achievementsQ = useQuery({
@@ -27,7 +29,7 @@ export default function StatsTab() {
   const sessionsQ = useQuery({
     queryKey: ["study-sessions"],
     queryFn: () => progress.studySessions(50, 0),
-    enabled: view === "overview",
+    enabled: view === "overview" || view === "calendar",
   })
 
   return (
@@ -71,6 +73,7 @@ export default function StatsTab() {
         >
           {[
             { id: "overview" as const, label: "Overview" },
+            { id: "calendar" as const, label: "Calendar" },
             { id: "badges" as const, label: "Badges" },
           ].map((v) => {
             const sel = view === v.id
@@ -117,6 +120,12 @@ export default function StatsTab() {
             loading={achievementsQ.isLoading}
           />
         )}
+        {view === "calendar" && (
+          <CalendarView
+            sessions={sessionsQ.data ?? []}
+            loading={sessionsQ.isLoading}
+          />
+        )}
       </ScrollView>
     </SafeAreaView>
   )
@@ -139,6 +148,7 @@ function OverviewView({
   sessionsLoading: boolean
 }) {
   const { theme } = useTheme()
+  const language = useOnboardingStore((s) => s.language)
   const totalMinutes = sessions.reduce((acc, s) => acc + s.minutes, 0)
   const totalSessionXP = sessions.reduce((acc, s) => acc + s.xp, 0)
 
@@ -172,7 +182,7 @@ function OverviewView({
           <EmptyState
             title="No sessions yet"
             message="Study sessions appear here."
-            glyph="墨"
+            glyph={motifChar(language)}
           />
         ) : (
           <View style={{ borderTopWidth: 1, borderTopColor: theme.border }}>
@@ -204,6 +214,78 @@ function OverviewView({
           </Text>
         )}
       </View>
+    </View>
+  )
+}
+
+function CalendarView({
+  sessions,
+  loading,
+}: {
+  sessions: StudySession[]
+  loading: boolean
+}) {
+  const { theme } = useTheme()
+  const days = useMemo(() => {
+    const byDate = new Map<string, number>()
+    for (const s of sessions)
+      byDate.set(s.date, (byDate.get(s.date) ?? 0) + s.minutes)
+    const out: { date: Date; key: string; minutes: number }[] = []
+    const today = new Date()
+    for (let i = 13; i >= 0; i--) {
+      const d = new Date(today)
+      d.setDate(today.getDate() - i)
+      const key = d.toISOString().slice(0, 10)
+      out.push({ date: d, key, minutes: byDate.get(key) ?? 0 })
+    }
+    return out
+  }, [sessions])
+  const max = Math.max(1, ...days.map((d) => d.minutes))
+
+  return (
+    <View style={{ gap: 12 }}>
+      <Text style={[type.labelSm, { color: theme.textMuted }]}>
+        Last 14 days
+      </Text>
+      {loading ? (
+        <ActivityIndicator color={theme.accent} />
+      ) : (
+        <View
+          style={{
+            flexDirection: "row",
+            alignItems: "flex-end",
+            gap: 6,
+            borderTopWidth: 1,
+            borderBottomWidth: 1,
+            borderColor: theme.border,
+            paddingVertical: 16,
+          }}
+        >
+          {days.map((d) => (
+            <View key={d.key} style={{ flex: 1, alignItems: "center", gap: 4 }}>
+              <View
+                style={{
+                  width: "100%",
+                  height: 64,
+                  justifyContent: "flex-end",
+                }}
+              >
+                <View
+                  style={{
+                    height: Math.max(2, (d.minutes / max) * 64),
+                    backgroundColor:
+                      d.minutes > 0 ? theme.accent : theme.border,
+                    borderRadius: 2,
+                  }}
+                />
+              </View>
+              <Text style={[type.caption, { color: theme.textDim }]}>
+                {d.date.getDate()}
+              </Text>
+            </View>
+          ))}
+        </View>
+      )}
     </View>
   )
 }

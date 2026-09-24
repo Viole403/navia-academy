@@ -586,6 +586,32 @@ export default function ProfileTab() {
                     }
                   }}
                 />
+                <View style={{ gap: 8 }}>
+                  <Text style={[type.labelSm, { color: theme.textMuted }]}>
+                    Reminder time
+                  </Text>
+                  <View
+                    style={{ flexDirection: "row", flexWrap: "wrap", gap: 8 }}
+                  >
+                    {["07:00", "12:00", "20:00"].map((t) => (
+                      <Chip
+                        key={t}
+                        label={t}
+                        selected={
+                          (settingsQ.data.reminder_time ?? "20:00") === t
+                        }
+                        onPress={async () => {
+                          updateSettingsM.mutate({ reminder_time: t })
+                          if (settingsQ.data.daily_reminder) {
+                            await cancelStreakReminder()
+                            const [h, m] = t.split(":").map(Number)
+                            await scheduleDailyStreakReminder(h || 20, m || 0)
+                          }
+                        }}
+                      />
+                    ))}
+                  </View>
+                </View>
                 <SettingsSwitch
                   label="Weekly summary"
                   hint="Every Monday morning"
