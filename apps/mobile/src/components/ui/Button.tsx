@@ -94,7 +94,7 @@ export function Button({
       : variant === "primary"
         ? theme.accent
         : "transparent"
-  const borderColor = variant === "secondary" ? theme.border : bg
+  const borderColor = variant === "secondary" ? theme.textDim : bg
   const textColor = filled ? theme.white : theme.text
 
   return (

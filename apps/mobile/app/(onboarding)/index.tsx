@@ -230,44 +230,6 @@ export default function Onboarding() {
                   </Enter>
                 )
               })}
-
-              {/* Exam picker for chosen language */}
-              <View style={{ gap: 10, marginTop: 8 }}>
-                <Text style={[type.labelSm, { color: theme.textMuted }]}>
-                  {t("ob.examTrack")}
-                </Text>
-                <View
-                  style={{ flexDirection: "row", flexWrap: "wrap", gap: 8 }}
-                >
-                  {languageInfo(language).examTypes.map((t) => {
-                    const sel = examType === t
-                    return (
-                      <Pressable
-                        key={t}
-                        onPress={() => setExamType(t)}
-                        style={{
-                          paddingVertical: 10,
-                          paddingHorizontal: 16,
-                          borderRadius: 2,
-                          borderWidth: 1.5,
-                          borderColor: sel ? theme.text : theme.border,
-                          backgroundColor: sel ? theme.text : "transparent",
-                        }}
-                      >
-                        <Text
-                          style={{
-                            color: sel ? theme.bg : theme.text,
-                            fontWeight: "600",
-                            fontSize: 13,
-                          }}
-                        >
-                          {examDisplayName(t)}
-                        </Text>
-                      </Pressable>
-                    )
-                  })}
-                </View>
-              </View>
             </View>
           )}
 
@@ -276,12 +238,14 @@ export default function Onboarding() {
               {[
                 {
                   id: "simplified" as ScriptPref,
+                  exam: "hsk",
                   display: "简体",
                   name: "Simplified",
                   hint: "Mainland China · Singapore · Malaysia",
                 },
                 {
                   id: "traditional" as ScriptPref,
+                  exam: "tocfl",
                   display: "繁體",
                   name: "Traditional",
                   hint: "Taiwan · Hong Kong · Macau",
@@ -291,7 +255,10 @@ export default function Onboarding() {
                 return (
                   <Enter key={s.id} index={i}>
                     <Pressable
-                      onPress={() => setScript(s.id)}
+                      onPress={() => {
+                        setScript(s.id)
+                        setExamType(s.exam)
+                      }}
                       style={{
                         paddingVertical: 24,
                         borderTopWidth: 1,
@@ -497,8 +464,7 @@ export default function Onboarding() {
         {/* CTA — Back mirrors the forward skip, primary takes 2/3 */}
         <View
           style={{
-            marginTop: "auto",
-            paddingTop: 16,
+            paddingTop: 8,
             paddingBottom: Math.max(insets.bottom, 16) + 12,
             flexDirection: "row",
             gap: 12,
