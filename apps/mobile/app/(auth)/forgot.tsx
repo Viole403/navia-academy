@@ -13,10 +13,12 @@ import { fonts, type } from "@/theme/typography"
 import { auth } from "@/api/endpoints"
 import { motifChar } from "@/lib/languages"
 import { useOnboardingStore } from "@/store/onboarding"
+import { useT } from "@/i18n"
 
 export default function ForgotScreen() {
   const { theme } = useTheme()
   const router = useRouter()
+  const t = useT()
   const language = useOnboardingStore((s) => s.language)
 
   const [email, setEmail] = useState("")
@@ -54,7 +56,7 @@ export default function ForgotScreen() {
           <View style={{ gap: 12, alignItems: "flex-start" }}>
             <Motif char={motifChar(language)} size={56} />
             <Text style={[type.display, { color: theme.text, fontSize: 32 }]}>
-              Reset password
+              {t("auth.resetPassword")}
             </Text>
             <Text style={[type.bodySm, { color: theme.textMuted }]}>
               {sent
@@ -67,7 +69,7 @@ export default function ForgotScreen() {
         <Enter index={1}>
           <View style={{ gap: 16 }}>
             <Input
-              label="Email"
+              label={t("auth.email")}
               placeholder="you@example.com"
               autoCapitalize="none"
               keyboardType="email-address"
@@ -82,7 +84,7 @@ export default function ForgotScreen() {
             {sent && (
               <>
                 <Input
-                  label="Reset token"
+                  label={t("auth.resetToken")}
                   placeholder="Paste the token"
                   autoCapitalize="none"
                   value={token}
@@ -92,7 +94,7 @@ export default function ForgotScreen() {
                   }}
                 />
                 <Input
-                  label="New password"
+                  label={t("auth.newPassword")}
                   hint="At least 8 characters"
                   secureTextEntry
                   autoComplete="new-password"
@@ -115,7 +117,7 @@ export default function ForgotScreen() {
         <View style={{ marginTop: "auto", gap: 4, paddingTop: 16 }}>
           {!sent ? (
             <Button
-              title="Send reset token"
+              title={t("auth.sendToken")}
               onPress={() => requestM.mutate()}
               loading={requestM.isPending}
               disabled={!email}
@@ -123,7 +125,7 @@ export default function ForgotScreen() {
             />
           ) : (
             <Button
-              title="Set new password"
+              title={t("auth.setNewPassword")}
               onPress={() => confirmM.mutate()}
               loading={confirmM.isPending}
               disabled={!token || next.length < 8}
@@ -142,9 +144,9 @@ export default function ForgotScreen() {
                 color: theme.textMuted,
               }}
             >
-              Remembered it?{" "}
+              {t("auth.remembered")}{" "}
               <Text style={{ color: theme.accent, fontWeight: "600" }}>
-                Sign in
+                {t("auth.signIn")}
               </Text>
             </Text>
           </Pressable>

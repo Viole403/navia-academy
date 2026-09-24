@@ -19,12 +19,14 @@ import { auth } from "@/api/endpoints"
 import { useAuthStore } from "@/store/auth"
 import { useOnboardingStore } from "@/store/onboarding"
 import { motifChar } from "@/lib/languages"
+import { useT } from "@/i18n"
 import { saveTokens } from "@/utils/secure"
 
 export default function Register() {
   const { theme } = useTheme()
   const insets = useSafeAreaInsets()
   const router = useRouter()
+  const t = useT()
   const setAuth = useAuthStore((s) => s.setAuth)
   const language = useOnboardingStore((s) => s.language)
 
@@ -103,7 +105,7 @@ export default function Register() {
           {/* Form */}
           <View style={{ gap: 24 }}>
             <Input
-              label="Name"
+              label={t("auth.name")}
               placeholder="Chen Wei"
               autoCapitalize="words"
               autoComplete="name"
@@ -111,7 +113,7 @@ export default function Register() {
               onChangeText={setName}
             />
             <Input
-              label="Email"
+              label={t("auth.email")}
               placeholder="you@example.com"
               autoCapitalize="none"
               keyboardType="email-address"
@@ -120,7 +122,7 @@ export default function Register() {
               onChangeText={setEmail}
             />
             <Input
-              label="Password"
+              label={t("auth.password")}
               placeholder="8+ characters"
               secureTextEntry
               autoComplete="password-new"
@@ -149,7 +151,7 @@ export default function Register() {
             }}
           >
             <Button
-              title="Create account"
+              title={t("auth.createAccount")}
               onPress={() => register.mutate()}
               loading={register.isPending}
               disabled={!name || !email || password.length < 8}
@@ -167,9 +169,9 @@ export default function Register() {
                   color: theme.textMuted,
                 }}
               >
-                Already have one?{" "}
+                {t("auth.haveAccount")}{" "}
                 <Text style={{ color: theme.accent, fontWeight: "600" }}>
-                  Sign in
+                  {t("auth.signIn")}
                 </Text>
               </Text>
             </Pressable>

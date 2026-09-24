@@ -1,26 +1,19 @@
 import { Redirect, Tabs } from "expo-router"
-import { Text } from "react-native"
 import { useTheme } from "@/theme/ThemeProvider"
 import { fonts } from "@/theme/typography"
 import { useAuthStore } from "@/store/auth"
-
-const TAB_ICONS: Record<string, string> = {
-  index: "卷", // scroll / book
-  learn: "学", // learn
-  exam: "考", // exam
-  stats: "图", // chart
-  profile: "我", // me
-}
+import { useT } from "@/i18n"
 
 export default function TabsLayout() {
   const { theme } = useTheme()
   const user = useAuthStore((s) => s.user)
+  const t = useT()
 
   if (!user) return <Redirect href="/(auth)" />
 
   return (
     <Tabs
-      screenOptions={({ route }) => ({
+      screenOptions={{
         headerShown: false,
         tabBarActiveTintColor: theme.accent,
         tabBarInactiveTintColor: theme.textDim,
@@ -41,25 +34,13 @@ export default function TabsLayout() {
           letterSpacing: 1.6,
           textTransform: "uppercase",
         },
-        tabBarIcon: ({ focused, color }) => (
-          <Text
-            style={{
-              fontFamily: fonts.serif,
-              fontSize: 22,
-              color,
-              opacity: focused ? 1 : 0.7,
-            }}
-          >
-            {TAB_ICONS[route.name] ?? "·"}
-          </Text>
-        ),
-      })}
+      }}
     >
-      <Tabs.Screen name="index" options={{ title: "Today" }} />
-      <Tabs.Screen name="learn" options={{ title: "Learn" }} />
-      <Tabs.Screen name="exam" options={{ title: "Exam" }} />
-      <Tabs.Screen name="stats" options={{ title: "Stats" }} />
-      <Tabs.Screen name="profile" options={{ title: "Me" }} />
+      <Tabs.Screen name="index" options={{ title: t("tabs.today") }} />
+      <Tabs.Screen name="learn" options={{ title: t("tabs.learn") }} />
+      <Tabs.Screen name="exam" options={{ title: t("tabs.exam") }} />
+      <Tabs.Screen name="stats" options={{ title: t("tabs.stats") }} />
+      <Tabs.Screen name="profile" options={{ title: t("tabs.me") }} />
     </Tabs>
   )
 }

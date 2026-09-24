@@ -30,6 +30,7 @@ import {
   scheduleDailyStreakReminder,
 } from "@/utils/notifications"
 import { useAuthStore } from "@/store/auth"
+import { useLocaleStore, type AppLocale } from "@/i18n"
 import { useThemePrefs } from "@/store/theme"
 import { clearTokens } from "@/utils/secure"
 import type { Task } from "@/types/api"
@@ -44,6 +45,7 @@ export default function ProfileTab() {
   const signOut = useAuthStore((s) => s.signOut)
 
   const { themeId, mode, setThemeId, setMode } = useThemePrefs()
+  const setLocale = useLocaleStore((s) => s.setLocale)
 
   const language = useOnboardingStore((s) => s.language)
   const setLanguage = useOnboardingStore((s) => s.setLanguage)
@@ -467,15 +469,20 @@ export default function ProfileTab() {
                 App language
               </Text>
               <View style={{ flexDirection: "row", flexWrap: "wrap", gap: 8 }}>
-                {[
-                  { id: "en", label: "English" },
-                  { id: "id", label: "Indonesia" },
-                ].map((l) => (
+                {(
+                  [
+                    { id: "en", label: "English" },
+                    { id: "id", label: "Indonesia" },
+                  ] as { id: AppLocale; label: string }[]
+                ).map((l) => (
                   <Chip
                     key={l.id}
                     label={l.label}
                     selected={(settingsQ.data?.locale ?? "en") === l.id}
-                    onPress={() => updateSettingsM.mutate({ locale: l.id })}
+                    onPress={() => {
+                      setLocale(l.id)
+                      updateSettingsM.mutate({ locale: l.id })
+                    }}
                   />
                 ))}
               </View>

@@ -19,11 +19,13 @@ import { auth } from "@/api/endpoints"
 import { useAuthStore } from "@/store/auth"
 import { useOnboardingStore } from "@/store/onboarding"
 import { motifChar } from "@/lib/languages"
+import { useT } from "@/i18n"
 import { saveTokens } from "@/utils/secure"
 
 export default function Login() {
   const { theme } = useTheme()
   const router = useRouter()
+  const t = useT()
   const setAuth = useAuthStore((s) => s.setAuth)
   const language = useOnboardingStore((s) => s.language)
   const insets = useSafeAreaInsets()
@@ -80,7 +82,7 @@ export default function Login() {
                 <Text
                   style={[type.display, { color: theme.text, fontSize: 36 }]}
                 >
-                  Sign in
+                  {t("auth.signIn")}
                 </Text>
                 <Text style={[type.bodySm, { color: theme.textMuted }]}>
                   Continue where you left off.
@@ -95,7 +97,7 @@ export default function Login() {
           {/* Form */}
           <View style={{ gap: 24 }}>
             <Input
-              label="Email"
+              label={t("auth.email")}
               placeholder="you@example.com"
               autoCapitalize="none"
               keyboardType="email-address"
@@ -104,7 +106,7 @@ export default function Login() {
               onChangeText={setEmail}
             />
             <Input
-              label="Password"
+              label={t("auth.password")}
               placeholder="Your password"
               secureTextEntry
               autoComplete="current-password"
@@ -124,7 +126,7 @@ export default function Login() {
                   fontWeight: "600",
                 }}
               >
-                Forgot password?
+                {t("auth.forgot")}
               </Text>
             </Pressable>
             {error && (
@@ -144,7 +146,7 @@ export default function Login() {
             }}
           >
             <Button
-              title="Sign in"
+              title={t("auth.signIn")}
               onPress={() => login.mutate()}
               loading={login.isPending}
               disabled={!email || !password}
@@ -162,9 +164,9 @@ export default function Login() {
                   color: theme.textMuted,
                 }}
               >
-                New here?{" "}
+                {t("auth.newHere")}{" "}
                 <Text style={{ color: theme.accent, fontWeight: "600" }}>
-                  Create an account
+                  {t("auth.createAccount")}
                 </Text>
               </Text>
             </Pressable>
