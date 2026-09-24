@@ -143,7 +143,7 @@ export default function Login() {
               marginTop: "auto",
               gap: 16,
               paddingTop: 16,
-              paddingBottom: Math.max(insets.bottom, 8),
+              paddingBottom: Math.max(insets.bottom, 8) + 12,
               borderTopWidth: 1,
               borderTopColor: theme.border,
             }}

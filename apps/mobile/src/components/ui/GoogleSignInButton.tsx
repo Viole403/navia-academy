@@ -1,6 +1,7 @@
 import { AntDesign } from "@expo/vector-icons"
-import { ActivityIndicator, Pressable, Text } from "react-native"
+import { ActivityIndicator, Pressable, Text, View } from "react-native"
 import { fonts } from "@/theme/typography"
+import { useTheme } from "@/theme/ThemeProvider"
 
 export function GoogleSignInButton({
   title,
@@ -13,6 +14,11 @@ export function GoogleSignInButton({
   loading?: boolean
   disabled?: boolean
 }) {
+  const { resolvedMode } = useTheme()
+  const dark = resolvedMode !== "light"
+  const bg = dark ? "#131314" : "#FFFFFF"
+  const border = dark ? "#8E918F" : "#747775"
+  const fg = dark ? "#E3E3E3" : "#1F1F1F"
   const inactive = disabled || loading
   return (
     <Pressable
@@ -24,8 +30,8 @@ export function GoogleSignInButton({
         height: 52,
         borderRadius: 4,
         borderWidth: 1,
-        borderColor: "#747775",
-        backgroundColor: "#FFFFFF",
+        borderColor: border,
+        backgroundColor: bg,
         flexDirection: "row",
         alignItems: "center",
         justifyContent: "center",
@@ -35,16 +41,28 @@ export function GoogleSignInButton({
       })}
     >
       {loading ? (
-        <ActivityIndicator color="#1F1F1F" size="small" />
+        <ActivityIndicator color={fg} size="small" />
+      ) : dark ? (
+        <View
+          style={{
+            backgroundColor: "#FFFFFF",
+            borderRadius: 2,
+            padding: 3,
+          }}
+        >
+          <AntDesign name="google" size={18} color="#4285F4" />
+        </View>
       ) : (
         <AntDesign name="google" size={20} color="#4285F4" />
       )}
       <Text
+        numberOfLines={1}
         style={{
           fontFamily: fonts.sans,
           fontSize: 16,
           fontWeight: "600",
-          color: "#1F1F1F",
+          color: fg,
+          flexShrink: 1,
         }}
       >
         {title}

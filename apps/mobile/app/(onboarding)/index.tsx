@@ -150,7 +150,7 @@ export default function Onboarding() {
         </View>
 
         {/* Step content */}
-        <View style={{ flexGrow: 1, justifyContent: "center" }}>
+        <View>
           {step === "language" && (
             <View style={{ gap: 20 }}>
               {LANGUAGES.map((l, i) => {
@@ -499,7 +499,7 @@ export default function Onboarding() {
           style={{
             marginTop: "auto",
             paddingTop: 16,
-            paddingBottom: Math.max(insets.bottom, 16),
+            paddingBottom: Math.max(insets.bottom, 16) + 12,
             flexDirection: "row",
             gap: 12,
           }}
