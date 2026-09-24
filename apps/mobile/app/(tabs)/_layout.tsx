@@ -1,4 +1,5 @@
 import { Redirect, Tabs } from "expo-router"
+import { Ionicons } from "@expo/vector-icons"
 import { useTheme } from "@/theme/ThemeProvider"
 import { fonts } from "@/theme/typography"
 import { useAuthStore } from "@/store/auth"
@@ -36,11 +37,51 @@ export default function TabsLayout() {
         },
       }}
     >
-      <Tabs.Screen name="index" options={{ title: t("tabs.today") }} />
-      <Tabs.Screen name="learn" options={{ title: t("tabs.learn") }} />
-      <Tabs.Screen name="exam" options={{ title: t("tabs.exam") }} />
-      <Tabs.Screen name="stats" options={{ title: t("tabs.stats") }} />
-      <Tabs.Screen name="profile" options={{ title: t("tabs.me") }} />
+      <Tabs.Screen
+        name="index"
+        options={{
+          title: t("tabs.today"),
+          tabBarIcon: ({ color, size }) => (
+            <Ionicons name="home-outline" size={size} color={color} />
+          ),
+        }}
+      />
+      <Tabs.Screen
+        name="learn"
+        options={{
+          title: t("tabs.learn"),
+          tabBarIcon: ({ color, size }) => (
+            <Ionicons name="book-outline" size={size} color={color} />
+          ),
+        }}
+      />
+      <Tabs.Screen
+        name="exam"
+        options={{
+          title: t("tabs.exam"),
+          tabBarIcon: ({ color, size }) => (
+            <Ionicons name="trophy-outline" size={size} color={color} />
+          ),
+        }}
+      />
+      <Tabs.Screen
+        name="stats"
+        options={{
+          title: t("tabs.stats"),
+          tabBarIcon: ({ color, size }) => (
+            <Ionicons name="bar-chart-outline" size={size} color={color} />
+          ),
+        }}
+      />
+      <Tabs.Screen
+        name="profile"
+        options={{
+          title: t("tabs.me"),
+          tabBarIcon: ({ color, size }) => (
+            <Ionicons name="person-outline" size={size} color={color} />
+          ),
+        }}
+      />
     </Tabs>
   )
 }

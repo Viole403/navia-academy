@@ -9,6 +9,8 @@ import {
 import { SafeAreaView } from "react-native-safe-area-context"
 import { useRouter } from "expo-router"
 import { useQuery } from "@tanstack/react-query"
+import { ActionCard } from "@/components/ui/ActionCard"
+import { Button } from "@/components/ui/Button"
 import { Chip } from "@/components/ui/Chip"
 import { EmptyState } from "@/components/ui/EmptyState"
 import { Input } from "@/components/ui/Input"
@@ -82,6 +84,11 @@ export default function LearnTab() {
     }
     return [...m].sort()
   }, [vocabAll.data, examType])
+  useEffect(() => {
+    if (levels.length > 0 && !levels.includes(examLevel)) {
+      setExamLevel(levels[0])
+    }
+  }, [levels, examLevel])
 
   const srsQ = useQuery({ queryKey: ["srs-stats"], queryFn: progress.srsStats })
   const dueCardsQ = useQuery({
@@ -163,262 +170,51 @@ export default function LearnTab() {
         </View>
 
         {/* Game shortcut */}
-        <Pressable
+        <ActionCard
+          glyph={info.nativeName.charAt(0)}
+          title={
+            isCharScript(language)
+              ? t("learn.hanziMatch")
+              : t("learn.wordMatch")
+          }
+          description={`${t("learn.pair")} ${wordLabel(language, false)} ${t("learn.toMeanings")} ${examDisplayName(examType)} ${examLevel} deck.`}
           onPress={() => router.push("/game-match")}
-          style={{
-            padding: 18,
-            borderWidth: 1,
-            borderColor: theme.border,
-            borderRadius: 4,
-            backgroundColor: theme.surface,
-            flexDirection: "row",
-            alignItems: "center",
-            gap: 16,
-          }}
-        >
-          <Text
-            style={{
-              fontFamily: fonts.serif,
-              fontSize: 40,
-              color: theme.accent,
-              fontWeight: "500",
-            }}
-          >
-            {info.nativeName.charAt(0)}
-          </Text>
-          <View style={{ flex: 1, gap: 4 }}>
-            <Text style={[type.h3, { color: theme.text }]}>
-              {isCharScript(language)
-                ? t("learn.hanziMatch")
-                : t("learn.wordMatch")}
-            </Text>
-            <Text style={[type.bodySm, { color: theme.textMuted }]}>
-              {t("learn.pair")} {wordLabel(language, false)}{" "}
-              {t("learn.toMeanings")} {examDisplayName(examType)} {examLevel}{" "}
-              deck.
-            </Text>
-          </View>
-          <Text
-            style={{
-              color: theme.textDim,
-              fontFamily: fonts.serif,
-              fontSize: 18,
-            }}
-          >
-            →
-          </Text>
-        </Pressable>
+        />
 
-        <Pressable
+        <ActionCard
+          glyph={motifChar(language)}
+          title={t("learn.library")}
+          description={t("learn.libraryDesc")}
           onPress={() => router.push("/library")}
-          style={{
-            padding: 18,
-            borderWidth: 1,
-            borderColor: theme.border,
-            borderRadius: 4,
-            backgroundColor: theme.surface,
-            flexDirection: "row",
-            alignItems: "center",
-            gap: 16,
-          }}
-        >
-          <Text
-            style={{
-              fontFamily: fonts.serif,
-              fontSize: 40,
-              color: theme.accent,
-              fontWeight: "500",
-            }}
-          >
-            {motifChar(language)}
-          </Text>
-          <View style={{ flex: 1, gap: 4 }}>
-            <Text style={[type.h3, { color: theme.text }]}>
-              {t("learn.library")}
-            </Text>
-            <Text style={[type.bodySm, { color: theme.textMuted }]}>
-              {t("learn.libraryDesc")}
-            </Text>
-          </View>
-          <Text
-            style={{
-              color: theme.textDim,
-              fontFamily: fonts.serif,
-              fontSize: 18,
-            }}
-          >
-            →
-          </Text>
-        </Pressable>
+        />
 
-        <Pressable
+        <ActionCard
+          glyph={motifChar(language)}
+          title={t("learn.program")}
+          description={`${t("learn.programPrefix")} ${examDisplayName(examType)} ${t("learn.programSuffix")}`}
           onPress={() => router.push("/program")}
-          style={{
-            padding: 18,
-            borderWidth: 1,
-            borderColor: theme.border,
-            borderRadius: 4,
-            backgroundColor: theme.surface,
-            flexDirection: "row",
-            alignItems: "center",
-            gap: 16,
-          }}
-        >
-          <Text
-            style={{
-              fontFamily: fonts.serif,
-              fontSize: 40,
-              color: theme.accent,
-              fontWeight: "500",
-            }}
-          >
-            {motifChar(language)}
-          </Text>
-          <View style={{ flex: 1, gap: 4 }}>
-            <Text style={[type.h3, { color: theme.text }]}>
-              {t("learn.program")}
-            </Text>
-            <Text style={[type.bodySm, { color: theme.textMuted }]}>
-              {t("learn.programPrefix")} {examDisplayName(examType)}{" "}
-              {t("learn.programSuffix")}
-            </Text>
-          </View>
-          <Text
-            style={{
-              color: theme.textDim,
-              fontFamily: fonts.serif,
-              fontSize: 18,
-            }}
-          >
-            →
-          </Text>
-        </Pressable>
+        />
 
-        <Pressable
+        <ActionCard
+          glyph={motifChar(language)}
+          title={t("learn.listening")}
+          description={t("learn.listeningDesc")}
           onPress={() => router.push("/listening-drill")}
-          style={{
-            padding: 18,
-            borderWidth: 1,
-            borderColor: theme.border,
-            borderRadius: 4,
-            backgroundColor: theme.surface,
-            flexDirection: "row",
-            alignItems: "center",
-            gap: 16,
-          }}
-        >
-          <Text
-            style={{
-              fontFamily: fonts.serif,
-              fontSize: 40,
-              color: theme.accent,
-              fontWeight: "500",
-            }}
-          >
-            {motifChar(language)}
-          </Text>
-          <View style={{ flex: 1, gap: 4 }}>
-            <Text style={[type.h3, { color: theme.text }]}>
-              {t("learn.listening")}
-            </Text>
-            <Text style={[type.bodySm, { color: theme.textMuted }]}>
-              {t("learn.listeningDesc")}
-            </Text>
-          </View>
-          <Text
-            style={{
-              color: theme.textDim,
-              fontFamily: fonts.serif,
-              fontSize: 18,
-            }}
-          >
-            →
-          </Text>
-        </Pressable>
+        />
 
-        <Pressable
+        <ActionCard
+          glyph={motifChar(language)}
+          title={t("learn.speaking")}
+          description={t("learn.speakingDesc")}
           onPress={() => router.push("/speaking")}
-          style={{
-            padding: 18,
-            borderWidth: 1,
-            borderColor: theme.border,
-            borderRadius: 4,
-            backgroundColor: theme.surface,
-            flexDirection: "row",
-            alignItems: "center",
-            gap: 16,
-          }}
-        >
-          <Text
-            style={{
-              fontFamily: fonts.serif,
-              fontSize: 40,
-              color: theme.accent,
-              fontWeight: "500",
-            }}
-          >
-            {motifChar(language)}
-          </Text>
-          <View style={{ flex: 1, gap: 4 }}>
-            <Text style={[type.h3, { color: theme.text }]}>
-              {t("learn.speaking")}
-            </Text>
-            <Text style={[type.bodySm, { color: theme.textMuted }]}>
-              {t("learn.speakingDesc")}
-            </Text>
-          </View>
-          <Text
-            style={{
-              color: theme.textDim,
-              fontFamily: fonts.serif,
-              fontSize: 18,
-            }}
-          >
-            →
-          </Text>
-        </Pressable>
+        />
 
-        <Pressable
+        <ActionCard
+          glyph={motifChar(language)}
+          title={t("learn.writing")}
+          description={t("learn.writingDesc")}
           onPress={() => router.push("/writing")}
-          style={{
-            padding: 18,
-            borderWidth: 1,
-            borderColor: theme.border,
-            borderRadius: 4,
-            backgroundColor: theme.surface,
-            flexDirection: "row",
-            alignItems: "center",
-            gap: 16,
-          }}
-        >
-          <Text
-            style={{
-              fontFamily: fonts.serif,
-              fontSize: 40,
-              color: theme.accent,
-              fontWeight: "500",
-            }}
-          >
-            {motifChar(language)}
-          </Text>
-          <View style={{ flex: 1, gap: 4 }}>
-            <Text style={[type.h3, { color: theme.text }]}>
-              {t("learn.writing")}
-            </Text>
-            <Text style={[type.bodySm, { color: theme.textMuted }]}>
-              {t("learn.writingDesc")}
-            </Text>
-          </View>
-          <Text
-            style={{
-              color: theme.textDim,
-              fontFamily: fonts.serif,
-              fontSize: 18,
-            }}
-          >
-            →
-          </Text>
-        </Pressable>
+        />
 
         {tab === "browse" ? (
           <BrowseTab
@@ -597,7 +393,7 @@ function BrowseTab({
                     : undefined
                 }
               >
-                <WordRow word={w} />
+                <WordRow word={w} language={language} />
               </View>
             ))}
           </View>
@@ -607,9 +403,16 @@ function BrowseTab({
   )
 }
 
-const WordRow = memo(function WordRow({ word }: { word: VocabWord }) {
+const WordRow = memo(function WordRow({
+  word,
+  language,
+}: {
+  word: VocabWord
+  language: import("@/lib/languages").LanguageCode
+}) {
   const { theme } = useTheme()
   const router = useRouter()
+  const charScript = isCharScript(language)
   return (
     <Pressable
       onPress={() =>
@@ -632,7 +435,7 @@ const WordRow = memo(function WordRow({ word }: { word: VocabWord }) {
           fontFamily: fonts.serif,
           fontSize: 32,
           color: theme.text,
-          width: 56,
+          ...(charScript ? { width: 56 } : { minWidth: 56, flexShrink: 1 }),
         }}
       >
         {headword(word)}
@@ -704,27 +507,12 @@ function ReviewTab({
           glyph={motifChar(language)}
         />
       ) : (
-        <Pressable
+        <Button
+          title={loading ? t("learn.loading") : t("learn.startReview")}
           onPress={() => router.push("/review")}
-          style={{
-            backgroundColor: theme.accent,
-            paddingVertical: 16,
-            alignItems: "center",
-            borderRadius: 2,
-          }}
-          disabled={loading}
-        >
-          <Text
-            style={{
-              color: theme.white,
-              fontWeight: "700",
-              fontSize: 16,
-              letterSpacing: 0.5,
-            }}
-          >
-            {loading ? t("learn.loading") : t("learn.startReview")}
-          </Text>
-        </Pressable>
+          loading={loading}
+          size="lg"
+        />
       )}
     </View>
   )

@@ -6,6 +6,8 @@ import { useMutation } from "@tanstack/react-query"
 import { Button } from "@/components/ui/Button"
 import { Enter } from "@/components/ui/Enter"
 import { Motif } from "@/components/ui/Motif"
+import { SegmentedControl } from "@/components/ui/SegmentedControl"
+import { ThemeSwatch } from "@/components/ui/ThemeSwatch"
 import { useTheme } from "@/theme/ThemeProvider"
 import type { Theme, ThemeDefinition, ThemeMode } from "@/theme/colors"
 import { fonts, type } from "@/theme/typography"
@@ -13,6 +15,7 @@ import { useOnboardingStore, type ScriptPref } from "@/store/onboarding"
 import {
   LANGUAGES,
   examDisplayName,
+  isCharScript,
   languageInfo,
   motifChar,
 } from "@/lib/languages"
@@ -175,7 +178,9 @@ export default function Onboarding() {
                         fontFamily: fonts.serif,
                         fontSize: 32,
                         color: selected ? theme.accent : theme.text,
-                        width: 96,
+                        ...(isCharScript(l.code)
+                          ? { width: 96 }
+                          : { minWidth: 96, flexShrink: 1 }),
                       }}
                     >
                       {l.nativeName}
@@ -399,44 +404,16 @@ export default function Onboarding() {
               <Text style={[type.labelSm, { color: theme.textMuted }]}>
                 {t("ob.appearance")}
               </Text>
-              <View style={{ flexDirection: "row", gap: 6 }}>
-                {(
-                  [
-                    { id: "system", label: t("ob.modeSystem") },
-                    { id: "light", label: t("ob.modeLight") },
-                    { id: "dark", label: t("ob.modeDark") },
-                    { id: "amoled", label: "AMOLED" },
-                  ] as { id: ThemeMode; label: string }[]
-                ).map((m) => {
-                  const sel = mode === m.id
-                  return (
-                    <Pressable
-                      key={m.id}
-                      onPress={() => setMode(m.id)}
-                      style={{
-                        flex: 1,
-                        paddingVertical: 12,
-                        borderRadius: 2,
-                        borderWidth: 1.5,
-                        borderColor: sel ? theme.text : theme.border,
-                        backgroundColor: sel ? theme.text : "transparent",
-                        alignItems: "center",
-                      }}
-                    >
-                      <Text
-                        style={{
-                          color: sel ? theme.bg : theme.text,
-                          fontWeight: "600",
-                          fontSize: 13,
-                          letterSpacing: 0.3,
-                        }}
-                      >
-                        {m.label}
-                      </Text>
-                    </Pressable>
-                  )
-                })}
-              </View>
+              <SegmentedControl<ThemeMode>
+                options={[
+                  { id: "system", label: t("ob.modeSystem") },
+                  { id: "light", label: t("ob.modeLight") },
+                  { id: "dark", label: t("ob.modeDark") },
+                  { id: "amoled", label: "AMOLED" },
+                ]}
+                value={mode}
+                onChange={setMode}
+              />
             </View>
           </View>
         )}
@@ -538,101 +515,5 @@ export default function Onboarding() {
         </View>
       </ScrollView>
     </SafeAreaView>
-  )
-}
-
-// ─── A small editorial theme swatch ────────────────────────────────────────
-function ThemeSwatch({
-  def,
-  mode,
-  selected,
-  onPress,
-}: {
-  def: ThemeDefinition
-  mode: ThemeMode
-  selected: boolean
-  onPress: () => void
-}) {
-  const t = useT()
-  const showLight = mode === "light"
-  const showAmoled = mode === "amoled"
-  const base = showLight ? def.light : def.dark
-  const preview: Theme = showAmoled
-    ? { ...base, bg: "#000000", surface: "#0A0A0E", surfaceAlt: "#101016" }
-    : base
-
-  return (
-    <Pressable
-      onPress={onPress}
-      style={{
-        width: 96,
-        height: 96,
-        borderRadius: 4,
-        borderWidth: selected ? 2 : 1,
-        borderColor: selected ? preview.accent : preview.border,
-        backgroundColor: preview.bg,
-        padding: 10,
-        justifyContent: "space-between",
-      }}
-    >
-      <View style={{ flexDirection: "row", gap: 4 }}>
-        <View
-          style={{
-            width: 14,
-            height: 14,
-            borderRadius: 7,
-            backgroundColor: preview.accent,
-          }}
-        />
-        <View
-          style={{
-            width: 14,
-            height: 14,
-            borderRadius: 7,
-            backgroundColor: preview.mint,
-          }}
-        />
-      </View>
-      <View>
-        <Text
-          style={{
-            color: preview.text,
-            fontSize: 11,
-            fontWeight: "700",
-            letterSpacing: 0.2,
-          }}
-          numberOfLines={1}
-        >
-          {def.name}
-        </Text>
-        <Text
-          style={{ color: preview.textDim, fontSize: 9, marginTop: 1 }}
-          numberOfLines={1}
-        >
-          {def.dynamic ? t("ob.sysPalette") : t("ob.editorial")}
-        </Text>
-      </View>
-      {selected && (
-        <View
-          style={{
-            position: "absolute",
-            top: 6,
-            right: 6,
-            width: 14,
-            height: 14,
-            borderRadius: 7,
-            backgroundColor: preview.accent,
-            alignItems: "center",
-            justifyContent: "center",
-          }}
-        >
-          <Text
-            style={{ color: preview.white, fontSize: 9, fontWeight: "800" }}
-          >
-            ✓
-          </Text>
-        </View>
-      )}
-    </Pressable>
   )
 }

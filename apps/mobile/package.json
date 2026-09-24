@@ -30,6 +30,7 @@
     "test:ci": "vitest run --coverage"
   },
   "dependencies": {
+    "@expo/vector-icons": "^15.0.2",
     "@pchmn/expo-material3-theme": "^1.4.0",
     "@react-native-async-storage/async-storage": "2.2.0",
     "@tanstack/react-query": "^5.102.8",

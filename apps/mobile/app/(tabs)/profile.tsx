@@ -15,13 +15,14 @@ import { Button } from "@/components/ui/Button"
 import { Card } from "@/components/ui/Card"
 import { Chip } from "@/components/ui/Chip"
 import { SegmentedControl } from "@/components/ui/SegmentedControl"
+import { ThemeSwatch } from "@/components/ui/ThemeSwatch"
 import { EmptyState } from "@/components/ui/EmptyState"
 import { Input } from "@/components/ui/Input"
 import { KeyboardSafeScroll } from "@/components/ui/KeyboardSafeScroll"
 import { Motif } from "@/components/ui/Motif"
 import { useTheme } from "@/theme/ThemeProvider"
 import { fonts, type } from "@/theme/typography"
-import type { ThemeDefinition, ThemeId, ThemeMode } from "@/theme/colors"
+import type { ThemeId, ThemeMode } from "@/theme/colors"
 import { auth, community, progress, settings, tasks } from "@/api/endpoints"
 import { examBadgeColor, motifChar } from "@/lib/languages"
 import { useOnboardingStore } from "@/store/onboarding"
@@ -518,9 +519,10 @@ export default function ProfileTab() {
                   style={{ flexDirection: "row", flexWrap: "wrap", gap: 10 }}
                 >
                   {catalog.map((t) => (
-                    <ThemePill
+                    <ThemeSwatch
                       key={t.id}
                       def={t}
+                      mode={mode}
                       selected={themeId === t.id}
                       onPress={() => setThemeId(t.id)}
                     />
@@ -751,44 +753,6 @@ function TaskRow({
         </Text>
       </Pressable>
     </View>
-  )
-}
-
-function ThemePill({
-  def,
-  selected,
-  onPress,
-}: {
-  def: ThemeDefinition
-  selected: boolean
-  onPress: () => void
-}) {
-  return (
-    <Pressable
-      onPress={onPress}
-      style={{
-        flexDirection: "row",
-        alignItems: "center",
-        paddingHorizontal: 12,
-        paddingVertical: 8,
-        borderWidth: 1.5,
-        borderColor: selected ? def.dark.accent : "#88888855",
-        borderRadius: 999,
-        gap: 8,
-      }}
-    >
-      <View
-        style={{
-          width: 12,
-          height: 12,
-          borderRadius: 6,
-          backgroundColor: def.dark.accent,
-        }}
-      />
-      <Text style={{ color: "#888", fontSize: 12, fontWeight: "600" }}>
-        {def.name}
-      </Text>
-    </Pressable>
   )
 }
 

@@ -262,12 +262,12 @@ export default function GameMatch() {
                   style={{
                     width: "48%",
                     aspectRatio: 1.3,
-                    borderWidth: 1.5,
+                    borderWidth: c.matched || isOpen ? 1.5 : 2,
                     borderColor: c.matched
                       ? theme.green
                       : isOpen
                         ? theme.accent
-                        : theme.border,
+                        : theme.textDim,
                     backgroundColor: c.matched
                       ? theme.green + "15"
                       : isOpen
@@ -281,19 +281,29 @@ export default function GameMatch() {
                 >
                   <Text
                     style={{
-                      fontFamily: c.type === "hanzi" ? fonts.hanzi : fonts.sans,
-                      fontSize: c.type === "hanzi" ? 26 : 14,
+                      fontFamily:
+                        c.matched || isOpen
+                          ? c.type === "hanzi"
+                            ? fonts.hanzi
+                            : fonts.sans
+                          : fonts.serif,
+                      fontSize:
+                        c.matched || isOpen
+                          ? c.type === "hanzi"
+                            ? 26
+                            : 14
+                          : 24,
                       color: c.matched
                         ? theme.green
                         : isOpen || c.matched
                           ? theme.text
-                          : theme.textMuted,
+                          : theme.textDim,
                       textAlign: "center",
-                      fontWeight: c.type === "hanzi" ? "500" : "600",
+                      fontWeight: "600",
                     }}
                     numberOfLines={2}
                   >
-                    {c.matched || isOpen ? c.label : "·"}
+                    {c.matched || isOpen ? c.label : "?"}
                   </Text>
                 </Pressable>
               )

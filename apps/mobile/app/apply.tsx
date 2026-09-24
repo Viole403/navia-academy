@@ -6,6 +6,7 @@ import { useMutation } from "@tanstack/react-query"
 import { Button } from "@/components/ui/Button"
 import { Input } from "@/components/ui/Input"
 import { Motif } from "@/components/ui/Motif"
+import { SegmentedControl } from "@/components/ui/SegmentedControl"
 import { useTheme } from "@/theme/ThemeProvider"
 import { fonts, type } from "@/theme/typography"
 import { community } from "@/api/endpoints"
@@ -102,38 +103,14 @@ export default function Apply() {
         </View>
 
         {/* Mode switcher */}
-        <View style={{ flexDirection: "row", gap: 8 }}>
-          {(["contributor", "sponsor"] as Mode[]).map((m) => {
-            const sel = mode === m
-            return (
-              <Pressable
-                key={m}
-                onPress={() => setMode(m)}
-                style={{
-                  flex: 1,
-                  paddingVertical: 10,
-                  borderRadius: 2,
-                  borderWidth: 1.5,
-                  borderColor: sel ? theme.text : theme.border,
-                  backgroundColor: sel ? theme.text : "transparent",
-                  alignItems: "center",
-                }}
-              >
-                <Text
-                  style={{
-                    color: sel ? theme.bg : theme.text,
-                    fontWeight: "600",
-                    fontSize: 13,
-                  }}
-                >
-                  {m === "contributor"
-                    ? t("apply.contributorMode")
-                    : t("apply.sponsorMode")}
-                </Text>
-              </Pressable>
-            )
-          })}
-        </View>
+        <SegmentedControl<Mode>
+          options={[
+            { id: "contributor", label: t("apply.contributorMode") },
+            { id: "sponsor", label: t("apply.sponsorMode") },
+          ]}
+          value={mode}
+          onChange={setMode}
+        />
 
         {/* Form */}
         <View style={{ gap: 16 }}>
