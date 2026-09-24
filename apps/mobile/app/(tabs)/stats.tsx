@@ -9,10 +9,13 @@ import { Motif } from "@/components/ui/Motif"
 import { useTheme } from "@/theme/ThemeProvider"
 import { fonts, type } from "@/theme/typography"
 import { progress } from "@/api/endpoints"
+import { motifChar } from "@/lib/languages"
+import { useOnboardingStore } from "@/store/onboarding"
 import type { Achievement, StudySession } from "@/types/api"
 
 export default function StatsTab() {
   const { theme } = useTheme()
+  const language = useOnboardingStore((s) => s.language)
   const [view, setView] = useState<"overview" | "badges">("overview")
 
   const progressQ = useQuery({ queryKey: ["progress"], queryFn: progress.get })
@@ -52,7 +55,7 @@ export default function StatsTab() {
                 Numbers & medals
               </Text>
             </View>
-            <Motif char="图" size={56} />
+            <Motif char={motifChar(language)} size={56} />
           </View>
           <View style={{ height: 1, backgroundColor: theme.border }} />
         </View>

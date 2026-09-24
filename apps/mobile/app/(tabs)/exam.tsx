@@ -22,6 +22,7 @@ import {
   examDisplayName,
   examLevels,
   languageInfo,
+  motifChar,
 } from "@/lib/languages"
 import { useOnboardingStore } from "@/store/onboarding"
 import type { ExamProgress, ExamSession } from "@/types/api"
@@ -115,7 +116,7 @@ export default function ExamTab() {
                 Exam hall
               </Text>
             </View>
-            <Motif char="考" size={56} />
+            <Motif char={motifChar(language)} size={56} />
           </View>
           <View style={{ height: 1, backgroundColor: theme.border }} />
         </View>

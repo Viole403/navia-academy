@@ -22,7 +22,7 @@ import { useTheme } from "@/theme/ThemeProvider"
 import { fonts, type } from "@/theme/typography"
 import type { ThemeDefinition, ThemeId, ThemeMode } from "@/theme/colors"
 import { community, health, progress, settings, tasks } from "@/api/endpoints"
-import { examBadgeColor } from "@/lib/languages"
+import { examBadgeColor, motifChar } from "@/lib/languages"
 import { useOnboardingStore } from "@/store/onboarding"
 import {
   cancelStreakReminder,
@@ -156,7 +156,7 @@ export default function ProfileTab() {
                 {user.name}
               </Text>
             </View>
-            <Motif char="我" size={56} />
+            <Motif char={motifChar(language)} size={56} />
           </View>
           <View style={{ height: 1, backgroundColor: theme.border }} />
         </View>

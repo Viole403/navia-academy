@@ -16,7 +16,7 @@ import { useTheme } from "@/theme/ThemeProvider"
 import { fonts, type } from "@/theme/typography"
 import { progress, game } from "@/api/endpoints"
 import { loadVocabulary } from "@/lib/content-data"
-import { headword, isCharScript } from "@/lib/languages"
+import { headword, isCharScript, motifChar } from "@/lib/languages"
 import { useOnboardingStore } from "@/store/onboarding"
 import { logStudyWithQueue } from "@/utils/offlineQueue"
 import type { VocabWord } from "@/types/api"
@@ -192,7 +192,7 @@ export default function GameMatch() {
         {cards.length === 0 ? (
           <View style={{ gap: 16, paddingTop: 24 }}>
             <View style={{ alignItems: "center", gap: 12 }}>
-              <Motif char="玩" size={64} />
+              <Motif char={motifChar(language)} size={64} />
               <Text
                 style={[type.h2, { color: theme.text, textAlign: "center" }]}
               >
@@ -213,7 +213,7 @@ export default function GameMatch() {
         ) : won ? (
           <View style={{ gap: 16, paddingTop: 24 }}>
             <View style={{ alignItems: "center", gap: 12 }}>
-              <Motif char="胜" size={64} />
+              <Motif char={motifChar(language)} size={64} />
               <Text
                 style={[type.h2, { color: theme.text, textAlign: "center" }]}
               >

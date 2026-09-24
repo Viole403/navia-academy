@@ -19,7 +19,7 @@ import { fonts, type } from "@/theme/typography"
 import { exam, progress, settings } from "@/api/endpoints"
 import { useAuthStore } from "@/store/auth"
 import { useOnboardingStore } from "@/store/onboarding"
-import { type LanguageCode } from "@/lib/languages"
+import { type LanguageCode, motifChar } from "@/lib/languages"
 
 const DAILY_WORDS: Record<
   LanguageCode,
@@ -143,7 +143,7 @@ export default function HomeTab() {
                 </Text>
               </Text>
             </View>
-            <Motif char="今" size={64} />
+            <Motif char={motifChar(language)} size={64} />
           </View>
           <View style={{ height: 1, backgroundColor: theme.border }} />
         </View>
