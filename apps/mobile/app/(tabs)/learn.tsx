@@ -244,6 +244,46 @@ export default function LearnTab() {
           </Text>
         </Pressable>
 
+        <Pressable
+          onPress={() => router.push("/program")}
+          style={{
+            padding: 18,
+            borderWidth: 1,
+            borderColor: theme.border,
+            borderRadius: 4,
+            backgroundColor: theme.surface,
+            flexDirection: "row",
+            alignItems: "center",
+            gap: 16,
+          }}
+        >
+          <Text
+            style={{
+              fontFamily: fonts.serif,
+              fontSize: 40,
+              color: theme.accent,
+              fontWeight: "500",
+            }}
+          >
+            {motifChar(language)}
+          </Text>
+          <View style={{ flex: 1, gap: 4 }}>
+            <Text style={[type.h3, { color: theme.text }]}>Program</Text>
+            <Text style={[type.bodySm, { color: theme.textMuted }]}>
+              Guided {examDisplayName(examType)} path with lessons.
+            </Text>
+          </View>
+          <Text
+            style={{
+              color: theme.textDim,
+              fontFamily: fonts.serif,
+              fontSize: 18,
+            }}
+          >
+            →
+          </Text>
+        </Pressable>
+
         {tab === "browse" ? (
           <BrowseTab
             search={search}

@@ -383,6 +383,99 @@ export default function ProfileTab() {
               </View>
             </View>
 
+            {/* Voice */}
+            <View style={{ gap: 12 }}>
+              <Text style={[type.labelSm, { color: theme.textMuted }]}>
+                Voice
+              </Text>
+              <View style={{ flexDirection: "row", flexWrap: "wrap", gap: 8 }}>
+                {["female", "male"].map((g) => (
+                  <Chip
+                    key={g}
+                    label={g.charAt(0).toUpperCase() + g.slice(1)}
+                    selected={(settingsQ.data?.voice_gender ?? "female") === g}
+                    onPress={() => updateSettingsM.mutate({ voice_gender: g })}
+                  />
+                ))}
+              </View>
+            </View>
+
+            {/* Daily goal */}
+            <View style={{ gap: 12 }}>
+              <Text style={[type.labelSm, { color: theme.textMuted }]}>
+                Daily goal
+              </Text>
+              <View style={{ flexDirection: "row", flexWrap: "wrap", gap: 8 }}>
+                {[5, 10, 15, 30].map((m) => (
+                  <Chip
+                    key={m}
+                    label={`${m} min`}
+                    selected={(settingsQ.data?.daily_goal_min ?? 10) === m}
+                    onPress={() =>
+                      updateSettingsM.mutate({ daily_goal_min: m })
+                    }
+                  />
+                ))}
+              </View>
+            </View>
+
+            {/* New words + reviews */}
+            <View style={{ gap: 12 }}>
+              <Text style={[type.labelSm, { color: theme.textMuted }]}>
+                New words per day
+              </Text>
+              <View style={{ flexDirection: "row", flexWrap: "wrap", gap: 8 }}>
+                {[5, 10, 20].map((n) => (
+                  <Chip
+                    key={n}
+                    label={String(n)}
+                    selected={(settingsQ.data?.new_words_per_day ?? 10) === n}
+                    onPress={() =>
+                      updateSettingsM.mutate({ new_words_per_day: n })
+                    }
+                  />
+                ))}
+              </View>
+            </View>
+
+            <View style={{ gap: 12 }}>
+              <Text style={[type.labelSm, { color: theme.textMuted }]}>
+                Max reviews per day
+              </Text>
+              <View style={{ flexDirection: "row", flexWrap: "wrap", gap: 8 }}>
+                {[20, 50, 100].map((n) => (
+                  <Chip
+                    key={n}
+                    label={String(n)}
+                    selected={(settingsQ.data?.max_reviews_per_day ?? 50) === n}
+                    onPress={() =>
+                      updateSettingsM.mutate({ max_reviews_per_day: n })
+                    }
+                  />
+                ))}
+              </View>
+            </View>
+
+            {/* App language */}
+            <View style={{ gap: 12 }}>
+              <Text style={[type.labelSm, { color: theme.textMuted }]}>
+                App language
+              </Text>
+              <View style={{ flexDirection: "row", flexWrap: "wrap", gap: 8 }}>
+                {[
+                  { id: "en", label: "English" },
+                  { id: "id", label: "Indonesia" },
+                ].map((l) => (
+                  <Chip
+                    key={l.id}
+                    label={l.label}
+                    selected={(settingsQ.data?.locale ?? "en") === l.id}
+                    onPress={() => updateSettingsM.mutate({ locale: l.id })}
+                  />
+                ))}
+              </View>
+            </View>
+
             {/* Theme */}
             <View style={{ gap: 12 }}>
               <Text style={[type.labelSm, { color: theme.textMuted }]}>
@@ -506,6 +599,12 @@ export default function ProfileTab() {
                   hint="Hide streaks and comparisons"
                   value={settingsQ.data.focus_mode}
                   onChange={(v) => updateSettingsM.mutate({ focus_mode: v })}
+                />
+                <SettingsSwitch
+                  label="Reduce motion"
+                  hint="Calm down animations"
+                  value={settingsQ.data.reduce_motion}
+                  onChange={(v) => updateSettingsM.mutate({ reduce_motion: v })}
                 />
               </View>
             )}
