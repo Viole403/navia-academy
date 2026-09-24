@@ -48,7 +48,8 @@
       "expo-av",
       "expo-localization",
       "expo-notifications",
-      "expo-image"
+      "expo-image",
+      "expo-web-browser"
     ],
     "experiments": {
       "typedRoutes": true

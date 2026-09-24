@@ -33,6 +33,8 @@ const id: Record<I18nKey, string> = {
   "auth.newPassword": "Kata sandi baru",
   "auth.currentPassword": "Kata sandi saat ini",
   "auth.confirmPassword": "Konfirmasi kata sandi",
+  "auth.google": "Lanjut dengan Google",
+  "auth.or": "atau",
   "auth.signOut": "Keluar",
 }
 

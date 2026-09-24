@@ -56,6 +56,10 @@ export const auth = {
       .post("/auth/register", body)
       .then((r) => r.data.data as AuthResultResponse),
   me: () => apiClient.get("/me").then((r) => r.data.data as ApiUser),
+  googleExchange: (idToken: string) =>
+    apiClient
+      .post("/auth/google/exchange", { id_token: idToken })
+      .then((r) => r.data.data as AuthResultResponse),
   logout: () =>
     apiClient.post("/auth/logout").then((r) => r.data.data as { ok: boolean }),
   requestReset: (email: string) =>

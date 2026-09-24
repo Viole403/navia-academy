@@ -30,6 +30,17 @@ export const env = {
 
   /** Expo release channel / runtime flavour */
   isDev: __DEV__,
+
+  /**
+   * Google OAuth client IDs for native sign-in (expo-auth-session,
+   * response_type=id_token, exchanged at POST /auth/google/exchange).
+   * Empty = Google button hidden.
+   */
+  google: {
+    android: str(process.env.EXPO_PUBLIC_GOOGLE_ANDROID_CLIENT_ID),
+    ios: str(process.env.EXPO_PUBLIC_GOOGLE_IOS_CLIENT_ID),
+    web: str(process.env.EXPO_PUBLIC_GOOGLE_WEB_CLIENT_ID),
+  },
 }
 
 /**

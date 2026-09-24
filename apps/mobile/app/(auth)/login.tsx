@@ -16,6 +16,7 @@ import { Motif } from "@/components/ui/Motif"
 import { useTheme } from "@/theme/ThemeProvider"
 import { fonts, type } from "@/theme/typography"
 import { auth } from "@/api/endpoints"
+import { useGoogleAuth } from "@/hooks/useGoogleAuth"
 import { useAuthStore } from "@/store/auth"
 import { useOnboardingStore } from "@/store/onboarding"
 import { motifChar } from "@/lib/languages"
@@ -33,6 +34,7 @@ export default function Login() {
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
   const [error, setError] = useState<string | null>(null)
+  const google = useGoogleAuth()
 
   const login = useMutation({
     mutationFn: () => auth.login(email.trim().toLowerCase(), password),
@@ -152,6 +154,49 @@ export default function Login() {
               disabled={!email || !password}
               size="lg"
             />
+            {google.configured && (
+              <View style={{ gap: 4 }}>
+                <View
+                  style={{
+                    flexDirection: "row",
+                    alignItems: "center",
+                    gap: 12,
+                    paddingVertical: 8,
+                  }}
+                >
+                  <View
+                    style={{
+                      flex: 1,
+                      height: 1,
+                      backgroundColor: theme.border,
+                    }}
+                  />
+                  <Text style={[type.caption, { color: theme.textMuted }]}>
+                    {t("auth.or")}
+                  </Text>
+                  <View
+                    style={{
+                      flex: 1,
+                      height: 1,
+                      backgroundColor: theme.border,
+                    }}
+                  />
+                </View>
+                <Button
+                  title={t("auth.google")}
+                  variant="secondary"
+                  onPress={google.prompt}
+                  loading={google.pending}
+                  disabled={!google.canPrompt}
+                  size="lg"
+                />
+                {google.error && (
+                  <Text style={{ color: theme.red, fontSize: 13 }}>
+                    {google.error}
+                  </Text>
+                )}
+              </View>
+            )}
             <Pressable
               onPress={() => router.replace("/(auth)/register")}
               hitSlop={8}

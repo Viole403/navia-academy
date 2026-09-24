@@ -31,6 +31,8 @@ const en = {
   "auth.newPassword": "New password",
   "auth.currentPassword": "Current password",
   "auth.confirmPassword": "Confirm password",
+  "auth.google": "Continue with Google",
+  "auth.or": "or",
   "auth.signOut": "Sign out",
 } as const
 
