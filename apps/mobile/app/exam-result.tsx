@@ -8,6 +8,9 @@ import { Motif } from "@/components/ui/Motif"
 import { ProgressBar } from "@/components/ui/ProgressBar"
 import { useTheme } from "@/theme/ThemeProvider"
 import { fonts, type } from "@/theme/typography"
+import { useT } from "@/i18n"
+import { motifChar } from "@/lib/languages"
+import { useOnboardingStore } from "@/store/onboarding"
 
 type P = {
   // Provided by exam-session submit redirect
@@ -22,6 +25,8 @@ type P = {
 
 export default function ExamResultScreen() {
   const { theme } = useTheme()
+  const t = useT()
+  const language = useOnboardingStore((s) => s.language)
   const router = useRouter()
   const p = useLocalSearchParams<P>()
 
@@ -47,12 +52,12 @@ export default function ExamResultScreen() {
           }}
         >
           <EmptyState
-            title="No result to show"
-            message="This screen expects a finished exam session."
+            title={t("xres.noResult")}
+            message={t("xres.noResultMsg")}
             glyph="？"
           />
           <Button
-            title="Back to Exams"
+            title={t("xres.backToExams")}
             onPress={() => router.replace("/(tabs)/exam")}
           />
         </View>
@@ -77,13 +82,14 @@ export default function ExamResultScreen() {
         >
           <View style={{ flex: 1, gap: 10 }}>
             <Text style={[type.labelSm, { color: theme.textMuted }]}>
-              {p.examType?.toUpperCase() ?? "Exam"} · Level {p.examLevel ?? "—"}
+              {p.examType?.toUpperCase() ?? t("xres.examDefault")} ·{" "}
+              {t("xres.levelWord")} {p.examLevel ?? "—"}
             </Text>
             <Text style={[type.display, { color: theme.text, fontSize: 40 }]}>
-              {passed ? "You passed." : "Sitting closed."}
+              {passed ? t("xres.passedTitle") : t("xres.closedTitle")}
             </Text>
           </View>
-          <Motif char={passed ? "胜" : "负"} size={64} />
+          <Motif char={motifChar(language)} size={64} />
         </View>
         <View style={{ height: 1, backgroundColor: theme.border }} />
 
@@ -115,7 +121,7 @@ export default function ExamResultScreen() {
                   { color: passed ? theme.green : theme.red },
                 ]}
               >
-                {passed ? "PASS" : "RETRY"}
+                {passed ? t("xres.pass") : t("xres.retry")}
               </Text>
             </View>
 
@@ -133,18 +139,18 @@ export default function ExamResultScreen() {
                 paddingTop: 16,
               }}
             >
-              <Meta label="Correct" value={`${correct}/${total}`} />
+              <Meta label={t("xres.correct")} value={`${correct}/${total}`} />
               <MetaSep color={theme.border} />
-              <Meta label="Passing" value={String(passing)} />
+              <Meta label={t("xres.passing")} value={String(passing)} />
               <MetaSep color={theme.border} />
-              <Meta label="Time" value={`${mm}:${ss}`} />
+              <Meta label={t("xres.time")} value={`${mm}:${ss}`} />
             </View>
           </View>
         </Card>
 
         <View style={{ gap: 12, marginTop: "auto" }}>
           <Button
-            title="Back to Exams"
+            title={t("xres.backToExams")}
             onPress={() => router.replace("/(tabs)/exam")}
             size="lg"
           />
@@ -157,7 +163,7 @@ export default function ExamResultScreen() {
                 textDecorationLine: "underline",
               }}
             >
-              Return home
+              {t("xres.returnHome")}
             </Text>
           </Pressable>
         </View>

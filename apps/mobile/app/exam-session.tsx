@@ -17,10 +17,15 @@ import { useTheme } from "@/theme/ThemeProvider"
 import { fonts, type } from "@/theme/typography"
 import { exam } from "@/api/endpoints"
 import { useTts } from "@/hooks/useTts"
+import { useT } from "@/i18n"
+import { motifChar } from "@/lib/languages"
+import { useOnboardingStore } from "@/store/onboarding"
 import type { ExamQuestion, ExamSession } from "@/types/api"
 
 export default function ExamSessionScreen() {
   const { theme } = useTheme()
+  const t = useT()
+  const language = useOnboardingStore((s) => s.language)
   const router = useRouter()
   const params = useLocalSearchParams<{ id?: string }>()
   const sessionId = Number(params.id)
@@ -68,9 +73,9 @@ export default function ExamSessionScreen() {
     },
     onError: (e: unknown) => {
       Alert.alert(
-        "Could not submit",
+        t("xsess.submitFail"),
         (e as { response?: { data?: { error?: { message?: string } } } })
-          ?.response?.data?.error?.message ?? "Try again."
+          ?.response?.data?.error?.message ?? t("xsess.tryAgain")
       )
     },
   })
@@ -88,9 +93,9 @@ export default function ExamSessionScreen() {
   const nextQ = () => {
     if (!session) return
     if (currentIdx + 1 >= questions.length) {
-      Alert.alert("Submit exam?", "You cannot undo this.", [
-        { text: "Cancel", style: "cancel" },
-        { text: "Submit", onPress: () => submitM.mutate() },
+      Alert.alert(t("xsess.submitTitle"), t("xsess.submitMsg"), [
+        { text: t("xsess.cancel"), style: "cancel" },
+        { text: t("xsess.submit"), onPress: () => submitM.mutate() },
       ])
     } else {
       // Optimistically advance: the backend tracks current_question_index;
@@ -130,11 +135,11 @@ export default function ExamSessionScreen() {
           }}
         >
           <EmptyState
-            title="Session not found"
-            message="It may have ended. Start a new exam."
-            glyph="疑"
+            title={t("xsess.notFound")}
+            message={t("xsess.notFoundMsg")}
+            glyph={motifChar(language)}
           />
-          <Button title="Go back" onPress={() => router.back()} />
+          <Button title={t("xsess.goBack")} onPress={() => router.back()} />
         </View>
       </SafeAreaView>
     )
@@ -163,7 +168,7 @@ export default function ExamSessionScreen() {
           <Text
             style={[type.labelSm, { color: theme.textMuted, marginTop: 4 }]}
           >
-            Q {currentIdx + 1} of {questions.length}
+            {"Q " + (currentIdx + 1) + " of " + questions.length}
           </Text>
         </View>
         <View style={{ alignItems: "flex-end" }}>
@@ -179,10 +184,10 @@ export default function ExamSessionScreen() {
           </Text>
           <Pressable
             onPress={() =>
-              Alert.alert("Abandon exam?", "Progress will be lost.", [
-                { text: "Cancel", style: "cancel" },
+              Alert.alert(t("xsess.abandonTitle"), t("xsess.abandonMsg"), [
+                { text: t("xsess.cancel"), style: "cancel" },
                 {
-                  text: "Abandon",
+                  text: t("xsess.abandon"),
                   style: "destructive",
                   onPress: async () => {
                     await exam.abandon(sessionId)
@@ -201,7 +206,7 @@ export default function ExamSessionScreen() {
                 marginTop: 4,
               }}
             >
-              ABANDON
+              {t("xsess.abandon").toUpperCase()}
             </Text>
           </Pressable>
         </View>
@@ -222,7 +227,7 @@ export default function ExamSessionScreen() {
           <View style={{ gap: 20 }}>
             <View style={{ gap: 8 }}>
               <Text style={[type.labelSm, { color: theme.textMuted }]}>
-                {current.type ?? "Question"}
+                {current.type ?? t("xsess.question")}
               </Text>
               <Text style={[type.h3, { color: theme.text }]}>
                 {current.prompt}
@@ -312,7 +317,7 @@ export default function ExamSessionScreen() {
             </View>
           </View>
         ) : (
-          <EmptyState title="No question at this index" glyph="？" />
+          <EmptyState title={t("xsess.noQ")} glyph="？" />
         )}
       </ScrollView>
       {/* Bottom nav */}{" "}
@@ -328,9 +333,9 @@ export default function ExamSessionScreen() {
           title={
             currentIdx + 1 >= questions.length
               ? submitM.isPending
-                ? "Submitting…"
-                : "Submit exam"
-              : "Next question"
+                ? t("xsess.submitting")
+                : t("xsess.submitExam")
+              : t("xsess.nextQ")
           }
           onPress={nextQ}
           disabled={!current || !picked[current.id] || submitM.isPending}
@@ -354,12 +359,13 @@ function AudioPlayButton({
   onPlay: () => void
 }) {
   const { theme } = useTheme()
+  const t = useT()
   return (
     <Pressable
       onPress={onPlay}
       disabled={loading}
       accessibilityRole="button"
-      accessibilityLabel="Play audio"
+      accessibilityLabel={t("xsess.playAudio")}
       style={{
         flexDirection: "row",
         alignItems: "center",
@@ -382,7 +388,11 @@ function AudioPlayButton({
           color: theme.bg,
         }}
       >
-        {loading ? "Loading…" : playing ? "Playing…" : "Play audio"}
+        {loading
+          ? t("xsess.loadingAudio")
+          : playing
+            ? t("xsess.playingAudio")
+            : t("xsess.playAudio")}
       </Text>
     </Pressable>
   )

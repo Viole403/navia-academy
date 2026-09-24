@@ -8,6 +8,7 @@ import { Enter } from "@/components/ui/Enter"
 import { Input } from "@/components/ui/Input"
 import { useTheme } from "@/theme/ThemeProvider"
 import { type } from "@/theme/typography"
+import { useT } from "@/i18n"
 import { logStudyWithQueue } from "@/utils/offlineQueue"
 
 const PROMPTS = [
@@ -22,6 +23,7 @@ type Rubric = "on-target" | "partial" | "off-topic"
 
 export default function WritingScreen() {
   const { theme } = useTheme()
+  const t = useT()
   const qc = useQueryClient()
 
   const [promptIdx, setPromptIdx] = useState(0)
@@ -49,10 +51,10 @@ export default function WritingScreen() {
         <Enter index={0}>
           <View style={{ gap: 4 }}>
             <Text style={[type.labelSm, { color: theme.textMuted }]}>
-              Writing
+              {t("write.kicker")}
             </Text>
             <Text style={[type.display, { color: theme.text, fontSize: 32 }]}>
-              Put it in words
+              {t("write.title")}
             </Text>
           </View>
         </Enter>
@@ -69,7 +71,8 @@ export default function WritingScreen() {
             }}
           >
             <Text style={[type.labelSm, { color: theme.accent }]}>
-              Prompt {promptIdx + 1} of {PROMPTS.length}
+              {t("write.prompt")} {promptIdx + 1} {t("write.of")}{" "}
+              {PROMPTS.length}
             </Text>
             <Text style={[type.h3, { color: theme.text }]}>
               {PROMPTS[promptIdx]}
@@ -78,8 +81,8 @@ export default function WritingScreen() {
         </Enter>
 
         <Input
-          label="Your text"
-          placeholder="Write in your learning language…"
+          label={t("write.answerLabel")}
+          placeholder={t("write.answerPh")}
           multiline
           numberOfLines={6}
           textAlignVertical="top"
@@ -91,35 +94,39 @@ export default function WritingScreen() {
           <Enter index={2}>
             <View style={{ gap: 12 }}>
               <Text style={[type.labelSm, { color: theme.textMuted }]}>
-                Self-grade: does it answer the prompt?
+                {t("write.selfGrade")}
               </Text>
               <View style={{ flexDirection: "row", gap: 8, flexWrap: "wrap" }}>
                 <Chip
-                  label="On-target"
+                  label={t("write.onTarget")}
                   selected={grade === "on-target"}
                   tint={theme.green}
                   onPress={() => setGrade("on-target")}
                 />
                 <Chip
-                  label="Partial"
+                  label={t("write.partial")}
                   selected={grade === "partial"}
                   tint={theme.gold}
                   onPress={() => setGrade("partial")}
                 />
                 <Chip
-                  label="Off-topic"
+                  label={t("write.offTopic")}
                   selected={grade === "off-topic"}
                   tint={theme.red}
                   onPress={() => setGrade("off-topic")}
                 />
               </View>
               <Button
-                title="Log writing"
+                title={t("write.log")}
                 disabled={!grade || finishM.isPending}
                 onPress={() => grade && finishM.mutate(grade)}
               />
               {finishM.isSuccess && (
-                <Button title="Next prompt" variant="ghost" onPress={next} />
+                <Button
+                  title={t("write.next")}
+                  variant="ghost"
+                  onPress={next}
+                />
               )}
             </View>
           </Enter>

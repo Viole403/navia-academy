@@ -16,6 +16,7 @@ import { type } from "@/theme/typography"
 import { loadCurriculum } from "@/lib/content-data"
 import { examDisplayName, motifChar } from "@/lib/languages"
 import { useOnboardingStore } from "@/store/onboarding"
+import { useT } from "@/i18n"
 import { logStudyWithQueue } from "@/utils/offlineQueue"
 
 interface Level {
@@ -55,6 +56,7 @@ interface Lesson {
 
 export default function ProgramScreen() {
   const { theme } = useTheme()
+  const t = useT()
   const language = useOnboardingStore((s) => s.language)
   const storedExamType = useOnboardingStore((s) => s.examType)
   const qc = useQueryClient()
@@ -106,7 +108,7 @@ export default function ProgramScreen() {
         <Enter index={0}>
           <View style={{ gap: 4 }}>
             <Text style={[type.labelSm, { color: theme.textMuted }]}>
-              Program
+              {t("prog.kicker")}
             </Text>
             <Text style={[type.display, { color: theme.text, fontSize: 32 }]}>
               {storedExamType ? examDisplayName(storedExamType) : "Study path"}
@@ -118,8 +120,8 @@ export default function ProgramScreen() {
           <ActivityIndicator color={theme.accent} />
         ) : levels.length === 0 ? (
           <EmptyState
-            title="No program for this track yet"
-            message="Curriculum content is still being published."
+            title={t("prog.noProgram")}
+            message={t("prog.noProgramMsg")}
             glyph={motifChar(language)}
           />
         ) : (
@@ -204,7 +206,7 @@ export default function ProgramScreen() {
                                 ]}
                               >
                                 {u.subtitle} · {u.lessonIds?.length ?? 0}{" "}
-                                lessons
+                                {t("prog.lessons")}
                               </Text>
                             )}
                           </Pressable>
@@ -275,8 +277,8 @@ export default function ProgramScreen() {
                                       <Button
                                         title={
                                           doneM.isPending
-                                            ? "Saving…"
-                                            : "Mark complete"
+                                            ? t("prog.saving")
+                                            : t("prog.markComplete")
                                         }
                                         size="sm"
                                         disabled={doneM.isPending}

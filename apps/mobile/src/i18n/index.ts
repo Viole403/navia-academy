@@ -4,6 +4,8 @@ import { storage } from "@/utils/storage"
 import en, { type I18nKey } from "./en"
 import id from "./id"
 
+export type { I18nKey }
+
 export type AppLocale = "en" | "id"
 
 const DICTS = { en, id } as const

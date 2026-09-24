@@ -26,6 +26,7 @@ import {
   motifChar,
 } from "@/lib/languages"
 import { useOnboardingStore } from "@/store/onboarding"
+import { useT } from "@/i18n"
 import type { CatAnswer, PlacementItem, PlacementResult } from "@/types/api"
 
 const MAX_QUESTIONS = 12
@@ -87,6 +88,7 @@ export default function PlacementTestScreen() {
   const qc = useQueryClient()
   const language = useOnboardingStore((s) => s.language)
   const examType = useOnboardingStore((s) => s.examType)
+  const t = useT()
 
   const [started, setStarted] = useState(false)
   const [band, setBand] = useState(2)
@@ -148,7 +150,7 @@ export default function PlacementTestScreen() {
         },
       })
       await tasks
-        .create(`Review weak skills: ${r.weaknesses.join(", ") || "none"}`)
+        .create(t("place.weakTask") + ": " + (r.weaknesses.join(", ") || "—"))
         .catch(() => null)
     },
     onSuccess: () => {
@@ -156,7 +158,7 @@ export default function PlacementTestScreen() {
       router.replace("/(tabs)/learn")
     },
     onError: () => {
-      Alert.alert("Could not save", "Your result is shown — try again.")
+      Alert.alert(t("place.saveFail"), t("place.saveFailMsg"))
     },
   })
 
@@ -203,8 +205,8 @@ export default function PlacementTestScreen() {
       <SafeAreaView style={{ flex: 1, backgroundColor: theme.bg }}>
         <EmptyState
           glyph="∅"
-          title="No placement bank"
-          message="Sync content bundles, then try again."
+          title={t("place.noBank")}
+          message={t("place.noBankMsg")}
         />
       </SafeAreaView>
     )
@@ -230,10 +232,10 @@ export default function PlacementTestScreen() {
           >
             <View style={{ flex: 1, gap: 8 }}>
               <Text style={[type.labelSm, { color: theme.textMuted }]}>
-                {examDisplayName(displayType)} · Placement
+                {examDisplayName(displayType)} · {t("place.suffix")}
               </Text>
               <Text style={[type.display, { color: theme.text, fontSize: 36 }]}>
-                Find your level
+                {t("place.findLevel")}
               </Text>
             </View>
             <Motif char={motifChar(language)} size={56} />
@@ -245,10 +247,9 @@ export default function PlacementTestScreen() {
           <Enter>
             <View style={{ gap: 16 }}>
               <Text style={[type.body, { color: theme.textMuted }]}>
-                {MAX_QUESTIONS} quick questions. The test adapts — correct
-                answers get harder, misses get easier.
+                {MAX_QUESTIONS} {t("place.introA")}
               </Text>
-              <Button title="Start placement" onPress={begin} />
+              <Button title={t("place.start")} onPress={begin} />
             </View>
           </Enter>
         )}
@@ -260,7 +261,8 @@ export default function PlacementTestScreen() {
               tint={examBadgeColor(displayType)}
             />
             <Text style={[type.labelSm, { color: theme.textMuted }]}>
-              Question {answered.length + 1} of {MAX_QUESTIONS}
+              {t("place.question")} {answered.length + 1} {t("place.of")}{" "}
+              {MAX_QUESTIONS}
             </Text>
             <Text style={[type.h2, { color: theme.text }]}>
               {current.prompt}
@@ -304,27 +306,33 @@ export default function PlacementTestScreen() {
           <Enter>
             <View style={{ gap: 16 }}>
               <Text style={[type.labelSm, { color: theme.textMuted }]}>
-                Your level
+                {t("place.yourLevel")}
               </Text>
               <Text style={[type.display, { color: theme.text, fontSize: 48 }]}>
                 {result.estimatedHsk ?? result.estimatedBand}
               </Text>
               <Text style={[type.body, { color: theme.textMuted }]}>
-                {result.correctCount}/{result.totalCount} correct ·{" "}
-                {result.confidence} confidence
+                {result.correctCount}/{result.totalCount}{" "}
+                {t("place.correctWord")} ·{" "}
+                {result.confidence === "low"
+                  ? t("place.confLow")
+                  : result.confidence === "medium"
+                    ? t("place.confMid")
+                    : t("place.confHigh")}{" "}
+                {t("place.confidence")}
               </Text>
               {result.strengths.length > 0 && (
                 <Text style={[type.body, { color: theme.text }]}>
-                  Strong: {result.strengths.join(", ")}
+                  {t("place.strong")}: {result.strengths.join(", ")}
                 </Text>
               )}
               {result.weaknesses.length > 0 && (
                 <Text style={[type.body, { color: theme.text }]}>
-                  Work on: {result.weaknesses.join(", ")}
+                  {t("place.workOn")}: {result.weaknesses.join(", ")}
                 </Text>
               )}
               <Button
-                title="Save & start learning"
+                title={t("place.saveStart")}
                 onPress={() => acceptM.mutate(result)}
                 loading={acceptM.isPending}
               />

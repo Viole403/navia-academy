@@ -7,6 +7,7 @@ import { Chip } from "@/components/ui/Chip"
 import { Enter } from "@/components/ui/Enter"
 import { useTheme } from "@/theme/ThemeProvider"
 import { type } from "@/theme/typography"
+import { useT } from "@/i18n"
 import { logStudyWithQueue } from "@/utils/offlineQueue"
 
 const PROMPTS = [
@@ -19,6 +20,7 @@ const PROMPTS = [
 
 export default function SpeakingScreen() {
   const { theme } = useTheme()
+  const t = useT()
   const qc = useQueryClient()
 
   const [promptIdx, setPromptIdx] = useState(0)
@@ -46,10 +48,10 @@ export default function SpeakingScreen() {
         <Enter index={0}>
           <View style={{ gap: 4 }}>
             <Text style={[type.labelSm, { color: theme.textMuted }]}>
-              Speaking
+              {t("speak.kicker")}
             </Text>
             <Text style={[type.display, { color: theme.text, fontSize: 32 }]}>
-              Say it aloud
+              {t("speak.title")}
             </Text>
           </View>
         </Enter>
@@ -66,20 +68,20 @@ export default function SpeakingScreen() {
             }}
           >
             <Text style={[type.labelSm, { color: theme.accent }]}>
-              Prompt {promptIdx + 1} of {PROMPTS.length}
+              {t("speak.prompt")} {promptIdx + 1} {t("speak.of")}{" "}
+              {PROMPTS.length}
             </Text>
             <Text style={[type.h3, { color: theme.text }]}>
               {PROMPTS[promptIdx]}
             </Text>
             <Text style={[type.bodySm, { color: theme.textMuted }]}>
-              On-device speech recognition needs a dev build. For now: read the
-              prompt aloud, then grade yourself honestly.
+              {t("speak.note")}
             </Text>
           </View>
         </Enter>
 
         <Button
-          title={said ? "Said it" : "I said it aloud"}
+          title={said ? t("speak.saidIt") : t("speak.iSaidIt")}
           variant={said ? "secondary" : "primary"}
           onPress={() => setSaid(true)}
         />
@@ -88,29 +90,33 @@ export default function SpeakingScreen() {
           <Enter index={2}>
             <View style={{ gap: 12 }}>
               <Text style={[type.labelSm, { color: theme.textMuted }]}>
-                How did it sound?
+                {t("speak.howSound")}
               </Text>
               <View style={{ flexDirection: "row", gap: 8 }}>
                 <Chip
-                  label="Fluent"
+                  label={t("speak.fluent")}
                   selected={grade === "fluent"}
                   tint={theme.green}
                   onPress={() => setGrade("fluent")}
                 />
                 <Chip
-                  label="Rough"
+                  label={t("speak.rough")}
                   selected={grade === "rough"}
                   tint={theme.gold}
                   onPress={() => setGrade("rough")}
                 />
               </View>
               <Button
-                title="Log practice"
+                title={t("speak.log")}
                 disabled={!grade || finishM.isPending}
                 onPress={() => grade && finishM.mutate(grade)}
               />
               {finishM.isSuccess && (
-                <Button title="Next prompt" variant="ghost" onPress={next} />
+                <Button
+                  title={t("speak.next")}
+                  variant="ghost"
+                  onPress={next}
+                />
               )}
             </View>
           </Enter>

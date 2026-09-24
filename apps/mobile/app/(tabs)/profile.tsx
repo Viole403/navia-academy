@@ -30,7 +30,7 @@ import {
   scheduleDailyStreakReminder,
 } from "@/utils/notifications"
 import { useAuthStore } from "@/store/auth"
-import { useLocaleStore, type AppLocale } from "@/i18n"
+import { useLocaleStore, type AppLocale, useT } from "@/i18n"
 import { useThemePrefs } from "@/store/theme"
 import { clearTokens } from "@/utils/secure"
 import type { Task } from "@/types/api"
@@ -39,6 +39,7 @@ type Section = "profile" | "tasks" | "settings" | "about"
 
 export default function ProfileTab() {
   const { theme, catalog } = useTheme()
+  const t = useT()
   const router = useRouter()
   const qc = useQueryClient()
   const user = useAuthStore((s) => s.user)
@@ -128,10 +129,10 @@ export default function ProfileTab() {
   if (!user) return null
 
   const onSignOut = () => {
-    Alert.alert("Sign out?", "Your progress is synced to the cloud.", [
-      { text: "Cancel", style: "cancel" },
+    Alert.alert(t("profile.signOutTitle"), t("profile.signOutMsg"), [
+      { text: t("profile.cancel"), style: "cancel" },
       {
-        text: "Sign out",
+        text: t("profile.signOut"),
         style: "destructive",
         onPress: async () => {
           try {
@@ -185,10 +186,10 @@ export default function ProfileTab() {
         {/* Section switcher */}
         <View style={{ flexDirection: "row", gap: 8, flexWrap: "wrap" }}>
           {[
-            { id: "profile" as Section, label: "Profile" },
-            { id: "tasks" as Section, label: "Tasks" },
-            { id: "settings" as Section, label: "Settings" },
-            { id: "about" as Section, label: "About" },
+            { id: "profile" as Section, label: t("profile.tab") },
+            { id: "tasks" as Section, label: t("profile.tasks") },
+            { id: "settings" as Section, label: t("profile.settings") },
+            { id: "about" as Section, label: t("profile.about") },
           ].map((s) => {
             const sel = section === s.id
             return (
@@ -231,15 +232,15 @@ export default function ProfileTab() {
               }}
             >
               <MetaField
-                label="XP"
+                label={t("profile.xp")}
                 value={progressQ.data ? String(progressQ.data.xp) : "—"}
               />
               <MetaField
-                label="Day streak"
+                label={t("profile.dayStreak")}
                 value={progressQ.data ? String(progressQ.data.streak) : "—"}
               />
               <MetaField
-                label="Best streak"
+                label={t("profile.bestStreak")}
                 value={
                   progressQ.data ? String(progressQ.data.best_streak) : "—"
                 }
@@ -250,7 +251,7 @@ export default function ProfileTab() {
               <Card>
                 <View style={{ gap: 8 }}>
                   <Text style={[type.labelSm, { color: theme.textMuted }]}>
-                    Learning path
+                    {t("profile.learningPath")}
                   </Text>
                   <Text
                     style={[
@@ -262,7 +263,7 @@ export default function ProfileTab() {
                   </Text>
                   <Pressable onPress={() => setSection("settings")}>
                     <Text style={[type.bodySm, { color: theme.accent }]}>
-                      Change in Settings →
+                      {t("profile.changeSettings")}
                     </Text>
                   </Pressable>
                 </View>
@@ -279,17 +280,25 @@ export default function ProfileTab() {
               }}
             >
               <MetaField
-                label="Member since"
+                label={t("profile.memberSince")}
                 value={new Date(user.created_at).toLocaleDateString()}
               />
-              <MetaField label="Role" value={user.role} capitalize />
               <MetaField
-                label="Verified"
-                value={user.email_verified ? "Yes" : "No"}
+                label={t("profile.role")}
+                value={user.role}
+                capitalize
+              />
+              <MetaField
+                label={t("profile.verified")}
+                value={user.email_verified ? t("profile.yes") : t("profile.no")}
               />
             </View>
 
-            <Button title="Sign out" variant="danger" onPress={onSignOut} />
+            <Button
+              title={t("profile.signOut")}
+              variant="danger"
+              onPress={onSignOut}
+            />
           </View>
         )}
 
@@ -297,20 +306,20 @@ export default function ProfileTab() {
           <View style={{ gap: 16 }}>
             <View style={{ gap: 10 }}>
               <Text style={[type.labelSm, { color: theme.textMuted }]}>
-                Add a task
+                {t("profile.addTask")}
               </Text>
               <View
                 style={{ flexDirection: "row", gap: 8, alignItems: "flex-end" }}
               >
                 <View style={{ flex: 1 }}>
                   <Input
-                    placeholder="e.g., Memorize 10 radicals"
+                    placeholder={t("profile.taskHint")}
                     value={newTask}
                     onChangeText={setNewTask}
                   />
                 </View>
                 <Button
-                  title="Add"
+                  title={t("profile.add")}
                   size="sm"
                   onPress={() => {
                     if (newTask.trim()) addTaskM.mutate(newTask.trim())
@@ -323,16 +332,16 @@ export default function ProfileTab() {
 
             <View style={{ gap: 10 }}>
               <Text style={[type.labelSm, { color: theme.textMuted }]}>
-                Open
+                {t("profile.open")}
               </Text>
               {tasksQ.isLoading ? (
                 <ActivityIndicator color={theme.accent} />
               ) : (tasksQ.data ?? []).filter((t) => !t.completed).length ===
                 0 ? (
                 <EmptyState
-                  title="All clear"
-                  message="Add a task above to keep momentum."
-                  glyph="单"
+                  title={t("profile.allClear")}
+                  message={t("profile.allClearMsg")}
+                  glyph={motifChar(language)}
                 />
               ) : (
                 (tasksQ.data ?? [])
@@ -351,7 +360,7 @@ export default function ProfileTab() {
             {(tasksQ.data ?? []).some((t) => t.completed) && (
               <View style={{ gap: 10, marginTop: 8 }}>
                 <Text style={[type.labelSm, { color: theme.textMuted }]}>
-                  Done
+                  {t("profile.done")}
                 </Text>
                 {(tasksQ.data ?? [])
                   .filter((t) => t.completed)
@@ -373,7 +382,7 @@ export default function ProfileTab() {
             {/* Learning path */}
             <View style={{ gap: 12 }}>
               <Text style={[type.labelSm, { color: theme.textMuted }]}>
-                Learning path
+                {t("profile.learningPath")}
               </Text>
               <View style={{ flexDirection: "row", flexWrap: "wrap", gap: 8 }}>
                 {PATHS.map((p) => (
@@ -393,15 +402,22 @@ export default function ProfileTab() {
             {/* Voice */}
             <View style={{ gap: 12 }}>
               <Text style={[type.labelSm, { color: theme.textMuted }]}>
-                Voice
+                {t("profile.voice")}
               </Text>
               <View style={{ flexDirection: "row", flexWrap: "wrap", gap: 8 }}>
-                {["female", "male"].map((g) => (
+                {[
+                  { id: "female", label: t("profile.female") },
+                  { id: "male", label: t("profile.male") },
+                ].map((g) => (
                   <Chip
-                    key={g}
-                    label={g.charAt(0).toUpperCase() + g.slice(1)}
-                    selected={(settingsQ.data?.voice_gender ?? "female") === g}
-                    onPress={() => updateSettingsM.mutate({ voice_gender: g })}
+                    key={g.id}
+                    label={g.label}
+                    selected={
+                      (settingsQ.data?.voice_gender ?? "female") === g.id
+                    }
+                    onPress={() =>
+                      updateSettingsM.mutate({ voice_gender: g.id })
+                    }
                   />
                 ))}
               </View>
@@ -410,13 +426,13 @@ export default function ProfileTab() {
             {/* Daily goal */}
             <View style={{ gap: 12 }}>
               <Text style={[type.labelSm, { color: theme.textMuted }]}>
-                Daily goal
+                {t("profile.dailyGoal")}
               </Text>
               <View style={{ flexDirection: "row", flexWrap: "wrap", gap: 8 }}>
                 {[5, 10, 15, 30].map((m) => (
                   <Chip
                     key={m}
-                    label={`${m} min`}
+                    label={`${m} ${t("profile.min")}`}
                     selected={(settingsQ.data?.daily_goal_min ?? 10) === m}
                     onPress={() =>
                       updateSettingsM.mutate({ daily_goal_min: m })
@@ -429,7 +445,7 @@ export default function ProfileTab() {
             {/* New words + reviews */}
             <View style={{ gap: 12 }}>
               <Text style={[type.labelSm, { color: theme.textMuted }]}>
-                New words per day
+                {t("profile.newWords")}
               </Text>
               <View style={{ flexDirection: "row", flexWrap: "wrap", gap: 8 }}>
                 {[5, 10, 20].map((n) => (
@@ -447,7 +463,7 @@ export default function ProfileTab() {
 
             <View style={{ gap: 12 }}>
               <Text style={[type.labelSm, { color: theme.textMuted }]}>
-                Max reviews per day
+                {t("profile.maxReviews")}
               </Text>
               <View style={{ flexDirection: "row", flexWrap: "wrap", gap: 8 }}>
                 {[20, 50, 100].map((n) => (
@@ -466,7 +482,7 @@ export default function ProfileTab() {
             {/* App language */}
             <View style={{ gap: 12 }}>
               <Text style={[type.labelSm, { color: theme.textMuted }]}>
-                App language
+                {t("profile.appLang")}
               </Text>
               <View style={{ flexDirection: "row", flexWrap: "wrap", gap: 8 }}>
                 {(
@@ -491,7 +507,7 @@ export default function ProfileTab() {
             {/* Theme */}
             <View style={{ gap: 12 }}>
               <Text style={[type.labelSm, { color: theme.textMuted }]}>
-                Theme
+                {t("profile.theme")}
               </Text>
               <View style={{ flexDirection: "row", flexWrap: "wrap", gap: 10 }}>
                 {catalog.map((t) => (
@@ -508,13 +524,13 @@ export default function ProfileTab() {
             {/* Mode */}
             <View style={{ gap: 10 }}>
               <Text style={[type.labelSm, { color: theme.textMuted }]}>
-                Appearance
+                {t("profile.appearance")}
               </Text>
               <View style={{ flexDirection: "row", gap: 6 }}>
                 {[
-                  { id: "system" as ThemeMode, label: "System" },
-                  { id: "light" as ThemeMode, label: "Light" },
-                  { id: "dark" as ThemeMode, label: "Dark" },
+                  { id: "system" as ThemeMode, label: t("profile.modeSystem") },
+                  { id: "light" as ThemeMode, label: t("profile.modeLight") },
+                  { id: "dark" as ThemeMode, label: t("profile.modeDark") },
                   { id: "amoled" as ThemeMode, label: "AMOLED" },
                 ].map((m) => {
                   const sel = mode === m.id
@@ -558,25 +574,25 @@ export default function ProfileTab() {
                 }}
               >
                 <Text style={[type.labelSm, { color: theme.textMuted }]}>
-                  Learning
+                  {t("profile.learning")}
                 </Text>
                 <SettingsSwitch
-                  label="Autoplay audio"
-                  hint="Play pronunciation when a word appears"
+                  label={t("profile.autoplay")}
+                  hint={t("profile.autoplayHint")}
                   value={settingsQ.data.autoplay_audio}
                   onChange={(v) =>
                     updateSettingsM.mutate({ autoplay_audio: v })
                   }
                 />
                 <SettingsSwitch
-                  label="Sound effects"
-                  hint="Tiny confirmation chimes"
+                  label={t("profile.sounds")}
+                  hint={t("profile.soundsHint")}
                   value={settingsQ.data.sound_effects}
                   onChange={(v) => updateSettingsM.mutate({ sound_effects: v })}
                 />
                 <SettingsSwitch
-                  label="Daily reminder"
-                  hint="Push notification at your chosen time"
+                  label={t("profile.reminder")}
+                  hint={t("profile.reminderHint")}
                   value={settingsQ.data.daily_reminder}
                   onChange={async (v) => {
                     updateSettingsM.mutate({ daily_reminder: v })
@@ -589,8 +605,8 @@ export default function ProfileTab() {
                         await scheduleDailyStreakReminder(h || 20, m || 0)
                       } else {
                         Alert.alert(
-                          "Notifications disabled",
-                          "Enable them in system settings to receive reminders."
+                          t("profile.notifOff"),
+                          t("profile.notifOffMsg")
                         )
                       }
                     } else {
@@ -600,7 +616,7 @@ export default function ProfileTab() {
                 />
                 <View style={{ gap: 8 }}>
                   <Text style={[type.labelSm, { color: theme.textMuted }]}>
-                    Reminder time
+                    {t("profile.reminderTime")}
                   </Text>
                   <View
                     style={{ flexDirection: "row", flexWrap: "wrap", gap: 8 }}
@@ -625,22 +641,22 @@ export default function ProfileTab() {
                   </View>
                 </View>
                 <SettingsSwitch
-                  label="Weekly summary"
-                  hint="Every Monday morning"
+                  label={t("profile.weekly")}
+                  hint={t("profile.weeklyHint")}
                   value={settingsQ.data.weekly_summary}
                   onChange={(v) =>
                     updateSettingsM.mutate({ weekly_summary: v })
                   }
                 />
                 <SettingsSwitch
-                  label="Focus mode"
-                  hint="Hide streaks and comparisons"
+                  label={t("profile.focus")}
+                  hint={t("profile.focusHint")}
                   value={settingsQ.data.focus_mode}
                   onChange={(v) => updateSettingsM.mutate({ focus_mode: v })}
                 />
                 <SettingsSwitch
-                  label="Reduce motion"
-                  hint="Calm down animations"
+                  label={t("profile.reduceMotion")}
+                  hint={t("profile.reduceMotionHint")}
                   value={settingsQ.data.reduce_motion}
                   onChange={(v) => updateSettingsM.mutate({ reduce_motion: v })}
                 />
@@ -694,6 +710,7 @@ function TaskRow({
   onDelete: () => void
 }) {
   const { theme } = useTheme()
+  const t = useT()
   return (
     <View
       style={{
@@ -733,7 +750,9 @@ function TaskRow({
         {task.content}
       </Text>
       <Pressable onPress={onDelete}>
-        <Text style={{ color: theme.red, fontSize: 12 }}>Delete</Text>
+        <Text style={{ color: theme.red, fontSize: 12 }}>
+          {t("profile.delete")}
+        </Text>
       </Pressable>
     </View>
   )
@@ -823,6 +842,7 @@ function SettingsSwitch({
 
 function ChangePasswordCard() {
   const { theme } = useTheme()
+  const t = useT()
   const [current, setCurrent] = useState("")
   const [next, setNext] = useState("")
   const [msg, setMsg] = useState<string | null>(null)
@@ -832,18 +852,18 @@ function ChangePasswordCard() {
     onSuccess: () => {
       setCurrent("")
       setNext("")
-      setMsg("Password changed.")
+      setMsg(t("profile.pwChanged"))
     },
-    onError: () => setMsg("Change failed. Check the current password."),
+    onError: () => setMsg(t("profile.pwFailed")),
   })
 
   return (
     <View style={{ gap: 12 }}>
       <Text style={[type.labelSm, { color: theme.textMuted }]}>
-        Change password
+        {t("profile.changePw")}
       </Text>
       <Input
-        label="Current password"
+        label={t("profile.currentPw")}
         value={current}
         onChangeText={(v) => {
           setCurrent(v)
@@ -853,8 +873,8 @@ function ChangePasswordCard() {
         autoCapitalize="none"
       />
       <Input
-        label="New password"
-        hint="At least 8 characters"
+        label={t("profile.newPw")}
+        hint={t("profile.pwHint")}
         value={next}
         onChangeText={(v) => {
           setNext(v)
@@ -867,7 +887,7 @@ function ChangePasswordCard() {
         <Text style={[type.bodySm, { color: theme.textMuted }]}>{msg}</Text>
       )}
       <Button
-        title={changeM.isPending ? "Saving…" : "Update password"}
+        title={changeM.isPending ? t("profile.saving") : t("profile.updatePw")}
         variant="secondary"
         disabled={!current || next.length < 8 || changeM.isPending}
         onPress={() => changeM.mutate()}
@@ -879,6 +899,7 @@ function ChangePasswordCard() {
 // ─── About section ─────────────────────────────────────────────────────────
 function AboutSection() {
   const { theme } = useTheme()
+  const t = useT()
   const router = useRouter()
   const language = useOnboardingStore((s) => s.language)
   const contributorsQ = useQuery({
@@ -897,20 +918,22 @@ function AboutSection() {
           Navia Academy
         </Text>
         <Text style={[type.bodySm, { color: theme.textMuted }]}>
-          Read, listen, and practice across five exam tracks — HSK, TOCFL,
-          Goethe-Zertifikat, JLPT, and TOEFL iBT.
+          {t("profile.aboutDesc")}
         </Text>
       </View>
 
       {/* Contributors */}
       <View style={{ gap: 12 }}>
         <Text style={[type.labelSm, { color: theme.textMuted }]}>
-          Contributors
+          {t("profile.contributors")}
         </Text>
         {contributorsQ.isLoading ? (
           <ActivityIndicator color={theme.accent} />
         ) : (contributorsQ.data ?? []).length === 0 ? (
-          <EmptyState title="No contributors yet" glyph={motifChar(language)} />
+          <EmptyState
+            title={t("profile.noContrib")}
+            glyph={motifChar(language)}
+          />
         ) : (
           <View style={{ borderTopWidth: 1, borderTopColor: theme.border }}>
             {(contributorsQ.data ?? []).map((c, i, arr) => (
@@ -976,11 +999,16 @@ function AboutSection() {
 
       {/* Sponsors */}
       <View style={{ gap: 12 }}>
-        <Text style={[type.labelSm, { color: theme.textMuted }]}>Sponsors</Text>
+        <Text style={[type.labelSm, { color: theme.textMuted }]}>
+          {t("profile.sponsors")}
+        </Text>
         {sponsorsQ.isLoading ? (
           <ActivityIndicator color={theme.accent} />
         ) : (sponsorsQ.data ?? []).length === 0 ? (
-          <EmptyState title="No sponsors yet" glyph={motifChar(language)} />
+          <EmptyState
+            title={t("profile.noSponsors")}
+            glyph={motifChar(language)}
+          />
         ) : (
           <View style={{ borderTopWidth: 1, borderTopColor: theme.border }}>
             {(sponsorsQ.data ?? []).map((s, i, arr) => (
@@ -1055,18 +1083,20 @@ function AboutSection() {
 
       {/* Apply CTAs */}
       <View style={{ gap: 12, paddingTop: 4 }}>
-        <Text style={[type.labelSm, { color: theme.textMuted }]}>Join us</Text>
+        <Text style={[type.labelSm, { color: theme.textMuted }]}>
+          {t("profile.joinUs")}
+        </Text>
         <View style={{ flexDirection: "row", gap: 8 }}>
           <View style={{ flex: 1 }}>
             <Button
-              title="Contribute"
+              title={t("profile.contribute")}
               variant="secondary"
               onPress={() => router.push("/apply")}
             />
           </View>
           <View style={{ flex: 1 }}>
             <Button
-              title="Sponsor"
+              title={t("profile.sponsor")}
               variant="ghost"
               onPress={() => router.push("/apply")}
             />

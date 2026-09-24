@@ -32,10 +32,12 @@ import {
   wordLabel,
 } from "@/lib/languages"
 import { useOnboardingStore } from "@/store/onboarding"
+import { useT } from "@/i18n"
 import type { VocabWord } from "@/types/api"
 
 export default function LearnTab() {
   const { theme } = useTheme()
+  const t = useT()
   const router = useRouter()
   const language = useOnboardingStore((s) => s.language) ?? DEFAULT_LANGUAGE
   const storedExamType = useOnboardingStore((s) => s.examType)
@@ -108,10 +110,10 @@ export default function LearnTab() {
           >
             <View style={{ flex: 1, gap: 8 }}>
               <Text style={[type.labelSm, { color: theme.textMuted }]}>
-                Library
+                {t("learn.kicker")}
               </Text>
               <Text style={[type.display, { color: theme.text, fontSize: 36 }]}>
-                Learn
+                {t("learn.title")}
               </Text>
             </View>
             <Motif char={info.nativeName.charAt(0)} size={56} />
@@ -131,10 +133,10 @@ export default function LearnTab() {
           }}
         >
           <View style={{ flexDirection: "row", gap: 24 }}>
-            {(["browse", "review"] as const).map((t) => {
-              const sel = tab === t
+            {(["browse", "review"] as const).map((tabId) => {
+              const sel = tab === tabId
               return (
-                <Pressable key={t} onPress={() => setTab(t)}>
+                <Pressable key={tabId} onPress={() => setTab(tabId)}>
                   <Text
                     style={{
                       fontFamily: fonts.serif,
@@ -146,8 +148,8 @@ export default function LearnTab() {
                       paddingBottom: 4,
                     }}
                   >
-                    {t === "browse" ? "Browse" : "Review"}
-                    {t === "review" && srsQ.data && srsQ.data.due > 0 && (
+                    {tabId === "browse" ? t("learn.browse") : t("learn.review")}
+                    {tabId === "review" && srsQ.data && srsQ.data.due > 0 && (
                       <Text style={{ color: theme.accent, fontSize: 14 }}>
                         {" "}
                         · {srsQ.data.due}
@@ -186,11 +188,14 @@ export default function LearnTab() {
           </Text>
           <View style={{ flex: 1, gap: 4 }}>
             <Text style={[type.h3, { color: theme.text }]}>
-              {isCharScript(language) ? "Hanzi Match" : "Word Match"}
+              {isCharScript(language)
+                ? t("learn.hanziMatch")
+                : t("learn.wordMatch")}
             </Text>
             <Text style={[type.bodySm, { color: theme.textMuted }]}>
-              Pair {wordLabel(language, false)} to meanings.{" "}
-              {examDisplayName(examType)} {examLevel} deck.
+              {t("learn.pair")} {wordLabel(language, false)}{" "}
+              {t("learn.toMeanings")} {examDisplayName(examType)} {examLevel}{" "}
+              deck.
             </Text>
           </View>
           <Text
@@ -228,9 +233,11 @@ export default function LearnTab() {
             {motifChar(language)}
           </Text>
           <View style={{ flex: 1, gap: 4 }}>
-            <Text style={[type.h3, { color: theme.text }]}>Library</Text>
+            <Text style={[type.h3, { color: theme.text }]}>
+              {t("learn.library")}
+            </Text>
             <Text style={[type.bodySm, { color: theme.textMuted }]}>
-              Grammar, readings, and conversations.
+              {t("learn.libraryDesc")}
             </Text>
           </View>
           <Text
@@ -268,9 +275,12 @@ export default function LearnTab() {
             {motifChar(language)}
           </Text>
           <View style={{ flex: 1, gap: 4 }}>
-            <Text style={[type.h3, { color: theme.text }]}>Program</Text>
+            <Text style={[type.h3, { color: theme.text }]}>
+              {t("learn.program")}
+            </Text>
             <Text style={[type.bodySm, { color: theme.textMuted }]}>
-              Guided {examDisplayName(examType)} path with lessons.
+              {t("learn.programPrefix")} {examDisplayName(examType)}{" "}
+              {t("learn.programSuffix")}
             </Text>
           </View>
           <Text
@@ -308,9 +318,11 @@ export default function LearnTab() {
             {motifChar(language)}
           </Text>
           <View style={{ flex: 1, gap: 4 }}>
-            <Text style={[type.h3, { color: theme.text }]}>Listening</Text>
+            <Text style={[type.h3, { color: theme.text }]}>
+              {t("learn.listening")}
+            </Text>
             <Text style={[type.bodySm, { color: theme.textMuted }]}>
-              Hear the word, pick the meaning.
+              {t("learn.listeningDesc")}
             </Text>
           </View>
           <Text
@@ -348,9 +360,11 @@ export default function LearnTab() {
             {motifChar(language)}
           </Text>
           <View style={{ flex: 1, gap: 4 }}>
-            <Text style={[type.h3, { color: theme.text }]}>Speaking</Text>
+            <Text style={[type.h3, { color: theme.text }]}>
+              {t("learn.speaking")}
+            </Text>
             <Text style={[type.bodySm, { color: theme.textMuted }]}>
-              Say prompts aloud, grade yourself.
+              {t("learn.speakingDesc")}
             </Text>
           </View>
           <Text
@@ -388,9 +402,11 @@ export default function LearnTab() {
             {motifChar(language)}
           </Text>
           <View style={{ flex: 1, gap: 4 }}>
-            <Text style={[type.h3, { color: theme.text }]}>Writing</Text>
+            <Text style={[type.h3, { color: theme.text }]}>
+              {t("learn.writing")}
+            </Text>
             <Text style={[type.bodySm, { color: theme.textMuted }]}>
-              Answer prompts, self-grade.
+              {t("learn.writingDesc")}
             </Text>
           </View>
           <Text
@@ -422,6 +438,7 @@ export default function LearnTab() {
           <ReviewTab
             dueCount={srsQ.data?.due ?? 0}
             loading={dueCardsQ.isLoading}
+            language={language}
           />
         )}
       </ScrollView>
@@ -456,6 +473,7 @@ function BrowseTab({
   levels: string[]
 }) {
   const { theme } = useTheme()
+  const t = useT()
 
   const filtered = useMemo(() => {
     const q = search.trim().toLowerCase()
@@ -481,7 +499,7 @@ function BrowseTab({
       {/* Exam type chips */}
       <View style={{ gap: 10 }}>
         <Text style={[type.labelSm, { color: theme.textMuted }]}>
-          Curriculum
+          {t("learn.curriculum")}
         </Text>
         <ScrollView
           horizontal
@@ -505,7 +523,9 @@ function BrowseTab({
 
       {/* Level selector */}
       <View style={{ gap: 10 }}>
-        <Text style={[type.labelSm, { color: theme.textMuted }]}>Level</Text>
+        <Text style={[type.labelSm, { color: theme.textMuted }]}>
+          {t("learn.level")}
+        </Text>
         {vocabLoading ? (
           <ActivityIndicator color={theme.accent} />
         ) : (
@@ -516,7 +536,7 @@ function BrowseTab({
           >
             {levels.length === 0 && (
               <Text style={[type.caption, { color: theme.textDim }]}>
-                No levels discovered.
+                {t("learn.noLevels")}
               </Text>
             )}
             {levels.map((lv) => (
@@ -533,9 +553,11 @@ function BrowseTab({
 
       {/* Search */}
       <View style={{ gap: 10 }}>
-        <Text style={[type.labelSm, { color: theme.textMuted }]}>Search</Text>
+        <Text style={[type.labelSm, { color: theme.textMuted }]}>
+          {t("learn.search")}
+        </Text>
         <Input
-          placeholder={wordLabel(language) + " headword, reading, or meaning…"}
+          placeholder={wordLabel(language) + " " + t("learn.searchHint")}
           value={search}
           onChangeText={setSearch}
           autoCapitalize="none"
@@ -547,11 +569,11 @@ function BrowseTab({
       <View style={{ gap: 8 }}>
         <View style={{ flexDirection: "row", justifyContent: "space-between" }}>
           <Text style={[type.labelSm, { color: theme.textMuted }]}>
-            Results
+            {t("learn.results")}
           </Text>
           {filtered.length > 0 && (
             <Text style={[type.caption, { color: theme.textMuted }]}>
-              {filtered.length.toLocaleString()} entries
+              {filtered.length.toLocaleString()} {t("learn.entries")}
             </Text>
           )}
         </View>
@@ -560,9 +582,9 @@ function BrowseTab({
           <ActivityIndicator color={theme.accent} />
         ) : filtered.length === 0 ? (
           <EmptyState
-            title="Nothing here"
-            message="Try a different search term or level."
-            glyph="空"
+            title={t("learn.nothingHere")}
+            message={t("learn.tryDifferent")}
+            glyph={motifChar(language)}
           />
         ) : (
           <View>
@@ -636,11 +658,14 @@ const WordRow = memo(function WordRow({ word }: { word: VocabWord }) {
 function ReviewTab({
   dueCount,
   loading,
+  language,
 }: {
   dueCount: number
   loading: boolean
+  language: import("@/lib/languages").LanguageCode
 }) {
   const { theme } = useTheme()
+  const t = useT()
   const router = useRouter()
 
   return (
@@ -648,7 +673,7 @@ function ReviewTab({
       <Card>
         <View style={{ gap: 12 }}>
           <Text style={[type.labelSm, { color: theme.textMuted }]}>
-            Spaced repetition
+            {t("learn.srs")}
           </Text>
           <Text
             style={{
@@ -662,7 +687,7 @@ function ReviewTab({
             {dueCount}
           </Text>
           <Text style={[type.bodySm, { color: theme.textMuted }]}>
-            cards due for review today
+            {t("learn.cardsDue")}
           </Text>
           <ProgressBar
             value={dueCount === 0 ? 1 : 0.0}
@@ -674,9 +699,9 @@ function ReviewTab({
 
       {dueCount === 0 ? (
         <EmptyState
-          title="All reviewed"
-          message="Come back tomorrow for a fresh batch."
-          glyph="完"
+          title={t("learn.allReviewed")}
+          message={t("learn.comeBack")}
+          glyph={motifChar(language)}
         />
       ) : (
         <Pressable
@@ -697,7 +722,7 @@ function ReviewTab({
               letterSpacing: 0.5,
             }}
           >
-            {loading ? "Loading…" : "Start review session"}
+            {loading ? t("learn.loading") : t("learn.startReview")}
           </Text>
         </Pressable>
       )}

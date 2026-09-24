@@ -19,7 +19,13 @@ import { fonts, type } from "@/theme/typography"
 import { exam, progress, settings } from "@/api/endpoints"
 import { useAuthStore } from "@/store/auth"
 import { useOnboardingStore } from "@/store/onboarding"
-import { type LanguageCode, motifChar } from "@/lib/languages"
+import {
+  type LanguageCode,
+  examDisplayName,
+  languageInfo,
+  motifChar,
+} from "@/lib/languages"
+import { useLocaleStore, useT } from "@/i18n"
 
 const DAILY_WORDS: Record<
   LanguageCode,
@@ -55,6 +61,8 @@ export default function HomeTab() {
   const { theme } = useTheme()
   const router = useRouter()
   const user = useAuthStore((s) => s.user)
+  const t = useT()
+  const locale = useLocaleStore((s) => s.locale)
 
   const progressQ = useQuery({ queryKey: ["progress"], queryFn: progress.get })
   const dueCardsQ = useQuery({
@@ -73,10 +81,10 @@ export default function HomeTab() {
 
   const greeting = useMemo(() => {
     const h = new Date().getHours()
-    if (h < 12) return "Good morning"
-    if (h < 18) return "Good afternoon"
-    return "Good evening"
-  }, [])
+    if (h < 12) return t("home.morning")
+    if (h < 18) return t("home.afternoon")
+    return t("home.evening")
+  }, [t])
 
   // Pick a deterministic "word of the day"
   const language = useOnboardingStore((s) => s.language)
@@ -130,16 +138,19 @@ export default function HomeTab() {
           >
             <View style={{ flex: 1, gap: 8 }}>
               <Text style={[type.labelSm, { color: theme.textMuted }]}>
-                {new Date().toLocaleDateString("en-US", {
-                  weekday: "long",
-                  month: "long",
-                  day: "numeric",
-                })}
+                {new Date().toLocaleDateString(
+                  locale === "id" ? "id-ID" : "en-US",
+                  {
+                    weekday: "long",
+                    month: "long",
+                    day: "numeric",
+                  }
+                )}
               </Text>
               <Text style={[type.display, { color: theme.text, fontSize: 36 }]}>
                 {greeting},{"\n"}
                 <Text style={{ color: theme.accent, fontStyle: "italic" }}>
-                  {user?.name?.split(" ")[0] ?? "reader"}.
+                  {user?.name?.split(" ")[0] ?? t("home.reader")}.
                 </Text>
               </Text>
             </View>
@@ -163,19 +174,19 @@ export default function HomeTab() {
           >
             <StatStrip
               value={progressQ.data?.xp ?? 0}
-              label="Lifetime XP"
+              label={t("home.xp")}
               accent={theme.accent}
             />
             <Divider color={theme.border} />
             <StatStrip
               value={progressQ.data?.streak ?? 0}
-              label="Day streak"
+              label={t("home.streak")}
               accent={theme.gold}
             />
             <Divider color={theme.border} />
             <StatStrip
               value={srsStatsQ.data?.due ?? 0}
-              label="Cards due"
+              label={t("home.due")}
               accent={theme.mint}
             />
           </View>
@@ -192,7 +203,7 @@ export default function HomeTab() {
               }}
             >
               <Text style={[type.labelSm, { color: theme.textMuted }]}>
-                Word of the day
+                {t("home.wordOfDay")}
               </Text>
               <Text style={[type.labelSm, { color: theme.accent }]}>
                 No. 001
@@ -249,7 +260,7 @@ export default function HomeTab() {
             }}
           >
             <Text style={[type.labelSm, { color: theme.textMuted }]}>
-              Daily goal
+              {t("home.dailyGoal")}
             </Text>
             <Text style={[type.caption, { color: theme.textMuted }]}>
               {todayMin} / {goal} min
@@ -261,28 +272,30 @@ export default function HomeTab() {
         {/* Quick actions */}
         <View style={{ gap: 12 }}>
           <Text style={[type.labelSm, { color: theme.textMuted }]}>
-            Continue
+            {t("common.continue")}
           </Text>
 
           {(dueCardsQ.data?.length ?? 0) > 0 && (
             <ActionRow
-              label="Review due cards"
-              detail={`${dueCardsQ.data?.length ?? 0} waiting`}
+              label={t("home.reviewDue")}
+              detail={`${dueCardsQ.data?.length ?? 0} ${t("home.waiting")}`}
               onPress={() => router.push("/(tabs)/learn")}
               accent={theme.mint}
             />
           )}
           {recommendedQ.data && (
             <ActionRow
-              label={`Start ${recommendedQ.data.examType.toUpperCase()} ${recommendedQ.data.examLevel}`}
-              detail="Recommended exam"
+              label={`${t("home.start")} ${recommendedQ.data.examType.toUpperCase()} ${recommendedQ.data.examLevel}`}
+              detail={t("home.recommendedExam")}
               onPress={() => router.push("/(tabs)/exam")}
               accent={theme.accent}
             />
           )}
           <ActionRow
-            label="Browse vocabulary"
-            detail="HSK · TOCFL · YCT · BCT"
+            label={t("home.browseVocab")}
+            detail={languageInfo(language)
+              .examTypes.map((e) => examDisplayName(e))
+              .join(" · ")}
             onPress={() => router.push("/(tabs)/learn")}
             accent={theme.gold}
           />
@@ -290,9 +303,9 @@ export default function HomeTab() {
 
         {(dueCardsQ.data?.length ?? 0) === 0 && !recommendedQ.data && (
           <EmptyState
-            title="All caught up"
-            message="No cards due and no exams recommended. Come back tomorrow."
-            glyph="安"
+            title={t("home.allCaughtUp")}
+            message={t("home.caughtUpMsg")}
+            glyph={motifChar(language)}
           />
         )}
       </ScrollView>

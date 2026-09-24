@@ -18,6 +18,7 @@ import { loadVocabulary } from "@/lib/content-data"
 import { headword, motifChar } from "@/lib/languages"
 import { useOnboardingStore } from "@/store/onboarding"
 import { useTts } from "@/hooks/useTts"
+import { useT } from "@/i18n"
 import { logStudyWithQueue } from "@/utils/offlineQueue"
 import type { VocabWord } from "@/types/api"
 
@@ -34,6 +35,7 @@ function shuffle<T>(arr: T[]): T[] {
 
 export default function ListeningDrillScreen() {
   const { theme } = useTheme()
+  const t = useT()
   const language = useOnboardingStore((s) => s.language)
   const qc = useQueryClient()
   const tts = useTts()
@@ -92,10 +94,10 @@ export default function ListeningDrillScreen() {
         <Enter index={0}>
           <View style={{ gap: 4 }}>
             <Text style={[type.labelSm, { color: theme.textMuted }]}>
-              Listening
+              {t("listen.kicker")}
             </Text>
             <Text style={[type.display, { color: theme.text, fontSize: 32 }]}>
-              Hear it, pick it
+              {t("listen.title")}
             </Text>
           </View>
         </Enter>
@@ -103,10 +105,7 @@ export default function ListeningDrillScreen() {
         {poolQ.isLoading ? (
           <ActivityIndicator color={theme.accent} />
         ) : rounds.length === 0 ? (
-          <EmptyState
-            title="No words for this language yet"
-            glyph={motifChar(language)}
-          />
+          <EmptyState title={t("listen.noWords")} glyph={motifChar(language)} />
         ) : done ? (
           <Enter index={1}>
             <View style={{ gap: 12, alignItems: "center", paddingTop: 24 }}>
@@ -115,10 +114,10 @@ export default function ListeningDrillScreen() {
               </Text>
               <Text style={[type.bodySm, { color: theme.textMuted }]}>
                 {score === rounds.length
-                  ? "Perfect ear."
+                  ? t("listen.perfect")
                   : score >= rounds.length / 2
-                    ? "Good ear, keep going."
-                    : "Replay the words and try again."}
+                    ? t("listen.good")
+                    : t("listen.retry")}
               </Text>
             </View>
           </Enter>
@@ -131,10 +130,11 @@ export default function ListeningDrillScreen() {
                   style={{ gap: 12, alignItems: "center", paddingVertical: 12 }}
                 >
                   <Text style={[type.labelSm, { color: theme.textMuted }]}>
-                    Round {round + 1} of {rounds.length} · Score {score}
+                    {t("listen.round")} {round + 1} {t("listen.of")}{" "}
+                    {rounds.length} · {t("listen.score")} {score}
                   </Text>
                   <Button
-                    title={tts.playing ? "Playing…" : "Play word"}
+                    title={tts.playing ? t("listen.playing") : t("listen.play")}
                     onPress={() => tts.play(headword(current.word))}
                     disabled={tts.loading || tts.playing}
                   />

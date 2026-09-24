@@ -9,12 +9,14 @@ import { Motif } from "@/components/ui/Motif"
 import { useTheme } from "@/theme/ThemeProvider"
 import { fonts, type } from "@/theme/typography"
 import { progress } from "@/api/endpoints"
+import { useT } from "@/i18n"
 import { motifChar } from "@/lib/languages"
 import { useOnboardingStore } from "@/store/onboarding"
 import type { Achievement, StudySession } from "@/types/api"
 
 export default function StatsTab() {
   const { theme } = useTheme()
+  const t = useT()
   const language = useOnboardingStore((s) => s.language)
   const [view, setView] = useState<"overview" | "badges" | "calendar">(
     "overview"
@@ -51,10 +53,10 @@ export default function StatsTab() {
           >
             <View style={{ flex: 1, gap: 8 }}>
               <Text style={[type.labelSm, { color: theme.textMuted }]}>
-                Record
+                {t("stats.kicker")}
               </Text>
               <Text style={[type.display, { color: theme.text, fontSize: 36 }]}>
-                Numbers & medals
+                {t("stats.title")}
               </Text>
             </View>
             <Motif char={motifChar(language)} size={56} />
@@ -72,9 +74,9 @@ export default function StatsTab() {
           }}
         >
           {[
-            { id: "overview" as const, label: "Overview" },
-            { id: "calendar" as const, label: "Calendar" },
-            { id: "badges" as const, label: "Badges" },
+            { id: "overview" as const, label: t("stats.overview") },
+            { id: "calendar" as const, label: t("stats.calendar") },
+            { id: "badges" as const, label: t("stats.badges") },
           ].map((v) => {
             const sel = view === v.id
             return (
@@ -148,6 +150,7 @@ function OverviewView({
   sessionsLoading: boolean
 }) {
   const { theme } = useTheme()
+  const t = useT()
   const language = useOnboardingStore((s) => s.language)
   const totalMinutes = sessions.reduce((acc, s) => acc + s.minutes, 0)
   const totalSessionXP = sessions.reduce((acc, s) => acc + s.xp, 0)
@@ -163,25 +166,29 @@ function OverviewView({
           paddingVertical: 20,
         }}
       >
-        <Stat label="Lifetime XP" value={xp} accent={theme.accent} />
+        <Stat label={t("stats.lifetimeXp")} value={xp} accent={theme.accent} />
         <Divider color={theme.border} />
-        <Stat label="Streak" value={streak} accent={theme.gold} />
+        <Stat label={t("stats.streak")} value={streak} accent={theme.gold} />
         <Divider color={theme.border} />
-        <Stat label="Best" value={bestStreak} accent={theme.mint} />
+        <Stat label={t("stats.best")} value={bestStreak} accent={theme.mint} />
         <Divider color={theme.border} />
-        <Stat label="Min studied" value={totalMinutes} accent={theme.accent2} />
+        <Stat
+          label={t("stats.minStudied")}
+          value={totalMinutes}
+          accent={theme.accent2}
+        />
       </View>
 
       <View style={{ gap: 12 }}>
         <Text style={[type.labelSm, { color: theme.textMuted }]}>
-          Recent sessions
+          {t("stats.recentSessions")}
         </Text>
         {sessionsLoading ? (
           <ActivityIndicator color={theme.accent} />
         ) : sessions.length === 0 ? (
           <EmptyState
-            title="No sessions yet"
-            message="Study sessions appear here."
+            title={t("stats.noSessions")}
+            message={t("stats.sessionsMsg")}
             glyph={motifChar(language)}
           />
         ) : (
@@ -210,7 +217,8 @@ function OverviewView({
         )}
         {totalSessionXP > 0 && (
           <Text style={[type.caption, { color: theme.textDim }]}>
-            Total XP from recorded sessions: {totalSessionXP}
+            {t("stats.sessionsXp")}
+            {totalSessionXP}
           </Text>
         )}
       </View>
@@ -226,6 +234,7 @@ function CalendarView({
   loading: boolean
 }) {
   const { theme } = useTheme()
+  const t = useT()
   const days = useMemo(() => {
     const byDate = new Map<string, number>()
     for (const s of sessions)
@@ -245,7 +254,7 @@ function CalendarView({
   return (
     <View style={{ gap: 12 }}>
       <Text style={[type.labelSm, { color: theme.textMuted }]}>
-        Last 14 days
+        {t("stats.last14")}
       </Text>
       {loading ? (
         <ActivityIndicator color={theme.accent} />
@@ -299,13 +308,15 @@ function BadgesView({
   loading: boolean
 }) {
   const { theme } = useTheme()
+  const t = useT()
+  const language = useOnboardingStore((s) => s.language)
   if (loading) return <ActivityIndicator color={theme.accent} />
   if (achievements.length === 0)
     return (
       <EmptyState
-        title="No badges yet"
-        message="Hit milestones to unlock these."
-        glyph="印"
+        title={t("stats.noBadges")}
+        message={t("stats.badgesMsg")}
+        glyph={motifChar(language)}
       />
     )
 

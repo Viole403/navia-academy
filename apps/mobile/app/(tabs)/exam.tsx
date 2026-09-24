@@ -25,10 +25,12 @@ import {
   motifChar,
 } from "@/lib/languages"
 import { useOnboardingStore } from "@/store/onboarding"
+import { useT } from "@/i18n"
 import type { ExamProgress, ExamSession } from "@/types/api"
 
 export default function ExamTab() {
   const { theme } = useTheme()
+  const t = useT()
   const router = useRouter()
   const qc = useQueryClient()
   const language = useOnboardingStore((s) => s.language)
@@ -110,10 +112,10 @@ export default function ExamTab() {
           >
             <View style={{ flex: 1, gap: 8 }}>
               <Text style={[type.labelSm, { color: theme.textMuted }]}>
-                Assessments
+                {t("exam.kicker")}
               </Text>
               <Text style={[type.display, { color: theme.text, fontSize: 36 }]}>
-                Exam hall
+                {t("exam.title")}
               </Text>
             </View>
             <Motif char={motifChar(language)} size={56} />
@@ -125,7 +127,7 @@ export default function ExamTab() {
         {active.length > 0 && (
           <View style={{ gap: 12 }}>
             <Text style={[type.labelSm, { color: theme.textMuted }]}>
-              In progress
+              {t("exam.inProgress")}
             </Text>
             {active.map((s) => (
               <ActiveSessionCard
@@ -145,7 +147,7 @@ export default function ExamTab() {
         {/* Start a new exam */}
         <View style={{ gap: 16 }}>
           <Text style={[type.labelSm, { color: theme.textMuted }]}>
-            Begin a new exam
+            {t("exam.beginNew")}
           </Text>
           <Card>
             <View style={{ gap: 16 }}>
@@ -188,7 +190,7 @@ export default function ExamTab() {
               {examTypes.length > 1 && (
                 <View style={{ gap: 8 }}>
                   <Text style={[type.labelSm, { color: theme.textMuted }]}>
-                    Exam track
+                    {t("exam.track")}
                   </Text>
                   <ScrollView
                     horizontal
@@ -209,7 +211,7 @@ export default function ExamTab() {
               )}
               <View style={{ gap: 8 }}>
                 <Text style={[type.labelSm, { color: theme.textMuted }]}>
-                  Level
+                  {t("exam.level")}
                 </Text>
                 <View
                   style={{
@@ -231,7 +233,7 @@ export default function ExamTab() {
               <Button
                 title={
                   startM.isPending
-                    ? "Preparing…"
+                    ? t("exam.preparing")
                     : `Start ${examDisplayName(examType)} ${examLevel}`
                 }
                 onPress={() => startM.mutate()}
@@ -246,7 +248,7 @@ export default function ExamTab() {
         {progressList.length > 0 && (
           <View style={{ gap: 12 }}>
             <Text style={[type.labelSm, { color: theme.textMuted }]}>
-              Standing
+              {t("exam.standing")}
             </Text>
             <View style={{ borderTopWidth: 1, borderTopColor: theme.border }}>
               {progressList.map((p: ExamProgress, i: number) => (
@@ -267,7 +269,7 @@ export default function ExamTab() {
                     </Text>
                     <Text style={[type.caption, { color: theme.textMuted }]}>
                       Level {p.current_level ?? "—"} · {p.total_attempts}{" "}
-                      attempts
+                      {t("exam.attempts")}
                     </Text>
                   </View>
                   <Text
@@ -288,15 +290,15 @@ export default function ExamTab() {
         {/* History */}
         <View style={{ gap: 12 }}>
           <Text style={[type.labelSm, { color: theme.textMuted }]}>
-            Past sittings
+            {t("exam.past")}
           </Text>
           {historyQ.isLoading ? (
             <ActivityIndicator color={theme.accent} />
           ) : history.length === 0 ? (
             <EmptyState
-              title="No sittings yet"
-              message="Start your first exam above."
-              glyph="史"
+              title={t("exam.noSittings")}
+              message={t("exam.firstExam")}
+              glyph={motifChar(language)}
             />
           ) : (
             <View style={{ borderTopWidth: 1, borderTopColor: theme.border }}>
@@ -335,7 +337,8 @@ export default function ExamTab() {
                     </Text>
                     <Text style={[type.caption, { color: theme.textMuted }]}>
                       {new Date(r.created_at).toLocaleDateString()} ·{" "}
-                      {r.correct_answers}/{r.total_questions} correct
+                      {r.correct_answers}/{r.total_questions}{" "}
+                      {t("exam.correct")}
                     </Text>
                   </View>
                   <Text
@@ -349,7 +352,7 @@ export default function ExamTab() {
                       },
                     ]}
                   >
-                    {r.score >= r.passing_score ? "PASS" : "—"}
+                    {r.score >= r.passing_score ? t("exam.pass") : "—"}
                   </Text>
                 </View>
               ))}
@@ -369,6 +372,7 @@ function ActiveSessionCard({
   onResume: () => void
 }) {
   const { theme } = useTheme()
+  const t = useT()
   return (
     <Pressable
       onPress={onResume}
@@ -383,9 +387,11 @@ function ActiveSessionCard({
     >
       <View style={{ flexDirection: "row", justifyContent: "space-between" }}>
         <Text style={[type.labelSm, { color: theme.textMuted }]}>
-          Resume exam
+          {t("exam.resume")}
         </Text>
-        <Text style={[type.labelSm, { color: theme.accent }]}>Active</Text>
+        <Text style={[type.labelSm, { color: theme.accent }]}>
+          {t("exam.active")}
+        </Text>
       </View>
       <Text style={[type.h2, { color: theme.text }]}>
         {examDisplayName(session.exam_type)} · Level {session.exam_level}

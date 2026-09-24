@@ -21,6 +21,7 @@ import {
 } from "@/lib/content-data"
 import { headword, isCharScript, motifChar, reading } from "@/lib/languages"
 import { useOnboardingStore } from "@/store/onboarding"
+import { useT, type I18nKey } from "@/i18n"
 import type {
   ConversationScenario,
   DialogueTurn,
@@ -32,8 +33,16 @@ import type {
 
 type LibSection = "grammar" | "readings" | "conversations" | "characters"
 
+const SECTION_LABEL: Record<LibSection, I18nKey> = {
+  grammar: "lib.grammar",
+  readings: "lib.readings",
+  conversations: "lib.conversations",
+  characters: "lib.characters",
+}
+
 export default function LibraryScreen() {
   const { theme } = useTheme()
+  const t = useT()
   const language = useOnboardingStore((s) => s.language)
   const charScript = isCharScript(language)
 
@@ -85,10 +94,10 @@ export default function LibraryScreen() {
         <Enter index={0}>
           <View style={{ gap: 4 }}>
             <Text style={[type.labelSm, { color: theme.textMuted }]}>
-              Library
+              {t("lib.kicker")}
             </Text>
             <Text style={[type.display, { color: theme.text, fontSize: 32 }]}>
-              Study material
+              {t("lib.title")}
             </Text>
           </View>
         </Enter>
@@ -97,7 +106,7 @@ export default function LibraryScreen() {
           {sections.map((s) => (
             <Chip
               key={s}
-              label={s.charAt(0).toUpperCase() + s.slice(1)}
+              label={t(SECTION_LABEL[s])}
               selected={active === s}
               onPress={() => {
                 setSection(s)
@@ -111,6 +120,7 @@ export default function LibraryScreen() {
           <ActivityIndicator color={theme.accent} />
         ) : active === "grammar" ? (
           <ItemList
+            t={t}
             items={(grammarQ.data ?? []).map((g: GrammarPoint) => ({
               id: g.id,
               title: g.title,
@@ -144,6 +154,7 @@ export default function LibraryScreen() {
           />
         ) : active === "readings" ? (
           <ItemList
+            t={t}
             items={(readingsQ.data ?? []).map((r: Reading) => ({
               id: r.id,
               title: r.title,
@@ -184,6 +195,7 @@ export default function LibraryScreen() {
           />
         ) : active === "conversations" ? (
           <ItemList
+            t={t}
             items={(conversationsQ.data ?? []).map(
               (c: ConversationScenario) => ({
                 id: c.id,
@@ -226,12 +238,10 @@ export default function LibraryScreen() {
             }}
           />
         ) : (charactersQ.data ?? []).length === 0 && !charactersQ.isLoading ? (
-          <EmptyState
-            title="No characters for this language"
-            glyph={motifChar(language)}
-          />
+          <EmptyState title={t("lib.noChars")} glyph={motifChar(language)} />
         ) : (
           <ItemList
+            t={t}
             items={(charactersQ.data ?? []).map((c: HanziChar) => ({
               id: c.id,
               title: c.char ?? c.hanzi ?? c.id,
@@ -253,8 +263,8 @@ export default function LibraryScreen() {
                   )}
                   <Text style={[type.caption, { color: theme.textMuted }]}>
                     {[
-                      c.strokes ? `${c.strokes} strokes` : "",
-                      c.radical ? `radical ${c.radical}` : "",
+                      c.strokes ? `${c.strokes} ${t("lib.strokes")}` : "",
+                      c.radical ? `${t("lib.radical")} ${c.radical}` : "",
                     ]
                       .filter(Boolean)
                       .join(" · ")}
@@ -270,11 +280,13 @@ export default function LibraryScreen() {
 }
 
 function ItemList({
+  t,
   items,
   openId,
   onToggle,
   renderDetail,
 }: {
+  t: (key: I18nKey) => string
   items: { id: string; title: string; sub: string }[]
   openId: string | null
   onToggle: (id: string | null) => void
@@ -282,12 +294,7 @@ function ItemList({
 }) {
   const { theme } = useTheme()
   if (items.length === 0) {
-    return (
-      <EmptyState
-        title="Nothing here yet"
-        message="Content for this language is still being published."
-      />
-    )
+    return <EmptyState title={t("lib.nothing")} message={t("lib.nothingMsg")} />
   }
   return (
     <View style={{ gap: 4 }}>

@@ -18,6 +18,7 @@ import { fonts, type } from "@/theme/typography"
 import { progress } from "@/api/endpoints"
 import { findWord } from "@/lib/content-data"
 import { headword, reading } from "@/lib/languages"
+import { useT } from "@/i18n"
 import { useAuthStore } from "@/store/auth"
 import { useTts } from "@/hooks/useTts"
 import type { VocabWord } from "@/types/api"
@@ -32,6 +33,7 @@ export default function VocabDetail() {
   const router = useRouter()
   const { id } = useLocalSearchParams<{ id?: string }>()
   const qc = useQueryClient()
+  const t = useT()
   const tts = useTts()
   const user = useAuthStore((s) => s.user)
 
@@ -93,7 +95,9 @@ export default function VocabDetail() {
         }}
       >
         <Pressable onPress={() => router.back()}>
-          <Text style={{ color: theme.textMuted, fontSize: 15 }}>← Back</Text>
+          <Text style={{ color: theme.textMuted, fontSize: 15 }}>
+            ← {t("vocab.back")}
+          </Text>
         </Pressable>
         {w && (
           <Pressable
@@ -108,7 +112,7 @@ export default function VocabDetail() {
                 fontSize: 11,
               }}
             >
-              {isSaved ? "SAVED" : "SAVE"}
+              {isSaved ? t("vocab.saved") : t("vocab.save")}
             </Text>
           </Pressable>
         )}
@@ -131,11 +135,11 @@ export default function VocabDetail() {
           }}
         >
           <EmptyState
-            title="Not found"
-            message="That word isn't in the dictionary."
+            title={t("vocab.notFound")}
+            message={t("vocab.notInDict")}
             glyph="？"
           />
-          <Button title="Go back" onPress={() => router.back()} />
+          <Button title={t("vocab.goBack")} onPress={() => router.back()} />
         </View>
       ) : (
         <ScrollView
@@ -161,7 +165,7 @@ export default function VocabDetail() {
             </Text>
             {w.traditional && (
               <Text style={[type.caption, { color: theme.textMuted }]}>
-                Traditional · {w.traditional}
+                {t("vocab.traditional")} · {w.traditional}
               </Text>
             )}
             <Text
@@ -184,7 +188,7 @@ export default function VocabDetail() {
           {w.examMappings && Object.keys(w.examMappings).length > 0 && (
             <View style={{ gap: 12 }}>
               <Text style={[type.labelSm, { color: theme.textMuted }]}>
-                Included in
+                {t("vocab.includedIn")}
               </Text>
               <View style={{ flexDirection: "row", flexWrap: "wrap", gap: 8 }}>
                 {Object.entries(w.examMappings)
@@ -221,7 +225,7 @@ export default function VocabDetail() {
             <Card>
               <View style={{ gap: 10 }}>
                 <Text style={[type.labelSm, { color: theme.textMuted }]}>
-                  In context
+                  {t("vocab.inContext")}
                 </Text>
                 {example.exampleSentence && (
                   <Text
@@ -247,13 +251,19 @@ export default function VocabDetail() {
           {/* Actions */}
           <View style={{ gap: 10, marginTop: 8 }}>
             <Button
-              title={tts.loading || tts.playing ? "Playing…" : "Listen"}
+              title={
+                tts.loading || tts.playing
+                  ? t("vocab.playing")
+                  : t("vocab.listen")
+              }
               variant="secondary"
               onPress={() => tts.play(headword(w))}
               disabled={tts.loading}
             />
             <Button
-              title={addToSrsM.isPending ? "Adding…" : "Add to review"}
+              title={
+                addToSrsM.isPending ? t("vocab.adding") : t("vocab.addReview")
+              }
               variant="ghost"
               onPress={() => addToSrsM.mutate()}
               disabled={addToSrsM.isPending}

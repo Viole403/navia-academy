@@ -18,34 +18,35 @@ import {
 } from "@/lib/languages"
 import { useThemePrefs } from "@/store/theme"
 import { progress } from "@/api/endpoints"
+import { useT, type I18nKey } from "@/i18n"
 
 const STEPS = ["language", "script", "theme", "goal"] as const
 type Step = (typeof STEPS)[number]
 
-const KICKERS: Record<Step, string> = {
-  language: "Step 01 — Language",
-  script: "Step 02 — Foundations",
-  theme: "Step 03 — Atmosphere",
-  goal: "Step 04 — Rhythm",
+const KICKERS: Record<Step, I18nKey> = {
+  language: "ob.kLanguage",
+  script: "ob.kScript",
+  theme: "ob.kTheme",
+  goal: "ob.kGoal",
 }
 
-const TITLES: Record<Step, string> = {
-  language: "What will you learn?",
-  script: "Choose your script",
-  theme: "Set the tone",
-  goal: "Find your pace",
+const TITLES: Record<Step, I18nKey> = {
+  language: "ob.tLanguage",
+  script: "ob.tScript",
+  theme: "ob.tTheme",
+  goal: "ob.tGoal",
 }
 
-const SUBS: Record<Step, string> = {
-  language: "Chinese, German, English, or Japanese. Change anytime later.",
-  script:
-    "The characters you'll read every day. You can change your mind later.",
-  theme: "Six palettes. Three modes. One quiet aesthetic.",
-  goal: "How many minutes feels sustainable?",
+const SUBS: Record<Step, I18nKey> = {
+  language: "ob.sLanguage",
+  script: "ob.sScript",
+  theme: "ob.sTheme",
+  goal: "ob.sGoal",
 }
 
 export default function Onboarding() {
   const { theme, catalog, materialYouAvailable } = useTheme()
+  const t = useT()
   const { themeId, mode, setThemeId, setMode } = useThemePrefs()
   const {
     script,
@@ -117,13 +118,13 @@ export default function Onboarding() {
           >
             <View style={{ flex: 1, gap: 10 }}>
               <Text style={[type.labelSm, { color: theme.textMuted }]}>
-                {KICKERS[step]}
+                {t(KICKERS[step])}
               </Text>
               <Text style={[type.h1, { color: theme.text }]}>
-                {TITLES[step]}
+                {t(TITLES[step])}
               </Text>
               <Text style={[type.bodySm, { color: theme.textMuted }]}>
-                {SUBS[step]}
+                {t(SUBS[step])}
               </Text>
             </View>
             <Motif char={stepChars[step]} size={64} />
@@ -224,7 +225,7 @@ export default function Onboarding() {
             {/* Exam picker for chosen language */}
             <View style={{ gap: 10, marginTop: 8 }}>
               <Text style={[type.labelSm, { color: theme.textMuted }]}>
-                Exam track
+                {t("ob.examTrack")}
               </Text>
               <View style={{ flexDirection: "row", flexWrap: "wrap", gap: 8 }}>
                 {languageInfo(language).examTypes.map((t) => {
@@ -350,7 +351,7 @@ export default function Onboarding() {
             {/* Theme swatch grid */}
             <View style={{ gap: 12 }}>
               <Text style={[type.labelSm, { color: theme.textMuted }]}>
-                Base theme
+                {t("ob.baseTheme")}
               </Text>
               <View style={{ flexDirection: "row", flexWrap: "wrap", gap: 10 }}>
                 {catalog.map((t) => (
@@ -383,10 +384,10 @@ export default function Onboarding() {
                         fontWeight: "700",
                       }}
                     >
-                      Material You
+                      {t("ob.materialYou")}
                     </Text>
                     <Text style={{ color: theme.textDim, fontSize: 9 }}>
-                      Android 12+
+                      {t("ob.android12")}
                     </Text>
                   </View>
                 )}
@@ -396,14 +397,14 @@ export default function Onboarding() {
             {/* Mode */}
             <View style={{ gap: 10 }}>
               <Text style={[type.labelSm, { color: theme.textMuted }]}>
-                Appearance
+                {t("ob.appearance")}
               </Text>
               <View style={{ flexDirection: "row", gap: 6 }}>
                 {(
                   [
-                    { id: "system", label: "System" },
-                    { id: "light", label: "Light" },
-                    { id: "dark", label: "Dark" },
+                    { id: "system", label: t("ob.modeSystem") },
+                    { id: "light", label: t("ob.modeLight") },
+                    { id: "dark", label: t("ob.modeDark") },
                     { id: "amoled", label: "AMOLED" },
                   ] as { id: ThemeMode; label: string }[]
                 ).map((m) => {
@@ -443,10 +444,10 @@ export default function Onboarding() {
         {step === "goal" && (
           <View style={{ gap: 0 }}>
             {[
-              { min: 5, label: "Casual reader" },
-              { min: 10, label: "Steady student" },
-              { min: 15, label: "Serious learner" },
-              { min: 30, label: "Daily devotee" },
+              { min: 5, label: t("ob.gCasual") },
+              { min: 10, label: t("ob.gSteady") },
+              { min: 15, label: t("ob.gSerious") },
+              { min: 30, label: t("ob.gDevotee") },
             ].map((g, i, arr) => {
               const selected = dailyMinutes === g.min
               return (
@@ -485,7 +486,7 @@ export default function Onboarding() {
                         {g.min}
                       </Text>
                       <Text style={[type.body, { color: theme.textMuted }]}>
-                        minutes
+                        {t("ob.minutes")}
                       </Text>
                     </View>
                     <Text
@@ -515,7 +516,7 @@ export default function Onboarding() {
           {stepIdx > 0 && (
             <View style={{ flex: 1 }}>
               <Button
-                title="Back"
+                title={t("common.back")}
                 variant="secondary"
                 onPress={back}
                 size="lg"
@@ -524,7 +525,11 @@ export default function Onboarding() {
           )}
           <View style={{ flex: 2 }}>
             <Button
-              title={stepIdx === STEPS.length - 1 ? "Begin" : "Continue"}
+              title={
+                stepIdx === STEPS.length - 1
+                  ? t("common.begin")
+                  : t("common.continue")
+              }
               onPress={next}
               disabled={ctaDisabled}
               size="lg"
@@ -548,6 +553,7 @@ function ThemeSwatch({
   selected: boolean
   onPress: () => void
 }) {
+  const t = useT()
   const showLight = mode === "light"
   const showAmoled = mode === "amoled"
   const base = showLight ? def.light : def.dark
@@ -603,7 +609,7 @@ function ThemeSwatch({
           style={{ color: preview.textDim, fontSize: 9, marginTop: 1 }}
           numberOfLines={1}
         >
-          {def.dynamic ? "System palette" : "Editorial"}
+          {def.dynamic ? t("ob.sysPalette") : t("ob.editorial")}
         </Text>
       </View>
       {selected && (

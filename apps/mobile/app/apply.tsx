@@ -9,12 +9,17 @@ import { Motif } from "@/components/ui/Motif"
 import { useTheme } from "@/theme/ThemeProvider"
 import { fonts, type } from "@/theme/typography"
 import { community } from "@/api/endpoints"
+import { motifChar } from "@/lib/languages"
+import { useOnboardingStore } from "@/store/onboarding"
+import { useT } from "@/i18n"
 
 type Mode = "contributor" | "sponsor"
 
 export default function Apply() {
   const { theme } = useTheme()
   const router = useRouter()
+  const t = useT()
+  const language = useOnboardingStore((s) => s.language)
   const [mode, setMode] = useState<Mode>("contributor")
   const [name, setName] = useState("")
   const [email, setEmail] = useState("")
@@ -38,17 +43,15 @@ export default function Apply() {
       })
     },
     onSuccess: () => {
-      Alert.alert(
-        "Applied",
-        "Your application has been sent. We will review it shortly.",
-        [{ text: "OK", onPress: () => router.back() }]
-      )
+      Alert.alert(t("apply.applied"), t("apply.appliedMsg"), [
+        { text: t("apply.ok"), onPress: () => router.back() },
+      ])
     },
     onError: (e: unknown) => {
       const msg = (
         e as { response?: { data?: { error?: { message?: string } } } }
       )?.response?.data?.error?.message
-      Alert.alert("Failed", msg ?? "Could not submit. Try again.")
+      Alert.alert(t("apply.failed"), msg ?? t("apply.submitFail"))
     },
   })
 
@@ -68,9 +71,13 @@ export default function Apply() {
         }}
       >
         <Pressable onPress={() => router.back()}>
-          <Text style={{ color: theme.textMuted, fontSize: 16 }}>← Back</Text>
+          <Text style={{ color: theme.textMuted, fontSize: 16 }}>
+            {t("apply.back")}
+          </Text>
         </Pressable>
-        <Text style={[type.labelSm, { color: theme.textMuted }]}>APPLY</Text>
+        <Text style={[type.labelSm, { color: theme.textMuted }]}>
+          {t("apply.kicker")}
+        </Text>
       </View>
 
       <ScrollView contentContainerStyle={{ padding: 24, gap: 24, flexGrow: 1 }}>
@@ -83,13 +90,15 @@ export default function Apply() {
         >
           <View style={{ flex: 1, gap: 8 }}>
             <Text style={[type.labelSm, { color: theme.textMuted }]}>
-              Join the project
+              {t("apply.joinTitle")}
             </Text>
             <Text style={[type.display, { color: theme.text, fontSize: 32 }]}>
-              {mode === "contributor" ? "Contribute" : "Sponsor"}
+              {mode === "contributor"
+                ? t("apply.contribute")
+                : t("apply.sponsor")}
             </Text>
           </View>
-          <Motif char={mode === "contributor" ? "贡" : "宴"} size={56} />
+          <Motif char={motifChar(language)} size={56} />
         </View>
 
         {/* Mode switcher */}
@@ -117,7 +126,9 @@ export default function Apply() {
                     fontSize: 13,
                   }}
                 >
-                  {m === "contributor" ? "Contributor" : "Sponsor"}
+                  {m === "contributor"
+                    ? t("apply.contributorMode")
+                    : t("apply.sponsorMode")}
                 </Text>
               </Pressable>
             )
@@ -127,13 +138,17 @@ export default function Apply() {
         {/* Form */}
         <View style={{ gap: 16 }}>
           <Input
-            label={mode === "contributor" ? "Full name" : "Company / org name"}
+            label={
+              mode === "contributor"
+                ? t("apply.nameLabel")
+                : t("apply.companyLabel")
+            }
             value={name}
             onChangeText={setName}
             autoCapitalize={mode === "contributor" ? "words" : "sentences"}
           />
           <Input
-            label="Email"
+            label={t("apply.email")}
             value={email}
             onChangeText={setEmail}
             keyboardType="email-address"
@@ -141,13 +156,13 @@ export default function Apply() {
           />
           {mode === "contributor" && (
             <Input
-              label="Area (e.g. content, audio, translation)"
+              label={t("apply.areaLabel")}
               value={area}
               onChangeText={setArea}
             />
           )}
           <Input
-            label="Message"
+            label={t("apply.message")}
             value={message}
             onChangeText={setMessage}
             multiline
@@ -157,7 +172,7 @@ export default function Apply() {
 
         <View style={{ marginTop: "auto" }}>
           <Button
-            title="Submit application"
+            title={t("apply.submit")}
             onPress={() => applyM.mutate()}
             loading={applyM.isPending}
             disabled={

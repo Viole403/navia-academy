@@ -17,6 +17,7 @@ import { fonts, type } from "@/theme/typography"
 import { progress, game } from "@/api/endpoints"
 import { loadVocabulary } from "@/lib/content-data"
 import { headword, isCharScript, motifChar } from "@/lib/languages"
+import { useT } from "@/i18n"
 import { useOnboardingStore } from "@/store/onboarding"
 import { logStudyWithQueue } from "@/utils/offlineQueue"
 import type { VocabWord } from "@/types/api"
@@ -34,6 +35,7 @@ export default function GameMatch() {
   const router = useRouter()
   const qc = useQueryClient()
   const language = useOnboardingStore((s) => s.language)
+  const t = useT()
 
   const page = useQuery({
     queryKey: ["game-match-pool", language],
@@ -156,8 +158,11 @@ export default function GameMatch() {
             padding: 32,
           }}
         >
-          <EmptyState title="Nothing to play" glyph="游" />
-          <Button title="Back" onPress={() => router.back()} />
+          <EmptyState
+            title={t("game.nothingToPlay")}
+            glyph={motifChar(language)}
+          />
+          <Button title={t("game.back")} onPress={() => router.back()} />
         </View>
       </SafeAreaView>
     )
@@ -181,10 +186,12 @@ export default function GameMatch() {
         }}
       >
         <Pressable onPress={() => router.back()}>
-          <Text style={{ color: theme.textMuted, fontSize: 16 }}>← Back</Text>
+          <Text style={{ color: theme.textMuted, fontSize: 16 }}>
+            ← {t("game.back")}
+          </Text>
         </Pressable>
         <Text style={[type.labelSm, { color: theme.textMuted }]}>
-          {matches}/{totalPairs} pairs · {moves} moves
+          {matches}/{totalPairs} {t("game.pairs")} · {moves} {t("game.moves")}
         </Text>
       </View>
 
@@ -196,7 +203,9 @@ export default function GameMatch() {
               <Text
                 style={[type.h2, { color: theme.text, textAlign: "center" }]}
               >
-                {isCharScript(language) ? "Hanzi Match" : "Word Match"}
+                {isCharScript(language)
+                  ? t("learn.hanziMatch")
+                  : t("learn.wordMatch")}
               </Text>
               <Text
                 style={[
@@ -204,11 +213,13 @@ export default function GameMatch() {
                   { color: theme.textMuted, textAlign: "center" },
                 ]}
               >
-                Pair each {isCharScript(language) ? "character" : "word"} with
-                its meaning. {page.data?.length ?? 0} cards.
+                {isCharScript(language)
+                  ? t("game.pairChar")
+                  : t("game.pairWord")}{" "}
+                {page.data?.length ?? 0} {t("game.cards")}
               </Text>
             </View>
-            <Button title="Start" onPress={start} size="lg" />
+            <Button title={t("game.start")} onPress={start} size="lg" />
           </View>
         ) : won ? (
           <View style={{ gap: 16, paddingTop: 24 }}>
@@ -217,7 +228,7 @@ export default function GameMatch() {
               <Text
                 style={[type.h2, { color: theme.text, textAlign: "center" }]}
               >
-                All matched
+                {t("game.allMatched")}
               </Text>
               <Text
                 style={[
@@ -225,11 +236,12 @@ export default function GameMatch() {
                   { color: theme.textMuted, textAlign: "center" },
                 ]}
               >
-                {moves} moves · +{matches * 10} XP logged
+                {moves} {t("game.moves")} · +{matches * 10} XP{" "}
+                {t("game.xpLogged")}
               </Text>
             </View>
             <Button
-              title={submitM.isPending ? "Saving…" : "Save & exit"}
+              title={submitM.isPending ? t("game.saving") : t("game.saveExit")}
               onPress={() => {
                 submitM.mutate()
                 router.back()

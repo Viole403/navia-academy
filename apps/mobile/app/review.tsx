@@ -17,7 +17,9 @@ import { useTheme } from "@/theme/ThemeProvider"
 import { fonts, type } from "@/theme/typography"
 import { progress } from "@/api/endpoints"
 import { findWord } from "@/lib/content-data"
-import { headword, reading } from "@/lib/languages"
+import { headword, motifChar, reading } from "@/lib/languages"
+import { useT } from "@/i18n"
+import { useOnboardingStore } from "@/store/onboarding"
 import {
   drain,
   getPendingCount,
@@ -27,17 +29,20 @@ import {
 import type { SrsCard, VocabWord } from "@/types/api"
 
 type Grade = 0 | 1 | 2 | 3
-const GRADES: { grade: Grade; label: string; hint: string }[] = [
-  { grade: 0, label: "Lupa", hint: "Again" },
-  { grade: 1, label: "Susah", hint: "Hard" },
-  { grade: 2, label: "Oke", hint: "Good" },
-  { grade: 3, label: "Gampang", hint: "Easy" },
-]
 
 export default function ReviewScreen() {
   const { theme } = useTheme()
+  const t = useT()
+  const language = useOnboardingStore((s) => s.language)
   const router = useRouter()
   const qc = useQueryClient()
+
+  const GRADES: { grade: Grade; label: string; hint: string }[] = [
+    { grade: 0, label: t("review.g0"), hint: t("review.g0h") },
+    { grade: 1, label: t("review.g1"), hint: t("review.g1h") },
+    { grade: 2, label: t("review.g2"), hint: t("review.g2h") },
+    { grade: 3, label: t("review.g3"), hint: t("review.g3h") },
+  ]
 
   const dueQ = useQuery({
     queryKey: ["due-cards"],
@@ -118,10 +123,12 @@ export default function ReviewScreen() {
         }}
       >
         <Pressable onPress={() => router.back()}>
-          <Text style={{ color: theme.textMuted, fontSize: 16 }}>← Back</Text>
+          <Text style={{ color: theme.textMuted, fontSize: 16 }}>
+            {t("review.back")}
+          </Text>
         </Pressable>
         <Text style={[type.labelSm, { color: theme.textMuted }]}>
-          {done ? "Complete" : `${index + 1} / ${cards.length}`}
+          {done ? t("review.complete") : `${index + 1} / ${cards.length}`}
         </Text>
       </View>
 
@@ -150,7 +157,7 @@ export default function ReviewScreen() {
           <Text
             style={{ color: theme.textMuted, fontSize: 11, letterSpacing: 1 }}
           >
-            {pending} OP{pending === 1 ? "" : "S"} QUEUED — TAP TO SYNC
+            {pending} · {t("review.queued")}
           </Text>
         </Pressable>
       )}
@@ -165,11 +172,14 @@ export default function ReviewScreen() {
           }}
         >
           <EmptyState
-            title="Review complete"
-            message="Nice work. Come back tomorrow for the next batch."
-            glyph="毕"
+            title={t("review.done")}
+            message={t("review.doneMsg")}
+            glyph={motifChar(language)}
           />
-          <Button title="Back to Learn" onPress={() => router.back()} />
+          <Button
+            title={t("review.backToLearn")}
+            onPress={() => router.back()}
+          />
         </View>
       ) : !current ? (
         <View
@@ -180,7 +190,7 @@ export default function ReviewScreen() {
             padding: 32,
           }}
         >
-          <EmptyState title="No cards due" glyph="完" />
+          <EmptyState title={t("review.noCards")} glyph={motifChar(language)} />
         </View>
       ) : (
         <ScrollView
@@ -194,7 +204,7 @@ export default function ReviewScreen() {
                 onPress={() => setRevealed((r) => !r)}
                 style={{ gap: 24, alignItems: "center", paddingVertical: 24 }}
                 accessibilityHint={
-                  revealed ? "Answer revealed" : "Tap to reveal"
+                  revealed ? t("review.revealed") : t("review.tapReveal")
                 }
               >
                 <Text
@@ -243,7 +253,7 @@ export default function ReviewScreen() {
                   </View>
                 ) : (
                   <Text style={[type.labelSm, { color: theme.textMuted }]}>
-                    Tap to reveal
+                    {t("review.tapReveal")}
                   </Text>
                 )}
               </Pressable>
