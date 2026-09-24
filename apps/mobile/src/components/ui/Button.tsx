@@ -115,7 +115,7 @@ export function Button({
   const bg = rawBg ?? (variant === "danger" ? FALLBACK.red : FALLBACK.accent)
   const borderColor = variant === "secondary" ? theme.textDim : bg
   const textColor =
-    filled && luminance(bg) > 0.45
+    filled && luminance(bg) > 0.3
       ? "#1F1F1F"
       : filled
         ? theme.white
