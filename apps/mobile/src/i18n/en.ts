@@ -34,6 +34,11 @@ const en = {
   "auth.google": "Continue with Google",
   "auth.or": "or",
   "auth.signOut": "Sign out",
+  "welc.read": "Read",
+  "welc.likePrint": "like print.",
+  "welc.quote":
+    "Learning a language is to have one more window from which to look at the world.",
+  "welc.quoteBy": "— A language learner's proverb",
   "learn.kicker": "Library",
   "learn.title": "Learn",
   "learn.browse": "Browse",

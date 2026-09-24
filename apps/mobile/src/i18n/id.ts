@@ -36,6 +36,11 @@ const id: Record<I18nKey, string> = {
   "auth.google": "Lanjut dengan Google",
   "auth.or": "atau",
   "auth.signOut": "Keluar",
+  "welc.read": "Baca",
+  "welc.likePrint": "seperti cetakan.",
+  "welc.quote":
+    "Mempelajari bahasa berarti memiliki satu jendela lagi untuk melihat dunia.",
+  "welc.quoteBy": "— Peribahasa pelajar bahasa",
   "learn.kicker": "Pustaka",
   "learn.title": "Belajar",
   "learn.browse": "Jelajahi",

@@ -8,10 +8,12 @@ import { useTheme } from "@/theme/ThemeProvider"
 import { fonts, type } from "@/theme/typography"
 import { languageInfo, motifChar, motifSub } from "@/lib/languages"
 import { useOnboardingStore } from "@/store/onboarding"
+import { useT } from "@/i18n"
 
 export default function Welcome() {
   const { theme } = useTheme()
   const router = useRouter()
+  const t = useT()
   const language = useOnboardingStore((s) => s.language)
   const info = languageInfo(language)
 
@@ -48,10 +50,10 @@ export default function Welcome() {
                     },
                   ]}
                 >
-                  Read {info.name}
+                  {t("welc.read")} {info.name}
                   {"\n"}
                   <Text style={{ color: theme.accent, fontStyle: "italic" }}>
-                    like print.
+                    {t("welc.likePrint")}
                   </Text>
                 </Text>
               </View>
@@ -77,11 +79,10 @@ export default function Welcome() {
                   color: theme.text,
                 }}
               >
-                "Learning a language is to have one more window from which to
-                look at the world."
+                “{t("welc.quote")}”
               </Text>
               <Text style={[type.caption, { color: theme.textMuted }]}>
-                — A language learner's proverb
+                {t("welc.quoteBy")}
               </Text>
             </View>
           </View>
@@ -116,12 +117,12 @@ export default function Welcome() {
         <Enter index={2}>
           <View style={{ gap: 12 }}>
             <Button
-              title="Create an account"
+              title={t("auth.createAccount")}
               size="lg"
               onPress={() => router.push("/(auth)/register")}
             />
             <Button
-              title="Sign in"
+              title={t("auth.signIn")}
               variant="ghost"
               onPress={() => router.push("/(auth)/login")}
             />
