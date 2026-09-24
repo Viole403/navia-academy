@@ -21,7 +21,7 @@ import { Motif } from "@/components/ui/Motif"
 import { useTheme } from "@/theme/ThemeProvider"
 import { fonts, type } from "@/theme/typography"
 import type { ThemeDefinition, ThemeId, ThemeMode } from "@/theme/colors"
-import { community, health, progress, settings, tasks } from "@/api/endpoints"
+import { community, progress, settings, tasks } from "@/api/endpoints"
 import { examBadgeColor, motifChar } from "@/lib/languages"
 import { useOnboardingStore } from "@/store/onboarding"
 import {
@@ -83,10 +83,19 @@ export default function ProfileTab() {
     updateSettingsM.mutate({ active_exam_type: p.examType })
   }
 
+  const activePath = PATHS.find(
+    (p) => p.language === language && p.examType === storedExamType
+  )
+
   const [section, setSection] = useState<Section>("profile")
   const [newTask, setNewTask] = useState("")
 
   const settingsQ = useQuery({ queryKey: ["settings"], queryFn: settings.get })
+  const progressQ = useQuery({
+    queryKey: ["progress"],
+    queryFn: progress.get,
+    enabled: section === "profile",
+  })
   const tasksQ = useQuery({
     queryKey: ["tasks"],
     queryFn: tasks.list,
@@ -155,6 +164,11 @@ export default function ProfileTab() {
               <Text style={[type.display, { color: theme.text, fontSize: 36 }]}>
                 {user.name}
               </Text>
+              {activePath && (
+                <Text style={[type.bodySm, { color: theme.accent }]}>
+                  {activePath.title} · {activePath.sub}
+                </Text>
+              )}
             </View>
             <Motif char={motifChar(language)} size={56} />
           </View>
@@ -200,6 +214,54 @@ export default function ProfileTab() {
         {/* Sections */}
         {section === "profile" && (
           <View style={{ gap: 20 }}>
+            <View
+              style={{
+                flexDirection: "row",
+                borderTopWidth: 1,
+                borderBottomWidth: 1,
+                borderColor: theme.border,
+                paddingVertical: 20,
+              }}
+            >
+              <MetaField
+                label="XP"
+                value={progressQ.data ? String(progressQ.data.xp) : "—"}
+              />
+              <MetaField
+                label="Day streak"
+                value={progressQ.data ? String(progressQ.data.streak) : "—"}
+              />
+              <MetaField
+                label="Best streak"
+                value={
+                  progressQ.data ? String(progressQ.data.best_streak) : "—"
+                }
+              />
+            </View>
+
+            {activePath && (
+              <Card>
+                <View style={{ gap: 8 }}>
+                  <Text style={[type.labelSm, { color: theme.textMuted }]}>
+                    Learning path
+                  </Text>
+                  <Text
+                    style={[
+                      type.body,
+                      { color: theme.text, fontWeight: "600" },
+                    ]}
+                  >
+                    {activePath.title} · {activePath.sub}
+                  </Text>
+                  <Pressable onPress={() => setSection("settings")}>
+                    <Text style={[type.bodySm, { color: theme.accent }]}>
+                      Change in Settings →
+                    </Text>
+                  </Pressable>
+                </View>
+              </Card>
+            )}
+
             <View
               style={{
                 flexDirection: "row",
@@ -556,8 +618,6 @@ function ThemePill({
         paddingHorizontal: 12,
         paddingVertical: 8,
         borderWidth: 1.5,
-        // Border color set inline below via selected flag
-        // Note: dynamically themed by its own preview palette for taste
         borderColor: selected ? def.dark.accent : "#88888855",
         borderRadius: 999,
         gap: 8,
@@ -626,11 +686,7 @@ function SettingsSwitch({
 function AboutSection() {
   const { theme } = useTheme()
   const router = useRouter()
-  const healthQ = useQuery({
-    queryKey: ["health"],
-    queryFn: health.check,
-    retry: 1,
-  })
+  const language = useOnboardingStore((s) => s.language)
   const contributorsQ = useQuery({
     queryKey: ["contributors"],
     queryFn: () => community.contributors(50),
@@ -642,37 +698,14 @@ function AboutSection() {
 
   return (
     <View style={{ gap: 24 }}>
-      {/* Server status */}
-      <View
-        style={{
-          flexDirection: "row",
-          alignItems: "center",
-          justifyContent: "space-between",
-          borderTopWidth: 1,
-          borderBottomWidth: 1,
-          borderColor: theme.border,
-          paddingVertical: 14,
-        }}
-      >
-        <Text style={[type.labelSm, { color: theme.textMuted }]}>Server</Text>
-        <View style={{ flexDirection: "row", alignItems: "center", gap: 8 }}>
-          <View
-            style={{
-              width: 8,
-              height: 8,
-              borderRadius: 4,
-              backgroundColor:
-                healthQ.data?.status === "ok" ? theme.green : theme.red,
-            }}
-          />
-          <Text style={[type.bodySm, { color: theme.textMuted }]}>
-            {healthQ.isLoading
-              ? "Checking…"
-              : healthQ.data
-                ? `v${healthQ.data.version} · ${healthQ.data.status}`
-                : "unreachable"}
-          </Text>
-        </View>
+      <View style={{ gap: 8 }}>
+        <Text style={[type.display, { color: theme.text, fontSize: 28 }]}>
+          Navia Academy
+        </Text>
+        <Text style={[type.bodySm, { color: theme.textMuted }]}>
+          Read, listen, and practice across five exam tracks — HSK, TOCFL,
+          Goethe-Zertifikat, JLPT, and TOEFL iBT.
+        </Text>
       </View>
 
       {/* Contributors */}
@@ -683,7 +716,7 @@ function AboutSection() {
         {contributorsQ.isLoading ? (
           <ActivityIndicator color={theme.accent} />
         ) : (contributorsQ.data ?? []).length === 0 ? (
-          <EmptyState title="No contributors yet" glyph="人" />
+          <EmptyState title="No contributors yet" glyph={motifChar(language)} />
         ) : (
           <View style={{ borderTopWidth: 1, borderTopColor: theme.border }}>
             {(contributorsQ.data ?? []).map((c, i, arr) => (
@@ -753,7 +786,7 @@ function AboutSection() {
         {sponsorsQ.isLoading ? (
           <ActivityIndicator color={theme.accent} />
         ) : (sponsorsQ.data ?? []).length === 0 ? (
-          <EmptyState title="No sponsors yet" glyph="谢" />
+          <EmptyState title="No sponsors yet" glyph={motifChar(language)} />
         ) : (
           <View style={{ borderTopWidth: 1, borderTopColor: theme.border }}>
             {(sponsorsQ.data ?? []).map((s, i, arr) => (
