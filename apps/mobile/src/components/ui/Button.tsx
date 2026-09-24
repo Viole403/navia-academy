@@ -7,6 +7,24 @@ import Animated, {
 } from "react-native-reanimated"
 import * as Haptics from "expo-haptics"
 import { useTheme } from "@/theme/ThemeProvider"
+import { FALLBACK } from "@/theme/colors"
+
+function luminance(hex: string): number {
+  const m = hex.replace("#", "")
+  const c =
+    m.length === 3
+      ? m
+          .split("")
+          .map((ch) => ch + ch)
+          .join("")
+      : m.slice(0, 6)
+  const r = parseInt(c.slice(0, 2), 16) / 255
+  const g = parseInt(c.slice(2, 4), 16) / 255
+  const b = parseInt(c.slice(4, 6), 16) / 255
+  const f = (v: number) =>
+    v <= 0.03928 ? v / 12.92 : Math.pow((v + 0.055) / 1.055, 2.4)
+  return 0.2126 * f(r) + 0.7152 * f(g) + 0.0722 * f(b)
+}
 
 type Variant = "primary" | "secondary" | "ghost" | "danger"
 type Size = "sm" | "md" | "lg"
@@ -88,14 +106,20 @@ export function Button({
   }
 
   const filled = variant === "primary" || variant === "danger"
-  const bg =
+  const rawBg =
     variant === "danger"
       ? theme.red
       : variant === "primary"
         ? theme.accent
         : "transparent"
+  const bg = rawBg ?? (variant === "danger" ? FALLBACK.red : FALLBACK.accent)
   const borderColor = variant === "secondary" ? theme.textDim : bg
-  const textColor = filled ? theme.white : theme.text
+  const textColor =
+    filled && luminance(bg) > 0.45
+      ? "#1F1F1F"
+      : filled
+        ? theme.white
+        : theme.text
 
   return (
     <Animated.View style={pressStyle}>
