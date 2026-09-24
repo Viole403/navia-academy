@@ -22,12 +22,7 @@ import { useTheme } from "@/theme/ThemeProvider"
 import { fonts, type } from "@/theme/typography"
 import type { ThemeDefinition, ThemeId, ThemeMode } from "@/theme/colors"
 import { community, health, progress, settings, tasks } from "@/api/endpoints"
-import {
-  LANGUAGES,
-  examBadgeColor,
-  examDisplayName,
-  languageInfo,
-} from "@/lib/languages"
+import { examBadgeColor } from "@/lib/languages"
 import { useOnboardingStore } from "@/store/onboarding"
 import {
   cancelStreakReminder,
@@ -54,17 +49,38 @@ export default function ProfileTab() {
   const setLanguage = useOnboardingStore((s) => s.setLanguage)
   const storedExamType = useOnboardingStore((s) => s.examType)
   const setStoredExamType = useOnboardingStore((s) => s.setExamType)
-  const langExamTypes = languageInfo(language).examTypes
+  const setScript = useOnboardingStore((s) => s.setScript)
 
-  const pickLanguage = (code: (typeof LANGUAGES)[number]["code"]) => {
-    setLanguage(code)
-    const first = languageInfo(code).examTypes[0]
-    setStoredExamType(first)
-    updateSettingsM.mutate({ active_exam_type: first })
-  }
-  const pickExamTrack = (t: string) => {
-    setStoredExamType(t)
-    updateSettingsM.mutate({ active_exam_type: t })
+  const PATHS = [
+    {
+      language: "zh",
+      examType: "hsk",
+      script: "simplified",
+      title: "中文 · Simplified",
+      sub: "HSK",
+    },
+    {
+      language: "zh",
+      examType: "tocfl",
+      script: "traditional",
+      title: "中文 · Traditional",
+      sub: "TOCFL",
+    },
+    {
+      language: "de",
+      examType: "goethe",
+      title: "Deutsch",
+      sub: "Goethe-Zertifikat",
+    },
+    { language: "en", examType: "toefl", title: "English", sub: "TOEFL iBT" },
+    { language: "ja", examType: "jlpt", title: "日本語", sub: "JLPT" },
+  ] as const
+
+  const pickPath = (p: (typeof PATHS)[number]) => {
+    setLanguage(p.language)
+    setStoredExamType(p.examType)
+    if ("script" in p) setScript(p.script)
+    updateSettingsM.mutate({ active_exam_type: p.examType })
   }
 
   const [section, setSection] = useState<Section>("profile")
@@ -285,36 +301,21 @@ export default function ProfileTab() {
 
         {section === "settings" && (
           <View style={{ gap: 24 }}>
-            {/* Learning language */}
+            {/* Learning path */}
             <View style={{ gap: 12 }}>
               <Text style={[type.labelSm, { color: theme.textMuted }]}>
-                Learning language
+                Learning path
               </Text>
               <View style={{ flexDirection: "row", flexWrap: "wrap", gap: 8 }}>
-                {LANGUAGES.map((l) => (
+                {PATHS.map((p) => (
                   <Chip
-                    key={l.code}
-                    label={`${l.nativeName} · ${l.name}`}
-                    selected={language === l.code}
-                    onPress={() => pickLanguage(l.code)}
-                  />
-                ))}
-              </View>
-            </View>
-
-            {/* Exam track */}
-            <View style={{ gap: 12 }}>
-              <Text style={[type.labelSm, { color: theme.textMuted }]}>
-                Exam track
-              </Text>
-              <View style={{ flexDirection: "row", flexWrap: "wrap", gap: 8 }}>
-                {langExamTypes.map((t) => (
-                  <Chip
-                    key={t}
-                    label={examDisplayName(t)}
-                    selected={storedExamType === t}
-                    tint={examBadgeColor(t)}
-                    onPress={() => pickExamTrack(t)}
+                    key={`${p.language}-${p.examType}`}
+                    label={`${p.title} · ${p.sub}`}
+                    selected={
+                      language === p.language && storedExamType === p.examType
+                    }
+                    tint={examBadgeColor(p.examType)}
+                    onPress={() => pickPath(p)}
                   />
                 ))}
               </View>
