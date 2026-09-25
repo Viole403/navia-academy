@@ -5,7 +5,7 @@
  *
  * These ratios are load-bearing: each illustration is positioned against a card
  * corner with `right: 0` / `bottom: 0`, so what those offsets measure from is
- * the asset's own trimmed box. Re-measure after re-trimming anything upstream.
+ * the asset's own trimmed box. Re-measure after re-trimming any asset.
  *
  *   node scripts/measure-art-ratios.mjs
  */

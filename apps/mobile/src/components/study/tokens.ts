@@ -1,18 +1,18 @@
 import type { Theme } from "@/theme/colors"
 
 /**
- * Study design system — ported from Chinese-Easy's per-screen `tokens.ts`
- * pattern, adapted to Navia's multi-theme engine.
+ * Study design system — one token module for every study surface, resolved
+ * per active theme and mode.
  *
- * Rules (from the reference, kept):
- * - This file + `surfaceFor()` are the only place colour literals belong on
- *   redesigned screens. Components take a `theme` and derive fills/borders.
- * - Cards separate with tint fill + 1px border a step darker, not shadows.
- * - Full-screen layouts cap the column at CONTENT_MAX and centre it.
+ * Rules:
+ * - This file is the only place colour literals belong. Components take a
+ *   `theme` and derive fills and borders from it.
+ * - Cards separate with a tint fill plus a 1px border a step darker, never
+ *   with a shadow alone.
+ * - The column width comes from `useContentLayout()`, not from a local
+ *   constant, so a screen cannot quietly pick its own idea of how wide it is.
  * - Never `className` on an Animated.View; never `%` width in shrink-to-fit.
  */
-
-export const CONTENT_MAX = 430
 
 export const spacing = {
   xs: 4,

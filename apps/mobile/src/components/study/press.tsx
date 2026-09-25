@@ -11,9 +11,9 @@ import {
 } from "react-native"
 
 /**
- * The press kit — ported from Chinese-Easy `components/dashboard/parts.tsx`.
+ * The press kit.
  *
- * Two traps live here, both of which shipped as bugs upstream first:
+ * Two traps live here, both of which have bitten real screens:
  *
  *  1. **A card can be one pressable *and* several, but never by nesting
  *     Pressables.** On the web target the inner handler's event bubbles to the

@@ -9,10 +9,9 @@ import { useT } from "@/i18n"
 /**
  * The dictionary's browsing header.
  *
- * It is Shifu, not a landscape, and that is the reference's call: a heading, a
- * subtitle and a picture were three things answering one question on a screen
- * whose complaint was clutter. He says what the screen is for, and the sentence
- * types on.
+ * It is Shifu, not a landscape: a heading, a subtitle and a picture were three
+ * things answering one question on a screen whose complaint was clutter. He
+ * says what the screen is for, and the sentence types on.
  *
  * The typing is **faster** than the Dashboard's — this line is nearly a hundred
  * characters against the Dashboard's forty, and at the same pace the learner

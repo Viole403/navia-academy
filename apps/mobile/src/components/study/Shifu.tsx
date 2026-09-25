@@ -3,10 +3,9 @@ import { Image, View } from "react-native"
 /**
  * The mascot.
  *
- * The reference ships a flat vector stand-in assembled with props because its
- * three painted watercolour renders do not exist yet; it is one component with
- * a `pose` prop precisely so the real art replaces it by swapping the source
- * with no page layout touched. Kept that way here — `fill` lets the mascot
+ * One component with a `pose` prop, so a different render can replace the
+ * current one by swapping the source with no page layout touched. `fill` lets
+ * the mascot
  * flex into whatever height the header, card and footer leave, which needs
  * `minHeight: 0` on the flexed image and its wrapper, because a flex item
  * defaults to `min-height: auto` and an Image's content is its intrinsic pixel

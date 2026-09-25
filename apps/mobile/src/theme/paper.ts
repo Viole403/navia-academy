@@ -4,15 +4,14 @@ import type { ResolvedMode } from "@/theme/colors"
 /**
  * The paper design system.
  *
- * Ported from Chinese-Easy's per-screen `tokens.ts` family (dashboard / review
- * / challenges / onboarding / writingGuide / dict-* / read-*), and adapted in
- * one respect that the reference never had to solve: **it is a factory, not a
- * constant.**
+ * One palette for the whole app, and it is a **factory rather than a
+ * constant**: `paperFor(theme, mode)`.
  *
- * The reference is light-only — warm ivory under watercolour, on the grounds
- * that a dark repaint "would be a different design rather than a recolour".
- * Navia ships six themes across light / dark / amoled, and that catalogue is a
- * feature, so the design is repainted per palette rather than dropped:
+ * The design is warm ivory under watercolour, which is inherently a light-only
+ * idea. We ship six themes across light / dark / amoled, so a single set of
+ * literals would leave the other eleven combinations a recolour of a design that
+ * was never built for them. Every value is derived from the active theme
+ * instead:
  *
  *  - `paper` is the ivory ground, tinted toward the active theme's surface so
  *    each of the six reads as its own room rather than the same room in six

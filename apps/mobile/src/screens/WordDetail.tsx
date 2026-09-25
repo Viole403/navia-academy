@@ -36,13 +36,14 @@ interface Example {
 /**
  * Word detail.
  *
- * The reference's screen shows **one** gloss on its learning surfaces and every
- * sense on its detail card, because a CC-CEDICT-derived bank lists every
- * attested sense and seven of them is useless on a flashcard. This repo's content
- * already separates the two: `translation` is the single canonical gloss the quiz
- * and answer logic use, and `meanings[]` is the full sense list — 1,536 of the
- * 10,894 words carry more than one, which is exactly the case that card exists
- * for. So: one gloss in the masthead, every sense below it.
+ * One gloss in the masthead, every sense below it — and the content already
+ * separates the two, which is why the split is safe rather than a guess.
+ *
+ * A dictionary-derived bank lists every attested sense, and seven of them on a
+ * flashcard teaches nothing. Here `translation` is the single canonical gloss the
+ * quiz and answer logic already use, while `meanings[]` is the full list: 1,536
+ * of the 10,894 words carry more than one sense, and those are exactly the words
+ * the senses section exists for.
  */
 export function WordDetail() {
   const { paper } = useTheme()

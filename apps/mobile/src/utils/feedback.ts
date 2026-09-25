@@ -1,8 +1,8 @@
 import * as Haptics from "expo-haptics"
 
 /**
- * Haptic vocabulary — ported from Chinese-Easy `lib/haptics.ts`.
- * Keep to these five; a feel for everything is a feel for nothing.
+ * Haptic vocabulary. Keep to these five; a feel for everything is a feel for
+ * nothing.
  */
 export async function tick(): Promise<void> {
   try {

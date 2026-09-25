@@ -12,9 +12,12 @@ import {
 import { PressableScale } from "./PressableScale"
 
 /**
- * Tinted study card — the reference `IllustratedCard` shape without the
- * watercolour assets: fill + 1px border a step darker, radius 20.
- * Body pressable XOR inner actions (never nest Pressables on web).
+ * Tinted study card: a fill plus a 1px border a step darker, radius 20.
+ *
+ * The body is pressable **or** it contains its own actions, never both by
+ * nesting — a nested Pressable double-fires on the web target, so a tap on
+ * "Add this word" would also push the route. Use `PressClaim` when a card
+ * genuinely needs to be both.
  */
 export function StudyCard({
   tone = "neutral",

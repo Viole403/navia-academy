@@ -15,6 +15,7 @@ import { DictionaryIntro } from "@/components/study/DictionaryIntro"
 import { PaperCard, QuietPill } from "@/components/study/PaperCard"
 import { FlexGap } from "@/components/study/press"
 import { useTheme } from "@/theme/ThemeProvider"
+import { useContentLayout } from "@/theme/layout"
 import { paperType, families, hanziType } from "@/theme/paperType"
 import { loadVocabulary } from "@/lib/content-data"
 import { rankVocabulary } from "@/lib/dictionary-rank"
@@ -32,13 +33,10 @@ import { useT, translate, useLocaleStore } from "@/i18n"
 import { tick } from "@/utils/feedback"
 import type { VocabWord } from "@/types/api"
 
-const DICT_CONTENT_MAX = 430
-
 /**
  * The dictionary.
  *
- * Ported from Chinese-Easy `screens/Dictionary.tsx`, with the parts that were
- * bugs upstream kept as rules:
+ * Three rules that are easy to get wrong and were, at one point, wrong here:
  *
  *  - The level filter is **one button beside the search field** carrying its
  *    current value, opening a panel only when asked. Six chips took a whole band
@@ -59,8 +57,7 @@ export function Dictionary() {
   const router = useRouter()
   const language = useOnboardingStore((s) => s.language)
   const storedExamType = useOnboardingStore((s) => s.examType)
-  const { width } = useWindowDimensions()
-  const columnWidth = Math.min(width, DICT_CONTENT_MAX)
+  const { column: columnWidth } = useContentLayout()
   const charScript = isCharScript(language)
   const examTypes = languageInfo(language).examTypes
   const examType =

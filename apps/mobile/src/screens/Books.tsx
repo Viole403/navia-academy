@@ -13,6 +13,7 @@ import { PaperCard, QuietPill } from "@/components/study/PaperCard"
 import { GlyphTile } from "@/components/study/reading"
 import { FlexGap } from "@/components/study/press"
 import { useTheme } from "@/theme/ThemeProvider"
+import { useContentLayout } from "@/theme/layout"
 import { paperType, families } from "@/theme/paperType"
 import { loadReadings } from "@/lib/content-data"
 import { useOnboardingStore } from "@/store/onboarding"
@@ -20,16 +21,12 @@ import { useT, useLocaleStore } from "@/i18n"
 import { tap } from "@/utils/feedback"
 import type { Reading } from "@/types/api"
 
-const BOOKS_CONTENT_MAX = 430
-
 /**
  * Books — the reading library, on shelves.
  *
- * The reference has 46 hand-authored stories with 31 painted covers and a
- * painted-glyph fallback for the other 15. This repo has **148 readings and no
- * cover art in the content** — so every tile is the fallback, and pretending
- * otherwise by importing 31 mismatched images would be decorating content that
- * is not there. Sharding by level is the shelf.
+ * 148 readings, and the content carries **no cover art** — so every tile is the
+ * painted-glyph fallback, and importing a set of mismatched covers would be
+ * decorating stories this app does not have. Sharding by level is the shelf.
  */
 export function Books() {
   const { paper } = useTheme()
@@ -37,8 +34,7 @@ export function Books() {
   const locale = useLocaleStore((s) => s.locale)
   const router = useRouter()
   const language = useOnboardingStore((s) => s.language)
-  const { width } = useWindowDimensions()
-  const columnWidth = Math.min(width, BOOKS_CONTENT_MAX)
+  const { column: columnWidth } = useContentLayout()
 
   const readingsQ = useQuery({
     queryKey: ["library-readings", language],

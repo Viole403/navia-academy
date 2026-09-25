@@ -15,6 +15,7 @@ import { FlexGap } from "@/components/study/press"
 import { HanziStage } from "@/components/hanzi/HanziStage"
 import { Celebration } from "@/components/study/Celebration"
 import { useTheme } from "@/theme/ThemeProvider"
+import { useContentLayout } from "@/theme/layout"
 import { paperType, families, hanziFont, hanziType } from "@/theme/paperType"
 import { progress } from "@/api/endpoints"
 import { findWord } from "@/lib/content-data"
@@ -32,15 +33,14 @@ import {
 } from "@/utils/offlineQueue"
 import type { SrsCard, VocabWord } from "@/types/api"
 
-const SESSION_MAX = 430
 type Mode = "flashcards" | "listening" | "mistakes"
 type Grade = 0 | 1 | 2 | 3
 
 /**
  * The review session.
  *
- * Ported from Chinese-Easy `ReviewSession` with three deliberate changes,
- * each forced by what this backend records:
+ * Three rules govern the whole session, each forced by what the backend
+ * records:
  *
  *  1. **The step queue is built once.** Grading mutates the deck, so recomputing
  *     mid-session reshuffles the plan underneath the learner.
@@ -58,8 +58,7 @@ export function ReviewSession() {
   const qc = useQueryClient()
   const language = useOnboardingStore((s) => s.language)
   const tts = useTts()
-  const { width } = useWindowDimensions()
-  const columnWidth = Math.min(width, SESSION_MAX)
+  const { column: columnWidth } = useContentLayout()
 
   const params = useLocalSearchParams<{ mode?: string }>()
   const mode: Mode =
@@ -323,7 +322,7 @@ export function ReviewSession() {
           <View
             style={{
               width: "100%",
-              maxWidth: SESSION_MAX,
+              maxWidth: columnWidth,
               gap: 16,
               flexGrow: 1,
             }}

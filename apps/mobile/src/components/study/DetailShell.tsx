@@ -9,22 +9,20 @@ import {
 import { SafeAreaView } from "react-native-safe-area-context"
 import { useRouter } from "expo-router"
 import { useTheme } from "@/theme/ThemeProvider"
+import { useContentLayout } from "@/theme/layout"
 import { paperType, families } from "@/theme/paperType"
 import { FlexGap } from "./press"
 
-const DETAIL_CONTENT_MAX = 430
-
 /**
- * The detail shell — the reference's `dictionary/DetailShell`.
+ * The detail shell: the frame every pushed detail screen sits in.
  *
  * Its one non-obvious rule is a **guarded** back arrow. A screen reached by deep
  * link, by a full reload, or as the first entry after a redirect has nothing to
  * pop, and `router.back()` then silently does nothing — a back arrow that looks
  * fine and is simply inert. So: `canGoBack ? back : replace(parent)`.
  *
- * This is why the Dictionary's detail views live in a stack rather than being
- * switched to as sibling screens: pushed, the browse screen stays mounted
- * underneath and its search text and filters survive the round trip.
+ * Detail views are pushed rather than switched to, so the browse screen stays
+ * mounted underneath and its search text and filters survive the round trip.
  */
 export function DetailShell({
   title,
@@ -44,8 +42,7 @@ export function DetailShell({
 }) {
   const { paper } = useTheme()
   const router = useRouter()
-  const { width } = useWindowDimensions()
-  const columnWidth = Math.min(width, DETAIL_CONTENT_MAX)
+  const { column: columnWidth } = useContentLayout()
 
   return (
     <SafeAreaView

@@ -9,9 +9,8 @@
  * positioned against `right: 0` / `bottom: 0`, so an untrimmed render's
  * transparent margin is what those offsets actually measure from.
  *
- * Assets come from Chinese-Easy's `src/assets/images`, trimmed upstream by its
- * asset scripts. Rerunning those after changing a source means re-checking the
- * ratios here.
+ * Rerunning the trimming scripts on a source means re-measuring the ratios
+ * below — that is what the measurement script is for.
  */
 import type { ImageSourcePropType } from "react-native"
 
@@ -93,7 +92,7 @@ export type ArtEntry = { source: ImageSourcePropType; ratio: number }
  * render's transparent margin is what those offsets measure from — so a wrong
  * ratio is what makes one illustration float off the edge while another sits
  * flush for reasons nothing in the stylesheet explains. Re-measure with
- * `scripts/measure-art-ratios.mjs` after any re-trim upstream.
+ * `scripts/measure-art-ratios.mjs` after any re-trim.
  */
 export const artRatio: Record<string, number> = {
   shifuBow: 2.347,

@@ -8,7 +8,8 @@ import { EmptyState } from "@/components/ui/EmptyState"
 import { ProgressBar } from "@/components/ui/ProgressBar"
 import { StudyCard } from "@/components/study/StudyCard"
 import { LiftedButton } from "@/components/study/LiftedButton"
-import { CONTENT_MAX, spacing, studyType } from "@/components/study/tokens"
+import { spacing, studyType } from "@/components/study/tokens"
+import { useContentLayout } from "@/theme/layout"
 import { useTheme } from "@/theme/ThemeProvider"
 import { fonts, type } from "@/theme/typography"
 import { loadCurriculum } from "@/lib/content-data"
@@ -38,12 +39,13 @@ interface Lesson {
 
 /**
  * /lesson/[id] — step player (web parity: /lesson/[lessonId]).
- * Ported from Chinese-Easy `LessonPlayer` in structure (one step at a
- * time, fixed plan) but renders Navia's CDN steps (title + body) instead
- * of match/scramble exercises. Completing logs study + XP like program.
+ * One step at a time against a fixed plan, rendering the curriculum bundle's
+ * steps (title + body). Completing a lesson logs the study time and XP it is
+ * worth, the same write the program browser makes.
  */
 export function LessonView() {
   const { theme } = useTheme()
+  const { column: columnWidth } = useContentLayout()
   const t = useT()
   const router = useRouter()
   const qc = useQueryClient()
@@ -112,7 +114,7 @@ export function LessonView() {
         <View
           style={{
             width: "100%",
-            maxWidth: CONTENT_MAX,
+            maxWidth: columnWidth,
             alignSelf: "center",
             gap: spacing.lg,
             flexGrow: 1,

@@ -2,9 +2,10 @@ import { headword, reading } from "@/lib/languages"
 import type { VocabWord } from "@/types/api"
 
 /**
- * Dictionary search ladder — ported from Chinese-Easy `lib/dictionary.ts`
- * SCORE ranking. English tiers matter most: an exact gloss outranks a
- * loose pinyin coincidence ("red" must not answer 熱帶 above 紅色).
+ * Dictionary search ranking.
+ *
+ * The English tiers are the part that matters: an exact gloss outranks a loose
+ * pinyin coincidence, so "red" answers 紅色 rather than 熱帶, 熱點 and 熱度.
  *
  * Ladder (per entry, best match wins):
  *   exact headword > exact gloss > headword prefix > reading

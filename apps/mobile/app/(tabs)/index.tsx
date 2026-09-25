@@ -25,6 +25,7 @@ import {
   useTypewriter,
 } from "@/components/study/Reveal"
 import { useTheme } from "@/theme/ThemeProvider"
+import { useContentLayout } from "@/theme/layout"
 import { paperType, families } from "@/theme/paperType"
 import { exam, progress } from "@/api/endpoints"
 import { loadVocabulary } from "@/lib/content-data"
@@ -35,9 +36,11 @@ import { useLocaleStore, useT } from "@/i18n"
 import { playSound } from "@/utils/sound"
 import { careful, tap } from "@/utils/feedback"
 
-/** Content column cap. These cards are phone-sized objects; wider centres. */
-const DASH_CONTENT_MAX = 430
-/** Trimmed from the reference's 320 to fit the first viewport on a 390×844. */
+/**
+ * Hero height, measured against the first viewport on a 390×844 screen. Taller
+ * than this and the last card falls past the fold, and the point of the last
+ * card is the two buttons underneath it.
+ */
 const HERO_HEIGHT = 268
 const entrance = {
   scenery: { at: 0, for: 560 },
@@ -50,7 +53,9 @@ const entrance = {
 }
 
 /**
- * Today — the Dashboard, rebuilt to the reference mockup.
+ * Today.
+ *
+ * The scene assembles itself in the order a person would draw it: scenery
  *
  * The scene assembles itself in the order a person would draw it: scenery
  * first, then who is being spoken to, then what there is to do, then the coach's
@@ -68,8 +73,7 @@ export default function HomeTab() {
   const t = useT()
   const locale = useLocaleStore((s) => s.locale)
   const language = useOnboardingStore((s) => s.language)
-  const { width } = useWindowDimensions()
-  const columnWidth = Math.min(width, DASH_CONTENT_MAX)
+  const { column: columnWidth } = useContentLayout()
 
   const progressQ = useQuery({ queryKey: ["progress"], queryFn: progress.get })
   const dueCardsQ = useQuery({

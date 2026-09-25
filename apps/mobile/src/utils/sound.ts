@@ -1,8 +1,7 @@
 /**
- * Sound effects — ported from Chinese-Easy `lib/sound.ts`.
+ * Sound effects.
  *
- * Two things in that file were bugs before they were rules, and both are kept
- * here for the same reasons:
+ * Two rules here are load-bearing, and both were bugs first:
  *
  *  - **The rewind before `play()` must be awaited.** `seekTo` returns a promise,
  *    and a player that has finished sits parked at the end of its clip — where

@@ -8,10 +8,9 @@ import { useReveal } from "./Reveal"
 import { useT } from "@/i18n"
 
 /*
- * The Review hub's hero strip.
+ * The review hub's hero strip.
  *
- * The reference's geometry is kept because both of its numbers are load-bearing
- * and were bugs first:
+ * Both numbers below are load-bearing:
  *
  *  - **The bubble's width is derived, never hardcoded.** It is capped at
  *    `pagodaLeft - bubbleLeft - 8`, where `pagodaLeft` comes from the range's

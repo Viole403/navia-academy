@@ -17,12 +17,11 @@ import type { ReadingParagraph } from "@/types/api"
 /**
  * The story reader.
  *
- * The reference paginates authored prose into screens of whole sentences and
- * tracks narration position from `onBoundary` events. This repo's readings are
- * already authored as **sentence-sized paragraphs**, each carrying its own
- * reading, phonetic script and translation — so the page turn is the content's
- * rather than a re-cut of it, and the narration cursor is a paragraph index
- * rather than a character offset estimated from speech boundaries.
+ * The readings here are authored as **sentence-sized paragraphs**, each
+ * carrying its own reading, phonetic script and translation — so the page turn is
+ * the content's own rather than a re-cut of a long string, and the narration
+ * position is a paragraph index rather than a character offset reconstructed
+ * from speech boundary events.
  *
  * What is kept: tap-to-look-up (every recognised word opens its entry without
  * leaving the page), per-paragraph replay, a transport for the whole passage,

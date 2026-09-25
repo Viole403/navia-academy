@@ -4,7 +4,8 @@ import { useQuery } from "@tanstack/react-query"
 import { Screen } from "@/components/ui/Screen"
 import { EmptyState } from "@/components/ui/EmptyState"
 import { StudyCard, SectionHeader } from "@/components/study/StudyCard"
-import { CONTENT_MAX, spacing, studyType } from "@/components/study/tokens"
+import { spacing, studyType } from "@/components/study/tokens"
+import { useContentLayout } from "@/theme/layout"
 import { useTheme } from "@/theme/ThemeProvider"
 import { fonts } from "@/theme/typography"
 import { progress } from "@/api/endpoints"
@@ -20,6 +21,7 @@ import { tap } from "@/utils/feedback"
  */
 export function Notifications() {
   const { theme } = useTheme()
+  const { column: columnWidth } = useContentLayout()
   const t = useT()
   const router = useRouter()
   const language = useOnboardingStore((s) => s.language)
@@ -57,7 +59,7 @@ export function Notifications() {
       <View
         style={{
           width: "100%",
-          maxWidth: CONTENT_MAX,
+          maxWidth: columnWidth,
           alignSelf: "center",
           gap: spacing.lg,
         }}

@@ -4,7 +4,7 @@ import { useFocusEffect } from "expo-router"
 import { entranceScore } from "./tokens"
 
 /**
- * Entrance score — ported from Chinese-Easy `dashboard/entrance.tsx`.
+ * Entrance score.
  * `useEntranceRun` ticks on focus (tab screens stay mounted); `useReveal`
  * plays one element's arrival off that counter. Every animation carries a
  * setTimeout backstop (hidden-tab rAF stall defence).

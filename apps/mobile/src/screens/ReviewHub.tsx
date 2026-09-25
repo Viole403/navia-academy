@@ -16,6 +16,7 @@ import { DrillBadge } from "@/components/study/dashboardCards"
 import { FlexGap } from "@/components/study/press"
 import { useEntranceRun, useReveal } from "@/components/study/Reveal"
 import { useTheme } from "@/theme/ThemeProvider"
+import { useContentLayout } from "@/theme/layout"
 import { paperType, families } from "@/theme/paperType"
 import { progress } from "@/api/endpoints"
 import { useT } from "@/i18n"
@@ -23,28 +24,25 @@ import { playSound } from "@/utils/sound"
 import { tap } from "@/utils/feedback"
 import type { SrsCard } from "@/types/api"
 
-const REV_CONTENT_MAX = 430
-
 /**
  * The Review hub.
  *
- * The reference separates the hub from the session deliberately: the hub is
- * counters and cards, and the drills run on a screen pushed on top of it, so
- * reopening a drill does not stack duplicate hubs.
+ * The hub and the session are separate screens on purpose: the hub is counters
+ * and cards, and each drill is pushed on top of it, so reopening a drill does
+ * not stack duplicate hubs behind the back arrow.
  *
  * The three drills map onto what this backend actually knows:
  *  - **Flashcards** — every due card, graded 0–3 (SM-2).
  *  - **Listening** — the same cards, heard rather than seen, graded on answer.
- *  - **Mistakes** — cards the learner has been getting wrong. This backend has
- *    no lapse counter, so it is `difficult_item_ids` plus low mastery, which is
- *    the same population the reference's "2+ lapses" was standing in for.
+ *  - **Mistakes** — cards the learner has been getting wrong. There is no lapse
+ *    counter on the server, so it is `difficult_item_ids` plus low mastery: the
+ *    same population, measured by what the backend actually keeps.
  */
 export function ReviewHub() {
   const { paper } = useTheme()
   const t = useT()
   const router = useRouter()
-  const { width } = useWindowDimensions()
-  const columnWidth = Math.min(width, REV_CONTENT_MAX)
+  const { column: columnWidth } = useContentLayout()
 
   const dueQ = useQuery({
     queryKey: ["due-cards"],

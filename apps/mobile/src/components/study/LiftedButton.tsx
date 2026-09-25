@@ -5,7 +5,7 @@ import { cardShadow, radii, spacing, studyType, shoulderFor } from "./tokens"
 import { PressableScale } from "./PressableScale"
 
 /**
- * Two-part button — ported from Chinese-Easy `LiftedFace`.
+ * Two-part button.
  * A "shoulder" (darker face colour) sits at top: LIFT with the face
  * translating down onto it on press, so it reads depressed, not dimmed.
  */

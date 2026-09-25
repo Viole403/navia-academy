@@ -9,8 +9,7 @@ import { useT } from "@/i18n"
 import type { StudySession } from "@/types/api"
 
 /**
- * The five Dashboard cards — ported from Chinese-Easy's
- * `components/dashboard/`. Each is a pure function of numbers the screen has
+ * The five dashboard cards. Each is a pure function of numbers the screen has
  * already worked out; the composition lives in the screen, not here.
  *
  * Which cards are one pressable and which are one pressable *and* several is

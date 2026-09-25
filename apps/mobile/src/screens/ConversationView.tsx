@@ -6,7 +6,8 @@ import { Screen } from "@/components/ui/Screen"
 import { EmptyState } from "@/components/ui/EmptyState"
 import { StudyCard, SectionHeader } from "@/components/study/StudyCard"
 import { LiftedButton } from "@/components/study/LiftedButton"
-import { CONTENT_MAX, spacing } from "@/components/study/tokens"
+import { spacing } from "@/components/study/tokens"
+import { useContentLayout } from "@/theme/layout"
 import { useTheme } from "@/theme/ThemeProvider"
 import { fonts, type } from "@/theme/typography"
 import { loadConversations } from "@/lib/content-data"
@@ -23,6 +24,7 @@ import { tap } from "@/utils/feedback"
  */
 export function ConversationView() {
   const { theme } = useTheme()
+  const { column: columnWidth } = useContentLayout()
   const t = useT()
   const router = useRouter()
   const { id } = useLocalSearchParams<{ id?: string }>()
@@ -70,7 +72,7 @@ export function ConversationView() {
         <View
           style={{
             width: "100%",
-            maxWidth: CONTENT_MAX,
+            maxWidth: columnWidth,
             alignSelf: "center",
             gap: spacing.lg,
           }}

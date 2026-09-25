@@ -4,11 +4,11 @@ import type { VocabWord } from "@/types/api"
 /**
  * Greedy longest-match segmentation of text against the vocabulary bank.
  *
- * Ported from Chinese-Easy `lib/textSegmentation`, with the cache kept because
- * it is not optional: one call meant tens of thousands of map inserts, which is
- * survivable when a reader segments a page at a time and not when a modal
- * segments sixty sentences. The table is keyed on the bank it was built from, so
- * a rebuilt bundle produces a new index rather than stale membership.
+ * The index is cached because it is not optional: one call means tens of
+ * thousands of map inserts, which is survivable when a reader segments a page at
+ * a time and not when a modal segments sixty sentences. It is keyed on the bank
+ * it was built from, so a rebuilt bundle produces a new index rather than stale
+ * membership.
  *
  * `text` is what offsets are measured from, `word` is identity, and `known` says
  * whether the bank recognised it. Drawing uses `text`; lookup uses `word`.

@@ -3,8 +3,7 @@
  * Build stroke-order shards for the Chinese character set Navia actually
  * teaches.
  *
- * Ported from Chinese-Easy `scripts/buildHanziData.mjs` + `buildHanziShards.mjs`.
- * Two changes, both forced by this repo's content:
+ * Two decisions are worth stating up front, both forced by this repo's content:
  *
  *  - The character inventory is **derived from our own content** under
  *    `apps/media/data/json/zh/**` rather than from a hand-curated list, so the

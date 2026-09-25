@@ -4,7 +4,8 @@ import { Screen } from "@/components/ui/Screen"
 import { EmptyState } from "@/components/ui/EmptyState"
 import { StudyCard, SectionHeader } from "@/components/study/StudyCard"
 import { WeekStrip } from "@/components/study/StudyBits"
-import { CONTENT_MAX, spacing, studyType } from "@/components/study/tokens"
+import { spacing, studyType } from "@/components/study/tokens"
+import { useContentLayout } from "@/theme/layout"
 import { useTheme } from "@/theme/ThemeProvider"
 import { fonts } from "@/theme/typography"
 import { progress } from "@/api/endpoints"
@@ -13,12 +14,12 @@ import { useOnboardingStore } from "@/store/onboarding"
 import { useT } from "@/i18n"
 
 /**
- * Progress — ported from Chinese-Easy `ProgressOverview` + the Dashboard's
- * This-Week card: week strip, lifetime stats, recent sessions.
- * (Web parity: /progress + /calendar.)
+ * Progress: the week strip, lifetime stats, and recent sessions — the same
+ * story the dashboard's This Week card tells, over twelve weeks instead of one.
  */
 export function Progress() {
   const { theme } = useTheme()
+  const { column: columnWidth } = useContentLayout()
   const t = useT()
   const language = useOnboardingStore((s) => s.language)
 
@@ -36,7 +37,7 @@ export function Progress() {
       <View
         style={{
           width: "100%",
-          maxWidth: CONTENT_MAX,
+          maxWidth: columnWidth,
           alignSelf: "center",
           gap: spacing.lg,
         }}

@@ -5,7 +5,7 @@ import { HANZI_SHARDS, SHARD_COUNT } from "../../assets/hanzi/shards"
 /**
  * hanzi-writer's stroke data for one character.
  *
- * Declared locally rather than imported from `hanzi-writer`: the library itself
+ * Declared here rather than imported: the writer itself
  * never runs in React Native (its drawing happens inside a WebView), so the app
  * would otherwise take a runtime dependency purely for a type.
  */

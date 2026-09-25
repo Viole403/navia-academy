@@ -57,13 +57,12 @@ function isCharacterJson(value: unknown): value is CharacterJson {
 /**
  * Stroke data for one character, from the shards this app bundles.
  *
- * **No CDN fallback**, unlike the reference: our shards are generated from the
- * characters our own content can put in front of a learner, and the coverage is
- * a property of the build (`scripts/build-hanzi-shards.mjs` reports what it
- * could not cover). A network fetch here would make stroke order depend on a
- * third party for the ~4% of characters the dataset has no data for at all —
- * which is a "Stroke data unavailable" state either way, so the fallback would
- * only add a failure mode.
+ * **No network fallback.** The shards are generated from the characters our
+ * own content can put in front of a learner, so coverage is a property of the
+ * build (`scripts/build-hanzi-shards.mjs` reports what it could not cover). For
+ * the ~4% of characters the dataset has no data for at all, the answer is
+ * "Stroke data unavailable" either way — a network fetch would only add a way
+ * to fail, and would make offline stroke order depend on a third party.
  */
 async function loadCharData(char: string): Promise<CharacterJson | null> {
   try {
@@ -433,9 +432,9 @@ function SingleGlyphStage({
   }, [active, status])
 
   if (Platform.OS === "web") {
-    // The reference ran a plain <iframe> here. This app has no web target in
-    // its build matrix, and react-native-webview has no web implementation, so
-    // the glyph degrades to the outlined character rather than pretending.
+    // react-native-webview has no web implementation and this app has no web
+    // target in its build matrix, so the glyph degrades to the outlined
+    // character rather than pretending a WebView exists.
     return (
       <View
         style={{

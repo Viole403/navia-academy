@@ -6,7 +6,8 @@ import { EmptyState } from "@/components/ui/EmptyState"
 import { Input } from "@/components/ui/Input"
 import { StudyCard, SectionHeader } from "@/components/study/StudyCard"
 import { LiftedButton } from "@/components/study/LiftedButton"
-import { CONTENT_MAX, spacing, studyType } from "@/components/study/tokens"
+import { spacing, studyType } from "@/components/study/tokens"
+import { useContentLayout } from "@/theme/layout"
 import { useTheme } from "@/theme/ThemeProvider"
 import { fonts } from "@/theme/typography"
 import { tasks } from "@/api/endpoints"
@@ -22,6 +23,7 @@ import { tap } from "@/utils/feedback"
  */
 export function Tasks() {
   const { theme } = useTheme()
+  const { column: columnWidth } = useContentLayout()
   const t = useT()
   const qc = useQueryClient()
   const language = useOnboardingStore((s) => s.language)
@@ -56,7 +58,7 @@ export function Tasks() {
       <View
         style={{
           width: "100%",
-          maxWidth: CONTENT_MAX,
+          maxWidth: columnWidth,
           alignSelf: "center",
           gap: spacing.lg,
         }}

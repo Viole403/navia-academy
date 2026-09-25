@@ -13,13 +13,9 @@ import { Chip } from "@/components/ui/Chip"
 import { Motif } from "@/components/ui/Motif"
 import { StudyCard } from "@/components/study/StudyCard"
 import { useEntranceRun, useReveal } from "@/components/study/Reveal"
-import {
-  CONTENT_MAX,
-  entranceScore,
-  spacing,
-  studyType,
-} from "@/components/study/tokens"
+import { entranceScore, spacing, studyType } from "@/components/study/tokens"
 import { useTheme } from "@/theme/ThemeProvider"
+import { useContentLayout } from "@/theme/layout"
 import { fonts, type } from "@/theme/typography"
 import { progress, settings } from "@/api/endpoints"
 import {
@@ -36,10 +32,9 @@ import { useT } from "@/i18n"
 import { tap } from "@/utils/feedback"
 
 /**
- * Learn hub — ported from Chinese-Easy's Review hub + Learn picker sheet:
- * one screen of drill cards with live counters, each opening the surface
- * where the work actually happens. (The old browse list moves to
- * /vocab in Batch D with the dictionary ranking ladder.)
+ * Learn hub: one screen of drill cards with live counters, each opening the
+ * surface where the work actually happens. The browse list that used to live
+ * here is now /vocab, with a ranked search ladder.
  */
 export default function LearnTab() {
   const { theme } = useTheme()
@@ -50,8 +45,7 @@ export default function LearnTab() {
   const setStoredExamType = useOnboardingStore((s) => s.setExamType)
   const info = languageInfo(language)
   const examTypes = info.examTypes
-  const { width } = useWindowDimensions()
-  const columnWidth = Math.min(width, CONTENT_MAX)
+  const { column: columnWidth } = useContentLayout()
 
   const initType =
     storedExamType && examTypes.includes(storedExamType)
@@ -89,6 +83,9 @@ export default function LearnTab() {
       | "/vocab"
       | "/characters"
       | "/books"
+      | "/my-words"
+      | "/new-words"
+      | "/lessons"
       | "/game-match"
       | "/library"
       | "/program"
@@ -123,6 +120,24 @@ export default function LearnTab() {
         : t("learn.wordMatch"),
       body: `${t("learn.pair")} ${wordLabel(language, false)} ${t("learn.toMeanings")}`,
       route: "/game-match",
+    },
+    {
+      tag: t("learn.drills").toUpperCase(),
+      title: t("myw.kicker"),
+      body: t("myw.savedBody"),
+      route: "/my-words",
+    },
+    {
+      tag: t("learn.drills").toUpperCase(),
+      title: t("nw.kicker"),
+      body: t("nw.emptyBody"),
+      route: "/new-words",
+    },
+    {
+      tag: t("learn.drills").toUpperCase(),
+      title: t("learn.program"),
+      body: t("town.note"),
+      route: "/lessons",
     },
     {
       tag: t("learn.drills").toUpperCase(),

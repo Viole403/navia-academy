@@ -40,9 +40,8 @@ function dayKey(d: Date): string {
 }
 
 /**
- * Calendar Monday→Sunday week strip — ported from `currentWeekActivity`.
- * A calendar week (not rolling): dots never move overnight. Distinguishes
- * a missed day (hollow) from a future day (faint ring).
+ * @deprecated Kept so existing imports resolve. The week strip now lives in
+ * `WeekStrip.tsx`, where the three day-states are defined together.
  */
 export function WeekStrip({ sessions }: { sessions: StudySession[] }) {
   const { theme } = useTheme()

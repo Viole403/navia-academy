@@ -3,11 +3,12 @@ import { useTheme } from "@/theme/ThemeProvider"
 import { paperType, families } from "@/theme/paperType"
 
 /**
- * The calendar-week day strip — ported from Chinese-Easy `lib/progress.ts`
- * `currentWeekActivity`, with the distinction it insists on: a **missed** day
- * (hollow, in the track colour) is not the same as a day that has not happened
- * yet (faint ring), and a future day is drawn in the green family because it is
- * an opportunity rather than a gap.
+ * The calendar-week day strip.
+ *
+ * Three states, and the distinction matters: a **missed** day (hollow, in the
+ * track colour) is not the same as a day that has not happened yet (faint
+ * ring), and a future day is drawn in the green family because it is an
+ * opportunity rather than a gap.
  *
  * Monday-to-Sunday rather than a rolling window, because the strip is labelled
  * M T W T F S S and a rolling one would move Wednesday's dot overnight.

@@ -13,6 +13,7 @@ import { useQuery } from "@tanstack/react-query"
 import { PaperCard, QuietPill } from "@/components/study/PaperCard"
 import { FlexGap } from "@/components/study/press"
 import { useTheme } from "@/theme/ThemeProvider"
+import { useContentLayout } from "@/theme/layout"
 import { paperType, families, hanziType } from "@/theme/paperType"
 import { loadCharacters } from "@/lib/content-data"
 import { isCharScript, motifChar } from "@/lib/languages"
@@ -20,8 +21,6 @@ import { useOnboardingStore } from "@/store/onboarding"
 import { useT } from "@/i18n"
 import { tick } from "@/utils/feedback"
 import type { HanziChar } from "@/types/api"
-
-const CHR_CONTENT_MAX = 430
 
 /**
  * The character grid.
@@ -36,8 +35,7 @@ export function Characters() {
   const t = useT()
   const router = useRouter()
   const language = useOnboardingStore((s) => s.language)
-  const { width } = useWindowDimensions()
-  const columnWidth = Math.min(width, CHR_CONTENT_MAX)
+  const { column: columnWidth } = useContentLayout()
 
   const [query, setQuery] = useState("")
 

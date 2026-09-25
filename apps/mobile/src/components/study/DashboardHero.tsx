@@ -7,12 +7,12 @@ import { Shifu } from "./Shifu"
 import { art, artRatio } from "./art"
 
 /**
- * The hero — ported from Chinese-Easy `components/dashboard/DashboardHero.tsx`.
+ * The hero.
  *
  * Layered back to front inside a clipped box: the mountain range, then the
- * sakura branch, then Shifu rising out of the cards, then his speech bubble.
- * Scenery is mirrored with `scaleX: -1` so its trunks and roofline sit on the
- * right rather than duplicating a second multi-hundred-kilobyte render.
+ * bonsai, then Shifu rising out of the cards, then his speech bubble. Scenery is
+ * mirrored with `scaleX: -1` so its trunk and roofline sit on the right rather
+ * than shipping a second render of the same artwork.
  *
  * The branch is sized to clear the **longest** greeting — "Good Afternoon," is
  * wider than "Good Morning," and the shorter one is what fits by accident.

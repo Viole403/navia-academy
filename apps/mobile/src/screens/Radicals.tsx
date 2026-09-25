@@ -13,6 +13,7 @@ import { useQuery } from "@tanstack/react-query"
 import { PaperCard, QuietPill } from "@/components/study/PaperCard"
 import { FlexGap } from "@/components/study/press"
 import { useTheme } from "@/theme/ThemeProvider"
+import { useContentLayout } from "@/theme/layout"
 import { paperType, families, hanziType } from "@/theme/paperType"
 import { loadCharacters } from "@/lib/content-data"
 import { isCharScript, motifChar } from "@/lib/languages"
@@ -21,17 +22,17 @@ import { useT } from "@/i18n"
 import { tick } from "@/utils/feedback"
 import type { HanziChar } from "@/types/api"
 
-const RAD_CONTENT_MAX = 430
-
 /**
  * Radicals.
  *
- * The reference teaches 99 of the 214 Kangxi radicals with an authored
- * explanation each, and keeps a separate 214-entry **naming** table so the other
- * 115 still have something to print. This repo has neither — but its characters
- * bundle carries a `radical` on every entry, so the third layer (the index) comes
- * free from our own content: this screen is the index, grouped by radical, with
- * the characters filed under each.
+ * Three layers exist for radicals and the distinction matters: a **teaching**
+ * set with an authored explanation each, a **naming** table covering all 214 so
+ * the untaught ones still have something to print, and an **index** of every
+ * character filed under its radical.
+ *
+ * Only the index is ours to build, because only the index needs no authoring:
+ * every entry in the characters bundle carries a `radical`, so this screen is
+ * that field grouped, with the characters filed underneath.
  *
  * Read-only, and deliberately so: these are reference, not vocabulary. Nothing
  * here is addable to a review deck, because a radical is not a word.
@@ -41,8 +42,7 @@ export function Radicals() {
   const t = useT()
   const router = useRouter()
   const language = useOnboardingStore((s) => s.language)
-  const { width } = useWindowDimensions()
-  const columnWidth = Math.min(width, RAD_CONTENT_MAX)
+  const { column: columnWidth } = useContentLayout()
   const [query, setQuery] = useState("")
 
   const charsQ = useQuery({

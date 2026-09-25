@@ -3,10 +3,10 @@ import type { VocabWord } from "@/types/api"
 /**
  * Word categories.
  *
- * The reference has six hand-curated `WordCategory` entries; this repo's content
- * has none, but it does carry `pos` (14 values) and free-form `tags`. These are
- * the reference's six, derived — so the category browser is a real grouping of
- * the bank rather than a decorative row of tiles that filter nothing.
+ * The content has no category field of its own, but it does carry `pos` (14
+ * values) and free-form `tags`. Six buckets are derived from those two, so the
+ * category row filters something real rather than being a decorative strip of
+ * tiles that filter nothing.
  *
  * Every word lands in exactly one bucket. A `tags`-based theme is checked before
  * the `pos` fallback so "time" and "places" survive the flattening rather than

@@ -9,7 +9,7 @@ import {
 import { View } from "react-native"
 
 /**
- * Press-scale wrapper — ported from Chinese-Easy `PressableScale`.
+ * Press-scale wrapper.
  *
  * Outer Animated.View carries the transform (never className on it);
  * inner plain View keeps layout + visual style. Non-native drivers get a

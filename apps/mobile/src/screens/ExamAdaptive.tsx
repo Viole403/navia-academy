@@ -8,7 +8,8 @@ import { EmptyState } from "@/components/ui/EmptyState"
 import { ProgressBar } from "@/components/ui/ProgressBar"
 import { StudyCard, SectionHeader } from "@/components/study/StudyCard"
 import { LiftedButton } from "@/components/study/LiftedButton"
-import { CONTENT_MAX, spacing, studyType } from "@/components/study/tokens"
+import { spacing, studyType } from "@/components/study/tokens"
+import { useContentLayout } from "@/theme/layout"
 import { useTheme } from "@/theme/ThemeProvider"
 import { fonts, type } from "@/theme/typography"
 import { cat } from "@/api/endpoints"
@@ -31,6 +32,7 @@ const REVEAL_MS = 650
  */
 export function ExamAdaptive() {
   const { theme } = useTheme()
+  const { column: columnWidth } = useContentLayout()
   const t = useT()
   const router = useRouter()
   const qc = useQueryClient()
@@ -157,7 +159,7 @@ export function ExamAdaptive() {
         <View
           style={{
             width: "100%",
-            maxWidth: CONTENT_MAX,
+            maxWidth: columnWidth,
             alignSelf: "center",
             gap: spacing.lg,
           }}

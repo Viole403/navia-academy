@@ -5,8 +5,7 @@ import { PressableScale, PressClaim, CardArt } from "./press"
 import type { ImageSourcePropType } from "react-native"
 
 /**
- * The card family — ported from Chinese-Easy's `IllustratedCard` and the
- * per-screen `parts.tsx` files. A card separates itself from the page with a
+ * The card family. A card separates itself from the page with a
  * tint and a 1px border, never with a shadow; the shadow here is a hint that
  * stops it lying completely flat, and it is tinted with the ink rather than
  * black because a black shadow over warm paper reads as grey dirt.

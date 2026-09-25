@@ -10,6 +10,7 @@ import { SafeAreaView } from "react-native-safe-area-context"
 import { useRouter } from "expo-router"
 import { useQuery } from "@tanstack/react-query"
 import { useTheme } from "@/theme/ThemeProvider"
+import { useContentLayout } from "@/theme/layout"
 import { paperType, families, hanziType } from "@/theme/paperType"
 import { loadVocabulary, loadReadings } from "@/lib/content-data"
 import { headword } from "@/lib/languages"
@@ -17,8 +18,6 @@ import { segmentText, type TextSegment } from "@/lib/segment"
 import { useOnboardingStore } from "@/store/onboarding"
 import { decorArt, artRatio } from "./art"
 import { tick } from "@/utils/feedback"
-
-const READ_CONTENT_MAX = 430
 
 /**
  * Segmented reading text.
@@ -133,8 +132,7 @@ export function ReadingShell({
 }) {
   const { paper } = useTheme()
   const router = useRouter()
-  const { width } = useWindowDimensions()
-  const columnWidth = Math.min(width, READ_CONTENT_MAX)
+  const { column: columnWidth } = useContentLayout()
 
   return (
     <SafeAreaView
