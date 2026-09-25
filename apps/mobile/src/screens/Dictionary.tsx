@@ -15,6 +15,7 @@ import { DictionaryIntro } from "@/components/study/DictionaryIntro"
 import { PaperCard, QuietPill } from "@/components/study/PaperCard"
 import { FlexGap } from "@/components/study/press"
 import { useTheme } from "@/theme/ThemeProvider"
+import { useContentFaces } from "@/hooks/useContentFaces"
 import { useContentLayout } from "@/theme/layout"
 import { paperType, families, hanziType } from "@/theme/paperType"
 import { loadVocabulary } from "@/lib/content-data"
@@ -52,6 +53,7 @@ import type { VocabWord } from "@/types/api"
  */
 export function Dictionary() {
   const { paper } = useTheme()
+  const faces = useContentFaces()
   const t = useT()
   const locale = useLocaleStore((s) => s.locale)
   const router = useRouter()
@@ -288,7 +290,7 @@ export function Dictionary() {
                 >
                   <Text
                     style={{
-                      fontFamily: families.hanziSc,
+                      fontFamily: faces.display,
                       ...hanziType(22),
                       color: paper.ink,
                     }}
@@ -462,6 +464,7 @@ function WordRow({
   compact?: boolean
 }) {
   const { paper } = useTheme()
+  const faces = useContentFaces()
   const router = useRouter()
   const language = useOnboardingStore((s) => s.language)
   const charScript = isCharScript(language)
@@ -484,7 +487,7 @@ function WordRow({
       <Text
         numberOfLines={1}
         style={{
-          fontFamily: charScript ? families.hanziSc : families.lora,
+          fontFamily: faces.display,
           fontSize: compact ? 26 : 30,
           lineHeight: compact ? 34 : 40,
           color: paper.ink,

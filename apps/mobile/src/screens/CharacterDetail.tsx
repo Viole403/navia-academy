@@ -6,6 +6,7 @@ import { DetailShell } from "@/components/study/DetailShell"
 import { PaperCard, LiftedFace } from "@/components/study/PaperCard"
 import { HanziStage } from "@/components/hanzi/HanziStage"
 import { useTheme } from "@/theme/ThemeProvider"
+import { useContentFaces } from "@/hooks/useContentFaces"
 import { paperType, families, hanziType } from "@/theme/paperType"
 import { loadCharacters } from "@/lib/content-data"
 import { useOnboardingStore } from "@/store/onboarding"
@@ -21,6 +22,7 @@ import { useT } from "@/i18n"
  */
 export function CharacterDetail() {
   const { paper } = useTheme()
+  const faces = useContentFaces()
   const t = useT()
   const language = useOnboardingStore((s) => s.language)
   const { char } = useLocalSearchParams<{ char?: string }>()
@@ -79,7 +81,7 @@ export function CharacterDetail() {
         <View style={{ alignItems: "center", gap: 6, paddingVertical: 8 }}>
           <Text
             style={{
-              fontFamily: families.hanziSc,
+              fontFamily: faces.hanzi,
               ...hanziType(56),
               color: paper.ink,
             }}

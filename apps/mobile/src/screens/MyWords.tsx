@@ -6,6 +6,7 @@ import { useQuery } from "@tanstack/react-query"
 import { PaperCard, QuietPill } from "@/components/study/PaperCard"
 import { FlexGap } from "@/components/study/press"
 import { useTheme } from "@/theme/ThemeProvider"
+import { useContentFaces } from "@/hooks/useContentFaces"
 import { useContentLayout } from "@/theme/layout"
 import { paperType, families, hanziFont, hanziType } from "@/theme/paperType"
 import { progress } from "@/api/endpoints"
@@ -32,6 +33,7 @@ type Tier = "new" | "learning" | "proficient"
  */
 export function MyWords() {
   const { paper } = useTheme()
+  const faces = useContentFaces()
   const t = useT()
   const router = useRouter()
   const language = useOnboardingStore((s) => s.language)
@@ -242,6 +244,7 @@ function CardRow({
   charScript: boolean
 }) {
   const { paper } = useTheme()
+  const faces = useContentFaces()
   const router = useRouter()
   return (
     <Pressable
@@ -261,7 +264,7 @@ function CardRow({
       <Text
         numberOfLines={1}
         style={{
-          fontFamily: charScript ? hanziFont("simplified") : families.lora,
+          fontFamily: faces.display,
           fontSize: 24,
           lineHeight: 32,
           color: paper.ink,

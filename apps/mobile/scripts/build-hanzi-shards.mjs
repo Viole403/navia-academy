@@ -29,7 +29,19 @@ const require = createRequire(import.meta.url)
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const MOBILE_ROOT = join(__dirname, "..")
 const MONOREPO = join(MOBILE_ROOT, "..", "..")
-const CONTENT_ROOT = join(MONOREPO, "apps", "media", "data", "json", "zh")
+const JSON_ROOT = join(MONOREPO, "apps", "media", "data", "json")
+
+/**
+ * Languages whose content can put a Han character in front of a learner.
+ *
+ * Chinese is obvious. Japanese is not, and leaving it out is a silent hole:
+ * Japanese is written with kanji, and this app teaches 8,355 Japanese words
+ * across 2,091 distinct kanji — every one of them renders, and not one of them
+ * would have had stroke data, so writing practice would simply never appear on a
+ * Japanese word. Kana carry no stroke order, which is correct and is why the
+ * scanner filters to ideographs rather than to "characters".
+ */
+const HAN_LANGUAGES = ["zh", "ja"]
 const OUT_DIR = join(MOBILE_ROOT, "assets", "hanzi")
 const SHARD_COUNT = 64
 
@@ -56,10 +68,12 @@ async function walk(dir) {
   return out
 }
 
-/** Every character that can reach a learner's screen, in both scripts. */
+/** Every Han character that can reach a learner's screen. */
 async function collectCharacters() {
   const chars = new Set()
-  const files = await walk(CONTENT_ROOT)
+  const files = (await Promise.all(
+    HAN_LANGUAGES.map((lang) => walk(join(JSON_ROOT, lang)))
+  )).flat()
   let traditionalPairs = 0
 
   for (const file of files) {
@@ -71,7 +85,7 @@ async function collectCharacters() {
       continue
     }
     // Scanning the raw JSON is both faster and more complete than walking the
-    // parsed tree: it catches hanzi in fields we don't model (examples,
+    // parsed tree: it catches ideographs in fields we don't model (examples,
     // dialogue turns, lesson bodies) as well as ones we do.
     for (const ch of text) if (isHanzi(ch)) chars.add(ch)
     if (text.includes("traditional")) traditionalPairs++
@@ -85,7 +99,7 @@ async function collectCharacters() {
 }
 
 async function main() {
-  console.log("Collecting characters from content…")
+  console.log(`Collecting characters from ${HAN_LANGUAGES.join(" + ")} content…`)
   const { chars, scannedFiles } = await collectCharacters()
   console.log(`  ${scannedFiles} content files → ${chars.length} unique hanzi`)
 

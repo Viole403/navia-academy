@@ -1,5 +1,6 @@
 import { Text, View } from "react-native"
 import { useTheme } from "@/theme/ThemeProvider"
+import { useContentFaces } from "@/hooks/useContentFaces"
 import { paperType, families } from "@/theme/paperType"
 import { PaperCard, LiftedFace, QuietPill, PaperStat } from "./PaperCard"
 import { CardArt, PressableScale } from "./press"
@@ -33,6 +34,7 @@ export function ReviewCard({
   onStart: () => void
 }) {
   const { paper } = useTheme()
+  const faces = useContentFaces()
   const t = useT()
   return (
     <PaperCard
@@ -81,6 +83,7 @@ export function NewWordCard({
   onDismiss: () => void
 }) {
   const { paper } = useTheme()
+  const faces = useContentFaces()
   const t = useT()
   return (
     <PaperCard tone="word" onPress={onOpen}>
@@ -95,7 +98,7 @@ export function NewWordCard({
         </Text>
         <Text
           style={{
-            fontFamily: families.hanziSc,
+            fontFamily: faces.display,
             fontSize: 58,
             lineHeight: 70,
             color: paper.ink,

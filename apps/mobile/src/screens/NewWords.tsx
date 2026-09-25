@@ -7,10 +7,12 @@ import { PaperCard, LiftedFace, QuietPill } from "@/components/study/PaperCard"
 import { FlexGap } from "@/components/study/press"
 import { HanziStage } from "@/components/hanzi/HanziStage"
 import { useTheme } from "@/theme/ThemeProvider"
+import { useContentFaces } from "@/hooks/useContentFaces"
 import { useContentLayout } from "@/theme/layout"
 import { paperType, families, hanziType } from "@/theme/paperType"
 import { loadVocabulary } from "@/lib/content-data"
 import { progress } from "@/api/endpoints"
+import { hasHan } from "@/lib/han"
 import { headword, reading, isCharScript } from "@/lib/languages"
 import { useOnboardingStore } from "@/store/onboarding"
 import { useTts } from "@/hooks/useTts"
@@ -40,6 +42,7 @@ const HISTORY_LIMIT = 40
  */
 export function NewWords() {
   const { paper } = useTheme()
+  const faces = useContentFaces()
   const t = useT()
   const locale = useLocaleStore((s) => s.locale)
   const router = useRouter()
@@ -127,7 +130,7 @@ export function NewWords() {
     )
   }
 
-  const charScript = isCharScript(language) && (current?.hanzi?.length ?? 0) > 0
+  const charScript = isCharScript(language) && hasHan(headword(current ?? {}))
 
   return (
     <SafeAreaView
@@ -228,7 +231,7 @@ export function NewWords() {
             <View style={{ alignItems: "center", gap: 6, paddingVertical: 10 }}>
               <Text
                 style={{
-                  fontFamily: families.hanziSc,
+                  fontFamily: faces.display,
                   ...hanziType(76),
                   color: paper.ink,
                 }}

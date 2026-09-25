@@ -13,6 +13,7 @@ import { useQuery } from "@tanstack/react-query"
 import { PaperCard, QuietPill } from "@/components/study/PaperCard"
 import { FlexGap } from "@/components/study/press"
 import { useTheme } from "@/theme/ThemeProvider"
+import { useContentFaces } from "@/hooks/useContentFaces"
 import { useContentLayout } from "@/theme/layout"
 import { paperType, families, hanziType } from "@/theme/paperType"
 import { loadCharacters } from "@/lib/content-data"
@@ -32,6 +33,7 @@ import type { HanziChar } from "@/types/api"
  */
 export function Characters() {
   const { paper } = useTheme()
+  const faces = useContentFaces()
   const t = useT()
   const router = useRouter()
   const language = useOnboardingStore((s) => s.language)
@@ -209,7 +211,7 @@ export function Characters() {
                 >
                   <Text
                     style={{
-                      fontFamily: families.hanziSc,
+                      fontFamily: faces.display,
                       ...hanziType(30),
                       color: paper.ink,
                     }}

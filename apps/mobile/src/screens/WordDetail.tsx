@@ -12,10 +12,12 @@ import { DetailShell } from "@/components/study/DetailShell"
 import { PaperCard, LiftedFace } from "@/components/study/PaperCard"
 import { HanziStage } from "@/components/hanzi/HanziStage"
 import { useTheme } from "@/theme/ThemeProvider"
+import { useContentFaces } from "@/hooks/useContentFaces"
 import { paperType, families, hanziFont, hanziType } from "@/theme/paperType"
 import { progress } from "@/api/endpoints"
 import { findWord } from "@/lib/content-data"
 import { isCharScript, headword, reading } from "@/lib/languages"
+import { hasHan } from "@/lib/han"
 import { useOnboardingStore } from "@/store/onboarding"
 import { useTts } from "@/hooks/useTts"
 import { useT } from "@/i18n"
@@ -47,6 +49,7 @@ interface Example {
  */
 export function WordDetail() {
   const { paper } = useTheme()
+  const faces = useContentFaces()
   const t = useT()
   const qc = useQueryClient()
   const { id } = useLocalSearchParams<{ id?: string }>()
@@ -112,7 +115,7 @@ export function WordDetail() {
 
   const senses = (w.meanings as string[] | undefined) ?? []
   const examples = (w.examples as Example[] | undefined) ?? []
-  const charScript = isCharScript(language) && (w.hanzi?.length ?? 0) > 0
+  const charScript = isCharScript(language) && hasHan(headword(w))
 
   return (
     <DetailShell
@@ -166,7 +169,7 @@ export function WordDetail() {
         <View style={{ alignItems: "center", gap: 6, paddingVertical: 8 }}>
           <Text
             style={{
-              fontFamily: hanziFont("simplified"),
+              fontFamily: faces.display,
               ...hanziType(96),
               color: paper.ink,
               textAlign: "center",
@@ -241,7 +244,7 @@ export function WordDetail() {
               >
                 <Text
                   style={{
-                    fontFamily: hanziFont("simplified"),
+                    fontFamily: faces.display,
                     ...hanziType(20),
                     color: paper.ink,
                   }}

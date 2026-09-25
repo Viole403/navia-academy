@@ -10,6 +10,7 @@ import { SafeAreaView } from "react-native-safe-area-context"
 import { useRouter } from "expo-router"
 import { useQuery } from "@tanstack/react-query"
 import { useTheme } from "@/theme/ThemeProvider"
+import { useContentFaces } from "@/hooks/useContentFaces"
 import { useContentLayout } from "@/theme/layout"
 import { paperType, families, hanziType } from "@/theme/paperType"
 import { loadVocabulary, loadReadings } from "@/lib/content-data"
@@ -36,6 +37,7 @@ export function TappableText({
   showUnderline?: boolean
 }) {
   const { paper } = useTheme()
+  const faces = useContentFaces()
   const router = useRouter()
   const language = useOnboardingStore((s) => s.language)
 
@@ -54,7 +56,7 @@ export function TappableText({
   return (
     <Text
       style={{
-        fontFamily: families.hanziSc,
+        fontFamily: faces.display,
         ...hanziType(size),
         color: paper.ink,
       }}
@@ -234,6 +236,7 @@ export function GlyphTile({
   size?: number
 }) {
   const { paper } = useTheme()
+  const faces = useContentFaces()
   return (
     <View
       style={{
@@ -247,7 +250,7 @@ export function GlyphTile({
     >
       <Text
         style={{
-          fontFamily: families.hanziSc,
+          fontFamily: faces.display,
           ...hanziType(Math.round(size * 0.5)),
           color: paper.greenDark,
         }}

@@ -45,13 +45,49 @@ export type FontFamily = (typeof families)[keyof typeof families]
 /**
  * The face a character-script screen should draw with.
  *
- * Spelled out as a switch on a literal, not built from a template — the
- * Tailwind config carries matching class names, and NativeWind finds classes by
- * scanning source text, so a template literal would generate no CSS and every
- * character would silently fall back to the system serif.
+ * Spelled out as a switch on literals, not built from a template — the Tailwind
+ * config carries matching class names, and NativeWind finds classes by scanning
+ * source text, so a template literal would generate no CSS and every character
+ * would silently fall back to the system serif.
  */
 export function hanziFont(script: ScriptPref): FontFamily {
   return script === "traditional" ? families.hanziTc : families.hanziSc
+}
+
+/**
+ * The face for **content text** in the learner's language.
+ *
+ * This app teaches four languages with four different text shapes, and a single
+ * CJK face is wrong for three of them:
+ *
+ *  - **zh** — simplified and traditional take different faces, because Noto Serif
+ *    SC and TC draw a good many shared codepoints differently (骨 and 直 among
+ *    them) and a traditional reader shown mainland glyph forms is a real defect.
+ *  - **ja** — kana and kanji are both covered, and the sans face is the right
+ *    one for Japanese body text, which is set lighter than Chinese.
+ *  - **de / en** — Latin, and CJK faces carry Latin glyphs that render but were
+ *    never designed for the job. German prose set in Noto Serif SC reads as an
+ *    accident; it wants the literary serif, which is what the reader uses for
+ *    translations everywhere else.
+ *
+ * So screens resolve the face through this rather than reaching for `hanziFont`
+ * and hardcoding a script — a hardcoded script is a traditional learner being
+ * shown simplified glyphs on three screens.
+ */
+export function displayFont(language: string, script: ScriptPref): FontFamily {
+  switch (language) {
+    case "zh":
+      return hanziFont(script)
+    case "ja":
+      return families.hanziSans
+    default:
+      return families.lora
+  }
+}
+
+/** Whether content in this language is set in a CJK face rather than Latin. */
+export function isCjkLanguage(language: string): boolean {
+  return language === "zh" || language === "ja"
 }
 
 export const paperType = {

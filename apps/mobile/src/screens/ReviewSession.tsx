@@ -15,10 +15,12 @@ import { FlexGap } from "@/components/study/press"
 import { HanziStage } from "@/components/hanzi/HanziStage"
 import { Celebration } from "@/components/study/Celebration"
 import { useTheme } from "@/theme/ThemeProvider"
+import { useContentFaces } from "@/hooks/useContentFaces"
 import { useContentLayout } from "@/theme/layout"
 import { paperType, families, hanziFont, hanziType } from "@/theme/paperType"
 import { progress } from "@/api/endpoints"
 import { findWord } from "@/lib/content-data"
+import { hasHan } from "@/lib/han"
 import { headword, reading, isCharScript } from "@/lib/languages"
 import { useOnboardingStore } from "@/store/onboarding"
 import { useTts } from "@/hooks/useTts"
@@ -53,6 +55,7 @@ type Grade = 0 | 1 | 2 | 3
  */
 export function ReviewSession() {
   const { paper } = useTheme()
+  const faces = useContentFaces()
   const t = useT()
   const router = useRouter()
   const qc = useQueryClient()
@@ -110,9 +113,11 @@ export function ReviewSession() {
     enabled: !!current,
   })
   const word = wordQ.data
-  // Stroke writing only makes sense for a Chinese word: the learner's script
-  // must be a character script, and the entry must actually carry hanzi.
-  const charScript = isCharScript(language) && (word?.hanzi?.length ?? 0) > 0
+  // Writing practice needs an ideograph, not a "character script" label: kana
+  // have no stroke order, and a Japanese entry carries its text in `text` rather
+  // than `hanzi`, so asking for a `hanzi` field would hide the feature entirely
+  // on a language that is written with kanji.
+  const charScript = isCharScript(language) && hasHan(headword(word ?? {}))
 
   const advance = useCallback(() => {
     setRevealed(false)
@@ -378,7 +383,7 @@ export function ReviewSession() {
                   >
                     <Text
                       style={{
-                        fontFamily: hanziFont("simplified"),
+                        fontFamily: faces.hanzi,
                         ...hanziType(88),
                         color: paper.ink,
                         textAlign: "center",

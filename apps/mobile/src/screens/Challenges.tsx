@@ -15,6 +15,7 @@ import { PaperCard, LiftedFace } from "@/components/study/PaperCard"
 import { ProgressBar } from "@/components/ui/ProgressBar"
 import { FlexGap } from "@/components/study/press"
 import { useTheme } from "@/theme/ThemeProvider"
+import { useContentFaces } from "@/hooks/useContentFaces"
 import { useContentLayout } from "@/theme/layout"
 import { paperType, families } from "@/theme/paperType"
 import { progress } from "@/api/endpoints"
@@ -61,6 +62,7 @@ interface Challenge {
  */
 export function Challenges() {
   const { paper } = useTheme()
+  const faces = useContentFaces()
   const t = useT()
   const router = useRouter()
   const { column: columnWidth } = useContentLayout()
@@ -374,6 +376,7 @@ function ChallengeRow({
   state: State
 }) {
   const { paper } = useTheme()
+  const faces = useContentFaces()
   const t = useT()
   const router = useRouter()
   // A collapsing row can't shrink a container's gap, so it takes its own margin
@@ -443,7 +446,7 @@ function ChallengeRow({
             >
               <Text
                 style={{
-                  fontFamily: families.hanziSc,
+                  fontFamily: faces.hanzi,
                   fontSize: 20,
                   color: paper.ink,
                 }}

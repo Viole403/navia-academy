@@ -13,6 +13,7 @@ import { useQuery } from "@tanstack/react-query"
 import { PaperCard, QuietPill } from "@/components/study/PaperCard"
 import { FlexGap } from "@/components/study/press"
 import { useTheme } from "@/theme/ThemeProvider"
+import { useContentFaces } from "@/hooks/useContentFaces"
 import { useContentLayout } from "@/theme/layout"
 import { paperType, families, hanziType } from "@/theme/paperType"
 import { loadCharacters } from "@/lib/content-data"
@@ -39,6 +40,7 @@ import type { HanziChar } from "@/types/api"
  */
 export function Radicals() {
   const { paper } = useTheme()
+  const faces = useContentFaces()
   const t = useT()
   const router = useRouter()
   const language = useOnboardingStore((s) => s.language)
@@ -238,7 +240,7 @@ export function Radicals() {
                       >
                         <Text
                           style={{
-                            fontFamily: families.hanziSc,
+                            fontFamily: faces.hanzi,
                             ...hanziType(26),
                             color: paper.ink,
                           }}
