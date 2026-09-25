@@ -1,1 +1,1 @@
-export { VocabIndex as default } from "@/screens/VocabIndex"
+export { Dictionary as default } from "@/screens/Dictionary"

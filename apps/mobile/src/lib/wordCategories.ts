@@ -1,0 +1,82 @@
+import type { VocabWord } from "@/types/api"
+
+/**
+ * Word categories.
+ *
+ * The reference has six hand-curated `WordCategory` entries; this repo's content
+ * has none, but it does carry `pos` (14 values) and free-form `tags`. These are
+ * the reference's six, derived — so the category browser is a real grouping of
+ * the bank rather than a decorative row of tiles that filter nothing.
+ *
+ * Every word lands in exactly one bucket. A `tags`-based theme is checked before
+ * the `pos` fallback so "time" and "places" survive the flattening rather than
+ * disappearing into `other`.
+ */
+export type CategoryId =
+  "verbs" | "nouns" | "descriptors" | "grammar" | "timePlace" | "other"
+
+export interface Category {
+  id: CategoryId
+  /** Glyph shown in the tile. */
+  glyph: string
+  /** i18n key for the label — the tiles are labels, not data. */
+  labelKey: string
+  /** Pastel fill for the tile, resolved against the live paper palette. */
+  fill: string
+}
+
+const POS_BUCKETS: Record<string, CategoryId> = {
+  verb: "verbs",
+  "modal verb": "verbs",
+  noun: "nouns",
+  "measure word": "nouns",
+  numeral: "nouns",
+  pronoun: "nouns",
+  adjective: "descriptors",
+  adverb: "descriptors",
+  conjunction: "grammar",
+  preposition: "grammar",
+  particle: "grammar",
+  interjection: "grammar",
+  phrase: "other",
+  other: "other",
+}
+
+const TAG_BUCKETS: Record<string, CategoryId> = {
+  time: "timePlace",
+  places: "timePlace",
+  location: "timePlace",
+  school: "nouns",
+  work: "nouns",
+  family: "nouns",
+  people: "nouns",
+  food: "nouns",
+  numbers: "nouns",
+  money: "nouns",
+  body: "nouns",
+  nature: "nouns",
+}
+
+export function categoryOf(word: VocabWord): CategoryId {
+  const tags = (word.tags ?? []) as string[]
+  for (const tag of tags) {
+    const hit = TAG_BUCKETS[tag.toLowerCase()]
+    if (hit) return hit
+  }
+  const pos = typeof word.pos === "string" ? word.pos.toLowerCase() : ""
+  return POS_BUCKETS[pos] ?? "other"
+}
+
+export const CATEGORIES: Category[] = [
+  { id: "verbs", glyph: "動", labelKey: "cat.verbs", fill: "#E8F4E9" },
+  { id: "nouns", glyph: "名", labelKey: "cat.nouns", fill: "#FDECE8" },
+  {
+    id: "descriptors",
+    glyph: "形",
+    labelKey: "cat.descriptors",
+    fill: "#F3EEFC",
+  },
+  { id: "grammar", glyph: "法", labelKey: "cat.grammar", fill: "#FFF4D9" },
+  { id: "timePlace", glyph: "時", labelKey: "cat.timePlace", fill: "#E7F1F7" },
+  { id: "other", glyph: "其", labelKey: "cat.other", fill: "#F1EFE9" },
+]

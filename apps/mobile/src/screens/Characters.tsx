@@ -1,20 +1,19 @@
 import { useMemo, useState } from "react"
 import {
-  ActivityIndicator,
   Pressable,
   ScrollView,
   Text,
+  TextInput,
   View,
+  useWindowDimensions,
 } from "react-native"
+import { SafeAreaView } from "react-native-safe-area-context"
+import { useRouter } from "expo-router"
 import { useQuery } from "@tanstack/react-query"
-import { Screen } from "@/components/ui/Screen"
-import { Chip } from "@/components/ui/Chip"
-import { EmptyState } from "@/components/ui/EmptyState"
-import { Input } from "@/components/ui/Input"
-import { StudyCard, SectionHeader } from "@/components/study/StudyCard"
-import { CONTENT_MAX, spacing, studyType } from "@/components/study/tokens"
+import { PaperCard, QuietPill } from "@/components/study/PaperCard"
+import { FlexGap } from "@/components/study/press"
 import { useTheme } from "@/theme/ThemeProvider"
-import { fonts } from "@/theme/typography"
+import { paperType, families, hanziType } from "@/theme/paperType"
 import { loadCharacters } from "@/lib/content-data"
 import { isCharScript, motifChar } from "@/lib/languages"
 import { useOnboardingStore } from "@/store/onboarding"
@@ -22,209 +21,255 @@ import { useT } from "@/i18n"
 import { tick } from "@/utils/feedback"
 import type { HanziChar } from "@/types/api"
 
+const CHR_CONTENT_MAX = 430
+
 /**
- * /characters — read-only teaching set (web parity: /characters).
- * Ported from Chinese-Easy `Radicals`: radical chips + search + grid,
- * detail expands inline (strokes · radical · meaning). Never added to
- * My Words — these are reference, not vocabulary.
+ * The character grid.
+ *
+ * Tiles are **self-sizing** (glyph, reading, padding) with a fixed *width*, so
+ * three and a bit fit and the row visibly continues to invite a swipe. A fixed
+ * height here would be the full tile plus a strip of empty tile beneath every
+ * one of them.
  */
 export function Characters() {
-  const { theme } = useTheme()
+  const { paper } = useTheme()
   const t = useT()
+  const router = useRouter()
   const language = useOnboardingStore((s) => s.language)
+  const { width } = useWindowDimensions()
+  const columnWidth = Math.min(width, CHR_CONTENT_MAX)
 
-  const [search, setSearch] = useState("")
-  const [radical, setRadical] = useState<string | null>(null)
-  const [openId, setOpenId] = useState<string | null>(null)
+  const [query, setQuery] = useState("")
 
   const charsQ = useQuery({
     queryKey: ["characters", language],
     queryFn: () => loadCharacters(language),
   })
 
-  const radicals = useMemo(() => {
-    const m = new Set<string>()
-    for (const c of charsQ.data ?? []) if (c.radical) m.add(c.radical)
-    return [...m].sort()
-  }, [charsQ.data])
-
   const filtered = useMemo(() => {
-    const q = search.trim().toLowerCase()
-    return (charsQ.data ?? [])
+    const q = query.trim().toLowerCase()
+    const all = charsQ.data ?? []
+    if (!q) return all.slice(0, 120)
+    return all
       .filter((c) => {
-        if (radical && c.radical !== radical) return false
-        if (!q) return true
-        const glyph = (c.char ?? c.hanzi ?? "").toLowerCase()
+        const glyph = String(c.char ?? c.hanzi ?? "")
         return (
-          glyph.includes(q) ||
+          glyph.toLowerCase().includes(q) ||
           (c.pinyin ?? "").toLowerCase().includes(q) ||
           (c.meaning ?? "").toLowerCase().includes(q)
         )
       })
       .slice(0, 120)
-  }, [charsQ.data, search, radical])
+  }, [charsQ.data, query])
 
   if (!isCharScript(language)) {
     return (
-      <Screen>
-        <EmptyState title={t("lib.noChars")} glyph={motifChar(language)} />
-      </Screen>
+      <SafeAreaView style={{ flex: 1, backgroundColor: paper.paper }}>
+        <View style={{ padding: 24, gap: 8 }}>
+          <Text
+            style={[
+              paperType.cardTitle,
+              { color: paper.ink, fontFamily: families.nunitoExtraBold },
+            ]}
+          >
+            {t("lib.noChars")}
+          </Text>
+          <Pressable onPress={() => router.back()}>
+            <Text
+              style={[
+                paperType.link,
+                { color: paper.coral, fontFamily: families.nunitoBold },
+              ]}
+            >
+              ← {t("common.back")}
+            </Text>
+          </Pressable>
+        </View>
+      </SafeAreaView>
     )
   }
 
   return (
-    <Screen>
+    <SafeAreaView
+      style={{ flex: 1, backgroundColor: paper.paper }}
+      edges={["top"]}
+    >
       <View
         style={{
-          width: "100%",
-          maxWidth: CONTENT_MAX,
-          alignSelf: "center",
-          gap: spacing.lg,
+          flexDirection: "row",
+          alignItems: "center",
+          justifyContent: "space-between",
+          paddingHorizontal: 20,
+          paddingVertical: 12,
         }}
       >
-        <SectionHeader kicker={t("char.kicker")} title={t("char.title")} />
-        <Input
-          placeholder={t("char.search")}
-          value={search}
-          onChangeText={setSearch}
-          autoCapitalize="none"
-          autoCorrect={false}
-        />
-        <ScrollView
-          horizontal
-          showsHorizontalScrollIndicator={false}
-          contentContainerStyle={{ gap: spacing.sm }}
+        <Pressable
+          onPress={() =>
+            router.canGoBack()
+              ? router.back()
+              : router.replace("/(tabs)/learn" as never)
+          }
         >
-          <Chip
-            label={t("char.allRadicals")}
-            selected={radical === null}
-            onPress={() => {
-              tick()
-              setRadical(null)
+          <Text
+            style={[
+              paperType.link,
+              { color: paper.inkSoft, fontFamily: families.nunitoBold },
+            ]}
+          >
+            ← {t("common.back")}
+          </Text>
+        </Pressable>
+        <Pressable
+          onPress={() => {
+            tick()
+            router.push("/radicals")
+          }}
+        >
+          <Text
+            style={[
+              paperType.link,
+              { color: paper.greenDark, fontFamily: families.nunitoBold },
+            ]}
+          >
+            {t("dict.radicals")} →
+          </Text>
+        </Pressable>
+      </View>
+
+      <ScrollView
+        contentContainerStyle={{
+          paddingBottom: 40,
+          flexGrow: 1,
+          alignItems: "center",
+        }}
+        keyboardShouldPersistTaps="handled"
+        showsVerticalScrollIndicator={false}
+      >
+        <View style={{ width: columnWidth, padding: 20, gap: 14 }}>
+          <View style={{ gap: 4 }}>
+            <Text
+              style={[
+                paperType.statLabel,
+                { color: paper.inkMuted, fontFamily: families.nunitoSemiBold },
+              ]}
+            >
+              {t("char.kicker")}
+            </Text>
+            <Text
+              style={[
+                paperType.cardTitle,
+                { color: paper.ink, fontFamily: families.nunitoExtraBold },
+              ]}
+            >
+              {t("char.title")}
+            </Text>
+          </View>
+
+          <TextInput
+            value={query}
+            onChangeText={setQuery}
+            placeholder={t("char.search")}
+            placeholderTextColor={paper.inkMuted}
+            autoCapitalize="none"
+            autoCorrect={false}
+            style={{
+              backgroundColor: paper.card,
+              borderColor: paper.line,
+              borderWidth: 1,
+              borderRadius: paper.radius.inner,
+              paddingHorizontal: 12,
+              paddingVertical: 11,
+              fontFamily: families.inter,
+              fontSize: 14.5,
+              color: paper.ink,
             }}
           />
-          {radicals.map((r) => (
-            <Chip
-              key={r}
-              label={r}
-              selected={radical === r}
-              onPress={() => {
-                tick()
-                setRadical(radical === r ? null : r)
-              }}
-            />
-          ))}
-        </ScrollView>
 
-        {charsQ.isLoading ? (
-          <ActivityIndicator color={theme.accent} />
-        ) : filtered.length === 0 ? (
-          <EmptyState
-            title={t("learn.nothingHere")}
-            message={t("learn.tryDifferent")}
-            glyph={motifChar(language)}
-          />
-        ) : (
-          <View
-            style={{ flexDirection: "row", flexWrap: "wrap", gap: spacing.sm }}
-          >
+          <View style={{ flexDirection: "row", flexWrap: "wrap", gap: 8 }}>
             {filtered.map((c) => {
               const glyph = c.char ?? c.hanzi ?? c.id
-              const open = openId === c.id
               return (
                 <Pressable
                   key={c.id}
                   onPress={() => {
                     tick()
-                    setOpenId(open ? null : c.id)
+                    router.push({
+                      pathname: "/character/[char]",
+                      params: { char: glyph },
+                    })
                   }}
                   style={{
-                    width: "31%",
-                    minWidth: 96,
-                    flexGrow: 1,
-                    backgroundColor: open ? theme.accent + "14" : theme.surface,
-                    borderColor: open ? theme.accent : theme.border,
-                    borderWidth: 1,
+                    width: 78,
                     borderRadius: 14,
-                    padding: spacing.md,
+                    borderWidth: 1,
+                    borderColor: paper.line,
+                    backgroundColor: paper.surface.week.fill,
+                    padding: 10,
                     alignItems: "center",
                     gap: 2,
                   }}
                 >
                   <Text
                     style={{
-                      fontFamily: fonts.serif,
-                      fontSize: 40,
-                      lineHeight: 48,
-                      color: theme.text,
+                      fontFamily: families.hanziSc,
+                      ...hanziType(30),
+                      color: paper.ink,
                     }}
                   >
                     {glyph}
                   </Text>
                   {!!c.pinyin && (
                     <Text
-                      style={[
-                        studyType.statLabel,
-                        {
-                          color: theme.accent,
-                          fontFamily: fonts.sans,
-                          fontWeight: "700",
-                        },
-                      ]}
+                      numberOfLines={1}
+                      style={{
+                        color: paper.coral,
+                        fontFamily: families.nunitoBold,
+                        fontSize: 10,
+                      }}
                     >
                       {c.pinyin}
                     </Text>
-                  )}
-                  {open && (
-                    <View
-                      style={{ gap: 2, alignItems: "center", paddingTop: 4 }}
-                    >
-                      {!!c.meaning && (
-                        <Text
-                          style={[
-                            studyType.statLabel,
-                            {
-                              color: theme.text,
-                              fontFamily: fonts.sans,
-                              textAlign: "center",
-                            },
-                          ]}
-                          numberOfLines={2}
-                        >
-                          {c.meaning}
-                        </Text>
-                      )}
-                      <Text
-                        style={[
-                          studyType.statLabel,
-                          {
-                            color: theme.textMuted,
-                            fontFamily: fonts.sans,
-                            textAlign: "center",
-                          },
-                        ]}
-                      >
-                        {[
-                          c.strokes ? `${c.strokes} ${t("lib.strokes")}` : "",
-                          c.radical ? `${t("lib.radical")} ${c.radical}` : "",
-                        ]
-                          .filter(Boolean)
-                          .join(" · ")}
-                      </Text>
-                    </View>
                   )}
                 </Pressable>
               )
             })}
           </View>
-        )}
 
-        <StudyCard
-          tone="neutral"
-          title={t("char.meaning")}
-          body={t("learn.charsDesc")}
-        />
-      </View>
-    </Screen>
+          {filtered.length === 0 && !charsQ.isLoading ? (
+            <PaperCard tone="plain">
+              <Text
+                style={[
+                  paperType.cardBody,
+                  {
+                    color: paper.inkMuted,
+                    fontFamily: families.nunitoSemiBold,
+                  },
+                ]}
+              >
+                {t("learn.nothingHere")}
+              </Text>
+            </PaperCard>
+          ) : null}
+
+          <PaperCard
+            tone="challenge"
+            title={t("dict.radicals")}
+            body={t("dict.radicalsBody")}
+          />
+
+          <QuietPill
+            title={t("char.openAll")}
+            tone="challenge"
+            onPress={() => {
+              tick()
+              router.push("/radicals")
+            }}
+          />
+
+          <FlexGap min={0} />
+          <Text style={{ opacity: 0 }}>{motifChar(language)}</Text>
+        </View>
+      </ScrollView>
+    </SafeAreaView>
   )
 }

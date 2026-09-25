@@ -1,0 +1,458 @@
+import { useState } from "react"
+import {
+  ActivityIndicator,
+  Pressable,
+  Text,
+  View,
+  useWindowDimensions,
+} from "react-native"
+import { Stack, useLocalSearchParams } from "expo-router"
+import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query"
+import { DetailShell } from "@/components/study/DetailShell"
+import { PaperCard, LiftedFace } from "@/components/study/PaperCard"
+import { HanziStage } from "@/components/hanzi/HanziStage"
+import { useTheme } from "@/theme/ThemeProvider"
+import { paperType, families, hanziFont, hanziType } from "@/theme/paperType"
+import { progress } from "@/api/endpoints"
+import { findWord } from "@/lib/content-data"
+import { isCharScript, headword, reading } from "@/lib/languages"
+import { useOnboardingStore } from "@/store/onboarding"
+import { useTts } from "@/hooks/useTts"
+import { useT } from "@/i18n"
+import { playSound } from "@/utils/sound"
+import { tap, thud } from "@/utils/feedback"
+import type { VocabWord } from "@/types/api"
+
+interface Example {
+  hanzi?: string
+  text?: string
+  pinyin?: string
+  zhuyin?: string
+  translation?: string
+  translation_id?: string
+  audio?: string
+}
+
+/**
+ * Word detail.
+ *
+ * The reference's screen shows **one** gloss on its learning surfaces and every
+ * sense on its detail card, because a CC-CEDICT-derived bank lists every
+ * attested sense and seven of them is useless on a flashcard. This repo's content
+ * already separates the two: `translation` is the single canonical gloss the quiz
+ * and answer logic use, and `meanings[]` is the full sense list — 1,536 of the
+ * 10,894 words carry more than one, which is exactly the case that card exists
+ * for. So: one gloss in the masthead, every sense below it.
+ */
+export function WordDetail() {
+  const { paper } = useTheme()
+  const t = useT()
+  const qc = useQueryClient()
+  const { id } = useLocalSearchParams<{ id?: string }>()
+  const language = useOnboardingStore((s) => s.language)
+  const tts = useTts()
+  const [strokesOpen, setStrokesOpen] = useState(false)
+  const [hintKey, setHintKey] = useState(0)
+  const [revealKey, setRevealKey] = useState(0)
+
+  const wordQ = useQuery({
+    queryKey: ["vocab-word", id],
+    queryFn: async () => (await findWord(id as string)).word,
+    enabled: !!id,
+    staleTime: 60_000,
+  })
+  const progressQ = useQuery({ queryKey: ["progress"], queryFn: progress.get })
+  const w = wordQ.data
+  const isSaved = (progressQ.data?.saved_word_ids ?? []).includes(id ?? "")
+
+  const saveM = useMutation({
+    mutationFn: async () => {
+      const current = progressQ.data?.saved_word_ids ?? []
+      const next = isSaved
+        ? current.filter((x) => x !== id)
+        : [...current, id as string]
+      return progress.update({ saved_word_ids: next })
+    },
+    onSuccess: () => qc.invalidateQueries({ queryKey: ["progress"] }),
+  })
+
+  const addM = useMutation({
+    mutationFn: () => progress.ensureCard(id as string, "word"),
+    onSuccess: () => {
+      thud()
+      playSound("chime")
+      qc.invalidateQueries({ queryKey: ["due-cards"] })
+      qc.invalidateQueries({ queryKey: ["srs-stats"] })
+    },
+  })
+
+  if (wordQ.isLoading) {
+    return (
+      <DetailShell title={t("common.loading")} fallback="/vocab">
+        <ActivityIndicator color={paper.coral} />
+      </DetailShell>
+    )
+  }
+
+  if (!w) {
+    return (
+      <DetailShell title={t("vocab.notFound")} fallback="/vocab">
+        <Text
+          style={[
+            paperType.cardBody,
+            { color: paper.inkMuted, fontFamily: families.nunitoSemiBold },
+          ]}
+        >
+          {t("vocab.notInDict")}
+        </Text>
+      </DetailShell>
+    )
+  }
+
+  const senses = (w.meanings as string[] | undefined) ?? []
+  const examples = (w.examples as Example[] | undefined) ?? []
+  const charScript = isCharScript(language) && (w.hanzi?.length ?? 0) > 0
+
+  return (
+    <DetailShell
+      title={headword(w)}
+      kicker={String(w.examMappings?.hsk ?? w.examMappings?.tocfl ?? "")}
+      fallback="/vocab"
+      headerRight={
+        <Pressable onPress={() => saveM.mutate()} disabled={saveM.isPending}>
+          <Text
+            style={{
+              color: isSaved ? paper.coral : paper.inkMuted,
+              fontFamily: families.nunitoExtraBold,
+              fontSize: 10.5,
+              letterSpacing: 0.6,
+            }}
+          >
+            {isSaved ? t("vocab.saved") : t("vocab.save")}
+          </Text>
+        </Pressable>
+      }
+      footer={
+        <View style={{ flexDirection: "row", gap: 8 }}>
+          <View style={{ flex: 1 }}>
+            <LiftedFace
+              title={
+                tts.playing || tts.loading
+                  ? t("vocab.playing")
+                  : t("vocab.listen")
+              }
+              face={paper.lavender}
+              small
+              onPress={() => tts.play(headword(w))}
+            />
+          </View>
+          <View style={{ flex: 1 }}>
+            <LiftedFace
+              title={addM.isPending ? t("vocab.adding") : t("vocab.addReview")}
+              face={paper.green}
+              small
+              onPress={() => {
+                tap()
+                addM.mutate()
+              }}
+            />
+          </View>
+        </View>
+      }
+    >
+      {/* Masthead: the glyph, its reading, its one gloss. */}
+      <PaperCard tone="word">
+        <View style={{ alignItems: "center", gap: 6, paddingVertical: 8 }}>
+          <Text
+            style={{
+              fontFamily: hanziFont("simplified"),
+              ...hanziType(96),
+              color: paper.ink,
+              textAlign: "center",
+            }}
+          >
+            {headword(w)}
+          </Text>
+          <Text
+            style={[
+              paperType.cardBody,
+              { color: paper.coral, fontFamily: families.nunitoBold },
+            ]}
+          >
+            {reading(w) ?? "—"}
+          </Text>
+          {!!w.zhuyin && (
+            <Text style={[paperType.bodySm, { color: paper.inkSoft }]}>
+              {String(w.zhuyin)}
+            </Text>
+          )}
+          {!!w.traditional && (
+            <Text
+              style={[
+                paperType.statLabel,
+                { color: paper.inkMuted, fontFamily: families.nunitoSemiBold },
+              ]}
+            >
+              {t("vocab.traditional")} · {w.traditional}
+            </Text>
+          )}
+          <Text
+            style={[paperType.prose, { color: paper.ink, textAlign: "center" }]}
+          >
+            {String(w.translation ?? "")}
+          </Text>
+        </View>
+      </PaperCard>
+
+      {/* Every sense, one per line — the detail card's whole job. */}
+      {senses.length > 0 && (
+        <PaperCard tone="plain" title={t("wd.senses")}>
+          <View style={{ gap: 6 }}>
+            {senses.map((sense, i) => (
+              <View key={i} style={{ flexDirection: "row", gap: 8 }}>
+                <Text
+                  style={{
+                    color: paper.greenDark,
+                    fontFamily: families.nunitoBold,
+                    fontSize: 12,
+                  }}
+                >
+                  {i + 1}
+                </Text>
+                <Text style={[paperType.bodySm, { color: paper.ink, flex: 1 }]}>
+                  {sense}
+                </Text>
+              </View>
+            ))}
+          </View>
+        </PaperCard>
+      )}
+
+      {/* Examples, each with its own reading and translation. */}
+      {examples.length > 0 ? (
+        <PaperCard tone="week" title={t("wd.examples")}>
+          <View style={{ gap: 14 }}>
+            {examples.slice(0, 3).map((e, i) => (
+              <Pressable
+                key={i}
+                onPress={() => tts.play(e.hanzi ?? e.text ?? "")}
+                style={{ gap: 3 }}
+              >
+                <Text
+                  style={{
+                    fontFamily: hanziFont("simplified"),
+                    ...hanziType(20),
+                    color: paper.ink,
+                  }}
+                >
+                  {e.hanzi ?? e.text ?? ""}
+                </Text>
+                {!!e.pinyin && (
+                  <Text
+                    style={[
+                      paperType.statLabel,
+                      {
+                        color: paper.coral,
+                        fontFamily: families.nunitoSemiBold,
+                      },
+                    ]}
+                  >
+                    {e.pinyin}
+                  </Text>
+                )}
+                {!!e.translation && (
+                  <Text style={[paperType.proseSm, { color: paper.inkSoft }]}>
+                    {e.translation}
+                  </Text>
+                )}
+              </Pressable>
+            ))}
+          </View>
+        </PaperCard>
+      ) : null}
+
+      {/* Stroke order, behind a sheet so the detail page stays scannable. */}
+      {charScript ? (
+        <Pressable
+          onPress={() => {
+            tap()
+            setStrokesOpen(true)
+          }}
+        >
+          <PaperCard
+            tone="challenge"
+            title={t("wd.strokeOrder")}
+            body={t("wd.strokeBody")}
+          >
+            <Text
+              style={[
+                paperType.link,
+                { color: paper.lavender, fontFamily: families.nunitoBold },
+              ]}
+            >
+              {t("wd.open")} →
+            </Text>
+          </PaperCard>
+        </Pressable>
+      ) : null}
+
+      {/* Exam mapping, if this word is mapped at all. */}
+      {w.examMappings && Object.keys(w.examMappings).length > 0 ? (
+        <PaperCard tone="plain" title={t("vocab.includedIn")}>
+          <View style={{ flexDirection: "row", flexWrap: "wrap", gap: 8 }}>
+            {Object.entries(w.examMappings)
+              .filter(([k]) => k !== "metadata")
+              .map(([exam, lv]) => (
+                <View
+                  key={`${exam}-${String(lv)}`}
+                  style={{
+                    paddingHorizontal: 10,
+                    paddingVertical: 5,
+                    borderWidth: 1,
+                    borderColor: paper.line,
+                    borderRadius: 999,
+                  }}
+                >
+                  <Text
+                    style={{
+                      color: paper.inkMuted,
+                      fontFamily: families.nunitoBold,
+                      fontSize: 11,
+                      letterSpacing: 0.5,
+                    }}
+                  >
+                    {exam.toUpperCase()} {String(lv).toUpperCase()}
+                  </Text>
+                </View>
+              ))}
+          </View>
+        </PaperCard>
+      ) : null}
+
+      {strokesOpen ? (
+        <StrokeSheet
+          word={headword(w)}
+          onClose={() => setStrokesOpen(false)}
+          onHint={() => setHintKey((k) => k + 1)}
+          onReveal={() => setRevealKey((k) => k + 1)}
+          hintKey={hintKey}
+          revealKey={revealKey}
+        />
+      ) : null}
+      <Stack.Screen options={{ headerShown: false }} />
+    </DetailShell>
+  )
+}
+
+/**
+ * The stroke-order sheet.
+ *
+ * The resting character derives its size rather than using a fixed 120pt with
+ * `adjustsFontSizeToFit`: that prop is iOS-only, so on Android any word wide
+ * enough simply lost its tail off the edge. CJK glyphs are full-width, which
+ * makes available-width ÷ character count a good bound, capped at the design
+ * size and against window height.
+ */
+function StrokeSheet({
+  word,
+  onClose,
+  onHint,
+  onReveal,
+  hintKey,
+  revealKey,
+}: {
+  word: string
+  onClose: () => void
+  onHint: () => void
+  onReveal: () => void
+  hintKey: number
+  revealKey: number
+}) {
+  const { paper } = useTheme()
+  const t = useT()
+  const { width, height } = useWindowDimensions()
+  const chars = [...word].length || 1
+  const size = Math.min(
+    150,
+    Math.floor((width - 80) / chars),
+    Math.floor(height * 0.28)
+  )
+
+  return (
+    <View
+      style={{
+        position: "absolute",
+        top: 0,
+        left: 0,
+        right: 0,
+        bottom: 0,
+        backgroundColor: paper.ink + "66",
+        justifyContent: "center",
+        alignItems: "center",
+      }}
+    >
+      <Pressable onPress={onClose} style={{ position: "absolute", inset: 0 }} />
+      <PaperCard tone="plain" style={{ width: "86%" }}>
+        <View style={{ gap: 12 }}>
+          <View
+            style={{
+              flexDirection: "row",
+              justifyContent: "space-between",
+              alignItems: "center",
+            }}
+          >
+            <Text
+              style={[
+                paperType.cardTitleSm,
+                { color: paper.ink, fontFamily: families.nunitoExtraBold },
+              ]}
+            >
+              {t("wd.strokeOrder")}
+            </Text>
+            <Pressable onPress={onClose}>
+              <Text style={{ color: paper.inkMuted, fontSize: 15 }}>✕</Text>
+            </Pressable>
+          </View>
+
+          <View
+            style={{
+              height: size + 24,
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
+            <HanziStage
+              character={word}
+              mode="demo"
+              showOutline
+              showGuides
+              hintKey={hintKey}
+              revealKey={revealKey}
+              maxSize={size}
+            />
+          </View>
+
+          <View style={{ flexDirection: "row", gap: 8 }}>
+            <View style={{ flex: 1 }}>
+              <LiftedFace
+                title={t("wd.hint")}
+                face={paper.surface.week.fill}
+                textColor={paper.ink}
+                small
+                onPress={onHint}
+              />
+            </View>
+            <View style={{ flex: 1 }}>
+              <LiftedFace
+                title={t("wd.reveal")}
+                face={paper.lavender}
+                small
+                onPress={onReveal}
+              />
+            </View>
+          </View>
+        </View>
+      </PaperCard>
+    </View>
+  )
+}
