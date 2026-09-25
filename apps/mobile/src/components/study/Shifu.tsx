@@ -47,7 +47,7 @@ export function Shifu({
       }
     >
       <Image
-        source={require("@/assets/study-art/images/mascot-shifu.png")}
+        source={require("@assets/study-art/images/mascot-shifu.png")}
         style={{
           width: size,
           height: size,

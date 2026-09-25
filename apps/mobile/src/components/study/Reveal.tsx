@@ -80,7 +80,7 @@ export function useReveal({
 export function useTypewriter(
   total: number,
   run: number,
-  perChar = entranceScore.typingPerChar
+  perChar: number = entranceScore.typingPerChar
 ): number {
   const [n, setN] = useState(total === 0 ? 0 : 0)
   useEffect(() => {

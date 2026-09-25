@@ -1,8 +1,6 @@
 import { useMemo, useState } from "react"
 import {
   ActivityIndicator,
-  Animated,
-  Pressable,
   RefreshControl,
   ScrollView,
   Text,
@@ -12,41 +10,58 @@ import {
 import { SafeAreaView } from "react-native-safe-area-context"
 import { useRouter } from "expo-router"
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query"
-import { Motif } from "@/components/ui/Motif"
-import { EmptyState } from "@/components/ui/EmptyState"
-import { ProgressBar } from "@/components/ui/ProgressBar"
-import { StudyCard } from "@/components/study/StudyCard"
-import { LiftedButton } from "@/components/study/LiftedButton"
-import { SpeechBubble, WeekStrip } from "@/components/study/StudyBits"
+import { DashboardHero } from "@/components/study/DashboardHero"
+import {
+  ReviewCard,
+  NewWordCard,
+  ChallengesSummaryCard,
+  WeeklyActivityCard,
+} from "@/components/study/dashboardCards"
+import { LiftedFace } from "@/components/study/PaperCard"
+import { FlexGap } from "@/components/study/press"
 import {
   useEntranceRun,
   useReveal,
   useTypewriter,
 } from "@/components/study/Reveal"
-import {
-  CONTENT_MAX,
-  entranceScore,
-  spacing,
-  studyType,
-} from "@/components/study/tokens"
 import { useTheme } from "@/theme/ThemeProvider"
-import { fonts, type } from "@/theme/typography"
+import { paperType, families } from "@/theme/paperType"
 import { exam, progress } from "@/api/endpoints"
 import { loadVocabulary } from "@/lib/content-data"
 import { useAuthStore } from "@/store/auth"
 import { useOnboardingStore } from "@/store/onboarding"
-import { headword, motifChar, reading } from "@/lib/languages"
+import { headword, reading } from "@/lib/languages"
 import { useLocaleStore, useT } from "@/i18n"
-import { tap } from "@/utils/feedback"
+import { playSound } from "@/utils/sound"
+import { careful, tap } from "@/utils/feedback"
+
+/** Content column cap. These cards are phone-sized objects; wider centres. */
+const DASH_CONTENT_MAX = 430
+/** Trimmed from the reference's 320 to fit the first viewport on a 390×844. */
+const HERO_HEIGHT = 268
+const entrance = {
+  scenery: { at: 0, for: 560 },
+  greeting: { at: 170, for: 460 },
+  cards: { at: 360, for: 440, stagger: 90 },
+  shifu: { at: 600, for: 540 },
+  bubble: { at: 1120, for: 300 },
+  typingPerChar: 16,
+  backstop: 140,
+}
 
 /**
- * Today — composed like Chinese-Easy's Dashboard: a hero (greeting +
- * coach bubble) over pure-presentation cards (Review / New word /
- * Challenges / This week), each a function of numbers fetched above.
- * The whole column caps at CONTENT_MAX and centres on wider screens.
+ * Today — the Dashboard, rebuilt to the reference mockup.
+ *
+ * The scene assembles itself in the order a person would draw it: scenery
+ * first, then who is being spoken to, then what there is to do, then the coach's
+ * line typed on. Every card is a pure function of numbers fetched above; the
+ * wiring lives here and nowhere else.
+ *
+ * Coming back to this screen means coming back to the greeting, not to wherever
+ * the last visit left the scroll.
  */
 export default function HomeTab() {
-  const { theme } = useTheme()
+  const { paper } = useTheme()
   const router = useRouter()
   const qc = useQueryClient()
   const user = useAuthStore((s) => s.user)
@@ -54,16 +69,12 @@ export default function HomeTab() {
   const locale = useLocaleStore((s) => s.locale)
   const language = useOnboardingStore((s) => s.language)
   const { width } = useWindowDimensions()
-  const columnWidth = Math.min(width, CONTENT_MAX)
+  const columnWidth = Math.min(width, DASH_CONTENT_MAX)
 
   const progressQ = useQuery({ queryKey: ["progress"], queryFn: progress.get })
   const dueCardsQ = useQuery({
     queryKey: ["due-cards"],
     queryFn: () => progress.dueCards(),
-  })
-  const srsStatsQ = useQuery({
-    queryKey: ["srs-stats"],
-    queryFn: progress.srsStats,
   })
   const sessionsQ = useQuery({
     queryKey: ["study-sessions"],
@@ -79,13 +90,6 @@ export default function HomeTab() {
     staleTime: 86_400_000,
   })
 
-  const greeting = useMemo(() => {
-    const h = new Date().getHours()
-    if (h < 12) return t("home.morning")
-    if (h < 18) return t("home.afternoon")
-    return t("home.evening")
-  }, [t])
-
   const due = dueCardsQ.data?.length ?? 0
   const streak = progressQ.data?.streak ?? 0
   const todayKey = new Date().toISOString().slice(0, 10)
@@ -96,15 +100,15 @@ export default function HomeTab() {
       ),
     [sessionsQ.data, todayKey]
   )
+  const atRisk = streak > 0 && !studiedToday
 
   const coach = useMemo(() => {
-    if (due > 0) return `${due} ${t("home.reviewBody")}`
-    if (streak > 0 && !studiedToday) return t("home.coachRisk")
-    if (streak >= 3) return `${streak} ${t("home.coachStreak")}`
+    if (atRisk) return t("home.coachRisk")
+    if (streak >= 3) return t("home.coachStreak").replace("%d", String(streak))
     return t("home.coachDefault")
-  }, [due, streak, studiedToday, t])
+  }, [atRisk, streak, t])
 
-  // Deterministic word of the day from the real CDN bundle (was hardcoded).
+  // Deterministic word of the day from the real CDN bundle.
   const word = useMemo(() => {
     const all = vocabQ.data ?? []
     if (all.length === 0) return null
@@ -120,6 +124,7 @@ export default function HomeTab() {
     mutationFn: (id: string) => progress.ensureCard(id, "word"),
     onSuccess: (_, id) => {
       setAddedId(id)
+      playSound("chime")
       qc.invalidateQueries({ queryKey: ["due-cards"] })
       qc.invalidateQueries({ queryKey: ["srs-stats"] })
     },
@@ -127,44 +132,69 @@ export default function HomeTab() {
 
   const run = useEntranceRun()
   const gR = useReveal({
-    at: entranceScore.greeting.at,
-    duration: entranceScore.greeting.for,
+    at: entrance.greeting.at,
+    duration: entrance.greeting.for,
     run,
   })
   const c0 = useReveal({
-    at: entranceScore.cards.at,
-    duration: entranceScore.cards.for,
+    at: entrance.cards.at,
+    duration: entrance.cards.for,
     run,
   })
   const c1 = useReveal({
-    at: entranceScore.cards.at + entranceScore.cards.stagger,
-    duration: entranceScore.cards.for,
+    at: entrance.cards.at + entrance.cards.stagger,
+    duration: entrance.cards.for,
     run,
   })
   const c2 = useReveal({
-    at: entranceScore.cards.at + entranceScore.cards.stagger * 2,
-    duration: entranceScore.cards.for,
+    at: entrance.cards.at + entrance.cards.stagger * 2,
+    duration: entrance.cards.for,
     run,
   })
   const c3 = useReveal({
-    at: entranceScore.cards.at + entranceScore.cards.stagger * 3,
-    duration: entranceScore.cards.for,
+    at: entrance.cards.at + entrance.cards.stagger * 3,
+    duration: entrance.cards.for,
     run,
   })
-  const typed = useTypewriter(coach.length, run)
-  const isLoading = progressQ.isLoading || dueCardsQ.isLoading
+  const typed = useTypewriter(coach.length, run, entrance.typingPerChar)
 
+  const loading = progressQ.isLoading || dueCardsQ.isLoading
   const refreshing =
     progressQ.isRefetching || dueCardsQ.isRefetching || sessionsQ.isRefetching
 
+  /*
+   * A streak that is alive but untouched today is about to lapse. Warned once
+   * per mount — the hero is right there, so the buzz has something to point at
+   * rather than arriving out of nowhere.
+   */
+  const warned = useMemo(() => {
+    if (atRisk) {
+      careful()
+      return true
+    }
+    return false
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [atRisk])
+
+  const greeting = useMemo(() => {
+    const h = new Date().getHours()
+    const base =
+      h < 12
+        ? t("home.morning")
+        : h < 18
+          ? t("home.afternoon")
+          : t("home.evening")
+    return base.replace(",", "")
+  }, [t])
+
   return (
     <SafeAreaView
-      style={{ flex: 1, backgroundColor: theme.bg }}
+      style={{ flex: 1, backgroundColor: paper.paper }}
       edges={["top"]}
     >
       <ScrollView
         contentContainerStyle={{
-          paddingBottom: 48,
+          paddingBottom: 40,
           flexGrow: 1,
           alignItems: "center",
         }}
@@ -174,308 +204,138 @@ export default function HomeTab() {
             onRefresh={() => {
               progressQ.refetch()
               dueCardsQ.refetch()
-              srsStatsQ.refetch()
               sessionsQ.refetch()
             }}
-            tintColor={theme.accent}
+            tintColor={paper.coral}
           />
         }
       >
-        <View
-          style={{
-            width: columnWidth,
-            padding: spacing.screen,
-            gap: spacing.cardGap,
-          }}
-        >
-          {/* Hero */}
-          <Animated.View
-            style={{
-              opacity: gR.opacity,
-              transform: [{ translateX: gR.translate }],
-            }}
-          >
-            <View style={{ gap: spacing.md }}>
+        <View style={{ width: columnWidth, padding: 20, gap: 13 }}>
+          <DashboardHero
+            greeting={greeting}
+            name={user?.name?.split(" ")[0] ?? t("home.reader")}
+            message={coach}
+            typedChars={typed}
+            heroHeight={HERO_HEIGHT}
+          />
+
+          {loading ? (
+            <View style={{ paddingVertical: 40 }}>
+              <ActivityIndicator color={paper.coral} />
+            </View>
+          ) : (
+            <View style={{ gap: 13 }}>
               <View
                 style={{
-                  flexDirection: "row",
-                  justifyContent: "space-between",
-                  alignItems: "flex-start",
-                  gap: spacing.md,
+                  opacity: gR.opacity,
+                  transform: [{ translateX: gR.translate }],
                 }}
-              >
-                <View style={{ flex: 1, gap: spacing.sm }}>
-                  <Text style={[type.labelSm, { color: theme.textMuted }]}>
-                    {new Date().toLocaleDateString(
-                      locale === "id" ? "id-ID" : "en-US",
-                      { weekday: "long", month: "long", day: "numeric" }
-                    )}
-                  </Text>
-                  <Text
-                    style={[
-                      studyType.greeting,
-                      {
-                        color: theme.text,
-                        fontFamily: fonts.sans,
-                        fontWeight: "800",
-                      },
-                    ]}
-                  >
-                    {greeting},{"\n"}
-                    <Text
-                      style={{
-                        color: theme.accent,
-                        fontStyle: "italic",
-                        fontFamily: fonts.serif,
-                      }}
-                    >
-                      {user?.name?.split(" ")[0] ?? t("home.reader")}.
-                    </Text>
-                  </Text>
-                </View>
-                <Motif char={motifChar(language)} size={64} />
-              </View>
-              <SpeechBubble text={coach.slice(0, typed)} />
-              <View style={{ height: 1, backgroundColor: theme.border }} />
-            </View>
-          </Animated.View>
+              />
 
-          {isLoading ? (
-            <ActivityIndicator color={theme.accent} />
-          ) : (
-            <>
-              {/* Review */}
-              <Animated.View
+              <View
                 style={{
                   opacity: c0.opacity,
                   transform: [{ translateY: c0.translate }],
                 }}
               >
-                <StudyCard
-                  tone="review"
-                  tag={t("home.reviewTitle").toUpperCase()}
-                  title={t("home.reviewTitle")}
-                  body={
-                    due > 0
-                      ? `${due} ${t("home.reviewBody")}`
-                      : t("home.reviewBodyNone")
-                  }
-                >
-                  {due > 0 ? (
-                    <LiftedButton
-                      title={t("home.startReview")}
-                      onPress={() => {
-                        tap()
-                        router.push("/review")
-                      }}
-                    />
-                  ) : (
-                    <Pressable
-                      onPress={() => {
-                        tap()
-                        router.push("/(tabs)/learn")
-                      }}
-                    >
-                      <Text
-                        style={[
-                          studyType.link,
-                          {
-                            color: theme.accent,
-                            fontFamily: fonts.sans,
-                            fontWeight: "700",
-                          },
-                        ]}
-                      >
-                        {t("home.browseVocab")} →
-                      </Text>
-                    </Pressable>
-                  )}
-                </StudyCard>
-              </Animated.View>
+                <ReviewCard
+                  due={due}
+                  onStart={() => {
+                    tap()
+                    router.push("/review")
+                  }}
+                />
+              </View>
 
-              {/* New word */}
-              {showWord && word && (
-                <Animated.View
+              {showWord && word ? (
+                <View
                   style={{
                     opacity: c1.opacity,
                     transform: [{ translateY: c1.translate }],
                   }}
                 >
-                  <StudyCard
-                    tone="word"
-                    tag={t("home.newWordTitle").toUpperCase()}
-                    title={headword(word)}
-                    body={`${reading(word) ?? ""}${reading(word) ? " · " : ""}${String(word.translation ?? "")}`}
-                  >
-                    <Text
-                      style={{
-                        fontFamily: fonts.serif,
-                        fontSize: 64,
-                        lineHeight: 76,
-                        color: theme.text,
-                      }}
-                    >
-                      {headword(word)}
-                    </Text>
-                    {addedId === word.id ? (
-                      <Text
-                        style={[
-                          studyType.link,
-                          {
-                            color: theme.green,
-                            fontFamily: fonts.sans,
-                            fontWeight: "700",
-                          },
-                        ]}
-                      >
-                        {t("home.addedWord")}
-                      </Text>
-                    ) : (
-                      <View style={{ flexDirection: "row", gap: spacing.sm }}>
-                        <View style={{ flex: 1 }}>
-                          <LiftedButton
-                            small
-                            title={
-                              addM.isPending
-                                ? t("common.loading")
-                                : t("home.addWord")
-                            }
-                            onPress={() => {
-                              tap()
-                              addM.mutate(word.id)
-                            }}
-                          />
-                        </View>
-                        <Pressable
-                          onPress={() => {
-                            tap()
-                            setDismissed(true)
-                          }}
-                          style={{
-                            justifyContent: "center",
-                            paddingHorizontal: spacing.md,
-                          }}
-                        >
-                          <Text
-                            style={[
-                              studyType.link,
-                              {
-                                color: theme.textMuted,
-                                fontFamily: fonts.sans,
-                                fontWeight: "700",
-                              },
-                            ]}
-                          >
-                            {t("home.dismiss")}
-                          </Text>
-                        </Pressable>
-                      </View>
-                    )}
-                  </StudyCard>
-                </Animated.View>
-              )}
+                  <NewWordCard
+                    word={headword(word)}
+                    reading={reading(word)}
+                    gloss={String(word.translation ?? "")}
+                    added={addedId === word.id}
+                    adding={addM.isPending}
+                    onOpen={() => {
+                      tap()
+                      router.push({
+                        pathname: "/vocab/[id]",
+                        params: { id: word.id },
+                      })
+                    }}
+                    onAdd={() => {
+                      tap()
+                      addM.mutate(word.id)
+                    }}
+                    onDismiss={() => {
+                      tap()
+                      setDismissed(true)
+                    }}
+                  />
+                </View>
+              ) : null}
 
-              {/* Challenges */}
-              <Animated.View
+              <View
                 style={{
                   opacity: c2.opacity,
                   transform: [{ translateY: c2.translate }],
                 }}
               >
-                <StudyCard
-                  tone="challenge"
-                  tag={t("home.challengesTitle").toUpperCase()}
-                  title={`${streak} ${t("home.streak")}`}
-                  body={`${srsStatsQ.data?.due ?? 0} ${t("home.waiting")} · ${t("home.challengesBody")}`}
-                  onPress={() => {
+                <ChallengesSummaryCard
+                  streak={streak}
+                  due={due}
+                  onOpen={() => {
                     tap()
                     router.push("/challenges")
                   }}
-                >
-                  <Text
-                    style={[
-                      studyType.link,
-                      {
-                        color: theme.accent2,
-                        fontFamily: fonts.sans,
-                        fontWeight: "700",
-                      },
-                    ]}
-                  >
-                    {t("home.viewAll")} →
-                  </Text>
-                </StudyCard>
-              </Animated.View>
+                />
+              </View>
 
-              {/* This week */}
-              <Animated.View
+              <View
                 style={{
                   opacity: c3.opacity,
                   transform: [{ translateY: c3.translate }],
                 }}
               >
-                <StudyCard
-                  tone="week"
-                  tag={t("home.weekTitle").toUpperCase()}
-                  onPress={() => {
+                <WeeklyActivityCard
+                  sessions={sessionsQ.data ?? []}
+                  onOpen={() => {
                     tap()
                     router.push("/progress")
                   }}
-                >
-                  <WeekStrip sessions={sessionsQ.data ?? []} />
-                  <Text
-                    style={[
-                      studyType.link,
-                      {
-                        color: theme.green,
-                        fontFamily: fonts.sans,
-                        fontWeight: "700",
-                      },
-                    ]}
-                  >
-                    {t("home.viewProgress")} →
-                  </Text>
-                </StudyCard>
-              </Animated.View>
+                />
+              </View>
 
-              {/* Recommended exam */}
-              {recommendedQ.data && (
-                <StudyCard tone="neutral">
+              {recommendedQ.data ? (
+                <View style={{ gap: 8, marginTop: 4 }}>
                   <Text
                     style={[
-                      studyType.cardBody,
-                      { color: theme.textMuted, fontFamily: fonts.sans },
+                      paperType.label,
+                      {
+                        color: paper.inkMuted,
+                        fontFamily: families.interSemiBold,
+                      },
                     ]}
                   >
                     {t("home.recommendedExam")}
                   </Text>
-                  <LiftedButton
+                  <LiftedFace
                     title={`${t("home.start")} ${recommendedQ.data.examType.toUpperCase()} ${recommendedQ.data.examLevel}`}
+                    face={paper.coral}
                     onPress={() => {
                       tap()
                       router.push("/(tabs)/exam")
                     }}
                   />
-                </StudyCard>
-              )}
+                </View>
+              ) : null}
 
-              {/* Daily goal */}
-              <View style={{ gap: spacing.sm }}>
-                <ProgressBar
-                  value={studiedToday ? 1 : 0}
-                  height={3}
-                  tint={theme.accent}
-                />
-              </View>
-
-              {due === 0 && !recommendedQ.data && (
-                <EmptyState
-                  title={t("home.allCaughtUp")}
-                  message={t("home.caughtUpMsg")}
-                  glyph={motifChar(language)}
-                />
-              )}
-            </>
+              <FlexGap min={0} />
+            </View>
           )}
         </View>
       </ScrollView>

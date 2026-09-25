@@ -35,12 +35,12 @@ try {
 }
 
 const CLIPS = {
-  stroke: require("@/assets/sounds/stroke.wav"),
-  chime: require("@/assets/sounds/chime.wav"),
-  retry: require("@/assets/sounds/retry.wav"),
-  tap: require("@/assets/sounds/tap.wav"),
-  fanfare: require("@/assets/sounds/fanfare.wav"),
-  gong: require("@/assets/sounds/gong.wav"),
+  stroke: require("@assets/sounds/stroke.wav"),
+  chime: require("@assets/sounds/chime.wav"),
+  retry: require("@assets/sounds/retry.wav"),
+  tap: require("@assets/sounds/tap.wav"),
+  fanfare: require("@assets/sounds/fanfare.wav"),
+  gong: require("@assets/sounds/gong.wav"),
 } as const
 
 export type SoundName = keyof typeof CLIPS
