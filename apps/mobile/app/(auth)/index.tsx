@@ -1,134 +1,82 @@
-import { ScrollView, Text, View } from "react-native"
-import { SafeAreaView } from "react-native-safe-area-context"
+import { Text, View } from "react-native"
 import { useRouter } from "expo-router"
-import { Button } from "@/components/ui/Button"
-import { Enter } from "@/components/ui/Enter"
-import { Motif } from "@/components/ui/Motif"
+import { AuthShell } from "@/components/auth/AuthShell"
+import { Shifu } from "@/components/study/Shifu"
 import { useTheme } from "@/theme/ThemeProvider"
-import { fonts, type } from "@/theme/typography"
+import { useContentFaces } from "@/hooks/useContentFaces"
+import { type } from "@/theme/typography"
 import { languageInfo, motifChar, motifSub } from "@/lib/languages"
 import { useOnboardingStore } from "@/store/onboarding"
 import { useT } from "@/i18n"
+import { decorArt } from "@/components/study/art"
 
 export default function Welcome() {
   const { theme } = useTheme()
+  const faces = useContentFaces()
   const router = useRouter()
   const t = useT()
   const language = useOnboardingStore((s) => s.language)
   const info = languageInfo(language)
 
   return (
-    <SafeAreaView style={{ flex: 1, backgroundColor: theme.bg }}>
-      <ScrollView
-        contentContainerStyle={{
-          flexGrow: 1,
-          padding: 32,
-          gap: 24,
-          justifyContent: "space-between",
+    <AuthShell
+      kicker="Navia Academy"
+      title={`${t("welc.read")} ${info.name}`}
+      subtitle={t("welc.quote")}
+      art={decorArt.mountainsWide}
+      artKey="mountainsWide"
+      artHeight={190}
+      action={t("auth.createAccount")}
+      actionTone="green"
+      onAction={() => router.push("/(auth)/register")}
+      footer={
+        <Text
+          style={[type.bodySm, { color: theme.textMuted, textAlign: "center" }]}
+        >
+          {t("auth.haveAccount")}{" "}
+          <Text
+            onPress={() => router.push("/(auth)/login")}
+            style={{ color: theme.accent, fontWeight: "700" }}
+          >
+            {t("auth.signIn")}
+          </Text>
+        </Text>
+      }
+    >
+      <View
+        style={{
+          flex: 1,
+          alignItems: "center",
+          justifyContent: "center",
+          gap: 4,
         }}
-        showsVerticalScrollIndicator={false}
       >
-        {/* Masthead */}
-        <Enter index={0}>
-          <View style={{ gap: 32, marginTop: 24 }}>
-            <View
-              style={{
-                flexDirection: "row",
-                alignItems: "flex-start",
-                justifyContent: "space-between",
-              }}
-            >
-              <View style={{ flex: 1, gap: 12 }}>
-                <Text style={[type.labelSm, { color: theme.textMuted }]}>
-                  Navia Academy
-                </Text>
-                <Text
-                  style={[
-                    type.display,
-                    {
-                      color: theme.text,
-                    },
-                  ]}
-                >
-                  {t("welc.read")} {info.name}
-                  {"\n"}
-                  <Text style={{ color: theme.accent, fontStyle: "italic" }}>
-                    {t("welc.likePrint")}
-                  </Text>
-                </Text>
-              </View>
-              <Motif char={motifChar(language)} size={72} />
-            </View>
-
-            {/* Pull quote with hairline frame */}
-            <View
-              style={{
-                paddingVertical: 16,
-                borderTopWidth: 1,
-                borderBottomWidth: 1,
-                borderColor: theme.border,
-                gap: 8,
-              }}
-            >
-              <Text
-                style={{
-                  fontFamily: fonts.serif,
-                  fontStyle: "italic",
-                  fontSize: 18,
-                  lineHeight: 28,
-                  color: theme.text,
-                }}
-              >
-                “{t("welc.quote")}”
-              </Text>
-              <Text style={[type.caption, { color: theme.textMuted }]}>
-                {t("welc.quoteBy")}
-              </Text>
-            </View>
-          </View>
-        </Enter>
-
-        {/* Cover glyph */}
-        <Enter index={1}>
-          <View style={{ alignItems: "center", paddingVertical: 16 }}>
-            <Text
-              style={{
-                fontFamily: fonts.serif,
-                fontSize: 180,
-                lineHeight: 200,
-                color: theme.accent,
-                fontWeight: "500",
-              }}
-            >
-              {motifChar(language)}
-            </Text>
-            <Text
-              style={[
-                type.labelSm,
-                { color: theme.textMuted, letterSpacing: 3, marginTop: -8 },
-              ]}
-            >
-              {motifSub(language)}
-            </Text>
-          </View>
-        </Enter>
-
-        {/* CTAs */}
-        <Enter index={2}>
-          <View style={{ gap: 12 }}>
-            <Button
-              title={t("auth.createAccount")}
-              size="lg"
-              onPress={() => router.push("/(auth)/register")}
-            />
-            <Button
-              title={t("auth.signIn")}
-              variant="ghost"
-              onPress={() => router.push("/(auth)/login")}
-            />
-          </View>
-        </Enter>
-      </ScrollView>
-    </SafeAreaView>
+        {/*
+         * The cover glyph is the largest character in the app, and it is set in
+         * the *content* face rather than the Latin serif. The serif carries no
+         * CJK glyphs, so 你 and あ were falling through to whatever the system
+         * picked — which for a traditional-script learner meant the wrong form on
+         * the very first screen they saw. A German learner gets their umlaut in
+         * the reading face instead of a Chinese one.
+         */}
+        <Text
+          style={{
+            fontFamily: faces.display,
+            fontSize: 168,
+            lineHeight: 190,
+            color: theme.accent,
+            fontWeight: "500",
+          }}
+        >
+          {motifChar(language)}
+        </Text>
+        <Text
+          style={[type.labelSm, { color: theme.textMuted, letterSpacing: 3 }]}
+        >
+          {motifSub(language)}
+        </Text>
+        <Shifu pose="bow" size={140} style={{ marginTop: -12 }} />
+      </View>
+    </AuthShell>
   )
 }

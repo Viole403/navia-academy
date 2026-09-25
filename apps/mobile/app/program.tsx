@@ -54,7 +54,7 @@ interface Lesson {
 }
 
 export default function ProgramScreen() {
-  const { theme } = useTheme()
+  const { theme, paper } = useTheme()
   const t = useT()
   const language = useOnboardingStore((s) => s.language)
   const storedExamType = useOnboardingStore((s) => s.examType)
@@ -94,7 +94,7 @@ export default function ProgramScreen() {
 
   return (
     <SafeAreaView
-      style={{ flex: 1, backgroundColor: theme.bg }}
+      style={{ flex: 1, backgroundColor: paper.paper }}
       edges={["top"]}
     >
       <ScrollView contentContainerStyle={{ padding: 24, gap: 20 }}>

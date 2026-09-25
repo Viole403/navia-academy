@@ -14,14 +14,14 @@ export default function Index() {
   const { user, hydrated } = useAuthStore()
   const { hasOnboarded } = useAppStore()
   const language = useOnboardingStore((s) => s.language)
-  const { theme } = useTheme()
+  const { theme, paper } = useTheme()
 
   if (!hydrated) {
     return (
       <View
         style={{
           flex: 1,
-          backgroundColor: theme.bg,
+          backgroundColor: paper.paper,
           alignItems: "center",
           justifyContent: "center",
           gap: 24,

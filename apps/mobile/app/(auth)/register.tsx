@@ -1,36 +1,24 @@
 import { useState } from "react"
-import {
-  KeyboardAvoidingView,
-  Platform,
-  Pressable,
-  ScrollView,
-  Text,
-  View,
-} from "react-native"
-import { SafeAreaView, useSafeAreaInsets } from "react-native-safe-area-context"
+import { Pressable, Text, View } from "react-native"
 import { useRouter } from "expo-router"
 import { useMutation } from "@tanstack/react-query"
-import { Button } from "@/components/ui/Button"
+import { AuthShell } from "@/components/auth/AuthShell"
 import { GoogleSignInButton } from "@/components/ui/GoogleSignInButton"
 import { Input } from "@/components/ui/Input"
-import { Motif } from "@/components/ui/Motif"
 import { useTheme } from "@/theme/ThemeProvider"
-import { fonts, type } from "@/theme/typography"
+import { type } from "@/theme/typography"
+import { decorArt } from "@/components/study/art"
 import { auth } from "@/api/endpoints"
 import { useGoogleAuth } from "@/hooks/useGoogleAuth"
 import { useAuthStore } from "@/store/auth"
-import { useOnboardingStore } from "@/store/onboarding"
-import { motifChar } from "@/lib/languages"
 import { useT } from "@/i18n"
 import { saveTokens } from "@/utils/secure"
 
 export default function Register() {
   const { theme } = useTheme()
-  const insets = useSafeAreaInsets()
   const router = useRouter()
   const t = useT()
   const setAuth = useAuthStore((s) => s.setAuth)
-  const language = useOnboardingStore((s) => s.language)
 
   const [name, setName] = useState("")
   const [email, setEmail] = useState("")
@@ -61,169 +49,99 @@ export default function Register() {
       const msg = (
         e as { response?: { data?: { error?: { message?: string } } } }
       )?.response?.data?.error?.message
-      setError(msg ?? "Could not create account. Try again.")
+      setError(msg ?? t("auth.registerFailed"))
     },
   })
 
-  const passwordTooShort = password.length > 0 && password.length < 8
+  /**
+   * The 8-character rule is stated *before* submission and live, rather than as
+   * an error that appears after a round trip and a red field. A password rule the
+   * user only learns by being rejected is a rule they cannot act on.
+   */
+  const short = password.length > 0 && password.length < 8
+  const canSubmit =
+    name.trim().length > 0 && email.trim().length > 0 && password.length >= 8
 
   return (
-    <SafeAreaView style={{ flex: 1, backgroundColor: theme.bg }}>
-      <KeyboardAvoidingView
-        behavior={Platform.OS === "ios" ? "padding" : undefined}
-        style={{ flex: 1 }}
-      >
-        <ScrollView
-          contentContainerStyle={{ flexGrow: 1, padding: 32, gap: 32 }}
-          keyboardShouldPersistTaps="handled"
-        >
-          {/* Header */}
-          <View style={{ gap: 16, marginTop: 24 }}>
-            <View
-              style={{
-                flexDirection: "row",
-                justifyContent: "space-between",
-                alignItems: "flex-start",
-              }}
-            >
-              <View style={{ flex: 1, gap: 8 }}>
-                <Text style={[type.labelSm, { color: theme.textMuted }]}>
-                  First time here
-                </Text>
-                <Text
-                  style={[type.display, { color: theme.text, fontSize: 36 }]}
-                >
-                  Create account
-                </Text>
-                <Text style={[type.bodySm, { color: theme.textMuted }]}>
-                  Your data syncs across devices.
-                </Text>
-              </View>
-              <Motif char={motifChar(language)} size={64} />
-            </View>
-
-            <View style={{ height: 1, backgroundColor: theme.border }} />
-          </View>
-
-          {/* Form */}
-          <View style={{ gap: 24 }}>
-            <Input
-              label={t("auth.name")}
-              placeholder="Chen Wei"
-              autoCapitalize="words"
-              autoComplete="name"
-              value={name}
-              onChangeText={setName}
-            />
-            <Input
-              label={t("auth.email")}
-              placeholder="you@example.com"
-              autoCapitalize="none"
-              keyboardType="email-address"
-              autoComplete="email"
-              value={email}
-              onChangeText={setEmail}
-            />
-            <Input
-              label={t("auth.password")}
-              placeholder="8+ characters"
-              secureTextEntry
-              autoComplete="password-new"
-              value={password}
-              onChangeText={setPassword}
-              error={
-                passwordTooShort
-                  ? "Password must be at least 8 characters"
-                  : undefined
-              }
-            />
-            {error && (
-              <Text style={{ color: theme.red, fontSize: 13 }}>{error}</Text>
-            )}
-          </View>
-
-          {/* CTA */}
+    <AuthShell
+      kicker={t("auth.newHere")}
+      title={t("auth.createAccount")}
+      art={decorArt.cloudCluster}
+      artKey="cloudCluster"
+      artHeight={120}
+      action={t("auth.createAccount")}
+      busy={register.isPending}
+      disabled={!canSubmit}
+      onAction={() => {
+        setError(null)
+        register.mutate()
+      }}
+      footer={
+        <View style={{ gap: 12, alignItems: "center" }}>
+          <Pressable onPress={() => router.replace("/(auth)/login")}>
+            <Text style={[type.bodySm, { color: theme.textMuted }]}>
+              {t("auth.haveAccount")}{" "}
+              <Text style={{ color: theme.accent, fontWeight: "700" }}>
+                {t("auth.signIn")}
+              </Text>
+            </Text>
+          </Pressable>
           <View
             style={{
-              marginTop: "auto",
-              gap: 16,
-              paddingTop: 16,
-              paddingBottom: Math.max(insets.bottom, 8) + 12,
-              borderTopWidth: 1,
-              borderTopColor: theme.borderSoft,
+              flexDirection: "row",
+              alignItems: "center",
+              gap: 6,
+              alignSelf: "stretch",
             }}
           >
-            <Button
-              title={t("auth.createAccount")}
-              onPress={() => register.mutate()}
-              loading={register.isPending}
-              disabled={!name || !email || password.length < 8}
-              size="lg"
+            <View
+              style={{ flex: 1, height: 1, backgroundColor: theme.border }}
             />
-            {google.configured && (
-              <View style={{ gap: 12 }}>
-                <View
-                  style={{
-                    flexDirection: "row",
-                    alignItems: "center",
-                    gap: 12,
-                    paddingVertical: 4,
-                  }}
-                >
-                  <View
-                    style={{
-                      flex: 1,
-                      height: 1,
-                      backgroundColor: theme.border,
-                    }}
-                  />
-                  <Text style={[type.caption, { color: theme.textMuted }]}>
-                    {t("auth.or")}
-                  </Text>
-                  <View
-                    style={{
-                      flex: 1,
-                      height: 1,
-                      backgroundColor: theme.border,
-                    }}
-                  />
-                </View>
-                <GoogleSignInButton
-                  title={t("auth.google")}
-                  onPress={google.prompt}
-                  loading={google.pending}
-                  disabled={!google.canPrompt}
-                />
-                <View style={{ minHeight: 20, justifyContent: "center" }}>
-                  {google.error && (
-                    <Text style={{ color: theme.red, fontSize: 13 }}>
-                      {google.error}
-                    </Text>
-                  )}
-                </View>
-              </View>
-            )}
-            <Pressable
-              onPress={() => router.replace("/(auth)/login")}
-              hitSlop={8}
-              style={{ alignItems: "center", paddingVertical: 12 }}
-            >
-              <Text
-                style={{
-                  fontFamily: fonts.sans,
-                  fontSize: 15,
-                  color: theme.textMuted,
-                }}
-              >
-                {t("auth.haveAccount")}{" "}
-                <Text style={{ color: theme.accent, fontWeight: "600" }}>
-                  {t("auth.signIn")}
-                </Text>
-              </Text>
-            </Pressable>
+            <Text style={[type.caption, { color: theme.textDim }]}>
+              {t("auth.or")}
+            </Text>
+            <View
+              style={{ flex: 1, height: 1, backgroundColor: theme.border }}
+            />
           </View>
-        </ScrollView>
-      </KeyboardAvoidingView>
-    </SafeAreaView>
+          <GoogleSignInButton
+            title={t("auth.google")}
+            onPress={google.prompt}
+            loading={google.pending}
+            disabled={!google.canPrompt}
+          />
+        </View>
+      }
+    >
+      <View style={{ gap: 18 }}>
+        <Input
+          label={t("auth.name")}
+          value={name}
+          onChangeText={setName}
+          autoCapitalize="words"
+          autoComplete="name"
+          textContentType="name"
+        />
+        <Input
+          label={t("auth.email")}
+          value={email}
+          onChangeText={setEmail}
+          autoCapitalize="none"
+          keyboardType="email-address"
+          autoComplete="email"
+          textContentType="emailAddress"
+        />
+        <Input
+          label={t("auth.password")}
+          value={password}
+          onChangeText={setPassword}
+          secureTextEntry
+          autoComplete="new-password"
+          textContentType="newPassword"
+          error={error ?? undefined}
+          hint={short ? t("auth.passwordTooShort") : t("auth.passwordHint")}
+        />
+      </View>
+    </AuthShell>
   )
 }

@@ -19,7 +19,7 @@ const PROMPTS = [
 ]
 
 export default function SpeakingScreen() {
-  const { theme } = useTheme()
+  const { theme, paper } = useTheme()
   const t = useT()
   const qc = useQueryClient()
 
@@ -41,7 +41,7 @@ export default function SpeakingScreen() {
 
   return (
     <SafeAreaView
-      style={{ flex: 1, backgroundColor: theme.bg }}
+      style={{ flex: 1, backgroundColor: paper.paper }}
       edges={["top"]}
     >
       <ScrollView contentContainerStyle={{ padding: 24, gap: 20 }}>

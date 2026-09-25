@@ -1,36 +1,24 @@
 import { useState } from "react"
-import {
-  KeyboardAvoidingView,
-  Platform,
-  Pressable,
-  ScrollView,
-  Text,
-  View,
-} from "react-native"
-import { SafeAreaView, useSafeAreaInsets } from "react-native-safe-area-context"
+import { Pressable, Text, View } from "react-native"
 import { useRouter } from "expo-router"
 import { useMutation } from "@tanstack/react-query"
-import { Button } from "@/components/ui/Button"
+import { AuthShell } from "@/components/auth/AuthShell"
 import { GoogleSignInButton } from "@/components/ui/GoogleSignInButton"
 import { Input } from "@/components/ui/Input"
-import { Motif } from "@/components/ui/Motif"
 import { useTheme } from "@/theme/ThemeProvider"
-import { fonts, type } from "@/theme/typography"
+import { type } from "@/theme/typography"
 import { auth } from "@/api/endpoints"
 import { useGoogleAuth } from "@/hooks/useGoogleAuth"
 import { useAuthStore } from "@/store/auth"
-import { useOnboardingStore } from "@/store/onboarding"
-import { motifChar } from "@/lib/languages"
 import { useT } from "@/i18n"
 import { saveTokens } from "@/utils/secure"
+import { decorArt } from "@/components/study/art"
 
 export default function Login() {
   const { theme } = useTheme()
   const router = useRouter()
   const t = useT()
   const setAuth = useAuthStore((s) => s.setAuth)
-  const language = useOnboardingStore((s) => s.language)
-  const insets = useSafeAreaInsets()
 
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
@@ -55,170 +43,88 @@ export default function Login() {
       const msg = (
         e as { response?: { data?: { error?: { message?: string } } } }
       )?.response?.data?.error?.message
-      setError(msg ?? "Sign in failed. Check your credentials.")
+      setError(msg ?? t("auth.signInFailed"))
     },
   })
 
+  const canSubmit = email.trim().length > 0 && password.length > 0
+
   return (
-    <SafeAreaView style={{ flex: 1, backgroundColor: theme.bg }}>
-      <KeyboardAvoidingView
-        behavior={Platform.OS === "ios" ? "padding" : undefined}
-        style={{ flex: 1 }}
-      >
-        <ScrollView
-          contentContainerStyle={{ flexGrow: 1, padding: 32, gap: 32 }}
-          keyboardShouldPersistTaps="handled"
-        >
-          {/* Header */}
-          <View style={{ gap: 16, marginTop: 24 }}>
-            <View
-              style={{
-                flexDirection: "row",
-                justifyContent: "space-between",
-                alignItems: "flex-start",
-              }}
-            >
-              <View style={{ flex: 1, gap: 8 }}>
-                <Text style={[type.labelSm, { color: theme.textMuted }]}>
-                  Welcome back
-                </Text>
-                <Text
-                  style={[type.display, { color: theme.text, fontSize: 36 }]}
-                >
-                  {t("auth.signIn")}
-                </Text>
-                <Text style={[type.bodySm, { color: theme.textMuted }]}>
-                  Continue where you left off.
-                </Text>
-              </View>
-              <Motif char={motifChar(language)} size={64} />
-            </View>
-
-            <View style={{ height: 1, backgroundColor: theme.border }} />
-          </View>
-
-          {/* Form */}
-          <View style={{ gap: 24 }}>
-            <Input
-              label={t("auth.email")}
-              placeholder="you@example.com"
-              autoCapitalize="none"
-              keyboardType="email-address"
-              autoComplete="email"
-              value={email}
-              onChangeText={setEmail}
-            />
-            <Input
-              label={t("auth.password")}
-              placeholder="Your password"
-              secureTextEntry
-              autoComplete="current-password"
-              value={password}
-              onChangeText={setPassword}
-            />
-            <Pressable
-              onPress={() => router.push("/(auth)/forgot")}
-              hitSlop={8}
-              style={{ alignItems: "flex-end", paddingVertical: 4 }}
-            >
-              <Text
-                style={{
-                  fontFamily: fonts.sans,
-                  fontSize: 14,
-                  color: theme.accent,
-                  fontWeight: "600",
-                }}
-              >
-                {t("auth.forgot")}
-              </Text>
-            </Pressable>
-            {error && (
-              <Text style={{ color: theme.red, fontSize: 13 }}>{error}</Text>
-            )}
-          </View>
-
-          {/* CTA — pinned footer with safe-area clearance */}
+    <AuthShell
+      kicker={t("auth.signIn")}
+      title={t("auth.signIn")}
+      art={decorArt.mountainsWide}
+      artKey="mountainsWide"
+      action={t("auth.signIn")}
+      busy={login.isPending}
+      disabled={!canSubmit}
+      onAction={() => {
+        setError(null)
+        login.mutate()
+      }}
+      footer={
+        <View style={{ gap: 12, alignItems: "center" }}>
+          <Pressable onPress={() => router.push("/(auth)/forgot")}>
+            <Text style={[type.bodySm, { color: theme.accent }]}>
+              {t("auth.forgot")}
+            </Text>
+          </Pressable>
           <View
             style={{
-              marginTop: "auto",
-              gap: 16,
-              paddingTop: 16,
-              paddingBottom: Math.max(insets.bottom, 8) + 12,
-              borderTopWidth: 1,
-              borderTopColor: theme.border,
+              flexDirection: "row",
+              alignItems: "center",
+              gap: 6,
+              alignSelf: "stretch",
             }}
           >
-            <Button
-              title={t("auth.signIn")}
-              onPress={() => login.mutate()}
-              loading={login.isPending}
-              disabled={!email || !password}
-              size="lg"
+            <View
+              style={{ flex: 1, height: 1, backgroundColor: theme.border }}
             />
-            {google.configured && (
-              <View style={{ gap: 12 }}>
-                <View
-                  style={{
-                    flexDirection: "row",
-                    alignItems: "center",
-                    gap: 12,
-                    paddingVertical: 4,
-                  }}
-                >
-                  <View
-                    style={{
-                      flex: 1,
-                      height: 1,
-                      backgroundColor: theme.border,
-                    }}
-                  />
-                  <Text style={[type.caption, { color: theme.textMuted }]}>
-                    {t("auth.or")}
-                  </Text>
-                  <View
-                    style={{
-                      flex: 1,
-                      height: 1,
-                      backgroundColor: theme.border,
-                    }}
-                  />
-                </View>
-                <GoogleSignInButton
-                  title={t("auth.google")}
-                  onPress={google.prompt}
-                  loading={google.pending}
-                  disabled={!google.canPrompt}
-                />
-                <View style={{ minHeight: 20, justifyContent: "center" }}>
-                  {google.error && (
-                    <Text style={{ color: theme.red, fontSize: 13 }}>
-                      {google.error}
-                    </Text>
-                  )}
-                </View>
-              </View>
-            )}
-            <Pressable
-              onPress={() => router.replace("/(auth)/register")}
-              hitSlop={8}
-              style={{ alignItems: "center", paddingVertical: 12 }}
-            >
-              <Text
-                style={{
-                  fontFamily: fonts.sans,
-                  fontSize: 15,
-                  color: theme.textMuted,
-                }}
-              >
-                {t("auth.newHere")}{" "}
-                <Text style={{ color: theme.accent, fontWeight: "600" }}>
-                  {t("auth.createAccount")}
-                </Text>
-              </Text>
-            </Pressable>
+            <Text style={[type.caption, { color: theme.textDim }]}>
+              {t("auth.or")}
+            </Text>
+            <View
+              style={{ flex: 1, height: 1, backgroundColor: theme.border }}
+            />
           </View>
-        </ScrollView>
-      </KeyboardAvoidingView>
-    </SafeAreaView>
+          <GoogleSignInButton
+            title={t("auth.google")}
+            onPress={google.prompt}
+            loading={google.pending}
+            // An unconfigured client must not offer a button that cannot work.
+            disabled={!google.canPrompt}
+          />
+          <Pressable onPress={() => router.replace("/(auth)/register")}>
+            <Text style={[type.bodySm, { color: theme.textMuted }]}>
+              {t("auth.newHere")}{" "}
+              <Text style={{ color: theme.accent, fontWeight: "700" }}>
+                {t("auth.createAccount")}
+              </Text>
+            </Text>
+          </Pressable>
+        </View>
+      }
+    >
+      <View style={{ gap: 18 }}>
+        <Input
+          label={t("auth.email")}
+          value={email}
+          onChangeText={setEmail}
+          autoCapitalize="none"
+          keyboardType="email-address"
+          autoComplete="email"
+          textContentType="emailAddress"
+        />
+        <Input
+          label={t("auth.password")}
+          value={password}
+          onChangeText={setPassword}
+          secureTextEntry
+          autoComplete="current-password"
+          textContentType="password"
+          error={error ?? undefined}
+        />
+      </View>
+    </AuthShell>
   )
 }

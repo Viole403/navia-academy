@@ -41,7 +41,7 @@ import type { Task } from "@/types/api"
 type Section = "profile" | "tasks"
 
 export default function ProfileTab() {
-  const { theme, catalog } = useTheme()
+  const { theme, paper, catalog } = useTheme()
   const t = useT()
   const router = useRouter()
   const qc = useQueryClient()
@@ -153,7 +153,7 @@ export default function ProfileTab() {
 
   return (
     <SafeAreaView
-      style={{ flex: 1, backgroundColor: theme.bg }}
+      style={{ flex: 1, backgroundColor: paper.paper }}
       edges={["top"]}
     >
       <KeyboardSafeScroll
@@ -439,7 +439,7 @@ function MetaField({
   value: string
   capitalize?: boolean
 }) {
-  const { theme } = useTheme()
+  const { theme, paper } = useTheme()
   return (
     <View style={{ flex: 1, gap: 4 }}>
       <Text style={[type.labelSm, { color: theme.textMuted }]}>{label}</Text>
@@ -466,7 +466,7 @@ function TaskRow({
   onToggle: () => void
   onDelete: () => void
 }) {
-  const { theme } = useTheme()
+  const { theme, paper } = useTheme()
   const t = useT()
   return (
     <View

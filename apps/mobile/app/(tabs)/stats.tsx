@@ -15,7 +15,7 @@ import { useOnboardingStore } from "@/store/onboarding"
 import type { Achievement, StudySession } from "@/types/api"
 
 export default function StatsTab() {
-  const { theme } = useTheme()
+  const { theme, paper } = useTheme()
   const t = useT()
   const language = useOnboardingStore((s) => s.language)
   const [view, setView] = useState<"overview" | "badges" | "calendar">(
@@ -36,7 +36,7 @@ export default function StatsTab() {
 
   return (
     <SafeAreaView
-      style={{ flex: 1, backgroundColor: theme.bg }}
+      style={{ flex: 1, backgroundColor: paper.paper }}
       edges={["top"]}
     >
       <ScrollView
@@ -149,7 +149,7 @@ function OverviewView({
   sessions: StudySession[]
   sessionsLoading: boolean
 }) {
-  const { theme } = useTheme()
+  const { theme, paper } = useTheme()
   const t = useT()
   const language = useOnboardingStore((s) => s.language)
   const totalMinutes = sessions.reduce((acc, s) => acc + s.minutes, 0)
@@ -233,7 +233,7 @@ function CalendarView({
   sessions: StudySession[]
   loading: boolean
 }) {
-  const { theme } = useTheme()
+  const { theme, paper } = useTheme()
   const t = useT()
   const days = useMemo(() => {
     const byDate = new Map<string, number>()
@@ -307,7 +307,7 @@ function BadgesView({
   achievements: Achievement[]
   loading: boolean
 }) {
-  const { theme } = useTheme()
+  const { theme, paper } = useTheme()
   const t = useT()
   const language = useOnboardingStore((s) => s.language)
   if (loading) return <ActivityIndicator color={theme.accent} />
@@ -360,7 +360,7 @@ function Stat({
   value: number
   accent: string
 }) {
-  const { theme } = useTheme()
+  const { theme, paper } = useTheme()
   return (
     <View style={{ flex: 1, gap: 4 }}>
       <Text

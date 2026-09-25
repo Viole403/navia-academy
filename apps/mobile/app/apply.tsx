@@ -17,7 +17,7 @@ import { useT } from "@/i18n"
 type Mode = "contributor" | "sponsor"
 
 export default function Apply() {
-  const { theme } = useTheme()
+  const { theme, paper } = useTheme()
   const router = useRouter()
   const t = useT()
   const language = useOnboardingStore((s) => s.language)
@@ -58,7 +58,7 @@ export default function Apply() {
 
   return (
     <SafeAreaView
-      style={{ flex: 1, backgroundColor: theme.bg }}
+      style={{ flex: 1, backgroundColor: paper.paper }}
       edges={["top"]}
     >
       <View

@@ -83,7 +83,7 @@ function buildResult(
 }
 
 export default function PlacementTestScreen() {
-  const { theme } = useTheme()
+  const { theme, paper } = useTheme()
   const router = useRouter()
   const qc = useQueryClient()
   const language = useOnboardingStore((s) => s.language)
@@ -190,7 +190,7 @@ export default function PlacementTestScreen() {
       <SafeAreaView
         style={{
           flex: 1,
-          backgroundColor: theme.bg,
+          backgroundColor: paper.paper,
           alignItems: "center",
           justifyContent: "center",
         }}
@@ -202,7 +202,7 @@ export default function PlacementTestScreen() {
 
   if (bankQ.isError || bank.length === 0) {
     return (
-      <SafeAreaView style={{ flex: 1, backgroundColor: theme.bg }}>
+      <SafeAreaView style={{ flex: 1, backgroundColor: paper.paper }}>
         <EmptyState
           glyph="∅"
           title={t("place.noBank")}
@@ -216,7 +216,7 @@ export default function PlacementTestScreen() {
 
   return (
     <SafeAreaView
-      style={{ flex: 1, backgroundColor: theme.bg }}
+      style={{ flex: 1, backgroundColor: paper.paper }}
       edges={["top"]}
     >
       <ScrollView

@@ -31,7 +31,7 @@ const REVEAL_MS = 650
  * result and shows past estimates instead of gating onboarding.
  */
 export function ExamAdaptive() {
-  const { theme } = useTheme()
+  const { theme, paper } = useTheme()
   const { column: columnWidth } = useContentLayout()
   const t = useT()
   const router = useRouter()
@@ -127,7 +127,7 @@ export function ExamAdaptive() {
   }
 
   return (
-    <SafeAreaView style={{ flex: 1, backgroundColor: theme.bg }}>
+    <SafeAreaView style={{ flex: 1, backgroundColor: paper.paper }}>
       <Stack.Screen options={{ headerShown: false }} />
       <View
         style={{

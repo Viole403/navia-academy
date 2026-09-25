@@ -37,7 +37,7 @@ import { tap } from "@/utils/feedback"
  * here is now /vocab, with a ranked search ladder.
  */
 export default function LearnTab() {
-  const { theme } = useTheme()
+  const { theme, paper } = useTheme()
   const t = useT()
   const router = useRouter()
   const language = useOnboardingStore((s) => s.language) ?? DEFAULT_LANGUAGE
@@ -173,7 +173,7 @@ export default function LearnTab() {
 
   return (
     <SafeAreaView
-      style={{ flex: 1, backgroundColor: theme.bg }}
+      style={{ flex: 1, backgroundColor: paper.paper }}
       edges={["top"]}
     >
       <ScrollView
@@ -283,7 +283,7 @@ function DrillCard({
   tone: "review" | "neutral"
   onPress: () => void
 }) {
-  const { theme } = useTheme()
+  const { theme, paper } = useTheme()
   const r = useReveal({
     at: entranceScore.cards.at + entranceScore.cards.stagger * index,
     duration: entranceScore.cards.for,

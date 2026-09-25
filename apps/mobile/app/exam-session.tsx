@@ -23,7 +23,7 @@ import { useOnboardingStore } from "@/store/onboarding"
 import type { ExamQuestion, ExamSession } from "@/types/api"
 
 export default function ExamSessionScreen() {
-  const { theme } = useTheme()
+  const { theme, paper } = useTheme()
   const t = useT()
   const language = useOnboardingStore((s) => s.language)
   const router = useRouter()
@@ -113,7 +113,7 @@ export default function ExamSessionScreen() {
       <SafeAreaView
         style={{
           flex: 1,
-          backgroundColor: theme.bg,
+          backgroundColor: paper.paper,
           alignItems: "center",
           justifyContent: "center",
         }}
@@ -125,7 +125,7 @@ export default function ExamSessionScreen() {
 
   if (!session || questions.length === 0) {
     return (
-      <SafeAreaView style={{ flex: 1, backgroundColor: theme.bg }}>
+      <SafeAreaView style={{ flex: 1, backgroundColor: paper.paper }}>
         <View
           style={{
             flex: 1,
@@ -149,7 +149,7 @@ export default function ExamSessionScreen() {
   const ss = String(elapsed % 60).padStart(2, "0")
 
   return (
-    <SafeAreaView style={{ flex: 1, backgroundColor: theme.bg }}>
+    <SafeAreaView style={{ flex: 1, backgroundColor: paper.paper }}>
       {/* Top bar */}
       <View
         style={{
@@ -358,7 +358,7 @@ function AudioPlayButton({
   loading: boolean
   onPlay: () => void
 }) {
-  const { theme } = useTheme()
+  const { theme, paper } = useTheme()
   const t = useT()
   return (
     <Pressable

@@ -16,7 +16,21 @@ const en = {
   "common.retry": "Retry",
   "common.loading": "Loading…",
   "auth.signIn": "Sign in",
+  "auth.signInFailed": "Sign in failed. Check your email and password.",
   "auth.createAccount": "Create an account",
+  "auth.registerFailed": "Could not create the account. Try again.",
+  "auth.passwordTooShort": "At least 8 characters",
+  "auth.passwordHint": "At least 8 characters",
+  "auth.tokenSent": "Check your inbox for a reset token, then enter it below.",
+  "auth.requestFailed":
+    "That did not go through. Check the address and try again.",
+  "auth.resetDone": "Password reset. Sign in with the new one.",
+  "auth.badToken": "That token is not valid or has expired.",
+  "auth.resetStepOne":
+    "Enter your account email and we will send a reset token.",
+  "auth.resetStepTwo":
+    "Paste the token from your email and choose a new password.",
+  "auth.backToSignIn": "Back to sign in",
   "auth.newHere": "New here?",
   "auth.haveAccount": "Have an account?",
   "auth.email": "Email",
@@ -368,6 +382,8 @@ const en = {
   "xres.correct": "Correct",
   "xres.passing": "Passing",
   "xres.time": "Time",
+  "xres.retryHint":
+    "You missed %s. A few reviews and the next attempt sits better.",
   "xres.returnHome": "Return home",
   "place.suffix": "Placement",
   "place.findLevel": "Find your level",

@@ -42,7 +42,7 @@ const SECTION_LABEL: Record<LibSection, I18nKey> = {
 }
 
 export default function LibraryScreen() {
-  const { theme } = useTheme()
+  const { theme, paper } = useTheme()
   const t = useT()
   const router = useRouter()
   const language = useOnboardingStore((s) => s.language)
@@ -89,7 +89,7 @@ export default function LibraryScreen() {
 
   return (
     <SafeAreaView
-      style={{ flex: 1, backgroundColor: theme.bg }}
+      style={{ flex: 1, backgroundColor: paper.paper }}
       edges={["top"]}
     >
       <ScrollView contentContainerStyle={{ padding: 24, gap: 20 }}>
@@ -308,7 +308,7 @@ function ItemList({
   renderDetail: (id: string) => React.ReactNode
   onOpen?: (id: string) => void
 }) {
-  const { theme } = useTheme()
+  const { theme, paper } = useTheme()
   if (items.length === 0) {
     return <EmptyState title={t("lib.nothing")} message={t("lib.nothingMsg")} />
   }

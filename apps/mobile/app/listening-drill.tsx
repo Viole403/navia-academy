@@ -34,7 +34,7 @@ function shuffle<T>(arr: T[]): T[] {
 }
 
 export default function ListeningDrillScreen() {
-  const { theme } = useTheme()
+  const { theme, paper } = useTheme()
   const t = useT()
   const language = useOnboardingStore((s) => s.language)
   const qc = useQueryClient()
@@ -87,7 +87,7 @@ export default function ListeningDrillScreen() {
 
   return (
     <SafeAreaView
-      style={{ flex: 1, backgroundColor: theme.bg }}
+      style={{ flex: 1, backgroundColor: paper.paper }}
       edges={["top"]}
     >
       <ScrollView contentContainerStyle={{ padding: 24, gap: 20 }}>

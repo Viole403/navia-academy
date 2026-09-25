@@ -16,7 +16,7 @@ export function Screen({
   padded = true,
   gap = 20,
 }: PropsWithChildren<ScreenProps>) {
-  const { theme } = useTheme()
+  const { theme, paper } = useTheme()
 
   const inner = (
     <View style={{ padding: padded ? 24 : 0, gap }}>{children}</View>
@@ -24,7 +24,7 @@ export function Screen({
 
   return (
     <SafeAreaView
-      style={{ flex: 1, backgroundColor: theme.bg }}
+      style={{ flex: 1, backgroundColor: paper.paper }}
       edges={["top", "bottom"]}
     >
       {scroll ? (

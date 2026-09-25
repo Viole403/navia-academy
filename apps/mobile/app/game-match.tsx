@@ -31,7 +31,7 @@ interface Card {
 }
 
 export default function GameMatch() {
-  const { theme } = useTheme()
+  const { theme, paper } = useTheme()
   const router = useRouter()
   const qc = useQueryClient()
   const language = useOnboardingStore((s) => s.language)
@@ -133,7 +133,7 @@ export default function GameMatch() {
       <SafeAreaView
         style={{
           flex: 1,
-          backgroundColor: theme.bg,
+          backgroundColor: paper.paper,
           alignItems: "center",
           justifyContent: "center",
         }}
@@ -147,7 +147,7 @@ export default function GameMatch() {
   if (!page.data) {
     return (
       <SafeAreaView
-        style={{ flex: 1, backgroundColor: theme.bg }}
+        style={{ flex: 1, backgroundColor: paper.paper }}
         edges={["top"]}
       >
         <View
@@ -172,7 +172,7 @@ export default function GameMatch() {
 
   return (
     <SafeAreaView
-      style={{ flex: 1, backgroundColor: theme.bg }}
+      style={{ flex: 1, backgroundColor: paper.paper }}
       edges={["top"]}
     >
       <View

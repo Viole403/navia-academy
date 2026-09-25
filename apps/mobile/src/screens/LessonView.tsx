@@ -44,7 +44,7 @@ interface Lesson {
  * worth, the same write the program browser makes.
  */
 export function LessonView() {
-  const { theme } = useTheme()
+  const { theme, paper } = useTheme()
   const { column: columnWidth } = useContentLayout()
   const t = useT()
   const router = useRouter()
@@ -82,7 +82,7 @@ export function LessonView() {
   const last = steps.length > 0 && step >= steps.length - 1
 
   return (
-    <SafeAreaView style={{ flex: 1, backgroundColor: theme.bg }}>
+    <SafeAreaView style={{ flex: 1, backgroundColor: paper.paper }}>
       <Stack.Screen options={{ headerShown: false }} />
       <View
         style={{

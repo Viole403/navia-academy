@@ -23,7 +23,7 @@ import { tap } from "@/utils/feedback"
  * translation; per-turn replay plus play-the-whole-dialogue.
  */
 export function ConversationView() {
-  const { theme } = useTheme()
+  const { theme, paper } = useTheme()
   const { column: columnWidth } = useContentLayout()
   const t = useT()
   const router = useRouter()
@@ -50,7 +50,7 @@ export function ConversationView() {
   }
 
   return (
-    <SafeAreaView style={{ flex: 1, backgroundColor: theme.bg }}>
+    <SafeAreaView style={{ flex: 1, backgroundColor: paper.paper }}>
       <Stack.Screen options={{ headerShown: false }} />
       <View
         style={{

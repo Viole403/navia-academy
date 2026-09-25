@@ -7,7 +7,7 @@ import { useAuthStore } from "@/store/auth"
 import { useT } from "@/i18n"
 
 export default function TabsLayout() {
-  const { theme } = useTheme()
+  const { theme, paper } = useTheme()
   const user = useAuthStore((s) => s.user)
   const t = useT()
   const insets = useSafeAreaInsets()
@@ -27,7 +27,7 @@ export default function TabsLayout() {
         tabBarActiveTintColor: theme.accent,
         tabBarInactiveTintColor: theme.textDim,
         tabBarStyle: {
-          backgroundColor: theme.bg,
+          backgroundColor: paper.paper,
           borderTopColor: theme.border,
           borderTopWidth: 1,
           elevation: 0,

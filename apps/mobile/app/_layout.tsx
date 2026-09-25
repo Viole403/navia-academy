@@ -67,7 +67,7 @@ const linking = {
 
 function AppShell() {
   useOfflineDrain()
-  const { theme, resolvedMode } = useTheme()
+  const { theme, paper, resolvedMode } = useTheme()
   const soundEffects = useSettingsPrefs((s) => s.soundEffects)
 
   // One audio session for the whole app — see utils/sound.ts for why this has
@@ -87,7 +87,7 @@ function AppShell() {
         {...({
           screenOptions: {
             headerShown: false,
-            contentStyle: { backgroundColor: theme.bg },
+            contentStyle: { backgroundColor: paper.paper },
           },
           linking: linking,
         } as any)}

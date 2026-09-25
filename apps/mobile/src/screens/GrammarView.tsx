@@ -23,7 +23,7 @@ import { tap } from "@/utils/feedback"
  * add-to-review for the SRS deck.
  */
 export function GrammarView() {
-  const { theme } = useTheme()
+  const { theme, paper } = useTheme()
   const { column: columnWidth } = useContentLayout()
   const t = useT()
   const router = useRouter()
@@ -51,7 +51,7 @@ export function GrammarView() {
   }
 
   return (
-    <SafeAreaView style={{ flex: 1, backgroundColor: theme.bg }}>
+    <SafeAreaView style={{ flex: 1, backgroundColor: paper.paper }}>
       <Stack.Screen options={{ headerShown: false }} />
       <View
         style={{

@@ -30,7 +30,7 @@ import { useT } from "@/i18n"
 import type { ExamProgress, ExamSession } from "@/types/api"
 
 export default function ExamTab() {
-  const { theme } = useTheme()
+  const { theme, paper } = useTheme()
   const t = useT()
   const router = useRouter()
   const qc = useQueryClient()
@@ -96,7 +96,7 @@ export default function ExamTab() {
 
   return (
     <SafeAreaView
-      style={{ flex: 1, backgroundColor: theme.bg }}
+      style={{ flex: 1, backgroundColor: paper.paper }}
       edges={["top"]}
     >
       <ScrollView
@@ -381,7 +381,7 @@ function ActiveSessionCard({
   session: ExamSession
   onResume: () => void
 }) {
-  const { theme } = useTheme()
+  const { theme, paper } = useTheme()
   const t = useT()
   return (
     <Pressable

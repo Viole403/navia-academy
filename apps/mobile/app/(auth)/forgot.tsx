@@ -1,25 +1,28 @@
 import { useState } from "react"
 import { Pressable, Text, View } from "react-native"
-import { SafeAreaView } from "react-native-safe-area-context"
 import { useRouter } from "expo-router"
 import { useMutation } from "@tanstack/react-query"
-import { Button } from "@/components/ui/Button"
-import { Enter } from "@/components/ui/Enter"
+import { AuthShell } from "@/components/auth/AuthShell"
 import { Input } from "@/components/ui/Input"
-import { KeyboardSafeScroll } from "@/components/ui/KeyboardSafeScroll"
-import { Motif } from "@/components/ui/Motif"
+import { PaperCard } from "@/components/study/PaperCard"
 import { useTheme } from "@/theme/ThemeProvider"
-import { fonts, type } from "@/theme/typography"
+import { type } from "@/theme/typography"
+import { decorArt } from "@/components/study/art"
 import { auth } from "@/api/endpoints"
-import { motifChar } from "@/lib/languages"
-import { useOnboardingStore } from "@/store/onboarding"
 import { useT } from "@/i18n"
 
+/**
+ * Password reset, in two steps on one screen.
+ *
+ * The two steps stay on one page because the token arrives in an email the
+ * learner has open in another app, and making them navigate to a second screen
+ * and back loses the email they are looking at on small devices. The action
+ * button re-labels itself per step instead.
+ */
 export default function ForgotScreen() {
   const { theme } = useTheme()
   const router = useRouter()
   const t = useT()
-  const language = useOnboardingStore((s) => s.language)
 
   const [email, setEmail] = useState("")
   const [token, setToken] = useState("")
@@ -31,127 +34,98 @@ export default function ForgotScreen() {
     mutationFn: () => auth.requestReset(email.trim()),
     onSuccess: () => {
       setSent(true)
-      setMsg("If the email exists, a reset token was sent.")
+      setMsg(t("auth.tokenSent"))
     },
-    onError: () => setMsg("Request failed. Try again."),
+    onError: () => setMsg(t("auth.requestFailed")),
   })
 
   const confirmM = useMutation({
     mutationFn: () => auth.confirmReset(email.trim(), token.trim(), next),
-    onSuccess: () => {
-      setMsg("Password reset. Sign in with the new password.")
-    },
-    onError: () => setMsg("Invalid or expired token."),
+    onSuccess: () => setMsg(t("auth.resetDone")),
+    onError: () => setMsg(t("auth.badToken")),
   })
 
-  return (
-    <SafeAreaView
-      style={{ flex: 1, backgroundColor: theme.bg }}
-      edges={["top"]}
-    >
-      <KeyboardSafeScroll
-        contentContainerStyle={{ padding: 24, gap: 24, flexGrow: 1 }}
-      >
-        <Enter index={0}>
-          <View style={{ gap: 12, alignItems: "flex-start" }}>
-            <Motif char={motifChar(language)} size={56} />
-            <Text style={[type.display, { color: theme.text, fontSize: 32 }]}>
-              {t("auth.resetPassword")}
-            </Text>
-            <Text style={[type.bodySm, { color: theme.textMuted }]}>
-              {sent
-                ? "Enter the token from your email plus a new password."
-                : "Enter your account email to receive a reset token."}
-            </Text>
-          </View>
-        </Enter>
+  const short = next.length > 0 && next.length < 8
+  const canSubmit = sent
+    ? token.trim().length > 0 && next.length >= 8
+    : email.trim().length > 0
 
-        <Enter index={1}>
-          <View style={{ gap: 16 }}>
+  return (
+    <AuthShell
+      kicker={t("auth.remembered")}
+      title={t("auth.resetPassword")}
+      subtitle={sent ? t("auth.resetStepTwo") : t("auth.resetStepOne")}
+      art={decorArt.cloudDrift}
+      artKey="cloudDrift"
+      artHeight={110}
+      action={sent ? t("auth.setNewPassword") : t("auth.sendToken")}
+      busy={requestM.isPending || confirmM.isPending}
+      disabled={!canSubmit}
+      onAction={() => {
+        setMsg(null)
+        if (sent) confirmM.mutate()
+        else requestM.mutate()
+      }}
+      footer={
+        <Pressable onPress={() => router.replace("/(auth)/login")}>
+          <Text style={[type.bodySm, { color: theme.accent }]}>
+            {t("auth.backToSignIn")}
+          </Text>
+        </Pressable>
+      }
+    >
+      <View style={{ gap: 18 }}>
+        <Input
+          label={t("auth.email")}
+          value={email}
+          onChangeText={(v) => {
+            setEmail(v)
+            setMsg(null)
+          }}
+          autoCapitalize="none"
+          keyboardType="email-address"
+          autoComplete="email"
+          // The email is the lookup key for the token, so it stays editable
+          // after the request — a wrong address is the most common reason the
+          // second step fails.
+          editable
+        />
+
+        {sent ? (
+          <>
             <Input
-              label={t("auth.email")}
-              placeholder="you@example.com"
-              autoCapitalize="none"
-              keyboardType="email-address"
-              autoComplete="email"
-              value={email}
+              label={t("auth.resetToken")}
+              value={token}
               onChangeText={(v) => {
-                setEmail(v)
+                setToken(v)
                 setMsg(null)
               }}
-              editable={!sent}
+              autoCapitalize="none"
+              autoCorrect={false}
             />
-            {sent && (
-              <>
-                <Input
-                  label={t("auth.resetToken")}
-                  placeholder="Paste the token"
-                  autoCapitalize="none"
-                  value={token}
-                  onChangeText={(v) => {
-                    setToken(v)
-                    setMsg(null)
-                  }}
-                />
-                <Input
-                  label={t("auth.newPassword")}
-                  hint="At least 8 characters"
-                  secureTextEntry
-                  autoComplete="new-password"
-                  value={next}
-                  onChangeText={(v) => {
-                    setNext(v)
-                    setMsg(null)
-                  }}
-                />
-              </>
-            )}
-            {!!msg && (
-              <Text style={[type.bodySm, { color: theme.textMuted }]}>
-                {msg}
-              </Text>
-            )}
-          </View>
-        </Enter>
-
-        <View style={{ marginTop: "auto", gap: 4, paddingTop: 16 }}>
-          {!sent ? (
-            <Button
-              title={t("auth.sendToken")}
-              onPress={() => requestM.mutate()}
-              loading={requestM.isPending}
-              disabled={!email}
-              size="lg"
-            />
-          ) : (
-            <Button
-              title={t("auth.setNewPassword")}
-              onPress={() => confirmM.mutate()}
-              loading={confirmM.isPending}
-              disabled={!token || next.length < 8}
-              size="lg"
-            />
-          )}
-          <Pressable
-            onPress={() => router.replace("/(auth)/login")}
-            hitSlop={8}
-            style={{ alignItems: "center", paddingVertical: 12 }}
-          >
-            <Text
-              style={{
-                fontFamily: fonts.sans,
-                fontSize: 15,
-                color: theme.textMuted,
+            <Input
+              label={t("auth.newPassword")}
+              value={next}
+              onChangeText={(v) => {
+                setNext(v)
+                setMsg(null)
               }}
-            >
-              {t("auth.remembered")}{" "}
-              <Text style={{ color: theme.accent, fontWeight: "600" }}>
-                {t("auth.signIn")}
-              </Text>
+              secureTextEntry
+              autoComplete="new-password"
+              textContentType="newPassword"
+              hint={short ? t("auth.passwordTooShort") : t("auth.passwordHint")}
+            />
+          </>
+        ) : null}
+
+        {msg ? (
+          <PaperCard tone="plain">
+            <Text style={[type.bodySm, { color: theme.text, lineHeight: 20 }]}>
+              {msg}
             </Text>
-          </Pressable>
-        </View>
-      </KeyboardSafeScroll>
-    </SafeAreaView>
+          </PaperCard>
+        ) : null}
+      </View>
+    </AuthShell>
   )
 }
