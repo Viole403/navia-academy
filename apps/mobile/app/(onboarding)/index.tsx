@@ -1,17 +1,21 @@
-import { useCallback, useState } from "react"
-import { Pressable, ScrollView, Text, View } from "react-native"
-import { SafeAreaView, useSafeAreaInsets } from "react-native-safe-area-context"
+import { useCallback, useMemo, useState } from "react"
+import { Pressable, Text, View } from "react-native"
 import { router } from "expo-router"
 import { useMutation } from "@tanstack/react-query"
-import { Button } from "@/components/ui/Button"
-import { Enter } from "@/components/ui/Enter"
-import { Motif } from "@/components/ui/Motif"
-import { SegmentedControl } from "@/components/ui/SegmentedControl"
-import { ThemeSwatch } from "@/components/ui/ThemeSwatch"
+import {
+  OnbShell,
+  OnbRise,
+  OnbChoiceCard,
+} from "@/components/onboarding/OnbShell"
+import { LiftedFace, PaperCard } from "@/components/study/PaperCard"
+import { Shifu } from "@/components/study/Shifu"
+import { Slide } from "@/components/onboarding/Slide"
 import { useTheme } from "@/theme/ThemeProvider"
-import type { Theme, ThemeDefinition, ThemeMode } from "@/theme/colors"
 import { fonts, type } from "@/theme/typography"
+import { paperType, families } from "@/theme/paperType"
+import type { ThemeId, ThemeMode } from "@/theme/colors"
 import { useOnboardingStore, type ScriptPref } from "@/store/onboarding"
+import { useThemePrefs } from "@/store/theme"
 import {
   LANGUAGES,
   examDisplayName,
@@ -19,37 +23,77 @@ import {
   languageInfo,
   motifChar,
 } from "@/lib/languages"
-import { useThemePrefs } from "@/store/theme"
 import { progress } from "@/api/endpoints"
 import { useT, type I18nKey } from "@/i18n"
+import { tap } from "@/utils/feedback"
 
-const STEPS = ["language", "script", "theme", "goal", "ready"] as const
+const STEPS = [
+  "welcome",
+  "language",
+  "script",
+  "theme",
+  "goal",
+  "reminders",
+  "ready",
+] as const
 type Step = (typeof STEPS)[number]
 
 const KICKERS: Record<Step, I18nKey> = {
+  welcome: "ob.kWelcome",
   language: "ob.kLanguage",
   script: "ob.kScript",
   theme: "ob.kTheme",
   goal: "ob.kGoal",
+  reminders: "ob.kReminders",
   ready: "ob.kReady",
 }
 
 const TITLES: Record<Step, I18nKey> = {
+  welcome: "ob.tWelcome",
   language: "ob.tLanguage",
   script: "ob.tScript",
   theme: "ob.tTheme",
   goal: "ob.tGoal",
+  reminders: "ob.tReminders",
   ready: "ob.tReady",
 }
 
 const SUBS: Record<Step, I18nKey> = {
+  welcome: "ob.sWelcome",
   language: "ob.sLanguage",
   script: "ob.sScript",
   theme: "ob.sTheme",
   goal: "ob.sGoal",
+  reminders: "ob.sReminders",
   ready: "ob.sReady",
 }
 
+const GOALS: { min: number; key: I18nKey }[] = [
+  { min: 5, key: "ob.gCasual" },
+  { min: 10, key: "ob.gSteady" },
+  { min: 15, key: "ob.gSerious" },
+  { min: 30, key: "ob.gDevotee" },
+]
+
+/**
+ * Onboarding — seven steps.
+ *
+ * Page order lives in one array and both the dots and the forward/back
+ * navigation derive from it, so inserting a step moves every dot without a
+ * number being edited anywhere. The dots are the **only** progress indicator;
+ * numbered step pills used to sit above the script and placement pages and were
+ * deleted, because two indicators saying the same thing in different units and
+ * disagreeing about how many steps there are is worse than one.
+ *
+ * The **script** step is second, before anything else asks a question, and it is
+ * skipped for non-character languages — the placement test below reads the
+ * script preference, so it has to exist before that test can run.
+ *
+ * Nothing here requests a native permission. The reminder step sets a
+ * preference; the permission prompt belongs to the person who turns reminders on
+ * for good, in settings, and asking at onboarding would be asking for something
+ * they have not yet decided they want.
+ */
 export default function Onboarding() {
   const { theme, catalog, materialYouAvailable } = useTheme()
   const t = useT()
@@ -66,449 +110,382 @@ export default function Onboarding() {
     setExamType,
   } = useOnboardingStore()
   const [stepIdx, setStepIdx] = useState(0)
+  const [reminders, setReminders] = useState(false)
   const step = STEPS[stepIdx]
-  const insets = useSafeAreaInsets()
 
   const syncOnboarding = useMutation({
     mutationFn: async () =>
       progress.update({
-        onboarding: { completed: true, step: 5 },
-        data: { script, language, examType },
+        onboarding: { completed: true, step: STEPS.length },
+        data: { script, language, examType, daily_minutes: dailyMinutes },
       }),
     onError: () => undefined,
   })
 
-  const next = useCallback(() => {
-    let nextIdx = stepIdx + 1
-    if (STEPS[stepIdx] === "language" && language !== "zh") nextIdx += 1
-    if (nextIdx < STEPS.length) {
-      setStepIdx(nextIdx)
-    } else {
-      syncOnboarding.mutate()
-      complete()
-      router.replace("/(auth)")
-    }
-  }, [stepIdx, complete, syncOnboarding, language])
+  /** The steps a non-character language actually walks. */
+  const visible = useMemo(
+    () => STEPS.filter((s) => !(s === "script" && !isCharScript(language))),
+    [language]
+  )
 
-  const back = useCallback(() => {
-    // Mirror the forward skip: theme -> language directly for non-zh.
-    let prevIdx = stepIdx - 1
-    if (STEPS[stepIdx] === "theme" && language !== "zh") prevIdx -= 1
-    if (prevIdx >= 0) setStepIdx(prevIdx)
-  }, [stepIdx, language])
+  const go = useCallback(
+    (delta: number) => {
+      const at = visible.indexOf(step)
+      const next = at + delta
+      if (next < 0) return
+      if (next >= visible.length) {
+        syncOnboarding.mutate()
+        complete()
+        router.replace("/(auth)")
+        return
+      }
+      tap()
+      setStepIdx(STEPS.indexOf(visible[next]))
+    },
+    [visible, step, syncOnboarding, complete]
+  )
 
-  const ctaDisabled =
-    (step === "language" && !examType) ||
-    (step === "script" && language === "zh" && !script)
-
-  const stepChars: Record<Step, string> = {
-    language: motifChar(language),
-    script: "文",
-    theme: "◐",
-    goal: "→",
-    ready: "✓",
-  }
+  const info = languageInfo(language)
 
   return (
-    <SafeAreaView style={{ flex: 1, backgroundColor: theme.bg }}>
-      <ScrollView
-        contentContainerStyle={{ padding: 28, gap: 28, flexGrow: 1 }}
-        showsVerticalScrollIndicator={false}
-      >
-        {/* Editorial header */}
-        <View style={{ gap: 20 }}>
-          <View
-            style={{
-              flexDirection: "row",
-              alignItems: "flex-start",
-              justifyContent: "space-between",
+    <OnbShell
+      dots={visible.length}
+      stepIndex={visible.indexOf(step)}
+      onBack={visible.indexOf(step) > 0 ? () => go(-1) : undefined}
+      scroll={step !== "welcome"}
+      art={
+        step === "welcome"
+          ? "panorama"
+          : step === "script"
+            ? "branch"
+            : step === "ready"
+              ? "pagoda"
+              : "none"
+      }
+      footer={
+        step === "welcome" ? (
+          <LiftedFace
+            title={t("common.begin")}
+            face={theme.accent}
+            onPress={() => go(1)}
+          />
+        ) : step === "ready" ? (
+          <LiftedFace
+            title={t("place.start")}
+            face={theme.green}
+            onPress={() => {
+              syncOnboarding.mutate()
+              complete()
+              router.replace("/(auth)")
             }}
-          >
-            <View style={{ flex: 1, gap: 10 }}>
-              <Text style={[type.labelSm, { color: theme.textMuted }]}>
-                {t(KICKERS[step])}
-              </Text>
-              <Text style={[type.h1, { color: theme.text }]}>
-                {t(TITLES[step])}
-              </Text>
-              <Text style={[type.bodySm, { color: theme.textMuted }]}>
-                {t(SUBS[step])}
-              </Text>
-            </View>
-            <Motif char={stepChars[step]} size={64} />
-          </View>
-
-          {/* Step indicator — hairline */}
-          <View style={{ flexDirection: "row", gap: 8 }}>
-            {STEPS.map((s, i) => (
-              <View
-                key={s}
-                style={{
-                  flex: 1,
-                  height: 2,
-                  backgroundColor: i <= stepIdx ? theme.text : theme.border,
-                }}
-              />
-            ))}
-          </View>
+          />
+        ) : (
+          <LiftedFace
+            title={t("common.continue")}
+            face={theme.accent}
+            disabled={
+              (step === "language" && !examType) ||
+              (step === "script" && !script)
+            }
+            onPress={() => go(1)}
+          />
+        )
+      }
+    >
+      <Slide stepKey={step}>
+        <View style={{ gap: 4 }}>
+          <Text style={[type.labelSm, { color: theme.textMuted }]}>
+            {t(KICKERS[step])}
+          </Text>
+          <Text style={[type.display, { color: theme.text, fontSize: 32 }]}>
+            {t(TITLES[step])}
+          </Text>
         </View>
 
-        {/* Step content */}
-        <View>
-          {step === "language" && (
-            <View style={{ gap: 20 }}>
-              {LANGUAGES.map((l, i) => {
-                const selected = language === l.code
-                return (
-                  <Enter key={l.code} index={i}>
-                    <Pressable
-                      onPress={() => {
-                        setLanguage(l.code)
-                        setExamType(languageInfo(l.code).examTypes[0] ?? "")
-                      }}
-                      style={{
-                        paddingVertical: 20,
-                        borderTopWidth: 1,
-                        borderBottomWidth: 1,
-                        borderColor: selected ? theme.text : theme.border,
-                        backgroundColor: selected
-                          ? theme.surface
-                          : "transparent",
-                        paddingHorizontal: 16,
-                        marginHorizontal: -16,
-                        flexDirection: "row",
-                        alignItems: "center",
-                        gap: 20,
-                      }}
-                    >
-                      <Text
-                        style={{
-                          fontFamily: fonts.serif,
-                          fontSize: 32,
-                          color: selected ? theme.accent : theme.text,
-                          ...(isCharScript(l.code)
-                            ? { width: 96 }
-                            : { minWidth: 96, flexShrink: 1 }),
-                        }}
-                      >
-                        {l.nativeName}
-                      </Text>
-                      <View style={{ flex: 1 }}>
-                        <Text style={[type.h3, { color: theme.text }]}>
-                          {l.name}
-                        </Text>
-                        <Text
-                          style={[
-                            type.bodySm,
-                            { color: theme.textMuted, marginTop: 2 },
-                          ]}
-                        >
-                          {languageInfo(l.code)
-                            .examTypes.map(examDisplayName)
-                            .join(" · ")}
-                        </Text>
-                      </View>
-                      {selected && (
-                        <View
-                          style={{
-                            width: 24,
-                            height: 24,
-                            borderRadius: 12,
-                            backgroundColor: theme.accent,
-                            alignItems: "center",
-                            justifyContent: "center",
-                          }}
-                        >
-                          <Text
-                            style={{
-                              color: theme.white,
-                              fontSize: 12,
-                              fontWeight: "700",
-                            }}
-                          >
-                            ✓
-                          </Text>
-                        </View>
-                      )}
-                    </Pressable>
-                  </Enter>
-                )
-              })}
-            </View>
-          )}
+        <Text style={[type.bodySm, { color: theme.textMuted }]}>
+          {t(SUBS[step])}
+        </Text>
 
-          {step === "script" && (
-            <View style={{ gap: 20 }}>
-              {[
-                {
-                  id: "simplified" as ScriptPref,
-                  exam: "hsk",
-                  display: "简体",
-                  name: "Simplified",
-                  hint: "Mainland China · Singapore · Malaysia",
-                },
-                {
-                  id: "traditional" as ScriptPref,
-                  exam: "tocfl",
-                  display: "繁體",
-                  name: "Traditional",
-                  hint: "Taiwan · Hong Kong · Macau",
-                },
-              ].map((s, i) => {
-                const selected = script === s.id
-                return (
-                  <Enter key={s.id} index={i}>
-                    <Pressable
-                      onPress={() => {
-                        setScript(s.id)
-                        setExamType(s.exam)
-                      }}
-                      style={{
-                        paddingVertical: 24,
-                        borderTopWidth: 1,
-                        borderBottomWidth: 1,
-                        borderColor: selected ? theme.text : theme.border,
-                        backgroundColor: selected
-                          ? theme.surface
-                          : "transparent",
-                        paddingHorizontal: 16,
-                        marginHorizontal: -16,
-                        flexDirection: "row",
-                        alignItems: "center",
-                        gap: 20,
-                      }}
-                    >
-                      <Text
-                        style={{
-                          fontFamily: fonts.serif,
-                          fontSize: 44,
-                          color: selected ? theme.accent : theme.text,
-                          width: 64,
-                        }}
-                      >
-                        {s.display}
-                      </Text>
-                      <View style={{ flex: 1 }}>
-                        <Text style={[type.h3, { color: theme.text }]}>
-                          {s.name}
-                        </Text>
-                        <Text
-                          style={[
-                            type.bodySm,
-                            { color: theme.textMuted, marginTop: 2 },
-                          ]}
-                        >
-                          {s.hint}
-                        </Text>
-                      </View>
-                      {selected && (
-                        <View
-                          style={{
-                            width: 24,
-                            height: 24,
-                            borderRadius: 12,
-                            backgroundColor: theme.accent,
-                            alignItems: "center",
-                            justifyContent: "center",
-                          }}
-                        >
-                          <Text
-                            style={{
-                              color: theme.white,
-                              fontSize: 12,
-                              fontWeight: "700",
-                            }}
-                          >
-                            ✓
-                          </Text>
-                        </View>
-                      )}
-                    </Pressable>
-                  </Enter>
-                )
-              })}
-            </View>
-          )}
+        {step === "welcome" ? (
+          <View
+            style={{
+              flex: 1,
+              minHeight: 0,
+              alignItems: "center",
+              justifyContent: "flex-end",
+            }}
+          >
+            <Shifu pose="bow" size={150} fill />
+          </View>
+        ) : null}
 
-          {step === "theme" && (
-            <View style={{ gap: 28 }}>
-              {/* Theme swatch grid */}
-              <View style={{ gap: 12 }}>
-                <Text style={[type.labelSm, { color: theme.textMuted }]}>
-                  {t("ob.baseTheme")}
-                </Text>
-                <View
-                  style={{ flexDirection: "row", flexWrap: "wrap", gap: 10 }}
-                >
-                  {catalog.map((t) => (
-                    <ThemeSwatch
-                      key={t.id}
-                      def={t}
-                      mode={mode}
-                      selected={themeId === t.id}
-                      onPress={() => setThemeId(t.id)}
-                    />
-                  ))}
-                  {!materialYouAvailable && (
-                    <View
-                      style={{
-                        width: 96,
-                        height: 96,
-                        borderStyle: "dashed",
-                        borderWidth: 1,
-                        borderColor: theme.border,
-                        borderRadius: 4,
-                        padding: 8,
-                        justifyContent: "flex-end",
-                        opacity: 0.4,
-                      }}
-                    >
-                      <Text
-                        style={{
-                          color: theme.textMuted,
-                          fontSize: 10,
-                          fontWeight: "700",
-                        }}
-                      >
-                        {t("ob.materialYou")}
-                      </Text>
-                      <Text style={{ color: theme.textDim, fontSize: 9 }}>
-                        {t("ob.android12")}
-                      </Text>
-                    </View>
-                  )}
-                </View>
-              </View>
+        {step === "language" ? (
+          <View style={{ gap: 10 }}>
+            {LANGUAGES.map((l) => {
+              const selected = l.code === language
+              return (
+                <OnbChoiceCard
+                  key={l.code}
+                  title={l.nativeName}
+                  sub={
+                    l.code === "zh"
+                      ? "HSK · TOCFL"
+                      : l.examTypes.map(examDisplayName).join(" · ")
+                  }
+                  glyph={motifChar(l.code)}
+                  selected={selected}
+                  onPress={() => {
+                    tap()
+                    setLanguage(l.code)
+                    const types = languageInfo(l.code).examTypes
+                    if (!examType || !types.includes(examType))
+                      setExamType(types[0])
+                  }}
+                />
+              )
+            })}
+          </View>
+        ) : null}
 
-              {/* Mode */}
-              <View style={{ gap: 10 }}>
-                <Text style={[type.labelSm, { color: theme.textMuted }]}>
-                  {t("ob.appearance")}
-                </Text>
-                <SegmentedControl<ThemeMode>
-                  options={[
-                    { id: "system", label: t("ob.modeSystem") },
-                    { id: "light", label: t("ob.modeLight") },
-                    { id: "dark", label: t("ob.modeDark") },
-                    { id: "amoled", label: "AMOLED" },
-                  ]}
-                  value={mode}
-                  onChange={setMode}
+        {step === "script" ? (
+          <View style={{ flexDirection: "row", gap: 12 }}>
+            {(["simplified", "traditional"] as ScriptPref[]).map((s) => (
+              <View key={s} style={{ flex: 1 }}>
+                <OnbChoiceCard
+                  tall
+                  glyph={s === "simplified" ? "学" : "學"}
+                  title={s === "simplified" ? "简体" : "繁體"}
+                  sub={
+                    s === "simplified"
+                      ? t("ob.scriptSimplified")
+                      : t("ob.scriptTraditional")
+                  }
+                  selected={script === s}
+                  onPress={() => {
+                    tap()
+                    setScript(s)
+                  }}
                 />
               </View>
-            </View>
-          )}
+            ))}
+          </View>
+        ) : null}
 
-          {step === "goal" && (
-            <View style={{ gap: 0 }}>
-              {[
-                { min: 5, label: t("ob.gCasual") },
-                { min: 10, label: t("ob.gSteady") },
-                { min: 15, label: t("ob.gSerious") },
-                { min: 30, label: t("ob.gDevotee") },
-              ].map((g, i, arr) => {
-                const selected = dailyMinutes === g.min
+        {step === "theme" ? (
+          <View style={{ gap: 12 }}>
+            <View style={{ flexDirection: "row", flexWrap: "wrap", gap: 8 }}>
+              {catalog.map((def) => {
+                const selected = themeId === def.id
                 return (
-                  <Enter key={g.min} index={i}>
-                    <Pressable
-                      onPress={() => setDailyMinutes(g.min)}
+                  <Pressable
+                    key={def.id}
+                    onPress={() => {
+                      tap()
+                      setThemeId(def.id as ThemeId)
+                    }}
+                    style={{
+                      width: 104,
+                      padding: 12,
+                      borderRadius: 14,
+                      borderWidth: selected ? 2 : 1,
+                      borderColor: selected ? theme.accent : theme.border,
+                      backgroundColor: selected
+                        ? theme.accent + "14"
+                        : theme.surface,
+                      gap: 8,
+                    }}
+                  >
+                    <View style={{ flexDirection: "row", gap: 4 }}>
+                      {[
+                        def.light.bg,
+                        def.light.accent,
+                        def.light.accent2,
+                        def.light.green,
+                      ].map((c, i) => (
+                        <View
+                          key={i}
+                          style={{
+                            width: 16,
+                            height: 16,
+                            borderRadius: 8,
+                            backgroundColor: c,
+                          }}
+                        />
+                      ))}
+                    </View>
+                    <Text
+                      numberOfLines={1}
                       style={{
-                        paddingVertical: 20,
-                        paddingHorizontal: 16,
-                        borderTopWidth: 1,
-                        borderTopColor: theme.border,
-                        borderBottomWidth: i === arr.length - 1 ? 1 : 0,
-                        borderBottomColor: theme.border,
-                        backgroundColor: selected
-                          ? theme.surface
-                          : "transparent",
-                        marginHorizontal: -12,
-                        flexDirection: "row",
-                        alignItems: "baseline",
-                        justifyContent: "space-between",
+                        color: theme.text,
+                        fontFamily: fonts.sans,
+                        fontWeight: "700",
+                        fontSize: 12.5,
                       }}
                     >
-                      <View
-                        style={{
-                          flexDirection: "row",
-                          alignItems: "baseline",
-                          gap: 8,
-                        }}
-                      >
-                        <Text
-                          style={{
-                            fontFamily: fonts.serif,
-                            fontSize: 32,
-                            color: selected ? theme.accent : theme.text,
-                            fontWeight: "400",
-                          }}
-                        >
-                          {g.min}
-                        </Text>
-                        <Text style={[type.body, { color: theme.textMuted }]}>
-                          {t("ob.minutes")}
-                        </Text>
-                      </View>
-                      <Text
-                        style={[
-                          type.labelSm,
-                          { color: selected ? theme.accent : theme.textMuted },
-                        ]}
-                      >
-                        {g.label}
-                      </Text>
-                    </Pressable>
-                  </Enter>
+                      {def.name}
+                    </Text>
+                  </Pressable>
                 )
               })}
             </View>
-          )}
-          {step === "ready" && (
-            <View style={{ gap: 16 }}>
-              <Motif char={motifChar(language)} size={96} />
-              <View style={{ gap: 8 }}>
-                <Text style={[type.h3, { color: theme.text }]}>
+            {materialYouAvailable ? (
+              <Text style={[type.caption, { color: theme.textDim }]}>
+                {t("ob.materialYou")} · {t("ob.android12")}
+              </Text>
+            ) : null}
+            <View style={{ flexDirection: "row", gap: 8 }}>
+              {(
+                [
+                  ["system", t("ob.modeSystem")],
+                  ["light", t("ob.modeLight")],
+                  ["dark", t("ob.modeDark")],
+                  ["amoled", "AMOLED"],
+                ] as [ThemeMode, string][]
+              ).map(([m, label]) => {
+                const selected = mode === m
+                return (
+                  <Pressable
+                    key={m}
+                    onPress={() => {
+                      tap()
+                      setMode(m)
+                    }}
+                    style={{
+                      flex: 1,
+                      paddingVertical: 10,
+                      borderRadius: 12,
+                      borderWidth: 1,
+                      borderColor: selected ? theme.accent : theme.border,
+                      backgroundColor: selected
+                        ? theme.accent + "14"
+                        : "transparent",
+                      alignItems: "center",
+                    }}
+                  >
+                    <Text
+                      style={{
+                        color: selected ? theme.accent : theme.textMuted,
+                        fontFamily: fonts.sans,
+                        fontWeight: "700",
+                        fontSize: 12,
+                      }}
+                    >
+                      {label}
+                    </Text>
+                  </Pressable>
+                )
+              })}
+            </View>
+          </View>
+        ) : null}
+
+        {step === "goal" ? (
+          <View style={{ gap: 8 }}>
+            {GOALS.map((g) => {
+              const selected = dailyMinutes === g.min
+              return (
+                <Pressable
+                  key={g.min}
+                  onPress={() => {
+                    tap()
+                    setDailyMinutes(g.min)
+                  }}
+                >
+                  <View
+                    style={{
+                      flexDirection: "row",
+                      alignItems: "baseline",
+                      justifyContent: "space-between",
+                      paddingVertical: 16,
+                      paddingHorizontal: 14,
+                      borderRadius: 14,
+                      borderWidth: 1,
+                      borderColor: selected ? theme.accent : theme.border,
+                      backgroundColor: selected
+                        ? theme.accent + "0F"
+                        : "transparent",
+                    }}
+                  >
+                    <View
+                      style={{
+                        flexDirection: "row",
+                        alignItems: "baseline",
+                        gap: 6,
+                      }}
+                    >
+                      <Text
+                        style={{
+                          fontFamily: fonts.serif,
+                          fontSize: 30,
+                          color: selected ? theme.accent : theme.text,
+                        }}
+                      >
+                        {g.min}
+                      </Text>
+                      <Text style={[type.bodySm, { color: theme.textMuted }]}>
+                        {t("ob.minutes")}
+                      </Text>
+                    </View>
+                    <Text
+                      style={[
+                        type.labelSm,
+                        { color: selected ? theme.accent : theme.textMuted },
+                      ]}
+                    >
+                      {t(g.key)}
+                    </Text>
+                  </View>
+                </Pressable>
+              )
+            })}
+          </View>
+        ) : null}
+
+        {step === "reminders" ? (
+          <View style={{ gap: 12 }}>
+            <OnbChoiceCard
+              title={t("ob.reminder")}
+              sub={t("profile.reminderHint")}
+              glyph="🔔"
+              selected={reminders}
+              onPress={() => {
+                tap()
+                setReminders((r) => !r)
+              }}
+            />
+            <Text style={[type.caption, { color: theme.textDim }]}>
+              {t("ob.reminderLater")}
+            </Text>
+          </View>
+        ) : null}
+
+        {step === "ready" ? (
+          <PaperCard>
+            <View
+              style={{ flexDirection: "row", alignItems: "center", gap: 12 }}
+            >
+              <Text style={{ fontSize: 30 }}>📖</Text>
+              <View style={{ flex: 1, gap: 2 }}>
+                <Text
+                  style={[
+                    type.body,
+                    {
+                      color: theme.text,
+                      fontWeight: "700",
+                      fontFamily: fonts.sans,
+                    },
+                  ]}
+                >
                   {t("place.findLevel")}
                 </Text>
-                <Text style={[type.bodySm, { color: theme.textMuted }]}>
+                <Text style={[type.caption, { color: theme.textMuted }]}>
                   {t("place.introA")}
                 </Text>
               </View>
             </View>
-          )}
-        </View>
-        <View
-          style={{
-            paddingTop: 8,
-            paddingBottom: Math.max(insets.bottom, 16) + 12,
-            flexDirection: "row",
-            gap: 12,
-          }}
-        >
-          {stepIdx > 0 && (
-            <View style={{ flex: 1 }}>
-              <Button
-                title={t("common.back")}
-                variant="secondary"
-                onPress={back}
-                size="lg"
-              />
-            </View>
-          )}
-          <View style={{ flex: 2 }}>
-            <Button
-              title={
-                stepIdx === STEPS.length - 1
-                  ? t("common.begin")
-                  : t("common.continue")
-              }
-              onPress={next}
-              disabled={ctaDisabled}
-              size="lg"
-            />
-          </View>
-        </View>
-      </ScrollView>
-    </SafeAreaView>
+          </PaperCard>
+        ) : null}
+      </Slide>
+    </OnbShell>
   )
 }
