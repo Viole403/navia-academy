@@ -1,4 +1,5 @@
 import { Platform } from "react-native"
+import { translate, useLocaleStore } from "@/i18n"
 // eslint-disable-next-line @typescript-eslint/no-require-imports
 let Notifications: any = null
 try {
@@ -23,6 +24,10 @@ export async function requestPermissions(): Promise<boolean> {
   return status === "granted"
 }
 
+function locale() {
+  return useLocaleStore.getState().locale
+}
+
 export async function scheduleDailyStreakReminder(
   hour = 20,
   minute = 0
@@ -37,8 +42,11 @@ export async function scheduleDailyStreakReminder(
   }
   await Notifications.scheduleNotificationAsync({
     content: {
-      title: "Don't break your streak",
-      body: "A quick 5-minute review keeps the chain alive.",
+      // A notification is the one string that reaches someone with the app
+      // closed, so it cannot fall back to a hardcoded English literal — the
+      // learner's chosen locale has to be read at schedule time.
+      title: translate(locale(), "notif.streakTitle"),
+      body: translate(locale(), "notif.streakBody"),
     },
     trigger: {
       type: Notifications.SchedulableTriggerInputTypes.DAILY,
