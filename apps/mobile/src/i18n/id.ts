@@ -520,6 +520,13 @@ const id: Record<I18nKey, string> = {
   "learn.charsDesc": "Radikal dan karakter, lengkap dengan jumlah goresan.",
   "lib.open": "Buka",
   "read.playAll": "Putar cerita",
+  "read.tapHint":
+    "Ketuk kata mana pun untuk mencarinya tanpa meninggalkan halaman.",
+  "books.kicker": "Pustaka",
+  "books.title": "Buku",
+  "books.count": "%d bacaan",
+  "books.general": "Umum",
+  "books.tapHint": "Bacaan bertingkat. Ketuk kata untuk mencarinya.",
   "read.replay": "Ulangi",
   "read.words": "kata",
   "conv.playAll": "Putar dialog",

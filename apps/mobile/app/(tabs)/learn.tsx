@@ -88,6 +88,7 @@ export default function LearnTab() {
       | "/review"
       | "/vocab"
       | "/characters"
+      | "/books"
       | "/game-match"
       | "/library"
       | "/program"
@@ -122,6 +123,12 @@ export default function LearnTab() {
         : t("learn.wordMatch"),
       body: `${t("learn.pair")} ${wordLabel(language, false)} ${t("learn.toMeanings")}`,
       route: "/game-match",
+    },
+    {
+      tag: t("learn.drills").toUpperCase(),
+      title: t("books.title"),
+      body: t("books.tapHint"),
+      route: "/books",
     },
     {
       tag: t("learn.drills").toUpperCase(),

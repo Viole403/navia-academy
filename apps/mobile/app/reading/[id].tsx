@@ -1,1 +1,1 @@
-export { ReadingView as default } from "@/screens/ReadingView"
+export { StoryReader as default } from "@/screens/StoryReader"
