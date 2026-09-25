@@ -20,6 +20,7 @@ import { EmptyState } from "@/components/ui/EmptyState"
 import { Input } from "@/components/ui/Input"
 import { KeyboardSafeScroll } from "@/components/ui/KeyboardSafeScroll"
 import { Motif } from "@/components/ui/Motif"
+import { StudyCard } from "@/components/study/StudyCard"
 import { useTheme } from "@/theme/ThemeProvider"
 import { fonts, type } from "@/theme/typography"
 import type { ThemeId, ThemeMode } from "@/theme/colors"
@@ -248,6 +249,40 @@ export default function ProfileTab() {
               </Card>
             )}
 
+            {/* Hub — deep links into the study screens */}
+            <View style={{ flexDirection: "row", gap: 12 }}>
+              <View style={{ flex: 1 }}>
+                <StudyCard
+                  tone="week"
+                  title={t("journey.title")}
+                  onPress={() => router.push("/progress")}
+                />
+              </View>
+              <View style={{ flex: 1 }}>
+                <StudyCard
+                  tone="challenge"
+                  title={t("chal.title")}
+                  onPress={() => router.push("/challenges")}
+                />
+              </View>
+            </View>
+            <View style={{ flexDirection: "row", gap: 12 }}>
+              <View style={{ flex: 1 }}>
+                <StudyCard
+                  tone="review"
+                  title={t("badges.title")}
+                  onPress={() => router.push("/achievements")}
+                />
+              </View>
+              <View style={{ flex: 1 }}>
+                <StudyCard
+                  tone="neutral"
+                  title={t("notif.title")}
+                  onPress={() => router.push("/notifications")}
+                />
+              </View>
+            </View>
+
             <View
               style={{
                 flexDirection: "row",
@@ -282,6 +317,16 @@ export default function ProfileTab() {
 
         {section === "tasks" && (
           <View style={{ gap: 16 }}>
+            <Pressable onPress={() => router.push("/tasks")}>
+              <Text
+                style={[
+                  type.bodySm,
+                  { color: theme.accent, fontWeight: "700" },
+                ]}
+              >
+                {t("tasks.title")} →
+              </Text>
+            </Pressable>
             <View style={{ gap: 10 }}>
               <Text style={[type.labelSm, { color: theme.textMuted }]}>
                 {t("profile.addTask")}

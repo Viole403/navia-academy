@@ -10,9 +10,10 @@ import { SafeAreaView } from "react-native-safe-area-context"
 import { Stack, useLocalSearchParams, useRouter } from "expo-router"
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query"
 import { Button } from "@/components/ui/Button"
-import { Card } from "@/components/ui/Card"
-import { Chip } from "@/components/ui/Chip"
 import { EmptyState } from "@/components/ui/EmptyState"
+import { StudyCard } from "@/components/study/StudyCard"
+import { LiftedButton } from "@/components/study/LiftedButton"
+import { CONTENT_MAX, spacing } from "@/components/study/tokens"
 import { useTheme } from "@/theme/ThemeProvider"
 import { fonts, type } from "@/theme/typography"
 import { progress } from "@/api/endpoints"
@@ -79,6 +80,11 @@ export default function VocabDetail() {
   const example =
     (w as { exampleSentence?: string; exampleTranslation?: string }) ?? {}
 
+  const goBack = () => {
+    if (router.canGoBack()) router.back()
+    else router.replace("/vocab")
+  }
+
   return (
     <SafeAreaView style={{ flex: 1, backgroundColor: theme.bg }}>
       <Stack.Screen options={{ headerShown: false }} />
@@ -94,7 +100,7 @@ export default function VocabDetail() {
           borderBottomColor: theme.border,
         }}
       >
-        <Pressable onPress={() => router.back()}>
+        <Pressable onPress={goBack}>
           <Text style={{ color: theme.textMuted, fontSize: 15 }}>
             ← {t("vocab.back")}
           </Text>
@@ -139,135 +145,143 @@ export default function VocabDetail() {
             message={t("vocab.notInDict")}
             glyph="？"
           />
-          <Button title={t("vocab.goBack")} onPress={() => router.back()} />
+          <Button title={t("vocab.goBack")} onPress={goBack} />
         </View>
       ) : (
         <ScrollView
-          contentContainerStyle={{ padding: 24, gap: 28, paddingBottom: 48 }}
+          contentContainerStyle={{
+            padding: spacing.screen,
+            paddingBottom: 48,
+            alignItems: "center",
+          }}
         >
-          {/* Headword masthead */}
-          <View style={{ gap: 8, alignItems: "center", paddingTop: 8 }}>
-            <Text
-              style={{
-                fontFamily: fonts.serif,
-                fontSize: 128,
-                lineHeight: 144,
-                color: theme.text,
-                fontWeight: "500",
-              }}
-            >
-              {headword(w)}
-            </Text>
-            <Text
-              style={[type.label, { color: theme.accent, letterSpacing: 2 }]}
-            >
-              {reading(w) ?? ""}
-            </Text>
-            {w.traditional && (
-              <Text style={[type.caption, { color: theme.textMuted }]}>
-                {t("vocab.traditional")} · {w.traditional}
-              </Text>
-            )}
-            <Text
-              style={{
-                fontFamily: fonts.serif,
-                fontStyle: "italic",
-                fontSize: 22,
-                color: theme.text,
-                textAlign: "center",
-                marginTop: 8,
-              }}
-            >
-              {(w as { translation?: string }).translation ?? ""}
-            </Text>
-          </View>
+          <View
+            style={{ width: "100%", maxWidth: CONTENT_MAX, gap: spacing.lg }}
+          >
+            {/* Headword masthead */}
+            <StudyCard tone="word">
+              <View style={{ gap: 8, alignItems: "center", paddingTop: 8 }}>
+                <Text
+                  style={{
+                    fontFamily: fonts.serif,
+                    fontSize: 110,
+                    lineHeight: 126,
+                    color: theme.text,
+                    fontWeight: "500",
+                    textAlign: "center",
+                  }}
+                >
+                  {headword(w)}
+                </Text>
+                <Text
+                  style={[
+                    type.label,
+                    { color: theme.accent, letterSpacing: 2 },
+                  ]}
+                >
+                  {reading(w) ?? ""}
+                </Text>
+                {w.traditional && (
+                  <Text style={[type.caption, { color: theme.textMuted }]}>
+                    {t("vocab.traditional")} · {w.traditional}
+                  </Text>
+                )}
+                <Text
+                  style={{
+                    fontFamily: fonts.serif,
+                    fontStyle: "italic",
+                    fontSize: 22,
+                    color: theme.text,
+                    textAlign: "center",
+                    marginTop: 8,
+                  }}
+                >
+                  {(w as { translation?: string }).translation ?? ""}
+                </Text>
+              </View>
+            </StudyCard>
 
-          <View style={{ height: 1, backgroundColor: theme.border }} />
+            <View style={{ height: 1, backgroundColor: theme.border }} />
 
-          {/* Tags / exam mappings */}
-          {w.examMappings && Object.keys(w.examMappings).length > 0 && (
-            <View style={{ gap: 12 }}>
-              <Text style={[type.labelSm, { color: theme.textMuted }]}>
-                {t("vocab.includedIn")}
-              </Text>
-              <View style={{ flexDirection: "row", flexWrap: "wrap", gap: 8 }}>
-                {Object.entries(w.examMappings)
-                  .filter(([k]) => k !== "metadata")
-                  .map(([exam, level]) => (
-                    <View
-                      key={`${exam}-${String(level)}`}
-                      style={{
-                        paddingHorizontal: 10,
-                        paddingVertical: 5,
-                        borderWidth: 1,
-                        borderColor: theme.border,
-                        borderRadius: 999,
-                      }}
-                    >
-                      <Text
+            {/* Tags / exam mappings */}
+            {w.examMappings && Object.keys(w.examMappings).length > 0 && (
+              <StudyCard tone="neutral" title={t("vocab.includedIn")}>
+                <View
+                  style={{ flexDirection: "row", flexWrap: "wrap", gap: 8 }}
+                >
+                  {Object.entries(w.examMappings)
+                    .filter(([k]) => k !== "metadata")
+                    .map(([exam, level]) => (
+                      <View
+                        key={`${exam}-${String(level)}`}
                         style={{
-                          color: theme.textMuted,
-                          fontSize: 11,
-                          letterSpacing: 0.5,
-                          fontWeight: "600",
+                          paddingHorizontal: 10,
+                          paddingVertical: 5,
+                          borderWidth: 1,
+                          borderColor: theme.border,
+                          borderRadius: 999,
                         }}
                       >
-                        {exam.toUpperCase()} {String(level).toUpperCase()}
-                      </Text>
-                    </View>
-                  ))}
-              </View>
+                        <Text
+                          style={{
+                            color: theme.textMuted,
+                            fontSize: 11,
+                            letterSpacing: 0.5,
+                            fontWeight: "600",
+                          }}
+                        >
+                          {exam.toUpperCase()} {String(level).toUpperCase()}
+                        </Text>
+                      </View>
+                    ))}
+                </View>
+              </StudyCard>
+            )}
+
+            {/* Example */}
+            {(example.exampleSentence || example.exampleTranslation) && (
+              <StudyCard tone="neutral" title={t("vocab.inContext")}>
+                <View style={{ gap: 10 }}>
+                  {example.exampleSentence && (
+                    <Text
+                      style={{
+                        fontFamily: fonts.serif,
+                        fontSize: 22,
+                        lineHeight: 32,
+                        color: theme.text,
+                      }}
+                    >
+                      {example.exampleSentence}
+                    </Text>
+                  )}
+                  {example.exampleTranslation && (
+                    <Text style={[type.bodySm, { color: theme.textMuted }]}>
+                      {example.exampleTranslation}
+                    </Text>
+                  )}
+                </View>
+              </StudyCard>
+            )}
+
+            {/* Actions */}
+            <View style={{ gap: spacing.sm, marginTop: 8 }}>
+              <LiftedButton
+                title={
+                  tts.loading || tts.playing
+                    ? t("vocab.playing")
+                    : t("vocab.listen")
+                }
+                face={theme.accent2}
+                onPress={() => tts.play(headword(w))}
+              />
+              <LiftedButton
+                title={
+                  addToSrsM.isPending ? t("vocab.adding") : t("vocab.addReview")
+                }
+                face={theme.green}
+                onPress={() => addToSrsM.mutate()}
+              />
             </View>
-          )}
-
-          {/* Example */}
-          {(example.exampleSentence || example.exampleTranslation) && (
-            <Card>
-              <View style={{ gap: 10 }}>
-                <Text style={[type.labelSm, { color: theme.textMuted }]}>
-                  {t("vocab.inContext")}
-                </Text>
-                {example.exampleSentence && (
-                  <Text
-                    style={{
-                      fontFamily: fonts.serif,
-                      fontSize: 22,
-                      lineHeight: 32,
-                      color: theme.text,
-                    }}
-                  >
-                    {example.exampleSentence}
-                  </Text>
-                )}
-                {example.exampleTranslation && (
-                  <Text style={[type.bodySm, { color: theme.textMuted }]}>
-                    {example.exampleTranslation}
-                  </Text>
-                )}
-              </View>
-            </Card>
-          )}
-
-          {/* Actions */}
-          <View style={{ gap: 10, marginTop: 8 }}>
-            <Button
-              title={
-                tts.loading || tts.playing
-                  ? t("vocab.playing")
-                  : t("vocab.listen")
-              }
-              variant="secondary"
-              onPress={() => tts.play(headword(w))}
-              disabled={tts.loading}
-            />
-            <Button
-              title={
-                addToSrsM.isPending ? t("vocab.adding") : t("vocab.addReview")
-              }
-              variant="ghost"
-              onPress={() => addToSrsM.mutate()}
-              disabled={addToSrsM.isPending}
-            />
           </View>
         </ScrollView>
       )}

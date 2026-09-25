@@ -23,7 +23,7 @@ import { useThemePrefs } from "@/store/theme"
 import { progress } from "@/api/endpoints"
 import { useT, type I18nKey } from "@/i18n"
 
-const STEPS = ["language", "script", "theme", "goal"] as const
+const STEPS = ["language", "script", "theme", "goal", "ready"] as const
 type Step = (typeof STEPS)[number]
 
 const KICKERS: Record<Step, I18nKey> = {
@@ -31,6 +31,7 @@ const KICKERS: Record<Step, I18nKey> = {
   script: "ob.kScript",
   theme: "ob.kTheme",
   goal: "ob.kGoal",
+  ready: "ob.kReady",
 }
 
 const TITLES: Record<Step, I18nKey> = {
@@ -38,6 +39,7 @@ const TITLES: Record<Step, I18nKey> = {
   script: "ob.tScript",
   theme: "ob.tTheme",
   goal: "ob.tGoal",
+  ready: "ob.tReady",
 }
 
 const SUBS: Record<Step, I18nKey> = {
@@ -45,6 +47,7 @@ const SUBS: Record<Step, I18nKey> = {
   script: "ob.sScript",
   theme: "ob.sTheme",
   goal: "ob.sGoal",
+  ready: "ob.sReady",
 }
 
 export default function Onboarding() {
@@ -69,7 +72,7 @@ export default function Onboarding() {
   const syncOnboarding = useMutation({
     mutationFn: async () =>
       progress.update({
-        onboarding: { completed: true, step: 4 },
+        onboarding: { completed: true, step: 5 },
         data: { script, language, examType },
       }),
     onError: () => undefined,
@@ -103,6 +106,7 @@ export default function Onboarding() {
     script: "文",
     theme: "◐",
     goal: "→",
+    ready: "✓",
   }
 
   return (
@@ -459,9 +463,20 @@ export default function Onboarding() {
               })}
             </View>
           )}
+          {step === "ready" && (
+            <View style={{ gap: 16 }}>
+              <Motif char={motifChar(language)} size={96} />
+              <View style={{ gap: 8 }}>
+                <Text style={[type.h3, { color: theme.text }]}>
+                  {t("place.findLevel")}
+                </Text>
+                <Text style={[type.bodySm, { color: theme.textMuted }]}>
+                  {t("place.introA")}
+                </Text>
+              </View>
+            </View>
+          )}
         </View>
-
-        {/* CTA — Back mirrors the forward skip, primary takes 2/3 */}
         <View
           style={{
             paddingTop: 8,

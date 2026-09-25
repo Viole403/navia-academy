@@ -14,6 +14,7 @@ import { Card } from "@/components/ui/Card"
 import { Chip } from "@/components/ui/Chip"
 import { EmptyState } from "@/components/ui/EmptyState"
 import { Motif } from "@/components/ui/Motif"
+import { StudyCard } from "@/components/study/StudyCard"
 import { useTheme } from "@/theme/ThemeProvider"
 import { fonts, type } from "@/theme/typography"
 import { exam, settings } from "@/api/endpoints"
@@ -243,6 +244,15 @@ export default function ExamTab() {
             </View>
           </Card>
         </View>
+
+        {/* Adaptive (CAT) */}
+        <StudyCard
+          tone="challenge"
+          tag={t("adapt.kicker").toUpperCase()}
+          title={t("adapt.title")}
+          body={t("adapt.intro")}
+          onPress={() => router.push("/exam-adaptive")}
+        />
 
         {/* Progress per exam */}
         {progressList.length > 0 && (

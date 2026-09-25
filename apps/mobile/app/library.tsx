@@ -7,6 +7,7 @@ import {
   View,
 } from "react-native"
 import { SafeAreaView } from "react-native-safe-area-context"
+import { useRouter } from "expo-router"
 import { useQuery } from "@tanstack/react-query"
 import { Chip } from "@/components/ui/Chip"
 import { EmptyState } from "@/components/ui/EmptyState"
@@ -43,6 +44,7 @@ const SECTION_LABEL: Record<LibSection, I18nKey> = {
 export default function LibraryScreen() {
   const { theme } = useTheme()
   const t = useT()
+  const router = useRouter()
   const language = useOnboardingStore((s) => s.language)
   const charScript = isCharScript(language)
 
@@ -128,6 +130,9 @@ export default function LibraryScreen() {
             }))}
             openId={openId}
             onToggle={setOpenId}
+            onOpen={(gid) =>
+              router.push({ pathname: "/grammar/[id]", params: { id: gid } })
+            }
             renderDetail={(id) => {
               const g = (grammarQ.data ?? []).find(
                 (x: GrammarPoint) => x.id === id
@@ -162,6 +167,9 @@ export default function LibraryScreen() {
             }))}
             openId={openId}
             onToggle={setOpenId}
+            onOpen={(rid) =>
+              router.push({ pathname: "/reading/[id]", params: { id: rid } })
+            }
             renderDetail={(id) => {
               const r = (readingsQ.data ?? []).find((x: Reading) => x.id === id)
               if (!r) return null
@@ -205,6 +213,12 @@ export default function LibraryScreen() {
             )}
             openId={openId}
             onToggle={setOpenId}
+            onOpen={(cid) =>
+              router.push({
+                pathname: "/conversation/[id]",
+                params: { id: cid },
+              })
+            }
             renderDetail={(id) => {
               const c = (conversationsQ.data ?? []).find(
                 (x: ConversationScenario) => x.id === id
@@ -285,12 +299,14 @@ function ItemList({
   openId,
   onToggle,
   renderDetail,
+  onOpen,
 }: {
   t: (key: I18nKey) => string
   items: { id: string; title: string; sub: string }[]
   openId: string | null
   onToggle: (id: string | null) => void
   renderDetail: (id: string) => React.ReactNode
+  onOpen?: (id: string) => void
 }) {
   const { theme } = useTheme()
   if (items.length === 0) {
@@ -325,7 +341,21 @@ function ItemList({
                 </Text>
               )}
               {open && (
-                <View style={{ paddingTop: 8 }}>{renderDetail(item.id)}</View>
+                <View style={{ paddingTop: 8, gap: 8 }}>
+                  {renderDetail(item.id)}
+                  {onOpen && (
+                    <Pressable onPress={() => onOpen(item.id)}>
+                      <Text
+                        style={[
+                          type.bodySm,
+                          { color: theme.accent, fontWeight: "700" },
+                        ]}
+                      >
+                        {t("lib.open")} →
+                      </Text>
+                    </Pressable>
+                  )}
+                </View>
               )}
             </Pressable>
           </Enter>

@@ -1,68 +1,60 @@
-import { useMemo } from "react"
+import { useMemo, useState } from "react"
 import {
   ActivityIndicator,
+  Animated,
   Pressable,
   RefreshControl,
   ScrollView,
   Text,
   View,
+  useWindowDimensions,
 } from "react-native"
 import { SafeAreaView } from "react-native-safe-area-context"
 import { useRouter } from "expo-router"
-import { useQuery } from "@tanstack/react-query"
-import { Card } from "@/components/ui/Card"
-import { ProgressBar } from "@/components/ui/ProgressBar"
+import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query"
 import { Motif } from "@/components/ui/Motif"
 import { EmptyState } from "@/components/ui/EmptyState"
+import { ProgressBar } from "@/components/ui/ProgressBar"
+import { StudyCard } from "@/components/study/StudyCard"
+import { LiftedButton } from "@/components/study/LiftedButton"
+import { SpeechBubble, WeekStrip } from "@/components/study/StudyBits"
+import {
+  useEntranceRun,
+  useReveal,
+  useTypewriter,
+} from "@/components/study/Reveal"
+import {
+  CONTENT_MAX,
+  entranceScore,
+  spacing,
+  studyType,
+} from "@/components/study/tokens"
 import { useTheme } from "@/theme/ThemeProvider"
 import { fonts, type } from "@/theme/typography"
-import { exam, progress, settings } from "@/api/endpoints"
+import { exam, progress } from "@/api/endpoints"
+import { loadVocabulary } from "@/lib/content-data"
 import { useAuthStore } from "@/store/auth"
 import { useOnboardingStore } from "@/store/onboarding"
-import {
-  type LanguageCode,
-  examDisplayName,
-  languageInfo,
-  motifChar,
-} from "@/lib/languages"
+import { headword, motifChar, reading } from "@/lib/languages"
 import { useLocaleStore, useT } from "@/i18n"
+import { tap } from "@/utils/feedback"
 
-const DAILY_WORDS: Record<
-  LanguageCode,
-  { hw: string; rd: string; meaning: string }[]
-> = {
-  zh: [
-    { hw: "晨", rd: "chén", meaning: "morning" },
-    { hw: "浪", rd: "làng", meaning: "wave" },
-    { hw: "纸", rd: "zhǐ", meaning: "paper" },
-    { hw: "野", rd: "yě", meaning: "field; wild" },
-  ],
-  de: [
-    { hw: "Morgen", rd: "der Morgen", meaning: "morning" },
-    { hw: "Welle", rd: "die Welle", meaning: "wave" },
-    { hw: "Papier", rd: "das Papier", meaning: "paper" },
-    { hw: "Feld", rd: "das Feld", meaning: "field" },
-  ],
-  en: [
-    { hw: "morning", rd: "ˈmɔːrnɪŋ", meaning: "pagi hari" },
-    { hw: "wave", rd: "weɪv", meaning: "gelombang" },
-    { hw: "paper", rd: "ˈpeɪpər", meaning: "kertas" },
-    { hw: "field", rd: "fiːld", meaning: "lapangan" },
-  ],
-  ja: [
-    { hw: "朝", rd: "あさ", meaning: "morning" },
-    { hw: "波", rd: "なみ", meaning: "wave" },
-    { hw: "紙", rd: "かみ", meaning: "paper" },
-    { hw: "野", rd: "の", meaning: "field; wild" },
-  ],
-}
-
+/**
+ * Today — composed like Chinese-Easy's Dashboard: a hero (greeting +
+ * coach bubble) over pure-presentation cards (Review / New word /
+ * Challenges / This week), each a function of numbers fetched above.
+ * The whole column caps at CONTENT_MAX and centres on wider screens.
+ */
 export default function HomeTab() {
   const { theme } = useTheme()
   const router = useRouter()
+  const qc = useQueryClient()
   const user = useAuthStore((s) => s.user)
   const t = useT()
   const locale = useLocaleStore((s) => s.locale)
+  const language = useOnboardingStore((s) => s.language)
+  const { width } = useWindowDimensions()
+  const columnWidth = Math.min(width, CONTENT_MAX)
 
   const progressQ = useQuery({ queryKey: ["progress"], queryFn: progress.get })
   const dueCardsQ = useQuery({
@@ -73,10 +65,18 @@ export default function HomeTab() {
     queryKey: ["srs-stats"],
     queryFn: progress.srsStats,
   })
-  const settingsQ = useQuery({ queryKey: ["settings"], queryFn: settings.get })
+  const sessionsQ = useQuery({
+    queryKey: ["study-sessions"],
+    queryFn: () => progress.studySessions(50, 0),
+  })
   const recommendedQ = useQuery({
     queryKey: ["exam-recommended"],
     queryFn: exam.recommended,
+  })
+  const vocabQ = useQuery({
+    queryKey: ["wotd", language],
+    queryFn: () => loadVocabulary(language),
+    staleTime: 86_400_000,
   })
 
   const greeting = useMemo(() => {
@@ -86,23 +86,76 @@ export default function HomeTab() {
     return t("home.evening")
   }, [t])
 
-  // Pick a deterministic "word of the day"
-  const language = useOnboardingStore((s) => s.language)
+  const due = dueCardsQ.data?.length ?? 0
+  const streak = progressQ.data?.streak ?? 0
+  const todayKey = new Date().toISOString().slice(0, 10)
+  const studiedToday = useMemo(
+    () =>
+      (sessionsQ.data ?? []).some(
+        (s) => (s.date ?? "").slice(0, 10) === todayKey
+      ),
+    [sessionsQ.data, todayKey]
+  )
+
+  const coach = useMemo(() => {
+    if (due > 0) return `${due} ${t("home.reviewBody")}`
+    if (streak > 0 && !studiedToday) return t("home.coachRisk")
+    if (streak >= 3) return `${streak} ${t("home.coachStreak")}`
+    return t("home.coachDefault")
+  }, [due, streak, studiedToday, t])
+
+  // Deterministic word of the day from the real CDN bundle (was hardcoded).
   const word = useMemo(() => {
-    const pool = DAILY_WORDS[language] ?? DAILY_WORDS.zh
+    const all = vocabQ.data ?? []
+    if (all.length === 0) return null
     const d = Math.floor(Date.now() / 86_400_000)
-    return pool[d % pool.length]
-  }, [language])
+    return all[d % all.length]
+  }, [vocabQ.data])
 
-  const goal = settingsQ.data?.daily_goal_min ?? 10
-  const todayMin = useMemo(() => {
-    // In a real impl, would query today's study session
-    return 0
-  }, [])
-  const goalProgress = goal > 0 ? Math.min(1, todayMin / goal) : 0
+  const [dismissed, setDismissed] = useState(false)
+  const [addedId, setAddedId] = useState<string | null>(null)
+  const showWord = !dismissed && !!word && addedId !== word?.id
 
-  const isLoading =
-    progressQ.isLoading || dueCardsQ.isLoading || srsStatsQ.isLoading
+  const addM = useMutation({
+    mutationFn: (id: string) => progress.ensureCard(id, "word"),
+    onSuccess: (_, id) => {
+      setAddedId(id)
+      qc.invalidateQueries({ queryKey: ["due-cards"] })
+      qc.invalidateQueries({ queryKey: ["srs-stats"] })
+    },
+  })
+
+  const run = useEntranceRun()
+  const gR = useReveal({
+    at: entranceScore.greeting.at,
+    duration: entranceScore.greeting.for,
+    run,
+  })
+  const c0 = useReveal({
+    at: entranceScore.cards.at,
+    duration: entranceScore.cards.for,
+    run,
+  })
+  const c1 = useReveal({
+    at: entranceScore.cards.at + entranceScore.cards.stagger,
+    duration: entranceScore.cards.for,
+    run,
+  })
+  const c2 = useReveal({
+    at: entranceScore.cards.at + entranceScore.cards.stagger * 2,
+    duration: entranceScore.cards.for,
+    run,
+  })
+  const c3 = useReveal({
+    at: entranceScore.cards.at + entranceScore.cards.stagger * 3,
+    duration: entranceScore.cards.for,
+    run,
+  })
+  const typed = useTypewriter(coach.length, run)
+  const isLoading = progressQ.isLoading || dueCardsQ.isLoading
+
+  const refreshing =
+    progressQ.isRefetching || dueCardsQ.isRefetching || sessionsQ.isRefetching
 
   return (
     <SafeAreaView
@@ -110,303 +163,322 @@ export default function HomeTab() {
       edges={["top"]}
     >
       <ScrollView
-        contentContainerStyle={{ padding: 24, gap: 32, paddingBottom: 48 }}
+        contentContainerStyle={{
+          paddingBottom: 48,
+          flexGrow: 1,
+          alignItems: "center",
+        }}
         refreshControl={
           <RefreshControl
-            refreshing={
-              progressQ.isRefetching ||
-              dueCardsQ.isRefetching ||
-              srsStatsQ.isRefetching
-            }
+            refreshing={refreshing}
             onRefresh={() => {
               progressQ.refetch()
               dueCardsQ.refetch()
               srsStatsQ.refetch()
+              sessionsQ.refetch()
             }}
             tintColor={theme.accent}
           />
         }
       >
-        {/* Masthead */}
-        <View style={{ gap: 12 }}>
-          <View
+        <View
+          style={{
+            width: columnWidth,
+            padding: spacing.screen,
+            gap: spacing.cardGap,
+          }}
+        >
+          {/* Hero */}
+          <Animated.View
             style={{
-              flexDirection: "row",
-              justifyContent: "space-between",
-              alignItems: "flex-start",
+              opacity: gR.opacity,
+              transform: [{ translateX: gR.translate }],
             }}
           >
-            <View style={{ flex: 1, gap: 8 }}>
-              <Text style={[type.labelSm, { color: theme.textMuted }]}>
-                {new Date().toLocaleDateString(
-                  locale === "id" ? "id-ID" : "en-US",
-                  {
-                    weekday: "long",
-                    month: "long",
-                    day: "numeric",
-                  }
-                )}
-              </Text>
-              <Text style={[type.display, { color: theme.text, fontSize: 36 }]}>
-                {greeting},{"\n"}
-                <Text style={{ color: theme.accent, fontStyle: "italic" }}>
-                  {user?.name?.split(" ")[0] ?? t("home.reader")}.
-                </Text>
-              </Text>
-            </View>
-            <Motif char={motifChar(language)} size={64} />
-          </View>
-          <View style={{ height: 1, backgroundColor: theme.border }} />
-        </View>
-
-        {/* Stats strip — like a newspaper byline */}
-        {isLoading ? (
-          <ActivityIndicator color={theme.accent} />
-        ) : (
-          <View
-            style={{
-              flexDirection: "row",
-              borderTopWidth: 1,
-              borderBottomWidth: 1,
-              borderColor: theme.border,
-              paddingVertical: 16,
-            }}
-          >
-            <StatStrip
-              value={progressQ.data?.xp ?? 0}
-              label={t("home.xp")}
-              accent={theme.accent}
-            />
-            <Divider color={theme.border} />
-            <StatStrip
-              value={progressQ.data?.streak ?? 0}
-              label={t("home.streak")}
-              accent={theme.gold}
-            />
-            <Divider color={theme.border} />
-            <StatStrip
-              value={srsStatsQ.data?.due ?? 0}
-              label={t("home.due")}
-              accent={theme.mint}
-            />
-          </View>
-        )}
-
-        {/* Word of the Day — feature article */}
-        <Card padded={false}>
-          <View style={{ padding: 20, gap: 16 }}>
-            <View
-              style={{
-                flexDirection: "row",
-                justifyContent: "space-between",
-                alignItems: "center",
-              }}
-            >
-              <Text style={[type.labelSm, { color: theme.textMuted }]}>
-                {t("home.wordOfDay")}
-              </Text>
-              <Text style={[type.labelSm, { color: theme.accent }]}>
-                No. 001
-              </Text>
-            </View>
-            <View style={{ height: 1, backgroundColor: theme.border }} />
-            <View
-              style={{ flexDirection: "row", alignItems: "center", gap: 20 }}
-            >
-              <Text
+            <View style={{ gap: spacing.md }}>
+              <View
                 style={{
-                  fontFamily: fonts.serif,
-                  fontSize: 84,
-                  lineHeight: 96,
-                  color: theme.text,
-                  fontWeight: "500",
+                  flexDirection: "row",
+                  justifyContent: "space-between",
+                  alignItems: "flex-start",
+                  gap: spacing.md,
                 }}
               >
-                {word.hw}
-              </Text>
-              <View style={{ flex: 1, gap: 4 }}>
-                <Text
-                  style={[
-                    type.label,
-                    { color: theme.textMuted, fontFamily: fonts.sans },
-                  ]}
-                >
-                  {word.rd}
-                </Text>
-                <Text
-                  style={[
-                    {
-                      fontFamily: fonts.serif,
-                      fontStyle: "italic",
-                      fontSize: 20,
-                      color: theme.text,
-                    },
-                  ]}
-                >
-                  {word.meaning}
-                </Text>
+                <View style={{ flex: 1, gap: spacing.sm }}>
+                  <Text style={[type.labelSm, { color: theme.textMuted }]}>
+                    {new Date().toLocaleDateString(
+                      locale === "id" ? "id-ID" : "en-US",
+                      { weekday: "long", month: "long", day: "numeric" }
+                    )}
+                  </Text>
+                  <Text
+                    style={[
+                      studyType.greeting,
+                      {
+                        color: theme.text,
+                        fontFamily: fonts.sans,
+                        fontWeight: "800",
+                      },
+                    ]}
+                  >
+                    {greeting},{"\n"}
+                    <Text
+                      style={{
+                        color: theme.accent,
+                        fontStyle: "italic",
+                        fontFamily: fonts.serif,
+                      }}
+                    >
+                      {user?.name?.split(" ")[0] ?? t("home.reader")}.
+                    </Text>
+                  </Text>
+                </View>
+                <Motif char={motifChar(language)} size={64} />
               </View>
+              <SpeechBubble text={coach.slice(0, typed)} />
+              <View style={{ height: 1, backgroundColor: theme.border }} />
             </View>
-          </View>
-        </Card>
+          </Animated.View>
 
-        {/* Daily goal */}
-        <View style={{ gap: 12 }}>
-          <View
-            style={{
-              flexDirection: "row",
-              justifyContent: "space-between",
-              alignItems: "baseline",
-            }}
-          >
-            <Text style={[type.labelSm, { color: theme.textMuted }]}>
-              {t("home.dailyGoal")}
-            </Text>
-            <Text style={[type.caption, { color: theme.textMuted }]}>
-              {todayMin} / {goal} min
-            </Text>
-          </View>
-          <ProgressBar value={goalProgress} height={3} tint={theme.accent} />
-        </View>
+          {isLoading ? (
+            <ActivityIndicator color={theme.accent} />
+          ) : (
+            <>
+              {/* Review */}
+              <Animated.View
+                style={{
+                  opacity: c0.opacity,
+                  transform: [{ translateY: c0.translate }],
+                }}
+              >
+                <StudyCard
+                  tone="review"
+                  tag={t("home.reviewTitle").toUpperCase()}
+                  title={t("home.reviewTitle")}
+                  body={
+                    due > 0
+                      ? `${due} ${t("home.reviewBody")}`
+                      : t("home.reviewBodyNone")
+                  }
+                >
+                  {due > 0 ? (
+                    <LiftedButton
+                      title={t("home.startReview")}
+                      onPress={() => {
+                        tap()
+                        router.push("/review")
+                      }}
+                    />
+                  ) : (
+                    <Pressable
+                      onPress={() => {
+                        tap()
+                        router.push("/(tabs)/learn")
+                      }}
+                    >
+                      <Text
+                        style={[
+                          studyType.link,
+                          {
+                            color: theme.accent,
+                            fontFamily: fonts.sans,
+                            fontWeight: "700",
+                          },
+                        ]}
+                      >
+                        {t("home.browseVocab")} →
+                      </Text>
+                    </Pressable>
+                  )}
+                </StudyCard>
+              </Animated.View>
 
-        {/* Quick actions */}
-        <View style={{ gap: 12 }}>
-          <Text style={[type.labelSm, { color: theme.textMuted }]}>
-            {t("common.continue")}
-          </Text>
+              {/* New word */}
+              {showWord && word && (
+                <Animated.View
+                  style={{
+                    opacity: c1.opacity,
+                    transform: [{ translateY: c1.translate }],
+                  }}
+                >
+                  <StudyCard
+                    tone="word"
+                    tag={t("home.newWordTitle").toUpperCase()}
+                    title={headword(word)}
+                    body={`${reading(word) ?? ""}${reading(word) ? " · " : ""}${String(word.translation ?? "")}`}
+                  >
+                    <Text
+                      style={{
+                        fontFamily: fonts.serif,
+                        fontSize: 64,
+                        lineHeight: 76,
+                        color: theme.text,
+                      }}
+                    >
+                      {headword(word)}
+                    </Text>
+                    {addedId === word.id ? (
+                      <Text
+                        style={[
+                          studyType.link,
+                          {
+                            color: theme.green,
+                            fontFamily: fonts.sans,
+                            fontWeight: "700",
+                          },
+                        ]}
+                      >
+                        {t("home.addedWord")}
+                      </Text>
+                    ) : (
+                      <View style={{ flexDirection: "row", gap: spacing.sm }}>
+                        <View style={{ flex: 1 }}>
+                          <LiftedButton
+                            small
+                            title={
+                              addM.isPending
+                                ? t("common.loading")
+                                : t("home.addWord")
+                            }
+                            onPress={() => {
+                              tap()
+                              addM.mutate(word.id)
+                            }}
+                          />
+                        </View>
+                        <Pressable
+                          onPress={() => {
+                            tap()
+                            setDismissed(true)
+                          }}
+                          style={{
+                            justifyContent: "center",
+                            paddingHorizontal: spacing.md,
+                          }}
+                        >
+                          <Text
+                            style={[
+                              studyType.link,
+                              {
+                                color: theme.textMuted,
+                                fontFamily: fonts.sans,
+                                fontWeight: "700",
+                              },
+                            ]}
+                          >
+                            {t("home.dismiss")}
+                          </Text>
+                        </Pressable>
+                      </View>
+                    )}
+                  </StudyCard>
+                </Animated.View>
+              )}
 
-          {(dueCardsQ.data?.length ?? 0) > 0 && (
-            <ActionRow
-              label={t("home.reviewDue")}
-              detail={`${dueCardsQ.data?.length ?? 0} ${t("home.waiting")}`}
-              onPress={() => router.push("/(tabs)/learn")}
-              accent={theme.mint}
-            />
+              {/* Challenges */}
+              <Animated.View
+                style={{
+                  opacity: c2.opacity,
+                  transform: [{ translateY: c2.translate }],
+                }}
+              >
+                <StudyCard
+                  tone="challenge"
+                  tag={t("home.challengesTitle").toUpperCase()}
+                  title={`${streak} ${t("home.streak")}`}
+                  body={`${srsStatsQ.data?.due ?? 0} ${t("home.waiting")} · ${t("home.challengesBody")}`}
+                  onPress={() => {
+                    tap()
+                    router.push("/challenges")
+                  }}
+                >
+                  <Text
+                    style={[
+                      studyType.link,
+                      {
+                        color: theme.accent2,
+                        fontFamily: fonts.sans,
+                        fontWeight: "700",
+                      },
+                    ]}
+                  >
+                    {t("home.viewAll")} →
+                  </Text>
+                </StudyCard>
+              </Animated.View>
+
+              {/* This week */}
+              <Animated.View
+                style={{
+                  opacity: c3.opacity,
+                  transform: [{ translateY: c3.translate }],
+                }}
+              >
+                <StudyCard
+                  tone="week"
+                  tag={t("home.weekTitle").toUpperCase()}
+                  onPress={() => {
+                    tap()
+                    router.push("/progress")
+                  }}
+                >
+                  <WeekStrip sessions={sessionsQ.data ?? []} />
+                  <Text
+                    style={[
+                      studyType.link,
+                      {
+                        color: theme.green,
+                        fontFamily: fonts.sans,
+                        fontWeight: "700",
+                      },
+                    ]}
+                  >
+                    {t("home.viewProgress")} →
+                  </Text>
+                </StudyCard>
+              </Animated.View>
+
+              {/* Recommended exam */}
+              {recommendedQ.data && (
+                <StudyCard tone="neutral">
+                  <Text
+                    style={[
+                      studyType.cardBody,
+                      { color: theme.textMuted, fontFamily: fonts.sans },
+                    ]}
+                  >
+                    {t("home.recommendedExam")}
+                  </Text>
+                  <LiftedButton
+                    title={`${t("home.start")} ${recommendedQ.data.examType.toUpperCase()} ${recommendedQ.data.examLevel}`}
+                    onPress={() => {
+                      tap()
+                      router.push("/(tabs)/exam")
+                    }}
+                  />
+                </StudyCard>
+              )}
+
+              {/* Daily goal */}
+              <View style={{ gap: spacing.sm }}>
+                <ProgressBar
+                  value={studiedToday ? 1 : 0}
+                  height={3}
+                  tint={theme.accent}
+                />
+              </View>
+
+              {due === 0 && !recommendedQ.data && (
+                <EmptyState
+                  title={t("home.allCaughtUp")}
+                  message={t("home.caughtUpMsg")}
+                  glyph={motifChar(language)}
+                />
+              )}
+            </>
           )}
-          {recommendedQ.data && (
-            <ActionRow
-              label={`${t("home.start")} ${recommendedQ.data.examType.toUpperCase()} ${recommendedQ.data.examLevel}`}
-              detail={t("home.recommendedExam")}
-              onPress={() => router.push("/(tabs)/exam")}
-              accent={theme.accent}
-            />
-          )}
-          <ActionRow
-            label={t("home.browseVocab")}
-            detail={languageInfo(language)
-              .examTypes.map((e) => examDisplayName(e))
-              .join(" · ")}
-            onPress={() => router.push("/(tabs)/learn")}
-            accent={theme.gold}
-          />
         </View>
-
-        {(dueCardsQ.data?.length ?? 0) === 0 && !recommendedQ.data && (
-          <EmptyState
-            title={t("home.allCaughtUp")}
-            message={t("home.caughtUpMsg")}
-            glyph={motifChar(language)}
-          />
-        )}
       </ScrollView>
     </SafeAreaView>
-  )
-}
-
-function StatStrip({
-  value,
-  label,
-  accent,
-}: {
-  value: number
-  label: string
-  accent: string
-}) {
-  const { theme } = useTheme()
-  return (
-    <View style={{ flex: 1, gap: 4 }}>
-      <Text
-        style={{
-          fontFamily: fonts.serif,
-          fontSize: 32,
-          color: accent,
-          fontWeight: "500",
-          lineHeight: 36,
-        }}
-      >
-        {value}
-      </Text>
-      <Text
-        style={[
-          type.labelSm,
-          { color: theme.textMuted, fontFamily: fonts.sans },
-        ]}
-      >
-        {label}
-      </Text>
-    </View>
-  )
-}
-
-function Divider({ color }: { color: string }) {
-  return (
-    <View
-      style={{
-        width: 1,
-        backgroundColor: color,
-        marginHorizontal: 16,
-      }}
-    />
-  )
-}
-
-function ActionRow({
-  label,
-  detail,
-  accent,
-  onPress,
-}: {
-  label: string
-  detail: string
-  accent: string
-  onPress: () => void
-}) {
-  const { theme } = useTheme()
-  return (
-    <Pressable
-      onPress={onPress}
-      style={{
-        flexDirection: "row",
-        alignItems: "center",
-        paddingVertical: 14,
-        borderTopWidth: 1,
-        borderBottomWidth: 1,
-        borderColor: theme.border,
-        gap: 16,
-      }}
-    >
-      <View
-        style={{
-          width: 4,
-          alignSelf: "stretch",
-          backgroundColor: accent,
-        }}
-      />
-      <View style={{ flex: 1, gap: 2 }}>
-        <Text style={[type.body, { color: theme.text, fontWeight: "600" }]}>
-          {label}
-        </Text>
-        <Text style={[type.caption, { color: theme.textMuted }]}>{detail}</Text>
-      </View>
-      <Text
-        style={{
-          fontFamily: fonts.serif,
-          fontSize: 22,
-          color: theme.textMuted,
-        }}
-      >
-        →
-      </Text>
-    </Pressable>
   )
 }

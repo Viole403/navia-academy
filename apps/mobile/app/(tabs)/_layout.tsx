@@ -1,5 +1,6 @@
 import { Redirect, Tabs } from "expo-router"
 import { Ionicons } from "@expo/vector-icons"
+import { useSafeAreaInsets } from "react-native-safe-area-context"
 import { useTheme } from "@/theme/ThemeProvider"
 import { fonts } from "@/theme/typography"
 import { useAuthStore } from "@/store/auth"
@@ -9,8 +10,15 @@ export default function TabsLayout() {
   const { theme } = useTheme()
   const user = useAuthStore((s) => s.user)
   const t = useT()
+  const insets = useSafeAreaInsets()
 
   if (!user) return <Redirect href="/(auth)" />
+
+  // Reference trap (Dashboard docs): overriding tabBarStyle.height opts the
+  // bar out of safe-area handling. Derive height + padding from the live
+  // inset so the bar never slides under Android's gesture pill / 3-button
+  // nav, which would then intercept the taps.
+  const bottom = Math.max(insets.bottom, 12)
 
   return (
     <Tabs
@@ -24,8 +32,8 @@ export default function TabsLayout() {
           borderTopWidth: 1,
           elevation: 0,
           shadowOpacity: 0,
-          height: 64,
-          paddingBottom: 8,
+          height: 70 + bottom,
+          paddingBottom: bottom,
           paddingTop: 8,
         },
         tabBarLabelStyle: {

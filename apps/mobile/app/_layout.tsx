@@ -13,6 +13,8 @@ import { auth } from "@/api/endpoints"
 import { onRefreshFail } from "@/api/client"
 import { ErrorBoundary } from "@/components/ui/ErrorBoundary"
 import { useOfflineDrain } from "@/hooks/useOfflineDrain"
+import { configureAudioSession, setSoundPrefs } from "@/utils/sound"
+import { useSettingsPrefs } from "@/store/settings"
 import "../global.css"
 
 const queryClient = new QueryClient({
@@ -66,6 +68,16 @@ const linking = {
 function AppShell() {
   useOfflineDrain()
   const { theme, resolvedMode } = useTheme()
+  const soundEffects = useSettingsPrefs((s) => s.soundEffects)
+
+  // One audio session for the whole app — see utils/sound.ts for why this has
+  // to happen at startup rather than lazily on first effect.
+  useEffect(() => {
+    configureAudioSession().catch(() => {})
+  }, [])
+  useEffect(() => {
+    setSoundPrefs({ enabled: soundEffects })
+  }, [soundEffects])
 
   return (
     <>
@@ -87,8 +99,32 @@ function AppShell() {
 export default function RootLayout() {
   const { setAuth, setTokens, markHydrated, signOut } = useAuthStore()
   const router = useRouter()
+  /*
+   * One family per weight. React Native cannot synthesise weights the way a
+   * browser can, so `fontWeight` on its own does nothing useful — a style must
+   * name the family. This matters most for CJK, which has no synthesisable
+   * bold at all.
+   *
+   * Noto Serif SC (this app's existing bundle) and the two faces added for the
+   * paper design system: Noto Serif TC for a traditional-script reader (SC and
+   * TC draw many shared codepoints differently) and Noto Sans TC for the writing
+   * guide, whose Chinese sits beside sans-serif UI type.
+   */
   const [fontsLoaded] = useFonts({
     NaviaSerifSC: require("../assets/fonts/NotoSerifSC.ttf"),
+    NotoSerifTC: require("../assets/fonts/NotoSerifTC_500Medium.ttf"),
+    NotoSansTC: require("../assets/fonts/NotoSansTC_500Medium.ttf"),
+    Nunito_400Regular: require("@expo-google-fonts/nunito/400Regular/Nunito_400Regular.ttf"),
+    Nunito_600SemiBold: require("@expo-google-fonts/nunito/600SemiBold/Nunito_600SemiBold.ttf"),
+    Nunito_700Bold: require("@expo-google-fonts/nunito/700Bold/Nunito_700Bold.ttf"),
+    Nunito_800ExtraBold: require("@expo-google-fonts/nunito/800ExtraBold/Nunito_800ExtraBold.ttf"),
+    Inter_400Regular: require("@expo-google-fonts/inter/400Regular/Inter_400Regular.ttf"),
+    Inter_500Medium: require("@expo-google-fonts/inter/500Medium/Inter_500Medium.ttf"),
+    Inter_600SemiBold: require("@expo-google-fonts/inter/600SemiBold/Inter_600SemiBold.ttf"),
+    Lora_400Regular: require("@expo-google-fonts/lora/400Regular/Lora_400Regular.ttf"),
+    Lora_500Medium: require("@expo-google-fonts/lora/500Medium/Lora_500Medium.ttf"),
+    Caveat_400Regular: require("@expo-google-fonts/caveat/400Regular/Caveat_400Regular.ttf"),
+    Kalam_700Bold: require("@expo-google-fonts/kalam/700Bold/Kalam_700Bold.ttf"),
   })
 
   useEffect(() => {

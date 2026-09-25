@@ -7,8 +7,7 @@ import {
   View,
 } from "react-native"
 import { SafeAreaView } from "react-native-safe-area-context"
-import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query"
-import { Button } from "@/components/ui/Button"
+import { useQuery } from "@tanstack/react-query"
 import { EmptyState } from "@/components/ui/EmptyState"
 import { Enter } from "@/components/ui/Enter"
 import { useTheme } from "@/theme/ThemeProvider"
@@ -17,7 +16,7 @@ import { loadCurriculum } from "@/lib/content-data"
 import { examDisplayName, motifChar } from "@/lib/languages"
 import { useOnboardingStore } from "@/store/onboarding"
 import { useT } from "@/i18n"
-import { logStudyWithQueue } from "@/utils/offlineQueue"
+import { useRouter } from "expo-router"
 
 interface Level {
   id: string
@@ -59,7 +58,7 @@ export default function ProgramScreen() {
   const t = useT()
   const language = useOnboardingStore((s) => s.language)
   const storedExamType = useOnboardingStore((s) => s.examType)
-  const qc = useQueryClient()
+  const router = useRouter()
 
   const [openLevel, setOpenLevel] = useState<string | null>(null)
   const [openUnit, setOpenUnit] = useState<string | null>(null)
@@ -92,12 +91,6 @@ export default function ProgramScreen() {
       .filter((l) => l.unitId === unit.id)
       .sort((a, b) => (a.order ?? 0) - (b.order ?? 0))
   }
-
-  const doneM = useMutation({
-    mutationFn: (lesson: Lesson) =>
-      logStudyWithQueue(lesson.durationMin ?? 10, lesson.xp ?? 20),
-    onSuccess: () => qc.invalidateQueries({ queryKey: ["progress"] }),
-  })
 
   return (
     <SafeAreaView
@@ -274,16 +267,27 @@ export default function ProgramScreen() {
                                           ))}
                                         </View>
                                       ))}
-                                      <Button
-                                        title={
-                                          doneM.isPending
-                                            ? t("prog.saving")
-                                            : t("prog.markComplete")
+                                      <Pressable
+                                        onPress={() =>
+                                          router.push({
+                                            pathname: "/lesson/[id]",
+                                            params: { id: l.id },
+                                          })
                                         }
-                                        size="sm"
-                                        disabled={doneM.isPending}
-                                        onPress={() => doneM.mutate(l)}
-                                      />
+                                        style={{ paddingTop: 4 }}
+                                      >
+                                        <Text
+                                          style={[
+                                            type.bodySm,
+                                            {
+                                              color: theme.accent,
+                                              fontWeight: "700",
+                                            },
+                                          ]}
+                                        >
+                                          {t("lesson.open")} →
+                                        </Text>
+                                      </Pressable>
                                     </View>
                                   )}
                                 </View>
