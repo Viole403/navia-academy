@@ -48,6 +48,19 @@ const CENTER: Record<string, Record<string, number>> = {
     "Level 4": 1500,
     "Level 5": 1850,
   },
+  // TOEFL has four score bands, not seven levels, so there are four centres. They
+  // are the same values the other exams use for the same ability, which is why
+  // they are borrowed rather than invented: a learner rated 1150 is rated 1150
+  // whether the item was tagged Goethe B1, JLPT N3 or TOEFL 61-90. Missing this
+  // table was not a cosmetic gap — recommendedLevel fell through to
+  // levels[0] and reported "0-30" for every TOEFL result, so a perfect score and
+  // a blank paper produced the same band.
+  toefl: {
+    "0-30": 550,
+    "31-60": 850,
+    "61-90": 1150,
+    "91-120": 1500,
+  },
 }
 
 export const DEFAULT_ELO = 550
@@ -107,10 +120,10 @@ function levelCenter(level: number): number {
 }
 
 /**
- * An item's difficulty. Priority: hsk > jlpt > goethe > tocfl > level > default.
- * Seeded from the id, so a word's difficulty is the same on every device and in
- * every session — otherwise the same word would be a different challenge to
- * different learners.
+ * An item's difficulty. Priority: hsk > jlpt > goethe > tocfl > toefl > level >
+ * default. Seeded from the id, so a word's difficulty is the same on every device
+ * and in every session — otherwise the same word would be a different challenge
+ * to different learners.
  */
 export function eloOf(word: EloSeed): number {
   const m = word.examMappings
@@ -118,6 +131,11 @@ export function eloOf(word: EloSeed): number {
   if (m?.jlpt) return CENTER.jlpt[m.jlpt] + jitter(word.id)
   if (m?.goethe) return CENTER.goethe[m.goethe] + jitter(word.id)
   if (m?.tocfl) return CENTER.tocfl[m.tocfl] + jitter(word.id)
+  // TOEFL last, because it is the only exam that tags English and so can never
+  // collide with the four above. Without this branch an English word fell through
+  // to levelCenter, which reads CENTER.hsk — an English item was being rated on
+  // the Mandarin scale, and a word with no level at all took the default.
+  if (m?.toefl) return CENTER.toefl[m.toefl] + jitter(word.id)
   return levelCenter(word.level as number) + jitter(word.id)
 }
 

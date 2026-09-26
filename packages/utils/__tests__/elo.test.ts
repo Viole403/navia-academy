@@ -14,6 +14,7 @@ import {
   pickLeastUsedFormat,
   pickNext,
   recommendedLevel,
+  EXAM_LEVELS,
   shouldStop,
   weakBandsOf,
 } from "../src/elo"
@@ -304,5 +305,51 @@ describe("weakBandsOf", () => {
     // Most-missed first.
     expect(weak[0]).toBe(cefrBandOf(500).name)
     expect(weak).toHaveLength(2)
+  })
+})
+
+describe("TOEFL", () => {
+  it("reads an item's difficulty from its toefl band, not the Mandarin scale", () => {
+    // Before toefl existed in the centre table, an English word with only a
+    // toefl mapping fell through to levelCenter, which reads CENTER.hsk.
+    const band = eloOf({ id: "en1", examMappings: { toefl: "91-120" } })
+    expect(band).toBeGreaterThan(1200)
+  })
+
+  it("keeps a strong band above a weak one", () => {
+    const weak = eloOf({ id: "en1", examMappings: { toefl: "0-30" } })
+    const strong = eloOf({ id: "en1", examMappings: { toefl: "91-120" } })
+    expect(strong).toBeGreaterThan(weak)
+  })
+
+  it("rates a high toefl band the same as the other exams' equivalent ability", () => {
+    // The point of borrowing the shared centre values: one rating, one scale.
+    const toefl = eloOf({ id: "en1", examMappings: { toefl: "61-90" } })
+    const jlpt = eloOf({ id: "en1", examMappings: { jlpt: "N3" } })
+    expect(Math.abs(toefl - jlpt)).toBeLessThanOrEqual(60)
+  })
+
+  it("reports a band from the score rather than always the first one", () => {
+    // The bug: CENTER.toefl was absent, so recommendedLevel returned levels[0]
+    // and every TOEFL result read "0-30" regardless of the rating.
+    expect(recommendedLevel("toefl", 1500)).toBe("91-120")
+    expect(recommendedLevel("toefl", 550)).toBe("0-30")
+  })
+
+  it("distinguishes a top score from a blank paper", () => {
+    // The failure this fixes, stated as a behaviour: these used to agree.
+    expect(recommendedLevel("toefl", DEFAULT_ELO)).not.toBe(
+      recommendedLevel("toefl", 1500)
+    )
+  })
+
+  it("moves monotonically as the score rises", () => {
+    const order = ["0-30", "31-60", "61-90", "91-120"].map(
+      (band) => EXAM_LEVELS.toefl.indexOf(band)
+    )
+    expect(order).toEqual([0, 1, 2, 3])
+    for (let i = 1; i < order.length; i++) {
+      expect(order[i]).toBeGreaterThan(order[i - 1])
+    }
   })
 })
