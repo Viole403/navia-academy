@@ -1,0 +1,7 @@
+{
+  "platforms": ["android"],
+  "android": {
+    "name": "NaviaWidgets",
+    "modules": ["com.navia.academy.widgets.NaviaWidgetsModule"]
+  }
+}

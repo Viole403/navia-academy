@@ -1,0 +1,68 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+  <application>
+    <!--
+      One receiver per widget. The launcher finds these by scanning for
+      APPWIDGET_UPDATE, so a receiver declared here is what puts the widget in the
+      picker's list; the class it points at is the Glance widget that draws it.
+    -->
+    <receiver
+      android:name="com.navia.academy.widgets.StreakWidgetReceiver"
+      android:exported="true"
+      android:label="Streak">
+      <intent-filter>
+        <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+      </intent-filter>
+      <meta-data
+        android:name="android.appwidget.provider"
+        android:resource="@xml/streak_widget_info" />
+    </receiver>
+
+    <receiver
+      android:name="com.navia.academy.widgets.SrsWidgetReceiver"
+      android:exported="true"
+      android:label="Reviews">
+      <intent-filter>
+        <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+      </intent-filter>
+      <meta-data
+        android:name="android.appwidget.provider"
+        android:resource="@xml/srs_widget_info" />
+    </receiver>
+
+    <receiver
+      android:name="com.navia.academy.widgets.WeekWidgetReceiver"
+      android:exported="true"
+      android:label="This week">
+      <intent-filter>
+        <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+      </intent-filter>
+      <meta-data
+        android:name="android.appwidget.provider"
+        android:resource="@xml/week_widget_info" />
+    </receiver>
+
+    <receiver
+      android:name="com.navia.academy.widgets.GoalWidgetReceiver"
+      android:exported="true"
+      android:label="Daily goal">
+      <intent-filter>
+        <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+      </intent-filter>
+      <meta-data
+        android:name="android.appwidget.provider"
+        android:resource="@xml/goal_widget_info" />
+    </receiver>
+
+    <receiver
+      android:name="com.navia.academy.widgets.AchievementWidgetReceiver"
+      android:exported="true"
+      android:label="Best streak">
+      <intent-filter>
+        <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+      </intent-filter>
+      <meta-data
+        android:name="android.appwidget.provider"
+        android:resource="@xml/achievement_widget_info" />
+    </receiver>
+  </application>
+</manifest>

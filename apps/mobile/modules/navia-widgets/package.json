@@ -1,0 +1,7 @@
+{
+  "name": "navia-widgets",
+  "version": "0.1.0",
+  "description": "Home-screen widgets for Navia Academy",
+  "main": "src/index.ts",
+  "private": true
+}

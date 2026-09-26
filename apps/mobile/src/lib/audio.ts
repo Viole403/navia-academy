@@ -32,6 +32,31 @@ import {
 
 export type { AudioPlayer, AudioStatus }
 
+/**
+ * The event surface of an audio player, restated locally.
+ *
+ * expo-audio types its base SharedObject through ExpoGlobal, which app code
+ * cannot resolve, so addListener is not visible on the returned player. The shape
+ * is the positional (name, listener) form that EventEmitter declares, and
+ * `set`/`add` accept the same thing. Declaring it here keeps the cast in
+ * createPlayer honest and typed rather than `any`.
+ */
+interface AudioEvents {
+  playbackStatusUpdate(status: AudioStatus): void
+  audioSampleUpdate(data: unknown): void
+}
+type EventSubscription = { remove(): void }
+interface EventEmitter<TEventsMap> {
+  addListener<K extends keyof TEventsMap>(
+    eventName: K,
+    listener: TEventsMap[K]
+  ): EventSubscription
+  removeListener<K extends keyof TEventsMap>(
+    eventName: K,
+    listener: TEventsMap[K]
+  ): void
+}
+
 /** Anything this app can play: a CDN URL or a cached file on disk. */
 export type AudioSource = { uri: string }
 
@@ -75,7 +100,14 @@ export function createPlayer(
     // Named playbackStatusUpdate, not statusChange — that is the video player's
     // event, and copying it from the documentation for that module is how the
     // status handler ends up silently never firing.
-    player.addListener("playbackStatusUpdate", (status) => onStatus(status))
+    //
+    // The cast is because AudioPlayer's base SharedObject is typed through
+    // ExpoGlobal, which tsc cannot resolve from app code; the runtime call is the
+    // positional (name, listener) form that EventEmitter actually declares.
+    ;(player as unknown as EventEmitter<AudioEvents>).addListener(
+      "playbackStatusUpdate",
+      (status) => onStatus(status)
+    )
   }
   player.play()
   return player

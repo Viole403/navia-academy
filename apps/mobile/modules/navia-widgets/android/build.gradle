@@ -1,0 +1,35 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'expo-module-gradle-plugin'
+
+group = 'com.navia.academy.widgets'
+version = '0.1.0'
+
+android {
+  namespace "com.navia.academy.widgets"
+  defaultConfig {
+    // minSdk and targetSdk come from the expo-module-gradle-plugin, which reads
+    // them from the app. Setting them here overrides that and the plugin then
+    // fails on a missing versionName.
+    versionCode 1
+    versionName "0.1.0"
+  }
+}
+
+dependencies {
+  // Glance is the AndroidX way to build a home-screen widget out of composables,
+  // so one layout serves every launcher size and the launcher does the
+  // arranging.
+  implementation "androidx.glance:glance-appwidget:1.2.0"
+  implementation "androidx.glance:glance-material3:1.2.0"
+}
+
+dependencies {
+  testImplementation "junit:junit:4.13.2"
+}
+
+android {
+  testOptions {
+    unitTests.returnDefaultValues = true
+  }
+}

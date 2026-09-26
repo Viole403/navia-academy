@@ -5,6 +5,19 @@ globalThis.__DEV__ = true
 // Mock expo
 vi.mock("expo", () => ({}))
 
+// Mock expo-modules-core.
+//
+// Defaults to "no native module present", which is the truth in a test
+// environment and also the state of an Expo Go client. A test that needs the real
+// module overrides requireOptionalNativeModule per-case rather than changing this
+// default, so the normal path under test stays the unavailable one.
+vi.mock("expo-modules-core", () => ({
+  requireOptionalNativeModule: vi.fn(() => null),
+  requireNativeModule: vi.fn(() => {
+    throw new Error("native module unavailable in tests")
+  }),
+}))
+
 // Mock expo-secure-store
 vi.mock("expo-secure-store", () => ({
   setItemAsync: vi.fn(() => Promise.resolve()),
