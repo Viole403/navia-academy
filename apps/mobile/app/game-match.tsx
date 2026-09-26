@@ -187,7 +187,7 @@ export default function GameMatch() {
           {masthead}
           <EmptyState
             title={t("game.failedTitle")}
-            message={t("game.failedMsg")}
+            message={t("common.loadFailed")}
             glyph={motifChar(language)}
           />
           <LiftedFace

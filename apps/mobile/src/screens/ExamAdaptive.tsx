@@ -1,17 +1,16 @@
 import { useMemo, useState } from "react"
-import { ActivityIndicator, Pressable, Text, View } from "react-native"
+import { ActivityIndicator, ScrollView, Text, View } from "react-native"
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query"
 import { Stack, useRouter } from "expo-router"
 import { SafeAreaView } from "react-native-safe-area-context"
-import { Screen } from "@/components/ui/Screen"
 import { EmptyState } from "@/components/ui/EmptyState"
 import { ProgressBar } from "@/components/ui/ProgressBar"
-import { StudyCard, SectionHeader } from "@/components/study/StudyCard"
-import { LiftedButton } from "@/components/study/LiftedButton"
-import { spacing, studyType } from "@/components/study/tokens"
+import { LiftedFace, PaperCard, PaperStat } from "@/components/study/PaperCard"
+import { PressableScale } from "@/components/study/press"
+import { useContentFaces } from "@/hooks/useContentFaces"
 import { useContentLayout } from "@/theme/layout"
 import { useTheme } from "@/theme/ThemeProvider"
-import { fonts, type } from "@/theme/typography"
+import { paperType } from "@/theme/paperType"
 import { cat } from "@/api/endpoints"
 import { loadPlacement } from "@/lib/content-data"
 import { languageInfo, motifChar } from "@/lib/languages"
@@ -24,15 +23,26 @@ import type { CatAnswer, PlacementItem } from "@/types/api"
 const MAX_QUESTIONS = 12
 const REVEAL_MS = 650
 
+type RowState = "idle" | "correct" | "wrong" | "dim"
+
 /**
- * /exam-adaptive — repeatable adaptive session (web parity:
- * /exam/adaptive). Same band-walk + elo-v1 submit semantics as the
- * onboarding placement test, but repeatable practice: it records a CAT
- * result and shows past estimates instead of gating onboarding.
+ * /exam-adaptive — repeatable adaptive practice (web parity: /exam/adaptive).
+ *
+ * Same band-walk and `elo-v1` submit semantics as the onboarding placement test,
+ * but repeatable: it records a CAT result and shows past estimates rather than
+ * gating onboarding. **The options are one sheet with a stripe, matching the
+ * placement test it shares its engine with** — two sibling screens that answer
+ * the same kind of question should not ask for the answer in two different ways.
+ *
+ * The result is an estimate, and it is labelled as one. An adaptive score is a
+ * *guess about a level*, not a grade, so the number is presented with its
+ * confidence beside it and the history underneath is a list of previous guesses
+ * rather than a record of achievement.
  */
 export function ExamAdaptive() {
-  const { theme, paper } = useTheme()
+  const { paper } = useTheme()
   const { column: columnWidth } = useContentLayout()
+  const faces = useContentFaces()
   const t = useT()
   const router = useRouter()
   const qc = useQueryClient()
@@ -126,214 +136,248 @@ export function ExamAdaptive() {
     else router.replace("/(tabs)/exam")
   }
 
+  const masthead = (
+    <View style={{ gap: 8 }}>
+      <Text style={[paperType.label, { color: paper.inkMuted }]}>
+        {t("adapt.kicker").toUpperCase()}
+      </Text>
+      <Text
+        style={[
+          paperType.greeting,
+          { color: paper.ink, fontSize: 28, lineHeight: 32 },
+        ]}
+      >
+        {t("adapt.title")}
+      </Text>
+    </View>
+  )
+
   return (
-    <SafeAreaView style={{ flex: 1, backgroundColor: paper.paper }}>
+    <SafeAreaView
+      style={{ flex: 1, backgroundColor: paper.paper }}
+      edges={["top"]}
+    >
       <Stack.Screen options={{ headerShown: false }} />
       <View
         style={{
-          padding: spacing.lg,
+          paddingHorizontal: 20,
+          paddingTop: 12,
+          paddingBottom: 14,
           flexDirection: "row",
           justifyContent: "space-between",
           alignItems: "center",
-          borderBottomWidth: 1,
-          borderBottomColor: theme.border,
+          gap: 12,
         }}
       >
-        <Pressable onPress={goBack}>
-          <Text style={{ color: theme.textMuted, fontSize: 16 }}>
-            {t("review.back")}
+        <PressableScale onPress={goBack} accessibilityLabel={t("review.back")}>
+          <Text style={[paperType.link, { color: paper.inkMuted }]}>
+            ← {t("review.back")}
           </Text>
-        </Pressable>
-        <Text style={[type.labelSm, { color: theme.textMuted }]}>
-          {started && !finished
-            ? `${t("adapt.question")} ${answered.length + 1} / ${MAX_QUESTIONS}`
-            : t("adapt.kicker").toUpperCase()}
-        </Text>
+        </PressableScale>
+        {started && !finished ? (
+          <Text style={[paperType.label, { color: paper.inkMuted }]}>
+            {t("adapt.question")} {answered.length + 1} / {MAX_QUESTIONS}
+          </Text>
+        ) : null}
       </View>
       <ProgressBar
         value={started ? answered.length / MAX_QUESTIONS : 0}
         height={2}
-        tint={theme.accent}
+        tint={paper.green}
       />
-      <Screen>
-        <View
-          style={{
-            width: "100%",
-            maxWidth: columnWidth,
-            alignSelf: "center",
-            gap: spacing.lg,
-          }}
-        >
-          {!started ? (
-            <>
-              <SectionHeader
-                kicker={t("adapt.kicker")}
-                title={t("adapt.title")}
-              />
-              <StudyCard tone="word" body={t("adapt.intro")} />
-              <LiftedButton title={t("adapt.start")} onPress={begin} />
-              {(historyQ.data ?? []).length > 0 && (
-                <StudyCard tone="neutral" title={t("adapt.history")}>
-                  <View>
-                    {(historyQ.data ?? []).slice(0, 5).map((h) => (
-                      <View
-                        key={h.id}
-                        style={{
-                          flexDirection: "row",
-                          justifyContent: "space-between",
-                          paddingVertical: spacing.sm,
-                          borderBottomWidth: 1,
-                          borderBottomColor: theme.border,
-                        }}
-                      >
-                        <Text
-                          style={[
-                            studyType.cardBody,
-                            { color: theme.text, fontFamily: fonts.sans },
-                          ]}
-                        >
-                          {(h.created_at ?? "").slice(0, 10)}
-                        </Text>
-                        <Text
-                          style={[
-                            studyType.cardBody,
-                            {
-                              color: theme.accent,
-                              fontFamily: fonts.sans,
-                              fontWeight: "700",
-                            },
-                          ]}
-                        >
-                          {h.elo_estimate}
-                        </Text>
-                      </View>
-                    ))}
-                  </View>
-                </StudyCard>
-              )}
-            </>
-          ) : finished ? (
-            <>
-              <SectionHeader
-                kicker={t("adapt.kicker")}
-                title={t("adapt.done")}
-              />
-              <StudyCard tone="review" tag={t("adapt.elo").toUpperCase()}>
-                <Text
-                  style={{
-                    fontFamily: fonts.sans,
-                    fontWeight: "800",
-                    fontSize: 52,
-                    lineHeight: 60,
-                    color: theme.accent,
-                  }}
-                >
-                  {band * 100}
-                </Text>
-                <Text
-                  style={[
-                    studyType.cardBody,
-                    { color: theme.textMuted, fontFamily: fonts.sans },
-                  ]}
-                >
-                  {correctCount} {t("exam.correct")} / {answered.length}
-                </Text>
-              </StudyCard>
-              <LiftedButton
-                title={saveM.isPending ? t("prog.saving") : t("common.save")}
-                face={theme.green}
-                onPress={() => saveM.mutate()}
-              />
-              <LiftedButton
-                small
-                title={t("common.retry")}
-                face={theme.surfaceAlt}
-                textColor={theme.text}
-                onPress={begin}
-              />
-            </>
-          ) : bankQ.isLoading ? (
-            <ActivityIndicator color={theme.accent} />
-          ) : !current ? (
-            <EmptyState
-              title={t("adapt.noBank")}
-              message={t("adapt.noBankMsg")}
-              glyph={motifChar(language)}
-            />
-          ) : (
-            <StudyCard tone="word">
-              <Text
-                style={[
-                  studyType.cardTitleSm,
-                  {
-                    color: theme.text,
-                    fontFamily: fonts.sans,
-                    fontWeight: "800",
-                  },
-                ]}
-              >
-                {current.prompt}
+
+      <ScrollView
+        contentContainerStyle={{
+          width: "100%",
+          maxWidth: columnWidth,
+          alignSelf: "center",
+          padding: 20,
+          paddingBottom: 48,
+          gap: 22,
+        }}
+      >
+        {!started ? (
+          <>
+            {masthead}
+            <PaperCard tone="word">
+              <Text style={[paperType.prose, { color: paper.inkSoft }]}>
+                {t("adapt.intro")}
               </Text>
-              <Pressable
-                onPress={() => tts.play(current.prompt)}
-                style={{ alignSelf: "flex-start", paddingVertical: 4 }}
-              >
-                <Text
-                  style={[
-                    studyType.link,
-                    {
-                      color: theme.textMuted,
-                      fontFamily: fonts.sans,
-                      fontWeight: "700",
-                    },
-                  ]}
-                >
-                  ▸ {t("xsess.playAudio")}
+            </PaperCard>
+            <LiftedFace
+              title={t("adapt.start")}
+              face={paper.green}
+              onPress={begin}
+            />
+
+            {(historyQ.data ?? []).length > 0 && (
+              <View style={{ gap: 10 }}>
+                <Text style={[paperType.label, { color: paper.inkMuted }]}>
+                  {t("adapt.history")}
                 </Text>
-              </Pressable>
-              <View style={{ gap: spacing.sm, marginTop: spacing.sm }}>
-                {current.options.map((o) => {
-                  const isPick = picked === o.id
-                  const showRight = revealing && o.id === current.correct
-                  const showWrong =
-                    revealing && isPick && o.id !== current.correct
-                  return (
-                    <Pressable
-                      key={o.id}
-                      onPress={() => pick(o.id)}
-                      disabled={revealing}
+                <PaperCard padded={false}>
+                  {(historyQ.data ?? []).slice(0, 5).map((h, i) => (
+                    <View
+                      key={h.id}
                       style={{
-                        borderWidth: 1.5,
-                        borderColor: showRight
-                          ? theme.green
-                          : showWrong
-                            ? theme.red
-                            : theme.border,
-                        backgroundColor: showRight
-                          ? theme.green + "14"
-                          : showWrong
-                            ? theme.red + "0D"
-                            : "transparent",
-                        borderRadius: 12,
-                        padding: spacing.md,
+                        flexDirection: "row",
+                        justifyContent: "space-between",
+                        alignItems: "center",
+                        paddingVertical: 12,
+                        paddingHorizontal: 16,
+                        borderTopWidth: i === 0 ? 0 : 1,
+                        borderTopColor: paper.lineSoft,
                       }}
                     >
+                      <Text style={[paperType.cardBody, { color: paper.ink }]}>
+                        {(h.created_at ?? "").slice(0, 10)}
+                      </Text>
                       <Text
                         style={[
-                          studyType.cardBody,
-                          { color: theme.text, fontFamily: fonts.sans },
+                          paperType.statValue,
+                          { color: paper.green, fontSize: 19 },
                         ]}
                       >
-                        {o.label}
+                        {h.elo_estimate}
                       </Text>
-                    </Pressable>
-                  )
-                })}
+                    </View>
+                  ))}
+                </PaperCard>
               </View>
-            </StudyCard>
-          )}
-        </View>
-      </Screen>
+            )}
+          </>
+        ) : finished ? (
+          <>
+            {masthead}
+            <PaperCard tone="review">
+              <Text style={[paperType.label, { color: paper.inkMuted }]}>
+                {t("adapt.elo").toUpperCase()}
+              </Text>
+              <PaperStat
+                value={`${band * 100}`}
+                label={`${correctCount} ${t("exam.correct")} / ${answered.length}`}
+              />
+            </PaperCard>
+            {saveM.isError && (
+              <Text style={[paperType.note, { color: paper.coral }]}>
+                {t("game.saveFailed")}
+              </Text>
+            )}
+            <LiftedFace
+              title={saveM.isPending ? t("prog.saving") : t("common.save")}
+              face={paper.green}
+              disabled={saveM.isPending}
+              onPress={() => saveM.mutate()}
+            />
+            <LiftedFace
+              small
+              title={t("common.retry")}
+              face={paper.inkSoft}
+              textColor={paper.ink}
+              onPress={begin}
+            />
+          </>
+        ) : bankQ.isLoading ? (
+          <PaperCard tone="review" style={{ alignItems: "center" }}>
+            <ActivityIndicator color={paper.green} />
+          </PaperCard>
+        ) : bankQ.isError ? (
+          <View style={{ gap: 16 }}>
+            <EmptyState
+              title={t("adapt.noBank")}
+              message={t("common.loadFailed")}
+              glyph={motifChar(language)}
+            />
+            <LiftedFace
+              title={t("common.retry")}
+              face={paper.green}
+              onPress={() => bankQ.refetch()}
+            />
+          </View>
+        ) : !current ? (
+          <EmptyState
+            title={t("adapt.noBank")}
+            message={t("adapt.noBankMsg")}
+            glyph={motifChar(language)}
+          />
+        ) : (
+          <View style={{ gap: 18 }}>
+            <Text
+              style={[
+                paperType.cardTitle,
+                { color: paper.ink, fontSize: 24, lineHeight: 30 },
+              ]}
+            >
+              {current.prompt}
+            </Text>
+            <PressableScale
+              onPress={() => tts.play(current.prompt)}
+              accessibilityLabel={t("xsess.playAudio")}
+              style={{ alignSelf: "flex-start" }}
+            >
+              <Text style={[paperType.link, { color: paper.inkMuted }]}>
+                ▸ {t("xsess.playAudio")}
+              </Text>
+            </PressableScale>
+
+            <PaperCard padded={false}>
+              {current.options.map((o, i) => {
+                const isPick = picked === o.id
+                const state: RowState = !revealing
+                  ? "idle"
+                  : o.id === current.correct
+                    ? "correct"
+                    : isPick
+                      ? "wrong"
+                      : "dim"
+                const stripe =
+                  state === "correct"
+                    ? paper.green
+                    : state === "wrong"
+                      ? paper.coral
+                      : "transparent"
+                return (
+                  <PressableScale
+                    key={o.id}
+                    onPress={() => pick(o.id)}
+                    disabled={revealing}
+                    scale={0.99}
+                    accessibilityRole="radio"
+                    accessibilityState={{ selected: isPick }}
+                    style={{
+                      borderTopWidth: i === 0 ? 0 : 1,
+                      borderTopColor: paper.lineSoft,
+                      borderLeftWidth: 3,
+                      borderLeftColor: stripe,
+                      backgroundColor:
+                        state === "correct"
+                          ? paper.greenSoft
+                          : state === "wrong"
+                            ? paper.coralSoft
+                            : "transparent",
+                      opacity: state === "dim" ? 0.55 : 1,
+                    }}
+                  >
+                    <Text
+                      style={[
+                        paperType.body,
+                        {
+                          color: paper.ink,
+                          fontFamily: faces.display,
+                          paddingVertical: 17,
+                          paddingHorizontal: 16,
+                        },
+                      ]}
+                    >
+                      {o.label}
+                    </Text>
+                  </PressableScale>
+                )
+              })}
+            </PaperCard>
+          </View>
+        )}
+      </ScrollView>
     </SafeAreaView>
   )
 }

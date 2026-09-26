@@ -187,7 +187,7 @@ export default function ProgramScreen() {
           <EmptyState
             glyph="∅"
             title={t("prog.failedTitle")}
-            message={t("prog.failedMsg")}
+            message={t("common.loadFailed")}
           />
           <LiftedFace
             title={t("common.retry")}

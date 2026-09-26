@@ -13,6 +13,8 @@ const en = {
   "common.back": "Back",
   "common.continue": "Continue",
   "common.begin": "Begin",
+  "common.loadFailed":
+    "Something did not answer. Check your connection and try again.",
   "common.retry": "Retry",
   "common.loading": "Loading…",
   "auth.signIn": "Sign in",
@@ -172,8 +174,6 @@ const en = {
   "game.saveFailed": "That did not save. Tap to try again.",
   "game.faceDown": "Face-down card",
   "game.failedTitle": "Could not load the cards",
-  "game.failedMsg":
-    "The library did not answer. Check your connection and try again.",
   "home.morning": "Good morning",
   "home.afternoon": "Good afternoon",
   "home.evening": "Good evening",
@@ -338,8 +338,6 @@ const en = {
   "lib.nothing": "Nothing here yet",
   "lib.nothingMsg": "Content for this language is still being published.",
   "lib.failedTitle": "Could not load this section",
-  "lib.failedMsg":
-    "The content did not answer. Check your connection and try again.",
   "lib.strokes": "strokes",
   "lib.radical": "radical",
   "prog.kicker": "Program",
@@ -347,8 +345,6 @@ const en = {
   "prog.noProgramMsg": "Curriculum content is still being published.",
   "prog.studyPath": "Study path",
   "prog.failedTitle": "Could not load the program",
-  "prog.failedMsg":
-    "The content did not answer. Check your connection and try again.",
   "prog.lessons": "lessons",
   "prog.markComplete": "Mark complete",
   "prog.saving": "Saving…",
@@ -364,8 +360,6 @@ const en = {
   "listen.playing": "Playing…",
   "listen.play": "Play word",
   "listen.failedTitle": "Could not load the word list",
-  "listen.failedMsg":
-    "The library did not answer. Check your connection and try again.",
   "speak.kicker": "Speaking",
   "speak.title": "Say it aloud",
   "speak.prompt": "Prompt",
@@ -697,6 +691,7 @@ const en = {
   "badges.title": "Achievements",
   "badges.empty": "No badges yet",
   "badges.emptyMsg": "Hit milestones to unlock these.",
+  "badges.failedTitle": "Could not load your badges",
   "badges.unlocked": "Unlocked",
   "notif.kicker": "Signals",
   "notif.title": "Notifications",

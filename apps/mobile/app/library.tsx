@@ -291,7 +291,7 @@ export default function LibraryScreen() {
             <EmptyState
               glyph="∅"
               title={t("lib.failedTitle")}
-              message={t("lib.failedMsg")}
+              message={t("common.loadFailed")}
             />
             <LiftedFace
               title={t("common.retry")}

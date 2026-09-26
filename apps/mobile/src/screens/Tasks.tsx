@@ -1,15 +1,15 @@
 import { useState } from "react"
-import { ActivityIndicator, Pressable, Text, View } from "react-native"
+import { ActivityIndicator, Alert, ScrollView, Text, View } from "react-native"
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query"
-import { Screen } from "@/components/ui/Screen"
+import { SafeAreaView } from "react-native-safe-area-context"
 import { EmptyState } from "@/components/ui/EmptyState"
 import { Input } from "@/components/ui/Input"
-import { StudyCard, SectionHeader } from "@/components/study/StudyCard"
-import { LiftedButton } from "@/components/study/LiftedButton"
-import { spacing, studyType } from "@/components/study/tokens"
+import { Motif } from "@/components/ui/Motif"
+import { LiftedFace, PaperCard } from "@/components/study/PaperCard"
+import { PressableScale } from "@/components/study/press"
 import { useContentLayout } from "@/theme/layout"
 import { useTheme } from "@/theme/ThemeProvider"
-import { fonts } from "@/theme/typography"
+import { paperType, families } from "@/theme/paperType"
 import { tasks } from "@/api/endpoints"
 import { motifChar } from "@/lib/languages"
 import { useOnboardingStore } from "@/store/onboarding"
@@ -17,12 +17,22 @@ import { useT } from "@/i18n"
 import { tap } from "@/utils/feedback"
 
 /**
- * /tasks — task planner (web parity: /tasks). Full CRUD on the existing
- * tasks.* endpoints; challenge-style states (open → done, done stays
- * visible at the foot like claimed challenges).
+ * /tasks — a plain list of things you meant to do (web parity: /tasks).
+ *
+ * Full CRUD on the existing `tasks.*` endpoints. **The tick is a circle, not the
+ * word "Done".** A task is something you decide is finished in a glance, and the
+ * old row made that decision by reading two words rather than seeing a mark;
+ * the circle fills and takes a tick, which is the same information a checkbox
+ * has always carried and costs no reading at all.
+ *
+ * Deleting is a word, not a gesture, and it confirms. A swipe-to-delete is a
+ * nice interaction right up until someone swipes away the wrong row.
+ *
+ * Completed tasks stay at the foot, dimmed. Hiding them would make the list feel
+ * like it was clearing itself, and a task you did yesterday is still evidence.
  */
 export function Tasks() {
-  const { theme } = useTheme()
+  const { paper } = useTheme()
   const { column: columnWidth } = useContentLayout()
   const t = useT()
   const qc = useQueryClient()
@@ -53,18 +63,57 @@ export function Tasks() {
   const open = items.filter((x) => !x.completed)
   const done = items.filter((x) => x.completed)
 
+  const confirmRemove = (id: string, content: string) =>
+    Alert.alert(t("profile.delete"), content, [
+      { text: t("profile.cancel"), style: "cancel" },
+      {
+        text: t("profile.delete"),
+        style: "destructive",
+        onPress: () => removeM.mutate(id),
+      },
+    ])
+
   return (
-    <Screen>
-      <View
-        style={{
+    <SafeAreaView
+      style={{ flex: 1, backgroundColor: paper.paper }}
+      edges={["top"]}
+    >
+      <ScrollView
+        contentContainerStyle={{
           width: "100%",
           maxWidth: columnWidth,
           alignSelf: "center",
-          gap: spacing.lg,
+          padding: 20,
+          paddingBottom: 48,
+          gap: 22,
         }}
       >
-        <SectionHeader kicker={t("tasks.kicker")} title={t("tasks.title")} />
-        <View style={{ flexDirection: "row", gap: spacing.sm }}>
+        <View
+          style={{
+            flexDirection: "row",
+            justifyContent: "space-between",
+            alignItems: "flex-start",
+            gap: 16,
+          }}
+        >
+          <View style={{ flex: 1, gap: 8 }}>
+            <Text style={[paperType.label, { color: paper.inkMuted }]}>
+              {t("tasks.kicker")}
+            </Text>
+            <Text
+              style={[
+                paperType.greeting,
+                { color: paper.ink, fontSize: 30, lineHeight: 34 },
+              ]}
+            >
+              {t("tasks.title")}
+            </Text>
+          </View>
+          <Motif char={motifChar(language)} size={56} />
+        </View>
+        <View style={{ height: 1, backgroundColor: paper.line }} />
+
+        <View style={{ flexDirection: "row", alignItems: "flex-end", gap: 12 }}>
           <View style={{ flex: 1 }}>
             <Input
               placeholder={t("tasks.addPh")}
@@ -73,9 +122,11 @@ export function Tasks() {
               autoCorrect={false}
             />
           </View>
-          <LiftedButton
+          <LiftedFace
             small
             title={t("common.add")}
+            face={paper.green}
+            disabled={!draft.trim() || createM.isPending}
             onPress={() => {
               if (draft.trim()) {
                 tap()
@@ -84,8 +135,24 @@ export function Tasks() {
             }}
           />
         </View>
+
         {listQ.isLoading ? (
-          <ActivityIndicator color={theme.accent} />
+          <PaperCard tone="review" style={{ alignItems: "center" }}>
+            <ActivityIndicator color={paper.green} />
+          </PaperCard>
+        ) : listQ.isError ? (
+          <View style={{ gap: 16 }}>
+            <EmptyState
+              title={t("lib.failedTitle")}
+              message={t("common.loadFailed")}
+              glyph={motifChar(language)}
+            />
+            <LiftedFace
+              title={t("common.retry")}
+              face={paper.green}
+              onPress={() => listQ.refetch()}
+            />
+          </View>
         ) : items.length === 0 ? (
           <EmptyState
             title={t("tasks.empty")}
@@ -94,90 +161,128 @@ export function Tasks() {
           />
         ) : (
           <>
-            {open.map((x) => (
-              <StudyCard key={x.id} tone="challenge" title={x.content}>
-                <View style={{ flexDirection: "row", gap: spacing.lg }}>
-                  <Pressable
-                    onPress={() =>
+            {open.length > 0 && (
+              <PaperCard padded={false}>
+                {open.map((x, i) => (
+                  <TaskRow
+                    key={x.id}
+                    content={x.content}
+                    first={i === 0}
+                    completed={false}
+                    onToggle={() =>
                       toggleM.mutate({ id: x.id, completed: true })
                     }
-                  >
-                    <Text
-                      style={[
-                        studyType.link,
-                        {
-                          color: theme.green,
-                          fontFamily: fonts.sans,
-                          fontWeight: "700",
-                        },
-                      ]}
-                    >
-                      {t("profile.done")} ✓
-                    </Text>
-                  </Pressable>
-                  <Pressable onPress={() => removeM.mutate(x.id)}>
-                    <Text
-                      style={[
-                        studyType.link,
-                        {
-                          color: theme.red,
-                          fontFamily: fonts.sans,
-                          fontWeight: "700",
-                        },
-                      ]}
-                    >
-                      {t("profile.delete")}
-                    </Text>
-                  </Pressable>
-                </View>
-              </StudyCard>
-            ))}
-            {done.map((x) => (
-              <StudyCard
-                key={x.id}
-                tone="week"
-                title={x.content}
-                tag={t("profile.done").toUpperCase()}
-              >
-                <View style={{ flexDirection: "row", gap: spacing.lg }}>
-                  <Pressable
-                    onPress={() =>
-                      toggleM.mutate({ id: x.id, completed: false })
-                    }
-                  >
-                    <Text
-                      style={[
-                        studyType.link,
-                        {
-                          color: theme.textMuted,
-                          fontFamily: fonts.sans,
-                          fontWeight: "700",
-                        },
-                      ]}
-                    >
-                      {t("common.retry")}
-                    </Text>
-                  </Pressable>
-                  <Pressable onPress={() => removeM.mutate(x.id)}>
-                    <Text
-                      style={[
-                        studyType.link,
-                        {
-                          color: theme.red,
-                          fontFamily: fonts.sans,
-                          fontWeight: "700",
-                        },
-                      ]}
-                    >
-                      {t("profile.delete")}
-                    </Text>
-                  </Pressable>
-                </View>
-              </StudyCard>
-            ))}
+                    onDelete={() => confirmRemove(x.id, x.content)}
+                  />
+                ))}
+              </PaperCard>
+            )}
+            {done.length > 0 && (
+              <View style={{ gap: 10 }}>
+                <Text style={[paperType.label, { color: paper.inkMuted }]}>
+                  {t("profile.done")}
+                </Text>
+                <PaperCard padded={false}>
+                  {done.map((x, i) => (
+                    <TaskRow
+                      key={x.id}
+                      content={x.content}
+                      first={i === 0}
+                      completed
+                      onToggle={() =>
+                        toggleM.mutate({ id: x.id, completed: false })
+                      }
+                      onDelete={() => confirmRemove(x.id, x.content)}
+                    />
+                  ))}
+                </PaperCard>
+              </View>
+            )}
           </>
         )}
-      </View>
-    </Screen>
+      </ScrollView>
+    </SafeAreaView>
+  )
+}
+
+function TaskRow({
+  content,
+  first,
+  completed,
+  onToggle,
+  onDelete,
+}: {
+  content: string
+  first: boolean
+  completed: boolean
+  onToggle: () => void
+  onDelete: () => void
+}) {
+  const { paper } = useTheme()
+  const t = useT()
+  return (
+    <View
+      style={{
+        flexDirection: "row",
+        alignItems: "center",
+        gap: 12,
+        paddingVertical: 13,
+        paddingHorizontal: 16,
+        borderTopWidth: first ? 0 : 1,
+        borderTopColor: paper.lineSoft,
+      }}
+    >
+      <PressableScale
+        onPress={onToggle}
+        accessibilityLabel={`${content} — ${t("profile.done")}`}
+      >
+        <View
+          style={{
+            width: 26,
+            height: 26,
+            borderRadius: 13,
+            borderWidth: 1.5,
+            borderColor: completed ? paper.green : paper.track,
+            backgroundColor: completed ? paper.green : "transparent",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+        >
+          {completed && (
+            <Text
+              style={{
+                color: paper.card,
+                fontFamily: families.nunitoBold,
+                fontSize: 13,
+              }}
+            >
+              ✓
+            </Text>
+          )}
+        </View>
+      </PressableScale>
+
+      <Text
+        style={[
+          paperType.body,
+          {
+            flex: 1,
+            color: completed ? paper.inkMuted : paper.ink,
+            textDecorationLine: completed ? "line-through" : "none",
+          },
+        ]}
+      >
+        {content}
+      </Text>
+
+      <PressableScale
+        onPress={onDelete}
+        accessibilityLabel={t("profile.delete")}
+      >
+        <Text style={[paperType.link, { color: paper.coral }]}>
+          {t("profile.delete")}
+        </Text>
+      </PressableScale>
+    </View>
   )
 }

@@ -16,12 +16,10 @@ import {
   SettingsRow,
   SettingsState,
 } from "@/components/settings/SettingsGroup"
-import { PaperCard } from "@/components/study/PaperCard"
+import { LiftedFace, PaperCard } from "@/components/study/PaperCard"
 import { useTheme } from "@/theme/ThemeProvider"
 import { useUserSettings } from "@/hooks/useUserSettings"
 import { useT } from "@/i18n"
-import { Button } from "@/components/ui/Button"
-import { Card } from "@/components/ui/Card"
 import { Input } from "@/components/ui/Input"
 import { fonts, type } from "@/theme/typography"
 import { EmptyState } from "@/components/ui/EmptyState"
@@ -44,7 +42,7 @@ const LINKS = [
  * accident. It is confirmed, because the cost of a mis-tap is losing a streak.
  */
 export default function SettingsAbout() {
-  const { theme } = useTheme()
+  const { theme, paper } = useTheme()
   const t = useT()
   const s = useUserSettings()
   const signOut = useAuthStore((st) => st.signOut)
@@ -127,7 +125,7 @@ export default function SettingsAbout() {
 }
 
 function ChangePasswordCard() {
-  const { theme } = useTheme()
+  const { theme, paper } = useTheme()
   const t = useT()
   const [open, setOpen] = useState(false)
   const [current, setCurrent] = useState("")
@@ -145,7 +143,7 @@ function ChangePasswordCard() {
   })
 
   return (
-    <Card>
+    <PaperCard>
       <View style={{ gap: 12 }}>
         <Pressable
           onPress={() => setOpen((o) => !o)}
@@ -190,25 +188,26 @@ function ChangePasswordCard() {
                 {msg}
               </Text>
             )}
-            <Button
+            <LiftedFace
+              small
               title={
                 changeM.isPending ? t("profile.saving") : t("profile.updatePw")
               }
-              variant="secondary"
+              face={paper.green}
               disabled={!current || next.length < 8 || changeM.isPending}
               onPress={() => changeM.mutate()}
             />
           </View>
         )}
       </View>
-    </Card>
+    </PaperCard>
   )
 }
 
 // ─── About section ─────────────────────────────────────────────────────────
 
 export function AboutSection() {
-  const { theme } = useTheme()
+  const { theme, paper } = useTheme()
   const t = useT()
   const router = useRouter()
   const language = useOnboardingStore((s) => s.language)
@@ -392,16 +391,19 @@ export function AboutSection() {
         </Text>
         <View style={{ flexDirection: "row", gap: 8 }}>
           <View style={{ flex: 1 }}>
-            <Button
+            <LiftedFace
+              small
               title={t("profile.contribute")}
-              variant="secondary"
+              face={paper.green}
               onPress={() => router.push("/apply")}
             />
           </View>
           <View style={{ flex: 1 }}>
-            <Button
+            <LiftedFace
+              small
               title={t("profile.sponsor")}
-              variant="ghost"
+              face={paper.inkSoft}
+              textColor={paper.ink}
               onPress={() => router.push("/apply")}
             />
           </View>

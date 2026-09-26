@@ -1,24 +1,33 @@
-import { ActivityIndicator, Text, View } from "react-native"
+import { ActivityIndicator, ScrollView, Text, View } from "react-native"
 import { useQuery } from "@tanstack/react-query"
-import { Screen } from "@/components/ui/Screen"
+import { SafeAreaView } from "react-native-safe-area-context"
 import { EmptyState } from "@/components/ui/EmptyState"
-import { StudyCard, SectionHeader } from "@/components/study/StudyCard"
-import { WeekStrip } from "@/components/study/StudyBits"
-import { spacing, studyType } from "@/components/study/tokens"
+import { Motif } from "@/components/ui/Motif"
+import { LiftedFace, PaperCard, PaperStat } from "@/components/study/PaperCard"
+import { WeekStrip } from "@/components/study/WeekStrip"
 import { useContentLayout } from "@/theme/layout"
 import { useTheme } from "@/theme/ThemeProvider"
-import { fonts } from "@/theme/typography"
+import { paperType } from "@/theme/paperType"
 import { progress } from "@/api/endpoints"
 import { motifChar } from "@/lib/languages"
 import { useOnboardingStore } from "@/store/onboarding"
 import { useT } from "@/i18n"
 
 /**
- * Progress: the week strip, lifetime stats, and recent sessions — the same
- * story the dashboard's This Week card tells, over twelve weeks instead of one.
+ * Progress — the week strip, the lifetime numbers, and recent sessions.
+ *
+ * **The two headline numbers are the same kind of thing and sit together on one
+ * sheet.** Total XP only ever grows; the best streak is a high-water mark that
+ * is also a past tense. They read as a pair because they answer one question —
+ * how far have you come — and splitting them across two cards gave each one the
+ * weight of a separate story.
+ *
+ * A failure to load says so. The old screen only asked "loading?" and, failing
+ * that, drew a progress page with zeroes in it, which is the one reading a
+ * learner cannot tell from having genuinely done nothing.
  */
 export function Progress() {
-  const { theme } = useTheme()
+  const { paper } = useTheme()
   const { column: columnWidth } = useContentLayout()
   const t = useT()
   const language = useOnboardingStore((s) => s.language)
@@ -31,65 +40,107 @@ export function Progress() {
 
   const sessions = sessionsQ.data ?? []
   const loading = progressQ.isLoading || sessionsQ.isLoading
+  const failed = progressQ.isError || sessionsQ.isError
 
-  return (
-    <Screen>
+  const masthead = (
+    <>
       <View
         style={{
+          flexDirection: "row",
+          justifyContent: "space-between",
+          alignItems: "flex-start",
+          gap: 16,
+        }}
+      >
+        <View style={{ flex: 1, gap: 8 }}>
+          <Text style={[paperType.label, { color: paper.inkMuted }]}>
+            {t("journey.kicker")}
+          </Text>
+          <Text
+            style={[
+              paperType.greeting,
+              { color: paper.ink, fontSize: 30, lineHeight: 34 },
+            ]}
+          >
+            {t("journey.title")}
+          </Text>
+        </View>
+        <Motif char={motifChar(language)} size={56} />
+      </View>
+      <View style={{ height: 1, backgroundColor: paper.line }} />
+    </>
+  )
+
+  return (
+    <SafeAreaView
+      style={{ flex: 1, backgroundColor: paper.paper }}
+      edges={["top"]}
+    >
+      <ScrollView
+        contentContainerStyle={{
           width: "100%",
           maxWidth: columnWidth,
           alignSelf: "center",
-          gap: spacing.lg,
+          padding: 20,
+          paddingBottom: 48,
+          gap: 22,
         }}
       >
-        <SectionHeader
-          kicker={t("journey.kicker")}
-          title={t("journey.title")}
-        />
+        {masthead}
+
         {loading ? (
-          <ActivityIndicator color={theme.accent} />
+          <PaperCard tone="review" style={{ alignItems: "center" }}>
+            <ActivityIndicator color={paper.green} />
+          </PaperCard>
+        ) : failed ? (
+          <View style={{ gap: 16 }}>
+            <EmptyState
+              title={t("lib.failedTitle")}
+              message={t("common.loadFailed")}
+              glyph={motifChar(language)}
+            />
+            <LiftedFace
+              title={t("common.retry")}
+              face={paper.green}
+              onPress={() => {
+                progressQ.refetch()
+                sessionsQ.refetch()
+              }}
+            />
+          </View>
         ) : (
           <>
-            <View style={{ flexDirection: "row", gap: spacing.cardGap }}>
-              <View style={{ flex: 1 }}>
-                <StudyCard tone="week" title={t("journey.totalXp")}>
-                  <Text
-                    style={[
-                      studyType.statValue,
-                      {
-                        color: theme.green,
-                        fontFamily: fonts.sans,
-                        fontWeight: "800",
-                      },
-                    ]}
-                  >
-                    {progressQ.data?.xp ?? 0}
-                  </Text>
-                </StudyCard>
+            <PaperCard>
+              <View style={{ flexDirection: "row", gap: 16 }}>
+                <PaperStat
+                  value={progressQ.data?.xp ?? 0}
+                  label={t("journey.totalXp")}
+                  style={{ flex: 1 }}
+                />
+                <PaperStat
+                  value={
+                    progressQ.data?.best_streak ?? progressQ.data?.streak ?? 0
+                  }
+                  label={t("journey.best")}
+                  ink={paper.coral}
+                  style={{ flex: 1 }}
+                />
               </View>
-              <View style={{ flex: 1 }}>
-                <StudyCard tone="review" title={t("journey.best")}>
-                  <Text
-                    style={[
-                      studyType.statValue,
-                      {
-                        color: theme.accent,
-                        fontFamily: fonts.sans,
-                        fontWeight: "800",
-                      },
-                    ]}
-                  >
-                    {progressQ.data?.best_streak ?? progressQ.data?.streak ?? 0}
-                  </Text>
-                </StudyCard>
-              </View>
+            </PaperCard>
+
+            <View style={{ gap: 10 }}>
+              <Text style={[paperType.label, { color: paper.inkMuted }]}>
+                {t("journey.weekActivity")}
+              </Text>
+              <PaperCard>
+                <WeekStrip sessions={sessions} />
+              </PaperCard>
             </View>
 
-            <StudyCard tone="week" title={t("journey.weekActivity")}>
-              <WeekStrip sessions={sessions} />
-            </StudyCard>
-
-            <StudyCard tone="neutral" title={t("journey.recent")}>
+            <View style={{ gap: 10 }}>
+              <Text style={[paperType.label, { color: paper.inkMuted }]}>
+                {t("journey.recent")}
+              </Text>
               {sessions.length === 0 ? (
                 <EmptyState
                   title={t("journey.noSessions")}
@@ -97,44 +148,40 @@ export function Progress() {
                   glyph={motifChar(language)}
                 />
               ) : (
-                <View>
-                  {sessions.slice(0, 14).map((s) => (
+                <PaperCard padded={false}>
+                  {sessions.slice(0, 14).map((s, i) => (
                     <View
                       key={s.id}
                       style={{
                         flexDirection: "row",
                         justifyContent: "space-between",
                         alignItems: "baseline",
-                        paddingVertical: spacing.sm,
-                        borderBottomWidth: 1,
-                        borderBottomColor: theme.border,
-                        gap: spacing.md,
+                        paddingVertical: 13,
+                        paddingHorizontal: 16,
+                        borderTopWidth: i === 0 ? 0 : 1,
+                        borderTopColor: paper.lineSoft,
+                        gap: 12,
                       }}
                     >
-                      <Text
-                        style={[
-                          studyType.cardBody,
-                          { color: theme.text, fontFamily: fonts.sans },
-                        ]}
-                      >
+                      <Text style={[paperType.cardBody, { color: paper.ink }]}>
                         {(s.date ?? "").slice(0, 10)}
                       </Text>
                       <Text
                         style={[
-                          studyType.cardBody,
-                          { color: theme.textMuted, fontFamily: fonts.sans },
+                          paperType.statLabel,
+                          { color: paper.inkMuted, fontSize: 12.5 },
                         ]}
                       >
                         {s.minutes} {t("journey.minAbbrev")} · {s.xp} XP
                       </Text>
                     </View>
                   ))}
-                </View>
+                </PaperCard>
               )}
-            </StudyCard>
+            </View>
           </>
         )}
-      </View>
-    </Screen>
+      </ScrollView>
+    </SafeAreaView>
   )
 }

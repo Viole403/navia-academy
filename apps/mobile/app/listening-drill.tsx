@@ -129,7 +129,7 @@ export default function ListeningDrillScreen() {
           {masthead}
           <EmptyState
             title={t("listen.failedTitle")}
-            message={t("listen.failedMsg")}
+            message={t("common.loadFailed")}
             glyph={motifChar(language)}
           />
           <LiftedFace

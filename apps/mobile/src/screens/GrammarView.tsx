@@ -1,15 +1,14 @@
-import { ActivityIndicator, Pressable, Text, View } from "react-native"
+import { ActivityIndicator, ScrollView, Text, View } from "react-native"
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query"
 import { Stack, useLocalSearchParams, useRouter } from "expo-router"
 import { SafeAreaView } from "react-native-safe-area-context"
-import { Screen } from "@/components/ui/Screen"
 import { EmptyState } from "@/components/ui/EmptyState"
-import { StudyCard, SectionHeader } from "@/components/study/StudyCard"
-import { LiftedButton } from "@/components/study/LiftedButton"
-import { spacing } from "@/components/study/tokens"
+import { LiftedFace, PaperCard } from "@/components/study/PaperCard"
+import { PressableScale } from "@/components/study/press"
+import { useContentFaces } from "@/hooks/useContentFaces"
 import { useContentLayout } from "@/theme/layout"
 import { useTheme } from "@/theme/ThemeProvider"
-import { fonts, type } from "@/theme/typography"
+import { paperType } from "@/theme/paperType"
 import { progress } from "@/api/endpoints"
 import { loadGrammar } from "@/lib/content-data"
 import { headword, motifChar, reading } from "@/lib/languages"
@@ -18,13 +17,18 @@ import { useT } from "@/i18n"
 import { tap } from "@/utils/feedback"
 
 /**
- * /grammar/[id] — grammar detail (web parity: /grammar/[pointId]).
- * DetailShell pattern: pattern header, plain explanation, examples,
- * add-to-review for the SRS deck.
+ * /grammar/[id] — one grammar point (web parity: /grammar/[pointId]).
+ *
+ * The explanation, the examples, and a way to put the point in front of
+ * yourself again later. **The examples are the point of the page** — a grammar
+ * point taught without them is a rule, and a rule does not survive contact with
+ * a sentence — so they are set in the learner's own script and the reading sits
+ * under each in the accent, the way a dictionary would.
  */
 export function GrammarView() {
-  const { theme, paper } = useTheme()
+  const { paper } = useTheme()
   const { column: columnWidth } = useContentLayout()
+  const faces = useContentFaces()
   const t = useT()
   const router = useRouter()
   const qc = useQueryClient()
@@ -51,91 +55,134 @@ export function GrammarView() {
   }
 
   return (
-    <SafeAreaView style={{ flex: 1, backgroundColor: paper.paper }}>
+    <SafeAreaView
+      style={{ flex: 1, backgroundColor: paper.paper }}
+      edges={["top"]}
+    >
       <Stack.Screen options={{ headerShown: false }} />
-      <View
-        style={{
-          flexDirection: "row",
-          alignItems: "center",
-          paddingHorizontal: 20,
-          paddingVertical: 14,
-          borderBottomWidth: 1,
-          borderBottomColor: theme.border,
+      <ScrollView
+        contentContainerStyle={{
+          width: "100%",
+          maxWidth: columnWidth,
+          alignSelf: "center",
+          padding: 20,
+          paddingBottom: 48,
+          gap: 22,
         }}
       >
-        <Pressable onPress={goBack}>
-          <Text style={{ color: theme.textMuted, fontSize: 15 }}>
-            ← {t("vocab.back")}
-          </Text>
-        </Pressable>
-      </View>
-      <Screen>
         <View
           style={{
-            width: "100%",
-            maxWidth: columnWidth,
-            alignSelf: "center",
-            gap: spacing.lg,
+            flexDirection: "row",
+            alignItems: "center",
+            justifyContent: "space-between",
+            gap: 12,
           }}
         >
-          {grammarQ.isLoading ? (
-            <ActivityIndicator color={theme.accent} />
-          ) : !point ? (
+          <PressableScale onPress={goBack} accessibilityLabel={t("vocab.back")}>
+            <Text style={[paperType.link, { color: paper.inkMuted }]}>
+              ← {t("vocab.back")}
+            </Text>
+          </PressableScale>
+        </View>
+        <View style={{ height: 1, backgroundColor: paper.line }} />
+
+        {grammarQ.isLoading ? (
+          <PaperCard tone="review" style={{ alignItems: "center" }}>
+            <ActivityIndicator color={paper.green} />
+          </PaperCard>
+        ) : grammarQ.isError ? (
+          <View style={{ gap: 16 }}>
             <EmptyState
-              title={t("vocab.notFound")}
-              message={t("lib.nothingMsg")}
+              title={t("lib.failedTitle")}
+              message={t("common.loadFailed")}
               glyph={motifChar(language)}
             />
-          ) : (
-            <>
-              <SectionHeader
-                kicker={point.level ?? point.pattern ?? ""}
-                title={point.title}
-              />
-              {!!point.simpleExplanation && (
-                <StudyCard tone="word">
-                  <Text style={[type.body, { color: theme.text }]}>
-                    {point.simpleExplanation}
-                  </Text>
-                </StudyCard>
-              )}
-              {(point.examples ?? []).length > 0 && (
-                <StudyCard tone="neutral" title={t("gram.examples")}>
-                  <View style={{ gap: spacing.md }}>
-                    {(point.examples ?? []).map((e, i) => (
-                      <View key={i} style={{ gap: 2 }}>
+            <LiftedFace
+              title={t("common.retry")}
+              face={paper.green}
+              onPress={() => grammarQ.refetch()}
+            />
+          </View>
+        ) : !point ? (
+          <EmptyState
+            title={t("vocab.notFound")}
+            message={t("lib.nothingMsg")}
+            glyph={motifChar(language)}
+          />
+        ) : (
+          <>
+            <View style={{ gap: 8 }}>
+              <Text style={[paperType.label, { color: paper.inkMuted }]}>
+                {point.level ?? point.pattern ?? ""}
+              </Text>
+              <Text
+                style={[
+                  paperType.greeting,
+                  { color: paper.ink, fontSize: 28, lineHeight: 32 },
+                ]}
+              >
+                {point.title}
+              </Text>
+            </View>
+
+            {!!point.simpleExplanation && (
+              <PaperCard tone="word">
+                <Text style={[paperType.prose, { color: paper.inkSoft }]}>
+                  {point.simpleExplanation}
+                </Text>
+              </PaperCard>
+            )}
+
+            {(point.examples ?? []).length > 0 && (
+              <View style={{ gap: 10 }}>
+                <Text style={[paperType.label, { color: paper.inkMuted }]}>
+                  {t("gram.examples")}
+                </Text>
+                <PaperCard padded={false}>
+                  {(point.examples ?? []).map((e, i) => (
+                    <View
+                      key={i}
+                      style={{
+                        gap: 3,
+                        padding: 16,
+                        borderTopWidth: i === 0 ? 0 : 1,
+                        borderTopColor: paper.lineSoft,
+                      }}
+                    >
+                      <Text
+                        style={{
+                          fontFamily: faces.display,
+                          fontSize: 20,
+                          lineHeight: 30,
+                          color: paper.ink,
+                        }}
+                      >
+                        {headword(e)}
+                      </Text>
+                      {!!reading(e) && (
                         <Text
-                          style={{
-                            fontFamily: fonts.serif,
-                            fontSize: 18,
-                            lineHeight: 28,
-                            color: theme.text,
-                          }}
+                          style={[paperType.note, { color: paper.greenDark }]}
                         >
-                          {headword(e)}
+                          {reading(e)}
                         </Text>
-                        {!!reading(e) && (
-                          <Text style={[type.caption, { color: theme.accent }]}>
-                            {reading(e)}
-                          </Text>
-                        )}
-                      </View>
-                    ))}
-                  </View>
-                </StudyCard>
-              )}
-              <LiftedButton
-                title={t("vocab.addReview")}
-                face={theme.green}
-                onPress={() => {
-                  tap()
-                  addM.mutate()
-                }}
-              />
-            </>
-          )}
-        </View>
-      </Screen>
+                      )}
+                    </View>
+                  ))}
+                </PaperCard>
+              </View>
+            )}
+
+            <LiftedFace
+              title={t("vocab.addReview")}
+              face={paper.green}
+              onPress={() => {
+                tap()
+                addM.mutate()
+              }}
+            />
+          </>
+        )}
+      </ScrollView>
     </SafeAreaView>
   )
 }

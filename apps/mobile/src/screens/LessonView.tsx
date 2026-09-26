@@ -1,17 +1,16 @@
 import { useState } from "react"
-import { ActivityIndicator, Pressable, Text, View } from "react-native"
+import { ActivityIndicator, ScrollView, Text, View } from "react-native"
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query"
 import { Stack, useLocalSearchParams, useRouter } from "expo-router"
 import { SafeAreaView } from "react-native-safe-area-context"
-import { Screen } from "@/components/ui/Screen"
 import { EmptyState } from "@/components/ui/EmptyState"
 import { ProgressBar } from "@/components/ui/ProgressBar"
-import { StudyCard } from "@/components/study/StudyCard"
-import { LiftedButton } from "@/components/study/LiftedButton"
-import { spacing, studyType } from "@/components/study/tokens"
+import { LiftedFace, PaperCard } from "@/components/study/PaperCard"
+import { PressableScale } from "@/components/study/press"
+import { useContentFaces } from "@/hooks/useContentFaces"
 import { useContentLayout } from "@/theme/layout"
 import { useTheme } from "@/theme/ThemeProvider"
-import { fonts, type } from "@/theme/typography"
+import { paperType } from "@/theme/paperType"
 import { loadCurriculum } from "@/lib/content-data"
 import { motifChar } from "@/lib/languages"
 import { useOnboardingStore } from "@/store/onboarding"
@@ -38,14 +37,22 @@ interface Lesson {
 }
 
 /**
- * /lesson/[id] — step player (web parity: /lesson/[lessonId]).
+ * /lesson/[id] — the step player (web parity: /lesson/[lessonId]).
+ *
  * One step at a time against a fixed plan, rendering the curriculum bundle's
- * steps (title + body). Completing a lesson logs the study time and XP it is
- * worth, the same write the program browser makes.
+ * steps. **Completing a lesson logs the time and XP it is worth** — the same
+ * write the program browser makes, so a lesson is not a thing you read and a
+ * progress bar is not a thing you watch.
+ *
+ * The steps are teaching material in the learner's own language, so their text
+ * is set in the content face. A CJK lesson body rendered in the Latin serif
+ * silently loses its glyphs, and a Latin one set in a CJK face reads as a
+ * mistake.
  */
 export function LessonView() {
-  const { theme, paper } = useTheme()
+  const { paper } = useTheme()
   const { column: columnWidth } = useContentLayout()
+  const faces = useContentFaces()
   const t = useT()
   const router = useRouter()
   const qc = useQueryClient()
@@ -82,24 +89,28 @@ export function LessonView() {
   const last = steps.length > 0 && step >= steps.length - 1
 
   return (
-    <SafeAreaView style={{ flex: 1, backgroundColor: paper.paper }}>
+    <SafeAreaView
+      style={{ flex: 1, backgroundColor: paper.paper }}
+      edges={["top"]}
+    >
       <Stack.Screen options={{ headerShown: false }} />
       <View
         style={{
-          padding: spacing.lg,
+          paddingHorizontal: 20,
+          paddingTop: 12,
+          paddingBottom: 14,
           flexDirection: "row",
           justifyContent: "space-between",
           alignItems: "center",
-          borderBottomWidth: 1,
-          borderBottomColor: theme.border,
+          gap: 12,
         }}
       >
-        <Pressable onPress={goBack}>
-          <Text style={{ color: theme.textMuted, fontSize: 16 }}>
-            {t("review.back")}
+        <PressableScale onPress={goBack} accessibilityLabel={t("review.back")}>
+          <Text style={[paperType.link, { color: paper.inkMuted }]}>
+            ← {t("review.back")}
           </Text>
-        </Pressable>
-        <Text style={[type.labelSm, { color: theme.textMuted }]}>
+        </PressableScale>
+        <Text style={[paperType.label, { color: paper.inkMuted }]}>
           {steps.length === 0
             ? (lesson?.title ?? "")
             : `${step + 1} ${t("lesson.of")} ${steps.length}`}
@@ -108,97 +119,114 @@ export function LessonView() {
       <ProgressBar
         value={steps.length === 0 ? 0 : (step + 1) / steps.length}
         height={2}
-        tint={theme.accent}
+        tint={paper.green}
       />
-      <Screen>
-        <View
-          style={{
-            width: "100%",
-            maxWidth: columnWidth,
-            alignSelf: "center",
-            gap: spacing.lg,
-            flexGrow: 1,
-          }}
-        >
-          {curriculumQ.isLoading ? (
-            <ActivityIndicator color={theme.accent} />
-          ) : !lesson ? (
+      <ScrollView
+        contentContainerStyle={{
+          width: "100%",
+          maxWidth: columnWidth,
+          alignSelf: "center",
+          padding: 20,
+          paddingBottom: 48,
+          gap: 22,
+        }}
+      >
+        {curriculumQ.isLoading ? (
+          <PaperCard tone="review" style={{ alignItems: "center" }}>
+            <ActivityIndicator color={paper.green} />
+          </PaperCard>
+        ) : curriculumQ.isError ? (
+          <View style={{ gap: 16 }}>
             <EmptyState
-              title={t("vocab.notFound")}
-              message={t("lib.nothingMsg")}
+              title={t("lib.failedTitle")}
+              message={t("common.loadFailed")}
               glyph={motifChar(language)}
             />
-          ) : steps.length === 0 || !current ? (
-            <StudyCard tone="word" title={lesson.title} body={lesson.subtitle}>
-              <LiftedButton
-                title={t("prog.markComplete")}
-                onPress={() => doneM.mutate()}
-              />
-            </StudyCard>
-          ) : (
-            <>
-              <StudyCard
-                tone="word"
-                tag={(current.type ?? t("lesson.of")).toUpperCase()}
-                title={current.title ?? lesson.title}
-              >
-                {(current.body ?? []).map((p, i) => (
-                  <Text key={i} style={[type.body, { color: theme.text }]}>
-                    {p}
-                  </Text>
-                ))}
-              </StudyCard>
-              <View style={{ flexDirection: "row", gap: spacing.sm }}>
-                {step > 0 && (
-                  <View style={{ flex: 1 }}>
-                    <LiftedButton
-                      small
-                      title={t("common.back")}
-                      face={theme.surfaceAlt}
-                      textColor={theme.text}
-                      onPress={() => {
-                        tap()
-                        setStep((s) => s - 1)
-                      }}
-                    />
-                  </View>
-                )}
-                <View style={{ flex: 2 }}>
-                  {last ? (
-                    <LiftedButton
-                      small
-                      title={t("prog.markComplete")}
-                      face={theme.green}
-                      onPress={() => doneM.mutate()}
-                    />
-                  ) : (
-                    <LiftedButton
-                      small
-                      title={t("common.next")}
-                      onPress={() => {
-                        tap()
-                        setStep((s) => s + 1)
-                      }}
-                    />
-                  )}
-                </View>
-              </View>
+            <LiftedFace
+              title={t("common.retry")}
+              face={paper.green}
+              onPress={() => curriculumQ.refetch()}
+            />
+          </View>
+        ) : !lesson ? (
+          <EmptyState
+            title={t("vocab.notFound")}
+            message={t("lib.nothingMsg")}
+            glyph={motifChar(language)}
+          />
+        ) : steps.length === 0 || !current ? (
+          <PaperCard tone="word" title={lesson.title} body={lesson.subtitle} />
+        ) : (
+          <>
+            <PaperCard tone="word">
+              <Text style={[paperType.label, { color: paper.greenDark }]}>
+                {(current.type ?? t("lesson.of")).toUpperCase()}
+              </Text>
               <Text
                 style={[
-                  studyType.statLabel,
-                  {
-                    color: theme.textDim,
-                    fontFamily: fonts.sans,
-                    textAlign: "center",
-                  },
+                  paperType.cardTitle,
+                  { color: paper.ink, fontSize: 22, lineHeight: 28 },
                 ]}
               >
-                {lesson.durationMin ?? 10} min · {lesson.xp ?? 20} XP
+                {current.title ?? lesson.title}
               </Text>
-            </>
-          )}
-        </View>
-      </Screen>
+              {(current.body ?? []).map((p, i) => (
+                <Text
+                  key={i}
+                  style={{
+                    fontFamily: faces.display,
+                    fontSize: 17,
+                    lineHeight: 26,
+                    color: paper.inkSoft,
+                  }}
+                >
+                  {p}
+                </Text>
+              ))}
+            </PaperCard>
+
+            <View style={{ flexDirection: "row", gap: 10 }}>
+              {step > 0 && (
+                <View style={{ flex: 1 }}>
+                  <LiftedFace
+                    small
+                    title={t("common.back")}
+                    face={paper.inkSoft}
+                    textColor={paper.ink}
+                    onPress={() => {
+                      tap()
+                      setStep((s) => s - 1)
+                    }}
+                  />
+                </View>
+              )}
+              <View style={{ flex: 2 }}>
+                <LiftedFace
+                  small
+                  title={last ? t("prog.markComplete") : t("common.next")}
+                  face={last ? paper.green : paper.coral}
+                  disabled={doneM.isPending}
+                  onPress={() => {
+                    tap()
+                    if (last) doneM.mutate()
+                    else setStep((s) => s + 1)
+                  }}
+                />
+              </View>
+            </View>
+
+            <Text
+              style={[
+                paperType.statLabel,
+                { color: paper.inkMuted, textAlign: "center" },
+              ]}
+            >
+              {lesson.durationMin ?? 10} {t("journey.minAbbrev")} ·{" "}
+              {lesson.xp ?? 20} XP
+            </Text>
+          </>
+        )}
+      </ScrollView>
     </SafeAreaView>
   )
 }

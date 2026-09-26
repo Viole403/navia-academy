@@ -1,14 +1,15 @@
 import { useState } from "react"
-import { Alert, Pressable, ScrollView, Text, View } from "react-native"
+import { Alert, ScrollView, Text, View } from "react-native"
 import { SafeAreaView } from "react-native-safe-area-context"
 import { useRouter } from "expo-router"
 import { useMutation } from "@tanstack/react-query"
-import { Button } from "@/components/ui/Button"
 import { Input } from "@/components/ui/Input"
 import { Motif } from "@/components/ui/Motif"
-import { SegmentedControl } from "@/components/ui/SegmentedControl"
+import { LiftedFace, QuietPill } from "@/components/study/PaperCard"
+import { PressableScale } from "@/components/study/press"
 import { useTheme } from "@/theme/ThemeProvider"
-import { fonts, type } from "@/theme/typography"
+import { useContentLayout } from "@/theme/layout"
+import { paperType } from "@/theme/paperType"
 import { community } from "@/api/endpoints"
 import { motifChar } from "@/lib/languages"
 import { useOnboardingStore } from "@/store/onboarding"
@@ -17,7 +18,8 @@ import { useT } from "@/i18n"
 type Mode = "contributor" | "sponsor"
 
 export default function Apply() {
-  const { theme, paper } = useTheme()
+  const { paper } = useTheme()
+  const { column } = useContentLayout()
   const router = useRouter()
   const t = useT()
   const language = useOnboardingStore((s) => s.language)
@@ -56,44 +58,64 @@ export default function Apply() {
     },
   })
 
+  const canSubmit =
+    !!name.trim() && !!email.trim() && (mode === "sponsor" || !!area.trim())
+
   return (
     <SafeAreaView
       style={{ flex: 1, backgroundColor: paper.paper }}
       edges={["top"]}
     >
-      <View
-        style={{
-          padding: 16,
-          flexDirection: "row",
-          justifyContent: "space-between",
-          alignItems: "center",
-          borderBottomWidth: 1,
-          borderBottomColor: theme.border,
+      <ScrollView
+        contentContainerStyle={{
+          padding: 20,
+          paddingBottom: 48,
+          gap: 22,
+          maxWidth: column,
+          width: "100%",
+          alignSelf: "center",
         }}
       >
-        <Pressable onPress={() => router.back()}>
-          <Text style={{ color: theme.textMuted, fontSize: 16 }}>
-            {t("apply.back")}
+        <View
+          style={{
+            flexDirection: "row",
+            justifyContent: "space-between",
+            alignItems: "center",
+            gap: 12,
+          }}
+        >
+          <PressableScale
+            onPress={() => router.back()}
+            accessibilityLabel={t("apply.back")}
+          >
+            <Text style={[paperType.link, { color: paper.inkMuted }]}>
+              {t("apply.back")}
+            </Text>
+          </PressableScale>
+          <Text style={[paperType.label, { color: paper.inkMuted }]}>
+            {t("apply.kicker")}
           </Text>
-        </Pressable>
-        <Text style={[type.labelSm, { color: theme.textMuted }]}>
-          {t("apply.kicker")}
-        </Text>
-      </View>
+        </View>
+        <View style={{ height: 1, backgroundColor: paper.line }} />
 
-      <ScrollView contentContainerStyle={{ padding: 24, gap: 24, flexGrow: 1 }}>
         <View
           style={{
             flexDirection: "row",
             justifyContent: "space-between",
             alignItems: "flex-start",
+            gap: 16,
           }}
         >
           <View style={{ flex: 1, gap: 8 }}>
-            <Text style={[type.labelSm, { color: theme.textMuted }]}>
+            <Text style={[paperType.label, { color: paper.inkMuted }]}>
               {t("apply.joinTitle")}
             </Text>
-            <Text style={[type.display, { color: theme.text, fontSize: 32 }]}>
+            <Text
+              style={[
+                paperType.greeting,
+                { color: paper.ink, fontSize: 30, lineHeight: 34 },
+              ]}
+            >
               {mode === "contributor"
                 ? t("apply.contribute")
                 : t("apply.sponsor")}
@@ -102,17 +124,25 @@ export default function Apply() {
           <Motif char={motifChar(language)} size={56} />
         </View>
 
-        {/* Mode switcher */}
-        <SegmentedControl<Mode>
-          options={[
-            { id: "contributor", label: t("apply.contributorMode") },
-            { id: "sponsor", label: t("apply.sponsorMode") },
-          ]}
-          value={mode}
-          onChange={setMode}
-        />
+        {/* Two ways in, side by side, equal weight — this is a choice of who
+            you are rather than a filter, so it reads as two options rather
+            than a switch with a position. */}
+        <View style={{ flexDirection: "row", gap: 8 }}>
+          {(
+            [
+              ["contributor", t("apply.contributorMode")],
+              ["sponsor", t("apply.sponsorMode")],
+            ] as [Mode, string][]
+          ).map(([value, label]) => (
+            <QuietPill
+              key={value}
+              title={label}
+              onPress={() => setMode(value)}
+              tone={mode === value ? "challenge" : "plain"}
+            />
+          ))}
+        </View>
 
-        {/* Form */}
         <View style={{ gap: 16 }}>
           <Input
             label={
@@ -147,19 +177,13 @@ export default function Apply() {
           />
         </View>
 
-        <View style={{ marginTop: "auto" }}>
-          <Button
-            title={t("apply.submit")}
-            onPress={() => applyM.mutate()}
-            loading={applyM.isPending}
-            disabled={
-              !name.trim() ||
-              !email.trim() ||
-              (mode === "contributor" && !area.trim())
-            }
-            size="lg"
-          />
-        </View>
+        <LiftedFace
+          title={t("apply.submit")}
+          face={paper.green}
+          disabled={!canSubmit || applyM.isPending}
+          onPress={() => applyM.mutate()}
+          style={{ marginTop: "auto" }}
+        />
       </ScrollView>
     </SafeAreaView>
   )

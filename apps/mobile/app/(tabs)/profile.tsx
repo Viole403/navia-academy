@@ -11,16 +11,13 @@ import {
 import { SafeAreaView } from "react-native-safe-area-context"
 import { useRouter } from "expo-router"
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query"
-import { Button } from "@/components/ui/Button"
-import { Card } from "@/components/ui/Card"
-import { Chip } from "@/components/ui/Chip"
 import { SegmentedControl } from "@/components/ui/SegmentedControl"
 import { ThemeSwatch } from "@/components/ui/ThemeSwatch"
 import { EmptyState } from "@/components/ui/EmptyState"
 import { Input } from "@/components/ui/Input"
 import { KeyboardSafeScroll } from "@/components/ui/KeyboardSafeScroll"
 import { Motif } from "@/components/ui/Motif"
-import { StudyCard } from "@/components/study/StudyCard"
+import { LiftedFace, PaperCard } from "@/components/study/PaperCard"
 import { useTheme } from "@/theme/ThemeProvider"
 import { fonts, type } from "@/theme/typography"
 import type { ThemeId, ThemeMode } from "@/theme/colors"
@@ -253,8 +250,8 @@ export default function ProfileTab() {
             </View>
 
             {activePath && (
-              <Card>
-                <View style={{ gap: 8 }}>
+              <PaperCard tone="plain">
+                <View style={{ gap: 6 }}>
                   <Text style={[type.labelSm, { color: theme.textMuted }]}>
                     {t("profile.learningPath")}
                   </Text>
@@ -272,20 +269,20 @@ export default function ProfileTab() {
                     </Text>
                   </Pressable>
                 </View>
-              </Card>
+              </PaperCard>
             )}
 
             {/* Hub — deep links into the study screens */}
             <View style={{ flexDirection: "row", gap: 12 }}>
               <View style={{ flex: 1 }}>
-                <StudyCard
+                <PaperCard
                   tone="week"
                   title={t("journey.title")}
                   onPress={() => router.push("/progress")}
                 />
               </View>
               <View style={{ flex: 1 }}>
-                <StudyCard
+                <PaperCard
                   tone="challenge"
                   title={t("chal.title")}
                   onPress={() => router.push("/challenges")}
@@ -294,15 +291,15 @@ export default function ProfileTab() {
             </View>
             <View style={{ flexDirection: "row", gap: 12 }}>
               <View style={{ flex: 1 }}>
-                <StudyCard
+                <PaperCard
                   tone="review"
                   title={t("badges.title")}
                   onPress={() => router.push("/achievements")}
                 />
               </View>
               <View style={{ flex: 1 }}>
-                <StudyCard
-                  tone="neutral"
+                <PaperCard
+                  tone="plain"
                   title={t("notif.title")}
                   onPress={() => router.push("/notifications")}
                 />
@@ -333,9 +330,9 @@ export default function ProfileTab() {
               />
             </View>
 
-            <Button
+            <LiftedFace
               title={t("profile.signOut")}
-              variant="danger"
+              face={paper.coral}
               onPress={onSignOut}
             />
           </View>
@@ -367,14 +364,14 @@ export default function ProfileTab() {
                     onChangeText={setNewTask}
                   />
                 </View>
-                <Button
+                <LiftedFace
+                  small
                   title={t("profile.add")}
-                  size="sm"
+                  face={theme.accent}
                   onPress={() => {
                     if (newTask.trim()) addTaskM.mutate(newTask.trim())
                   }}
                   disabled={!newTask.trim() || addTaskM.isPending}
-                  fullWidth={false}
                 />
               </View>
             </View>
