@@ -46,6 +46,13 @@
       "expo-secure-store",
       "expo-font",
       "expo-av",
+      [
+        "expo-speech-recognition",
+        {
+          "microphonePermission": "Navia memakai mikrofon untuk mengecek pronunciation yang kamu ucapkan.",
+          "speechRecognitionPermission": "Navia memakai pengenalan suara untuk mengubah ucapanmu jadi teks."
+        }
+      ],
       "expo-localization",
       "expo-notifications",
       "expo-image",
