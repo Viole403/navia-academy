@@ -2,39 +2,39 @@ import { useState } from "react"
 import { ScrollView, Text, View } from "react-native"
 import { SafeAreaView } from "react-native-safe-area-context"
 import { useMutation, useQueryClient } from "@tanstack/react-query"
-import { Button } from "@/components/ui/Button"
-import { Chip } from "@/components/ui/Chip"
-import { Enter } from "@/components/ui/Enter"
+import { LiftedFace, PaperCard, QuietPill } from "@/components/study/PaperCard"
+import { QueuedNote } from "@/components/study/QueuedNote"
+import { Motif } from "@/components/ui/Motif"
 import { useTheme } from "@/theme/ThemeProvider"
-import { type } from "@/theme/typography"
+import { useContentLayout } from "@/theme/layout"
+import { paperType } from "@/theme/paperType"
+import { motifChar } from "@/lib/languages"
+import { useOnboardingStore } from "@/store/onboarding"
 import { useT } from "@/i18n"
 import { logStudyWithQueue } from "@/utils/offlineQueue"
+import { speakingPrompts } from "@/lib/prompts"
 
-const PROMPTS = [
-  "Describe what you did yesterday in three sentences.",
-  "Introduce yourself: name, where you live, what you do.",
-  "Describe your favorite food and why you like it.",
-  "Talk about your plans for next weekend.",
-  "Describe the weather today and what you wear for it.",
-]
+type Verdict = "fluent" | "rough"
 
 export default function SpeakingScreen() {
-  const { theme, paper } = useTheme()
+  const { paper } = useTheme()
+  const { column } = useContentLayout()
   const t = useT()
   const qc = useQueryClient()
+  const language = useOnboardingStore((s) => s.language)
+  const prompts = speakingPrompts(language)
 
   const [promptIdx, setPromptIdx] = useState(0)
   const [said, setSaid] = useState(false)
-  const [grade, setGrade] = useState<"fluent" | "rough" | null>(null)
+  const [grade, setGrade] = useState<Verdict | null>(null)
 
   const finishM = useMutation({
-    mutationFn: (g: "fluent" | "rough") =>
-      logStudyWithQueue(5, g === "fluent" ? 40 : 20),
+    mutationFn: (g: Verdict) => logStudyWithQueue(5, g === "fluent" ? 40 : 20),
     onSuccess: () => qc.invalidateQueries({ queryKey: ["progress"] }),
   })
 
   const next = () => {
-    setPromptIdx((i) => (i + 1) % PROMPTS.length)
+    setPromptIdx((i) => (i + 1) % prompts.length)
     setSaid(false)
     setGrade(null)
   }
@@ -44,82 +44,102 @@ export default function SpeakingScreen() {
       style={{ flex: 1, backgroundColor: paper.paper }}
       edges={["top"]}
     >
-      <ScrollView contentContainerStyle={{ padding: 24, gap: 20 }}>
-        <Enter index={0}>
-          <View style={{ gap: 4 }}>
-            <Text style={[type.labelSm, { color: theme.textMuted }]}>
+      <ScrollView
+        contentContainerStyle={{
+          padding: 20,
+          paddingBottom: 48,
+          gap: 22,
+          maxWidth: column,
+          width: "100%",
+          alignSelf: "center",
+        }}
+      >
+        <View
+          style={{
+            flexDirection: "row",
+            justifyContent: "space-between",
+            alignItems: "flex-start",
+            gap: 16,
+          }}
+        >
+          <View style={{ flex: 1, gap: 8 }}>
+            <Text style={[paperType.label, { color: paper.inkMuted }]}>
               {t("speak.kicker")}
             </Text>
-            <Text style={[type.display, { color: theme.text, fontSize: 32 }]}>
+            <Text
+              style={[
+                paperType.greeting,
+                { color: paper.ink, fontSize: 30, lineHeight: 34 },
+              ]}
+            >
               {t("speak.title")}
             </Text>
           </View>
-        </Enter>
+          <Motif char={motifChar(language)} size={56} />
+        </View>
 
-        <Enter index={1}>
-          <View
-            style={{
-              borderWidth: 1,
-              borderColor: theme.border,
-              borderRadius: 4,
-              backgroundColor: theme.surface,
-              padding: 18,
-              gap: 8,
-            }}
+        <View style={{ height: 1, backgroundColor: paper.line }} />
+
+        <PaperCard tone="word">
+          <Text style={[paperType.label, { color: paper.green }]}>
+            {t("speak.prompt")} {promptIdx + 1} {t("speak.of")} {prompts.length}
+          </Text>
+          <Text
+            style={[
+              paperType.cardTitle,
+              { color: paper.ink, fontSize: 22, lineHeight: 30 },
+            ]}
           >
-            <Text style={[type.labelSm, { color: theme.accent }]}>
-              {t("speak.prompt")} {promptIdx + 1} {t("speak.of")}{" "}
-              {PROMPTS.length}
-            </Text>
-            <Text style={[type.h3, { color: theme.text }]}>
-              {PROMPTS[promptIdx]}
-            </Text>
-            <Text style={[type.bodySm, { color: theme.textMuted }]}>
-              {t("speak.note")}
-            </Text>
-          </View>
-        </Enter>
+            {prompts[promptIdx]}
+          </Text>
+          <Text style={[paperType.note, { color: paper.inkMuted }]}>
+            {t("speak.note")}
+          </Text>
+        </PaperCard>
 
-        <Button
+        <LiftedFace
           title={said ? t("speak.saidIt") : t("speak.iSaidIt")}
-          variant={said ? "secondary" : "primary"}
+          face={said ? paper.ink : paper.green}
+          textColor={paper.paper}
           onPress={() => setSaid(true)}
         />
 
         {said && (
-          <Enter index={2}>
-            <View style={{ gap: 12 }}>
-              <Text style={[type.labelSm, { color: theme.textMuted }]}>
-                {t("speak.howSound")}
-              </Text>
-              <View style={{ flexDirection: "row", gap: 8 }}>
-                <Chip
-                  label={t("speak.fluent")}
-                  selected={grade === "fluent"}
-                  tint={theme.green}
-                  onPress={() => setGrade("fluent")}
+          <View style={{ gap: 12 }}>
+            <Text style={[paperType.label, { color: paper.inkMuted }]}>
+              {t("speak.howSound")}
+            </Text>
+            <View style={{ flexDirection: "row", gap: 8 }}>
+              {(
+                [
+                  ["fluent", t("speak.fluent")],
+                  ["rough", t("speak.rough")],
+                ] as [Verdict, string][]
+              ).map(([value, label]) => (
+                <QuietPill
+                  key={value}
+                  title={label}
+                  onPress={() => setGrade(value)}
+                  tone={grade === value ? "challenge" : "plain"}
                 />
-                <Chip
-                  label={t("speak.rough")}
-                  selected={grade === "rough"}
-                  tint={theme.gold}
-                  onPress={() => setGrade("rough")}
-                />
-              </View>
-              <Button
-                title={t("speak.log")}
-                disabled={!grade || finishM.isPending}
-                onPress={() => grade && finishM.mutate(grade)}
-              />
-              {finishM.isSuccess && (
-                <Button
-                  title={t("speak.next")}
-                  variant="ghost"
-                  onPress={next}
-                />
-              )}
+              ))}
             </View>
-          </Enter>
+            <LiftedFace
+              title={t("speak.log")}
+              face={paper.green}
+              disabled={!grade || finishM.isPending}
+              onPress={() => grade && finishM.mutate(grade)}
+            />
+            <QueuedNote show={finishM.isSuccess && !!finishM.data?.offline} />
+            {finishM.isSuccess && (
+              <LiftedFace
+                title={t("speak.next")}
+                face={paper.ink}
+                textColor={paper.paper}
+                onPress={next}
+              />
+            )}
+          </View>
         )}
       </ScrollView>
     </SafeAreaView>

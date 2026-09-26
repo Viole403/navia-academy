@@ -206,6 +206,8 @@ const en = {
   "profile.tasks": "Tasks",
   "profile.settings": "Settings",
   "common.ok": "OK",
+  "common.queuedNote":
+    "Saved on this device. It will sync the next time you are online.",
   "profile.about": "About",
   "set.general": "General",
   "set.title": "Settings",

@@ -206,6 +206,8 @@ const id: Record<I18nKey, string> = {
   "profile.tasks": "Tugas",
   "profile.settings": "Pengaturan",
   "common.ok": "OK",
+  "common.queuedNote":
+    "Tersimpan di perangkat ini. Akan tersinkron begitu kamu online lagi.",
   "profile.about": "Tentang",
   "set.general": "Umum",
   "set.title": "Pengaturan",

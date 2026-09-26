@@ -2,42 +2,48 @@ import { useState } from "react"
 import { ScrollView, Text, View } from "react-native"
 import { SafeAreaView } from "react-native-safe-area-context"
 import { useMutation, useQueryClient } from "@tanstack/react-query"
-import { Button } from "@/components/ui/Button"
-import { Chip } from "@/components/ui/Chip"
-import { Enter } from "@/components/ui/Enter"
 import { Input } from "@/components/ui/Input"
+import { LiftedFace, PaperCard, QuietPill } from "@/components/study/PaperCard"
+import { QueuedNote } from "@/components/study/QueuedNote"
+import { Motif } from "@/components/ui/Motif"
 import { useTheme } from "@/theme/ThemeProvider"
-import { type } from "@/theme/typography"
+import { useContentLayout } from "@/theme/layout"
+import { paperType } from "@/theme/paperType"
+import { useContentFaces } from "@/hooks/useContentFaces"
+import { motifChar } from "@/lib/languages"
+import { useOnboardingStore } from "@/store/onboarding"
 import { useT } from "@/i18n"
 import { logStudyWithQueue } from "@/utils/offlineQueue"
-
-const PROMPTS = [
-  "Write three sentences about your morning routine.",
-  "Describe your hometown to someone who has never been there.",
-  "Write about a goal you want to reach this year and why.",
-  "Describe a meal you cooked or ate recently, step by step.",
-  "Write a short message inviting a friend to study together.",
-]
+import { writingPrompts } from "@/lib/prompts"
 
 type Rubric = "on-target" | "partial" | "off-topic"
 
+const RUBRIC_XP: Record<Rubric, number> = {
+  "on-target": 60,
+  partial: 30,
+  "off-topic": 10,
+}
+
 export default function WritingScreen() {
-  const { theme, paper } = useTheme()
+  const { paper } = useTheme()
+  const { column } = useContentLayout()
+  const faces = useContentFaces()
   const t = useT()
   const qc = useQueryClient()
+  const language = useOnboardingStore((s) => s.language)
+  const prompts = writingPrompts(language)
 
   const [promptIdx, setPromptIdx] = useState(0)
   const [draft, setDraft] = useState("")
   const [grade, setGrade] = useState<Rubric | null>(null)
 
   const finishM = useMutation({
-    mutationFn: (g: Rubric) =>
-      logStudyWithQueue(10, g === "on-target" ? 60 : g === "partial" ? 30 : 10),
+    mutationFn: (g: Rubric) => logStudyWithQueue(10, RUBRIC_XP[g]),
     onSuccess: () => qc.invalidateQueries({ queryKey: ["progress"] }),
   })
 
   const next = () => {
-    setPromptIdx((i) => (i + 1) % PROMPTS.length)
+    setPromptIdx((i) => (i + 1) % prompts.length)
     setDraft("")
     setGrade(null)
   }
@@ -47,38 +53,57 @@ export default function WritingScreen() {
       style={{ flex: 1, backgroundColor: paper.paper }}
       edges={["top"]}
     >
-      <ScrollView contentContainerStyle={{ padding: 24, gap: 20 }}>
-        <Enter index={0}>
-          <View style={{ gap: 4 }}>
-            <Text style={[type.labelSm, { color: theme.textMuted }]}>
+      <ScrollView
+        contentContainerStyle={{
+          padding: 20,
+          paddingBottom: 48,
+          gap: 22,
+          maxWidth: column,
+          width: "100%",
+          alignSelf: "center",
+        }}
+      >
+        <View
+          style={{
+            flexDirection: "row",
+            justifyContent: "space-between",
+            alignItems: "flex-start",
+            gap: 16,
+          }}
+        >
+          <View style={{ flex: 1, gap: 8 }}>
+            <Text style={[paperType.label, { color: paper.inkMuted }]}>
               {t("write.kicker")}
             </Text>
-            <Text style={[type.display, { color: theme.text, fontSize: 32 }]}>
+            <Text
+              style={[
+                paperType.greeting,
+                { color: paper.ink, fontSize: 30, lineHeight: 34 },
+              ]}
+            >
               {t("write.title")}
             </Text>
           </View>
-        </Enter>
+          <Motif char={motifChar(language)} size={56} />
+        </View>
 
-        <Enter index={1}>
-          <View
-            style={{
-              borderWidth: 1,
-              borderColor: theme.border,
-              borderRadius: 4,
-              backgroundColor: theme.surface,
-              padding: 18,
-              gap: 8,
-            }}
+        <View style={{ height: 1, backgroundColor: paper.line }} />
+
+        <PaperCard tone="word">
+          <Text style={[paperType.label, { color: paper.green }]}>
+            {t("write.prompt")} {promptIdx + 1} {t("write.of")} {prompts.length}
+          </Text>
+          {/* The prompt is content in the learner's own script, so it must not
+              be set in the Latin serif that the interface chrome uses. */}
+          <Text
+            style={[
+              paperType.cardTitle,
+              { color: paper.ink, fontSize: 22, lineHeight: 30 },
+            ]}
           >
-            <Text style={[type.labelSm, { color: theme.accent }]}>
-              {t("write.prompt")} {promptIdx + 1} {t("write.of")}{" "}
-              {PROMPTS.length}
-            </Text>
-            <Text style={[type.h3, { color: theme.text }]}>
-              {PROMPTS[promptIdx]}
-            </Text>
-          </View>
-        </Enter>
+            {prompts[promptIdx]}
+          </Text>
+        </PaperCard>
 
         <Input
           label={t("write.answerLabel")}
@@ -91,45 +116,42 @@ export default function WritingScreen() {
         />
 
         {draft.trim().length > 0 && (
-          <Enter index={2}>
-            <View style={{ gap: 12 }}>
-              <Text style={[type.labelSm, { color: theme.textMuted }]}>
-                {t("write.selfGrade")}
-              </Text>
-              <View style={{ flexDirection: "row", gap: 8, flexWrap: "wrap" }}>
-                <Chip
-                  label={t("write.onTarget")}
-                  selected={grade === "on-target"}
-                  tint={theme.green}
-                  onPress={() => setGrade("on-target")}
+          <View style={{ gap: 12 }}>
+            <Text style={[paperType.label, { color: paper.inkMuted }]}>
+              {t("write.selfGrade")}
+            </Text>
+            <View style={{ flexDirection: "row", gap: 8, flexWrap: "wrap" }}>
+              {(
+                [
+                  ["on-target", t("write.onTarget")],
+                  ["partial", t("write.partial")],
+                  ["off-topic", t("write.offTopic")],
+                ] as [Rubric, string][]
+              ).map(([value, label]) => (
+                <QuietPill
+                  key={value}
+                  title={label}
+                  onPress={() => setGrade(value)}
+                  tone={grade === value ? "challenge" : "plain"}
                 />
-                <Chip
-                  label={t("write.partial")}
-                  selected={grade === "partial"}
-                  tint={theme.gold}
-                  onPress={() => setGrade("partial")}
-                />
-                <Chip
-                  label={t("write.offTopic")}
-                  selected={grade === "off-topic"}
-                  tint={theme.red}
-                  onPress={() => setGrade("off-topic")}
-                />
-              </View>
-              <Button
-                title={t("write.log")}
-                disabled={!grade || finishM.isPending}
-                onPress={() => grade && finishM.mutate(grade)}
-              />
-              {finishM.isSuccess && (
-                <Button
-                  title={t("write.next")}
-                  variant="ghost"
-                  onPress={next}
-                />
-              )}
+              ))}
             </View>
-          </Enter>
+            <LiftedFace
+              title={t("write.log")}
+              face={paper.green}
+              disabled={!grade || finishM.isPending}
+              onPress={() => grade && finishM.mutate(grade)}
+            />
+            <QueuedNote show={finishM.isSuccess && !!finishM.data?.offline} />
+            {finishM.isSuccess && (
+              <LiftedFace
+                title={t("write.next")}
+                face={paper.ink}
+                textColor={paper.paper}
+                onPress={next}
+              />
+            )}
+          </View>
         )}
       </ScrollView>
     </SafeAreaView>
