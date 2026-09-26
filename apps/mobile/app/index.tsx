@@ -4,17 +4,26 @@ import { Text, View, ActivityIndicator } from "react-native"
 import { useAuthStore } from "@/store/auth"
 import { useAppStore } from "@/store/app"
 import { useOnboardingStore } from "@/store/onboarding"
-import { Enter } from "@/components/ui/Enter"
 import { Motif } from "@/components/ui/Motif"
 import { motifChar } from "@/lib/languages"
 import { useTheme } from "@/theme/ThemeProvider"
-import { type } from "@/theme/typography"
+import { paperType } from "@/theme/paperType"
 
+/**
+ * The gate every launch passes through: hydrate, then route.
+ *
+ * The three decisions are separate because they fail differently — a store that
+ * has not read from disk yet is not a reason to send anyone to sign in, and a
+ * learner with no account is not a reason to run onboarding. Collapsing them
+ * into one `if (!user)` is what produces the flash of the sign-in screen for
+ * someone who is already signed in, which is the first thing anyone sees and
+ * the moment the app stops feeling like it remembers you.
+ */
 export default function Index() {
   const { user, hydrated } = useAuthStore()
   const { hasOnboarded } = useAppStore()
   const language = useOnboardingStore((s) => s.language)
-  const { theme, paper } = useTheme()
+  const { paper } = useTheme()
 
   if (!hydrated) {
     return (
@@ -28,14 +37,12 @@ export default function Index() {
         }}
       >
         <Motif char={motifChar(language)} size={96} />
-        <Enter index={1}>
-          <View style={{ alignItems: "center", gap: 16 }}>
-            <Text style={[type.labelSm, { color: theme.textMuted }]}>
-              Navia Academy
-            </Text>
-            <ActivityIndicator color={theme.accent} size="small" />
-          </View>
-        </Enter>
+        <View style={{ alignItems: "center", gap: 16 }}>
+          <Text style={[paperType.label, { color: paper.inkMuted }]}>
+            Navia Academy
+          </Text>
+          <ActivityIndicator color={paper.green} size="small" />
+        </View>
       </View>
     )
   }
