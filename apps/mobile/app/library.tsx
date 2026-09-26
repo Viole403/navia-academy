@@ -1,5 +1,12 @@
 import { useMemo, useState } from "react"
-import { ActivityIndicator, ScrollView, Text, View } from "react-native"
+import {
+  ActivityIndicator,
+  Pressable,
+  ScrollView,
+  Text,
+  TextInput,
+  View,
+} from "react-native"
 import { SafeAreaView } from "react-native-safe-area-context"
 import { useRouter } from "expo-router"
 import { useQuery } from "@tanstack/react-query"
@@ -16,7 +23,15 @@ import {
   loadGrammar,
   loadReadings,
 } from "@/lib/content-data"
-import { headword, isCharScript, motifChar, reading } from "@/lib/languages"
+import {
+  examDisplayName,
+  examLevels,
+  headword,
+  isCharScript,
+  languageForExam,
+  motifChar,
+  reading,
+} from "@/lib/languages"
 import { useContentFaces } from "@/hooks/useContentFaces"
 import { useOnboardingStore } from "@/store/onboarding"
 import { useT, type I18nKey } from "@/i18n"
@@ -55,6 +70,17 @@ export default function LibraryScreen() {
   )
   const [section, setSection] = useState<LibSection>("grammar")
   const [openId, setOpenId] = useState<string | null>(null)
+
+  // Grammar arrives as a few hundred points spanning every level, so the list
+  // is unusable without narrowing it. The filters mirror the web library: the
+  // exam the learner is actually sitting decides which ladder of levels is
+  // meaningful, because "Level 5" means something different under TOCFL than
+  // under JLPT.
+  const examType = useOnboardingStore((s) => s.examType)
+  const [query, setQuery] = useState("")
+  const [level, setLevel] = useState("all")
+  const [difficulty, setDifficulty] = useState("all")
+  const [filterOpen, setFilterOpen] = useState(false)
 
   // Switching section can leave a stored section the current language no longer
   // offers (characters only exist for character scripts), so the active section
@@ -98,12 +124,51 @@ export default function LibraryScreen() {
   // believe.
   const errored = activeQ.isError
 
+  const grammarPoints = (grammarQ.data ?? []) as GrammarPoint[]
+  const examName = examDisplayName(examType ?? languageForExam("hsk"))
+  const levelLadder = examLevels(examType ?? languageForExam("hsk"))
+  const filteredGrammar = useMemo(() => {
+    const q = query.trim().toLowerCase()
+    return grammarPoints.filter((g) => {
+      if (level !== "all") {
+        const mapped = (g.examMappings as Record<string, string> | undefined)?.[
+          examType ?? ""
+        ]
+        const gLevel = String(mapped ?? g.level ?? g.hsk ?? "")
+        if (gLevel !== level) return false
+      }
+      if (difficulty !== "all" && String(g.difficulty ?? "") !== difficulty) {
+        return false
+      }
+      if (q) {
+        const fields = [g.title, g.pattern, g.simpleExplanation]
+        if (!fields.some((s) => s?.toLowerCase().includes(q))) return false
+      }
+      return true
+    })
+  }, [grammarPoints, query, level, difficulty, examType])
+
+  // Difficulty is a 1–6 scale in the published content. Deriving the options
+  // from the points themselves keeps the pills honest if a language ships a
+  // narrower range than another.
+  const difficultyLadder = useMemo(() => {
+    const seen = new Set<string>()
+    for (const g of grammarPoints) {
+      if (g.difficulty != null) seen.add(String(g.difficulty))
+    }
+    return [...seen].sort((a, b) => Number(a) - Number(b))
+  }, [grammarPoints])
+
+  const filtering =
+    active === "grammar" &&
+    (query.trim() !== "" || level !== "all" || difficulty !== "all")
+
   const rows: { id: string; title: string; sub: string }[] =
     active === "grammar"
-      ? ((grammarQ.data ?? []) as GrammarPoint[]).map((g) => ({
+      ? filteredGrammar.map((g) => ({
           id: g.id,
           title: g.title,
-          sub: g.pattern ?? g.level ?? "",
+          sub: g.pattern ?? (g.level != null ? String(g.level) : ""),
         }))
       : active === "readings"
         ? ((readingsQ.data ?? []) as Reading[]).map((r) => ({
@@ -281,10 +346,137 @@ export default function LibraryScreen() {
               onPress={() => {
                 setSection(s)
                 setOpenId(null)
+                setQuery("")
+                setLevel("all")
+                setDifficulty("all")
+                setFilterOpen(false)
               }}
             />
           ))}
         </View>
+
+        {active === "grammar" && !errored && !activeQ.isLoading && (
+          <View style={{ gap: 10 }}>
+            <View
+              style={{ flexDirection: "row", gap: 8, alignItems: "center" }}
+            >
+              <TextInput
+                value={query}
+                onChangeText={setQuery}
+                placeholder={t("gram.searchPlaceholder")}
+                placeholderTextColor={paper.inkMuted}
+                accessibilityLabel={t("gram.searchAria")}
+                autoCapitalize="none"
+                autoCorrect={false}
+                returnKeyType="search"
+                style={{
+                  flex: 1,
+                  backgroundColor: paper.card,
+                  borderColor: paper.line,
+                  borderWidth: 1,
+                  borderRadius: paper.radius.inner,
+                  paddingHorizontal: 12,
+                  paddingVertical: 11,
+                  fontFamily: families.inter,
+                  fontSize: 14.5,
+                  color: paper.ink,
+                  ...paper.shadow,
+                }}
+              />
+              <Pressable
+                onPress={() => setFilterOpen((o) => !o)}
+                accessibilityRole="button"
+                accessibilityLabel={t("gram.difficultyFilter")}
+                style={{
+                  borderWidth: 1,
+                  borderColor:
+                    level !== "all" || difficulty !== "all"
+                      ? paper.coral
+                      : paper.line,
+                  borderRadius: paper.radius.inner,
+                  paddingHorizontal: 12,
+                  paddingVertical: 11,
+                  backgroundColor: paper.card,
+                }}
+              >
+                <Text
+                  style={[
+                    paperType.label,
+                    {
+                      color:
+                        level !== "all" || difficulty !== "all"
+                          ? paper.coral
+                          : paper.inkMuted,
+                    },
+                  ]}
+                >
+                  {filterOpen ? "▾" : "≡"}
+                </Text>
+              </Pressable>
+            </View>
+
+            {filterOpen && (
+              <View style={{ gap: 10 }}>
+                <View style={{ gap: 6 }}>
+                  <Text style={[paperType.label, { color: paper.inkMuted }]}>
+                    {t("gram.levelFilter")}
+                  </Text>
+                  <View
+                    style={{ flexDirection: "row", flexWrap: "wrap", gap: 8 }}
+                  >
+                    <QuietPill
+                      title={t("gram.allLevels", { exam: examName })}
+                      tone={level === "all" ? "challenge" : "plain"}
+                      onPress={() => setLevel("all")}
+                    />
+                    {levelLadder.map((l) => (
+                      <QuietPill
+                        key={l}
+                        title={t("gram.levelOption", {
+                          exam: examName,
+                          level: l,
+                        })}
+                        tone={level === l ? "challenge" : "plain"}
+                        onPress={() => setLevel(l)}
+                      />
+                    ))}
+                  </View>
+                </View>
+                <View style={{ gap: 6 }}>
+                  <Text style={[paperType.label, { color: paper.inkMuted }]}>
+                    {t("gram.difficultyFilter")}
+                  </Text>
+                  <View
+                    style={{ flexDirection: "row", flexWrap: "wrap", gap: 8 }}
+                  >
+                    <QuietPill
+                      title={t("gram.allDifficulties")}
+                      tone={difficulty === "all" ? "challenge" : "plain"}
+                      onPress={() => setDifficulty("all")}
+                    />
+                    {difficultyLadder.map((d) => (
+                      <QuietPill
+                        key={d}
+                        title={t("gram.difficultyOption", { n: d })}
+                        tone={difficulty === d ? "challenge" : "plain"}
+                        onPress={() => setDifficulty(d)}
+                      />
+                    ))}
+                  </View>
+                </View>
+              </View>
+            )}
+
+            {filtering && rows.length > 0 && (
+              <Text style={[paperType.note, { color: paper.inkMuted }]}>
+                {t("gram.showing", {
+                  n: rows.length,
+                  total: grammarPoints.length,
+                })}
+              </Text>
+            )}
+          </View>
+        )}
 
         {errored ? (
           <View style={{ gap: 16 }}>
@@ -305,13 +497,30 @@ export default function LibraryScreen() {
             <ActivityIndicator color={paper.green} />
           </View>
         ) : rows.length === 0 ? (
-          <EmptyState
-            title={
-              active === "characters" ? t("lib.noChars") : t("lib.nothing")
-            }
-            message={t("lib.nothingMsg")}
-            glyph={motifChar(language)}
-          />
+          <View style={{ gap: 16 }}>
+            <EmptyState
+              title={
+                filtering
+                  ? t("gram.noResults")
+                  : active === "characters"
+                    ? t("lib.noChars")
+                    : t("lib.nothing")
+              }
+              message={filtering ? t("gram.clearFilters") : t("lib.nothingMsg")}
+              glyph={motifChar(language)}
+            />
+            {filtering && (
+              <LiftedFace
+                title={t("gram.clearFilters")}
+                face={paper.green}
+                onPress={() => {
+                  setQuery("")
+                  setLevel("all")
+                  setDifficulty("all")
+                }}
+              />
+            )}
+          </View>
         ) : (
           <PaperCard padded={false}>
             {rows.map((item, i) => (
