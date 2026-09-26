@@ -2,7 +2,13 @@ import { useCallback, useEffect, useRef, useState } from "react"
 import { AppState } from "react-native"
 import type { AppStateStatus } from "react-native"
 
-import { nextWarning, WARNING_LIMIT } from "@/lib/integrity"
+import {
+  isLeaving,
+  nextWarning,
+  safeTally,
+  WARNING_LIMIT,
+  type AppStateName,
+} from "@/lib/integrity"
 
 /**
  * Counts the learner leaving the app during an exam.
@@ -44,7 +50,9 @@ export function useIntegrityTracking(
   reportRef.current = onReport
 
   const seed = useCallback((n: number | undefined) => {
-    warningsRef.current = n ?? 0
+    // Clamped, because a tally the server sends down below zero would otherwise
+    // make the next departure jump straight past the limit.
+    warningsRef.current = safeTally(n)
     setWarnings(warningsRef.current)
   }, [])
 
@@ -62,12 +70,13 @@ export function useIntegrityTracking(
   }, [])
 
   useEffect(() => {
+    // The previous state is what makes one departure count once. Leaving is a
+    // sequence — active → inactive → background on iOS — and counting every
+    // step meant a single swipe reached the limit by itself.
+    let previous: AppStateName = AppState.currentState as AppStateName
     const onChange = (next: AppStateStatus) => {
-      // Both transitions count. A swipe-away lands on "background" on iOS and
-      // passes through "inactive" during the switch; a notification banner is
-      // "inactive" on Android without the app really being left. The server
-      // holds the consequence — this only counts the event.
-      if (next === "background" || next === "inactive") report()
+      if (isLeaving(previous, next as AppStateName)) report()
+      previous = next as AppStateName
     }
     const sub = AppState.addEventListener("change", onChange)
     return () => sub.remove()

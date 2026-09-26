@@ -1,5 +1,7 @@
 import { describe, expect, it } from "vitest"
 
+import type { ContentOption } from "@navia/types"
+
 import { optionKey, optionViews, tally } from "../multipleChoice"
 
 const q = (id: string, correct: string) => ({
@@ -20,7 +22,12 @@ describe("optionKey", () => {
   })
 
   it("falls back to the position when the id is missing", () => {
-    expect(optionKey({ label: "x" }, 2)).toBe("C")
+    // The type says the id is required, and the authored content does provide
+    // one. The data is JSON that nothing type-checks, so the runtime guard is
+    // real and this asserts it rather than removing it — a missing id would
+    // otherwise render an option with no key at all.
+    const optionless = { label: "x" } as unknown as ContentOption
+    expect(optionKey(optionless, 2)).toBe("C")
   })
 })
 
