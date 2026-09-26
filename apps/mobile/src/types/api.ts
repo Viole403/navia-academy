@@ -113,6 +113,62 @@ export interface Task {
   updated_at: string
 }
 
+/**
+ * A task proposed from the learner's own progress, as opposed to the
+ * hand-entered rows above. Generated tasks are not stored: they are recomputed
+ * from progress on each render, so they cannot drift from what the learner has
+ * actually done and cannot go stale in a queue.
+ */
+export type StudySkill =
+  | "pronunciation"
+  | "listening"
+  | "speaking"
+  | "writing"
+  | "reading"
+  | "vocabulary"
+  | "grammar"
+  | "characters"
+  | "exam"
+  | "review"
+  | "lesson"
+
+export type StudyTaskType =
+  | "lesson"
+  | "vocabulary"
+  | "writing"
+  | "listening"
+  | "speaking"
+  | "reading"
+  | "review"
+  | "exam"
+
+export type TaskStatus = "pending" | "in-progress" | "done" | "overdue"
+
+export interface StudyTask {
+  id: string
+  title: string
+  description: string
+  skill: StudySkill
+  type: StudyTaskType
+  /** ISO date, day granularity. */
+  dueDate: string
+  estimatedMin: number
+  priority: "low" | "medium" | "high"
+  status: TaskStatus
+  linkedRoute?: string
+  createdAt: string
+  completedAt?: string
+  /** Language this belongs to, so the dedup stays within one language. */
+  language?: string
+}
+
+export interface AssessmentAttempt {
+  assessmentId: string
+  score: number
+  startedAt: string
+  finishedAt?: string
+}
+
 // ─── Vocabulary (all learning languages, not just zh) ──────────────────────
 export interface VocabWord {
   id: string

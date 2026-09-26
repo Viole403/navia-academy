@@ -2,6 +2,7 @@ import { useState } from "react"
 import { ActivityIndicator, Alert, ScrollView, Text, View } from "react-native"
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query"
 import { SafeAreaView } from "react-native-safe-area-context"
+import { useRouter } from "expo-router"
 import { EmptyState } from "@/components/ui/EmptyState"
 import { Input } from "@/components/ui/Input"
 import { Motif } from "@/components/ui/Motif"
@@ -11,8 +12,10 @@ import { useContentLayout } from "@/theme/layout"
 import { useTheme } from "@/theme/ThemeProvider"
 import { paperType, families } from "@/theme/paperType"
 import { tasks } from "@/api/endpoints"
+import type { StudyTask } from "@/types/api"
 import { motifChar } from "@/lib/languages"
 import { useOnboardingStore } from "@/store/onboarding"
+import { useGeneratedTasks } from "@/hooks/useGeneratedTasks"
 import { useT } from "@/i18n"
 import { tap } from "@/utils/feedback"
 
@@ -36,6 +39,7 @@ export function Tasks() {
   const { column: columnWidth } = useContentLayout()
   const t = useT()
   const qc = useQueryClient()
+  const router = useRouter()
   const language = useOnboardingStore((s) => s.language)
   const [draft, setDraft] = useState("")
 
@@ -62,6 +66,11 @@ export function Tasks() {
   const items = listQ.data ?? []
   const open = items.filter((x) => !x.completed)
   const done = items.filter((x) => x.completed)
+
+  // Suggested work, derived from due cards, exam history and today's minutes.
+  // Hand-entered rows are not passed in as existing: they carry no route, and a
+  // task typed by hand has no business suppressing a due review.
+  const suggested = useGeneratedTasks([])
 
   const confirmRemove = (id: string, content: string) =>
     Alert.alert(t("profile.delete"), content, [
@@ -112,6 +121,27 @@ export function Tasks() {
           <Motif char={motifChar(language)} size={56} />
         </View>
         <View style={{ height: 1, backgroundColor: paper.line }} />
+
+        {suggested.length > 0 && (
+          <View style={{ gap: 10 }}>
+            <Text style={[paperType.label, { color: paper.inkMuted }]}>
+              {t("tasks.suggested")}
+            </Text>
+            <PaperCard padded={false}>
+              {suggested.map((task, i) => (
+                <SuggestedRow
+                  key={task.id}
+                  task={task}
+                  first={i === 0}
+                  onPress={() => {
+                    tap()
+                    if (task.linkedRoute) router.push(task.linkedRoute as never)
+                  }}
+                />
+              ))}
+            </PaperCard>
+          </View>
+        )}
 
         <View style={{ flexDirection: "row", alignItems: "flex-end", gap: 12 }}>
           <View style={{ flex: 1 }}>
@@ -281,6 +311,83 @@ function TaskRow({
       >
         <Text style={[paperType.link, { color: paper.coral }]}>
           {t("profile.delete")}
+        </Text>
+      </PressableScale>
+    </View>
+  )
+}
+
+/**
+ * A suggestion, not a to-do. It is derived state rather than a row the learner
+ * owns, so it has no checkbox and no delete — clearing the underlying work (a
+ * review, an exam) is what makes it go away. Tapping it opens the screen where
+ * that work happens.
+ */
+function SuggestedRow({
+  task,
+  first,
+  onPress,
+}: {
+  task: StudyTask
+  first: boolean
+  onPress: () => void
+}) {
+  const { paper } = useTheme()
+  const t = useT()
+  const accent =
+    task.priority === "high"
+      ? paper.coral
+      : task.priority === "medium"
+        ? paper.greenDark
+        : paper.inkMuted
+
+  return (
+    <View
+      style={{
+        borderTopWidth: first ? 0 : 1,
+        borderTopColor: paper.lineSoft,
+      }}
+    >
+      <PressableScale
+        onPress={onPress}
+        scale={0.995}
+        accessibilityLabel={task.title}
+        style={{
+          flexDirection: "row",
+          alignItems: "center",
+          gap: 12,
+          paddingVertical: 13,
+          paddingHorizontal: 14,
+        }}
+      >
+        <View
+          style={{ width: 3, alignSelf: "stretch", backgroundColor: accent }}
+        />
+        <View style={{ flex: 1, gap: 3 }}>
+          <Text
+            style={[paperType.cardTitleSm, { color: paper.ink }]}
+            numberOfLines={2}
+          >
+            {task.title}
+          </Text>
+          <Text
+            style={[paperType.note, { color: paper.inkMuted }]}
+            numberOfLines={2}
+          >
+            {task.description}
+          </Text>
+          <Text style={[paperType.statLabel, { color: accent }]}>
+            {t("tasks.minutes", { n: task.estimatedMin })}
+          </Text>
+        </View>
+        <Text
+          style={{
+            fontFamily: families.lora,
+            fontSize: 17,
+            color: paper.inkMuted,
+          }}
+        >
+          ›
         </Text>
       </PressableScale>
     </View>
