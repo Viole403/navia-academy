@@ -67,7 +67,7 @@ interface ExamBadgesProps {
   showEmpty?: boolean
   size?: "sm" | "md" | "lg"
   className?: string
-})
+}
 
 export const ExamBadges = memo(function ExamBadges({
   mappings,
@@ -106,7 +106,7 @@ interface WordExamBadgesProps {
   showAll?: boolean
   size?: "sm" | "md" | "lg"
   className?: string
-})
+}
 
 export const WordExamBadges = memo(function WordExamBadges({
   word,
@@ -133,7 +133,7 @@ interface ExamLevelSelectorProps {
   selectedLevel?: string
   onSelect?: (level: string) => void
   className?: string
-})
+}
 
 export const ExamLevelSelector = memo(function ExamLevelSelector({
   examType,
@@ -199,7 +199,7 @@ interface ExamFilterBadgeProps {
   level?: string
   onRemove?: () => void
   className?: string
-})
+}
 
 export const ExamFilterBadge = memo(function ExamFilterBadge({
   examType,
@@ -248,7 +248,7 @@ interface ExamCoverageBarProps {
   total: number
   showNumbers?: boolean
   className?: string
-})
+}
 
 export const ExamCoverageBar = memo(function ExamCoverageBar({
   examType,
