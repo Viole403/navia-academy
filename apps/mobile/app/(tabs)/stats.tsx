@@ -280,79 +280,119 @@ function CalendarView({
 }) {
   const { paper } = useTheme()
   const t = useT()
-  const days = useMemo(() => {
+  /**
+   * The last five calendar weeks, Monday first.
+   *
+   * A month is not thirty consecutive days ending today — that is most of one
+   * month plus a sliver of the last one, and the sliver is where a mistake
+   * hides. Walking back to the Monday on or before today, then filling whole
+   * weeks, means every column is a real weekday and the row under today is the
+   * current one.
+   */
+  const { weeks } = useMemo(() => {
     const byDate = new Map<string, number>()
     for (const s of sessions)
       byDate.set(s.date, (byDate.get(s.date) ?? 0) + s.minutes)
-    const out: { date: Date; key: string; minutes: number }[] = []
+
     const today = new Date()
-    for (let i = 13; i >= 0; i--) {
-      const d = new Date(today)
-      d.setDate(today.getDate() - i)
-      const key = d.toISOString().slice(0, 10)
-      out.push({ date: d, key, minutes: byDate.get(key) ?? 0 })
+    const start = new Date(today)
+    // getDay is 0 on Sunday; shift so Monday is the first column.
+    const back = (start.getDay() + 6) % 7
+    start.setDate(start.getDate() - back)
+
+    const out: { date: Date; key: string; minutes: number }[][] = []
+    for (let w = 0; w < 5; w++) {
+      const row: { date: Date; key: string; minutes: number }[] = []
+      for (let d = 0; d < 7; d++) {
+        const day = new Date(start)
+        day.setDate(start.getDate() + w * 7 + d)
+        const key = day.toISOString().slice(0, 10)
+        row.push({ date: day, key, minutes: byDate.get(key) ?? 0 })
+      }
+      out.push(row)
     }
-    return out
+
+    return { weeks: out }
   }, [sessions])
-  const max = Math.max(1, ...days.map((d) => d.minutes))
+  const flat = weeks.flat()
+  const max = Math.max(1, ...flat.map((d) => d.minutes))
 
   return (
     <View style={{ gap: 10 }}>
       <Text style={[paperType.label, { color: paper.inkMuted }]}>
-        {t("stats.last14")}
+        {t("stats.last5weeks")}
       </Text>
       {loading ? (
         <ActivityIndicator color={paper.green} />
       ) : (
         <PaperCard>
-          <View
-            style={{
-              flexDirection: "row",
-              alignItems: "flex-end",
-              gap: 6,
-              paddingTop: 8,
-            }}
-          >
-            {days.map((d) => (
-              <View
-                key={d.key}
-                style={{ flex: 1, alignItems: "center", gap: 5 }}
+          <View style={{ flexDirection: "row", gap: 4 }}>
+            <View style={{ width: 18 }} />
+            {WEEKDAY_INITIALS.map((d) => (
+              <Text
+                key={d}
+                style={[
+                  paperType.weekday,
+                  {
+                    color: paper.inkMuted,
+                    fontSize: 9,
+                    flex: 1,
+                    textAlign: "center",
+                  },
+                ]}
               >
-                <View
-                  style={{
-                    width: "100%",
-                    height: 64,
-                    justifyContent: "flex-end",
-                    backgroundColor: paper.track,
-                    borderRadius: 3,
-                    overflow: "hidden",
-                  }}
-                >
-                  <View
-                    style={{
-                      height: Math.max(4, (d.minutes / max) * 64),
-                      backgroundColor:
-                        d.minutes > 0 ? paper.inkSoft : "transparent",
-                      borderRadius: 3,
-                    }}
-                  />
-                </View>
-                <Text
-                  style={[
-                    paperType.weekday,
-                    { color: d.minutes > 0 ? paper.inkSoft : paper.ring },
-                  ]}
-                >
-                  {d.date.getDate()}
-                </Text>
-              </View>
+                {d}
+              </Text>
             ))}
           </View>
+          {weeks.map((row, wi) => (
+            <View
+              key={wi}
+              style={{ flexDirection: "row", gap: 4, alignItems: "center" }}
+            >
+              <Text
+                style={[
+                  paperType.weekday,
+                  { color: paper.inkMuted, fontSize: 9, width: 18 },
+                ]}
+              >
+                {row[0].date.getDate()}
+              </Text>
+              {row.map((d) => {
+                // A day in the future has no sessions because it has not
+                // happened; drawing it as an empty track would read as a
+                // missed day.
+                const future = d.date.getTime() > Date.now()
+                return (
+                  <View
+                    key={d.key}
+                    accessibilityRole="text"
+                    accessibilityLabel={`${d.date.getDate()}: ${d.minutes}`}
+                    style={{
+                      flex: 1,
+                      height: 22,
+                      borderRadius: 3,
+                      backgroundColor: future
+                        ? "transparent"
+                        : d.minutes > 0
+                          ? paper.inkSoft
+                          : paper.track,
+                      opacity:
+                        d.minutes > 0 ? 0.35 + (d.minutes / max) * 0.65 : 1,
+                    }}
+                  />
+                )
+              })}
+            </View>
+          ))}
         </PaperCard>
       )}
     </View>
   )
 }
+
+/** Monday-first column headers, as initials so they fit at phone width. */
+const WEEKDAY_INITIALS = ["M", "T", "W", "T", "F", "S", "S"]
 
 function BadgesView({
   achievements,
