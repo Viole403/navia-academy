@@ -21,7 +21,7 @@ const MODELS = "navia-models-v1"
 
 let store: Map<string, { cacheName: string; response: Response }>
 let putShouldFail: boolean
-let fetchImpl: jest.Mock
+let fetchImpl: jest.Mock<() => Promise<Response>>
 
 function makeEvent(request: Request) {
   return {
@@ -77,6 +77,9 @@ beforeEach(async () => {
   }
 
   jest.resetModules()
+  // The worker is a classic script the browser evaluates on its own, so it has
+  // no exports for the module resolver to find.
+  // @ts-expect-error -- not an ES module by design
   await import("../../../public/sw.js")
 })
 
@@ -85,6 +88,12 @@ function fireFetch(url: string) {
   const event = makeEvent(request)
   listeners.fetch(event as never)
   return event
+}
+
+/** The response promise the worker handed to respondWith. */
+function responded(event: ReturnType<typeof makeEvent>): Promise<Response> {
+  const calls = (event.respondWith as jest.Mock).mock.calls
+  return calls[0][0] as Promise<Response>
 }
 
 describe("model binaries", () => {
@@ -97,7 +106,7 @@ describe("model binaries", () => {
     fetchImpl.mockClear()
 
     const event = fireFetch(url)
-    const res = await (event.respondWith as jest.Mock).mock.calls[0][0]
+    const res = await responded(event)
 
     expect(await res.text()).toBe("cached")
     expect(fetchImpl).not.toHaveBeenCalled()
@@ -122,7 +131,7 @@ describe("cache writes", () => {
     const warn = jest.spyOn(console, "warn").mockImplementation(() => {})
 
     const event = fireFetch("https://cdn.example/models/small.onnx")
-    const res = await (event.respondWith as jest.Mock).mock.calls[0][0]
+    const res = await responded(event)
 
     expect(res.status).toBe(200)
     expect(await res.text()).toBe("body")
@@ -133,7 +142,7 @@ describe("cache writes", () => {
     fetchImpl.mockResolvedValueOnce(new Response("nope", { status: 404 }))
 
     const event = fireFetch("https://cdn.example/models/missing.onnx")
-    const res = await (event.respondWith as jest.Mock).mock.calls[0][0]
+    const res = await responded(event)
 
     expect(res.status).toBe(404)
     expect(store.size).toBe(0)
@@ -147,10 +156,10 @@ describe("page requests", () => {
       cacheName: SHELL,
       response: new Response("dashboard"),
     })
-    fetchImpl.mockRejectedValueOnce(new Error("offline"))
+    fetchImpl.mockRejectedValueOnce(Promise.reject(new Error("offline")))
 
     const event = fireFetch("https://app.test/progress")
-    const res = await (event.respondWith as jest.Mock).mock.calls[0][0]
+    const res = await responded(event)
 
     expect(await res.text()).toBe("dashboard")
   })
