@@ -41,6 +41,12 @@ Compact guidance for AI coding agents. Every line is something an agent would li
 - Learner UI is **Indonesian-first**: glossable/prose fields carry `_id` (Indonesian) + `_en` (English) variants; `translation` stays English canonical (quiz/answer logic uses it).
 - `placement.json` per language must be a **flat array** of questions, never an object — an object shape yields an empty question bank.
 - Dedup keys (so the same asset is generated once): audio = `text+locale+gender`; images = `translation` hash (shared across languages via `translation_id`).
+- `data/json/<lang>/assessments/<exam>/comprehension-*.json` are **generated** by
+  `bun run generate-comprehension` (apps/media) from the Belebele benchmark. Don't hand-edit; change the
+  script. Three banks per language, split by **passage length only** — a difficulty proxy, not a
+  validated level. Belebele is CC-BY-SA 4.0, so the adapted content is share-alike and every exercise
+  carries a `passageSource` credit; obligations are recorded in `apps/media/CREDITS.md`. The NC-licensed
+  training set in the same repo is deliberately not read.
 - `data/json/{zh,ja,de}/placement.json` are **partly generated**: hand-written questions are kept and
   `gen-`-prefixed ones come from `bun run generate-placement` (apps/media). Don't hand-edit the `gen-`
   entries; change the script. Selection is seeded, so re-running is idempotent. English is excluded on

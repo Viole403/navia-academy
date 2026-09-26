@@ -102,6 +102,16 @@ export interface ContentExercise {
   target?: string
   pinyin?: string
   zhuyin?: string
+  /**
+   * The text a question is about, for reading comprehension.
+   *
+   * Carried on the question rather than looked up separately: a comprehension
+   * question with nowhere to show its passage is unanswerable, and joining the
+   * two somewhere else would mean every renderer has to know the join.
+   */
+  passage?: string
+  /** Credit line, where the passage licence requires attribution. */
+  passageSource?: string
 }
 
 export interface ExamSessionWire {

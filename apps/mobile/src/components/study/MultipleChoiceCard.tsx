@@ -37,6 +37,18 @@ export function MultipleChoiceCard({ exercise, onAnswered }: Props) {
 
   return (
     <PaperCard tone="plain">
+      {exercise.passage && (
+        <>
+          <Text style={[paperType.proseSm, { color: paper.inkSoft }]}>
+            {exercise.passage}
+          </Text>
+          {exercise.passageSource && (
+            <Text style={[paperType.note, { color: paper.inkMuted }]}>
+              {exercise.passageSource}
+            </Text>
+          )}
+        </>
+      )}
       <Text
         style={[
           paperType.cardTitle,

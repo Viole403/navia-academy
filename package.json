@@ -39,7 +39,10 @@
       "prettier --write"
     ],
     "*.md": "markdownlint-cli2 --fix",
-    "*.{json,css,scss,yml,yaml}": "prettier --write",
+    "*.{css,scss,yml,yaml}": "prettier --write",
+    "*.{json,jsonc}": [
+      "bash -c 'for f in \"$@\"; do case \"$f\" in */data/json/*) ;; *) printf \"%s\\0\" \"$f\";; esac; done | xargs -0 -r npx --no-install prettier --write' --"
+    ],
     "*.go": "bash -c 'command -v golangci-lint >/dev/null 2>&1 && golangci-lint run --fix \"$@\" || echo \"[lint-staged] golangci-lint tidak terinstall \u2014 skip (warning)\" \"$@\"' --"
   },
   "devDependencies": {

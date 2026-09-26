@@ -220,6 +220,10 @@ export interface Exercise {
   tokens?: ExerciseOption[]
   correct: string | string[]
   explanation?: string
+  /** The text a comprehension question is about, shown above the question. */
+  passage?: string
+  /** Credit line, where the passage licence requires attribution. */
+  passageSource?: string
   skill: Skill
   hsk: HskLevel
   examMappings?: ExamMappings

@@ -128,6 +128,20 @@ export function ExercisePlayer({ exercise, onResult }: Props) {
 
   return (
     <div>
+      {exercise.passage && (
+        // Part of the question, not decoration around it: a comprehension
+        // question is unanswerable without the text it is about, so the passage
+        // goes above the prompt and the credit goes with it.
+        <div className="mb-4 space-y-1">
+          <p className="text-sm leading-relaxed text-ink-soft">
+            {exercise.passage}
+          </p>
+          {exercise.passageSource && (
+            <p className="text-xs text-ink-faint">{exercise.passageSource}</p>
+          )}
+        </div>
+      )}
+
       <p className="font-medium">{exercise.prompt}</p>
 
       {exercise.subject && (
