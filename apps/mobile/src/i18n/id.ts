@@ -706,6 +706,8 @@ const id: Record<I18nKey, string> = {
   "adapt.correct": "Benar",
   "adapt.weak": "Paling sering salah: {bands}",
   "adapt.again": "Kerjakan lagi",
+  "adapt.integrity":
+    "Kamu meninggalkan aplikasi selama sesi ini. Hasil hanya indikatif.",
   "adapt.kicker": "Adaptif",
   "adapt.title": "Ujian adaptif",
   "adapt.intro":

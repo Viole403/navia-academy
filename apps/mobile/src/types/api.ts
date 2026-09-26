@@ -510,5 +510,7 @@ export interface CatSession {
   elapsed_sec?: number
   time_remaining_sec?: number
   time_limit_sec?: number
+  /** Tab switches already recorded, so a resumed session keeps its tally. */
+  tab_warnings?: number
   started_at: string
 }

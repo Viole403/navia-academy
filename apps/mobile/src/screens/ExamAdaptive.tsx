@@ -10,6 +10,7 @@ import { ProgressBar } from "@/components/ui/ProgressBar"
 import { LiftedFace, PaperCard, PaperStat } from "@/components/study/PaperCard"
 import { PressableScale } from "@/components/study/press"
 import { useCatExam, type CatResult } from "@/hooks/useCatExam"
+import { useIntegrityTracking } from "@/hooks/useIntegrityTracking"
 import { useContentFaces } from "@/hooks/useContentFaces"
 import { useContentLayout } from "@/theme/layout"
 import { useTheme } from "@/theme/ThemeProvider"
@@ -62,6 +63,17 @@ export function ExamAdaptive() {
   const [startTs, setStartTs] = useState(0)
   const [savedResult, setSavedResult] = useState<CatResult | null>(null)
   const startTsRef = useRef(0)
+  const sessionIdRef = useRef<number | null>(null)
+  // The server keeps the tally; the client only reports the leave.
+  const integrity = useIntegrityTracking(() => {
+    const sid = sessionIdRef.current
+    if (sid === null) return
+    // A delta of one, added server-side: a dropped request lowers nothing, and
+    // a late one only adds. The server decides what the tally means.
+    void cat
+      .updateSession(sid, { answers: [], tab_warnings: 1 })
+      .catch(() => {})
+  })
 
   const vocabQ = useQuery({
     queryKey: ["library-vocabulary", language],
@@ -96,6 +108,7 @@ export function ExamAdaptive() {
         ),
         answers,
         engine_version: "elo-v1",
+        integrity_flag: integrity.flagged,
       })
     },
     onSuccess: (_d, r) => {
@@ -113,6 +126,22 @@ export function ExamAdaptive() {
     setSavedResult(null)
     setStartTs(Date.now())
     startTsRef.current = Date.now()
+    integrity.reset()
+    // A server session gives the warning tally somewhere to live, which is the
+    // whole point: kept in component state it reset on every launch.
+    void cat
+      .startSession({
+        exam_type: activeExam,
+        start_theta: Math.round(exam.theta),
+      })
+      .then((sess) => {
+        sessionIdRef.current = sess.id
+        integrity.seed(sess.tab_warnings)
+      })
+      .catch(() => {
+        // No session means no tally; the exam still runs.
+        sessionIdRef.current = null
+      })
     exam.start()
   }
 
@@ -321,6 +350,13 @@ export function ExamAdaptive() {
           </View>
         ) : current ? (
           <>
+            {integrity.flagged && (
+              <PaperCard tone="plain">
+                <Text style={[paperType.note, { color: paper.coral }]}>
+                  {t("adapt.integrity")}
+                </Text>
+              </PaperCard>
+            )}
             <PaperCard tone="plain">
               {current.stimulusType === "audio" ? (
                 <LiftedFace

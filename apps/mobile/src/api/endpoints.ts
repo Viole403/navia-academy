@@ -188,7 +188,13 @@ export const cat = {
   // Backend PATCH answers with 204 No Content — no body to unwrap.
   updateSession: async (
     id: number,
-    body: { answers: CatAnswer[]; elapsed_sec?: number; theta?: number }
+    body: {
+      answers: CatAnswer[]
+      elapsed_sec?: number
+      theta?: number
+      /** Tab switches accrued; the server adds it and never lowers the total. */
+      tab_warnings?: number
+    }
   ): Promise<void> => {
     await apiClient.patch(`/cat/session/${id}`, body)
   },

@@ -705,6 +705,8 @@ const en = {
   "adapt.correct": "Correct",
   "adapt.weak": "Most missed: {bands}",
   "adapt.again": "Take another",
+  "adapt.integrity":
+    "You left the app during this session. The result is indicative only.",
   "adapt.kicker": "Adaptive",
   "adapt.title": "Adaptive exam",
   "adapt.intro":
