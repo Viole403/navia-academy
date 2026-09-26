@@ -5,7 +5,9 @@ Compact guidance for AI coding agents. Every line is something an agent would li
 ## Toolchain
 
 - **Bun + Turborepo monorepo.** Use `bun` (declared `packageManager: bun@1.4.0`). Workspaces come from the `workspaces` field in root `package.json` (no pnpm-workspace.yaml).
-- **Tests exist, and the two frontends use different runners.** `apps/web` uses Jest (`bun run test` in that package); `apps/mobile` uses Vitest. `bun test` at the root runs neither. CI additionally runs `bun run lint` + per-package typecheck (`tsc --noEmit` / `go vet`) + JSON validation. Verify changes with all of: `bun run lint`, `tsc --noEmit` in the package you touched, and that package's `bun run test`. A passing runner is not enough — Jest transpiles without typechecking, so a suite can be green while `tsc` rejects it.
+- **Tests live in a package-level `__tests__/`, never inside `src/`.** `apps/web/__tests__`, `apps/mobile/__tests__`, `packages/utils/__tests__` — flat, one directory per package, not nested next to the code. Keep it in `tsconfig`'s `include` so `tsc --noEmit` actually checks the suite: a runner that transpiles without typechecking will happily report green on a test file full of type errors, and that is not a theoretical risk — `apps/mobile` excluded `__tests__` for months and three real errors were sitting in there the whole time. Import via the `@/` alias (mobile, web) or `../src/` (utils, which has no alias).
+- **Tests exist, and the two frontends use different runners.** `apps/web` uses Jest (`bun run test` in that package); `apps/mobile` and `packages/utils` use Vitest. `bun test` at the root runs neither. CI additionally runs `bun run lint` + per-package typecheck (`tsc --noEmit` / `go vet`) + JSON validation. Verify changes with all of: `bun run lint`, `tsc --noEmit` in the package you touched, and that package's `bun run test`. A passing runner is not enough — Jest and Vitest both transpile without typechecking, so a suite can be green while `tsc` rejects it.
+- **Go tests are co-located `_test.go` files, not `__tests__/`.** That is the Go convention and `go test ./internal/...` depends on it; do not move them into a parallel tree.
 - Prettier config: `semi: false`, `singleQuote: false`, `printWidth: 80`. Run `bun run format` to autofix.
 - Node 22+ / Bun 1.4+ (CI pins Bun 1.4.0 via `oven-sh/setup-bun`). Backend needs Go 1.26+.
 
@@ -76,6 +78,7 @@ Compact guidance for AI coding agents. Every line is something an agent would li
 ## Scratch space
 
 - Put throwaway work (reports, drafts, temp JSON) in repo `tmp/`, **never** `/tmp` (wiped on reboot, not backed up). Note: `tmp/` is **not** git-ignored — don't commit generated scratch files.
+- **`git add` is always an explicit file list.** Never `git add -A` or `-u`, even with a path prefix: it sweeps in untracked and deleted files nobody asked for. It has twice staged scratch output by accident.
 
 ## graphify
 

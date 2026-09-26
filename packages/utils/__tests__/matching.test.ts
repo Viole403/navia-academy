@@ -9,7 +9,7 @@ import {
   selectLeft,
   unpair,
   type Assignment,
-} from "../matching"
+} from "../src/matching"
 
 const pairs = [
   { id: "p1", left: "hello", right: "hallo" },

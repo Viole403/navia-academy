@@ -5,7 +5,7 @@ import {
   normalizeTranscript,
   sttLocale,
   transcriptSimilarity,
-} from "../speech"
+} from "../src/speech"
 
 /**
  * These decide whether a learner's answer counts, so the tests pin the two

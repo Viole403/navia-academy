@@ -16,7 +16,7 @@ import {
   recommendedLevel,
   shouldStop,
   weakBandsOf,
-} from "../elo"
+} from "../src/elo"
 
 /**
  * The engine lives in a shared package because the web session, this one and
