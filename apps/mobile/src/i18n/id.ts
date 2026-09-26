@@ -169,6 +169,11 @@ const id: Record<I18nKey, string> = {
   "game.xpLogged": "XP tercatat",
   "game.saving": "Menyimpan…",
   "game.saveExit": "Simpan & keluar",
+  "game.saveFailed": "Belum tersimpan. Ketuk untuk mencoba lagi.",
+  "game.faceDown": "Kartu tertutup",
+  "game.failedTitle": "Kartu gagal dimuat",
+  "game.failedMsg":
+    "Perpustakaan tidak menjawab. Periksa koneksi lalu coba lagi.",
   "home.morning": "Selamat pagi",
   "home.afternoon": "Selamat siang",
   "home.evening": "Selamat malam",
@@ -356,6 +361,9 @@ const id: Record<I18nKey, string> = {
   "listen.score": "Skor",
   "listen.playing": "Memutar…",
   "listen.play": "Putar kata",
+  "listen.failedTitle": "Daftar kata gagal dimuat",
+  "listen.failedMsg":
+    "Perpustakaan tidak menjawab. Periksa koneksi lalu coba lagi.",
   "speak.kicker": "Berbicara",
   "speak.title": "Ucapkan dengan lantang",
   "speak.prompt": "Perintah",

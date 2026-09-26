@@ -169,6 +169,11 @@ const en = {
   "game.xpLogged": "XP logged",
   "game.saving": "Saving…",
   "game.saveExit": "Save & exit",
+  "game.saveFailed": "That did not save. Tap to try again.",
+  "game.faceDown": "Face-down card",
+  "game.failedTitle": "Could not load the cards",
+  "game.failedMsg":
+    "The library did not answer. Check your connection and try again.",
   "home.morning": "Good morning",
   "home.afternoon": "Good afternoon",
   "home.evening": "Good evening",
@@ -358,6 +363,9 @@ const en = {
   "listen.score": "Score",
   "listen.playing": "Playing…",
   "listen.play": "Play word",
+  "listen.failedTitle": "Could not load the word list",
+  "listen.failedMsg":
+    "The library did not answer. Check your connection and try again.",
   "speak.kicker": "Speaking",
   "speak.title": "Say it aloud",
   "speak.prompt": "Prompt",
