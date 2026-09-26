@@ -1,4 +1,4 @@
-import { useCallback, useMemo, useState } from "react"
+import { useCallback, useEffect, useMemo, useState } from "react"
 import { Pressable, Text, View } from "react-native"
 import { router } from "expo-router"
 import { useMutation } from "@tanstack/react-query"
@@ -146,6 +146,20 @@ export default function Onboarding() {
   )
 
   const info = languageInfo(language)
+
+  // A fresh install shows a language as already selected — the store has a
+  // default — but nothing had tapped a card, so no exam had been chosen either.
+  // The continue button is gated on the exam being set, which left a learner
+  // staring at a selected language and a dead button with no way forward.
+  //
+  // Derived rather than required, so what the page displays and what it allows
+  // are the same thing.
+  useEffect(() => {
+    if (!language) return
+    const types = languageInfo(language).examTypes
+    if (examType && types.includes(examType)) return
+    if (types.length > 0) setExamType(types[0])
+  }, [language, examType, setExamType])
 
   return (
     <OnbShell

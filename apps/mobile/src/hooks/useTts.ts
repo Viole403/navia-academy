@@ -1,13 +1,12 @@
 import { useCallback, useEffect, useRef, useState } from "react"
 import { File, Directory, Paths } from "expo-file-system"
-// eslint-disable-next-line @typescript-eslint/no-require-imports
-let Audio: any = null
-try {
-  // eslint-disable-next-line @typescript-eslint/no-require-imports
-  Audio = require("expo-av").Audio
-} catch {
-  Audio = null
-}
+import {
+  configureAudioSession,
+  createPlayer,
+  removePlayer,
+  stopPlayer,
+  type AudioStatus,
+} from "@/lib/audio"
 import { tts } from "@/api/endpoints"
 import { resolveMediaUrl } from "@/utils/env"
 import { ttsLocaleFor } from "@/lib/languages"
@@ -131,14 +130,10 @@ export function useTts() {
 
   useEffect(() => {
     if (!Audio) return
-    Audio.setAudioModeAsync({
-      playsInSilentModeIOS: true,
-      staysActiveInBackground: false,
-      shouldDuckAndroid: true,
-    }).catch(() => {})
+    configureAudioSession()
 
     return () => {
-      soundRef.current?.unloadAsync().catch(() => {})
+      if (soundRef.current) removePlayer(soundRef.current)
     }
   }, [])
 
@@ -153,7 +148,7 @@ export function useTts() {
       try {
         setError(null)
         setLoading(true)
-        soundRef.current?.unloadAsync().catch(() => {})
+        if (soundRef.current) removePlayer(soundRef.current)
 
         await ensureCacheDir()
 
@@ -169,20 +164,10 @@ export function useTts() {
         // Step 1: local file cache
         const localFile = cacheFile(canonicalKey, locale, genderKey)
         if (localFile.exists) {
-          const { sound } = await Audio.Sound.createAsync(
-            { uri: localFile.uri },
-            { shouldPlay: true }
-          )
-          if (playId !== playIdRef.current) {
-            sound.unloadAsync().catch(() => {})
-            return
-          }
-          soundRef.current = sound
-          setPlaying(true)
-          sound.setOnPlaybackStatusUpdate((status: any) => {
+          const sound = createPlayer({ uri: localFile.uri }, (status) => {
             if (playId !== playIdRef.current) return
             if (!status.isLoaded) {
-              if ("error" in status && status.error) {
+              if (status.error) {
                 setPlaying(false)
                 setError(String(status.error))
               }
@@ -190,6 +175,12 @@ export function useTts() {
             }
             if (status.didJustFinish) setPlaying(false)
           })
+          if (playId !== playIdRef.current) {
+            removePlayer(sound)
+            return
+          }
+          soundRef.current = sound
+          setPlaying(true)
           setLoading(false)
           return
         }
@@ -198,12 +189,19 @@ export function useTts() {
         if (isManifestBacked && CDN_PUBLIC_URL) {
           const cdnUrl = cdnAudioUrl(canonicalKey, locale, genderKey)
           try {
-            const { sound } = await Audio.Sound.createAsync(
-              { uri: cdnUrl },
-              { shouldPlay: true }
-            )
+            const sound = createPlayer({ uri: cdnUrl }, (status) => {
+              if (playId !== playIdRef.current) return
+              if (!status.isLoaded) {
+                if (status.error) {
+                  setPlaying(false)
+                  setError(String(status.error))
+                }
+                return
+              }
+              if (status.didJustFinish) setPlaying(false)
+            })
             if (playId !== playIdRef.current) {
-              sound.unloadAsync().catch(() => {})
+              removePlayer(sound)
               return
             }
             soundRef.current = sound
@@ -217,17 +215,6 @@ export function useTts() {
             } catch {
               // caching is best-effort, don't block playback
             }
-            sound.setOnPlaybackStatusUpdate((status: any) => {
-              if (playId !== playIdRef.current) return
-              if (!status.isLoaded) {
-                if ("error" in status && status.error) {
-                  setPlaying(false)
-                  setError(String(status.error))
-                }
-                return
-              }
-              if (status.didJustFinish) setPlaying(false)
-            })
             setLoading(false)
             return
           } catch {
@@ -240,20 +227,10 @@ export function useTts() {
         const url = resolveMediaUrl(audio.url)
         if (!url) throw new Error("empty audio url")
 
-        const { sound } = await Audio.Sound.createAsync(
-          { uri: url },
-          { shouldPlay: true }
-        )
-        if (playId !== playIdRef.current) {
-          sound.unloadAsync().catch(() => {})
-          return
-        }
-        soundRef.current = sound
-        setPlaying(true)
-        sound.setOnPlaybackStatusUpdate((status: any) => {
+        const sound = createPlayer({ uri: url }, (status) => {
           if (playId !== playIdRef.current) return
           if (!status.isLoaded) {
-            if ("error" in status && status.error) {
+            if (status.error) {
               setPlaying(false)
               setError(String(status.error))
             }
@@ -261,6 +238,12 @@ export function useTts() {
           }
           if (status.didJustFinish) setPlaying(false)
         })
+        if (playId !== playIdRef.current) {
+          removePlayer(sound)
+          return
+        }
+        soundRef.current = sound
+        setPlaying(true)
       } catch (e) {
         setError(e instanceof Error ? e.message : "playback failed")
         setPlaying(false)
@@ -271,8 +254,8 @@ export function useTts() {
     [language]
   )
 
-  const stop = useCallback(async () => {
-    await soundRef.current?.stopAsync().catch(() => {})
+  const stop = useCallback(() => {
+    if (soundRef.current) stopPlayer(soundRef.current)
     setPlaying(false)
   }, [])
 

@@ -4,6 +4,10 @@ import { useFonts } from "expo-font"
 import { addEventListener, getInitialURL } from "expo-linking"
 import { Stack, useRouter } from "expo-router"
 import { StatusBar } from "expo-status-bar"
+import {
+  SafeAreaProvider,
+  initialWindowMetrics,
+} from "react-native-safe-area-context"
 import { GestureHandlerRootView } from "react-native-gesture-handler"
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query"
 import { ThemeProvider, useTheme } from "@/theme/ThemeProvider"
@@ -80,7 +84,7 @@ function AppShell() {
   }, [soundEffects])
 
   return (
-    <>
+    <SafeAreaProvider initialMetrics={initialWindowMetrics}>
       <StatusBar style={resolvedMode === "light" ? "dark" : "light"} />
       {/* eslint-disable-next-line @typescript-eslint/no-explicit-any */}
       <Stack
@@ -92,7 +96,7 @@ function AppShell() {
           linking: linking,
         } as any)}
       />
-    </>
+    </SafeAreaProvider>
   )
 }
 

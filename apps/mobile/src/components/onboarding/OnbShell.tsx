@@ -11,6 +11,7 @@ import {
 } from "react-native"
 import { useTheme } from "@/theme/ThemeProvider"
 import { useContentFaces } from "@/hooks/useContentFaces"
+import { useSafeAreaInsets } from "react-native-safe-area-context"
 import { paperType, families } from "@/theme/paperType"
 import { FlexGap } from "@/components/study/press"
 import { onbArt, artRatio } from "@/components/study/art"
@@ -50,7 +51,33 @@ export function OnbShell({
   art?: "none" | "branch" | "pagoda" | "panorama"
 }) {
   const { paper } = useTheme()
-  const body = <View style={{ padding: 22, gap: 18 }}>{children}</View>
+  // Real device insets, not a guess.
+  //
+  // The app targets an SDK that draws edge to edge, so the window runs under
+  // the status bar and the navigation bar. A fixed padding cannot know how
+  // tall either of those is: the status bar changes with the camera cutout,
+  // which is top-left, top-centre or top-right depending on the handset, and
+  // the bottom is a gesture bar on one phone and three buttons on the next.
+  const insets = useSafeAreaInsets()
+  // Grows to fill the scroll area rather than sitting at the top of it. Without
+  // this the body is exactly as tall as its content, and a step whose layout
+  // relies on a flexible region — the welcome screen's art is `flex: 1` inside a
+  // `justifyContent: flex-end` box — has nothing to fill, so that region
+  // collapses to zero and the art renders blank against the top of the page.
+  const body = (
+    <View
+      style={{
+        flexGrow: 1,
+        paddingLeft: 22 + insets.left,
+        paddingRight: 22 + insets.right,
+        paddingTop: 18,
+        paddingBottom: 18,
+        gap: 18,
+      }}
+    >
+      {children}
+    </View>
+  )
 
   return (
     <View style={{ flex: 1, backgroundColor: paper.paper }}>
@@ -110,8 +137,9 @@ export function OnbShell({
           flexDirection: "row",
           alignItems: "center",
           justifyContent: "space-between",
-          paddingHorizontal: 22,
-          paddingTop: 12,
+          paddingLeft: 22 + insets.left,
+          paddingRight: 22 + insets.right,
+          paddingTop: insets.top + 12,
           paddingBottom: 8,
         }}
       >
@@ -133,7 +161,13 @@ export function OnbShell({
 
       {/* Footer: stable height, so the button never moves. */}
       {footer ? (
-        <View style={{ paddingHorizontal: 22, paddingBottom: 26 }}>
+        <View
+          style={{
+            paddingLeft: 22 + insets.left,
+            paddingRight: 22 + insets.right,
+            paddingBottom: Math.max(insets.bottom, 12) + 14,
+          }}
+        >
           {footer}
         </View>
       ) : null}

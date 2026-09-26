@@ -4,27 +4,27 @@ import { Animated, Easing, Platform, StyleSheet, View } from "react-native"
 /**
  * The page hand-over.
  *
- * **The order is the fix, not a preference.** The two halves used to be strictly
- * sequential — empty the screen, *then* mount the next page — so every millisecond
- * of that mount was spent looking at bare paper. Because every element on these
- * pages sits inside an entrance wrapper, a page starts at opacity 0 with nothing
- * static to hold the screen, which reads as the app having hung between steps.
+ * What it does: show the arriving page while the leaving one slides out, so
+ * there is never a moment where the screen is empty.
  *
- * Mounting underneath means the mount happens while the old page is still on
- * screen, and the exit runs on the native driver so it keeps moving even while
- * the JS thread is busy building what is behind it. The exit is started from an
- * effect *after* the commit that mounts the arriving page, so a slow page reads as
- * a beat of delay before the change rather than a blank screen in the middle.
+ * The previous version juggled two fixed slots and tried to keep them in step
+ * with a `setState` nested inside another `setState`'s updater. Updaters have to
+ * be pure, and React does not promise to run one exactly once, so the slot index
+ * and the slot list could disagree. When they did, the page being pointed at was
+ * the one that had just been dropped — which is why slides went blank and why
+ * one of them had its text jammed against the top.
  *
- * Keeping both pages alive needs **two fixed slots**, each page staying in the
- * one it arrived in — a single slot whose contents swap would remount the leaving
- * page and replay its entrance as it slid away. Both slots are absolutely filled,
- * and **the spare one must carry `pointerEvents="none"`**: an absolutely-filled
- * View is a hit target in React Native whether or not it has anything in it, so
- * left on auto it lies over the whole page and swallows every tap. That is what
- * stops a second tap landing on the arriving page's button before it is visible.
+ * This version keeps one piece of truth, `stepKey`, and derives everything else
+ * from it. The leaving page is held in state beside the arriving one, so both
+ * are on screen for exactly as long as the animation runs and neither is ever
+ * addressed by an index that can drift.
  *
- * The first page deliberately does not animate: the welcome screen has its own
+ * A page that mounts while another is still on screen is deliberate: the mount
+ * cost is paid in the middle of a transition rather than as a stall between
+ * steps, and the exit runs on the native driver so it keeps moving even while
+ * the JS thread is busy building what arrives next.
+ *
+ * The first page deliberately does not animate. The welcome screen has its own
  * staged entrance, and playing both made it move twice.
  */
 export function Slide({
@@ -34,11 +34,11 @@ export function Slide({
   stepKey: string | number
   children: ReactNode
 }) {
-  const [slots, setSlots] = useState<
-    { key: string | number; node: ReactNode }[]
-  >([{ key: stepKey, node: children }])
-  const [activeSlot, setActiveSlot] = useState(0)
-  const leaving = useRef<Animated.Value | null>(null)
+  const [leaving, setLeaving] = useState<{
+    key: string | number
+    node: ReactNode
+  } | null>(null)
+  const exit = useRef(new Animated.Value(1)).current
   const first = useRef(true)
 
   useEffect(() => {
@@ -46,67 +46,76 @@ export function Slide({
       first.current = false
       return
     }
-    // The arriving page takes the spare slot; the current one is marked as
-    // leaving and animated out. `slots` therefore only ever grows to two.
-    setSlots((prev) => {
-      const spare = prev[activeSlot === 0 ? 1 : 0]
-      if (spare) setSlots([prev[activeSlot], { key: stepKey, node: children }])
-      else setSlots([...prev, { key: stepKey, node: children }])
-      return prev
-    })
-    setActiveSlot((s) => (s === 0 ? 1 : 0))
 
-    // Started after the commit above, never before it.
-    const v = new Animated.Value(0)
-    leaving.current = v
-    Animated.timing(v, {
+    setLeaving((prev) =>
+      prev ? null : { key: prevKey.current, node: prevNode.current }
+    )
+    // The page that is on its way out is whatever was here before this commit.
+    prevKey.current = stepKey
+    prevNode.current = children
+
+    exit.setValue(0)
+    const animation = Animated.timing(exit, {
       toValue: 1,
       duration: 260,
       easing: Easing.in(Easing.quad),
       useNativeDriver: Platform.OS !== "web",
-    }).start(() => {
-      setSlots((prev) => prev.slice(-2))
     })
-    // Backstop: a stalled frame loop must not leave a page parked off-screen.
-    const backstop = setTimeout(() => setSlots((prev) => prev.slice(-2)), 900)
+    animation.start(({ finished }) => {
+      // Only drop the page when the animation actually ended. A cancelled
+      // animation is left in place, because a half-faded page still needs to be
+      // there until the next one covers it.
+      if (finished) setLeaving(null)
+    })
+
+    // A stalled frame loop must not leave a page parked half off-screen, but
+    // this is a backstop only: it is longer than the animation, so it never
+    // fires during a normal hand-over.
+    const backstop = setTimeout(() => setLeaving(null), 900)
     return () => clearTimeout(backstop)
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [stepKey])
 
+  // Written during the commit above, read during the next one.
+  const prevKey = useRef(stepKey)
+  const prevNode = useRef(children)
+
   return (
-    <View style={StyleSheet.absoluteFill} pointerEvents="box-none">
-      {slots.map((slot, i) => {
-        const isActive = i === activeSlot
-        const anim = isActive ? null : leaving.current
-        return (
-          <Animated.View
-            key={slot.key}
-            style={[
-              StyleSheet.absoluteFill,
-              anim
-                ? {
-                    opacity: anim.interpolate({
-                      inputRange: [0, 1],
-                      outputRange: [1, 0],
-                    }),
-                    transform: [
-                      {
-                        translateX: anim.interpolate({
-                          inputRange: [0, 1],
-                          outputRange: [0, -40],
-                        }),
-                      },
-                    ],
-                  }
-                : null,
-            ]}
-            // The leaving page takes no touches while it goes.
-            pointerEvents={isActive ? "auto" : "none"}
-          >
-            {slot.node}
-          </Animated.View>
-        )
-      })}
+    <View style={styles.fill} pointerEvents="box-none">
+      {leaving ? (
+        <Animated.View
+          key={`leaving-${leaving.key}`}
+          style={[
+            StyleSheet.absoluteFill,
+            {
+              opacity: exit.interpolate({
+                inputRange: [0, 1],
+                outputRange: [1, 0],
+              }),
+              transform: [
+                {
+                  translateX: exit.interpolate({
+                    inputRange: [0, 1],
+                    outputRange: [0, -40],
+                  }),
+                },
+              ],
+            },
+          ]}
+          // The leaving page takes no touches while it goes, so an absolutely
+          // filled view cannot swallow the tap meant for the arriving page.
+          pointerEvents="none"
+        >
+          {leaving.node}
+        </Animated.View>
+      ) : null}
+      <View style={StyleSheet.absoluteFill} pointerEvents="box-none">
+        {children}
+      </View>
     </View>
   )
 }
+
+const styles = StyleSheet.create({
+  fill: { flex: 1 },
+})

@@ -21,17 +21,18 @@
  * The clips are pre-rendered WAVs rather than synthesised: React Native has no
  * Web Audio API, so they are baked offline rather than generated at runtime.
  *
- * Uses `expo-av` (already the app's audio engine for TTS) rather than
- * `expo-audio`, so the app keeps one audio dependency.
+ * Uses the same audio engine as the TTS hook, so the app keeps one audio
+ * dependency.
  */
-// eslint-disable-next-line @typescript-eslint/no-require-imports
-let Audio: any = null
-try {
-  // eslint-disable-next-line @typescript-eslint/no-require-imports
-  Audio = require("expo-av").Audio
-} catch {
-  Audio = null
-}
+import {
+  configureAudioSession,
+  createSilentPlayer,
+  playFromStart,
+  removePlayer,
+  type AudioSource,
+} from "@/lib/audio"
+
+export { configureAudioSession }
 
 const CLIPS = {
   stroke: require("@assets/sounds/stroke.wav"),
@@ -63,59 +64,35 @@ export function setSoundPrefs(next: SoundPrefs) {
  * `shouldDuckAndroid` + `mixWithOthers` pair keeps an effect from pausing
  * whatever else is playing.
  */
-export async function configureAudioSession(): Promise<void> {
-  if (!Audio) return
-  try {
-    await Audio.setAudioModeAsync({
-      playsInSilentModeIOS: true,
-      staysActiveInBackground: false,
-      shouldDuckAndroid: true,
-      interruptionModeAndroid: 1,
-      interruptionModeIOS: 0,
-      playThroughEarpieceAndroid: false,
-    })
-  } catch {
-    // An audio backend that refuses the configuration is not a reason to crash
-    // on launch; effects simply stay silent.
-  }
-}
-
 /** Created lazily, not at module scope. */
-const players = new Map<SoundName, any>()
+const players = new Map<SoundName, ReturnType<typeof createSilentPlayer>>()
 
-async function playerFor(name: SoundName): Promise<any | null> {
+function playerFor(name: SoundName) {
   const existing = players.get(name)
   if (existing) return existing
   try {
-    const { sound } = await Audio.Sound.createAsync(
-      { uri: CLIPS[name] },
-      { shouldPlay: false }
-    )
-    players.set(name, sound)
-    return sound
+    const player = createSilentPlayer({ uri: CLIPS[name] } as AudioSource)
+    players.set(name, player)
+    return player
   } catch {
     return null
   }
 }
 
 export async function playSound(name: SoundName): Promise<void> {
-  if (!Audio || !prefs.enabled) return
+  if (!prefs.enabled) return
   try {
-    const sound = await playerFor(name)
-    if (!sound) return
-    // Seek first, await it, then play — see the file header.
-    await sound.setPositionAsync(0)
-    await sound.playAsync()
+    const player = playerFor(name)
+    if (!player) return
+    await playFromStart(player)
   } catch {
     // Silence beats an exception on a tap handler.
   }
 }
 
 export async function unloadSounds(): Promise<void> {
-  for (const sound of players.values()) {
-    try {
-      await sound.unloadAsync()
-    } catch {}
+  for (const player of players.values()) {
+    removePlayer(player)
   }
   players.clear()
 }
