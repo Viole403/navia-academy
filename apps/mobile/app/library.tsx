@@ -1,19 +1,15 @@
 import { useMemo, useState } from "react"
-import {
-  ActivityIndicator,
-  Pressable,
-  ScrollView,
-  Text,
-  View,
-} from "react-native"
+import { ActivityIndicator, ScrollView, Text, View } from "react-native"
 import { SafeAreaView } from "react-native-safe-area-context"
 import { useRouter } from "expo-router"
 import { useQuery } from "@tanstack/react-query"
-import { Chip } from "@/components/ui/Chip"
 import { EmptyState } from "@/components/ui/EmptyState"
-import { Enter } from "@/components/ui/Enter"
+import { Motif } from "@/components/ui/Motif"
+import { LiftedFace, PaperCard, QuietPill } from "@/components/study/PaperCard"
+import { PressableScale } from "@/components/study/press"
 import { useTheme } from "@/theme/ThemeProvider"
-import { fonts, type } from "@/theme/typography"
+import { useContentLayout } from "@/theme/layout"
+import { families, paperType } from "@/theme/paperType"
 import {
   loadCharacters,
   loadConversations,
@@ -21,6 +17,7 @@ import {
   loadReadings,
 } from "@/lib/content-data"
 import { headword, isCharScript, motifChar, reading } from "@/lib/languages"
+import { useContentFaces } from "@/hooks/useContentFaces"
 import { useOnboardingStore } from "@/store/onboarding"
 import { useT, type I18nKey } from "@/i18n"
 import type {
@@ -42,7 +39,8 @@ const SECTION_LABEL: Record<LibSection, I18nKey> = {
 }
 
 export default function LibraryScreen() {
-  const { theme, paper } = useTheme()
+  const { paper } = useTheme()
+  const { column } = useContentLayout()
   const t = useT()
   const router = useRouter()
   const language = useOnboardingStore((s) => s.language)
@@ -58,6 +56,9 @@ export default function LibraryScreen() {
   const [section, setSection] = useState<LibSection>("grammar")
   const [openId, setOpenId] = useState<string | null>(null)
 
+  // Switching section can leave a stored section the current language no longer
+  // offers (characters only exist for character scripts), so the active section
+  // is resolved rather than trusted.
   const active: LibSection = sections.includes(section) ? section : "grammar"
 
   const grammarQ = useQuery({
@@ -81,35 +82,202 @@ export default function LibraryScreen() {
     enabled: active === "characters",
   })
 
-  const loading =
-    (active === "grammar" && grammarQ.isLoading) ||
-    (active === "readings" && readingsQ.isLoading) ||
-    (active === "conversations" && conversationsQ.isLoading) ||
-    (active === "characters" && charactersQ.isLoading)
+  const activeQ =
+    active === "grammar"
+      ? grammarQ
+      : active === "readings"
+        ? readingsQ
+        : active === "conversations"
+          ? conversationsQ
+          : charactersQ
+
+  // Every section is a separate request, so "this section did not load" and
+  // "this section is empty" have to be told apart. Reporting the first as the
+  // second told a learner with a dead connection that their language had no
+  // grammar published — a claim they had no way to check and no reason to
+  // believe.
+  const errored = activeQ.isError
+
+  const rows: { id: string; title: string; sub: string }[] =
+    active === "grammar"
+      ? ((grammarQ.data ?? []) as GrammarPoint[]).map((g) => ({
+          id: g.id,
+          title: g.title,
+          sub: g.pattern ?? g.level ?? "",
+        }))
+      : active === "readings"
+        ? ((readingsQ.data ?? []) as Reading[]).map((r) => ({
+            id: r.id,
+            title: r.title,
+            sub: r.summary ?? r.level ?? "",
+          }))
+        : active === "conversations"
+          ? ((conversationsQ.data ?? []) as ConversationScenario[]).map(
+              (c) => ({
+                id: c.id,
+                title: c.title,
+                sub: c.context ?? c.level ?? "",
+              })
+            )
+          : ((charactersQ.data ?? []) as HanziChar[]).map((c) => ({
+              id: c.id,
+              title: c.char ?? c.hanzi ?? c.id,
+              sub: `${reading(c) ?? ""}${c.meaning ? ` · ${c.meaning}` : ""}`,
+            }))
+
+  const open = (id: string) => setOpenId((cur) => (cur === id ? null : id))
+
+  const detail = (id: string) => {
+    if (active === "grammar") {
+      const g = ((grammarQ.data ?? []) as GrammarPoint[]).find(
+        (x) => x.id === id
+      )
+      if (!g) return null
+      return (
+        <View style={{ gap: 8 }}>
+          {!!g.simpleExplanation && (
+            <Text style={[paperType.bodySm, { color: paper.ink }]}>
+              {g.simpleExplanation}
+            </Text>
+          )}
+          {(g.examples ?? []).slice(0, 3).map((e, i) => (
+            <Text key={i} style={[paperType.note, { color: paper.inkMuted }]}>
+              {headword(e)} {reading(e) ? `· ${reading(e)}` : ""}
+            </Text>
+          ))}
+        </View>
+      )
+    }
+    if (active === "readings") {
+      const r = ((readingsQ.data ?? []) as Reading[]).find((x) => x.id === id)
+      if (!r) return null
+      return (
+        <View style={{ gap: 10 }}>
+          {(r.paragraphs ?? [])
+            .slice(0, 3)
+            .map((p: ReadingParagraph, i: number) => (
+              <View key={i} style={{ gap: 2 }}>
+                <Text
+                  style={{
+                    fontFamily: families.lora,
+                    fontSize: 17,
+                    color: paper.ink,
+                  }}
+                >
+                  {headword(p)}
+                </Text>
+                {!!reading(p) && (
+                  <Text style={[paperType.note, { color: paper.inkMuted }]}>
+                    {reading(p)}
+                  </Text>
+                )}
+              </View>
+            ))}
+        </View>
+      )
+    }
+    if (active === "conversations") {
+      const c = ((conversationsQ.data ?? []) as ConversationScenario[]).find(
+        (x) => x.id === id
+      )
+      if (!c) return null
+      return (
+        <View style={{ gap: 8 }}>
+          {(c.turns ?? []).slice(0, 6).map((turn: DialogueTurn, i: number) => (
+            <View key={i} style={{ gap: 2 }}>
+              {!!turn.speaker && (
+                <Text style={[paperType.label, { color: paper.greenDark }]}>
+                  {turn.speaker}
+                </Text>
+              )}
+              <Text style={[paperType.bodySm, { color: paper.ink }]}>
+                {headword(turn)}
+              </Text>
+              {!!reading(turn) && (
+                <Text style={[paperType.note, { color: paper.inkMuted }]}>
+                  {reading(turn)}
+                </Text>
+              )}
+            </View>
+          ))}
+        </View>
+      )
+    }
+    const c = ((charactersQ.data ?? []) as HanziChar[]).find((x) => x.id === id)
+    if (!c) return null
+    return (
+      <View style={{ gap: 4 }}>
+        {!!c.meaning && (
+          <Text style={[paperType.bodySm, { color: paper.ink }]}>
+            {c.meaning}
+          </Text>
+        )}
+        <Text style={[paperType.note, { color: paper.inkMuted }]}>
+          {[
+            c.strokes ? `${c.strokes} ${t("lib.strokes")}` : "",
+            c.radical ? `${t("lib.radical")} ${c.radical}` : "",
+          ]
+            .filter(Boolean)
+            .join(" · ")}
+        </Text>
+      </View>
+    )
+  }
+
+  const openEntry = (id: string) => {
+    if (active === "grammar")
+      router.push({ pathname: "/grammar/[id]", params: { id } })
+    else if (active === "readings")
+      router.push({ pathname: "/reading/[id]", params: { id } })
+    else if (active === "conversations")
+      router.push({ pathname: "/conversation/[id]", params: { id } })
+  }
 
   return (
     <SafeAreaView
       style={{ flex: 1, backgroundColor: paper.paper }}
       edges={["top"]}
     >
-      <ScrollView contentContainerStyle={{ padding: 24, gap: 20 }}>
-        <Enter index={0}>
-          <View style={{ gap: 4 }}>
-            <Text style={[type.labelSm, { color: theme.textMuted }]}>
+      <ScrollView
+        contentContainerStyle={{
+          padding: 20,
+          paddingBottom: 48,
+          gap: 22,
+          maxWidth: column,
+          width: "100%",
+          alignSelf: "center",
+        }}
+      >
+        <View
+          style={{
+            flexDirection: "row",
+            justifyContent: "space-between",
+            alignItems: "flex-start",
+          }}
+        >
+          <View style={{ flex: 1, gap: 8 }}>
+            <Text style={[paperType.label, { color: paper.inkMuted }]}>
               {t("lib.kicker")}
             </Text>
-            <Text style={[type.display, { color: theme.text, fontSize: 32 }]}>
+            <Text
+              style={[
+                paperType.greeting,
+                { color: paper.ink, fontSize: 30, lineHeight: 34 },
+              ]}
+            >
               {t("lib.title")}
             </Text>
           </View>
-        </Enter>
+          <Motif char={motifChar(language)} size={56} />
+        </View>
+        <View style={{ height: 1, backgroundColor: paper.line }} />
 
         <View style={{ flexDirection: "row", flexWrap: "wrap", gap: 8 }}>
           {sections.map((s) => (
-            <Chip
+            <QuietPill
               key={s}
-              label={t(SECTION_LABEL[s])}
-              selected={active === s}
+              title={t(SECTION_LABEL[s])}
+              tone={active === s ? "challenge" : "plain"}
               onPress={() => {
                 setSection(s)
                 setOpenId(null)
@@ -118,249 +286,142 @@ export default function LibraryScreen() {
           ))}
         </View>
 
-        {loading ? (
-          <ActivityIndicator color={theme.accent} />
-        ) : active === "grammar" ? (
-          <ItemList
-            t={t}
-            items={(grammarQ.data ?? []).map((g: GrammarPoint) => ({
-              id: g.id,
-              title: g.title,
-              sub: g.pattern ?? g.level ?? "",
-            }))}
-            openId={openId}
-            onToggle={setOpenId}
-            onOpen={(gid) =>
-              router.push({ pathname: "/grammar/[id]", params: { id: gid } })
+        {errored ? (
+          <View style={{ gap: 16 }}>
+            <EmptyState
+              glyph="∅"
+              title={t("lib.failedTitle")}
+              message={t("lib.failedMsg")}
+            />
+            <LiftedFace
+              title={t("common.retry")}
+              face={paper.green}
+              disabled={activeQ.isFetching}
+              onPress={() => activeQ.refetch()}
+            />
+          </View>
+        ) : activeQ.isLoading ? (
+          <View style={{ alignItems: "center", paddingVertical: 40 }}>
+            <ActivityIndicator color={paper.green} />
+          </View>
+        ) : rows.length === 0 ? (
+          <EmptyState
+            title={
+              active === "characters" ? t("lib.noChars") : t("lib.nothing")
             }
-            renderDetail={(id) => {
-              const g = (grammarQ.data ?? []).find(
-                (x: GrammarPoint) => x.id === id
-              )
-              if (!g) return null
-              return (
-                <View style={{ gap: 8 }}>
-                  {!!g.simpleExplanation && (
-                    <Text style={[type.bodySm, { color: theme.text }]}>
-                      {g.simpleExplanation}
-                    </Text>
-                  )}
-                  {(g.examples ?? []).slice(0, 3).map((e, i) => (
-                    <Text
-                      key={i}
-                      style={[type.bodySm, { color: theme.textMuted }]}
-                    >
-                      {headword(e)} {reading(e) ? `· ${reading(e)}` : ""}
-                    </Text>
-                  ))}
-                </View>
-              )
-            }}
+            message={t("lib.nothingMsg")}
+            glyph={motifChar(language)}
           />
-        ) : active === "readings" ? (
-          <ItemList
-            t={t}
-            items={(readingsQ.data ?? []).map((r: Reading) => ({
-              id: r.id,
-              title: r.title,
-              sub: r.summary ?? r.level ?? "",
-            }))}
-            openId={openId}
-            onToggle={setOpenId}
-            onOpen={(rid) =>
-              router.push({ pathname: "/reading/[id]", params: { id: rid } })
-            }
-            renderDetail={(id) => {
-              const r = (readingsQ.data ?? []).find((x: Reading) => x.id === id)
-              if (!r) return null
-              return (
-                <View style={{ gap: 10 }}>
-                  {(r.paragraphs ?? [])
-                    .slice(0, 3)
-                    .map((p: ReadingParagraph, i: number) => (
-                      <View key={i} style={{ gap: 2 }}>
-                        <Text
-                          style={{
-                            fontFamily: fonts.serif,
-                            fontSize: 17,
-                            color: theme.text,
-                          }}
-                        >
-                          {headword(p)}
-                        </Text>
-                        {!!reading(p) && (
-                          <Text
-                            style={[type.caption, { color: theme.textMuted }]}
-                          >
-                            {reading(p)}
-                          </Text>
-                        )}
-                      </View>
-                    ))}
-                </View>
-              )
-            }}
-          />
-        ) : active === "conversations" ? (
-          <ItemList
-            t={t}
-            items={(conversationsQ.data ?? []).map(
-              (c: ConversationScenario) => ({
-                id: c.id,
-                title: c.title,
-                sub: c.context ?? c.level ?? "",
-              })
-            )}
-            openId={openId}
-            onToggle={setOpenId}
-            onOpen={(cid) =>
-              router.push({
-                pathname: "/conversation/[id]",
-                params: { id: cid },
-              })
-            }
-            renderDetail={(id) => {
-              const c = (conversationsQ.data ?? []).find(
-                (x: ConversationScenario) => x.id === id
-              )
-              if (!c) return null
-              return (
-                <View style={{ gap: 8 }}>
-                  {(c.turns ?? [])
-                    .slice(0, 6)
-                    .map((t: DialogueTurn, i: number) => (
-                      <View key={i} style={{ gap: 2 }}>
-                        {!!t.speaker && (
-                          <Text style={[type.labelSm, { color: theme.accent }]}>
-                            {t.speaker}
-                          </Text>
-                        )}
-                        <Text style={[type.bodySm, { color: theme.text }]}>
-                          {headword(t)}
-                        </Text>
-                        {!!reading(t) && (
-                          <Text
-                            style={[type.caption, { color: theme.textMuted }]}
-                          >
-                            {reading(t)}
-                          </Text>
-                        )}
-                      </View>
-                    ))}
-                </View>
-              )
-            }}
-          />
-        ) : (charactersQ.data ?? []).length === 0 && !charactersQ.isLoading ? (
-          <EmptyState title={t("lib.noChars")} glyph={motifChar(language)} />
         ) : (
-          <ItemList
-            t={t}
-            items={(charactersQ.data ?? []).map((c: HanziChar) => ({
-              id: c.id,
-              title: c.char ?? c.hanzi ?? c.id,
-              sub: `${reading(c) ?? ""}${c.meaning ? ` · ${c.meaning}` : ""}`,
-            }))}
-            openId={openId}
-            onToggle={setOpenId}
-            renderDetail={(id) => {
-              const c = (charactersQ.data ?? []).find(
-                (x: HanziChar) => x.id === id
-              )
-              if (!c) return null
-              return (
-                <View style={{ gap: 4 }}>
-                  {!!c.meaning && (
-                    <Text style={[type.bodySm, { color: theme.text }]}>
-                      {c.meaning}
+          <PaperCard padded={false}>
+            {rows.map((item, i) => (
+              <LibraryRow
+                key={item.id}
+                title={item.title}
+                sub={item.sub}
+                open={openId === item.id}
+                first={i === 0}
+                onPress={() => open(item.id)}
+              >
+                {detail(item.id)}
+                {active !== "characters" && (
+                  <PressableScale
+                    scale={0.99}
+                    onPress={() => openEntry(item.id)}
+                    accessibilityLabel={t("lib.open")}
+                  >
+                    <Text
+                      style={[
+                        paperType.bodySm,
+                        { color: paper.greenDark, fontWeight: "700" },
+                      ]}
+                    >
+                      {t("lib.open")} →
                     </Text>
-                  )}
-                  <Text style={[type.caption, { color: theme.textMuted }]}>
-                    {[
-                      c.strokes ? `${c.strokes} ${t("lib.strokes")}` : "",
-                      c.radical ? `${t("lib.radical")} ${c.radical}` : "",
-                    ]
-                      .filter(Boolean)
-                      .join(" · ")}
-                  </Text>
-                </View>
-              )
-            }}
-          />
+                  </PressableScale>
+                )}
+              </LibraryRow>
+            ))}
+          </PaperCard>
         )}
       </ScrollView>
     </SafeAreaView>
   )
 }
 
-function ItemList({
-  t,
-  items,
-  openId,
-  onToggle,
-  renderDetail,
-  onOpen,
+function LibraryRow({
+  title,
+  sub,
+  open,
+  first,
+  onPress,
+  children,
 }: {
-  t: (key: I18nKey) => string
-  items: { id: string; title: string; sub: string }[]
-  openId: string | null
-  onToggle: (id: string | null) => void
-  renderDetail: (id: string) => React.ReactNode
-  onOpen?: (id: string) => void
+  title: string
+  sub: string
+  open: boolean
+  first: boolean
+  onPress: () => void
+  children?: React.ReactNode
 }) {
-  const { theme, paper } = useTheme()
-  if (items.length === 0) {
-    return <EmptyState title={t("lib.nothing")} message={t("lib.nothingMsg")} />
-  }
+  const { paper } = useTheme()
+  const faces = useContentFaces()
   return (
-    <View style={{ gap: 4 }}>
-      {items.slice(0, 50).map((item, i) => {
-        const open = openId === item.id
-        return (
-          <Enter key={item.id} index={Math.min(i, 8)}>
-            <Pressable
-              onPress={() => onToggle(open ? null : item.id)}
-              style={{
-                paddingVertical: 12,
-                borderBottomWidth: 1,
-                borderBottomColor: theme.border,
-                gap: 2,
-              }}
+    <View
+      style={{
+        borderTopWidth: first ? 0 : 1,
+        borderTopColor: paper.lineSoft,
+      }}
+    >
+      <PressableScale
+        onPress={onPress}
+        scale={0.995}
+        accessibilityLabel={title}
+        style={{
+          flexDirection: "row",
+          alignItems: "center",
+          gap: 12,
+          paddingVertical: 13,
+          paddingHorizontal: 14,
+        }}
+      >
+        <View style={{ flex: 1, gap: 3 }}>
+          <Text
+            style={[
+              // Entries here are the learner's own script — a character
+              // library is glyphs first — so the face follows the language
+              // rather than falling back to the Latin serif.
+              paperType.cardTitleSm,
+              { color: paper.ink, fontFamily: faces.display },
+            ]}
+            numberOfLines={2}
+          >
+            {title}
+          </Text>
+          {!!sub && (
+            <Text
+              style={[paperType.note, { color: paper.inkMuted }]}
+              numberOfLines={open ? undefined : 1}
             >
-              <Text
-                style={[type.body, { color: theme.text, fontWeight: "600" }]}
-              >
-                {item.title}
-              </Text>
-              {!!item.sub && (
-                <Text
-                  style={[type.caption, { color: theme.textMuted }]}
-                  numberOfLines={open ? undefined : 1}
-                >
-                  {item.sub}
-                </Text>
-              )}
-              {open && (
-                <View style={{ paddingTop: 8, gap: 8 }}>
-                  {renderDetail(item.id)}
-                  {onOpen && (
-                    <Pressable onPress={() => onOpen(item.id)}>
-                      <Text
-                        style={[
-                          type.bodySm,
-                          { color: theme.accent, fontWeight: "700" },
-                        ]}
-                      >
-                        {t("lib.open")} →
-                      </Text>
-                    </Pressable>
-                  )}
-                </View>
-              )}
-            </Pressable>
-          </Enter>
-        )
-      })}
+              {sub}
+            </Text>
+          )}
+        </View>
+        <Text
+          style={{
+            fontFamily: families.lora,
+            fontSize: 17,
+            color: open ? paper.green : paper.inkMuted,
+          }}
+        >
+          {open ? "▾" : "›"}
+        </Text>
+      </PressableScale>
+      {open && !!children && (
+        <View style={{ paddingHorizontal: 14, paddingBottom: 14, gap: 10 }}>
+          {children}
+        </View>
+      )}
     </View>
   )
 }

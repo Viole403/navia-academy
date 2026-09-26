@@ -330,11 +330,18 @@ const en = {
   "lib.noChars": "No characters for this language",
   "lib.nothing": "Nothing here yet",
   "lib.nothingMsg": "Content for this language is still being published.",
+  "lib.failedTitle": "Could not load this section",
+  "lib.failedMsg":
+    "The content did not answer. Check your connection and try again.",
   "lib.strokes": "strokes",
   "lib.radical": "radical",
   "prog.kicker": "Program",
   "prog.noProgram": "No program for this track yet",
   "prog.noProgramMsg": "Curriculum content is still being published.",
+  "prog.studyPath": "Study path",
+  "prog.failedTitle": "Could not load the program",
+  "prog.failedMsg":
+    "The content did not answer. Check your connection and try again.",
   "prog.lessons": "lessons",
   "prog.markComplete": "Mark complete",
   "prog.saving": "Saving…",
