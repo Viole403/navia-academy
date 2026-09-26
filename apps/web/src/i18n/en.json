@@ -1343,5 +1343,9 @@
   "landing.ctaSubMark": "placement test",
   "landing.ctaSubTail": "and you will have your plan.",
   "landing.mandarinSample": "Mandarin sample — your track's lessons live in the app.",
-  "sponsor.disclaimer": "All product names, logos, and brands are property of their respective owners."
+  "sponsor.disclaimer": "All product names, logos, and brands are property of their respective owners.",
+  "exam.matching": "Matching",
+  "exam.matchingScore": "{percent}% of the pairs were right.",
+  "exam.matchingNote": "This measures which pairings were made, not how anything was pronounced.",
+  "exam.matchingHint": "Pair up all {count}."
 }

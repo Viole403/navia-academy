@@ -11,6 +11,7 @@ import { useContentFaces } from "@/hooks/useContentFaces"
 import { useTheme } from "@/theme/ThemeProvider"
 import { useContentLayout } from "@/theme/layout"
 import { paperType } from "@/theme/paperType"
+import { MatchingQuestion } from "@/components/study/MatchingQuestion"
 import { fonts } from "@/theme/typography"
 import { exam } from "@/api/endpoints"
 import { useTts } from "@/hooks/useTts"
@@ -212,7 +213,9 @@ export default function ExamSessionScreen() {
     return () => clearInterval(tick)
   }, [])
 
-  const pick = (qid: string, option: string) => {
+  // A multiple-choice answer is a string; a matching answer is a set of
+  // pairings, so this is not typed to a string.
+  const pick = (qid: string, option: unknown) => {
     setPicked((p) => ({ ...p, [qid]: option }))
     answerM.mutate({ qid, answer: option })
   }
@@ -394,18 +397,31 @@ export default function ExamSessionScreen() {
                 )}
             </View>
 
-            <PaperCard padded={false}>
-              {(current.options ?? []).map((opt, idx) => (
-                <OptionRow
-                  key={opt}
-                  letter={LETTERS[idx] ?? String(idx + 1)}
-                  label={opt}
-                  selected={picked[current.id] === opt}
-                  onPress={() => pick(current.id, opt)}
-                  last={idx === (current.options ?? []).length - 1}
-                />
-              ))}
-            </PaperCard>
+            {current.pairs?.length ? (
+              // A matching question has no option list to render, and picking
+              // one option cannot answer it — the answer is a set of pairings,
+              // and it is committed by the component once the last one lands.
+              <MatchingQuestion
+                prompt={current.prompt}
+                pairs={current.pairs}
+                onAnswered={(answer: Record<string, string>) =>
+                  pick(current.id, answer)
+                }
+              />
+            ) : (
+              <PaperCard padded={false}>
+                {(current.options ?? []).map((opt, idx) => (
+                  <OptionRow
+                    key={opt}
+                    letter={LETTERS[idx] ?? String(idx + 1)}
+                    label={opt}
+                    selected={picked[current.id] === opt}
+                    onPress={() => pick(current.id, opt)}
+                    last={idx === (current.options ?? []).length - 1}
+                  />
+                ))}
+              </PaperCard>
+            )}
           </View>
         ) : (
           <EmptyState title={t("xsess.noQ")} glyph="？" />

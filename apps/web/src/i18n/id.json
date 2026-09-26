@@ -1343,5 +1343,9 @@
   "landing.ctaSubMark": "tes penempatan sepuluh menit",
   "landing.ctaSubTail": "dan Anda akan memiliki rencana Anda.",
   "landing.mandarinSample": "Contoh Mandarin — pelajaran track Anda ada di dalam aplikasi.",
-  "sponsor.disclaimer": "Semua nama produk, logo, dan merek adalah milik pemiliknya masing-masing."
+  "sponsor.disclaimer": "Semua nama produk, logo, dan merek adalah milik pemiliknya masing-masing.",
+  "exam.matching": "Menjodohkan",
+  "exam.matchingScore": "{percent}% pasangan yang tepat.",
+  "exam.matchingNote": "Ini mengukur pasangan mana yang benar, bukan cara bacanya.",
+  "exam.matchingHint": "Pasangkan semua {count}."
 }

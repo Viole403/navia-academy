@@ -38,6 +38,7 @@ export type ExamQuestionType =
   | "character"
   | "meaning"
   | "fill_blank"
+  | "matching"
 
 /**
  * A question as the session API serves it.
@@ -55,15 +56,31 @@ export interface ExamQuestion {
   prompt_chinese?: string
   examType?: string
   examLevel?: string
-  /** Answer texts, including the correct one. */
+  /** Answer texts, including the correct one. Absent on a matching question. */
   options?: string[]
-  /** One of `options`, verbatim. */
+  /**
+   * One of `options`, verbatim — or, on a matching question, a map from pair id
+   * to the right-hand item. A matching question is scored as a fraction of its
+   * pairs, so the two shapes are told apart by `type` rather than by guessing.
+   */
   correctAnswer?: string
+  /** The two columns to pair up. Only on a matching question. */
+  pairs?: MatchingPair[]
   explanation?: string
   /** Text to speak, for the listening type. */
   audioText?: string
   tags?: string[]
 }
+
+/** One row of a matching question: an id, a left item and a right item. */
+export interface MatchingPair {
+  id: string
+  left: string
+  right: string
+}
+
+/** A matching answer: which right-hand item each pair id was given. */
+export type MatchingAnswer = Record<string, string>
 
 /** A question as the content files store it, with stable option ids. */
 export interface ContentOption {

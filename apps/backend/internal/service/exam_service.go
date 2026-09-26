@@ -420,7 +420,9 @@ func (s *ExamService) sampleQuestions(examType, examLevel string, count int, que
 }
 
 func (s *ExamService) calculateScore(session *models.ExamSession, questions []map[string]interface{}, answers map[string]interface{}, completedAt time.Time) *models.ExamResult {
-	correctAnswers := 0
+	creditTotal := 0.0
+	// Tallies are stored per hundred so a half-correct question still has
+	// somewhere to go in an integer column; the ratios below divide it back out.
 	byType := make(map[string]map[string]int)
 	byDifficulty := make(map[string]map[string]int)
 
@@ -440,21 +442,30 @@ func (s *ExamService) calculateScore(session *models.ExamSession, questions []ma
 			byDifficulty[qDiff] = map[string]int{"correct": 0, "total": 0}
 		}
 
-		byType[qType]["total"]++
-		byDifficulty[qDiff]["total"]++
-
 		userAns, answered := answers[qID]
-		if answered && fmt.Sprintf("%v", userAns) == fmt.Sprintf("%v", correctAns) {
-			correctAnswers++
-			byType[qType]["correct"]++
-			byDifficulty[qDiff]["correct"]++
+		if answered {
+			// Fractional, so a matching question earns what it measured. The
+			// per-type and per-difficulty tallies are the same shape for the
+			// same reason.
+			credit := scoreAnswer(qType, correctAns, userAns)
+			creditTotal += credit
+			byType[qType]["correct"] += int(math.Round(credit * 100))
+			byType[qType]["total"] += 100
+			byDifficulty[qDiff]["correct"] += int(math.Round(credit * 100))
+			byDifficulty[qDiff]["total"] += 100
+		} else {
+			byType[qType]["total"] += 100
+			byDifficulty[qDiff]["total"] += 100
 		}
 	}
 
 	score := 0
 	if totalQuestions > 0 {
-		score = int(math.Round(float64(correctAnswers) / float64(totalQuestions) * 100))
+		score = int(math.Round(creditTotal / float64(totalQuestions) * 100))
 	}
+	// Rounded rather than truncated, so a run that lost half a point across a
+	// matching question is not reported as a whole point fewer.
+	correctAnswers := int(math.Round(creditTotal))
 
 	avgTimePerQuestion := 0
 	if totalQuestions > 0 {
@@ -488,8 +499,8 @@ func (s *ExamService) calculateScore(session *models.ExamSession, questions []ma
 		}
 	}
 
-	bqJSON, _ := json.Marshal(byType)
-	bdJSON, _ := json.Marshal(byDifficulty)
+	bqJSON, _ := json.Marshal(toQuestionCounts(byType))
+	bdJSON, _ := json.Marshal(toQuestionCounts(byDifficulty))
 	waJSON, _ := json.Marshal(weakAreas)
 	stJSON, _ := json.Marshal(strengths)
 

@@ -4,6 +4,7 @@ import { useState, useEffect, useCallback, useMemo, memo } from "react"
 import Image from "next/image"
 import { useParams, useRouter } from "next/navigation"
 import { Card, Button, Badge, SectionHeader } from "@/components/ui"
+import { MatchingPanel } from "@/components/exam/MatchingPanel"
 import { shuffle, cn } from "@/lib/utils"
 import { play } from "@/lib/audio"
 import { imageUrl } from "@/lib/image"
@@ -16,6 +17,8 @@ import {
 import { useExamCards } from "@/lib/exam-cards"
 import { useVocabulary } from "@/lib/vocabulary"
 import { useProgress } from "@/stores/progress"
+import { scoreMatching } from "@navia/utils"
+import type { MatchingPair } from "@navia/types"
 import { useTranslation } from "@/i18n/locale-context"
 import type { VocabWord, ExamType, HskLevel, AssessmentAttempt } from "@/types"
 import { isCharScript } from "@/lib/languages"
@@ -43,12 +46,39 @@ interface ExamQuestion {
   audioText?: string
   /** Image description or URL placeholder */
   imageDesc?: string
-  /** Answer choices */
-  options: string[]
-  correctAnswer: string
-  userAnswer?: string
+  /** Answer choices. Absent on a matching question. */
+  options?: string[]
+  /** An option verbatim, or a matching question's pair-id to right-item map. */
+  correctAnswer: string | Record<string, string>
+  /** The two columns to pair up. Only on a matching question. */
+  pairs?: MatchingPair[]
+  userAnswer?: unknown
   word: VocabWord
   section: string
+}
+
+/** "3 / 4 pairs right", so the review list can show a matching answer at all. */
+function describeMatching(
+  q: ExamQuestion,
+  given: Record<string, string> | undefined
+): string {
+  const total = q.pairs?.length ?? 0
+  const right = Math.round(
+    scoreMatching(
+      q.correctAnswer as unknown as Record<string, string> | undefined,
+      given
+    ) * total
+  )
+  return `${right} / ${total}`
+}
+
+/** The expected pairings, as "word → meaning" per row. */
+function describeSolution(q: ExamQuestion): string {
+  const solution = q.correctAnswer as unknown as
+    Record<string, string> | undefined
+  return (q.pairs ?? [])
+    .map((p) => `${p.left} → ${solution?.[p.id] ?? ""}`)
+    .join(" · ")
 }
 
 function useExamQuestions(
@@ -217,8 +247,8 @@ const QuestionRenderer = memo(function QuestionRenderer({
   audioLoading,
 }: {
   question: ExamQuestion
-  selectedAnswer?: string
-  onAnswer: (answer: string) => void
+  selectedAnswer?: unknown
+  onAnswer: (answer: unknown) => void
   onPlayAudio: (text: string) => void
   audioLoading?: boolean
 }) {
@@ -243,6 +273,19 @@ const QuestionRenderer = memo(function QuestionRenderer({
     question.word && loadedImage?.word === question.word
       ? loadedImage.url
       : undefined
+  if (question.pairs?.length) {
+    return (
+      <MatchingPanel
+        prompt={question.prompt}
+        pairs={question.pairs}
+        correctAnswer={
+          question.correctAnswer as unknown as
+            Record<string, string> | undefined
+        }
+        onAnswer={onAnswer}
+      />
+    )
+  }
   return (
     <div className="space-y-6">
       <div className="space-y-2">
@@ -293,7 +336,7 @@ const QuestionRenderer = memo(function QuestionRenderer({
       </div>
 
       <div className="grid grid-cols-1 gap-3">
-        {question.options.map((option, idx) => (
+        {(question.options ?? []).map((option, idx) => (
           <button
             key={idx}
             onClick={() => onAnswer(option)}
@@ -334,7 +377,7 @@ export default function DynamicExamPage() {
   const examConfig = useExamConfig()
 
   const [currentIndex, setCurrentIndex] = useState(0)
-  const [answers, setAnswers] = useState<Record<string, string>>({})
+  const [answers, setAnswers] = useState<Record<string, unknown>>({})
   const [submitted, setSubmitted] = useState(false)
   const [score, setScore] = useState(0)
   const [timeLeft, setTimeLeft] = useState(0)
@@ -369,14 +412,24 @@ export default function DynamicExamPage() {
     vocabulary
   )
 
-  const handleAnswer = (questionId: string, answer: string) => {
+  const handleAnswer = (questionId: string, answer: unknown) => {
     setAnswers((prev) => ({ ...prev, [questionId]: answer }))
   }
 
   const handleSubmit = useCallback(() => {
     let correct = 0
     questions.forEach((q) => {
-      if (answers[q.id] === q.correctAnswer) correct++
+      // A matching answer is a set of pairings, so it cannot be compared as a
+      // string. Scored the same way the service scores it, or the browser and
+      // the server would report different marks for the same paper.
+      if (q.pairs?.length) {
+        correct += scoreMatching(
+          q.correctAnswer as unknown as Record<string, string> | undefined,
+          answers[q.id]
+        )
+      } else if (answers[q.id] === q.correctAnswer) {
+        correct++
+      }
     })
     const finalScore = (correct / questions.length) * 100
     setScore(finalScore)
@@ -393,7 +446,15 @@ export default function DynamicExamPage() {
       timeSec: elapsed,
       bySkill: {},
       wrongExerciseIds: questions
-        .filter((q) => answers[q.id] !== q.correctAnswer)
+        .filter((q) =>
+          q.pairs?.length
+            ? scoreMatching(
+                q.correctAnswer as unknown as
+                  Record<string, string> | undefined,
+                answers[q.id]
+              ) < 1
+            : answers[q.id] !== q.correctAnswer
+        )
         .map((q) => q.id),
     }
     addAttempt(attempt)
@@ -566,8 +627,13 @@ export default function DynamicExamPage() {
   // Results screen
   if (submitted) {
     const passed = score >= cardConfig.passingScore
-    const correctCount = questions.filter(
-      (q) => answers[q.id] === q.correctAnswer
+    const correctCount = questions.filter((q) =>
+      q.pairs?.length
+        ? scoreMatching(
+            q.correctAnswer as unknown as Record<string, string> | undefined,
+            answers[q.id]
+          ) >= 1
+        : answers[q.id] === q.correctAnswer
     ).length
     return (
       <div className="container mx-auto max-w-3xl p-6">
@@ -637,14 +703,23 @@ export default function DynamicExamPage() {
                                   : "font-medium text-danger"
                               }
                             >
-                              {answers[q.id] || t("examLevel.notAnswered")}
+                              {q.pairs?.length
+                                ? describeMatching(
+                                    q,
+                                    answers[q.id] as
+                                      Record<string, string> | undefined
+                                  )
+                                : (answers[q.id] as string) ||
+                                  t("examLevel.notAnswered")}
                             </span>
                           </div>
                           {!isCorrect && (
                             <div>
                               {t("examLevel.correctAnswer")}{" "}
                               <span className="font-medium text-success">
-                                {q.correctAnswer}
+                                {q.pairs?.length
+                                  ? describeSolution(q)
+                                  : (q.correctAnswer as string)}
                               </span>
                             </div>
                           )}
@@ -740,10 +815,10 @@ export default function DynamicExamPage() {
                 "h-8 w-8 rounded text-xs font-medium transition-colors",
                 idx === currentIndex && "bg-accent text-accent-ink",
                 idx !== currentIndex &&
-                  answers[q.id] &&
+                  Boolean(answers[q.id]) &&
                   "bg-sunken text-success",
                 idx !== currentIndex &&
-                  !answers[q.id] &&
+                  !Boolean(answers[q.id]) &&
                   "bg-sunken text-ink-faint"
               )}
             >
