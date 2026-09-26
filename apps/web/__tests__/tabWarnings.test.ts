@@ -6,7 +6,7 @@ import {
   initialSync,
   takeWarnings,
   type WarningSync,
-} from "../tabWarnings"
+} from "@/lib/tabWarnings"
 
 /**
  * The endpoint adds what it is given rather than replacing it, so these pin the

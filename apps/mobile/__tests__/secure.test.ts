@@ -13,7 +13,7 @@ vi.mock("expo-secure-store", () => ({
   }),
 }))
 
-import { saveTokens, getTokens, clearTokens } from "../secure"
+import { saveTokens, getTokens, clearTokens } from "@/utils/secure"
 
 describe("secure", () => {
   beforeEach(() => {

@@ -86,7 +86,7 @@ beforeEach(async () => {
   // The worker is a classic script the browser evaluates on its own, so it has
   // no exports for the module resolver to find.
   // @ts-expect-error -- not an ES module by design
-  await import("../../../public/sw.js")
+  await import("../public/sw.js")
 })
 
 function fireFetch(url: string) {

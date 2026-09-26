@@ -2,7 +2,7 @@ import { describe, expect, it } from "vitest"
 
 import type { ContentOption } from "@navia/types"
 
-import { optionKey, optionViews, tally } from "../multipleChoice"
+import { optionKey, optionViews, tally } from "@/lib/multipleChoice"
 
 const q = (id: string, correct: string) => ({
   id,

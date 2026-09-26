@@ -1,6 +1,6 @@
 import { describe, it, expect } from "vitest"
 
-import { generateStudyTasks, type TaskPlannerInput } from "../taskPlanner"
+import { generateStudyTasks, type TaskPlannerInput } from "@/lib/taskPlanner"
 import type {
   AssessmentAttempt,
   SrsCard,

@@ -5,7 +5,7 @@ import {
   getPendingCount,
   reviewWithQueue,
   logStudyWithQueue,
-} from "../offlineQueue"
+} from "@/utils/offlineQueue"
 
 describe("offlineQueue", () => {
   beforeEach(async () => {

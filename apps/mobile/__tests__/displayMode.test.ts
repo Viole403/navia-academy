@@ -9,7 +9,7 @@ import {
   showsPinyin,
   showsTranslation,
   showsZhuyin,
-} from "../displayMode"
+} from "@/lib/displayMode"
 import type { DisplayMode } from "@/types/api"
 
 describe("reading-aid predicates", () => {
