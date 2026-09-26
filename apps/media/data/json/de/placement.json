@@ -586,5 +586,1409 @@
     "language": "de",
     "prompt_en": "Choose the correct passive sentence: \"Der Bericht ___ vor der Frist fertiggestellt worden.\"",
     "prompt_id": "Pilih kalimat pasif yang benar: Der Bericht ___ vor der Frist."
+  },
+  {
+    "id": "gen-de-1-1",
+    "band": 1,
+    "type": "multiple-choice",
+    "prompt": "What does «sieben» mean?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "to think"
+      },
+      {
+        "id": "o1",
+        "label": "seven"
+      },
+      {
+        "id": "o2",
+        "label": "airport"
+      },
+      {
+        "id": "o3",
+        "label": "thick / fat"
+      }
+    ],
+    "correct": "o1",
+    "skill": "vocabulary",
+    "language": "de"
+  },
+  {
+    "id": "gen-de-1-2",
+    "band": 1,
+    "type": "multiple-choice",
+    "prompt": "What does «Flughafen» mean?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "to think"
+      },
+      {
+        "id": "o1",
+        "label": "airport"
+      },
+      {
+        "id": "o2",
+        "label": "seven"
+      },
+      {
+        "id": "o3",
+        "label": "thick / fat"
+      }
+    ],
+    "correct": "o1",
+    "skill": "vocabulary",
+    "language": "de"
+  },
+  {
+    "id": "gen-de-1-3",
+    "band": 1,
+    "type": "multiple-choice",
+    "prompt": "What does «dick» mean?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "airport"
+      },
+      {
+        "id": "o1",
+        "label": "to think"
+      },
+      {
+        "id": "o2",
+        "label": "thick / fat"
+      },
+      {
+        "id": "o3",
+        "label": "seven"
+      }
+    ],
+    "correct": "o2",
+    "skill": "vocabulary",
+    "language": "de"
+  },
+  {
+    "id": "gen-de-1-4",
+    "band": 1,
+    "type": "multiple-choice",
+    "prompt": "What does «denken» mean?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "to think"
+      },
+      {
+        "id": "o1",
+        "label": "seven"
+      },
+      {
+        "id": "o2",
+        "label": "airport"
+      },
+      {
+        "id": "o3",
+        "label": "thick / fat"
+      }
+    ],
+    "correct": "o0",
+    "skill": "vocabulary",
+    "language": "de"
+  },
+  {
+    "id": "gen-de-1-5",
+    "band": 1,
+    "type": "multiple-choice",
+    "prompt": "What does «Heimat» mean?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "thick / fat"
+      },
+      {
+        "id": "o1",
+        "label": "homeland"
+      },
+      {
+        "id": "o2",
+        "label": "seven"
+      },
+      {
+        "id": "o3",
+        "label": "airport"
+      }
+    ],
+    "correct": "o1",
+    "skill": "vocabulary",
+    "language": "de"
+  },
+  {
+    "id": "gen-de-1-6",
+    "band": 1,
+    "type": "multiple-choice",
+    "prompt": "What does «liegen» mean?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "thick / fat"
+      },
+      {
+        "id": "o1",
+        "label": "to lie / to be lying"
+      },
+      {
+        "id": "o2",
+        "label": "seven"
+      },
+      {
+        "id": "o3",
+        "label": "airport"
+      }
+    ],
+    "correct": "o1",
+    "skill": "vocabulary",
+    "language": "de"
+  },
+  {
+    "id": "gen-de-1-7",
+    "band": 1,
+    "type": "multiple-choice",
+    "prompt": "What does «machen» mean?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "seven"
+      },
+      {
+        "id": "o1",
+        "label": "airport"
+      },
+      {
+        "id": "o2",
+        "label": "thick / fat"
+      },
+      {
+        "id": "o3",
+        "label": "to do / to make"
+      }
+    ],
+    "correct": "o3",
+    "skill": "vocabulary",
+    "language": "de"
+  },
+  {
+    "id": "gen-de-1-8",
+    "band": 1,
+    "type": "multiple-choice",
+    "prompt": "What does «auch» mean?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "airport"
+      },
+      {
+        "id": "o1",
+        "label": "thick / fat"
+      },
+      {
+        "id": "o2",
+        "label": "also / too"
+      },
+      {
+        "id": "o3",
+        "label": "seven"
+      }
+    ],
+    "correct": "o2",
+    "skill": "vocabulary",
+    "language": "de"
+  },
+  {
+    "id": "gen-de-2-1",
+    "band": 2,
+    "type": "multiple-choice",
+    "prompt": "What does «Nachtisch» mean?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "dessert"
+      },
+      {
+        "id": "o1",
+        "label": "heat"
+      },
+      {
+        "id": "o2",
+        "label": "network"
+      },
+      {
+        "id": "o3",
+        "label": "to try, attempt"
+      }
+    ],
+    "correct": "o0",
+    "skill": "vocabulary",
+    "language": "de"
+  },
+  {
+    "id": "gen-de-2-2",
+    "band": 2,
+    "type": "multiple-choice",
+    "prompt": "What does «Hitze» mean?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "dessert"
+      },
+      {
+        "id": "o1",
+        "label": "network"
+      },
+      {
+        "id": "o2",
+        "label": "to try, attempt"
+      },
+      {
+        "id": "o3",
+        "label": "heat"
+      }
+    ],
+    "correct": "o3",
+    "skill": "vocabulary",
+    "language": "de"
+  },
+  {
+    "id": "gen-de-2-3",
+    "band": 2,
+    "type": "multiple-choice",
+    "prompt": "What does «Netzwerk» mean?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "to try, attempt"
+      },
+      {
+        "id": "o1",
+        "label": "network"
+      },
+      {
+        "id": "o2",
+        "label": "dessert"
+      },
+      {
+        "id": "o3",
+        "label": "heat"
+      }
+    ],
+    "correct": "o1",
+    "skill": "vocabulary",
+    "language": "de"
+  },
+  {
+    "id": "gen-de-2-4",
+    "band": 2,
+    "type": "multiple-choice",
+    "prompt": "What does «versuchen» mean?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "to try, attempt"
+      },
+      {
+        "id": "o1",
+        "label": "dessert"
+      },
+      {
+        "id": "o2",
+        "label": "heat"
+      },
+      {
+        "id": "o3",
+        "label": "network"
+      }
+    ],
+    "correct": "o0",
+    "skill": "vocabulary",
+    "language": "de"
+  },
+  {
+    "id": "gen-de-2-5",
+    "band": 2,
+    "type": "multiple-choice",
+    "prompt": "What does «Ergebnis» mean?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "result"
+      },
+      {
+        "id": "o1",
+        "label": "dessert"
+      },
+      {
+        "id": "o2",
+        "label": "heat"
+      },
+      {
+        "id": "o3",
+        "label": "network"
+      }
+    ],
+    "correct": "o0",
+    "skill": "vocabulary",
+    "language": "de"
+  },
+  {
+    "id": "gen-de-2-6",
+    "band": 2,
+    "type": "multiple-choice",
+    "prompt": "What does «Pfeffer» mean?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "network"
+      },
+      {
+        "id": "o1",
+        "label": "pepper"
+      },
+      {
+        "id": "o2",
+        "label": "dessert"
+      },
+      {
+        "id": "o3",
+        "label": "heat"
+      }
+    ],
+    "correct": "o1",
+    "skill": "vocabulary",
+    "language": "de"
+  },
+  {
+    "id": "gen-de-2-7",
+    "band": 2,
+    "type": "multiple-choice",
+    "prompt": "What does «besichtigen» mean?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "to visit (sight)"
+      },
+      {
+        "id": "o1",
+        "label": "dessert"
+      },
+      {
+        "id": "o2",
+        "label": "heat"
+      },
+      {
+        "id": "o3",
+        "label": "network"
+      }
+    ],
+    "correct": "o0",
+    "skill": "vocabulary",
+    "language": "de"
+  },
+  {
+    "id": "gen-de-2-8",
+    "band": 2,
+    "type": "multiple-choice",
+    "prompt": "What does «Spinat» mean?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "heat"
+      },
+      {
+        "id": "o1",
+        "label": "network"
+      },
+      {
+        "id": "o2",
+        "label": "spinach"
+      },
+      {
+        "id": "o3",
+        "label": "dessert"
+      }
+    ],
+    "correct": "o2",
+    "skill": "vocabulary",
+    "language": "de"
+  },
+  {
+    "id": "gen-de-3-1",
+    "band": 3,
+    "type": "multiple-choice",
+    "prompt": "What does «der Einfluss» mean?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "recreation"
+      },
+      {
+        "id": "o1",
+        "label": "intention, purpose"
+      },
+      {
+        "id": "o2",
+        "label": "strong, powerful"
+      },
+      {
+        "id": "o3",
+        "label": "influence"
+      }
+    ],
+    "correct": "o3",
+    "skill": "vocabulary",
+    "language": "de"
+  },
+  {
+    "id": "gen-de-3-2",
+    "band": 3,
+    "type": "multiple-choice",
+    "prompt": "What does «Erholung» mean?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "influence"
+      },
+      {
+        "id": "o1",
+        "label": "intention, purpose"
+      },
+      {
+        "id": "o2",
+        "label": "strong, powerful"
+      },
+      {
+        "id": "o3",
+        "label": "recreation"
+      }
+    ],
+    "correct": "o3",
+    "skill": "vocabulary",
+    "language": "de"
+  },
+  {
+    "id": "gen-de-3-3",
+    "band": 3,
+    "type": "multiple-choice",
+    "prompt": "What does «die Absicht» mean?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "intention, purpose"
+      },
+      {
+        "id": "o1",
+        "label": "influence"
+      },
+      {
+        "id": "o2",
+        "label": "recreation"
+      },
+      {
+        "id": "o3",
+        "label": "strong, powerful"
+      }
+    ],
+    "correct": "o0",
+    "skill": "vocabulary",
+    "language": "de"
+  },
+  {
+    "id": "gen-de-3-4",
+    "band": 3,
+    "type": "multiple-choice",
+    "prompt": "What does «kräftig» mean?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "recreation"
+      },
+      {
+        "id": "o1",
+        "label": "intention, purpose"
+      },
+      {
+        "id": "o2",
+        "label": "strong, powerful"
+      },
+      {
+        "id": "o3",
+        "label": "influence"
+      }
+    ],
+    "correct": "o2",
+    "skill": "vocabulary",
+    "language": "de"
+  },
+  {
+    "id": "gen-de-3-5",
+    "band": 3,
+    "type": "multiple-choice",
+    "prompt": "What does «Förderung» mean?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "recreation"
+      },
+      {
+        "id": "o1",
+        "label": "intention, purpose"
+      },
+      {
+        "id": "o2",
+        "label": "Financial support"
+      },
+      {
+        "id": "o3",
+        "label": "influence"
+      }
+    ],
+    "correct": "o2",
+    "skill": "vocabulary",
+    "language": "de"
+  },
+  {
+    "id": "gen-de-3-6",
+    "band": 3,
+    "type": "multiple-choice",
+    "prompt": "What does «danken» mean?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "to thank"
+      },
+      {
+        "id": "o1",
+        "label": "influence"
+      },
+      {
+        "id": "o2",
+        "label": "recreation"
+      },
+      {
+        "id": "o3",
+        "label": "intention, purpose"
+      }
+    ],
+    "correct": "o0",
+    "skill": "vocabulary",
+    "language": "de"
+  },
+  {
+    "id": "gen-de-3-7",
+    "band": 3,
+    "type": "multiple-choice",
+    "prompt": "What does «ursprünglich» mean?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "recreation"
+      },
+      {
+        "id": "o1",
+        "label": "intention, purpose"
+      },
+      {
+        "id": "o2",
+        "label": "original, originally"
+      },
+      {
+        "id": "o3",
+        "label": "influence"
+      }
+    ],
+    "correct": "o2",
+    "skill": "vocabulary",
+    "language": "de"
+  },
+  {
+    "id": "gen-de-3-8",
+    "band": 3,
+    "type": "multiple-choice",
+    "prompt": "What does «als ob» mean?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "influence"
+      },
+      {
+        "id": "o1",
+        "label": "recreation"
+      },
+      {
+        "id": "o2",
+        "label": "intention, purpose"
+      },
+      {
+        "id": "o3",
+        "label": "as if"
+      }
+    ],
+    "correct": "o3",
+    "skill": "vocabulary",
+    "language": "de"
+  },
+  {
+    "id": "gen-de-4-1",
+    "band": 4,
+    "type": "multiple-choice",
+    "prompt": "What does «Erfindung» mean?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "mind, spirit"
+      },
+      {
+        "id": "o1",
+        "label": "to carry out, to conduct"
+      },
+      {
+        "id": "o2",
+        "label": "possibility"
+      },
+      {
+        "id": "o3",
+        "label": "invention"
+      }
+    ],
+    "correct": "o3",
+    "skill": "vocabulary",
+    "language": "de"
+  },
+  {
+    "id": "gen-de-4-2",
+    "band": 4,
+    "type": "multiple-choice",
+    "prompt": "What does «Geist» mean?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "invention"
+      },
+      {
+        "id": "o1",
+        "label": "to carry out, to conduct"
+      },
+      {
+        "id": "o2",
+        "label": "possibility"
+      },
+      {
+        "id": "o3",
+        "label": "mind, spirit"
+      }
+    ],
+    "correct": "o3",
+    "skill": "vocabulary",
+    "language": "de"
+  },
+  {
+    "id": "gen-de-4-3",
+    "band": 4,
+    "type": "multiple-choice",
+    "prompt": "What does «durchführen» mean?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "mind, spirit"
+      },
+      {
+        "id": "o1",
+        "label": "possibility"
+      },
+      {
+        "id": "o2",
+        "label": "to carry out, to conduct"
+      },
+      {
+        "id": "o3",
+        "label": "invention"
+      }
+    ],
+    "correct": "o2",
+    "skill": "vocabulary",
+    "language": "de"
+  },
+  {
+    "id": "gen-de-4-4",
+    "band": 4,
+    "type": "multiple-choice",
+    "prompt": "What does «Möglichkeit» mean?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "mind, spirit"
+      },
+      {
+        "id": "o1",
+        "label": "to carry out, to conduct"
+      },
+      {
+        "id": "o2",
+        "label": "possibility"
+      },
+      {
+        "id": "o3",
+        "label": "invention"
+      }
+    ],
+    "correct": "o2",
+    "skill": "vocabulary",
+    "language": "de"
+  },
+  {
+    "id": "gen-de-4-5",
+    "band": 4,
+    "type": "multiple-choice",
+    "prompt": "What does «Teilnehmer» mean?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "participant"
+      },
+      {
+        "id": "o1",
+        "label": "invention"
+      },
+      {
+        "id": "o2",
+        "label": "mind, spirit"
+      },
+      {
+        "id": "o3",
+        "label": "to carry out, to conduct"
+      }
+    ],
+    "correct": "o0",
+    "skill": "vocabulary",
+    "language": "de"
+  },
+  {
+    "id": "gen-de-4-6",
+    "band": 4,
+    "type": "multiple-choice",
+    "prompt": "What does «Kredit» mean?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "mind, spirit"
+      },
+      {
+        "id": "o1",
+        "label": "to carry out, to conduct"
+      },
+      {
+        "id": "o2",
+        "label": "loan, credit"
+      },
+      {
+        "id": "o3",
+        "label": "invention"
+      }
+    ],
+    "correct": "o2",
+    "skill": "vocabulary",
+    "language": "de"
+  },
+  {
+    "id": "gen-de-4-7",
+    "band": 4,
+    "type": "multiple-choice",
+    "prompt": "What does «Sozialhilfe» mean?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "to carry out, to conduct"
+      },
+      {
+        "id": "o1",
+        "label": "social welfare"
+      },
+      {
+        "id": "o2",
+        "label": "invention"
+      },
+      {
+        "id": "o3",
+        "label": "mind, spirit"
+      }
+    ],
+    "correct": "o1",
+    "skill": "vocabulary",
+    "language": "de"
+  },
+  {
+    "id": "gen-de-4-8",
+    "band": 4,
+    "type": "multiple-choice",
+    "prompt": "What does «erneuerbar» mean?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "renewable"
+      },
+      {
+        "id": "o1",
+        "label": "invention"
+      },
+      {
+        "id": "o2",
+        "label": "mind, spirit"
+      },
+      {
+        "id": "o3",
+        "label": "to carry out, to conduct"
+      }
+    ],
+    "correct": "o0",
+    "skill": "vocabulary",
+    "language": "de"
+  },
+  {
+    "id": "gen-de-5-1",
+    "band": 5,
+    "type": "multiple-choice",
+    "prompt": "What does «Bedenken» mean?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "reservations, concern"
+      },
+      {
+        "id": "o1",
+        "label": "to investigate, to look into"
+      },
+      {
+        "id": "o2",
+        "label": "emotional"
+      },
+      {
+        "id": "o3",
+        "label": "indefinite, permanent"
+      }
+    ],
+    "correct": "o0",
+    "skill": "vocabulary",
+    "language": "de"
+  },
+  {
+    "id": "gen-de-5-2",
+    "band": 5,
+    "type": "multiple-choice",
+    "prompt": "What does «nachforschen» mean?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "emotional"
+      },
+      {
+        "id": "o1",
+        "label": "indefinite, permanent"
+      },
+      {
+        "id": "o2",
+        "label": "to investigate, to look into"
+      },
+      {
+        "id": "o3",
+        "label": "reservations, concern"
+      }
+    ],
+    "correct": "o2",
+    "skill": "vocabulary",
+    "language": "de"
+  },
+  {
+    "id": "gen-de-5-3",
+    "band": 5,
+    "type": "multiple-choice",
+    "prompt": "What does «emotional» mean?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "reservations, concern"
+      },
+      {
+        "id": "o1",
+        "label": "to investigate, to look into"
+      },
+      {
+        "id": "o2",
+        "label": "indefinite, permanent"
+      },
+      {
+        "id": "o3",
+        "label": "emotional"
+      }
+    ],
+    "correct": "o3",
+    "skill": "vocabulary",
+    "language": "de"
+  },
+  {
+    "id": "gen-de-5-4",
+    "band": 5,
+    "type": "multiple-choice",
+    "prompt": "What does «unbefristet» mean?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "to investigate, to look into"
+      },
+      {
+        "id": "o1",
+        "label": "emotional"
+      },
+      {
+        "id": "o2",
+        "label": "indefinite, permanent"
+      },
+      {
+        "id": "o3",
+        "label": "reservations, concern"
+      }
+    ],
+    "correct": "o2",
+    "skill": "vocabulary",
+    "language": "de"
+  },
+  {
+    "id": "gen-de-5-5",
+    "band": 5,
+    "type": "multiple-choice",
+    "prompt": "What does «Fachkenntnis» mean?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "emotional"
+      },
+      {
+        "id": "o1",
+        "label": "expert knowledge"
+      },
+      {
+        "id": "o2",
+        "label": "reservations, concern"
+      },
+      {
+        "id": "o3",
+        "label": "to investigate, to look into"
+      }
+    ],
+    "correct": "o1",
+    "skill": "vocabulary",
+    "language": "de"
+  },
+  {
+    "id": "gen-de-5-6",
+    "band": 5,
+    "type": "multiple-choice",
+    "prompt": "What does «pädagogisch» mean?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "pedagogical"
+      },
+      {
+        "id": "o1",
+        "label": "reservations, concern"
+      },
+      {
+        "id": "o2",
+        "label": "to investigate, to look into"
+      },
+      {
+        "id": "o3",
+        "label": "emotional"
+      }
+    ],
+    "correct": "o0",
+    "skill": "vocabulary",
+    "language": "de"
+  },
+  {
+    "id": "gen-de-5-7",
+    "band": 5,
+    "type": "multiple-choice",
+    "prompt": "What does «künstliche Intelligenz» mean?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "to investigate, to look into"
+      },
+      {
+        "id": "o1",
+        "label": "emotional"
+      },
+      {
+        "id": "o2",
+        "label": "artificial intelligence"
+      },
+      {
+        "id": "o3",
+        "label": "reservations, concern"
+      }
+    ],
+    "correct": "o2",
+    "skill": "vocabulary",
+    "language": "de"
+  },
+  {
+    "id": "gen-de-5-8",
+    "band": 5,
+    "type": "multiple-choice",
+    "prompt": "What does «Erfindungsgeist» mean?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "reservations, concern"
+      },
+      {
+        "id": "o1",
+        "label": "to investigate, to look into"
+      },
+      {
+        "id": "o2",
+        "label": "emotional"
+      },
+      {
+        "id": "o3",
+        "label": "inventiveness, ingenuity"
+      }
+    ],
+    "correct": "o3",
+    "skill": "vocabulary",
+    "language": "de"
+  },
+  {
+    "id": "gen-de-5-9",
+    "band": 5,
+    "type": "multiple-choice",
+    "prompt": "What does «darlegen» mean?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "reservations, concern"
+      },
+      {
+        "id": "o1",
+        "label": "to investigate, to look into"
+      },
+      {
+        "id": "o2",
+        "label": "emotional"
+      },
+      {
+        "id": "o3",
+        "label": "to set out, to explain"
+      }
+    ],
+    "correct": "o3",
+    "skill": "vocabulary",
+    "language": "de"
+  },
+  {
+    "id": "gen-de-5-10",
+    "band": 5,
+    "type": "multiple-choice",
+    "prompt": "What does «vermitteln» mean?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "emotional"
+      },
+      {
+        "id": "o1",
+        "label": "to mediate, to convey"
+      },
+      {
+        "id": "o2",
+        "label": "reservations, concern"
+      },
+      {
+        "id": "o3",
+        "label": "to investigate, to look into"
+      }
+    ],
+    "correct": "o1",
+    "skill": "vocabulary",
+    "language": "de"
+  },
+  {
+    "id": "gen-de-6-1",
+    "band": 6,
+    "type": "multiple-choice",
+    "prompt": "What does «brenzlig» mean?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "to standardize, to unify"
+      },
+      {
+        "id": "o1",
+        "label": "many-faceted"
+      },
+      {
+        "id": "o2",
+        "label": "hairy, critical"
+      },
+      {
+        "id": "o3",
+        "label": "to die down, to abate"
+      }
+    ],
+    "correct": "o2",
+    "skill": "vocabulary",
+    "language": "de"
+  },
+  {
+    "id": "gen-de-6-2",
+    "band": 6,
+    "type": "multiple-choice",
+    "prompt": "What does «abflauen» mean?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "many-faceted"
+      },
+      {
+        "id": "o1",
+        "label": "to die down, to abate"
+      },
+      {
+        "id": "o2",
+        "label": "hairy, critical"
+      },
+      {
+        "id": "o3",
+        "label": "to standardize, to unify"
+      }
+    ],
+    "correct": "o1",
+    "skill": "vocabulary",
+    "language": "de"
+  },
+  {
+    "id": "gen-de-6-3",
+    "band": 6,
+    "type": "multiple-choice",
+    "prompt": "What does «vereinheitlichen» mean?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "hairy, critical"
+      },
+      {
+        "id": "o1",
+        "label": "to die down, to abate"
+      },
+      {
+        "id": "o2",
+        "label": "many-faceted"
+      },
+      {
+        "id": "o3",
+        "label": "to standardize, to unify"
+      }
+    ],
+    "correct": "o3",
+    "skill": "vocabulary",
+    "language": "de"
+  },
+  {
+    "id": "gen-de-6-4",
+    "band": 6,
+    "type": "multiple-choice",
+    "prompt": "What does «facettenreich» mean?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "many-faceted"
+      },
+      {
+        "id": "o1",
+        "label": "hairy, critical"
+      },
+      {
+        "id": "o2",
+        "label": "to die down, to abate"
+      },
+      {
+        "id": "o3",
+        "label": "to standardize, to unify"
+      }
+    ],
+    "correct": "o0",
+    "skill": "vocabulary",
+    "language": "de"
+  },
+  {
+    "id": "gen-de-6-5",
+    "band": 6,
+    "type": "multiple-choice",
+    "prompt": "What does «anspruchslos» mean?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "undemanding, modest"
+      },
+      {
+        "id": "o1",
+        "label": "hairy, critical"
+      },
+      {
+        "id": "o2",
+        "label": "to die down, to abate"
+      },
+      {
+        "id": "o3",
+        "label": "to standardize, to unify"
+      }
+    ],
+    "correct": "o0",
+    "skill": "vocabulary",
+    "language": "de"
+  },
+  {
+    "id": "gen-de-6-6",
+    "band": 6,
+    "type": "multiple-choice",
+    "prompt": "What does «raffiniert» mean?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "hairy, critical"
+      },
+      {
+        "id": "o1",
+        "label": "to die down, to abate"
+      },
+      {
+        "id": "o2",
+        "label": "to standardize, to unify"
+      },
+      {
+        "id": "o3",
+        "label": "sophisticated, cunning"
+      }
+    ],
+    "correct": "o3",
+    "skill": "vocabulary",
+    "language": "de"
+  },
+  {
+    "id": "gen-de-6-7",
+    "band": 6,
+    "type": "multiple-choice",
+    "prompt": "What does «bewirken» mean?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "to die down, to abate"
+      },
+      {
+        "id": "o1",
+        "label": "to standardize, to unify"
+      },
+      {
+        "id": "o2",
+        "label": "to bring about, to cause"
+      },
+      {
+        "id": "o3",
+        "label": "hairy, critical"
+      }
+    ],
+    "correct": "o2",
+    "skill": "vocabulary",
+    "language": "de"
+  },
+  {
+    "id": "gen-de-6-8",
+    "band": 6,
+    "type": "multiple-choice",
+    "prompt": "What does «kleinbürgerlich» mean?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "lower-middle-class"
+      },
+      {
+        "id": "o1",
+        "label": "hairy, critical"
+      },
+      {
+        "id": "o2",
+        "label": "to die down, to abate"
+      },
+      {
+        "id": "o3",
+        "label": "to standardize, to unify"
+      }
+    ],
+    "correct": "o0",
+    "skill": "vocabulary",
+    "language": "de"
+  },
+  {
+    "id": "gen-de-6-9",
+    "band": 6,
+    "type": "multiple-choice",
+    "prompt": "What does «verwirrt» mean?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "confused, bewildered"
+      },
+      {
+        "id": "o1",
+        "label": "hairy, critical"
+      },
+      {
+        "id": "o2",
+        "label": "to die down, to abate"
+      },
+      {
+        "id": "o3",
+        "label": "to standardize, to unify"
+      }
+    ],
+    "correct": "o0",
+    "skill": "vocabulary",
+    "language": "de"
+  },
+  {
+    "id": "gen-de-6-10",
+    "band": 6,
+    "type": "multiple-choice",
+    "prompt": "What does «geringfügig» mean?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "minor, negligible"
+      },
+      {
+        "id": "o1",
+        "label": "hairy, critical"
+      },
+      {
+        "id": "o2",
+        "label": "to die down, to abate"
+      },
+      {
+        "id": "o3",
+        "label": "to standardize, to unify"
+      }
+    ],
+    "correct": "o0",
+    "skill": "vocabulary",
+    "language": "de"
   }
 ]

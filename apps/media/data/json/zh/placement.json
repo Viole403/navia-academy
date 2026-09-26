@@ -746,5 +746,1625 @@
     "language": "zh",
     "prompt_en": "«宁可…也不…» expresses…",
     "prompt_id": "«宁可…也不…» menyatakan…"
+  },
+  {
+    "id": "gen-zh-1-1",
+    "band": 1,
+    "type": "multiple-choice",
+    "prompt": "What does «位» mean?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "half"
+      },
+      {
+        "id": "o1",
+        "label": "taxi; (Tw) rental car"
+      },
+      {
+        "id": "o2",
+        "label": "we, us"
+      },
+      {
+        "id": "o3",
+        "label": "classifier for people"
+      }
+    ],
+    "correct": "o3",
+    "skill": "vocabulary",
+    "language": "zh"
+  },
+  {
+    "id": "gen-zh-1-2",
+    "band": 1,
+    "type": "multiple-choice",
+    "prompt": "What does «半» mean?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "taxi; (Tw) rental car"
+      },
+      {
+        "id": "o1",
+        "label": "we, us"
+      },
+      {
+        "id": "o2",
+        "label": "half"
+      },
+      {
+        "id": "o3",
+        "label": "classifier for people"
+      }
+    ],
+    "correct": "o2",
+    "skill": "vocabulary",
+    "language": "zh"
+  },
+  {
+    "id": "gen-zh-1-3",
+    "band": 1,
+    "type": "multiple-choice",
+    "prompt": "What does «出租车» mean?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "classifier for people"
+      },
+      {
+        "id": "o1",
+        "label": "half"
+      },
+      {
+        "id": "o2",
+        "label": "we, us"
+      },
+      {
+        "id": "o3",
+        "label": "taxi; (Tw) rental car"
+      }
+    ],
+    "correct": "o3",
+    "skill": "vocabulary",
+    "language": "zh"
+  },
+  {
+    "id": "gen-zh-1-4",
+    "band": 1,
+    "type": "multiple-choice",
+    "prompt": "What does «我们» mean?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "we, us"
+      },
+      {
+        "id": "o1",
+        "label": "classifier for people"
+      },
+      {
+        "id": "o2",
+        "label": "half"
+      },
+      {
+        "id": "o3",
+        "label": "taxi; (Tw) rental car"
+      }
+    ],
+    "correct": "o0",
+    "skill": "vocabulary",
+    "language": "zh"
+  },
+  {
+    "id": "gen-zh-1-5",
+    "band": 1,
+    "type": "multiple-choice",
+    "prompt": "What does «星期日» mean?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "half"
+      },
+      {
+        "id": "o1",
+        "label": "taxi; (Tw) rental car"
+      },
+      {
+        "id": "o2",
+        "label": "Sunday"
+      },
+      {
+        "id": "o3",
+        "label": "classifier for people"
+      }
+    ],
+    "correct": "o2",
+    "skill": "vocabulary",
+    "language": "zh"
+  },
+  {
+    "id": "gen-zh-1-6",
+    "band": 1,
+    "type": "multiple-choice",
+    "prompt": "What does «做» mean?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "taxi; (Tw) rental car"
+      },
+      {
+        "id": "o1",
+        "label": "to do, to make"
+      },
+      {
+        "id": "o2",
+        "label": "classifier for people"
+      },
+      {
+        "id": "o3",
+        "label": "half"
+      }
+    ],
+    "correct": "o1",
+    "skill": "vocabulary",
+    "language": "zh"
+  },
+  {
+    "id": "gen-zh-1-7",
+    "band": 1,
+    "type": "multiple-choice",
+    "prompt": "What does «中学» mean?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "taxi; (Tw) rental car"
+      },
+      {
+        "id": "o1",
+        "label": "middle school"
+      },
+      {
+        "id": "o2",
+        "label": "classifier for people"
+      },
+      {
+        "id": "o3",
+        "label": "half"
+      }
+    ],
+    "correct": "o1",
+    "skill": "vocabulary",
+    "language": "zh"
+  },
+  {
+    "id": "gen-zh-1-8",
+    "band": 1,
+    "type": "multiple-choice",
+    "prompt": "What does «公車» mean?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "taxi; (Tw) rental car"
+      },
+      {
+        "id": "o1",
+        "label": "local bus, bus"
+      },
+      {
+        "id": "o2",
+        "label": "classifier for people"
+      },
+      {
+        "id": "o3",
+        "label": "half"
+      }
+    ],
+    "correct": "o1",
+    "skill": "vocabulary",
+    "language": "zh"
+  },
+  {
+    "id": "gen-zh-2-1",
+    "band": 2,
+    "type": "multiple-choice",
+    "prompt": "What does «着» mean?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "taxi"
+      },
+      {
+        "id": "o1",
+        "label": "particle (experience)"
+      },
+      {
+        "id": "o2",
+        "label": "can, know how to / will"
+      },
+      {
+        "id": "o3",
+        "label": "particle (ongoing state)"
+      }
+    ],
+    "correct": "o3",
+    "skill": "vocabulary",
+    "language": "zh"
+  },
+  {
+    "id": "gen-zh-2-2",
+    "band": 2,
+    "type": "multiple-choice",
+    "prompt": "What does «計程車» mean?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "particle (ongoing state)"
+      },
+      {
+        "id": "o1",
+        "label": "particle (experience)"
+      },
+      {
+        "id": "o2",
+        "label": "can, know how to / will"
+      },
+      {
+        "id": "o3",
+        "label": "taxi"
+      }
+    ],
+    "correct": "o3",
+    "skill": "vocabulary",
+    "language": "zh"
+  },
+  {
+    "id": "gen-zh-2-3",
+    "band": 2,
+    "type": "multiple-choice",
+    "prompt": "What does «过» mean?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "particle (ongoing state)"
+      },
+      {
+        "id": "o1",
+        "label": "taxi"
+      },
+      {
+        "id": "o2",
+        "label": "can, know how to / will"
+      },
+      {
+        "id": "o3",
+        "label": "particle (experience)"
+      }
+    ],
+    "correct": "o3",
+    "skill": "vocabulary",
+    "language": "zh"
+  },
+  {
+    "id": "gen-zh-2-4",
+    "band": 2,
+    "type": "multiple-choice",
+    "prompt": "What does «會» mean?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "particle (ongoing state)"
+      },
+      {
+        "id": "o1",
+        "label": "taxi"
+      },
+      {
+        "id": "o2",
+        "label": "particle (experience)"
+      },
+      {
+        "id": "o3",
+        "label": "can, know how to / will"
+      }
+    ],
+    "correct": "o3",
+    "skill": "vocabulary",
+    "language": "zh"
+  },
+  {
+    "id": "gen-zh-2-5",
+    "band": 2,
+    "type": "multiple-choice",
+    "prompt": "What does «包子» mean?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "steamed stuffed bun"
+      },
+      {
+        "id": "o1",
+        "label": "particle (ongoing state)"
+      },
+      {
+        "id": "o2",
+        "label": "taxi"
+      },
+      {
+        "id": "o3",
+        "label": "particle (experience)"
+      }
+    ],
+    "correct": "o0",
+    "skill": "vocabulary",
+    "language": "zh"
+  },
+  {
+    "id": "gen-zh-2-6",
+    "band": 2,
+    "type": "multiple-choice",
+    "prompt": "What does «绿色» mean?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "particle (ongoing state)"
+      },
+      {
+        "id": "o1",
+        "label": "taxi"
+      },
+      {
+        "id": "o2",
+        "label": "particle (experience)"
+      },
+      {
+        "id": "o3",
+        "label": "green"
+      }
+    ],
+    "correct": "o3",
+    "skill": "vocabulary",
+    "language": "zh"
+  },
+  {
+    "id": "gen-zh-2-7",
+    "band": 2,
+    "type": "multiple-choice",
+    "prompt": "What does «出门» mean?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "particle (experience)"
+      },
+      {
+        "id": "o1",
+        "label": "to go out; to leave home; to go on a journey; away from home; (of a woman) to get married"
+      },
+      {
+        "id": "o2",
+        "label": "particle (ongoing state)"
+      },
+      {
+        "id": "o3",
+        "label": "taxi"
+      }
+    ],
+    "correct": "o1",
+    "skill": "vocabulary",
+    "language": "zh"
+  },
+  {
+    "id": "gen-zh-3-1",
+    "band": 3,
+    "type": "multiple-choice",
+    "prompt": "What does «自行车» mean?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "maternal aunt; step-mother; childcare worker; nursemaid; woman of similar age to one's parents (term of address used by child); CL:個|个[ge4]"
+      },
+      {
+        "id": "o1",
+        "label": "but, however"
+      },
+      {
+        "id": "o2",
+        "label": "thin; to lose weight; (of clothing) tight; (of meat) lean; (of land) unproductive"
+      },
+      {
+        "id": "o3",
+        "label": "bicycle; bike; CL:輛|辆[liang4]"
+      }
+    ],
+    "correct": "o3",
+    "skill": "vocabulary",
+    "language": "zh"
+  },
+  {
+    "id": "gen-zh-3-2",
+    "band": 3,
+    "type": "multiple-choice",
+    "prompt": "What does «阿姨» mean?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "maternal aunt; step-mother; childcare worker; nursemaid; woman of similar age to one's parents (term of address used by child); CL:個|个[ge4]"
+      },
+      {
+        "id": "o1",
+        "label": "bicycle; bike; CL:輛|辆[liang4]"
+      },
+      {
+        "id": "o2",
+        "label": "but, however"
+      },
+      {
+        "id": "o3",
+        "label": "thin; to lose weight; (of clothing) tight; (of meat) lean; (of land) unproductive"
+      }
+    ],
+    "correct": "o0",
+    "skill": "vocabulary",
+    "language": "zh"
+  },
+  {
+    "id": "gen-zh-3-3",
+    "band": 3,
+    "type": "multiple-choice",
+    "prompt": "What does «不過» mean?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "maternal aunt; step-mother; childcare worker; nursemaid; woman of similar age to one's parents (term of address used by child); CL:個|个[ge4]"
+      },
+      {
+        "id": "o1",
+        "label": "thin; to lose weight; (of clothing) tight; (of meat) lean; (of land) unproductive"
+      },
+      {
+        "id": "o2",
+        "label": "but, however"
+      },
+      {
+        "id": "o3",
+        "label": "bicycle; bike; CL:輛|辆[liang4]"
+      }
+    ],
+    "correct": "o2",
+    "skill": "vocabulary",
+    "language": "zh"
+  },
+  {
+    "id": "gen-zh-3-4",
+    "band": 3,
+    "type": "multiple-choice",
+    "prompt": "What does «瘦» mean?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "thin; to lose weight; (of clothing) tight; (of meat) lean; (of land) unproductive"
+      },
+      {
+        "id": "o1",
+        "label": "bicycle; bike; CL:輛|辆[liang4]"
+      },
+      {
+        "id": "o2",
+        "label": "maternal aunt; step-mother; childcare worker; nursemaid; woman of similar age to one's parents (term of address used by child); CL:個|个[ge4]"
+      },
+      {
+        "id": "o3",
+        "label": "but, however"
+      }
+    ],
+    "correct": "o0",
+    "skill": "vocabulary",
+    "language": "zh"
+  },
+  {
+    "id": "gen-zh-3-5",
+    "band": 3,
+    "type": "multiple-choice",
+    "prompt": "What does «冬天» mean?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "maternal aunt; step-mother; childcare worker; nursemaid; woman of similar age to one's parents (term of address used by child); CL:個|个[ge4]"
+      },
+      {
+        "id": "o1",
+        "label": "but, however"
+      },
+      {
+        "id": "o2",
+        "label": "winter; CL:個|个[ge4]"
+      },
+      {
+        "id": "o3",
+        "label": "bicycle; bike; CL:輛|辆[liang4]"
+      }
+    ],
+    "correct": "o2",
+    "skill": "vocabulary",
+    "language": "zh"
+  },
+  {
+    "id": "gen-zh-3-6",
+    "band": 3,
+    "type": "multiple-choice",
+    "prompt": "What does «答» mean?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "but, however"
+      },
+      {
+        "id": "o1",
+        "label": "bound form having the same meaning as the free word 答[da2], used in 答應|答应[da1 ying5], 答理[da1 li5] etc"
+      },
+      {
+        "id": "o2",
+        "label": "bicycle; bike; CL:輛|辆[liang4]"
+      },
+      {
+        "id": "o3",
+        "label": "maternal aunt; step-mother; childcare worker; nursemaid; woman of similar age to one's parents (term of address used by child); CL:個|个[ge4]"
+      }
+    ],
+    "correct": "o1",
+    "skill": "vocabulary",
+    "language": "zh"
+  },
+  {
+    "id": "gen-zh-3-7",
+    "band": 3,
+    "type": "multiple-choice",
+    "prompt": "What does «工人» mean?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "maternal aunt; step-mother; childcare worker; nursemaid; woman of similar age to one's parents (term of address used by child); CL:個|个[ge4]"
+      },
+      {
+        "id": "o1",
+        "label": "but, however"
+      },
+      {
+        "id": "o2",
+        "label": "worker"
+      },
+      {
+        "id": "o3",
+        "label": "bicycle; bike; CL:輛|辆[liang4]"
+      }
+    ],
+    "correct": "o2",
+    "skill": "vocabulary",
+    "language": "zh"
+  },
+  {
+    "id": "gen-zh-4-1",
+    "band": 4,
+    "type": "multiple-choice",
+    "prompt": "What does «陪» mean?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "to repair; to fix; to prune; to trim; (coll.) to sort sb out; to fix sb"
+      },
+      {
+        "id": "o1",
+        "label": "to repeat; repetition; again; re-; classifier: layer"
+      },
+      {
+        "id": "o2",
+        "label": "to fry"
+      },
+      {
+        "id": "o3",
+        "label": "to accompany; to keep sb company; to assist; old variant of 賠|赔[pei2]"
+      }
+    ],
+    "correct": "o3",
+    "skill": "vocabulary",
+    "language": "zh"
+  },
+  {
+    "id": "gen-zh-4-2",
+    "band": 4,
+    "type": "multiple-choice",
+    "prompt": "What does «修理» mean?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "to fry"
+      },
+      {
+        "id": "o1",
+        "label": "to repair; to fix; to prune; to trim; (coll.) to sort sb out; to fix sb"
+      },
+      {
+        "id": "o2",
+        "label": "to accompany; to keep sb company; to assist; old variant of 賠|赔[pei2]"
+      },
+      {
+        "id": "o3",
+        "label": "to repeat; repetition; again; re-; classifier: layer"
+      }
+    ],
+    "correct": "o1",
+    "skill": "vocabulary",
+    "language": "zh"
+  },
+  {
+    "id": "gen-zh-4-3",
+    "band": 4,
+    "type": "multiple-choice",
+    "prompt": "What does «重» mean?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "to repair; to fix; to prune; to trim; (coll.) to sort sb out; to fix sb"
+      },
+      {
+        "id": "o1",
+        "label": "to fry"
+      },
+      {
+        "id": "o2",
+        "label": "to repeat; repetition; again; re-; classifier: layer"
+      },
+      {
+        "id": "o3",
+        "label": "to accompany; to keep sb company; to assist; old variant of 賠|赔[pei2]"
+      }
+    ],
+    "correct": "o2",
+    "skill": "vocabulary",
+    "language": "zh"
+  },
+  {
+    "id": "gen-zh-4-4",
+    "band": 4,
+    "type": "multiple-choice",
+    "prompt": "What does «炒» mean?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "to repair; to fix; to prune; to trim; (coll.) to sort sb out; to fix sb"
+      },
+      {
+        "id": "o1",
+        "label": "to repeat; repetition; again; re-; classifier: layer"
+      },
+      {
+        "id": "o2",
+        "label": "to fry"
+      },
+      {
+        "id": "o3",
+        "label": "to accompany; to keep sb company; to assist; old variant of 賠|赔[pei2]"
+      }
+    ],
+    "correct": "o2",
+    "skill": "vocabulary",
+    "language": "zh"
+  },
+  {
+    "id": "gen-zh-4-5",
+    "band": 4,
+    "type": "multiple-choice",
+    "prompt": "What does «室友» mean?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "to repair; to fix; to prune; to trim; (coll.) to sort sb out; to fix sb"
+      },
+      {
+        "id": "o1",
+        "label": "to repeat; repetition; again; re-; classifier: layer"
+      },
+      {
+        "id": "o2",
+        "label": "roommate"
+      },
+      {
+        "id": "o3",
+        "label": "to accompany; to keep sb company; to assist; old variant of 賠|赔[pei2]"
+      }
+    ],
+    "correct": "o2",
+    "skill": "vocabulary",
+    "language": "zh"
+  },
+  {
+    "id": "gen-zh-4-6",
+    "band": 4,
+    "type": "multiple-choice",
+    "prompt": "What does «箱子» mean?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "to accompany; to keep sb company; to assist; old variant of 賠|赔[pei2]"
+      },
+      {
+        "id": "o1",
+        "label": "to repair; to fix; to prune; to trim; (coll.) to sort sb out; to fix sb"
+      },
+      {
+        "id": "o2",
+        "label": "to repeat; repetition; again; re-; classifier: layer"
+      },
+      {
+        "id": "o3",
+        "label": "suitcase; chest; box; case; trunk; CL:隻|只[zhi1],個|个[ge4]"
+      }
+    ],
+    "correct": "o3",
+    "skill": "vocabulary",
+    "language": "zh"
+  },
+  {
+    "id": "gen-zh-4-7",
+    "band": 4,
+    "type": "multiple-choice",
+    "prompt": "What does «搬家» mean?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "to move house, to relocate"
+      },
+      {
+        "id": "o1",
+        "label": "to accompany; to keep sb company; to assist; old variant of 賠|赔[pei2]"
+      },
+      {
+        "id": "o2",
+        "label": "to repair; to fix; to prune; to trim; (coll.) to sort sb out; to fix sb"
+      },
+      {
+        "id": "o3",
+        "label": "to repeat; repetition; again; re-; classifier: layer"
+      }
+    ],
+    "correct": "o0",
+    "skill": "vocabulary",
+    "language": "zh"
+  },
+  {
+    "id": "gen-zh-4-8",
+    "band": 4,
+    "type": "multiple-choice",
+    "prompt": "What does «黑色» mean?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "to repeat; repetition; again; re-; classifier: layer"
+      },
+      {
+        "id": "o1",
+        "label": "black"
+      },
+      {
+        "id": "o2",
+        "label": "to accompany; to keep sb company; to assist; old variant of 賠|赔[pei2]"
+      },
+      {
+        "id": "o3",
+        "label": "to repair; to fix; to prune; to trim; (coll.) to sort sb out; to fix sb"
+      }
+    ],
+    "correct": "o1",
+    "skill": "vocabulary",
+    "language": "zh"
+  },
+  {
+    "id": "gen-zh-5-1",
+    "band": 5,
+    "type": "multiple-choice",
+    "prompt": "What does «煩惱» mean?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "quiet; peaceful; calm"
+      },
+      {
+        "id": "o1",
+        "label": "to be worried; to be distressed; worries"
+      },
+      {
+        "id": "o2",
+        "label": "mouse"
+      },
+      {
+        "id": "o3",
+        "label": "to comprehend; to understand"
+      }
+    ],
+    "correct": "o1",
+    "skill": "vocabulary",
+    "language": "zh"
+  },
+  {
+    "id": "gen-zh-5-2",
+    "band": 5,
+    "type": "multiple-choice",
+    "prompt": "What does «鼠标» mean?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "mouse"
+      },
+      {
+        "id": "o1",
+        "label": "to be worried; to be distressed; worries"
+      },
+      {
+        "id": "o2",
+        "label": "to comprehend; to understand"
+      },
+      {
+        "id": "o3",
+        "label": "quiet; peaceful; calm"
+      }
+    ],
+    "correct": "o0",
+    "skill": "vocabulary",
+    "language": "zh"
+  },
+  {
+    "id": "gen-zh-5-3",
+    "band": 5,
+    "type": "multiple-choice",
+    "prompt": "What does «理解» mean?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "quiet; peaceful; calm"
+      },
+      {
+        "id": "o1",
+        "label": "to comprehend; to understand"
+      },
+      {
+        "id": "o2",
+        "label": "to be worried; to be distressed; worries"
+      },
+      {
+        "id": "o3",
+        "label": "mouse"
+      }
+    ],
+    "correct": "o1",
+    "skill": "vocabulary",
+    "language": "zh"
+  },
+  {
+    "id": "gen-zh-5-4",
+    "band": 5,
+    "type": "multiple-choice",
+    "prompt": "What does «安靜» mean?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "to comprehend; to understand"
+      },
+      {
+        "id": "o1",
+        "label": "quiet; peaceful; calm"
+      },
+      {
+        "id": "o2",
+        "label": "to be worried; to be distressed; worries"
+      },
+      {
+        "id": "o3",
+        "label": "mouse"
+      }
+    ],
+    "correct": "o1",
+    "skill": "vocabulary",
+    "language": "zh"
+  },
+  {
+    "id": "gen-zh-5-5",
+    "band": 5,
+    "type": "multiple-choice",
+    "prompt": "What does «全球» mean?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "the whole world; worldwide; global"
+      },
+      {
+        "id": "o1",
+        "label": "to be worried; to be distressed; worries"
+      },
+      {
+        "id": "o2",
+        "label": "mouse"
+      },
+      {
+        "id": "o3",
+        "label": "to comprehend; to understand"
+      }
+    ],
+    "correct": "o0",
+    "skill": "vocabulary",
+    "language": "zh"
+  },
+  {
+    "id": "gen-zh-5-6",
+    "band": 5,
+    "type": "multiple-choice",
+    "prompt": "What does «錄» mean?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "to be worried; to be distressed; worries"
+      },
+      {
+        "id": "o1",
+        "label": "mouse"
+      },
+      {
+        "id": "o2",
+        "label": "to comprehend; to understand"
+      },
+      {
+        "id": "o3",
+        "label": "to carve wood; diary; record; to hit; to copy"
+      }
+    ],
+    "correct": "o3",
+    "skill": "vocabulary",
+    "language": "zh"
+  },
+  {
+    "id": "gen-zh-5-7",
+    "band": 5,
+    "type": "multiple-choice",
+    "prompt": "What does «忽» mean?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "to be worried; to be distressed; worries"
+      },
+      {
+        "id": "o1",
+        "label": "mouse"
+      },
+      {
+        "id": "o2",
+        "label": "to comprehend; to understand"
+      },
+      {
+        "id": "o3",
+        "label": "surname Hu"
+      }
+    ],
+    "correct": "o3",
+    "skill": "vocabulary",
+    "language": "zh"
+  },
+  {
+    "id": "gen-zh-5-8",
+    "band": 5,
+    "type": "multiple-choice",
+    "prompt": "What does «醋» mean?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "mouse"
+      },
+      {
+        "id": "o1",
+        "label": "to comprehend; to understand"
+      },
+      {
+        "id": "o2",
+        "label": "vinegar; jealousy (in love rivalry)"
+      },
+      {
+        "id": "o3",
+        "label": "to be worried; to be distressed; worries"
+      }
+    ],
+    "correct": "o2",
+    "skill": "vocabulary",
+    "language": "zh"
+  },
+  {
+    "id": "gen-zh-5-9",
+    "band": 5,
+    "type": "multiple-choice",
+    "prompt": "What does «平» mean?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "surname Ping"
+      },
+      {
+        "id": "o1",
+        "label": "to be worried; to be distressed; worries"
+      },
+      {
+        "id": "o2",
+        "label": "mouse"
+      },
+      {
+        "id": "o3",
+        "label": "to comprehend; to understand"
+      }
+    ],
+    "correct": "o0",
+    "skill": "vocabulary",
+    "language": "zh"
+  },
+  {
+    "id": "gen-zh-6-1",
+    "band": 6,
+    "type": "multiple-choice",
+    "prompt": "What does «尴尬» mean?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "in advance; before the event; beforehand; prior"
+      },
+      {
+        "id": "o1",
+        "label": "earth, land"
+      },
+      {
+        "id": "o2",
+        "label": "opposite bank (of a body of water)"
+      },
+      {
+        "id": "o3",
+        "label": "embarrassed, awkward"
+      }
+    ],
+    "correct": "o3",
+    "skill": "vocabulary",
+    "language": "zh"
+  },
+  {
+    "id": "gen-zh-6-2",
+    "band": 6,
+    "type": "multiple-choice",
+    "prompt": "What does «事先» mean?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "embarrassed, awkward"
+      },
+      {
+        "id": "o1",
+        "label": "earth, land"
+      },
+      {
+        "id": "o2",
+        "label": "opposite bank (of a body of water)"
+      },
+      {
+        "id": "o3",
+        "label": "in advance; before the event; beforehand; prior"
+      }
+    ],
+    "correct": "o3",
+    "skill": "vocabulary",
+    "language": "zh"
+  },
+  {
+    "id": "gen-zh-6-3",
+    "band": 6,
+    "type": "multiple-choice",
+    "prompt": "What does «大地» mean?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "embarrassed, awkward"
+      },
+      {
+        "id": "o1",
+        "label": "in advance; before the event; beforehand; prior"
+      },
+      {
+        "id": "o2",
+        "label": "opposite bank (of a body of water)"
+      },
+      {
+        "id": "o3",
+        "label": "earth, land"
+      }
+    ],
+    "correct": "o3",
+    "skill": "vocabulary",
+    "language": "zh"
+  },
+  {
+    "id": "gen-zh-6-4",
+    "band": 6,
+    "type": "multiple-choice",
+    "prompt": "What does «對岸» mean?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "embarrassed, awkward"
+      },
+      {
+        "id": "o1",
+        "label": "in advance; before the event; beforehand; prior"
+      },
+      {
+        "id": "o2",
+        "label": "earth, land"
+      },
+      {
+        "id": "o3",
+        "label": "opposite bank (of a body of water)"
+      }
+    ],
+    "correct": "o3",
+    "skill": "vocabulary",
+    "language": "zh"
+  },
+  {
+    "id": "gen-zh-6-5",
+    "band": 6,
+    "type": "multiple-choice",
+    "prompt": "What does «伊斯蘭教» mean?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "earth, land"
+      },
+      {
+        "id": "o1",
+        "label": "Islam"
+      },
+      {
+        "id": "o2",
+        "label": "embarrassed, awkward"
+      },
+      {
+        "id": "o3",
+        "label": "in advance; before the event; beforehand; prior"
+      }
+    ],
+    "correct": "o1",
+    "skill": "vocabulary",
+    "language": "zh"
+  },
+  {
+    "id": "gen-zh-6-6",
+    "band": 6,
+    "type": "multiple-choice",
+    "prompt": "What does «撲滅» mean?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "earth, land"
+      },
+      {
+        "id": "o1",
+        "label": "to eradicate; to extinguish"
+      },
+      {
+        "id": "o2",
+        "label": "embarrassed, awkward"
+      },
+      {
+        "id": "o3",
+        "label": "in advance; before the event; beforehand; prior"
+      }
+    ],
+    "correct": "o1",
+    "skill": "vocabulary",
+    "language": "zh"
+  },
+  {
+    "id": "gen-zh-6-7",
+    "band": 6,
+    "type": "multiple-choice",
+    "prompt": "What does «闯» mean?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "earth, land"
+      },
+      {
+        "id": "o1",
+        "label": "to rush, to break in"
+      },
+      {
+        "id": "o2",
+        "label": "embarrassed, awkward"
+      },
+      {
+        "id": "o3",
+        "label": "in advance; before the event; beforehand; prior"
+      }
+    ],
+    "correct": "o1",
+    "skill": "vocabulary",
+    "language": "zh"
+  },
+  {
+    "id": "gen-zh-6-8",
+    "band": 6,
+    "type": "multiple-choice",
+    "prompt": "What does «形态» mean?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "embarrassed, awkward"
+      },
+      {
+        "id": "o1",
+        "label": "in advance; before the event; beforehand; prior"
+      },
+      {
+        "id": "o2",
+        "label": "earth, land"
+      },
+      {
+        "id": "o3",
+        "label": "form, shape"
+      }
+    ],
+    "correct": "o3",
+    "skill": "vocabulary",
+    "language": "zh"
+  },
+  {
+    "id": "gen-zh-6-9",
+    "band": 6,
+    "type": "multiple-choice",
+    "prompt": "What does «从未» mean?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "earth, land"
+      },
+      {
+        "id": "o1",
+        "label": "never, ever"
+      },
+      {
+        "id": "o2",
+        "label": "embarrassed, awkward"
+      },
+      {
+        "id": "o3",
+        "label": "in advance; before the event; beforehand; prior"
+      }
+    ],
+    "correct": "o1",
+    "skill": "vocabulary",
+    "language": "zh"
+  },
+  {
+    "id": "gen-zh-7-1",
+    "band": 7,
+    "type": "multiple-choice",
+    "prompt": "What does «主導» mean?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "must; have to; be bound to"
+      },
+      {
+        "id": "o1",
+        "label": "leading; dominant; prevailing; to lead; to direct; to dominate"
+      },
+      {
+        "id": "o2",
+        "label": "to surrender; to succumb; to yield; (as a transitive verb) to defeat; to prevail over"
+      },
+      {
+        "id": "o3",
+        "label": "spotlessly white; pure white"
+      }
+    ],
+    "correct": "o1",
+    "skill": "vocabulary",
+    "language": "zh"
+  },
+  {
+    "id": "gen-zh-7-2",
+    "band": 7,
+    "type": "multiple-choice",
+    "prompt": "What does «屈服» mean?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "must; have to; be bound to"
+      },
+      {
+        "id": "o1",
+        "label": "to surrender; to succumb; to yield; (as a transitive verb) to defeat; to prevail over"
+      },
+      {
+        "id": "o2",
+        "label": "leading; dominant; prevailing; to lead; to direct; to dominate"
+      },
+      {
+        "id": "o3",
+        "label": "spotlessly white; pure white"
+      }
+    ],
+    "correct": "o1",
+    "skill": "vocabulary",
+    "language": "zh"
+  },
+  {
+    "id": "gen-zh-7-3",
+    "band": 7,
+    "type": "multiple-choice",
+    "prompt": "What does «潔白» mean?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "spotlessly white; pure white"
+      },
+      {
+        "id": "o1",
+        "label": "leading; dominant; prevailing; to lead; to direct; to dominate"
+      },
+      {
+        "id": "o2",
+        "label": "to surrender; to succumb; to yield; (as a transitive verb) to defeat; to prevail over"
+      },
+      {
+        "id": "o3",
+        "label": "must; have to; be bound to"
+      }
+    ],
+    "correct": "o0",
+    "skill": "vocabulary",
+    "language": "zh"
+  },
+  {
+    "id": "gen-zh-7-4",
+    "band": 7,
+    "type": "multiple-choice",
+    "prompt": "What does «總得» mean?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "to surrender; to succumb; to yield; (as a transitive verb) to defeat; to prevail over"
+      },
+      {
+        "id": "o1",
+        "label": "spotlessly white; pure white"
+      },
+      {
+        "id": "o2",
+        "label": "must; have to; be bound to"
+      },
+      {
+        "id": "o3",
+        "label": "leading; dominant; prevailing; to lead; to direct; to dominate"
+      }
+    ],
+    "correct": "o2",
+    "skill": "vocabulary",
+    "language": "zh"
+  },
+  {
+    "id": "gen-zh-7-5",
+    "band": 7,
+    "type": "multiple-choice",
+    "prompt": "What does «原型» mean?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "prototype; archetype"
+      },
+      {
+        "id": "o1",
+        "label": "leading; dominant; prevailing; to lead; to direct; to dominate"
+      },
+      {
+        "id": "o2",
+        "label": "to surrender; to succumb; to yield; (as a transitive verb) to defeat; to prevail over"
+      },
+      {
+        "id": "o3",
+        "label": "spotlessly white; pure white"
+      }
+    ],
+    "correct": "o0",
+    "skill": "vocabulary",
+    "language": "zh"
+  },
+  {
+    "id": "gen-zh-7-6",
+    "band": 7,
+    "type": "multiple-choice",
+    "prompt": "What does «總和» mean?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "spotlessly white; pure white"
+      },
+      {
+        "id": "o1",
+        "label": "sum"
+      },
+      {
+        "id": "o2",
+        "label": "leading; dominant; prevailing; to lead; to direct; to dominate"
+      },
+      {
+        "id": "o3",
+        "label": "to surrender; to succumb; to yield; (as a transitive verb) to defeat; to prevail over"
+      }
+    ],
+    "correct": "o1",
+    "skill": "vocabulary",
+    "language": "zh"
+  },
+  {
+    "id": "gen-zh-7-7",
+    "band": 7,
+    "type": "multiple-choice",
+    "prompt": "What does «切记» mean?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "spotlessly white; pure white"
+      },
+      {
+        "id": "o1",
+        "label": "to remember firmly; to keep in mind"
+      },
+      {
+        "id": "o2",
+        "label": "leading; dominant; prevailing; to lead; to direct; to dominate"
+      },
+      {
+        "id": "o3",
+        "label": "to surrender; to succumb; to yield; (as a transitive verb) to defeat; to prevail over"
+      }
+    ],
+    "correct": "o1",
+    "skill": "vocabulary",
+    "language": "zh"
+  },
+  {
+    "id": "gen-zh-7-8",
+    "band": 7,
+    "type": "multiple-choice",
+    "prompt": "What does «偏见» mean?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "spotlessly white; pure white"
+      },
+      {
+        "id": "o1",
+        "label": "prejudice; bias"
+      },
+      {
+        "id": "o2",
+        "label": "leading; dominant; prevailing; to lead; to direct; to dominate"
+      },
+      {
+        "id": "o3",
+        "label": "to surrender; to succumb; to yield; (as a transitive verb) to defeat; to prevail over"
+      }
+    ],
+    "correct": "o1",
+    "skill": "vocabulary",
+    "language": "zh"
+  },
+  {
+    "id": "gen-zh-7-9",
+    "band": 7,
+    "type": "multiple-choice",
+    "prompt": "What does «注重» mean?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "spotlessly white; pure white"
+      },
+      {
+        "id": "o1",
+        "label": "to pay attention to; to emphasize"
+      },
+      {
+        "id": "o2",
+        "label": "leading; dominant; prevailing; to lead; to direct; to dominate"
+      },
+      {
+        "id": "o3",
+        "label": "to surrender; to succumb; to yield; (as a transitive verb) to defeat; to prevail over"
+      }
+    ],
+    "correct": "o1",
+    "skill": "vocabulary",
+    "language": "zh"
+  },
+  {
+    "id": "gen-zh-7-10",
+    "band": 7,
+    "type": "multiple-choice",
+    "prompt": "What does «揪» mean?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "to seize; to clutch; to grab firmly and pull"
+      },
+      {
+        "id": "o1",
+        "label": "leading; dominant; prevailing; to lead; to direct; to dominate"
+      },
+      {
+        "id": "o2",
+        "label": "to surrender; to succumb; to yield; (as a transitive verb) to defeat; to prevail over"
+      },
+      {
+        "id": "o3",
+        "label": "spotlessly white; pure white"
+      }
+    ],
+    "correct": "o0",
+    "skill": "vocabulary",
+    "language": "zh"
+  },
+  {
+    "id": "gen-zh-7-11",
+    "band": 7,
+    "type": "multiple-choice",
+    "prompt": "What does «雪山» mean?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "leading; dominant; prevailing; to lead; to direct; to dominate"
+      },
+      {
+        "id": "o1",
+        "label": "to surrender; to succumb; to yield; (as a transitive verb) to defeat; to prevail over"
+      },
+      {
+        "id": "o2",
+        "label": "spotlessly white; pure white"
+      },
+      {
+        "id": "o3",
+        "label": "snow-covered mountain"
+      }
+    ],
+    "correct": "o3",
+    "skill": "vocabulary",
+    "language": "zh"
+  },
+  {
+    "id": "gen-zh-7-12",
+    "band": 7,
+    "type": "multiple-choice",
+    "prompt": "What does «勸告» mean?",
+    "options": [
+      {
+        "id": "o0",
+        "label": "to surrender; to succumb; to yield; (as a transitive verb) to defeat; to prevail over"
+      },
+      {
+        "id": "o1",
+        "label": "spotlessly white; pure white"
+      },
+      {
+        "id": "o2",
+        "label": "to advise; to urge; to exhort; exhortation; advice; CL:席[xi2]"
+      },
+      {
+        "id": "o3",
+        "label": "leading; dominant; prevailing; to lead; to direct; to dominate"
+      }
+    ],
+    "correct": "o2",
+    "skill": "vocabulary",
+    "language": "zh"
   }
 ]
