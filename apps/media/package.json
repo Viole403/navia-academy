@@ -8,6 +8,7 @@
     "start": "next start -p 3002",
     "lint": "eslint",
     "generate-manifest": "tsx --env-file-if-exists=.env scripts/generate-manifest.ts",
+    "generate-pronunciation": "tsx --env-file-if-exists=.env scripts/generate-pronunciation-exams.ts",
     "dedupe-ids": "tsx --env-file-if-exists=.env scripts/dedupe-ids.mts",
     "check-dedup": "tsx --env-file-if-exists=.env scripts/check-dedup.mts",
     "backfill-exam-mappings": "tsx --env-file-if-exists=.env scripts/backfill-exam-mappings.mts",

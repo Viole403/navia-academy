@@ -1,0 +1,737 @@
+[
+  {
+    "id": "a-pron-hsk5",
+    "title": "Pronunciation · HSK 5",
+    "description": "Match each character to its reading. 24 questions.",
+    "description_en": "Match each character to its reading. 24 questions.",
+    "kind": "vocabulary",
+    "level": "5",
+    "examMappings": {
+      "hsk": "5"
+    },
+    "durationMin": 12,
+    "passScore": 70,
+    "exercises": [
+      {
+        "id": "ap5-1",
+        "type": "multiple-choice",
+        "prompt": "How is «煩惱» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "quánqiú"
+          },
+          {
+            "id": "o1",
+            "label": "fánnǎo"
+          },
+          {
+            "id": "o2",
+            "label": "lǐjiě"
+          },
+          {
+            "id": "o3",
+            "label": "ānjìng"
+          }
+        ],
+        "correct": "o1",
+        "skill": "pronunciation",
+        "target": "煩惱",
+        "pinyin": "fánnǎo",
+        "zhuyin": "ㄈㄢˊ ㄋㄠˇ",
+        "audioText": "煩惱",
+        "explanation": "煩惱 — fánnǎo (ㄈㄢˊ ㄋㄠˇ) · to be worried; to be distressed; worries"
+      },
+      {
+        "id": "ap5-2",
+        "type": "multiple-choice",
+        "prompt": "How is «理解» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "quánqiú"
+          },
+          {
+            "id": "o1",
+            "label": "lǐjiě"
+          },
+          {
+            "id": "o2",
+            "label": "fánnǎo"
+          },
+          {
+            "id": "o3",
+            "label": "ānjìng"
+          }
+        ],
+        "correct": "o1",
+        "skill": "pronunciation",
+        "target": "理解",
+        "pinyin": "lǐjiě",
+        "zhuyin": "ㄌㄧˇ ㄐㄧㄝˇ",
+        "audioText": "理解",
+        "explanation": "理解 — lǐjiě (ㄌㄧˇ ㄐㄧㄝˇ) · to comprehend; to understand"
+      },
+      {
+        "id": "ap5-3",
+        "type": "multiple-choice",
+        "prompt": "How is «安靜» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "quánqiú"
+          },
+          {
+            "id": "o1",
+            "label": "ānjìng"
+          },
+          {
+            "id": "o2",
+            "label": "fánnǎo"
+          },
+          {
+            "id": "o3",
+            "label": "lǐjiě"
+          }
+        ],
+        "correct": "o1",
+        "skill": "pronunciation",
+        "target": "安靜",
+        "pinyin": "ānjìng",
+        "zhuyin": "ㄢ ㄐㄧㄥˋ",
+        "audioText": "安靜",
+        "explanation": "安靜 — ānjìng (ㄢ ㄐㄧㄥˋ) · quiet; peaceful; calm"
+      },
+      {
+        "id": "ap5-4",
+        "type": "multiple-choice",
+        "prompt": "How is «全球» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "quánqiú"
+          },
+          {
+            "id": "o1",
+            "label": "fánnǎo"
+          },
+          {
+            "id": "o2",
+            "label": "lǐjiě"
+          },
+          {
+            "id": "o3",
+            "label": "ānjìng"
+          }
+        ],
+        "correct": "o0",
+        "skill": "pronunciation",
+        "target": "全球",
+        "pinyin": "quánqiú",
+        "zhuyin": "ㄑㄩㄢˊ ㄑㄧㄡˊ",
+        "audioText": "全球",
+        "explanation": "全球 — quánqiú (ㄑㄩㄢˊ ㄑㄧㄡˊ) · the whole world; worldwide; global"
+      },
+      {
+        "id": "ap5-5",
+        "type": "multiple-choice",
+        "prompt": "How is «錄» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "fánnǎo"
+          },
+          {
+            "id": "o1",
+            "label": "lǐjiě"
+          },
+          {
+            "id": "o2",
+            "label": "ānjìng"
+          },
+          {
+            "id": "o3",
+            "label": "lù"
+          }
+        ],
+        "correct": "o3",
+        "skill": "pronunciation",
+        "target": "錄",
+        "pinyin": "lù",
+        "zhuyin": "ㄌㄨˋ",
+        "audioText": "錄",
+        "explanation": "錄 — lù (ㄌㄨˋ) · to carve wood; diary; record; to hit; to copy"
+      },
+      {
+        "id": "ap5-6",
+        "type": "multiple-choice",
+        "prompt": "How is «忽» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "fánnǎo"
+          },
+          {
+            "id": "o1",
+            "label": "lǐjiě"
+          },
+          {
+            "id": "o2",
+            "label": "ānjìng"
+          },
+          {
+            "id": "o3",
+            "label": "hū"
+          }
+        ],
+        "correct": "o3",
+        "skill": "pronunciation",
+        "target": "忽",
+        "pinyin": "hū",
+        "zhuyin": "ㄏㄨ",
+        "audioText": "忽",
+        "explanation": "忽 — hū (ㄏㄨ) · surname Hu"
+      },
+      {
+        "id": "ap5-7",
+        "type": "multiple-choice",
+        "prompt": "How is «醋» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "lǐjiě"
+          },
+          {
+            "id": "o1",
+            "label": "ānjìng"
+          },
+          {
+            "id": "o2",
+            "label": "cù"
+          },
+          {
+            "id": "o3",
+            "label": "fánnǎo"
+          }
+        ],
+        "correct": "o2",
+        "skill": "pronunciation",
+        "target": "醋",
+        "pinyin": "cù",
+        "zhuyin": "ㄘㄨˋ",
+        "audioText": "醋",
+        "explanation": "醋 — cù (ㄘㄨˋ) · vinegar; jealousy (in love rivalry)"
+      },
+      {
+        "id": "ap5-8",
+        "type": "multiple-choice",
+        "prompt": "How is «平» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "píng"
+          },
+          {
+            "id": "o1",
+            "label": "fánnǎo"
+          },
+          {
+            "id": "o2",
+            "label": "lǐjiě"
+          },
+          {
+            "id": "o3",
+            "label": "ānjìng"
+          }
+        ],
+        "correct": "o0",
+        "skill": "pronunciation",
+        "target": "平",
+        "pinyin": "píng",
+        "zhuyin": "ㄆㄧㄥˊ",
+        "audioText": "平",
+        "explanation": "平 — píng (ㄆㄧㄥˊ) · surname Ping"
+      },
+      {
+        "id": "ap5-9",
+        "type": "multiple-choice",
+        "prompt": "How is «南方» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "fánnǎo"
+          },
+          {
+            "id": "o1",
+            "label": "lǐjiě"
+          },
+          {
+            "id": "o2",
+            "label": "ānjìng"
+          },
+          {
+            "id": "o3",
+            "label": "nánfāng"
+          }
+        ],
+        "correct": "o3",
+        "skill": "pronunciation",
+        "target": "南方",
+        "pinyin": "nánfāng",
+        "zhuyin": "ㄋㄢˊ ㄈㄤ",
+        "audioText": "南方",
+        "explanation": "南方 — nánfāng (ㄋㄢˊ ㄈㄤ) · south; southern direction; (in China) southern regions, often referring to areas south of the Yangtze River"
+      },
+      {
+        "id": "ap5-10",
+        "type": "multiple-choice",
+        "prompt": "How is «欺負» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "fánnǎo"
+          },
+          {
+            "id": "o1",
+            "label": "lǐjiě"
+          },
+          {
+            "id": "o2",
+            "label": "ānjìng"
+          },
+          {
+            "id": "o3",
+            "label": "qīfù"
+          }
+        ],
+        "correct": "o3",
+        "skill": "pronunciation",
+        "target": "欺負",
+        "pinyin": "qīfù",
+        "zhuyin": "ㄑㄧ ㄈㄨˋ",
+        "audioText": "欺負",
+        "explanation": "欺負 — qīfù (ㄑㄧ ㄈㄨˋ) · to bully"
+      },
+      {
+        "id": "ap5-11",
+        "type": "multiple-choice",
+        "prompt": "How is «陌生» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "ānjìng"
+          },
+          {
+            "id": "o1",
+            "label": "mòshēng"
+          },
+          {
+            "id": "o2",
+            "label": "fánnǎo"
+          },
+          {
+            "id": "o3",
+            "label": "lǐjiě"
+          }
+        ],
+        "correct": "o1",
+        "skill": "pronunciation",
+        "target": "陌生",
+        "pinyin": "mòshēng",
+        "zhuyin": "ㄇㄛˋ ㄕㄥ",
+        "audioText": "陌生",
+        "explanation": "陌生 — mòshēng (ㄇㄛˋ ㄕㄥ) · strange; unfamiliar"
+      },
+      {
+        "id": "ap5-12",
+        "type": "multiple-choice",
+        "prompt": "How is «廟» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "lǐjiě"
+          },
+          {
+            "id": "o1",
+            "label": "ānjìng"
+          },
+          {
+            "id": "o2",
+            "label": "miào"
+          },
+          {
+            "id": "o3",
+            "label": "fánnǎo"
+          }
+        ],
+        "correct": "o2",
+        "skill": "pronunciation",
+        "target": "廟",
+        "pinyin": "miào",
+        "zhuyin": "ㄇㄧㄠˋ",
+        "audioText": "廟",
+        "explanation": "廟 — miào (ㄇㄧㄠˋ) · temple; ancestral shrine; CL:座[zuo4]; temple fair; great imperial hall; imperial"
+      },
+      {
+        "id": "ap5-13",
+        "type": "multiple-choice",
+        "prompt": "How is «手續» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "lǐjiě"
+          },
+          {
+            "id": "o1",
+            "label": "ānjìng"
+          },
+          {
+            "id": "o2",
+            "label": "shǒuxù"
+          },
+          {
+            "id": "o3",
+            "label": "fánnǎo"
+          }
+        ],
+        "correct": "o2",
+        "skill": "pronunciation",
+        "target": "手續",
+        "pinyin": "shǒuxù",
+        "zhuyin": "ㄕㄡˇ ㄒㄩˋ",
+        "audioText": "手續",
+        "explanation": "手續 — shǒuxù (ㄕㄡˇ ㄒㄩˋ) · procedure; CL:道[dao4],個|个[ge4]; formalities"
+      },
+      {
+        "id": "ap5-14",
+        "type": "multiple-choice",
+        "prompt": "How is «寶貝» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "bǎobèi"
+          },
+          {
+            "id": "o1",
+            "label": "fánnǎo"
+          },
+          {
+            "id": "o2",
+            "label": "lǐjiě"
+          },
+          {
+            "id": "o3",
+            "label": "ānjìng"
+          }
+        ],
+        "correct": "o0",
+        "skill": "pronunciation",
+        "target": "寶貝",
+        "pinyin": "bǎobèi",
+        "zhuyin": "ㄅㄠˇ ㄅㄟˋ",
+        "audioText": "寶貝",
+        "explanation": "寶貝 — bǎobèi (ㄅㄠˇ ㄅㄟˋ) · treasured object; treasure; darling; baby; cowry; good-for-nothing or queer character"
+      },
+      {
+        "id": "ap5-15",
+        "type": "multiple-choice",
+        "prompt": "How is «感興趣» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "lǐjiě"
+          },
+          {
+            "id": "o1",
+            "label": "ānjìng"
+          },
+          {
+            "id": "o2",
+            "label": "gǎnxìngqù"
+          },
+          {
+            "id": "o3",
+            "label": "fánnǎo"
+          }
+        ],
+        "correct": "o2",
+        "skill": "pronunciation",
+        "target": "感興趣",
+        "pinyin": "gǎnxìngqù",
+        "zhuyin": "ㄍㄢˇ ㄒㄧㄥˋ ㄑㄩˋ",
+        "audioText": "感興趣",
+        "explanation": "感興趣 — gǎnxìngqù (ㄍㄢˇ ㄒㄧㄥˋ ㄑㄩˋ) · to be interested"
+      },
+      {
+        "id": "ap5-16",
+        "type": "multiple-choice",
+        "prompt": "How is «解決» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "lǐjiě"
+          },
+          {
+            "id": "o1",
+            "label": "ānjìng"
+          },
+          {
+            "id": "o2",
+            "label": "jiějué"
+          },
+          {
+            "id": "o3",
+            "label": "fánnǎo"
+          }
+        ],
+        "correct": "o2",
+        "skill": "pronunciation",
+        "target": "解決",
+        "pinyin": "jiějué",
+        "zhuyin": "ㄐㄧㄝˇ ㄐㄩㄝˊ",
+        "audioText": "解決",
+        "explanation": "解決 — jiějué (ㄐㄧㄝˇ ㄐㄩㄝˊ) · to solve; to resolve; to settle (a problem); to eliminate; to wipe out (an enemy, bandits etc)"
+      },
+      {
+        "id": "ap5-17",
+        "type": "multiple-choice",
+        "prompt": "How is «犧牲» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "lǐjiě"
+          },
+          {
+            "id": "o1",
+            "label": "ānjìng"
+          },
+          {
+            "id": "o2",
+            "label": "xīshēng"
+          },
+          {
+            "id": "o3",
+            "label": "fánnǎo"
+          }
+        ],
+        "correct": "o2",
+        "skill": "pronunciation",
+        "target": "犧牲",
+        "pinyin": "xīshēng",
+        "zhuyin": "ㄒㄧ ㄕㄥ",
+        "audioText": "犧牲",
+        "explanation": "犧牲 — xīshēng (ㄒㄧ ㄕㄥ) · to sacrifice one's life; to sacrifice (sth valued); beast slaughtered as a sacrifice"
+      },
+      {
+        "id": "ap5-18",
+        "type": "multiple-choice",
+        "prompt": "How is «顧客» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "lǐjiě"
+          },
+          {
+            "id": "o1",
+            "label": "ānjìng"
+          },
+          {
+            "id": "o2",
+            "label": "gùkè"
+          },
+          {
+            "id": "o3",
+            "label": "fánnǎo"
+          }
+        ],
+        "correct": "o2",
+        "skill": "pronunciation",
+        "target": "顧客",
+        "pinyin": "gùkè",
+        "zhuyin": "ㄍㄨˋ ㄎㄜˋ",
+        "audioText": "顧客",
+        "explanation": "顧客 — gùkè (ㄍㄨˋ ㄎㄜˋ) · customer; client; CL:位[wei4]"
+      },
+      {
+        "id": "ap5-19",
+        "type": "multiple-choice",
+        "prompt": "How is «乖» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "guāi"
+          },
+          {
+            "id": "o1",
+            "label": "fánnǎo"
+          },
+          {
+            "id": "o2",
+            "label": "lǐjiě"
+          },
+          {
+            "id": "o3",
+            "label": "ānjìng"
+          }
+        ],
+        "correct": "o0",
+        "skill": "pronunciation",
+        "target": "乖",
+        "pinyin": "guāi",
+        "zhuyin": "ㄍㄨㄞ",
+        "audioText": "乖",
+        "explanation": "乖 — guāi (ㄍㄨㄞ) · (of a child) obedient, well-behaved; clever; shrewd; alert; perverse; contrary to reason; irregular; abnormal"
+      },
+      {
+        "id": "ap5-20",
+        "type": "multiple-choice",
+        "prompt": "How is «頓» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "fánnǎo"
+          },
+          {
+            "id": "o1",
+            "label": "lǐjiě"
+          },
+          {
+            "id": "o2",
+            "label": "ānjìng"
+          },
+          {
+            "id": "o3",
+            "label": "dùn"
+          }
+        ],
+        "correct": "o3",
+        "skill": "pronunciation",
+        "target": "頓",
+        "pinyin": "dùn",
+        "zhuyin": "ㄉㄨㄣˋ",
+        "audioText": "頓",
+        "explanation": "頓 — dùn (ㄉㄨㄣˋ) · to stop; to pause; to arrange; to lay out; to kowtow; to stamp (one's foot); at once; classifier for meals, beatings, scoldings etc: time, bout, spell, meal"
+      },
+      {
+        "id": "ap5-21",
+        "type": "multiple-choice",
+        "prompt": "How is «修» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "xiū"
+          },
+          {
+            "id": "o1",
+            "label": "fánnǎo"
+          },
+          {
+            "id": "o2",
+            "label": "lǐjiě"
+          },
+          {
+            "id": "o3",
+            "label": "ānjìng"
+          }
+        ],
+        "correct": "o0",
+        "skill": "pronunciation",
+        "target": "修",
+        "pinyin": "xiū",
+        "zhuyin": "ㄒㄧㄡ",
+        "audioText": "修",
+        "explanation": "修 — xiū (ㄒㄧㄡ) · surname Xiu"
+      },
+      {
+        "id": "ap5-22",
+        "type": "multiple-choice",
+        "prompt": "How is «總之» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "ānjìng"
+          },
+          {
+            "id": "o1",
+            "label": "zǒngzhī"
+          },
+          {
+            "id": "o2",
+            "label": "fánnǎo"
+          },
+          {
+            "id": "o3",
+            "label": "lǐjiě"
+          }
+        ],
+        "correct": "o1",
+        "skill": "pronunciation",
+        "target": "總之",
+        "pinyin": "zǒngzhī",
+        "zhuyin": "ㄗㄨㄥˇ ㄓ",
+        "audioText": "總之",
+        "explanation": "總之 — zǒngzhī (ㄗㄨㄥˇ ㄓ) · in a word; in short; in brief"
+      },
+      {
+        "id": "ap5-23",
+        "type": "multiple-choice",
+        "prompt": "How is «煙火» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "lǐjiě"
+          },
+          {
+            "id": "o1",
+            "label": "ānjìng"
+          },
+          {
+            "id": "o2",
+            "label": "yānhuǒ"
+          },
+          {
+            "id": "o3",
+            "label": "fánnǎo"
+          }
+        ],
+        "correct": "o2",
+        "skill": "pronunciation",
+        "target": "煙火",
+        "pinyin": "yānhuǒ",
+        "zhuyin": "ㄧㄢ ㄏㄨㄛˇ",
+        "audioText": "煙火",
+        "explanation": "煙火 — yānhuǒ (ㄧㄢ ㄏㄨㄛˇ) · smoke and fire; cooked food; (literary) beacon fire; (literary) descendants; posterity"
+      },
+      {
+        "id": "ap5-24",
+        "type": "multiple-choice",
+        "prompt": "How is «加強» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "jiāqiáng"
+          },
+          {
+            "id": "o1",
+            "label": "fánnǎo"
+          },
+          {
+            "id": "o2",
+            "label": "lǐjiě"
+          },
+          {
+            "id": "o3",
+            "label": "ānjìng"
+          }
+        ],
+        "correct": "o0",
+        "skill": "pronunciation",
+        "target": "加強",
+        "pinyin": "jiāqiáng",
+        "zhuyin": "ㄐㄧㄚ ㄑㄧㄤˊ",
+        "audioText": "加強",
+        "explanation": "加強 — jiāqiáng (ㄐㄧㄚ ㄑㄧㄤˊ) · to reinforce; to strengthen; to enhance"
+      }
+    ]
+  }
+]

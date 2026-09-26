@@ -1,0 +1,737 @@
+[
+  {
+    "id": "a-pron-hsk6",
+    "title": "Pronunciation · HSK 6",
+    "description": "Match each character to its reading. 24 questions.",
+    "description_en": "Match each character to its reading. 24 questions.",
+    "kind": "vocabulary",
+    "level": "6",
+    "examMappings": {
+      "hsk": "6"
+    },
+    "durationMin": 12,
+    "passScore": 70,
+    "exercises": [
+      {
+        "id": "ap6-1",
+        "type": "multiple-choice",
+        "prompt": "How is «事先» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "duì'àn"
+          },
+          {
+            "id": "o1",
+            "label": "Yīsīlánjiào"
+          },
+          {
+            "id": "o2",
+            "label": "pūmiè"
+          },
+          {
+            "id": "o3",
+            "label": "shìxiān"
+          }
+        ],
+        "correct": "o3",
+        "skill": "pronunciation",
+        "target": "事先",
+        "pinyin": "shìxiān",
+        "zhuyin": "ㄕˋ ㄒㄧㄢ",
+        "audioText": "事先",
+        "explanation": "事先 — shìxiān (ㄕˋ ㄒㄧㄢ) · in advance; before the event; beforehand; prior"
+      },
+      {
+        "id": "ap6-2",
+        "type": "multiple-choice",
+        "prompt": "How is «對岸» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "shìxiān"
+          },
+          {
+            "id": "o1",
+            "label": "Yīsīlánjiào"
+          },
+          {
+            "id": "o2",
+            "label": "pūmiè"
+          },
+          {
+            "id": "o3",
+            "label": "duì'àn"
+          }
+        ],
+        "correct": "o3",
+        "skill": "pronunciation",
+        "target": "對岸",
+        "pinyin": "duì'àn",
+        "zhuyin": "ㄉㄨㄟˋ ㄢˋ",
+        "audioText": "對岸",
+        "explanation": "對岸 — duì'àn (ㄉㄨㄟˋ ㄢˋ) · opposite bank (of a body of water)"
+      },
+      {
+        "id": "ap6-3",
+        "type": "multiple-choice",
+        "prompt": "How is «伊斯蘭教» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "pūmiè"
+          },
+          {
+            "id": "o1",
+            "label": "Yīsīlánjiào"
+          },
+          {
+            "id": "o2",
+            "label": "shìxiān"
+          },
+          {
+            "id": "o3",
+            "label": "duì'àn"
+          }
+        ],
+        "correct": "o1",
+        "skill": "pronunciation",
+        "target": "伊斯蘭教",
+        "pinyin": "Yīsīlánjiào",
+        "zhuyin": "ㄧ ㄙ ㄌㄢˊ ㄐㄧㄠˋ",
+        "audioText": "伊斯蘭教",
+        "explanation": "伊斯蘭教 — Yīsīlánjiào (ㄧ ㄙ ㄌㄢˊ ㄐㄧㄠˋ) · Islam"
+      },
+      {
+        "id": "ap6-4",
+        "type": "multiple-choice",
+        "prompt": "How is «撲滅» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "Yīsīlánjiào"
+          },
+          {
+            "id": "o1",
+            "label": "pūmiè"
+          },
+          {
+            "id": "o2",
+            "label": "shìxiān"
+          },
+          {
+            "id": "o3",
+            "label": "duì'àn"
+          }
+        ],
+        "correct": "o1",
+        "skill": "pronunciation",
+        "target": "撲滅",
+        "pinyin": "pūmiè",
+        "zhuyin": "ㄆㄨ ㄇㄧㄝˋ",
+        "audioText": "撲滅",
+        "explanation": "撲滅 — pūmiè (ㄆㄨ ㄇㄧㄝˋ) · to eradicate; to extinguish"
+      },
+      {
+        "id": "ap6-5",
+        "type": "multiple-choice",
+        "prompt": "How is «早已» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "Yīsīlánjiào"
+          },
+          {
+            "id": "o1",
+            "label": "zǎoyǐ"
+          },
+          {
+            "id": "o2",
+            "label": "shìxiān"
+          },
+          {
+            "id": "o3",
+            "label": "duì'àn"
+          }
+        ],
+        "correct": "o1",
+        "skill": "pronunciation",
+        "target": "早已",
+        "pinyin": "zǎoyǐ",
+        "zhuyin": "ㄗㄠˇ ㄧˇ",
+        "audioText": "早已",
+        "explanation": "早已 — zǎoyǐ (ㄗㄠˇ ㄧˇ) · for a long time; long since; (dialect) in the past"
+      },
+      {
+        "id": "ap6-6",
+        "type": "multiple-choice",
+        "prompt": "How is «誕生» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "shìxiān"
+          },
+          {
+            "id": "o1",
+            "label": "duì'àn"
+          },
+          {
+            "id": "o2",
+            "label": "Yīsīlánjiào"
+          },
+          {
+            "id": "o3",
+            "label": "dànshēng"
+          }
+        ],
+        "correct": "o3",
+        "skill": "pronunciation",
+        "target": "誕生",
+        "pinyin": "dànshēng",
+        "zhuyin": "ㄉㄢˋ ㄕㄥ",
+        "audioText": "誕生",
+        "explanation": "誕生 — dànshēng (ㄉㄢˋ ㄕㄥ) · to be born"
+      },
+      {
+        "id": "ap6-7",
+        "type": "multiple-choice",
+        "prompt": "How is «包裹» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "duì'àn"
+          },
+          {
+            "id": "o1",
+            "label": "Yīsīlánjiào"
+          },
+          {
+            "id": "o2",
+            "label": "bāoguǒ"
+          },
+          {
+            "id": "o3",
+            "label": "shìxiān"
+          }
+        ],
+        "correct": "o2",
+        "skill": "pronunciation",
+        "target": "包裹",
+        "pinyin": "bāoguǒ",
+        "zhuyin": "ㄅㄠ ㄍㄨㄛˇ",
+        "audioText": "包裹",
+        "explanation": "包裹 — bāoguǒ (ㄅㄠ ㄍㄨㄛˇ) · to wrap up; to bind up; bundle; parcel; package; CL:個|个[ge4]"
+      },
+      {
+        "id": "ap6-8",
+        "type": "multiple-choice",
+        "prompt": "How is «當初» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "shìxiān"
+          },
+          {
+            "id": "o1",
+            "label": "duì'àn"
+          },
+          {
+            "id": "o2",
+            "label": "Yīsīlánjiào"
+          },
+          {
+            "id": "o3",
+            "label": "dāngchū"
+          }
+        ],
+        "correct": "o3",
+        "skill": "pronunciation",
+        "target": "當初",
+        "pinyin": "dāngchū",
+        "zhuyin": "ㄉㄤ ㄔㄨ",
+        "audioText": "當初",
+        "explanation": "當初 — dāngchū (ㄉㄤ ㄔㄨ) · at that time; originally"
+      },
+      {
+        "id": "ap6-9",
+        "type": "multiple-choice",
+        "prompt": "How is «梨» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "lí"
+          },
+          {
+            "id": "o1",
+            "label": "shìxiān"
+          },
+          {
+            "id": "o2",
+            "label": "duì'àn"
+          },
+          {
+            "id": "o3",
+            "label": "Yīsīlánjiào"
+          }
+        ],
+        "correct": "o0",
+        "skill": "pronunciation",
+        "target": "梨",
+        "pinyin": "lí",
+        "zhuyin": "ㄌㄧˊ",
+        "audioText": "梨",
+        "explanation": "梨 — lí (ㄌㄧˊ) · pear; CL:個|个[ge4]"
+      },
+      {
+        "id": "ap6-10",
+        "type": "multiple-choice",
+        "prompt": "How is «雜» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "duì'àn"
+          },
+          {
+            "id": "o1",
+            "label": "Yīsīlánjiào"
+          },
+          {
+            "id": "o2",
+            "label": "zá"
+          },
+          {
+            "id": "o3",
+            "label": "shìxiān"
+          }
+        ],
+        "correct": "o2",
+        "skill": "pronunciation",
+        "target": "雜",
+        "pinyin": "zá",
+        "zhuyin": "ㄗㄚˊ",
+        "audioText": "雜",
+        "explanation": "雜 — zá (ㄗㄚˊ) · variant of 雜|杂[za2]; mixed; miscellaneous; various; to mix"
+      },
+      {
+        "id": "ap6-11",
+        "type": "multiple-choice",
+        "prompt": "How is «名單» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "Yīsīlánjiào"
+          },
+          {
+            "id": "o1",
+            "label": "míngdān"
+          },
+          {
+            "id": "o2",
+            "label": "shìxiān"
+          },
+          {
+            "id": "o3",
+            "label": "duì'àn"
+          }
+        ],
+        "correct": "o1",
+        "skill": "pronunciation",
+        "target": "名單",
+        "pinyin": "míngdān",
+        "zhuyin": "ㄇㄧㄥˊ ㄉㄢ",
+        "audioText": "名單",
+        "explanation": "名單 — míngdān (ㄇㄧㄥˊ ㄉㄢ) · list of names"
+      },
+      {
+        "id": "ap6-12",
+        "type": "multiple-choice",
+        "prompt": "How is «鑽石» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "Yīsīlánjiào"
+          },
+          {
+            "id": "o1",
+            "label": "zuànshí"
+          },
+          {
+            "id": "o2",
+            "label": "shìxiān"
+          },
+          {
+            "id": "o3",
+            "label": "duì'àn"
+          }
+        ],
+        "correct": "o1",
+        "skill": "pronunciation",
+        "target": "鑽石",
+        "pinyin": "zuànshí",
+        "zhuyin": "ㄗㄨㄢˋ ㄕˊ",
+        "audioText": "鑽石",
+        "explanation": "鑽石 — zuànshí (ㄗㄨㄢˋ ㄕˊ) · diamond; CL:顆|颗[ke1]"
+      },
+      {
+        "id": "ap6-13",
+        "type": "multiple-choice",
+        "prompt": "How is «無可奈何» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "wúkěnàihé"
+          },
+          {
+            "id": "o1",
+            "label": "shìxiān"
+          },
+          {
+            "id": "o2",
+            "label": "duì'àn"
+          },
+          {
+            "id": "o3",
+            "label": "Yīsīlánjiào"
+          }
+        ],
+        "correct": "o0",
+        "skill": "pronunciation",
+        "target": "無可奈何",
+        "pinyin": "wúkěnàihé",
+        "zhuyin": "ㄨˊ ㄎㄜˇ ㄋㄞˋ ㄏㄜˊ",
+        "audioText": "無可奈何",
+        "explanation": "無可奈何 — wúkěnàihé (ㄨˊ ㄎㄜˇ ㄋㄞˋ ㄏㄜˊ) · have no way out; have no alternative; abbr. to 無奈|无奈[wu2 nai4]"
+      },
+      {
+        "id": "ap6-14",
+        "type": "multiple-choice",
+        "prompt": "How is «違反» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "shìxiān"
+          },
+          {
+            "id": "o1",
+            "label": "duì'àn"
+          },
+          {
+            "id": "o2",
+            "label": "Yīsīlánjiào"
+          },
+          {
+            "id": "o3",
+            "label": "wéifǎn"
+          }
+        ],
+        "correct": "o3",
+        "skill": "pronunciation",
+        "target": "違反",
+        "pinyin": "wéifǎn",
+        "zhuyin": "ㄨㄟˊ ㄈㄢˇ",
+        "audioText": "違反",
+        "explanation": "違反 — wéifǎn (ㄨㄟˊ ㄈㄢˇ) · to violate (a law)"
+      },
+      {
+        "id": "ap6-15",
+        "type": "multiple-choice",
+        "prompt": "How is «還不如» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "shìxiān"
+          },
+          {
+            "id": "o1",
+            "label": "duì'àn"
+          },
+          {
+            "id": "o2",
+            "label": "Yīsīlánjiào"
+          },
+          {
+            "id": "o3",
+            "label": "háibùrú"
+          }
+        ],
+        "correct": "o3",
+        "skill": "pronunciation",
+        "target": "還不如",
+        "pinyin": "háibùrú",
+        "zhuyin": "ㄏㄞˊ ㄅㄨˋ ㄖㄨˊ",
+        "audioText": "還不如",
+        "explanation": "還不如 — háibùrú (ㄏㄞˊ ㄅㄨˋ ㄖㄨˊ) · to be better off ...; might as well ..."
+      },
+      {
+        "id": "ap6-16",
+        "type": "multiple-choice",
+        "prompt": "How is «死亡» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "duì'àn"
+          },
+          {
+            "id": "o1",
+            "label": "Yīsīlánjiào"
+          },
+          {
+            "id": "o2",
+            "label": "sǐwáng"
+          },
+          {
+            "id": "o3",
+            "label": "shìxiān"
+          }
+        ],
+        "correct": "o2",
+        "skill": "pronunciation",
+        "target": "死亡",
+        "pinyin": "sǐwáng",
+        "zhuyin": "ㄙˇ ㄨㄤˊ",
+        "audioText": "死亡",
+        "explanation": "死亡 — sǐwáng (ㄙˇ ㄨㄤˊ) · to die; death"
+      },
+      {
+        "id": "ap6-17",
+        "type": "multiple-choice",
+        "prompt": "How is «灰心» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "huīxīn"
+          },
+          {
+            "id": "o1",
+            "label": "shìxiān"
+          },
+          {
+            "id": "o2",
+            "label": "duì'àn"
+          },
+          {
+            "id": "o3",
+            "label": "Yīsīlánjiào"
+          }
+        ],
+        "correct": "o0",
+        "skill": "pronunciation",
+        "target": "灰心",
+        "pinyin": "huīxīn",
+        "zhuyin": "ㄏㄨㄟ ㄒㄧㄣ",
+        "audioText": "灰心",
+        "explanation": "灰心 — huīxīn (ㄏㄨㄟ ㄒㄧㄣ) · to lose heart; to be discouraged"
+      },
+      {
+        "id": "ap6-18",
+        "type": "multiple-choice",
+        "prompt": "How is «書籍» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "shūjí"
+          },
+          {
+            "id": "o1",
+            "label": "shìxiān"
+          },
+          {
+            "id": "o2",
+            "label": "duì'àn"
+          },
+          {
+            "id": "o3",
+            "label": "Yīsīlánjiào"
+          }
+        ],
+        "correct": "o0",
+        "skill": "pronunciation",
+        "target": "書籍",
+        "pinyin": "shūjí",
+        "zhuyin": "ㄕㄨ ㄐㄧˊ",
+        "audioText": "書籍",
+        "explanation": "書籍 — shūjí (ㄕㄨ ㄐㄧˊ) · books; works"
+      },
+      {
+        "id": "ap6-19",
+        "type": "multiple-choice",
+        "prompt": "How is «暑期» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "Yīsīlánjiào"
+          },
+          {
+            "id": "o1",
+            "label": "shǔqí"
+          },
+          {
+            "id": "o2",
+            "label": "shìxiān"
+          },
+          {
+            "id": "o3",
+            "label": "duì'àn"
+          }
+        ],
+        "correct": "o1",
+        "skill": "pronunciation",
+        "target": "暑期",
+        "pinyin": "shǔqí",
+        "zhuyin": "ㄕㄨˇ ㄑㄧˊ",
+        "audioText": "暑期",
+        "explanation": "暑期 — shǔqí (ㄕㄨˇ ㄑㄧˊ) · summer vacation time"
+      },
+      {
+        "id": "ap6-20",
+        "type": "multiple-choice",
+        "prompt": "How is «便利» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "biànlì"
+          },
+          {
+            "id": "o1",
+            "label": "shìxiān"
+          },
+          {
+            "id": "o2",
+            "label": "duì'àn"
+          },
+          {
+            "id": "o3",
+            "label": "Yīsīlánjiào"
+          }
+        ],
+        "correct": "o0",
+        "skill": "pronunciation",
+        "target": "便利",
+        "pinyin": "biànlì",
+        "zhuyin": "ㄅㄧㄢˋ ㄌㄧˋ",
+        "audioText": "便利",
+        "explanation": "便利 — biànlì (ㄅㄧㄢˋ ㄌㄧˋ) · convenient; easy; to facilitate"
+      },
+      {
+        "id": "ap6-21",
+        "type": "multiple-choice",
+        "prompt": "How is «結算» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "jiésuàn"
+          },
+          {
+            "id": "o1",
+            "label": "shìxiān"
+          },
+          {
+            "id": "o2",
+            "label": "duì'àn"
+          },
+          {
+            "id": "o3",
+            "label": "Yīsīlánjiào"
+          }
+        ],
+        "correct": "o0",
+        "skill": "pronunciation",
+        "target": "結算",
+        "pinyin": "jiésuàn",
+        "zhuyin": "ㄐㄧㄝˊ ㄙㄨㄢˋ",
+        "audioText": "結算",
+        "explanation": "結算 — jiésuàn (ㄐㄧㄝˊ ㄙㄨㄢˋ) · to settle a bill; to close an account"
+      },
+      {
+        "id": "ap6-22",
+        "type": "multiple-choice",
+        "prompt": "How is «連忙» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "liánmáng"
+          },
+          {
+            "id": "o1",
+            "label": "shìxiān"
+          },
+          {
+            "id": "o2",
+            "label": "duì'àn"
+          },
+          {
+            "id": "o3",
+            "label": "Yīsīlánjiào"
+          }
+        ],
+        "correct": "o0",
+        "skill": "pronunciation",
+        "target": "連忙",
+        "pinyin": "liánmáng",
+        "zhuyin": "ㄌㄧㄢˊ ㄇㄤˊ",
+        "audioText": "連忙",
+        "explanation": "連忙 — liánmáng (ㄌㄧㄢˊ ㄇㄤˊ) · promptly; at once"
+      },
+      {
+        "id": "ap6-23",
+        "type": "multiple-choice",
+        "prompt": "How is «生存» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "shēngcún"
+          },
+          {
+            "id": "o1",
+            "label": "shìxiān"
+          },
+          {
+            "id": "o2",
+            "label": "duì'àn"
+          },
+          {
+            "id": "o3",
+            "label": "Yīsīlánjiào"
+          }
+        ],
+        "correct": "o0",
+        "skill": "pronunciation",
+        "target": "生存",
+        "pinyin": "shēngcún",
+        "zhuyin": "ㄕㄥ ㄘㄨㄣˊ",
+        "audioText": "生存",
+        "explanation": "生存 — shēngcún (ㄕㄥ ㄘㄨㄣˊ) · to exist; to survive"
+      },
+      {
+        "id": "ap6-24",
+        "type": "multiple-choice",
+        "prompt": "How is «公平» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "gōngpíng"
+          },
+          {
+            "id": "o1",
+            "label": "shìxiān"
+          },
+          {
+            "id": "o2",
+            "label": "duì'àn"
+          },
+          {
+            "id": "o3",
+            "label": "Yīsīlánjiào"
+          }
+        ],
+        "correct": "o0",
+        "skill": "pronunciation",
+        "target": "公平",
+        "pinyin": "gōngpíng",
+        "zhuyin": "ㄍㄨㄥ ㄆㄧㄥˊ",
+        "audioText": "公平",
+        "explanation": "公平 — gōngpíng (ㄍㄨㄥ ㄆㄧㄥˊ) · fair; impartial"
+      }
+    ]
+  }
+]

@@ -1,0 +1,737 @@
+[
+  {
+    "id": "a-pron-hsk3",
+    "title": "Pronunciation · HSK 3",
+    "description": "Match each character to its reading. 24 questions.",
+    "description_en": "Match each character to its reading. 24 questions.",
+    "kind": "vocabulary",
+    "level": "3",
+    "examMappings": {
+      "hsk": "3"
+    },
+    "durationMin": 12,
+    "passScore": 70,
+    "exercises": [
+      {
+        "id": "ap3-1",
+        "type": "multiple-choice",
+        "prompt": "How is «不過» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "gōngrén"
+          },
+          {
+            "id": "o1",
+            "label": "lǎorén"
+          },
+          {
+            "id": "o2",
+            "label": "bùguò"
+          },
+          {
+            "id": "o3",
+            "label": "dá"
+          }
+        ],
+        "correct": "o2",
+        "skill": "pronunciation",
+        "target": "不過",
+        "pinyin": "bùguò",
+        "zhuyin": "ㄅㄨˋ ㄍㄨㄛˋ",
+        "audioText": "不過",
+        "explanation": "不過 — bùguò (ㄅㄨˋ ㄍㄨㄛˋ) · but, however"
+      },
+      {
+        "id": "ap3-2",
+        "type": "multiple-choice",
+        "prompt": "How is «答» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "lǎorén"
+          },
+          {
+            "id": "o1",
+            "label": "dá"
+          },
+          {
+            "id": "o2",
+            "label": "bùguò"
+          },
+          {
+            "id": "o3",
+            "label": "gōngrén"
+          }
+        ],
+        "correct": "o1",
+        "skill": "pronunciation",
+        "target": "答",
+        "pinyin": "dá",
+        "zhuyin": "ㄉㄚˊ",
+        "audioText": "答",
+        "explanation": "答 — dá (ㄉㄚˊ) · bound form having the same meaning as the free word 答[da2], used in 答應|答应[da1 ying5], 答理[da1 li5] etc"
+      },
+      {
+        "id": "ap3-3",
+        "type": "multiple-choice",
+        "prompt": "How is «工人» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "dá"
+          },
+          {
+            "id": "o1",
+            "label": "lǎorén"
+          },
+          {
+            "id": "o2",
+            "label": "gōngrén"
+          },
+          {
+            "id": "o3",
+            "label": "bùguò"
+          }
+        ],
+        "correct": "o2",
+        "skill": "pronunciation",
+        "target": "工人",
+        "pinyin": "gōngrén",
+        "zhuyin": "ㄍㄨㄥ ㄖㄣˊ",
+        "audioText": "工人",
+        "explanation": "工人 — gōngrén (ㄍㄨㄥ ㄖㄣˊ) · worker"
+      },
+      {
+        "id": "ap3-4",
+        "type": "multiple-choice",
+        "prompt": "How is «老人» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "bùguò"
+          },
+          {
+            "id": "o1",
+            "label": "dá"
+          },
+          {
+            "id": "o2",
+            "label": "gōngrén"
+          },
+          {
+            "id": "o3",
+            "label": "lǎorén"
+          }
+        ],
+        "correct": "o3",
+        "skill": "pronunciation",
+        "target": "老人",
+        "pinyin": "lǎorén",
+        "zhuyin": "ㄌㄠˇ ㄖㄣˊ",
+        "audioText": "老人",
+        "explanation": "老人 — lǎorén (ㄌㄠˇ ㄖㄣˊ) · elderly, old people, old man or woman,  seniors"
+      },
+      {
+        "id": "ap3-5",
+        "type": "multiple-choice",
+        "prompt": "How is «本來» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "bùguò"
+          },
+          {
+            "id": "o1",
+            "label": "dá"
+          },
+          {
+            "id": "o2",
+            "label": "gōngrén"
+          },
+          {
+            "id": "o3",
+            "label": "běnlái"
+          }
+        ],
+        "correct": "o3",
+        "skill": "pronunciation",
+        "target": "本來",
+        "pinyin": "běnlái",
+        "zhuyin": "ㄅㄣˇ ㄌㄞˊ",
+        "audioText": "本來",
+        "explanation": "本來 — běnlái (ㄅㄣˇ ㄌㄞˊ) · originally, at first"
+      },
+      {
+        "id": "ap3-6",
+        "type": "multiple-choice",
+        "prompt": "How is «足球» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "dá"
+          },
+          {
+            "id": "o1",
+            "label": "gōngrén"
+          },
+          {
+            "id": "o2",
+            "label": "zúqiú"
+          },
+          {
+            "id": "o3",
+            "label": "bùguò"
+          }
+        ],
+        "correct": "o2",
+        "skill": "pronunciation",
+        "target": "足球",
+        "pinyin": "zúqiú",
+        "zhuyin": "ㄗㄨˊ ㄑㄧㄡˊ",
+        "audioText": "足球",
+        "explanation": "足球 — zúqiú (ㄗㄨˊ ㄑㄧㄡˊ) · soccer"
+      },
+      {
+        "id": "ap3-7",
+        "type": "multiple-choice",
+        "prompt": "How is «所有» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "suǒyǒu"
+          },
+          {
+            "id": "o1",
+            "label": "bùguò"
+          },
+          {
+            "id": "o2",
+            "label": "dá"
+          },
+          {
+            "id": "o3",
+            "label": "gōngrén"
+          }
+        ],
+        "correct": "o0",
+        "skill": "pronunciation",
+        "target": "所有",
+        "pinyin": "suǒyǒu",
+        "zhuyin": "ㄙㄨㄛˇ ㄧㄡˇ",
+        "audioText": "所有",
+        "explanation": "所有 — suǒyǒu (ㄙㄨㄛˇ ㄧㄡˇ) · all, every"
+      },
+      {
+        "id": "ap3-8",
+        "type": "multiple-choice",
+        "prompt": "How is «怎麼辦» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "zěnmebàn"
+          },
+          {
+            "id": "o1",
+            "label": "bùguò"
+          },
+          {
+            "id": "o2",
+            "label": "dá"
+          },
+          {
+            "id": "o3",
+            "label": "gōngrén"
+          }
+        ],
+        "correct": "o0",
+        "skill": "pronunciation",
+        "target": "怎麼辦",
+        "pinyin": "zěnmebàn",
+        "zhuyin": "ㄗㄣˇ ㄇㄜ˙ ㄅㄢˋ",
+        "audioText": "怎麼辦",
+        "explanation": "怎麼辦 — zěnmebàn (ㄗㄣˇ ㄇㄜ˙ ㄅㄢˋ) · What should someone do?"
+      },
+      {
+        "id": "ap3-9",
+        "type": "multiple-choice",
+        "prompt": "How is «從前» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "cóngqián"
+          },
+          {
+            "id": "o1",
+            "label": "bùguò"
+          },
+          {
+            "id": "o2",
+            "label": "dá"
+          },
+          {
+            "id": "o3",
+            "label": "gōngrén"
+          }
+        ],
+        "correct": "o0",
+        "skill": "pronunciation",
+        "target": "從前",
+        "pinyin": "cóngqián",
+        "zhuyin": "ㄘㄨㄥˊ ㄑㄧㄢˊ",
+        "audioText": "從前",
+        "explanation": "從前 — cóngqián (ㄘㄨㄥˊ ㄑㄧㄢˊ) · formerly, a long time ago"
+      },
+      {
+        "id": "ap3-10",
+        "type": "multiple-choice",
+        "prompt": "How is «脫» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "tuō"
+          },
+          {
+            "id": "o1",
+            "label": "bùguò"
+          },
+          {
+            "id": "o2",
+            "label": "dá"
+          },
+          {
+            "id": "o3",
+            "label": "gōngrén"
+          }
+        ],
+        "correct": "o0",
+        "skill": "pronunciation",
+        "target": "脫",
+        "pinyin": "tuō",
+        "zhuyin": "ㄊㄨㄛ",
+        "audioText": "脫",
+        "explanation": "脫 — tuō (ㄊㄨㄛ) · take off (one's clothes), undress"
+      },
+      {
+        "id": "ap3-11",
+        "type": "multiple-choice",
+        "prompt": "How is «盒子» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "dá"
+          },
+          {
+            "id": "o1",
+            "label": "gōngrén"
+          },
+          {
+            "id": "o2",
+            "label": "hézi"
+          },
+          {
+            "id": "o3",
+            "label": "bùguò"
+          }
+        ],
+        "correct": "o2",
+        "skill": "pronunciation",
+        "target": "盒子",
+        "pinyin": "hézi",
+        "zhuyin": "ㄏㄜˊ ㄗ˙",
+        "audioText": "盒子",
+        "explanation": "盒子 — hézi (ㄏㄜˊ ㄗ˙) · box; case; hezi – a savory turnover-like pie in northern Chinese and Mongolian cuisines"
+      },
+      {
+        "id": "ap3-12",
+        "type": "multiple-choice",
+        "prompt": "How is «褲» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "dá"
+          },
+          {
+            "id": "o1",
+            "label": "gōngrén"
+          },
+          {
+            "id": "o2",
+            "label": "kù"
+          },
+          {
+            "id": "o3",
+            "label": "bùguò"
+          }
+        ],
+        "correct": "o2",
+        "skill": "pronunciation",
+        "target": "褲",
+        "pinyin": "kù",
+        "zhuyin": "ㄎㄨˋ",
+        "audioText": "褲",
+        "explanation": "褲 — kù (ㄎㄨˋ) · variant of 褲|裤[ku4]; underpants; trousers; pants"
+      },
+      {
+        "id": "ap3-13",
+        "type": "multiple-choice",
+        "prompt": "How is «習慣» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "xíguàn"
+          },
+          {
+            "id": "o1",
+            "label": "bùguò"
+          },
+          {
+            "id": "o2",
+            "label": "dá"
+          },
+          {
+            "id": "o3",
+            "label": "gōngrén"
+          }
+        ],
+        "correct": "o0",
+        "skill": "pronunciation",
+        "target": "習慣",
+        "pinyin": "xíguàn",
+        "zhuyin": "ㄒㄧˊ ㄍㄨㄢˋ",
+        "audioText": "習慣",
+        "explanation": "習慣 — xíguàn (ㄒㄧˊ ㄍㄨㄢˋ) · habit, custom / to be used to"
+      },
+      {
+        "id": "ap3-14",
+        "type": "multiple-choice",
+        "prompt": "How is «差不多» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "bùguò"
+          },
+          {
+            "id": "o1",
+            "label": "dá"
+          },
+          {
+            "id": "o2",
+            "label": "gōngrén"
+          },
+          {
+            "id": "o3",
+            "label": "chābùduō"
+          }
+        ],
+        "correct": "o3",
+        "skill": "pronunciation",
+        "target": "差不多",
+        "pinyin": "chābùduō",
+        "zhuyin": "ㄔㄚ ㄅㄨˋ ㄉㄨㄛ",
+        "audioText": "差不多",
+        "explanation": "差不多 — chābùduō (ㄔㄚ ㄅㄨˋ ㄉㄨㄛ) · about the same / about, roughly, almost"
+      },
+      {
+        "id": "ap3-15",
+        "type": "multiple-choice",
+        "prompt": "How is «車站» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "gōngrén"
+          },
+          {
+            "id": "o1",
+            "label": "chēzhàn"
+          },
+          {
+            "id": "o2",
+            "label": "bùguò"
+          },
+          {
+            "id": "o3",
+            "label": "dá"
+          }
+        ],
+        "correct": "o1",
+        "skill": "pronunciation",
+        "target": "車站",
+        "pinyin": "chēzhàn",
+        "zhuyin": "ㄔㄜ ㄓㄢˋ",
+        "audioText": "車站",
+        "explanation": "車站 — chēzhàn (ㄔㄜ ㄓㄢˋ) · station, stop"
+      },
+      {
+        "id": "ap3-16",
+        "type": "multiple-choice",
+        "prompt": "How is «放» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "dá"
+          },
+          {
+            "id": "o1",
+            "label": "gōngrén"
+          },
+          {
+            "id": "o2",
+            "label": "fàng"
+          },
+          {
+            "id": "o3",
+            "label": "bùguò"
+          }
+        ],
+        "correct": "o2",
+        "skill": "pronunciation",
+        "target": "放",
+        "pinyin": "fàng",
+        "zhuyin": "ㄈㄤˋ",
+        "audioText": "放",
+        "explanation": "放 — fàng (ㄈㄤˋ) · to put, to place"
+      },
+      {
+        "id": "ap3-17",
+        "type": "multiple-choice",
+        "prompt": "How is «苦» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "bùguò"
+          },
+          {
+            "id": "o1",
+            "label": "dá"
+          },
+          {
+            "id": "o2",
+            "label": "gōngrén"
+          },
+          {
+            "id": "o3",
+            "label": "kǔ"
+          }
+        ],
+        "correct": "o3",
+        "skill": "pronunciation",
+        "target": "苦",
+        "pinyin": "kǔ",
+        "zhuyin": "ㄎㄨˇ",
+        "audioText": "苦",
+        "explanation": "苦 — kǔ (ㄎㄨˇ) · bitter"
+      },
+      {
+        "id": "ap3-18",
+        "type": "multiple-choice",
+        "prompt": "How is «北部» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "bùguò"
+          },
+          {
+            "id": "o1",
+            "label": "dá"
+          },
+          {
+            "id": "o2",
+            "label": "gōngrén"
+          },
+          {
+            "id": "o3",
+            "label": "běibù"
+          }
+        ],
+        "correct": "o3",
+        "skill": "pronunciation",
+        "target": "北部",
+        "pinyin": "běibù",
+        "zhuyin": "ㄅㄟˇ ㄅㄨˋ",
+        "audioText": "北部",
+        "explanation": "北部 — běibù (ㄅㄟˇ ㄅㄨˋ) · northern part"
+      },
+      {
+        "id": "ap3-19",
+        "type": "multiple-choice",
+        "prompt": "How is «照相» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "gōngrén"
+          },
+          {
+            "id": "o1",
+            "label": "zhàoxiàng"
+          },
+          {
+            "id": "o2",
+            "label": "bùguò"
+          },
+          {
+            "id": "o3",
+            "label": "dá"
+          }
+        ],
+        "correct": "o1",
+        "skill": "pronunciation",
+        "target": "照相",
+        "pinyin": "zhàoxiàng",
+        "zhuyin": "ㄓㄠˋ ㄒㄧㄤˋ",
+        "audioText": "照相",
+        "explanation": "照相 — zhàoxiàng (ㄓㄠˋ ㄒㄧㄤˋ) · to take a photograph"
+      },
+      {
+        "id": "ap3-20",
+        "type": "multiple-choice",
+        "prompt": "How is «南部» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "nánbù"
+          },
+          {
+            "id": "o1",
+            "label": "bùguò"
+          },
+          {
+            "id": "o2",
+            "label": "dá"
+          },
+          {
+            "id": "o3",
+            "label": "gōngrén"
+          }
+        ],
+        "correct": "o0",
+        "skill": "pronunciation",
+        "target": "南部",
+        "pinyin": "nánbù",
+        "zhuyin": "ㄋㄢˊ ㄅㄨˋ",
+        "audioText": "南部",
+        "explanation": "南部 — nánbù (ㄋㄢˊ ㄅㄨˋ) · southern part"
+      },
+      {
+        "id": "ap3-21",
+        "type": "multiple-choice",
+        "prompt": "How is «年級» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "gōngrén"
+          },
+          {
+            "id": "o1",
+            "label": "niánjí"
+          },
+          {
+            "id": "o2",
+            "label": "bùguò"
+          },
+          {
+            "id": "o3",
+            "label": "dá"
+          }
+        ],
+        "correct": "o1",
+        "skill": "pronunciation",
+        "target": "年級",
+        "pinyin": "niánjí",
+        "zhuyin": "ㄋㄧㄢˊ ㄐㄧˊ",
+        "audioText": "年級",
+        "explanation": "年級 — niánjí (ㄋㄧㄢˊ ㄐㄧˊ) · grade"
+      },
+      {
+        "id": "ap3-22",
+        "type": "multiple-choice",
+        "prompt": "How is «棒球» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "gōngrén"
+          },
+          {
+            "id": "o1",
+            "label": "bàngqiú"
+          },
+          {
+            "id": "o2",
+            "label": "bùguò"
+          },
+          {
+            "id": "o3",
+            "label": "dá"
+          }
+        ],
+        "correct": "o1",
+        "skill": "pronunciation",
+        "target": "棒球",
+        "pinyin": "bàngqiú",
+        "zhuyin": "ㄅㄤˋ ㄑㄧㄡˊ",
+        "audioText": "棒球",
+        "explanation": "棒球 — bàngqiú (ㄅㄤˋ ㄑㄧㄡˊ) · baseball"
+      },
+      {
+        "id": "ap3-23",
+        "type": "multiple-choice",
+        "prompt": "How is «冰箱» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "gōngrén"
+          },
+          {
+            "id": "o1",
+            "label": "bīngxiāng"
+          },
+          {
+            "id": "o2",
+            "label": "bùguò"
+          },
+          {
+            "id": "o3",
+            "label": "dá"
+          }
+        ],
+        "correct": "o1",
+        "skill": "pronunciation",
+        "target": "冰箱",
+        "pinyin": "bīngxiāng",
+        "zhuyin": "ㄅㄧㄥ ㄒㄧㄤ",
+        "audioText": "冰箱",
+        "explanation": "冰箱 — bīngxiāng (ㄅㄧㄥ ㄒㄧㄤ) · refrigerator"
+      },
+      {
+        "id": "ap3-24",
+        "type": "multiple-choice",
+        "prompt": "How is «台» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "dá"
+          },
+          {
+            "id": "o1",
+            "label": "gōngrén"
+          },
+          {
+            "id": "o2",
+            "label": "tái"
+          },
+          {
+            "id": "o3",
+            "label": "bùguò"
+          }
+        ],
+        "correct": "o2",
+        "skill": "pronunciation",
+        "target": "台",
+        "pinyin": "tái",
+        "zhuyin": "ㄊㄞˊ",
+        "audioText": "台",
+        "explanation": "台 — tái (ㄊㄞˊ) · the abbreviation of Taiwan / classifier for computer,"
+      }
+    ]
+  }
+]

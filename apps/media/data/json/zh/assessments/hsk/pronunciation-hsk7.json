@@ -1,0 +1,737 @@
+[
+  {
+    "id": "a-pron-hsk7",
+    "title": "Pronunciation · HSK 7",
+    "description": "Match each character to its reading. 24 questions.",
+    "description_en": "Match each character to its reading. 24 questions.",
+    "kind": "vocabulary",
+    "level": "7",
+    "examMappings": {
+      "hsk": "7"
+    },
+    "durationMin": 12,
+    "passScore": 70,
+    "exercises": [
+      {
+        "id": "ap7-1",
+        "type": "multiple-choice",
+        "prompt": "How is «主導» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "zǒngděi"
+          },
+          {
+            "id": "o1",
+            "label": "zhǔdǎo"
+          },
+          {
+            "id": "o2",
+            "label": "qūfú"
+          },
+          {
+            "id": "o3",
+            "label": "jiébái"
+          }
+        ],
+        "correct": "o1",
+        "skill": "pronunciation",
+        "target": "主導",
+        "pinyin": "zhǔdǎo",
+        "zhuyin": "ㄓㄨˇ ㄉㄠˇ",
+        "audioText": "主導",
+        "explanation": "主導 — zhǔdǎo (ㄓㄨˇ ㄉㄠˇ) · leading; dominant; prevailing; to lead; to direct; to dominate"
+      },
+      {
+        "id": "ap7-2",
+        "type": "multiple-choice",
+        "prompt": "How is «屈服» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "zǒngděi"
+          },
+          {
+            "id": "o1",
+            "label": "qūfú"
+          },
+          {
+            "id": "o2",
+            "label": "zhǔdǎo"
+          },
+          {
+            "id": "o3",
+            "label": "jiébái"
+          }
+        ],
+        "correct": "o1",
+        "skill": "pronunciation",
+        "target": "屈服",
+        "pinyin": "qūfú",
+        "zhuyin": "ㄑㄩ ㄈㄨˊ",
+        "audioText": "屈服",
+        "explanation": "屈服 — qūfú (ㄑㄩ ㄈㄨˊ) · to surrender; to succumb; to yield; (as a transitive verb) to defeat; to prevail over"
+      },
+      {
+        "id": "ap7-3",
+        "type": "multiple-choice",
+        "prompt": "How is «潔白» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "jiébái"
+          },
+          {
+            "id": "o1",
+            "label": "zhǔdǎo"
+          },
+          {
+            "id": "o2",
+            "label": "qūfú"
+          },
+          {
+            "id": "o3",
+            "label": "zǒngděi"
+          }
+        ],
+        "correct": "o0",
+        "skill": "pronunciation",
+        "target": "潔白",
+        "pinyin": "jiébái",
+        "zhuyin": "ㄐㄧㄝˊ ㄅㄞˊ",
+        "audioText": "潔白",
+        "explanation": "潔白 — jiébái (ㄐㄧㄝˊ ㄅㄞˊ) · spotlessly white; pure white"
+      },
+      {
+        "id": "ap7-4",
+        "type": "multiple-choice",
+        "prompt": "How is «總得» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "qūfú"
+          },
+          {
+            "id": "o1",
+            "label": "jiébái"
+          },
+          {
+            "id": "o2",
+            "label": "zǒngděi"
+          },
+          {
+            "id": "o3",
+            "label": "zhǔdǎo"
+          }
+        ],
+        "correct": "o2",
+        "skill": "pronunciation",
+        "target": "總得",
+        "pinyin": "zǒngděi",
+        "zhuyin": "ㄗㄨㄥˇ ㄉㄟˇ",
+        "audioText": "總得",
+        "explanation": "總得 — zǒngděi (ㄗㄨㄥˇ ㄉㄟˇ) · must; have to; be bound to"
+      },
+      {
+        "id": "ap7-5",
+        "type": "multiple-choice",
+        "prompt": "How is «總和» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "jiébái"
+          },
+          {
+            "id": "o1",
+            "label": "zǒnghé"
+          },
+          {
+            "id": "o2",
+            "label": "zhǔdǎo"
+          },
+          {
+            "id": "o3",
+            "label": "qūfú"
+          }
+        ],
+        "correct": "o1",
+        "skill": "pronunciation",
+        "target": "總和",
+        "pinyin": "zǒnghé",
+        "zhuyin": "ㄗㄨㄥˇ ㄏㄜˊ",
+        "audioText": "總和",
+        "explanation": "總和 — zǒnghé (ㄗㄨㄥˇ ㄏㄜˊ) · sum"
+      },
+      {
+        "id": "ap7-6",
+        "type": "multiple-choice",
+        "prompt": "How is «注重» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "jiébái"
+          },
+          {
+            "id": "o1",
+            "label": "zhùzhòng"
+          },
+          {
+            "id": "o2",
+            "label": "zhǔdǎo"
+          },
+          {
+            "id": "o3",
+            "label": "qūfú"
+          }
+        ],
+        "correct": "o1",
+        "skill": "pronunciation",
+        "target": "注重",
+        "pinyin": "zhùzhòng",
+        "zhuyin": "ㄓㄨˋ ㄓㄨㄥˋ",
+        "audioText": "注重",
+        "explanation": "注重 — zhùzhòng (ㄓㄨˋ ㄓㄨㄥˋ) · to pay attention to; to emphasize"
+      },
+      {
+        "id": "ap7-7",
+        "type": "multiple-choice",
+        "prompt": "How is «揪» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "jiū"
+          },
+          {
+            "id": "o1",
+            "label": "zhǔdǎo"
+          },
+          {
+            "id": "o2",
+            "label": "qūfú"
+          },
+          {
+            "id": "o3",
+            "label": "jiébái"
+          }
+        ],
+        "correct": "o0",
+        "skill": "pronunciation",
+        "target": "揪",
+        "pinyin": "jiū",
+        "zhuyin": "ㄐㄧㄡ",
+        "audioText": "揪",
+        "explanation": "揪 — jiū (ㄐㄧㄡ) · to seize; to clutch; to grab firmly and pull"
+      },
+      {
+        "id": "ap7-8",
+        "type": "multiple-choice",
+        "prompt": "How is «勸告» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "qūfú"
+          },
+          {
+            "id": "o1",
+            "label": "jiébái"
+          },
+          {
+            "id": "o2",
+            "label": "quàngào"
+          },
+          {
+            "id": "o3",
+            "label": "zhǔdǎo"
+          }
+        ],
+        "correct": "o2",
+        "skill": "pronunciation",
+        "target": "勸告",
+        "pinyin": "quàngào",
+        "zhuyin": "ㄑㄩㄢˋ ㄍㄠˋ",
+        "audioText": "勸告",
+        "explanation": "勸告 — quàngào (ㄑㄩㄢˋ ㄍㄠˋ) · to advise; to urge; to exhort; exhortation; advice; CL:席[xi2]"
+      },
+      {
+        "id": "ap7-9",
+        "type": "multiple-choice",
+        "prompt": "How is «地步» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "qūfú"
+          },
+          {
+            "id": "o1",
+            "label": "jiébái"
+          },
+          {
+            "id": "o2",
+            "label": "dìbù"
+          },
+          {
+            "id": "o3",
+            "label": "zhǔdǎo"
+          }
+        ],
+        "correct": "o2",
+        "skill": "pronunciation",
+        "target": "地步",
+        "pinyin": "dìbù",
+        "zhuyin": "ㄉㄧˋ ㄅㄨˋ",
+        "audioText": "地步",
+        "explanation": "地步 — dìbù (ㄉㄧˋ ㄅㄨˋ) · stage; degree (to which a situation has evolved); a (usu. bad) situation; leeway"
+      },
+      {
+        "id": "ap7-10",
+        "type": "multiple-choice",
+        "prompt": "How is «造化» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "zàohuà"
+          },
+          {
+            "id": "o1",
+            "label": "zhǔdǎo"
+          },
+          {
+            "id": "o2",
+            "label": "qūfú"
+          },
+          {
+            "id": "o3",
+            "label": "jiébái"
+          }
+        ],
+        "correct": "o0",
+        "skill": "pronunciation",
+        "target": "造化",
+        "pinyin": "zàohuà",
+        "zhuyin": "ㄗㄠˋ ㄏㄨㄚˋ",
+        "audioText": "造化",
+        "explanation": "造化 — zàohuà (ㄗㄠˋ ㄏㄨㄚˋ) · (literary) Nature; the Creator"
+      },
+      {
+        "id": "ap7-11",
+        "type": "multiple-choice",
+        "prompt": "How is «斯文» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "qūfú"
+          },
+          {
+            "id": "o1",
+            "label": "jiébái"
+          },
+          {
+            "id": "o2",
+            "label": "sīwén"
+          },
+          {
+            "id": "o3",
+            "label": "zhǔdǎo"
+          }
+        ],
+        "correct": "o2",
+        "skill": "pronunciation",
+        "target": "斯文",
+        "pinyin": "sīwén",
+        "zhuyin": "ㄙ ㄨㄣˊ",
+        "audioText": "斯文",
+        "explanation": "斯文 — sīwén (ㄙ ㄨㄣˊ) · refined; educate; cultured; intellectual; polite; gentle"
+      },
+      {
+        "id": "ap7-12",
+        "type": "multiple-choice",
+        "prompt": "How is «古籍» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "zhǔdǎo"
+          },
+          {
+            "id": "o1",
+            "label": "qūfú"
+          },
+          {
+            "id": "o2",
+            "label": "jiébái"
+          },
+          {
+            "id": "o3",
+            "label": "gǔjí"
+          }
+        ],
+        "correct": "o3",
+        "skill": "pronunciation",
+        "target": "古籍",
+        "pinyin": "gǔjí",
+        "zhuyin": "ㄍㄨˇ ㄐㄧˊ",
+        "audioText": "古籍",
+        "explanation": "古籍 — gǔjí (ㄍㄨˇ ㄐㄧˊ) · ancient text; antique books"
+      },
+      {
+        "id": "ap7-13",
+        "type": "multiple-choice",
+        "prompt": "How is «乞丐» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "zhǔdǎo"
+          },
+          {
+            "id": "o1",
+            "label": "qūfú"
+          },
+          {
+            "id": "o2",
+            "label": "jiébái"
+          },
+          {
+            "id": "o3",
+            "label": "qǐgài"
+          }
+        ],
+        "correct": "o3",
+        "skill": "pronunciation",
+        "target": "乞丐",
+        "pinyin": "qǐgài",
+        "zhuyin": "ㄑㄧˇ ㄍㄞˋ",
+        "audioText": "乞丐",
+        "explanation": "乞丐 — qǐgài (ㄑㄧˇ ㄍㄞˋ) · beggar"
+      },
+      {
+        "id": "ap7-14",
+        "type": "multiple-choice",
+        "prompt": "How is «原野» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "jiébái"
+          },
+          {
+            "id": "o1",
+            "label": "yuányě"
+          },
+          {
+            "id": "o2",
+            "label": "zhǔdǎo"
+          },
+          {
+            "id": "o3",
+            "label": "qūfú"
+          }
+        ],
+        "correct": "o1",
+        "skill": "pronunciation",
+        "target": "原野",
+        "pinyin": "yuányě",
+        "zhuyin": "ㄩㄢˊ ㄧㄝˇ",
+        "audioText": "原野",
+        "explanation": "原野 — yuányě (ㄩㄢˊ ㄧㄝˇ) · plain; open country"
+      },
+      {
+        "id": "ap7-15",
+        "type": "multiple-choice",
+        "prompt": "How is «先天» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "xiāntiān"
+          },
+          {
+            "id": "o1",
+            "label": "zhǔdǎo"
+          },
+          {
+            "id": "o2",
+            "label": "qūfú"
+          },
+          {
+            "id": "o3",
+            "label": "jiébái"
+          }
+        ],
+        "correct": "o0",
+        "skill": "pronunciation",
+        "target": "先天",
+        "pinyin": "xiāntiān",
+        "zhuyin": "ㄒㄧㄢ ㄊㄧㄢ",
+        "audioText": "先天",
+        "explanation": "先天 — xiāntiān (ㄒㄧㄢ ㄊㄧㄢ) · embryonic period (contrasted with 後天|后天[hou4 tian1]); inborn; innate; natural"
+      },
+      {
+        "id": "ap7-16",
+        "type": "multiple-choice",
+        "prompt": "How is «物產» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "wùchǎn"
+          },
+          {
+            "id": "o1",
+            "label": "zhǔdǎo"
+          },
+          {
+            "id": "o2",
+            "label": "qūfú"
+          },
+          {
+            "id": "o3",
+            "label": "jiébái"
+          }
+        ],
+        "correct": "o0",
+        "skill": "pronunciation",
+        "target": "物產",
+        "pinyin": "wùchǎn",
+        "zhuyin": "ㄨˋ ㄔㄢˇ",
+        "audioText": "物產",
+        "explanation": "物產 — wùchǎn (ㄨˋ ㄔㄢˇ) · products; produce; natural resources"
+      },
+      {
+        "id": "ap7-17",
+        "type": "multiple-choice",
+        "prompt": "How is «逮捕» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "jiébái"
+          },
+          {
+            "id": "o1",
+            "label": "dǎibǔ"
+          },
+          {
+            "id": "o2",
+            "label": "zhǔdǎo"
+          },
+          {
+            "id": "o3",
+            "label": "qūfú"
+          }
+        ],
+        "correct": "o1",
+        "skill": "pronunciation",
+        "target": "逮捕",
+        "pinyin": "dǎibǔ",
+        "zhuyin": "ㄉㄞˇ ㄅㄨˇ",
+        "audioText": "逮捕",
+        "explanation": "逮捕 — dǎibǔ (ㄉㄞˇ ㄅㄨˇ) · to arrest; to apprehend; to take into custody; Taiwan pr. [dai3bu3]"
+      },
+      {
+        "id": "ap7-18",
+        "type": "multiple-choice",
+        "prompt": "How is «撰寫» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "zhuànxiě"
+          },
+          {
+            "id": "o1",
+            "label": "zhǔdǎo"
+          },
+          {
+            "id": "o2",
+            "label": "qūfú"
+          },
+          {
+            "id": "o3",
+            "label": "jiébái"
+          }
+        ],
+        "correct": "o0",
+        "skill": "pronunciation",
+        "target": "撰寫",
+        "pinyin": "zhuànxiě",
+        "zhuyin": "ㄓㄨㄢˋ ㄒㄧㄝˇ",
+        "audioText": "撰寫",
+        "explanation": "撰寫 — zhuànxiě (ㄓㄨㄢˋ ㄒㄧㄝˇ) · to write; to compose"
+      },
+      {
+        "id": "ap7-19",
+        "type": "multiple-choice",
+        "prompt": "How is «健身» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "qūfú"
+          },
+          {
+            "id": "o1",
+            "label": "jiébái"
+          },
+          {
+            "id": "o2",
+            "label": "jiànshēn"
+          },
+          {
+            "id": "o3",
+            "label": "zhǔdǎo"
+          }
+        ],
+        "correct": "o2",
+        "skill": "pronunciation",
+        "target": "健身",
+        "pinyin": "jiànshēn",
+        "zhuyin": "ㄐㄧㄢˋ ㄕㄣ",
+        "audioText": "健身",
+        "explanation": "健身 — jiànshēn (ㄐㄧㄢˋ ㄕㄣ) · to exercise; to keep fit; to work out; physical exercise"
+      },
+      {
+        "id": "ap7-20",
+        "type": "multiple-choice",
+        "prompt": "How is «胸» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "jiébái"
+          },
+          {
+            "id": "o1",
+            "label": "xiōng"
+          },
+          {
+            "id": "o2",
+            "label": "zhǔdǎo"
+          },
+          {
+            "id": "o3",
+            "label": "qūfú"
+          }
+        ],
+        "correct": "o1",
+        "skill": "pronunciation",
+        "target": "胸",
+        "pinyin": "xiōng",
+        "zhuyin": "ㄒㄩㄥ",
+        "audioText": "胸",
+        "explanation": "胸 — xiōng (ㄒㄩㄥ) · variant of 胸[xiong1]; chest; bosom; heart; mind; thorax"
+      },
+      {
+        "id": "ap7-21",
+        "type": "multiple-choice",
+        "prompt": "How is «侵襲» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "jiébái"
+          },
+          {
+            "id": "o1",
+            "label": "qīnxí"
+          },
+          {
+            "id": "o2",
+            "label": "zhǔdǎo"
+          },
+          {
+            "id": "o3",
+            "label": "qūfú"
+          }
+        ],
+        "correct": "o1",
+        "skill": "pronunciation",
+        "target": "侵襲",
+        "pinyin": "qīnxí",
+        "zhuyin": "ㄑㄧㄣ ㄒㄧˊ",
+        "audioText": "侵襲",
+        "explanation": "侵襲 — qīnxí (ㄑㄧㄣ ㄒㄧˊ) · to invade; to assail; onslaught"
+      },
+      {
+        "id": "ap7-22",
+        "type": "multiple-choice",
+        "prompt": "How is «治標» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "zhìbiāo"
+          },
+          {
+            "id": "o1",
+            "label": "zhǔdǎo"
+          },
+          {
+            "id": "o2",
+            "label": "qūfú"
+          },
+          {
+            "id": "o3",
+            "label": "jiébái"
+          }
+        ],
+        "correct": "o0",
+        "skill": "pronunciation",
+        "target": "治標",
+        "pinyin": "zhìbiāo",
+        "zhuyin": "ㄓˋ ㄅㄧㄠ",
+        "audioText": "治標",
+        "explanation": "治標 — zhìbiāo (ㄓˋ ㄅㄧㄠ) · to treat only the symptoms but not the root cause"
+      },
+      {
+        "id": "ap7-23",
+        "type": "multiple-choice",
+        "prompt": "How is «注目» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "jiébái"
+          },
+          {
+            "id": "o1",
+            "label": "zhùmù"
+          },
+          {
+            "id": "o2",
+            "label": "zhǔdǎo"
+          },
+          {
+            "id": "o3",
+            "label": "qūfú"
+          }
+        ],
+        "correct": "o1",
+        "skill": "pronunciation",
+        "target": "注目",
+        "pinyin": "zhùmù",
+        "zhuyin": "ㄓㄨˋ ㄇㄨˋ",
+        "audioText": "注目",
+        "explanation": "注目 — zhùmù (ㄓㄨˋ ㄇㄨˋ) · attention; to stare at; to fix attention on sth"
+      },
+      {
+        "id": "ap7-24",
+        "type": "multiple-choice",
+        "prompt": "How is «宣誓» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "xuānshì"
+          },
+          {
+            "id": "o1",
+            "label": "zhǔdǎo"
+          },
+          {
+            "id": "o2",
+            "label": "qūfú"
+          },
+          {
+            "id": "o3",
+            "label": "jiébái"
+          }
+        ],
+        "correct": "o0",
+        "skill": "pronunciation",
+        "target": "宣誓",
+        "pinyin": "xuānshì",
+        "zhuyin": "ㄒㄩㄢ ㄕˋ",
+        "audioText": "宣誓",
+        "explanation": "宣誓 — xuānshì (ㄒㄩㄢ ㄕˋ) · to swear an oath (of office); to make a vow"
+      }
+    ]
+  }
+]

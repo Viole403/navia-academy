@@ -41,6 +41,7 @@ Compact guidance for AI coding agents. Every line is something an agent would li
 - Learner UI is **Indonesian-first**: glossable/prose fields carry `_id` (Indonesian) + `_en` (English) variants; `translation` stays English canonical (quiz/answer logic uses it).
 - `placement.json` per language must be a **flat array** of questions, never an object — an object shape yields an empty question bank.
 - Dedup keys (so the same asset is generated once): audio = `text+locale+gender`; images = `translation` hash (shared across languages via `translation_id`).
+- `data/json/zh/assessments/hsk/pronunciation-hsk*.json` are **generated** by `bun run generate-pronunciation` (apps/media). Don't hand-edit them; change the vocabulary or the script. Selection is seeded from the item id, so output is stable — a diff after re-running means the vocabulary changed. Each question asks which reading belongs to a character and renders through the existing multiple-choice path; scoring a recording is a separate, later concern.
 
 ## Media Studio dev gotchas
 

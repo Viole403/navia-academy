@@ -1,0 +1,737 @@
+[
+  {
+    "id": "a-pron-hsk4",
+    "title": "Pronunciation · HSK 4",
+    "description": "Match each character to its reading. 24 questions.",
+    "description_en": "Match each character to its reading. 24 questions.",
+    "kind": "vocabulary",
+    "level": "4",
+    "examMappings": {
+      "hsk": "4"
+    },
+    "durationMin": 12,
+    "passScore": 70,
+    "exercises": [
+      {
+        "id": "ap4-1",
+        "type": "multiple-choice",
+        "prompt": "How is «炒» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "xiāngzi"
+          },
+          {
+            "id": "o1",
+            "label": "bānjiā"
+          },
+          {
+            "id": "o2",
+            "label": "chǎo"
+          },
+          {
+            "id": "o3",
+            "label": "shìyǒu"
+          }
+        ],
+        "correct": "o2",
+        "skill": "pronunciation",
+        "target": "炒",
+        "pinyin": "chǎo",
+        "zhuyin": "ㄔㄠˇ",
+        "audioText": "炒",
+        "explanation": "炒 — chǎo (ㄔㄠˇ) · to fry"
+      },
+      {
+        "id": "ap4-2",
+        "type": "multiple-choice",
+        "prompt": "How is «室友» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "xiāngzi"
+          },
+          {
+            "id": "o1",
+            "label": "bānjiā"
+          },
+          {
+            "id": "o2",
+            "label": "shìyǒu"
+          },
+          {
+            "id": "o3",
+            "label": "chǎo"
+          }
+        ],
+        "correct": "o2",
+        "skill": "pronunciation",
+        "target": "室友",
+        "pinyin": "shìyǒu",
+        "zhuyin": "ㄕˋ ㄧㄡˇ",
+        "audioText": "室友",
+        "explanation": "室友 — shìyǒu (ㄕˋ ㄧㄡˇ) · roommate"
+      },
+      {
+        "id": "ap4-3",
+        "type": "multiple-choice",
+        "prompt": "How is «箱子» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "chǎo"
+          },
+          {
+            "id": "o1",
+            "label": "shìyǒu"
+          },
+          {
+            "id": "o2",
+            "label": "bānjiā"
+          },
+          {
+            "id": "o3",
+            "label": "xiāngzi"
+          }
+        ],
+        "correct": "o3",
+        "skill": "pronunciation",
+        "target": "箱子",
+        "pinyin": "xiāngzi",
+        "zhuyin": "ㄒㄧㄤ ㄗ˙",
+        "audioText": "箱子",
+        "explanation": "箱子 — xiāngzi (ㄒㄧㄤ ㄗ˙) · suitcase; chest; box; case; trunk; CL:隻|只[zhi1],個|个[ge4]"
+      },
+      {
+        "id": "ap4-4",
+        "type": "multiple-choice",
+        "prompt": "How is «搬家» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "bānjiā"
+          },
+          {
+            "id": "o1",
+            "label": "chǎo"
+          },
+          {
+            "id": "o2",
+            "label": "shìyǒu"
+          },
+          {
+            "id": "o3",
+            "label": "xiāngzi"
+          }
+        ],
+        "correct": "o0",
+        "skill": "pronunciation",
+        "target": "搬家",
+        "pinyin": "bānjiā",
+        "zhuyin": "ㄅㄢ ㄐㄧㄚ",
+        "audioText": "搬家",
+        "explanation": "搬家 — bānjiā (ㄅㄢ ㄐㄧㄚ) · to move house, to relocate"
+      },
+      {
+        "id": "ap4-5",
+        "type": "multiple-choice",
+        "prompt": "How is «黑色» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "xiāngzi"
+          },
+          {
+            "id": "o1",
+            "label": "hēisè"
+          },
+          {
+            "id": "o2",
+            "label": "chǎo"
+          },
+          {
+            "id": "o3",
+            "label": "shìyǒu"
+          }
+        ],
+        "correct": "o1",
+        "skill": "pronunciation",
+        "target": "黑色",
+        "pinyin": "hēisè",
+        "zhuyin": "ㄏㄟ ㄙㄜˋ",
+        "audioText": "黑色",
+        "explanation": "黑色 — hēisè (ㄏㄟ ㄙㄜˋ) · black"
+      },
+      {
+        "id": "ap4-6",
+        "type": "multiple-choice",
+        "prompt": "How is «結束» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "chǎo"
+          },
+          {
+            "id": "o1",
+            "label": "shìyǒu"
+          },
+          {
+            "id": "o2",
+            "label": "xiāngzi"
+          },
+          {
+            "id": "o3",
+            "label": "jiéshù"
+          }
+        ],
+        "correct": "o3",
+        "skill": "pronunciation",
+        "target": "結束",
+        "pinyin": "jiéshù",
+        "zhuyin": "ㄐㄧㄝˊ ㄕㄨˋ",
+        "audioText": "結束",
+        "explanation": "結束 — jiéshù (ㄐㄧㄝˊ ㄕㄨˋ) · end"
+      },
+      {
+        "id": "ap4-7",
+        "type": "multiple-choice",
+        "prompt": "How is «放心» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "fàngxīn"
+          },
+          {
+            "id": "o1",
+            "label": "chǎo"
+          },
+          {
+            "id": "o2",
+            "label": "shìyǒu"
+          },
+          {
+            "id": "o3",
+            "label": "xiāngzi"
+          }
+        ],
+        "correct": "o0",
+        "skill": "pronunciation",
+        "target": "放心",
+        "pinyin": "fàngxīn",
+        "zhuyin": "ㄈㄤˋ ㄒㄧㄣ",
+        "audioText": "放心",
+        "explanation": "放心 — fàngxīn (ㄈㄤˋ ㄒㄧㄣ) · to feel relieved, to feel assured"
+      },
+      {
+        "id": "ap4-8",
+        "type": "multiple-choice",
+        "prompt": "How is «牙刷» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "yáshuā"
+          },
+          {
+            "id": "o1",
+            "label": "chǎo"
+          },
+          {
+            "id": "o2",
+            "label": "shìyǒu"
+          },
+          {
+            "id": "o3",
+            "label": "xiāngzi"
+          }
+        ],
+        "correct": "o0",
+        "skill": "pronunciation",
+        "target": "牙刷",
+        "pinyin": "yáshuā",
+        "zhuyin": "ㄧㄚˊ ㄕㄨㄚ",
+        "audioText": "牙刷",
+        "explanation": "牙刷 — yáshuā (ㄧㄚˊ ㄕㄨㄚ) · toothbrush"
+      },
+      {
+        "id": "ap4-9",
+        "type": "multiple-choice",
+        "prompt": "How is «許多» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "xǔduō"
+          },
+          {
+            "id": "o1",
+            "label": "chǎo"
+          },
+          {
+            "id": "o2",
+            "label": "shìyǒu"
+          },
+          {
+            "id": "o3",
+            "label": "xiāngzi"
+          }
+        ],
+        "correct": "o0",
+        "skill": "pronunciation",
+        "target": "許多",
+        "pinyin": "xǔduō",
+        "zhuyin": "ㄒㄩˇ ㄉㄨㄛ",
+        "audioText": "許多",
+        "explanation": "許多 — xǔduō (ㄒㄩˇ ㄉㄨㄛ) · many, much, a lot of"
+      },
+      {
+        "id": "ap4-10",
+        "type": "multiple-choice",
+        "prompt": "How is «影響» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "yǐngxiǎng"
+          },
+          {
+            "id": "o1",
+            "label": "chǎo"
+          },
+          {
+            "id": "o2",
+            "label": "shìyǒu"
+          },
+          {
+            "id": "o3",
+            "label": "xiāngzi"
+          }
+        ],
+        "correct": "o0",
+        "skill": "pronunciation",
+        "target": "影響",
+        "pinyin": "yǐngxiǎng",
+        "zhuyin": "ㄧㄥˇㄒㄧㄤˇ",
+        "audioText": "影響",
+        "explanation": "影響 — yǐngxiǎng (ㄧㄥˇㄒㄧㄤˇ) · influence; to influence"
+      },
+      {
+        "id": "ap4-11",
+        "type": "multiple-choice",
+        "prompt": "How is «忘記» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "chǎo"
+          },
+          {
+            "id": "o1",
+            "label": "shìyǒu"
+          },
+          {
+            "id": "o2",
+            "label": "xiāngzi"
+          },
+          {
+            "id": "o3",
+            "label": "wàngjì"
+          }
+        ],
+        "correct": "o3",
+        "skill": "pronunciation",
+        "target": "忘記",
+        "pinyin": "wàngjì",
+        "zhuyin": "ㄨㄤˋ ㄐㄧˋ",
+        "audioText": "忘記",
+        "explanation": "忘記 — wàngjì (ㄨㄤˋ ㄐㄧˋ) · to forget"
+      },
+      {
+        "id": "ap4-12",
+        "type": "multiple-choice",
+        "prompt": "How is «書包» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "xiāngzi"
+          },
+          {
+            "id": "o1",
+            "label": "shūbāo"
+          },
+          {
+            "id": "o2",
+            "label": "chǎo"
+          },
+          {
+            "id": "o3",
+            "label": "shìyǒu"
+          }
+        ],
+        "correct": "o1",
+        "skill": "pronunciation",
+        "target": "書包",
+        "pinyin": "shūbāo",
+        "zhuyin": "ㄕㄨ ㄅㄠ",
+        "audioText": "書包",
+        "explanation": "書包 — shūbāo (ㄕㄨ ㄅㄠ) · schoolbag, satchel"
+      },
+      {
+        "id": "ap4-13",
+        "type": "multiple-choice",
+        "prompt": "How is «越» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "shìyǒu"
+          },
+          {
+            "id": "o1",
+            "label": "xiāngzi"
+          },
+          {
+            "id": "o2",
+            "label": "yuè"
+          },
+          {
+            "id": "o3",
+            "label": "chǎo"
+          }
+        ],
+        "correct": "o2",
+        "skill": "pronunciation",
+        "target": "越",
+        "pinyin": "yuè",
+        "zhuyin": "ㄩㄝˋ",
+        "audioText": "越",
+        "explanation": "越 — yuè (ㄩㄝˋ) · more and more"
+      },
+      {
+        "id": "ap4-14",
+        "type": "multiple-choice",
+        "prompt": "How is «肥皂» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "chǎo"
+          },
+          {
+            "id": "o1",
+            "label": "shìyǒu"
+          },
+          {
+            "id": "o2",
+            "label": "xiāngzi"
+          },
+          {
+            "id": "o3",
+            "label": "féizào"
+          }
+        ],
+        "correct": "o3",
+        "skill": "pronunciation",
+        "target": "肥皂",
+        "pinyin": "féizào",
+        "zhuyin": "ㄈㄟˊ ㄗㄠˋ",
+        "audioText": "肥皂",
+        "explanation": "肥皂 — féizào (ㄈㄟˊ ㄗㄠˋ) · soap"
+      },
+      {
+        "id": "ap4-15",
+        "type": "multiple-choice",
+        "prompt": "How is «手套» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "shǒutào"
+          },
+          {
+            "id": "o1",
+            "label": "chǎo"
+          },
+          {
+            "id": "o2",
+            "label": "shìyǒu"
+          },
+          {
+            "id": "o3",
+            "label": "xiāngzi"
+          }
+        ],
+        "correct": "o0",
+        "skill": "pronunciation",
+        "target": "手套",
+        "pinyin": "shǒutào",
+        "zhuyin": "ㄕㄡˇ ㄊㄠˋ",
+        "audioText": "手套",
+        "explanation": "手套 — shǒutào (ㄕㄡˇ ㄊㄠˋ) · glove(s)"
+      },
+      {
+        "id": "ap4-16",
+        "type": "multiple-choice",
+        "prompt": "How is «沒想到» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "méi xiǎngdào"
+          },
+          {
+            "id": "o1",
+            "label": "chǎo"
+          },
+          {
+            "id": "o2",
+            "label": "shìyǒu"
+          },
+          {
+            "id": "o3",
+            "label": "xiāngzi"
+          }
+        ],
+        "correct": "o0",
+        "skill": "pronunciation",
+        "target": "沒想到",
+        "pinyin": "méi xiǎngdào",
+        "zhuyin": "ㄇㄟˊ ㄒㄧㄤˇ ㄉㄠˋ",
+        "audioText": "沒想到",
+        "explanation": "沒想到 — méi xiǎngdào (ㄇㄟˊ ㄒㄧㄤˇ ㄉㄠˋ) · didn't expect"
+      },
+      {
+        "id": "ap4-17",
+        "type": "multiple-choice",
+        "prompt": "How is «作文» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "xiāngzi"
+          },
+          {
+            "id": "o1",
+            "label": "zuòwén"
+          },
+          {
+            "id": "o2",
+            "label": "chǎo"
+          },
+          {
+            "id": "o3",
+            "label": "shìyǒu"
+          }
+        ],
+        "correct": "o1",
+        "skill": "pronunciation",
+        "target": "作文",
+        "pinyin": "zuòwén",
+        "zhuyin": "ㄗㄨㄛˋ ㄨㄣˊ",
+        "audioText": "作文",
+        "explanation": "作文 — zuòwén (ㄗㄨㄛˋ ㄨㄣˊ) · composition"
+      },
+      {
+        "id": "ap4-18",
+        "type": "multiple-choice",
+        "prompt": "How is «爬» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "pá"
+          },
+          {
+            "id": "o1",
+            "label": "chǎo"
+          },
+          {
+            "id": "o2",
+            "label": "shìyǒu"
+          },
+          {
+            "id": "o3",
+            "label": "xiāngzi"
+          }
+        ],
+        "correct": "o0",
+        "skill": "pronunciation",
+        "target": "爬",
+        "pinyin": "pá",
+        "zhuyin": "ㄆㄚˊ",
+        "audioText": "爬",
+        "explanation": "爬 — pá (ㄆㄚˊ) · to climb / to crawl"
+      },
+      {
+        "id": "ap4-19",
+        "type": "multiple-choice",
+        "prompt": "How is «吉他» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "chǎo"
+          },
+          {
+            "id": "o1",
+            "label": "shìyǒu"
+          },
+          {
+            "id": "o2",
+            "label": "xiāngzi"
+          },
+          {
+            "id": "o3",
+            "label": "jítā"
+          }
+        ],
+        "correct": "o3",
+        "skill": "pronunciation",
+        "target": "吉他",
+        "pinyin": "jítā",
+        "zhuyin": "ㄐㄧˊ ㄊㄚ",
+        "audioText": "吉他",
+        "explanation": "吉他 — jítā (ㄐㄧˊ ㄊㄚ) · (loanword) guitar; CL:把[ba3]"
+      },
+      {
+        "id": "ap4-20",
+        "type": "multiple-choice",
+        "prompt": "How is «感覺» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "chǎo"
+          },
+          {
+            "id": "o1",
+            "label": "shìyǒu"
+          },
+          {
+            "id": "o2",
+            "label": "xiāngzi"
+          },
+          {
+            "id": "o3",
+            "label": "gǎnjué"
+          }
+        ],
+        "correct": "o3",
+        "skill": "pronunciation",
+        "target": "感覺",
+        "pinyin": "gǎnjué",
+        "zhuyin": "ㄍㄢˇ ㄐㄩㄝˊ",
+        "audioText": "感覺",
+        "explanation": "感覺 — gǎnjué (ㄍㄢˇ ㄐㄩㄝˊ) · feeling / be aware of, to feel"
+      },
+      {
+        "id": "ap4-21",
+        "type": "multiple-choice",
+        "prompt": "How is «選擇» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "shìyǒu"
+          },
+          {
+            "id": "o1",
+            "label": "xiāngzi"
+          },
+          {
+            "id": "o2",
+            "label": "xuǎnzé"
+          },
+          {
+            "id": "o3",
+            "label": "chǎo"
+          }
+        ],
+        "correct": "o2",
+        "skill": "pronunciation",
+        "target": "選擇",
+        "pinyin": "xuǎnzé",
+        "zhuyin": "ㄒㄩㄢˇ ㄗㄜˊ",
+        "audioText": "選擇",
+        "explanation": "選擇 — xuǎnzé (ㄒㄩㄢˇ ㄗㄜˊ) · to choose, to select / choice"
+      },
+      {
+        "id": "ap4-22",
+        "type": "multiple-choice",
+        "prompt": "How is «正» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "xiāngzi"
+          },
+          {
+            "id": "o1",
+            "label": "zhèng"
+          },
+          {
+            "id": "o2",
+            "label": "chǎo"
+          },
+          {
+            "id": "o3",
+            "label": "shìyǒu"
+          }
+        ],
+        "correct": "o1",
+        "skill": "pronunciation",
+        "target": "正",
+        "pinyin": "zhèng",
+        "zhuyin": "ㄓㄥˋ",
+        "audioText": "正",
+        "explanation": "正 — zhèng (ㄓㄥˋ) · while"
+      },
+      {
+        "id": "ap4-23",
+        "type": "multiple-choice",
+        "prompt": "How is «父母» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "fùmǔ"
+          },
+          {
+            "id": "o1",
+            "label": "chǎo"
+          },
+          {
+            "id": "o2",
+            "label": "shìyǒu"
+          },
+          {
+            "id": "o3",
+            "label": "xiāngzi"
+          }
+        ],
+        "correct": "o0",
+        "skill": "pronunciation",
+        "target": "父母",
+        "pinyin": "fùmǔ",
+        "zhuyin": "ㄈㄨˋ ㄇㄨˇ",
+        "audioText": "父母",
+        "explanation": "父母 — fùmǔ (ㄈㄨˋ ㄇㄨˇ) · parents"
+      },
+      {
+        "id": "ap4-24",
+        "type": "multiple-choice",
+        "prompt": "How is «須» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "shìyǒu"
+          },
+          {
+            "id": "o1",
+            "label": "xiāngzi"
+          },
+          {
+            "id": "o2",
+            "label": "xū"
+          },
+          {
+            "id": "o3",
+            "label": "chǎo"
+          }
+        ],
+        "correct": "o2",
+        "skill": "pronunciation",
+        "target": "須",
+        "pinyin": "xū",
+        "zhuyin": "ㄒㄩ",
+        "audioText": "須",
+        "explanation": "須 — xū (ㄒㄩ) · must; to have to; to wait; beard; mustache; feeler (of an insect etc); tassel"
+      }
+    ]
+  }
+]

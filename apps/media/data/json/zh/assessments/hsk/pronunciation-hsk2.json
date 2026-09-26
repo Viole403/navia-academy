@@ -1,0 +1,737 @@
+[
+  {
+    "id": "a-pron-hsk2",
+    "title": "Pronunciation · HSK 2",
+    "description": "Match each character to its reading. 24 questions.",
+    "description_en": "Match each character to its reading. 24 questions.",
+    "kind": "vocabulary",
+    "level": "2",
+    "examMappings": {
+      "hsk": "2"
+    },
+    "durationMin": 12,
+    "passScore": 70,
+    "exercises": [
+      {
+        "id": "ap2-1",
+        "type": "multiple-choice",
+        "prompt": "How is «着» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "jìchéngchē"
+          },
+          {
+            "id": "o1",
+            "label": "guo"
+          },
+          {
+            "id": "o2",
+            "label": "huì"
+          },
+          {
+            "id": "o3",
+            "label": "zhe"
+          }
+        ],
+        "correct": "o3",
+        "skill": "pronunciation",
+        "target": "着",
+        "pinyin": "zhe",
+        "zhuyin": "ㄓㄜ˙",
+        "audioText": "着",
+        "explanation": "着 — zhe (ㄓㄜ˙) · particle (ongoing state)"
+      },
+      {
+        "id": "ap2-2",
+        "type": "multiple-choice",
+        "prompt": "How is «計程車» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "zhe"
+          },
+          {
+            "id": "o1",
+            "label": "guo"
+          },
+          {
+            "id": "o2",
+            "label": "huì"
+          },
+          {
+            "id": "o3",
+            "label": "jìchéngchē"
+          }
+        ],
+        "correct": "o3",
+        "skill": "pronunciation",
+        "target": "計程車",
+        "pinyin": "jìchéngchē",
+        "zhuyin": "ㄐㄧˋ ㄔㄥˊ ㄔㄜ",
+        "audioText": "計程車",
+        "explanation": "計程車 — jìchéngchē (ㄐㄧˋ ㄔㄥˊ ㄔㄜ) · taxi"
+      },
+      {
+        "id": "ap2-3",
+        "type": "multiple-choice",
+        "prompt": "How is «过» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "zhe"
+          },
+          {
+            "id": "o1",
+            "label": "jìchéngchē"
+          },
+          {
+            "id": "o2",
+            "label": "huì"
+          },
+          {
+            "id": "o3",
+            "label": "guo"
+          }
+        ],
+        "correct": "o3",
+        "skill": "pronunciation",
+        "target": "过",
+        "pinyin": "guo",
+        "zhuyin": "ㄍㄨㄛ˙",
+        "audioText": "过",
+        "explanation": "过 — guo (ㄍㄨㄛ˙) · particle (experience)"
+      },
+      {
+        "id": "ap2-4",
+        "type": "multiple-choice",
+        "prompt": "How is «會» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "zhe"
+          },
+          {
+            "id": "o1",
+            "label": "jìchéngchē"
+          },
+          {
+            "id": "o2",
+            "label": "guo"
+          },
+          {
+            "id": "o3",
+            "label": "huì"
+          }
+        ],
+        "correct": "o3",
+        "skill": "pronunciation",
+        "target": "會",
+        "pinyin": "huì",
+        "zhuyin": "ㄏㄨㄟˋ",
+        "audioText": "會",
+        "explanation": "會 — huì (ㄏㄨㄟˋ) · can, know how to / will"
+      },
+      {
+        "id": "ap2-5",
+        "type": "multiple-choice",
+        "prompt": "How is «包子» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "bāozi"
+          },
+          {
+            "id": "o1",
+            "label": "zhe"
+          },
+          {
+            "id": "o2",
+            "label": "jìchéngchē"
+          },
+          {
+            "id": "o3",
+            "label": "guo"
+          }
+        ],
+        "correct": "o0",
+        "skill": "pronunciation",
+        "target": "包子",
+        "pinyin": "bāozi",
+        "zhuyin": "ㄅㄠ ㄗ˙",
+        "audioText": "包子",
+        "explanation": "包子 — bāozi (ㄅㄠ ㄗ˙) · steamed stuffed bun"
+      },
+      {
+        "id": "ap2-6",
+        "type": "multiple-choice",
+        "prompt": "How is «腳» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "jìchéngchē"
+          },
+          {
+            "id": "o1",
+            "label": "guo"
+          },
+          {
+            "id": "o2",
+            "label": "jiǎo"
+          },
+          {
+            "id": "o3",
+            "label": "zhe"
+          }
+        ],
+        "correct": "o2",
+        "skill": "pronunciation",
+        "target": "腳",
+        "pinyin": "jiǎo",
+        "zhuyin": "ㄐㄧㄠˇ",
+        "audioText": "腳",
+        "explanation": "腳 — jiǎo (ㄐㄧㄠˇ) · foot"
+      },
+      {
+        "id": "ap2-7",
+        "type": "multiple-choice",
+        "prompt": "How is «所以» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "zhe"
+          },
+          {
+            "id": "o1",
+            "label": "jìchéngchē"
+          },
+          {
+            "id": "o2",
+            "label": "guo"
+          },
+          {
+            "id": "o3",
+            "label": "suǒyǐ"
+          }
+        ],
+        "correct": "o3",
+        "skill": "pronunciation",
+        "target": "所以",
+        "pinyin": "suǒyǐ",
+        "zhuyin": "ㄙㄨㄛˇㄧˇ",
+        "audioText": "所以",
+        "explanation": "所以 — suǒyǐ (ㄙㄨㄛˇㄧˇ) · so, therefore"
+      },
+      {
+        "id": "ap2-8",
+        "type": "multiple-choice",
+        "prompt": "How is «餃» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "zhe"
+          },
+          {
+            "id": "o1",
+            "label": "jìchéngchē"
+          },
+          {
+            "id": "o2",
+            "label": "guo"
+          },
+          {
+            "id": "o3",
+            "label": "jiǎo"
+          }
+        ],
+        "correct": "o3",
+        "skill": "pronunciation",
+        "target": "餃",
+        "pinyin": "jiǎo",
+        "zhuyin": "ㄐㄧㄠˇ",
+        "audioText": "餃",
+        "explanation": "餃 — jiǎo (ㄐㄧㄠˇ) · dumplings with meat filling"
+      },
+      {
+        "id": "ap2-9",
+        "type": "multiple-choice",
+        "prompt": "How is «號» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "guo"
+          },
+          {
+            "id": "o1",
+            "label": "hào"
+          },
+          {
+            "id": "o2",
+            "label": "zhe"
+          },
+          {
+            "id": "o3",
+            "label": "jìchéngchē"
+          }
+        ],
+        "correct": "o1",
+        "skill": "pronunciation",
+        "target": "號",
+        "pinyin": "hào",
+        "zhuyin": "ㄏㄠˋ",
+        "audioText": "號",
+        "explanation": "號 — hào (ㄏㄠˋ) · number / day / grade"
+      },
+      {
+        "id": "ap2-10",
+        "type": "multiple-choice",
+        "prompt": "How is «醫生» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "yīshēng"
+          },
+          {
+            "id": "o1",
+            "label": "zhe"
+          },
+          {
+            "id": "o2",
+            "label": "jìchéngchē"
+          },
+          {
+            "id": "o3",
+            "label": "guo"
+          }
+        ],
+        "correct": "o0",
+        "skill": "pronunciation",
+        "target": "醫生",
+        "pinyin": "yīshēng",
+        "zhuyin": "ㄧ ㄕㄥ",
+        "audioText": "醫生",
+        "explanation": "醫生 — yīshēng (ㄧ ㄕㄥ) · doctor; CL:個|个[ge4],位[wei4],名[ming2]"
+      },
+      {
+        "id": "ap2-11",
+        "type": "multiple-choice",
+        "prompt": "How is «件» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "guo"
+          },
+          {
+            "id": "o1",
+            "label": "jiàn"
+          },
+          {
+            "id": "o2",
+            "label": "zhe"
+          },
+          {
+            "id": "o3",
+            "label": "jìchéngchē"
+          }
+        ],
+        "correct": "o1",
+        "skill": "pronunciation",
+        "target": "件",
+        "pinyin": "jiàn",
+        "zhuyin": "ㄐㄧㄢˋ",
+        "audioText": "件",
+        "explanation": "件 — jiàn (ㄐㄧㄢˋ) · classifier for events and clothes"
+      },
+      {
+        "id": "ap2-12",
+        "type": "multiple-choice",
+        "prompt": "How is «少» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "jìchéngchē"
+          },
+          {
+            "id": "o1",
+            "label": "guo"
+          },
+          {
+            "id": "o2",
+            "label": "shǎo"
+          },
+          {
+            "id": "o3",
+            "label": "zhe"
+          }
+        ],
+        "correct": "o2",
+        "skill": "pronunciation",
+        "target": "少",
+        "pinyin": "shǎo",
+        "zhuyin": "ㄕㄠˇ",
+        "audioText": "少",
+        "explanation": "少 — shǎo (ㄕㄠˇ) · less, little, few / lack, short"
+      },
+      {
+        "id": "ap2-13",
+        "type": "multiple-choice",
+        "prompt": "How is «最» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "zhe"
+          },
+          {
+            "id": "o1",
+            "label": "jìchéngchē"
+          },
+          {
+            "id": "o2",
+            "label": "guo"
+          },
+          {
+            "id": "o3",
+            "label": "zuì"
+          }
+        ],
+        "correct": "o3",
+        "skill": "pronunciation",
+        "target": "最",
+        "pinyin": "zuì",
+        "zhuyin": "ㄗㄨㄟˋ",
+        "audioText": "最",
+        "explanation": "最 — zuì (ㄗㄨㄟˋ) · most, -est"
+      },
+      {
+        "id": "ap2-14",
+        "type": "multiple-choice",
+        "prompt": "How is «說話» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "shuōhuà"
+          },
+          {
+            "id": "o1",
+            "label": "zhe"
+          },
+          {
+            "id": "o2",
+            "label": "jìchéngchē"
+          },
+          {
+            "id": "o3",
+            "label": "guo"
+          }
+        ],
+        "correct": "o0",
+        "skill": "pronunciation",
+        "target": "說話",
+        "pinyin": "shuōhuà",
+        "zhuyin": "ㄕㄨㄛ ㄏㄨㄚˋ",
+        "audioText": "說話",
+        "explanation": "說話 — shuōhuà (ㄕㄨㄛ ㄏㄨㄚˋ) · to talk"
+      },
+      {
+        "id": "ap2-15",
+        "type": "multiple-choice",
+        "prompt": "How is «山» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "zhe"
+          },
+          {
+            "id": "o1",
+            "label": "jìchéngchē"
+          },
+          {
+            "id": "o2",
+            "label": "guo"
+          },
+          {
+            "id": "o3",
+            "label": "shān"
+          }
+        ],
+        "correct": "o3",
+        "skill": "pronunciation",
+        "target": "山",
+        "pinyin": "shān",
+        "zhuyin": "ㄕㄢ",
+        "audioText": "山",
+        "explanation": "山 — shān (ㄕㄢ) · mountain, hill"
+      },
+      {
+        "id": "ap2-16",
+        "type": "multiple-choice",
+        "prompt": "How is «咖啡» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "guo"
+          },
+          {
+            "id": "o1",
+            "label": "kāfēi"
+          },
+          {
+            "id": "o2",
+            "label": "zhe"
+          },
+          {
+            "id": "o3",
+            "label": "jìchéngchē"
+          }
+        ],
+        "correct": "o1",
+        "skill": "pronunciation",
+        "target": "咖啡",
+        "pinyin": "kāfēi",
+        "zhuyin": "ㄎㄚ ㄈㄟ",
+        "audioText": "咖啡",
+        "explanation": "咖啡 — kāfēi (ㄎㄚ ㄈㄟ) · coffee"
+      },
+      {
+        "id": "ap2-17",
+        "type": "multiple-choice",
+        "prompt": "How is «中» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "guo"
+          },
+          {
+            "id": "o1",
+            "label": "zhōng"
+          },
+          {
+            "id": "o2",
+            "label": "zhe"
+          },
+          {
+            "id": "o3",
+            "label": "jìchéngchē"
+          }
+        ],
+        "correct": "o1",
+        "skill": "pronunciation",
+        "target": "中",
+        "pinyin": "zhōng",
+        "zhuyin": "ㄓㄨㄥ",
+        "audioText": "中",
+        "explanation": "中 — zhōng (ㄓㄨㄥ) · medium"
+      },
+      {
+        "id": "ap2-18",
+        "type": "multiple-choice",
+        "prompt": "How is «它們» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "jìchéngchē"
+          },
+          {
+            "id": "o1",
+            "label": "guo"
+          },
+          {
+            "id": "o2",
+            "label": "tāmen"
+          },
+          {
+            "id": "o3",
+            "label": "zhe"
+          }
+        ],
+        "correct": "o2",
+        "skill": "pronunciation",
+        "target": "它們",
+        "pinyin": "tāmen",
+        "zhuyin": "ㄊㄚ ㄇㄣ˙",
+        "audioText": "它們",
+        "explanation": "它們 — tāmen (ㄊㄚ ㄇㄣ˙) · they; them"
+      },
+      {
+        "id": "ap2-19",
+        "type": "multiple-choice",
+        "prompt": "How is «短» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "zhe"
+          },
+          {
+            "id": "o1",
+            "label": "jìchéngchē"
+          },
+          {
+            "id": "o2",
+            "label": "guo"
+          },
+          {
+            "id": "o3",
+            "label": "duǎn"
+          }
+        ],
+        "correct": "o3",
+        "skill": "pronunciation",
+        "target": "短",
+        "pinyin": "duǎn",
+        "zhuyin": "ㄉㄨㄢˇ",
+        "audioText": "短",
+        "explanation": "短 — duǎn (ㄉㄨㄢˇ) · short"
+      },
+      {
+        "id": "ap2-20",
+        "type": "multiple-choice",
+        "prompt": "How is «醫師» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "guo"
+          },
+          {
+            "id": "o1",
+            "label": "yīshī"
+          },
+          {
+            "id": "o2",
+            "label": "zhe"
+          },
+          {
+            "id": "o3",
+            "label": "jìchéngchē"
+          }
+        ],
+        "correct": "o1",
+        "skill": "pronunciation",
+        "target": "醫師",
+        "pinyin": "yīshī",
+        "zhuyin": "ㄧ ㄕ",
+        "audioText": "醫師",
+        "explanation": "醫師 — yīshī (ㄧ ㄕ) · doctor"
+      },
+      {
+        "id": "ap2-21",
+        "type": "multiple-choice",
+        "prompt": "How is «還» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "zhe"
+          },
+          {
+            "id": "o1",
+            "label": "jìchéngchē"
+          },
+          {
+            "id": "o2",
+            "label": "guo"
+          },
+          {
+            "id": "o3",
+            "label": "hái"
+          }
+        ],
+        "correct": "o3",
+        "skill": "pronunciation",
+        "target": "還",
+        "pinyin": "hái",
+        "zhuyin": "ㄏㄞˊ",
+        "audioText": "還",
+        "explanation": "還 — hái (ㄏㄞˊ) · to return, to give back"
+      },
+      {
+        "id": "ap2-22",
+        "type": "multiple-choice",
+        "prompt": "How is «事兒» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "zhe"
+          },
+          {
+            "id": "o1",
+            "label": "jìchéngchē"
+          },
+          {
+            "id": "o2",
+            "label": "guo"
+          },
+          {
+            "id": "o3",
+            "label": "shìr"
+          }
+        ],
+        "correct": "o3",
+        "skill": "pronunciation",
+        "target": "事兒",
+        "pinyin": "shìr",
+        "zhuyin": "ㄕˋ ㄦ˙",
+        "audioText": "事兒",
+        "explanation": "事兒 — shìr (ㄕˋ ㄦ˙) · one's employment; business; matter that needs to be settled; (northern dialect) (of a person) demanding; trying; troublesome; erhua variant of 事[shi4]; CL:件[jian4],樁|桩[zhuang1]"
+      },
+      {
+        "id": "ap2-23",
+        "type": "multiple-choice",
+        "prompt": "How is «星期天» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "guo"
+          },
+          {
+            "id": "o1",
+            "label": "Xīngqítiān"
+          },
+          {
+            "id": "o2",
+            "label": "zhe"
+          },
+          {
+            "id": "o3",
+            "label": "jìchéngchē"
+          }
+        ],
+        "correct": "o1",
+        "skill": "pronunciation",
+        "target": "星期天",
+        "pinyin": "Xīngqítiān",
+        "zhuyin": "ㄒㄧㄥ ㄑㄧˊ ㄊㄧㄢ",
+        "audioText": "星期天",
+        "explanation": "星期天 — Xīngqítiān (ㄒㄧㄥ ㄑㄧˊ ㄊㄧㄢ) · Sunday"
+      },
+      {
+        "id": "ap2-24",
+        "type": "multiple-choice",
+        "prompt": "How is «站» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "zhàn"
+          },
+          {
+            "id": "o1",
+            "label": "zhe"
+          },
+          {
+            "id": "o2",
+            "label": "jìchéngchē"
+          },
+          {
+            "id": "o3",
+            "label": "guo"
+          }
+        ],
+        "correct": "o0",
+        "skill": "pronunciation",
+        "target": "站",
+        "pinyin": "zhàn",
+        "zhuyin": "ㄓㄢˋ",
+        "audioText": "站",
+        "explanation": "站 — zhàn (ㄓㄢˋ) · to stand / station, (bus) stop"
+      }
+    ]
+  }
+]

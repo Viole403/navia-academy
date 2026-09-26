@@ -634372,6 +634372,1350 @@
     "gender": "male"
   },
   {
+    "key": "assessment:a-pron-hsk1:ex0",
+    "text": "位",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "male"
+  },
+  {
+    "key": "assessment:a-pron-hsk1:ex1",
+    "text": "半",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "male"
+  },
+  {
+    "key": "assessment:a-pron-hsk1:ex2",
+    "text": "我们",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "female"
+  },
+  {
+    "key": "assessment:a-pron-hsk1:ex3",
+    "text": "做",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "female"
+  },
+  {
+    "key": "assessment:a-pron-hsk1:ex4",
+    "text": "公車",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "female"
+  },
+  {
+    "key": "assessment:a-pron-hsk1:ex5",
+    "text": "爸爸",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "female"
+  },
+  {
+    "key": "assessment:a-pron-hsk1:ex6",
+    "text": "那裡",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "male"
+  },
+  {
+    "key": "assessment:a-pron-hsk1:ex7",
+    "text": "高兴",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "female"
+  },
+  {
+    "key": "assessment:a-pron-hsk1:ex8",
+    "text": "钟",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "male"
+  },
+  {
+    "key": "assessment:a-pron-hsk1:ex9",
+    "text": "她",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "female"
+  },
+  {
+    "key": "assessment:a-pron-hsk1:ex10",
+    "text": "它",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "male"
+  },
+  {
+    "key": "assessment:a-pron-hsk1:ex11",
+    "text": "好",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "male"
+  },
+  {
+    "key": "assessment:a-pron-hsk1:ex12",
+    "text": "請問",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "female"
+  },
+  {
+    "key": "assessment:a-pron-hsk1:ex13",
+    "text": "小孩子",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "female"
+  },
+  {
+    "key": "assessment:a-pron-hsk1:ex14",
+    "text": "買",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "male"
+  },
+  {
+    "key": "assessment:a-pron-hsk1:ex15",
+    "text": "很",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "female"
+  },
+  {
+    "key": "assessment:a-pron-hsk1:ex16",
+    "text": "认识",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "male"
+  },
+  {
+    "key": "assessment:a-pron-hsk1:ex17",
+    "text": "這裡",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "female"
+  },
+  {
+    "key": "assessment:a-pron-hsk1:ex18",
+    "text": "爸爸",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "female"
+  },
+  {
+    "key": "assessment:a-pron-hsk1:ex19",
+    "text": "读",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "female"
+  },
+  {
+    "key": "assessment:a-pron-hsk1:ex20",
+    "text": "了",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "female"
+  },
+  {
+    "key": "assessment:a-pron-hsk1:ex21",
+    "text": "打電話",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "female"
+  },
+  {
+    "key": "assessment:a-pron-hsk1:ex22",
+    "text": "百",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "female"
+  },
+  {
+    "key": "assessment:a-pron-hsk1:ex23",
+    "text": "謝謝",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "female"
+  },
+  {
+    "key": "assessment:a-pron-hsk2:ex0",
+    "text": "着",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "male"
+  },
+  {
+    "key": "assessment:a-pron-hsk2:ex1",
+    "text": "計程車",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "male"
+  },
+  {
+    "key": "assessment:a-pron-hsk2:ex2",
+    "text": "过",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "male"
+  },
+  {
+    "key": "assessment:a-pron-hsk2:ex3",
+    "text": "會",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "female"
+  },
+  {
+    "key": "assessment:a-pron-hsk2:ex4",
+    "text": "包子",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "male"
+  },
+  {
+    "key": "assessment:a-pron-hsk2:ex5",
+    "text": "腳",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "female"
+  },
+  {
+    "key": "assessment:a-pron-hsk2:ex6",
+    "text": "所以",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "female"
+  },
+  {
+    "key": "assessment:a-pron-hsk2:ex7",
+    "text": "餃",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "female"
+  },
+  {
+    "key": "assessment:a-pron-hsk2:ex8",
+    "text": "號",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "female"
+  },
+  {
+    "key": "assessment:a-pron-hsk2:ex9",
+    "text": "醫生",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "male"
+  },
+  {
+    "key": "assessment:a-pron-hsk2:ex10",
+    "text": "件",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "male"
+  },
+  {
+    "key": "assessment:a-pron-hsk2:ex11",
+    "text": "少",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "male"
+  },
+  {
+    "key": "assessment:a-pron-hsk2:ex12",
+    "text": "最",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "female"
+  },
+  {
+    "key": "assessment:a-pron-hsk2:ex13",
+    "text": "說話",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "female"
+  },
+  {
+    "key": "assessment:a-pron-hsk2:ex14",
+    "text": "山",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "male"
+  },
+  {
+    "key": "assessment:a-pron-hsk2:ex15",
+    "text": "咖啡",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "male"
+  },
+  {
+    "key": "assessment:a-pron-hsk2:ex16",
+    "text": "中",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "female"
+  },
+  {
+    "key": "assessment:a-pron-hsk2:ex17",
+    "text": "它們",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "female"
+  },
+  {
+    "key": "assessment:a-pron-hsk2:ex18",
+    "text": "短",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "male"
+  },
+  {
+    "key": "assessment:a-pron-hsk2:ex19",
+    "text": "醫師",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "male"
+  },
+  {
+    "key": "assessment:a-pron-hsk2:ex20",
+    "text": "還",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "female"
+  },
+  {
+    "key": "assessment:a-pron-hsk2:ex21",
+    "text": "事兒",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "male"
+  },
+  {
+    "key": "assessment:a-pron-hsk2:ex22",
+    "text": "星期天",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "male"
+  },
+  {
+    "key": "assessment:a-pron-hsk2:ex23",
+    "text": "站",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "male"
+  },
+  {
+    "key": "assessment:a-pron-hsk3:ex0",
+    "text": "不過",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "male"
+  },
+  {
+    "key": "assessment:a-pron-hsk3:ex1",
+    "text": "答",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "male"
+  },
+  {
+    "key": "assessment:a-pron-hsk3:ex2",
+    "text": "工人",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "male"
+  },
+  {
+    "key": "assessment:a-pron-hsk3:ex3",
+    "text": "老人",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "male"
+  },
+  {
+    "key": "assessment:a-pron-hsk3:ex4",
+    "text": "本來",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "female"
+  },
+  {
+    "key": "assessment:a-pron-hsk3:ex5",
+    "text": "足球",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "female"
+  },
+  {
+    "key": "assessment:a-pron-hsk3:ex6",
+    "text": "所有",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "male"
+  },
+  {
+    "key": "assessment:a-pron-hsk3:ex7",
+    "text": "怎麼辦",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "female"
+  },
+  {
+    "key": "assessment:a-pron-hsk3:ex8",
+    "text": "從前",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "male"
+  },
+  {
+    "key": "assessment:a-pron-hsk3:ex9",
+    "text": "脫",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "male"
+  },
+  {
+    "key": "assessment:a-pron-hsk3:ex10",
+    "text": "盒子",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "male"
+  },
+  {
+    "key": "assessment:a-pron-hsk3:ex11",
+    "text": "褲",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "male"
+  },
+  {
+    "key": "assessment:a-pron-hsk3:ex12",
+    "text": "習慣",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "female"
+  },
+  {
+    "key": "assessment:a-pron-hsk3:ex13",
+    "text": "差不多",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "female"
+  },
+  {
+    "key": "assessment:a-pron-hsk3:ex14",
+    "text": "車站",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "female"
+  },
+  {
+    "key": "assessment:a-pron-hsk3:ex15",
+    "text": "放",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "male"
+  },
+  {
+    "key": "assessment:a-pron-hsk3:ex16",
+    "text": "苦",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "female"
+  },
+  {
+    "key": "assessment:a-pron-hsk3:ex17",
+    "text": "北部",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "male"
+  },
+  {
+    "key": "assessment:a-pron-hsk3:ex18",
+    "text": "照相",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "female"
+  },
+  {
+    "key": "assessment:a-pron-hsk3:ex19",
+    "text": "南部",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "female"
+  },
+  {
+    "key": "assessment:a-pron-hsk3:ex20",
+    "text": "年級",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "male"
+  },
+  {
+    "key": "assessment:a-pron-hsk3:ex21",
+    "text": "棒球",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "male"
+  },
+  {
+    "key": "assessment:a-pron-hsk3:ex22",
+    "text": "冰箱",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "female"
+  },
+  {
+    "key": "assessment:a-pron-hsk3:ex23",
+    "text": "台",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "male"
+  },
+  {
+    "key": "assessment:a-pron-hsk4:ex0",
+    "text": "炒",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "female"
+  },
+  {
+    "key": "assessment:a-pron-hsk4:ex1",
+    "text": "室友",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "male"
+  },
+  {
+    "key": "assessment:a-pron-hsk4:ex2",
+    "text": "箱子",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "male"
+  },
+  {
+    "key": "assessment:a-pron-hsk4:ex3",
+    "text": "搬家",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "female"
+  },
+  {
+    "key": "assessment:a-pron-hsk4:ex4",
+    "text": "黑色",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "female"
+  },
+  {
+    "key": "assessment:a-pron-hsk4:ex5",
+    "text": "結束",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "male"
+  },
+  {
+    "key": "assessment:a-pron-hsk4:ex6",
+    "text": "放心",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "male"
+  },
+  {
+    "key": "assessment:a-pron-hsk4:ex7",
+    "text": "牙刷",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "male"
+  },
+  {
+    "key": "assessment:a-pron-hsk4:ex8",
+    "text": "許多",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "female"
+  },
+  {
+    "key": "assessment:a-pron-hsk4:ex9",
+    "text": "影響",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "male"
+  },
+  {
+    "key": "assessment:a-pron-hsk4:ex10",
+    "text": "忘記",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "female"
+  },
+  {
+    "key": "assessment:a-pron-hsk4:ex11",
+    "text": "書包",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "female"
+  },
+  {
+    "key": "assessment:a-pron-hsk4:ex12",
+    "text": "越",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "female"
+  },
+  {
+    "key": "assessment:a-pron-hsk4:ex13",
+    "text": "肥皂",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "male"
+  },
+  {
+    "key": "assessment:a-pron-hsk4:ex14",
+    "text": "手套",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "female"
+  },
+  {
+    "key": "assessment:a-pron-hsk4:ex15",
+    "text": "沒想到",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "female"
+  },
+  {
+    "key": "assessment:a-pron-hsk4:ex16",
+    "text": "作文",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "female"
+  },
+  {
+    "key": "assessment:a-pron-hsk4:ex17",
+    "text": "爬",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "female"
+  },
+  {
+    "key": "assessment:a-pron-hsk4:ex18",
+    "text": "吉他",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "male"
+  },
+  {
+    "key": "assessment:a-pron-hsk4:ex19",
+    "text": "感覺",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "female"
+  },
+  {
+    "key": "assessment:a-pron-hsk4:ex20",
+    "text": "選擇",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "male"
+  },
+  {
+    "key": "assessment:a-pron-hsk4:ex21",
+    "text": "正",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "female"
+  },
+  {
+    "key": "assessment:a-pron-hsk4:ex22",
+    "text": "父母",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "female"
+  },
+  {
+    "key": "assessment:a-pron-hsk4:ex23",
+    "text": "須",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "female"
+  },
+  {
+    "key": "assessment:a-pron-hsk5:ex0",
+    "text": "煩惱",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "male"
+  },
+  {
+    "key": "assessment:a-pron-hsk5:ex1",
+    "text": "理解",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "male"
+  },
+  {
+    "key": "assessment:a-pron-hsk5:ex2",
+    "text": "安靜",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "male"
+  },
+  {
+    "key": "assessment:a-pron-hsk5:ex3",
+    "text": "全球",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "female"
+  },
+  {
+    "key": "assessment:a-pron-hsk5:ex4",
+    "text": "錄",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "male"
+  },
+  {
+    "key": "assessment:a-pron-hsk5:ex5",
+    "text": "忽",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "female"
+  },
+  {
+    "key": "assessment:a-pron-hsk5:ex6",
+    "text": "醋",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "male"
+  },
+  {
+    "key": "assessment:a-pron-hsk5:ex7",
+    "text": "平",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "male"
+  },
+  {
+    "key": "assessment:a-pron-hsk5:ex8",
+    "text": "南方",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "female"
+  },
+  {
+    "key": "assessment:a-pron-hsk5:ex9",
+    "text": "欺負",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "male"
+  },
+  {
+    "key": "assessment:a-pron-hsk5:ex10",
+    "text": "陌生",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "male"
+  },
+  {
+    "key": "assessment:a-pron-hsk5:ex11",
+    "text": "廟",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "female"
+  },
+  {
+    "key": "assessment:a-pron-hsk5:ex12",
+    "text": "手續",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "female"
+  },
+  {
+    "key": "assessment:a-pron-hsk5:ex13",
+    "text": "寶貝",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "female"
+  },
+  {
+    "key": "assessment:a-pron-hsk5:ex14",
+    "text": "感興趣",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "female"
+  },
+  {
+    "key": "assessment:a-pron-hsk5:ex15",
+    "text": "解決",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "male"
+  },
+  {
+    "key": "assessment:a-pron-hsk5:ex16",
+    "text": "犧牲",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "female"
+  },
+  {
+    "key": "assessment:a-pron-hsk5:ex17",
+    "text": "顧客",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "male"
+  },
+  {
+    "key": "assessment:a-pron-hsk5:ex18",
+    "text": "乖",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "male"
+  },
+  {
+    "key": "assessment:a-pron-hsk5:ex19",
+    "text": "頓",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "male"
+  },
+  {
+    "key": "assessment:a-pron-hsk5:ex20",
+    "text": "修",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "male"
+  },
+  {
+    "key": "assessment:a-pron-hsk5:ex21",
+    "text": "總之",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "female"
+  },
+  {
+    "key": "assessment:a-pron-hsk5:ex22",
+    "text": "煙火",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "female"
+  },
+  {
+    "key": "assessment:a-pron-hsk5:ex23",
+    "text": "加強",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "male"
+  },
+  {
+    "key": "assessment:a-pron-hsk6:ex0",
+    "text": "事先",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "female"
+  },
+  {
+    "key": "assessment:a-pron-hsk6:ex1",
+    "text": "對岸",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "male"
+  },
+  {
+    "key": "assessment:a-pron-hsk6:ex2",
+    "text": "伊斯蘭教",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "male"
+  },
+  {
+    "key": "assessment:a-pron-hsk6:ex3",
+    "text": "撲滅",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "female"
+  },
+  {
+    "key": "assessment:a-pron-hsk6:ex4",
+    "text": "早已",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "male"
+  },
+  {
+    "key": "assessment:a-pron-hsk6:ex5",
+    "text": "誕生",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "female"
+  },
+  {
+    "key": "assessment:a-pron-hsk6:ex6",
+    "text": "包裹",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "male"
+  },
+  {
+    "key": "assessment:a-pron-hsk6:ex7",
+    "text": "當初",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "male"
+  },
+  {
+    "key": "assessment:a-pron-hsk6:ex8",
+    "text": "梨",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "female"
+  },
+  {
+    "key": "assessment:a-pron-hsk6:ex9",
+    "text": "雜",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "female"
+  },
+  {
+    "key": "assessment:a-pron-hsk6:ex10",
+    "text": "名單",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "female"
+  },
+  {
+    "key": "assessment:a-pron-hsk6:ex11",
+    "text": "鑽石",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "male"
+  },
+  {
+    "key": "assessment:a-pron-hsk6:ex12",
+    "text": "無可奈何",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "female"
+  },
+  {
+    "key": "assessment:a-pron-hsk6:ex13",
+    "text": "違反",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "male"
+  },
+  {
+    "key": "assessment:a-pron-hsk6:ex14",
+    "text": "還不如",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "female"
+  },
+  {
+    "key": "assessment:a-pron-hsk6:ex15",
+    "text": "死亡",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "female"
+  },
+  {
+    "key": "assessment:a-pron-hsk6:ex16",
+    "text": "灰心",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "male"
+  },
+  {
+    "key": "assessment:a-pron-hsk6:ex17",
+    "text": "書籍",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "female"
+  },
+  {
+    "key": "assessment:a-pron-hsk6:ex18",
+    "text": "暑期",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "male"
+  },
+  {
+    "key": "assessment:a-pron-hsk6:ex19",
+    "text": "便利",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "female"
+  },
+  {
+    "key": "assessment:a-pron-hsk6:ex20",
+    "text": "結算",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "female"
+  },
+  {
+    "key": "assessment:a-pron-hsk6:ex21",
+    "text": "連忙",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "male"
+  },
+  {
+    "key": "assessment:a-pron-hsk6:ex22",
+    "text": "生存",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "male"
+  },
+  {
+    "key": "assessment:a-pron-hsk6:ex23",
+    "text": "公平",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "female"
+  },
+  {
+    "key": "assessment:a-pron-hsk7:ex0",
+    "text": "主導",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "female"
+  },
+  {
+    "key": "assessment:a-pron-hsk7:ex1",
+    "text": "屈服",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "female"
+  },
+  {
+    "key": "assessment:a-pron-hsk7:ex2",
+    "text": "潔白",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "female"
+  },
+  {
+    "key": "assessment:a-pron-hsk7:ex3",
+    "text": "總得",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "male"
+  },
+  {
+    "key": "assessment:a-pron-hsk7:ex4",
+    "text": "總和",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "female"
+  },
+  {
+    "key": "assessment:a-pron-hsk7:ex5",
+    "text": "注重",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "female"
+  },
+  {
+    "key": "assessment:a-pron-hsk7:ex6",
+    "text": "揪",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "male"
+  },
+  {
+    "key": "assessment:a-pron-hsk7:ex7",
+    "text": "勸告",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "male"
+  },
+  {
+    "key": "assessment:a-pron-hsk7:ex8",
+    "text": "地步",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "female"
+  },
+  {
+    "key": "assessment:a-pron-hsk7:ex9",
+    "text": "造化",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "male"
+  },
+  {
+    "key": "assessment:a-pron-hsk7:ex10",
+    "text": "斯文",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "male"
+  },
+  {
+    "key": "assessment:a-pron-hsk7:ex11",
+    "text": "古籍",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "male"
+  },
+  {
+    "key": "assessment:a-pron-hsk7:ex12",
+    "text": "乞丐",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "male"
+  },
+  {
+    "key": "assessment:a-pron-hsk7:ex13",
+    "text": "原野",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "female"
+  },
+  {
+    "key": "assessment:a-pron-hsk7:ex14",
+    "text": "先天",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "female"
+  },
+  {
+    "key": "assessment:a-pron-hsk7:ex15",
+    "text": "物產",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "female"
+  },
+  {
+    "key": "assessment:a-pron-hsk7:ex16",
+    "text": "逮捕",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "female"
+  },
+  {
+    "key": "assessment:a-pron-hsk7:ex17",
+    "text": "撰寫",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "female"
+  },
+  {
+    "key": "assessment:a-pron-hsk7:ex18",
+    "text": "健身",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "female"
+  },
+  {
+    "key": "assessment:a-pron-hsk7:ex19",
+    "text": "胸",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "female"
+  },
+  {
+    "key": "assessment:a-pron-hsk7:ex20",
+    "text": "侵襲",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "female"
+  },
+  {
+    "key": "assessment:a-pron-hsk7:ex21",
+    "text": "治標",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "male"
+  },
+  {
+    "key": "assessment:a-pron-hsk7:ex22",
+    "text": "注目",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "male"
+  },
+  {
+    "key": "assessment:a-pron-hsk7:ex23",
+    "text": "宣誓",
+    "locale": "zh-CN",
+    "language": "zh",
+    "examSource": "hsk",
+    "gender": "female"
+  },
+  {
     "key": "curriculum:l-tones:s4",
     "text": "妈",
     "locale": "zh-CN",

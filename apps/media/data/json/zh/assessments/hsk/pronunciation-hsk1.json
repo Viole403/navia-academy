@@ -1,0 +1,737 @@
+[
+  {
+    "id": "a-pron-hsk1",
+    "title": "Pronunciation · HSK 1",
+    "description": "Match each character to its reading. 24 questions.",
+    "description_en": "Match each character to its reading. 24 questions.",
+    "kind": "vocabulary",
+    "level": "1",
+    "examMappings": {
+      "hsk": "1"
+    },
+    "durationMin": 12,
+    "passScore": 70,
+    "exercises": [
+      {
+        "id": "ap1-1",
+        "type": "multiple-choice",
+        "prompt": "How is «位» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "bàn"
+          },
+          {
+            "id": "o1",
+            "label": "wǒmen"
+          },
+          {
+            "id": "o2",
+            "label": "zuò"
+          },
+          {
+            "id": "o3",
+            "label": "wèi"
+          }
+        ],
+        "correct": "o3",
+        "skill": "pronunciation",
+        "target": "位",
+        "pinyin": "wèi",
+        "zhuyin": "ㄨㄟˋ",
+        "audioText": "位",
+        "explanation": "位 — wèi (ㄨㄟˋ) · classifier for people"
+      },
+      {
+        "id": "ap1-2",
+        "type": "multiple-choice",
+        "prompt": "How is «半» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "wǒmen"
+          },
+          {
+            "id": "o1",
+            "label": "zuò"
+          },
+          {
+            "id": "o2",
+            "label": "bàn"
+          },
+          {
+            "id": "o3",
+            "label": "wèi"
+          }
+        ],
+        "correct": "o2",
+        "skill": "pronunciation",
+        "target": "半",
+        "pinyin": "bàn",
+        "zhuyin": "ㄅㄢˋ",
+        "audioText": "半",
+        "explanation": "半 — bàn (ㄅㄢˋ) · half"
+      },
+      {
+        "id": "ap1-3",
+        "type": "multiple-choice",
+        "prompt": "How is «我们» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "wǒmen"
+          },
+          {
+            "id": "o1",
+            "label": "wèi"
+          },
+          {
+            "id": "o2",
+            "label": "bàn"
+          },
+          {
+            "id": "o3",
+            "label": "zuò"
+          }
+        ],
+        "correct": "o0",
+        "skill": "pronunciation",
+        "target": "我们",
+        "pinyin": "wǒmen",
+        "zhuyin": "ㄨㄛˇㄇㄣ˙",
+        "audioText": "我们",
+        "explanation": "我们 — wǒmen (ㄨㄛˇㄇㄣ˙) · we, us"
+      },
+      {
+        "id": "ap1-4",
+        "type": "multiple-choice",
+        "prompt": "How is «做» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "wǒmen"
+          },
+          {
+            "id": "o1",
+            "label": "zuò"
+          },
+          {
+            "id": "o2",
+            "label": "wèi"
+          },
+          {
+            "id": "o3",
+            "label": "bàn"
+          }
+        ],
+        "correct": "o1",
+        "skill": "pronunciation",
+        "target": "做",
+        "pinyin": "zuò",
+        "zhuyin": "ㄗㄨㄛˋ",
+        "audioText": "做",
+        "explanation": "做 — zuò (ㄗㄨㄛˋ) · to do, to make"
+      },
+      {
+        "id": "ap1-5",
+        "type": "multiple-choice",
+        "prompt": "How is «公車» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "wǒmen"
+          },
+          {
+            "id": "o1",
+            "label": "gōngchē"
+          },
+          {
+            "id": "o2",
+            "label": "wèi"
+          },
+          {
+            "id": "o3",
+            "label": "bàn"
+          }
+        ],
+        "correct": "o1",
+        "skill": "pronunciation",
+        "target": "公車",
+        "pinyin": "gōngchē",
+        "zhuyin": "ㄍㄨㄥ ㄔㄜ",
+        "audioText": "公車",
+        "explanation": "公車 — gōngchē (ㄍㄨㄥ ㄔㄜ) · local bus, bus"
+      },
+      {
+        "id": "ap1-6",
+        "type": "multiple-choice",
+        "prompt": "How is «爸爸» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "bàba"
+          },
+          {
+            "id": "o1",
+            "label": "wèi"
+          },
+          {
+            "id": "o2",
+            "label": "bàn"
+          },
+          {
+            "id": "o3",
+            "label": "wǒmen"
+          }
+        ],
+        "correct": "o0",
+        "skill": "pronunciation",
+        "target": "爸爸",
+        "pinyin": "bàba",
+        "zhuyin": "ㄅㄚˋㄅㄚ˙",
+        "audioText": "爸爸",
+        "explanation": "爸爸 — bàba (ㄅㄚˋㄅㄚ˙) · father, dad"
+      },
+      {
+        "id": "ap1-7",
+        "type": "multiple-choice",
+        "prompt": "How is «那裡» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "nàlǐ"
+          },
+          {
+            "id": "o1",
+            "label": "wèi"
+          },
+          {
+            "id": "o2",
+            "label": "bàn"
+          },
+          {
+            "id": "o3",
+            "label": "wǒmen"
+          }
+        ],
+        "correct": "o0",
+        "skill": "pronunciation",
+        "target": "那裡",
+        "pinyin": "nàlǐ",
+        "zhuyin": "ㄋㄚˋ ㄌㄧˇ",
+        "audioText": "那裡",
+        "explanation": "那裡 — nàlǐ (ㄋㄚˋ ㄌㄧˇ) · there; that place; there; that place"
+      },
+      {
+        "id": "ap1-8",
+        "type": "multiple-choice",
+        "prompt": "How is «高兴» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "bàn"
+          },
+          {
+            "id": "o1",
+            "label": "wǒmen"
+          },
+          {
+            "id": "o2",
+            "label": "gāoxìng"
+          },
+          {
+            "id": "o3",
+            "label": "wèi"
+          }
+        ],
+        "correct": "o2",
+        "skill": "pronunciation",
+        "target": "高兴",
+        "pinyin": "gāoxìng",
+        "zhuyin": "ㄍㄠㄒㄧㄥˋ",
+        "audioText": "高兴",
+        "explanation": "高兴 — gāoxìng (ㄍㄠㄒㄧㄥˋ) · happy, glad"
+      },
+      {
+        "id": "ap1-9",
+        "type": "multiple-choice",
+        "prompt": "How is «钟» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "bàn"
+          },
+          {
+            "id": "o1",
+            "label": "wǒmen"
+          },
+          {
+            "id": "o2",
+            "label": "zhōng"
+          },
+          {
+            "id": "o3",
+            "label": "wèi"
+          }
+        ],
+        "correct": "o2",
+        "skill": "pronunciation",
+        "target": "钟",
+        "pinyin": "zhōng",
+        "zhuyin": "ㄓㄨㄥ",
+        "audioText": "钟",
+        "explanation": "钟 — zhōng (ㄓㄨㄥ) · clock, hour"
+      },
+      {
+        "id": "ap1-10",
+        "type": "multiple-choice",
+        "prompt": "How is «她» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "wèi"
+          },
+          {
+            "id": "o1",
+            "label": "bàn"
+          },
+          {
+            "id": "o2",
+            "label": "wǒmen"
+          },
+          {
+            "id": "o3",
+            "label": "tā"
+          }
+        ],
+        "correct": "o3",
+        "skill": "pronunciation",
+        "target": "她",
+        "pinyin": "tā",
+        "zhuyin": "ㄊㄚ",
+        "audioText": "她",
+        "explanation": "她 — tā (ㄊㄚ) · she"
+      },
+      {
+        "id": "ap1-11",
+        "type": "multiple-choice",
+        "prompt": "How is «它» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "tā"
+          },
+          {
+            "id": "o1",
+            "label": "wèi"
+          },
+          {
+            "id": "o2",
+            "label": "bàn"
+          },
+          {
+            "id": "o3",
+            "label": "wǒmen"
+          }
+        ],
+        "correct": "o0",
+        "skill": "pronunciation",
+        "target": "它",
+        "pinyin": "tā",
+        "zhuyin": "ㄊㄚ",
+        "audioText": "它",
+        "explanation": "它 — tā (ㄊㄚ) · it"
+      },
+      {
+        "id": "ap1-12",
+        "type": "multiple-choice",
+        "prompt": "How is «好» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "bàn"
+          },
+          {
+            "id": "o1",
+            "label": "wǒmen"
+          },
+          {
+            "id": "o2",
+            "label": "hǎo"
+          },
+          {
+            "id": "o3",
+            "label": "wèi"
+          }
+        ],
+        "correct": "o2",
+        "skill": "pronunciation",
+        "target": "好",
+        "pinyin": "hǎo",
+        "zhuyin": "ㄏㄠˇ",
+        "audioText": "好",
+        "explanation": "好 — hǎo (ㄏㄠˇ) · good, well / very / to say hello to / would you"
+      },
+      {
+        "id": "ap1-13",
+        "type": "multiple-choice",
+        "prompt": "How is «請問» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "wǒmen"
+          },
+          {
+            "id": "o1",
+            "label": "qǐngwèn"
+          },
+          {
+            "id": "o2",
+            "label": "wèi"
+          },
+          {
+            "id": "o3",
+            "label": "bàn"
+          }
+        ],
+        "correct": "o1",
+        "skill": "pronunciation",
+        "target": "請問",
+        "pinyin": "qǐngwèn",
+        "zhuyin": "ㄑㄧㄥˇ ㄨㄣˋ",
+        "audioText": "請問",
+        "explanation": "請問 — qǐngwèn (ㄑㄧㄥˇ ㄨㄣˋ) · May I ask......?"
+      },
+      {
+        "id": "ap1-14",
+        "type": "multiple-choice",
+        "prompt": "How is «小孩子» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "xiǎoháizi"
+          },
+          {
+            "id": "o1",
+            "label": "wèi"
+          },
+          {
+            "id": "o2",
+            "label": "bàn"
+          },
+          {
+            "id": "o3",
+            "label": "wǒmen"
+          }
+        ],
+        "correct": "o0",
+        "skill": "pronunciation",
+        "target": "小孩子",
+        "pinyin": "xiǎoháizi",
+        "zhuyin": "ㄒㄧㄠˇ ㄏㄞˊ ㄗ˙",
+        "audioText": "小孩子",
+        "explanation": "小孩子 — xiǎoháizi (ㄒㄧㄠˇ ㄏㄞˊ ㄗ˙) · child"
+      },
+      {
+        "id": "ap1-15",
+        "type": "multiple-choice",
+        "prompt": "How is «買» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "wǒmen"
+          },
+          {
+            "id": "o1",
+            "label": "mǎi"
+          },
+          {
+            "id": "o2",
+            "label": "wèi"
+          },
+          {
+            "id": "o3",
+            "label": "bàn"
+          }
+        ],
+        "correct": "o1",
+        "skill": "pronunciation",
+        "target": "買",
+        "pinyin": "mǎi",
+        "zhuyin": "ㄇㄞˇ",
+        "audioText": "買",
+        "explanation": "買 — mǎi (ㄇㄞˇ) · to buy"
+      },
+      {
+        "id": "ap1-16",
+        "type": "multiple-choice",
+        "prompt": "How is «很» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "wèi"
+          },
+          {
+            "id": "o1",
+            "label": "bàn"
+          },
+          {
+            "id": "o2",
+            "label": "wǒmen"
+          },
+          {
+            "id": "o3",
+            "label": "hěn"
+          }
+        ],
+        "correct": "o3",
+        "skill": "pronunciation",
+        "target": "很",
+        "pinyin": "hěn",
+        "zhuyin": "ㄏㄣˇ",
+        "audioText": "很",
+        "explanation": "很 — hěn (ㄏㄣˇ) · very, quite"
+      },
+      {
+        "id": "ap1-17",
+        "type": "multiple-choice",
+        "prompt": "How is «认识» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "wǒmen"
+          },
+          {
+            "id": "o1",
+            "label": "rènshi"
+          },
+          {
+            "id": "o2",
+            "label": "wèi"
+          },
+          {
+            "id": "o3",
+            "label": "bàn"
+          }
+        ],
+        "correct": "o1",
+        "skill": "pronunciation",
+        "target": "认识",
+        "pinyin": "rènshi",
+        "zhuyin": "ㄖㄣˋㄕ˙",
+        "audioText": "认识",
+        "explanation": "认识 — rènshi (ㄖㄣˋㄕ˙) · to know (a person)"
+      },
+      {
+        "id": "ap1-18",
+        "type": "multiple-choice",
+        "prompt": "How is «這裡» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "zhèlǐ"
+          },
+          {
+            "id": "o1",
+            "label": "wèi"
+          },
+          {
+            "id": "o2",
+            "label": "bàn"
+          },
+          {
+            "id": "o3",
+            "label": "wǒmen"
+          }
+        ],
+        "correct": "o0",
+        "skill": "pronunciation",
+        "target": "這裡",
+        "pinyin": "zhèlǐ",
+        "zhuyin": "ㄓㄜˋ ㄌㄧˇ",
+        "audioText": "這裡",
+        "explanation": "這裡 — zhèlǐ (ㄓㄜˋ ㄌㄧˇ) · variant of 這裡|这里[zhe4 li3]; here"
+      },
+      {
+        "id": "ap1-19",
+        "type": "multiple-choice",
+        "prompt": "How is «爸爸» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "bàn"
+          },
+          {
+            "id": "o1",
+            "label": "wǒmen"
+          },
+          {
+            "id": "o2",
+            "label": "bàba"
+          },
+          {
+            "id": "o3",
+            "label": "wèi"
+          }
+        ],
+        "correct": "o2",
+        "skill": "pronunciation",
+        "target": "爸爸",
+        "pinyin": "bàba",
+        "zhuyin": "ㄅㄚˋ ㄅㄚ˙",
+        "audioText": "爸爸",
+        "explanation": "爸爸 — bàba (ㄅㄚˋ ㄅㄚ˙) · (coll.) father; dad; CL:個|个[ge4],位[wei4]"
+      },
+      {
+        "id": "ap1-20",
+        "type": "multiple-choice",
+        "prompt": "How is «读» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "dú"
+          },
+          {
+            "id": "o1",
+            "label": "wèi"
+          },
+          {
+            "id": "o2",
+            "label": "bàn"
+          },
+          {
+            "id": "o3",
+            "label": "wǒmen"
+          }
+        ],
+        "correct": "o0",
+        "skill": "pronunciation",
+        "target": "读",
+        "pinyin": "dú",
+        "zhuyin": "ㄉㄨˊ",
+        "audioText": "读",
+        "explanation": "读 — dú (ㄉㄨˊ) · to read"
+      },
+      {
+        "id": "ap1-21",
+        "type": "multiple-choice",
+        "prompt": "How is «了» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "wèi"
+          },
+          {
+            "id": "o1",
+            "label": "bàn"
+          },
+          {
+            "id": "o2",
+            "label": "wǒmen"
+          },
+          {
+            "id": "o3",
+            "label": "le"
+          }
+        ],
+        "correct": "o3",
+        "skill": "pronunciation",
+        "target": "了",
+        "pinyin": "le",
+        "zhuyin": "ㄌㄜ˙",
+        "audioText": "了",
+        "explanation": "了 — le (ㄌㄜ˙) · particle (completed action)"
+      },
+      {
+        "id": "ap1-22",
+        "type": "multiple-choice",
+        "prompt": "How is «打電話» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "bàn"
+          },
+          {
+            "id": "o1",
+            "label": "wǒmen"
+          },
+          {
+            "id": "o2",
+            "label": "dǎ diànhuà"
+          },
+          {
+            "id": "o3",
+            "label": "wèi"
+          }
+        ],
+        "correct": "o2",
+        "skill": "pronunciation",
+        "target": "打電話",
+        "pinyin": "dǎ diànhuà",
+        "zhuyin": "ㄉㄚˇ ㄉㄧㄢˋ ㄏㄨㄚˋ",
+        "audioText": "打電話",
+        "explanation": "打電話 — dǎ diànhuà (ㄉㄚˇ ㄉㄧㄢˋ ㄏㄨㄚˋ) · to make a telephone call"
+      },
+      {
+        "id": "ap1-23",
+        "type": "multiple-choice",
+        "prompt": "How is «百» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "bǎi"
+          },
+          {
+            "id": "o1",
+            "label": "wèi"
+          },
+          {
+            "id": "o2",
+            "label": "bàn"
+          },
+          {
+            "id": "o3",
+            "label": "wǒmen"
+          }
+        ],
+        "correct": "o0",
+        "skill": "pronunciation",
+        "target": "百",
+        "pinyin": "bǎi",
+        "zhuyin": "ㄅㄞˇ",
+        "audioText": "百",
+        "explanation": "百 — bǎi (ㄅㄞˇ) · hundred"
+      },
+      {
+        "id": "ap1-24",
+        "type": "multiple-choice",
+        "prompt": "How is «謝謝» read?",
+        "options": [
+          {
+            "id": "o0",
+            "label": "bàn"
+          },
+          {
+            "id": "o1",
+            "label": "wǒmen"
+          },
+          {
+            "id": "o2",
+            "label": "xièxie"
+          },
+          {
+            "id": "o3",
+            "label": "wèi"
+          }
+        ],
+        "correct": "o2",
+        "skill": "pronunciation",
+        "target": "謝謝",
+        "pinyin": "xièxie",
+        "zhuyin": "ㄒㄧㄝˋ ㄒㄧㄝ˙",
+        "audioText": "謝謝",
+        "explanation": "謝謝 — xièxie (ㄒㄧㄝˋ ㄒㄧㄝ˙) · thanks, Thank you."
+      }
+    ]
+  }
+]
