@@ -1,4 +1,4 @@
-import { useRef, useState } from "react"
+import { useEffect, useRef, useState } from "react"
 import { ActivityIndicator, ScrollView, Text, View } from "react-native"
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query"
 import { Stack, useRouter } from "expo-router"
@@ -127,6 +127,11 @@ export function ExamAdaptive() {
     setStartTs(Date.now())
     startTsRef.current = Date.now()
     integrity.reset()
+    // Dropped before the new session is created, not after. Leaving the old id
+    // in place until the new one arrives means anything reported in that window
+    // — a tab warning, an answer patch — lands on the previous session and its
+    // tally.
+    sessionIdRef.current = null
     // A server session gives the warning tally somewhere to live, which is the
     // whole point: kept in component state it reset on every launch.
     void cat
@@ -162,10 +167,52 @@ export function ExamAdaptive() {
     }, REVEAL_MS)
   }
 
+  /**
+   * Persist the answer log as it grows.
+   *
+   * Without this the server only ever saw the answers at submission time, so a
+   * session interrupted by a phone call, a crash or a force-quit came back empty
+   * and the learner lost the whole paper. The web client has patched per answer
+   * all along; the phone did not, which is why resuming worked on one and not
+   * the other.
+   */
+  useEffect(() => {
+    if (exam.log.length === 0 || finished) return
+    const sid = sessionIdRef.current
+    if (sid === null) return
+    void cat
+      .updateSession(sid, {
+        answers: exam.log.map((a) => ({
+          item_id: a.wordId,
+          item_elo: a.elo,
+          correct: a.correct,
+          format: a.format,
+        })),
+        elapsed_sec: Math.round((Date.now() - startTsRef.current) / 1000),
+        theta: Math.round(exam.theta),
+      })
+      .catch(() => {
+        // Fire and forget: the next answer carries the whole log again, so a
+        // dropped patch is caught up rather than lost.
+      })
+  }, [exam.log, exam.theta, finished])
+
   // Submit once the engine says it is done.
-  if (finished && exam.result && !savedResult && !saveM.isPending) {
+  //
+  // In an effect, not during render: mutating from the render body is a side
+  // effect in the one phase of React that may run more than once for the same
+  // state, so a double-invoked render could send the result twice. The engine
+  // object is the identity that settles it, and the mutation's own pending
+  // state stops a second call while the first is in flight.
+  useEffect(() => {
+    if (!finished || !exam.result) return
+    if (savedResult) return
     saveM.mutate(exam.result)
-  }
+    // saveM changes identity every render, so depending on it would resubmit on
+    // every one of them; the engine result and the saved copy are the real
+    // signals that there is something new to send.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [finished, exam.result, savedResult])
 
   const goBack = () => {
     if (router.canGoBack()) router.back()

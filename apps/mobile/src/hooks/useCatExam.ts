@@ -1,4 +1,4 @@
-import { useCallback, useMemo, useRef, useState } from "react"
+import { useCallback, useEffect, useMemo, useRef, useState } from "react"
 import {
   DEFAULT_ELO,
   MAX_QUESTIONS,
@@ -15,6 +15,7 @@ import {
 } from "@navia/utils"
 import type { CatItemFormat } from "@navia/utils"
 
+import { storage } from "@/utils/storage"
 import type { VocabWord } from "@/types/api"
 
 /**
@@ -73,9 +74,8 @@ const LAST_ELO_KEY = "navia-cat-last-elo"
  * The learner's last rating, so a new session warm-starts near where they left
  * off instead of at the default and re-earning twenty questions to get back.
  */
-function readLastElo(): number | undefined {
-  if (typeof window === "undefined") return undefined
-  const raw = window.localStorage.getItem(LAST_ELO_KEY)
+async function readLastElo(): Promise<number | undefined> {
+  const raw = await storage.getItem(LAST_ELO_KEY)
   if (raw === null) return undefined
   const n = Number(raw)
   return Number.isFinite(n) ? n : undefined
@@ -174,15 +174,27 @@ export function useCatExam(
   priorElo?: number,
   resumeRef?: { current: CatResume | null }
 ) {
-  const [theta, setTheta] = useState(
-    () => priorElo ?? readLastElo() ?? DEFAULT_ELO
-  )
+  // The stored rating is read asynchronously, so it cannot seed this directly.
+  // It arrives below and is applied only while the learner has not started, or
+  // the estimate would move under them mid-question.
+  const [theta, setTheta] = useState(priorElo ?? DEFAULT_ELO)
+  const [storedElo, setStoredElo] = useState<number | undefined>(undefined)
   const [current, setCurrent] = useState<CatItem | null>(null)
   const [log, setLog] = useState<CatAnswerLog[]>([])
   const [done, setDone] = useState(false)
   const [result, setResult] = useState<CatResult | null>(null)
 
   const usedIds = useRef(new Set<string>())
+  useEffect(() => {
+    let cancelled = false
+    readLastElo().then((stored) => {
+      if (!cancelled) setStoredElo(stored)
+    })
+    return () => {
+      cancelled = true
+    }
+  }, [])
+
   const thetaRef = useRef(theta)
   const logRef = useRef<CatAnswerLog[]>([])
   const formatHistoryRef = useRef<CatItemFormat[]>([])
@@ -232,6 +244,15 @@ export function useCatExam(
     [items, finish]
   )
 
+  // Applied once the stored value lands, and only before the first question.
+  useEffect(() => {
+    if (storedElo === undefined) return
+    if (priorElo !== undefined) return
+    if (logRef.current.length > 0) return
+    thetaRef.current = storedElo
+    setTheta(storedElo)
+  }, [storedElo, priorElo])
+
   const start = useCallback(() => {
     usedIds.current.clear()
     formatHistoryRef.current = []
@@ -251,7 +272,9 @@ export function useCatExam(
       logRef.current = r.answers
       setLog(r.answers)
     } else {
-      t = priorElo ?? readLastElo() ?? DEFAULT_ELO
+      // The stored rating is already in state by the time a learner can press
+      // start; reading it again here would mean awaiting inside a sync callback.
+      t = priorElo ?? storedElo ?? DEFAULT_ELO
       logRef.current = []
       setLog([])
     }
@@ -260,7 +283,7 @@ export function useCatExam(
     setDone(false)
     setResult(null)
     pick(t)
-  }, [priorElo, pick])
+  }, [priorElo, pick, storedElo])
 
   const answer = useCallback(
     (option: string) => {
@@ -282,9 +305,7 @@ export function useCatExam(
         },
       ]
       logRef.current = newLog
-      if (typeof window !== "undefined") {
-        window.localStorage.setItem(LAST_ELO_KEY, String(Math.round(nextTheta)))
-      }
+      void storage.setItem(LAST_ELO_KEY, String(Math.round(nextTheta)))
       thetaRef.current = nextTheta
       setLog(newLog)
       setTheta(nextTheta)
