@@ -36,7 +36,9 @@
       "package": "com.navia.academy",
       "versionCode": 1,
       "adaptiveIcon": {
-        "backgroundColor": "#0B0F1A"
+        "foregroundImage": "./assets/foreground.png",
+        "backgroundColor": "#0B0F1A",
+        "monochromeImage": "./assets/monochrome.png"
       },
       "permissions": ["INTERNET"],
       "usesCleartextTraffic": false
@@ -65,6 +67,7 @@
       "eas": {
         "projectId": "1896057c-6dfb-4a5a-85e9-299f62523ac0"
       }
-    }
+    },
+    "icon": "./assets/icon.png"
   }
 }
