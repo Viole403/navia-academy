@@ -12,6 +12,12 @@ import {
 } from "@/hooks/use-cat-exam"
 import { useSettings } from "@/stores/settings"
 import { useTranslation } from "@/i18n/locale-context"
+import {
+  ackWarnings,
+  failWarnings,
+  initialSync,
+  takeWarnings,
+} from "@/lib/tabWarnings"
 import { play } from "@/lib/audio"
 import { languageInfo } from "@/lib/languages"
 import type { VoiceLocale } from "@navia/utils"
@@ -123,6 +129,11 @@ export default function AdaptiveExamPage() {
   // mirrors it for the save calls, which run in effects that must not depend on
   // a value that changes on every tab switch.
   const tabWarningsRef = useRef(0)
+  // Whether the server has been told yet, and what is still in flight. The
+  // endpoint adds what it receives rather than replacing it, so the client owes
+  // it a difference; see lib/tabWarnings for why the difference is retried as a
+  // batch rather than recomputed.
+  const warningSyncRef = useRef(initialSync())
   const [integrityFlag, setIntegrityFlag] = useState(false)
   const [pendingResume, setPendingResume] = useState<CatResume | null>(null)
   const [ready, setReady] = useState(false)
@@ -192,6 +203,11 @@ export default function AdaptiveExamPage() {
           // tripped the flag, so restore that too.
           const prior = s.tab_warnings ?? 0
           tabWarningsRef.current = prior
+          // The server already holds these, so nothing is outstanding. Without
+          // this the whole prior count is sent again as a difference and a
+          // resumed learner is flagged for warnings they were already counted
+          // for.
+          warningSyncRef.current = initialSync(prior)
           setTabWarnings(prior)
           if (prior >= 2) setIntegrityFlag(true)
         }
@@ -274,6 +290,20 @@ export default function AdaptiveExamPage() {
     onAnswerRef.current = onAnswer
   }, [onAnswer])
 
+  /** The warnings the server has not seen, or zero when there is nothing to say. */
+  function sendTabWarnings(): number {
+    const taken = takeWarnings(warningSyncRef.current, tabWarningsRef.current)
+    warningSyncRef.current = taken.sync
+    return taken.delta
+  }
+
+  /** Settle an in-flight batch once the request settles. */
+  function settleTabWarnings(ok: boolean) {
+    warningSyncRef.current = ok
+      ? ackWarnings(warningSyncRef.current, tabWarningsRef.current)
+      : failWarnings(warningSyncRef.current)
+  }
+
   // Persist per-answer (fire-and-forget). Creates the session on first answer.
   useEffect(() => {
     if (log.length === 0 || done) return
@@ -284,9 +314,12 @@ export default function AdaptiveExamPage() {
         answers: log.map(toWire),
         elapsed_sec: elapsedRef.current,
         theta: Math.round(theta),
-        tab_warnings: tabWarningsRef.current,
+        tab_warnings: sendTabWarnings(),
       })
-      .catch(() => {})
+      .then(
+        () => settleTabWarnings(true),
+        () => settleTabWarnings(false)
+      )
   }, [log, done, theta])
 
   function beginSession(resumeData: CatResume | null) {
@@ -306,6 +339,9 @@ export default function AdaptiveExamPage() {
     setElapsed(0)
     elapsedRef.current = 0
     tabWarningsRef.current = 0
+    // A new session starts the server's tally at zero, so nothing is
+    // outstanding against it either.
+    warningSyncRef.current = initialSync()
     setTabWarnings(0)
     setIntegrityFlag(false)
     cat
@@ -331,9 +367,12 @@ export default function AdaptiveExamPage() {
           answers: log.map(toWire),
           elapsed_sec: elapsedRef.current,
           theta: Math.round(theta),
-          tab_warnings: tabWarningsRef.current,
+          tab_warnings: sendTabWarnings(),
         })
-        .catch(() => {})
+        .then(
+          () => settleTabWarnings(true),
+          () => settleTabWarnings(false)
+        )
     }
     // Blueprint §10.1 (wajib): confirm before leaving an in-progress session.
     const onBeforeUnload = (e: BeforeUnloadEvent) => {
