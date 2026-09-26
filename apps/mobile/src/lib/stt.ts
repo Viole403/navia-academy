@@ -55,6 +55,19 @@ function loadNative(): NativeModule | null {
   return native
 }
 
+/**
+ * Whether the native module is present at all.
+ *
+ * Distinct from `sttSupported`, and the two are not interchangeable: a
+ * development build on a device with no recogniser still has the module but
+ * cannot use it, while a client running in Expo Go has no module to begin with.
+ * Telling the learner the feature needs a development build is only true in the
+ * second case, so the two must not be reported the same way.
+ */
+export function sttModulePresent(): boolean {
+  return loadNative() !== null
+}
+
 export function sttSupported(): boolean {
   const mod = loadNative()
   if (!mod) return false

@@ -10,7 +10,12 @@ import { useTheme } from "@/theme/ThemeProvider"
 import { useContentLayout } from "@/theme/layout"
 import { paperType } from "@/theme/paperType"
 import { motifChar } from "@/lib/languages"
-import { ensureMicPermission, startSTT, sttSupported } from "@/lib/stt"
+import {
+  ensureMicPermission,
+  startSTT,
+  sttModulePresent,
+  sttSupported,
+} from "@/lib/stt"
 import { useOnboardingStore } from "@/store/onboarding"
 import { useT } from "@/i18n"
 import { logStudyWithQueue } from "@/utils/offlineQueue"
@@ -213,6 +218,13 @@ export default function SpeakingScreen() {
               </PaperCard>
             )}
           </View>
+        ) : !sttModulePresent() ? (
+          // Shown rather than hidden. A missing button is indistinguishable from
+          // a feature that was never built, and the learner is left guessing
+          // whether the app is broken or the phone is.
+          <Text style={[paperType.note, { color: paper.inkMuted }]}>
+            {t("speak.unavailable")}
+          </Text>
         ) : null}
 
         <LiftedFace
