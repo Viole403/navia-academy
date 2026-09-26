@@ -5,6 +5,12 @@ export type LanguageCode = "zh" | "de" | "en" | "ja"
 
 export type HskLevel = 1 | 2 | 3 | 4 | 5 | 6 | 7
 
+export type {
+  ExamQuestion,
+  ExamQuestionType,
+  ExamSessionWire,
+} from "@navia/types"
+
 export type ExamType = "hsk" | "tocfl" | "goethe" | "jlpt" | "toefl"
 
 export type TocflLevel =

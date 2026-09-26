@@ -192,16 +192,20 @@ export interface VocabWord {
 }
 
 // ─── Exam ───────────────────────────────────────────────────────────────────
-export interface ExamQuestion {
-  id: string
-  type: string
-  difficulty?: string
-  prompt: string
-  prompt_chinese?: string
-  audioText?: string
-  options?: string[]
-  explanation?: string
-}
+/**
+ * Re-exported from the shared package so the option shape is defined once.
+ * It used to be typed `options?: string[]` here while the content pipeline
+ * emitted `[{ id, label }]`, so a question could arrive in a shape this client
+ * could not render.
+ */
+import type { ExamQuestion } from "@navia/types"
+
+export type {
+  ExamQuestion,
+  ExamQuestionType,
+  ContentExercise,
+  ContentOption,
+} from "@navia/types"
 
 export interface ExamSession {
   id: number
