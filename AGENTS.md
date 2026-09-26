@@ -5,7 +5,7 @@ Compact guidance for AI coding agents. Every line is something an agent would li
 ## Toolchain
 
 - **Bun + Turborepo monorepo.** Use `bun` (declared `packageManager: bun@1.4.0`). Workspaces come from the `workspaces` field in root `package.json` (no pnpm-workspace.yaml).
-- **No test runner exists anywhere.** CI only runs `bun run lint` + per-package typecheck (`tsc --noEmit` / `go vet`) + JSON validation. Verify changes with `bun run lint` and `tsc --noEmit`, never `bun test`.
+- **Tests exist, and the two frontends use different runners.** `apps/web` uses Jest (`bun run test` in that package); `apps/mobile` uses Vitest. `bun test` at the root runs neither. CI additionally runs `bun run lint` + per-package typecheck (`tsc --noEmit` / `go vet`) + JSON validation. Verify changes with all of: `bun run lint`, `tsc --noEmit` in the package you touched, and that package's `bun run test`. A passing runner is not enough — Jest transpiles without typechecking, so a suite can be green while `tsc` rejects it.
 - Prettier config: `semi: false`, `singleQuote: false`, `printWidth: 80`. Run `bun run format` to autofix.
 - Node 22+ / Bun 1.4+ (CI pins Bun 1.4.0 via `oven-sh/setup-bun`). Backend needs Go 1.26+.
 
@@ -60,7 +60,7 @@ Compact guidance for AI coding agents. Every line is something an agent would li
 
 ## Verify before PR
 
-- `bun run lint` (root, turbo) · `go vet ./cmd/... ./internal/... ./pkg/...` + `go build ./cmd/server` (apps/backend) · `bun x tsc --noEmit` (apps/media, apps/web).
+- `bun run lint` (root, turbo) · `go vet ./cmd/... ./internal/... ./pkg/...` + `go build ./cmd/server` (apps/backend) · `bun x tsc --noEmit` (apps/media, apps/web, apps/mobile) · `bun run test` (apps/web, apps/mobile).
 
 ## Scratch space
 
