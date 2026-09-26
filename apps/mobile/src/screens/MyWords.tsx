@@ -4,6 +4,7 @@ import { SafeAreaView } from "react-native-safe-area-context"
 import { useRouter } from "expo-router"
 import { useQuery } from "@tanstack/react-query"
 import { PaperCard, QuietPill } from "@/components/study/PaperCard"
+import { ReadingAid } from "@/components/study/ReadingAid"
 import { FlexGap } from "@/components/study/press"
 import { useTheme } from "@/theme/ThemeProvider"
 import { useContentFaces } from "@/hooks/useContentFaces"
@@ -274,15 +275,11 @@ function CardRow({
         {headword(word)}
       </Text>
       <View style={{ flex: 1, gap: 1 }}>
-        <Text
-          numberOfLines={1}
-          style={[
-            paperType.statLabel,
-            { color: paper.inkMuted, fontFamily: families.nunitoSemiBold },
-          ]}
-        >
-          {reading(word) ?? "—"}
-        </Text>
+        <ReadingAid
+          pinyin={reading(word)}
+          size="label"
+          color={paper.inkMuted}
+        />
         <Text
           numberOfLines={1}
           style={[

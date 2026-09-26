@@ -4,6 +4,7 @@ import { Stack, useLocalSearchParams, useRouter } from "expo-router"
 import { SafeAreaView } from "react-native-safe-area-context"
 import { EmptyState } from "@/components/ui/EmptyState"
 import { LiftedFace, PaperCard } from "@/components/study/PaperCard"
+import { ReadingAid } from "@/components/study/ReadingAid"
 import { PressableScale } from "@/components/study/press"
 import { useContentFaces } from "@/hooks/useContentFaces"
 import { useContentLayout } from "@/theme/layout"
@@ -159,13 +160,11 @@ export function GrammarView() {
                       >
                         {headword(e)}
                       </Text>
-                      {!!reading(e) && (
-                        <Text
-                          style={[paperType.note, { color: paper.greenDark }]}
-                        >
-                          {reading(e)}
-                        </Text>
-                      )}
+                      <ReadingAid
+                        pinyin={reading(e)}
+                        size="label"
+                        color={paper.greenDark}
+                      />
                     </View>
                   ))}
                 </PaperCard>

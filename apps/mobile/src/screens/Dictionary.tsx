@@ -17,6 +17,7 @@ import { FlexGap } from "@/components/study/press"
 import { useTheme } from "@/theme/ThemeProvider"
 import { useContentFaces } from "@/hooks/useContentFaces"
 import { useContentLayout } from "@/theme/layout"
+import { ReadingAid } from "@/components/study/ReadingAid"
 import { paperType, families, hanziType } from "@/theme/paperType"
 import { loadVocabulary } from "@/lib/content-data"
 import { rankVocabulary } from "@/lib/dictionary-rank"
@@ -497,23 +498,12 @@ function WordRow({
         {headword(word)}
       </Text>
       <View style={{ flex: 1, gap: 1 }}>
-        <Text
-          numberOfLines={1}
-          style={[
-            paperType.statLabel,
-            { color: paper.inkMuted, fontFamily: families.nunitoSemiBold },
-          ]}
-        >
-          {reading(word) ?? "—"}
-        </Text>
-        {!compact ? (
-          <Text
-            numberOfLines={1}
-            style={[paperType.bodySm, { color: paper.ink }]}
-          >
-            {String(word.translation ?? "")}
-          </Text>
-        ) : null}
+        <ReadingAid
+          pinyin={reading(word)}
+          translation={!compact ? String(word.translation ?? "") : undefined}
+          size="label"
+          translationColor={paper.ink}
+        />
       </View>
       {lv !== undefined ? (
         <View

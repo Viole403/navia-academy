@@ -11,6 +11,7 @@ import { SafeAreaView } from "react-native-safe-area-context"
 import { Stack, useLocalSearchParams, useRouter } from "expo-router"
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query"
 import { PaperCard, LiftedFace } from "@/components/study/PaperCard"
+import { ReadingAid } from "@/components/study/ReadingAid"
 import { FlexGap } from "@/components/study/press"
 import { HanziStage } from "@/components/hanzi/HanziStage"
 import { Celebration } from "@/components/study/Celebration"
@@ -393,17 +394,7 @@ export function ReviewSession() {
                     </Text>
                     {revealed ? (
                       <View style={{ gap: 6, alignItems: "center" }}>
-                        <Text
-                          style={[
-                            paperType.cardBody,
-                            {
-                              color: paper.coral,
-                              fontFamily: families.nunitoBold,
-                            },
-                          ]}
-                        >
-                          {reading(word) ?? "—"}
-                        </Text>
+                        <ReadingAid pinyin={reading(word)} />
                         <Text
                           style={[
                             paperType.proseSm,

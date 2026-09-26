@@ -4,6 +4,7 @@ import { useLocalSearchParams } from "expo-router"
 import { useQuery } from "@tanstack/react-query"
 import { DetailShell } from "@/components/study/DetailShell"
 import { PaperCard, LiftedFace } from "@/components/study/PaperCard"
+import { ReadingAid } from "@/components/study/ReadingAid"
 import { HanziStage } from "@/components/hanzi/HanziStage"
 import { useTheme } from "@/theme/ThemeProvider"
 import { useContentFaces } from "@/hooks/useContentFaces"
@@ -88,16 +89,11 @@ export function CharacterDetail() {
           >
             {glyph}
           </Text>
-          {!!entry?.pinyin && (
-            <Text
-              style={[
-                paperType.cardBody,
-                { color: paper.coral, fontFamily: families.nunitoBold },
-              ]}
-            >
-              {entry.pinyin}
-            </Text>
-          )}
+          <ReadingAid
+            pinyin={entry?.pinyin}
+            translation={entry?.meaning}
+            numberOfLines={undefined}
+          />
           {!!entry?.meaning && (
             <Text
               style={[

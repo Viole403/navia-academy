@@ -11,6 +11,7 @@ import { SafeAreaView } from "react-native-safe-area-context"
 import { useRouter } from "expo-router"
 import { useQuery } from "@tanstack/react-query"
 import { PaperCard, QuietPill } from "@/components/study/PaperCard"
+import { ReadingAid } from "@/components/study/ReadingAid"
 import { FlexGap } from "@/components/study/press"
 import { useTheme } from "@/theme/ThemeProvider"
 import { useContentFaces } from "@/hooks/useContentFaces"
@@ -218,18 +219,11 @@ export function Characters() {
                   >
                     {glyph}
                   </Text>
-                  {!!c.pinyin && (
-                    <Text
-                      numberOfLines={1}
-                      style={{
-                        color: paper.coral,
-                        fontFamily: families.nunitoBold,
-                        fontSize: 10,
-                      }}
-                    >
-                      {c.pinyin}
-                    </Text>
-                  )}
+                  <ReadingAid
+                    pinyin={c.pinyin}
+                    size="label"
+                    color={paper.coral}
+                  />
                 </Pressable>
               )
             })}

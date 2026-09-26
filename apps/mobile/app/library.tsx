@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react"
+import { Fragment, useMemo, useState } from "react"
 import {
   ActivityIndicator,
   Pressable,
@@ -13,6 +13,8 @@ import { useQuery } from "@tanstack/react-query"
 import { EmptyState } from "@/components/ui/EmptyState"
 import { Motif } from "@/components/ui/Motif"
 import { LiftedFace, PaperCard, QuietPill } from "@/components/study/PaperCard"
+import { ReadingAid } from "@/components/study/ReadingAid"
+import { useDisplayMode } from "@/hooks/useDisplayMode"
 import { PressableScale } from "@/components/study/press"
 import { useTheme } from "@/theme/ThemeProvider"
 import { useContentLayout } from "@/theme/layout"
@@ -77,6 +79,7 @@ export default function LibraryScreen() {
   // meaningful, because "Level 5" means something different under TOCFL than
   // under JLPT.
   const examType = useOnboardingStore((s) => s.examType)
+  const { showsPinyin, showsTranslation } = useDisplayMode()
   const [query, setQuery] = useState("")
   const [level, setLevel] = useState("all")
   const [difficulty, setDifficulty] = useState("all")
@@ -187,8 +190,20 @@ export default function LibraryScreen() {
           : ((charactersQ.data ?? []) as HanziChar[]).map((c) => ({
               id: c.id,
               title: c.char ?? c.hanzi ?? c.id,
-              sub: `${reading(c) ?? ""}${c.meaning ? ` · ${c.meaning}` : ""}`,
+              sub: charSub(c),
             }))
+
+  // The row subtitle is one string, so the reading is joined in only when the
+  // mode asks for one — otherwise a character-only mode still gets pinyin here.
+  const charSub = (c: HanziChar) => {
+    const bits: string[] = []
+    if (showsPinyin()) {
+      const r = reading(c)
+      if (r) bits.push(r)
+    }
+    if (showsTranslation() && c.meaning) bits.push(c.meaning)
+    return bits.join(" · ")
+  }
 
   const open = (id: string) => setOpenId((cur) => (cur === id ? null : id))
 
@@ -206,9 +221,16 @@ export default function LibraryScreen() {
             </Text>
           )}
           {(g.examples ?? []).slice(0, 3).map((e, i) => (
-            <Text key={i} style={[paperType.note, { color: paper.inkMuted }]}>
-              {headword(e)} {reading(e) ? `· ${reading(e)}` : ""}
-            </Text>
+            <Fragment key={i}>
+              <Text style={[paperType.note, { color: paper.inkMuted }]}>
+                {headword(e)}
+              </Text>
+              <ReadingAid
+                pinyin={reading(e)}
+                size="label"
+                color={paper.inkMuted}
+              />
+            </Fragment>
           ))}
         </View>
       )
@@ -231,11 +253,11 @@ export default function LibraryScreen() {
                 >
                   {headword(p)}
                 </Text>
-                {!!reading(p) && (
-                  <Text style={[paperType.note, { color: paper.inkMuted }]}>
-                    {reading(p)}
-                  </Text>
-                )}
+                <ReadingAid
+                  pinyin={reading(p)}
+                  size="label"
+                  color={paper.inkMuted}
+                />
               </View>
             ))}
         </View>
@@ -258,11 +280,11 @@ export default function LibraryScreen() {
               <Text style={[paperType.bodySm, { color: paper.ink }]}>
                 {headword(turn)}
               </Text>
-              {!!reading(turn) && (
-                <Text style={[paperType.note, { color: paper.inkMuted }]}>
-                  {reading(turn)}
-                </Text>
-              )}
+              <ReadingAid
+                pinyin={reading(turn)}
+                size="label"
+                color={paper.inkMuted}
+              />
             </View>
           ))}
         </View>

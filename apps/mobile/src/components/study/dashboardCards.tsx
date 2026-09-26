@@ -2,6 +2,7 @@ import { Text, View } from "react-native"
 import { useTheme } from "@/theme/ThemeProvider"
 import { useContentFaces } from "@/hooks/useContentFaces"
 import { paperType, families } from "@/theme/paperType"
+import { ReadingAid } from "@/components/study/ReadingAid"
 import { PaperCard, LiftedFace, QuietPill, PaperStat } from "./PaperCard"
 import { CardArt, PressableScale } from "./press"
 import { WeekStrip } from "./WeekStrip"
@@ -106,26 +107,11 @@ export function NewWordCard({
         >
           {word}
         </Text>
-        {!!reading && (
-          <Text
-            style={[
-              paperType.cardBody,
-              { color: paper.coral, fontFamily: families.nunitoBold },
-            ]}
-          >
-            {reading}
-          </Text>
-        )}
-        {!!gloss && (
-          <Text
-            style={[
-              paperType.bodySm,
-              { color: paper.inkSoft, fontFamily: families.inter },
-            ]}
-          >
-            {gloss}
-          </Text>
-        )}
+        <ReadingAid
+          pinyin={reading}
+          translation={gloss}
+          numberOfLines={undefined}
+        />
       </View>
 
       <View

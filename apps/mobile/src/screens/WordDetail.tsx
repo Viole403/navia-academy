@@ -10,6 +10,7 @@ import { Stack, useLocalSearchParams } from "expo-router"
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query"
 import { DetailShell } from "@/components/study/DetailShell"
 import { PaperCard, LiftedFace } from "@/components/study/PaperCard"
+import { ReadingAid } from "@/components/study/ReadingAid"
 import { HanziStage } from "@/components/hanzi/HanziStage"
 import { useTheme } from "@/theme/ThemeProvider"
 import { useContentFaces } from "@/hooks/useContentFaces"
@@ -279,24 +280,12 @@ export function WordDetail() {
                 >
                   {e.hanzi ?? e.text ?? ""}
                 </Text>
-                {!!e.pinyin && (
-                  <Text
-                    style={[
-                      paperType.statLabel,
-                      {
-                        color: paper.coral,
-                        fontFamily: families.nunitoSemiBold,
-                      },
-                    ]}
-                  >
-                    {e.pinyin}
-                  </Text>
-                )}
-                {!!e.translation && (
-                  <Text style={[paperType.proseSm, { color: paper.inkSoft }]}>
-                    {e.translation}
-                  </Text>
-                )}
+                <ReadingAid
+                  pinyin={e.pinyin}
+                  translation={e.translation}
+                  size="label"
+                  translationColor={paper.inkSoft}
+                />
               </Pressable>
             ))}
           </View>

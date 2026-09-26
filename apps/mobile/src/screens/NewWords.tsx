@@ -4,6 +4,7 @@ import { SafeAreaView } from "react-native-safe-area-context"
 import { useRouter } from "expo-router"
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query"
 import { PaperCard, LiftedFace, QuietPill } from "@/components/study/PaperCard"
+import { ReadingAid } from "@/components/study/ReadingAid"
 import { FlexGap } from "@/components/study/press"
 import { HanziStage } from "@/components/hanzi/HanziStage"
 import { useTheme } from "@/theme/ThemeProvider"
@@ -238,16 +239,7 @@ export function NewWords() {
               >
                 {headword(current)}
               </Text>
-              {!!reading(current) && (
-                <Text
-                  style={[
-                    paperType.cardBody,
-                    { color: paper.coral, fontFamily: families.nunitoBold },
-                  ]}
-                >
-                  {reading(current)}
-                </Text>
-              )}
+              <ReadingAid pinyin={reading(current)} />
               <Text
                 style={[
                   paperType.prose,
