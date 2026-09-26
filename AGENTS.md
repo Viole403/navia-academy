@@ -68,6 +68,10 @@ Compact guidance for AI coding agents. Every line is something an agent would li
 ## Conventions
 
 - Commits: Conventional Commits. Branches: `feat/short-name`, `fix/short-name`.
+- **Comments: short or none.** Two lines maximum, and only when the code cannot
+  explain itself. Never restate what the code does; comment the _why_ only, and
+  only where the reason is not visible from the code. A long comment is a sign
+  the code should be restructured instead.
 - Frontend: TypeScript strict; ship loading/empty/error states on all new UI.
 - AI Tutor is optional — enable via `apps/web/.env.local` (`AI_TUTOR_PROVIDER=openai|anthropic|gemini`); falls back to local KB if no key.
 
