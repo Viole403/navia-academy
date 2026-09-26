@@ -4,7 +4,7 @@ import {
   minutesToday,
   studiedToday,
   assembleWidgetPayload,
-} from "@/hooks/useWidgetSync"
+} from "@/lib/widgetSync"
 
 const sessions = [
   { date: "2026-03-10T09:00:00Z", minutes: 12 },

@@ -20,6 +20,7 @@ import { useOfflineDrain } from "@/hooks/useOfflineDrain"
 import { configureAudioSession, setSoundPrefs } from "@/utils/sound"
 import { useSettingsPrefs } from "@/store/settings"
 import "../global.css"
+import "./transformProbe"
 
 const queryClient = new QueryClient({
   defaultOptions: {
