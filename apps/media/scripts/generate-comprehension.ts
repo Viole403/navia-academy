@@ -35,7 +35,7 @@ const CACHE = join(ROOT, "..", "..", "tmp", "belebele-cache")
 
 const SOURCE_URL =
   "https://huggingface.co/datasets/facebook/belebele/resolve/main/data"
-const CREDIT = "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage"
+const CREDIT = "Belebele"
 
 interface BelebeleRow {
   link: string

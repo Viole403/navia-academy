@@ -16,7 +16,7 @@
       "type": "multiple-choice",
       "prompt": "前述の内容によると、上手にアコーディオンを弾くための適切なコツとして考えられないものはどれでしょう?",
       "passage": "音符どおりに正確に奏でながら、手をできるだけリラックスした状態で保つようにしましょう。また、指が余計な動きをしないように努めましょう。 そうすることで、疲れがたまりにくくなります。ピアノのように音量を出すために力を入れて鍵盤を叩く必要はないことを覚えておいてください。 アコーディオンを弾くときに音量を上げるには、蛇腹を強く、または速く動かします。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikibooks.org/wiki/Accordion/Right_hand",
+      "passageSource": "Belebele · https://en.wikibooks.org/wiki/Accordion/Right_hand",
       "options": [
         {
           "id": "o0",
@@ -44,7 +44,7 @@
       "type": "multiple-choice",
       "prompt": "アコーディオンを弾く際、音量を上げるために役立つことは次のどれでしょう?",
       "passage": "音符どおりに正確に奏でながら、手をできるだけリラックスした状態で保つようにしましょう。また、指が余計な動きをしないように努めましょう。 そうすることで、疲れがたまりにくくなります。ピアノのように音量を出すために力を入れて鍵盤を叩く必要はないことを覚えておいてください。 アコーディオンを弾くときに音量を上げるには、蛇腹を強く、または速く動かします。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikibooks.org/wiki/Accordion/Right_hand",
+      "passageSource": "Belebele · https://en.wikibooks.org/wiki/Accordion/Right_hand",
       "options": [
         {
           "id": "o0",
@@ -72,7 +72,7 @@
       "type": "multiple-choice",
       "prompt": "テレビの画像の境界線が切れるのはなぜでしょう?",
       "passage": "映画をDVD形式に変換しようとするときに最も一般的な問題の1つはオーバースキャンです。 ほとんどのテレビ番組は、大衆が喜ぶように製作されています。 そのため、テレビに映る映像すべての上下左右の境界線がカットされていました。 これは、画像が画面全体を確実に覆うようにできています。これをオーバースキャンといいます。 残念なことに、DVDを自作すると、境界がカットされる可能性が非常に高く、字幕が下に寄りすぎていると完全には表示されないでしょう。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikibooks.org/wiki/All_About_Converting_From_Several_Video_Formats_To_DVD",
+      "passageSource": "Belebele · https://en.wikibooks.org/wiki/All_About_Converting_From_Several_Video_Formats_To_DVD",
       "options": [
         {
           "id": "o0",
@@ -100,7 +100,7 @@
       "type": "multiple-choice",
       "prompt": "前述の内容によると、映画をDVD形式に変換する際に起きる可能性のある問題は、次のどれでしょう?",
       "passage": "映画をDVD形式に変換しようとするときに最も一般的な問題の1つはオーバースキャンです。 ほとんどのテレビ番組は、大衆が喜ぶように製作されています。 そのため、テレビに映る映像すべての上下左右の境界線がカットされていました。 これは、画像が画面全体を確実に覆うようにできています。これをオーバースキャンといいます。 残念なことに、DVDを自作すると、境界がカットされる可能性が非常に高く、字幕が下に寄りすぎていると完全には表示されないでしょう。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikibooks.org/wiki/All_About_Converting_From_Several_Video_Formats_To_DVD",
+      "passageSource": "Belebele · https://en.wikibooks.org/wiki/All_About_Converting_From_Several_Video_Formats_To_DVD",
       "options": [
         {
           "id": "o0",
@@ -128,7 +128,7 @@
       "type": "multiple-choice",
       "prompt": "外的な合図がある場合でも、継続されるのは次のうちどれでしょうか?",
       "passage": "生理学や行動で観察されるリズムの多くは、内因性周期の存在と体内時計を通して刻まれるしくみに決定的に依存していることが多いのです。 周期的リズムは、単に外部からの周期的な合図への応答ではなく、細菌、真菌、植物、動物を含むほとんどの生物について記録されています。 体内時計は、外部からの合図がなくても、一定期間、自由に循環し続ける自立的発振器です。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikibooks.org/wiki/Animal_Behavior/Biological_Rhythms",
+      "passageSource": "Belebele · https://en.wikibooks.org/wiki/Animal_Behavior/Biological_Rhythms",
       "options": [
         {
           "id": "o0",
@@ -156,7 +156,7 @@
       "type": "multiple-choice",
       "prompt": "次のうち、自然とのふれあいを重視した観光活動の例ではないのはどれでしょう?",
       "passage": "自然との触れあいを重視した観光は、野生の動植物を含めた景観を楽しむ目的で自然地域を訪れることに興味を持つ人々を魅了しています。 現地での活動の例としては、狩猟、釣り、写真撮影、バードウォッチング、公園の見学や生態系に関する情報調査などが挙げられます。 例としては、ボルネオ島のオランウータンに会いに行き、写真を撮ったり、学んだりすることが挙げられます。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikibooks.org/wiki/Applied_Ecology/Nature_Tourism",
+      "passageSource": "Belebele · https://en.wikibooks.org/wiki/Applied_Ecology/Nature_Tourism",
       "options": [
         {
           "id": "o0",
@@ -184,7 +184,7 @@
       "type": "multiple-choice",
       "prompt": "前述の内容によると、輸送システムの基礎は次のうちのどれでしょう?",
       "passage": "毎朝、小さな田舎町を出発して職場に向かう人々は、自分たちの出発地付近に職場がある人たちとすれ違います。 このダイナミックな往復輸送においては、誰もが自家用車をベースにした輸送系と何らかの形でつながり、それを支えています。 科学は今、この大規模な炭素経済によって、過去200万年間にわたって人間の進化を支えてきたその安定した状態の1つから生物圏を外したことを示しています。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikibooks.org/wiki/Applied_Ecology/New_Societies_and_Cultures",
+      "passageSource": "Belebele · https://en.wikibooks.org/wiki/Applied_Ecology/New_Societies_and_Cultures",
       "options": [
         {
           "id": "o0",
@@ -212,7 +212,7 @@
       "type": "multiple-choice",
       "prompt": "核を周回する粒子はどのタイプの電荷を持っていますか?",
       "passage": "原子は、すべての物質の基本的な構成要素の1つであると考えることができます。 これは非常に複雑な天体で、単純化されたボーアモデルによれば、中心核が電子によって周回しており、太陽を周回している惑星に似ています（図1.1参照）。 核はいずれも中性子と陽子という2つの粒子で構成されます。 陽子は正電荷を帯び、中性子は無電荷です。電子は負電荷を帯びた粒子です。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikibooks.org/wiki/Basic_Physics_of_Digital_Radiography/The_Basics",
+      "passageSource": "Belebele · https://en.wikibooks.org/wiki/Basic_Physics_of_Digital_Radiography/The_Basics",
       "options": [
         {
           "id": "o0",
@@ -240,7 +240,7 @@
       "type": "multiple-choice",
       "prompt": "核はどの粒子で構成されていますか?",
       "passage": "原子は、すべての物質の基本的な構成要素の1つであると考えることができます。 これは非常に複雑な天体で、単純化されたボーアモデルによれば、中心核が電子によって周回しており、太陽を周回している惑星に似ています（図1.1参照）。 核はいずれも中性子と陽子という2つの粒子で構成されます。 陽子は正電荷を帯び、中性子は無電荷です。電子は負電荷を帯びた粒子です。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikibooks.org/wiki/Basic_Physics_of_Digital_Radiography/The_Basics",
+      "passageSource": "Belebele · https://en.wikibooks.org/wiki/Basic_Physics_of_Digital_Radiography/The_Basics",
       "options": [
         {
           "id": "o0",
@@ -268,7 +268,7 @@
       "type": "multiple-choice",
       "prompt": "生徒にとって非同期コミュニケーションのメリットとならないのは次のうちどれでしょう? ",
       "passage": "非同期コミュニケーションは、内省や他者への反応の時間を促すものです。 生徒は自分のペースで取り組むことができ、指導情報のペースをコントロールできます。 また、フレックスタイム制も可能で、時間的な制約が減ります。(Bremer, 1998) インターネットやウェブを利用することで、学習者はいつでも情報にアクセスできるようになります。 また、学生はいつでも講師に質問でき、次回の面談まで待たなくても、かなり迅速な返答を期待することができます。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikibooks.org/wiki/Blended_Learning_in_K-12/Synchronous_and_asynchronous_communication_methods",
+      "passageSource": "Belebele · https://en.wikibooks.org/wiki/Blended_Learning_in_K-12/Synchronous_and_asynchronous_communication_methods",
       "options": [
         {
           "id": "o0",
@@ -296,7 +296,7 @@
       "type": "multiple-choice",
       "prompt": "前述の内容によると、生徒にとって融通が利かない非同期コミュニケーションの側面とは次のうちのどれでしょうか?",
       "passage": "非同期コミュニケーションは、内省や他者への反応の時間を促すものです。 生徒は自分のペースで取り組むことができ、指導情報のペースをコントロールできます。 また、フレックスタイム制も可能で、時間的な制約が減ります。(Bremer, 1998) インターネットやウェブを利用することで、学習者はいつでも情報にアクセスできるようになります。 また、学生はいつでも講師に質問でき、次回の面談まで待たなくても、かなり迅速な返答を期待することができます。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikibooks.org/wiki/Blended_Learning_in_K-12/Synchronous_and_asynchronous_communication_methods",
+      "passageSource": "Belebele · https://en.wikibooks.org/wiki/Blended_Learning_in_K-12/Synchronous_and_asynchronous_communication_methods",
       "options": [
         {
           "id": "o0",
@@ -324,7 +324,7 @@
       "type": "multiple-choice",
       "prompt": "中世の城に関連するものとして、文中で言及されていないのは次のうちのどれでしょう?",
       "passage": "伝統的な中世の城は、長い間人々の想像力を掻き立て、馬上槍試合、酒宴、アーサー王の騎士の姿を彷彿とさせます。 千年の歴史を持つ遺跡iに囲まれて立っているだけで、遠い昔の戦いの音や匂いが思い浮かび、石畳を打つひづめの音が聞こえ、地下牢の穴から恐怖の匂いを嗅いが立ち上るような気がします。 しかし、私たちの想像力は現実に基づいているのでしょうか。そもそも城はなぜ作られたのでしょうか。どのように設計され、建設されたのでしょうか。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikibooks.org/wiki/Castles_of_England/The_Development_of_the_Castle",
+      "passageSource": "Belebele · https://en.wikibooks.org/wiki/Castles_of_England/The_Development_of_the_Castle",
       "options": [
         {
           "id": "o0",
@@ -352,7 +352,7 @@
       "type": "multiple-choice",
       "prompt": "城跡で思い浮かぶ匂いや音について、文中で言及されていないのは次のうちのどれでしょう?",
       "passage": "伝統的な中世の城は、長い間人々の想像力を掻き立て、馬上槍試合、酒宴、アーサー王の騎士の姿を彷彿とさせます。 千年の歴史を持つ遺跡iに囲まれて立っているだけで、遠い昔の戦いの音や匂いが思い浮かび、石畳を打つひづめの音が聞こえ、地下牢の穴から恐怖の匂いを嗅いが立ち上るような気がします。 しかし、私たちの想像力は現実に基づいているのでしょうか。そもそも城はなぜ作られたのでしょうか。どのように設計され、建設されたのでしょうか。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikibooks.org/wiki/Castles_of_England/The_Development_of_the_Castle",
+      "passageSource": "Belebele · https://en.wikibooks.org/wiki/Castles_of_England/The_Development_of_the_Castle",
       "options": [
         {
           "id": "o0",
@@ -380,7 +380,7 @@
       "type": "multiple-choice",
       "prompt": "カービー・マクスロー城の正確な記述は次のうちどれでしょう?",
       "passage": "この時代の典型的な城であるカービー・マクスロー城は、お城というよりも要塞化された邸宅のような雰囲気を醸し出しています。 その大きなガラス窓と薄い壁では、長期にわたる断固たる攻撃に抗いきれなかったことでしょう。 ヘイスティングス卿によって建設が開始された1480年代には、この国は比較的平和であり、防衛が必要とされたのは、放浪する襲撃者の小集団から国を守るための防衛のみであった。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikibooks.org/wiki/Castles_of_England/Tudor_Castles",
+      "passageSource": "Belebele · https://en.wikibooks.org/wiki/Castles_of_England/Tudor_Castles",
       "options": [
         {
           "id": "o0",
@@ -408,7 +408,7 @@
       "type": "multiple-choice",
       "prompt": "文中で説明された時代には異質と考えられたカービー・マクスロー城の構造的特徴は、次のうちどれでしょう?",
       "passage": "この時代の典型的な城であるカービー・マクスロー城は、お城というよりも要塞化された邸宅のような雰囲気を醸し出しています。 その大きなガラス窓と薄い壁では、長期にわたる断固たる攻撃に抗いきれなかったことでしょう。 ヘイスティングス卿によって建設が開始された1480年代には、この国は比較的平和であり、防衛が必要とされたのは、放浪する襲撃者の小集団から国を守るための防衛のみであった。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikibooks.org/wiki/Castles_of_England/Tudor_Castles",
+      "passageSource": "Belebele · https://en.wikibooks.org/wiki/Castles_of_England/Tudor_Castles",
       "options": [
         {
           "id": "o0",
@@ -436,7 +436,7 @@
       "type": "multiple-choice",
       "prompt": "文中の内容によると、ランナーにとって次のシーズンの準備で最も役立つことは次のうちのどれでしょう?",
       "passage": "クォーターマラソンからハーフマラソンに転向する場合、スピードの重要性ははるかに低くなり、持久力が絶対的に必要になります。 もちろん、2分を切る一流のハーフランナーは、それなりのスピードがあるはずですが、どんなことがあっても持久力を伸ばしていかなければなりません。 冬場にクロスカントリー走をしながら、ジムに通って上半身を鍛えれば、ランニングシーズンに向けて最高の準備となります。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikibooks.org/wiki/Coaching_Youth_Middle_Distance_Runners/Introduction",
+      "passageSource": "Belebele · https://en.wikibooks.org/wiki/Coaching_Youth_Middle_Distance_Runners/Introduction",
       "options": [
         {
           "id": "o0",
@@ -464,7 +464,7 @@
       "type": "multiple-choice",
       "prompt": "文中の内容によると、一流のハーフマイルマラソンのランナーにとって最も重要なことは次のうちのどれでしょう?",
       "passage": "クォーターマラソンからハーフマラソンに転向する場合、スピードの重要性ははるかに低くなり、持久力が絶対的に必要になります。 もちろん、2分を切る一流のハーフランナーは、それなりのスピードがあるはずですが、どんなことがあっても持久力を伸ばしていかなければなりません。 冬場にクロスカントリー走をしながら、ジムに通って上半身を鍛えれば、ランニングシーズンに向けて最高の準備となります。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikibooks.org/wiki/Coaching_Youth_Middle_Distance_Runners/Introduction",
+      "passageSource": "Belebele · https://en.wikibooks.org/wiki/Coaching_Youth_Middle_Distance_Runners/Introduction",
       "options": [
         {
           "id": "o0",
@@ -492,7 +492,7 @@
       "type": "multiple-choice",
       "prompt": "ルネサンス期の結果として、より重要になったことは次のうちのどれでしょう? ",
       "passage": "上記のように知識を得る能力や学習能力が変化するにつれて知識を得る基準率が変わってきました。 情報を入手するためのアプローチが異なりました。個人の内面に存在するプレッシャーが想起されることはなく、文面を思い出す能力により焦点が当てられるようになっていました。 要するに、ルネサンスは、学習法や知識の普及に大きな変化をもたらしたのです。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikibooks.org/wiki/Communication_Theory/Orality_and_Literacy",
+      "passageSource": "Belebele · https://en.wikibooks.org/wiki/Communication_Theory/Orality_and_Literacy",
       "options": [
         {
           "id": "o0",
@@ -520,7 +520,7 @@
       "type": "multiple-choice",
       "prompt": "ルネサンス期の結果として、あまり強調されなくなったのは次のうちのどれでしょう?",
       "passage": "上記のように知識を得る能力や学習能力が変化するにつれて知識を得る基準率が変わってきました。 情報を入手するためのアプローチが異なりました。個人の内面に存在するプレッシャーが想起されることはなく、文面を思い出す能力により焦点が当てられるようになっていました。 要するに、ルネサンスは、学習法や知識の普及に大きな変化をもたらしたのです。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikibooks.org/wiki/Communication_Theory/Orality_and_Literacy",
+      "passageSource": "Belebele · https://en.wikibooks.org/wiki/Communication_Theory/Orality_and_Literacy",
       "options": [
         {
           "id": "o0",
@@ -548,7 +548,7 @@
       "type": "multiple-choice",
       "prompt": "西ヨーロッパが影響力に頼るのをやめ、独自のスタイルを発展させ始めたのはいつのことでしょう?",
       "passage": "ゴシック様式の最盛期は10～11世紀にかけてと14世紀でした。 当初の装いは東方のビザンチン文化の影響を強く受けたものでした。 しかし、通信経路が遅いため、西欧のスタイルは25～30年遅れている可能性があります。 中世の終焉に向かって、西ヨーロッパは独自の様式を開発し始めました。十字軍の結果として生じた当時としては最大の進歩の1つは、衣類を閉じるためにボタンを使用し始めたことです。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikibooks.org/wiki/Costume_History/Gothic",
+      "passageSource": "Belebele · https://en.wikibooks.org/wiki/Costume_History/Gothic",
       "options": [
         {
           "id": "o0",
@@ -576,7 +576,7 @@
       "type": "multiple-choice",
       "prompt": "衣類を閉じるためにボタンを使うようになったのは、なんの結果でしょう? ",
       "passage": "ゴシック様式の最盛期は10～11世紀にかけてと14世紀でした。 当初の装いは東方のビザンチン文化の影響を強く受けたものでした。 しかし、通信経路が遅いため、西欧のスタイルは25～30年遅れている可能性があります。 中世の終焉に向かって、西ヨーロッパは独自の様式を開発し始めました。十字軍の結果として生じた当時としては最大の進歩の1つは、衣類を閉じるためにボタンを使用し始めたことです。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikibooks.org/wiki/Costume_History/Gothic",
+      "passageSource": "Belebele · https://en.wikibooks.org/wiki/Costume_History/Gothic",
       "options": [
         {
           "id": "o0",
@@ -604,7 +604,7 @@
       "type": "multiple-choice",
       "prompt": "文中の内容によると、環境問題に対する実行可能な長期的解決策とされるものは次のうちのどれでしょう?",
       "passage": "もっと環境に優しい生活を始めてもいいし、環境運動に参加してもいいし、将来の苦しみをある程度軽減するために活動家になってもいいのです。 多くの場合、これは対症療法のようなものです。しかし、一時的な解決を求めるだけではなく、問題の根本原因を突き止め、それを不活性化させる必要があります。 人類の科学技術の進歩によって世界は大きく変わり、過剰な人口と贅沢な生活が原因で問題が拡大したことは十分に明白な事実です。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikibooks.org/wiki/Environmental_theory_and_collection_of_ideas/Environmentalism_and_survival",
+      "passageSource": "Belebele · https://en.wikibooks.org/wiki/Environmental_theory_and_collection_of_ideas/Environmentalism_and_survival",
       "options": [
         {
           "id": "o0",
@@ -632,7 +632,7 @@
       "type": "multiple-choice",
       "prompt": "文中の内容によると、環境問題に対する症療法として考えられないものは次のうちのどれでしょう?",
       "passage": "もっと環境に優しい生活を始めてもいいし、環境運動に参加してもいいし、将来の苦しみをある程度軽減するために活動家になってもいいのです。 多くの場合、これは対症療法のようなものです。しかし、一時的な解決を求めるだけではなく、問題の根本原因を突き止め、それを不活性化させる必要があります。 人類の科学技術の進歩によって世界は大きく変わり、過剰な人口と贅沢な生活が原因で問題が拡大したことは十分に明白な事実です。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikibooks.org/wiki/Environmental_theory_and_collection_of_ideas/Environmentalism_and_survival",
+      "passageSource": "Belebele · https://en.wikibooks.org/wiki/Environmental_theory_and_collection_of_ideas/Environmentalism_and_survival",
       "options": [
         {
           "id": "o0",
@@ -660,7 +660,7 @@
       "type": "multiple-choice",
       "prompt": "文中の内容によると、定期的な活動に参加している人は、何に対する支援をより必要としますか?",
       "passage": "この研究では、腰痛患者の痛みと障害の関係には、抑うつ、恐怖、破局化が介在していることがわかりました。 うつ病や恐怖ではなく、破局化の効果のみが、週例の構造化PAセッションの条件となっていました。 定期的な活動に参加している人は、慢性疼痛と正常な身体運動から生まれる不快感との違いを区別する痛みの否定的知覚については、より多くの支援が必要でした。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikibooks.org/wiki/Exercise_as_it_relates_to_Disease/Physical_activity_effect_on_mental_health_in_people_with_chronic_lower_back_pain",
+      "passageSource": "Belebele · https://en.wikibooks.org/wiki/Exercise_as_it_relates_to_Disease/Physical_activity_effect_on_mental_health_in_people_with_chronic_lower_back_pain",
       "options": [
         {
           "id": "o0",
@@ -688,7 +688,7 @@
       "type": "multiple-choice",
       "prompt": "古代文化でヤギを飼っていた理由ではないものは、次のうちのどれでしょう?",
       "passage": "ヤギの家畜化は、約1万年前に始まり、その中心はイランのザグロス山脈西部であったとされています。 古代の文化や部族は、乳、毛、肉、皮を簡手に入れやすいヤギを飼い始めました。 一般的に家畜のヤギは、丘陵地やその他の放牧地で放し飼いにされていましたが、ヤギの群れを世話をするヤギ飼いはたいてい少年でした。この習慣は今日でも続いています。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikibooks.org/wiki/Goats/Introduction",
+      "passageSource": "Belebele · https://en.wikibooks.org/wiki/Goats/Introduction",
       "options": [
         {
           "id": "o0",
@@ -716,7 +716,7 @@
       "type": "multiple-choice",
       "prompt": "文中の内容によると、弓を引くことに関連していないのは次のうちのどれでしょう?",
       "passage": "上げ弓のマークはV字のように見え、下げ弓のマークはホチキスの針または四角形の底辺が欠けたような形です。 アップとは先端から始めて弓を押すことであり、ダウンはフロッグ（手で弓を保持している場所）から始めて弓を引くことです。 上げ弓は通常やわらかい音を、下げ弓はより強く、主張のある音を生み出します。 鉛筆で自由に符号を書き込めますが、印字された弓形の符合には音楽的な理由があることを覚えておきましょう。通常、その符号に従うべきです。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikibooks.org/wiki/How_to_Play_Violin/Bowing",
+      "passageSource": "Belebele · https://en.wikibooks.org/wiki/How_to_Play_Violin/Bowing",
       "options": [
         {
           "id": "o0",
@@ -744,7 +744,7 @@
       "type": "multiple-choice",
       "prompt": "文中の内容によると、より優しい音に関連するものは次のうちのどれでしょう?",
       "passage": "上げ弓のマークはV字のように見え、下げ弓のマークはホチキスの針または四角形の底辺が欠けたような形です。 アップとは先端から始めて弓を押すことであり、ダウンはフロッグ（手で弓を保持している場所）から始めて弓を引くことです。 上げ弓は通常やわらかい音を、下げ弓はより強く、主張のある音を生み出します。 鉛筆で自由に符号を書き込めますが、印字された弓形の符合には音楽的な理由があることを覚えておきましょう。通常、その符号に従うべきです。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikibooks.org/wiki/How_to_Play_Violin/Bowing",
+      "passageSource": "Belebele · https://en.wikibooks.org/wiki/How_to_Play_Violin/Bowing",
       "options": [
         {
           "id": "o0",
@@ -772,7 +772,7 @@
       "type": "multiple-choice",
       "prompt": "次のうち、主に何に使えるように手が順応していったことを、化石は示していますか?",
       "passage": "他の霊長類とは異なり、ヒト科の動物は、移動したり、体重を支えたり、木々の間を通り抜ける際に手を使用しなくなっています。 チンパンジーの手足の大きさと長さはほぼ同じであり、ナックル歩行をする際に体重を支えるために手を使っていることが示されています。 人間の手（中指先から手首まで）は足（つま先から踵まで）よりも短く、指骨はまっすぐです。 200～300万年前の化石の手の骨から、このように手が運動から操作へと特化していたことがわかります。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikibooks.org/wiki/Introduction_to_Paleoanthropology/Bones",
+      "passageSource": "Belebele · https://en.wikibooks.org/wiki/Introduction_to_Paleoanthropology/Bones",
       "options": [
         {
           "id": "o0",
@@ -800,7 +800,7 @@
       "type": "multiple-choice",
       "prompt": "チンパンジーの指骨について正確に説明しているのは次のうちのどれでしょう? ",
       "passage": "他の霊長類とは異なり、ヒト科の動物は、移動したり、体重を支えたり、木々の間を通り抜ける際に手を使用しなくなっています。 チンパンジーの手足の大きさと長さはほぼ同じであり、ナックル歩行をする際に体重を支えるために手を使っていることが示されています。 人間の手（中指先から手首まで）は足（つま先から踵まで）よりも短く、指骨はまっすぐです。 200～300万年前の化石の手の骨から、このように手が運動から操作へと特化していたことがわかります。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikibooks.org/wiki/Introduction_to_Paleoanthropology/Bones",
+      "passageSource": "Belebele · https://en.wikibooks.org/wiki/Introduction_to_Paleoanthropology/Bones",
       "options": [
         {
           "id": "o0",
@@ -828,7 +828,7 @@
       "type": "multiple-choice",
       "prompt": "文中の内容に基づくと、自給自足農業と一致していない取り組みは次のうちのどれでしょう?",
       "passage": "自給自足農業とは、農業従事者とその家族に必要な分の食料のみを生産する農業の形態です。 自給自足農業とは、生態系地域に自生している保存された種子を、輪作やその他の比較的単純な技術と組み合わせて収量の最大化を図るシンプルなシステムで、多くの場合は有機的な農業です。 歴史的には農家の大半が自給自足農業を営んでおり、発展途上国の多くでは今もその傾向が見られます。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikibooks.org/wiki/Introduction_to_Sociology/Society",
+      "passageSource": "Belebele · https://en.wikibooks.org/wiki/Introduction_to_Sociology/Society",
       "options": [
         {
           "id": "o0",
@@ -856,7 +856,7 @@
       "type": "multiple-choice",
       "prompt": "次のうち、自給農業の活動を正確に説明しているのはどれでしょう?",
       "passage": "自給自足農業とは、農業従事者とその家族に必要な分の食料のみを生産する農業の形態です。 自給自足農業とは、生態系地域に自生している保存された種子を、輪作やその他の比較的単純な技術と組み合わせて収量の最大化を図るシンプルなシステムで、多くの場合は有機的な農業です。 歴史的には農家の大半が自給自足農業を営んでおり、発展途上国の多くでは今もその傾向が見られます。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikibooks.org/wiki/Introduction_to_Sociology/Society",
+      "passageSource": "Belebele · https://en.wikibooks.org/wiki/Introduction_to_Sociology/Society",
       "options": [
         {
           "id": "o0",
@@ -884,7 +884,7 @@
       "type": "multiple-choice",
       "prompt": "脳が明晰夢をより頻繁に見ようとすると何が増えますか?",
       "passage": "人工的に誘導された明晰夢を頻繁に経験しすぎると、非常に疲弊する可能性があると考える人もいます。 この現象が起きる主な理由は、明晰夢でレム睡眠時間が引き延ばされた結果です。 一晩あたりのレム睡眠が減ると、実際の睡眠を経験して体が回復するこの状態は、問題と言えるほど頻度が低下します。 これは、20～30分おきに起きてテレビを見るのと同じくらい疲れます。 この効果は、脳が一晩にはっきりした夢を見ようとする回数に依存しています。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikibooks.org/wiki/Lucid_Dreaming/Introduction",
+      "passageSource": "Belebele · https://en.wikibooks.org/wiki/Lucid_Dreaming/Introduction",
       "options": [
         {
           "id": "o0",
@@ -912,7 +912,7 @@
       "type": "multiple-choice",
       "prompt": "頻繁に明晰夢を見ることが体に与える悪影響をは、次のうちのどれでしょうか?",
       "passage": "人工的に誘導された明晰夢を頻繁に経験しすぎると、非常に疲弊する可能性があると考える人もいます。 この現象が起きる主な理由は、明晰夢でレム睡眠時間が引き延ばされた結果です。 一晩あたりのレム睡眠が減ると、実際の睡眠を経験して体が回復するこの状態は、問題と言えるほど頻度が低下します。 これは、20～30分おきに起きてテレビを見るのと同じくらい疲れます。 この効果は、脳が一晩にはっきりした夢を見ようとする回数に依存しています。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikibooks.org/wiki/Lucid_Dreaming/Introduction",
+      "passageSource": "Belebele · https://en.wikibooks.org/wiki/Lucid_Dreaming/Introduction",
       "options": [
         {
           "id": "o0",
@@ -940,7 +940,7 @@
       "type": "multiple-choice",
       "prompt": "コンテンツ理論が軸にしていないものは次のうちのどれでしょうか?",
       "passage": "コンテンツ理論は、人の心をくすぐるものやアピールするものを見つけることを中心にしています。 これらの理論は、人々が成人期を迎えて成熟するにつれて内在化した特定のニーズや欲望を抱いていることを示唆しています。 これらの理論では、ある種の人々が日常的に特定のことをしたがる動機について、そして彼らに特定のことをさせる、あるいはさせない環境要因について考察します。 通説とされる2つコンテンツ理論はマズローの欲求段階説とヘルツベルクの二要因理論です。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikibooks.org/wiki/Managing_Groups_and_Teams/Motivation",
+      "passageSource": "Belebele · https://en.wikibooks.org/wiki/Managing_Groups_and_Teams/Motivation",
       "options": [
         {
           "id": "o0",
@@ -968,7 +968,7 @@
       "type": "multiple-choice",
       "prompt": "文中の内容によると、戦争費用の大部分を賄ったのは誰でしょう?",
       "passage": "アメリカ帝国主義による戦争でフィリピン征服にかかった費用をフィリピン人が負担したのです。 彼らは、支出の大部分を賄うためにアメリカの植民地政権への納税を予後なくされ、ウォール街の銀行を通してフィリピン政府の名前で売りに出されていた債券の利子も払わざるを得ませんでした。 もちろん、長期にわたるフィリピン人の搾取から得られる超過利潤は、米国帝国主義の基礎利益を成すものだったでしょう。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikibooks.org/wiki/Philippine_History/The_Philippine-American_War",
+      "passageSource": "Belebele · https://en.wikibooks.org/wiki/Philippine_History/The_Philippine-American_War",
       "options": [
         {
           "id": "o0",
@@ -996,7 +996,7 @@
       "type": "multiple-choice",
       "prompt": "テンプル騎士団の時代の前は何期だったでしょうか?",
       "passage": "テンプル騎士団を理解するためには、その秩序が生まれた文脈を理解する必要があります。 この事件が起きた時代は中世盛期と呼ばれ、一般的にヨーロッパ史で11世紀、12世紀、13世紀（西暦1000年～1300年）の期間が相当します。 中世盛期は歴史上の時代区分として中世前期と中世後期の間の時代とされ、中世後期は1500年までに終了したと考えるのが慣例である。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikibooks.org/wiki/Remembering_the_Templars",
+      "passageSource": "Belebele · https://en.wikibooks.org/wiki/Remembering_the_Templars",
       "options": [
         {
           "id": "o0",
@@ -1024,7 +1024,7 @@
       "type": "multiple-choice",
       "prompt": "テンプル騎士団の時代の後は何期だったでしょうか?",
       "passage": "テンプル騎士団を理解するためには、その秩序が生まれた文脈を理解する必要があります。 この事件が起きた時代は中世盛期と呼ばれ、一般的にヨーロッパ史で11世紀、12世紀、13世紀（西暦1000年～1300年）の期間が相当します。 中世盛期は歴史上の時代区分として中世前期と中世後期の間の時代とされ、中世後期は1500年までに終了したと考えるのが慣例である。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikibooks.org/wiki/Remembering_the_Templars",
+      "passageSource": "Belebele · https://en.wikibooks.org/wiki/Remembering_the_Templars",
       "options": [
         {
           "id": "o0",
@@ -1052,7 +1052,7 @@
       "type": "multiple-choice",
       "prompt": "文中の内容によると、労働者の暴動に対するクルシチョフの対応の一部ではないのは次のうちのどれでしょう?",
       "passage": "しかし、1956年6月にポーランドで食糧不足と賃金削減に抗議する労働者たちが暴動を起こし、それが共産主義に対する一般抗議行動に変わったとき、クルシチョフの公約が試されることになりました。 最終的には、クルシチョフは秩序を回復するために戦車を送り込みましたが、一部の経済的な要求に道を譲り、人気のあるウラジスラフ・ゴムルカを新首相に任命することに合意しました。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikibooks.org/wiki/The_Cold_War/Hungarian_Revolution",
+      "passageSource": "Belebele · https://en.wikibooks.org/wiki/The_Cold_War/Hungarian_Revolution",
       "options": [
         {
           "id": "o0",
@@ -1080,7 +1080,7 @@
       "type": "multiple-choice",
       "prompt": "次のうち、ポーランドでの暴動の原因ではないものはどれでしょう?",
       "passage": "しかし、1956年6月にポーランドで食糧不足と賃金削減に抗議する労働者たちが暴動を起こし、それが共産主義に対する一般抗議行動に変わったとき、クルシチョフの公約が試されることになりました。 最終的には、クルシチョフは秩序を回復するために戦車を送り込みましたが、一部の経済的な要求に道を譲り、人気のあるウラジスラフ・ゴムルカを新首相に任命することに合意しました。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikibooks.org/wiki/The_Cold_War/Hungarian_Revolution",
+      "passageSource": "Belebele · https://en.wikibooks.org/wiki/The_Cold_War/Hungarian_Revolution",
       "options": [
         {
           "id": "o0",
@@ -1108,7 +1108,7 @@
       "type": "multiple-choice",
       "prompt": "文中の内容によると、ソ連とアメリカ間の関係に影響を及ぼさなかったことは次のうちのどれでしょう?",
       "passage": "第二次世界大戦ではドイツは共通の敵であり、ソ連とアメリカの協力につながりました。終戦後、両国は制度やプロセス、そして文化の衝突により、反目し合うことになりました。 終戦から2年でかつての同盟国は敵国同士となり、やがて冷戦が始まりました。 その後それが40年間続き、アフリカからアジア、アフガニスタン、キューバなどの戦場で代理の軍隊による本物の戦いが繰り広げられることになりました。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikibooks.org/wiki/The_Cold_War/Introduction",
+      "passageSource": "Belebele · https://en.wikibooks.org/wiki/The_Cold_War/Introduction",
       "options": [
         {
           "id": "o0",
@@ -1136,7 +1136,7 @@
       "type": "multiple-choice",
       "prompt": "文中の内容によると、生物が二足歩行したとされる時期で一番古いのはいつでしょうか?",
       "passage": "最初に知られていた移動手段は歩行であり、人類の直立歩行は200万年前にホモ・エレクタス（「直立する人間」の意味）の出現時に始まりました。 直接の祖先であるアウストラロピテクスには、一定時間以上の直立歩行を続ける習慣はありませんでした。 サヘラントロプスは700万年前に早くも二本足で歩いた可能性がありますが、二足歩行の特性は、390～420万年前のオーストラロピテクスの化石で確認されています。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikibooks.org/wiki/Transport/History",
+      "passageSource": "Belebele · https://en.wikibooks.org/wiki/Transport/History",
       "options": [
         {
           "id": "o0",
@@ -1164,7 +1164,7 @@
       "type": "multiple-choice",
       "prompt": "二足歩行を日常的にしていたのは、これらの種の内のどれでしょう?",
       "passage": "最初に知られていた移動手段は歩行であり、人類の直立歩行は200万年前にホモ・エレクタス（「直立する人間」の意味）の出現時に始まりました。 直接の祖先であるアウストラロピテクスには、一定時間以上の直立歩行を続ける習慣はありませんでした。 サヘラントロプスは700万年前に早くも二本足で歩いた可能性がありますが、二足歩行の特性は、390～420万年前のオーストラロピテクスの化石で確認されています。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikibooks.org/wiki/Transport/History",
+      "passageSource": "Belebele · https://en.wikibooks.org/wiki/Transport/History",
       "options": [
         {
           "id": "o0",
@@ -1192,7 +1192,7 @@
       "type": "multiple-choice",
       "prompt": "アッシリア人が騎兵隊を採用した時に存在しなかったものは何でしょう?",
       "passage": "スポーク式ホイールの発明により、アッシリア軍の戦車は軽量、高速、強力になり、他国の兵士や戦車を振り切る体制が整いました。 恐ろしいクロスボウから放たれる矢は、敵兵の鎧を貫通しました。紀元前1000年頃にアッシリア人は最初の騎兵隊を導入した。 騎馬隊は、馬に乗って戦う軍隊です。当時まだ鞍や鐙は発明されていなかったため、アッシリアの騎兵たちは、馬の裸の背にまたがって戦いました。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikibooks.org/wiki/Wikijunior:Ancient_Civilizations/Assyrians",
+      "passageSource": "Belebele · https://en.wikibooks.org/wiki/Wikijunior:Ancient_Civilizations/Assyrians",
       "options": [
         {
           "id": "o0",
@@ -1220,7 +1220,7 @@
       "type": "multiple-choice",
       "prompt": "騎兵隊を活用した戦闘はどのように行われたでしょうか?",
       "passage": "スポーク式ホイールの発明により、アッシリア軍の戦車は軽量、高速、強力になり、他国の兵士や戦車を振り切る体制が整いました。 恐ろしいクロスボウから放たれる矢は、敵兵の鎧を貫通しました。紀元前1000年頃にアッシリア人は最初の騎兵隊を導入した。 騎馬隊は、馬に乗って戦う軍隊です。当時まだ鞍や鐙は発明されていなかったため、アッシリアの騎兵たちは、馬の裸の背にまたがって戦いました。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikibooks.org/wiki/Wikijunior:Ancient_Civilizations/Assyrians",
+      "passageSource": "Belebele · https://en.wikibooks.org/wiki/Wikijunior:Ancient_Civilizations/Assyrians",
       "options": [
         {
           "id": "o0",
@@ -1248,7 +1248,7 @@
       "type": "multiple-choice",
       "prompt": "文中の内容によると、一般的なバビロニア市民を見かけない場所はどこでしょうか?",
       "passage": "バビロニア人は、神々のそれぞれに第一神殿を建て、それは神々の家とみなされていました。 人々は神々に生け贄を捧げ、祭司は儀式や祭りを通して神々の望みに応えようとしました。 各寺院には、開放的な中庭があり、その後に神官のみが入れる内宮がありました。 寺院の一部として、ジグラットと呼ばれるピラミッド型の特殊な塔が建てられることがありました。 塔の最上部は神のための特別な聖域でした。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikibooks.org/wiki/Wikijunior:Ancient_Civilizations/Babylonians",
+      "passageSource": "Belebele · https://en.wikibooks.org/wiki/Wikijunior:Ancient_Civilizations/Babylonians",
       "options": [
         {
           "id": "o0",
@@ -1276,7 +1276,7 @@
       "type": "multiple-choice",
       "prompt": "祭司にとって特別な意味を持つのは次のうちのどれでしょう?",
       "passage": "バビロニア人は、神々のそれぞれに第一神殿を建て、それは神々の家とみなされていました。 人々は神々に生け贄を捧げ、祭司は儀式や祭りを通して神々の望みに応えようとしました。 各寺院には、開放的な中庭があり、その後に神官のみが入れる内宮がありました。 寺院の一部として、ジグラットと呼ばれるピラミッド型の特殊な塔が建てられることがありました。 塔の最上部は神のための特別な聖域でした。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikibooks.org/wiki/Wikijunior:Ancient_Civilizations/Babylonians",
+      "passageSource": "Belebele · https://en.wikibooks.org/wiki/Wikijunior:Ancient_Civilizations/Babylonians",
       "options": [
         {
           "id": "o0",
@@ -1304,7 +1304,7 @@
       "type": "multiple-choice",
       "prompt": "ギリシャの詩人ホメロスは何ができなかったでしょう?",
       "passage": "有名なギリシャ人の政治家、科学者、芸術家は大勢います。この古代文化の担い手としておそらく最も有名なのは、ギリシャ文学の2大傑作であるイリアスとオデュッセイアを作曲した伝説の盲目詩人ホメロスでしょう。 ソフォクレスやアリストファネスは、今でも人気の劇作家であり、彼らの戯曲は世界文学の最高傑作と称えられています。 もう1人の有名なギリシャ人は数学者ピタゴラスで、主に直角三角形の辺の関係についての有名な定理を発見したことで知られています。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikibooks.org/wiki/Wikijunior:Ancient_Civilizations/Greeks",
+      "passageSource": "Belebele · https://en.wikibooks.org/wiki/Wikijunior:Ancient_Civilizations/Greeks",
       "options": [
         {
           "id": "o0",
@@ -1332,7 +1332,7 @@
       "type": "multiple-choice",
       "prompt": "文学以外で有名なギリシャ人は誰でしょう?",
       "passage": "有名なギリシャ人の政治家、科学者、芸術家は大勢います。この古代文化の担い手としておそらく最も有名なのは、ギリシャ文学の2大傑作であるイリアスとオデュッセイアを作曲した伝説の盲目詩人ホメロスでしょう。 ソフォクレスやアリストファネスは、今でも人気の劇作家であり、彼らの戯曲は世界文学の最高傑作と称えられています。 もう1人の有名なギリシャ人は数学者ピタゴラスで、主に直角三角形の辺の関係についての有名な定理を発見したことで知られています。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikibooks.org/wiki/Wikijunior:Ancient_Civilizations/Greeks",
+      "passageSource": "Belebele · https://en.wikibooks.org/wiki/Wikijunior:Ancient_Civilizations/Greeks",
       "options": [
         {
           "id": "o0",
@@ -1360,7 +1360,7 @@
       "type": "multiple-choice",
       "prompt": "北欧諸国間の違いとして説明されていないのは、次のうちのどれでしょう?",
       "passage": "グリーンランドは過疎な地域でした。北欧の伝承によれば、赤毛のエイリークが殺人罪でアイスランドから追放され、西に向かったときにグリーンランドを発見して、グリーンランドと名付けたとされます。 しかし、彼の発見とは関係なく、当時すでにエスキモー部族はそこに住んでいました。 どの国も「スカンジナビア」であることは変わりませんが、デンマーク、スウェーデン、ノルウェー、アイスランドの国民性、王制、風習、歴史には相当な違いがあったのです。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikibooks.org/wiki/Wikijunior:Ancient_Civilizations/Norse",
+      "passageSource": "Belebele · https://en.wikibooks.org/wiki/Wikijunior:Ancient_Civilizations/Norse",
       "options": [
         {
           "id": "o0",
@@ -1388,7 +1388,7 @@
       "type": "multiple-choice",
       "prompt": "グリーンランドに最初に定住したのは誰でしょう?",
       "passage": "グリーンランドは過疎な地域でした。北欧の伝承によれば、赤毛のエイリークが殺人罪でアイスランドから追放され、西に向かったときにグリーンランドを発見して、グリーンランドと名付けたとされます。 しかし、彼の発見とは関係なく、当時すでにエスキモー部族はそこに住んでいました。 どの国も「スカンジナビア」であることは変わりませんが、デンマーク、スウェーデン、ノルウェー、アイスランドの国民性、王制、風習、歴史には相当な違いがあったのです。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikibooks.org/wiki/Wikijunior:Ancient_Civilizations/Norse",
+      "passageSource": "Belebele · https://en.wikibooks.org/wiki/Wikijunior:Ancient_Civilizations/Norse",
       "options": [
         {
           "id": "o0",
@@ -1416,7 +1416,7 @@
       "type": "multiple-choice",
       "prompt": "ドゥルギャルゾンについての間違った記述はどれでしょう?",
       "passage": "ドゥルギャルゾンは、（フォンディ村の）パロ地区の高台にある廃墟となった要塞や仏教寺院です。 1649年にシャブドゥン・ガワン・ナムゲルがチベット・モンゴル軍との戦いに勝利したことを記念して、この要塞を建設したと言われています。 1951年の火災によりほとんどが焼失し、ジャブドゥルング・ガワン・ナムゲルの絵など、ドゥルギャルゾン遺跡の一部しか残りませんでした。 火災後の要塞は保存・保護され、今ではブータンで話題の観光名所の1つとして残っています。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikibooks.org/wiki/Wikijunior:Asia/Bhutan",
+      "passageSource": "Belebele · https://en.wikibooks.org/wiki/Wikijunior:Asia/Bhutan",
       "options": [
         {
           "id": "o0",
@@ -1444,7 +1444,7 @@
       "type": "multiple-choice",
       "prompt": "ドゥルギャルゾンの火災の結末を正確に説明している記述はどれでしょう?",
       "passage": "ドゥルギャルゾンは、（フォンディ村の）パロ地区の高台にある廃墟となった要塞や仏教寺院です。 1649年にシャブドゥン・ガワン・ナムゲルがチベット・モンゴル軍との戦いに勝利したことを記念して、この要塞を建設したと言われています。 1951年の火災によりほとんどが焼失し、ジャブドゥルング・ガワン・ナムゲルの絵など、ドゥルギャルゾン遺跡の一部しか残りませんでした。 火災後の要塞は保存・保護され、今ではブータンで話題の観光名所の1つとして残っています。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikibooks.org/wiki/Wikijunior:Asia/Bhutan",
+      "passageSource": "Belebele · https://en.wikibooks.org/wiki/Wikijunior:Asia/Bhutan",
       "options": [
         {
           "id": "o0",
@@ -1472,7 +1472,7 @@
       "type": "multiple-choice",
       "prompt": "化学物質のpHレベルはどうやって測りますか?",
       "passage": "これを化学物質のpHといいます。紫キャベツの絞り汁で試験紙を作ることができます。 キャベツの汁は化学物質に反応し、酸性かアルカリ性（塩基性）かによって色が変わります。 pH レベルは、検査した化学物質に含まれる水素イオン（pHのH）の量で示されます。 水素イオンとは、電子を取り除いた陽子のことです（水素原子は陽子と電子が1つずつで構成されているため）。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikibooks.org/wiki/Wikijunior:Big_Book_of_Fun_Science_Experiments/Red_cabbage_indicator",
+      "passageSource": "Belebele · https://en.wikibooks.org/wiki/Wikijunior:Big_Book_of_Fun_Science_Experiments/Red_cabbage_indicator",
       "options": [
         {
           "id": "o0",
@@ -1500,7 +1500,7 @@
       "type": "multiple-choice",
       "prompt": "水素イオンから取り除かれるものは何でしょうか?",
       "passage": "これを化学物質のpHといいます。紫キャベツの絞り汁で試験紙を作ることができます。 キャベツの汁は化学物質に反応し、酸性かアルカリ性（塩基性）かによって色が変わります。 pH レベルは、検査した化学物質に含まれる水素イオン（pHのH）の量で示されます。 水素イオンとは、電子を取り除いた陽子のことです（水素原子は陽子と電子が1つずつで構成されているため）。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikibooks.org/wiki/Wikijunior:Big_Book_of_Fun_Science_Experiments/Red_cabbage_indicator",
+      "passageSource": "Belebele · https://en.wikibooks.org/wiki/Wikijunior:Big_Book_of_Fun_Science_Experiments/Red_cabbage_indicator",
       "options": [
         {
           "id": "o0",
@@ -1528,7 +1528,7 @@
       "type": "multiple-choice",
       "prompt": "ライオンのプライドを正確に説明しているのは次のうちのどの記述でしょう?",
       "passage": "ライオンは最も社交的なネコ科の動物であり、プライドと呼ばれる大集団で生活しています。 プライドは、1～3頭の血縁関係にあるオスと30頭余りのメスと子供たちで構成されます。 通常、メスたちは互いに血がつながっており、姉妹や娘からなる大家族を形成しています。 ライオンのプライドは、狼や犬の群れに似た行動を示し、動物は驚くほど行動のライオン（が、他の大きな猫）に似ていて、獲物を逃さずに仕留めます。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikibooks.org/wiki/Wikijunior:Big_Cats/Lion",
+      "passageSource": "Belebele · https://en.wikibooks.org/wiki/Wikijunior:Big_Cats/Lion",
       "options": [
         {
           "id": "o0",
@@ -1556,7 +1556,7 @@
       "type": "multiple-choice",
       "prompt": "ライオンの行動を正確に説明していない記述は次のうちどれでしょう?",
       "passage": "ライオンは最も社交的なネコ科の動物であり、プライドと呼ばれる大集団で生活しています。 プライドは、1～3頭の血縁関係にあるオスと30頭余りのメスと子供たちで構成されます。 通常、メスたちは互いに血がつながっており、姉妹や娘からなる大家族を形成しています。 ライオンのプライドは、狼や犬の群れに似た行動を示し、動物は驚くほど行動のライオン（が、他の大きな猫）に似ていて、獲物を逃さずに仕留めます。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikibooks.org/wiki/Wikijunior:Big_Cats/Lion",
+      "passageSource": "Belebele · https://en.wikibooks.org/wiki/Wikijunior:Big_Cats/Lion",
       "options": [
         {
           "id": "o0",
@@ -1584,7 +1584,7 @@
       "type": "multiple-choice",
       "prompt": "次のうち、オセロットの狩りの方法の一部ではないのはどれでしょう?",
       "passage": "オセロットは小動物を好んで食べます。猿や蛇、げっ歯類、鳥類なども可能であれば捕まえます。オセロットが狩る獲物のほとんどは、自分よりもはるかに小さい生き物です。 科学者たちは、オセロットは地面の匂いを嗅いで餌になる動物（獲物）が通った場所を探し、追いかけると考えています。 高い暗視能力で非常に夜目が効き、こっそりと移動するのも得意です。オセロットは周囲に溶け込み、獲物に飛びかかって狩りをします。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikibooks.org/wiki/Wikijunior:Big_Cats/Ocelot",
+      "passageSource": "Belebele · https://en.wikibooks.org/wiki/Wikijunior:Big_Cats/Ocelot",
       "options": [
         {
           "id": "o0",
@@ -1612,7 +1612,7 @@
       "type": "multiple-choice",
       "prompt": "オセロットを正しく説明していないのは次のうちのどれでしょう? ",
       "passage": "オセロットは小動物を好んで食べます。猿や蛇、げっ歯類、鳥類なども可能であれば捕まえます。オセロットが狩る獲物のほとんどは、自分よりもはるかに小さい生き物です。 科学者たちは、オセロットは地面の匂いを嗅いで餌になる動物（獲物）が通った場所を探し、追いかけると考えています。 高い暗視能力で非常に夜目が効き、こっそりと移動するのも得意です。オセロットは周囲に溶け込み、獲物に飛びかかって狩りをします。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikibooks.org/wiki/Wikijunior:Big_Cats/Ocelot",
+      "passageSource": "Belebele · https://en.wikibooks.org/wiki/Wikijunior:Big_Cats/Ocelot",
       "options": [
         {
           "id": "o0",
@@ -1640,7 +1640,7 @@
       "type": "multiple-choice",
       "prompt": "虎の最大の強みとして考えられないものは、次のうちのどれでしょう?",
       "passage": "実に均整の取れた体で運動能力の高い虎は、（うまくはないものの）登ったり、泳いだり、長い距離を跳んだり、たくましい人間の5倍の力で引っ張ったりできます。 トラはライオン、ヒョウ、ジャガーと同じ動物群（ヒョウ属）に属しています。唸ることができるのはこの4種類の大型ネコ科の動物だけです。 虎の咆哮は、ライオンのような雄叫びではなく、どちらかというと威圧的な脅し文句のような咆哮です。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikibooks.org/wiki/Wikijunior:Big_Cats/Tiger",
+      "passageSource": "Belebele · https://en.wikibooks.org/wiki/Wikijunior:Big_Cats/Tiger",
       "options": [
         {
           "id": "o0",
@@ -1668,7 +1668,7 @@
       "type": "multiple-choice",
       "prompt": "文中の内容によると、虎とライオンの違いは次のどれでしょう?",
       "passage": "実に均整の取れた体で運動能力の高い虎は、（うまくはないものの）登ったり、泳いだり、長い距離を跳んだり、たくましい人間の5倍の力で引っ張ったりできます。 トラはライオン、ヒョウ、ジャガーと同じ動物群（ヒョウ属）に属しています。唸ることができるのはこの4種類の大型ネコ科の動物だけです。 虎の咆哮は、ライオンのような雄叫びではなく、どちらかというと威圧的な脅し文句のような咆哮です。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikibooks.org/wiki/Wikijunior:Big_Cats/Tiger",
+      "passageSource": "Belebele · https://en.wikibooks.org/wiki/Wikijunior:Big_Cats/Tiger",
       "options": [
         {
           "id": "o0",
@@ -1696,7 +1696,7 @@
       "type": "multiple-choice",
       "prompt": "文中の内容によると、ロバート・フックが他の生物学者に先んじて行ったことは何でしょうか?",
       "passage": "細胞とは生物の構造的機能的な最小単位です。 セルはラテン語で小さな部屋を意味する「cella」に由来しています。 生物を顕微鏡で見ると、丸や四角の微細な組織でできていることがわかります。 英国の自然哲学者ロバート・フックは、顕微鏡でコルクの切片を観察し、たくさんの小部屋が見えることを確認しました。 見た目はいくつもの部屋のようでした。彼は死んだ細胞を観察した最初の人でした。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikibooks.org/wiki/Wikijunior:Biology/Cells",
+      "passageSource": "Belebele · https://en.wikibooks.org/wiki/Wikijunior:Biology/Cells",
       "options": [
         {
           "id": "o0",
@@ -1724,7 +1724,7 @@
       "type": "multiple-choice",
       "prompt": "「細胞」という言葉の起源は何でしょう?",
       "passage": "細胞とは生物の構造的機能的な最小単位です。 セルはラテン語で小さな部屋を意味する「cella」に由来しています。 生物を顕微鏡で見ると、丸や四角の微細な組織でできていることがわかります。 英国の自然哲学者ロバート・フックは、顕微鏡でコルクの切片を観察し、たくさんの小部屋が見えることを確認しました。 見た目はいくつもの部屋のようでした。彼は死んだ細胞を観察した最初の人でした。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikibooks.org/wiki/Wikijunior:Biology/Cells",
+      "passageSource": "Belebele · https://en.wikibooks.org/wiki/Wikijunior:Biology/Cells",
       "options": [
         {
           "id": "o0",
@@ -1752,7 +1752,7 @@
       "type": "multiple-choice",
       "prompt": "文中の内容によると、イタリア北端の地方で広く親しまれているスポーツは次のうちのどれでしょう?",
       "passage": "サッカーのイタリア代表は、ドイツ代表と並んで世界で2番目に成績の良いチームで、2006年にはFIFAワールドカップで優勝しています。 人気のスポーツは、サッカー、バスケットボール、バレーボール、水球、フェンシング、ラグビー、サイクリング、アイスホッケー、ローラーホッケー、F1モーターレースなどです。 北部地域ではウィンタースポーツが盛んで、国際試合やオリンピックに出場するイタリア人選手を輩出しています。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikibooks.org/wiki/Wikijunior:Europe/Italy",
+      "passageSource": "Belebele · https://en.wikibooks.org/wiki/Wikijunior:Europe/Italy",
       "options": [
         {
           "id": "o0",
@@ -1780,7 +1780,7 @@
       "type": "multiple-choice",
       "prompt": "文中で述べられた情報に基づくと、イタリアが世界選手権で優勝したのは次のスポーツの内のどれでしょう?",
       "passage": "サッカーのイタリア代表は、ドイツ代表と並んで世界で2番目に成績の良いチームで、2006年にはFIFAワールドカップで優勝しています。 人気のスポーツは、サッカー、バスケットボール、バレーボール、水球、フェンシング、ラグビー、サイクリング、アイスホッケー、ローラーホッケー、F1モーターレースなどです。 北部地域ではウィンタースポーツが盛んで、国際試合やオリンピックに出場するイタリア人選手を輩出しています。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikibooks.org/wiki/Wikijunior:Europe/Italy",
+      "passageSource": "Belebele · https://en.wikibooks.org/wiki/Wikijunior:Europe/Italy",
       "options": [
         {
           "id": "o0",
@@ -1808,7 +1808,7 @@
       "type": "multiple-choice",
       "prompt": "ルクセンブルクの一部がベルギー領になったのは、どんな出来事の後だったでしょうか?",
       "passage": "ルクセンブルクは歴史の長い国ですが独立は1839年に遡ります。 現在のベルギー領の一部は過去にルクセンブルク領でしたが、1830年代のベルギー革命後にベルギー領になりました。 ルクセンブルクは、常に中立国としての立場を守ろうと努めていましたが、 第一次世界大戦でも第二次世界大戦でもドイツに占領されました。 1957年にルクセンブルクは現在の欧州連合（EU）の創設メンバーとなりました。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikibooks.org/wiki/Wikijunior:Europe/Luxembourg",
+      "passageSource": "Belebele · https://en.wikibooks.org/wiki/Wikijunior:Europe/Luxembourg",
       "options": [
         {
           "id": "o0",
@@ -1836,7 +1836,7 @@
       "type": "multiple-choice",
       "prompt": "ルクセンブルクの中立性に影響したのは次のうちどれでしょう?",
       "passage": "ルクセンブルクは歴史の長い国ですが独立は1839年に遡ります。 現在のベルギー領の一部は過去にルクセンブルク領でしたが、1830年代のベルギー革命後にベルギー領になりました。 ルクセンブルクは、常に中立国としての立場を守ろうと努めていましたが、 第一次世界大戦でも第二次世界大戦でもドイツに占領されました。 1957年にルクセンブルクは現在の欧州連合（EU）の創設メンバーとなりました。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikibooks.org/wiki/Wikijunior:Europe/Luxembourg",
+      "passageSource": "Belebele · https://en.wikibooks.org/wiki/Wikijunior:Europe/Luxembourg",
       "options": [
         {
           "id": "o0",
@@ -1864,7 +1864,7 @@
       "type": "multiple-choice",
       "prompt": "バチカン市国でラテン語は何に使われますか?",
       "passage": "バチカン市国の人口は約800人です。世界最小の独立国であり、最も人口が少ない国でもあります。 バチカン市国では、法律や公式通信でイタリア語を使用しています。 バチカン市国で働く人々のほとんどが日常的に使用する言語はイタリア語であり、宗教的な儀式ではラテン語がよく使用されています。 バチカン市国の市民は全員がローマ・カトリックです。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikibooks.org/wiki/Wikijunior:Europe/Vatican_City",
+      "passageSource": "Belebele · https://en.wikibooks.org/wiki/Wikijunior:Europe/Vatican_City",
       "options": [
         {
           "id": "o0",
@@ -1892,7 +1892,7 @@
       "type": "multiple-choice",
       "prompt": "バチカン市国でイタリア語が使われないものは何でしょう?",
       "passage": "バチカン市国の人口は約800人です。世界最小の独立国であり、最も人口が少ない国でもあります。 バチカン市国では、法律や公式通信でイタリア語を使用しています。 バチカン市国で働く人々のほとんどが日常的に使用する言語はイタリア語であり、宗教的な儀式ではラテン語がよく使用されています。 バチカン市国の市民は全員がローマ・カトリックです。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikibooks.org/wiki/Wikijunior:Europe/Vatican_City",
+      "passageSource": "Belebele · https://en.wikibooks.org/wiki/Wikijunior:Europe/Vatican_City",
       "options": [
         {
           "id": "o0",
@@ -1920,7 +1920,7 @@
       "type": "multiple-choice",
       "prompt": "スケーターがターンできる理由は次のうちどれでしょう?",
       "passage": "現代のアイススケート靴の刃（ブレード）は、2枚のエッジとその間に凹形の空洞から成り、2枚のエッジは刃が傾いた状態でも氷をより的確に捉えます。 ブレードの底部がわずかに湾曲しているため、ブレードが片側かもう片側に傾くと、氷と接触しているエッジも湾曲します。 これを利用してスケート選手はターンします。スケート選手はスケートが右に傾けば右を向き、左に傾けば左を向きます。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikibooks.org/wiki/Wikijunior:How_Things_Work/Ice_Skates",
+      "passageSource": "Belebele · https://en.wikibooks.org/wiki/Wikijunior:How_Things_Work/Ice_Skates",
       "options": [
         {
           "id": "o0",
@@ -1948,7 +1948,7 @@
       "type": "multiple-choice",
       "prompt": "文中の内容によると、現代のアイススケートのブレードにある空洞を正確に説明しているのは次のうちどれでしょう?",
       "passage": "現代のアイススケート靴の刃（ブレード）は、2枚のエッジとその間に凹形の空洞から成り、2枚のエッジは刃が傾いた状態でも氷をより的確に捉えます。 ブレードの底部がわずかに湾曲しているため、ブレードが片側かもう片側に傾くと、氷と接触しているエッジも湾曲します。 これを利用してスケート選手はターンします。スケート選手はスケートが右に傾けば右を向き、左に傾けば左を向きます。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikibooks.org/wiki/Wikijunior:How_Things_Work/Ice_Skates",
+      "passageSource": "Belebele · https://en.wikibooks.org/wiki/Wikijunior:How_Things_Work/Ice_Skates",
       "options": [
         {
           "id": "o0",
@@ -1976,7 +1976,7 @@
       "type": "multiple-choice",
       "prompt": "文中の内容によると、電球が点灯しなくなる原因はなんでしょう?",
       "passage": "何百時間か使用を続けると、最終的に電球内のフィラメントが燃え尽きて電球は点灯しなくなります。 そこで必要になるのが電球の交換です。電球を交換する際には注意が必要です。 まず、照明器具のスイッチを切るか、ケーブルを外す必要があります。 これは、電球の一部がソケット内にあるときに、ソケットや電球の金属部に触れると、電球の金属部が接しているソケットに流れる電流によって激しい感電を起こすことがあるためです。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikibooks.org/wiki/Wikijunior:How_Things_Work/Light_Bulb",
+      "passageSource": "Belebele · https://en.wikibooks.org/wiki/Wikijunior:How_Things_Work/Light_Bulb",
       "options": [
         {
           "id": "o0",
@@ -2004,7 +2004,7 @@
       "type": "multiple-choice",
       "prompt": "電球を交換する際、触れると危険な可能性があるのは次のうちどれでしょう?",
       "passage": "何百時間か使用を続けると、最終的に電球内のフィラメントが燃え尽きて電球は点灯しなくなります。 そこで必要になるのが電球の交換です。電球を交換する際には注意が必要です。 まず、照明器具のスイッチを切るか、ケーブルを外す必要があります。 これは、電球の一部がソケット内にあるときに、ソケットや電球の金属部に触れると、電球の金属部が接しているソケットに流れる電流によって激しい感電を起こすことがあるためです。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikibooks.org/wiki/Wikijunior:How_Things_Work/Light_Bulb",
+      "passageSource": "Belebele · https://en.wikibooks.org/wiki/Wikijunior:How_Things_Work/Light_Bulb",
       "options": [
         {
           "id": "o0",
@@ -2032,7 +2032,7 @@
       "type": "multiple-choice",
       "prompt": "次のうち、地球への長距離電話を反映しているのはどれでしょう",
       "passage": "何千マイルも離れた場所にいる相手に電話をかけると自動的に衛星を経由した通話になります。 宇宙にある人工衛星は通話を受信して、ほぼ瞬時にそれを反映します。 衛星はロケットで宇宙に送られました。科学者が宇宙で望遠鏡を使う理由は、地球の大気によって人間の視界に入る光や景色の一部が歪むからです。 衛星や望遠鏡を打ち上げて宇宙空間に配備するためには、まず高さ100フィート以上の巨大ロケットが必要です。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikibooks.org/wiki/Wikijunior:How_Things_Work/Rocket",
+      "passageSource": "Belebele · https://en.wikibooks.org/wiki/Wikijunior:How_Things_Work/Rocket",
       "options": [
         {
           "id": "o0",
@@ -2060,7 +2060,7 @@
       "type": "multiple-choice",
       "prompt": "望遠鏡を宇宙まで移動するのに使用されるのは、これらのうちのどれでしょうか?",
       "passage": "何千マイルも離れた場所にいる相手に電話をかけると自動的に衛星を経由した通話になります。 宇宙にある人工衛星は通話を受信して、ほぼ瞬時にそれを反映します。 衛星はロケットで宇宙に送られました。科学者が宇宙で望遠鏡を使う理由は、地球の大気によって人間の視界に入る光や景色の一部が歪むからです。 衛星や望遠鏡を打ち上げて宇宙空間に配備するためには、まず高さ100フィート以上の巨大ロケットが必要です。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikibooks.org/wiki/Wikijunior:How_Things_Work/Rocket",
+      "passageSource": "Belebele · https://en.wikibooks.org/wiki/Wikijunior:How_Things_Work/Rocket",
       "options": [
         {
           "id": "o0",
@@ -2088,7 +2088,7 @@
       "type": "multiple-choice",
       "prompt": "トリグヴァッソンの艦隊はどこの国のものだったでしょうか?",
       "passage": "イングランドは、ダネローを再び征服した後、長い平和な時代を経験していました。 しかし、991年にエセルレッドは100年前のグトルム以来の大規模な海賊艦隊に直面しました。 この艦隊を率いたのは、デンマークの支配から自国を取り戻すという野望を抱くノルウェー人のオラフ・トリグヴァッソンでした。 初の軍事的な挫折の後、エセルレッドはオラフと条件の合意に至ったのの、オラフはノルウェーに戻って失敗と成功を繰り返しながら王国を手に入れようとしました。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikibooks.org/wiki/Wikijunior:Kings_and_Queens_of_England/The_Anglo-Saxons",
+      "passageSource": "Belebele · https://en.wikibooks.org/wiki/Wikijunior:Kings_and_Queens_of_England/The_Anglo-Saxons",
       "options": [
         {
           "id": "o0",
@@ -2116,7 +2116,7 @@
       "type": "multiple-choice",
       "prompt": "ドイツがエストニアに大きな文化的影響を与えたのは歴史上いつ頃のことでしょうか?",
       "passage": "15世紀頃、エストニア北部はドイツの大きな文化的影響を受けていました。 一部のドイツ人僧侶たちは、神を現地の人々にとって身近なものにしたいと思い、エストニア文字の言語を発明しました。 ドイツ語のアルファベットをベースに、「Õ/õ」の1文字が追加されました。 時が経つにつれ、ドイツ語から借用した多くの言葉が融合されていきました。これが啓蒙の始まりでした。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikibooks.org/wiki/Wikijunior:Languages/Estonian",
+      "passageSource": "Belebele · https://en.wikibooks.org/wiki/Wikijunior:Languages/Estonian",
       "options": [
         {
           "id": "o0",
@@ -2144,7 +2144,7 @@
       "type": "multiple-choice",
       "prompt": "エストニア語は何に影響を受けましたか?",
       "passage": "15世紀頃、エストニア北部はドイツの大きな文化的影響を受けていました。 一部のドイツ人僧侶たちは、神を現地の人々にとって身近なものにしたいと思い、エストニア文字の言語を発明しました。 ドイツ語のアルファベットをベースに、「Õ/õ」の1文字が追加されました。 時が経つにつれ、ドイツ語から借用した多くの言葉が融合されていきました。これが啓蒙の始まりでした。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikibooks.org/wiki/Wikijunior:Languages/Estonian",
+      "passageSource": "Belebele · https://en.wikibooks.org/wiki/Wikijunior:Languages/Estonian",
       "options": [
         {
           "id": "o0",
@@ -2172,7 +2172,7 @@
       "type": "multiple-choice",
       "prompt": "文中の内容を踏まえて、一定の人が信じているのは次のうちのどれでしょう?",
       "passage": "多くの人々は、人間が別の星に旅行し、別世界を探索できる日を夢見ています。宇宙に何があるのか知りたがっている人もいれば、別の惑星に宇宙人や他の生命体が住んでいると信じている人もいます。 しかし、仮にそれが起きたとしても、おそらくそう長時間は続かないでしょう。星は非常に拡散的で「隣同士」の星間の距離は何兆マイルもあるのでます。 もしかしたら、あなたのひ孫たちが異星人の惑星に降り立って、古代の祖先に思いを馳せる日が来るかもしれません。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikibooks.org/wiki/Wikijunior:Solar_System/Space_exploration",
+      "passageSource": "Belebele · https://en.wikibooks.org/wiki/Wikijunior:Solar_System/Space_exploration",
       "options": [
         {
           "id": "o0",
@@ -2200,7 +2200,7 @@
       "type": "multiple-choice",
       "prompt": "コペルニクスの理論を裏付けるのに役だった観測とは、次のうちのどれでしょう?",
       "passage": "約3,000年後の1610年、イタリアの天文学者ガリレオ・ガリレイが望遠鏡を使って観測し、金星にも月と同じように満ち欠けがあることを発見しました。 金星の位相は、太陽に面した金星（または月）の側面のみが明るくなるために発生します。金星の満ち欠けは、惑星は太陽の周りを回っているというコペルニクスの理論を裏付けるものでした。 そして数年後の1639年にイギリスの天文学者ジェレミア・ホロックスが金星の通過を観測しました。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikibooks.org/wiki/Wikijunior:Solar_System/Venus",
+      "passageSource": "Belebele · https://en.wikibooks.org/wiki/Wikijunior:Solar_System/Venus",
       "options": [
         {
           "id": "o0",
@@ -2228,7 +2228,7 @@
       "type": "multiple-choice",
       "prompt": "1610年にガリレオ・ガリレイによって観測されたものは、次のうちのどれでしょう?",
       "passage": "約3,000年後の1610年、イタリアの天文学者ガリレオ・ガリレイが望遠鏡を使って観測し、金星にも月と同じように満ち欠けがあることを発見しました。 金星の位相は、太陽に面した金星（または月）の側面のみが明るくなるために発生します。金星の満ち欠けは、惑星は太陽の周りを回っているというコペルニクスの理論を裏付けるものでした。 そして数年後の1639年にイギリスの天文学者ジェレミア・ホロックスが金星の通過を観測しました。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikibooks.org/wiki/Wikijunior:Solar_System/Venus",
+      "passageSource": "Belebele · https://en.wikibooks.org/wiki/Wikijunior:Solar_System/Venus",
       "options": [
         {
           "id": "o0",
@@ -2256,7 +2256,7 @@
       "type": "multiple-choice",
       "prompt": "文中の内容によると、アマゾン川の水はどこから集まっていますか?",
       "passage": "アマゾン川は、地球上で2番目に長く、最も大きい川です。水量は2番目に大きい川の8倍を上回ります。 アマゾン川は地球上で最も広い川でもあり、川幅が6マイルに及ぶ場所もあります。 地球上の川から海に注ぐ水の20%は、アマゾン川から流れ出ています。 アマゾン川の本流は長さ6,387 km（3,980マイル）に及びます。この川は、何千という小さな川から水流を集めています。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikibooks.org/wiki/Wikijunior:South_America/The_Amazon",
+      "passageSource": "Belebele · https://en.wikibooks.org/wiki/Wikijunior:South_America/The_Amazon",
       "options": [
         {
           "id": "o0",
@@ -2284,7 +2284,7 @@
       "type": "multiple-choice",
       "prompt": "アマゾン川に関する栄誉ではないものはどれでしょう?",
       "passage": "アマゾン川は、地球上で2番目に長く、最も大きい川です。水量は2番目に大きい川の8倍を上回ります。 アマゾン川は地球上で最も広い川でもあり、川幅が6マイルに及ぶ場所もあります。 地球上の川から海に注ぐ水の20%は、アマゾン川から流れ出ています。 アマゾン川の本流は長さ6,387 km（3,980マイル）に及びます。この川は、何千という小さな川から水流を集めています。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikibooks.org/wiki/Wikijunior:South_America/The_Amazon",
+      "passageSource": "Belebele · https://en.wikibooks.org/wiki/Wikijunior:South_America/The_Amazon",
       "options": [
         {
           "id": "o0",
@@ -2312,7 +2312,7 @@
       "type": "multiple-choice",
       "prompt": "水を構成している化学物質とはなんでしょう?",
       "passage": "物質がある状態から別の状態に移行しても元素や化合物は変化しません。 気体としての窒素には液体窒素と同じ性質があります。液体の方が高密度ですが、分子数は同じです。 水もその一例です。水は水素原子2つと酸素原子1つで構成される化合物です。 気体、液体、固体のいずれの状態でも分子構造は変わりません。 物理的な状態が変化しても、化学的な状態は変わりません。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikibooks.org/wiki/Wikijunior:The_Elements/Matter_Is_The_Stuff_Around_You",
+      "passageSource": "Belebele · https://en.wikibooks.org/wiki/Wikijunior:The_Elements/Matter_Is_The_Stuff_Around_You",
       "options": [
         {
           "id": "o0",
@@ -2340,7 +2340,7 @@
       "type": "multiple-choice",
       "prompt": "水が形態を変えた場合でも、そのまま残るものはなんでしょう?",
       "passage": "物質がある状態から別の状態に移行しても元素や化合物は変化しません。 気体としての窒素には液体窒素と同じ性質があります。液体の方が高密度ですが、分子数は同じです。 水もその一例です。水は水素原子2つと酸素原子1つで構成される化合物です。 気体、液体、固体のいずれの状態でも分子構造は変わりません。 物理的な状態が変化しても、化学的な状態は変わりません。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikibooks.org/wiki/Wikijunior:The_Elements/Matter_Is_The_Stuff_Around_You",
+      "passageSource": "Belebele · https://en.wikibooks.org/wiki/Wikijunior:The_Elements/Matter_Is_The_Stuff_Around_You",
       "options": [
         {
           "id": "o0",
@@ -2368,7 +2368,7 @@
       "type": "multiple-choice",
       "prompt": "文中の内容によると、特定の法律を強制しようとした際に、13州にとって問題にならなかったことは次のうちのどれでしょう?",
       "passage": "独立戦争中に13州はまず連合規約に基づいて弱い中央政府を形成し、連邦議会はその唯一の構成要素でした。 議会には課税する権限がなく、国の執行機関や司法機関がなかったため、議会のすべての行為を州当局に頼っていましたが、州当局はしばしば非協力的でした。 州間の税法や関税を無効にする権限もありませんでした。 条項の改正には、全州から全会一致の同意が必要でしたが、各州は中央政府を軽視していたので、代表者が欠席することもしばしばでした。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikibooks.org/wiki/Wikijunior:United_States_Charters_of_Freedom/Constitution",
+      "passageSource": "Belebele · https://en.wikibooks.org/wiki/Wikijunior:United_States_Charters_of_Freedom/Constitution",
       "options": [
         {
           "id": "o0",
@@ -2396,7 +2396,7 @@
       "type": "multiple-choice",
       "prompt": "文中の内容によると、独立戦争中の中央政府の立場を正確に反映している記述はどれでしょう?",
       "passage": "独立戦争中に13州はまず連合規約に基づいて弱い中央政府を形成し、連邦議会はその唯一の構成要素でした。 議会には課税する権限がなく、国の執行機関や司法機関がなかったため、議会のすべての行為を州当局に頼っていましたが、州当局はしばしば非協力的でした。 州間の税法や関税を無効にする権限もありませんでした。 条項の改正には、全州から全会一致の同意が必要でしたが、各州は中央政府を軽視していたので、代表者が欠席することもしばしばでした。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikibooks.org/wiki/Wikijunior:United_States_Charters_of_Freedom/Constitution",
+      "passageSource": "Belebele · https://en.wikibooks.org/wiki/Wikijunior:United_States_Charters_of_Freedom/Constitution",
       "options": [
         {
           "id": "o0",
@@ -2424,7 +2424,7 @@
       "type": "multiple-choice",
       "prompt": "侵略者と和平を結んだのは誰でしょう?",
       "passage": "Dデイの上陸作戦とそれに続く戦闘でフランス北部は解放されましたが、南部はまだ解放されていませんでした。 統治者は「ビシー」のフランス人たちでした。彼らは1940年にドイツ軍と和平を結び、侵略者と戦うのではなく、侵略者に協力したフランス人たちです。 1940年8月15日、連合国は南フランスに侵攻し、その侵攻は「ドラグーン作戦」と呼ばれました。 わずか2週間でアメリカ軍と自由フランス軍は南フランスを解放し、ドイツに向かっていました。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikibooks.org/wiki/Wikijunior:World_War_II/Liberation_of_Western_Europe",
+      "passageSource": "Belebele · https://en.wikibooks.org/wiki/Wikijunior:World_War_II/Liberation_of_Western_Europe",
       "options": [
         {
           "id": "o0",
@@ -2452,7 +2452,7 @@
       "type": "multiple-choice",
       "prompt": "ドラグーン作戦に関与した同盟国はどこだったでしょう?",
       "passage": "Dデイの上陸作戦とそれに続く戦闘でフランス北部は解放されましたが、南部はまだ解放されていませんでした。 統治者は「ビシー」のフランス人たちでした。彼らは1940年にドイツ軍と和平を結び、侵略者と戦うのではなく、侵略者に協力したフランス人たちです。 1940年8月15日、連合国は南フランスに侵攻し、その侵攻は「ドラグーン作戦」と呼ばれました。 わずか2週間でアメリカ軍と自由フランス軍は南フランスを解放し、ドイツに向かっていました。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikibooks.org/wiki/Wikijunior:World_War_II/Liberation_of_Western_Europe",
+      "passageSource": "Belebele · https://en.wikibooks.org/wiki/Wikijunior:World_War_II/Liberation_of_Western_Europe",
       "options": [
         {
           "id": "o0",
@@ -2480,7 +2480,7 @@
       "type": "multiple-choice",
       "prompt": "文中の内容によると、協定を破ったのはどこでしょう? ",
       "passage": "1939年9月17日までに、ポーランドの防衛はすでに破られており、唯一の希望はルーマニアの橋頭堡に沿って退却し、再編成することでした。 しかし、これらの計画はほぼ一夜にして過去のものとなりました。ソビエト連邦赤軍の80万人以上の兵士が、リガ講和条約、ソビエト・ポーランド不可侵条約、その他の国際条約（二国間および多国間）に違反してポーランド東部地域を侵攻した後、ベラルーシ戦線とウクライナ戦線を形成したのです。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikibooks.org/wiki/World_War_II/Battle_of_Poland",
+      "passageSource": "Belebele · https://en.wikibooks.org/wiki/World_War_II/Battle_of_Poland",
       "options": [
         {
           "id": "o0",
@@ -2508,7 +2508,7 @@
       "type": "multiple-choice",
       "prompt": "赤軍によって実行されなかったのは次のうちのどれでしょう?",
       "passage": "1939年9月17日までに、ポーランドの防衛はすでに破られており、唯一の希望はルーマニアの橋頭堡に沿って退却し、再編成することでした。 しかし、これらの計画はほぼ一夜にして過去のものとなりました。ソビエト連邦赤軍の80万人以上の兵士が、リガ講和条約、ソビエト・ポーランド不可侵条約、その他の国際条約（二国間および多国間）に違反してポーランド東部地域を侵攻した後、ベラルーシ戦線とウクライナ戦線を形成したのです。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikibooks.org/wiki/World_War_II/Battle_of_Poland",
+      "passageSource": "Belebele · https://en.wikibooks.org/wiki/World_War_II/Battle_of_Poland",
       "options": [
         {
           "id": "o0",
@@ -2536,7 +2536,7 @@
       "type": "multiple-choice",
       "prompt": "津波による停電があったのはどこでしょう?",
       "passage": "最新速報によれば、海面測定値は津波の発生を示すものでした。パゴパゴとニウエの近くで明らかな津波活動が何回か記録されていました。 トンガでは大被害や負傷者は報告されていません。しかし、一時的に停電が発生し、トンガ当局は太平洋津波警報センター（PTWC）が発令した津波警報を受信できなかったとのことでした。 ハワイの海岸線沿いか海岸線に近い場所にある14校は、警報が解除されたにもかかわらず、水曜日はずっと閉鎖されたままでした。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikinews.org/wiki/8.0_magnitude_earthquake_occurs_near_Tonga",
+      "passageSource": "Belebele · https://en.wikinews.org/wiki/8.0_magnitude_earthquake_occurs_near_Tonga",
       "options": [
         {
           "id": "o0",
@@ -2564,7 +2564,7 @@
       "type": "multiple-choice",
       "prompt": "文中の内容によると、トンガはこの停電でどんな影響を受けましたか?",
       "passage": "最新速報によれば、海面測定値は津波の発生を示すものでした。パゴパゴとニウエの近くで明らかな津波活動が何回か記録されていました。 トンガでは大被害や負傷者は報告されていません。しかし、一時的に停電が発生し、トンガ当局は太平洋津波警報センター（PTWC）が発令した津波警報を受信できなかったとのことでした。 ハワイの海岸線沿いか海岸線に近い場所にある14校は、警報が解除されたにもかかわらず、水曜日はずっと閉鎖されたままでした。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikinews.org/wiki/8.0_magnitude_earthquake_occurs_near_Tonga",
+      "passageSource": "Belebele · https://en.wikinews.org/wiki/8.0_magnitude_earthquake_occurs_near_Tonga",
       "options": [
         {
           "id": "o0",
@@ -2592,7 +2592,7 @@
       "type": "multiple-choice",
       "prompt": "RSPCAの主任検査官によると、検査は次のうちどれに対して標準的でしょうか?",
       "passage": "英国王立動物虐待防止協会（RSPCA）は、オーストラリアの食肉処理場すべてに監視カメラ（CCTV）の設置を義務付けるように再度要求しています。 RSPCAニューサウスウェールズ州のデビッド・オシャネシー主任検査官は、オーストラリアでは屠殺場の監視と検査を実施して当然だとABCに語りました。 「監視カメラは動物を扱う業者に、動物福祉が最優先であることを確かに強く伝えてくれるでしょう。」",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikinews.org/wiki/Anonymous_people_reveal_animal_cruelty_at_Australian_Inghams_poultry_producer_factory_using_CCTV_footage",
+      "passageSource": "Belebele · https://en.wikinews.org/wiki/Anonymous_people_reveal_animal_cruelty_at_Australian_Inghams_poultry_producer_factory_using_CCTV_footage",
       "options": [
         {
           "id": "o0",
@@ -2620,7 +2620,7 @@
       "type": "multiple-choice",
       "prompt": "文中の内容によると、動物福祉の重要性をオーストラリアの食肉処理場労働者に強く訴えるのに役立つかもしれないことはなんでしょう?",
       "passage": "英国王立動物虐待防止協会（RSPCA）は、オーストラリアの食肉処理場すべてに監視カメラ（CCTV）の設置を義務付けるように再度要求しています。 RSPCAニューサウスウェールズ州のデビッド・オシャネシー主任検査官は、オーストラリアでは屠殺場の監視と検査を実施して当然だとABCに語りました。 「監視カメラは動物を扱う業者に、動物福祉が最優先であることを確かに強く伝えてくれるでしょう。」",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikinews.org/wiki/Anonymous_people_reveal_animal_cruelty_at_Australian_Inghams_poultry_producer_factory_using_CCTV_footage",
+      "passageSource": "Belebele · https://en.wikinews.org/wiki/Anonymous_people_reveal_animal_cruelty_at_Australian_Inghams_poultry_producer_factory_using_CCTV_footage",
       "options": [
         {
           "id": "o0",
@@ -2648,7 +2648,7 @@
       "type": "multiple-choice",
       "prompt": "iPodの過熱事故が原因で何人が負傷したでしょうか?",
       "passage": "故障したiPodが発熱する問題が約60件も報告されており、合計6件の火災が発生し、4人が軽度の火傷を負いました。 日本の経済産業省は、同機器に関連した事故が27件発生していることを把握していると発表しました。 先週、経済産業省は、Appleが「深刻ではない」とする過熱事故を追加で34件報告したと発表しました。 同省は、Appleの報告延期について「本当に遺憾だ」と語ることで対応した。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikinews.org/wiki/Apple_Japan_to_replace_overheating_iPod_Nanos",
+      "passageSource": "Belebele · https://en.wikinews.org/wiki/Apple_Japan_to_replace_overheating_iPod_Nanos",
       "options": [
         {
           "id": "o0",
@@ -2676,7 +2676,7 @@
       "type": "multiple-choice",
       "prompt": "加熱事故はさほど深刻ではないと言ったのは誰でしょう?",
       "passage": "故障したiPodが発熱する問題が約60件も報告されており、合計6件の火災が発生し、4人が軽度の火傷を負いました。 日本の経済産業省は、同機器に関連した事故が27件発生していることを把握していると発表しました。 先週、経済産業省は、Appleが「深刻ではない」とする過熱事故を追加で34件報告したと発表しました。 同省は、Appleの報告延期について「本当に遺憾だ」と語ることで対応した。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikinews.org/wiki/Apple_Japan_to_replace_overheating_iPod_Nanos",
+      "passageSource": "Belebele · https://en.wikinews.org/wiki/Apple_Japan_to_replace_overheating_iPod_Nanos",
       "options": [
         {
           "id": "o0",
@@ -2704,7 +2704,7 @@
       "type": "multiple-choice",
       "prompt": "クリスティーナ・フェルナンデス・デ・キルヒナーはアルゼンチン劇場で何を発表しましたか?",
       "passage": "昨晩、ブエノスアイレスから50キロ（31マイル）離れたラプラタ市内で、現職上院議員であるクリスティーナ・フェルナンデス・デ・キルヒナー女史が大統領選への出馬を宣言しました。 キルヒネル夫人は、アルゼンチン劇場で大統領選に出馬するという意向を表明しました。2005年にブエノスアイレス州の代表団の一員として上院選への出馬を表明したのもこの劇場でした。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikinews.org/wiki/Argentina%27s_first_lady_launches_presidential_bid",
+      "passageSource": "Belebele · https://en.wikinews.org/wiki/Argentina%27s_first_lady_launches_presidential_bid",
       "options": [
         {
           "id": "o0",
@@ -2732,7 +2732,7 @@
       "type": "multiple-choice",
       "prompt": "クリスティーナ・フェルナンデス・デ・キルヒナーが出馬する意向を発表したのはどこだったでしょう?",
       "passage": "昨晩、ブエノスアイレスから50キロ（31マイル）離れたラプラタ市内で、現職上院議員であるクリスティーナ・フェルナンデス・デ・キルヒナー女史が大統領選への出馬を宣言しました。 キルヒネル夫人は、アルゼンチン劇場で大統領選に出馬するという意向を表明しました。2005年にブエノスアイレス州の代表団の一員として上院選への出馬を表明したのもこの劇場でした。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikinews.org/wiki/Argentina%27s_first_lady_launches_presidential_bid",
+      "passageSource": "Belebele · https://en.wikinews.org/wiki/Argentina%27s_first_lady_launches_presidential_bid",
       "options": [
         {
           "id": "o0",
@@ -2760,7 +2760,7 @@
       "type": "multiple-choice",
       "prompt": "ビッグ・ブラザーに関してACMAが発見したことはなんだったでしょう?",
       "passage": "また、ACMAは、インターネット上で動画が配信されていたにもかかわらず、ビッグ・ブラザーのウェブサイトにメディアが保存されていなかったため、ビッグ・ブラザーはオンラインコンテンツ検閲法に違反していなかったことを明らかにしています。 放送事業法ではインターネットのコンテンツについて規制を敷いていますが、コンテンツと見なされるためには、サーバー上に物理的に存在しなければなりません。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikinews.org/wiki/Australian_Big_Brother_cleared_of_breaching_content_laws",
+      "passageSource": "Belebele · https://en.wikinews.org/wiki/Australian_Big_Brother_cleared_of_breaching_content_laws",
       "options": [
         {
           "id": "o0",
@@ -2788,7 +2788,7 @@
       "type": "multiple-choice",
       "prompt": "インターネットコンテンツと見なされるためにはどんなパラメータにメディアは該当しなければならないでしょうか?",
       "passage": "また、ACMAは、インターネット上で動画が配信されていたにもかかわらず、ビッグ・ブラザーのウェブサイトにメディアが保存されていなかったため、ビッグ・ブラザーはオンラインコンテンツ検閲法に違反していなかったことを明らかにしています。 放送事業法ではインターネットのコンテンツについて規制を敷いていますが、コンテンツと見なされるためには、サーバー上に物理的に存在しなければなりません。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikinews.org/wiki/Australian_Big_Brother_cleared_of_breaching_content_laws",
+      "passageSource": "Belebele · https://en.wikinews.org/wiki/Australian_Big_Brother_cleared_of_breaching_content_laws",
       "options": [
         {
           "id": "o0",
@@ -2816,7 +2816,7 @@
       "type": "multiple-choice",
       "prompt": "オーストラリアの自由党党首は誰でしょう?",
       "passage": "オーストラリアの財務大臣であり、ジョン・ハワード首相の後任として自由党党首に就任する可能性が高いピーター・コステロ氏は、オーストラリアの原子力発電産業を支持しています。 コステロ氏は、原子力発電で経済的に採算が取れるようになったら、オーストラリアは原子力発電の利用を追求すべきだと述べました。 「商用になれば手に入れるべきです。つまり、原則として原子力発電には反対しない」とコステロ氏は語りました。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikinews.org/wiki/Australian_treasurer_enters_nuclear_debate",
+      "passageSource": "Belebele · https://en.wikinews.org/wiki/Australian_treasurer_enters_nuclear_debate",
       "options": [
         {
           "id": "o0",
@@ -2844,7 +2844,7 @@
       "type": "multiple-choice",
       "prompt": "なぜオーストラリアには前々から原子力発電産業が無いのでしょう?",
       "passage": "オーストラリアの財務大臣であり、ジョン・ハワード首相の後任として自由党党首に就任する可能性が高いピーター・コステロ氏は、オーストラリアの原子力発電産業を支持しています。 コステロ氏は、原子力発電で経済的に採算が取れるようになったら、オーストラリアは原子力発電の利用を追求すべきだと述べました。 「商用になれば手に入れるべきです。つまり、原則として原子力発電には反対しない」とコステロ氏は語りました。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikinews.org/wiki/Australian_treasurer_enters_nuclear_debate",
+      "passageSource": "Belebele · https://en.wikinews.org/wiki/Australian_treasurer_enters_nuclear_debate",
       "options": [
         {
           "id": "o0",
@@ -2872,7 +2872,7 @@
       "type": "multiple-choice",
       "prompt": "国連地球温暖化基金が使われないであろうものはなんでしょう?",
       "passage": "バリでの議題には、世界に残っている森林を保存し、開発途上国が低汚染で成長するために役立つ技術を共有することが含まれています。 また、国連では、地球温暖化の影響を被っている国々がその影響に対処できるように支援するための基金について最終決定したいと考えています。 この資金は、洪水に強い住宅、より適切な水の管理、さらに作物の多様化に使われる可能性があります。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikinews.org/wiki/Bali_climate_change_conference_begins",
+      "passageSource": "Belebele · https://en.wikinews.org/wiki/Bali_climate_change_conference_begins",
       "options": [
         {
           "id": "o0",
@@ -2900,7 +2900,7 @@
       "type": "multiple-choice",
       "prompt": "文中の内容によると、国連は何を守りたいのでしょうか?",
       "passage": "バリでの議題には、世界に残っている森林を保存し、開発途上国が低汚染で成長するために役立つ技術を共有することが含まれています。 また、国連では、地球温暖化の影響を被っている国々がその影響に対処できるように支援するための基金について最終決定したいと考えています。 この資金は、洪水に強い住宅、より適切な水の管理、さらに作物の多様化に使われる可能性があります。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikinews.org/wiki/Bali_climate_change_conference_begins",
+      "passageSource": "Belebele · https://en.wikinews.org/wiki/Bali_climate_change_conference_begins",
       "options": [
         {
           "id": "o0",
@@ -2928,7 +2928,7 @@
       "type": "multiple-choice",
       "prompt": "合意が必要なものとしてアルバート・ムシャンガが挙げていなかったものは、次のうちのどれでしょう?",
       "passage": "以前にナイジェリアは、サミットの1週間前までにAfCFTAに参加する予定であると発表していました。 AUのアルバート・ムシャンガ貿易産業コミッショナーは、ベナンが参加すると発表しました。 長官は、「原産地規則や関税についてはまだ合意に至っていないものの、2020年7月1日に取引を始めるための枠組みは十分に整っている」と述べました。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikinews.org/wiki/Benin,_Nigeria_join_African_Union_continental_free_trade_bloc",
+      "passageSource": "Belebele · https://en.wikinews.org/wiki/Benin,_Nigeria_join_African_Union_continental_free_trade_bloc",
       "options": [
         {
           "id": "o0",
@@ -2956,7 +2956,7 @@
       "type": "multiple-choice",
       "prompt": "文中の内容によると、なぜ７月に取引が始められるのでしょう?",
       "passage": "以前にナイジェリアは、サミットの1週間前までにAfCFTAに参加する予定であると発表していました。 AUのアルバート・ムシャンガ貿易産業コミッショナーは、ベナンが参加すると発表しました。 長官は、「原産地規則や関税についてはまだ合意に至っていないものの、2020年7月1日に取引を始めるための枠組みは十分に整っている」と述べました。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikinews.org/wiki/Benin,_Nigeria_join_African_Union_continental_free_trade_bloc",
+      "passageSource": "Belebele · https://en.wikinews.org/wiki/Benin,_Nigeria_join_African_Union_continental_free_trade_bloc",
       "options": [
         {
           "id": "o0",
@@ -2984,7 +2984,7 @@
       "type": "multiple-choice",
       "prompt": "文中の内容を踏まえて、この衝突について不明瞭ではない情報はなんでしょう?",
       "passage": "重さが1,000ポンドを超え、時速約17,500マイルで移動していた人工衛星は、地球の上空491マイルのところで衝突しました。 科学者によると、この衝突による爆発は大規模なものでした。 彼らは、衝突がどのくらいの規模で、地球がどのような影響を受けるのかについて現在も調査しています。 米国防総省事務所の米戦略司令部がこのデブリを追跡しています。 プロット分析の結果は、公開サイトに掲載される予定です。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikinews.org/wiki/Burning_debris_from_satellites_spotted_over_several_US_cities",
+      "passageSource": "Belebele · https://en.wikinews.org/wiki/Burning_debris_from_satellites_spotted_over_several_US_cities",
       "options": [
         {
           "id": "o0",
@@ -3012,7 +3012,7 @@
       "type": "multiple-choice",
       "prompt": "文中の内容によると、この衝突に関して何を調査することがまだ必要でしょうか?",
       "passage": "重さが1,000ポンドを超え、時速約17,500マイルで移動していた人工衛星は、地球の上空491マイルのところで衝突しました。 科学者によると、この衝突による爆発は大規模なものでした。 彼らは、衝突がどのくらいの規模で、地球がどのような影響を受けるのかについて現在も調査しています。 米国防総省事務所の米戦略司令部がこのデブリを追跡しています。 プロット分析の結果は、公開サイトに掲載される予定です。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikinews.org/wiki/Burning_debris_from_satellites_spotted_over_several_US_cities",
+      "passageSource": "Belebele · https://en.wikinews.org/wiki/Burning_debris_from_satellites_spotted_over_several_US_cities",
       "options": [
         {
           "id": "o0",
@@ -3040,7 +3040,7 @@
       "type": "multiple-choice",
       "prompt": "シアヌル酸とメラミンの化合物は猫の尿中で互いに反応した際、何を形成するでしょう?",
       "passage": "汚染されたペットフードを食べて死亡したペットの尿サンプルからシアン酸とメラミンの両方が検出されました。 その大学の研究者たちによれば、この2つの化合物は、互いに反応して腎臓の機能を阻害しうる結晶を形成します。 研究者らは、メラミンとシアヌル酸の添加によって猫の尿に形成された結晶を観察しました。 これらの結晶の組成は、赤外分光法（FTIR）で比較すると、患部のペットの尿中に見られるものと一致します。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikinews.org/wiki/Canadian_inspectors_to_test_food_ingredients_from_China",
+      "passageSource": "Belebele · https://en.wikinews.org/wiki/Canadian_inspectors_to_test_food_ingredients_from_China",
       "options": [
         {
           "id": "o0",
@@ -3068,7 +3068,7 @@
       "type": "multiple-choice",
       "prompt": "研究者は何を観察するために赤外分光法を使いましたか?",
       "passage": "汚染されたペットフードを食べて死亡したペットの尿サンプルからシアン酸とメラミンの両方が検出されました。 その大学の研究者たちによれば、この2つの化合物は、互いに反応して腎臓の機能を阻害しうる結晶を形成します。 研究者らは、メラミンとシアヌル酸の添加によって猫の尿に形成された結晶を観察しました。 これらの結晶の組成は、赤外分光法（FTIR）で比較すると、患部のペットの尿中に見られるものと一致します。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikinews.org/wiki/Canadian_inspectors_to_test_food_ingredients_from_China",
+      "passageSource": "Belebele · https://en.wikinews.org/wiki/Canadian_inspectors_to_test_food_ingredients_from_China",
       "options": [
         {
           "id": "o0",
@@ -3096,7 +3096,7 @@
       "type": "multiple-choice",
       "prompt": "衝突に巻き込まれた運転手に起きていないことはなんでしょう?",
       "passage": "車の衝突時には３人が家の中にいましたが、怪我人はいませんでした。 しかし、運転手は頭部に重傷を負いました。 衝突事故が起きた道路は、救急隊が赤いアウディTTから運転手を救助するまで一時通行止めになりました。 当初、彼はグレート・ヤーマスにあるジェームズ・パジェット病院に入院していました。 後に彼はケンブリッジのアデンブルック病院に転院しました。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikinews.org/wiki/Car_crashes_into_house_in_Suffolk,_UK,_seriously_injuring_man",
+      "passageSource": "Belebele · https://en.wikinews.org/wiki/Car_crashes_into_house_in_Suffolk,_UK,_seriously_injuring_man",
       "options": [
         {
           "id": "o0",
@@ -3124,7 +3124,7 @@
       "type": "multiple-choice",
       "prompt": "文中の内容によると、中国経済を正確に反映していないのは次のうちのどの記述でしょう?",
       "passage": "この30年間に、中国は公式には共産主義国家のままであるにもかかわらず、市場経済を発展させてきました。 最初の経済改革は、鄧小平の指導の下で進められました。 以来、中国の経済規模は90倍にまで成長を遂げました。 昨年、中国は自動車輸出台数で初めてドイツを上回るとともに業界の市場規模では米国を抜き最大となりました。 中国のGDPは20年以内に米国を上回る可能性があります。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikinews.org/wiki/China%27s_economy_surpasses_Japan%27s_in_second_quarter",
+      "passageSource": "Belebele · https://en.wikinews.org/wiki/China%27s_economy_surpasses_Japan%27s_in_second_quarter",
       "options": [
         {
           "id": "o0",
@@ -3152,7 +3152,7 @@
       "type": "multiple-choice",
       "prompt": "文中の内容によると、中国のGDPが米国を上回るのはいつになりそうでしょうか?",
       "passage": "この30年間に、中国は公式には共産主義国家のままであるにもかかわらず、市場経済を発展させてきました。 最初の経済改革は、鄧小平の指導の下で進められました。 以来、中国の経済規模は90倍にまで成長を遂げました。 昨年、中国は自動車輸出台数で初めてドイツを上回るとともに業界の市場規模では米国を抜き最大となりました。 中国のGDPは20年以内に米国を上回る可能性があります。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikinews.org/wiki/China%27s_economy_surpasses_Japan%27s_in_second_quarter",
+      "passageSource": "Belebele · https://en.wikinews.org/wiki/China%27s_economy_surpasses_Japan%27s_in_second_quarter",
       "options": [
         {
           "id": "o0",
@@ -3180,7 +3180,7 @@
       "type": "multiple-choice",
       "prompt": "その起訴が原因でフーネ内閣の役職につくのは誰でしょう?",
       "passage": "公訴局長官のキアー・スターマー王室顧問弁護士は今朝、ハーン氏とプライス氏の両氏を起訴するという声明を発表しました。 フーネ氏は辞任し、内閣ではエド・デイビー下院議員がその後任となる予定です。デイビー氏の退任で空席となる事業所管大臣の席にはノーマン・ラム下院議員が就くと予想されます。 フーネ氏とプライス氏は2月16日にウェストミンスター治安判事裁判所に出廷する予定です。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikinews.org/wiki/Chris_Huhne_resigns_from_UK_Cabinet_to_face_charges",
+      "passageSource": "Belebele · https://en.wikinews.org/wiki/Chris_Huhne_resigns_from_UK_Cabinet_to_face_charges",
       "options": [
         {
           "id": "o0",
@@ -3208,7 +3208,7 @@
       "type": "multiple-choice",
       "prompt": "起訴を受けて、ビジネス大臣の役割を誰が担うでしょう?",
       "passage": "公訴局長官のキアー・スターマー王室顧問弁護士は今朝、ハーン氏とプライス氏の両氏を起訴するという声明を発表しました。 フーネ氏は辞任し、内閣ではエド・デイビー下院議員がその後任となる予定です。デイビー氏の退任で空席となる事業所管大臣の席にはノーマン・ラム下院議員が就くと予想されます。 フーネ氏とプライス氏は2月16日にウェストミンスター治安判事裁判所に出廷する予定です。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikinews.org/wiki/Chris_Huhne_resigns_from_UK_Cabinet_to_face_charges",
+      "passageSource": "Belebele · https://en.wikinews.org/wiki/Chris_Huhne_resigns_from_UK_Cabinet_to_face_charges",
       "options": [
         {
           "id": "o0",
@@ -3236,7 +3236,7 @@
       "type": "multiple-choice",
       "prompt": "レオーノフがやって見せた「宇宙遊泳」の別名はなんでしょう?",
       "passage": "レオーノフは「宇宙飛行士11号」とも呼ばれ、ソ連の軍人であり、初期宇宙飛行士チームの一員でした。 1965年3月18日、彼は初の有人船外活動（EVA）つまり「宇宙遊泳」を体験し、12分以上にわたって宇宙船外で1人で活動しました。 彼はその功績により、ソビエト連邦最高の栄誉である「ソ連邦英雄」の称号を授かりました。 10年後に彼はアポロ・ソユーズ計画でソ連側を指揮し、これは宇宙開発競争の終焉を象徴するものでした。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikinews.org/wiki/Cosmonaut_Alexei_Leonov_dies_at_age_85",
+      "passageSource": "Belebele · https://en.wikinews.org/wiki/Cosmonaut_Alexei_Leonov_dies_at_age_85",
       "options": [
         {
           "id": "o0",
@@ -3264,7 +3264,7 @@
       "type": "multiple-choice",
       "prompt": "レオーノフはソ連にどの計画の一部を指導しましたか?",
       "passage": "レオーノフは「宇宙飛行士11号」とも呼ばれ、ソ連の軍人であり、初期宇宙飛行士チームの一員でした。 1965年3月18日、彼は初の有人船外活動（EVA）つまり「宇宙遊泳」を体験し、12分以上にわたって宇宙船外で1人で活動しました。 彼はその功績により、ソビエト連邦最高の栄誉である「ソ連邦英雄」の称号を授かりました。 10年後に彼はアポロ・ソユーズ計画でソ連側を指揮し、これは宇宙開発競争の終焉を象徴するものでした。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikinews.org/wiki/Cosmonaut_Alexei_Leonov_dies_at_age_85",
+      "passageSource": "Belebele · https://en.wikinews.org/wiki/Cosmonaut_Alexei_Leonov_dies_at_age_85",
       "options": [
         {
           "id": "o0",
@@ -3292,7 +3292,7 @@
       "type": "multiple-choice",
       "prompt": "この事故で負傷したのは誰でしょう?",
       "passage": "事故発生後、ギブソン氏は病院に搬送されましたが、その後まもなく死亡しました。 トラックの運転手は64歳でしたが、この事故で怪我はありませんでした。 車両自体は同日のグリニッジ標準時12:00頃に事故現場から持ち去られました。 事故現場近くの車庫で働いていた男性は、「道を渡ろうと待っている子供たちがみんな泣き叫んでいた。」と語りました。 全員が事故現場から逃げ帰りました。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikinews.org/wiki/Crossing_guard_killed_by_truck_in_Glasgow,_Scotland",
+      "passageSource": "Belebele · https://en.wikinews.org/wiki/Crossing_guard_killed_by_truck_in_Glasgow,_Scotland",
       "options": [
         {
           "id": "o0",
@@ -3320,7 +3320,7 @@
       "type": "multiple-choice",
       "prompt": "この事故に巻き込まれた人たちに何が起きたでしょう?",
       "passage": "事故発生後、ギブソン氏は病院に搬送されましたが、その後まもなく死亡しました。 トラックの運転手は64歳でしたが、この事故で怪我はありませんでした。 車両自体は同日のグリニッジ標準時12:00頃に事故現場から持ち去られました。 事故現場近くの車庫で働いていた男性は、「道を渡ろうと待っている子供たちがみんな泣き叫んでいた。」と語りました。 全員が事故現場から逃げ帰りました。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikinews.org/wiki/Crossing_guard_killed_by_truck_in_Glasgow,_Scotland",
+      "passageSource": "Belebele · https://en.wikinews.org/wiki/Crossing_guard_killed_by_truck_in_Glasgow,_Scotland",
       "options": [
         {
           "id": "o0",
@@ -3348,7 +3348,7 @@
       "type": "multiple-choice",
       "prompt": "文中の内容によると、戦闘後に中庭に残っていた受刑者と話をしなかったのは誰でしょう?",
       "passage": "負傷者が病院に搬送された後に戦闘が収まると、他の約40人の受刑者は中庭に残り、独房に戻ることを拒否しました。 交渉人たちは事態の収拾を図ろうとしたが、囚人の要求は明らかではない。 10:00～11:00pm MDTの間に受刑者が庭に火を放ったのでした。 まもなく暴動鎮圧用の装備を着用した警官たちが収容所に入り、催涙ガスで受刑者を追い詰めました。 消防隊は最終的に午後11時35分までに火を消しました。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikinews.org/wiki/Edmonton_prison_conflict_wounds_eight",
+      "passageSource": "Belebele · https://en.wikinews.org/wiki/Edmonton_prison_conflict_wounds_eight",
       "options": [
         {
           "id": "o0",
@@ -3376,7 +3376,7 @@
       "type": "multiple-choice",
       "prompt": "次のうちのどれが囚人たちを暴動から最終的に退却させたでしょう?",
       "passage": "負傷者が病院に搬送された後に戦闘が収まると、他の約40人の受刑者は中庭に残り、独房に戻ることを拒否しました。 交渉人たちは事態の収拾を図ろうとしたが、囚人の要求は明らかではない。 10:00～11:00pm MDTの間に受刑者が庭に火を放ったのでした。 まもなく暴動鎮圧用の装備を着用した警官たちが収容所に入り、催涙ガスで受刑者を追い詰めました。 消防隊は最終的に午後11時35分までに火を消しました。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikinews.org/wiki/Edmonton_prison_conflict_wounds_eight",
+      "passageSource": "Belebele · https://en.wikinews.org/wiki/Edmonton_prison_conflict_wounds_eight",
       "options": [
         {
           "id": "o0",
@@ -3404,7 +3404,7 @@
       "type": "multiple-choice",
       "prompt": "文中の内容によると、何がプラント内および周辺を危険な状態にする可能性が高いでしょう?",
       "passage": "テレビの報道によると、原発から白煙が上がっています。 自治体は、原発周辺の住民に屋外に出ないように警告し、エアコンを切り、水道水を飲まないように警告しています。 日本の原子力庁によれば、原発内で放射性セシウムとヨウ素が特定されています。 当局の推定では、これはウラン燃料が入っていたコンテナが破裂し、燃料が漏れている可能性を示しています。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikinews.org/wiki/Explosion_at_earthquake-damaged_Fukushima_nuclear_power_plant",
+      "passageSource": "Belebele · https://en.wikinews.org/wiki/Explosion_at_earthquake-damaged_Fukushima_nuclear_power_plant",
       "options": [
         {
           "id": "o0",
@@ -3432,7 +3432,7 @@
       "type": "multiple-choice",
       "prompt": "プラントでの事件の後、地元住民に指示された安全上の注意点の1つではないものは、次のうちのどれでしょう?",
       "passage": "テレビの報道によると、原発から白煙が上がっています。 自治体は、原発周辺の住民に屋外に出ないように警告し、エアコンを切り、水道水を飲まないように警告しています。 日本の原子力庁によれば、原発内で放射性セシウムとヨウ素が特定されています。 当局の推定では、これはウラン燃料が入っていたコンテナが破裂し、燃料が漏れている可能性を示しています。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikinews.org/wiki/Explosion_at_earthquake-damaged_Fukushima_nuclear_power_plant",
+      "passageSource": "Belebele · https://en.wikinews.org/wiki/Explosion_at_earthquake-damaged_Fukushima_nuclear_power_plant",
       "options": [
         {
           "id": "o0",
@@ -3460,7 +3460,7 @@
       "type": "multiple-choice",
       "prompt": "次のうち、パルチザンベオグラードでのボベックのキャリアを正確に反映していないのはどれでしょう?",
       "passage": "クロアチアの首都ザグレブで生まれたボベックは、パルチザンベオグラードで活躍していた頃に有名になりました。 1945年に彼らと合流し、1958年まで滞在した。 在籍期間に468試合に出場し、403ゴールを記録した。 ボベックほどこのクラブで多くの出場回数やゴールを挙げた選手は他にいません。 1995年にはパルチザン史上最高の選手に選ばれた。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikinews.org/wiki/Former_Yugoslavian_footballer_Stjepan_Bobek_dies_aged_86",
+      "passageSource": "Belebele · https://en.wikinews.org/wiki/Former_Yugoslavian_footballer_Stjepan_Bobek_dies_aged_86",
       "options": [
         {
           "id": "o0",
@@ -3488,7 +3488,7 @@
       "type": "multiple-choice",
       "prompt": "パルチザンベオグラードでのボベックの経歴について正しいのはどの記述でしょう?",
       "passage": "クロアチアの首都ザグレブで生まれたボベックは、パルチザンベオグラードで活躍していた頃に有名になりました。 1945年に彼らと合流し、1958年まで滞在した。 在籍期間に468試合に出場し、403ゴールを記録した。 ボベックほどこのクラブで多くの出場回数やゴールを挙げた選手は他にいません。 1995年にはパルチザン史上最高の選手に選ばれた。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikinews.org/wiki/Former_Yugoslavian_footballer_Stjepan_Bobek_dies_aged_86",
+      "passageSource": "Belebele · https://en.wikinews.org/wiki/Former_Yugoslavian_footballer_Stjepan_Bobek_dies_aged_86",
       "options": [
         {
           "id": "o0",
@@ -3516,7 +3516,7 @@
       "type": "multiple-choice",
       "prompt": "アルジェリアが独立したのは何年代のことだったでしょう?",
       "passage": "監督業以外でヴォーティエの業績としては、1973年に政治的検閲に反対してハンガーストライキを実施したことが挙げられます。 フランス法が改正されました。彼の活動の始まりは15歳のとき、第二次世界大戦中にフランスのレジスタンスに参加したことでした。 彼は1998年に出版した本の中で自身のことを書いています。 1960年代には、映画の撮り方について指導するために、独立直後のアルジェリアに戻りました。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikinews.org/wiki/French_campaigning_film_director_Ren%C3%A9_Vautier_dies",
+      "passageSource": "Belebele · https://en.wikinews.org/wiki/French_campaigning_film_director_Ren%C3%A9_Vautier_dies",
       "options": [
         {
           "id": "o0",
@@ -3544,7 +3544,7 @@
       "type": "multiple-choice",
       "prompt": "葬儀のためにテレビ画面が設置されなかったのはどこでしょう?",
       "passage": "400万人以上が葬儀に参列しようとローマに向かいました。 参列者の数が多すぎて、全員がサンピエトロ広場での葬儀に参加することは不可能でした。 ローマの各所には、人々に式典を見てもらおうと、大型テレビ画面がいくつも設置されていました。 イタリア国内の他の多くの都市や世界の他の地域（特にポーランド）で同じように設置がされ、多くの人々が視聴しました。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikinews.org/wiki/Funeral_of_Pope_John_Paul_II_takes_place",
+      "passageSource": "Belebele · https://en.wikinews.org/wiki/Funeral_of_Pope_John_Paul_II_takes_place",
       "options": [
         {
           "id": "o0",
@@ -3572,7 +3572,7 @@
       "type": "multiple-choice",
       "prompt": "葬儀はどこで行われたでしょう?",
       "passage": "400万人以上が葬儀に参列しようとローマに向かいました。 参列者の数が多すぎて、全員がサンピエトロ広場での葬儀に参加することは不可能でした。 ローマの各所には、人々に式典を見てもらおうと、大型テレビ画面がいくつも設置されていました。 イタリア国内の他の多くの都市や世界の他の地域（特にポーランド）で同じように設置がされ、多くの人々が視聴しました。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikinews.org/wiki/Funeral_of_Pope_John_Paul_II_takes_place",
+      "passageSource": "Belebele · https://en.wikinews.org/wiki/Funeral_of_Pope_John_Paul_II_takes_place",
       "options": [
         {
           "id": "o0",
@@ -3600,7 +3600,7 @@
       "type": "multiple-choice",
       "prompt": "この爆発の後、重症で治療を受けたのは誰でしょう?",
       "passage": "報道によると、マクベス通りのアパートがガス漏れで爆発しました。 近所の人からガス漏れの通報を受けて、ガス会社の職員が現場に駆けつけました。 役人が到着すると、アパートが爆発しました。 重傷者は報告されていませんが、爆発時に現場にいた5人以上がショック症状に陥って治療を受けました。 アパートには誰もいませんでした。 当時、この地域から100人近くの住民が避難していました。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikinews.org/wiki/Gas_explosion_reported_in_Hammersmith,_London",
+      "passageSource": "Belebele · https://en.wikinews.org/wiki/Gas_explosion_reported_in_Hammersmith,_London",
       "options": [
         {
           "id": "o0",
@@ -3628,7 +3628,7 @@
       "type": "multiple-choice",
       "prompt": "ガス漏れを通報したのは誰でしょう?",
       "passage": "報道によると、マクベス通りのアパートがガス漏れで爆発しました。 近所の人からガス漏れの通報を受けて、ガス会社の職員が現場に駆けつけました。 役人が到着すると、アパートが爆発しました。 重傷者は報告されていませんが、爆発時に現場にいた5人以上がショック症状に陥って治療を受けました。 アパートには誰もいませんでした。 当時、この地域から100人近くの住民が避難していました。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikinews.org/wiki/Gas_explosion_reported_in_Hammersmith,_London",
+      "passageSource": "Belebele · https://en.wikinews.org/wiki/Gas_explosion_reported_in_Hammersmith,_London",
       "options": [
         {
           "id": "o0",
@@ -3656,7 +3656,7 @@
       "type": "multiple-choice",
       "prompt": "文中の内容によると、この攻撃で何名が亡くなったでしょう?",
       "passage": "死亡したのは、ニコラス・オールデンさん（25歳）と運転手を務めるザカリー・カッドバックさん（21歳）でした。 エドガー・ベギラさんは腕と顎を負傷し、クリストファー・シュナイダーさんは顔の再建手術が必要なほどの重症を負いました。 ウカの武器は5人目の男の頭に向けられて失敗した。シュナイダーには痛みがあり、片目は失明し、頭蓋骨の一部が欠損し、顔はチタンで再建されている。 シュナイダーは母国の米空軍基地からビデオリンクで証言しました。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikinews.org/wiki/German_judge_orders_life_sentence_for_nation%27s_%27first_Islamic-motivated_terror_attack%27",
+      "passageSource": "Belebele · https://en.wikinews.org/wiki/German_judge_orders_life_sentence_for_nation%27s_%27first_Islamic-motivated_terror_attack%27",
       "options": [
         {
           "id": "o0",
@@ -3684,7 +3684,7 @@
       "type": "multiple-choice",
       "prompt": "攻撃中のある時点で発砲に失敗したのは誰の銃器だったでしょう?",
       "passage": "死亡したのは、ニコラス・オールデンさん（25歳）と運転手を務めるザカリー・カッドバックさん（21歳）でした。 エドガー・ベギラさんは腕と顎を負傷し、クリストファー・シュナイダーさんは顔の再建手術が必要なほどの重症を負いました。 ウカの武器は5人目の男の頭に向けられて失敗した。シュナイダーには痛みがあり、片目は失明し、頭蓋骨の一部が欠損し、顔はチタンで再建されている。 シュナイダーは母国の米空軍基地からビデオリンクで証言しました。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikinews.org/wiki/German_judge_orders_life_sentence_for_nation%27s_%27first_Islamic-motivated_terror_attack%27",
+      "passageSource": "Belebele · https://en.wikinews.org/wiki/German_judge_orders_life_sentence_for_nation%27s_%27first_Islamic-motivated_terror_attack%27",
       "options": [
         {
           "id": "o0",
@@ -3712,7 +3712,7 @@
       "type": "multiple-choice",
       "prompt": "欧州連合の何カ国でH5N1ウィルスが確認されているでしょう?",
       "passage": "人間にとって致死性となる鳥インフルエンザの株、H5N1が、フランス東部のリヨン近郊の湿地帯で月曜日に発見された野生のカモの死骸に感染していることが確認されました。 フランスは、オーストリア、ドイツ、スロベニア、ブルガリア、ギリシャ、イタリアに次いで欧州連合で当該ウイルス感染の被害を受けた7番目の国です。 クロアチアとデンマークで鳥インフルエンザが疑われている症例は未確認のままです。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikinews.org/wiki/H5N1_confirmed_in_France",
+      "passageSource": "Belebele · https://en.wikinews.org/wiki/H5N1_confirmed_in_France",
       "options": [
         {
           "id": "o0",
@@ -3740,7 +3740,7 @@
       "type": "multiple-choice",
       "prompt": "H5N1ウィルスの最新の症例はどこで確認されたでしょう?",
       "passage": "人間にとって致死性となる鳥インフルエンザの株、H5N1が、フランス東部のリヨン近郊の湿地帯で月曜日に発見された野生のカモの死骸に感染していることが確認されました。 フランスは、オーストリア、ドイツ、スロベニア、ブルガリア、ギリシャ、イタリアに次いで欧州連合で当該ウイルス感染の被害を受けた7番目の国です。 クロアチアとデンマークで鳥インフルエンザが疑われている症例は未確認のままです。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikinews.org/wiki/H5N1_confirmed_in_France",
+      "passageSource": "Belebele · https://en.wikinews.org/wiki/H5N1_confirmed_in_France",
       "options": [
         {
           "id": "o0",
@@ -3768,7 +3768,7 @@
       "type": "multiple-choice",
       "prompt": "アイルランド政府が計画していることとはなんでしょう?",
       "passage": "アイルランド政府は、この状況を是正するための議会立法の緊急性を強調している。 「公衆衛生と刑事司法の両方の観点から、この法案をできるだけ早く成立させることが重要であると」、政府の広報担当者は述べている。 厚生大臣は、関連する薬物の一時的な合法性を利用している個人の福祉と、改正後の現在では違憲となった薬物関連の有罪判決の両方に懸念を表明した。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikinews.org/wiki/Hard_drugs_temporarily_legal_in_Ireland_due_to_constitutional_loophole",
+      "passageSource": "Belebele · https://en.wikinews.org/wiki/Hard_drugs_temporarily_legal_in_Ireland_due_to_constitutional_loophole",
       "options": [
         {
           "id": "o0",
@@ -3796,7 +3796,7 @@
       "type": "multiple-choice",
       "prompt": "アイルランドで一時的に合法なのは次のうちのどれでしょう?",
       "passage": "アイルランド政府は、この状況を是正するための議会立法の緊急性を強調している。 「公衆衛生と刑事司法の両方の観点から、この法案をできるだけ早く成立させることが重要であると」、政府の広報担当者は述べている。 厚生大臣は、関連する薬物の一時的な合法性を利用している個人の福祉と、改正後の現在では違憲となった薬物関連の有罪判決の両方に懸念を表明した。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikinews.org/wiki/Hard_drugs_temporarily_legal_in_Ireland_due_to_constitutional_loophole",
+      "passageSource": "Belebele · https://en.wikinews.org/wiki/Hard_drugs_temporarily_legal_in_Ireland_due_to_constitutional_loophole",
       "options": [
         {
           "id": "o0",
@@ -3824,7 +3824,7 @@
       "type": "multiple-choice",
       "prompt": "文中の内容によると、 ロランド・メンドーサのよって人質にとられなかったのは誰でしょう?",
       "passage": "フィリピンの首都マニラでフィリピン人の元警官がバスをハイジャックして香港の観光客を人質にしています。 ロランド・メンドーサはM16ライフルで観光客に発砲しました。 何人もの人質が救出されましたが、これまでに少なくとも6人の死亡が確認されています。 子供と高齢者を含めた人質6名が早期に解放され、フィリピン人の写真家たちも同じく解放されました。 写真家たちはご不浄に行きたがった高齢の女性の身代わりとなった。メンドーサ容疑者は銃殺された。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikinews.org/wiki/Hong_Kong_tourists_held_hostage_in_the_Philippines,_nine_killed",
+      "passageSource": "Belebele · https://en.wikinews.org/wiki/Hong_Kong_tourists_held_hostage_in_the_Philippines,_nine_killed",
       "options": [
         {
           "id": "o0",
@@ -3852,7 +3852,7 @@
       "type": "multiple-choice",
       "prompt": "文中の内容に基づくと、早期の解放が確認されなかった人質は誰でしょう?",
       "passage": "フィリピンの首都マニラでフィリピン人の元警官がバスをハイジャックして香港の観光客を人質にしています。 ロランド・メンドーサはM16ライフルで観光客に発砲しました。 何人もの人質が救出されましたが、これまでに少なくとも6人の死亡が確認されています。 子供と高齢者を含めた人質6名が早期に解放され、フィリピン人の写真家たちも同じく解放されました。 写真家たちはご不浄に行きたがった高齢の女性の身代わりとなった。メンドーサ容疑者は銃殺された。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikinews.org/wiki/Hong_Kong_tourists_held_hostage_in_the_Philippines,_nine_killed",
+      "passageSource": "Belebele · https://en.wikinews.org/wiki/Hong_Kong_tourists_held_hostage_in_the_Philippines,_nine_killed",
       "options": [
         {
           "id": "o0",
@@ -3880,7 +3880,7 @@
       "type": "multiple-choice",
       "prompt": "アルマン・ヴェルサーチの説明によると、群衆が天候に反応し始めるすぐ前に起きたことはなんでしょう?",
       "passage": "展示された5分後に風が吹き始め、1分後には時速70キロに達しました... その後、雨が降り、雨粒は肌に当たると針のように痛い大粒で、やがて空から雹が降ってきて、人々はパニックになり、悲鳴を上げながら、われ先にと走り回っていました。 「私は妹やその友人とはぐれてしまったのですが、途中で車椅子に乗った障害者が2人いて、飛び越えて車椅子を押している人たちがいました」とアルマン・ヴェルサーチさんは語っています。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikinews.org/wiki/Hungary%27s_St_Stephen%27s_Day_hit_by_storm:_3_left_dead",
+      "passageSource": "Belebele · https://en.wikinews.org/wiki/Hungary%27s_St_Stephen%27s_Day_hit_by_storm:_3_left_dead",
       "options": [
         {
           "id": "o0",
@@ -3908,7 +3908,7 @@
       "type": "multiple-choice",
       "prompt": "ヴェルサーチによると、強風が吹き始めたのはいつだったでしょう?",
       "passage": "展示された5分後に風が吹き始め、1分後には時速70キロに達しました... その後、雨が降り、雨粒は肌に当たると針のように痛い大粒で、やがて空から雹が降ってきて、人々はパニックになり、悲鳴を上げながら、われ先にと走り回っていました。 「私は妹やその友人とはぐれてしまったのですが、途中で車椅子に乗った障害者が2人いて、飛び越えて車椅子を押している人たちがいました」とアルマン・ヴェルサーチさんは語っています。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikinews.org/wiki/Hungary%27s_St_Stephen%27s_Day_hit_by_storm:_3_left_dead",
+      "passageSource": "Belebele · https://en.wikinews.org/wiki/Hungary%27s_St_Stephen%27s_Day_hit_by_storm:_3_left_dead",
       "options": [
         {
           "id": "o0",
@@ -3936,7 +3936,7 @@
       "type": "multiple-choice",
       "prompt": "フレッド以前に、いくつの暴風雨が西経35度以東で記録されているでしょうか?",
       "passage": "暴風雨は、カーボベルデ諸島の西約645マイル(1040 km)の位置まで来ているが、上陸する前に散逸する可能性が高いと気象予報士は述べています。 フレッドは現在、時速105マイル（165km/h）の風速で北西に向かって進んでいます。 フレッドは、衛星画像が導入されて以来、大西洋のはるか南と東で記録された最大の熱帯低気圧であり、西経35度以東で記録された3番目の大型ハリケーンである。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikinews.org/wiki/Hurricane_Fred_churns_the_Atlantic",
+      "passageSource": "Belebele · https://en.wikinews.org/wiki/Hurricane_Fred_churns_the_Atlantic",
       "options": [
         {
           "id": "o0",
@@ -3964,7 +3964,7 @@
       "type": "multiple-choice",
       "prompt": "カーボベルデ諸島付近にフレッドが位置していた時、進んだのはどの方向だったでしょう?",
       "passage": "暴風雨は、カーボベルデ諸島の西約645マイル(1040 km)の位置まで来ているが、上陸する前に散逸する可能性が高いと気象予報士は述べています。 フレッドは現在、時速105マイル（165km/h）の風速で北西に向かって進んでいます。 フレッドは、衛星画像が導入されて以来、大西洋のはるか南と東で記録された最大の熱帯低気圧であり、西経35度以東で記録された3番目の大型ハリケーンである。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikinews.org/wiki/Hurricane_Fred_churns_the_Atlantic",
+      "passageSource": "Belebele · https://en.wikinews.org/wiki/Hurricane_Fred_churns_the_Atlantic",
       "options": [
         {
           "id": "o0",
@@ -3992,7 +3992,7 @@
       "type": "multiple-choice",
       "prompt": "次のうち、従来型よりも速いのはどれでしょう?",
       "passage": "802.11n規格に準拠していれば、2.4Ghzまたは5.0Ghzのどちらの周波数でも通信可能です。 これにより、基地局がデュアルバンド無線を搭載していれば、802.11a、802.11b、802.11gとの下位互換性を確保することができます。 802.11nの速度は、600Mbit/秒という理論上の最大スループットを持つ従来型の速度よりも大幅に高速です。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikinews.org/wiki/IEEE_approves_802.11n_standard_after_six_years",
+      "passageSource": "Belebele · https://en.wikinews.org/wiki/IEEE_approves_802.11n_standard_after_six_years",
       "options": [
         {
           "id": "o0",
@@ -4020,7 +4020,7 @@
       "type": "multiple-choice",
       "prompt": "802.11nが 802.11bと下位互換性を持つために必要なのはなんでしょう?",
       "passage": "802.11n規格に準拠していれば、2.4Ghzまたは5.0Ghzのどちらの周波数でも通信可能です。 これにより、基地局がデュアルバンド無線を搭載していれば、802.11a、802.11b、802.11gとの下位互換性を確保することができます。 802.11nの速度は、600Mbit/秒という理論上の最大スループットを持つ従来型の速度よりも大幅に高速です。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikinews.org/wiki/IEEE_approves_802.11n_standard_after_six_years",
+      "passageSource": "Belebele · https://en.wikinews.org/wiki/IEEE_approves_802.11n_standard_after_six_years",
       "options": [
         {
           "id": "o0",
@@ -4048,7 +4048,7 @@
       "type": "multiple-choice",
       "prompt": "文中の内容によると、地震の動きについて混乱を招くかもしれないこととはなんでしょう?",
       "passage": "米国地質調査所の国際地震地図によると、アイスランドで前週に地震は記録されていません。 また、アイスランド気象庁は、過去48時間にヘクラ地域での地震活動はなかったと報告しています。 相変化につながる大きな地震活動は、3月10日に火山の山頂カルデラの北東側で発生していました。 山麓に火山活動とは無関係の暗雲が報告されています。 雲の影響で、本当に噴火が発生したのかどうかを判断しにくくなることがあります。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikinews.org/wiki/Icelandic_Hekla_volcano_shows_signs_of_activity",
+      "passageSource": "Belebele · https://en.wikinews.org/wiki/Icelandic_Hekla_volcano_shows_signs_of_activity",
       "options": [
         {
           "id": "o0",
@@ -4076,7 +4076,7 @@
       "type": "multiple-choice",
       "prompt": "文中の内容によると、相変化が起きたのはいつだったでしょう?",
       "passage": "米国地質調査所の国際地震地図によると、アイスランドで前週に地震は記録されていません。 また、アイスランド気象庁は、過去48時間にヘクラ地域での地震活動はなかったと報告しています。 相変化につながる大きな地震活動は、3月10日に火山の山頂カルデラの北東側で発生していました。 山麓に火山活動とは無関係の暗雲が報告されています。 雲の影響で、本当に噴火が発生したのかどうかを判断しにくくなることがあります。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikinews.org/wiki/Icelandic_Hekla_volcano_shows_signs_of_activity",
+      "passageSource": "Belebele · https://en.wikinews.org/wiki/Icelandic_Hekla_volcano_shows_signs_of_activity",
       "options": [
         {
           "id": "o0",
@@ -4104,7 +4104,7 @@
       "type": "multiple-choice",
       "prompt": "第二文の破綻は、どんな結果になる可能性があるでしょう?",
       "passage": "改正案は2011年にすでに両院を通過している。 変更内容は立法議会で決まり、まず下院で第二文が削除され、月曜日には上院で同様の形式で可決されました。 同性結婚を禁止する法案の第二文の破綻は、将来的に市民婚の扉を開く可能性があります。 このプロセスを経て、HJR-3は2015年または2016年に選出された立法府で再度審査され、手続きが継続されることになります。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikinews.org/wiki/Indiana_legislators_vote_for_state_constitutional_ban_on_same-sex_marriage",
+      "passageSource": "Belebele · https://en.wikinews.org/wiki/Indiana_legislators_vote_for_state_constitutional_ban_on_same-sex_marriage",
       "options": [
         {
           "id": "o0",
@@ -4132,7 +4132,7 @@
       "type": "multiple-choice",
       "prompt": "文中の内容によると、第二文が削除されたのはいつでしょう?",
       "passage": "改正案は2011年にすでに両院を通過している。 変更内容は立法議会で決まり、まず下院で第二文が削除され、月曜日には上院で同様の形式で可決されました。 同性結婚を禁止する法案の第二文の破綻は、将来的に市民婚の扉を開く可能性があります。 このプロセスを経て、HJR-3は2015年または2016年に選出された立法府で再度審査され、手続きが継続されることになります。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikinews.org/wiki/Indiana_legislators_vote_for_state_constitutional_ban_on_same-sex_marriage",
+      "passageSource": "Belebele · https://en.wikinews.org/wiki/Indiana_legislators_vote_for_state_constitutional_ban_on_same-sex_marriage",
       "options": [
         {
           "id": "o0",
@@ -4160,7 +4160,7 @@
       "type": "multiple-choice",
       "prompt": "アロンソがレースを終えたのはどこだったでしょう?",
       "passage": "ジャンカルロ・フィジケラがマシンをコントロールできなくなり、スタート直後にレースから脱落しました。 チームメイトのフェルナンド・アロンソはレースの大半をリードしていましたが、ピットストップ直後に右フロントホイールの収まりが悪かったためか、レースから脱落しました。 ミハエル・シューマッハは、レース中に受けた度重なる衝撃でサスペンションが故障したため、アロンソの直後にレースから脱落しました。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikinews.org/wiki/Jenson_Button_wins_2006_Hungarian_Grand_Prix",
+      "passageSource": "Belebele · https://en.wikinews.org/wiki/Jenson_Button_wins_2006_Hungarian_Grand_Prix",
       "options": [
         {
           "id": "o0",
@@ -4188,7 +4188,7 @@
       "type": "multiple-choice",
       "prompt": "シューマッハが早々にレースを終えてしまったのはどうしてでしょう?",
       "passage": "ジャンカルロ・フィジケラがマシンをコントロールできなくなり、スタート直後にレースから脱落しました。 チームメイトのフェルナンド・アロンソはレースの大半をリードしていましたが、ピットストップ直後に右フロントホイールの収まりが悪かったためか、レースから脱落しました。 ミハエル・シューマッハは、レース中に受けた度重なる衝撃でサスペンションが故障したため、アロンソの直後にレースから脱落しました。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikinews.org/wiki/Jenson_Button_wins_2006_Hungarian_Grand_Prix",
+      "passageSource": "Belebele · https://en.wikinews.org/wiki/Jenson_Button_wins_2006_Hungarian_Grand_Prix",
       "options": [
         {
           "id": "o0",
@@ -4216,7 +4216,7 @@
       "type": "multiple-choice",
       "prompt": "文中の内容によると、出馬中止の説明に使われなかった理由はどれでしょうか?",
       "passage": "ロディン氏はまた、アフガニスタンの人々が負担することになる決選投票にかかる費用と安全保障上のリスクを避けるために、当局が出馬を中止することにしたと述べました。 外交官は、アフガニスタンの憲法には、決戦投票を不要と判断するのに十分な曖昧さが見つかったと述べました。 これは、決選投票の中止は違憲であるとした当初の報告と矛盾しています。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikinews.org/wiki/Karzai_declared_winner_of_Afghan_elections,_runoff_polls_cancelled",
+      "passageSource": "Belebele · https://en.wikinews.org/wiki/Karzai_declared_winner_of_Afghan_elections,_runoff_polls_cancelled",
       "options": [
         {
           "id": "o0",
@@ -4244,7 +4244,7 @@
       "type": "multiple-choice",
       "prompt": "なぜ最終的に外交官たちは出馬を不要と判断したのでしょう?",
       "passage": "ロディン氏はまた、アフガニスタンの人々が負担することになる決選投票にかかる費用と安全保障上のリスクを避けるために、当局が出馬を中止することにしたと述べました。 外交官は、アフガニスタンの憲法には、決戦投票を不要と判断するのに十分な曖昧さが見つかったと述べました。 これは、決選投票の中止は違憲であるとした当初の報告と矛盾しています。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikinews.org/wiki/Karzai_declared_winner_of_Afghan_elections,_runoff_polls_cancelled",
+      "passageSource": "Belebele · https://en.wikinews.org/wiki/Karzai_declared_winner_of_Afghan_elections,_runoff_polls_cancelled",
       "options": [
         {
           "id": "o0",
@@ -4272,7 +4272,7 @@
       "type": "multiple-choice",
       "prompt": "地震後も稼働していたのは次のうちのどれでしょう?",
       "passage": "また、NHKは新潟県の柏崎刈羽原発が正常に稼働していると報道していました。 北陸電力は、地震による影響はなく、志賀原発の1号機と2号機を停止したと報告しました。 当該地域の約9400軒の家庭に水道がなく、約100軒の家庭には電気がないことが報告されています。 被災地では一部の道路の被害を受け、鉄道が寸断され、石川県の能登空港も閉鎖されたままです。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikinews.org/wiki/Large_earthquake_off_Japan,_tsunami_warning_issued",
+      "passageSource": "Belebele · https://en.wikinews.org/wiki/Large_earthquake_off_Japan,_tsunami_warning_issued",
       "options": [
         {
           "id": "o0",
@@ -4300,7 +4300,7 @@
       "type": "multiple-choice",
       "prompt": "文中の内容によると、地震による被害を被ったのは次のうちのどれでしょう?",
       "passage": "また、NHKは新潟県の柏崎刈羽原発が正常に稼働していると報道していました。 北陸電力は、地震による影響はなく、志賀原発の1号機と2号機を停止したと報告しました。 当該地域の約9400軒の家庭に水道がなく、約100軒の家庭には電気がないことが報告されています。 被災地では一部の道路の被害を受け、鉄道が寸断され、石川県の能登空港も閉鎖されたままです。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikinews.org/wiki/Large_earthquake_off_Japan,_tsunami_warning_issued",
+      "passageSource": "Belebele · https://en.wikinews.org/wiki/Large_earthquake_off_Japan,_tsunami_warning_issued",
       "options": [
         {
           "id": "o0",
@@ -4328,7 +4328,7 @@
       "type": "multiple-choice",
       "prompt": "文中の内容によると、この文書に含まれていない問題は次のうちのどれでしょう?",
       "passage": "漏れ聞いた情報によれば、当該文書は国境紛争に言及するもので、パレスチナの希望は1967年の中東戦争前の国境に基づくものです。 ほかにも両国にとって神聖な存在であるエルサレムの未来国家やヨルダン渓谷の問題が扱われていると報じられています。 イスラエルは、この協定が結ばれれば10年間にわたる峡谷での駐留継続を要求するとしていますが、その一方でパレスチナ自治政府が同意している駐在期間は5年間のみです。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikinews.org/wiki/Leak_suggests_John_Kerry_will_recognise_Israel_as_Jewish_state",
+      "passageSource": "Belebele · https://en.wikinews.org/wiki/Leak_suggests_John_Kerry_will_recognise_Israel_as_Jewish_state",
       "options": [
         {
           "id": "o0",
@@ -4356,7 +4356,7 @@
       "type": "multiple-choice",
       "prompt": "次のうち、パレスチナの要求ではないものはどれでしょう?",
       "passage": "漏れ聞いた情報によれば、当該文書は国境紛争に言及するもので、パレスチナの希望は1967年の中東戦争前の国境に基づくものです。 ほかにも両国にとって神聖な存在であるエルサレムの未来国家やヨルダン渓谷の問題が扱われていると報じられています。 イスラエルは、この協定が結ばれれば10年間にわたる峡谷での駐留継続を要求するとしていますが、その一方でパレスチナ自治政府が同意している駐在期間は5年間のみです。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikinews.org/wiki/Leak_suggests_John_Kerry_will_recognise_Israel_as_Jewish_state",
+      "passageSource": "Belebele · https://en.wikinews.org/wiki/Leak_suggests_John_Kerry_will_recognise_Israel_as_Jewish_state",
       "options": [
         {
           "id": "o0",
@@ -4384,7 +4384,7 @@
       "type": "multiple-choice",
       "prompt": "馬氏はどこの国で法律を勉強したでしょう?",
       "passage": "香港生まれの馬英九は、ニューヨーク大学とハーバード大学法学大学院を卒業し、米国の永住権「グリーンカード」を保有していたこともあります。 選挙中に謝氏は、危機に陥ったら馬氏は逃げ出すかもしれないとほのめかしていました。 謝長廷は、馬英九について実物よりも写真写りが良いと主張していました。 こうした非難にもかかわらず、馬氏は中国大陸との緊密な関係を標榜して楽勝でした。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikinews.org/wiki/Ma_Ying-jeou_wins_2008_Taiwan_presidential_election",
+      "passageSource": "Belebele · https://en.wikinews.org/wiki/Ma_Ying-jeou_wins_2008_Taiwan_presidential_election",
       "options": [
         {
           "id": "o0",
@@ -4412,7 +4412,7 @@
       "type": "multiple-choice",
       "prompt": "文中の内容によると、馬氏の当選を助けたのはどこの国の擁護だったでしょう?",
       "passage": "香港生まれの馬英九は、ニューヨーク大学とハーバード大学法学大学院を卒業し、米国の永住権「グリーンカード」を保有していたこともあります。 選挙中に謝氏は、危機に陥ったら馬氏は逃げ出すかもしれないとほのめかしていました。 謝長廷は、馬英九について実物よりも写真写りが良いと主張していました。 こうした非難にもかかわらず、馬氏は中国大陸との緊密な関係を標榜して楽勝でした。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikinews.org/wiki/Ma_Ying-jeou_wins_2008_Taiwan_presidential_election",
+      "passageSource": "Belebele · https://en.wikinews.org/wiki/Ma_Ying-jeou_wins_2008_Taiwan_presidential_election",
       "options": [
         {
           "id": "o0",
@@ -4440,7 +4440,7 @@
       "type": "multiple-choice",
       "prompt": "文中の内容によると、後に火星起源であると証明された隕石の落下は何回観測されているでしょう?",
       "passage": "これは、化学的に確認された火星物質が地球に落下してきたことを観測したのは、史上5回目と考えられています。 これまでに地球に落下したとされる約24,000個の隕石のうち火星起源であることが確認されているのは約34個にすぎません。 これらの岩石のうち15個は、昨年7月に落下した隕石群に 起因するものです。 地球上で非常に希少な岩石の一部は、オンス当たり11,000～22,500米ドルで取引されており、これは金の価格の約10倍です。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikinews.org/wiki/Meteorites_in_Morocco_found_to_be_from_Mars",
+      "passageSource": "Belebele · https://en.wikinews.org/wiki/Meteorites_in_Morocco_found_to_be_from_Mars",
       "options": [
         {
           "id": "o0",
@@ -4468,7 +4468,7 @@
       "type": "multiple-choice",
       "prompt": "文中で言及でされている通り、起源が火星にあるとわかっている石について、正しいことはなんでしょう?",
       "passage": "これは、化学的に確認された火星物質が地球に落下してきたことを観測したのは、史上5回目と考えられています。 これまでに地球に落下したとされる約24,000個の隕石のうち火星起源であることが確認されているのは約34個にすぎません。 これらの岩石のうち15個は、昨年7月に落下した隕石群に 起因するものです。 地球上で非常に希少な岩石の一部は、オンス当たり11,000～22,500米ドルで取引されており、これは金の価格の約10倍です。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikinews.org/wiki/Meteorites_in_Morocco_found_to_be_from_Mars",
+      "passageSource": "Belebele · https://en.wikinews.org/wiki/Meteorites_in_Morocco_found_to_be_from_Mars",
       "options": [
         {
           "id": "o0",
@@ -4496,7 +4496,7 @@
       "type": "multiple-choice",
       "prompt": "2015年以前にこの番組を取り上げた唯一の場所はどこでしょう?",
       "passage": "同局のウェブサイトでは、この番組を「これまでにない、とんでもなくオタクっぽい曲をかける昔ながらのラジオシアター！」と表現しています。 当初、番組はトークラジオに特化したインターネットラジオサイト「TogiNet Radio」のみで取り上げられ、これは長寿サイトです。 2015年末、TogiNetは子会社としてアストロネットラジオを設立しました。 この番組にはもともと、テキサス州東部の地元アマチュア声優陣が出演していました。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikinews.org/wiki/Modern_radio_drama_Paranoria,_TX_releases_100th_episode",
+      "passageSource": "Belebele · https://en.wikinews.org/wiki/Modern_radio_drama_Paranoria,_TX_releases_100th_episode",
       "options": [
         {
           "id": "o0",
@@ -4524,7 +4524,7 @@
       "type": "multiple-choice",
       "prompt": "同局はどんな種類の音楽をかけている番組だと説明しているでしょう?",
       "passage": "同局のウェブサイトでは、この番組を「これまでにない、とんでもなくオタクっぽい曲をかける昔ながらのラジオシアター！」と表現しています。 当初、番組はトークラジオに特化したインターネットラジオサイト「TogiNet Radio」のみで取り上げられ、これは長寿サイトです。 2015年末、TogiNetは子会社としてアストロネットラジオを設立しました。 この番組にはもともと、テキサス州東部の地元アマチュア声優陣が出演していました。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikinews.org/wiki/Modern_radio_drama_Paranoria,_TX_releases_100th_episode",
+      "passageSource": "Belebele · https://en.wikinews.org/wiki/Modern_radio_drama_Paranoria,_TX_releases_100th_episode",
       "options": [
         {
           "id": "o0",
@@ -4552,7 +4552,7 @@
       "type": "multiple-choice",
       "prompt": "デビッド・ヘッドリーが収集したもので最終的に過激派グループの攻撃を援助したものとはなんでしょう?",
       "passage": "ムンバイの攻撃者たちは、2008年11月26日にボートで到着し、手榴弾、自動小銃を携えて、混雑したチャトラパティ・シヴァージ・ターミナス駅や有名なタージ・マハル・ホテルを含む複数の標的を攻撃しました。 デビッド・ヘッドリーの偵察と情報収集は、パキスタンの過激派集団であるラシュカレ・タイバから送り込まれた10人の狙撃手による作戦の成功に役立ちました。 この攻撃は、インドとパキスタンの関係に大きな負担をかけました。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikinews.org/wiki/Mumbai_2008_attack_plotter_sentenced_to_35_years",
+      "passageSource": "Belebele · https://en.wikinews.org/wiki/Mumbai_2008_attack_plotter_sentenced_to_35_years",
       "options": [
         {
           "id": "o0",
@@ -4580,7 +4580,7 @@
       "type": "multiple-choice",
       "prompt": "過激派グループがムンバイへ移動するのに使ったのはどんな交通手段だったでしょう?",
       "passage": "ムンバイの攻撃者たちは、2008年11月26日にボートで到着し、手榴弾、自動小銃を携えて、混雑したチャトラパティ・シヴァージ・ターミナス駅や有名なタージ・マハル・ホテルを含む複数の標的を攻撃しました。 デビッド・ヘッドリーの偵察と情報収集は、パキスタンの過激派集団であるラシュカレ・タイバから送り込まれた10人の狙撃手による作戦の成功に役立ちました。 この攻撃は、インドとパキスタンの関係に大きな負担をかけました。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikinews.org/wiki/Mumbai_2008_attack_plotter_sentenced_to_35_years",
+      "passageSource": "Belebele · https://en.wikinews.org/wiki/Mumbai_2008_attack_plotter_sentenced_to_35_years",
       "options": [
         {
           "id": "o0",
@@ -4608,7 +4608,7 @@
       "type": "multiple-choice",
       "prompt": "訓練中の射撃手はどのプログラムに召集されたでしょう?",
       "passage": "補助的な有害生物駆除試験は、監視されその効果が評価されるので、この試験に参加する射撃手はレンジャーによる厳しい監視を受けました。 NPWSとオーストラリアのスポーツ射撃協会（NSW）の提携により、スポーツ射撃協会の狩猟プログラムで有資格ボランティアが募集されました。 NPWSと協力する公園保全・遺産局長代行ミック・オフリン氏によると、最初の射撃作戦に選ばれた4人の射撃手は、総合的な安全・訓練の指導を受けたそうです。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikinews.org/wiki/New_South_Wales_government_starts_trial_of_hunting_in_national_parks",
+      "passageSource": "Belebele · https://en.wikinews.org/wiki/New_South_Wales_government_starts_trial_of_hunting_in_national_parks",
       "options": [
         {
           "id": "o0",
@@ -4636,7 +4636,7 @@
       "type": "multiple-choice",
       "prompt": "次の記述のうちで有害生物駆除試験を正確に反映していないものはどれでしょう?",
       "passage": "補助的な有害生物駆除試験は、監視されその効果が評価されるので、この試験に参加する射撃手はレンジャーによる厳しい監視を受けました。 NPWSとオーストラリアのスポーツ射撃協会（NSW）の提携により、スポーツ射撃協会の狩猟プログラムで有資格ボランティアが募集されました。 NPWSと協力する公園保全・遺産局長代行ミック・オフリン氏によると、最初の射撃作戦に選ばれた4人の射撃手は、総合的な安全・訓練の指導を受けたそうです。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikinews.org/wiki/New_South_Wales_government_starts_trial_of_hunting_in_national_parks",
+      "passageSource": "Belebele · https://en.wikinews.org/wiki/New_South_Wales_government_starts_trial_of_hunting_in_national_parks",
       "options": [
         {
           "id": "o0",
@@ -4664,7 +4664,7 @@
       "type": "multiple-choice",
       "prompt": "ビデオゲーム中に動作を操作するために、プレイヤーは何をする必要があるでしょう?",
       "passage": "木曜日の東京ゲームショウの基調講演で、任天堂の岩田聡社長は、同社の新型ゲーム機「ニンテンドーレボリューション」コントローラーのデザインを発表しました。 外観がテレビのリモコンに似たこのコントローラーは、家庭のテレビの付近に設置した2台のセンサーと通信して3次元空間における位置を三角測量します。 プレイヤーは空中で端末を動かすことで、ビデオゲームでアクションや動きをコントロールできるようになります。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikinews.org/wiki/Nintendo_unveils_controller_for_Revolution_console",
+      "passageSource": "Belebele · https://en.wikinews.org/wiki/Nintendo_unveils_controller_for_Revolution_console",
       "options": [
         {
           "id": "o0",
@@ -4692,7 +4692,7 @@
       "type": "multiple-choice",
       "prompt": "何がテレビのリモコンに似ているでしょう?",
       "passage": "木曜日の東京ゲームショウの基調講演で、任天堂の岩田聡社長は、同社の新型ゲーム機「ニンテンドーレボリューション」コントローラーのデザインを発表しました。 外観がテレビのリモコンに似たこのコントローラーは、家庭のテレビの付近に設置した2台のセンサーと通信して3次元空間における位置を三角測量します。 プレイヤーは空中で端末を動かすことで、ビデオゲームでアクションや動きをコントロールできるようになります。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikinews.org/wiki/Nintendo_unveils_controller_for_Revolution_console",
+      "passageSource": "Belebele · https://en.wikinews.org/wiki/Nintendo_unveils_controller_for_Revolution_console",
       "options": [
         {
           "id": "o0",
@@ -4720,7 +4720,7 @@
       "type": "multiple-choice",
       "prompt": "ラジオ番組中にサラ・ダニウスは何を発表したでしょう?",
       "passage": "スウェーデンアカデミーのノーベル文学委員会の常任幹事であるサラ・ダニウス氏は月曜日、スウェーデンの公共放送ラジオの番組の中で、同委員会が2016年のノーベル文学賞受賞についてボブ・ディラン氏と直接連絡を取れなかったため、同氏と連絡を取ることを諦めたことを公に発表しました。 ダニアスは「今は何もしていない。彼の親しい協力者に電話をかけたり、メールを送ったりしたが、非常に友好的な返事が返ってきた。今のところは、確かにそれで十分だ。」と語った。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikinews.org/wiki/Nobel_Prize_in_Literature_Committee_abandons_efforts_to_contact_Bob_Dylan",
+      "passageSource": "Belebele · https://en.wikinews.org/wiki/Nobel_Prize_in_Literature_Committee_abandons_efforts_to_contact_Bob_Dylan",
       "options": [
         {
           "id": "o0",
@@ -4748,7 +4748,7 @@
       "type": "multiple-choice",
       "prompt": "連絡が取れなかったのは誰でしょう?",
       "passage": "スウェーデンアカデミーのノーベル文学委員会の常任幹事であるサラ・ダニウス氏は月曜日、スウェーデンの公共放送ラジオの番組の中で、同委員会が2016年のノーベル文学賞受賞についてボブ・ディラン氏と直接連絡を取れなかったため、同氏と連絡を取ることを諦めたことを公に発表しました。 ダニアスは「今は何もしていない。彼の親しい協力者に電話をかけたり、メールを送ったりしたが、非常に友好的な返事が返ってきた。今のところは、確かにそれで十分だ。」と語った。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikinews.org/wiki/Nobel_Prize_in_Literature_Committee_abandons_efforts_to_contact_Bob_Dylan",
+      "passageSource": "Belebele · https://en.wikinews.org/wiki/Nobel_Prize_in_Literature_Committee_abandons_efforts_to_contact_Bob_Dylan",
       "options": [
         {
           "id": "o0",
@@ -4776,7 +4776,7 @@
       "type": "multiple-choice",
       "prompt": "カレニア・ブレビスの特徴と思われないのは次のうちのどれでしょう?",
       "passage": "赤潮は、天然の単細胞海洋生物であるカレニア・ブレビスの濃度が通常よりも高くなることで発生します。 自然要因が交錯して理想的な条件を作り出し、この藻類が劇的に増殖する可能性があります。 この藻は、人間と魚類の両方の神経に有害な神経毒を産生します。 魚の主な死因の1つは水中に高濃度の毒素です。 人間は、風や波の力で空気中に取り込まれた水分を呼吸時に吸い込んだ場合にその影響を受けることがあります。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikinews.org/wiki/Red_tide_affects_South_Padre_Island,_Mexico",
+      "passageSource": "Belebele · https://en.wikinews.org/wiki/Red_tide_affects_South_Padre_Island,_Mexico",
       "options": [
         {
           "id": "o0",
@@ -4804,7 +4804,7 @@
       "type": "multiple-choice",
       "prompt": "カレニア・ブレビスができないことは次のうちのどれでしょう?",
       "passage": "赤潮は、天然の単細胞海洋生物であるカレニア・ブレビスの濃度が通常よりも高くなることで発生します。 自然要因が交錯して理想的な条件を作り出し、この藻類が劇的に増殖する可能性があります。 この藻は、人間と魚類の両方の神経に有害な神経毒を産生します。 魚の主な死因の1つは水中に高濃度の毒素です。 人間は、風や波の力で空気中に取り込まれた水分を呼吸時に吸い込んだ場合にその影響を受けることがあります。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikinews.org/wiki/Red_tide_affects_South_Padre_Island,_Mexico",
+      "passageSource": "Belebele · https://en.wikinews.org/wiki/Red_tide_affects_South_Padre_Island,_Mexico",
       "options": [
         {
           "id": "o0",
@@ -4832,7 +4832,7 @@
       "type": "multiple-choice",
       "prompt": "文中の内容によると、ハリケーンフェリシアによって起こらなかったことは次のうちのどれでしょう?",
       "passage": "フェリシアは、かつてサフィール・シンプソン・ハリケーン・スケールでカテゴリー4の嵐でしたが、徐々に弱まって熱帯低気圧になり、火曜日に散逸しました。 その名残からほとんどの島々ではにわか雨が発生しましたが、まだ被害や洪水は報告されていません。 降水量は、オアフ島の雨量計で6.34インチに達し、「有益」と記録されました。 降雨によっては雷雨や頻繁な雷を伴うものもありました。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikinews.org/wiki/Remnants_of_Hurricane_Felicia_affect_Hawaii",
+      "passageSource": "Belebele · https://en.wikinews.org/wiki/Remnants_of_Hurricane_Felicia_affect_Hawaii",
       "options": [
         {
           "id": "o0",
@@ -4860,7 +4860,7 @@
       "type": "multiple-choice",
       "prompt": "ハリケーンフェリシアについての記述で間違っているものはどれでしょう?",
       "passage": "フェリシアは、かつてサフィール・シンプソン・ハリケーン・スケールでカテゴリー4の嵐でしたが、徐々に弱まって熱帯低気圧になり、火曜日に散逸しました。 その名残からほとんどの島々ではにわか雨が発生しましたが、まだ被害や洪水は報告されていません。 降水量は、オアフ島の雨量計で6.34インチに達し、「有益」と記録されました。 降雨によっては雷雨や頻繁な雷を伴うものもありました。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikinews.org/wiki/Remnants_of_Hurricane_Felicia_affect_Hawaii",
+      "passageSource": "Belebele · https://en.wikinews.org/wiki/Remnants_of_Hurricane_Felicia_affect_Hawaii",
       "options": [
         {
           "id": "o0",
@@ -4888,7 +4888,7 @@
       "type": "multiple-choice",
       "prompt": "文中の内容によると、研究者が元々考えていたよりも時間がかからなかったことは次のうちのどれでしょう?",
       "passage": "木曜日に学術雑誌「サイエンス」誌に発表された研究で、エクアドルのガラパゴス諸島で新種の鳥類が生まれていたことが報告されました。 米国のプリンストン大学とスウェーデンのウプサラ大学の研究者らは、この新種がわずか2世代で進化したことを報告しましたが、この過程は、固有種のガラパゴスフィンチと移入種のオオサボテンフィンチが交配した繁殖であるため、もっと長い時間がかかると考えられていました。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikinews.org/wiki/Researchers_report_rapid_formation_of_new_bird_species_in_Gal%C3%A1pagos_islands",
+      "passageSource": "Belebele · https://en.wikinews.org/wiki/Researchers_report_rapid_formation_of_new_bird_species_in_Gal%C3%A1pagos_islands",
       "options": [
         {
           "id": "o0",
@@ -4916,7 +4916,7 @@
       "type": "multiple-choice",
       "prompt": "研究者が報告しなかったことは次のうちのどれでしょう?",
       "passage": "木曜日に学術雑誌「サイエンス」誌に発表された研究で、エクアドルのガラパゴス諸島で新種の鳥類が生まれていたことが報告されました。 米国のプリンストン大学とスウェーデンのウプサラ大学の研究者らは、この新種がわずか2世代で進化したことを報告しましたが、この過程は、固有種のガラパゴスフィンチと移入種のオオサボテンフィンチが交配した繁殖であるため、もっと長い時間がかかると考えられていました。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikinews.org/wiki/Researchers_report_rapid_formation_of_new_bird_species_in_Gal%C3%A1pagos_islands",
+      "passageSource": "Belebele · https://en.wikinews.org/wiki/Researchers_report_rapid_formation_of_new_bird_species_in_Gal%C3%A1pagos_islands",
       "options": [
         {
           "id": "o0",
@@ -4944,7 +4944,7 @@
       "type": "multiple-choice",
       "prompt": "ロシアが II-76sの使用を中止した理由はなんでしょう?",
       "passage": "この航空機はイルクーツクに向かっており、内務省所属の部隊が操縦していました。 調査のために調査機関が設立されました。 Il-76は1970年代からロシアとソビエトの両軍で主力機として活躍してきましたが、先月にはロシアではすでに重大事故が発生していました。 10月7日、離陸時にエンジンが機体から分離し、けが人は出ませんでした。事故後、ロシアはIL-76を一時的に着陸させました。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikinews.org/wiki/Russian_military_cargo_jet_crash_kills_eleven_in_Siberia",
+      "passageSource": "Belebele · https://en.wikinews.org/wiki/Russian_military_cargo_jet_crash_kills_eleven_in_Siberia",
       "options": [
         {
           "id": "o0",
@@ -4972,7 +4972,7 @@
       "type": "multiple-choice",
       "prompt": "II-76とはなんでしょう?",
       "passage": "この航空機はイルクーツクに向かっており、内務省所属の部隊が操縦していました。 調査のために調査機関が設立されました。 Il-76は1970年代からロシアとソビエトの両軍で主力機として活躍してきましたが、先月にはロシアではすでに重大事故が発生していました。 10月7日、離陸時にエンジンが機体から分離し、けが人は出ませんでした。事故後、ロシアはIL-76を一時的に着陸させました。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikinews.org/wiki/Russian_military_cargo_jet_crash_kills_eleven_in_Siberia",
+      "passageSource": "Belebele · https://en.wikinews.org/wiki/Russian_military_cargo_jet_crash_kills_eleven_in_Siberia",
       "options": [
         {
           "id": "o0",
@@ -5000,7 +5000,7 @@
       "type": "multiple-choice",
       "prompt": "シンプソンズの作家チームを雇ったのは誰でしょう?",
       "passage": "シンプソンズが始まる前、サイモンはさまざまな肩書きで複数の番組で働いていました。 1980年代には「タクシー」、「チアーズ」、「トレイシー・ウルマン・ショー」などの番組で活躍しました。 1989年に彼はブルックスとグレイニングとともにシンプソンズの制作に携わり、番組の初期ライターチームの採用を担当しました。 1993年に番組を降板したにもかかわらず、彼は制作責任者の肩書きを持ち続け、毎シーズン数千万ドルの印税を受け取り続けました。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikinews.org/wiki/Sam_Simon,_%27The_Simpsons%27_co-creator,_dies_aged_59",
+      "passageSource": "Belebele · https://en.wikinews.org/wiki/Sam_Simon,_%27The_Simpsons%27_co-creator,_dies_aged_59",
       "options": [
         {
           "id": "o0",
@@ -5028,7 +5028,7 @@
       "type": "multiple-choice",
       "prompt": "ZMappの記述で正しくないものは次のうちのどれでしょう?",
       "passage": "実験的なワクチンでエボラの死亡率が減るように見えますが、今までのところ、既存の感染症の治療に適しているとはっきり実証された薬剤はありません。 抗体カクテルの1つであるZMappは、当初はこの分野で有望視されていましたが、正式な研究では期待されたほどの死亡予防効果がないことが示されました。 PALM試験では、ZMappは対照薬として使用され、科学者たちはZMappを基準として、他の3つの治療法と比較しました。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikinews.org/wiki/Scientists_report_two_life-saving_treatments_for_Ebola",
+      "passageSource": "Belebele · https://en.wikinews.org/wiki/Scientists_report_two_life-saving_treatments_for_Ebola",
       "options": [
         {
           "id": "o0",
@@ -5056,7 +5056,7 @@
       "type": "multiple-choice",
       "prompt": "PALM試験を正確に説明している記述は次のうちのどれでしょう?",
       "passage": "実験的なワクチンでエボラの死亡率が減るように見えますが、今までのところ、既存の感染症の治療に適しているとはっきり実証された薬剤はありません。 抗体カクテルの1つであるZMappは、当初はこの分野で有望視されていましたが、正式な研究では期待されたほどの死亡予防効果がないことが示されました。 PALM試験では、ZMappは対照薬として使用され、科学者たちはZMappを基準として、他の3つの治療法と比較しました。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikinews.org/wiki/Scientists_report_two_life-saving_treatments_for_Ebola",
+      "passageSource": "Belebele · https://en.wikinews.org/wiki/Scientists_report_two_life-saving_treatments_for_Ebola",
       "options": [
         {
           "id": "o0",
@@ -5084,7 +5084,7 @@
       "type": "multiple-choice",
       "prompt": "研究者が考える、新しいチップが最も重要になる場所はどこでしょう?",
       "passage": "月曜日にスタンフォード大学医学部の科学者たちは、細胞を種類別に分類できる新しい診断ツールを発明したと発表しました。それは標準的なインクジェットプリンタで印刷して製造できる小型チップであり、原価は1枚あたり1円ほどす。 主任研究者は、これは低所得国における患者の癌、結核、HIV、マラリアの早期発見につながる可能性があると述べます。こうした国では、乳がんなどの病気の生存率が豊かな国の半分になることもあるとされます。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikinews.org/wiki/Scientists_say_new_medical_diagnostic_chip_can_sort_cells_anywhere_with_an_inkjet",
+      "passageSource": "Belebele · https://en.wikinews.org/wiki/Scientists_say_new_medical_diagnostic_chip_can_sort_cells_anywhere_with_an_inkjet",
       "options": [
         {
           "id": "o0",
@@ -5112,7 +5112,7 @@
       "type": "multiple-choice",
       "prompt": "この診断ツールを組み立てるために使われる方法はなんでしょう?",
       "passage": "月曜日にスタンフォード大学医学部の科学者たちは、細胞を種類別に分類できる新しい診断ツールを発明したと発表しました。それは標準的なインクジェットプリンタで印刷して製造できる小型チップであり、原価は1枚あたり1円ほどす。 主任研究者は、これは低所得国における患者の癌、結核、HIV、マラリアの早期発見につながる可能性があると述べます。こうした国では、乳がんなどの病気の生存率が豊かな国の半分になることもあるとされます。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikinews.org/wiki/Scientists_say_new_medical_diagnostic_chip_can_sort_cells_anywhere_with_an_inkjet",
+      "passageSource": "Belebele · https://en.wikinews.org/wiki/Scientists_say_new_medical_diagnostic_chip_can_sort_cells_anywhere_with_an_inkjet",
       "options": [
         {
           "id": "o0",
@@ -5140,7 +5140,7 @@
       "type": "multiple-choice",
       "prompt": "文中の内容によると、耳たぶ状の崖についての記述で正しくないものはどれでしょう?",
       "passage": "科学者たちは、非常にゆっくりと月が縮小しているために発生したと思われる耳たぶ状の崖と呼ばれる、月の表面に散在する地形を発見しました。 このような傾斜面は月のいたるところに見られ、風化は最小限に抑えられているようで、傾斜面を作り出した地質学的事象がかなり最近のものであることを示しています。 この理論は、月は地質学的活動がない死んだ天体であるという主張と矛盾する説です。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikinews.org/wiki/Scientists_say_the_moon_is_slowly_shrinking",
+      "passageSource": "Belebele · https://en.wikinews.org/wiki/Scientists_say_the_moon_is_slowly_shrinking",
       "options": [
         {
           "id": "o0",
@@ -5168,7 +5168,7 @@
       "type": "multiple-choice",
       "prompt": "文中の内容によると、月面で地質学的活動が起きていることを示す地形についての理論は、どれでしょう?",
       "passage": "科学者たちは、非常にゆっくりと月が縮小しているために発生したと思われる耳たぶ状の崖と呼ばれる、月の表面に散在する地形を発見しました。 このような傾斜面は月のいたるところに見られ、風化は最小限に抑えられているようで、傾斜面を作り出した地質学的事象がかなり最近のものであることを示しています。 この理論は、月は地質学的活動がない死んだ天体であるという主張と矛盾する説です。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikinews.org/wiki/Scientists_say_the_moon_is_slowly_shrinking",
+      "passageSource": "Belebele · https://en.wikinews.org/wiki/Scientists_say_the_moon_is_slowly_shrinking",
       "options": [
         {
           "id": "o0",
@@ -5196,7 +5196,7 @@
       "type": "multiple-choice",
       "prompt": "ロバーツが正当性を立証することを控えているのはどの信念でしょう?",
       "passage": "ロバーツ氏は、中絶の倫理を考えるうえで重要な「命の始まりはいつの時点か」という疑問について、「可能性の高いケースの具体的な内容についてコメントするのは倫理的ではない」と断固として拒否しました。 しかし、彼はロー対ウェイド裁判は「確定した土地法」であるという先の発言を繰り返し、一貫した最高裁判決の重要性を強調しました。 彼はロー判決が依拠する暗黙のプライバシー権を信じていることも裏付けました。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikinews.org/wiki/Senate_questions_Roberts_in_confirmation_hearings",
+      "passageSource": "Belebele · https://en.wikinews.org/wiki/Senate_questions_Roberts_in_confirmation_hearings",
       "options": [
         {
           "id": "o0",
@@ -5224,7 +5224,7 @@
       "type": "multiple-choice",
       "prompt": "非道徳的すぎて議論ができないとロバーツが感じているのはどの話題でしょう?",
       "passage": "ロバーツ氏は、中絶の倫理を考えるうえで重要な「命の始まりはいつの時点か」という疑問について、「可能性の高いケースの具体的な内容についてコメントするのは倫理的ではない」と断固として拒否しました。 しかし、彼はロー対ウェイド裁判は「確定した土地法」であるという先の発言を繰り返し、一貫した最高裁判決の重要性を強調しました。 彼はロー判決が依拠する暗黙のプライバシー権を信じていることも裏付けました。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikinews.org/wiki/Senate_questions_Roberts_in_confirmation_hearings",
+      "passageSource": "Belebele · https://en.wikinews.org/wiki/Senate_questions_Roberts_in_confirmation_hearings",
       "options": [
         {
           "id": "o0",
@@ -5252,7 +5252,7 @@
       "type": "multiple-choice",
       "prompt": "文中の内容によると、スイス人女性に起きなかったことはなんでしょう?",
       "passage": "マディヤ・プラデシュ州警察は、盗まれたノートパソコンと携帯電話を回収しました。 警察副監察官のD・K・アーヤ氏は、「スイス人女性を強姦した5人を逮捕し、彼女の携帯電話とノートパソコンを回収した」と述べました。 被告人たちの氏名は、ババ・カンジャール、ブータ・カンジャール、ランプロ・カンジャール、ガザ・カンジャール、ヴィシュヌ・カンジャールです。 警察のチャンドラ・シェカール・ソランキ総監によれば、被告人は顔を隠して法廷に出頭したそうです。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikinews.org/wiki/Swiss_woman_gang-raped_in_Madhya_Pradesh,_India",
+      "passageSource": "Belebele · https://en.wikinews.org/wiki/Swiss_woman_gang-raped_in_Madhya_Pradesh,_India",
       "options": [
         {
           "id": "o0",
@@ -5280,7 +5280,7 @@
       "type": "multiple-choice",
       "prompt": "文中にある通り、具体的には患者に接触したのは誰だったでしょう?",
       "passage": "ペリー知事は公衆衛生当局者に同行し、国民の安全を守るための措置が取られるようにすることをテキサス市民に確約しました。 ペリー氏は特に、「本件で提起された課題に対応するうえで、世界でこれ以上の設備を備えた場所はほとんどない」と述べました。 知事はまた、「本日、患者と接触した学齢児童がいることが判明しました」とも述べました。 彼はさらに続けて、「この事件は深刻ですが、システムは正常に機能しているのでご安心ください」と述べました。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikinews.org/wiki/Texas_governor_and_health_officials_address_public_regarding_Ebola_case",
+      "passageSource": "Belebele · https://en.wikinews.org/wiki/Texas_governor_and_health_officials_address_public_regarding_Ebola_case",
       "options": [
         {
           "id": "o0",
@@ -5308,7 +5308,7 @@
       "type": "multiple-choice",
       "prompt": "文中の内容によると、知事がテキサス市民に対応した際に確約していないのはなんでしょう?",
       "passage": "ペリー知事は公衆衛生当局者に同行し、国民の安全を守るための措置が取られるようにすることをテキサス市民に確約しました。 ペリー氏は特に、「本件で提起された課題に対応するうえで、世界でこれ以上の設備を備えた場所はほとんどない」と述べました。 知事はまた、「本日、患者と接触した学齢児童がいることが判明しました」とも述べました。 彼はさらに続けて、「この事件は深刻ですが、システムは正常に機能しているのでご安心ください」と述べました。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikinews.org/wiki/Texas_governor_and_health_officials_address_public_regarding_Ebola_case",
+      "passageSource": "Belebele · https://en.wikinews.org/wiki/Texas_governor_and_health_officials_address_public_regarding_Ebola_case",
       "options": [
         {
           "id": "o0",
@@ -5336,7 +5336,7 @@
       "type": "multiple-choice",
       "prompt": "CG4684便の墜落を正確に説明していない記述は次のうちのどれでしょう?",
       "passage": "ツインオッターは昨日、エアラインズPNG CG4684便としてココダに着陸を試みましたが、すでにそれを一度中止していました。 2回目の進入から着陸しようとしていた約10分前に姿を消しました。 墜落現場は本日判明しましたが、接近しにくい場所であるため、2人の警察官が密林をかき分けながら生存者を探し歩きました。 捜索は、不時着の原因となった悪天候のために中断されていました。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikinews.org/wiki/Tourist_plane_crash_in_Papua_New_Guinea_leaves_thirteen_dead",
+      "passageSource": "Belebele · https://en.wikinews.org/wiki/Tourist_plane_crash_in_Papua_New_Guinea_leaves_thirteen_dead",
       "options": [
         {
           "id": "o0",
@@ -5364,7 +5364,7 @@
       "type": "multiple-choice",
       "prompt": "CG4684便が着陸を中断した原因はなんでしょう?",
       "passage": "ツインオッターは昨日、エアラインズPNG CG4684便としてココダに着陸を試みましたが、すでにそれを一度中止していました。 2回目の進入から着陸しようとしていた約10分前に姿を消しました。 墜落現場は本日判明しましたが、接近しにくい場所であるため、2人の警察官が密林をかき分けながら生存者を探し歩きました。 捜索は、不時着の原因となった悪天候のために中断されていました。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikinews.org/wiki/Tourist_plane_crash_in_Papua_New_Guinea_leaves_thirteen_dead",
+      "passageSource": "Belebele · https://en.wikinews.org/wiki/Tourist_plane_crash_in_Papua_New_Guinea_leaves_thirteen_dead",
       "options": [
         {
           "id": "o0",
@@ -5392,7 +5392,7 @@
       "type": "multiple-choice",
       "prompt": "熱帯性暴風雨ダニエルの潜在的影響を測定することはなぜ難しいのでしょうか?",
       "passage": "2010年の大西洋ハリケーンシーズンの4番目に命名された熱帯性暴風雨ダニエルが大西洋東部に形成された。 暴風雨は、フロリダ州マイアミから約3,000マイルの位置にあり、最大持続風速は40マイル（時速64キロ）です。 国立ハリケーンセンターの科学者らによれば、ダニエルはこのまま発達して水曜日までにハリケーンになると予測されます。 暴風雨は陸地から遠く離れているので、米国やカリブ海への潜在的な影響を評価しにくい状態が続いています。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikinews.org/wiki/Tropical_Storm_Danielle_forms_in_Atlantic_Ocean",
+      "passageSource": "Belebele · https://en.wikinews.org/wiki/Tropical_Storm_Danielle_forms_in_Atlantic_Ocean",
       "options": [
         {
           "id": "o0",
@@ -5420,7 +5420,7 @@
       "type": "multiple-choice",
       "prompt": "文中の内容によると、熱帯性暴風雨ダニエルについての記述で正しくないものは次のうちのどれでしょう?",
       "passage": "2010年の大西洋ハリケーンシーズンの4番目に命名された熱帯性暴風雨ダニエルが大西洋東部に形成された。 暴風雨は、フロリダ州マイアミから約3,000マイルの位置にあり、最大持続風速は40マイル（時速64キロ）です。 国立ハリケーンセンターの科学者らによれば、ダニエルはこのまま発達して水曜日までにハリケーンになると予測されます。 暴風雨は陸地から遠く離れているので、米国やカリブ海への潜在的な影響を評価しにくい状態が続いています。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikinews.org/wiki/Tropical_Storm_Danielle_forms_in_Atlantic_Ocean",
+      "passageSource": "Belebele · https://en.wikinews.org/wiki/Tropical_Storm_Danielle_forms_in_Atlantic_Ocean",
       "options": [
         {
           "id": "o0",
@@ -5448,7 +5448,7 @@
       "type": "multiple-choice",
       "prompt": "文中の内容によると、世界的な流行を引き起こす前に、この病気によって何が起こると示唆されているでしょう?",
       "passage": "リー博士は、トルコの子供たちがA型（H5N1）鳥インフルエンザウイルスに感染したという報告にも懸念を示しました。 一部の研究は、世界的な流行になる前に、この病気による致死性を低下させなければならないと示唆している、と彼は指摘した。 インフルエンザの症状が軽度のままだと、患者がふだんどおりに生活を送ってしまい、より多くの人に感染が広がるという懸念があります。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikinews.org/wiki/Two-day_bird_flu_conference_draws_$1.9_billion_in_pledges",
+      "passageSource": "Belebele · https://en.wikinews.org/wiki/Two-day_bird_flu_conference_draws_$1.9_billion_in_pledges",
       "options": [
         {
           "id": "o0",
@@ -5476,7 +5476,7 @@
       "type": "multiple-choice",
       "prompt": "米軍に関しての声明を発表したのは誰でしょう?",
       "passage": "日曜深夜、ドナルド・トランプ米大統領は報道官経由で配信された声明において、米軍がシリアから撤退することを発表しました。 本件は、トランプ大統領がトルコのレセップ・タイップ・エルドアン大統領と電話会談した後で発表されました。 トルコはまた、捉えられたISIS戦闘員の警備を引き継ぐことになり、声明によれば、欧州諸国は戦闘員の本国送還を拒否している。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikinews.org/wiki/US_President_Trump_announces_troop_withdrawal_from_Syria",
+      "passageSource": "Belebele · https://en.wikinews.org/wiki/US_President_Trump_announces_troop_withdrawal_from_Syria",
       "options": [
         {
           "id": "o0",
@@ -5504,7 +5504,7 @@
       "type": "multiple-choice",
       "prompt": "この声明によると、捕虜戦闘員の護衛を引き受けた国はどこでしょう?",
       "passage": "日曜深夜、ドナルド・トランプ米大統領は報道官経由で配信された声明において、米軍がシリアから撤退することを発表しました。 本件は、トランプ大統領がトルコのレセップ・タイップ・エルドアン大統領と電話会談した後で発表されました。 トルコはまた、捉えられたISIS戦闘員の警備を引き継ぐことになり、声明によれば、欧州諸国は戦闘員の本国送還を拒否している。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikinews.org/wiki/US_President_Trump_announces_troop_withdrawal_from_Syria",
+      "passageSource": "Belebele · https://en.wikinews.org/wiki/US_President_Trump_announces_troop_withdrawal_from_Syria",
       "options": [
         {
           "id": "o0",
@@ -5532,7 +5532,7 @@
       "type": "multiple-choice",
       "prompt": "洪水の結果として当局が期待していることはなんでしょう?",
       "passage": "1963年にダムが建設されてからは、川全体に土砂を拡散する季節性洪水が止まりました。 この土砂は、野生生物の生息地となる砂州や海岸の形成に必要なものでした。 その結果として、在来の2魚種がすでに絶滅し、さらに他の2魚種（ハンプバックチャブなど）も絶滅の危機に瀕しています。 洪水後の水位の上昇は数フィートにすぎませんが、当局では下流の浸食された砂州を回復させるのに十分な水位になることを期待しています。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikinews.org/wiki/US_officials_flood_Grand_Canyon_to_restore_ecosystem",
+      "passageSource": "Belebele · https://en.wikinews.org/wiki/US_officials_flood_Grand_Canyon_to_restore_ecosystem",
       "options": [
         {
           "id": "o0",
@@ -5560,7 +5560,7 @@
       "type": "multiple-choice",
       "prompt": "このダムの建設が恒久的に影響しているのは次のうちのどれでしょう?",
       "passage": "1963年にダムが建設されてからは、川全体に土砂を拡散する季節性洪水が止まりました。 この土砂は、野生生物の生息地となる砂州や海岸の形成に必要なものでした。 その結果として、在来の2魚種がすでに絶滅し、さらに他の2魚種（ハンプバックチャブなど）も絶滅の危機に瀕しています。 洪水後の水位の上昇は数フィートにすぎませんが、当局では下流の浸食された砂州を回復させるのに十分な水位になることを期待しています。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikinews.org/wiki/US_officials_flood_Grand_Canyon_to_restore_ecosystem",
+      "passageSource": "Belebele · https://en.wikinews.org/wiki/US_officials_flood_Grand_Canyon_to_restore_ecosystem",
       "options": [
         {
           "id": "o0",
@@ -5588,7 +5588,7 @@
       "type": "multiple-choice",
       "prompt": "インドが失ったウィケットはいくつでしょう?",
       "passage": "ロビン・ウタッパは、11本のフォーと2本のシックスを打って、わずか41球でイニング最高得点となる70ランを記録した。 中軸のバッツマン、サチン・テンドルカール、ラホール・ドラヴィッドが連携してうまく試合を運び、100ランを達成しました。 しかし、キャプテンのウィケットを失った後、インドは7つのウィケットを失い、36ランしかできませんでした。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikinews.org/wiki/West_Indies_wins_the_third_match_of_the_cricket_series_against_India",
+      "passageSource": "Belebele · https://en.wikinews.org/wiki/West_Indies_wins_the_third_match_of_the_cricket_series_against_India",
       "options": [
         {
           "id": "o0",
@@ -5616,7 +5616,7 @@
       "type": "multiple-choice",
       "prompt": "文中の内容によると、このイニングの最高得点は何点でしょう?",
       "passage": "ロビン・ウタッパは、11本のフォーと2本のシックスを打って、わずか41球でイニング最高得点となる70ランを記録した。 中軸のバッツマン、サチン・テンドルカール、ラホール・ドラヴィッドが連携してうまく試合を運び、100ランを達成しました。 しかし、キャプテンのウィケットを失った後、インドは7つのウィケットを失い、36ランしかできませんでした。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikinews.org/wiki/West_Indies_wins_the_third_match_of_the_cricket_series_against_India",
+      "passageSource": "Belebele · https://en.wikinews.org/wiki/West_Indies_wins_the_third_match_of_the_cricket_series_against_India",
       "options": [
         {
           "id": "o0",
@@ -5644,7 +5644,7 @@
       "type": "multiple-choice",
       "prompt": "ピーター・レンツはいつ亡くなったでしょう?",
       "passage": "13歳のオートバイレーサー、ピーター・レンツがインディアナポリス・モータースピードウェイで事故に巻き込まれて死亡しました。 レンツはウォームアップ中にバイクから転落し、仲間のザビエル・ザヤットに追突された。 彼はすぐに現場の医療スタッフの手当てを受け、地元の病院に搬送されましたが、その後死亡しました。 ザヤットさんはこの事故で無傷でした。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikinews.org/wiki/Young_motorcycle_racer_Peter_Lenz_dies_in_race_crash_aged_13",
+      "passageSource": "Belebele · https://en.wikinews.org/wiki/Young_motorcycle_racer_Peter_Lenz_dies_in_race_crash_aged_13",
       "options": [
         {
           "id": "o0",
@@ -5672,7 +5672,7 @@
       "type": "multiple-choice",
       "prompt": "ザビエル・ザヤットとは誰でしょう?",
       "passage": "13歳のオートバイレーサー、ピーター・レンツがインディアナポリス・モータースピードウェイで事故に巻き込まれて死亡しました。 レンツはウォームアップ中にバイクから転落し、仲間のザビエル・ザヤットに追突された。 彼はすぐに現場の医療スタッフの手当てを受け、地元の病院に搬送されましたが、その後死亡しました。 ザヤットさんはこの事故で無傷でした。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikinews.org/wiki/Young_motorcycle_racer_Peter_Lenz_dies_in_race_crash_aged_13",
+      "passageSource": "Belebele · https://en.wikinews.org/wiki/Young_motorcycle_racer_Peter_Lenz_dies_in_race_crash_aged_13",
       "options": [
         {
           "id": "o0",
@@ -5700,7 +5700,7 @@
       "type": "multiple-choice",
       "prompt": "飛行機の内部構造を理解することで、不安を抱えた搭乗者がメリットを得られるかもしれない状況とは、次のうちのどれでしょう?",
       "passage": "飛行機の旅は、あらゆる年齢層や経歴の人々にとって恐ろしい経験になる可能性があり、特に飛行機に乗ったことがなかったり、トラウマになるような出来事を経験したことのある人の場合にはその傾向があります。 それは恥ずべきことではなく、非常に多くの人が持っている個人的な恐怖心や嫌悪感と何ら変わりません。 飛行機の仕組みや飛行中の挙動を理解することで、未知のものや自分がコントロールできないことへの恐怖心を克服できることがあります。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikivoyage.org/wiki/Advice_for_nervous_flyers",
+      "passageSource": "Belebele · https://en.wikivoyage.org/wiki/Advice_for_nervous_flyers",
       "options": [
         {
           "id": "o0",
@@ -5728,7 +5728,7 @@
       "type": "multiple-choice",
       "prompt": "文中の内容によると、過剰なアルコール摂取によって失われる可能性のある知覚は次のうちのどれでしょう?",
       "passage": "お酒はほどほどに飲むようにしましょう。アルコールの影響は人それぞれであり、自分の限界を知ることは非常に重要です。 過度の飲酒を続けた場合に考えられる健康被害としては、肝臓障害、失明や死亡といったものがあります。違法に製造されたアルコールの摂取は、潜在的に高い危険性を伴います。 違法な蒸留酒には、少量でも失明や死亡の原因となるメタノールをはじめ、さまざまな危険な不純物が含まれています。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikivoyage.org/wiki/Alcoholic_beverages",
+      "passageSource": "Belebele · https://en.wikivoyage.org/wiki/Alcoholic_beverages",
       "options": [
         {
           "id": "o0",
@@ -5756,7 +5756,7 @@
       "type": "multiple-choice",
       "prompt": "文中にある通り、アルコールの有害な影響を減らす可能性のあるものはなんでしょう?",
       "passage": "お酒はほどほどに飲むようにしましょう。アルコールの影響は人それぞれであり、自分の限界を知ることは非常に重要です。 過度の飲酒を続けた場合に考えられる健康被害としては、肝臓障害、失明や死亡といったものがあります。違法に製造されたアルコールの摂取は、潜在的に高い危険性を伴います。 違法な蒸留酒には、少量でも失明や死亡の原因となるメタノールをはじめ、さまざまな危険な不純物が含まれています。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikivoyage.org/wiki/Alcoholic_beverages",
+      "passageSource": "Belebele · https://en.wikivoyage.org/wiki/Alcoholic_beverages",
       "options": [
         {
           "id": "o0",
@@ -5784,7 +5784,7 @@
       "type": "multiple-choice",
       "prompt": "文中の内容によると、プノンクロム訪問で価値があるのは次のうちのどれでしょう?",
       "passage": "シェムリアップの南西12 kmに位置するプノンクロム。丘の頂上にあるこの寺院は、9世紀末にヤソヴァルマン王の時代に建てられました。 寺院の陰鬱な雰囲気とトンレサップ湖の眺めは、丘に登るだけの価値があります。 湖への船旅と組み合わせてここを訪れるのも便利です。 寺院に入るにはアンコールパスと呼ばれる入場券が必要なので、トンレサップを訪れる際には忘れずにパスポートを携帯しましょう。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikivoyage.org/wiki/Angkor_Archaeological_Park",
+      "passageSource": "Belebele · https://en.wikivoyage.org/wiki/Angkor_Archaeological_Park",
       "options": [
         {
           "id": "o0",
@@ -5812,7 +5812,7 @@
       "type": "multiple-choice",
       "prompt": "文中の内容によると、プノンクロムに入場するために観光客に求められるものはなんでしょう?",
       "passage": "シェムリアップの南西12 kmに位置するプノンクロム。丘の頂上にあるこの寺院は、9世紀末にヤソヴァルマン王の時代に建てられました。 寺院の陰鬱な雰囲気とトンレサップ湖の眺めは、丘に登るだけの価値があります。 湖への船旅と組み合わせてここを訪れるのも便利です。 寺院に入るにはアンコールパスと呼ばれる入場券が必要なので、トンレサップを訪れる際には忘れずにパスポートを携帯しましょう。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikivoyage.org/wiki/Angkor_Archaeological_Park",
+      "passageSource": "Belebele · https://en.wikivoyage.org/wiki/Angkor_Archaeological_Park",
       "options": [
         {
           "id": "o0",
@@ -5840,7 +5840,7 @@
       "type": "multiple-choice",
       "prompt": "近世以前の天文台が置かれる可能性が低い場所はどこでしょう?",
       "passage": "近世以前の天文台は、今日ではほとんどが時代遅れで廃止され、博物館や教育の場として残っています。 最も被害が大きかった頃の公害は現在とは問題の種類が異なり、都市部や学校の校庭で発生していたため、現代の問題よりも身近なものでした。 最新式の研究用望遠鏡の多くは、良好な大気条件下で観測できるように遠隔地の巨大な施設に設置されています。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikivoyage.org/wiki/Astronomy",
+      "passageSource": "Belebele · https://en.wikivoyage.org/wiki/Astronomy",
       "options": [
         {
           "id": "o0",
@@ -5868,7 +5868,7 @@
       "type": "multiple-choice",
       "prompt": "現代の研究用望遠鏡が置かれる可能性が高い場所はどこでしょう?",
       "passage": "近世以前の天文台は、今日ではほとんどが時代遅れで廃止され、博物館や教育の場として残っています。 最も被害が大きかった頃の公害は現在とは問題の種類が異なり、都市部や学校の校庭で発生していたため、現代の問題よりも身近なものでした。 最新式の研究用望遠鏡の多くは、良好な大気条件下で観測できるように遠隔地の巨大な施設に設置されています。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikivoyage.org/wiki/Astronomy",
+      "passageSource": "Belebele · https://en.wikivoyage.org/wiki/Astronomy",
       "options": [
         {
           "id": "o0",
@@ -5896,7 +5896,7 @@
       "type": "multiple-choice",
       "prompt": "白海・バルト海運河は何を結びつけているでしょう?",
       "passage": "バイキングは黒海とカスピ海に行くためにロシアの水路を利用しました。これらのルートの一部は今でも使用できます。通りたいルートに特別な許可が必要かどうかを確認してください。 白海・バルト海運河は、オネガ湖、ラドガ湖、サンクトペテルブルクを経由して北極海とバルト海を結び、河川や湖が運河の一部になっています。 オネガ湖はヴォルガにもつながっているので、カスピ海からロシアを経由して来ることも可能です。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikivoyage.org/wiki/Boating_on_the_Baltic_Sea",
+      "passageSource": "Belebele · https://en.wikivoyage.org/wiki/Boating_on_the_Baltic_Sea",
       "options": [
         {
           "id": "o0",
@@ -5924,7 +5924,7 @@
       "type": "multiple-choice",
       "prompt": "文中の内容によると、特に伝統的な教会ではイースターはどのように祝われるでしょうか?",
       "passage": "イースターの夜には、日の出を見るために、見通しの良い場所で夜を過ごすという伝統的な習慣があります。 この伝統については、もちろんキリスト教における神学的な説明がありますが、西暦紀元前に見られた春と豊穣の儀式にちなむ可能性があります。 より伝統的な教会では、イースターの週末の土曜日の夜に復活徹夜祭を催すことが多く、真夜中になると同時に信徒たちがキリストの復活を祝うための祝賀会を始める習慣があります。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikivoyage.org/wiki/Easter_travel",
+      "passageSource": "Belebele · https://en.wikivoyage.org/wiki/Easter_travel",
       "options": [
         {
           "id": "o0",
@@ -5952,7 +5952,7 @@
       "type": "multiple-choice",
       "prompt": "自国よりも外国で費用がかかる可能性があるものは次のうちのどれでしょう?",
       "passage": "外国では、特に人件費が安い低所得国では、眼鏡が安価で手に入ることがあります。 特に保険が適用される場合は、自宅で眼科検査を受け、出先で提出できるように処方箋を持参することを検討してください。 このような地域で販売されている高級ブランドのフレームには、2つの問題が伴うことがあります。1つは偽物、もう1つは本物ですが自国で同じ輸入品を買うよりも高額なものです。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikivoyage.org/wiki/Eye_care",
+      "passageSource": "Belebele · https://en.wikivoyage.org/wiki/Eye_care",
       "options": [
         {
           "id": "o0",
@@ -5980,7 +5980,7 @@
       "type": "multiple-choice",
       "prompt": "外国で高級フレームを購入することの潜在的リスクはなんでしょう?",
       "passage": "外国では、特に人件費が安い低所得国では、眼鏡が安価で手に入ることがあります。 特に保険が適用される場合は、自宅で眼科検査を受け、出先で提出できるように処方箋を持参することを検討してください。 このような地域で販売されている高級ブランドのフレームには、2つの問題が伴うことがあります。1つは偽物、もう1つは本物ですが自国で同じ輸入品を買うよりも高額なものです。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikivoyage.org/wiki/Eye_care",
+      "passageSource": "Belebele · https://en.wikivoyage.org/wiki/Eye_care",
       "options": [
         {
           "id": "o0",
@@ -6008,7 +6008,7 @@
       "type": "multiple-choice",
       "prompt": "寺院の祭のお祝いと関係していないのはどの行事でしょう?",
       "passage": "ほとんどの寺院では、11月末から5月中旬にかけて毎年例祭があり、年間行事予定は寺院ごとに異なります。 寺院の例祭のほとんどは、寺院ごとの記念日、主宰神の誕生日、その他の祝い事、または寺院に関連する他の主要行事の一環として催されます。 ケララ州の寺院で開かれるお祭りは、着飾った象たちの行進や寺院のオーケストラによる演奏など、とても見応えがあります。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikivoyage.org/wiki/Festivals_of_Kerala",
+      "passageSource": "Belebele · https://en.wikivoyage.org/wiki/Festivals_of_Kerala",
       "options": [
         {
           "id": "o0",
@@ -6036,7 +6036,7 @@
       "type": "multiple-choice",
       "prompt": "着飾った象たちを見られるのはどこでしょう?",
       "passage": "ほとんどの寺院では、11月末から5月中旬にかけて毎年例祭があり、年間行事予定は寺院ごとに異なります。 寺院の例祭のほとんどは、寺院ごとの記念日、主宰神の誕生日、その他の祝い事、または寺院に関連する他の主要行事の一環として催されます。 ケララ州の寺院で開かれるお祭りは、着飾った象たちの行進や寺院のオーケストラによる演奏など、とても見応えがあります。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikivoyage.org/wiki/Festivals_of_Kerala",
+      "passageSource": "Belebele · https://en.wikivoyage.org/wiki/Festivals_of_Kerala",
       "options": [
         {
           "id": "o0",
@@ -6064,7 +6064,7 @@
       "type": "multiple-choice",
       "prompt": "文中の内容によると、スーパーマーケットが提供し始めているもので、品揃えがますます多様になっているものはなんでしょう?",
       "passage": "スーパーで食品を買うのは、通常、食料を最も安く手に入れる方法です。しかし、調理の機会がなければ、選択肢は調理済み食品に限られてしまいます。 スーパーマーケットでは、調理済み食品の種類が増えてきています。店によっては、温められように電子レンジを用意するなどのサービスをしています。 国や店舗によっては、館内に1つ以上の飲食店（多くの場合、手ごろな価格のカジュアルなレストラン）が併設されています。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikivoyage.org/wiki/Food_and_drink",
+      "passageSource": "Belebele · https://en.wikivoyage.org/wiki/Food_and_drink",
       "options": [
         {
           "id": "o0",
@@ -6092,7 +6092,7 @@
       "type": "multiple-choice",
       "prompt": "一部のスーパーマーケットが提供しているもので、調理済み食品を購入する顧客を惹きつけているものはなんでしょう?",
       "passage": "スーパーで食品を買うのは、通常、食料を最も安く手に入れる方法です。しかし、調理の機会がなければ、選択肢は調理済み食品に限られてしまいます。 スーパーマーケットでは、調理済み食品の種類が増えてきています。店によっては、温められように電子レンジを用意するなどのサービスをしています。 国や店舗によっては、館内に1つ以上の飲食店（多くの場合、手ごろな価格のカジュアルなレストラン）が併設されています。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikivoyage.org/wiki/Food_and_drink",
+      "passageSource": "Belebele · https://en.wikivoyage.org/wiki/Food_and_drink",
       "options": [
         {
           "id": "o0",
@@ -6120,7 +6120,7 @@
       "type": "multiple-choice",
       "prompt": "フランス語を話すベルギー人とスイス人が理解できないであろうことは、次のうちのどれでしょう?",
       "passage": "ベルギーやスイスで話されているフランス語は、フランスで話されているフランス語とは少し違いますが、互いに理解し合える程度に似ています。 特に、フランス語圏のベルギーやスイスの番号体系は、フランスで話されているフランス語とは異なる若干の特殊性を示し、一部の単語の発音も微妙に異なっています。 とはいえ、フランス語を話すベルギー人やスイス人は全員が学校で標準フランス語を習ったはずなので、標準フランス語の番号方式を使ったとしても理解してくれるはずです。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikivoyage.org/wiki/French_phrasebook",
+      "passageSource": "Belebele · https://en.wikivoyage.org/wiki/French_phrasebook",
       "options": [
         {
           "id": "o0",
@@ -6148,7 +6148,7 @@
       "type": "multiple-choice",
       "prompt": "次のうち、フランスでベルギーやスイスと違うことはなんでしょう?",
       "passage": "ベルギーやスイスで話されているフランス語は、フランスで話されているフランス語とは少し違いますが、互いに理解し合える程度に似ています。 特に、フランス語圏のベルギーやスイスの番号体系は、フランスで話されているフランス語とは異なる若干の特殊性を示し、一部の単語の発音も微妙に異なっています。 とはいえ、フランス語を話すベルギー人やスイス人は全員が学校で標準フランス語を習ったはずなので、標準フランス語の番号方式を使ったとしても理解してくれるはずです。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikivoyage.org/wiki/French_phrasebook",
+      "passageSource": "Belebele · https://en.wikivoyage.org/wiki/French_phrasebook",
       "options": [
         {
           "id": "o0",
@@ -6176,7 +6176,7 @@
       "type": "multiple-choice",
       "prompt": "GPSナビゲーションアプリよりもスタンドアロン型GPS端末を利用するのがより便利なのはどんな時でしょう?",
       "passage": "母国を離れている間に目的地への行き方を調べるには、スマートフォンでGPSナビゲーションアプリを活用するのが最も簡単で便利な方法です。 GPS用の新しい地図を購入したり、スタンドアロン型GPS端末を購入したり、レンタカー会社で借りたりするよりも安上がりです。 スマホや携帯電話のデータ接続ができなかったり、県外になってしまうと、性能が制限されたり、使えなくなってしまうことがあります。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikivoyage.org/wiki/GPS_navigation",
+      "passageSource": "Belebele · https://en.wikivoyage.org/wiki/GPS_navigation",
       "options": [
         {
           "id": "o0",
@@ -6204,7 +6204,7 @@
       "type": "multiple-choice",
       "prompt": "スタンドアローン端末ではなくGPSナビゲーションアプリを使う理由として、良くないことはなんでしょう?",
       "passage": "母国を離れている間に目的地への行き方を調べるには、スマートフォンでGPSナビゲーションアプリを活用するのが最も簡単で便利な方法です。 GPS用の新しい地図を購入したり、スタンドアロン型GPS端末を購入したり、レンタカー会社で借りたりするよりも安上がりです。 スマホや携帯電話のデータ接続ができなかったり、県外になってしまうと、性能が制限されたり、使えなくなってしまうことがあります。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikivoyage.org/wiki/GPS_navigation",
+      "passageSource": "Belebele · https://en.wikivoyage.org/wiki/GPS_navigation",
       "options": [
         {
           "id": "o0",
@@ -6232,7 +6232,7 @@
       "type": "multiple-choice",
       "prompt": "文中の内容によると、ゲストにギャンブルを続けさせるための戦術として、使われていないのは次のうちのどれでしょう?",
       "passage": "カジノでは通常、ゲストに時間とお金を最大限に費やしてもらえるように工夫をこらしています。通常、窓や時計はなく、出口も見つけにくい場合があります。 カジノでは通常、特別な飲食やエンターテイメントを用意しています。ゲストが気分良く施設内に留まるようにするためです。 会場によっては、アルコール飲料を提供しています。しかし、酔うと判断力が鈍るので、優れたギャンブラーは誰でもしらふでいることの大切さを知っています。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikivoyage.org/wiki/Gambling",
+      "passageSource": "Belebele · https://en.wikivoyage.org/wiki/Gambling",
       "options": [
         {
           "id": "o0",
@@ -6260,7 +6260,7 @@
       "type": "multiple-choice",
       "prompt": "文中の内容によると、賢いギャンブラーは何を避けるでしょうか?",
       "passage": "カジノでは通常、ゲストに時間とお金を最大限に費やしてもらえるように工夫をこらしています。通常、窓や時計はなく、出口も見つけにくい場合があります。 カジノでは通常、特別な飲食やエンターテイメントを用意しています。ゲストが気分良く施設内に留まるようにするためです。 会場によっては、アルコール飲料を提供しています。しかし、酔うと判断力が鈍るので、優れたギャンブラーは誰でもしらふでいることの大切さを知っています。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikivoyage.org/wiki/Gambling",
+      "passageSource": "Belebele · https://en.wikivoyage.org/wiki/Gambling",
       "options": [
         {
           "id": "o0",
@@ -6288,7 +6288,7 @@
       "type": "multiple-choice",
       "prompt": "文中の内容に基づくと、日帰りハイキングについて間違っていると考えられる記述は次のうちのどれでしょう?",
       "passage": "ハイキングとは、野外で自然環境を楽しむ徒歩旅行ですが、通常はハイキングコースを歩くことになります。 日帰りハイキングの距離は、1マイル未満の短い距離から1日で回れる程度の長距離までです。 歩きやすい道を日帰りでハイキングする場合、ほとんど準備は必要ありません。体調の良い人なら誰でも楽しむことができます。 小さい子供がいる家族連れは、より入念な準備が必要かもしれませんが、赤ちゃんや未就学児の子供がいても、屋外で1日を楽しむことは簡単にできます。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikivoyage.org/wiki/Hiking",
+      "passageSource": "Belebele · https://en.wikivoyage.org/wiki/Hiking",
       "options": [
         {
           "id": "o0",
@@ -6316,7 +6316,7 @@
       "type": "multiple-choice",
       "prompt": "文中の内容によると、日帰りハイキングの準備が最低限で良いのは、いつでしょう?",
       "passage": "ハイキングとは、野外で自然環境を楽しむ徒歩旅行ですが、通常はハイキングコースを歩くことになります。 日帰りハイキングの距離は、1マイル未満の短い距離から1日で回れる程度の長距離までです。 歩きやすい道を日帰りでハイキングする場合、ほとんど準備は必要ありません。体調の良い人なら誰でも楽しむことができます。 小さい子供がいる家族連れは、より入念な準備が必要かもしれませんが、赤ちゃんや未就学児の子供がいても、屋外で1日を楽しむことは簡単にできます。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikivoyage.org/wiki/Hiking",
+      "passageSource": "Belebele · https://en.wikivoyage.org/wiki/Hiking",
       "options": [
         {
           "id": "o0",
@@ -6344,7 +6344,7 @@
       "type": "multiple-choice",
       "prompt": "手伝いを探しているボートを見つけたいのであれば、何をすることを避けるべきでしょう?",
       "passage": "一度マリーナに行けば、すべてが明らかになるのでご安心ください。他のボートヒッチハイカーと出会い、情報を共有できるでしょう。 基本的には、手伝いを申し出たり、お知らせを掲示したり、波止場を歩き回ったり、ヨットを清掃している人に近づいたり、居酒屋で船員と触れ合ったりといったことをするでしょう。 できるだけ大勢に話しかけるようにしてください。やがて、顔見知りが増え、募集している船について手がかりをくれるでしょう。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikivoyage.org/wiki/Hitchhiking_boats",
+      "passageSource": "Belebele · https://en.wikivoyage.org/wiki/Hitchhiking_boats",
       "options": [
         {
           "id": "o0",
@@ -6372,7 +6372,7 @@
       "type": "multiple-choice",
       "prompt": "手伝いを必要とするボートを探している時にマリーナ周辺でするべきことはなんでしょう?",
       "passage": "一度マリーナに行けば、すべてが明らかになるのでご安心ください。他のボートヒッチハイカーと出会い、情報を共有できるでしょう。 基本的には、手伝いを申し出たり、お知らせを掲示したり、波止場を歩き回ったり、ヨットを清掃している人に近づいたり、居酒屋で船員と触れ合ったりといったことをするでしょう。 できるだけ大勢に話しかけるようにしてください。やがて、顔見知りが増え、募集している船について手がかりをくれるでしょう。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikivoyage.org/wiki/Hitchhiking_boats",
+      "passageSource": "Belebele · https://en.wikivoyage.org/wiki/Hitchhiking_boats",
       "options": [
         {
           "id": "o0",
@@ -6400,7 +6400,7 @@
       "type": "multiple-choice",
       "prompt": "ジャワ料理で圧倒的に使われているものは次のうちのどれでしょう?",
       "passage": "1万7千もの島々の料理から選べるインドネシア料理は、この国全域に見られる実にさまざまな地域料理の総称です。 しかし、それ以上の修飾語も付けないで使用すると、ジャワ島中央部から東部にかけての料理を指す言葉となります。 現在では列島全体に広く普及しているジャワ料理は、シンプルな味付けが特長で、主な調味料はピーナッツ、唐辛子、砂糖（特にジャワのココナッツシュガー）やさまざまな香辛料です。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikivoyage.org/wiki/Indonesian_cuisine",
+      "passageSource": "Belebele · https://en.wikivoyage.org/wiki/Indonesian_cuisine",
       "options": [
         {
           "id": "o0",
@@ -6428,7 +6428,7 @@
       "type": "multiple-choice",
       "prompt": "パーソナルVPNプロバイダーではなくウェブプロキシを選んだほうがユーザーにとって十分なのは、どのシナリオでしょう?",
       "passage": "パーソナルVPN（仮想私設網）プロバイダーは、政治的検閲と商業的IPジオフィルタリングの両方を回避するうえで優れた方法です。 これらのプロキシは、いくつもの点でウェブプロキシよりも優れています。Httpのみならず、すべてのインターネットトラフィックを再ルーティングしてくれるからです。 通常、これらはより高い帯域幅とより優れたサービス品質を提供します。そしてスパイを防止するために暗号化されます。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikivoyage.org/wiki/Internet_access",
+      "passageSource": "Belebele · https://en.wikivoyage.org/wiki/Internet_access",
       "options": [
         {
           "id": "o0",
@@ -6456,7 +6456,7 @@
       "type": "multiple-choice",
       "prompt": "文中の内容によると、VNPとウェブプロキシについての記述で正しくないものは次のうちのどれでしょう?",
       "passage": "パーソナルVPN（仮想私設網）プロバイダーは、政治的検閲と商業的IPジオフィルタリングの両方を回避するうえで優れた方法です。 これらのプロキシは、いくつもの点でウェブプロキシよりも優れています。Httpのみならず、すべてのインターネットトラフィックを再ルーティングしてくれるからです。 通常、これらはより高い帯域幅とより優れたサービス品質を提供します。そしてスパイを防止するために暗号化されます。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikivoyage.org/wiki/Internet_access",
+      "passageSource": "Belebele · https://en.wikivoyage.org/wiki/Internet_access",
       "options": [
         {
           "id": "o0",
@@ -6484,7 +6484,7 @@
       "type": "multiple-choice",
       "prompt": "身近なエリア以外で電話会社を利用できるようにするものはなんでしょう?",
       "passage": "通話はインターネットを経由してつながるので、居住地や旅行先の電話会社を利用する必要はありません。 居住地の自治体で番号を発行してもらう必要もありません。アラスカ州チキンの荒野で衛星からインターネットに接続して番号を選択すりれば、日当たりの良いアリゾナ州にいることになります。 多くの場合、PSTN通話を受けるためのグローバル番号を別途購入する必要があります。番号の入手場所は電話をかけてくる相手によって変わります。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikivoyage.org/wiki/Internet_telephony",
+      "passageSource": "Belebele · https://en.wikivoyage.org/wiki/Internet_telephony",
       "options": [
         {
           "id": "o0",
@@ -6512,7 +6512,7 @@
       "type": "multiple-choice",
       "prompt": "文中の内容によると、特定の電話を受信するためにどんなことをする必要があるでしょう?",
       "passage": "通話はインターネットを経由してつながるので、居住地や旅行先の電話会社を利用する必要はありません。 居住地の自治体で番号を発行してもらう必要もありません。アラスカ州チキンの荒野で衛星からインターネットに接続して番号を選択すりれば、日当たりの良いアリゾナ州にいることになります。 多くの場合、PSTN通話を受けるためのグローバル番号を別途購入する必要があります。番号の入手場所は電話をかけてくる相手によって変わります。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikivoyage.org/wiki/Internet_telephony",
+      "passageSource": "Belebele · https://en.wikivoyage.org/wiki/Internet_telephony",
       "options": [
         {
           "id": "o0",
@@ -6540,7 +6540,7 @@
       "type": "multiple-choice",
       "prompt": "文中の情報に基づくと、ハンギ料理についての記述で正しくないものはどれでしょう?",
       "passage": "ハンギ料理は、地面に掘った穴を熱して食材を調理するものです。 掘った穴に火から取り出した焼け石を入れて加熱するか、または地熱で地面が自然と熱くなっている場所に穴を掘ることもあります。 ハンギを使って伝統的な蒸し焼き料理を作ることもよくあります。 ロトルアには地熱ハンギを提供している場所がいくつもあり、クライストチャーチやウェリントンなどでは違ったハンギを試すことができます。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikivoyage.org/wiki/Maori_culture",
+      "passageSource": "Belebele · https://en.wikivoyage.org/wiki/Maori_culture",
       "options": [
         {
           "id": "o0",
@@ -6568,7 +6568,7 @@
       "type": "multiple-choice",
       "prompt": "ハンギの穴を熱する一般的な方法として挙げられていないものは次のうちのどれでしょう?",
       "passage": "ハンギ料理は、地面に掘った穴を熱して食材を調理するものです。 掘った穴に火から取り出した焼け石を入れて加熱するか、または地熱で地面が自然と熱くなっている場所に穴を掘ることもあります。 ハンギを使って伝統的な蒸し焼き料理を作ることもよくあります。 ロトルアには地熱ハンギを提供している場所がいくつもあり、クライストチャーチやウェリントンなどでは違ったハンギを試すことができます。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikivoyage.org/wiki/Maori_culture",
+      "passageSource": "Belebele · https://en.wikivoyage.org/wiki/Maori_culture",
       "options": [
         {
           "id": "o0",
@@ -6596,7 +6596,7 @@
       "type": "multiple-choice",
       "prompt": "衛星電話が携帯電話の有効な代用にならないのはどんな場合でしょう?",
       "passage": "携帯電話の電波が届かない辺境では、衛星電話が唯一の選択肢になることがあります。 衛星電話は、基本的には携帯電話の代わりにはなりません。というのも、電話をかけるには衛星をはっきりと見通せる屋外にいなければならないからです。 このサービスは、娯楽船をはじめとする船舶や、遠隔地でデータや音声を必要とする探検隊に頻繁に利用されています。 このサービスへの接続方法については、居住地の電話会社が詳しい情報を提供してくれるはずです。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikivoyage.org/wiki/Mobile_phones",
+      "passageSource": "Belebele · https://en.wikivoyage.org/wiki/Mobile_phones",
       "options": [
         {
           "id": "o0",
@@ -6624,7 +6624,7 @@
       "type": "multiple-choice",
       "prompt": "衛星電話が携帯電話より望ましいのはどんな時でしょう?",
       "passage": "携帯電話の電波が届かない辺境では、衛星電話が唯一の選択肢になることがあります。 衛星電話は、基本的には携帯電話の代わりにはなりません。というのも、電話をかけるには衛星をはっきりと見通せる屋外にいなければならないからです。 このサービスは、娯楽船をはじめとする船舶や、遠隔地でデータや音声を必要とする探検隊に頻繁に利用されています。 このサービスへの接続方法については、居住地の電話会社が詳しい情報を提供してくれるはずです。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikivoyage.org/wiki/Mobile_phones",
+      "passageSource": "Belebele · https://en.wikivoyage.org/wiki/Mobile_phones",
       "options": [
         {
           "id": "o0",
@@ -6652,7 +6652,7 @@
       "type": "multiple-choice",
       "prompt": "文中の内容によると、風の強い状況を避けたい場合、旅行者はモンテビデオをいつ訪れるのがよいでしょうか?",
       "passage": "モンテビデオは赤道の南にあるので、北半球が冬になると夏になり、北半球が夏になると冬になるのです。 モンテビデオは亜熱帯にあり、夏季には30℃を上回る気温が一般的です。 気温が氷点下になることはめったにありませんが、風と湿度の関係で温度計が示す気温よりも寒く感じることがあります。 「雨季」や「乾季」は特になく、年間を通して雨量はほぼ一定です。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikivoyage.org/wiki/Montevideo",
+      "passageSource": "Belebele · https://en.wikivoyage.org/wiki/Montevideo",
       "options": [
         {
           "id": "o0",
@@ -6680,7 +6680,7 @@
       "type": "multiple-choice",
       "prompt": "文中の内容によると、涼しい気候を特に好む場合、旅行者はモンテビデオをいつ訪れるとよいでしょうか?",
       "passage": "モンテビデオは赤道の南にあるので、北半球が冬になると夏になり、北半球が夏になると冬になるのです。 モンテビデオは亜熱帯にあり、夏季には30℃を上回る気温が一般的です。 気温が氷点下になることはめったにありませんが、風と湿度の関係で温度計が示す気温よりも寒く感じることがあります。 「雨季」や「乾季」は特になく、年間を通して雨量はほぼ一定です。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikivoyage.org/wiki/Montevideo",
+      "passageSource": "Belebele · https://en.wikivoyage.org/wiki/Montevideo",
       "options": [
         {
           "id": "o0",
@@ -6708,7 +6708,7 @@
       "type": "multiple-choice",
       "prompt": "文中の内容によると、破壊行為とは対照的な有名グラフィティアーティストと関連しないものは、次のうちのどれでしょう?",
       "passage": "不快な壁画や落書きはグラフィティと呼ばれます。 現代の問題からはほど遠いものの、ほとんどの人はスプレー塗料を使って公共物や他人の私有財産にいたずらをする若者を連想するのでしょう。 しかし、現在では、著名なグラフィティアーティスト、グラフィティイベント、そして専用の「合法的」な壁面が存在します。この文脈におけるグラフィティペインティングの多くは、判読不能な記号類ではなく美術品に類似する扱いとなります。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikivoyage.org/wiki/Murals_and_graffiti",
+      "passageSource": "Belebele · https://en.wikivoyage.org/wiki/Murals_and_graffiti",
       "options": [
         {
           "id": "o0",
@@ -6736,7 +6736,7 @@
       "type": "multiple-choice",
       "prompt": "文中の内容によると、パリジャンに好意を持ってもらうようにする一番の方法はなんでしょう?",
       "passage": "パリジャンは、自己中心的で横柄で失礼な人が多いと言われています。 これは不正確な固定観念にすぎませんが、パリうまくやっていくための最善の方法は、「育ちの良い」人らいく振る舞って最善の行動をとることです。そうすれば、快適に過ごせるようになるでしょう。 一見とっつきにくいパリジャンですが、こちらが基本的な礼儀作法を示せばすぐに変わるでしょう。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikivoyage.org/wiki/Paris",
+      "passageSource": "Belebele · https://en.wikivoyage.org/wiki/Paris",
       "options": [
         {
           "id": "o0",
@@ -6764,7 +6764,7 @@
       "type": "multiple-choice",
       "prompt": "文中の内容によると、パリジャンの典型的な性質とは考えられないものは次のうちのどれでしょう?",
       "passage": "パリジャンは、自己中心的で横柄で失礼な人が多いと言われています。 これは不正確な固定観念にすぎませんが、パリうまくやっていくための最善の方法は、「育ちの良い」人らいく振る舞って最善の行動をとることです。そうすれば、快適に過ごせるようになるでしょう。 一見とっつきにくいパリジャンですが、こちらが基本的な礼儀作法を示せばすぐに変わるでしょう。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikivoyage.org/wiki/Paris",
+      "passageSource": "Belebele · https://en.wikivoyage.org/wiki/Paris",
       "options": [
         {
           "id": "o0",
@@ -6792,7 +6792,7 @@
       "type": "multiple-choice",
       "prompt": "ケープタウンメトロレールのファーストクラスのメリットとはなんでしょう?",
       "passage": "メトロレールには、ケープタウンとその周辺を結ぶ通勤電車があり、メトロプラス（通称ファーストクラス）とメトロ（通称サードクラス）の2つに分かれています。 メトロプラスは、混雑が少なくて快適ですがやや割高で、それでもヨーロッパにおける通常のメトロ乗車券よりは安価です。 どの列車にもメトロプラスとメトロの両方の客車があり、メトロプラスの客車は常にケープタウンに一番近い列車の最後尾にあります。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikivoyage.org/wiki/Past_events/Wikimania_2018_Cape_Town_Guidebook",
+      "passageSource": "Belebele · https://en.wikivoyage.org/wiki/Past_events/Wikimania_2018_Cape_Town_Guidebook",
       "options": [
         {
           "id": "o0",
@@ -6820,7 +6820,7 @@
       "type": "multiple-choice",
       "prompt": "文中の内容によると、ケープタウンのすべての通勤電車にあるものとはなんでしょう?",
       "passage": "メトロレールには、ケープタウンとその周辺を結ぶ通勤電車があり、メトロプラス（通称ファーストクラス）とメトロ（通称サードクラス）の2つに分かれています。 メトロプラスは、混雑が少なくて快適ですがやや割高で、それでもヨーロッパにおける通常のメトロ乗車券よりは安価です。 どの列車にもメトロプラスとメトロの両方の客車があり、メトロプラスの客車は常にケープタウンに一番近い列車の最後尾にあります。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikivoyage.org/wiki/Past_events/Wikimania_2018_Cape_Town_Guidebook",
+      "passageSource": "Belebele · https://en.wikivoyage.org/wiki/Past_events/Wikimania_2018_Cape_Town_Guidebook",
       "options": [
         {
           "id": "o0",
@@ -6848,7 +6848,7 @@
       "type": "multiple-choice",
       "prompt": "文中の内容によると、プリトヴィッツェ湖群国立公園であまり一般的ではない樹木は次のうちのどれでしょう?",
       "passage": "プリトヴィッツェ湖群国立公園は、アルプスと地中海の植生が混在する広大な森（主にブナ、トウヒ、モミ）に大小16の湖が点在し、絶景で溢れる世界遺産です。 微気候のため、土壌や標高の範囲が極めて広いので、植物群落の種類が非常に豊富です。 また、この地域には多種多様な動物や鳥類が生息しています。 ヨーロッパのヒグマ、オオカミ、ワシ、フクロウ、オオヤマネコ、ヤマネコ、カペルカイリーなどの希少種が見られ、より多くの普通種がともに生息しています。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikivoyage.org/wiki/Plitvice_Lakes_National_Park",
+      "passageSource": "Belebele · https://en.wikivoyage.org/wiki/Plitvice_Lakes_National_Park",
       "options": [
         {
           "id": "o0",
@@ -6876,7 +6876,7 @@
       "type": "multiple-choice",
       "prompt": "プリトヴィッツェ湖群国立公園で見られる珍しい動物相とは次のうちのどれでしょう?",
       "passage": "プリトヴィッツェ湖群国立公園は、アルプスと地中海の植生が混在する広大な森（主にブナ、トウヒ、モミ）に大小16の湖が点在し、絶景で溢れる世界遺産です。 微気候のため、土壌や標高の範囲が極めて広いので、植物群落の種類が非常に豊富です。 また、この地域には多種多様な動物や鳥類が生息しています。 ヨーロッパのヒグマ、オオカミ、ワシ、フクロウ、オオヤマネコ、ヤマネコ、カペルカイリーなどの希少種が見られ、より多くの普通種がともに生息しています。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikivoyage.org/wiki/Plitvice_Lakes_National_Park",
+      "passageSource": "Belebele · https://en.wikivoyage.org/wiki/Plitvice_Lakes_National_Park",
       "options": [
         {
           "id": "o0",
@@ -6904,7 +6904,7 @@
       "type": "multiple-choice",
       "prompt": "文中の内容によると、リージョンコードは実際何に役立つでしょうか?",
       "passage": "マスコミ関係の企業は、この目的について「海賊版を防するため」と主張して日常的に嘘をついています。 実際には、リージョンコードは違法コピーにはまったく効果がありません。ディスクをビットごとにコピーすれば、原本を再生できる機器であれば問題なく再生されます。 実際の目的は、これらの企業に市場の統制権を与えることであり、すべては金儲けのためです。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikivoyage.org/wiki/Regional_coding",
+      "passageSource": "Belebele · https://en.wikivoyage.org/wiki/Regional_coding",
       "options": [
         {
           "id": "o0",
@@ -6932,7 +6932,7 @@
       "type": "multiple-choice",
       "prompt": "文中の内容によると、マスコミ関係企業が永続させているリージョンコードに関する嘘は、次のうちのどれでしょう?",
       "passage": "マスコミ関係の企業は、この目的について「海賊版を防するため」と主張して日常的に嘘をついています。 実際には、リージョンコードは違法コピーにはまったく効果がありません。ディスクをビットごとにコピーすれば、原本を再生できる機器であれば問題なく再生されます。 実際の目的は、これらの企業に市場の統制権を与えることであり、すべては金儲けのためです。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikivoyage.org/wiki/Regional_coding",
+      "passageSource": "Belebele · https://en.wikivoyage.org/wiki/Regional_coding",
       "options": [
         {
           "id": "o0",
@@ -6960,7 +6960,7 @@
       "type": "multiple-choice",
       "prompt": "文中の内容によると、ツアーの費用を下げるのは何でしょうか?",
       "passage": "人数の多い団体ならばツアーがお得になるので、1人旅や友人と2人で旅行する代わりに、寄り集まって4～6人の団体で参加すれば、1人当たりの料金がお得になります。 しかし、この場合は警戒心を解いてはいけません。多くの場合、観光客はごちゃ混ぜに乗車させられるからです。 実際には、人を騙してもっと料金を払わなければならないと思い込ませる方法のようです。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikivoyage.org/wiki/Salar_de_Uyuni",
+      "passageSource": "Belebele · https://en.wikivoyage.org/wiki/Salar_de_Uyuni",
       "options": [
         {
           "id": "o0",
@@ -6988,7 +6988,7 @@
       "type": "multiple-choice",
       "prompt": "文中の内容によると、ツアーの最安値を確保するのは誰でしょう?",
       "passage": "人数の多い団体ならばツアーがお得になるので、1人旅や友人と2人で旅行する代わりに、寄り集まって4～6人の団体で参加すれば、1人当たりの料金がお得になります。 しかし、この場合は警戒心を解いてはいけません。多くの場合、観光客はごちゃ混ぜに乗車させられるからです。 実際には、人を騙してもっと料金を払わなければならないと思い込ませる方法のようです。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikivoyage.org/wiki/Salar_de_Uyuni",
+      "passageSource": "Belebele · https://en.wikivoyage.org/wiki/Salar_de_Uyuni",
       "options": [
         {
           "id": "o0",
@@ -7016,7 +7016,7 @@
       "type": "multiple-choice",
       "prompt": "雪崩のきっかけになるものは次のうちのどれでしょう?",
       "passage": "雪崩は異常現象ではありません。急斜面で支えられる積雪量には限度があり、余った量は雪崩として崩れ落ちます。 問題は、雪に粘着性があるので、落ちてくるには何らかのきっかけが必要で、落ちてくる雪の一部が残りの雪が落ちるきっかけになりうるということです。 そもそもの引き金となる事象は、太陽の熱による雪解け、降雪量の増加、その他の自然現象などであったり、人為的な要因である場合もよくあります。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikivoyage.org/wiki/Snow_safety",
+      "passageSource": "Belebele · https://en.wikivoyage.org/wiki/Snow_safety",
       "options": [
         {
           "id": "o0",
@@ -7044,7 +7044,7 @@
       "type": "multiple-choice",
       "prompt": "文中の内容によると、雪崩として降りてくるのは次のうちのどれでしょう?",
       "passage": "雪崩は異常現象ではありません。急斜面で支えられる積雪量には限度があり、余った量は雪崩として崩れ落ちます。 問題は、雪に粘着性があるので、落ちてくるには何らかのきっかけが必要で、落ちてくる雪の一部が残りの雪が落ちるきっかけになりうるということです。 そもそもの引き金となる事象は、太陽の熱による雪解け、降雪量の増加、その他の自然現象などであったり、人為的な要因である場合もよくあります。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikivoyage.org/wiki/Snow_safety",
+      "passageSource": "Belebele · https://en.wikivoyage.org/wiki/Snow_safety",
       "options": [
         {
           "id": "o0",
@@ -7072,7 +7072,7 @@
       "type": "multiple-choice",
       "prompt": "高原に行くために南極横断山脈を迂回する必要があるのはなぜでしょう?",
       "passage": "マクマード南極点道路（またはハイウェイ）は、ロス海のマクマード基地から極点まで1600 kmにわたって続く道です。 クレバスが圧雪で埋まり、旗で印をつけてあります。燃料や物資を積んだソリを積み込んだ専用トラクターでしか移動できません。 これらはあまり小回りがきかないので、自然歩道を通って高原に出ようとすると南極大陸の山々をぐるりと回らなければなりません。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikivoyage.org/wiki/South_Pole",
+      "passageSource": "Belebele · https://en.wikivoyage.org/wiki/South_Pole",
       "options": [
         {
           "id": "o0",
@@ -7100,7 +7100,7 @@
       "type": "multiple-choice",
       "prompt": "マクマード南極点道路に沿って旗で印がつけられているものはなんでしょう?",
       "passage": "マクマード南極点道路（またはハイウェイ）は、ロス海のマクマード基地から極点まで1600 kmにわたって続く道です。 クレバスが圧雪で埋まり、旗で印をつけてあります。燃料や物資を積んだソリを積み込んだ専用トラクターでしか移動できません。 これらはあまり小回りがきかないので、自然歩道を通って高原に出ようとすると南極大陸の山々をぐるりと回らなければなりません。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikivoyage.org/wiki/South_Pole",
+      "passageSource": "Belebele · https://en.wikivoyage.org/wiki/South_Pole",
       "options": [
         {
           "id": "o0",
@@ -7128,7 +7128,7 @@
       "type": "multiple-choice",
       "prompt": "文中の内容によると、漏斗が竜巻になるのはどの時点でしょう?",
       "passage": "竜巻とは、非常に低圧の空気が回転している柱で、周囲の空気を内側に吸い込み、上に向かって上昇していきます。 竜巻は強風（通常は時速100～200マイル）を発生し、重量物を空中に舞い上がらせることがあり、舞い上がった物体は竜巻の移動に合わせて運ばれます。 竜巻は嵐雲から降下する漏斗状の渦として形成され始め、地面に触れると「竜巻」になります。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikivoyage.org/wiki/Tornado_safety",
+      "passageSource": "Belebele · https://en.wikivoyage.org/wiki/Tornado_safety",
       "options": [
         {
           "id": "o0",
@@ -7156,7 +7156,7 @@
       "type": "multiple-choice",
       "prompt": "竜巻の正しい特徴はこれらのうちのどれでしょう?",
       "passage": "竜巻とは、非常に低圧の空気が回転している柱で、周囲の空気を内側に吸い込み、上に向かって上昇していきます。 竜巻は強風（通常は時速100～200マイル）を発生し、重量物を空中に舞い上がらせることがあり、舞い上がった物体は竜巻の移動に合わせて運ばれます。 竜巻は嵐雲から降下する漏斗状の渦として形成され始め、地面に触れると「竜巻」になります。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikivoyage.org/wiki/Tornado_safety",
+      "passageSource": "Belebele · https://en.wikivoyage.org/wiki/Tornado_safety",
       "options": [
         {
           "id": "o0",
@@ -7184,7 +7184,7 @@
       "type": "multiple-choice",
       "prompt": "文中の内容によると、旅行代理店からの予約支援を最も必要としないのはどんなタイプの旅行でしょう?",
       "passage": "旅行代理店は19世紀から存在しています。自然、文化、言語、低所得国など、これまでに経験したことのない旅をお望みの旅行客は、旅行代理店を利用するのが良いでしょう。 ほとんどの代理店は、大半の定期予約を喜んで引き受けてくれますが、多くの代理店は、特定の種類の旅行、予算の範囲や目的地に特化しています。 自分好みの旅行を予約しやすい代理店を利用する方が良いでしょう。 ウェブサイトや店頭で、代理店がどのような旅行を宣伝しているかを見てみましょう。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikivoyage.org/wiki/Travel_agencies",
+      "passageSource": "Belebele · https://en.wikivoyage.org/wiki/Travel_agencies",
       "options": [
         {
           "id": "o0",
@@ -7212,7 +7212,7 @@
       "type": "multiple-choice",
       "prompt": "文中の内容によると、旅行者が旅行代理店の手助けで最も恩恵を受けるのはどのシナリオでしょう?",
       "passage": "旅行代理店は19世紀から存在しています。自然、文化、言語、低所得国など、これまでに経験したことのない旅をお望みの旅行客は、旅行代理店を利用するのが良いでしょう。 ほとんどの代理店は、大半の定期予約を喜んで引き受けてくれますが、多くの代理店は、特定の種類の旅行、予算の範囲や目的地に特化しています。 自分好みの旅行を予約しやすい代理店を利用する方が良いでしょう。 ウェブサイトや店頭で、代理店がどのような旅行を宣伝しているかを見てみましょう。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikivoyage.org/wiki/Travel_agencies",
+      "passageSource": "Belebele · https://en.wikivoyage.org/wiki/Travel_agencies",
       "options": [
         {
           "id": "o0",
@@ -7240,7 +7240,7 @@
       "type": "multiple-choice",
       "prompt": "文中の内容によると、最も一般的に使われているフィルム形式を反映しているのはどの写真サイズでしょう?",
       "passage": "長年にわたって、各種のフィルム形式が使用されてきました。標準的な35 mmフィルム（36×24 mmネガ）が最も一般的です。 使い果たしても補充しやすく、現在のデジタル一眼レフカメラとほぼ同等の解像度が得られます。 中判フィルムカメラの中には、6×6 cm、より正確には56×56 mmのネガを使用しているものもあります。 これで35 mmネガの約4倍の解像度（864に対して3136 mm2）が得られます。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikivoyage.org/wiki/Travel_photography/Film",
+      "passageSource": "Belebele · https://en.wikivoyage.org/wiki/Travel_photography/Film",
       "options": [
         {
           "id": "o0",
@@ -7268,7 +7268,7 @@
       "type": "multiple-choice",
       "prompt": "DSLRと同等の解像度を提供するのは次のうちのどのフィルム形式でしょう?",
       "passage": "長年にわたって、各種のフィルム形式が使用されてきました。標準的な35 mmフィルム（36×24 mmネガ）が最も一般的です。 使い果たしても補充しやすく、現在のデジタル一眼レフカメラとほぼ同等の解像度が得られます。 中判フィルムカメラの中には、6×6 cm、より正確には56×56 mmのネガを使用しているものもあります。 これで35 mmネガの約4倍の解像度（864に対して3136 mm2）が得られます。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikivoyage.org/wiki/Travel_photography/Film",
+      "passageSource": "Belebele · https://en.wikivoyage.org/wiki/Travel_photography/Film",
       "options": [
         {
           "id": "o0",
@@ -7296,7 +7296,7 @@
       "type": "multiple-choice",
       "prompt": "シェンゲン圏内を移動するメリットは次のうちのどれでしょう?",
       "passage": "ヨーロッパは比較的小さな大陸ですが、独立国が多数あります。通常の状況では、複数の国を旅行しようとすると、ビザの申請や入国審査がに何度も必要になります。 しかし、シェンゲン圏は、この点では一国のように機能します。 この圏内に留まっている限り、通常は出国審査を何度も受けることなく国境を越えることができます。 同じように、シェンゲンビザさえ取得すれば、シェンゲン加盟国のビザを個別に申請する必要がなくなり、時間、費用、事務処理の手間が相当に省けます。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikivoyage.org/wiki/Travelling_around_the_Schengen_Area",
+      "passageSource": "Belebele · https://en.wikivoyage.org/wiki/Travelling_around_the_Schengen_Area",
       "options": [
         {
           "id": "o0",
@@ -7324,7 +7324,7 @@
       "type": "multiple-choice",
       "prompt": "文中の内容によると、撮影にドローンを使う場合、勧められないことは次のうちのどれでしょう?",
       "passage": "通常の写真撮影に関する規則がビデオ撮影にも適用されますが、それ以上のことが求められる場合もあります。 写真撮影が許可されない場合にビデオで記録しようと考えてはいけません。 ドローンを使用する場合は、何を撮影していいのか、どのような許可や追加ライセンスが必要なのか、事前によく確認しておきましょう。 空港の付近や群衆の頭上にドローンを飛ばすことは、たとえ違法ではないとしても、ほぼ間違いなく良からぬ考えでしょう。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikivoyage.org/wiki/Video_recording",
+      "passageSource": "Belebele · https://en.wikivoyage.org/wiki/Video_recording",
       "options": [
         {
           "id": "o0",
@@ -7352,7 +7352,7 @@
       "type": "multiple-choice",
       "prompt": "文中の内容によると、ドローンを使った撮影に一番良い場所はどこでしょう?",
       "passage": "通常の写真撮影に関する規則がビデオ撮影にも適用されますが、それ以上のことが求められる場合もあります。 写真撮影が許可されない場合にビデオで記録しようと考えてはいけません。 ドローンを使用する場合は、何を撮影していいのか、どのような許可や追加ライセンスが必要なのか、事前によく確認しておきましょう。 空港の付近や群衆の頭上にドローンを飛ばすことは、たとえ違法ではないとしても、ほぼ間違いなく良からぬ考えでしょう。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikivoyage.org/wiki/Video_recording",
+      "passageSource": "Belebele · https://en.wikivoyage.org/wiki/Video_recording",
       "options": [
         {
           "id": "o0",
@@ -7380,7 +7380,7 @@
       "type": "multiple-choice",
       "prompt": "文中の内容に基づくと、ビザプロセスの登録要件に関しての記述で正しくないものはどれでしょう?",
       "passage": "登録はビザ取得のための追加要件です。国によっては、現地当局に滞在先と住所を登録しなければならない場合もあります。 そのためには、現地警察での申請書の記入や、入国管理局への訪問が必要になる場合があります。 このような法律がある多くの国では、現地のホテルが登録を代行してくれます（ぜひ依頼してください）。 また、観光客向けの宿泊施設以外に滞在する場合にのみ登録が必要な場合もあります。ただし、法律上わかりにくい点が多いので事前に調べておきましょう。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikivoyage.org/wiki/Visa",
+      "passageSource": "Belebele · https://en.wikivoyage.org/wiki/Visa",
       "options": [
         {
           "id": "o0",
@@ -7408,7 +7408,7 @@
       "type": "multiple-choice",
       "prompt": "旅行者が登録処理に出向く場合がある場所ではないのは、次のうちのどれでしょう?",
       "passage": "登録はビザ取得のための追加要件です。国によっては、現地当局に滞在先と住所を登録しなければならない場合もあります。 そのためには、現地警察での申請書の記入や、入国管理局への訪問が必要になる場合があります。 このような法律がある多くの国では、現地のホテルが登録を代行してくれます（ぜひ依頼してください）。 また、観光客向けの宿泊施設以外に滞在する場合にのみ登録が必要な場合もあります。ただし、法律上わかりにくい点が多いので事前に調べておきましょう。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikivoyage.org/wiki/Visa",
+      "passageSource": "Belebele · https://en.wikivoyage.org/wiki/Visa",
       "options": [
         {
           "id": "o0",
@@ -7436,7 +7436,7 @@
       "type": "multiple-choice",
       "prompt": "旅行中にボランティア活動をするメリットが無いのはどんな人でしょう?",
       "passage": "旅行中にボランティア活動をするのは、いつもと違う体験ができる素晴らしい方法ですが、与えるだけの立場ではありません。 外国での生活やボランティア活動は、異文化を知り、新しい人々と出会い、自分について学び、視野を広げ、さらには新しい技術を身に付けられる優れた方法です。 また、ボランティアの仕事で部屋と食事が付き、多少の給料をもらえることも多いので、予算を増やしてどこかに長期滞在できるようにするのも良い方法です。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikivoyage.org/wiki/Volunteer_travel",
+      "passageSource": "Belebele · https://en.wikivoyage.org/wiki/Volunteer_travel",
       "options": [
         {
           "id": "o0",
@@ -7464,7 +7464,7 @@
       "type": "multiple-choice",
       "prompt": "文中の内容によると、海外でボランティア活動をすることは低予算の旅行者にとってどのように有益でしょう?",
       "passage": "旅行中にボランティア活動をするのは、いつもと違う体験ができる素晴らしい方法ですが、与えるだけの立場ではありません。 外国での生活やボランティア活動は、異文化を知り、新しい人々と出会い、自分について学び、視野を広げ、さらには新しい技術を身に付けられる優れた方法です。 また、ボランティアの仕事で部屋と食事が付き、多少の給料をもらえることも多いので、予算を増やしてどこかに長期滞在できるようにするのも良い方法です。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikivoyage.org/wiki/Volunteer_travel",
+      "passageSource": "Belebele · https://en.wikivoyage.org/wiki/Volunteer_travel",
       "options": [
         {
           "id": "o0",
@@ -7492,7 +7492,7 @@
       "type": "multiple-choice",
       "prompt": "峠を越えて移動するドライバーにとって最も起きる可能性が低いことは次のうちのどれでしょう?",
       "passage": "緯度の高い場所や峠を運転する人は、雪や氷、氷点下の可能性を考慮する必要があります。 雪道や凍った道は摩擦が少なく、アスファルト道路を走るような運転はできません。 吹雪になると、ほんの短時間に足止めに十分な雪が降り積もります。 また、雪が降ったり吹きつけたり、車窓が結露や氷で覆われて視界が制限されることもあります。 一方、多くの国では氷雪の多い状況が普通ですが、交通は1年中ほぼ途切れることなく続いています。",
-      "passageSource": "Belebele (Meta AI) · CC-BY-SA 4.0 · via FLORES-200 / Wikivoyage · https://en.wikivoyage.org/wiki/Winter_driving",
+      "passageSource": "Belebele · https://en.wikivoyage.org/wiki/Winter_driving",
       "options": [
         {
           "id": "o0",
