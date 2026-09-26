@@ -41,4 +41,5 @@ export function range(n: number): number[] {
 }
 
 export * from "./voice-map"
+export * from "./elo"
 export type { VoiceLocale, VoiceGender } from "./voice-map"

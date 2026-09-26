@@ -21,6 +21,8 @@ const MODELS = "navia-models-v1"
 
 let store: Map<string, { cacheName: string; response: Response }>
 let putShouldFail: boolean
+/** Every cache name the worker opened, in order. */
+const openedCaches: string[] = []
 let fetchImpl: jest.Mock<() => Promise<Response>>
 
 function makeEvent(request: Request) {
@@ -38,6 +40,7 @@ function req(url: string) {
 beforeEach(async () => {
   store = new Map()
   putShouldFail = false
+  openedCaches.length = 0
   fetchImpl = jest.fn(async () => new Response("body", { status: 200 }))
 
   for (const k of Object.keys(listeners)) delete listeners[k]
@@ -56,7 +59,10 @@ beforeEach(async () => {
     }),
   }
   const cachesStub = {
-    open: jest.fn(async (name: string) => cache),
+    open: jest.fn(async (name: string) => {
+      openedCaches.push(name)
+      return cache
+    }),
     match: jest.fn(async (r: Request | string) => {
       const hit = store.get(keyOf(r))
       return hit ? hit.response : undefined
@@ -110,6 +116,14 @@ describe("model binaries", () => {
 
     expect(await res.text()).toBe("cached")
     expect(fetchImpl).not.toHaveBeenCalled()
+  })
+
+  it("stores a model in the model cache, not the shell's", async () => {
+    const event = fireFetch("https://cdn.example/models/new.onnx")
+    await responded(event)
+
+    expect(openedCaches).toContain(MODELS)
+    expect(openedCaches).not.toContain(SHELL)
   })
 
   it("keeps the model cache when the worker activates", async () => {
