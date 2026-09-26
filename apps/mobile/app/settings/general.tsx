@@ -7,11 +7,15 @@ import {
   SettingsState,
 } from "@/components/settings/SettingsGroup"
 import { PressableScale } from "@/components/study/press"
+import { useDisplayMode } from "@/hooks/useDisplayMode"
 import { useUserSettings } from "@/hooks/useUserSettings"
+import { isCharDisplayMode, DISPLAY_MODE_ORDER } from "@/lib/displayMode"
+import { useOnboardingStore } from "@/store/onboarding"
 import { useTheme } from "@/theme/ThemeProvider"
 import { useThemePrefs } from "@/store/theme"
-import { useLocaleStore, useT } from "@/i18n"
+import { useLocaleStore, useT, type I18nKey } from "@/i18n"
 import { setSoundPrefs } from "@/utils/sound"
+import type { DisplayModeMode } from "@/types/api"
 import type { ThemeId, ThemeMode } from "@/theme/colors"
 
 /**
@@ -42,7 +46,9 @@ export default function SettingsGeneral() {
   const t = useT()
   const { catalog } = useTheme()
   const s = useUserSettings()
-  const { themeId, mode, setThemeId, setMode } = useThemePrefs()
+  const { displayMode, setMode, setAdaptiveByLevel } = useDisplayMode()
+  const { themeId, mode, setThemeId, setMode: setModePref } = useThemePrefs()
+  const language = useOnboardingStore((st) => st.language)
   const locale = useLocaleStore((st) => st.locale)
   const setLocale = useLocaleStore((st) => st.setLocale)
   const d = s.data
@@ -80,7 +86,7 @@ export default function SettingsGeneral() {
             options={MODES.map((m) => ({ id: m.id, label: t(m.label) }))}
             value={mode}
             onChange={(id) => {
-              setMode(id as ThemeMode)
+              setModePref(id as ThemeMode)
               s.set({ mode: id })
             }}
           />
@@ -99,6 +105,32 @@ export default function SettingsGeneral() {
             }}
           />
         </SettingsGroup>
+
+        {isCharDisplayMode(language) && (
+          <SettingsGroup
+            title={t("set.chineseDisplay")}
+            hint={t("set.chineseDisplayHint")}
+          >
+            <View style={{ paddingHorizontal: 14, paddingBottom: 14, gap: 10 }}>
+              <SettingsChoice
+                options={DISPLAY_MODE_ORDER.map((m) => ({
+                  id: m,
+                  label: t(`set.displayMode.${m}` as I18nKey),
+                }))}
+                value={displayMode.mode}
+                onChange={(id) => setMode(id as DisplayModeMode)}
+              />
+              <SettingsToggle
+                first
+                glyph="📶"
+                title={t("set.adaptiveByLevel")}
+                sub={t("set.adaptiveByLevelHint")}
+                value={displayMode.adaptiveByLevel}
+                onChange={setAdaptiveByLevel}
+              />
+            </View>
+          </SettingsGroup>
+        )}
 
         <SettingsGroup title={t("set.accessibility")} last>
           {s.isLoading ? (

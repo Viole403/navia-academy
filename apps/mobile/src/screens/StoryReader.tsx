@@ -8,6 +8,7 @@ import { useTheme } from "@/theme/ThemeProvider"
 import { paperType, families } from "@/theme/paperType"
 import { loadReadings } from "@/lib/content-data"
 import { useOnboardingStore } from "@/store/onboarding"
+import { useDisplayMode } from "@/hooks/useDisplayMode"
 import { useTts } from "@/hooks/useTts"
 import { useT, useLocaleStore } from "@/i18n"
 import { playSound } from "@/utils/sound"
@@ -35,6 +36,7 @@ export function StoryReader() {
   const { id } = useLocalSearchParams<{ id?: string }>()
   const language = useOnboardingStore((s) => s.language)
   const tts = useTts()
+  const { showsPinyin, showsZhuyin, showsTranslation } = useDisplayMode()
 
   const readingsQ = useQuery({
     queryKey: ["library-readings", language],
@@ -147,9 +149,11 @@ export function StoryReader() {
       {paragraphs.map((p, i) => (
         <View key={i} style={{ gap: 6 }}>
           <TappableText text={p.hanzi ?? p.text ?? ""} size={22} />
-          {/* Both scripts, because the content carries both and a learner may
-              be reading either. */}
-          {!!p.pinyin && (
+          {/* The content carries both scripts, but showing both to everyone
+              buries the passage. Which one appears follows the display
+              preference, so a learner reading pinyin is not also handed
+              zhuyin under every line. */}
+          {showsPinyin() && !!p.pinyin && (
             <Text
               style={[
                 paperType.statLabel,
@@ -159,7 +163,7 @@ export function StoryReader() {
               {p.pinyin}
             </Text>
           )}
-          {!!p.zhuyin && (
+          {showsZhuyin() && !!p.zhuyin && (
             <Text
               style={[
                 paperType.statLabel,
@@ -169,7 +173,7 @@ export function StoryReader() {
               {p.zhuyin}
             </Text>
           )}
-          {gloss(p) ? (
+          {showsTranslation() && gloss(p) ? (
             <Text style={[paperType.proseSm, { color: paper.inkSoft }]}>
               {gloss(p)}
             </Text>

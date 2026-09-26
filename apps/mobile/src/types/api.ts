@@ -194,10 +194,23 @@ export interface RecommendedExam {
 }
 
 // ─── Settings ───────────────────────────────────────────────────────────────
+export type DisplayModeScript = "simplified" | "traditional"
+
+export type DisplayModeMode =
+  "none" | "hanyu" | "zhuyin" | "hanyu+trans" | "zhuyin+trans" | "all"
+
+export interface DisplayMode {
+  script: DisplayModeScript
+  mode: DisplayModeMode
+  adaptiveByLevel: boolean
+  levelOverrides: Partial<Record<number, DisplayModeMode>>
+}
+
 export interface UserSettings {
   theme: string
   mode: string
   locale: string
+  display_mode?: DisplayMode
   audio_rate: number
   autoplay_audio: boolean
   sound_effects: boolean

@@ -18,6 +18,7 @@ import { progress } from "@/api/endpoints"
 import { findWord } from "@/lib/content-data"
 import { isCharScript, headword, reading } from "@/lib/languages"
 import { hasHan } from "@/lib/han"
+import { useDisplayMode } from "@/hooks/useDisplayMode"
 import { useOnboardingStore } from "@/store/onboarding"
 import { useTts } from "@/hooks/useTts"
 import { useT } from "@/i18n"
@@ -55,6 +56,12 @@ export function WordDetail() {
   const { id } = useLocalSearchParams<{ id?: string }>()
   const language = useOnboardingStore((s) => s.language)
   const tts = useTts()
+  const {
+    modeFor,
+    showsPinyin: wantPinyin,
+    showsZhuyin: wantZhuyin,
+    showsTranslation: wantTranslation,
+  } = useDisplayMode()
   const [strokesOpen, setStrokesOpen] = useState(false)
   const [hintKey, setHintKey] = useState(0)
   const [revealKey, setRevealKey] = useState(0)
@@ -114,6 +121,20 @@ export function WordDetail() {
   }
 
   const senses = (w.meanings as string[] | undefined) ?? []
+
+  // Which readings sit under the character is the learner's call, not the
+  // page's. A learner who reads pinyin fluently does not also want zhuyin
+  // under every word, and one working from characters wants neither.
+  const hskLevel =
+    typeof w.hsk === "number"
+      ? w.hsk
+      : typeof w.level === "number"
+        ? w.level
+        : null
+  const effMode = modeFor(hskLevel)
+  const showPinyin = wantPinyin(effMode) && Boolean(reading(w))
+  const showZhuyin = wantZhuyin(effMode) && Boolean(w.zhuyin)
+  const showTranslation = wantTranslation(effMode)
   const examples = (w.examples as Example[] | undefined) ?? []
   const charScript = isCharScript(language) && hasHan(headword(w))
 
@@ -177,15 +198,17 @@ export function WordDetail() {
           >
             {headword(w)}
           </Text>
-          <Text
-            style={[
-              paperType.cardBody,
-              { color: paper.coral, fontFamily: families.nunitoBold },
-            ]}
-          >
-            {reading(w) ?? "—"}
-          </Text>
-          {!!w.zhuyin && (
+          {showPinyin && (
+            <Text
+              style={[
+                paperType.cardBody,
+                { color: paper.coral, fontFamily: families.nunitoBold },
+              ]}
+            >
+              {reading(w)}
+            </Text>
+          )}
+          {showZhuyin && (
             <Text style={[paperType.bodySm, { color: paper.inkSoft }]}>
               {String(w.zhuyin)}
             </Text>
@@ -200,11 +223,16 @@ export function WordDetail() {
               {t("vocab.traditional")} · {w.traditional}
             </Text>
           )}
-          <Text
-            style={[paperType.prose, { color: paper.ink, textAlign: "center" }]}
-          >
-            {String(w.translation ?? "")}
-          </Text>
+          {showTranslation && (
+            <Text
+              style={[
+                paperType.prose,
+                { color: paper.ink, textAlign: "center" },
+              ]}
+            >
+              {String(w.translation ?? "")}
+            </Text>
+          )}
         </View>
       </PaperCard>
 
