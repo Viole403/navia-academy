@@ -8,6 +8,19 @@
  * the part worth agreeing on.
  */
 
+/**
+ * A recogniser handle.
+ *
+ * Both clients return this shape, so a drill screen is written once against a
+ * contract rather than twice against two platforms. It carries no platform
+ * detail on purpose: anything platform-specific has to be resolved before it
+ * reaches a caller.
+ */
+export interface SttRecognizer {
+  stop: () => void
+  abort: () => void
+}
+
 /** Speech-recognition locales per learning language. */
 const STT_LOCALES: Record<string, string> = {
   zh: "zh-CN",
