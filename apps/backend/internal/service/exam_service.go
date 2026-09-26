@@ -56,7 +56,13 @@ func (s *ExamService) PatchCatSession(ctx context.Context, sessionID int, userID
 	}
 	// Elapsed is computed server-side from started_at; req.ElapsedSec is
 	// ignored (client-provided wall clock is not trusted).
-	return s.examRepo.PatchCatSession(ctx, sessionID, userID, out, req.Theta)
+	// Tab warnings are additive and optional: a client that does not track them
+	// sends nothing and the tally simply stays where it was.
+	var warnings int
+	if req.TabWarnings != nil {
+		warnings = *req.TabWarnings
+	}
+	return s.examRepo.PatchCatSession(ctx, sessionID, userID, out, req.Theta, warnings)
 }
 
 func (s *ExamService) GetCatSession(ctx context.Context, sessionID int, userID string) (*models.CatSession, error) {

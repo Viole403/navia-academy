@@ -51,6 +51,7 @@ interface CatSessionDTO {
   answers: WireAnswer[]
   time_limit_sec?: number
   time_remaining_sec?: number
+  tab_warnings?: number
   started_at?: string
   [k: string]: unknown
 }
@@ -118,6 +119,10 @@ export default function AdaptiveExamPage() {
   const [audioLoading, setAudioLoading] = useState(false)
   const [elapsed, setElapsed] = useState(0)
   const [tabWarnings, setTabWarnings] = useState(0)
+  // The tally lives on the session, so a reload no longer clears it. A ref
+  // mirrors it for the save calls, which run in effects that must not depend on
+  // a value that changes on every tab switch.
+  const tabWarningsRef = useRef(0)
   const [integrityFlag, setIntegrityFlag] = useState(false)
   const [pendingResume, setPendingResume] = useState<CatResume | null>(null)
   const [ready, setReady] = useState(false)
@@ -182,6 +187,13 @@ export default function AdaptiveExamPage() {
           })
           setElapsed(computeElapsed(s))
           elapsedRef.current = computeElapsed(s)
+          // Warnings already accrued on this session, so resuming does not hand
+          // back a clean slate. A tally that survived here is also what already
+          // tripped the flag, so restore that too.
+          const prior = s.tab_warnings ?? 0
+          tabWarningsRef.current = prior
+          setTabWarnings(prior)
+          if (prior >= 2) setIntegrityFlag(true)
         }
       } catch {
         window.localStorage.removeItem(SESSION_KEY)
@@ -221,6 +233,7 @@ export default function AdaptiveExamPage() {
       if (document.hidden && !done) {
         setTabWarnings((w) => {
           const next = w + 1
+          tabWarningsRef.current = next
           if (next >= 2) setIntegrityFlag(true)
           return next
         })
@@ -230,6 +243,7 @@ export default function AdaptiveExamPage() {
       if (!done) {
         setTabWarnings((w) => {
           const next = w + 1
+          tabWarningsRef.current = next
           if (next >= 2) setIntegrityFlag(true)
           return next
         })
@@ -270,6 +284,7 @@ export default function AdaptiveExamPage() {
         answers: log.map(toWire),
         elapsed_sec: elapsedRef.current,
         theta: Math.round(theta),
+        tab_warnings: tabWarningsRef.current,
       })
       .catch(() => {})
   }, [log, done, theta])
@@ -290,6 +305,9 @@ export default function AdaptiveExamPage() {
     window.localStorage.removeItem(SESSION_KEY)
     setElapsed(0)
     elapsedRef.current = 0
+    tabWarningsRef.current = 0
+    setTabWarnings(0)
+    setIntegrityFlag(false)
     cat
       .session({
         exam_type: examType,
@@ -313,6 +331,7 @@ export default function AdaptiveExamPage() {
           answers: log.map(toWire),
           elapsed_sec: elapsedRef.current,
           theta: Math.round(theta),
+          tab_warnings: tabWarningsRef.current,
         })
         .catch(() => {})
     }

@@ -167,6 +167,8 @@ export interface CatSessionDTO {
   answers: unknown[]
   time_limit_sec?: number
   time_remaining_sec?: number
+  /** Tab switches recorded on the session, so a resume does not reset them. */
+  tab_warnings?: number
   started_at?: string
   [k: string]: unknown
 }

@@ -9,6 +9,9 @@ import (
 	"github.com/navia-academy/backend/internal/models"
 )
 
+// maxTabWarnings caps the per-session warning tally.
+const maxTabWarnings = 50
+
 type ExamRepository struct {
 	pool database.DBPool
 }
@@ -184,7 +187,7 @@ func (r *ExamRepository) CreateCatSession(ctx context.Context, s *models.CatSess
 // are deduped by item_id upstream, and this method upserts the batch. The
 // elapsed time is computed SERVER-SIDE from the session's started_at so a
 // client cannot reset time_remaining by sending elapsed_sec: 0.
-func (r *ExamRepository) PatchCatSession(ctx context.Context, sessionID int, userID string, in []models.CatAnswer, theta float64) error {
+func (r *ExamRepository) PatchCatSession(ctx context.Context, sessionID int, userID string, in []models.CatAnswer, theta float64, tabWarnings int) error {
 	answersJSON, _ := json.Marshal(in)
 
 	var timeLimit int
@@ -193,6 +196,13 @@ func (r *ExamRepository) PatchCatSession(ctx context.Context, sessionID int, use
 		`SELECT time_limit, started_at FROM exam_sessions WHERE id=$1 AND user_id=$2`,
 		sessionID, userID).Scan(&timeLimit, &startedAt); err != nil {
 		return err
+	}
+
+	// A session is abandoned well before this many tab switches, so the cap
+	// only stops a runaway client from pushing the column to absurd values.
+	// A negative delta is ignored rather than subtracted.
+	if tabWarnings < 0 {
+		tabWarnings = 0
 	}
 
 	// Elapsed measured against the server clock: monotonic, not client-
@@ -208,10 +218,11 @@ func (r *ExamRepository) PatchCatSession(ctx context.Context, sessionID int, use
 	err := r.pool.QueryRow(ctx, `
 		UPDATE exam_sessions
 		SET answers = $1, current_question_index = $2, theta_estim = $3,
-		    time_remaining = $4, last_answer_at = now(), updated_at = now()
-		WHERE id = $5 AND user_id = $6
+		    time_remaining = $4, last_answer_at = now(), updated_at = now(),
+		    tab_warnings = LEAST($5, tab_warnings + $6)
+		WHERE id = $7 AND user_id = $8
 		RETURNING user_id
-	`, answersJSON, len(in), theta, timeRemaining, sessionID, userID).Scan(&uid)
+	`, answersJSON, len(in), theta, timeRemaining, maxTabWarnings, tabWarnings, sessionID, userID).Scan(&uid)
 	return err
 }
 
@@ -220,11 +231,12 @@ func (r *ExamRepository) GetCatSession(ctx context.Context, sessionID int, userI
 	var answersJSON []byte
 	err := r.pool.QueryRow(ctx, `
 		SELECT id, user_id, exam_type, status, start_theta, engine_version,
-		       COALESCE(answers::text,'[]'), time_limit, time_remaining, started_at
+		       COALESCE(answers::text,'[]'), time_limit, time_remaining,
+		       tab_warnings, started_at
 		FROM exam_sessions WHERE id=$1 AND user_id=$2
 	`, sessionID, userID).Scan(&s.ID, &s.UserID, &s.ExamType, &s.Status,
 		&s.StartTheta, &s.EngineVersion, &answersJSON, &s.TimeLimitSec,
-		&s.TimeRemainingSec, &s.StartedAt)
+		&s.TimeRemainingSec, &s.TabWarnings, &s.StartedAt)
 	if err != nil {
 		return nil, err
 	}
