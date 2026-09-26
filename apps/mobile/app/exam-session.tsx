@@ -1,20 +1,17 @@
 import { useEffect, useMemo, useState } from "react"
-import {
-  ActivityIndicator,
-  Alert,
-  Pressable,
-  ScrollView,
-  Text,
-  View,
-} from "react-native"
+import { ActivityIndicator, Alert, ScrollView, Text, View } from "react-native"
 import { SafeAreaView } from "react-native-safe-area-context"
 import { useLocalSearchParams, useRouter } from "expo-router"
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query"
-import { Button } from "@/components/ui/Button"
 import { EmptyState } from "@/components/ui/EmptyState"
 import { ProgressBar } from "@/components/ui/ProgressBar"
+import { LiftedFace, PaperCard } from "@/components/study/PaperCard"
+import { PressableScale } from "@/components/study/press"
+import { useContentFaces } from "@/hooks/useContentFaces"
 import { useTheme } from "@/theme/ThemeProvider"
-import { fonts, type } from "@/theme/typography"
+import { useContentLayout } from "@/theme/layout"
+import { paperType } from "@/theme/paperType"
+import { fonts } from "@/theme/typography"
 import { exam } from "@/api/endpoints"
 import { useTts } from "@/hooks/useTts"
 import { useT } from "@/i18n"
@@ -22,8 +19,127 @@ import { motifChar } from "@/lib/languages"
 import { useOnboardingStore } from "@/store/onboarding"
 import type { ExamQuestion, ExamSession } from "@/types/api"
 
+const LETTERS = ["A", "B", "C", "D", "E", "F"]
+
+function OptionRow({
+  letter,
+  label,
+  selected,
+  onPress,
+  last,
+}: {
+  letter: string
+  label: string
+  selected: boolean
+  onPress: () => void
+  last: boolean
+}) {
+  const { paper } = useTheme()
+  return (
+    <PressableScale
+      onPress={onPress}
+      scale={0.99}
+      wrapperStyle={{ alignSelf: "stretch" }}
+      style={{
+        flexDirection: "row",
+        alignItems: "center",
+        gap: 14,
+        borderTopWidth: last ? 0 : 1,
+        borderTopColor: paper.line,
+        borderLeftWidth: 3,
+        borderLeftColor: selected ? paper.green : "transparent",
+        backgroundColor: selected ? paper.greenSoft : "transparent",
+      }}
+      accessibilityRole="radio"
+      accessibilityState={{ selected }}
+    >
+      <View
+        style={{
+          width: 30,
+          height: 30,
+          borderRadius: 15,
+          borderWidth: 1.5,
+          borderColor: selected ? paper.green : paper.track,
+          backgroundColor: selected ? paper.green : "transparent",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      >
+        <Text
+          style={[
+            paperType.note,
+            {
+              color: selected ? paper.card : paper.inkMuted,
+              fontWeight: "700",
+            },
+          ]}
+        >
+          {selected ? "✓" : letter}
+        </Text>
+      </View>
+      <Text
+        style={[
+          paperType.body,
+          { color: paper.ink, flex: 1, paddingVertical: 18 },
+        ]}
+      >
+        {label}
+      </Text>
+    </PressableScale>
+  )
+}
+
+function AudioPlayButton({
+  text,
+  playing,
+  loading,
+  onPlay,
+}: {
+  text: string
+  playing: boolean
+  loading: boolean
+  onPlay: () => void
+}) {
+  const { paper } = useTheme()
+  const t = useT()
+  const label = loading
+    ? t("xsess.loadingAudio")
+    : playing
+      ? t("xsess.playingAudio")
+      : t("xsess.playAudio")
+  return (
+    <PressableScale
+      onPress={onPlay}
+      disabled={loading}
+      wrapperStyle={{ alignSelf: "stretch" }}
+      style={{
+        flexDirection: "row",
+        alignItems: "center",
+        gap: 12,
+        paddingVertical: 18,
+        paddingHorizontal: 20,
+        borderRadius: 999,
+        backgroundColor: paper.greenSoft,
+        borderWidth: 1,
+        borderColor: paper.greenRing,
+        opacity: loading ? 0.6 : 1,
+      }}
+      accessibilityLabel={label}
+    >
+      <Text style={{ fontSize: 18, color: paper.greenDark }}>
+        {playing ? "…" : "▶"}
+      </Text>
+      <Text style={[paperType.cardTitleSm, { color: paper.greenDark }]}>
+        {label}
+      </Text>
+    </PressableScale>
+  )
+}
+
 export default function ExamSessionScreen() {
-  const { theme, paper } = useTheme()
+  const { paper } = useTheme()
+  const faces = useContentFaces()
+  const { column } = useContentLayout()
   const t = useT()
   const language = useOnboardingStore((s) => s.language)
   const router = useRouter()
@@ -52,6 +168,17 @@ export default function ExamSessionScreen() {
   const answerM = useMutation({
     mutationFn: (vars: { qid: string; answer: unknown }) =>
       exam.answer(sessionId, vars.qid, vars.answer),
+    onError: (_e, vars) => {
+      // The tick is optimistic, so a failed write would otherwise leave the
+      // option looking chosen, unlock Next, and carry an answer the server
+      // never received. Undo the tick and say so.
+      setPicked((p) => {
+        const next = { ...p }
+        delete next[vars.qid]
+        return next
+      })
+      Alert.alert(t("xsess.submitFail"), t("xsess.tryAgain"))
+    },
   })
   const submitM = useMutation({
     mutationFn: () => exam.submit(sessionId),
@@ -81,8 +208,8 @@ export default function ExamSessionScreen() {
   })
 
   useEffect(() => {
-    const t = setInterval(() => setElapsed((e) => e + 1), 1000)
-    return () => clearInterval(t)
+    const tick = setInterval(() => setElapsed((e) => e + 1), 1000)
+    return () => clearInterval(tick)
   }, [])
 
   const pick = (qid: string, option: string) => {
@@ -108,6 +235,20 @@ export default function ExamSessionScreen() {
     }
   }
 
+  const abandon = () =>
+    Alert.alert(t("xsess.abandonTitle"), t("xsess.abandonMsg"), [
+      { text: t("xsess.cancel"), style: "cancel" },
+      {
+        text: t("xsess.abandon"),
+        style: "destructive",
+        onPress: async () => {
+          await exam.abandon(sessionId)
+          qc.invalidateQueries({ queryKey: ["exam-active"] })
+          router.back()
+        },
+      },
+    ])
+
   if (sessionQ.isLoading) {
     return (
       <SafeAreaView
@@ -118,7 +259,7 @@ export default function ExamSessionScreen() {
           justifyContent: "center",
         }}
       >
-        <ActivityIndicator color={theme.accent} size="large" />
+        <ActivityIndicator color={paper.green} size="large" />
       </SafeAreaView>
     )
   }
@@ -132,6 +273,7 @@ export default function ExamSessionScreen() {
             alignItems: "center",
             justifyContent: "center",
             padding: 32,
+            gap: 20,
           }}
         >
           <EmptyState
@@ -139,7 +281,7 @@ export default function ExamSessionScreen() {
             message={t("xsess.notFoundMsg")}
             glyph={motifChar(language)}
           />
-          <Button title={t("xsess.goBack")} onPress={() => router.back()} />
+          <LiftedFace title={t("xsess.goBack")} onPress={() => router.back()} />
         </View>
       </SafeAreaView>
     )
@@ -147,98 +289,95 @@ export default function ExamSessionScreen() {
 
   const mm = String(Math.floor(elapsed / 60)).padStart(2, "0")
   const ss = String(elapsed % 60).padStart(2, "0")
+  const isLast = currentIdx + 1 >= questions.length
+  const answeredCurrent = Boolean(current && picked[current.id])
 
   return (
     <SafeAreaView style={{ flex: 1, backgroundColor: paper.paper }}>
-      {/* Top bar */}
       <View
         style={{
-          padding: 16,
+          paddingHorizontal: 20,
+          paddingTop: 12,
+          paddingBottom: 14,
           flexDirection: "row",
           justifyContent: "space-between",
-          alignItems: "center",
-          borderBottomWidth: 1,
-          borderBottomColor: theme.border,
+          alignItems: "flex-start",
         }}
       >
-        <View>
-          <Text style={[type.labelSm, { color: theme.textMuted }]}>
-            {session.exam_type.toUpperCase()} · Level {session.exam_level}
+        <View style={{ gap: 4, flex: 1 }}>
+          <Text style={[paperType.label, { color: paper.inkMuted }]}>
+            {session.exam_type.toUpperCase()} · {t("exam.level")}{" "}
+            {session.exam_level}
           </Text>
-          <Text
-            style={[type.labelSm, { color: theme.textMuted, marginTop: 4 }]}
-          >
-            {"Q " + (currentIdx + 1) + " of " + questions.length}
+          <Text style={[paperType.cardTitleSm, { color: paper.ink }]}>
+            {t("exam.question")} {currentIdx + 1} {t("xsess.of")}{" "}
+            {questions.length}
           </Text>
         </View>
-        <View style={{ alignItems: "flex-end" }}>
+        <View style={{ alignItems: "flex-end", gap: 2 }}>
+          {/* Monospaced on purpose: a clock that ticks once a second jitters
+              visibly in a proportional face. */}
           <Text
             style={{
               fontFamily: fonts.mono,
-              fontSize: 20,
-              color: theme.text,
-              fontWeight: "600",
+              fontSize: 22,
+              color: paper.ink,
             }}
           >
             {mm}:{ss}
           </Text>
-          <Pressable
-            onPress={() =>
-              Alert.alert(t("xsess.abandonTitle"), t("xsess.abandonMsg"), [
-                { text: t("xsess.cancel"), style: "cancel" },
-                {
-                  text: t("xsess.abandon"),
-                  style: "destructive",
-                  onPress: async () => {
-                    await exam.abandon(sessionId)
-                    qc.invalidateQueries({ queryKey: ["exam-active"] })
-                    router.back()
-                  },
-                },
-              ])
-            }
+          <PressableScale
+            onPress={abandon}
+            scale={0.96}
+            style={{ paddingVertical: 10, paddingHorizontal: 4 }}
           >
-            <Text
-              style={{
-                color: theme.red,
-                fontSize: 12,
-                letterSpacing: 0.4,
-                marginTop: 4,
-              }}
-            >
-              {t("xsess.abandon").toUpperCase()}
+            <Text style={[paperType.note, { color: paper.coral }]}>
+              {t("xsess.abandon")}
             </Text>
-          </Pressable>
+          </PressableScale>
         </View>
       </View>
       <ProgressBar
         value={
           questions.length
-            ? (currentIdx + (picked[current?.id ?? ""] ? 1 : 0)) /
-              questions.length
+            ? (currentIdx + (answeredCurrent ? 1 : 0)) / questions.length
             : 0
         }
         height={2}
-        tint={theme.accent}
+        tint={paper.green}
       />
-      <ScrollView contentContainerStyle={{ padding: 24, gap: 24, flexGrow: 1 }}>
-        {/* Question */}
+      <ScrollView
+        contentContainerStyle={{
+          padding: 20,
+          gap: 22,
+          paddingBottom: 48,
+          flexGrow: 1,
+          maxWidth: column,
+          width: "100%",
+          alignSelf: "center",
+        }}
+      >
         {current ? (
           <View style={{ gap: 20 }}>
-            <View style={{ gap: 8 }}>
-              <Text style={[type.labelSm, { color: theme.textMuted }]}>
+            <View style={{ gap: 10 }}>
+              <Text style={[paperType.label, { color: paper.inkMuted }]}>
                 {current.type ?? t("xsess.question")}
               </Text>
-              <Text style={[type.h3, { color: theme.text }]}>
+              <Text
+                style={[
+                  paperType.cardTitle,
+                  { color: paper.ink, fontSize: 26, lineHeight: 32 },
+                ]}
+              >
                 {current.prompt}
               </Text>
               {current.prompt_chinese && (
                 <Text
                   style={{
-                    fontFamily: fonts.hanzi,
+                    fontFamily: faces.hanzi,
                     fontSize: 26,
                     lineHeight: 36,
-                    color: theme.text,
+                    color: paper.inkSoft,
                   }}
                 >
                   {current.prompt_chinese}
@@ -255,145 +394,47 @@ export default function ExamSessionScreen() {
                 )}
             </View>
 
-            {/* Options */}
-            <View style={{ gap: 10 }}>
-              {(current.options ?? []).map((opt, idx) => {
-                const sel = picked[current.id] === opt
-                return (
-                  <Pressable
-                    key={opt}
-                    onPress={() => pick(current.id, opt)}
-                    accessibilityRole="radio"
-                    accessibilityState={{ selected: sel }}
-                    style={{
-                      paddingVertical: 14,
-                      paddingHorizontal: 16,
-                      borderRadius: 2,
-                      borderWidth: 1.5,
-                      borderColor: sel ? theme.accent : theme.border,
-                      backgroundColor: sel
-                        ? `${theme.accent}0A`
-                        : "transparent",
-                      flexDirection: "row",
-                      alignItems: "center",
-                      gap: 12,
-                    }}
-                  >
-                    <View
-                      style={{
-                        width: 28,
-                        height: 28,
-                        borderRadius: 14,
-                        borderWidth: 1.5,
-                        borderColor: sel ? theme.accent : theme.textDim,
-                        backgroundColor: sel ? theme.accent : "transparent",
-                        alignItems: "center",
-                        justifyContent: "center",
-                      }}
-                    >
-                      <Text
-                        style={{
-                          color: sel ? theme.bg : theme.textMuted,
-                          fontSize: 13,
-                          fontWeight: "700",
-                        }}
-                      >
-                        {sel ? "✓" : ("ABCD"[idx] ?? "")}
-                      </Text>
-                    </View>
-                    <Text
-                      style={{
-                        flex: 1,
-                        color: theme.text,
-                        fontSize: 16,
-                        fontWeight: sel ? "600" : "400",
-                      }}
-                    >
-                      {opt}
-                    </Text>
-                  </Pressable>
-                )
-              })}
-            </View>
+            <PaperCard padded={false}>
+              {(current.options ?? []).map((opt, idx) => (
+                <OptionRow
+                  key={opt}
+                  letter={LETTERS[idx] ?? String(idx + 1)}
+                  label={opt}
+                  selected={picked[current.id] === opt}
+                  onPress={() => pick(current.id, opt)}
+                  last={idx === (current.options ?? []).length - 1}
+                />
+              ))}
+            </PaperCard>
           </View>
         ) : (
           <EmptyState title={t("xsess.noQ")} glyph="？" />
         )}
       </ScrollView>
-      {/* Bottom nav */}{" "}
+      {/* The action stays outside the scroll: on a long question the only way
+          forward must not be something you have to scroll to find. */}
       <View
         style={{
-          padding: 16,
-          gap: 10,
+          padding: 20,
+          paddingBottom: 28,
           borderTopWidth: 1,
-          borderTopColor: theme.border,
+          borderTopColor: paper.line,
+          backgroundColor: paper.paper,
         }}
       >
-        <Button
+        <LiftedFace
           title={
-            currentIdx + 1 >= questions.length
-              ? submitM.isPending
-                ? t("xsess.submitting")
-                : t("xsess.submitExam")
-              : t("xsess.nextQ")
+            submitM.isPending
+              ? t("xsess.submitting")
+              : isLast
+                ? t("xsess.submitExam")
+                : t("xsess.nextQ")
           }
+          face={isLast ? paper.coral : paper.green}
           onPress={nextQ}
-          disabled={!current || !picked[current.id] || submitM.isPending}
-          loading={submitM.isPending}
-          size="lg"
+          disabled={!current || !answeredCurrent || submitM.isPending}
         />
       </View>
     </SafeAreaView>
-  )
-}
-
-function AudioPlayButton({
-  text,
-  playing,
-  loading,
-  onPlay,
-}: {
-  text: string
-  playing: boolean
-  loading: boolean
-  onPlay: () => void
-}) {
-  const { theme, paper } = useTheme()
-  const t = useT()
-  return (
-    <Pressable
-      onPress={onPlay}
-      disabled={loading}
-      accessibilityRole="button"
-      accessibilityLabel={t("xsess.playAudio")}
-      style={{
-        flexDirection: "row",
-        alignItems: "center",
-        justifyContent: "center",
-        gap: 12,
-        paddingVertical: 18,
-        borderRadius: 4,
-        backgroundColor: theme.accent,
-        opacity: loading ? 0.6 : 1,
-      }}
-    >
-      <Text style={{ fontSize: 22, color: theme.bg }}>
-        {playing ? "…" : "▶"}
-      </Text>
-      <Text
-        style={{
-          fontFamily: fonts.sans,
-          fontSize: 17,
-          fontWeight: "600",
-          color: theme.bg,
-        }}
-      >
-        {loading
-          ? t("xsess.loadingAudio")
-          : playing
-            ? t("xsess.playingAudio")
-            : t("xsess.playAudio")}
-      </Text>
-    </Pressable>
   )
 }

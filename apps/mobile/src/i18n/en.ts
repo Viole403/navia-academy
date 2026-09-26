@@ -122,6 +122,7 @@ const en = {
   "xsess.submitExam": "Submit exam",
   "xsess.submitting": "Submitting…",
   "xsess.question": "Question",
+  "xsess.of": "of",
   "xsess.noQ": "No question at this index",
   "xsess.playAudio": "Play audio",
   "xsess.loadingAudio": "Loading…",

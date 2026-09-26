@@ -5,6 +5,8 @@ import {
   Platform,
   Pressable,
   View,
+  type AccessibilityRole,
+  type AccessibilityState,
   type ImageSourcePropType,
   type StyleProp,
   type ViewStyle,
@@ -81,6 +83,8 @@ export function PressableScale({
   scale = 0.975,
   disabled,
   accessibilityLabel,
+  accessibilityRole,
+  accessibilityState,
 }: {
   onPress?: () => void
   children: React.ReactNode
@@ -89,6 +93,15 @@ export function PressableScale({
   scale?: number
   disabled?: boolean
   accessibilityLabel?: string
+  /**
+   * A row of answers is a radio group, not a stack of buttons, and a
+   * screen-reader user needs to hear that one is chosen. Passing the role
+   * through here means an answer can have both the press feedback and the
+   * semantics, instead of one screen choosing feedback and another
+   * choosing correctness.
+   */
+  accessibilityRole?: AccessibilityRole
+  accessibilityState?: AccessibilityState
 }) {
   const v = useRef(new Animated.Value(1)).current
   const timer = useRef<ReturnType<typeof setTimeout> | null>(null)
@@ -110,6 +123,8 @@ export function PressableScale({
         onPress={onPress}
         disabled={disabled ?? !onPress}
         accessibilityLabel={accessibilityLabel}
+        accessibilityRole={accessibilityRole}
+        accessibilityState={accessibilityState}
         onPressIn={() => settle(scale, 110)}
         onPressOut={() => settle(1, 140)}
         style={style}

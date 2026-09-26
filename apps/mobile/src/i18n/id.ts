@@ -122,6 +122,7 @@ const id: Record<I18nKey, string> = {
   "xsess.submitExam": "Kirim ujian",
   "xsess.submitting": "Mengirim…",
   "xsess.question": "Soal",
+  "xsess.of": "dari",
   "xsess.noQ": "Tidak ada soal di indeks ini",
   "xsess.playAudio": "Putar audio",
   "xsess.loadingAudio": "Memuat…",
