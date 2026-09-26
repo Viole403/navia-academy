@@ -3,6 +3,7 @@ import {
   Animated,
   Platform,
   Pressable,
+  type AccessibilityState,
   type StyleProp,
   type ViewStyle,
 } from "react-native"
@@ -23,6 +24,7 @@ export function PressableScale({
   scale = 0.975,
   disabled,
   accessibilityLabel,
+  accessibilityState,
 }: {
   onPress?: () => void
   children: React.ReactNode
@@ -31,6 +33,7 @@ export function PressableScale({
   scale?: number
   disabled?: boolean
   accessibilityLabel?: string
+  accessibilityState?: AccessibilityState
 }) {
   const v = useRef(new Animated.Value(1)).current
   const timer = useRef<ReturnType<typeof setTimeout> | null>(null)
@@ -52,6 +55,7 @@ export function PressableScale({
         onPress={onPress}
         disabled={disabled ?? !onPress}
         accessibilityLabel={accessibilityLabel}
+        accessibilityState={accessibilityState}
         onPressIn={() => settle(scale, 110)}
         onPressOut={() => settle(1, 140)}
       >

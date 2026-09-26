@@ -1,9 +1,12 @@
-import { useMemo } from "react"
+import { useMemo, useState } from "react"
 import { Pressable, Text, View } from "react-native"
 import { Stack, useLocalSearchParams, useRouter } from "expo-router"
-import { useQuery } from "@tanstack/react-query"
+import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query"
 import { ReadingShell, TappableText } from "@/components/study/reading"
 import { PaperCard } from "@/components/study/PaperCard"
+import { MultipleChoiceCard } from "@/components/study/MultipleChoiceCard"
+import { QueuedNote } from "@/components/study/QueuedNote"
+import { logStudyWithQueue } from "@/utils/offlineQueue"
 import { useTheme } from "@/theme/ThemeProvider"
 import { paperType, families } from "@/theme/paperType"
 import { loadReadings } from "@/lib/content-data"
@@ -37,6 +40,7 @@ export function StoryReader() {
   const language = useOnboardingStore((s) => s.language)
   const tts = useTts()
   const { showsPinyin, showsZhuyin, showsTranslation } = useDisplayMode()
+  const qc = useQueryClient()
 
   const readingsQ = useQuery({
     queryKey: ["library-readings", language],
@@ -48,6 +52,15 @@ export function StoryReader() {
   )
 
   const paragraphs = (story?.paragraphs ?? []) as ReadingParagraph[]
+  const [showQuestions, setShowQuestions] = useState(false)
+  const questions = story?.questions ?? []
+
+  // Reading is worth a little study time and more for a right answer, which is
+  // the same weight the web reader gives it.
+  const answeredM = useMutation({
+    mutationFn: (ok: boolean) => logStudyWithQueue(2, ok ? 8 : 2),
+    onSuccess: () => qc.invalidateQueries({ queryKey: ["progress"] }),
+  })
 
   /** Indonesian-first gloss, English fallback — the content's own rule. */
   const gloss = (p: ReadingParagraph) => {
@@ -196,6 +209,50 @@ export function StoryReader() {
           </Pressable>
         </View>
       ))}
+
+      {/* Comprehension. Most passages carry questions and this reader used to
+          stop at the last paragraph, so on the majority of reading material the
+          questions existed in the bundle and nothing ever showed them. Kept
+          behind a press: the passage is the thing, and a wall of questions
+          before it has been read is a different activity. */}
+      {questions.length > 0 && (
+        <View style={{ gap: 14, marginTop: 6 }}>
+          <Pressable
+            onPress={() => setShowQuestions((v) => !v)}
+            accessibilityRole="button"
+          >
+            <PaperCard tone="week">
+              <Text
+                style={[
+                  paperType.cardBody,
+                  { color: paper.ink, fontFamily: families.nunitoBold },
+                ]}
+              >
+                {showQuestions ? t("read.hideQuestions") : t("read.questions")}
+                {"  "}
+                {String.fromCharCode(0x25be)}
+              </Text>
+            </PaperCard>
+          </Pressable>
+
+          {showQuestions && (
+            <>
+              {questions.map((q) => (
+                <MultipleChoiceCard
+                  key={q.id}
+                  exercise={q}
+                  onAnswered={(ok: boolean) => {
+                    answeredM.mutate(ok)
+                  }}
+                />
+              ))}
+              <QueuedNote
+                show={answeredM.isSuccess && !!answeredM.data?.offline}
+              />
+            </>
+          )}
+        </View>
+      )}
     </ReadingShell>
   )
 }

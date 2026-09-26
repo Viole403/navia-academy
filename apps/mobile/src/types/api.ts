@@ -198,7 +198,7 @@ export interface VocabWord {
  * emitted `[{ id, label }]`, so a question could arrive in a shape this client
  * could not render.
  */
-import type { ExamQuestion } from "@navia/types"
+import type { ContentExercise, ExamQuestion } from "@navia/types"
 
 export type {
   ExamQuestion,
@@ -389,6 +389,8 @@ export interface Reading {
   wordCount?: number
   summary?: string
   paragraphs?: ReadingParagraph[]
+  /** Comprehension questions. Present on a minority of passages. */
+  questions?: ContentExercise[]
   [key: string]: unknown
 }
 
