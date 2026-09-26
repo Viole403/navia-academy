@@ -76,13 +76,55 @@ function splitDialogLine(text: string): [string, string] | undefined {
 const getText = (o: Record<string, unknown>): string =>
   String(o.text ?? o.hanzi ?? o.char ?? "")
 
+/**
+ * The five exams that exist. Anything else in an `examMappings` key is a typo
+ * or a retired exam being reintroduced by accident — the ladder in
+ * `packages/types` and the level pickers in both clients are built from this
+ * set, so an unknown key would produce an entry no screen can reach.
+ */
+const EXAM_TYPES = ["tocfl", "hsk", "goethe", "jlpt", "toefl"] as const
+type ExamType = (typeof EXAM_TYPES)[number]
+
+/** Collected during the run and reported once, so one bad key is not 4,000 errors. */
+const badMappings = new Map<string, string[]>()
+
+/**
+ * Reject mappings whose keys are not real exams. A misspelled key is otherwise
+ * invisible: the entry still publishes, it just never appears under any exam,
+ * and nothing downstream complains.
+ */
+function assertKnownExams(
+  mappings: Record<string, unknown> | undefined,
+  where: string
+): void {
+  if (!mappings) return
+  for (const key of Object.keys(mappings)) {
+    if ((EXAM_TYPES as readonly string[]).includes(key)) continue
+    const seen = badMappings.get(key)
+    if (seen) {
+      if (seen.length < 5) seen.push(where)
+    } else {
+      badMappings.set(key, [where])
+    }
+  }
+}
+
 /** Resolve the exam that owns an entry from its `examMappings`. */
 function resolveExamSource(
   mappings?: Record<string, unknown>
-): string | undefined {
+): ExamType | undefined {
   if (!mappings) return undefined
-  const order = ["tocfl", "hsk", "goethe", "jlpt", "toefl"] as const
-  return order.find((exam) => mappings[exam]) as string | undefined
+  return EXAM_TYPES.find((exam) => mappings[exam])
+}
+
+function reportBadMappings(): void {
+  if (badMappings.size === 0) return
+  const lines = [...badMappings.entries()].map(
+    ([key, wheres]) => `  ${key}  (e.g. ${wheres.join(", ")})`
+  )
+  throw new Error(
+    `Unknown exam in examMappings — expected one of ${EXAM_TYPES.join(", ")}:\n${lines.join("\n")}`
+  )
 }
 
 const EXAM_BY_FILE: Record<string, string> = {
@@ -150,6 +192,10 @@ async function collectContentDomain(
     const fileExam = examForFile(file)
     for (const item of items) {
       const langHint = (item.language as string) ?? lang
+      assertKnownExams(
+        item.examMappings as Record<string, unknown> | undefined,
+        `${file}#${String(item.id ?? "?")}`
+      )
       const src =
         fileExam ??
         resolveExamSource(
@@ -330,6 +376,10 @@ async function collectPlacement(lang: string): Promise<ManifestEntry[]> {
   ) as unknown
   if (!Array.isArray(raw)) return entries // object-shaped placement (de/ja/en) has no per-question audio
   for (const item of raw as Record<string, unknown>[]) {
+    assertKnownExams(
+      item.examMappings as Record<string, unknown> | undefined,
+      `placement#${String(item.id ?? "?")}`
+    )
     const audioText = (item.audioText as string) ?? ""
     if (!audioText) continue
     const src = resolveExamSource(
@@ -348,13 +398,30 @@ async function collectPlacement(lang: string): Promise<ManifestEntry[]> {
   return entries
 }
 
-/** Assessments (zh-only): exercises with `audioText`. */
+/**
+ * Assessments: exercises that carry `audioText`.
+ *
+ * The exam comes from the assessment's own `examMappings`, falling back to the
+ * file path the same way vocabulary does. It used to be hardcoded to "hsk",
+ * which meant a Goethe exercise was tagged as HSK and its German audio was
+ * queued against a Mandarin voice.
+ */
 async function collectAssessments(lang: string): Promise<ManifestEntry[]> {
   const entries: ManifestEntry[] = []
-  for (const { items: exercises } of await collectJsonArrays(
+  for (const { items: exercises, file } of await collectJsonArrays(
     join(JSON_DIR, lang, "assessments")
   )) {
+    const fileExam = examForFile(file)
     for (const assessment of exercises) {
+      assertKnownExams(
+        assessment.examMappings as Record<string, unknown> | undefined,
+        `${file}#${String(assessment.id ?? "?")}`
+      )
+      const src =
+        fileExam ??
+        resolveExamSource(
+          assessment.examMappings as Record<string, unknown> | undefined
+        )
       for (const [i, ex] of (
         (assessment.exercises as Record<string, unknown>[]) ?? []
       ).entries()) {
@@ -364,9 +431,9 @@ async function collectAssessments(lang: string): Promise<ManifestEntry[]> {
         entries.push({
           key: aKey,
           text: audioText,
-          locale: detectLocale(audioText, "hsk", lang),
+          locale: detectLocale(audioText, src, lang),
           language: lang,
-          examSource: "hsk",
+          examSource: src,
           gender: hashGender(aKey),
         })
       }
@@ -493,6 +560,10 @@ async function main() {
     allEntries.push(...entries)
     grandTotal += entries.length
   }
+
+  // Fail before writing anything, so a bad mapping cannot reach the CDN as a
+  // half-published manifest.
+  reportBadMappings()
 
   const deduped = dedupe(allEntries)
   await mkdir(dirname(OUTPUT_MANIFEST), { recursive: true })
