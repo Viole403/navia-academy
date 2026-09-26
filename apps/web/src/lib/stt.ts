@@ -1,3 +1,20 @@
+/**
+ * Speech recognition on the web.
+ *
+ * The comparison logic lives in `@navia/utils` because deciding whether a
+ * transcript counts is not a browser concern — it is the same judgement on a
+ * phone, and both clients need to make it the same way. What stays here is the
+ * part that genuinely is the Web Speech API.
+ */
+import { sttLocale } from "@navia/utils"
+
+export {
+  matchTranscript,
+  normalizeTranscript,
+  sttLocale,
+  transcriptSimilarity,
+} from "@navia/utils"
+
 export interface SttRecognizer {
   stop: () => void
   abort: () => void
@@ -23,24 +40,17 @@ interface RecognitionLike {
 
 type RecClass = new () => RecognitionLike
 
-export function webSpeechSupported(): boolean {
-  if (typeof window === "undefined") return false
+function recognizerCtor(): RecClass | undefined {
+  if (typeof window === "undefined") return undefined
   const w = window as unknown as {
     SpeechRecognition?: RecClass
     webkitSpeechRecognition?: RecClass
   }
-  return Boolean(w.SpeechRecognition || w.webkitSpeechRecognition)
+  return w.SpeechRecognition || w.webkitSpeechRecognition
 }
 
-const LOCALES: Record<string, string> = {
-  zh: "zh-CN",
-  de: "de-DE",
-  en: "en-US",
-  ja: "ja-JP",
-}
-
-export function sttLocale(language: string): string {
-  return LOCALES[language] ?? "en-US"
+export function webSpeechSupported(): boolean {
+  return Boolean(recognizerCtor())
 }
 
 export function startSTT(
@@ -50,11 +60,7 @@ export function startSTT(
   onError: (message: string) => void,
   onEnd: () => void
 ): SttRecognizer | null {
-  const w = window as unknown as {
-    SpeechRecognition?: RecClass
-    webkitSpeechRecognition?: RecClass
-  }
-  const Ctor = w.SpeechRecognition || w.webkitSpeechRecognition
+  const Ctor = recognizerCtor()
   if (!Ctor) return null
   const rec = new Ctor()
   rec.lang = sttLocale(language)
@@ -79,16 +85,4 @@ export function startSTT(
     return null
   }
   return { stop: () => rec.stop(), abort: () => rec.abort() }
-}
-
-export function normalizeTranscript(s: string): string {
-  return s
-    .normalize("NFKC")
-    .toLowerCase()
-    .replace(/[^\p{L}\p{N}]+/gu, "")
-}
-
-export function matchTranscript(transcript: string, target: string): boolean {
-  if (!transcript || !target) return false
-  return normalizeTranscript(transcript) === normalizeTranscript(target)
 }
