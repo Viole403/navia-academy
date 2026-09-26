@@ -1,30 +1,19 @@
 import { useMemo, useState } from "react"
-import {
-  ActivityIndicator,
-  Alert,
-  Pressable,
-  ScrollView,
-  Text,
-  View,
-} from "react-native"
+import { ActivityIndicator, Alert, ScrollView, Text, View } from "react-native"
 import { SafeAreaView } from "react-native-safe-area-context"
 import { useRouter } from "expo-router"
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query"
-import { Button } from "@/components/ui/Button"
 import { EmptyState } from "@/components/ui/EmptyState"
-import { Enter } from "@/components/ui/Enter"
 import { Motif } from "@/components/ui/Motif"
 import { ProgressBar } from "@/components/ui/ProgressBar"
+import { LiftedFace, PaperCard, PaperStat } from "@/components/study/PaperCard"
+import { PressableScale } from "@/components/study/press"
 import { useTheme } from "@/theme/ThemeProvider"
-import { fonts, type } from "@/theme/typography"
+import { useContentLayout } from "@/theme/layout"
+import { paperType } from "@/theme/paperType"
 import { cat, progress, tasks } from "@/api/endpoints"
 import { loadPlacement } from "@/lib/content-data"
-import {
-  examBadgeColor,
-  examDisplayName,
-  languageInfo,
-  motifChar,
-} from "@/lib/languages"
+import { examDisplayName, languageInfo, motifChar } from "@/lib/languages"
 import { useOnboardingStore } from "@/store/onboarding"
 import { useT } from "@/i18n"
 import type { CatAnswer, PlacementItem, PlacementResult } from "@/types/api"
@@ -82,8 +71,71 @@ function buildResult(
   }
 }
 
+type RowState = "idle" | "correct" | "wrong" | "dim"
+
+function OptionRow({
+  label,
+  state,
+  onPress,
+  last,
+}: {
+  label: string
+  state: RowState
+  onPress: () => void
+  last: boolean
+}) {
+  const { paper } = useTheme()
+  // A left stripe rather than a border all round: the answer and the mistake
+  // are the only two things on this row that need to be told apart, and a stripe
+  // reads at a glance without boxing every option in.
+  const accent =
+    state === "correct"
+      ? paper.green
+      : state === "wrong"
+        ? paper.coral
+        : "transparent"
+  return (
+    <PressableScale
+      onPress={onPress}
+      disabled={state !== "idle"}
+      scale={0.99}
+      style={{
+        flexDirection: "row",
+        alignItems: "center",
+        borderTopWidth: last ? 0 : 1,
+        borderTopColor: paper.line,
+        borderLeftWidth: 3,
+        borderLeftColor: accent,
+        backgroundColor:
+          state === "correct"
+            ? paper.greenSoft
+            : state === "wrong"
+              ? paper.coralSoft
+              : "transparent",
+        opacity: state === "dim" ? 0.55 : 1,
+      }}
+      wrapperStyle={{ alignSelf: "stretch" }}
+    >
+      <Text
+        style={[
+          paperType.body,
+          {
+            color: state === "dim" ? paper.inkMuted : paper.ink,
+            flex: 1,
+            paddingVertical: 18,
+            paddingHorizontal: 16,
+          },
+        ]}
+      >
+        {label}
+      </Text>
+    </PressableScale>
+  )
+}
+
 export default function PlacementTestScreen() {
-  const { theme, paper } = useTheme()
+  const { paper } = useTheme()
+  const { column } = useContentLayout()
   const router = useRouter()
   const qc = useQueryClient()
   const language = useOnboardingStore((s) => s.language)
@@ -195,7 +247,7 @@ export default function PlacementTestScreen() {
           justifyContent: "center",
         }}
       >
-        <ActivityIndicator color={theme.accent} size="large" />
+        <ActivityIndicator color={paper.green} size="large" />
       </SafeAreaView>
     )
   }
@@ -220,7 +272,14 @@ export default function PlacementTestScreen() {
       edges={["top"]}
     >
       <ScrollView
-        contentContainerStyle={{ padding: 24, gap: 24, paddingBottom: 48 }}
+        contentContainerStyle={{
+          padding: 20,
+          gap: 22,
+          paddingBottom: 48,
+          maxWidth: column,
+          width: "100%",
+          alignSelf: "center",
+        }}
       >
         <View style={{ gap: 12 }}>
           <View
@@ -231,113 +290,124 @@ export default function PlacementTestScreen() {
             }}
           >
             <View style={{ flex: 1, gap: 8 }}>
-              <Text style={[type.labelSm, { color: theme.textMuted }]}>
+              <Text style={[paperType.label, { color: paper.inkMuted }]}>
                 {examDisplayName(displayType)} · {t("place.suffix")}
               </Text>
-              <Text style={[type.display, { color: theme.text, fontSize: 36 }]}>
+              <Text
+                style={[
+                  paperType.greeting,
+                  { color: paper.ink, fontSize: 30, lineHeight: 34 },
+                ]}
+              >
                 {t("place.findLevel")}
               </Text>
             </View>
             <Motif char={motifChar(language)} size={56} />
           </View>
-          <View style={{ height: 1, backgroundColor: theme.border }} />
+          <View style={{ height: 1, backgroundColor: paper.line }} />
         </View>
 
         {!started && (
-          <Enter>
-            <View style={{ gap: 16 }}>
-              <Text style={[type.body, { color: theme.textMuted }]}>
+          <View style={{ gap: 20 }}>
+            <PaperCard tone="plain">
+              <Text style={[paperType.prose, { color: paper.inkSoft }]}>
                 {MAX_QUESTIONS} {t("place.introA")}
               </Text>
-              <Button title={t("place.start")} onPress={begin} />
-            </View>
-          </Enter>
+            </PaperCard>
+            <LiftedFace
+              title={t("place.start")}
+              face={paper.green}
+              onPress={begin}
+            />
+          </View>
         )}
 
         {started && !result && current && (
-          <View style={{ gap: 20 }}>
+          <View style={{ gap: 18 }}>
             <ProgressBar
               value={answered.length / MAX_QUESTIONS}
-              tint={examBadgeColor(displayType)}
+              tint={paper.green}
             />
-            <Text style={[type.labelSm, { color: theme.textMuted }]}>
+            <Text style={[paperType.label, { color: paper.inkMuted }]}>
               {t("place.question")} {answered.length + 1} {t("place.of")}{" "}
               {MAX_QUESTIONS}
             </Text>
-            <Text style={[type.h2, { color: theme.text }]}>
+            {/* The prompt is the only thing on this page that is not a choice,
+                so it gets air rather than a box around it. */}
+            <Text
+              style={[
+                paperType.cardTitle,
+                { color: paper.ink, fontSize: 26, lineHeight: 32 },
+              ]}
+            >
               {current.prompt}
             </Text>
-            <View style={{ gap: 12 }}>
+            <PaperCard padded={false}>
               {current.options.map((opt, i) => {
                 const isPicked = picked === opt.id
-                const showCorrect = revealing && opt.id === current.correct
+                const isCorrect = opt.id === current.correct
+                const state: RowState = !revealing
+                  ? "idle"
+                  : isCorrect
+                    ? "correct"
+                    : isPicked
+                      ? "wrong"
+                      : "dim"
                 return (
-                  <Enter key={opt.id} index={i}>
-                    <Pressable
-                      onPress={() => pick(opt.id)}
-                      disabled={revealing}
-                      style={{
-                        borderWidth: 1,
-                        borderColor: showCorrect
-                          ? theme.green
-                          : isPicked
-                            ? theme.red
-                            : theme.border,
-                        backgroundColor: showCorrect
-                          ? theme.green + "18"
-                          : theme.surface,
-                        padding: 16,
-                        opacity:
-                          revealing && !isPicked && !showCorrect ? 0.6 : 1,
-                      }}
-                    >
-                      <Text style={[type.body, { color: theme.text }]}>
-                        {opt.label}
-                      </Text>
-                    </Pressable>
-                  </Enter>
+                  <OptionRow
+                    key={opt.id}
+                    label={opt.label}
+                    state={state}
+                    onPress={() => pick(opt.id)}
+                    last={i === current.options.length - 1}
+                  />
                 )
               })}
-            </View>
+            </PaperCard>
           </View>
         )}
 
         {result && (
-          <Enter>
-            <View style={{ gap: 16 }}>
-              <Text style={[type.labelSm, { color: theme.textMuted }]}>
-                {t("place.yourLevel")}
-              </Text>
-              <Text style={[type.display, { color: theme.text, fontSize: 48 }]}>
-                {result.estimatedHsk ?? result.estimatedBand}
-              </Text>
-              <Text style={[type.body, { color: theme.textMuted }]}>
-                {result.correctCount}/{result.totalCount}{" "}
-                {t("place.correctWord")} ·{" "}
-                {result.confidence === "low"
-                  ? t("place.confLow")
-                  : result.confidence === "medium"
-                    ? t("place.confMid")
-                    : t("place.confHigh")}{" "}
-                {t("place.confidence")}
-              </Text>
-              {result.strengths.length > 0 && (
-                <Text style={[type.body, { color: theme.text }]}>
-                  {t("place.strong")}: {result.strengths.join(", ")}
+          <View style={{ gap: 20 }}>
+            <PaperCard tone="review">
+              <View style={{ gap: 16 }}>
+                <Text style={[paperType.label, { color: paper.inkMuted }]}>
+                  {t("place.yourLevel")}
                 </Text>
-              )}
-              {result.weaknesses.length > 0 && (
-                <Text style={[type.body, { color: theme.text }]}>
-                  {t("place.workOn")}: {result.weaknesses.join(", ")}
+                <PaperStat
+                  value={String(result.estimatedHsk ?? result.estimatedBand)}
+                  label={examDisplayName(displayType)}
+                />
+                <View style={{ height: 1, backgroundColor: paper.line }} />
+                <Text style={[paperType.body, { color: paper.inkSoft }]}>
+                  {result.correctCount}/{result.totalCount}{" "}
+                  {t("place.correctWord")} ·{" "}
+                  {result.confidence === "low"
+                    ? t("place.confLow")
+                    : result.confidence === "medium"
+                      ? t("place.confMid")
+                      : t("place.confHigh")}{" "}
+                  {t("place.confidence")}
                 </Text>
-              )}
-              <Button
-                title={t("place.saveStart")}
-                onPress={() => acceptM.mutate(result)}
-                loading={acceptM.isPending}
-              />
-            </View>
-          </Enter>
+                {result.strengths.length > 0 && (
+                  <Text style={[paperType.body, { color: paper.ink }]}>
+                    {t("place.strong")}: {result.strengths.join(", ")}
+                  </Text>
+                )}
+                {result.weaknesses.length > 0 && (
+                  <Text style={[paperType.body, { color: paper.ink }]}>
+                    {t("place.workOn")}: {result.weaknesses.join(", ")}
+                  </Text>
+                )}
+              </View>
+            </PaperCard>
+            <LiftedFace
+              title={t("place.saveStart")}
+              face={paper.green}
+              onPress={() => acceptM.mutate(result)}
+              disabled={acceptM.isPending}
+            />
+          </View>
         )}
       </ScrollView>
     </SafeAreaView>
