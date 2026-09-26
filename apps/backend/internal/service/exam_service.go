@@ -389,14 +389,23 @@ func (s *ExamService) sampleQuestions(examType, examLevel string, count int, que
 
 			if qt == "fill_blank" {
 				q["prompt"] = fmt.Sprintf("Fill in the blank: ________ is a Chinese word for level %s.", examLevel)
+				// 例子 appeared twice in the literal this replaces, which left the
+				// learner with three choices and two right answers.
 				q["correctAnswer"] = "示例"
-				q["options"] = []string{"示例", "例子", "例子", "举子"}
+				q["options"] = distinctStrings(
+					[]string{"示例", "例子", "举子", "范本", "样板"}, "示例", 4)
 			} else if qt == "pronunciation" {
-				q["prompt"] = fmt.Sprintf("What is the correct pinyin for the word '示例'?")
+				q["prompt"] = "What is the correct pinyin for the word '示例'?"
+				// 示例 is read shìlì and nothing else; the other three are tone
+				// errors. Picking the "correct" one at random used to mark a wrong
+				// reading as the answer three times in four.
+				const correct = "shìlì"
 				opts := []string{"shìlì", "shílì", "shìlí", "shíli"}
-				correctIdx := rand.Intn(len(opts))
+				rand.Shuffle(len(opts), func(i, j int) {
+					opts[i], opts[j] = opts[j], opts[i]
+				})
 				q["options"] = opts
-				q["correctAnswer"] = opts[correctIdx]
+				q["correctAnswer"] = correct
 			}
 
 			questions = append(questions, q)
