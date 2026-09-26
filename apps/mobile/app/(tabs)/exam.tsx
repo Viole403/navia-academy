@@ -1,22 +1,20 @@
 import { useEffect, useState } from "react"
-import {
-  ActivityIndicator,
-  Pressable,
-  ScrollView,
-  Text,
-  View,
-} from "react-native"
+import { ActivityIndicator, ScrollView, Text, View } from "react-native"
 import { SafeAreaView } from "react-native-safe-area-context"
 import { useRouter } from "expo-router"
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query"
-import { Button } from "@/components/ui/Button"
-import { Card } from "@/components/ui/Card"
-import { Chip } from "@/components/ui/Chip"
+import {
+  PaperCard,
+  LiftedFace,
+  QuietPill,
+  PaperStat,
+} from "@/components/study/PaperCard"
+import { PressableScale } from "@/components/study/press"
 import { EmptyState } from "@/components/ui/EmptyState"
 import { Motif } from "@/components/ui/Motif"
-import { StudyCard } from "@/components/study/StudyCard"
 import { useTheme } from "@/theme/ThemeProvider"
-import { fonts, type } from "@/theme/typography"
+import { useContentLayout } from "@/theme/layout"
+import { paperType, families } from "@/theme/paperType"
 import { exam, settings } from "@/api/endpoints"
 import {
   examBadgeColor,
@@ -27,13 +25,38 @@ import {
 } from "@/lib/languages"
 import { useOnboardingStore } from "@/store/onboarding"
 import { useT } from "@/i18n"
+import { tap } from "@/utils/feedback"
 import type { ExamProgress, ExamSession } from "@/types/api"
 
+/**
+ * The exam tab, as a page of paper.
+ *
+ * Four bands, each answering one question, in the order a person sitting down to
+ * an exam actually asks them: *do I have one open?* · *let me start one* · *is
+ * there another way?* · *how have I done, and what did I get last time?*
+ *
+ * **A live session is put first and styled as the only thing on the page that is
+ * unfinished.** Everything else waits behind it. An exam half-answered is work
+ * already spent, and burying it under a level picker is how a person quietly
+ * loses twenty minutes of work they had already done.
+ *
+ * Level and track selection is a **grid of pills, not a menu** — the counts are
+ * small and fixed (HSK 1–6, TOCFL 1–6, Goethe A1–C1, JLPT N5–N1, TOEFL-style),
+ * so a list of every combination would be a worse read than the grid for no gain,
+ * and the grid lets the whole ladder be seen at once.
+ *
+ * Pass and fail in the history read as *two different ordinary things*, not as
+ * a verdict: the score keeps its green/ink and only the small word at the right
+ * differs. A row that turned red told someone who had merely not reached the
+ * pass mark that they had failed, which is not the same statement and is not
+ * worth the extra red on the page.
+ */
 export default function ExamTab() {
   const { theme, paper } = useTheme()
   const t = useT()
   const router = useRouter()
   const qc = useQueryClient()
+  const { column } = useContentLayout()
   const language = useOnboardingStore((s) => s.language)
   const storedExamType = useOnboardingStore((s) => s.examType)
   const setStoredExamType = useOnboardingStore((s) => s.setExamType)
@@ -56,11 +79,11 @@ export default function ExamTab() {
     setExamLevel(examLevels(next)[0])
   }, [language, storedExamType])
 
-  const pickExamType = (t: string) => {
-    setExamType(t)
-    setExamLevel(examLevels(t)[0])
-    setStoredExamType(t)
-    settings.update({ active_exam_type: t }).then(() => {
+  const pickExamType = (next: string) => {
+    setExamType(next)
+    setExamLevel(examLevels(next)[0])
+    setStoredExamType(next)
+    settings.update({ active_exam_type: next }).then(() => {
       qc.invalidateQueries({ queryKey: ["settings"] })
     })
   }
@@ -73,10 +96,6 @@ export default function ExamTab() {
   const historyQ = useQuery({
     queryKey: ["exam-history"],
     queryFn: () => exam.history(),
-  })
-  const recommendedQ = useQuery({
-    queryKey: ["exam-recommended"],
-    queryFn: exam.recommended,
   })
 
   const startM = useMutation({
@@ -92,7 +111,8 @@ export default function ExamTab() {
 
   const active = activeQ.data ?? []
   const progressList = progressQ.data ?? []
-  const history = historyQ.data ?? []
+  const history = (historyQ.data ?? []).slice(0, 10)
+  const accent = examBadgeColor(examType) ?? paper.green
 
   return (
     <SafeAreaView
@@ -100,9 +120,14 @@ export default function ExamTab() {
       edges={["top"]}
     >
       <ScrollView
-        contentContainerStyle={{ padding: 24, gap: 28, paddingBottom: 48 }}
+        contentContainerStyle={{
+          padding: 20,
+          gap: 24,
+          maxWidth: column,
+          width: "100%",
+          alignSelf: "center",
+        }}
       >
-        {/* Masthead */}
         <View style={{ gap: 12 }}>
           <View
             style={{
@@ -112,22 +137,27 @@ export default function ExamTab() {
             }}
           >
             <View style={{ flex: 1, gap: 8 }}>
-              <Text style={[type.labelSm, { color: theme.textMuted }]}>
+              <Text style={[paperType.label, { color: paper.inkMuted }]}>
                 {t("exam.kicker")}
               </Text>
-              <Text style={[type.display, { color: theme.text, fontSize: 36 }]}>
+              <Text
+                style={[
+                  paperType.greeting,
+                  { color: paper.ink },
+                  { fontSize: 30, lineHeight: 34 },
+                ]}
+              >
                 {t("exam.title")}
               </Text>
             </View>
             <Motif char={motifChar(language)} size={56} />
           </View>
-          <View style={{ height: 1, backgroundColor: theme.border }} />
+          <View style={{ height: 1, backgroundColor: paper.line }} />
         </View>
 
-        {/* Active sessions first */}
-        {active.length > 0 && (
-          <View style={{ gap: 12 }}>
-            <Text style={[type.labelSm, { color: theme.textMuted }]}>
+        {active.length > 0 ? (
+          <View style={{ gap: 10 }}>
+            <Text style={[paperType.label, { color: paper.inkMuted }]}>
               {t("exam.inProgress")}
             </Text>
             {active.map((s) => (
@@ -143,167 +173,183 @@ export default function ExamTab() {
               />
             ))}
           </View>
-        )}
+        ) : null}
 
-        {/* Start a new exam */}
-        <View style={{ gap: 16 }}>
-          <Text style={[type.labelSm, { color: theme.textMuted }]}>
-            {t("exam.beginNew")}
-          </Text>
-          <Card>
-            <View style={{ gap: 16 }}>
+        <PaperCard tone="plain">
+          <View style={{ gap: 14 }}>
+            <View
+              style={{ flexDirection: "row", alignItems: "center", gap: 12 }}
+            >
               <View
                 style={{
-                  flexDirection: "row",
+                  width: 34,
+                  height: 34,
+                  borderRadius: 17,
+                  backgroundColor: accent + "1F",
                   alignItems: "center",
-                  gap: 12,
+                  justifyContent: "center",
                 }}
               >
                 <View
                   style={{
-                    width: 40,
-                    height: 40,
-                    borderRadius: 20,
-                    backgroundColor:
-                      (examBadgeColor(examType) ?? theme.accent) + "1F",
-                    alignItems: "center",
-                    justifyContent: "center",
+                    width: 11,
+                    height: 11,
+                    borderRadius: 6,
+                    backgroundColor: accent,
                   }}
-                >
-                  <View
-                    style={{
-                      width: 12,
-                      height: 12,
-                      borderRadius: 6,
-                      backgroundColor: examBadgeColor(examType) ?? theme.accent,
-                    }}
-                  />
-                </View>
-                <View style={{ flex: 1 }}>
-                  <Text style={[type.h3, { color: theme.text }]}>
-                    {examDisplayName(examType)}
-                  </Text>
-                  <Text style={[type.caption, { color: theme.textMuted }]}>
-                    {examLevels(examType).length} levels · {info.nativeName}
-                  </Text>
-                </View>
+                />
               </View>
-              {examTypes.length > 1 && (
-                <View style={{ gap: 8 }}>
-                  <Text style={[type.labelSm, { color: theme.textMuted }]}>
-                    {t("exam.track")}
-                  </Text>
-                  <ScrollView
-                    horizontal
-                    showsHorizontalScrollIndicator={false}
-                    contentContainerStyle={{ gap: 8 }}
-                  >
-                    {examTypes.map((t) => (
-                      <Chip
-                        key={t}
-                        label={examDisplayName(t)}
-                        selected={examType === t}
-                        tint={examBadgeColor(t)}
-                        onPress={() => pickExamType(t)}
-                      />
-                    ))}
-                  </ScrollView>
-                </View>
-              )}
-              <View style={{ gap: 8 }}>
-                <Text style={[type.labelSm, { color: theme.textMuted }]}>
-                  {t("exam.level")}
+              <View style={{ flex: 1, gap: 1 }}>
+                <Text style={[paperType.cardTitle, { color: paper.ink }]}>
+                  {examDisplayName(examType)}
+                </Text>
+                <Text style={[paperType.cardBody, { color: paper.inkMuted }]}>
+                  {examLevels(examType).length} {t("exam.levels")} ·{" "}
+                  {info.nativeName}
+                </Text>
+              </View>
+            </View>
+
+            {examTypes.length > 1 ? (
+              <View style={{ gap: 6 }}>
+                <Text style={[paperType.label, { color: paper.inkMuted }]}>
+                  {t("exam.track")}
                 </Text>
                 <View
-                  style={{
-                    flexDirection: "row",
-                    flexWrap: "wrap",
-                    gap: 8,
-                  }}
+                  style={{ flexDirection: "row", flexWrap: "wrap", gap: 8 }}
                 >
-                  {examLevels(examType).map((lv) => (
-                    <Chip
-                      key={lv}
-                      label={lv}
-                      selected={examLevel === lv}
-                      onPress={() => setExamLevel(lv)}
+                  {examTypes.map((x) => (
+                    <QuietPill
+                      key={x}
+                      title={examDisplayName(x)}
+                      onPress={() => pickExamType(x)}
+                      style={
+                        examType === x
+                          ? {
+                              borderColor: accent,
+                              backgroundColor: accent + "18",
+                            }
+                          : undefined
+                      }
                     />
                   ))}
                 </View>
               </View>
-              <Button
-                title={
-                  startM.isPending
-                    ? t("exam.preparing")
-                    : `Start ${examDisplayName(examType)} ${examLevel}`
-                }
-                onPress={() => startM.mutate()}
-                disabled={startM.isPending}
-                loading={startM.isPending}
-              />
+            ) : null}
+
+            <View style={{ gap: 6 }}>
+              <Text style={[paperType.label, { color: paper.inkMuted }]}>
+                {t("exam.level")}
+              </Text>
+              <View style={{ flexDirection: "row", flexWrap: "wrap", gap: 8 }}>
+                {examLevels(examType).map((lv) => (
+                  <QuietPill
+                    key={lv}
+                    title={lv}
+                    onPress={() => {
+                      tap()
+                      setExamLevel(lv)
+                    }}
+                    style={
+                      examLevel === lv
+                        ? {
+                            borderColor: accent,
+                            backgroundColor: accent + "18",
+                          }
+                        : undefined
+                    }
+                  />
+                ))}
+              </View>
             </View>
-          </Card>
-        </View>
 
-        {/* Adaptive (CAT) */}
-        <StudyCard
-          tone="challenge"
-          tag={t("adapt.kicker").toUpperCase()}
-          title={t("adapt.title")}
-          body={t("adapt.intro")}
-          onPress={() => router.push("/exam-adaptive")}
-        />
+            <LiftedFace
+              title={
+                startM.isPending
+                  ? t("exam.preparing")
+                  : `${t("exam.beginNew")} · ${examDisplayName(examType)} ${examLevel}`
+              }
+              onPress={() => startM.mutate()}
+              disabled={startM.isPending}
+              face={accent}
+              style={{ marginTop: 2 }}
+            />
+          </View>
+        </PaperCard>
 
-        {/* Progress per exam */}
-        {progressList.length > 0 && (
-          <View style={{ gap: 12 }}>
-            <Text style={[type.labelSm, { color: theme.textMuted }]}>
+        <PressableScale onPress={() => router.push("/exam-adaptive")}>
+          <PaperCard tone="challenge" padded>
+            <View style={{ gap: 4 }}>
+              <Text
+                style={[
+                  paperType.tag,
+                  {
+                    color: paper.surface.challenge.border,
+                    alignSelf: "flex-start",
+                  },
+                ]}
+              >
+                {t("adapt.kicker").toUpperCase()}
+              </Text>
+              <Text style={[paperType.cardTitle, { color: paper.ink }]}>
+                {t("adapt.title")}
+              </Text>
+              <Text style={[paperType.cardBody, { color: paper.inkSoft }]}>
+                {t("adapt.intro")}
+              </Text>
+            </View>
+          </PaperCard>
+        </PressableScale>
+
+        {progressList.length > 0 ? (
+          <View style={{ gap: 10 }}>
+            <Text style={[paperType.label, { color: paper.inkMuted }]}>
               {t("exam.standing")}
             </Text>
-            <View style={{ borderTopWidth: 1, borderTopColor: theme.border }}>
+            <PaperCard padded>
               {progressList.map((p: ExamProgress, i: number) => (
                 <View
                   key={p.exam_type}
                   style={{
                     flexDirection: "row",
                     alignItems: "center",
-                    paddingVertical: 14,
-                    borderBottomWidth: i === progressList.length - 1 ? 1 : 0,
-                    borderBottomColor: theme.border,
                     justifyContent: "space-between",
+                    paddingVertical: 12,
+                    borderTopWidth: i === 0 ? 0 : 1,
+                    borderTopColor: paper.lineSoft,
                   }}
                 >
-                  <View>
-                    <Text style={[type.h3, { color: theme.text }]}>
+                  <View style={{ flex: 1, gap: 1 }}>
+                    <Text style={[paperType.cardTitleSm, { color: paper.ink }]}>
                       {examDisplayName(p.exam_type)}
                     </Text>
-                    <Text style={[type.caption, { color: theme.textMuted }]}>
-                      Level {p.current_level ?? "—"} · {p.total_attempts}{" "}
-                      {t("exam.attempts")}
+                    <Text
+                      style={[paperType.statLabel, { color: paper.inkMuted }]}
+                    >
+                      {t("exam.level")} {p.current_level ?? "—"} ·{" "}
+                      {p.total_attempts} {t("exam.attempts")}
                     </Text>
                   </View>
                   <Text
-                    style={{
-                      fontFamily: fonts.serif,
-                      fontSize: 28,
-                      color: theme.accent,
-                    }}
+                    style={[
+                      paperType.statValue,
+                      { color: paper.green, fontSize: 24, lineHeight: 28 },
+                    ]}
                   >
                     {p.highest_score}
                   </Text>
                 </View>
               ))}
-            </View>
+            </PaperCard>
           </View>
-        )}
+        ) : null}
 
-        {/* History */}
-        <View style={{ gap: 12 }}>
-          <Text style={[type.labelSm, { color: theme.textMuted }]}>
+        <View style={{ gap: 10 }}>
+          <Text style={[paperType.label, { color: paper.inkMuted }]}>
             {t("exam.past")}
           </Text>
           {historyQ.isLoading ? (
-            <ActivityIndicator color={theme.accent} />
+            <ActivityIndicator color={paper.green} />
           ) : history.length === 0 ? (
             <EmptyState
               title={t("exam.noSittings")}
@@ -311,62 +357,67 @@ export default function ExamTab() {
               glyph="◷"
             />
           ) : (
-            <View style={{ borderTopWidth: 1, borderTopColor: theme.border }}>
-              {history.slice(0, 10).map((r, i) => (
-                <View
-                  key={r.id}
-                  style={{
-                    flexDirection: "row",
-                    alignItems: "center",
-                    paddingVertical: 12,
-                    borderBottomWidth:
-                      i === history.slice(0, 10).length - 1 ? 1 : 0,
-                    borderBottomColor: theme.border,
-                    gap: 12,
-                  }}
-                >
-                  <Text
+            <PaperCard padded>
+              {history.map((r, i) => {
+                const passed = r.score >= r.passing_score
+                return (
+                  <View
+                    key={r.id}
                     style={{
-                      fontFamily: fonts.serif,
-                      fontSize: 22,
-                      color:
-                        r.score >= r.passing_score ? theme.green : theme.red,
-                      width: 56,
+                      flexDirection: "row",
+                      alignItems: "center",
+                      gap: 12,
+                      paddingVertical: 11,
+                      borderTopWidth: i === 0 ? 0 : 1,
+                      borderTopColor: paper.lineSoft,
                     }}
                   >
-                    {r.score}
-                  </Text>
-                  <View style={{ flex: 1 }}>
                     <Text
                       style={[
-                        type.bodySm,
-                        { color: theme.text, fontWeight: "600" },
+                        paperType.statValue,
+                        {
+                          color: passed ? paper.green : paper.ink,
+                          width: 52,
+                          fontSize: 22,
+                          lineHeight: 26,
+                        },
                       ]}
                     >
-                      {examDisplayName(r.exam_type)} · Level {r.exam_level}
+                      {r.score}
                     </Text>
-                    <Text style={[type.caption, { color: theme.textMuted }]}>
-                      {new Date(r.created_at).toLocaleDateString()} ·{" "}
-                      {r.correct_answers}/{r.total_questions}{" "}
-                      {t("exam.correct")}
+                    <View style={{ flex: 1, gap: 1 }}>
+                      <Text
+                        style={[
+                          paperType.cardBody,
+                          {
+                            color: paper.ink,
+                            fontFamily: families.nunitoExtraBold,
+                          },
+                        ]}
+                      >
+                        {examDisplayName(r.exam_type)} · {t("exam.level")}{" "}
+                        {r.exam_level}
+                      </Text>
+                      <Text
+                        style={[paperType.statLabel, { color: paper.inkMuted }]}
+                      >
+                        {new Date(r.created_at).toLocaleDateString()} ·{" "}
+                        {r.correct_answers}/{r.total_questions}{" "}
+                        {t("exam.correct")}
+                      </Text>
+                    </View>
+                    <Text
+                      style={[
+                        paperType.statLabel,
+                        { color: passed ? paper.green : paper.inkMuted },
+                      ]}
+                    >
+                      {passed ? t("exam.pass") : "—"}
                     </Text>
                   </View>
-                  <Text
-                    style={[
-                      type.labelSm,
-                      {
-                        color:
-                          r.score >= r.passing_score
-                            ? theme.green
-                            : theme.textMuted,
-                      },
-                    ]}
-                  >
-                    {r.score >= r.passing_score ? t("exam.pass") : "—"}
-                  </Text>
-                </View>
-              ))}
-            </View>
+                )
+              })}
+            </PaperCard>
           )}
         </View>
       </ScrollView>
@@ -374,6 +425,11 @@ export default function ExamTab() {
   )
 }
 
+/**
+ * The one unfinished thing on the page. Inked in the accent and set on a tinted
+ * card so it reads as *open* rather than as another card in a list — the resume
+ * action is the whole card, so a 20px circle is not the tap target.
+ */
 function ActiveSessionCard({
   session,
   onResume,
@@ -381,35 +437,54 @@ function ActiveSessionCard({
   session: ExamSession
   onResume: () => void
 }) {
-  const { theme, paper } = useTheme()
+  const { paper } = useTheme()
   const t = useT()
   return (
-    <Pressable
-      onPress={onResume}
-      style={{
-        padding: 20,
-        borderWidth: 1.5,
-        borderColor: theme.accent,
-        backgroundColor: theme.accent + "0A",
-        borderRadius: 2,
-        gap: 8,
-      }}
-    >
-      <View style={{ flexDirection: "row", justifyContent: "space-between" }}>
-        <Text style={[type.labelSm, { color: theme.textMuted }]}>
-          {t("exam.resume")}
-        </Text>
-        <Text style={[type.labelSm, { color: theme.accent }]}>
-          {t("exam.active")}
-        </Text>
-      </View>
-      <Text style={[type.h2, { color: theme.text }]}>
-        {examDisplayName(session.exam_type)} · Level {session.exam_level}
-      </Text>
-      <Text style={[type.bodySm, { color: theme.textMuted }]}>
-        Question {session.current_question_index + 1} of{" "}
-        {session.question_count}
-      </Text>
-    </Pressable>
+    <PressableScale onPress={onResume}>
+      <PaperCard
+        tone="plain"
+        style={{ borderColor: paper.green, borderWidth: 1.5 }}
+      >
+        <View style={{ gap: 6 }}>
+          <View
+            style={{
+              flexDirection: "row",
+              justifyContent: "space-between",
+              alignItems: "center",
+            }}
+          >
+            <Text style={[paperType.label, { color: paper.inkMuted }]}>
+              {t("exam.resume")}
+            </Text>
+            <View
+              style={{
+                backgroundColor: paper.greenSoft,
+                borderRadius: paper.radius.tag,
+                paddingHorizontal: 8,
+                paddingVertical: 3,
+              }}
+            >
+              <Text style={[paperType.tag, { color: paper.greenDark }]}>
+                {t("exam.active").toUpperCase()}
+              </Text>
+            </View>
+          </View>
+          <Text style={[paperType.cardTitle, { color: paper.ink }]}>
+            {examDisplayName(session.exam_type)} · {t("exam.level")}{" "}
+            {session.exam_level}
+          </Text>
+          <View style={{ flexDirection: "row", gap: 18 }}>
+            <PaperStat
+              value={`${session.current_question_index + 1}`}
+              label={t("exam.question")}
+            />
+            <PaperStat
+              value={`${session.question_count}`}
+              label={t("exam.total")}
+            />
+          </View>
+        </View>
+      </PaperCard>
+    </PressableScale>
   )
 }
