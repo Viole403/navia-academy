@@ -1,43 +1,49 @@
-import { useMemo, useState } from "react"
+import { useRef, useState } from "react"
 import { ActivityIndicator, ScrollView, Text, View } from "react-native"
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query"
 import { Stack, useRouter } from "expo-router"
 import { SafeAreaView } from "react-native-safe-area-context"
+import { cefrBandOf } from "@navia/utils"
+
 import { EmptyState } from "@/components/ui/EmptyState"
 import { ProgressBar } from "@/components/ui/ProgressBar"
 import { LiftedFace, PaperCard, PaperStat } from "@/components/study/PaperCard"
 import { PressableScale } from "@/components/study/press"
+import { useCatExam, type CatResult } from "@/hooks/useCatExam"
 import { useContentFaces } from "@/hooks/useContentFaces"
 import { useContentLayout } from "@/theme/layout"
 import { useTheme } from "@/theme/ThemeProvider"
 import { paperType } from "@/theme/paperType"
 import { cat } from "@/api/endpoints"
-import { loadPlacement } from "@/lib/content-data"
+import { loadVocabulary } from "@/lib/content-data"
 import { languageInfo, motifChar } from "@/lib/languages"
 import { useOnboardingStore } from "@/store/onboarding"
 import { useTts } from "@/hooks/useTts"
 import { useT } from "@/i18n"
 import { tap, thud } from "@/utils/feedback"
-import type { CatAnswer, PlacementItem } from "@/types/api"
+import type { CatAnswer } from "@/types/api"
 
-const MAX_QUESTIONS = 12
 const REVEAL_MS = 650
 
-type RowState = "idle" | "correct" | "wrong" | "dim"
-
 /**
- * /exam-adaptive — repeatable adaptive practice (web parity: /exam/adaptive).
+ * /exam-adaptive — the adaptive estimate (web parity: /exam/adaptive).
  *
- * Same band-walk and `elo-v1` submit semantics as the onboarding placement test,
- * but repeatable: it records a CAT result and shows past estimates rather than
- * gating onboarding. **The options are one sheet with a stripe, matching the
- * placement test it shares its engine with** — two sibling screens that answer
- * the same kind of question should not ask for the answer in two different ways.
+ * Runs the same engine as the web session: a single rating updated by the
+ * logistic Elo rule, questions chosen near that rating, and a stop once the
+ * estimate is precise enough to name a band. The maths is in `@navia/utils`
+ * because the web session and the Go backend that recomputes the rating all have
+ * to agree on it.
+ *
+ * This replaced a band walk that stepped through the placement bands and
+ * submitted `band * 100` as the rating under the `elo-v1` engine version. Same
+ * field names, different algorithm: the same answers scored differently
+ * depending on which device collected them, and the label claimed an engine the
+ * screen did not run.
  *
  * The result is an estimate, and it is labelled as one. An adaptive score is a
- * *guess about a level*, not a grade, so the number is presented with its
- * confidence beside it and the history underneath is a list of previous guesses
- * rather than a record of achievement.
+ * guess about a level, not a grade, so the number appears with its spread beside
+ * it and the history is a list of previous guesses rather than a record of
+ * achievement.
  */
 export function ExamAdaptive() {
   const { paper } = useTheme()
@@ -51,58 +57,50 @@ export function ExamAdaptive() {
   const tts = useTts()
 
   const [started, setStarted] = useState(false)
-  const [band, setBand] = useState(3)
-  const [asked, setAsked] = useState<string[]>([])
-  const [answered, setAnswered] = useState<
-    { item: PlacementItem; correct: boolean }[]
-  >([])
   const [picked, setPicked] = useState<string | null>(null)
   const [revealing, setRevealing] = useState(false)
   const [startTs, setStartTs] = useState(0)
+  const [savedResult, setSavedResult] = useState<CatResult | null>(null)
+  const startTsRef = useRef(0)
 
-  const bankQ = useQuery({
-    queryKey: ["placement", language],
-    queryFn: () => loadPlacement(language),
+  const vocabQ = useQuery({
+    queryKey: ["library-vocabulary", language],
+    queryFn: () => loadVocabulary(language),
   })
   const historyQ = useQuery({
     queryKey: ["cat-progress"],
     queryFn: cat.progress,
   })
 
-  const bank = bankQ.data ?? []
-  const current = useMemo<PlacementItem | null>(() => {
-    if (!started || bank.length === 0) return null
-    const pool = bank.filter((q) => !asked.includes(q.id))
-    if (pool.length === 0) return null
-    pool.sort((a, b) => Math.abs(a.band - band) - Math.abs(b.band - band))
-    return pool[0] ?? null
-  }, [started, bank, asked, band])
-
-  const finished =
-    answered.length > 0 && (answered.length >= MAX_QUESTIONS || !current)
-  const correctCount = answered.filter((a) => a.correct).length
+  const activeExam = examType ?? languageInfo(language).examTypes[0]
+  const exam = useCatExam(vocabQ.data ?? [], activeExam)
 
   const saveM = useMutation({
-    mutationFn: async () => {
-      const type = examType ?? languageInfo(language).examTypes[0]
-      const answers: CatAnswer[] = answered.map((a) => ({
-        item_id: a.item.id,
-        item_elo: a.item.band * 100,
+    mutationFn: async (r: CatResult) => {
+      // The log is the source of truth: the backend replays it and ignores the
+      // rating sent here, so the submitted estimate is only a cached copy.
+      const answers: CatAnswer[] = exam.log.map((a) => ({
+        item_id: a.wordId,
+        item_elo: a.elo,
         correct: a.correct,
-        format: "multiple-choice",
+        format: a.format,
       }))
       await cat.submitResult({
-        exam_type: type,
-        elo_estimate: band * 100,
-        total_questions: answered.length,
-        correct_answers: correctCount,
-        time_taken: Math.max(1, Math.round((Date.now() - startTs) / 1000)),
+        exam_type: activeExam,
+        elo_estimate: r.eloEstimate,
+        total_questions: r.answered,
+        correct_answers: r.correct,
+        time_taken: Math.max(
+          1,
+          Math.round((Date.now() - startTsRef.current) / 1000)
+        ),
         answers,
         engine_version: "elo-v1",
       })
     },
-    onSuccess: () => {
+    onSuccess: (_d, r) => {
       thud()
+      setSavedResult(r)
       qc.invalidateQueries({ queryKey: ["cat-progress"] })
     },
   })
@@ -110,31 +108,43 @@ export function ExamAdaptive() {
   const begin = () => {
     tap()
     setStarted(true)
-    setBand(3)
-    setAsked([])
-    setAnswered([])
     setPicked(null)
+    setRevealing(false)
+    setSavedResult(null)
     setStartTs(Date.now())
+    startTsRef.current = Date.now()
+    exam.start()
   }
 
-  const pick = (optionId: string) => {
+  const current = exam.current
+  const finished = exam.done
+  const answeredCount = exam.log.length
+
+  const choose = (option: string) => {
     if (!current || revealing || finished) return
-    const correct = optionId === current.correct
-    setPicked(optionId)
+    setPicked(option)
     setRevealing(true)
+    // The reveal is a beat for the learner to see which answer was right; the
+    // rating moves on the next question either way.
     setTimeout(() => {
-      setAnswered((a) => [...a, { item: current, correct }])
-      setAsked((a) => [...a, current.id])
-      setBand((b) => Math.max(1, Math.min(6, b + (correct ? 1 : -1))))
       setPicked(null)
       setRevealing(false)
+      exam.answer(option)
     }, REVEAL_MS)
+  }
+
+  // Submit once the engine says it is done.
+  if (finished && exam.result && !savedResult && !saveM.isPending) {
+    saveM.mutate(exam.result)
   }
 
   const goBack = () => {
     if (router.canGoBack()) router.back()
     else router.replace("/(tabs)/exam")
   }
+
+  const result = savedResult ?? exam.result
+  const band = result ? cefrBandOf(result.eloEstimate) : null
 
   const masthead = (
     <View style={{ gap: 8 }}>
@@ -176,12 +186,12 @@ export function ExamAdaptive() {
         </PressableScale>
         {started && !finished ? (
           <Text style={[paperType.label, { color: paper.inkMuted }]}>
-            {t("adapt.question")} {answered.length + 1} / {MAX_QUESTIONS}
+            {t("adapt.question")} {answeredCount + 1}
           </Text>
         ) : null}
       </View>
       <ProgressBar
-        value={started ? answered.length / MAX_QUESTIONS : 0}
+        value={finished ? 1 : Math.min(1, answeredCount / 20)}
         height={2}
         tint={paper.green}
       />
@@ -200,45 +210,55 @@ export function ExamAdaptive() {
           <>
             {masthead}
             <PaperCard tone="word">
-              <Text style={[paperType.prose, { color: paper.inkSoft }]}>
+              <Text style={[paperType.bodySm, { color: paper.ink }]}>
                 {t("adapt.intro")}
               </Text>
             </PaperCard>
-            <LiftedFace
-              title={t("adapt.start")}
-              face={paper.green}
-              onPress={begin}
-            />
-
-            {(historyQ.data ?? []).length > 0 && (
+            {vocabQ.isError ? (
+              <>
+                <EmptyState
+                  title={t("lib.failedTitle")}
+                  message={t("common.loadFailed")}
+                  glyph={motifChar(language)}
+                />
+                <LiftedFace
+                  title={t("common.retry")}
+                  face={paper.green}
+                  onPress={() => vocabQ.refetch()}
+                />
+              </>
+            ) : (
+              <LiftedFace
+                title={t("adapt.begin")}
+                face={paper.green}
+                disabled={vocabQ.isLoading || (vocabQ.data ?? []).length < 4}
+                onPress={begin}
+              />
+            )}
+            {historyQ.data && historyQ.data.length > 0 && (
               <View style={{ gap: 10 }}>
                 <Text style={[paperType.label, { color: paper.inkMuted }]}>
-                  {t("adapt.history")}
+                  {t("adapt.past")}
                 </Text>
                 <PaperCard padded={false}>
-                  {(historyQ.data ?? []).slice(0, 5).map((h, i) => (
+                  {historyQ.data.slice(0, 5).map((h, i) => (
                     <View
-                      key={h.id}
+                      key={h.id ?? i}
                       style={{
                         flexDirection: "row",
                         justifyContent: "space-between",
-                        alignItems: "center",
-                        paddingVertical: 12,
-                        paddingHorizontal: 16,
+                        paddingVertical: 11,
+                        paddingHorizontal: 14,
                         borderTopWidth: i === 0 ? 0 : 1,
                         borderTopColor: paper.lineSoft,
                       }}
                     >
-                      <Text style={[paperType.cardBody, { color: paper.ink }]}>
-                        {(h.created_at ?? "").slice(0, 10)}
+                      <Text style={[paperType.bodySm, { color: paper.ink }]}>
+                        {String(h.exam_type ?? "").toUpperCase()}
                       </Text>
-                      <Text
-                        style={[
-                          paperType.statValue,
-                          { color: paper.green, fontSize: 19 },
-                        ]}
-                      >
-                        {h.elo_estimate}
+                      <Text style={[paperType.note, { color: paper.inkMuted }]}>
+                        {Math.round(Number(h.elo_estimate ?? 0))} ·{" "}
+                        {String(h.cefr_band ?? "")}
                       </Text>
                     </View>
                   ))}
@@ -246,136 +266,145 @@ export function ExamAdaptive() {
               </View>
             )}
           </>
-        ) : finished ? (
+        ) : finished && result ? (
           <>
             {masthead}
-            <PaperCard tone="review">
-              <Text style={[paperType.label, { color: paper.inkMuted }]}>
-                {t("adapt.elo").toUpperCase()}
+            <PaperCard tone="word" style={{ alignItems: "center", gap: 6 }}>
+              <Text
+                style={[
+                  paperType.greeting,
+                  { color: paper.ink, fontSize: 34, lineHeight: 38 },
+                ]}
+              >
+                {band ? band.name : ""}
               </Text>
-              <PaperStat
-                value={`${band * 100}`}
-                label={`${correctCount} ${t("exam.correct")} / ${answered.length}`}
-              />
+              <Text style={[paperType.note, { color: paper.inkMuted }]}>
+                {t("adapt.estimate", {
+                  elo: String(Math.round(result.eloEstimate)),
+                  sd: String(Math.round(result.eloSd)),
+                })}
+              </Text>
+              {!!result.recommendedLevel && (
+                <Text style={[paperType.bodySm, { color: paper.greenDark }]}>
+                  {t("adapt.recommended", {
+                    level: result.recommendedLevel,
+                  })}
+                </Text>
+              )}
             </PaperCard>
-            {saveM.isError && (
-              <Text style={[paperType.note, { color: paper.coral }]}>
-                {t("game.saveFailed")}
-              </Text>
+            <View style={{ flexDirection: "row", gap: 12 }}>
+              <PaperStat
+                label={t("adapt.answered")}
+                value={String(result.answered)}
+              />
+              <PaperStat
+                label={t("adapt.correct")}
+                value={String(result.correct)}
+              />
+            </View>
+            {result.weakBands.length > 0 && (
+              <PaperCard tone="plain">
+                <Text style={[paperType.note, { color: paper.inkMuted }]}>
+                  {t("adapt.weak", { bands: result.weakBands.join(", ") })}
+                </Text>
+              </PaperCard>
             )}
             <LiftedFace
-              title={saveM.isPending ? t("prog.saving") : t("common.save")}
+              title={t("adapt.again")}
               face={paper.green}
-              disabled={saveM.isPending}
-              onPress={() => saveM.mutate()}
-            />
-            <LiftedFace
-              small
-              title={t("common.retry")}
-              face={paper.inkSoft}
-              textColor={paper.ink}
               onPress={begin}
             />
           </>
-        ) : bankQ.isLoading ? (
-          <PaperCard tone="review" style={{ alignItems: "center" }}>
+        ) : vocabQ.isLoading ? (
+          <View style={{ alignItems: "center", paddingVertical: 40 }}>
             <ActivityIndicator color={paper.green} />
-          </PaperCard>
-        ) : bankQ.isError ? (
-          <View style={{ gap: 16 }}>
-            <EmptyState
-              title={t("adapt.noBank")}
-              message={t("common.loadFailed")}
-              glyph={motifChar(language)}
-            />
-            <LiftedFace
-              title={t("common.retry")}
-              face={paper.green}
-              onPress={() => bankQ.refetch()}
-            />
           </View>
-        ) : !current ? (
-          <EmptyState
-            title={t("adapt.noBank")}
-            message={t("adapt.noBankMsg")}
-            glyph={motifChar(language)}
-          />
-        ) : (
-          <View style={{ gap: 18 }}>
-            <Text
-              style={[
-                paperType.cardTitle,
-                { color: paper.ink, fontSize: 24, lineHeight: 30 },
-              ]}
-            >
-              {current.prompt}
-            </Text>
-            <PressableScale
-              onPress={() => tts.play(current.prompt)}
-              accessibilityLabel={t("xsess.playAudio")}
-              style={{ alignSelf: "flex-start" }}
-            >
-              <Text style={[paperType.link, { color: paper.inkMuted }]}>
-                ▸ {t("xsess.playAudio")}
-              </Text>
-            </PressableScale>
-
+        ) : current ? (
+          <>
+            <PaperCard tone="plain">
+              {current.stimulusType === "audio" ? (
+                <LiftedFace
+                  title={t("common.play")}
+                  face={paper.green}
+                  onPress={() =>
+                    tts.play(current.audioText ?? current.word.hanzi)
+                  }
+                />
+              ) : (
+                <Text
+                  style={[
+                    paperType.greeting,
+                    { color: paper.ink, fontSize: 26, lineHeight: 32 },
+                  ]}
+                >
+                  {current.prompt}
+                </Text>
+              )}
+            </PaperCard>
             <PaperCard padded={false}>
               {current.options.map((o, i) => {
-                const isPick = picked === o.id
-                const state: RowState = !revealing
+                const chosen = picked === o
+                const isRight = o === current.correctAnswer
+                const state = !revealing
                   ? "idle"
-                  : o.id === current.correct
+                  : isRight
                     ? "correct"
-                    : isPick
+                    : chosen
                       ? "wrong"
                       : "dim"
-                const stripe =
-                  state === "correct"
-                    ? paper.green
-                    : state === "wrong"
-                      ? paper.coral
-                      : "transparent"
                 return (
                   <PressableScale
-                    key={o.id}
-                    onPress={() => pick(o.id)}
-                    disabled={revealing}
+                    key={o + i}
+                    onPress={() => choose(o)}
                     scale={0.99}
-                    accessibilityRole="radio"
-                    accessibilityState={{ selected: isPick }}
+                    disabled={revealing}
+                    accessibilityLabel={o}
                     style={{
+                      flexDirection: "row",
+                      alignItems: "center",
+                      gap: 12,
+                      paddingVertical: 13,
+                      paddingHorizontal: 14,
                       borderTopWidth: i === 0 ? 0 : 1,
                       borderTopColor: paper.lineSoft,
-                      borderLeftWidth: 3,
-                      borderLeftColor: stripe,
-                      backgroundColor:
-                        state === "correct"
-                          ? paper.greenSoft
-                          : state === "wrong"
-                            ? paper.coralSoft
-                            : "transparent",
-                      opacity: state === "dim" ? 0.55 : 1,
+                      opacity: state === "dim" ? 0.45 : 1,
                     }}
                   >
                     <Text
+                      style={{
+                        fontFamily: faces.display,
+                        fontSize: 20,
+                        color: paper.green,
+                      }}
+                    >
+                      {String.fromCharCode(65 + i)}
+                    </Text>
+                    <Text
                       style={[
-                        paperType.body,
+                        paperType.cardTitleSm,
                         {
-                          color: paper.ink,
-                          fontFamily: faces.display,
-                          paddingVertical: 17,
-                          paddingHorizontal: 16,
+                          color:
+                            state === "wrong"
+                              ? paper.coral
+                              : state === "correct"
+                                ? paper.greenDark
+                                : paper.ink,
                         },
                       ]}
                     >
-                      {o.label}
+                      {o}
                     </Text>
                   </PressableScale>
                 )
               })}
             </PaperCard>
-          </View>
+          </>
+        ) : (
+          <EmptyState
+            title={t("lib.failedTitle")}
+            message={t("common.loadFailed")}
+            glyph={motifChar(language)}
+          />
         )}
       </ScrollView>
     </SafeAreaView>
