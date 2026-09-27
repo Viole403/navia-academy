@@ -166,11 +166,15 @@ export function LiftedFace({
 }) {
   const { paper, resolvedMode } = useTheme()
   const faceColor = face ?? paper.coral
-  // Derived from the face rather than picked from a palette: a caller that passes
-  // a green face used to get the coral shoulder, so the button wore two colours.
+  // Derived from the face so a caller cannot get it wrong by picking a palette
+  // entry. A disabled button is the exception: darkening its already-muted face
+  // toward black drew a dark outline around a light one, which read as a stray
+  // line. It fades toward the page instead.
   const shoulderColor =
     shoulder ??
-    mix(faceColor, resolvedMode === "dark" ? "#000000" : paper.paper, 0.24)
+    (disabled
+      ? mix(faceColor, paper.paper, 0.35)
+      : mix(faceColor, resolvedMode === "dark" ? "#000000" : paper.paper, 0.24))
   const height = small ? 40 : 52
   return (
     <PressableScale
