@@ -175,10 +175,8 @@ export function paperFor(theme: Theme, mode: ResolvedMode): PaperPalette {
     ? mix(card, theme.accent, 0.05)
     : mix(card, theme.accent, 0.05)
 
-  // A wash of the accent over the page it sits on, in both modes. The dark
-  // branch used to lift the accent itself toward white instead, which left the
-  // fill at roughly the full accent and put near-white text on it: 1.0–1.5:1
-  // against the muted body copy, invisible on every dark theme.
+  // Accent laid over the page it sits on, both modes. Dark used to lift the
+  // accent itself, putting near-white body copy on it at 1.0:1.
   const tint = (base: string, t: number) =>
     dark ? mix(card, base, t) : mix("#FFFFFF", base, t)
   const borderOf = (base: string, t: number) =>

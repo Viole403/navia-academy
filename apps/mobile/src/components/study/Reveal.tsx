@@ -12,11 +12,8 @@ import { entranceScore } from "./tokens"
 export function useEntranceRun(): number {
   const [run, setRun] = useState(0)
   const first = useRef(true)
-  // useCallback is load-bearing, not tidiness: useFocusEffect re-subscribes when
-  // the callback identity changes, and an inline arrow is a new function every
-  // render, so it fired the bump forever and React gave up with "maximum update
-  // depth exceeded". Everything it closes over is a ref or a setState, both
-  // stable, so there is nothing to depend on.
+  // Inline callback re-subscribes useFocusEffect every render and loops; nothing
+  // here changes identity, so the empty dep list is honest.
   useFocusEffect(
     useCallback(() => {
       // Mount already starts the score via initial useReveal effects —
@@ -94,10 +91,8 @@ export function useTypewriter(
     setN(0)
     if (total === 0) return
 
-    // The interval and the guard have to be reachable from the effect cleanup.
-    // Held inside the start callback they were only ever cleared by the interval
-    // finishing on its own, so navigating away mid-sentence left the timer
-    // running and setN firing at an unmounted component.
+    // Held out here so the cleanup can reach them; inside the start callback
+    // they were only ever cleared by finishing on their own.
     let id: ReturnType<typeof setInterval> | undefined
     let guard: ReturnType<typeof setTimeout> | undefined
 

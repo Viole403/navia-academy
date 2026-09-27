@@ -163,9 +163,7 @@ export function ChallengesSummaryCard({
 }) {
   const { paper } = useTheme()
   const t = useT()
-  // The scroll hangs off the right edge at ART_WIDTH, and the link below is
-  // right-aligned, so the two need the same number or the artwork sits on the
-  // words. Derived once here so the art and the gap cannot drift apart.
+  // The link is right-aligned into the scroll's corner, so it reserves the art's width.
   const ART_WIDTH = 64
   const ART_INSET = 4
   return (
