@@ -1,6 +1,6 @@
 import { Text, View, type StyleProp, type ViewStyle } from "react-native"
 import { useTheme } from "@/theme/ThemeProvider"
-import { mix } from "@/theme/paper"
+import { mix, readableOn } from "@/theme/paper"
 import { paperType } from "@/theme/paperType"
 import { PressableScale, PressClaim, CardArt } from "./press"
 import type { ImageSourcePropType } from "react-native"
@@ -99,15 +99,13 @@ export function PaperCard({
             <View
               style={{
                 alignSelf: "flex-start",
-                backgroundColor: tagSurface.border,
+                backgroundColor: tagSurface.fill,
                 borderRadius: paper.radius.tag,
                 paddingHorizontal: 8,
                 paddingVertical: 3,
               }}
             >
-              <Text style={[paperType.tag, { color: tagSurface.fill }]}>
-                {tag}
-              </Text>
+              <Text style={[paperType.tag, { color: paper.ink }]}>{tag}</Text>
             </View>
           )}
           {!!title && (
@@ -176,6 +174,8 @@ export function LiftedFace({
       ? mix(faceColor, paper.paper, 0.35)
       : mix(faceColor, resolvedMode === "dark" ? "#000000" : paper.paper, 0.24))
   const height = small ? 40 : 52
+  // Derived from the face: a light accent in light mode carried white at 3.2:1.
+  const faceText = textColor ?? (readableOn(faceColor) ? "#0B1020" : "#FFFFFF")
   return (
     <PressableScale
       onPress={onPress}
@@ -208,9 +208,7 @@ export function LiftedFace({
             ...paper.shadowLifted,
           }}
         >
-          <Text style={[paperType.button, { color: textColor ?? "#FFFFFF" }]}>
-            {title}
-          </Text>
+          <Text style={[paperType.button, { color: faceText }]}>{title}</Text>
         </View>
       </View>
     </PressableScale>
