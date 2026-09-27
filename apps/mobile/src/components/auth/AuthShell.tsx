@@ -10,9 +10,10 @@ import {
 } from "react-native"
 import { SafeAreaView, useSafeAreaInsets } from "react-native-safe-area-context"
 import { useTheme } from "@/theme/ThemeProvider"
-import { useContentLayout } from "@/theme/layout"
+import { footerBottomInset, useContentLayout } from "@/theme/layout"
 import { type } from "@/theme/typography"
 import { artRatio } from "@/components/study/art"
+import { mix } from "@/theme/paper"
 import { LiftedFace } from "@/components/study/PaperCard"
 
 /**
@@ -40,7 +41,6 @@ export function AuthShell({
   children,
   action,
   onAction,
-  actionTone,
   disabled,
   busy,
   footer,
@@ -54,7 +54,6 @@ export function AuthShell({
   children?: ReactNode
   action: string
   onAction?: () => void
-  actionTone?: "accent" | "green"
   disabled?: boolean
   busy?: boolean
   /** Secondary links, under the action. */
@@ -73,7 +72,9 @@ export function AuthShell({
   return (
     <SafeAreaView
       style={{ flex: 1, backgroundColor: paper.paper }}
-      edges={["top", "bottom"]}
+      // Top only: the footer measures the bottom inset itself, and letting
+      // SafeAreaView apply it too double-counted and flickered on open.
+      edges={["top"]}
     >
       {art ? (
         <View
@@ -147,10 +148,8 @@ export function AuthShell({
         <View
           style={{
             paddingHorizontal: 20,
-            paddingTop: 12,
-            // SafeAreaView now owns the bottom inset, so adding it again here
-            // would double the gap and push the button up off the home bar.
-            paddingBottom: 8,
+            paddingTop: 16,
+            paddingBottom: footerBottomInset(insets.bottom),
             borderTopWidth: 1,
             borderTopColor: theme.border,
             backgroundColor: paper.paper,
@@ -159,13 +158,8 @@ export function AuthShell({
           <View style={{ width: column, alignSelf: "center", gap: 10 }}>
             <LiftedFace
               title={busy ? "…" : action}
-              face={
-                actionTone === "green"
-                  ? theme.green
-                  : off
-                    ? theme.border
-                    : theme.accent
-              }
+              // accent, not green: green is a fixed #34D399 in every theme.
+              face={off ? mix(theme.border, theme.text, 0.28) : theme.accent}
               disabled={off}
               onPress={off ? undefined : onAction}
             />

@@ -15,6 +15,7 @@ import { useSafeAreaInsets } from "react-native-safe-area-context"
 import { paperType, families } from "@/theme/paperType"
 import { FlexGap } from "@/components/study/press"
 import { onbArt, artRatio } from "@/components/study/art"
+import { footerBottomInset } from "@/theme/layout"
 
 /**
  * The onboarding shell: **three regions — top bar, flexible middle, stable
@@ -180,7 +181,7 @@ export function OnbShell({
           style={{
             paddingLeft: 22 + insets.left,
             paddingRight: 22 + insets.right,
-            paddingBottom: Math.max(insets.bottom, 12) + 14,
+            paddingBottom: footerBottomInset(insets.bottom),
           }}
         >
           {footer}

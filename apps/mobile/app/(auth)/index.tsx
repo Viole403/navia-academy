@@ -27,7 +27,6 @@ export default function Welcome() {
       artKey="mountainsWide"
       artHeight={190}
       action={t("auth.createAccount")}
-      actionTone="green"
       onAction={() => router.push("/(auth)/register")}
       footer={
         <Text

@@ -50,3 +50,14 @@ export function contentLayoutFor(width: number): ContentLayout {
   const tileColumns = column >= 720 ? 6 : column >= 560 ? 5 : 4
   return { column, wide, tileColumns }
 }
+
+/**
+ * Space below a bottom-anchored action: the device inset, or Material's 16dp
+ * minimum outside padding, whichever is larger, plus a gap.
+ *
+ * Shared so the two auth shells cannot drift apart — they were written years
+ * apart, added the inset by hand, and ended up 8px apart from each other.
+ */
+export function footerBottomInset(inset: number, gap = 24): number {
+  return Math.max(inset, 16) + gap
+}
