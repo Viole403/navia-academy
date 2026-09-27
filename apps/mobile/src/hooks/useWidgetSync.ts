@@ -1,17 +1,6 @@
 /**
- * Keeping the home-screen widget in step with the app.
- *
- * A widget is a separate native process, so it only ever sees the last snapshot
- * the app wrote for it. That makes this the one place where the app decides when
- * that snapshot is worth rewriting, and the decision is deliberate: the widget is
- * decoration, so nothing here may block, throw into a screen, or cost a request
- * the study flow was going to make anyway.
- *
- * The requests below are the ones the app is already making for the home screen
- * and the progress tab, so a sync costs no extra traffic. A sync is skipped
- * entirely when the payload has not changed, because most state changes in a
- * session — a theme toggle, a re-render, a background refresh — do not alter
- * anything the widget draws.
+ * Decides when to rewrite the widget snapshot. Requests are ones the app already
+ * makes, and an unchanged payload is not written at all.
  */
 
 import { useCallback, useEffect, useRef } from "react"
@@ -29,7 +18,6 @@ import {
 } from "@/lib/widgetSync"
 import { useAppTheme } from "@/theme/useMaterialYou"
 
-/** Written next to the streak so a cold start has something to draw. */
 const LAST_SENT_KEY = "navia:last_widget_payload"
 const SYNC_INTERVAL_MS = 30 * 60 * 1000
 
@@ -40,14 +28,7 @@ export interface UseWidgetSyncResult {
   sync: () => Promise<boolean>
 }
 
-/**
- * Syncs the widget whenever the data it draws actually changes.
- *
- * The 30 minute interval is a backstop rather than the main trigger: the app is
- * usually open when the learner studies, so the reactive path does the work. The
- * interval exists for the case where it is not — the payload would otherwise go
- * stale for as long as the app stayed closed.
- */
+/** Syncs when the drawn data changes; the interval is only a backstop for a closed app. */
 export function useWidgetSync(): UseWidgetSyncResult {
   const { theme, themeDef, ready } = useAppTheme()
   const lastSent = useRef<string | null>(null)
@@ -81,9 +62,8 @@ export function useWidgetSync(): UseWidgetSyncResult {
       streak: progressQ.data.streak ?? 0,
       bestStreak: progressQ.data.best_streak ?? 0,
       sessions,
-      // The SRS endpoint returns a flat count map; `due` is its own key. A
-      // missing key means "not counted", not "zero reviews waiting", and showing
-      // zero would claim the deck is clear.
+      // A missing `due` key means "not counted", not "zero" — those look identical
+      // as a digit and mean opposite things.
       due: typeof stats?.due === "number" ? stats.due : null,
       dailyGoalMinutes: 20,
       locale: "id",
@@ -104,8 +84,6 @@ export function useWidgetSync(): UseWidgetSyncResult {
       const written = await pushWidgetPayload(payload)
       if (written) {
         lastSent.current = serialised
-        // Remembered so a cold start does not rewrite an identical payload on the
-        // first render, before any of this has run.
         AsyncStorage.setItem(LAST_SENT_KEY, serialised).catch(() => {})
       }
       return written

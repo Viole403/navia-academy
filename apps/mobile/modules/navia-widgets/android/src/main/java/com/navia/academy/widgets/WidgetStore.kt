@@ -2,19 +2,7 @@ package com.navia.academy.widgets
 
 import android.content.Context
 
-/**
- * The snapshot a widget draws from.
- *
- * Written by the app as JSON and read from here, because a widget is a separate
- * process: it cannot reach the app's code, its database or its session. That is
- * why the whole payload is plain primitives in one key rather than anything
- * richer — see `src/lib/widget.ts` for the rules about what goes in it, which
- * are tested there because they cannot be tested from here.
- *
- * Defaults matter more than they look. A widget is drawn long after the app was
- * last opened, so anything missing has to mean "nothing to say" rather than a
- * crash on the home screen.
- */
+/** One snapshot, read by every widget. Defaults mean "nothing to say", not a crash. */
 data class WidgetSnapshot(
     val streak: Int = 0,
     val bestStreak: Int = 0,
@@ -75,15 +63,8 @@ object WidgetStore {
         context.getSharedPreferences(PREFS, Context.MODE_PRIVATE).edit().clear().apply()
     }
 
-    /**
-     * A hand-rolled reader rather than a JSON library.
-     *
-     * The payload is written by code in the same repository and holds only
-     * strings, numbers, booleans and a boolean array, so there is nothing here a
-     * general parser would handle better. Every field falls back to a default
-     * when missing or the wrong shape, because a malformed value must leave the
-     * home screen readable rather than blank.
-     */
+    // Regex reader, not a JSON lib: the payload is written by sibling code and
+    // holds only primitives. Every field falls back, so bad data still draws.
     internal fun parse(json: String): WidgetSnapshot {
         fun str(key: String, fallback: String): String =
             Regex("\"" + key + "\"\\s*:\\s*\"([^\"]*)\"")

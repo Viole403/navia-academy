@@ -23,18 +23,7 @@ import androidx.glance.text.Text
 import androidx.glance.text.TextStyle
 import androidx.glance.unit.ColorProvider
 
-/**
- * The review widget.
- *
- * This one earns its place by being the only widget that can be acted on without
- * opening the app, because the action is the whole point: a pile of cards waiting
- * is something a learner can either see and go do, or cannot see at all. So the
- * number leads and the copy says what it will cost.
- *
- * A count of zero is drawn as "All clear" rather than a zero, because a zero and
- * an unknown look identical as digits and mean opposite things. The payload keeps
- * them apart with a null, and this is where that distinction becomes visible.
- */
+/** The one widget that can be acted on without opening the app, so the number leads. */
 class SrsWidget : GlanceAppWidget() {
     override suspend fun provideGlance(context: Context, id: GlanceId) {
         val snap = WidgetStore.read(context)
@@ -73,14 +62,7 @@ class SrsWidgetReceiver : GlanceAppWidgetReceiver() {
     override val glanceAppWidget: GlanceAppWidget = SrsWidget()
 }
 
-/**
- * The week widget.
- *
- * The streak widget carries a week strip as a footnote; this one is the strip.
- * Seven marks is the smallest picture of consistency that is still a picture, and
- * it answers a question the streak number cannot: not "how long" but "how
- * steady". A gap is visible here and invisible in a total.
- */
+/** The streak strip at full size: seven marks answer "how steady", not "how long". */
 class WeekWidget : GlanceAppWidget() {
     override suspend fun provideGlance(context: Context, id: GlanceId) {
         val snap = WidgetStore.read(context)
@@ -100,7 +82,7 @@ class WeekWidget : GlanceAppWidget() {
     }
 }
 
-/** Seven marks, oldest first, today last and hollow until it is done. */
+/** Seven marks, oldest first; today stays hollow until it is done. */
 @Composable
 internal fun DotStrip(
     snap: WidgetSnapshot,
@@ -134,14 +116,7 @@ internal fun DotStrip(
 
 internal fun dp(v: Int) = v.toFloat().dp
 
-/**
- * The goal widget.
- *
- * Progress is ten segments rather than a continuous bar. At the small sizes a
- * widget actually gets, a thin bar's unfilled remainder is hard to see and a
- * nearly-full bar is hard to judge; discrete segments stay countable, so "seven of
- * ten" is legible at a glance even when the widget is two cells wide.
- */
+/** Ten segments, not a bar: countable at two cells wide where a thin bar is not. */
 class GoalWidget : GlanceAppWidget() {
     override suspend fun provideGlance(context: Context, id: GlanceId) {
         val snap = WidgetStore.read(context)
@@ -189,14 +164,7 @@ class GoalWidgetReceiver : GlanceAppWidgetReceiver() {
     override val glanceAppWidget: GlanceAppWidget = GoalWidget()
 }
 
-/**
- * The achievement widget.
- *
- * Milestones are sparse on purpose: most days there is nothing to mark, and a
- * widget that congratulates you every morning is a widget you stop reading. So
- * this rests on the best streak and only spends its accent on the days a round
- * number is actually reached.
- */
+/** Milestones are sparse on purpose — a widget that congratulates daily stops being read. */
 class AchievementWidget : GlanceAppWidget() {
     override suspend fun provideGlance(context: Context, id: GlanceId) {
         val snap = WidgetStore.read(context)

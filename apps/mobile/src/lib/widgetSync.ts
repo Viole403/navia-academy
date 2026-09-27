@@ -1,29 +1,14 @@
 /**
- * Deciding what a widget shows, with nothing it cannot use.
- *
- * Everything here is pure: dates in, booleans and counts out. That is deliberate,
- * not incidental. The part of the widget sync that decides whether today counts,
- * how far along the goal is, and what the week strip looks like is a set of
- * judgement calls, and a judgement call is only worth trusting if it can be
- * tested. So it lives away from the hook, which needs a theme, a store and the
- * network, and this file needs none of those — a test imports it directly and
- * runs in milliseconds.
- *
- * The one subtlety worth stating: "today" is the learner's own calendar, never
- * UTC. A UTC day key flips the answer for anyone whose evening is past 16:00 in
- * the Americas or east of Asia, which would show a finished day as untouched and
- * quietly threaten a live streak.
+ * What a widget shows, as pure functions: dates in, flags out. Kept out of the hook
+ * so the logic is testable without a theme, a store or the network.
  */
 
 import { buildWidgetPayload, type WidgetPayload } from "./widget"
 
-/** The widget's week strip needs seven days, oldest first. */
 const WEEK_DAYS = 7
 
 export function localDateKey(d: Date): string {
-  // Local, not UTC: "did I study today" is a question about the learner's
-  // calendar, and a UTC key would flip the answer for anyone whose evening is
-  // past 16:00 in the Americas or east of Asia.
+  // Local, not UTC: a UTC day key flips "did I study today" for half the planet.
   const y = d.getFullYear()
   const m = String(d.getMonth() + 1).padStart(2, "0")
   const day = String(d.getDate()).padStart(2, "0")
