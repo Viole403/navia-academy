@@ -81,12 +81,16 @@ export function AuthShell({
           style={{
             position: "absolute",
             // An absolute child is anchored to the parent's padding box, not its
-            // content box, so top: 0 put the art under the status bar. SafeAreaView's
-            // own padding does not move it.
-            top: insets.top,
-            left: 0,
-            right: 0,
-            alignItems: "center",
+            // content box, so top: 0 put the art under the status bar. Offset it
+            // clear of the status bar and give it the same breathing room
+            // onboarding's decoration layer gets, so the two do not read as
+            // separate layouts.
+            top: insets.top + 8,
+            // Right-aligned like onboarding's pagoda art. Centred, the wide
+            // mountains read as a different layout language from the one the
+            // learner has been walking through since the first screen.
+            alignItems: "flex-end",
+            paddingRight: 22 + insets.right,
             opacity: 0.45,
           }}
         >
@@ -94,7 +98,7 @@ export function AuthShell({
             source={art}
             resizeMode="contain"
             style={{
-              width: "100%",
+              width: "86%",
               height: artHeight * (artKey ? (artRatio[artKey] ?? 1) : 1),
             }}
           />
