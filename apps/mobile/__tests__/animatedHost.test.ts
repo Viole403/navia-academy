@@ -10,7 +10,7 @@ import { join } from "node:path"
  * across four files before anything caught it, so it is worth a source scan.
  */
 const ROOTS = ["app", "src"]
-const SOURCES = /\.(t|j)sx$/
+const SOURCES = /\.tsx?$/
 
 function walk(dir: string, out: string[] = []): string[] {
   for (const entry of readdirSync(dir)) {

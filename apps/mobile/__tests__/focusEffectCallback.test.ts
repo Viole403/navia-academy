@@ -10,7 +10,7 @@ import { join } from "node:path"
  * exhaustive-deps rule does not see it, because the hook is not in its list.
  */
 const ROOTS = ["app", "src"]
-const SOURCES = /\.(t|j)sx$/
+const SOURCES = /\.tsx?$/
 
 function walk(dir: string, out: string[] = []): string[] {
   for (const entry of readdirSync(dir)) {
