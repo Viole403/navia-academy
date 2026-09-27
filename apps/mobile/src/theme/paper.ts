@@ -125,9 +125,48 @@ function luminance(hex: string): number {
   return (0.299 * r + 0.587 * g + 0.114 * b) / 255
 }
 
+/** WCAG 2.2 relative luminance. Distinct from `luminance` above, which is a
+ *  brightness heuristic that ensureInk uses, not a contrast measure. */
+export function relativeLuminance(hex: string): number {
+  const [r, g, b] = hexToRgb(hex).map((v) => {
+    const c = v / 255
+    return c <= 0.04045 ? c / 12.92 : ((c + 0.055) / 1.055) ** 2.4
+  })
+  return 0.2126 * r + 0.7152 * g + 0.0722 * b
+}
+
+/** WCAG contrast ratio between two colours. */
+export function contrastRatio(a: string, b: string): number {
+  const la = relativeLuminance(a)
+  const lb = relativeLuminance(b)
+  return (Math.max(la, lb) + 0.05) / (Math.min(la, lb) + 0.05)
+}
+
+/** Whether near-black ink reads better than white on this background. */
+export function readableOn(background: string): boolean {
+  return (
+    contrastRatio("#0B1020", background) >= contrastRatio("#FFFFFF", background)
+  )
+}
+
 /** A palette light enough to carry white text. */
 function ensureInk(accent: string, theme: Theme): string {
   return luminance(accent) > 0.62 ? mix(accent, "#101010", 0.45) : accent
+}
+
+/** Nudges a colour away from its grounds until legible on the worst of them. */
+function ensureContrastOn(
+  colour: string,
+  grounds: string[],
+  min = 4.5
+): string {
+  const towards = relativeLuminance(grounds[0]) > 0.5 ? "#101010" : "#FFFFFF"
+  let out = colour
+  for (let step = 0; step < 14; step++) {
+    if (grounds.every((g) => contrastRatio(out, g) >= min)) return out
+    out = mix(out, towards, 0.1)
+  }
+  return out
 }
 
 /** The one shadow on study screens — a hint, not elevation. Tinted, never black. */
@@ -161,19 +200,19 @@ export function paperFor(theme: Theme, mode: ResolvedMode): PaperPalette {
       : mix(theme.surface, theme.accent, 0.04)
     : mix(theme.bg, "#FBF7EC", 0.55)
 
-  const green = ensureInk(theme.green, theme)
-  const coral = ensureInk(theme.accent, theme)
-  const lavender = ensureInk(theme.accent2, theme)
-  const gold = ensureInk(theme.gold, theme)
-
   const card = dark
     ? amoled
       ? "#0B0B10"
       : mix(theme.surface, theme.accent, 0.03)
     : mix(theme.surface, "#FFFFFF", 0.5)
-  const cardAlt = dark
-    ? mix(card, theme.accent, 0.05)
-    : mix(card, theme.accent, 0.05)
+  const cardAlt = mix(card, theme.accent, 0.05)
+
+  // An accent is never only on the page: it is also a stat's ink and a link.
+  const grounds = [paper, card, cardAlt]
+  const green = ensureContrastOn(ensureInk(theme.green, theme), grounds)
+  const coral = ensureContrastOn(ensureInk(theme.accent, theme), grounds)
+  const lavender = ensureContrastOn(ensureInk(theme.accent2, theme), grounds)
+  const gold = ensureContrastOn(ensureInk(theme.gold, theme), grounds)
 
   // Accent laid over the page it sits on, both modes. Dark used to lift the
   // accent itself, putting near-white body copy on it at 1.0:1.
@@ -199,10 +238,22 @@ export function paperFor(theme: Theme, mode: ResolvedMode): PaperPalette {
 
     ink: dark ? theme.text : mix(theme.text, "#0B1020", 0.35),
     inkSoft: theme.textMuted,
-    inkMuted: theme.textDim,
+    // textDim is dimmer than it is legible: 2.5:1 on a light page, and it
+    // carries real body copy on the radical and word-list screens.
+    inkMuted: ensureContrastOn(theme.textDim, [
+      paper,
+      card,
+      cardAlt,
+      tint(coral, 0.1),
+      tint(lavender, 0.1),
+      tint(green, 0.08),
+    ]),
 
     green,
-    greenDark: mix(green, dark ? "#000000" : "#1A1A1A", 0.22),
+    greenDark: ensureContrastOn(
+      mix(green, dark ? "#000000" : "#1A1A1A", 0.22),
+      grounds
+    ),
     greenSoft: dark ? mix(card, green, 0.18) : mix(paper, green, 0.1),
     greenRing: dark ? mix(green, "#000000", 0.5) : mix(green, paper, 0.5),
 
