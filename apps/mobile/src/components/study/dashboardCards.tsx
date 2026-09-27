@@ -214,6 +214,10 @@ export function WeeklyActivityCard({
   const { paper } = useTheme()
   const t = useT()
   const weekMinutes = useWeekMinutes(sessions)
+  // The bonsai overshoots the right edge, so only ART_WIDTH - the negative inset
+  // sits over the card. The link below is pushed right, into the same corner.
+  const ART_WIDTH = 96
+  const ART_INSET = -6
   return (
     <PaperCard
       tone="week"
@@ -221,8 +225,8 @@ export function WeeklyActivityCard({
       onPress={onOpen}
       art={art.bonsai}
       artRatio={artRatio.bonsai}
-      artWidth={96}
-      artStyle={{ right: -6, bottom: -10 }}
+      artWidth={ART_WIDTH}
+      artStyle={{ right: ART_INSET, bottom: -10 }}
     >
       <WeekStrip sessions={sessions} />
       <View
@@ -230,6 +234,7 @@ export function WeeklyActivityCard({
           flexDirection: "row",
           justifyContent: "space-between",
           alignItems: "center",
+          marginRight: ART_WIDTH + ART_INSET,
         }}
       >
         <Text
