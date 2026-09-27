@@ -163,6 +163,11 @@ export function ChallengesSummaryCard({
 }) {
   const { paper } = useTheme()
   const t = useT()
+  // The scroll hangs off the right edge at ART_WIDTH, and the link below is
+  // right-aligned, so the two need the same number or the artwork sits on the
+  // words. Derived once here so the art and the gap cannot drift apart.
+  const ART_WIDTH = 64
+  const ART_INSET = 4
   return (
     <PaperCard
       tone="challenge"
@@ -172,14 +177,19 @@ export function ChallengesSummaryCard({
       onPress={onOpen}
       art={art.scroll}
       artRatio={artRatio.scroll}
-      artWidth={64}
-      artStyle={{ right: 4, bottom: -6 }}
+      artWidth={ART_WIDTH}
+      artStyle={{ right: ART_INSET, bottom: -6 }}
     >
       <View style={{ flexDirection: "row", gap: 20, marginTop: 4 }}>
         <PaperStat value={streak} label={t("home.streak")} ink={paper.coral} />
         <PaperStat value={due} label={t("home.due")} ink={paper.lavender} />
         <View style={{ flex: 1 }} />
-        <View style={{ justifyContent: "flex-end" }}>
+        <View
+          style={{
+            justifyContent: "flex-end",
+            marginRight: ART_WIDTH + ART_INSET,
+          }}
+        >
           <Text
             style={[
               paperType.link,
