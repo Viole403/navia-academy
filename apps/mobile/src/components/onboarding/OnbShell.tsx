@@ -85,14 +85,29 @@ export function OnbShell({
       {art !== "none" ? (
         <View
           pointerEvents="none"
-          style={{ position: "absolute", top: 0, left: 0, right: 0, bottom: 0 }}
+          style={{
+            position: "absolute",
+            // Inset vertically, bled horizontally. The status bar and the
+            // navigation bar are opaque and sit on top of this, so anything
+            // placed at the very top or the very bottom is simply hidden
+            // behind them — an image that looks cropped for no visible reason.
+            // Left and right still bleed, because a branch that stops at the
+            // margin reads as a sticker.
+            top: insets.top,
+            bottom: insets.bottom,
+            left: 0,
+            right: 0,
+          }}
         >
           {art === "branch" ? (
             <Image
               source={onbArt.sakuraBranch}
               style={{
                 position: "absolute",
-                top: 40,
+                // Above the kicker, not across it. The branch sits at top 40 and
+                // runs 190px, which reached down over the step label and made it
+                // unreadable against the petals.
+                top: -30,
                 left: -20,
                 width: 190,
                 height: 190 * artRatio.sakuraBranch,
