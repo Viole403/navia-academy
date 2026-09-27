@@ -89,30 +89,39 @@ export function useTypewriter(
   run: number,
   perChar: number = entranceScore.typingPerChar
 ): number {
-  const [n, setN] = useState(total === 0 ? 0 : 0)
+  const [n, setN] = useState(0)
   useEffect(() => {
     setN(0)
     if (total === 0) return
+
+    // The interval and the guard have to be reachable from the effect cleanup.
+    // Held inside the start callback they were only ever cleared by the interval
+    // finishing on its own, so navigating away mid-sentence left the timer
+    // running and setN firing at an unmounted component.
+    let id: ReturnType<typeof setInterval> | undefined
+    let guard: ReturnType<typeof setTimeout> | undefined
+
     const start = setTimeout(() => {
       const t0 = Date.now()
-      const id = setInterval(() => {
+      id = setInterval(() => {
         const k = Math.min(total, Math.floor((Date.now() - t0) / perChar) + 1)
         setN(k)
-        if (k >= total) clearInterval(id)
+        if (k >= total && id !== undefined) clearInterval(id)
       }, perChar)
-      const guard = setTimeout(
+      guard = setTimeout(
         () => {
-          clearInterval(id)
+          if (id !== undefined) clearInterval(id)
           setN(total)
         },
         total * perChar + 1500
       )
-      return () => {
-        clearInterval(id)
-        clearTimeout(guard)
-      }
     }, entranceScore.bubble.at)
-    return () => clearTimeout(start)
+
+    return () => {
+      clearTimeout(start)
+      if (id !== undefined) clearInterval(id)
+      if (guard !== undefined) clearTimeout(guard)
+    }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [run, total])
   return n
