@@ -1,6 +1,7 @@
 import { useMemo } from "react"
 import {
   ActivityIndicator,
+  Animated,
   Pressable,
   ScrollView,
   Text,
@@ -166,7 +167,7 @@ export function ReviewHub() {
             drills.map((d, i) => {
               const r = beats[i]
               return (
-                <View
+                <Animated.View
                   key={d.key}
                   style={{
                     opacity: r.opacity,
@@ -234,7 +235,7 @@ export function ReviewHub() {
                       </Text>
                     </View>
                   </PaperCard>
-                </View>
+                </Animated.View>
               )
             })
           )}

@@ -1,4 +1,4 @@
-import { Text, View } from "react-native"
+import { Animated, Text, View } from "react-native"
 import { useTheme } from "@/theme/ThemeProvider"
 import { paperType, families } from "@/theme/paperType"
 import { Shifu } from "./Shifu"
@@ -28,7 +28,7 @@ export function DictionaryIntro({ message }: { message: string }) {
   return (
     <View style={{ flexDirection: "row", alignItems: "flex-end", gap: 10 }}>
       <View style={{ flex: 1, gap: 8 }}>
-        <View
+        <Animated.View
           style={{
             opacity: page.opacity,
             transform: [{ translateY: page.translate }],
@@ -42,8 +42,8 @@ export function DictionaryIntro({ message }: { message: string }) {
           >
             {useT()("dict.kicker")}
           </Text>
-        </View>
-        <View
+        </Animated.View>
+        <Animated.View
           style={{
             backgroundColor: paper.card,
             borderColor: paper.line,
@@ -64,9 +64,9 @@ export function DictionaryIntro({ message }: { message: string }) {
           >
             {message.slice(0, typed)}
           </Text>
-        </View>
+        </Animated.View>
       </View>
-      <View
+      <Animated.View
         style={{
           opacity: shifu.opacity,
           transform: [{ translateY: shifu.translate }],
@@ -74,7 +74,7 @@ export function DictionaryIntro({ message }: { message: string }) {
         }}
       >
         <Shifu pose="rest" size={74} />
-      </View>
+      </Animated.View>
     </View>
   )
 }

@@ -1,6 +1,7 @@
 import { useMemo, useState } from "react"
 import {
   ActivityIndicator,
+  Animated,
   RefreshControl,
   ScrollView,
   Text,
@@ -229,14 +230,14 @@ export default function HomeTab() {
             </View>
           ) : (
             <View style={{ gap: 13 }}>
-              <View
+              <Animated.View
                 style={{
                   opacity: gR.opacity,
                   transform: [{ translateX: gR.translate }],
                 }}
               />
 
-              <View
+              <Animated.View
                 style={{
                   opacity: c0.opacity,
                   transform: [{ translateY: c0.translate }],
@@ -249,10 +250,10 @@ export default function HomeTab() {
                     router.push("/review")
                   }}
                 />
-              </View>
+              </Animated.View>
 
               {showWord && word ? (
-                <View
+                <Animated.View
                   style={{
                     opacity: c1.opacity,
                     transform: [{ translateY: c1.translate }],
@@ -280,10 +281,10 @@ export default function HomeTab() {
                       setDismissed(true)
                     }}
                   />
-                </View>
+                </Animated.View>
               ) : null}
 
-              <View
+              <Animated.View
                 style={{
                   opacity: c2.opacity,
                   transform: [{ translateY: c2.translate }],
@@ -297,9 +298,9 @@ export default function HomeTab() {
                     router.push("/challenges")
                   }}
                 />
-              </View>
+              </Animated.View>
 
-              <View
+              <Animated.View
                 style={{
                   opacity: c3.opacity,
                   transform: [{ translateY: c3.translate }],
@@ -312,7 +313,7 @@ export default function HomeTab() {
                     router.push("/progress")
                   }}
                 />
-              </View>
+              </Animated.View>
 
               {recommendedQ.data ? (
                 <View style={{ gap: 8, marginTop: 4 }}>

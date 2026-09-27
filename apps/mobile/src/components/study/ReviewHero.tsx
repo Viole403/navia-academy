@@ -1,5 +1,5 @@
 import { useMemo } from "react"
-import { Image, Text, View, useWindowDimensions } from "react-native"
+import { Animated, Image, Text, View, useWindowDimensions } from "react-native"
 import { useTheme } from "@/theme/ThemeProvider"
 import { paperType, families } from "@/theme/paperType"
 import { Shifu } from "./Shifu"
@@ -53,7 +53,7 @@ export function ReviewHero({
   return (
     <View style={{ height: 132, overflow: "hidden" }}>
       {/* Scenery, in from the right. */}
-      <View
+      <Animated.View
         style={{
           position: "absolute",
           opacity: scenery.opacity,
@@ -73,7 +73,7 @@ export function ReviewHero({
           }}
           resizeMode="contain"
         />
-      </View>
+      </Animated.View>
 
       {/* Shifu, small and head-on beside the bubble. */}
       <View
@@ -89,7 +89,7 @@ export function ReviewHero({
       </View>
 
       {/* The bubble, arriving from below. */}
-      <View
+      <Animated.View
         style={{
           position: "absolute",
           left: bubbleLeft,
@@ -126,7 +126,7 @@ export function ReviewHero({
         >
           {bubbleText}
         </Text>
-      </View>
+      </Animated.View>
     </View>
   )
 }
