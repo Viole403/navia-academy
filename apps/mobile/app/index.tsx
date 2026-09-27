@@ -2,7 +2,6 @@ import { useEffect } from "react"
 import { Redirect } from "expo-router"
 import { Text, View, ActivityIndicator } from "react-native"
 import { useAuthStore } from "@/store/auth"
-import { useAppStore } from "@/store/app"
 import { useOnboardingStore } from "@/store/onboarding"
 import { Motif } from "@/components/ui/Motif"
 import { motifChar } from "@/lib/languages"
@@ -21,7 +20,7 @@ import { paperType } from "@/theme/paperType"
  */
 export default function Index() {
   const { user, hydrated } = useAuthStore()
-  const { hasOnboarded } = useAppStore()
+  const hasCompleted = useOnboardingStore((s) => s.hasCompleted)
   const language = useOnboardingStore((s) => s.language)
   const { paper } = useTheme()
 
@@ -47,7 +46,7 @@ export default function Index() {
     )
   }
 
-  if (!hasOnboarded) return <Redirect href="/(onboarding)" />
+  if (!hasCompleted) return <Redirect href="/(onboarding)" />
   if (!user) return <Redirect href="/(auth)" />
   return <Redirect href="/(tabs)" />
 }
