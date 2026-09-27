@@ -1,91 +1,96 @@
 import { describe, it, expect } from "vitest"
 import { BASE_THEMES } from "@/theme/colors"
-import { paperFor } from "@/theme/paper"
 import type { ResolvedMode } from "@/theme/colors"
+import { contrastRatio, paperFor, readableOn } from "@/theme/paper"
 
 /**
- * The review, challenges and week cards tint their fill with an accent, and the
- * body copy on them is paper.inkSoft. One dark-theme branch of that tint mixed
- * the accent itself toward white rather than laying the accent over the page,
- * which put near-white text on saturated coral at 1.01:1 — the same luminance
- * as its own background, on all five dark themes. Nothing warned: it looked
- * like a design choice until the words were read.
+ * Contrast is a number, and these were wrong without anything objecting: the
+ * review card's body copy sat at 1.01:1 against its own background on all five
+ * dark themes, and the card tags sat at 1.2:1 in every mode because their text
+ * and their chip were drawn from the same tint pair with the roles swapped.
  *
- * These assertions call paperFor directly, so they measure the shipped palette
- * rather than a re-derivation that could drift from it.
+ * Every base theme in all three modes is measured through paperFor, so the
+ * assertion is on the palette that ships rather than a re-derivation that could
+ * quietly agree with a broken one. Bars are WCAG 2.2 AA: 4.5:1 for body copy
+ * and for the 10.5px tag, 3:1 for large text.
  */
 const MODES: ResolvedMode[] = ["light", "dark", "amoled"]
-
-// WCAG 2.2 relative luminance and contrast.
-function channel(value: number): number {
-  const v = value / 255
-  return v <= 0.04045 ? v / 12.92 : ((v + 0.055) / 1.055) ** 2.4
-}
-function luminance(hex: string): number {
-  const n = parseInt(hex.replace("#", ""), 16)
-  const r = channel((n >> 16) & 255)
-  const g = channel((n >> 8) & 255)
-  const b = channel(n & 255)
-  return 0.2126 * r + 0.7152 * g + 0.0722 * b
-}
-function contrast(a: string, b: string): number {
-  const la = luminance(a)
-  const lb = luminance(b)
-  return (Math.max(la, lb) + 0.05) / (Math.min(la, lb) + 0.05)
-}
-
-const TINTED: {
-  key: keyof ReturnType<typeof paperFor>["surface"]
-  label: string
-}[] = [
-  { key: "review", label: "review" },
-  { key: "challenge", label: "challenge" },
-  { key: "week", label: "week" },
-]
-
-// Body copy needs AA at 4.5:1; the card title is large enough for 3:1.
-const BODY_MIN = 4.5
-const TITLE_MIN = 3
+const BODY = 4.5
 
 interface Failure {
   where: string
-  label: string
-  body: number
-  title: number
+  pair: string
+  got: number
+  min: number
 }
 
 const failures: Failure[] = []
-const measured: string[] = []
+let checks = 0
+
+function expectContrast(
+  where: string,
+  pair: string,
+  fg: string,
+  bg: string,
+  min: number
+) {
+  checks++
+  const got = Number(contrastRatio(fg, bg).toFixed(2))
+  if (got < min) failures.push({ where, pair, got, min })
+}
 
 for (const theme of BASE_THEMES) {
   for (const mode of MODES) {
-    // A definition carries both modes; paperFor takes the one in play.
-    const paper = paperFor(mode === "light" ? theme.light : theme.dark, mode)
-    for (const { key, label } of TINTED) {
-      const fill = paper.surface[key].fill
-      const body = contrast(fill, paper.inkSoft)
-      const title = contrast(fill, paper.ink)
-      measured.push(`${theme.id}/${mode}/${label}`)
-      if (body < BODY_MIN || title < TITLE_MIN) {
-        failures.push({
-          where: `${theme.id}/${mode}`,
-          label,
-          body: Number(body.toFixed(2)),
-          title: Number(title.toFixed(2)),
-        })
+    const p = paperFor(mode === "light" ? theme.light : theme.dark, mode)
+    const s = p.surface
+    const where = `${theme.id}/${mode}`
+    const grounds: Record<string, string> = {
+      paper: p.paper,
+      card: p.card,
+      cardAlt: p.cardAlt,
+      review: s.review.fill,
+      word: s.word.fill,
+      challenge: s.challenge.fill,
+      challengeStats: s.challengeStats.fill,
+      week: s.week.fill,
+    }
+
+    for (const [name, bg] of Object.entries(grounds)) {
+      expectContrast(where, `ink on ${name}`, p.ink, bg, BODY)
+      expectContrast(where, `inkSoft on ${name}`, p.inkSoft, bg, BODY)
+      // Carries body copy on the radical and word-list screens, so not large-text.
+      expectContrast(where, `inkMuted on ${name}`, p.inkMuted, bg, BODY)
+    }
+
+    // Accents are stats, links and button faces at once.
+    for (const [name, colour] of Object.entries({
+      coral: p.coral,
+      green: p.green,
+      gold: p.gold,
+      lavender: p.lavender,
+      greenDark: p.greenDark,
+    })) {
+      for (const bg of [p.paper, p.card, p.cardAlt]) {
+        expectContrast(where, `${name} on ${bg}`, colour, bg, BODY)
       }
+      const label = readableOn(colour) ? "#0B1020" : "#FFFFFF"
+      expectContrast(where, `${label} on face ${name}`, label, colour, BODY)
+    }
+
+    // The tag chip is ink on its surface fill, not one tint member on the other.
+    for (const name of ["review", "word", "challenge", "week"] as const) {
+      expectContrast(where, `tag ${name}`, p.ink, s[name].fill, BODY)
     }
   }
 }
 
-describe("tinted card fills stay legible", () => {
-  it("covers every base theme in every mode", () => {
-    expect(measured.length).toBe(
-      BASE_THEMES.length * MODES.length * TINTED.length
-    )
+describe("the palette is legible in every theme and mode", () => {
+  it("measures every theme in every mode", () => {
+    // 8 grounds x 3 inks, 5 accents x (3 grounds + a face), 4 tag chips.
+    expect(checks).toBe(BASE_THEMES.length * MODES.length * (8 * 3 + 5 * 4 + 4))
   })
 
-  it("holds AA for the body copy and the card title", () => {
+  it("holds AA everywhere", () => {
     expect(failures).toEqual([])
   })
 })
