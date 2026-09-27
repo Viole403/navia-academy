@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react"
+import { useCallback, useEffect, useRef, useState } from "react"
 import { Animated, Platform } from "react-native"
 import { useFocusEffect } from "expo-router"
 import { entranceScore } from "./tokens"
@@ -12,16 +12,23 @@ import { entranceScore } from "./tokens"
 export function useEntranceRun(): number {
   const [run, setRun] = useState(0)
   const first = useRef(true)
-  useFocusEffect(() => {
-    // Mount already starts the score via initial useReveal effects —
-    // skip the first focus so the animation never plays twice.
-    if (first.current) {
-      first.current = false
-      return
-    }
-    const t = setTimeout(() => setRun((r) => r + 1), 60)
-    return () => clearTimeout(t)
-  })
+  // useCallback is load-bearing, not tidiness: useFocusEffect re-subscribes when
+  // the callback identity changes, and an inline arrow is a new function every
+  // render, so it fired the bump forever and React gave up with "maximum update
+  // depth exceeded". Everything it closes over is a ref or a setState, both
+  // stable, so there is nothing to depend on.
+  useFocusEffect(
+    useCallback(() => {
+      // Mount already starts the score via initial useReveal effects —
+      // skip the first focus so the animation never plays twice.
+      if (first.current) {
+        first.current = false
+        return
+      }
+      const t = setTimeout(() => setRun((r) => r + 1), 60)
+      return () => clearTimeout(t)
+    }, [])
+  )
   return run
 }
 
