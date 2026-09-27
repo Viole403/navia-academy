@@ -26,7 +26,11 @@ export function GoogleSignInButton({
       disabled={inactive}
       accessibilityRole="button"
       accessibilityLabel={title}
-      style={({ pressed }) => ({
+      // A plain object, not the ({ pressed }) => … form. The function form left
+      // this Pressable rendering its children with no style at all under the
+      // bridgeless runtime — no border, no fill, and the row collapsed so the
+      // label sat under the logo. Press feedback would need onPressIn/onPressOut.
+      style={{
         height: 52,
         borderRadius: 4,
         borderWidth: 1,
@@ -37,8 +41,8 @@ export function GoogleSignInButton({
         justifyContent: "center",
         gap: 10,
         paddingHorizontal: 16,
-        opacity: inactive ? 0.6 : pressed ? 0.85 : 1,
-      })}
+        opacity: inactive ? 0.6 : 1,
+      }}
     >
       {loading ? (
         <ActivityIndicator color={fg} size="small" />
