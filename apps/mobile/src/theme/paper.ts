@@ -136,7 +136,12 @@ const shadowFor = (ink: string, lifted: boolean): ViewStyleShadow => ({
   shadowOffset: { width: 0, height: lifted ? 4 : 3 },
   shadowRadius: lifted ? 12 : 10,
   shadowOpacity: 0.05,
-  elevation: lifted ? 3 : 2,
+  // Zero on purpose. Android draws elevation as a rendered rim rather than a
+  // shadow, and a rim on a pill with a large corner radius is not reliably
+  // clipped — it surfaced as a hairline seam straight across the middle of every
+  // filled button. The iOS properties above carry the lift on iOS; on Android the
+  // shoulder below the face is what reads as depth.
+  elevation: 0,
 })
 
 /**
