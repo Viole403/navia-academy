@@ -1,5 +1,6 @@
 import { Text, View, type StyleProp, type ViewStyle } from "react-native"
 import { useTheme } from "@/theme/ThemeProvider"
+import { mix } from "@/theme/paper"
 import { paperType } from "@/theme/paperType"
 import { PressableScale, PressClaim, CardArt } from "./press"
 import type { ImageSourcePropType } from "react-native"
@@ -147,6 +148,7 @@ export function LiftedFace({
   title,
   onPress,
   face,
+  shoulder,
   textColor,
   small,
   disabled,
@@ -155,13 +157,20 @@ export function LiftedFace({
   title: string
   onPress?: () => void
   face?: string
+  /** Colour of the sliver behind the button. Defaults to the face, darkened. */
+  shoulder?: string
   textColor?: string
   small?: boolean
   disabled?: boolean
   style?: StyleProp<ViewStyle>
 }) {
-  const { paper } = useTheme()
+  const { paper, resolvedMode } = useTheme()
   const faceColor = face ?? paper.coral
+  // Derived from the face rather than picked from a palette: a caller that passes
+  // a green face used to get the coral shoulder, so the button wore two colours.
+  const shoulderColor =
+    shoulder ??
+    mix(faceColor, resolvedMode === "dark" ? "#000000" : paper.paper, 0.24)
   const height = small ? 40 : 52
   return (
     <PressableScale
@@ -169,16 +178,19 @@ export function LiftedFace({
       disabled={disabled}
       wrapperStyle={[{ opacity: disabled ? 0.5 : 1 }, style]}
     >
-      <View style={{ paddingTop: LIFT }}>
+      <View style={{ paddingBottom: LIFT }}>
         <View
           style={{
             position: "absolute",
-            top: 0,
+            // Below the face, per paper.shoulder's own note. Sitting it on top put
+            // a 4px sliver above the button whose taller radius made its corners
+            // curve out past the face's — a long line around three edges.
+            top: LIFT,
             left: 0,
             right: 0,
             height: height + LIFT,
             borderRadius: paper.radius.pill,
-            backgroundColor: paper.shoulder.quiet,
+            backgroundColor: shoulderColor,
           }}
         />
         <View

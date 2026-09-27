@@ -42,18 +42,19 @@ export function GoogleSignInButton({
     >
       {loading ? (
         <ActivityIndicator color={fg} size="small" />
-      ) : dark ? (
+      ) : (
+        // Fixed-size box: an unsized glyph lays out at its intrinsic width and
+        // pushes the label out of the row.
         <View
           style={{
-            backgroundColor: "#FFFFFF",
-            borderRadius: 2,
-            padding: 3,
+            width: 20,
+            height: 20,
+            alignItems: "center",
+            justifyContent: "center",
           }}
         >
-          <AntDesign name="google" size={18} color="#4285F4" />
+          <AntDesign name="google" size={20} color="#4285F4" />
         </View>
-      ) : (
-        <AntDesign name="google" size={20} color="#4285F4" />
       )}
       <Text
         numberOfLines={1}

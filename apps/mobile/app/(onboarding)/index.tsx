@@ -130,8 +130,12 @@ export default function Onboarding() {
 
   const go = useCallback(
     (delta: number) => {
+      // If the current step is not in `visible` — a character-less language has no
+      // "script" step, so the default stepIdx 0 points at a step that is filtered
+      // out — indexOf returned -1 and next became 0, pinning the learner on the
+      // first screen with no way forward. Land on the first real step instead.
       const at = visible.indexOf(step)
-      const next = at + delta
+      const next = at === -1 ? 0 : at + delta
       if (next < 0) return
       if (next >= visible.length) {
         syncOnboarding.mutate()

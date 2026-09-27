@@ -63,7 +63,10 @@ export default function Welcome() {
           style={{
             fontFamily: faces.display,
             fontSize: 168,
-            lineHeight: 190,
+            // The glyph box has to clear the reading underneath it. At 168 with a
+            // 190 line box the two overlapped, and the mascot's negative top margin
+            // finished the job — NǏ · YOU ended up half-hidden behind the figure.
+            lineHeight: 200,
             color: theme.accent,
             fontWeight: "500",
           }}
@@ -75,7 +78,7 @@ export default function Welcome() {
         >
           {motifSub(language)}
         </Text>
-        <Shifu pose="bow" size={140} style={{ marginTop: -12 }} />
+        <Shifu pose="bow" size={140} style={{ marginTop: 16 }} />
       </View>
     </AuthShell>
   )

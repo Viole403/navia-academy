@@ -73,14 +73,17 @@ export function AuthShell({
   return (
     <SafeAreaView
       style={{ flex: 1, backgroundColor: paper.paper }}
-      edges={["top"]}
+      edges={["top", "bottom"]}
     >
       {art ? (
         <View
           pointerEvents="none"
           style={{
             position: "absolute",
-            top: 0,
+            // An absolute child is anchored to the parent's padding box, not its
+            // content box, so top: 0 put the art under the status bar. SafeAreaView's
+            // own padding does not move it.
+            top: insets.top,
             left: 0,
             right: 0,
             alignItems: "center",
@@ -108,8 +111,8 @@ export function AuthShell({
             flexGrow: 1,
             alignItems: "center",
             paddingHorizontal: 20,
-            paddingTop: 24,
-            paddingBottom: 24,
+            paddingTop: 32,
+            paddingBottom: 28,
           }}
           keyboardShouldPersistTaps="handled"
           showsVerticalScrollIndicator={false}
@@ -141,7 +144,9 @@ export function AuthShell({
           style={{
             paddingHorizontal: 20,
             paddingTop: 12,
-            paddingBottom: Math.max(insets.bottom, 12) + 8,
+            // SafeAreaView now owns the bottom inset, so adding it again here
+            // would double the gap and push the button up off the home bar.
+            paddingBottom: 8,
             borderTopWidth: 1,
             borderTopColor: theme.border,
             backgroundColor: paper.paper,

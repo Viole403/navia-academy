@@ -111,7 +111,7 @@ function hexToRgb(hex: string): [number, number, number] {
   ]
 }
 
-function mix(a: string, b: string, t: number): string {
+export function mix(a: string, b: string, t: number): string {
   const [r1, g1, b1] = hexToRgb(a)
   const [r2, g2, b2] = hexToRgb(b)
   const m = (x: number, y: number) => Math.round(x + (y - x) * t)
