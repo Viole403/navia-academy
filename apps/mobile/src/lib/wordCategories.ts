@@ -22,7 +22,6 @@ export interface Category {
   /** i18n key for the label — the tiles are labels, not data. */
   labelKey: string
   /** Pastel fill for the tile, resolved against the live paper palette. */
-  fill: string
 }
 
 const POS_BUCKETS: Record<string, CategoryId> = {
@@ -67,16 +66,18 @@ export function categoryOf(word: VocabWord): CategoryId {
   return POS_BUCKETS[pos] ?? "other"
 }
 
+// No per-category fill: the pastel hexes this used to carry were light-mode
+// only, so on a dark page ink on them measured 1.00:1. The tile takes a
+// palette surface and the hanzi glyph carries the category.
 export const CATEGORIES: Category[] = [
-  { id: "verbs", glyph: "動", labelKey: "cat.verbs", fill: "#E8F4E9" },
-  { id: "nouns", glyph: "名", labelKey: "cat.nouns", fill: "#FDECE8" },
+  { id: "verbs", glyph: "動", labelKey: "cat.verbs" },
+  { id: "nouns", glyph: "名", labelKey: "cat.nouns" },
   {
     id: "descriptors",
     glyph: "形",
     labelKey: "cat.descriptors",
-    fill: "#F3EEFC",
   },
-  { id: "grammar", glyph: "法", labelKey: "cat.grammar", fill: "#FFF4D9" },
-  { id: "timePlace", glyph: "時", labelKey: "cat.timePlace", fill: "#E7F1F7" },
-  { id: "other", glyph: "其", labelKey: "cat.other", fill: "#F1EFE9" },
+  { id: "grammar", glyph: "法", labelKey: "cat.grammar" },
+  { id: "timePlace", glyph: "時", labelKey: "cat.timePlace" },
+  { id: "other", glyph: "其", labelKey: "cat.other" },
 ]

@@ -283,7 +283,7 @@ export function Dictionary() {
                     borderRadius: 14,
                     borderWidth: 1,
                     borderColor: selected ? paper.green : paper.line,
-                    backgroundColor: selected ? paper.greenSoft : c.fill,
+                    backgroundColor: selected ? paper.greenSoft : paper.cardAlt,
                     padding: 10,
                     alignItems: "center",
                     gap: 4,
