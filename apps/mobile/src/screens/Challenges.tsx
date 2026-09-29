@@ -70,8 +70,8 @@ export function Challenges() {
 
   const progressQ = useQuery({ queryKey: ["progress"], queryFn: progress.get })
   const dueQ = useQuery({
-    queryKey: ["due-cards"],
-    queryFn: () => progress.dueCards(),
+    queryKey: ["due-cards", 50],
+    queryFn: () => progress.dueCards(50),
   })
   const sessionsQ = useQuery({
     queryKey: ["study-sessions"],

@@ -47,7 +47,7 @@ export function ReviewHub() {
   const { column: columnWidth } = useContentLayout()
 
   const dueQ = useQuery({
-    queryKey: ["due-cards"],
+    queryKey: ["due-cards", 50],
     queryFn: () => progress.dueCards(50),
   })
   const statsQ = useQuery({

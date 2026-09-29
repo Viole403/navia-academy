@@ -78,14 +78,10 @@ export function NewWords() {
     queryFn: () => loadVocabulary(language),
   })
   const cardsQ = useQuery({
-    queryKey: ["due-cards"],
+    queryKey: ["due-cards", 200],
     queryFn: () => progress.dueCards(200),
   })
   const progressQ = useQuery({ queryKey: ["progress"], queryFn: progress.get })
-  const settingsQ = useQuery({
-    queryKey: ["settings"],
-    queryFn: progress.get as never,
-  })
 
   const seen = useMemo(() => new Set(history.map((h) => h.id)), [history])
 

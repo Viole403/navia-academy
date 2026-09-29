@@ -78,8 +78,8 @@ export default function HomeTab() {
 
   const progressQ = useQuery({ queryKey: ["progress"], queryFn: progress.get })
   const dueCardsQ = useQuery({
-    queryKey: ["due-cards"],
-    queryFn: () => progress.dueCards(),
+    queryKey: ["due-cards", 50],
+    queryFn: () => progress.dueCards(50),
   })
   const sessionsQ = useQuery({
     queryKey: ["study-sessions"],

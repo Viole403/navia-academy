@@ -43,7 +43,7 @@ export function MyWords() {
   const [tier, setTier] = useState<Tier>("learning")
 
   const cardsQ = useQuery({
-    queryKey: ["due-cards"],
+    queryKey: ["due-cards", 100],
     queryFn: () => progress.dueCards(100),
   })
   const progressQ = useQuery({ queryKey: ["progress"], queryFn: progress.get })
