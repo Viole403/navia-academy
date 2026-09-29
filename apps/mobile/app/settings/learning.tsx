@@ -1,6 +1,8 @@
 import { StyleSheet, Text, View } from "react-native"
 import { DetailShell } from "@/components/study/DetailShell"
 import {
+  GROUP_INSET,
+  GROUP_LABEL_GAP,
   SettingsGroup,
   SettingsToggle,
   SettingsChoice,
@@ -93,9 +95,9 @@ export default function SettingsLearning() {
               ) : null}
               <View
                 style={{
-                  paddingHorizontal: 14,
-                  paddingTop: 14,
-                  paddingBottom: 2,
+                  paddingHorizontal: GROUP_INSET,
+                  paddingTop: GROUP_INSET,
+                  paddingBottom: GROUP_LABEL_GAP,
                 }}
               >
                 <Text
@@ -188,7 +190,11 @@ export default function SettingsLearning() {
             }}
           />
           <View
-            style={{ paddingHorizontal: 14, paddingTop: 12, paddingBottom: 2 }}
+            style={{
+              paddingHorizontal: GROUP_INSET,
+              paddingTop: GROUP_INSET,
+              paddingBottom: GROUP_LABEL_GAP,
+            }}
           >
             <Text
               style={{

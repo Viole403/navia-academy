@@ -3,6 +3,7 @@ import { DetailShell } from "@/components/study/DetailShell"
 import {
   SettingsGroup,
   SettingsState,
+  GROUP_INSET,
 } from "@/components/settings/SettingsGroup"
 import { PressableScale } from "@/components/study/press"
 import { useUserSettings } from "@/hooks/useUserSettings"
@@ -63,8 +64,8 @@ export default function SettingsGoal() {
                 flexDirection: "row",
                 alignItems: "center",
                 gap: 14,
-                paddingVertical: 16,
-                paddingHorizontal: 16,
+                paddingVertical: GROUP_INSET,
+                paddingHorizontal: GROUP_INSET,
                 borderRadius: 16,
                 borderWidth: 1,
                 borderColor: selected ? theme.accent : theme.border,

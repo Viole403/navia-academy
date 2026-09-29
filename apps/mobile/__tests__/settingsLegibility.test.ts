@@ -45,6 +45,20 @@ describe("settings legibility", () => {
     expect(offenders).toEqual([])
   })
 
+  it("no settings screen sets a gap that reads as touching", () => {
+    // A sub-label inside a group used to carry paddingBottom: 2, which put it
+    // 2dp off the control below and read as part of it.
+    const offenders = TREE.flatMap((f) =>
+      readFileSync(f, "utf8")
+        .split("\n")
+        .flatMap((line, i) => {
+          const m = line.match(/padding(?:Top|Bottom):\s*([0-3])\b/)
+          return m ? [`${f}:${i + 1} ${line.trim()}`] : []
+        })
+    )
+    expect(offenders).toEqual([])
+  })
+
   it("no settings screen derives a fill from a raw token plus an alpha suffix", () => {
     // theme.accent + "18" is the bug: a raw token under an alpha suffix is not a
     // contrast-corrected surface. paper.* carries its own correction instead.

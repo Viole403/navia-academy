@@ -46,7 +46,7 @@ export function SettingsGroup({
         <Text
           style={[
             type.labelSm,
-            { color: paper.inkMuted, paddingHorizontal: 14 },
+            { color: paper.inkMuted, paddingHorizontal: GROUP_INSET },
           ]}
         >
           {title}
@@ -67,7 +67,7 @@ export function SettingsGroup({
         <Text
           style={[
             type.caption,
-            { color: paper.inkMuted, paddingHorizontal: 14 },
+            { color: paper.inkMuted, paddingHorizontal: GROUP_INSET },
           ]}
         >
           {hint}
@@ -97,8 +97,8 @@ function RowFrame({
         flexDirection: "row",
         alignItems: "center",
         gap: 12,
-        paddingVertical: 14,
-        paddingHorizontal: 14,
+        paddingVertical: GROUP_INSET,
+        paddingHorizontal: GROUP_INSET,
         borderTopWidth: first ? 0 : StyleSheet.hairlineWidth,
         borderTopColor: theme.border,
       }}
@@ -263,7 +263,14 @@ export function SettingsToggle({
  * them side by side. Wrapping chips let a long option drop to a second line and
  * break exactly that comparison.
  */
-/** One height for every choice pill, independent of the font that lands in it. */
+/**
+ * One height for every choice pill, independent of the font that lands in it.
+ * GROUP_INSET keeps every screen on one rhythm: a sub-label inside a group
+ * used to sit 2dp above the control below it, which read as touching.
+ */
+export const GROUP_INSET = 14
+/** Space between a sub-label inside a group and the control it introduces. */
+export const GROUP_LABEL_GAP = 8
 const CHOICE_HEIGHT = 44
 
 export function SettingsChoice({
@@ -287,9 +294,9 @@ export function SettingsChoice({
         flexDirection: "row",
         flexWrap: "wrap",
         gap: 6,
-        paddingHorizontal: 14,
-        paddingTop: 14,
-        paddingBottom: 14,
+        paddingHorizontal: GROUP_INSET,
+        paddingTop: GROUP_INSET,
+        paddingBottom: GROUP_INSET,
       }}
     >
       {options.map((o) => {
