@@ -129,7 +129,6 @@ export function useTts() {
   const language = useOnboardingStore((s) => s.language)
 
   useEffect(() => {
-    if (!Audio) return
     configureAudioSession()
 
     return () => {
@@ -140,10 +139,6 @@ export function useTts() {
   const play = useCallback(
     async (text: string) => {
       if (!text) return
-      if (!Audio) {
-        setError("Audio unavailable in Expo Go — use a dev build")
-        return
-      }
       const playId = ++playIdRef.current // tag this call
       try {
         setError(null)
