@@ -1,6 +1,7 @@
 import { Pressable, Text, View } from "react-native"
 import { useT } from "@/i18n"
 import type { Theme, ThemeDefinition, ThemeMode } from "@/theme/colors"
+import { RADIUS } from "@/theme/paper"
 
 export function ThemeSwatch({
   def,
@@ -27,7 +28,7 @@ export function ThemeSwatch({
       style={{
         width: 96,
         height: 96,
-        borderRadius: 4,
+        borderRadius: RADIUS.card,
         borderWidth: selected ? 2 : 1,
         borderColor: selected ? preview.accent : preview.border,
         backgroundColor: preview.bg,

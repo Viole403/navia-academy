@@ -39,7 +39,7 @@ export function SettingsGroup({
   /** Drops the bottom rule on the final group. */
   last?: boolean
 }) {
-  const { theme } = useTheme()
+  const { theme, paper } = useTheme()
   return (
     <View style={{ gap: 8 }}>
       {title ? (
@@ -51,7 +51,7 @@ export function SettingsGroup({
       ) : null}
       <View
         style={{
-          borderRadius: 18,
+          borderRadius: paper.radius.card,
           borderWidth: 1,
           borderColor: theme.border,
           backgroundColor: theme.surface,
@@ -84,7 +84,7 @@ function RowFrame({
   first?: boolean
   last?: boolean
 }) {
-  const { theme } = useTheme()
+  const { theme, paper } = useTheme()
   const body = (
     <View
       style={{
@@ -137,7 +137,7 @@ export function SettingsRow({
   first?: boolean
   last?: boolean
 }) {
-  const { theme } = useTheme()
+  const { theme, paper } = useTheme()
   const fg = danger ? theme.red : theme.text
   return (
     <RowFrame onPress={onPress} danger={danger} first={first} last={last}>
@@ -146,7 +146,7 @@ export function SettingsRow({
           style={{
             width: 34,
             height: 34,
-            borderRadius: 10,
+            borderRadius: 17,
             alignItems: "center",
             justifyContent: "center",
             backgroundColor: (tint ?? theme.accent) + "1F",
@@ -204,7 +204,7 @@ export function SettingsToggle({
   last?: boolean
   disabled?: boolean
 }) {
-  const { theme } = useTheme()
+  const { theme, paper } = useTheme()
   return (
     <RowFrame first={first} last={last}>
       {icon ? (
@@ -212,7 +212,7 @@ export function SettingsToggle({
           style={{
             width: 34,
             height: 34,
-            borderRadius: 10,
+            borderRadius: 17,
             alignItems: "center",
             justifyContent: "center",
             backgroundColor: (tint ?? theme.accent) + "1F",
@@ -266,7 +266,7 @@ export function SettingsChoice({
   value: string | undefined
   onChange: (id: string) => void
 }) {
-  const { theme } = useTheme()
+  const { theme, paper } = useTheme()
   return (
     <View
       style={{
@@ -285,13 +285,11 @@ export function SettingsChoice({
             style={{
               flex: 1,
               paddingVertical: 11,
-              borderRadius: 12,
+              borderRadius: paper.radius.pill,
               alignItems: "center",
               borderWidth: 1,
               borderColor: selected ? (o.tint ?? theme.accent) : theme.border,
-              backgroundColor: selected
-                ? (o.tint ?? theme.accent) + "14"
-                : "transparent",
+              backgroundColor: selected ? paper.cardAlt : "transparent",
             }}
           >
             <Text
@@ -299,7 +297,7 @@ export function SettingsChoice({
               style={[
                 type.bodySm,
                 {
-                  color: selected ? (o.tint ?? theme.accent) : theme.textMuted,
+                  color: selected ? paper.ink : paper.inkMuted,
                   fontFamily: fonts.sans,
                   fontWeight: selected ? "700" : "500",
                 },
@@ -331,7 +329,7 @@ export function SettingsState({
   message?: string
   onRetry?: () => void
 }) {
-  const { theme } = useTheme()
+  const { theme, paper } = useTheme()
   const t = useT()
   if (kind === "loading") {
     return (
@@ -383,7 +381,7 @@ export function SettingsState({
               marginTop: 4,
               paddingHorizontal: 18,
               paddingVertical: 10,
-              borderRadius: 12,
+              borderRadius: paper.radius.pill,
               borderWidth: 1,
               borderColor: theme.accent,
             }}

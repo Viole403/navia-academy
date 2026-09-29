@@ -333,7 +333,7 @@ export function WordDetail() {
                     paddingVertical: 5,
                     borderWidth: 1,
                     borderColor: paper.line,
-                    borderRadius: 999,
+                    borderRadius: paper.radius.pill,
                   }}
                 >
                   <Text

@@ -211,7 +211,7 @@ export function Dictionary() {
                     borderColor: level === null ? paper.green : paper.line,
                     backgroundColor:
                       level === null ? paper.greenSoft : "transparent",
-                    borderRadius: 999,
+                    borderRadius: paper.radius.pill,
                     paddingHorizontal: 12,
                     paddingVertical: 7,
                   }}
@@ -242,7 +242,7 @@ export function Dictionary() {
                       borderColor: level === lv ? paper.green : paper.line,
                       backgroundColor:
                         level === lv ? paper.greenSoft : "transparent",
-                      borderRadius: 999,
+                      borderRadius: paper.radius.pill,
                       paddingHorizontal: 12,
                       paddingVertical: 7,
                     }}
@@ -509,7 +509,7 @@ function WordRow({
         <View
           style={{
             backgroundColor: paper.greenSoft,
-            borderRadius: 6,
+            borderRadius: paper.radius.tag,
             paddingHorizontal: 6,
             paddingVertical: 2,
           }}

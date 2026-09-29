@@ -96,7 +96,7 @@ const GOALS: { min: number; key: I18nKey }[] = [
  * they have not yet decided they want.
  */
 export default function Onboarding() {
-  const { theme, catalog, materialYouAvailable } = useTheme()
+  const { theme, paper, catalog, materialYouAvailable } = useTheme()
   const t = useT()
   const { themeId, mode, setThemeId, setMode } = useThemePrefs()
   const {
@@ -372,7 +372,7 @@ export default function Onboarding() {
                     style={{
                       flex: 1,
                       paddingVertical: 10,
-                      borderRadius: 12,
+                      borderRadius: paper.radius.pill,
                       borderWidth: 1,
                       borderColor: selected ? theme.accent : theme.border,
                       backgroundColor: selected

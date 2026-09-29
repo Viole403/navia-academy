@@ -181,7 +181,7 @@ function ThemeSwatch({
   selected: boolean
   onPress: () => void
 }) {
-  const { theme } = useTheme()
+  const { theme, paper } = useTheme()
   return (
     <PressableScale onPress={onPress}>
       <View
@@ -191,7 +191,7 @@ function ThemeSwatch({
           gap: 10,
           paddingVertical: 10,
           paddingHorizontal: 12,
-          borderRadius: 12,
+          borderRadius: paper.radius.pill,
           borderWidth: 1,
           borderColor: selected ? theme.accent : theme.border,
           backgroundColor: selected ? theme.accent + "12" : "transparent",

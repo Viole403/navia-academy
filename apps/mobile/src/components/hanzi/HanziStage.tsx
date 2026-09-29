@@ -517,7 +517,7 @@ function SingleGlyphStage({
             alignItems: "center",
             justifyContent: "center",
             gap: 4,
-            borderRadius: 12,
+            borderRadius: paper.radius.pill,
             backgroundColor: paper.cardAlt,
             padding: 8,
           }}

@@ -82,8 +82,22 @@ export interface PaperPalette {
   /** Android draws shadows from elevation alone; iOS from these four. */
   shadow: ViewStyleShadow
   shadowLifted: ViewStyleShadow
-  radius: { card: number; inner: number; pill: number; tag: number }
+  radius: Radius
 }
+
+/** The one radius scale. Screens and controls must pick from these, not invent values. */
+export const RADIUS = {
+  /** Panels, cards, large tiles. */
+  card: 20,
+  /** Nested surfaces inside a card. */
+  inner: 14,
+  /** Wide interactive controls: buttons, chips, segmented options. */
+  pill: 24,
+  /** Small dense chips and status tags. */
+  tag: 12,
+} as const
+
+export type Radius = typeof RADIUS
 
 type ViewStyleShadow = {
   shadowColor: string
@@ -302,6 +316,6 @@ export function paperFor(theme: Theme, mode: ResolvedMode): PaperPalette {
     },
     shadow: shadowFor(theme.text, false),
     shadowLifted: shadowFor(theme.text, true),
-    radius: { card: 20, inner: 14, pill: 24, tag: 12 },
+    radius: RADIUS,
   }
 }

@@ -103,7 +103,7 @@ export function MatchingQuestion({ prompt, pairs, onAnswered }: Props) {
                   flex: 1,
                   paddingVertical: 12,
                   paddingHorizontal: 12,
-                  borderRadius: 10,
+                  borderRadius: paper.radius.pill,
                   borderWidth: held ? 2 : 1,
                   borderColor: held ? paper.green : paper.line,
                   backgroundColor: held ? paper.greenSoft : "transparent",
@@ -142,7 +142,7 @@ export function MatchingQuestion({ prompt, pairs, onAnswered }: Props) {
                     innerStyle={{
                       paddingVertical: 12,
                       paddingHorizontal: 12,
-                      borderRadius: 10,
+                      borderRadius: paper.radius.pill,
                       borderWidth: 1,
                       borderColor: paper.green,
                       backgroundColor: paper.greenSoft,

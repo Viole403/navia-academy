@@ -221,7 +221,7 @@ export function Radicals() {
                           alignItems: "center",
                           justifyContent: "center",
                           backgroundColor: paper.surface.week.fill,
-                          borderRadius: 10,
+                          borderRadius: paper.radius.pill,
                         }}
                       >
                         <Text

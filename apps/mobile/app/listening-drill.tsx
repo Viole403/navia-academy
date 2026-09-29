@@ -200,7 +200,7 @@ export default function ListeningDrillScreen() {
                     style={{
                       paddingHorizontal: 22,
                       paddingVertical: 14,
-                      borderRadius: 999,
+                      borderRadius: paper.radius.pill,
                       backgroundColor: paper.greenSoft,
                       borderWidth: 1,
                       borderColor: paper.greenRing,

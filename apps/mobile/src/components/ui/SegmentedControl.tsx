@@ -12,7 +12,7 @@ export function SegmentedControl<T extends string>({
   value,
   onChange,
 }: SegmentedControlProps<T>) {
-  const { theme } = useTheme()
+  const { paper } = useTheme()
   return (
     <View style={{ flexDirection: "row", gap: 6 }}>
       {options.map((o) => {
@@ -24,16 +24,16 @@ export function SegmentedControl<T extends string>({
             style={{
               flex: 1,
               paddingVertical: 10,
-              borderRadius: 2,
+              borderRadius: paper.radius.pill,
               borderWidth: 1.5,
-              borderColor: sel ? theme.text : theme.border,
-              backgroundColor: sel ? theme.text : "transparent",
+              borderColor: sel ? paper.coral : paper.line,
+              backgroundColor: sel ? paper.coralSoft : "transparent",
               alignItems: "center",
             }}
           >
             <Text
               style={{
-                color: sel ? theme.bg : theme.text,
+                color: paper.ink,
                 fontWeight: "600",
                 fontSize: 13,
               }}

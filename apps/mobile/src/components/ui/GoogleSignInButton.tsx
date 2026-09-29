@@ -14,7 +14,7 @@ export function GoogleSignInButton({
   loading?: boolean
   disabled?: boolean
 }) {
-  const { resolvedMode } = useTheme()
+  const { resolvedMode, paper } = useTheme()
   const dark = resolvedMode !== "light"
   const bg = dark ? "#131314" : "#FFFFFF"
   const border = dark ? "#8E918F" : "#747775"
@@ -32,7 +32,7 @@ export function GoogleSignInButton({
       // label sat under the logo. Press feedback would need onPressIn/onPressOut.
       style={{
         height: 52,
-        borderRadius: 4,
+        borderRadius: paper.radius.pill,
         borderWidth: 1,
         borderColor: border,
         backgroundColor: bg,

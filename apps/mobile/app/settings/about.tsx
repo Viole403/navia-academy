@@ -259,7 +259,7 @@ export function AboutSection() {
                   style={{
                     width: 36,
                     height: 36,
-                    borderRadius: 2,
+                    borderRadius: 18,
                     borderWidth: 1,
                     borderColor: theme.border,
                     backgroundColor: contributorColor(c.name, theme) + "22",
@@ -353,7 +353,7 @@ export function AboutSection() {
                       paddingVertical: 3,
                       borderWidth: 1,
                       borderColor: theme.gold,
-                      borderRadius: 2,
+                      borderRadius: 12,
                     }}
                   >
                     <Text

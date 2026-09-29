@@ -119,7 +119,7 @@ function AudioPlayButton({
         gap: 12,
         paddingVertical: 18,
         paddingHorizontal: 20,
-        borderRadius: 999,
+        borderRadius: paper.radius.pill,
         backgroundColor: paper.greenSoft,
         borderWidth: 1,
         borderColor: paper.greenRing,

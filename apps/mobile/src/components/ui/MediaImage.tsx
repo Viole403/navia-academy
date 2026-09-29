@@ -64,7 +64,7 @@ export function MediaImage({
             height: 16,
             borderWidth: 1.5,
             borderColor: theme.border,
-            borderRadius: 2,
+            borderRadius: 8,
           }}
         />
       </View>

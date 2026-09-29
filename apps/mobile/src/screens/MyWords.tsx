@@ -110,7 +110,7 @@ export function MyWords() {
                   borderWidth: 1,
                   borderColor: selected ? paper.green : paper.line,
                   backgroundColor: selected ? paper.greenSoft : "transparent",
-                  borderRadius: 12,
+                  borderRadius: paper.radius.pill,
                   paddingVertical: 9,
                   alignItems: "center",
                   gap: 2,
