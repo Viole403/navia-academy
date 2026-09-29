@@ -1,5 +1,6 @@
 import { Text, View } from "react-native"
 import { useTheme } from "@/theme/ThemeProvider"
+import { readableOn } from "@/theme/paper"
 import { paperType, families } from "@/theme/paperType"
 
 /**
