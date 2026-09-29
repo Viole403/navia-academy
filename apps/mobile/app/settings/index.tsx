@@ -29,7 +29,7 @@ export default function SettingsHub() {
   const s = useUserSettings()
   if (s.isLoading) {
     return (
-      <DetailShell title={t("set.title")} fallback="/(tabs)/me">
+      <DetailShell title={t("set.title")} fallback="/(tabs)/profile">
         <SettingsState kind="loading" />
       </DetailShell>
     )
@@ -43,7 +43,7 @@ export default function SettingsHub() {
         : t("profile.modeSystem")
 
   return (
-    <DetailShell title={t("set.title")} fallback="/(tabs)/me">
+    <DetailShell title={t("set.title")} fallback="/(tabs)/profile">
       <View style={{ gap: 22 }}>
         <SettingsGroup title={t("set.study")}>
           <SettingsRow

@@ -51,13 +51,16 @@ const linking = {
     screens: {
       "(auth)": {
         screens: {
-          "sign-in": "sign-in",
+          login: "login",
+          register: "register",
         },
       },
       "(tabs)": {
         screens: {
           index: "",
           learn: "learn",
+          exam: "exam",
+          stats: "stats",
           profile: "profile",
         },
       },
@@ -174,7 +177,7 @@ export default function RootLayout() {
     // Redirect to sign-in when refresh token is rejected by the server.
     const unsubscribe = onRefreshFail(() => {
       signOut()
-      router.replace("/(auth)/sign-in" as never)
+      router.replace("/(auth)" as never)
     })
     return unsubscribe
   }, [signOut, router])
