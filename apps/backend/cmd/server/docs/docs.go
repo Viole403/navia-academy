@@ -449,6 +449,70 @@ const docTemplate = `{
                 }
             }
         },
+        "/auth/google/exchange": {
+            "post": {
+                "description": "Verifies the Google ID token server-side, then returns {user, token_pair}. 501 when AUTH_GOOGLE_ID not configured.",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "Auth"
+                ],
+                "summary": "Google ID token exchange (native clients)",
+                "parameters": [
+                    {
+                        "description": "Google ID token",
+                        "name": "body",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/github_com_navia-academy_backend_internal_models.GoogleExchangeRequest"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "allOf": [
+                                {
+                                    "$ref": "#/definitions/github_com_navia-academy_backend_pkg_response.APIResponse"
+                                },
+                                {
+                                    "type": "object",
+                                    "properties": {
+                                        "data": {
+                                            "type": "object"
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    "400": {
+                        "description": "INVALID_BODY",
+                        "schema": {
+                            "$ref": "#/definitions/github_com_navia-academy_backend_pkg_response.APIError"
+                        }
+                    },
+                    "401": {
+                        "description": "INVALID_GOOGLE_TOKEN",
+                        "schema": {
+                            "$ref": "#/definitions/github_com_navia-academy_backend_pkg_response.APIError"
+                        }
+                    },
+                    "501": {
+                        "description": "NOT_CONFIGURED",
+                        "schema": {
+                            "$ref": "#/definitions/github_com_navia-academy_backend_pkg_response.APIError"
+                        }
+                    }
+                }
+            }
+        },
         "/auth/login": {
             "post": {
                 "description": "Authenticate with email + password. Returns user object + token pair.",
@@ -4800,6 +4864,10 @@ const docTemplate = `{
                 "status": {
                     "type": "string"
                 },
+                "tab_warnings": {
+                    "description": "Tab switches and window blurs counted server-side, so the threshold that\nraises the integrity flag survives a reload. The flag itself is written\nonce, to exam_results.",
+                    "type": "integer"
+                },
                 "time_limit_sec": {
                     "type": "integer"
                 },
@@ -4847,6 +4915,11 @@ const docTemplate = `{
                 "elapsed_sec": {
                     "type": "integer",
                     "example": 120
+                },
+                "tab_warnings": {
+                    "description": "Warnings the learner has accrued this session. The server cannot observe\ntab visibility, so the client has to report it — but it is added here and\nkept monotonic, so the count no longer resets on reload and a later patch\ncannot walk it back down. It is a durable tally, not a verified one.",
+                    "type": "integer",
+                    "example": 1
                 },
                 "theta": {
                     "description": "current estimate (informational)",
@@ -5263,6 +5336,18 @@ const docTemplate = `{
                 }
             }
         },
+        "github_com_navia-academy_backend_internal_models.GoogleExchangeRequest": {
+            "type": "object",
+            "required": [
+                "id_token"
+            ],
+            "properties": {
+                "id_token": {
+                    "type": "string",
+                    "example": "\u003cgoogle-id-token\u003e"
+                }
+            }
+        },
         "github_com_navia-academy_backend_internal_models.LoginRequest": {
             "type": "object",
             "required": [
@@ -5629,9 +5714,6 @@ const docTemplate = `{
                     "type": "boolean"
                 },
                 "theme": {
-                    "type": "string"
-                },
-                "voice_gender": {
                     "type": "string"
                 },
                 "weekly_summary": {
@@ -6131,9 +6213,6 @@ const docTemplate = `{
                     "type": "string"
                 },
                 "user_id": {
-                    "type": "string"
-                },
-                "voice_gender": {
                     "type": "string"
                 },
                 "weekly_summary": {

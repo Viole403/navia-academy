@@ -32,7 +32,6 @@ type UserSettings struct {
 	ShowStats       bool             `json:"show_stats" db:"show_stats"`
 	HiddenWidgets   []string         `json:"hidden_widgets" db:"hidden_widgets"`
 	ActiveExamType  string           `json:"active_exam_type" db:"active_exam_type"`
-	VoiceGender     string           `json:"voice_gender" db:"voice_gender"`
 	UpdatedAt       time.Time        `json:"updated_at" db:"updated_at"`
 }
 
@@ -61,7 +60,6 @@ type SettingsUpdateRequest struct {
 	ShowStats       *bool            `json:"show_stats,omitempty"`
 	HiddenWidgets   []string         `json:"hidden_widgets,omitempty"`
 	ActiveExamType  *string          `json:"active_exam_type,omitempty"`
-	VoiceGender     *string          `json:"voice_gender,omitempty"`
 }
 
 var DefaultDisplayMode = json.RawMessage(`{"script":"simplified","mode":"hanyu+trans","adaptiveByLevel":false,"levelOverrides":{}}`)

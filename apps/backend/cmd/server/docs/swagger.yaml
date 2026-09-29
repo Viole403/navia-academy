@@ -168,6 +168,12 @@ definitions:
         type: string
       status:
         type: string
+      tab_warnings:
+        description: |-
+          Tab switches and window blurs counted server-side, so the threshold that
+          raises the integrity flag survives a reload. The flag itself is written
+          once, to exam_results.
+        type: integer
       time_limit_sec:
         type: integer
       time_remaining_sec:
@@ -198,6 +204,14 @@ definitions:
         type: array
       elapsed_sec:
         example: 120
+        type: integer
+      tab_warnings:
+        description: |-
+          Warnings the learner has accrued this session. The server cannot observe
+          tab visibility, so the client has to report it — but it is added here and
+          kept monotonic, so the count no longer resets on reload and a later patch
+          cannot walk it back down. It is a durable tally, not a verified one.
+        example: 1
         type: integer
       theta:
         description: current estimate (informational)
@@ -476,6 +490,14 @@ definitions:
       updated_at:
         type: string
     type: object
+  github_com_navia-academy_backend_internal_models.GoogleExchangeRequest:
+    properties:
+      id_token:
+        example: <google-id-token>
+        type: string
+    required:
+    - id_token
+    type: object
   github_com_navia-academy_backend_internal_models.LoginRequest:
     properties:
       email:
@@ -728,8 +750,6 @@ definitions:
       streak_alerts:
         type: boolean
       theme:
-        type: string
-      voice_gender:
         type: string
       weekly_summary:
         type: boolean
@@ -1063,8 +1083,6 @@ definitions:
         type: string
       user_id:
         type: string
-      voice_gender:
-        type: string
       weekly_summary:
         type: boolean
     type: object
@@ -1378,6 +1396,46 @@ paths:
           schema:
             $ref: '#/definitions/github_com_navia-academy_backend_pkg_response.APIError'
       summary: Google OAuth authorize URL
+      tags:
+      - Auth
+  /auth/google/exchange:
+    post:
+      consumes:
+      - application/json
+      description: Verifies the Google ID token server-side, then returns {user, token_pair}.
+        501 when AUTH_GOOGLE_ID not configured.
+      parameters:
+      - description: Google ID token
+        in: body
+        name: body
+        required: true
+        schema:
+          $ref: '#/definitions/github_com_navia-academy_backend_internal_models.GoogleExchangeRequest'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            allOf:
+            - $ref: '#/definitions/github_com_navia-academy_backend_pkg_response.APIResponse'
+            - properties:
+                data:
+                  type: object
+              type: object
+        "400":
+          description: INVALID_BODY
+          schema:
+            $ref: '#/definitions/github_com_navia-academy_backend_pkg_response.APIError'
+        "401":
+          description: INVALID_GOOGLE_TOKEN
+          schema:
+            $ref: '#/definitions/github_com_navia-academy_backend_pkg_response.APIError'
+        "501":
+          description: NOT_CONFIGURED
+          schema:
+            $ref: '#/definitions/github_com_navia-academy_backend_pkg_response.APIError'
+      summary: Google ID token exchange (native clients)
       tags:
       - Auth
   /auth/login:

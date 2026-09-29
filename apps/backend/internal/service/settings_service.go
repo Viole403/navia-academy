@@ -47,7 +47,6 @@ func (s *SettingsService) GetSettings(ctx context.Context, userID string) (*mode
 			ShowStats:       true,
 			HiddenWidgets:   []string{},
 			ActiveExamType:  "hsk",
-			VoiceGender:     "female",
 		}, nil
 	}
 	return settings, nil
@@ -136,10 +135,6 @@ func (s *SettingsService) UpdateSettings(ctx context.Context, userID string, req
 	if req.ActiveExamType != nil {
 		settings.ActiveExamType = *req.ActiveExamType
 	}
-	if req.VoiceGender != nil {
-		settings.VoiceGender = *req.VoiceGender
-	}
-
 	if settings.ID == "" {
 		settings.ID = uuid.New().String()
 	}

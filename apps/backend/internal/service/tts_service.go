@@ -162,7 +162,6 @@ func (s *TTSService) GetVoiceURL(ctx context.Context, text, locale, gender strin
 }
 
 type VoiceLocale string
-type VoiceGender string
 
 var voiceLocaleMap = map[string]string{
 	"hsk":    "zh-CN",

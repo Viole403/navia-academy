@@ -21,7 +21,7 @@ func (r *SettingsRepository) GetByUserID(ctx context.Context, userID string) (*m
 		       autoplay_audio, sound_effects, daily_goal_min, new_words_per_day, max_reviews_per_day,
 		       locale, reduce_motion, high_contrast, density, focus_mode, daily_reminder, reminder_time,
 		       weekly_summary, streak_alerts, public_profile, show_stats, hidden_widgets,
-		       active_exam_type, voice_gender, updated_at
+		       active_exam_type, updated_at
 		FROM user_settings WHERE user_id = $1
 	`, userID)
 
@@ -30,7 +30,7 @@ func (r *SettingsRepository) GetByUserID(ctx context.Context, userID string) (*m
 		&s.AudioRate, &s.AutoplayAudio, &s.SoundEffects, &s.DailyGoalMin, &s.NewWordsPerDay,
 		&s.MaxReviewsPerDay, &s.Locale, &s.ReduceMotion, &s.HighContrast, &s.Density, &s.FocusMode,
 		&s.DailyReminder, &s.ReminderTime, &s.WeeklySummary, &s.StreakAlerts, &s.PublicProfile,
-		&s.ShowStats, &s.HiddenWidgets, &s.ActiveExamType, &s.VoiceGender, &s.UpdatedAt)
+		&s.ShowStats, &s.HiddenWidgets, &s.ActiveExamType, &s.UpdatedAt)
 	if err != nil {
 		return nil, err
 	}
@@ -44,8 +44,8 @@ func (r *SettingsRepository) Upsert(ctx context.Context, s *models.UserSettings)
 		                           new_words_per_day, max_reviews_per_day, locale, reduce_motion,
 		                           high_contrast, density, focus_mode, daily_reminder, reminder_time,
 		                           weekly_summary, streak_alerts, public_profile, show_stats,
-		                           hidden_widgets, active_exam_type, voice_gender)
-		VALUES ($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12,$13,$14,$15,$16,$17,$18,$19,$20,$21,$22,$23,$24,$25,$26,$27)
+		                           hidden_widgets, active_exam_type)
+		VALUES ($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12,$13,$14,$15,$16,$17,$18,$19,$20,$21,$22,$23,$24,$25,$26)
 		ON CONFLICT (user_id) DO UPDATE SET
 			theme = EXCLUDED.theme, mode = EXCLUDED.mode, font_size = EXCLUDED.font_size,
 			hanzi_size = EXCLUDED.hanzi_size, display_mode = EXCLUDED.display_mode,
@@ -58,11 +58,11 @@ func (r *SettingsRepository) Upsert(ctx context.Context, s *models.UserSettings)
 			reminder_time = EXCLUDED.reminder_time, weekly_summary = EXCLUDED.weekly_summary,
 			streak_alerts = EXCLUDED.streak_alerts, public_profile = EXCLUDED.public_profile,
 			show_stats = EXCLUDED.show_stats, hidden_widgets = EXCLUDED.hidden_widgets,
-			active_exam_type = EXCLUDED.active_exam_type, voice_gender = EXCLUDED.voice_gender
+			active_exam_type = EXCLUDED.active_exam_type
 	`, s.ID, s.UserID, s.Theme, s.Mode, s.FontSize, s.HanziSize, s.DisplayMode,
 		s.AudioRate, s.AutoplayAudio, s.SoundEffects, s.DailyGoalMin, s.NewWordsPerDay,
 		s.MaxReviewsPerDay, s.Locale, s.ReduceMotion, s.HighContrast, s.Density, s.FocusMode,
 		s.DailyReminder, s.ReminderTime, s.WeeklySummary, s.StreakAlerts, s.PublicProfile,
-		s.ShowStats, s.HiddenWidgets, s.ActiveExamType, s.VoiceGender)
+		s.ShowStats, s.HiddenWidgets, s.ActiveExamType)
 	return err
 }
