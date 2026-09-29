@@ -270,8 +270,6 @@ const id: Record<I18nKey, string> = {
   "set.project": "Proyek",
   "set.link.source": "Kode sumber",
   "set.link.docs": "Dokumentasi",
-  "set.session": "Sesi",
-  "set.signOutHint": "Progresmu tetap tersimpan di akun",
   "set.version": "Versi",
   "profile.xp": "XP",
   "profile.dayStreak": "Rangkaian hari",

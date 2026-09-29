@@ -25,7 +25,6 @@ import { Input } from "@/components/ui/Input"
 import { fonts, type } from "@/theme/typography"
 import { EmptyState } from "@/components/ui/EmptyState"
 import { auth, community } from "@/api/endpoints"
-import { useAuthStore } from "@/store/auth"
 import { useOnboardingStore } from "@/store/onboarding"
 import { useMutation, useQuery } from "@tanstack/react-query"
 
@@ -46,32 +45,10 @@ export default function SettingsAbout() {
   const { theme, paper } = useTheme()
   const t = useT()
   const s = useUserSettings()
-  const signOut = useAuthStore((st) => st.signOut)
   const version =
     Constants.expoConfig?.version ??
     Constants.expoConfig?.extra?.version ??
     "1.0.0"
-
-  const confirmSignOut = () => {
-    Alert.alert(t("profile.signOutTitle"), t("profile.signOutMsg"), [
-      { text: t("profile.cancel"), style: "cancel" },
-      {
-        text: t("profile.signOut"),
-        style: "destructive",
-        onPress: async () => {
-          try {
-            await auth.logout()
-          } catch {
-            // A failed server logout must not strand the user in a signed-in
-            // shell: the local token is cleared either way, which is what the
-            // next launch reads.
-          }
-          signOut()
-          router.replace("/(auth)")
-        },
-      },
-    ])
-  }
 
   return (
     <DetailShell title={t("profile.about")} fallback="/settings">
@@ -97,7 +74,7 @@ export default function SettingsAbout() {
         {s.isLoading ? (
           <SettingsState kind="loading" />
         ) : (
-          <SettingsGroup title={t("set.project")}>
+          <SettingsGroup title={t("set.project")} last>
             {LINKS.map((l, i) => (
               <SettingsRow
                 key={l.id}
@@ -110,16 +87,8 @@ export default function SettingsAbout() {
           </SettingsGroup>
         )}
 
-        <SettingsGroup title={t("set.session")} last>
-          <SettingsRow
-            first
-            icon="log-out"
-            title={t("profile.signOut")}
-            sub={t("set.signOutHint")}
-            danger
-            onPress={confirmSignOut}
-          />
-        </SettingsGroup>
+        {/* Sign out lives on the account tab. Reaching it only by opening About
+            made a session action look like part of the app's credits. */}
       </View>
     </DetailShell>
   )

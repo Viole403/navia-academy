@@ -271,8 +271,6 @@ const en = {
   "set.project": "Project",
   "set.link.source": "Source code",
   "set.link.docs": "Documentation",
-  "set.session": "Session",
-  "set.signOutHint": "Your progress stays on your account",
   "set.version": "Version",
   "profile.xp": "XP",
   "profile.dayStreak": "Day streak",
