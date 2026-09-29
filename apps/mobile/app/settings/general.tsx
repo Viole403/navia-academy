@@ -122,7 +122,7 @@ export default function SettingsGeneral() {
               />
               <SettingsToggle
                 first
-                glyph="📶"
+                icon="cellular"
                 title={t("set.adaptiveByLevel")}
                 sub={t("set.adaptiveByLevelHint")}
                 value={displayMode.adaptiveByLevel}
@@ -139,21 +139,21 @@ export default function SettingsGeneral() {
             <>
               <SettingsToggle
                 first
-                glyph="🍃"
+                icon="leaf"
                 title={t("profile.reduceMotion")}
                 sub={t("profile.reduceMotionHint")}
                 value={d?.reduce_motion ?? false}
                 onChange={(v) => s.set({ reduce_motion: v })}
               />
               <SettingsToggle
-                glyph="🎯"
+                icon="speedometer-outline"
                 title={t("profile.focus")}
                 sub={t("profile.focusHint")}
                 value={d?.focus_mode ?? false}
                 onChange={(v) => s.set({ focus_mode: v })}
               />
               <SettingsToggle
-                glyph="🎵"
+                icon="musical-notes"
                 title={t("profile.sounds")}
                 sub={t("profile.soundsHint")}
                 value={d?.sound_effects ?? true}

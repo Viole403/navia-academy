@@ -1,4 +1,6 @@
 import { useEffect, useRef, useState } from "react"
+import type { ComponentProps } from "react"
+import { Ionicons } from "@expo/vector-icons"
 import {
   Animated,
   Easing,
@@ -309,6 +311,7 @@ export function OnbChoiceCard({
   title,
   sub,
   glyph,
+  icon,
   selected,
   onPress,
   tall,
@@ -316,6 +319,8 @@ export function OnbChoiceCard({
   title: string
   sub?: string
   glyph?: string
+  /** For the steps that are a setting rather than a script. */
+  icon?: ComponentProps<typeof Ionicons>["name"]
   selected: boolean
   onPress: () => void
   /** The script page's cards are taller because the glyph *is* the question. */
@@ -354,7 +359,9 @@ export function OnbChoiceCard({
             justifyContent: "space-between",
           }}
         >
-          {glyph ? (
+          {icon ? (
+            <Ionicons name={icon} size={tall ? 34 : 22} color={paper.inkSoft} />
+          ) : glyph ? (
             <Text
               style={{
                 fontFamily: faces.hanzi,

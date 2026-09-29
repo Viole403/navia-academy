@@ -145,14 +145,14 @@ export default function SettingsLearning() {
         <SettingsGroup title={t("set.audio")} last>
           <SettingsToggle
             first
-            glyph="🔊"
+            icon="volume-high"
             title={t("profile.autoplay")}
             sub={t("profile.autoplayHint")}
             value={d?.autoplay_audio ?? true}
             onChange={(v) => s.set({ autoplay_audio: v })}
           />
           <SettingsToggle
-            glyph="🎵"
+            icon="musical-notes"
             title={t("profile.sounds")}
             sub={t("profile.soundsHint")}
             value={d?.sound_effects ?? true}

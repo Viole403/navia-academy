@@ -89,7 +89,7 @@ export default function SettingsReminders() {
         <SettingsGroup title={t("set.daily")}>
           <SettingsToggle
             first
-            glyph="🔔"
+            icon="notifications"
             title={t("profile.reminder")}
             sub={t("profile.reminderHint")}
             value={on}
@@ -119,14 +119,14 @@ export default function SettingsReminders() {
         <SettingsGroup title={t("set.digests")} last>
           <SettingsToggle
             first
-            glyph="📊"
+            icon="bar-chart"
             title={t("profile.weekly")}
             sub={t("profile.weeklyHint")}
             value={d?.weekly_summary ?? true}
             onChange={(v) => s.set({ weekly_summary: v })}
           />
           <SettingsToggle
-            glyph="🔥"
+            icon="flame"
             title={t("set.streakAlerts")}
             sub={t("set.streakAlertsHint")}
             value={d?.streak_alerts ?? true}

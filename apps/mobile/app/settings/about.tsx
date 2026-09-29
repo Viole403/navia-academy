@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { Ionicons } from "@expo/vector-icons"
 import {
   ActivityIndicator,
   Alert,
@@ -29,8 +30,8 @@ import { useOnboardingStore } from "@/store/onboarding"
 import { useMutation, useQuery } from "@tanstack/react-query"
 
 const LINKS = [
-  { id: "source", glyph: "📖", url: "https://github.com" },
-  { id: "docs", glyph: "📚", url: "https://developer.mozilla.org" },
+  { id: "source", icon: "logo-github", url: "https://github.com" },
+  { id: "docs", icon: "book", url: "https://developer.mozilla.org" },
 ] as const
 
 /**
@@ -77,7 +78,7 @@ export default function SettingsAbout() {
       <View style={{ gap: 22 }}>
         <PaperCard tone="plain">
           <View style={{ alignItems: "center", gap: 6, paddingVertical: 8 }}>
-            <Text style={{ fontSize: 34 }}>📖</Text>
+            <Ionicons name="book" size={30} color={paper.inkSoft} />
             <Text
               style={{
                 color: theme.text,
@@ -101,7 +102,7 @@ export default function SettingsAbout() {
               <SettingsRow
                 key={l.id}
                 first={i === 0}
-                glyph={l.glyph}
+                icon={l.icon}
                 title={t(`set.link.${l.id}` as never)}
                 onPress={() => Linking.openURL(l.url)}
               />
@@ -112,7 +113,7 @@ export default function SettingsAbout() {
         <SettingsGroup title={t("set.session")} last>
           <SettingsRow
             first
-            glyph="🚪"
+            icon="log-out"
             title={t("profile.signOut")}
             sub={t("set.signOutHint")}
             danger

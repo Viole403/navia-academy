@@ -1,4 +1,5 @@
-import type { ReactNode } from "react"
+import type { ComponentProps, ReactNode } from "react"
+import { Ionicons } from "@expo/vector-icons"
 import {
   Platform,
   Pressable,
@@ -19,7 +20,7 @@ import { examBadgeColor } from "@/lib/languages"
  * Settings used to live inside the profile screen as one long column of cards,
  * which meant a page that mixed "who you are" with "how much you study per day"
  * and gave every row the same visual weight. A row is a *decision*, so a row now
- * carries a glyph, a title, and — when it opens something — a value and a
+ * carries an icon, a title, and — when it opens something — a value and a
  * chevron, and a group is a labelled sheet of rows. A tap target is the whole
  * row, not the text inside it.
  *
@@ -116,7 +117,7 @@ function RowFrame({
 }
 
 export function SettingsRow({
-  glyph,
+  icon,
   title,
   sub,
   value,
@@ -126,7 +127,7 @@ export function SettingsRow({
   first,
   last,
 }: {
-  glyph?: string
+  icon?: ComponentProps<typeof Ionicons>["name"]
   title: string
   sub?: string
   value?: string
@@ -140,7 +141,7 @@ export function SettingsRow({
   const fg = danger ? theme.red : theme.text
   return (
     <RowFrame onPress={onPress} danger={danger} first={first} last={last}>
-      {glyph ? (
+      {icon ? (
         <View
           style={{
             width: 34,
@@ -151,7 +152,7 @@ export function SettingsRow({
             backgroundColor: (tint ?? theme.accent) + "1F",
           }}
         >
-          <Text style={{ fontSize: 16 }}>{glyph}</Text>
+          <Ionicons name={icon} size={17} color={tint ?? theme.accent} />
         </View>
       ) : null}
       <View style={{ flex: 1, gap: 2 }}>
@@ -183,7 +184,7 @@ export function SettingsRow({
 }
 
 export function SettingsToggle({
-  glyph,
+  icon,
   title,
   sub,
   value,
@@ -193,7 +194,7 @@ export function SettingsToggle({
   last,
   disabled,
 }: {
-  glyph?: string
+  icon?: ComponentProps<typeof Ionicons>["name"]
   title: string
   sub?: string
   value: boolean
@@ -206,7 +207,7 @@ export function SettingsToggle({
   const { theme } = useTheme()
   return (
     <RowFrame first={first} last={last}>
-      {glyph ? (
+      {icon ? (
         <View
           style={{
             width: 34,
@@ -217,7 +218,7 @@ export function SettingsToggle({
             backgroundColor: (tint ?? theme.accent) + "1F",
           }}
         >
-          <Text style={{ fontSize: 16 }}>{glyph}</Text>
+          <Ionicons name={icon} size={17} color={tint ?? theme.accent} />
         </View>
       ) : null}
       <View style={{ flex: 1, gap: 2, opacity: disabled ? 0.5 : 1 }}>
@@ -359,7 +360,7 @@ export function SettingsState({
   if (kind === "error") {
     return (
       <View style={{ alignItems: "center", gap: 10, paddingVertical: 32 }}>
-        <Text style={{ fontSize: 26 }}>⚠️</Text>
+        <Ionicons name="warning" size={26} color={theme.red} />
         <Text
           style={[type.body, { color: theme.text, fontFamily: fonts.sans }]}
         >

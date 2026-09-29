@@ -48,7 +48,7 @@ export default function SettingsHub() {
         <SettingsGroup title={t("set.study")}>
           <SettingsRow
             first
-            glyph="🎓"
+            icon="school"
             title={t("profile.learning")}
             sub={t("set.learningHint")}
             value={
@@ -59,7 +59,7 @@ export default function SettingsHub() {
             onPress={() => router.push("/settings/learning")}
           />
           <SettingsRow
-            glyph="⏱"
+            icon="timer-outline"
             title={t("profile.dailyGoal")}
             value={d ? `${d.daily_goal_min} ${t("profile.min")}` : undefined}
             onPress={() => router.push("/settings/goal")}
@@ -69,7 +69,7 @@ export default function SettingsHub() {
         <SettingsGroup title={t("set.interruptions")}>
           <SettingsRow
             first
-            glyph="🔔"
+            icon="notifications"
             title={t("profile.reminder")}
             sub={t("profile.reminderHint")}
             value={
@@ -83,13 +83,13 @@ export default function SettingsHub() {
         <SettingsGroup title={t("set.look")}>
           <SettingsRow
             first
-            glyph="🎨"
+            icon="color-palette"
             title={t("profile.appearance")}
             value={mode}
             onPress={() => router.push("/settings/general")}
           />
           <SettingsRow
-            glyph="🌐"
+            icon="globe"
             title={t("profile.appLang")}
             value={(d?.locale ?? "en").toUpperCase()}
             onPress={() => router.push("/settings/general")}
@@ -99,13 +99,13 @@ export default function SettingsHub() {
         <SettingsGroup title={t("set.you")}>
           <SettingsRow
             first
-            glyph="📈"
+            icon="trending-up"
             title={t("stats.title")}
             sub={t("set.progressHint")}
             onPress={() => router.push("/(tabs)/stats")}
           />
           <SettingsRow
-            glyph="ℹ️"
+            icon="information-circle"
             title={t("profile.about")}
             onPress={() => router.push("/settings/about")}
           />

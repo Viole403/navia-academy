@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { Ionicons } from "@expo/vector-icons"
 import {
   ActivityIndicator,
   Alert,
@@ -198,7 +199,7 @@ export default function ProfileTab() {
               borderColor: theme.border,
             }}
           >
-            <Text style={{ fontSize: 16 }}>⚙️</Text>
+            <Ionicons name="settings" size={17} color={theme.textMuted} />
             <Text
               style={[
                 type.body,
