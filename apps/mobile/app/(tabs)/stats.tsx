@@ -328,9 +328,9 @@ function CalendarView({
         <PaperCard>
           <View style={{ flexDirection: "row", gap: 4 }}>
             <View style={{ width: 18 }} />
-            {WEEKDAY_INITIALS.map((d) => (
+            {WEEKDAY_INITIALS.map((d, di) => (
               <Text
-                key={d}
+                key={di}
                 style={[
                   paperType.weekday,
                   {
@@ -392,6 +392,7 @@ function CalendarView({
 }
 
 /** Monday-first column headers, as initials so they fit at phone width. */
+// Two T and two S: the initials are for display only, never for identity.
 const WEEKDAY_INITIALS = ["M", "T", "W", "T", "F", "S", "S"]
 
 function BadgesView({

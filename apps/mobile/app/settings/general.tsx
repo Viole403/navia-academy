@@ -111,7 +111,7 @@ export default function SettingsGeneral() {
             title={t("set.chineseDisplay")}
             hint={t("set.chineseDisplayHint")}
           >
-            <View style={{ paddingHorizontal: 14, paddingBottom: 14, gap: 10 }}>
+            <View style={{ gap: 4 }}>
               <SettingsChoice
                 options={DISPLAY_MODE_ORDER.map((m) => ({
                   id: m,

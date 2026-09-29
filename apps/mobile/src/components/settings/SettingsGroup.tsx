@@ -286,8 +286,14 @@ export function SettingsChoice({
   // A group that wraps must wrap evenly: filling each row greedily left one
   // orphan on the second row. Equal columns is what turns 8 slots into 4+4
   // rather than 5+3, and a group that fits still sizes to its own content.
-  const wrapCols = Math.ceil(options.length / Math.ceil(options.length / 5))
+  // Equal columns only help when the options are short and numerous. A group
+  // whose labels are long — the six display modes run to "Pinyin + translation"
+  // — would just get truncated, so those keep wrapping by content instead.
+  const longest = options.reduce((n, o) => Math.max(n, o.label.length), 0)
+  const even = Math.ceil(options.length / Math.min(options.length, 5))
   const wraps = options.length > 5
+  const useColumns = wraps && longest <= 12
+  const wrapCols = useColumns ? Math.ceil(options.length / even) : 0
   return (
     <View
       style={{
@@ -312,10 +318,10 @@ export function SettingsChoice({
               // object wherever it appears.
               minHeight: CHOICE_HEIGHT,
               minWidth: 56,
-              flexBasis: wraps ? `${100 / wrapCols}%` : undefined,
+              flexBasis: useColumns ? `${100 / wrapCols}%` : undefined,
               flexShrink: 0,
-              marginHorizontal: wraps ? 3 : 0,
-              paddingHorizontal: wraps ? 8 : 12,
+              marginHorizontal: useColumns ? 3 : 0,
+              paddingHorizontal: useColumns ? 8 : 12,
               paddingVertical: 10,
               borderRadius: paper.radius.pill,
               alignItems: "center",
