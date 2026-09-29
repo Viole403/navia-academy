@@ -169,14 +169,35 @@ export function ReviewSession() {
   }, [router])
 
   // Listening options come from the due set itself, so a wrong answer is never
-  // another card in the same session.
+  // another card in the same session. An SrsCard carries only an item_id, so the
+  // distractors are resolved through the same lookup the current card uses —
+  // casting them to VocabWord left `translation` undefined and three of the four
+  // answer rows rendered blank.
+  const distractorIds = useMemo(
+    () =>
+      mode === "listening"
+        ? cards
+            .filter((c) => c.item_id !== current?.item_id)
+            .slice(0, 3)
+            .map((c) => c.item_id)
+        : [],
+    [mode, cards, current]
+  )
+  const distractorsQ = useQuery({
+    queryKey: ["vocab-distractors", distractorIds],
+    enabled: distractorIds.length > 0,
+    queryFn: async () => {
+      const found = await Promise.all(
+        distractorIds.map((id) => findWord(id).then((r) => r.word))
+      )
+      return found.filter((w): w is VocabWord => w !== null)
+    },
+  })
+
   const options = useMemo(() => {
     if (mode !== "listening" || !word) return []
-    const others = cards
-      .filter((c) => c.item_id !== current?.item_id)
-      .slice(0, 3)
-    return [word, ...others.map((o) => o as unknown as VocabWord)]
-  }, [mode, word, cards, current])
+    return [word, ...(distractorsQ.data ?? [])]
+  }, [mode, word, distractorsQ.data])
 
   if (dueQ.isLoading || queue === null) {
     return (
