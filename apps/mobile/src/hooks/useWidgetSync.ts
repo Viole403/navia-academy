@@ -7,8 +7,15 @@ import { useCallback, useEffect, useRef } from "react"
 import { useQuery } from "@tanstack/react-query"
 import AsyncStorage from "@react-native-async-storage/async-storage"
 
-import { progress as progressApi } from "@/api/endpoints"
-import { pushWidgetPayload, widgetsAvailable } from "@/lib/nativeWidgets"
+import {
+  progress as progressApi,
+  settings as settingsApi,
+} from "@/api/endpoints"
+import {
+  clearWidgetPayload,
+  pushWidgetPayload,
+  widgetsAvailable,
+} from "@/lib/nativeWidgets"
 import { buildWidgetPayload, type WidgetPayload } from "@/lib/widget"
 import {
   assembleWidgetPayload,
@@ -17,6 +24,8 @@ import {
   studiedToday,
 } from "@/lib/widgetSync"
 import { useAppTheme } from "@/theme/useMaterialYou"
+import { useAuthStore } from "@/store/auth"
+import { useLocaleStore } from "@/i18n"
 
 const LAST_SENT_KEY = "navia:last_widget_payload"
 const SYNC_INTERVAL_MS = 30 * 60 * 1000
@@ -31,26 +40,41 @@ export interface UseWidgetSyncResult {
 /** Syncs when the drawn data changes; the interval is only a backstop for a closed app. */
 export function useWidgetSync(): UseWidgetSyncResult {
   const { theme, themeDef, ready } = useAppTheme()
+  const user = useAuthStore((s) => s.user)
+  const locale = useLocaleStore((s) => s.locale)
   const lastSent = useRef<string | null>(null)
   const inFlight = useRef(false)
+
+  // Every endpoint below is behind auth, and a widget that renders the last
+  // signed-in learner's streak to whoever holds the phone next is worse than one
+  // that renders nothing.
+  const signedIn = !!user
 
   const progressQ = useQuery({
     queryKey: ["progress"],
     queryFn: progressApi.get,
+    enabled: signedIn,
   })
   const sessionsQ = useQuery({
     queryKey: ["study-sessions"],
     queryFn: () => progressApi.studySessions(50, 0),
+    enabled: signedIn,
   })
   const srsQ = useQuery({
     queryKey: ["srs-stats"],
     queryFn: progressApi.srsStats,
+    enabled: signedIn,
+  })
+  const settingsQ = useQuery({
+    queryKey: ["settings"],
+    queryFn: settingsApi.get,
+    enabled: signedIn,
   })
 
   const available = widgetsAvailable()
 
   const sync = useCallback(async (): Promise<boolean> => {
-    if (!available) return false
+    if (!available || !signedIn) return false
     // A sync already running means the data has not changed since it started, so
     // a second concurrent one would write the same bytes.
     if (inFlight.current) return false
@@ -65,8 +89,8 @@ export function useWidgetSync(): UseWidgetSyncResult {
       // A missing `due` key means "not counted", not "zero" — those look identical
       // as a digit and mean opposite things.
       due: typeof stats?.due === "number" ? stats.due : null,
-      dailyGoalMinutes: 20,
-      locale: "id",
+      dailyGoalMinutes: settingsQ.data?.daily_goal_min ?? 20,
+      locale,
       themeId: themeDef.id,
       colors: {
         bg: theme.bg,
@@ -111,6 +135,18 @@ export function useWidgetSync(): UseWidgetSyncResult {
     const id = setInterval(() => void sync(), SYNC_INTERVAL_MS)
     return () => clearInterval(id)
   }, [available, sync])
+
+  // Signing out leaves the last learner's streak on the home screen until the
+  // next launch. Clearing on the way out, not only on the way in.
+  const wasSignedIn = useRef(false)
+  useEffect(() => {
+    if (wasSignedIn.current && !signedIn) {
+      lastSent.current = null
+      void clearWidgetPayload()
+      void AsyncStorage.removeItem(LAST_SENT_KEY)
+    }
+    wasSignedIn.current = signedIn
+  }, [signedIn])
 
   return { available, sync }
 }

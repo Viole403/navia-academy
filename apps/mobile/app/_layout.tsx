@@ -17,6 +17,7 @@ import { auth } from "@/api/endpoints"
 import { onRefreshFail } from "@/api/client"
 import { ErrorBoundary } from "@/components/ui/ErrorBoundary"
 import { useOfflineDrain } from "@/hooks/useOfflineDrain"
+import { useWidgetSync } from "@/hooks/useWidgetSync"
 import { configureAudioSession, setSoundPrefs } from "@/utils/sound"
 import { useSettingsPrefs } from "@/store/settings"
 import "../global.css"
@@ -74,6 +75,9 @@ const linking = {
 
 function AppShell() {
   useOfflineDrain()
+  // Keeps the five home-screen widgets in step with the data the app already
+  // has; without this they render the empty default forever.
+  useWidgetSync()
   const { theme, paper, resolvedMode } = useTheme()
   const soundEffects = useSettingsPrefs((s) => s.soundEffects)
 
