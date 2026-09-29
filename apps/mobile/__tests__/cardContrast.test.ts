@@ -53,6 +53,10 @@ for (const theme of BASE_THEMES) {
       challenge: s.challenge.fill,
       challengeStats: s.challengeStats.fill,
       week: s.week.fill,
+      greenSoft: p.greenSoft,
+      coralSoft: p.coralSoft,
+      lavenderSoft: p.lavenderSoft,
+      goldSoft: p.goldSoft,
     }
 
     for (const [name, bg] of Object.entries(grounds)) {
@@ -86,8 +90,10 @@ for (const theme of BASE_THEMES) {
 
 describe("the palette is legible in every theme and mode", () => {
   it("measures every theme in every mode", () => {
-    // 8 grounds x 3 inks, 5 accents x (3 grounds + a face), 4 tag chips.
-    expect(checks).toBe(BASE_THEMES.length * MODES.length * (8 * 3 + 5 * 4 + 4))
+    // 12 grounds x 3 inks, 5 accents x (3 grounds + a face), 4 tag chips.
+    expect(checks).toBe(
+      BASE_THEMES.length * MODES.length * (12 * 3 + 5 * 4 + 4)
+    )
   })
 
   it("holds AA everywhere", () => {

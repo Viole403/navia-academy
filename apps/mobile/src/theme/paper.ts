@@ -209,10 +209,20 @@ export function paperFor(theme: Theme, mode: ResolvedMode): PaperPalette {
 
   // An accent is never only on the page: it is also a stat's ink and a link.
   const grounds = [paper, card, cardAlt]
+
   const green = ensureContrastOn(ensureInk(theme.green, theme), grounds)
   const coral = ensureContrastOn(ensureInk(theme.accent, theme), grounds)
   const lavender = ensureContrastOn(ensureInk(theme.accent2, theme), grounds)
   const gold = ensureContrastOn(ensureInk(theme.gold, theme), grounds)
+
+  // The soft tints are surfaces too — text sits on them — so they have to be in
+  // scope before the ink that lands on them is corrected.
+  const greenSoft = dark ? mix(card, green, 0.12) : mix(paper, green, 0.1)
+  const coralSoft = dark ? mix(card, coral, 0.18) : mix(paper, coral, 0.1)
+  const lavenderSoft = dark
+    ? mix(card, lavender, 0.18)
+    : mix(paper, lavender, 0.1)
+  const goldSoft = dark ? mix(card, gold, 0.16) : mix(paper, gold, 0.12)
 
   // Accent laid over the page it sits on, both modes. Dark used to lift the
   // accent itself, putting near-white body copy on it at 1.0:1.
@@ -247,6 +257,10 @@ export function paperFor(theme: Theme, mode: ResolvedMode): PaperPalette {
       tint(coral, 0.1),
       tint(lavender, 0.1),
       tint(green, 0.08),
+      greenSoft,
+      coralSoft,
+      lavenderSoft,
+      goldSoft,
     ]),
 
     green,
@@ -254,18 +268,18 @@ export function paperFor(theme: Theme, mode: ResolvedMode): PaperPalette {
       mix(green, dark ? "#000000" : "#1A1A1A", 0.22),
       grounds
     ),
-    greenSoft: dark ? mix(card, green, 0.18) : mix(paper, green, 0.1),
+    greenSoft,
     greenRing: dark ? mix(green, "#000000", 0.5) : mix(green, paper, 0.5),
 
     coral,
     coralDark: mix(coral, dark ? "#000000" : "#1A1A1A", 0.22),
-    coralSoft: dark ? mix(card, coral, 0.18) : mix(paper, coral, 0.1),
+    coralSoft,
 
     lavender,
-    lavenderSoft: dark ? mix(card, lavender, 0.18) : mix(paper, lavender, 0.1),
+    lavenderSoft,
 
     gold,
-    goldSoft: dark ? mix(card, gold, 0.16) : mix(paper, gold, 0.12),
+    goldSoft,
 
     surface: {
       review: { fill: tint(coral, 0.1), border: borderOf(coral, 0.24) },
