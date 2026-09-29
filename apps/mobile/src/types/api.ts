@@ -277,7 +277,6 @@ export interface UserSettings {
   daily_goal_min: number
   new_words_per_day: number
   max_reviews_per_day: number
-  voice_gender: string
   daily_reminder: boolean
   reminder_time?: string
   weekly_summary: boolean

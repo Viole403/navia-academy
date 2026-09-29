@@ -80,18 +80,15 @@ export default function SettingsHub() {
           />
         </SettingsGroup>
 
+        {/* One row, one destination: Appearance and App language both live on
+            /settings/general, and two rows pointing at the same screen read as
+            two different places. */}
         <SettingsGroup title={t("set.look")}>
           <SettingsRow
             first
             icon="color-palette"
-            title={t("profile.appearance")}
+            title={t("set.appearanceAndLanguage")}
             value={mode}
-            onPress={() => router.push("/settings/general")}
-          />
-          <SettingsRow
-            icon="globe"
-            title={t("profile.appLang")}
-            value={(d?.locale ?? "en").toUpperCase()}
             onPress={() => router.push("/settings/general")}
           />
         </SettingsGroup>

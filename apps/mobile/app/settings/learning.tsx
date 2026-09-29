@@ -159,17 +159,6 @@ export default function SettingsLearning() {
           />
         </SettingsGroup>
 
-        <SettingsGroup title={t("profile.voice")}>
-          <SettingsChoice
-            options={[
-              { id: "female", label: t("profile.female") },
-              { id: "male", label: t("profile.male") },
-            ]}
-            value={d?.voice_gender ?? "female"}
-            onChange={(id) => s.set({ voice_gender: id })}
-          />
-        </SettingsGroup>
-
         <SettingsGroup title={t("set.audio")} last>
           <SettingsToggle
             first
