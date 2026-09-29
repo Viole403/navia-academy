@@ -46,7 +46,7 @@ export function SettingsGroup({
         <Text
           style={[
             type.labelSm,
-            { color: paper.inkMuted, paddingHorizontal: 4 },
+            { color: paper.inkMuted, paddingHorizontal: 14 },
           ]}
         >
           {title}
@@ -56,8 +56,8 @@ export function SettingsGroup({
         style={{
           borderRadius: paper.radius.card,
           borderWidth: 1,
-          borderColor: theme.border,
-          backgroundColor: theme.surface,
+          borderColor: paper.line,
+          backgroundColor: paper.card,
           overflow: "hidden",
         }}
       >
@@ -67,7 +67,7 @@ export function SettingsGroup({
         <Text
           style={[
             type.caption,
-            { color: paper.inkMuted, paddingHorizontal: 4 },
+            { color: paper.inkMuted, paddingHorizontal: 14 },
           ]}
         >
           {hint}
@@ -276,13 +276,19 @@ export function SettingsChoice({
   onChange: (id: string) => void
 }) {
   const { theme, paper } = useTheme()
+  // A group that wraps must wrap evenly: filling each row greedily left one
+  // orphan on the second row. Equal columns is what turns 8 slots into 4+4
+  // rather than 5+3, and a group that fits still sizes to its own content.
+  const wrapCols = Math.ceil(options.length / Math.ceil(options.length / 5))
+  const wraps = options.length > 5
   return (
     <View
       style={{
         flexDirection: "row",
         flexWrap: "wrap",
-        gap: 8,
+        gap: 6,
         paddingHorizontal: 14,
+        paddingTop: 14,
         paddingBottom: 14,
       }}
     >
@@ -298,8 +304,11 @@ export function SettingsChoice({
               // Sizing to content with a fixed height makes the control the same
               // object wherever it appears.
               minHeight: CHOICE_HEIGHT,
-              minWidth: 72,
-              paddingHorizontal: 16,
+              minWidth: 56,
+              flexBasis: wraps ? `${100 / wrapCols}%` : undefined,
+              flexShrink: 0,
+              marginHorizontal: wraps ? 3 : 0,
+              paddingHorizontal: wraps ? 8 : 12,
               paddingVertical: 10,
               borderRadius: paper.radius.pill,
               alignItems: "center",
