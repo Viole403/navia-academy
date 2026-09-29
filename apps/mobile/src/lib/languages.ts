@@ -86,6 +86,19 @@ export function languageForExam(examType: string): LanguageCode {
   return "zh"
 }
 
+/**
+ * Which script an exam teaches. Only the two Chinese tracks differ, so every
+ * other exam returns null and callers leave the stored preference alone.
+ */
+export function scriptForExam(
+  examType: string
+): "simplified" | "traditional" | null {
+  const lower = examType.toLowerCase()
+  if (lower === "hsk") return "simplified"
+  if (lower === "tocfl") return "traditional"
+  return null
+}
+
 /** Logical bundle name for a language-scoped content domain. */
 export function langBundle(lang: LanguageCode, name: string): string {
   return `${lang}/${name}`

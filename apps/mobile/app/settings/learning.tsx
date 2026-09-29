@@ -8,9 +8,16 @@ import {
   SettingsState,
 } from "@/components/settings/SettingsGroup"
 import { useUserSettings } from "@/hooks/useUserSettings"
+import { useOnboardingStore } from "@/store/onboarding"
 import { useTheme } from "@/theme/ThemeProvider"
 import { useT } from "@/i18n"
-import { LANGUAGES, examDisplayName, languageInfo } from "@/lib/languages"
+import {
+  LANGUAGES,
+  examDisplayName,
+  languageForExam,
+  languageInfo,
+  scriptForExam,
+} from "@/lib/languages"
 import { setSoundPrefs } from "@/utils/sound"
 
 /**
@@ -29,6 +36,11 @@ export default function SettingsLearning() {
   const { theme, paper } = useTheme()
   const t = useT()
   const s = useUserSettings()
+  const language = useOnboardingStore((st) => st.language)
+  const setLanguage = useOnboardingStore((st) => st.setLanguage)
+  const setScript = useOnboardingStore((st) => st.setScript)
+  const setExamType = useOnboardingStore((st) => st.setExamType)
+  const storedExamType = useOnboardingStore((st) => st.examType)
 
   if (s.isLoading) {
     return (
@@ -50,7 +62,9 @@ export default function SettingsLearning() {
   }
 
   const d = s.data
-  const active = d?.active_exam_type
+  // The local store is what ME highlights against, so it leads the display; the
+  // backend copy is the fallback for a fresh install before anything is stored.
+  const active = storedExamType ?? d?.active_exam_type
   const activeLang = LANGUAGES.find((l) =>
     languageInfo(l.code).examTypes.includes(active ?? "")
   )
@@ -100,7 +114,19 @@ export default function SettingsLearning() {
                   label: examDisplayName(e),
                 }))}
                 value={l.examTypes.includes(active ?? "") ? active : undefined}
-                onChange={(id) => s.set({ active_exam_type: id })}
+                onChange={(id) => {
+                  // Settings, the tabs and the onboarding store each keep their own
+                  // copy of the chosen exam, and every other screen dual-writes.
+                  // Writing only the backend copy left ME highlighting the old exam.
+                  setExamType(id)
+                  const nextLang = languageForExam(id)
+                  if (nextLang !== language) {
+                    setLanguage(nextLang)
+                    const nextScript = scriptForExam(id)
+                    if (nextScript) setScript(nextScript)
+                  }
+                  s.set({ active_exam_type: id })
+                }}
               />
             </View>
           ))}

@@ -23,7 +23,7 @@ import { useTheme } from "@/theme/ThemeProvider"
 import { fonts, type } from "@/theme/typography"
 import type { ThemeId, ThemeMode } from "@/theme/colors"
 import { auth, community, progress, settings, tasks } from "@/api/endpoints"
-import { examBadgeColor, motifChar } from "@/lib/languages"
+import { examBadgeColor, motifChar, scriptForExam } from "@/lib/languages"
 import { useOnboardingStore } from "@/store/onboarding"
 import {
   cancelStreakReminder,
@@ -83,7 +83,8 @@ export default function ProfileTab() {
   const pickPath = (p: (typeof PATHS)[number]) => {
     setLanguage(p.language)
     setStoredExamType(p.examType)
-    if ("script" in p) setScript(p.script)
+    const sc = scriptForExam(p.examType)
+    if (sc) setScript(sc)
     updateSettingsM.mutate({ active_exam_type: p.examType })
   }
 
