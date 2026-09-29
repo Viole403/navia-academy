@@ -266,7 +266,6 @@ const id: Record<I18nKey, string> = {
   "set.noPermissionTitle": "Notifikasi diblokir",
   "set.noPermissionBody":
     "Sistem tidak mengizinkan notifikasi untuk aplikasi ini, jadi pengingat belum bisa dijadwalkan. Kamu bisa mengizinkan lewat pengaturan sistem, atau membiarkannya mati.",
-  "set.progressHint": "Rentetan, lencana, dan riwayat belajar",
   "set.project": "Proyek",
   "set.link.source": "Kode sumber",
   "set.link.docs": "Dokumentasi",

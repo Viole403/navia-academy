@@ -308,29 +308,33 @@ export default function ProfileTab() {
               </View>
             </View>
 
-            <View
-              style={{
-                flexDirection: "row",
-                borderTopWidth: 1,
-                borderBottomWidth: 1,
-                borderColor: theme.border,
-                paddingVertical: 20,
-              }}
-            >
-              <MetaField
-                label={t("profile.memberSince")}
-                value={new Date(user.created_at).toLocaleDateString()}
-              />
-              <MetaField
-                label={t("profile.role")}
-                value={user.role}
-                capitalize
-              />
-              <MetaField
-                label={t("profile.verified")}
-                value={user.email_verified ? t("profile.yes") : t("profile.no")}
-              />
-            </View>
+            {user.role && user.role !== "student" ? (
+              <View
+                style={{
+                  flexDirection: "row",
+                  borderTopWidth: 1,
+                  borderBottomWidth: 1,
+                  borderColor: theme.border,
+                  paddingVertical: 20,
+                }}
+              >
+                <MetaField
+                  label={t("profile.memberSince")}
+                  value={new Date(user.created_at).toLocaleDateString()}
+                />
+                <MetaField
+                  label={t("profile.role")}
+                  value={user.role}
+                  capitalize
+                />
+                <MetaField
+                  label={t("profile.verified")}
+                  value={
+                    user.email_verified ? t("profile.yes") : t("profile.no")
+                  }
+                />
+              </View>
+            ) : null}
 
             <LiftedFace
               title={t("profile.signOut")}

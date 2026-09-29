@@ -96,15 +96,11 @@ export default function SettingsHub() {
           />
         </SettingsGroup>
 
+        {/* No link to Stats: it is a tab, and a second entry point only made the
+            two look like different places showing the same numbers. */}
         <SettingsGroup title={t("set.you")}>
           <SettingsRow
             first
-            icon="trending-up"
-            title={t("stats.title")}
-            sub={t("set.progressHint")}
-            onPress={() => router.push("/(tabs)/stats")}
-          />
-          <SettingsRow
             icon="information-circle"
             title={t("profile.about")}
             onPress={() => router.push("/settings/about")}

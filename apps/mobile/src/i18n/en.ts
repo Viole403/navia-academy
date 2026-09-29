@@ -267,7 +267,6 @@ const en = {
   "set.noPermissionTitle": "Notifications are blocked",
   "set.noPermissionBody":
     "Your system is not allowing notifications for this app, so a reminder cannot be scheduled. You can allow them in system settings, or leave this off.",
-  "set.progressHint": "Streaks, badges and study history",
   "set.project": "Project",
   "set.link.source": "Source code",
   "set.link.docs": "Documentation",
