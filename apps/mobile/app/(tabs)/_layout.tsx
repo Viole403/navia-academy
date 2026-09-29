@@ -7,7 +7,7 @@ import { useAuthStore } from "@/store/auth"
 import { useT } from "@/i18n"
 
 export default function TabsLayout() {
-  const { theme, paper } = useTheme()
+  const { paper } = useTheme()
   const user = useAuthStore((s) => s.user)
   const t = useT()
   const insets = useSafeAreaInsets()
@@ -24,11 +24,12 @@ export default function TabsLayout() {
     <Tabs
       screenOptions={{
         headerShown: false,
-        tabBarActiveTintColor: theme.accent,
-        tabBarInactiveTintColor: theme.textDim,
+        // Raw theme.textDim is 2.4:1 on paper.paper — the faint grey the icons had.
+        tabBarActiveTintColor: paper.coral,
+        tabBarInactiveTintColor: paper.inkMuted,
         tabBarStyle: {
           backgroundColor: paper.paper,
-          borderTopColor: theme.border,
+          borderTopColor: paper.line,
           borderTopWidth: 1,
           elevation: 0,
           shadowOpacity: 0,

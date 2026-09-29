@@ -242,7 +242,7 @@ export function QuietPill({
           paddingVertical: 9,
         }}
       >
-        <Text style={[paperType.link, { color: s.border }]}>{title}</Text>
+        <Text style={[paperType.link, { color: paper.ink }]}>{title}</Text>
       </View>
     </PressableScale>
   )

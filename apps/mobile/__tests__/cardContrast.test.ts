@@ -81,18 +81,20 @@ for (const theme of BASE_THEMES) {
       expectContrast(where, `${label} on face ${name}`, label, colour, BODY)
     }
 
-    // The tag chip is ink on its surface fill, not one tint member on the other.
+    // The tag chip and QuietPill are ink on a surface fill, not one tint member
+    // used against the other. SegmentedControl's selected label is the same.
     for (const name of ["review", "word", "challenge", "week"] as const) {
       expectContrast(where, `tag ${name}`, p.ink, s[name].fill, BODY)
     }
+    expectContrast(where, "segmented selected", p.ink, p.coralSoft, BODY)
   }
 }
 
 describe("the palette is legible in every theme and mode", () => {
   it("measures every theme in every mode", () => {
-    // 12 grounds x 3 inks, 5 accents x (3 grounds + a face), 4 tag chips.
+    // 12 grounds x 3 inks, 5 accents x (3 grounds + a face), 4 tags, 1 segmented.
     expect(checks).toBe(
-      BASE_THEMES.length * MODES.length * (12 * 3 + 5 * 4 + 4)
+      BASE_THEMES.length * MODES.length * (12 * 3 + 5 * 4 + 4 + 1)
     )
   })
 
