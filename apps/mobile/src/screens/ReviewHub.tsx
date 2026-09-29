@@ -21,6 +21,7 @@ import { useContentLayout } from "@/theme/layout"
 import { paperType, families } from "@/theme/paperType"
 import { progress } from "@/api/endpoints"
 import { useT } from "@/i18n"
+import { BackLink } from "@/components/ui/BackLink"
 import { playSound } from "@/utils/sound"
 import { tap } from "@/utils/feedback"
 import type { SrsCard } from "@/types/api"
@@ -116,20 +117,7 @@ export function ReviewHub() {
           paddingVertical: 12,
         }}
       >
-        <Pressable
-          onPress={() =>
-            router.canGoBack() ? router.back() : router.replace("/(tabs)/learn")
-          }
-        >
-          <Text
-            style={[
-              paperType.link,
-              { color: paper.inkSoft, fontFamily: families.nunitoBold },
-            ]}
-          >
-            ← {t("common.back")}
-          </Text>
-        </Pressable>
+        <BackLink label={t("common.back")} fallback="/(tabs)/learn" />
         <Text
           style={[
             paperType.statLabel,

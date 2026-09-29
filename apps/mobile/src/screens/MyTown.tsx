@@ -1,3 +1,4 @@
+import { BackLink } from "@/components/ui/BackLink"
 import { useEffect, useMemo, useState } from "react"
 import { Pressable, ScrollView, Text, View } from "react-native"
 import { SafeAreaView } from "react-native-safe-area-context"
@@ -85,22 +86,7 @@ export function MyTown() {
           paddingVertical: 12,
         }}
       >
-        <Pressable
-          onPress={() =>
-            router.canGoBack()
-              ? router.back()
-              : router.replace("/(tabs)" as never)
-          }
-        >
-          <Text
-            style={[
-              paperType.link,
-              { color: paper.inkSoft, fontFamily: families.nunitoBold },
-            ]}
-          >
-            ← {t("common.back")}
-          </Text>
-        </Pressable>
+        <BackLink label={t("common.back")} fallback="/(tabs)" />
         <Text
           style={[
             paperType.statLabel,

@@ -1,3 +1,4 @@
+import { BackLink } from "@/components/ui/BackLink"
 import { useState } from "react"
 import { ActivityIndicator, ScrollView, Text, View } from "react-native"
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query"
@@ -105,11 +106,7 @@ export function LessonView() {
           gap: 12,
         }}
       >
-        <PressableScale onPress={goBack} accessibilityLabel={t("review.back")}>
-          <Text style={[paperType.link, { color: paper.inkMuted }]}>
-            ← {t("review.back")}
-          </Text>
-        </PressableScale>
+        <BackLink label={t("review.back")} fallback="/program" />
         <Text style={[paperType.label, { color: paper.inkMuted }]}>
           {steps.length === 0
             ? (lesson?.title ?? "")

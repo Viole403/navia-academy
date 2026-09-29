@@ -1,3 +1,4 @@
+import { BackLink } from "@/components/ui/BackLink"
 import { useMemo, useState } from "react"
 import { ActivityIndicator, ScrollView, Text, View } from "react-native"
 import { SafeAreaView } from "react-native-safe-area-context"
@@ -137,11 +138,7 @@ export default function GameMatch() {
   const masthead = (
     <View style={{ gap: 14 }}>
       <View style={{ flexDirection: "row", alignItems: "center", gap: 12 }}>
-        <PressableScale onPress={() => router.back()}>
-          <Text style={[paperType.link, { color: paper.inkMuted }]}>
-            ← {t("game.back")}
-          </Text>
-        </PressableScale>
+        <BackLink label={t("game.back")} fallback="/(tabs)" />
         {cards.length > 0 && (
           <Text style={[paperType.label, { color: paper.inkMuted }]}>
             {matches}/{totalPairs} {t("game.pairs")} · {moves} {t("game.moves")}

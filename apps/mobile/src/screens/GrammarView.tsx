@@ -1,3 +1,4 @@
+import { BackLink } from "@/components/ui/BackLink"
 import { ActivityIndicator, ScrollView, Text, View } from "react-native"
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query"
 import { Stack, useLocalSearchParams, useRouter } from "expo-router"
@@ -79,11 +80,7 @@ export function GrammarView() {
             gap: 12,
           }}
         >
-          <PressableScale onPress={goBack} accessibilityLabel={t("vocab.back")}>
-            <Text style={[paperType.link, { color: paper.inkMuted }]}>
-              ← {t("vocab.back")}
-            </Text>
-          </PressableScale>
+          <BackLink label={t("vocab.back")} fallback="/library" />
         </View>
         <View style={{ height: 1, backgroundColor: paper.line }} />
 

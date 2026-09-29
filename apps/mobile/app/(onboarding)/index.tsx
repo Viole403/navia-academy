@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useMemo, useState } from "react"
 import { Pressable, Text, View } from "react-native"
+import { Ionicons } from "@expo/vector-icons"
 import { router } from "expo-router"
 import { useMutation } from "@tanstack/react-query"
 import {
@@ -464,7 +465,7 @@ export default function Onboarding() {
             <OnbChoiceCard
               title={t("ob.reminder")}
               sub={t("profile.reminderHint")}
-              glyph="🔔"
+              icon="notifications"
               selected={reminders}
               onPress={() => {
                 tap()
@@ -482,7 +483,7 @@ export default function Onboarding() {
             <View
               style={{ flexDirection: "row", alignItems: "center", gap: 12 }}
             >
-              <Text style={{ fontSize: 30 }}>📖</Text>
+              <Ionicons name="book" size={28} color={theme.textDim} />
               <View style={{ flex: 1, gap: 2 }}>
                 <Text
                   style={[

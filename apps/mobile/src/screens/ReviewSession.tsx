@@ -1,3 +1,5 @@
+import { BackLink } from "@/components/ui/BackLink"
+import { Ionicons } from "@expo/vector-icons"
 import { useCallback, useEffect, useMemo, useRef, useState } from "react"
 import {
   ActivityIndicator,
@@ -205,16 +207,7 @@ export function ReviewSession() {
           paddingVertical: 12,
         }}
       >
-        <Pressable onPress={goBack}>
-          <Text
-            style={[
-              paperType.link,
-              { color: paper.inkSoft, fontFamily: families.nunitoBold },
-            ]}
-          >
-            ← {t("common.back")}
-          </Text>
-        </Pressable>
+        <BackLink label={t("common.back")} fallback="/review" />
         <Text
           style={[
             paperType.label,
@@ -580,7 +573,7 @@ function ListeningCard({
     <PaperCard tone="week">
       <View style={{ alignItems: "center", gap: 10, paddingVertical: 8 }}>
         <Pressable onPress={onPlay} style={{ alignItems: "center", gap: 4 }}>
-          <Text style={{ fontSize: 34 }}>🔊</Text>
+          <Ionicons name="volume-high" size={30} color={paper.inkSoft} />
           <Text
             style={[
               paperType.link,

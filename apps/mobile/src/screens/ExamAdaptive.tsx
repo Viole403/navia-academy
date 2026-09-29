@@ -1,3 +1,4 @@
+import { BackLink } from "@/components/ui/BackLink"
 import { useEffect, useRef, useState } from "react"
 import { ActivityIndicator, ScrollView, Text, View } from "react-native"
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query"
@@ -255,11 +256,7 @@ export function ExamAdaptive() {
           gap: 12,
         }}
       >
-        <PressableScale onPress={goBack} accessibilityLabel={t("review.back")}>
-          <Text style={[paperType.link, { color: paper.inkMuted }]}>
-            ← {t("review.back")}
-          </Text>
-        </PressableScale>
+        <BackLink label={t("review.back")} fallback="/(tabs)/exam" />
         {started && !finished ? (
           <Text style={[paperType.label, { color: paper.inkMuted }]}>
             {t("adapt.question")} {answeredCount + 1}

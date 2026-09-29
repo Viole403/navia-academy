@@ -20,6 +20,7 @@ import { loadCharacters } from "@/lib/content-data"
 import { isCharScript, motifChar } from "@/lib/languages"
 import { useOnboardingStore } from "@/store/onboarding"
 import { useT } from "@/i18n"
+import { BackLink } from "@/components/ui/BackLink"
 import { tick } from "@/utils/feedback"
 import type { HanziChar } from "@/types/api"
 
@@ -127,22 +128,7 @@ export function Radicals() {
           paddingVertical: 12,
         }}
       >
-        <Pressable
-          onPress={() =>
-            router.canGoBack()
-              ? router.back()
-              : router.replace("/vocab" as never)
-          }
-        >
-          <Text
-            style={[
-              paperType.link,
-              { color: paper.inkSoft, fontFamily: families.nunitoBold },
-            ]}
-          >
-            ← {t("common.back")}
-          </Text>
-        </Pressable>
+        <BackLink label={t("common.back")} fallback="/vocab" />
         <Text
           style={[
             paperType.statLabel,

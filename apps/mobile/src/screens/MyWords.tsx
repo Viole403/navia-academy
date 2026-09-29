@@ -15,6 +15,7 @@ import { headword, reading, isCharScript } from "@/lib/languages"
 import { useOnboardingStore } from "@/store/onboarding"
 import { useWordsFor } from "@/hooks/useWordsFor"
 import { useT } from "@/i18n"
+import { BackLink } from "@/components/ui/BackLink"
 import { tap } from "@/utils/feedback"
 import type { SrsCard } from "@/types/api"
 
@@ -75,22 +76,7 @@ export function MyWords() {
           paddingVertical: 12,
         }}
       >
-        <Pressable
-          onPress={() =>
-            router.canGoBack()
-              ? router.back()
-              : router.replace("/(tabs)/learn" as never)
-          }
-        >
-          <Text
-            style={[
-              paperType.link,
-              { color: paper.inkSoft, fontFamily: families.nunitoBold },
-            ]}
-          >
-            ← {t("common.back")}
-          </Text>
-        </Pressable>
+        <BackLink label={t("common.back")} fallback="/(tabs)/learn" />
         <Text
           style={[
             paperType.statLabel,
