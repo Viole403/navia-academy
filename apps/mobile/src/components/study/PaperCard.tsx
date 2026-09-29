@@ -230,17 +230,22 @@ export function QuietPill({
   const { paper } = useTheme()
   const s = surfaceOf(paper, tone ?? "review")
   return (
-    <PressableScale onPress={onPress} wrapperStyle={style} scale={0.96}>
+    <PressableScale onPress={onPress} scale={0.96}>
       <View
-        style={{
-          alignSelf: "flex-start",
-          backgroundColor: s.fill,
-          borderColor: s.border,
-          borderWidth: 1,
-          borderRadius: paper.radius.pill,
-          paddingHorizontal: 14,
-          paddingVertical: 9,
-        }}
+        style={[
+          {
+            alignSelf: "flex-start",
+            backgroundColor: s.fill,
+            borderColor: s.border,
+            borderWidth: 1,
+            borderRadius: paper.radius.pill,
+            paddingHorizontal: 14,
+            paddingVertical: 9,
+          },
+          // Callers tint the selected state, so the override has to land on the
+          // pill surface — on the wrapper it drew a square box behind it.
+          style,
+        ]}
       >
         <Text style={[paperType.link, { color: paper.ink }]}>{title}</Text>
       </View>

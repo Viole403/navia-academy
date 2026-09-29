@@ -185,7 +185,9 @@ export default function ExamTab() {
                   width: 34,
                   height: 34,
                   borderRadius: 17,
-                  backgroundColor: accent + "1F",
+                  borderWidth: 1.5,
+                  borderColor: accent,
+                  backgroundColor: paper.cardAlt,
                   alignItems: "center",
                   justifyContent: "center",
                 }}
@@ -227,7 +229,7 @@ export default function ExamTab() {
                         examType === x
                           ? {
                               borderColor: accent,
-                              backgroundColor: accent + "18",
+                              backgroundColor: paper.cardAlt,
                             }
                           : undefined
                       }
@@ -254,7 +256,7 @@ export default function ExamTab() {
                       examLevel === lv
                         ? {
                             borderColor: accent,
-                            backgroundColor: accent + "18",
+                            backgroundColor: paper.cardAlt,
                           }
                         : undefined
                     }
