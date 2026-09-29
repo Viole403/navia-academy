@@ -26,7 +26,7 @@ import { setSoundPrefs } from "@/utils/sound"
  * behaviour that makes a settings screen feel untrustworthy.
  */
 export default function SettingsLearning() {
-  const { theme } = useTheme()
+  const { theme, paper } = useTheme()
   const t = useT()
   const s = useUserSettings()
 
@@ -86,7 +86,7 @@ export default function SettingsLearning() {
               >
                 <Text
                   style={{
-                    color: theme.textDim,
+                    color: paper.inkMuted,
                     fontSize: 12,
                     letterSpacing: 0.4,
                   }}
@@ -165,7 +165,11 @@ export default function SettingsLearning() {
             style={{ paddingHorizontal: 14, paddingTop: 12, paddingBottom: 2 }}
           >
             <Text
-              style={{ color: theme.textDim, fontSize: 12, letterSpacing: 0.4 }}
+              style={{
+                color: paper.inkMuted,
+                fontSize: 12,
+                letterSpacing: 0.4,
+              }}
             >
               {t("set.audioRate")}
             </Text>
@@ -183,7 +187,7 @@ export default function SettingsLearning() {
         </SettingsGroup>
         {activeLang ? null : (
           <Text
-            style={{ color: theme.textDim, fontSize: 12, textAlign: "center" }}
+            style={{ color: paper.inkMuted, fontSize: 12, textAlign: "center" }}
           >
             {t("set.noTrack")}
           </Text>

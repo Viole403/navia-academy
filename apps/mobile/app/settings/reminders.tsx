@@ -38,7 +38,7 @@ function slotToParts(slot: string) {
 }
 
 export default function SettingsReminders() {
-  const { theme } = useTheme()
+  const { theme, paper } = useTheme()
   const t = useT()
   const s = useUserSettings()
   if (s.isLoading) {
@@ -109,7 +109,7 @@ export default function SettingsReminders() {
             />
           ) : (
             <View style={{ paddingHorizontal: 14, paddingBottom: 14 }}>
-              <Text style={{ color: theme.textDim, fontSize: 13 }}>
+              <Text style={{ color: paper.inkMuted, fontSize: 13 }}>
                 {t("set.timeOffHint")}
               </Text>
             </View>

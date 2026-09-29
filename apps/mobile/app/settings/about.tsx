@@ -88,7 +88,7 @@ export default function SettingsAbout() {
             >
               Navia
             </Text>
-            <Text style={{ color: theme.textDim, fontSize: 12 }}>
+            <Text style={{ color: paper.inkMuted, fontSize: 12 }}>
               {t("set.version")} {version} · {Platform.OS}
             </Text>
           </View>
@@ -157,7 +157,7 @@ function ChangePasswordCard() {
           <Text style={[type.labelSm, { color: theme.textMuted }]}>
             {t("profile.changePw")}
           </Text>
-          <Text style={[type.body, { color: theme.textDim }]}>
+          <Text style={[type.body, { color: paper.inkMuted }]}>
             {open ? "−" : "+"}
           </Text>
         </Pressable>
@@ -373,7 +373,7 @@ export function AboutSection() {
                     style={{
                       fontFamily: fonts.serif,
                       fontSize: 16,
-                      color: theme.textDim,
+                      color: paper.inkMuted,
                     }}
                   >
                     →

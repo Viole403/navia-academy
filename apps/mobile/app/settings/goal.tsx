@@ -29,7 +29,7 @@ const OPTIONS = [
 ] as const
 
 export default function SettingsGoal() {
-  const { theme } = useTheme()
+  const { theme, paper } = useTheme()
   const t = useT()
   const s = useUserSettings()
   if (s.isLoading) {
@@ -68,7 +68,7 @@ export default function SettingsGoal() {
                 borderRadius: 16,
                 borderWidth: 1,
                 borderColor: selected ? theme.accent : theme.border,
-                backgroundColor: selected ? theme.accent + "0F" : theme.surface,
+                backgroundColor: selected ? paper.cardAlt : "transparent",
               }}
             >
               <Text
@@ -90,14 +90,14 @@ export default function SettingsGoal() {
                 >
                   {t("profile.min")}
                 </Text>
-                <Text style={{ color: theme.textDim, fontSize: 12 }}>
+                <Text style={{ color: paper.inkMuted, fontSize: 12 }}>
                   {t(o.load)}
                 </Text>
               </View>
               <Text
                 style={{
                   fontSize: 20,
-                  color: selected ? theme.accent : theme.textDim,
+                  color: selected ? theme.accent : paper.inkMuted,
                 }}
               >
                 {selected ? "✓" : "○"}

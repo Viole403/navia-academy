@@ -189,12 +189,13 @@ function ThemeSwatch({
           flexDirection: "row",
           alignItems: "center",
           gap: 10,
+          minHeight: 44,
+          paddingHorizontal: 14,
           paddingVertical: 10,
-          paddingHorizontal: 12,
           borderRadius: paper.radius.pill,
           borderWidth: 1,
-          borderColor: selected ? theme.accent : theme.border,
-          backgroundColor: selected ? theme.accent + "12" : "transparent",
+          borderColor: selected ? theme.accent : paper.line,
+          backgroundColor: selected ? paper.cardAlt : "transparent",
         }}
       >
         <View style={{ flexDirection: "row", gap: 3 }}>

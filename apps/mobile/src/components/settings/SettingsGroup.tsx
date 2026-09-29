@@ -44,7 +44,10 @@ export function SettingsGroup({
     <View style={{ gap: 8 }}>
       {title ? (
         <Text
-          style={[type.labelSm, { color: theme.textDim, paddingHorizontal: 4 }]}
+          style={[
+            type.labelSm,
+            { color: paper.inkMuted, paddingHorizontal: 4 },
+          ]}
         >
           {title}
         </Text>
@@ -62,7 +65,10 @@ export function SettingsGroup({
       </View>
       {hint && !last ? (
         <Text
-          style={[type.caption, { color: theme.textDim, paddingHorizontal: 4 }]}
+          style={[
+            type.caption,
+            { color: paper.inkMuted, paddingHorizontal: 4 },
+          ]}
         >
           {hint}
         </Text>
@@ -149,7 +155,7 @@ export function SettingsRow({
             borderRadius: 17,
             alignItems: "center",
             justifyContent: "center",
-            backgroundColor: (tint ?? theme.accent) + "1F",
+            backgroundColor: paper.cardAlt,
           }}
         >
           <Ionicons name={icon} size={17} color={tint ?? theme.accent} />
@@ -161,7 +167,7 @@ export function SettingsRow({
         </Text>
         {sub ? (
           <Text
-            style={[type.caption, { color: theme.textDim }]}
+            style={[type.caption, { color: paper.inkMuted }]}
             numberOfLines={2}
           >
             {sub}
@@ -177,7 +183,7 @@ export function SettingsRow({
         </Text>
       ) : null}
       {onPress ? (
-        <Text style={{ color: theme.textDim, fontSize: 16 }}>›</Text>
+        <Text style={{ color: paper.inkMuted, fontSize: 16 }}>›</Text>
       ) : null}
     </RowFrame>
   )
@@ -215,7 +221,7 @@ export function SettingsToggle({
             borderRadius: 17,
             alignItems: "center",
             justifyContent: "center",
-            backgroundColor: (tint ?? theme.accent) + "1F",
+            backgroundColor: paper.cardAlt,
           }}
         >
           <Ionicons name={icon} size={17} color={tint ?? theme.accent} />
@@ -228,7 +234,7 @@ export function SettingsToggle({
           {title}
         </Text>
         {sub ? (
-          <Text style={[type.caption, { color: theme.textDim }]}>{sub}</Text>
+          <Text style={[type.caption, { color: paper.inkMuted }]}>{sub}</Text>
         ) : null}
       </View>
       <Switch
@@ -241,7 +247,7 @@ export function SettingsToggle({
             ? undefined
             : value
               ? theme.surface
-              : theme.textDim
+              : paper.inkMuted
         }
         ios_backgroundColor={theme.border}
       />
@@ -257,6 +263,9 @@ export function SettingsToggle({
  * them side by side. Wrapping chips let a long option drop to a second line and
  * break exactly that comparison.
  */
+/** One height for every choice pill, independent of the font that lands in it. */
+const CHOICE_HEIGHT = 44
+
 export function SettingsChoice({
   options,
   value,
@@ -271,7 +280,8 @@ export function SettingsChoice({
     <View
       style={{
         flexDirection: "row",
-        gap: 6,
+        flexWrap: "wrap",
+        gap: 8,
         paddingHorizontal: 14,
         paddingBottom: 14,
       }}
@@ -283,12 +293,19 @@ export function SettingsChoice({
             key={o.id}
             onPress={() => onChange(o.id)}
             style={{
-              flex: 1,
-              paddingVertical: 11,
+              // flex:1 made every group stretch to fill, so a 2-option row and a
+              // 5-option row on the same screen produced pills 147dp and 55dp wide.
+              // Sizing to content with a fixed height makes the control the same
+              // object wherever it appears.
+              minHeight: CHOICE_HEIGHT,
+              minWidth: 72,
+              paddingHorizontal: 16,
+              paddingVertical: 10,
               borderRadius: paper.radius.pill,
               alignItems: "center",
+              justifyContent: "center",
               borderWidth: 1,
-              borderColor: selected ? (o.tint ?? theme.accent) : theme.border,
+              borderColor: selected ? (o.tint ?? theme.accent) : paper.line,
               backgroundColor: selected ? paper.cardAlt : "transparent",
             }}
           >
@@ -338,17 +355,19 @@ export function SettingsState({
           <View
             key={i}
             style={{
-              height: 52,
-              borderRadius: 14,
+              // Matches RowFrame's 34px content plus 14px padding either side, so
+              // the loaded rows land where the skeleton already sat.
+              height: 62,
+              borderRadius: paper.radius.inner,
               borderWidth: 1,
-              borderColor: theme.border,
-              backgroundColor: theme.surface + "70",
+              borderColor: paper.line,
+              backgroundColor: paper.cardAlt,
               opacity: 1 - i * 0.22,
             }}
           />
         ))}
         <Text
-          style={[type.caption, { color: theme.textDim, textAlign: "center" }]}
+          style={[type.caption, { color: paper.inkMuted, textAlign: "center" }]}
         >
           {t("common.loading")}
         </Text>
@@ -368,7 +387,7 @@ export function SettingsState({
           <Text
             style={[
               type.caption,
-              { color: theme.textDim, textAlign: "center" },
+              { color: paper.inkMuted, textAlign: "center" },
             ]}
           >
             {message}
