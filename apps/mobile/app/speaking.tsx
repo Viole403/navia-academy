@@ -18,7 +18,7 @@ import {
 } from "@/lib/stt"
 import { useOnboardingStore } from "@/store/onboarding"
 import { useT } from "@/i18n"
-import { logStudyWithQueue } from "@/utils/offlineQueue"
+import { STUDY_DIRTY_KEYS, logStudyWithQueue } from "@/utils/offlineQueue"
 import { speakingPrompts } from "@/lib/prompts"
 
 type Verdict = "fluent" | "rough"
@@ -94,7 +94,8 @@ export default function SpeakingScreen() {
 
   const finishM = useMutation({
     mutationFn: (g: Verdict) => logStudyWithQueue(5, g === "fluent" ? 40 : 20),
-    onSuccess: () => qc.invalidateQueries({ queryKey: ["progress"] }),
+    onSuccess: () =>
+      STUDY_DIRTY_KEYS.forEach((k) => qc.invalidateQueries({ queryKey: [k] })),
   })
 
   const next = () => {

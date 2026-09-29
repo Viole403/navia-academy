@@ -15,7 +15,7 @@ import { paperType } from "@/theme/paperType"
 import { loadCurriculum } from "@/lib/content-data"
 import { motifChar } from "@/lib/languages"
 import { useOnboardingStore } from "@/store/onboarding"
-import { logStudyWithQueue } from "@/utils/offlineQueue"
+import { STUDY_DIRTY_KEYS, logStudyWithQueue } from "@/utils/offlineQueue"
 import { useT } from "@/i18n"
 import { tap, thud } from "@/utils/feedback"
 
@@ -76,7 +76,7 @@ export function LessonView() {
       logStudyWithQueue(lesson?.durationMin ?? 10, lesson?.xp ?? 20),
     onSuccess: () => {
       thud()
-      qc.invalidateQueries({ queryKey: ["progress"] })
+      STUDY_DIRTY_KEYS.forEach((k) => qc.invalidateQueries({ queryKey: [k] }))
       goBack()
     },
   })

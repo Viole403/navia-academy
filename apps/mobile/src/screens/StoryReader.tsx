@@ -6,7 +6,7 @@ import { ReadingShell, TappableText } from "@/components/study/reading"
 import { PaperCard } from "@/components/study/PaperCard"
 import { MultipleChoiceCard } from "@/components/study/MultipleChoiceCard"
 import { QueuedNote } from "@/components/study/QueuedNote"
-import { logStudyWithQueue } from "@/utils/offlineQueue"
+import { STUDY_DIRTY_KEYS, logStudyWithQueue } from "@/utils/offlineQueue"
 import { useTheme } from "@/theme/ThemeProvider"
 import { paperType, families } from "@/theme/paperType"
 import { loadReadings } from "@/lib/content-data"
@@ -59,7 +59,8 @@ export function StoryReader() {
   // the same weight the web reader gives it.
   const answeredM = useMutation({
     mutationFn: (ok: boolean) => logStudyWithQueue(2, ok ? 8 : 2),
-    onSuccess: () => qc.invalidateQueries({ queryKey: ["progress"] }),
+    onSuccess: () =>
+      STUDY_DIRTY_KEYS.forEach((k) => qc.invalidateQueries({ queryKey: [k] })),
   })
 
   /** Indonesian-first gloss, English fallback — the content's own rule. */

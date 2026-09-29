@@ -186,6 +186,9 @@ export default function ExamSessionScreen() {
     onSuccess: (result) => {
       qc.invalidateQueries({ queryKey: ["exam-active"] })
       qc.invalidateQueries({ queryKey: ["exam-history"] })
+      // The standing list on the exam tab reads this; without it the level and
+      // score stay whatever they were before the sitting.
+      qc.invalidateQueries({ queryKey: ["exam-progress"] })
       router.replace({
         pathname: "/exam-result" as never,
         params: {

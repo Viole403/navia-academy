@@ -16,7 +16,7 @@ import { loadVocabulary } from "@/lib/content-data"
 import { headword, isCharScript, motifChar } from "@/lib/languages"
 import { useT } from "@/i18n"
 import { useOnboardingStore } from "@/store/onboarding"
-import { logStudyWithQueue } from "@/utils/offlineQueue"
+import { STUDY_DIRTY_KEYS, logStudyWithQueue } from "@/utils/offlineQueue"
 import type { VocabWord } from "@/types/api"
 
 interface Card {
@@ -76,7 +76,7 @@ export default function GameMatch() {
       await logStudyWithQueue(durMin, matches * 10)
     },
     onSuccess: () => {
-      qc.invalidateQueries({ queryKey: ["progress"] })
+      STUDY_DIRTY_KEYS.forEach((k) => qc.invalidateQueries({ queryKey: [k] }))
       qc.invalidateQueries({ queryKey: ["progress", "overview"] })
       router.back()
     },

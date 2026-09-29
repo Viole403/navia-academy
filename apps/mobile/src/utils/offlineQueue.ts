@@ -93,6 +93,19 @@ export async function reviewWithQueue(
   }
 }
 
+/**
+ * What a logged study session dirties. The week strip, the progress screen, the
+ * stats tab and the challenges figure all read sessions, and every one of them
+ * was left showing the session before the current one because only ["progress"]
+ * was invalidated at the call sites.
+ */
+export const STUDY_DIRTY_KEYS = [
+  "progress",
+  "study-sessions",
+  "due-cards",
+  "srs-stats",
+] as const
+
 export async function logStudyWithQueue(
   minutes: number,
   xp: number

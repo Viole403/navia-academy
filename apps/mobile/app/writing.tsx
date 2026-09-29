@@ -13,7 +13,7 @@ import { useContentFaces } from "@/hooks/useContentFaces"
 import { motifChar } from "@/lib/languages"
 import { useOnboardingStore } from "@/store/onboarding"
 import { useT } from "@/i18n"
-import { logStudyWithQueue } from "@/utils/offlineQueue"
+import { STUDY_DIRTY_KEYS, logStudyWithQueue } from "@/utils/offlineQueue"
 import { writingPrompts } from "@/lib/prompts"
 
 type Rubric = "on-target" | "partial" | "off-topic"
@@ -39,7 +39,8 @@ export default function WritingScreen() {
 
   const finishM = useMutation({
     mutationFn: (g: Rubric) => logStudyWithQueue(10, RUBRIC_XP[g]),
-    onSuccess: () => qc.invalidateQueries({ queryKey: ["progress"] }),
+    onSuccess: () =>
+      STUDY_DIRTY_KEYS.forEach((k) => qc.invalidateQueries({ queryKey: [k] })),
   })
 
   const next = () => {

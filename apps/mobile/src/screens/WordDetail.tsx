@@ -1,3 +1,4 @@
+import { STUDY_DIRTY_KEYS } from "@/utils/offlineQueue"
 import { useState } from "react"
 import {
   ActivityIndicator,
@@ -85,7 +86,8 @@ export function WordDetail() {
         : [...current, id as string]
       return progress.update({ saved_word_ids: next })
     },
-    onSuccess: () => qc.invalidateQueries({ queryKey: ["progress"] }),
+    onSuccess: () =>
+      STUDY_DIRTY_KEYS.forEach((k) => qc.invalidateQueries({ queryKey: [k] })),
   })
 
   const addM = useMutation({

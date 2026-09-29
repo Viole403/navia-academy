@@ -2,6 +2,7 @@ import { useMemo, useState } from "react"
 import { ActivityIndicator, Alert, ScrollView, Text, View } from "react-native"
 import { SafeAreaView } from "react-native-safe-area-context"
 import { useRouter } from "expo-router"
+import { STUDY_DIRTY_KEYS } from "@/utils/offlineQueue"
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query"
 import { EmptyState } from "@/components/ui/EmptyState"
 import { Motif } from "@/components/ui/Motif"
@@ -206,7 +207,7 @@ export default function PlacementTestScreen() {
         .catch(() => null)
     },
     onSuccess: () => {
-      qc.invalidateQueries({ queryKey: ["progress"] })
+      STUDY_DIRTY_KEYS.forEach((k) => qc.invalidateQueries({ queryKey: [k] }))
       router.replace("/(tabs)/learn")
     },
     onError: () => {

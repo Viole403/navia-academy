@@ -15,7 +15,7 @@ import { headword, motifChar } from "@/lib/languages"
 import { useOnboardingStore } from "@/store/onboarding"
 import { useTts } from "@/hooks/useTts"
 import { useT } from "@/i18n"
-import { logStudyWithQueue } from "@/utils/offlineQueue"
+import { STUDY_DIRTY_KEYS, logStudyWithQueue } from "@/utils/offlineQueue"
 import type { VocabWord } from "@/types/api"
 
 const ROUNDS = 10
@@ -68,7 +68,7 @@ export default function ListeningDrillScreen() {
       logStudyWithQueue(8, Math.round((finalScore / ROUNDS) * 100)),
     onSuccess: (res) => {
       setQueued(res.offline)
-      qc.invalidateQueries({ queryKey: ["progress"] })
+      STUDY_DIRTY_KEYS.forEach((k) => qc.invalidateQueries({ queryKey: [k] }))
     },
   })
 
