@@ -90,11 +90,17 @@ func (s *SettingsService) UpdateSettings(ctx context.Context, userID string, req
 	if req.DailyGoalMin != nil {
 		settings.DailyGoalMin = *req.DailyGoalMin
 	}
+	// These arrive as bare integers with no schema constraint, so the endpoint is
+	// the only place that can refuse a value that would leave the learner with an
+	// empty or absurd queue.
 	if req.NewWordsPerDay != nil {
-		settings.NewWordsPerDay = *req.NewWordsPerDay
+		settings.NewWordsPerDay = clamp(*req.NewWordsPerDay, 1, 200)
 	}
 	if req.MaxReviewsPerDay != nil {
-		settings.MaxReviewsPerDay = *req.MaxReviewsPerDay
+		settings.MaxReviewsPerDay = clamp(*req.MaxReviewsPerDay, 5, 1000)
+	}
+	if req.DailyGoalMin != nil {
+		settings.DailyGoalMin = clamp(*req.DailyGoalMin, 1, 240)
 	}
 	if req.Locale != nil {
 		settings.Locale = *req.Locale
