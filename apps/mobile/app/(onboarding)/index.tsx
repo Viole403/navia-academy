@@ -307,10 +307,8 @@ export default function Onboarding() {
                       padding: 12,
                       borderRadius: 14,
                       borderWidth: selected ? 2 : 1,
-                      borderColor: selected ? theme.accent : theme.border,
-                      backgroundColor: selected
-                        ? theme.accent + "14"
-                        : theme.surface,
+                      borderColor: selected ? theme.accent : paper.line,
+                      backgroundColor: selected ? paper.cardAlt : paper.card,
                       gap: 8,
                     }}
                   >
@@ -374,10 +372,8 @@ export default function Onboarding() {
                       paddingVertical: 10,
                       borderRadius: paper.radius.pill,
                       borderWidth: 1,
-                      borderColor: selected ? theme.accent : theme.border,
-                      backgroundColor: selected
-                        ? theme.accent + "14"
-                        : "transparent",
+                      borderColor: selected ? theme.accent : paper.line,
+                      backgroundColor: selected ? paper.cardAlt : "transparent",
                       alignItems: "center",
                     }}
                   >
@@ -419,10 +415,8 @@ export default function Onboarding() {
                       paddingHorizontal: 14,
                       borderRadius: 14,
                       borderWidth: 1,
-                      borderColor: selected ? theme.accent : theme.border,
-                      backgroundColor: selected
-                        ? theme.accent + "0F"
-                        : "transparent",
+                      borderColor: selected ? theme.accent : paper.line,
+                      backgroundColor: selected ? paper.cardAlt : "transparent",
                     }}
                   >
                     <View
