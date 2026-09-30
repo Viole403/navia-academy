@@ -235,11 +235,6 @@ export const cat = {
       method: "POST",
       body: JSON.stringify(body),
     }),
-  answer: (sessionId: number, body: Record<string, unknown>) =>
-    api<CatSessionDTO>(`/api/v1/cat/session/${sessionId}`, {
-      method: "POST",
-      body: JSON.stringify(body),
-    }),
   saveSession: (sessionId: number, body: Record<string, unknown>) =>
     api<{ ok: boolean }>(`/api/v1/cat/session/${sessionId}`, {
       method: "PATCH",
