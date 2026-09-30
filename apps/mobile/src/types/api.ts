@@ -361,7 +361,7 @@ export interface GrammarPoint {
   id: string
   title: string
   pattern?: string
-  level?: string
+  level?: number
   hsk?: number
   difficulty?: string
   simpleExplanation?: string
@@ -384,7 +384,7 @@ export interface Reading {
   title: string
   type?: string
   hsk?: number
-  level?: string
+  level?: number
   wordCount?: number
   summary?: string
   paragraphs?: ReadingParagraph[]
@@ -409,7 +409,7 @@ export interface ConversationScenario {
   title: string
   context?: string
   hsk?: number
-  level?: string
+  level?: number
   formality?: string
   turns?: DialogueTurn[]
   [key: string]: unknown

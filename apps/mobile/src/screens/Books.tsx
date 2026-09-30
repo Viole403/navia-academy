@@ -17,6 +17,7 @@ import { useTheme } from "@/theme/ThemeProvider"
 import { useContentLayout } from "@/theme/layout"
 import { paperType, families } from "@/theme/paperType"
 import { loadReadings } from "@/lib/content-data"
+import { groupIntoShelves } from "@/lib/shelves"
 import { useOnboardingStore } from "@/store/onboarding"
 import { useT, useLocaleStore } from "@/i18n"
 import { tap } from "@/utils/feedback"
@@ -42,18 +43,10 @@ export function Books() {
     queryFn: () => loadReadings(language),
   })
 
-  const shelves = useMemo(() => {
-    const all = readingsQ.data ?? []
-    const map = new Map<string, Reading[]>()
-    for (const r of all) {
-      const key = r.level ?? (r.hsk ? `HSK ${r.hsk}` : "")
-      const label = key || t("books.general")
-      const list = map.get(label) ?? []
-      list.push(r)
-      map.set(label, list)
-    }
-    return [...map.entries()].sort(([a], [b]) => a.localeCompare(b))
-  }, [readingsQ.data, t])
+  const shelves = useMemo(
+    () => groupIntoShelves(readingsQ.data ?? [], t("books.general")),
+    [readingsQ.data, t]
+  )
 
   const summary = (r: Reading) => {
     const rec = r as unknown as { summary_id?: string; summary_en?: string }
@@ -115,15 +108,15 @@ export function Books() {
             </Text>
           </View>
 
-          {shelves.map(([shelf, items]) => (
-            <View key={shelf} style={{ gap: 10 }}>
+          {shelves.map(({ label, items }) => (
+            <View key={label} style={{ gap: 10 }}>
               <Text
                 style={[
                   paperType.cardTitleSm,
                   { color: paper.ink, fontFamily: families.nunitoExtraBold },
                 ]}
               >
-                {shelf}
+                {label}
               </Text>
               <View style={{ gap: 8 }}>
                 {items.map((r) => (

@@ -178,14 +178,14 @@ export default function LibraryScreen() {
         ? ((readingsQ.data ?? []) as Reading[]).map((r) => ({
             id: r.id,
             title: r.title,
-            sub: r.summary ?? r.level ?? "",
+            sub: r.summary ?? (r.level != null ? String(r.level) : ""),
           }))
         : active === "conversations"
           ? ((conversationsQ.data ?? []) as ConversationScenario[]).map(
               (c) => ({
                 id: c.id,
                 title: c.title,
-                sub: c.context ?? c.level ?? "",
+                sub: c.context ?? (c.level != null ? String(c.level) : ""),
               })
             )
           : ((charactersQ.data ?? []) as HanziChar[]).map((c) => ({
