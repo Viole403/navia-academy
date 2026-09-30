@@ -604,6 +604,8 @@ const en = {
   "chal.streakDesc": "%d days in a row.",
   "chal.xp500": "500 XP",
   "chal.xp2000": "2000 XP",
+  "chal.xp5000": "5000 XP",
+  "chal.xp10000": "10000 XP",
   "chal.xpDesc": "Reach %d lifetime XP.",
   "chal.badge": "First badge",
   "chal.badgeDesc": "Unlock any achievement.",

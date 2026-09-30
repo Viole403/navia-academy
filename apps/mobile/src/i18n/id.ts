@@ -603,6 +603,8 @@ const id: Record<I18nKey, string> = {
   "chal.streakDesc": "%d hari berturut-turut.",
   "chal.xp500": "500 XP",
   "chal.xp2000": "2000 XP",
+  "chal.xp5000": "5000 XP",
+  "chal.xp10000": "10000 XP",
   "chal.xpDesc": "Capai %d XP total.",
   "chal.badge": "Lencana pertama",
   "chal.badgeDesc": "Buka satu pencapaian.",
