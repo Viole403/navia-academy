@@ -12,6 +12,7 @@ import { SafeAreaView } from "react-native-safe-area-context"
 import { useRouter } from "expo-router"
 import { useQuery } from "@tanstack/react-query"
 import { DictionaryIntro } from "@/components/study/DictionaryIntro"
+import { BackLink } from "@/components/ui/BackLink"
 import { PaperCard, QuietPill } from "@/components/study/PaperCard"
 import { FlexGap } from "@/components/study/press"
 import { useTheme } from "@/theme/ThemeProvider"
@@ -21,7 +22,12 @@ import { ReadingAid } from "@/components/study/ReadingAid"
 import { paperType, families, hanziType } from "@/theme/paperType"
 import { loadVocabulary } from "@/lib/content-data"
 import { rankVocabulary, starterVocabulary } from "@/lib/dictionary-rank"
-import { CATEGORIES, categoryOf, type CategoryId } from "@/lib/wordCategories"
+import {
+  CATEGORIES,
+  categoryGlyph,
+  categoryOf,
+  type CategoryId,
+} from "@/lib/wordCategories"
 import {
   examDisplayName,
   examLevels,
@@ -118,6 +124,18 @@ export function Dictionary() {
     [all, examType]
   )
 
+  // Recent is the words the learner actually opened. Resolved through a lookup
+  // rather than Array.find per id so a full bank stays a single pass.
+  const recentWordIds = useOnboardingStore((s) => s.recentWordIds)
+  const recent = useMemo(() => {
+    if (recentWordIds.length === 0) return []
+    const byId = new Map(all.map((w) => [w.id, w]))
+    return recentWordIds
+      .map((id) => byId.get(id))
+      .filter((w): w is VocabWord => Boolean(w))
+      .slice(0, 6)
+  }, [recentWordIds, all])
+
   // Narrowed by any of the three controls. Keying this off the query alone left
   // the level and category filters rendering nothing, because the results list
   // is the only thing they feed.
@@ -129,6 +147,18 @@ export function Dictionary() {
       style={{ flex: 1, backgroundColor: paper.paper }}
       edges={["top"]}
     >
+      <View
+        style={{
+          flexDirection: "row",
+          alignItems: "center",
+          justifyContent: "space-between",
+          paddingHorizontal: 20,
+          paddingBottom: 4,
+        }}
+      >
+        <BackLink label={t("common.back")} fallback="/(tabs)/learn" />
+        <View style={{ width: 18 }} />
+      </View>
       <ScrollView
         contentContainerStyle={{
           paddingBottom: 40,
@@ -294,7 +324,7 @@ export function Dictionary() {
                       color: paper.ink,
                     }}
                   >
-                    {c.glyph}
+                    {categoryGlyph(c, charScript)}
                   </Text>
                   <Text
                     numberOfLines={1}
@@ -360,19 +390,29 @@ export function Dictionary() {
                 <View style={{ flex: 1 }}>
                   <ColumnCard
                     title={t("dict.recent")}
-                    count={0}
-                    onSeeAll={() => router.push("/(tabs)/learn")}
+                    count={recent.length}
+                    onSeeAll={() => {
+                      setQuery("")
+                      setLevel(null)
+                      setCategory(null)
+                    }}
                   >
-                    <Text
-                      style={{
-                        color: paper.inkMuted,
-                        fontFamily: families.nunitoSemiBold,
-                        fontSize: 12.5,
-                        paddingVertical: 10,
-                      }}
-                    >
-                      {t("dict.recentEmpty")}
-                    </Text>
+                    {recent.length === 0 ? (
+                      <Text
+                        style={{
+                          color: paper.inkMuted,
+                          fontFamily: families.nunitoSemiBold,
+                          fontSize: 12.5,
+                          paddingVertical: 10,
+                        }}
+                      >
+                        {t("dict.recentEmpty")}
+                      </Text>
+                    ) : (
+                      recent.map((w) => (
+                        <WordRow key={w.id} word={w} examType={examType} />
+                      ))
+                    )}
                   </ColumnCard>
                 </View>
               </View>

@@ -1,6 +1,6 @@
 import { Ionicons } from "@expo/vector-icons"
 import { STUDY_DIRTY_KEYS } from "@/utils/offlineQueue"
-import { useState } from "react"
+import { useEffect, useRef, useState } from "react"
 import {
   ActivityIndicator,
   Pressable,
@@ -58,6 +58,7 @@ export function WordDetail() {
   const qc = useQueryClient()
   const { id } = useLocalSearchParams<{ id?: string }>()
   const language = useOnboardingStore((s) => s.language)
+  const markWordViewed = useOnboardingStore((s) => s.markWordViewed)
   const tts = useTts()
   const {
     modeFor,
@@ -100,6 +101,18 @@ export function WordDetail() {
       qc.invalidateQueries({ queryKey: ["srs-stats"] })
     },
   })
+
+  // Opening a word is the decision to learn it, so the card is created on
+  // arrival rather than behind a button. `ensureCard` derives the card id from
+  // user and item and does nothing on conflict, so re-opening is a no-op.
+  const addedRef = useRef<string | null>(null)
+  useEffect(() => {
+    if (!w || !id) return
+    if (addedRef.current === id) return
+    addedRef.current = id
+    markWordViewed(id)
+    addM.mutate()
+  }, [w, id, addM, markWordViewed])
 
   if (wordQ.isLoading) {
     return (
@@ -173,17 +186,6 @@ export function WordDetail() {
               face={paper.lavender}
               small
               onPress={() => tts.play(headword(w))}
-            />
-          </View>
-          <View style={{ flex: 1 }}>
-            <LiftedFace
-              title={addM.isPending ? t("vocab.adding") : t("vocab.addReview")}
-              face={paper.green}
-              small
-              onPress={() => {
-                tap()
-                addM.mutate()
-              }}
             />
           </View>
         </View>

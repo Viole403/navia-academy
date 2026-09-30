@@ -1,6 +1,6 @@
 import type { ReactNode } from "react"
 import { ScrollView, Text, View } from "react-native"
-import { SafeAreaView } from "react-native-safe-area-context"
+import { SafeAreaView, useSafeAreaInsets } from "react-native-safe-area-context"
 import { useTheme } from "@/theme/ThemeProvider"
 import { useContentLayout } from "@/theme/layout"
 import { paperType, families } from "@/theme/paperType"
@@ -33,6 +33,7 @@ export function DetailShell({
   footer?: ReactNode
 }) {
   const { paper } = useTheme()
+  const insets = useSafeAreaInsets()
   const t = useT()
   const { column: columnWidth } = useContentLayout()
 
@@ -92,7 +93,9 @@ export function DetailShell({
           style={{
             paddingHorizontal: 20,
             paddingTop: 12,
-            paddingBottom: 28,
+            // The root only claims the top edge, so the footer owns the bottom
+            // inset. A flat 28 left the action row under a 3-button nav bar.
+            paddingBottom: insets.bottom + 12,
             backgroundColor: paper.paper,
             borderTopWidth: 1,
             borderTopColor: paper.line,

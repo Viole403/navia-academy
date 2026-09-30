@@ -17,8 +17,10 @@ export type CategoryId =
 
 export interface Category {
   id: CategoryId
-  /** Glyph shown in the tile. */
+  /** Glyph shown in the tile for a CJK track. */
   glyph: string
+  /** Initial shown in the tile for a non-CJK track. */
+  letter: string
   /** i18n key for the label — the tiles are labels, not data. */
   labelKey: string
   /** Pastel fill for the tile, resolved against the live paper palette. */
@@ -68,16 +70,32 @@ export function categoryOf(word: VocabWord): CategoryId {
 
 // No per-category fill: the pastel hexes this used to carry were light-mode
 // only, so on a dark page ink on them measured 1.00:1. The tile takes a
-// palette surface and the hanzi glyph carries the category.
+// palette surface and the glyph carries the category.
 export const CATEGORIES: Category[] = [
-  { id: "verbs", glyph: "動", labelKey: "cat.verbs" },
-  { id: "nouns", glyph: "名", labelKey: "cat.nouns" },
+  { id: "verbs", glyph: "動", letter: "V", labelKey: "cat.verbs" },
+  { id: "nouns", glyph: "名", letter: "N", labelKey: "cat.nouns" },
   {
     id: "descriptors",
     glyph: "形",
+    letter: "D",
     labelKey: "cat.descriptors",
   },
-  { id: "grammar", glyph: "法", labelKey: "cat.grammar" },
-  { id: "timePlace", glyph: "時", labelKey: "cat.timePlace" },
-  { id: "other", glyph: "其", labelKey: "cat.other" },
+  { id: "grammar", glyph: "法", letter: "G", labelKey: "cat.grammar" },
+  {
+    id: "timePlace",
+    glyph: "時",
+    letter: "T",
+    labelKey: "cat.timePlace",
+  },
+  { id: "other", glyph: "其", letter: "O", labelKey: "cat.other" },
 ]
+
+/**
+ * The tile glyph for a language.
+ *
+ * The hanzi marks read as vocabulary to a Chinese learner and as nothing at all
+ * to a German one, so non-CJK tracks get the category initial instead.
+ */
+export function categoryGlyph(category: Category, charScript: boolean): string {
+  return charScript ? category.glyph : category.letter
+}

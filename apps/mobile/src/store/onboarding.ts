@@ -15,14 +15,19 @@ interface OnboardingState {
   goal: OnboardingGoal | null
   examType: string | null
   dailyMinutes: number
+  /** Most recently opened words, newest first. Backs the Dictionary's Recent. */
+  recentWordIds: string[]
   setLanguage: (l: LanguageCode) => void
   setScript: (s: ScriptPref) => void
   setGoal: (g: OnboardingGoal) => void
   setExamType: (e: string) => void
   setDailyMinutes: (m: number) => void
+  markWordViewed: (id: string) => void
   complete: () => void
   reset: () => void
 }
+
+const RECENT_LIMIT = 24
 
 export const useOnboardingStore = create<OnboardingState>()(
   persist(
@@ -33,6 +38,14 @@ export const useOnboardingStore = create<OnboardingState>()(
       goal: null,
       examType: null,
       dailyMinutes: 10,
+      recentWordIds: [],
+      markWordViewed: (id) =>
+        set((st) => ({
+          recentWordIds: [
+            id,
+            ...st.recentWordIds.filter((x) => x !== id),
+          ].slice(0, RECENT_LIMIT),
+        })),
       setLanguage: (language) => set({ language }),
       setScript: (script) => set({ script }),
       setGoal: (goal) => set({ goal }),
@@ -47,6 +60,7 @@ export const useOnboardingStore = create<OnboardingState>()(
           goal: null,
           examType: null,
           dailyMinutes: 10,
+          recentWordIds: [],
         }),
     }),
     {
