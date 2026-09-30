@@ -17,6 +17,7 @@ import { auth } from "@/api/endpoints"
 import { onRefreshFail } from "@/api/client"
 import { ErrorBoundary } from "@/components/ui/ErrorBoundary"
 import { useOfflineDrain } from "@/hooks/useOfflineDrain"
+import { useReminderSync } from "@/hooks/useReminderSync"
 import { useWidgetSync } from "@/hooks/useWidgetSync"
 import { configureAudioSession, setSoundPrefs } from "@/utils/sound"
 import { useSettingsPrefs } from "@/store/settings"
@@ -78,6 +79,9 @@ function AppShell() {
   // Keeps the five home-screen widgets in step with the data the app already
   // has; without this they render the empty default forever.
   useWidgetSync()
+  // The reminder setting is on the server, the alarm is in the OS scheduler, and
+  // a reboot or a second install leaves only the first one behind.
+  useReminderSync()
   const { theme, paper, resolvedMode } = useTheme()
   const soundEffects = useSettingsPrefs((s) => s.soundEffects)
 
