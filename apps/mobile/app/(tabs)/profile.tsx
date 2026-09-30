@@ -444,12 +444,8 @@ function MetaField({
 }) {
   const { theme } = useTheme()
   return (
-    // Centred, not left-aligned. Three equal cells with left-aligned content
-    // push the whole block of text to one side: the last label ends well short
-    // of the row's right edge, so the row reads as a left-heavy mass with a
-    // gutter beside it. `space-between` on the parent would fix the outer two
-    // and leave the middle floating, which reads as emphasis the row does not
-    // mean — these are three peers, not a hero with two captions.
+    // Left-aligned cells in an equal-thirds row strand a gutter on the right.
+    // These are peers, so centre each cell rather than spreading the row.
     <View style={{ flex: 1, gap: 4, alignItems: "center" }}>
       <Text
         style={[type.labelSm, { color: theme.textMuted, textAlign: "center" }]}

@@ -43,9 +43,7 @@ export default function SettingsReminders() {
   const { theme, paper } = useTheme()
   const t = useT()
   const s = useUserSettings()
-  // Above the loading early-return on purpose: the sheet's open state is a hook,
-  // and a hook below one means this screen rendered 4 hooks while loading and 5
-  // after — which React rejects outright, so the screen never came up at all.
+  // Above the loading return: React rejects a hook count that changes per render.
   const [picking, setPicking] = useState(false)
   if (s.isLoading) {
     return (

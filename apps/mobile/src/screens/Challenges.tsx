@@ -99,9 +99,7 @@ export function Challenges() {
     .filter((s) => (s.date ?? "").slice(0, 10) === todayKey)
     .reduce((n, s) => n + (s.xp ?? 0), 0)
 
-  // Completion is durable for the life of the install, per challenge id.
-  // `claim` below is the only writer — an empty `claimed` meant nothing could
-  // ever reach the foot of the list, and the whole four-state card was three.
+  // Per challenge id, for the life of the install. `claim` is the only writer.
   const [claimed, setClaimed] = useState<string[]>([])
   const markClaimed = (id: string) =>
     setClaimed((prev) => (prev.includes(id) ? prev : [...prev, id]))
@@ -365,11 +363,8 @@ function ChallengeList({
           />
         ))}
 
-        {/* Finished work sinks to the foot of the list, inside this same
-            scroll. It used to sit in a second View below a non-scrolling
-            container, so every challenge the learner completed pushed itself
-            further past the bottom edge — the opposite of what the card comment
-            promised. */}
+        {/* Finished work belongs in this scroll: below a non-scrolling one it
+            sank past the bottom edge instead of to the foot of the list. */}
         {finished.length > 0 ? (
           <View style={{ gap: 13, marginTop: 2 }}>
             <Text

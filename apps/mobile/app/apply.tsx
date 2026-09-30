@@ -51,9 +51,7 @@ export default function Apply() {
       Alert.alert(t("apply.applied"), t("apply.appliedMsg"), [
         {
           text: t("apply.ok"),
-          // Guarded like the header arrow: reaching /apply by deep link leaves
-          // nothing to pop, and `router.back()` on an empty stack does nothing
-          // at all — a dismiss button that looks live and is dead.
+          // Unguarded back is inert on a deep link, with an empty stack.
           onPress: goBack,
         },
       ])

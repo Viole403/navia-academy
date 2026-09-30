@@ -9,26 +9,7 @@ import {
   scheduleDailyStreakReminder,
 } from "@/utils/notifications"
 
-/**
- * Keeps the OS alarm in step with the persisted reminder setting.
- *
- * `daily_reminder` and `reminder_time` live on the server, but the alarm lives in
- * the device's scheduler — and the two drift apart silently. Android drops
- * scheduled alarms on reboot, "clear data" and reinstall, and a second install
- * inherits the setting without inheriting the alarm. In every one of those cases
- * the toggle still reads on, the server still says on, and the reminder simply
- * stops arriving, with nothing on screen to say so.
- *
- * So the scheduler is treated as a cache of the setting rather than as the place
- * the setting is held: on every signed-in start, and whenever the setting
- * changes, this makes the alarm match. It is a no-op when it already matches, so
- * the Reminders screen can keep scheduling on the learner's decision without the
- * two fighting.
- *
- * It never asks for permission. The prompt belongs to the decision to turn the
- * setting on (see app/settings/reminders.tsx); prompting at launch would ask
- * again for a setting the learner already answered.
- */
+/** A reboot keeps the server setting but drops the OS alarm, so re-arm on start. */
 function slotToParts(slot: string | undefined): {
   hour: number
   minute: number

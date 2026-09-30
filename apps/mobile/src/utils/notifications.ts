@@ -18,11 +18,7 @@ try {
   Notifications = null
 }
 
-/**
- * Tag on the request so this module can find — and only find — the alarm it owns.
- * `cancelStreakReminder` used to cancel *every* scheduled notification on the
- * device, which was only harmless while this was the only one.
- */
+/** Tags the request so cancel drops this alarm and not the app's others. */
 const REMINDER_KIND = "streak-reminder"
 
 export async function requestPermissions(): Promise<boolean> {
@@ -79,14 +75,7 @@ export interface ScheduledReminder {
   minute: number
 }
 
-/**
- * Read the alarm back out of the scheduler.
- *
- * Android answers a DAILY trigger with `{type:'daily', hour, minute}`; iOS
- * answers with a calendar trigger, so both shapes are read. A trigger with no
- * readable time is reported as hour/minute -1, which never compares equal to a
- * real slot and so forces a re-schedule rather than silently matching.
- */
+/** Android answers `daily`, iOS a calendar trigger; read both. -1 never matches. */
 export async function getScheduledStreakReminder(): Promise<ScheduledReminder | null> {
   if (!Notifications) return null
   const scheduled = await Notifications.getAllScheduledNotificationsAsync()

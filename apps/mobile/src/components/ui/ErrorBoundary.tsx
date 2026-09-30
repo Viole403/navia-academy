@@ -18,9 +18,7 @@ export class ErrorBoundary extends Component<Props, State> {
   }
 
   static getDerivedStateFromError(error: Error): State {
-    // The message alone names a value and not a component, so a crash that only
-    // ever reaches this boundary is unattributable. The component stack is what
-    // turns "Cannot read property 'x' of undefined" into a file to open.
+    // The message names a value, not a component; the stack names the file.
     console.error("[ErrorBoundary]", error, error.stack)
     return { hasError: true, message: error.message }
   }

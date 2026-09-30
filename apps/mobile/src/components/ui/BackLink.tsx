@@ -9,17 +9,8 @@ import { paperType, families } from "@/theme/paperType"
  * Seventeen screens carried the same six lines of Pressable and Text, and the
  * glyph inherited the label's weight, so it read as punctuation.
  *
- * **The 44dp frame is the target, and it is a frame rather than `hitSlop` on
- * purpose.** `hitSlop` only widens native hit-testing; it does not grow the
- * accessibility node, so a TalkBack or Switch Control user was handed the
- * unpadded 18dp box while a sighted finger got 34dp — two different targets for
- * one action. A real frame is one target for everyone, and it is the number
- * Apple (44pt) asks for; Android wants 48.
- *
- * The glyph stays at 18dp, which is the point: Material sizes the *icon* at
- * 24dp and spends the rest on the target, so nothing about how this looks has
- * to change. What does change is the header it sits in, which grows to 68dp —
- * within a dp of M3's 64dp small app bar, and taller than the 42dp it was.
+ * The frame is 44dp rather than hitSlop because hitSlop does not grow the
+ * accessibility node: a screen-reader user got the unpadded 18dp box.
  */
 export function BackLink({
   label,

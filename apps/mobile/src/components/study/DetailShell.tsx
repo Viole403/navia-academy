@@ -11,17 +11,10 @@ import { FlexGap } from "./press"
 /**
  * The detail shell: the frame every pushed detail screen sits in.
  *
- * Its one non-obvious rule is a **guarded** back arrow. A screen reached by deep
- * link, by a full reload, or as the first entry after a redirect has nothing to
- * pop, and `router.back()` then silently does nothing — a back arrow that looks
- * fine and is simply inert. So: `canGoBack ? back : replace(parent)`. That rule
- * used to live in a hand-rolled Pressable here, which meant this shell had its
- * own copy of the affordance to drift: it kept a raw "←" glyph in a Text, with
- * no accessibility role, no label, and a target of about 12 by 18dp. The arrow
- * is `BackLink` now, so the guard and the target size are one thing.
- *
- * Detail views are pushed rather than switched to, so the browse screen stays
- * mounted underneath and its search text and filters survive the round trip.
+ * Back is guarded — a deep link or a full reload leaves an empty stack, where
+ * `router.back()` does nothing, so a correct-looking arrow can be inert. Detail
+ * views are pushed rather than switched to, so the browse screen underneath
+ * stays mounted and its search text and filters survive the round trip.
  */
 export function DetailShell({
   title,
