@@ -13,6 +13,7 @@ import { paperType } from "@/theme/paperType"
 import { community } from "@/api/endpoints"
 import { motifChar } from "@/lib/languages"
 import { useOnboardingStore } from "@/store/onboarding"
+import { useGuardedBack } from "@/hooks/useGuardedBack"
 import { useT } from "@/i18n"
 
 type Mode = "contributor" | "sponsor"
@@ -22,6 +23,7 @@ export default function Apply() {
   const { column } = useContentLayout()
   const router = useRouter()
   const t = useT()
+  const goBack = useGuardedBack("/(tabs)")
   const language = useOnboardingStore((s) => s.language)
   const [mode, setMode] = useState<Mode>("contributor")
   const [name, setName] = useState("")
@@ -52,8 +54,7 @@ export default function Apply() {
           // Guarded like the header arrow: reaching /apply by deep link leaves
           // nothing to pop, and `router.back()` on an empty stack does nothing
           // at all — a dismiss button that looks live and is dead.
-          onPress: () =>
-            router.canGoBack() ? router.back() : router.replace("/(tabs)"),
+          onPress: goBack,
         },
       ])
     },

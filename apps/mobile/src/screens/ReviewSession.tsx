@@ -27,6 +27,7 @@ import { hasHan } from "@/lib/han"
 import { headword, reading, isCharScript } from "@/lib/languages"
 import { useOnboardingStore } from "@/store/onboarding"
 import { useTts } from "@/hooks/useTts"
+import { useGuardedBack } from "@/hooks/useGuardedBack"
 import { useT } from "@/i18n"
 import { playSound } from "@/utils/sound"
 import { careful, tap, thud, thunk } from "@/utils/feedback"
@@ -60,6 +61,7 @@ export function ReviewSession() {
   const { paper } = useTheme()
   const faces = useContentFaces()
   const t = useT()
+  const goBack = useGuardedBack("/review")
   const router = useRouter()
   const qc = useQueryClient()
   const language = useOnboardingStore((s) => s.language)
@@ -162,11 +164,6 @@ export function ReviewSession() {
   useEffect(() => {
     refreshPending().catch(() => {})
   }, [refreshPending, reviewM.isSuccess])
-
-  const goBack = useCallback(() => {
-    if (router.canGoBack()) router.back()
-    else router.replace("/review")
-  }, [router])
 
   // Listening options come from the due set itself, so a wrong answer is never
   // another card in the same session. An SrsCard carries only an item_id, so the

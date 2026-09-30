@@ -36,7 +36,6 @@ export function ConversationView() {
   const { column: columnWidth } = useContentLayout()
   const faces = useContentFaces()
   const t = useT()
-  const router = useRouter()
   const { id } = useLocalSearchParams<{ id?: string }>()
   const language = useOnboardingStore((s) => s.language)
   const tts = useTts()
@@ -46,11 +45,6 @@ export function ConversationView() {
     queryFn: () => loadConversations(language),
   })
   const conv = (convQ.data ?? []).find((c) => c.id === id)
-
-  const goBack = () => {
-    if (router.canGoBack()) router.back()
-    else router.replace("/library")
-  }
 
   const playAll = () => {
     if (!conv) return

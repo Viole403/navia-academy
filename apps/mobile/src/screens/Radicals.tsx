@@ -14,6 +14,7 @@ import { PaperCard, QuietPill } from "@/components/study/PaperCard"
 import { FlexGap } from "@/components/study/press"
 import { useTheme } from "@/theme/ThemeProvider"
 import { useContentFaces } from "@/hooks/useContentFaces"
+import { useGuardedBack } from "@/hooks/useGuardedBack"
 import { useContentLayout } from "@/theme/layout"
 import { paperType, families, hanziType } from "@/theme/paperType"
 import { loadCharacters } from "@/lib/content-data"
@@ -41,6 +42,7 @@ import type { HanziChar } from "@/types/api"
  */
 export function Radicals() {
   const { paper } = useTheme()
+  const goBack = useGuardedBack("/characters")
   const faces = useContentFaces()
   const t = useT()
   const router = useRouter()
@@ -262,11 +264,7 @@ export function Radicals() {
             <QuietPill
               title={t("char.openAll")}
               tone="challenge"
-              onPress={() =>
-                router.canGoBack()
-                  ? router.back()
-                  : router.replace("/characters" as never)
-              }
+              onPress={goBack}
             />
           </PaperCard>
 

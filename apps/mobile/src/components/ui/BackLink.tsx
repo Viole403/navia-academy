@@ -1,7 +1,7 @@
 import { Pressable, Text } from "react-native"
-import { useRouter } from "expo-router"
 import { Ionicons } from "@expo/vector-icons"
 import { useTheme } from "@/theme/ThemeProvider"
+import { useGuardedBack } from "@/hooks/useGuardedBack"
 import { paperType, families } from "@/theme/paperType"
 
 /**
@@ -33,15 +33,13 @@ export function BackLink({
   tint?: string
 }) {
   const { paper } = useTheme()
-  const router = useRouter()
+  const goBack = useGuardedBack(fallback)
   const colour = tint ?? paper.inkSoft
   return (
     <Pressable
       accessibilityRole="button"
       accessibilityLabel={label}
-      onPress={() =>
-        router.canGoBack() ? router.back() : router.replace(fallback as never)
-      }
+      onPress={goBack}
       style={{
         flexDirection: "row",
         alignItems: "center",

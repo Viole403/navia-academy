@@ -32,7 +32,6 @@ export function GrammarView() {
   const { column: columnWidth } = useContentLayout()
   const faces = useContentFaces()
   const t = useT()
-  const router = useRouter()
   const qc = useQueryClient()
   const { id } = useLocalSearchParams<{ id?: string }>()
   const language = useOnboardingStore((s) => s.language)
@@ -50,11 +49,6 @@ export function GrammarView() {
       qc.invalidateQueries({ queryKey: ["srs-stats"] })
     },
   })
-
-  const goBack = () => {
-    if (router.canGoBack()) router.back()
-    else router.replace("/library")
-  }
 
   return (
     <SafeAreaView

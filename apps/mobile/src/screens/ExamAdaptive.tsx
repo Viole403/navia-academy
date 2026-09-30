@@ -52,7 +52,6 @@ export function ExamAdaptive() {
   const { column: columnWidth } = useContentLayout()
   const faces = useContentFaces()
   const t = useT()
-  const router = useRouter()
   const qc = useQueryClient()
   const language = useOnboardingStore((s) => s.language)
   const examType = useOnboardingStore((s) => s.examType)
@@ -214,11 +213,6 @@ export function ExamAdaptive() {
     // signals that there is something new to send.
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [finished, exam.result, savedResult])
-
-  const goBack = () => {
-    if (router.canGoBack()) router.back()
-    else router.replace("/(tabs)/exam")
-  }
 
   const result = savedResult ?? exam.result
   const band = result ? cefrBandOf(result.eloEstimate) : null

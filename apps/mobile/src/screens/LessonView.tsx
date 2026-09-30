@@ -9,6 +9,7 @@ import { ProgressBar } from "@/components/ui/ProgressBar"
 import { LiftedFace, PaperCard } from "@/components/study/PaperCard"
 import { PressableScale } from "@/components/study/press"
 import { useContentFaces } from "@/hooks/useContentFaces"
+import { useGuardedBack } from "@/hooks/useGuardedBack"
 import { useContentLayout } from "@/theme/layout"
 import { useTheme } from "@/theme/ThemeProvider"
 import { paperType } from "@/theme/paperType"
@@ -52,10 +53,10 @@ interface Lesson {
  */
 export function LessonView() {
   const { paper } = useTheme()
+  const goBack = useGuardedBack("/program")
   const { column: columnWidth } = useContentLayout()
   const faces = useContentFaces()
   const t = useT()
-  const router = useRouter()
   const qc = useQueryClient()
   const { id } = useLocalSearchParams<{ id?: string }>()
   const language = useOnboardingStore((s) => s.language)
@@ -80,11 +81,6 @@ export function LessonView() {
       goBack()
     },
   })
-
-  const goBack = () => {
-    if (router.canGoBack()) router.back()
-    else router.replace("/program")
-  }
 
   const current = steps[step]
   const last = steps.length > 0 && step >= steps.length - 1
