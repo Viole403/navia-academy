@@ -289,11 +289,21 @@ export function SettingsChoice({
   // Equal columns only help when the options are short and numerous. A group
   // whose labels are long — the six display modes run to "Pinyin + translation"
   // — would just get truncated, so those keep wrapping by content instead.
+  // Three or more short options read as a segmented control, so they take equal
+  // columns and fill the row: five 56dp pills left-aligned inside a full-width
+  // card look lopsided even though the gap is only 8% of the row.
+  //
+  // One or two options are left hugging their content — stretched across a row
+  // they become 147dp lozenges. Long labels are left alone too, since equal
+  // columns would truncate "Pinyin + translation".
   const longest = options.reduce((n, o) => Math.max(n, o.label.length), 0)
-  const even = Math.ceil(options.length / Math.min(options.length, 5))
-  const wraps = options.length > 5
-  const useColumns = wraps && longest <= 12
-  const wrapCols = useColumns ? Math.ceil(options.length / even) : 0
+  const useColumns = longest <= 12 && options.length >= 3
+  // Past five, columns are chosen so the rows come out even: eight time slots
+  // become 4+4 rather than filling each row greedily into 5+3.
+  const perRow = Math.min(options.length, 5)
+  const wrapCols = useColumns
+    ? Math.ceil(options.length / Math.ceil(options.length / perRow))
+    : 0
   return (
     <View
       style={{
