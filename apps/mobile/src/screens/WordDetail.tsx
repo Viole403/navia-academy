@@ -175,22 +175,6 @@ export function WordDetail() {
           </Text>
         </Pressable>
       }
-      footer={
-        <View style={{ flexDirection: "row", gap: 8 }}>
-          <View style={{ flex: 1 }}>
-            <LiftedFace
-              title={
-                tts.playing || tts.loading
-                  ? t("vocab.playing")
-                  : t("vocab.listen")
-              }
-              face={paper.lavender}
-              small
-              onPress={() => tts.play(headword(w))}
-            />
-          </View>
-        </View>
-      }
     >
       {/* Masthead: the glyph, its reading, its one gloss. */}
       <PaperCard tone="word">
@@ -380,6 +364,20 @@ export function WordDetail() {
           </View>
         </PaperCard>
       ) : null}
+
+      {/* Listen sits in the flow, under the exam mapping. As a pinned footer
+          it was fighting the system nav bar for the last stretch of screen. */}
+      <LiftedFace
+        title={
+          tts.playing || tts.loading ? t("vocab.playing") : t("vocab.listen")
+        }
+        face={paper.lavender}
+        onPress={() => {
+          tap()
+          setPlayingText(null)
+          tts.play(headword(w))
+        }}
+      />
 
       {strokesOpen ? (
         <StrokeSheet
