@@ -8,6 +8,7 @@ import {
   Text,
   View,
 } from "react-native"
+import { useState } from "react"
 import { useTheme } from "@/theme/ThemeProvider"
 import { fonts, type } from "@/theme/typography"
 import { useT } from "@/i18n"
@@ -272,6 +273,8 @@ export const GROUP_INSET = 14
 /** Space between a sub-label inside a group and the control it introduces. */
 export const GROUP_LABEL_GAP = 8
 const CHOICE_HEIGHT = 44
+/** Distance between adjacent choice pills; also subtracted from a column basis. */
+const COLUMN_GAP = 6
 
 export function SettingsChoice({
   options,
@@ -283,6 +286,7 @@ export function SettingsChoice({
   onChange: (id: string) => void
 }) {
   const { theme, paper } = useTheme()
+  const [rowWidth, setRowWidth] = useState(0)
   // A group that wraps must wrap evenly: filling each row greedily left one
   // orphan on the second row. Equal columns is what turns 8 slots into 4+4
   // rather than 5+3, and a group that fits still sizes to its own content.
@@ -304,12 +308,22 @@ export function SettingsChoice({
   const wrapCols = useColumns
     ? Math.ceil(options.length / Math.ceil(options.length / perRow))
     : 0
+  // Width is measured from the row rather than expressed as a percentage: a
+  // basis spans the full width and the gaps then land on top of it, and growing
+  // from zero did not fill the row in practice. onLayout reports the border box,
+  // so the row's own padding comes off before the gaps.
+  const usable = rowWidth - GROUP_INSET * 2
+  const columnWidth =
+    usable > 0 && wrapCols > 0
+      ? (usable - COLUMN_GAP * (wrapCols - 1)) / wrapCols
+      : 0
   return (
     <View
+      onLayout={(e) => setRowWidth(e.nativeEvent.layout.width)}
       style={{
         flexDirection: "row",
         flexWrap: "wrap",
-        gap: 6,
+        gap: COLUMN_GAP,
         paddingHorizontal: GROUP_INSET,
         paddingTop: GROUP_INSET,
         paddingBottom: GROUP_INSET,
@@ -328,9 +342,8 @@ export function SettingsChoice({
               // object wherever it appears.
               minHeight: CHOICE_HEIGHT,
               minWidth: 56,
-              flexBasis: useColumns ? `${100 / wrapCols}%` : undefined,
+              width: useColumns ? columnWidth || undefined : undefined,
               flexShrink: 0,
-              marginHorizontal: useColumns ? 3 : 0,
               paddingHorizontal: useColumns ? 8 : 12,
               paddingVertical: 10,
               borderRadius: paper.radius.pill,
