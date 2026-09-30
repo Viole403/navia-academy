@@ -32,6 +32,7 @@ import {
   headword,
   isCharScript,
   languageForExam,
+  levelLabelFor,
   motifChar,
   reading,
 } from "@/lib/languages"
@@ -178,14 +179,14 @@ export default function LibraryScreen() {
         ? ((readingsQ.data ?? []) as Reading[]).map((r) => ({
             id: r.id,
             title: r.title,
-            sub: r.summary ?? (r.level != null ? String(r.level) : ""),
+            sub: r.summary ?? levelLabelFor(examType, r.level),
           }))
         : active === "conversations"
           ? ((conversationsQ.data ?? []) as ConversationScenario[]).map(
               (c) => ({
                 id: c.id,
                 title: c.title,
-                sub: c.context ?? (c.level != null ? String(c.level) : ""),
+                sub: c.context ?? levelLabelFor(examType, c.level),
               })
             )
           : ((charactersQ.data ?? []) as HanziChar[]).map((c) => ({

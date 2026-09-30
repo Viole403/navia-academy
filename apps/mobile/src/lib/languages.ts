@@ -200,3 +200,18 @@ export function examBadgeColor(examType: string): string | undefined {
 export function examLevels(examType: string): string[] {
   return EXAM_LEVELS[examType.toLowerCase()] ?? ["1", "2", "3"]
 }
+
+/**
+ * Name a numeric content level using the active exam's own ladder, so a German
+ * conversation reads "B1" instead of a bare "2". Returns empty when there is no
+ * exam track to name it after — a bare number is not a subtitle.
+ */
+export function levelLabelFor(
+  examType: string | null | undefined,
+  level?: number | string
+): string {
+  if (!examType || level == null || level === "") return ""
+  const n = typeof level === "number" ? level : Number(level)
+  if (!Number.isFinite(n)) return String(level)
+  return examLevels(examType)[n - 1] ?? `Level ${n}`
+}
