@@ -1,15 +1,14 @@
 import type { ComponentProps, ReactNode } from "react"
 import { Ionicons } from "@expo/vector-icons"
 import {
-  Platform,
   Pressable,
   StyleSheet,
-  Switch,
   Text,
+  useWindowDimensions,
   View,
 } from "react-native"
-import { useState } from "react"
 import { useTheme } from "@/theme/ThemeProvider"
+import { AppSwitch } from "@/components/ui/AppSwitch"
 import { fonts, type } from "@/theme/typography"
 import { useT } from "@/i18n"
 import { PressableScale } from "@/components/study/press"
@@ -238,19 +237,11 @@ export function SettingsToggle({
           <Text style={[type.caption, { color: paper.inkMuted }]}>{sub}</Text>
         ) : null}
       </View>
-      <Switch
+      <AppSwitch
         value={value}
         onValueChange={onChange}
         disabled={disabled}
-        trackColor={{ false: theme.border, true: theme.accent }}
-        thumbColor={
-          Platform.OS === "ios"
-            ? undefined
-            : value
-              ? theme.surface
-              : paper.inkMuted
-        }
-        ios_backgroundColor={theme.border}
+        accessibilityLabel={title}
       />
     </RowFrame>
   )
@@ -286,7 +277,7 @@ export function SettingsChoice({
   onChange: (id: string) => void
 }) {
   const { theme, paper } = useTheme()
-  const [rowWidth, setRowWidth] = useState(0)
+  const { width: screenWidth } = useWindowDimensions()
   // A group that wraps must wrap evenly: filling each row greedily left one
   // orphan on the second row. Equal columns is what turns 8 slots into 4+4
   // rather than 5+3, and a group that fits still sizes to its own content.
@@ -305,21 +296,20 @@ export function SettingsChoice({
   // Past five, columns are chosen so the rows come out even: eight time slots
   // become 4+4 rather than filling each row greedily into 5+3.
   const perRow = Math.min(options.length, 5)
+  const wrapColsValue = useColumns
+    ? Math.ceil(options.length / Math.ceil(options.length / perRow))
+    : 0
+  // DetailShell insets 20 and the strip insets GROUP_INSET either side.
+  const usable = screenWidth - 2 * (20 + GROUP_INSET)
+  const columnWidth =
+    wrapColsValue > 0
+      ? (usable - COLUMN_GAP * (wrapColsValue - 1)) / wrapColsValue
+      : 0
   const wrapCols = useColumns
     ? Math.ceil(options.length / Math.ceil(options.length / perRow))
     : 0
-  // Width is measured from the row rather than expressed as a percentage: a
-  // basis spans the full width and the gaps then land on top of it, and growing
-  // from zero did not fill the row in practice. onLayout reports the border box,
-  // so the row's own padding comes off before the gaps.
-  const usable = rowWidth - GROUP_INSET * 2
-  const columnWidth =
-    usable > 0 && wrapCols > 0
-      ? (usable - COLUMN_GAP * (wrapCols - 1)) / wrapCols
-      : 0
   return (
     <View
-      onLayout={(e) => setRowWidth(e.nativeEvent.layout.width)}
       style={{
         flexDirection: "row",
         flexWrap: "wrap",
@@ -341,8 +331,13 @@ export function SettingsChoice({
               // Sizing to content with a fixed height makes the control the same
               // object wherever it appears.
               minHeight: CHOICE_HEIGHT,
-              minWidth: 56,
-              width: useColumns ? columnWidth || undefined : undefined,
+              minWidth: useColumns ? 0 : 56,
+              // Growing from a zero basis hands flexbox the leftover space and it
+              // divides that after the gaps. Measuring the row instead settled in
+              // two steps — pills at their minimum first, then a jump to the
+              // column width — which read as the row animating into place.
+              flexBasis: useColumns ? 0 : undefined,
+              flexGrow: useColumns ? 1 : 0,
               flexShrink: 0,
               paddingHorizontal: useColumns ? 8 : 12,
               paddingVertical: 10,

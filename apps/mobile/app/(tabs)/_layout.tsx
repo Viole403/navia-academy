@@ -5,6 +5,7 @@ import { useTheme } from "@/theme/ThemeProvider"
 import { fonts } from "@/theme/typography"
 import { useAuthStore } from "@/store/auth"
 import { useT } from "@/i18n"
+import { TabBarButton } from "@/components/ui/TabBarButton"
 
 export default function TabsLayout() {
   const { paper } = useTheme()
@@ -24,6 +25,12 @@ export default function TabsLayout() {
     <Tabs
       screenOptions={{
         headerShown: false,
+        // Both of these are how the default button asks Android for a ripple.
+        // This version has no tabBarPressColor/tabBarRippleColor, so the ripple
+        // is removed at the button instead.
+        // Cast because @react-navigation/bottom-tabs is a transitive dependency
+        // of expo-router here, so its prop type is not resolvable from the app.
+        tabBarButton: TabBarButton as never,
         // Raw theme.textDim is 2.4:1 on paper.paper — the faint grey the icons had.
         tabBarActiveTintColor: paper.coral,
         tabBarInactiveTintColor: paper.inkMuted,

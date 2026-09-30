@@ -8,16 +8,30 @@ import type { UserSettings } from "@/types/api"
  * Every settings screen used to own its own copy of "fetch settings, keep a local
  * mirror, mutate, invalidate" — five screens, five chances to write the optimistic
  * update slightly differently and leave a toggle that flickers back after a
- * refresh. The write is also **not** optimistic here on purpose: these values are
- * server-owned and cheap to read back, and an optimistic toggle that the server
- * rejects is worse than one that waits a beat.
+ * refresh.
+ *
+ * Writes are optimistic: the cache is patched before the request goes out, so a
+ * switch moves under the finger instead of waiting out a PUT and the refetch
+ * that follows it. A rejected write restores the previous value rather than
+ * leaving the control lying about what the server holds.
  */
 export function useUserSettings() {
   const qc = useQueryClient()
   const query = useQuery({ queryKey: ["settings"], queryFn: settings.get })
   const mutation = useMutation({
     mutationFn: (patch: Partial<UserSettings>) => settings.update(patch),
-    onSuccess: () => qc.invalidateQueries({ queryKey: ["settings"] }),
+    onMutate: async (patch) => {
+      await qc.cancelQueries({ queryKey: ["settings"] })
+      const previous = qc.getQueryData<UserSettings>(["settings"])
+      qc.setQueryData<UserSettings>(["settings"], (old) =>
+        old ? { ...old, ...patch } : old
+      )
+      return { previous }
+    },
+    onError: (_err, _patch, ctx) => {
+      if (ctx?.previous) qc.setQueryData(["settings"], ctx.previous)
+    },
+    onSettled: () => qc.invalidateQueries({ queryKey: ["settings"] }),
   })
 
   return {

@@ -5,6 +5,7 @@ import {
   SettingsToggle,
   SettingsChoice,
   SettingsState,
+  GROUP_INSET,
 } from "@/components/settings/SettingsGroup"
 import { useUserSettings } from "@/hooks/useUserSettings"
 import { useTheme } from "@/theme/ThemeProvider"
@@ -53,23 +54,30 @@ export default function SettingsReminders() {
   const time = d?.reminder_time ?? "20:00"
 
   const enable = async (next: boolean) => {
-    if (!next) {
-      s.set({ daily_reminder: false })
-      await cancelStreakReminder()
-      return
+    // Flip first, then do the slow parts. The permission prompt and the schedule
+    // call are native round trips that took seconds, and the switch used to sit
+    // still through all of it.
+    s.set({ daily_reminder: next })
+    try {
+      if (!next) {
+        await cancelStreakReminder()
+        return
+      }
+      const granted = await requestPermissions()
+      if (!granted) {
+        // The switch already reads on, so put it back: a setting that claims to be
+        // on while the OS has said no is a lie the user will debug.
+        s.set({ daily_reminder: false })
+        Alert.alert(t("set.noPermissionTitle"), t("set.noPermissionBody"), [
+          { text: t("common.ok"), style: "cancel" },
+        ])
+        return
+      }
+      const { hour, minute } = slotToParts(time)
+      await scheduleDailyStreakReminder(hour, minute)
+    } catch {
+      s.set({ daily_reminder: !next })
     }
-    const granted = await requestPermissions()
-    if (!granted) {
-      // Say what happened, and leave the stored preference off — a setting that
-      // claims to be on while the OS has said no is a lie the user will debug.
-      Alert.alert(t("set.noPermissionTitle"), t("set.noPermissionBody"), [
-        { text: t("common.ok"), style: "cancel" },
-      ])
-      return
-    }
-    const { hour, minute } = slotToParts(time)
-    await scheduleDailyStreakReminder(hour, minute)
-    s.set({ daily_reminder: true })
   }
 
   const changeTime = async (slot: string) => {
@@ -97,9 +105,11 @@ export default function SettingsReminders() {
           />
         </SettingsGroup>
 
+        {/* The off-state message lives inside the card only. It was also passed as
+            the group hint, so it rendered twice, 8dp apart, directly under itself. */}
         <SettingsGroup
           title={t("profile.reminderTime")}
-          hint={on ? t("set.timeHint") : t("set.timeOffHint")}
+          hint={on ? t("set.timeHint") : undefined}
         >
           {on ? (
             <SettingsChoice
@@ -108,7 +118,13 @@ export default function SettingsReminders() {
               onChange={changeTime}
             />
           ) : (
-            <View style={{ paddingHorizontal: 14, paddingBottom: 14 }}>
+            <View
+              style={{
+                paddingHorizontal: GROUP_INSET,
+                paddingTop: GROUP_INSET,
+                paddingBottom: GROUP_INSET,
+              }}
+            >
               <Text style={{ color: paper.inkMuted, fontSize: 13 }}>
                 {t("set.timeOffHint")}
               </Text>
