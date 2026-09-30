@@ -6,7 +6,7 @@ import { useMutation } from "@tanstack/react-query"
 import { Input } from "@/components/ui/Input"
 import { Motif } from "@/components/ui/Motif"
 import { LiftedFace, QuietPill } from "@/components/study/PaperCard"
-import { PressableScale } from "@/components/study/press"
+import { BackLink } from "@/components/ui/BackLink"
 import { useTheme } from "@/theme/ThemeProvider"
 import { useContentLayout } from "@/theme/layout"
 import { paperType } from "@/theme/paperType"
@@ -47,7 +47,14 @@ export default function Apply() {
     },
     onSuccess: () => {
       Alert.alert(t("apply.applied"), t("apply.appliedMsg"), [
-        { text: t("apply.ok"), onPress: () => router.back() },
+        {
+          text: t("apply.ok"),
+          // Guarded like the header arrow: reaching /apply by deep link leaves
+          // nothing to pop, and `router.back()` on an empty stack does nothing
+          // at all — a dismiss button that looks live and is dead.
+          onPress: () =>
+            router.canGoBack() ? router.back() : router.replace("/(tabs)"),
+        },
       ])
     },
     onError: (e: unknown) => {
@@ -84,14 +91,7 @@ export default function Apply() {
             gap: 12,
           }}
         >
-          <PressableScale
-            onPress={() => router.back()}
-            accessibilityLabel={t("apply.back")}
-          >
-            <Text style={[paperType.link, { color: paper.inkMuted }]}>
-              {t("apply.back")}
-            </Text>
-          </PressableScale>
+          <BackLink label={t("common.back")} fallback="/(tabs)" />
           <Text style={[paperType.label, { color: paper.inkMuted }]}>
             {t("apply.kicker")}
           </Text>

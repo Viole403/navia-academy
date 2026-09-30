@@ -1,11 +1,5 @@
 import { useMemo } from "react"
-import {
-  Pressable,
-  ScrollView,
-  Text,
-  View,
-  useWindowDimensions,
-} from "react-native"
+import { ScrollView, Text, View, useWindowDimensions } from "react-native"
 import { SafeAreaView } from "react-native-safe-area-context"
 import { useRouter } from "expo-router"
 import { useQuery } from "@tanstack/react-query"
@@ -17,6 +11,8 @@ import { loadVocabulary, loadReadings } from "@/lib/content-data"
 import { headword } from "@/lib/languages"
 import { segmentText, type TextSegment } from "@/lib/segment"
 import { useOnboardingStore } from "@/store/onboarding"
+import { useT } from "@/i18n"
+import { BackLink } from "@/components/ui/BackLink"
 import { decorArt, artRatio } from "./art"
 import { tick } from "@/utils/feedback"
 
@@ -133,6 +129,7 @@ export function ReadingShell({
   children: React.ReactNode
 }) {
   const { paper } = useTheme()
+  const t = useT()
   const router = useRouter()
   const { column: columnWidth } = useContentLayout()
 
@@ -150,22 +147,7 @@ export function ReadingShell({
           paddingVertical: 12,
         }}
       >
-        <Pressable
-          onPress={() =>
-            router.canGoBack()
-              ? router.back()
-              : router.replace(fallback as never)
-          }
-        >
-          <Text
-            style={[
-              paperType.link,
-              { color: paper.inkSoft, fontFamily: families.nunitoBold },
-            ]}
-          >
-            ←
-          </Text>
-        </Pressable>
+        <BackLink label={t("common.back")} fallback={fallback} />
         {!!kicker && (
           <Text
             numberOfLines={1}

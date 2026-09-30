@@ -1,16 +1,11 @@
 import type { ReactNode } from "react"
-import {
-  Pressable,
-  ScrollView,
-  Text,
-  View,
-  useWindowDimensions,
-} from "react-native"
+import { ScrollView, Text, View } from "react-native"
 import { SafeAreaView } from "react-native-safe-area-context"
-import { useRouter } from "expo-router"
 import { useTheme } from "@/theme/ThemeProvider"
 import { useContentLayout } from "@/theme/layout"
 import { paperType, families } from "@/theme/paperType"
+import { useT } from "@/i18n"
+import { BackLink } from "@/components/ui/BackLink"
 import { FlexGap } from "./press"
 
 /**
@@ -19,7 +14,11 @@ import { FlexGap } from "./press"
  * Its one non-obvious rule is a **guarded** back arrow. A screen reached by deep
  * link, by a full reload, or as the first entry after a redirect has nothing to
  * pop, and `router.back()` then silently does nothing — a back arrow that looks
- * fine and is simply inert. So: `canGoBack ? back : replace(parent)`.
+ * fine and is simply inert. So: `canGoBack ? back : replace(parent)`. That rule
+ * used to live in a hand-rolled Pressable here, which meant this shell had its
+ * own copy of the affordance to drift: it kept a raw "←" glyph in a Text, with
+ * no accessibility role, no label, and a target of about 12 by 18dp. The arrow
+ * is `BackLink` now, so the guard and the target size are one thing.
  *
  * Detail views are pushed rather than switched to, so the browse screen stays
  * mounted underneath and its search text and filters survive the round trip.
@@ -41,7 +40,7 @@ export function DetailShell({
   footer?: ReactNode
 }) {
   const { paper } = useTheme()
-  const router = useRouter()
+  const t = useT()
   const { column: columnWidth } = useContentLayout()
 
   return (
@@ -58,22 +57,7 @@ export function DetailShell({
           paddingVertical: 12,
         }}
       >
-        <Pressable
-          onPress={() =>
-            router.canGoBack()
-              ? router.back()
-              : router.replace(fallback as never)
-          }
-        >
-          <Text
-            style={[
-              paperType.link,
-              { color: paper.inkSoft, fontFamily: families.nunitoBold },
-            ]}
-          >
-            ←
-          </Text>
-        </Pressable>
+        <BackLink label={t("common.back")} fallback={fallback} />
         {!!kicker && (
           <Text
             numberOfLines={1}
