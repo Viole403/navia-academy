@@ -248,7 +248,6 @@ const en = {
   "set.streakAlerts": "Streak rescue",
   "set.streakAlertsHint": "A nudge only when a streak is about to end",
   "set.chineseDisplay": "Reading aids",
-  "set.customCount": "Custom…",
   "set.chineseDisplayHint":
     "Which readings sit under the characters. Pinyin transliterates; zhuyin is the script Mandarin itself writes.",
   "set.displayMode": "Display mode",
