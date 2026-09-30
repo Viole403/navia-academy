@@ -442,15 +442,26 @@ function MetaField({
   value: string
   capitalize?: boolean
 }) {
-  const { theme, paper } = useTheme()
+  const { theme } = useTheme()
   return (
-    <View style={{ flex: 1, gap: 4 }}>
-      <Text style={[type.labelSm, { color: theme.textMuted }]}>{label}</Text>
+    // Centred, not left-aligned. Three equal cells with left-aligned content
+    // push the whole block of text to one side: the last label ends well short
+    // of the row's right edge, so the row reads as a left-heavy mass with a
+    // gutter beside it. `space-between` on the parent would fix the outer two
+    // and leave the middle floating, which reads as emphasis the row does not
+    // mean — these are three peers, not a hero with two captions.
+    <View style={{ flex: 1, gap: 4, alignItems: "center" }}>
+      <Text
+        style={[type.labelSm, { color: theme.textMuted, textAlign: "center" }]}
+      >
+        {label}
+      </Text>
       <Text
         style={{
           fontFamily: fonts.serif,
           fontSize: 18,
           color: theme.text,
+          textAlign: "center",
           textTransform: capitalize ? "capitalize" : "none",
         }}
       >
