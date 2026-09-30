@@ -20,7 +20,7 @@ import { useContentLayout } from "@/theme/layout"
 import { ReadingAid } from "@/components/study/ReadingAid"
 import { paperType, families, hanziType } from "@/theme/paperType"
 import { loadVocabulary } from "@/lib/content-data"
-import { rankVocabulary } from "@/lib/dictionary-rank"
+import { rankVocabulary, starterVocabulary } from "@/lib/dictionary-rank"
 import { CATEGORIES, categoryOf, type CategoryId } from "@/lib/wordCategories"
 import {
   examDisplayName,
@@ -114,17 +114,15 @@ export function Dictionary() {
   }, [pool, query])
 
   const starter = useMemo(
-    () =>
-      all
-        .filter((w) => {
-          const lv = w.examMappings?.[examType]
-          return lv !== undefined && Number(lv) <= 1
-        })
-        .slice(0, 8),
+    () => starterVocabulary(all, examType),
     [all, examType]
   )
 
-  const searching = query.trim().length > 0
+  // Narrowed by any of the three controls. Keying this off the query alone left
+  // the level and category filters rendering nothing, because the results list
+  // is the only thing they feed.
+  const searching =
+    query.trim().length > 0 || level !== null || category !== null
 
   return (
     <SafeAreaView

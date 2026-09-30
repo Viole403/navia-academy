@@ -119,11 +119,6 @@ export default function LearnTab() {
       route: "/library",
     },
     {
-      title: t("learn.program"),
-      body: `${t("learn.programPrefix")} ${examDisplayName(examType)} ${t("learn.programSuffix")}`,
-      route: "/program",
-    },
-    {
       title: t("learn.listening"),
       body: t("learn.listeningDesc"),
       route: "/listening-drill",

@@ -1,4 +1,4 @@
-import { headword, reading } from "@/lib/languages"
+import { examLevels, headword, reading } from "@/lib/languages"
 import type { VocabWord } from "@/types/api"
 
 /**
@@ -81,4 +81,25 @@ export function rankVocabulary(
       b.s - a.s || a.tie.length - b.tie.length || (a.tie < b.tie ? -1 : 1)
   )
   return scored.map((s) => s.w)
+}
+
+/**
+ * The starter deck: the easiest rung of the active exam's own ladder.
+ *
+ * Level names are only numeric for HSK. Goethe ladders read "A1" and JLPT reads
+ * "N5", so a numeric comparison silently matched nothing and the card rendered
+ * as an empty dictionary for every language except Chinese.
+ */
+export function starterVocabulary(
+  words: VocabWord[],
+  examType: string,
+  limit = 8
+): VocabWord[] {
+  const first = examLevels(examType)[0]?.toUpperCase()
+  if (!first) return []
+  return words
+    .filter(
+      (w) => String(w.examMappings?.[examType] ?? "").toUpperCase() === first
+    )
+    .slice(0, limit)
 }
