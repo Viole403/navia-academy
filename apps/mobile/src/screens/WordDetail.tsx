@@ -69,6 +69,7 @@ export function WordDetail() {
   const [strokesOpen, setStrokesOpen] = useState(false)
   const [hintKey, setHintKey] = useState(0)
   const [revealKey, setRevealKey] = useState(0)
+  const [playingText, setPlayingText] = useState<string | null>(null)
 
   const wordQ = useQuery({
     queryKey: ["vocab-word", id],
@@ -270,29 +271,54 @@ export function WordDetail() {
       {examples.length > 0 ? (
         <PaperCard tone="week" title={t("wd.examples")}>
           <View style={{ gap: 14 }}>
-            {examples.slice(0, 3).map((e, i) => (
-              <Pressable
-                key={i}
-                onPress={() => tts.play(e.hanzi ?? e.text ?? "")}
-                style={{ gap: 3 }}
-              >
-                <Text
-                  style={{
-                    fontFamily: faces.display,
-                    ...hanziType(20),
-                    color: paper.ink,
+            {examples.slice(0, 3).map((e, i) => {
+              const line = e.hanzi ?? e.text ?? ""
+              const speaking =
+                playingText === line && (tts.playing || tts.loading)
+              return (
+                <Pressable
+                  key={i}
+                  onPress={() => {
+                    tap()
+                    setPlayingText(line)
+                    tts.play(line)
                   }}
+                  style={{ gap: 3 }}
                 >
-                  {e.hanzi ?? e.text ?? ""}
-                </Text>
-                <ReadingAid
-                  pinyin={e.pinyin}
-                  translation={e.translation}
-                  size="label"
-                  translationColor={paper.inkSoft}
-                />
-              </Pressable>
-            ))}
+                  <View
+                    style={{
+                      flexDirection: "row",
+                      alignItems: "center",
+                      gap: 8,
+                    }}
+                  >
+                    <Text
+                      style={{
+                        fontFamily: faces.display,
+                        ...hanziType(20),
+                        color: paper.ink,
+                        flex: 1,
+                      }}
+                    >
+                      {line}
+                    </Text>
+                    {/* The sentence is already in the voice manifest, so it is
+                        playable — it just has to look playable. */}
+                    <Ionicons
+                      name={speaking ? "volume-high" : "volume-medium-outline"}
+                      size={15}
+                      color={speaking ? paper.coral : paper.inkMuted}
+                    />
+                  </View>
+                  <ReadingAid
+                    pinyin={e.pinyin}
+                    translation={e.translation}
+                    size="label"
+                    translationColor={paper.inkSoft}
+                  />
+                </Pressable>
+              )
+            })}
           </View>
         </PaperCard>
       ) : null}

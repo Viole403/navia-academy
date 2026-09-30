@@ -94,8 +94,9 @@ export function DetailShell({
             paddingHorizontal: 20,
             paddingTop: 12,
             // The root only claims the top edge, so the footer owns the bottom
-            // inset. A flat 28 left the action row under a 3-button nav bar.
-            paddingBottom: insets.bottom + 12,
+            // inset. Measured on a 3-button nav device the flat pad left only
+            // ~8dp of daylight above the bar, so the clearance is explicit.
+            paddingBottom: Math.max(insets.bottom + 20, 32),
             backgroundColor: paper.paper,
             borderTopWidth: 1,
             borderTopColor: paper.line,
