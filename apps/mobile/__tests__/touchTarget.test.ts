@@ -23,6 +23,7 @@ import { describe, it, expect } from "vitest"
 const ROOTS = ["app", "src"]
 const SOURCES = /\.tsx?$/
 const BACK_LINK = "src/components/ui/BackLink.tsx"
+const GUARDED_BACK = "src/hooks/useGuardedBack.ts"
 
 function walk(dir: string, out: string[] = []): string[] {
   for (const entry of readdirSync(dir)) {
@@ -61,25 +62,15 @@ describe("the back affordance is one component with one target", () => {
     expect(typed).toEqual([])
   })
 
-  it("adds no seventh copy of the guarded back", () => {
-    // A ratchet, not an assertion of taste. Six screens need to navigate back
-    // from somewhere other than the header — a footer pill, a mutation's success
-    // handler — so each carries its own `goBack`. That is duplication worth
-    // collapsing into a hook eventually; it is not a reason to fail a build
-    // today. What must not happen is a seventh copy appearing unnoticed, which
-    // is how DetailShell came to have an arrow with no target and no label.
-    const copies = files
-      .filter((f) => f !== BACK_LINK && /\bcanGoBack\b/.test(read(f)))
+  it("keeps the canGoBack guard in useGuardedBack alone", () => {
+    // Six screens had each written their own copy of these four lines, and
+    // three of the six were never called — duplication that nobody was
+    // following. Now the rule has exactly one home, so a second copy is a bug
+    // rather than a matter of taste.
+    const elsewhere = files
+      .filter((f) => f !== GUARDED_BACK && /\bcanGoBack\b/.test(read(f)))
       .sort()
-    expect(copies).toEqual([
-      "app/apply.tsx",
-      "src/screens/ConversationView.tsx",
-      "src/screens/ExamAdaptive.tsx",
-      "src/screens/GrammarView.tsx",
-      "src/screens/LessonView.tsx",
-      "src/screens/Radicals.tsx",
-      "src/screens/ReviewSession.tsx",
-    ])
+    expect(elsewhere).toEqual([])
   })
 
   it("gives BackLink a 44dp frame rather than hitSlop", () => {
@@ -92,8 +83,9 @@ describe("the back affordance is one component with one target", () => {
   })
 
   it("actually scans the app", () => {
-    // A scan that silently read nothing would pass the three tests above forever.
+    // A scan that silently read nothing would pass the tests above forever.
     expect(files.length).toBeGreaterThan(50)
     expect(files).toContain(BACK_LINK)
+    expect(files).toContain(GUARDED_BACK)
   })
 })
