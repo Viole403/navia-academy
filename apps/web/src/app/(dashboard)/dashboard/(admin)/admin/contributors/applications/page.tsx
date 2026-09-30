@@ -22,6 +22,7 @@ export default function AdminApplicationsPage() {
   const { user } = useAuth()
   const [data, setData] = useState<Application[]>([])
   const [loading, setLoading] = useState(true)
+  const [error, setError] = useState<string | null>(null)
 
   const fetchData = useCallback(() => {
     authFetch(`/api/v1/contributors/applications`)
@@ -36,11 +37,22 @@ export default function AdminApplicationsPage() {
   }, [fetchData])
 
   const review = async (id: string, status: "APPROVED" | "REJECTED") => {
-    await authFetch(`/api/v1/contributors/applications/${id}`, {
-      method: "PUT",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ status, reviewed_by: user?.uid ?? "unknown" }),
-    })
+    // The `/review` segment is the route; without it the PUT 404s, and because
+    // the response was never checked the button just looked inert.
+    const res = await authFetch(
+      `/api/v1/contributors/applications/${id}/review`,
+      {
+        method: "PUT",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ status, reviewed_by: user?.uid ?? "unknown" }),
+      }
+    )
+    if (!res.ok) {
+      const body = await res.json().catch(() => ({}))
+      setError(body?.error?.message ?? `Request failed: ${res.status}`)
+      return
+    }
+    setError(null)
     fetchData()
   }
 
@@ -54,6 +66,8 @@ export default function AdminApplicationsPage() {
           Review and manage pending applications.
         </p>
       </div>
+
+      {error && <p className="mb-4 text-sm font-medium text-danger">{error}</p>}
 
       {loading ? (
         <Spinner />
