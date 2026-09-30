@@ -272,6 +272,13 @@ export function SettingsToggle({
  * used to sit 2dp above the control below it, which read as touching.
  */
 export const GROUP_INSET = 14
+/** Sentinel id for the Custom row, which is drawn but never written. */
+const CUSTOM_ID = "\u0000custom"
+
+function clampNum(n: number, lo: number, hi: number): number {
+  if (!Number.isFinite(n)) return lo
+  return Math.min(hi, Math.max(lo, n))
+}
 /** Space between a sub-label inside a group and the control it introduces. */
 export const GROUP_LABEL_GAP = 8
 const CHOICE_HEIGHT = 44
@@ -290,15 +297,19 @@ export function SettingsChoice({
 }) {
   const t = useT()
   const [editing, setEditing] = useState(false)
-  const presetIds = options.map((o) => o.id)
-  const isPreset = value !== undefined && presetIds.includes(value)
   const { theme, paper } = useTheme()
-  // A group that wraps must wrap evenly: filling each row greedily left one
-  // orphan on the second row. Equal columns is what turns 8 slots into 4+4
-  // rather than 5+3, and a group that fits still sizes to its own content.
-  // Equal columns only help when the options are short and numerous. A group
-  // whose labels are long — the six display modes run to "Pinyin + translation"
-  // — would just get truncated, so those keep wrapping by content instead.
+  // Custom joins the same row rather than sitting beside it, so the count that
+  // decides wrapping is the count actually drawn.
+  // Custom draws on its own full-width row below the presets. Appended to the
+  // same row it became the odd one out — a lone pill on a second line, which
+  // reads as an orphan rather than a deliberate action.
+  const rows: { id: string; label: string; tint?: string }[] = custom
+    ? [...options, { id: CUSTOM_ID, label: custom.label, tint: theme.accent }]
+    : options
+  // Equal columns only help when the options are short and numerous: it turns
+  // eight time slots into 4+4 instead of 5+3. A group whose labels are long —
+  // the six display modes run to "Pinyin + translation" — would be truncated,
+  // so those keep wrapping by content instead.
   const longest = options.reduce((n, o) => Math.max(n, o.label.length), 0)
   const even = Math.ceil(options.length / Math.min(options.length, 5))
   const wraps = options.length > 5
@@ -317,10 +328,22 @@ export function SettingsChoice({
         }}
       >
         <TextInput
-          value={value ?? ""}
+          autoFocus
+          selectTextOnFocus
+          // A stored value below the floor predates the clamp; showing the raw
+          // number would present 0 as a choice the user never made.
+          value={
+            value === undefined
+              ? ""
+              : String(clampNum(Number(value), custom.min, custom.max))
+          }
           onChangeText={(t) => {
-            const n = Number(t.replace(/[^0-9]/g, ""))
-            if (Number.isFinite(n)) onChange(String(n))
+            const digits = t.replace(/[^0-9]/g, "")
+            // An empty field is not zero; writing it would silently store 0.
+            if (digits === "") return
+            onChange(
+              String(Math.min(custom.max, Math.max(custom.min, Number(digits))))
+            )
           }}
           keyboardType="number-pad"
           placeholder={String(custom.min)}
@@ -377,24 +400,19 @@ export function SettingsChoice({
         paddingBottom: GROUP_INSET,
       }}
     >
-      {custom ? (
-        <QuietPill
-          title={custom.label}
-          tone="week"
-          style={
-            !isPreset && value !== undefined
-              ? { borderColor: theme.accent, backgroundColor: paper.cardAlt }
-              : undefined
-          }
-          onPress={() => setEditing(true)}
-        />
-      ) : null}
-      {options.map((o) => {
+      {rows.map((o) => {
         const selected = value === o.id
+        const isCustom = o.id === CUSTOM_ID
         return (
           <PressableScale
             key={o.id}
-            onPress={() => onChange(o.id)}
+            onPress={() => {
+              if (o.id === CUSTOM_ID) {
+                setEditing(true)
+                return
+              }
+              onChange(o.id)
+            }}
             style={{
               // flex:1 made every group stretch to fill, so a 2-option row and a
               // 5-option row on the same screen produced pills 147dp and 55dp wide.
@@ -402,7 +420,13 @@ export function SettingsChoice({
               // object wherever it appears.
               minHeight: CHOICE_HEIGHT,
               minWidth: 56,
-              flexBasis: useColumns ? `${100 / wrapCols}%` : undefined,
+              // 100% of the row's main axis puts Custom on a line of its own;
+              // alignSelf only stretches the cross axis, so it did nothing here.
+              flexBasis: isCustom
+                ? "100%"
+                : useColumns
+                  ? `${100 / wrapCols}%`
+                  : undefined,
               flexShrink: 0,
               marginHorizontal: useColumns ? 3 : 0,
               paddingHorizontal: useColumns ? 8 : 12,
