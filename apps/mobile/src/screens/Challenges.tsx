@@ -1,12 +1,12 @@
-import { useEffect, useMemo, useRef, useState } from "react"
+import { useMemo, useRef, useState } from "react"
 import {
   Animated,
   Easing,
   Platform,
   Pressable,
+  ScrollView,
   Text,
   View,
-  useWindowDimensions,
 } from "react-native"
 import { SafeAreaView } from "react-native-safe-area-context"
 import { useRouter } from "expo-router"
@@ -100,14 +100,11 @@ export function Challenges() {
     .reduce((n, s) => n + (s.xp ?? 0), 0)
 
   // Completion is durable for the life of the install, per challenge id.
+  // `claim` below is the only writer — an empty `claimed` meant nothing could
+  // ever reach the foot of the list, and the whole four-state card was three.
   const [claimed, setClaimed] = useState<string[]>([])
-  const hydrated = useRef(false)
-  useEffect(() => {
-    // Nothing to read on mount for now — the set starts empty and the screen
-    // derives `claimable` from live numbers, so a challenge that is genuinely
-    // complete never shows a button.
-    hydrated.current = true
-  }, [])
+  const markClaimed = (id: string) =>
+    setClaimed((prev) => (prev.includes(id) ? prev : [...prev, id]))
 
   const challenges = useMemo<Challenge[]>(
     () => [
@@ -178,6 +175,28 @@ export function Challenges() {
         glyph: "積",
       },
       {
+        id: "xp-5000",
+        daily: false,
+        title: t("chal.xp5000"),
+        description: t("chal.xpDesc", { n: 5000 }),
+        value: Math.min(xp, 5000),
+        target: 5000,
+        route: "/progress",
+        tone: "word",
+        glyph: "積",
+      },
+      {
+        id: "xp-10000",
+        daily: false,
+        title: t("chal.xp10000"),
+        description: t("chal.xpDesc", { n: 10000 }),
+        value: Math.min(xp, 10000),
+        target: 10000,
+        route: "/progress",
+        tone: "word",
+        glyph: "積",
+      },
+      {
         id: "badge-1",
         daily: false,
         title: t("chal.badge"),
@@ -229,37 +248,27 @@ export function Challenges() {
 
       <ChallengeList
         items={running}
+        finished={finished}
+        onClaim={markClaimed}
         stateOf={stateOf}
         statsDue={statsQ.data?.due ?? due}
         reviewsToday={reviewsToday}
       />
-
-      {finished.length > 0 ? (
-        <View
-          style={{
-            width: columnWidth,
-            alignSelf: "center",
-            paddingHorizontal: 20,
-            gap: 13,
-            marginTop: 4,
-          }}
-        >
-          {finished.map((c) => (
-            <ChallengeRow key={c.id} challenge={c} state="claimed" />
-          ))}
-        </View>
-      ) : null}
     </SafeAreaView>
   )
 }
 
 function ChallengeList({
   items,
+  finished,
+  onClaim,
   stateOf,
   statsDue,
   reviewsToday,
 }: {
   items: Challenge[]
+  finished: Challenge[]
+  onClaim: (id: string) => void
   stateOf: (c: Challenge) => State
   statsDue: number
   reviewsToday: number
@@ -269,12 +278,15 @@ function ChallengeList({
   const { column: columnWidth } = useContentLayout()
 
   return (
-    <View style={{ flex: 1 }}>
+    <ScrollView
+      contentContainerStyle={{ flexGrow: 1, alignItems: "center" }}
+      showsVerticalScrollIndicator={false}
+    >
       <View
         style={{
           width: columnWidth,
-          alignSelf: "center",
           padding: 20,
+          paddingBottom: 48,
           gap: 14,
         }}
       >
@@ -345,21 +357,54 @@ function ChallengeList({
         </PaperCard>
 
         {items.map((c) => (
-          <ChallengeRow key={c.id} challenge={c} state={stateOf(c)} />
+          <ChallengeRow
+            key={c.id}
+            challenge={c}
+            state={stateOf(c)}
+            onClaim={onClaim}
+          />
         ))}
+
+        {/* Finished work sinks to the foot of the list, inside this same
+            scroll. It used to sit in a second View below a non-scrolling
+            container, so every challenge the learner completed pushed itself
+            further past the bottom edge — the opposite of what the card comment
+            promised. */}
+        {finished.length > 0 ? (
+          <View style={{ gap: 13, marginTop: 2 }}>
+            <Text
+              style={[
+                paperType.statLabel,
+                { color: paper.inkMuted, fontFamily: families.nunitoSemiBold },
+              ]}
+            >
+              {t("chal.done")}
+            </Text>
+            {finished.map((c) => (
+              <ChallengeRow
+                key={c.id}
+                challenge={c}
+                state="claimed"
+                onClaim={onClaim}
+              />
+            ))}
+          </View>
+        ) : null}
 
         <FlexGap min={0} />
       </View>
-    </View>
+    </ScrollView>
   )
 }
 
 function ChallengeRow({
   challenge,
   state,
+  onClaim,
 }: {
   challenge: Challenge
   state: State
+  onClaim: (id: string) => void
 }) {
   const { paper } = useTheme()
   const faces = useContentFaces()
@@ -380,9 +425,17 @@ function ChallengeRow({
       duration: 220,
       easing: Easing.in(Easing.quad),
       useNativeDriver: Platform.OS !== "web",
-    }).start(() => setCollapsed(false))
-    // Backstop: a stalled frame loop must not leave the row half-collapsed.
-    setTimeout(() => setCollapsed(false), 500)
+    }).start(() => {
+      setCollapsed(false)
+      onClaim(challenge.id)
+    })
+    // Backstop: a stalled frame loop must not leave the row half-collapsed, and
+    // a hidden tab stops requestAnimationFrame dead, so the callback above may
+    // never run at all.
+    setTimeout(() => {
+      setCollapsed(false)
+      onClaim(challenge.id)
+    }, 500)
   }
 
   const done = state === "claimable" || state === "claimed"
