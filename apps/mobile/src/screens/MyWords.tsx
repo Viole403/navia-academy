@@ -1,5 +1,6 @@
 import { useMemo, useState } from "react"
 import { Pressable, Text, View } from "react-native"
+import { Ionicons } from "@expo/vector-icons"
 import { SafeAreaView } from "react-native-safe-area-context"
 import { useRouter } from "expo-router"
 import { useQuery } from "@tanstack/react-query"
@@ -276,9 +277,7 @@ function CardRow({
           {card.mastery}% · {card.total_reviews} {useT()("myw.reviews")}
         </Text>
       </View>
-      {flagged ? (
-        <Text style={{ color: paper.coral, fontSize: 13 }}>⚑</Text>
-      ) : null}
+      {flagged ? <Ionicons name="flag" size={13} color={paper.coral} /> : null}
       <View
         style={{
           width: 8,

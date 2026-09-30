@@ -433,7 +433,15 @@ export default function LibraryScreen() {
                     },
                   ]}
                 >
-                  {filterOpen ? "▾" : "≡"}
+                  <Ionicons
+                    name={filterOpen ? "chevron-down" : "options-outline"}
+                    size={16}
+                    color={
+                      level !== "all" || difficulty !== "all"
+                        ? paper.coral
+                        : paper.inkMuted
+                    }
+                  />
                 </Text>
               </Pressable>
             </View>
