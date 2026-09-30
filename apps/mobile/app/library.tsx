@@ -1,3 +1,4 @@
+import { Ionicons } from "@expo/vector-icons"
 import { Fragment, useMemo, useState } from "react"
 import {
   ActivityIndicator,
@@ -645,7 +646,11 @@ function LibraryRow({
             color: open ? paper.green : paper.inkMuted,
           }}
         >
-          {open ? "▾" : "›"}
+          <Ionicons
+            name={open ? "chevron-down" : "chevron-forward"}
+            size={15}
+            color={open ? paper.green : paper.inkMuted}
+          />
         </Text>
       </PressableScale>
       {open && !!children && (

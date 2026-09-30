@@ -1,5 +1,6 @@
 import { useMemo, useState } from "react"
 import { ActivityIndicator, ScrollView, Text, View } from "react-native"
+import { Ionicons } from "@expo/vector-icons"
 import { SafeAreaView } from "react-native-safe-area-context"
 import { useQuery } from "@tanstack/react-query"
 import { EmptyState } from "@/components/ui/EmptyState"
@@ -104,7 +105,11 @@ function AccordionRow({
             color: open ? paper.green : paper.inkMuted,
           }}
         >
-          {open ? "▾" : "›"}
+          <Ionicons
+            name={open ? "chevron-down" : "chevron-forward"}
+            size={15}
+            color={open ? paper.green : paper.inkMuted}
+          />
         </Text>
       </PressableScale>
       {open && !!children && (

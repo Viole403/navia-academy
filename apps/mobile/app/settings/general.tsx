@@ -1,4 +1,5 @@
 import { Text, View } from "react-native"
+import { Ionicons } from "@expo/vector-icons"
 import { DetailShell } from "@/components/study/DetailShell"
 import {
   SettingsGroup,
@@ -216,7 +217,9 @@ function ThemeSwatch({
         <View style={{ flex: 1 }}>
           <Text2 color={selected ? theme.accent : theme.text}>{name}</Text2>
         </View>
-        {selected ? <Text2 color={theme.accent}>✓</Text2> : null}
+        {selected ? (
+          <Ionicons name="checkmark" size={17} color={theme.accent} />
+        ) : null}
       </View>
     </PressableScale>
   )

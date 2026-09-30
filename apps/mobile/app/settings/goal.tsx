@@ -1,4 +1,5 @@
 import { Text, View } from "react-native"
+import { Ionicons } from "@expo/vector-icons"
 import { DetailShell } from "@/components/study/DetailShell"
 import {
   SettingsGroup,
@@ -101,7 +102,19 @@ export default function SettingsGoal() {
                   color: selected ? theme.accent : paper.inkMuted,
                 }}
               >
-                {selected ? "✓" : "○"}
+                {selected ? (
+                  <Ionicons
+                    name="checkmark-circle"
+                    size={20}
+                    color={theme.accent}
+                  />
+                ) : (
+                  <Ionicons
+                    name="ellipse-outline"
+                    size={20}
+                    color={paper.inkMuted}
+                  />
+                )}
               </Text>
             </PressableScale>
           )

@@ -218,7 +218,7 @@ function PressBack({ onPress }: { onPress: () => void }) {
       hitSlop={12}
       style={{ width: 44, height: 44, justifyContent: "center" }}
     >
-      <Text style={{ color: paper.inkMuted, fontSize: 17 }}>←</Text>
+      <Ionicons name="arrow-back" size={19} color={paper.inkMuted} />
     </Pressable>
   )
 }

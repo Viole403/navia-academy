@@ -1,3 +1,4 @@
+import { Ionicons } from "@expo/vector-icons"
 import { STUDY_DIRTY_KEYS } from "@/utils/offlineQueue"
 import { useState } from "react"
 import {
@@ -432,8 +433,12 @@ function StrokeSheet({
             >
               {t("wd.strokeOrder")}
             </Text>
-            <Pressable onPress={onClose}>
-              <Text style={{ color: paper.inkMuted, fontSize: 15 }}>✕</Text>
+            <Pressable
+              onPress={onClose}
+              hitSlop={10}
+              accessibilityRole="button"
+            >
+              <Ionicons name="close" size={18} color={paper.inkMuted} />
             </Pressable>
           </View>
 
