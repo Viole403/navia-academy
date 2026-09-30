@@ -1,12 +1,14 @@
+import { useState } from "react"
 import { Alert, Text, View } from "react-native"
 import { DetailShell } from "@/components/study/DetailShell"
 import {
   SettingsGroup,
   SettingsToggle,
-  SettingsChoice,
+  SettingsRow,
   SettingsState,
   GROUP_INSET,
 } from "@/components/settings/SettingsGroup"
+import { TimePickerSheet } from "@/components/ui/TimePickerSheet"
 import { useUserSettings } from "@/hooks/useUserSettings"
 import { useTheme } from "@/theme/ThemeProvider"
 import { useT } from "@/i18n"
@@ -26,13 +28,12 @@ import {
  * fires inside the toggle, at the moment they turn it on, and a refusal is
  * reported as a refusal to *this setting* rather than as a broken feature.
  *
- * The time is chosen from fixed slots rather than a wheel or a text field. A
- * reminder is a coarse decision made once; a minute-accurate picker implies a
- * precision nobody uses and is a worse target on a phone than a list of eight
- * readable times.
+ * The time is a real picker, not the eight fixed slots this used to offer. Those
+ * slots did not fit the width available — eight pills in a 292dp row either
+ * overflowed or left the row lopsided — and they were a guess at the hours a
+ * learner picks. The minute wheel still steps by quarters, which keeps the
+ * decision coarse; the hour is now theirs.
  */
-const SLOTS = [7, 8, 12, 13, 18, 19, 20, 21]
-
 function slotToParts(slot: string) {
   const [h, m] = slot.split(":")
   return { hour: Number(h), minute: Number(m) }
@@ -51,7 +52,8 @@ export default function SettingsReminders() {
   }
   const d = s.data
   const on = d?.daily_reminder ?? false
-  const time = d?.reminder_time ?? "20:00"
+  const time = d?.reminder_time || "20:00"
+  const [picking, setPicking] = useState(false)
 
   const enable = async (next: boolean) => {
     // Flip first, then do the slow parts. The permission prompt and the schedule
@@ -80,10 +82,10 @@ export default function SettingsReminders() {
     }
   }
 
-  const changeTime = async (slot: string) => {
-    s.set({ reminder_time: `${slot}:00` })
+  const changeTime = async (next: string) => {
+    s.set({ reminder_time: next })
     if (!on) return
-    const { hour, minute } = slotToParts(slot)
+    const { hour, minute } = slotToParts(next)
     await scheduleDailyStreakReminder(hour, minute)
   }
 
@@ -105,17 +107,19 @@ export default function SettingsReminders() {
           />
         </SettingsGroup>
 
-        {/* The off-state message lives inside the card only. It was also passed as
-            the group hint, so it rendered twice, 8dp apart, directly under itself. */}
+        {/* A real time picker replaced the eight fixed slots: the row of pills was
+            a control that could not hold eight values in the width available, and
+            a wheel asks for the hour the learner actually wants. */}
         <SettingsGroup
           title={t("profile.reminderTime")}
           hint={on ? t("set.timeHint") : undefined}
         >
           {on ? (
-            <SettingsChoice
-              options={SLOTS.map((h) => ({ id: `${h}:00`, label: `${h}:00` }))}
-              value={time}
-              onChange={changeTime}
+            <SettingsRow
+              first
+              icon="time-outline"
+              title={time}
+              onPress={() => setPicking(true)}
             />
           ) : (
             <View
@@ -131,6 +135,15 @@ export default function SettingsReminders() {
             </View>
           )}
         </SettingsGroup>
+        <TimePickerSheet
+          visible={picking}
+          value={time}
+          onCancel={() => setPicking(false)}
+          onConfirm={async (next) => {
+            setPicking(false)
+            await changeTime(next)
+          }}
+        />
 
         <SettingsGroup title={t("set.digests")} last>
           <SettingsToggle
