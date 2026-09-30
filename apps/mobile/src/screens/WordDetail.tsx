@@ -265,7 +265,7 @@ export function WordDetail() {
                   onPress={() => {
                     tap()
                     setPlayingText(line)
-                    tts.play(line)
+                    tts.play(line, `vocab:${id}:ex${i}`)
                   }}
                   style={{ gap: 3 }}
                 >
@@ -375,7 +375,7 @@ export function WordDetail() {
         onPress={() => {
           tap()
           setPlayingText(null)
-          tts.play(headword(w))
+          tts.play(headword(w), `vocab:${id}`)
         }}
       />
 

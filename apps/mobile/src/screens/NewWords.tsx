@@ -208,7 +208,7 @@ export function NewWords() {
             tone="word"
             onPress={() => {
               tap()
-              tts.play(headword(current))
+              tts.play(headword(current), `vocab:${current.id}`)
             }}
           >
             <View style={{ alignItems: "center", gap: 6, paddingVertical: 10 }}>

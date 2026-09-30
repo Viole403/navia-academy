@@ -356,7 +356,7 @@ export function ReviewSession() {
                   playSound(correct ? "chime" : "retry")
                   setTimeout(() => reviewM.mutate(correct ? 2 : 0), 700)
                 }}
-                onPlay={() => tts.play(headword(word))}
+                onPlay={() => tts.play(headword(word), `vocab:${word.id}`)}
                 playing={tts.playing || tts.loading}
               />
             ) : (

@@ -192,7 +192,9 @@ export default function ListeningDrillScreen() {
                   {rounds.length} · {t("listen.score")} {score}
                 </Text>
                 <PressableScale
-                  onPress={() => tts.play(headword(current.word))}
+                  onPress={() =>
+                    tts.play(headword(current.word), `vocab:${current.word.id}`)
+                  }
                   disabled={tts.loading || tts.playing}
                   accessibilityLabel={t("listen.play")}
                 >

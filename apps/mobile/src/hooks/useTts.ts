@@ -13,6 +13,7 @@ import { ttsLocaleFor } from "@/lib/languages"
 import { useOnboardingStore } from "@/store/onboarding"
 import audioManifest from "@/data/audio/audio-manifest.json"
 import { type VoiceGender, type VoiceLocale } from "@/data/audio"
+import { deriveVoice } from "@/lib/voiceCast"
 
 const CDN_PUBLIC_URL = process.env.EXPO_PUBLIC_AUDIO_CDN_URL ?? ""
 const AUDIO_EXT = ".mp3"
@@ -136,8 +137,74 @@ export function useTts() {
     }
   }, [])
 
+  /**
+   * Try one CDN object, then cache it for offline use. Returns false when the
+   * object is absent so the caller can fall through — the derived gender is
+   * wrong for passage narration, which the publisher casts per passage.
+   */
+  const playFromCdn = useCallback(
+    async (
+      key: string,
+      locale: VoiceLocale,
+      gender: VoiceGender,
+      playId: number
+    ): Promise<boolean> => {
+      if (!CDN_PUBLIC_URL) return false
+      const localFile = cacheFile(key, locale, gender)
+      if (localFile.exists) {
+        return await streamFile(localFile.uri, playId, true)
+      }
+      const url = cdnAudioUrl(key, locale, gender)
+      const ok = await streamFile(url, playId, false)
+      if (!ok) return false
+      try {
+        await File.downloadFileAsync(url, localFile, { idempotent: true })
+        await evictCacheIfNeeded()
+      } catch {
+        // caching is best-effort, don't block playback
+      }
+      return true
+    },
+    [playIdRef]
+  )
+
+  const streamFile = useCallback(
+    async (uri: string, playId: number, cached: boolean): Promise<boolean> => {
+      return await new Promise<boolean>((resolve) => {
+        let settled = false
+        const sound = createPlayer({ uri }, (status) => {
+          if (playId !== playIdRef.current) {
+            removePlayer(sound)
+            return
+          }
+          if (!status.isLoaded) {
+            if (!settled) {
+              settled = true
+              resolve(false)
+            }
+            if (cached && status.error) {
+              removePlayer(sound)
+              setPlaying(false)
+              setError(String(status.error))
+            }
+            return
+          }
+          if (!settled) {
+            settled = true
+            soundRef.current = sound
+            setPlaying(true)
+            setLoading(false)
+            resolve(true)
+          }
+          if (status.didJustFinish) setPlaying(false)
+        })
+      })
+    },
+    []
+  )
+
   const play = useCallback(
-    async (text: string) => {
+    async (text: string, key?: string) => {
       if (!text) return
       const playId = ++playIdRef.current // tag this call
       try {
@@ -155,6 +222,24 @@ export function useTts() {
         const genderKey: VoiceGender = genderByKey.get(canonicalKey) ?? "female"
         const manifestText = textByKey.get(canonicalKey)
         const isManifestBacked = manifestText !== undefined
+
+        // Step 0: the publisher's casting is a pure function of the key, so a
+        // caller that knows the key can build the CDN URL without the manifest.
+        // The bundled manifest covers 0.22% of entries and none of de/ja/en, so
+        // this is the only path that reaches the CDN for those languages.
+        if (key) {
+          const derived = await deriveVoice(key, language)
+          if (derived) {
+            const dKey = `${key}__${derived.locale}__${derived.gender}`
+            const played = await playFromCdn(
+              dKey,
+              derived.locale as VoiceLocale,
+              derived.gender,
+              playId
+            )
+            if (played) return
+          }
+        }
 
         // Step 1: local file cache
         const localFile = cacheFile(canonicalKey, locale, genderKey)

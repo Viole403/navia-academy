@@ -401,7 +401,10 @@ export function ExamAdaptive() {
                   title={t("common.play")}
                   face={paper.green}
                   onPress={() =>
-                    tts.play(current.audioText ?? current.word.hanzi)
+                    tts.play(
+                      current.audioText ?? current.word.hanzi,
+                      `vocab:${current.word.id}`
+                    )
                   }
                 />
               ) : (
