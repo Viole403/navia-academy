@@ -43,6 +43,10 @@ export default function SettingsReminders() {
   const { theme, paper } = useTheme()
   const t = useT()
   const s = useUserSettings()
+  // Above the loading early-return on purpose: the sheet's open state is a hook,
+  // and a hook below one means this screen rendered 4 hooks while loading and 5
+  // after — which React rejects outright, so the screen never came up at all.
+  const [picking, setPicking] = useState(false)
   if (s.isLoading) {
     return (
       <DetailShell title={t("profile.reminder")} fallback="/settings">
@@ -53,7 +57,6 @@ export default function SettingsReminders() {
   const d = s.data
   const on = d?.daily_reminder ?? false
   const time = d?.reminder_time || "20:00"
-  const [picking, setPicking] = useState(false)
 
   const enable = async (next: boolean) => {
     // Flip first, then do the slow parts. The permission prompt and the schedule
