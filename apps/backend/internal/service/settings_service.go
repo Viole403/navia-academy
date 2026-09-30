@@ -90,11 +90,16 @@ func (s *SettingsService) UpdateSettings(ctx context.Context, userID string, req
 	if req.DailyGoalMin != nil {
 		settings.DailyGoalMin = *req.DailyGoalMin
 	}
+	// The client offers a free number field, so these arrive as whatever was
+	// typed. A daily queue of zero or a million is a mistake, not a setting.
 	if req.NewWordsPerDay != nil {
-		settings.NewWordsPerDay = *req.NewWordsPerDay
+		settings.NewWordsPerDay = clamp(*req.NewWordsPerDay, 1, 200)
 	}
 	if req.MaxReviewsPerDay != nil {
-		settings.MaxReviewsPerDay = *req.MaxReviewsPerDay
+		settings.MaxReviewsPerDay = clamp(*req.MaxReviewsPerDay, 5, 1000)
+	}
+	if req.DailyGoalMin != nil {
+		settings.DailyGoalMin = clamp(*req.DailyGoalMin, 1, 240)
 	}
 	if req.Locale != nil {
 		settings.Locale = *req.Locale

@@ -247,6 +247,7 @@ const id: Record<I18nKey, string> = {
   "set.streakAlerts": "Penyelamat rentetan",
   "set.streakAlertsHint": "Pengingat hanya saat rentetan hampir putus",
   "set.chineseDisplay": "Bantuan baca",
+  "set.customCount": "Kustom…",
   "set.chineseDisplayHint":
     "Bacaan mana yang ditampilkan di bawah karakter. Pinyin adalah transliterasi; zhuyin adalah skrip yang dipakai Mandarin.",
   "set.displayMode": "Mode tampilan",

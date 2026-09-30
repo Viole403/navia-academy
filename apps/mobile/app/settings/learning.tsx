@@ -142,6 +142,11 @@ export default function SettingsLearning() {
             }))}
             value={String(d?.new_words_per_day ?? 10)}
             onChange={(id) => s.set({ new_words_per_day: Number(id) })}
+            custom={{
+              min: 1,
+              max: 200,
+              label: t("set.customCount"),
+            }}
           />
         </SettingsGroup>
 
@@ -156,6 +161,11 @@ export default function SettingsLearning() {
             }))}
             value={String(d?.max_reviews_per_day ?? 80)}
             onChange={(id) => s.set({ max_reviews_per_day: Number(id) })}
+            custom={{
+              min: 5,
+              max: 1000,
+              label: t("set.customCount"),
+            }}
           />
         </SettingsGroup>
 

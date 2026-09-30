@@ -1,3 +1,4 @@
+import { useState } from "react"
 import type { ComponentProps, ReactNode } from "react"
 import { Ionicons } from "@expo/vector-icons"
 import {
@@ -6,12 +7,14 @@ import {
   StyleSheet,
   Switch,
   Text,
+  TextInput,
   View,
 } from "react-native"
 import { useTheme } from "@/theme/ThemeProvider"
 import { fonts, type } from "@/theme/typography"
 import { useT } from "@/i18n"
 import { PressableScale } from "@/components/study/press"
+import { QuietPill } from "@/components/study/PaperCard"
 import { examBadgeColor } from "@/lib/languages"
 
 /**
@@ -277,11 +280,18 @@ export function SettingsChoice({
   options,
   value,
   onChange,
+  custom,
 }: {
   options: { id: string; label: string; tint?: string }[]
   value: string | undefined
   onChange: (id: string) => void
+  /** Enables a "Custom" pill and the number field behind it. */
+  custom?: { min: number; max: number; label: string; unit?: string }
 }) {
+  const t = useT()
+  const [editing, setEditing] = useState(false)
+  const presetIds = options.map((o) => o.id)
+  const isPreset = value !== undefined && presetIds.includes(value)
   const { theme, paper } = useTheme()
   // A group that wraps must wrap evenly: filling each row greedily left one
   // orphan on the second row. Equal columns is what turns 8 slots into 4+4
@@ -294,6 +304,68 @@ export function SettingsChoice({
   const wraps = options.length > 5
   const useColumns = wraps && longest <= 12
   const wrapCols = useColumns ? Math.ceil(options.length / even) : 0
+  if (editing && custom) {
+    return (
+      <View
+        style={{
+          flexDirection: "row",
+          alignItems: "center",
+          gap: 8,
+          paddingHorizontal: GROUP_INSET,
+          paddingTop: GROUP_INSET,
+          paddingBottom: GROUP_INSET,
+        }}
+      >
+        <TextInput
+          value={value ?? ""}
+          onChangeText={(t) => {
+            const n = Number(t.replace(/[^0-9]/g, ""))
+            if (Number.isFinite(n)) onChange(String(n))
+          }}
+          keyboardType="number-pad"
+          placeholder={String(custom.min)}
+          accessibilityLabel={custom.label}
+          style={{
+            flex: 1,
+            minHeight: CHOICE_HEIGHT,
+            paddingHorizontal: 12,
+            borderRadius: paper.radius.pill,
+            borderWidth: 1,
+            borderColor: paper.line,
+            backgroundColor: paper.cardAlt,
+            color: paper.ink,
+            fontSize: 14,
+          }}
+        />
+        {custom.unit ? (
+          <Text style={{ color: paper.inkMuted, fontSize: 13 }}>
+            {custom.unit}
+          </Text>
+        ) : null}
+        <PressableScale
+          onPress={() => setEditing(false)}
+          accessibilityLabel={t("common.cancel")}
+        >
+          <View
+            style={{
+              minHeight: CHOICE_HEIGHT,
+              paddingHorizontal: 16,
+              alignItems: "center",
+              justifyContent: "center",
+              borderRadius: paper.radius.pill,
+              borderWidth: 1,
+              borderColor: paper.line,
+            }}
+          >
+            <Text style={{ color: paper.ink, fontSize: 14 }}>
+              {t("common.save")}
+            </Text>
+          </View>
+        </PressableScale>
+      </View>
+    )
+  }
+
   return (
     <View
       style={{
@@ -305,6 +377,18 @@ export function SettingsChoice({
         paddingBottom: GROUP_INSET,
       }}
     >
+      {custom ? (
+        <QuietPill
+          title={custom.label}
+          tone="week"
+          style={
+            !isPreset && value !== undefined
+              ? { borderColor: theme.accent, backgroundColor: paper.cardAlt }
+              : undefined
+          }
+          onPress={() => setEditing(true)}
+        />
+      ) : null}
       {options.map((o) => {
         const selected = value === o.id
         return (
