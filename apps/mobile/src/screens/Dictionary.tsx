@@ -379,12 +379,14 @@ export function Dictionary() {
                 </View>
               </View>
 
-              <PaperCard
-                tone="challenge"
-                title={t("dict.radicals")}
-                body={t("dict.radicalsBody")}
-                onPress={() => router.push("/radicals")}
-              />
+              {charScript && (
+                <PaperCard
+                  tone="challenge"
+                  title={t("dict.radicals")}
+                  body={t("dict.radicalsBody")}
+                  onPress={() => router.push("/radicals")}
+                />
+              )}
             </>
           )}
 

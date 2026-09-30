@@ -91,11 +91,17 @@ export default function LearnTab() {
 
   const drills: { title: string; body: string; route: string }[] = [
     { title: t("learn.vocab"), body: t("learn.vocabDesc"), route: "/vocab" },
-    {
-      title: t("learn.chars"),
-      body: t("learn.charsDesc"),
-      route: "/characters",
-    },
+    // German and English have no CJK content to drill, so the tile is dropped
+    // rather than routing to a screen that can only say "not applicable".
+    ...(isCharScript(language)
+      ? [
+          {
+            title: t("learn.chars"),
+            body: t("learn.charsDesc"),
+            route: "/characters",
+          },
+        ]
+      : []),
     {
       title: isCharScript(language)
         ? t("learn.hanziMatch")
