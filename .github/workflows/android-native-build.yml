@@ -139,7 +139,7 @@ jobs:
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
-          name: navia-${{ inputs.variant }}-${{ inputs.abi | replace(',', '-') }}
+          name: navia-${{ inputs.variant }}-${{ inputs.abi }}
           path: apps/mobile/android/app/build/outputs/apk/**/*.apk
           if-no-files-found: error
           retention-days: 14
