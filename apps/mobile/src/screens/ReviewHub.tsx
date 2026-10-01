@@ -157,6 +157,9 @@ export function ReviewHub() {
               return (
                 <Animated.View
                   key={d.key}
+                  // The reveal animates opacity on the native driver, which
+                  // flattens this view and left its card's taps unhandled.
+                  collapsable={false}
                   style={{
                     opacity: r.opacity,
                     transform: [{ translateY: r.translate }],
