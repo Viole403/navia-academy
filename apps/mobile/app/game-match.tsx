@@ -1,5 +1,5 @@
 import { BackLink } from "@/components/ui/BackLink"
-import { useMemo, useState } from "react"
+import { useMemo, useRef, useState } from "react"
 import { ActivityIndicator, ScrollView, Text, View } from "react-native"
 import { SafeAreaView } from "react-native-safe-area-context"
 import { useRouter } from "expo-router"
@@ -47,6 +47,8 @@ export default function GameMatch() {
 
   const [cards, setCards] = useState<Card[]>([])
   const [open, setOpen] = useState<string | null>(null)
+  const [wrong, setWrong] = useState<string[]>([])
+  const wrongTimer = useRef<ReturnType<typeof setTimeout> | null>(null)
   const [matches, setMatches] = useState(0)
   const [moves, setMoves] = useState(0)
   const [startTs, setStartTs] = useState<number | null>(null)
@@ -131,8 +133,15 @@ export default function GameMatch() {
         )
       )
       setMatches((m) => m + 1)
+      setOpen(null)
+      return
     }
+    // Hold the pair face-up in the "wrong" colour before turning it back.
+    // Closing straight away left the second tap with no result to read at all.
+    setWrong([c1?.id, c2?.id].filter((v): v is string => !!v))
     setOpen(null)
+    if (wrongTimer.current) clearTimeout(wrongTimer.current)
+    wrongTimer.current = setTimeout(() => setWrong([]), 700)
   }
 
   // "1 moves" reads as a bug; Indonesian has no plural forms, so the two keys
@@ -323,7 +332,8 @@ export default function GameMatch() {
           >
             {cards.map((c) => {
               const isOpen = open === c.id
-              const faceUp = c.matched || isOpen
+              const isWrong = wrong.includes(c.id)
+              const faceUp = c.matched || isOpen || isWrong
               return (
                 <View key={c.id} style={{ width: "50%", padding: 4 }}>
                   <PressableScale
@@ -338,14 +348,18 @@ export default function GameMatch() {
                         borderRadius: 12,
                         borderColor: c.matched
                           ? paper.green
-                          : isOpen
-                            ? paper.ring
-                            : paper.line,
+                          : isWrong
+                            ? paper.coral
+                            : isOpen
+                              ? paper.ring
+                              : paper.line,
                         backgroundColor: c.matched
                           ? paper.greenSoft
-                          : isOpen
-                            ? paper.cardAlt
-                            : paper.card,
+                          : isWrong
+                            ? paper.coralSoft
+                            : isOpen
+                              ? paper.cardAlt
+                              : paper.card,
                         alignItems: "center",
                         justifyContent: "center",
                         padding: 10,
@@ -365,9 +379,11 @@ export default function GameMatch() {
                           fontSize: faceUp ? (c.side === "term" ? 24 : 15) : 26,
                           color: c.matched
                             ? paper.greenDark
-                            : faceUp
-                              ? paper.ink
-                              : paper.inkMuted,
+                            : isWrong
+                              ? paper.coral
+                              : faceUp
+                                ? paper.ink
+                                : paper.inkMuted,
                           textAlign: "center",
                         }}
                         numberOfLines={2}
