@@ -1,6 +1,7 @@
 import { useMemo } from "react"
 import {
   ActivityIndicator,
+  Animated,
   Pressable,
   ScrollView,
   Text,
@@ -14,6 +15,7 @@ import { ReviewHero } from "@/components/study/ReviewHero"
 import { PaperCard } from "@/components/study/PaperCard"
 import { DrillBadge } from "@/components/study/dashboardCards"
 import { FlexGap } from "@/components/study/press"
+import { useEntranceRun, useReveal } from "@/components/study/Reveal"
 import { useTheme } from "@/theme/ThemeProvider"
 import { useContentLayout } from "@/theme/layout"
 import { paperType, families } from "@/theme/paperType"
@@ -62,6 +64,187 @@ export function ReviewHub() {
   const mistakes = due.filter(
     (c) => difficult.has(c.item_id) || c.mastery < 40
   ).length
+
+  const run = useEntranceRun()
+  const beats = [0, 1, 2].map((i) =>
+    useReveal({ at: 260 + i * 90, duration: 440, run, distance: 26 })
+  )
+
+  const drills: {
+    key: "flashcards" | "listening" | "mistakes"
+    count: number | null
+    title: string
+    body: string
+    tone: "review" | "week" | "challenge"
+  }[] = [
+    {
+      key: "flashcards",
+      count: due.length,
+      title: t("rev.dFlashcards"),
+      body: t("rev.bFlashcards"),
+      tone: "review",
+    },
+    {
+      key: "listening",
+      count: due.length,
+      title: t("rev.dListening"),
+      body: t("rev.bListening"),
+      tone: "week",
+    },
+    {
+      key: "mistakes",
+      // A dash reads as "nothing here"; a zero reads as a broken counter.
+      count: mistakes > 0 ? mistakes : null,
+      title: t("rev.dMistakes"),
+      body: mistakes > 0 ? t("rev.bMistakes") : t("rev.bMistakesNone"),
+      tone: "challenge",
+    },
+  ]
+
+  const loading = dueQ.isLoading
+
+  return (
+    <SafeAreaView
+      style={{ flex: 1, backgroundColor: paper.paper }}
+      edges={["top"]}
+    >
+      <View
+        style={{
+          flexDirection: "row",
+          alignItems: "center",
+          justifyContent: "space-between",
+          paddingHorizontal: 20,
+          paddingVertical: 12,
+        }}
+      >
+        <BackLink label={t("common.back")} fallback="/(tabs)/learn" />
+        <Text
+          style={[
+            paperType.statLabel,
+            { color: paper.inkMuted, fontFamily: families.nunitoSemiBold },
+          ]}
+        >
+          {t("learn.srs")}
+        </Text>
+      </View>
+
+      <ScrollView
+        contentContainerStyle={{
+          paddingBottom: 40,
+          flexGrow: 1,
+          alignItems: "center",
+        }}
+        showsVerticalScrollIndicator={false}
+      >
+        <View style={{ width: columnWidth, gap: 13, paddingHorizontal: 20 }}>
+          <ReviewHero
+            headline={t("learn.review")}
+            body={
+              due.length > 0
+                ? t("rev.heroDue", { n: due.length })
+                : t("rev.heroClear")
+            }
+            run={run}
+          />
+
+          {loading ? (
+            <View style={{ paddingVertical: 32 }}>
+              <ActivityIndicator color={paper.coral} />
+            </View>
+          ) : (
+            drills.map((d, i) => {
+              const r = beats[i]
+              return (
+                <Animated.View
+                  key={d.key}
+                  style={{
+                    opacity: r.opacity,
+                    transform: [{ translateY: r.translate }],
+                  }}
+                >
+                  <PaperCard
+                    tone={d.tone}
+                    onPress={() => {
+                      tap()
+                      playSound("tap")
+                      // String form: /review-session has no dynamic segment,
+                      // and the object form left every press on this card going
+                      // nowhere while the plain-string card below it worked.
+                      router.push(`/review-session?mode=${d.key}`)
+                    }}
+                  >
+                    <View
+                      style={{
+                        flexDirection: "row",
+                        alignItems: "center",
+                        gap: 14,
+                      }}
+                    >
+                      <DrillBadge source={d.key} />
+                      <View style={{ flex: 1, gap: 2 }}>
+                        <Text
+                          style={[
+                            paperType.cardTitle,
+                            {
+                              color: paper.ink,
+                              fontFamily: families.nunitoExtraBold,
+                            },
+                          ]}
+                        >
+                          {d.title}
+                        </Text>
+                        <Text
+                          style={[
+                            paperType.cardBody,
+                            {
+                              color: paper.inkSoft,
+                              fontFamily: families.nunitoSemiBold,
+                            },
+                          ]}
+                        >
+                          {d.body}
+                        </Text>
+                      </View>
+                      <Text
+                        style={[
+                          paperType.statValue,
+                          {
+                            color:
+                              d.key === "flashcards"
+                                ? paper.coral
+                                : d.key === "listening"
+                                  ? paper.green
+                                  : paper.lavender,
+                            fontFamily: families.nunitoExtraBold,
+                          },
+                        ]}
+                      >
+                        {d.count ?? "—"}
+                      </Text>
+                    </View>
+                  </PaperCard>
+                </Animated.View>
+              )
+            })
+          )}
+
+          {/* Free-play drill, distinct from the counted Listening mode above:
+              this one samples the whole dictionary instead of the due set. */}
+          <PaperCard
+            tone="word"
+            title={t("learn.listeningDrill")}
+            body={t("learn.listeningDrillDesc")}
+            onPress={() => {
+              tap()
+              router.push("/listening-drill")
+            }}
+          />
+
+          <FlexGap min={0} />
+        </View>
+      </ScrollView>
+    </SafeAreaView>
+  )
 }
 
 export type ReviewDrill = SrsCard
