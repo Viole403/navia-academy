@@ -167,10 +167,10 @@ export function ReviewHub() {
                     onPress={() => {
                       tap()
                       playSound("tap")
-                      router.push({
-                        pathname: "/review-session",
-                        params: { mode: d.key },
-                      })
+                      // String form: /review-session has no dynamic segment,
+                      // and the object form left every press on this card going
+                      // nowhere while the plain-string card below it worked.
+                      router.push(`/review-session?mode=${d.key}`)
                     }}
                   >
                     <View
