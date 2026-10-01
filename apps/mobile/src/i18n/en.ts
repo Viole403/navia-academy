@@ -164,6 +164,7 @@ const en = {
   "game.nothingToPlay": "Nothing to play",
   "game.pairs": "pairs",
   "game.moves": "moves",
+  "game.move": "move",
   "game.pairChar": "Pair each character with its meaning.",
   "game.pairWord": "Pair each word with its meaning.",
   "game.cards": "cards",

@@ -135,13 +135,19 @@ export default function GameMatch() {
     setOpen(null)
   }
 
+  // "1 moves" reads as a bug; Indonesian has no plural forms, so the two keys
+  // only differ in English.
+  const counted = (n: number, one: "game.move", many: "game.moves") =>
+    `${n} ${t(n === 1 ? one : many)}`
+
   const masthead = (
     <View style={{ gap: 14 }}>
       <View style={{ flexDirection: "row", alignItems: "center", gap: 12 }}>
         <BackLink label={t("game.back")} fallback="/(tabs)" />
         {cards.length > 0 && (
           <Text style={[paperType.label, { color: paper.inkMuted }]}>
-            {matches}/{totalPairs} {t("game.pairs")} · {moves} {t("game.moves")}
+            {matches}/{totalPairs} {t("game.pairs")} ·{" "}
+            {counted(moves, "game.move", "game.moves")}
           </Text>
         )}
       </View>
@@ -287,7 +293,7 @@ export default function GameMatch() {
             </Text>
             <PaperStat
               value={`+${matches * 10}`}
-              label={`${t("game.xpLogged")} · ${moves} ${t("game.moves")}`}
+              label={`${t("game.xpLogged")} · ${counted(moves, "game.move", "game.moves")}`}
             />
             {submitM.isError && (
               <Text

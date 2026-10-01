@@ -164,6 +164,7 @@ const id: Record<I18nKey, string> = {
   "game.nothingToPlay": "Tidak ada permainan",
   "game.pairs": "pasangan",
   "game.moves": "langkah",
+  "game.move": "langkah",
   "game.pairChar": "Pasangkan setiap aksara dengan artinya.",
   "game.pairWord": "Pasangkan setiap kata dengan artinya.",
   "game.cards": "kartu",
