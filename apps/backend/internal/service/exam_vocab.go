@@ -32,6 +32,7 @@ type vocabItem struct {
 	Pronunciation []string               `json:"pronunciation"`
 	Translation   string                 `json:"translation"`
 	ExamMappings  map[string]interface{} `json:"examMappings"`
+	Language      string                 `json:"language"`
 }
 
 func (v vocabItem) headword() string {
@@ -41,11 +42,12 @@ func (v vocabItem) headword() string {
 	return v.Text
 }
 
+// "" for Latin-script items: `pronunciation` there is IPA, not a written form.
 func (v vocabItem) reading() string {
 	if v.Pinyin != "" {
 		return v.Pinyin
 	}
-	if len(v.Pronunciation) > 0 {
+	if v.Language == "ja" && len(v.Pronunciation) > 0 {
 		return v.Pronunciation[0]
 	}
 	return ""

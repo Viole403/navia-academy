@@ -151,6 +151,10 @@ func (s *ExamService) GetCatProgress(ctx context.Context, userID string) ([]mode
 func (s *ExamService) CreateSession(ctx context.Context, userID, examType, examLevel string, settings map[string]interface{}) (*models.ExamSession, error) {
 	questionCount := 20
 	questionTypes := []string{"meaning", "pinyin", "listening"}
+	// Latin script has no readings to pick between.
+	if lang := examLangOf(examType); lang != "zh" && lang != "ja" {
+		questionTypes = []string{"meaning", "listening"}
+	}
 	difficultyRange := []string{"easy", "medium", "hard"}
 	var timeLimit *int
 	tl := 1800
