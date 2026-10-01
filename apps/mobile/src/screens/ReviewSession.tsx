@@ -206,6 +206,8 @@ export function ReviewSession() {
           justifyContent: "center",
         }}
       >
+        <Stack.Screen options={{ headerShown: false }} />
+        <BackLink label={t("common.back")} fallback="/review" />
         <ActivityIndicator color={paper.coral} size="large" />
       </SafeAreaView>
     )

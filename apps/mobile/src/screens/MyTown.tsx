@@ -36,19 +36,50 @@ interface Building {
   id: string
   nameKey: I18nKey
   xpCost: number
+  glyph: string
 }
 
 const BUILDINGS: Building[] = [
-  { id: "temple", nameKey: "town.temple", xpCost: 0 },
-  { id: "teaHouse", nameKey: "town.teaHouse", xpCost: 300 },
-  { id: "noodleShop", nameKey: "town.noodleShop", xpCost: 700 },
-  { id: "gardenPavilion", nameKey: "town.gardenPavilion", xpCost: 1200 },
-  { id: "lanternStreet", nameKey: "town.lanternStreet", xpCost: 1800 },
-  { id: "riversideWalk", nameKey: "town.riversideWalk", xpCost: 2500 },
-  { id: "buddhistStatue", nameKey: "town.buddhistStatue", xpCost: 3300 },
-  { id: "mountainPagoda", nameKey: "town.mountainPagoda", xpCost: 4200 },
-  { id: "marketSquare", nameKey: "town.marketSquare", xpCost: 5200 },
-  { id: "grandPalace", nameKey: "town.grandPalace", xpCost: 6500 },
+  { id: "temple", nameKey: "town.temple", xpCost: 0, glyph: "⛩️" },
+  { id: "teaHouse", nameKey: "town.teaHouse", xpCost: 300, glyph: "🍵" },
+  { id: "noodleShop", nameKey: "town.noodleShop", xpCost: 700, glyph: "🍜" },
+  {
+    id: "gardenPavilion",
+    nameKey: "town.gardenPavilion",
+    xpCost: 1200,
+    glyph: "🌸",
+  },
+  {
+    id: "lanternStreet",
+    nameKey: "town.lanternStreet",
+    xpCost: 1800,
+    glyph: "🏮",
+  },
+  {
+    id: "riversideWalk",
+    nameKey: "town.riversideWalk",
+    xpCost: 2500,
+    glyph: "🌉",
+  },
+  {
+    id: "buddhistStatue",
+    nameKey: "town.buddhistStatue",
+    xpCost: 3300,
+    glyph: "🗿",
+  },
+  {
+    id: "mountainPagoda",
+    nameKey: "town.mountainPagoda",
+    xpCost: 4200,
+    glyph: "🗼",
+  },
+  {
+    id: "marketSquare",
+    nameKey: "town.marketSquare",
+    xpCost: 5200,
+    glyph: "🏪",
+  },
+  { id: "grandPalace", nameKey: "town.grandPalace", xpCost: 6500, glyph: "🏯" },
 ]
 
 const TOWN_KEY = "navia.town.v1"
@@ -197,7 +228,7 @@ export function MyTown() {
                       }}
                     >
                       <Text style={{ fontSize: 28 }}>
-                        {isUnlocked ? "🏮" : isNext ? "🔓" : "·"}
+                        {isUnlocked ? b.glyph : isNext ? "🔓" : "·"}
                       </Text>
                     </View>
                     <View style={{ flex: 1, gap: 3 }}>

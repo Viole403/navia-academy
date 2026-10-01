@@ -17,20 +17,19 @@ import {
  *
  * Two traps live here, both of which have bitten real screens:
  *
- *  1. **A card can be one pressable *and* several, but never by nesting
- *     Pressables.** On the web target the inner handler's event bubbles to the
- *     outer one, so a tap on "Add this word" both added the word and pushed the
- *     route. `usePressClaim` marks the press on the way in; the outer handler
- *     stands down when it sees the mark. The flag clears on a `setTimeout(…, 0)`
- *     rather than after the press, because web bubbles synchronously (so the
- *     outer handler still sees it) while native never fires the outer at all
- *     (so nothing else would ever clear it, and the next tap on the card body
- *     would be eaten).
+ * 1. **A card can be one pressable *and* several, but never by nesting
+ *    Pressables.** On the web target an inner handler's event bubbles to the
+ *    outer one, so a tap on "Add this word" both added the word and pushed the
+ *    route. An inner target claims the press through `usePressClaim` and the
+ *    card stands down when it sees the mark. Only the inner target may claim:
+ *    the card claiming its own press in `onPressIn` raced its own `onPress`,
+ *    which native can fire in the same tick, and swallowed every card tap
+ *    intermittently — the Review hub's three drills needed several taps.
  *
- *  2. **`PressableScale` takes layout on `wrapperStyle`, not `style`.** `flex`
- *     on the inner Pressable does nothing while the Animated.View around it is
- *     still sized to its content — which is how the word card's two buttons
- *     ended up overlapping.
+ * 2. **`PressableScale` takes layout on `wrapperStyle`, not `style`.** `flex`
+ *    on the inner Pressable does nothing while the Animated.View around it is
+ *    still sized to its content — which is how the word card's two buttons
+ *    ended up overlapping.
  */
 export function usePressClaim() {
   const claimed = useRef(false)
@@ -57,14 +56,12 @@ export function PressClaim({
   disabled?: boolean
   accessibilityLabel?: string
 }) {
-  const { claim, isClaimed } = usePressClaim()
+  const { isClaimed } = usePressClaim()
   return (
     <Pressable
       accessibilityLabel={accessibilityLabel}
       disabled={disabled}
-      onPressIn={claim}
       onPress={() => {
-        // A press an inner target already handled does not also fire the card.
         if (isClaimed()) return
         onPress?.()
       }}

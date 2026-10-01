@@ -39,12 +39,17 @@ function interpolate(template: string, params?: TParams): string {
   if (!params) return template
   const values = Object.values(params)
   let i = 0
-  return template.replace(/%[ds]/g, (match) => {
+  const positional = template.replace(/%[ds]/g, (match) => {
     // A string with more placeholders than values keeps the placeholder
     // visible rather than printing "undefined" into the UI.
     if (i >= values.length) return match
     return String(values[i++])
   })
+  // Named placeholders: "{n}" reads at the call site, which positional "%d"
+  // cannot when one string carries two different values.
+  return positional.replace(/\{(\w+)\}/g, (match, name: string) =>
+    name in params ? String(params[name]) : match
+  )
 }
 
 export function translate(
