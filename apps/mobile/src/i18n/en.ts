@@ -86,6 +86,7 @@ const en = {
   "learn.srs": "Spaced repetition",
   "learn.cardsDue": "cards due for review today",
   "learn.allReviewed": "All reviewed",
+  "learn.noCardsYet": "Nothing due yet — add a word and it will appear here.",
   "learn.comeBack": "Come back tomorrow for a fresh batch.",
   "learn.startReview": "Start review session",
   "learn.loading": "Loading…",

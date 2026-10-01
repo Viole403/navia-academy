@@ -88,6 +88,10 @@ export default function LearnTab() {
 
   const srsQ = useQuery({ queryKey: ["srs-stats"], queryFn: progress.srsStats })
   const due = srsQ.data?.due ?? 0
+  const anyCards =
+    (srsQ.data?.word ?? 0) +
+    (srsQ.data?.character ?? 0) +
+    (srsQ.data?.grammar ?? 0)
 
   const drills: { title: string; body: string; route: string }[] = [
     { title: t("learn.vocab"), body: t("learn.vocabDesc"), route: "/vocab" },
@@ -199,7 +203,13 @@ export default function LearnTab() {
                   {t("learn.review")}
                 </Text>
                 <Text style={[paperType.cardBody, { color: paper.inkMuted }]}>
-                  {due > 0 ? t("learn.startReview") : t("learn.allReviewed")}
+                  {/* Never-learned words are not cards due for review, so zero
+                      with an empty queue is not "all reviewed". */}
+                  {due > 0
+                    ? t("learn.startReview")
+                    : anyCards > 0
+                      ? t("learn.allReviewed")
+                      : t("learn.noCardsYet")}
                 </Text>
               </View>
             </View>

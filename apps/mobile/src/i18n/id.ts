@@ -86,6 +86,7 @@ const id: Record<I18nKey, string> = {
   "learn.srs": "Pengulangan berjarak",
   "learn.cardsDue": "kartu jatuh tempo hari ini",
   "learn.allReviewed": "Semua selesai",
+  "learn.noCardsYet": "Belum ada — tambahkan kata dan akan muncul di sini.",
   "learn.comeBack": "Kembali besok untuk batch baru.",
   "learn.startReview": "Mulai sesi tinjauan",
   "learn.loading": "Memuat…",
