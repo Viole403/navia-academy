@@ -63,18 +63,19 @@ jobs:
           distribution: temurin
           java-version: "17"
 
-      # RN 0.86 pins the NDK it compiles against; 27.x is the match for this
-      # SDK, and the Hermes build pulls in cmake for it.
-      - name: Android SDK + NDK
-        uses: android-actions/setup-android@v3
-        with:
-          cmdline-tools-version: "11076708"
-          packages: |
-            platform-tools
-            platforms;android-36
-            build-tools;36.0.0
-            ndk;27.1.12297006
-            cmake;3.22.1
+      # ubuntu-latest already ships the Android SDK, build-tools, NDK and cmake.
+      # All that is missing is licence acceptance: an unaccepted licence makes
+      # sdkmanager fail the build partway through, so accept everything up front
+      # rather than listing packages the runner already has.
+      - name: Accept Android SDK licences
+        run: |
+          set -euo pipefail
+          SDKMANAGER="${ANDROID_HOME}/cmdline-tools/latest/bin/sdkmanager"
+          [ -x "$SDKMANAGER" ] || SDKMANAGER="$(command -v sdkmanager)"
+          yes | "$SDKMANAGER" --licenses > /dev/null 2>&1 || true
+          echo "sdkmanager: $SDKMANAGER"
+          echo "ndk: $(ls "${ANDROID_HOME}/ndk" 2>/dev/null | tr '\n' ' ')"
+          echo "build-tools: $(ls "${ANDROID_HOME}/build-tools" 2>/dev/null | tr '\n' ' ')"
 
       - name: Install dependencies
         run: bun install --frozen-lockfile
