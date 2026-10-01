@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useRef, useState } from "react"
-import { Animated, Platform } from "react-native"
+import { Animated } from "react-native"
 import { useFocusEffect } from "expo-router"
 import { entranceScore } from "./tokens"
 
@@ -53,12 +53,12 @@ export function useReveal({
         Animated.timing(opacity, {
           toValue: 1,
           duration,
-          useNativeDriver: Platform.OS !== "web",
+          useNativeDriver: false,
         }),
         Animated.timing(translate, {
           toValue: 0,
           duration,
-          useNativeDriver: Platform.OS !== "web",
+          useNativeDriver: false,
         }),
       ]).start()
     }, at)
