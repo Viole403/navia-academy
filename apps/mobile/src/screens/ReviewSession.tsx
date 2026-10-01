@@ -83,7 +83,10 @@ export function ReviewSession() {
   // Fixed plan, frozen the first time data arrives.
   const [queue, setQueue] = useState<SrsCard[] | null>(null)
   useEffect(() => {
-    if (!queue || dueQ.isLoading) return
+    // `queue !== null` means the plan is already frozen. Bailing on `!queue`
+    // instead returned on the initial state, so it never ran and the screen
+    // stayed on its spinner for good.
+    if (queue !== null || dueQ.isLoading) return
     const all = dueQ.data ?? []
     if (mode === "mistakes") {
       const difficult = new Set(progressQ.data?.difficult_item_ids ?? [])
