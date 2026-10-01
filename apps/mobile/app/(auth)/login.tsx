@@ -3,14 +3,14 @@ import { Pressable, Text, View } from "react-native"
 import { useRouter } from "expo-router"
 import { useMutation } from "@tanstack/react-query"
 import { AuthShell } from "@/components/auth/AuthShell"
-import { GoogleSignInButton } from "@/components/ui/GoogleSignInButton"
+import { GoogleAuthSection } from "@/components/auth/GoogleAuthSection"
 import { Input } from "@/components/ui/Input"
 import { useTheme } from "@/theme/ThemeProvider"
 import { type } from "@/theme/typography"
 import { auth } from "@/api/endpoints"
-import { useGoogleAuth } from "@/hooks/useGoogleAuth"
 import { useAuthStore } from "@/store/auth"
 import { useT } from "@/i18n"
+import { googleAuthConfigured } from "@/utils/env"
 import { saveTokens } from "@/utils/secure"
 import { decorArt } from "@/components/study/art"
 
@@ -23,7 +23,6 @@ export default function Login() {
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
   const [error, setError] = useState<string | null>(null)
-  const google = useGoogleAuth()
 
   const login = useMutation({
     mutationFn: () => auth.login(email.trim().toLowerCase(), password),
@@ -69,31 +68,7 @@ export default function Login() {
               {t("auth.forgot")}
             </Text>
           </Pressable>
-          <View
-            style={{
-              flexDirection: "row",
-              alignItems: "center",
-              gap: 6,
-              alignSelf: "stretch",
-            }}
-          >
-            <View
-              style={{ flex: 1, height: 1, backgroundColor: theme.border }}
-            />
-            <Text style={[type.caption, { color: theme.textDim }]}>
-              {t("auth.or")}
-            </Text>
-            <View
-              style={{ flex: 1, height: 1, backgroundColor: theme.border }}
-            />
-          </View>
-          <GoogleSignInButton
-            title={t("auth.google")}
-            onPress={google.prompt}
-            loading={google.pending}
-            // An unconfigured client must not offer a button that cannot work.
-            disabled={!google.canPrompt}
-          />
+          {googleAuthConfigured && <GoogleAuthSection />}
           <Pressable onPress={() => router.replace("/(auth)/register")}>
             <Text style={[type.bodySm, { color: theme.textMuted }]}>
               {t("auth.newHere")}{" "}

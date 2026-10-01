@@ -44,6 +44,19 @@ export const env = {
 }
 
 /**
+ * Plain boolean, safe to read outside React.
+ *
+ * `Google.useAuthRequest` throws while rendering when the client id for the
+ * current platform is `undefined`, so the hook must never be mounted in a build
+ * without one. Screens gate on this flag instead of on the hook's own state.
+ */
+export const googleAuthConfigured = !!(
+  env.google.android ||
+  env.google.ios ||
+  env.google.web
+)
+
+/**
  * Resolve a possibly-relative media URL against the configured base URL.
  * Absolute URLs (http/https/CDN) are returned as-is.
  */

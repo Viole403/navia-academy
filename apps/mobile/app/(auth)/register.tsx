@@ -3,15 +3,15 @@ import { Pressable, Text, View } from "react-native"
 import { useRouter } from "expo-router"
 import { useMutation } from "@tanstack/react-query"
 import { AuthShell } from "@/components/auth/AuthShell"
-import { GoogleSignInButton } from "@/components/ui/GoogleSignInButton"
+import { GoogleAuthSection } from "@/components/auth/GoogleAuthSection"
 import { Input } from "@/components/ui/Input"
 import { useTheme } from "@/theme/ThemeProvider"
 import { type } from "@/theme/typography"
 import { decorArt } from "@/components/study/art"
 import { auth } from "@/api/endpoints"
-import { useGoogleAuth } from "@/hooks/useGoogleAuth"
 import { useAuthStore } from "@/store/auth"
 import { useT } from "@/i18n"
+import { googleAuthConfigured } from "@/utils/env"
 import { saveTokens } from "@/utils/secure"
 
 export default function Register() {
@@ -24,7 +24,6 @@ export default function Register() {
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
   const [error, setError] = useState<string | null>(null)
-  const google = useGoogleAuth()
 
   const register = useMutation({
     mutationFn: () =>
@@ -86,30 +85,7 @@ export default function Register() {
               </Text>
             </Text>
           </Pressable>
-          <View
-            style={{
-              flexDirection: "row",
-              alignItems: "center",
-              gap: 6,
-              alignSelf: "stretch",
-            }}
-          >
-            <View
-              style={{ flex: 1, height: 1, backgroundColor: theme.border }}
-            />
-            <Text style={[type.caption, { color: theme.textDim }]}>
-              {t("auth.or")}
-            </Text>
-            <View
-              style={{ flex: 1, height: 1, backgroundColor: theme.border }}
-            />
-          </View>
-          <GoogleSignInButton
-            title={t("auth.google")}
-            onPress={google.prompt}
-            loading={google.pending}
-            disabled={!google.canPrompt}
-          />
+          {googleAuthConfigured && <GoogleAuthSection />}
         </View>
       }
     >
