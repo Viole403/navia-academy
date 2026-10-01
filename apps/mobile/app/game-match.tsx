@@ -1,7 +1,7 @@
 import { BackLink } from "@/components/ui/BackLink"
 import { useMemo, useRef, useState } from "react"
 import { ActivityIndicator, ScrollView, Text, View } from "react-native"
-import { SafeAreaView } from "react-native-safe-area-context"
+import { SafeAreaView, useSafeAreaInsets } from "react-native-safe-area-context"
 import { useRouter } from "expo-router"
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query"
 import { EmptyState } from "@/components/ui/EmptyState"
@@ -46,6 +46,7 @@ export default function GameMatch() {
   })
 
   const [cards, setCards] = useState<Card[]>([])
+  const insets = useSafeAreaInsets()
   const [open, setOpen] = useState<string | null>(null)
   const [wrong, setWrong] = useState<string[]>([])
   const wrongTimer = useRef<ReturnType<typeof setTimeout> | null>(null)
@@ -189,7 +190,8 @@ export default function GameMatch() {
         <ScrollView
           contentContainerStyle={{
             padding: 20,
-            paddingBottom: 48,
+            // The fixed 48 left the last row under the navigation bar.
+            paddingBottom: 48 + insets.bottom,
             gap: 22,
             maxWidth: column,
             width: "100%",
@@ -221,7 +223,8 @@ export default function GameMatch() {
         <ScrollView
           contentContainerStyle={{
             padding: 20,
-            paddingBottom: 48,
+            // The fixed 48 left the last row under the navigation bar.
+            paddingBottom: 48 + insets.bottom,
             gap: 22,
             maxWidth: column,
             width: "100%",
