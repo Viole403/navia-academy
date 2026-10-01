@@ -100,6 +100,19 @@ jobs:
             echo "${OUT}=${!VAR}" >> .env
           done
           echo "EXPO_PUBLIC_API_DEBUG=0" >> .env
+          # A plain http API URL needs cleartext permitted, or the release app
+          # blocks the request in its own network security config and reports a
+          # generic sign-in failure. Derived from the URL so the manifest can
+          # never drift from what was configured; an https URL stays strict.
+          API_URL=$(grep -m1 '^EXPO_PUBLIC_API_URL=' .env | cut -d= -f2-)
+          case "$API_URL" in
+            http://*)
+              echo "EXPO_ALLOW_CLEARTEXT=1" >> .env
+              if [ "${{ inputs.profile_env }}" = "production" ]; then
+                echo "::warning::production profile configured with a cleartext API URL"
+              fi
+              ;;
+          esac
           echo "--- .env (values masked) ---"
           sed 's/=.*/=<set>/' .env
           if grep -q 'example.com' .env; then
