@@ -1,0 +1,145 @@
+name: Mobile — native Android build (no EAS)
+
+# Builds the APK straight from Gradle on the runner. Complements eas-build.yml
+# rather than replacing it: that one produces signed store artifacts through EAS
+# and needs EXPO_TOKEN, this one needs neither and has no queue or build-time
+# cap. Use it for internal builds and for measuring a real release build on a
+# device.
+#
+# `apps/mobile/android/` is gitignored, so `expo prebuild` regenerates it from
+# app.json on every run — the build is reproducible from tracked files alone.
+
+on:
+  workflow_dispatch:
+    inputs:
+      abi:
+        description: "Target ABI"
+        type: choice
+        required: true
+        default: arm64-v8a
+        options:
+          - arm64-v8a
+          - arm64-v8a,armeabi-v7a
+          - all
+      variant:
+        description: "Gradle build type"
+        type: choice
+        required: true
+        default: release
+        options:
+          - release
+          - debug
+      profile_env:
+        description: "Which set of MOBILE_* repo variables to bake in"
+        type: choice
+        required: true
+        default: preview
+        options:
+          - preview
+          - production
+
+# Two dispatch runs race on nothing here — no shared writes beyond the runner —
+# but cancelling a superseded run saves runner minutes.
+concurrency:
+  group: android-native-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  build:
+    name: APK (${{ inputs.variant }}, ${{ inputs.abi }})
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: apps/mobile
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: "1.4.0"
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
+
+      # RN 0.86 pins the NDK it compiles against; 27.x is the match for this
+      # SDK, and the Hermes build pulls in cmake for it.
+      - name: Android SDK + NDK
+        uses: android-actions/setup-android@v3
+        with:
+          cmdline-tools-version: "11076708"
+          packages: |
+            platform-tools
+            platforms;android-36
+            build-tools;36.0.0
+            ndk;27.1.12297006
+            cmake;3.22.1
+
+      - name: Install dependencies
+        run: bun install --frozen-lockfile
+
+      - name: Write .env from repo variables
+        run: |
+          set -euo pipefail
+          # The JS bundle is built by Gradle, and Expo's bundler reads .env from
+          # the project root — so the values have to land in a file here, not
+          # just in the step environment.
+          SUFFIX="${{ inputs.profile_env == 'production' && 'PRODUCTION' || 'PREVIEW' }}"
+          # Repo vars are MOBILE_<X>_<SUFFIX>; the app reads EXPO_PUBLIC_<X>.
+          # Bash rejects a nested ${MOBILE_X_${SUFFIX}}, so use indirect lookup.
+          : > .env
+          for pair in \
+            "EXPO_PUBLIC_API_URL:API_URL" \
+            "EXPO_PUBLIC_MEDIA_BASE_URL:MEDIA_BASE_URL" \
+            "EXPO_PUBLIC_DATA_CDN_URL:DATA_CDN_URL" \
+            "EXPO_PUBLIC_AUDIO_CDN_URL:AUDIO_CDN_URL"
+          do
+            OUT="${pair%%:*}"; VAR="MOBILE_${pair##*:}_${SUFFIX}"
+            echo "${OUT}=${!VAR}" >> .env
+          done
+          echo "EXPO_PUBLIC_API_DEBUG=0" >> .env
+          echo "--- .env (values masked) ---"
+          sed 's/=.*/=<set>/' .env
+          if grep -q 'example.com' .env; then
+            echo "::warning::placeholder URLs — set the MOBILE_* repo variables before trusting this build"
+          fi
+        env:
+          MOBILE_API_URL_PREVIEW: ${{ vars.MOBILE_API_URL_PREVIEW }}
+          MOBILE_MEDIA_BASE_URL_PREVIEW: ${{ vars.MOBILE_MEDIA_BASE_URL_PREVIEW }}
+          MOBILE_DATA_CDN_URL_PREVIEW: ${{ vars.MOBILE_DATA_CDN_URL_PREVIEW }}
+          MOBILE_AUDIO_CDN_URL_PREVIEW: ${{ vars.MOBILE_AUDIO_CDN_URL_PREVIEW }}
+          MOBILE_API_URL_PRODUCTION: ${{ vars.MOBILE_API_URL_PRODUCTION }}
+          MOBILE_MEDIA_BASE_URL_PRODUCTION: ${{ vars.MOBILE_MEDIA_BASE_URL_PRODUCTION }}
+          MOBILE_DATA_CDN_URL_PRODUCTION: ${{ vars.MOBILE_DATA_CDN_URL_PRODUCTION }}
+          MOBILE_AUDIO_CDN_URL_PRODUCTION: ${{ vars.MOBILE_AUDIO_CDN_URL_PRODUCTION }}
+
+      - name: Prebuild the native project
+        run: bunx expo prebuild --platform android --clean --no-install
+
+      # The release variant signs with the debug keystore (app/build.gradle sets
+      # signingConfigs.debug), which is deliberate: this workflow produces
+      # installable internal APKs. Store releases go through eas-build.yml.
+      - name: Build APK
+        run: |
+          set -euo pipefail
+          VARIANT="${{ inputs.variant }}"
+          case "${{ inputs.abi }}" in
+            all) ARCHES="" ;;
+            *)   ARCHES="-PreactNativeArchitectures=${{ inputs.abi }}" ;;
+          esac
+          ./android/gradlew \
+            -p android \
+            "assemble${VARIANT^}" \
+            --no-daemon \
+            --max-workers=2 \
+            -Dorg.gradle.jvmargs="-Xmx3g -XX:MaxMetaspaceSize=768m" \
+            $ARCHES
+
+      - name: Upload APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: navia-${{ inputs.variant }}-${{ inputs.abi | replace(',', '-') }}
+          path: apps/mobile/android/app/build/outputs/apk/**/*.apk
+          if-no-files-found: error
+          retention-days: 14
