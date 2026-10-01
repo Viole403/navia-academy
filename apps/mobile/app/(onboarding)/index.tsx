@@ -151,6 +151,7 @@ export default function Onboarding() {
   )
 
   const info = languageInfo(language)
+  const stepNo = String(visible.indexOf(step) + 1).padStart(2, "0")
 
   // A fresh install shows a language as already selected — the store has a
   // default — but nothing had tapped a card, so no exam had been chosen either.
@@ -214,7 +215,10 @@ export default function Onboarding() {
       <Slide stepKey={step}>
         <View style={{ gap: 4 }}>
           <Text style={[type.labelSm, { color: theme.textMuted }]}>
-            {t(KICKERS[step])}
+            {/* Number derived from the visible steps: `script` is skipped for
+                Latin-script languages, so a hardcoded number in the string
+                would label the later steps wrong. */}
+            {t(KICKERS[step], { n: stepNo })}
           </Text>
           <Text style={[type.display, { color: theme.text, fontSize: 32 }]}>
             {t(TITLES[step])}
