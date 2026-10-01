@@ -70,6 +70,8 @@ const id: Record<I18nKey, string> = {
   "learn.programSuffix": "terpandu dengan pelajaran.",
   "learn.listening": "Mendengar",
   "learn.listeningDesc": "Dengar katanya, pilih artinya.",
+  "learn.listeningDrill": "Latihan mendengar",
+  "learn.listeningDrillDesc": "Sepuluh kata dari seluruh kamus.",
   "learn.speaking": "Berbicara",
   "learn.speakingDesc": "Ucapkan prompt, nilai sendiri.",
   "learn.writing": "Menulis",

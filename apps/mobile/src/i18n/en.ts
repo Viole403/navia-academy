@@ -70,6 +70,8 @@ const en = {
   "learn.programSuffix": "path with lessons.",
   "learn.listening": "Listening",
   "learn.listeningDesc": "Hear the word, pick the meaning.",
+  "learn.listeningDrill": "Listening drill",
+  "learn.listeningDrillDesc": "Ten words from anywhere in the dictionary.",
   "learn.speaking": "Speaking",
   "learn.speakingDesc": "Say prompts aloud, grade yourself.",
   "learn.writing": "Writing",

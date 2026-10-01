@@ -228,10 +228,12 @@ export function ReviewHub() {
             })
           )}
 
+          {/* Free-play drill, distinct from the counted Listening mode above:
+              this one samples the whole dictionary instead of the due set. */}
           <PaperCard
             tone="word"
-            title={t("learn.listening")}
-            body={t("learn.listeningDesc")}
+            title={t("learn.listeningDrill")}
+            body={t("learn.listeningDrillDesc")}
             onPress={() => {
               tap()
               router.push("/listening-drill")
