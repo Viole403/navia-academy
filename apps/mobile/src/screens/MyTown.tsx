@@ -40,9 +40,9 @@ interface Building {
 }
 
 const BUILDINGS: Building[] = [
-  { id: "temple", nameKey: "town.temple", xpCost: 0, glyph: "⛩️" },
-  { id: "teaHouse", nameKey: "town.teaHouse", xpCost: 300, glyph: "🍵" },
-  { id: "noodleShop", nameKey: "town.noodleShop", xpCost: 700, glyph: "🍜" },
+  { id: "assemblyHall", nameKey: "town.assemblyHall", xpCost: 0, glyph: "⛩️" },
+  { id: "cafeGarden", nameKey: "town.cafeGarden", xpCost: 300, glyph: "🍵" },
+  { id: "foodShop", nameKey: "town.foodShop", xpCost: 700, glyph: "🍜" },
   {
     id: "gardenPavilion",
     nameKey: "town.gardenPavilion",
@@ -50,8 +50,8 @@ const BUILDINGS: Building[] = [
     glyph: "🌸",
   },
   {
-    id: "lanternStreet",
-    nameKey: "town.lanternStreet",
+    id: "oldStreet",
+    nameKey: "town.oldStreet",
     xpCost: 1800,
     glyph: "🏮",
   },
@@ -62,14 +62,14 @@ const BUILDINGS: Building[] = [
     glyph: "🌉",
   },
   {
-    id: "buddhistStatue",
-    nameKey: "town.buddhistStatue",
+    id: "monument",
+    nameKey: "town.monument",
     xpCost: 3300,
     glyph: "🗿",
   },
   {
-    id: "mountainPagoda",
-    nameKey: "town.mountainPagoda",
+    id: "hilltopLandmark",
+    nameKey: "town.hilltopLandmark",
     xpCost: 4200,
     glyph: "🗼",
   },
@@ -79,7 +79,7 @@ const BUILDINGS: Building[] = [
     xpCost: 5200,
     glyph: "🏪",
   },
-  { id: "grandPalace", nameKey: "town.grandPalace", xpCost: 6500, glyph: "🏯" },
+  { id: "civicHall", nameKey: "town.civicHall", xpCost: 6500, glyph: "🏯" },
 ]
 
 const TOWN_KEY = "navia.town.v1"
