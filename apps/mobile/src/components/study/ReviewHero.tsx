@@ -55,10 +55,14 @@ export function ReviewHero({
 
   return (
     <View style={{ height: 132, overflow: "hidden" }}>
-      {/* Scenery, in from the right. */}
+      {/* Scenery, in from the right. The wrapper has to be the full box: its
+          only child is absolutely positioned, so it contributes nothing to the
+          wrapper's size and the wrapper collapsed to 0x0 — which pushed the
+          range up and off the strip, leaving a sliver of it in the corner. */}
       <Animated.View
         style={{
           position: "absolute",
+          inset: 0,
           opacity: scenery.opacity,
           transform: [{ translateX: scenery.translate }],
         }}
