@@ -19,6 +19,10 @@ Compact guidance for AI coding agents. Every line is something an agent would li
 - `apps/mobile` — Expo + React Native, **Tailwind v3 + nativewind** (different major from web/media v4 — don't unify).
 - `packages/` — `types` (shared TS types), `utils`, `eslint-config` (`@navia/eslint-config`).
 
+## Native Android builds
+
+**Never run Gradle locally.** The VPS has a hard RAM budget and the api plus the media batch jobs already claim it, so a local `./gradlew assembleRelease` can OOM the box. Build through `.github/workflows/android-native-build.yml` (workflow_dispatch), which prebuilds from `app.json` since `apps/mobile/android/` is gitignored, then pull the APK artifact with `gh api`. Ask for `abi=arm64-v8a,x86_64` whenever the target might be an emulator: an arm64-only APK dies in `MainApplication.onCreate` with `SoLoaderDSONotFoundError: libreactnative.so`, which reads like an app crash but is only a packaging miss. `gh` needs `-R Viole403/navia-academy` because the remote is SSH-only.
+
 ## Backend (Go) commands
 
 - Setup: `cd apps/backend && cp .env.example .env && make dev` (dev runs natively — no Docker; point `DATABASE_URL`/`REDIS_URL` at local instances or cloud dev DBs).
