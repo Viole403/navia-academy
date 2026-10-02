@@ -9,14 +9,16 @@ import { PaperCard, LiftedFace } from "@/components/study/PaperCard"
 import { ProgressBar } from "@/components/ui/ProgressBar"
 import { FlexGap } from "@/components/study/press"
 import { Shifu } from "@/components/study/Shifu"
-import { townArtFor, type TownSlot } from "@/components/study/art"
+import { townCost, townFor, type TownSlot } from "@/components/study/town"
 import { useTargetLanguage } from "@/hooks/useTargetLanguage"
+import { useTargetScript } from "@/hooks/useTargetScript"
+import { useContentFaces } from "@/hooks/useContentFaces"
 import { useTheme } from "@/theme/ThemeProvider"
 import { useContentLayout } from "@/theme/layout"
 import { paperType, families } from "@/theme/paperType"
 import { progress } from "@/api/endpoints"
 import { storage } from "@/utils/storage"
-import { useT, type I18nKey } from "@/i18n"
+import { useT } from "@/i18n"
 import { playSound } from "@/utils/sound"
 import { careful, tap, thud } from "@/utils/feedback"
 
@@ -34,26 +36,10 @@ import { careful, tap, thud } from "@/utils/feedback"
  * what it still costs, and an explicit unlock is recorded locally — so the town
  * grows with the learner instead of being a decoration with buttons that do
  * nothing.
+ *
+ * The buildings themselves are named in the language being learned — the table
+ * that holds their cost, name and picture is in `study/town`.
  */
-interface Building {
-  id: TownSlot
-  nameKey: I18nKey
-  xpCost: number
-}
-
-const BUILDINGS: Building[] = [
-  { id: "assemblyHall", nameKey: "town.assemblyHall", xpCost: 0 },
-  { id: "cafeGarden", nameKey: "town.cafeGarden", xpCost: 300 },
-  { id: "foodShop", nameKey: "town.foodShop", xpCost: 700 },
-  { id: "gardenPavilion", nameKey: "town.gardenPavilion", xpCost: 1200 },
-  { id: "oldStreet", nameKey: "town.oldStreet", xpCost: 1800 },
-  { id: "riversideWalk", nameKey: "town.riversideWalk", xpCost: 2500 },
-  { id: "monument", nameKey: "town.monument", xpCost: 3300 },
-  { id: "hilltopLandmark", nameKey: "town.hilltopLandmark", xpCost: 4200 },
-  { id: "marketSquare", nameKey: "town.marketSquare", xpCost: 5200 },
-  { id: "civicHall", nameKey: "town.civicHall", xpCost: 6500 },
-]
-
 const TOWN_KEY = "navia.town.v1"
 
 export function MyTown() {
@@ -64,16 +50,20 @@ export function MyTown() {
   const columnWidth = column
 
   const language = useTargetLanguage()
-  const buildings = townArtFor(language)
+  const script = useTargetScript()
+  const buildings = useMemo(() => townFor(language, script), [language, script])
+  // A building name is a word in the language being learned, so it takes that
+  // language's face — Nunito carries no kanji and would draw tofu boxes.
+  const faces = useContentFaces()
 
   const progressQ = useQuery({ queryKey: ["progress"], queryFn: progress.get })
   const xp = progressQ.data?.xp ?? 0
   const unlocked = useTownState(xp)
 
-  const next = BUILDINGS.find((b) => !unlocked.includes(b.id))
+  const next = buildings.find((b) => !unlocked.includes(b.id))
   const level = useMemo(
-    () => BUILDINGS.filter((b) => unlocked.includes(b.id)).length,
-    [unlocked]
+    () => buildings.filter((b) => unlocked.includes(b.id)).length,
+    [buildings, unlocked]
   )
   const progressToNext =
     next && next.xpCost > 0 ? Math.min(1, xp / next.xpCost) : 1
@@ -165,7 +155,7 @@ export function MyTown() {
             ) : null}
           </PaperCard>
 
-          {BUILDINGS.map((b) => {
+          {buildings.map((b) => {
             const isUnlocked = unlocked.includes(b.id)
             const isNext = next?.id === b.id
             return (
@@ -205,7 +195,7 @@ export function MyTown() {
                         the reason to study, so a locked row dims what it is
                         withholding rather than swapping in a glyph. */}
                       <Image
-                        source={buildings[b.id]}
+                        source={b.source}
                         style={{
                           width: 56,
                           height: 56,
@@ -241,14 +231,14 @@ export function MyTown() {
                     <View style={{ flex: 1, gap: 3 }}>
                       <Text
                         style={[
-                          paperType.cardBody,
+                          paperType.cardTitleSm,
                           {
                             color: isUnlocked ? paper.ink : paper.inkMuted,
-                            fontFamily: families.nunitoExtraBold,
+                            fontFamily: faces.display,
                           },
                         ]}
                       >
-                        {t(b.nameKey)}
+                        {b.name}
                       </Text>
                       <Text
                         style={[
@@ -305,7 +295,8 @@ export function MyTown() {
 function useTownState(xp: number): string[] {
   const [manual, setManual] = useState<string[]>([])
   const derived = useMemo(
-    () => BUILDINGS.filter((b) => b.xpCost <= xp).map((b) => b.id),
+    () =>
+      (Object.keys(townCost) as TownSlot[]).filter((id) => townCost[id] <= xp),
     [xp]
   )
   useEffect(() => {
