@@ -58,7 +58,7 @@ export function OnbShell({
   children: React.ReactNode
   /** The welcome screen has nothing to scroll. */
   scroll?: boolean
-  art?: "none" | "branch" | "pagoda" | "panorama"
+  art?: "none" | "branch" | "peaks" | "panorama"
 }) {
   const { paper } = useTheme()
   const language = useTargetLanguage()
@@ -128,12 +128,16 @@ export function OnbShell({
               accessibilityIgnoresInvertColors
             />
           ) : null}
-          {art === "pagoda" ? (
+          {art === "peaks" ? (
             <Image
               source={decor.peaks}
               style={{
                 position: "absolute",
-                top: 30,
+                // Lifted clear of the subtitle for the same reason the branch
+                // is: at top 30 it ran its lower third over the step's own text
+                // and left the last few words unreadable. Bleeding up into the
+                // status bar costs nothing — it is opaque and draws over this.
+                top: -34,
                 right: -20,
                 width: 220,
                 height: 220 * artRatio.peaks,

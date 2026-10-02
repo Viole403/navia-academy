@@ -189,7 +189,7 @@ export default function Onboarding() {
           : step === "script"
             ? "branch"
             : step === "ready"
-              ? "pagoda"
+              ? "peaks"
               : "none"
       }
       footer={
