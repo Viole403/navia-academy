@@ -199,7 +199,7 @@ export function ReviewSession() {
     return [word, ...(distractorsQ.data ?? [])]
   }, [mode, word, distractorsQ.data])
 
-  if (dueQ.isLoading || queue === null) {
+  if (dueQ.isLoading || queue === null || wordQ.isLoading) {
     return (
       <SafeAreaView
         style={{
@@ -312,6 +312,30 @@ export function ReviewSession() {
               setCelebrate(true)
               goBack()
             }}
+          />
+        </View>
+      ) : wordQ.isError ? (
+        <View
+          style={{
+            flex: 1,
+            alignItems: "center",
+            justifyContent: "center",
+            padding: 32,
+          }}
+        >
+          <Text
+            style={[
+              paperType.cardBody,
+              { color: paper.inkMuted, fontFamily: families.nunitoSemiBold },
+            ]}
+          >
+            {t("review.loadFailed")}
+          </Text>
+          <View style={{ height: 20 }} />
+          <LiftedFace
+            title={t("common.retry")}
+            face={paper.coral}
+            onPress={() => wordQ.refetch()}
           />
         </View>
       ) : !current || !word ? (

@@ -152,6 +152,8 @@ const id: Record<I18nKey, string> = {
   "review.doneMsg": "Bagus. Kembali besok untuk batch berikutnya.",
   "review.backToLearn": "Kembali Belajar",
   "review.noCards": "Tidak ada kartu",
+  "review.loadFailed":
+    "Tidak bisa memuat kartu ini. Periksa koneksi lalu coba lagi.",
   "review.tapReveal": "Ketuk untuk membuka",
   "review.revealed": "Jawaban terbuka",
   "review.g0": "Lupa",

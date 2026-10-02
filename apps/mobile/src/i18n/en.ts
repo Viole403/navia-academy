@@ -152,6 +152,8 @@ const en = {
   "review.doneMsg": "Nice work. Come back tomorrow for the next batch.",
   "review.backToLearn": "Back to Learn",
   "review.noCards": "No cards due",
+  "review.loadFailed":
+    "Could not load this card. Check your connection and try again.",
   "review.tapReveal": "Tap to reveal",
   "review.revealed": "Answer revealed",
   "review.g0": "Lupa",
