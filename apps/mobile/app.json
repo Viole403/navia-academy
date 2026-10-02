@@ -37,7 +37,7 @@
       "versionCode": 1,
       "adaptiveIcon": {
         "foregroundImage": "./assets/foreground.png",
-        "backgroundColor": "#0B0F1A",
+        "backgroundColor": "#F3E9D7",
         "monochromeImage": "./assets/monochrome.png"
       },
       "permissions": ["INTERNET"],

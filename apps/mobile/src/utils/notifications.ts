@@ -52,6 +52,10 @@ export async function scheduleDailyStreakReminder(
   }
   await Notifications.scheduleNotificationAsync({
     content: {
+      // Android draws the status-bar icon from the alpha channel alone and tints
+      // it, so the full-colour launcher icon arrives as an unreadable blob. This
+      // one is a flat silhouette for that reason, not a smaller logo.
+      icon: require("@assets/notification.png"),
       // A notification is the one string that reaches someone with the app
       // closed, so it cannot fall back to a hardcoded English literal — the
       // learner's chosen locale has to be read at schedule time.
