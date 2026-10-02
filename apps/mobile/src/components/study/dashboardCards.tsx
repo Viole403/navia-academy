@@ -1,4 +1,5 @@
 import { Image, Text, View } from "react-native"
+import { useTargetLanguage } from "@/hooks/useTargetLanguage"
 import { useTheme } from "@/theme/ThemeProvider"
 import { useContentFaces } from "@/hooks/useContentFaces"
 import { paperType, families } from "@/theme/paperType"
@@ -6,7 +7,7 @@ import { ReadingAid } from "@/components/study/ReadingAid"
 import { PaperCard, LiftedFace, QuietPill, PaperStat } from "./PaperCard"
 import { PressableScale } from "./press"
 import { WeekStrip } from "./WeekStrip"
-import { art, artRatio, reviewArt } from "./art"
+import { art, artRatio, decorFor, reviewArt } from "./art"
 import { useT } from "@/i18n"
 import type { StudySession } from "@/types/api"
 
@@ -163,6 +164,7 @@ export function ChallengesSummaryCard({
 }) {
   const { paper } = useTheme()
   const t = useT()
+  const { scroll } = decorFor(useTargetLanguage())
   // The link is right-aligned into the scroll's corner, so it reserves the art's width.
   const ART_WIDTH = 64
   const ART_INSET = 4
@@ -173,7 +175,7 @@ export function ChallengesSummaryCard({
       title={`${streak} ${t("home.streak")}`}
       body={t("home.challengesBody")}
       onPress={onOpen}
-      art={art.scroll}
+      art={scroll}
       artRatio={artRatio.scroll}
       artWidth={ART_WIDTH}
       artStyle={{ right: ART_INSET, bottom: -6 }}
@@ -213,8 +215,9 @@ export function WeeklyActivityCard({
 }) {
   const { paper } = useTheme()
   const t = useT()
+  const { tree } = decorFor(useTargetLanguage())
   const weekMinutes = useWeekMinutes(sessions)
-  // The bonsai overshoots the right edge, so only ART_WIDTH - the negative inset
+  // The tree overshoots the right edge, so only ART_WIDTH - the negative inset
   // sits over the card. The link below is pushed right, into the same corner.
   const ART_WIDTH = 96
   const ART_INSET = -6
@@ -223,8 +226,8 @@ export function WeeklyActivityCard({
       tone="week"
       tag={t("home.weekTitle").toUpperCase()}
       onPress={onOpen}
-      art={art.bonsai}
-      artRatio={artRatio.bonsai}
+      art={tree}
+      artRatio={artRatio.tree}
       artWidth={ART_WIDTH}
       artStyle={{ right: ART_INSET, bottom: -10 }}
     >

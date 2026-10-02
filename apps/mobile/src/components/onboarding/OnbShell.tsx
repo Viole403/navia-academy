@@ -16,7 +16,14 @@ import { useContentFaces } from "@/hooks/useContentFaces"
 import { useSafeAreaInsets } from "react-native-safe-area-context"
 import { paperType, families } from "@/theme/paperType"
 import { FlexGap } from "@/components/study/press"
-import { onbArt, artRatio } from "@/components/study/art"
+import {
+  artRatio,
+  branchByLanguage,
+  decorFor,
+  onbArt,
+} from "@/components/study/art"
+import { useTargetLanguage } from "@/hooks/useTargetLanguage"
+import { isCharScript } from "@/lib/languages"
 import { footerBottomInset } from "@/theme/layout"
 
 /**
@@ -54,6 +61,8 @@ export function OnbShell({
   art?: "none" | "branch" | "pagoda" | "panorama"
 }) {
   const { paper } = useTheme()
+  const language = useTargetLanguage()
+  const decor = decorFor(language)
   // Real device insets, not a guess.
   //
   // The app targets an SDK that draws edge to edge, so the window runs under
@@ -102,9 +111,9 @@ export function OnbShell({
             right: 0,
           }}
         >
-          {art === "branch" ? (
+          {art === "branch" && isCharScript(language) ? (
             <Image
-              source={onbArt.sakuraBranch}
+              source={branchByLanguage[language]}
               style={{
                 position: "absolute",
                 // Above the kicker, not across it. The branch sits at top 40 and
@@ -113,23 +122,25 @@ export function OnbShell({
                 top: -30,
                 left: -20,
                 width: 190,
-                height: 190 * artRatio.sakuraBranch,
+                height: 190 * artRatio.branch,
               }}
               resizeMode="contain"
+              accessibilityIgnoresInvertColors
             />
           ) : null}
           {art === "pagoda" ? (
             <Image
-              source={onbArt.pagodaMountains}
+              source={decor.peaks}
               style={{
                 position: "absolute",
                 top: 30,
                 right: -20,
                 width: 220,
-                height: 220 * artRatio.pagodaMountains,
+                height: 220 * artRatio.peaks,
                 transform: [{ scaleX: -1 }],
               }}
               resizeMode="contain"
+              accessibilityIgnoresInvertColors
             />
           ) : null}
           {art === "panorama" ? (
@@ -144,6 +155,7 @@ export function OnbShell({
                 height: 150,
               }}
               resizeMode="contain"
+              accessibilityIgnoresInvertColors
             />
           ) : null}
         </View>

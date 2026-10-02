@@ -2,8 +2,9 @@ import { useMemo } from "react"
 import { Animated, Image, Text, View, useWindowDimensions } from "react-native"
 import { useTheme } from "@/theme/ThemeProvider"
 import { paperType, families } from "@/theme/paperType"
+import { useTargetLanguage } from "@/hooks/useTargetLanguage"
 import { Shifu } from "./Shifu"
-import { onbArt, artRatio } from "./art"
+import { artRatio, decorFor } from "./art"
 import { useReveal } from "./Reveal"
 import { useT } from "@/i18n"
 
@@ -13,18 +14,19 @@ import { useT } from "@/i18n"
  * Both numbers below are load-bearing:
  *
  *  - **The bubble's width is derived, never hardcoded.** It is capped at
- *    `pagodaLeft - bubbleLeft - 8`, where `pagodaLeft` comes from the range's
- *    share, so the bubble is guaranteed clear of the pagoda at any screen width.
- *    A fixed margin measured against one window covers the artwork on every
- *    other one — which is exactly how the bubble ended up over the roofline.
- *  - The clearance rule is "clear of **the pagoda**", not "clear of the range".
- *    The range bleeds off the right edge and its faint left end is meant to sit
- *    under the text; treating the whole image as an obstacle is what leaves the
- *    strip mostly empty.
+ *    `peaksLeft - bubbleLeft - 8`, where `peaksLeft` comes from the range's
+ *    share, so the bubble is guaranteed clear of the near slope at any screen
+ *    width. A fixed margin measured against one window covers the artwork on
+ *    every other one — which is exactly how the bubble ended up over the
+ *    roofline.
+ *  - The clearance rule is "clear of **the near slope**", not "clear of the
+ *    range". The range bleeds off the right edge and its faint left end is meant
+ *    to sit under the text; treating the whole image as an obstacle is what
+ *    leaves the strip mostly empty.
  */
 const RANGE_SHARE = 0.56
 const RANGE_BLEED = 40
-const PAGODA_SHARE = 0.36
+const PEAKS_SHARE = 0.36
 const SHIFU_WIDTH = 84
 
 export function ReviewHero({
@@ -37,12 +39,13 @@ export function ReviewHero({
   run: number
 }) {
   const { paper } = useTheme()
+  const { peaks } = decorFor(useTargetLanguage())
   const { width } = useWindowDimensions()
 
   const rangeWidth = width * RANGE_SHARE
-  const pagodaLeft = width + RANGE_BLEED - rangeWidth * PAGODA_SHARE
+  const peaksLeft = width + RANGE_BLEED - rangeWidth * PEAKS_SHARE
   const bubbleLeft = SHIFU_WIDTH + 6
-  const bubbleMax = Math.max(150, pagodaLeft - bubbleLeft - 8)
+  const bubbleMax = Math.max(150, peaksLeft - bubbleLeft - 8)
 
   const beat = { at: 0, duration: 420, run }
   const scenery = useReveal(beat)
@@ -62,16 +65,17 @@ export function ReviewHero({
         pointerEvents="none"
       >
         <Image
-          source={onbArt.pagodaMountains}
+          source={peaks}
           style={{
             position: "absolute",
             right: -RANGE_BLEED,
             bottom: -6,
             width: rangeWidth,
-            height: rangeWidth * artRatio.pagodaMountains,
+            height: rangeWidth * artRatio.peaks,
             transform: [{ scaleX: -1 }],
           }}
           resizeMode="contain"
+          accessibilityIgnoresInvertColors
         />
       </Animated.View>
 

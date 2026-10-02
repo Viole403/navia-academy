@@ -1,16 +1,17 @@
 import { useMemo } from "react"
 import { Image, Text, View } from "react-native"
+import { useTargetLanguage } from "@/hooks/useTargetLanguage"
 import { useTheme } from "@/theme/ThemeProvider"
 import { paperType, families } from "@/theme/paperType"
 import { BrushHighlight } from "./BrushHighlight"
 import { Shifu } from "./Shifu"
-import { art, artRatio } from "./art"
+import { art, artRatio, decorFor } from "./art"
 
 /**
  * The hero.
  *
- * Layered back to front inside a clipped box: the mountain range, then the
- * bonsai, then Shifu rising out of the cards, then his speech bubble. Scenery is
+ * Layered back to front inside a clipped box: the mountain range, then the tree,
+ * then Shifu rising out of the cards, then his speech bubble. Scenery is
  * mirrored with `scaleX: -1` so its trunk and roofline sit on the right rather
  * than shipping a second render of the same artwork.
  *
@@ -32,6 +33,7 @@ export function DashboardHero({
   heroHeight: number
 }) {
   const { paper } = useTheme()
+  const { tree } = decorFor(useTargetLanguage())
   const [lead, ...rest] = greeting.split(" ")
   const tail = rest.join(" ")
 
@@ -57,17 +59,19 @@ export function DashboardHero({
             opacity: 0.9,
           }}
           resizeMode="contain"
+          accessibilityIgnoresInvertColors
         />
         <Image
-          source={art.bonsai}
+          source={tree}
           style={{
             position: "absolute",
             left: -18,
             bottom: 0,
             width: 130,
-            height: 130 * artRatio.bonsai,
+            height: 130 * artRatio.tree,
           }}
           resizeMode="contain"
+          accessibilityIgnoresInvertColors
         />
       </View>
 
