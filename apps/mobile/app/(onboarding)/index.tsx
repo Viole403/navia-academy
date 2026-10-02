@@ -303,11 +303,17 @@ export default function Onboarding() {
               >
                 {t("ob.wPathsTitle")}
               </Text>
+              {/* Two per row, not a wrapping row: four pills flowed by width
+                  and left three above one, which reads as an accident. Half the
+                  row each keeps the grid even and gives "Goethe-Zertifikat"
+                  room — a single row of four cannot hold it at 411dp. */}
               <View style={{ flexDirection: "row", flexWrap: "wrap", gap: 8 }}>
                 {LANGUAGES.map((l) => (
                   <View
                     key={l.code}
                     style={{
+                      flexBasis: "48%",
+                      flexGrow: 1,
                       paddingHorizontal: 12,
                       paddingVertical: 8,
                       borderRadius: paper.radius.pill,
