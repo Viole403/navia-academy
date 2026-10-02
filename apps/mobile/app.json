@@ -44,6 +44,7 @@
       "usesCleartextTraffic": false
     },
     "plugins": [
+      "expo-dev-client",
       "expo-router",
       "expo-secure-store",
       "expo-font",
