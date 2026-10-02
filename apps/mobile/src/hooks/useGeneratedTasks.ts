@@ -7,6 +7,7 @@ import { generateStudyTasks } from "@/lib/taskPlanner"
 import { useOnboardingStore } from "@/store/onboarding"
 import { useT } from "@/i18n"
 import type { AssessmentAttempt, StudyTask } from "@/types/api"
+import { useTargetLanguage } from "@/hooks/useTargetLanguage"
 
 /**
  * Tasks proposed from the learner's own progress.
@@ -22,7 +23,7 @@ import type { AssessmentAttempt, StudyTask } from "@/types/api"
  */
 export function useGeneratedTasks(existing: StudyTask[] = []) {
   const t = useT()
-  const language = useOnboardingStore((s) => s.language)
+  const language = useTargetLanguage()
   const settings = useUserSettings()
 
   const results = useQueries({

@@ -14,6 +14,7 @@ import { motifChar } from "@/lib/languages"
 import { useOnboardingStore } from "@/store/onboarding"
 import { useT } from "@/i18n"
 import { tap } from "@/utils/feedback"
+import { useTargetLanguage } from "@/hooks/useTargetLanguage"
 
 /**
  * /notifications — what is waiting, computed from live data.
@@ -33,7 +34,7 @@ export function Notifications() {
   const { column: columnWidth } = useContentLayout()
   const t = useT()
   const router = useRouter()
-  const language = useOnboardingStore((s) => s.language)
+  const language = useTargetLanguage()
 
   const progressQ = useQuery({ queryKey: ["progress"], queryFn: progress.get })
   const dueQ = useQuery({

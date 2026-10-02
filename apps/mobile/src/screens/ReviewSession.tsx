@@ -38,6 +38,7 @@ import {
   reviewWithQueue,
 } from "@/utils/offlineQueue"
 import type { SrsCard, VocabWord } from "@/types/api"
+import { useTargetLanguage } from "@/hooks/useTargetLanguage"
 
 type Mode = "flashcards" | "listening" | "mistakes"
 type Grade = 0 | 1 | 2 | 3
@@ -64,7 +65,7 @@ export function ReviewSession() {
   const goBack = useGuardedBack("/review")
   const router = useRouter()
   const qc = useQueryClient()
-  const language = useOnboardingStore((s) => s.language)
+  const language = useTargetLanguage()
   const tts = useTts()
   const { column: columnWidth } = useContentLayout()
 

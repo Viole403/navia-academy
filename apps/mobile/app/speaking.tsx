@@ -20,6 +20,7 @@ import { useOnboardingStore } from "@/store/onboarding"
 import { useT } from "@/i18n"
 import { STUDY_DIRTY_KEYS, logStudyWithQueue } from "@/utils/offlineQueue"
 import { speakingPrompts } from "@/lib/prompts"
+import { useTargetLanguage } from "@/hooks/useTargetLanguage"
 
 type Verdict = "fluent" | "rough"
 
@@ -28,7 +29,7 @@ export default function SpeakingScreen() {
   const { column } = useContentLayout()
   const t = useT()
   const qc = useQueryClient()
-  const language = useOnboardingStore((s) => s.language)
+  const language = useTargetLanguage()
   const prompts = speakingPrompts(language)
 
   const [promptIdx, setPromptIdx] = useState(0)

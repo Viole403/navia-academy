@@ -15,6 +15,7 @@ import { motifChar } from "@/lib/languages"
 import { useOnboardingStore } from "@/store/onboarding"
 import { useGuardedBack } from "@/hooks/useGuardedBack"
 import { useT } from "@/i18n"
+import { useTargetLanguage } from "@/hooks/useTargetLanguage"
 
 type Mode = "contributor" | "sponsor"
 
@@ -24,7 +25,7 @@ export default function Apply() {
   const router = useRouter()
   const t = useT()
   const goBack = useGuardedBack("/(tabs)")
-  const language = useOnboardingStore((s) => s.language)
+  const language = useTargetLanguage()
   const [mode, setMode] = useState<Mode>("contributor")
   const [name, setName] = useState("")
   const [email, setEmail] = useState("")

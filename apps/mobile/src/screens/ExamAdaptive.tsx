@@ -24,6 +24,7 @@ import { useTts } from "@/hooks/useTts"
 import { useT } from "@/i18n"
 import { tap, thud } from "@/utils/feedback"
 import type { CatAnswer } from "@/types/api"
+import { useTargetLanguage } from "@/hooks/useTargetLanguage"
 
 const REVEAL_MS = 650
 
@@ -53,7 +54,7 @@ export function ExamAdaptive() {
   const faces = useContentFaces()
   const t = useT()
   const qc = useQueryClient()
-  const language = useOnboardingStore((s) => s.language)
+  const language = useTargetLanguage()
   const examType = useOnboardingStore((s) => s.examType)
   const tts = useTts()
 

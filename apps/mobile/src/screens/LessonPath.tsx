@@ -22,6 +22,7 @@ import { useOnboardingStore } from "@/store/onboarding"
 import { useT } from "@/i18n"
 import { BackLink } from "@/components/ui/BackLink"
 import { tap } from "@/utils/feedback"
+import { useTargetLanguage } from "@/hooks/useTargetLanguage"
 
 /**
  * The lesson path.
@@ -40,7 +41,7 @@ export function LessonPath() {
   const { paper } = useTheme()
   const t = useT()
   const router = useRouter()
-  const language = useOnboardingStore((s) => s.language)
+  const language = useTargetLanguage()
   const examType = useOnboardingStore((s) => s.examType)
   const { column } = useContentLayout()
   const columnWidth = column

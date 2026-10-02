@@ -3,6 +3,7 @@ import { useQuery } from "@tanstack/react-query"
 import { loadVocabulary } from "@/lib/content-data"
 import { useOnboardingStore } from "@/store/onboarding"
 import type { VocabWord } from "@/types/api"
+import { useTargetLanguage } from "@/hooks/useTargetLanguage"
 
 /**
  * Resolve card item ids to their vocabulary entries.
@@ -17,7 +18,7 @@ import type { VocabWord } from "@/types/api"
  * a raw identifier — a row reading `vocab:hs1:0231` teaches nobody anything.
  */
 export function useWordsFor(ids: string[]): Record<string, VocabWord> {
-  const language = useOnboardingStore((s) => s.language)
+  const language = useTargetLanguage()
   const key = ids.slice().sort().join("|")
 
   const vocabQ = useQuery({

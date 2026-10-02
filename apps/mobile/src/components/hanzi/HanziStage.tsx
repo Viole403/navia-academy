@@ -14,6 +14,7 @@ import { useTheme } from "@/theme/ThemeProvider"
 import { hanziFont, families } from "@/theme/paperType"
 import { useOnboardingStore } from "@/store/onboarding"
 import { WRITER_HTML } from "./writerHtml"
+import { useTargetScript } from "@/hooks/useTargetScript"
 
 /**
  * react-native-webview v14 declares `class WebView<P = undefined>`, and the
@@ -296,7 +297,7 @@ function SingleGlyphStage({
   onDemoComplete,
 }: GlyphProps) {
   const { paper } = useTheme()
-  const script = useOnboardingStore((s) => s.script ?? "simplified")
+  const script = useTargetScript()
   const webviewRef = useRef<InstanceType<typeof RawWebView>>(null)
   const startedRef = useRef(false)
   const webviewReadyRef = useRef(false)

@@ -15,6 +15,7 @@ import { examDisplayName, motifChar } from "@/lib/languages"
 import { useOnboardingStore } from "@/store/onboarding"
 import { useT } from "@/i18n"
 import { useRouter } from "expo-router"
+import { useTargetLanguage } from "@/hooks/useTargetLanguage"
 
 interface Level {
   id: string
@@ -132,7 +133,7 @@ export default function ProgramScreen() {
   const { paper } = useTheme()
   const { column } = useContentLayout()
   const t = useT()
-  const language = useOnboardingStore((s) => s.language)
+  const language = useTargetLanguage()
   const storedExamType = useOnboardingStore((s) => s.examType)
   const router = useRouter()
 
@@ -351,7 +352,7 @@ export default function ProgramScreen() {
 
 function Masthead({ title }: { title: string }) {
   const { paper } = useTheme()
-  const language = useOnboardingStore((s) => s.language)
+  const language = useTargetLanguage()
   const t = useT()
   return (
     <>

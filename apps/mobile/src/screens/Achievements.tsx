@@ -11,6 +11,7 @@ import { progress } from "@/api/endpoints"
 import { motifChar } from "@/lib/languages"
 import { useOnboardingStore } from "@/store/onboarding"
 import { useT } from "@/i18n"
+import { useTargetLanguage } from "@/hooks/useTargetLanguage"
 
 /**
  * /achievements — the badges wall (web parity: /achievements).
@@ -24,7 +25,7 @@ export function Achievements() {
   const { paper } = useTheme()
   const { column: columnWidth } = useContentLayout()
   const t = useT()
-  const language = useOnboardingStore((s) => s.language)
+  const language = useTargetLanguage()
 
   const badgesQ = useQuery({
     queryKey: ["achievements"],

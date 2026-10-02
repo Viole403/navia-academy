@@ -17,6 +17,7 @@ import { useTts } from "@/hooks/useTts"
 import { useT } from "@/i18n"
 import { STUDY_DIRTY_KEYS, logStudyWithQueue } from "@/utils/offlineQueue"
 import type { VocabWord } from "@/types/api"
+import { useTargetLanguage } from "@/hooks/useTargetLanguage"
 
 const ROUNDS = 10
 
@@ -35,7 +36,7 @@ export default function ListeningDrillScreen() {
   const { paper } = useTheme()
   const { column } = useContentLayout()
   const t = useT()
-  const language = useOnboardingStore((s) => s.language)
+  const language = useTargetLanguage()
   const qc = useQueryClient()
   const tts = useTts()
 

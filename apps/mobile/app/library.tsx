@@ -47,6 +47,7 @@ import type {
   Reading,
   ReadingParagraph,
 } from "@/types/api"
+import { useTargetLanguage } from "@/hooks/useTargetLanguage"
 
 type LibSection = "grammar" | "readings" | "conversations" | "characters"
 
@@ -62,7 +63,7 @@ export default function LibraryScreen() {
   const { column } = useContentLayout()
   const t = useT()
   const router = useRouter()
-  const language = useOnboardingStore((s) => s.language)
+  const language = useTargetLanguage()
   const charScript = isCharScript(language)
 
   const sections = useMemo<LibSection[]>(
@@ -130,8 +131,12 @@ export default function LibraryScreen() {
   const errored = activeQ.isError
 
   const grammarPoints = (grammarQ.data ?? []) as GrammarPoint[]
-  const examName = examDisplayName(examType ?? languageForExam("hsk"))
-  const levelLadder = examLevels(examType ?? languageForExam("hsk"))
+  // `examType` and these two helpers both speak exam keys. Falling back through
+  // `languageForExam("hsk")` handed them the string "zh" instead, so an unset
+  // exam produced a blank heading rather than the Mandarin one it meant to name.
+  const activeExam = examType ?? "hsk"
+  const examName = examDisplayName(activeExam)
+  const levelLadder = examLevels(activeExam)
   const filteredGrammar = useMemo(() => {
     const q = query.trim().toLowerCase()
     return grammarPoints.filter((g) => {

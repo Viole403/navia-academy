@@ -22,6 +22,7 @@ import { useOnboardingStore } from "@/store/onboarding"
 import { useT, useLocaleStore } from "@/i18n"
 import { tap } from "@/utils/feedback"
 import type { Reading } from "@/types/api"
+import { useTargetLanguage } from "@/hooks/useTargetLanguage"
 
 /**
  * Books — the reading library, on shelves.
@@ -35,7 +36,7 @@ export function Books() {
   const t = useT()
   const locale = useLocaleStore((s) => s.locale)
   const router = useRouter()
-  const language = useOnboardingStore((s) => s.language)
+  const language = useTargetLanguage()
   const { column: columnWidth } = useContentLayout()
 
   const readingsQ = useQuery({

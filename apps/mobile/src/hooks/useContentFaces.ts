@@ -6,6 +6,8 @@ import {
   type FontFamily,
 } from "@/theme/paperType"
 import { useTheme } from "@/theme/ThemeProvider"
+import { useTargetLanguage } from "@/hooks/useTargetLanguage"
+import { useTargetScript } from "@/hooks/useTargetScript"
 
 /**
  * Content faces, bound to the learner's actual language and script.
@@ -17,8 +19,8 @@ import { useTheme } from "@/theme/ThemeProvider"
  * typeface — both of which render perfectly and look wrong.
  */
 export function useContentFaces() {
-  const language = useOnboardingStore((s) => s.language)
-  const script = useOnboardingStore((s) => s.script ?? "simplified")
+  const language = useTargetLanguage()
+  const script = useTargetScript()
 
   return {
     language,

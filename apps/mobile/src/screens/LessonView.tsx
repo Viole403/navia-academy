@@ -19,6 +19,7 @@ import { useOnboardingStore } from "@/store/onboarding"
 import { STUDY_DIRTY_KEYS, logStudyWithQueue } from "@/utils/offlineQueue"
 import { useT } from "@/i18n"
 import { tap, thud } from "@/utils/feedback"
+import { useTargetLanguage } from "@/hooks/useTargetLanguage"
 
 interface LessonStep {
   id: string
@@ -59,7 +60,7 @@ export function LessonView() {
   const t = useT()
   const qc = useQueryClient()
   const { id } = useLocalSearchParams<{ id?: string }>()
-  const language = useOnboardingStore((s) => s.language)
+  const language = useTargetLanguage()
 
   const [step, setStep] = useState(0)
 

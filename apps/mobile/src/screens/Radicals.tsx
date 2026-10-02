@@ -24,6 +24,7 @@ import { useT } from "@/i18n"
 import { BackLink } from "@/components/ui/BackLink"
 import { tick } from "@/utils/feedback"
 import type { HanziChar } from "@/types/api"
+import { useTargetLanguage } from "@/hooks/useTargetLanguage"
 
 /**
  * Radicals.
@@ -46,7 +47,7 @@ export function Radicals() {
   const faces = useContentFaces()
   const t = useT()
   const router = useRouter()
-  const language = useOnboardingStore((s) => s.language)
+  const language = useTargetLanguage()
   const { column: columnWidth } = useContentLayout()
   const [query, setQuery] = useState("")
 

@@ -12,6 +12,7 @@ import { paperType, families, hanziType } from "@/theme/paperType"
 import { loadCharacters } from "@/lib/content-data"
 import { useOnboardingStore } from "@/store/onboarding"
 import { useT } from "@/i18n"
+import { useTargetLanguage } from "@/hooks/useTargetLanguage"
 
 /**
  * Character detail — one glyph: its reading, its radical, its stroke count, and
@@ -25,7 +26,7 @@ export function CharacterDetail() {
   const { paper } = useTheme()
   const faces = useContentFaces()
   const t = useT()
-  const language = useOnboardingStore((s) => s.language)
+  const language = useTargetLanguage()
   const { char } = useLocalSearchParams<{ char?: string }>()
   const glyph = decodeURIComponent(char ?? "")
   const [mode, setMode] = useState<"demo" | "quiz">("demo")

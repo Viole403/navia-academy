@@ -36,6 +36,7 @@ import { headword, reading } from "@/lib/languages"
 import { useLocaleStore, useT } from "@/i18n"
 import { playSound } from "@/utils/sound"
 import { careful, tap } from "@/utils/feedback"
+import { useTargetLanguage } from "@/hooks/useTargetLanguage"
 
 /**
  * Hero height, measured against the first viewport on a 390×844 screen. Taller
@@ -73,7 +74,7 @@ export default function HomeTab() {
   const user = useAuthStore((s) => s.user)
   const t = useT()
   const locale = useLocaleStore((s) => s.locale)
-  const language = useOnboardingStore((s) => s.language)
+  const language = useTargetLanguage()
   const { column: columnWidth } = useContentLayout()
 
   const progressQ = useQuery({ queryKey: ["progress"], queryFn: progress.get })

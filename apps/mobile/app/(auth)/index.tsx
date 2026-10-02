@@ -9,13 +9,14 @@ import { languageInfo, motifChar, motifSub } from "@/lib/languages"
 import { useOnboardingStore } from "@/store/onboarding"
 import { useT } from "@/i18n"
 import { decorArt } from "@/components/study/art"
+import { useTargetLanguage } from "@/hooks/useTargetLanguage"
 
 export default function Welcome() {
   const { theme } = useTheme()
   const faces = useContentFaces()
   const router = useRouter()
   const t = useT()
-  const language = useOnboardingStore((s) => s.language)
+  const language = useTargetLanguage()
   const info = languageInfo(language)
 
   return (

@@ -40,6 +40,7 @@ import { useOnboardingStore } from "@/store/onboarding"
 import { useT, translate, useLocaleStore } from "@/i18n"
 import { tick } from "@/utils/feedback"
 import type { VocabWord } from "@/types/api"
+import { useTargetLanguage } from "@/hooks/useTargetLanguage"
 
 /**
  * The dictionary.
@@ -64,7 +65,7 @@ export function Dictionary() {
   const t = useT()
   const locale = useLocaleStore((s) => s.locale)
   const router = useRouter()
-  const language = useOnboardingStore((s) => s.language)
+  const language = useTargetLanguage()
   const storedExamType = useOnboardingStore((s) => s.examType)
   const { column: columnWidth } = useContentLayout()
   const charScript = isCharScript(language)
@@ -507,7 +508,7 @@ function WordRow({
   const { paper } = useTheme()
   const faces = useContentFaces()
   const router = useRouter()
-  const language = useOnboardingStore((s) => s.language)
+  const language = useTargetLanguage()
   const charScript = isCharScript(language)
   const lv = word.examMappings?.[examType]
 

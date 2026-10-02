@@ -14,6 +14,7 @@ import { useOnboardingStore } from "@/store/onboarding"
 import audioManifest from "@/data/audio/audio-manifest.json"
 import { type VoiceGender, type VoiceLocale } from "@/data/audio"
 import { deriveVoice } from "@/lib/voiceCast"
+import { useTargetLanguage } from "@/hooks/useTargetLanguage"
 
 const CDN_PUBLIC_URL = process.env.EXPO_PUBLIC_AUDIO_CDN_URL ?? ""
 const AUDIO_EXT = ".mp3"
@@ -127,7 +128,7 @@ export function useTts() {
   const [loading, setLoading] = useState(false)
   const [playing, setPlaying] = useState(false)
   const [error, setError] = useState<string | null>(null)
-  const language = useOnboardingStore((s) => s.language)
+  const language = useTargetLanguage()
 
   useEffect(() => {
     configureAudioSession()

@@ -18,6 +18,7 @@ import { useT } from "@/i18n"
 import { useOnboardingStore } from "@/store/onboarding"
 import { STUDY_DIRTY_KEYS, logStudyWithQueue } from "@/utils/offlineQueue"
 import type { VocabWord } from "@/types/api"
+import { useTargetLanguage } from "@/hooks/useTargetLanguage"
 
 interface Card {
   id: string
@@ -34,7 +35,7 @@ export default function GameMatch() {
   const faces = useContentFaces()
   const router = useRouter()
   const qc = useQueryClient()
-  const language = useOnboardingStore((s) => s.language)
+  const language = useTargetLanguage()
   const t = useT()
 
   const page = useQuery({

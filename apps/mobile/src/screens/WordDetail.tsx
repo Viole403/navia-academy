@@ -28,6 +28,7 @@ import { useT } from "@/i18n"
 import { playSound } from "@/utils/sound"
 import { tap, thud } from "@/utils/feedback"
 import type { VocabWord } from "@/types/api"
+import { useTargetLanguage } from "@/hooks/useTargetLanguage"
 
 interface Example {
   hanzi?: string
@@ -57,7 +58,7 @@ export function WordDetail() {
   const t = useT()
   const qc = useQueryClient()
   const { id } = useLocalSearchParams<{ id?: string }>()
-  const language = useOnboardingStore((s) => s.language)
+  const language = useTargetLanguage()
   const markWordViewed = useOnboardingStore((s) => s.markWordViewed)
   const tts = useTts()
   const {

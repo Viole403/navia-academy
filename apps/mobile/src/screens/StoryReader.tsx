@@ -17,6 +17,7 @@ import { useT, useLocaleStore } from "@/i18n"
 import { playSound } from "@/utils/sound"
 import { tap } from "@/utils/feedback"
 import type { ReadingParagraph } from "@/types/api"
+import { useTargetLanguage } from "@/hooks/useTargetLanguage"
 
 /**
  * The story reader.
@@ -37,7 +38,7 @@ export function StoryReader() {
   const locale = useLocaleStore((s) => s.locale)
   const router = useRouter()
   const { id } = useLocalSearchParams<{ id?: string }>()
-  const language = useOnboardingStore((s) => s.language)
+  const language = useTargetLanguage()
   const tts = useTts()
   const { showsPinyin, showsZhuyin, showsTranslation } = useDisplayMode()
   const qc = useQueryClient()

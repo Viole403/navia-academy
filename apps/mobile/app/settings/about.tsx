@@ -27,6 +27,7 @@ import { EmptyState } from "@/components/ui/EmptyState"
 import { auth, community } from "@/api/endpoints"
 import { useOnboardingStore } from "@/store/onboarding"
 import { useMutation, useQuery } from "@tanstack/react-query"
+import { useTargetLanguage } from "@/hooks/useTargetLanguage"
 
 const LINKS = [
   { id: "source", icon: "logo-github", url: "https://github.com" },
@@ -180,7 +181,7 @@ export function AboutSection() {
   const { theme, paper } = useTheme()
   const t = useT()
   const router = useRouter()
-  const language = useOnboardingStore((s) => s.language)
+  const language = useTargetLanguage()
   const contributorsQ = useQuery({
     queryKey: ["contributors"],
     queryFn: () => community.contributors(50),

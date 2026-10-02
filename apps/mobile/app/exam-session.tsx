@@ -19,6 +19,7 @@ import { useT } from "@/i18n"
 import { motifChar } from "@/lib/languages"
 import { useOnboardingStore } from "@/store/onboarding"
 import type { ExamQuestion, ExamSession } from "@/types/api"
+import { useTargetLanguage } from "@/hooks/useTargetLanguage"
 
 const LETTERS = ["A", "B", "C", "D", "E", "F"]
 
@@ -142,7 +143,7 @@ export default function ExamSessionScreen() {
   const faces = useContentFaces()
   const { column } = useContentLayout()
   const t = useT()
-  const language = useOnboardingStore((s) => s.language)
+  const language = useTargetLanguage()
   const router = useRouter()
   const params = useLocalSearchParams<{ id?: string }>()
   const sessionId = Number(params.id)

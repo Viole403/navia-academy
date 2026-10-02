@@ -18,6 +18,7 @@ import { examDisplayName, languageInfo, motifChar } from "@/lib/languages"
 import { useOnboardingStore } from "@/store/onboarding"
 import { useT } from "@/i18n"
 import type { CatAnswer, PlacementItem, PlacementResult } from "@/types/api"
+import { useTargetLanguage } from "@/hooks/useTargetLanguage"
 
 const MAX_QUESTIONS = 12
 const REVEAL_MS = 900
@@ -139,7 +140,7 @@ export default function PlacementTestScreen() {
   const { column } = useContentLayout()
   const router = useRouter()
   const qc = useQueryClient()
-  const language = useOnboardingStore((s) => s.language)
+  const language = useTargetLanguage()
   const examType = useOnboardingStore((s) => s.examType)
   const t = useT()
 

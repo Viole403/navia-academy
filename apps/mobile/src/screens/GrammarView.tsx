@@ -17,6 +17,7 @@ import { headword, motifChar, reading } from "@/lib/languages"
 import { useOnboardingStore } from "@/store/onboarding"
 import { useT } from "@/i18n"
 import { tap } from "@/utils/feedback"
+import { useTargetLanguage } from "@/hooks/useTargetLanguage"
 
 /**
  * /grammar/[id] — one grammar point (web parity: /grammar/[pointId]).
@@ -34,7 +35,7 @@ export function GrammarView() {
   const t = useT()
   const qc = useQueryClient()
   const { id } = useLocalSearchParams<{ id?: string }>()
-  const language = useOnboardingStore((s) => s.language)
+  const language = useTargetLanguage()
 
   const grammarQ = useQuery({
     queryKey: ["library-grammar", language],

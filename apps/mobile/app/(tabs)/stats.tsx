@@ -15,6 +15,7 @@ import { motifChar } from "@/lib/languages"
 import { useOnboardingStore } from "@/store/onboarding"
 import { tap } from "@/utils/feedback"
 import type { Achievement, StudySession } from "@/types/api"
+import { useTargetLanguage } from "@/hooks/useTargetLanguage"
 
 /**
  * Three views of the same study record: totals, the fortnight, the badges.
@@ -36,7 +37,7 @@ export default function StatsTab() {
   const { paper } = useTheme()
   const t = useT()
   const { column } = useContentLayout()
-  const language = useOnboardingStore((s) => s.language)
+  const language = useTargetLanguage()
   const [view, setView] = useState<"overview" | "badges" | "calendar">(
     "overview"
   )

@@ -24,6 +24,7 @@ import {
   languageInfo,
   motifChar,
 } from "@/lib/languages"
+import { useUserSettings } from "@/hooks/useUserSettings"
 import { progress } from "@/api/endpoints"
 import { useT, type I18nKey } from "@/i18n"
 import { tap } from "@/utils/feedback"
@@ -114,12 +115,21 @@ export default function Onboarding() {
   const [reminders, setReminders] = useState(false)
   const step = STEPS[stepIdx]
 
+  const settings = useUserSettings()
+
+  // Two records, because two exist. `progress` carries the finished step count
+  // the entry gate reads; `settings.active_exam_type` is what every
+  // language-scoped screen derives its language and script from. Writing only
+  // the first left a Goethe learner on Mandarin reading aids until they
+  // re-picked their path from the profile screen.
   const syncOnboarding = useMutation({
-    mutationFn: async () =>
-      progress.update({
+    mutationFn: async () => {
+      await progress.update({
         onboarding: { completed: true, step: STEPS.length },
         data: { script, language, examType, daily_minutes: dailyMinutes },
-      }),
+      })
+      if (examType) settings.set({ active_exam_type: examType })
+    },
     onError: () => undefined,
   })
 

@@ -27,6 +27,7 @@ import { useOnboardingStore } from "@/store/onboarding"
 import { useT } from "@/i18n"
 import { tap } from "@/utils/feedback"
 import type { ExamProgress, ExamSession } from "@/types/api"
+import { useTargetLanguage } from "@/hooks/useTargetLanguage"
 
 /**
  * The exam tab, as a page of paper.
@@ -57,7 +58,7 @@ export default function ExamTab() {
   const router = useRouter()
   const qc = useQueryClient()
   const { column } = useContentLayout()
-  const language = useOnboardingStore((s) => s.language)
+  const language = useTargetLanguage()
   const storedExamType = useOnboardingStore((s) => s.examType)
   const setStoredExamType = useOnboardingStore((s) => s.setExamType)
   const examTypes = languageInfo(language).examTypes

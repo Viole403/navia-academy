@@ -17,6 +17,7 @@ import { useOnboardingStore } from "@/store/onboarding"
 import { useTts } from "@/hooks/useTts"
 import { useT } from "@/i18n"
 import { tap } from "@/utils/feedback"
+import { useTargetLanguage } from "@/hooks/useTargetLanguage"
 
 /**
  * /conversation/[id] — dialogue player (web parity:
@@ -37,7 +38,7 @@ export function ConversationView() {
   const faces = useContentFaces()
   const t = useT()
   const { id } = useLocalSearchParams<{ id?: string }>()
-  const language = useOnboardingStore((s) => s.language)
+  const language = useTargetLanguage()
   const tts = useTts()
 
   const convQ = useQuery({

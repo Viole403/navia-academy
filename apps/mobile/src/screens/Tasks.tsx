@@ -19,6 +19,7 @@ import { useOnboardingStore } from "@/store/onboarding"
 import { useGeneratedTasks } from "@/hooks/useGeneratedTasks"
 import { useT } from "@/i18n"
 import { tap } from "@/utils/feedback"
+import { useTargetLanguage } from "@/hooks/useTargetLanguage"
 
 /**
  * /tasks — a plain list of things you meant to do (web parity: /tasks).
@@ -41,7 +42,7 @@ export function Tasks() {
   const t = useT()
   const qc = useQueryClient()
   const router = useRouter()
-  const language = useOnboardingStore((s) => s.language)
+  const language = useTargetLanguage()
   const [draft, setDraft] = useState("")
 
   const listQ = useQuery({ queryKey: ["tasks"], queryFn: tasks.list })

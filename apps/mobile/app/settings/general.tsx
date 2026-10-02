@@ -18,6 +18,7 @@ import { useLocaleStore, useT, type I18nKey } from "@/i18n"
 import { setSoundPrefs } from "@/utils/sound"
 import type { DisplayModeMode } from "@/types/api"
 import type { ThemeId, ThemeMode } from "@/theme/colors"
+import { useTargetLanguage } from "@/hooks/useTargetLanguage"
 
 /**
  * General — appearance, language, and the accessibility switches.
@@ -49,7 +50,7 @@ export default function SettingsGeneral() {
   const s = useUserSettings()
   const { displayMode, setMode, setAdaptiveByLevel } = useDisplayMode()
   const { themeId, mode, setThemeId, setMode: setModePref } = useThemePrefs()
-  const language = useOnboardingStore((st) => st.language)
+  const language = useTargetLanguage()
   const locale = useLocaleStore((st) => st.locale)
   const setLocale = useLocaleStore((st) => st.setLocale)
   const d = s.data

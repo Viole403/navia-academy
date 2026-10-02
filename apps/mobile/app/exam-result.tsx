@@ -12,6 +12,7 @@ import { useT } from "@/i18n"
 import { useOnboardingStore } from "@/store/onboarding"
 import { Celebration } from "@/components/study/Celebration"
 import { tap } from "@/utils/feedback"
+import { useTargetLanguage } from "@/hooks/useTargetLanguage"
 
 type P = {
   // Provided by the exam-session submit redirect
@@ -46,7 +47,7 @@ export default function ExamResultScreen() {
   const faces = useContentFaces()
   const { column } = useContentLayout()
   const t = useT()
-  const language = useOnboardingStore((s) => s.language)
+  const language = useTargetLanguage()
   const router = useRouter()
   const p = useLocalSearchParams<P>()
 

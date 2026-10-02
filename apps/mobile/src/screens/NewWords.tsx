@@ -23,6 +23,7 @@ import { storage } from "@/utils/storage"
 import { playSound } from "@/utils/sound"
 import { tap, thud } from "@/utils/feedback"
 import type { VocabWord } from "@/types/api"
+import { useTargetLanguage } from "@/hooks/useTargetLanguage"
 
 const HISTORY_KEY = "navia.newwords.v1"
 const HISTORY_LIMIT = 40
@@ -48,7 +49,7 @@ export function NewWords() {
   const t = useT()
   const locale = useLocaleStore((s) => s.locale)
   const router = useRouter()
-  const language = useOnboardingStore((s) => s.language)
+  const language = useTargetLanguage()
   const tts = useTts()
   const { column: columnWidth } = useContentLayout()
 

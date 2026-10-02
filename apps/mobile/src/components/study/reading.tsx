@@ -15,6 +15,7 @@ import { useT } from "@/i18n"
 import { BackLink } from "@/components/ui/BackLink"
 import { decorArt, artRatio } from "./art"
 import { tick } from "@/utils/feedback"
+import { useTargetLanguage } from "@/hooks/useTargetLanguage"
 
 /**
  * Segmented reading text.
@@ -35,7 +36,7 @@ export function TappableText({
   const { paper } = useTheme()
   const faces = useContentFaces()
   const router = useRouter()
-  const language = useOnboardingStore((s) => s.language)
+  const language = useTargetLanguage()
 
   const vocabQ = useQuery({
     queryKey: ["vocab-all", language],

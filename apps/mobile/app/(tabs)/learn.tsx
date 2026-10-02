@@ -23,6 +23,7 @@ import { useOnboardingStore } from "@/store/onboarding"
 import { useT } from "@/i18n"
 import { tap } from "@/utils/feedback"
 import type { I18nKey } from "@/i18n"
+import { useTargetLanguage } from "@/hooks/useTargetLanguage"
 
 /**
  * The learn hub, as a page of paper.
@@ -55,7 +56,7 @@ export default function LearnTab() {
   const t = useT()
   const router = useRouter()
   const { column } = useContentLayout()
-  const language = useOnboardingStore((s) => s.language) ?? DEFAULT_LANGUAGE
+  const language = useTargetLanguage() ?? DEFAULT_LANGUAGE
   const storedExamType = useOnboardingStore((s) => s.examType)
   const setStoredExamType = useOnboardingStore((s) => s.setExamType)
   const info = languageInfo(language)

@@ -15,6 +15,7 @@ import { useOnboardingStore } from "@/store/onboarding"
 import { useT } from "@/i18n"
 import { STUDY_DIRTY_KEYS, logStudyWithQueue } from "@/utils/offlineQueue"
 import { writingPrompts } from "@/lib/prompts"
+import { useTargetLanguage } from "@/hooks/useTargetLanguage"
 
 type Rubric = "on-target" | "partial" | "off-topic"
 
@@ -30,7 +31,7 @@ export default function WritingScreen() {
   const faces = useContentFaces()
   const t = useT()
   const qc = useQueryClient()
-  const language = useOnboardingStore((s) => s.language)
+  const language = useTargetLanguage()
   const prompts = writingPrompts(language)
 
   const [promptIdx, setPromptIdx] = useState(0)

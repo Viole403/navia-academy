@@ -19,6 +19,7 @@ import { useT } from "@/i18n"
 import { BackLink } from "@/components/ui/BackLink"
 import { tap } from "@/utils/feedback"
 import type { SrsCard } from "@/types/api"
+import { useTargetLanguage } from "@/hooks/useTargetLanguage"
 
 type Tier = "new" | "learning" | "proficient"
 
@@ -39,7 +40,7 @@ export function MyWords() {
   const faces = useContentFaces()
   const t = useT()
   const router = useRouter()
-  const language = useOnboardingStore((s) => s.language)
+  const language = useTargetLanguage()
   const { column: columnWidth } = useContentLayout()
   const [tier, setTier] = useState<Tier>("learning")
 

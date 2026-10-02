@@ -2,11 +2,13 @@ import { useEffect } from "react"
 import { Redirect } from "expo-router"
 import { Text, View, ActivityIndicator } from "react-native"
 import { useAuthStore } from "@/store/auth"
+import { useOnboardingProgress } from "@/hooks/useOnboardingProgress"
 import { useOnboardingStore } from "@/store/onboarding"
 import { Motif } from "@/components/ui/Motif"
 import { motifChar } from "@/lib/languages"
 import { useTheme } from "@/theme/ThemeProvider"
 import { paperType } from "@/theme/paperType"
+import { useTargetLanguage } from "@/hooks/useTargetLanguage"
 
 /**
  * The gate every launch passes through: hydrate, then route.
@@ -20,8 +22,11 @@ import { paperType } from "@/theme/paperType"
  */
 export default function Index() {
   const { user, hydrated } = useAuthStore()
-  const hasCompleted = useOnboardingStore((s) => s.hasCompleted)
-  const language = useOnboardingStore((s) => s.language)
+  // Account-owned, not device-owned: a learner who finished onboarding on
+  // another device must not be sent back through it.
+  const { onboarding, loading: onboardingLoading } = useOnboardingProgress()
+  const localCompleted = useOnboardingStore((s) => s.hasCompleted)
+  const language = useTargetLanguage()
   const { paper } = useTheme()
 
   if (!hydrated) {
@@ -46,7 +51,9 @@ export default function Index() {
     )
   }
 
-  if (!hasCompleted) return <Redirect href="/(onboarding)" />
+  if (onboardingLoading) return null
+  if (!(onboarding?.completed ?? localCompleted))
+    return <Redirect href="/(onboarding)" />
   if (!user) return <Redirect href="/(auth)" />
   return <Redirect href="/(tabs)" />
 }

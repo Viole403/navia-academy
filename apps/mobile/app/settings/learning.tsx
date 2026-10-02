@@ -21,6 +21,7 @@ import {
   scriptForExam,
 } from "@/lib/languages"
 import { setSoundPrefs } from "@/utils/sound"
+import { useTargetLanguage } from "@/hooks/useTargetLanguage"
 
 /**
  * Learning — everything that changes *what* gets learned.
@@ -38,7 +39,7 @@ export default function SettingsLearning() {
   const { theme, paper } = useTheme()
   const t = useT()
   const s = useUserSettings()
-  const language = useOnboardingStore((st) => st.language)
+  const language = useTargetLanguage()
   const setLanguage = useOnboardingStore((st) => st.setLanguage)
   const setScript = useOnboardingStore((st) => st.setScript)
   const setExamType = useOnboardingStore((st) => st.setExamType)

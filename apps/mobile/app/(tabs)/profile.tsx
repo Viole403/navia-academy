@@ -35,6 +35,7 @@ import { useLocaleStore, type AppLocale, useT } from "@/i18n"
 import { useThemePrefs } from "@/store/theme"
 import { clearTokens } from "@/utils/secure"
 import type { Task } from "@/types/api"
+import { useTargetLanguage } from "@/hooks/useTargetLanguage"
 
 type Section = "profile" | "tasks"
 
@@ -49,7 +50,7 @@ export default function ProfileTab() {
   const { themeId, mode, setThemeId, setMode } = useThemePrefs()
   const setLocale = useLocaleStore((s) => s.setLocale)
 
-  const language = useOnboardingStore((s) => s.language)
+  const language = useTargetLanguage()
   const setLanguage = useOnboardingStore((s) => s.setLanguage)
   const storedExamType = useOnboardingStore((s) => s.examType)
   const setStoredExamType = useOnboardingStore((s) => s.setExamType)
