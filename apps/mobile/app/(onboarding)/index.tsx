@@ -602,35 +602,39 @@ export default function Onboarding() {
           </View>
         ) : null}
 
+        {/* The step's own spacing. `Slide` lays children out in a plain
+            absolutely-filled View with no gap, and the shell's gap sits one
+            level above it, so two cards at this level land flush — which is
+            what put "This course" hard against "Find your level". Every other
+            step wraps its blocks in a spaced View for the same reason. */}
         {step === "ready" ? (
-          <CourseIntro language={language} examType={examType} />
-        ) : null}
-
-        {step === "ready" ? (
-          <PaperCard>
-            <View
-              style={{ flexDirection: "row", alignItems: "center", gap: 12 }}
-            >
-              <Ionicons name="book" size={28} color={theme.textDim} />
-              <View style={{ flex: 1, gap: 2 }}>
-                <Text
-                  style={[
-                    type.body,
-                    {
-                      color: theme.text,
-                      fontWeight: "700",
-                      fontFamily: fonts.sans,
-                    },
-                  ]}
-                >
-                  {t("place.findLevel")}
-                </Text>
-                <Text style={[type.caption, { color: theme.textMuted }]}>
-                  {t("place.introA")}
-                </Text>
+          <View style={{ gap: 14 }}>
+            <CourseIntro language={language} examType={examType} />
+            <PaperCard>
+              <View
+                style={{ flexDirection: "row", alignItems: "center", gap: 12 }}
+              >
+                <Ionicons name="book" size={28} color={theme.textDim} />
+                <View style={{ flex: 1, gap: 2 }}>
+                  <Text
+                    style={[
+                      type.body,
+                      {
+                        color: theme.text,
+                        fontWeight: "700",
+                        fontFamily: fonts.sans,
+                      },
+                    ]}
+                  >
+                    {t("place.findLevel")}
+                  </Text>
+                  <Text style={[type.caption, { color: theme.textMuted }]}>
+                    {t("place.introA")}
+                  </Text>
+                </View>
               </View>
-            </View>
-          </PaperCard>
+            </PaperCard>
+          </View>
         ) : null}
       </Slide>
     </OnbShell>
