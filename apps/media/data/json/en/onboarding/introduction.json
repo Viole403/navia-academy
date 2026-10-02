@@ -1,0 +1,31 @@
+[
+  {
+    "examType": "toefl",
+    "language": "en",
+    "title": "English for TOEFL iBT",
+    "intro_id": "Kurs ini berjalan bertahap: setiap hari kosakata baru, satu pola kalimat, dan latihan membaca terburu. Fokusnya pada kosakata akademik yang sering diuji TOEFL, bukan bahasa percakapan sehari-hari.",
+    "intro_en": "This course runs in small steps: new vocabulary each day, one sentence pattern, and a timed reading drill. The emphasis is on the academic vocabulary TOEFL keeps testing, not on everyday conversation.",
+    "focus": [
+      {
+        "label": "Vocabulary",
+        "label_id": "Kosakata",
+        "label_en": "Vocabulary"
+      },
+      {
+        "label": "Academic reading",
+        "label_id": "Membaca akademik",
+        "label_en": "Academic reading"
+      },
+      {
+        "label": "Listening",
+        "label_id": "Menyimak",
+        "label_en": "Listening"
+      },
+      {
+        "label": "Writing",
+        "label_id": "Menulis",
+        "label_en": "Writing"
+      }
+    ]
+  }
+]

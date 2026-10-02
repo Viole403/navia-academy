@@ -1,0 +1,31 @@
+[
+  {
+    "examType": "jlpt",
+    "language": "ja",
+    "title": "日本語 N5 から N1 まで",
+    "intro_id": "Kurs ini berjalan bertahap: setiap hari kosakata baru, satu pola kalimat, dan latihan menyimak singkat. N5 mulai dari perkenalan dan angka, lalu naik ke bacaan dan percakapan yang benar-benar dipakai di Jepang.",
+    "intro_en": "This course runs in small steps: new vocabulary each day, one sentence pattern, and a short listening drill. N5 starts with introductions and numbers, then climbs towards the reading and conversation that turn up in real Japanese.",
+    "focus": [
+      {
+        "label": "語彙",
+        "label_id": "Kosakata",
+        "label_en": "Vocabulary"
+      },
+      {
+        "label": "文法",
+        "label_id": "Tata bahasa",
+        "label_en": "Grammar"
+      },
+      {
+        "label": "聴解",
+        "label_id": "Menyimak",
+        "label_en": "Listening"
+      },
+      {
+        "label": "会話",
+        "label_id": "Percakapan",
+        "label_en": "Conversation"
+      }
+    ]
+  }
+]

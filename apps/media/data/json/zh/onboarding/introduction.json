@@ -1,0 +1,60 @@
+[
+  {
+    "examType": "hsk",
+    "language": "zh",
+    "title": "HSK 汉语，一级到七级",
+    "intro_id": "Kurs ini berjalan bertahap: setiap hari kosakata baru, satu pola kalimat, dan latihan menyimak singkat. Level 1 memusatkan diri pada kata yang paling sering dipakai lebih dulu — sapaan, angka, waktu, dan permintaan sehari-hari yang menopang satu percakapan utuh.",
+    "intro_en": "This course runs in small steps: new vocabulary each day, one sentence pattern, and a short listening drill. Level 1 concentrates on the words you will reach for first — greetings, numbers, time, and the everyday requests that carry a whole conversation on their own.",
+    "focus": [
+      {
+        "label": "词汇",
+        "label_id": "Kosakata",
+        "label_en": "Vocabulary"
+      },
+      {
+        "label": "语法",
+        "label_id": "Tata bahasa",
+        "label_en": "Grammar"
+      },
+      {
+        "label": "听力",
+        "label_id": "Menyimak",
+        "label_en": "Listening"
+      },
+      {
+        "label": "汉字",
+        "label_id": "Aksara",
+        "label_en": "Characters"
+      }
+    ]
+  },
+  {
+    "examType": "tocfl",
+    "language": "zh",
+    "title": "華語文憑，初級到高級",
+    "intro_id": "Kurs ini memakai ejaan Traditional dan Mandarin Taiwan. Membaca dan menulis didahulukan karena di situlah ujian menguji paling banyak, baru berbicara dan menyimak untuk percakapan sehari-hari yang benar-benar terjadi di sana.",
+    "intro_en": "This course uses Traditional script and Taiwan's Mandarin. Reading and writing come first because that is where the exam leans hardest, then speaking and listening for the everyday conversations that actually happen out there.",
+    "focus": [
+      {
+        "label": "詞彙",
+        "label_id": "Kosakata",
+        "label_en": "Vocabulary"
+      },
+      {
+        "label": "語法",
+        "label_id": "Tata bahasa",
+        "label_en": "Grammar"
+      },
+      {
+        "label": "閱讀",
+        "label_id": "Membaca",
+        "label_en": "Reading"
+      },
+      {
+        "label": "寫作",
+        "label_id": "Menulis",
+        "label_en": "Writing"
+      }
+    ]
+  }
+]

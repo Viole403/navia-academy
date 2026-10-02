@@ -4,6 +4,7 @@ import type {
   CurriculumBundle,
   GrammarPoint,
   HanziChar,
+  OnboardingIntroduction,
   PlacementItem,
   Reading,
   VocabWord,
@@ -153,6 +154,21 @@ export function loadPlacement(
   lang: LanguageCode = DEFAULT_LANGUAGE
 ): Promise<PlacementItem[]> {
   return loadBundle<PlacementItem[]>(langBundle(lang, "placement/index"))
+}
+
+/**
+ * How each course describes itself, from `<lang>/onboarding/index`.
+ *
+ * One entry per exam the language offers, so a Chinese learner choosing between
+ * HSK and TOCFL is told which one they are about to walk into. Read silently
+ * during onboarding, so unlike the drills it is not in the audio manifest.
+ */
+export function loadOnboardingIntroductions(
+  lang: LanguageCode = DEFAULT_LANGUAGE
+): Promise<OnboardingIntroduction[]> {
+  return loadBundle<OnboardingIntroduction[]>(
+    langBundle(lang, "onboarding/index")
+  )
 }
 
 /**

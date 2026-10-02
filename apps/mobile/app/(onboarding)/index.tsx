@@ -11,6 +11,7 @@ import {
 import { LiftedFace, PaperCard } from "@/components/study/PaperCard"
 import { Shifu } from "@/components/study/Shifu"
 import { Slide } from "@/components/onboarding/Slide"
+import { CourseIntro } from "@/components/onboarding/CourseIntro"
 import { useTheme } from "@/theme/ThemeProvider"
 import { fonts, type } from "@/theme/typography"
 import { paperType, families } from "@/theme/paperType"
@@ -484,6 +485,10 @@ export default function Onboarding() {
               {t("ob.reminderLater")}
             </Text>
           </View>
+        ) : null}
+
+        {step === "ready" ? (
+          <CourseIntro language={language} examType={examType} />
         ) : null}
 
         {step === "ready" ? (

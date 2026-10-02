@@ -28,6 +28,7 @@ export const LIST_GROUPS = [
   "readings",
   "characters",
   "conversations",
+  "onboarding",
 ]
 
 /** App-level config bundles (published once, not per language). */

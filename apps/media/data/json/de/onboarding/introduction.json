@@ -1,0 +1,31 @@
+[
+  {
+    "examType": "goethe",
+    "language": "de",
+    "title": "Deutsch von A1 bis C2",
+    "intro_id": "Kurs ini berjalan bertahap: setiap hari kosakata baru, satu pola kalimat, dan latihan berbicara singkat. A1 mulai dari perkenalan dan angka, lalu pelan-pelan ke teks dan percakapan yang benar-benar dipakai sehari-hari.",
+    "intro_en": "This course runs in small steps: new vocabulary each day, one sentence pattern, and a short speaking drill. A1 starts with introductions and numbers, then moves slowly towards the texts and conversations people actually use every day.",
+    "focus": [
+      {
+        "label": "Wortschatz",
+        "label_id": "Kosakata",
+        "label_en": "Vocabulary"
+      },
+      {
+        "label": "Grammatik",
+        "label_id": "Tata bahasa",
+        "label_en": "Grammar"
+      },
+      {
+        "label": "Hören",
+        "label_id": "Menyimak",
+        "label_en": "Listening"
+      },
+      {
+        "label": "Sprechen",
+        "label_id": "Berbicara",
+        "label_en": "Speaking"
+      }
+    ]
+  }
+]

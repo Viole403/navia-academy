@@ -462,6 +462,23 @@ export interface PlacementItem {
   [key: string]: unknown
 }
 
+/**
+ * One course's self-description, from `<lang>/onboarding/index`.
+ *
+ * `title` and `focus[].label` are in the language being learned — those are the
+ * words a learner is about to meet, so translating them away would defeat the
+ * point. The prose is the one that explains the course rather than performs it,
+ * so it follows the reader's own language through the `_id` / `_en` pair.
+ */
+export interface OnboardingIntroduction {
+  examType: string
+  language: string
+  title: string
+  intro_id: string
+  intro_en: string
+  focus: { label: string; label_id: string; label_en: string }[]
+}
+
 export type PlacementSkill =
   "listening" | "reading" | "grammar" | "vocabulary" | "speaking" | "writing"
 
