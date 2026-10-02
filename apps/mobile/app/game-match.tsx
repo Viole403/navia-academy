@@ -41,11 +41,12 @@ export default function GameMatch() {
     queryKey: ["game-match-pool", language],
     queryFn: async () => {
       const all = await loadVocabulary(language)
-      return all.slice(0, 8)
+      return all.slice(0, 24)
     },
   })
 
   const [cards, setCards] = useState<Card[]>([])
+  const [board, setBoard] = useState({ width: 0, height: 0 })
   const insets = useSafeAreaInsets()
   const [open, setOpen] = useState<string | null>(null)
   const [wrong, setWrong] = useState<string[]>([])
@@ -85,10 +86,26 @@ export default function GameMatch() {
     },
   })
 
+  /**
+   * How many pairs the screen can show, from the space it actually got.
+   *
+   * Android's guidance and Apple's are the same here: decide from the window
+   * you were given, never from the device's model. A 411x914dp phone is
+   * "expanded height" by Material's classes, a 375x667pt iPhone SE is not, and
+   * a fixed 8 pairs overflowed the first and wasted the second. Two columns, so
+   * a row is one pair.
+   */
+  const pairCount = useMemo(() => {
+    if (board.width < 1 || board.height < 1) return 4
+    const cardW = (board.width - 8) / 2 - 8
+    const rowH = cardW / 1.3 + 8
+    return Math.max(3, Math.min(8, Math.floor(board.height / rowH)))
+  }, [board.width, board.height])
+
   const start = () => {
     if (!page.data) return
     const list: Card[] = []
-    page.data.forEach((w) => {
+    page.data.slice(0, pairCount).forEach((w) => {
       list.push({
         id: `${w.id}-t`,
         label: headword(w),
@@ -254,10 +271,11 @@ export default function GameMatch() {
       style={{ flex: 1, backgroundColor: paper.paper }}
       edges={["top"]}
     >
-      <ScrollView
-        contentContainerStyle={{
+      <View
+        style={{
+          flex: 1,
           padding: 20,
-          paddingBottom: 48,
+          paddingBottom: 20 + insets.bottom,
           gap: 22,
           maxWidth: column,
           width: "100%",
@@ -326,81 +344,95 @@ export default function GameMatch() {
           </PaperCard>
         ) : (
           <View
-            style={{
-              flexDirection: "row",
-              flexWrap: "wrap",
-              marginHorizontal: -4,
-              rowGap: 8,
-            }}
+            style={{ flex: 1, minHeight: 0 }}
+            onLayout={(e) =>
+              setBoard({
+                width: e.nativeEvent.layout.width,
+                height: e.nativeEvent.layout.height,
+              })
+            }
           >
-            {cards.map((c) => {
-              const isOpen = open === c.id
-              const isWrong = wrong.includes(c.id)
-              const faceUp = c.matched || isOpen || isWrong
-              return (
-                <View key={c.id} style={{ width: "50%", padding: 4 }}>
-                  <PressableScale
-                    onPress={() => !c.matched && flip(c.id)}
-                    disabled={c.matched}
-                    accessibilityLabel={faceUp ? c.label : t("game.faceDown")}
-                  >
-                    <View
-                      style={{
-                        aspectRatio: 1.3,
-                        borderWidth: 1,
-                        borderRadius: 12,
-                        borderColor: c.matched
-                          ? paper.green
-                          : isWrong
-                            ? paper.coral
-                            : isOpen
-                              ? paper.ring
-                              : paper.line,
-                        backgroundColor: c.matched
-                          ? paper.greenSoft
-                          : isWrong
-                            ? paper.coralSoft
-                            : isOpen
-                              ? paper.cardAlt
-                              : paper.card,
-                        alignItems: "center",
-                        justifyContent: "center",
-                        padding: 10,
-                      }}
+            <View
+              style={{
+                flexDirection: "row",
+                flexWrap: "wrap",
+                marginHorizontal: -4,
+                rowGap: 8,
+              }}
+            >
+              {cards.map((c) => {
+                const isOpen = open === c.id
+                const isWrong = wrong.includes(c.id)
+                const faceUp = c.matched || isOpen || isWrong
+                return (
+                  <View key={c.id} style={{ width: "50%", padding: 4 }}>
+                    <PressableScale
+                      onPress={() => !c.matched && flip(c.id)}
+                      disabled={c.matched}
+                      accessibilityLabel={faceUp ? c.label : t("game.faceDown")}
                     >
-                      <Text
+                      <View
                         style={{
-                          // The face follows what the card is showing, not
-                          // which side of the pair it is: a German headword in
-                          // a CJK typeface reads as a mistake, and a Chinese
-                          // one in the Latin serif is missing its glyphs.
-                          fontFamily: faceUp
-                            ? c.side === "term"
-                              ? faces.display
-                              : families.nunito
-                            : families.nunito,
-                          fontSize: faceUp ? (c.side === "term" ? 24 : 15) : 26,
-                          color: c.matched
-                            ? paper.greenDark
+                          aspectRatio: 1.3,
+                          borderWidth: 1,
+                          borderRadius: 12,
+                          borderColor: c.matched
+                            ? paper.green
                             : isWrong
                               ? paper.coral
-                              : faceUp
-                                ? paper.ink
-                                : paper.inkMuted,
-                          textAlign: "center",
+                              : isOpen
+                                ? paper.ring
+                                : paper.line,
+                          backgroundColor: c.matched
+                            ? paper.greenSoft
+                            : isWrong
+                              ? paper.coralSoft
+                              : isOpen
+                                ? paper.cardAlt
+                                : paper.card,
+                          alignItems: "center",
+                          justifyContent: "center",
+                          padding: 10,
                         }}
-                        numberOfLines={2}
                       >
-                        {faceUp ? c.label : "?"}
-                      </Text>
-                    </View>
-                  </PressableScale>
-                </View>
-              )
-            })}
+                        <Text
+                          style={{
+                            // The face follows what the card is showing, not
+                            // which side of the pair it is: a German headword in
+                            // a CJK typeface reads as a mistake, and a Chinese
+                            // one in the Latin serif is missing its glyphs.
+                            fontFamily: faceUp
+                              ? c.side === "term"
+                                ? faces.display
+                                : families.nunito
+                              : families.nunito,
+                            fontSize: faceUp
+                              ? c.side === "term"
+                                ? 24
+                                : 15
+                              : 26,
+                            color: c.matched
+                              ? paper.greenDark
+                              : isWrong
+                                ? paper.coral
+                                : faceUp
+                                  ? paper.ink
+                                  : paper.inkMuted,
+                            textAlign: "center",
+                          }}
+                          numberOfLines={2}
+                        >
+                          {faceUp ? c.label : "?"}
+                        </Text>
+                      </View>
+                    </PressableScale>
+                  </View>
+                )
+              })}
+            </View>
           </View>
         )}
-      </ScrollView>
+      </View>
     </SafeAreaView>
   )
 }
