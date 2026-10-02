@@ -332,12 +332,12 @@ export function SettingsChoice({
               // object wherever it appears.
               minHeight: CHOICE_HEIGHT,
               minWidth: useColumns ? 0 : 56,
-              // Growing from a zero basis hands flexbox the leftover space and it
-              // divides that after the gaps. Measuring the row instead settled in
-              // two steps — pills at their minimum first, then a jump to the
-              // column width — which read as the row animating into place.
-              flexBasis: useColumns ? 0 : undefined,
-              flexGrow: useColumns ? 1 : 0,
+              // An explicit width, not flexGrow. Inside a wrapping row these sit
+              // at their content width however the leftover is offered up, which
+              // left five pills huddled against the left edge of a full-width
+              // card. Measuring the usable width here makes the row fill exactly.
+              width: useColumns ? columnWidth : undefined,
+              flexGrow: 0,
               flexShrink: 0,
               paddingHorizontal: useColumns ? 8 : 12,
               paddingVertical: 10,
