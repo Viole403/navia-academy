@@ -1,6 +1,7 @@
 import { BackLink } from "@/components/ui/BackLink"
 import { useEffect, useMemo, useState } from "react"
-import { Pressable, ScrollView, Text, View } from "react-native"
+import { Image, Pressable, ScrollView, Text, View } from "react-native"
+import { Ionicons } from "@expo/vector-icons"
 import { SafeAreaView } from "react-native-safe-area-context"
 import { useRouter } from "expo-router"
 import { useQuery } from "@tanstack/react-query"
@@ -8,6 +9,8 @@ import { PaperCard, LiftedFace } from "@/components/study/PaperCard"
 import { ProgressBar } from "@/components/ui/ProgressBar"
 import { FlexGap } from "@/components/study/press"
 import { Shifu } from "@/components/study/Shifu"
+import { townArtFor, type TownSlot } from "@/components/study/art"
+import { useTargetLanguage } from "@/hooks/useTargetLanguage"
 import { useTheme } from "@/theme/ThemeProvider"
 import { useContentLayout } from "@/theme/layout"
 import { paperType, families } from "@/theme/paperType"
@@ -33,53 +36,22 @@ import { careful, tap, thud } from "@/utils/feedback"
  * nothing.
  */
 interface Building {
-  id: string
+  id: TownSlot
   nameKey: I18nKey
   xpCost: number
-  glyph: string
 }
 
 const BUILDINGS: Building[] = [
-  { id: "assemblyHall", nameKey: "town.assemblyHall", xpCost: 0, glyph: "⛩️" },
-  { id: "cafeGarden", nameKey: "town.cafeGarden", xpCost: 300, glyph: "🍵" },
-  { id: "foodShop", nameKey: "town.foodShop", xpCost: 700, glyph: "🍜" },
-  {
-    id: "gardenPavilion",
-    nameKey: "town.gardenPavilion",
-    xpCost: 1200,
-    glyph: "🌸",
-  },
-  {
-    id: "oldStreet",
-    nameKey: "town.oldStreet",
-    xpCost: 1800,
-    glyph: "🏮",
-  },
-  {
-    id: "riversideWalk",
-    nameKey: "town.riversideWalk",
-    xpCost: 2500,
-    glyph: "🌉",
-  },
-  {
-    id: "monument",
-    nameKey: "town.monument",
-    xpCost: 3300,
-    glyph: "🗿",
-  },
-  {
-    id: "hilltopLandmark",
-    nameKey: "town.hilltopLandmark",
-    xpCost: 4200,
-    glyph: "🗼",
-  },
-  {
-    id: "marketSquare",
-    nameKey: "town.marketSquare",
-    xpCost: 5200,
-    glyph: "🏪",
-  },
-  { id: "civicHall", nameKey: "town.civicHall", xpCost: 6500, glyph: "🏯" },
+  { id: "assemblyHall", nameKey: "town.assemblyHall", xpCost: 0 },
+  { id: "cafeGarden", nameKey: "town.cafeGarden", xpCost: 300 },
+  { id: "foodShop", nameKey: "town.foodShop", xpCost: 700 },
+  { id: "gardenPavilion", nameKey: "town.gardenPavilion", xpCost: 1200 },
+  { id: "oldStreet", nameKey: "town.oldStreet", xpCost: 1800 },
+  { id: "riversideWalk", nameKey: "town.riversideWalk", xpCost: 2500 },
+  { id: "monument", nameKey: "town.monument", xpCost: 3300 },
+  { id: "hilltopLandmark", nameKey: "town.hilltopLandmark", xpCost: 4200 },
+  { id: "marketSquare", nameKey: "town.marketSquare", xpCost: 5200 },
+  { id: "civicHall", nameKey: "town.civicHall", xpCost: 6500 },
 ]
 
 const TOWN_KEY = "navia.town.v1"
@@ -90,6 +62,9 @@ export function MyTown() {
   const router = useRouter()
   const { column } = useContentLayout()
   const columnWidth = column
+
+  const language = useTargetLanguage()
+  const buildings = townArtFor(language)
 
   const progressQ = useQuery({ queryKey: ["progress"], queryFn: progress.get })
   const xp = progressQ.data?.xp ?? 0
@@ -224,12 +199,44 @@ export function MyTown() {
                           : paper.cardAlt,
                         alignItems: "center",
                         justifyContent: "center",
-                        opacity: isUnlocked ? 1 : isNext ? 0.75 : 0.35,
                       }}
                     >
-                      <Text style={{ fontSize: 28 }}>
-                        {isUnlocked ? b.glyph : isNext ? "🔓" : "·"}
-                      </Text>
+                      {/* The building is shown in every state: what is coming is
+                        the reason to study, so a locked row dims what it is
+                        withholding rather than swapping in a glyph. */}
+                      <Image
+                        source={buildings[b.id]}
+                        style={{
+                          width: 56,
+                          height: 56,
+                          opacity: isUnlocked ? 1 : isNext ? 0.85 : 0.3,
+                        }}
+                        resizeMode="contain"
+                        accessibilityIgnoresInvertColors
+                      />
+                      {!isUnlocked ? (
+                        <View
+                          style={{
+                            position: "absolute",
+                            right: 2,
+                            bottom: 2,
+                            width: 20,
+                            height: 20,
+                            borderRadius: 10,
+                            alignItems: "center",
+                            justifyContent: "center",
+                            backgroundColor: paper.card,
+                            borderWidth: 1,
+                            borderColor: isNext ? paper.green : paper.line,
+                          }}
+                        >
+                          <Ionicons
+                            name={isNext ? "lock-open" : "lock-closed"}
+                            size={11}
+                            color={isNext ? paper.green : paper.inkMuted}
+                          />
+                        </View>
+                      ) : null}
                     </View>
                     <View style={{ flex: 1, gap: 3 }}>
                       <Text

@@ -13,11 +13,10 @@
  * below — that is what the measurement script is for.
  */
 import type { ImageSourcePropType } from "react-native"
+import type { LanguageCode } from "@/lib/languages"
 
 // ─── Dashboard hero ─────────────────────────────────────────────────────────
 export const art = {
-  /** The bowing Shifu, clipped at the hem by the hero's overflow. */
-  shifuBow: require("@assets/study-art/dashboard/shifu-bow.png"),
   /** Mountain range for the word-of-day card. */
   wordMountains: require("@assets/study-art/dashboard/word-mountains.png"),
   /** Open scroll for the challenges card. */
@@ -81,18 +80,85 @@ export const unitArt = {
   popCultureMusic: require("@assets/study-art/units/pop-culture-music.png"),
 } as const
 
-// ─── My Town buildings, ordered by xp cost ──────────────────────────────────
-export const buildingArt: Record<string, ImageSourcePropType> = {
-  assemblyHall: require("@assets/study-art/buildings/zh/temple.png"),
-  cafeGarden: require("@assets/study-art/buildings/zh/tea-house.png"),
-  foodShop: require("@assets/study-art/buildings/zh/noodle-shop.png"),
-  gardenPavilion: require("@assets/study-art/buildings/zh/garden-pavilion.png"),
-  oldStreet: require("@assets/study-art/buildings/zh/lantern-street.png"),
-  riversideWalk: require("@assets/study-art/buildings/zh/riverside-walk.png"),
-  monument: require("@assets/study-art/buildings/zh/buddhist-statue.png"),
-  hilltopLandmark: require("@assets/study-art/buildings/zh/mountain-pagoda.png"),
-  marketSquare: require("@assets/study-art/buildings/zh/market-square.png"),
-  civicHall: require("@assets/study-art/buildings/zh/grand-palace.png"),
+// ─── My Town buildings ──────────────────────────────────────────────────────
+
+/**
+ * One slot in the town. The name says what the building *does*, not what it is
+ * where — a temple is an assembly hall, a grand palace a civic hall and a
+ * mountain pagoda a hilltop landmark, because every language the app teaches
+ * has a counterpart to all three.
+ */
+export type TownSlot =
+  | "assemblyHall"
+  | "cafeGarden"
+  | "foodShop"
+  | "gardenPavilion"
+  | "oldStreet"
+  | "riversideWalk"
+  | "monument"
+  | "hilltopLandmark"
+  | "marketSquare"
+  | "civicHall"
+
+const townByLanguage: Record<
+  LanguageCode,
+  Record<TownSlot, ImageSourcePropType>
+> = {
+  zh: {
+    assemblyHall: require("@assets/study-art/buildings/zh/assembly-hall.png"),
+    cafeGarden: require("@assets/study-art/buildings/zh/cafe-garden.png"),
+    foodShop: require("@assets/study-art/buildings/zh/food-shop.png"),
+    gardenPavilion: require("@assets/study-art/buildings/zh/garden-pavilion.png"),
+    oldStreet: require("@assets/study-art/buildings/zh/old-street.png"),
+    riversideWalk: require("@assets/study-art/buildings/zh/riverside-walk.png"),
+    monument: require("@assets/study-art/buildings/zh/monument.png"),
+    hilltopLandmark: require("@assets/study-art/buildings/zh/hilltop-landmark.png"),
+    marketSquare: require("@assets/study-art/buildings/zh/market-square.png"),
+    civicHall: require("@assets/study-art/buildings/zh/civic-hall.png"),
+  },
+  ja: {
+    assemblyHall: require("@assets/study-art/buildings/ja/assembly-hall.png"),
+    cafeGarden: require("@assets/study-art/buildings/ja/cafe-garden.png"),
+    foodShop: require("@assets/study-art/buildings/ja/food-shop.png"),
+    gardenPavilion: require("@assets/study-art/buildings/ja/garden-pavilion.png"),
+    oldStreet: require("@assets/study-art/buildings/ja/old-street.png"),
+    riversideWalk: require("@assets/study-art/buildings/ja/riverside-walk.png"),
+    monument: require("@assets/study-art/buildings/ja/monument.png"),
+    hilltopLandmark: require("@assets/study-art/buildings/ja/hilltop-landmark.png"),
+    marketSquare: require("@assets/study-art/buildings/ja/market-square.png"),
+    civicHall: require("@assets/study-art/buildings/ja/civic-hall.png"),
+  },
+  de: {
+    assemblyHall: require("@assets/study-art/buildings/de/assembly-hall.png"),
+    cafeGarden: require("@assets/study-art/buildings/de/cafe-garden.png"),
+    foodShop: require("@assets/study-art/buildings/de/food-shop.png"),
+    gardenPavilion: require("@assets/study-art/buildings/de/garden-pavilion.png"),
+    oldStreet: require("@assets/study-art/buildings/de/old-street.png"),
+    riversideWalk: require("@assets/study-art/buildings/de/riverside-walk.png"),
+    monument: require("@assets/study-art/buildings/de/monument.png"),
+    hilltopLandmark: require("@assets/study-art/buildings/de/hilltop-landmark.png"),
+    marketSquare: require("@assets/study-art/buildings/de/market-square.png"),
+    civicHall: require("@assets/study-art/buildings/de/civic-hall.png"),
+  },
+  en: {
+    assemblyHall: require("@assets/study-art/buildings/en/assembly-hall.png"),
+    cafeGarden: require("@assets/study-art/buildings/en/cafe-garden.png"),
+    foodShop: require("@assets/study-art/buildings/en/food-shop.png"),
+    gardenPavilion: require("@assets/study-art/buildings/en/garden-pavilion.png"),
+    oldStreet: require("@assets/study-art/buildings/en/old-street.png"),
+    riversideWalk: require("@assets/study-art/buildings/en/riverside-walk.png"),
+    monument: require("@assets/study-art/buildings/en/monument.png"),
+    hilltopLandmark: require("@assets/study-art/buildings/en/hilltop-landmark.png"),
+    marketSquare: require("@assets/study-art/buildings/en/market-square.png"),
+    civicHall: require("@assets/study-art/buildings/en/civic-hall.png"),
+  },
+}
+
+/** The buildings as the learner's own language draws them. */
+export function townArtFor(
+  language: LanguageCode
+): Record<TownSlot, ImageSourcePropType> {
+  return townByLanguage[language]
 }
 
 export type ArtEntry = { source: ImageSourcePropType; ratio: number }
@@ -108,7 +174,6 @@ export type ArtEntry = { source: ImageSourcePropType; ratio: number }
  * `scripts/measure-art-ratios.mjs` after any re-trim.
  */
 export const artRatio: Record<string, number> = {
-  shifuBow: 2.347,
   wordMountains: 0.63,
   scroll: 1.264,
   fire: 0.913,
@@ -129,4 +194,6 @@ export const artRatio: Record<string, number> = {
   flashcards: 1,
   listening: 1,
   mistakes: 1,
+  // Every town building is fitted to a 384x384 transparent square, in all four
+  // languages, so the row reads as one place whichever set is showing.
 }

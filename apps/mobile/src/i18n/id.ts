@@ -630,7 +630,7 @@ const id: Record<I18nKey, string> = {
   "town.oldStreet": "Jalan tua",
   "town.riversideWalk": "Jalan tepi sungai",
   "town.monument": "Monumen",
-  "town.hilltopLandmark": "Tmercbukit",
+  "town.hilltopLandmark": "Taman bukit",
   "town.marketSquare": "Alun-alun pasar",
   "town.civicHall": "Balai kota",
   "town.note": "Bangunan di sini berdiri di atas XP dari belajarmu.",

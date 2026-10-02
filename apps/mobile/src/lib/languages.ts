@@ -105,7 +105,9 @@ export function langBundle(lang: LanguageCode, name: string): string {
 }
 
 /** True for languages whose writing system is character/kana-based (zh, ja). */
-export function isCharScript(lang: LanguageCode): boolean {
+export type CharScriptLanguage = "zh" | "ja"
+
+export function isCharScript(lang: LanguageCode): lang is CharScriptLanguage {
   const script = languageInfo(lang).script
   return (
     script === "Simplified" || script === "Traditional" || script === "Kana"
