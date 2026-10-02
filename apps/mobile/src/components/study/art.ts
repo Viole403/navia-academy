@@ -83,16 +83,16 @@ export const unitArt = {
 
 // ─── My Town buildings, ordered by xp cost ──────────────────────────────────
 export const buildingArt: Record<string, ImageSourcePropType> = {
-  temple: require("@assets/study-art/buildings/temple.png"),
-  teaHouse: require("@assets/study-art/buildings/tea-house.png"),
-  noodleShop: require("@assets/study-art/buildings/noodle-shop.png"),
-  gardenPavilion: require("@assets/study-art/buildings/garden-pavilion.png"),
-  lanternStreet: require("@assets/study-art/buildings/lantern-street.png"),
-  riversideWalk: require("@assets/study-art/buildings/riverside-walk.png"),
-  buddhistStatue: require("@assets/study-art/buildings/buddhist-statue.png"),
-  mountainPagoda: require("@assets/study-art/buildings/mountain-pagoda.png"),
-  marketSquare: require("@assets/study-art/buildings/market-square.png"),
-  grandPalace: require("@assets/study-art/buildings/grand-palace.png"),
+  temple: require("@assets/study-art/buildings/zh/temple.png"),
+  teaHouse: require("@assets/study-art/buildings/zh/tea-house.png"),
+  noodleShop: require("@assets/study-art/buildings/zh/noodle-shop.png"),
+  gardenPavilion: require("@assets/study-art/buildings/zh/garden-pavilion.png"),
+  lanternStreet: require("@assets/study-art/buildings/zh/lantern-street.png"),
+  riversideWalk: require("@assets/study-art/buildings/zh/riverside-walk.png"),
+  buddhistStatue: require("@assets/study-art/buildings/zh/buddhist-statue.png"),
+  mountainPagoda: require("@assets/study-art/buildings/zh/mountain-pagoda.png"),
+  marketSquare: require("@assets/study-art/buildings/zh/market-square.png"),
+  grandPalace: require("@assets/study-art/buildings/zh/grand-palace.png"),
 }
 
 export type ArtEntry = { source: ImageSourcePropType; ratio: number }
