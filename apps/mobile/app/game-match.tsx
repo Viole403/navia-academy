@@ -314,7 +314,7 @@ export default function GameMatch() {
                 {isCharScript(language)
                   ? t("game.pairChar")
                   : t("game.pairWord")}{" "}
-                {page.data.length} {t("game.cards")}
+                {pairCount * 2} {t("game.cards")}
               </Text>
               <LiftedFace
                 title={t("game.start")}

@@ -1,7 +1,6 @@
 import { useMemo } from "react"
 import {
   ActivityIndicator,
-  Animated,
   Pressable,
   ScrollView,
   Text,
@@ -12,10 +11,10 @@ import { SafeAreaView } from "react-native-safe-area-context"
 import { useRouter } from "expo-router"
 import { useQuery } from "@tanstack/react-query"
 import { ReviewHero } from "@/components/study/ReviewHero"
+import { useEntranceRun } from "@/components/study/Reveal"
 import { PaperCard } from "@/components/study/PaperCard"
 import { DrillBadge } from "@/components/study/dashboardCards"
 import { FlexGap } from "@/components/study/press"
-import { useEntranceRun, useReveal } from "@/components/study/Reveal"
 import { useTheme } from "@/theme/ThemeProvider"
 import { useContentLayout } from "@/theme/layout"
 import { paperType, families } from "@/theme/paperType"
@@ -56,6 +55,9 @@ export function ReviewHub() {
   })
   const progressQ = useQuery({ queryKey: ["progress"], queryFn: progress.get })
 
+  // The hero keeps its entrance; the drill cards below do not get one. An
+  // animated wrapper left all three unable to take a tap.
+  const run = useEntranceRun()
   const due = dueQ.data ?? []
   const difficult = useMemo(
     () => new Set(progressQ.data?.difficult_item_ids ?? []),
@@ -64,11 +66,6 @@ export function ReviewHub() {
   const mistakes = due.filter(
     (c) => difficult.has(c.item_id) || c.mastery < 40
   ).length
-
-  const run = useEntranceRun()
-  const beats = [0, 1, 2].map((i) =>
-    useReveal({ at: 260 + i * 90, duration: 440, run, distance: 26 })
-  )
 
   const drills: {
     key: "flashcards" | "listening" | "mistakes"
@@ -153,15 +150,8 @@ export function ReviewHub() {
             </View>
           ) : (
             drills.map((d, i) => {
-              const r = beats[i]
               return (
-                <Animated.View
-                  key={d.key}
-                  style={{
-                    opacity: r.opacity,
-                    transform: [{ translateY: r.translate }],
-                  }}
-                >
+                <View key={d.key}>
                   <PaperCard
                     tone={d.tone}
                     onPress={() => {
@@ -223,7 +213,7 @@ export function ReviewHub() {
                       </Text>
                     </View>
                   </PaperCard>
-                </Animated.View>
+                </View>
               )
             })
           )}
