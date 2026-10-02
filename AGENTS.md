@@ -46,6 +46,7 @@ Compact guidance for AI coding agents. Every line is something an agent would li
 - Every item with `pinyin` **must also have `zhuyin`** (Bopomofo). Preserve hand-verified polyphonic/neutral-tone readings (e.g. 认识 → rèn·shi); don't blindly regenerate existing zhuyin.
 - Learner UI is **Indonesian-first**: glossable/prose fields carry `_id` (Indonesian) + `_en` (English) variants; `translation` stays English canonical (quiz/answer logic uses it).
 - `placement.json` per language must be a **flat array** of questions, never an object — an object shape yields an empty question bank.
+- `data/json/<lang>/onboarding/introduction.json` is one entry per exam, **flat array** (zh carries two: `hsk` in Simplified, `tocfl` in Traditional — the test rejects mainland glyphs under TOCFL). `title` and `focus[].label` are in the learning language on purpose; only the explaining prose carries `_id`/`_en`. Its bundle path comes from `LIST_GROUPS` in `apps/media/scripts/lib/content.ts`, so renaming the group breaks the fetch silently. Invariants: `apps/mobile/__tests__/onboardingContent.test.ts`.
 - Dedup keys (so the same asset is generated once): audio = `text+locale+gender`; images = `translation` hash (shared across languages via `translation_id`).
 - `data/json/<lang>/assessments/<exam>/comprehension-*.json` are **generated** by
   `bun run generate-comprehension` (apps/media) from the Belebele benchmark. Don't hand-edit; change the
