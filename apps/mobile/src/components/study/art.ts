@@ -53,6 +53,7 @@ export const reviewArt = {
   flashcards: require("@assets/study-art/review/flashcards.png"),
   listening: require("@assets/study-art/review/listening.png"),
   mistakes: require("@assets/study-art/review/mistakes.png"),
+  listeningDrill: require("@assets/study-art/review/listening-drill.png"),
 } as const
 
 // ─── Units / lessons path ───────────────────────────────────────────────────

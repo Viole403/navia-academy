@@ -222,13 +222,45 @@ export function ReviewHub() {
               this one samples the whole dictionary instead of the due set. */}
           <PaperCard
             tone="word"
-            title={t("learn.listeningDrill")}
-            body={t("learn.listeningDrillDesc")}
             onPress={() => {
               tap()
               router.push("/listening-drill")
             }}
-          />
+          >
+            <View
+              style={{
+                flexDirection: "row",
+                alignItems: "center",
+                gap: 14,
+              }}
+            >
+              <DrillBadge source="listeningDrill" />
+              <View style={{ flex: 1, gap: 2 }}>
+                <Text
+                  style={[
+                    paperType.cardTitle,
+                    {
+                      color: paper.ink,
+                      fontFamily: families.nunitoExtraBold,
+                    },
+                  ]}
+                >
+                  {t("learn.listeningDrill")}
+                </Text>
+                <Text
+                  style={[
+                    paperType.cardBody,
+                    {
+                      color: paper.inkSoft,
+                      fontFamily: families.nunitoSemiBold,
+                    },
+                  ]}
+                >
+                  {t("learn.listeningDrillDesc")}
+                </Text>
+              </View>
+            </View>
+          </PaperCard>
 
           <FlexGap min={0} />
         </View>
