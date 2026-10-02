@@ -284,74 +284,78 @@ export default function GameMatch() {
       >
         {masthead}
 
-        {cards.length === 0 ? (
-          <PaperCard tone="word" style={{ gap: 16, alignItems: "center" }}>
-            <Text
-              style={[
-                paperType.cardTitle,
-                { color: paper.ink, textAlign: "center" },
-              ]}
-            >
-              {isCharScript(language)
-                ? t("learn.hanziMatch")
-                : t("learn.wordMatch")}
-            </Text>
-            <Text
-              style={[
-                paperType.note,
-                { color: paper.inkMuted, textAlign: "center" },
-              ]}
-            >
-              {isCharScript(language) ? t("game.pairChar") : t("game.pairWord")}{" "}
-              {page.data.length} {t("game.cards")}
-            </Text>
-            <LiftedFace
-              title={t("game.start")}
-              face={paper.green}
-              onPress={start}
-            />
-          </PaperCard>
-        ) : won ? (
-          <PaperCard tone="review" style={{ gap: 16, alignItems: "center" }}>
-            <Text
-              style={[
-                paperType.cardTitle,
-                { color: paper.ink, textAlign: "center" },
-              ]}
-            >
-              {t("game.allMatched")}
-            </Text>
-            <PaperStat
-              value={`+${matches * 10}`}
-              label={`${t("game.xpLogged")} · ${counted(moves, "game.move", "game.moves")}`}
-            />
-            {submitM.isError && (
+        <View
+          style={{ flex: 1, minHeight: 0 }}
+          onLayout={(e) =>
+            setBoard({
+              width: e.nativeEvent.layout.width,
+              height: e.nativeEvent.layout.height,
+            })
+          }
+        >
+          {cards.length === 0 ? (
+            <PaperCard tone="word" style={{ gap: 16, alignItems: "center" }}>
+              <Text
+                style={[
+                  paperType.cardTitle,
+                  { color: paper.ink, textAlign: "center" },
+                ]}
+              >
+                {isCharScript(language)
+                  ? t("learn.hanziMatch")
+                  : t("learn.wordMatch")}
+              </Text>
               <Text
                 style={[
                   paperType.note,
-                  { color: paper.coral, textAlign: "center" },
+                  { color: paper.inkMuted, textAlign: "center" },
                 ]}
               >
-                {t("game.saveFailed")}
+                {isCharScript(language)
+                  ? t("game.pairChar")
+                  : t("game.pairWord")}{" "}
+                {page.data.length} {t("game.cards")}
               </Text>
-            )}
-            <LiftedFace
-              title={submitM.isPending ? t("game.saving") : t("game.saveExit")}
-              face={paper.green}
-              disabled={submitM.isPending}
-              onPress={() => submitM.mutate()}
-            />
-          </PaperCard>
-        ) : (
-          <View
-            style={{ flex: 1, minHeight: 0 }}
-            onLayout={(e) =>
-              setBoard({
-                width: e.nativeEvent.layout.width,
-                height: e.nativeEvent.layout.height,
-              })
-            }
-          >
+              <LiftedFace
+                title={t("game.start")}
+                face={paper.green}
+                onPress={start}
+              />
+            </PaperCard>
+          ) : won ? (
+            <PaperCard tone="review" style={{ gap: 16, alignItems: "center" }}>
+              <Text
+                style={[
+                  paperType.cardTitle,
+                  { color: paper.ink, textAlign: "center" },
+                ]}
+              >
+                {t("game.allMatched")}
+              </Text>
+              <PaperStat
+                value={`+${matches * 10}`}
+                label={`${t("game.xpLogged")} · ${counted(moves, "game.move", "game.moves")}`}
+              />
+              {submitM.isError && (
+                <Text
+                  style={[
+                    paperType.note,
+                    { color: paper.coral, textAlign: "center" },
+                  ]}
+                >
+                  {t("game.saveFailed")}
+                </Text>
+              )}
+              <LiftedFace
+                title={
+                  submitM.isPending ? t("game.saving") : t("game.saveExit")
+                }
+                face={paper.green}
+                disabled={submitM.isPending}
+                onPress={() => submitM.mutate()}
+              />
+            </PaperCard>
+          ) : (
             <View
               style={{
                 flexDirection: "row",
@@ -430,8 +434,8 @@ export default function GameMatch() {
                 )
               })}
             </View>
-          </View>
-        )}
+          )}
+        </View>
       </View>
     </SafeAreaView>
   )
