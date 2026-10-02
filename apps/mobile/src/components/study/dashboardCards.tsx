@@ -1,10 +1,10 @@
-import { Text, View } from "react-native"
+import { Image, Text, View } from "react-native"
 import { useTheme } from "@/theme/ThemeProvider"
 import { useContentFaces } from "@/hooks/useContentFaces"
 import { paperType, families } from "@/theme/paperType"
 import { ReadingAid } from "@/components/study/ReadingAid"
 import { PaperCard, LiftedFace, QuietPill, PaperStat } from "./PaperCard"
-import { CardArt, PressableScale } from "./press"
+import { PressableScale } from "./press"
 import { WeekStrip } from "./WeekStrip"
 import { art, artRatio, reviewArt } from "./art"
 import { useT } from "@/i18n"
@@ -298,9 +298,11 @@ export function DrillBadge({
         justifyContent: "center",
       }}
     >
-      <View style={{ position: "absolute" }}>
-        <CardArt source={reviewArt[source]} ratio={1} width={size} />
-      </View>
+      <Image
+        source={reviewArt[source]}
+        style={{ width: size, height: size }}
+        resizeMode="contain"
+      />
     </View>
   )
 }
