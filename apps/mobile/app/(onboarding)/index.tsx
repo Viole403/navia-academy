@@ -202,7 +202,7 @@ export default function Onboarding() {
           />
         ) : step === "ready" ? (
           <LiftedFace
-            title={t("place.start")}
+            title={t("ob.readyAction")}
             face={theme.green}
             onPress={() => {
               syncOnboarding.mutate()

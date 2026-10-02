@@ -499,6 +499,7 @@ const en = {
     "The characters you'll read every day. You can change your mind later.",
   "ob.sTheme": "Six palettes. Three modes. One quiet aesthetic.",
   "ob.sGoal": "How many minutes feels sustainable?",
+  "ob.readyAction": "Sign in or create an account",
   "ob.sReady": "Sign in, then find your level with a quick placement test.",
   "ob.examTrack": "Exam track",
   "ob.baseTheme": "Base theme",
@@ -567,6 +568,9 @@ const en = {
   "rev.modeFlashcards": "Flashcards",
   "rev.modeListening": "Listening",
   "rev.modeMistakes": "Mistakes",
+  "rev.noneTitle": "No cards in this course yet",
+  "rev.noneBody":
+    "The cards due right now belong to another language. Pick a different drill, or study new words here first.",
   "rev.doneTitle": "Session complete",
   "rev.doneBody": "Nice work. Come back tomorrow for the next batch.",
   "rev.again": "Again",

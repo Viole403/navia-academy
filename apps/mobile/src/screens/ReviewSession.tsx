@@ -22,7 +22,11 @@ import { useContentFaces } from "@/hooks/useContentFaces"
 import { useContentLayout } from "@/theme/layout"
 import { paperType, families, hanziFont, hanziType } from "@/theme/paperType"
 import { progress } from "@/api/endpoints"
-import { findWord } from "@/lib/content-data"
+import {
+  cardsInLanguage,
+  indexWordsById,
+  loadVocabulary,
+} from "@/lib/content-data"
 import { hasHan } from "@/lib/han"
 import { headword, reading, isCharScript } from "@/lib/languages"
 import { useOnboardingStore } from "@/store/onboarding"
@@ -81,14 +85,38 @@ export function ReviewSession() {
   })
   const progressQ = useQuery({ queryKey: ["progress"], queryFn: progress.get })
 
+  /**
+   * This course's vocabulary, as an id → word map.
+   *
+   * The due-card endpoint is not scoped: it answers every card the account
+   * owes, whatever language the item came from. Resolving those ids through
+   * `findWord` then searches the other three languages too, so a Goethe learner
+   * whose account also holds Chinese cards was served Chinese questions — and,
+   * because the distractors are drawn from the same unscoped list, Chinese answer
+   * options beside them.
+   *
+   * Membership in this bundle is what makes a card this learner's: the ids are
+   * language-prefixed (`de_abend`, not a bare word), so a card that is not in the
+   * active language's bundle belongs to a course they are not taking and is left
+   * out of the session rather than shown in the wrong language.
+   */
+  const vocabQ = useQuery({
+    queryKey: ["vocab", language],
+    queryFn: () => loadVocabulary(language),
+  })
+  const wordsById = useMemo(
+    () => indexWordsById(vocabQ.data ?? []),
+    [vocabQ.data]
+  )
+
   // Fixed plan, frozen the first time data arrives.
   const [queue, setQueue] = useState<SrsCard[] | null>(null)
   useEffect(() => {
     // `queue !== null` means the plan is already frozen. Bailing on `!queue`
     // instead returned on the initial state, so it never ran and the screen
     // stayed on its spinner for good.
-    if (queue !== null || dueQ.isLoading) return
-    const all = dueQ.data ?? []
+    if (queue !== null || dueQ.isLoading || vocabQ.isLoading) return
+    const all = cardsInLanguage(dueQ.data ?? [], wordsById)
     if (mode === "mistakes") {
       const difficult = new Set(progressQ.data?.difficult_item_ids ?? [])
       const subset = all.filter(
@@ -100,7 +128,15 @@ export function ReviewSession() {
     } else {
       setQueue(all)
     }
-  }, [dueQ.data, dueQ.isLoading, mode, progressQ.data, queue])
+  }, [
+    dueQ.data,
+    dueQ.isLoading,
+    vocabQ.isLoading,
+    wordsById,
+    mode,
+    progressQ.data,
+    queue,
+  ])
 
   const [index, setIndex] = useState(0)
   const [revealed, setRevealed] = useState(false)
@@ -113,15 +149,12 @@ export function ReviewSession() {
 
   const cards = useMemo<SrsCard[]>(() => queue ?? [], [queue])
   const current = cards[index]
-  const done = cards.length > 0 && index >= cards.length
+  // Cards exist but none of them belong to the active course is a different
+  // outcome from having reviewed everything, and it must not fall through to a
+  // card with no `current` to render.
+  const done = index >= cards.length
 
-  const wordQ = useQuery({
-    queryKey: ["vocab-item", current?.item_id],
-    queryFn: async () =>
-      current ? (await findWord(current.item_id)).word : null,
-    enabled: !!current,
-  })
-  const word = wordQ.data
+  const word = current ? (wordsById.get(current.item_id) ?? null) : null
   // Writing practice needs an ideograph, not a "character script" label: kana
   // have no stroke order, and a Japanese entry carries its text in `text` rather
   // than `hanzi`, so asking for a `hanzi` field would hide the feature entirely
@@ -184,23 +217,16 @@ export function ReviewSession() {
         : [],
     [mode, cards, current]
   )
-  const distractorsQ = useQuery({
-    queryKey: ["vocab-distractors", distractorIds],
-    enabled: distractorIds.length > 0,
-    queryFn: async () => {
-      const found = await Promise.all(
-        distractorIds.map((id) => findWord(id).then((r) => r.word))
-      )
-      return found.filter((w): w is VocabWord => w !== null)
-    },
-  })
-
   const options = useMemo(() => {
     if (mode !== "listening" || !word) return []
-    return [word, ...(distractorsQ.data ?? [])]
-  }, [mode, word, distractorsQ.data])
+    // Same map as the question, so the options are drawn from this course too.
+    const others = distractorIds
+      .map((id) => wordsById.get(id))
+      .filter((w): w is VocabWord => w != null)
+    return [word, ...others]
+  }, [mode, word, distractorIds, wordsById])
 
-  if (dueQ.isLoading || queue === null || wordQ.isLoading) {
+  if (dueQ.isLoading || vocabQ.isLoading || queue === null) {
     return (
       <SafeAreaView
         style={{
@@ -288,7 +314,7 @@ export function ReviewSession() {
               },
             ]}
           >
-            {t("rev.doneTitle")}
+            {cards.length === 0 ? t("rev.noneTitle") : t("rev.doneTitle")}
           </Text>
           <Text
             style={[
@@ -301,7 +327,7 @@ export function ReviewSession() {
               },
             ]}
           >
-            {t("rev.doneBody")}
+            {cards.length === 0 ? t("rev.noneBody") : t("rev.doneBody")}
           </Text>
           <View style={{ height: 20 }} />
           <LiftedFace
@@ -315,7 +341,7 @@ export function ReviewSession() {
             }}
           />
         </View>
-      ) : wordQ.isError ? (
+      ) : vocabQ.isError ? (
         <View
           style={{
             flex: 1,
@@ -336,7 +362,7 @@ export function ReviewSession() {
           <LiftedFace
             title={t("common.retry")}
             face={paper.coral}
-            onPress={() => wordQ.refetch()}
+            onPress={() => vocabQ.refetch()}
           />
         </View>
       ) : !current || !word ? (

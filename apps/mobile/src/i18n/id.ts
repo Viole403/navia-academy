@@ -497,6 +497,7 @@ const id: Record<I18nKey, string> = {
   "ob.sScript": "Karakter yang akan kamu baca setiap hari. Bisa diubah nanti.",
   "ob.sTheme": "Enam palet. Tiga mode. Satu estetika tenang.",
   "ob.sGoal": "Berapa menit yang terasa berkelanjutan?",
+  "ob.readyAction": "Masuk atau buat akun",
   "ob.sReady": "Masuk, lalu temukan levelmu dengan tes placement cepat.",
   "ob.examTrack": "Jalur ujian",
   "ob.baseTheme": "Tema dasar",
@@ -566,6 +567,9 @@ const id: Record<I18nKey, string> = {
   "rev.modeFlashcards": "Flashcard",
   "rev.modeListening": "Mendengar",
   "rev.modeMistakes": "Kesalahan",
+  "rev.noneTitle": "Belum ada kartu di materi ini",
+  "rev.noneBody":
+    "Kartu yang jatuh tempo sekarang milik bahasa lain. Pilih latihan lain, atau pelajari kata baru di sini dulu.",
   "rev.doneTitle": "Sesi selesai",
   "rev.doneBody": "Kerja bagus. Kembalilah besok untuk batch berikutnya.",
   "rev.again": "Lupa",

@@ -7,6 +7,7 @@ import type {
   OnboardingIntroduction,
   PlacementItem,
   Reading,
+  SrsCard,
   VocabWord,
 } from "@/types/api"
 import {
@@ -110,6 +111,29 @@ export function loadVocabulary(
   lang: LanguageCode = DEFAULT_LANGUAGE
 ): Promise<VocabWord[]> {
   return loadBundle<VocabWord[]>(langBundle(lang, "vocabulary/index"))
+}
+
+/**
+ * Index one language's vocabulary by item id, and keep only the cards the
+ * account owes *from that language*.
+ *
+ * `/progress/due-cards` is not language-scoped — it answers every card the user
+ * owes — and the item ids are only unique inside their own bundle, so a review
+ * session has to decide for itself which of those cards belong to the course
+ * being studied. Membership in the active language's bundle is that decision;
+ * a card outside it is another course's and must not be shown in this one.
+ */
+export function indexWordsById(words: VocabWord[]): Map<string, VocabWord> {
+  const byId = new Map<string, VocabWord>()
+  for (const w of words) byId.set(w.id, w)
+  return byId
+}
+
+export function cardsInLanguage(
+  cards: SrsCard[],
+  wordsById: Map<string, VocabWord>
+): SrsCard[] {
+  return cards.filter((c) => wordsById.has(c.item_id))
 }
 
 /** Language-scoped grammar bundle (`<lang>/grammar/index`). */
