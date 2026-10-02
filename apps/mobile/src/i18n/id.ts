@@ -470,9 +470,8 @@ const id: Record<I18nKey, string> = {
   "ob.wLoopTitle": "Satu hari di sini",
   "ob.wLoop1": "Sedikit kata baru, beserta pola kalimat untuk memakainya.",
   "ob.wLoop2":
-    "Latihan untuk yang sudah kamu kenal, dijadwalkan agar muncul tepat sebelum terlupakan.",
-  "ob.wLoop3":
-    "Latihan bicara atau baca singkat, supaya kata-kata itu dipakai, bukan cuma dikenali.",
+    "Latihan kata yang sudah kamu kenal, dijadwalkan agar kembali tepat waktu.",
+  "ob.wLoop3": "Latihan bicara atau baca singkat, supaya kata-kata dipakai.",
   "ob.wPathsTitle": "Empat jalur",
   "ob.wNoReminderCost":
     "Streak-mu adalah streak harian di dasbor. Lewat sehari, dan ia mulai dari nol.",

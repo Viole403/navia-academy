@@ -183,7 +183,7 @@ export default function Onboarding() {
       dots={visible.length}
       stepIndex={visible.indexOf(step)}
       onBack={visible.indexOf(step) > 0 ? () => go(-1) : undefined}
-      scroll={step !== "welcome"}
+      scroll
       art={
         step === "welcome"
           ? "panorama"
@@ -344,8 +344,14 @@ export default function Onboarding() {
               </View>
             </View>
 
-            <View style={{ alignItems: "center" }}>
-              <Shifu pose="bow" size={150} fill />
+            {/* A fixed-height row, and no `fill` on the mascot. With `fill`
+                the wrapper flexes, the page's own content squeezes it below the
+                image's height, and the image then paints over whatever sits
+                above it — which is how the "Deutsch" and "English" pills ended
+                up behind a panda. An explicit height cannot be shrunk, so
+                nothing here can overlap the copy above it. */}
+            <View style={{ height: 118, alignItems: "center" }}>
+              <Shifu pose="bow" size={110} />
             </View>
           </View>
         ) : null}
