@@ -469,6 +469,16 @@ const en = {
   "ob.tWelcome": "Learn a language",
   "ob.tReminders": "Want a nudge?",
   "ob.sWelcome": "One more window from which to look at the world.",
+  "ob.wLoopTitle": "A day here",
+  "ob.wLoop1":
+    "A handful of new words, with the sentence patterns that use them.",
+  "ob.wLoop2":
+    "A drill on what you have already met, timed so it returns just before you would forget it.",
+  "ob.wLoop3":
+    "A short speaking or reading pass, so the words get used and not only recognised.",
+  "ob.wPathsTitle": "Four paths",
+  "ob.wNoReminderCost":
+    "Your streak is the daily streak on the dashboard. Miss a day and it starts again.",
   "ob.sReminders": "A single daily reminder, at a time you choose.",
   "ob.scriptSimplified": "Simplified forms",
   "ob.scriptTraditional": "Traditional forms",

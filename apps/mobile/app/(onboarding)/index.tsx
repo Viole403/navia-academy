@@ -245,11 +245,108 @@ export default function Onboarding() {
             style={{
               flex: 1,
               minHeight: 0,
-              alignItems: "center",
+              gap: 18,
               justifyContent: "flex-end",
             }}
           >
-            <Shifu pose="bow" size={150} fill />
+            {/* The welcome step was 55% empty: a line of copy, then nothing
+                until the mascot at the hem. It answers the two questions a
+                first-time learner actually has — what happens here each day,
+                and what they are about to choose between — and both are
+                things the app already knows, so neither is decoration. */}
+            <View style={{ gap: 10 }}>
+              <Text
+                style={[
+                  type.labelSm,
+                  { color: theme.textMuted, fontFamily: fonts.sans },
+                ]}
+              >
+                {t("ob.wLoopTitle")}
+              </Text>
+              {(["ob.wLoop1", "ob.wLoop2", "ob.wLoop3"] as const).map(
+                (key, i) => (
+                  <View key={key} style={{ flexDirection: "row", gap: 10 }}>
+                    <Text
+                      style={{
+                        color: theme.accent,
+                        fontFamily: fonts.sans,
+                        fontWeight: "800",
+                        fontSize: 13,
+                        width: 18,
+                      }}
+                    >
+                      {i + 1}
+                    </Text>
+                    <Text
+                      style={[
+                        type.bodySm,
+                        {
+                          color: theme.textMuted,
+                          fontFamily: fonts.sans,
+                          flex: 1,
+                        },
+                      ]}
+                    >
+                      {t(key)}
+                    </Text>
+                  </View>
+                )
+              )}
+            </View>
+
+            <View style={{ gap: 8 }}>
+              <Text
+                style={[
+                  type.labelSm,
+                  { color: theme.textMuted, fontFamily: fonts.sans },
+                ]}
+              >
+                {t("ob.wPathsTitle")}
+              </Text>
+              <View style={{ flexDirection: "row", flexWrap: "wrap", gap: 8 }}>
+                {LANGUAGES.map((l) => (
+                  <View
+                    key={l.code}
+                    style={{
+                      paddingHorizontal: 12,
+                      paddingVertical: 8,
+                      borderRadius: paper.radius.pill,
+                      borderWidth: 1,
+                      borderColor: paper.line,
+                      backgroundColor: paper.cardAlt,
+                      alignItems: "center",
+                      gap: 1,
+                    }}
+                  >
+                    <Text
+                      style={{
+                        color: paper.ink,
+                        fontFamily: families.nunitoExtraBold,
+                        fontSize: 14,
+                      }}
+                    >
+                      {l.nativeName}
+                    </Text>
+                    <Text
+                      style={[
+                        type.caption,
+                        {
+                          color: paper.inkMuted,
+                          fontFamily: families.nunitoSemiBold,
+                          fontSize: 10.5,
+                        },
+                      ]}
+                    >
+                      {l.examTypes.map(examDisplayName).join(" · ")}
+                    </Text>
+                  </View>
+                ))}
+              </View>
+            </View>
+
+            <View style={{ alignItems: "center" }}>
+              <Shifu pose="bow" size={150} fill />
+            </View>
           </View>
         ) : null}
 
@@ -481,6 +578,12 @@ export default function Onboarding() {
                 setReminders((r) => !r)
               }}
             />
+            {/* What declining actually costs. The step asked for a preference
+                and then said nothing about the streak it feeds, so "not now"
+                read as a shrug rather than a decision. */}
+            <Text style={[type.caption, { color: theme.textDim }]}>
+              {t("ob.wNoReminderCost")}
+            </Text>
             <Text style={[type.caption, { color: theme.textDim }]}>
               {t("ob.reminderLater")}
             </Text>

@@ -467,6 +467,15 @@ const id: Record<I18nKey, string> = {
   "ob.kReminders": "Langkah %d — Pengingat",
   "ob.tWelcome": "Pelajari一门 bahasa",
   "ob.tReminders": "Mau diingatkan?",
+  "ob.wLoopTitle": "Satu hari di sini",
+  "ob.wLoop1": "Sedikit kata baru, beserta pola kalimat untuk memakainya.",
+  "ob.wLoop2":
+    "Latihan untuk yang sudah kamu kenal, dijadwalkan agar muncul tepat sebelum terlupakan.",
+  "ob.wLoop3":
+    "Latihan bicara atau baca singkat, supaya kata-kata itu dipakai, bukan cuma dikenali.",
+  "ob.wPathsTitle": "Empat jalur",
+  "ob.wNoReminderCost":
+    "Streak-mu adalah streak harian di dasbor. Lewat sehari, dan ia mulai dari nol.",
   "ob.sWelcome": "Satu jendela lagi untuk melihat dunia.",
   "ob.sReminders": "Satu pengingat harian, pada waktu pilihanmu.",
   "ob.scriptSimplified": "Bentuk sederhana",
