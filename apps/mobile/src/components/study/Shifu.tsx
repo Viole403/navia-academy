@@ -1,4 +1,6 @@
 import { Image, View } from "react-native"
+import { useTargetLanguage } from "@/hooks/useTargetLanguage"
+import { mascotArt } from "./art"
 
 /**
  * The mascot.
@@ -25,6 +27,7 @@ export function Shifu({
   fill?: boolean
   style?: object
 }) {
+  const language = useTargetLanguage()
   return (
     <View
       style={
@@ -46,7 +49,7 @@ export function Shifu({
       }
     >
       <Image
-        source={require("@assets/study-art/images/mascot-shifu.png")}
+        source={mascotArt[language]}
         style={{
           width: size,
           height: size,

@@ -4,7 +4,7 @@ import { Text, View, ActivityIndicator } from "react-native"
 import { useAuthStore } from "@/store/auth"
 import { useOnboardingProgress } from "@/hooks/useOnboardingProgress"
 import { useOnboardingStore } from "@/store/onboarding"
-import { Motif } from "@/components/ui/Motif"
+import { Image } from "react-native"
 import { motifChar } from "@/lib/languages"
 import { useTheme } from "@/theme/ThemeProvider"
 import { paperType } from "@/theme/paperType"
@@ -40,7 +40,11 @@ export default function Index() {
           gap: 24,
         }}
       >
-        <Motif char={motifChar(language)} size={96} />
+        <Image
+          source={require("@assets/icon.png")}
+          style={{ width: 96, height: 96, borderRadius: 22 }}
+          accessibilityIgnoresInvertColors
+        />
         <View style={{ alignItems: "center", gap: 16 }}>
           <Text style={[paperType.label, { color: paper.inkMuted }]}>
             Navia Academy

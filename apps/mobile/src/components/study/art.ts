@@ -49,6 +49,18 @@ export const decorArt = {
 } as const
 
 // ─── Review hub drill badges (painted discs, not tinted circles) ────────────
+/**
+ * The guide shown throughout the app. It follows the learning language, so a
+ * Goethe learner never meets the mascot from the Mandarin path — and the same
+ * component swaps the source, which is what its own doc comment promised.
+ */
+export const mascotArt = {
+  zh: require("@assets/study-art/images/panda.png"),
+  ja: require("@assets/study-art/images/tanuki.png"),
+  de: require("@assets/study-art/images/owl.png"),
+  en: require("@assets/study-art/images/fox.png"),
+} as const
+
 export const reviewArt = {
   flashcards: require("@assets/study-art/review/flashcards.png"),
   listening: require("@assets/study-art/review/listening.png"),
